@@ -61,8 +61,7 @@ for template_dir in template_dirs:
 if templates is None:
     logger.warning("Template directory not found, using default")
     templates = Jinja2Templates(directory="templates")
-
-logger.info(f"Final template directory: {templates.directory}")
+logger.info("Templates initialized successfully")
 
 class PredictionRequest(BaseModel):
     home_team: str
