@@ -205,3 +205,84 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# =============================================================================
+# 🤖 AI-SPECIFIC IGNORE RULES (YENİ EKLENDİ)
+# =============================================================================
+
+# AI Model dosyaları (büyük boyutlu, gereksiz commit)
+data/ai_models_v2/
+*.pkl
+*.joblib
+*.model
+*.h5
+*.keras
+
+# AI Cache dosyaları
+.ai_cache/
+model_cache/
+training_cache/
+
+# AI Log dosyaları
+ai_training.log
+model_performance.log
+feature_importance.log
+
+# AI Configuration dosyaları (local override'lar)
+ai_config_local.json
+model_config_local.yaml
+
+# AI Temporary dosyaları
+.tmp_models/
+.training_data/
+.prediction_cache/
+
+# Large dataset files (eğitim verileri)
+*.csv
+*.parquet
+*.feather
+training_data/
+datasets/
+
+# Jupyter notebooks (AI denemeleri için)
+*.ipynb
+
+# MLflow artifacts (opsiyonel)
+mlruns/
+mlartifacts/
+
+# TensorBoard logs
+logs/
+tensorboard/
+
+# Model checkpoints
+checkpoints/
+models/checkpoints/
+
+# Feature stores
+feature_store/
+.feature_store/
+
+# =============================================================================
+# 📊 PROJECT-SPECIFIC IGNORE RULES (YENİ EKLENDİ)
+# =============================================================================
+
+# Veritabanı backup'ları
+*.db.backup
+*.db.journal
+backup/
+
+# Render specific (production)
+.render/
+deployments/
+
+# Local test dosyaları
+test_output/
+debug/
+profiles/
+
+# API key'ler ve sensitive data
+*.key
+*.pem
+secrets.yaml
+config.local.yaml
