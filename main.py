@@ -45,7 +45,7 @@ ai_predictor = None
 is_system_ready = False
 
 # Static files and templates
-app.mount("/static", StaticFiles(directory="static"), name="static")
+#app.mount("/static", StaticFiles(directory="static"), name="static")
 
 # Template directory detection
 template_dirs = ["templates", "src/templates", "./templates"]
