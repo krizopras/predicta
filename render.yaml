@@ -1,6 +1,61 @@
 services:
   - type: web
-    name: predicta-fastapi
+    name: predicta-ai-fastapi
     env: python
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "uvicorn main:app --host 0.0.0.0 --port $PORT"
+    plan: free
+    region: singapore  # Singapur region
+    buildCommand: |
+      echo "🚀 Predicta AI Sistemi Kuruluyor (Singapur)..."
+      pip install -r requirements.txt
+      echo "✅ Bağımlılıklar kuruldu"
+      mkdir -p data/ai_models_v2
+      echo "🤖 AI Model klasörü hazır"
+    startCommand: |
+      echo "🎯 Predicta AI Başlatılıyor - Singapur Region..."
+      uvicorn main:app --host 0.0.0.0 --port $PORT --workers 1
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.6
+      - key: PORT
+        value: 10000
+      - key: SECRET_KEY
+        generateValue: true
+      - key: AI_MODEL_PATH
+        value: data/ai_models_v2
+      - key: LOG_LEVEL
+        value: INFO
+      - key: AI_TRAINING_SAMPLES_MIN
+        value: 50
+      - key: AI_CONFIDENCE_THRESHOLD
+        value: 65.0
+      - key: REGION
+        value: singapore
+
+    # Health Check Path
+    healthCheckPath: /health
+
+    # Auto-Deploy ayarları
+    autoDeploy: true
+
+    # Build ve deploy için optimize ayarlar
+    buildFilter:
+      branches:
+        only: [main, master]
+
+    # Singapur için optimize disk ayarları
+    disk:
+      name: ai_models_sg
+      mountPath: /opt/render/project/data
+      sizeGB: 1
+
+    # Singapur için scaling (free plan)
+    numInstances: 1
+
+# Opsiyonel: Singapur için scheduled AI training
+#jobs:
+#  - type: cron
+#    name: singapore-ai-training
+#    schedule: "0 4 * * *"  # Singapur saatiyle 04:00'de (Türkiye 23:00)
+#    region: singapore
+#    buildCommand: "pip install -r requirements.txt"
+#    runCommand: "python -c 'from ai_engine import EnhancedSuperLearningAI; ai = EnhancedSuperLearningAI(); ai.train_models()'"
