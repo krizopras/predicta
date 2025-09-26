@@ -176,95 +176,98 @@ class EnhancedSuperLearningAI:
             raise
     
     def initialize_models(self):
-        """Advanced model ensemble initialization"""
-        try:
-            # Base models for ensemble
-            base_models = [
-                ('gbm', GradientBoostingClassifier(
-                    n_estimators=200,
-                    learning_rate=0.1,
-                    max_depth=6,
-                    min_samples_split=20,
-                    random_state=42
-                )),
-                ('rf', RandomForestRegressor(
-                    n_estimators=150,
-                    max_depth=8,
-                    min_samples_split=15,
-                    random_state=42
-                )),
-                ('svm', SVC(
-                    probability=True,
-                    kernel='rbf',
-                    C=1.0,
-                    gamma='scale',
-                    random_state=42
-                )),
-                ('lr', LogisticRegression(
-                    max_iter=1000,
-                    C=0.1,
-                    solver='liblinear',
-                    random_state=42
-                ))
-            ]
-            
-            # Main ensemble classifier
-            self.models['ensemble_classifier'] = VotingClassifier(
-                estimators=base_models,
-                voting='soft',
-                weights=self.config['models']['ensemble_weights']
-            )
-            
-            # Specialized models
-            self.models['confidence_calibrator'] = RandomForestRegressor(
-                n_estimators=100,
+    """Advanced model ensemble initialization"""
+    try:
+        # Base models for ensemble
+        base_models = [
+            ('gbm', GradientBoostingClassifier(
+                n_estimators=200,
+                learning_rate=0.1,
                 max_depth=6,
+                min_samples_split=20,
                 random_state=42
-            )
-            
-            self.models['score_predictor'] = GradientBoostingClassifier(
-                n_estimators=100,
-                learning_rate=0.15,
-                max_depth=4,
+            )),
+            ('rf', RandomForestRegressor(
+                n_estimators=150,
+                max_depth=8,
+                min_samples_split=15,
                 random_state=42
-            )
-            
-            self.models['trend_analyzer'] = RandomForestRegressor(
-                n_estimators=80,
-                max_depth=5,
+            )),
+            ('svm', SVC(
+                probability=True,
+                kernel='rbf',
+                C=1.0,
+                gamma='scale',
                 random_state=42
+            )),
+            ('lr', LogisticRegression(
+                max_iter=1000,
+                C=0.1,
+                solver='liblinear',
+                random_state=42
+            ))
+        ]
+        
+        # Main ensemble classifier
+        self.models['ensemble_classifier'] = VotingClassifier(
+            estimators=base_models,
+            voting='soft',
+            weights=self.config['models']['ensemble_weights']
+        )
+        
+        # Specialized models
+        self.models['confidence_calibrator'] = RandomForestRegressor(
+            n_estimators=100,
+            max_depth=6,
+            random_state=42
+        )
+        
+        self.models['score_predictor'] = GradientBoostingClassifier(
+            n_estimators=100,
+            learning_rate=0.15,
+            max_depth=4,
+            random_state=42
+        )
+        
+        self.models['trend_analyzer'] = RandomForestRegressor(
+            n_estimators=80,
+            max_depth=5,
+            random_state=42
+        )
+        
+        # Advanced scalers and encoders
+        self.scalers = {
+            'main': StandardScaler(),
+            'confidence': StandardScaler(),
+            'features': StandardScaler()
+        }
+        
+        self.encoders = {
+            'result': LabelEncoder(),
+            'score': LabelEncoder(),
+            'trend': LabelEncoder()
+        }
+        
+        # Feature selection - DÜZELTİLMİŞ KISIM
+        feature_selection_method = self.config.get('models', {}).get('feature_selection', 'rfe')
+        max_features = self.config.get('features', {}).get('max_features', 30)
+        
+        if feature_selection_method == 'rfe':
+            self.feature_selector = RFE(
+                estimator=RandomForestRegressor(n_estimators=50),
+                n_features_to_select=max_features
             )
-            
-            # Advanced scalers and encoders
-            self.scalers = {
-                'main': StandardScaler(),
-                'confidence': StandardScaler(),
-                'features': StandardScaler()
-            }
-            
-            self.encoders = {
-                'result': LabelEncoder(),
-                'score': LabelEncoder(),
-                'trend': LabelEncoder()
-            }
-            
-            # Feature selection
-            if self.config['features']['feature_selection'] == 'rfe':
-                self.feature_selector = RFE(
-                    estimator=RandomForestRegressor(n_estimators=50),
-                    n_features_to_select=self.config['features']['max_features']
-                )
-            else:
-                self.feature_selector = SelectKBest(
-                    score_func=f_classif,
-                    k=self.config['features']['max_features']
-                )
-            
-            logger.info("Advanced modeller başarıyla initialize edildi")
-            
-        except Exception as e:
-            logger.error(f"Model initialization hatası: {e}")
-            raise
+        else:
+            self.feature_selector = SelectKBest(
+                score_func=f_classif,
+                k=max_features
+            )
+        
+        logger.info("Advanced modeller başarıyla initialize edildi")
+        
+    except Exception as e:
+        logger.error(f"Model initialization hatası: {e}")
+        raise
     
     def extract_advanced_features(self, match_data: Dict) -> np.array:
         """Gelişmiş özellik mühendisliği"""
