@@ -65,7 +65,7 @@ def initialize_system():
         
         # Modülleri başlat
         db_manager = DatabaseManager(db_path="data/nesine_advanced.db")
-        predictor = NesineAdvancedPredictor(db_manager=db_manager)
+        predictor = NesineAdvancedPredictor
         
         logger.info("Sistem başarıyla başlatıldı")
         return True
