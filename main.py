@@ -37,6 +37,7 @@ class PredictionModel(BaseModel):
     confidence: float
     iy_prediction: Optional[str] = None
     score_prediction: Optional[str] = None
+    score_probabilities: Optional[List[Dict]] = None
 
 class MatchModel(BaseModel):
     home_team: str
@@ -66,7 +67,7 @@ def initialize_system():
         # Modülleri başlat
         db_manager = DatabaseManager(db_path="data/nesine_advanced.db")
         
-        # 🟢 DÜZELTME YAPILDI: Sınıfın bir örneği oluşturuldu.
+        # DÜZELTME YAPILDI: Sınıfın bir örneği oluşturuldu.
         predictor = NesineAdvancedPredictor() 
         
         logger.info("Sistem başarıyla başlatıldı")
@@ -78,7 +79,7 @@ def initialize_system():
 
 async def periodic_data_update():
     """Verileri periyodik olarak çeken ve güncelleyen arka plan işlevi."""
-    global predictor
+    global predictor, db_manager
     
     logger.info("Periyodik veri güncelleme başlatıldı...")
     
@@ -91,7 +92,46 @@ async def periodic_data_update():
             
             # Maç verilerini çek ve tahmin et
             matches = predictor.fetch_nesine_matches()
-            logger.info(f"{len(matches)} adet maç verisi çekildi ve tahminleri güncellendi.")
+            logger.info(f"{len(matches)} adet maç verisi çekildi")
+            
+            # Her maç için tahmin yap ve veritabanına kaydet
+            predictions_saved = 0
+            for match in matches:
+                try:
+                    prediction = predictor.predict_match_comprehensive(match)
+                    
+                    # Veritabanına kaydet
+                    if db_manager and prediction.get('confidence', 0) > 30:
+                        prediction_data = {
+                            'home_team': match.get('home_team'),
+                            'away_team': match.get('away_team'),
+                            'league': match.get('league'),
+                            'match_date': match.get('date'),
+                            'match_time': match.get('time'),
+                            'prediction_result': prediction.get('result_prediction'),
+                            'prediction_iy': prediction.get('iy_prediction'),
+                            'predicted_score': prediction.get('score_prediction'),
+                            'confidence': prediction.get('confidence'),
+                            'home_xg': prediction.get('home_xg'),
+                            'away_xg': prediction.get('away_xg'),
+                            'odds_1': match.get('odds', {}).get('1', 0.0),
+                            'odds_x': match.get('odds', {}).get('X', 0.0),
+                            'odds_2': match.get('odds', {}).get('2', 0.0),
+                            'created_at': datetime.now().isoformat()
+                        }
+                        
+                        # Veritabanına kaydet (DatabaseManager'da bu method olduğunu varsayıyorum)
+                        try:
+                            db_manager.save_prediction(prediction_data)
+                            predictions_saved += 1
+                        except Exception as db_error:
+                            logger.warning(f"Veritabanına kaydetme hatası: {db_error}")
+                
+                except Exception as pred_error:
+                    logger.warning(f"Tahmin hatası: {pred_error}")
+                    continue
+            
+            logger.info(f"{predictions_saved} tahmin veritabanına kaydedildi")
             
             # 30 dakika bekle
             await asyncio.sleep(30 * 60)
@@ -296,7 +336,7 @@ def create_fallback_html(request: Request, predictions_data: list, stats: dict, 
 
 @app.get("/", response_class=HTMLResponse)
 async def root(request: Request, min_confidence: Optional[float] = None):
-    global predictor
+    global predictor, db_manager
     
     # URL parametresinden min_confidence'ı al, yoksa varsayılan 50 kullan
     confidence_threshold = min_confidence if min_confidence is not None else 50.0
@@ -311,7 +351,12 @@ async def root(request: Request, min_confidence: Optional[float] = None):
 
     try:
         # Veritabanından belirlenen güven seviyesine göre tahminleri getir
-        recent_predictions = db_manager.get_latest_predictions_from_db(min_confidence=confidence_threshold)
+        recent_predictions = []
+        if db_manager:
+            try:
+                recent_predictions = db_manager.get_latest_predictions_from_db(min_confidence=confidence_threshold)
+            except Exception as db_error:
+                logger.warning(f"Veritabanı okuma hatası: {db_error}")
         
         predictions_data = []
         
@@ -406,7 +451,9 @@ async def get_matches_json(min_confidence: float = 60.0):
     
     try:
         # Veritabanından tahminleri getir
-        recent_predictions = db_manager.get_latest_predictions_from_db(min_confidence=min_confidence)
+        recent_predictions = []
+        if db_manager:
+            recent_predictions = db_manager.get_latest_predictions_from_db(min_confidence=min_confidence)
         
         formatted_list = []
         for pred in recent_predictions:
@@ -418,7 +465,7 @@ async def get_matches_json(min_confidence: float = 60.0):
                         league=pred.get('league', 'API'),
                         date=pred.get('created_at', '')[:10] if pred.get('created_at') else '',
                         time=pred.get('created_at', '')[11:16] if pred.get('created_at') else '',
-                        odds={"1": 2.0, "X": 3.0, "2": 3.5}  # Placeholder odds
+                        odds={"1": pred.get('odds_1', 2.0), "X": pred.get('odds_x', 3.0), "2": pred.get('odds_2', 3.5)}
                     ),
                     prediction=PredictionModel(
                         result_prediction=pred.get('prediction_result', 'X'),
