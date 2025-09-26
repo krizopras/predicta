@@ -406,14 +406,29 @@ async def startup_event():
 async def read_root(request: Request):
     """Ana sayfa"""
     try:
+        current_time = datetime.now().strftime("%d.%m.%Y %H:%M")  # String'e çevirip değişkene ata
+        
         context = {
             "request": request,
             "title": "Predicta AI - Akıllı Futbol Tahminleri",
             "version": "3.0",
             "system_ready": is_system_ready,
-            "current_time": datetime.now().strftime("%d.%m.%Y %H:%M")
+            "current_time": current_time  # String olarak gönder
         }
         return templates.TemplateResponse("index.html", context)
+    except Exception as e:
+        logger.error(f"Template hatası: {e}")
+        return HTMLResponse("""
+        <html>
+            <head><title>Predicta AI</title></head>
+            <body>
+                <h1>Predicta AI Futbol Tahmin Sistemi</h1>
+                <p>Sistem başlatılıyor... Lütfen bekleyin.</p>
+                <p>Durum: Sistem Hazır = %s</p>
+                <p>Zaman: %s</p>
+            </body>
+        </html>
+        """ % (str(is_system_ready), datetime.now().strftime("%d.%m.%Y %H:%M")))
     except Exception as e:
         logger.error(f"Template hatası: {e}")
         return HTMLResponse("""
