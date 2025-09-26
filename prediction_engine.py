@@ -16,7 +16,7 @@ from typing import List, Dict, Optional, Tuple
 import numpy as np
 import time
 import re
-import math  # ✅ EKSİK IMPORTU EKLEYİN
+import math
 from bs4 import BeautifulSoup
 from data_scraper import NesineDataScraper
 from database_manager import DatabaseManager
@@ -56,23 +56,22 @@ class TeamStats:
 
 class NesineAdvancedPredictor:
     
-    # 🚨 DÜZELTME BURADA: db_manager'ı zorunlu olmayan bir argüman olarak alıyoruz
     def __init__(self):
         # Gelişmiş ağırlık sistemi
         self.factor_weights = {
-            'team_form': 0.25,           # Takım formu
-            'attacking_strength': 0.20,  # Atak gücü
-            'defensive_strength': 0.20,  # Savunma gücü
-            'home_advantage': 0.15,      # Ev sahibi avantajı
-            'head_to_head': 0.10,        # Karşılıklı geçmiş
-            'player_quality': 0.05,      # Oyuncu kalitesi
-            'motivation': 0.05           # Motivasyon faktörü
+            'team_form': 0.25,
+            'attacking_strength': 0.20,
+            'defensive_strength': 0.20,
+            'home_advantage': 0.15,
+            'head_to_head': 0.10,
+            'player_quality': 0.05,
+            'motivation': 0.05
         }
         
         # Poisson dağılımı için lambda hesaplama faktörleri
         self.poisson_factors = {
-            'league_avg_goals': 2.5,     # Lig ortalaması
-            'regression_factor': 0.3     # Regresyon katsayısı
+            'league_avg_goals': 2.5,
+            'regression_factor': 0.3
         }
         
         # Lig katsayıları
@@ -99,7 +98,6 @@ class NesineAdvancedPredictor:
                 logger.info(f"{len(matches)} maç verisi çekildi ve kaydedildi")
                 return matches
             else:
-                # Eğer canlı veri çekilemiyorsa veritabanından en son maçları getir
                 return self.db_manager.get_recent_matches()
                 
         except Exception as e:
@@ -107,7 +105,7 @@ class NesineAdvancedPredictor:
             return self.db_manager.get_recent_matches()
     
     def predict_match_advanced(self, home_stats: Dict, away_stats: Dict, match_info: Dict) -> Dict:
-    """Gelişmiş maç tahmini sistemi (TUTARLI)"""
+        """Gelişmiş maç tahmini sistemi (TUTARLI)"""
         
         # Veri kalitesi kontrolü
         if not self.validate_data(home_stats, away_stats):
@@ -144,17 +142,20 @@ class NesineAdvancedPredictor:
         
         # 7. Poisson dağılımı ile olasılık hesaplama
         probabilities = self.calculate_match_probabilities(home_xg, away_xg)
+        
+        # 8. Güven seviyesi hesaplama (eksik değişken eklendi)
+        confidence = self.calculate_prediction_confidence(home_strength, away_strength, probabilities, home_xg, away_xg)
     
-        # 8. TUTARLI MS tahmini
+        # 9. TUTARLI MS tahmini
         ms_prediction = self.determine_match_result(probabilities, home_xg, away_xg)
     
-        # 9. MS ile uyumlu skor tahmini
+        # 10. MS ile uyumlu skor tahmini
         most_likely_scores = self.predict_most_likely_scores(home_xg, away_xg, ms_prediction)
     
-        # 10. İY tahmini
+        # 11. İY tahmini
         iy_prediction = self.predict_first_half(home_xg, away_xg, probabilities)
         
-        # 11. Risk analizi
+        # 12. Risk analizi
         risk_assessment = self.assess_prediction_risk(home_stats, away_stats, probabilities)
         
         return {
@@ -192,6 +193,7 @@ class NesineAdvancedPredictor:
                     return False
         
         return True
+    
     def get_default_prediction(self) -> Dict:
         """Varsayılan tahmin (veri yoksa)"""
         return {
@@ -207,7 +209,6 @@ class NesineAdvancedPredictor:
             'detailed_analysis': {}
         }
     
-        
     def calculate_team_strength_detailed(self, team_stats: Dict) -> float:
         """Detaylı takım gücü hesaplama"""
         if not team_stats:
@@ -238,10 +239,10 @@ class NesineAdvancedPredictor:
         
         # Ağırlıklı hesaplama
         strength = (
-            (points_per_game / 3) * 35 +  # Maksimum 35 puan
-            (max(-2, min(2, goal_diff_per_game)) + 2) / 4 * 30 +  # Maksimum 30 puan
-            form_score * 25 +  # Maksimum 25 puan
-            consistency_score * 10  # Maksimum 10 puan
+            (points_per_game / 3) * 35 +
+            (max(-2, min(2, goal_diff_per_game)) + 2) / 4 * 30 +
+            form_score * 25 +
+            consistency_score * 10
         )
         
         return min(100, max(0, strength))
@@ -401,7 +402,7 @@ class NesineAdvancedPredictor:
             away_wins = 0
             draws = 0
             
-            for match in h2h_data[:10]:  # Son 10 maç
+            for match in h2h_data[:10]:
                 if match['home_goals'] > match['away_goals']:
                     home_wins += 1
                 elif match['home_goals'] < match['away_goals']:
@@ -453,9 +454,9 @@ class NesineAdvancedPredictor:
         
         strength_ratio = opponent_strength / max(team_strength, 1)
         
-        if strength_ratio > 1.2:  # Daha güçlü rakip
+        if strength_ratio > 1.2:
             return 0.9 if is_home else 0.85
-        elif strength_ratio < 0.8:  # Daha zayıf rakip
+        elif strength_ratio < 0.8:
             return 1.1 if is_home else 1.05
         
         return 1.0
@@ -498,90 +499,90 @@ class NesineAdvancedPredictor:
         }
     
     def predict_most_likely_scores(self, home_xg: float, away_xg: float, ms_prediction: str) -> List[Dict]:
-    """MS tahmini ile uyumlu skor tahmini"""
-    
-    score_probs = []
-    max_goals = 6
-    
-    for home_goals in range(max_goals):
-        for away_goals in range(max_goals):
-            # Poisson olasılık hesaplama
-            home_prob = (home_xg ** home_goals * math.exp(-home_xg)) / math.factorial(home_goals)
-            away_prob = (away_xg ** away_goals * math.exp(-away_xg)) / math.factorial(away_goals)
-            combined_prob = home_prob * away_prob
-            
-            # MS tahmini ile uyum kontrolü
-            score_ms = self.get_score_ms_prediction(home_goals, away_goals)
-            if score_ms == ms_prediction:
-                combined_prob *= 1.2  # MS ile uyumlu skorlara bonus
-            
-            score_probs.append({
-                'score': f"{home_goals}-{away_goals}",
-                'probability': round(combined_prob * 100, 2),
-                'ms_match': score_ms == ms_prediction
-            })
-    
-    # Olasılığa göre sırala
-    score_probs.sort(key=lambda x: x['probability'], reverse=True)
-    
-    return score_probs[:5]
+        """MS tahmini ile uyumlu skor tahmini"""
+        
+        score_probs = []
+        max_goals = 6
+        
+        for home_goals in range(max_goals):
+            for away_goals in range(max_goals):
+                # Poisson olasılık hesaplama
+                home_prob = (home_xg ** home_goals * math.exp(-home_xg)) / math.factorial(home_goals)
+                away_prob = (away_xg ** away_goals * math.exp(-away_xg)) / math.factorial(away_goals)
+                combined_prob = home_prob * away_prob
+                
+                # MS tahmini ile uyum kontrolü
+                score_ms = self.get_score_ms_prediction(home_goals, away_goals)
+                if score_ms == ms_prediction:
+                    combined_prob *= 1.2
+                
+                score_probs.append({
+                    'score': f"{home_goals}-{away_goals}",
+                    'probability': round(combined_prob * 100, 2),
+                    'ms_match': score_ms == ms_prediction
+                })
+        
+        # Olasılığa göre sırala
+        score_probs.sort(key=lambda x: x['probability'], reverse=True)
+        
+        return score_probs[:5]
 
-def get_score_ms_prediction(self, home_goals: int, away_goals: int) -> str:
-    """Skordan MS tahmini"""
-    if home_goals > away_goals:
-        return '1'
-    elif home_goals < away_goals:
-        return '2'
-    else:
-        return 'X'
+    def get_score_ms_prediction(self, home_goals: int, away_goals: int) -> str:
+        """Skordan MS tahmini"""
+        if home_goals > away_goals:
+            return '1'
+        elif home_goals < away_goals:
+            return '2'
+        else:
+            return 'X'
     
     def determine_match_result(self, probabilities: Dict, home_xg: float, away_xg: float) -> str:
-    """Tutarlı MS sonucu belirleme"""
-    
-    # 1. Olasılık farkına göre
-    prob_1 = probabilities.get('1', 0)
-    prob_x = probabilities.get('X', 0) 
-    prob_2 = probabilities.get('2', 0)
-    
-    # 2. xG farkına göre
-    xg_diff = home_xg - away_xg
-    
-    # 3. Kombine karar
-    if prob_1 > prob_2 + 10 and prob_1 > prob_x + 10 and xg_diff > 0.3:
-        return '1'  # Net ev galibiyeti
-    elif prob_2 > prob_1 + 10 and prob_2 > prob_x + 10 and xg_diff < -0.3:
-        return '2'  # Net deplasman galibiyeti
-    elif prob_x > max(prob_1, prob_2) or abs(prob_1 - prob_2) < 8:
-        return 'X'  # Net beraberlik veya çok yakın
-    elif xg_diff > 0.2:
-        return '1'  # xG'ye göre ev avantajı
-    elif xg_diff < -0.2:
-        return '2'  # xG'ye göre deplasman avantajı
-    else:
-        return 'X'  # Belirsiz durumda beraberlik
+        """Tutarlı MS sonucu belirleme"""
+        
+        # 1. Olasılık farkına göre
+        prob_1 = probabilities.get('1', 0)
+        prob_x = probabilities.get('X', 0) 
+        prob_2 = probabilities.get('2', 0)
+        
+        # 2. xG farkına göre
+        xg_diff = home_xg - away_xg
+        
+        # 3. Kombine karar
+        if prob_1 > prob_2 + 10 and prob_1 > prob_x + 10 and xg_diff > 0.3:
+            return '1'
+        elif prob_2 > prob_1 + 10 and prob_2 > prob_x + 10 and xg_diff < -0.3:
+            return '2'
+        elif prob_x > max(prob_1, prob_2) or abs(prob_1 - prob_2) < 8:
+            return 'X'
+        elif xg_diff > 0.2:
+            return '1'
+        elif xg_diff < -0.2:
+            return '2'
+        else:
+            return 'X'
     
     def predict_first_half(self, home_xg: float, away_xg: float, probabilities: Dict) -> str:
-    """İlk yarı tahmini (daha tutarlı)"""
-    
-    # İlk yarı gol beklentisi (daha düşük)
-    iy_home_xg = home_xg * 0.38
-    iy_away_xg = away_xg * 0.38
-    
-    iy_probs = self.calculate_match_probabilities(iy_home_xg, iy_away_xg)
-    
-    # İlk yarıda beraberlik daha olası
-    iy_xg_diff = iy_home_xg - iy_away_xg
-    
-    if abs(iy_xg_diff) < 0.15:  # Çok yakınsa
-        return 'X'
-    elif iy_probs['X'] > 40:  # Beraberlik çok olasıysa
-        return 'X'
-    elif iy_xg_diff > 0.1:
-        return '1'
-    elif iy_xg_diff < -0.1:
-        return '2'
-    else:
-        return 'X'
+        """İlk yarı tahmini (daha tutarlı)"""
+        
+        # İlk yarı gol beklentisi (daha düşük)
+        iy_home_xg = home_xg * 0.38
+        iy_away_xg = away_xg * 0.38
+        
+        iy_probs = self.calculate_match_probabilities(iy_home_xg, iy_away_xg)
+        
+        # İlk yarıda beraberlik daha olası
+        iy_xg_diff = iy_home_xg - iy_away_xg
+        
+        if abs(iy_xg_diff) < 0.15:
+            return 'X'
+        elif iy_probs['X'] > 40:
+            return 'X'
+        elif iy_xg_diff > 0.1:
+            return '1'
+        elif iy_xg_diff < -0.1:
+            return '2'
+        else:
+            return 'X'
     
     def calculate_prediction_confidence(self, home_strength: float, away_strength: float,
                                       probabilities: Dict, home_xg: float, away_xg: float) -> float:
@@ -692,8 +693,7 @@ if __name__ == "__main__":
         'weather_impact': -0.05
     }
     
-    # ✅ DÜZELTME: Doğru sınıf ismini kullan
-    engine = NesineAdvancedPredictor()  # ✅ DOĞRU
+    engine = NesineAdvancedPredictor()
     prediction = engine.predict_match_advanced(home_stats_example, away_stats_example, match_info_example)
     
     print("=== GELİŞMİŞ MAÇ TAHMİNİ ===")
