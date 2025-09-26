@@ -20,7 +20,7 @@ import os
 import numpy as np
 import pandas as pd
 from ai_engine import EnhancedSuperLearningAI
-from database import AIDatabaseManager
+from src.database import AIDatabaseManager
 import aiohttp
 import traceback
 
