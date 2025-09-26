@@ -5,7 +5,7 @@ PREDICTA - GELİŞMİŞ FUTBOL TAHMİN SİSTEMİ
 Ana FastAPI uygulama dosyası
 """
 
-from fastapi import FastAPI, HTTPException, BackgroundTasks, Query
+from fastapi import FastAPI, HTTPException, BackgroundTasks, Query, Request
 from fastapi.responses import HTMLResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
@@ -19,8 +19,6 @@ from typing import Dict, List, Optional, Any
 import os
 import numpy as np
 import pandas as pd
-from ai_engine import EnhancedSuperLearningAI
-from src.database import AIDatabaseManager
 import aiohttp
 import traceback
 
@@ -77,6 +75,49 @@ class PredictionResponse(BaseModel):
     prediction: Dict[str, Any]
     message: str = ""
 
+# Importları burada yapıyoruz, hata durumunda sistemin çalışmaya devam etmesi için
+try:
+    from ai_engine import EnhancedSuperLearningAI
+    from database_manager import AIDatabaseManager
+    logger.info("✅ Tüm modüller başarıyla import edildi")
+except ImportError as e:
+    logger.warning(f"⚠️ Bazı modüller import edilemedi: {e}")
+    # Fallback sınıfları
+    class EnhancedSuperLearningAI:
+        def __init__(self, db_manager=None):
+            self.db_manager = db_manager
+        async def train_models(self):
+            return {"status": "AI not available"}
+        async def predict_match(self, home_team, away_team, league):
+            return {"error": "AI system not initialized"}
+    
+    class AIDatabaseManager:
+        def __init__(self):
+            pass
+
+async def train_ai_models():
+    """AI modellerini eğit"""
+    global ai_predictor
+    try:
+        if ai_predictor:
+            result = await ai_predictor.train_models()
+            logger.info(f"🤖 AI modelleri eğitildi: {result}")
+        else:
+            logger.warning("AI predictor başlatılmadı")
+    except Exception as e:
+        logger.error(f"❌ AI eğitim hatası: {e}")
+
+async def periodic_data_update():
+    """Periyodik veri güncelleme"""
+    while True:
+        try:
+            # Her saat başı veri güncelleme
+            await asyncio.sleep(3600)
+            logger.info("🔄 Veri güncelleme kontrolü...")
+            # Burada veri güncelleme işlemleri yapılacak
+        except Exception as e:
+            logger.error(f"❌ Veri güncelleme hatası: {e}")
+
 @app.on_event("startup")
 async def startup_event():
     """Uygulama başlangıcında çalışacak kod"""
@@ -87,14 +128,14 @@ async def startup_event():
     try:
         # Database manager'ı başlat
         db_manager = AIDatabaseManager()
-        logger.info("🤖 AI entegre veritabanı yapısı kuruldu")
+        logger.info("✅ Veritabanı yöneticisi başlatıldı")
         
         # AI predictor'ı başlat
         ai_predictor = EnhancedSuperLearningAI(db_manager=db_manager)
-        logger.info("🤖 Süper Öğrenen AI başlatıldı")
+        logger.info("✅ AI tahmincisi başlatıldı")
         
         # AI modellerini eğit (async olarak)
-        await train_ai_models()
+        asyncio.create_task(train_ai_models())
         
         # Periyodik görevleri başlat
         asyncio.create_task(periodic_data_update())
@@ -104,7 +145,91 @@ async def startup_event():
         
     except Exception as e:
         logger.error(f"❌ Sistem başlatma hatası: {e}")
+        logger.info("⚠️ Sistem kısıtlı modda çalışacak")
         is_system_ready = False
+
+@app.get("/", response_class=HTMLResponse)
+async def read_root(request: Request):
+    """Ana sayfa"""
+    try:
+        return templates.TemplateResponse("index.html", {"request": request})
+    except Exception as e:
+        logger.error(f"Template hatası: {e}")
+        return HTMLResponse("""
+        <html>
+            <head><title>Predicta AI</title></head>
+            <body>
+                <h1>Predicta AI Futbol Tahmin Sistemi</h1>
+                <p>Sistem başlatılıyor...</p>
+                <p>Durum: {"sistem_hazir": %s}</p>
+            </body>
+        </html>
+        """ % str(is_system_ready).lower())
+
+@app.get("/health")
+async def health_check():
+    """Sistem sağlık kontrolü"""
+    return {
+        "status": "healthy" if is_system_ready else "initializing",
+        "timestamp": datetime.now().isoformat(),
+        "system_ready": is_system_ready,
+        "database_connected": db_manager is not None,
+        "ai_initialized": ai_predictor is not None
+    }
+
+@app.post("/predict", response_model=PredictionResponse)
+async def predict_match(request: PredictionRequest):
+    """Maç tahmini yap"""
+    if not is_system_ready:
+        raise HTTPException(status_code=503, detail="Sistem hazır değil")
+    
+    try:
+        if not ai_predictor:
+            raise HTTPException(status_code=500, detail="AI sistemi başlatılamadı")
+        
+        prediction = await ai_predictor.predict_match(
+            request.home_team, 
+            request.away_team, 
+            request.league
+        )
+        
+        return PredictionResponse(
+            success=True,
+            prediction=prediction,
+            message="Tahmin başarıyla oluşturuldu"
+        )
+        
+    except Exception as e:
+        logger.error(f"Tahmin hatası: {e}")
+        raise HTTPException(status_code=500, detail=f"Tahmin hatası: {str(e)}")
+
+@app.get("/matches")
+async def get_recent_matches(league: str = Query("super-lig"), limit: int = Query(10)):
+    """Son maçları getir"""
+    try:
+        # Basit bir veri dönüşü - gerçek uygulamada veritabanından alacaksınız
+        return {
+            "success": True,
+            "matches": [],
+            "league": league,
+            "limit": limit
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/teams")
+async def get_teams(league: str = Query("super-lig")):
+    """Lig takımlarını getir"""
+    try:
+        # Örnek takım listesi
+        teams = ["Galatasaray", "Fenerbahçe", "Beşiktaş", "Trabzonspor"]
+        return {
+            "success": True,
+            "teams": teams,
+            "league": league
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
 
 async def train_ai_models():
     """AI modellerini eğit"""
