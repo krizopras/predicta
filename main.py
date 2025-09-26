@@ -293,8 +293,11 @@ def create_fallback_html(request: Request, predictions_data: list, stats: dict, 
 # --- ANA SAYFA ROTASI (index.html) ---
 
 @app.get("/", response_class=HTMLResponse)
-async def root(request: Request):
+async def root(request: Request, min_confidence: Optional[float] = None):
     global predictor
+    
+    # URL parametresinden min_confidence'ı al, yoksa varsayılan 50 kullan
+    confidence_threshold = min_confidence if min_confidence is not None else 50.0
     
     if not predictor:
         return create_fallback_html(
@@ -305,8 +308,8 @@ async def root(request: Request):
         )
 
     try:
-        # Veritabanından mevcut tahminleri getir
-        recent_predictions = db_manager.get_latest_predictions_from_db(min_confidence=50.0)
+        # Veritabanından belirlenen güven seviyesine göre tahminleri getir
+        recent_predictions = db_manager.get_latest_predictions_from_db(min_confidence=confidence_threshold)
         
         predictions_data = []
         
@@ -330,7 +333,7 @@ async def root(request: Request):
                 for match in matches[:10]:  # Sadece ilk 10 maçı işle
                     prediction = predictor.predict_match_comprehensive(match)
                     
-                    if prediction.get('confidence', 0) >= 50.0:
+                    if prediction.get('confidence', 0) >= confidence_threshold:
                         predictions_data.append({
                             "mac": f"{match.get('home_team')} - {match.get('away_team')}",
                             "lig": match.get('league', 'Bilinmeyen'),
@@ -347,12 +350,14 @@ async def root(request: Request):
         if predictions_data:
             stats = {
                 "total_matches": len(predictions_data),
-                "average_confidence": np.mean([p['guven'] for p in predictions_data])
+                "average_confidence": np.mean([p['guven'] for p in predictions_data]),
+                "current_threshold": confidence_threshold
             }
         else:
             stats = {
                 "total_matches": 0,
-                "average_confidence": 0
+                "average_confidence": 0,
+                "current_threshold": confidence_threshold
             }
 
         # Önce template'i deneyelim
@@ -365,7 +370,8 @@ async def root(request: Request):
                     "predictions": predictions_data,
                     "stats": stats,
                     "current_time": datetime.now(),
-                    "error_message": None
+                    "error_message": None,
+                    "confidence_threshold": confidence_threshold
                 }
             )
         except Exception as template_error:
@@ -377,11 +383,18 @@ async def root(request: Request):
         return create_fallback_html(
             request, 
             [], 
-            {"total_matches": 0, "average_confidence": 0}, 
+            {"total_matches": 0, "average_confidence": 0, "current_threshold": confidence_threshold}, 
             f"Sistem hatası: {str(e)}"
         )
 
-# --- JSON API ENDPOINT (İsteğe bağlı) ---
+# Yeni endpoint: Güven seviyesini dinamik olarak ayarlama
+@app.get("/confidence/{confidence_level}", response_class=HTMLResponse)
+async def get_predictions_by_confidence(request: Request, confidence_level: float):
+    """Belirli güven seviyesindeki tahminleri getir"""
+    if confidence_level < 0 or confidence_level > 100:
+        raise HTTPException(status_code=400, detail="Güven seviyesi 0-100 arasında olmalıdır")
+    
+    return await root(request, min_confidence=confidence_level)
 
 @app.get("/matches/predictions", response_model=List[MatchWithPrediction])
 async def get_matches_json(min_confidence: float = 60.0):
