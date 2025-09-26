@@ -1,3 +1,4 @@
+# Mevcut bağımlılıklar
 beautifulsoup4>=4.13.5
 numpy>=2.3.3
 pandas>=2.3.2
@@ -12,4 +13,17 @@ gunicorn>=22.0.0
 jinja2>=3.1.4
 
 # Streamlit (Sadece Streamlit projesini kullanmıyorsanız bu satırı kaldırabilirsiniz)
-streamlit>=1.50.0 
+streamlit>=1.50.0
+
+# === YENİ: AI ve MAKİNE ÖĞRENMESİ KÜTÜPHANELERİ ===
+scikit-learn>=1.3.0
+joblib>=1.2.0
+scipy>=1.11.0
+threadpoolctl>=3.0.0
+
+# === OPTİMİZASYON ve PERFORMANS ===
+threadpoolctl>=3.0.0
+
+# === VERİ BİLİMİ (Opsiyonel) ===
+# matplotlib>=3.7.0  # Görselleştirme için
+# seaborn>=0.12.0    # İstatistiksel görselleştirme
