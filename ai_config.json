@@ -1,0 +1,29 @@
+{
+    "training": {
+        "min_samples": 100,
+        "cv_folds": 5,
+        "test_size": 0.2,
+        "auto_retrain_days": 3,
+        "validation_threshold": 0.65
+    },
+    "models": {
+        "ensemble_weights": [0.4, 0.3, 0.2, 0.1],
+        "confidence_calibration": true,
+        "feature_selection": "rfe"
+    },
+    "features": {
+        "max_features": 30,
+        "polynomial_degree": 2,
+        "interaction_terms": true
+    },
+    "adaptation": {
+        "learning_rate": 0.1,
+        "forgetting_factor": 0.95,
+        "drift_detection_window": 100
+    },
+    "external_apis": {
+        "weather_api_key": "",
+        "football_data_api_key": "",
+        "enable_external_data": false
+    }
+}
