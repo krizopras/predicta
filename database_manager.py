@@ -791,3 +791,65 @@ class DatabaseManager:
         """Veritabanı bağlantısını kapat"""
         if hasattr(self, 'conn'):
             self.conn.close()
+# Compatibility alias for main.py
+class AIDatabaseManager(DatabaseManager):
+    """AI Database Manager - DatabaseManager'ın alias'ı"""
+    
+    def __init__(self, db_path="data/predicta_ai.db"):
+        super().__init__(db_path)
+        logger.info("AIDatabaseManager başlatıldı (DatabaseManager alias)")
+    
+    def save_match_prediction(self, data: Dict):
+        """Maç tahminini kaydet - main.py uyumluluğu için"""
+        try:
+            # Main.py'den gelen veri formatını DatabaseManager formatına çevir
+            match_data = {
+                'home_team': data.get('home_team', ''),
+                'away_team': data.get('away_team', ''),
+                'league': data.get('league', ''),
+                'date': data.get('match_date', ''),
+                'odds': data.get('odds', {})
+            }
+            
+            prediction_data = {
+                'result_prediction': data.get('ai_prediction', {}).get('prediction', ''),
+                'confidence': data.get('ai_prediction', {}).get('confidence', 0),
+                'model_version': '3.0'
+            }
+            
+            # DatabaseManager'ın save_prediction metodunu kullan
+            self.save_prediction(match_data, prediction_data, source="ai_enhanced")
+            
+        except Exception as e:
+            logger.error(f"Match prediction save error: {e}")
+    
+    def get_recent_matches(self, league: str, limit: int = 10) -> List[Dict]:
+        """Son maçları getir - main.py formatında"""
+        try:
+            cursor = self.conn.cursor()
+            cursor.execute('''
+                SELECT home_team, away_team, league, match_date, 
+                       odds_1, odds_x, odds_2, prediction_ms, confidence
+                FROM matches 
+                WHERE league = ? 
+                ORDER BY created_at DESC 
+                LIMIT ?
+            ''', (league, limit))
+            
+            matches = []
+            for row in cursor.fetchall():
+                matches.append({
+                    'home_team': row[0],
+                    'away_team': row[1],
+                    'league': row[2],
+                    'match_date': row[3],
+                    'odds': {'1': row[4], 'X': row[5], '2': row[6]},
+                    'prediction': row[7],
+                    'confidence': row[8]
+                })
+            
+            return matches
+            
+        except Exception as e:
+            logger.error(f"Recent matches error: {e}")
+            return []            
