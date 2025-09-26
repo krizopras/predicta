@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>⚽ Predicta: Futbol Tahminleri</title>
+  <title>🤖 Predicta AI: Futbol Tahminleri</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <style>
@@ -13,12 +13,24 @@
     .container-box { background: white; padding: 25px; margin-top: 30px; border-radius: 15px; box-shadow: 0 8px 25px rgba(0,0,0,0.2); }
     body.dark-mode .container-box { background: #1e1e1e; }
     .match-card { border-left: 5px solid #3498db; margin-bottom: 15px; padding: 20px; border-radius: 12px; background: #f8f9fa; transition: transform 0.2s; }
-    .match-card:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.15); }
+    .match-card.ai-powered { border-left: 5px solid #28a745; background: #f0fff4; }
     body.dark-mode .match-card { background: #2a2a2a; }
+    body.dark-mode .match-card.ai-powered { background: #1a2a1a; }
+    .match-card:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.15); }
     .logic-badge { background: #17a2b8; color: white; padding: 3px 8px; border-radius: 12px; font-size: 0.8em; }
+    .ai-badge { background: #28a745; color: white; padding: 3px 8px; border-radius: 12px; font-size: 0.8em; }
+    .certainty-badge { background: #6f42c1; color: white; padding: 3px 8px; border-radius: 12px; font-size: 0.8em; }
+    .risk-badge { background: #dc3545; color: white; padding: 3px 8px; border-radius: 12px; font-size: 0.7em; }
     .progress { height: 20px; }
     footer { margin-top: 40px; text-align: center; padding: 15px; color: #777; }
     body.dark-mode footer { color: #aaa; }
+    .ai-stats-card { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 20px; border-radius: 10px; margin-bottom: 20px; }
+    .feature-bar { height: 8px; background: #e9ecef; border-radius: 4px; margin: 5px 0; }
+    .feature-fill { height: 100%; border-radius: 4px; background: linear-gradient(90deg, #28a745, #20c997); }
+    .risk-indicator { width: 12px; height: 12px; border-radius: 50%; display: inline-block; margin-right: 5px; }
+    .risk-low { background: #28a745; }
+    .risk-medium { background: #ffc107; }
+    .risk-high { background: #dc3545; }
   </style>
 </head>
 <body>
@@ -26,8 +38,15 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">⚽ Predicta</a>
+    <a class="navbar-brand" href="#">🤖 Predicta AI</a>
+    <div class="navbar-nav me-auto">
+      <a class="nav-link" href="/ai/predictions">🤖 AI Tahminler</a>
+      <a class="nav-link" href="/api/ai/performance">📊 AI Performans</a>
+    </div>
     <div class="d-flex">
+      <button class="btn btn-outline-light me-2" onclick="toggleAIOnly()">
+        <span id="aiToggleText">🤖 Sadece AI</span>
+      </button>
       <button class="btn btn-outline-light" id="darkModeToggle">🌙 Dark Mode</button>
     </div>
   </div>
@@ -35,25 +54,62 @@
 
 <div class="container container-box">
   <div class="text-center mb-4">
-    <h2>Güncel Futbol Maç Tahminleri</h2>
+    <h2>🤖 AI Destekli Futbol Tahminleri</h2>
+    <small class="text-muted">Süper Öğrenen Yapay Zeka ile Gelişmiş Analiz</small>
+    <br>
     <small class="text-muted">Son Güncelleme: {{ current_time.strftime('%d.%m.%Y %H:%M') }}</small>
   </div>
 
-  <!-- Güven Kontrol -->
+  <!-- AI Performans Kartı -->
+  {% if ai_performance %}
+  <div class="ai-stats-card">
+    <div class="row">
+      <div class="col-md-3 text-center">
+        <h4>{{ "%.1f"|format(ai_performance.current_accuracy * 100) }}%</h4>
+        <small>Doğruluk</small>
+      </div>
+      <div class="col-md-3 text-center">
+        <h4>{{ ai_performance.training_samples }}</h4>
+        <small>Eğitim Verisi</small>
+      </div>
+      <div class="col-md-3 text-center">
+        <h4>{{ "%.1f"|format(ai_performance.model_stability * 100) }}%</h4>
+        <small>Kararlılık</small>
+      </div>
+      <div class="col-md-3 text-center">
+        <h4>
+          {% if ai_performance.adaptation_status == 'active' %}🟢{% else %}🟡{% endif %}
+        </h4>
+        <small>{{ ai_performance.adaptation_status|title }}</small>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+  <!-- Kontroller -->
   <div class="mb-4 p-3 border rounded">
     <div class="row align-items-center">
-      <div class="col-md-6">
+      <div class="col-md-4">
         <label for="confidenceSlider" class="form-label">
           <strong>Minimum Güven: <span id="confidenceValue">{{ confidence_threshold|round(1) }}%</span></strong>
         </label>
         <input type="range" class="form-range" id="confidenceSlider" 
                min="20" max="95" step="5" value="{{ confidence_threshold|round(1) }}">
       </div>
+      <div class="col-md-2">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="aiOnlyCheckbox">
+          <label class="form-check-label" for="aiOnlyCheckbox">
+            🤖 Sadece AI
+          </label>
+        </div>
+      </div>
       <div class="col-md-3">
         <button class="btn btn-primary w-100" onclick="updatePredictions()">🔄 Tahminleri Güncelle</button>
       </div>
       <div class="col-md-3 text-center">
-        <small>Toplam Maç: <strong>{{ stats.total_matches }}</strong></small><br>
+        <small>Toplam: <strong>{{ stats.total_matches }}</strong></small><br>
+        <small>AI: <strong>{{ stats.ai_matches }}</strong></small><br>
         <small>Ort. Güven: <strong>{{ "%.1f"|format(stats.average_confidence) }}%</strong></small>
       </div>
     </div>
@@ -61,9 +117,9 @@
 
   <!-- Sekmeler -->
   <ul class="nav nav-tabs" id="predictaTabs" role="tablist">
-    <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#matches" type="button">🎯 Maçlar</button></li>
-    <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#charts" type="button">📊 Grafikler</button></li>
-    <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#details" type="button">🔍 Detaylar</button></li>
+    <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#matches" type="button">🎯 Maç Tahminleri</button></li>
+    <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#charts" type="button">📊 AI Analiz</button></li>
+    <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#details" type="button">🔍 Detaylı Görünüm</button></li>
   </ul>
 
   <div class="tab-content mt-3">
@@ -71,19 +127,42 @@
     <div class="tab-pane fade show active" id="matches">
       {% if predictions %}
         {% for p in predictions %}
-        <div class="match-card">
+        <div class="match-card {% if p.ai_powered %}ai-powered{% endif %}">
           <div class="row">
             <div class="col-md-8">
-              <h5>{{ p.mac }}</h5>
+              <div class="d-flex justify-content-between align-items-start">
+                <h5>{{ p.mac }}</h5>
+                <div>
+                  {% if p.ai_powered %}
+                  <span class="ai-badge">🤖 AI</span>
+                  {% endif %}
+                  {% if p.certainty %}
+                  <span class="certainty-badge" title="Kesinlik İndeksi">🎯 {{ "%.2f"|format(p.certainty) }}</span>
+                  {% endif %}
+                </div>
+              </div>
               <p><strong>Lig:</strong> {{ p.lig }} | <strong>Tarih:</strong> {{ p.tarih }}</p>
               <p>
-                <strong>MS:</strong> <span class="logic-badge">{{ p.tahmin_ms }}</span>
-                <strong>İY:</strong> <span class="logic-badge">{{ p.tahmin_iy }}</span>
+                <strong>MS Tahmin:</strong> <span class="logic-badge">{{ p.tahmin_ms }}</span>
+                <strong>İY Tahmin:</strong> <span class="logic-badge">{{ p.tahmin_iy }}</span>
                 <strong>Skor:</strong> <span class="logic-badge">{{ p.skor }}</span>
               </p>
+              {% if p.ai_powered and p.risk_factors %}
+              <div class="mt-2">
+                <small><strong>Risk Analizi:</strong> 
+                  {% if p.risk_factors.overall_risk >= 0.7 %}
+                  <span class="risk-indicator risk-high"></span>Yüksek Risk
+                  {% elif p.risk_factors.overall_risk >= 0.4 %}
+                  <span class="risk-indicator risk-medium"></span>Orta Risk
+                  {% else %}
+                  <span class="risk-indicator risk-low"></span>Düşük Risk
+                  {% endif %}
+                </small>
+              </div>
+              {% endif %}
             </div>
             <div class="col-md-4">
-              <div class="progress">
+              <div class="progress mb-2">
                 <div class="progress-bar 
                   {% if p.guven >= 80 %}bg-success
                   {% elif p.guven >= 60 %}bg-warning
@@ -92,12 +171,26 @@
                   {{ "%.1f"|format(p.guven) }}%
                 </div>
               </div>
+              <small class="text-muted">Güven Seviyesi</small>
+              
+              {% if p.probabilities %}
+              <div class="mt-2">
+                <small><strong>Olasılıklar:</strong><br>
+                  1: {{ "%.1f"|format(p.probabilities.get('1', 0)) }}% | 
+                  X: {{ "%.1f"|format(p.probabilities.get('X', 0)) }}% | 
+                  2: {{ "%.1f"|format(p.probabilities.get('2', 0)) }}%
+                </small>
+              </div>
+              {% endif %}
             </div>
           </div>
         </div>
         {% endfor %}
       {% else %}
-        <div class="alert alert-info">🔭 Henüz maç verisi bulunamadı.</div>
+        <div class="alert alert-info">
+          <h5>🔭 Tahmin Bulunamadı</h5>
+          <p>Seçili kriterlere uygun maç tahmini bulunamadı. Güven seviyesini düşürmeyi deneyin.</p>
+        </div>
       {% endif %}
     </div>
 
@@ -105,35 +198,103 @@
     <div class="tab-pane fade" id="charts">
       <div class="row">
         <div class="col-md-6">
-          <h6 class="text-center">Güven Dağılımı</h6>
-          <canvas id="confidenceChart"></canvas>
+          <div class="card">
+            <div class="card-header">
+              <h6 class="mb-0">🤖 AI vs Temel Tahmin Dağılımı</h6>
+            </div>
+            <div class="card-body">
+              <canvas id="predictionTypeChart"></canvas>
+            </div>
+          </div>
         </div>
         <div class="col-md-6">
-          <h6 class="text-center">Skor Olasılıkları (İlk Maç)</h6>
-          <canvas id="scoreChart"></canvas>
+          <div class="card">
+            <div class="card-header">
+              <h6 class="mb-0">📈 Güven Seviyesi Dağılımı</h6>
+            </div>
+            <div class="card-body">
+              <canvas id="confidenceDistributionChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header">
+              <h6 class="mb-0">🎯 Risk Profili Analizi</h6>
+            </div>
+            <div class="card-body">
+              <canvas id="riskAnalysisChart"></canvas>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
     <!-- Detaylar -->
     <div class="tab-pane fade" id="details">
-      <div class="alert alert-info">
-        <h5>🔬 Model Bileşenleri</h5>
-        <ul>
-          <li>Takım İstatistikleri</li>
-          <li>Oyuncu Etkisi</li>
-          <li>Son Form</li>
-          <li>Karşılaşma Geçmişi</li>
-          <li>Oran Analizi</li>
-          <li>Lig Pozisyonu</li>
-        </ul>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <h6 class="mb-0">🔬 AI Model Detayları</h6>
+            </div>
+            <div class="card-body">
+              {% if ai_performance %}
+              <div class="mb-3">
+                <strong>Model Versiyonu:</strong> 3.0-advanced<br>
+                <strong>Son Eğitim:</strong> {{ ai_performance.last_training }}<br>
+                <strong>Özellik Sayısı:</strong> {{ ai_performance.feature_count }}<br>
+                <strong>Çapraz Doğrulama:</strong> {{ "%.1f"|format(ai_performance.cross_validation_score * 100) }}%<br>
+                <strong>Kesinlik Trendi:</strong> {{ "%.2f"|format(ai_performance.certainty_trend) }}
+              </div>
+              {% endif %}
+              
+              <h6>🎯 Tahmin Bileşenleri</h6>
+              <ul class="list-unstyled">
+                <li>✅ Takım Güç Analizi</li>
+                <li>✅ Form ve Momentum</li>
+                <li>✅ İstatistiksel Modelleme</li>
+                <li>✅ Piyasa Verileri</li>
+                <li>✅ Context Analizi</li>
+                <li>✅ Risk Değerlendirmesi</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <h6 class="mb-0">📊 Sistem İstatistikleri</h6>
+            </div>
+            <div class="card-body">
+              <div class="mb-3">
+                <strong>Toplam Tahmin:</strong> {{ stats.total_matches }}<br>
+                <strong>AI Tahminleri:</strong> {{ stats.ai_matches }}<br>
+                <strong>Ortalama Güven:</strong> {{ "%.1f"|format(stats.average_confidence) }}%<br>
+                <strong>AI Başarı Oranı:</strong> {{ "%.1f"|format(stats.get('ai_success_rate', 0)) }}%<br>
+              </div>
+              
+              <h6>⚡ Gerçek Zamanlı Özellikler</h6>
+              <ul class="list-unstyled">
+                <li>🔄 Otomatik Model Güncelleme</li>
+                <li>📈 Performans İzleme</li>
+                <li>⚠️ Risk Uyarı Sistemi</li>
+                <li>🎯 Kesinlik Hesaplama</li>
+                <li>🔍 Anomali Tespiti</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
 <footer>
-  <p>⚽ Predicta - Gelişmiş Futbol Tahmin Sistemi</p>
+  <p>🤖 Predicta AI - Süper Öğrenen Yapay Zeka ile Futbol Tahminleri</p>
+  <small>v2.0.0-ai | Gerçek zamanlı adaptasyon aktif</small>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -141,7 +302,13 @@
   // Dark mode toggle
   document.getElementById('darkModeToggle').addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
+    localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
   });
+
+  // Sayfa yüklendiğinde dark mode durumunu kontrol et
+  if (localStorage.getItem('darkMode') === 'true') {
+    document.body.classList.add('dark-mode');
+  }
 
   // Güven seviyesi slider
   const slider = document.getElementById('confidenceSlider');
@@ -150,63 +317,137 @@
     valueDisplay.textContent = this.value + '%';
   });
 
-  function updatePredictions() {
-    const confidence = slider.value;
-    const currentUrl = window.location.origin;
-    window.location.href = `${currentUrl}/?min_confidence=${confidence}`;
+  // AI only toggle
+  function toggleAIOnly() {
+    const checkbox = document.getElementById('aiOnlyCheckbox');
+    checkbox.checked = !checkbox.checked;
+    updateAIToggleText();
   }
 
-  // Chart.js grafikleri gerçek verilerden doldur
+  function updateAIToggleText() {
+    const checkbox = document.getElementById('aiOnlyCheckbox');
+    const textElement = document.getElementById('aiToggleText');
+    textElement.textContent = checkbox.checked ? '🤖 Tümü' : '🤖 Sadece AI';
+  }
+
+  function updatePredictions() {
+    const confidence = slider.value;
+    const aiOnly = document.getElementById('aiOnlyCheckbox').checked;
+    const currentUrl = window.location.origin;
+    
+    if (aiOnly) {
+      window.location.href = `${currentUrl}/ai/predictions?min_confidence=${confidence}&ai_only=true`;
+    } else {
+      window.location.href = `${currentUrl}/?min_confidence=${confidence}`;
+    }
+  }
+
+  // Chart.js grafikleri
   async function loadCharts() {
     try {
-      const response = await fetch("/matches/predictions?min_confidence=40");
+      const response = await fetch("/matches/predictions?min_confidence=20");
       const data = await response.json();
 
-      // Güven dağılımı hesapla
-      let high = 0, medium = 0, low = 0;
-      data.forEach(d => {
-        if (d.prediction.confidence >= 80) high++;
-        else if (d.prediction.confidence >= 60) medium++;
-        else low++;
+      // Tahmin tipi dağılımı
+      const aiPredictions = data.filter(d => d.prediction.ai_powered).length;
+      const basicPredictions = data.length - aiPredictions;
+
+      new Chart(document.getElementById('predictionTypeChart'), {
+        type: 'pie',
+        data: {
+          labels: ['🤖 AI Tahminleri', '📊 Temel Tahminler'],
+          datasets: [{
+            data: [aiPredictions, basicPredictions],
+            backgroundColor: ['#28a745', '#17a2b8']
+          }]
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: {
+              position: 'bottom'
+            }
+          }
+        }
       });
 
-      new Chart(document.getElementById('confidenceChart'), {
+      // Güven dağılımı
+      const confidenceLevels = [0, 0, 0, 0]; // Çok düşük, Düşük, Orta, Yüksek
+      data.forEach(d => {
+        const conf = d.prediction.confidence;
+        if (conf >= 80) confidenceLevels[3]++;
+        else if (conf >= 60) confidenceLevels[2]++;
+        else if (conf >= 40) confidenceLevels[1]++;
+        else confidenceLevels[0]++;
+      });
+
+      new Chart(document.getElementById('confidenceDistributionChart'), {
+        type: 'bar',
+        data: {
+          labels: ['Çok Düşük (<40)', 'Düşük (40-59)', 'Orta (60-79)', 'Yüksek (80+)'],
+          datasets: [{
+            label: 'Maç Sayısı',
+            data: confidenceLevels,
+            backgroundColor: ['#dc3545', '#ffc107', '#17a2b8', '#28a745']
+          }]
+        },
+        options: {
+          responsive: true,
+          scales: {
+            y: {
+              beginAtZero: true
+            }
+          }
+        }
+      });
+
+      // Risk analizi (sadece AI tahminleri için)
+      const aiData = data.filter(d => d.prediction.ai_powered);
+      const riskLevels = [0, 0, 0]; // Düşük, Orta, Yüksek
+      
+      aiData.forEach(d => {
+        const risk = d.prediction.risk_factors?.overall_risk || 0;
+        if (risk >= 0.7) riskLevels[2]++;
+        else if (risk >= 0.4) riskLevels[1]++;
+        else riskLevels[0]++;
+      });
+
+      new Chart(document.getElementById('riskAnalysisChart'), {
         type: 'doughnut',
         data: {
-          labels: ['Yüksek (80+)', 'Orta (60-79)', 'Düşük (<60)'],
+          labels: ['🟢 Düşük Risk', '🟡 Orta Risk', '🔴 Yüksek Risk'],
           datasets: [{
-            data: [high, medium, low],
+            data: riskLevels,
             backgroundColor: ['#28a745', '#ffc107', '#dc3545']
           }]
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: {
+              position: 'bottom'
+            }
+          }
         }
       });
 
-      // İlk maçın skor olasılıklarını al
-      if (data.length > 0 && data[0].prediction.score_prediction) {
-        const firstMatch = data[0];
-        if (firstMatch.prediction.score_probabilities) {
-          const scores = firstMatch.prediction.score_probabilities.map(s => s.score);
-          const probs = firstMatch.prediction.score_probabilities.map(s => s.probability);
-
-          new Chart(document.getElementById('scoreChart'), {
-            type: 'bar',
-            data: {
-              labels: scores,
-              datasets: [{
-                label: 'Olasılık (%)',
-                data: probs,
-                backgroundColor: '#3498db'
-              }]
-            }
-          });
-        }
-      }
     } catch (err) {
       console.error("Grafik yüklenirken hata:", err);
     }
   }
 
-  loadCharts();
+  // Sayfa yüklendiğinde grafikleri yükle
+  document.addEventListener('DOMContentLoaded', function() {
+    loadCharts();
+    updateAIToggleText();
+    
+    // Sekme değiştiğinde grafikleri yeniden boyutlandır
+    document.querySelectorAll('[data-bs-toggle="tab"]').forEach(tab => {
+      tab.addEventListener('shown.bs.tab', function() {
+        window.dispatchEvent(new Event('resize'));
+      });
+    });
+  });
 </script>
 </body>
 </html>
