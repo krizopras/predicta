@@ -9,21 +9,14 @@
     "models": {
         "ensemble_weights": [0.4, 0.3, 0.2, 0.1],
         "confidence_calibration": true,
-        "feature_selection": "rfe"
+        "feature_selection": {
+            "method": "rfe",
+            "max_features": 30
+        }
     },
     "features": {
         "max_features": 30,
         "polynomial_degree": 2,
         "interaction_terms": true
-    },
-    "adaptation": {
-        "learning_rate": 0.1,
-        "forgetting_factor": 0.95,
-        "drift_detection_window": 100
-    },
-    "external_apis": {
-        "weather_api_key": "",
-        "football_data_api_key": "",
-        "enable_external_data": false
     }
 }
