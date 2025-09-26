@@ -16,9 +16,10 @@ from typing import List, Dict, Optional, Tuple
 import numpy as np
 import time
 import re
+import math  # ✅ EKSİK IMPORTU EKLEYİN
 from bs4 import BeautifulSoup
 from data_scraper import NesineDataScraper
-from database_manager import DatabaseManager # Import'un doğru olduğundan emin olun
+from database_manager import DatabaseManager
 
 # Logging kurulumu
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -615,7 +616,7 @@ class NesineAdvancedPredictor:
         # Forma göre gol yeme tahmini ayarla
         return avg_conceded * (1.2 - form_score * 0.4)
 
-# Kullanım örneği
+# Kullanım örneği (en altta)
 if __name__ == "__main__":
     # Örnek takım istatistikleri
     home_stats_example = {
@@ -657,7 +658,8 @@ if __name__ == "__main__":
         'weather_impact': -0.05
     }
     
-    engine = AdvancedPredictionEngine()
+    # ✅ DÜZELTME: Doğru sınıf ismini kullan
+    engine = NesineAdvancedPredictor()  # ✅ DOĞRU
     prediction = engine.predict_match_advanced(home_stats_example, away_stats_example, match_info_example)
     
     print("=== GELİŞMİŞ MAÇ TAHMİNİ ===")
