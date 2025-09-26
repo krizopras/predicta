@@ -498,8 +498,11 @@ class NesineAdvancedPredictor:
             '2': round(prob_2 * 100, 1)
         }
     
-    def predict_most_likely_scores(self, home_xg: float, away_xg: float, ms_prediction: str) -> List[Dict]:
-        """MS tahmini ile uyumlu skor tahmini"""
+       def predict_most_likely_scores(self, home_xg: float, away_xg: float, ms_prediction: str) -> List[Dict]:
+        """
+        MS tahmini ile uyumlu skor tahmini.
+        Ana MS tahminine öncelik vermek için olasılıkları ayarlama yapılır.
+        """
         
         score_probs = []
         max_goals = 6
@@ -511,10 +514,16 @@ class NesineAdvancedPredictor:
                 away_prob = (away_xg ** away_goals * math.exp(-away_xg)) / math.factorial(away_goals)
                 combined_prob = home_prob * away_prob
                 
-                # MS tahmini ile uyum kontrolü
+                # Skorun MS karşılığını bulma
                 score_ms = self.get_score_ms_prediction(home_goals, away_goals)
+                
+                # 🟢 DÜZELTİLEN MANTIK: MS tahminiyle uyumlu olanı zorla, uyumsuz olanı zayıflat.
                 if score_ms == ms_prediction:
-                    combined_prob *= 1.2
+                    # MS tahminiyle uyumlu skorların olasılığını %60 artır (1.6)
+                    combined_prob *= 1.6 
+                else:
+                    # MS tahminiyle uyumsuz skorların olasılığını %60 düşür (0.4)
+                    combined_prob *= 0.4
                 
                 score_probs.append({
                     'score': f"{home_goals}-{away_goals}",
@@ -537,7 +546,7 @@ class NesineAdvancedPredictor:
             return 'X'
     
     def determine_match_result(self, probabilities: Dict, home_xg: float, away_xg: float) -> str:
-        """Tutarlı MS sonucu belirleme"""
+        """Tutarlı MS sonucu belirleme (Mantık aynı kalmıştır)"""
         
         # 1. Olasılık farkına göre
         prob_1 = probabilities.get('1', 0)
