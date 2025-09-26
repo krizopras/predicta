@@ -1,0 +1,23 @@
+[project]
+name = "repl-nix-workspace"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.11"
+dependencies = [
+    # Veri İşleme
+    "beautifulsoup4>=4.13.5",
+    "numpy>=2.3.3",
+    "pandas>=2.3.2",
+    "plotly>=6.3.0",
+    "requests>=2.32.5",
+    "trafilatura>=2.0.0",
+
+    # WEB SERVİSİ İÇİN EKLENENLER (Render Deployment)
+    "fastapi>=0.111.0",
+    "uvicorn[standard]>=0.29.0", # uvicorn sunucusu
+    "gunicorn>=22.0.0",         # Render/Linux için Gunicorn
+    "jinja2>=3.1.4",            # HTML şablonları için
+    
+    # Streamlit uygulaması için (Render'da sadece API kullanıyorsanız kaldırabilirsiniz)
+    "streamlit>=1.50.0", 
+]
