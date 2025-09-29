@@ -54,7 +54,7 @@ except ImportError as e:
     logger.warning(f"⚠️ Nesine fetcher import edilemedi: {e}")
 
 # Template directory detection
-template_dirs = ["data/templates", "templates", "./templates"]
+template_dirs = ["templates", "src/templates", "./templates"]
 templates = None
 
 for template_dir in template_dirs:
@@ -86,7 +86,7 @@ try:
 except ImportError as e:
     logger.warning(f"⚠️ Bazı modüller import edilemedi: {e}")
     # Fallback sınıfları
-        class EnhancedSuperLearningAI:
+    class EnhancedSuperLearningAI:
         def __init__(self, db_manager=None):
             self.db_manager = db_manager
             self.last_training = None
@@ -313,6 +313,7 @@ except ImportError as e:
             return None
         def get_recent_matches(self, league, limit):
             return []
+
 async def train_ai_models():
     """AI modellerini eğit"""
     global ai_predictor
@@ -582,6 +583,52 @@ async def check_and_retrain_ai():
                 
     except Exception as e:
         logger.error(f"AI yeniden eğitim kontrol hatası: {e}")
+
+async def get_detailed_match_stats(match_id: int) -> Dict:
+    """Detaylı maç istatistikleri çek"""
+    try:
+        if NESINE_AVAILABLE:
+            # Nesine'dan detaylı istatistik çek
+            matches = await nesine_fetcher.fetch_prematch_matches()
+            for match in matches:
+                if match.get('id') == match_id:
+                    return match.get('stats', {})
+        
+        # Fallback istatistikler
+        return generate_fallback_stats()
+    except Exception as e:
+        logger.error(f"İstatistik çekme hatası: {e}")
+        return generate_fallback_stats()
+
+def generate_fallback_stats() -> Dict:
+    """Fallback istatistikler oluştur"""
+    return {
+        'possession': {'home': random.randint(45, 65), 'away': random.randint(35, 55)},
+        'shots': {'home': random.randint(8, 18), 'away': random.randint(6, 16)},
+        'shots_on_target': {'home': random.randint(3, 8), 'away': random.randint(2, 7)},
+        'corners': {'home': random.randint(3, 9), 'away': random.randint(2, 8)},
+        'fouls': {'home': random.randint(10, 20), 'away': random.randint(10, 20)},
+        'yellow_cards': {'home': random.randint(1, 5), 'away': random.randint(1, 5)},
+        'red_cards': {'home': random.randint(0, 1), 'away': random.randint(0, 1)}
+    }
+
+async def enhance_matches_with_stats(matches: List[Dict]) -> List[Dict]:
+    """Maçlara istatistik ekle"""
+    enhanced_matches = []
+    
+    for match in matches:
+        # Mevcut istatistikleri kontrol et
+        if not match.get('stats'):
+            match['stats'] = await get_detailed_match_stats(match.get('id'))
+        
+        # AI analizi ekle
+        if ai_predictor:
+            prediction = ai_predictor.predict_with_confidence(match)
+            match['ai_prediction'] = prediction
+        
+        enhanced_matches.append(match)
+    
+    return enhanced_matches
 
 @app.on_event("startup")
 async def startup_event():
@@ -904,8 +951,6 @@ async def get_supported_leagues():
         ]
     }
 
-# main.py'de GÜNCELLENECEK ENDPOINT'ler
-
 @app.get("/api/nesine/matches")
 async def get_nesine_matches(limit: int = Query(100)):
     """Nesine.com'dan güncel maçları çek (İSTATİSTİKLİ)"""
@@ -956,6 +1001,7 @@ async def get_nesine_matches(limit: int = Query(100)):
             "message": f"Hata: {str(e)}",
             "count": 0
         }
+
 @app.get("/api/matches/predictions")
 async def get_matches_with_predictions(
     limit: int = Query(20),
@@ -1059,53 +1105,7 @@ async def get_head_to_head(home_team: str, away_team: str) -> Dict:
         'draws': random.randint(1, 5),
         'avg_goals': round(random.uniform(2.1, 3.5), 1)
     }
-# main.py'ye EKLENECEK FONKSİYONLAR
 
-async def get_detailed_match_stats(match_id: int) -> Dict:
-    """Detaylı maç istatistikleri çek"""
-    try:
-        if NESINE_AVAILABLE:
-            # Nesine'dan detaylı istatistik çek
-            matches = await nesine_fetcher.fetch_prematch_matches()
-            for match in matches:
-                if match.get('id') == match_id:
-                    return match.get('stats', {})
-        
-        # Fallback istatistikler
-        return generate_fallback_stats()
-    except Exception as e:
-        logger.error(f"İstatistik çekme hatası: {e}")
-        return generate_fallback_stats()
-
-def generate_fallback_stats() -> Dict:
-    """Fallback istatistikler oluştur"""
-    return {
-        'possession': {'home': random.randint(45, 65), 'away': random.randint(35, 55)},
-        'shots': {'home': random.randint(8, 18), 'away': random.randint(6, 16)},
-        'shots_on_target': {'home': random.randint(3, 8), 'away': random.randint(2, 7)},
-        'corners': {'home': random.randint(3, 9), 'away': random.randint(2, 8)},
-        'fouls': {'home': random.randint(10, 20), 'away': random.randint(10, 20)},
-        'yellow_cards': {'home': random.randint(1, 5), 'away': random.randint(1, 5)},
-        'red_cards': {'home': random.randint(0, 1), 'away': random.randint(0, 1)}
-    }
-
-async def enhance_matches_with_stats(matches: List[Dict]) -> List[Dict]:
-    """Maçlara istatistik ekle"""
-    enhanced_matches = []
-    
-    for match in matches:
-        # Mevcut istatistikleri kontrol et
-        if not match.get('stats'):
-            match['stats'] = await get_detailed_match_stats(match.get('id'))
-        
-        # AI analizi ekle
-        if ai_predictor:
-            prediction = ai_predictor.predict_with_confidence(match)
-            match['ai_prediction'] = prediction
-        
-        enhanced_matches.append(match)
-    
-    return enhanced_matches
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
