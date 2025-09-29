@@ -470,51 +470,51 @@
     <script>
         const leagues = {
             national: [
-                { name: 'Premier League', country: '🏴󠁧󠁢󠁥󠁮󠁧󠁿 İngiltere', major: true },
-                { name: 'La Liga', country: '🇪🇸 İspanya', major: true },
-                { name: 'Bundesliga', country: '🇩🇪 Almanya', major: true },
-                { name: 'Serie A', country: '🇮🇹 İtalya', major: true },
-                { name: 'Ligue 1', country: '🇫🇷 Fransa', major: true },
-                { name: 'Süper Lig', country: '🇹🇷 Türkiye', major: true },
-                { name: 'Eredivisie', country: '🇳🇱 Hollanda', major: false },
-                { name: 'Primeira Liga', country: '🇵🇹 Portekiz', major: false },
-                { name: 'Championship', country: '🏴󠁧󠁢󠁥󠁮󠁧󠁿 İngiltere 2', major: false },
-                { name: 'Belgian Pro League', country: '🇧🇪 Belçika', major: false },
-                { name: 'Serie B', country: '🇮🇹 İtalya 2', major: false },
-                { name: 'Allsvenskan', country: '🇸🇪 İsveç', major: false },
-                { name: 'Eliteserien', country: '🇳🇴 Norveç', major: false },
-                { name: 'Veikkausliiga', country: '🇫🇮 Finlandiya', major: false },
-                { name: 'Ekstraklasa', country: '🇵🇱 Polonya', major: false },
-                { name: 'NB I', country: '🇭🇺 Macaristan', major: false },
-                { name: 'Super Liga', country: '🇷🇸 Sırbistan', major: false },
-                { name: 'Czech Liga', country: '🇨🇿 Çekya', major: false },
-                { name: 'Austrian Bundesliga', country: '🇦🇹 Avusturya', major: false },
-                { name: 'Swiss Super League', country: '🇨🇭 İsviçre', major: false },
-                { name: 'Danish Superliga', country: '🇩🇰 Danimarka', major: false }
+                { name: 'Premier League', country: 'Ingiltere', major: true },
+                { name: 'La Liga', country: 'Ispanya', major: true },
+                { name: 'Bundesliga', country: 'Almanya', major: true },
+                { name: 'Serie A', country: 'Italya', major: true },
+                { name: 'Ligue 1', country: 'Fransa', major: true },
+                { name: 'Super Lig', country: 'Turkiye', major: true },
+                { name: 'Eredivisie', country: 'Hollanda', major: false },
+                { name: 'Primeira Liga', country: 'Portekiz', major: false },
+                { name: 'Championship', country: 'Ingiltere 2', major: false },
+                { name: 'Belgian Pro League', country: 'Belcika', major: false },
+                { name: 'Serie B', country: 'Italya 2', major: false },
+                { name: 'Allsvenskan', country: 'Isvec', major: false },
+                { name: 'Eliteserien', country: 'Norvec', major: false },
+                { name: 'Veikkausliiga', country: 'Finlandiya', major: false },
+                { name: 'Ekstraklasa', country: 'Polonya', major: false },
+                { name: 'NB I', country: 'Macaristan', major: false },
+                { name: 'Super Liga', country: 'Sirbistan', major: false },
+                { name: 'Czech Liga', country: 'Cekya', major: false },
+                { name: 'Austrian Bundesliga', country: 'Avusturya', major: false },
+                { name: 'Swiss Super League', country: 'Isvicre', major: false },
+                { name: 'Danish Superliga', country: 'Danimarka', major: false }
             ],
             southAmerica: [
-                { name: 'Brasileirão Série A', country: '🇧🇷 Brezilya', major: true },
-                { name: 'Liga Profesional', country: '🇦🇷 Arjantin', major: true },
-                { name: 'Brasileirão Série B', country: '🇧🇷 Brezilya 2', major: false },
-                { name: 'Primera División', country: '🇺🇾 Uruguay', major: false },
-                { name: 'Primera División', country: '🇨🇴 Kolombiya', major: false },
-                { name: 'Primera División', country: '🇨🇱 Şili', major: false },
-                { name: 'Liga Pro', country: '🇪🇨 Ekvador', major: false },
-                { name: 'División Profesional', country: '🇵🇾 Paraguay', major: false }
+                { name: 'Brasileirao Serie A', country: 'Brezilya', major: true },
+                { name: 'Liga Profesional', country: 'Arjantin', major: true },
+                { name: 'Brasileirao Serie B', country: 'Brezilya 2', major: false },
+                { name: 'Primera Division', country: 'Uruguay', major: false },
+                { name: 'Primera Division', country: 'Kolombiya', major: false },
+                { name: 'Primera Division', country: 'Sili', major: false },
+                { name: 'Liga Pro', country: 'Ekvador', major: false },
+                { name: 'Division Profesional', country: 'Paraguay', major: false }
             ],
             northAmerica: [
-                { name: 'MLS', country: '🇺🇸 ABD', major: true },
-                { name: 'Liga MX', country: '🇲🇽 Meksika', major: true },
-                { name: 'Liga MX Apertura', country: '🇲🇽 Meksika', major: false },
-                { name: 'Canadian Premier League', country: '🇨🇦 Kanada', major: false }
+                { name: 'MLS', country: 'ABD', major: true },
+                { name: 'Liga MX', country: 'Meksika', major: true },
+                { name: 'Liga MX Apertura', country: 'Meksika', major: false },
+                { name: 'Canadian Premier League', country: 'Kanada', major: false }
             ],
             international: [
-                { name: 'Champions League', country: '🏆 UEFA', major: true },
-                { name: 'Europa League', country: '🏆 UEFA', major: true },
-                { name: 'Conference League', country: '🏆 UEFA', major: false },
-                { name: 'Copa Libertadores', country: '🏆 CONMEBOL', major: true },
-                { name: 'Copa Sudamericana', country: '🏆 CONMEBOL', major: false },
-                { name: 'CONCACAF Champions Cup', country: '🏆 CONCACAF', major: false }
+                { name: 'Champions League', country: 'UEFA', major: true },
+                { name: 'Europa League', country: 'UEFA', major: true },
+                { name: 'Conference League', country: 'UEFA', major: false },
+                { name: 'Copa Libertadores', country: 'CONMEBOL', major: true },
+                { name: 'Copa Sudamericana', country: 'CONMEBOL', major: false },
+                { name: 'CONCACAF Champions Cup', country: 'CONCACAF', major: false }
             ]
         };
 
@@ -603,7 +603,7 @@
                 otherHeader.className = 'league-item';
                 otherHeader.style.background = 'rgba(255, 152, 0, 0.8)';
                 otherHeader.style.fontWeight = '700';
-                otherHeader.innerHTML = '📋 DİĞER LİGLER';
+                otherHeader.innerHTML = 'DIGER LIGLER';
                 otherHeader.onclick = null;
                 otherHeader.style.cursor = 'default';
                 nationalContainer.appendChild(otherHeader);
@@ -699,7 +699,7 @@
                 otherHeader.className = 'league-item';
                 otherHeader.style.background = 'rgba(255, 152, 0, 0.8)';
                 otherHeader.style.fontWeight = '700';
-                otherHeader.innerHTML = '📋 DİĞER TURNUVALAR';
+                otherHeader.innerHTML = 'DIGER TURNUVALAR';
                 otherHeader.onclick = null;
                 otherHeader.style.cursor = 'default';
                 internationalContainer.appendChild(otherHeader);
