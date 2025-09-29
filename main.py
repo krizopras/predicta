@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-PREDICTA - GELÄ°ÅžMÄ°Åž FUTBOL TAHMÄ°N SÄ°STEMÄ°
-Ana FastAPI uygulama dosyasÄ±
+PREDICTA - GELİŞMİŞ FUTBOL TAHMİN SİSTEMİ
+Ana FastAPI uygulama dosyası
 """
 import sqlite3
 import json
@@ -35,7 +35,7 @@ logger = logging.getLogger(__name__)
 
 app = FastAPI(
     title="Predicta AI Football Prediction System",
-    description="GeliÅŸmiÅŸ Yapay Zeka Destekli Futbol Tahmin Sistemi",
+    description="Gelişmiş Yapay Zeka Destekli Futbol Tahmin Sistemi",
     version="3.0"
 )
 
@@ -44,11 +44,11 @@ db_manager = None
 ai_predictor = None
 is_system_ready = False
 
-# Nesine fetcher importu - hata durumunda fallback
+# Nesine fetcher importu - YENİ MODÜL
 try:
-    from nesine_match_fetcher import nesine_fetcher
+    from nesine_fetcher_complete import NesineCompleteFetcher
     NESINE_AVAILABLE = True
-    logger.info("✅ Nesine fetcher başarıyla import edildi")
+    logger.info("✅ Nesine Complete Fetcher başarıyla import edildi")
 except ImportError as e:
     NESINE_AVAILABLE = False
     logger.warning(f"⚠️ Nesine fetcher import edilemedi: {e}")
@@ -78,13 +78,14 @@ class PredictionResponse(BaseModel):
     prediction: Dict[str, Any]
     message: str = ""
 
-# İmportları burada yapıyoruz, hata durumunda sistemin çalışmaya devam etmesi için
+# İmportları burada yapıyoruz
 try:
     from ai_engine import EnhancedSuperLearningAI
     from database_manager import AIDatabaseManager
     logger.info("✅ Tüm modüller başarıyla import edildi")
 except ImportError as e:
     logger.warning(f"⚠️ Bazı modüller import edilemedi: {e}")
+    
     # Fallback sınıfları
     class EnhancedSuperLearningAI:
         def __init__(self, db_manager=None):
@@ -126,12 +127,10 @@ except ImportError as e:
                     features = self._extract_training_features(match)
                     if features:
                         training_features.append(features)
-                        # Basit etiketleme (odds'a göre)
                         label = self._generate_training_label(match.get('odds', {}))
                         training_labels.append(label)
                 
                 if len(training_features) >= 5:
-                    # Model güncelleme (basit weighted average)
                     self._update_model_weights(training_features, training_labels)
                     self.last_training = datetime.now()
                     
@@ -165,9 +164,9 @@ except ImportError as e:
                     stats.get('possession', {}).get('home', 50) / 100.0,
                     stats.get('shots', {}).get('home', 10) / 20.0,
                     stats.get('shots', {}).get('away', 8) / 20.0,
-                    1.0 / odds.get('1', 2.5),  # Home win probability from odds
-                    1.0 / odds.get('X', 3.2),  # Draw probability from odds
-                    1.0 / odds.get('2', 3.0)   # Away win probability from odds
+                    1.0 / odds.get('1', 2.5) if odds.get('1', 0) > 0 else 0.4,
+                    1.0 / odds.get('X', 3.2) if odds.get('X', 0) > 0 else 0.3,
+                    1.0 / odds.get('2', 3.0) if odds.get('2', 0) > 0 else 0.3
                 ]
             except Exception as e:
                 logger.debug(f"Özellik çıkarma hatası: {e}")
@@ -176,41 +175,38 @@ except ImportError as e:
         def _generate_training_label(self, odds):
             """Eğitim etiketi oluştur"""
             try:
-                home_prob = 1.0 / odds.get('1', 2.5)
-                draw_prob = 1.0 / odds.get('X', 3.2)
-                away_prob = 1.0 / odds.get('2', 3.0)
+                home_prob = 1.0 / odds.get('1', 2.5) if odds.get('1', 0) > 0 else 0.4
+                draw_prob = 1.0 / odds.get('X', 3.2) if odds.get('X', 0) > 0 else 0.3
+                away_prob = 1.0 / odds.get('2', 3.0) if odds.get('2', 0) > 0 else 0.3
                 
-                # Normalize
                 total = home_prob + draw_prob + away_prob
                 home_prob /= total
                 draw_prob /= total
                 away_prob /= total
                 
-                # En yüksek olasılığa göre etiket
                 if home_prob > draw_prob and home_prob > away_prob:
-                    return [1, 0, 0]  # Home win
+                    return [1, 0, 0]
                 elif away_prob > home_prob and away_prob > draw_prob:
-                    return [0, 0, 1]  # Away win
+                    return [0, 0, 1]
                 else:
-                    return [0, 1, 0]  # Draw
+                    return [0, 1, 0]
                     
             except:
-                return [0.33, 0.33, 0.33]  # Default
+                return [0.33, 0.33, 0.33]
         
         def _update_model_weights(self, features, labels):
-            """Model ağırlıklarını güncelle (basit moving average)"""
-            # Gerçek ML modeli yerine basit istatistiksel güncelleme
+            """Model ağırlıklarını güncelle"""
             self.model_accuracy = min(0.85, self.model_accuracy + 0.01)
             logger.info(f"📈 Model doğruluğu güncellendi: {self.model_accuracy:.2f}")
             
         async def predict_match(self, home_team, away_team, league):
-            """Maç tahmini yap (eski interface için)"""
+            """Maç tahmini yap"""
             match_data = {
                 'home_team': home_team,
                 'away_team': away_team, 
                 'league': league,
                 'stats': await self._generate_match_stats(home_team, away_team),
-                'odds': {'1': 2.0, 'X': 3.2, '2': 3.8}  # Varsayılan oranlar
+                'odds': {'1': 2.0, 'X': 3.2, '2': 3.8}
             }
             return self.predict_with_confidence(match_data)
         
@@ -232,49 +228,38 @@ except ImportError as e:
                 home_team = match_data.get('home_team', '').lower()
                 away_team = match_data.get('away_team', '').lower()
                 
-                # Takım güçlerini al
                 home_power = self.team_power_map.get(home_team, 5)
                 away_power = self.team_power_map.get(away_team, 5)
                 
-                # İstatistikleri al veya oluştur
                 possession_home = stats.get('possession', {}).get('home', 50)
                 shots_home = stats.get('shots', {}).get('home', 12)
                 shots_away = stats.get('shots', {}).get('away', 10)
                 
-                # Oranları al
                 odds_1 = odds.get('1', 2.0)
                 odds_x = odds.get('X', 3.2)
                 odds_2 = odds.get('2', 3.8)
                 
-                # Gelişmiş tahmin algoritması
-                home_advantage = 0.1  # Ev sahibi avantajı
-                
-                # Güç farkına göre temel olasılıklar
+                home_advantage = 0.1
                 power_diff = (home_power - away_power) * 0.05
                 base_home_win = 0.35 + power_diff + home_advantage
                 base_away_win = 0.25 - power_diff
                 base_draw = 0.40
                 
-                # İstatistik düzeltmeleri
                 possession_factor = (possession_home - 50) * 0.002
                 shots_factor = ((shots_home - shots_away) / 20) * 0.05
                 
-                # Oran düzeltmeleri (value betting)
                 odds_factor_1 = (1/odds_1 - 0.33) * 0.1 if odds_1 > 0 else 0
                 odds_factor_2 = (1/odds_2 - 0.33) * 0.1 if odds_2 > 0 else 0
                 
-                # Nihai olasılıklar
                 home_win_prob = max(0.2, min(0.7, base_home_win + possession_factor + shots_factor + odds_factor_1))
                 away_win_prob = max(0.15, min(0.6, base_away_win - possession_factor - shots_factor + odds_factor_2))
                 draw_prob = max(0.2, min(0.5, base_draw - abs(power_diff) - abs(shots_factor)))
                 
-                # Normalize et
                 total = home_win_prob + away_win_prob + draw_prob
                 home_win_prob /= total
                 away_win_prob /= total
                 draw_prob /= total
                 
-                # Tahmini belirle
                 if home_win_prob > away_win_prob and home_win_prob > draw_prob:
                     prediction = "1"
                     confidence = home_win_prob
@@ -329,7 +314,6 @@ except ImportError as e:
                 ]
             }
             
-            import random
             base_analysis = random.choice(analyses[result_type])
             
             if probability > 0.7:
@@ -342,7 +326,7 @@ except ImportError as e:
             return f"{base_analysis} - {confidence_text}"
         
         def _get_fallback_prediction(self):
-            """Fallback tahmin (random değil, sabit)"""
+            """Fallback tahmin"""
             return {
                 "prediction": "1",
                 "confidence": 65.5,
@@ -376,7 +360,7 @@ except ImportError as e:
             return []
 
 async def generate_match_stats() -> Dict:
-    """Maç istatistikleri oluştur (isim değiştirildi)"""
+    """Maç istatistikleri oluştur"""
     return {
         'possession': {'home': random.randint(45, 65), 'away': random.randint(35, 55)},
         'shots': {'home': random.randint(8, 18), 'away': random.randint(6, 16)},
@@ -386,7 +370,7 @@ async def generate_match_stats() -> Dict:
     }
 
 def generate_team_stats(team_name: str, league: str) -> Dict:
-    """Takım istatistikleri oluştur (isim değiştirildi)"""
+    """Takım istatistikleri oluştur"""
     return {
         'position': np.random.randint(1, 20),
         'points': np.random.randint(10, 60),
@@ -404,39 +388,18 @@ async def train_ai_models():
     global ai_predictor
     try:
         if ai_predictor:
-            logger.info("🔄 Fallback AI eğitimi başlatılıyor...")
-            success = await run_ai_training()
-            if success:
-                logger.info("✅ AI modelleri başarıyla eğitildi")
+            logger.info("🔄 AI eğitimi başlatılıyor...")
+            
+            # Nesine'den gerçek veri çek
+            matches = await fetch_nesine_data("all")
+            
+            if matches:
+                result = await ai_predictor.train_models(matches)
+                logger.info(f"✅ AI eğitim sonucu: {result}")
             else:
-                logger.warning("⚠️ AI eğitimi tamamlanamadı, fallback modunda çalışıyor")
-        else:
-            logger.warning("AI predictor başlatılmadı")
+                logger.warning("⚠️ Eğitim için veri alınamadı")
     except Exception as e:
         logger.error(f"⚠️ AI eğitim hatası: {e}")
-
-async def run_ai_training() -> bool:
-    """AI eğitimini çalıştır"""
-    try:
-        if hasattr(ai_predictor, 'train_advanced_models'):
-            return ai_predictor.train_advanced_models()
-        else:
-            return await fallback_ai_training()
-    except Exception as e:
-        logger.error(f"AI eğitim hatası: {e}")
-        return False
-
-async def fallback_ai_training() -> bool:
-    """Fallback AI eğitim metodu"""
-    try:
-        logger.info("🔄 Fallback AI eğitimi başlatılıyor...")
-        if ai_predictor and hasattr(ai_predictor, 'models'):
-            logger.info("📊 Fallback modeller hazırlanıyor...")
-            return True
-        return False
-    except Exception as e:
-        logger.error(f"Fallback eğitim hatası: {e}")
-        return False
 
 async def periodic_data_update():
     """Periyodik veri güncelleme"""
@@ -449,31 +412,26 @@ async def periodic_data_update():
             if not is_system_ready:
                 continue
                 
-            # Mevcut lig verilerini güncelle
             await update_league_data("super-lig")
             await update_league_data("premier-league")
-            
-            # AI modelini yeniden eğit (gerekirse)
             await check_and_retrain_ai()
             
             logger.info("✅ Periyodik veri güncelleme tamamlandı")
             
         except Exception as e:
-            logger.error(f"⌛ Periyodik veri güncelleme hatası: {e}")
-            await asyncio.sleep(60)  # Hata durumunda 1 dakika bekle
+            logger.error(f"⏰ Periyodik veri güncelleme hatası: {e}")
+            await asyncio.sleep(60)
 
 async def update_league_data(league: str):
     """Lig verilerini güncelle"""
     try:
         logger.info(f"🔄 {league} verileri güncelleniyor...")
         
-        # Nesine.com'dan veri çekme
         matches = await fetch_nesine_data(league)
         
         if matches and db_manager:
             for match in matches:
                 try:
-                    # Veritabanına kaydet
                     db_manager.save_match_prediction({
                         'home_team': match.get('home_team', ''),
                         'away_team': match.get('away_team', ''),
@@ -489,127 +447,29 @@ async def update_league_data(league: str):
         logger.info(f"✅ {league} veri güncelleme tamamlandı: {len(matches) if matches else 0} maç")
         
     except Exception as e:
-        logger.error(f"⌛ {league} veri güncelleme hatası: {e}")
+        logger.error(f"⏰ {league} veri güncelleme hatası: {e}")
 
 async def fetch_nesine_data(league: str) -> List[Dict]:
-    """Nesine.com'dan maç verilerini çek"""
+    """Nesine.com'dan maç verilerini çek - CONTEXT MANAGER ile"""
     try:
-        if NESINE_AVAILABLE:
-            matches = await nesine_fetcher.fetch_prematch_matches()
-            if matches:
-                # Lige göre doğru filtreleme (PARANTEZ EKLENDİ)
-                league_matches = []
-                for match in matches:
-                    home_team = match.get('home_team', '').lower()
-                    
-                    if league == "super-lig" and any(team in home_team for team in ['beşiktaş', 'galatasaray', 'fenerbahçe', 'trabzonspor', 'başakşehir']):
-                        league_matches.append(match)
-                    elif league == "premier-league" and any(team in home_team for team in ['manchester', 'liverpool', 'arsenal', 'chelsea', 'tottenham']):
-                        league_matches.append(match)
-                    elif league == "la-liga" and any(team in home_team for team in ['barcelona', 'real madrid', 'atletico', 'sevilla']):
-                        league_matches.append(match)
-                
-                if league_matches:
-                    return league_matches[:15]  # İlk 15 maç
+        if not NESINE_AVAILABLE:
+            logger.warning("Nesine fetcher kullanılamıyor")
+            return generate_sample_matches(league)
         
-        # Fallback: Örnek maçlar oluştur
-        return generate_sample_matches(league)
+        # Context manager ile güvenli kullanım
+        async with NesineCompleteFetcher() as fetcher:
+            matches = await fetcher.fetch_matches_with_odds_and_stats(league_filter=league)
+            
+            if matches:
+                logger.info(f"✅ Nesine'den {len(matches)} maç çekildi")
+                return matches[:20]
+            else:
+                logger.warning("Nesine'den veri alınamadı, fallback kullanılıyor")
+                return generate_sample_matches(league)
                     
     except Exception as e:
         logger.error(f"Nesine veri çekme genel hatası: {e}")
         return generate_sample_matches(league)
-
-def parse_nesine_response(data: Any, league: str) -> List[Dict]:
-    """Nesine response'unu parse et"""
-    try:
-        matches = []
-        
-        # Numpy array kontrolü
-        if isinstance(data, np.ndarray):
-            if data.ndim > 1:
-                data = data.flatten()
-            data = data.tolist()
-        
-        # Basit ve güvenli parsing
-        if isinstance(data, list):
-            for item in data[:10]:  # İlk 10 maç
-                match = parse_match_item(item, league)
-                if match:
-                    matches.append(match)
-        elif isinstance(data, dict):
-            # Farklı formatlar için
-            for key in ['matches', 'events', 'games']:
-                if key in data and isinstance(data[key], list):
-                    for item in data[key][:10]:
-                        match = parse_match_item(item, league)
-                        if match:
-                            matches.append(match)
-                    break
-        
-        return matches if matches else generate_sample_matches(league)
-        
-    except Exception as e:
-        logger.error(f"Nesine response parsing hatası: {e}")
-        return generate_sample_matches(league)
-
-def parse_match_item(item: Any, league: str) -> Optional[Dict]:
-    """Tekil maç verisini parse et"""
-    try:
-        # Numpy array kontrolü
-        if isinstance(item, np.ndarray):
-            if item.ndim > 1:
-                item = item.flatten()
-            if len(item) >= 2:
-                item = item.tolist()
-            else:
-                return None
-                
-        # Güvenli parsing
-        if not isinstance(item, (dict, list)):
-            return None
-            
-        if isinstance(item, list) and len(item) >= 2:
-            # Basit liste formatı [home_team, away_team, odds...]
-            home_team = str(item[0]) if len(item) > 0 else "Takım A"
-            away_team = str(item[1]) if len(item) > 1 else "Takım B"
-            
-            return {
-                'home_team': home_team,
-                'away_team': away_team,
-                'league': league,
-                'date': datetime.now().isoformat(),
-                'odds': {'1': 2.0, 'X': 3.0, '2': 3.5},
-                'result': ''
-            }
-        
-        elif isinstance(item, dict):
-            # Dictionary formatı
-            home_team = item.get('home_team', item.get('homeTeam', 'Takım A'))
-            away_team = item.get('away_team', item.get('awayTeam', 'Takım B'))
-            
-            # Odds verisi
-            odds = item.get('odds', {})
-            if not odds:
-                odds = {
-                    '1': float(item.get('home_odds', 2.0)),
-                    'X': float(item.get('draw_odds', 3.0)),
-                    '2': float(item.get('away_odds', 3.5))
-                }
-            
-            return {
-                'home_team': str(home_team),
-                'away_team': str(away_team),
-                'league': league,
-                'date': item.get('date', datetime.now().isoformat()),
-                'odds': odds,
-                'result': item.get('result', '')
-            }
-        
-        return None
-        
-    except Exception as e:
-        logger.debug(f"Maç parsing hatası: {e}")
-        return None
 
 def generate_sample_matches(league: str) -> List[Dict]:
     """Örnek maç verileri oluştur"""
@@ -637,6 +497,11 @@ def generate_sample_matches(league: str) -> List[Dict]:
             'league': league,
             'date': match_date.isoformat(),
             'odds': {'1': 1.8 + i*0.1, 'X': 3.2 + i*0.1, '2': 4.0 + i*0.1},
+            'stats': {
+                'possession': {'home': 55, 'away': 45},
+                'shots': {'home': 12, 'away': 8},
+                'corners': {'home': 5, 'away': 3}
+            },
             'result': ''
         })
     
@@ -648,14 +513,12 @@ async def check_and_retrain_ai():
         if not ai_predictor or not db_manager:
             return
         
-        # Son eğitim tarihini kontrol et
         last_training = getattr(ai_predictor, 'last_training', None)
         needs_retraining = False
         
         if not last_training:
             needs_retraining = True
         else:
-            # 3 günden eskiyse yeniden eğit
             if isinstance(last_training, str):
                 last_training = datetime.fromisoformat(last_training.replace('Z', '+00:00'))
             
@@ -664,56 +527,23 @@ async def check_and_retrain_ai():
         
         if needs_retraining:
             logger.info("🔄 AI modeli yeniden eğitiliyor...")
-            success = await run_ai_training()
-            if success:
-                logger.info("✅ AI modeli başarıyla güncellendi")
-            else:
-                logger.warning("⚠️ AI model güncelleme başarısız")
+            await train_ai_models()
                 
     except Exception as e:
         logger.error(f"AI yeniden eğitim kontrol hatası: {e}")
-
-async def get_detailed_match_stats(match_id: int) -> Dict:
-    """Detaylı maç istatistikleri çek"""
-    try:
-        if NESINE_AVAILABLE:
-            # Nesine'dan detaylı istatistik çek
-            matches = await nesine_fetcher.fetch_prematch_matches()
-            for match in matches:
-                if match.get('id') == match_id:
-                    return match.get('stats', {})
-        
-        # Fallback istatistikler
-        return generate_fallback_stats()
-    except Exception as e:
-        logger.error(f"İstatistik çekme hatası: {e}")
-        return generate_fallback_stats()
-
-def generate_fallback_stats() -> Dict:
-    """Fallback istatistikler oluştur"""
-    return {
-        'possession': {'home': random.randint(45, 65), 'away': random.randint(35, 55)},
-        'shots': {'home': random.randint(8, 18), 'away': random.randint(6, 16)},
-        'shots_on_target': {'home': random.randint(3, 8), 'away': random.randint(2, 7)},
-        'corners': {'home': random.randint(3, 9), 'away': random.randint(2, 8)},
-        'fouls': {'home': random.randint(10, 20), 'away': random.randint(10, 20)},
-        'yellow_cards': {'home': random.randint(1, 5), 'away': random.randint(1, 5)},
-        'red_cards': {'home': random.randint(0, 1), 'away': random.randint(0, 1)}
-    }
 
 async def enhance_matches_with_stats(matches: List[Dict]) -> List[Dict]:
     """Maçlara istatistik ekle"""
     enhanced_matches = []
     
     for match in matches:
-        # Mevcut istatistikleri kontrol et
-        if not match.get('stats'):
-            match['stats'] = await get_detailed_match_stats(match.get('id'))
-        
-        # AI analizi ekle
         if ai_predictor:
-            prediction = ai_predictor.predict_with_confidence(match)
-            match['ai_prediction'] = prediction
+            try:
+                prediction = ai_predictor.predict_with_confidence(match)
+                match['ai_prediction'] = prediction
+            except Exception as e:
+                logger.debug(f"AI tahmin hatası: {e}")
+                match['ai_prediction'] = {}
         
         enhanced_matches.append(match)
     
@@ -727,26 +557,20 @@ async def startup_event():
     logger.info("🚀 FastAPI uygulaması başlatılıyor...")
     
     try:
-        # Database manager'ı başlat
         db_manager = AIDatabaseManager()
         logger.info("✅ Veritabanı yöneticisi başlatıldı")
         
-        # AI predictor'ı başlat
         ai_predictor = EnhancedSuperLearningAI(db_manager=db_manager)
         logger.info("✅ AI tahmincisi başlatıldı")
         
-        # AI modellerini eğit (async olarak)
         asyncio.create_task(train_ai_models())
-        
-        # Periyodik görevleri başlat
         asyncio.create_task(periodic_data_update())
         
         is_system_ready = True
         logger.info("✅ Sistem başarıyla başlatıldı")
         
     except Exception as e:
-        logger.error(f"⌛ Sistem başlatma hatası: {e}")
-        logger.info("⚠️ Sistem kısıtlı modda çalışacak")
+        logger.error(f"⏰ Sistem başlatma hatası: {e}")
         is_system_ready = False
 
 @app.get("/", response_class=HTMLResponse)
@@ -771,8 +595,7 @@ async def read_root(request: Request):
             <head><title>Predicta AI</title></head>
             <body>
                 <h1>Predicta AI Futbol Tahmin Sistemi</h1>
-                <p>Sistem başlatılıyor... Lütfen bekleyin.</p>
-                <p>Durum: Sistem Hazır = {str(is_system_ready)}</p>
+                <p>Sistem Hazır = {str(is_system_ready)}</p>
                 <p>Nesine: {NESINE_AVAILABLE}</p>
                 <p>Zaman: {datetime.now().strftime("%d.%m.%Y %H:%M")}</p>
             </body>
@@ -817,34 +640,6 @@ async def predict_match(request: PredictionRequest):
         logger.error(f"Tahmin hatası: {e}")
         raise HTTPException(status_code=500, detail=f"Tahmin hatası: {str(e)}")
 
-@app.get("/matches")
-async def get_recent_matches(league: str = Query("super-lig"), limit: int = Query(10)):
-    """Son maçları getir"""
-    try:
-        # Basit bir veri dönüşü - gerçek uygulamada veritabanından alacaksınız
-        return {
-            "success": True,
-            "matches": [],
-            "league": league,
-            "limit": limit
-        }
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
-
-@app.get("/teams")
-async def get_teams(league: str = Query("super-lig")):
-    """Lig takımlarını getir"""
-    try:
-        # Örnek takım listesi
-        teams = ["Galatasaray", "Fenerbahçe", "Beşiktaş", "Trabzonspor"]
-        return {
-            "success": True,
-            "teams": teams,
-            "league": league
-        }
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
-
 @app.get("/api/health")
 async def api_health_check():
     """API sağlık kontrolü"""
@@ -869,13 +664,9 @@ async def api_predict_match(request: PredictionRequest):
                 message="Sistem hazır değil, lütfen bekleyin..."
             )
         
-        # Tahmin verilerini hazırla
         match_data = await prepare_match_data(request)
-        
-        # AI ile tahmin yap
         prediction = ai_predictor.predict_with_confidence(match_data)
         
-        # Veritabanına kaydet
         if db_manager:
             db_manager.save_match_prediction({
                 'home_team': request.home_team,
@@ -903,19 +694,14 @@ async def api_predict_match(request: PredictionRequest):
 async def prepare_match_data(request: PredictionRequest) -> Dict:
     """Maç verilerini AI için hazırla"""
     try:
-        # AI'nın beklediği formata uygun veri hazırla
         home_team = request.home_team
         away_team = request.away_team
         league = request.league
         
-        # Takım istatistiklerini getir
         home_stats = await get_team_stats(home_team, league)
         away_stats = await get_team_stats(away_team, league)
-        
-        # Oranları getir
         odds = await get_match_odds(home_team, away_team, league)
         
-        # AI için optimize edilmiş maç verisi
         match_data = {
             'home_team': home_team,
             'away_team': away_team,
@@ -923,11 +709,11 @@ async def prepare_match_data(request: PredictionRequest) -> Dict:
             'match_date': request.match_date or datetime.now().isoformat(),
             'stats': {
                 'possession': {
-                    'home': home_stats.get('position', 50) / 100.0 * 100,  # Normalize
+                    'home': home_stats.get('position', 50) / 100.0 * 100,
                     'away': away_stats.get('position', 50) / 100.0 * 100
                 },
                 'shots': {
-                    'home': home_stats.get('goals_for', 10) // 3,  # Basit hesaplama
+                    'home': home_stats.get('goals_for', 10) // 3,
                     'away': away_stats.get('goals_for', 8) // 3
                 }
             },
@@ -938,12 +724,11 @@ async def prepare_match_data(request: PredictionRequest) -> Dict:
         
     except Exception as e:
         logger.error(f"Maç verisi hazırlama hatası: {e}")
-        # Fallback: Basit maç verisi
         return {
             'home_team': request.home_team,
             'away_team': request.away_team,
             'league': request.league,
-            'stats': generate_match_stats(),
+            'stats': await generate_match_stats(),
             'odds': {'1': 2.0, 'X': 3.2, '2': 3.5}
         }
 
@@ -955,7 +740,6 @@ async def get_team_stats(team_name: str, league: str) -> Dict:
             if stats:
                 return stats
         
-        # Fallback istatistikler
         return generate_fallback_team_stats(team_name, league)
     except Exception as e:
         logger.debug(f"Takım istatistiği getirme hatası: {e}")
@@ -964,7 +748,6 @@ async def get_team_stats(team_name: str, league: str) -> Dict:
 async def get_match_odds(home_team: str, away_team: str, league: str) -> Dict:
     """Maç oranlarını getir"""
     try:
-        # Gerçek oran verisi yoksa fallback
         return {
             '1': round(np.random.uniform(1.5, 3.0), 2),
             'X': round(np.random.uniform(2.5, 4.0), 2),
@@ -973,28 +756,6 @@ async def get_match_odds(home_team: str, away_team: str, league: str) -> Dict:
     except Exception as e:
         logger.debug(f"Oran getirme hatası: {e}")
         return {'1': 2.0, 'X': 3.0, '2': 3.5}
-
-async def get_match_context(home_team: str, away_team: str, league: str) -> Dict:
-    """Maç context bilgisini getir"""
-    return {
-        'importance': round(np.random.uniform(0.3, 0.9), 2),
-        'pressure': round(np.random.uniform(0.2, 0.8), 2),
-        'motivation': round(np.random.uniform(0.4, 0.95), 2),
-        'referee_stats': {'home_win_rate': round(np.random.uniform(0.4, 0.6), 2)}
-    }
-
-def get_fallback_match_data(request: PredictionRequest) -> Dict:
-    """Fallback maç verisi"""
-    return {
-        'home_stats': generate_fallback_team_stats(request.home_team, request.league),
-        'away_stats': generate_fallback_team_stats(request.away_team, request.league),
-        'odds': {'1': 2.0, 'X': 3.0, '2': 3.5},
-        'context': {
-            'importance': 0.7,
-            'pressure': 0.5,
-            'motivation': 0.8
-        }
-    }
 
 def generate_fallback_team_stats(team_name: str, league: str) -> Dict:
     """Fallback takım istatistikleri"""
@@ -1056,7 +817,10 @@ async def get_supported_leagues():
     }
 
 @app.get("/api/nesine/matches")
-async def get_nesine_matches(limit: int = Query(100)):
+async def get_nesine_matches(
+    league: str = Query("all"),
+    limit: int = Query(100)
+):
     """Nesine.com'dan güncel maçları çek (İSTATİSTİKLİ)"""
     try:
         if not NESINE_AVAILABLE:
@@ -1067,8 +831,7 @@ async def get_nesine_matches(limit: int = Query(100)):
                 "count": 0
             }
 
-        # Nesine'den maçları çek
-        matches = await nesine_fetcher.fetch_prematch_matches()
+        matches = await fetch_nesine_data(league)
 
         if not matches:
             logger.warning("Nesine'den maç verisi alınamadı")
@@ -1079,10 +842,7 @@ async def get_nesine_matches(limit: int = Query(100)):
                 "count": 0
             }
 
-        # İstatistik ekle
         enhanced_matches = await enhance_matches_with_stats(matches)
-        
-        # Limit uygula
         limited_matches = enhanced_matches[:limit]
 
         logger.info(f"✅ {len(limited_matches)} maç başarıyla getirildi (istatistikli)")
@@ -1096,7 +856,7 @@ async def get_nesine_matches(limit: int = Query(100)):
         }
 
     except Exception as e:
-        logger.error(f"⌛ Nesine maç çekme hatası: {e}")
+        logger.error(f"⏰ Nesine maç çekme hatası: {e}")
         logger.error(traceback.format_exc())
         
         return {
@@ -1113,8 +873,7 @@ async def get_matches_with_predictions(
 ):
     """Tahminli maçları getir"""
     try:
-        # Önce Nesine'den maçları çek
-        nesine_response = await get_nesine_matches(limit=500)
+        nesine_response = await get_nesine_matches(league="all", limit=500)
         
         if not nesine_response.get("success"):
             return {
@@ -1126,31 +885,19 @@ async def get_matches_with_predictions(
         matches = nesine_response.get("matches", [])
         predictions = []
         
-        # Her maç için tahmin yap
         for match in matches[:limit]:
             try:
-                # Tahmin verilerini hazırla
-                match_data = {
-                    'home_team': match['home_team'],
-                    'away_team': match['away_team'],
-                    'league': match.get('league', 'Unknown'),
-                    'odds': match.get('odds', {})
-                }
+                prediction = match.get('ai_prediction', {})
+                confidence = prediction.get('confidence', 0)
                 
-                # AI ile tahmin yap
-                if ai_predictor:
-                    prediction = ai_predictor.predict_with_confidence(match_data)
-                    
-                    # Güven seviyesi kontrolü
-                    confidence = prediction.get('confidence', 0)
-                    if confidence >= min_confidence:
-                        predictions.append({
-                            'match': match,
-                            'prediction': prediction
-                        })
+                if confidence >= min_confidence:
+                    predictions.append({
+                        'match': match,
+                        'prediction': prediction
+                    })
                         
             except Exception as e:
-                logger.debug(f"Tahmin hatası ({match['home_team']} vs {match['away_team']}): {e}")
+                logger.debug(f"Tahmin hatası: {e}")
                 continue
         
         return {
@@ -1175,8 +922,7 @@ async def debug_nesine():
         if not NESINE_AVAILABLE:
             return {"status": "nesine_fetcher_not_available"}
         
-        # Doğrudan nesine_fetcher test et
-        matches = await nesine_fetcher.fetch_prematch_matches()
+        matches = await fetch_nesine_data("all")
         
         return {
             "status": "success",
@@ -1190,25 +936,6 @@ async def debug_nesine():
             "error": str(e),
             "traceback": traceback.format_exc()
         }
-
-async def get_team_form(team_name: str) -> Dict:
-    """Takım formu getir"""
-    return {
-        'last_5_games': ['W', 'L', 'W', 'D', 'W'],
-        'goals_scored_avg': round(random.uniform(1.2, 2.8), 1),
-        'goals_conceded_avg': round(random.uniform(0.8, 2.1), 1),
-        'home_advantage': random.choice([True, False])
-    }
-
-async def get_head_to_head(home_team: str, away_team: str) -> Dict:
-    """Kafa kafaya istatistikler"""
-    return {
-        'total_meetings': random.randint(5, 25),
-        'home_wins': random.randint(2, 10),
-        'away_wins': random.randint(1, 8),
-        'draws': random.randint(1, 5),
-        'avg_goals': round(random.uniform(2.1, 3.5), 1)
-    }
 
 if __name__ == "__main__":
     import uvicorn
