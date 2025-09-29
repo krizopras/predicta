@@ -21,7 +21,13 @@ from fastapi.templating import Jinja2Templates
 from pydantic import BaseModel
 from datetime import datetime, timedelta
 from typing import Dict, List, Optional, Any
-
+try:
+    from ai_engine import EnhancedSuperLearningAI
+    from database_manager import AIDatabaseManager
+    logger.info("✅ Tüm modüller başarıyla import edildi")
+except ImportError as e:
+    logger.error(f"❌ Modül import hatası: {e}")
+    
 # Logging configuration
 logging.basicConfig(
     level=logging.INFO,
