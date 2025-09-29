@@ -101,7 +101,7 @@ except ImportError as e:
             'west ham': 5, 'crystal palace': 5, 'wolves': 5, 'everton': 5
         }
         
-    async def train_models(self, matches: List[Dict] = None):
+    async def train_models(self, matches=None):
         """AI modelini istatistiklerle eğit"""
         try:
             if not matches or len(matches) < 3:
