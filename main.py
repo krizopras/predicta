@@ -54,7 +54,7 @@ except ImportError as e:
     logger.warning(f"⚠️ Nesine fetcher import edilemedi: {e}")
 
 # Template directory detection
-template_dirs = ["templates", "src/templates", "./templates"]
+template_dirs = ["templates", "templates", "./templates"]
 templates = None
 
 for template_dir in template_dirs:
