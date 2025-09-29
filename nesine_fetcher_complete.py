@@ -22,6 +22,17 @@ class NesineCompleteFetcher:
             'Referer': 'https://www.nesine.com/'
         }
     
+    async def __aenter__(self):
+        """Async context manager - enter"""
+        timeout = aiohttp.ClientTimeout(total=15)
+        self.session = aiohttp.ClientSession(timeout=timeout, headers=self.headers)
+        return self
+    
+    async def __aexit__(self, exc_type, exc_val, exc_tb):
+        """Async context manager - exit"""
+        await self.close()
+        return False
+    
     async def fetch_matches_with_odds_and_stats(self, league_filter: Optional[str] = None) -> List[Dict]:
         """
         Nesine'dan maçları ORANLAR ve İSTATİSTİKLER ile birlikte çek
@@ -32,40 +43,43 @@ class NesineCompleteFetcher:
         Returns:
             Liste halinde maç verileri (oranlar + istatistikler dahil)
         """
-        try:
-            if not self.session:
-                timeout = aiohttp.ClientTimeout(total=15)
-                self.session = aiohttp.ClientSession(timeout=timeout, headers=self.headers)
+        timeout = aiohttp.ClientTimeout(total=15)
+        
+        async with aiohttp.ClientSession(timeout=timeout, headers=self.headers) as session:
+            self.session = session
             
-            matches = []
-            
-            # 1. Nesine API'den maç listesi ve oranları çek
-            api_matches = await self._fetch_from_api()
-            
-            if api_matches:
-                logger.info(f"✅ API'den {len(api_matches)} maç çekildi")
-                matches.extend(api_matches)
-            
-            # 2. Web scraping ile ek bilgiler çek (istatistikler)
-            if not matches:
-                web_matches = await self._fetch_from_web()
-                if web_matches:
-                    logger.info(f"✅ Web'den {len(web_matches)} maç çekildi")
-                    matches.extend(web_matches)
-            
-            # 3. Her maç için detaylı istatistik çek
-            enriched_matches = await self._enrich_with_stats(matches)
-            
-            # 4. Lig filtreleme
-            if league_filter and league_filter != "all":
-                enriched_matches = self._filter_by_league(enriched_matches, league_filter)
-            
-            logger.info(f"✅ Toplam {len(enriched_matches)} maç hazır (oranlar + istatistikler)")
-            return enriched_matches
-            
-        except Exception as e:
-            logger.error(f"❌ Nesine veri çekme hatası: {e}")
-            return []
+            try:
+                matches = []
+                
+                # 1. Nesine API'den maç listesi ve oranları çek
+                api_matches = await self._fetch_from_api()
+                
+                if api_matches:
+                    logger.info(f"✅ API'den {len(api_matches)} maç çekildi")
+                    matches.extend(api_matches)
+                
+                # 2. Web scraping ile ek bilgiler çek (istatistikler)
+                if not matches:
+                    web_matches = await self._fetch_from_web()
+                    if web_matches:
+                        logger.info(f"✅ Web'den {len(web_matches)} maç çekildi")
+                        matches.extend(web_matches)
+                
+                # 3. Her maç için detaylı istatistik çek (PARALEL)
+                enriched_matches = await self._enrich_with_stats_parallel(matches)
+                
+                # 4. Lig filtreleme
+                if league_filter and league_filter != "all":
+                    enriched_matches = self._filter_by_league(enriched_matches, league_filter)
+                
+                logger.info(f"✅ Toplam {len(enriched_matches)} maç hazır (oranlar + istatistikler)")
+                return enriched_matches
+                
+            except Exception as e:
+                logger.error(f"❌ Nesine veri çekme hatası: {e}")
+                return []
+            finally:
+                self.session = None
     
     async def _fetch_from_api(self) -> List[Dict]:
         """Nesine API'den maç ve oran verilerini çek"""
@@ -77,16 +91,25 @@ class NesineCompleteFetcher:
         
         for endpoint in api_endpoints:
             try:
+                logger.debug(f"🔄 API deniyor: {endpoint}")
                 async with self.session.get(endpoint) as response:
+                    logger.debug(f"📡 Response status: {response.status}")
+                    
                     if response.status == 200:
                         data = await response.json()
+                        logger.debug(f"📦 Response preview: {str(data)[:200]}...")
+                        
                         matches = self._parse_api_response(data)
                         if matches:
+                            logger.info(f"✅ {endpoint} başarılı: {len(matches)} maç")
                             return matches
+                        else:
+                            logger.debug(f"⚠️ {endpoint} boş response")
             except Exception as e:
-                logger.warning(f"API endpoint {endpoint} hatası: {e}")
+                logger.warning(f"❌ API endpoint {endpoint} hatası: {e}")
                 continue
         
+        logger.warning("⚠️ Tüm API endpoint'ler başarısız")
         return []
     
     def _parse_api_response(self, data) -> List[Dict]:
@@ -159,23 +182,48 @@ class NesineCompleteFetcher:
         return str(team)
     
     def _extract_odds(self, item: Dict) -> Dict:
-        """Maç oranlarını çıkar (1X2)"""
-        odds = item.get('odds', {})
-        
-        # Farklı formatlar
-        if isinstance(odds, dict):
+        """Maç oranlarını çıkar (1X2) - GELİŞTİRİLMİŞ"""
+        try:
+            odds = item.get('odds', {})
+            
+            # Format 1: Direkt odds dict
+            if isinstance(odds, dict) and ('1' in odds or 'home' in odds):
+                return {
+                    '1': self._safe_float(odds.get('1', odds.get('home', 0))),
+                    'X': self._safe_float(odds.get('X', odds.get('draw', 0))),
+                    '2': self._safe_float(odds.get('2', odds.get('away', 0)))
+                }
+            
+            # Format 2: Markets/outcomes yapısı
+            markets = item.get('markets', [])
+            if isinstance(markets, list):
+                for market in markets:
+                    if market.get('name') == '1X2' or market.get('type') == 'match_winner':
+                        outcomes = market.get('outcomes', [])
+                        result = {'1': 0, 'X': 0, '2': 0}
+                        for outcome in outcomes:
+                            result[outcome.get('name', '')] = self._safe_float(outcome.get('odds', 0))
+                        return result
+            
+            # Format 3: Root seviyede ayrı alanlar
             return {
-                '1': float(odds.get('1', odds.get('home', 0)) or 0),
-                'X': float(odds.get('X', odds.get('draw', 0)) or 0),
-                '2': float(odds.get('2', odds.get('away', 0)) or 0)
+                '1': self._safe_float(item.get('homeOdds', item.get('odd1', 0))),
+                'X': self._safe_float(item.get('drawOdds', item.get('oddX', 0))),
+                '2': self._safe_float(item.get('awayOdds', item.get('odd2', 0)))
             }
         
-        # Alternatif format
-        return {
-            '1': float(item.get('homeOdds', item.get('odd1', 0)) or 0),
-            'X': float(item.get('drawOdds', item.get('oddX', 0)) or 0),
-            '2': float(item.get('awayOdds', item.get('odd2', 0)) or 0)
-        }
+        except Exception as e:
+            logger.debug(f"Oran çıkarma hatası: {e}")
+            return {'1': 0, 'X': 0, '2': 0}
+    
+    def _safe_float(self, value) -> float:
+        """Güvenli float dönüşümü"""
+        try:
+            if value is None or value == '' or value == '-':
+                return 0.0
+            return float(value)
+        except (ValueError, TypeError):
+            return 0.0
     
     def _extract_league(self, item: Dict) -> str:
         """Lig bilgisini çıkar"""
@@ -220,7 +268,7 @@ class NesineCompleteFetcher:
             return []
     
     def _extract_match_from_html(self, element) -> Optional[Dict]:
-        """HTML element'inden maç bilgisi çıkar"""
+        """HTML element'inden maç bilgisi çıkar - GÜVENLİ"""
         try:
             # Takımlar
             home = element.select_one('.home-team, .team-home, .team-1')
@@ -229,38 +277,61 @@ class NesineCompleteFetcher:
             if not home or not away:
                 return None
             
-            # Oranlar
-            odd_1 = element.select_one('[data-odd="1"], .odd-1')
-            odd_x = element.select_one('[data-odd="X"], .odd-x')
-            odd_2 = element.select_one('[data-odd="2"], .odd-2')
+            # Oranlar - güvenli parse
+            odd_1_elem = element.select_one('[data-odd="1"], .odd-1, .ms1')
+            odd_x_elem = element.select_one('[data-odd="X"], .odd-x, .ms0')
+            odd_2_elem = element.select_one('[data-odd="2"], .odd-2, .ms2')
             
             return {
                 'home_team': home.text.strip(),
                 'away_team': away.text.strip(),
                 'league': 'Süper Lig',  # HTML'den çıkarılabilir
                 'odds': {
-                    '1': float(odd_1.text) if odd_1 else 0,
-                    'X': float(odd_x.text) if odd_x else 0,
-                    '2': float(odd_2.text) if odd_2 else 0
+                    '1': self._extract_odd_from_element(odd_1_elem),
+                    'X': self._extract_odd_from_element(odd_x_elem),
+                    '2': self._extract_odd_from_element(odd_2_elem)
                 },
                 'stats': {},
                 'source': 'nesine_web'
             }
         
-        except:
+        except Exception as e:
+            logger.debug(f"HTML match parse hatası: {e}")
             return None
     
-    async def _enrich_with_stats(self, matches: List[Dict]) -> List[Dict]:
-        """Maçlara İSTATİSTİK verilerini ekle"""
-        enriched = []
+    def _extract_odd_from_element(self, element) -> float:
+        """HTML element'inden oran çıkar - güvenli"""
+        if not element:
+            return 0.0
         
-        for match in matches:
-            # Her maç için istatistik API'sine istek at
-            stats = await self._fetch_match_stats(match.get('id'))
-            match['stats'] = stats
-            enriched.append(match)
+        try:
+            text = element.text.strip()
+            # Türkçe virgül yerine nokta
+            text = text.replace(',', '.')
+            # Sadece sayı ve nokta tut
+            import re
+            text = re.sub(r'[^\d.]', '', text)
+            return float(text) if text else 0.0
+        except:
+            return 0.0
+    
+    async def _enrich_with_stats_parallel(self, matches: List[Dict]) -> List[Dict]:
+        """Maçlara İSTATİSTİK verilerini ekle (PARALEL - HIZLI)"""
+        # Tüm istatistikleri paralel olarak çek
+        tasks = [self._fetch_match_stats(match.get('id')) for match in matches]
+        stats_list = await asyncio.gather(*tasks, return_exceptions=True)
         
-        return enriched
+        # Her maça istatistiğini ekle
+        for match, stats in zip(matches, stats_list):
+            if isinstance(stats, dict):
+                match['stats'] = stats
+            elif isinstance(stats, Exception):
+                logger.debug(f"İstatistik hatası {match.get('home_team')}: {stats}")
+                match['stats'] = self._generate_default_stats()
+            else:
+                match['stats'] = self._generate_default_stats()
+        
+        return matches
     
     async def _fetch_match_stats(self, match_id) -> Dict:
         """Tek maç için istatistikleri çek"""
@@ -340,25 +411,46 @@ class NesineCompleteFetcher:
             'red_cards': {'home': 0, 'away': 0}
         }
     
+    def _normalize(self, text: str) -> str:
+        """Metni normalize et - Türkçe karakter temizleme"""
+        import unicodedata
+        try:
+            # NFKD normalizasyonu + ASCII dönüşüm
+            normalized = unicodedata.normalize("NFKD", text)
+            ascii_text = normalized.encode("ascii", "ignore").decode("utf-8")
+            return ascii_text.lower().strip()
+        except Exception as e:
+            logger.debug(f"Normalize hatası: {e}")
+            return text.lower().strip()
+    
     def _filter_by_league(self, matches: List[Dict], league_filter: str) -> List[Dict]:
-        """Lige göre filtrele"""
+        """Lige göre filtrele - TAM İYİLEŞTİRİLMİŞ"""
         if league_filter == "all":
             return matches
         
         league_keywords = {
-            "super-lig": ["süper lig", "türkiye", "turkey"],
-            "premier-league": ["premier league", "ingiltere", "england"],
-            "la-liga": ["la liga", "ispanya", "spain"],
-            "bundesliga": ["bundesliga", "almanya", "germany"],
-            "serie-a": ["serie a", "italya", "italy"]
+            "super-lig": ["super lig", "super", "turkiye", "turkey", "tsl", "spor toto"],
+            "premier-league": ["premier league", "premier", "england", "ingiltere", "epl"],
+            "la-liga": ["la liga", "liga", "spain", "ispanya", "primera"],
+            "bundesliga": ["bundesliga", "germany", "almanya"],
+            "serie-a": ["serie a", "serie", "italy", "italya"]
         }
         
         keywords = league_keywords.get(league_filter, [])
         
-        return [
-            match for match in matches
-            if any(kw in match['league'].lower() for kw in keywords)
-        ]
+        filtered = []
+        for match in matches:
+            league_name = self._normalize(match.get('league', ''))
+            
+            # Her keyword için kontrol
+            for keyword in keywords:
+                normalized_keyword = self._normalize(keyword)
+                if normalized_keyword in league_name or league_name in normalized_keyword:
+                    filtered.append(match)
+                    break
+        
+        logger.debug(f"Filtreleme: {len(matches)} -> {len(filtered)} maç ({league_filter})")
+        return filtered
     
     async def close(self):
         """Session'ı kapat"""
@@ -372,26 +464,42 @@ nesine_complete_fetcher = NesineCompleteFetcher()
 
 # Kullanım örneği
 async def main():
-    """Test fonksiyonu"""
-    fetcher = NesineCompleteFetcher()
+    """Test fonksiyonu - CONTEXT MANAGER ile"""
     
-    # Tüm ligler
-    all_matches = await fetcher.fetch_matches_with_odds_and_stats(league_filter="all")
-    print(f"Toplam maç: {len(all_matches)}")
+    # Yeni kullanım (önerilen)
+    async with NesineCompleteFetcher() as fetcher:
+        # Tüm ligler
+        all_matches = await fetcher.fetch_matches_with_odds_and_stats(league_filter="all")
+        print(f"✅ Toplam maç: {len(all_matches)}")
+        
+        # Sadece Süper Lig
+        superlig_matches = await fetcher.fetch_matches_with_odds_and_stats(league_filter="super-lig")
+        print(f"🇹🇷 Süper Lig maçları: {len(superlig_matches)}")
+        
+        # Örnek maç göster
+        if all_matches:
+            match = all_matches[0]
+            print(f"\n{'='*60}")
+            print(f"⚽ {match['home_team']} vs {match['away_team']}")
+            print(f"🏆 Lig: {match['league']}")
+            print(f"💰 Oranlar: 1={match['odds']['1']:.2f} | X={match['odds']['X']:.2f} | 2={match['odds']['2']:.2f}")
+            
+            stats = match.get('stats', {})
+            if stats:
+                print(f"\n📊 İstatistikler:")
+                print(f"   Top Kontrolü: Ev {stats.get('possession', {}).get('home', 0)}% - {stats.get('possession', {}).get('away', 0)}% Deplasman")
+                print(f"   Şutlar: Ev {stats.get('shots', {}).get('home', 0)} - {stats.get('shots', {}).get('away', 0)} Deplasman")
+                print(f"   Kornerler: Ev {stats.get('corners', {}).get('home', 0)} - {stats.get('corners', {}).get('away', 0)} Deplasman")
+            print(f"{'='*60}")
     
-    # Sadece Süper Lig
-    superlig_matches = await fetcher.fetch_matches_with_odds_and_stats(league_filter="super-lig")
-    print(f"Süper Lig maçları: {len(superlig_matches)}")
-    
-    # Örnek maç göster
-    if all_matches:
-        match = all_matches[0]
-        print(f"\n{match['home_team']} vs {match['away_team']}")
-        print(f"Oranlar: 1={match['odds']['1']}, X={match['odds']['X']}, 2={match['odds']['2']}")
-        print(f"İstatistikler: {match['stats']}")
-    
-    await fetcher.close()
+    # Session otomatik kapandı (context manager sayesinde)
 
 
 if __name__ == "__main__":
+    # Logging seviyesini ayarla
+    logging.basicConfig(
+        level=logging.DEBUG,  # DEBUG için detaylı log
+        format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+    )
+    
     asyncio.run(main())
