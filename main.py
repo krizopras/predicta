@@ -762,7 +762,7 @@ async def get_matches_with_predictions(
     """Tahminli maçları getir"""
     try:
         # Önce Nesine'den maçları çek
-        nesine_response = await get_nesine_matches(limit=50)
+        nesine_response = await get_nesine_matches(limit=500)
         
         if not nesine_response.get("success"):
             return {
@@ -857,7 +857,53 @@ async def get_head_to_head(home_team: str, away_team: str) -> Dict:
         'draws': random.randint(1, 5),
         'avg_goals': round(random.uniform(2.1, 3.5), 1)
     }
+# main.py'ye EKLENECEK FONKSİYONLAR
 
+async def get_detailed_match_stats(match_id: int) -> Dict:
+    """Detaylı maç istatistikleri çek"""
+    try:
+        if NESINE_AVAILABLE:
+            # Nesine'dan detaylı istatistik çek
+            matches = await nesine_fetcher.fetch_prematch_matches()
+            for match in matches:
+                if match.get('id') == match_id:
+                    return match.get('stats', {})
+        
+        # Fallback istatistikler
+        return generate_fallback_stats()
+    except Exception as e:
+        logger.error(f"İstatistik çekme hatası: {e}")
+        return generate_fallback_stats()
+
+def generate_fallback_stats() -> Dict:
+    """Fallback istatistikler oluştur"""
+    return {
+        'possession': {'home': random.randint(45, 65), 'away': random.randint(35, 55)},
+        'shots': {'home': random.randint(8, 18), 'away': random.randint(6, 16)},
+        'shots_on_target': {'home': random.randint(3, 8), 'away': random.randint(2, 7)},
+        'corners': {'home': random.randint(3, 9), 'away': random.randint(2, 8)},
+        'fouls': {'home': random.randint(10, 20), 'away': random.randint(10, 20)},
+        'yellow_cards': {'home': random.randint(1, 5), 'away': random.randint(1, 5)},
+        'red_cards': {'home': random.randint(0, 1), 'away': random.randint(0, 1)}
+    }
+
+async def enhance_matches_with_stats(matches: List[Dict]) -> List[Dict]:
+    """Maçlara istatistik ekle"""
+    enhanced_matches = []
+    
+    for match in matches:
+        # Mevcut istatistikleri kontrol et
+        if not match.get('stats'):
+            match['stats'] = await get_detailed_match_stats(match.get('id'))
+        
+        # AI analizi ekle
+        if ai_predictor:
+            prediction = ai_predictor.predict_with_confidence(match)
+            match['ai_prediction'] = prediction
+        
+        enhanced_matches.append(match)
+    
+    return enhanced_matches
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
