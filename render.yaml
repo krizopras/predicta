@@ -3,7 +3,7 @@ services:
     name: predicta-ai-fastapi
     env: python
     plan: free
-    region: frankfurt  # Frankfurt region (daha stabil)
+    region: frankfurt
     buildCommand: |
       echo "🚀 Predicta AI Sistemi Kuruluyor..."
       python -m pip install --upgrade pip
@@ -18,7 +18,7 @@ services:
       uvicorn main:app --host 0.0.0.0 --port $PORT --workers 1
     envVars:
       - key: PYTHON_VERSION
-        value: 3.11.0  # Daha kararlı Python versiyonu
+        value: 3.11.0
       - key: PORT
         value: 10000
       - key: SECRET_KEY
@@ -27,18 +27,6 @@ services:
         value: data/ai_models_v2
       - key: LOG_LEVEL
         value: INFO
-      - key: AI_TRAINING_SAMPLES_MIN
-        value: 50
-      - key: AI_CONFIDENCE_THRESHOLD
-        value: 65.0
 
-    # Health Check Path
     healthCheckPath: /health
-
-    # Auto-Deploy ayarları
     autoDeploy: true
-
-    # Build ve deploy için optimize ayarlar
-    buildFilter:
-      branches:
-        only: [main, master]
