@@ -450,19 +450,17 @@ async def update_league_data(league: str):
         logger.error(f"⏰ {league} veri güncelleme hatası: {e}")
 
 async def fetch_nesine_data(league: str) -> List[Dict]:
-    """Nesine.com'dan maç verilerini çek - CONTEXT MANAGER ile"""
     try:
         if not NESINE_AVAILABLE:
             logger.warning("Nesine fetcher kullanılamıyor")
             return generate_sample_matches(league)
         
-        # Context manager ile güvenli kullanım
         async with NesineCompleteFetcher() as fetcher:
             matches = await fetcher.fetch_matches_with_odds_and_stats(league_filter=league)
             
             if matches:
                 logger.info(f"✅ Nesine'den {len(matches)} maç çekildi")
-                return matches[:20]
+                return matches  # ✅ SATIRI DÜZELTİN - [:20] KALDIRIN
             else:
                 logger.warning("Nesine'den veri alınamadı, fallback kullanılıyor")
                 return generate_sample_matches(league)
