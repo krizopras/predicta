@@ -4,7 +4,7 @@
 PREDICTA - GELİŞMİŞ FUTBOL TAHMİN SİSTEMİ
 Ana FastAPI uygulama dosyası
 """
-
+from nesine_match_fetcher import nesine_fetcher
 from fastapi import FastAPI, HTTPException, BackgroundTasks, Query, Request
 from fastapi.responses import HTMLResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
@@ -701,7 +701,139 @@ async def get_supported_leagues():
             {"id": "bundesliga", "name": "Bundesliga", "country": "Almanya"}
         ]
     }
+# Bu kodu mevcut main.py dosyanızın sonuna ekleyin
 
+# Import ekleyin (dosyanın başına)
+# from nesine_match_fetcher import nesine_fetcher
+
+@app.get("/api/nesine/matches")
+async def get_nesine_matches(limit: int = Query(50)):
+    """Nesine.com'dan güncel maçları çek"""
+    try:
+        from nesine_match_fetcher import nesine_fetcher
+        
+        # Nesine'den maçları çek
+        matches = await nesine_fetcher.fetch_prematch_matches()
+        
+        if not matches:
+            return {
+                "success": False,
+                "matches": [],
+                "message": "Nesine'den maç verisi alınamadı",
+                "count": 0
+            }
+        
+        # Limit uygula
+        matches = matches[:limit]
+        
+        return {
+            "success": True,
+            "matches": matches,
+            "count": len(matches),
+            "message": f"{len(matches)} maç başarıyla getirildi"
+        }
+        
+    except Exception as e:
+        logger.error(f"Nesine maç çekme hatası: {e}")
+        return {
+            "success": False,
+            "matches": [],
+            "message": f"Hata: {str(e)}",
+            "count": 0
+        }
+
+@app.get("/api/matches/predictions")
+async def get_matches_with_predictions(
+    limit: int = Query(20),
+    min_confidence: float = Query(60.0)
+):
+    """Tahminli maçları getir"""
+    try:
+        from nesine_match_fetcher import nesine_fetcher
+        
+        # Nesine'den maçları çek
+        matches = await nesine_fetcher.fetch_prematch_matches()
+        
+        if not matches:
+            return {
+                "success": False,
+                "predictions": [],
+                "message": "Maç verisi bulunamadı"
+            }
+        
+        predictions = []
+        
+        # Her maç için tahmin yap
+        for match in matches[:limit]:
+            try:
+                # Tahmin verilerini hazırla
+                match_data = {
+                    'home_team': match['home_team'],
+                    'away_team': match['away_team'],
+                    'league': match.get('league', 'Unknown'),
+                    'odds': match.get('odds', {})
+                }
+                
+                # AI ile tahmin yap
+                if ai_predictor:
+                    prediction = ai_predictor.predict_with_confidence(match_data)
+                    
+                    # Güven seviyesi kontrolü
+                    confidence = prediction.get('confidence', 0)
+                    if confidence >= min_confidence:
+                        predictions.append({
+                            'match': match,
+                            'prediction': prediction
+                        })
+                        
+            except Exception as e:
+                logger.debug(f"Tahmin hatası ({match['home_team']} vs {match['away_team']}): {e}")
+                continue
+        
+        return {
+            "success": True,
+            "predictions": predictions,
+            "count": len(predictions),
+            "message": f"{len(predictions)} tahminli maç bulundu"
+        }
+        
+    except Exception as e:
+        logger.error(f"Tahminli maç listeleme hatası: {e}")
+        return {
+            "success": False,
+            "predictions": [],
+            "message": f"Hata: {str(e)}"
+        }
+
+@app.get("/api/matches/by-league/{league}")
+async def get_matches_by_league(league: str, limit: int = Query(30)):
+    """Lige göre maçları filtrele"""
+    try:
+        from nesine_match_fetcher import nesine_fetcher
+        
+        # Tüm maçları çek
+        all_matches = await nesine_fetcher.fetch_prematch_matches()
+        
+        # Lige göre filtrele
+        league_matches = [
+            match for match in all_matches
+            if league.lower() in match.get('league', '').lower()
+        ]
+        
+        return {
+            "success": True,
+            "matches": league_matches[:limit],
+            "count": len(league_matches),
+            "league": league
+        }
+        
+    except Exception as e:
+        logger.error(f"Lig bazlı maç listeleme hatası: {e}")
+        return {
+            "success": False,
+            "matches": [],
+            "message": str(e)
+        }
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
