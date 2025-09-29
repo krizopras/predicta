@@ -86,224 +86,224 @@ try:
 except ImportError as e:
     logger.warning(f"⚠️ Bazı modüller import edilemedi: {e}")
     # Fallback sınıfları
-    class EnhancedSuperLearningAI:
-    def __init__(self, db_manager=None):
-        self.db_manager = db_manager
-        self.last_training = None
-        self.team_power_map = {
-            'galatasaray': 8, 'fenerbahçe': 8, 'beşiktaş': 7, 'trabzonspor': 7,
-            'başakşehir': 6, 'sivasspor': 5, 'alanyaspor': 5, 'göztepe': 4,
-            'kayseri': 4, 'antep': 4, 'karagümrük': 4, 'kasımpaşa': 3,
-            'malatya': 3, 'ankara': 3, 'hatay': 3, 'pendik': 2, 'istanspor': 2,
-            # Premier League takımları
-            'manchester city': 9, 'liverpool': 9, 'arsenal': 8, 'chelsea': 8,
-            'manchester united': 7, 'tottenham': 7, 'newcastle': 6, 'brighton': 6,
-            'west ham': 5, 'crystal palace': 5, 'wolves': 5, 'everton': 5
-        }
-        
-    async def train_models(self, matches=None):
-        """AI modelini istatistiklerle eğit"""
-        try:
-            if not matches or len(matches) < 3:
-                logger.warning(f"🤖 Eğitim için yeterli maç yok: {len(matches) if matches else 0}")
-                return {"status": "insufficient_data", "matches_count": len(matches) if matches else 0}
+        class EnhancedSuperLearningAI:
+        def __init__(self, db_manager=None):
+            self.db_manager = db_manager
+            self.last_training = None
+            self.team_power_map = {
+                'galatasaray': 8, 'fenerbahçe': 8, 'beşiktaş': 7, 'trabzonspor': 7,
+                'başakşehir': 6, 'sivasspor': 5, 'alanyaspor': 5, 'göztepe': 4,
+                'kayseri': 4, 'antep': 4, 'karagümrük': 4, 'kasımpaşa': 3,
+                'malatya': 3, 'ankara': 3, 'hatay': 3, 'pendik': 2, 'istanspor': 2,
+                # Premier League takımları
+                'manchester city': 9, 'liverpool': 9, 'arsenal': 8, 'chelsea': 8,
+                'manchester united': 7, 'tottenham': 7, 'newcastle': 6, 'brighton': 6,
+                'west ham': 5, 'crystal palace': 5, 'wolves': 5, 'everton': 5
+            }
             
-            # İstatistikleri özellik olarak kullan
-            training_count = 0
-            for match in matches:
-                if match.get('stats') and match.get('odds'):
-                    training_count += 1
-            
-            self.last_training = datetime.now()
-            logger.info(f"✅ AI modeli {training_count} maç ile güncellendi")
-            return {"status": "success", "matches_count": training_count}
+        async def train_models(self, matches=None):
+            """AI modelini istatistiklerle eğit"""
+            try:
+                if not matches or len(matches) < 3:
+                    logger.warning(f"🤖 Eğitim için yeterli maç yok: {len(matches) if matches else 0}")
+                    return {"status": "insufficient_data", "matches_count": len(matches) if matches else 0}
                 
-        except Exception as e:
-            logger.error(f"🤖 AI eğitim hatası: {e}")
-            return {"status": "error", "error": str(e)}
-    
-    async def predict_match(self, home_team, away_team, league):
-        """Maç tahmini yap (eski interface için)"""
-        match_data = {
-            'home_team': home_team,
-            'away_team': away_team, 
-            'league': league,
-            'stats': await self._generate_match_stats(home_team, away_team),
-            'odds': {'1': 2.0, 'X': 3.2, '2': 3.8}  # Varsayılan oranlar
-        }
-        return self.predict_with_confidence(match_data)
-    
-    def predict_with_confidence(self, match_data):
-        """İstatistik tabanlı detaylı tahmin yap"""
-        try:
-            stats = match_data.get('stats', {})
-            odds = match_data.get('odds', {})
-            home_team = match_data.get('home_team', '').lower()
-            away_team = match_data.get('away_team', '').lower()
+                # İstatistikleri özellik olarak kullan
+                training_count = 0
+                for match in matches:
+                    if match.get('stats') and match.get('odds'):
+                        training_count += 1
+                
+                self.last_training = datetime.now()
+                logger.info(f"✅ AI modeli {training_count} maç ile güncellendi")
+                return {"status": "success", "matches_count": training_count}
+                    
+            except Exception as e:
+                logger.error(f"🤖 AI eğitim hatası: {e}")
+                return {"status": "error", "error": str(e)}
+        
+        async def predict_match(self, home_team, away_team, league):
+            """Maç tahmini yap (eski interface için)"""
+            match_data = {
+                'home_team': home_team,
+                'away_team': away_team, 
+                'league': league,
+                'stats': await self._generate_match_stats(home_team, away_team),
+                'odds': {'1': 2.0, 'X': 3.2, '2': 3.8}  # Varsayılan oranlar
+            }
+            return self.predict_with_confidence(match_data)
+        
+        def predict_with_confidence(self, match_data):
+            """İstatistik tabanlı detaylı tahmin yap"""
+            try:
+                stats = match_data.get('stats', {})
+                odds = match_data.get('odds', {})
+                home_team = match_data.get('home_team', '').lower()
+                away_team = match_data.get('away_team', '').lower()
+                
+                # Takım güçlerini al
+                home_power = self.team_power_map.get(home_team, 5)
+                away_power = self.team_power_map.get(away_team, 5)
+                
+                # İstatistikleri al veya oluştur
+                possession_home = stats.get('possession', {}).get('home', 50)
+                shots_home = stats.get('shots', {}).get('home', 12)
+                shots_away = stats.get('shots', {}).get('away', 10)
+                
+                # Oranları al
+                odds_1 = odds.get('1', 2.0)
+                odds_x = odds.get('X', 3.2)
+                odds_2 = odds.get('2', 3.8)
+                
+                # Gelişmiş tahmin algoritması
+                home_advantage = 0.1  # Ev sahibi avantajı
+                
+                # Güç farkına göre temel olasılıklar
+                power_diff = (home_power - away_power) * 0.05
+                base_home_win = 0.35 + power_diff + home_advantage
+                base_away_win = 0.25 - power_diff
+                base_draw = 0.40
+                
+                # İstatistik düzeltmeleri
+                possession_factor = (possession_home - 50) * 0.002
+                shots_factor = ((shots_home - shots_away) / 20) * 0.05
+                
+                # Oran düzeltmeleri (value betting)
+                odds_factor_1 = (1/odds_1 - 0.33) * 0.1 if odds_1 > 0 else 0
+                odds_factor_2 = (1/odds_2 - 0.33) * 0.1 if odds_2 > 0 else 0
+                
+                # Nihai olasılıklar
+                home_win_prob = max(0.2, min(0.7, base_home_win + possession_factor + shots_factor + odds_factor_1))
+                away_win_prob = max(0.15, min(0.6, base_away_win - possession_factor - shots_factor + odds_factor_2))
+                draw_prob = max(0.2, min(0.5, base_draw - abs(power_diff) - abs(shots_factor)))
+                
+                # Normalize et
+                total = home_win_prob + away_win_prob + draw_prob
+                home_win_prob /= total
+                away_win_prob /= total
+                draw_prob /= total
+                
+                # Tahmini belirle
+                if home_win_prob > away_win_prob and home_win_prob > draw_prob:
+                    prediction = "1"
+                    confidence = home_win_prob
+                    analysis = self._generate_analysis(home_team, away_team, "home", home_win_prob)
+                elif away_win_prob > home_win_prob and away_win_prob > draw_prob:
+                    prediction = "2"
+                    confidence = away_win_prob  
+                    analysis = self._generate_analysis(home_team, away_team, "away", away_win_prob)
+                else:
+                    prediction = "X"
+                    confidence = draw_prob
+                    analysis = self._generate_analysis(home_team, away_team, "draw", draw_prob)
+                
+                return {
+                    "prediction": prediction,
+                    "confidence": round(confidence * 100, 1),
+                    "home_win_prob": round(home_win_prob * 100, 1),
+                    "draw_prob": round(draw_prob * 100, 1),
+                    "away_win_prob": round(away_win_prob * 100, 1),
+                    "analysis": analysis,
+                    "power_comparison": f"{home_team.title()} ({home_power}/10) vs {away_team.title()} ({away_power}/10)",
+                    "timestamp": datetime.now().isoformat()
+                }
+                
+            except Exception as e:
+                logger.error(f"🤖 Tahmin hatası: {e}")
+                return self._get_fallback_prediction()
+        
+        def _generate_analysis(self, home_team, away_team, result_type, probability):
+            """Analiz metni oluştur"""
+            home_display = home_team.title()
+            away_display = away_team.title()
             
-            # Takım güçlerini al
-            home_power = self.team_power_map.get(home_team, 5)
-            away_power = self.team_power_map.get(away_team, 5)
+            analyses = {
+                "home": [
+                    f"{home_display} evinde güçlü görünüyor",
+                    f"{home_display}'ın ev avantajı etkili olabilir", 
+                    f"{away_display} deplasmanda zorlanabilir",
+                    f"{home_display} formuyla öne çıkıyor"
+                ],
+                "away": [
+                    f"{away_display} deplasmanda sürpriz yapabilir",
+                    f"{home_display} evinde bekleneni veremeyebilir",
+                    f"{away_display}'ın kontratak etkili olabilir",
+                    f"{away_display} formuyla avantajlı"
+                ],
+                "draw": [
+                    "İki takım da dengeli görünüyor",
+                    "Beraberlik yüksek ihtimal",
+                    "Sıkı bir mücadele bekleniyor", 
+                    "İki taraf da avantaj sağlayamıyor"
+                ]
+            }
             
-            # İstatistikleri al veya oluştur
-            possession_home = stats.get('possession', {}).get('home', 50)
-            shots_home = stats.get('shots', {}).get('home', 12)
-            shots_away = stats.get('shots', {}).get('away', 10)
+            import random
+            base_analysis = random.choice(analyses[result_type])
             
-            # Oranları al
-            odds_1 = odds.get('1', 2.0)
-            odds_x = odds.get('X', 3.2)
-            odds_2 = odds.get('2', 3.8)
-            
-            # Gelişmiş tahmin algoritması
-            home_advantage = 0.1  # Ev sahibi avantajı
-            
-            # Güç farkına göre temel olasılıklar
-            power_diff = (home_power - away_power) * 0.05
-            base_home_win = 0.35 + power_diff + home_advantage
-            base_away_win = 0.25 - power_diff
-            base_draw = 0.40
-            
-            # İstatistik düzeltmeleri
-            possession_factor = (possession_home - 50) * 0.002
-            shots_factor = ((shots_home - shots_away) / 20) * 0.05
-            
-            # Oran düzeltmeleri (value betting)
-            odds_factor_1 = (1/odds_1 - 0.33) * 0.1 if odds_1 > 0 else 0
-            odds_factor_2 = (1/odds_2 - 0.33) * 0.1 if odds_2 > 0 else 0
-            
-            # Nihai olasılıklar
-            home_win_prob = max(0.2, min(0.7, base_home_win + possession_factor + shots_factor + odds_factor_1))
-            away_win_prob = max(0.15, min(0.6, base_away_win - possession_factor - shots_factor + odds_factor_2))
-            draw_prob = max(0.2, min(0.5, base_draw - abs(power_diff) - abs(shots_factor)))
-            
-            # Normalize et
-            total = home_win_prob + away_win_prob + draw_prob
-            home_win_prob /= total
-            away_win_prob /= total
-            draw_prob /= total
-            
-            # Tahmini belirle
-            if home_win_prob > away_win_prob and home_win_prob > draw_prob:
-                prediction = "1"
-                confidence = home_win_prob
-                analysis = self._generate_analysis(home_team, away_team, "home", home_win_prob)
-            elif away_win_prob > home_win_prob and away_win_prob > draw_prob:
-                prediction = "2"
-                confidence = away_win_prob  
-                analysis = self._generate_analysis(home_team, away_team, "away", away_win_prob)
+            if probability > 0.7:
+                confidence_text = "yüksek ihtimalle"
+            elif probability > 0.55:
+                confidence_text = "büyük olasılıkla" 
             else:
-                prediction = "X"
-                confidence = draw_prob
-                analysis = self._generate_analysis(home_team, away_team, "draw", draw_prob)
+                confidence_text = "hafif üstünlükle"
+                
+            return f"{base_analysis} - {confidence_text}"
+        
+        async def _generate_match_stats(self, home_team, away_team):
+            """Maç istatistikleri oluştur"""
+            home_power = self.team_power_map.get(home_team.lower(), 5)
+            away_power = self.team_power_map.get(away_team.lower(), 5)
+            
+            power_diff = home_power - away_power
             
             return {
-                "prediction": prediction,
-                "confidence": round(confidence * 100, 1),
-                "home_win_prob": round(home_win_prob * 100, 1),
-                "draw_prob": round(draw_prob * 100, 1),
-                "away_win_prob": round(away_win_prob * 100, 1),
-                "analysis": analysis,
-                "power_comparison": f"{home_team.title()} ({home_power}/10) vs {away_team.title()} ({away_power}/10)",
+                'possession': {
+                    'home': max(40, min(65, 50 + power_diff * 2)),
+                    'away': max(35, min(60, 50 - power_diff * 2))
+                },
+                'shots': {
+                    'home': max(8, min(20, 12 + home_power)),
+                    'away': max(6, min(18, 10 + away_power))
+                },
+                'shots_on_target': {
+                    'home': max(3, min(8, 4 + home_power // 2)),
+                    'away': max(2, min(7, 3 + away_power // 2))
+                },
+                'corners': {
+                    'home': max(3, min(9, 5 + home_power // 2)),
+                    'away': max(2, min(8, 4 + away_power // 2))
+                },
+                'fouls': {
+                    'home': max(10, min(20, 15 - home_power // 3)),
+                    'away': max(10, min(20, 15 - away_power // 3))
+                }
+            }
+        
+        def _get_fallback_prediction(self):
+            """Fallback tahmin (random değil, sabit)"""
+            return {
+                "prediction": "1",
+                "confidence": 65.5,
+                "home_win_prob": 45.5,
+                "draw_prob": 30.2,
+                "away_win_prob": 24.3,
+                "analysis": "Sistem analizi yapılıyor",
+                "power_comparison": "Veriler değerlendiriliyor",
                 "timestamp": datetime.now().isoformat()
             }
-            
-        except Exception as e:
-            logger.error(f"🤖 Tahmin hatası: {e}")
-            return self._get_fallback_prediction()
-    
-    def _generate_analysis(self, home_team, away_team, result_type, probability):
-        """Analiz metni oluştur"""
-        home_display = home_team.title()
-        away_display = away_team.title()
         
-        analyses = {
-            "home": [
-                f"{home_display} evinde güçlü görünüyor",
-                f"{home_display}'ın ev avantajı etkili olabilir", 
-                f"{away_display} deplasmanda zorlanabilir",
-                f"{home_display} formuyla öne çıkıyor"
-            ],
-            "away": [
-                f"{away_display} deplasmanda sürpriz yapabilir",
-                f"{home_display} evinde bekleneni veremeyebilir",
-                f"{away_display}'ın kontratak etkili olabilir",
-                f"{away_display} formuyla avantajlı"
-            ],
-            "draw": [
-                "İki takım da dengeli görünüyor",
-                "Beraberlik yüksek ihtimal",
-                "Sıkı bir mücadele bekleniyor", 
-                "İki taraf da avantaj sağlayamıyor"
-            ]
-        }
-        
-        import random
-        base_analysis = random.choice(analyses[result_type])
-        
-        if probability > 0.7:
-            confidence_text = "yüksek ihtimalle"
-        elif probability > 0.55:
-            confidence_text = "büyük olasılıkla" 
-        else:
-            confidence_text = "hafif üstünlükle"
-            
-        return f"{base_analysis} - {confidence_text}"
-    
-    async def _generate_match_stats(self, home_team, away_team):
-        """Maç istatistikleri oluştur"""
-        home_power = self.team_power_map.get(home_team.lower(), 5)
-        away_power = self.team_power_map.get(away_team.lower(), 5)
-        
-        power_diff = home_power - away_power
-        
-        return {
-            'possession': {
-                'home': max(40, min(65, 50 + power_diff * 2)),
-                'away': max(35, min(60, 50 - power_diff * 2))
-            },
-            'shots': {
-                'home': max(8, min(20, 12 + home_power)),
-                'away': max(6, min(18, 10 + away_power))
-            },
-            'shots_on_target': {
-                'home': max(3, min(8, 4 + home_power // 2)),
-                'away': max(2, min(7, 3 + away_power // 2))
-            },
-            'corners': {
-                'home': max(3, min(9, 5 + home_power // 2)),
-                'away': max(2, min(8, 4 + away_power // 2))
-            },
-            'fouls': {
-                'home': max(10, min(20, 15 - home_power // 3)),
-                'away': max(10, min(20, 15 - away_power // 3))
+        def get_detailed_performance(self):
+            """Performans istatistikleri"""
+            return {
+                "status": "enhanced_mode",
+                "accuracy": 0.72,
+                "total_predictions": 150,
+                "correct_predictions": 108,
+                "last_training": self.last_training.isoformat() if self.last_training else "Never",
+                "features_used": ["team_power", "possession", "shots", "odds_analysis"]
             }
-        }
-    
-    def _get_fallback_prediction(self):
-        """Fallback tahmin (random değil, sabit)"""
-        return {
-            "prediction": "1",
-            "confidence": 65.5,
-            "home_win_prob": 45.5,
-            "draw_prob": 30.2,
-            "away_win_prob": 24.3,
-            "analysis": "Sistem analizi yapılıyor",
-            "power_comparison": "Veriler değerlendiriliyor",
-            "timestamp": datetime.now().isoformat()
-        }
-    
-    def get_detailed_performance(self):
-        """Performans istatistikleri"""
-        return {
-            "status": "enhanced_mode",
-            "accuracy": 0.72,
-            "total_predictions": 150,
-            "correct_predictions": 108,
-            "last_training": self.last_training.isoformat() if self.last_training else "Never",
-            "features_used": ["team_power", "possession", "shots", "odds_analysis"]
-        }
-    
+
     class AIDatabaseManager:
         def __init__(self):
             pass
@@ -313,7 +313,6 @@ except ImportError as e:
             return None
         def get_recent_matches(self, league, limit):
             return []
-
 async def train_ai_models():
     """AI modellerini eğit"""
     global ai_predictor
