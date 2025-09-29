@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title or "Predicta AI - Futbol Tahmin Sistemi" }}</title>
+    <title>Predicta AI - Futbol Tahmin Sistemi</title>
     <style>
         * {
             margin: 0;
@@ -12,387 +12,501 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            color: #333;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: #0a0e27;
+            color: #fff;
             line-height: 1.6;
         }
 
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .stats-bar {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            background: rgba(255,255,255,0.1);
+            padding: 10px 25px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+        }
+
+        .stat-item span {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ffd700;
+        }
+
         .container {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
             padding: 20px;
         }
 
-        .header {
-            text-align: center;
-            padding: 40px 0;
-            color: white;
-        }
-
-        .header h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-            font-weight: 700;
-        }
-
-        .header p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-            margin-bottom: 30px;
-        }
-
-        .version-badge {
-            display: inline-block;
-            background: rgba(255,255,255,0.2);
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            backdrop-filter: blur(10px);
-        }
-
-        .status-section {
-            background: white;
-            border-radius: 15px;
-            padding: 30px;
+        .controls {
+            display: flex;
+            gap: 15px;
             margin: 30px 0;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            backdrop-filter: blur(10px);
+            flex-wrap: wrap;
+            align-items: center;
         }
 
-        .status-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
+        .search-box {
+            flex: 1;
+            min-width: 250px;
+            position: relative;
         }
 
-        .status-card {
-            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        .search-box input {
+            width: 100%;
+            padding: 15px 20px 15px 50px;
+            border: 2px solid #1e2645;
+            background: #161b33;
+            color: #fff;
+            border-radius: 12px;
+            font-size: 15px;
+            transition: all 0.3s;
+        }
+
+        .search-box input:focus {
+            outline: none;
+            border-color: #667eea;
+            background: #1a1f3a;
+        }
+
+        .search-box::before {
+            content: "🔍";
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 18px;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            transition: transform 0.3s ease;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 15px;
+            transition: all 0.3s;
         }
 
-        .status-card:hover {
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.5);
+        }
+
+        .matches-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .match-card {
+            background: linear-gradient(135deg, #1e2645 0%, #161b33 100%);
+            border-radius: 16px;
+            padding: 0;
+            overflow: hidden;
+            transition: all 0.3s;
+            border: 1px solid #252b4a;
+        }
+
+        .match-card:hover {
             transform: translateY(-5px);
+            box-shadow: 0 12px 35px rgba(102, 126, 234, 0.3);
+            border-color: #667eea;
         }
 
-        .status-card h3 {
-            font-size: 1.1rem;
-            margin-bottom: 10px;
+        .match-header {
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            padding: 12px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .league-badge {
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .match-time {
+            font-size: 13px;
             opacity: 0.9;
         }
 
-        .status-value {
-            font-size: 2rem;
-            font-weight: bold;
+        .match-body {
+            padding: 25px;
+        }
+
+        .teams-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .team {
+            flex: 1;
+            text-align: center;
+        }
+
+        .team-name {
+            font-size: 16px;
+            font-weight: 700;
+            color: #fff;
             margin-bottom: 5px;
         }
 
-        .system-ready {
-            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        .vs-divider {
+            padding: 0 20px;
+            font-size: 18px;
+            font-weight: 900;
+            color: #667eea;
         }
 
-        .system-not-ready {
-            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
-        }
-
-        .features-section {
+        .odds-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            margin: 30px 0;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            margin-top: 20px;
         }
 
-        .feature-card {
-            background: white;
-            border-radius: 15px;
-            padding: 25px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .feature-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-        }
-
-        .feature-icon {
-            width: 60px;
-            height: 60px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 15px;
-            font-size: 1.5rem;
-            color: white;
-        }
-
-        .feature-card h3 {
-            color: #333;
-            margin-bottom: 10px;
-            font-size: 1.3rem;
-        }
-
-        .feature-card p {
-            color: #666;
-            font-size: 0.95rem;
-        }
-
-        .api-section {
-            background: white;
-            border-radius: 15px;
-            padding: 30px;
-            margin: 30px 0;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-
-        .api-section h2 {
-            color: #333;
-            margin-bottom: 20px;
+        .odd-item {
+            background: rgba(102, 126, 234, 0.1);
+            border: 1px solid rgba(102, 126, 234, 0.3);
+            border-radius: 10px;
+            padding: 12px;
             text-align: center;
+            transition: all 0.3s;
+            cursor: pointer;
         }
 
-        .api-links {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
+        .odd-item:hover {
+            background: rgba(102, 126, 234, 0.2);
+            border-color: #667eea;
+            transform: scale(1.05);
         }
 
-        .api-link {
-            display: inline-block;
-            padding: 12px 25px;
+        .odd-label {
+            font-size: 11px;
+            color: #aaa;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        .odd-value {
+            font-size: 22px;
+            font-weight: 800;
+            color: #ffd700;
+        }
+
+        .predict-btn {
+            width: 100%;
+            padding: 14px;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            transition: all 0.3s ease;
-            font-weight: 500;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 14px;
+            margin-top: 20px;
+            transition: all 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
-        .api-link:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
-        }
-
-        .footer {
-            text-align: center;
-            padding: 30px 0;
-            color: white;
-            opacity: 0.8;
+        .predict-btn:hover {
+            background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
         }
 
         .loading {
-            display: inline-block;
-            width: 20px;
-            height: 20px;
-            border: 3px solid rgba(255,255,255,.3);
+            text-align: center;
+            padding: 60px;
+            font-size: 18px;
+        }
+
+        .spinner {
+            border: 3px solid rgba(255,255,255,0.1);
             border-radius: 50%;
-            border-top-color: #fff;
-            animation: spin 1s ease-in-out infinite;
-            margin-left: 10px;
+            border-top: 3px solid #667eea;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
         }
 
         @keyframes spin {
-            to { transform: rotate(360deg); }
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
         }
 
-        .pulse {
-            animation: pulse 2s infinite;
+        .no-matches {
+            text-align: center;
+            padding: 60px;
+            font-size: 18px;
+            color: #888;
         }
 
-        @keyframes pulse {
-            0% { opacity: 1; }
-            50% { opacity: 0.5; }
-            100% { opacity: 1; }
+        .filter-tags {
+            display: flex;
+            gap: 10px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            padding: 8px 18px;
+            background: #1e2645;
+            border: 1px solid #252b4a;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 13px;
+            transition: all 0.3s;
+        }
+
+        .tag:hover, .tag.active {
+            background: #667eea;
+            border-color: #667eea;
         }
 
         @media (max-width: 768px) {
-            .container {
-                padding: 10px;
-            }
-            
-            .header h1 {
-                font-size: 2rem;
-            }
-            
-            .status-grid {
+            .matches-grid {
                 grid-template-columns: 1fr;
             }
-            
-            .api-links {
+
+            .header h1 {
+                font-size: 1.8rem;
+            }
+
+            .controls {
                 flex-direction: column;
-                align-items: center;
+            }
+
+            .search-box {
+                width: 100%;
             }
         }
     </style>
 </head>
 <body>
+    <div class="header">
+        <h1>PREDICTA AI</h1>
+        <p>Profesyonel Futbol Tahmin Platformu</p>
+        <div class="stats-bar">
+            <div class="stat-item">
+                <div>Toplam Maç</div>
+                <span id="total-matches">0</span>
+            </div>
+            <div class="stat-item">
+                <div>Bugün</div>
+                <span id="today-matches">0</span>
+            </div>
+            <div class="stat-item">
+                <div>Canlı</div>
+                <span>🟢</span>
+            </div>
+        </div>
+    </div>
+
     <div class="container">
-        <div class="header">
-            <h1>⚽ Predicta AI</h1>
-            <p>Yapay Zeka Destekli Futbol Tahmin Sistemi</p>
-            <span class="version-badge">Versiyon {{ version or "3.0" }}</span>
+        <div class="controls">
+            <div class="search-box">
+                <input type="text" id="search" placeholder="Takım veya lig ara...">
+            </div>
+            <button class="btn" onclick="loadMatches()">Yenile</button>
         </div>
 
-        <div class="status-section">
-            <h2 style="text-align: center; color: #333; margin-bottom: 20px;">Sistem Durumu</h2>
-            
-            <div class="status-grid">
-                <div class="status-card {% if system_ready %}system-ready{% else %}system-not-ready{% endif %}">
-                    <h3>Sistem Durumu</h3>
-                    <div class="status-value">
-                        {% if system_ready %}
-                            ✅ Hazır
-                        {% else %}
-                            ⏳ Başlatılıyor
-                        {% endif %}
-                    </div>
-                    {% if not system_ready %}
-                        <div class="loading"></div>
-                    {% endif %}
-                </div>
-
-                <div class="status-card">
-                    <h3>Son Güncelleme</h3>
-                    <div class="status-value" style="font-size: 1.2rem;">{{ current_time }}</div>
-                </div>
-
-                <div class="status-card">
-                    <h3>AI Motoru</h3>
-                    <div class="status-value">🤖 Aktif</div>
-                    <small>Fallback Modunda</small>
-                </div>
-
-                <div class="status-card">
-                    <h3>Veritabanı</h3>
-                    <div class="status-value">💾 Bağlı</div>
-                    <small>SQLite</small>
-                </div>
-            </div>
+        <div class="filter-tags">
+            <div class="tag active" data-filter="all">Tümü</div>
+            <div class="tag" data-filter="584">Süper Lig</div>
+            <div class="tag" data-filter="1980">1. Lig</div>
+            <div class="tag" data-filter="143">Serie A</div>
+            <div class="tag" data-filter="202">Ekstraklasa</div>
         </div>
 
-        <div class="features-section">
-            <div class="feature-card">
-                <div class="feature-icon">🎯</div>
-                <h3>Akıllı Tahminler</h3>
-                <p>Gelişmiş makine öğrenmesi algoritmaları ile yüksek doğruluk oranında maç tahminleri yapın.</p>
-            </div>
-
-            <div class="feature-card">
-                <div class="feature-icon">📊</div>
-                <h3>Detaylı Analiz</h3>
-                <p>Takım istatistikleri, form analizi ve geçmiş performans verileri ile kapsamlı maç analizleri.</p>
-            </div>
-
-            <div class="feature-card">
-                <div class="feature-icon">⚡</div>
-                <h3>Gerçek Zamanlı</h3>
-                <p>Canlı maç verileri ve anlık oran güncellemeleri ile her zaman güncel bilgiler.</p>
-            </div>
-
-            <div class="feature-card">
-                <div class="feature-icon">🎲</div>
-                <h3>Risk Analizi</h3>
-                <p>Her tahmin için detaylı risk faktörleri ve güven seviyeleri ile bilinçli kararlar alın.</p>
-            </div>
+        <div id="loading" class="loading" style="display:none;">
+            <div class="spinner"></div>
+            Maçlar yükleniyor...
         </div>
 
-        <div class="api-section">
-            <h2>API Dokümantasyonu</h2>
-            <div class="api-links">
-                <a href="/docs" class="api-link">📚 Swagger UI</a>
-                <a href="/redoc" class="api-link">📖 ReDoc</a>
-                <a href="/health" class="api-link">💚 Health Check</a>
-                <a href="/api/leagues" class="api-link">⚽ Ligler</a>
-            </div>
-        </div>
-
-        <div class="footer">
-            <p>&copy; 2025 Predicta AI - Tüm hakları saklıdır</p>
-            <p>Yapay zeka destekli futbol tahmin sistemi</p>
+        <div id="matches-grid" class="matches-grid"></div>
+        
+        <div id="no-matches" class="no-matches" style="display:none;">
+            Maç bulunamadı
         </div>
     </div>
 
     <script>
-        // Sistem durumu kontrolü
-        function updateSystemStatus() {
-            fetch('/health')
-                .then(response => response.json())
-                .then(data => {
-                    console.log('Sistem durumu:', data);
-                })
-                .catch(error => {
-                    console.log('Durum kontrol hatası:', error);
-                });
-        }
-// Güncel maçları yükle
-async function loadMatches() {
-    try {
-        const response = await fetch('/api/nesine/matches?limit=30');
-        const data = await response.json();
-        
-        if (data.success) {
-            displayMatches(data.matches);
-        }
-    } catch (error) {
-        console.error('Maç yükleme hatası:', error);
-    }
-}
+        let allMatches = [];
+        let currentFilter = 'all';
 
-// Maçları göster
-function displayMatches(matches) {
-    const container = document.getElementById('matches-container');
-    container.innerHTML = '';
-    
-    matches.forEach(match => {
-        const matchCard = `
-            <div class="match-card">
-                <h3>${match.home_team} vs ${match.away_team}</h3>
-                <p>Lig: ${match.league}</p>
-                <p>Tarih: ${match.date} ${match.time}</p>
-                <p>Oranlar: 1:${match.odds['1']} X:${match.odds['X']} 2:${match.odds['2']}</p>
-                <button onclick="predictMatch('${match.match_code}', '${match.home_team}', '${match.away_team}')">
-                    Tahmin Yap
-                </button>
-            </div>
-        `;
-        container.innerHTML += matchCard;
-    });
-}
+        window.addEventListener('DOMContentLoaded', loadMatches);
 
-// Sayfa yüklendiğinde maçları getir
-document.addEventListener('DOMContentLoaded', loadMatches);
-        
-        // Sayfa yüklendiğinde durumu kontrol et
-        document.addEventListener('DOMContentLoaded', function() {
-            updateSystemStatus();
-            
-            // 30 saniyede bir durum kontrolü
-            setInterval(updateSystemStatus, 30000);
-        });
+        document.getElementById('search').addEventListener('input', filterMatches);
 
-        // Smooth scroll için
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
+        document.querySelectorAll('.tag').forEach(tag => {
+            tag.addEventListener('click', function() {
+                document.querySelectorAll('.tag').forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+                currentFilter = this.dataset.filter;
+                filterMatches();
             });
         });
+
+        async function loadMatches() {
+            const loading = document.getElementById('loading');
+            const grid = document.getElementById('matches-grid');
+            const noMatches = document.getElementById('no-matches');
+
+            loading.style.display = 'block';
+            grid.innerHTML = '';
+            noMatches.style.display = 'none';
+
+            try {
+                const response = await fetch('/api/nesine/matches?limit=50');
+                const data = await response.json();
+
+                if (data.success && data.matches && data.matches.length > 0) {
+                    allMatches = data.matches;
+                    displayMatches(allMatches);
+                    updateStats(allMatches);
+                } else {
+                    noMatches.style.display = 'block';
+                }
+            } catch (error) {
+                console.error('Hata:', error);
+                grid.innerHTML = '<div class="no-matches">Bağlantı hatası</div>';
+            } finally {
+                loading.style.display = 'none';
+            }
+        }
+
+        function displayMatches(matches) {
+            const grid = document.getElementById('matches-grid');
+            grid.innerHTML = '';
+
+            if (matches.length === 0) {
+                document.getElementById('no-matches').style.display = 'block';
+                return;
+            }
+
+            matches.forEach(match => {
+                const card = document.createElement('div');
+                card.className = 'match-card';
+                
+                const leagueName = getLeagueName(match.league);
+                
+                card.innerHTML = `
+                    <div class="match-header">
+                        <div class="league-badge">${leagueName}</div>
+                        <div class="match-time">${match.date} • ${match.time}</div>
+                    </div>
+                    <div class="match-body">
+                        <div class="teams-container">
+                            <div class="team">
+                                <div class="team-name">${match.home_team}</div>
+                            </div>
+                            <div class="vs-divider">VS</div>
+                            <div class="team">
+                                <div class="team-name">${match.away_team}</div>
+                            </div>
+                        </div>
+                        <div class="odds-container">
+                            <div class="odd-item">
+                                <div class="odd-label">Ev Sahibi</div>
+                                <div class="odd-value">${match.odds['1'].toFixed(2)}</div>
+                            </div>
+                            <div class="odd-item">
+                                <div class="odd-label">Beraberlik</div>
+                                <div class="odd-value">${match.odds['X'].toFixed(2)}</div>
+                            </div>
+                            <div class="odd-item">
+                                <div class="odd-label">Deplasman</div>
+                                <div class="odd-value">${match.odds['2'].toFixed(2)}</div>
+                            </div>
+                        </div>
+                        <button class="predict-btn" onclick="predictMatch('${match.match_code}')">
+                            Tahmin Yap
+                        </button>
+                    </div>
+                `;
+                
+                grid.appendChild(card);
+            });
+        }
+
+        function filterMatches() {
+            const search = document.getElementById('search').value.toLowerCase();
+            
+            let filtered = allMatches;
+
+            if (currentFilter !== 'all') {
+                filtered = filtered.filter(m => m.league == currentFilter);
+            }
+
+            if (search) {
+                filtered = filtered.filter(m => 
+                    m.home_team.toLowerCase().includes(search) ||
+                    m.away_team.toLowerCase().includes(search) ||
+                    getLeagueName(m.league).toLowerCase().includes(search)
+                );
+            }
+
+            displayMatches(filtered);
+        }
+
+        function updateStats(matches) {
+            document.getElementById('total-matches').textContent = matches.length;
+            
+            const today = new Date().toLocaleDateString('tr-TR', {
+                day: '2-digit',
+                month: '2-digit',
+                year: 'numeric'
+            }).replace(/\//g, '.');
+            
+            const todayMatches = matches.filter(m => m.date === today);
+            document.getElementById('today-matches').textContent = todayMatches.length;
+        }
+
+        function getLeagueName(leagueId) {
+            const leagues = {
+                '584': 'Süper Lig', '1980': '1. Lig', '202': 'Ekstraklasa',
+                '143': 'Serie A', '569': 'Superliga', '573': 'Eliteserien',
+                '51': 'Allsvenskan', '262': 'Super League 1', '1273': 'Premier League',
+                '1199': 'Ligue 1'
+            };
+            return leagues[leagueId] || `Lig ${leagueId}`;
+        }
+
+        function predictMatch(matchCode) {
+            alert('Tahmin motoru aktif edilecek: ' + matchCode);
+        }
     </script>
 </body>
 </html>
