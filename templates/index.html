@@ -530,10 +530,13 @@
             loadTopPredictions();
         }
 
+        // BACKEND URL'INI BURAYA YAZIN
+        const BACKEND_URL = 'https://YOUR-BACKEND-URL.onrender.com'; // Backend adresinizi buraya yazın
+        
         async function loadRealMatches() {
             try {
                 // Backend API'den maçları çek
-                const response = await fetch('/api/nesine/matches?limit=100');
+                const response = await fetch(`${BACKEND_URL}/api/nesine/matches?limit=100`);
                 const data = await response.json();
 
                 if (data.success && data.matches && data.matches.length > 0) {
