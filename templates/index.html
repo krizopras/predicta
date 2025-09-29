@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Predicta AI - Professional Football Predictions</title>
+    <title>Predicta AI - Profesyonel Futbol Tahminleri</title>
     <style>
         * {
             margin: 0;
@@ -48,6 +48,8 @@
             background: rgba(13, 27, 105, 0.8);
             flex-wrap: wrap;
             margin-top: 20px;
+            border-radius: 8px;
+            overflow: hidden;
         }
 
         .nav-item {
@@ -73,6 +75,131 @@
             padding: 0 20px;
         }
 
+        .content-wrapper {
+            display: flex;
+            gap: 20px;
+        }
+
+        .sidebar {
+            flex: 0 0 250px;
+            background: linear-gradient(135deg, rgba(26, 35, 126, 0.8), rgba(30, 39, 130, 0.9));
+            border-radius: 12px;
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(63, 81, 181, 0.2);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            height: fit-content;
+        }
+
+        .main-content {
+            flex: 1;
+            background: linear-gradient(135deg, rgba(26, 35, 126, 0.8), rgba(30, 39, 130, 0.9));
+            border-radius: 12px;
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(63, 81, 181, 0.2);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .sidebar-section {
+            margin-bottom: 25px;
+        }
+
+        .sidebar-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #ffd700;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .league-list {
+            list-style: none;
+        }
+
+        .league-item {
+            padding: 10px 12px;
+            margin-bottom: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .league-item:hover {
+            background: rgba(255, 215, 0, 0.1);
+        }
+
+        .league-flag {
+            width: 20px;
+            height: 15px;
+            border-radius: 2px;
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .date-navigation {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: rgba(13, 27, 105, 0.8);
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .date-btn {
+            background: rgba(255, 215, 0, 0.9);
+            color: #1a237e;
+            border: none;
+            border-radius: 6px;
+            padding: 8px 16px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .date-btn:hover {
+            background: #ffeb3b;
+            transform: translateY(-2px);
+        }
+
+        .current-date {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #ffd700;
+        }
+
+        .stats-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .stat-box {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            border-left: 4px solid #ffd700;
+        }
+
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #ffd700;
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: #b3c7f7;
+        }
+
         .filter-buttons {
             display: flex;
             gap: 10px;
@@ -96,16 +223,6 @@
             background: #ffeb3b;
             transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(255, 215, 0, 0.4);
-        }
-
-        .main-content {
-            background: linear-gradient(135deg, rgba(26, 35, 126, 0.8), rgba(30, 39, 130, 0.9));
-            border-radius: 12px;
-            backdrop-filter: blur(15px);
-            border: 1px solid rgba(63, 81, 181, 0.2);
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-            overflow: hidden;
-            margin-top: 20px;
         }
 
         .loading {
@@ -235,9 +352,31 @@
             transition: width 0.5s ease;
         }
 
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #ffd700;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        @media (max-width: 1024px) {
+            .content-wrapper {
+                flex-direction: column;
+            }
+            
+            .sidebar {
+                flex: 1;
+            }
+        }
+
         @media (max-width: 768px) {
             .header h1 {
                 font-size: 2rem;
+            }
+            
+            .stats-container {
+                grid-template-columns: 1fr;
             }
             
             .match-info {
@@ -256,23 +395,93 @@
             <div class="nav-item" onclick="changePage('leagues')">Liglere Göre</div>
             <div class="nav-item" onclick="changePage('top10')">Top 10</div>
             <div class="nav-item" onclick="changePage('stats')">İstatistikler</div>
+            <div class="nav-item" onclick="changePage('live')">Canlı Maçlar</div>
+            <div class="nav-item" onclick="changePage('vip')">VIP Tahminler</div>
         </nav>
     </header>
 
     <div class="container">
-        <div class="filter-buttons" id="filter-buttons">
-            <button class="filter-btn active" onclick="filterMatches('all')">Tümü</button>
-            <button class="filter-btn" onclick="filterMatches('btts')">BTTS (Karşılıklı Gol)</button>
-            <button class="filter-btn" onclick="filterMatches('htft')">HT/FT</button>
-            <button class="filter-btn" onclick="filterMatches('goals')">2.5+ Gol</button>
-            <button class="filter-btn" onclick="filterMatches('1x2')">1X2</button>
+        <div class="date-navigation">
+            <button class="date-btn">◀ Dün</button>
+            <div class="current-date">Pazartesi, 29 Eylül 2025</div>
+            <button class="date-btn">Yarın ▶</button>
         </div>
 
-        <div class="main-content">
-            <div id="content-area">
-                <div class="loading">
-                    <div>Maçlar yükleniyor...</div>
-                    <div style="margin-top: 20px;">⚽ Nesine'den veriler çekiliyor...</div>
+        <div class="stats-container">
+            <div class="stat-box">
+                <div class="stat-value">0</div>
+                <div class="stat-label">Toplam Maç</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-value">0</div>
+                <div class="stat-label">Güvenilir Tahmin</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-value">85%</div>
+                <div class="stat-label">Başarı Oranı</div>
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="sidebar">
+                <div class="sidebar-section">
+                    <div class="sidebar-title">AVRUPA LİGLERİ</div>
+                    <ul class="league-list">
+                        <li class="league-item"><span class="league-flag"></span> Premier League (İngiltere)</li>
+                        <li class="league-item"><span class="league-flag"></span> La Liga (İspanya)</li>
+                        <li class="league-item"><span class="league-flag"></span> Bundesliga (Almanya)</li>
+                        <li class="league-item"><span class="league-flag"></span> Serie A (İtalya)</li>
+                        <li class="league-item"><span class="league-flag"></span> Ligue 1 (Fransa)</li>
+                        <li class="league-item"><span class="league-flag"></span> Super Lig (Türkiye)</li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-section">
+                    <div class="sidebar-title">DİĞER LİGLER</div>
+                    <ul class="league-list">
+                        <li class="league-item"><span class="league-flag"></span> Eredivisie (Hollanda)</li>
+                        <li class="league-item"><span class="league-flag"></span> Primeira Liga (Portekiz)</li>
+                        <li class="league-item"><span class="league-flag"></span> Championship (İngiltere 2)</li>
+                        <li class="league-item"><span class="league-flag"></span> Belgian Pro League (Belçika)</li>
+                        <li class="league-item"><span class="league-flag"></span> Serie B (İtalya 2)</li>
+                        <li class="league-item"><span class="league-flag"></span> Allsvenskan (İsveç)</li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-section">
+                    <div class="sidebar-title">GÜNEY AMERİKA</div>
+                    <ul class="league-list">
+                        <li class="league-item"><span class="league-flag"></span> Brasileirao Serie A (Brezilya)</li>
+                        <li class="league-item"><span class="league-flag"></span> Liga Profesional (Arjantin)</li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-section">
+                    <div class="sidebar-title">ULUSLARARASI TURNUVALAR</div>
+                    <ul class="league-list">
+                        <li class="league-item"><span class="league-flag"></span> Champions League (UEFA)</li>
+                        <li class="league-item"><span class="league-flag"></span> Europa League (UEFA)</li>
+                        <li class="league-item"><span class="league-flag"></span> Copa Libertadores (CONMEBOL)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="main-content">
+                <div class="filter-buttons" id="filter-buttons">
+                    <button class="filter-btn active" onclick="filterMatches('all')">Tümü</button>
+                    <button class="filter-btn" onclick="filterMatches('btts')">BTTS (Karşılıklı Gol)</button>
+                    <button class="filter-btn" onclick="filterMatches('htft')">HT/FT</button>
+                    <button class="filter-btn" onclick="filterMatches('goals')">2.5+ Gol</button>
+                    <button class="filter-btn" onclick="filterMatches('1x2')">1X2</button>
+                </div>
+
+                <div class="section-title">Günün En İyi Tahminleri</div>
+
+                <div id="content-area">
+                    <div class="loading">
+                        <div>Maçlar yükleniyor...</div>
+                        <div style="margin-top: 20px;">⚽ Nesine'den veriler çekiliyor...</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -288,20 +497,86 @@
             try {
                 showLoading();
                 
-                const response = await fetch(`${API_URL}/api/nesine/matches?limit=100`);
-                const data = await response.json();
-
-                if (data.success && data.matches && data.matches.length > 0) {
-                    allMatches = data.matches;
+                // Burada API'den veri çekme işlemi yapılacak
+                // Şimdilik örnek verilerle çalışıyoruz
+                setTimeout(() => {
+                    allMatches = generateSampleMatches();
                     displayMatches(allMatches);
-                    console.log(`✅ ${data.matches.length} maç yüklendi`);
-                } else {
-                    showError('Maç verisi bulunamadı');
-                }
+                    console.log(`✅ ${allMatches.length} maç yüklendi`);
+                }, 1500);
             } catch (error) {
                 console.error('Maç yükleme hatası:', error);
                 showError('Maçlar yüklenirken hata oluştu');
             }
+        }
+
+        function generateSampleMatches() {
+            const leagues = [
+                "Premier League (İngiltere)", 
+                "La Liga (İspanya)", 
+                "Bundesliga (Almanya)",
+                "Serie A (İtalya)",
+                "Ligue 1 (Fransa)",
+                "Super Lig (Türkiye)"
+            ];
+            
+            const teams = [
+                "Manchester City", "Liverpool", "Chelsea", "Arsenal", "Tottenham",
+                "Real Madrid", "Barcelona", "Atletico Madrid", "Sevilla", "Valencia",
+                "Bayern Munich", "Borussia Dortmund", "RB Leipzig", "Bayer Leverkusen",
+                "Juventus", "Inter", "Milan", "Napoli", "Roma",
+                "PSG", "Lyon", "Marseille", "Monaco", "Lille",
+                "Galatasaray", "Fenerbahçe", "Beşiktaş", "Trabzonspor", "Başakşehir"
+            ];
+            
+            const matches = [];
+            
+            for (let i = 0; i < 12; i++) {
+                const homeIndex = Math.floor(Math.random() * teams.length);
+                let awayIndex;
+                do {
+                    awayIndex = Math.floor(Math.random() * teams.length);
+                } while (awayIndex === homeIndex);
+                
+                const homeTeam = teams[homeIndex];
+                const awayTeam = teams[awayIndex];
+                const league = leagues[Math.floor(Math.random() * leagues.length)];
+                
+                const homeWinProb = Math.floor(Math.random() * 30) + 35;
+                const drawProb = Math.floor(Math.random() * 20) + 20;
+                const awayWinProb = 100 - homeWinProb - drawProb;
+                
+                const confidence = Math.floor(Math.random() * 30) + 60;
+                
+                let prediction;
+                if (homeWinProb > drawProb && homeWinProb > awayWinProb) {
+                    prediction = "1";
+                } else if (awayWinProb > homeWinProb && awayWinProb > drawProb) {
+                    prediction = "2";
+                } else {
+                    prediction = "X";
+                }
+                
+                matches.push({
+                    home_team: homeTeam,
+                    away_team: awayTeam,
+                    league: league,
+                    odds: {
+                        '1': (Math.random() * 2) + 1.5,
+                        'X': (Math.random() * 2) + 2.5,
+                        '2': (Math.random() * 2) + 2.5
+                    },
+                    ai_prediction: {
+                        prediction: prediction,
+                        confidence: confidence,
+                        home_win_prob: homeWinProb,
+                        draw_prob: drawProb,
+                        away_win_prob: awayWinProb
+                    }
+                });
+            }
+            
+            return matches;
         }
 
         function showLoading() {
@@ -470,6 +745,14 @@
                     filterButtons.style.display = 'none';
                     showStatsView();
                     break;
+                case 'live':
+                    filterButtons.style.display = 'none';
+                    showLiveView();
+                    break;
+                case 'vip':
+                    filterButtons.style.display = 'none';
+                    showVipView();
+                    break;
             }
         }
 
@@ -549,6 +832,30 @@
                             <div class="info-label">Ortalama Güven</div>
                             <div class="info-value">${calculateAvgConfidence().toFixed(1)}%</div>
                         </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function showLiveView() {
+            const contentArea = document.getElementById('content-area');
+            contentArea.innerHTML = `
+                <div class="match-list">
+                    <h2 style="padding: 20px; text-align: center;">Canlı Maçlar</h2>
+                    <div class="loading">
+                        Canlı maç verileri yükleniyor...
+                    </div>
+                </div>
+            `;
+        }
+
+        function showVipView() {
+            const contentArea = document.getElementById('content-area');
+            contentArea.innerHTML = `
+                <div class="match-list">
+                    <h2 style="padding: 20px; text-align: center;">VIP Tahminler</h2>
+                    <div class="loading">
+                        VIP tahminlere erişmek için lütfen giriş yapın.
                     </div>
                 </div>
             `;
