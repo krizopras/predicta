@@ -334,7 +334,44 @@
                     console.log('Durum kontrol hatası:', error);
                 });
         }
+// Güncel maçları yükle
+async function loadMatches() {
+    try {
+        const response = await fetch('/api/nesine/matches?limit=30');
+        const data = await response.json();
+        
+        if (data.success) {
+            displayMatches(data.matches);
+        }
+    } catch (error) {
+        console.error('Maç yükleme hatası:', error);
+    }
+}
 
+// Maçları göster
+function displayMatches(matches) {
+    const container = document.getElementById('matches-container');
+    container.innerHTML = '';
+    
+    matches.forEach(match => {
+        const matchCard = `
+            <div class="match-card">
+                <h3>${match.home_team} vs ${match.away_team}</h3>
+                <p>Lig: ${match.league}</p>
+                <p>Tarih: ${match.date} ${match.time}</p>
+                <p>Oranlar: 1:${match.odds['1']} X:${match.odds['X']} 2:${match.odds['2']}</p>
+                <button onclick="predictMatch('${match.match_code}', '${match.home_team}', '${match.away_team}')">
+                    Tahmin Yap
+                </button>
+            </div>
+        `;
+        container.innerHTML += matchCard;
+    });
+}
+
+// Sayfa yüklendiğinde maçları getir
+document.addEventListener('DOMContentLoaded', loadMatches);
+        
         // Sayfa yüklendiğinde durumu kontrol et
         document.addEventListener('DOMContentLoaded', function() {
             updateSystemStatus();
