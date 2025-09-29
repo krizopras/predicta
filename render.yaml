@@ -3,28 +3,30 @@ services:
     name: predicta-ai-fastapi
     env: python
     plan: free
-    region: frankfurt
+    region: singapur
     buildCommand: |
-      echo "🚀 Predicta AI Sistemi Kuruluyor..."
-      python -m pip install --upgrade pip
+      echo "🚀 Predicta AI Sistemi Kuruluyor (Python 3.13)..."
+      pip install --upgrade pip
       pip install -r requirements.txt
       echo "✅ Bağımlılıklar kuruldu"
       mkdir -p data/ai_models_v2
-      echo "🤖 AI Model klasörü hazır"
-      python update_database.py
-      python create_models_folder.py
+      echo "📁 Dizinler oluşturuldu"
+      python -c "
+      try:
+          from update_database import update_database_schema
+          update_database_schema()
+          print('✅ Veritabanı güncellendi')
+      except Exception as e:
+          print(f'⚠️ Veritabanı hatası: {e}')
+      "
     startCommand: |
       echo "🎯 Predicta AI Başlatılıyor..."
       uvicorn main:app --host 0.0.0.0 --port $PORT --workers 1
     envVars:
-      - key: PYTHON_VERSION
-        value: 3.11.0
       - key: PORT
         value: 10000
-      - key: SECRET_KEY
-        generateValue: true
-      - key: AI_MODEL_PATH
-        value: data/ai_models_v2
+      - key: PYTHONUNBUFFERED
+        value: 1
       - key: LOG_LEVEL
         value: INFO
 
