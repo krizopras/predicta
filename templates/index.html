@@ -530,14 +530,20 @@
             loadTopPredictions();
         }
 
-        // BACKEND URL'INI BURAYA YAZIN
-        const BACKEND_URL = 'https://YOUR-BACKEND-URL.onrender.com'; // Backend adresinizi buraya yazın
+        // Backend URL - Render'da aynı domain olduğu için boş bırakıyoruz
+        const BACKEND_URL = window.location.origin; // Otomatik olarak https://predicta-e51n.onrender.com
         
         async function loadRealMatches() {
             try {
+                console.log('API çağrısı yapılıyor:', `${BACKEND_URL}/api/nesine/matches?limit=100`);
+                
                 // Backend API'den maçları çek
                 const response = await fetch(`${BACKEND_URL}/api/nesine/matches?limit=100`);
+                
+                console.log('API yanıt durumu:', response.status);
+                
                 const data = await response.json();
+                console.log('API yanıtı:', data);
 
                 if (data.success && data.matches && data.matches.length > 0) {
                     allRealMatches = data.matches;
@@ -545,7 +551,7 @@
                     document.getElementById('total-matches').textContent = data.matches.length;
                     console.log(`✅ ${data.matches.length} gerçek maç yüklendi`);
                 } else {
-                    console.warn('API\'den veri gelmedi, demo veriler kullanılıyor');
+                    console.warn('API\'den veri gelmedi:', data);
                     loadDemoMatches();
                 }
             } catch (error) {
