@@ -93,13 +93,10 @@ app = FastAPI(
     description="Gelişmiş Yapay Zeka Destekli Futbol Tahmin Sistemi",
     version="3.0"
 )
+# main.py içinde - mevcut CORS ayarlarını şu şekilde güncelleyin:
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "https://krizopras.github.io",
-        "http://localhost:8000",
-        "*"  # Geliştirme için
-    ],
+    allow_origins=["*"],  # Tüm origin'lere izin ver (geçici çözüm)
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -709,14 +706,17 @@ async def debug_nesine():
         }
 
 if __name__ == "__main__":
-    # Railway PORT environment variable'ını kullan
-    port = int(os.environ.get("PORT", 8000))
+    import uvicorn
     
-    logger.info(f"🚀 Starting server on 0.0.0.0:{port}")
+    port = int(os.environ.get("PORT", 8000))
+    host = os.environ.get("HOST", "0.0.0.0")
+    
+    logger.info(f"🚀 Starting server on {host}:{port}")
     
     uvicorn.run(
-        "main:app",  # module:app formatı
-        host="0.0.0.0",
+        "main:app",
+        host=host,
         port=port,
-        log_level="info"
+        log_level="info",
+        reload=False  # Production'da False yapın
     )
