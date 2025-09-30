@@ -518,68 +518,100 @@
 
     <script>
     
-    // Tarih formatlama
-    function formatDate(date) {
-        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-        return date.toLocaleDateString('tr-TR', options);
-    }
+    // Global değişkenler
+let allMatches = [];
+let currentFilter = 'all';
+let currentDate = new Date();
 
-    // Tarih değiştirme
-    function changeDate(days) {
-        currentDate.setDate(currentDate.getDate() + days);
-        document.getElementById('current-date').textContent = formatDate(currentDate);
-        loadMatches();
-    }
+// API configuration - LOCAL veya PRODUCTION
+const API_BASE_URL = 'http://localhost:8000'; // Backend çalışıyorsa
+// const API_BASE_URL = 'https://sizin-app.herokuapp.com'; // Deploy sonrası
 
-    // API'den maçları yükle
-    async function loadMatches() {
-        try {
-            showLoading();
-            
-            const response = await fetch(`${API_BASE_URL}/api/nesine/matches?league=all&limit=50`);
-            
-            if (!response.ok) {
-                throw new Error(`API hatası: ${response.status}`);
-            }
-            
-            const data = await response.json();
-            
-            if (data.success && data.matches) {
-                allMatches = data.matches;
-                updateStats();
-                displayMatches(allMatches);
-                console.log(`✅ ${allMatches.length} maç yüklendi`);
-            } else {
-                showError(data.message || 'Maç verisi alınamadı');
-            }
-            
-        } catch (error) {
-            console.error('Maç yükleme hatası:', error);
-            showError(`Backend API'ye bağlanılamadı: ${error.message}`);
+// Tarih formatlama
+function formatDate(date) {
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    return date.toLocaleDateString('tr-TR', options);
+}
+
+// Tarih değiştirme
+function changeDate(days) {
+    currentDate.setDate(currentDate.getDate() + days);
+    document.getElementById('current-date').textContent = formatDate(currentDate);
+    loadMatches();
+}
+
+// API'den maçları yükle
+async function loadMatches() {
+    try {
+        showLoading();
+        
+        const response = await fetch(`${API_BASE_URL}/api/nesine/matches?league=all&limit=50`);
+        
+        if (!response.ok) {
+            throw new Error(`API hatası: ${response.status}`);
         }
-    }
-
-    // İstatistikleri güncelle
-    function updateStats() {
-        document.getElementById('total-matches').textContent = allMatches.length;
         
-        const reliableCount = allMatches.filter(m => {
-            const confidence = m.ai_prediction?.confidence || 0;
-            return confidence >= 70;
-        }).length;
+        const data = await response.json();
         
-        document.getElementById('reliable-predictions').textContent = reliableCount;
+        if (data.success && data.matches) {
+            allMatches = data.matches;
+            updateStats();
+            displayMatches(allMatches);
+            
+            // Başarı mesajı
+            showMessage(`✅ ${allMatches.length} maç yüklendi (${data.source})`, 'success');
+        } else {
+            showError(data.message || 'Maç verisi alınamadı');
+        }
+        
+    } catch (error) {
+        console.error('Maç yükleme hatası:', error);
+        showError(`Backend bağlantı hatası: ${error.message}`);
     }
+}
 
-    function showLoading() {
-        document.getElementById('content-area').innerHTML = `
-            <div class="loading">
-                <div>Maçlar yükleniyor...</div>
-                <div style="margin-top: 20px;">⚽ Canlı veriler çekiliyor...</div>
+// İstatistikleri güncelle
+function updateStats() {
+    document.getElementById('total-matches').textContent = allMatches.length;
+    
+    const reliableCount = allMatches.filter(m => {
+        const confidence = m.ai_prediction?.confidence || 0;
+        return confidence >= 70;
+    }).length;
+    
+    document.getElementById('reliable-predictions').textContent = reliableCount;
+}
+
+function showLoading() {
+    document.getElementById('content-area').innerHTML = `
+        <div class="loading">
+            <div>🤖 AI tahminleri yükleniyor...</div>
+            <div style="margin-top: 20px;">⚽ Canlı veriler çekiliyor...</div>
+        </div>
+    `;
+}
+
+function showError(message) {
+    document.getElementById('content-area').innerHTML = `
+        <div class="loading">
+            <div style="color: #ff6b6b;">${message}</div>
+            <button onclick="loadMatches()" class="refresh-btn" style="margin-top: 20px;">
+                🔄 Tekrar Dene
+            </button>
+            <div style="margin-top: 10px; font-size: 0.9rem; color: #b3c7f7;">
+                Backend: ${API_BASE_URL}
             </div>
-        `;
-    }
+        </div>
+    `;
+}
 
+function showMessage(message, type = 'info') {
+    // Basit mesaj gösterme
+    console.log(`${type}: ${message}`);
+}
+
+// Maçları görüntüleme fonksiyonu aynı kalacak...
+// (displayMatches, filterMatches, filterByLeague, changePage fonksiyonları mevcut)
     function showError(message) {
         document.getElementById('content-area').innerHTML = `
             <div class="loading">
