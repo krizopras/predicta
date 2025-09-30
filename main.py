@@ -70,6 +70,31 @@ class SimpleAIEngine:
 # AI Engine instance
 ai_engine = SimpleAIEngine()
 
+from nesine_fetcher_complete import NesineCompleteFetcher
+
+class PredictionEngine:
+    def __init__(self):
+        try:
+            self.nesine_fetcher = NesineCompleteFetcher()
+            print("✅ NesineCompleteFetcher başarıyla yüklendi")
+        except Exception as e:
+            print(f"❌ NesineCompleteFetcher yüklenemedi: {e}")
+            self.nesine_fetcher = None
+    
+    async def get_predictions(self):
+        if self.nesine_fetcher:
+            try:
+                result = await self.nesine_fetcher.fetch_data()
+                if result.get("success"):
+                    return result
+                else:
+                    print("⚠️ Nesine fetcher fallback modunda")
+            except Exception as e:
+                print(f"❌ Nesine fetcher hatası: {e}")
+        
+        # Fallback
+        return self._get_fallback_data()
+        
 # Health check
 @app.get("/")
 async def root():
