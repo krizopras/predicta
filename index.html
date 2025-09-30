@@ -523,10 +523,11 @@ let allMatches = [];
 let currentFilter = 'all';
 let currentDate = new Date();
 
-// API configuration - LOCAL veya PRODUCTION
-const API_BASE_URL = 'http://localhost:8000'; // Backend çalışıyorsa
-// const API_BASE_URL = 'https://sizin-app.herokuapp.com'; // Deploy sonrası
-
+// API configuration - Otomatik environment tespiti
+const API_BASE_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+    ? 'http://localhost:8000'
+    : window.location.origin;
+        
 // Tarih formatlama
 function formatDate(date) {
     const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
