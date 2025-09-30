@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import json
 import re
 
-class NesineScraper:
+class NesineCompleteFetcher:
     def __init__(self):
         self.session = requests.Session()
         self.headers = {
@@ -140,7 +140,7 @@ class NesineScraper:
 
 # Kullanım örneği
 def main():
-    scraper = NesineScraper()
+    scraper = NesineCompleteFetcher()
     
     # Sayfayı çek
     html_content = scraper.get_page_content()
