@@ -393,6 +393,26 @@
             transform: translateY(-2px);
         }
 
+        .success-message {
+            background: linear-gradient(135deg, #4caf50, #388e3c);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 6px;
+            margin: 10px 0;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .error-message {
+            background: linear-gradient(135deg, #f44336, #d32f2f);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 6px;
+            margin: 10px 0;
+            text-align: center;
+            font-weight: 600;
+        }
+
         @media (max-width: 1024px) {
             .content-wrapper {
                 flex-direction: column;
@@ -508,7 +528,7 @@
 
                 <div id="content-area">
                     <div class="loading">
-                        <div>Maçlar yükleniyor...</div>
+                        <div>🤖 AI tahminleri yükleniyor...</div>
                         <div style="margin-top: 20px;">⚽ Canlı veriler çekiliyor...</div>
                     </div>
                 </div>
@@ -517,254 +537,269 @@
     </div>
 
     <script>
-    
-   // Global değişkenler
-let allMatches = [];
-let currentFilter = 'all';
-let currentDate = new Date();
+        // Global değişkenler
+        let allMatches = [];
+        let currentFilter = 'all';
+        let currentDate = new Date();
 
-// API configuration - Railway için optimize
-function getApiBaseUrl() {
-    const hostname = window.location.hostname;
-    
-    // Local development
-    if (hostname === 'localhost' || hostname === '127.0.0.1') {
-        return 'http://localhost:8000';
-    }
-    
-    // GitHub Pages (mevcut durumunuz)
-    if (hostname.includes('github.io')) {
-        return 'https://mellow-contentment-production.up.railway.app'; // YENİ RAILWAY URL'NİZ
-    }
-    
-    // Railway veya diğer production environment'lar
-    return window.location.origin;
-}
+        // API Configuration - Railway Backend
+        const API_BASE_URL = 'https://predicta-production.up.railway.app';
 
-const API_BASE_URL = getApiBaseUrl();
-console.log('🚀 API Base URL:', API_BASE_URL);
-
-      
-// Tarih formatlama
-function formatDate(date) {
-    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-    return date.toLocaleDateString('tr-TR', options);
-}
-
-// Tarih değiştirme
-function changeDate(days) {
-    currentDate.setDate(currentDate.getDate() + days);
-    document.getElementById('current-date').textContent = formatDate(currentDate);
-    loadMatches();
-}
-
-// API'den maçları yükle
-async function loadMatches() {
-    try {
-        showLoading();
-        
-        const response = await fetch(`${API_BASE_URL}/api/nesine/matches?league=all&limit=50`);
-        
-        if (!response.ok) {
-            throw new Error(`API hatası: ${response.status}`);
-        }
-        
-        const data = await response.json();
-        
-        if (data.success && data.matches) {
-            allMatches = data.matches;
-            updateStats();
-            displayMatches(allMatches);
-            
-            // Başarı mesajı
-            showMessage(`✅ ${allMatches.length} maç yüklendi (${data.source})`, 'success');
-        } else {
-            showError(data.message || 'Maç verisi alınamadı');
-        }
-        
-    } catch (error) {
-        console.error('Maç yükleme hatası:', error);
-        showError(`Backend bağlantı hatası: ${error.message}`);
-    }
-}
-
-// İstatistikleri güncelle
-function updateStats() {
-    document.getElementById('total-matches').textContent = allMatches.length;
-    
-    const reliableCount = allMatches.filter(m => {
-        const confidence = m.ai_prediction?.confidence || 0;
-        return confidence >= 70;
-    }).length;
-    
-    document.getElementById('reliable-predictions').textContent = reliableCount;
-}
-
-function showLoading() {
-    document.getElementById('content-area').innerHTML = `
-        <div class="loading">
-            <div>🤖 AI tahminleri yükleniyor...</div>
-            <div style="margin-top: 20px;">⚽ Canlı veriler çekiliyor...</div>
-        </div>
-    `;
-}
-
-function showError(message) {
-    document.getElementById('content-area').innerHTML = `
-        <div class="loading">
-            <div style="color: #ff6b6b;">${message}</div>
-            <button onclick="loadMatches()" class="refresh-btn" style="margin-top: 20px;">
-                🔄 Tekrar Dene
-            </button>
-            <div style="margin-top: 10px; font-size: 0.9rem; color: #b3c7f7;">
-                Backend: ${API_BASE_URL}
-            </div>
-        </div>
-    `;
-}
-
-function showMessage(message, type = 'info') {
-    // Basit mesaj gösterme
-    console.log(`${type}: ${message}`);
-}
-
-// Maçları görüntüleme fonksiyonu aynı kalacak...
-// (displayMatches, filterMatches, filterByLeague, changePage fonksiyonları mevcut)
-    function showError(message) {
-        document.getElementById('content-area').innerHTML = `
-            <div class="loading">
-                <div style="color: #ff6b6b;">${message}</div>
-                <button onclick="loadMatches()" style="margin-top: 20px; padding: 10px 20px; cursor: pointer; background: #ffd700; border: none; border-radius: 6px; font-weight: 600;">
-                    Tekrar Dene
-                </button>
-            </div>
-        `;
-    }
-
-    function displayMatches(matches) {
-        const contentArea = document.getElementById('content-area');
-        
-        if (!matches || matches.length === 0) {
-            contentArea.innerHTML = '<div class="loading">Bugün için maç bulunamadı</div>';
-            return;
+        // Tarih formatlama
+        function formatDate(date) {
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            return date.toLocaleDateString('tr-TR', options);
         }
 
-        let html = '<div class="match-list">';
-        
-        matches.forEach(match => {
-            const prediction = match.ai_prediction || {};
-            const confidence = prediction.confidence || 60;
-            const result = prediction.prediction || 'X';
-            
-            html += `
-                <div class="match-card">
-                    <div class="match-header">
-                        <div>
-                            <div class="match-teams">
-                                ${match.home_team} vs ${match.away_team}
-                            </div>
-                            <div class="match-league">${match.league || 'Bilinmeyen Lig'}</div>
-                        </div>
-                        <div class="prediction-badge">
-                            Tahmin: ${result} (${confidence.toFixed(1)}%)
-                        </div>
-                    </div>
+        // Tarih değiştirme
+        function changeDate(days) {
+            currentDate.setDate(currentDate.getDate() + days);
+            document.getElementById('current-date').textContent = formatDate(currentDate);
+            loadMatches();
+        }
+
+        // API'den maçları yükle
+        async function loadMatches() {
+            try {
+                showLoading();
+                
+                console.log('🚀 API isteği gönderiliyor:', `${API_BASE_URL}/api/nesine/matches`);
+                
+                const response = await fetch(`${API_BASE_URL}/api/nesine/matches?league=all&limit=50`);
+                
+                if (!response.ok) {
+                    throw new Error(`API hatası: ${response.status}`);
+                }
+                
+                const data = await response.json();
+                console.log('✅ API yanıtı:', data);
+                
+                if (data.success && data.matches) {
+                    allMatches = data.matches;
+                    updateStats();
+                    displayMatches(allMatches);
                     
-                    <div class="odds-container">
-                        <div class="odds-btn">
-                            <div class="odds-label">1 (Ev)</div>
-                            <div class="odds-value">${(match.odds?.['1'] || 2.0).toFixed(2)}</div>
-                        </div>
-                        <div class="odds-btn">
-                            <div class="odds-label">X (Berabere)</div>
-                            <div class="odds-value">${(match.odds?.X || 3.0).toFixed(2)}</div>
-                        </div>
-                        <div class="odds-btn">
-                            <div class="odds-label">2 (Deplasman)</div>
-                            <div class="odds-value">${(match.odds?.['2'] || 3.5).toFixed(2)}</div>
-                        </div>
-                    </div>
+                    showMessage(`✅ ${allMatches.length} maç başarıyla yüklendi!`, 'success');
+                } else {
+                    throw new Error(data.message || 'Maç verisi alınamadı');
+                }
+                
+            } catch (error) {
+                console.error('❌ Maç yükleme hatası:', error);
+                showError(`Backend bağlantı hatası: ${error.message}`);
+            }
+        }
 
-                    <div class="match-info">
-                        <div class="info-box">
-                            <div class="info-label">Ev Kazanma</div>
-                            <div class="info-value">${(prediction.home_win_prob || 40).toFixed(1)}%</div>
-                        </div>
-                        <div class="info-box">
-                            <div class="info-label">Beraberlik</div>
-                            <div class="info-value">${(prediction.draw_prob || 30).toFixed(1)}%</div>
-                        </div>
-                        <div class="info-box">
-                            <div class="info-label">Deplasman Kazanma</div>
-                            <div class="info-value">${(prediction.away_win_prob || 30).toFixed(1)}%</div>
-                        </div>
-                        <div class="info-box">
-                            <div class="info-label">Güven Skoru</div>
-                            <div class="info-value">${confidence.toFixed(1)}%</div>
-                        </div>
-                    </div>
+        // İstatistikleri güncelle
+        function updateStats() {
+            document.getElementById('total-matches').textContent = allMatches.length;
+            
+            const reliableCount = allMatches.filter(m => {
+                const confidence = m.ai_prediction?.confidence || 0;
+                return confidence >= 70;
+            }).length;
+            
+            document.getElementById('reliable-predictions').textContent = reliableCount;
+        }
 
-                    <div class="confidence-bar">
-                        <div class="confidence-fill" style="width: ${confidence}%"></div>
+        function showLoading() {
+            document.getElementById('content-area').innerHTML = `
+                <div class="loading">
+                    <div>🤖 AI tahminleri yükleniyor...</div>
+                    <div style="margin-top: 20px;">⚽ Canlı veriler çekiliyor...</div>
+                    <div style="margin-top: 10px; font-size: 0.9rem; color: #b3c7f7;">
+                        Backend: ${API_BASE_URL}
                     </div>
                 </div>
             `;
-        });
-
-        html += '</div>';
-        contentArea.innerHTML = html;
-    }
-
-    function filterMatches(type) {
-        currentFilter = type;
-        
-        document.querySelectorAll('.filter-btn').forEach(btn => {
-            btn.classList.remove('active');
-        });
-        event.target.classList.add('active');
-
-        let filtered = allMatches;
-
-        switch(type) {
-            case 'btts':
-                filtered = allMatches.filter(m => {
-                    const pred = m.ai_prediction || {};
-                    return (pred.btts_prob || 0) > 60;
-                });
-                break;
-            case 'goals':
-                filtered = allMatches.filter(m => {
-                    const pred = m.ai_prediction || {};
-                    return (pred.over_2_5_prob || 0) > 60;
-                });
-                break;
-            case '1x2':
-                filtered = allMatches.filter(m => (m.ai_prediction?.confidence || 0) >= 70);
-                break;
-            default:
-                filtered = allMatches;
         }
 
-        displayMatches(filtered);
-    }
+        function showError(message) {
+            document.getElementById('content-area').innerHTML = `
+                <div class="error-message">
+                    ${message}
+                </div>
+                <div style="text-align: center; margin-top: 20px;">
+                    <button class="refresh-btn" onclick="loadMatches()">
+                        🔄 Tekrar Dene
+                    </button>
+                </div>
+                <div style="text-align: center; margin-top: 10px; color: #b3c7f7;">
+                    API: ${API_BASE_URL}
+                </div>
+            `;
+        }
 
-    function filterByLeague(leagueName) {
-        const filtered = allMatches.filter(m => m.league.includes(leagueName));
-        displayMatches(filtered);
-    }
+        function showMessage(message, type) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = type === 'success' ? 'success-message' : 'error-message';
+            messageDiv.textContent = message;
+            messageDiv.style.margin = '10px 20px';
+            
+            const contentArea = document.getElementById('content-area');
+            contentArea.insertBefore(messageDiv, contentArea.firstChild);
+            
+            setTimeout(() => {
+                messageDiv.remove();
+            }, 5000);
+        }
 
-    function changePage(page) {
-        console.log('Sayfa değiştirildi:', page);
-    }
+        function displayMatches(matches) {
+            const contentArea = document.getElementById('content-area');
+            
+            if (!matches || matches.length === 0) {
+                contentArea.innerHTML = `
+                    <div class="loading">
+                        <div>Bugün için maç bulunamadı</div>
+                        <button class="refresh-btn" onclick="loadMatches()" style="margin-top: 20px;">
+                            🔄 Tekrar Dene
+                        </button>
+                    </div>
+                `;
+                return;
+            }
 
-    // Sayfa yüklendiğinde
-    window.addEventListener('load', () => {
-        document.getElementById('current-date').textContent = formatDate(currentDate);
-        loadMatches();
-        
-        // Her 2 dakikada bir yenile
-        setInterval(loadMatches, 120000);
-    });
-</script>
+            let html = '<div class="match-list">';
+            
+            matches.forEach(match => {
+                const prediction = match.ai_prediction || {};
+                const confidence = prediction.confidence || 60;
+                const result = prediction.prediction || 'X';
+                const scorePrediction = prediction.score_prediction || '2-1';
+                
+                html += `
+                    <div class="match-card">
+                        <div class="match-header">
+                            <div>
+                                <div class="match-teams">
+                                    ${match.home_team} vs ${match.away_team}
+                                </div>
+                                <div class="match-league">${match.league || 'Bilinmeyen Lig'} • ${match.time || '20:00'}</div>
+                            </div>
+                            <div class="prediction-badge">
+                                Tahmin: ${result} (${confidence.toFixed(1)}%)
+                            </div>
+                        </div>
+                        
+                        <div class="odds-container">
+                            <div class="odds-btn">
+                                <div class="odds-label">1 (Ev)</div>
+                                <div class="odds-value">${(match.odds?.['1'] || 2.0).toFixed(2)}</div>
+                            </div>
+                            <div class="odds-btn">
+                                <div class="odds-label">X (Berabere)</div>
+                                <div class="odds-value">${(match.odds?.X || 3.0).toFixed(2)}</div>
+                            </div>
+                            <div class="odds-btn">
+                                <div class="odds-label">2 (Deplasman)</div>
+                                <div class="odds-value">${(match.odds?.['2'] || 3.5).toFixed(2)}</div>
+                            </div>
+                        </div>
+
+                        <div class="match-info">
+                            <div class="info-box">
+                                <div class="info-label">Ev Kazanma</div>
+                                <div class="info-value">${(prediction.home_win_prob || 40).toFixed(1)}%</div>
+                            </div>
+                            <div class="info-box">
+                                <div class="info-label">Beraberlik</div>
+                                <div class="info-value">${(prediction.draw_prob || 30).toFixed(1)}%</div>
+                            </div>
+                            <div class="info-box">
+                                <div class="info-label">Deplasman Kazanma</div>
+                                <div class="info-value">${(prediction.away_win_prob || 30).toFixed(1)}%</div>
+                            </div>
+                            <div class="info-box">
+                                <div class="info-label">Skor Tahmini</div>
+                                <div class="info-value">${scorePrediction}</div>
+                            </div>
+                        </div>
+
+                        <div style="margin-top: 10px;">
+                            <div style="font-size: 0.9rem; color: #b3c7f7;">Güven Skoru:</div>
+                            <div class="confidence-bar">
+                                <div class="confidence-fill" style="width: ${confidence}%"></div>
+                            </div>
+                            <div style="text-align: right; font-size: 0.8rem; color: #ffd700; margin-top: 5px;">
+                                ${confidence.toFixed(1)}%
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+
+            html += '</div>';
+            contentArea.innerHTML = html;
+        }
+
+        function filterMatches(type) {
+            currentFilter = type;
+            
+            // Aktif butonu güncelle
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+            let filtered = allMatches;
+
+            switch(type) {
+                case 'btts':
+                    filtered = allMatches.filter(m => {
+                        const pred = m.ai_prediction || {};
+                        return (pred.home_win_prob > 60 || pred.away_win_prob > 60);
+                    });
+                    break;
+                case 'goals':
+                    filtered = allMatches.filter(m => {
+                        const score = m.ai_prediction?.score_prediction || '1-1';
+                        const [home, away] = score.split('-').map(Number);
+                        return (home + away) >= 3;
+                    });
+                    break;
+                case '1x2':
+                    filtered = allMatches.filter(m => (m.ai_prediction?.confidence || 0) >= 70);
+                    break;
+                default:
+                    filtered = allMatches;
+            }
+
+            displayMatches(filtered);
+        }
+
+        function filterByLeague(leagueName) {
+            const filtered = allMatches.filter(m => 
+                m.league && m.league.toLowerCase().includes(leagueName.toLowerCase())
+            );
+            
+            if (filtered.length === 0) {
+                showMessage(`"${leagueName}" liginde maç bulunamadı`, 'error');
+            } else {
+                showMessage(`"${leagueName}" liginden ${filtered.length} maç gösteriliyor`, 'success');
+            }
+            
+            displayMatches(filtered);
+        }
+
+        function changePage(page) {
+            console.log('Sayfa değiştirildi:', page);
+            // Sayfa değiştirme fonksiyonları buraya eklenebilir
+        }
+
+        // Sayfa yüklendiğinde
+        window.addEventListener('load', () => {
+            document.getElementById('current-date').textContent = formatDate(currentDate);
+            loadMatches();
+            
+            // Her 2 dakikada bir otomatik yenile
+            setInterval(loadMatches, 120000);
+        });
+
+        // Online/offline durumunu dinle
+        window.addEventListener('online', loadMatches);
+        window.addEventListener('offline', () => {
+            showError('İnternet bağlantısı kesildi. Lütfen bağlantınızı kontrol edin.');
+        });
+    </script>
 </body>
 </html>
