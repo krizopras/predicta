@@ -7,9 +7,8 @@ import os
 import logging
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import JSONResponse
+from fastapi.responses import JSONResponse, HTMLResponse
 from datetime import datetime
-from nesine_fetcher_complete import NesineCompleteFetcher
 import uvicorn
 import random
 import sqlite3
@@ -70,31 +69,74 @@ class SimpleAIEngine:
 # AI Engine instance
 ai_engine = SimpleAIEngine()
 
-from nesine_fetcher_complete import NesineCompleteFetcher
-
+# Prediction Engine - DÜZELTİLMİŞ VERSİYON
 class PredictionEngine:
     def __init__(self):
+        self.nesine_fetcher = None
+        self._initialize_nesine_fetcher()
+    
+    def _initialize_nesine_fetcher(self):
+        """Nesine fetcher'ı initialize et"""
         try:
+            from nesine_fetcher_complete import NesineCompleteFetcher
             self.nesine_fetcher = NesineCompleteFetcher()
-            print("✅ NesineCompleteFetcher başarıyla yüklendi")
+            logger.info("✅ NesineCompleteFetcher başarıyla yüklendi")
+        except ImportError as e:
+            logger.warning(f"⚠️ NesineCompleteFetcher import edilemedi: {e}")
+            self.nesine_fetcher = None
         except Exception as e:
-            print(f"❌ NesineCompleteFetcher yüklenemedi: {e}")
+            logger.error(f"❌ NesineCompleteFetcher yüklenemedi: {e}")
             self.nesine_fetcher = None
     
     async def get_predictions(self):
+        """Nesine verilerini getir"""
         if self.nesine_fetcher:
             try:
-                result = await self.nesine_fetcher.fetch_data()
-                if result.get("success"):
-                    return result
+                # Eğer async fetch_data metodunuz varsa
+                if hasattr(self.nesine_fetcher, 'fetch_data'):
+                    result = await self.nesine_fetcher.fetch_data()
                 else:
-                    print("⚠️ Nesine fetcher fallback modunda")
+                    # Sync metodları kullan
+                    html_content = self.nesine_fetcher.get_page_content()
+                    if html_content:
+                        result = self.nesine_fetcher.extract_leagues_and_matches(html_content)
+                    else:
+                        result = None
+                
+                if result:
+                    return {
+                        "success": True,
+                        "data": result,
+                        "source": "nesine",
+                        "fallback": False
+                    }
+                else:
+                    logger.warning("⚠️ Nesine fetcher veri dönmedi, fallback moda geçiliyor")
+                    
             except Exception as e:
-                print(f"❌ Nesine fetcher hatası: {e}")
+                logger.error(f"❌ Nesine fetcher hatası: {e}")
         
-        # Fallback
+        # Fallback - örnek veriler
         return self._get_fallback_data()
-        
+    
+    def _get_fallback_data(self):
+        """Fallback verileri"""
+        logger.info("🔄 Fallback modunda çalışıyor")
+        return {
+            "success": True,
+            "data": {
+                "leagues": ["Süper Lig", "Premier League", "La Liga"],
+                "matches": [],
+                "predictions": []
+            },
+            "source": "fallback",
+            "fallback": True,
+            "message": "Fallback modunda çalışıyor"
+        }
+
+# Prediction Engine instance
+prediction_engine = PredictionEngine()
+
 # Health check
 @app.get("/")
 async def root():
@@ -103,7 +145,8 @@ async def root():
         "status": "healthy",
         "version": "2.0",
         "timestamp": datetime.now().isoformat(),
-        "environment": os.getenv("RAILWAY_ENVIRONMENT", "development")
+        "environment": os.getenv("RAILWAY_ENVIRONMENT", "development"),
+        "nesine_available": prediction_engine.nesine_fetcher is not None
     }
 
 @app.get("/health")
@@ -112,10 +155,22 @@ async def health():
         "status": "healthy",
         "timestamp": datetime.now().isoformat(),
         "ai_status": "active",
-        "accuracy": ai_engine.accuracy
+        "accuracy": ai_engine.accuracy,
+        "nesine_status": "available" if prediction_engine.nesine_fetcher else "fallback"
     }
 
-# Ana endpoint
+# Gerçek Nesine verilerini getiren endpoint
+@app.get("/api/nesine/real")
+async def get_real_nesine_data():
+    """Gerçek Nesine verilerini getir"""
+    try:
+        data = await prediction_engine.get_predictions()
+        return data
+    except Exception as e:
+        logger.error(f"Error in get_real_nesine_data: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+# Ana endpoint (mevcut örnek verilerle)
 @app.get("/api/nesine/matches")
 async def get_matches(league: str = "all", limit: int = 20):
     try:
@@ -190,6 +245,7 @@ async def get_matches(league: str = "all", limit: int = 20):
             "count": len(matches_with_predictions),
             "source": "ai_generated",
             "ai_powered": True,
+            "nesine_available": prediction_engine.nesine_fetcher is not None,
             "message": f"🤖 {len(matches_with_predictions)} maç AI tahmini ile oluşturuldu"
         }
         
@@ -206,6 +262,7 @@ async def get_ai_performance():
             "status": "active",
             "accuracy": ai_engine.accuracy,
             "model": "SimpleAIEngine",
+            "nesine_integration": prediction_engine.nesine_fetcher is not None,
             "timestamp": datetime.now().isoformat()
         }
     }
@@ -239,15 +296,24 @@ async def serve_ui():
             body { font-family: Arial, sans-serif; margin: 40px; }
             .match { border: 1px solid #ddd; padding: 15px; margin: 10px 0; border-radius: 8px; }
             .ai-badge { background: #4CAF50; color: white; padding: 5px 10px; border-radius: 4px; }
+            .status { padding: 5px 10px; border-radius: 4px; margin: 5px; }
+            .available { background: #4CAF50; color: white; }
+            .fallback { background: #ff9800; color: white; }
         </style>
     </head>
     <body>
         <h1>🚀 Predicta AI - Railway</h1>
         <p>Backend başarıyla çalışıyor! API endpoint'lerini kullanabilirsiniz.</p>
+        
+        <div class="status {{ 'available' if nesine_available else 'fallback' }}">
+            Nesine Status: {{ 'Available' if nesine_available else 'Fallback Mode' }}
+        </div>
+        
         <div>
             <h3>Test Endpoints:</h3>
             <ul>
-                <li><a href="/api/nesine/matches">/api/nesine/matches</a> - Maç tahminleri</li>
+                <li><a href="/api/nesine/matches">/api/nesine/matches</a> - Örnek maç tahminleri</li>
+                <li><a href="/api/nesine/real">/api/nesine/real</a> - Gerçek Nesine verileri</li>
                 <li><a href="/api/ai/performance">/api/ai/performance</a> - AI performans</li>
                 <li><a href="/docs">/docs</a> - API Dökümantasyon</li>
             </ul>
