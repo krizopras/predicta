@@ -21,6 +21,7 @@ from fastapi.templating import Jinja2Templates
 from pydantic import BaseModel
 from datetime import datetime, timedelta
 from typing import Dict, List, Optional, Any
+from fastapi.middleware.cors import CORSMiddleware
 
 # Logging configuration - EN ÜSTE TAŞINDI
 logging.basicConfig(
@@ -91,7 +92,17 @@ app = FastAPI(
     description="Gelişmiş Yapay Zeka Destekli Futbol Tahmin Sistemi",
     version="3.0"
 )
-
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "https://krizopras.github.io",
+        "http://localhost:8000",
+        "*"  # Geliştirme için
+    ],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 # Database and AI initialization
 db_manager = None
 ai_predictor = None
