@@ -1,0 +1,11 @@
+[build]
+builder = "DOCKERFILE"
+dockerfilePath = "Dockerfile"
+
+[deploy]
+numReplicas = 1
+healthCheckPath = "/health"
+healthCheckTimeout = 300
+
+[env]
+PORT = "8000"
