@@ -41,6 +41,7 @@ try:
     logger.info("✅ Tüm modüller başarıyla import edildi")
 except ImportError as e:
     logger.error(f"❌ Modül import hatası: {e}")
+    
     # Fallback sınıfları
     class EnhancedSuperLearningAI:
         def __init__(self, db_manager=None):
