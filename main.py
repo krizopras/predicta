@@ -9,6 +9,7 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from datetime import datetime
+from nesine_fetcher_complete import NesineCompleteFetcher
 import uvicorn
 import random
 import sqlite3
