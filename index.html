@@ -518,15 +518,34 @@
 
     <script>
     
-    // Global değişkenler
+   // Global değişkenler
 let allMatches = [];
 let currentFilter = 'all';
 let currentDate = new Date();
 
-// API configuration - Otomatik environment tespiti
-const API_BASE_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
-    ? 'http://localhost:8000'
-    : window.location.origin;
+// API configuration - Railway için optimize
+function getApiBaseUrl() {
+    const hostname = window.location.hostname;
+    
+    // Local development
+    if (hostname === 'localhost' || hostname === '127.0.0.1') {
+        return 'http://localhost:8000';
+    }
+    
+    // GitHub Pages (mevcut durumunuz)
+    if (hostname.includes('github.io')) {
+        return 'https://predicta-ai.up.railway.app'; // RAILWAY URL'NİZİ BURAYA YAZIN
+    }
+    
+    // Railway veya diğer production environment'lar
+    return window.location.origin;
+}
+
+const API_BASE_URL = getApiBaseUrl();
+console.log('🚀 API Base URL:', API_BASE_URL);
+
+// Geri kalan kodlar aynı kalacak...
+// (formatDate, changeDate, loadMatches, updateStats, vb.)
         
 // Tarih formatlama
 function formatDate(date) {
