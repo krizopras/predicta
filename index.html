@@ -534,7 +534,7 @@ function getApiBaseUrl() {
     
     // GitHub Pages (mevcut durumunuz)
     if (hostname.includes('github.io')) {
-        return 'https://predicta-ai.up.railway.app'; // RAILWAY URL'NİZİ BURAYA YAZIN
+        return 'https://mellow-contentment-production.up.railway.app'; // YENİ RAILWAY URL'NİZ
     }
     
     // Railway veya diğer production environment'lar
@@ -544,9 +544,7 @@ function getApiBaseUrl() {
 const API_BASE_URL = getApiBaseUrl();
 console.log('🚀 API Base URL:', API_BASE_URL);
 
-// Geri kalan kodlar aynı kalacak...
-// (formatDate, changeDate, loadMatches, updateStats, vb.)
-        
+      
 // Tarih formatlama
 function formatDate(date) {
     const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
