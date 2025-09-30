@@ -633,7 +633,13 @@ async def get_nesine_matches(
             "message": f"Hata: {str(e)}",
             "count": 0
         }
-
+@app.get("/api")
+async def api_root():
+    return {
+        "message": "Predicta API is running",
+        "status": "healthy",
+        "timestamp": datetime.now().isoformat()
+    }
 @app.get("/api/matches/predictions")
 async def get_matches_with_predictions(
     limit: int = Query(20),
