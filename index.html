@@ -203,7 +203,7 @@
         .filter-buttons {
             display: flex;
             gap: 10px;
-            margin: 20px;
+            margin: 20px 0;
             flex-wrap: wrap;
             justify-content: center;
         }
@@ -306,7 +306,15 @@
             background: linear-gradient(135deg, rgba(63, 81, 181, 0.6), rgba(48, 63, 159, 0.8));
             border: 2px solid rgba(255, 255, 255, 0.1);
             border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
             text-align: center;
+        }
+
+        .odds-btn:hover {
+            background: linear-gradient(135deg, #ffd700, #ffb300);
+            color: #1a237e;
+            transform: translateY(-3px);
         }
 
         .odds-label {
@@ -327,6 +335,7 @@
             border-radius: 20px;
             font-size: 0.85rem;
             font-weight: 600;
+            margin-top: 10px;
         }
 
         .confidence-bar {
@@ -347,8 +356,24 @@
             font-size: 1.5rem;
             font-weight: 700;
             color: #ffd700;
-            margin: 20px;
+            margin: 20px 0;
             text-align: center;
+        }
+
+        .live-indicator {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background: #ff4444;
+            border-radius: 50%;
+            margin-right: 8px;
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.4; }
+            100% { opacity: 1; }
         }
 
         .refresh-btn {
@@ -360,21 +385,12 @@
             cursor: pointer;
             font-weight: 600;
             transition: all 0.3s ease;
-            margin: 20px;
+            margin: 10px 0;
         }
 
         .refresh-btn:hover {
             background: #ffeb3b;
             transform: translateY(-2px);
-        }
-
-        .error-box {
-            background: rgba(244, 67, 54, 0.2);
-            border: 2px solid #f44336;
-            border-radius: 12px;
-            padding: 30px;
-            margin: 20px;
-            text-align: center;
         }
 
         @media (max-width: 1024px) {
@@ -407,53 +423,68 @@
         <h1>PREDICTA AI</h1>
         <div class="tagline">Yapay Zeka Destekli Profesyonel Futbol Tahmin Platformu</div>
         <nav class="top-nav">
-            <div class="nav-item active" onclick="changePage('today')">Guncel Tahminler</div>
-            <div class="nav-item" onclick="changePage('leagues')">Liglere Gore</div>
+            <div class="nav-item active" onclick="changePage('today')">Güncel Tahminler</div>
+            <div class="nav-item" onclick="changePage('days')">Günlere Göre</div>
+            <div class="nav-item" onclick="changePage('leagues')">Liglere Göre</div>
             <div class="nav-item" onclick="changePage('top10')">Top 10</div>
+            <div class="nav-item" onclick="changePage('stats')">İstatistikler</div>
+            <div class="nav-item" onclick="changePage('live')">Canlı Maçlar</div>
+            <div class="nav-item" onclick="changePage('vip')">VIP Tahminler</div>
         </nav>
     </header>
 
     <div class="container">
         <div class="date-navigation">
-            <button class="date-btn" onclick="changeDate(-1)">◀ Dun</button>
-            <div class="current-date" id="current-date">Yukleniyor...</div>
+            <button class="date-btn" onclick="changeDate(-1)">◀ Dün</button>
+            <div class="current-date" id="current-date">Pazartesi, 29 Eylül 2025</div>
             <button class="date-btn" onclick="changeDate(1)">Yarın ▶</button>
         </div>
 
         <div class="stats-container">
             <div class="stat-box">
                 <div class="stat-value" id="total-matches">0</div>
-                <div class="stat-label">Toplam Mac</div>
+                <div class="stat-label">Toplam Maç</div>
             </div>
             <div class="stat-box">
                 <div class="stat-value" id="reliable-predictions">0</div>
-                <div class="stat-label">Guvenilir Tahmin</div>
+                <div class="stat-label">Güvenilir Tahmin</div>
             </div>
             <div class="stat-box">
                 <div class="stat-value">85%</div>
-                <div class="stat-label">Basarı Oranı</div>
+                <div class="stat-label">Başarı Oranı</div>
             </div>
         </div>
 
         <div class="content-wrapper">
             <div class="sidebar">
                 <div class="sidebar-section">
-                    <div class="sidebar-title">AVRUPA LIGLERI</div>
+                    <div class="sidebar-title">AVRUPA LİGLERİ</div>
                     <ul class="league-list">
-                        <li class="league-item" onclick="filterByLeague('Premier League')"><span class="league-flag"></span> Premier League</li>
-                        <li class="league-item" onclick="filterByLeague('La Liga')"><span class="league-flag"></span> La Liga</li>
-                        <li class="league-item" onclick="filterByLeague('Bundesliga')"><span class="league-flag"></span> Bundesliga</li>
-                        <li class="league-item" onclick="filterByLeague('Serie A')"><span class="league-flag"></span> Serie A</li>
-                        <li class="league-item" onclick="filterByLeague('Ligue 1')"><span class="league-flag"></span> Ligue 1</li>
-                        <li class="league-item" onclick="filterByLeague('Super Lig')"><span class="league-flag"></span> Super Lig</li>
+                        <li class="league-item" onclick="filterByLeague('Premier League')"><span class="league-flag"></span> Premier League (İngiltere)</li>
+                        <li class="league-item" onclick="filterByLeague('La Liga')"><span class="league-flag"></span> La Liga (İspanya)</li>
+                        <li class="league-item" onclick="filterByLeague('Bundesliga')"><span class="league-flag"></span> Bundesliga (Almanya)</li>
+                        <li class="league-item" onclick="filterByLeague('Serie A')"><span class="league-flag"></span> Serie A (İtalya)</li>
+                        <li class="league-item" onclick="filterByLeague('Ligue 1')"><span class="league-flag"></span> Ligue 1 (Fransa)</li>
+                        <li class="league-item" onclick="filterByLeague('Süper Lig')"><span class="league-flag"></span> Süper Lig (Türkiye)</li>
                     </ul>
                 </div>
 
                 <div class="sidebar-section">
-                    <div class="sidebar-title">DIGER LIGLER</div>
+                    <div class="sidebar-title">DİĞER LİGLER</div>
                     <ul class="league-list">
-                        <li class="league-item" onclick="filterByLeague('Eredivisie')"><span class="league-flag"></span> Eredivisie</li>
-                        <li class="league-item" onclick="filterByLeague('Championship')"><span class="league-flag"></span> Championship</li>
+                        <li class="league-item" onclick="filterByLeague('Eredivisie')"><span class="league-flag"></span> Eredivisie (Hollanda)</li>
+                        <li class="league-item" onclick="filterByLeague('Primeira Liga')"><span class="league-flag"></span> Primeira Liga (Portekiz)</li>
+                        <li class="league-item" onclick="filterByLeague('Championship')"><span class="league-flag"></span> Championship (İngiltere)</li>
+                        <li class="league-item" onclick="filterByLeague('MLS')"><span class="league-flag"></span> MLS (ABD)</li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-section">
+                    <div class="sidebar-title">ULUSLARARASI TURNUVALAR</div>
+                    <ul class="league-list">
+                        <li class="league-item" onclick="filterByLeague('UEFA Champions League')"><span class="league-flag"></span> Champions League</li>
+                        <li class="league-item" onclick="filterByLeague('UEFA Europa League')"><span class="league-flag"></span> Europa League</li>
+                        <li class="league-item" onclick="filterByLeague('Copa Libertadores')"><span class="league-flag"></span> Copa Libertadores</li>
                     </ul>
                 </div>
             </div>
@@ -461,202 +492,235 @@
             <div class="main-content">
                 <div style="text-align: center;">
                     <button class="refresh-btn" onclick="loadMatches()">
-                        Verileri Yenile
+                        🔄 Verileri Yenile
                     </button>
                 </div>
 
-                <div class="filter-buttons">
-                    <button class="filter-btn active" onclick="filterMatches('all')">Tumu</button>
-                    <button class="filter-btn" onclick="filterMatches('btts')">BTTS</button>
+                <div class="filter-buttons" id="filter-buttons">
+                    <button class="filter-btn active" onclick="filterMatches('all')">Tümü</button>
+                    <button class="filter-btn" onclick="filterMatches('btts')">BTTS (Karşılıklı Gol)</button>
+                    <button class="filter-btn" onclick="filterMatches('htft')">HT/FT</button>
                     <button class="filter-btn" onclick="filterMatches('goals')">2.5+ Gol</button>
                     <button class="filter-btn" onclick="filterMatches('1x2')">1X2</button>
                 </div>
 
-                <div class="section-title">Gunun En Iyi Tahminleri</div>
+                <div class="section-title">Günün En İyi Tahminleri</div>
 
                 <div id="content-area">
-                    <div class="loading">Maclar yukleniyor...</div>
+                    <div class="loading">
+                        <div>Maçlar yükleniyor...</div>
+                        <div style="margin-top: 20px;">⚽ Canlı veriler çekiliyor...</div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
     <script>
-        // BACKEND API URL - RENDER DEPLOY SONRASI DEGISTIRIN!
-        const API_BASE_URL = 'YOUR_RENDER_URL_HERE';
+    // BACKEND API URL - RENDER DEPLOY SONRASI DEĞİŞTİRİN!
+    const API_BASE_URL = 'https://YOUR-RENDER-URL.onrender.com';
+    
+    let allMatches = [];
+    let currentFilter = 'all';
+    let currentDate = new Date();
+
+    // Tarih formatlama
+    function formatDate(date) {
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        return date.toLocaleDateString('tr-TR', options);
+    }
+
+    // Tarih değiştirme
+    function changeDate(days) {
+        currentDate.setDate(currentDate.getDate() + days);
+        document.getElementById('current-date').textContent = formatDate(currentDate);
+        loadMatches();
+    }
+
+    // API'den maçları yükle
+    async function loadMatches() {
+        try {
+            showLoading();
+            
+            const response = await fetch(`${API_BASE_URL}/api/nesine/matches?league=all&limit=50`);
+            
+            if (!response.ok) {
+                throw new Error(`API hatası: ${response.status}`);
+            }
+            
+            const data = await response.json();
+            
+            if (data.success && data.matches) {
+                allMatches = data.matches;
+                updateStats();
+                displayMatches(allMatches);
+                console.log(`✅ ${allMatches.length} maç yüklendi`);
+            } else {
+                showError(data.message || 'Maç verisi alınamadı');
+            }
+            
+        } catch (error) {
+            console.error('Maç yükleme hatası:', error);
+            showError(`Backend API'ye bağlanılamadı: ${error.message}`);
+        }
+    }
+
+    // İstatistikleri güncelle
+    function updateStats() {
+        document.getElementById('total-matches').textContent = allMatches.length;
         
-        let allMatches = [];
-        let currentDate = new Date();
+        const reliableCount = allMatches.filter(m => {
+            const confidence = m.ai_prediction?.confidence || 0;
+            return confidence >= 70;
+        }).length;
+        
+        document.getElementById('reliable-predictions').textContent = reliableCount;
+    }
 
-        function formatDate(date) {
-            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-            return date.toLocaleDateString('tr-TR', options);
+    function showLoading() {
+        document.getElementById('content-area').innerHTML = `
+            <div class="loading">
+                <div>Maçlar yükleniyor...</div>
+                <div style="margin-top: 20px;">⚽ Canlı veriler çekiliyor...</div>
+            </div>
+        `;
+    }
+
+    function showError(message) {
+        document.getElementById('content-area').innerHTML = `
+            <div class="loading">
+                <div style="color: #ff6b6b;">${message}</div>
+                <button onclick="loadMatches()" style="margin-top: 20px; padding: 10px 20px; cursor: pointer; background: #ffd700; border: none; border-radius: 6px; font-weight: 600;">
+                    Tekrar Dene
+                </button>
+            </div>
+        `;
+    }
+
+    function displayMatches(matches) {
+        const contentArea = document.getElementById('content-area');
+        
+        if (!matches || matches.length === 0) {
+            contentArea.innerHTML = '<div class="loading">Bugün için maç bulunamadı</div>';
+            return;
         }
 
-        function changeDate(days) {
-            currentDate.setDate(currentDate.getDate() + days);
-            document.getElementById('current-date').textContent = formatDate(currentDate);
-            loadMatches();
-        }
-
-        async function loadMatches() {
-            try {
-                showLoading();
-                
-                const response = await fetch(`${API_BASE_URL}/api/nesine/matches?league=all&limit=50`);
-                
-                if (!response.ok) {
-                    throw new Error(`HTTP ${response.status}`);
-                }
-                
-                const data = await response.json();
-                
-                if (data.success && data.matches) {
-                    allMatches = data.matches;
-                    updateStats();
-                    displayMatches(allMatches);
-                    console.log(`${allMatches.length} mac yuklendi`);
-                } else {
-                    showError(data.message || 'Mac verisi alinamadi');
-                }
-                
-            } catch (error) {
-                console.error('Mac yukleme hatası:', error);
-                showError(`Backend API baglanamadi: ${error.message}<br><br>Render.com'da deploy durumunu kontrol edin.`);
-            }
-        }
-
-        function updateStats() {
-            document.getElementById('total-matches').textContent = allMatches.length;
-            const reliableCount = allMatches.filter(m => (m.ai_prediction?.confidence || 0) >= 70).length;
-            document.getElementById('reliable-predictions').textContent = reliableCount;
-        }
-
-        function showLoading() {
-            document.getElementById('content-area').innerHTML = `
-                <div class="loading">Maclar yukleniyor...</div>
-            `;
-        }
-
-        function showError(message) {
-            document.getElementById('content-area').innerHTML = `
-                <div class="error-box">
-                    <h3 style="color: #ff6b6b; margin-bottom: 15px;">Hata Olustu</h3>
-                    <p>${message}</p>
-                    <button onclick="loadMatches()" style="margin-top: 20px; padding: 12px 24px; background: #ffd700; border: none; border-radius: 8px; cursor: pointer; font-weight: 600;">
-                        Tekrar Dene
-                    </button>
-                </div>
-            `;
-        }
-
-        function displayMatches(matches) {
-            const contentArea = document.getElementById('content-area');
+        let html = '<div class="match-list">';
+        
+        matches.forEach(match => {
+            const prediction = match.ai_prediction || {};
+            const confidence = prediction.confidence || 60;
+            const result = prediction.prediction || 'X';
             
-            if (!matches || matches.length === 0) {
-                contentArea.innerHTML = '<div class="loading">Mac bulunamadi</div>';
-                return;
-            }
-
-            let html = '<div class="match-list">';
-            
-            matches.forEach(match => {
-                const prediction = match.ai_prediction || {};
-                const confidence = prediction.confidence || 60;
-                const result = prediction.prediction || 'X';
-                
-                html += `
-                    <div class="match-card">
-                        <div class="match-header">
-                            <div>
-                                <div class="match-teams">${match.home_team} vs ${match.away_team}</div>
-                                <div class="match-league">${match.league || 'Bilinmeyen Lig'}</div>
+            html += `
+                <div class="match-card">
+                    <div class="match-header">
+                        <div>
+                            <div class="match-teams">
+                                ${match.home_team} vs ${match.away_team}
                             </div>
-                            <div class="prediction-badge">Tahmin: ${result} (${confidence.toFixed(1)}%)</div>
+                            <div class="match-league">${match.league || 'Bilinmeyen Lig'}</div>
                         </div>
-                        
-                        <div class="odds-container">
-                            <div class="odds-btn">
-                                <div class="odds-label">1 (Ev)</div>
-                                <div class="odds-value">${(match.odds?.['1'] || 0).toFixed(2)}</div>
-                            </div>
-                            <div class="odds-btn">
-                                <div class="odds-label">X (Berabere)</div>
-                                <div class="odds-value">${(match.odds?.X || 0).toFixed(2)}</div>
-                            </div>
-                            <div class="odds-btn">
-                                <div class="odds-label">2 (Deplasman)</div>
-                                <div class="odds-value">${(match.odds?.['2'] || 0).toFixed(2)}</div>
-                            </div>
-                        </div>
-
-                        <div class="match-info">
-                            <div class="info-box">
-                                <div class="info-label">Ev Kazanma</div>
-                                <div class="info-value">${(prediction.home_win_prob || 0).toFixed(1)}%</div>
-                            </div>
-                            <div class="info-box">
-                                <div class="info-label">Beraberlik</div>
-                                <div class="info-value">${(prediction.draw_prob || 0).toFixed(1)}%</div>
-                            </div>
-                            <div class="info-box">
-                                <div class="info-label">Deplasman</div>
-                                <div class="info-value">${(prediction.away_win_prob || 0).toFixed(1)}%</div>
-                            </div>
-                            <div class="info-box">
-                                <div class="info-label">Guven</div>
-                                <div class="info-value">${confidence.toFixed(1)}%</div>
-                            </div>
-                        </div>
-
-                        <div class="confidence-bar">
-                            <div class="confidence-fill" style="width: ${confidence}%"></div>
+                        <div class="prediction-badge">
+                            Tahmin: ${result} (${confidence.toFixed(1)}%)
                         </div>
                     </div>
-                `;
-            });
+                    
+                    <div class="odds-container">
+                        <div class="odds-btn">
+                            <div class="odds-label">1 (Ev)</div>
+                            <div class="odds-value">${(match.odds?.['1'] || 2.0).toFixed(2)}</div>
+                        </div>
+                        <div class="odds-btn">
+                            <div class="odds-label">X (Berabere)</div>
+                            <div class="odds-value">${(match.odds?.X || 3.0).toFixed(2)}</div>
+                        </div>
+                        <div class="odds-btn">
+                            <div class="odds-label">2 (Deplasman)</div>
+                            <div class="odds-value">${(match.odds?.['2'] || 3.5).toFixed(2)}</div>
+                        </div>
+                    </div>
 
-            html += '</div>';
-            contentArea.innerHTML = html;
-        }
+                    <div class="match-info">
+                        <div class="info-box">
+                            <div class="info-label">Ev Kazanma</div>
+                            <div class="info-value">${(prediction.home_win_prob || 40).toFixed(1)}%</div>
+                        </div>
+                        <div class="info-box">
+                            <div class="info-label">Beraberlik</div>
+                            <div class="info-value">${(prediction.draw_prob || 30).toFixed(1)}%</div>
+                        </div>
+                        <div class="info-box">
+                            <div class="info-label">Deplasman Kazanma</div>
+                            <div class="info-value">${(prediction.away_win_prob || 30).toFixed(1)}%</div>
+                        </div>
+                        <div class="info-box">
+                            <div class="info-label">Güven Skoru</div>
+                            <div class="info-value">${confidence.toFixed(1)}%</div>
+                        </div>
+                    </div>
 
-        function filterMatches(type) {
-            document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
-            event.target.classList.add('active');
-
-            let filtered = allMatches;
-
-            switch(type) {
-                case 'btts':
-                    filtered = allMatches.filter(m => (m.ai_prediction?.btts_prob || 0) > 60);
-                    break;
-                case 'goals':
-                    filtered = allMatches.filter(m => (m.ai_prediction?.over_2_5_prob || 0) > 60);
-                    break;
-                case '1x2':
-                    filtered = allMatches.filter(m => (m.ai_prediction?.confidence || 0) >= 70);
-                    break;
-                default:
-                    filtered = allMatches;
-            }
-
-            displayMatches(filtered);
-        }
-
-        function filterByLeague(leagueName) {
-            const filtered = allMatches.filter(m => m.league && m.league.includes(leagueName));
-            displayMatches(filtered);
-        }
-
-        function changePage(page) {
-            console.log('Sayfa:', page);
-        }
-
-        window.addEventListener('load', () => {
-            document.getElementById('current-date').textContent = formatDate(currentDate);
-            loadMatches();
-            setInterval(loadMatches, 120000);
+                    <div class="confidence-bar">
+                        <div class="confidence-fill" style="width: ${confidence}%"></div>
+                    </div>
+                </div>
+            `;
         });
-    </script>
+
+        html += '</div>';
+        contentArea.innerHTML = html;
+    }
+
+    function filterMatches(type) {
+        currentFilter = type;
+        
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.classList.remove('active');
+        });
+        event.target.classList.add('active');
+
+        let filtered = allMatches;
+
+        switch(type) {
+            case 'btts':
+                filtered = allMatches.filter(m => {
+                    const pred = m.ai_prediction || {};
+                    return (pred.btts_prob || 0) > 60;
+                });
+                break;
+            case 'goals':
+                filtered = allMatches.filter(m => {
+                    const pred = m.ai_prediction || {};
+                    return (pred.over_2_5_prob || 0) > 60;
+                });
+                break;
+            case '1x2':
+                filtered = allMatches.filter(m => (m.ai_prediction?.confidence || 0) >= 70);
+                break;
+            default:
+                filtered = allMatches;
+        }
+
+        displayMatches(filtered);
+    }
+
+    function filterByLeague(leagueName) {
+        const filtered = allMatches.filter(m => m.league.includes(leagueName));
+        displayMatches(filtered);
+    }
+
+    function changePage(page) {
+        console.log('Sayfa değiştirildi:', page);
+    }
+
+    // Sayfa yüklendiğinde
+    window.addEventListener('load', () => {
+        document.getElementById('current-date').textContent = formatDate(currentDate);
+        loadMatches();
+        
+        // Her 2 dakikada bir yenile
+        setInterval(loadMatches, 120000);
+    });
+</script>
 </body>
 </html>
