@@ -1,4 +1,3 @@
-```python
 """
 Nesine.com'dan CANLI maç verileri, oranlar ve istatistikler çeken modül
 """
