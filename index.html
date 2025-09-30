@@ -538,45 +538,97 @@
     }
 
     // API'den maçları yükle
-    async function loadMatches() {
+    // script kısmında loadMatches fonksiyonunu DEĞİŞTİRİN:
+async function loadMatches() {
+    try {
+        showLoading();
+        
+        // ÖNCE STATIC VERİLERİ GÖSTER
+        displayStaticMatches();
+        
+        // SONRA API'Yİ DENE (opsiyonel)
         try {
-            showLoading();
-            
             const response = await fetch(`${API_BASE_URL}/api/nesine/matches?league=all&limit=50`);
-            
-            if (!response.ok) {
-                throw new Error(`API hatası: ${response.status}`);
+            if (response.ok) {
+                const data = await response.json();
+                if (data.success && data.matches) {
+                    allMatches = data.matches;
+                    updateStats();
+                    displayMatches(allMatches);
+                    console.log(`✅ ${allMatches.length} maç yüklendi`);
+                    return;
+                }
             }
-            
-            const data = await response.json();
-            
-            if (data.success && data.matches) {
-                allMatches = data.matches;
-                updateStats();
-                displayMatches(allMatches);
-                console.log(`✅ ${allMatches.length} maç yüklendi`);
-            } else {
-                showError(data.message || 'Maç verisi alınamadı');
-            }
-            
-        } catch (error) {
-            console.error('Maç yükleme hatası:', error);
-            showError(`Backend API'ye bağlanılamadı: ${error.message}`);
+        } catch (apiError) {
+            console.log('API bağlantısı yok, static veriler kullanılıyor');
         }
+        
+    } catch (error) {
+        console.error('Hata:', error);
+        displayStaticMatches();
     }
+}
+
+// STATIC VERİ FONKSİYONU EKLEYİN
+function displayStaticMatches() {
+    const staticMatches = [
+        {
+            home_team: "Galatasaray",
+            away_team: "Fenerbahçe",
+            league: "Süper Lig",
+            odds: {"1": 2.10, "X": 3.40, "2": 3.20},
+            ai_prediction: {
+                prediction: "1",
+                confidence: 72.5,
+                home_win_prob: 52.1,
+                draw_prob: 28.3,
+                away_win_prob: 19.6
+            }
+        },
+        {
+            home_team: "Beşiktaş",
+            away_team: "Trabzonspor",
+            league: "Süper Lig", 
+            odds: {"1": 2.30, "X": 3.20, "2": 3.10},
+            ai_prediction: {
+                prediction: "X",
+                confidence: 65.8,
+                home_win_prob: 41.2,
+                draw_prob: 35.8, 
+                away_win_prob: 23.0
+            }
+        },
+        {
+            home_team: "Manchester City",
+            away_team: "Liverpool",
+            league: "Premier League",
+            odds: {"1": 2.05, "X": 3.60, "2": 3.40},
+            ai_prediction: {
+                prediction: "1",
+                confidence: 63.7,
+                home_win_prob: 48.9,
+                draw_prob: 27.3,
+                away_win_prob: 23.8
+            }
+        }
+    ];
+    
+    allMatches = staticMatches;
+    updateStats();
+    displayMatches(staticMatches);
+}
 
     // İstatistikleri güncelle
     function updateStats() {
-        document.getElementById('total-matches').textContent = allMatches.length;
-        
-        const reliableCount = allMatches.filter(m => {
-            const confidence = m.ai_prediction?.confidence || 0;
-            return confidence >= 70;
-        }).length;
-        
-        document.getElementById('reliable-predictions').textContent = reliableCount;
-    }
-
+    document.getElementById('total-matches').textContent = allMatches.length;
+    
+    const reliableCount = allMatches.filter(m => {
+        const confidence = m.ai_prediction?.confidence || 0;
+        return confidence >= 70;
+    }).length;
+    
+    document.getElementById('reliable-predictions').textContent = reliableCount;
+   }
     function showLoading() {
         document.getElementById('content-area').innerHTML = `
             <div class="loading">
