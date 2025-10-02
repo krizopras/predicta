@@ -38,7 +38,7 @@ app.add_middleware(
 )
 
 # ==================== GÜNCELLENMİŞ SKOR TAHMİN MOTORU V3 ====================
-class ScorePredictorV2:
+class ScorePredictorV3:
     """Monte Carlo + Poisson tabanlı skor tahmini (geliştirilmiş)"""
     @staticmethod
     def predict_score(home_team, away_team, prediction, probabilities, ratings,
