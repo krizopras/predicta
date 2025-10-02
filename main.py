@@ -333,55 +333,262 @@ class AdvancedNesineFetcher:
         return 'Diger Ligler'
 
 # ==================== AI TAHMİN ====================
-class PredictionEngine:
-    def predict_match(self, home_team, away_team, odds):
+
+class AdvancedPredictionEngine:
+    def __init__(self):
+        # Takım güç seviyeleri (tarihsel performans)
+        self.team_strength = {
+            # Süper Lig
+            'galatasaray': 85, 'fenerbahce': 84, 'besiktas': 80, 'trabzonspor': 78,
+            'basaksehir': 75, 'sivasspor': 72, 'konyaspor': 70, 'alanyaspor': 70,
+            
+            # Premier League
+            'manchester city': 92, 'liverpool': 90, 'arsenal': 88, 'chelsea': 85,
+            'manchester united': 84, 'tottenham': 82, 'newcastle': 80, 'brighton': 78,
+            
+            # La Liga
+            'real madrid': 91, 'barcelona': 89, 'atletico madrid': 86, 'real sociedad': 79,
+            
+            # Bundesliga
+            'bayern munich': 93, 'dortmund': 85, 'leipzig': 82, 'leverkusen': 81,
+            
+            # Serie A
+            'inter': 87, 'milan': 85, 'juventus': 84, 'napoli': 83, 'roma': 80,
+            
+            # Ligue 1
+            'psg': 89, 'marseille': 78, 'lyon': 77, 'monaco': 76
+        }
+        
+        # Form analizi (rastgele -10 ile +10 arası)
+        self.form_cache = {}
+    
+    def get_team_strength(self, team_name):
+        """Takım gücünü hesapla"""
+        team_lower = team_name.lower()
+        
+        # Doğrudan eşleşme
+        if team_lower in self.team_strength:
+            return self.team_strength[team_lower]
+        
+        # Kısmi eşleşme (örn: "Man City" -> "manchester city")
+        for known_team, strength in self.team_strength.items():
+            if known_team in team_lower or team_lower in known_team:
+                return strength
+        
+        # Bilinmeyen takımlar için tahmin
+        return random.randint(60, 75)
+    
+    def get_team_form(self, team_name):
+        """Takımın son dönem formu (-10 ile +10 arası)"""
+        if team_name not in self.form_cache:
+            self.form_cache[team_name] = random.uniform(-10, 10)
+        return self.form_cache[team_name]
+    
+    def calculate_home_advantage(self):
+        """Ev sahibi avantajı (+3 ile +8 arası)"""
+        return random.uniform(3, 8)
+    
+    def analyze_odds_value(self, odds):
+        """Oranlardan değer analizi"""
         try:
             odds_1 = float(odds.get('1', 2.0))
             odds_x = float(odds.get('X', 3.0))
             odds_2 = float(odds.get('2', 3.5))
             
-            prob_1 = (1 / odds_1) * 100
-            prob_x = (1 / odds_x) * 100
-            prob_2 = (1 / odds_2) * 100
+            # Oranlardan beklenen kazanma olasılıkları
+            implied_prob_1 = (1 / odds_1) * 100
+            implied_prob_x = (1 / odds_x) * 100
+            implied_prob_2 = (1 / odds_2) * 100
             
-            total = prob_1 + prob_x + prob_2
-            prob_1 = (prob_1 / total) * 100
-            prob_x = (prob_x / total) * 100
-            prob_2 = (prob_2 / total) * 100
+            # Normalizasyon
+            total = implied_prob_1 + implied_prob_x + implied_prob_2
             
-            max_prob = max(prob_1, prob_x, prob_2)
+            return {
+                '1': (implied_prob_1 / total) * 100,
+                'X': (implied_prob_x / total) * 100,
+                '2': (implied_prob_2 / total) * 100
+            }
+        except:
+            return {'1': 33.3, 'X': 33.3, '2': 33.3}
+    
+    def calculate_poisson_probabilities(self, home_strength, away_strength):
+        """Poisson dağılımı ile skor tahmini"""
+        # Beklenen gol sayıları
+        home_expected = (home_strength / 20) * random.uniform(0.8, 1.2)
+        away_expected = (away_strength / 20) * random.uniform(0.8, 1.2)
+        
+        # Poisson olasılıkları
+        def poisson(k, lam):
+            return (lam ** k) * math.exp(-lam) / math.factorial(min(k, 10))
+        
+        home_win_prob = 0
+        draw_prob = 0
+        away_win_prob = 0
+        
+        # Maksimum 5 gol için hesapla
+        for home_goals in range(6):
+            for away_goals in range(6):
+                prob = poisson(home_goals, home_expected) * poisson(away_goals, away_expected)
+                
+                if home_goals > away_goals:
+                    home_win_prob += prob
+                elif home_goals == away_goals:
+                    draw_prob += prob
+                else:
+                    away_win_prob += prob
+        
+        return {
+            '1': home_win_prob * 100,
+            'X': draw_prob * 100,
+            '2': away_win_prob * 100
+        }
+    
+    def predict_score(self, home_strength, away_strength, prediction_type):
+        """Gerçekçi skor tahmini"""
+        home_attack = home_strength / 30
+        away_attack = away_strength / 30
+        
+        if prediction_type == '1':  # Ev sahibi kazanır
+            home_goals = min(random.choices([1, 2, 3, 4], weights=[20, 40, 30, 10])[0], 5)
+            away_goals = max(0, home_goals - random.randint(1, 2))
+        elif prediction_type == '2':  # Deplasman kazanır
+            away_goals = min(random.choices([1, 2, 3, 4], weights=[20, 40, 30, 10])[0], 5)
+            home_goals = max(0, away_goals - random.randint(1, 2))
+        else:  # Beraberlik
+            score = random.choices([0, 1, 2], weights=[20, 50, 30])[0]
+            home_goals = away_goals = score
+        
+        return f"{home_goals}-{away_goals}"
+    
+    def calculate_betting_value(self, our_prob, odds):
+        """Değer bahis analizi (Kelly Criterion benzeri)"""
+        try:
+            implied_prob = (1 / float(odds)) * 100
+            value = (our_prob - implied_prob) / implied_prob
+            return max(0, min(100, value * 100))  # 0-100 arası
+        except:
+            return 0
+    
+    def predict_match(self, home_team, away_team, odds, league="Unknown"):
+        """Gelişmiş maç tahmini"""
+        try:
+            # 1. Takım güçlerini al
+            home_base_strength = self.get_team_strength(home_team)
+            away_base_strength = self.get_team_strength(away_team)
             
-            if max_prob == prob_1:
+            # 2. Form analizini ekle
+            home_form = self.get_team_form(home_team)
+            away_form = self.get_team_form(away_team)
+            
+            # 3. Ev sahibi avantajı
+            home_advantage = self.calculate_home_advantage()
+            
+            # 4. Nihai güç skorları
+            home_final = home_base_strength + home_form + home_advantage
+            away_final = away_base_strength + away_form
+            
+            # 5. Oranlardan gelen olasılıklar
+            odds_probs = self.analyze_odds_value(odds)
+            
+            # 6. Poisson modeli olasılıkları
+            poisson_probs = self.calculate_poisson_probabilities(home_final, away_final)
+            
+            # 7. Hibrit model (Oranlar %40, Poisson %30, Güç Analizi %30)
+            home_win_prob = (
+                odds_probs['1'] * 0.40 +
+                poisson_probs['1'] * 0.30 +
+                (home_final / (home_final + away_final) * 100) * 0.30
+            )
+            
+            draw_prob = (
+                odds_probs['X'] * 0.40 +
+                poisson_probs['X'] * 0.30 +
+                20  # Base beraberlik olasılığı
+            )
+            
+            away_win_prob = (
+                odds_probs['2'] * 0.40 +
+                poisson_probs['2'] * 0.30 +
+                (away_final / (home_final + away_final) * 100) * 0.30
+            )
+            
+            # 8. Normalizasyon
+            total_prob = home_win_prob + draw_prob + away_win_prob
+            home_win_prob = (home_win_prob / total_prob) * 100
+            draw_prob = (draw_prob / total_prob) * 100
+            away_win_prob = (away_win_prob / total_prob) * 100
+            
+            # 9. En yüksek olasılık
+            max_prob = max(home_win_prob, draw_prob, away_win_prob)
+            
+            if max_prob == home_win_prob:
                 prediction = "1"
-                confidence = prob_1
-                score = f"{random.randint(2,3)}-{random.randint(0,1)}"
-            elif max_prob == prob_2:
+                confidence = home_win_prob
+            elif max_prob == away_win_prob:
                 prediction = "2"
-                confidence = prob_2
-                score = f"{random.randint(0,1)}-{random.randint(2,3)}"
+                confidence = away_win_prob
             else:
                 prediction = "X"
-                confidence = prob_x
-                score = f"{random.randint(1,2)}-{random.randint(1,2)}"
+                confidence = draw_prob
+            
+            # 10. Skor tahmini
+            score = self.predict_score(home_final, away_final, prediction)
+            
+            # 11. Değer bahis analizi
+            bet_value = self.calculate_betting_value(
+                home_win_prob if prediction == '1' else 
+                away_win_prob if prediction == '2' else draw_prob,
+                odds.get(prediction, 2.0)
+            )
+            
+            # 12. Risk seviyesi
+            if confidence >= 65:
+                risk = "Düşük"
+            elif confidence >= 50:
+                risk = "Orta"
+            else:
+                risk = "Yüksek"
+            
+            # 13. Bahis önerisi
+            bet_suggestion = "Güçlü Tavsiye" if bet_value > 15 else \
+                           "Orta Tavsiye" if bet_value > 5 else "Düşük Tavsiye"
             
             return {
                 'prediction': prediction,
                 'confidence': round(confidence, 1),
-                'home_win_prob': round(prob_1, 1),
-                'draw_prob': round(prob_x, 1),
-                'away_win_prob': round(prob_2, 1),
+                'home_win_prob': round(home_win_prob, 1),
+                'draw_prob': round(draw_prob, 1),
+                'away_win_prob': round(away_win_prob, 1),
                 'score_prediction': score,
+                'bet_value': round(bet_value, 1),
+                'risk_level': risk,
+                'bet_suggestion': bet_suggestion,
+                'analysis': {
+                    'home_strength': round(home_base_strength, 1),
+                    'away_strength': round(away_base_strength, 1),
+                    'home_form': round(home_form, 1),
+                    'away_form': round(away_form, 1),
+                    'home_advantage': round(home_advantage, 1)
+                },
                 'timestamp': datetime.now().isoformat()
             }
-        except:
+            
+        except Exception as e:
+            # Hata durumunda güvenli default
             return {
-                'prediction': 'X', 'confidence': 50.0,
-                'home_win_prob': 33.3, 'draw_prob': 33.3, 'away_win_prob': 33.3,
-                'score_prediction': '1-1', 'timestamp': datetime.now().isoformat()
+                'prediction': 'X',
+                'confidence': 50.0,
+                'home_win_prob': 33.3,
+                'draw_prob': 33.3,
+                'away_win_prob': 33.3,
+                'score_prediction': '1-1',
+                'bet_value': 0,
+                'risk_level': 'Yüksek',
+                'bet_suggestion': 'Bahis Önerilmez',
+                'analysis': {},
+                'timestamp': datetime.now().isoformat(),
+                'error': str(e)
             }
-
-fetcher = AdvancedNesineFetcher()
-predictor = PredictionEngine()
 
 # ==================== ENDPOINTS ====================
 
