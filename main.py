@@ -398,7 +398,7 @@ async def health():
     return {"status": "healthy", "method": "requests"}
 
 @app.get("/api/nesine/live-predictions")
-async def get_live_predictions(league: str = "all", limit: int = 250):
+async def get_live_predictions(league: str = "all", limit: int = 50):
     try:
         logger.info("Nesine CDN API'den veri cekiliyor...")
         
@@ -478,7 +478,7 @@ async def get_live_predictions(league: str = "all", limit: int = 250):
         raise HTTPException(status_code=500, detail=str(e))
 
 @app.get("/api/nesine/matches")
-async def get_matches(league: str = "all", limit: int = 250):
+async def get_matches(league: str = "all", limit: int = 50):
     return await get_live_predictions(league, limit)
 
 @app.get("/api/nesine/raw")
