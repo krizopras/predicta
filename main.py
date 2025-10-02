@@ -38,177 +38,108 @@ app.add_middleware(
 )
 
 # ==================== GÜNCELLENMİŞ SKOR TAHMİN MOTORU V3 ====================
-class ScorePredictorV3:
-    """Geliştirilmiş Monte Carlo + Poisson tabanlı skor tahmini"""
-    
+class ScorePredictorV2:
+    """Monte Carlo + Poisson tabanlı skor tahmini (geliştirilmiş)"""
     @staticmethod
-    def predict_score(home_team, away_team, prediction, probabilities, ratings, 
-                     league_patterns, odds=None, simulations=1000):
-        """Gelişmiş skor tahmini"""
+    def predict_score(home_team, away_team, prediction, probabilities, ratings,
+                      league_patterns, odds=None, simulations=2000, max_goal_cap=6):
         try:
-            # Gol beklentilerini hesapla
-            home_attack = ratings.get('home_attack', 15) / 10
-            away_attack = ratings.get('away_attack', 15) / 10
-            home_defense = ratings.get('home_defense', 15) / 10
-            away_defense = ratings.get('away_defense', 15) / 10
+            # Gol beklentileri (aynı mantık, ama minimum/maximum ile stabil hale getir)
+            home_attack = ratings.get('home_attack', 15) / 10.0
+            away_attack = ratings.get('away_attack', 15) / 10.0
+            home_defense = ratings.get('home_defense', 15) / 10.0
+            away_defense = ratings.get('away_defense', 15) / 10.0
             league_avg = league_patterns.get('avg_goals', 2.5)
-            
-            # Temel gol beklentileri
-            base_home_expectancy = ((home_attack + (3 - away_defense)) / 2) * (league_avg / 2.5)
-            base_away_expectancy = ((away_attack + (3 - home_defense)) / 2) * (league_avg / 2.5)
-            
-            # Takım güçlerine göre ayarlama
-            home_advantage = 0.3  # Ev sahibi avantajı
-            expected_home = max(0.2, base_home_expectancy + home_advantage)
-            expected_away = max(0.2, base_away_expectancy)
-            
-            # Oran etkisi
+
+            expected_home = ((home_attack + (3 - away_defense)) / 2.0) * (league_avg / 2.5)
+            expected_away = ((away_attack + (3 - home_defense)) / 2.0) * (league_avg / 2.5)
+
+            # küçük rassal gürültü ekleyerek aynı değerlerin tekrarlı baskınlığını azalt
+            expected_home = max(0.05, expected_home) * (1.0 + np.random.normal(0, 0.03))
+            expected_away = max(0.05, expected_away) * (1.0 + np.random.normal(0, 0.03))
+
+            # Odds etkisi (kalsın ama safe)
             if odds:
                 try:
-                    home_odds = float(odds.get('1', 2.0))
-                    away_odds = float(odds.get('2', 2.0))
-                    
-                    if home_odds < 1.8:
+                    if float(odds.get('1', 3)) < 1.8:
                         expected_home *= 1.15
-                    elif home_odds > 3.0:
-                        expected_home *= 0.85
-                        
-                    if away_odds < 1.8:
+                        expected_away *= 0.9
+                    elif float(odds.get('2', 3)) < 1.8:
+                        expected_home *= 0.9
                         expected_away *= 1.15
-                    elif away_odds > 3.0:
-                        expected_away *= 0.85
-                except:
+                except Exception:
                     pass
-            
-            # Tahmin bias'ı
-            prediction_bias = 1.0
+
+            # Prediction bias (daha hafif)
             if prediction == '1':
-                expected_home *= 1.3
-                expected_away *= 0.7
-                prediction_bias = 1.2
+                expected_home *= 1.12
+                expected_away *= 0.90
             elif prediction == '2':
-                expected_home *= 0.7
-                expected_away *= 1.3
-                prediction_bias = 1.2
-            else:  # Beraberlik
-                expected_home *= 0.9
-                expected_away *= 0.9
-                prediction_bias = 1.5
-            
-            # Gol beklentilerini sınırla
-            expected_home = min(4.5, max(0.3, expected_home))
-            expected_away = min(4.5, max(0.3, expected_away))
-            
-            logger.info(f"Gol beklentileri: {home_team} {expected_home:.2f} - {away_team} {expected_away:.2f}")
-            
-            # Monte Carlo simülasyonu
+                expected_home *= 0.90
+                expected_away *= 1.12
+            else:
+                expected_home *= 0.98
+                expected_away *= 0.98
+
+            # Monte Carlo: numpy poisson kullan (daha doğru ve hızlı)
             score_counts = defaultdict(int)
-            score_margin_counts = defaultdict(int)
-            
+            # sınırlama: negatif veya aşırı büyük değerleri kırp
             for _ in range(simulations):
-                # Poisson dağılımı ile gol sayıları
-                hg = ScorePredictorV3._poisson_goals(expected_home)
-                ag = ScorePredictorV3._poisson_goals(expected_away)
-                
-                # Gerçekçi skor sınırları
-                hg = min(6, max(0, hg))
-                ag = min(6, max(0, ag))
-                
-                score = f"{hg}-{ag}"
-                score_counts[score] += 1
-                
-                # Skor farkı
-                margin = hg - ag
-                score_margin_counts[margin] += 1
-            
-            # En sık çıkan skorlar
+                hg = int(np.random.poisson(lam=expected_home))
+                ag = int(np.random.poisson(lam=expected_away))
+
+                # caps
+                hg = min(max(0, hg), max_goal_cap)
+                ag = min(max(0, ag), max_goal_cap)
+
+                # beraberlik için daha nazik ayarlama (gerektiğinde)
+                if prediction == 'X' and abs(hg - ag) > 2 and random.random() < 0.25:
+                    # sadece çok uç fark varsa ve rastgele kabul edilirse, hafifçe ortalayalım
+                    avg = (hg + ag) // 2
+                    hg = max(0, avg + random.choice([0, 1]))
+                    ag = max(0, avg + random.choice([0, 1]))
+
+                score_counts[f"{hg}-{ag}"] += 1
+
+            # Top skorlar
             top_scores = sorted(score_counts.items(), key=lambda x: x[1], reverse=True)
-            
-            if not top_scores:
-                return ScorePredictorV3._get_fallback_score(prediction)
-            
-            # Tahmin ile uyumlu en iyi skoru bul
+
+            # Tahmine en uygun skoru seç: önce tahimle uyumlu en sık skor, yoksa en sık skor,
+            # yoksa skorlardan hedef (expected) farkı en küçük olana geç.
             final_score = None
-            final_count = 0
-            
-            for score, count in top_scores[:10]:  # İlk 10 skora bak
+            for score, cnt in top_scores[:10]:
                 hg, ag = map(int, score.split('-'))
-                
-                # Tahminle uyum kontrolü
-                matches_prediction = (
-                    (prediction == '1' and hg > ag) or
-                    (prediction == '2' and ag > hg) or
-                    (prediction == 'X' and hg == ag)
-                )
-                
-                if matches_prediction and count > final_count:
+                if (prediction == '1' and hg > ag) or (prediction == '2' and ag > hg) or (prediction == 'X' and hg == ag):
                     final_score = score
-                    final_count = count
-            
-            # Uyumlu skor bulunamazsa en sık çıkan skoru al
-            if not final_score:
-                final_score = top_scores[0][0]
-                final_count = top_scores[0][1]
-            
-            # Alternatif skorlar (tahminle uyumlu olanlar)
-            alternatives = []
-            for score, count in top_scores[1:6]:  # İlk 5 alternatif
-                if score != final_score:
-                    alternatives.append(score)
-                if len(alternatives) >= 2:
                     break
-            
-            # Güven skoru
-            confidence = min(95, max(10, (final_count / simulations) * 100 * prediction_bias))
-            
-            logger.info(f"Skor tahmini: {final_score} (Güven: {confidence:.1f}%)")
-            
+
+            if not final_score:
+                # en sık skor alınır, ama eğer bu '0-0' gibi düşük varyanslı bir skor ise
+                # expected değerlerine yakın olanı bul
+                best = None
+                best_dist = None
+                for score, cnt in top_scores[:20]:
+                    hg, ag = map(int, score.split('-'))
+                    dist = abs(hg - expected_home) + abs(ag - expected_away)
+                    if best is None or dist < best_dist:
+                        best = score
+                        best_dist = dist
+                final_score = best if best else top_scores[0][0]
+
+            confidence = round((score_counts[final_score] / simulations) * 100, 1)
+
+            alternatives = [s[0] for s in top_scores[1:4]]
             return {
                 'primary_score': final_score,
-                'alternatives': alternatives[:2],
-                'confidence': round(confidence, 1)
+                'alternatives': alternatives,
+                'confidence': confidence
             }
-            
+
         except Exception as e:
-            logger.error(f"Skor tahmin hatası: {e}")
-            return ScorePredictorV3._get_fallback_score(prediction)
-    
-    @staticmethod
-    def _poisson_goals(expectancy):
-        """Geliştirilmiş Poisson dağılımı"""
-        lam = max(0.1, expectancy)
-        goals = 0
-        L = math.exp(-lam)
-        p = 1.0
-        
-        while p > L:
-            goals += 1
-            p *= random.random()
-        
-        # Poisson varyansını ekle
-        if random.random() < 0.3:  # %30 ihtimalle varyans ekle
-            goals += random.choice([-1, 0, 1])
-            goals = max(0, goals)
-            
-        return goals
-    
-    @staticmethod
-    def _get_fallback_score(prediction):
-        """Yedek skor tahmini"""
-        fallback_scores = {
-            '1': ['2-0', '2-1', '1-0'],
-            '2': ['0-2', '1-2', '0-1'],
-            'X': ['1-1', '0-0', '2-2']
-        }
-        
-        primary = fallback_scores[prediction][0]
-        alternatives = fallback_scores[prediction][1:3]
-        
-        return {
-            'primary_score': primary,
-            'alternatives': alternatives,
-            'confidence': 35.0
-        }
+            logger.error(f"Score prediction error (improved): {e}")
+            # fallback ancak daha çeşitli alternatifler ver
+            return {'primary_score': '1-1', 'alternatives': ['2-1', '1-2'], 'confidence': 25.0}
+
 # ==================== VALUE BET CALCULATOR ====================
 class ValueBetCalculator:
     @staticmethod
