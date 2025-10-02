@@ -398,7 +398,7 @@ async def health():
     return {"status": "healthy", "method": "requests"}
 
 @app.get("/api/nesine/live-predictions")
-async def get_live_predictions(league: str = "all", limit: int = 50):
+async def get_live_predictions(league: str = "all", limit: int = 250):
     try:
         logger.info("Nesine CDN API'den veri cekiliyor...")
         
