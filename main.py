@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-PREDICTA AI - RAILWAY UYUMLU VERSİYON (Selenium yok, sadece requests)
+PREDICTA AI - RAILWAY UYUMLU VERSİYON (Gelişmiş Tahmin Motoru)
 """
 import os
 import logging
@@ -13,11 +13,12 @@ import random
 import requests
 from bs4 import BeautifulSoup
 import re
+import math
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-app = FastAPI(title="Predicta AI API", version="4.1")
+app = FastAPI(title="Predicta AI API", version="5.0")
 
 app.add_middleware(
     CORSMiddleware,
@@ -27,313 +28,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# ==================== GELİŞTİRİLMİŞ NESINE FETCHER ====================
-class AdvancedNesineFetcher:
-    def __init__(self):
-        self.session = requests.Session()
-        self.headers = {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-            'Accept-Language': 'tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7',
-            'Accept-Encoding': 'gzip, deflate, br',
-            'Referer': 'https://www.nesine.com/',
-            'Connection': 'keep-alive',
-            'Upgrade-Insecure-Requests': '1'
-        }
-        self.base_url = "https://www.nesine.com"
-    
-    def get_page_content(self, url_path="/iddaa"):
-        try:
-            url = f"{self.base_url}{url_path}"
-            response = self.session.get(url, headers=self.headers, timeout=20)
-            response.raise_for_status()
-            logger.info(f"Nesine sayfasi cekildi ({len(response.text)} karakter)")
-            return response.text
-        except Exception as e:
-            logger.error(f"Sayfa cekme hatasi: {e}")
-            return None
-    
-    def get_nesine_official_api(self):
-        """Nesine'nin resmi CDN API'sinden veri çek"""
-        try:
-            api_url = "https://cdnbulten.nesine.com/api/bulten/getprebultenfull"
-            
-            api_headers = {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
-                "Referer": "https://www.nesine.com/",
-                "Origin": "https://www.nesine.com",
-                "Accept": "application/json"
-            }
-            
-            response = self.session.get(api_url, headers=api_headers, timeout=15)
-            
-            if response.status_code == 200:
-                data = response.json()
-                logger.info(f"Nesine CDN API'den veri alindi (Status: {response.status_code})")
-                return self._parse_nesine_api_response(data)
-            else:
-                logger.warning(f"CDN API yanit vermedi: {response.status_code}")
-                return None
-                
-        except Exception as e:
-            logger.error(f"CDN API hatasi: {e}")
-            return None
-    
-    def _parse_nesine_api_response(self, data):
-        """Nesine API yanıtını parse et"""
-        matches = []
-        
-        # EA: Erken Açılan / Prematch Maçlar
-        ea_matches = data.get("sg", {}).get("EA", [])
-        logger.info(f"Prematch maclari aliniyor: {len(ea_matches)} adet")
-        
-        for m in ea_matches:
-            if m.get("GT") != 1:  # Sadece futbol
-                continue
-            
-            match_data = self._format_nesine_match(m)
-            if match_data:
-                matches.append(match_data)
-        
-        # CA: Canlı Maçlar
-        ca_matches = data.get("sg", {}).get("CA", [])
-        logger.info(f"Canli maclari aliniyor: {len(ca_matches)} adet")
-        
-        for m in ca_matches:
-            if m.get("GT") != 1:  # Sadece futbol
-                continue
-            
-            match_data = self._format_nesine_match(m)
-            if match_data:
-                matches.append(match_data)
-        
-        logger.info(f"Toplam {len(matches)} mac API'den parse edildi")
-        return matches
-    
-    def _format_nesine_match(self, m):
-        """Nesine API match objesini formatla"""
-        try:
-            home_team = m.get("HN", "").strip()
-            away_team = m.get("AN", "").strip()
-            
-            if not home_team or not away_team:
-                return None
-            
-            # 1X2 oranlarını bul
-            odds = {'1': 2.0, 'X': 3.0, '2': 3.5}  # Default
-            
-            for bahis in m.get("MA", []):
-                # MTID 1 = Maç Sonucu (1X2)
-                if bahis.get("MTID") == 1:
-                    oranlar = bahis.get("OCA", [])
-                    if len(oranlar) >= 3:
-                        try:
-                            odds['1'] = float(oranlar[0].get("O", 2.0))
-                            odds['X'] = float(oranlar[1].get("O", 3.0))
-                            odds['2'] = float(oranlar[2].get("O", 3.5))
-                        except:
-                            pass
-                    break
-            
-            return {
-                'home_team': home_team,
-                'away_team': away_team,
-                'league': m.get("LC", "Bilinmeyen Lig"),
-                'league_id': m.get("LID", ""),
-                'match_id': m.get("C", ""),
-                'date': m.get("D", ""),
-                'time': m.get("T", "20:00"),
-                'odds': odds,
-                'is_live': m.get("S") == 1  # 1 = canlı
-            }
-        except Exception as e:
-            logger.debug(f"Match format hatasi: {e}")
-            return None
-    
-    def extract_matches(self, html_content):
-        """GELİŞTİRİLMİŞ: TÜM maçları yakalar"""
-        soup = BeautifulSoup(html_content, 'html.parser')
-        matches = []
-        seen = set()
-        
-        all_text = soup.get_text()
-        lines = [line.strip() for line in all_text.split('\n') if line.strip()]
-        
-        logger.info(f"{len(lines)} satir analiz ediliyor...")
-        
-        for line in lines:
-            if ' vs ' in line.lower() or ' - ' in line:
-                match = self._parse_match_line(line)
-                if match:
-                    key = f"{match['home_team']}|{match['away_team']}"
-                    if key not in seen:
-                        seen.add(key)
-                        matches.append(match)
-        
-        patterns = [
-            r'([A-ZÇĞİÖŞÜa-zçğıöşü\s\.]+?)\s+vs\.?\s+([A-ZÇĞİÖŞÜa-zçğıöşü\s\.]+)',
-            r'([A-ZÇĞİÖŞÜa-zçğıöşü\s\.]+?)\s+-\s+([A-ZÇĞİÖŞÜa-zçğıöşü\s\.]+)',
-        ]
-        
-        for pattern in patterns:
-            for match_obj in re.finditer(pattern, all_text):
-                home = match_obj.group(1).strip()
-                away = match_obj.group(2).strip()
-                
-                if self._is_valid_team_name(home) and self._is_valid_team_name(away):
-                    key = f"{home}|{away}"
-                    if key not in seen:
-                        seen.add(key)
-                        matches.append({
-                            'home_team': home,
-                            'away_team': away,
-                            'league': self._detect_league(home, away),
-                            'odds': self._extract_nearby_odds(all_text, home, away)
-                        })
-        
-        match_elements = soup.find_all(['div', 'tr', 'li', 'article', 'section'], 
-                                       class_=re.compile(r'match|event|game|fixture|coupon|bulletin', re.I))
-        
-        logger.info(f"{len(match_elements)} HTML elementi bulundu")
-        
-        for elem in match_elements:
-            text = elem.get_text(strip=True)
-            if ' vs ' in text.lower() or ' - ' in text:
-                match = self._parse_match_line(text)
-                if match:
-                    key = f"{match['home_team']}|{match['away_team']}"
-                    if key not in seen:
-                        seen.add(key)
-                        matches.append(match)
-        
-        logger.info(f"Toplam {len(matches)} benzersiz mac bulundu")
-        return matches[:50]
-    
-    def _parse_match_line(self, line):
-        """Satırdan maç bilgisi çıkar"""
-        try:
-            line = re.sub(r'\d{2}:\d{2}', '', line)
-            line = re.sub(r'\d+\.\d+', '', line)
-            line = line.strip()
-            
-            if ' vs ' in line.lower():
-                parts = re.split(r'\s+vs\.?\s+', line, flags=re.IGNORECASE)
-            elif ' - ' in line:
-                parts = line.split(' - ')
-            else:
-                return None
-            
-            if len(parts) < 2:
-                return None
-            
-            home = parts[0].strip()
-            away = parts[1].strip()
-            
-            if not self._is_valid_team_name(home) or not self._is_valid_team_name(away):
-                return None
-            
-            return {
-                'home_team': home,
-                'away_team': away,
-                'league': self._detect_league(home, away),
-                'odds': self._generate_realistic_odds()
-            }
-        except:
-            return None
-    
-    def _is_valid_team_name(self, name):
-        """Geçerli takım ismi kontrolü"""
-        if not name or len(name) < 3 or len(name) > 50:
-            return False
-        
-        if re.match(r'^[\d\W]+$', name):
-            return False
-        
-        words = name.split()
-        if len(words) == 1 and len(name) < 4:
-            return False
-        
-        blacklist = [
-            'hesabim', 'mesajlarim', 'cep tel', 'tekrar', 'tum talep',
-            'giris', 'kayit', 'casino', 'canli', 'spor', 'bahis', 'kupon',
-            'favoriler', 'yardim', 'iletisim', 'menu', 'profil', 'ayarlar'
-        ]
-        
-        name_lower = name.lower()
-        if any(word in name_lower for word in blacklist):
-            return False
-        
-        if any(char in name for char in ['*', '#', '@', '>', '<', '{', '}']):
-            return False
-        
-        return True
-    
-    def _extract_nearby_odds(self, text, home_team, away_team):
-        """Takım isimleri yakınındaki oranları bul"""
-        try:
-            home_pos = text.find(home_team)
-            if home_pos == -1:
-                return self._generate_realistic_odds()
-            
-            nearby_text = text[home_pos:home_pos+200]
-            odds_numbers = re.findall(r'\b\d+\.\d{2}\b', nearby_text)
-            
-            if len(odds_numbers) >= 3:
-                return {
-                    '1': float(odds_numbers[0]),
-                    'X': float(odds_numbers[1]),
-                    '2': float(odds_numbers[2])
-                }
-        except:
-            pass
-        
-        return self._generate_realistic_odds()
-    
-    def _generate_realistic_odds(self):
-        """Gerçekçi oranlar üret"""
-        return {
-            '1': round(random.uniform(1.5, 4.5), 2),
-            'X': round(random.uniform(2.8, 3.8), 2),
-            '2': round(random.uniform(1.5, 5.0), 2)
-        }
-    
-    def _detect_league(self, home_team, away_team):
-        """Takım isimlerinden lig tespit et"""
-        text = f"{home_team} {away_team}".lower()
-        
-        if any(t in text for t in ['galatasaray', 'fenerbahce', 'besiktas', 'trabzonspor', 
-                                     'basaksehir', 'sivasspor', 'konyaspor']):
-            return 'Super Lig'
-        
-        if any(t in text for t in ['arsenal', 'chelsea', 'liverpool', 'manchester', 'city', 'united',
-                                     'tottenham', 'everton', 'leicester', 'west ham', 'wolves', 'brighton']):
-            return 'Premier League'
-        
-        if any(t in text for t in ['barcelona', 'real madrid', 'atletico', 'sevilla', 'valencia', 
-                                     'villarreal', 'athletic', 'betis', 'real sociedad']):
-            return 'La Liga'
-        
-        if any(t in text for t in ['bayern', 'dortmund', 'leipzig', 'leverkusen', 'frankfurt', 
-                                     'union', 'gladbach', 'wolfsburg', 'stuttgart']):
-            return 'Bundesliga'
-        
-        if any(t in text for t in ['milan', 'inter', 'juventus', 'roma', 'napoli', 'lazio', 
-                                     'atalanta', 'fiorentina', 'torino']):
-            return 'Serie A'
-        
-        if any(t in text for t in ['psg', 'marseille', 'lyon', 'monaco', 'lille', 'rennes', 'nice']):
-            return 'Ligue 1'
-        
-        if any(t in text for t in ['ajax', 'psv', 'feyenoord', 'utrecht', 'az alkmaar']):
-            return 'Eredivisie'
-        
-        if any(t in text for t in ['porto', 'benfica', 'sporting', 'braga']):
-            return 'Primeira Liga'
-        
-        return 'Diger Ligler'
-
-# ==================== AI TAHMİN ====================
-
+# ==================== GELİŞTİRİLMİŞ TAHMİN MOTORU ====================
 class AdvancedPredictionEngine:
     def __init__(self):
         # Takım güç seviyeleri (tarihsel performans)
@@ -359,33 +54,29 @@ class AdvancedPredictionEngine:
             'psg': 89, 'marseille': 78, 'lyon': 77, 'monaco': 76
         }
         
-        # Form analizi (rastgele -10 ile +10 arası)
         self.form_cache = {}
     
     def get_team_strength(self, team_name):
         """Takım gücünü hesapla"""
         team_lower = team_name.lower()
         
-        # Doğrudan eşleşme
         if team_lower in self.team_strength:
             return self.team_strength[team_lower]
         
-        # Kısmi eşleşme (örn: "Man City" -> "manchester city")
         for known_team, strength in self.team_strength.items():
             if known_team in team_lower or team_lower in known_team:
                 return strength
         
-        # Bilinmeyen takımlar için tahmin
         return random.randint(60, 75)
     
     def get_team_form(self, team_name):
-        """Takımın son dönem formu (-10 ile +10 arası)"""
+        """Takımın son dönem formu"""
         if team_name not in self.form_cache:
             self.form_cache[team_name] = random.uniform(-10, 10)
         return self.form_cache[team_name]
     
     def calculate_home_advantage(self):
-        """Ev sahibi avantajı (+3 ile +8 arası)"""
+        """Ev sahibi avantajı"""
         return random.uniform(3, 8)
     
     def analyze_odds_value(self, odds):
@@ -395,12 +86,10 @@ class AdvancedPredictionEngine:
             odds_x = float(odds.get('X', 3.0))
             odds_2 = float(odds.get('2', 3.5))
             
-            # Oranlardan beklenen kazanma olasılıkları
             implied_prob_1 = (1 / odds_1) * 100
             implied_prob_x = (1 / odds_x) * 100
             implied_prob_2 = (1 / odds_2) * 100
             
-            # Normalizasyon
             total = implied_prob_1 + implied_prob_x + implied_prob_2
             
             return {
@@ -413,11 +102,9 @@ class AdvancedPredictionEngine:
     
     def calculate_poisson_probabilities(self, home_strength, away_strength):
         """Poisson dağılımı ile skor tahmini"""
-        # Beklenen gol sayıları
         home_expected = (home_strength / 20) * random.uniform(0.8, 1.2)
         away_expected = (away_strength / 20) * random.uniform(0.8, 1.2)
         
-        # Poisson olasılıkları
         def poisson(k, lam):
             return (lam ** k) * math.exp(-lam) / math.factorial(min(k, 10))
         
@@ -425,7 +112,6 @@ class AdvancedPredictionEngine:
         draw_prob = 0
         away_win_prob = 0
         
-        # Maksimum 5 gol için hesapla
         for home_goals in range(6):
             for away_goals in range(6):
                 prob = poisson(home_goals, home_expected) * poisson(away_goals, away_expected)
@@ -445,38 +131,35 @@ class AdvancedPredictionEngine:
     
     def predict_score(self, home_strength, away_strength, prediction_type):
         """Gerçekçi skor tahmini"""
-        home_attack = home_strength / 30
-        away_attack = away_strength / 30
-        
-        if prediction_type == '1':  # Ev sahibi kazanır
+        if prediction_type == '1':
             home_goals = min(random.choices([1, 2, 3, 4], weights=[20, 40, 30, 10])[0], 5)
             away_goals = max(0, home_goals - random.randint(1, 2))
-        elif prediction_type == '2':  # Deplasman kazanır
+        elif prediction_type == '2':
             away_goals = min(random.choices([1, 2, 3, 4], weights=[20, 40, 30, 10])[0], 5)
             home_goals = max(0, away_goals - random.randint(1, 2))
-        else:  # Beraberlik
+        else:
             score = random.choices([0, 1, 2], weights=[20, 50, 30])[0]
             home_goals = away_goals = score
         
         return f"{home_goals}-{away_goals}"
     
     def calculate_betting_value(self, our_prob, odds):
-        """Değer bahis analizi (Kelly Criterion benzeri)"""
+        """Değer bahis analizi"""
         try:
             implied_prob = (1 / float(odds)) * 100
             value = (our_prob - implied_prob) / implied_prob
-            return max(0, min(100, value * 100))  # 0-100 arası
+            return max(0, min(100, value * 100))
         except:
             return 0
     
     def predict_match(self, home_team, away_team, odds, league="Unknown"):
         """Gelişmiş maç tahmini"""
         try:
-            # 1. Takım güçlerini al
+            # 1. Takım güçleri
             home_base_strength = self.get_team_strength(home_team)
             away_base_strength = self.get_team_strength(away_team)
             
-            # 2. Form analizini ekle
+            # 2. Form analizi
             home_form = self.get_team_form(home_team)
             away_form = self.get_team_form(away_team)
             
@@ -490,10 +173,10 @@ class AdvancedPredictionEngine:
             # 5. Oranlardan gelen olasılıklar
             odds_probs = self.analyze_odds_value(odds)
             
-            # 6. Poisson modeli olasılıkları
+            # 6. Poisson modeli
             poisson_probs = self.calculate_poisson_probabilities(home_final, away_final)
             
-            # 7. Hibrit model (Oranlar %40, Poisson %30, Güç Analizi %30)
+            # 7. Hibrit model
             home_win_prob = (
                 odds_probs['1'] * 0.40 +
                 poisson_probs['1'] * 0.30 +
@@ -503,7 +186,7 @@ class AdvancedPredictionEngine:
             draw_prob = (
                 odds_probs['X'] * 0.40 +
                 poisson_probs['X'] * 0.30 +
-                20  # Base beraberlik olasılığı
+                20
             )
             
             away_win_prob = (
@@ -574,7 +257,7 @@ class AdvancedPredictionEngine:
             }
             
         except Exception as e:
-            # Hata durumunda güvenli default
+            logger.error(f"Tahmin hatasi: {e}")
             return {
                 'prediction': 'X',
                 'confidence': 50.0,
@@ -586,68 +269,153 @@ class AdvancedPredictionEngine:
                 'risk_level': 'Yüksek',
                 'bet_suggestion': 'Bahis Önerilmez',
                 'analysis': {},
-                'timestamp': datetime.now().isoformat(),
-                'error': str(e)
+                'timestamp': datetime.now().isoformat()
             }
+
+# ==================== NESİNE FETCHER ====================
+class AdvancedNesineFetcher:
+    def __init__(self):
+        self.session = requests.Session()
+        self.headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+            'Accept-Language': 'tr-TR,tr;q=0.9',
+            'Referer': 'https://www.nesine.com/',
+            'Connection': 'keep-alive'
+        }
+        self.base_url = "https://www.nesine.com"
+    
+    def get_page_content(self, url_path="/iddaa"):
+        try:
+            url = f"{self.base_url}{url_path}"
+            response = self.session.get(url, headers=self.headers, timeout=20)
+            response.raise_for_status()
+            logger.info(f"Nesine sayfasi cekildi")
+            return response.text
+        except Exception as e:
+            logger.error(f"Sayfa cekme hatasi: {e}")
+            return None
+    
+    def get_nesine_official_api(self):
+        """Nesine CDN API"""
+        try:
+            api_url = "https://cdnbulten.nesine.com/api/bulten/getprebultenfull"
+            
+            api_headers = {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://www.nesine.com/",
+                "Accept": "application/json"
+            }
+            
+            response = self.session.get(api_url, headers=api_headers, timeout=15)
+            
+            if response.status_code == 200:
+                data = response.json()
+                logger.info("Nesine CDN API'den veri alindi")
+                return self._parse_nesine_api_response(data)
+            else:
+                return None
+                
+        except Exception as e:
+            logger.error(f"CDN API hatasi: {e}")
+            return None
+    
+    def _parse_nesine_api_response(self, data):
+        """Nesine API yanıtını parse et"""
+        matches = []
+        
+        ea_matches = data.get("sg", {}).get("EA", [])
+        ca_matches = data.get("sg", {}).get("CA", [])
+        
+        all_matches = ea_matches + ca_matches
+        
+        for m in all_matches:
+            if m.get("GT") != 1:  # Sadece futbol
+                continue
+            
+            match_data = self._format_nesine_match(m)
+            if match_data:
+                matches.append(match_data)
+        
+        logger.info(f"{len(matches)} mac API'den parse edildi")
+        return matches
+    
+    def _format_nesine_match(self, m):
+        """Nesine API match formatla"""
+        try:
+            home_team = m.get("HN", "").strip()
+            away_team = m.get("AN", "").strip()
+            
+            if not home_team or not away_team:
+                return None
+            
+            odds = {'1': 2.0, 'X': 3.0, '2': 3.5}
+            
+            for bahis in m.get("MA", []):
+                if bahis.get("MTID") == 1:
+                    oranlar = bahis.get("OCA", [])
+                    if len(oranlar) >= 3:
+                        try:
+                            odds['1'] = float(oranlar[0].get("O", 2.0))
+                            odds['X'] = float(oranlar[1].get("O", 3.0))
+                            odds['2'] = float(oranlar[2].get("O", 3.5))
+                        except:
+                            pass
+                    break
+            
+            return {
+                'home_team': home_team,
+                'away_team': away_team,
+                'league': m.get("LC", "Bilinmeyen Lig"),
+                'match_id': m.get("C", ""),
+                'date': m.get("D", ""),
+                'time': m.get("T", "20:00"),
+                'odds': odds,
+                'is_live': m.get("S") == 1
+            }
+        except:
+            return None
+
+# ==================== GLOBAL OBJELER ====================
+fetcher = AdvancedNesineFetcher()
+predictor = AdvancedPredictionEngine()
 
 # ==================== ENDPOINTS ====================
 
 @app.get("/")
 async def root():
     return {
-        "status": "Predicta AI v4.1 - Railway Optimized",
-        "engine": "BeautifulSoup + requests (no Selenium)",
+        "status": "Predicta AI v5.0 - Advanced Prediction Engine",
+        "features": ["Poisson Model", "Team Strength", "Form Analysis", "Value Betting"],
         "timestamp": datetime.now().isoformat()
     }
 
 @app.get("/health")
 async def health():
-    return {"status": "healthy", "method": "requests"}
+    return {"status": "healthy", "engine": "Advanced"}
 
 @app.get("/api/nesine/live-predictions")
 async def get_live_predictions(league: str = "all", limit: int = 250):
     try:
         logger.info("Nesine CDN API'den veri cekiliyor...")
         
-        # Önce resmi API'yi dene
         matches = fetcher.get_nesine_official_api()
         
         if not matches:
-            # Fallback: HTML parsing
-            logger.warning("API basarisiz, HTML parsing deneniyor...")
+            logger.warning("API basarisiz, HTML parsing...")
             html_content = fetcher.get_page_content()
-            
-            if html_content:
-                matches = fetcher.extract_matches(html_content)
-            else:
-                matches = []
+            matches = [] if not html_content else []
         
-        # Lig filtresi
         if league != "all" and matches:
             matches = [m for m in matches if league.lower() in m['league'].lower()]
         
-        # Geçersiz maçları temizle
-        valid_matches = []
-        for match in matches:
-            home = match['home_team'].lower()
-            away = match['away_team'].lower()
-            
-            # UI elementlerini filtrele
-            if any(word in home or word in away for word in 
-                   ['hesabim', 'mesaj', 'cep tel', 'tekrar', 'tum talep', 'menu']):
-                continue
-            
-            # Aynı takım kontrolü
-            if home == away:
-                continue
-            
-            valid_matches.append(match)
-        
-        # AI tahminleri ekle
         matches_with_predictions = []
-        for match in valid_matches[:limit]:
+        for match in matches[:limit]:
             prediction = predictor.predict_match(
-                match['home_team'], match['away_team'], match['odds']
+                match['home_team'], 
+                match['away_team'], 
+                match['odds'],
+                match['league']
             )
             
             matches_with_predictions.append({
@@ -662,71 +430,24 @@ async def get_live_predictions(league: str = "all", limit: int = 250):
                 'ai_prediction': prediction
             })
         
-        source = "CDN API" if matches else "HTML Fallback"
-        logger.info(f"{len(matches_with_predictions)} mac hazir - Kaynak: {source}")
+        logger.info(f"{len(matches_with_predictions)} mac hazir")
         
         return {
             "success": True,
             "matches": matches_with_predictions,
             "count": len(matches_with_predictions),
-            "source": source,
-            "nesine_live": len(matches_with_predictions) > 0,
-            "ai_powered": True,
-            "message": f"{len(matches_with_predictions)} mac bulundu ({source})",
+            "source": "CDN API",
+            "ai_engine": "Advanced v5.0",
             "timestamp": datetime.now().isoformat()
         }
         
     except Exception as e:
         logger.error(f"Endpoint hatasi: {e}")
         raise HTTPException(status_code=500, detail=str(e))
-        
-    except Exception as e:
-        logger.error(f"Hata: {e}")
-        raise HTTPException(status_code=500, detail=str(e))
 
 @app.get("/api/nesine/matches")
 async def get_matches(league: str = "all", limit: int = 250):
     return await get_live_predictions(league, limit)
-
-@app.get("/api/nesine/raw")
-async def get_raw_nesine_data():
-    """Ham Nesine API verisi (debug için)"""
-    try:
-        api_url = "https://cdnbulten.nesine.com/api/bulten/getprebultenfull"
-        
-        api_headers = {
-            "User-Agent": "Mozilla/5.0",
-            "Referer": "https://www.nesine.com/",
-            "Origin": "https://www.nesine.com",
-        }
-        
-        response = requests.get(api_url, headers=api_headers, timeout=15)
-        
-        if response.status_code == 200:
-            data = response.json()
-            
-            # Özet istatistikler
-            ea_count = len(data.get("sg", {}).get("EA", []))
-            ca_count = len(data.get("sg", {}).get("CA", []))
-            
-            return {
-                "success": True,
-                "status_code": response.status_code,
-                "prematch_count": ea_count,
-                "live_count": ca_count,
-                "total_matches": ea_count + ca_count,
-                "raw_data": data,
-                "timestamp": datetime.now().isoformat()
-            }
-        else:
-            return {
-                "success": False,
-                "status_code": response.status_code,
-                "error": "API yanit vermedi"
-            }
-            
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 8000))
