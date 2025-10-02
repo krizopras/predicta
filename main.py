@@ -119,14 +119,11 @@ class AdvancedNesineFetcher:
             if not home_team or not away_team:
                 return None
             
-            # Lig bilgisi
-            league_code = m.get("LC", "Bilinmeyen Lig")
-            league_category = self._categorize_league(league_code)
-            
             # 1X2 oranlarını bul
-            odds = {'1': 2.0, 'X': 3.0, '2': 3.5}
+            odds = {'1': 2.0, 'X': 3.0, '2': 3.5}  # Default
             
             for bahis in m.get("MA", []):
+                # MTID 1 = Maç Sonucu (1X2)
                 if bahis.get("MTID") == 1:
                     oranlar = bahis.get("OCA", [])
                     if len(oranlar) >= 3:
@@ -141,86 +138,17 @@ class AdvancedNesineFetcher:
             return {
                 'home_team': home_team,
                 'away_team': away_team,
-                'league': league_code,
-                'league_category': league_category,
+                'league': m.get("LC", "Bilinmeyen Lig"),
                 'league_id': m.get("LID", ""),
                 'match_id': m.get("C", ""),
                 'date': m.get("D", ""),
                 'time': m.get("T", "20:00"),
                 'odds': odds,
-                'is_live': m.get("S") == 1
+                'is_live': m.get("S") == 1  # 1 = canlı
             }
         except Exception as e:
             logger.debug(f"Match format hatasi: {e}")
             return None
-    
-    def _categorize_league(self, league_code):
-        """Lig kategorisi belirle"""
-        league_lower = league_code.lower()
-        
-        # Şampiyonlar Ligi
-        if any(x in league_lower for x in ['şampiyonlar', 'champions', 'ucl']):
-            return 'UEFA Şampiyonlar Ligi'
-        
-        # Avrupa Ligi
-        if any(x in league_lower for x in ['avrupa ligi', 'europa', 'uel']):
-            return 'UEFA Avrupa Ligi'
-        
-        # Conference League
-        if any(x in league_lower for x in ['conference']):
-            return 'UEFA Conference League'
-        
-        # Türkiye
-        if any(x in league_lower for x in ['süper lig', 'super lig', 'turkiye']):
-            return 'Türkiye Süper Lig'
-        if any(x in league_lower for x in ['1. lig', '1 lig']):
-            return 'Türkiye 1. Lig'
-        
-        # İngiltere
-        if any(x in league_lower for x in ['premier', 'ingiltere', 'england']):
-            return 'Premier League'
-        if any(x in league_lower for x in ['championship']):
-            return 'Championship'
-        
-        # İspanya
-        if any(x in league_lower for x in ['la liga', 'ispanya', 'spain']):
-            return 'La Liga'
-        if any(x in league_lower for x in ['segunda']):
-            return 'La Liga 2'
-        
-        # Almanya
-        if any(x in league_lower for x in ['bundesliga', 'almanya', 'germany']):
-            return 'Bundesliga'
-        if any(x in league_lower for x in ['2. bundesliga']):
-            return 'Bundesliga 2'
-        
-        # İtalya
-        if any(x in league_lower for x in ['serie a', 'italya', 'italy']):
-            return 'Serie A'
-        if any(x in league_lower for x in ['serie b']):
-            return 'Serie B'
-        
-        # Fransa
-        if any(x in league_lower for x in ['ligue 1', 'fransa', 'france']):
-            return 'Ligue 1'
-        if any(x in league_lower for x in ['ligue 2']):
-            return 'Ligue 2'
-        
-        # Hollanda
-        if any(x in league_lower for x in ['eredivisie', 'hollanda', 'netherlands']):
-            return 'Eredivisie'
-        
-        # Portekiz
-        if any(x in league_lower for x in ['primeira', 'portekiz', 'portugal']):
-            return 'Primeira Liga'
-        
-        # Diğer Avrupa Ligleri
-        if any(x in league_lower for x in ['belcika', 'belgium']):
-            return 'Belçika Pro League'
-        if any(x in league_lower for x in ['iskoçya', 'scotland']):
-            return 'İskoçya Premiership'
-        
-        return league_code
     
     def extract_matches(self, html_content):
         """GELİŞTİRİLMİŞ: TÜM maçları yakalar"""
@@ -470,7 +398,7 @@ async def health():
     return {"status": "healthy", "method": "requests"}
 
 @app.get("/api/nesine/live-predictions")
-async def get_live_predictions(league: str = "all", limit: int = 50):
+async def get_live_predictions(league: str = "all", limit: int = 250):
     try:
         logger.info("Nesine CDN API'den veri cekiliyor...")
         
@@ -518,8 +446,7 @@ async def get_live_predictions(league: str = "all", limit: int = 50):
             matches_with_predictions.append({
                 'home_team': match['home_team'],
                 'away_team': match['away_team'],
-                'league': match.get('league_category', match['league']),
-                'league_original': match['league'],
+                'league': match['league'],
                 'match_id': match.get('match_id', ''),
                 'time': match.get('time', '20:00'),
                 'date': match.get('date', datetime.now().strftime('%Y-%m-%d')),
@@ -554,75 +481,6 @@ async def get_live_predictions(league: str = "all", limit: int = 50):
 async def get_matches(league: str = "all", limit: int = 50):
     return await get_live_predictions(league, limit)
 
-@app.get("/api/nesine/leagues")
-async def get_available_leagues():
-    """Mevcut ligleri listele"""
-    try:
-        matches = fetcher.get_nesine_official_api()
-        
-        if not matches:
-            return {"success": False, "leagues": []}
-        
-        # Benzersiz lig kategorileri
-        leagues = {}
-        for match in matches:
-            category = match.get('league_category', 'Diğer')
-            if category not in leagues:
-                leagues[category] = 0
-            leagues[category] += 1
-        
-        # Sırala
-        sorted_leagues = [
-            {"name": k, "count": v} 
-            for k, v in sorted(leagues.items(), key=lambda x: x[1], reverse=True)
-        ]
-        
-        return {
-            "success": True,
-            "leagues": sorted_leagues,
-            "total": len(sorted_leagues)
-        }
-        
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
-    """Ham Nesine API verisi (debug için)"""
-    try:
-        api_url = "https://cdnbulten.nesine.com/api/bulten/getprebultenfull"
-        
-        api_headers = {
-            "User-Agent": "Mozilla/5.0",
-            "Referer": "https://www.nesine.com/",
-            "Origin": "https://www.nesine.com",
-        }
-        
-        response = requests.get(api_url, headers=api_headers, timeout=15)
-        
-        if response.status_code == 200:
-            data = response.json()
-            
-            # Özet istatistikler
-            ea_count = len(data.get("sg", {}).get("EA", []))
-            ca_count = len(data.get("sg", {}).get("CA", []))
-            
-            return {
-                "success": True,
-                "status_code": response.status_code,
-                "prematch_count": ea_count,
-                "live_count": ca_count,
-                "total_matches": ea_count + ca_count,
-                "raw_data": data,
-                "timestamp": datetime.now().isoformat()
-            }
-        else:
-            return {
-                "success": False,
-                "status_code": response.status_code,
-                "error": "API yanit vermedi"
-            }
-            
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
-
 @app.get("/api/nesine/raw")
 async def get_raw_nesine_data():
     """Ham Nesine API verisi (debug için)"""
@@ -640,6 +498,7 @@ async def get_raw_nesine_data():
         if response.status_code == 200:
             data = response.json()
             
+            # Özet istatistikler
             ea_count = len(data.get("sg", {}).get("EA", []))
             ca_count = len(data.get("sg", {}).get("CA", []))
             
