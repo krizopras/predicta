@@ -6,6 +6,7 @@ Railway Production Ready
 """
 import os
 import logging
+from playwright.async_api import async_playwright
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import HTMLResponse
@@ -265,6 +266,11 @@ async def get_live_predictions(league: str = "all", limit: int = 20):
         )
 
 @app.get("/api/nesine/matches")
+async def scrape_nesine():
+    async with async_playwright() as p:
+        browser = await p.chromium.launch(headless=True)
+        page = await browser.new_page()
+        await page.goto("https://www.nesine.com/iddaa")
 async def get_matches(league: str = "all", limit: int = 20):
     """Geriye dönük uyumluluk için eski endpoint"""
     return await get_live_predictions(league, limit)
