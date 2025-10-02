@@ -1,32 +1,25 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-PREDICTA AI - TAM ÇALIŞAN VERSİYON
-Railway Production Ready
+PREDICTA AI - NESİNE FETCHER ENTEGRELİ VERSİYON
 """
 import os
 import logging
-from playwright.async_api import async_playwright
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import HTMLResponse
 from datetime import datetime
 import uvicorn
 import random
+import requests
+from bs4 import BeautifulSoup
+import re
 
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
-)
+logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-app = FastAPI(
-    title="Predicta AI API",
-    description="AI Powered Football Predictions - Production v3.0",
-    version="3.0"
-)
+app = FastAPI(title="Predicta AI API", version="3.1")
 
-# CORS
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -35,33 +28,139 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# ==================== NESİNE FETCHER ====================
+class NesineCompleteFetcher:
+    def __init__(self):
+        self.session = requests.Session()
+        self.headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+        }
+        self.base_url = "https://www.nesine.com"
+    
+    def get_page_content(self, url_path="/iddaa"):
+        """Nesine sayfasının içeriğini çek"""
+        try:
+            url = f"{self.base_url}{url_path}"
+            response = self.session.get(url, headers=self.headers, timeout=10)
+            response.raise_for_status()
+            logger.info(f"Nesine sayfası çekildi: {url}")
+            return response.text
+        except Exception as e:
+            logger.error(f"Sayfa çekme hatası: {e}")
+            return None
+    
+    def extract_leagues_and_matches(self, html_content):
+        """HTML'den lig ve maç bilgilerini çıkar"""
+        soup = BeautifulSoup(html_content, 'html.parser')
+        data = {
+            "leagues": [],
+            "matches": []
+        }
+        
+        # Ligleri çıkar
+        league_patterns = {
+            "Premier League": ["Premier League", "İngiltere"],
+            "La Liga": ["La Liga", "İspanya"],
+            "Bundesliga": ["Bundesliga", "Almanya"],
+            "Serie A": ["Serie A", "İtalya"],
+            "Ligue 1": ["Ligue 1", "Fransa"],
+            "Süper Lig": ["Süper Lig", "Türkiye"]
+        }
+        
+        all_text = soup.get_text()
+        for league_name, keywords in league_patterns.items():
+            for keyword in keywords:
+                if keyword in all_text:
+                    data["leagues"].append(league_name)
+                    break
+        
+        # Maçları çıkar
+        match_elements = soup.find_all(['div', 'tr'], class_=re.compile(r'match|event|game|fixture'))
+        
+        for element in match_elements[:20]:  # İlk 20 maç
+            match_data = self._parse_match_element(element)
+            if match_data:
+                data["matches"].append(match_data)
+        
+        logger.info(f"Nesine'den {len(data['matches'])} maç çekildi")
+        return data
+    
+    def _parse_match_element(self, element):
+        """Maç elementini parse et"""
+        try:
+            # Takım isimlerini bul
+            teams = element.find_all(['span', 'div'], class_=re.compile(r'team|name'))
+            if len(teams) >= 2:
+                home_team = teams[0].get_text(strip=True)
+                away_team = teams[1].get_text(strip=True)
+                
+                # Oranları bul
+                odds_elements = element.find_all(['span', 'button'], class_=re.compile(r'odd|rate|value'))
+                odds_values = []
+                
+                for odd in odds_elements[:3]:
+                    try:
+                        odds_values.append(float(odd.get_text(strip=True)))
+                    except:
+                        odds_values.append(2.0)
+                
+                if len(odds_values) < 3:
+                    odds_values = [2.0, 3.0, 3.5]
+                
+                return {
+                    "home_team": home_team,
+                    "away_team": away_team,
+                    "league": self._detect_league_from_teams(home_team, away_team),
+                    "odds": {
+                        '1': odds_values[0],
+                        'X': odds_values[1],
+                        '2': odds_values[2]
+                    }
+                }
+        except Exception as e:
+            logger.debug(f"Maç parse hatası: {e}")
+        return None
+    
+    def _detect_league_from_teams(self, home_team, away_team):
+        """Takım isimlerinden lig tahmini"""
+        team_leagues = {
+            "Arsenal": "Premier League", "Chelsea": "Premier League", "Liverpool": "Premier League",
+            "Real Madrid": "La Liga", "Barcelona": "La Liga", "Atletico": "La Liga",
+            "Bayern": "Bundesliga", "Dortmund": "Bundesliga",
+            "Milan": "Serie A", "Inter": "Serie A", "Juventus": "Serie A",
+            "Galatasaray": "Süper Lig", "Fenerbahçe": "Süper Lig", "Beşiktaş": "Süper Lig"
+        }
+        
+        for team, league in team_leagues.items():
+            if team in home_team or team in away_team:
+                return league
+        
+        return "Bilinmeyen Lig"
+
 # ==================== AI TAHMİN MOTORU ====================
 class AdvancedPredictionEngine:
-    """Gelişmiş tahmin motoru - oranlardan olasılık hesaplama"""
-    
     def __init__(self):
         self.accuracy = 0.78
-        logger.info("AI Prediction Engine başlatıldı")
     
-    def predict_match(self, home_team: str, away_team: str, odds: dict) -> dict:
-        """Maç tahmini üret - odds bazlı"""
+    def predict_match(self, home_team, away_team, odds):
+        """AI tahmin üret"""
         try:
             odds_1 = float(odds.get('1', 2.0))
             odds_x = float(odds.get('X', 3.0))
             odds_2 = float(odds.get('2', 3.5))
             
-            # Implied probability hesapla
+            # Implied probability
             prob_1 = (1 / odds_1) * 100
             prob_x = (1 / odds_x) * 100
             prob_2 = (1 / odds_2) * 100
             
-            # Normalize et
+            # Normalize
             total = prob_1 + prob_x + prob_2
             prob_1 = (prob_1 / total) * 100
             prob_x = (prob_x / total) * 100
             prob_2 = (prob_2 / total) * 100
             
-            # En yüksek olasılığı bul
+            # En yüksek olasılık
             max_prob = max(prob_1, prob_x, prob_2)
             
             if max_prob == prob_1:
@@ -86,152 +185,83 @@ class AdvancedPredictionEngine:
                 'score_prediction': score,
                 'timestamp': datetime.now().isoformat()
             }
-            
         except Exception as e:
             logger.error(f"Tahmin hatası: {e}")
-            return self._fallback_prediction()
-    
-    def _fallback_prediction(self) -> dict:
-        """Hata durumunda varsayılan tahmin"""
-        return {
-            'prediction': 'X',
-            'confidence': 50.0,
-            'home_win_prob': 33.3,
-            'draw_prob': 33.3,
-            'away_win_prob': 33.3,
-            'score_prediction': '1-1',
-            'timestamp': datetime.now().isoformat()
-        }
+            return {
+                'prediction': 'X',
+                'confidence': 50.0,
+                'home_win_prob': 33.3,
+                'draw_prob': 33.3,
+                'away_win_prob': 33.3,
+                'score_prediction': '1-1',
+                'timestamp': datetime.now().isoformat()
+            }
 
-# AI Engine instance
+# Global instances
+nesine_fetcher = NesineCompleteFetcher()
 prediction_engine = AdvancedPredictionEngine()
 
-# ==================== ÖRNEK MAÇ VERİLERİ ====================
-def get_sample_matches():
-    """Gerçekçi örnek maçlar"""
+# ==================== FALLBACK VERİLER ====================
+def get_fallback_matches():
+    """Nesine çalışmazsa fallback veriler"""
     return [
-        {
-            'home_team': 'Galatasaray',
-            'away_team': 'Fenerbahçe',
-            'league': 'Süper Lig',
-            'odds': {'1': 2.10, 'X': 3.40, '2': 3.20}
-        },
-        {
-            'home_team': 'Beşiktaş',
-            'away_team': 'Trabzonspor',
-            'league': 'Süper Lig',
-            'odds': {'1': 2.30, 'X': 3.20, '2': 3.10}
-        },
-        {
-            'home_team': 'Manchester City',
-            'away_team': 'Liverpool',
-            'league': 'Premier League',
-            'odds': {'1': 1.90, 'X': 3.60, '2': 3.80}
-        },
-        {
-            'home_team': 'Barcelona',
-            'away_team': 'Real Madrid',
-            'league': 'La Liga',
-            'odds': {'1': 2.40, 'X': 3.50, '2': 2.80}
-        },
-        {
-            'home_team': 'Bayern Munich',
-            'away_team': 'Borussia Dortmund',
-            'league': 'Bundesliga',
-            'odds': {'1': 1.80, 'X': 3.80, '2': 4.20}
-        },
-        {
-            'home_team': 'Inter Milan',
-            'away_team': 'AC Milan',
-            'league': 'Serie A',
-            'odds': {'1': 2.20, 'X': 3.30, '2': 3.40}
-        },
-        {
-            'home_team': 'PSG',
-            'away_team': 'Marseille',
-            'league': 'Ligue 1',
-            'odds': {'1': 1.75, 'X': 3.90, '2': 4.50}
-        },
-        {
-            'home_team': 'Kayserispor',
-            'away_team': 'Konyaspor',
-            'league': 'Süper Lig',
-            'odds': {'1': 2.50, 'X': 3.10, '2': 2.90}
-        },
-        {
-            'home_team': 'Arsenal',
-            'away_team': 'Chelsea',
-            'league': 'Premier League',
-            'odds': {'1': 2.05, 'X': 3.50, '2': 3.60}
-        },
-        {
-            'home_team': 'Atletico Madrid',
-            'away_team': 'Sevilla',
-            'league': 'La Liga',
-            'odds': {'1': 1.95, 'X': 3.40, '2': 4.00}
-        },
-        {
-            'home_team': 'Başakşehir',
-            'away_team': 'Sivasspor',
-            'league': 'Süper Lig',
-            'odds': {'1': 2.15, 'X': 3.25, '2': 3.30}
-        },
-        {
-            'home_team': 'Tottenham',
-            'away_team': 'Manchester United',
-            'league': 'Premier League',
-            'odds': {'1': 2.35, 'X': 3.40, '2': 3.00}
-        }
+        {'home_team': 'Galatasaray', 'away_team': 'Fenerbahçe', 'league': 'Süper Lig', 'odds': {'1': 2.10, 'X': 3.40, '2': 3.20}},
+        {'home_team': 'Beşiktaş', 'away_team': 'Trabzonspor', 'league': 'Süper Lig', 'odds': {'1': 2.30, 'X': 3.20, '2': 3.10}},
+        {'home_team': 'Manchester City', 'away_team': 'Liverpool', 'league': 'Premier League', 'odds': {'1': 1.90, 'X': 3.60, '2': 3.80}},
+        {'home_team': 'Barcelona', 'away_team': 'Real Madrid', 'league': 'La Liga', 'odds': {'1': 2.40, 'X': 3.50, '2': 2.80}},
+        {'home_team': 'Bayern Munich', 'away_team': 'Dortmund', 'league': 'Bundesliga', 'odds': {'1': 1.80, 'X': 3.80, '2': 4.20}},
     ]
 
 # ==================== ENDPOINTS ====================
 
 @app.get("/")
 async def root():
-    """Ana sayfa - health check"""
     return {
-        "status": "Predicta AI v3.0 Çalışıyor",
-        "endpoints": {
-            "predictions": "/api/nesine/live-predictions",
-            "matches": "/api/nesine/matches",
-            "health": "/health",
-            "docs": "/docs"
-        },
+        "status": "Predicta AI v3.1 - Nesine Entegre",
+        "nesine_fetcher": "active",
         "ai_engine": "active",
         "timestamp": datetime.now().isoformat()
     }
 
 @app.get("/health")
 async def health():
-    """Sağlık kontrolü"""
     return {
         "status": "healthy",
-        "ai_engine": "active",
-        "accuracy": prediction_engine.accuracy,
-        "timestamp": datetime.now().isoformat()
+        "nesine": "integrated",
+        "ai": "active"
     }
 
 @app.get("/api/nesine/live-predictions")
 async def get_live_predictions(league: str = "all", limit: int = 20):
-    """
-    ANA ENDPOINT - Maçlar + AI Tahminleri
-    """
+    """ANA ENDPOINT - Nesine + AI"""
     try:
-        logger.info(f"Tahmin isteği alındı - Lig: {league}, Limit: {limit}")
+        logger.info("Nesine'den veri çekiliyor...")
         
-        # Örnek maçları al
-        sample_matches = get_sample_matches()
+        # Nesine'den veri çek
+        html_content = nesine_fetcher.get_page_content()
+        
+        if html_content:
+            # HTML'i parse et
+            nesine_data = nesine_fetcher.extract_leagues_and_matches(html_content)
+            matches = nesine_data.get('matches', [])
+            nesine_live = True
+            
+            if not matches:
+                logger.warning("Nesine'den maç çekilemedi, fallback kullanılıyor")
+                matches = get_fallback_matches()
+                nesine_live = False
+        else:
+            logger.warning("Nesine sayfası çekilemedi, fallback kullanılıyor")
+            matches = get_fallback_matches()
+            nesine_live = False
         
         # Lig filtresi
         if league != "all":
-            sample_matches = [
-                m for m in sample_matches 
-                if league.lower() in m['league'].lower()
-            ]
+            matches = [m for m in matches if league.lower() in m['league'].lower()]
         
         # Her maça AI tahmini ekle
         matches_with_predictions = []
-        for match in sample_matches[:limit]:
+        for match in matches[:limit]:
             prediction = prediction_engine.predict_match(
                 match['home_team'],
                 match['away_team'],
@@ -246,161 +276,40 @@ async def get_live_predictions(league: str = "all", limit: int = 20):
             }
             matches_with_predictions.append(match_data)
         
-        logger.info(f"{len(matches_with_predictions)} maç tahmini üretildi")
+        source_text = "Canlı Nesine verisi" if nesine_live else "Fallback veriler"
+        logger.info(f"{len(matches_with_predictions)} maç döndürülüyor - Kaynak: {source_text}")
         
         return {
             "success": True,
             "matches": matches_with_predictions,
             "count": len(matches_with_predictions),
-            "nesine_live": False,
+            "nesine_live": nesine_live,
             "ai_powered": True,
-            "message": f"{len(matches_with_predictions)} maç AI tahmini ile oluşturuldu",
+            "message": f"{len(matches_with_predictions)} maç {source_text} + AI tahmini ile yüklendi",
             "timestamp": datetime.now().isoformat()
         }
         
     except Exception as e:
         logger.error(f"Endpoint hatası: {e}")
-        raise HTTPException(
-            status_code=500,
-            detail=f"Tahmin üretme hatası: {str(e)}"
-        )
+        raise HTTPException(status_code=500, detail=str(e))
 
 @app.get("/api/nesine/matches")
-async def scrape_nesine():
-    async with async_playwright() as p:
-        browser = await p.chromium.launch(headless=True)
-        page = await browser.new_page()
-        await page.goto("https://www.nesine.com/iddaa")
 async def get_matches(league: str = "all", limit: int = 20):
-    """Geriye dönük uyumluluk için eski endpoint"""
+    """Eski endpoint - geriye dönük uyumluluk"""
     return await get_live_predictions(league, limit)
 
 @app.get("/api/team/{team_name}")
-async def get_team_stats(team_name: str, league: str = "Süper Lig"):
-    """Takım istatistikleri"""
+async def get_team_stats(team_name: str):
     return {
         "success": True,
         "team": team_name,
-        "league": league,
         "stats": {
             "position": random.randint(1, 20),
             "points": random.randint(10, 60),
-            "form": random.choice(["WWDLW", "DWWWL", "LDDWW", "WWWDL"]),
-            "goals_for": random.randint(15, 45),
-            "goals_against": random.randint(10, 35),
-            "last_5_matches": random.choice(["3W-1D-1L", "4W-0D-1L", "2W-2D-1L"])
+            "form": random.choice(["WWDLW", "DWWWL", "LDDWW"])
         }
     }
-
-@app.get("/api/ai/performance")
-async def get_ai_performance():
-    """AI performans metrikleri"""
-    return {
-        "success": True,
-        "performance": {
-            "status": "active",
-            "accuracy": prediction_engine.accuracy,
-            "model": "AdvancedPredictionEngine",
-            "total_predictions": 1247,
-            "correct_predictions": 973,
-            "last_update": datetime.now().isoformat()
-        }
-    }
-
-@app.get("/ui")
-async def serve_ui():
-    """Basit UI - Test için"""
-    html = f"""
-    <!DOCTYPE html>
-    <html>
-    <head>
-        <title>Predicta AI - Backend</title>
-        <style>
-            body {{
-                font-family: Arial, sans-serif;
-                max-width: 800px;
-                margin: 50px auto;
-                padding: 20px;
-                background: linear-gradient(135deg, #1a237e, #3949ab);
-                color: white;
-            }}
-            .card {{
-                background: rgba(255,255,255,0.1);
-                padding: 20px;
-                margin: 20px 0;
-                border-radius: 12px;
-            }}
-            .status {{
-                padding: 10px;
-                background: #4caf50;
-                border-radius: 6px;
-                margin: 10px 0;
-            }}
-            a {{
-                color: #ffd700;
-                text-decoration: none;
-                display: block;
-                margin: 10px 0;
-            }}
-            a:hover {{
-                text-decoration: underline;
-            }}
-        </style>
-    </head>
-    <body>
-        <h1>Predicta AI Backend v3.0</h1>
-        <div class="status">Backend başarıyla çalışıyor</div>
-        
-        <div class="card">
-            <h3>API Endpoints:</h3>
-            <a href="/api/nesine/live-predictions">/api/nesine/live-predictions</a>
-            <a href="/api/nesine/matches">/api/nesine/matches</a>
-            <a href="/api/ai/performance">/api/ai/performance</a>
-            <a href="/health">/health</a>
-            <a href="/docs">/docs - API Documentation</a>
-        </div>
-        
-        <div class="card">
-            <h3>Frontend URL:</h3>
-            <p>index.html dosyanızı bir web sunucusunda host edin</p>
-            <p>veya GitHub Pages kullanın</p>
-        </div>
-        
-        <div class="card">
-            <h3>Test:</h3>
-            <pre id="test-result">Yükleniyor...</pre>
-        </div>
-        
-        <script>
-            fetch('/api/nesine/live-predictions?limit=3')
-                .then(r => r.json())
-                .then(data => {{
-                    document.getElementById('test-result').textContent = 
-                        JSON.stringify(data, null, 2);
-                }})
-                .catch(e => {{
-                    document.getElementById('test-result').textContent = 
-                        'Hata: ' + e.message;
-                }});
-        </script>
-    </body>
-    </html>
-    """
-    return HTMLResponse(html)
-
-# ==================== BAŞLATMA ====================
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 8000))
-    logger.info(f"Sunucu başlatılıyor - Port: {port}")
-    
-    try:
-        uvicorn.run(
-            "main:app",
-            host="0.0.0.0",
-            port=port,
-            log_level="info"
-        )
-    except Exception as e:
-        logger.error(f"Sunucu başlatma hatası: {e}")
-        raise
+    uvicorn.run("main:app", host="0.0.0.0", port=port, log_level="info")
