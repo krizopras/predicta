@@ -335,6 +335,71 @@ class ValueBetCalculator:
                 'kelly_criterion': 0
             }
 
+# ==================== SKOR TAHMİN MOTORU ====================
+class ScorePredictor:
+    """Geliştirilmiş skor tahmin motoru"""
+    
+    @staticmethod
+    def predict_score(home_team, away_team, prediction, probabilities, ratings, league_patterns):
+        """Daha gerçekçi skor tahmini"""
+        
+        # Takım güçlerine göre base gol beklentisi
+        home_attack = ratings['home_attack_rating'] / 10
+        home_defense = ratings['home_defense_rating'] / 10
+        away_attack = ratings['away_attack_rating'] / 10
+        away_defense = ratings['away_defense_rating'] / 10
+        
+        # Lig gol ortalaması
+        league_avg_goals = league_patterns['expected_goals']
+        
+        # Home gol beklentisi
+        home_goal_expectancy = (home_attack + away_defense) / 2 * (league_avg_goals / 2)
+        away_goal_expectancy = (away_attack + home_defense) / 2 * (league_avg_goals / 2)
+        
+        # Tahmin sonucuna göre adjust
+        if prediction == '1':
+            home_goal_expectancy *= 1.3
+            away_goal_expectancy *= 0.7
+        elif prediction == '2':
+            home_goal_expectancy *= 0.7
+            away_goal_expectancy *= 1.3
+        else:  # Beraberlik
+            home_goal_expectancy *= 0.9
+            away_goal_expectancy *= 0.9
+        
+        # Poisson dağılımı ile gol sayıları
+        home_goals = ScorePredictor._poisson_goals(home_goal_expectancy)
+        away_goals = ScorePredictor._poisson_goals(away_goal_expectancy)
+        
+        # Minimum 0 gol
+        home_goals = max(0, home_goals)
+        away_goals = max(0, away_goals)
+        
+        # Maksimum 5 gol (realistik sınır)
+        home_goals = min(5, home_goals)
+        away_goals = min(5, away_goals)
+        
+        # Beraberlik durumunda skorları yakınlaştır
+        if prediction == 'X':
+            if abs(home_goals - away_goals) > 1:
+                avg_goals = (home_goals + away_goals) // 2
+                home_goals = avg_goals
+                away_goals = avg_goals
+        
+        return f"{home_goals}-{away_goals}"
+    
+    @staticmethod
+    def _poisson_goals(expectancy):
+        """Poisson dağılımı ile gol sayısı hesapla"""
+        lam = expectancy
+        goals = 0
+        L = math.exp(-lam)
+        p = 1.0
+        while p > L:
+            goals += 1
+            p *= random.random()
+        return goals - 1
+
 # ==================== ANA TAHMİN MOTORU ====================
 class ProfessionalPredictionEngine:
     def __init__(self):
@@ -342,6 +407,7 @@ class ProfessionalPredictionEngine:
         self.pattern_analyzer = LeaguePatternAnalyzer()
         self.ml_model = MLEnsembleModel()
         self.value_calculator = ValueBetCalculator()
+        self.score_predictor = ScorePredictor()
         
         # Takım güç dereceleri
         self.team_strength = {
@@ -456,19 +522,12 @@ class ProfessionalPredictionEngine:
             # 10. VALUE BET ANALYSIS
             value_analysis = self.value_calculator.calculate_value_index(confidence, best_odds)
             
-            # 11. SCORE PREDICTION
-            expected_goals = league_patterns['expected_goals']
-            if prediction == '1':
-                home_goals = min(int(expected_goals * 0.65) + random.randint(0, 1), 4)
-                away_goals = max(0, home_goals - random.randint(1, 2))
-            elif prediction == '2':
-                away_goals = min(int(expected_goals * 0.65) + random.randint(0, 1), 4)
-                home_goals = max(0, away_goals - random.randint(1, 2))
-            else:
-                score = random.choice([1, 1, 2])
-                home_goals = away_goals = score
-            
-            score_prediction = f"{home_goals}-{away_goals}"
+            # 11. GELİŞTİRİLMİŞ SKOR PREDICTION
+            score_prediction = self.score_predictor.predict_score(
+                home_team, away_team, prediction, 
+                {'home_win': home_win_prob, 'draw': draw_prob, 'away_win': away_win_prob},
+                ratings, league_patterns
+            )
             
             # 12. RISK ASSESSMENT
             if confidence >= 70 and value_analysis['rating'] in ['EXCELLENT', 'GOOD']:
