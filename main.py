@@ -179,7 +179,7 @@ class RealMLModelTrainer:
         self.feature_names = ['home_elo', 'away_elo', 'home_attack', 'home_defense', 
                              'away_attack', 'away_defense', 'odds_1', 'odds_x', 'odds_2']
         
-    def generate_training_data(self, num_samples=5000):
+    def generate_training_data(self, num_samples=1000):
         """Training data oluştur"""
         data = []
         for _ in range(num_samples):
@@ -219,7 +219,7 @@ class RealMLModelTrainer:
         """ML modellerini eğit"""
         try:
             logger.info("Training ML models...")
-            df = self.generate_training_data(5000)
+            df = self.generate_training_data(1000)
             
             X = df[self.feature_names]
             y = df['result']
@@ -228,8 +228,8 @@ class RealMLModelTrainer:
             
             self.models = {
                 'logistic': LogisticRegression(multi_class='multinomial', max_iter=1000),
-                'random_forest': RandomForestClassifier(n_estimators=50, random_state=42),
-                'xgboost': xgb.XGBClassifier(n_estimators=50, random_state=42),
+                'random_forest': RandomForestClassifier(n_estimators=10, random_state=42),
+                'xgboost': xgb.XGBClassifier(n_estimators=10, random_state=42),
             }
             
             for name, model in self.models.items():
