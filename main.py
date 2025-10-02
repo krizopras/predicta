@@ -17,6 +17,10 @@ import numpy as np
 import pandas as pd
 from collections import defaultdict
 import json
+from sklearn.preprocessing import StandardScaler, LabelEncoder
+from sklearn.linear_model import LogisticRegression
+from sklearn.ensemble import RandomForestClassifier
+import xgboost as xgb
 from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import StandardScaler
@@ -305,13 +309,19 @@ class ValueBetCalculator:
             }
 
 # ==================== REAL ML MODEL ====================
+
 class RealMLModelTrainer:
     def __init__(self):
         self.models = {}
         self.scaler = StandardScaler()
         self.is_trained = False
-        self.feature_names = ['home_elo', 'away_elo', 'home_attack', 'home_defense', 
-                             'away_attack', 'away_defense', 'odds_1', 'odds_x', 'odds_2']
+        self.label_encoder = LabelEncoder()  # yeni eklendi
+        self.feature_names = [
+            'home_elo', 'away_elo',
+            'home_attack', 'home_defense',
+            'away_attack', 'away_defense',
+            'odds_1', 'odds_x', 'odds_2'
+        ]
         
     def generate_training_data(self, num_samples=1000):
         """Training data oluştur"""
@@ -331,8 +341,10 @@ class RealMLModelTrainer:
             
             # ELO bazlı sonuç
             home_win_prob = 1 / (1 + 10**((away_elo - home_elo - 100) / 400))
-            actual_result = np.random.choice(['1', 'X', '2'], 
-                                            p=[home_win_prob*0.85, 0.15, (1-home_win_prob)*0.85])
+            actual_result = np.random.choice(
+                ['1', 'X', '2'], 
+                p=[home_win_prob*0.85, 0.15, (1-home_win_prob)*0.85]
+            )
             
             data.append({
                 'home_elo': home_elo,
@@ -358,6 +370,9 @@ class RealMLModelTrainer:
             X = df[self.feature_names]
             y = df['result']
             
+            # ✅ LabelEncoder ile sayıya çeviriyoruz
+            y_encoded = self.label_encoder.fit_transform(y)
+            
             X_scaled = self.scaler.fit_transform(X)
             
             self.models = {
@@ -367,7 +382,7 @@ class RealMLModelTrainer:
             }
             
             for name, model in self.models.items():
-                model.fit(X_scaled, y)
+                model.fit(X_scaled, y_encoded)
                 logger.info(f"Trained {name}")
             
             self.is_trained = True
@@ -389,12 +404,20 @@ class RealMLModelTrainer:
             
             for name, model in self.models.items():
                 proba = model.predict_proba(X_scaled)[0]
-                class_order = list(model.classes_)
-                ordered_proba = [
-                    proba[class_order.index('1')],
-                    proba[class_order.index('X')],
-                    proba[class_order.index('2')]
-                ]
+                
+                # ✅ class order'u LabelEncoder üzerinden alıyoruz
+                class_order = list(model.classes_)  # bunlar 0,1,2
+                ordered_proba = [0,0,0]
+                
+                for i, class_id in enumerate(class_order):
+                    label = self.label_encoder.inverse_transform([class_id])[0]  # tekrar '1','X','2'
+                    if label == '1':
+                        ordered_proba[0] = proba[i]
+                    elif label == 'X':
+                        ordered_proba[1] = proba[i]
+                    elif label == '2':
+                        ordered_proba[2] = proba[i]
+                
                 predictions.append(np.array(ordered_proba) * weights[name])
             
             ensemble_proba = sum(predictions)
@@ -408,7 +431,9 @@ class RealMLModelTrainer:
             logger.error(f"Prediction error: {e}")
             return {'home_win': 0.33, 'draw': 0.34, 'away_win': 0.33}
 
+
 # ==================== DYNAMIC TEAM RATING ====================
+
 class DynamicTeamRating:
     def __init__(self):
         self.team_ratings = defaultdict(lambda: {
@@ -419,18 +444,23 @@ class DynamicTeamRating:
         })
     
     def get_team_rating(self, team_name, is_home=True):
-        """Takım rating'i"""
-        rating = self.team_ratings[team_name.lower()]
+        """Takım rating'i güvenli şekilde getir"""
+        if not team_name:  # None, boş string vs.
+            team_key = "unknown"
+        else:
+            team_key = str(team_name).lower().strip()  # int gelirse stringe çevir
+        
+        rating = self.team_ratings[team_key]
         
         elo_normalized = min(100, max(0, (rating['elo'] - 1300) / 7))
         
         return {
             'elo': rating['elo'],
             'normalized': elo_normalized,
-            'home_attack': rating['attack_strength'] * 25 if is_home else rating['attack_strength'] * 20,
-            'home_defense': (2 - rating['defense_strength']) * 25 if is_home else (2 - rating['defense_strength']) * 20,
-            'away_attack': rating['attack_strength'] * 20 if not is_home else rating['attack_strength'] * 15,
-            'away_defense': (2 - rating['defense_strength']) * 20 if not is_home else (2 - rating['defense_strength']) * 15,
+            'home_attack': rating['attack_strength'] * (25 if is_home else 20),
+            'home_defense': (2 - rating['defense_strength']) * (25 if is_home else 20),
+            'away_attack': rating['attack_strength'] * (20 if not is_home else 15),
+            'away_defense': (2 - rating['defense_strength']) * (20 if not is_home else 15),
             'overall': (elo_normalized + rating['attack_strength'] * 25 + (2 - rating['defense_strength']) * 25) / 3
         }
 
