@@ -1,6 +1,3 @@
-bütün maç skorları 1-1 geliyor
-
-
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
