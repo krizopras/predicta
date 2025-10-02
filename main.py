@@ -478,7 +478,7 @@ async def get_live_predictions(league: str = "all", limit: int = 250):
         raise HTTPException(status_code=500, detail=str(e))
 
 @app.get("/api/nesine/matches")
-async def get_matches(league: str = "all", limit: int = 50):
+async def get_matches(league: str = "all", limit: int = 250):
     return await get_live_predictions(league, limit)
 
 @app.get("/api/nesine/raw")
