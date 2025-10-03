@@ -520,7 +520,32 @@
                 <div id="content-area">
                     <div class="loading">
                         <div>AI tahmin motoru başlatılıyor...</div>
-                        <div style="margin-top: 20px;">Veriler çekiliyor...</div>
+                        <div style="margin-top: 10px;">
+                            <div style="font-size: 0.9rem; color: #b3c7f7;">
+                                Öneri: ${prediction.suggestion || 'Analiz yapılıyor'}
+                            </div>
+                            <div class="confidence-bar">
+                                <div class="confidence-fill ${confidenceClass}" style="width: ${confidence}%"></div>
+                            </div>
+                            <div style="text-align: right; font-size: 0.8rem; color: #ffd700; margin-top: 5px;">
+                                ${confidence.toFixed(1)}%
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+
+            html += '</div>';
+            contentArea.innerHTML = html;
+        }
+
+        window.addEventListener('load', () => {
+            loadMatches();
+            setInterval(loadMatches, 300000); // 5 dakikada bir
+        });
+    </script>
+</body>
+</html>top: 20px;">Veriler çekiliyor...</div>
                     </div>
                 </div>
             </div>
