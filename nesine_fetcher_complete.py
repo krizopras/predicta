@@ -1,126 +1,169 @@
 import requests
 from bs4 import BeautifulSoup
+import json
 import re
-import random
-import logging
-from typing import Dict, List, Any
 
-logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(__name__)
-
-class ImprovedNesineFetcher:
+class NesineCompleteFetcher:
     def __init__(self):
         self.session = requests.Session()
         self.headers = {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-            'Accept-Language': 'tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7',
-            'Accept-Encoding': 'gzip, deflate, br',
-            'Referer': 'https://www.nesine.com/',
-            'Connection': 'keep-alive',
-            'Upgrade-Insecure-Requests': '1'
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
         }
         self.base_url = "https://www.nesine.com"
     
-    # --- CDN API ÇEKME MANTIĞI (main.py'den taşındı) ---
-    def get_nesine_official_api(self) -> Optional[List[Dict[str, Any]]]:
-        """Nesine'nin resmi CDN API'sinden veri çek"""
-        try:
-            api_url = "https://cdnbulten.nesine.com/api/bulten/getprebultenfull"
-            
-            api_headers = {
-                "User-Agent": self.headers['User-Agent'],
-                "Referer": "https://www.nesine.com/",
-                "Origin": "https://www.nesine.com",
-                "Accept": "application/json"
-            }
-            
-            response = self.session.get(api_url, headers=api_headers, timeout=15)
-            response.raise_for_status()
-            
-            data = response.json()
-            logger.info(f"✅ Nesine CDN API'den {len(data.get('sg', {}).get('EA', []))} prematch, {len(data.get('sg', {}).get('CA', []))} canli mac alindi.")
-            return self._parse_nesine_api_response(data)
-                
-        except Exception as e:
-            logger.error(f"❌ CDN API hatasi veya yanit kodu hatasi: {e}")
-            return None
-    
-    def _parse_nesine_api_response(self, data: Dict) -> List[Dict[str, Any]]:
-        """Nesine API yanıtını parse et ve formatla"""
-        matches = []
-        # EA: Erken Açılan / Prematch Maçlar, CA: Canlı Maçlar
-        all_matches_raw = data.get("sg", {}).get("EA", []) + data.get("sg", {}).get("CA", [])
-        
-        for m in all_matches_raw:
-            if m.get("GT") != 1:  # Sadece futbol
-                continue
-            
-            home_team = m.get("HN", "").strip()
-            away_team = m.get("AN", "").strip()
-            
-            if not home_team or not away_team:
-                continue
-                
-            odds = self._extract_odds_from_api(m.get("MA", []))
-            
-            matches.append({
-                'home_team': home_team,
-                'away_team': away_team,
-                'league': m.get("LC", "Bilinmeyen Lig"),
-                'match_id': m.get("C", ""),
-                'date': m.get("D", ""),
-                'time': m.get("T", "20:00"),
-                'odds': odds,
-                'is_live': m.get("S") == 1
-            })
-        return matches
-
-    def _extract_odds_from_api(self, market_array: List[Dict]) -> Dict[str, float]:
-        """Maç Sonucu oranlarını çıkarır"""
-        odds = {'1': 2.0, 'X': 3.0, '2': 3.5}  # Default
-        for bahis in market_array:
-            if bahis.get("MTID") == 1:  # MTID 1 = Maç Sonucu (1X2)
-                oranlar = bahis.get("OCA", [])
-                if len(oranlar) >= 3:
-                    try:
-                        odds['1'] = float(oranlar[0].get("O", 2.0))
-                        odds['X'] = float(oranlar[1].get("O", 3.0))
-                        odds['2'] = float(oranlar[2].get("O", 3.5))
-                    except:
-                        pass
-                break
-        return odds
-
-    # --- HTML Fallback MANTIĞI (Mevcut dosyanızdan) ---
     def get_page_content(self, url_path="/iddaa"):
-        # ... (Bu metot zaten dosyanızda mevcuttu) ...
+        """Nesine sayfasının içeriğini çek"""
         try:
             url = f"{self.base_url}{url_path}"
-            response = self.session.get(url, headers=self.headers, timeout=15)
+            response = self.session.get(url, headers=self.headers, timeout=10)
             response.raise_for_status()
-            logger.info(f"✅ Sayfa çekildi: {url}")
             return response.text
         except Exception as e:
-            logger.error(f"❌ Hata: {e}")
+            print(f"❌ Sayfa çekme hatası: {e}")
             return None
     
-    def extract_matches(self, html_content):
-        # ... (Bu metot zaten dosyanızda mevcuttu, HTML parsing mantığı) ...
+    def extract_leagues_and_matches(self, html_content):
+        """HTML'den lig ve maç bilgilerini çıkar"""
         soup = BeautifulSoup(html_content, 'html.parser')
-        matches = []
-        
-        # HTML parsing ve regex ile maçları çıkarma mantığı
-        # (Bu kısım uzun olduğu için buraya eklenmedi, orijinal dosyanızdaki mantık korunmuştur.)
-        
-        return matches # ... (Örneğin: [maç1, maç2, ...])
-    
-    def _generate_realistic_odds(self):
-        """Gerçekçi oranlar üret (HTML parsing için fallback)"""
-        return {
-            '1': round(random.uniform(1.5, 4.5), 2),
-            'X': round(random.uniform(2.8, 3.8), 2),
-            '2': round(random.uniform(1.5, 5.0), 2)
+        data = {
+            "leagues": [],
+            "matches": [],
+            "predictions": []
         }
+        
+        # Ligleri çıkar
+        self._extract_leagues(soup, data)
+        
+        # Maçları çıkar
+        self._extract_matches(soup, data)
+        
+        # Tahminleri çıkar
+        self._extract_predictions(soup, data)
+        
+        return data
     
-    # ... (Diğer yardımcı metotlar: _is_valid_team_name, _detect_league, vb. korunmuştur) ...
+    def _extract_leagues(self, soup, data):
+        """Avrupa liglerini çıkar"""
+        # Tüm metni al ve ligleri parse et
+        all_text = soup.get_text()
+        
+        # Lig pattern'leri
+        league_patterns = {
+            "Premier League": ["Premier League", "hgiflere"],
+            "La Liga": ["La Liga", "Epanya"],
+            "Bundesliga": ["Bundesliga", "Almanya"],
+            "Serie A": ["Serie A", "italya"],
+            "Ligue 1": ["Ligue 1", "Fransa"],
+            "Süper Lig": ["Süper Lig", "Stiger Lig", "Türkiye"],
+            "Eredivisie": ["Erotihiste", "Hollanska"],
+            "Primeira Liga": ["Primeira Liga", "Portekiz"],
+            "Championship": ["Championalip"]
+        }
+        
+        for league_name, keywords in league_patterns.items():
+            for keyword in keywords:
+                if keyword in all_text:
+                    data["leagues"].append({
+                        "name": league_name,
+                        "original_text": keyword,
+                        "category": "AVRUPA LİGLERİ" if league_name in [
+                            "Premier League", "La Liga", "Bundesliga", 
+                            "Serie A", "Ligue 1", "Süper Lig"
+                        ] else "DİĞER LİGLER"
+                    })
+                    break
+    
+    def _extract_matches(self, soup, data):
+        """Maç bilgilerini çıkar"""
+        # Maç elementlerini bul (nesine.com'un yapısına göre)
+        match_elements = soup.find_all(['div', 'tr'], class_=re.compile(r'match|event|game'))
+        
+        for element in match_elements:
+            match_data = self._parse_match_element(element)
+            if match_data:
+                data["matches"].append(match_data)
+    
+    def _parse_match_element(self, element):
+        """Maç elementini parse et"""
+        try:
+            # Takım isimlerini bul
+            teams = element.find_all(['span', 'div'], class_=re.compile(r'team|name'))
+            if len(teams) >= 2:
+                home_team = teams[0].get_text(strip=True)
+                away_team = teams[1].get_text(strip=True)
+                
+                # Oranları bul
+                odds_elements = element.find_all(['span', 'button'], class_=re.compile(r'odd|rate|value'))
+                odds = [odd.get_text(strip=True) for odd in odds_elements[:3]]  # İlk 3 oran
+                
+                return {
+                    "home_team": home_team,
+                    "away_team": away_team,
+                    "odds": odds,
+                    "league": self._detect_league_from_teams(home_team, away_team)
+                }
+        except Exception as e:
+            print(f"Maç parse hatası: {e}")
+        return None
+    
+    def _detect_league_from_teams(self, home_team, away_team):
+        """Takım isimlerinden lig tahmini"""
+        # Bu kısmı takım veritabanınızla geliştirebilirsiniz
+        team_leagues = {
+            "Arsenal": "Premier League", "Chelsea": "Premier League",
+            "Real Madrid": "La Liga", "Barcelona": "La Liga",
+            "Bayern": "Bundesliga", "Dortmund": "Bundesliga",
+            "Milan": "Serie A", "Inter": "Serie A",
+            "Galatasaray": "Süper Lig", "Fenerbahçe": "Süper Lig"
+        }
+        
+        for team, league in team_leagues.items():
+            if team in home_team or team in away_team:
+                return league
+        
+        return "Bilinmeyen Lig"
+    
+    def _extract_predictions(self, soup, data):
+        """Tahmin bölümünü çıkar"""
+        # "Günün En İyi Tahminleri" bölümünü bul
+        predictions_text = soup.find(string=re.compile(r"Günün En İyi Tahminleri"))
+        if predictions_text:
+            prediction_section = predictions_text.find_parent()
+            if prediction_section:
+                # Tahmin detaylarını çıkar
+                prediction_data = {
+                    "title": "Günün En İyi Tahminleri",
+                    "analyst": "Tolgar Dine",  # Sabit görünüyor
+                    "content": prediction_section.get_text(strip=True)
+                }
+                data["predictions"].append(prediction_data)
+
+# Kullanım örneği
+def main():
+    scraper = NesineCompleteFetcher()
+    
+    # Sayfayı çek
+    html_content = scraper.get_page_content()
+    
+    if html_content:
+        # Verileri çıkar
+        data = scraper.extract_leagues_and_matches(html_content)
+        
+        # Sonuçları göster
+        print("🟢 LİGLER:")
+        for league in data["leagues"]:
+            print(f"   {league['category']} - {league['name']}")
+        
+        print(f"\n⚽ MAÇLAR ({len(data['matches'])} adet):")
+        for match in data["matches"][:5]:  # İlk 5 maçı göster
+            print(f"   {match['home_team']} vs {match['away_team']}")
+            print(f"   Oranlar: {match.get('odds', [])}")
+            print(f"   Lig: {match.get('league', 'Bilinmiyor')}")
+            print()
+        
+        print("🎯 TAHMİNLER:")
+        for prediction in data["predictions"]:
+            print(f"   {prediction['title']} - {prediction['analyst']}")
+
+if __name__ == "__main__":
+    main()
