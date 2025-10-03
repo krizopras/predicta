@@ -109,7 +109,6 @@
             color: #b3c7f7;
         }
 
-        /* Filtre ve sıralama butonları */
         .controls {
             background: rgba(255, 255, 255, 0.05);
             border-radius: 8px;
@@ -184,10 +183,6 @@
             transform: translateX(5px);
         }
 
-        .match-card.hidden {
-            display: none;
-        }
-
         .match-header {
             display: flex;
             justify-content: space-between;
@@ -230,16 +225,6 @@
 
         .prediction-badge.low {
             background: linear-gradient(135deg, #f44336, #d32f2f);
-        }
-
-        .warning-box {
-            background: rgba(255, 152, 0, 0.15);
-            border: 1px solid #ff9800;
-            border-radius: 6px;
-            padding: 10px;
-            margin-top: 10px;
-            font-size: 0.9rem;
-            color: #ffb74d;
         }
 
         .odds-container {
@@ -346,32 +331,6 @@
             transform: translateY(-2px);
         }
 
-        .risk-badge {
-            display: inline-block;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 0.8rem;
-            margin-left: 10px;
-        }
-
-        .risk-low {
-            background: rgba(76, 175, 80, 0.3);
-            color: #4caf50;
-            border: 1px solid #4caf50;
-        }
-
-        .risk-medium {
-            background: rgba(255, 152, 0, 0.3);
-            color: #ff9800;
-            border: 1px solid #ff9800;
-        }
-
-        .risk-high, .risk-very-high {
-            background: rgba(244, 67, 54, 0.3);
-            color: #f44336;
-            border: 1px solid #f44336;
-        }
-
         @media (max-width: 768px) {
             .header h1 {
                 font-size: 2rem;
@@ -391,7 +350,7 @@
     <header class="header">
         <h1>PREDICTA AI</h1>
         <div class="tagline">Gelişmiş Hybrid Model ile Profesyonel Futbol Analizi</div>
-        <div class="version-badge">v5.4 - Advanced Scraper</div>
+        <div class="version-badge">v5.5 - Advanced Hybrid</div>
     </header>
 
     <div class="disclaimer">
@@ -414,23 +373,21 @@
                 <div class="stat-label">Yüksek Güven (>65%)</div>
             </div>
             <div class="stat-box">
-                <div class="stat-value" id="low-risk">0</div>
-                <div class="stat-label">Düşük Risk</div>
+                <div class="stat-value" id="medium-confidence">0</div>
+                <div class="stat-label">Orta Güven (50-65%)</div>
             </div>
             <div class="stat-box">
-                <div class="stat-value">v5.4</div>
+                <div class="stat-value">v5.5</div>
                 <div class="stat-label">Hybrid Model</div>
             </div>
         </div>
 
-        <!-- Filtreleme ve Sıralama Kontrolleri -->
         <div class="controls">
             <div>
                 <span class="control-label">Filtrele:</span>
                 <button class="filter-btn active" onclick="filterMatches('all')">Tümü</button>
                 <button class="filter-btn" onclick="filterMatches('high-confidence')">Yüksek Güven (>65%)</button>
-                <button class="filter-btn" onclick="filterMatches('low-risk')">Düşük Risk</button>
-                <button class="filter-btn" onclick="filterMatches('medium')">Orta Güven</button>
+                <button class="filter-btn" onclick="filterMatches('medium')">Orta Güven (50-65%)</button>
             </div>
             <div style="margin-left: auto;">
                 <span class="control-label">Sırala:</span>
@@ -466,7 +423,8 @@
             try {
                 showLoading();
                 
-                const response = await fetch(`${API_BASE_URL}/api/nesine/live-predictions?league=all&limit=50`);
+                // DÜZELTİLDİ: Doğru endpoint kullanılıyor
+                const response = await fetch(`${API_BASE_URL}/api/predictions/upcoming?limit=50`);
                 
                 if (!response.ok) {
                     throw new Error(`HTTP ${response.status}`);
@@ -491,7 +449,6 @@
         function filterMatches(filterType) {
             currentFilter = filterType;
             
-            // Buton aktif durumu
             document.querySelectorAll('.filter-btn').forEach(btn => {
                 btn.classList.remove('active');
             });
@@ -503,7 +460,6 @@
         function sortMatches(sortType) {
             currentSort = sortType;
             
-            // Buton aktif durumu
             document.querySelectorAll('.sort-btn').forEach(btn => {
                 btn.classList.remove('active');
             });
@@ -515,34 +471,34 @@
         function applyFiltersAndSort() {
             let filtered = [...allMatches];
             
-            // Filtreleme
             switch(currentFilter) {
                 case 'high-confidence':
-                    filtered = filtered.filter(m => (m.ai_prediction?.confidence || 0) >= 65);
-                    break;
-                case 'low-risk':
-                    filtered = filtered.filter(m => m.ai_prediction?.risk_level === 'low');
+                    filtered = filtered.filter(m => {
+                        const conf = (m.ai_prediction?.confidence || 0) * 100;
+                        return conf >= 65;
+                    });
                     break;
                 case 'medium':
                     filtered = filtered.filter(m => {
-                        const conf = m.ai_prediction?.confidence || 0;
+                        const conf = (m.ai_prediction?.confidence || 0) * 100;
                         return conf >= 50 && conf < 65;
                     });
                     break;
             }
             
-            // Sıralama
             switch(currentSort) {
                 case 'confidence':
                     filtered.sort((a, b) => {
-                        const confA = a.ai_prediction?.confidence || 0;
-                        const confB = b.ai_prediction?.confidence || 0;
-                        return confB - confA; // Büyükten küçüğe
+                        const confA = (a.ai_prediction?.confidence || 0) * 100;
+                        const confB = (b.ai_prediction?.confidence || 0) * 100;
+                        return confB - confA;
                     });
                     break;
                 case 'time':
                     filtered.sort((a, b) => {
-                        return (a.time || '').localeCompare(b.time || '');
+                        const dateA = `${a.date} ${a.time}`;
+                        const dateB = `${b.date} ${b.time}`;
+                        return dateA.localeCompare(dateB);
                     });
                     break;
                 case 'league':
@@ -558,11 +514,17 @@
         function updateStats() {
             document.getElementById('total-matches').textContent = allMatches.length;
             
-            const highConfidence = allMatches.filter(m => (m.ai_prediction?.confidence || 0) >= 65).length;
+            const highConfidence = allMatches.filter(m => {
+                const conf = (m.ai_prediction?.confidence || 0) * 100;
+                return conf >= 65;
+            }).length;
             document.getElementById('high-confidence').textContent = highConfidence;
             
-            const lowRisk = allMatches.filter(m => m.ai_prediction?.risk_level === 'low').length;
-            document.getElementById('low-risk').textContent = lowRisk;
+            const mediumConfidence = allMatches.filter(m => {
+                const conf = (m.ai_prediction?.confidence || 0) * 100;
+                return conf >= 50 && conf < 65;
+            }).length;
+            document.getElementById('medium-confidence').textContent = mediumConfidence;
         }
 
         function showLoading() {
@@ -608,12 +570,9 @@
             
             matches.forEach(match => {
                 const prediction = match.ai_prediction || {};
-                const confidence = prediction.confidence || 50;
-                const result = prediction.prediction || 'X';
-                const scorePrediction = prediction.score_prediction || '1-1';
-                const riskLevel = prediction.risk_level || 'high';
-                const warning = prediction.warning || '';
-                const confidenceLabel = prediction.confidence_label || 'Bilinmiyor';
+                const confidence = (prediction.confidence || 0.5) * 100;
+                const result = prediction.predicted_result || 'X';
+                const probs = prediction.probabilities || {1: 0.33, X: 0.33, 2: 0.33};
                 
                 const confidenceClass = getConfidenceClass(confidence);
                 
@@ -622,15 +581,12 @@
                         <div class="match-header">
                             <div>
                                 <div class="match-teams">${match.home_team} vs ${match.away_team}</div>
-                                <div class="match-league">${match.league || 'Bilinmeyen'} • ${match.time || '20:00'}</div>
+                                <div class="match-league">${match.league || 'Bilinmeyen'} • ${match.date} ${match.time}</div>
                             </div>
                             <div>
                                 <div class="prediction-badge ${confidenceClass}">
                                     Tahmin: ${result} (${confidence.toFixed(1)}%)
                                 </div>
-                                <span class="risk-badge risk-${riskLevel.replace('_', '-')}">
-                                    Risk: ${riskLevel === 'low' ? 'Düşük' : riskLevel === 'medium' ? 'Orta' : 'Yüksek'}
-                                </span>
                             </div>
                         </div>
                         
@@ -652,27 +608,21 @@
                         <div class="match-info">
                             <div class="info-box">
                                 <div class="info-label">Ev Kazanma</div>
-                                <div class="info-value">${(prediction.home_win_prob || 33).toFixed(1)}%</div>
+                                <div class="info-value">${((probs['1'] || 0.33) * 100).toFixed(1)}%</div>
                             </div>
                             <div class="info-box">
                                 <div class="info-label">Beraberlik</div>
-                                <div class="info-value">${(prediction.draw_prob || 33).toFixed(1)}%</div>
+                                <div class="info-value">${((probs.X || 0.33) * 100).toFixed(1)}%</div>
                             </div>
                             <div class="info-box">
                                 <div class="info-label">Deplasman Kazanma</div>
-                                <div class="info-value">${(prediction.away_win_prob || 33).toFixed(1)}%</div>
-                            </div>
-                            <div class="info-box">
-                                <div class="info-label">Skor Tahmini</div>
-                                <div class="info-value">${scorePrediction}</div>
+                                <div class="info-value">${((probs['2'] || 0.33) * 100).toFixed(1)}%</div>
                             </div>
                         </div>
 
-                        ${warning ? `<div class="warning-box">${warning}</div>` : ''}
-
                         <div style="margin-top: 10px;">
                             <div style="font-size: 0.9rem; color: #b3c7f7;">
-                                Güven Seviyesi: ${confidenceLabel}
+                                Öneri: ${prediction.suggestion || 'Analiz yapılıyor'}
                             </div>
                             <div class="confidence-bar">
                                 <div class="confidence-fill ${confidenceClass}" style="width: ${confidence}%"></div>
