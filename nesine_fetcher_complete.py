@@ -42,6 +42,20 @@ class NesineCompleteFetcher:
                 match = self._parse_vs_line(line)
                 if match and match not in matches:
                     matches.append(match)
+         def extract_leagues_and_matches(self, html_content):
+        """
+        Eski kodlarla uyumlu olması için extract_matches wrapper'ı.
+        """
+        matches = self.extract_matches(html_content)
+        
+        # Ligleri çıkart
+        leagues = sorted(list(set([m['league'] for m in matches])))
+
+        return {
+            "leagues": leagues,
+            "matches": matches
+        }
+
         
         # STRATEJİ 2: Regex
         vs_pattern = r'([A-ZÇĞİÖŞÜa-zçğıöşü\s]+)\s+(?:vs\.?|-)\s+([A-ZÇĞİÖŞÜa-zçğıöşü\s]+)'
