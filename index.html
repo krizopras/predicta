@@ -6,7 +6,6 @@
   <title>Predicta AI - Profesyonel Futbol Tahmin Sistemi</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    /* --- CSS aynı kalıyor, pro görünüm için senin istediğin şekilde --- */
     body {
       font-family: 'Inter', sans-serif;
       background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
@@ -57,7 +56,7 @@
 <header class="header">
   <h1>Predicta AI</h1>
   <div class="tagline">Profesyonel Futbol Tahmin Platformu</div>
-  <div class="version-badge">v7.1 - Bugfix</div>
+  <div class="version-badge">v7.2 - Lig Bazlı Görünüm</div>
 </header>
 
 <div class="container">
@@ -67,7 +66,7 @@
       <div class="loading">Ligler yükleniyor...</div>
     </div>
   </aside>
-  
+
   <main>
     <div class="stats-container">
       <div class="stat-box"><div class="stat-value" id="total-matches">0</div><div class="stat-label">Toplam Maç</div></div>
@@ -99,13 +98,12 @@
   let selectedLeague = 'all';
   const API_BASE_URL = 'https://predicta-production.up.railway.app';
 
-  // Eğer lig ID -> isim map gerekiyorsa buraya ekle
   const leagueNames = {
     1300: "Türkiye Süper Lig",
     681: "Premier League",
     642: "La Liga",
     994: "Serie A",
-    // ihtiyaca göre devamı eklenebilir
+    780: "Bundesliga",
   };
 
   async function loadMatches() {
@@ -116,7 +114,6 @@
       const data = await response.json();
       if (data.success && data.matches) {
         allMatches = data.matches;
-        console.log("API VERİSİ:", allMatches[0]); // DEBUG
         buildLeagueList();
         updateStats();
         applyFiltersAndSort();
@@ -129,17 +126,16 @@
   function buildLeagueList() {
     const leagueCounts = {};
     allMatches.forEach(m=>{
-      const leagueKey = String(m.league);
-      leagueCounts[leagueKey] = (leagueCounts[leagueKey]||0)+1;
+      const lName = m.league_name || leagueNames[m.league] || m.league;
+      leagueCounts[lName] = (leagueCounts[lName]||0)+1;
     });
     const sorted = Object.entries(leagueCounts).sort((a,b)=>b[1]-a[1]);
     let html = `<div class="league-item ${selectedLeague==='all'?'active':''}" onclick="selectLeague('all',event)">
                     🌍 <span class="league-name">Tüm Ligler</span>
                     <span class="league-count">${allMatches.length}</span></div>`;
     sorted.forEach(([l,c])=>{
-      const displayName = leagueNames[l] || l;
       html += `<div class="league-item ${selectedLeague===l?'active':''}" onclick="selectLeague('${l}',event)">
-                  ⚽ <span class="league-name">${displayName}</span>
+                  ⚽ <span class="league-name">${l}</span>
                   <span class="league-count">${c}</span></div>`;
     });
     document.getElementById('league-list').innerHTML = html;
@@ -149,7 +145,7 @@
     selectedLeague=String(l);
     document.querySelectorAll('.league-item').forEach(x=>x.classList.remove('active'));
     event.currentTarget.classList.add('active');
-    document.getElementById('selected-league-name').textContent = l==='all'?'Tüm Ligler':(leagueNames[l]||l);
+    document.getElementById('selected-league-name').textContent = l==='all'?'Tüm Ligler':l;
     applyFiltersAndSort();
   }
 
@@ -172,7 +168,7 @@
 
   function applyFiltersAndSort(){
     let filtered=[...allMatches];
-    if(selectedLeague!=='all') filtered=filtered.filter(m=>String(m.league)===selectedLeague);
+    if(selectedLeague!=='all') filtered=filtered.filter(m=>(m.league_name||leagueNames[m.league]||m.league)===selectedLeague);
     if(currentFilter==='high-confidence') filtered=filtered.filter(m=>normalizeConfidence(m.ai_prediction?.confidence||0)>=65);
     if(currentFilter==='medium') filtered=filtered.filter(m=>{let c=normalizeConfidence(m.ai_prediction?.confidence||0);return c>=50&&c<65;});
     if(currentSort==='confidence') filtered.sort((a,b)=>normalizeConfidence(b.ai_prediction?.confidence||0)-normalizeConfidence(a.ai_prediction?.confidence||0));
@@ -186,29 +182,56 @@
     document.getElementById('medium-confidence').textContent=f.filter(m=>{let c=normalizeConfidence(m.ai_prediction?.confidence||0);return c>=50&&c<65;}).length;
   }
 
+  // LİGLERE GÖRE GRUPLANMIŞ MAÇ GÖRÜNÜMÜ
   function displayMatches(matches){
     const area=document.getElementById('content-area');
     if(matches.length===0){area.innerHTML=`<div class="loading">Bu lig/filtre için maç bulunamadı</div>`;return;}
-    let html='<div class="match-list">';
+
+    const grouped={};
     matches.forEach(m=>{
-      const p=m.ai_prediction||{};
-      const conf=normalizeConfidence(p.confidence||0);
-      const result=p.predicted_result || p.result || 'X'; // fallback
-      const probs=p.probabilities||{1:0.33,X:0.33,2:0.33};
-      html+=`<div class="match-card">
-               <div class="match-header">
-                 <div><div class="match-teams">${m.home_team} vs ${m.away_team}</div>
-                 <div class="match-league">${leagueNames[m.league]||m.league} • ${m.date} ${m.time}</div></div>
-                 <div class="prediction-badge ${getConfidenceClass(conf)}">Tahmin: ${result} (${conf.toFixed(1)}%)</div>
-               </div>
-               <div class="odds-container">
-                 <div class="odds-btn ${result==='1'?'predicted':''}"><div class="odds-label">1</div><div class="odds-value">${(m.odds?.['1']||2.0).toFixed(2)}</div></div>
-                 <div class="odds-btn ${result==='X'?'predicted':''}"><div class="odds-label">X</div><div class="odds-value">${(m.odds?.X||3.0).toFixed(2)}</div></div>
-                 <div class="odds-btn ${result==='2'?'predicted':''}"><div class="odds-label">2</div><div class="odds-value">${(m.odds?.['2']||3.5).toFixed(2)}</div></div>
-               </div>
-             </div>`;
+      const ligAdi = m.league_name || leagueNames[m.league] || m.league || "Bilinmeyen Lig";
+      if(!grouped[ligAdi]) grouped[ligAdi]=[];
+      grouped[ligAdi].push(m);
     });
-    area.innerHTML=html+'</div>';
+
+    let html='';
+    Object.entries(grouped).forEach(([ligAdi, maclar])=>{
+      html+=`<h2 style="margin:20px 0 10px;color:#ffd700;font-size:1.4rem;">${ligAdi}</h2>`;
+      html+='<div class="match-list">';
+      maclar.forEach(m=>{
+        const p=m.ai_prediction||{};
+        const conf=normalizeConfidence(p.confidence||0);
+        const result=p.predicted_result || p.result || 'X';
+        html+=`<div class="match-card">
+                 <div class="match-header">
+                   <div>
+                     <div class="match-teams">${m.home_team} vs ${m.away_team}</div>
+                     <div class="match-league">${m.date} ${m.time}</div>
+                   </div>
+                   <div class="prediction-badge ${getConfidenceClass(conf)}">
+                     Tahmin: ${result} (${conf.toFixed(1)}%)
+                   </div>
+                 </div>
+                 <div class="odds-container">
+                   <div class="odds-btn ${result==='1'?'predicted':''}">
+                     <div class="odds-label">1</div>
+                     <div class="odds-value">${(m.odds?.['1']||2.0).toFixed(2)}</div>
+                   </div>
+                   <div class="odds-btn ${result==='X'?'predicted':''}">
+                     <div class="odds-label">X</div>
+                     <div class="odds-value">${(m.odds?.X||3.0).toFixed(2)}</div>
+                   </div>
+                   <div class="odds-btn ${result==='2'?'predicted':''}">
+                     <div class="odds-label">2</div>
+                     <div class="odds-value">${(m.odds?.['2']||3.5).toFixed(2)}</div>
+                   </div>
+                 </div>
+               </div>`;
+      });
+      html+='</div>';
+    });
+
+    area.innerHTML=html;
   }
 
   function showLoading(){document.getElementById('content-area').innerHTML='<div class="loading">Veriler yükleniyor...</div>';}
