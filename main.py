@@ -18,6 +18,14 @@ import random
 # Yeni tahmin motorunu import et
 from improved_prediction_engine import ImprovedPredictionEngine
 
+# CollectAPI servisi (opsiyonel)
+try:
+    from collectapi_service import CollectAPIService
+    COLLECTAPI_AVAILABLE = True
+except ImportError:
+    COLLECTAPI_AVAILABLE = False
+    logger.warning("CollectAPI servisi bulunamadı, Nesine verileri kullanılacak")
+
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
@@ -295,6 +303,15 @@ class AdvancedNesineFetcher:
 fetcher = AdvancedNesineFetcher()
 predictor = ImprovedPredictionEngine()
 
+# CollectAPI servisi (opsiyonel - env variable gerekir)
+collectapi = None
+if COLLECTAPI_AVAILABLE:
+    collectapi = CollectAPIService()
+    if collectapi.is_available():
+        logger.info("CollectAPI servisi aktif - Gerçek istatistikler kullanılacak")
+    else:
+        logger.info("CollectAPI anahtarı yok - Sadece Nesine oranları kullanılacak")
+
 
 # ==================== ENDPOINTS ====================
 
@@ -368,11 +385,28 @@ async def get_live_predictions(league: str = "all", limit: int = 50):
         
         for match in matches[:limit]:
             try:
+                # CollectAPI'den gerçek istatistikler çek (varsa)
+                home_stats = None
+                away_stats = None
+                
+                if collectapi and collectapi.is_available():
+                    logger.info(f"CollectAPI'den istatistik çekiliyor: {match['home_team']} vs {match['away_team']}")
+                    home_stats = collectapi.get_team_stats(
+                        match['home_team'], 
+                        match.get('league', 'super-lig')
+                    )
+                    away_stats = collectapi.get_team_stats(
+                        match['away_team'],
+                        match.get('league', 'super-lig')
+                    )
+                
                 # İyileştirilmiş tahmin motoru
                 prediction = predictor.predict_match(
                     home_team=match['home_team'],
                     away_team=match['away_team'],
                     odds=match['odds'],
+                    home_stats=home_stats,
+                    away_stats=away_stats,
                     league=match.get('league', 'default')
                 )
                 
