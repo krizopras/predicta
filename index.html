@@ -6,6 +6,7 @@
   <title>Predicta AI - Profesyonel Futbol Tahmin Sistemi</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
+    * {margin:0;padding:0;box-sizing:border-box;}
     body {
       font-family: 'Inter', sans-serif;
       background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
@@ -31,38 +32,84 @@
     .stat-label {color:#cfd8dc;font-size:0.9rem;}
     .controls {display:flex;flex-wrap:wrap;gap:12px;margin-bottom:20px;}
     .control-label {font-weight:600;color:#ffd700;}
-    .filter-btn,.sort-btn {padding:10px 18px;border:none;border-radius:8px;background:rgba(255,255,255,0.08);color:#fff;font-weight:600;cursor:pointer;}
+    .filter-btn,.sort-btn {padding:10px 18px;border:none;border-radius:8px;background:rgba(255,255,255,0.08);color:#fff;font-weight:600;cursor:pointer;transition:all .3s;}
+    .filter-btn:hover,.sort-btn:hover {background:rgba(255,215,0,0.2);}
     .filter-btn.active,.sort-btn.active {background:linear-gradient(135deg,#ffd700,#ff9800);color:#1a237e;}
     .main-content {background:rgba(255,255,255,0.05);border-radius:16px;backdrop-filter:blur(10px);padding:20px;}
     .loading {text-align:center;padding:40px;color:#ffd700;}
-    .match-list {display:grid;gap:20px;}
-    .match-card {background:rgba(255,255,255,0.06);border-radius:16px;padding:20px;border-left:5px solid #ffd700;}
-    .match-header {display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;}
-    .match-teams {font-size:1.2rem;font-weight:600;}
-    .match-league {font-size:0.85rem;color:#b0bec5;}
-    .prediction-badge {padding:8px 16px;border-radius:20px;font-size:0.85rem;font-weight:600;color:#fff;}
-    .very-high {background:linear-gradient(135deg,#4caf50,#2e7d32);}
-    .high {background:linear-gradient(135deg,#2196f3,#1565c0);}
-    .medium {background:linear-gradient(135deg,#ff9800,#f57c00);}
-    .low {background:linear-gradient(135deg,#f44336,#c62828);}
-    .odds-container {display:flex;gap:10px;margin-top:15px;}
-    .odds-btn {flex:1;background:rgba(255,255,255,0.08);padding:12px;border-radius:10px;text-align:center;}
-    .odds-btn.predicted {border:2px solid #ffd700;}
-    .odds-label {font-size:0.8rem;color:#b0bec5;}
-    .odds-value {font-size:1.05rem;font-weight:700;}
-    
-    /* Lig gruplama stilleri */
-    .league-section {margin-bottom:30px;}
-    .league-header {background:linear-gradient(135deg,rgba(255,215,0,0.2),rgba(255,152,0,0.2));padding:15px 20px;border-radius:12px;margin-bottom:15px;display:flex;justify-content:space-between;align-items:center;}
+
+    /* TABLO FORMATINDA LİG GRUPLAMA */
+    .league-section {margin-bottom:35px;}
+    .league-header {
+      background:linear-gradient(135deg,rgba(255,215,0,0.2),rgba(255,152,0,0.2));
+      padding:15px 20px;border-radius:12px;margin-bottom:15px;
+      display:flex;justify-content:space-between;align-items:center;
+      border-left:5px solid #ffd700;
+    }
     .league-title {font-size:1.3rem;font-weight:700;color:#ffd700;}
     .league-match-count {background:rgba(255,255,255,0.2);padding:5px 12px;border-radius:20px;font-size:0.9rem;}
+    
+    .match-table-container {
+      background:rgba(255,255,255,0.03);
+      border-radius:12px;
+      overflow:hidden;
+    }
+    table {width:100%;border-collapse:collapse;}
+    thead {background:rgba(255,215,0,0.1);border-bottom:2px solid rgba(255,215,0,0.3);}
+    th {padding:12px;text-align:center;color:#ffd700;font-size:0.9rem;font-weight:600;}
+    th:nth-child(2) {text-align:left;}
+    tbody tr {border-bottom:1px solid rgba(255,255,255,0.05);transition:background 0.2s;}
+    tbody tr:hover {background:rgba(255,215,0,0.05);}
+    td {padding:15px 12px;}
+    
+    .match-time {color:#b0bec5;font-size:0.85rem;text-align:center;line-height:1.4;}
+    .match-info {text-align:left;}
+    .home-team {font-weight:600;color:#fff;margin-bottom:4px;font-size:1rem;}
+    .away-team {color:#90a4ae;font-size:0.9rem;}
+    
+    .odds-cell {text-align:center;}
+    .odds-box {
+      display:inline-block;
+      padding:10px 18px;
+      border-radius:8px;
+      font-weight:700;
+      font-size:1.05rem;
+      background:rgba(255,255,255,0.08);
+      color:#fff;
+      transition:all 0.2s;
+      cursor:pointer;
+      min-width:60px;
+    }
+    .odds-box:hover {transform:scale(1.05);background:rgba(255,255,255,0.15);}
+    .odds-box.predicted {
+      background:linear-gradient(135deg,#ffd700,#ff9800);
+      color:#000;
+      border:2px solid #ffd700;
+      box-shadow:0 0 15px rgba(255,215,0,0.4);
+      animation:pulse 2s infinite;
+    }
+    
+    @keyframes pulse {
+      0%, 100% {box-shadow:0 0 15px rgba(255,215,0,0.4);}
+      50% {box-shadow:0 0 25px rgba(255,215,0,0.6);}
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .container {grid-template-columns:1fr;gap:20px;}
+      .sidebar {max-height:300px;}
+      table {font-size:0.85rem;}
+      .odds-box {padding:8px 12px;font-size:0.95rem;min-width:50px;}
+      .home-team {font-size:0.9rem;}
+      .away-team {font-size:0.8rem;}
+    }
   </style>
 </head>
 <body>
 <header class="header">
   <h1>Predicta AI</h1>
   <div class="tagline">Profesyonel Futbol Tahmin Platformu</div>
-  <div class="version-badge">v7.4 - Doğru Lig Sınıflandırma</div>
+  <div class="version-badge">v8.0 - Tablo Görünümü</div>
 </header>
 
 <div class="container">
@@ -104,34 +151,17 @@
   let selectedLeague = 'all';
   const API_BASE_URL = 'https://predicta-production.up.railway.app';
 
-  // Gelişmiş lig eşleştirme sistemi - DÜZELTİLMİŞ
   const leagueMapping = {
-    // İngiltere
     "Premier League": ["Bournemouth", "Fulham", "Arsenal", "Chelsea", "Liverpool", "Manchester City", "Manchester United", "Tottenham", "Newcastle", "Brighton", "West Ham", "Crystal Palace", "Wolves", "Aston Villa", "Leeds", "Everton", "Southampton", "Nottingham Forest", "Brentford", "Burnley", "Sheffield United", "Luton Town"],
-    
-    // İtalya
     "Serie A": ["Verona", "Sassuolo", "Juventus", "Inter", "Milan", "Napoli", "Roma", "Lazio", "Atalanta", "Fiorentina", "Torino", "Bologna", "Monza", "Udinese", "Empoli", "Salernitana", "Lecce", "Genoa", "Frosinone", "Cagliari"],
-    
-    // İspanya
     "La Liga": ["Osasuna", "Getafe", "Real Madrid", "Barcelona", "Atletico Madrid", "Sevilla", "Valencia", "Villarreal", "Real Betis", "Athletic Bilbao", "Real Sociedad", "Celta Vigo", "Mallorca", "Cadiz", "Granada", "Alaves", "Rayo Vallecano", "Las Palmas", "Girona", "Almeria", "Valladolid", "Elche", "Espanyol"],
-    
-    // Almanya
     "Bundesliga": ["Hoffenheim", "Cologne", "Bayern Munich", "Borussia Dortmund", "RB Leipzig", "Bayer Leverkusen", "Borussia Mönchengladbach", "Eintracht Frankfurt", "Wolfsburg", "Union Berlin", "Freiburg", "Mainz", "Augsburg", "Stuttgart", "Bochum", "Darmstadt", "Heidenheim", "Werder Bremen"],
-    
-    // Fransa
     "Ligue 1": ["Paris FC", "Lorient", "Paris Saint-Germain", "Marseille", "Lyon", "Monaco", "Lille", "Nice", "Rennes", "Lens", "Reims", "Nantes", "Montpellier", "Toulouse", "Strasbourg", "Auxerre", "Clermont Foot", "Ajaccio", "Troyes", "Angers", "Brest", "Metz", "Le Havre"],
-    
-    // Hollanda
     "Eredivisie": ["NAC Breda", "Groningen", "Ajax", "PSV", "Feyenoord", "AZ Alkmaar", "Twente", "Utrecht", "Vitesse", "Heerenveen", "Sparta Rotterdam", "Fortuna Sittard", "Heracles", "PEC Zwolle", "Excelsior", "RKC Waalwijk", "Cambuur", "Go Ahead Eagles", "Volendam", "Almere City"],
-    
-    // Portekiz
     "Primeira Liga": ["Casa Pia", "Estoril", "Benfica", "Porto", "Sporting CP", "Braga", "Vitoria Guimaraes", "Boavista", "Famalicao", "Rio Ave", "Santa Clara", "Vizela", "Arouca", "Chaves", "Portimonense", "Maritimo", "Paços de Ferreira", "Gil Vicente"],
-    
-    // Türkiye
     "Süper Lig": ["Fenerbahçe", "Galatasaray", "Beşiktaş", "Trabzonspor", "Başakşehir", "Sivasspor", "Alanyaspor", "Kayserispor", "Gençlerbirliği", "Ankaragücü", "Konyaspor", "Kasımpaşa", "Hatayspor", "Giresunspor", "Ümraniyespor", "İstanbulspor", "Gaziantep", "Adana Demirspor", "Antalyaspor", "Fatih Karagümrük", "Pendikspor", "Samsunspor", "Çaykur Rizespor"]
   };
 
-  // API'den gelen lig ID'leri için mapping
   const leagueNames = {
     1300: "Süper Lig",
     681: "Premier League", 
@@ -144,7 +174,6 @@
     1597: "MLS"
   };
 
-  // Lig isimlerini düzeltme fonksiyonu
   function correctLeagueName(leagueName) {
     const corrections = {
       "Italy - Serie A": "Serie A",
@@ -153,7 +182,8 @@
       "France - Ligue 1": "Ligue 1",
       "Netherlands - Eredivisie": "Eredivisie",
       "Portugal - Primeira Liga": "Primeira Liga",
-      "Turkiye - Super Lig": "Süper Lig"
+      "Turkiye - Super Lig": "Süper Lig",
+      "England - Premier League": "Premier League"
     };
     return corrections[leagueName] || leagueName;
   }
@@ -165,15 +195,10 @@
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       const data = await response.json();
       if (data.success && data.matches) {
-        allMatches = data.matches;
-        // Lig isimlerini düzelt ve takım isimlerine göre lig ataması yap
-        allMatches = allMatches.map(match => {
-          // Önce mevcut lig ismini düzelt
+        allMatches = data.matches.map(match => {
           if (match.league_name) {
             match.league_name = correctLeagueName(match.league_name);
           }
-          
-          // Takım isimlerine göre lig tespiti yap
           const detectedLeague = detectLeagueByTeamNames(match.home_team, match.away_team);
           if (detectedLeague) {
             match.league_name = detectedLeague;
@@ -189,22 +214,12 @@
     }
   }
 
-  // Takım isimlerine göre lig tespiti
   function detectLeagueByTeamNames(homeTeam, awayTeam) {
     for (const [league, teams] of Object.entries(leagueMapping)) {
-      const homeInLeague = teams.some(team => 
-        homeTeam.toLowerCase().includes(team.toLowerCase())
-      );
-      const awayInLeague = teams.some(team => 
-        awayTeam.toLowerCase().includes(team.toLowerCase())
-      );
-      
-      if (homeInLeague && awayInLeague) {
-        return league;
-      } else if (homeInLeague || awayInLeague) {
-        // Sadece bir takım bulundu, ama yine de bu lig olabilir
-        return league;
-      }
+      const homeInLeague = teams.some(team => homeTeam.toLowerCase().includes(team.toLowerCase()));
+      const awayInLeague = teams.some(team => awayTeam.toLowerCase().includes(team.toLowerCase()));
+      if (homeInLeague && awayInLeague) return league;
+      if (homeInLeague || awayInLeague) return league;
     }
     return null;
   }
@@ -215,7 +230,6 @@
       const lName = m.league_name || leagueNames[m.league] || m.league;
       leagueCounts[lName] = (leagueCounts[lName] || 0) + 1;
     });
-    
     const sorted = Object.entries(leagueCounts).sort((a, b) => b[1] - a[1]);
     let html = `<div class="league-item ${selectedLeague === 'all' ? 'active' : ''}" onclick="selectLeague('all', event)">
                     🌍 <span class="league-name">Tüm Ligler</span>
@@ -251,12 +265,6 @@
   }
 
   function normalizeConfidence(c) { return c <= 1 ? c * 100 : c; }
-  function getConfidenceClass(c) { 
-    if (c >= 80) return 'very-high'; 
-    if (c >= 65) return 'high'; 
-    if (c >= 50) return 'medium'; 
-    return 'low'; 
-  }
 
   function applyFiltersAndSort() {
     let filtered = [...allMatches];
@@ -275,7 +283,6 @@
     document.getElementById('medium-confidence').textContent = f.filter(m => { let c = normalizeConfidence(m.ai_prediction?.confidence || 0); return c >= 50 && c < 65; }).length;
   }
 
-  // GELİŞMİŞ LİG GRUPLAMA GÖRÜNÜMÜ
   function displayMatches(matches) {
     const area = document.getElementById('content-area');
     if (matches.length === 0) { 
@@ -283,7 +290,6 @@
       return; 
     }
 
-    // Maçları liglerine göre grupla
     const grouped = {};
     matches.forEach(m => {
       const ligAdi = m.league_name || leagueNames[m.league] || m.league || "Diğer Ligler";
@@ -291,8 +297,7 @@
       grouped[ligAdi].push(m);
     });
 
-    // Ligleri önem sırasına göre sırala
-    const priorityLeagues = ["Süper Lig", "Premier League", "La Liga", "Serie A", "Bundesliga", "Ligue 1", "Eredivisie", "Primeira Liga", "MLS"];
+    const priorityLeagues = ["Premier League", "Serie A", "La Liga", "Bundesliga", "Ligue 1", "Eredivisie", "Primeira Liga", "Süper Lig"];
     const sortedLeagues = Object.keys(grouped).sort((a, b) => {
       const aIndex = priorityLeagues.indexOf(a);
       const bIndex = priorityLeagues.indexOf(b);
@@ -311,52 +316,58 @@
                   <div class="league-title">${ligAdi}</div>
                   <div class="league-match-count">${maclar.length} maç</div>
                 </div>
-                <div class="match-list">`;
+                <div class="match-table-container">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Tarih/Saat</th>
+                        <th>Maç</th>
+                        <th>1</th>
+                        <th>X</th>
+                        <th>2</th>
+                      </tr>
+                    </thead>
+                    <tbody>`;
       
       maclar.forEach(m => {
         const p = m.ai_prediction || {};
-        const conf = normalizeConfidence(p.confidence || 0);
         const result = p.predicted_result || p.result || 'X';
+        const odds1 = m.odds?.['1'] || 2.0;
+        const oddsX = m.odds?.X || 3.0;
+        const odds2 = m.odds?.['2'] || 3.5;
         
-        html += `<div class="match-card">
-                   <div class="match-header">
-                     <div>
-                       <div class="match-teams">${m.home_team} vs ${m.away_team}</div>
-                       <div class="match-league">${m.date} ${m.time}</div>
-                     </div>
-                     <div class="prediction-badge ${getConfidenceClass(conf)}">
-                       Tahmin: ${result} (${conf.toFixed(1)}%)
-                     </div>
-                   </div>
-                   <div class="odds-container">
-                     <div class="odds-btn ${result === '1' ? 'predicted' : ''}">
-                       <div class="odds-label">1</div>
-                       <div class="odds-value">${(m.odds?.['1'] || 2.0).toFixed(2)}</div>
-                     </div>
-                     <div class="odds-btn ${result === 'X' ? 'predicted' : ''}">
-                       <div class="odds-label">X</div>
-                       <div class="odds-value">${(m.odds?.X || 3.0).toFixed(2)}</div>
-                     </div>
-                     <div class="odds-btn ${result === '2' ? 'predicted' : ''}">
-                       <div class="odds-label">2</div>
-                       <div class="odds-value">${(m.odds?.['2'] || 3.5).toFixed(2)}</div>
-                     </div>
-                   </div>
-                 </div>`;
+        html += `<tr>
+                   <td class="match-time">
+                     ${m.date.split('-')[2]}/${m.date.split('-')[1]}<br>${m.time}
+                   </td>
+                   <td class="match-info">
+                     <div class="home-team">${m.home_team}</div>
+                     <div class="away-team">${m.away_team}</div>
+                   </td>
+                   <td class="odds-cell">
+                     <div class="odds-box ${result === '1' ? 'predicted' : ''}">${odds1.toFixed(2)}</div>
+                   </td>
+                   <td class="odds-cell">
+                     <div class="odds-box ${result === 'X' ? 'predicted' : ''}">${oddsX.toFixed(2)}</div>
+                   </td>
+                   <td class="odds-cell">
+                     <div class="odds-box ${result === '2' ? 'predicted' : ''}">${odds2.toFixed(2)}</div>
+                   </td>
+                 </tr>`;
       });
       
-      html += `</div></div>`;
+      html += `</tbody></table></div></div>`;
     });
 
     area.innerHTML = html;
   }
 
   function showLoading() { document.getElementById('content-area').innerHTML = '<div class="loading">Veriler yükleniyor...</div>'; }
-  function showError(m) { document.getElementById('content-area').innerHTML = `<div style="color:red">${m}</div>`; }
+  function showError(m) { document.getElementById('content-area').innerHTML = `<div style="color:red">Hata: ${m}</div>`; }
   
   window.addEventListener('load', () => { 
     loadMatches(); 
-    setInterval(loadMatches, 300000); // 5 dakikada bir güncelle
+    setInterval(loadMatches, 300000);
   });
 </script>
 </body>
