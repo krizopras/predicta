@@ -1,522 +1,494 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-PREDICTA AI - v5.3 İyileştirilmiş HTML Parser + API Debugger
+Predicta AI v5.4 - FutureMatch Collector
+Çekirdek: Nesine'den bugünkü + ileri tarihli oynanmamış futbol maçlarını toplar,
+diskte JSON olarak saklar ve FastAPI üzerinden servis eder.
 """
 import os
+import json
+import time
 import logging
-from fastapi import FastAPI, HTTPException
-from fastapi.middleware.cors import CORSMiddleware
-from datetime import datetime
-import uvicorn
+import threading
+from datetime import datetime, timedelta
+from typing import List, Dict, Any, Optional
+
 import requests
 from bs4 import BeautifulSoup
 import re
-import json
 
-from improved_prediction_engine import ImprovedPredictionEngine
+from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
-)
-logger = logging.getLogger(__name__)
+# -------------------------
+# CONFIG
+# -------------------------
+DATA_DIR = os.environ.get("PREDICTA_DATA_DIR", "./data")
+DATA_FILE = os.path.join(DATA_DIR, "future_matches.json")
+DAYS_AHEAD = int(os.environ.get("PREDICTA_DAYS_AHEAD", "3"))  # kaç gün ileriye topla
+REFRESH_INTERVAL_SECONDS = int(os.environ.get("PREDICTA_REFRESH_SECONDS", str(60 * 60 * 6)))  # default 6 saat
+USER_AGENT = os.environ.get("PREDICTA_USER_AGENT",
+                            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36")
 
-app = FastAPI(
-    title="Predicta AI API",
-    version="5.3",
-    description="İyileştirilmiş HTML parser + API debugger"
-)
+API_ENDPOINTS = [
+    "https://cdnbulten.nesine.com/api/bulten/getprebultenfull",
+    "https://www.nesine.com/api/prematch/bulletin",
+    "https://api.nesine.com/api/bulletin/prematch",
+    "https://www.nesine.com/futbol/mac-programi/json"
+]
 
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
+MOBILE_IDDAA = "https://m.nesine.com/iddaa"
+DESKTOP_IDDAA = "https://www.nesine.com/iddaa"
+
+# -------------------------
+# LOGGER
+# -------------------------
+logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
+logger = logging.getLogger("predicta-v5.4")
+
+# -------------------------
+# APP + GLOBAL CACHE
+# -------------------------
+app = FastAPI(title="Predicta AI v5.4 - FutureMatch Collector", version="5.4")
+app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])
+
+_cached_matches: List[Dict[str, Any]] = []
+_cache_lock = threading.Lock()
 
 
-class FixedNesineScraper:
+# -------------------------
+# UTIL: Save / Load disk
+# -------------------------
+def ensure_data_dir():
+    os.makedirs(DATA_DIR, exist_ok=True)
+
+
+def save_matches_to_disk(matches: List[Dict[str, Any]]):
+    ensure_data_dir()
+    with open(DATA_FILE, "w", encoding="utf-8") as f:
+        json.dump(matches, f, ensure_ascii=False, indent=2)
+    logger.info(f"Saved {len(matches)} matches to {DATA_FILE}")
+
+
+def load_matches_from_disk() -> List[Dict[str, Any]]:
+    if not os.path.exists(DATA_FILE):
+        return []
+    try:
+        with open(DATA_FILE, "r", encoding="utf-8") as f:
+            data = json.load(f)
+            if isinstance(data, list):
+                logger.info(f"Loaded {len(data)} matches from disk")
+                return data
+    except Exception as e:
+        logger.warning(f"Failed to load disk data: {e}")
+    return []
+
+
+# -------------------------
+# PARSERS
+# -------------------------
+def parse_nesine_json(data: Dict[str, Any]) -> List[Dict[str, Any]]:
     """
-    İyileştirilmiş Nesine scraper - Daha akıllı HTML parsing
+    Nesine JSON parser — sg.EA / sg.CA yapılarını kullanır.
+    Sadece GT == 1 (futbol) maçlarını döndürür.
     """
-    
-    def __init__(self):
-        self.session = requests.Session()
-        self.headers = {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
-            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-            'Accept-Language': 'tr-TR,tr;q=0.9',
-            'Connection': 'keep-alive'
-        }
-    
-    def get_matches(self):
-        """Maçları çeker"""
-        logger.info("Nesine verisi çekiliyor...")
-        
-        # 1. CDN API'yi dene ve yanıtı logla
-        matches = self.try_cdn_api_debug()
-        if matches and len(matches) > 5:
-            logger.info(f"✅ CDN API'den {len(matches)} maç alındı")
+    matches = []
+    try:
+        if not isinstance(data, dict):
             return matches
-        
-        # 2. HTML'den daha iyi parse et
-        matches = self.scrape_html_improved()
-        if matches and len(matches) > 5:
-            logger.info(f"✅ HTML'den {len(matches)} maç alındı")
-            return matches
-        
-        logger.error("❌ Yeterli maç bulunamadı - Demo veriler döndürülüyor")
-        return self.get_demo_matches()
-    
-    def try_cdn_api_debug(self):
-        """CDN API'yi dener ve yanıtı detaylı loglar"""
-        try:
-            url = "https://cdnbulten.nesine.com/api/bulten/getprebultenfull"
-            
-            response = self.session.get(url, headers=self.headers, timeout=10)
-            
-            logger.info(f"CDN API Status: {response.status_code}")
-            logger.info(f"Content-Type: {response.headers.get('content-type')}")
-            logger.info(f"Response length: {len(response.text)} karakter")
-            
-            # İlk 200 karakteri logla
-            preview = response.text[:200].replace('\n', ' ')
-            logger.info(f"Response preview: {preview}...")
-            
-            if response.status_code == 200:
-                # JSON parse dene
-                try:
-                    data = response.json()
-                    logger.info(f"JSON keys: {list(data.keys())}")
-                    
-                    # Veri yapısını kontrol et
-                    if 'sg' in data:
-                        ea = data.get('sg', {}).get('EA', [])
-                        ca = data.get('sg', {}).get('CA', [])
-                        logger.info(f"EA (Prematch): {len(ea)} maç")
-                        logger.info(f"CA (Live): {len(ca)} maç")
-                        
-                        # İlk maçı logla
-                        if ea:
-                            first_match = ea[0]
-                            logger.info(f"İlk maç örneği: {first_match.get('HN')} vs {first_match.get('AN')}")
-                        
-                        # Parse et
-                        matches = self.parse_nesine_json(data)
-                        return matches if matches else None
-                    else:
-                        logger.warning("JSON'da 'sg' key'i yok")
-                        return None
-                        
-                except json.JSONDecodeError as e:
-                    logger.error(f"JSON parse hatası: {e}")
-                    logger.error(f"Ham yanıt ilk 500 karakter: {response.text[:500]}")
-                    return None
-            
-            return None
-            
-        except Exception as e:
-            logger.error(f"CDN API hatası: {e}")
-            return None
-    
-    def parse_nesine_json(self, data):
-        """Nesine JSON'ını parse eder"""
-        matches = []
-        
-        try:
-            ea_matches = data.get('sg', {}).get('EA', [])
-            ca_matches = data.get('sg', {}).get('CA', [])
-            
-            for m in ea_matches + ca_matches:
-                # Sadece futbol (GT=1)
-                if m.get('GT') != 1:
+
+        sg = data.get("sg") or data.get("data") or {}
+        ea = sg.get("EA", []) if isinstance(sg, dict) else []
+        ca = sg.get("CA", []) if isinstance(sg, dict) else []
+        all_entries = []
+        if ea:
+            all_entries.extend(ea)
+        if ca:
+            all_entries.extend(ca)
+
+        for m in all_entries:
+            try:
+                # GT==1 => futbol
+                if m.get("GT") is not None and int(m.get("GT")) != 1:
                     continue
-                
-                home = (m.get('HN') or '').strip()
-                away = (m.get('AN') or '').strip()
-                
-                if not self.is_valid_match(home, away):
-                    continue
-                
-                # Oranları bul
-                odds = {'1': 2.0, 'X': 3.0, '2': 3.5}
-                
-                for bahis in m.get('MA', []):
-                    if bahis.get('MTID') == 1:  # 1X2
-                        oranlar = bahis.get('OCA', [])
+
+                home = (m.get("HN") or m.get("home") or m.get("home_team") or "").strip()
+                away = (m.get("AN") or m.get("away") or m.get("away_team") or "").strip()
+                date = m.get("D") or m.get("date") or ""
+                time_str = m.get("T") or m.get("time") or ""
+
+                # odds
+                odds = {'1': None, 'X': None, '2': None}
+                for bahis in m.get("MA", []):
+                    if bahis.get("MTID") == 1:
+                        oranlar = bahis.get("OCA", [])
                         if len(oranlar) >= 3:
                             try:
-                                odds['1'] = float(oranlar[0].get('O', 2.0))
-                                odds['X'] = float(oranlar[1].get('O', 3.0))
-                                odds['2'] = float(oranlar[2].get('O', 3.5))
+                                odds['1'] = float(oranlar[0].get('O') or oranlar[0].get('o') or 0)
+                                odds['X'] = float(oranlar[1].get('O') or oranlar[1].get('o') or 0)
+                                odds['2'] = float(oranlar[2].get('O') or oranlar[2].get('o') or 0)
                             except:
                                 pass
                         break
-                
+
+                if not home or not away:
+                    continue
+
                 matches.append({
-                    'home_team': home,
-                    'away_team': away,
-                    'league': m.get('LC', 'Bilinmeyen'),
-                    'odds': odds,
-                    'time': m.get('T', '20:00'),
-                    'date': m.get('D', datetime.now().strftime('%Y-%m-%d')),
-                    'is_live': m.get('S') == 1
+                    "home_team": home,
+                    "away_team": away,
+                    "league": m.get("LC") or m.get("league") or "Bilinmeyen",
+                    "date": _normalize_date(date),
+                    "time": _normalize_time(time_str),
+                    "odds": odds,
+                    "is_live": bool(m.get("S") == 1)
                 })
-            
-            return matches if len(matches) > 5 else None
-            
-        except Exception as e:
-            logger.error(f"JSON parse hatası: {e}")
-            return None
-    
-    def scrape_html_improved(self):
-        """İyileştirilmiş HTML scraping"""
+            except Exception:
+                continue
+
+    except Exception as e:
+        logger.debug(f"parse_nesine_json error: {e}")
+    return matches
+
+
+def _normalize_date(d: Optional[str]) -> str:
+    """Basit normalize: eğer 'YYYY-MM-DD' benzeri yoksa today string döndürür"""
+    if not d:
+        return datetime.now().strftime("%Y-%m-%d")
+    # bazı yanıtlar farklı formatta olabilir; basit regex ile al
+    m = re.search(r"(\d{4}-\d{2}-\d{2})", str(d))
+    if m:
+        return m.group(1)
+    # alternatif: dd.mm.yyyy
+    m2 = re.search(r"(\d{2})\.(\d{2})\.(\d{4})", str(d))
+    if m2:
+        return f"{m2.group(3)}-{m2.group(2)}-{m2.group(1)}"
+    return str(d)
+
+
+def _normalize_time(t: Optional[str]) -> str:
+    if not t:
+        return "00:00"
+    m = re.search(r"(\d{1,2}:\d{2})", str(t))
+    if m:
+        tm = m.group(1)
+        if len(tm.split(":")[0]) == 1:
+            # 9:00 -> 09:00
+            hh, mm = tm.split(":")
+            return f"{int(hh):02d}:{mm}"
+        return tm
+    return "00:00"
+
+
+# -------------------------
+# HTML FALLBACK (desktop + mobile)
+# -------------------------
+def extract_matches_from_html(html_text: str) -> List[Dict[str, Any]]:
+    soup = BeautifulSoup(html_text, "html.parser")
+    matches = []
+    seen = set()
+
+    # 1) Scriptlerde JSON arama (basit)
+    for script in soup.find_all("script"):
+        txt = script.string or ""
+        if not txt:
+            continue
+        # common patterns
+        patterns = [
+            r'window\.__INITIAL_STATE__\s*=\s*({.*?});',
+            r'window\.APP_DATA\s*=\s*({.*?});',
+            r'var\s+matches\s*=\s*(\[.*?\]);'
+        ]
+        for p in patterns:
+            m = re.search(p, txt, re.DOTALL)
+            if m:
+                try:
+                    obj = json.loads(m.group(1))
+                    extracted = _extract_from_obj_recursive(obj)
+                    for e in extracted:
+                        key = f"{e['home_team']}|{e['away_team']}|{e['date']}|{e['time']}"
+                        if key not in seen:
+                            seen.add(key)
+                            matches.append(e)
+                except Exception:
+                    continue
+
+    # 2) Table veya text'ten "Team - Team" pattern
+    text = soup.get_text(" ", strip=True)
+    team_pattern = re.compile(r'([A-ZÇĞİÖŞÜ][a-zçğıöşü\.]{2,30})\s+(?:-|vs\.?|–)\s+([A-ZÇĞİÖŞÜ][a-zçğıöşü\.]{2,30})')
+    for m in team_pattern.finditer(text):
+        home = m.group(1).strip()
+        away = m.group(2).strip()
+        key = f"{home}|{away}"
+        if key in seen:
+            continue
+        seen.add(key)
+        matches.append({
+            "home_team": home,
+            "away_team": away,
+            "league": "Bilinmeyen",
+            "date": datetime.now().strftime("%Y-%m-%d"),
+            "time": "00:00",
+            "odds": {"1": None, "X": None, "2": None},
+            "is_live": False
+        })
+
+    return matches
+
+
+def _extract_from_obj_recursive(obj: Any, depth: int = 0) -> List[Dict[str, Any]]:
+    if depth > 6:
+        return []
+    found = []
+    if isinstance(obj, dict):
+        # quick detection
+        if all(k in obj for k in ("home", "away")) or ("HN" in obj and "AN" in obj):
+            home = str(obj.get("home") or obj.get("HN") or "")
+            away = str(obj.get("away") or obj.get("AN") or "")
+            date = _normalize_date(obj.get("date") or obj.get("D"))
+            time_str = _normalize_time(obj.get("time") or obj.get("T"))
+            if home and away:
+                found.append({
+                    "home_team": home.strip(),
+                    "away_team": away.strip(),
+                    "league": obj.get("league") or obj.get("LC") or "Bilinmeyen",
+                    "date": date,
+                    "time": time_str,
+                    "odds": obj.get("odds", {"1": None, "X": None, "2": None}),
+                    "is_live": bool(obj.get("is_live") or obj.get("S") == 1)
+                })
+        for v in obj.values():
+            found.extend(_extract_from_obj_recursive(v, depth + 1))
+    elif isinstance(obj, list):
+        for item in obj:
+            found.extend(_extract_from_obj_recursive(item, depth + 1))
+    return found
+
+
+# -------------------------
+# NETWORK: fetch per-date
+# -------------------------
+def fetch_date_from_endpoints(date_str: str) -> List[Dict[str, Any]]:
+    """
+    Belirli bir tarih için API endpoint'lerini sırayla dener.
+    Dönen tüm maçları (parsed) union halinde döndürür.
+    """
+    all_matches = []
+    session = requests.Session()
+    headers = {"User-Agent": USER_AGENT, "Accept": "application/json, text/html"}
+    for base in API_ENDPOINTS:
         try:
-            url = "https://www.nesine.com/iddaa"
-            response = self.session.get(url, headers=self.headers, timeout=15)
-            
-            if response.status_code != 200:
-                return None
-            
-            logger.info(f"HTML alındı: {len(response.text)} karakter")
-            
-            soup = BeautifulSoup(response.text, 'html.parser')
-            matches = []
-            seen = set()
-            
-            # Yöntem 1: Script tag'lerinde JSON ara
-            for script in soup.find_all('script'):
-                script_text = script.string or ''
-                
-                # JSON pattern ara
-                json_patterns = [
-                    r'window\.__INITIAL_STATE__\s*=\s*({.*?});',
-                    r'window\.APP_DATA\s*=\s*({.*?});',
-                    r'var\s+matches\s*=\s*(\[.*?\]);'
-                ]
-                
-                for pattern in json_patterns:
-                    match = re.search(pattern, script_text, re.DOTALL)
-                    if match:
-                        try:
-                            json_data = json.loads(match.group(1))
-                            logger.info(f"Script'te JSON bulundu: {list(json_data.keys())[:5]}")
-                            # Recursive olarak maç bilgisi ara
-                            found_matches = self.extract_matches_from_object(json_data)
-                            if found_matches:
-                                matches.extend(found_matches)
-                        except:
-                            pass
-            
-            # Yöntem 2: Tablolardan çek
-            tables = soup.find_all('table')
-            for table in tables:
-                rows = table.find_all('tr')
-                for row in rows:
-                    cells = row.find_all(['td', 'th'])
-                    text = ' '.join(cell.get_text(strip=True) for cell in cells)
-                    
-                    # Maç pattern'i
-                    team_match = re.search(r'([A-ZÇĞİÖŞÜ][a-zçğıöşü\s\.]{2,25})\s+(?:-|vs)\s+([A-ZÇĞİÖŞÜ][a-zçğıöşü\s\.]{2,25})', text)
-                    if team_match:
-                        home = team_match.group(1).strip()
-                        away = team_match.group(2).strip()
-                        
-                        if self.is_valid_match(home, away):
-                            key = f"{home}|{away}"
-                            if key not in seen:
-                                seen.add(key)
-                                matches.append({
-                                    'home_team': home,
-                                    'away_team': away,
-                                    'league': self.detect_league(home, away),
-                                    'odds': self.generate_odds(),
-                                    'time': '20:00',
-                                    'date': datetime.now().strftime('%Y-%m-%d'),
-                                    'is_live': False
-                                })
-            
-            # Yöntem 3: Div/span elementlerinde ara
-            team_elements = soup.find_all(['div', 'span'], class_=re.compile(r'team|match|event', re.I))
-            
-            for i in range(len(team_elements) - 1):
-                home_text = team_elements[i].get_text(strip=True)
-                away_text = team_elements[i + 1].get_text(strip=True)
-                
-                if self.is_valid_match(home_text, away_text):
-                    key = f"{home_text}|{away_text}"
-                    if key not in seen:
-                        seen.add(key)
-                        matches.append({
-                            'home_team': home_text,
-                            'away_team': away_text,
-                            'league': self.detect_league(home_text, away_text),
-                            'odds': self.generate_odds(),
-                            'time': '20:00',
-                            'date': datetime.now().strftime('%Y-%m-%d'),
-                            'is_live': False
-                        })
-            
-            logger.info(f"HTML'den {len(matches)} potansiyel maç bulundu")
-            return matches if len(matches) > 5 else None
-            
+            # bazı endpoint'ler date param kabul eder - ekle
+            if "?" in base:
+                url = f"{base}&date={date_str}"
+            else:
+                url = f"{base}?date={date_str}"
+            logger.debug(f"Trying API: {url}")
+            r = session.get(url, headers=headers, timeout=10)
+            logger.info(f"API {base} -> status {r.status_code}, len {len(r.text)}")
+            if r.status_code == 200:
+                # try json first
+                try:
+                    data = r.json()
+                    parsed = parse_nesine_json(data)
+                    if parsed:
+                        all_matches.extend(parsed)
+                except Exception:
+                    # fallback to html parse if returned HTML
+                    html_parsed = extract_matches_from_html(r.text)
+                    if html_parsed:
+                        all_matches.extend(html_parsed)
+            else:
+                # non-200 -> skip
+                pass
         except Exception as e:
-            logger.error(f"HTML scraping hatası: {e}")
-            return None
-    
-    def extract_matches_from_object(self, obj, depth=0):
-        """JSON objesinden recursive olarak maç bilgisi çıkarır"""
-        if depth > 5:  # Sonsuz loop önleme
-            return []
-        
-        matches = []
-        
-        if isinstance(obj, dict):
-            # Maç benzeri key'ler ara
-            if all(k in obj for k in ['home', 'away']):
-                home = str(obj.get('home', ''))
-                away = str(obj.get('away', ''))
-                if self.is_valid_match(home, away):
-                    matches.append({
-                        'home_team': home,
-                        'away_team': away,
-                        'league': obj.get('league', 'Bilinmeyen'),
-                        'odds': obj.get('odds', self.generate_odds()),
-                        'time': obj.get('time', '20:00'),
-                        'date': obj.get('date', datetime.now().strftime('%Y-%m-%d')),
-                        'is_live': obj.get('is_live', False)
-                    })
-            
-            # Recursive devam et
-            for value in obj.values():
-                matches.extend(self.extract_matches_from_object(value, depth + 1))
-        
-        elif isinstance(obj, list):
-            for item in obj:
-                matches.extend(self.extract_matches_from_object(item, depth + 1))
-        
-        return matches
-    
-    def is_valid_match(self, home, away):
-        """Geçerli maç mı kontrol eder"""
+            logger.debug(f"Endpoint {base} failed: {e}")
+            continue
+    return all_matches
+
+
+def fetch_html_fallback(date_str: str) -> List[Dict[str, Any]]:
+    """Mobil + desktop sayfaları kontrol et (ek maç bulmak için)"""
+    found = []
+    headers = {"User-Agent": USER_AGENT}
+    try:
+        r = requests.get(MOBILE_IDDAA, headers=headers, timeout=10)
+        if r.status_code == 200:
+            found.extend(extract_matches_from_html(r.text))
+    except Exception:
+        pass
+
+    try:
+        r = requests.get(DESKTOP_IDDAA, headers=headers, timeout=10)
+        if r.status_code == 200:
+            found.extend(extract_matches_from_html(r.text))
+    except Exception:
+        pass
+
+    return found
+
+
+# -------------------------
+# MAIN: Collect future matches
+# -------------------------
+def is_future_match(m: Dict[str, Any]) -> bool:
+    """Match'in datetime'ı şu anın ilerisi mi kontrol et"""
+    date_str = m.get("date") or ""
+    time_str = m.get("time") or "00:00"
+    try:
+        dt = datetime.strptime(f"{date_str} {time_str}", "%Y-%m-%d %H:%M")
+        return dt > datetime.now()
+    except Exception:
+        # eğer parse edilemez ama date >= today string ise kabul et
+        try:
+            d = datetime.strptime(date_str, "%Y-%m-%d")
+            return d.date() >= datetime.now().date()
+        except Exception:
+            return True
+
+
+def deduplicate_matches(matches: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    seen = set()
+    unique = []
+    for m in matches:
+        key = f"{m.get('home_team','').strip().lower()}|{m.get('away_team','').strip().lower()}|{m.get('date','')}|{m.get('time','')}"
+        if key in seen:
+            continue
+        seen.add(key)
+        unique.append(m)
+    return unique
+
+
+def collect_future_matches(days_ahead: int = DAYS_AHEAD) -> List[Dict[str, Any]]:
+    logger.info(f"Collecting future matches for next {days_ahead} days...")
+    all_matches = []
+    for i in range(days_ahead):
+        date = (datetime.now() + timedelta(days=i)).strftime("%Y-%m-%d")
+        try:
+            # 1) Try API endpoints with date param
+            parsed = fetch_date_from_endpoints(date)
+            if parsed:
+                all_matches.extend(parsed)
+
+            # 2) HTML fallback (mobile/desktop)
+            fallback = fetch_html_fallback(date)
+            if fallback:
+                all_matches.extend(fallback)
+
+        except Exception as e:
+            logger.debug(f"Date {date} fetch error: {e}")
+            continue
+
+    # filter only football-like matches (we already tried to ensure GT==1 in parser, but ensure again)
+    filtered = []
+    for m in all_matches:
+        # simple heuristic: home/away must contain alphabetic chars & not include UI words
+        home = m.get("home_team","")
+        away = m.get("away_team","")
         if not home or not away:
-            return False
-        
-        # Uzunluk kontrol
-        if len(home) < 3 or len(away) < 3:
-            return False
-        if len(home) > 40 or len(away) > 40:
-            return False
-        
-        # Aynı takım
-        if home.lower() == away.lower():
-            return False
-        
-        # Blacklist - UI elementleri
-        blacklist = [
-            'hesabim', 'menu', 'giris', 'kayit', 'profil', 'mesaj', 'tel',
-            'casino', 'canli', 'yardim', 'iletisim', 'kupon', 'bahis',
-            'iddaa', 'nesine', 'oyna', 'kazanan', 'tutturan', 'cep',
-            'tekrar', 'tum', 'talep', 'favori', 'ayarlar', 'bildir',
-            'button', 'link', 'click', 'ara', 'bul', 'yukle'
-        ]
-        
-        home_lower = home.lower()
-        away_lower = away.lower()
-        
-        for word in blacklist:
-            if word in home_lower or word in away_lower:
-                return False
-        
-        # En az bir harf içermeli
-        if not re.search(r'[a-zA-ZçğıöşüÇĞİÖŞÜ]', home) or not re.search(r'[a-zA-ZçğıöşüÇĞİÖŞÜ]', away):
-            return False
-        
-        return True
-    
-    def detect_league(self, home, away):
-        """Takım isimlerinden lig tahmin eder"""
-        text = f"{home} {away}".lower()
-        
-        leagues = {
-            'Süper Lig': ['galatasaray', 'fenerbahçe', 'beşiktaş', 'trabzonspor', 'başakşehir', 'sivasspor'],
-            'Premier League': ['arsenal', 'chelsea', 'liverpool', 'manchester', 'city', 'united', 'spurs', 'everton'],
-            'La Liga': ['barcelona', 'madrid', 'real', 'atletico', 'sevilla', 'valencia', 'villarreal'],
-            'Bundesliga': ['bayern', 'dortmund', 'leipzig', 'leverkusen', 'frankfurt', 'wolfsburg'],
-            'Serie A': ['milan', 'inter', 'juventus', 'roma', 'napoli', 'lazio', 'atalanta'],
-            'Ligue 1': ['psg', 'marseille', 'lyon', 'monaco', 'lille', 'nice']
-        }
-        
-        for league, keywords in leagues.items():
-            if any(kw in text for kw in keywords):
-                return league
-        
-        return 'Diğer Ligler'
-    
-    def generate_odds(self):
-        """Gerçekçi oranlar üretir"""
-        import random
-        return {
-            '1': round(random.uniform(1.80, 3.40), 2),
-            'X': round(random.uniform(2.90, 3.70), 2),
-            '2': round(random.uniform(1.80, 4.20), 2)
-        }
-    
-    def get_demo_matches(self):
-        """Gerçek takımlarla demo maçlar"""
-        import random
-        from datetime import timedelta
-        
-        realistic_matches = [
-            ('Arsenal', 'Chelsea', 'Premier League'),
-            ('Liverpool', 'Manchester City', 'Premier League'),
-            ('Manchester United', 'Tottenham', 'Premier League'),
-            ('Barcelona', 'Real Madrid', 'La Liga'),
-            ('Atletico Madrid', 'Sevilla', 'La Liga'),
-            ('Bayern Munich', 'Borussia Dortmund', 'Bundesliga'),
-            ('Juventus', 'Inter Milan', 'Serie A'),
-            ('AC Milan', 'Napoli', 'Serie A'),
-            ('PSG', 'Marseille', 'Ligue 1'),
-            ('Galatasaray', 'Fenerbahçe', 'Süper Lig'),
-            ('Beşiktaş', 'Trabzonspor', 'Süper Lig'),
-            ('Ajax', 'PSV', 'Eredivisie'),
-            ('Porto', 'Benfica', 'Primeira Liga'),
-            ('Celtic', 'Rangers', 'Scottish Premiership'),
-            ('Leicester', 'Aston Villa', 'Premier League'),
-            ('Real Sociedad', 'Athletic Bilbao', 'La Liga'),
-            ('RB Leipzig', 'Bayer Leverkusen', 'Bundesliga'),
-            ('Roma', 'Lazio', 'Serie A'),
-            ('Lyon', 'Monaco', 'Ligue 1'),
-            ('Başakşehir', 'Sivasspor', 'Süper Lig')
-        ]
-        
-        matches = []
-        random.shuffle(realistic_matches)
-        
-        for i, (home, away, league) in enumerate(realistic_matches[:15]):
-            hour = 18 + (i % 6)
-            minute = random.choice([0, 15, 30, 45])
-            
-            matches.append({
-                'home_team': home,
-                'away_team': away,
-                'league': league,
-                'odds': self.generate_odds(),
-                'time': f"{hour:02d}:{minute:02d}",
-                'date': (datetime.now() + timedelta(days=i % 3)).strftime('%Y-%m-%d'),
-                'is_live': False
-            })
-        
-        logger.info(f"✅ {len(matches)} demo maç oluşturuldu")
-        return matches
+            continue
+        if any(bad in home.lower() for bad in ["hesabim","giris","menu","kupon","casino"]):
+            continue
+        filtered.append(m)
+
+    # only future matches
+    future = [m for m in filtered if is_future_match(m)]
+
+    # dedupe
+    unique = deduplicate_matches(future)
+
+    # sort by date/time
+    def sort_key(x):
+        try:
+            return datetime.strptime(f"{x.get('date','')} {x.get('time','00:00')}", "%Y-%m-%d %H:%M")
+        except Exception:
+            return datetime.max
+    unique.sort(key=sort_key)
+
+    logger.info(f"Collected {len(unique)} unique future matches")
+    return unique
 
 
-# Global instances
-scraper = FixedNesineScraper()
-predictor = ImprovedPredictionEngine()
+# -------------------------
+# BACKGROUND REFRESH LOOP (thread)
+# -------------------------
+def _refresh_loop():
+    global _cached_matches
+    while True:
+        try:
+            matches = collect_future_matches(DAYS_AHEAD)
+            with _cache_lock:
+                _cached_matches = matches
+            save_matches_to_disk(matches)
+        except Exception as e:
+            logger.error(f"Background refresh failed: {e}")
+        time.sleep(REFRESH_INTERVAL_SECONDS)
+
+
+# -------------------------
+# FASTAPI EVENTS & ENDPOINTS
+# -------------------------
+@app.on_event("startup")
+def startup_event():
+    # load disk cache first
+    global _cached_matches
+    _cached_matches = load_matches_from_disk()
+    # start background thread
+    t = threading.Thread(target=_refresh_loop, daemon=True)
+    t.start()
+    logger.info("Background refresh thread started")
 
 
 @app.get("/")
-async def root():
-    return {
-        "status": "Predicta AI v5.3 - İyileştirilmiş HTML Parser",
-        "engine": "Hybrid Model (Odds + xG)",
-        "data_source": "Nesine CDN API + Advanced HTML Scraping + Demo Fallback",
-        "timestamp": datetime.now().isoformat()
-    }
+def root():
+    return {"service": "Predicta AI v5.4 - FutureMatch Collector", "timestamp": datetime.now().isoformat()}
 
 
-@app.get("/health")
-async def health():
-    return {"status": "healthy", "version": "5.3"}
+@app.get("/api/matches/upcoming")
+def get_upcoming(limit: Optional[int] = 0):
+    """Return upcoming matches from cache. limit=0 => all"""
+    with _cache_lock:
+        data = list(_cached_matches)
+    if limit and limit > 0:
+        data = data[:limit]
+    return {"success": True, "count": len(data), "matches": data, "timestamp": datetime.now().isoformat()}
 
 
-@app.get("/api/nesine/live-predictions")
-async def get_live_predictions(league: str = "all", limit: int = 50):
-    """Ana endpoint - Maçları çeker ve tahmin yapar"""
+@app.post("/api/matches/refresh")
+def manual_refresh():
+    """Manual refresh (runs a synchronous collection, updates cache & disk)"""
     try:
-        logger.info(f"Maç verileri çekiliyor... (lig={league}, limit={limit})")
-        
-        matches = scraper.get_matches()
-        
-        if not matches:
-            return {
-                "success": False,
-                "error": "Maç verisi çekilemedi",
-                "matches": [],
-                "count": 0
-            }
-        
-        # Lig filtresi
-        if league != "all":
-            matches = [m for m in matches 
-                      if league.lower().replace('-', ' ') in m['league'].lower()]
-        
-        # Tahmin yap
-        matches_with_predictions = []
-        
-        for match in matches[:limit]:
-            try:
-                prediction = predictor.predict_match(
-                    home_team=match['home_team'],
-                    away_team=match['away_team'],
-                    odds=match['odds'],
-                    league=match.get('league', 'default')
-                )
-                
-                matches_with_predictions.append({
-                    'home_team': match['home_team'],
-                    'away_team': match['away_team'],
-                    'league': match['league'],
-                    'time': match.get('time', '20:00'),
-                    'date': match.get('date', datetime.now().strftime('%Y-%m-%d')),
-                    'odds': match['odds'],
-                    'is_live': match.get('is_live', False),
-                    'ai_prediction': prediction
-                })
-                
-            except Exception as e:
-                logger.error(f"Tahmin hatası: {e}")
-                continue
-        
-        logger.info(f"✅ {len(matches_with_predictions)} maç hazır")
-        
-        return {
-            "success": True,
-            "matches": matches_with_predictions,
-            "count": len(matches_with_predictions),
-            "source": "Nesine (Gerçek/Demo)",
-            "engine": "ImprovedPredictionEngine v5.0",
-            "timestamp": datetime.now().isoformat()
-        }
-        
+        matches = collect_future_matches(DAYS_AHEAD)
+        with _cache_lock:
+            global _cached_matches
+            _cached_matches = matches
+        save_matches_to_disk(matches)
+        return {"success": True, "count": len(matches)}
     except Exception as e:
-        logger.error(f"Endpoint hatası: {e}")
+        logger.error(f"manual refresh failed: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
 
-@app.get("/api/debug/cdn-api")
-async def debug_cdn_api():
-    """CDN API'yi debug eder"""
-    try:
-        url = "https://cdnbulten.nesine.com/api/bulten/getprebultenfull"
-        response = requests.get(url, timeout=10)
-        
-        return {
-            "status_code": response.status_code,
-            "content_type": response.headers.get('content-type'),
-            "response_length": len(response.text),
-            "response_preview": response.text[:500],
-            "is_json": response.headers.get('content-type', '').startswith('application/json'),
-            "timestamp": datetime.now().isoformat()
-        }
-    except Exception as e:
-        return {"error": str(e)}
+@app.get("/api/matches/raw")
+def raw_cached():
+    with _cache_lock:
+        return {"count": len(_cached_matches), "matches": _cached_matches}
 
 
+# -------------------------
+# RUN
+# -------------------------
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 8000))
-    logger.info(f"Predicta AI v5.3 başlatılıyor... Port: {port}")
+    ensure_data_dir()
+    # on start do an initial blocking collect to populate cache (so first responses are meaningful)
+    try:
+        initial = collect_future_matches(DAYS_AHEAD)
+        with _cache_lock:
+            _cached_matches = initial
+        save_matches_to_disk(initial)
+    except Exception as e:
+        logger.warning(f"Initial collect failed: {e}")
+
+    import uvicorn
+    port = int(os.environ.get("PORT", "8000"))
     uvicorn.run("main:app", host="0.0.0.0", port=port, log_level="info")
