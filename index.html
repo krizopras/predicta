@@ -38,7 +38,6 @@
     .main-content {background:rgba(255,255,255,0.05);border-radius:16px;backdrop-filter:blur(10px);padding:20px;}
     .loading {text-align:center;padding:40px;color:#ffd700;}
 
-    /* TABLO FORMATINDA LİG GRUPLAMA */
     .league-section {margin-bottom:35px;}
     .league-header {
       background:linear-gradient(135deg,rgba(255,215,0,0.2),rgba(255,152,0,0.2));
@@ -94,7 +93,6 @@
       50% {box-shadow:0 0 25px rgba(255,215,0,0.6);}
     }
 
-    /* Responsive */
     @media (max-width: 1024px) {
       .container {grid-template-columns:1fr;gap:20px;}
       .sidebar {max-height:300px;}
@@ -109,7 +107,7 @@
 <header class="header">
   <h1>Predicta AI</h1>
   <div class="tagline">Profesyonel Futbol Tahmin Platformu</div>
-  <div class="version-badge">v8.5 - Ülke Bazlı Gruplama</div>
+  <div class="version-badge">v9.0 - Ülke Bazlı Sistem</div>
 </header>
 
 <div class="container">
@@ -151,7 +149,6 @@
   let selectedLeague = 'all';
   const API_BASE_URL = 'https://predicta-production.up.railway.app';
 
-  // ÜLKE BAZLI TAKIM LİSTESİ
   const countryTeams = {
     "🇹🇷 Türkiye": ["Fenerbahçe", "Galatasaray", "Beşiktaş", "Trabzonspor", "Başakşehir", "Sivasspor", "Alanyaspor", "Kayserispor", "Gençlerbirliği", "Ankaragücü", "Konyaspor", "Kasımpaşa", "Hatayspor", "Giresunspor", "Ümraniyespor", "İstanbulspor", "Gaziantep", "Adana Demirspor", "Antalyaspor", "Fatih Karagümrük", "Pendikspor", "Samsunspor", "Çaykur Rizespor"],
     "🏴󠁧󠁢󠁥󠁮󠁧󠁿 İngiltere": ["Bournemouth", "Fulham", "Arsenal", "Chelsea", "Liverpool", "Manchester City", "Manchester United", "Tottenham", "Newcastle", "Brighton", "West Ham", "Crystal Palace", "Wolves", "Aston Villa", "Leeds", "Everton", "Southampton", "Nottingham Forest", "Brentford", "Burnley", "Sheffield United", "Luton Town", "Leicester", "Ipswich"],
@@ -163,30 +160,22 @@
     "🇵🇹 Portekiz": ["Casa Pia", "Estoril", "Benfica", "Porto", "Sporting CP", "Braga", "Vitoria Guimaraes", "Boavista", "Famalicao", "Rio Ave", "Santa Clara", "Vizela", "Arouca", "Chaves", "Portimonense", "Maritimo", "Paços de Ferreira", "Gil Vicente", "Estrela", "Farense"]
   };
 
-  const leagueNames = {
-    1300: "Süper Lig",
-    681: "Premier League", 
-    642: "La Liga",
-    994: "Serie A",
-    780: "Bundesliga",
-    2664: "Ligue 1",
-    108: "Eredivisie",
-    564: "Primeira Liga",
-    1597: "MLS"
-  };
-
-  function correctLeagueName(leagueName) {
-    const corrections = {
-      "Italy - Serie A": "Serie A",
-      "Spain - La Liga": "La Liga", 
-      "Germany - Bundesliga": "Bundesliga",
-      "France - Ligue 1": "Ligue 1",
-      "Netherlands - Eredivisie": "Eredivisie",
-      "Portugal - Primeira Liga": "Primeira Liga",
-      "Turkiye - Super Lig": "Süper Lig",
-      "England - Premier League": "Premier League"
-    };
-    return corrections[leagueName] || leagueName;
+  function detectCountryByTeamNames(homeTeam, awayTeam) {
+    for (const [country, teams] of Object.entries(countryTeams)) {
+      const homeInCountry = teams.some(team => 
+        homeTeam.toLowerCase().includes(team.toLowerCase())
+      );
+      const awayInCountry = teams.some(team => 
+        awayTeam.toLowerCase().includes(team.toLowerCase())
+      );
+      
+      if (homeInCountry && awayInCountry) {
+        return country;
+      } else if (homeInCountry || awayInCountry) {
+        return country;
+      }
+    }
+    return "🌍 Diğer Ülkeler";
   }
 
   async function loadMatches() {
@@ -197,9 +186,7 @@
       const data = await response.json();
       if (data.success && data.matches) {
         allMatches = data.matches.map(match => {
-          // Takım isimlerine göre ülke tespiti yap
-          const detectedCountry = detectCountryByTeamNames(match.home_team, match.away_team);
-          match.country = detectedCountry;
+          match.country = detectCountryByTeamNames(match.home_team, match.away_team);
           return match;
         });
         buildCountryList();
@@ -211,16 +198,6 @@
     }
   }
 
-  function detectLeagueByTeamNames(homeTeam, awayTeam) {
-    for (const [league, teams] of Object.entries(leagueMapping)) {
-      const homeInLeague = teams.some(team => homeTeam.toLowerCase().includes(team.toLowerCase()));
-      const awayInLeague = teams.some(team => awayTeam.toLowerCase().includes(team.toLowerCase()));
-      if (homeInLeague && awayInLeague) return league;
-      if (homeInLeague || awayInLeague) return league;
-    }
-    return null;
-  }
-
   function buildCountryList() {
     const countryCounts = {};
     allMatches.forEach(m => {
@@ -228,7 +205,6 @@
       countryCounts[country] = (countryCounts[country] || 0) + 1;
     });
     
-    // Ülkeleri önem sırasına göre sırala
     const priorityCountries = ["🇹🇷 Türkiye", "🏴󠁧󠁢󠁥󠁮󠁧󠁿 İngiltere", "🇪🇸 İspanya", "🇮🇹 İtalya", "🇩🇪 Almanya", "🇫🇷 Fransa", "🇳🇱 Hollanda", "🇵🇹 Portekiz"];
     const sortedCountries = Object.keys(countryCounts).sort((a, b) => {
       const aIndex = priorityCountries.indexOf(a);
@@ -298,7 +274,6 @@
       return; 
     }
 
-    // Maçları ülkelerine göre grupla
     const grouped = {};
     matches.forEach(m => {
       const country = m.country || "🌍 Diğer Ülkeler";
@@ -306,7 +281,6 @@
       grouped[country].push(m);
     });
 
-    // Ülkeleri önem sırasına göre sırala
     const priorityCountries = ["🇹🇷 Türkiye", "🏴󠁧󠁢󠁥󠁮󠁧󠁿 İngiltere", "🇪🇸 İspanya", "🇮🇹 İtalya", "🇩🇪 Almanya", "🇫🇷 Fransa", "🇳🇱 Hollanda", "🇵🇹 Portekiz"];
     const sortedCountries = Object.keys(grouped).sort((a, b) => {
       const aIndex = priorityCountries.indexOf(a);
