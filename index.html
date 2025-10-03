@@ -50,13 +50,19 @@
     .odds-btn.predicted {border:2px solid #ffd700;}
     .odds-label {font-size:0.8rem;color:#b0bec5;}
     .odds-value {font-size:1.05rem;font-weight:700;}
+    
+    /* Lig gruplama stilleri */
+    .league-section {margin-bottom:30px;}
+    .league-header {background:linear-gradient(135deg,rgba(255,215,0,0.2),rgba(255,152,0,0.2));padding:15px 20px;border-radius:12px;margin-bottom:15px;display:flex;justify-content:space-between;align-items:center;}
+    .league-title {font-size:1.3rem;font-weight:700;color:#ffd700;}
+    .league-match-count {background:rgba(255,255,255,0.2);padding:5px 12px;border-radius:20px;font-size:0.9rem;}
   </style>
 </head>
 <body>
 <header class="header">
   <h1>Predicta AI</h1>
   <div class="tagline">Profesyonel Futbol Tahmin Platformu</div>
-  <div class="version-badge">v7.2 - Lig Bazlı Görünüm</div>
+  <div class="version-badge">v7.3 - Akıllı Lig Gruplama</div>
 </header>
 
 <div class="container">
@@ -98,12 +104,45 @@
   let selectedLeague = 'all';
   const API_BASE_URL = 'https://predicta-production.up.railway.app';
 
+  // Gelişmiş lig eşleştirme sistemi
+  const leagueMapping = {
+    // Türkiye
+    "Süper Lig": ["Fenerbahçe", "Galatasaray", "Beşiktaş", "Trabzonspor", "Başakşehir", "Sivasspor", "Alanyaspor", "Kayserispor", "Gençlerbirliği", "Ankaragücü", "Konyaspor", "Kasımpaşa", "Hatayspor", "Giresunspor", "Ümraniyespor", "İstanbulspor", "Gaziantep", "Adana Demirspor", "Antalyaspor", "Fatih Karagümrük", "Pendikspor", "Samsunspor", "Çaykur Rizespor"],
+    
+    // İngiltere
+    "Premier League": ["Arsenal", "Chelsea", "Liverpool", "Manchester City", "Manchester United", "Tottenham", "Newcastle", "Brighton", "West Ham", "Crystal Palace", "Wolves", "Aston Villa", "Leeds", "Everton", "Southampton", "Nottingham Forest", "Fulham", "Brentford", "Bournemouth", "Burnley", "Sheffield United", "Luton Town"],
+    
+    // İspanya
+    "La Liga": ["Real Madrid", "Barcelona", "Atletico Madrid", "Sevilla", "Valencia", "Villarreal", "Real Betis", "Athletic Bilbao", "Real Sociedad", "Celta Vigo", "Getafe", "Osasuna", "Mallorca", "Cadiz", "Granada", "Alaves", "Rayo Vallecano", "Las Palmas", "Girona", "Almeria", "Valladolid", "Elche", "Espanyol"],
+    
+    // İtalya
+    "Serie A": ["Juventus", "Inter", "Milan", "Napoli", "Roma", "Lazio", "Atalanta", "Fiorentina", "Torino", "Bologna", "Monza", "Udinese", "Sassuolo", "Empoli", "Salernitana", "Lecce", "Verona", "Genoa", "Frosinone", "Cagliari"],
+    
+    // Almanya
+    "Bundesliga": ["Bayern Munich", "Borussia Dortmund", "RB Leipzig", "Bayer Leverkusen", "Borussia Mönchengladbach", "Eintracht Frankfurt", "Wolfsburg", "Union Berlin", "Freiburg", "Mainz", "Köln", "Hoffenheim", "Augsburg", "Stuttgart", "Bochum", "Darmstadt", "Heidenheim", "Werder Bremen"],
+    
+    // Fransa
+    "Ligue 1": ["Paris Saint-Germain", "Marseille", "Lyon", "Monaco", "Lille", "Nice", "Rennes", "Lens", "Reims", "Nantes", "Montpellier", "Toulouse", "Strasbourg", "Lorient", "Auxerre", "Clermont Foot", "Ajaccio", "Troyes", "Angers", "Brest", "Metz", "Le Havre"],
+    
+    // Diğer önemli ligler
+    "Eredivisie": ["Ajax", "PSV", "Feyenoord", "AZ Alkmaar", "Twente", "Utrecht", "Vitesse", "Heerenveen", "Groningen", "NEC Nijmegen", "Sparta Rotterdam", "Fortuna Sittard", "Heracles", "PEC Zwolle", "Excelsior", "RKC Waalwijk", "Cambuur", "Go Ahead Eagles", "Volendam", "Almere City"],
+    
+    "Primeira Liga": ["Benfica", "Porto", "Sporting CP", "Braga", "Vitoria Guimaraes", "Boavista", "Famalicao", "Casa Pia", "Rio Ave", "Santa Clara", "Vizela", "Arouca", "Chaves", "Estoril", "Portimonense", "Maritimo", "Paços de Ferreira", "Gil Vicente"],
+    
+    "MLS": ["Los Angeles FC", "Philadelphia Union", "Austin FC", "New York City FC", "Seattle Sounders", "Atlanta United", "Portland Timbers", "New England Revolution", "FC Dallas", "Minnesota United", "Real Salt Lake", "Nashville SC", "Orlando City", "Vancouver Whitecaps", "Sporting Kansas City", "Inter Miami", "Columbus Crew", "Charlotte FC", "New York Red Bulls", "Houston Dynamo", "San Jose Earthquakes", "DC United", "Chicago Fire", "FC Cincinnati", "St. Louis City", "Colorado Rapids", "LA Galaxy", "Montreal CF", "Toronto FC"]
+  };
+
+  // API'den gelen lig ID'leri için mapping
   const leagueNames = {
-    1300: "Türkiye Süper Lig",
-    681: "Premier League",
+    1300: "Süper Lig",
+    681: "Premier League", 
     642: "La Liga",
     994: "Serie A",
     780: "Bundesliga",
+    2664: "Ligue 1",
+    108: "Eredivisie",
+    564: "Primeira Liga",
+    1597: "MLS"
   };
 
   async function loadMatches() {
@@ -114,6 +153,14 @@
       const data = await response.json();
       if (data.success && data.matches) {
         allMatches = data.matches;
+        // Takım isimlerine göre lig ataması yap
+        allMatches = allMatches.map(match => {
+          const detectedLeague = detectLeagueByTeamNames(match.home_team, match.away_team);
+          if (detectedLeague && !match.league_name) {
+            match.league_name = detectedLeague;
+          }
+          return match;
+        });
         buildLeagueList();
         updateStats();
         applyFiltersAndSort();
@@ -123,120 +170,168 @@
     }
   }
 
+  // Takım isimlerine göre lig tespiti
+  function detectLeagueByTeamNames(homeTeam, awayTeam) {
+    for (const [league, teams] of Object.entries(leagueMapping)) {
+      if (teams.some(team => 
+        homeTeam.toLowerCase().includes(team.toLowerCase()) || 
+        awayTeam.toLowerCase().includes(team.toLowerCase())
+      )) {
+        return league;
+      }
+    }
+    return null;
+  }
+
   function buildLeagueList() {
     const leagueCounts = {};
-    allMatches.forEach(m=>{
+    allMatches.forEach(m => {
       const lName = m.league_name || leagueNames[m.league] || m.league;
-      leagueCounts[lName] = (leagueCounts[lName]||0)+1;
+      leagueCounts[lName] = (leagueCounts[lName] || 0) + 1;
     });
-    const sorted = Object.entries(leagueCounts).sort((a,b)=>b[1]-a[1]);
-    let html = `<div class="league-item ${selectedLeague==='all'?'active':''}" onclick="selectLeague('all',event)">
+    
+    const sorted = Object.entries(leagueCounts).sort((a, b) => b[1] - a[1]);
+    let html = `<div class="league-item ${selectedLeague === 'all' ? 'active' : ''}" onclick="selectLeague('all', event)">
                     🌍 <span class="league-name">Tüm Ligler</span>
                     <span class="league-count">${allMatches.length}</span></div>`;
-    sorted.forEach(([l,c])=>{
-      html += `<div class="league-item ${selectedLeague===l?'active':''}" onclick="selectLeague('${l}',event)">
+    sorted.forEach(([l, c]) => {
+      html += `<div class="league-item ${selectedLeague === l ? 'active' : ''}" onclick="selectLeague('${l}', event)">
                   ⚽ <span class="league-name">${l}</span>
                   <span class="league-count">${c}</span></div>`;
     });
     document.getElementById('league-list').innerHTML = html;
   }
 
-  function selectLeague(l,event){
-    selectedLeague=String(l);
-    document.querySelectorAll('.league-item').forEach(x=>x.classList.remove('active'));
+  function selectLeague(l, event) {
+    selectedLeague = String(l);
+    document.querySelectorAll('.league-item').forEach(x => x.classList.remove('active'));
     event.currentTarget.classList.add('active');
-    document.getElementById('selected-league-name').textContent = l==='all'?'Tüm Ligler':l;
+    document.getElementById('selected-league-name').textContent = l === 'all' ? 'Tüm Ligler' : l;
     applyFiltersAndSort();
   }
 
-  function filterMatches(f,event){
-    currentFilter=f;
-    document.querySelectorAll('.filter-btn').forEach(x=>x.classList.remove('active'));
-    event.currentTarget.classList.add('active');
-    applyFiltersAndSort();
-  }
-
-  function sortMatches(s,event){
-    currentSort=s;
-    document.querySelectorAll('.sort-btn').forEach(x=>x.classList.remove('active'));
+  function filterMatches(f, event) {
+    currentFilter = f;
+    document.querySelectorAll('.filter-btn').forEach(x => x.classList.remove('active'));
     event.currentTarget.classList.add('active');
     applyFiltersAndSort();
   }
 
-  function normalizeConfidence(c){return c<=1?c*100:c;}
-  function getConfidenceClass(c){if(c>=80) return 'very-high'; if(c>=65) return 'high'; if(c>=50) return 'medium'; return 'low';}
-
-  function applyFiltersAndSort(){
-    let filtered=[...allMatches];
-    if(selectedLeague!=='all') filtered=filtered.filter(m=>(m.league_name||leagueNames[m.league]||m.league)===selectedLeague);
-    if(currentFilter==='high-confidence') filtered=filtered.filter(m=>normalizeConfidence(m.ai_prediction?.confidence||0)>=65);
-    if(currentFilter==='medium') filtered=filtered.filter(m=>{let c=normalizeConfidence(m.ai_prediction?.confidence||0);return c>=50&&c<65;});
-    if(currentSort==='confidence') filtered.sort((a,b)=>normalizeConfidence(b.ai_prediction?.confidence||0)-normalizeConfidence(a.ai_prediction?.confidence||0));
-    if(currentSort==='time') filtered.sort((a,b)=>(`${a.date} ${a.time}`).localeCompare(`${b.date} ${b.time}`));
-    updateStats(filtered); displayMatches(filtered);
+  function sortMatches(s, event) {
+    currentSort = s;
+    document.querySelectorAll('.sort-btn').forEach(x => x.classList.remove('active'));
+    event.currentTarget.classList.add('active');
+    applyFiltersAndSort();
   }
 
-  function updateStats(f=allMatches){
-    document.getElementById('total-matches').textContent=f.length;
-    document.getElementById('high-confidence').textContent=f.filter(m=>normalizeConfidence(m.ai_prediction?.confidence||0)>=65).length;
-    document.getElementById('medium-confidence').textContent=f.filter(m=>{let c=normalizeConfidence(m.ai_prediction?.confidence||0);return c>=50&&c<65;}).length;
+  function normalizeConfidence(c) { return c <= 1 ? c * 100 : c; }
+  function getConfidenceClass(c) { 
+    if (c >= 80) return 'very-high'; 
+    if (c >= 65) return 'high'; 
+    if (c >= 50) return 'medium'; 
+    return 'low'; 
   }
 
-  // LİGLERE GÖRE GRUPLANMIŞ MAÇ GÖRÜNÜMÜ
-  function displayMatches(matches){
-    const area=document.getElementById('content-area');
-    if(matches.length===0){area.innerHTML=`<div class="loading">Bu lig/filtre için maç bulunamadı</div>`;return;}
+  function applyFiltersAndSort() {
+    let filtered = [...allMatches];
+    if (selectedLeague !== 'all') filtered = filtered.filter(m => (m.league_name || leagueNames[m.league] || m.league) === selectedLeague);
+    if (currentFilter === 'high-confidence') filtered = filtered.filter(m => normalizeConfidence(m.ai_prediction?.confidence || 0) >= 65);
+    if (currentFilter === 'medium') filtered = filtered.filter(m => { let c = normalizeConfidence(m.ai_prediction?.confidence || 0); return c >= 50 && c < 65; });
+    if (currentSort === 'confidence') filtered.sort((a, b) => normalizeConfidence(b.ai_prediction?.confidence || 0) - normalizeConfidence(a.ai_prediction?.confidence || 0));
+    if (currentSort === 'time') filtered.sort((a, b) => (`${a.date} ${a.time}`).localeCompare(`${b.date} ${b.time}`));
+    updateStats(filtered); 
+    displayMatches(filtered);
+  }
 
-    const grouped={};
-    matches.forEach(m=>{
-      const ligAdi = m.league_name || leagueNames[m.league] || m.league || "Bilinmeyen Lig";
-      if(!grouped[ligAdi]) grouped[ligAdi]=[];
+  function updateStats(f = allMatches) {
+    document.getElementById('total-matches').textContent = f.length;
+    document.getElementById('high-confidence').textContent = f.filter(m => normalizeConfidence(m.ai_prediction?.confidence || 0) >= 65).length;
+    document.getElementById('medium-confidence').textContent = f.filter(m => { let c = normalizeConfidence(m.ai_prediction?.confidence || 0); return c >= 50 && c < 65; }).length;
+  }
+
+  // GELİŞMİŞ LİG GRUPLAMA GÖRÜNÜMÜ
+  function displayMatches(matches) {
+    const area = document.getElementById('content-area');
+    if (matches.length === 0) { 
+      area.innerHTML = `<div class="loading">Bu lig/filtre için maç bulunamadı</div>`; 
+      return; 
+    }
+
+    // Maçları liglerine göre grupla
+    const grouped = {};
+    matches.forEach(m => {
+      const ligAdi = m.league_name || leagueNames[m.league] || m.league || "Diğer Ligler";
+      if (!grouped[ligAdi]) grouped[ligAdi] = [];
       grouped[ligAdi].push(m);
     });
 
-    let html='';
-    Object.entries(grouped).forEach(([ligAdi, maclar])=>{
-      html+=`<h2 style="margin:20px 0 10px;color:#ffd700;font-size:1.4rem;">${ligAdi}</h2>`;
-      html+='<div class="match-list">';
-      maclar.forEach(m=>{
-        const p=m.ai_prediction||{};
-        const conf=normalizeConfidence(p.confidence||0);
-        const result=p.predicted_result || p.result || 'X';
-        html+=`<div class="match-card">
-                 <div class="match-header">
-                   <div>
-                     <div class="match-teams">${m.home_team} vs ${m.away_team}</div>
-                     <div class="match-league">${m.date} ${m.time}</div>
-                   </div>
-                   <div class="prediction-badge ${getConfidenceClass(conf)}">
-                     Tahmin: ${result} (${conf.toFixed(1)}%)
-                   </div>
-                 </div>
-                 <div class="odds-container">
-                   <div class="odds-btn ${result==='1'?'predicted':''}">
-                     <div class="odds-label">1</div>
-                     <div class="odds-value">${(m.odds?.['1']||2.0).toFixed(2)}</div>
-                   </div>
-                   <div class="odds-btn ${result==='X'?'predicted':''}">
-                     <div class="odds-label">X</div>
-                     <div class="odds-value">${(m.odds?.X||3.0).toFixed(2)}</div>
-                   </div>
-                   <div class="odds-btn ${result==='2'?'predicted':''}">
-                     <div class="odds-label">2</div>
-                     <div class="odds-value">${(m.odds?.['2']||3.5).toFixed(2)}</div>
-                   </div>
-                 </div>
-               </div>`;
-      });
-      html+='</div>';
+    // Ligleri önem sırasına göre sırala
+    const priorityLeagues = ["Süper Lig", "Premier League", "La Liga", "Serie A", "Bundesliga", "Ligue 1", "Eredivisie", "Primeira Liga", "MLS"];
+    const sortedLeagues = Object.keys(grouped).sort((a, b) => {
+      const aIndex = priorityLeagues.indexOf(a);
+      const bIndex = priorityLeagues.indexOf(b);
+      if (aIndex !== -1 && bIndex !== -1) return aIndex - bIndex;
+      if (aIndex !== -1) return -1;
+      if (bIndex !== -1) return 1;
+      return a.localeCompare(b);
     });
 
-    area.innerHTML=html;
+    let html = '';
+    sortedLeagues.forEach(ligAdi => {
+      const maclar = grouped[ligAdi];
+      
+      html += `<div class="league-section">
+                <div class="league-header">
+                  <div class="league-title">${ligAdi}</div>
+                  <div class="league-match-count">${maclar.length} maç</div>
+                </div>
+                <div class="match-list">`;
+      
+      maclar.forEach(m => {
+        const p = m.ai_prediction || {};
+        const conf = normalizeConfidence(p.confidence || 0);
+        const result = p.predicted_result || p.result || 'X';
+        
+        html += `<div class="match-card">
+                   <div class="match-header">
+                     <div>
+                       <div class="match-teams">${m.home_team} vs ${m.away_team}</div>
+                       <div class="match-league">${m.date} ${m.time}</div>
+                     </div>
+                     <div class="prediction-badge ${getConfidenceClass(conf)}">
+                       Tahmin: ${result} (${conf.toFixed(1)}%)
+                     </div>
+                   </div>
+                   <div class="odds-container">
+                     <div class="odds-btn ${result === '1' ? 'predicted' : ''}">
+                       <div class="odds-label">1</div>
+                       <div class="odds-value">${(m.odds?.['1'] || 2.0).toFixed(2)}</div>
+                     </div>
+                     <div class="odds-btn ${result === 'X' ? 'predicted' : ''}">
+                       <div class="odds-label">X</div>
+                       <div class="odds-value">${(m.odds?.X || 3.0).toFixed(2)}</div>
+                     </div>
+                     <div class="odds-btn ${result === '2' ? 'predicted' : ''}">
+                       <div class="odds-label">2</div>
+                       <div class="odds-value">${(m.odds?.['2'] || 3.5).toFixed(2)}</div>
+                     </div>
+                   </div>
+                 </div>`;
+      });
+      
+      html += `</div></div>`;
+    });
+
+    area.innerHTML = html;
   }
 
-  function showLoading(){document.getElementById('content-area').innerHTML='<div class="loading">Veriler yükleniyor...</div>';}
-  function showError(m){document.getElementById('content-area').innerHTML=`<div style="color:red">${m}</div>`;}
-  window.addEventListener('load',()=>{loadMatches(); setInterval(loadMatches,300000);});
+  function showLoading() { document.getElementById('content-area').innerHTML = '<div class="loading">Veriler yükleniyor...</div>'; }
+  function showError(m) { document.getElementById('content-area').innerHTML = `<div style="color:red">${m}</div>`; }
+  
+  window.addEventListener('load', () => { 
+    loadMatches(); 
+    setInterval(loadMatches, 300000); // 5 dakikada bir güncelle
+  });
 </script>
 </body>
 </html>
