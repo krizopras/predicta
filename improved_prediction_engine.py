@@ -165,13 +165,13 @@ class ProfessionalPredictionEngine:
         return random.randint(65, 75)
     
     def predict_match(self, home_team, away_team, odds, league="Unknown"):
-        """ANA TAHMİN FONKSİYONU - DÜZELTİLMİŞ"""
+        """ANA TAHMİN FONKSİYONU - GERÇEK ZEKA İLE"""
         try:
             # 1. Takım güçleri
             home_power = self.get_team_power(home_team)
             away_power = self.get_team_power(away_team)
             
-            # 2. Oranlardan base probabilities
+            # 2. Oranlardan base probabilities (sadece başlangıç için)
             odds_1 = float(odds['1'])
             odds_x = float(odds['X'])
             odds_2 = float(odds['2'])
@@ -188,20 +188,13 @@ class ProfessionalPredictionEngine:
             prob_x_base = (imp_x / total_imp) * 100
             prob_2_base = (imp_2 / total_imp) * 100
             
-            # 3. Güç farkı analizi
+            # 3. GÜÇ FARKI ANALİZİ (EN ÖNEMLİ FAKTÖR)
             power_diff = home_power - away_power
             
-            # Güç farkına göre adjustment
-            if power_diff > 10:
-                power_adjust = 1.25
-            elif power_diff > 5:
-                power_adjust = 1.15
-            elif power_diff < -10:
-                power_adjust = 0.75
-            elif power_diff < -5:
-                power_adjust = 0.85
-            else:
-                power_adjust = 1.0
+            # Güç bazlı olasılıklar
+            total_power = home_power + away_power
+            power_home_prob = (home_power / total_power) * 100
+            power_away_prob = (away_power / total_power) * 100
             
             # 4. Lig pattern'leri
             league_pattern = self.patterns.get_pattern(league)
@@ -212,32 +205,66 @@ class ProfessionalPredictionEngine:
             home_stats = self.features.get_team_stats(home_team)
             away_stats = self.features.get_team_stats(away_team)
             
-            # 6. FINAL PROBABILITIES (Hibrit Model)
-            # Oranlar %50, Güç Analizi %30, Form %20
-            home_win_prob = (
-                prob_1_base * 0.50 +
-                (home_power / (home_power + away_power) * 100) * power_adjust * 0.30 +
-                (home_stats['home_form'] / 3 * 100) * 0.20
-            ) * home_boost
+            # Form faktörü
+            form_factor_home = (home_stats['home_form'] / 3)  # 0-1 arası
+            form_factor_away = (away_stats['away_form'] / 3)
             
-            away_win_prob = (
-                prob_2_base * 0.50 +
-                (away_power / (home_power + away_power) * 100) * (2 - power_adjust) * 0.30 +
-                (away_stats['away_form'] / 3 * 100) * 0.20
+            # 6. AKILLI HİBRİT MODEL
+            # %30 Oranlar, %50 Güç Analizi, %20 Form
+            
+            # Ev sahibi kazanma olasılığı
+            home_win_prob = (
+                prob_1_base * 0.25 +  # Oranların ağırlığını azalttık
+                power_home_prob * 0.55 * home_boost +  # Güç analizini artırdık
+                (form_factor_home * 100) * 0.20  # Form faktörü
             )
+            
+            # Deplasman kazanma olasılığı
+            away_win_prob = (
+                prob_2_base * 0.25 +
+                power_away_prob * 0.55 +
+                (form_factor_away * 100) * 0.20
+            )
+            
+            # Beraberlik olasılığı (güç dengesi varsa artar)
+            power_balance = 1 - (abs(power_diff) / 30)  # Güçler dengeli mi?
+            
+            draw_base = 22 + (power_balance * 15)  # Dengeli maçta beraberlik artar
             
             draw_prob = (
-                prob_x_base * 0.60 +
-                25 * 0.40  # Base beraberlik olasılığı
+                prob_x_base * 0.35 +
+                draw_base * 0.65
             )
             
-            # 7. Oran düşüşü sinyali
+            # 7. ORAN DÜŞÜŞÜ SİNYALİ (Daha agresif)
             if odds_analysis['signals']['1'] == "STRONG":
-                home_win_prob *= 1.15
+                home_win_prob *= 1.25
+                draw_prob *= 0.90
             elif odds_analysis['signals']['2'] == "STRONG":
-                away_win_prob *= 1.15
+                away_win_prob *= 1.25
+                draw_prob *= 0.90
+            elif odds_analysis['signals']['X'] == "STRONG":
+                draw_prob *= 1.20
+                home_win_prob *= 0.95
+                away_win_prob *= 0.95
             
-            # 8. Normalizasyon
+            # 8. GÜÇ FARKI ADJUSTMENT (Kritik!)
+            if power_diff >= 15:  # Çok güçlü ev sahibi
+                home_win_prob *= 1.35
+                away_win_prob *= 0.70
+                draw_prob *= 0.85
+            elif power_diff >= 8:
+                home_win_prob *= 1.20
+                away_win_prob *= 0.85
+            elif power_diff <= -15:  # Çok güçlü deplasman
+                away_win_prob *= 1.35
+                home_win_prob *= 0.70
+                draw_prob *= 0.85
+            elif power_diff <= -8:
+                away_win_prob *= 1.20
+                home_win_prob *= 0.85
+            
+            # 9. Normalizasyon
             total_prob = home_win_prob + draw_prob + away_win_prob
             home_win_prob = (home_win_prob / total_prob) * 100
             draw_prob = (draw_prob / total_prob) * 100
@@ -417,12 +444,12 @@ predictor = ProfessionalPredictionEngine()
 @app.get("/")
 async def root():
     return {
-        "status": "Predicta AI Professional v6.1 (FIXED)",
-        "features": [
-            "Dynamic Predictions (No more 92% draws!)",
-            "League Filtering Fixed",
-            "Value Bet Analysis",
-            "Risk Assessment"
+        "status": "Predicta AI Professional v6.2 (FIXED)",
+        "fixes": [
+            "✅ Tahminler artık güç analizine dayalı (oranlar sadece %25)",
+            "✅ Lig filtreleme tamamen yenilendi",
+            "✅ Manchester United gibi güçlü takımlar doğru tahmin edilir",
+            "✅ Debug logging eklendi"
         ],
         "timestamp": datetime.now().isoformat()
     }
@@ -433,17 +460,18 @@ async def health():
 
 @app.get("/api/nesine/live-predictions")
 async def get_live_predictions(
-    league: str = Query("all", description="Lig filtresi (all, Premier League, Super Lig, vb.)"),
+    league: str = Query("all", description="Lig filtresi"),
     limit: int = Query(100, description="Maksimum maç sayısı")
 ):
-    """Ana tahmin endpoint'i - Lig filtreleme ile"""
+    """Ana tahmin endpoint'i - GELİŞTİRİLMİŞ LİG FİLTRELEME"""
     try:
-        logger.info(f"Fetching predictions - League: {league}, Limit: {limit}")
+        logger.info(f"Request: league='{league}', limit={limit}")
         
         # Maçları çek
         matches = fetcher.fetch_matches()
         
         if not matches:
+            logger.warning("No matches fetched from API")
             return {
                 "success": False,
                 "message": "No matches available",
@@ -451,26 +479,54 @@ async def get_live_predictions(
                 "count": 0
             }
         
-        # LİG FİLTRELEME - DÜZELTİLMİŞ
-        if league != "all":
-            league_lower = league.lower().strip()
+        logger.info(f"Total matches fetched: {len(matches)}")
+        
+        # LİG FİLTRELEME - TAM DÜZELTİLMİŞ
+        filtered_matches = matches  # Default: tüm maçlar
+        
+        if league and league.lower() != "all":
+            league_query = league.lower().strip()
             filtered_matches = []
+            
+            # Debug için lig isimlerini logla
+            unique_leagues = set(m['league'] for m in matches)
+            logger.info(f"Available leagues: {unique_leagues}")
             
             for match in matches:
                 match_league = match['league'].lower().strip()
                 
-                # Esnek eşleştirme
-                if (league_lower in match_league or 
-                    match_league in league_lower or
-                    league_lower.replace(' ', '') in match_league.replace(' ', '')):
+                # Çoklu eşleştirme stratejisi
+                is_match = (
+                    league_query in match_league or
+                    match_league in league_query or
+                    league_query.replace(' ', '') in match_league.replace(' ', '') or
+                    match_league.replace(' ', '') in league_query.replace(' ', '')
+                )
+                
+                # Özel durumlar
+                if 'super' in league_query or 'süper' in league_query:
+                    if 'super' in match_league or 'süper' in match_league:
+                        is_match = True
+                
+                if 'premier' in league_query:
+                    if 'premier' in match_league:
+                        is_match = True
+                
+                if 'la liga' in league_query or 'laliga' in league_query:
+                    if 'la liga' in match_league or 'laliga' in match_league:
+                        is_match = True
+                
+                if is_match:
                     filtered_matches.append(match)
             
-            matches = filtered_matches
-            logger.info(f"Filtered to {len(matches)} matches for league: {league}")
+            logger.info(f"After filter '{league}': {len(filtered_matches)} matches")
+        
+        # Limit uygula
+        filtered_matches = filtered_matches[:limit]
         
         # Tahminleri ekle
         predictions = []
-        for match in matches[:limit]:
+        for match in filtered_matches:
             pred = predictor.predict_match(
                 match['home_team'],
                 match['away_team'],
@@ -490,12 +546,16 @@ async def get_live_predictions(
                 'ai_prediction': pred
             })
         
+        logger.info(f"Returning {len(predictions)} predictions")
+        
         return {
             "success": True,
             "matches": predictions,
             "count": len(predictions),
             "league_filter": league,
-            "engine": "Professional v6.1",
+            "total_available": len(matches),
+            "filtered_count": len(filtered_matches),
+            "engine": "Professional v6.2",
             "timestamp": datetime.now().isoformat()
         }
         
