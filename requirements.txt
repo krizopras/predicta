@@ -1,12 +1,7 @@
-fastapi
-uvicorn
-pandas
-numpy
-scikit-learn
-xgboost
-requests
-python-multipart
-beautifulsoup4
-lxml
-aiohttp
-pydantic
+fastapi==0.104.1
+uvicorn==0.24.0
+requests==2.31.0
+beautifulsoup4==4.12.2
+python-multipart==0.0.6
+pandas==2.1.4  # Eğer database_manager.py kullanılıyorsa gerekli
+numpy==1.26.2  # Eğer database_manager.py kullanılıyorsa gerekli
