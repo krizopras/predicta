@@ -59,7 +59,7 @@
             border-radius: 8px;
             padding: 15px;
             margin: 20px auto;
-            max-width: 900px;
+            max-width: 1400px;
             text-align: center;
         }
 
@@ -80,6 +80,96 @@
             max-width: 1400px;
             margin: 20px auto;
             padding: 0 20px;
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 20px;
+        }
+
+        /* SOL SIDEBAR - LİG LİSTESİ */
+        .sidebar {
+            background: linear-gradient(135deg, rgba(26, 35, 126, 0.8), rgba(30, 39, 130, 0.9));
+            border-radius: 12px;
+            padding: 20px;
+            height: fit-content;
+            position: sticky;
+            top: 20px;
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(63, 81, 181, 0.2);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        .sidebar-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #ffd700;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid rgba(255, 215, 0, 0.3);
+        }
+
+        .league-list {
+            max-height: calc(100vh - 200px);
+            overflow-y: auto;
+            scrollbar-width: thin;
+            scrollbar-color: #ffd700 rgba(255, 255, 255, 0.1);
+        }
+
+        .league-list::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .league-list::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 3px;
+        }
+
+        .league-list::-webkit-scrollbar-thumb {
+            background: #ffd700;
+            border-radius: 3px;
+        }
+
+        .league-item {
+            padding: 12px 15px;
+            margin-bottom: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-left: 3px solid transparent;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .league-item:hover {
+            background: rgba(255, 215, 0, 0.1);
+            border-left-color: #ffd700;
+            transform: translateX(5px);
+        }
+
+        .league-item.active {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(255, 143, 0, 0.2));
+            border-left-color: #ffd700;
+            font-weight: 600;
+        }
+
+        .league-name {
+            font-size: 0.9rem;
+            color: #fff;
+        }
+
+        .league-count {
+            background: rgba(255, 215, 0, 0.3);
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 0.75rem;
+            color: #ffd700;
+            font-weight: 600;
+        }
+
+        /* SAĞ İÇERİK ALANI */
+        .main-area {
+            min-height: 500px;
         }
 
         .stats-container {
@@ -331,6 +421,20 @@
             transform: translateY(-2px);
         }
 
+        @media (max-width: 1024px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                position: static;
+            }
+
+            .league-list {
+                max-height: 300px;
+            }
+        }
+
         @media (max-width: 768px) {
             .header h1 {
                 font-size: 2rem;
@@ -363,68 +467,78 @@
     </div>
 
     <div class="container">
-        <div class="stats-container">
-            <div class="stat-box">
-                <div class="stat-value" id="total-matches">0</div>
-                <div class="stat-label">Toplam Maç</div>
+        <!-- SOL SIDEBAR - LİG LİSTESİ -->
+        <aside class="sidebar">
+            <div class="sidebar-title">📋 Ligler</div>
+            <div class="league-list" id="league-list">
+                <div class="loading" style="padding: 20px 0;">Ligler yükleniyor...</div>
             </div>
-            <div class="stat-box">
-                <div class="stat-value" id="high-confidence">0</div>
-                <div class="stat-label">Yüksek Güven (>65%)</div>
-            </div>
-            <div class="stat-box">
-                <div class="stat-value" id="medium-confidence">0</div>
-                <div class="stat-label">Orta Güven (50-65%)</div>
-            </div>
-            <div class="stat-box">
-                <div class="stat-value">v5.5</div>
-                <div class="stat-label">Hybrid Model</div>
-            </div>
-        </div>
+        </aside>
 
-        <div class="controls">
-            <div>
-                <span class="control-label">Filtrele:</span>
-                <button class="filter-btn active" onclick="filterMatches('all')">Tümü</button>
-                <button class="filter-btn" onclick="filterMatches('high-confidence')">Yüksek Güven (>65%)</button>
-                <button class="filter-btn" onclick="filterMatches('medium')">Orta Güven (50-65%)</button>
-            </div>
-            <div style="margin-left: auto;">
-                <span class="control-label">Sırala:</span>
-                <button class="sort-btn active" onclick="sortMatches('confidence')">Güvene Göre</button>
-                <button class="sort-btn" onclick="sortMatches('time')">Zamana Göre</button>
-                <button class="sort-btn" onclick="sortMatches('league')">Lige Göre</button>
-            </div>
-        </div>
-
-        <div class="main-content">
-            <div style="text-align: center; padding: 20px;">
-                <button class="refresh-btn" onclick="loadMatches()">
-                    Verileri Yenile
-                </button>
-            </div>
-
-            <div id="content-area">
-                <div class="loading">
-                    <div>AI tahmin motoru başlatılıyor...</div>
-                    <div style="margin-top: 20px;">Veriler çekiliyor...</div>
+        <!-- SAĞ İÇERİK ALANI -->
+        <main class="main-area">
+            <div class="stats-container">
+                <div class="stat-box">
+                    <div class="stat-value" id="total-matches">0</div>
+                    <div class="stat-label">Toplam Maç</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-value" id="high-confidence">0</div>
+                    <div class="stat-label">Yüksek Güven (>65%)</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-value" id="medium-confidence">0</div>
+                    <div class="stat-label">Orta Güven (50-65%)</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-value" id="selected-league-name">Tüm Ligler</div>
+                    <div class="stat-label">Seçili Lig</div>
                 </div>
             </div>
-        </div>
+
+            <div class="controls">
+                <div>
+                    <span class="control-label">Filtrele:</span>
+                    <button class="filter-btn active" onclick="filterMatches('all')">Tümü</button>
+                    <button class="filter-btn" onclick="filterMatches('high-confidence')">Yüksek Güven</button>
+                    <button class="filter-btn" onclick="filterMatches('medium')">Orta Güven</button>
+                </div>
+                <div style="margin-left: auto;">
+                    <span class="control-label">Sırala:</span>
+                    <button class="sort-btn active" onclick="sortMatches('confidence')">Güvene Göre</button>
+                    <button class="sort-btn" onclick="sortMatches('time')">Zamana Göre</button>
+                </div>
+            </div>
+
+            <div class="main-content">
+                <div style="text-align: center; padding: 20px;">
+                    <button class="refresh-btn" onclick="loadMatches()">
+                        🔄 Verileri Yenile
+                    </button>
+                </div>
+
+                <div id="content-area">
+                    <div class="loading">
+                        <div>AI tahmin motoru başlatılıyor...</div>
+                        <div style="margin-top: 20px;">Veriler çekiliyor...</div>
+                    </div>
+                </div>
+            </div>
+        </main>
     </div>
 
     <script>
         let allMatches = [];
         let currentFilter = 'all';
         let currentSort = 'confidence';
+        let selectedLeague = 'all';
         const API_BASE_URL = 'https://predicta-production.up.railway.app';
 
         async function loadMatches() {
             try {
                 showLoading();
                 
-                // DÜZELTİLDİ: Doğru endpoint kullanılıyor
-                const response = await fetch(`${API_BASE_URL}/api/predictions/upcoming?limit=50`);
+                const response = await fetch(`${API_BASE_URL}/api/predictions/upcoming?limit=500`);
                 
                 if (!response.ok) {
                     throw new Error(`HTTP ${response.status}`);
@@ -434,6 +548,7 @@
                 
                 if (data.success && data.matches) {
                     allMatches = data.matches;
+                    buildLeagueList();
                     updateStats();
                     applyFiltersAndSort();
                 } else {
@@ -444,6 +559,64 @@
                 console.error('Hata:', error);
                 showError(`Bağlantı hatası: ${error.message}`);
             }
+        }
+
+        function buildLeagueList() {
+            const leagueCounts = {};
+            
+            allMatches.forEach(match => {
+                const league = match.league || 'Diğer';
+                leagueCounts[league] = (leagueCounts[league] || 0) + 1;
+            });
+
+            const sortedLeagues = Object.entries(leagueCounts)
+                .sort((a, b) => b[1] - a[1]);
+
+            let html = `
+                <div class="league-item ${selectedLeague === 'all' ? 'active' : ''}" onclick="selectLeague('all')">
+                    <span class="league-name">🌍 Tüm Ligler</span>
+                    <span class="league-count">${allMatches.length}</span>
+                </div>
+            `;
+
+            sortedLeagues.forEach(([league, count]) => {
+                html += `
+                    <div class="league-item ${selectedLeague === league ? 'active' : ''}" 
+                         onclick="selectLeague('${league.replace(/'/g, "\\'")}')">
+                        <span class="league-name">${getLeagueEmoji(league)} ${league}</span>
+                        <span class="league-count">${count}</span>
+                    </div>
+                `;
+            });
+
+            document.getElementById('league-list').innerHTML = html;
+        }
+
+        function getLeagueEmoji(league) {
+            const l = league.toLowerCase();
+            if (l.includes('süper lig') || l.includes('turkey')) return '🇹🇷';
+            if (l.includes('premier') || l.includes('england')) return '🏴󠁧󠁢󠁥󠁮󠁧󠁿';
+            if (l.includes('la liga') || l.includes('spain')) return '🇪🇸';
+            if (l.includes('serie a') || l.includes('italy')) return '🇮🇹';
+            if (l.includes('bundesliga') || l.includes('germany')) return '🇩🇪';
+            if (l.includes('ligue') || l.includes('france')) return '🇫🇷';
+            if (l.includes('champions')) return '🏆';
+            if (l.includes('europa')) return '⚽';
+            return '⚽';
+        }
+
+        function selectLeague(league) {
+            selectedLeague = league;
+            
+            document.querySelectorAll('.league-item').forEach(item => {
+                item.classList.remove('active');
+            });
+            event.target.closest('.league-item').classList.add('active');
+            
+            document.getElementById('selected-league-name').textContent = 
+                league === 'all' ? 'Tüm Ligler' : league;
+            
+            applyFiltersAndSort();
         }
 
         function filterMatches(filterType) {
@@ -468,29 +641,45 @@
             applyFiltersAndSort();
         }
 
+        function normalizeConfidence(conf) {
+            // Eğer 0-1 arası ise yüzdeye çevir
+            if (conf <= 1) {
+                return conf * 100;
+            }
+            // Eğer zaten yüzde ise olduğu gibi döndür
+            return conf;
+        }
+
         function applyFiltersAndSort() {
             let filtered = [...allMatches];
             
+            // Lig filtresi
+            if (selectedLeague !== 'all') {
+                filtered = filtered.filter(m => m.league === selectedLeague);
+            }
+            
+            // Güven seviyesi filtresi
             switch(currentFilter) {
                 case 'high-confidence':
                     filtered = filtered.filter(m => {
-                        const conf = (m.ai_prediction?.confidence || 0) * 100;
+                        const conf = normalizeConfidence(m.ai_prediction?.confidence || 0);
                         return conf >= 65;
                     });
                     break;
                 case 'medium':
                     filtered = filtered.filter(m => {
-                        const conf = (m.ai_prediction?.confidence || 0) * 100;
+                        const conf = normalizeConfidence(m.ai_prediction?.confidence || 0);
                         return conf >= 50 && conf < 65;
                     });
                     break;
             }
             
+            // Sıralama
             switch(currentSort) {
                 case 'confidence':
                     filtered.sort((a, b) => {
-                        const confA = (a.ai_prediction?.confidence || 0) * 100;
-                        const confB = (b.ai_prediction?.confidence || 0) * 100;
+                        const confA = normalizeConfidence(a.ai_prediction?.confidence || 0);
+                        const confB = normalizeConfidence(b.ai_prediction?.confidence || 0);
                         return confB - confA;
                     });
                     break;
@@ -501,27 +690,23 @@
                         return dateA.localeCompare(dateB);
                     });
                     break;
-                case 'league':
-                    filtered.sort((a, b) => {
-                        return (a.league || '').localeCompare(b.league || '');
-                    });
-                    break;
             }
             
+            updateStats(filtered);
             displayMatches(filtered);
         }
 
-        function updateStats() {
-            document.getElementById('total-matches').textContent = allMatches.length;
+        function updateStats(filteredMatches = allMatches) {
+            document.getElementById('total-matches').textContent = filteredMatches.length;
             
-            const highConfidence = allMatches.filter(m => {
-                const conf = (m.ai_prediction?.confidence || 0) * 100;
+            const highConfidence = filteredMatches.filter(m => {
+                const conf = normalizeConfidence(m.ai_prediction?.confidence || 0);
                 return conf >= 65;
             }).length;
             document.getElementById('high-confidence').textContent = highConfidence;
             
-            const mediumConfidence = allMatches.filter(m => {
-                const conf = (m.ai_prediction?.confidence || 0) * 100;
+            const mediumConfidence = filteredMatches.filter(m => {
+                const conf = normalizeConfidence(m.ai_prediction?.confidence || 0);
                 return conf >= 50 && conf < 65;
             }).length;
             document.getElementById('medium-confidence').textContent = mediumConfidence;
@@ -560,7 +745,9 @@
                 contentArea.innerHTML = `
                     <div class="loading">
                         <div>Bu filtre için maç bulunamadı</div>
-                        <button class="refresh-btn" onclick="filterMatches('all')" style="margin-top: 20px;">Tüm Maçları Göster</button>
+                        <button class="refresh-btn" onclick="filterMatches('all'); selectLeague('all');" style="margin-top: 20px;">
+                            Tüm Maçları Göster
+                        </button>
                     </div>
                 `;
                 return;
@@ -570,9 +757,14 @@
             
             matches.forEach(match => {
                 const prediction = match.ai_prediction || {};
-                const confidence = (prediction.confidence || 0.5) * 100;
+                const confidence = normalizeConfidence(prediction.confidence || 0);
                 const result = prediction.predicted_result || 'X';
                 const probs = prediction.probabilities || {1: 0.33, X: 0.33, 2: 0.33};
+                
+                // Olasılıkları da normalize et
+                const homeProb = normalizeConfidence(probs['1'] || 0.33);
+                const drawProb = normalizeConfidence(probs.X || 0.33);
+                const awayProb = normalizeConfidence(probs['2'] || 0.33);
                 
                 const confidenceClass = getConfidenceClass(confidence);
                 
@@ -608,41 +800,16 @@
                         <div class="match-info">
                             <div class="info-box">
                                 <div class="info-label">Ev Kazanma</div>
-                                <div class="info-value">${((probs['1'] || 0.33) * 100).toFixed(1)}%</div>
+                                <div class="info-value">${homeProb.toFixed(1)}%</div>
                             </div>
                             <div class="info-box">
                                 <div class="info-label">Beraberlik</div>
-                                <div class="info-value">${((probs.X || 0.33) * 100).toFixed(1)}%</div>
+                                <div class="info-value">${drawProb.toFixed(1)}%</div>
                             </div>
                             <div class="info-box">
                                 <div class="info-label">Deplasman Kazanma</div>
-                                <div class="info-value">${((probs['2'] || 0.33) * 100).toFixed(1)}%</div>
+                                <div class="info-value">${awayProb.toFixed(1)}%</div>
                             </div>
                         </div>
 
-                        <div style="margin-top: 10px;">
-                            <div style="font-size: 0.9rem; color: #b3c7f7;">
-                                Öneri: ${prediction.suggestion || 'Analiz yapılıyor'}
-                            </div>
-                            <div class="confidence-bar">
-                                <div class="confidence-fill ${confidenceClass}" style="width: ${confidence}%"></div>
-                            </div>
-                            <div style="text-align: right; font-size: 0.8rem; color: #ffd700; margin-top: 5px;">
-                                ${confidence.toFixed(1)}%
-                            </div>
-                        </div>
-                    </div>
-                `;
-            });
-
-            html += '</div>';
-            contentArea.innerHTML = html;
-        }
-
-        window.addEventListener('load', () => {
-            loadMatches();
-            setInterval(loadMatches, 300000); // 5 dakikada bir
-        });
-    </script>
-</body>
-</html>
+                        <div style="margin-
