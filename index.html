@@ -109,14 +109,14 @@
 <header class="header">
   <h1>Predicta AI</h1>
   <div class="tagline">Profesyonel Futbol Tahmin Platformu</div>
-  <div class="version-badge">v8.0 - Tablo Görünümü</div>
+  <div class="version-badge">v8.5 - Ülke Bazlı Gruplama</div>
 </header>
 
 <div class="container">
   <aside class="sidebar">
-    <div class="sidebar-title">📋 Ligler</div>
+    <div class="sidebar-title">📋 Ülkeler</div>
     <div id="league-list" class="league-list">
-      <div class="loading">Ligler yükleniyor...</div>
+      <div class="loading">Ülkeler yükleniyor...</div>
     </div>
   </aside>
 
@@ -125,7 +125,7 @@
       <div class="stat-box"><div class="stat-value" id="total-matches">0</div><div class="stat-label">Toplam Maç</div></div>
       <div class="stat-box"><div class="stat-value" id="high-confidence">0</div><div class="stat-label">Yüksek Güven</div></div>
       <div class="stat-box"><div class="stat-value" id="medium-confidence">0</div><div class="stat-label">Orta Güven</div></div>
-      <div class="stat-box"><div class="stat-value" id="selected-league-name">Tüm Ligler</div><div class="stat-label">Seçili Lig</div></div>
+      <div class="stat-box"><div class="stat-value" id="selected-league-name">Tüm Ülkeler</div><div class="stat-label">Seçili Bölge</div></div>
     </div>
 
     <div class="controls">
@@ -151,15 +151,16 @@
   let selectedLeague = 'all';
   const API_BASE_URL = 'https://predicta-production.up.railway.app';
 
-  const leagueMapping = {
-    "Premier League": ["Bournemouth", "Fulham", "Arsenal", "Chelsea", "Liverpool", "Manchester City", "Manchester United", "Tottenham", "Newcastle", "Brighton", "West Ham", "Crystal Palace", "Wolves", "Aston Villa", "Leeds", "Everton", "Southampton", "Nottingham Forest", "Brentford", "Burnley", "Sheffield United", "Luton Town"],
-    "Serie A": ["Verona", "Sassuolo", "Juventus", "Inter", "Milan", "Napoli", "Roma", "Lazio", "Atalanta", "Fiorentina", "Torino", "Bologna", "Monza", "Udinese", "Empoli", "Salernitana", "Lecce", "Genoa", "Frosinone", "Cagliari"],
-    "La Liga": ["Osasuna", "Getafe", "Real Madrid", "Barcelona", "Atletico Madrid", "Sevilla", "Valencia", "Villarreal", "Real Betis", "Athletic Bilbao", "Real Sociedad", "Celta Vigo", "Mallorca", "Cadiz", "Granada", "Alaves", "Rayo Vallecano", "Las Palmas", "Girona", "Almeria", "Valladolid", "Elche", "Espanyol"],
-    "Bundesliga": ["Hoffenheim", "Cologne", "Bayern Munich", "Borussia Dortmund", "RB Leipzig", "Bayer Leverkusen", "Borussia Mönchengladbach", "Eintracht Frankfurt", "Wolfsburg", "Union Berlin", "Freiburg", "Mainz", "Augsburg", "Stuttgart", "Bochum", "Darmstadt", "Heidenheim", "Werder Bremen"],
-    "Ligue 1": ["Paris FC", "Lorient", "Paris Saint-Germain", "Marseille", "Lyon", "Monaco", "Lille", "Nice", "Rennes", "Lens", "Reims", "Nantes", "Montpellier", "Toulouse", "Strasbourg", "Auxerre", "Clermont Foot", "Ajaccio", "Troyes", "Angers", "Brest", "Metz", "Le Havre"],
-    "Eredivisie": ["NAC Breda", "Groningen", "Ajax", "PSV", "Feyenoord", "AZ Alkmaar", "Twente", "Utrecht", "Vitesse", "Heerenveen", "Sparta Rotterdam", "Fortuna Sittard", "Heracles", "PEC Zwolle", "Excelsior", "RKC Waalwijk", "Cambuur", "Go Ahead Eagles", "Volendam", "Almere City"],
-    "Primeira Liga": ["Casa Pia", "Estoril", "Benfica", "Porto", "Sporting CP", "Braga", "Vitoria Guimaraes", "Boavista", "Famalicao", "Rio Ave", "Santa Clara", "Vizela", "Arouca", "Chaves", "Portimonense", "Maritimo", "Paços de Ferreira", "Gil Vicente"],
-    "Süper Lig": ["Fenerbahçe", "Galatasaray", "Beşiktaş", "Trabzonspor", "Başakşehir", "Sivasspor", "Alanyaspor", "Kayserispor", "Gençlerbirliği", "Ankaragücü", "Konyaspor", "Kasımpaşa", "Hatayspor", "Giresunspor", "Ümraniyespor", "İstanbulspor", "Gaziantep", "Adana Demirspor", "Antalyaspor", "Fatih Karagümrük", "Pendikspor", "Samsunspor", "Çaykur Rizespor"]
+  // ÜLKE BAZLI TAKIM LİSTESİ
+  const countryTeams = {
+    "🇹🇷 Türkiye": ["Fenerbahçe", "Galatasaray", "Beşiktaş", "Trabzonspor", "Başakşehir", "Sivasspor", "Alanyaspor", "Kayserispor", "Gençlerbirliği", "Ankaragücü", "Konyaspor", "Kasımpaşa", "Hatayspor", "Giresunspor", "Ümraniyespor", "İstanbulspor", "Gaziantep", "Adana Demirspor", "Antalyaspor", "Fatih Karagümrük", "Pendikspor", "Samsunspor", "Çaykur Rizespor"],
+    "🏴󠁧󠁢󠁥󠁮󠁧󠁿 İngiltere": ["Bournemouth", "Fulham", "Arsenal", "Chelsea", "Liverpool", "Manchester City", "Manchester United", "Tottenham", "Newcastle", "Brighton", "West Ham", "Crystal Palace", "Wolves", "Aston Villa", "Leeds", "Everton", "Southampton", "Nottingham Forest", "Brentford", "Burnley", "Sheffield United", "Luton Town", "Leicester", "Ipswich"],
+    "🇮🇹 İtalya": ["Verona", "Sassuolo", "Juventus", "Inter", "Milan", "Napoli", "Roma", "Lazio", "Atalanta", "Fiorentina", "Torino", "Bologna", "Monza", "Udinese", "Empoli", "Salernitana", "Lecce", "Genoa", "Frosinone", "Cagliari", "Parma", "Como", "Venezia"],
+    "🇪🇸 İspanya": ["Osasuna", "Getafe", "Real Madrid", "Barcelona", "Atletico Madrid", "Sevilla", "Valencia", "Villarreal", "Real Betis", "Athletic Bilbao", "Real Sociedad", "Celta Vigo", "Mallorca", "Cadiz", "Granada", "Alaves", "Rayo Vallecano", "Las Palmas", "Girona", "Almeria", "Valladolid", "Elche", "Espanyol", "Leganes"],
+    "🇩🇪 Almanya": ["Hoffenheim", "Cologne", "Bayern Munich", "Borussia Dortmund", "RB Leipzig", "Bayer Leverkusen", "Borussia Mönchengladbach", "Eintracht Frankfurt", "Wolfsburg", "Union Berlin", "Freiburg", "Mainz", "Augsburg", "Stuttgart", "Bochum", "Darmstadt", "Heidenheim", "Werder Bremen", "St. Pauli", "Holstein Kiel"],
+    "🇫🇷 Fransa": ["Paris FC", "Lorient", "Paris Saint-Germain", "Marseille", "Lyon", "Monaco", "Lille", "Nice", "Rennes", "Lens", "Reims", "Nantes", "Montpellier", "Toulouse", "Strasbourg", "Auxerre", "Clermont Foot", "Ajaccio", "Troyes", "Angers", "Brest", "Metz", "Le Havre", "Saint-Etienne"],
+    "🇳🇱 Hollanda": ["NAC Breda", "Groningen", "Ajax", "PSV", "Feyenoord", "AZ Alkmaar", "Twente", "Utrecht", "Vitesse", "Heerenveen", "Sparta Rotterdam", "Fortuna Sittard", "Heracles", "PEC Zwolle", "Excelsior", "RKC Waalwijk", "Cambuur", "Go Ahead Eagles", "Volendam", "Almere City", "Willem II"],
+    "🇵🇹 Portekiz": ["Casa Pia", "Estoril", "Benfica", "Porto", "Sporting CP", "Braga", "Vitoria Guimaraes", "Boavista", "Famalicao", "Rio Ave", "Santa Clara", "Vizela", "Arouca", "Chaves", "Portimonense", "Maritimo", "Paços de Ferreira", "Gil Vicente", "Estrela", "Farense"]
   };
 
   const leagueNames = {
@@ -196,16 +197,12 @@
       const data = await response.json();
       if (data.success && data.matches) {
         allMatches = data.matches.map(match => {
-          if (match.league_name) {
-            match.league_name = correctLeagueName(match.league_name);
-          }
-          const detectedLeague = detectLeagueByTeamNames(match.home_team, match.away_team);
-          if (detectedLeague) {
-            match.league_name = detectedLeague;
-          }
+          // Takım isimlerine göre ülke tespiti yap
+          const detectedCountry = detectCountryByTeamNames(match.home_team, match.away_team);
+          match.country = detectedCountry;
           return match;
         });
-        buildLeagueList();
+        buildCountryList();
         updateStats();
         applyFiltersAndSort();
       }
@@ -224,20 +221,31 @@
     return null;
   }
 
-  function buildLeagueList() {
-    const leagueCounts = {};
+  function buildCountryList() {
+    const countryCounts = {};
     allMatches.forEach(m => {
-      const lName = m.league_name || leagueNames[m.league] || m.league;
-      leagueCounts[lName] = (leagueCounts[lName] || 0) + 1;
+      const country = m.country || "🌍 Diğer Ülkeler";
+      countryCounts[country] = (countryCounts[country] || 0) + 1;
     });
-    const sorted = Object.entries(leagueCounts).sort((a, b) => b[1] - a[1]);
+    
+    // Ülkeleri önem sırasına göre sırala
+    const priorityCountries = ["🇹🇷 Türkiye", "🏴󠁧󠁢󠁥󠁮󠁧󠁿 İngiltere", "🇪🇸 İspanya", "🇮🇹 İtalya", "🇩🇪 Almanya", "🇫🇷 Fransa", "🇳🇱 Hollanda", "🇵🇹 Portekiz"];
+    const sortedCountries = Object.keys(countryCounts).sort((a, b) => {
+      const aIndex = priorityCountries.indexOf(a);
+      const bIndex = priorityCountries.indexOf(b);
+      if (aIndex !== -1 && bIndex !== -1) return aIndex - bIndex;
+      if (aIndex !== -1) return -1;
+      if (bIndex !== -1) return 1;
+      return countryCounts[b] - countryCounts[a];
+    });
+    
     let html = `<div class="league-item ${selectedLeague === 'all' ? 'active' : ''}" onclick="selectLeague('all', event)">
-                    🌍 <span class="league-name">Tüm Ligler</span>
+                    🌍 <span class="league-name">Tüm Ülkeler</span>
                     <span class="league-count">${allMatches.length}</span></div>`;
-    sorted.forEach(([l, c]) => {
-      html += `<div class="league-item ${selectedLeague === l ? 'active' : ''}" onclick="selectLeague('${l}', event)">
-                  ⚽ <span class="league-name">${l}</span>
-                  <span class="league-count">${c}</span></div>`;
+    sortedCountries.forEach(country => {
+      html += `<div class="league-item ${selectedLeague === country ? 'active' : ''}" onclick="selectLeague('${country}', event)">
+                  <span class="league-name">${country}</span>
+                  <span class="league-count">${countryCounts[country]}</span></div>`;
     });
     document.getElementById('league-list').innerHTML = html;
   }
@@ -246,7 +254,7 @@
     selectedLeague = String(l);
     document.querySelectorAll('.league-item').forEach(x => x.classList.remove('active'));
     event.currentTarget.classList.add('active');
-    document.getElementById('selected-league-name').textContent = l === 'all' ? 'Tüm Ligler' : l;
+    document.getElementById('selected-league-name').textContent = l === 'all' ? 'Tüm Ülkeler' : l;
     applyFiltersAndSort();
   }
 
@@ -268,7 +276,7 @@
 
   function applyFiltersAndSort() {
     let filtered = [...allMatches];
-    if (selectedLeague !== 'all') filtered = filtered.filter(m => (m.league_name || leagueNames[m.league] || m.league) === selectedLeague);
+    if (selectedLeague !== 'all') filtered = filtered.filter(m => m.country === selectedLeague);
     if (currentFilter === 'high-confidence') filtered = filtered.filter(m => normalizeConfidence(m.ai_prediction?.confidence || 0) >= 65);
     if (currentFilter === 'medium') filtered = filtered.filter(m => { let c = normalizeConfidence(m.ai_prediction?.confidence || 0); return c >= 50 && c < 65; });
     if (currentSort === 'confidence') filtered.sort((a, b) => normalizeConfidence(b.ai_prediction?.confidence || 0) - normalizeConfidence(a.ai_prediction?.confidence || 0));
@@ -286,21 +294,23 @@
   function displayMatches(matches) {
     const area = document.getElementById('content-area');
     if (matches.length === 0) { 
-      area.innerHTML = `<div class="loading">Bu lig/filtre için maç bulunamadı</div>`; 
+      area.innerHTML = `<div class="loading">Bu ülke/filtre için maç bulunamadı</div>`; 
       return; 
     }
 
+    // Maçları ülkelerine göre grupla
     const grouped = {};
     matches.forEach(m => {
-      const ligAdi = m.league_name || leagueNames[m.league] || m.league || "Diğer Ligler";
-      if (!grouped[ligAdi]) grouped[ligAdi] = [];
-      grouped[ligAdi].push(m);
+      const country = m.country || "🌍 Diğer Ülkeler";
+      if (!grouped[country]) grouped[country] = [];
+      grouped[country].push(m);
     });
 
-    const priorityLeagues = ["Premier League", "Serie A", "La Liga", "Bundesliga", "Ligue 1", "Eredivisie", "Primeira Liga", "Süper Lig"];
-    const sortedLeagues = Object.keys(grouped).sort((a, b) => {
-      const aIndex = priorityLeagues.indexOf(a);
-      const bIndex = priorityLeagues.indexOf(b);
+    // Ülkeleri önem sırasına göre sırala
+    const priorityCountries = ["🇹🇷 Türkiye", "🏴󠁧󠁢󠁥󠁮󠁧󠁿 İngiltere", "🇪🇸 İspanya", "🇮🇹 İtalya", "🇩🇪 Almanya", "🇫🇷 Fransa", "🇳🇱 Hollanda", "🇵🇹 Portekiz"];
+    const sortedCountries = Object.keys(grouped).sort((a, b) => {
+      const aIndex = priorityCountries.indexOf(a);
+      const bIndex = priorityCountries.indexOf(b);
       if (aIndex !== -1 && bIndex !== -1) return aIndex - bIndex;
       if (aIndex !== -1) return -1;
       if (bIndex !== -1) return 1;
@@ -308,12 +318,12 @@
     });
 
     let html = '';
-    sortedLeagues.forEach(ligAdi => {
-      const maclar = grouped[ligAdi];
+    sortedCountries.forEach(country => {
+      const maclar = grouped[country];
       
       html += `<div class="league-section">
                 <div class="league-header">
-                  <div class="league-title">${ligAdi}</div>
+                  <div class="league-title">${country}</div>
                   <div class="league-match-count">${maclar.length} maç</div>
                 </div>
                 <div class="match-table-container">
