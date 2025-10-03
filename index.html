@@ -150,14 +150,60 @@
   const API_BASE_URL = 'https://predicta-production.up.railway.app';
 
   const countryTeams = {
-    "🇹🇷 Türkiye": ["Fenerbahçe", "Galatasaray", "Beşiktaş", "Trabzonspor", "Başakşehir", "Sivasspor", "Alanyaspor", "Kayserispor", "Gençlerbirliği", "Ankaragücü", "Konyaspor", "Kasımpaşa", "Hatayspor", "Giresunspor", "Ümraniyespor", "İstanbulspor", "Gaziantep", "Adana Demirspor", "Antalyaspor", "Fatih Karagümrük", "Pendikspor", "Samsunspor", "Çaykur Rizespor"],
-    "🏴󠁧󠁢󠁥󠁮󠁧󠁿 İngiltere": ["Bournemouth", "Fulham", "Arsenal", "Chelsea", "Liverpool", "Manchester City", "Manchester United", "Tottenham", "Newcastle", "Brighton", "West Ham", "Crystal Palace", "Wolves", "Aston Villa", "Leeds", "Everton", "Southampton", "Nottingham Forest", "Brentford", "Burnley", "Sheffield United", "Luton Town", "Leicester", "Ipswich"],
-    "🇮🇹 İtalya": ["Verona", "Sassuolo", "Juventus", "Inter", "Milan", "Napoli", "Roma", "Lazio", "Atalanta", "Fiorentina", "Torino", "Bologna", "Monza", "Udinese", "Empoli", "Salernitana", "Lecce", "Genoa", "Frosinone", "Cagliari", "Parma", "Como", "Venezia"],
-    "🇪🇸 İspanya": ["Osasuna", "Getafe", "Real Madrid", "Barcelona", "Atletico Madrid", "Sevilla", "Valencia", "Villarreal", "Real Betis", "Athletic Bilbao", "Real Sociedad", "Celta Vigo", "Mallorca", "Cadiz", "Granada", "Alaves", "Rayo Vallecano", "Las Palmas", "Girona", "Almeria", "Valladolid", "Elche", "Espanyol", "Leganes"],
-    "🇩🇪 Almanya": ["Hoffenheim", "Cologne", "Bayern Munich", "Borussia Dortmund", "RB Leipzig", "Bayer Leverkusen", "Borussia Mönchengladbach", "Eintracht Frankfurt", "Wolfsburg", "Union Berlin", "Freiburg", "Mainz", "Augsburg", "Stuttgart", "Bochum", "Darmstadt", "Heidenheim", "Werder Bremen", "St. Pauli", "Holstein Kiel"],
-    "🇫🇷 Fransa": ["Paris FC", "Lorient", "Paris Saint-Germain", "Marseille", "Lyon", "Monaco", "Lille", "Nice", "Rennes", "Lens", "Reims", "Nantes", "Montpellier", "Toulouse", "Strasbourg", "Auxerre", "Clermont Foot", "Ajaccio", "Troyes", "Angers", "Brest", "Metz", "Le Havre", "Saint-Etienne"],
-    "🇳🇱 Hollanda": ["NAC Breda", "Groningen", "Ajax", "PSV", "Feyenoord", "AZ Alkmaar", "Twente", "Utrecht", "Vitesse", "Heerenveen", "Sparta Rotterdam", "Fortuna Sittard", "Heracles", "PEC Zwolle", "Excelsior", "RKC Waalwijk", "Cambuur", "Go Ahead Eagles", "Volendam", "Almere City", "Willem II"],
-    "🇵🇹 Portekiz": ["Casa Pia", "Estoril", "Benfica", "Porto", "Sporting CP", "Braga", "Vitoria Guimaraes", "Boavista", "Famalicao", "Rio Ave", "Santa Clara", "Vizela", "Arouca", "Chaves", "Portimonense", "Maritimo", "Paços de Ferreira", "Gil Vicente", "Estrela", "Farense"]
+    "🇹🇷 Türkiye": ["Fenerbahçe", "Galatasaray", "Beşiktaş", "Trabzonspor", "Başakşehir", "Sivasspor", "Alanyaspor", "Kayserispor", "Gençlerbirliği", "Ankaragücü", "Konyaspor", "Kasımpaşa", "Hatayspor", "Giresunspor", "Ümraniyespor", "İstanbulspor", "Gaziantep", "Adana Demirspor", "Antalyaspor", "Fatih Karagümrük", "Pendikspor", "Samsunspor", "Çaykur Rizespor", "Eyüpspor", "Bodrum", "Göztepe", "Sakaryaspor", "Kocaelispor", "Boluspor", "Erzurumspor", "Keçiörengücü", "Bandırmaspor", "Manisa", "Ümraniye", "Tuzlaspor", "Ankaragücü", "Altay", "Giresun", "Gençlerbirliği", "Menemen", "Şanlıurfaspor"],
+    
+    "🏴󠁧󠁢󠁥󠁮󠁧󠁿 İngiltere": [
+      // Premier League
+      "Arsenal", "Chelsea", "Liverpool", "Manchester City", "Manchester United", "Tottenham", "Newcastle", "Brighton", "West Ham", "Aston Villa", "Crystal Palace", "Fulham", "Bournemouth", "Wolves", "Brentford", "Nottingham Forest", "Everton", "Leicester", "Ipswich", "Southampton",
+      // Championship
+      "Leeds", "Sheffield United", "Burnley", "Luton", "Middlesbrough", "Coventry", "Norwich", "Watford", "Millwall", "Bristol City", "QPR", "Preston", "Swansea", "Blackburn", "Hull", "Stoke", "Cardiff", "Plymouth", "Sheffield Wednesday", "Derby", "Portsmouth", "Oxford United", "Sunderland", "West Brom",
+      // League One
+      "Birmingham", "Wrexham", "Bolton", "Huddersfield", "Barnsley", "Lincoln", "Wycombe", "Reading", "Charlton", "Stevenage", "Peterborough", "Exeter", "Mansfield", "Bristol Rovers", "Northampton", "Rotherham", "Blackpool", "Burton", "Cambridge", "Leyton Orient", "Shrewsbury", "Stockport", "Crawley",
+      // League Two
+      "Notts County", "MK Dons", "Doncaster", "Crewe", "Bradford", "Grimsby", "Salford", "Port Vale", "Swindon", "Gillingham", "Walsall", "Harrogate", "Barrow", "Colchester", "Newport", "Tranmere", "Carlisle", "Chesterfield", "Morecambe", "Accrington", "Fleetwood", "Bromley", "AFC Wimbledon", "Cheltenham"
+    ],
+    
+    "🇮🇹 İtalya": [
+      // Serie A
+      "Juventus", "Inter", "Milan", "Napoli", "Roma", "Lazio", "Atalanta", "Fiorentina", "Torino", "Bologna", "Monza", "Udinese", "Empoli", "Lecce", "Genoa", "Cagliari", "Verona", "Parma", "Como", "Venezia",
+      // Serie B
+      "Sassuolo", "Salernitana", "Frosinone", "Brescia", "Palermo", "Cremonese", "Sampdoria", "Catanzaro", "Reggiana", "Spezia", "Pisa", "Bari", "Modena", "Cittadella", "Cosenza", "Juve Stabia", "Mantova", "Cesena", "Sudtirol", "Carrarese"
+    ],
+    
+    "🇪🇸 İspanya": [
+      // La Liga
+      "Real Madrid", "Barcelona", "Atletico Madrid", "Sevilla", "Valencia", "Villarreal", "Real Betis", "Athletic Bilbao", "Real Sociedad", "Celta Vigo", "Mallorca", "Osasuna", "Getafe", "Rayo Vallecano", "Las Palmas", "Girona", "Alaves", "Leganes", "Valladolid", "Espanyol",
+      // La Liga 2
+      "Granada", "Almeria", "Cadiz", "Elche", "Levante", "Eibar", "Sporting Gijon", "Real Zaragoza", "Racing Santander", "Real Oviedo", "Malaga", "Tenerife", "Huesca", "Burgos", "Cartagena", "Eldense", "Mirandes", "Racing Ferrol", "Albacete", "Castellon", "Cordoba", "Deportivo"
+    ],
+    
+    "🇩🇪 Almanya": [
+      // Bundesliga
+      "Bayern Munich", "Borussia Dortmund", "RB Leipzig", "Bayer Leverkusen", "Union Berlin", "Freiburg", "Eintracht Frankfurt", "Wolfsburg", "Borussia Mönchengladbach", "Mainz", "Stuttgart", "Hoffenheim", "Augsburg", "Werder Bremen", "Bochum", "Heidenheim", "St. Pauli", "Holstein Kiel",
+      // 2. Bundesliga
+      "Cologne", "Hamburg", "Hertha Berlin", "Fortuna Dusseldorf", "Schalke", "Hannover", "Paderborn", "Kaiserslautern", "Magdeburg", "Nurnberg", "Karlsruhe", "Braunschweig", "Elversberg", "Greuther Furth", "Darmstadt", "Regensburg", "Ulm", "Preussen Munster"
+    ],
+    
+    "🇫🇷 Fransa": [
+      // Ligue 1
+      "Paris Saint-Germain", "Marseille", "Monaco", "Lyon", "Lille", "Nice", "Lens", "Rennes", "Reims", "Strasbourg", "Brest", "Toulouse", "Nantes", "Montpellier", "Auxerre", "Angers", "Le Havre", "Saint-Etienne",
+      // Ligue 2
+      "Paris FC", "Lorient", "Metz", "Troyes", "Clermont Foot", "Ajaccio", "Bastia", "Dunkerque", "Guingamp", "Laval", "Grenoble", "Amiens", "Rodez", "Pau", "Caen", "Martigues", "Red Star", "Valenciennes"
+    ],
+    
+    "🇳🇱 Hollanda": [
+      // Eredivisie
+      "Ajax", "PSV", "Feyenoord", "AZ Alkmaar", "Twente", "Utrecht", "Vitesse", "Heerenveen", "Groningen", "Sparta Rotterdam", "Fortuna Sittard", "Heracles", "PEC Zwolle", "RKC Waalwijk", "Go Ahead Eagles", "Almere City", "Willem II", "NAC Breda",
+      // Eerste Divisie
+      "Excelsior", "Cambuur", "Volendam", "Den Bosch", "Dordrecht", "Telstar", "Emmen", "MVV", "Jong Ajax", "Jong PSV", "Jong Utrecht", "De Graafschap", "Roda JC", "ADO Den Haag", "Helmond Sport", "TOP Oss", "VVV-Venlo", "Maastricht"
+    ],
+    
+    "🇵🇹 Portekiz": [
+      // Primeira Liga
+      "Benfica", "Porto", "Sporting CP", "Braga", "Vitoria Guimaraes", "Casa Pia", "Estoril", "Boavista", "Famalicao", "Rio Ave", "Santa Clara", "Arouca", "Gil Vicente", "Estrela", "Farense", "Moreirense", "Nacional", "AVS",
+      // Liga Portugal 2
+      "Vizela", "Chaves", "Portimonense", "Maritimo", "Paços de Ferreira", "Tondela", "Academico Viseu", "Felgueiras", "Leixoes", "Penafiel", "Mafra", "Feirense", "Benfica B", "Porto B", "Alverca", "Torreense", "Oliveirense", "União de Leiria"
+    ]
   };
 
   function detectCountryByTeamNames(homeTeam, awayTeam) {
@@ -181,7 +227,7 @@
   async function loadMatches() {
     try {
       showLoading();
-      const response = await fetch(`${API_BASE_URL}/api/predictions/upcoming?limit=500`);
+      const response = await fetch(`${API_BASE_URL}/api/predictions/upcoming?limit=1500`);
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       const data = await response.json();
       if (data.success && data.matches) {
