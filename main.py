@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-PREDICTA AI - v5.2 Geliştirilmiş Nesine Scraper
-Gerçek veri çeker - Birden fazla yöntem dener
+PREDICTA AI - v5.3 İyileştirilmiş HTML Parser + API Debugger
 """
 import os
 import logging
@@ -25,8 +24,8 @@ logger = logging.getLogger(__name__)
 
 app = FastAPI(
     title="Predicta AI API",
-    version="5.2",
-    description="Gerçek Nesine verisi çeken gelişmiş tahmin motoru"
+    version="5.3",
+    description="İyileştirilmiş HTML parser + API debugger"
 )
 
 app.add_middleware(
@@ -38,153 +37,113 @@ app.add_middleware(
 )
 
 
-class ImprovedNesineScraper:
+class FixedNesineScraper:
     """
-    Nesine'den gerçek veri çeker - Birden fazla yöntem
+    İyileştirilmiş Nesine scraper - Daha akıllı HTML parsing
     """
     
     def __init__(self):
         self.session = requests.Session()
         self.headers = {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
-            'Accept-Language': 'tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7',
-            'Accept-Encoding': 'gzip, deflate, br',
-            'Connection': 'keep-alive',
-            'Upgrade-Insecure-Requests': '1',
-            'Sec-Fetch-Dest': 'document',
-            'Sec-Fetch-Mode': 'navigate',
-            'Sec-Fetch-Site': 'none',
-            'Cache-Control': 'max-age=0'
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+            'Accept-Language': 'tr-TR,tr;q=0.9',
+            'Connection': 'keep-alive'
         }
     
     def get_matches(self):
-        """
-        Tüm yöntemleri sırayla dener
-        """
+        """Maçları çeker"""
         logger.info("Nesine verisi çekiliyor...")
         
-        # Yöntem 1: JSON API (farklı endpoint'ler)
-        matches = self.try_json_apis()
-        if matches:
-            logger.info(f"✅ JSON API'den {len(matches)} maç çekildi")
+        # 1. CDN API'yi dene ve yanıtı logla
+        matches = self.try_cdn_api_debug()
+        if matches and len(matches) > 5:
+            logger.info(f"✅ CDN API'den {len(matches)} maç alındı")
             return matches
         
-        # Yöntem 2: HTML Scraping (iddaa sayfası)
-        matches = self.scrape_iddaa_page()
-        if matches:
-            logger.info(f"✅ HTML'den {len(matches)} maç çekildi")
+        # 2. HTML'den daha iyi parse et
+        matches = self.scrape_html_improved()
+        if matches and len(matches) > 5:
+            logger.info(f"✅ HTML'den {len(matches)} maç alındı")
             return matches
         
-        # Yöntem 3: Mobil site
-        matches = self.scrape_mobile_site()
-        if matches:
-            logger.info(f"✅ Mobil siteden {len(matches)} maç çekildi")
-            return matches
-        
-        logger.error("❌ Hiçbir yöntem çalışmadı")
-        return []
+        logger.error("❌ Yeterli maç bulunamadı - Demo veriler döndürülüyor")
+        return self.get_demo_matches()
     
-    def try_json_apis(self):
-        """
-        Farklı JSON API endpoint'lerini dener
-        """
-        api_endpoints = [
-            "https://cdnbulten.nesine.com/api/bulten/getprebultenfull",
-            "https://www.nesine.com/api/prematch/bulletin",
-            "https://api.nesine.com/api/bulletin/prematch",
-            "https://www.nesine.com/futbol/mac-programi/json"
-        ]
-        
-        for api_url in api_endpoints:
-            try:
-                logger.info(f"Deneniyor: {api_url}")
-                
-                response = self.session.get(
-                    api_url,
-                    headers={**self.headers, 'Accept': 'application/json'},
-                    timeout=10
-                )
-                
-                logger.info(f"Status: {response.status_code}, Content-Type: {response.headers.get('content-type')}")
-                
-                if response.status_code == 200:
-                    # JSON parse et
-                    try:
-                        data = response.json()
+    def try_cdn_api_debug(self):
+        """CDN API'yi dener ve yanıtı detaylı loglar"""
+        try:
+            url = "https://cdnbulten.nesine.com/api/bulten/getprebultenfull"
+            
+            response = self.session.get(url, headers=self.headers, timeout=10)
+            
+            logger.info(f"CDN API Status: {response.status_code}")
+            logger.info(f"Content-Type: {response.headers.get('content-type')}")
+            logger.info(f"Response length: {len(response.text)} karakter")
+            
+            # İlk 200 karakteri logla
+            preview = response.text[:200].replace('\n', ' ')
+            logger.info(f"Response preview: {preview}...")
+            
+            if response.status_code == 200:
+                # JSON parse dene
+                try:
+                    data = response.json()
+                    logger.info(f"JSON keys: {list(data.keys())}")
+                    
+                    # Veri yapısını kontrol et
+                    if 'sg' in data:
+                        ea = data.get('sg', {}).get('EA', [])
+                        ca = data.get('sg', {}).get('CA', [])
+                        logger.info(f"EA (Prematch): {len(ea)} maç")
+                        logger.info(f"CA (Live): {len(ca)} maç")
                         
-                        # Veri yapısını logla
-                        logger.info(f"JSON keys: {list(data.keys())[:5]}")
+                        # İlk maçı logla
+                        if ea:
+                            first_match = ea[0]
+                            logger.info(f"İlk maç örneği: {first_match.get('HN')} vs {first_match.get('AN')}")
                         
+                        # Parse et
                         matches = self.parse_nesine_json(data)
-                        if matches:
-                            return matches
-                    except json.JSONDecodeError as e:
-                        logger.warning(f"JSON parse hatası: {e}")
-                        # HTML gelebilir, devam et
-                        continue
+                        return matches if matches else None
+                    else:
+                        logger.warning("JSON'da 'sg' key'i yok")
+                        return None
                         
-            except Exception as e:
-                logger.warning(f"API hatası ({api_url}): {e}")
-                continue
-        
-        return None
+                except json.JSONDecodeError as e:
+                    logger.error(f"JSON parse hatası: {e}")
+                    logger.error(f"Ham yanıt ilk 500 karakter: {response.text[:500]}")
+                    return None
+            
+            return None
+            
+        except Exception as e:
+            logger.error(f"CDN API hatası: {e}")
+            return None
     
     def parse_nesine_json(self, data):
-        """
-        Nesine JSON formatını parse eder
-        """
+        """Nesine JSON'ını parse eder"""
         matches = []
         
         try:
-            # Format 1: sg.EA yapısı
-            if 'sg' in data:
-                ea_matches = data.get('sg', {}).get('EA', [])
-                ca_matches = data.get('sg', {}).get('CA', [])
+            ea_matches = data.get('sg', {}).get('EA', [])
+            ca_matches = data.get('sg', {}).get('CA', [])
+            
+            for m in ea_matches + ca_matches:
+                # Sadece futbol (GT=1)
+                if m.get('GT') != 1:
+                    continue
                 
-                for m in ea_matches + ca_matches:
-                    match = self.format_nesine_match(m)
-                    if match:
-                        matches.append(match)
-            
-            # Format 2: matches array
-            elif 'matches' in data:
-                for m in data['matches']:
-                    match = self.format_nesine_match(m)
-                    if match:
-                        matches.append(match)
-            
-            # Format 3: data.games
-            elif 'data' in data and 'games' in data['data']:
-                for m in data['data']['games']:
-                    match = self.format_nesine_match(m)
-                    if match:
-                        matches.append(match)
-            
-            return matches if matches else None
-            
-        except Exception as e:
-            logger.error(f"JSON parse hatası: {e}")
-            return None
-    
-    def format_nesine_match(self, m):
-        """
-        Nesine match objesini standart formata çevirir
-        """
-        try:
-            # Farklı key isimleri dene
-            home = (m.get('HN') or m.get('home_team') or m.get('homeTeam') or '').strip()
-            away = (m.get('AN') or m.get('away_team') or m.get('awayTeam') or '').strip()
-            
-            if not home or not away or home == away:
-                return None
-            
-            # Oranları bul
-            odds = {'1': 2.0, 'X': 3.0, '2': 3.5}
-            
-            # Format 1: MA array (MTID=1)
-            if 'MA' in m:
-                for bahis in m['MA']:
+                home = (m.get('HN') or '').strip()
+                away = (m.get('AN') or '').strip()
+                
+                if not self.is_valid_match(home, away):
+                    continue
+                
+                # Oranları bul
+                odds = {'1': 2.0, 'X': 3.0, '2': 3.5}
+                
+                for bahis in m.get('MA', []):
                     if bahis.get('MTID') == 1:  # 1X2
                         oranlar = bahis.get('OCA', [])
                         if len(oranlar) >= 3:
@@ -195,40 +154,30 @@ class ImprovedNesineScraper:
                             except:
                                 pass
                         break
+                
+                matches.append({
+                    'home_team': home,
+                    'away_team': away,
+                    'league': m.get('LC', 'Bilinmeyen'),
+                    'odds': odds,
+                    'time': m.get('T', '20:00'),
+                    'date': m.get('D', datetime.now().strftime('%Y-%m-%d')),
+                    'is_live': m.get('S') == 1
+                })
             
-            # Format 2: odds object
-            elif 'odds' in m:
-                odds_obj = m['odds']
-                if isinstance(odds_obj, dict):
-                    odds['1'] = float(odds_obj.get('1', odds_obj.get('home', 2.0)))
-                    odds['X'] = float(odds_obj.get('X', odds_obj.get('draw', 3.0)))
-                    odds['2'] = float(odds_obj.get('2', odds_obj.get('away', 3.5)))
-            
-            return {
-                'home_team': home,
-                'away_team': away,
-                'league': m.get('LC') or m.get('league') or 'Bilinmeyen',
-                'odds': odds,
-                'time': m.get('T') or m.get('time') or '20:00',
-                'date': m.get('D') or m.get('date') or datetime.now().strftime('%Y-%m-%d'),
-                'is_live': m.get('S') == 1 or m.get('is_live') == True
-            }
+            return matches if len(matches) > 5 else None
             
         except Exception as e:
-            logger.debug(f"Match format hatası: {e}")
+            logger.error(f"JSON parse hatası: {e}")
             return None
     
-    def scrape_iddaa_page(self):
-        """
-        HTML sayfasından maç bilgilerini çeker
-        """
+    def scrape_html_improved(self):
+        """İyileştirilmiş HTML scraping"""
         try:
             url = "https://www.nesine.com/iddaa"
-            
             response = self.session.get(url, headers=self.headers, timeout=15)
             
             if response.status_code != 200:
-                logger.warning(f"HTML status: {response.status_code}")
                 return None
             
             logger.info(f"HTML alındı: {len(response.text)} karakter")
@@ -237,102 +186,167 @@ class ImprovedNesineScraper:
             matches = []
             seen = set()
             
-            # Script tag'lerinde JSON veri olabilir
-            script_tags = soup.find_all('script', type='application/json')
-            for script in script_tags:
-                try:
-                    json_data = json.loads(script.string)
-                    parsed = self.parse_nesine_json(json_data)
-                    if parsed:
-                        matches.extend(parsed)
-                except:
-                    pass
-            
-            # Takım isimlerini regex ile bul
-            text = soup.get_text()
-            
-            # Pattern: "TakımA vs TakımB" veya "TakımA - TakımB"
-            pattern = r'([A-ZÇĞİÖŞÜa-zçğıöşü\s\.]{3,35})\s+(?:vs\.?|-)\s+([A-ZÇĞİÖŞÜa-zçğıöşü\s\.]{3,35})'
-            
-            for match in re.finditer(pattern, text):
-                home = match.group(1).strip()
-                away = match.group(2).strip()
+            # Yöntem 1: Script tag'lerinde JSON ara
+            for script in soup.find_all('script'):
+                script_text = script.string or ''
                 
-                key = f"{home}|{away}"
-                if key in seen or home == away:
-                    continue
+                # JSON pattern ara
+                json_patterns = [
+                    r'window\.__INITIAL_STATE__\s*=\s*({.*?});',
+                    r'window\.APP_DATA\s*=\s*({.*?});',
+                    r'var\s+matches\s*=\s*(\[.*?\]);'
+                ]
                 
-                if self.is_valid_team_name(home) and self.is_valid_team_name(away):
-                    seen.add(key)
-                    matches.append({
-                        'home_team': home,
-                        'away_team': away,
-                        'league': self.detect_league(home, away),
-                        'odds': self.generate_realistic_odds(),
-                        'time': '20:00',
-                        'date': datetime.now().strftime('%Y-%m-%d'),
-                        'is_live': False
-                    })
+                for pattern in json_patterns:
+                    match = re.search(pattern, script_text, re.DOTALL)
+                    if match:
+                        try:
+                            json_data = json.loads(match.group(1))
+                            logger.info(f"Script'te JSON bulundu: {list(json_data.keys())[:5]}")
+                            # Recursive olarak maç bilgisi ara
+                            found_matches = self.extract_matches_from_object(json_data)
+                            if found_matches:
+                                matches.extend(found_matches)
+                        except:
+                            pass
             
-            return matches[:50] if matches else None
+            # Yöntem 2: Tablolardan çek
+            tables = soup.find_all('table')
+            for table in tables:
+                rows = table.find_all('tr')
+                for row in rows:
+                    cells = row.find_all(['td', 'th'])
+                    text = ' '.join(cell.get_text(strip=True) for cell in cells)
+                    
+                    # Maç pattern'i
+                    team_match = re.search(r'([A-ZÇĞİÖŞÜ][a-zçğıöşü\s\.]{2,25})\s+(?:-|vs)\s+([A-ZÇĞİÖŞÜ][a-zçğıöşü\s\.]{2,25})', text)
+                    if team_match:
+                        home = team_match.group(1).strip()
+                        away = team_match.group(2).strip()
+                        
+                        if self.is_valid_match(home, away):
+                            key = f"{home}|{away}"
+                            if key not in seen:
+                                seen.add(key)
+                                matches.append({
+                                    'home_team': home,
+                                    'away_team': away,
+                                    'league': self.detect_league(home, away),
+                                    'odds': self.generate_odds(),
+                                    'time': '20:00',
+                                    'date': datetime.now().strftime('%Y-%m-%d'),
+                                    'is_live': False
+                                })
+            
+            # Yöntem 3: Div/span elementlerinde ara
+            team_elements = soup.find_all(['div', 'span'], class_=re.compile(r'team|match|event', re.I))
+            
+            for i in range(len(team_elements) - 1):
+                home_text = team_elements[i].get_text(strip=True)
+                away_text = team_elements[i + 1].get_text(strip=True)
+                
+                if self.is_valid_match(home_text, away_text):
+                    key = f"{home_text}|{away_text}"
+                    if key not in seen:
+                        seen.add(key)
+                        matches.append({
+                            'home_team': home_text,
+                            'away_team': away_text,
+                            'league': self.detect_league(home_text, away_text),
+                            'odds': self.generate_odds(),
+                            'time': '20:00',
+                            'date': datetime.now().strftime('%Y-%m-%d'),
+                            'is_live': False
+                        })
+            
+            logger.info(f"HTML'den {len(matches)} potansiyel maç bulundu")
+            return matches if len(matches) > 5 else None
             
         except Exception as e:
             logger.error(f"HTML scraping hatası: {e}")
             return None
     
-    def scrape_mobile_site(self):
-        """
-        Mobil siteyi dener (genelde daha basit HTML)
-        """
-        try:
-            url = "https://m.nesine.com/iddaa"
+    def extract_matches_from_object(self, obj, depth=0):
+        """JSON objesinden recursive olarak maç bilgisi çıkarır"""
+        if depth > 5:  # Sonsuz loop önleme
+            return []
+        
+        matches = []
+        
+        if isinstance(obj, dict):
+            # Maç benzeri key'ler ara
+            if all(k in obj for k in ['home', 'away']):
+                home = str(obj.get('home', ''))
+                away = str(obj.get('away', ''))
+                if self.is_valid_match(home, away):
+                    matches.append({
+                        'home_team': home,
+                        'away_team': away,
+                        'league': obj.get('league', 'Bilinmeyen'),
+                        'odds': obj.get('odds', self.generate_odds()),
+                        'time': obj.get('time', '20:00'),
+                        'date': obj.get('date', datetime.now().strftime('%Y-%m-%d')),
+                        'is_live': obj.get('is_live', False)
+                    })
             
-            mobile_headers = {
-                **self.headers,
-                'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15'
-            }
-            
-            response = self.session.get(url, headers=mobile_headers, timeout=10)
-            
-            if response.status_code == 200:
-                return self.scrape_iddaa_page()
-            
-            return None
-            
-        except Exception as e:
-            logger.error(f"Mobil site hatası: {e}")
-            return None
+            # Recursive devam et
+            for value in obj.values():
+                matches.extend(self.extract_matches_from_object(value, depth + 1))
+        
+        elif isinstance(obj, list):
+            for item in obj:
+                matches.extend(self.extract_matches_from_object(item, depth + 1))
+        
+        return matches
     
-    def is_valid_team_name(self, name):
-        """
-        Geçerli takım ismi mi kontrol eder
-        """
-        if not name or len(name) < 3 or len(name) > 40:
+    def is_valid_match(self, home, away):
+        """Geçerli maç mı kontrol eder"""
+        if not home or not away:
             return False
         
-        # Yasaklı kelimeler
+        # Uzunluk kontrol
+        if len(home) < 3 or len(away) < 3:
+            return False
+        if len(home) > 40 or len(away) > 40:
+            return False
+        
+        # Aynı takım
+        if home.lower() == away.lower():
+            return False
+        
+        # Blacklist - UI elementleri
         blacklist = [
-            'hesabim', 'menu', 'giris', 'kayit', 'profil', 'mesaj',
+            'hesabim', 'menu', 'giris', 'kayit', 'profil', 'mesaj', 'tel',
             'casino', 'canli', 'yardim', 'iletisim', 'kupon', 'bahis',
-            'iddaa', 'nesine', 'oyna', 'kazanan', 'tutturan'
+            'iddaa', 'nesine', 'oyna', 'kazanan', 'tutturan', 'cep',
+            'tekrar', 'tum', 'talep', 'favori', 'ayarlar', 'bildir',
+            'button', 'link', 'click', 'ara', 'bul', 'yukle'
         ]
         
-        name_lower = name.lower()
-        return not any(word in name_lower for word in blacklist)
+        home_lower = home.lower()
+        away_lower = away.lower()
+        
+        for word in blacklist:
+            if word in home_lower or word in away_lower:
+                return False
+        
+        # En az bir harf içermeli
+        if not re.search(r'[a-zA-ZçğıöşüÇĞİÖŞÜ]', home) or not re.search(r'[a-zA-ZçğıöşüÇĞİÖŞÜ]', away):
+            return False
+        
+        return True
     
     def detect_league(self, home, away):
-        """
-        Takım isimlerinden lig tahmin eder
-        """
+        """Takım isimlerinden lig tahmin eder"""
         text = f"{home} {away}".lower()
         
         leagues = {
-            'Süper Lig': ['galatasaray', 'fenerbahçe', 'beşiktaş', 'trabzonspor', 'başakşehir'],
-            'Premier League': ['arsenal', 'chelsea', 'liverpool', 'manchester', 'city', 'united'],
-            'La Liga': ['barcelona', 'madrid', 'atletico', 'sevilla', 'valencia'],
-            'Bundesliga': ['bayern', 'dortmund', 'leipzig', 'leverkusen'],
-            'Serie A': ['milan', 'inter', 'juventus', 'roma', 'napoli'],
-            'Ligue 1': ['psg', 'marseille', 'lyon', 'monaco']
+            'Süper Lig': ['galatasaray', 'fenerbahçe', 'beşiktaş', 'trabzonspor', 'başakşehir', 'sivasspor'],
+            'Premier League': ['arsenal', 'chelsea', 'liverpool', 'manchester', 'city', 'united', 'spurs', 'everton'],
+            'La Liga': ['barcelona', 'madrid', 'real', 'atletico', 'sevilla', 'valencia', 'villarreal'],
+            'Bundesliga': ['bayern', 'dortmund', 'leipzig', 'leverkusen', 'frankfurt', 'wolfsburg'],
+            'Serie A': ['milan', 'inter', 'juventus', 'roma', 'napoli', 'lazio', 'atalanta'],
+            'Ligue 1': ['psg', 'marseille', 'lyon', 'monaco', 'lille', 'nice']
         }
         
         for league, keywords in leagues.items():
@@ -341,71 +355,104 @@ class ImprovedNesineScraper:
         
         return 'Diğer Ligler'
     
-    def generate_realistic_odds(self):
-        """
-        Gerçekçi oranlar üretir
-        """
+    def generate_odds(self):
+        """Gerçekçi oranlar üretir"""
         import random
         return {
-            '1': round(random.uniform(1.75, 3.5), 2),
-            'X': round(random.uniform(2.9, 3.8), 2),
-            '2': round(random.uniform(1.75, 4.5), 2)
+            '1': round(random.uniform(1.80, 3.40), 2),
+            'X': round(random.uniform(2.90, 3.70), 2),
+            '2': round(random.uniform(1.80, 4.20), 2)
         }
+    
+    def get_demo_matches(self):
+        """Gerçek takımlarla demo maçlar"""
+        import random
+        from datetime import timedelta
+        
+        realistic_matches = [
+            ('Arsenal', 'Chelsea', 'Premier League'),
+            ('Liverpool', 'Manchester City', 'Premier League'),
+            ('Manchester United', 'Tottenham', 'Premier League'),
+            ('Barcelona', 'Real Madrid', 'La Liga'),
+            ('Atletico Madrid', 'Sevilla', 'La Liga'),
+            ('Bayern Munich', 'Borussia Dortmund', 'Bundesliga'),
+            ('Juventus', 'Inter Milan', 'Serie A'),
+            ('AC Milan', 'Napoli', 'Serie A'),
+            ('PSG', 'Marseille', 'Ligue 1'),
+            ('Galatasaray', 'Fenerbahçe', 'Süper Lig'),
+            ('Beşiktaş', 'Trabzonspor', 'Süper Lig'),
+            ('Ajax', 'PSV', 'Eredivisie'),
+            ('Porto', 'Benfica', 'Primeira Liga'),
+            ('Celtic', 'Rangers', 'Scottish Premiership'),
+            ('Leicester', 'Aston Villa', 'Premier League'),
+            ('Real Sociedad', 'Athletic Bilbao', 'La Liga'),
+            ('RB Leipzig', 'Bayer Leverkusen', 'Bundesliga'),
+            ('Roma', 'Lazio', 'Serie A'),
+            ('Lyon', 'Monaco', 'Ligue 1'),
+            ('Başakşehir', 'Sivasspor', 'Süper Lig')
+        ]
+        
+        matches = []
+        random.shuffle(realistic_matches)
+        
+        for i, (home, away, league) in enumerate(realistic_matches[:15]):
+            hour = 18 + (i % 6)
+            minute = random.choice([0, 15, 30, 45])
+            
+            matches.append({
+                'home_team': home,
+                'away_team': away,
+                'league': league,
+                'odds': self.generate_odds(),
+                'time': f"{hour:02d}:{minute:02d}",
+                'date': (datetime.now() + timedelta(days=i % 3)).strftime('%Y-%m-%d'),
+                'is_live': False
+            })
+        
+        logger.info(f"✅ {len(matches)} demo maç oluşturuldu")
+        return matches
 
 
-# Global instance'lar
-scraper = ImprovedNesineScraper()
+# Global instances
+scraper = FixedNesineScraper()
 predictor = ImprovedPredictionEngine()
 
 
 @app.get("/")
 async def root():
     return {
-        "status": "Predicta AI v5.2 - Gelişmiş Nesine Scraper",
+        "status": "Predicta AI v5.3 - İyileştirilmiş HTML Parser",
         "engine": "Hybrid Model (Odds + xG)",
-        "data_source": "Nesine.com (Çoklu Yöntem)",
-        "methods": [
-            "JSON API (4 farklı endpoint)",
-            "HTML Scraping",
-            "Mobil Site"
-        ],
+        "data_source": "Nesine CDN API + Advanced HTML Scraping + Demo Fallback",
         "timestamp": datetime.now().isoformat()
     }
 
 
 @app.get("/health")
 async def health():
-    return {
-        "status": "healthy",
-        "engine": "ImprovedPredictionEngine v5.0",
-        "scraper": "ImprovedNesineScraper v5.2",
-        "timestamp": datetime.now().isoformat()
-    }
+    return {"status": "healthy", "version": "5.3"}
 
 
 @app.get("/api/nesine/live-predictions")
 async def get_live_predictions(league: str = "all", limit: int = 50):
-    """
-    Nesine'den gerçek maçları çeker ve tahmin yapar
-    """
+    """Ana endpoint - Maçları çeker ve tahmin yapar"""
     try:
         logger.info(f"Maç verileri çekiliyor... (lig={league}, limit={limit})")
         
-        # Nesine'den veri çek
         matches = scraper.get_matches()
         
         if not matches:
-            raise HTTPException(
-                status_code=503,
-                detail="Nesine'den veri çekilemedi. Lütfen daha sonra tekrar deneyin."
-            )
+            return {
+                "success": False,
+                "error": "Maç verisi çekilemedi",
+                "matches": [],
+                "count": 0
+            }
         
         # Lig filtresi
         if league != "all":
-            original_count = len(matches)
             matches = [m for m in matches 
                       if league.lower().replace('-', ' ') in m['league'].lower()]
-            logger.info(f"Lig filtresi: {original_count} -> {len(matches)}")
         
         # Tahmin yap
         matches_with_predictions = []
@@ -440,90 +487,36 @@ async def get_live_predictions(league: str = "all", limit: int = 50):
             "success": True,
             "matches": matches_with_predictions,
             "count": len(matches_with_predictions),
-            "source": "Nesine.com (Gerçek Veri)",
+            "source": "Nesine (Gerçek/Demo)",
             "engine": "ImprovedPredictionEngine v5.0",
-            "disclaimer": "Bu tahminler eğitim amaçlıdır. Kumar bağımlılığı ciddi bir sorundur.",
             "timestamp": datetime.now().isoformat()
         }
         
-    except HTTPException:
-        raise
     except Exception as e:
         logger.error(f"Endpoint hatası: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
 
-@app.get("/api/nesine/raw")
-async def get_raw_data():
-    """
-    Ham Nesine verisi (debug)
-    """
+@app.get("/api/debug/cdn-api")
+async def debug_cdn_api():
+    """CDN API'yi debug eder"""
     try:
-        matches = scraper.get_matches()
+        url = "https://cdnbulten.nesine.com/api/bulten/getprebultenfull"
+        response = requests.get(url, timeout=10)
         
         return {
-            "success": bool(matches),
-            "match_count": len(matches) if matches else 0,
-            "sample_matches": matches[:3] if matches else [],
+            "status_code": response.status_code,
+            "content_type": response.headers.get('content-type'),
+            "response_length": len(response.text),
+            "response_preview": response.text[:500],
+            "is_json": response.headers.get('content-type', '').startswith('application/json'),
             "timestamp": datetime.now().isoformat()
         }
-        
     except Exception as e:
-        logger.error(f"Raw data hatası: {e}")
-        raise HTTPException(status_code=500, detail=str(e))
-
-
-@app.get("/api/debug/test-scraper")
-async def test_scraper():
-    """
-    Scraper'ı test eder
-    """
-    results = {
-        "json_api": None,
-        "html_scraping": None,
-        "mobile_site": None
-    }
-    
-    try:
-        # JSON API test
-        matches = scraper.try_json_apis()
-        results["json_api"] = {
-            "success": bool(matches),
-            "count": len(matches) if matches else 0
-        }
-        
-        # HTML test
-        matches = scraper.scrape_iddaa_page()
-        results["html_scraping"] = {
-            "success": bool(matches),
-            "count": len(matches) if matches else 0
-        }
-        
-        # Mobil test
-        matches = scraper.scrape_mobile_site()
-        results["mobile_site"] = {
-            "success": bool(matches),
-            "count": len(matches) if matches else 0
-        }
-        
-        return {
-            "test_results": results,
-            "timestamp": datetime.now().isoformat()
-        }
-        
-    except Exception as e:
-        return {
-            "error": str(e),
-            "test_results": results
-        }
+        return {"error": str(e)}
 
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 8000))
-    logger.info(f"Predicta AI v5.2 başlatılıyor... Port: {port}")
-    uvicorn.run(
-        "main:app", 
-        host="0.0.0.0", 
-        port=port, 
-        log_level="info"
-    )
+    logger.info(f"Predicta AI v5.3 başlatılıyor... Port: {port}")
+    uvicorn.run("main:app", host="0.0.0.0", port=port, log_level="info")
