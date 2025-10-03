@@ -62,7 +62,7 @@
 <header class="header">
   <h1>Predicta AI</h1>
   <div class="tagline">Profesyonel Futbol Tahmin Platformu</div>
-  <div class="version-badge">v7.3 - Akıllı Lig Gruplama</div>
+  <div class="version-badge">v7.4 - Doğru Lig Sınıflandırma</div>
 </header>
 
 <div class="container">
@@ -104,32 +104,31 @@
   let selectedLeague = 'all';
   const API_BASE_URL = 'https://predicta-production.up.railway.app';
 
-  // Gelişmiş lig eşleştirme sistemi
+  // Gelişmiş lig eşleştirme sistemi - DÜZELTİLMİŞ
   const leagueMapping = {
-    // Türkiye
-    "Süper Lig": ["Fenerbahçe", "Galatasaray", "Beşiktaş", "Trabzonspor", "Başakşehir", "Sivasspor", "Alanyaspor", "Kayserispor", "Gençlerbirliği", "Ankaragücü", "Konyaspor", "Kasımpaşa", "Hatayspor", "Giresunspor", "Ümraniyespor", "İstanbulspor", "Gaziantep", "Adana Demirspor", "Antalyaspor", "Fatih Karagümrük", "Pendikspor", "Samsunspor", "Çaykur Rizespor"],
-    
     // İngiltere
-    "Premier League": ["Arsenal", "Chelsea", "Liverpool", "Manchester City", "Manchester United", "Tottenham", "Newcastle", "Brighton", "West Ham", "Crystal Palace", "Wolves", "Aston Villa", "Leeds", "Everton", "Southampton", "Nottingham Forest", "Fulham", "Brentford", "Bournemouth", "Burnley", "Sheffield United", "Luton Town"],
-    
-    // İspanya
-    "La Liga": ["Real Madrid", "Barcelona", "Atletico Madrid", "Sevilla", "Valencia", "Villarreal", "Real Betis", "Athletic Bilbao", "Real Sociedad", "Celta Vigo", "Getafe", "Osasuna", "Mallorca", "Cadiz", "Granada", "Alaves", "Rayo Vallecano", "Las Palmas", "Girona", "Almeria", "Valladolid", "Elche", "Espanyol"],
+    "Premier League": ["Bournemouth", "Fulham", "Arsenal", "Chelsea", "Liverpool", "Manchester City", "Manchester United", "Tottenham", "Newcastle", "Brighton", "West Ham", "Crystal Palace", "Wolves", "Aston Villa", "Leeds", "Everton", "Southampton", "Nottingham Forest", "Brentford", "Burnley", "Sheffield United", "Luton Town"],
     
     // İtalya
-    "Serie A": ["Juventus", "Inter", "Milan", "Napoli", "Roma", "Lazio", "Atalanta", "Fiorentina", "Torino", "Bologna", "Monza", "Udinese", "Sassuolo", "Empoli", "Salernitana", "Lecce", "Verona", "Genoa", "Frosinone", "Cagliari"],
+    "Serie A": ["Verona", "Sassuolo", "Juventus", "Inter", "Milan", "Napoli", "Roma", "Lazio", "Atalanta", "Fiorentina", "Torino", "Bologna", "Monza", "Udinese", "Empoli", "Salernitana", "Lecce", "Genoa", "Frosinone", "Cagliari"],
+    
+    // İspanya
+    "La Liga": ["Osasuna", "Getafe", "Real Madrid", "Barcelona", "Atletico Madrid", "Sevilla", "Valencia", "Villarreal", "Real Betis", "Athletic Bilbao", "Real Sociedad", "Celta Vigo", "Mallorca", "Cadiz", "Granada", "Alaves", "Rayo Vallecano", "Las Palmas", "Girona", "Almeria", "Valladolid", "Elche", "Espanyol"],
     
     // Almanya
-    "Bundesliga": ["Bayern Munich", "Borussia Dortmund", "RB Leipzig", "Bayer Leverkusen", "Borussia Mönchengladbach", "Eintracht Frankfurt", "Wolfsburg", "Union Berlin", "Freiburg", "Mainz", "Köln", "Hoffenheim", "Augsburg", "Stuttgart", "Bochum", "Darmstadt", "Heidenheim", "Werder Bremen"],
+    "Bundesliga": ["Hoffenheim", "Cologne", "Bayern Munich", "Borussia Dortmund", "RB Leipzig", "Bayer Leverkusen", "Borussia Mönchengladbach", "Eintracht Frankfurt", "Wolfsburg", "Union Berlin", "Freiburg", "Mainz", "Augsburg", "Stuttgart", "Bochum", "Darmstadt", "Heidenheim", "Werder Bremen"],
     
     // Fransa
-    "Ligue 1": ["Paris Saint-Germain", "Marseille", "Lyon", "Monaco", "Lille", "Nice", "Rennes", "Lens", "Reims", "Nantes", "Montpellier", "Toulouse", "Strasbourg", "Lorient", "Auxerre", "Clermont Foot", "Ajaccio", "Troyes", "Angers", "Brest", "Metz", "Le Havre"],
+    "Ligue 1": ["Paris FC", "Lorient", "Paris Saint-Germain", "Marseille", "Lyon", "Monaco", "Lille", "Nice", "Rennes", "Lens", "Reims", "Nantes", "Montpellier", "Toulouse", "Strasbourg", "Auxerre", "Clermont Foot", "Ajaccio", "Troyes", "Angers", "Brest", "Metz", "Le Havre"],
     
-    // Diğer önemli ligler
-    "Eredivisie": ["Ajax", "PSV", "Feyenoord", "AZ Alkmaar", "Twente", "Utrecht", "Vitesse", "Heerenveen", "Groningen", "NEC Nijmegen", "Sparta Rotterdam", "Fortuna Sittard", "Heracles", "PEC Zwolle", "Excelsior", "RKC Waalwijk", "Cambuur", "Go Ahead Eagles", "Volendam", "Almere City"],
+    // Hollanda
+    "Eredivisie": ["NAC Breda", "Groningen", "Ajax", "PSV", "Feyenoord", "AZ Alkmaar", "Twente", "Utrecht", "Vitesse", "Heerenveen", "Sparta Rotterdam", "Fortuna Sittard", "Heracles", "PEC Zwolle", "Excelsior", "RKC Waalwijk", "Cambuur", "Go Ahead Eagles", "Volendam", "Almere City"],
     
-    "Primeira Liga": ["Benfica", "Porto", "Sporting CP", "Braga", "Vitoria Guimaraes", "Boavista", "Famalicao", "Casa Pia", "Rio Ave", "Santa Clara", "Vizela", "Arouca", "Chaves", "Estoril", "Portimonense", "Maritimo", "Paços de Ferreira", "Gil Vicente"],
+    // Portekiz
+    "Primeira Liga": ["Casa Pia", "Estoril", "Benfica", "Porto", "Sporting CP", "Braga", "Vitoria Guimaraes", "Boavista", "Famalicao", "Rio Ave", "Santa Clara", "Vizela", "Arouca", "Chaves", "Portimonense", "Maritimo", "Paços de Ferreira", "Gil Vicente"],
     
-    "MLS": ["Los Angeles FC", "Philadelphia Union", "Austin FC", "New York City FC", "Seattle Sounders", "Atlanta United", "Portland Timbers", "New England Revolution", "FC Dallas", "Minnesota United", "Real Salt Lake", "Nashville SC", "Orlando City", "Vancouver Whitecaps", "Sporting Kansas City", "Inter Miami", "Columbus Crew", "Charlotte FC", "New York Red Bulls", "Houston Dynamo", "San Jose Earthquakes", "DC United", "Chicago Fire", "FC Cincinnati", "St. Louis City", "Colorado Rapids", "LA Galaxy", "Montreal CF", "Toronto FC"]
+    // Türkiye
+    "Süper Lig": ["Fenerbahçe", "Galatasaray", "Beşiktaş", "Trabzonspor", "Başakşehir", "Sivasspor", "Alanyaspor", "Kayserispor", "Gençlerbirliği", "Ankaragücü", "Konyaspor", "Kasımpaşa", "Hatayspor", "Giresunspor", "Ümraniyespor", "İstanbulspor", "Gaziantep", "Adana Demirspor", "Antalyaspor", "Fatih Karagümrük", "Pendikspor", "Samsunspor", "Çaykur Rizespor"]
   };
 
   // API'den gelen lig ID'leri için mapping
@@ -145,6 +144,20 @@
     1597: "MLS"
   };
 
+  // Lig isimlerini düzeltme fonksiyonu
+  function correctLeagueName(leagueName) {
+    const corrections = {
+      "Italy - Serie A": "Serie A",
+      "Spain - La Liga": "La Liga", 
+      "Germany - Bundesliga": "Bundesliga",
+      "France - Ligue 1": "Ligue 1",
+      "Netherlands - Eredivisie": "Eredivisie",
+      "Portugal - Primeira Liga": "Primeira Liga",
+      "Turkiye - Super Lig": "Süper Lig"
+    };
+    return corrections[leagueName] || leagueName;
+  }
+
   async function loadMatches() {
     try {
       showLoading();
@@ -153,10 +166,16 @@
       const data = await response.json();
       if (data.success && data.matches) {
         allMatches = data.matches;
-        // Takım isimlerine göre lig ataması yap
+        // Lig isimlerini düzelt ve takım isimlerine göre lig ataması yap
         allMatches = allMatches.map(match => {
+          // Önce mevcut lig ismini düzelt
+          if (match.league_name) {
+            match.league_name = correctLeagueName(match.league_name);
+          }
+          
+          // Takım isimlerine göre lig tespiti yap
           const detectedLeague = detectLeagueByTeamNames(match.home_team, match.away_team);
-          if (detectedLeague && !match.league_name) {
+          if (detectedLeague) {
             match.league_name = detectedLeague;
           }
           return match;
@@ -173,10 +192,17 @@
   // Takım isimlerine göre lig tespiti
   function detectLeagueByTeamNames(homeTeam, awayTeam) {
     for (const [league, teams] of Object.entries(leagueMapping)) {
-      if (teams.some(team => 
-        homeTeam.toLowerCase().includes(team.toLowerCase()) || 
+      const homeInLeague = teams.some(team => 
+        homeTeam.toLowerCase().includes(team.toLowerCase())
+      );
+      const awayInLeague = teams.some(team => 
         awayTeam.toLowerCase().includes(team.toLowerCase())
-      )) {
+      );
+      
+      if (homeInLeague && awayInLeague) {
+        return league;
+      } else if (homeInLeague || awayInLeague) {
+        // Sadece bir takım bulundu, ama yine de bu lig olabilir
         return league;
       }
     }
