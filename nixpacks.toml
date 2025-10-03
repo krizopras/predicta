@@ -1,8 +1,10 @@
 [phases.setup]
-nixPkgs = ["chromium", "chromedriver"]
+# Gerekli değilse chromium/chromedriver kaldırılsın
+nixPkgs = [] 
 
 [phases.install]
 cmds = ["pip install -r requirements.txt"]
 
 [start]
-cmd = "python main.py"
+# Uygulamayı doğrudan Uvicorn ile başlatın
+cmd = "python -m uvicorn main:app --host 0.0.0.0 --port $PORT"
