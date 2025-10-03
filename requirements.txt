@@ -7,3 +7,4 @@ xgboost
 requests
 python-multipart
 beautifulsoup4
+lxml
