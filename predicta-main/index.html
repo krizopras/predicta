@@ -610,7 +610,7 @@
             
             matches.forEach(match => {
                 const prediction = match.ai_prediction || {};
-                const confidence = prediction.confidence || 250;
+                const confidence = prediction.confidence || 50;
                 const result = prediction.prediction || 'X';
                 const scorePrediction = prediction.score_prediction || '1-1';
                 
