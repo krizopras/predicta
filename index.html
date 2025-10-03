@@ -109,6 +109,47 @@
             color: #b3c7f7;
         }
 
+        /* Filtre ve sıralama butonları */
+        .controls {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .control-label {
+            font-weight: 600;
+            color: #ffd700;
+            margin-right: 10px;
+        }
+
+        .filter-btn, .sort-btn {
+            padding: 10px 20px;
+            background: rgba(63, 81, 181, 0.6);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 6px;
+            color: #fff;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .filter-btn:hover, .sort-btn:hover {
+            background: rgba(63, 81, 181, 0.8);
+            border-color: #ffd700;
+            transform: translateY(-2px);
+        }
+
+        .filter-btn.active, .sort-btn.active {
+            background: linear-gradient(135deg, #ffd700, #ff8f00);
+            border-color: #ffd700;
+            color: #1a237e;
+        }
+
         .main-content {
             background: linear-gradient(135deg, rgba(26, 35, 126, 0.8), rgba(30, 39, 130, 0.9));
             border-radius: 12px;
@@ -143,13 +184,8 @@
             transform: translateX(5px);
         }
 
-        .match-card.low-confidence {
-            border-left-color: #ff9800;
-            opacity: 0.85;
-        }
-
-        .match-card.high-risk {
-            border-left-color: #f44336;
+        .match-card.hidden {
+            display: none;
         }
 
         .match-header {
@@ -303,32 +339,11 @@
             cursor: pointer;
             font-weight: 600;
             transition: all 0.3s ease;
-            margin: 10px;
         }
 
         .refresh-btn:hover {
             background: #ffeb3b;
             transform: translateY(-2px);
-        }
-
-        .success-message {
-            background: linear-gradient(135deg, #4caf50, #388e3c);
-            color: white;
-            padding: 12px 20px;
-            border-radius: 8px;
-            margin: 10px 20px;
-            text-align: center;
-            font-weight: 600;
-        }
-
-        .error-message {
-            background: linear-gradient(135deg, #f44336, #d32f2f);
-            color: white;
-            padding: 12px 20px;
-            border-radius: 8px;
-            margin: 10px 20px;
-            text-align: center;
-            font-weight: 600;
         }
 
         .risk-badge {
@@ -362,12 +377,12 @@
                 font-size: 2rem;
             }
             
-            .match-info {
-                grid-template-columns: 1fr;
+            .controls {
+                flex-direction: column;
             }
 
-            .odds-container {
-                flex-direction: column;
+            .filter-btn, .sort-btn {
+                width: 100%;
             }
         }
     </style>
@@ -376,11 +391,11 @@
     <header class="header">
         <h1>PREDICTA AI</h1>
         <div class="tagline">Gelişmiş Hybrid Model ile Profesyonel Futbol Analizi</div>
-        <div class="version-badge">v5.0 - Improved Engine</div>
+        <div class="version-badge">v5.4 - Advanced Scraper</div>
     </header>
 
     <div class="disclaimer">
-        <div class="disclaimer-title">ÖNEMLI UYARI</div>
+        <div class="disclaimer-title">ÖNEMLİ UYARI</div>
         <div class="disclaimer-text">
             Bu platform eğitim ve analiz amaçlıdır. Tahminler matematiksel modellere dayanır ancak %100 doğruluk garantisi yoktur.<br>
             Kumar bağımlılığı ciddi bir sorundur. Gerçek bahis kararlarınızı bu tahminlere göre vermeyiniz.<br>
@@ -396,29 +411,46 @@
             </div>
             <div class="stat-box">
                 <div class="stat-value" id="high-confidence">0</div>
-                <div class="stat-label">Yüksek Güven (&gt;65%)</div>
+                <div class="stat-label">Yüksek Güven (>65%)</div>
             </div>
             <div class="stat-box">
                 <div class="stat-value" id="low-risk">0</div>
                 <div class="stat-label">Düşük Risk</div>
             </div>
             <div class="stat-box">
-                <div class="stat-value">v5.0</div>
+                <div class="stat-value">v5.4</div>
                 <div class="stat-label">Hybrid Model</div>
+            </div>
+        </div>
+
+        <!-- Filtreleme ve Sıralama Kontrolleri -->
+        <div class="controls">
+            <div>
+                <span class="control-label">Filtrele:</span>
+                <button class="filter-btn active" onclick="filterMatches('all')">Tümü</button>
+                <button class="filter-btn" onclick="filterMatches('high-confidence')">Yüksek Güven (>65%)</button>
+                <button class="filter-btn" onclick="filterMatches('low-risk')">Düşük Risk</button>
+                <button class="filter-btn" onclick="filterMatches('medium')">Orta Güven</button>
+            </div>
+            <div style="margin-left: auto;">
+                <span class="control-label">Sırala:</span>
+                <button class="sort-btn active" onclick="sortMatches('confidence')">Güvene Göre</button>
+                <button class="sort-btn" onclick="sortMatches('time')">Zamana Göre</button>
+                <button class="sort-btn" onclick="sortMatches('league')">Lige Göre</button>
             </div>
         </div>
 
         <div class="main-content">
             <div style="text-align: center; padding: 20px;">
                 <button class="refresh-btn" onclick="loadMatches()">
-                    Verileri Yenile (Nesine Canlı)
+                    Verileri Yenile
                 </button>
             </div>
 
             <div id="content-area">
                 <div class="loading">
                     <div>AI tahmin motoru başlatılıyor...</div>
-                    <div style="margin-top: 20px;">Nesine bülteni çekiliyor...</div>
+                    <div style="margin-top: 20px;">Veriler çekiliyor...</div>
                 </div>
             </div>
         </div>
@@ -426,12 +458,13 @@
 
     <script>
         let allMatches = [];
+        let currentFilter = 'all';
+        let currentSort = 'confidence';
         const API_BASE_URL = 'https://predicta-production.up.railway.app';
 
         async function loadMatches() {
             try {
                 showLoading();
-                console.log('API isteği:', `${API_BASE_URL}/api/nesine/live-predictions`);
                 
                 const response = await fetch(`${API_BASE_URL}/api/nesine/live-predictions?league=all&limit=50`);
                 
@@ -440,13 +473,11 @@
                 }
                 
                 const data = await response.json();
-                console.log('Yanıt:', data);
                 
                 if (data.success && data.matches) {
                     allMatches = data.matches;
                     updateStats();
-                    displayMatches(allMatches);
-                    showMessage(`${allMatches.length} maç yüklendi! Kaynak: ${data.source}`, 'success');
+                    applyFiltersAndSort();
                 } else {
                     throw new Error('Veri formatı hatalı');
                 }
@@ -455,6 +486,73 @@
                 console.error('Hata:', error);
                 showError(`Bağlantı hatası: ${error.message}`);
             }
+        }
+
+        function filterMatches(filterType) {
+            currentFilter = filterType;
+            
+            // Buton aktif durumu
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+            
+            applyFiltersAndSort();
+        }
+
+        function sortMatches(sortType) {
+            currentSort = sortType;
+            
+            // Buton aktif durumu
+            document.querySelectorAll('.sort-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+            
+            applyFiltersAndSort();
+        }
+
+        function applyFiltersAndSort() {
+            let filtered = [...allMatches];
+            
+            // Filtreleme
+            switch(currentFilter) {
+                case 'high-confidence':
+                    filtered = filtered.filter(m => (m.ai_prediction?.confidence || 0) >= 65);
+                    break;
+                case 'low-risk':
+                    filtered = filtered.filter(m => m.ai_prediction?.risk_level === 'low');
+                    break;
+                case 'medium':
+                    filtered = filtered.filter(m => {
+                        const conf = m.ai_prediction?.confidence || 0;
+                        return conf >= 50 && conf < 65;
+                    });
+                    break;
+            }
+            
+            // Sıralama
+            switch(currentSort) {
+                case 'confidence':
+                    filtered.sort((a, b) => {
+                        const confA = a.ai_prediction?.confidence || 0;
+                        const confB = b.ai_prediction?.confidence || 0;
+                        return confB - confA; // Büyükten küçüğe
+                    });
+                    break;
+                case 'time':
+                    filtered.sort((a, b) => {
+                        return (a.time || '').localeCompare(b.time || '');
+                    });
+                    break;
+                case 'league':
+                    filtered.sort((a, b) => {
+                        return (a.league || '').localeCompare(b.league || '');
+                    });
+                    break;
+            }
+            
+            displayMatches(filtered);
         }
 
         function updateStats() {
@@ -471,29 +569,19 @@
             document.getElementById('content-area').innerHTML = `
                 <div class="loading">
                     <div>Gelişmiş tahmin motoru çalışıyor...</div>
-                    <div style="margin-top: 20px;">Backend: ${API_BASE_URL}</div>
                 </div>
             `;
         }
 
         function showError(message) {
             document.getElementById('content-area').innerHTML = `
-                <div class="error-message">${message}</div>
-                <div style="text-align: center; margin-top: 20px;">
+                <div style="color: #f44336; text-align: center; padding: 40px;">
+                    ${message}
+                </div>
+                <div style="text-align: center;">
                     <button class="refresh-btn" onclick="loadMatches()">Tekrar Dene</button>
                 </div>
             `;
-        }
-
-        function showMessage(message, type) {
-            const messageDiv = document.createElement('div');
-            messageDiv.className = type === 'success' ? 'success-message' : 'error-message';
-            messageDiv.textContent = message;
-            
-            const contentArea = document.getElementById('content-area');
-            contentArea.insertBefore(messageDiv, contentArea.firstChild);
-            
-            setTimeout(() => messageDiv.remove(), 5000);
         }
 
         function getConfidenceClass(confidence) {
@@ -509,8 +597,8 @@
             if (!matches || matches.length === 0) {
                 contentArea.innerHTML = `
                     <div class="loading">
-                        <div>Maç bulunamadı</div>
-                        <button class="refresh-btn" onclick="loadMatches()" style="margin-top: 20px;">Tekrar Dene</button>
+                        <div>Bu filtre için maç bulunamadı</div>
+                        <button class="refresh-btn" onclick="filterMatches('all')" style="margin-top: 20px;">Tüm Maçları Göster</button>
                     </div>
                 `;
                 return;
@@ -528,10 +616,9 @@
                 const confidenceLabel = prediction.confidence_label || 'Bilinmiyor';
                 
                 const confidenceClass = getConfidenceClass(confidence);
-                const cardClass = confidence < 50 ? 'low-confidence' : (riskLevel === 'very_high' ? 'high-risk' : '');
                 
                 html += `
-                    <div class="match-card ${cardClass}">
+                    <div class="match-card">
                         <div class="match-header">
                             <div>
                                 <div class="match-teams">${match.home_team} vs ${match.away_team}</div>
@@ -604,9 +691,8 @@
 
         window.addEventListener('load', () => {
             loadMatches();
-            setInterval(loadMatches, 180000); // 3 dakikada bir
+            setInterval(loadMatches, 300000); // 5 dakikada bir
         });
     </script>
 </body>
 </html>
-```
