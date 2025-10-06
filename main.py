@@ -96,41 +96,15 @@ predictor = None
 # Yardimci Fonksiyonlar
 # ----------------------------------------------------
 
+# main.py'de ensure_data_dir fonksiyonunu güncelleyin
 def ensure_data_dir():
-    data_dir = DATA_DIR
-    directories = [
-        data_dir,
-        os.path.join(data_dir, "ai_models_v2"),
-        os.path.join(data_dir, "raw"), 
-        os.path.join(data_dir, "processed")
-    ]
-    
-    for dir_path in directories:
-        try:
-            # Dizin zaten var mı kontrol et
-            if not path.exists(dir_path):
-                os.makedirs(dir_path)
-                print(f"Directory created: {dir_path}")
-            elif not path.isdir(dir_path):
-                # Eğer dosya varsa ama dizin değilse, hata ver
-                raise FileExistsError(f"Path exists but is not a directory: {dir_path}")
-            else:
-                print(f"Directory already exists: {dir_path}")
-                
-        except FileExistsError as e:
-            # Eğer path bir dizin değilse hatayı yükselt
-            if path.exists(dir_path) and not path.isdir(dir_path):
-                print(f"Error: {e}")
-                raise e
-            # Eğer dizin zaten varsa sessizce devam et
-            pass
-        except PermissionError as e:
-            print(f"Permission denied for directory: {dir_path}")
-            raise e
-        except Exception as e:
-            print(f"Unexpected error creating directory {dir_path}: {e}")
-            raise e
-
+    try:
+        os.makedirs(os.path.join(DATA_DIR, "processed"), exist_ok=True)
+    except FileExistsError:
+        # Dizin zaten varsa sorun değil
+        pass
+    except Exception as e:
+        print(f"Directory creation error: {e}")
 def save_to_disk(data: List[Dict[str, Any]], filename: str):
     ensure_data_dir()
     try:
