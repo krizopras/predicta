@@ -1,234 +1,158 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Predicta Europe ML v2</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    :root { --bg:#0f172a; --card:#111827; --muted:#94a3b8; --accent:#22c55e; --primary:#60a5fa; }
-    body { margin:0; font-family: Inter, system-ui, Arial; background:var(--bg); color:#e5e7eb; }
-    header { padding:20px; border-bottom:1px solid #1f2937; display:flex; align-items:center; gap:16px;}
+    :root {
+      --bg:#0f172a; --card:#111827; --muted:#94a3b8; --accent:#22c55e; --primary:#60a5fa;
+    }
+    body {
+      margin:0; font-family:Inter, system-ui, Arial; background:var(--bg); color:#e5e7eb;
+    }
+    header {
+      padding:20px; border-bottom:1px solid #1f2937; display:flex; align-items:center; gap:16px;
+    }
     header h1 { font-size:20px; margin:0; }
-    header button { background:#1f2937; border:1px solid #374151; color:#e5e7eb; border-radius:8px; padding:8px 12px; cursor:pointer;}
-    main { max-width:1200px; margin:0 auto; padding:24px; display:grid; grid-template-columns: 420px 1fr; gap:24px;}
-    .card { background:var(--card); border:1px solid #1f2937; border-radius:16px; padding:16px; }
-    .card h2 { margin:0 0 12px; font-size:18px; }
-    label { display:block; font-size:12px; color:var(--muted); margin:12px 0 4px; }
-    input, select, textarea { width:100%; background:#0b1220; color:#e5e7eb; border:1px solid #1f2937; border-radius:8px; padding:10px; }
-    .row { display:grid; grid-template-columns: 1fr 1fr; gap:10px; }
-    .row3 { display:grid; grid-template-columns: repeat(3, 1fr); gap:10px; }
-    button.primary { background:linear-gradient(90deg, #2563eb, #22c55e); border:none; border-radius:10px; padding:10px 14px; color:white; cursor:pointer; }
-    button.ghost { background:#0b1220; border:1px solid #1f2937; color:#e5e7eb; border-radius:10px; padding:10px 14px; cursor:pointer; }
-    table { width:100%; border-collapse: collapse; }
-    th, td { border-bottom:1px solid #1f2937; padding:10px; font-size:14px; text-align:left; }
-    .pill { display:inline-block; padding:4px 8px; border-radius:999px; font-size:12px; }
-    .pill.low { background:#052e16; color:#4ade80; border:1px solid #14532d; }
-    .pill.med { background:#1f2937; color:#eab308; border:1px solid #334155; }
-    .pill.high { background:#3f1d1d; color:#f87171; border:1px solid #7f1d1d; }
-    .muted { color: var(--muted); font-size: 12px;}
-    .flex { display:flex; gap:8px; align-items:center;}
-    pre { background:#0b1220; border:1px solid #1f2937; border-radius:10px; padding:10px; overflow:auto;}
+    header button {
+      background:#1f2937; border:1px solid #374151; color:#e5e7eb; border-radius:8px; padding:8px 12px; cursor:pointer;
+    }
+    main {
+      max-width:1200px; margin:0 auto; padding:24px; display:grid; grid-template-columns: 420px 1fr; gap:24px;
+    }
+    .card {
+      background:var(--card); border:1px solid #1f2937; border-radius:16px; padding:16px;
+    }
+    label {
+      display:block; font-size:12px; color:var(--muted); margin:12px 0 4px;
+    }
+    input, select, textarea {
+      width:100%; background:#0b1220; color:#e5e7eb; border:1px solid #1f2937; border-radius:8px; padding:10px;
+    }
+    button.primary {
+      background:linear-gradient(90deg, #2563eb, #22c55e);
+      border:none; border-radius:10px; padding:10px 14px; color:white; cursor:pointer;
+    }
+    table {
+      width:100%; border-collapse: collapse; margin-top:10px;
+    }
+    th, td { border-bottom:1px solid #1f2937; padding:8px; font-size:14px; text-align:left; }
+    pre { background:#0b1220; border:1px solid #1f2937; border-radius:10px; padding:10px; overflow:auto; }
   </style>
 </head>
 <body>
   <header>
     <h1>⚽ Predicta Europe ML v2</h1>
-    <button id="btn-train" title="Tüm Avrupa arşiviyle eğit">Modeli Eğit</button>
-    <button id="btn-reload" title="Diskteki modelleri yeniden yükle">Modelleri Yeniden Yükle</button>
-    <span id="status" class="muted"></span>
+    <button id="btn-train">Modeli Eğit</button>
+    <button id="btn-reload">Modelleri Yeniden Yükle</button>
+    <span id="status" style="font-size:12px;color:#94a3b8;"></span>
   </header>
 
   <main>
-    <!-- Sol: Tekli Tahmin + Toplu Tahmin -->
     <section class="card">
-      <h2>Tekli Tahmin</h2>
-      <label>Ülke / Lig</label>
-      <div class="row">
-        <select id="country"></select>
-        <select id="league"></select>
-      </div>
+      <label>Ülke</label>
+      <select id="country"></select>
+      <label>Lig</label>
+      <select id="league"></select>
 
       <label>Ev Sahibi</label>
-      <input id="home" type="text" placeholder="Galatasaray" />
+      <input id="home" placeholder="Galatasaray">
       <label>Deplasman</label>
-      <input id="away" type="text" placeholder="Fenerbahçe" />
+      <input id="away" placeholder="Fenerbahçe">
 
-      <label>Oranlar (MS1 / MS0 / MS2)</label>
-      <div class="row3">
-        <input id="o1" type="number" step="0.01" value="2.05" />
-        <input id="ox" type="number" step="0.01" value="3.30" />
-        <input id="o2" type="number" step="0.01" value="3.40" />
+      <label>Oranlar (1, X, 2)</label>
+      <div style="display:flex;gap:6px;">
+        <input id="o1" value="2.05"><input id="ox" value="3.30"><input id="o2" value="3.40">
       </div>
 
-      <div class="flex" style="margin-top:12px;">
-        <button class="primary" id="btn-predict">Tahmin Al</button>
-        <span id="one-result-status" class="muted"></span>
-      </div>
-      <div id="one-result" style="margin-top:12px;"></div>
-
-      <hr style="border-color:#1f2937; margin:20px 0;" />
-
-      <h2>Toplu Tahmin (CSV)</h2>
-      <p class="muted">başlık: <code>home,away,league,1,X,2</code></p>
-      <textarea id="csv" rows="6" placeholder="home,away,league,1,X,2&#10;Galatasaray,Fenerbahçe,Super Lig,2.05,3.30,3.40"></textarea>
-      <div class="flex" style="margin-top:12px;">
-        <button class="ghost" id="btn-batch">Toplu Tahmin Yap</button>
-        <span id="batch-status" class="muted"></span>
-      </div>
+      <button class="primary" id="btn-predict" style="margin-top:10px;">Tahmin Al</button>
+      <pre id="output"></pre>
     </section>
 
-    <!-- Sağ: Sonuç Tablosu / Log -->
     <section class="card">
-      <h2>Sonuçlar</h2>
-      <table id="results">
-        <thead>
-          <tr>
-            <th>Maç</th>
-            <th>Lig</th>
-            <th>MS</th>
-            <th>Güven</th>
-            <th>Skor</th>
-            <th>Value</th>
-            <th>Risk</th>
-            <th>Öneri</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
+      <h3>Sonuçlar</h3>
+      <table>
+        <thead><tr><th>Maç</th><th>MS</th><th>Skor</th><th>Güven</th><th>Value</th></tr></thead>
+        <tbody id="tableBody"></tbody>
       </table>
-
-      <h2 style="margin-top:20px;">Log</h2>
       <pre id="log"></pre>
     </section>
   </main>
 
-  <script>
-    const $ = (id) => document.getElementById(id);
-    const leaguesData = { list: [] };
+<script>
+const API_BASE = "https://predicta-production.up.railway.app"; // 🔁 kendi Railway URL'inle değiştir!
 
-    function setStatus(msg) { $("status").textContent = msg; }
-    function log(msg) { $("log").textContent += msg + "\n"; }
+const $ = id => document.getElementById(id);
 
-    async function loadLeagues() {
-      setStatus("Ligler yükleniyor...");
-      const res = await fetch("/api/leagues");
-      const data = await res.json();
-      leaguesData.list = data.items || [];
-      // ülke select
-      const countrySel = $("country");
-      countrySel.innerHTML = "";
-      for (const c of leaguesData.list) {
-        const opt = document.createElement("option");
-        opt.value = c.country;
-        opt.textContent = c.country;
-        countrySel.appendChild(opt);
-      }
-      countrySel.addEventListener("change", onCountryChange);
-      onCountryChange(); // ilk doldurma
-      setStatus(`Ligler yüklendi (${data.count} ülke)`);
-    }
+function setStatus(msg){ $("status").textContent = msg; }
+function log(msg){ $("log").textContent += msg + "\\n"; }
 
-    function onCountryChange() {
-      const sel = $("country").value;
-      const leagues = leaguesData.list.find(x => x.country === sel)?.leagues || [];
-      const leagueSel = $("league");
-      leagueSel.innerHTML = "";
-      // eğer lig bulunamadıysa en az "Unknown" ekle
-      if (leagues.length === 0) {
-        const opt = document.createElement("option");
-        opt.value = "Unknown";
-        opt.textContent = "Unknown";
-        leagueSel.appendChild(opt);
-        return;
-      }
-      for (const lg of leagues) {
-        const opt = document.createElement("option");
-        opt.value = lg.name || lg.code;
-        opt.textContent = lg.name || lg.code;
-        leagueSel.appendChild(opt);
-      }
-    }
+async function loadLeagues(){
+  setStatus("Ligler yükleniyor...");
+  const res = await fetch(API_BASE + "/api/leagues");
+  const data = await res.json();
+  const list = data.items || [];
+  const countrySel = $("country");
+  const leagueSel = $("league");
+  countrySel.innerHTML = "";
+  list.forEach(c=>{
+    const opt=document.createElement("option");
+    opt.value=c.country; opt.textContent=c.country;
+    countrySel.appendChild(opt);
+  });
+  countrySel.onchange=()=>{
+    const selected=list.find(x=>x.country===countrySel.value);
+    leagueSel.innerHTML="";
+    (selected?.leagues||[]).forEach(l=>{
+      const o=document.createElement("option");
+      o.value=l.name; o.textContent=l.name; leagueSel.appendChild(o);
+    });
+  };
+  countrySel.dispatchEvent(new Event("change"));
+  setStatus("Ligler yüklendi.");
+}
 
-    function riskPill(risk) {
-      if (risk === "LOW") return `<span class="pill low">Düşük</span>`;
-      if (risk === "MEDIUM") return `<span class="pill med">Orta</span>`;
-      return `<span class="pill high">Yüksek</span>`;
-    }
+async function predictOne(){
+  const payload={
+    home_team:$("home").value.trim(),
+    away_team:$("away").value.trim(),
+    league:$("league").value.trim(),
+    odds:{"1":parseFloat($("o1").value),"X":parseFloat($("ox").value),"2":parseFloat($("o2").value)}
+  };
+  setStatus("Tahmin yapılıyor...");
+  const res = await fetch(API_BASE+"/api/predict",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(payload)});
+  const data = await res.json();
+  $("output").textContent = JSON.stringify(data, null, 2);
+  setStatus("Tahmin tamamlandı.");
+  const tr = document.createElement("tr");
+  tr.innerHTML = `<td>${payload.home_team} - ${payload.away_team}</td>
+                  <td>${data.prediction}</td>
+                  <td>${data.score_prediction||"-"}</td>
+                  <td>${data.confidence?.toFixed?.(1)||data.confidence}%</td>
+                  <td>${data.value_bet?.value_index?.toFixed?.(3)||"-"}</td>`;
+  $("tableBody").prepend(tr);
+}
 
-    function addResultRow(item) {
-      const tbody = $("results").querySelector("tbody");
-      const p = item.prediction || item;
-      const tr = document.createElement("tr");
-      tr.innerHTML = `
-        <td>${item.home_team} - ${item.away_team}</td>
-        <td>${item.league}</td>
-        <td><b>${p.prediction}</b></td>
-        <td>${p.confidence?.toFixed ? p.confidence.toFixed(1) : p.confidence}%</td>
-        <td>${p.score_prediction || "-"}</td>
-        <td>${p.value_bet ? (p.value_bet.value_index.toFixed(3) + " (" + p.value_bet.rating + ")") : "-"}</td>
-        <td>${riskPill(p.risk_level || "-")}</td>
-        <td>${p.recommendation || "-"}</td>
-      `;
-      tbody.prepend(tr);
-    }
+async function trainModel(){
+  setStatus("Eğitim başlatıldı...");
+  const res = await fetch(API_BASE+"/api/training/start",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({top_scores_k:20})});
+  const data = await res.json();
+  setStatus("Eğitim tamamlandı.");
+  alert("Eğitim tamamlandı!\\n" + JSON.stringify(data,null,2));
+}
 
-    async function predictOne() {
-      $("one-result-status").textContent = "Tahmin yapılıyor...";
-      const payload = {
-        home_team: $("home").value.trim(),
-        away_team: $("away").value.trim(),
-        league: $("league").value.trim(),
-        odds: {
-          "1": parseFloat($("o1").value),
-          "X": parseFloat($("ox").value),
-          "2": parseFloat($("o2").value)
-        }
-      };
-      const res = await fetch("/api/predict", { method:"POST", headers:{"Content-Type":"application/json"}, body: JSON.stringify(payload) });
-      const data = await res.json();
-      $("one-result").innerHTML = `<pre>${JSON.stringify(data, null, 2)}</pre>`;
-      $("one-result-status").textContent = "";
-      addResultRow({ ...payload, prediction: data });
-      log("Tekli tahmin tamamlandı.");
-    }
+async function reloadModels(){
+  setStatus("Modeller yeniden yükleniyor...");
+  await fetch(API_BASE+"/api/reload");
+  setStatus("Modeller yüklendi.");
+}
 
-    async function predictBatch() {
-      $("batch-status").textContent = "İşleniyor...";
-      const payload = { csv: $("csv").value };
-      const res = await fetch("/api/predictions/batch", { method:"POST", headers:{"Content-Type":"application/json"}, body: JSON.stringify(payload) });
-      const data = await res.json();
-      if (Array.isArray(data.items)) {
-        for (const it of data.items) {
-          if (it.prediction) addResultRow(it);
-        }
-      }
-      $("batch-status").textContent = `Bitti (${data.count || 0})`;
-      log("Toplu tahmin tamamlandı.");
-    }
+$("btn-predict").onclick=predictOne;
+$("btn-train").onclick=trainModel;
+$("btn-reload").onclick=reloadModels;
 
-    async function startTraining() {
-      setStatus("Eğitim başlatılıyor...");
-      const res = await fetch("/api/training/start", { method: "POST", headers: {"Content-Type":"application/json"}, body: JSON.stringify({ top_scores_k: 20 }) });
-      const data = await res.json();
-      setStatus("Eğitim tamamlandı.");
-      log("Eğitim özeti:\n" + JSON.stringify(data, null, 2));
-      alert("Eğitim tamamlandı. Konsol/log bölümünden özet bilgiyi görebilirsiniz.");
-    }
-
-    async function reloadModels() {
-      setStatus("Modeller yeniden yükleniyor...");
-      const res = await fetch("/api/reload");
-      await res.json();
-      setStatus("Modeller yüklendi.");
-    }
-
-    // events
-    $("btn-predict").addEventListener("click", predictOne);
-    $("btn-batch").addEventListener("click", predictBatch);
-    $("btn-train").addEventListener("click", startTraining);
-    $("btn-reload").addEventListener("click", reloadModels);
-
-    // açılış
-    loadLeagues().catch(err => { setStatus("Ligleri yüklerken hata"); console.error(err); });
-  </script>
+loadLeagues();
+</script>
 </body>
 </html>
