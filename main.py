@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-PREDICTA AI v6.0 - ENTEGRE TAHMIN SISTEMI
-Nesine'den canli maclari ceker, gecmis verilerle egitir ve tahmin uretir
+PREDICTA AI v6.1 - ML ENTEGRE TAHMIN SISTEMI
+Nesine'den canli maclari ceker, gecmis verilerle ML modelini egitir ve tahmin uretir
 """
 
 import os
@@ -18,38 +18,30 @@ from fastapi import FastAPI, HTTPException, BackgroundTasks
 from fastapi.middleware.cors import CORSMiddleware
 
 # ----------------------------------------------------
-# Import Tahmin Motoru (örnek placeholder)
+# ML Tahmin Motoru Import
 # ----------------------------------------------------
 try:
-    from improved_prediction_engine import ImprovedPredictionEngine
-    PREDICTOR_CLASS = ImprovedPredictionEngine
+    from ml_prediction_engine import MLPredictionEngine
+    PREDICTOR_CLASS = MLPredictionEngine
+    ML_AVAILABLE = True
 except ImportError:
-    # Basit mock tahmin motoru
-    class ImprovedPredictionEngine:
-        def predict_match(self, home_team, away_team, odds, league="default"):
-            import random
-            probs = {"1": 0.0, "X": 0.0, "2": 0.0}
-            base = [1 / (odds.get("1", 2.0)), 1 / (odds.get("X", 3.0)), 1 / (odds.get("2", 3.5))]
-            s = sum(base)
-            probs["1"], probs["X"], probs["2"] = [round(b / s, 3) for b in base]
-            pred = max(probs, key=probs.get)
-            
-            confidence = probs[pred] * 100
-            value_index = random.uniform(0.05, 0.15) if confidence > 60 else random.uniform(0, 0.08)
-            
-            return {
-                "prediction": pred,
-                "confidence": confidence,
-                "probabilities": probs,
-                "score_prediction": "2-1",
-                "value_bet": {
-                    "value_index": value_index,
-                    "rating": "EXCELLENT" if value_index > 0.12 else "GOOD" if value_index > 0.08 else "FAIR"
-                },
-                "risk_level": "LOW" if confidence > 70 else "MEDIUM" if confidence > 55 else "HIGH",
-                "recommendation": "RECOMMENDED" if confidence > 65 else "CONSIDER" if confidence > 50 else "AVOID"
-            }
-    PREDICTOR_CLASS = ImprovedPredictionEngine
+    ML_AVAILABLE = False
+    # Fallback: Basit tahmin motoru
+    try:
+        from improved_prediction_engine import ImprovedPredictionEngine
+        PREDICTOR_CLASS = ImprovedPredictionEngine
+    except ImportError:
+        class BasicPredictor:
+            def predict_match(self, home_team, away_team, odds, league="default"):
+                import random
+                pred = random.choice(['1', 'X', '2'])
+                return {
+                    "prediction": pred,
+                    "confidence": random.uniform(50, 80),
+                    "probabilities": {"home_win": 33.3, "draw": 33.3, "away_win": 33.3},
+                    "model": "Basic Random"
+                }
+        PREDICTOR_CLASS = BasicPredictor
 
 # ----------------------------------------------------
 # Global Ayarlar
@@ -70,14 +62,14 @@ logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s - %(levelname)s - %(message)s"
 )
-logger = logging.getLogger("predicta-v6")
+logger = logging.getLogger("predicta-ml")
 
 # ----------------------------------------------------
 # FastAPI App
 # ----------------------------------------------------
 app = FastAPI(
-    title="PREDICTA AI v6.0 - Entegre Tahmin Sistemi",
-    version="6.0"
+    title="PREDICTA AI v6.1 - ML Entegre Tahmin Sistemi",
+    version="6.1"
 )
 
 app.add_middleware(
@@ -88,30 +80,34 @@ app.add_middleware(
 )
 
 # ----------------------------------------------------
-# Global Değişkenler
+# Global Degiskenler
 # ----------------------------------------------------
 _cached_matches: List[Dict[str, Any]] = []
 _cached_predictions: List[Dict[str, Any]] = []
 _cache_lock = threading.Lock()
 _is_training = False
 _training_progress = 0
+_model_accuracy = 0.0
 
-predictor = PREDICTOR_CLASS()
+predictor = None
 
 # ----------------------------------------------------
-# Yardımcı Fonksiyonlar
+# Yardimci Fonksiyonlar
 # ----------------------------------------------------
 def ensure_data_dir():
     os.makedirs(DATA_DIR, exist_ok=True)
+    os.makedirs(os.path.join(DATA_DIR, "ai_models_v2"), exist_ok=True)
+    os.makedirs(os.path.join(DATA_DIR, "raw"), exist_ok=True)
+    os.makedirs(os.path.join(DATA_DIR, "processed"), exist_ok=True)
 
 def save_to_disk(data: List[Dict[str, Any]], filename: str):
     ensure_data_dir()
     try:
         with open(filename, "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
-        logger.info(f"💾 {len(data)} kayıt {filename} dosyasına kaydedildi")
+        logger.info(f"Kaydedildi: {len(data)} kayit -> {filename}")
     except Exception as e:
-        logger.error(f"❌ Kaydetme hatası: {e}")
+        logger.error(f"Kaydetme hatasi: {e}")
 
 def load_from_disk(filename: str) -> List[Dict[str, Any]]:
     if not os.path.exists(filename):
@@ -120,7 +116,7 @@ def load_from_disk(filename: str) -> List[Dict[str, Any]]:
         with open(filename, "r", encoding="utf-8") as f:
             return json.load(f)
     except Exception as e:
-        logger.error(f"❌ Yükleme hatası: {e}")
+        logger.error(f"Yukleme hatasi: {e}")
         return []
 
 def parse_nesine_json(data: Dict[str, Any]) -> List[Dict[str, Any]]:
@@ -140,10 +136,10 @@ def parse_nesine_json(data: Dict[str, Any]) -> List[Dict[str, Any]]:
         if not home or not away:
             continue
             
-        # Oranları bul
+        # Oranlari bul
         odds = {"1": 2.0, "X": 3.0, "2": 3.5}
         for bahis in m.get("MA", []):
-            if bahis.get("MTID") == 1:  # Maç Sonucu
+            if bahis.get("MTID") == 1:  # Mac Sonucu
                 oranlar = bahis.get("OCA", [])
                 if len(oranlar) >= 3:
                     try:
@@ -182,11 +178,11 @@ def fetch_future_matches(days_ahead: int = DAYS_AHEAD) -> List[Dict[str, Any]]:
                 data = r.json()
                 parsed = parse_nesine_json(data)
                 all_matches.extend(parsed)
-                logger.info(f"📅 {date}: {len(parsed)} maç")
+                logger.info(f"{date}: {len(parsed)} mac")
             else:
-                logger.warning(f"❌ {url} -> {r.status_code}")
+                logger.warning(f"{url} -> {r.status_code}")
         except Exception as e:
-            logger.warning(f"❌ {url} bağlantı hatası: {e}")
+            logger.warning(f"{url} baglanti hatasi: {e}")
             continue
             
     # Duplicate filtreleme
@@ -199,10 +195,16 @@ def fetch_future_matches(days_ahead: int = DAYS_AHEAD) -> List[Dict[str, Any]]:
             unique_matches.append(m)
             
     unique_matches.sort(key=lambda x: (x["date"], x["time"]))
-    logger.info(f"✅ Toplam {len(unique_matches)} oynanmamış maç bulundu")
+    logger.info(f"Toplam {len(unique_matches)} oynanmamis mac bulundu")
     return unique_matches
 
 def generate_predictions(matches: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    global predictor
+    
+    if predictor is None:
+        logger.warning("Tahmin motoru hazir degil, baslatiliyor...")
+        predictor = PREDICTOR_CLASS()
+    
     predictions = []
     
     for match in matches:
@@ -219,17 +221,105 @@ def generate_predictions(matches: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
             predictions.append(enhanced_match)
             
         except Exception as e:
-            logger.error(f"❌ Tahmin hatası {match['home_team']} vs {match['away_team']}: {e}")
+            logger.error(f"Tahmin hatasi {match['home_team']} vs {match['away_team']}: {e}")
             
-    logger.info(f"✅ {len(predictions)} maç için tahmin üretildi")
+    logger.info(f"{len(predictions)} mac icin tahmin uretildi")
     return predictions
+
+# ----------------------------------------------------
+# Gecmis Veri Yukleme ve Model Egitimi
+# ----------------------------------------------------
+def load_historical_data_and_train():
+    """Gecmis verileri yukle ve modeli egit"""
+    global predictor, _is_training, _training_progress, _model_accuracy
+    
+    if not ML_AVAILABLE:
+        logger.warning("ML kutuphaneleri yuklu degil, temel tahmin kullanilacak")
+        logger.info("Kurulum: pip install scikit-learn xgboost")
+        predictor = PREDICTOR_CLASS()
+        return
+    
+    try:
+        _is_training = True
+        _training_progress = 10
+        
+        logger.info("Gecmis veriler yukleniyor...")
+        
+        # TXTDataProcessor ile gecmis verileri yukle
+        try:
+            from txt_data_processor import TXTDataProcessor
+            import asyncio
+            
+            processor = TXTDataProcessor(raw_data_path="data/raw")
+            
+            _training_progress = 20
+            
+            # Async fonksiyonu calistir
+            loop = asyncio.new_event_loop()
+            asyncio.set_event_loop(loop)
+            result = loop.run_until_complete(processor.process_all_countries())
+            loop.close()
+            
+            historical_matches = result.get('matches', [])
+            logger.info(f"{len(historical_matches)} gecmis mac yuklendi")
+            
+            _training_progress = 40
+            
+        except ImportError:
+            logger.warning("TXTDataProcessor bulunamadi, islenmis veriler deneniyor...")
+            
+            # Islenmis verilerden yukle
+            processed_file = os.path.join(DATA_DIR, "processed", "matches.json")
+            if os.path.exists(processed_file):
+                with open(processed_file, 'r', encoding='utf-8') as f:
+                    historical_matches = json.load(f)
+                logger.info(f"{len(historical_matches)} gecmis mac yuklendi (cache)")
+            else:
+                logger.warning("Gecmis veri bulunamadi")
+                historical_matches = []
+            
+            _training_progress = 40
+        
+        # Model egitimi
+        if len(historical_matches) >= 100:
+            logger.info(f"Model egitimi basliyor... ({len(historical_matches)} mac)")
+            
+            ml_predictor = MLPredictionEngine()
+            
+            _training_progress = 50
+            
+            training_result = ml_predictor.train(historical_matches)
+            
+            _training_progress = 90
+            
+            if training_result['success']:
+                predictor = ml_predictor
+                _model_accuracy = training_result.get('ensemble_accuracy', 0) * 100
+                logger.info(f"Model egitildi! Dogruluk: %{_model_accuracy:.2f}")
+                logger.info(f"Modeller: {training_result.get('accuracies', {})}")
+            else:
+                logger.warning(f"Model egitilemedi: {training_result.get('error')}")
+                predictor = PREDICTOR_CLASS()
+                
+        else:
+            logger.warning(f"Yetersiz veri ({len(historical_matches)} mac, min 100), temel tahmin kullanilacak")
+            predictor = PREDICTOR_CLASS()
+        
+        _training_progress = 100
+        
+    except Exception as e:
+        logger.error(f"Gecmis veri yukleme/egitim hatasi: {e}")
+        predictor = PREDICTOR_CLASS()
+    
+    finally:
+        _is_training = False
 
 def background_refresh():
     global _cached_matches, _cached_predictions
     
     while True:
         try:
-            logger.info("🔄 Arka plan yenileme başlatılıyor...")
+            logger.info("Arka plan yenileme baslatiyor...")
             
             matches = fetch_future_matches(DAYS_AHEAD)
             predictions = generate_predictions(matches)
@@ -241,10 +331,10 @@ def background_refresh():
             save_to_disk(matches, MATCHES_FILE)
             save_to_disk(predictions, PREDICTIONS_FILE)
             
-            logger.info(f"✅ Yenileme tamamlandı: {len(predictions)} tahmin")
+            logger.info(f"Yenileme tamamlandi: {len(predictions)} tahmin")
             
         except Exception as e:
-            logger.error(f"❌ Arka plan yenileme hatası: {e}")
+            logger.error(f"Arka plan yenileme hatasi: {e}")
             
         time.sleep(REFRESH_INTERVAL)
 
@@ -257,23 +347,29 @@ async def on_startup():
     
     ensure_data_dir()
     
-    # Diskten yükle
+    # Diskten yukle
     _cached_matches = load_from_disk(MATCHES_FILE)
     _cached_predictions = load_from_disk(PREDICTIONS_FILE)
     
-    # Arka plan thread'i başlat
-    t = threading.Thread(target=background_refresh, daemon=True)
-    t.start()
+    # ML modelini egit (arka planda)
+    training_thread = threading.Thread(target=load_historical_data_and_train, daemon=True)
+    training_thread.start()
     
-    logger.info("🚀 PREDICTA AI v6.0 başlatıldı!")
+    # Arka plan yenileme thread'i baslat
+    refresh_thread = threading.Thread(target=background_refresh, daemon=True)
+    refresh_thread.start()
+    
+    logger.info("PREDICTA AI v6.1 (ML) baslatildi!")
 
 @app.get("/")
 async def root():
     return {
-        "service": "PREDICTA AI v6.0 - Entegre Tahmin Sistemi",
+        "service": "PREDICTA AI v6.1 - ML Entegre Tahmin Sistemi",
         "status": "active",
+        "ml_enabled": ML_AVAILABLE,
+        "model_accuracy": round(_model_accuracy, 2),
         "timestamp": datetime.now().isoformat(),
-        "version": "6.0"
+        "version": "6.1"
     }
 
 @app.get("/api/matches/upcoming")
@@ -310,12 +406,17 @@ async def system_health():
         match_count = len(_cached_matches)
         prediction_count = len(_cached_predictions)
     
+    model_type = predictor.__class__.__name__ if predictor else "Not Initialized"
+    
     return {
         "status": "healthy",
         "matches_cached": match_count,
         "predictions_cached": prediction_count,
-        "engine": predictor.__class__.__name__,
-        "version": "6.0"
+        "engine": model_type,
+        "ml_enabled": ML_AVAILABLE,
+        "model_accuracy": round(_model_accuracy, 2),
+        "is_training": _is_training,
+        "version": "6.1"
     }
 
 @app.post("/api/matches/refresh")
@@ -342,58 +443,54 @@ async def manual_refresh():
         raise HTTPException(status_code=500, detail=str(e))
 
 @app.post("/api/training/start")
-async def start_training():
-    global _is_training, _training_progress
+async def start_training(background_tasks: BackgroundTasks):
+    global _is_training
     
     if _is_training:
-        raise HTTPException(status_code=400, detail="Eğitim zaten devam ediyor")
+        raise HTTPException(status_code=400, detail="Egitim zaten devam ediyor")
     
-    _is_training = True
-    _training_progress = 0
+    if not ML_AVAILABLE:
+        raise HTTPException(status_code=400, detail="ML kutuphaneleri yuklu degil")
     
-    # Simüle edilmiş eğitim
-    def train():
-        global _is_training, _training_progress
-        for i in range(10):
-            time.sleep(1)
-            _training_progress = (i + 1) * 10
-        _is_training = False
+    # Arka planda egit
+    background_tasks.add_task(load_historical_data_and_train)
     
-    threading.Thread(target=train, daemon=True).start()
-    
-    return {"success": True, "message": "Eğitim başlatıldı"}
+    return {"success": True, "message": "Egitim baslatildi"}
 
 @app.get("/api/training/status")
 async def get_training_status():
     return {
         "is_training": _is_training,
-        "progress": _training_progress
+        "progress": _training_progress,
+        "model_accuracy": round(_model_accuracy, 2),
+        "ml_available": ML_AVAILABLE
     }
 
 # ----------------------------------------------------
-# Çalıştırma
+# Calistirma
 # ----------------------------------------------------
 if __name__ == "__main__":
     import uvicorn
     
     ensure_data_dir()
     
-    # İlk veri çekme
+    # Ilk veri cekme
     try:
-        logger.info("🔄 İlk veri çekme başlatılıyor...")
+        logger.info("Ilk veri cekme baslatiyor...")
         initial_matches = fetch_future_matches(DAYS_AHEAD)
-        initial_predictions = generate_predictions(initial_matches)
         
         with _cache_lock:
             _cached_matches = initial_matches
-            _cached_predictions = initial_predictions
             
         save_to_disk(initial_matches, MATCHES_FILE)
-        save_to_disk(initial_predictions, PREDICTIONS_FILE)
-        logger.info("✅ İlk veri çekme tamamlandı")
+        logger.info("Ilk veri cekme tamamlandi")
         
     except Exception as e:
-        logger.error(f"❌ İlk veri çekme hatası: {e}")
+        logger.error(f"Ilk veri cekme hatasi: {e}")
+    
+    # ML egitimini baslat (arka planda)
+    training_thread = threading.Thread(target=load_historical_data_and_train, daemon=True)
+    training_thread.start()
     
     port = int(os.environ.get("PORT", 8000))
     uvicorn.run(app, host="0.0.0.0", port=port, log_level="info")
