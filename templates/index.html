@@ -444,44 +444,6 @@
             color: #00b894;
         }
 
-        .pagination {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            margin-top: 20px;
-            padding: 15px;
-        }
-
-        .page-btn {
-            padding: 8px 16px;
-            border: none;
-            border-radius: 6px;
-            background: rgba(255, 255, 255, 0.08);
-            color: #fff;
-            cursor: pointer;
-            transition: all 0.3s;
-        }
-
-        .page-btn:hover {
-            background: rgba(255, 215, 0, 0.2);
-        }
-
-        .page-btn.active {
-            background: linear-gradient(135deg, #ffd700, #ff9800);
-            color: #000;
-        }
-
-        .page-btn:disabled {
-            opacity: 0.5;
-            cursor: not-allowed;
-        }
-
-        .page-info {
-            color: #cfd8dc;
-            font-size: 0.9rem;
-        }
-
         .error-container {
             text-align: center;
             padding: 40px;
@@ -528,17 +490,6 @@
             }
         }
 
-        @keyframes slideIn {
-            from {
-                transform: translateX(100%);
-                opacity: 0;
-            }
-            to {
-                transform: translateX(0);
-                opacity: 1;
-            }
-        }
-
         @media (max-width: 1024px) {
             .container {
                 grid-template-columns: 1fr;
@@ -561,49 +512,6 @@
             }
             .away-team {
                 font-size: 0.8rem;
-            }
-            .controls {
-                flex-direction: column;
-            }
-            .match-info {
-                min-width: 150px;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .header h1 {
-                font-size: 2rem;
-            }
-            .stats-container {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            .container {
-                padding: 0 15px;
-            }
-            table {
-                min-width: 500px;
-            }
-            .match-time {
-                font-size: 0.75rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .header {
-                padding: 20px 15px;
-            }
-            .header h1 {
-                font-size: 1.5rem;
-            }
-            .stats-container {
-                grid-template-columns: 1fr;
-            }
-            .controls {
-                gap: 8px;
-            }
-            .filter-btn, .sort-btn, .action-btn {
-                padding: 8px 12px;
-                font-size: 0.85rem;
             }
         }
     </style>
@@ -703,12 +611,6 @@
                 <div id="content-area" class="loading">
                     <div class="loading-spinner"></div>AI tahmin motoru baslatiliyor...
                 </div>
-                
-                <div id="pagination" class="pagination" style="display:none;">
-                    <button class="page-btn" onclick="changePage(-1)" id="prev-btn">Onceki</button>
-                    <span class="page-info" id="page-info">Sayfa 1 / 1</span>
-                    <button class="page-btn" onclick="changePage(1)" id="next-btn">Sonraki</button>
-                </div>
             </div>
         </main>
     </div>
@@ -719,26 +621,22 @@
         let currentFilter = 'all';
         let currentSort = 'confidence';
         let selectedLeague = 'all';
-        let currentPage = 1;
-        const matchesPerPage = 20;
-        const API_BASE_URL = window.location.origin;
+        
+        // DÜZELTME: Railway backend URL'sini kullan
+        const API_BASE_URL = 'https://predicta-production.up.railway.app';
 
-               const countryTeams = {
-            "Turkiye": ["Fenerbahce", "Galatasaray", "Besiktas", "Trabzonspor", "Basaksehir", "Sivasspor", "Alanyaspor", "Kayserispor", "Gencelerbirligi", "Ankaragucu", "Konyaspor", "Kasimpasa", "Hatayspor", "Giresunspor", "Umraniyespor", "Istanbulspor", "Gaziantep", "Adana Demirspor", "Antalyaspor", "Fatih Karagumruk", "Pendikspor", "Samsunspor", "Caykur Rizespor", "Eyupspor", "Bodrum", "Goztepe", "Sakaryaspor", "Kocaelispor", "Boluspor", "Erzurumspor", "Keciorengucu", "Bandirmaspor", "Manisa", "Umraniye", "Tuzlaspor", "Ankaragucu", "Altay", "Giresun", "Gencelerbirligi", "Menemen", "Sanliurfaspor"],
+        const countryTeams = {
+            "Turkiye": ["Fenerbahce", "Galatasaray", "Besiktas", "Trabzonspor", "Basaksehir", "Sivasspor", "Alanyaspor", "Kayserispor", "Gencelerbirligi", "Ankaragucu", "Konyaspor", "Kasimpasa", "Hatayspor", "Giresunspor", "Umraniyespor", "Istanbulspor", "Gaziantep", "Adana Demirspor", "Antalyaspor", "Fatih Karagumruk", "Pendikspor", "Samsunspor", "Caykur Rizespor", "Eyupspor", "Bodrum", "Goztepe"],
             
-            "Ingiltere": ["Arsenal", "Chelsea", "Liverpool", "Manchester City", "Manchester United", "Tottenham", "Newcastle", "Brighton", "West Ham", "Aston Villa", "Crystal Palace", "Fulham", "Bournemouth", "Wolves", "Brentford", "Nottingham Forest", "Everton", "Leicester", "Ipswich", "Southampton", "Leeds", "Sheffield United", "Burnley", "Luton", "Middlesbrough", "Coventry", "Norwich", "Watford", "Millwall", "Bristol City", "QPR", "Preston", "Swansea", "Blackburn", "Hull", "Stoke", "Cardiff", "Plymouth", "Sheffield Wednesday", "Derby", "Portsmouth", "Oxford United", "Sunderland", "West Brom"],
+            "Ingiltere": ["Arsenal", "Chelsea", "Liverpool", "Manchester City", "Manchester United", "Tottenham", "Newcastle", "Brighton", "West Ham", "Aston Villa", "Crystal Palace", "Fulham", "Bournemouth", "Wolves", "Brentford", "Nottingham Forest", "Everton", "Leicester", "Ipswich", "Southampton", "Leeds", "Sheffield United", "Burnley"],
             
-            "Italya": ["Juventus", "Inter", "Milan", "Napoli", "Roma", "Lazio", "Atalanta", "Fiorentina", "Torino", "Bologna", "Monza", "Udinese", "Empoli", "Lecce", "Genoa", "Cagliari", "Verona", "Parma", "Como", "Venezia", "Sassuolo", "Salernitana", "Frosinone", "Brescia", "Palermo", "Cremonese", "Sampdoria", "Catanzaro", "Reggiana", "Spezia", "Pisa", "Bari", "Modena", "Cittadella", "Cosenza", "Juve Stabia", "Mantova", "Cesena", "Sudtirol", "Carrarese"],
+            "Italya": ["Juventus", "Inter", "Milan", "Napoli", "Roma", "Lazio", "Atalanta", "Fiorentina", "Torino", "Bologna", "Monza", "Udinese", "Empoli", "Lecce", "Genoa", "Cagliari", "Verona", "Parma"],
             
-            "Ispanya": ["Real Madrid", "Barcelona", "Atletico Madrid", "Sevilla", "Valencia", "Villarreal", "Real Betis", "Athletic Bilbao", "Real Sociedad", "Celta Vigo", "Mallorca", "Osasuna", "Getafe", "Rayo Vallecano", "Las Palmas", "Girona", "Alaves", "Leganes", "Valladolid", "Espanyol", "Granada", "Almeria", "Cadiz", "Elche", "Levante", "Eibar", "Sporting Gijon", "Real Zaragoza", "Racing Santander", "Real Oviedo", "Malaga", "Tenerife", "Huesca", "Burgos", "Cartagena", "Eldense", "Mirandes", "Racing Ferrol", "Albacete", "Castellon", "Cordoba", "Deportivo"],
+            "Ispanya": ["Real Madrid", "Barcelona", "Atletico Madrid", "Sevilla", "Valencia", "Villarreal", "Real Betis", "Athletic Bilbao", "Real Sociedad", "Celta Vigo", "Mallorca", "Osasuna", "Getafe"],
             
-            "Almanya": ["Bayern Munich", "Borussia Dortmund", "RB Leipzig", "Bayer Leverkusen", "Union Berlin", "Freiburg", "Eintracht Frankfurt", "Wolfsburg", "Borussia Monchengladbach", "Mainz", "Stuttgart", "Hoffenheim", "Augsburg", "Werder Bremen", "Bochum", "Heidenheim", "St. Pauli", "Holstein Kiel", "Cologne", "Hamburg", "Hertha Berlin", "Fortuna Dusseldorf", "Schalke", "Hannover", "Paderborn", "Kaiserslautern", "Magdeburg", "Nurnberg", "Karlsruhe", "Braunschweig", "Elversberg", "Greuther Furth", "Darmstadt", "Regensburg", "Ulm", "Preussen Munster"],
+            "Almanya": ["Bayern Munich", "Borussia Dortmund", "RB Leipzig", "Bayer Leverkusen", "Union Berlin", "Freiburg", "Eintracht Frankfurt", "Wolfsburg", "Borussia Monchengladbach"],
             
-            "Fransa": ["Paris Saint-Germain", "Marseille", "Monaco", "Lyon", "Lille", "Nice", "Lens", "Rennes", "Reims", "Strasbourg", "Brest", "Toulouse", "Nantes", "Montpellier", "Auxerre", "Angers", "Le Havre", "Saint-Etienne", "Paris FC", "Lorient", "Metz", "Troyes", "Clermont Foot", "Ajaccio", "Bastia", "Dunkerque", "Guingamp", "Laval", "Grenoble", "Amiens", "Rodez", "Pau", "Caen", "Martigues", "Red Star", "Valenciennes"],
-            
-            "Hollanda": ["Ajax", "PSV", "Feyenoord", "AZ Alkmaar", "Twente", "Utrecht", "Vitesse", "Heerenveen", "Groningen", "Sparta Rotterdam", "Fortuna Sittard", "Heracles", "PEC Zwolle", "RKC Waalwijk", "Go Ahead Eagles", "Almere City", "Willem II", "NAC Breda", "Excelsior", "Cambuur", "Volendam", "Den Bosch", "Dordrecht", "Telstar", "Emmen", "MVV", "Jong Ajax", "Jong PSV", "Jong Utrecht", "De Graafschap", "Roda JC", "ADO Den Haag", "Helmond Sport", "TOP Oss", "VVV-Venlo", "Maastricht"],
-            
-            "Portekiz": ["Benfica", "Porto", "Sporting CP", "Braga", "Vitoria Guimaraes", "Casa Pia", "Estoril", "Boavista", "Famalicao", "Rio Ave", "Santa Clara", "Arouca", "Gil Vicente", "Estrela", "Farense", "Moreirense", "Nacional", "AVS", "Vizela", "Chaves", "Portimonense", "Maritimo", "Pacos de Ferreira", "Tondela", "Academico Viseu", "Felgueiras", "Leixoes", "Penafiel", "Mafra", "Feirense", "Benfica B", "Porto B", "Alverca", "Torreense", "Oliveira", "Uniao de Leiria"]
+            "Fransa": ["Paris Saint-Germain", "Marseille", "Monaco", "Lyon", "Lille", "Nice", "Lens", "Rennes", "Reims", "Strasbourg"]
         };
 
         function detectCountryByTeamNames(homeTeam, awayTeam) {
@@ -759,25 +657,6 @@
             return "Diger Ulkeler";
         }
 
-        function formatDate(dateString) {
-            if (!dateString || dateString === 'TBA') return 'TBA';
-            
-            try {
-                const [year, month, day] = dateString.split('-');
-                if (year && month && day) {
-                    return `${day}/${month}`;
-                }
-                return dateString;
-            } catch (e) {
-                return dateString;
-            }
-        }
-
-        function formatTime(timeString) {
-            if (!timeString || timeString === '20:00') return timeString || '20:00';
-            return timeString;
-        }
-
         async function loadSystemStatus() {
             try {
                 const response = await fetch(`${API_BASE_URL}/api/system/health`);
@@ -785,14 +664,37 @@
                 
                 document.getElementById('api-status').textContent = data.status === 'healthy' ? 'Cevrimici' : 'Cevrimdisi';
                 document.getElementById('api-status').className = data.status === 'healthy' ? 'status-value healthy' : 'status-value error';
-                document.getElementById('model-status').textContent = data.engine;
-                document.getElementById('cache-status').textContent = `${data.matches_cached} mac`;
+                document.getElementById('model-status').textContent = data.engine || 'Aktif';
+                document.getElementById('cache-status').textContent = `${data.matches_cached || 0} mac`;
                 document.getElementById('last-update').textContent = new Date().toLocaleTimeString('tr-TR');
                 
             } catch (error) {
                 console.error('Sistem durumu yuklenemedi:', error);
                 document.getElementById('api-status').textContent = 'Baglanti Yok';
                 document.getElementById('api-status').className = 'status-value error';
+            }
+        }
+
+        async function refreshData() {
+            const btn = document.getElementById('refresh-btn');
+            btn.disabled = true;
+            btn.textContent = 'Yenileniyor...';
+            
+            try {
+                const response = await fetch(`${API_BASE_URL}/api/matches/refresh`, { method: 'POST' });
+                const data = await response.json();
+                
+                if (data.success) {
+                    alert('Veriler basariyla yenilendi!');
+                    loadMatches();
+                    loadSystemStatus();
+                }
+            } catch (error) {
+                console.error('Veri yenileme hatasi:', error);
+                alert('Veri yenileme basarisiz. Lutfen tekrar deneyin.');
+            } finally {
+                btn.disabled = false;
+                btn.textContent = 'Verileri Yenile';
             }
         }
 
@@ -806,11 +708,11 @@
                 const data = await response.json();
                 
                 if (data.success) {
-                    showTrainingProgress();
+                    alert('Model egitimi baslatildi!');
                 }
             } catch (error) {
                 console.error('Egitim baslatilamadi:', error);
-                showError('Egitim baslatilamadi', 'Sunucuyla baglanti kurulamadi. Lutfen internet baglantinizi kontrol edin.');
+                alert('Egitim baslatilamadi.');
             } finally {
                 setTimeout(() => {
                     btn.disabled = false;
@@ -819,94 +721,13 @@
             }
         }
 
-        function showTrainingProgress() {
-            const statusDiv = document.getElementById('training-status');
-            statusDiv.style.display = 'block';
-            statusDiv.className = 'training-status';
-            
-            const checkProgress = async () => {
-                try {
-                    const response = await fetch(`${API_BASE_URL}/api/training/status`);
-                    const data = await response.json();
-                    
-                    document.getElementById('training-progress-text').textContent = `${data.progress}%`;
-                    document.getElementById('progress-fill').style.width = `${data.progress}%`;
-                    document.getElementById('training-message').textContent = data.progress < 100 ? 'Model egitiliyor...' : 'Egitim tamamlandi!';
-                    
-                    if (!data.is_training && data.progress === 100) {
-                        statusDiv.className = 'training-status training-complete';
-                        setTimeout(() => {
-                            statusDiv.style.display = 'none';
-                            loadMatches();
-                        }, 3000);
-                    } else if (data.is_training) {
-                        setTimeout(checkProgress, 2000);
-                    }
-                } catch (error) {
-                    console.error('Egitim durumu kontrol edilemedi:', error);
-                }
-            };
-            
-            checkProgress();
-        }
-
-        async function refreshData() {
-            const btn = document.getElementById('refresh-btn');
-            btn.disabled = true;
-            btn.textContent = 'Yenileniyor...';
-            
-            try {
-                const response = await fetch(`${API_BASE_URL}/api/matches/refresh`, { method: 'POST' });
-                const data = await response.json();
-                
-                if (data.success) {
-                    showSuccess('Veriler basariyla yenilendi!');
-                    loadMatches();
-                    loadSystemStatus();
-                }
-            } catch (error) {
-                console.error('Veri yenileme hatasi:', error);
-                showError('Veri yenileme basarisiz', 'Sunucuya baglanilamiyor. Lutfen daha sonra tekrar deneyin.');
-            } finally {
-                btn.disabled = false;
-                btn.textContent = 'Verileri Yenile';
-            }
-        }
-
-        function showSuccess(message) {
-            const existingAlert = document.querySelector('.success-alert');
-            if (existingAlert) existingAlert.remove();
-            
-            const alert = document.createElement('div');
-            alert.className = 'success-alert';
-            alert.style.cssText = `
-                position: fixed;
-                top: 20px;
-                right: 20px;
-                background: linear-gradient(135deg, #00b894, #55efc4);
-                color: #000;
-                padding: 15px 20px;
-                border-radius: 8px;
-                font-weight: bold;
-                z-index: 1000;
-                animation: slideIn 0.3s ease;
-            `;
-            alert.textContent = message;
-            
-            document.body.appendChild(alert);
-            
-            setTimeout(() => {
-                alert.remove();
-            }, 3000);
-        }
-
         async function loadMatches() {
             try {
                 showLoading();
                 const response = await fetch(`${API_BASE_URL}/api/predictions/upcoming?limit=1000`);
                 
                 if (!response.ok) {
-                    throw new Error(`Sunucu hatasi: ${response.status} ${response.statusText}`);
+                    throw new Error(`Sunucu hatasi: ${response.status}`);
                 }
                 
                 const data = await response.json();
@@ -919,22 +740,14 @@
                     
                     buildCountryList();
                     updateStats();
-                    currentPage = 1;
                     applyFiltersAndSort();
                     loadSystemStatus();
                 } else {
-                    throw new Error('API yaniti beklenen formatta degil');
+                    throw new Error('Veri alinamadi');
                 }
             } catch (err) {
                 console.error('Mac yukleme hatasi:', err);
-                
-                if (err.message.includes('Failed to fetch')) {
-                    showError('Baglanti Hatasi', 'Sunucuya baglanilamiyor. Lutfen internet baglantinizi kontrol edin.');
-                } else if (err.message.includes('Sunucu hatasi')) {
-                    showError('Sunucu Hatasi', 'Sunucu gecici olarak hizmet veremiyor. Lutfen daha sonra tekrar deneyin.');
-                } else {
-                    showError('Veri Yukleme Hatasi', err.message);
-                }
+                showError('Sunucu Hatasi', 'Maclar yuklenemiyor. Lutfen daha sonra tekrar deneyin.');
             }
         }
 
@@ -945,22 +758,12 @@
                 countryCounts[country] = (countryCounts[country] || 0) + 1;
             });
             
-            const priorityCountries = ["Turkiye", "Ingiltere", "Ispanya", "Italya", "Almanya", "Fransa", "Hollanda", "Portekiz"];
-            const sortedCountries = Object.keys(countryCounts).sort((a, b) => {
-                const aIndex = priorityCountries.indexOf(a);
-                const bIndex = priorityCountries.indexOf(b);
-                if (aIndex !== -1 && bIndex !== -1) return aIndex - bIndex;
-                if (aIndex !== -1) return -1;
-                if (bIndex !== -1) return 1;
-                return countryCounts[b] - countryCounts[a];
-            });
-            
             let html = `<div class="league-item ${selectedLeague === 'all' ? 'active' : ''}" onclick="selectLeague('all', event)">
-                            Tüm Ülkeler
+                            Tum Ulkeler
                             <span class="league-count">${allPredictions.length}</span>
                         </div>`;
             
-            sortedCountries.forEach(country => {
+            Object.keys(countryCounts).sort().forEach(country => {
                 html += `<div class="league-item ${selectedLeague === country ? 'active' : ''}" onclick="selectLeague('${country}', event)">
                             ${country}
                             <span class="league-count">${countryCounts[country]}</span>
@@ -974,7 +777,6 @@
             selectedLeague = String(league);
             document.querySelectorAll('.league-item').forEach(x => x.classList.remove('active'));
             event.currentTarget.classList.add('active');
-            currentPage = 1;
             applyFiltersAndSort();
         }
 
@@ -982,7 +784,6 @@
             currentFilter = filter;
             document.querySelectorAll('.filter-btn').forEach(x => x.classList.remove('active'));
             event.currentTarget.classList.add('active');
-            currentPage = 1;
             applyFiltersAndSort();
         }
 
@@ -996,8 +797,6 @@
         function normalizeConfidence(c) { 
             return c <= 1 ? c * 100 : c; 
         }
-
-        let currentFilteredMatches = [];
 
         function applyFiltersAndSort() {
             let filtered = [...allPredictions];
@@ -1041,16 +840,6 @@
             displayMatches(filtered);
         }
 
-        function changePage(direction) {
-            const totalPages = Math.ceil(currentFilteredMatches.length / matchesPerPage);
-            currentPage += direction;
-            
-            if (currentPage < 1) currentPage = 1;
-            if (currentPage > totalPages) currentPage = totalPages;
-            
-            displayMatches(currentFilteredMatches);
-        }
-
         function updateStats(filtered = allPredictions) {
             document.getElementById('total-matches').textContent = filtered.length;
             
@@ -1066,50 +855,21 @@
 
         function displayMatches(matches) {
             const area = document.getElementById('content-area');
-            const pagination = document.getElementById('pagination');
-            
-            currentFilteredMatches = matches;
             
             if (matches.length === 0) { 
-                area.innerHTML = '<div class="loading">Bu ulke/filtre için mac bulunamadi</div>'; 
-                pagination.style.display = 'none';
+                area.innerHTML = '<div class="loading">Bu ulke/filtre icin mac bulunamadi</div>'; 
                 return; 
             }
 
-            const totalPages = Math.ceil(matches.length / matchesPerPage);
-            const startIndex = (currentPage - 1) * matchesPerPage;
-            const endIndex = startIndex + matchesPerPage;
-            const paginatedMatches = matches.slice(startIndex, endIndex);
-
-            document.getElementById('page-info').textContent = `Sayfa ${currentPage} / ${totalPages}`;
-            document.getElementById('prev-btn').disabled = currentPage === 1;
-            document.getElementById('next-btn').disabled = currentPage === totalPages;
-            
-            if (totalPages > 1) {
-                pagination.style.display = 'flex';
-            } else {
-                pagination.style.display = 'none';
-            }
-
             const grouped = {};
-            paginatedMatches.forEach(m => {
+            matches.forEach(m => {
                 const country = m.country || "Diger Ulkeler";
                 if (!grouped[country]) grouped[country] = [];
                 grouped[country].push(m);
             });
 
-            const priorityCountries = ["Turkiye", "Ingiltere", "Ispanya", "Italya", "Almanya", "Fransa", "Hollanda", "Portekiz"];
-            const sortedCountries = Object.keys(grouped).sort((a, b) => {
-                const aIndex = priorityCountries.indexOf(a);
-                const bIndex = priorityCountries.indexOf(b);
-                if (aIndex !== -1 && bIndex !== -1) return aIndex - bIndex;
-                if (aIndex !== -1) return -1;
-                if (bIndex !== -1) return 1;
-                return a.localeCompare(b);
-            });
-
             let html = '';
-            sortedCountries.forEach(country => {
+            Object.keys(grouped).sort().forEach(country => {
                 const maclar = grouped[country];
                 
                 html += `<div class="league-section">
@@ -1122,7 +882,7 @@
                                     <thead>
                                         <tr>
                                             <th>Tarih/Saat</th>
-                                            <th>Mac & Tahmin</th>
+                                            <th>Mac</th>
                                             <th>1</th>
                                             <th>X</th>
                                             <th>2</th>
@@ -1133,59 +893,41 @@
                 
                 maclar.forEach(m => {
                     const p = m.ai_prediction || {};
-                    const result = p.prediction || 'X';
+                    const result = p.prediction || p.predicted_result || 'X';
                     const confidence = normalizeConfidence(p.confidence || 0);
                     const odds1 = m.odds?.['1'] || 2.0;
                     const oddsX = m.odds?.X || 3.0;
                     const odds2 = m.odds?.['2'] || 3.5;
-                    const valueBet = p.value_bet || {};
-                    const riskLevel = p.risk_level || 'MEDIUM';
                     
                     let confidenceClass = 'confidence-low';
                     if (confidence >= 70) confidenceClass = 'confidence-high';
                     else if (confidence >= 55) confidenceClass = 'confidence-medium';
                     
-                    let riskClass = 'risk-medium';
-                    if (riskLevel === 'LOW') riskClass = 'risk-low';
-                    else if (riskLevel === 'HIGH') riskClass = 'risk-high';
+                    const dateStr = m.date ? m.date.split('-').slice(1).reverse().join('/') : 'TBA';
+                    const timeStr = m.time || '20:00';
                     
                     html += `<tr>
                                <td class="match-time">
-                                 ${formatDate(m.date)}<br>${formatTime(m.time)}
+                                 ${dateStr}<br>${timeStr}
                                </td>
                                <td class="match-info">
                                  <div class="home-team">${m.home_team}</div>
                                  <div class="away-team">${m.away_team}</div>
-                                 <div class="prediction-details">
-                                   <span class="${riskClass}">${p.recommendation || 'CONSIDER'}</span>
-                                   ${valueBet.rating === 'EXCELLENT' || valueBet.rating === 'GOOD' ? 
-                                     '<span class="value-bet-badge">Deger</span>' : ''}
-                                 </div>
                                </td>
                                <td class="odds-cell">
-                                 <div class="odds-box ${result === '1' ? 'predicted' : ''}">
-                                   ${odds1.toFixed(2)}
-                                   ${valueBet.rating === 'EXCELLENT' && result === '1' ? '<div class="value-bet-badge">Deger</div>' : ''}
-                                 </div>
+                                 <div class="odds-box ${result === '1' ? 'predicted' : ''}">${odds1.toFixed(2)}</div>
                                </td>
                                <td class="odds-cell">
-                                 <div class="odds-box ${result === 'X' ? 'predicted' : ''}">
-                                   ${oddsX.toFixed(2)}
-                                   ${valueBet.rating === 'EXCELLENT' && result === 'X' ? '<div class="value-bet-badge">Deger</div>' : ''}
-                                 </div>
+                                 <div class="odds-box ${result === 'X' ? 'predicted' : ''}">${oddsX.toFixed(2)}</div>
                                </td>
                                <td class="odds-cell">
-                                 <div class="odds-box ${result === '2' ? 'predicted' : ''}">
-                                   ${odds2.toFixed(2)}
-                                   ${valueBet.rating === 'EXCELLENT' && result === '2' ? '<div class="value-bet-badge">Deger</div>' : ''}
-                                 </div>
+                                 <div class="odds-box ${result === '2' ? 'predicted' : ''}">${odds2.toFixed(2)}</div>
                                </td>
                                <td style="text-align:center;">
                                  <div style="font-weight:bold;color:#ffd700;">%${confidence.toFixed(1)}</div>
                                  <div class="confidence-bar">
                                    <div class="confidence-fill ${confidenceClass}" style="width: ${confidence}%"></div>
                                  </div>
-                                 <div class="prediction-details">${p.score_prediction || '1-1'}</div>
                                </td>
                              </tr>`;
                 });
@@ -1205,32 +947,18 @@
                     <button class="action-btn refresh" onclick="loadMatches()">Tekrar Dene</button>
                 </div>
             `;
-            document.getElementById('pagination').style.display = 'none';
         }
 
         function showLoading() { 
             const area = document.getElementById('content-area');
             area.innerHTML = '<div class="loading"><div class="loading-spinner"></div>AI tahminleri yukleniyor...</div>'; 
-            document.getElementById('pagination').style.display = 'none';
         }
 
         window.addEventListener('load', () => { 
             loadSystemStatus();
             loadMatches();
-            
             setInterval(loadMatches, 300000);
             setInterval(loadSystemStatus, 60000);
-            
-            setTimeout(() => {
-                fetch(`${API_BASE_URL}/api/training/status`)
-                    .then(response => response.json())
-                    .then(data => {
-                        if (data.is_training) {
-                            showTrainingProgress();
-                        }
-                    })
-                    .catch(console.error);
-            }, 2000);
         });
     </script>
 </body>
