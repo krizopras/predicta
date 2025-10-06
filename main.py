@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-PREDICTA AI v6.1 - ML ENTEGRE TAHMIN SISTEMI
+PREDICTA AI v6.2 - ML ENTEGRE TAHMIN SISTEMI
 Nesine'den canli maclari ceker, gecmis verilerle ML modelini egitir ve tahmin uretir
 """
 
@@ -14,7 +14,6 @@ from datetime import datetime, timedelta
 from typing import List, Dict, Any, Optional
 import requests
 from contextlib import asynccontextmanager
-from fastapi import FastAPI
 from fastapi import FastAPI, HTTPException, BackgroundTasks
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -25,13 +24,17 @@ try:
     from ml_prediction_engine import MLPredictionEngine
     PREDICTOR_CLASS = MLPredictionEngine
     ML_AVAILABLE = True
-except ImportError:
+    logger.info("ML Prediction Engine başarıyla yüklendi")
+except ImportError as e:
+    logger.warning(f"ML Prediction Engine yüklenemedi: {e}")
     ML_AVAILABLE = False
     # Fallback: Basit tahmin motoru
     try:
         from improved_prediction_engine import ImprovedPredictionEngine
         PREDICTOR_CLASS = ImprovedPredictionEngine
-    except ImportError:
+        logger.info("Improved Prediction Engine yüklendi")
+    except ImportError as e:
+        logger.warning(f"Improved Prediction Engine yüklenemedi: {e}")
         class BasicPredictor:
             def predict_match(self, home_team, away_team, odds, league="default"):
                 import random
@@ -43,6 +46,7 @@ except ImportError:
                     "model": "Basic Random"
                 }
         PREDICTOR_CLASS = BasicPredictor
+        logger.info("Basic Predictor kullanılıyor")
 
 # ----------------------------------------------------
 # Global Ayarlar
@@ -61,16 +65,46 @@ API_ENDPOINT = "https://cdnbulten.nesine.com/api/bulten/getprebultenfull"
 # ----------------------------------------------------
 logging.basicConfig(
     level=logging.INFO,
-    format="%(asctime)s - %(levelname)s - %(message)s"
+    format="%(asctime)s - %(levelname)s - %(message)s",
+    handlers=[
+        logging.StreamHandler(),
+        logging.FileHandler(os.path.join(DATA_DIR, "predicta_ai.log"), encoding='utf-8')
+    ]
 )
 logger = logging.getLogger("predicta-ml")
 
 # ----------------------------------------------------
 # FastAPI App
 # ----------------------------------------------------
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # Startup
+    ensure_data_dir()
+    
+    # Diskten yükle
+    global _cached_matches, _cached_predictions
+    _cached_matches = load_from_disk(MATCHES_FILE)
+    _cached_predictions = load_from_disk(PREDICTIONS_FILE)
+    
+    # ML modelini eğit (arka planda)
+    training_thread = threading.Thread(target=load_historical_data_and_train, daemon=True)
+    training_thread.start()
+    
+    # Arka plan yenileme thread'i başlat
+    refresh_thread = threading.Thread(target=background_refresh, daemon=True)
+    refresh_thread.start()
+    
+    logger.info("PREDICTA AI v6.2 (ML) başlatıldı!")
+    
+    yield  # App çalışıyor
+    
+    # Shutdown
+    logger.info("PREDICTA AI kapatılıyor...")
+
 app = FastAPI(
-    title="PREDICTA AI v6.1 - ML Entegre Tahmin Sistemi",
-    version="6.1"
+    title="PREDICTA AI v6.2 - ML Entegre Tahmin Sistemi",
+    version="6.2",
+    lifespan=lifespan
 )
 
 app.add_middleware(
@@ -89,6 +123,7 @@ _cache_lock = threading.Lock()
 _is_training = False
 _training_progress = 0
 _model_accuracy = 0.0
+_last_refresh = None
 
 predictor = None
 
@@ -96,35 +131,43 @@ predictor = None
 # Yardimci Fonksiyonlar
 # ----------------------------------------------------
 
-# main.py'de ensure_data_dir fonksiyonunu güncelleyin
 def ensure_data_dir():
+    """Veri dizinlerini oluştur"""
     try:
         os.makedirs(os.path.join(DATA_DIR, "processed"), exist_ok=True)
-    except FileExistsError:
-        # Dizin zaten varsa sorun değil
-        pass
+        os.makedirs(os.path.join(DATA_DIR, "raw"), exist_ok=True)
+        os.makedirs(os.path.join(DATA_DIR, "logs"), exist_ok=True)
+        logger.info("Veri dizinleri oluşturuldu/doğrulandı")
     except Exception as e:
-        print(f"Directory creation error: {e}")
+        logger.error(f"Dizin oluşturma hatası: {e}")
+
 def save_to_disk(data: List[Dict[str, Any]], filename: str):
+    """Veriyi diske kaydet"""
     ensure_data_dir()
     try:
         with open(filename, "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
-        logger.info(f"Kaydedildi: {len(data)} kayit -> {filename}")
+        logger.info(f"Kaydedildi: {len(data)} kayıt -> {filename}")
+        return True
     except Exception as e:
-        logger.error(f"Kaydetme hatasi: {e}")
+        logger.error(f"Kaydetme hatası {filename}: {e}")
+        return False
 
 def load_from_disk(filename: str) -> List[Dict[str, Any]]:
+    """Diskten veri yükle"""
     if not os.path.exists(filename):
         return []
     try:
         with open(filename, "r", encoding="utf-8") as f:
-            return json.load(f)
+            data = json.load(f)
+        logger.info(f"Yüklendi: {len(data)} kayıt <- {filename}")
+        return data
     except Exception as e:
-        logger.error(f"Yukleme hatasi: {e}")
+        logger.error(f"Yükleme hatası {filename}: {e}")
         return []
 
 def parse_nesine_json(data: Dict[str, Any]) -> List[Dict[str, Any]]:
+    """Nesine JSON verisini ayrıştır"""
     matches = []
     if not isinstance(data, dict):
         return matches
@@ -141,34 +184,47 @@ def parse_nesine_json(data: Dict[str, Any]) -> List[Dict[str, Any]]:
         if not home or not away:
             continue
             
-        # Oranlari bul
+        # Oranları bul
         odds = {"1": 2.0, "X": 3.0, "2": 3.5}
         for bahis in m.get("MA", []):
-            if bahis.get("MTID") == 1:  # Mac Sonucu
+            if bahis.get("MTID") == 1:  # Maç Sonucu
                 oranlar = bahis.get("OCA", [])
                 if len(oranlar) >= 3:
                     try:
                         odds["1"] = float(oranlar[0].get("O", 2.0))
                         odds["X"] = float(oranlar[1].get("O", 3.0))
                         odds["2"] = float(oranlar[2].get("O", 3.5))
-                    except:
-                        pass
+                    except (ValueError, TypeError) as e:
+                        logger.debug(f"Oran dönüşüm hatası: {e}")
                 break
+                
+        match_date = m.get("D", datetime.now().strftime("%Y-%m-%d"))
+        match_time = m.get("T", "20:00")
+        
+        # Tarih kontrolü (geçmiş maçları filtrele)
+        try:
+            match_datetime = datetime.strptime(f"{match_date} {match_time}", "%Y-%m-%d %H:%M")
+            if match_datetime < datetime.now() - timedelta(hours=5):  # 5 saat öncesine kadar
+                continue
+        except ValueError:
+            pass
                 
         matches.append({
             "home_team": home,
             "away_team": away,
             "league": m.get("LC", "Bilinmeyen"),
             "match_id": m.get("C", ""),
-            "date": m.get("D", datetime.now().strftime("%Y-%m-%d")),
-            "time": m.get("T", "20:00"),
+            "date": match_date,
+            "time": match_time,
             "odds": odds,
-            "is_live": False
+            "is_live": False,
+            "timestamp": datetime.now().isoformat()
         })
         
     return matches
 
 def fetch_future_matches(days_ahead: int = DAYS_AHEAD) -> List[Dict[str, Any]]:
+    """Gelecek maçları getir"""
     all_matches = []
     s = requests.Session()
     headers = {"User-Agent": USER_AGENT, "Accept": "application/json"}
@@ -178,16 +234,18 @@ def fetch_future_matches(days_ahead: int = DAYS_AHEAD) -> List[Dict[str, Any]]:
         url = f"{API_ENDPOINT}?date={date}"
         
         try:
-            r = s.get(url, headers=headers, timeout=20)
+            r = s.get(url, headers=headers, timeout=30)
             if r.status_code == 200:
                 data = r.json()
                 parsed = parse_nesine_json(data)
                 all_matches.extend(parsed)
-                logger.info(f"{date}: {len(parsed)} mac")
+                logger.info(f"{date}: {len(parsed)} maç")
             else:
                 logger.warning(f"{url} -> {r.status_code}")
+        except requests.exceptions.Timeout:
+            logger.warning(f"{url} zaman aşımı")
         except Exception as e:
-            logger.warning(f"{url} baglanti hatasi: {e}")
+            logger.warning(f"{url} bağlantı hatası: {e}")
             continue
             
     # Duplicate filtreleme
@@ -200,19 +258,21 @@ def fetch_future_matches(days_ahead: int = DAYS_AHEAD) -> List[Dict[str, Any]]:
             unique_matches.append(m)
             
     unique_matches.sort(key=lambda x: (x["date"], x["time"]))
-    logger.info(f"Toplam {len(unique_matches)} oynanmamis mac bulundu")
+    logger.info(f"Toplam {len(unique_matches)} oynanmamış maç bulundu")
     return unique_matches
 
 def generate_predictions(matches: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    """Tahminleri oluştur"""
     global predictor
     
     if predictor is None:
-        logger.warning("Tahmin motoru hazir degil, baslatiliyor...")
+        logger.warning("Tahmin motoru hazır değil, basit tahmin kullanılıyor...")
         predictor = PREDICTOR_CLASS()
     
     predictions = []
+    successful_predictions = 0
     
-    for match in matches:
+    for i, match in enumerate(matches):
         try:
             prediction = predictor.predict_match(
                 match["home_team"],
@@ -223,24 +283,39 @@ def generate_predictions(matches: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
             
             enhanced_match = match.copy()
             enhanced_match["ai_prediction"] = prediction
+            enhanced_match["prediction_timestamp"] = datetime.now().isoformat()
             predictions.append(enhanced_match)
+            successful_predictions += 1
             
+            # İlerleme günlüğü
+            if (i + 1) % 10 == 0:
+                logger.info(f"Tahmin {i+1}/{len(matches)} tamamlandı")
+                
         except Exception as e:
-            logger.error(f"Tahmin hatasi {match['home_team']} vs {match['away_team']}: {e}")
+            logger.error(f"Tahmin hatası {match['home_team']} vs {match['away_team']}: {e}")
+            # Hata durumunda maçı tahminsiz ekle
+            match["ai_prediction"] = {
+                "prediction": "U",
+                "confidence": 0,
+                "probabilities": {"home_win": 0, "draw": 0, "away_win": 0},
+                "model": "Error",
+                "error": str(e)
+            }
+            predictions.append(match)
             
-    logger.info(f"{len(predictions)} mac icin tahmin uretildi")
+    logger.info(f"{successful_predictions}/{len(matches)} maç için tahmin üretildi")
     return predictions
 
 # ----------------------------------------------------
-# Gecmis Veri Yukleme ve Model Egitimi
+# Geçmiş Veri Yükleme ve Model Egitimi
 # ----------------------------------------------------
 def load_historical_data_and_train():
-    """Gecmis verileri yukle ve modeli egit"""
+    """Geçmiş verileri yükle ve modeli eğit"""
     global predictor, _is_training, _training_progress, _model_accuracy
     
     if not ML_AVAILABLE:
-        logger.warning("ML kutuphaneleri yuklu degil, temel tahmin kullanilacak")
-        logger.info("Kurulum: pip install scikit-learn xgboost")
+        logger.warning("ML kütüphaneleri yüklü değil, temel tahmin kullanılacak")
+        logger.info("Kurulum: pip install scikit-learn xgboost pandas numpy")
         predictor = PREDICTOR_CLASS()
         return
     
@@ -248,83 +323,95 @@ def load_historical_data_and_train():
         _is_training = True
         _training_progress = 10
         
-        logger.info("Gecmis veriler yukleniyor...")
+        logger.info("Geçmiş veriler yükleniyor...")
         
-        # TXTDataProcessor ile gecmis verileri yukle
+        historical_matches = []
+        
+        # TXTDataProcessor ile geçmiş verileri yükle
         try:
             from txt_data_processor import TXTDataProcessor
             import asyncio
             
-            processor = TXTDataProcessor(raw_data_path="data/raw")
-            
             _training_progress = 20
             
-            # Async fonksiyonu calistir
+            processor = TXTDataProcessor(raw_data_path="data/raw")
+            
+            # Async fonksiyonu çalıştır
             loop = asyncio.new_event_loop()
             asyncio.set_event_loop(loop)
             result = loop.run_until_complete(processor.process_all_countries())
             loop.close()
             
             historical_matches = result.get('matches', [])
-            logger.info(f"{len(historical_matches)} gecmis mac yuklendi")
+            logger.info(f"{len(historical_matches)} geçmiş maç yüklendi (TXTProcessor)")
             
             _training_progress = 40
             
-        except ImportError:
-            logger.warning("TXTDataProcessor bulunamadi, islenmis veriler deneniyor...")
+        except ImportError as e:
+            logger.warning(f"TXTDataProcessor bulunamadı: {e}, işlenmiş veriler deneniyor...")
             
-            # Islenmis verilerden yukle
+            # İşlenmiş verilerden yükle
             processed_file = os.path.join(DATA_DIR, "processed", "matches.json")
             if os.path.exists(processed_file):
                 with open(processed_file, 'r', encoding='utf-8') as f:
                     historical_matches = json.load(f)
-                logger.info(f"{len(historical_matches)} gecmis mac yuklendi (cache)")
+                logger.info(f"{len(historical_matches)} geçmiş maç yüklendi (cache)")
             else:
-                logger.warning("Gecmis veri bulunamadi")
+                logger.warning("Geçmiş veri bulunamadı")
                 historical_matches = []
             
             _training_progress = 40
         
-        # Model egitimi
+        # Model eğitimi
         if len(historical_matches) >= 100:
-            logger.info(f"Model egitimi basliyor... ({len(historical_matches)} mac)")
-            
-            ml_predictor = MLPredictionEngine()
+            logger.info(f"Model eğitimi başlıyor... ({len(historical_matches)} maç)")
             
             _training_progress = 50
             
+            ml_predictor = MLPredictionEngine()
             training_result = ml_predictor.train(historical_matches)
             
             _training_progress = 90
             
-            if training_result['success']:
+            if training_result.get('success', False):
                 predictor = ml_predictor
                 _model_accuracy = training_result.get('ensemble_accuracy', 0) * 100
-                logger.info(f"Model egitildi! Dogruluk: %{_model_accuracy:.2f}")
-                logger.info(f"Modeller: {training_result.get('accuracies', {})}")
+                logger.info(f"Model eğitildi! Doğruluk: %{_model_accuracy:.2f}")
+                
+                # Model detaylarını logla
+                accuracies = training_result.get('accuracies', {})
+                for model_name, accuracy in accuracies.items():
+                    logger.info(f"  - {model_name}: %{accuracy*100:.2f}")
+                    
             else:
-                logger.warning(f"Model egitilemedi: {training_result.get('error')}")
+                error_msg = training_result.get('error', 'Bilinmeyen hata')
+                logger.warning(f"Model eğitilemedi: {error_msg}")
                 predictor = PREDICTOR_CLASS()
                 
         else:
-            logger.warning(f"Yetersiz veri ({len(historical_matches)} mac, min 100), temel tahmin kullanilacak")
+            logger.warning(f"Yetersiz veri ({len(historical_matches)} maç, min 100), temel tahmin kullanılacak")
             predictor = PREDICTOR_CLASS()
         
         _training_progress = 100
         
     except Exception as e:
-        logger.error(f"Gecmis veri yukleme/egitim hatasi: {e}")
+        logger.error(f"Geçmiş veri yükleme/eğitim hatası: {e}")
         predictor = PREDICTOR_CLASS()
     
     finally:
         _is_training = False
+        logger.info("Model eğitim süreci tamamlandı")
 
 def background_refresh():
-    global _cached_matches, _cached_predictions
+    """Arka plan yenileme döngüsü"""
+    global _cached_matches, _cached_predictions, _last_refresh
+    
+    # İlk çalışmada 30 saniye bekle (model eğitimi için zaman tanı)
+    time.sleep(30)
     
     while True:
         try:
-            logger.info("Arka plan yenileme baslatiyor...")
+            logger.info("Arka plan yenileme başlatılıyor...")
             
             matches = fetch_future_matches(DAYS_AHEAD)
             predictions = generate_predictions(matches)
@@ -332,55 +419,42 @@ def background_refresh():
             with _cache_lock:
                 _cached_matches = matches
                 _cached_predictions = predictions
+                _last_refresh = datetime.now().isoformat()
                 
             save_to_disk(matches, MATCHES_FILE)
             save_to_disk(predictions, PREDICTIONS_FILE)
             
-            logger.info(f"Yenileme tamamlandi: {len(predictions)} tahmin")
+            logger.info(f"Yenileme tamamlandı: {len(predictions)} tahmin")
             
         except Exception as e:
-            logger.error(f"Arka plan yenileme hatasi: {e}")
+            logger.error(f"Arka plan yenileme hatası: {e}")
             
+        logger.info(f"Sonraki yenileme için {REFRESH_INTERVAL} saniye bekleniyor...")
         time.sleep(REFRESH_INTERVAL)
 
 # ----------------------------------------------------
 # FastAPI Routes
 # ----------------------------------------------------
-@app.on_event("startup")
-async def on_startup():
-    global _cached_matches, _cached_predictions
-    
-    ensure_data_dir()
-    
-    # Diskten yukle
-    _cached_matches = load_from_disk(MATCHES_FILE)
-    _cached_predictions = load_from_disk(PREDICTIONS_FILE)
-    
-    # ML modelini egit (arka planda)
-    training_thread = threading.Thread(target=load_historical_data_and_train, daemon=True)
-    training_thread.start()
-    
-    # Arka plan yenileme thread'i baslat
-    refresh_thread = threading.Thread(target=background_refresh, daemon=True)
-    refresh_thread.start()
-    
-    logger.info("PREDICTA AI v6.1 (ML) baslatildi!")
-
 @app.get("/")
 async def root():
     return {
-        "service": "PREDICTA AI v6.1 - ML Entegre Tahmin Sistemi",
+        "service": "PREDICTA AI v6.2 - ML Entegre Tahmin Sistemi",
         "status": "active",
         "ml_enabled": ML_AVAILABLE,
         "model_accuracy": round(_model_accuracy, 2),
+        "last_refresh": _last_refresh,
         "timestamp": datetime.now().isoformat(),
-        "version": "6.1"
+        "version": "6.2"
     }
 
 @app.get("/api/matches/upcoming")
-async def get_upcoming_matches(limit: Optional[int] = 0):
+async def get_upcoming_matches(limit: Optional[int] = 0, league: Optional[str] = None):
     with _cache_lock:
         matches = list(_cached_matches)
+        
+    # Lig filtreleme
+    if league:
+        matches = [m for m in matches if league.lower() in m.get("league", "").lower()]
         
     if limit and limit > 0:
         matches = matches[:limit]
@@ -392,9 +466,16 @@ async def get_upcoming_matches(limit: Optional[int] = 0):
     }
 
 @app.get("/api/predictions/upcoming")
-async def get_predictions(limit: Optional[int] = 50):
+async def get_predictions(limit: Optional[int] = 50, min_confidence: Optional[float] = 0):
     with _cache_lock:
         predictions = list(_cached_predictions)
+    
+    # Güven filtresi
+    if min_confidence > 0:
+        predictions = [
+            p for p in predictions 
+            if p.get("ai_prediction", {}).get("confidence", 0) >= min_confidence
+        ]
     
     if limit and limit > 0:
         predictions = predictions[:limit]
@@ -421,46 +502,60 @@ async def system_health():
         "ml_enabled": ML_AVAILABLE,
         "model_accuracy": round(_model_accuracy, 2),
         "is_training": _is_training,
-        "version": "6.1"
+        "training_progress": _training_progress,
+        "last_refresh": _last_refresh,
+        "version": "6.2"
     }
 
 @app.post("/api/matches/refresh")
-async def manual_refresh():
-    try:
-        matches = fetch_future_matches(DAYS_AHEAD)
-        predictions = generate_predictions(matches)
-        
-        with _cache_lock:
-            global _cached_matches, _cached_predictions
-            _cached_matches = matches
-            _cached_predictions = predictions
+async def manual_refresh(background_tasks: BackgroundTasks):
+    """Manuel yenileme endpoint'i"""
+    
+    async def refresh_task():
+        try:
+            matches = fetch_future_matches(DAYS_AHEAD)
+            predictions = generate_predictions(matches)
             
-        save_to_disk(matches, MATCHES_FILE)
-        save_to_disk(predictions, PREDICTIONS_FILE)
-        
-        return {
-            "success": True,
-            "matches_updated": len(matches),
-            "predictions_updated": len(predictions)
-        }
-        
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+            with _cache_lock:
+                global _cached_matches, _cached_predictions, _last_refresh
+                _cached_matches = matches
+                _cached_predictions = predictions
+                _last_refresh = datetime.now().isoformat()
+                
+            save_to_disk(matches, MATCHES_FILE)
+            save_to_disk(predictions, PREDICTIONS_FILE)
+            
+            logger.info("Manuel yenileme tamamlandı")
+            
+        except Exception as e:
+            logger.error(f"Manuel yenileme hatası: {e}")
+    
+    background_tasks.add_task(refresh_task)
+    
+    return {
+        "success": True,
+        "message": "Yenileme başlatıldı",
+        "timestamp": datetime.now().isoformat()
+    }
 
 @app.post("/api/training/start")
 async def start_training(background_tasks: BackgroundTasks):
     global _is_training
     
     if _is_training:
-        raise HTTPException(status_code=400, detail="Egitim zaten devam ediyor")
+        raise HTTPException(status_code=400, detail="Eğitim zaten devam ediyor")
     
     if not ML_AVAILABLE:
-        raise HTTPException(status_code=400, detail="ML kutuphaneleri yuklu degil")
+        raise HTTPException(status_code=400, detail="ML kütüphaneleri yüklü değil")
     
-    # Arka planda egit
+    # Arka planda eğit
     background_tasks.add_task(load_historical_data_and_train)
     
-    return {"success": True, "message": "Egitim baslatildi"}
+    return {
+        "success": True, 
+        "message": "Eğitim başlatıldı",
+        "timestamp": datetime.now().isoformat()
+    }
 
 @app.get("/api/training/status")
 async def get_training_status():
@@ -468,7 +563,22 @@ async def get_training_status():
         "is_training": _is_training,
         "progress": _training_progress,
         "model_accuracy": round(_model_accuracy, 2),
-        "ml_available": ML_AVAILABLE
+        "ml_available": ML_AVAILABLE,
+        "timestamp": datetime.now().isoformat()
+    }
+
+@app.get("/api/leagues")
+async def get_leagues():
+    """Mevcut ligleri listele"""
+    with _cache_lock:
+        matches = list(_cached_matches)
+    
+    leagues = sorted(list(set(m.get("league", "Bilinmeyen") for m in matches)))
+    
+    return {
+        "success": True,
+        "count": len(leagues),
+        "leagues": leagues
     }
 
 # ----------------------------------------------------
@@ -479,23 +589,31 @@ if __name__ == "__main__":
     
     ensure_data_dir()
     
-    # Ilk veri cekme
+    # İlk veri çekme
     try:
-        logger.info("Ilk veri cekme baslatiyor...")
+        logger.info("İlk veri çekme başlatılıyor...")
         initial_matches = fetch_future_matches(DAYS_AHEAD)
         
         with _cache_lock:
             _cached_matches = initial_matches
             
         save_to_disk(initial_matches, MATCHES_FILE)
-        logger.info("Ilk veri cekme tamamlandi")
+        logger.info("İlk veri çekme tamamlandı")
         
     except Exception as e:
-        logger.error(f"Ilk veri cekme hatasi: {e}")
+        logger.error(f"İlk veri çekme hatası: {e}")
     
-    # ML egitimini baslat (arka planda)
+    # ML eğitimini başlat (arka planda)
     training_thread = threading.Thread(target=load_historical_data_and_train, daemon=True)
     training_thread.start()
     
     port = int(os.environ.get("PORT", 8000))
-    uvicorn.run(app, host="0.0.0.0", port=port, log_level="info")
+    
+    logger.info(f"PREDICTA AI v6.2 {port} portunda başlatılıyor...")
+    uvicorn.run(
+        app, 
+        host="0.0.0.0", 
+        port=port, 
+        log_level="info",
+        access_log=True
+    )
