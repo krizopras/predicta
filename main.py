@@ -18,8 +18,34 @@ from fastapi import FastAPI, HTTPException, BackgroundTasks
 from fastapi.middleware.cors import CORSMiddleware
 
 # ----------------------------------------------------
+# Global Ayarlar (Logger için gerekli olanlar başta)
+# ----------------------------------------------------
+DATA_DIR = "./data"
+MATCHES_FILE = os.path.join(DATA_DIR, "future_matches.json")
+PREDICTIONS_FILE = os.path.join(DATA_DIR, "predictions.json")
+
+DAYS_AHEAD = 7
+REFRESH_INTERVAL = 4 * 3600  # 4 saat
+USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+API_ENDPOINT = "https://cdnbulten.nesine.com/api/bulten/getprebultenfull"
+
+# ----------------------------------------------------
+# Logger Tanımı (Hatanın Çözüldüğü Yer)
+# ----------------------------------------------------
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s",
+    handlers=[
+        logging.StreamHandler(),
+        logging.FileHandler(os.path.join(DATA_DIR, "predicta_ai.log"), encoding='utf-8')
+    ]
+)
+logger = logging.getLogger("predicta-ml")
+
+# ----------------------------------------------------
 # ML Tahmin Motoru Import
 # ----------------------------------------------------
+# Bu bloktaki logger çağrıları artık sorunsuz çalışacaktır.
 try:
     from ml_prediction_engine import MLPredictionEngine
     PREDICTOR_CLASS = MLPredictionEngine
@@ -47,31 +73,6 @@ except ImportError as e:
                 }
         PREDICTOR_CLASS = BasicPredictor
         logger.info("Basic Predictor kullanılıyor")
-
-# ----------------------------------------------------
-# Global Ayarlar
-# ----------------------------------------------------
-DATA_DIR = "./data"
-MATCHES_FILE = os.path.join(DATA_DIR, "future_matches.json")
-PREDICTIONS_FILE = os.path.join(DATA_DIR, "predictions.json")
-
-DAYS_AHEAD = 7
-REFRESH_INTERVAL = 4 * 3600  # 4 saat
-USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
-API_ENDPOINT = "https://cdnbulten.nesine.com/api/bulten/getprebultenfull"
-
-# ----------------------------------------------------
-# Logger
-# ----------------------------------------------------
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s - %(levelname)s - %(message)s",
-    handlers=[
-        logging.StreamHandler(),
-        logging.FileHandler(os.path.join(DATA_DIR, "predicta_ai.log"), encoding='utf-8')
-    ]
-)
-logger = logging.getLogger("predicta-ml")
 
 # ----------------------------------------------------
 # FastAPI App
