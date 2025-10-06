@@ -2,11 +2,10 @@
 """
 Predicta Europe ML v2
 - Ensemble MS (1/X/2): XGBoost + RandomForest + GradientBoost
-- ML Tabanlı Tam Skor Modeli (RandomForest - top-K exact scores + OTHER)
+- ML Tabanlı Tam Skor Modeli (RF - TopK exact scores + OTHER)
 - Value bet & risk değerlendirme
 """
 import os
-import json
 import pickle
 import logging
 from typing import Dict, Any, List
@@ -28,7 +27,6 @@ except Exception:
 
 from advanced_feature_engineer import AdvancedFeatureEngineer, FEATURE_NAMES
 
-
 class MLPredictionEngine:
     def __init__(self, model_path: str = "data/ai_models_v2"):
         self.model_path = model_path
@@ -36,12 +34,8 @@ class MLPredictionEngine:
 
         self.feature_engineer = AdvancedFeatureEngineer()
 
-        # Ensemble modelleri (MS 1/X/2)
-        self.models = {
-            'xgboost': None,
-            'random_forest': None,
-            'gradient_boost': None
-        }
+        # MS ensemble modelleri
+        self.models = {'xgboost': None, 'random_forest': None, 'gradient_boost': None}
         self.weights = {'xgboost': 0.45, 'random_forest': 0.30, 'gradient_boost': 0.25}
         self.scaler = StandardScaler()
         self.is_trained = False
@@ -52,7 +46,7 @@ class MLPredictionEngine:
 
         self._load_models()
 
-    # ----- Model yükleme/kaydetme ------------------------------------------
+    # ----- Model yükleme/oluşturma -----------------------------------------
     def _initialize_models(self):
         if not ML_AVAILABLE:
             logger.error("ML kütüphaneleri yüklenemedi.")
@@ -120,60 +114,52 @@ class MLPredictionEngine:
             logger.error(f"Model kaydetme hatası: {e}")
             return False
 
-    # ----- Eğitim -----------------------------------------------------------
+    # ----- Eğitim (MS) ------------------------------------------------------
     def train(self, historical_matches: List[Dict]) -> Dict[str, Any]:
-        """ MS modellerini eğitir (skor modeli, model_trainer.py tarafından eğitilir) """
         if not ML_AVAILABLE:
             return {"success": False, "error": "ML kütüphaneleri yüklü değil"}
-
         if len(historical_matches) < 100:
             return {"success": False, "error": f"Yetersiz veri: {len(historical_matches)}"}
 
         try:
             X, y = [], []
-
             for m in historical_matches:
                 feats = self.feature_engineer.extract_features({
                     "home_team": m["home_team"],
                     "away_team": m["away_team"],
-                    "league": m.get("league", "Unknown"),
-                    "odds": m.get("odds", {"1": 2.0, "X": 3.0, "2": 3.5}),
+                    "league": m.get("league","Unknown"),
+                    "odds": m.get("odds", {"1":2.0,"X":3.0,"2":3.5}),
                     "date": m.get("date", datetime.now().isoformat())
                 })
                 X.append(feats)
-                y.append({"1": 0, "X": 1, "2": 2}[m.get("result", "X")])
-
-                # geçmişi güncelle
+                y.append({'1':0,'X':1,'2':2}[m.get("result","X")])
                 self._update_feature_history(m)
 
             X = np.array(X, dtype=np.float32)
             y = np.array(y, dtype=np.int64)
-
-            X_scaled = self.scaler.fit_transform(X)
+            Xs = self.scaler.fit_transform(X)
             X_tr, X_te, y_tr, y_te = train_test_split(
-                X_scaled, y, test_size=0.2, random_state=42, stratify=y
+                Xs, y, test_size=0.2, random_state=42, stratify=y
             )
 
-            accuracies = {}
+            accs = {}
             for name, model in self.models.items():
-                if model is None:
-                    continue
+                if model is None: continue
                 model.fit(X_tr, y_tr)
                 acc = model.score(X_te, y_te)
-                accuracies[name] = acc
+                accs[name] = acc
                 logger.info(f"✅ {name}: %{acc*100:.2f}")
 
             self.is_trained = True
             self._save_models()
-
-            ensemble_acc = self._ensemble_accuracy(X_te, y_te)
+            ens_acc = self._ensemble_accuracy(X_te, y_te)
 
             return {
                 "success": True,
                 "training_samples": len(X_tr),
                 "test_samples": len(X_te),
-                "accuracies": accuracies,
-                "ensemble_accuracy": ensemble_acc,
+                "accuracies": accs,
+                "ensemble_accuracy": ens_acc,
                 "features_used": len(FEATURE_NAMES)
             }
 
@@ -185,31 +171,24 @@ class MLPredictionEngine:
         home_res = 'W' if m['result'] == '1' else ('D' if m['result'] == 'X' else 'L')
         away_res = 'L' if m['result'] == '1' else ('D' if m['result'] == 'X' else 'W')
         self.feature_engineer.update_team_history(m['home_team'], {
-            "result": home_res, "goals_for": m.get("home_goals", 0),
-            "goals_against": m.get("away_goals", 0), "date": m.get("date", ""), "venue": "home"
+            "result": home_res, "goals_for": m.get("home_goals",0),
+            "goals_against": m.get("away_goals",0), "date": m.get("date",""), "venue":"home"
         })
         self.feature_engineer.update_team_history(m['away_team'], {
-            "result": away_res, "goals_for": m.get("away_goals", 0),
-            "goals_against": m.get("home_goals", 0), "date": m.get("date", ""), "venue": "away"
+            "result": away_res, "goals_for": m.get("away_goals",0),
+            "goals_against": m.get("home_goals",0), "date": m.get("date",""), "venue":"away"
         })
         self.feature_engineer.update_h2h_history(m['home_team'], m['away_team'], {
-            "result": m["result"], "home_goals": m.get("home_goals", 0), "away_goals": m.get("away_goals", 0)
+            "result": m["result"], "home_goals": m.get("home_goals",0), "away_goals": m.get("away_goals",0)
         })
-        self.feature_engineer.update_league_results(m.get("league", "Unknown"), m["result"])
+        self.feature_engineer.update_league_results(m.get("league","Unknown"), m["result"])
 
     # ----- Tahmin -----------------------------------------------------------
     def predict_match(self, home_team: str, away_team: str, odds: Dict,
                       league: str = "Unknown") -> Dict[str, Any]:
-        """
-        1) Ensemble ile MS (1/X/2)
-        2) Skor modeli ile "tam skor" (MS ile tutarlı sınıfları önceliklendirerek)
-        """
         match_data = {
-            "home_team": home_team,
-            "away_team": away_team,
-            "league": league,
-            "odds": odds,
-            "date": datetime.now().isoformat()
+            "home_team": home_team, "away_team": away_team, "league": league,
+            "odds": odds, "date": datetime.now().isoformat()
         }
         try:
             feats = self.feature_engineer.extract_features(match_data)
@@ -219,168 +198,136 @@ class MLPredictionEngine:
 
         # MS tahmini
         if not self.is_trained:
-            ms_out = self._basic_prediction(home_team, away_team, odds)
+            ms = self._basic_prediction(home_team, away_team, odds)
         else:
             X = feats.reshape(1, -1)
             Xs = self.scaler.transform(X)
-            probs = self._ensemble_predict_proba(Xs)[0]
-            idx = int(np.argmax(probs))
-            pred = ['1', 'X', '2'][idx]
-            conf = float(probs[idx]) * 100.0
-            ms_out = {
+            p = self._ensemble_predict_proba(Xs)[0]
+            idx = int(np.argmax(p))
+            pred = ['1','X','2'][idx]
+            conf = float(p[idx])*100.0
+            ms = {
                 "prediction": pred,
-                "confidence": round(conf, 1),
+                "confidence": round(conf,1),
                 "probabilities": {
-                    "home_win": round(probs[0] * 100, 1),
-                    "draw": round(probs[1] * 100, 1),
-                    "away_win": round(probs[2] * 100, 1)
+                    "home_win": round(float(p[0]*100),1),
+                    "draw": round(float(p[1]*100),1),
+                    "away_win": round(float(p[2]*100),1)
                 }
             }
 
-        # Skor tahmini (varsa)
-        score_pred, score_top = self._predict_exact_score(feats, ms_out["prediction"])
+        # Skor tahmini
+        score_pred, score_top = self._predict_exact_score(feats, ms["prediction"])
 
         # Value & risk
-        value_index = self._calculate_value_bet(
-            np.array([ms_out["probabilities"]["home_win"],
-                      ms_out["probabilities"]["draw"],
-                      ms_out["probabilities"]["away_win"]]) / 100.0,
-            odds
-        )
-        risk = "LOW" if ms_out["confidence"] >= 70 else ("MEDIUM" if ms_out["confidence"] >= 55 else "HIGH")
+        probs_vec = np.array([
+            ms["probabilities"]["home_win"],
+            ms["probabilities"]["draw"],
+            ms["probabilities"]["away_win"]
+        ]) / 100.0
+        vindex = self._value_index(probs_vec, odds)
+        risk = "LOW" if ms["confidence"] >= 70 else ("MEDIUM" if ms["confidence"] >= 55 else "HIGH")
 
         return {
-            "prediction": ms_out["prediction"],
-            "confidence": ms_out["confidence"],
-            "probabilities": ms_out["probabilities"],
+            "prediction": ms["prediction"],
+            "confidence": ms["confidence"],
+            "probabilities": ms["probabilities"],
             "score_prediction": score_pred,
-            "score_alternatives": score_top,  # ilk 3 sınıf
-            "value_bet": {"value_index": round(value_index, 3), "rating": self._get_value_rating(value_index)},
+            "score_alternatives": score_top,
+            "value_bet": {"value_index": round(vindex,3), "rating": self._value_rating(vindex)},
             "risk_level": risk,
-            "recommendation": self._get_recommendation(ms_out["confidence"], value_index),
-            "model": "MS: (XGB+RF+GB) + Score: RF(K-class)",
+            "recommendation": self._recommend(ms["confidence"], vindex),
+            "model": "MS:(XGB+RF+GB) + Score:RF(K-class)",
             "features_used": len(FEATURE_NAMES),
             "timestamp": datetime.now().isoformat()
         }
 
-    # ----- Skor modeli tahmini ---------------------------------------------
+    # ----- Skor modeli ------------------------------------------------------
     def _predict_exact_score(self, features: np.ndarray, ms_pred: str):
-        """
-        Skor modelinden top olasılıkları al; MS sonucu ile uyuşmayanları düşük ağırlıkla bırak.
-        """
         if self.score_model is None or self.score_space is None:
-            return "2-1" if ms_pred == "1" else ("1-1" if ms_pred == "X" else "1-2"), []
-
+            return ("2-1" if ms_pred == "1" else ("1-1" if ms_pred == "X" else "1-2")), []
         X = features.reshape(1, -1)
-        # Skor modeli scaler kullanmıyor; doğrudan ham feats ile eğitildi
         try:
-            probs = self.score_model.predict_proba(X)[0]  # shape: [K]
+            probs = self.score_model.predict_proba(X)[0]  # [K]
         except Exception as e:
             logger.warning(f"Skor modeli tahmin hatası: {e}")
-            return "2-1" if ms_pred == "1" else ("1-1" if ms_pred == "X" else "1-2"), []
+            return ("2-1" if ms_pred == "1" else ("1-1" if ms_pred == "X" else "1-2")), []
 
-        # MS tutarlılık maskesi
-        masks = {
-            "1": lambda s: self._parse_score(s)[0] > self._parse_score(s)[1],
-            "X": lambda s: self._parse_score(s)[0] == self._parse_score(s)[1],
-            "2": lambda s: self._parse_score(s)[0] < self._parse_score(s)[1],
-        }
+        # MS tutarlılık cezası
+        def _ok(ms, lab):
+            try:
+                a,b = lab.split("-"); a=int(a); b=int(b)
+            except: return True
+            return (a>b) if ms=="1" else ((a==b) if ms=="X" else (a<b))
 
-        adjusted = probs.copy()
+        adj = probs.copy()
         for i, lab in enumerate(self.score_space):
-            if lab == "OTHER":
-                continue
-            ok = masks[ms_pred](lab)
-            if not ok:
-                adjusted[i] *= 0.35  # MS'e aykırıysa ceza
+            if lab == "OTHER": continue
+            if not _ok(ms_pred, lab):
+                adj[i] *= 0.35
+        s = adj.sum()
+        if s > 0: adj = adj / s
 
-        # normalize
-        s = adjusted.sum()
-        if s > 0:
-            adjusted = adjusted / s
-
-        # En iyi sınıf ve ilk 3
-        top_idx = int(np.argmax(adjusted))
+        top_idx = int(np.argmax(adj))
         top_label = self.score_space[top_idx]
-        top3_idx = np.argsort(adjusted)[-3:][::-1]
-        top3 = [{"score": self.score_space[i], "prob": float(adjusted[i])} for i in top3_idx]
-
+        top3_idx = np.argsort(adj)[-3:][::-1]
+        top3 = [{"score": self.score_space[i], "prob": float(adj[i])} for i in top3_idx]
         if top_label == "OTHER":
-            # MS'e uygun default skor ver
-            return ("2-1" if ms_pred == "1" else ("1-1" if ms_pred == "X" else "1-2")), top3
+            return ("2-1" if ms_pred=="1" else ("1-1" if ms_pred=="X" else "1-2")), top3
         return top_label, top3
-
-    @staticmethod
-    def _parse_score(label: str):
-        try:
-            a, b = label.split("-")
-            return int(a), int(b)
-        except:
-            return 0, 0
 
     # ----- Ensemble yardımcıları -------------------------------------------
     def _ensemble_predict_proba(self, X) -> np.ndarray:
         if not self.is_trained:
-            return np.ones((len(X), 3), dtype=np.float32) / 3.0
-        out = np.zeros((len(X), 3), dtype=np.float32)
+            return np.ones((len(X),3), dtype=np.float32)/3.0
+        out = np.zeros((len(X),3), dtype=np.float32)
         for name, model in self.models.items():
-            if model is None:
-                continue
+            if model is None: continue
             w = self.weights.get(name, 0.33)
             p = model.predict_proba(X)
             out += w * p
-        # normalize
         out /= out.sum(axis=1, keepdims=True)
         return out
 
     def _ensemble_accuracy(self, X_te, y_te) -> float:
-        probs = self._ensemble_predict_proba(X_te)
-        y_pred = np.argmax(probs, axis=1)
+        p = self._ensemble_predict_proba(X_te)
+        y_pred = np.argmax(p, axis=1)
         return float(np.mean(y_pred == y_te))
 
-    # ----- Değer & öneri ----------------------------------------------------
-    def _calculate_value_bet(self, probs: np.ndarray, odds: Dict) -> float:
+    # ----- Value & öneri ----------------------------------------------------
+    @staticmethod
+    def _value_index(probs: np.ndarray, odds: Dict) -> float:
         try:
-            odds_vals = [float(odds.get('1', 2.0)), float(odds.get('X', 3.0)), float(odds.get('2', 3.5))]
-            ev = probs * np.array(odds_vals, dtype=float)
-            return float(np.max(ev) - 1.0)
+            odds_vals = np.array([float(odds.get('1',2.0)), float(odds.get('X',3.0)), float(odds.get('2',3.5))], dtype=float)
+            ev = probs * odds_vals
+            return float(ev.max() - 1.0)
         except Exception:
             return 0.0
 
     @staticmethod
-    def _get_value_rating(value_index: float) -> str:
-        return "EXCELLENT" if value_index > 0.15 else \
-               "VERY GOOD" if value_index > 0.10 else \
-               "GOOD" if value_index > 0.05 else \
-               "FAIR" if value_index > 0.02 else "POOR"
+    def _value_rating(v: float) -> str:
+        return "EXCELLENT" if v>0.15 else "VERY GOOD" if v>0.10 else "GOOD" if v>0.05 else "FAIR" if v>0.02 else "POOR"
 
     @staticmethod
-    def _get_recommendation(confidence: float, value_index: float) -> str:
-        if confidence >= 70 and value_index > 0.10:
-            return "🔥 STRONG BET"
-        elif confidence >= 65 and value_index > 0.05:
-            return "✅ RECOMMENDED"
-        elif confidence >= 55:
-            return "⚠️ CONSIDER"
-        else:
-            return "❌ SKIP"
+    def _recommend(conf: float, v: float) -> str:
+        if conf >= 70 and v > 0.10: return "🔥 STRONG BET"
+        if conf >= 65 and v > 0.05: return "✅ RECOMMENDED"
+        if conf >= 55: return "⚠️ CONSIDER"
+        return "❌ SKIP"
 
-    # ----- Fallback (model yoksa) ------------------------------------------
+    # ----- Fallback ---------------------------------------------------------
     def _basic_prediction(self, home_team: str, away_team: str, odds: Dict) -> Dict:
         try:
-            o1, ox, o2 = float(odds.get('1', 2.0)), float(odds.get('X', 3.0)), float(odds.get('2', 3.5))
-            imp = np.array([1/o1, 1/ox, 1/o2], dtype=float)
-            imp = imp / imp.sum()
-            idx = int(np.argmax(imp))
-            pred = ['1','X','2'][idx]
-            conf = float(imp[idx] * 100.0)
+            o1, ox, o2 = float(odds.get('1',2.0)), float(odds.get('X',3.0)), float(odds.get('2',3.5))
+            imp = np.array([1/o1, 1/ox, 1/o2], dtype=float); imp = imp/imp.sum()
+            idx = int(np.argmax(imp)); pred = ['1','X','2'][idx]; conf = float(imp[idx]*100.0)
             return {
                 "prediction": pred,
-                "confidence": round(conf, 1),
+                "confidence": round(conf,1),
                 "probabilities": {
-                    "home_win": round(float(imp[0]*100), 1),
-                    "draw": round(float(imp[1]*100), 1),
-                    "away_win": round(float(imp[2]*100), 1)
+                    "home_win": round(float(imp[0]*100),1),
+                    "draw": round(float(imp[1]*100),1),
+                    "away_win": round(float(imp[2]*100),1)
                 }
             }
         except Exception:
