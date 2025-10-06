@@ -72,33 +72,45 @@ def generate_features(match_row: Dict[str, Any]) -> Optional[Dict[str, Any]]:
     Hatalı veya eksik veri varsa None döndürür.
     """
 
+   try:
+    # Takım adlarını güvenli al
+    home = safe_lower(match_row.get("home_team"))
+    away = safe_lower(match_row.get("away_team"))
+    league = safe_lower(match_row.get("league"))
+
+    # Zorunlu alanlar kontrol
+    if not home or not away:
+        logging.warning(f"Eksik takım bilgisi: {match_row}")
+        return None
+
+    # Oranlar
+    odds_1 = safe_float(match_row.get("odds_1"))
+    odds_x = safe_float(match_row.get("odds_x"))
+    odds_2 = safe_float(match_row.get("odds_2"))
+
+    # ⚙️ ORANLARIN GEÇERLİLİĞİNİ KONTROL ET
+    # Eğer oranlar eksik, 0.0, NaN veya çok düşükse varsayılan değerleri ata
+    if any(v <= 1.01 or math.isnan(v) for v in [odds_1, odds_x, odds_2]):
+        logging.warning(f"Geçersiz oran tespit edildi, varsayılan atanıyor: {match_row}")
+        odds_1, odds_x, odds_2 = 2.0, 3.0, 3.5
+
+    # Basit oran metrikleri
     try:
-        # Takım adlarını güvenli al
-        home = safe_lower(match_row.get("home_team"))
-        away = safe_lower(match_row.get("away_team"))
-        league = safe_lower(match_row.get("league"))
-
-        # Zorunlu alanlar kontrol
-        if not home or not away:
-            logging.warning(f"Eksik takım bilgisi: {match_row}")
-            return None
-
-        # Oranlar
-        odds_1 = safe_float(match_row.get("odds_1"))
-        odds_x = safe_float(match_row.get("odds_x"))
-        odds_2 = safe_float(match_row.get("odds_2"))
-
-        # Basit oran metrikleri
-        odds_sum = odds_1 + odds_x + odds_2 if all(v > 0 for v in [odds_1, odds_x, odds_2]) else 1.0
+        odds_sum = odds_1 + odds_x + odds_2
         prob_1 = ratio(1 / odds_1, 1 / odds_sum)
         prob_x = ratio(1 / odds_x, 1 / odds_sum)
         prob_2 = ratio(1 / odds_2, 1 / odds_sum)
+    except ZeroDivisionError:
+        # Bölme hatasına karşı koruma
+        logging.warning(f"Oran bölme hatası, varsayılan 1/3 olasılık kullanılıyor: {match_row}")
+        prob_1 = prob_x = prob_2 = 1 / 3
 
-        # Gol verileri
-        home_goals = safe_int(match_row.get("home_goals"))
-        away_goals = safe_int(match_row.get("away_goals"))
-        goal_diff_val = goal_diff(home_goals, away_goals)
-        total_goals = home_goals + away_goals
+    # Gol verileri
+    home_goals = safe_int(match_row.get("home_goals"))
+    away_goals = safe_int(match_row.get("away_goals"))
+    goal_diff_val = goal_diff(home_goals, away_goals)
+    total_goals = home_goals + away_goals
+
 
         # Takım isimlerinden nitelik çıkarma (örnek: derbi, "spor" içeren takım vs.)
         home_len = len(home)
