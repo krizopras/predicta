@@ -1,41 +1,49 @@
-# main.py
-# Predicta Europe ML v2 — Flask backend
-# Özellikler:
-#  - /api/training/start: Tüm Avrupa arşiviyle modeli eğitir (MS + Skor)
-#  - /api/reload: Diskteki modelleri yeniden yükler
-#  - /api/predict: Tek maç için tahmin (MS + skor + value bet)
-#  - /api/predictions/batch: Çoklu maç tahmini (CSV/JSON)
-#  - /api/leagues: data/raw içindeki ülkeleri ve lig kodlarını listeler (index.html dropdown için)
+# ==============================================================
+#  Predicta Europe ML v2 - Flask Backend
+#  Olcay Arslan | Railway Deployment Ready | Port 8000
+# ==============================================================
+#  Özellikler:
+#   ✅ Tüm Avrupa lig arşivlerini tarar (data/raw/)
+#   ✅ Model eğitimi (model_trainer.py üzerinden)
+#   ✅ Tek maç ve toplu maç tahmini (MLPredictionEngine)
+#   ✅ CORS tam açık (GitHub Pages erişimi)
+#   ✅ Railway uyumlu (PORT=8000)
+# ==============================================================
 
 import os
 import re
 import json
 from pathlib import Path
-from typing import Dict, List, Tuple
-
-from flask import Flask, request, jsonify, send_from_directory
+from typing import Dict, List
+from flask import Flask, request, jsonify
 from flask_cors import CORS
 
+# ML Prediction Engine
 from ml_prediction_engine import MLPredictionEngine
-# Eğitim tetiklemek için:
+
+# Eğitim fonksiyonu (varsa)
 try:
     from model_trainer import train_all
 except Exception:
-    train_all = None  # Eğitim dosyası yoksa graceful davran
+    train_all = None
 
-APP_PORT = int(os.environ.get("PORT", "5000"))
+# --- Ortam değişkenleri ---
+APP_PORT = int(os.environ.get("PORT", "8000"))
 MODELS_DIR = os.environ.get("PREDICTA_MODELS_DIR", "data/ai_models_v2")
 RAW_DIR = os.environ.get("PREDICTA_RAW_DIR", "data/raw")
 
-app = Flask(__name__, static_folder="templates", static_url_path="/templates")
+# --- Flask uygulaması ---
+app = Flask(__name__)
 CORS(app)
 
+# --- Prediction Engine yükle ---
 engine = MLPredictionEngine(model_path=MODELS_DIR)
 
-# ----------------------- Yardımcılar -----------------------------
+# ==============================================================
+#  LEAGUE SCANNER
+# ==============================================================
 
 LEAGUE_CODE_MAP = {
-    # yaygın kod -> okunur ad (genişletilebilir)
     "tr1": "Türkiye Süper Lig",
     "tr2": "Türkiye 1. Lig",
     "en1": "İngiltere Premier League",
@@ -69,155 +77,140 @@ LEAGUE_CODE_MAP = {
     "rs1": "Sırbistan SuperLiga",
     "hr1": "Hırvatistan HNL",
     "si1": "Slovenya PrvaLiga",
-    "sk1": "Slovakya Super Liga",
-    "tr":  "Türkiye (genel)",
-    "en":  "İngiltere (genel)",
-    "es":  "İspanya (genel)",
-    "it":  "İtalya (genel)",
-    "de":  "Almanya (genel)",
-    "fr":  "Fransa (genel)",
+    "sk1": "Slovakya Super Liga"
 }
 
 FILE_CODE_REGEX = re.compile(r".*_(?P<code>[a-z]{2,3}\d?)\.txt$", re.IGNORECASE)
 
-def scan_europe_raw(raw_root: str) -> List[Dict]:
-    """
-    data/raw/ altındaki tüm ülke klasörlerini ve içindeki *_<code>.txt dosyalarını tarar.
-    Örn: 2018-19_tr1.txt -> code = tr1
-    Dönüş: [{country:'turkey', leagues:[{code:'tr1', name:'Türkiye Süper Lig'}, ...]}, ...]
-    """
-    out = []
-    root = Path(raw_root)
-    if not root.exists():
-        return out
 
-    for country_dir in sorted([p for p in root.iterdir() if p.is_dir()]):
-        country_name = country_dir.name
-        codes = set()
-        for f in country_dir.glob("*.txt"):
-            m = FILE_CODE_REGEX.match(f.name)
-            if m:
-                codes.add(m.group("code").lower())
+def scan_raw(root_dir: str = "data/raw") -> List[Dict]:
+    """data/raw altındaki ülke klasörlerini tarar, lig kodlarını çıkarır."""
+    output = []
+    base = Path(root_dir)
+    if not base.exists():
+        return output
 
+    for country_dir in sorted([d for d in base.iterdir() if d.is_dir()]):
         leagues = []
-        for code in sorted(codes):
-            readable = LEAGUE_CODE_MAP.get(code, code.upper())
-            leagues.append({"code": code, "name": readable})
+        for file in country_dir.glob("*.txt"):
+            m = FILE_CODE_REGEX.match(file.name)
+            if m:
+                code = m.group("code").lower()
+                leagues.append({
+                    "code": code,
+                    "name": LEAGUE_CODE_MAP.get(code, code.upper())
+                })
+        output.append({
+            "country": country_dir.name,
+            "leagues": leagues
+        })
+    return output
 
-        out.append({"country": country_name, "leagues": leagues})
-    return out
 
-def odds_from_payload(data: Dict) -> Dict:
-    odds = data.get("odds", {})
-    # needle case normalize
-    return {
-        "1": float(odds.get("1", odds.get("MS1", 2.0))),
-        "X": float(odds.get("X", odds.get("MS0", 3.0))),
-        "2": float(odds.get("2", odds.get("MS2", 3.5))),
-    }
+# ==============================================================
+#  CORS HEADERS (GITHUB PAGES İÇİN)
+# ==============================================================
 
-# -------------------------- Routes --------------------------------
+@app.after_request
+def after_request(response):
+    response.headers.add("Access-Control-Allow-Origin", "*")
+    response.headers.add("Access-Control-Allow-Headers", "Content-Type,Authorization")
+    response.headers.add("Access-Control-Allow-Methods", "GET,POST,OPTIONS")
+    return response
+
+
+# ==============================================================
+#  API ROUTES
+# ==============================================================
 
 @app.route("/")
 def health():
     return jsonify({
-        "status": "Predicta Europe ML v2 ready",
+        "status": "Predicta ML v2 aktif",
         "models_dir": MODELS_DIR,
-        "raw_dir": RAW_DIR
+        "raw_dir": RAW_DIR,
+        "port": APP_PORT
     })
 
-@app.route("/templates/<path:path>")
-def serve_templates(path):
-    # index.html gibi dosyaları servis edebilmek için
-    return send_from_directory("templates", path)
 
 @app.route("/api/leagues", methods=["GET"])
-def api_leagues():
-    # data/raw/ altını tarayıp tüm Avrupa ülkeleri + lig kodlarını döner
-    data = scan_europe_raw(RAW_DIR)
+def leagues():
+    """Tüm Avrupa liglerini listeler"""
+    data = scan_raw(RAW_DIR)
     return jsonify({"count": len(data), "items": data})
 
-@app.route("/api/reload", methods=["GET"])
-def api_reload():
-    engine._load_models()
-    return jsonify({"status": "reloaded"})
 
-@app.route("/api/training/start", methods=["POST", "GET"])
-def api_training_start():
+@app.route("/api/reload", methods=["GET"])
+def reload_models():
+    """Model dosyalarını yeniden yükler"""
+    engine._load_models()
+    return jsonify({"status": "Models reloaded"})
+
+
+@app.route("/api/training/start", methods=["POST"])
+def train_api():
+    """Yeni model eğitimi başlatır"""
     if train_all is None:
-        return jsonify({"error": "model_trainer bulunamadı"}), 500
-    top_k = None
+        return jsonify({"error": "model_trainer.py bulunamadı"}), 500
     try:
         body = request.get_json(silent=True) or {}
         top_k = int(body.get("top_scores_k", 20))
     except Exception:
         top_k = 20
-    summary = train_all(raw_path=RAW_DIR, top_scores_k=top_k)
-    return jsonify(summary)
+    result = train_all(raw_path=RAW_DIR, top_scores_k=top_k)
+    return jsonify(result)
+
 
 @app.route("/api/predict", methods=["POST"])
-def api_predict():
+def predict():
+    """Tek maç tahmini yapar"""
     data = request.get_json()
     if not data:
         return jsonify({"error": "JSON body required"}), 400
+
     home = data.get("home_team")
     away = data.get("away_team")
     league = data.get("league", "Unknown")
+    odds = data.get("odds", {"1": 2.0, "X": 3.0, "2": 3.5})
+
     if not home or not away:
         return jsonify({"error": "home_team & away_team required"}), 400
-    odds = odds_from_payload(data)
-    pred = engine.predict_match(home, away, odds, league)
-    return jsonify(pred)
+
+    prediction = engine.predict_match(home, away, odds, league)
+    return jsonify(prediction)
+
 
 @app.route("/api/predictions/batch", methods=["POST"])
-def api_predictions_batch():
-    """
-    Body iki formattan birinde olabilir:
-      1) {"matches":[{"home_team":"...","away_team":"...","league":"...","odds":{"1":2.0,"X":3.0,"2":3.5}}, ...]}
-      2) {"csv":"home,away,league,1,X,2\nGalatasaray,Fenerbahçe,Super Lig,2.1,3.2,3.4\n..."}
-    """
+def predict_batch():
+    """Birden fazla maçı toplu olarak işler"""
     data = request.get_json()
+    if not data or "matches" not in data:
+        return jsonify({"error": "matches list required"}), 400
+
     results = []
-    if not data:
-        return jsonify({"error": "JSON body required"}), 400
+    for match in data["matches"]:
+        try:
+            home = match["home_team"]
+            away = match["away_team"]
+            league = match.get("league", "Unknown")
+            odds = match.get("odds", {"1": 2.0, "X": 3.0, "2": 3.5})
+            pred = engine.predict_match(home, away, odds, league)
+            results.append({
+                "home_team": home,
+                "away_team": away,
+                "league": league,
+                "prediction": pred
+            })
+        except Exception as e:
+            results.append({"error": str(e), "match": match})
 
-    if "matches" in data and isinstance(data["matches"], list):
-        for m in data["matches"]:
-            try:
-                home = m["home_team"]; away = m["away_team"]
-                league = m.get("league", "Unknown")
-                odds = odds_from_payload(m)
-                results.append({
-                    "home_team": home,
-                    "away_team": away,
-                    "league": league,
-                    "odds": odds,
-                    "prediction": engine.predict_match(home, away, odds, league)
-                })
-            except Exception as e:
-                results.append({"error": str(e), "input": m})
-        return jsonify({"count": len(results), "items": results})
+    return jsonify({"count": len(results), "items": results})
 
-    if "csv" in data and isinstance(data["csv"], str):
-        lines = [ln.strip() for ln in data["csv"].splitlines() if ln.strip()]
-        # header bekleniyor: home,away,league,1,X,2
-        start = 1 if lines and lines[0].lower().startswith("home") else 0
-        for ln in lines[start:]:
-            try:
-                home, away, league, o1, ox, o2 = [p.strip() for p in ln.split(",")]
-                odds = {"1": float(o1), "X": float(ox), "2": float(o2)}
-                results.append({
-                    "home_team": home,
-                    "away_team": away,
-                    "league": league,
-                    "odds": odds,
-                    "prediction": engine.predict_match(home, away, odds, league)
-                })
-            except Exception as e:
-                results.append({"error": str(e), "line": ln})
-        return jsonify({"count": len(results), "items": results})
 
-    return jsonify({"error": "Provide 'matches' array or 'csv' string"}), 400
+# ==============================================================
+#  UYGULAMA ÇALIŞTIR
+# ==============================================================
 
 if __name__ == "__main__":
-   APP_PORT = int(os.environ.get("PORT", "8000"))
+    app.run(host="0.0.0.0", port=APP_PORT)
+
