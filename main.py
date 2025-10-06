@@ -220,4 +220,4 @@ def api_predictions_batch():
     return jsonify({"error": "Provide 'matches' array or 'csv' string"}), 400
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=APP_PORT, debug=True)
+   APP_PORT = int(os.environ.get("PORT", "8000"))
