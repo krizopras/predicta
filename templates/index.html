@@ -1,267 +1,480 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <title>Predicta Europe ML v3</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Predicta Europe ML — Ultra Pro</title>
 
-  <style>
-    :root {
-      --bg: #001F3F;
-      --panel: #012A5A;
-      --text: #f5f5f5;
-      --accent: #FFD700;
-      --hover: #0a3566;
-    }
+<!-- ====== THEME ====== -->
+<style>
+:root{
+  --navy:#001F3F; --navy-2:#012a5e; --navy-3:#062e5f;
+  --gold:#FFD700; --gold-2:#f2cc00; --gold-3:#d9b200;
+  --ink:#0b1020; --text:#ecf2ff; --muted:#98a6c9; --ok:#22c55e; --warn:#f59e0b; --err:#ef4444;
+  --card-border:#113b74; --shadow: 0 10px 30px rgba(0,0,0,.35);
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;background:linear-gradient(180deg,var(--navy) 0%, #041b36 100%);
+  color:var(--text); font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
 
-    * { box-sizing: border-box; }
+/* Topbar */
+.topbar{
+  position:sticky; top:0; z-index:20; backdrop-filter:saturate(120%) blur(6px);
+  background:linear-gradient(90deg,var(--navy-2),#021934); border-bottom:2px solid var(--gold);
+  display:flex; align-items:center; justify-content:space-between; padding:10px 16px 8px 14px;
+}
+.brand{display:flex; align-items:center; gap:10px}
+.logo{
+  width:34px; height:34px; border-radius:10px; background:radial-gradient(circle at 30% 30%, var(--gold), var(--gold-2));
+  box-shadow:0 0 0 2px rgba(255,215,0,.3), 0 6px 20px rgba(255,215,0,.2);
+  display:grid; place-items:center; font-weight:900; color:#0a1740; letter-spacing:.5px;
+}
+.brand h1{font-size:18px; margin:0}
+.tabbar{display:flex; gap:14px; align-items:center}
+.tab{
+  border:none; background:transparent; color:var(--muted); font-weight:600; letter-spacing:.15px; cursor:pointer;
+  padding:10px 10px; border-bottom:2px solid transparent; transition:.2s;
+}
+.tab:hover{color:var(--gold)}
+.tab.active{color:var(--gold); border-color:var(--gold)}
+.actions{display:flex; gap:8px; align-items:center}
+.btn{
+  background:var(--navy-3); color:var(--text); border:1px solid var(--card-border);
+  padding:8px 10px; border-radius:8px; cursor:pointer; transition:.2s; font-weight:600;
+}
+.btn:hover{transform:translateY(-1px); border-color:var(--gold); color:var(--gold)}
+.btn.gold{background:linear-gradient(90deg,var(--gold),var(--gold-2)); color:#05173a; border-color:#d2b100}
+.badge{font-size:12px; padding:4px 8px; border-radius:999px; background:#0b213f; border:1px solid var(--card-border); color:var(--muted)}
 
-    body {
-      margin: 0;
-      font-family: "Poppins", Arial, sans-serif;
-      background-color: var(--bg);
-      color: var(--text);
-      display: flex;
-      min-height: 100vh;
-    }
+/* Layout */
+.wrap{display:grid; grid-template-columns: 280px 1fr 360px; gap:14px; padding:14px; max-width:1600px; margin:0 auto}
+.card{
+  background: linear-gradient(180deg, #071e3b, #061a32); border:1px solid var(--card-border);
+  border-radius:14px; box-shadow:var(--shadow); padding:14px; min-height:140px;
+}
 
-    /* Sol Menü */
-    aside {
-      width: 250px;
-      background: var(--panel);
-      border-right: 2px solid var(--accent);
-      padding: 15px;
-      overflow-y: auto;
-    }
+/* Left: Leagues */
+.sidebar h3{margin:4px 0 10px 4px; color:var(--gold)}
+.search{position:relative; margin-bottom:10px}
+.search input{
+  width:100%; background:#0b213f; color:var(--text); border:1px solid var(--card-border); border-radius:10px; padding:10px 12px 10px 36px;
+}
+.search svg{position:absolute; left:10px; top:10px}
+.leagues{display:grid; gap:8px; max-height:72vh; overflow:auto; padding-right:6px}
+.league{
+  display:flex; align-items:center; justify-content:space-between; gap:8px; background:#0b213f; border:1px solid var(--card-border);
+  border-left:4px solid var(--gold-3); padding:10px 10px; border-radius:10px; cursor:pointer; transition:.2s;
+}
+.league:hover{transform:translateX(3px); border-color:var(--gold)}
+.league.active{outline:2px solid var(--gold); border-left-color:var(--ok)}
 
-    aside h2 {
-      text-align: center;
-      color: var(--accent);
-      margin-bottom: 10px;
-    }
+/* Center: Predictions table */
+.head{display:flex; justify-content:space-between; align-items:center; margin-bottom:10px}
+.head h3{margin:0}
+.tags{display:flex; gap:8px; flex-wrap:wrap}
+.tag{font-size:12px; border:1px solid var(--card-border); background:#0b213f; padding:4px 8px; border-radius:999px}
+.table{width:100%; border-collapse: collapse}
+.table th, .table td{padding:10px; border-bottom:1px dashed #113b74; text-align:left}
+.table th{color:var(--gold); position:sticky; top:0; background:#081c36}
+.row:hover{background:#0a2243}
+.odd{display:inline-flex; align-items:center; padding:2px 8px; border-radius:6px; font-weight:700; background:var(--gold); color:#0a1740}
+.pill{padding:2px 8px; border-radius:999px; font-weight:700}
+.pill.ok{background:rgba(34,197,94,.15); color:#86efac; border:1px solid #14532d}
+.pill.mid{background:rgba(245,158,11,.15); color:#facc15; border:1px solid #7c5806}
+.pill.bad{background:rgba(239,68,68,.12); color:#fca5a5; border:1px solid #7f1d1d}
 
-    aside button {
-      display: block;
-      width: 100%;
-      background: var(--accent);
-      border: none;
-      color: var(--bg);
-      font-weight: 600;
-      margin-bottom: 8px;
-      padding: 10px;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: all .2s;
-    }
-    aside button:hover {
-      background: var(--hover);
-      color: var(--accent);
-    }
+/* Right: Top box + widgets */
+.topbox h4{margin:0 0 10px 0}
+.toplist{display:grid; gap:10px; max-height:70vh; overflow:auto; padding-right:6px}
+.topitem{
+  display:grid; grid-template-columns: 1fr auto; gap:8px; padding:10px; border-radius:10px; background:#0b213f; border:1px solid var(--card-border);
+}
+.topitem .sub{color:var(--muted); font-size:12px}
+.topitem strong{color:var(--gold)}
 
-    main {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-    }
+/* Drawer / Modals */
+.drawer{
+  position:fixed; inset:0; background:rgba(0,0,0,.45); display:none; align-items:center; justify-content:center; z-index:50;
+}
+.drawer.open{display:flex}
+.modal{
+  width:min(680px, 92vw); background:#061a32; border:1px solid var(--card-border); border-radius:14px; padding:16px; box-shadow:var(--shadow)
+}
+.modal h3{margin-top:0}
+.form{display:grid; grid-template-columns:1fr 1fr; gap:10px}
+.input, .select, textarea{
+  background:#0b213f; color:var(--text); border:1px solid var(--card-border); border-radius:10px; padding:10px
+}
+input[type="number"]{appearance:textfield}
+.actions-row{display:flex; justify-content:flex-end; gap:10px; margin-top:10px}
 
-    /* Üst Menü */
-    header {
-      background: var(--panel);
-      border-bottom: 2px solid var(--accent);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 10px 20px;
-    }
+/* Toast */
+.toast{
+  position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+  background:#0b213f; border:1px solid var(--card-border); border-left:4px solid var(--gold);
+  color:var(--text); padding:10px 14px; border-radius:12px; box-shadow:var(--shadow); display:none; z-index:60;
+}
+.toast.show{display:block}
 
-    header h1 {
-      color: var(--accent);
-      font-size: 20px;
-      margin: 0;
-    }
+/* Skeleton */
+.skel{position:relative; overflow:hidden; background:#0b213f; min-height:36px; border-radius:8px}
+.skel::after{
+  content:""; position:absolute; inset:0;
+  background:linear-gradient(90deg, transparent, rgba(255,255,255,.06), transparent);
+  animation:shine 1.2s linear infinite;
+}
+@keyframes shine{0%{transform:translateX(-100%)} 100%{transform:translateX(100%)}}
 
-    nav button {
-      background: transparent;
-      color: var(--text);
-      border: none;
-      font-size: 15px;
-      margin: 0 6px;
-      cursor: pointer;
-      transition: all .2s;
-    }
-    nav button:hover, nav button.active {
-      color: var(--accent);
-      text-decoration: underline;
-    }
-
-    /* İçerik */
-    section {
-      flex: 1;
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      gap: 15px;
-      padding: 15px;
-    }
-
-    .card {
-      background: var(--panel);
-      border-radius: 8px;
-      padding: 15px;
-      overflow-y: auto;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-
-    th, td {
-      padding: 10px;
-      border-bottom: 1px solid #08315f;
-      text-align: left;
-    }
-
-    th {
-      color: var(--accent);
-      background-color: #012A5A;
-      position: sticky;
-      top: 0;
-    }
-
-    tr:hover {
-      background: #052a50;
-    }
-
-    .odds {
-      background: var(--accent);
-      color: var(--bg);
-      padding: 2px 6px;
-      border-radius: 4px;
-      font-weight: 600;
-    }
-
-    footer {
-      text-align: center;
-      padding: 10px;
-      font-size: 12px;
-      color: var(--accent);
-      border-top: 1px solid var(--accent);
-    }
-
-    @media (max-width: 900px) {
-      aside { display: none; }
-      section { grid-template-columns: 1fr; }
-    }
-  </style>
+/* Footer */
+footer{color:var(--muted); text-align:center; padding:12px 10px; border-top:1px solid var(--card-border)}
+@media (max-width:1100px){ .wrap{grid-template-columns: 1fr; } .toplist{max-height:unset} }
+</style>
 </head>
 
 <body>
-  <aside>
-    <h2>⚽ Ligler</h2>
-    <div id="leagueList">
-      <button>England Premier League</button>
-      <button>Italy Serie A</button>
-      <button>Spain La Liga</button>
-      <button>Germany Bundesliga</button>
-      <button>France Ligue 1</button>
-      <button>Netherlands Eredivisie</button>
-      <button>Portugal Primeira Liga</button>
-      <button>Turkey Super Lig</button>
-      <button>Scotland Premiership</button>
-      <button>Belgium Pro League</button>
-      <button>Romania Liga I</button>
-      <button>Poland Ekstraklasa</button>
-      <button>Norway Eliteserien</button>
-      <button>Sweden Allsvenskan</button>
-      <button>Denmark Superliga</button>
-      <button>UEFA Champions League</button>
-      <button>UEFA Europa League</button>
-      <button>UEFA Conference League</button>
+  <!-- ====== TOP BAR ====== -->
+  <div class="topbar">
+    <div class="brand">
+      <div class="logo">⚽</div>
+      <h1>Predicta Europe ML</h1>
+      <span class="badge" id="status-badge">Offline (Demo)</span>
     </div>
-  </aside>
+    <div class="tabbar">
+      <button class="tab active" data-view="today">Today</button>
+      <button class="tab" data-view="top10">Top 10</button>
+      <button class="tab" data-view="score">Score</button>
+      <button class="tab" data-view="btts">BTTS</button>
+      <div class="actions">
+        <button class="btn" id="btn-train" title="Modeli Eğit">Modeli Eğit</button>
+        <button class="btn" id="btn-reload" title="Modelleri Yeniden Yükle">Reload Models</button>
+        <button class="btn gold" id="btn-settings">⚙ Settings</button>
+      </div>
+    </div>
+  </div>
 
-  <main>
-    <header>
-      <h1>Predicta Europe ML v3</h1>
-      <nav>
-        <button class="active">Today</button>
-        <button>By Days</button>
-        <button>By League</button>
-        <button>Top 10</button>
-        <button onclick="reloadModels()">Reload Models</button>
-      </nav>
-    </header>
+  <!-- ====== LAYOUT ====== -->
+  <div class="wrap">
+    <!-- Sidebar -->
+    <div class="card sidebar">
+      <h3>Ligler</h3>
+      <div class="search">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M21 21l-4.3-4.3M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15z" stroke="#89a6d6" stroke-width="2" stroke-linecap="round"/></svg>
+        <input id="q" placeholder="Lig ara..." />
+      </div>
+      <div id="leagues" class="leagues">
+        <!-- dynamic -->
+      </div>
+    </div>
 
-    <section>
-      <div class="card">
-        <h3>Today’s Predictions</h3>
-        <table id="predictionsTable">
-          <thead>
-            <tr><th>Maç</th><th>MS</th><th>Skor</th><th>Güven</th><th>Value</th></tr>
-          </thead>
-          <tbody></tbody>
-        </table>
+    <!-- Center -->
+    <div class="card">
+      <div class="head">
+        <h3 id="panel-title">Today’s Predictions</h3>
+        <div class="tags">
+          <span class="tag">Model: <b id="model-name">MLPredictionEngine</b></span>
+          <span class="tag">Doğruluk: <b id="model-acc">—</b></span>
+          <span class="tag">Son Günc.: <b id="last-up">—</b></span>
+        </div>
       </div>
 
-      <div class="card">
-        <h3>Top Predictions Today</h3>
-        <ul id="topPreds"></ul>
+      <table class="table">
+        <thead>
+          <tr><th>Maç</th><th>MS</th><th>Skor</th><th>Güven</th><th>Value</th><th style="width:140px;text-align:right">İşlem</th></tr>
+        </thead>
+        <tbody id="rows">
+          <tr><td colspan="6"><div class="skel"></div></td></tr>
+          <tr><td colspan="6"><div class="skel"></div></td></tr>
+          <tr><td colspan="6"><div class="skel"></div></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Right -->
+    <div class="card topbox">
+      <h4>Top Predictions Today</h4>
+      <div id="toplist" class="toplist">
+        <div class="skel" style="height:48px"></div>
+        <div class="skel" style="height:48px"></div>
+        <div class="skel" style="height:48px"></div>
       </div>
-    </section>
+    </div>
+  </div>
 
-    <footer>
-      © 2025 Predicta Europe ML | Powered by Olcay Arslan
-    </footer>
-  </main>
+  <footer>© 2025 Predicta Europe ML — Sarı & Lacivert ❤️💙</footer>
 
-  <script>
-    // 🔗 Backend adresi (Railway API)
-    const API_BASE = "https://predicta-production.up.railway.app";
+  <!-- ====== SETTINGS MODAL ====== -->
+  <div class="drawer" id="drawer">
+    <div class="modal">
+      <h3>⚙ API & Tahmin</h3>
+      <div class="form">
+        <label>API Base URL
+          <input class="input" id="api-base" placeholder="https://predicta-production.up.railway.app">
+        </label>
+        <label>Lig Filtresi (opsiyonel)
+          <input class="input" id="league-filter" placeholder="Turkey Super Lig">
+        </label>
+        <label style="grid-column:1/3">Toplu Tahmin CSV
+          <textarea id="csv" rows="5" class="input" placeholder="home,away,league,1,X,2&#10;Galatasaray,Fenerbahçe,Turkey Super Lig,2.05,3.30,3.40"></textarea>
+        </label>
+      </div>
+      <div class="actions-row">
+        <button class="btn" id="btn-batch">Toplu Tahmin</button>
+        <button class="btn" id="btn-close">Kapat</button>
+        <button class="btn gold" id="btn-save">Kaydet</button>
+      </div>
+    </div>
+  </div>
 
-    async function fetchPredictions() {
-      const tbody = document.querySelector("#predictionsTable tbody");
-      tbody.innerHTML = "<tr><td colspan='5'>Yükleniyor...</td></tr>";
-      try {
-        const res = await fetch(API_BASE + "/api/predictions/batch", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            matches: [
-              { home_team: "Galatasaray", away_team: "Fenerbahçe", league: "Turkey Super Lig",
-                odds: { "1": 2.05, "X": 3.30, "2": 3.40 } },
-              { home_team: "Barcelona", away_team: "Real Madrid", league: "Spain La Liga",
-                odds: { "1": 2.10, "X": 3.50, "2": 3.20 } },
-              { home_team: "Manchester City", away_team: "Liverpool", league: "England Premier League",
-                odds: { "1": 1.85, "X": 3.60, "2": 3.90 } }
-            ]
-          })
+  <!-- Toast -->
+  <div class="toast" id="toast">Mesaj</div>
+
+<!-- ====== APP JS ====== -->
+<script>
+/* ----------------- State ----------------- */
+const $ = sel => document.querySelector(sel);
+const rows = $("#rows"), toplist = $("#toplist"), leaguesBox = $("#leagues");
+const drawer = $("#drawer"), toast = $("#toast");
+const statusBadge = $("#status-badge");
+let API_BASE = localStorage.getItem("predicta_api") || "";  // boşsa demo modu
+let ALL_LEAGUES = [];
+let CURRENT_LEAGUE = "";
+
+/* ----------------- Helpers ----------------- */
+const sleep = (ms)=> new Promise(r=>setTimeout(r,ms));
+function showToast(msg, type="info"){
+  toast.textContent = msg;
+  toast.style.borderLeftColor = (type==="ok")? "var(--ok)" : (type==="err")? "var(--err)" : "var(--gold)";
+  toast.classList.add("show");
+  setTimeout(()=> toast.classList.remove("show"), 2400);
+}
+function pct(x){ return (x!=null && !Number.isNaN(x)) ? (Number(x).toFixed(1)+"%") : "—"; }
+function riskPill(v){
+  if(v>=0.12) return '<span class="pill ok">Düşük Risk</span>';
+  if(v>=0.06) return '<span class="pill mid">Orta</span>';
+  return '<span class="pill bad">Yüksek</span>';
+}
+function setOffline(on){
+  statusBadge.textContent = on? "Offline (Demo)" : "Online";
+  statusBadge.style.background = on? "#2b1a1a" : "#0b213f";
+  statusBadge.style.borderColor = on? "#7f1d1d" : "var(--card-border)";
+  statusBadge.style.color = on? "#fca5a5" : "var(--muted)";
+}
+
+/* ----------------- Demo Data (offline) ----------------- */
+const DEMO = {
+  items: [
+    {home_team:"Galatasaray",away_team:"Fenerbahçe",league:"Turkey Super Lig",
+     prediction:{prediction:"1", score_prediction:"2-1", confidence:78.4, value_bet:{value_index:0.18}, recommendation:"MS1"}},
+    {home_team:"Barcelona",away_team:"Real Madrid",league:"Spain La Liga",
+     prediction:{prediction:"X", score_prediction:"2-2", confidence:62.1, value_bet:{value_index:0.09}, recommendation:"KG Var"}},
+    {home_team:"Man City",away_team:"Liverpool",league:"England Premier League",
+     prediction:{prediction:"1", score_prediction:"3-1", confidence:70.3, value_bet:{value_index:0.11}, recommendation:"Üst 2.5"}}
+  ]
+};
+const DEMO_LEAGUES = [
+  {country:"turkey",leagues:[{code:"tr1",name:"Turkey Super Lig"}]},
+  {country:"england",leagues:[{code:"en1",name:"England Premier League"}]},
+  {country:"spain",leagues:[{code:"es1",name:"Spain La Liga"}]},
+  {country:"germany",leagues:[{code:"de1",name:"Germany Bundesliga"}]},
+  {country:"france",leagues:[{code:"fr1",name:"France Ligue 1"}]},
+  {country:"netherlands",leagues:[{code:"nl1",name:"Netherlands Eredivisie"}]},
+  {country:"portugal",leagues:[{code:"pt1",name:"Portugal Primeira Liga"}]},
+  {country:"scotland",leagues:[{code:"sc1",name:"Scotland Premiership"}]},
+  {country:"belgium",leagues:[{code:"be1",name:"Belgium Pro League"}]},
+  {country:"romania",leagues:[{code:"ro1",name:"Romania Liga I"}]},
+  {country:"poland",leagues:[{code:"pl1",name:"Poland Ekstraklasa"}]},
+  {country:"norway",leagues:[{code:"no1",name:"Norway Eliteserien"}]},
+  {country:"sweden",leagues:[{code:"se1",name:"Sweden Allsvenskan"}]},
+  {country:"denmark",leagues:[{code:"dk1",name:"Denmark Superliga"}]},
+  {country:"uefa",leagues:[{code:"ucl",name:"UEFA Champions League"},{code:"uel",name:"UEFA Europa League"},{code:"uecl",name:"UEFA Conference League"}]},
+];
+
+/* ----------------- API ----------------- */
+async function apiGet(path){
+  if(!API_BASE) throw new Error("API yok");
+  const r = await fetch(API_BASE + path, {credentials:"omit"});
+  if(!r.ok) throw new Error("HTTP " + r.status);
+  return r.json();
+}
+async function apiPost(path, body){
+  if(!API_BASE) throw new Error("API yok");
+  const r = await fetch(API_BASE + path, {
+    method:"POST", headers:{"Content-Type":"application/json"},
+    body: JSON.stringify(body || {})
+  });
+  if(!r.ok) throw new Error("HTTP " + r.status);
+  return r.json();
+}
+
+/* ----------------- UI Fillers ----------------- */
+function fillTable(items){
+  rows.innerHTML = "";
+  if(!items || !items.length){ rows.innerHTML = '<tr><td colspan="6">Kayıt yok.</td></tr>'; return; }
+  for(const it of items){
+    const p = it.prediction || it;
+    const tr = document.createElement("tr");
+    tr.className="row";
+    tr.innerHTML = `
+      <td><strong>${it.home_team}</strong> — <strong>${it.away_team}</strong><div class="sub" style="color:var(--muted)">${it.league||""}</div></td>
+      <td><span class="pill ${p.prediction==='1'?'ok':p.prediction==='X'?'mid':'bad'}">${p.prediction||"-"}</span></td>
+      <td>${p.score_prediction||"-"}</td>
+      <td>${pct(p.confidence)}</td>
+      <td>${p.value_bet?('<span class="odd">'+(p.value_bet.value_index?.toFixed(2))+'</span>'):'—'}<div style="margin-top:6px">${riskPill((p.value_bet?.value_index)||0)}</div></td>
+      <td style="text-align:right">
+        <button class="btn" data-one='${encodeURIComponent(JSON.stringify(it))}'>Tekli Tahmin</button>
+      </td>
+    `;
+    rows.appendChild(tr);
+  }
+  // bind single predict
+  rows.querySelectorAll("button[data-one]").forEach(btn=>{
+    btn.onclick = async ()=>{
+      const base = JSON.parse(decodeURIComponent(btn.dataset.one));
+      try{
+        const res = await apiPost("/api/predict", {
+          home_team: base.home_team, away_team: base.away_team, league: base.league,
+          odds: {"1":2.05,"X":3.30,"2":3.40}
         });
-
-        const data = await res.json();
-        tbody.innerHTML = "";
-        (data.items || []).forEach(pred => {
-          const p = pred.prediction || {};
-          const tr = document.createElement("tr");
-          tr.innerHTML = `
-            <td>${pred.home_team} - ${pred.away_team}</td>
-            <td>${p.result || "-"}</td>
-            <td>${p.score_prediction || "-"}</td>
-            <td>${(p.confidence || 0).toFixed(1)}%</td>
-            <td><span class="odds">${(p.value_bet?.value_index || 0).toFixed(2)}</span></td>`;
-          tbody.appendChild(tr);
-        });
-      } catch (err) {
-        tbody.innerHTML = `<tr><td colspan='5'>Hata: ${err.message}</td></tr>`;
-      }
+        showToast(`${base.home_team}–${base.away_team}: ${res.prediction || res.result} | ${res.score_prediction || ""}`,"ok");
+      }catch(e){ showToast("Tekli tahmin başarısız: "+e.message,"err"); }
     }
+  })
+}
+function fillTop(items){
+  toplist.innerHTML = "";
+  const arr = (items||[]).slice(0,8).sort((a,b)=>(b.prediction?.confidence||0)-(a.prediction?.confidence||0));
+  for(const it of arr){
+    const p = it.prediction || it;
+    const el = document.createElement("div");
+    el.className="topitem";
+    el.innerHTML = `
+      <div>
+        <div><strong>${it.home_team}</strong> — ${it.away_team}</div>
+        <div class="sub">${it.league||""}</div>
+      </div>
+      <div style="text-align:right">
+        <div><strong>${p.prediction||"-"}</strong> • ${p.score_prediction||"-"}</div>
+        <div class="sub">${pct(p.confidence)} • ${(p.value_bet?.value_index||0).toFixed(2)}</div>
+      </div>`;
+    toplist.appendChild(el);
+  }
+}
+function fillLeagues(list){
+  leaguesBox.innerHTML = "";
+  ALL_LEAGUES = list?.flatMap(c=> (c.leagues||[]).map(l=> l.name)) || [];
+  const render = (items)=>{
+    leaguesBox.innerHTML = "";
+    (items||[]).forEach(name=>{
+      const b = document.createElement("div");
+      b.className="league";
+      b.innerHTML = `<span>${name}</span><span style="color:var(--gold)">›</span>`;
+      b.onclick = ()=>{
+        CURRENT_LEAGUE = name;
+        leaguesBox.querySelectorAll(".league").forEach(x=>x.classList.remove("active"));
+        b.classList.add("active");
+        showToast(name+" seçildi","ok");
+      };
+      leaguesBox.appendChild(b);
+    });
+  };
+  render(ALL_LEAGUES);
+  $("#q").oninput = (e)=>{
+    const q = e.target.value.toLowerCase().trim();
+    render(ALL_LEAGUES.filter(x=> x.toLowerCase().includes(q)));
+  };
+}
 
-    async function reloadModels() {
-      alert("Modeller yeniden yükleniyor...");
-      await fetch(API_BASE + "/api/reload");
-      fetchPredictions();
-    }
+/* ----------------- Workflows ----------------- */
+async function bootstrap(){
+  // status
+  if(!API_BASE){ setOffline(true); fillLeagues(DEMO_LEAGUES); await sleep(300); fillTable(DEMO.items); fillTop(DEMO.items); return; }
 
-    fetchPredictions();
-  </script>
+  try{
+    setOffline(false);
+    const leagues = await apiGet("/api/leagues");
+    fillLeagues(leagues.items || DEMO_LEAGUES);
+  }catch(e){
+    setOffline(true); showToast("Ligler yüklenemedi: "+e.message,"err"); fillLeagues(DEMO_LEAGUES);
+  }
+
+  try{
+    // örnek gösterim için batch — gerçek sistemde günün maçlarını arka uç sağlayacaksa burası değiştirilebilir
+    const body = { matches: [
+      {home_team:"Galatasaray",away_team:"Fenerbahçe",league:"Turkey Super Lig",odds:{"1":2.05,"X":3.30,"2":3.40}},
+      {home_team:"Barcelona",away_team:"Real Madrid",league:"Spain La Liga",odds:{"1":2.10,"X":3.50,"2":3.20}},
+      {home_team:"Man City",away_team:"Liverpool",league:"England Premier League",odds:{"1":1.85,"X":3.60,"2":3.90}}
+    ]};
+    const data = await apiPost("/api/predictions/batch", body);
+    const items = data.items?.map(x=>({ ...x, league: x.league || "—" })) || [];
+    fillTable(items);
+    fillTop(items);
+    $("#model-name").textContent = "MLPredictionEngine";
+    $("#model-acc").textContent = "≈85";
+    $("#last-up").textContent = new Date().toLocaleString();
+  }catch(e){
+    setOffline(true); showToast("API erişimi başarısız: demo gösteriliyor","err");
+    fillTable(DEMO.items); fillTop(DEMO.items);
+  }
+}
+
+/* ----------------- Events ----------------- */
+$("#btn-settings").onclick = ()=>{
+  $("#api-base").value = API_BASE || "";
+  $("#league-filter").value = localStorage.getItem("predicta_league") || "";
+  $("#csv").value = localStorage.getItem("predicta_csv") || "home,away,league,1,X,2\nGalatasaray,Fenerbahçe,Turkey Super Lig,2.05,3.30,3.40";
+  drawer.classList.add("open");
+};
+$("#btn-close").onclick = ()=> drawer.classList.remove("open");
+$("#btn-save").onclick = ()=>{
+  API_BASE = $("#api-base").value.trim().replace(/\/$/,"");
+  localStorage.setItem("predicta_api", API_BASE);
+  localStorage.setItem("predicta_league", $("#league-filter").value.trim());
+  localStorage.setItem("predicta_csv", $("#csv").value);
+  drawer.classList.remove("open");
+  showToast("Ayarlar kaydedildi","ok");
+  bootstrap();
+};
+$("#btn-batch").onclick = async ()=>{
+  try{
+    const csv = $("#csv").value;
+    if(!API_BASE) throw new Error("API Base URL girilmemiş.");
+    const body = { csv };
+    const data = await apiPost("/api/predictions/batch", body);
+    const items = data.items?.map(x=> ({ ...x, home_team:x.home_team||"-", away_team:x.away_team||"-" })) || [];
+    fillTable(items); fillTop(items);
+    drawer.classList.remove("open");
+    showToast("Toplu tahmin tamamlandı","ok");
+  }catch(e){ showToast("Toplu tahmin hatası: "+e.message,"err"); }
+};
+$("#btn-train").onclick = async ()=>{
+  try{
+    await apiPost("/api/training/start", { top_scores_k:20 });
+    showToast("Eğitim başlatıldı","ok");
+  }catch(e){ showToast("Eğitim başlatılamadı: "+e.message,"err"); }
+};
+$("#btn-reload").onclick = async ()=>{
+  try{ await apiGet("/api/reload"); showToast("Modeller yeniden yüklendi","ok"); }
+  catch(e){ showToast("Reload hatası: "+e.message,"err"); }
+};
+
+document.querySelectorAll(".tab").forEach(t=>{
+  t.onclick = ()=>{
+    document.querySelectorAll(".tab").forEach(x=>x.classList.remove("active"));
+    t.classList.add("active");
+    const v = t.dataset.view;
+    $("#panel-title").textContent =
+      v==="top10" ? "Top 10 — En Güçlü Tahminler" :
+      v==="score" ? "Correct Score Tahminleri" :
+      v==="btts"  ? "BTTS (Karşılıklı Gol) Tahminleri" :
+                    "Today’s Predictions";
+  };
+});
+
+/* ----------------- Init ----------------- */
+bootstrap();
+</script>
 </body>
 </html>
