@@ -475,6 +475,38 @@ document.querySelectorAll(".tab").forEach(t=>{
 
 /* ----------------- Init ----------------- */
 bootstrap();
+// API_BASE'i settings'te verdiğinizi varsayıyorum (https://predicta-production.up.railway.app)
+
+async function loadLiveToday(){
+  const tbody = document.querySelector("#rows");
+  tbody.innerHTML = '<tr><td colspan="6">Yükleniyor...</td></tr>';
+  try{
+    const res = await fetch(API_BASE + "/api/predict/today"); // lig filtresi: ?league=super%20lig
+    const data = await res.json();
+    const items = data.items || [];
+    tbody.innerHTML = "";
+    items.forEach(it=>{
+      const p = it.prediction || {};
+      const tr = document.createElement("tr");
+      tr.className="row";
+      tr.innerHTML = `
+        <td><strong>${it.home_team}</strong> — <strong>${it.away_team}</strong>
+            <div class="sub" style="color:#98a6c9">${it.league||""} • ${it.start_time||""}</div></td>
+        <td><span class="pill ${p.prediction==='1'?'ok':p.prediction==='X'?'mid':'bad'}">${p.prediction||"-"}</span></td>
+        <td>${p.score_prediction||"-"}</td>
+        <td>${(p.confidence||0).toFixed(1)}%</td>
+        <td>${p.value_bet?('<span class="odd">'+(p.value_bet.value_index||0).toFixed(2)+'</span>'):'—'}</td>
+        <td style="text-align:right"><button class="btn" onclick='alert(${JSON.stringify(p).replace(/'/g,"\\'")})'>Detay</button></td>
+      `;
+      tbody.appendChild(tr);
+    });
+  }catch(e){
+    tbody.innerHTML = `<tr><td colspan="6">Hata: ${e.message}</td></tr>`;
+  }
+}
+
+// Today sekmesi açılır açılmaz çalıştır:
+loadLiveToday();
 </script>
 </body>
 </html>
