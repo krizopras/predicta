@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Predicta Europe ML — Pro Dashboard</title>
+<title>Predicta Europe ML – Pro Dashboard</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
@@ -33,10 +33,11 @@ a{color:var(--gold)}
 .status{font-size:12px;padding:4px 8px;border-radius:999px;border:1px solid var(--b);background:#0a1e38;color:var(--muted)}
 .status.online{border-color:#134e20;color:#a7f3d0;background:rgba(34,197,94,.12)}
 .actions{display:flex; gap:8px}
-.btn{background:#0b213f;color:var(--text);border:1px solid var(--b);border-radius:10px;padding:9px 12px;cursor:pointer;font-weight:600;transition:.2s}
+.btn{background:#0b213f;color:var(--text);border:1px solid var(--b);border-radius:10px;padding:9px 12px;cursor:pointer;font-weight:600;transition:.2s;font-size:13px}
 .btn:hover{transform:translateY(-1px);border-color:var(--gold);color:var(--gold)}
 .btn.gold{background:linear-gradient(90deg,var(--gold),var(--gold-2));color:#081b39;border:none}
 .btn.gold:hover{filter:brightness(1.05)}
+.btn:disabled{opacity:0.5;cursor:not-allowed}
 
 /* Layout */
 .wrap{display:grid;grid-template-columns:280px 1fr;gap:16px;padding:16px;max-width:1500px;margin:0 auto}
@@ -62,7 +63,7 @@ a{color:var(--gold)}
 .kpi .sub{font-size:12px;color:var(--muted);margin-top:4px}
 
 /* Filters Row */
-.filters{display:flex;gap:10px;align-items:center;background:linear-gradient(180deg,#0e2040,#0b1b35);border:1px solid var(--b);padding:10px;border-radius:14px}
+.filters{display:flex;gap:10px;align-items:center;background:linear-gradient(180deg,#0e2040,#0b1b35);border:1px solid var(--b);padding:10px;border-radius:14px;flex-wrap:wrap}
 .select,.input{background:#0b213f;color:var(--text);border:1px solid var(--b);border-radius:10px;padding:10px}
 .tag{font-size:12px;border:1px solid var(--b);background:#0b213f;padding:4px 10px;border-radius:999px}
 .refresh{margin-left:auto}
@@ -70,15 +71,17 @@ a{color:var(--gold)}
 /* Table */
 .card{background:linear-gradient(180deg,#0e2242,#0c1d38);border:1px solid var(--b);border-radius:14px;padding:14px;box-shadow:var(--shadow);min-height:220px}
 .card h3{margin:2px 0 10px;font-size:16px}
+.table-wrapper{overflow-x:auto}
 table{width:100%;border-collapse:collapse}
 th,td{padding:10px;border-bottom:1px dashed var(--b);text-align:left}
-th{color:var(--gold);position:sticky;top:0;background:#0c1d38}
+th{color:var(--gold);position:sticky;top:0;background:#0c1d38;white-space:nowrap}
 tr:hover{background:#0a2243}
-.pill{padding:2px 8px;border-radius:999px;font-weight:700}
+.pill{padding:3px 10px;border-radius:999px;font-weight:700;font-size:13px;display:inline-block}
 .ok{background:rgba(34,197,94,.15);border:1px solid #14532d;color:#86efac}
 .mid{background:rgba(245,158,11,.15);border:1px solid #7c5806;color:#facc15}
 .bad{background:rgba(239,68,68,.15);border:1px solid #7f1d1d;color:#fca5a5}
-.odd{display:inline-flex;align-items:center;padding:2px 8px;border-radius:6px;font-weight:700;background:var(--gold);color:#072046}
+.odd{display:inline-flex;align-items:center;padding:2px 8px;border-radius:6px;font-weight:700;background:var(--gold);color:#072046;font-size:13px}
+.score-box{background:#0a1e38;border:1px solid var(--b);padding:4px 8px;border-radius:6px;font-weight:700;color:var(--gold);font-size:14px}
 
 /* Skeleton */
 .skel{position:relative;overflow:hidden;background:#0b213f;min-height:38px;border-radius:10px;border:1px solid var(--b)}
@@ -87,18 +90,24 @@ tr:hover{background:#0a2243}
 
 /* Toast & Modal */
 .toast{position:fixed;bottom:16px;left:50%;transform:translateX(-50%);background:#0b213f;border:1px solid var(--b);border-left:4px solid var(--gold);
-  color:var(--text);padding:10px 14px;border-radius:12px;box-shadow:var(--shadow);display:none;z-index:60}
+  color:var(--text);padding:10px 14px;border-radius:12px;box-shadow:var(--shadow);display:none;z-index:60;max-width:90%;font-size:14px}
 .toast.show{display:block}
 .drawer{position:fixed;inset:0;background:rgba(0,0,0,.45);display:none;align-items:center;justify-content:center;z-index:70}
 .drawer.open{display:flex}
-.modal{width:min(720px,92vw);background:#0d1e38;border:1px solid var(--b);border-radius:14px;padding:16px;box-shadow:var(--shadow)}
+.modal{width:min(720px,92vw);background:#0d1e38;border:1px solid var(--b);border-radius:14px;padding:16px;box-shadow:var(--shadow);max-height:85vh;overflow-y:auto}
 .modal h3{margin:0 0 10px}
 .form{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.form .input,.form .select,textarea{width:100%}
+.form .input,.form .select,textarea{width:100%;background:#0b213f;color:var(--text);border:1px solid var(--b);border-radius:10px;padding:10px}
 .actions-row{display:flex;gap:10px;justify-content:flex-end;margin-top:10px}
 
 /* Footer */
-footer{color:var(--muted);text-align:center;padding:14px;border-top:1px solid var(--b);margin-top:10px}
+footer{color:var(--muted);text-align:center;padding:14px;border-top:1px solid var(--b);margin-top:10px;font-size:13px}
+
+/* Loading overlay */
+.loading-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.7);display:none;align-items:center;justify-content:center;z-index:100}
+.loading-overlay.show{display:flex}
+.spinner{width:50px;height:50px;border:4px solid var(--b);border-top-color:var(--gold);border-radius:50%;animation:spin 1s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
 
 @media (max-width:1100px){
   .wrap{grid-template-columns:1fr}
@@ -108,16 +117,22 @@ footer{color:var(--muted);text-align:center;padding:14px;border-top:1px solid va
 </head>
 <body>
 
+<!-- Loading Overlay -->
+<div id="loading" class="loading-overlay">
+  <div class="spinner"></div>
+</div>
+
 <!-- Topbar -->
 <div class="topbar">
   <div class="brand">
     <div class="logo">⚽</div>
-    <h1>Predicta Europe ML — Pro</h1>
+    <h1>Predicta Europe ML – Pro</h1>
     <span id="status" class="status">Bağlanıyor…</span>
   </div>
   <div class="actions">
-    <button class="btn" id="btn-train" title="Modeli Eğit">Modeli Eğit</button>
-    <button class="btn" id="btn-reload" title="Modelleri Yeniden Yükle">Reload</button>
+    <button class="btn" id="btn-load-history" title="Geçmiş Verileri Yükle">📊 Geçmiş Yükle</button>
+    <button class="btn" id="btn-train" title="Modeli Eğit">🎓 Eğit</button>
+    <button class="btn" id="btn-reload" title="Modelleri Yeniden Yükle">🔄 Reload</button>
     <button class="btn gold" id="btn-settings">⚙ Ayarlar</button>
   </div>
 </div>
@@ -140,7 +155,7 @@ footer{color:var(--muted);text-align:center;padding:14px;border-top:1px solid va
     <!-- KPIs -->
     <div class="kpis">
       <div class="kpi"><h4>Bugünkü Maç</h4><div class="val" id="kpi-matches">—</div><div class="sub">Nesine bülteni</div></div>
-      <div class="kpi"><h4>Model Doğruluk</h4><div class="val" id="kpi-acc">—</div><div class="sub">Son eğitim</div></div>
+      <div class="kpi"><h4>Model Doğruluk</h4><div class="val" id="kpi-acc">—</div><div class="sub">Ensemble model</div></div>
       <div class="kpi"><h4>En Güvenli Tahmin</h4><div class="val" id="kpi-top">—</div><div class="sub" id="kpi-top-sub">—</div></div>
       <div class="kpi"><h4>Son Güncelleme</h4><div class="val" id="kpi-up">—</div><div class="sub">Canlı yenileme açık</div></div>
     </div>
@@ -154,30 +169,32 @@ footer{color:var(--muted);text-align:center;padding:14px;border-top:1px solid va
         <option value="value">Value</option>
       </select>
       <input id="txt-team" class="input" placeholder="Takım ara…">
-      <span class="tag">Model: <b>MLPredictionEngine</b></span>
+      <span class="tag">Model: <b>ML Ensemble</b></span>
       <button class="btn refresh" id="btn-refresh">↻ Yenile</button>
     </div>
 
     <!-- Table -->
     <div class="card">
-      <h3>Bugünkü Maçlar & Tahminler</h3>
-      <table>
-        <thead>
-          <tr>
-            <th style="min-width:260px">Maç</th>
-            <th>MS</th>
-            <th>Skor</th>
-            <th>Güven</th>
-            <th>Value</th>
-            <th style="width:140px;text-align:right">İşlem</th>
-          </tr>
-        </thead>
-        <tbody id="rows">
-          <tr><td colspan="6"><div class="skel"></div></td></tr>
-          <tr><td colspan="6"><div class="skel"></div></td></tr>
-          <tr><td colspan="6"><div class="skel"></div></td></tr>
-        </tbody>
-      </table>
+      <h3>Bugünkü Maçlar & AI Tahminleri</h3>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th style="min-width:260px">Maç</th>
+              <th>MS</th>
+              <th>Skor</th>
+              <th>Güven</th>
+              <th>Value</th>
+              <th style="width:140px;text-align:right">İşlem</th>
+            </tr>
+          </thead>
+          <tbody id="rows">
+            <tr><td colspan="6"><div class="skel"></div></td></tr>
+            <tr><td colspan="6"><div class="skel"></div></td></tr>
+            <tr><td colspan="6"><div class="skel"></div></td></tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </section>
 </div>
@@ -187,7 +204,7 @@ footer{color:var(--muted);text-align:center;padding:14px;border-top:1px solid va
 <!-- Modal (Ayarlar & Toplu Tahmin) -->
 <div id="drawer" class="drawer">
   <div class="modal">
-    <h3>⚙ Ayarlar</h3>
+    <h3>⚙ Ayarlar & Toplu Tahmin</h3>
     <div class="form">
       <label>Lig Filtresi (opsiyonel)
         <input id="league-filter" class="input" placeholder="Turkey Super Lig">
@@ -211,12 +228,12 @@ footer{color:var(--muted);text-align:center;padding:14px;border-top:1px solid va
 
 <script>
 /* ================= Config ================= */
-const API_BASE = "https://predicta-production.up.railway.app"; // SABİT
+const API_BASE = "https://predicta-production.up.railway.app";
 const REFRESH_DEFAULT_MIN = 5;
 
 /* ================= State & helpers ================= */
 const $ = s=>document.querySelector(s);
-const rows = $("#rows"), leaguesBox=$("#leagues"), statusEl=$("#status");
+const rows = $("#rows"), leaguesBox=$("#leagues"), statusEl=$("#status"), loadingEl=$("#loading");
 let ALL_ITEMS=[], FILTERED=[], ALL_LEAGUES=[], CURRENT_LEAGUE="";
 let refreshTimer=null;
 
@@ -225,7 +242,7 @@ function toast(msg,type="info"){
   el.textContent=msg;
   el.style.borderLeftColor = type==="ok"?"var(--ok)":type==="err"?"var(--err)":"var(--gold)";
   el.classList.add("show");
-  setTimeout(()=>el.classList.remove("show"),2200);
+  setTimeout(()=>el.classList.remove("show"),3000);
 }
 function pct(x){return (x!=null && !Number.isNaN(x)) ? (Number(x).toFixed(1)+"%") : "—";}
 function valuePill(v){
@@ -236,6 +253,9 @@ function valuePill(v){
 function setStatus(online){
   statusEl.textContent = online ? "Online" : "Offline (API)";
   statusEl.classList.toggle("online", online);
+}
+function showLoading(show){
+  loadingEl.classList.toggle("show", show);
 }
 
 /* ================= API ================= */
@@ -279,7 +299,6 @@ function fillLeagues(list){
     const q=e.target.value.toLowerCase().trim();
     render(ALL_LEAGUES.filter(x=>x.toLowerCase().includes(q)));
   };
-  // fill select
   const sel=$("#sel-league");
   sel.innerHTML='<option value="">Tüm Ligler</option>'+ALL_LEAGUES.map(n=>`<option>${n}</option>`).join("");
 }
@@ -291,19 +310,25 @@ function fillTable(items){
     const p = it.prediction || {};
     const pred = p.prediction || p.result || "-";
     const cls = pred==="1"?"ok":pred==="X"?"mid":pred==="2"?"bad":"";
+    const score = p.score_prediction || "?-?";
+    const conf = p.confidence || 0;
+    const valueIdx = p.value_bet?.value_index || 0;
+    
     const tr = document.createElement("tr");
     tr.innerHTML = `
-      <td><strong>${it.home_team}</strong> — <strong>${it.away_team}</strong>
+      <td>
+        <strong>${it.home_team || "?"}</strong> – <strong>${it.away_team || "?"}</strong>
         <div class="sub">${it.league||""} • ${it.start_time||""}</div>
       </td>
       <td><span class="pill ${cls}">${pred}</span></td>
-      <td>${p.score_prediction||"-"}</td>
-      <td>${pct(p.confidence)}</td>
-      <td>${p.value_bet?('<span class="odd">'+(p.value_bet.value_index||0).toFixed(2)+'</span>'):'—'}
-        <div style="margin-top:6px">${valuePill((p.value_bet?.value_index)||0)}</div>
+      <td><span class="score-box">${score}</span></td>
+      <td>${pct(conf)}</td>
+      <td>
+        <span class="odd">${valueIdx.toFixed(2)}</span>
+        <div style="margin-top:6px">${valuePill(valueIdx)}</div>
       </td>
       <td style="text-align:right">
-        <button class="btn" onclick='singlePredict(${JSON.stringify(it).replace(/'/g,"\\'")})'>Tekli</button>
+        <button class="btn" onclick='showDetails(${JSON.stringify(it).replace(/'/g,"\\'")})'> Detay</button>
       </td>
     `;
     rows.appendChild(tr);
@@ -324,7 +349,6 @@ function applyFilters(){
   const getVal = it => (it.prediction?.value_bet?.value_index)||0;
   if(sort==="confidence") FILTERED.sort((a,b)=>getConf(b)-getConf(a));
   else if(sort==="value") FILTERED.sort((a,b)=>getVal(b)-getVal(a));
-  // else "time" — start_time string’e göre hafifçe sırala
   else FILTERED.sort((a,b)=>String(a.start_time||"").localeCompare(String(b.start_time||"")));
   fillTable(FILTERED);
 }
@@ -346,6 +370,7 @@ function updateKpis(){
 
 async function loadAll(){
   setStatus(true);
+  showLoading(true);
   rows.innerHTML = `
     <tr><td colspan="6"><div class="skel"></div></td></tr>
     <tr><td colspan="6"><div class="skel"></div></td></tr>
@@ -354,7 +379,7 @@ async function loadAll(){
   try{
     const leagues = await fetchLeagues().catch(()=>[]);
     fillLeagues(leagues);
-  }catch(e){ /* ligler kritik değil */ }
+  }catch(e){ console.warn("Lig yükleme hatası:", e); }
 
   try{
     const lf = localStorage.getItem("predicta_league") || "";
@@ -366,28 +391,98 @@ async function loadAll(){
   }catch(e){
     setStatus(false);
     rows.innerHTML = `<tr><td colspan="6" style="color:#fda4af">API hatası: ${e.message}</td></tr>`;
-    toast("API hatası","err");
+    toast("API hatası: "+e.message,"err");
+  }finally{
+    showLoading(false);
   }
 }
 
-async function singlePredict(base){
-  try{
-    const res = await getJSON(API_BASE+"/api/predict", {
-      method:"POST",
-      headers:{"Content-Type":"application/json"},
-      body:JSON.stringify({
-        home_team: base.home_team, away_team: base.away_team, league: base.league,
-        odds: {"1":2.05,"X":3.30,"2":3.40}
-      })
+function showDetails(match){
+  const p = match.prediction || {};
+  let msg = `🏆 ${match.home_team} – ${match.away_team}\n\n`;
+  msg += `📊 Tahmin: ${p.prediction || p.result || "?"}\n`;
+  msg += `⚽ Skor: ${p.score_prediction || "?-?"}\n`;
+  msg += `🎯 Güven: ${(p.confidence||0).toFixed(1)}%\n`;
+  msg += `💰 Value: ${(p.value_bet?.value_index||0).toFixed(3)} (${p.value_bet?.rating||"?"})\n`;
+  msg += `⚠️ Risk: ${p.risk_level || "?"}\n`;
+  msg += `✅ Öneri: ${p.recommendation || "?"}\n\n`;
+  
+  if(p.probabilities){
+    msg += `📈 Olasılıklar:\n`;
+    msg += `   1: ${(p.probabilities.home_win||0).toFixed(1)}%\n`;
+    msg += `   X: ${(p.probabilities.draw||0).toFixed(1)}%\n`;
+    msg += `   2: ${(p.probabilities.away_win||0).toFixed(1)}%\n\n`;
+  }
+  
+  if(p.top3_scores && p.top3_scores.length){
+    msg += `🎲 En Olası Skorlar:\n`;
+    p.top3_scores.forEach((s,i)=>{
+      msg += `   ${i+1}. ${s.score}: ${(s.prob*100).toFixed(1)}%\n`;
     });
-    alert(`${base.home_team}–${base.away_team}\nTahmin: ${res.prediction||res.result||"-"}\nSkor: ${res.score_prediction||"-"}\nGüven: ${(res.confidence||0).toFixed(1)}%`);
-  }catch(e){ toast("Tekli tahmin hatası: "+e.message,"err"); }
+  }
+  
+  msg += `\n🤖 Model: ${p.model || "Unknown"}`;
+  alert(msg);
 }
 
 /* ================= Events ================= */
 $("#btn-refresh").onclick = loadAll;
-$("#btn-reload").onclick = async ()=>{ try{ await getJSON(API_BASE+"/api/reload"); toast("Modeller yeniden yüklendi","ok"); }catch(e){ toast("Reload hatası","err"); } };
-$("#btn-train").onclick  = async ()=>{ try{ await getJSON(API_BASE+"/api/training/start",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({top_scores_k:20})}); toast("Eğitim başlatıldı","ok"); }catch(e){ toast("Eğitim hatası","err"); } };
+
+$("#btn-reload").onclick = async ()=>{
+  try{
+    showLoading(true);
+    await getJSON(API_BASE+"/api/reload");
+    toast("Modeller yeniden yüklendi","ok");
+  }catch(e){
+    toast("Reload hatası: "+e.message,"err");
+  }finally{
+    showLoading(false);
+  }
+};
+
+$("#btn-load-history").onclick = async ()=>{
+  if(!confirm("Geçmiş maç verileri yüklensin mi? (İlk yüklemede 30-60 saniye sürebilir)")){
+    return;
+  }
+  try{
+    showLoading(true);
+    const res = await getJSON(API_BASE+"/api/history/load", {
+      method:"POST",
+      headers:{"Content-Type":"application/json"},
+      body:JSON.stringify({})
+    });
+    toast(`${res.matches_loaded || 0} geçmiş maç yüklendi`,"ok");
+  }catch(e){
+    toast("Geçmiş veri yükleme hatası: "+e.message,"err");
+  }finally{
+    showLoading(false);
+  }
+};
+
+$("#btn-train").onclick = async ()=>{
+  if(!confirm("Model eğitimi başlatılsın mı? (5-10 dakika sürebilir)")){
+    return;
+  }
+  try{
+    showLoading(true);
+    const res = await getJSON(API_BASE+"/api/training/start",{
+      method:"POST",
+      headers:{"Content-Type":"application/json"},
+      body:JSON.stringify({top_scores_k:20})
+    });
+    
+    if(res.success){
+      toast(`Eğitim tamamlandı! Doğruluk: ${(res.ensemble_accuracy*100).toFixed(1)}%`,"ok");
+      localStorage.setItem("predicta_acc", (res.ensemble_accuracy*100).toFixed(0));
+    }else{
+      toast("Eğitim hatası: "+(res.error||"Bilinmeyen"),"err");
+    }
+  }catch(e){
+    toast("Eğitim hatası: "+e.message,"err");
+  }finally{
+    showLoading(false);
+  }
+};
 
 $("#btn-settings").onclick = ()=>{
   $("#league-filter").value = localStorage.getItem("predicta_league") || "";
@@ -395,18 +490,35 @@ $("#btn-settings").onclick = ()=>{
   $("#csv").value = localStorage.getItem("predicta_csv") || "home,away,league,1,X,2\nGalatasaray,Fenerbahçe,Turkey Super Lig,2.05,3.30,3.40";
   $("#drawer").classList.add("open");
 };
+
 $("#btn-close").onclick = ()=> $("#drawer").classList.remove("open");
+
 $("#btn-batch").onclick = async ()=>{
   try{
+    showLoading(true);
     const csv = $("#csv").value;
     localStorage.setItem("predicta_csv", csv);
-    const data = await getJSON(API_BASE+"/api/predictions/batch",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({csv})});
+    const data = await getJSON(API_BASE+"/api/predictions/batch",{
+      method:"POST",
+      headers:{"Content-Type":"application/json"},
+      body:JSON.stringify({csv})
+    });
     ALL_ITEMS = (data.items||[]).map(x=> ({...x, league:x.league||"CSV"}));
-    applyFilters(); updateKpis(); $("#drawer").classList.remove("open"); toast("Toplu tahmin tamamlandı","ok");
-  }catch(e){ toast("Toplu tahmin hatası: "+e.message,"err"); }
+    applyFilters();
+    updateKpis();
+    $("#drawer").classList.remove("open");
+    toast("Toplu tahmin tamamlandı","ok");
+  }catch(e){
+    toast("Toplu tahmin hatası: "+e.message,"err");
+  }finally{
+    showLoading(false);
+  }
 };
 
-$("#sel-league").onchange = e=>{ localStorage.setItem("predicta_league", e.target.value); applyFilters(); };
+$("#sel-league").onchange = e=>{
+  localStorage.setItem("predicta_league", e.target.value);
+  applyFilters();
+};
 $("#sel-sort").onchange = applyFilters;
 $("#txt-team").oninput = ()=>{ applyFilters(); };
 
@@ -416,7 +528,10 @@ function setupAuto(){
   if(refreshTimer) clearInterval(refreshTimer);
   refreshTimer = setInterval(loadAll, min*60*1000);
 }
-$("#auto-min").onchange = (e)=>{ localStorage.setItem("predicta_auto", e.target.value); setupAuto(); };
+$("#auto-min").onchange = (e)=>{
+  localStorage.setItem("predicta_auto", e.target.value);
+  setupAuto();
+};
 
 /* Init */
 setStatus(false);
