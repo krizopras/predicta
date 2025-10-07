@@ -1,169 +1,129 @@
-import requests
-from bs4 import BeautifulSoup
+# ==============================================================
+#  nesine_fetcher.py
+#  Günlük maçları Nesine CDN PreBülten API'sinden çeker.
+#  Çıktı formatı: [{home_team, away_team, league, start_time, odds:{"1":..,"X":..,"2":..}}]
+# ==============================================================
+
+from __future__ import annotations
+import datetime as dt
+import time
 import json
-import re
+from typing import List, Dict, Any, Optional
+import requests
 
-class NesineCompleteFetcher:
-    def __init__(self):
-        self.session = requests.Session()
-        self.headers = {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
-        }
-        self.base_url = "https://www.nesine.com"
-    
-    def get_page_content(self, url_path="/iddaa"):
-        """Nesine sayfasının içeriğini çek"""
+PREBULTEN_URL = "https://cdnbulten.nesine.com/api/bulten/getprebultenfull?date={date}"
+
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (compatible; PredictaBot/1.0; +https://krizopras.github.io/predicta/)",
+    "Accept": "application/json,text/plain,*/*",
+}
+
+def _get(url: str, retries: int = 3, timeout: int = 12) -> Optional[Dict[str, Any]]:
+    last_err = None
+    for i in range(retries):
         try:
-            url = f"{self.base_url}{url_path}"
-            response = self.session.get(url, headers=self.headers, timeout=10)
-            response.raise_for_status()
-            return response.text
+            r = requests.get(url, headers=HEADERS, timeout=timeout)
+            if r.ok:
+                return r.json()
+            last_err = RuntimeError(f"HTTP {r.status_code}")
         except Exception as e:
-            print(f"❌ Sayfa çekme hatası: {e}")
-            return None
-    
-    def extract_leagues_and_matches(self, html_content):
-        """HTML'den lig ve maç bilgilerini çıkar"""
-        soup = BeautifulSoup(html_content, 'html.parser')
-        data = {
-            "leagues": [],
-            "matches": [],
-            "predictions": []
-        }
-        
-        # Ligleri çıkar
-        self._extract_leagues(soup, data)
-        
-        # Maçları çıkar
-        self._extract_matches(soup, data)
-        
-        # Tahminleri çıkar
-        self._extract_predictions(soup, data)
-        
-        return data
-    
-    def _extract_leagues(self, soup, data):
-        """Avrupa liglerini çıkar"""
-        # Tüm metni al ve ligleri parse et
-        all_text = soup.get_text()
-        
-        # Lig pattern'leri
-        league_patterns = {
-            "Premier League": ["Premier League", "hgiflere"],
-            "La Liga": ["La Liga", "Epanya"],
-            "Bundesliga": ["Bundesliga", "Almanya"],
-            "Serie A": ["Serie A", "italya"],
-            "Ligue 1": ["Ligue 1", "Fransa"],
-            "Süper Lig": ["Süper Lig", "Stiger Lig", "Türkiye"],
-            "Eredivisie": ["Erotihiste", "Hollanska"],
-            "Primeira Liga": ["Primeira Liga", "Portekiz"],
-            "Championship": ["Championalip"]
-        }
-        
-        for league_name, keywords in league_patterns.items():
-            for keyword in keywords:
-                if keyword in all_text:
-                    data["leagues"].append({
-                        "name": league_name,
-                        "original_text": keyword,
-                        "category": "AVRUPA LİGLERİ" if league_name in [
-                            "Premier League", "La Liga", "Bundesliga", 
-                            "Serie A", "Ligue 1", "Süper Lig"
-                        ] else "DİĞER LİGLER"
-                    })
-                    break
-    
-    def _extract_matches(self, soup, data):
-        """Maç bilgilerini çıkar"""
-        # Maç elementlerini bul (nesine.com'un yapısına göre)
-        match_elements = soup.find_all(['div', 'tr'], class_=re.compile(r'match|event|game'))
-        
-        for element in match_elements:
-            match_data = self._parse_match_element(element)
-            if match_data:
-                data["matches"].append(match_data)
-    
-    def _parse_match_element(self, element):
-        """Maç elementini parse et"""
-        try:
-            # Takım isimlerini bul
-            teams = element.find_all(['span', 'div'], class_=re.compile(r'team|name'))
-            if len(teams) >= 2:
-                home_team = teams[0].get_text(strip=True)
-                away_team = teams[1].get_text(strip=True)
-                
-                # Oranları bul
-                odds_elements = element.find_all(['span', 'button'], class_=re.compile(r'odd|rate|value'))
-                odds = [odd.get_text(strip=True) for odd in odds_elements[:3]]  # İlk 3 oran
-                
-                return {
-                    "home_team": home_team,
-                    "away_team": away_team,
-                    "odds": odds,
-                    "league": self._detect_league_from_teams(home_team, away_team)
-                }
-        except Exception as e:
-            print(f"Maç parse hatası: {e}")
+            last_err = e
+        time.sleep(0.8 * (i+1))
+    print(f"[nesine_fetcher] GET failed: {last_err}")
+    return None
+
+
+def _extract_1x2(market_list: List[Dict[str, Any]]) -> Optional[Dict[str, float]]:
+    """
+    Nesine JSON'unda bir event için 1-X-2 oranlarını bulur.
+    Piyasalar farklı anahtarlarla gelebilir; en yaygınları:
+      - "Futbol Maç Sonucu" / "Maç Sonucu"
+      - marketCode: "MS" / "MatchResult" vb.
+    """
+    if not market_list:
         return None
-    
-    def _detect_league_from_teams(self, home_team, away_team):
-        """Takım isimlerinden lig tahmini"""
-        # Bu kısmı takım veritabanınızla geliştirebilirsiniz
-        team_leagues = {
-            "Arsenal": "Premier League", "Chelsea": "Premier League",
-            "Real Madrid": "La Liga", "Barcelona": "La Liga",
-            "Bayern": "Bundesliga", "Dortmund": "Bundesliga",
-            "Milan": "Serie A", "Inter": "Serie A",
-            "Galatasaray": "Süper Lig", "Fenerbahçe": "Süper Lig"
-        }
-        
-        for team, league in team_leagues.items():
-            if team in home_team or team in away_team:
-                return league
-        
-        return "Bilinmeyen Lig"
-    
-    def _extract_predictions(self, soup, data):
-        """Tahmin bölümünü çıkar"""
-        # "Günün En İyi Tahminleri" bölümünü bul
-        predictions_text = soup.find(string=re.compile(r"Günün En İyi Tahminleri"))
-        if predictions_text:
-            prediction_section = predictions_text.find_parent()
-            if prediction_section:
-                # Tahmin detaylarını çıkar
-                prediction_data = {
-                    "title": "Günün En İyi Tahminleri",
-                    "analyst": "Tolgar Dine",  # Sabit görünüyor
-                    "content": prediction_section.get_text(strip=True)
-                }
-                data["predictions"].append(prediction_data)
 
-# Kullanım örneği
-def main():
-    scraper = NesineCompleteFetcher()
-    
-    # Sayfayı çek
-    html_content = scraper.get_page_content()
-    
-    if html_content:
-        # Verileri çıkar
-        data = scraper.extract_leagues_and_matches(html_content)
-        
-        # Sonuçları göster
-        print("🟢 LİGLER:")
-        for league in data["leagues"]:
-            print(f"   {league['category']} - {league['name']}")
-        
-        print(f"\n⚽ MAÇLAR ({len(data['matches'])} adet):")
-        for match in data["matches"][:5]:  # İlk 5 maçı göster
-            print(f"   {match['home_team']} vs {match['away_team']}")
-            print(f"   Oranlar: {match.get('odds', [])}")
-            print(f"   Lig: {match.get('league', 'Bilinmiyor')}")
-            print()
-        
-        print("🎯 TAHMİNLER:")
-        for prediction in data["predictions"]:
-            print(f"   {prediction['title']} - {prediction['analyst']}")
+    candidates = []
+    for m in market_list:
+        name = (m.get("name") or m.get("n") or "").lower()
+        code = (m.get("code") or m.get("c") or "").lower()
+        if any(k in name for k in ["maç sonucu", "futbol maç sonucu", "mac sonucu", "match result"]) or code in {"ms", "matchresult"}:
+            candidates.append(m)
+
+    # aday yoksa tüm piyasalara bak
+    for m in (candidates or market_list):
+        outcomes = m.get("outcomes") or m.get("o") or []
+        odds_map = {}
+        for o in outcomes:
+            oname = (o.get("name") or o.get("n") or "").strip().lower()
+            odd = o.get("odd") or o.get("v") or o.get("oddValue")
+            try:
+                odd = float(odd)
+            except Exception:
+                continue
+            if oname in {"1", "ev", "home", "home team"}:
+                odds_map["1"] = odd
+            elif oname in {"x", "beraberlik", "draw"}:
+                odds_map["X"] = odd
+            elif oname in {"2", "dep", "away", "away team"}:
+                odds_map["2"] = odd
+        if {"1","X","2"}.issubset(odds_map.keys()):
+            return odds_map
+    return None
+
+
+def fetch_matches_for_date(date: dt.date) -> List[Dict[str, Any]]:
+    """
+    Verilen tarih için tüm maçları döner.
+    - Tarih formatı: YYYY-MM-DD
+    - Çıktıda lig adı, takımlar, başlama saati (HH:MM) ve 1X2 oranları bulunur.
+    """
+    date_str = date.strftime("%Y-%m-%d")
+    url = PREBULTEN_URL.format(date=date_str)
+    data = _get(url)
+    if not data:
+        return []
+
+    events = []
+    # Nesine dökümünde genellikle "Leagues" -> "Events" bulunur, varyasyonlara karşı korumalıyız.
+    leagues = data.get("Leagues") or data.get("leagues") or data.get("Data") or []
+    for lg in leagues:
+        league_name = lg.get("LeagueName") or lg.get("name") or lg.get("N") or "—"
+        league_events = lg.get("Events") or lg.get("events") or lg.get("E") or []
+        for ev in league_events:
+            home = ev.get("HomeTeamName") or ev.get("home") or ev.get("H") or ""
+            away = ev.get("AwayTeamName") or ev.get("away") or ev.get("A") or ""
+            # saat
+            stime = ev.get("StartDate") or ev.get("startTime") or ev.get("S") or ""
+            if isinstance(stime, str):
+                # "2025-10-06T19:45:00" -> "19:45"
+                hhmm = stime[11:16] if len(stime) >= 16 else stime
+            else:
+                hhmm = ""
+
+            markets = ev.get("Markets") or ev.get("markets") or ev.get("M") or []
+            odds = _extract_1x2(markets)
+            if not odds:
+                # 1x2 bulunamadıysa pas geç
+                continue
+
+            events.append({
+                "home_team": str(home).strip(),
+                "away_team": str(away).strip(),
+                "league": str(league_name).strip(),
+                "start_time": hhmm,
+                "odds": odds
+            })
+    return events
+
+
+def fetch_today() -> List[Dict[str, Any]]:
+    """Bugünün maçlarını döner (yerel tarihe göre)."""
+    today = dt.date.today()
+    return fetch_matches_for_date(today)
+
 
 if __name__ == "__main__":
-    main()
+    out = fetch_today()
+    print(json.dumps(out[:5], ensure_ascii=False, indent=2))
+    print(f"Toplam: {len(out)} maç")
