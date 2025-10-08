@@ -1,17 +1,17 @@
 #!/usr/bin/env python3
 """
-Nesine API'den canlı maç çekme - GÜNCELLENMİŞ VERSİYON
+Nesine API Fetcher - YENİ FORMAT (2025)
+API yapısı: {"g":"...", "C":"...", "N":"...", ...}
 """
 
+from __future__ import annotations
 import datetime as dt
 import time
 import json
 from typing import List, Dict, Any, Optional
 import requests
 
-# Alternatif API endpointleri
 PREBULTEN_URL = "https://cdnbulten.nesine.com/api/bulten/getprebultenfull?date={date}"
-ALTERNATIVE_URL = "https://www.nesine.com/iddaa/pre-bulten?date={date}"
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
@@ -21,7 +21,7 @@ HEADERS = {
 }
 
 def _get(url: str, retries: int = 3, timeout: int = 15) -> Optional[Dict[str, Any]]:
-    """HTTP GET isteği"""
+    """HTTP GET request"""
     last_err = None
     for i in range(retries):
         try:
@@ -32,9 +32,10 @@ def _get(url: str, retries: int = 3, timeout: int = 15) -> Optional[Dict[str, An
             if r.ok:
                 data = r.json()
                 print(f"[Nesine] Veri boyutu: {len(str(data))} karakter")
+                print(f"[Nesine] Ana anahtarlar: {list(data.keys())[:10]}")
                 return data
             else:
-                last_err = RuntimeError(f"HTTP {r.status_code}: {r.text[:200]}")
+                last_err = RuntimeError(f"HTTP {r.status_code}")
         except Exception as e:
             last_err = e
             print(f"[Nesine] Hata (deneme {i+1}/{retries}): {e}")
@@ -46,63 +47,148 @@ def _get(url: str, retries: int = 3, timeout: int = 15) -> Optional[Dict[str, An
     return None
 
 
-def _extract_1x2(market_list: List[Dict[str, Any]]) -> Optional[Dict[str, float]]:
+def parse_nesine_new_format(data: Dict[str, Any], filter_leagues: bool = True) -> List[Dict[str, Any]]:
     """
-    1-X-2 oranlarını çıkar - GELİŞTİRİLMİŞ VERSİYON
+    Yeni Nesine API formatını parse et
+    Format: Her maç bir anahtar-değer çifti, anahtarlar rakamlardan oluşuyor
     """
-    if not market_list:
-        return None
-
-    # Tüm olası piyasa isimlerini dene
-    market_keywords = [
-        "maç sonucu", "mac sonucu", "match result", "ms", "1x2",
-        "futbol maç sonucu", "3 yol"
+    events = []
+    
+    # Önemli ligler filtresi
+    important_keywords = [
+        'süper lig', 'super lig', '1. lig', 'premier league', 'la liga', 'laliga',
+        'serie a', 'bundesliga', 'ligue 1', 'eredivisie', 'primeira liga',
+        'champions league', 'şampiyonlar', 'europa league', 'avrupa ligi',
+        'türkiye kupası', 'ziraat', 'championship', 'pro league'
     ]
     
-    candidates = []
-    for m in market_list:
-        name = str(m.get("name") or m.get("n") or "").lower()
-        code = str(m.get("code") or m.get("c") or "").lower()
-        
-        if any(kw in name for kw in market_keywords) or any(kw in code for kw in market_keywords):
-            candidates.append(m)
+    match_count = 0
+    filtered_count = 0
     
-    # Önce adayları, sonra tüm piyasaları dene
-    for m in (candidates if candidates else market_list):
-        outcomes = m.get("outcomes") or m.get("o") or m.get("Outcomes") or []
-        odds_map = {}
+    # Ana veri yapısını tara
+    for key, value in data.items():
+        # Maç verisi dict olmalı
+        if not isinstance(value, dict):
+            continue
         
-        for o in outcomes:
-            # Farklı anahtar isimleri dene
-            oname = str(o.get("name") or o.get("n") or o.get("Name") or "").strip().lower()
-            odd = o.get("odd") or o.get("v") or o.get("oddValue") or o.get("Odd")
+        # Maç bilgilerini çıkar (farklı anahtar isimlerini dene)
+        try:
+            # Ev sahibi takım
+            home = (
+                value.get("HT") or 
+                value.get("HomeTeam") or 
+                value.get("home") or 
+                value.get("H") or
+                ""
+            )
             
-            try:
-                odd = float(odd)
-            except:
+            # Deplasman takım
+            away = (
+                value.get("AT") or 
+                value.get("AwayTeam") or 
+                value.get("away") or 
+                value.get("A") or
+                ""
+            )
+            
+            # Lig ismi
+            league = (
+                value.get("LN") or 
+                value.get("LeagueName") or 
+                value.get("league") or
+                value.get("L") or
+                ""
+            )
+            
+            # Maç saati
+            match_time = (
+                value.get("D") or 
+                value.get("Date") or 
+                value.get("StartDate") or
+                value.get("time") or
+                ""
+            )
+            
+            # Takım isimleri boş ise atla
+            if not home or not away:
                 continue
             
-            # Sonuç eşleştirme
-            if oname in {"1", "ev", "home", "home team", "ev sahibi"}:
-                odds_map["1"] = odd
-            elif oname in {"x", "0", "beraberlik", "draw", "berabere"}:
-                odds_map["X"] = odd
-            elif oname in {"2", "dep", "away", "away team", "deplasman"}:
-                odds_map["2"] = odd
-        
-        if len(odds_map) == 3 and "1" in odds_map and "X" in odds_map and "2" in odds_map:
-            return odds_map
+            # String'e çevir
+            home = str(home).strip()
+            away = str(away).strip()
+            league = str(league).strip()
+            
+            if not home or not away or home == "None" or away == "None":
+                continue
+            
+            match_count += 1
+            
+            # Lig filtresi
+            if filter_leagues and league:
+                league_lower = league.lower()
+                is_important = any(kw in league_lower for kw in important_keywords)
+                
+                if not is_important:
+                    filtered_count += 1
+                    continue
+            
+            # Saat parse et
+            start_time = "??:??"
+            if isinstance(match_time, str) and len(match_time) >= 16:
+                start_time = match_time[11:16]
+            elif isinstance(match_time, str) and ":" in match_time:
+                parts = match_time.split(":")
+                if len(parts) >= 2:
+                    start_time = f"{parts[0]}:{parts[1]}"
+            
+            # Oranları çıkar
+            odds = {"1": 2.00, "X": 3.20, "2": 3.50}  # Varsayılan
+            
+            # Farklı oran anahtarlarını dene
+            odds_data = value.get("O") or value.get("Odds") or value.get("odds") or {}
+            
+            if isinstance(odds_data, dict):
+                # MS (Maç Sonucu) oranları
+                if "1" in odds_data:
+                    try:
+                        odds["1"] = float(odds_data["1"])
+                    except:
+                        pass
+                
+                if "X" in odds_data or "0" in odds_data:
+                    try:
+                        odds["X"] = float(odds_data.get("X") or odds_data.get("0"))
+                    except:
+                        pass
+                
+                if "2" in odds_data:
+                    try:
+                        odds["2"] = float(odds_data["2"])
+                    except:
+                        pass
+            
+            events.append({
+                "home_team": home,
+                "away_team": away,
+                "league": league if league else "Bilinmeyen Lig",
+                "start_time": start_time,
+                "odds": odds
+            })
+            
+        except Exception as e:
+            continue
     
-    return None
+    print(f"[Nesine] Toplam maç bulundu: {match_count}")
+    print(f"[Nesine] Filtrelenen maç: {filtered_count}")
+    print(f"[Nesine] Geçerli maç: {len(events)}")
+    
+    return events
 
 
-def fetch_matches_for_date(date: dt.date, filter_leagues: bool = True) -> List[Dict[str, Any]]:
+def fetch_matches_for_date(date: dt.date, filter_leagues: bool = False) -> List[Dict[str, Any]]:
     """
-    Verilen tarih için maçları çek - GELİŞTİRİLMİŞ VERSİYON
-    
-    Args:
-        date: Maç tarihi
-        filter_leagues: Sadece önemli ligleri getir (varsayılan: True)
+    Verilen tarih için maçları çek
+    filter_leagues: False = TÜM MAÇLAR (varsayılan değişti)
     """
     date_str = date.strftime("%Y-%m-%d")
     url = PREBULTEN_URL.format(date=date_str)
@@ -112,149 +198,47 @@ def fetch_matches_for_date(date: dt.date, filter_leagues: bool = True) -> List[D
     if not data:
         print(f"[Nesine] {date_str} için veri alınamadı!")
         return []
-
-    events = []
     
-    # API yapısını debug et
-    print(f"[Nesine] Ana anahtarlar: {list(data.keys())}")
+    # Yeni formatı parse et
+    events = parse_nesine_new_format(data, filter_leagues=filter_leagues)
     
-    # Farklı API yapılarını dene
-    leagues = (
-        data.get("Leagues") or 
-        data.get("leagues") or 
-        data.get("Data") or 
-        data.get("data") or
-        []
-    )
+    if not events:
+        print("[Nesine] ⚠️ Hiç maç parse edilemedi!")
+        print("[Nesine] API yanıtının ilk 500 karakteri:")
+        print(str(data)[:500])
     
-    if not leagues:
-        print("[Nesine] Lig verisi bulunamadı! API yapısı değişmiş olabilir.")
-        print(f"[Nesine] Ham veri: {json.dumps(data, indent=2, ensure_ascii=False)[:500]}")
-        return []
-    
-    print(f"[Nesine] {len(leagues)} lig bulundu")
-    
-    # ÖNEMLİ LİGLER FİLTRESİ
-    important_leagues = {
-        # Türkiye
-        'süper lig', 'super lig', 'süper', 'trendyol süper lig',
-        '1. lig', 'birinci lig', 'tff 1. lig',
-        
-        # Avrupa Top 5
-        'premier league', 'championship', 'league one', 'league two',
-        'la liga', 'laliga', 'segunda', 'segunda división',
-        'serie a', 'serie b', 'serie c',
-        'bundesliga', '2. bundesliga', '3. liga',
-        'ligue 1', 'ligue 2',
-        
-        # Diğer önemli ligler
-        'eredivisie', 'primeira liga', 'primeira', 'pro league',
-        'super league', 'jupiler', 'premiership', 'ekstraklasa',
-        'allsvenskan', 'eliteserien', 'superliga',
-        
-        # Uluslararası
-        'champions league', 'şampiyonlar ligi', 'uefa',
-        'europa league', 'avrupa ligi',
-        'conference league', 'konferans ligi',
-        'world cup', 'dünya kupası', 'euro', 'avrupa şampiyonası',
-        
-        # Kupa
-        'türkiye kupası', 'ziraat türkiye kupası', 'fa cup', 'copa del rey',
-        'coppa italia', 'dfb pokal', 'coupe de france'
-    }
-    
-    for lg in leagues:
-        league_name = (
-            lg.get("LeagueName") or 
-            lg.get("name") or 
-            lg.get("N") or 
-            lg.get("Name") or 
-            "Bilinmeyen Lig"
-        )
-        
-        # Lig filtresi
-        if filter_leagues:
-            league_lower = league_name.lower()
-            is_important = any(imp in league_lower for imp in important_leagues)
-            
-            # Önemli değilse atla
-            if not is_important:
-                print(f"[Nesine] ⏭️ Filtrelendi: {league_name}")
-                continue
-        
-        league_events = (
-            lg.get("Events") or 
-            lg.get("events") or 
-            lg.get("E") or
-            lg.get("Matches") or
-            []
-        )
-        
-        print(f"[Nesine] ✅ {league_name}: {len(league_events)} maç")
-        
-        for ev in league_events:
-            home = str(ev.get("HomeTeamName") or ev.get("home") or ev.get("H") or ev.get("HomeTeam") or "").strip()
-            away = str(ev.get("AwayTeamName") or ev.get("away") or ev.get("A") or ev.get("AwayTeam") or "").strip()
-            
-            if not home or not away:
-                continue
-            
-            # Saat bilgisi
-            stime = ev.get("StartDate") or ev.get("startTime") or ev.get("S") or ev.get("Date") or ""
-            if isinstance(stime, str) and len(stime) >= 16:
-                hhmm = stime[11:16]
-            else:
-                hhmm = "??:??"
-            
-            # Oranları çek
-            markets = ev.get("Markets") or ev.get("markets") or ev.get("M") or ev.get("Odds") or []
-            odds = _extract_1x2(markets)
-            
-            if not odds:
-                # Oran bulunamazsa varsayılan değerler
-                print(f"[Nesine] {home} - {away}: Oran bulunamadı, varsayılan kullanılıyor")
-                odds = {"1": 2.00, "X": 3.20, "2": 3.50}
-            
-            events.append({
-                "home_team": home,
-                "away_team": away,
-                "league": league_name,
-                "start_time": hhmm,
-                "odds": odds
-            })
-    
-    print(f"[Nesine] Toplam {len(events)} geçerli maç çekildi")
     return events
 
 
-def fetch_today(filter_leagues: bool = True) -> List[Dict[str, Any]]:
+def fetch_today(filter_leagues: bool = False) -> List[Dict[str, Any]]:
     """
     Bugünün maçlarını çek
-    
-    Args:
-        filter_leagues: Sadece önemli ligleri getir (varsayılan: True)
+    filter_leagues: False = TÜM MAÇLAR (varsayılan)
     """
-    # Bugünün gerçek tarihi
     today = dt.date.today()
-    print(f"[Nesine] Bugünün maçları çekiliyor: {today}")
-    
-    # Not: Eğer test için farklı bir tarih gerekiyorsa:
-    # today = dt.date(2025, 10, 8)
-    
+    print(f"[Nesine] Bugünün maçları çekiliyor: {today} (Filtre: {filter_leagues})")
     return fetch_matches_for_date(today, filter_leagues=filter_leagues)
 
 
-# Test için
+# Test
 if __name__ == "__main__":
-    print("=" * 50)
-    print("Nesine Fetcher Test")
-    print("=" * 50)
+    import sys
     
-    matches = fetch_today()
+    print("=" * 60)
+    print("Nesine Fetcher Test - YENİ FORMAT")
+    print("=" * 60)
+    
+    # Bugün
+    matches = fetch_today(filter_leagues=True)
     
     if matches:
         print(f"\n✅ {len(matches)} maç bulundu\n")
         print(json.dumps(matches[:3], ensure_ascii=False, indent=2))
     else:
-        print("\n❌ Maç bulunamadı! API'yi manuel kontrol edin:")
-        print("https://cdnbulten.nesine.com/api/bulten/getprebultenfull?date=" + dt.date.today().strftime("%Y-%m-%d"))
+        print("\n❌ Maç bulunamadı!")
+        print("\nYarın için deneyin:")
+        tomorrow = dt.date.today() + dt.timedelta(days=1)
+        matches_tomorrow = fetch_matches_for_date(tomorrow, filter_leagues=True)
+        if matches_tomorrow:
+            print(f"✅ Yarın {len(matches_tomorrow)} maç var")
+            print(json.dumps(matches_tomorrow[:2], ensure_ascii=False, indent=2))
