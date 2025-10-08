@@ -169,6 +169,10 @@ footer{color:var(--muted);text-align:center;padding:14px;border-top:1px solid va
         <option value="value">Value</option>
       </select>
       <input id="txt-team" class="input" placeholder="Takım ara…">
+      <label style="display:flex;align-items:center;gap:6px;cursor:pointer;user-select:none">
+        <input type="checkbox" id="chk-filter" checked style="width:18px;height:18px;cursor:pointer">
+        <span style="font-size:13px">Sadece Ana Ligler</span>
+      </label>
       <span class="tag">Model: <b>ML Ensemble</b></span>
       <button class="btn refresh" id="btn-refresh">↻ Yenile</button>
     </div>
@@ -228,8 +232,15 @@ footer{color:var(--muted);text-align:center;padding:14px;border-top:1px solid va
 
 <script>
 /* ================= Config ================= */
-const API_BASE = "https://predicta-production.up.railway.app";
+// ÖNEMLI: Railway URL'inizi buraya yazın (sonunda / olmadan)
+const API_BASE = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+  ? "http://localhost:8000"  // Lokal test
+  : "https://predicta-production.up.railway.app";  // Production (Railway URL'inizi buraya yazın)
+
 const REFRESH_DEFAULT_MIN = 5;
+
+console.log("🌐 API Base URL:", API_BASE);
+console.log("🌐 Current Host:", window.location.hostname);
 
 /* ================= State & helpers ================= */
 const $ = s=>document.querySelector(s);
@@ -260,16 +271,36 @@ function showLoading(show){
 
 /* ================= API ================= */
 async function getJSON(url, init){
-  const r = await fetch(url, init);
-  if(!r.ok) throw new Error("HTTP "+r.status);
-  return r.json();
+  try {
+    console.log("📡 Fetching:", url);
+    const r = await fetch(url, init);
+    console.log("📥 Response status:", r.status);
+    
+    if(!r.ok) {
+      const text = await r.text();
+      console.error("❌ Response error:", text);
+      throw new Error(`HTTP ${r.status}: ${text.substring(0, 100)}`);
+    }
+    
+    const json = await r.json();
+    console.log("✅ Response data:", json);
+    return json;
+  } catch(e) {
+    console.error("❌ Fetch error:", e);
+    throw e;
+  }
 }
+
 async function fetchLeagues(){
   const j = await getJSON(API_BASE+"/api/leagues");
   return j.items || [];
 }
+
 async function fetchTodayPredict(leagueFilter){
-  const url = API_BASE + "/api/predict/today" + (leagueFilter? ("?league="+encodeURIComponent(leagueFilter)):"");
+  const filterEnabled = document.getElementById('chk-filter')?.checked ?? true;
+  const url = API_BASE + "/api/predict/today" + 
+    "?filter=" + filterEnabled +
+    (leagueFilter ? ("&league="+encodeURIComponent(leagueFilter)) : "");
   const j = await getJSON(url);
   return j.items || [];
 }
@@ -375,6 +406,41 @@ async function loadAll(){
     <tr><td colspan="6"><div class="skel"></div></td></tr>
     <tr><td colspan="6"><div class="skel"></div></td></tr>
     <tr><td colspan="6"><div class="skel"></div></td></tr>
+  `;
+  try{
+    const leagues = await fetchLeagues().catch(()=>[]);
+    fillLeagues(leagues);
+  }catch(e){ console.warn("Lig yükleme hatası:", e); }
+
+  try{
+    const lf = localStorage.getItem("predicta_league") || "";
+    console.log("API isteği gönderiliyor:", API_BASE + "/api/predict/today");
+    const items = await fetchTodayPredict(lf);
+    
+    console.log("API yanıtı:", items);
+    
+    if(items.length === 0){
+      rows.innerHTML = '<tr><td colspan="6" style="color:#fbbf24;padding:20px;text-align:center;">⚠️ Bugün için maç bulunamadı. Nesine API yanıt vermiyor olabilir.<br><small>Birkaç dakika sonra tekrar deneyin.</small></td></tr>';
+      toast("Maç bulunamadı","err");
+    }else{
+      ALL_ITEMS = items.map(x=> ({...x, league: x.league||"—" }));
+      applyFilters();
+      updateKpis();
+      toast("Bülten güncellendi","ok");
+    }
+  }catch(e){
+    console.error("API Hatası detayı:", e);
+    setStatus(false);
+    rows.innerHTML = `<tr><td colspan="6" style="color:#fda4af;padding:20px;text-align:center;">
+      ❌ API hatası: ${e.message}<br>
+      <small>Railway loglarını kontrol edin: <code>railway logs</code></small><br>
+      <button class="btn" onclick="loadAll()" style="margin-top:10px">🔄 Tekrar Dene</button>
+    </td></tr>`;
+    toast("API hatası: "+e.message,"err");
+  }finally{
+    showLoading(false);
+  }
+}<div class="skel"></div></td></tr>
   `;
   try{
     const leagues = await fetchLeagues().catch(()=>[]);
@@ -521,6 +587,9 @@ $("#sel-league").onchange = e=>{
 };
 $("#sel-sort").onchange = applyFilters;
 $("#txt-team").oninput = ()=>{ applyFilters(); };
+$("#chk-filter").onchange = ()=>{ 
+  toast("Filtre değişti, yeniden yükleyin", "info"); 
+};
 
 /* Auto refresh */
 function setupAuto(){
@@ -534,9 +603,44 @@ $("#auto-min").onchange = (e)=>{
 };
 
 /* Init */
+async function init() {
+  console.log("🚀 Predicta başlatılıyor...");
+  console.log("🌐 API Base:", API_BASE);
+  
+  // Health check
+  try {
+    const health = await fetch(API_BASE + "/").then(r => r.json());
+    console.log("✅ Backend sağlıklı:", health);
+    setStatus(true);
+  } catch(e) {
+    console.error("❌ Backend erişilemiyor:", e);
+    setStatus(false);
+    toast("Backend'e bağlanılamadı: " + e.message, "err");
+    
+    // Kullanıcıya detaylı bilgi
+    rows.innerHTML = `<tr><td colspan="6" style="padding:20px;text-align:center;color:#fda4af">
+      <h3>❌ Backend Bağlantı Hatası</h3>
+      <p><strong>Hata:</strong> ${e.message}</p>
+      <p><strong>API URL:</strong> <code>${API_BASE}</code></p>
+      <hr style="margin:20px 0;border-color:#374151">
+      <p><strong>Çözüm Adımları:</strong></p>
+      <ol style="text-align:left;max-width:500px;margin:0 auto">
+        <li>Railway'de backend çalışıyor mu kontrol edin</li>
+        <li>Railway URL'i doğru mu: <code>${API_BASE}</code></li>
+        <li>CORS ayarları aktif mi kontrol edin</li>
+        <li>Railway logs: <code>railway logs</code></li>
+      </ol>
+      <button class="btn" onclick="location.reload()" style="margin-top:20px">🔄 Tekrar Dene</button>
+    </td></tr>`;
+    return;
+  }
+  
+  loadAll();
+  setupAuto();
+}
+
 setStatus(false);
-loadAll();
-setupAuto();
+init();
 </script>
 </body>
 </html>
