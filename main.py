@@ -228,17 +228,78 @@ def load_history():
 @app.route("/api/training/start", methods=["POST"])
 def train_api():
     """Model eğitimi başlat"""
-    if train_all is None:
-        return jsonify({"error": "model_trainer.py bulunamadı"}), 500
-    
-    body = request.get_json(silent=True) or {}
-    top_k = int(body.get("top_scores_k", 20))
-    result = train_all(raw_path=RAW_DIR, top_scores_k=top_k)
-    
-    # Eğitimden sonra modelleri yeniden yükle
-    engine._load_models()
-    
-    return jsonify(result)
+    try:
+        body = request.get_json(silent=True) or {}
+        top_k = int(body.get("top_scores_k", 20))
+        
+        # Eğer model_trainer modülü varsa kullan
+        if train_all is not None:
+            logger.info("🎓 Model eğitimi başlatılıyor (model_trainer kullanarak)...")
+            result = train_all(raw_path=RAW_DIR, top_scores_k=top_k)
+            engine._load_models()
+            return jsonify(result)
+        
+        # Yoksa direkt engine ile eğit
+        logger.info("🎓 Model eğitimi başlatılıyor (direkt engine ile)...")
+        
+        # Geçmiş verileri yükle
+        if not historical_processor:
+            return jsonify({
+                "success": False,
+                "error": "Geçmiş veri işleyici bulunamadı"
+            }), 500
+        
+        matches, _ = historical_processor.process_all_countries()
+        
+        if len(matches) < 100:
+            return jsonify({
+                "success": False,
+                "error": f"Yetersiz veri: {len(matches)} maç (min 100 gerekli)"
+            }), 400
+        
+        # Maçları eğitim formatına çevir
+        training_data = []
+        for m in matches:
+            home_score = m.get('home_score', 0)
+            away_score = m.get('away_score', 0)
+            
+            # Sonuç belirleme
+            if home_score > away_score:
+                result = '1'
+            elif home_score < away_score:
+                result = '2'
+            else:
+                result = 'X'
+            
+            training_data.append({
+                'home_team': m['home_team'],
+                'away_team': m['away_team'],
+                'league': m.get('league', 'Unknown'),
+                'home_goals': home_score,
+                'away_goals': away_score,
+                'result': result,
+                'odds': {'1': 2.0, 'X': 3.0, '2': 3.5},  # Varsayılan
+                'date': m.get('date', '2024-01-01')
+            })
+        
+        # Modeli eğit
+        logger.info(f"📊 {len(training_data)} maçla eğitim başlıyor...")
+        result = engine.train(training_data)
+        
+        if result.get('success'):
+            logger.info("✅ Eğitim başarılı!")
+        else:
+            logger.error(f"❌ Eğitim hatası: {result.get('error')}")
+        
+        return jsonify(result)
+        
+    except Exception as e:
+        logger.error(f"❌ Eğitim API hatası: {e}", exc_info=True)
+        return jsonify({
+            "success": False,
+            "error": str(e),
+            "error_type": type(e).__name__
+        }), 500
 
 # ----------------- Prediction Endpoints -----------------
 @app.route("/api/predict", methods=["POST"])
@@ -475,14 +536,14 @@ def debug_nesine():
         }), 500
 
 # ----------------- Startup Actions -----------------
-@app.before_first_request
-def startup():
+def startup_tasks():
     """Uygulama başlarken geçmiş verileri yükle"""
     logger.info("🚀 Predicta ML v2 başlatılıyor...")
     
-    # Geçmiş verileri yükle
+    # Geçmiş verileri yükle (opsiyonel)
     if HISTORICAL_AVAILABLE:
         try:
+            logger.info("📊 Geçmiş veriler yükleniyor...")
             count = load_historical_data()
             logger.info(f"✅ {count} geçmiş maç yüklendi")
         except Exception as e:
@@ -507,5 +568,10 @@ if __name__ == "__main__":
     logger.info(f"🤖 ML Model: {'✅ Eğitilmiş' if engine.is_trained else '⚠️ Eğitilmemiş'}")
     logger.info(f"📊 Geçmiş Veri: {'✅ Aktif' if HISTORICAL_AVAILABLE else '❌ Kapalı'}")
     logger.info("=" * 60)
+    
+    # Startup tasks (geçmiş veri yükleme isteğe bağlı)
+    # Yorum: İlk başlatmada yavaşlık olmasın diye kapalı
+    # İsterseniz açabilirsiniz:
+    # startup_tasks()
     
     app.run(host="0.0.0.0", port=APP_PORT, debug=False)
