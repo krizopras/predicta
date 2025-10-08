@@ -40,7 +40,18 @@ MODELS_DIR = os.environ.get("PREDICTA_MODELS_DIR", "data/ai_models_v2")
 RAW_DIR = os.environ.get("PREDICTA_RAW_DIR", "data/raw")
 
 app = Flask(__name__)
-CORS(app)
+
+# CORS - Daha agresif ayar
+CORS(app, resources={
+    r"/*": {
+        "origins": "*",
+        "methods": ["GET", "POST", "OPTIONS"],
+        "allow_headers": ["Content-Type", "Authorization"],
+        "expose_headers": ["Content-Type"],
+        "supports_credentials": False,
+        "max_age": 3600
+    }
+})
 
 # ML Engine (global)
 engine = MLPredictionEngine(model_path=MODELS_DIR)
@@ -302,9 +313,20 @@ def predict_batch():
 def today_matches():
     """Bugünkü maçları Nesine'den çek"""
     league_filter = (request.args.get("league") or "").strip().lower()
+    # Yeni: Lig filtresini aç/kapat (varsayılan: açık)
+    filter_enabled = request.args.get("filter", "true").lower() != "false"
     
     try:
-        out = fetch_today()
+        logger.info(f"📡 Nesine API'den maçlar çekiliyor (filter: {filter_enabled})...")
+        out = fetch_today(filter_leagues=filter_enabled)
+        
+        if not out:
+            logger.warning("⚠️ Nesine'den maç bulunamadı")
+            return jsonify({
+                "count": 0, 
+                "items": [],
+                "message": "Bugün için maç bulunamadı veya API yanıt vermiyor"
+            })
         
         if league_filter:
             out = [m for m in out if league_filter in (m.get("league", "").lower())]
@@ -314,7 +336,15 @@ def today_matches():
     
     except Exception as e:
         logger.error(f"❌ Nesine fetch hatası: {e}", exc_info=True)
-        return jsonify({"error": str(e), "count": 0, "items": []}), 500
+        return jsonify({
+            "error": str(e), 
+            "count": 0, 
+            "items": [],
+            "debug_info": {
+                "error_type": type(e).__name__,
+                "suggestion": "Nesine API yanıt vermiyor olabilir. Birkaç dakika sonra tekrar deneyin."
+            }
+        }), 200  # 500 yerine 200 döndür ama error field'ı ekle
 
 @app.route("/api/matches/date", methods=["GET"])
 def date_matches():
@@ -336,10 +366,20 @@ def date_matches():
 def predict_today():
     """Bugünkü maçlar için tahmin yap"""
     league_filter = (request.args.get("league") or "").strip().lower()
+    filter_enabled = request.args.get("filter", "true").lower() != "false"
     
     try:
         # Maçları çek
-        items = fetch_today()
+        logger.info(f"📡 Bugünkü maçlar çekiliyor (filter: {filter_enabled})...")
+        items = fetch_today(filter_leagues=filter_enabled)
+        
+        if not items:
+            logger.warning("⚠️ Bugün için maç bulunamadı")
+            return jsonify({
+                "count": 0,
+                "items": [],
+                "message": "Bugün için maç bulunamadı"
+            })
         
         if league_filter:
             items = [m for m in items if league_filter in (m.get("league", "").lower())]
@@ -349,12 +389,12 @@ def predict_today():
         results = []
         for i, m in enumerate(items):
             try:
-                logger.info(f"[{i+1}/{len(items)}] {m['home_team']} - {m['away_team']}")
+                logger.info(f"[{i+1}/{len(items)}] {m.get('home_team', '?')} - {m.get('away_team', '?')}")
                 
                 pred = engine.predict_match(
-                    m["home_team"],
-                    m["away_team"],
-                    m["odds"],
+                    m.get("home_team", "Unknown"),
+                    m.get("away_team", "Unknown"),
+                    m.get("odds", {"1": 2.0, "X": 3.0, "2": 3.5}),
                     m.get("league", "Unknown")
                 )
                 
@@ -364,14 +404,15 @@ def predict_today():
                 })
                 
             except Exception as e:
-                logger.error(f"❌ {m['home_team']} - {m['away_team']} hatası: {e}")
+                logger.error(f"❌ Tahmin hatası ({m.get('home_team', '?')}): {e}")
                 results.append({
                     **m,
                     "error": str(e),
                     "prediction": {
                         "prediction": "X",
                         "confidence": 0,
-                        "score_prediction": "?-?"
+                        "score_prediction": "?-?",
+                        "model": "Error"
                     }
                 })
         
@@ -380,7 +421,15 @@ def predict_today():
     
     except Exception as e:
         logger.error(f"❌ Toplu tahmin hatası: {e}", exc_info=True)
-        return jsonify({"error": str(e), "count": 0, "items": []}), 500
+        return jsonify({
+            "error": str(e), 
+            "count": 0, 
+            "items": [],
+            "debug_info": {
+                "error_type": type(e).__name__,
+                "suggestion": "Backend loglarını kontrol edin: railway logs"
+            }
+        }), 200  # 500 yerine 200 döndür
 
 # ----------------- Debug Endpoints -----------------
 @app.route("/api/debug/feature-history", methods=["GET"])
@@ -426,14 +475,14 @@ def debug_nesine():
         }), 500
 
 # ----------------- Startup Actions -----------------
-@app.before_first_request
-def startup():
+def startup_tasks():
     """Uygulama başlarken geçmiş verileri yükle"""
     logger.info("🚀 Predicta ML v2 başlatılıyor...")
     
-    # Geçmiş verileri yükle
+    # Geçmiş verileri yükle (opsiyonel)
     if HISTORICAL_AVAILABLE:
         try:
+            logger.info("📊 Geçmiş veriler yükleniyor...")
             count = load_historical_data()
             logger.info(f"✅ {count} geçmiş maç yüklendi")
         except Exception as e:
@@ -458,5 +507,10 @@ if __name__ == "__main__":
     logger.info(f"🤖 ML Model: {'✅ Eğitilmiş' if engine.is_trained else '⚠️ Eğitilmemiş'}")
     logger.info(f"📊 Geçmiş Veri: {'✅ Aktif' if HISTORICAL_AVAILABLE else '❌ Kapalı'}")
     logger.info("=" * 60)
+    
+    # Startup tasks (geçmiş veri yükleme isteğe bağlı)
+    # Yorum: İlk başlatmada yavaşlık olmasın diye kapalı
+    # İsterseniz açabilirsiniz:
+    # startup_tasks()
     
     app.run(host="0.0.0.0", port=APP_PORT, debug=False)
