@@ -475,14 +475,14 @@ def debug_nesine():
         }), 500
 
 # ----------------- Startup Actions -----------------
-def startup_tasks():
+@app.before_first_request
+def startup():
     """Uygulama başlarken geçmiş verileri yükle"""
     logger.info("🚀 Predicta ML v2 başlatılıyor...")
     
-    # Geçmiş verileri yükle (opsiyonel)
+    # Geçmiş verileri yükle
     if HISTORICAL_AVAILABLE:
         try:
-            logger.info("📊 Geçmiş veriler yükleniyor...")
             count = load_historical_data()
             logger.info(f"✅ {count} geçmiş maç yüklendi")
         except Exception as e:
@@ -507,10 +507,5 @@ if __name__ == "__main__":
     logger.info(f"🤖 ML Model: {'✅ Eğitilmiş' if engine.is_trained else '⚠️ Eğitilmemiş'}")
     logger.info(f"📊 Geçmiş Veri: {'✅ Aktif' if HISTORICAL_AVAILABLE else '❌ Kapalı'}")
     logger.info("=" * 60)
-    
-    # Startup tasks (geçmiş veri yükleme isteğe bağlı)
-    # Yorum: İlk başlatmada yavaşlık olmasın diye kapalı
-    # İsterseniz açabilirsiniz:
-    # startup_tasks()
     
     app.run(host="0.0.0.0", port=APP_PORT, debug=False)
