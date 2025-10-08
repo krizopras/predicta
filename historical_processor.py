@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Geçmiş Maç Verilerini İşleme - GÜNCELLENMİŞ VERSİYON
-CSV ve TXT dosyalarını destekler
+Geçmiş Maç Verilerini İşleme - FOOTBALL.DB FORMAT DESTEĞİ
+CSV, TXT ve football.db formatlarını destekler
 """
 
 import os
@@ -9,7 +9,8 @@ import json
 import pandas as pd
 from datetime import datetime
 import logging
-from typing import Dict, List, Any
+import re
+from typing import Dict, List, Any, Optional
 from pathlib import Path
 
 logger = logging.getLogger(__name__)
@@ -20,7 +21,7 @@ class HistoricalDataProcessor:
         self.processed_data = {}
         
     def load_country_data(self, country: str) -> List[Dict]:
-        """Ülke verilerini yükle (CSV veya TXT)"""
+        """Ülke verilerini yükle (CSV, TXT, football.db)"""
         country_path = os.path.join(self.raw_data_path, country)
         if not os.path.exists(country_path):
             logger.warning(f"❌ {country} klasörü bulunamadı: {country_path}")
@@ -50,6 +51,208 @@ class HistoricalDataProcessor:
         
         return matches
     
+    def _read_txt_file(self, file_path: Path, country: str) -> List[Dict]:
+        """TXT dosyasını oku (football.db ve diğer formatlar)"""
+        matches = []
+        
+        try:
+            # Encoding'leri dene
+            content = None
+            for encoding in ['utf-8', 'latin-1', 'iso-8859-9', 'cp1254']:
+                try:
+                    with open(file_path, 'r', encoding=encoding) as f:
+                        content = f.read()
+                    break
+                except:
+                    continue
+            
+            if not content:
+                return []
+            
+            # Football.db formatını dene
+            if self._is_football_db_format(content):
+                matches = self._parse_football_db(content, file_path, country)
+            else:
+                # Standart CSV/TXT formatını dene
+                matches = self._parse_standard_txt(file_path, country)
+            
+        except Exception as e:
+            logger.error(f"TXT okuma hatası ({file_path.name}): {e}")
+        
+        return matches
+    
+    def _is_football_db_format(self, content: str) -> bool:
+        """Football.db formatı mı kontrol et"""
+        # = başlığı, # yorum satırları, » round işaretleri
+        indicators = ['=', '»', 'Round', 'Date', 'Teams', 'Matches']
+        return any(indicator in content[:500] for indicator in indicators)
+    
+    def _parse_football_db(self, content: str, file_path: Path, country: str) -> List[Dict]:
+        """Football.db formatını parse et"""
+        matches = []
+        lines = content.split('\n')
+        
+        # Metadata
+        league_name = None
+        current_date = None
+        
+        # Regex patterns
+        date_pattern = re.compile(r'^  (\w{3} \w{3}/\d{1,2}|\w{3} \w{3}/\d{1,2} \d{4})')
+        time_pattern = re.compile(r'^\s+(\d{1,2}[:.]\d{2})')
+        match_pattern = re.compile(
+            r'^\s+\d{1,2}[:.]\d{2}\s+(.+?)\s+v\s+(.+?)\s+(\d+)-(\d+)'
+        )
+        
+        for line in lines:
+            # Başlık satırı (lig ismi)
+            if line.startswith('='):
+                league_name = line.strip('= ').strip()
+                continue
+            
+            # Yorum satırları
+            if line.startswith('#'):
+                continue
+            
+            # Round başlığı
+            if line.startswith('»'):
+                continue
+            
+            # Tarih satırı (Tue Oct/8 2024)
+            date_match = date_pattern.match(line)
+            if date_match:
+                date_str = date_match.group(1).strip()
+                current_date = self._parse_football_db_date(date_str)
+                continue
+            
+            # Maç satırı
+            match_match = match_pattern.match(line)
+            if match_match:
+                home_team = match_match.group(1).strip()
+                away_team = match_match.group(2).strip()
+                home_score = int(match_match.group(3))
+                away_score = int(match_match.group(4))
+                
+                # Takım isimlerini temizle (fazla boşlukları kaldır)
+                home_team = ' '.join(home_team.split())
+                away_team = ' '.join(away_team.split())
+                
+                # Lig ismini dosya adından çıkar
+                if not league_name:
+                    league_name = file_path.stem.replace('_', ' ').replace('-', ' ').title()
+                
+                match = {
+                    'date': current_date or '2024-01-01',
+                    'home_team': home_team,
+                    'away_team': away_team,
+                    'home_score': home_score,
+                    'away_score': away_score,
+                    'country': country,
+                    'league': league_name
+                }
+                matches.append(match)
+        
+        return matches
+    
+    def _parse_football_db_date(self, date_str: str) -> str:
+        """Football.db tarih formatını parse et (Tue Oct/8 2024)"""
+        try:
+            # "Tue Oct/8 2024" veya "Wed Oct/9" gibi formatlar
+            parts = date_str.split()
+            
+            if len(parts) >= 2:
+                # Ay/Gün kısmını al
+                month_day = parts[1]  # "Oct/8"
+                
+                if '/' in month_day:
+                    month_str, day_str = month_day.split('/')
+                    
+                    # Yıl varsa al, yoksa şu anki yılı kullan
+                    if len(parts) >= 3:
+                        year = int(parts[2])
+                    else:
+                        # Yıl belirtilmemişse şu anki yılı kullan
+                        from datetime import date
+                        year = date.today().year
+                    
+                    # Ay isimlerini sayıya çevir
+                    month_map = {
+                        'Jan': 1, 'Feb': 2, 'Mar': 3, 'Apr': 4,
+                        'May': 5, 'Jun': 6, 'Jul': 7, 'Aug': 8,
+                        'Sep': 9, 'Oct': 10, 'Nov': 11, 'Dec': 12
+                    }
+                    
+                    month = month_map.get(month_str, 1)
+                    day = int(day_str)
+                    
+                    return f"{year:04d}-{month:02d}-{day:02d}"
+        except Exception as e:
+            logger.debug(f"Tarih parse hatası: {date_str} -> {e}")
+        
+        # Varsayılan: Bugünün tarihi
+        from datetime import date
+        return date.today().strftime('%Y-%m-%d')
+    
+    def _parse_standard_txt(self, file_path: Path, country: str) -> List[Dict]:
+        """Standart CSV/TXT formatını parse et"""
+        matches = []
+        
+        try:
+            # Pandas ile okumayı dene
+            df = None
+            for encoding in ['utf-8', 'latin-1', 'iso-8859-9', 'cp1254']:
+                try:
+                    df = pd.read_csv(file_path, encoding=encoding, sep=None, engine='python')
+                    break
+                except:
+                    continue
+            
+            if df is None:
+                return []
+            
+            # Sütun isimlerini normalize et
+            df.columns = df.columns.str.strip().str.lower()
+            
+            # Sütunları eşleştir
+            col_map = self._map_columns(df.columns)
+            
+            if not col_map:
+                return []
+            
+            for _, row in df.iterrows():
+                try:
+                    home_team = str(row[col_map['home']]).strip()
+                    away_team = str(row[col_map['away']]).strip()
+                    
+                    if not home_team or not away_team or home_team == 'nan' or away_team == 'nan':
+                        continue
+                    
+                    home_score = self._safe_int(row[col_map['home_score']])
+                    away_score = self._safe_int(row[col_map['away_score']])
+                    
+                    date_str = str(row[col_map['date']]) if col_map['date'] else ''
+                    date = self._parse_date(date_str)
+                    
+                    league = file_path.stem.replace('_', ' ').title()
+                    
+                    match = {
+                        'date': date,
+                        'home_team': home_team,
+                        'away_team': away_team,
+                        'home_score': home_score,
+                        'away_score': away_score,
+                        'country': country,
+                        'league': league
+                    }
+                    matches.append(match)
+                    
+                except Exception as e:
+                    continue
+            
+        except Exception as e:
+            logger.error(f"Standart TXT parse hatası: {e}")
+        
+        return matches
+    
     def _read_csv_file(self, file_path: Path, country: str) -> List[Dict]:
         """CSV dosyasını oku"""
         matches = []
@@ -72,7 +275,7 @@ class HistoricalDataProcessor:
             # Sütun isimlerini normalize et
             df.columns = df.columns.str.strip().str.lower()
             
-            # Gerekli sütunları bul (flexible mapping)
+            # Gerekli sütunları bul
             col_map = self._map_columns(df.columns)
             
             if not col_map:
@@ -85,18 +288,15 @@ class HistoricalDataProcessor:
                     home_team = str(row[col_map['home']]).strip()
                     away_team = str(row[col_map['away']]).strip()
                     
-                    # Boş satırları atla
                     if not home_team or not away_team or home_team == 'nan' or away_team == 'nan':
                         continue
                     
                     home_score = self._safe_int(row[col_map['home_score']])
                     away_score = self._safe_int(row[col_map['away_score']])
                     
-                    # Tarih
                     date_str = str(row[col_map['date']]) if col_map['date'] else ''
                     date = self._parse_date(date_str)
                     
-                    # Lig ismi (dosya adından)
                     league = file_path.stem.replace('_', ' ').title()
                     
                     match = {
@@ -118,133 +318,7 @@ class HistoricalDataProcessor:
         
         return matches
     
-    def _read_txt_file(self, file_path: Path, country: str) -> List[Dict]:
-        """TXT dosyasını oku (CSV formatında olduğunu varsay)"""
-        matches = []
-        
-        try:
-            # TXT'yi CSV gibi oku
-            encodings = ['utf-8', 'latin-1', 'iso-8859-9', 'cp1254']
-            df = None
-            
-            for encoding in encodings:
-                try:
-                    # Virgül veya tab ile ayrılmış olabilir
-                    df = pd.read_csv(file_path, encoding=encoding, sep=None, engine='python')
-                    break
-                except:
-                    continue
-            
-            if df is None:
-                # Manuel satır satır okuma dene
-                return self._read_txt_manual(file_path, country)
-            
-            # Sütun isimlerini normalize et
-            df.columns = df.columns.str.strip().str.lower()
-            
-            # CSV ile aynı işlemi yap
-            col_map = self._map_columns(df.columns)
-            
-            if not col_map:
-                return []
-            
-            for _, row in df.iterrows():
-                try:
-                    home_team = str(row[col_map['home']]).strip()
-                    away_team = str(row[col_map['away']]).strip()
-                    
-                    if not home_team or not away_team or home_team == 'nan' or away_team == 'nan':
-                        continue
-                    
-                    home_score = self._safe_int(row[col_map['home_score']])
-                    away_score = self._safe_int(row[col_map['away_score']])
-                    
-                    date_str = str(row[col_map['date']]) if col_map['date'] else ''
-                    date = self._parse_date(date_str)
-                    
-                    league = file_path.stem.replace('_', ' ').title()
-                    
-                    match = {
-                        'date': date,
-                        'home_team': home_team,
-                        'away_team': away_team,
-                        'home_score': home_score,
-                        'away_score': away_score,
-                        'country': country,
-                        'league': league
-                    }
-                    matches.append(match)
-                    
-                except Exception as e:
-                    continue
-            
-        except Exception as e:
-            logger.error(f"TXT okuma hatası ({file_path.name}): {e}")
-        
-        return matches
-    
-    def _read_txt_manual(self, file_path: Path, country: str) -> List[Dict]:
-        """TXT dosyasını manuel olarak satır satır oku"""
-        matches = []
-        
-        try:
-            with open(file_path, 'r', encoding='utf-8') as f:
-                lines = f.readlines()
-            
-            # İlk satır başlık olabilir
-            header = lines[0].strip().lower().split(',') if lines else []
-            data_lines = lines[1:] if len(lines) > 1 else []
-            
-            col_map = self._map_columns(header)
-            
-            for line in data_lines:
-                parts = [p.strip() for p in line.split(',')]
-                
-                if len(parts) < 4:
-                    continue
-                
-                try:
-                    # Basit format: Date,HomeTeam,AwayTeam,FTHG,FTAG veya
-                    # HomeTeam,AwayTeam,Score (örn: 2-1)
-                    if len(parts) >= 5:
-                        date = self._parse_date(parts[0])
-                        home = parts[1]
-                        away = parts[2]
-                        home_score = self._safe_int(parts[3])
-                        away_score = self._safe_int(parts[4])
-                    elif len(parts) >= 3 and '-' in parts[2]:
-                        # Format: Home,Away,2-1
-                        home = parts[0]
-                        away = parts[1]
-                        score_parts = parts[2].split('-')
-                        home_score = self._safe_int(score_parts[0])
-                        away_score = self._safe_int(score_parts[1])
-                        date = ''
-                    else:
-                        continue
-                    
-                    league = file_path.stem.replace('_', ' ').title()
-                    
-                    match = {
-                        'date': date,
-                        'home_team': home,
-                        'away_team': away,
-                        'home_score': home_score,
-                        'away_score': away_score,
-                        'country': country,
-                        'league': league
-                    }
-                    matches.append(match)
-                    
-                except:
-                    continue
-            
-        except Exception as e:
-            logger.error(f"Manuel TXT okuma hatası: {e}")
-        
-        return matches
-    
-    def _map_columns(self, columns: List[str]) -> Dict[str, str]:
+    def _map_columns(self, columns: List[str]) -> Optional[Dict[str, str]]:
         """Sütun isimlerini standart isimlere eşleştir"""
         col_map = {
             'date': None,
@@ -293,7 +367,9 @@ class HistoricalDataProcessor:
     def _parse_date(self, date_str: str) -> str:
         """Tarih string'ini standart formata çevir"""
         if not date_str or date_str == 'nan':
-            return '2024-01-01'
+            # Varsayılan: Bugünün tarihi
+            from datetime import date
+            return date.today().strftime('%Y-%m-%d')
         
         # Farklı tarih formatlarını dene
         formats = [
@@ -313,7 +389,9 @@ class HistoricalDataProcessor:
             except:
                 continue
         
-        return '2024-01-01'
+        # Hiçbir format uymazsa bugünün tarihi
+        from datetime import date
+        return date.today().strftime('%Y-%m-%d')
     
     def calculate_team_stats(self, matches: List[Dict]) -> Dict[str, Any]:
         """Takım istatistiklerini hesapla"""
@@ -323,15 +401,12 @@ class HistoricalDataProcessor:
             home_team = match['home_team']
             away_team = match['away_team']
             
-            # Ev sahibi takım
             if home_team not in team_stats:
                 team_stats[home_team] = self._init_team_stats()
             
-            # Deplasman takım
             if away_team not in team_stats:
                 team_stats[away_team] = self._init_team_stats()
             
-            # Maç sonucunu güncelle
             self._update_team_stats(team_stats[home_team], match, is_home=True)
             self._update_team_stats(team_stats[away_team], match, is_home=False)
         
@@ -391,7 +466,6 @@ class HistoricalDataProcessor:
         stats['last_5_goals_scored'].append(goals_for)
         stats['last_5_goals_conceded'].append(goals_against)
         
-        # Son 5'i koru
         if len(stats['last_5_results']) > 5:
             stats['last_5_results'] = stats['last_5_results'][-5:]
             stats['last_5_goals_scored'] = stats['last_5_goals_scored'][-5:]
@@ -427,15 +501,12 @@ class HistoricalDataProcessor:
     def _save_processed_data(self, matches: List[Dict], team_stats: Dict):
         """İşlenmiş verileri kaydet"""
         try:
-            # Dizinleri oluştur
             os.makedirs('data/historical', exist_ok=True)
             os.makedirs('data/team_stats', exist_ok=True)
             
-            # Maçları kaydet
             with open('data/historical/processed_matches.json', 'w', encoding='utf-8') as f:
                 json.dump(matches, f, ensure_ascii=False, indent=2)
             
-            # Takım istatistiklerini kaydet
             with open('data/team_stats/team_statistics.json', 'w', encoding='utf-8') as f:
                 json.dump(team_stats, f, ensure_ascii=False, indent=2)
             
@@ -447,7 +518,10 @@ class HistoricalDataProcessor:
 
 # Test
 if __name__ == "__main__":
-    logging.basicConfig(level=logging.INFO)
+    logging.basicConfig(
+        level=logging.INFO,
+        format='%(asctime)s - %(levelname)s - %(message)s'
+    )
     
     processor = HistoricalDataProcessor("data/raw")
     matches, stats = processor.process_all_countries()
@@ -458,6 +532,10 @@ if __name__ == "__main__":
     print(f"{'='*60}")
     
     if matches:
-        print("\n📋 İlk 3 maç:")
-        for i, m in enumerate(matches[:3], 1):
-            print(f"{i}. {m['home_team']} {m['home_score']}-{m['away_score']} {m['away_team']} ({m['league']})")
+        print("\n📋 İlk 5 maç:")
+        for i, m in enumerate(matches[:5], 1):
+            print(f"{i}. {m['date']} | {m['home_team']} {m['home_score']}-{m['away_score']} {m['away_team']} ({m['league']})")
+        
+        print(f"\n📋 Son 3 maç:")
+        for i, m in enumerate(matches[-3:], len(matches)-2):
+            print(f"{i}. {m['date']} | {m['home_team']} {m['home_score']}-{m['away_score']} {m['away_team']} ({m['league']})")
