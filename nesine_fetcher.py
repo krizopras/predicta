@@ -186,8 +186,13 @@ def fetch_matches_for_date(date: dt.date) -> List[Dict[str, Any]]:
 
 def fetch_today() -> List[Dict[str, Any]]:
     """Bugünün maçlarını çek"""
+    # Bugünün gerçek tarihi
     today = dt.date.today()
     print(f"[Nesine] Bugünün maçları çekiliyor: {today}")
+    
+    # Not: Eğer test için farklı bir tarih gerekiyorsa:
+    # today = dt.date(2025, 10, 8)
+    
     return fetch_matches_for_date(today)
 
 
