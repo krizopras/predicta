@@ -120,33 +120,41 @@ def fetch_bulletin(target_date=None, filter_leagues=False):
         
         print(f"   ✅ {len(matches)} matches retrieved from Format 1")
     
-    # FORMAT 2: Old API structure (sg -> EA/CA)
+     # FORMAT 2: Old API structure (sg -> EA/CA)
     elif "sg" in data and isinstance(data["sg"], dict):
         print(f"\n🔄 Processing Format 2 (SG)...")
-        
+
         for section in ["EA", "CA"]:  # EA = Prematch, CA = Live
             section_matches = data.get("sg", {}).get(section, [])
+
+            # Bazı SG alt anahtarları (örneğin eventVersion, drawNo) int tipinde olabiliyor
+            if not isinstance(section_matches, list):
+                print(f"   ⚠️ Skipping section '{section}' — not a list (type={type(section_matches).__name__})")
+                continue
+
             print(f"   {section}: {len(section_matches)} matches")
-            
+
             for m in section_matches:
+                # Only football (GT = 1)
                 if m.get("GT") != 1:
                     continue
-                
+
+                # Extract odds safely
                 odds_dict = {"1": None, "X": None, "2": None}
                 try:
                     ma_list = m.get("MA", [])
-                    if ma_list:
+                    if isinstance(ma_list, list) and len(ma_list) > 0:
                         oca_list = ma_list[0].get("OCA", [])
-                        if len(oca_list) >= 3:
+                        if isinstance(oca_list, list) and len(oca_list) >= 3:
                             odds_dict["1"] = oca_list[0].get("O")
                             odds_dict["X"] = oca_list[1].get("O")
                             odds_dict["2"] = oca_list[2].get("O")
-                except:
-                    pass
-                
+                except Exception as e:
+                    print(f"      ⚠️ Odds parsing error in {section}: {e}")
+
                 match_time = m.get("T", "")
                 match_date = m.get("D", "")
-                
+
                 matches.append({
                     "home_team": m.get("HN", "").strip(),
                     "away_team": m.get("AN", "").strip(),
@@ -161,14 +169,14 @@ def fetch_bulletin(target_date=None, filter_leagues=False):
                     "odds": odds_dict,
                     "live": section == "CA"
                 })
-        
-        print(f"   ✅ {len(matches)} matches retrieved from Format 2")
-    
+
+        print(f"   ✅ Successfully retrieved {len(matches)} matches from Format 2 (SG)")
+
     else:
-        print(f"\n⚠️ Unknown API format!")
+        print(f"\n⚠️ Unknown API format detected!")
         print(f"   Data keys: {list(data.keys()) if isinstance(data, dict) else 'NOT_DICT'}")
         return []
-    
+
     # Filter out incomplete data
     matches = [m for m in matches if m["home_team"] and m["away_team"]]
     
