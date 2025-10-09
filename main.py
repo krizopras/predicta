@@ -13,6 +13,7 @@ from flask_cors import CORS
 # ========== ML & Nesine imports ==========
 from ml_prediction_engine import MLPredictionEngine
 from nesine_fetcher import fetch_bulletin, fetch_today
+from historical_processor import HistoricalDataProcessor
 
 # ========== Logging ==========
 logging.basicConfig(
@@ -24,6 +25,8 @@ logger = logging.getLogger("Predicta")
 # ========== Config ==========
 APP_PORT = int(os.environ.get("PORT", 8000))
 MODELS_DIR = os.environ.get("PREDICTA_MODELS_DIR", "data/ai_models_v2")
+RAW_DATA_PATH = os.environ.get("PREDICTA_RAW_DATA", "data/raw")
+CLUBS_PATH = os.environ.get("PREDICTA_CLUBS", "data/clubs")
 
 # ========== Flask setup ==========
 app = Flask(__name__)
@@ -31,6 +34,12 @@ CORS(app, resources={r"/*": {"origins": "*"}})
 
 # ========== ML Engine ==========
 engine = MLPredictionEngine(model_path=MODELS_DIR)
+
+# ========== Historical Processor ==========
+history_processor = HistoricalDataProcessor(
+    raw_data_path=RAW_DATA_PATH,
+    clubs_path=CLUBS_PATH
+)
 
 # ======================================================
 # ROUTES
@@ -43,6 +52,8 @@ def home():
         "port": APP_PORT,
         "model_trained": engine.is_trained,
         "models_dir": MODELS_DIR,
+        "raw_data_path": RAW_DATA_PATH,
+        "clubs_path": CLUBS_PATH,
         "author": "Olcay Arslan",
         "api_endpoints": [
             "/api/leagues",
@@ -289,12 +300,132 @@ def reload_models():
 
 @app.route("/api/history/load", methods=["POST"])
 def load_history():
-    """Geçmiş verileri yükle (placeholder)"""
-    return jsonify({
-        "status": "ok",
-        "message": "Bu özellik henüz aktif değil",
-        "matches_loaded": 0
-    })
+    """Geçmiş verileri yükle ve modele feature olarak ekle"""
+    try:
+        if not os.path.exists(RAW_DATA_PATH):
+            return jsonify({
+                "status": "error",
+                "message": f"Geçmiş veri klasörü bulunamadı: {RAW_DATA_PATH}",
+                "matches_loaded": 0,
+                "hint": "data/raw klasörünü oluşturun ve içine ülke bazlı CSV/TXT dosyaları ekleyin"
+            }), 404
+        
+        # Tüm ülkeleri tespit et
+        countries = [
+            d for d in os.listdir(RAW_DATA_PATH)
+            if os.path.isdir(os.path.join(RAW_DATA_PATH, d)) and d.lower() != "clubs"
+        ]
+        
+        if not countries:
+            return jsonify({
+                "status": "warning",
+                "message": f"{RAW_DATA_PATH} klasöründe hiç ülke klasörü bulunamadı",
+                "matches_loaded": 0,
+                "hint": "Örnek: data/raw/turkey, data/raw/england gibi klasörler oluşturun"
+            }), 200
+        
+        total_matches = 0
+        loaded_countries = []
+        failed_countries = []
+        
+        logger.info(f"📂 {len(countries)} ülke tespit edildi: {', '.join(countries)}")
+        
+        for country in countries:
+            try:
+                logger.info(f"📄 {country} yükleniyor...")
+                matches = history_processor.load_country_data(country)
+                
+                if not matches:
+                    failed_countries.append(f"{country} (veri yok)")
+                    continue
+                
+                # Feature engineer'a ekle
+                for m in matches:
+                    result = m.get('result', '?')
+                    
+                    # Sonuç belirleme
+                    if result not in ('1', 'X', '2'):
+                        try:
+                            hg = int(m.get('home_score', 0))
+                            ag = int(m.get('away_score', 0))
+                            result = '1' if hg > ag else ('X' if hg == ag else '2')
+                        except:
+                            result = 'X'
+                    
+                    # Ev sahibi takım geçmişi
+                    home_result = 'W' if result == '1' else ('D' if result == 'X' else 'L')
+                    engine.feature_engineer.update_team_history(
+                        m['home_team'],
+                        {
+                            'result': home_result,
+                            'goals_for': int(m.get('home_score', 0)),
+                            'goals_against': int(m.get('away_score', 0)),
+                            'date': m.get('date', ''),
+                            'venue': 'home'
+                        }
+                    )
+                    
+                    # Deplasman takımı geçmişi
+                    away_result = 'L' if result == '1' else ('D' if result == 'X' else 'W')
+                    engine.feature_engineer.update_team_history(
+                        m['away_team'],
+                        {
+                            'result': away_result,
+                            'goals_for': int(m.get('away_score', 0)),
+                            'goals_against': int(m.get('home_score', 0)),
+                            'date': m.get('date', ''),
+                            'venue': 'away'
+                        }
+                    )
+                    
+                    # H2H geçmişi
+                    engine.feature_engineer.update_h2h_history(
+                        m['home_team'], m['away_team'],
+                        {
+                            'result': result,
+                            'home_goals': int(m.get('home_score', 0)),
+                            'away_goals': int(m.get('away_score', 0))
+                        }
+                    )
+                    
+                    # Lig istatistikleri
+                    engine.feature_engineer.update_league_results(
+                        m.get('league', 'Unknown'), result
+                    )
+                
+                total_matches += len(matches)
+                loaded_countries.append(f"{country} ({len(matches)} maç)")
+                logger.info(f"✅ {country}: {len(matches)} maç yüklendi")
+                
+            except Exception as e:
+                logger.warning(f"⚠️ {country} yüklenemedi: {e}")
+                failed_countries.append(f"{country} (hata: {str(e)[:50]})")
+                continue
+        
+        # Feature data'yı kaydet
+        engine.feature_engineer._save_data()
+        
+        response = {
+            "status": "ok",
+            "message": f"{len(loaded_countries)} ülkeden geçmiş veriler yüklendi",
+            "matches_loaded": total_matches,
+            "countries_loaded": loaded_countries,
+            "countries_failed": failed_countries,
+            "total_countries": len(countries),
+            "success_rate": f"{len(loaded_countries)}/{len(countries)}"
+        }
+        
+        logger.info(f"🎯 Toplam {total_matches} maç feature hafızasına eklendi")
+        
+        return jsonify(response)
+        
+    except Exception as e:
+        logger.error(f"/api/history/load error: {e}", exc_info=True)
+        return jsonify({
+            "status": "error",
+            "message": str(e),
+            "matches_loaded": 0
+        }), 500
 
 
 @app.route("/api/training/start", methods=["POST"])
@@ -303,7 +434,8 @@ def start_training():
     return jsonify({
         "status": "ok",
         "message": "Eğitim başlatıldı (background process)",
-        "training_started": True
+        "training_started": True,
+        "hint": "Gerçek eğitim için model_trainer.py çalıştırın"
     })
 
 
@@ -328,6 +460,8 @@ if __name__ == "__main__":
     logger.info("⚽ Predicta Europe ML v2 - Backend Aktif")
     logger.info("=" * 60)
     logger.info(f"📂 Models: {MODELS_DIR}")
+    logger.info(f"📂 Raw Data: {RAW_DATA_PATH}")
+    logger.info(f"📂 Clubs: {CLUBS_PATH}")
     logger.info(f"🌐 Port: {APP_PORT}")
     logger.info(f"🤖 Trained: {'✅' if engine.is_trained else '⚠️ Eğitim gerekli'}")
     logger.info("=" * 60)
