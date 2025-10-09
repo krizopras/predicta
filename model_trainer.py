@@ -179,3 +179,4 @@ def train_with_progress(auto_confirm=False):
 
 if __name__ == "__main__":
     train_with_progress(auto_confirm=True)
+
