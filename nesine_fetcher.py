@@ -1,176 +1,92 @@
-#!/usr/bin/env python3
-"""
-Nesine Bulletin Fetcher v3
-Full bulletin retriever for Predicta Europe ML
-Compatible with both legacy (sg -> EA/CA) and new (FB) structures.
-"""
-
 import requests
 import json
 from datetime import date
-import traceback
 
-# =============================
-# Main Fetch Function
-# =============================
+headers = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "Referer": "https://www.nesine.com/",
+    "Origin": "https://www.nesine.com",
+    "Accept": "application/json, text/plain, */*",
+}
 
-def fetch_bulletin(fetch_date=None, filter_leagues=False):
-    """
-    Fetches the full Nesine bulletin for a given date.
-    Works with all known API structures (FB, EA/CA, etc.)
-    """
-    if fetch_date is None:
-        fetch_date = date.today()
+BASE_URL = "https://cdnbulten.nesine.com/api/bulten/getprebultenfull"
 
-    url = f"https://cdnbulten.nesine.com/api/bulten/getprebultenfull?date={fetch_date}"
-    print("=" * 60)
-    print("📡 NESINE API CALL")
-    print("=" * 60)
-    print(f"URL: {url}")
-    print(f"Date: {fetch_date}")
-    print(f"Filter: {'ON' if filter_leagues else 'OFF'}")
+def fetch_bulletin(target_date=None, filter_leagues=False):
+    if not target_date:
+        target_date = date.today()
+
+    if isinstance(target_date, date):
+        date_str = target_date.strftime("%Y-%m-%d")
+    else:
+        date_str = str(target_date)
+
+    url = f"{BASE_URL}?date={date_str}"
+    print(f"\n{'='*60}\n📡 NESINE API CALL\n{'='*60}")
+    print(f"URL: {url}\nDate: {date_str}\nFilter: {'ON' if filter_leagues else 'OFF'}")
 
     try:
-        resp = requests.get(url, timeout=20)
-        if resp.status_code != 200:
-            print(f"❌ HTTP Error: {resp.status_code}")
-            return []
-
-        data = resp.json()
-        matches = []
-
-        # Inspect structure
-        print("🔍 API Response Structure:")
+        r = requests.get(url, headers=headers, timeout=15)
+        r.raise_for_status()
+        data = r.json()
+        print(f"🔍 API Response Structure:")
         if isinstance(data, dict):
             print(f"   Keys: {list(data.keys())}")
             if "sg" in data:
-                print(f"   SG Keys: {list(data['sg'].keys())}")
+                sg_keys = list(data.get("sg", {}).keys())
+                print(f"   SG Keys: {sg_keys}")
         else:
-            print("   Response is not a dictionary!")
-            return []
+            print(f"   Type: {type(data)}")
+    except Exception as e:
+        print(f"❌ API Error: {e}")
+        return []
 
-        # ======================================================
-        # FORMAT 1: New API (FB) - usually contains prematch data
-        # ======================================================
-        if "FB" in data and isinstance(data["FB"], list):
-            print("\n🔄 Processing Format 1 (FB)...")
-            for m in data["FB"]:
-                if m.get("GT") != 1:  # Only football
+    matches = []
+
+    # === Format 2: Old API (sg → EA/CA)
+    if "sg" in data and isinstance(data["sg"], dict):
+        print("\n🔄 Processing Format 2 (SG)...")
+        for section in ["EA", "CA"]:
+            section_matches = data.get("sg", {}).get(section, [])
+            if not isinstance(section_matches, list):
+                print(f"⚠️ {section} section is not a list, skipping.")
+                continue
+            print(f"   {section}: {len(section_matches)} matches")
+
+            for m in section_matches:
+                if not isinstance(m, dict):
+                    continue
+                if m.get("GT") != 1:
                     continue
 
                 odds_dict = {"1": None, "X": None, "2": None}
                 try:
                     ma_list = m.get("MA", [])
-                    if isinstance(ma_list, list) and len(ma_list) > 0:
+                    if isinstance(ma_list, list) and ma_list:
                         oca_list = ma_list[0].get("OCA", [])
                         if isinstance(oca_list, list) and len(oca_list) >= 3:
                             odds_dict["1"] = oca_list[0].get("O")
                             odds_dict["X"] = oca_list[1].get("O")
                             odds_dict["2"] = oca_list[2].get("O")
                 except Exception as e:
-                    print(f"⚠️ Odds parse error (FB): {e}")
+                    print(f"   ⚠️ Odds parse error: {e}")
+                    continue
 
                 matches.append({
                     "home_team": m.get("HN", "").strip(),
                     "away_team": m.get("AN", "").strip(),
                     "league": m.get("LN", "Unknown League").strip(),
-                    "league_code": m.get("LC", ""),
-                    "league_id": m.get("LID", ""),
                     "date": m.get("D", ""),
                     "time": m.get("T", ""),
                     "match_id": m.get("C", ""),
-                    "event_id": m.get("EV", ""),
                     "odds": odds_dict,
-                    "live": False
+                    "live": section == "CA",
                 })
-
-            print(f"   ✅ {len(matches)} matches retrieved from Format 1 (FB)")
-
-        # ======================================================
-        # FORMAT 2: Old API (sg -> EA / CA)
-        # ======================================================
-        elif "sg" in data and isinstance(data["sg"], dict):
-            print(f"\n🔄 Processing Format 2 (SG)...")
-
-            sg_data = data.get("sg", {})
-            valid_sections = [k for k, v in sg_data.items() if isinstance(v, list)]
-
-            print(f"   Detected sections: {list(sg_data.keys())}")
-            print(f"   ✅ Valid sections: {valid_sections}")
-
-            for section in valid_sections:
-                section_matches = sg_data.get(section, [])
-                print(f"   {section}: {len(section_matches)} matches")
-
-                for m in section_matches:
-                    if m.get("GT") != 1:
-                        continue
-
-                    odds_dict = {"1": None, "X": None, "2": None}
-                    try:
-                        ma_list = m.get("MA", [])
-                        if isinstance(ma_list, list) and len(ma_list) > 0:
-                            oca_list = ma_list[0].get("OCA", [])
-                            if isinstance(oca_list, list) and len(oca_list) >= 3:
-                                odds_dict["1"] = oca_list[0].get("O")
-                                odds_dict["X"] = oca_list[1].get("O")
-                                odds_dict["2"] = oca_list[2].get("O")
-                    except Exception as e:
-                        print(f"      ⚠️ Odds parse error in {section}: {e}")
-
-                    matches.append({
-                        "home_team": m.get("HN", "").strip(),
-                        "away_team": m.get("AN", "").strip(),
-                        "league": m.get("LN", "Unknown League").strip(),
-                        "league_code": m.get("LC", ""),
-                        "league_id": m.get("LID", ""),
-                        "date": m.get("D", ""),
-                        "time": m.get("T", ""),
-                        "match_id": m.get("C", ""),
-                        "event_id": m.get("EV", ""),
-                        "odds": odds_dict,
-                        "live": section == "CA"
-                    })
-
-            print(f"   ✅ {len(matches)} total matches successfully parsed (SG format)")
-
-        else:
-            print(f"\n⚠️ Unknown API format!")
-            print(f"   Data keys: {list(data.keys()) if isinstance(data, dict) else 'NOT_DICT'}")
-            return []
-
-        print("=" * 60)
-        print(f"✅ RESULT: {len(matches)} matches found")
-        print("=" * 60)
-
-        return matches
-
-    except Exception as e:
-        print("❌ Exception during fetch:")
-        print(traceback.format_exc())
+        print(f"   ✅ Retrieved {len(matches)} matches from Format 2")
+    else:
+        print("\n⚠️ Unknown API format!")
         return []
 
-# =============================
-# Convenience Wrappers
-# =============================
-
-def fetch_today(filter_leagues=False):
-    """Shortcut for today's bulletin"""
-    return fetch_bulletin(date.today(), filter_leagues=filter_leagues)
-
-
-def fetch_matches_for_date(date_obj):
-    """Fetch bulletin for a specific date object"""
-    return fetch_bulletin(date_obj, filter_leagues=False)
-
-
-# =============================
-# Manual Test
-# =============================
-
-if __name__ == "__main__":
-    print("🧪 Running manual test for today's matches...")
-    data = fetch_today(filter_leagues=False)
-    print(f"\nTotal Matches: {len(data)}")
-    if data:
-        print(f"Sample:\n{json.dumps(data[:3], indent=2, ensure_ascii=False)}")
+    # Filter empty matches
+    matches = [m for m in matches if m["home_team"] and m["away_team"]]
+    print(f"✅ Total matches found: {len(matches)}")
+    return matches
