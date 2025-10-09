@@ -2,166 +2,267 @@ import requests
 import json
 from datetime import date, datetime
 
-# ============================================================
-# 🔧 Global Ayarlar
-# ============================================================
-BASE_URL = "https://cdnbulten.nesine.com/api/bulten/getprebultenfull"
-HEADERS = {
-    "User-Agent": "Mozilla/5.0",
+headers = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
     "Referer": "https://www.nesine.com/",
     "Origin": "https://www.nesine.com",
+    "Accept": "application/json, text/plain, */*",
 }
 
-# ============================================================
-# 🎯 Ana Fonksiyonlar
-# ============================================================
+# YENİ API ENDPOINT (2025 güncel)
+BASE_URL = "https://cdnbulten.nesine.com/api/bulten/getprebultenfull"
 
-def fetch_bulletin(target_date=None, filter_leagues=True):
+def fetch_bulletin(target_date=None, filter_leagues=False):
     """
-    Nesine'nin resmi JSON API'sinden bülteni çeker (prematch + canlı).
-    Geri dönüş formatı PredictaIQ backend yapısına uyumludur.
+    Nesine bültenini JSON API'den çeker (prematch + canlı).
+    
+    Args:
+        target_date: Tarih (YYYY-MM-DD formatında string veya date objesi)
+        filter_leagues: Sadece ana ligleri getir (False = tüm maçlar)
+    
+    Returns:
+        list: Maç listesi
     """
     if not target_date:
-        target_date = date.today().strftime("%Y-%m-%d")
-    elif isinstance(target_date, (date, datetime)):
-        target_date = target_date.strftime("%Y-%m-%d")
-
-    url = f"{BASE_URL}?date={target_date}"
-    print(f"📡 Nesine API çağrısı: {url}")
-
+        target_date = date.today()
+    
+    # Tarih formatını düzelt
+    if isinstance(target_date, date):
+        date_str = target_date.strftime("%Y-%m-%d")
+    else:
+        date_str = str(target_date)
+    
+    url = f"{BASE_URL}?date={date_str}"
+    
+    print(f"\n{'='*60}")
+    print(f"📡 Nesine API Çağrısı")
+    print(f"{'='*60}")
+    print(f"URL: {url}")
+    print(f"Tarih: {date_str}")
+    print(f"Filtre: {'AÇIK' if filter_leagues else 'KAPALI'}")
+    
     try:
-        r = requests.get(url, headers=HEADERS, timeout=15)
+        r = requests.get(url, headers=headers, timeout=15)
         r.raise_for_status()
         data = r.json()
+        
+        # API yanıtını debug et
+        print(f"\n🔍 API Yanıt Yapısı:")
+        if isinstance(data, dict):
+            print(f"   Keys: {list(data.keys())}")
+            if "Leagues" in data:
+                print(f"   Leagues Count: {len(data.get('Leagues', []))}")
+            if "sg" in data:
+                sg_keys = list(data.get("sg", {}).keys())
+                print(f"   SG Keys: {sg_keys}")
+                for key in sg_keys:
+                    count = len(data["sg"].get(key, []))
+                    print(f"      {key}: {count} maç")
+        else:
+            print(f"   Type: {type(data)}")
+        
+    except requests.exceptions.Timeout:
+        print(f"❌ API Timeout (15 saniye)")
+        return []
+    except requests.exceptions.RequestException as e:
+        print(f"❌ API İstek Hatası: {e}")
+        return []
+    except json.JSONDecodeError as e:
+        print(f"❌ JSON Parse Hatası: {e}")
+        return []
     except Exception as e:
-        print(f"❌ Nesine API erişim hatası: {e}")
+        print(f"❌ Bilinmeyen Hata: {e}")
         return []
 
     matches = []
-
-    # =====================================================
-    # 🧩 Format 1: Yeni JSON (Leagues -> Events)
-    # =====================================================
-    if "Leagues" in data:
+    
+    # FORMAT 1: Yeni API Yapısı (Leagues -> Events)
+    if "Leagues" in data and isinstance(data["Leagues"], list):
+        print(f"\n🔄 Format 1 (Leagues) işleniyor...")
+        
         for league in data.get("Leagues", []):
             league_name = league.get("N", "Bilinmeyen Lig")
-
+            league_id = league.get("I", "")
+            
             for match in league.get("Events", []):
-                if match.get("GT") != 1:  # sadece futbol
+                # Sadece futbol (GT=1)
+                if match.get("GT") != 1:
                     continue
-
-                ocg = match.get("OCG", {}).get("1", {}).get("OC", [])
-                odds = []
-                for o in ocg[:3]:
-                    if o.get("O"):
-                        try:
-                            odds.append(round(float(o.get("O")), 2))
-                        except:
-                            continue
-
-                if len(odds) < 3:
-                    continue
-
+                
+                # Oran bilgisini çek
+                odds_dict = {"1": None, "X": None, "2": None}
+                try:
+                    ocg = match.get("OCG", {})
+                    if "1" in ocg and "OC" in ocg["1"]:
+                        oc_list = ocg["1"]["OC"]
+                        if len(oc_list) >= 3:
+                            odds_dict["1"] = oc_list[0].get("O")
+                            odds_dict["X"] = oc_list[1].get("O")
+                            odds_dict["2"] = oc_list[2].get("O")
+                except:
+                    pass
+                
+                # Maç saati
+                match_time = match.get("T", "")
+                match_date = match.get("D", "")
+                
                 matches.append({
                     "home_team": match.get("HN", "").strip(),
                     "away_team": match.get("AN", "").strip(),
-                    "league": league_name,
-                    "date": match.get("D", ""),
-                    "time": match.get("T", ""),
+                    "league": league_name.strip(),
+                    "league_id": league_id,
+                    "date": match_date,
+                    "time": match_time,
+                    "start_time": match_time,
                     "match_id": match.get("C", ""),
                     "event_id": match.get("EV", ""),
-                    "odds": {
-                        "MS1": odds[0],
-                        "MS0": odds[1],
-                        "MS2": odds[2]
-                    }
+                    "odds": odds_dict
                 })
-
-    # =====================================================
-    # 🧩 Format 2: Eski JSON (sg -> EA/CA)
-    # =====================================================
-    elif "sg" in data:
-        for section in ["EA", "CA"]:
-            for m in data.get("sg", {}).get(section, []):
+        
+        print(f"   ✅ Format 1'den {len(matches)} maç çekildi")
+    
+    # FORMAT 2: Eski API Yapısı (sg -> EA/CA)
+    elif "sg" in data and isinstance(data["sg"], dict):
+        print(f"\n🔄 Format 2 (SG) işleniyor...")
+        
+        for section in ["EA", "CA"]:  # EA=Prematch, CA=Canlı
+            section_matches = data.get("sg", {}).get(section, [])
+            print(f"   {section}: {len(section_matches)} maç")
+            
+            for m in section_matches:
+                # Sadece futbol (GT=1)
                 if m.get("GT") != 1:
                     continue
-
-                odds = []
-                for bahis in m.get("MA", []):
-                    for oca in bahis.get("OCA", []):
-                        val = oca.get("O")
-                        if val:
-                            try:
-                                odds.append(round(float(val), 2))
-                            except:
-                                continue
-
-                if len(odds) < 3:
-                    continue
-
+                
+                # Oran bilgisini çek
+                odds_dict = {"1": None, "X": None, "2": None}
+                try:
+                    ma_list = m.get("MA", [])
+                    if ma_list:
+                        oca_list = ma_list[0].get("OCA", [])
+                        if len(oca_list) >= 3:
+                            odds_dict["1"] = oca_list[0].get("O")
+                            odds_dict["X"] = oca_list[1].get("O")
+                            odds_dict["2"] = oca_list[2].get("O")
+                except:
+                    pass
+                
+                match_time = m.get("T", "")
+                match_date = m.get("D", "")
+                
                 matches.append({
-                    "home_team": m.get("HN", ""),
-                    "away_team": m.get("AN", ""),
-                    "league": m.get("LC", "Bilinmeyen Lig"),
-                    "date": m.get("D", ""),
-                    "time": m.get("T", ""),
+                    "home_team": m.get("HN", "").strip(),
+                    "away_team": m.get("AN", "").strip(),
+                    "league": m.get("LN", "Bilinmeyen Lig").strip(),
+                    "league_code": m.get("LC", ""),
+                    "league_id": m.get("LID", ""),
+                    "date": match_date,
+                    "time": match_time,
+                    "start_time": match_time,
                     "match_id": m.get("C", ""),
                     "event_id": m.get("EV", ""),
-                    "odds": {
-                        "MS1": odds[0],
-                        "MS0": odds[1],
-                        "MS2": odds[2]
-                    }
+                    "odds": odds_dict,
+                    "live": section == "CA"
                 })
-
-    # =====================================================
-    # 🔎 Lig Filtresi (isteğe bağlı)
-    # =====================================================
+        
+        print(f"   ✅ Format 2'den {len(matches)} maç çekildi")
+    
+    else:
+        print(f"\n⚠️ Bilinmeyen API formatı!")
+        print(f"   Data keys: {list(data.keys()) if isinstance(data, dict) else 'NOT_DICT'}")
+        return []
+    
+    # Boş takım isimlerini filtrele
+    matches = [m for m in matches if m["home_team"] and m["away_team"]]
+    
+    # Lig filtreleme (opsiyonel)
     if filter_leagues:
-        matches = [
-            m for m in matches
-            if any(k in m.get("league", "").lower() for k in [
-                "premier", "bundes", "liga", "serie",
-                "ligue", "super", "süper", "eredivisie", "primeira"
-            ])
+        print(f"\n🔍 Lig filtreleme aktif...")
+        
+        # Tüm lig isimlerini topla (debug için)
+        all_leagues = set(m["league"].lower() for m in matches if m["league"])
+        print(f"   Toplam {len(all_leagues)} farklı lig var")
+        print(f"   Örnek ligler: {sorted(list(all_leagues))[:10]}")
+        
+        # Ana ligler (Genişletilmiş liste)
+        keywords = [
+            "premier", "championship", "league one", "league two",
+            "la liga", "laliga", "segunda",
+            "bundesliga", "2. bundesliga",
+            "serie a", "serie b",
+            "ligue 1", "ligue 2",
+            "süper lig", "süper", "1. lig",
+            "eredivisie",
+            "primeira liga",
+            "pro league",
+            "champions league", "uefa", "europa",
+            "world cup", "euro", "nations league",
+            "cup", "kupa"
         ]
-
-    print(f"✅ {len(matches)} maç bulundu ({target_date})")
+        
+        filtered = []
+        for m in matches:
+            league_lower = m["league"].lower()
+            if any(kw in league_lower for kw in keywords):
+                filtered.append(m)
+        
+        print(f"   ✅ Filtrelenmiş: {len(filtered)} maç")
+        matches = filtered
+    
+    print(f"\n{'='*60}")
+    print(f"✅ SONUÇ: {len(matches)} maç bulundu")
+    print(f"{'='*60}\n")
+    
     return matches
 
-# ============================================================
-# ⚙️ PredictaIQ Uyumluluk Katmanı
-# ============================================================
 
-def fetch_today(filter_leagues: bool = True):
-    """
-    Bugünkü maçları getirir.
-    PredictaIQ backend'i bu fonksiyonu doğrudan çağırır.
-    """
+def fetch_today(filter_leagues=False):
+    """Bugünkü maçları çek"""
     return fetch_bulletin(date.today(), filter_leagues)
 
 
-def fetch_matches_for_date(target_date, filter_leagues: bool = True):
-    """
-    Belirli bir tarih için Nesine maçlarını getirir.
-    PredictaIQ backend'inde tarihli sorgular bu fonksiyonu kullanır.
-    """
+def fetch_matches_for_date(target_date, filter_leagues=False):
+    """Belirli bir tarihteki maçları çek"""
     return fetch_bulletin(target_date, filter_leagues)
 
 
-# ============================================================
-# 🧪 Test (lokal çalıştırma)
-# ============================================================
+# ====================================================
+# 🧪 Test Modu
+# ====================================================
 if __name__ == "__main__":
-    print("📡 Nesine bülteni çekiliyor...\n")
-    today_matches = fetch_today()
-
-    print(f"✅ {len(today_matches)} maç bulundu!\n")
-    for m in today_matches[:10]:
-        print(f"{m['home_team']} vs {m['away_team']} | "
-              f"{m['odds']} | {m['league']}")
-
-    # JSON kaydı
-    with open("nesine_today.json", "w", encoding="utf-8") as f:
-        json.dump(today_matches, f, ensure_ascii=False, indent=2)
-    print("\n💾 nesine_today.json dosyası oluşturuldu.")
+    print("\n🎯 NESINE FETCHER TEST")
+    print("="*60)
+    
+    # Test 1: Bugünkü tüm maçlar
+    print("\n📅 TEST 1: Bugünkü TÜM maçlar (filtre KAPALI)")
+    all_matches = fetch_today(filter_leagues=False)
+    print(f"\n📊 Sonuç: {len(all_matches)} maç bulundu")
+    
+    if all_matches:
+        print("\n📋 İlk 3 maç:")
+        for i, m in enumerate(all_matches[:3], 1):
+            print(f"\n{i}. {m['home_team']} - {m['away_team']}")
+            print(f"   Lig: {m['league']}")
+            print(f"   Saat: {m['time']}")
+            print(f"   Oranlar: 1={m['odds']['1']} X={m['odds']['X']} 2={m['odds']['2']}")
+    
+    # Test 2: Filtrelenmiş maçlar
+    print("\n" + "="*60)
+    print("\n📅 TEST 2: Bugünkü ANA LİG maçları (filtre AÇIK)")
+    filtered_matches = fetch_today(filter_leagues=True)
+    print(f"\n📊 Sonuç: {len(filtered_matches)} maç bulundu")
+    
+    # JSON'a kaydet
+    output = {
+        "date": date.today().strftime("%Y-%m-%d"),
+        "total_matches": len(all_matches),
+        "filtered_matches": len(filtered_matches),
+        "matches": all_matches
+    }
+    
+    filename = f"nesine_matches_{date.today().strftime('%Y%m%d')}.json"
+    with open(filename, "w", encoding="utf-8") as f:
+        json.dump(output, f, ensure_ascii=False, indent=2)
+    
+    print(f"\n💾 {filename} dosyası oluşturuldu!")
+    print("\n✅ Test tamamlandı!")
