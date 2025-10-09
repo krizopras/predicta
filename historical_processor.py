@@ -3,7 +3,7 @@
 Geçmiş Maç Verilerini İşleme + Football.DB Kulüp Desteği
 ----------------------------------------------------------
 - CSV / TXT / football.db formatlarını destekler.
-- Ayrıca data/clups klasöründeki kulüp dosyalarından alias (eş anlamlı isim) verisi yükler.
+- Ayrıca data/clubs klasöründeki kulüp dosyalarından alias (eş anlamlı isim) verisi yükler.
 """
 
 import os
@@ -19,7 +19,7 @@ import glob
 logger = logging.getLogger(__name__)
 
 class HistoricalDataProcessor:
-    def __init__(self, raw_data_path: str = "data/raw", clubs_path: str = "data/clups"):
+    def __init__(self, raw_data_path: str = "data/raw", clubs_path: str = "data/clubs"):
         self.raw_data_path = raw_data_path
         self.clubs_path = clubs_path
         self.club_aliases = self._load_club_aliases()
@@ -29,7 +29,7 @@ class HistoricalDataProcessor:
     # 1️⃣  KULÜP ALIAS YÜKLEME
     # ==========================================================
     def _load_club_aliases(self) -> Dict[str, str]:
-        """data/clups klasöründeki tüm ülke kulüp dosyalarını okuyarak alias haritası oluşturur."""
+        """data/clubs klasöründeki tüm ülke kulüp dosyalarını okuyarak alias haritası oluşturur."""
         aliases = {}
         if not os.path.exists(self.clubs_path):
             logger.warning(f"⚠️ Kulüp klasörü bulunamadı: {self.clubs_path}")
