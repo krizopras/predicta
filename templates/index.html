@@ -1,414 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Predicta Europe ML – Pro Dashboard</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Predicta Europe ML v2</title>
 <style>
-:root{
-  --navy:#001F3F; --navy-2:#012a5e; --navy-3:#0a2243;
-  --gold:#FFD700; --gold-2:#f5d043;
-  --bg:#0b1528; --card:#0f1e35; --muted:#9fb1ce; --text:#f2f6ff;
-  --ok:#22c55e; --warn:#f59e0b; --err:#ef4444;
-  --b:#123a74; --b2:#1a3159; --shadow:0 10px 30px rgba(0,0,0,.35);
+body {
+  background: #0f172a; color: #e2e8f0; font-family: "Segoe UI", sans-serif;
+  display: flex; flex-direction: column; align-items: center; padding: 30px;
 }
-*{box-sizing:border-box}
-html,body{height:100%}
-body{margin:0;background:linear-gradient(180deg,var(--bg),#08152a 70%);color:var(--text);font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,Arial}
-a{color:var(--gold)}
-
-.topbar{
-  position:sticky; top:0; z-index:50; backdrop-filter:saturate(120%) blur(7px);
-  background:linear-gradient(90deg,var(--navy),#071a33); border-bottom:2px solid var(--gold);
-  display:flex; align-items:center; justify-content:space-between; padding:10px 16px;
+h1 { color: #38bdf8; margin-bottom: 20px; }
+button {
+  background: #2563eb; color: white; border: none; border-radius: 8px;
+  padding: 10px 20px; cursor: pointer; margin-top: 15px;
 }
-.brand{display:flex; align-items:center; gap:12px}
-.logo{width:36px;height:36px;border-radius:11px;display:grid;place-items:center;
-  background:radial-gradient(circle at 30% 30%,var(--gold),var(--gold-2));
-  box-shadow:0 0 0 2px rgba(255,215,0,.35), 0 8px 24px rgba(255,215,0,.25); color:#09204b; font-weight:900}
-.brand h1{font-size:18px;margin:0;letter-spacing:.2px}
-.status{font-size:12px;padding:4px 8px;border-radius:999px;border:1px solid var(--b);background:#0a1e38;color:var(--muted)}
-.status.online{border-color:#134e20;color:#a7f3d0;background:rgba(34,197,94,.12)}
-.actions{display:flex; gap:8px;flex-wrap:wrap}
-.btn{background:#0b213f;color:var(--text);border:1px solid var(--b);border-radius:10px;padding:9px 12px;cursor:pointer;font-weight:600;transition:.2s;font-size:13px}
-.btn:hover{transform:translateY(-1px);border-color:var(--gold);color:var(--gold)}
-.btn.gold{background:linear-gradient(90deg,var(--gold),var(--gold-2));color:#081b39;border:none}
-.btn.gold:hover{filter:brightness(1.05)}
-.btn:disabled{opacity:0.5;cursor:not-allowed}
-
-.wrap{display:grid;grid-template-columns:280px 1fr;gap:16px;padding:16px;max-width:1500px;margin:0 auto}
-.sidebar{background:linear-gradient(180deg, #0f2546, #0e213f);border:1px solid var(--b);border-radius:14px;box-shadow:var(--shadow);padding:14px}
-.main{display:grid;grid-template-rows:auto auto 1fr;gap:16px}
-
-.sidebar h3{margin:4px 0 8px;color:var(--gold)}
-.search{position:relative;margin-bottom:10px}
-.search input{width:100%;background:#0b213f;color:var(--text);border:1px solid var(--b);border-radius:10px;padding:10px 34px 10px 36px}
-.search svg{position:absolute;left:10px;top:10px}
-.leagues{display:grid;gap:8px;max-height:72vh;overflow:auto;padding-right:6px}
-.league{display:flex;justify-content:space-between;align-items:center;gap:8px;background:#0b213f;border:1px solid var(--b);border-left:4px solid var(--gold);
-  padding:10px;border-radius:10px;cursor:pointer;transition:.2s}
-.league:hover{transform:translateX(3px);border-color:var(--gold)}
-.league.active{outline:2px solid var(--gold);border-left-color:var(--ok)}
-
-.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-.kpi{background:linear-gradient(180deg,#0e2242,#0c1d38);border:1px solid var(--b);border-radius:14px;padding:14px;box-shadow:var(--shadow)}
-.kpi h4{margin:0 0 6px;color:var(--muted);font-size:12px}
-.kpi .val{font-size:22px;font-weight:700}
-.kpi .sub{font-size:12px;color:var(--muted);margin-top:4px}
-
-.filters{display:flex;gap:10px;align-items:center;background:linear-gradient(180deg,#0e2040,#0b1b35);border:1px solid var(--b);padding:10px;border-radius:14px;flex-wrap:wrap}
-.select,.input{background:#0b213f;color:var(--text);border:1px solid var(--b);border-radius:10px;padding:10px}
-.tag{font-size:12px;border:1px solid var(--b);background:#0b213f;padding:4px 10px;border-radius:999px}
-.refresh{margin-left:auto}
-
-.card{background:linear-gradient(180deg,#0e2242,#0c1d38);border:1px solid var(--b);border-radius:14px;padding:14px;box-shadow:var(--shadow);min-height:220px}
-.card h3{margin:2px 0 10px;font-size:16px}
-.table-wrapper{overflow-x:auto}
-table{width:100%;border-collapse:collapse}
-th,td{padding:10px;border-bottom:1px dashed var(--b);text-align:left}
-th{color:var(--gold);position:sticky;top:0;background:#0c1d38;white-space:nowrap}
-tr:hover{background:#0a2243}
-.pill{padding:3px 10px;border-radius:999px;font-weight:700;font-size:13px;display:inline-block}
-.ok{background:rgba(34,197,94,.15);border:1px solid #14532d;color:#86efac}
-.mid{background:rgba(245,158,11,.15);border:1px solid #7c5806;color:#facc15}
-.bad{background:rgba(239,68,68,.15);border:1px solid #7f1d1d;color:#fca5a5}
-.odd{display:inline-flex;align-items:center;padding:2px 8px;border-radius:6px;font-weight:700;background:var(--gold);color:#072046;font-size:13px}
-.score-box{background:#0a1e38;border:1px solid var(--b);padding:4px 8px;border-radius:6px;font-weight:700;color:var(--gold);font-size:14px}
-
-.skel{position:relative;overflow:hidden;background:#0b213f;min-height:38px;border-radius:10px;border:1px solid var(--b)}
-.skel::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,.07),transparent);animation:shine 1.2s linear infinite}
-@keyframes shine{0%{transform:translateX(-100%)}100%{transform:translateX(100%)}}
-
-.toast{position:fixed;bottom:16px;left:50%;transform:translateX(-50%);background:#0b213f;border:1px solid var(--b);border-left:4px solid var(--gold);
-  color:var(--text);padding:10px 14px;border-radius:12px;box-shadow:var(--shadow);display:none;z-index:60;max-width:90%;font-size:14px}
-.toast.show{display:block}
-.drawer{position:fixed;inset:0;background:rgba(0,0,0,.45);display:none;align-items:center;justify-content:center;z-index:70}
-.drawer.open{display:flex}
-.modal{width:min(720px,92vw);background:#0d1e38;border:1px solid var(--b);border-radius:14px;padding:16px;box-shadow:var(--shadow);max-height:85vh;overflow-y:auto}
-.modal h3{margin:0 0 10px}
-.form{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.form .input,.form .select,textarea{width:100%;background:#0b213f;color:var(--text);border:1px solid var(--b);border-radius:10px;padding:10px}
-.actions-row{display:flex;gap:10px;justify-content:flex-end;margin-top:10px}
-
-footer{color:var(--muted);text-align:center;padding:14px;border-top:1px solid var(--b);margin-top:10px;font-size:13px}
-
-.loading-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.7);display:none;align-items:center;justify-content:center;z-index:100}
-.loading-overlay.show{display:flex}
-.spinner{width:50px;height:50px;border:4px solid var(--b);border-top-color:var(--gold);border-radius:50%;animation:spin 1s linear infinite}
-@keyframes spin{to{transform:rotate(360deg)}}
-
-@media (max-width:1100px){
-  .wrap{grid-template-columns:1fr}
-  .kpis{grid-template-columns:1fr 1fr}
-  .actions{justify-content:center}
+button:hover { background: #1d4ed8; }
+table {
+  border-collapse: collapse; width: 90%; margin-top: 30px; background: #1e293b;
 }
+th, td { padding: 10px; text-align: center; border-bottom: 1px solid #334155; }
+th { background: #0ea5e9; color: #fff; }
 </style>
 </head>
 <body>
+<h1>⚽ Predicta Europe ML v2</h1>
+<p>Real-time Nesine Bulletin & AI Predictions</p>
 
-<div id="loading" class="loading-overlay">
-  <div class="spinner"></div>
-</div>
+<button id="fetchBtn">📡 Fetch Today’s Bulletin</button>
+<button id="predictBtn">🤖 Predict Matches</button>
 
-<div class="topbar">
-  <div class="brand">
-    <div class="logo">⚽</div>
-    <h1>Predicta Europe ML – Pro</h1>
-    <span id="status" class="status">Connecting…</span>
-  </div>
-  <div class="actions">
-    <button class="btn" id="btn-debug" title="Nesine API Debug">🔍 Debug</button>
-    <button class="btn" id="btn-load-history" title="Load Historical Data">📊 History</button>
-    <button class="btn" id="btn-train" title="Train Model">🎓 Train</button>
-    <button class="btn" id="btn-reload" title="Reload Models">🔄 Reload</button>
-    <button class="btn gold" id="btn-settings">⚙ Settings</button>
-  </div>
-</div>
-
-<div class="wrap">
-  <aside class="sidebar">
-    <h3>Leagues</h3>
-    <div class="search">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M21 21l-4.3-4.3M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15z" stroke="#89a6d6" stroke-width="2" stroke-linecap="round"/></svg>
-      <input id="q" placeholder="Search league…">
-    </div>
-    <div id="leagues" class="leagues">
-      <div class="skel"></div><div class="skel"></div><div class="skel"></div>
-    </div>
-  </aside>
-
-  <section class="main">
-    <div class="kpis">
-      <div class="kpi"><h4>Today's Matches</h4><div class="val" id="kpi-matches">—</div><div class="sub">Nesine bulletin</div></div>
-      <div class="kpi"><h4>Model Accuracy</h4><div class="val" id="kpi-acc">—</div><div class="sub">Ensemble model</div></div>
-      <div class="kpi"><h4>Top Confidence</h4><div class="val" id="kpi-top">—</div><div class="sub" id="kpi-top-sub">—</div></div>
-      <div class="kpi"><h4>Last Update</h4><div class="val" id="kpi-up">—</div><div class="sub">Auto refresh enabled</div></div>
-    </div>
-
-    <div class="filters">
-      <select id="sel-league" class="select"><option value="">All Leagues</option></select>
-      <select id="sel-sort" class="select">
-        <option value="time">Time</option>
-        <option value="confidence">Confidence</option>
-        <option value="value">Value</option>
-      </select>
-      <input id="txt-team" class="input" placeholder="Search team…">
-      <label style="display:flex;align-items:center;gap:6px;cursor:pointer;user-select:none">
-        <input type="checkbox" id="chk-filter" style="width:18px;height:18px;cursor:pointer">
-        <span style="font-size:13px">Major Leagues Only</span>
-      </label>
-      <span class="tag">Model: <b>ML Ensemble</b></span>
-      <button class="btn refresh" id="btn-refresh">↻ Refresh</button>
-    </div>
-
-    <div class="card">
-      <h3>Today's Matches & AI Predictions</h3>
-      <div class="table-wrapper">
-        <table>
-          <thead>
-            <tr>
-              <th style="min-width:260px">Match</th>
-              <th>FT</th>
-              <th>Score</th>
-              <th>Confidence</th>
-              <th>Value</th>
-              <th style="width:140px;text-align:right">Action</th>
-            </tr>
-          </thead>
-          <tbody id="rows">
-            <tr><td colspan="6"><div class="skel"></div></td></tr>
-            <tr><td colspan="6"><div class="skel"></div></td></tr>
-            <tr><td colspan="6"><div class="skel"></div></td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </section>
-</div>
-
-<footer>© 2025 Predicta Europe ML • Yellow & Blue • Nesine live bulletin + AI predictions</footer>
-
-<div id="drawer" class="drawer">
-  <div class="modal">
-    <h3>⚙ Settings & Batch Predictions</h3>
-    <div class="form">
-      <label>League Filter (optional)
-        <input id="league-filter" class="input" placeholder="Turkey Super Lig">
-      </label>
-      <label>Auto Refresh (min)
-        <input id="auto-min" type="number" min="1" value="5" class="input">
-      </label>
-      <label style="grid-column:1/3">Batch Prediction CSV
-        <textarea id="csv" rows="5" class="input" placeholder="home,away,league,1,X,2&#10;Galatasaray,Fenerbahce,Turkey Super Lig,2.05,3.30,3.40"></textarea>
-      </label>
-    </div>
-    <div class="actions-row">
-      <button class="btn" id="btn-batch">Run Batch</button>
-      <button class="btn" id="btn-close">Close</button>
-    </div>
-  </div>
-</div>
-
-<div id="toast" class="toast">Message</div>
+<table id="matches">
+<thead>
+  <tr><th>League</th><th>Home</th><th>Away</th><th>1</th><th>X</th><th>2</th><th>Prediction</th></tr>
+</thead>
+<tbody></tbody>
+</table>
 
 <script>
-/* ================= Configuration ================= */
 const API_BASE = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
   ? "http://localhost:8000"
   : "https://predicta-production.up.railway.app";
 
-const REFRESH_DEFAULT_MIN = 5;
-
-const $ = s=>document.querySelector(s);
-const rows = $("#rows"), leaguesBox=$("#leagues"), statusEl=$("#status"), loadingEl=$("#loading");
-let ALL_ITEMS=[], FILTERED=[], ALL_LEAGUES=[], CURRENT_LEAGUE="";
-let refreshTimer=null;
-
-function toast(msg,type="info"){
-  const el=$("#toast");
-  el.textContent=msg;
-  el.style.borderLeftColor = type==="ok"?"var(--ok)":type==="err"?"var(--err)":"var(--gold)";
-  el.classList.add("show");
-  setTimeout(()=>el.classList.remove("show"),3000);
-}
-function pct(x){return (x!=null && !Number.isNaN(x)) ? (Number(x).toFixed(1)+"%") : "—";}
-function valuePill(v){
-  if(v>=0.12) return '<span class="pill ok">Low Risk</span>';
-  if(v>=0.06) return '<span class="pill mid">Moderate</span>';
-  return '<span class="pill bad">High</span>';
-}
-function setStatus(online){
-  statusEl.textContent = online ? "Online" : "Offline (API)";
-  statusEl.classList.toggle("online", online);
-}
-function showLoading(show){
-  loadingEl.classList.toggle("show", show);
-}
-
-/* ================= API ================= */
-async function getJSON(url, init){
-  const r = await fetch(url, init);
-  if(!r.ok) throw new Error(`HTTP ${r.status}`);
-  return await r.json();
-}
-
-async function fetchLeagues(){
-  const j = await getJSON(API_BASE+"/api/leagues");
-  return j.items || [];
-}
-
-async function fetchTodayPredict(leagueFilter){
-  const filterEnabled = document.getElementById('chk-filter')?.checked ?? false;
-  const url = API_BASE + "/api/predict/today" + 
-    "?filter=" + filterEnabled +
-    (leagueFilter ? ("&league="+encodeURIComponent(leagueFilter)) : "");
-  const j = await getJSON(url);
-  return j.items || [];
-}
-
-/* ================= UI ================= */
-function fillLeagues(list){
-  leaguesBox.innerHTML="";
-  ALL_LEAGUES = list?.flatMap(c=> (c.leagues||[]).map(l=> l.name)) || [];
-  const render = items=>{
-    leaguesBox.innerHTML="";
-    (items||[]).forEach(name=>{
-      const div=document.createElement("div");
-      div.className="league";
-      div.innerHTML=`<span>${name}</span><span style="color:var(--gold)">›</span>`;
-      div.onclick=()=>{
-        CURRENT_LEAGUE = name;
-        $("#sel-league").value = name;
-        leaguesBox.querySelectorAll(".league").forEach(x=>x.classList.remove("active"));
-        div.classList.add("active");
-        applyFilters();
-      };
-      leaguesBox.appendChild(div);
-    });
-  };
-  render(ALL_LEAGUES);
-  $("#q").oninput=e=>{
-    const q=e.target.value.toLowerCase().trim();
-    render(ALL_LEAGUES.filter(x=>x.toLowerCase().includes(q)));
-  };
-  const sel=$("#sel-league");
-  sel.innerHTML='<option value="">All Leagues</option>'+ALL_LEAGUES.map(n=>`<option>${n}</option>`).join("");
-}
-
-function fillTable(items){
-  rows.innerHTML="";
-  if(!items.length){ rows.innerHTML='<tr><td colspan="6">No matches found.</td></tr>'; return; }
-  for(const it of items){
-    const p = it.prediction || {};
-    const pred = p.prediction || p.result || "-";
-    const cls = pred==="1"?"ok":pred==="X"?"mid":pred==="2"?"bad":"";
-    const score = p.score_prediction || "?-?";
-    const conf = p.confidence || 0;
-    const valueIdx = p.value_bet?.value_index || 0;
-    
-    const tr = document.createElement("tr");
-    tr.innerHTML = `
-      <td>
-        <strong>${it.home_team || "?"}</strong> – <strong>${it.away_team || "?"}</strong>
-        <div class="sub">${it.league||""} • ${it.start_time||it.time||""}</div>
-      </td>
-      <td><span class="pill ${cls}">${pred}</span></td>
-      <td><span class="score-box">${score}</span></td>
-      <td>${pct(conf)}</td>
-      <td>
-        <span class="odd">${valueIdx.toFixed(2)}</span>
-        <div style="margin-top:6px">${valuePill(valueIdx)}</div>
-      </td>
-      <td style="text-align:right">
-        <button class="btn" onclick='showDetails(${JSON.stringify(it).replace(/'/g,"\\'")})'>📊 Details</button>
-      </td>
-    `;
-    rows.appendChild(tr);
-  }
-}
-
-function applyFilters(){
-  const league=$("#sel-league").value.trim();
-  const team=$("#txt-team").value.toLowerCase().trim();
-  const sort=$("#sel-sort").value;
-  FILTERED = ALL_ITEMS.filter(m=>{
-    const okL = !league || (m.league||"").toLowerCase()===league.toLowerCase();
-    const okT = !team || (m.home_team||"").toLowerCase().includes(team) || (m.away_team||"").toLowerCase().includes(team);
-    return okL && okT;
+async function loadMatches() {
+  const res = await fetch(`${API_BASE}/api/matches/today`);
+  const data = await res.json();
+  const tbody = document.querySelector("#matches tbody");
+  tbody.innerHTML = "";
+  data.items.forEach(m => {
+    const row = `<tr>
+      <td>${m.league}</td><td>${m.home_team}</td><td>${m.away_team}</td>
+      <td>${m.odds?.["1"] || '-'}</td><td>${m.odds?.["X"] || '-'}</td><td>${m.odds?.["2"] || '-'}</td>
+      <td>-</td>
+    </tr>`;
+    tbody.innerHTML += row;
   });
-  const getConf = it => (it.prediction?.confidence)||0;
-  const getVal = it => (it.prediction?.value_bet?.value_index)||0;
-  if(sort==="confidence") FILTERED.sort((a,b)=>getConf(b)-getConf(a));
-  else if(sort==="value") FILTERED.sort((a,b)=>getVal(b)-getVal(a));
-  else FILTERED.sort((a,b)=>String(a.start_time||a.time||"").localeCompare(String(b.start_time||b.time||"")));
-  fillTable(FILTERED);
 }
 
-async function loadAll(){
-  showLoading(true);
-  try{
-    const leagues = await fetchLeagues();
-    fillLeagues(leagues);
-    const items = await fetchTodayPredict();
-    if(items.length===0){
-      rows.innerHTML='<tr><td colspan="6">⚠️ No matches found today. Try Debug.</td></tr>';
-    } else {
-      ALL_ITEMS = items.map(x=>({...x, league:x.league||"—"}));
-      applyFilters();
-      toast("Bulletin updated","ok");
-    }
-  }catch(e){
-    toast("API error: "+e.message,"err");
-  }finally{
-    showLoading(false);
-  }
+async function predictMatches() {
+  const res = await fetch(`${API_BASE}/api/predict/today`);
+  const data = await res.json();
+  const tbody = document.querySelector("#matches tbody");
+  tbody.innerHTML = "";
+  data.items.forEach(m => {
+    const pred = m.prediction?.prediction || "N/A";
+    const conf = (m.prediction?.confidence * 100 || 0).toFixed(1);
+    const row = `<tr>
+      <td>${m.league}</td><td>${m.home_team}</td><td>${m.away_team}</td>
+      <td>${m.odds?.["1"] || '-'}</td><td>${m.odds?.["X"] || '-'}</td><td>${m.odds?.["2"] || '-'}</td>
+      <td>${pred} (${conf}%)</td>
+    </tr>`;
+    tbody.innerHTML += row;
+  });
 }
 
-function showDetails(match){
-  const p = match.prediction || {};
-  let msg = `🏆 ${match.home_team} – ${match.away_team}\n\n`;
-  msg += `Prediction: ${p.prediction || p.result || "?"}\n`;
-  msg += `Score: ${p.score_prediction || "?-?"}\n`;
-  msg += `Confidence: ${(p.confidence||0).toFixed(1)}%\n`;
-  msg += `Value: ${(p.value_bet?.value_index||0).toFixed(3)} (${p.value_bet?.rating||"?"})\n`;
-  msg += `Risk: ${p.risk_level || "?"}\n`;
-  msg += `Recommendation: ${p.recommendation || "?"}\n\n`;
-  if(p.probabilities){
-    msg += `Probabilities:\n`;
-    msg += `  1: ${(p.probabilities.home_win||0).toFixed(1)}%\n`;
-    msg += `  X: ${(p.probabilities.draw||0).toFixed(1)}%\n`;
-    msg += `  2: ${(p.probabilities.away_win||0).toFixed(1)}%\n\n`;
-  }
-  if(p.top3_scores && p.top3_scores.length){
-    msg += `Top 3 Scores:\n`;
-    p.top3_scores.forEach((s,i)=>{msg += `  ${i+1}. ${s.score}: ${(s.prob*100).toFixed(1)}%\n`;});
-  }
-  msg += `\nModel: ${p.model || "Unknown"}`;
-  alert(msg);
-}
-
-/* Events */
-$("#btn-refresh").onclick = loadAll;
-$("#btn-reload").onclick = ()=>getJSON(API_BASE+"/api/reload").then(()=>toast("Models reloaded","ok"));
-$("#btn-load-history").onclick = ()=>getJSON(API_BASE+"/api/history/load",{method:"POST"}).then(r=>toast(`Loaded ${r.matches_loaded||0} historical matches`,"ok"));
-$("#btn-train").onclick = ()=>getJSON(API_BASE+"/api/training/start",{method:"POST"}).then(()=>toast("Training started","ok"));
-$("#btn-settings").onclick = ()=>$("#drawer").classList.add("open");
-$("#btn-close").onclick = ()=>$("#drawer").classList.remove("open");
-$("#btn-batch").onclick = async ()=>{
-  const csv=$("#csv").value;
-  const data=await getJSON(API_BASE+"/api/predictions/batch",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({csv})});
-  ALL_ITEMS=data.items||[];
-  applyFilters();
-  toast("Batch predictions ready","ok");
-};
-
-/* Init */
-(async function init(){
-  try{await fetch(API_BASE+"/").then(r=>r.json());setStatus(true);}catch(e){setStatus(false);toast("Backend unreachable","err");return;}
-  loadAll();
-})();
+document.getElementById("fetchBtn").addEventListener("click", loadMatches);
+document.getElementById("predictBtn").addEventListener("click", predictMatches);
 </script>
 </body>
 </html>
