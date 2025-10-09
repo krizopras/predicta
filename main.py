@@ -1,577 +1,191 @@
-#!/usr/bin/env python3
-"""
-Predicta Europe ML v2 - Flask Backend (TAMAMLANMIŞ VERSİYON)
-Geçmiş maç verileri + Nesine canlı bülten entegrasyonu
-"""
-
-import os
+import requests
+from bs4 import BeautifulSoup
+import json
 import re
-import logging
-from pathlib import Path
-from typing import Dict, List
-from flask import Flask, request, jsonify
-from flask_cors import CORS
+from datetime import date
 
-from ml_prediction_engine import MLPredictionEngine
-from nesine_fetcher import fetch_today, fetch_matches_for_date
+class NesineFetcher:
+    def __init__(self):
+        self.session = requests.Session()
+        self.headers = {
+            'User-Agent': (
+                'Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
+                'AppleWebKit/537.36 (KHTML, like Gecko) '
+                'Chrome/91.0.4472.124 Safari/537.36'
+            )
+        }
+        self.base_url = "https://www.nesine.com"
 
-# Geçmiş veri işleyici
-try:
-    from historical_processor import HistoricalDataProcessor
-    HISTORICAL_AVAILABLE = True
-except Exception:
-    HISTORICAL_AVAILABLE = False
-
-try:
-    from model_trainer import train_all
-except Exception:
-    train_all = None
-
-# Logging
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
-)
-logger = logging.getLogger(__name__)
-
-# Config
-APP_PORT = int(os.environ.get("PORT", "8000"))
-MODELS_DIR = os.environ.get("PREDICTA_MODELS_DIR", "data/ai_models_v2")
-RAW_DIR = os.environ.get("PREDICTA_RAW_DIR", "data/raw")
-
-app = Flask(__name__)
-
-# CORS - Daha agresif ayar
-CORS(app, resources={
-    r"/*": {
-        "origins": "*",
-        "methods": ["GET", "POST", "OPTIONS"],
-        "allow_headers": ["Content-Type", "Authorization"],
-        "expose_headers": ["Content-Type"],
-        "supports_credentials": False,
-        "max_age": 3600
-    }
-})
-
-# ML Engine (global)
-engine = MLPredictionEngine(model_path=MODELS_DIR)
-
-# Geçmiş veri işleyici
-historical_processor = None
-if HISTORICAL_AVAILABLE:
-    historical_processor = HistoricalDataProcessor(raw_data_path=RAW_DIR)
-    logger.info("✅ Geçmiş veri işleyici aktif")
-
-# ----------------- League Scanner -----------------
-LEAGUE_CODE_MAP = {
-    "tr1": "Türkiye Süper Lig",
-    "tr2": "Türkiye 1. Lig",
-    "en1": "İngiltere Premier League",
-    "en2": "İngiltere Championship",
-    "es1": "İspanya LaLiga",
-    "es2": "İspanya LaLiga 2",
-    "it1": "İtalya Serie A",
-    "it2": "İtalya Serie B",
-    "de1": "Almanya Bundesliga",
-    "de2": "Almanya 2. Bundesliga",
-    "fr1": "Fransa Ligue 1",
-    "fr2": "Fransa Ligue 2",
-    "nl1": "Hollanda Eredivisie",
-    "pt1": "Portekiz Primeira Liga",
-    "be1": "Belçika Pro League",
-    "at1": "Avusturya Bundesliga",
-    "ch1": "İsviçre Super League",
-    "sc1": "İskoçya Premiership",
-    "pl1": "Polonya Ekstraklasa",
-    "ro1": "Romanya Liga I",
-    "cz1": "Çekya 1. Liga",
-    "gr1": "Yunanistan Super League",
-    "se1": "İsveç Allsvenskan",
-    "no1": "Norveç Eliteserien",
-    "dk1": "Danimarka Superliga",
-    "ie1": "İrlanda Premier Division",
-    "hu1": "Macaristan NB I",
-    "bg1": "Bulgaristan First League",
-    "rs1": "Sırbistan SuperLiga",
-    "hr1": "Hırvatistan HNL",
-    "si1": "Slovenya PrvaLiga",
-    "sk1": "Slovakya Super Liga"
-}
-FILE_CODE_REGEX = re.compile(r".*_(?P<code>[a-z]{2,3}\d?)\.txt$", re.IGNORECASE)
-
-def scan_raw(root_dir: str = "data/raw") -> List[Dict]:
-    """Raw klasöründeki ligleri tara"""
-    out = []
-    base = Path(root_dir)
-    if not base.exists():
-        return out
-    for country_dir in sorted([d for d in base.iterdir() if d.is_dir()]):
-        leagues = []
-        for file in country_dir.glob("*.txt"):
-            m = FILE_CODE_REGEX.match(file.name)
-            if m:
-                code = m.group("code").lower()
-                leagues.append({
-                    "code": code,
-                    "name": LEAGUE_CODE_MAP.get(code, code.upper())
-                })
-        out.append({"country": country_dir.name, "leagues": leagues})
-    return out
-
-def load_historical_data():
-    """Geçmiş maç verilerini yükle ve feature engineer'a besle"""
-    if not historical_processor:
-        logger.warning("⚠️ Geçmiş veri işleyici yok")
-        return 0
-    
-    try:
-        logger.info("📊 Geçmiş maç verileri yükleniyor...")
-        matches, team_stats = historical_processor.process_all_countries()
-        
-        # Feature engineer'a geçmiş verileri besle
-        for match in matches:
-            try:
-                # MS (Maç Sonucu) belirleme
-                home_score = match.get('home_score', 0)
-                away_score = match.get('away_score', 0)
-                
-                if home_score > away_score:
-                    result = '1'
-                elif home_score < away_score:
-                    result = '2'
-                else:
-                    result = 'X'
-                
-                # Feature engineer'a ekle
-                engine.feature_engineer.update_team_history(match['home_team'], {
-                    'result': 'W' if result == '1' else ('D' if result == 'X' else 'L'),
-                    'goals_for': home_score,
-                    'goals_against': away_score,
-                    'date': match.get('date', ''),
-                    'venue': 'home'
-                })
-                
-                engine.feature_engineer.update_team_history(match['away_team'], {
-                    'result': 'L' if result == '1' else ('D' if result == 'X' else 'W'),
-                    'goals_for': away_score,
-                    'goals_against': home_score,
-                    'date': match.get('date', ''),
-                    'venue': 'away'
-                })
-                
-                engine.feature_engineer.update_h2h_history(
-                    match['home_team'],
-                    match['away_team'],
-                    {
-                        'result': result,
-                        'home_goals': home_score,
-                        'away_goals': away_score
-                    }
-                )
-                
-                engine.feature_engineer.update_league_results(
-                    match.get('league', 'Unknown'),
-                    result
-                )
-            except Exception as e:
-                logger.warning(f"Maç işleme hatası: {e}")
-                continue
-        
-        logger.info(f"✅ {len(matches)} geçmiş maç yüklendi")
-        return len(matches)
-        
-    except Exception as e:
-        logger.error(f"❌ Geçmiş veri yükleme hatası: {e}")
-        return 0
-
-# ----------------- CORS Headers -----------------
-@app.after_request
-def after_request(response):
-    response.headers.add("Access-Control-Allow-Origin", "*")
-    response.headers.add("Access-Control-Allow-Headers", "Content-Type,Authorization")
-    response.headers.add("Access-Control-Allow-Methods", "GET,POST,OPTIONS")
-    return response
-
-# ----------------- Health Check -----------------
-@app.route("/")
-def health():
-    return jsonify({
-        "status": "Predicta ML v2 aktif",
-        "models_dir": MODELS_DIR,
-        "raw_dir": RAW_DIR,
-        "port": APP_PORT,
-        "model_trained": engine.is_trained,
-        "historical_available": HISTORICAL_AVAILABLE
-    })
-
-# ----------------- Static Data -----------------
-@app.route("/api/leagues", methods=["GET"])
-def leagues():
-    data = scan_raw(RAW_DIR)
-    return jsonify({"count": len(data), "items": data})
-
-@app.route("/api/reload", methods=["GET"])
-def reload_models():
-    """Modelleri yeniden yükle"""
-    engine._load_models()
-    return jsonify({"status": "Models reloaded", "is_trained": engine.is_trained})
-
-@app.route("/api/history/load", methods=["POST"])
-def load_history():
-    """Geçmiş verileri yükle"""
-    count = load_historical_data()
-    return jsonify({
-        "status": "ok" if count > 0 else "error",
-        "matches_loaded": count
-    })
-
-@app.route("/api/training/start", methods=["POST"])
-def train_api():
-    """Model eğitimi başlat"""
-    try:
-        body = request.get_json(silent=True) or {}
-        top_k = int(body.get("top_scores_k", 20))
-        
-        # Eğer model_trainer modülü varsa kullan
-        if train_all is not None:
-            logger.info("🎓 Model eğitimi başlatılıyor (model_trainer kullanarak)...")
-            result = train_all(raw_path=RAW_DIR, top_scores_k=top_k)
-            engine._load_models()
-            return jsonify(result)
-        
-        # Yoksa direkt engine ile eğit
-        logger.info("🎓 Model eğitimi başlatılıyor (direkt engine ile)...")
-        
-        # Geçmiş verileri yükle
-        if not historical_processor:
-            return jsonify({
-                "success": False,
-                "error": "Geçmiş veri işleyici bulunamadı"
-            }), 500
-        
-        matches, _ = historical_processor.process_all_countries()
-        
-        if len(matches) < 100:
-            return jsonify({
-                "success": False,
-                "error": f"Yetersiz veri: {len(matches)} maç (min 100 gerekli)"
-            }), 400
-        
-        # Maçları eğitim formatına çevir
-        training_data = []
-        for m in matches:
-            home_score = m.get('home_score', 0)
-            away_score = m.get('away_score', 0)
-            
-            # Sonuç belirleme
-            if home_score > away_score:
-                result = '1'
-            elif home_score < away_score:
-                result = '2'
-            else:
-                result = 'X'
-            
-            training_data.append({
-                'home_team': m['home_team'],
-                'away_team': m['away_team'],
-                'league': m.get('league', 'Unknown'),
-                'home_goals': home_score,
-                'away_goals': away_score,
-                'result': result,
-                'odds': {'1': 2.0, 'X': 3.0, '2': 3.5},  # Varsayılan
-                'date': m.get('date', '2024-01-01')
-            })
-        
-        # Modeli eğit
-        logger.info(f"📊 {len(training_data)} maçla eğitim başlıyor...")
-        result = engine.train(training_data)
-        
-        if result.get('success'):
-            logger.info("✅ Eğitim başarılı!")
-        else:
-            logger.error(f"❌ Eğitim hatası: {result.get('error')}")
-        
-        return jsonify(result)
-        
-    except Exception as e:
-        logger.error(f"❌ Eğitim API hatası: {e}", exc_info=True)
-        return jsonify({
-            "success": False,
-            "error": str(e),
-            "error_type": type(e).__name__
-        }), 500
-
-# ----------------- Prediction Endpoints -----------------
-@app.route("/api/predict", methods=["POST"])
-def predict():
-    """Tek maç tahmini"""
-    data = request.get_json()
-    if not data:
-        return jsonify({"error": "JSON body required"}), 400
-
-    home = data.get("home_team")
-    away = data.get("away_team")
-    league = data.get("league", "Unknown")
-    odds = data.get("odds", {"1": 2.0, "X": 3.0, "2": 3.5})
-
-    if not home or not away:
-        return jsonify({"error": "home_team & away_team required"}), 400
-
-    try:
-        prediction = engine.predict_match(home, away, odds, league)
-        return jsonify(prediction)
-    except Exception as e:
-        logger.error(f"Tahmin hatası: {e}", exc_info=True)
-        return jsonify({"error": str(e)}), 500
-
-@app.route("/api/predictions/batch", methods=["POST"])
-def predict_batch():
-    """Toplu tahmin"""
-    data = request.get_json()
-    if not data or "matches" not in data:
-        # CSV formatı varsa dönüştür
-        csv = (data or {}).get("csv")
-        if csv:
-            matches = []
-            lines = [ln.strip() for ln in csv.splitlines() if ln.strip()]
-            if lines and "," in lines[0].lower():
-                # Başlık satırı varsa atla
-                for ln in lines[1:] if "home" in lines[0].lower() else lines:
-                    parts = [p.strip() for p in ln.split(",")]
-                    if len(parts) >= 6:
-                        matches.append({
-                            "home_team": parts[0],
-                            "away_team": parts[1],
-                            "league": parts[2],
-                            "odds": {"1": float(parts[3]), "X": float(parts[4]), "2": float(parts[5])}
-                        })
-            data = {"matches": matches}
-        else:
-            return jsonify({"error": "matches list required"}), 400
-
-    results = []
-    for match in data["matches"]:
+    def get_page_content(self, url_path="/iddaa"):
+        """Nesine sayfasının HTML içeriğini çeker."""
         try:
-            home = match["home_team"]
-            away = match["away_team"]
-            league = match.get("league", "Unknown")
-            odds = match.get("odds", {"1": 2.0, "X": 3.0, "2": 3.5})
-            pred = engine.predict_match(home, away, odds, league)
-            results.append({
-                "home_team": home,
-                "away_team": away,
-                "league": league,
-                "prediction": pred
-            })
+            url = f"{self.base_url}{url_path}"
+            response = self.session.get(url, headers=self.headers, timeout=10)
+            response.raise_for_status()
+            return response.text
         except Exception as e:
-            logger.error(f"Batch tahmin hatası: {e}")
-            results.append({"error": str(e), "match": match})
+            print(f"❌ Sayfa çekme hatası: {e}")
+            return None
 
-    return jsonify({"count": len(results), "items": results})
+    def extract_leagues_and_matches(self, html_content):
+        """HTML içeriğinden lig, maç ve tahmin bilgilerini ayrıştırır."""
+        soup = BeautifulSoup(html_content, 'html.parser')
+        data = {"leagues": [], "matches": [], "predictions": []}
 
-# ----------------- Nesine Canlı Maçlar -----------------
-@app.route("/api/matches/today", methods=["GET"])
-def today_matches():
-    """Bugünkü maçları Nesine'den çek"""
-    league_filter = (request.args.get("league") or "").strip().lower()
-    # Yeni: Lig filtresini aç/kapat (varsayılan: açık)
-    filter_enabled = request.args.get("filter", "true").lower() != "false"
-    
-    try:
-        logger.info(f"📡 Nesine API'den maçlar çekiliyor (filter: {filter_enabled})...")
-        out = fetch_today(filter_leagues=filter_enabled)
-        
-        if not out:
-            logger.warning("⚠️ Nesine'den maç bulunamadı")
-            return jsonify({
-                "count": 0, 
-                "items": [],
-                "message": "Bugün için maç bulunamadı veya API yanıt vermiyor"
-            })
-        
-        if league_filter:
-            out = [m for m in out if league_filter in (m.get("league", "").lower())]
-        
-        logger.info(f"✅ {len(out)} maç çekildi (filtre: {league_filter or 'yok'})")
-        return jsonify({"count": len(out), "items": out})
-    
-    except Exception as e:
-        logger.error(f"❌ Nesine fetch hatası: {e}", exc_info=True)
-        return jsonify({
-            "error": str(e), 
-            "count": 0, 
-            "items": [],
-            "debug_info": {
-                "error_type": type(e).__name__,
-                "suggestion": "Nesine API yanıt vermiyor olabilir. Birkaç dakika sonra tekrar deneyin."
-            }
-        }), 200  # 500 yerine 200 döndür ama error field'ı ekle
+        self._extract_leagues(soup, data)
+        self._extract_matches(soup, data)
+        self._extract_predictions(soup, data)
+        return data
 
-@app.route("/api/matches/date", methods=["GET"])
-def date_matches():
-    """Belirli bir tarihteki maçları çek"""
-    d = request.args.get("d")
-    if not d:
-        return jsonify({"error": "use ?d=YYYY-MM-DD"}), 400
-    
-    try:
-        from datetime import date as _date
-        year, month, day = map(int, d.split("-"))
-        items = fetch_matches_for_date(_date(year, month, day))
-        return jsonify({"count": len(items), "items": items})
-    except Exception as e:
-        logger.error(f"Tarih hatası: {e}")
-        return jsonify({"error": str(e)}), 400
+    def _extract_leagues(self, soup, data):
+        """Sayfadan lig isimlerini çıkarır."""
+        all_text = soup.get_text()
+        league_patterns = {
+            "Premier League": ["Premier League"],
+            "La Liga": ["La Liga"],
+            "Bundesliga": ["Bundesliga"],
+            "Serie A": ["Serie A"],
+            "Ligue 1": ["Ligue 1"],
+            "Süper Lig": ["Süper Lig"],
+            "Eredivisie": ["Eredivisie"],
+            "Primeira Liga": ["Primeira Liga"],
+            "Championship": ["Championship"]
+        }
 
-@app.route("/api/predict/today", methods=["GET"])
-def predict_today():
-    """Bugünkü maçlar için tahmin yap"""
-    league_filter = (request.args.get("league") or "").strip().lower()
-    filter_enabled = request.args.get("filter", "true").lower() != "false"
-    
-    try:
-        # Maçları çek
-        logger.info(f"📡 Bugünkü maçlar çekiliyor (filter: {filter_enabled})...")
-        items = fetch_today(filter_leagues=filter_enabled)
-        
-        if not items:
-            logger.warning("⚠️ Bugün için maç bulunamadı")
-            return jsonify({
-                "count": 0,
-                "items": [],
-                "message": "Bugün için maç bulunamadı"
-            })
-        
-        if league_filter:
-            items = [m for m in items if league_filter in (m.get("league", "").lower())]
-        
-        logger.info(f"📊 {len(items)} maç için tahmin yapılıyor...")
-        
-        results = []
-        for i, m in enumerate(items):
-            try:
-                logger.info(f"[{i+1}/{len(items)}] {m.get('home_team', '?')} - {m.get('away_team', '?')}")
-                
-                pred = engine.predict_match(
-                    m.get("home_team", "Unknown"),
-                    m.get("away_team", "Unknown"),
-                    m.get("odds", {"1": 2.0, "X": 3.0, "2": 3.5}),
-                    m.get("league", "Unknown")
-                )
-                
-                results.append({
-                    **m,
-                    "prediction": pred
-                })
-                
-            except Exception as e:
-                logger.error(f"❌ Tahmin hatası ({m.get('home_team', '?')}): {e}")
-                results.append({
-                    **m,
-                    "error": str(e),
-                    "prediction": {
-                        "prediction": "X",
-                        "confidence": 0,
-                        "score_prediction": "?-?",
-                        "model": "Error"
-                    }
-                })
-        
-        logger.info(f"✅ {len(results)} tahmin tamamlandı")
-        return jsonify({"count": len(results), "items": results})
-    
-    except Exception as e:
-        logger.error(f"❌ Toplu tahmin hatası: {e}", exc_info=True)
-        return jsonify({
-            "error": str(e), 
-            "count": 0, 
-            "items": [],
-            "debug_info": {
-                "error_type": type(e).__name__,
-                "suggestion": "Backend loglarını kontrol edin: railway logs"
-            }
-        }), 200  # 500 yerine 200 döndür
+        for league_name, keywords in league_patterns.items():
+            for keyword in keywords:
+                if keyword in all_text:
+                    data["leagues"].append({
+                        "name": league_name,
+                        "original_text": keyword,
+                        "category": "AVRUPA LİGLERİ"
+                    })
+                    break
 
-# ----------------- Debug Endpoints -----------------
-@app.route("/api/debug/feature-history", methods=["GET"])
-def debug_feature_history():
-    """Feature engineer'daki geçmiş verileri kontrol et"""
-    team = request.args.get("team", "")
-    
-    if not team:
-        return jsonify({
-            "teams_count": len(engine.feature_engineer.team_history),
-            "h2h_count": len(engine.feature_engineer.h2h_history),
-            "leagues_count": len(engine.feature_engineer.league_results)
-        })
-    
-    history = engine.feature_engineer.team_history.get(team, [])
-    return jsonify({
-        "team": team,
-        "matches_count": len(history),
-        "recent_matches": history[-5:] if history else []
-    })
+    def _extract_matches(self, soup, data):
+        """Sayfadan maç bilgilerini ayrıştırır."""
+        match_elements = soup.find_all(['div', 'tr'], class_=re.compile(r'match|event|game'))
+        for element in match_elements:
+            match_data = self._parse_match_element(element)
+            if match_data:
+                data["matches"].append(match_data)
 
-@app.route("/api/debug/nesine-test", methods=["GET"])
-def debug_nesine():
-    """Nesine API'yi test et"""
-    try:
-        from datetime import date
-        import json
-        
-        today = date.today()
-        matches = fetch_matches_for_date(today)
-        
-        return jsonify({
-            "status": "ok" if matches else "no_data",
-            "date": str(today),
-            "matches_count": len(matches),
-            "sample": matches[:3] if matches else [],
-            "api_url": f"https://cdnbulten.nesine.com/api/bulten/getprebultenfull?date={today}"
-        })
-    except Exception as e:
-        return jsonify({
-            "status": "error",
-            "error": str(e)
-        }), 500
-
-# ----------------- Startup Actions -----------------
-def startup_tasks():
-    """Uygulama başlarken geçmiş verileri yükle"""
-    logger.info("🚀 Predicta ML v2 başlatılıyor...")
-    
-    # Geçmiş verileri yükle (opsiyonel)
-    if HISTORICAL_AVAILABLE:
+    def _parse_match_element(self, element):
+        """HTML elementinden tek bir maçın verilerini çözümler."""
         try:
-            logger.info("📊 Geçmiş veriler yükleniyor...")
-            count = load_historical_data()
-            logger.info(f"✅ {count} geçmiş maç yüklendi")
-        except Exception as e:
-            logger.error(f"⚠️ Geçmiş veri yükleme hatası: {e}")
-    
-    # Model durumunu kontrol et
-    if engine.is_trained:
-        logger.info("✅ ML modelleri hazır")
-    else:
-        logger.warning("⚠️ Modeller eğitilmemiş - temel tahmin modu aktif")
-    
-    logger.info("🎯 Sistem hazır!")
+            teams = element.find_all(['span', 'div'], class_=re.compile(r'team|name'))
+            if len(teams) >= 2:
+                home_team = teams[0].get_text(strip=True)
+                away_team = teams[1].get_text(strip=True)
 
-# ----------------- Run -----------------
+                odds_elements = element.find_all(['span', 'button'], class_=re.compile(r'odd|rate|value'))
+                odds = [odd.get_text(strip=True) for odd in odds_elements[:3]]
+
+                return {
+                    "home_team": home_team,
+                    "away_team": away_team,
+                    "odds": odds if len(odds) == 3 else [],
+                    "league": self._detect_league_from_teams(home_team, away_team)
+                }
+        except Exception as e:
+            print(f"⚠️ Maç parse hatası: {e}")
+        return None
+
+    def _detect_league_from_teams(self, home_team, away_team):
+        """Takım isimlerinden lig tahmini yapar."""
+        team_leagues = {
+            "Arsenal": "Premier League", "Chelsea": "Premier League", "Liverpool": "Premier League",
+            "Manchester": "Premier League", "Tottenham": "Premier League",
+            "Real Madrid": "La Liga", "Barcelona": "La Liga", "Atletico": "La Liga",
+            "Bayern": "Bundesliga", "Dortmund": "Bundesliga",
+            "Milan": "Serie A", "Inter": "Serie A", "Juventus": "Serie A",
+            "PSG": "Ligue 1", "Lyon": "Ligue 1",
+            "Galatasaray": "Süper Lig", "Fenerbahçe": "Süper Lig", "Beşiktaş": "Süper Lig",
+            "Ajax": "Eredivisie", "Porto": "Primeira Liga", "Benfica": "Primeira Liga"
+        }
+
+        for team, league in team_leagues.items():
+            if team.lower() in home_team.lower() or team.lower() in away_team.lower():
+                return league
+        return "Bilinmeyen Lig"
+
+    def _extract_predictions(self, soup, data):
+        """Sayfadan tahmin bölümü (örneğin Günün En İyi Tahminleri) çıkarır."""
+        predictions_text = soup.find(string=re.compile(r"Günün En İyi Tahminleri"))
+        if predictions_text:
+            prediction_section = predictions_text.find_parent()
+            if prediction_section:
+                data["predictions"].append({
+                    "title": "Günün En İyi Tahminleri",
+                    "analyst": "Tolgar Dine",
+                    "content": prediction_section.get_text(strip=True)
+                })
+
+
+# =====================================================================
+# 🔥 Backend ile uyumlu fonksiyonlar (main.py çağırır)
+# =====================================================================
+
+def fetch_today(filter_leagues: bool = True):
+    """Bugünkü maçları Nesine'den getirir (opsiyonel lig filtresiyle)."""
+    fetcher = NesineFetcher()
+    html = fetcher.get_page_content()
+    if not html:
+        return []
+
+    data = fetcher.extract_leagues_and_matches(html)
+    matches = data.get("matches", [])
+
+    # Lig filtreleme (varsayılan: sadece büyük ligler)
+    if filter_leagues:
+        matches = [
+            m for m in matches
+            if any(
+                keyword in (m.get("league") or "").lower()
+                for keyword in [
+                    "premier", "liga", "bundesliga", "serie",
+                    "ligue", "süper", "eredivisie", "primeira"
+                ]
+            )
+        ]
+    return matches
+
+
+def fetch_matches_for_date(target_date, filter_leagues: bool = True):
+    """Belirli bir tarih için Nesine maçlarını getirir."""
+    fetcher = NesineFetcher()
+    html = fetcher.get_page_content(f"/iddaa?dt={target_date}")
+    if not html:
+        return []
+
+    data = fetcher.extract_leagues_and_matches(html)
+    matches = data.get("matches", [])
+
+    if filter_leagues:
+        matches = [
+            m for m in matches
+            if any(
+                keyword in (m.get("league") or "").lower()
+                for keyword in [
+                    "premier", "liga", "bundesliga", "serie",
+                    "ligue", "süper", "eredivisie", "primeira"
+                ]
+            )
+        ]
+    return matches
+
+
+# =====================================================================
+# 🧪 Test amaçlı doğrudan çalıştırma
+# =====================================================================
 if __name__ == "__main__":
-    logger.info("=" * 60)
-    logger.info("🎯 PREDICTA EUROPE ML v2")
-    logger.info("=" * 60)
-    logger.info(f"📂 Models: {MODELS_DIR}")
-    logger.info(f"📂 Raw Data: {RAW_DIR}")
-    logger.info(f"🌐 Port: {APP_PORT}")
-    logger.info(f"🤖 ML Model: {'✅ Eğitilmiş' if engine.is_trained else '⚠️ Eğitilmemiş'}")
-    logger.info(f"📊 Geçmiş Veri: {'✅ Aktif' if HISTORICAL_AVAILABLE else '❌ Kapalı'}")
-    logger.info("=" * 60)
-    
-    # Startup tasks (geçmiş veri yükleme isteğe bağlı)
-    # Yorum: İlk başlatmada yavaşlık olmasın diye kapalı
-    # İsterseniz açabilirsiniz:
-    # startup_tasks()
-    
-    app.run(host="0.0.0.0", port=APP_PORT, debug=False)
+    print("📡 Nesine verisi çekiliyor...")
+    today_matches = fetch_today()
+    print(f"✅ {len(today_matches)} maç bulundu\n")
+
+    for match in today_matches[:5]:
+        print(f"{match['home_team']} vs {match['away_team']} | {match['odds']} | {match['league']}")
+
+    with open("nesine_today.json", "w", encoding="utf-8") as f:
+        json.dump(today_matches, f, ensure_ascii=False, indent=2)
+    print("\n💾 nesine_today.json dosyası oluşturuldu.")
