@@ -1,5 +1,0 @@
-###############################
-# Liechtenstein (li)
-
-Name,         Web
-FC Vaduz,     www.fcvaduz.li
