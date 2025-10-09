@@ -6,6 +6,8 @@
 import math
 import json
 import logging
+import pickle
+import os
 from typing import Dict, Any, Optional, List
 import numpy as np
 from collections import defaultdict
@@ -53,13 +55,90 @@ def goal_diff(home_goals: int, away_goals: int) -> int:
     return home_goals - away_goals
 
 class AdvancedFeatureEngineer:
-    """ML pipeline'ları için feature üretici (TÜM METOTLAR EKSİKSİZ)"""
+    """ML pipeline'ları için feature üretici (TÜM METOTLAR EKSİKSİZ + MODEL KAYIT)"""
     
-    def __init__(self):
+    def __init__(self, model_path: str = "data/ai_models_v2"):
+        self.model_path = model_path
+        os.makedirs(model_path, exist_ok=True)
+        
         self.team_history = defaultdict(list)
         self.h2h_history = defaultdict(list)
         self.league_stats = defaultdict(lambda: {"1": 0, "X": 0, "2": 0})
         self.league_results = defaultdict(lambda: {"1": 0, "X": 0, "2": 0})
+        
+        # Model dosyasını yükle (varsa)
+        self._load_data()
+    
+    def _load_data(self):
+        """Önceki hafıza verilerini yükle (güvenli)"""
+        data_file = os.path.join(self.model_path, "feature_data.pkl")
+        
+        if not os.path.exists(data_file):
+            logging.info("ℹ️ Yeni feature data oluşturulacak")
+            return False
+        
+        file_size = os.path.getsize(data_file)
+        if file_size < 100:
+            logging.warning(f"⚠️ Bozuk feature data dosyası ({file_size} bytes), siliniyor...")
+            os.remove(data_file)
+            return False
+        
+        try:
+            with open(data_file, 'rb') as f:
+                data = pickle.load(f)
+            
+            self.team_history = data.get('team_history', defaultdict(list))
+            self.h2h_history = data.get('h2h_history', defaultdict(list))
+            self.league_stats = data.get('league_stats', defaultdict(lambda: {"1": 0, "X": 0, "2": 0}))
+            self.league_results = data.get('league_results', defaultdict(lambda: {"1": 0, "X": 0, "2": 0}))
+            
+            logging.info(f"✅ Feature data yüklendi ({file_size} bytes)")
+            return True
+            
+        except (EOFError, pickle.UnpicklingError) as e:
+            logging.error(f"❌ Bozuk pickle dosyası: {e}")
+            os.remove(data_file)
+            return False
+        except Exception as e:
+            logging.error(f"❌ Feature data yükleme hatası: {e}")
+            return False
+    
+    def _save_data(self):
+        """Hafıza verilerini güvenli kaydet"""
+        data_file = os.path.join(self.model_path, "feature_data.pkl")
+        temp_file = data_file + ".tmp"
+        
+        try:
+            data = {
+                'team_history': dict(self.team_history),
+                'h2h_history': dict(self.h2h_history),
+                'league_stats': dict(self.league_stats),
+                'league_results': dict(self.league_results)
+            }
+            
+            # Geçici dosyaya yaz
+            with open(temp_file, 'wb') as f:
+                pickle.dump(data, f, protocol=pickle.HIGHEST_PROTOCOL)
+            
+            # Dosya boyutunu kontrol et
+            if os.path.getsize(temp_file) < 100:
+                logging.error("❌ Kaydedilen dosya çok küçük!")
+                os.remove(temp_file)
+                return False
+            
+            # Eski dosyayı değiştir
+            if os.path.exists(data_file):
+                os.remove(data_file)
+            os.rename(temp_file, data_file)
+            
+            logging.info(f"💾 Feature data kaydedildi")
+            return True
+            
+        except Exception as e:
+            logging.error(f"❌ Feature data kaydetme hatası: {e}")
+            if os.path.exists(temp_file):
+                os.remove(temp_file)
+            return False
     
     def extract_features(self, match_data: Dict) -> np.ndarray:
         """Maç verisinden feature vektörü üretir"""
@@ -120,9 +199,7 @@ class AdvancedFeatureEngineer:
             return np.zeros(len(FEATURE_NAMES), dtype=np.float32)
     
     def _calculate_form(self, team: str, is_home: bool = True) -> Dict:
-        """
-        EKSİK METOT - Takım formunu hesaplar
-        """
+        """Takım formunu hesaplar"""
         team_lower = safe_lower(team)
         history = self.team_history.get(team_lower, [])
         
@@ -245,3 +322,7 @@ if __name__ == "__main__":
     print(f"✅ Feature vector shape: {features.shape}")
     print(f"✅ Feature names: {len(FEATURE_NAMES)}")
     print(f"✅ Sample features: {features[:5]}")
+    
+    # Test kaydetme
+    engineer._save_data()
+    print(f"✅ Data saved to: {engineer.model_path}/feature_data.pkl")
