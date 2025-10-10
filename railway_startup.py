@@ -1,6 +1,13 @@
 #!/usr/bin/env python3
 """
 railway_startup.py - Railway GitHub Deploy için Otomatik Kurulum
+-----------------------------------------------------------------
+✨ Özellikler:
+- ✅ Otomatik model kontrolü
+- ✅ Otomatik eğitim (AUTO_TRAIN=true ile)
+- ✅ SINIRSIZ VERİ desteği (--no-limit)
+- ✅ Bellek optimizasyonu
+- ✅ Detaylı log takibi
 """
 import os
 import sys
@@ -43,17 +50,17 @@ def check_raw_data():
 
 
 def auto_train_models():
-    """Railway'de otomatik model eğitimi"""
+    """Railway'de otomatik model eğitimi (SINIRSIZ VERİ)"""
     logger.info("=" * 70)
     logger.info("🎓 OTOMATİK MODEL EĞİTİMİ BAŞLATILIYOR")
     logger.info("=" * 70)
     
     try:
-        # Railway için optimize edilmiş parametreler
+        # Railway için optimize edilmiş parametreler (SINIRSIZ)
         result = subprocess.run(
             [sys.executable, "model_trainer.py", 
+             "--no-limit",                # ✅ SINIRSIZ VERİ (tüm ülkeler)
              "--min-matches", "10",       # ✅ Düşük minimum
-             "--max-matches", "50000",    # ✅ Railway bellek limiti
              "--batch-size", "500",       # ✅ Bellek optimizasyonu
              "--test-size", "0.2",
              "--seed", "42",
@@ -132,10 +139,11 @@ def main():
         
         if has_data and auto_train:
             logger.info("🎯 AUTO_TRAIN=true, veri mevcut → Otomatik eğitim başlıyor!")
+            logger.info("📊 Mode: UNLIMITED DATA (tüm ülkeler, tüm maçlar)")
             should_train = True
         elif has_data and not auto_train:
             logger.info("💡 Veri mevcut ama AUTO_TRAIN=false")
-            logger.info("   Ortam değişkenine ekleyin: AUTO_TRAIN=true")
+            logger.info("   Railway'de ortam değişkenine ekleyin: AUTO_TRAIN=true")
             logger.info("   Ya da frontend'den manuel eğitin:")
             logger.info("   1. 'Train' butonu → Model eğit (10-15 dk)")
         else:
