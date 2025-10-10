@@ -541,7 +541,7 @@ class ProductionModelTrainer:
         self.logger.info("=" * 70)
         
         score_counts = Counter(y_score_train)
-        common_scores = [s for s, c in score_counts.items() if c >= 10]
+        common_scores = [s for s, c in score_counts.items() if c >= 1]
         
         if len(common_scores) < 10:
             self.logger.warning("   ⚠️  Low score diversity, using all scores")
