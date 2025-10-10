@@ -323,10 +323,10 @@ class ProductionModelTrainer:
                     continue
                 
                 # NaN/Inf kontrolü
-                if np.any(np.isnan(features)) or np.any(np.isinf(features)):
-                    nan_features += 1
-                    skipped += 1
-                    continue
+                if np.any(np.isnan(feature_array)) or np.any(np.isinf(feature_array)):
+                    logger.warning(f"NaN/Inf düzeltildi: {features}")
+                    feature_array = np.nan_to_num(feature_array, nan=0.0, posinf=0.0, neginf=0.0)
+
                 
                 ms_label = {'1': 0, 'X': 1, '2': 2}[row['result']]
                 score_label = f"{row['home_score']}-{row['away_score']}"
