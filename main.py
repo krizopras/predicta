@@ -520,7 +520,7 @@ def start_training():
             logger.info("🎯 Eğitim başladı")
             
             # Simplified training için
-            from model_trainer import ProductionModelTrainer
+            from model_trainer_streamsafe import MemorySafeTrainer as ProductionModelTrainer
             
             trainer = ProductionModelTrainer(
                 models_dir=MODELS_DIR,
