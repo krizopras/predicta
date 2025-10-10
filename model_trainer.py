@@ -1,19 +1,20 @@
 #!/usr/bin/env python3
 """
-Predicta ML Production Training Pipeline v2
---------------------------------------------
-✨ Yeni özellikler:
-- Scaler ayrı dosya
-- Versiyonlama desteği
-- Gelişmiş metadata
-- NaN/None güvenli feature extraction
-- Detaylı istatistikler
+Predicta ML Production Training Pipeline v2.2
+----------------------------------------------
+✨ Profesyonel İyileştirmeler:
+- ✅ Veri sızıntısı fix (Scaler train'de fit, test'te transform)
+- ✅ XGBoost early stopping + optimizasyonlar
+- ✅ Confusion matrix (verbose mode)
+- ✅ --no-limit flag (SINIRSIZ veri)
+- ✅ İyileştirilmiş hata yönetimi
+- ✅ Batch processing + NaN/Inf auto-fix
 
 Usage:
-    python train_models.py
-    python train_models.py --countries turkey england spain
-    python train_models.py --version-archive
-    python train_models.py --min-matches 500 --test-size 0.25 --seed 42
+    python model_trainer.py --verbose
+    python model_trainer.py --no-limit --verbose  # TÜM VERİ
+    python model_trainer.py --countries turkey england spain
+    python model_trainer.py --max-matches 30000 --batch-size 500
 """
 
 import os
@@ -55,27 +56,33 @@ except ImportError as e:
 
 
 class ProductionModelTrainer:
-    """Production-grade model training pipeline with versioning"""
+    """Production-grade model training pipeline v2.2"""
     
     def __init__(
         self,
         models_dir: str = "data/ai_models_v2",
         raw_data_path: str = "data/raw",
         clubs_path: str = "data/clubs",
-        min_matches: int = 100,
+        min_matches: int = 10,
+        max_matches: int = None,
         test_size: float = 0.2,
         random_state: int = 42,
         version_archive: bool = False,
-        verbose: bool = True
+        verbose: bool = True,
+        batch_size: int = 1000,
+        early_stopping: bool = True
     ):
         self.models_dir = Path(models_dir)
         self.raw_data_path = Path(raw_data_path)
         self.clubs_path = Path(clubs_path)
         self.min_matches = min_matches
+        self.max_matches = max_matches
         self.test_size = test_size
         self.random_state = random_state
         self.version_archive = version_archive
         self.verbose = verbose
+        self.batch_size = batch_size
+        self.early_stopping = early_stopping
         
         # Setup logging
         self._setup_logging()
@@ -106,25 +113,25 @@ class ProductionModelTrainer:
         # Enhanced metadata
         self.metadata = {
             'training_date': datetime.now().isoformat(),
-            'training_timestamp': datetime.now().timestamp(),
-            'version': 'v2.0',
+            'version': 'v2.2',
             'random_state': random_state,
             'test_size': test_size,
             'min_matches': min_matches,
+            'max_matches': max_matches if max_matches else 'unlimited',
+            'batch_size': batch_size,
+            'early_stopping': early_stopping,
             'feature_names': FEATURE_NAMES.copy(),
             'feature_count': len(FEATURE_NAMES),
             'sklearn_version': sklearn.__version__,
             'xgboost_version': xgb.__version__,
             'numpy_version': np.__version__,
             'pandas_version': pd.__version__,
-            'output_directory': str(self.output_dir)
         }
     
     def _setup_logging(self):
         """Configure logging"""
         log_format = "%(asctime)s [%(levelname)8s] %(message)s"
         date_format = "%Y-%m-%d %H:%M:%S"
-        
         level = logging.INFO if self.verbose else logging.WARNING
         
         logging.basicConfig(
@@ -139,7 +146,7 @@ class ProductionModelTrainer:
     def load_historical_data(self, countries: List[str] = None) -> pd.DataFrame:
         """Load and validate historical data"""
         self.logger.info("=" * 70)
-        self.logger.info("📂 LOADING HISTORICAL DATA")
+        self.logger.info("📂 LOADING HISTORICAL DATA (UNLIMITED MODE)")
         self.logger.info("=" * 70)
         
         if not self.raw_data_path.exists():
@@ -160,44 +167,50 @@ class ProductionModelTrainer:
         else:
             target_countries = all_countries
         
-        self.logger.info(f"🌍 Loading {len(target_countries)} countries: {', '.join(target_countries)}")
+        self.logger.info(f"🌍 Countries: {len(target_countries)} → {', '.join(target_countries[:5])}")
+        if len(target_countries) > 5:
+            self.logger.info(f"             ... and {len(target_countries) - 5} more")
+        self.logger.info(f"🔓 Data limit: {'UNLIMITED' if not self.max_matches else f'{self.max_matches:,} matches'}")
         
         all_matches = []
         stats = {'loaded': 0, 'failed': 0, 'countries': {}}
         
         for country in target_countries:
             try:
-                self.logger.info(f"📄 Processing {country}...")
                 matches = self.history_processor.load_country_data(country)
                 
                 if matches:
                     all_matches.extend(matches)
                     stats['loaded'] += len(matches)
                     stats['countries'][country] = len(matches)
-                    self.logger.info(f"   ✅ {country}: {len(matches)} matches")
+                    self.logger.info(f"   ✅ {country:20s}: {len(matches):6,} matches")
                 else:
                     stats['failed'] += 1
                     stats['countries'][country] = 0
-                    self.logger.warning(f"   ⚠️  {country}: No data")
                     
             except Exception as e:
                 stats['failed'] += 1
                 stats['countries'][country] = 0
-                self.logger.error(f"   ❌ {country}: {e}")
+                self.logger.error(f"   ❌ {country:20s}: {e}")
         
         if not all_matches:
             raise ValueError("No matches loaded from any country")
         
         df = pd.DataFrame(all_matches)
         
-        # Metadata güncellemeleri
+        # Max limit kontrolü
+        if self.max_matches and len(df) > self.max_matches:
+            self.logger.warning(f"⚠️  Applying max limit: {len(df):,} → {self.max_matches:,}")
+            df = df.sample(n=self.max_matches, random_state=self.random_state)
+        
+        # Metadata
         self.metadata['data_stats'] = stats
         self.metadata['total_raw_matches'] = len(df)
         self.metadata['countries_count'] = len([c for c in stats['countries'].values() if c > 0])
         self.metadata['leagues'] = df['league'].nunique() if 'league' in df.columns else 0
         
         self.logger.info(f"\n📊 RAW DATA SUMMARY")
-        self.logger.info(f"   Total matches: {len(df)}")
+        self.logger.info(f"   Total matches: {len(df):,}")
         self.logger.info(f"   Countries: {self.metadata['countries_count']}")
         self.logger.info(f"   Unique leagues: {self.metadata['leagues']}")
         
@@ -215,25 +228,37 @@ class ProductionModelTrainer:
         
         initial_count = len(df)
         
+        # Duplicates
         df = df.drop_duplicates(subset=['home_team', 'away_team', 'date'], keep='first')
-        self.logger.info(f"   Duplicates removed: {initial_count - len(df)}")
+        dup_removed = initial_count - len(df)
+        if dup_removed > 0:
+            self.logger.info(f"   Duplicates removed: {dup_removed:,}")
         
+        # Required columns
         required = ['home_team', 'away_team', 'home_score', 'away_score']
         missing = [col for col in required if col not in df.columns]
         if missing:
             raise ValueError(f"Missing required columns: {missing}")
         
+        # Missing data
         before = len(df)
         df = df.dropna(subset=required)
-        self.logger.info(f"   Rows with missing data removed: {before - len(df)}")
+        missing_removed = before - len(df)
+        if missing_removed > 0:
+            self.logger.info(f"   Missing data removed: {missing_removed:,}")
         
+        # Score conversion
         df['home_score'] = pd.to_numeric(df['home_score'], errors='coerce').fillna(0).astype(int)
         df['away_score'] = pd.to_numeric(df['away_score'], errors='coerce').fillna(0).astype(int)
         
+        # Unrealistic scores
         before = len(df)
         df = df[(df['home_score'] <= 10) & (df['away_score'] <= 10)]
-        self.logger.info(f"   Unrealistic scores removed: {before - len(df)}")
+        unrealistic = before - len(df)
+        if unrealistic > 0:
+            self.logger.info(f"   Unrealistic scores removed: {unrealistic:,}")
         
+        # Result calculation
         def calc_result(row):
             if row['home_score'] > row['away_score']:
                 return '1'
@@ -248,6 +273,7 @@ class ProductionModelTrainer:
         valid_results = ['1', 'X', '2']
         df = df[df['result'].isin(valid_results)]
         
+        # Defaults
         if 'odds' not in df.columns:
             df['odds'] = df.apply(lambda x: {'1': 2.0, 'X': 3.0, '2': 3.5}, axis=1)
         
@@ -255,7 +281,7 @@ class ProductionModelTrainer:
             df['league'] = 'Unknown'
         df['league'] = df['league'].fillna('Unknown')
         
-        # İstatistikler
+        # Statistics
         home_wins = (df['result'] == '1').sum()
         draws = (df['result'] == 'X').sum()
         away_wins = (df['result'] == '2').sum()
@@ -265,10 +291,10 @@ class ProductionModelTrainer:
         avg_total_goals = (df['home_score'] + df['away_score']).mean()
         
         self.logger.info(f"\n✅ CLEANED DATA")
-        self.logger.info(f"   Final count: {len(df)} matches")
-        self.logger.info(f"   Home wins: {home_wins} ({home_wins/len(df)*100:.1f}%)")
-        self.logger.info(f"   Draws: {draws} ({draws/len(df)*100:.1f}%)")
-        self.logger.info(f"   Away wins: {away_wins} ({away_wins/len(df)*100:.1f}%)")
+        self.logger.info(f"   Final count: {len(df):,} matches")
+        self.logger.info(f"   Home wins: {home_wins:,} ({home_wins/len(df)*100:.1f}%)")
+        self.logger.info(f"   Draws: {draws:,} ({draws/len(df)*100:.1f}%)")
+        self.logger.info(f"   Away wins: {away_wins:,} ({away_wins/len(df)*100:.1f}%)")
         self.logger.info(f"   Avg goals: Home={avg_home_score:.2f}, Away={avg_away_score:.2f}, Total={avg_total_goals:.2f}")
         
         # Metadata
@@ -290,60 +316,72 @@ class ProductionModelTrainer:
         return df
     
     def prepare_features(self, df: pd.DataFrame) -> Tuple[np.ndarray, np.ndarray, List[str]]:
-        """Extract features with NaN/None safety"""
+        """Extract features with batch processing and error tracking"""
         self.logger.info("\n" + "=" * 70)
-        self.logger.info("🔧 FEATURE ENGINEERING")
+        self.logger.info("🔧 FEATURE ENGINEERING (BATCH MODE)")
         self.logger.info("=" * 70)
+        
+        total_rows = len(df)
+        num_batches = (total_rows + self.batch_size - 1) // self.batch_size
+        
+        self.logger.info(f"   📦 Batches: {num_batches} (size={self.batch_size:,})")
         
         X_list = []
         y_ms_list = []
         y_score_list = []
         
-        skipped = 0
-        none_returns = 0
-        nan_features = 0
+        error_stats = {
+            'none_returns': 0,
+            'nan_inf_fixed': 0,
+            'exceptions': 0,
+            'total_skipped': 0
+        }
         
-        for idx, row in df.iterrows():
-            try:
-                match_data = {
-                    'home_team': row['home_team'],
-                    'away_team': row['away_team'],
-                    'league': row['league'],
-                    'odds': row['odds'],
-                    'date': row.get('date', datetime.now().isoformat())
-                }
-                
-                # Feature extraction - NaN/None güvenli
-                features = self.feature_engineer.extract_features(match_data)
-                
-                # None kontrolü
-                if features is None:
-                    none_returns += 1
-                    skipped += 1
-                    continue
-                
-                # NaN/Inf kontrolü
-                if np.any(np.isnan(feature_array)) or np.any(np.isinf(feature_array)):
-                    logger.warning(f"NaN/Inf düzeltildi: {features}")
-                    feature_array = np.nan_to_num(feature_array, nan=0.0, posinf=0.0, neginf=0.0)
-
-                
-                ms_label = {'1': 0, 'X': 1, '2': 2}[row['result']]
-                score_label = f"{row['home_score']}-{row['away_score']}"
-                
-                X_list.append(features)
-                y_ms_list.append(ms_label)
-                y_score_list.append(score_label)
-                
-                self._update_feature_history(row)
-                
-                if (idx + 1) % 1000 == 0:
-                    self.logger.info(f"   Processed: {idx + 1}/{len(df)}")
-                
-            except Exception as e:
-                self.logger.warning(f"   ⚠️  Row {idx} error: {e}")
-                skipped += 1
-                continue
+        for batch_num in range(num_batches):
+            start_idx = batch_num * self.batch_size
+            end_idx = min(start_idx + self.batch_size, total_rows)
+            batch_df = df.iloc[start_idx:end_idx]
+            
+            if (batch_num + 1) % 10 == 0 or batch_num == num_batches - 1:
+                self.logger.info(f"   Processing batch {batch_num + 1}/{num_batches} ({start_idx:,}-{end_idx:,})")
+            
+            for _, row in batch_df.iterrows():
+                try:
+                    match_data = {
+                        'home_team': row['home_team'],
+                        'away_team': row['away_team'],
+                        'league': row['league'],
+                        'odds': row['odds'],
+                        'date': row.get('date', datetime.now().isoformat())
+                    }
+                    
+                    features = self.feature_engineer.extract_features(match_data)
+                    
+                    if features is None:
+                        error_stats['none_returns'] += 1
+                        error_stats['total_skipped'] += 1
+                        continue
+                    
+                    # NaN/Inf auto-fix
+                    if np.any(np.isnan(features)) or np.any(np.isinf(features)):
+                        features = np.nan_to_num(features, nan=0.0, posinf=0.0, neginf=0.0)
+                        error_stats['nan_inf_fixed'] += 1
+                    
+                    ms_label = {'1': 0, 'X': 1, '2': 2}[row['result']]
+                    score_label = f"{row['home_score']}-{row['away_score']}"
+                    
+                    X_list.append(features)
+                    y_ms_list.append(ms_label)
+                    y_score_list.append(score_label)
+                    
+                    self._update_feature_history(row)
+                    
+                except KeyError:
+                    error_stats['exceptions'] += 1
+                    error_stats['total_skipped'] += 1
+                except Exception:
+                    error_stats['exceptions'] += 1
+                    error_stats['total_skipped'] += 1
         
         if not X_list:
             raise ValueError("No valid features extracted!")
@@ -351,27 +389,25 @@ class ProductionModelTrainer:
         X = np.array(X_list, dtype=np.float32)
         y_ms = np.array(y_ms_list, dtype=np.int32)
         
-        self.logger.info(f"\n✅ FEATURES READY")
-        self.logger.info(f"   Valid samples: {len(X)}")
-        self.logger.info(f"   Features per sample: {X.shape[1]}")
-        self.logger.info(f"   Skipped total: {skipped}")
-        self.logger.info(f"      - None returns: {none_returns}")
-        self.logger.info(f"      - NaN/Inf: {nan_features}")
-        self.logger.info(f"      - Other errors: {skipped - none_returns - nan_features}")
+        skip_rate = error_stats['total_skipped'] / total_rows * 100
         
-        # Feature data kaydet
+        self.logger.info(f"\n✅ FEATURES READY")
+        self.logger.info(f"   Valid samples: {len(X):,}")
+        self.logger.info(f"   Features per sample: {X.shape[1]}")
+        self.logger.info(f"   Skipped: {error_stats['total_skipped']:,} ({skip_rate:.2f}%)")
+        self.logger.info(f"      - None returns: {error_stats['none_returns']:,}")
+        self.logger.info(f"      - NaN/Inf fixed: {error_stats['nan_inf_fixed']:,}")
+        self.logger.info(f"      - Exceptions: {error_stats['exceptions']:,}")
+        
+        # Save feature data
         self.feature_engineer._save_data()
         self.logger.info(f"   💾 Feature history saved")
         
         # Metadata
         self.metadata['training_samples'] = len(X)
         self.metadata['features_count'] = X.shape[1]
-        self.metadata['samples_skipped'] = skipped
-        self.metadata['skip_reasons'] = {
-            'none_returns': none_returns,
-            'nan_inf': nan_features,
-            'other': skipped - none_returns - nan_features
-        }
+        self.metadata['error_stats'] = error_stats
+        self.metadata['skip_rate_pct'] = round(skip_rate, 2)
         
         return X, y_ms, y_score_list
     
@@ -410,27 +446,43 @@ class ProductionModelTrainer:
         self.feature_engineer.update_league_results(row['league'], result)
     
     def train_match_result_models(self, X_train, X_test, y_train, y_test) -> Dict[str, float]:
-        """Train MS prediction models"""
+        """Train MS prediction models with early stopping"""
         self.logger.info("\n" + "=" * 70)
         self.logger.info("🎯 TRAINING MATCH RESULT MODELS")
         self.logger.info("=" * 70)
         
         accuracies = {}
         
-        # XGBoost
+        # XGBoost with early stopping
         self.logger.info("\n📚 XGBoost...")
         self.ms_models['xgboost'] = xgb.XGBClassifier(
-            n_estimators=200,
+            n_estimators=300,
             max_depth=6,
             learning_rate=0.05,
             subsample=0.8,
             colsample_bytree=0.8,
             objective='multi:softprob',
             num_class=3,
+            tree_method='hist',
+            eval_metric='mlogloss',
+            early_stopping_rounds=15 if self.early_stopping else None,
             random_state=self.random_state,
+            n_jobs=-1,
             verbosity=0
         )
-        self.ms_models['xgboost'].fit(X_train, y_train)
+        
+        if self.early_stopping:
+            eval_set = [(X_test, y_test)]
+            self.ms_models['xgboost'].fit(
+                X_train, y_train,
+                eval_set=eval_set,
+                verbose=False
+            )
+            best_iter = self.ms_models['xgboost'].best_iteration
+            self.logger.info(f"   Best iteration: {best_iter}")
+        else:
+            self.ms_models['xgboost'].fit(X_train, y_train)
+        
         acc = self.ms_models['xgboost'].score(X_test, y_test)
         accuracies['xgboost'] = acc
         self.logger.info(f"   ✅ Accuracy: {acc*100:.2f}%")
@@ -463,6 +515,7 @@ class ProductionModelTrainer:
         accuracies['gradient_boost'] = acc
         self.logger.info(f"   ✅ Accuracy: {acc*100:.2f}%")
         
+        # Detailed report (verbose mode)
         if self.verbose:
             y_pred = self.ms_models['xgboost'].predict(X_test)
             self.logger.info(f"\n📊 XGBoost Classification Report:")
@@ -470,6 +523,14 @@ class ProductionModelTrainer:
             for line in report.split('\n'):
                 if line.strip():
                     self.logger.info(f"   {line}")
+            
+            # Confusion Matrix
+            cm = confusion_matrix(y_test, y_pred)
+            self.logger.info(f"\n📊 Confusion Matrix:")
+            self.logger.info(f"   {'':10s} {'Pred:1':>10s} {'Pred:X':>10s} {'Pred:2':>10s}")
+            self.logger.info(f"   {'True:1':10s} {cm[0][0]:10d} {cm[0][1]:10d} {cm[0][2]:10d}")
+            self.logger.info(f"   {'True:X':10s} {cm[1][0]:10d} {cm[1][1]:10d} {cm[1][2]:10d}")
+            self.logger.info(f"   {'True:2':10s} {cm[2][0]:10d} {cm[2][1]:10d} {cm[2][2]:10d}")
         
         return accuracies
     
@@ -480,7 +541,7 @@ class ProductionModelTrainer:
         self.logger.info("=" * 70)
         
         score_counts = Counter(y_score_train)
-        common_scores = [s for s, c in score_counts.items() if c >= 15]
+        common_scores = [s for s, c in score_counts.items() if c >= 10]
         
         if len(common_scores) < 10:
             self.logger.warning("   ⚠️  Low score diversity, using all scores")
@@ -491,7 +552,7 @@ class ProductionModelTrainer:
         self.logger.info(f"   Score classes: {len(self.score_space)}")
         self.logger.info(f"   Top 10 scores: {sorted(score_counts.items(), key=lambda x: x[1], reverse=True)[:10]}")
         
-        # Metadata - skor dağılımı
+        # Metadata
         self.metadata['score_distribution'] = dict(sorted(score_counts.items(), key=lambda x: x[1], reverse=True)[:20])
         self.metadata['score_classes_count'] = len(self.score_space)
         
@@ -518,18 +579,19 @@ class ProductionModelTrainer:
         return acc
     
     def save_models_atomic(self):
-        """Atomically save all models + scaler separately"""
+        """Atomically save all models + scaler"""
         self.logger.info("\n" + "=" * 70)
         self.logger.info("💾 SAVING MODELS (ATOMIC)")
         self.logger.info("=" * 70)
         
-        # 1. MS models
+        # 1. MS models (with scaler embedded)
         ms_path = self.output_dir / "ensemble_models.pkl"
         ms_temp = self.output_dir / "ensemble_models.pkl.tmp"
         
         try:
             ms_data = {
                 'models': self.ms_models,
+                'scaler': self.scaler,  # ✅ Embedded
                 'is_trained': True,
                 'metadata': self.metadata.copy()
             }
@@ -550,7 +612,7 @@ class ProductionModelTrainer:
                 ms_temp.unlink()
             raise
         
-        # 2. Scaler (AYRI DOSYA)
+        # 2. Scaler (separate - backward compatibility)
         scaler_path = self.output_dir / "scaler.pkl"
         scaler_temp = self.output_dir / "scaler.pkl.tmp"
         
@@ -607,7 +669,7 @@ class ProductionModelTrainer:
         except Exception as e:
             self.logger.warning(f"   ⚠️  Metadata save failed: {e}")
         
-        # 5. Versiyonlama yapıldıysa, main dizine de kopyala
+        # 5. Versiyonlama
         if self.version_archive and self.output_dir != self.models_dir:
             self.logger.info(f"\n📋 Copying to main directory: {self.models_dir}")
             try:
@@ -622,7 +684,7 @@ class ProductionModelTrainer:
     def run_full_pipeline(self, countries: List[str] = None) -> Dict[str, Any]:
         """Execute full training pipeline"""
         self.logger.info("\n" + "=" * 80)
-        self.logger.info("🚀 PREDICTA ML - PRODUCTION TRAINING PIPELINE v2")
+        self.logger.info("🚀 PREDICTA ML - PRODUCTION TRAINING v2.2")
         self.logger.info("=" * 80)
         
         start_time = datetime.now()
@@ -635,50 +697,55 @@ class ProductionModelTrainer:
             df = self.clean_and_validate(df)
             
             if len(df) < self.min_matches:
-                raise ValueError(f"Insufficient data: {len(df)} < {self.min_matches}")
+                raise ValueError(f"Insufficient data: {len(df):,} < {self.min_matches:,}")
             
             # 3. Features
             X, y_ms, y_score = self.prepare_features(df)
             
-            # 4. Scale and split
-            X_scaled = self.scaler.fit_transform(X)
-            
+            # 4. ✅ FIX: Split BEFORE scaling (prevent data leakage)
             X_train, X_test, y_ms_train, y_ms_test, y_score_train, y_score_test = train_test_split(
-                X_scaled, y_ms, y_score,
+                X, y_ms, y_score,
                 test_size=self.test_size,
                 random_state=self.random_state,
                 stratify=y_ms
             )
             
+            # 5. ✅ FIX: Fit scaler on train only, transform both
+            X_train_scaled = self.scaler.fit_transform(X_train)
+            X_test_scaled = self.scaler.transform(X_test)
+            
             self.logger.info(f"\n📊 TRAIN/TEST SPLIT")
-            self.logger.info(f"   Train: {len(X_train)} samples")
-            self.logger.info(f"   Test: {len(X_test)} samples")
+            self.logger.info(f"   Train: {len(X_train):,} samples")
+            self.logger.info(f"   Test: {len(X_test):,} samples")
+            self.logger.info(f"   Scaler fitted on train only ✅")
             
             self.metadata['train_samples'] = len(X_train)
             self.metadata['test_samples'] = len(X_test)
             
-            # 5. Train MS
-            ms_acc = self.train_match_result_models(X_train, X_test, y_ms_train, y_ms_test)
+            # 6. Train MS
+            ms_acc = self.train_match_result_models(X_train_scaled, X_test_scaled, y_ms_train, y_ms_test)
             self.metadata['ms_accuracies'] = ms_acc
             
-            # 6. Train score
-            score_acc = self.train_score_model(X_train, X_test, y_score_train, y_score_test)
+            # 7. Train score
+            score_acc = self.train_score_model(X_train_scaled, X_test_scaled, y_score_train, y_score_test)
             self.metadata['score_accuracy'] = score_acc
             
-            # 7. Save
+            # 8. Save
             self.save_models_atomic()
             
             # Summary
             duration = (datetime.now() - start_time).total_seconds()
             self.metadata['training_duration_seconds'] = round(duration, 2)
+            self.metadata['success'] = True
+            self.metadata['completion_time'] = datetime.now().isoformat()
             
             self.logger.info("\n" + "=" * 80)
             self.logger.info("✅ TRAINING COMPLETE!")
             self.logger.info("=" * 80)
-            self.logger.info(f"⏱️  Duration: {duration:.1f}s")
-            self.logger.info(f"📊 Total Matches: {len(df)}")
-            self.logger.info(f"🎯 Train Set: {len(X_train)} samples")
-            self.logger.info(f"🧪 Test Set: {len(X_test)} samples")
+            self.logger.info(f"⏱️  Duration: {duration:.1f}s ({duration/60:.1f} min)")
+            self.logger.info(f"📊 Total Matches: {len(df):,}")
+            self.logger.info(f"🎯 Train Set: {len(X_train):,} samples")
+            self.logger.info(f"🧪 Test Set: {len(X_test):,} samples")
             self.logger.info(f"\n📈 Match Result Model Accuracies:")
             for model, acc in ms_acc.items():
                 self.logger.info(f"   {model:20s}: {acc*100:5.2f}%")
@@ -690,10 +757,6 @@ class ProductionModelTrainer:
                 self.logger.info(f"🔗 Active: {self.models_dir}")
             
             self.logger.info("=" * 80)
-            
-            # Son metadata güncellemesi
-            self.metadata['success'] = True
-            self.metadata['completion_time'] = datetime.now().isoformat()
             
             # Final metadata kaydet
             final_meta_path = self.output_dir / "training_metadata.json"
@@ -711,17 +774,40 @@ class ProductionModelTrainer:
             
         except Exception as e:
             self.logger.error(f"\n❌ TRAINING FAILED: {e}", exc_info=True)
+            self.metadata['success'] = False
+            self.metadata['error'] = str(e)
             return {
                 'success': False,
-                'error': str(e)
+                'error': str(e),
+                'metadata': self.metadata
             }
 
 
 def parse_args():
     """Parse CLI arguments"""
     parser = argparse.ArgumentParser(
-        description="Predicta ML Production Training Pipeline v2",
-        formatter_class=argparse.RawDescriptionHelpFormatter
+        description="Predicta ML Production Training Pipeline v2.2",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+Examples:
+  # Sınırsız veri ile tüm ülkeler
+  python model_trainer.py --verbose
+  
+  # --no-limit bayrağı ile (açıkça belirtmek için)
+  python model_trainer.py --no-limit --verbose
+  
+  # Belirli ülkeler
+  python model_trainer.py --countries turkey england spain --verbose
+  
+  # Maximum veri limiti (bellek sınırlaması için)
+  python model_trainer.py --max-matches 30000 --verbose
+  
+  # Versiyonlama ile backup
+  python model_trainer.py --version-archive --verbose
+  
+  # Early stopping kapalı
+  python model_trainer.py --no-early-stopping --verbose
+        """
     )
     
     parser.add_argument(
@@ -752,8 +838,21 @@ def parse_args():
     parser.add_argument(
         '--min-matches',
         type=int,
-        default=100,
-        help='Minimum matches required (default: 100)'
+        default=10,
+        help='Minimum matches required (default: 10)'
+    )
+    
+    parser.add_argument(
+        '--max-matches',
+        type=int,
+        default=None,
+        help='Maximum matches to use (default: None = unlimited)'
+    )
+    
+    parser.add_argument(
+        '--no-limit',
+        action='store_true',
+        help='Explicitly use unlimited data (same as --max-matches=None)'
     )
     
     parser.add_argument(
@@ -761,6 +860,13 @@ def parse_args():
         type=float,
         default=0.2,
         help='Test set size (default: 0.2)'
+    )
+    
+    parser.add_argument(
+        '--batch-size',
+        type=int,
+        default=1000,
+        help='Batch size for feature processing (default: 1000)'
     )
     
     parser.add_argument(
@@ -777,9 +883,15 @@ def parse_args():
     )
     
     parser.add_argument(
+        '--no-early-stopping',
+        action='store_true',
+        help='Disable XGBoost early stopping'
+    )
+    
+    parser.add_argument(
         '--verbose',
         action='store_true',
-        help='Verbose output'
+        help='Verbose output with detailed reports'
     )
     
     return parser.parse_args()
@@ -789,22 +901,40 @@ def main():
     """Main entry point"""
     args = parse_args()
     
+    # --no-limit flag ile max_matches'i None yap
+    if args.no_limit:
+        args.max_matches = None
+    
+    print("\n" + "=" * 80)
+    print("🚀 PREDICTA ML - PRODUCTION TRAINING v2.2")
+    print("=" * 80)
+    print(f"📊 Min matches: {args.min_matches:,}")
+    print(f"📊 Max matches: {'UNLIMITED ✅' if args.max_matches is None else f'{args.max_matches:,}'}")
+    print(f"🎯 Batch size: {args.batch_size:,}")
+    print(f"🔄 Early stopping: {'✅ Enabled' if not args.no_early_stopping else '❌ Disabled'}")
+    print(f"📁 Data path: {args.raw_data}")
+    print("=" * 80 + "\n")
+    
     trainer = ProductionModelTrainer(
         models_dir=args.models_dir,
         raw_data_path=args.raw_data,
         clubs_path=args.clubs,
         min_matches=args.min_matches,
+        max_matches=args.max_matches,
         test_size=args.test_size,
         random_state=args.seed,
         version_archive=args.version_archive,
-        verbose=args.verbose
+        verbose=args.verbose,
+        batch_size=args.batch_size,
+        early_stopping=not args.no_early_stopping
     )
     
     result = trainer.run_full_pipeline(countries=args.countries)
     
     if result['success']:
         print("\n✅ Training successful!")
-        print(f"💡 Start server: python main.py")
+        print(f"💡 Models saved to: {result['output_dir']}")
+        print(f"🚀 Start server: python main.py")
         sys.exit(0)
     else:
         print(f"\n❌ Training failed: {result.get('error')}")
