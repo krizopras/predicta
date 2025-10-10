@@ -519,16 +519,19 @@ def start_training():
         try:
             logger.info("🎯 Eğitim başladı")
             
-            # Simplified training için
-            from model_trainer_streamsafe import MemorySafeTrainer as ProductionModelTrainer
+            # ✅ DOĞRU IMPORT
+            from model_trainer_streamsafe import RailwayOptimizedTrainer
             
-            trainer = ProductionModelTrainerStreamsafe(
+            trainer = RailwayOptimizedTrainer(
                 models_dir=MODELS_DIR,
                 raw_data_path=RAW_DATA_PATH,
                 clubs_path=CLUBS_PATH,
-                min_matches=50,
+                min_matches=10,  # ✅ 50 → 10
+                max_matches=None,  # ✅ Sınırsız
                 test_size=0.2,
-                verbose=True
+                verbose=True,
+                batch_size=500,
+                railway_mode=True  # ✅ Railway optimizasyonları
             )
             
             result = trainer.run_full_pipeline()
