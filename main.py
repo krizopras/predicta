@@ -522,7 +522,7 @@ def start_training():
             # Simplified training için
             from model_trainer_streamsafe import MemorySafeTrainer as ProductionModelTrainer
             
-            trainer = ProductionModelTrainer(
+            trainer = ProductionModelTrainerStreamsafe(
                 models_dir=MODELS_DIR,
                 raw_data_path=RAW_DATA_PATH,
                 clubs_path=CLUBS_PATH,
