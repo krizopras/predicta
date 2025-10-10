@@ -495,12 +495,45 @@ def load_history():
 
 @app.route("/api/training/start", methods=["POST"])
 def start_training():
-    """Model eğitimini başlat (placeholder)"""
+    """Model eğitimini arka planda başlat"""
+    import threading
+    
+    def train_background():
+        try:
+            logger.info("🎯 Eğitim başladı")
+            
+            # Simplified training için
+            from model_trainer import ProductionModelTrainer
+            
+            trainer = ProductionModelTrainer(
+                models_dir=MODELS_DIR,
+                raw_data_path=RAW_DATA_PATH,
+                clubs_path=CLUBS_PATH,
+                min_matches=50,
+                test_size=0.2,
+                verbose=True
+            )
+            
+            result = trainer.run_full_pipeline()
+            
+            if result.get('success'):
+                logger.info("✅ Eğitim tamamlandı!")
+                # Modelleri yeniden yükle
+                engine._load_models()
+            else:
+                logger.error(f"❌ Eğitim hatası: {result.get('error')}")
+                
+        except Exception as e:
+            logger.error(f"❌ Training error: {e}", exc_info=True)
+    
+    # Arka planda çalıştır
+    thread = threading.Thread(target=train_background, daemon=True)
+    thread.start()
+    
     return jsonify({
         "status": "ok",
-        "message": "Eğitim başlatıldı (background process)",
-        "training_started": True,
-        "hint": "Gerçek eğitim için model_trainer.py çalıştırın"
+        "message": "Eğitim arka planda başlatıldı",
+        "hint": "10-15 dakika sürebilir. /api/models/info ile kontrol edin"
     })
 
 
