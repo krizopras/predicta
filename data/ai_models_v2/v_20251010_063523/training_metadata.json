@@ -1,15 +1,1 @@
-{
-    "training_date": "2025-10-10 06:35:23",
-    "version": "v2.1",
-    "total_clean_matches": 48212,
-    "countries_count": 16,
-    "features_count": 19,
-    "ms_accuracies": {
-        "xgboost": 0.914,
-        "random_forest": 0.903,
-        "gradient_boost": 0.887
-    },
-    "score_accuracy": 0.842,
-    "training_duration_seconds": 196.4,
-    "output_directory": "/mnt/data/data_ai_models_v2"
-}
+
