@@ -60,6 +60,7 @@ def auto_train_models():
         result = subprocess.run(
             [sys.executable, "model_trainer.py", 
              "--no-limit",                # ✅ SINIRSIZ VERİ (tüm ülkeler)
+             "--railway-mode",  # ✅ Ekle
              "--min-matches", "10",       # ✅ Düşük minimum
              "--batch-size", "500",       # ✅ Bellek optimizasyonu
              "--test-size", "0.2",
