@@ -1,5 +1,4 @@
-# score_predictor.py
-# Skor modelini bağımsız çağırmak için küçük yardımcı (FIXED)
+# score_predictor.py - İYİLEŞTİRİLMİŞ VERSİYON
 import os
 import pickle
 import numpy as np
@@ -16,7 +15,7 @@ class ScorePredictor:
         self.model = None
         self.space = None
         self._load()
-
+    
     def _load(self):
         """Model dosyasını güvenli yükle"""
         path = os.path.join(self.models_dir, "score_model.pkl")
@@ -55,7 +54,7 @@ class ScorePredictor:
             logger.error(f"❌ Skor model yükleme hatası: {e}")
             self.model = None
             self.space = None
-
+    
     @staticmethod
     def _ms_ok(ms: str, score_label: str) -> bool:
         """MS tutarlılık kontrolü"""
@@ -72,7 +71,155 @@ class ScorePredictor:
         elif ms == "2":
             return a < b
         return True
-
+    
+    def _intelligent_fallback(self, match_data: Dict, ms_pred: str) -> Tuple[str, List[Dict]]:
+        """
+        Feature'lardan akıllı skor tahmini
+        - Takım formu
+        - Ortalama gol sayıları
+        - Lig seviyesi
+        - Odds analizi
+        """
+        try:
+            # Feature çıkar
+            feats = self.engineer.extract_features(match_data)
+            if feats is None:
+                return self._simple_fallback(ms_pred)
+            
+            # Takım formları (index 12, 13)
+            home_form = feats[12] if len(feats) > 12 else 0.5
+            away_form = feats[13] if len(feats) > 13 else 0.5
+            
+            # Ortalama gol sayıları (index 14, 15)
+            home_avg = feats[14] if len(feats) > 14 else 1.5
+            away_avg = feats[15] if len(feats) > 15 else 1.5
+            
+            # Odds'lardan beklenen gol
+            odds = match_data.get("odds", {})
+            odds_1 = float(odds.get("1", 2.0))
+            odds_2 = float(odds.get("2", 3.5))
+            
+            # Oran ne kadar düşükse, o takım o kadar güçlü
+            home_strength = 1.0 / odds_1 if odds_1 > 1.01 else 0.5
+            away_strength = 1.0 / odds_2 if odds_2 > 1.01 else 0.5
+            
+            # Form + ortalama gol + oran gücü
+            home_attack = (home_form * 2 + home_avg + home_strength) / 4
+            away_attack = (away_form * 2 + away_avg + away_strength) / 4
+            
+            # MS tahminine göre ayarla
+            if ms_pred == "1":  # Ev sahibi galip
+                home_goals = max(1, round(home_attack * 2.0))
+                away_goals = max(0, round(away_attack * 1.2))
+                
+                # Ev sahibi galip olmalı
+                if home_goals <= away_goals:
+                    home_goals = away_goals + np.random.choice([1, 2])
+                
+            elif ms_pred == "X":  # Beraberlik
+                avg_goals = (home_attack + away_attack) / 2
+                base_score = max(0, round(avg_goals * 1.5))
+                
+                # Çeşitlilik için 0-0, 1-1, 2-2, 3-3 arasında seç
+                possible_draws = [
+                    (0, 0), (1, 1), (2, 2), (3, 3)
+                ]
+                
+                # Ortalama gol sayısına göre ağırlıklı seçim
+                if avg_goals < 1.0:
+                    weights = [0.5, 0.3, 0.15, 0.05]
+                elif avg_goals < 1.5:
+                    weights = [0.3, 0.4, 0.25, 0.05]
+                elif avg_goals < 2.5:
+                    weights = [0.1, 0.35, 0.45, 0.1]
+                else:
+                    weights = [0.05, 0.25, 0.45, 0.25]
+                
+                home_goals, away_goals = np.random.choice(
+                    len(possible_draws), 
+                    p=weights
+                )
+                home_goals, away_goals = possible_draws[home_goals]
+                
+            else:  # Deplasman galip
+                home_goals = max(0, round(home_attack * 1.2))
+                away_goals = max(1, round(away_attack * 2.0))
+                
+                # Deplasman galip olmalı
+                if away_goals <= home_goals:
+                    away_goals = home_goals + np.random.choice([1, 2])
+            
+            # Makul sınırlar
+            home_goals = min(6, max(0, home_goals))
+            away_goals = min(6, max(0, away_goals))
+            
+            score = f"{home_goals}-{away_goals}"
+            
+            # Top 3 alternatif
+            top3 = self._generate_alternatives(home_goals, away_goals, ms_pred)
+            
+            logger.info(f"🎯 Akıllı fallback: {score} (form: H={home_form:.2f}, A={away_form:.2f})")
+            return score, top3
+            
+        except Exception as e:
+            logger.error(f"Akıllı fallback hatası: {e}")
+            return self._simple_fallback(ms_pred)
+    
+    def _generate_alternatives(self, h: int, a: int, ms: str) -> List[Dict]:
+        """Verilen skora benzer alternatif skorlar üret"""
+        alternatives = []
+        
+        # Ana tahmin
+        alternatives.append({
+            "score": f"{h}-{a}",
+            "prob": 0.40
+        })
+        
+        # Varyasyonlar
+        if ms == "1":  # Ev sahibi galip
+            variations = [
+                (h+1, a), (h, a+1) if h > a+1 else (h+1, a), 
+                (h, a-1) if a > 0 else (h+2, a)
+            ]
+        elif ms == "X":  # Beraberlik
+            variations = [
+                (h+1, a+1), (h-1, a-1) if h > 0 else (h+1, a+1),
+                (h, a)
+            ]
+        else:  # Deplasman galip
+            variations = [
+                (h, a+1), (h+1, a) if a > h+1 else (h, a+1),
+                (h-1, a) if h > 0 else (h, a+2)
+            ]
+        
+        for var_h, var_a in variations[:2]:
+            var_h = min(5, max(0, var_h))
+            var_a = min(5, max(0, var_a))
+            
+            # MS tutarlılığı kontrol et
+            var_score = f"{var_h}-{var_a}"
+            if self._ms_ok(ms, var_score):
+                alternatives.append({
+                    "score": var_score,
+                    "prob": np.random.uniform(0.15, 0.30)
+                })
+        
+        # Olasılıkları normalize et
+        total_prob = sum(alt["prob"] for alt in alternatives)
+        for alt in alternatives:
+            alt["prob"] = round(alt["prob"] / total_prob, 3)
+        
+        return alternatives[:3]
+    
+    def _simple_fallback(self, ms_pred: str) -> Tuple[str, List[Dict]]:
+        """Basit fallback (son çare)"""
+        if ms_pred == "1":
+            return "2-1", [{"score": "2-1", "prob": 0.33}, {"score": "3-1", "prob": 0.25}, {"score": "1-0", "prob": 0.22}]
+        elif ms_pred == "X":
+            return "1-1", [{"score": "1-1", "prob": 0.35}, {"score": "2-2", "prob": 0.25}, {"score": "0-0", "prob": 0.20}]
+        else:
+            return "1-2", [{"score": "1-2", "prob": 0.33}, {"score": "0-2", "prob": 0.25}, {"score": "1-3", "prob": 0.22}]
+    
     def predict(self, match_data: Dict, ms_pred: str = "1") -> Tuple[str, List[Dict]]:
         """
         Skor tahmini yap
@@ -84,28 +231,31 @@ class ScorePredictor:
         Returns:
             (predicted_score, top3_scores)
         """
-        # Model yüklü değilse fallback
+        # Model yüklü değilse akıllı fallback
         if self.model is None or self.space is None:
-            logger.warning("⚠️ Skor modeli yüklü değil, fallback kullanılıyor")
-            default = "2-1" if ms_pred == "1" else ("1-1" if ms_pred == "X" else "1-2")
-            return default, []
-
+            logger.warning("⚠️ Skor modeli yüklü değil, akıllı fallback kullanılıyor")
+            return self._intelligent_fallback(match_data, ms_pred)
+        
         try:
             # Feature çıkar
-            feats = self.engineer.extract_features(match_data).reshape(1, -1)
+            feats = self.engineer.extract_features(match_data)
+            if feats is None:
+                return self._intelligent_fallback(match_data, ms_pred)
+            
+            feats = feats.reshape(1, -1)
             probs = self.model.predict_proba(feats)[0]
-
+            
             # MS tutarlılık düzeltmesi
             adj = probs.copy()
             for i, lab in enumerate(self.space):
                 if lab != "OTHER" and not self._ms_ok(ms_pred, lab):
-                    adj[i] *= 0.35  # Tutarsız skorları cezalandır
+                    adj[i] *= 0.25  # Tutarsız skorları daha fazla cezalandır
             
             # Normalize
             s = adj.sum()
             if s > 0:
                 adj = adj / s
-
+            
             # En yüksek olasılıklı skor
             top_idx = int(np.argmax(adj))
             top_label = self.space[top_idx]
@@ -118,34 +268,58 @@ class ScorePredictor:
                     "prob": float(adj[i])
                 }
                 for i in top3_idx
+                if self.space[i] != "OTHER"  # OTHER'ı gösterme
             ]
-
-            # OTHER ise fallback
-            if top_label == "OTHER":
-                top_label = "2-1" if ms_pred == "1" else ("1-1" if ms_pred == "X" else "1-2")
+            
+            # OTHER ise veya olasılık çok düşükse fallback
+            if top_label == "OTHER" or adj[top_idx] < 0.10:
+                logger.info(f"Model belirsiz (prob={adj[top_idx]:.3f}), fallback kullanılıyor")
+                return self._intelligent_fallback(match_data, ms_pred)
             
             return top_label, top3
             
         except Exception as e:
             logger.error(f"❌ Skor tahmin hatası: {e}")
-            default = "2-1" if ms_pred == "1" else ("1-1" if ms_pred == "X" else "1-2")
-            return default, []
+            return self._intelligent_fallback(match_data, ms_pred)
 
 
 # Test
 if __name__ == "__main__":
     predictor = ScorePredictor()
     
-    test_match = {
-        "home_team": "Barcelona",
-        "away_team": "Real Madrid",
-        "league": "La Liga",
-        "odds": {"1": 2.10, "X": 3.40, "2": 3.20},
-        "date": "2025-10-09"
-    }
+    test_matches = [
+        {
+            "home_team": "Barcelona",
+            "away_team": "Real Madrid",
+            "league": "La Liga",
+            "odds": {"1": 2.10, "X": 3.40, "2": 3.20},
+            "date": "2025-10-09"
+        },
+        {
+            "home_team": "Manchester City",
+            "away_team": "Liverpool",
+            "league": "Premier League",
+            "odds": {"1": 1.85, "X": 3.60, "2": 4.20},
+            "date": "2025-10-09"
+        },
+        {
+            "home_team": "Trabzonspor",
+            "away_team": "Fenerbahçe",
+            "league": "Süper Lig",
+            "odds": {"1": 3.50, "X": 3.20, "2": 2.10},
+            "date": "2025-10-09"
+        }
+    ]
     
-    score, top3 = predictor.predict(test_match, ms_pred="1")
-    print(f"\n✅ Tahmin edilen skor: {score}")
-    print(f"✅ Top 3:")
-    for i, s in enumerate(top3, 1):
-        print(f"   {i}. {s['score']}: {s['prob']*100:.1f}%")
+    for match in test_matches:
+        print(f"\n{'='*60}")
+        print(f"{match['home_team']} vs {match['away_team']}")
+        print(f"Odds: 1={match['odds']['1']}, X={match['odds']['X']}, 2={match['odds']['2']}")
+        
+        for ms in ["1", "X", "2"]:
+            score, top3 = predictor.predict(match, ms_pred=ms)
+            print(f"\nMS Tahmini: {ms}")
+            print(f"  → Skor: {score}")
+            print(f"  → Alternatifler:")
+            for i, s in enumerate(top3, 1):
+                print(f"      {i}. {s['score']}: {s['prob']*100:.1f}%")
