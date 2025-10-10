@@ -593,3 +593,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+    # === Flask backend compatibility ===
+    MemorySafeTrainer = RailwayOptimizedTrainer
+    ProductionModelTrainer = RailwayOptimizedTrainer
