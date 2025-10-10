@@ -550,7 +550,7 @@ class ProductionModelTrainer:
         self.score_space = sorted(common_scores) + ["OTHER"]
         
         self.logger.info(f"   Score classes: {len(self.score_space)}")
-        self.logger.info(f"   Top 10 scores: {sorted(score_counts.items(), key=lambda x: x[1], reverse=True)[:10]}")
+        self.logger.info(f"   Top 20 scores: {sorted(score_counts.items(), key=lambda x: x[1], reverse=True)[:20]}")
         
         # Metadata
         self.metadata['score_distribution'] = dict(sorted(score_counts.items(), key=lambda x: x[1], reverse=True)[:20])
