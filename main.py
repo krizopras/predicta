@@ -285,18 +285,83 @@ def debug_nesine():
 # ----------------- MODEL YÖNETİMİ -----------------
 @app.route("/api/reload", methods=["GET", "POST"])
 def reload_models():
-    """Modelleri yeniden yükle"""
+    """Modelleri yeniden yükle - basitleştirilmiş"""
     try:
-        engine.load_models()
+        success = engine.load_models()
+        
         return jsonify({
-            "status": "ok",
-            "message": "Modeller yeniden yüklendi",
-            "is_trained": engine.is_trained
+            "status": "ok" if success else "partial",
+            "message": "Models reloaded successfully" if success else "Some models missing",
+            "is_trained": engine.is_trained,
+            "model_path": engine.model_path,
+            "timestamp": datetime.now().isoformat()
         })
+        
     except Exception as e:
         logger.error(f"/api/reload error: {e}", exc_info=True)
-        return jsonify({"status": "error", "error": str(e)}), 500
+        return jsonify({
+            "status": "error",
+            "message": str(e),
+            "timestamp": datetime.now().isoformat()
+        }), 500
 
+@app.route("/api/models/info", methods=["GET"])
+def get_models_info():
+    """Model detaylarını getir"""
+    try:
+        info = {
+            "is_trained": engine.is_trained,
+            "model_path": engine.model_path,
+            "models": {}
+        }
+        
+        # MS modelleri
+        for name, model in engine.models.items():
+            if model is not None:
+                info["models"][name] = {
+                    "type": type(model).__name__,
+                    "trained": hasattr(model, 'n_estimators')
+                }
+        
+        # Scaler
+        info["scaler"] = {
+            "type": type(engine.scaler).__name__,
+            "fitted": hasattr(engine.scaler, 'mean_') and engine.scaler.mean_ is not None
+        }
+        
+        # Score model
+        if hasattr(engine, 'score_predictor') and engine.score_predictor:
+            info["score_model"] = {
+                "available": engine.score_predictor.model is not None,
+                "classes": len(engine.score_predictor.space) if engine.score_predictor.space else 0
+            }
+        
+        # Metadata dosyasından bilgi
+        meta_path = Path(engine.model_path) / "training_metadata.json"
+        if meta_path.exists():
+            try:
+                with open(meta_path, 'r') as f:
+                    metadata = json.load(f)
+                info["training_metadata"] = {
+                    "date": metadata.get("training_date"),
+                    "version": metadata.get("version"),
+                    "total_matches": metadata.get("total_clean_matches"),
+                    "countries": metadata.get("countries_count"),
+                    "features": metadata.get("features_count"),
+                    "ms_accuracies": metadata.get("ms_accuracies"),
+                    "score_accuracy": metadata.get("score_accuracy")
+                }
+            except:
+                pass
+        
+        return jsonify(info)
+        
+    except Exception as e:
+        logger.error(f"/api/models/info error: {e}", exc_info=True)
+        return jsonify({
+            "status": "error",
+            "error": str(e)
+        }), 500
 
 @app.route("/api/history/load", methods=["POST"])
 def load_history():
