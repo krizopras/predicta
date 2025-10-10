@@ -112,9 +112,23 @@ tr:hover{background:#0a2243}
 
 .modal{position:fixed;inset:0;background:rgba(0,0,0,.6);display:none;align-items:center;justify-content:center;z-index:150}
 .modal.show{display:flex}
-.modal-card{background:linear-gradient(180deg,#0e2242,#0c1d38);border:1px solid var(--b);border-radius:16px;max-width:720px;width:92%;padding:18px;box-shadow:var(--shadow)}
+.modal-card{background:linear-gradient(180deg,#0e2242,#0c1d38);border:1px solid var(--b);border-radius:16px;max-width:900px;width:92%;max-height:85vh;overflow-y:auto;padding:18px;box-shadow:var(--shadow)}
 .modal-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
 .close{cursor:pointer;border:none;background:transparent;color:#fff;font-size:22px}
+
+.stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:16px 0}
+.stat-box{background:#0a1e38;border:1px solid var(--b);border-radius:10px;padding:14px}
+.stat-label{font-size:12px;color:var(--muted);margin-bottom:6px}
+.stat-value{font-size:24px;font-weight:700;color:var(--gold)}
+.stat-sub{font-size:11px;color:var(--muted);margin-top:4px}
+
+.confidence-table{width:100%;margin-top:16px}
+.confidence-table th{background:#0a1e38;padding:8px;text-align:left;font-size:13px}
+.confidence-table td{padding:8px;font-size:13px}
+
+.best-predictions{margin-top:16px}
+.prediction-item{background:#0a1e38;border:1px solid var(--b);border-radius:8px;padding:12px;margin-bottom:8px}
+.prediction-item strong{color:var(--gold)}
 
 footer{color:var(--muted);text-align:center;padding:14px;border-top:1px solid var(--b);margin-top:10px;font-size:13px}
 
@@ -177,6 +191,7 @@ footer{color:var(--muted);text-align:center;padding:14px;border-top:1px solid va
     <span id="status" class="status">Bağlanıyor...</span>
   </div>
   <div class="actions">
+    <button class="btn" id="btn-stats" title="Tahmin İstatistikleri">📈 İstatistikler</button>
     <button class="btn" id="btn-debug" title="Nesine API Debug">🔍 Debug</button>
     <button class="btn" id="btn-load-history" title="Load Historical Data">📊 History</button>
     <button class="btn" id="btn-train" title="Train Model">🎯 Train</button>
@@ -250,7 +265,7 @@ footer{color:var(--muted);text-align:center;padding:14px;border-top:1px solid va
 
 <div id="toast" class="toast">Mesaj</div>
 
-<!-- Details Modal -->
+<!-- Match Details Modal -->
 <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
   <div class="modal-card">
     <div class="modal-header">
@@ -258,6 +273,17 @@ footer{color:var(--muted);text-align:center;padding:14px;border-top:1px solid va
       <button class="close" id="modal-close" aria-label="Kapat">✕</button>
     </div>
     <div id="modal-body" style="font-size:14px;color:#dbe6ff"></div>
+  </div>
+</div>
+
+<!-- Stats Modal -->
+<div id="stats-modal" class="modal" role="dialog" aria-modal="true">
+  <div class="modal-card">
+    <div class="modal-header">
+      <h3 style="margin:0;font-size:20px">📊 Tahmin İstatistikleri</h3>
+      <button class="close" id="stats-close" aria-label="Kapat">✕</button>
+    </div>
+    <div id="stats-body"></div>
   </div>
 </div>
 
@@ -273,6 +299,7 @@ const $ = s=>document.querySelector(s);
 const rows = $("#rows"), leaguesBox=$("#leagues"), statusEl=$("#status"), loadingEl=$("#loading");
 const setupScreen = $("#setup-screen");
 const modal = $("#modal"), modalBody=$("#modal-body"), modalClose=$("#modal-close");
+const statsModal = $("#stats-modal"), statsBody=$("#stats-body"), statsClose=$("#stats-close");
 
 let ALL_ITEMS=[], FILTERED=[], ALL_LEAGUES=[], CURRENT_LEAGUE="";
 let refreshTimer=null;
@@ -343,26 +370,28 @@ async function fetchTodayPredict(){
   return j.items || [];
 }
 
+async function fetchAccuracyReport(days=7){
+  const j = await getJSON(API_BASE + "/api/predictions/accuracy-report?days=" + days);
+  return j;
+}
+
 /* ================= Setup Flow ================= */
 async function runSetupFlow(){
   try {
     setupScreen.classList.add("show");
     
-    // Step 1: Maçları çek
     showLoading(true, "Adım 1/3: Nesine'den maçlar çekiliyor...", "Lütfen bekleyin");
     await new Promise(resolve => setTimeout(resolve, 800));
     const matches = await getJSON(API_BASE + "/api/matches/today?filter=false");
     markStepDone(1);
     toast(`${matches.count || 0} maç çekildi`, "ok");
     
-    // Step 2: Geçmiş verileri yükle
     showLoading(true, "Adım 2/3: Geçmiş veriler yükleniyor...", "Bu işlem 10-30 saniye sürebilir");
     await new Promise(resolve => setTimeout(resolve, 900));
     const history = await getJSON(API_BASE + "/api/history/load", { method: "POST" });
     markStepDone(2);
     toast(`${history.matches_loaded || 0} geçmiş maç yüklendi`, "ok");
     
-    // Step 3: Model eğitimi
     showLoading(true, "Adım 3/3: AI modelleri eğitiliyor...", "Bu işlem birkaç dakika sürebilir, lütfen sayfayı kapatmayın");
     await new Promise(resolve => setTimeout(resolve, 1200));
     const training = await getJSON(API_BASE + "/api/training/start", { method: "POST" });
@@ -372,10 +401,7 @@ async function runSetupFlow(){
     setupScreen.classList.remove("show");
     toast("✅ Kurulum tamamlandı! Tahminler yükleniyor...", "ok");
     
-    // Modelleri reload et
     await getJSON(API_BASE + "/api/reload", {method: "POST"});
-    
-    // Ana sayfayı yükle
     await loadAll();
     
   } catch(e) {
@@ -383,7 +409,175 @@ async function runSetupFlow(){
     showLoading(false);
     setupScreen.classList.remove("show");
     toast("❌ Kurulum hatası: " + e.message, "err");
-    await loadAll(); // yine de göster
+    await loadAll();
+  }
+}
+
+/* ================= Stats Modal ================= */
+async function showStatsModal(){
+  try{
+    showLoading(true, "İstatistikler yükleniyor...");
+    const report = await fetchAccuracyReport(7);
+    
+    if(report.status === "no_data" || report.status === "no_validated"){
+      statsBody.innerHTML = `
+        <div style="text-align:center;padding:40px;color:var(--muted)">
+          <div style="font-size:48px;margin-bottom:16px">📊</div>
+          <div style="font-size:18px;margin-bottom:8px">Henüz veri yok</div>
+          <div style="font-size:14px">${report.message || "Tahminler kaydedilip sonuçlar güncellendiğinde burada görünecek"}</div>
+        </div>
+      `;
+      statsModal.classList.add("show");
+      showLoading(false);
+      return;
+    }
+    
+    const html = `
+      <div style="margin-bottom:20px">
+        <div style="font-size:14px;color:var(--muted);margin-bottom:12px">Son ${report.period || "7 gün"}</div>
+        
+        <div class="stat-grid">
+          <div class="stat-box">
+            <div class="stat-label">Toplam Tahmin</div>
+            <div class="stat-value">${report.total_predictions || 0}</div>
+            <div class="stat-sub">${report.validated_predictions || 0} doğrulandı</div>
+          </div>
+          
+          <div class="stat-box">
+            <div class="stat-label">MS Doğruluğu</div>
+            <div class="stat-value">${report.ms_accuracy?.percentage || 0}%</div>
+            <div class="stat-sub">${report.ms_accuracy?.correct || 0}/${report.ms_accuracy?.total || 0} doğru</div>
+          </div>
+          
+          <div class="stat-box">
+            <div class="stat-label">Skor Doğruluğu</div>
+            <div class="stat-value">${report.score_accuracy?.percentage || 0}%</div>
+            <div class="stat-sub">${report.score_accuracy?.exact_match || 0} tam isabet</div>
+          </div>
+          
+          <div class="stat-box">
+            <div class="stat-label">Yakın Tahmin</div>
+            <div class="stat-value">${report.goal_diff_accuracy?.percentage || 0}%</div>
+            <div class="stat-sub">±1 gol farkı</div>
+          </div>
+        </div>
+      </div>
+      
+      <div style="margin-bottom:20px">
+        <h4 style="color:var(--gold);margin:0 0 12px">Güven Aralığı Analizi</h4>
+        <table class="confidence-table">
+          <thead>
+            <tr>
+              <th>Güven Aralığı</th>
+              <th>Tahmin Sayısı</th>
+              <th>Doğru</th>
+              <th>Doğruluk</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${Object.entries(report.confidence_analysis || {}).map(([range, data]) => `
+              <tr>
+                <td><strong>${range}</strong></td>
+                <td>${data.total || 0}</td>
+                <td>${data.correct || 0}</td>
+                <td><span class="pill ${data.accuracy >= 60 ? 'ok' : data.accuracy >= 50 ? 'mid' : 'bad'}">${data.accuracy || 0}%</span></td>
+              </tr>
+            `).join('')}
+          </tbody>
+        </table>
+      </div>
+      
+      <div style="margin-bottom:20px">
+        <h4 style="color:var(--gold);margin:0 0 12px">Risk Kategorisi Başarısı</h4>
+        <div class="stat-grid">
+          ${Object.entries(report.risk_analysis || {}).map(([risk, data]) => `
+            <div class="stat-box">
+              <div class="stat-label">${risk}</div>
+              <div class="stat-value">${data.accuracy || 0}%</div>
+              <div class="stat-sub">${data.correct || 0}/${data.total || 0} doğru</div>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+      
+      ${report.best_predictions && report.best_predictions.length > 0 ? `
+        <div style="margin-bottom:20px">
+          <h4 style="color:var(--gold);margin:0 0 12px">🏆 En İyi 5 Tahmin</h4>
+          <div class="best-predictions">
+            ${report.best_predictions.map((pred, i) => `
+              <div class="prediction-item">
+                <div style="display:flex;justify-content:space-between;align-items:start">
+                  <div>
+                    <strong>${pred.match}</strong><br>
+                    <span style="font-size:12px;color:var(--muted)">
+                      Tahmin: ${pred.predicted} • Gerçek: ${pred.actual}
+                    </span>
+                  </div>
+                  <div style="text-align:right">
+                    <div style="font-size:18px;font-weight:700;color:var(--ok)">${pred.confidence?.toFixed(1)}%</div>
+                    <div style="font-size:11px;color:var(--muted)">Değer: ${pred.value_index?.toFixed(2)}</div>
+                  </div>
+                </div>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      ` : ''}
+      
+      ${report.worst_predictions && report.worst_predictions.length > 0 ? `
+        <div>
+          <h4 style="color:var(--err);margin:0 0 12px">❌ En Kötü 5 Tahmin</h4>
+          <div class="best-predictions">
+            ${report.worst_predictions.map((pred, i) => `
+              <div class="prediction-item" style="border-color:var(--err)">
+                <div style="display:flex;justify-content:space-between;align-items:start">
+                  <div>
+                    <strong>${pred.match}</strong><br>
+                    <span style="font-size:12px;color:var(--muted)">
+                      Tahmin: ${pred.predicted} • Gerçek: ${pred.actual}
+                    </span>
+                  </div>
+                  <div style="text-align:right">
+                    <div style="font-size:18px;font-weight:700;color:var(--err)">${pred.confidence?.toFixed(1)}%</div>
+                    <div style="font-size:11px;color:var(--muted)">Değer: ${pred.value_index?.toFixed(2)}</div>
+                  </div>
+                </div>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      ` : ''}
+      
+      <div style="margin-top:20px;padding-top:16px;border-top:1px solid var(--b);text-align:center">
+        <button class="btn gold" onclick="exportToCSV()">📥 CSV İndir</button>
+      </div>
+    `;
+    
+    statsBody.innerHTML = html;
+    statsModal.classList.add("show");
+    showLoading(false);
+    
+  }catch(e){
+    console.error("Stats error:", e);
+    showLoading(false);
+    toast("İstatistikler yüklenemedi: " + e.message, "err");
+  }
+}
+
+async function exportToCSV(){
+  try{
+    showLoading(true, "CSV export ediliyor...");
+    const result = await getJSON(API_BASE + "/api/predictions/export-csv?days=30");
+    
+    if(result.status === "ok"){
+      toast("✅ CSV export başarılı: " + result.file, "ok");
+    }else{
+      toast("⚠️ Export edilecek veri yok", "warn");
+    }
+  }catch(e){
+    toast("❌ Export hatası: " + e.message, "err");
+  }finally{
+    showLoading(false);
   }
 }
 
@@ -579,10 +773,9 @@ async function initialBoot(){
   setStatus(status.online);
   if(!status.online){
     toast("API çevrimdışı görünüyor.", "err");
-    return; // yine de UI açık
+    return;
   }
   if(!status.trained){
-    // ilk kurulum
     runSetupFlow();
   }else{
     await loadAll();
@@ -597,7 +790,7 @@ function scheduleAutoRefresh(){
       const items = await fetchTodayPredict();
       ALL_ITEMS = items || [];
       applyFilters();
-    }catch(e){ /* sessiz geç */}
+    }catch(e){}
   }, REFRESH_DEFAULT_MIN*60*1000);
 }
 
@@ -606,6 +799,9 @@ document.addEventListener("DOMContentLoaded", async ()=>{
   // modal close
   modalClose.onclick = ()=> modal.classList.remove("show");
   modal.onclick = (e)=>{ if(e.target===modal) modal.classList.remove("show"); };
+  
+  statsClose.onclick = ()=> statsModal.classList.remove("show");
+  statsModal.onclick = (e)=>{ if(e.target===statsModal) statsModal.classList.remove("show"); };
 
   // filters
   $("#sel-league").onchange = applyFilters;
@@ -615,6 +811,8 @@ document.addEventListener("DOMContentLoaded", async ()=>{
 
   // main buttons
   $("#btn-refresh").onclick = async ()=> { await loadAll(); toast("Yenilendi ✅","ok"); };
+  
+  $("#btn-stats").onclick = showStatsModal;
 
   $("#btn-debug").onclick = async ()=>{
     try{
