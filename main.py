@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Predicta Europe ML v2 - Flask Backend (FIXED VERSION)
-Auto bulletin fetcher (Nesine) + ML predictions
+Predicta Europe ML v2 - Flask Backend (TRACKER ENTEGRELİ)
+Auto bulletin fetcher (Nesine) + ML predictions + Prediction Tracking
 """
 
 import os
@@ -14,6 +14,7 @@ from flask_cors import CORS
 from ml_prediction_engine import MLPredictionEngine
 from nesine_fetcher import fetch_bulletin, fetch_today
 from historical_processor import HistoricalDataProcessor
+from prediction_tracker import PredictionTracker
 
 # ========== Logging ==========
 logging.basicConfig(
@@ -41,6 +42,9 @@ history_processor = HistoricalDataProcessor(
     clubs_path=CLUBS_PATH
 )
 
+# ========== Prediction Tracker ==========
+tracker = PredictionTracker(storage_dir="data/predictions")
+
 # ======================================================
 # ROUTES
 # ======================================================
@@ -48,7 +52,7 @@ history_processor = HistoricalDataProcessor(
 @app.route("/")
 def home():
     return jsonify({
-        "status": "Predicta ML v2 aktif",
+        "status": "Predicta ML v2 aktif (Tracker Enabled)",
         "port": APP_PORT,
         "model_trained": engine.is_trained,
         "models_dir": MODELS_DIR,
@@ -61,6 +65,9 @@ def home():
             "/api/matches/today",
             "/api/predict/today",
             "/api/predictions/batch",
+            "/api/predictions/update-result",
+            "/api/predictions/accuracy-report",
+            "/api/predictions/export-csv",
             "/api/debug/nesine-test",
             "/api/reload",
             "/api/models/info",
@@ -76,6 +83,7 @@ def get_status():
     return jsonify({
         "status": "ok",
         "model_trained": engine.is_trained,
+        "tracker_enabled": True,
         "timestamp": datetime.now().isoformat()
     })
 
@@ -135,13 +143,14 @@ def get_today_matches():
         return jsonify({"error": str(e), "items": []}), 500
 
 
-# ----------------- BUGÜNKÜ MAÇLAR + TAHMİN -----------------
+# ----------------- BUGÜNKÜ MAÇLAR + TAHMİN (TRACKER İLE) -----------------
 @app.route("/api/predict/today", methods=["GET"])
 def predict_today():
-    """Bugünkü tüm maçları tahmin et"""
+    """Bugünkü tüm maçları tahmin et ve kaydet"""
     try:
         filter_enabled = request.args.get('filter', 'false').lower() == 'true'
         league_filter = request.args.get('league', '').strip()
+        save_predictions = request.args.get('save', 'true').lower() == 'true'
         
         today = date.today()
         matches = fetch_bulletin(today, filter_leagues=filter_enabled)
@@ -173,11 +182,17 @@ def predict_today():
                 # Tahmin yap
                 pred = engine.predict_match(home, away, odds, league)
                 
-                results.append({
+                result_item = {
                     **m,
                     "prediction": pred
-                })
+                }
+                
+                results.append(result_item)
                 success_count += 1
+                
+                # Tahminleri kaydet (opsiyonel)
+                if save_predictions:
+                    tracker.save_prediction(m, pred, str(today))
                 
             except Exception as err:
                 logger.warning(f"⚠️ Tahmin hatası ({home} - {away}): {err}")
@@ -192,12 +207,16 @@ def predict_today():
         
         logger.info(f"✅ {success_count}/{len(matches)} maç başarıyla tahmin edildi")
         
+        if save_predictions:
+            logger.info(f"💾 {success_count} tahmin kaydedildi")
+        
         return jsonify({
             "count": len(results),
             "items": results,
             "date": str(today),
             "success_count": success_count,
-            "filter_enabled": filter_enabled
+            "filter_enabled": filter_enabled,
+            "saved_to_tracker": save_predictions
         })
         
     except Exception as e:
@@ -258,6 +277,86 @@ def batch_predictions():
         
     except Exception as e:
         logger.error(f"/api/predictions/batch error: {e}", exc_info=True)
+        return jsonify({"error": str(e)}), 500
+
+
+# ----------------- TAHMİN SONUÇ GÜNCELLEMESİ -----------------
+@app.route("/api/predictions/update-result", methods=["POST"])
+def update_prediction_result():
+    """Maç sonucunu güncelle ve doğruluk hesapla"""
+    try:
+        data = request.get_json(silent=True) or {}
+        
+        home_team = data.get("home_team")
+        away_team = data.get("away_team")
+        home_score = data.get("home_score")
+        away_score = data.get("away_score")
+        match_date = data.get("match_date")  # Opsiyonel
+        
+        if not all([home_team, away_team, 
+                   home_score is not None, away_score is not None]):
+            return jsonify({
+                "error": "home_team, away_team, home_score, away_score gerekli"
+            }), 400
+        
+        success = tracker.update_actual_result(
+            home_team, away_team,
+            int(home_score), int(away_score),
+            match_date
+        )
+        
+        if success:
+            return jsonify({
+                "status": "ok",
+                "message": f"Sonuç güncellendi: {home_team} {home_score}-{away_score} {away_team}"
+            })
+        else:
+            return jsonify({
+                "status": "not_found",
+                "message": "Tahmin bulunamadı veya güncelleme başarısız"
+            }), 404
+            
+    except Exception as e:
+        logger.error(f"/api/predictions/update-result error: {e}", exc_info=True)
+        return jsonify({"error": str(e)}), 500
+
+
+# ----------------- DOĞRULUK RAPORU -----------------
+@app.route("/api/predictions/accuracy-report", methods=["GET"])
+def get_accuracy_report():
+    """Tahmin doğruluk raporu"""
+    try:
+        days = int(request.args.get('days', 7))
+        report = tracker.get_accuracy_report(days=days)
+        return jsonify(report)
+        
+    except Exception as e:
+        logger.error(f"/api/predictions/accuracy-report error: {e}", exc_info=True)
+        return jsonify({"error": str(e)}), 500
+
+
+# ----------------- CSV EXPORT -----------------
+@app.route("/api/predictions/export-csv", methods=["GET"])
+def export_predictions_csv():
+    """Tahminleri CSV olarak dışa aktar"""
+    try:
+        days = int(request.args.get('days', 30))
+        output_file = tracker.export_to_csv(days=days)
+        
+        if output_file:
+            return jsonify({
+                "status": "ok",
+                "file": output_file,
+                "message": "CSV export başarılı"
+            })
+        else:
+            return jsonify({
+                "status": "no_data",
+                "message": "Export edilecek veri yok"
+            }), 404
+            
+    except Exception as e:
+        logger.error(f"/api/predictions/export-csv error: {e}", exc_info=True)
         return jsonify({"error": str(e)}), 500
 
 
@@ -519,19 +618,15 @@ def start_training():
         try:
             logger.info("🎯 Eğitim başladı")
             
-            # ✅ DOĞRU IMPORT
-            from model_trainer_streamsafe import RailwayOptimizedTrainer
+            from model_trainer import ProductionModelTrainer
             
-            trainer = RailwayOptimizedTrainer(
+            trainer = ProductionModelTrainer(
                 models_dir=MODELS_DIR,
                 raw_data_path=RAW_DATA_PATH,
                 clubs_path=CLUBS_PATH,
-                min_matches=10,  # ✅ 50 → 10
-                max_matches=None,  # ✅ Sınırsız
+                min_matches=50,
                 test_size=0.2,
-                verbose=True,
-                batch_size=500,
-                railway_mode=True  # ✅ Railway optimizasyonları
+                verbose=True
             )
             
             result = trainer.run_full_pipeline()
@@ -575,11 +670,12 @@ def internal_error(e):
 # ======================================================
 if __name__ == "__main__":
     logger.info("=" * 60)
-    logger.info("⚽ Predicta Europe ML v2 - Backend Aktif")
+    logger.info("⚽ Predicta Europe ML v2 - Backend Aktif (TRACKER)")
     logger.info("=" * 60)
     logger.info(f"📂 Models: {MODELS_DIR}")
     logger.info(f"📂 Raw Data: {RAW_DATA_PATH}")
     logger.info(f"📂 Clubs: {CLUBS_PATH}")
+    logger.info(f"📊 Predictions: data/predictions")
     logger.info(f"🌐 Port: {APP_PORT}")
     logger.info(f"🤖 Trained: {'✅' if engine.is_trained else '⚠️ Eğitim gerekli'}")
     logger.info("=" * 60)
