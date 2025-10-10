@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """
-Predicta Europe ML v2 - Flask Backend (DÜZELTILMIŞ VERSIYON)
+Predicta Europe ML v2 - Flask Backend (FIXED VERSION)
 Auto bulletin fetcher (Nesine) + ML predictions
 """
 
 import os
 import logging
-from datetime import date
+from datetime import date, datetime
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 
@@ -56,15 +56,27 @@ def home():
         "clubs_path": CLUBS_PATH,
         "author": "Olcay Arslan",
         "api_endpoints": [
+            "/api/status",
             "/api/leagues",
             "/api/matches/today",
             "/api/predict/today",
             "/api/predictions/batch",
             "/api/debug/nesine-test",
             "/api/reload",
+            "/api/models/info",
             "/api/history/load",
             "/api/training/start"
         ]
+    })
+
+
+@app.route("/api/status", methods=["GET"])
+def get_status():
+    """Backend status check"""
+    return jsonify({
+        "status": "ok",
+        "model_trained": engine.is_trained,
+        "timestamp": datetime.now().isoformat()
     })
 
 
@@ -285,7 +297,7 @@ def debug_nesine():
 # ----------------- MODEL YÖNETİMİ -----------------
 @app.route("/api/reload", methods=["GET", "POST"])
 def reload_models():
-    """Modelleri yeniden yükle - basitleştirilmiş"""
+    """Modelleri yeniden yükle"""
     try:
         success = engine.load_models()
         
@@ -305,10 +317,14 @@ def reload_models():
             "timestamp": datetime.now().isoformat()
         }), 500
 
+
 @app.route("/api/models/info", methods=["GET"])
 def get_models_info():
     """Model detaylarını getir"""
     try:
+        import json
+        from pathlib import Path
+        
         info = {
             "is_trained": engine.is_trained,
             "model_path": engine.model_path,
@@ -362,6 +378,7 @@ def get_models_info():
             "status": "error",
             "error": str(e)
         }), 500
+
 
 @app.route("/api/history/load", methods=["POST"])
 def load_history():
@@ -519,7 +536,7 @@ def start_training():
             if result.get('success'):
                 logger.info("✅ Eğitim tamamlandı!")
                 # Modelleri yeniden yükle
-                engine._load_models()
+                engine.load_models()
             else:
                 logger.error(f"❌ Eğitim hatası: {result.get('error')}")
                 
