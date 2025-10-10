@@ -1,457 +1,364 @@
 #!/usr/bin/env python3
 """
-ML Tahmin Motoru + Entegre Skor Tahmini (ScorePredictor ile)
+ML Prediction Engine - FIXED VERSION
+Scaler yükleme problemi çözüldü
 """
 
-import numpy as np
-import logging
-from typing import Dict, Any, List
-from datetime import datetime
-import pickle
 import os
+import pickle
+import logging
+import numpy as np
+from pathlib import Path
+from typing import Dict, Any, Optional, Tuple, List
 
-logger = logging.getLogger(__name__)
+from advanced_feature_engineer import AdvancedFeatureEngineer
+from score_predictor import ScorePredictor
 
-try:
-    from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
-    from sklearn.preprocessing import StandardScaler
-    from sklearn.model_selection import train_test_split
-    import xgboost as xgb
-    ML_AVAILABLE = True
-except ImportError:
-    ML_AVAILABLE = False
-    logger.warning("ML kütüphaneleri yüklü değil")
-
-from advanced_feature_engineer import AdvancedFeatureEngineer, FEATURE_NAMES
-
-# Skor tahmini için
-try:
-    from score_predictor import ScorePredictor
-    SCORE_AVAILABLE = True
-except ImportError:
-    SCORE_AVAILABLE = False
-    logger.warning("ScorePredictor yüklenemedi")
+logging.basicConfig(level=logging.INFO, format="[%(name)s] %(message)s")
+logger = logging.getLogger("MLEngine")
 
 
 class MLPredictionEngine:
+    """Production ML Engine with fixed scaler loading"""
+    
     def __init__(self, model_path: str = "data/ai_models_v2"):
         self.model_path = model_path
-        self.feature_engineer = AdvancedFeatureEngineer()
+        os.makedirs(model_path, exist_ok=True)
         
-        # MS (Maç Sonucu) modelleri
+        # Components
+        self.feature_engineer = AdvancedFeatureEngineer(model_path=model_path)
+        self.score_predictor = ScorePredictor(models_dir=model_path)
+        
+        # Models
         self.models = {
             'xgboost': None,
             'random_forest': None,
             'gradient_boost': None
         }
-        
-        self.scaler = StandardScaler()
+        self.scaler = None
         self.is_trained = False
         
-        self.weights = {
-            'xgboost': 0.45,
-            'random_forest': 0.30,
-            'gradient_boost': 0.25
-        }
-        
-        # Skor tahmin modeli
-        self.score_predictor = ScorePredictor(model_path) if SCORE_AVAILABLE else None
-        
-        os.makedirs(model_path, exist_ok=True)
+        # Load models
         self._load_models()
     
-    def _initialize_models(self):
-        if not ML_AVAILABLE:
-            return False
-        
+    def _load_models(self) -> bool:
+        """Load all models with proper error handling"""
         try:
-            self.models['xgboost'] = xgb.XGBClassifier(
-                n_estimators=200, max_depth=6, learning_rate=0.05,
-                subsample=0.8, colsample_bytree=0.8,
-                objective='multi:softprob', num_class=3, random_state=42
-            )
+            # 1. MS Models
+            ms_path = Path(self.model_path) / "ensemble_models.pkl"
+            if not ms_path.exists():
+                logger.warning(f"⚠️ MS models not found: {ms_path}")
+                return False
             
-            self.models['random_forest'] = RandomForestClassifier(
-                n_estimators=150, max_depth=12, min_samples_split=5,
-                min_samples_leaf=2, random_state=42
-            )
+            file_size = ms_path.stat().st_size
+            if file_size < 1000:
+                logger.error(f"❌ Corrupted MS models file ({file_size} bytes)")
+                return False
             
-            self.models['gradient_boost'] = GradientBoostingClassifier(
-                n_estimators=100, max_depth=5, learning_rate=0.1, random_state=42
-            )
+            with open(ms_path, 'rb') as f:
+                ms_data = pickle.load(f)
             
-            logger.info("✅ MS modelleri oluşturuldu")
-            return True
+            self.models = ms_data.get('models', {})
+            logger.info(f"✅ MS models loaded ({file_size:,} bytes)")
             
-        except Exception as e:
-            logger.error(f"Model oluşturma hatası: {e}")
-            return False
-    
-    def _load_models(self):
-        model_file = os.path.join(self.model_path, "ensemble_models.pkl")
-        
-        if os.path.exists(model_file):
-            try:
-                with open(model_file, 'rb') as f:
-                    data = pickle.load(f)
-                    self.models = data['models']
-                    self.scaler = data['scaler']
-                    self.is_trained = data['is_trained']
-                
-                logger.info("✅ MS modelleri yüklendi")
-                return True
-            except Exception as e:
-                logger.warning(f"Model yükleme hatası: {e}")
-        
-        return self._initialize_models()
-    
-    def _save_models(self):
-        try:
-            model_file = os.path.join(self.model_path, "ensemble_models.pkl")
-            data = {
-                'models': self.models,
-                'scaler': self.scaler,
-                'is_trained': self.is_trained
-            }
+            # 2. Scaler (AYRI DOSYA)
+            scaler_path = Path(self.model_path) / "scaler.pkl"
+            if not scaler_path.exists():
+                logger.warning(f"⚠️ Scaler not found: {scaler_path}")
+                # Fallback: sklearn StandardScaler oluştur
+                from sklearn.preprocessing import StandardScaler
+                self.scaler = StandardScaler()
+                logger.info("ℹ️ Using default StandardScaler")
+            else:
+                file_size = scaler_path.stat().st_size
+                if file_size < 50:
+                    logger.error(f"❌ Corrupted scaler file ({file_size} bytes)")
+                    from sklearn.preprocessing import StandardScaler
+                    self.scaler = StandardScaler()
+                else:
+                    with open(scaler_path, 'rb') as f:
+                        self.scaler = pickle.load(f)
+                    logger.info(f"✅ Scaler loaded ({file_size:,} bytes)")
             
-            with open(model_file, 'wb') as f:
-                pickle.dump(data, f)
-            
-            logger.info("💾 Modeller kaydedildi")
-            return True
-            
-        except Exception as e:
-            logger.error(f"Model kaydetme hatası: {e}")
-            return False
-    
-    def train(self, historical_matches: List[Dict]) -> Dict[str, Any]:
-        if not ML_AVAILABLE:
-            return {"success": False, "error": "ML kütüphaneleri yüklü değil"}
-        
-        if len(historical_matches) < 100:
-            return {"success": False, "error": f"Yetersiz veri: {len(historical_matches)}"}
-        
-        try:
-            logger.info(f"🎓 {len(historical_matches)} maçla eğitim başlıyor...")
-            
-            X, y = [], []
-            
-            for match in historical_matches:
-                features = self.feature_engineer.extract_features({
-                    'home_team': match['home_team'],
-                    'away_team': match['away_team'],
-                    'league': match.get('league', 'Unknown'),
-                    'odds': match.get('odds', {'1': 2.0, 'X': 3.0, '2': 3.5}),
-                    'date': match.get('date', datetime.now().isoformat())
-                })
-                
-                result = match.get('result', 'X')
-                label = {'1': 0, 'X': 1, '2': 2}.get(result, 1)
-                
-                X.append(features)
-                y.append(label)
-                self._update_feature_history(match)
-            
-            X = np.array(X)
-            y = np.array(y)
-            
-            X_scaled = self.scaler.fit_transform(X)
-            X_train, X_test, y_train, y_test = train_test_split(
-                X_scaled, y, test_size=0.2, random_state=42, stratify=y
-            )
-            
-            accuracies = {}
-            for name, model in self.models.items():
-                if model is None:
-                    continue
-                
-                logger.info(f"📚 {name} eğitiliyor...")
-                model.fit(X_train, y_train)
-                acc = model.score(X_test, y_test)
-                accuracies[name] = acc
-                logger.info(f"✅ {name}: %{acc*100:.2f}")
+            # 3. Check if models are valid
+            valid_models = sum(1 for m in self.models.values() if m is not None)
+            if valid_models == 0:
+                logger.error("❌ No valid MS models found")
+                return False
             
             self.is_trained = True
-            self._save_models()
-            
-            ensemble_acc = self._calculate_ensemble_accuracy(X_test, y_test)
-            
-            return {
-                "success": True,
-                "training_samples": len(X_train),
-                "test_samples": len(X_test),
-                "accuracies": accuracies,
-                "ensemble_accuracy": ensemble_acc,
-                "features_used": len(FEATURE_NAMES)
-            }
+            logger.info(f"✅ Engine ready ({valid_models}/3 models)")
+            return True
             
         except Exception as e:
-            logger.error(f"Eğitim hatası: {e}")
-            return {"success": False, "error": str(e)}
+            logger.error(f"❌ Model loading error: {e}", exc_info=True)
+            return False
     
-    def _update_feature_history(self, match: Dict):
-        """Geçmiş maç verilerini feature engineer'a ekle"""
-        home_result = 'W' if match['result'] == '1' else ('D' if match['result'] == 'X' else 'L')
-        away_result = 'L' if match['result'] == '1' else ('D' if match['result'] == 'X' else 'W')
-        
-        self.feature_engineer.update_team_history(match['home_team'], {
-            'result': home_result,
-            'goals_for': match.get('home_goals', 0),
-            'goals_against': match.get('away_goals', 0),
-            'date': match.get('date', ''),
-            'venue': 'home'
-        })
-        
-        self.feature_engineer.update_team_history(match['away_team'], {
-            'result': away_result,
-            'goals_for': match.get('away_goals', 0),
-            'goals_against': match.get('home_goals', 0),
-            'date': match.get('date', ''),
-            'venue': 'away'
-        })
-        
-        self.feature_engineer.update_h2h_history(
-            match['home_team'], match['away_team'],
-            {
-                'result': match['result'],
-                'home_goals': match.get('home_goals', 0),
-                'away_goals': match.get('away_goals', 0)
-            }
-        )
-        
-        self.feature_engineer.update_league_results(
-            match.get('league', 'Unknown'), match['result']
-        )
+    def load_models(self) -> bool:
+        """Public method to reload models"""
+        return self._load_models()
     
-    def _calculate_ensemble_accuracy(self, X_test, y_test) -> float:
-        predictions = self._ensemble_predict_proba(X_test)
-        y_pred = np.argmax(predictions, axis=1)
-        return np.mean(y_pred == y_test)
-    
-    def _ensemble_predict_proba(self, X) -> np.ndarray:
-        if not self.is_trained:
-            return np.ones((len(X), 3)) / 3
-        
-        ensemble_probs = np.zeros((len(X), 3))
-        
-        for name, model in self.models.items():
-            if model is None:
-                continue
-            weight = self.weights.get(name, 0.33)
-            probs = model.predict_proba(X)
-            ensemble_probs += weight * probs
-        
-        ensemble_probs /= ensemble_probs.sum(axis=1, keepdims=True)
-        return ensemble_probs
-    
-    def predict_match(self, home_team: str, away_team: str, odds: Dict, 
-                     league: str = "Unknown") -> Dict[str, Any]:
+    def predict_match(
+        self, 
+        home_team: str, 
+        away_team: str, 
+        odds: Dict[str, float], 
+        league: str = "Unknown"
+    ) -> Dict[str, Any]:
         """
-        KAPSAMLI MAÇ TAHMİNİ: MS + SKOR + ANALİZ
+        Predict match outcome with comprehensive error handling
+        
+        Args:
+            home_team: Home team name
+            away_team: Away team name
+            odds: {"1": float, "X": float, "2": float}
+            league: League name
+        
+        Returns:
+            Prediction dictionary with result, confidence, score, etc.
         """
         try:
+            if not self.is_trained:
+                return self._fallback_prediction(home_team, away_team, odds, "Models not trained")
+            
+            # Prepare match data
             match_data = {
                 'home_team': home_team,
                 'away_team': away_team,
                 'league': league,
                 'odds': odds,
-                'date': datetime.now().isoformat()
+                'date': '2025-10-10'
             }
             
+            # Extract features
             features = self.feature_engineer.extract_features(match_data)
+            if features is None:
+                return self._fallback_prediction(home_team, away_team, odds, "Feature extraction failed")
             
-            if not self.is_trained:
-                return self._basic_prediction(home_team, away_team, odds)
+            # Scale features
+            try:
+                if self.scaler is not None and hasattr(self.scaler, 'mean_'):
+                    features_scaled = self.scaler.transform(features.reshape(1, -1))
+                else:
+                    # Scaler fitted değilse, features'ı olduğu gibi kullan
+                    logger.warning("⚠️ Scaler not fitted, using raw features")
+                    features_scaled = features.reshape(1, -1)
+            except Exception as e:
+                logger.warning(f"⚠️ Scaling error: {e}, using raw features")
+                features_scaled = features.reshape(1, -1)
             
-            X = features.reshape(1, -1)
-            X_scaled = self.scaler.transform(X)
+            # Get predictions from all models
+            predictions = {}
+            for name, model in self.models.items():
+                if model is not None:
+                    try:
+                        proba = model.predict_proba(features_scaled)[0]
+                        predictions[name] = proba
+                    except Exception as e:
+                        logger.warning(f"⚠️ {name} prediction failed: {e}")
             
-            # MS (Maç Sonucu) tahmini
-            probs = self._ensemble_predict_proba(X_scaled)[0]
+            if not predictions:
+                return self._fallback_prediction(home_team, away_team, odds, "All models failed")
             
-            prediction_idx = np.argmax(probs)
-            prediction = ['1', 'X', '2'][prediction_idx]
-            confidence = probs[prediction_idx] * 100
-            
-            # SKOR TAHMİNİ (ScorePredictor kullanarak)
-            score_prediction = "1-1"  # Default
-            top3_scores = []
-            
-            if self.score_predictor and self.score_predictor.model is not None:
-                try:
-                    score_prediction, top3_scores = self.score_predictor.predict(
-                        match_data, ms_pred=prediction
-                    )
-                    logger.info(f"✅ Skor tahmini: {score_prediction}")
-                except Exception as e:
-                    logger.warning(f"Skor tahmini hatası: {e}")
-                    score_prediction = self._fallback_score(prediction, home_team, away_team)
-            else:
-                score_prediction = self._fallback_score(prediction, home_team, away_team)
-            
-            # Value bet analizi
-            value_index = self._calculate_value_bet(probs, odds)
-            
-            # Risk seviyesi
-            if confidence >= 70:
-                risk = "LOW"
-            elif confidence >= 55:
-                risk = "MEDIUM"
-            else:
-                risk = "HIGH"
-            
-            result = {
-                "prediction": prediction,
-                "result": prediction,  # Frontend uyumluluğu
-                "confidence": round(confidence, 1),
-                "score_prediction": score_prediction,
-                "top3_scores": top3_scores if top3_scores else [
-                    {"score": score_prediction, "prob": confidence/100}
-                ],
-                "probabilities": {
-                    "home_win": round(probs[0] * 100, 1),
-                    "draw": round(probs[1] * 100, 1),
-                    "away_win": round(probs[2] * 100, 1)
-                },
-                "value_bet": {
-                    "value_index": round(value_index, 3),
-                    "rating": self._get_value_rating(value_index)
-                },
-                "risk_level": risk,
-                "recommendation": self._get_recommendation(confidence, value_index),
-                "model": "ML Ensemble + ScorePredictor",
-                "features_used": len(FEATURE_NAMES),
-                "timestamp": datetime.now().isoformat()
+            # Ensemble prediction (weighted average)
+            weights = {
+                'xgboost': 0.40,
+                'random_forest': 0.30,
+                'gradient_boost': 0.30
             }
             
-            logger.info(f"✅ {home_team} - {away_team}: {prediction} ({confidence:.1f}%) | Skor: {score_prediction}")
-            return result
+            ensemble_proba = np.zeros(3)
+            total_weight = 0
+            
+            for name, proba in predictions.items():
+                weight = weights.get(name, 0.33)
+                ensemble_proba += proba * weight
+                total_weight += weight
+            
+            if total_weight > 0:
+                ensemble_proba /= total_weight
+            
+            # Get result
+            result_idx = int(np.argmax(ensemble_proba))
+            result_map = {0: '1', 1: 'X', 2: '2'}
+            result = result_map[result_idx]
+            confidence = float(ensemble_proba[result_idx]) * 100
+            
+            # Score prediction
+            score, top3_scores = self.score_predictor.predict(match_data, ms_pred=result)
+            
+            # Value bet analysis
+            value_bet = self._calculate_value_bet(result, confidence, odds)
+            
+            return {
+                'prediction': result,
+                'result': result,  # Legacy compatibility
+                'confidence': confidence,
+                'probabilities': {
+                    '1': float(ensemble_proba[0]) * 100,
+                    'X': float(ensemble_proba[1]) * 100,
+                    '2': float(ensemble_proba[2]) * 100
+                },
+                'score_prediction': score,
+                'alternative_scores': top3_scores,
+                'value_bet': value_bet,
+                'model_predictions': {
+                    name: {
+                        '1': float(proba[0]) * 100,
+                        'X': float(proba[1]) * 100,
+                        '2': float(proba[2]) * 100
+                    }
+                    for name, proba in predictions.items()
+                }
+            }
             
         except Exception as e:
-            logger.error(f"Tahmin hatası: {e}", exc_info=True)
-            return self._basic_prediction(home_team, away_team, odds)
+            logger.error(f"❌ Prediction error: {e}", exc_info=True)
+            return self._fallback_prediction(home_team, away_team, odds, str(e))
     
-    def _fallback_score(self, ms_pred: str, home_team: str, away_team: str) -> str:
-        """Skor modeli yoksa feature'lardan basit tahmin"""
+    def _calculate_value_bet(
+        self, 
+        prediction: str, 
+        confidence: float, 
+        odds: Dict[str, float]
+    ) -> Dict[str, Any]:
+        """Calculate value bet metrics"""
         try:
-            home_form = self.feature_engineer._calculate_form(home_team, is_home=True)
-            away_form = self.feature_engineer._calculate_form(away_team, is_home=False)
+            predicted_odd = float(odds.get(prediction, 2.0))
             
-            home_avg = home_form['goals_per_match']
-            away_avg = away_form['goals_per_match']
+            # Model probability
+            model_prob = confidence / 100.0
             
-            if ms_pred == '1':  # Ev sahibi galip
-                home_goals = max(1, round(home_avg * 1.2))
-                away_goals = max(0, round(away_avg * 0.8))
-                if home_goals <= away_goals:
-                    home_goals = away_goals + 1
-            elif ms_pred == 'X':  # Beraberlik
-                avg = (home_avg + away_avg) / 2
-                home_goals = away_goals = max(1, round(avg))
-            else:  # Deplasman galip
-                home_goals = max(0, round(home_avg * 0.8))
-                away_goals = max(1, round(away_avg * 1.2))
-                if away_goals <= home_goals:
-                    away_goals = home_goals + 1
+            # Implied probability from odds
+            implied_prob = 1.0 / predicted_odd if predicted_odd > 1.01 else 0.5
             
-            # Makul sınırlar
-            home_goals = min(5, max(0, home_goals))
-            away_goals = min(5, max(0, away_goals))
+            # Value index
+            value_index = (model_prob * predicted_odd) - 1.0
             
-            return f"{home_goals}-{away_goals}"
-        except:
-            return "2-1" if ms_pred == '1' else ("1-1" if ms_pred == 'X' else "1-2")
+            # Risk assessment
+            if value_index >= 0.15:
+                risk = "Low Risk"
+                recommendation = "Strong Bet"
+            elif value_index >= 0.08:
+                risk = "Medium Risk"
+                recommendation = "Good Bet"
+            elif value_index >= 0.03:
+                risk = "Higher Risk"
+                recommendation = "Marginal Bet"
+            else:
+                risk = "High Risk"
+                recommendation = "Avoid"
+            
+            return {
+                'value_index': round(value_index, 3),
+                'predicted_odd': predicted_odd,
+                'model_probability': round(model_prob, 3),
+                'implied_probability': round(implied_prob, 3),
+                'edge': round((model_prob - implied_prob) * 100, 2),
+                'risk': risk,
+                'recommendation': recommendation
+            }
+            
+        except Exception as e:
+            logger.warning(f"⚠️ Value bet calculation error: {e}")
+            return {
+                'value_index': 0.0,
+                'risk': "Unknown",
+                'recommendation': "No Data"
+            }
     
-    def _calculate_value_bet(self, probs: np.ndarray, odds: Dict) -> float:
+    def _fallback_prediction(
+        self, 
+        home_team: str, 
+        away_team: str, 
+        odds: Dict[str, float],
+        reason: str
+    ) -> Dict[str, Any]:
+        """Fallback prediction based on odds"""
         try:
-            odds_values = [
-                float(odds.get('1', 2.0)),
-                float(odds.get('X', 3.0)),
-                float(odds.get('2', 3.5))
-            ]
-            expected_values = probs * odds_values
-            max_ev = np.max(expected_values)
-            return max_ev - 1
-        except:
-            return 0.0
-    
-    def _get_value_rating(self, value_index: float) -> str:
-        if value_index > 0.15:
-            return "EXCELLENT"
-        elif value_index > 0.10:
-            return "VERY GOOD"
-        elif value_index > 0.05:
-            return "GOOD"
-        elif value_index > 0.02:
-            return "FAIR"
-        else:
-            return "POOR"
-    
-    def _get_recommendation(self, confidence: float, value_index: float) -> str:
-        if confidence >= 70 and value_index > 0.10:
-            return "🔥 STRONG BET"
-        elif confidence >= 65 and value_index > 0.05:
-            return "✅ RECOMMENDED"
-        elif confidence >= 55:
-            return "⚠️ CONSIDER"
-        else:
-            return "❌ SKIP"
-    
-    def _basic_prediction(self, home_team: str, away_team: str, odds: Dict) -> Dict:
-        """Model eğitilmemişse basit tahmin"""
-        try:
-            odds_1 = float(odds.get('1', 2.0))
-            odds_x = float(odds.get('X', 3.0))
-            odds_2 = float(odds.get('2', 3.5))
+            # Find favorite based on odds
+            odds_1 = float(odds.get("1", 2.0))
+            odds_x = float(odds.get("X", 3.0))
+            odds_2 = float(odds.get("2", 3.5))
             
-            imp_1 = 1 / odds_1
-            imp_x = 1 / odds_x
-            imp_2 = 1 / odds_2
-            total = imp_1 + imp_x + imp_2
+            if odds_1 < odds_x and odds_1 < odds_2:
+                result = "1"
+                confidence = 55.0
+            elif odds_2 < odds_1 and odds_2 < odds_x:
+                result = "2"
+                confidence = 50.0
+            else:
+                result = "X"
+                confidence = 45.0
             
-            prob_1 = (imp_1 / total) * 100
-            prob_x = (imp_x / total) * 100
-            prob_2 = (imp_2 / total) * 100
-            
-            probs = {'1': prob_1, 'X': prob_x, '2': prob_2}
-            prediction = max(probs, key=probs.get)
-            
-            # Basit skor
-            if prediction == '1':
+            # Simple score prediction
+            if result == "1":
                 score = "2-1"
-            elif prediction == 'X':
+            elif result == "X":
                 score = "1-1"
             else:
                 score = "1-2"
             
             return {
-                "prediction": prediction,
-                "result": prediction,
-                "confidence": round(probs[prediction], 1),
-                "score_prediction": score,
-                "top3_scores": [{"score": score, "prob": probs[prediction]/100}],
-                "probabilities": {
-                    "home_win": round(prob_1, 1),
-                    "draw": round(prob_x, 1),
-                    "away_win": round(prob_2, 1)
+                'prediction': result,
+                'result': result,
+                'confidence': confidence,
+                'probabilities': {
+                    '1': 33.3,
+                    'X': 33.3,
+                    '2': 33.4
                 },
-                "value_bet": {"value_index": 0.0, "rating": "UNKNOWN"},
-                "risk_level": "HIGH",
-                "recommendation": "⏳ MODEL NOT TRAINED",
-                "model": "Basic Odds-Based",
-                "timestamp": datetime.now().isoformat()
+                'score_prediction': score,
+                'alternative_scores': [
+                    {'score': score, 'prob': 0.33}
+                ],
+                'value_bet': {
+                    'value_index': 0.0,
+                    'risk': 'Unknown',
+                    'recommendation': 'Fallback Prediction'
+                },
+                'fallback': True,
+                'fallback_reason': reason
             }
+            
         except Exception as e:
-            logger.error(f"Basic prediction hatası: {e}")
+            logger.error(f"❌ Fallback prediction error: {e}")
             return {
-                "prediction": "X",
-                "result": "X",
-                "confidence": 33.3,
-                "score_prediction": "1-1",
-                "top3_scores": [],
-                "probabilities": {"home_win": 33.3, "draw": 33.3, "away_win": 33.3},
-                "value_bet": {"value_index": 0.0, "rating": "UNKNOWN"},
-                "risk_level": "HIGH",
-                "recommendation": "❌ ERROR",
-                "model": "Fallback"
+                'prediction': '1',
+                'confidence': 33.3,
+                'error': 'Complete failure',
+                'fallback': True
             }
+
+
+# Test
+if __name__ == "__main__":
+    engine = MLPredictionEngine()
+    
+    test_match = {
+        'home_team': 'Barcelona',
+        'away_team': 'Real Madrid',
+        'odds': {'1': 2.10, 'X': 3.40, '2': 3.20},
+        'league': 'La Liga'
+    }
+    
+    print("\n" + "="*60)
+    print(f"TEST: {test_match['home_team']} vs {test_match['away_team']}")
+    print("="*60)
+    
+    result = engine.predict_match(
+        test_match['home_team'],
+        test_match['away_team'],
+        test_match['odds'],
+        test_match['league']
+    )
+    
+    print(f"\n🎯 Prediction: {result['prediction']}")
+    print(f"📊 Confidence: {result['confidence']:.1f}%")
+    print(f"⚽ Score: {result['score_prediction']}")
+    print(f"💰 Value Index: {result['value_bet']['value_index']:.3f}")
+    print(f"⚠️ Risk: {result['value_bet']['risk']}")
+    print(f"💡 Recommendation: {result['value_bet']['recommendation']}")
+    
+    if result.get('fallback'):
+        print(f"\n⚠️ FALLBACK: {result.get('fallback_reason')}")
