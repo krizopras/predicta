@@ -86,32 +86,21 @@ tr:hover{background:#0a2243}
 .toast{position:fixed;bottom:16px;left:50%;transform:translateX(-50%);background:#0b213f;border:1px solid var(--b);border-left:4px solid var(--gold);
   color:var(--text);padding:10px 14px;border-radius:12px;box-shadow:var(--shadow);display:none;z-index:60;max-width:90%;font-size:14px}
 .toast.show{display:block}
-.drawer{position:fixed;inset:0;background:rgba(0,0,0,.45);display:none;align-items:center;justify-content:center;z-index:70}
-.drawer.open{display:flex}
-.modal{width:min(720px,92vw);background:#0d1e38;border:1px solid var(--b);border-radius:14px;padding:16px;box-shadow:var(--shadow);max-height:85vh;overflow-y:auto}
-.modal h3{margin:0 0 10px}
-.form{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.form .input,.form .select,textarea{width:100%;background:#0b213f;color:var(--text);border:1px solid var(--b);border-radius:10px;padding:10px}
-.actions-row{display:flex;gap:10px;justify-content:flex-end;margin-top:10px}
 
-footer{color:var(--muted);text-align:center;padding:14px;border-top:1px solid var(--b);margin-top:10px;font-size:13px}
-
-.loading-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.7);display:none;align-items:center;justify-content:center;z-index:100}
+.loading-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.7);display:none;align-items:center;justify-content:center;z-index:100;flex-direction:column;gap:20px}
 .loading-overlay.show{display:flex}
 .spinner{width:50px;height:50px;border:4px solid var(--b);border-top-color:var(--gold);border-radius:50%;animation:spin 1s linear infinite}
 @keyframes spin{to{transform:rotate(360deg)}}
-
-@media (max-width:1100px){
-  .wrap{grid-template-columns:1fr}
-  .kpis{grid-template-columns:1fr 1fr}
-  .actions{justify-content:center}
-}
+.loading-text{font-size:18px;font-weight:600;color:var(--gold);text-align:center;max-width:400px}
+.loading-steps{font-size:14px;color:var(--muted);text-align:center}
 </style>
 </head>
 <body>
 
 <div id="loading" class="loading-overlay">
   <div class="spinner"></div>
+  <div class="loading-text" id="loading-text">Yükleniyor...</div>
+  <div class="loading-steps" id="loading-steps"></div>
 </div>
 
 <div class="topbar">
@@ -121,11 +110,7 @@ footer{color:var(--muted);text-align:center;padding:14px;border-top:1px solid va
     <span id="status" class="status">Bağlanıyor...</span>
   </div>
   <div class="actions">
-    <button class="btn" id="btn-debug" title="Nesine API Debug">🔍 Debug</button>
-    <button class="btn" id="btn-load-history" title="Load Historical Data">📊 History</button>
-    <button class="btn" id="btn-train" title="Train Model">🎯 Train</button>
-    <button class="btn" id="btn-reload" title="Reload Models">🔄 Reload</button>
-    <button class="btn gold" id="btn-settings">⚙ Settings</button>
+    <button class="btn" id="btn-refresh">↻ Yenile</button>
   </div>
 </div>
 
@@ -136,33 +121,15 @@ footer{color:var(--muted);text-align:center;padding:14px;border-top:1px solid va
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M21 21l-4.3-4.3M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15z" stroke="#89a6d6" stroke-width="2" stroke-linecap="round"/></svg>
       <input id="q" placeholder="Lig ara...">
     </div>
-    <div id="leagues" class="leagues">
-      <div class="skel"></div><div class="skel"></div><div class="skel"></div>
-    </div>
+    <div id="leagues" class="leagues"></div>
   </aside>
 
   <section class="main">
     <div class="kpis">
       <div class="kpi"><h4>Bugünkü Maçlar</h4><div class="val" id="kpi-matches">—</div><div class="sub">Nesine bülteni</div></div>
-      <div class="kpi"><h4>Model Doğruluğu</h4><div class="val" id="kpi-acc">—</div><div class="sub">Ensemble model</div></div>
+      <div class="kpi"><h4>Model Doğruluğu</h4><div class="val" id="kpi-acc">—</div><div class="sub">AI Ensemble</div></div>
       <div class="kpi"><h4>En Yüksek Güven</h4><div class="val" id="kpi-top">—</div><div class="sub" id="kpi-top-sub">—</div></div>
-      <div class="kpi"><h4>Son Güncelleme</h4><div class="val" id="kpi-up">—</div><div class="sub">Otomatik yenileme aktif</div></div>
-    </div>
-
-    <div class="filters">
-      <select id="sel-league" class="select"><option value="">Tüm Ligler</option></select>
-      <select id="sel-sort" class="select">
-        <option value="time">Zamana Göre</option>
-        <option value="confidence">Güvene Göre</option>
-        <option value="value">Değere Göre</option>
-      </select>
-      <input id="txt-team" class="input" placeholder="Takım ara...">
-      <label style="display:flex;align-items:center;gap:6px;cursor:pointer;user-select:none">
-        <input type="checkbox" id="chk-filter" style="width:18px;height:18px;cursor:pointer">
-        <span style="font-size:13px">Sadece Büyük Ligler</span>
-      </label>
-      <span class="tag">Model: <b>ML Ensemble</b></span>
-      <button class="btn refresh" id="btn-refresh">↻ Yenile</button>
+      <div class="kpi"><h4>Son Güncelleme</h4><div class="val" id="kpi-up">—</div><div class="sub">Otomatik yenileme</div></div>
     </div>
 
     <div class="card">
@@ -170,399 +137,89 @@ footer{color:var(--muted);text-align:center;padding:14px;border-top:1px solid va
       <div class="table-wrapper">
         <table>
           <thead>
-            <tr>
-              <th style="min-width:260px">Maç</th>
-              <th>MS</th>
-              <th>Skor</th>
-              <th>Güven</th>
-              <th>Değer</th>
-              <th style="width:140px;text-align:right">İşlem</th>
-            </tr>
+            <tr><th>Maç</th><th>MS</th><th>Skor</th><th>Güven</th><th>Değer</th></tr>
           </thead>
-          <tbody id="rows">
-            <tr><td colspan="6"><div class="skel"></div></td></tr>
-            <tr><td colspan="6"><div class="skel"></div></td></tr>
-            <tr><td colspan="6"><div class="skel"></div></td></tr>
-          </tbody>
+          <tbody id="rows"></tbody>
         </table>
       </div>
     </div>
   </section>
 </div>
 
-<footer>© 2025 Predicta Europe ML • Yellow & Blue • Nesine canlı bülten + AI tahminleri</footer>
-
-<div id="drawer" class="drawer">
-  <div class="modal">
-    <h3>⚙ Ayarlar & Toplu Tahmin</h3>
-    <div class="form">
-      <label>Lig Filtresi (opsiyonel)
-        <input id="league-filter" class="input" placeholder="Süper Lig">
-      </label>
-      <label>Otomatik Yenileme (dakika)
-        <input id="auto-min" type="number" min="1" value="5" class="input">
-      </label>
-      <label style="grid-column:1/3">Toplu Tahmin CSV
-        <textarea id="csv" rows="5" class="input" placeholder="home,away,league,1,X,2&#10;Galatasaray,Fenerbahçe,Süper Lig,2.05,3.30,3.40"></textarea>
-      </label>
-    </div>
-    <div class="actions-row">
-      <button class="btn" id="btn-batch">Toplu Tahmin Yap</button>
-      <button class="btn" id="btn-close">Kapat</button>
-    </div>
-  </div>
-</div>
-
-<div id="toast" class="toast">Mesaj</div>
+<footer>© 2025 Predicta Europe ML • Nesine + AI tahminleri</footer>
 
 <script>
-/* ================= Configuration ================= */
-const API_BASE = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
-  ? "http://localhost:8000"
-  : "https://predicta-production.up.railway.app";
-
-const REFRESH_DEFAULT_MIN = 5;
-
+const API_BASE = "https://predicta-production.up.railway.app";
 const $ = s=>document.querySelector(s);
-const rows = $("#rows"), leaguesBox=$("#leagues"), statusEl=$("#status"), loadingEl=$("#loading");
-let ALL_ITEMS=[], FILTERED=[], ALL_LEAGUES=[], CURRENT_LEAGUE="";
-let refreshTimer=null;
+const rows=$("#rows"), leaguesBox=$("#leagues"), statusEl=$("#status");
 
-function toast(msg,type="info"){
-  const el=$("#toast");
-  el.textContent=msg;
-  el.style.borderLeftColor = type==="ok"?"var(--ok)":type==="err"?"var(--err)":"var(--gold)";
-  el.classList.add("show");
-  setTimeout(()=>el.classList.remove("show"),3500);
-}
-function pct(x){return (x!=null && !Number.isNaN(x)) ? (Number(x).toFixed(1)+"%") : "—";}
-function valuePill(v){
-  if(v>=0.12) return '<span class="pill ok">Düşük Risk</span>';
-  if(v>=0.06) return '<span class="pill mid">Orta Risk</span>';
-  return '<span class="pill bad">Yüksek Risk</span>';
-}
-function setStatus(online){
-  statusEl.textContent = online ? "Çevrimiçi" : "Çevrimdışı (API)";
-  statusEl.classList.toggle("online", online);
-}
-function showLoading(show){
-  loadingEl.classList.toggle("show", show);
-}
+function toast(msg){console.log("🔔 "+msg);}
+function setStatus(ok){statusEl.textContent=ok?"Çevrimiçi":"Bağlantı Yok";statusEl.classList.toggle("online",ok);}
+function pct(x){return (x?x.toFixed(1):0)+"%";}
+function valuePill(v){if(v>=0.12)return'<span class="pill ok">Düşük</span>';if(v>=0.06)return'<span class="pill mid">Orta</span>';return'<span class="pill bad">Yüksek</span>';}
 
-/* ================= API ================= */
-async function getJSON(url, init){
-  const r = await fetch(url, init);
-  if(!r.ok) throw new Error(`HTTP ${r.status}`);
-  return await r.json();
-}
+async function getJSON(u,opt){const r=await fetch(u,opt);if(!r.ok)throw new Error(r.status);return await r.json();}
 
-async function fetchLeagues(){
-  const filterEnabled = document.getElementById('chk-filter')?.checked ?? false;
-  const j = await getJSON(API_BASE+"/api/leagues?filter="+filterEnabled);
-  return j.items || [];
+async function autoFlow(){
+ try{
+  setStatus(true);
+  document.title="⏳ Predicta ML Eğitim Başladı";
+  $("#loading").classList.add("show");
+  $("#loading-text").textContent="1/3 Nesine'den maçlar çekiliyor...";
+  await getJSON(API_BASE+"/api/matches/today?filter=false");
+  $("#loading-text").textContent="2/3 Geçmiş maçlar yükleniyor...";
+  await getJSON(API_BASE+"/api/history/load",{method:"POST"});
+  $("#loading-text").textContent="3/3 Model eğitimi başlatılıyor...";
+  await getJSON(API_BASE+"/api/training/start",{method:"POST"});
+  $("#loading-text").textContent="Modeller yükleniyor...";
+  await getJSON(API_BASE+"/api/reload",{method:"POST"});
+  $("#loading").classList.remove("show");
+  toast("✅ Eğitim tamamlandı, tahminler getiriliyor...");
+  await loadAll();
+ }catch(e){console.error(e);$("#loading").classList.remove("show");toast("Hata: "+e.message);}
 }
 
 async function fetchTodayPredict(){
-  const filterEnabled = document.getElementById('chk-filter')?.checked ?? false;
-  const leagueFilter = $("#league-filter")?.value || "";
-  const url = API_BASE + "/api/predict/today" + 
-    "?filter=" + filterEnabled +
-    (leagueFilter ? ("&league="+encodeURIComponent(leagueFilter)) : "");
-  const j = await getJSON(url);
-  return j.items || [];
-}
-
-/* ================= UI ================= */
-function fillLeagues(list){
-  leaguesBox.innerHTML="";
-  ALL_LEAGUES = list || [];
-  
-  const render = items=>{
-    leaguesBox.innerHTML="";
-    if(!items || items.length === 0){
-      leaguesBox.innerHTML = '<div style="padding:10px;color:var(--muted);text-align:center">Lig bulunamadı</div>';
-      return;
-    }
-    
-    items.forEach(league=>{
-      const div=document.createElement("div");
-      div.className="league";
-      const name = league.name || league;
-      const count = league.match_count || 0;
-      div.innerHTML=`
-        <span class="league-name">${name}</span>
-        ${count > 0 ? `<span class="league-count">${count}</span>` : ''}
-        <span style="color:var(--gold)">›</span>
-      `;
-      div.onclick=()=>{
-        CURRENT_LEAGUE = name;
-        $("#sel-league").value = name;
-        leaguesBox.querySelectorAll(".league").forEach(x=>x.classList.remove("active"));
-        div.classList.add("active");
-        applyFilters();
-      };
-      leaguesBox.appendChild(div);
-    });
-  };
-  
-  render(ALL_LEAGUES);
-  
-  $("#q").oninput=e=>{
-    const q=e.target.value.toLowerCase().trim();
-    const filtered = ALL_LEAGUES.filter(x=>{
-      const name = (x.name || x).toLowerCase();
-      return name.includes(q);
-    });
-    render(filtered);
-  };
-  
-  const sel=$("#sel-league");
-  sel.innerHTML='<option value="">Tüm Ligler</option>';
-  ALL_LEAGUES.forEach(lg=>{
-    const name = lg.name || lg;
-    const count = lg.match_count || 0;
-    sel.innerHTML += `<option value="${name}">${name} ${count > 0 ? '('+count+')' : ''}</option>`;
-  });
+ const j=await getJSON(API_BASE+"/api/predict/today?filter=false");
+ return j.items||[];
 }
 
 function fillTable(items){
-  rows.innerHTML="";
-  if(!items.length){ 
-    rows.innerHTML='<tr><td colspan="6" style="text-align:center;padding:30px;color:var(--muted)">Maç bulunamadı.</td></tr>'; 
-    return; 
-  }
-  
-  for(const it of items){
-    const p = it.prediction || {};
-    const pred = p.prediction || p.result || "-";
-    const cls = pred==="1"?"ok":pred==="X"?"mid":pred==="2"?"bad":"";
-    const score = p.score_prediction || "?-?";
-    const conf = p.confidence || 0;
-    const valueIdx = p.value_bet?.value_index || 0;
-    
-    const tr = document.createElement("tr");
-    tr.innerHTML = `
-      <td>
-        <strong>${it.home_team || "?"}</strong> — <strong>${it.away_team || "?"}</strong>
-        <div style="font-size:11px;color:var(--muted);margin-top:4px">${it.league||""} • ${it.time||""}</div>
-      </td>
-      <td><span class="pill ${cls}">${pred}</span></td>
-      <td><span class="score-box">${score}</span></td>
-      <td>${pct(conf)}</td>
-      <td>
-        <span class="odd">${valueIdx.toFixed(2)}</span>
-        <div style="margin-top:6px">${valuePill(valueIdx)}</div>
-      </td>
-      <td style="text-align:right">
-        <button class="btn" onclick='showDetails(${JSON.stringify(it).replace(/'/g,"\\'")})'>📊 Detay</button>
-      </td>
-    `;
-    rows.appendChild(tr);
-  }
-  
-  // KPI güncelle
-  $("#kpi-matches").textContent = items.length;
-  if(items.length > 0){
-    const avgConf = items.reduce((sum, m) => sum + (m.prediction?.confidence || 0), 0) / items.length;
-    $("#kpi-acc").textContent = avgConf.toFixed(1) + "%";
-    
-    const topMatch = items.reduce((max, m) => 
-      (m.prediction?.confidence || 0) > (max.prediction?.confidence || 0) ? m : max
-    , items[0]);
-    
-    $("#kpi-top").textContent = (topMatch.prediction?.confidence || 0).toFixed(1) + "%";
-    $("#kpi-top-sub").textContent = `${topMatch.home_team} - ${topMatch.away_team}`;
-  }
-  
-  $("#kpi-up").textContent = new Date().toLocaleTimeString('tr-TR', {hour:'2-digit', minute:'2-digit'});
-}
-
-function applyFilters(){
-  const league=$("#sel-league").value.trim();
-  const team=$("#txt-team").value.toLowerCase().trim();
-  const sort=$("#sel-sort").value;
-  
-  FILTERED = ALL_ITEMS.filter(m=>{
-    const okL = !league || (m.league||"").toLowerCase()===league.toLowerCase();
-    const okT = !team || (m.home_team||"").toLowerCase().includes(team) || (m.away_team||"").toLowerCase().includes(team);
-    return okL && okT;
-  });
-  
-  const getConf = it => (it.prediction?.confidence)||0;
-  const getVal = it => (it.prediction?.value_bet?.value_index)||0;
-  
-  if(sort==="confidence") FILTERED.sort((a,b)=>getConf(b)-getConf(a));
-  else if(sort==="value") FILTERED.sort((a,b)=>getVal(b)-getVal(a));
-  else FILTERED.sort((a,b)=>String(a.time||"").localeCompare(String(b.time||"")));
-  
-  fillTable(FILTERED);
+ rows.innerHTML="";
+ if(!items.length){rows.innerHTML='<tr><td colspan="5" style="text-align:center;color:var(--muted);padding:20px">Maç bulunamadı</td></tr>';return;}
+ for(const m of items){
+  const p=m.prediction||{};
+  const pred=p.prediction||"-";
+  const cls=pred==="1"?"ok":pred==="X"?"mid":pred==="2"?"bad":"";
+  const score=p.score_prediction||"?-?";
+  const conf=p.confidence||0;
+  const val=p.value_bet?.value_index||0;
+  rows.innerHTML+=`<tr><td><b>${m.home_team}</b> - <b>${m.away_team}</b><div style="font-size:11px;color:var(--muted)">${m.league}</div></td>
+  <td><span class="pill ${cls}">${pred}</span></td>
+  <td><span class="score-box">${score}</span></td>
+  <td>${pct(conf)}</td>
+  <td>${valuePill(val)}</td></tr>`;
+ }
+ $("#kpi-matches").textContent=items.length;
+ $("#kpi-acc").textContent=(items.reduce((a,b)=>a+(b.prediction?.confidence||0),0)/items.length).toFixed(1)+"%";
+ $("#kpi-top").textContent=Math.max(...items.map(i=>i.prediction?.confidence||0)).toFixed(1)+"%";
+ $("#kpi-up").textContent=new Date().toLocaleTimeString('tr-TR',{hour:'2-digit',minute:'2-digit'});
 }
 
 async function loadAll(){
-  showLoading(true);
-  try{
-    const leagues = await fetchLeagues();
-    fillLeagues(leagues);
-    
-    const items = await fetchTodayPredict();
-    
-    if(items.length===0){
-      rows.innerHTML='<tr><td colspan="6" style="text-align:center;padding:30px">⚠️ Bugün maç bulunamadı. Debug butonunu deneyin.</td></tr>';
-      toast("Maç bulunamadı", "warn");
-    } else {
-      ALL_ITEMS = items.map(x=>({...x, league:x.league||"—"}));
-      applyFilters();
-      toast(`${items.length} maç yüklendi`,"ok");
-    }
-  }catch(e){
-    console.error(e);
-    toast("API hatası: "+e.message,"err");
-    rows.innerHTML='<tr><td colspan="6" style="text-align:center;padding:30px;color:var(--err)">❌ API bağlantısı başarısız</td></tr>';
-  }finally{
-    showLoading(false);
-  }
+ try{
+  setStatus(true);
+  $("#loading").classList.add("show");
+  $("#loading-text").textContent="Tahminler yükleniyor...";
+  const items=await fetchTodayPredict();
+  fillTable(items);
+  $("#loading").classList.remove("show");
+  toast("Tahminler güncellendi");
+ }catch(e){setStatus(false);toast("Veri yüklenemedi: "+e.message);}
 }
 
-function showDetails(match){
-  const p = match.prediction || {};
-  let msg = `🏆 ${match.home_team} — ${match.away_team}\n\n`;
-  msg += `Tahmin: ${p.prediction || p.result || "?"}\n`;
-  msg += `Skor: ${p.score_prediction || "?-?"}\n`;
-  msg += `Güven: ${(p.confidence||0).toFixed(1)}%\n`;
-  msg += `Değer: ${(p.value_bet?.value_index||0).toFixed(3)} (${p.value_bet?.rating||"?"})\n`;
-  msg += `Risk: ${p.risk_level || "?"}\n`;
-  msg += `Öneri: ${p.recommendation || "?"}\n\n`;
-  
-  if(p.probabilities){
-    msg += `Olasılıklar:\n`;
-    msg += `  1: ${(p.probabilities.home_win||0).toFixed(1)}%\n`;
-    msg += `  X: ${(p.probabilities.draw||0).toFixed(1)}%\n`;
-    msg += `  2: ${(p.probabilities.away_win||0).toFixed(1)}%\n\n`;
-  }
-  
-  if(p.top3_scores && p.top3_scores.length){
-    msg += `En Olası 3 Skor:\n`;
-    p.top3_scores.forEach((s,i)=>{
-      msg += `  ${i+1}. ${s.score}: ${(s.prob*100).toFixed(1)}%\n`;
-    });
-  }
-  
-  msg += `\nLig: ${match.league || "?"}\n`;
-  msg += `Saat: ${match.time || "?"}\n`;
-  msg += `Oranlar: 1=${match.odds?.['1']} X=${match.odds?.X} 2=${match.odds?.['2']}\n`;
-  msg += `\nModel: ${p.model || "Unknown"}`;
-  
-  alert(msg);
-}
-
-/* Events */
-$("#btn-refresh").onclick = ()=>{
-  toast("Yenileniyor...", "info");
-  loadAll();
-};
-
-$("#btn-reload").onclick = async ()=>{
-  try{
-    await getJSON(API_BASE+"/api/reload");
-    toast("Modeller yeniden yüklendi","ok");
-  }catch(e){
-    toast("Model yükleme hatası","err");
-  }
-};
-
-$("#btn-load-history").onclick = async ()=>{
-  try{
-    const r = await getJSON(API_BASE+"/api/history/load",{method:"POST"});
-    toast(`${r.matches_loaded||0} geçmiş maç yüklendi`,"ok");
-  }catch(e){
-    toast("Geçmiş yükleme hatası","err");
-  }
-};
-
-$("#btn-train").onclick = async ()=>{
-  try{
-    await getJSON(API_BASE+"/api/training/start",{method:"POST"});
-    toast("Eğitim başlatıldı","ok");
-  }catch(e){
-    toast("Eğitim başlatma hatası","err");
-  }
-};
-
-$("#btn-debug").onclick = async ()=>{
-  showLoading(true);
-  try{
-    const data = await getJSON(API_BASE+"/api/debug/nesine-test");
-    let msg = `📊 NESINE API DEBUG\n\n`;
-    msg += `Tarih: ${data.date}\n`;
-    msg += `Toplam Maç: ${data.total_matches}\n`;
-    msg += `Filtrelenmiş: ${data.filtered_matches}\n\n`;
-    msg += `En Çok Maçı Olan Ligler:\n`;
-    const topLeagues = Object.entries(data.leagues || {}).slice(0, 10);
-    topLeagues.forEach(([lg, count]) => {
-      msg += `  ${lg}: ${count}\n`;
-    });
-    alert(msg);
-    toast("Debug bilgisi alındı", "ok");
-  }catch(e){
-    toast("Debug hatası: "+e.message,"err");
-  }finally{
-    showLoading(false);
-  }
-};
-
-$("#btn-settings").onclick = ()=>$("#drawer").classList.add("open");
-$("#btn-close").onclick = ()=>$("#drawer").classList.remove("open");
-
-$("#btn-batch").onclick = async ()=>{
-  const csv=$("#csv").value;
-  if(!csv.trim()){
-    toast("CSV verisi gerekli","err");
-    return;
-  }
-  try{
-    showLoading(true);
-    const data=await getJSON(API_BASE+"/api/predictions/batch",{
-      method:"POST",
-      headers:{"Content-Type":"application/json"},
-      body:JSON.stringify({csv})
-    });
-    ALL_ITEMS=data.items||[];
-    applyFilters();
-    $("#drawer").classList.remove("open");
-    toast(`${data.count||0} maç tahmini hazır`,"ok");
-  }catch(e){
-    toast("Toplu tahmin hatası: "+e.message,"err");
-  }finally{
-    showLoading(false);
-  }
-};
-
-$("#sel-league").onchange = applyFilters;
-$("#sel-sort").onchange = applyFilters;
-$("#txt-team").oninput = applyFilters;
-$("#chk-filter").onchange = ()=>{
-  toast("Filtre değişti, yenileniyor...", "info");
-  setTimeout(loadAll, 300);
-};
-
-/* Init */
-(async function init(){
-  try{
-    const health = await fetch(API_BASE+"/").then(r=>r.json());
-    setStatus(true);
-    console.log("Backend:", health);
-  }catch(e){
-    setStatus(false);
-    toast("Backend'e ulaşılamıyor","err");
-    return;
-  }
-  
-  loadAll();
-  
-  // Otomatik yenileme
-  const autoMin = parseInt($("#auto-min").value) || REFRESH_DEFAULT_MIN;
-  refreshTimer = setInterval(loadAll, autoMin * 60 * 1000);
-})();
+document.getElementById("btn-refresh").onclick=()=>loadAll();
+window.addEventListener("load",()=>autoFlow());
 </script>
 </body>
 </html>
