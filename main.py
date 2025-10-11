@@ -74,6 +74,7 @@ def home():
             "/api/debug/nesine-test",
             "/api/reload",
             "/api/models/info",
+            "/api/models/delete",
             "/api/history/load",
             "/api/training/start"
         ]
@@ -744,6 +745,57 @@ def load_history():
             "status": "error",
             "message": str(e),
             "matches_loaded": 0
+        }), 500
+
+
+@app.route("/api/models/delete", methods=["POST"])
+def delete_models():
+    """Delete existing models to force retraining"""
+    try:
+        import shutil
+        
+        deleted_files = []
+        models_path = Path(MODELS_DIR)
+        
+        if not models_path.exists():
+            return jsonify({
+                "status": "no_models",
+                "message": "No models directory found"
+            })
+        
+        # Delete model files
+        model_files = [
+            "ensemble_models.pkl",
+            "scaler.pkl",
+            "score_model.pkl",
+            "training_metadata.json"
+        ]
+        
+        for file in model_files:
+            file_path = models_path / file
+            if file_path.exists():
+                file_path.unlink()
+                deleted_files.append(file)
+                logger.info(f"🗑️  Deleted: {file}")
+        
+        if deleted_files:
+            return jsonify({
+                "status": "ok",
+                "message": f"Deleted {len(deleted_files)} model files",
+                "deleted_files": deleted_files,
+                "hint": "Now run: POST /api/training/start"
+            })
+        else:
+            return jsonify({
+                "status": "no_files",
+                "message": "No model files found to delete"
+            })
+            
+    except Exception as e:
+        logger.error(f"/api/models/delete error: {e}", exc_info=True)
+        return jsonify({
+            "status": "error",
+            "error": str(e)
         }), 500
 
 
