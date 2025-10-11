@@ -77,6 +77,7 @@ class RailwayOptimizedTrainer:
         self.verbose = verbose
         self.batch_size = batch_size
         self.railway_mode = railway_mode
+        self.version_archive = version_archive 
         
         # Setup logging
         self._setup_logging()
