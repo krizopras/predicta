@@ -664,7 +664,143 @@ def not_found(e):
 def internal_error(e):
     return jsonify({"error": "Sunucu hatası"}), 500
 
-
+# ----------------- OTOMATİK SONUÇ GÜNCELLEMESİ -----------------
+@app.route("/api/predictions/auto-update-results", methods=["POST"])
+def auto_update_results():
+    """
+    Dünün maç sonuçlarını Nesine'den çek ve tahminleri otomatik güncelle
+    + Anlık başarı analizi
+    """
+    try:
+        data = request.get_json(silent=True) or {}
+        
+        # Tarih parametresi (opsiyonel)
+        target_date = data.get("date")
+        if target_date:
+            from datetime import datetime as dt
+            target_date = dt.strptime(target_date, "%Y-%m-%d").date()
+        else:
+            # Varsayılan: dün
+            from datetime import timedelta
+            target_date = date.today() - timedelta(days=1)
+        
+        filter_enabled = data.get("filter", False)
+        
+        logger.info(f"🔄 Otomatik sonuç güncelleme başlatılıyor: {target_date}")
+        
+        # Nesine'den sonuçları çek
+        results = fetch_results_for_date(target_date, filter_leagues=filter_enabled)
+        
+        if not results:
+            return jsonify({
+                "status": "no_data",
+                "message": f"{target_date} için sonuç bulunamadı",
+                "date": str(target_date),
+                "updated_count": 0
+            })
+        
+        logger.info(f"📊 {len(results)} bitmiş maç bulundu")
+        
+        # Her sonucu tracker'a gönder
+        updated_count = 0
+        failed_count = 0
+        failed_matches = []
+        
+        # Anlık doğruluk metrikleri
+        ms_correct = 0
+        score_correct = 0
+        updated_matches_detail = []
+        
+        for result in results:
+            try:
+                success = tracker.update_actual_result(
+                    result['home_team'],
+                    result['away_team'],
+                    result['home_score'],
+                    result['away_score'],
+                    str(target_date)
+                )
+                
+                if success:
+                    updated_count += 1
+                    
+                    # Tahmin dosyasından doğruluğu kontrol et
+                    pred_file = tracker.storage_dir / f"predictions_{target_date}.json"
+                    if pred_file.exists():
+                        with open(pred_file, 'r', encoding='utf-8') as f:
+                            predictions = json.load(f)
+                            
+                        for pred in predictions:
+                            if (pred['match']['home_team'].lower() == result['home_team'].lower() and
+                                pred['match']['away_team'].lower() == result['away_team'].lower()):
+                                
+                                # MS doğruluğu
+                                predicted_ms = pred['prediction']['ms_prediction']
+                                actual_ms = result['result']
+                                ms_match = (predicted_ms == actual_ms)
+                                if ms_match:
+                                    ms_correct += 1
+                                
+                                # Skor doğruluğu
+                                predicted_score = pred['prediction']['score_prediction']
+                                actual_score = result['score']
+                                score_match = (predicted_score == actual_score)
+                                if score_match:
+                                    score_correct += 1
+                                
+                                updated_matches_detail.append({
+                                    'match': f"{result['home_team']} - {result['away_team']}",
+                                    'predicted_ms': predicted_ms,
+                                    'actual_ms': actual_ms,
+                                    'ms_correct': ms_match,
+                                    'predicted_score': predicted_score,
+                                    'actual_score': actual_score,
+                                    'score_correct': score_match,
+                                    'confidence': pred['prediction']['confidence']
+                                })
+                                break
+                    
+                    logger.info(f"   ✅ {result['home_team']} {result['score']} {result['away_team']}")
+                else:
+                    failed_count += 1
+                    failed_matches.append(f"{result['home_team']} - {result['away_team']}")
+                    
+            except Exception as e:
+                failed_count += 1
+                failed_matches.append(f"{result['home_team']} - {result['away_team']} (hata: {str(e)[:30]})")
+                logger.warning(f"   ⚠️ Güncelleme hatası: {result['home_team']} - {result['away_team']}: {e}")
+        
+        # Başarı oranları
+        ms_accuracy = (ms_correct / updated_count * 100) if updated_count > 0 else 0
+        score_accuracy = (score_correct / updated_count * 100) if updated_count > 0 else 0
+        
+        logger.info(f"✅ Güncelleme tamamlandı: {updated_count} başarılı, {failed_count} başarısız")
+        logger.info(f"📊 MS Doğruluğu: {ms_accuracy:.1f}% ({ms_correct}/{updated_count})")
+        logger.info(f"⚽ Skor Doğruluğu: {score_accuracy:.1f}% ({score_correct}/{updated_count})")
+        
+        return jsonify({
+            "status": "ok",
+            "message": f"{updated_count}/{len(results)} maç sonucu güncellendi",
+            "date": str(target_date),
+            "total_results": len(results),
+            "updated_count": updated_count,
+            "failed_count": failed_count,
+            "failed_matches": failed_matches[:10],  # İlk 10 başarısız
+            "accuracy": {
+                "ms_correct": ms_correct,
+                "ms_accuracy": round(ms_accuracy, 2),
+                "score_correct": score_correct,
+                "score_accuracy": round(score_accuracy, 2)
+            },
+            "details": updated_matches_detail[:20]  # İlk 20 detay
+        })
+        
+    except Exception as e:
+        logger.error(f"/api/predictions/auto-update-results error: {e}", exc_info=True)
+        return jsonify({
+            "status": "error",
+            "error": str(e)
+        }), 500
 # ======================================================
 # RUN
 # ======================================================
