@@ -12,7 +12,7 @@ from flask_cors import CORS
 
 # ========== ML & Nesine imports ==========
 from ml_prediction_engine import MLPredictionEngine
-from nesine_fetcher import fetch_bulletin, fetch_today
+from nesine_fetcher import fetch_bulletin, fetch_today, fetch_yesterday_results, fetch_results_for_date
 from historical_processor import HistoricalDataProcessor
 from prediction_tracker import PredictionTracker
 
