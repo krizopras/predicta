@@ -798,9 +798,158 @@ def delete_models():
         }), 500
 
 
-@app.route("/api/training/start", methods=["POST"])
+@app.route("/api/training/start", methods=["GET", "POST"])  # ✅ GET eklendi
 def start_training():
     """Start model training in background"""
+    
+    # ✅ GET request - tarayıcı için HTML arayüz
+    if request.method == "GET":
+        return """
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Predicta Training</title>
+            <meta charset="utf-8">
+            <style>
+                body { 
+                    font-family: 'Segoe UI', Arial, sans-serif; 
+                    max-width: 700px; 
+                    margin: 50px auto; 
+                    padding: 30px;
+                    background: #f5f5f5;
+                }
+                .container {
+                    background: white;
+                    padding: 30px;
+                    border-radius: 10px;
+                    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+                }
+                h1 { color: #333; margin-top: 0; }
+                button { 
+                    background: #4CAF50; 
+                    color: white; 
+                    padding: 15px 40px; 
+                    border: none; 
+                    border-radius: 8px; 
+                    font-size: 18px; 
+                    cursor: pointer;
+                    font-weight: bold;
+                    transition: all 0.3s;
+                }
+                button:hover { 
+                    background: #45a049;
+                    transform: translateY(-2px);
+                    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+                }
+                button:disabled {
+                    background: #ccc;
+                    cursor: not-allowed;
+                    transform: none;
+                }
+                .info { 
+                    background: #e3f2fd; 
+                    padding: 20px; 
+                    border-radius: 8px; 
+                    margin: 20px 0;
+                    border-left: 4px solid #2196F3;
+                }
+                .info p { margin: 8px 0; }
+                .warning {
+                    background: #fff3cd;
+                    padding: 15px;
+                    border-radius: 8px;
+                    margin: 20px 0;
+                    border-left: 4px solid #ffc107;
+                }
+                #result { margin-top: 20px; }
+                .success {
+                    background: #d4edda;
+                    color: #155724;
+                    padding: 15px;
+                    border-radius: 8px;
+                    border-left: 4px solid #28a745;
+                }
+                .error {
+                    background: #f8d7da;
+                    color: #721c24;
+                    padding: 15px;
+                    border-radius: 8px;
+                    border-left: 4px solid #dc3545;
+                }
+                .loading {
+                    background: #cce5ff;
+                    color: #004085;
+                    padding: 15px;
+                    border-radius: 8px;
+                    border-left: 4px solid #007bff;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <h1>🚂 Predicta Model Training</h1>
+                
+                <div class="info">
+                    <p><strong>📊 Durum:</strong> Hazır</p>
+                    <p><strong>🔧 Sklearn Version:</strong> 1.3.2</p>
+                    <p><strong>🚀 Railway Mode:</strong> Aktif</p>
+                    <p><strong>⏱️ Tahmini Süre:</strong> 10-15 dakika</p>
+                </div>
+                
+                <div class="warning">
+                    <strong>⚠️ Uyarı:</strong> Eğitim sırasında Railway loglarını takip edin.
+                    Eğitim tamamlanana kadar sayfayı kapatabilirsiniz.
+                </div>
+                
+                <button id="trainBtn" onclick="startTraining()">
+                    🎯 Eğitimi Başlat
+                </button>
+                
+                <div id="result"></div>
+            </div>
+            
+            <script>
+                function startTraining() {
+                    const btn = document.getElementById('trainBtn');
+                    const result = document.getElementById('result');
+                    
+                    btn.disabled = true;
+                    btn.textContent = '⏳ Başlatılıyor...';
+                    
+                    result.innerHTML = '<div class="loading">⏳ Eğitim başlatılıyor...</div>';
+                    
+                    fetch('/api/training/start', { 
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' }
+                    })
+                    .then(r => r.json())
+                    .then(data => {
+                        result.innerHTML = 
+                            '<div class="success">' +
+                            '<strong>✅ ' + data.message + '</strong><br><br>' +
+                            '📋 ' + data.hint + '<br><br>' +
+                            '🔍 Railway dashboard\'tan logları takip edebilirsiniz.<br>' +
+                            '📊 Durumu kontrol: <a href="/api/models/info" target="_blank">/api/models/info</a>' +
+                            '</div>';
+                        
+                        btn.textContent = '✅ Başlatıldı';
+                    })
+                    .catch(err => {
+                        result.innerHTML = 
+                            '<div class="error">' +
+                            '<strong>❌ Hata:</strong><br>' + err +
+                            '</div>';
+                        
+                        btn.disabled = false;
+                        btn.textContent = '🎯 Eğitimi Başlat';
+                    });
+                }
+            </script>
+        </body>
+        </html>
+        """
+    
+    # POST request - mevcut training logic
     import threading
     
     def train_background():
@@ -844,8 +993,6 @@ def start_training():
         "message": "Training started in background",
         "hint": "May take 10-15 minutes. Check with /api/models/info"
     })
-
-
 # ======================================================
 # ERROR HANDLING
 # ======================================================
