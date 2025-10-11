@@ -798,7 +798,7 @@ def delete_models():
         }), 500
 
 
-@app.route("/api/training/start", methods=["GET", "POST"])  # ✅ GET eklendi
+@app.route("/api/training/start", methods=["GET", "POST"])
 def start_training():
     """Start model training in background"""
     
@@ -835,16 +835,12 @@ def start_training():
                     cursor: pointer;
                     font-weight: bold;
                     transition: all 0.3s;
+                    width: 100%;
                 }
                 button:hover { 
                     background: #45a049;
                     transform: translateY(-2px);
                     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-                }
-                button:disabled {
-                    background: #ccc;
-                    cursor: not-allowed;
-                    transform: none;
                 }
                 .info { 
                     background: #e3f2fd; 
@@ -861,28 +857,6 @@ def start_training():
                     margin: 20px 0;
                     border-left: 4px solid #ffc107;
                 }
-                #result { margin-top: 20px; }
-                .success {
-                    background: #d4edda;
-                    color: #155724;
-                    padding: 15px;
-                    border-radius: 8px;
-                    border-left: 4px solid #28a745;
-                }
-                .error {
-                    background: #f8d7da;
-                    color: #721c24;
-                    padding: 15px;
-                    border-radius: 8px;
-                    border-left: 4px solid #dc3545;
-                }
-                .loading {
-                    background: #cce5ff;
-                    color: #004085;
-                    padding: 15px;
-                    border-radius: 8px;
-                    border-left: 4px solid #007bff;
-                }
             </style>
         </head>
         <body>
@@ -897,69 +871,28 @@ def start_training():
                 </div>
                 
                 <div class="warning">
-                    <strong>⚠️ Uyarı:</strong> Eğitim sırasında Railway loglarını takip edin.
-                    Eğitim tamamlanana kadar sayfayı kapatabilirsiniz.
+                    <strong>⚠️ Uyarı:</strong> Butona tıkladıktan sonra Railway loglarını takip edin.
+                    Eğitim arka planda devam edecek.
                 </div>
                 
-                <button id="trainBtn" onclick="startTraining()">
-                    🎯 Eğitimi Başlat
-                </button>
-                
-                <div id="result"></div>
+                <form method="POST" action="/api/training/start" 
+                      onsubmit="return confirm('⚠️ Eğitimi başlatmak istediğinize emin misiniz?\\n\\n⏱️ İşlem 10-15 dakika sürecek.');">
+                    <button type="submit">🎯 Eğitimi Başlat</button>
+                </form>
             </div>
-            
-            <script>
-                function startTraining() {
-                    const btn = document.getElementById('trainBtn');
-                    const result = document.getElementById('result');
-                    
-                    btn.disabled = true;
-                    btn.textContent = '⏳ Başlatılıyor...';
-                    
-                    result.innerHTML = '<div class="loading">⏳ Eğitim başlatılıyor...</div>';
-                    
-                    fetch('/api/training/start', { 
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' }
-                    })
-                    .then(r => r.json())
-                    .then(data => {
-                        result.innerHTML = 
-                            '<div class="success">' +
-                            '<strong>✅ ' + data.message + '</strong><br><br>' +
-                            '📋 ' + data.hint + '<br><br>' +
-                            '🔍 Railway dashboard\'tan logları takip edebilirsiniz.<br>' +
-                            '📊 Durumu kontrol: <a href="/api/models/info" target="_blank">/api/models/info</a>' +
-                            '</div>';
-                        
-                        btn.textContent = '✅ Başlatıldı';
-                    })
-                    .catch(err => {
-                        result.innerHTML = 
-                            '<div class="error">' +
-                            '<strong>❌ Hata:</strong><br>' + err +
-                            '</div>';
-                        
-                        btn.disabled = false;
-                        btn.textContent = '🎯 Eğitimi Başlat';
-                    });
-                }
-            </script>
         </body>
         </html>
         """
     
-    # POST request - mevcut training logic
+    # POST request - training başlat
     import threading
     
     def train_background():
         try:
             logger.info("🎯 Training started")
             
-            # ✅ Import from model_trainer
             from model_trainer import ProductionModelTrainer
             
-            # ✅ Correct parameters matching ProductionModelTrainer.__init__
             trainer = ProductionModelTrainer(
                 models_dir=MODELS_DIR,
                 raw_data_path=RAW_DATA_PATH,
@@ -967,7 +900,7 @@ def start_training():
                 min_matches=50,
                 test_size=0.2,
                 random_state=42,
-                version_archive=False,  # Don't create versioned backup
+                version_archive=False,
                 verbose=True
             )
             
@@ -975,7 +908,6 @@ def start_training():
             
             if result.get('success'):
                 logger.info("✅ Training completed!")
-                # Reload models
                 engine.load_models()
                 logger.info("✅ Models reloaded successfully")
             else:
@@ -988,11 +920,58 @@ def start_training():
     thread = threading.Thread(target=train_background, daemon=True)
     thread.start()
     
-    return jsonify({
-        "status": "ok",
-        "message": "Training started in background",
-        "hint": "May take 10-15 minutes. Check with /api/models/info"
-    })
+    # ✅ HTML response (tarayıcı için)
+    return """
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Training Started</title>
+        <meta charset="utf-8">
+        <meta http-equiv="refresh" content="5;url=/api/training/start">
+        <style>
+            body { 
+                font-family: 'Segoe UI', Arial; 
+                max-width: 600px; 
+                margin: 100px auto; 
+                text-align: center;
+                padding: 30px;
+                background: #f5f5f5;
+            }
+            .success {
+                background: white;
+                padding: 40px;
+                border-radius: 10px;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            }
+            .icon { font-size: 64px; margin-bottom: 20px; }
+            h1 { color: #28a745; margin: 20px 0; }
+            p { color: #666; line-height: 1.8; }
+            .highlight { 
+                background: #e3f2fd; 
+                padding: 15px; 
+                border-radius: 8px;
+                margin: 20px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="success">
+            <div class="icon">✅</div>
+            <h1>Eğitim Başlatıldı!</h1>
+            
+            <div class="highlight">
+                <p><strong>⏱️ Tahmini Süre:</strong> 10-15 dakika</p>
+                <p><strong>📋 Durum:</strong> Arka planda çalışıyor</p>
+            </div>
+            
+            <p>🔍 Railway dashboard'tan logları takip edebilirsiniz</p>
+            <p>📊 <a href="/api/models/info" target="_blank">Model durumunu kontrol et</a></p>
+            
+            <p><small style="color: #999;">5 saniye içinde ana sayfaya yönlendirileceksiniz...</small></p>
+        </div>
+    </body>
+    </html>
+    """, 200, {'Content-Type': 'text/html; charset=utf-8'}
 # ======================================================
 # ERROR HANDLING
 # ======================================================
