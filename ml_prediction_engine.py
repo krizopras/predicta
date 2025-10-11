@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """
-ML Prediction Engine - FIXED VERSION
-Scaler yükleme problemi çözüldü
+ML Prediction Engine with Sklearn Compatibility Fix
 """
 
 import os
@@ -9,356 +8,341 @@ import pickle
 import logging
 import numpy as np
 from pathlib import Path
-from typing import Dict, Any, Optional, Tuple, List
+from typing import Dict, List, Optional, Any
 
-from advanced_feature_engineer import AdvancedFeatureEngineer
-from score_predictor import ScorePredictor
+# ML imports
+try:
+    import sklearn
+    from sklearn.preprocessing import StandardScaler
+    # Sklearn version check
+    SKLEARN_VERSION = tuple(map(int, sklearn.__version__.split('.')[:2]))
+    logging.info(f"Sklearn version: {sklearn.__version__}")
+except ImportError:
+    logging.error("Sklearn not available")
+    SKLEARN_VERSION = (0, 0)
 
-logging.basicConfig(level=logging.INFO, format="[%(name)s] %(message)s")
 logger = logging.getLogger("MLEngine")
 
 
+class SklearnCompatLoader:
+    """Sklearn version uyumsuzluklarını handle eder"""
+    
+    @staticmethod
+    def safe_load_pickle(file_path: Path):
+        """
+        Sklearn modelleri için güvenli pickle yükleme
+        Versiyon uyumsuzluklarını handle eder
+        """
+        try:
+            with open(file_path, 'rb') as f:
+                # Normal yükleme dene
+                return pickle.load(f)
+        except (ValueError, AttributeError) as e:
+            if "node array" in str(e) or "dtype" in str(e):
+                logger.warning(f"Sklearn uyumsuzluğu tespit edildi: {e}")
+                logger.warning("Model dosyası eski sklearn versiyonuyla kaydedilmiş")
+                logger.warning("Çözüm: Modelleri yeniden eğitin (Training endpoint)")
+                return None
+            raise
+
+
 class MLPredictionEngine:
-    """Production ML Engine with fixed scaler loading"""
+    """ML Prediction Engine with version compatibility"""
     
     def __init__(self, model_path: str = "data/ai_models_v2"):
-        self.model_path = model_path
-        os.makedirs(model_path, exist_ok=True)
-        
-        # Components
-        self.feature_engineer = AdvancedFeatureEngineer(model_path=model_path)
-        self.score_predictor = ScorePredictor(models_dir=model_path)
+        self.model_path = Path(model_path)
+        self.model_path.mkdir(parents=True, exist_ok=True)
         
         # Models
         self.models = {
             'xgboost': None,
-            'random_forest': None,
-            'gradient_boost': None
+            'gradient_boost': None,
+            'random_forest': None
         }
-        self.scaler = None
+        self.scaler = StandardScaler()
+        self.score_predictor = None
         self.is_trained = False
         
-        # Load models
-        self._load_models()
-    
-    def _load_models(self) -> bool:
-        """Load all models with proper error handling"""
+        # Feature engineer
         try:
-            # 1. MS Models
-            ms_path = Path(self.model_path) / "ensemble_models.pkl"
+            from advanced_feature_engineer import AdvancedFeatureEngineer
+            self.feature_engineer = AdvancedFeatureEngineer(model_path=str(self.model_path))
+        except ImportError:
+            logger.error("AdvancedFeatureEngineer not found")
+            self.feature_engineer = None
+        
+        # Load models
+        self.load_models()
+    
+    def load_models(self) -> bool:
+        """Load models with compatibility handling"""
+        logger.info("🔄 Loading ML models...")
+        
+        try:
+            # MS Models
+            ms_path = self.model_path / "ensemble_models.pkl"
             if not ms_path.exists():
-                logger.warning(f"⚠️ MS models not found: {ms_path}")
+                logger.warning(f"⚠️ Model file not found: {ms_path}")
+                logger.warning("💡 Please train models first: POST /api/training/start")
                 return False
             
-            file_size = ms_path.stat().st_size
-            if file_size < 1000:
-                logger.error(f"❌ Corrupted MS models file ({file_size} bytes)")
+            logger.info(f"📂 Loading from: {ms_path}")
+            
+            # Uyumlu yükleme
+            ms_data = SklearnCompatLoader.safe_load_pickle(ms_path)
+            
+            if ms_data is None:
+                logger.error("❌ Model loading failed due to sklearn incompatibility")
+                logger.error("🔧 Solution: Retrain models with current sklearn version")
+                logger.error("   Run: POST /api/training/start")
                 return False
             
-            with open(ms_path, 'rb') as f:
-                ms_data = pickle.load(f)
+            if isinstance(ms_data, dict):
+                self.models = ms_data.get('models', {})
+                self.scaler = ms_data.get('scaler', StandardScaler())
+                self.is_trained = ms_data.get('is_trained', False)
+                
+                # Modelleri kontrol et
+                loaded_models = [name for name, model in self.models.items() if model is not None]
+                logger.info(f"✅ Loaded MS models: {', '.join(loaded_models)}")
             
-            self.models = ms_data.get('models', {})
-            logger.info(f"✅ MS models loaded ({file_size:,} bytes)")
+            # Score Model
+            score_path = self.model_path / "score_model.pkl"
+            if score_path.exists():
+                score_data = SklearnCompatLoader.safe_load_pickle(score_path)
+                
+                if score_data and isinstance(score_data, dict):
+                    try:
+                        from score_predictor import ScorePredictor
+                        self.score_predictor = ScorePredictor()
+                        self.score_predictor.model = score_data.get('model')
+                        self.score_predictor.space = score_data.get('score_space', [])
+                        logger.info(f"✅ Score model loaded ({len(self.score_predictor.space)} classes)")
+                    except ImportError:
+                        logger.warning("⚠️ ScorePredictor not available")
             
-            # 2. Scaler (AYRI DOSYA)
-            scaler_path = Path(self.model_path) / "scaler.pkl"
-            if not scaler_path.exists():
-                logger.warning(f"⚠️ Scaler not found: {scaler_path}")
-                # Fallback: sklearn StandardScaler oluştur
-                from sklearn.preprocessing import StandardScaler
-                self.scaler = StandardScaler()
-                logger.info("ℹ️ Using default StandardScaler")
-            else:
-                file_size = scaler_path.stat().st_size
-                if file_size < 50:
-                    logger.error(f"❌ Corrupted scaler file ({file_size} bytes)")
-                    from sklearn.preprocessing import StandardScaler
-                    self.scaler = StandardScaler()
-                else:
-                    with open(scaler_path, 'rb') as f:
-                        self.scaler = pickle.load(f)
-                    logger.info(f"✅ Scaler loaded ({file_size:,} bytes)")
+            # Scaler
+            scaler_path = self.model_path / "scaler.pkl"
+            if scaler_path.exists():
+                scaler_data = SklearnCompatLoader.safe_load_pickle(scaler_path)
+                if scaler_data:
+                    self.scaler = scaler_data
+                    logger.info("✅ Scaler loaded")
             
-            # 3. Check if models are valid
-            valid_models = sum(1 for m in self.models.values() if m is not None)
-            if valid_models == 0:
-                logger.error("❌ No valid MS models found")
-                return False
+            return len([m for m in self.models.values() if m is not None]) > 0
             
-            self.is_trained = True
-            logger.info(f"✅ Engine ready ({valid_models}/3 models)")
-            return True
-            
+        except FileNotFoundError as e:
+            logger.error(f"❌ Model file not found: {e}")
+            return False
         except Exception as e:
             logger.error(f"❌ Model loading error: {e}", exc_info=True)
             return False
-    
-    def load_models(self) -> bool:
-        """Public method to reload models"""
-        return self._load_models()
     
     def predict_match(
         self, 
         home_team: str, 
         away_team: str, 
-        odds: Dict[str, float], 
+        odds: Dict[str, float],
         league: str = "Unknown"
     ) -> Dict[str, Any]:
         """
-        Predict match outcome with comprehensive error handling
-        
-        Args:
-            home_team: Home team name
-            away_team: Away team name
-            odds: {"1": float, "X": float, "2": float}
-            league: League name
+        Predict match outcome
         
         Returns:
-            Prediction dictionary with result, confidence, score, etc.
+            {
+                "prediction": "1" | "X" | "2",
+                "confidence": float (0-100),
+                "probabilities": {"1": float, "X": float, "2": float},
+                "score_prediction": "2-1",
+                "alternative_scores": [...],
+                "value_bet": {...}
+            }
         """
+        if not self.is_trained or not any(self.models.values()):
+            return {
+                "error": "Models not trained",
+                "prediction": "X",
+                "confidence": 0,
+                "probabilities": {"1": 33.3, "X": 33.3, "2": 33.3},
+                "score_prediction": "1-1",
+                "value_bet": {"value_index": 0, "risk": "Unknown", "recommendation": "Model not trained"}
+            }
+        
         try:
-            if not self.is_trained:
-                return self._fallback_prediction(home_team, away_team, odds, "Models not trained")
-            
-            # Prepare match data
+            # Extract features
             match_data = {
                 'home_team': home_team,
                 'away_team': away_team,
-                'league': league,
                 'odds': odds,
-                'date': '2025-10-10'
+                'league': league
             }
             
-            # Extract features
             features = self.feature_engineer.extract_features(match_data)
+            
             if features is None:
-                return self._fallback_prediction(home_team, away_team, odds, "Feature extraction failed")
+                raise ValueError("Feature extraction failed")
             
-            # Scale features
-            try:
-                if self.scaler is not None and hasattr(self.scaler, 'mean_'):
-                    features_scaled = self.scaler.transform(features.reshape(1, -1))
-                else:
-                    # Scaler fitted değilse, features'ı olduğu gibi kullan
-                    logger.warning("⚠️ Scaler not fitted, using raw features")
-                    features_scaled = features.reshape(1, -1)
-            except Exception as e:
-                logger.warning(f"⚠️ Scaling error: {e}, using raw features")
-                features_scaled = features.reshape(1, -1)
+            # NaN/Inf handling
+            features = np.nan_to_num(features, nan=0.0, posinf=0.0, neginf=0.0)
+            features = features.reshape(1, -1)
             
-            # Get predictions from all models
-            predictions = {}
+            # Scale
+            if hasattr(self.scaler, 'mean_') and self.scaler.mean_ is not None:
+                features_scaled = self.scaler.transform(features)
+            else:
+                features_scaled = features
+            
+            # Ensemble prediction
+            predictions = []
+            confidences = []
+            
             for name, model in self.models.items():
-                if model is not None:
-                    try:
-                        proba = model.predict_proba(features_scaled)[0]
-                        predictions[name] = proba
-                    except Exception as e:
-                        logger.warning(f"⚠️ {name} prediction failed: {e}")
+                if model is None:
+                    continue
+                
+                try:
+                    proba = model.predict_proba(features_scaled)[0]
+                    predictions.append(proba)
+                    confidences.append(max(proba))
+                except Exception as e:
+                    logger.warning(f"⚠️ {name} prediction failed: {e}")
+                    continue
             
             if not predictions:
-                return self._fallback_prediction(home_team, away_team, odds, "All models failed")
+                raise ValueError("No models available for prediction")
             
-            # Ensemble prediction (weighted average)
-            weights = {
-                'xgboost': 0.40,
-                'random_forest': 0.30,
-                'gradient_boost': 0.30
+            # Average probabilities
+            avg_proba = np.mean(predictions, axis=0)
+            predicted_class = int(np.argmax(avg_proba))
+            confidence = float(np.max(avg_proba) * 100)
+            
+            ms_map = {0: "1", 1: "X", 2: "2"}
+            predicted_result = ms_map[predicted_class]
+            
+            probabilities = {
+                "1": float(avg_proba[0] * 100),
+                "X": float(avg_proba[1] * 100),
+                "2": float(avg_proba[2] * 100)
             }
             
-            ensemble_proba = np.zeros(3)
-            total_weight = 0
-            
-            for name, proba in predictions.items():
-                weight = weights.get(name, 0.33)
-                ensemble_proba += proba * weight
-                total_weight += weight
-            
-            if total_weight > 0:
-                ensemble_proba /= total_weight
-            
-            # Get result
-            result_idx = int(np.argmax(ensemble_proba))
-            result_map = {0: '1', 1: 'X', 2: '2'}
-            result = result_map[result_idx]
-            confidence = float(ensemble_proba[result_idx]) * 100
-            
             # Score prediction
-            score, top3_scores = self.score_predictor.predict(match_data, ms_pred=result)
+            score_pred = "1-1"
+            alt_scores = []
+            
+            if self.score_predictor and self.score_predictor.model:
+                try:
+                    score_pred, alt_scores = self.score_predictor.predict_score(
+                        features_scaled, predicted_result
+                    )
+                except Exception as e:
+                    logger.warning(f"⚠️ Score prediction failed: {e}")
             
             # Value bet analysis
-            value_bet = self._calculate_value_bet(result, confidence, odds)
+            value_bet = self._calculate_value_bet(probabilities, odds, confidence)
             
             return {
-                'prediction': result,
-                'result': result,  # Legacy compatibility
-                'confidence': confidence,
-                'probabilities': {
-                    '1': float(ensemble_proba[0]) * 100,
-                    'X': float(ensemble_proba[1]) * 100,
-                    '2': float(ensemble_proba[2]) * 100
-                },
-                'score_prediction': score,
-                'alternative_scores': top3_scores,
-                'value_bet': value_bet,
-                'model_predictions': {
-                    name: {
-                        '1': float(proba[0]) * 100,
-                        'X': float(proba[1]) * 100,
-                        '2': float(proba[2]) * 100
-                    }
-                    for name, proba in predictions.items()
-                }
+                "prediction": predicted_result,
+                "confidence": round(confidence, 2),
+                "probabilities": {k: round(v, 2) for k, v in probabilities.items()},
+                "score_prediction": score_pred,
+                "alternative_scores": alt_scores[:3],
+                "value_bet": value_bet
             }
             
         except Exception as e:
             logger.error(f"❌ Prediction error: {e}", exc_info=True)
-            return self._fallback_prediction(home_team, away_team, odds, str(e))
+            return {
+                "error": str(e),
+                "prediction": "X",
+                "confidence": 0,
+                "probabilities": {"1": 33.3, "X": 33.3, "2": 33.3},
+                "score_prediction": "1-1",
+                "value_bet": {"value_index": 0, "risk": "Error", "recommendation": str(e)}
+            }
     
     def _calculate_value_bet(
         self, 
-        prediction: str, 
-        confidence: float, 
-        odds: Dict[str, float]
+        probabilities: Dict[str, float], 
+        odds: Dict[str, float],
+        confidence: float
     ) -> Dict[str, Any]:
-        """Calculate value bet metrics"""
+        """Calculate value bet index"""
         try:
-            predicted_odd = float(odds.get(prediction, 2.0))
+            value_bets = {}
             
-            # Model probability
-            model_prob = confidence / 100.0
+            for outcome in ["1", "X", "2"]:
+                prob = probabilities.get(outcome, 0) / 100.0
+                odd = float(odds.get(outcome, 1.0))
+                
+                if prob > 0 and odd > 1.0:
+                    expected_value = (prob * odd) - 1.0
+                    value_bets[outcome] = expected_value
             
-            # Implied probability from odds
-            implied_prob = 1.0 / predicted_odd if predicted_odd > 1.01 else 0.5
+            if not value_bets:
+                return {
+                    "value_index": 0,
+                    "risk": "Unknown",
+                    "recommendation": "No value detected"
+                }
             
-            # Value index
-            value_index = (model_prob * predicted_odd) - 1.0
+            best_outcome = max(value_bets, key=value_bets.get)
+            best_value = value_bets[best_outcome]
             
             # Risk assessment
-            if value_index >= 0.15:
+            if best_value >= 0.15:
                 risk = "Low Risk"
-                recommendation = "Strong Bet"
-            elif value_index >= 0.08:
+                rec = "Excellent Value Bet"
+            elif best_value >= 0.10:
                 risk = "Medium Risk"
-                recommendation = "Good Bet"
-            elif value_index >= 0.03:
-                risk = "Higher Risk"
-                recommendation = "Marginal Bet"
+                rec = "Good Value Bet"
+            elif best_value >= 0.05:
+                risk = "Medium Risk"
+                rec = "Moderate Value"
             else:
                 risk = "High Risk"
-                recommendation = "Avoid"
+                rec = "Low Value"
             
             return {
-                'value_index': round(value_index, 3),
-                'predicted_odd': predicted_odd,
-                'model_probability': round(model_prob, 3),
-                'implied_probability': round(implied_prob, 3),
-                'edge': round((model_prob - implied_prob) * 100, 2),
-                'risk': risk,
-                'recommendation': recommendation
+                "value_index": round(best_value, 3),
+                "best_outcome": best_outcome,
+                "risk": risk,
+                "recommendation": rec,
+                "confidence_factor": round(confidence / 100.0, 2)
             }
             
         except Exception as e:
-            logger.warning(f"⚠️ Value bet calculation error: {e}")
+            logger.error(f"Value bet calculation error: {e}")
             return {
-                'value_index': 0.0,
-                'risk': "Unknown",
-                'recommendation': "No Data"
-            }
-    
-    def _fallback_prediction(
-        self, 
-        home_team: str, 
-        away_team: str, 
-        odds: Dict[str, float],
-        reason: str
-    ) -> Dict[str, Any]:
-        """Fallback prediction based on odds"""
-        try:
-            # Find favorite based on odds
-            odds_1 = float(odds.get("1", 2.0))
-            odds_x = float(odds.get("X", 3.0))
-            odds_2 = float(odds.get("2", 3.5))
-            
-            if odds_1 < odds_x and odds_1 < odds_2:
-                result = "1"
-                confidence = 55.0
-            elif odds_2 < odds_1 and odds_2 < odds_x:
-                result = "2"
-                confidence = 50.0
-            else:
-                result = "X"
-                confidence = 45.0
-            
-            # Simple score prediction
-            if result == "1":
-                score = "2-1"
-            elif result == "X":
-                score = "1-1"
-            else:
-                score = "1-2"
-            
-            return {
-                'prediction': result,
-                'result': result,
-                'confidence': confidence,
-                'probabilities': {
-                    '1': 33.3,
-                    'X': 33.3,
-                    '2': 33.4
-                },
-                'score_prediction': score,
-                'alternative_scores': [
-                    {'score': score, 'prob': 0.33}
-                ],
-                'value_bet': {
-                    'value_index': 0.0,
-                    'risk': 'Unknown',
-                    'recommendation': 'Fallback Prediction'
-                },
-                'fallback': True,
-                'fallback_reason': reason
-            }
-            
-        except Exception as e:
-            logger.error(f"❌ Fallback prediction error: {e}")
-            return {
-                'prediction': '1',
-                'confidence': 33.3,
-                'error': 'Complete failure',
-                'fallback': True
+                "value_index": 0,
+                "risk": "Error",
+                "recommendation": str(e)
             }
 
 
 # Test
 if __name__ == "__main__":
+    logging.basicConfig(level=logging.INFO)
+    
     engine = MLPredictionEngine()
     
-    test_match = {
-        'home_team': 'Barcelona',
-        'away_team': 'Real Madrid',
-        'odds': {'1': 2.10, 'X': 3.40, '2': 3.20},
-        'league': 'La Liga'
-    }
+    print(f"\n{'='*60}")
+    print(f"Sklearn Version: {sklearn.__version__}")
+    print(f"Models Trained: {engine.is_trained}")
+    print(f"Available Models: {[n for n, m in engine.models.items() if m is not None]}")
+    print(f"{'='*60}\n")
     
-    print("\n" + "="*60)
-    print(f"TEST: {test_match['home_team']} vs {test_match['away_team']}")
-    print("="*60)
-    
-    result = engine.predict_match(
-        test_match['home_team'],
-        test_match['away_team'],
-        test_match['odds'],
-        test_match['league']
-    )
-    
-    print(f"\n🎯 Prediction: {result['prediction']}")
-    print(f"📊 Confidence: {result['confidence']:.1f}%")
-    print(f"⚽ Score: {result['score_prediction']}")
-    print(f"💰 Value Index: {result['value_bet']['value_index']:.3f}")
-    print(f"⚠️ Risk: {result['value_bet']['risk']}")
-    print(f"💡 Recommendation: {result['value_bet']['recommendation']}")
-    
-    if result.get('fallback'):
-        print(f"\n⚠️ FALLBACK: {result.get('fallback_reason')}")
+    if not engine.is_trained:
+        print("⚠️  Models not trained!")
+        print("💡 Run training: POST /api/training/start")
+    else:
+        # Test prediction
+        test_result = engine.predict_match(
+            "Barcelona", "Real Madrid",
+            {"1": 2.10, "X": 3.40, "2": 3.20},
+            "La Liga"
+        )
+        
+        print("Test Prediction:")
+        print(f"  Result: {test_result['prediction']}")
+        print(f"  Confidence: {test_result['confidence']}%")
+        print(f"  Score: {test_result['score_prediction']}")
