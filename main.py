@@ -615,32 +615,36 @@ def start_training():
     """Model eğitimini arka planda başlat"""
     import threading
     
-    def train_background():
-        try:
-            logger.info("🎯 Eğitim başladı")
+    # main.py içinde (621. satır civarı)
+
+def train_background():
+    try:
+        logger.info("🎯 Eğitim başladı")
+        
+        # ✅ DOĞRU IMPORT
+        from model_trainer_streamsafe import RailwayOptimizedTrainer as ProductionModelTrainer
+        
+        trainer = ProductionModelTrainer(
+            models_dir=MODELS_DIR,
+            raw_data_path=RAW_DATA_PATH,
+            clubs_path=CLUBS_PATH,
+            min_matches=50,
+            test_size=0.2,
+            verbose=True,
+            railway_mode=True  # ✅ Railway optimizasyonları
+        )
+        
+        result = trainer.run_full_pipeline()
+        
+        if result.get('success'):
+            logger.info("✅ Eğitim tamamlandı!")
+            # Modelleri yeniden yükle
+            engine.load_models()
+        else:
+            logger.error(f"❌ Eğitim hatası: {result.get('error')}")
             
-            from model_trainer import ProductionModelTrainer
-            
-            trainer = ProductionModelTrainer(
-                models_dir=MODELS_DIR,
-                raw_data_path=RAW_DATA_PATH,
-                clubs_path=CLUBS_PATH,
-                min_matches=50,
-                test_size=0.2,
-                verbose=True
-            )
-            
-            result = trainer.run_full_pipeline()
-            
-            if result.get('success'):
-                logger.info("✅ Eğitim tamamlandı!")
-                # Modelleri yeniden yükle
-                engine.load_models()
-            else:
-                logger.error(f"❌ Eğitim hatası: {result.get('error')}")
-                
-        except Exception as e:
-            logger.error(f"❌ Training error: {e}", exc_info=True)
+    except Exception as e:
+        logger.error(f"❌ Training error: {e}", exc_info=True)
     
     # Arka planda çalıştır
     thread = threading.Thread(target=train_background, daemon=True)
