@@ -546,7 +546,7 @@ def reload_models():
             "status": "ok" if success else "partial",
             "message": "Models reloaded successfully" if success else "Some models missing",
             "is_trained": engine.is_trained,
-            "model_path": engine.model_path,
+            "model_path": str(engine.model_path),  # ✅ String'e çevir
             "timestamp": datetime.now().isoformat()
         })
         
@@ -557,7 +557,6 @@ def reload_models():
             "message": str(e),
             "timestamp": datetime.now().isoformat()
         }), 500
-
 
 @app.route("/api/models/info", methods=["GET"])
 def get_models_info():
