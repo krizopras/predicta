@@ -66,6 +66,7 @@ def home():
             "/api/predict/today",
             "/api/predictions/batch",
             "/api/predictions/update-result",
+            "/api/predictions/auto-update-results",
             "/api/predictions/accuracy-report",
             "/api/predictions/export-csv",
             "/api/debug/nesine-test",
