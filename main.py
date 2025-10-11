@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
 """
-Predicta Europe ML v2 - Flask Backend (TRACKER ENTEGRELİ)
+Predicta Europe ML v2 - Flask Backend (TRACKER INTEGRATED)
 Auto bulletin fetcher (Nesine) + ML predictions + Prediction Tracking
 """
 
 import os
+import json
 import logging
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
+from pathlib import Path
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 
@@ -52,7 +54,7 @@ tracker = PredictionTracker(storage_dir="data/predictions")
 @app.route("/")
 def home():
     return jsonify({
-        "status": "Predicta ML v2 aktif (Tracker Enabled)",
+        "status": "Predicta ML v2 Active (Tracker Enabled)",
         "port": APP_PORT,
         "model_trained": engine.is_trained,
         "models_dir": MODELS_DIR,
@@ -89,19 +91,19 @@ def get_status():
     })
 
 
-# ----------------- LIGLER -----------------
+# ----------------- LEAGUES -----------------
 @app.route("/api/leagues", methods=["GET"])
 def get_leagues():
-    """Bugünkü bültenden lig listesi döndür"""
+    """Get league list from today's bulletin"""
     try:
         filter_enabled = request.args.get('filter', 'false').lower() == 'true'
         today = date.today()
         matches = fetch_bulletin(today, filter_leagues=filter_enabled)
         
-        # Ligleri topla
+        # Collect leagues
         leagues_dict = {}
         for m in matches:
-            league_name = m.get("league", "Bilinmeyen")
+            league_name = m.get("league", "Unknown")
             if league_name not in leagues_dict:
                 leagues_dict[league_name] = {
                     "name": league_name,
@@ -109,7 +111,7 @@ def get_leagues():
                 }
             leagues_dict[league_name]["match_count"] += 1
         
-        # Listeye çevir ve sırala
+        # Convert to list and sort
         leagues_list = sorted(leagues_dict.values(), key=lambda x: x["match_count"], reverse=True)
         
         return jsonify({
@@ -122,16 +124,16 @@ def get_leagues():
         return jsonify({"error": str(e), "items": []}), 500
 
 
-# ----------------- TÜM MAÇLAR -----------------
+# ----------------- ALL MATCHES -----------------
 @app.route("/api/matches/today", methods=["GET"])
 def get_today_matches():
-    """Nesine bülteninden tüm maçları getir"""
+    """Fetch all matches from Nesine bulletin"""
     try:
         filter_enabled = request.args.get('filter', 'false').lower() == 'true'
         today = date.today()
         matches = fetch_bulletin(today, filter_leagues=filter_enabled)
         
-        logger.info(f"📊 Bugün {len(matches)} maç bulundu (filtre: {filter_enabled})")
+        logger.info(f"📊 Found {len(matches)} matches today (filter: {filter_enabled})")
         
         return jsonify({
             "count": len(matches),
@@ -144,10 +146,10 @@ def get_today_matches():
         return jsonify({"error": str(e), "items": []}), 500
 
 
-# ----------------- BUGÜNKÜ MAÇLAR + TAHMİN (TRACKER İLE) -----------------
+# ----------------- TODAY'S MATCHES + PREDICTION (WITH TRACKER) -----------------
 @app.route("/api/predict/today", methods=["GET"])
 def predict_today():
-    """Bugünkü tüm maçları tahmin et ve kaydet"""
+    """Predict all today's matches and save"""
     try:
         filter_enabled = request.args.get('filter', 'false').lower() == 'true'
         league_filter = request.args.get('league', '').strip()
@@ -156,7 +158,7 @@ def predict_today():
         today = date.today()
         matches = fetch_bulletin(today, filter_leagues=filter_enabled)
         
-        logger.info(f"🎯 {len(matches)} maç için tahmin yapılıyor...")
+        logger.info(f"🎯 Predicting {len(matches)} matches...")
 
         results = []
         success_count = 0
@@ -168,11 +170,11 @@ def predict_today():
                 odds = m.get("odds", {"1": 2.0, "X": 3.0, "2": 3.5})
                 league = m.get("league", "Unknown")
                 
-                # Lig filtresi
+                # League filter
                 if league_filter and league_filter.lower() not in league.lower():
                     continue
                 
-                # Oranlar eksikse varsayılan değerler kullan
+                # Use default odds if missing
                 if not odds.get("1"):
                     odds["1"] = 2.0
                 if not odds.get("X"):
@@ -180,7 +182,7 @@ def predict_today():
                 if not odds.get("2"):
                     odds["2"] = 3.5
                 
-                # Tahmin yap
+                # Make prediction
                 pred = engine.predict_match(home, away, odds, league)
                 
                 result_item = {
@@ -191,12 +193,12 @@ def predict_today():
                 results.append(result_item)
                 success_count += 1
                 
-                # Tahminleri kaydet (opsiyonel)
+                # Save predictions (optional)
                 if save_predictions:
                     tracker.save_prediction(m, pred, str(today))
                 
             except Exception as err:
-                logger.warning(f"⚠️ Tahmin hatası ({home} - {away}): {err}")
+                logger.warning(f"⚠️ Prediction error ({home} - {away}): {err}")
                 results.append({
                     **m,
                     "prediction": {
@@ -206,10 +208,10 @@ def predict_today():
                     }
                 })
         
-        logger.info(f"✅ {success_count}/{len(matches)} maç başarıyla tahmin edildi")
+        logger.info(f"✅ {success_count}/{len(matches)} matches predicted successfully")
         
         if save_predictions:
-            logger.info(f"💾 {success_count} tahmin kaydedildi")
+            logger.info(f"💾 {success_count} predictions saved")
         
         return jsonify({
             "count": len(results),
@@ -225,21 +227,21 @@ def predict_today():
         return jsonify({"error": str(e), "items": []}), 500
 
 
-# ----------------- TOPLU TAHMİN -----------------
+# ----------------- BATCH PREDICTION -----------------
 @app.route("/api/predictions/batch", methods=["POST"])
 def batch_predictions():
-    """Toplu maç tahmini (CSV formatı)"""
+    """Batch match prediction (CSV format)"""
     data = request.get_json(silent=True) or {}
     csv = data.get("csv", "")
     matches = []
 
     if not csv.strip():
-        return jsonify({"error": "CSV gerekli"}), 400
+        return jsonify({"error": "CSV required"}), 400
 
     try:
         lines = [ln.strip() for ln in csv.splitlines() if ln.strip()]
         
-        # Başlık satırını atla
+        # Skip header row
         start_index = 1 if lines and "home" in lines[0].lower() else 0
         
         for ln in lines[start_index:]:
@@ -257,7 +259,7 @@ def batch_predictions():
                         }
                     })
                 except ValueError as e:
-                    logger.warning(f"⚠️ CSV satırı atlandı: {ln} ({e})")
+                    logger.warning(f"⚠️ CSV row skipped: {ln} ({e})")
                     continue
 
         results = []
@@ -268,7 +270,7 @@ def batch_predictions():
                 )
                 results.append({**m, "prediction": pred})
             except Exception as e:
-                logger.error(f"Tahmin hatası: {e}")
+                logger.error(f"Prediction error: {e}")
                 results.append({**m, "error": str(e)})
 
         return jsonify({
@@ -281,10 +283,10 @@ def batch_predictions():
         return jsonify({"error": str(e)}), 500
 
 
-# ----------------- TAHMİN SONUÇ GÜNCELLEMESİ -----------------
+# ----------------- PREDICTION RESULT UPDATE -----------------
 @app.route("/api/predictions/update-result", methods=["POST"])
 def update_prediction_result():
-    """Maç sonucunu güncelle ve doğruluk hesapla"""
+    """Update match result and calculate accuracy"""
     try:
         data = request.get_json(silent=True) or {}
         
@@ -292,12 +294,12 @@ def update_prediction_result():
         away_team = data.get("away_team")
         home_score = data.get("home_score")
         away_score = data.get("away_score")
-        match_date = data.get("match_date")  # Opsiyonel
+        match_date = data.get("match_date")  # Optional
         
         if not all([home_team, away_team, 
                    home_score is not None, away_score is not None]):
             return jsonify({
-                "error": "home_team, away_team, home_score, away_score gerekli"
+                "error": "home_team, away_team, home_score, away_score required"
             }), 400
         
         success = tracker.update_actual_result(
@@ -309,12 +311,12 @@ def update_prediction_result():
         if success:
             return jsonify({
                 "status": "ok",
-                "message": f"Sonuç güncellendi: {home_team} {home_score}-{away_score} {away_team}"
+                "message": f"Result updated: {home_team} {home_score}-{away_score} {away_team}"
             })
         else:
             return jsonify({
                 "status": "not_found",
-                "message": "Tahmin bulunamadı veya güncelleme başarısız"
+                "message": "Prediction not found or update failed"
             }), 404
             
     except Exception as e:
@@ -322,10 +324,148 @@ def update_prediction_result():
         return jsonify({"error": str(e)}), 500
 
 
-# ----------------- DOĞRULUK RAPORU -----------------
+# ----------------- AUTO RESULT UPDATE -----------------
+@app.route("/api/predictions/auto-update-results", methods=["POST"])
+def auto_update_results():
+    """
+    Fetch yesterday's match results from Nesine and auto-update predictions
+    + Real-time accuracy analysis
+    """
+    try:
+        data = request.get_json(silent=True) or {}
+        
+        # Date parameter (optional)
+        target_date = data.get("date")
+        if target_date:
+            from datetime import datetime as dt
+            target_date = dt.strptime(target_date, "%Y-%m-%d").date()
+        else:
+            # Default: yesterday
+            target_date = date.today() - timedelta(days=1)
+        
+        filter_enabled = data.get("filter", False)
+        
+        logger.info(f"🔄 Starting auto result update: {target_date}")
+        
+        # Fetch results from Nesine
+        results = fetch_results_for_date(target_date, filter_leagues=filter_enabled)
+        
+        if not results:
+            return jsonify({
+                "status": "no_data",
+                "message": f"No results found for {target_date}",
+                "date": str(target_date),
+                "updated_count": 0
+            })
+        
+        logger.info(f"📊 Found {len(results)} finished matches")
+        
+        # Send each result to tracker
+        updated_count = 0
+        failed_count = 0
+        failed_matches = []
+        
+        # Real-time accuracy metrics
+        ms_correct = 0
+        score_correct = 0
+        updated_matches_detail = []
+        
+        for result in results:
+            try:
+                success = tracker.update_actual_result(
+                    result['home_team'],
+                    result['away_team'],
+                    result['home_score'],
+                    result['away_score'],
+                    str(target_date)
+                )
+                
+                if success:
+                    updated_count += 1
+                    
+                    # Check accuracy from prediction file
+                    pred_file = tracker.storage_dir / f"predictions_{target_date}.json"
+                    if pred_file.exists():
+                        with open(pred_file, 'r', encoding='utf-8') as f:
+                            predictions = json.load(f)
+                            
+                        for pred in predictions:
+                            if (pred['match']['home_team'].lower() == result['home_team'].lower() and
+                                pred['match']['away_team'].lower() == result['away_team'].lower()):
+                                
+                                # MS accuracy
+                                predicted_ms = pred['prediction']['ms_prediction']
+                                actual_ms = result['result']
+                                ms_match = (predicted_ms == actual_ms)
+                                if ms_match:
+                                    ms_correct += 1
+                                
+                                # Score accuracy
+                                predicted_score = pred['prediction']['score_prediction']
+                                actual_score = result['score']
+                                score_match = (predicted_score == actual_score)
+                                if score_match:
+                                    score_correct += 1
+                                
+                                updated_matches_detail.append({
+                                    'match': f"{result['home_team']} - {result['away_team']}",
+                                    'predicted_ms': predicted_ms,
+                                    'actual_ms': actual_ms,
+                                    'ms_correct': ms_match,
+                                    'predicted_score': predicted_score,
+                                    'actual_score': actual_score,
+                                    'score_correct': score_match,
+                                    'confidence': pred['prediction']['confidence']
+                                })
+                                break
+                    
+                    logger.info(f"   ✅ {result['home_team']} {result['score']} {result['away_team']}")
+                else:
+                    failed_count += 1
+                    failed_matches.append(f"{result['home_team']} - {result['away_team']}")
+                    
+            except Exception as e:
+                failed_count += 1
+                failed_matches.append(f"{result['home_team']} - {result['away_team']} (error: {str(e)[:30]})")
+                logger.warning(f"   ⚠️ Update error: {result['home_team']} - {result['away_team']}: {e}")
+        
+        # Success rates
+        ms_accuracy = (ms_correct / updated_count * 100) if updated_count > 0 else 0
+        score_accuracy = (score_correct / updated_count * 100) if updated_count > 0 else 0
+        
+        logger.info(f"✅ Update completed: {updated_count} successful, {failed_count} failed")
+        logger.info(f"📊 MS Accuracy: {ms_accuracy:.1f}% ({ms_correct}/{updated_count})")
+        logger.info(f"⚽ Score Accuracy: {score_accuracy:.1f}% ({score_correct}/{updated_count})")
+        
+        return jsonify({
+            "status": "ok",
+            "message": f"{updated_count}/{len(results)} match results updated",
+            "date": str(target_date),
+            "total_results": len(results),
+            "updated_count": updated_count,
+            "failed_count": failed_count,
+            "failed_matches": failed_matches[:10],  # First 10 failures
+            "accuracy": {
+                "ms_correct": ms_correct,
+                "ms_accuracy": round(ms_accuracy, 2),
+                "score_correct": score_correct,
+                "score_accuracy": round(score_accuracy, 2)
+            },
+            "details": updated_matches_detail[:20]  # First 20 details
+        })
+        
+    except Exception as e:
+        logger.error(f"/api/predictions/auto-update-results error: {e}", exc_info=True)
+        return jsonify({
+            "status": "error",
+            "error": str(e)
+        }), 500
+
+
+# ----------------- ACCURACY REPORT -----------------
 @app.route("/api/predictions/accuracy-report", methods=["GET"])
 def get_accuracy_report():
-    """Tahmin doğruluk raporu"""
+    """Prediction accuracy report"""
     try:
         days = int(request.args.get('days', 7))
         report = tracker.get_accuracy_report(days=days)
@@ -339,7 +479,7 @@ def get_accuracy_report():
 # ----------------- CSV EXPORT -----------------
 @app.route("/api/predictions/export-csv", methods=["GET"])
 def export_predictions_csv():
-    """Tahminleri CSV olarak dışa aktar"""
+    """Export predictions as CSV"""
     try:
         days = int(request.args.get('days', 30))
         output_file = tracker.export_to_csv(days=days)
@@ -348,12 +488,12 @@ def export_predictions_csv():
             return jsonify({
                 "status": "ok",
                 "file": output_file,
-                "message": "CSV export başarılı"
+                "message": "CSV export successful"
             })
         else:
             return jsonify({
                 "status": "no_data",
-                "message": "Export edilecek veri yok"
+                "message": "No data to export"
             }), 404
             
     except Exception as e:
@@ -368,16 +508,16 @@ def debug_nesine():
     try:
         today = date.today()
         
-        # Filtresiz tüm maçlar
+        # All matches without filter
         all_matches = fetch_bulletin(today, filter_leagues=False)
         
-        # Ligleri grupla
+        # Group leagues
         leagues = {}
         for m in all_matches:
             lg = m.get("league", "Unknown")
             leagues[lg] = leagues.get(lg, 0) + 1
 
-        # Filtrelenmiş maçlar
+        # Filtered matches
         filtered_matches = fetch_bulletin(today, filter_leagues=True)
 
         return jsonify({
@@ -394,10 +534,10 @@ def debug_nesine():
         return jsonify({"status": "error", "error": str(e)}), 500
 
 
-# ----------------- MODEL YÖNETİMİ -----------------
+# ----------------- MODEL MANAGEMENT -----------------
 @app.route("/api/reload", methods=["GET", "POST"])
 def reload_models():
-    """Modelleri yeniden yükle"""
+    """Reload models"""
     try:
         success = engine.load_models()
         
@@ -420,18 +560,15 @@ def reload_models():
 
 @app.route("/api/models/info", methods=["GET"])
 def get_models_info():
-    """Model detaylarını getir"""
+    """Get model details"""
     try:
-        import json
-        from pathlib import Path
-        
         info = {
             "is_trained": engine.is_trained,
             "model_path": engine.model_path,
             "models": {}
         }
         
-        # MS modelleri
+        # MS models
         for name, model in engine.models.items():
             if model is not None:
                 info["models"][name] = {
@@ -452,7 +589,7 @@ def get_models_info():
                 "classes": len(engine.score_predictor.space) if engine.score_predictor.space else 0
             }
         
-        # Metadata dosyasından bilgi
+        # Info from metadata file
         meta_path = Path(engine.model_path) / "training_metadata.json"
         if meta_path.exists():
             try:
@@ -482,17 +619,17 @@ def get_models_info():
 
 @app.route("/api/history/load", methods=["POST"])
 def load_history():
-    """Geçmiş verileri yükle ve modele feature olarak ekle"""
+    """Load historical data and add as features to model"""
     try:
         if not os.path.exists(RAW_DATA_PATH):
             return jsonify({
                 "status": "error",
-                "message": f"Geçmiş veri klasörü bulunamadı: {RAW_DATA_PATH}",
+                "message": f"Historical data folder not found: {RAW_DATA_PATH}",
                 "matches_loaded": 0,
-                "hint": "data/raw klasörünü oluşturun ve içine ülke bazlı CSV/TXT dosyaları ekleyin"
+                "hint": "Create data/raw folder and add country-based CSV/TXT files"
             }), 404
         
-        # Tüm ülkeleri tespit et
+        # Detect all countries
         countries = [
             d for d in os.listdir(RAW_DATA_PATH)
             if os.path.isdir(os.path.join(RAW_DATA_PATH, d)) and d.lower() != "clubs"
@@ -501,31 +638,31 @@ def load_history():
         if not countries:
             return jsonify({
                 "status": "warning",
-                "message": f"{RAW_DATA_PATH} klasöründe hiç ülke klasörü bulunamadı",
+                "message": f"No country folders found in {RAW_DATA_PATH}",
                 "matches_loaded": 0,
-                "hint": "Örnek: data/raw/turkey, data/raw/england gibi klasörler oluşturun"
+                "hint": "Example: create folders like data/raw/turkey, data/raw/england"
             }), 200
         
         total_matches = 0
         loaded_countries = []
         failed_countries = []
         
-        logger.info(f"📂 {len(countries)} ülke tespit edildi: {', '.join(countries)}")
+        logger.info(f"📂 Detected {len(countries)} countries: {', '.join(countries)}")
         
         for country in countries:
             try:
-                logger.info(f"📄 {country} yükleniyor...")
+                logger.info(f"📄 Loading {country}...")
                 matches = history_processor.load_country_data(country)
                 
                 if not matches:
-                    failed_countries.append(f"{country} (veri yok)")
+                    failed_countries.append(f"{country} (no data)")
                     continue
                 
-                # Feature engineer'a ekle
+                # Add to feature engineer
                 for m in matches:
                     result = m.get('result', '?')
                     
-                    # Sonuç belirleme
+                    # Determine result
                     if result not in ('1', 'X', '2'):
                         try:
                             hg = int(m.get('home_score', 0))
@@ -534,7 +671,7 @@ def load_history():
                         except:
                             result = 'X'
                     
-                    # Ev sahibi takım geçmişi
+                    # Home team history
                     home_result = 'W' if result == '1' else ('D' if result == 'X' else 'L')
                     engine.feature_engineer.update_team_history(
                         m['home_team'],
@@ -547,7 +684,7 @@ def load_history():
                         }
                     )
                     
-                    # Deplasman takımı geçmişi
+                    # Away team history
                     away_result = 'L' if result == '1' else ('D' if result == 'X' else 'W')
                     engine.feature_engineer.update_team_history(
                         m['away_team'],
@@ -560,7 +697,7 @@ def load_history():
                         }
                     )
                     
-                    # H2H geçmişi
+                    # H2H history
                     engine.feature_engineer.update_h2h_history(
                         m['home_team'], m['away_team'],
                         {
@@ -570,26 +707,26 @@ def load_history():
                         }
                     )
                     
-                    # Lig istatistikleri
+                    # League statistics
                     engine.feature_engineer.update_league_results(
                         m.get('league', 'Unknown'), result
                     )
                 
                 total_matches += len(matches)
-                loaded_countries.append(f"{country} ({len(matches)} maç)")
-                logger.info(f"✅ {country}: {len(matches)} maç yüklendi")
+                loaded_countries.append(f"{country} ({len(matches)} matches)")
+                logger.info(f"✅ {country}: {len(matches)} matches loaded")
                 
             except Exception as e:
-                logger.warning(f"⚠️ {country} yüklenemedi: {e}")
-                failed_countries.append(f"{country} (hata: {str(e)[:50]})")
+                logger.warning(f"⚠️ {country} could not be loaded: {e}")
+                failed_countries.append(f"{country} (error: {str(e)[:50]})")
                 continue
         
-        # Feature data'yı kaydet
+        # Save feature data
         engine.feature_engineer._save_data()
         
         response = {
             "status": "ok",
-            "message": f"{len(loaded_countries)} ülkeden geçmiş veriler yüklendi",
+            "message": f"Historical data loaded from {len(loaded_countries)} countries",
             "matches_loaded": total_matches,
             "countries_loaded": loaded_countries,
             "countries_failed": failed_countries,
@@ -597,7 +734,7 @@ def load_history():
             "success_rate": f"{len(loaded_countries)}/{len(countries)}"
         }
         
-        logger.info(f"🎯 Toplam {total_matches} maç feature hafızasına eklendi")
+        logger.info(f"🎯 Total {total_matches} matches added to feature memory")
         
         return jsonify(response)
         
@@ -612,213 +749,75 @@ def load_history():
 
 @app.route("/api/training/start", methods=["POST"])
 def start_training():
-    """Model eğitimini arka planda başlat"""
+    """Start model training in background"""
     import threading
     
-    # main.py içinde (621. satır civarı)
-
-def train_background():
-    try:
-        logger.info("🎯 Eğitim başladı")
-        
-        # ✅ DOĞRU IMPORT
-        from model_trainer_streamsafe import RailwayOptimizedTrainer as ProductionModelTrainer
-        
-        trainer = ProductionModelTrainer(
-            models_dir=MODELS_DIR,
-            raw_data_path=RAW_DATA_PATH,
-            clubs_path=CLUBS_PATH,
-            min_matches=50,
-            test_size=0.2,
-            verbose=True,
-            railway_mode=True  # ✅ Railway optimizasyonları
-        )
-        
-        result = trainer.run_full_pipeline()
-        
-        if result.get('success'):
-            logger.info("✅ Eğitim tamamlandı!")
-            # Modelleri yeniden yükle
-            engine.load_models()
-        else:
-            logger.error(f"❌ Eğitim hatası: {result.get('error')}")
+    def train_background():
+        try:
+            logger.info("🎯 Training started")
             
-    except Exception as e:
-        logger.error(f"❌ Training error: {e}", exc_info=True)
+            # ✅ CORRECT IMPORT
+            from model_trainer_streamsafe import RailwayOptimizedTrainer as ProductionModelTrainer
+            
+            trainer = ProductionModelTrainer(
+                models_dir=MODELS_DIR,
+                raw_data_path=RAW_DATA_PATH,
+                clubs_path=CLUBS_PATH,
+                min_matches=50,
+                test_size=0.2,
+                verbose=True,
+                railway_mode=True  # ✅ Railway optimizations
+            )
+            
+            result = trainer.run_full_pipeline()
+            
+            if result.get('success'):
+                logger.info("✅ Training completed!")
+                # Reload models
+                engine.load_models()
+            else:
+                logger.error(f"❌ Training error: {result.get('error')}")
+                
+        except Exception as e:
+            logger.error(f"❌ Training error: {e}", exc_info=True)
     
-    # Arka planda çalıştır
+    # Run in background
     thread = threading.Thread(target=train_background, daemon=True)
     thread.start()
     
     return jsonify({
         "status": "ok",
-        "message": "Eğitim arka planda başlatıldı",
-        "hint": "10-15 dakika sürebilir. /api/models/info ile kontrol edin"
+        "message": "Training started in background",
+        "hint": "May take 10-15 minutes. Check with /api/models/info"
     })
 
 
 # ======================================================
-# HATA YÖNETİMİ
+# ERROR HANDLING
 # ======================================================
 @app.errorhandler(404)
 def not_found(e):
-    return jsonify({"error": "Endpoint bulunamadı"}), 404
+    return jsonify({"error": "Endpoint not found"}), 404
 
 
 @app.errorhandler(500)
 def internal_error(e):
-    return jsonify({"error": "Sunucu hatası"}), 500
+    return jsonify({"error": "Server error"}), 500
 
-# ----------------- OTOMATİK SONUÇ GÜNCELLEMESİ -----------------
-@app.route("/api/predictions/auto-update-results", methods=["POST"])
-def auto_update_results():
-    """
-    Dünün maç sonuçlarını Nesine'den çek ve tahminleri otomatik güncelle
-    + Anlık başarı analizi
-    """
-    try:
-        data = request.get_json(silent=True) or {}
-        
-        # Tarih parametresi (opsiyonel)
-        target_date = data.get("date")
-        if target_date:
-            from datetime import datetime as dt
-            target_date = dt.strptime(target_date, "%Y-%m-%d").date()
-        else:
-            # Varsayılan: dün
-            from datetime import timedelta
-            target_date = date.today() - timedelta(days=1)
-        
-        filter_enabled = data.get("filter", False)
-        
-        logger.info(f"🔄 Otomatik sonuç güncelleme başlatılıyor: {target_date}")
-        
-        # Nesine'den sonuçları çek
-        results = fetch_results_for_date(target_date, filter_leagues=filter_enabled)
-        
-        if not results:
-            return jsonify({
-                "status": "no_data",
-                "message": f"{target_date} için sonuç bulunamadı",
-                "date": str(target_date),
-                "updated_count": 0
-            })
-        
-        logger.info(f"📊 {len(results)} bitmiş maç bulundu")
-        
-        # Her sonucu tracker'a gönder
-        updated_count = 0
-        failed_count = 0
-        failed_matches = []
-        
-        # Anlık doğruluk metrikleri
-        ms_correct = 0
-        score_correct = 0
-        updated_matches_detail = []
-        
-        for result in results:
-            try:
-                success = tracker.update_actual_result(
-                    result['home_team'],
-                    result['away_team'],
-                    result['home_score'],
-                    result['away_score'],
-                    str(target_date)
-                )
-                
-                if success:
-                    updated_count += 1
-                    
-                    # Tahmin dosyasından doğruluğu kontrol et
-                    pred_file = tracker.storage_dir / f"predictions_{target_date}.json"
-                    if pred_file.exists():
-                        with open(pred_file, 'r', encoding='utf-8') as f:
-                            predictions = json.load(f)
-                            
-                        for pred in predictions:
-                            if (pred['match']['home_team'].lower() == result['home_team'].lower() and
-                                pred['match']['away_team'].lower() == result['away_team'].lower()):
-                                
-                                # MS doğruluğu
-                                predicted_ms = pred['prediction']['ms_prediction']
-                                actual_ms = result['result']
-                                ms_match = (predicted_ms == actual_ms)
-                                if ms_match:
-                                    ms_correct += 1
-                                
-                                # Skor doğruluğu
-                                predicted_score = pred['prediction']['score_prediction']
-                                actual_score = result['score']
-                                score_match = (predicted_score == actual_score)
-                                if score_match:
-                                    score_correct += 1
-                                
-                                updated_matches_detail.append({
-                                    'match': f"{result['home_team']} - {result['away_team']}",
-                                    'predicted_ms': predicted_ms,
-                                    'actual_ms': actual_ms,
-                                    'ms_correct': ms_match,
-                                    'predicted_score': predicted_score,
-                                    'actual_score': actual_score,
-                                    'score_correct': score_match,
-                                    'confidence': pred['prediction']['confidence']
-                                })
-                                break
-                    
-                    logger.info(f"   ✅ {result['home_team']} {result['score']} {result['away_team']}")
-                else:
-                    failed_count += 1
-                    failed_matches.append(f"{result['home_team']} - {result['away_team']}")
-                    
-            except Exception as e:
-                failed_count += 1
-                failed_matches.append(f"{result['home_team']} - {result['away_team']} (hata: {str(e)[:30]})")
-                logger.warning(f"   ⚠️ Güncelleme hatası: {result['home_team']} - {result['away_team']}: {e}")
-        
-        # Başarı oranları
-        ms_accuracy = (ms_correct / updated_count * 100) if updated_count > 0 else 0
-        score_accuracy = (score_correct / updated_count * 100) if updated_count > 0 else 0
-        
-        logger.info(f"✅ Güncelleme tamamlandı: {updated_count} başarılı, {failed_count} başarısız")
-        logger.info(f"📊 MS Doğruluğu: {ms_accuracy:.1f}% ({ms_correct}/{updated_count})")
-        logger.info(f"⚽ Skor Doğruluğu: {score_accuracy:.1f}% ({score_correct}/{updated_count})")
-        
-        return jsonify({
-            "status": "ok",
-            "message": f"{updated_count}/{len(results)} maç sonucu güncellendi",
-            "date": str(target_date),
-            "total_results": len(results),
-            "updated_count": updated_count,
-            "failed_count": failed_count,
-            "failed_matches": failed_matches[:10],  # İlk 10 başarısız
-            "accuracy": {
-                "ms_correct": ms_correct,
-                "ms_accuracy": round(ms_accuracy, 2),
-                "score_correct": score_correct,
-                "score_accuracy": round(score_accuracy, 2)
-            },
-            "details": updated_matches_detail[:20]  # İlk 20 detay
-        })
-        
-    except Exception as e:
-        logger.error(f"/api/predictions/auto-update-results error: {e}", exc_info=True)
-        return jsonify({
-            "status": "error",
-            "error": str(e)
-        }), 500
+
 # ======================================================
 # RUN
 # ======================================================
 if __name__ == "__main__":
     logger.info("=" * 60)
-    logger.info("⚽ Predicta Europe ML v2 - Backend Aktif (TRACKER)")
+    logger.info("⚽ Predicta Europe ML v2 - Backend Active (TRACKER)")
     logger.info("=" * 60)
     logger.info(f"📂 Models: {MODELS_DIR}")
     logger.info(f"📂 Raw Data: {RAW_DATA_PATH}")
     logger.info(f"📂 Clubs: {CLUBS_PATH}")
     logger.info(f"📊 Predictions: data/predictions")
     logger.info(f"🌐 Port: {APP_PORT}")
-    logger.info(f"🤖 Trained: {'✅' if engine.is_trained else '⚠️ Eğitim gerekli'}")
+    logger.info(f"🤖 Trained: {'✅' if engine.is_trained else '⚠️ Training required'}")
     logger.info("=" * 60)
     
     app.run(host="0.0.0.0", port=APP_PORT, debug=False)
