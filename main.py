@@ -564,7 +564,7 @@ def get_models_info():
     try:
         info = {
             "is_trained": engine.is_trained,
-            "model_path": engine.model_path,
+            "model_path": str(engine.model_path),  # ✅ str() ekleyin
             "models": {}
         }
         
