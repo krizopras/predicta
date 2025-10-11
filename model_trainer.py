@@ -64,7 +64,8 @@ class RailwayOptimizedTrainer:
         random_state: int = 42,
         verbose: bool = True,
         batch_size: int = 500,  # ✅ Küçültüldü
-        railway_mode: bool = False  # ✅ Railway özel mod
+        railway_mode: bool = False
+        version_archive: str = None
     ):
         self.models_dir = Path(models_dir)
         self.raw_data_path = Path(raw_data_path)
