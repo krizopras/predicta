@@ -756,17 +756,19 @@ def start_training():
         try:
             logger.info("🎯 Training started")
             
-            # ✅ CORRECT IMPORT
-            from model_trainer_streamsafe import RailwayOptimizedTrainer as ProductionModelTrainer
+            # ✅ Import from model_trainer
+            from model_trainer import ProductionModelTrainer
             
+            # ✅ Correct parameters matching ProductionModelTrainer.__init__
             trainer = ProductionModelTrainer(
                 models_dir=MODELS_DIR,
                 raw_data_path=RAW_DATA_PATH,
                 clubs_path=CLUBS_PATH,
                 min_matches=50,
                 test_size=0.2,
-                verbose=True,
-                railway_mode=True  # ✅ Railway optimizations
+                random_state=42,
+                version_archive=False,  # Don't create versioned backup
+                verbose=True
             )
             
             result = trainer.run_full_pipeline()
@@ -775,6 +777,7 @@ def start_training():
                 logger.info("✅ Training completed!")
                 # Reload models
                 engine.load_models()
+                logger.info("✅ Models reloaded successfully")
             else:
                 logger.error(f"❌ Training error: {result.get('error')}")
                 
