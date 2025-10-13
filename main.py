@@ -23,11 +23,11 @@ logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s - %(levelname)s - %(message)s"
 )
-logger = logging.getLogger("Predicta")
+logger = logging.getLogger("Predicta Europe ML v3")
 
 # ========== Config ==========
 APP_PORT = int(os.environ.get("PORT", 8000))
-MODELS_DIR = os.environ.get("PREDICTA_MODELS_DIR", "data/ai_models_v2")
+MODELS_DIR = os.environ.get("PREDICTA_MODELS_DIR", "data/ai_models_v3")
 RAW_DATA_PATH = os.environ.get("PREDICTA_RAW_DATA", "data/raw")
 CLUBS_PATH = os.environ.get("PREDICTA_CLUBS", "data/clubs")
 
