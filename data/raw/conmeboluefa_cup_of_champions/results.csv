@@ -1,0 +1,4 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+France,Uruguay,2,0,1,Paris,France,1985_conmeboluefa_cup_of_champions.txt
+Argentina,Denmark,1,1,X,Mar del Plata,Argentina   [Argentina wins on penalties],1993_conmeboluefa_cup_of_champions.txt
+Italy,Argentina,0,3,2,Paris,France,2022_conmeboluefa_cup_of_champions.txt

@@ -1,0 +1,369 @@
+time,home_team,away_team,home_score,away_score,result,ht_score,source_file
+17.00,Egnatia Rrogozhine,KF Skënderbeu,0,1,2,0-0,2023-24_al1.txt
+20.00,FK Vllaznia,FK Kukësi,3,1,1,2-1,2023-24_al1.txt
+17.00,KF Laçi,Erzeni Shijak,3,3,X,2-1,2023-24_al1.txt
+20.00,FC Dinamo City,KF Tiranë,2,3,2,1-1,2023-24_al1.txt
+17.00,FK Partizani,KF Teuta Durrës,1,1,X,0-1,2023-24_al1.txt
+16.00,Erzeni Shijak,FK Vllaznia,2,2,X,1-1,2023-24_al1.txt
+19.00,KF Skënderbeu,FC Dinamo City,1,0,1,0-0,2023-24_al1.txt
+19.00,KF Teuta Durrës,KF Tiranë,2,2,X,2-1,2023-24_al1.txt
+16.00,FK Kukësi,Egnatia Rrogozhine,0,4,2,0-2,2023-24_al1.txt
+19.00,FK Partizani,KF Laçi,1,0,1,0-0,2023-24_al1.txt
+16.00,Egnatia Rrogozhine,Erzeni Shijak,4,3,1,4-1,2023-24_al1.txt
+19.00,FC Dinamo City,FK Kukësi,2,1,1,0-0,2023-24_al1.txt
+15.00,KF Tiranë,KF Skënderbeu,3,1,1,1-1,2023-24_al1.txt
+18.00,FK Vllaznia,FK Partizani,0,0,X,,2023-24_al1.txt
+16.00,KF Laçi,KF Teuta Durrës,6,1,1,2-0,2023-24_al1.txt
+16.00,Erzeni Shijak,FC Dinamo City,2,1,1,1-0,2023-24_al1.txt
+16.00,FK Kukësi,KF Tiranë,1,2,2,0-0,2023-24_al1.txt
+18.30,FK Partizani,Egnatia Rrogozhine,1,1,X,1-1,2023-24_al1.txt
+15.00,KF Laçi,FK Vllaznia,2,1,1,1-1,2023-24_al1.txt
+,KF Teuta Durrës,KF Skënderbeu,1,0,1,1-0,2023-24_al1.txt
+15.00,KF Tiranë,Erzeni Shijak,0,1,2,0-1,2023-24_al1.txt
+18.00,FC Dinamo City,FK Partizani,1,3,2,0-0,2023-24_al1.txt
+15.00,Egnatia Rrogozhine,KF Laçi,2,1,1,1-0,2023-24_al1.txt
+18.00,KF Skënderbeu,FK Kukësi,0,1,2,0-1,2023-24_al1.txt
+20.15,FK Vllaznia,KF Teuta Durrës,2,0,1,2-0,2023-24_al1.txt
+15.00,Erzeni Shijak,KF Skënderbeu,1,2,2,0-1,2023-24_al1.txt
+18.00,FK Vllaznia,Egnatia Rrogozhine,0,2,2,0-0,2023-24_al1.txt
+20.15,KF Teuta Durrës,FK Kukësi,0,0,X,,2023-24_al1.txt
+15.00,KF Laçi,FC Dinamo City,0,1,2,0-1,2023-24_al1.txt
+19.00,FK Partizani,KF Tiranë,2,1,1,0-0,2023-24_al1.txt
+14.00,Egnatia Rrogozhine,KF Teuta Durrës,0,1,2,0-0,2023-24_al1.txt
+16.30,KF Skënderbeu,FK Partizani,1,0,1,0-0,2023-24_al1.txt
+14.00,FK Kukësi,Erzeni Shijak,2,1,1,0-1,2023-24_al1.txt
+18.00,FC Dinamo City,FK Vllaznia,1,1,X,0-0,2023-24_al1.txt
+14.00,KF Tiranë,KF Laçi,0,3,2,0-1,2023-24_al1.txt
+14.00,Egnatia Rrogozhine,FC Dinamo City,3,0,1,2-0,2023-24_al1.txt
+14.00,FK Vllaznia,KF Tiranë,0,1,2,0-0,2023-24_al1.txt
+14.00,KF Laçi,KF Skënderbeu,2,0,1,1-0,2023-24_al1.txt
+18.00,FK Partizani,FK Kukësi,4,3,1,3-1,2023-24_al1.txt
+,KF Teuta Durrës,Erzeni Shijak,0,1,2,0-0,2023-24_al1.txt
+17.00,KF Skënderbeu,FK Vllaznia,0,2,2,0-0,2023-24_al1.txt
+14.00,FK Kukësi,KF Laçi,1,0,1,0-0,2023-24_al1.txt
+17.00,FC Dinamo City,KF Teuta Durrës,2,3,2,1-0,2023-24_al1.txt
+14.00,KF Tiranë,Egnatia Rrogozhine,2,3,2,2-1,2023-24_al1.txt
+17.00,Erzeni Shijak,FK Partizani,1,2,2,0-1,2023-24_al1.txt
+14.00,FK Kukësi,FK Vllaznia,1,0,1,0-0,2023-24_al1.txt
+17.00,Erzeni Shijak,KF Laçi,0,0,X,,2023-24_al1.txt
+14.00,KF Tiranë,FC Dinamo City,1,1,X,1-0,2023-24_al1.txt
+17.00,KF Teuta Durrës,FK Partizani,0,1,2,0-0,2023-24_al1.txt
+,KF Skënderbeu,Egnatia Rrogozhine,1,1,X,0-1,2023-24_al1.txt
+14.00,Egnatia Rrogozhine,FK Kukësi,2,1,1,1-1,2023-24_al1.txt
+17.00,FC Dinamo City,KF Skënderbeu,2,1,1,2-1,2023-24_al1.txt
+14.00,KF Laçi,FK Partizani,0,1,2,0-0,2023-24_al1.txt
+,KF Tiranë,KF Teuta Durrës,2,0,1,1-0,2023-24_al1.txt
+17.00,FK Vllaznia,Erzeni Shijak,1,1,X,1-0,2023-24_al1.txt
+17.00,Erzeni Shijak,Egnatia Rrogozhine,0,1,2,0-0,2023-24_al1.txt
+13.30,FK Kukësi,FC Dinamo City,0,0,X,,2023-24_al1.txt
+17.00,KF Teuta Durrës,KF Laçi,1,1,X,1-0,2023-24_al1.txt
+,KF Skënderbeu,KF Tiranë,1,1,X,1-1,2023-24_al1.txt
+18.00,FK Partizani,FK Vllaznia,4,1,1,3-1,2023-24_al1.txt
+13.30,Egnatia Rrogozhine,FK Partizani,1,1,X,1-1,2023-24_al1.txt
+17.00,FC Dinamo City,Erzeni Shijak,1,0,1,0-0,2023-24_al1.txt
+20.00,KF Tiranë,FK Kukësi,3,2,1,1-0,2023-24_al1.txt
+17.00,FK Vllaznia,KF Laçi,0,0,X,,2023-24_al1.txt
+,KF Skënderbeu,KF Teuta Durrës,3,1,1,2-0,2023-24_al1.txt
+13.30,Erzeni Shijak,KF Tiranë,1,0,1,1-0,2023-24_al1.txt
+17.00,FK Partizani,FC Dinamo City,0,0,X,,2023-24_al1.txt
+13.30,KF Laçi,Egnatia Rrogozhine,0,2,2,0-0,2023-24_al1.txt
+,FK Kukësi,KF Skënderbeu,2,2,X,0-2,2023-24_al1.txt
+16.00,KF Teuta Durrës,FK Vllaznia,0,1,2,0-1,2023-24_al1.txt
+13.30,Egnatia Rrogozhine,FK Vllaznia,3,0,1,3-0,2023-24_al1.txt
+17.00,KF Skënderbeu,Erzeni Shijak,1,0,1,1-0,2023-24_al1.txt
+13.30,FK Kukësi,KF Teuta Durrës,0,0,X,,2023-24_al1.txt
+16.00,FC Dinamo City,KF Laçi,2,0,1,1-0,2023-24_al1.txt
+19.00,KF Tiranë,FK Partizani,1,1,X,1-0,2023-24_al1.txt
+13.30,KF Laçi,KF Tiranë,2,2,X,0-2,2023-24_al1.txt
+,Erzeni Shijak,FK Kukësi,0,0,X,,2023-24_al1.txt
+17.00,FK Vllaznia,FC Dinamo City,3,1,1,2-1,2023-24_al1.txt
+17.00,KF Teuta Durrës,Egnatia Rrogozhine,2,2,X,1-0,2023-24_al1.txt
+,FK Partizani,KF Skënderbeu,1,1,X,0-1,2023-24_al1.txt
+13.30,FK Kukësi,FK Partizani,1,1,X,0-0,2023-24_al1.txt
+17.00,FC Dinamo City,Egnatia Rrogozhine,1,2,2,0-1,2023-24_al1.txt
+13.30,KF Tiranë,FK Vllaznia,0,1,2,0-1,2023-24_al1.txt
+,Erzeni Shijak,KF Teuta Durrës,0,0,X,,2023-24_al1.txt
+17.00,KF Skënderbeu,KF Laçi,0,1,2,0-1,2023-24_al1.txt
+17.00,KF Teuta Durrës,FC Dinamo City,1,2,2,1-2,2023-24_al1.txt
+,FK Vllaznia,KF Skënderbeu,5,0,1,1-0,2023-24_al1.txt
+13.30,KF Laçi,FK Kukësi,1,1,X,0-1,2023-24_al1.txt
+13.30,Egnatia Rrogozhine,KF Tiranë,0,5,2,0-1,2023-24_al1.txt
+17.00,FK Partizani,Erzeni Shijak,1,2,2,0-2,2023-24_al1.txt
+17.00,FC Dinamo City,KF Tiranë,2,3,2,1-0,2023-24_al1.txt
+13.30,Egnatia Rrogozhine,KF Skënderbeu,1,0,1,0-0,2023-24_al1.txt
+17.00,FK Partizani,KF Teuta Durrës,1,0,1,1-0,2023-24_al1.txt
+13.30,KF Laçi,Erzeni Shijak,0,0,X,,2023-24_al1.txt
+17.00,FK Vllaznia,FK Kukësi,1,0,1,1-0,2023-24_al1.txt
+13.30,FK Kukësi,Egnatia Rrogozhine,1,4,2,0-3,2023-24_al1.txt
+17.00,KF Teuta Durrës,KF Tiranë,2,2,X,0-1,2023-24_al1.txt
+13.30,Erzeni Shijak,FK Vllaznia,0,1,2,0-0,2023-24_al1.txt
+17.00,FK Partizani,KF Laçi,1,2,2,1-0,2023-24_al1.txt
+17.00,KF Skënderbeu,FC Dinamo City,0,1,2,0-0,2023-24_al1.txt
+13.30,KF Laçi,KF Teuta Durrës,1,1,X,1-0,2023-24_al1.txt
+17.00,FK Vllaznia,FK Partizani,1,1,X,1-1,2023-24_al1.txt
+,KF Tiranë,KF Skënderbeu,3,4,2,2-3,2023-24_al1.txt
+13.30,Egnatia Rrogozhine,Erzeni Shijak,3,2,1,0-1,2023-24_al1.txt
+17.00,FC Dinamo City,FK Kukësi,3,2,1,2-0,2023-24_al1.txt
+13.30,FK Kukësi,KF Tiranë,2,3,2,2-1,2023-24_al1.txt
+16.00,FK Partizani,Egnatia Rrogozhine,1,1,X,0-0,2023-24_al1.txt
+,KF Teuta Durrës,KF Skënderbeu,3,0,1,3-0,2023-24_al1.txt
+13.30,KF Laçi,FK Vllaznia,1,1,X,1-0,2023-24_al1.txt
+,Erzeni Shijak,FC Dinamo City,0,4,2,0-2,2023-24_al1.txt
+13.30,Egnatia Rrogozhine,KF Laçi,0,0,X,,2023-24_al1.txt
+17.00,FK Vllaznia,KF Teuta Durrës,2,1,1,1-0,2023-24_al1.txt
+,FC Dinamo City,FK Partizani,2,1,1,0-1,2023-24_al1.txt
+17.00,KF Tiranë,Erzeni Shijak,1,1,X,0-0,2023-24_al1.txt
+,KF Skënderbeu,FK Kukësi,1,0,1,1-0,2023-24_al1.txt
+16.00,KF Teuta Durrës,FK Kukësi,1,0,1,0-0,2023-24_al1.txt
+19.00,FK Partizani,KF Tiranë,2,1,1,2-1,2023-24_al1.txt
+13.30,KF Laçi,FC Dinamo City,1,1,X,0-1,2023-24_al1.txt
+,Erzeni Shijak,KF Skënderbeu,0,3,2,0-2,2023-24_al1.txt
+17.00,FK Vllaznia,Egnatia Rrogozhine,2,1,1,1-1,2023-24_al1.txt
+13.30,Egnatia Rrogozhine,KF Teuta Durrës,0,0,X,,2023-24_al1.txt
+,FK Kukësi,Erzeni Shijak,1,2,2,1-0,2023-24_al1.txt
+17.00,KF Skënderbeu,FK Partizani,1,0,1,1-0,2023-24_al1.txt
+17.00,FC Dinamo City,FK Vllaznia,0,1,2,0-1,2023-24_al1.txt
+,KF Tiranë,KF Laçi,1,1,X,0-0,2023-24_al1.txt
+13.30,KF Laçi,KF Skënderbeu,0,1,2,0-0,2023-24_al1.txt
+,Egnatia Rrogozhine,FC Dinamo City,1,1,X,0-0,2023-24_al1.txt
+17.00,FK Partizani,FK Kukësi,3,0,1,0-0,2023-24_al1.txt
+17.00,FK Vllaznia,KF Tiranë,3,1,1,2-0,2023-24_al1.txt
+,KF Teuta Durrës,Erzeni Shijak,3,0,1,2-0,2023-24_al1.txt
+14.00,Erzeni Shijak,FK Partizani,0,4,2,0-2,2023-24_al1.txt
+17.00,KF Tiranë,Egnatia Rrogozhine,1,1,X,0-0,2023-24_al1.txt
+14.00,FK Kukësi,KF Laçi,1,0,1,0-0,2023-24_al1.txt
+17.00,KF Skënderbeu,FK Vllaznia,0,1,2,0-0,2023-24_al1.txt
+18.00,FC Dinamo City,KF Teuta Durrës,1,0,1,0-0,2023-24_al1.txt
+14.00,Erzeni Shijak,KF Laçi,0,0,X,,2023-24_al1.txt
+17.00,KF Teuta Durrës,FK Partizani,1,0,1,0-0,2023-24_al1.txt
+,KF Skënderbeu,Egnatia Rrogozhine,2,0,1,2-0,2023-24_al1.txt
+14.00,FK Kukësi,FK Vllaznia,2,0,1,0-0,2023-24_al1.txt
+17.00,KF Tiranë,FC Dinamo City,3,2,1,2-0,2023-24_al1.txt
+15.00,Egnatia Rrogozhine,FK Kukësi,1,0,1,1-0,2023-24_al1.txt
+19.00,FK Vllaznia,Erzeni Shijak,1,1,X,1-1,2023-24_al1.txt
+,KF Tiranë,KF Teuta Durrës,1,2,2,0-1,2023-24_al1.txt
+15.00,KF Laçi,FK Partizani,1,1,X,0-1,2023-24_al1.txt
+18.00,FC Dinamo City,KF Skënderbeu,2,0,1,1-0,2023-24_al1.txt
+15.00,FK Kukësi,FC Dinamo City,1,1,X,0-0,2023-24_al1.txt
+18.00,KF Teuta Durrës,KF Laçi,0,1,2,0-0,2023-24_al1.txt
+20.00,FK Partizani,FK Vllaznia,0,0,X,,2023-24_al1.txt
+18.00,Erzeni Shijak,Egnatia Rrogozhine,1,0,1,0-0,2023-24_al1.txt
+,KF Skënderbeu,KF Tiranë,0,0,X,,2023-24_al1.txt
+15.00,KF Tiranë,FK Kukësi,1,0,1,0-0,2023-24_al1.txt
+18.00,FK Vllaznia,KF Laçi,1,2,2,1-0,2023-24_al1.txt
+,KF Skënderbeu,KF Teuta Durrës,0,1,2,0-0,2023-24_al1.txt
+15.00,Egnatia Rrogozhine,FK Partizani,2,1,1,2-0,2023-24_al1.txt
+18.00,FC Dinamo City,Erzeni Shijak,2,0,1,1-0,2023-24_al1.txt
+15.00,Erzeni Shijak,KF Tiranë,0,2,2,0-1,2023-24_al1.txt
+,FK Kukësi,KF Skënderbeu,0,2,2,0-1,2023-24_al1.txt
+15.00,KF Laçi,Egnatia Rrogozhine,1,2,2,1-0,2023-24_al1.txt
+18.00,KF Teuta Durrës,FK Vllaznia,0,0,X,,2023-24_al1.txt
+,FK Partizani,FC Dinamo City,2,0,1,1-0,2023-24_al1.txt
+18.00,FC Dinamo City,KF Laçi,0,0,X,,2023-24_al1.txt
+,KF Skënderbeu,Erzeni Shijak,1,0,1,1-0,2023-24_al1.txt
+15.00,Egnatia Rrogozhine,FK Vllaznia,0,1,2,0-1,2023-24_al1.txt
+,FK Kukësi,KF Teuta Durrës,0,2,2,0-1,2023-24_al1.txt
+19.00,KF Tiranë,FK Partizani,1,2,2,1-1,2023-24_al1.txt
+16.00,KF Teuta Durrës,Egnatia Rrogozhine,1,0,1,1-0,2023-24_al1.txt
+,FK Vllaznia,FC Dinamo City,1,0,1,0-0,2023-24_al1.txt
+,KF Laçi,KF Tiranë,1,0,1,0-0,2023-24_al1.txt
+,FK Partizani,KF Skënderbeu,1,0,1,0-0,2023-24_al1.txt
+,Erzeni Shijak,FK Kukësi,3,3,X,1-0,2023-24_al1.txt
+16.00,FK Kukësi,FK Partizani,0,1,2,0-1,2023-24_al1.txt
+,KF Skënderbeu,KF Laçi,1,1,X,0-0,2023-24_al1.txt
+,KF Tiranë,FK Vllaznia,0,0,X,,2023-24_al1.txt
+,FC Dinamo City,Egnatia Rrogozhine,0,1,2,0-1,2023-24_al1.txt
+,Erzeni Shijak,KF Teuta Durrës,0,3,2,0-1,2023-24_al1.txt
+16.00,KF Teuta Durrës,FC Dinamo City,1,0,1,0-0,2023-24_al1.txt
+,Egnatia Rrogozhine,KF Tiranë,0,3,2,0-2,2023-24_al1.txt
+,FK Vllaznia,KF Skënderbeu,1,5,2,1-2,2023-24_al1.txt
+,KF Laçi,FK Kukësi,2,0,1,1-0,2023-24_al1.txt
+,FK Partizani,Erzeni Shijak,4,0,1,4-0,2023-24_al1.txt
+20.00,FK Partizani,KF Skënderbeu,1,0,1,0-0,2023-24_al1.txt
+20.00,Egnatia Rrogozhine,FK Vllaznia,0,0,X,,2023-24_al1.txt
+19.00,KF Skënderbeu,FK Vllaznia,3,2,1,3-1,2023-24_al1.txt
+19.00,FK Partizani,Egnatia Rrogozhine,0,1,2,0-1,2023-24_al1.txt
+20.00,KF Teuta Durrës,KF Bylis Ballsh,2,1,1,1-1,2024-25_al1.txt
+,FC Dinamo City,Egnatia Rrogozhine,0,2,2,0-0,2024-25_al1.txt
+17.00,KF Laçi,KF Tiranë,0,0,X,,2024-25_al1.txt
+20.00,FK Partizani,FK Vllaznia,0,1,2,0-1,2024-25_al1.txt
+,KF Skënderbeu,AF Elbasani,1,1,X,1-0,2024-25_al1.txt
+17.00,Egnatia Rrogozhine,KF Laçi,2,1,1,1-0,2024-25_al1.txt
+20.00,FK Partizani,KF Skënderbeu,2,1,1,1-0,2024-25_al1.txt
+,FK Vllaznia,KF Tiranë,2,2,X,0-1,2024-25_al1.txt
+17.00,KF Bylis Ballsh,FC Dinamo City,1,0,1,0-0,2024-25_al1.txt
+20.00,AF Elbasani,KF Teuta Durrës,3,0,1,1-0,2024-25_al1.txt
+17.00,KF Laçi,KF Bylis Ballsh,0,0,X,,2024-25_al1.txt
+20.00,KF Skënderbeu,FK Vllaznia,1,0,1,0-0,2024-25_al1.txt
+,KF Teuta Durrës,FK Partizani,0,2,2,0-0,2024-25_al1.txt
+20.00,FC Dinamo City,AF Elbasani,2,1,1,0-0,2024-25_al1.txt
+,KF Tiranë,Egnatia Rrogozhine,1,1,X,0-1,2024-25_al1.txt
+16.00,KF Bylis Ballsh,KF Tiranë,2,2,X,1-0,2024-25_al1.txt
+19.00,KF Skënderbeu,KF Teuta Durrës,2,3,2,1-1,2024-25_al1.txt
+,FK Vllaznia,Egnatia Rrogozhine,3,1,1,2-1,2024-25_al1.txt
+19.00,FK Partizani,FC Dinamo City,2,2,X,1-1,2024-25_al1.txt
+,AF Elbasani,KF Laçi,1,0,1,0-0,2024-25_al1.txt
+16.00,Egnatia Rrogozhine,KF Bylis Ballsh,4,0,1,2-0,2024-25_al1.txt
+19.00,KF Teuta Durrës,FK Vllaznia,1,2,2,0-1,2024-25_al1.txt
+16.00,KF Laçi,FK Partizani,1,1,X,0-0,2024-25_al1.txt
+19.00,FC Dinamo City,KF Skënderbeu,2,1,1,1-0,2024-25_al1.txt
+,KF Tiranë,AF Elbasani,1,1,X,1-1,2024-25_al1.txt
+17.00,KF Skënderbeu,KF Laçi,2,1,1,1-0,2024-25_al1.txt
+20.00,FK Partizani,KF Tiranë,0,0,X,,2024-25_al1.txt
+17.00,FK Vllaznia,KF Bylis Ballsh,2,0,1,0-0,2024-25_al1.txt
+20.00,KF Teuta Durrës,FC Dinamo City,1,1,X,0-1,2024-25_al1.txt
+,AF Elbasani,Egnatia Rrogozhine,0,0,X,,2024-25_al1.txt
+16.00,Egnatia Rrogozhine,FK Partizani,0,2,2,0-1,2024-25_al1.txt
+16.00,KF Laçi,KF Teuta Durrës,0,1,2,0-1,2024-25_al1.txt
+19.00,FC Dinamo City,FK Vllaznia,2,1,1,0-1,2024-25_al1.txt
+16.00,KF Bylis Ballsh,AF Elbasani,0,1,2,0-0,2024-25_al1.txt
+19.00,KF Tiranë,KF Skënderbeu,2,1,1,0-1,2024-25_al1.txt
+19.00,FC Dinamo City,KF Laçi,2,1,1,1-0,2024-25_al1.txt
+19.00,FK Partizani,KF Bylis Ballsh,1,0,1,0-0,2024-25_al1.txt
+,KF Skënderbeu,Egnatia Rrogozhine,0,1,2,0-0,2024-25_al1.txt
+19.00,KF Teuta Durrës,KF Tiranë,3,1,1,1-1,2024-25_al1.txt
+,FK Vllaznia,AF Elbasani,0,0,X,,2024-25_al1.txt
+14.00,KF Laçi,FK Vllaznia,3,1,1,1-1,2024-25_al1.txt
+,KF Tiranë,FC Dinamo City,0,0,X,,2024-25_al1.txt
+,Egnatia Rrogozhine,KF Teuta Durrës,0,0,X,,2024-25_al1.txt
+14.00,KF Bylis Ballsh,KF Skënderbeu,0,1,2,0-0,2024-25_al1.txt
+17.00,AF Elbasani,FK Partizani,1,1,X,1-1,2024-25_al1.txt
+14.00,KF Bylis Ballsh,KF Teuta Durrës,4,0,1,2-0,2024-25_al1.txt
+,Egnatia Rrogozhine,FC Dinamo City,1,1,X,1-1,2024-25_al1.txt
+17.00,AF Elbasani,KF Skënderbeu,1,1,X,1-1,2024-25_al1.txt
+,KF Tiranë,KF Laçi,1,1,X,1-0,2024-25_al1.txt
+19.30,FK Vllaznia,FK Partizani,2,2,X,1-1,2024-25_al1.txt
+14.00,KF Laçi,Egnatia Rrogozhine,2,0,1,1-0,2024-25_al1.txt
+,KF Tiranë,FK Vllaznia,3,4,2,0-3,2024-25_al1.txt
+17.00,KF Skënderbeu,FK Partizani,0,2,2,0-1,2024-25_al1.txt
+17.00,FC Dinamo City,KF Bylis Ballsh,1,1,X,0-0,2024-25_al1.txt
+,KF Teuta Durrës,AF Elbasani,0,0,X,,2024-25_al1.txt
+14.00,Egnatia Rrogozhine,KF Tiranë,1,0,1,1-0,2024-25_al1.txt
+17.00,FK Vllaznia,KF Skënderbeu,2,0,1,2-0,2024-25_al1.txt
+14.00,KF Bylis Ballsh,KF Laçi,0,0,X,,2024-25_al1.txt
+18.00,FK Partizani,KF Teuta Durrës,1,1,X,1-0,2024-25_al1.txt
+,AF Elbasani,FC Dinamo City,0,5,2,0-3,2024-25_al1.txt
+14.00,Egnatia Rrogozhine,FK Vllaznia,1,1,X,1-0,2024-25_al1.txt
+17.00,FC Dinamo City,FK Partizani,1,2,2,0-0,2024-25_al1.txt
+,KF Teuta Durrës,KF Skënderbeu,1,1,X,0-1,2024-25_al1.txt
+14.00,KF Laçi,AF Elbasani,1,1,X,1-0,2024-25_al1.txt
+17.00,KF Tiranë,KF Bylis Ballsh,4,0,1,1-0,2024-25_al1.txt
+17.00,FK Vllaznia,KF Teuta Durrës,2,1,1,1-0,2024-25_al1.txt
+,KF Skënderbeu,FC Dinamo City,2,2,X,2-1,2024-25_al1.txt
+13.30,KF Bylis Ballsh,Egnatia Rrogozhine,0,2,2,0-1,2024-25_al1.txt
+17.00,FK Partizani,KF Laçi,1,0,1,0-0,2024-25_al1.txt
+,AF Elbasani,KF Tiranë,1,1,X,0-0,2024-25_al1.txt
+13.30,KF Bylis Ballsh,FK Vllaznia,1,0,1,1-0,2024-25_al1.txt
+13.30,KF Laçi,KF Skënderbeu,1,0,1,1-0,2024-25_al1.txt
+,Egnatia Rrogozhine,AF Elbasani,3,1,1,1-1,2024-25_al1.txt
+16.30,FC Dinamo City,KF Teuta Durrës,2,0,1,1-0,2024-25_al1.txt
+19.00,KF Tiranë,FK Partizani,0,0,X,,2024-25_al1.txt
+16.30,KF Teuta Durrës,KF Laçi,1,1,X,0-1,2024-25_al1.txt
+,AF Elbasani,KF Bylis Ballsh,3,1,1,0-1,2024-25_al1.txt
+19.30,FK Vllaznia,FC Dinamo City,2,3,2,0-2,2024-25_al1.txt
+17.00,KF Skënderbeu,KF Tiranë,0,0,X,,2024-25_al1.txt
+,FK Partizani,Egnatia Rrogozhine,1,1,X,1-0,2024-25_al1.txt
+13.30,Egnatia Rrogozhine,KF Skënderbeu,1,0,1,0-0,2024-25_al1.txt
+,KF Laçi,FC Dinamo City,0,0,X,,2024-25_al1.txt
+16.30,AF Elbasani,FK Vllaznia,1,2,2,1-0,2024-25_al1.txt
+13.30,KF Bylis Ballsh,FK Partizani,2,1,1,2-0,2024-25_al1.txt
+17.00,KF Tiranë,KF Teuta Durrës,0,0,X,,2024-25_al1.txt
+16.00,FK Vllaznia,KF Laçi,2,1,1,0-0,2024-25_al1.txt
+19.00,FC Dinamo City,KF Tiranë,2,1,1,2-0,2024-25_al1.txt
+,FK Partizani,AF Elbasani,2,2,X,1-2,2024-25_al1.txt
+16.30,KF Teuta Durrës,Egnatia Rrogozhine,2,1,1,1-0,2024-25_al1.txt
+,KF Skënderbeu,KF Bylis Ballsh,2,2,X,1-0,2024-25_al1.txt
+16.30,KF Skënderbeu,AF Elbasani,0,2,2,0-0,2024-25_al1.txt
+19.00,FK Partizani,FK Vllaznia,2,0,1,1-0,2024-25_al1.txt
+13.30,KF Laçi,KF Tiranë,3,1,1,0-1,2024-25_al1.txt
+16.30,FC Dinamo City,Egnatia Rrogozhine,2,1,1,1-0,2024-25_al1.txt
+16.30,KF Teuta Durrës,KF Bylis Ballsh,0,0,X,,2024-25_al1.txt
+13.30,Egnatia Rrogozhine,KF Laçi,1,0,1,0-0,2024-25_al1.txt
+,KF Bylis Ballsh,FC Dinamo City,2,1,1,1-0,2024-25_al1.txt
+17.00,FK Vllaznia,KF Tiranë,2,1,1,0-1,2024-25_al1.txt
+17.00,FK Partizani,KF Skënderbeu,1,1,X,1-0,2024-25_al1.txt
+,AF Elbasani,KF Teuta Durrës,3,1,1,0-1,2024-25_al1.txt
+13.30,KF Laçi,KF Bylis Ballsh,0,3,2,0-1,2024-25_al1.txt
+16.30,KF Tiranë,Egnatia Rrogozhine,0,4,2,0-0,2024-25_al1.txt
+16.30,KF Skënderbeu,FK Vllaznia,0,4,2,0-1,2024-25_al1.txt
+,KF Teuta Durrës,FK Partizani,0,2,2,0-0,2024-25_al1.txt
+19.30,FC Dinamo City,AF Elbasani,3,1,1,1-0,2024-25_al1.txt
+13.30,KF Bylis Ballsh,KF Tiranë,0,3,2,0-1,2024-25_al1.txt
+16.30,FK Partizani,FC Dinamo City,1,1,X,0-0,2024-25_al1.txt
+,KF Skënderbeu,KF Teuta Durrës,2,1,1,1-1,2024-25_al1.txt
+17.00,AF Elbasani,KF Laçi,1,2,2,0-1,2024-25_al1.txt
+,FK Vllaznia,Egnatia Rrogozhine,0,2,2,0-1,2024-25_al1.txt
+13.30,Egnatia Rrogozhine,KF Bylis Ballsh,2,1,1,0-0,2024-25_al1.txt
+16.30,KF Teuta Durrës,FK Vllaznia,1,3,2,0-2,2024-25_al1.txt
+13.30,KF Laçi,FK Partizani,0,0,X,,2024-25_al1.txt
+16.30,FC Dinamo City,KF Skënderbeu,1,1,X,0-0,2024-25_al1.txt
+,KF Tiranë,AF Elbasani,1,1,X,1-0,2024-25_al1.txt
+14.00,FK Partizani,KF Tiranë,1,1,X,0-1,2024-25_al1.txt
+17.00,AF Elbasani,Egnatia Rrogozhine,1,2,2,0-1,2024-25_al1.txt
+,FK Vllaznia,KF Bylis Ballsh,3,0,1,0-0,2024-25_al1.txt
+17.00,KF Skënderbeu,KF Laçi,0,2,2,0-1,2024-25_al1.txt
+,KF Teuta Durrës,FC Dinamo City,0,0,X,,2024-25_al1.txt
+13.30,Egnatia Rrogozhine,FK Partizani,2,0,1,1-0,2024-25_al1.txt
+,KF Bylis Ballsh,AF Elbasani,1,1,X,0-1,2024-25_al1.txt
+16.30,FC Dinamo City,FK Vllaznia,0,0,X,,2024-25_al1.txt
+13.30,KF Laçi,KF Teuta Durrës,3,0,1,1-0,2024-25_al1.txt
+16.30,KF Tiranë,KF Skënderbeu,1,0,1,0-0,2024-25_al1.txt
+15.00,FC Dinamo City,KF Laçi,2,0,1,1-0,2024-25_al1.txt
+17.30,FK Partizani,KF Bylis Ballsh,2,3,2,2-1,2024-25_al1.txt
+,FK Vllaznia,AF Elbasani,1,1,X,1-1,2024-25_al1.txt
+17.00,KF Skënderbeu,Egnatia Rrogozhine,1,0,1,0-0,2024-25_al1.txt
+,KF Teuta Durrës,KF Tiranë,2,1,1,1-1,2024-25_al1.txt
+14.00,KF Laçi,FK Vllaznia,2,2,X,2-0,2024-25_al1.txt
+17.00,AF Elbasani,FK Partizani,2,0,1,1-0,2024-25_al1.txt
+14.00,KF Bylis Ballsh,KF Skënderbeu,0,3,2,0-2,2024-25_al1.txt
+17.00,KF Tiranë,FC Dinamo City,1,4,2,1-1,2024-25_al1.txt
+,Egnatia Rrogozhine,KF Teuta Durrës,1,1,X,1-1,2024-25_al1.txt
+16.30,FK Vllaznia,FK Partizani,2,0,1,0-0,2024-25_al1.txt
+,Egnatia Rrogozhine,FC Dinamo City,2,0,1,2-0,2024-25_al1.txt
+13.30,KF Bylis Ballsh,KF Teuta Durrës,1,0,1,0-0,2024-25_al1.txt
+16.30,AF Elbasani,KF Skënderbeu,0,0,X,,2024-25_al1.txt
+,KF Tiranë,KF Laçi,4,1,1,1-1,2024-25_al1.txt
+17.00,KF Skënderbeu,FK Partizani,1,2,2,1-0,2024-25_al1.txt
+,FC Dinamo City,KF Bylis Ballsh,3,1,1,2-1,2024-25_al1.txt
+13.30,KF Laçi,Egnatia Rrogozhine,1,1,X,1-0,2024-25_al1.txt
+16.30,KF Teuta Durrës,AF Elbasani,0,0,X,,2024-25_al1.txt
+,KF Tiranë,FK Vllaznia,0,0,X,,2024-25_al1.txt
+18.00,FK Vllaznia,KF Skënderbeu,1,2,2,0-1,2024-25_al1.txt
+,Egnatia Rrogozhine,KF Tiranë,1,1,X,1-1,2024-25_al1.txt
+15.00,KF Bylis Ballsh,KF Laçi,0,0,X,,2024-25_al1.txt
+18.00,FK Partizani,KF Teuta Durrës,0,0,X,,2024-25_al1.txt
+,AF Elbasani,FC Dinamo City,1,1,X,0-1,2024-25_al1.txt
+15.00,KF Laçi,AF Elbasani,0,1,2,0-1,2024-25_al1.txt
+18.00,KF Tiranë,KF Bylis Ballsh,2,2,X,1-1,2024-25_al1.txt
+17.00,FC Dinamo City,FK Partizani,1,0,1,0-0,2024-25_al1.txt
+,KF Teuta Durrës,KF Skënderbeu,1,0,1,1-0,2024-25_al1.txt
+20.00,Egnatia Rrogozhine,FK Vllaznia,2,2,X,1-0,2024-25_al1.txt
+17.00,KF Skënderbeu,FC Dinamo City,4,1,1,0-1,2024-25_al1.txt
+,FK Partizani,KF Laçi,1,0,1,1-0,2024-25_al1.txt
+20.00,FK Vllaznia,KF Teuta Durrës,0,0,X,,2024-25_al1.txt
+15.00,KF Bylis Ballsh,Egnatia Rrogozhine,0,2,2,0-0,2024-25_al1.txt
+18.00,AF Elbasani,KF Tiranë,2,1,1,0-1,2024-25_al1.txt
+15.00,KF Laçi,KF Skënderbeu,1,2,2,1-1,2024-25_al1.txt
+,KF Bylis Ballsh,FK Vllaznia,1,0,1,0-0,2024-25_al1.txt
+18.00,FC Dinamo City,KF Teuta Durrës,1,1,X,0-1,2024-25_al1.txt
+17.00,Egnatia Rrogozhine,AF Elbasani,1,2,2,0-2,2024-25_al1.txt
+20.00,KF Tiranë,FK Partizani,3,0,1,2-0,2024-25_al1.txt
+15.30,FK Vllaznia,FC Dinamo City,3,0,1,1-0,2024-25_al1.txt
+,KF Teuta Durrës,KF Laçi,1,0,1,0-0,2024-25_al1.txt
+,KF Skënderbeu,KF Tiranë,1,1,X,1-0,2024-25_al1.txt
+,FK Partizani,Egnatia Rrogozhine,1,0,1,0-0,2024-25_al1.txt
+,AF Elbasani,KF Bylis Ballsh,1,0,1,1-0,2024-25_al1.txt
+15.30,KF Bylis Ballsh,FK Partizani,1,0,1,0-0,2024-25_al1.txt
+,Egnatia Rrogozhine,KF Skënderbeu,0,0,X,,2024-25_al1.txt
+,KF Tiranë,KF Teuta Durrës,0,1,2,0-0,2024-25_al1.txt
+,KF Laçi,FC Dinamo City,1,0,1,0-0,2024-25_al1.txt
+,AF Elbasani,FK Vllaznia,1,1,X,0-0,2024-25_al1.txt
+15.30,FK Vllaznia,KF Laçi,1,1,X,1-1,2024-25_al1.txt
+,FC Dinamo City,KF Tiranë,0,2,2,0-1,2024-25_al1.txt
+,KF Teuta Durrës,Egnatia Rrogozhine,2,1,1,1-1,2024-25_al1.txt
+,KF Skënderbeu,KF Bylis Ballsh,1,2,2,1-1,2024-25_al1.txt
+,FK Partizani,AF Elbasani,2,0,1,1-0,2024-25_al1.txt
+20.00,FK Vllaznia,FC Dinamo City,2,1,1,2-0,2024-25_al1.txt
+20.00,Egnatia Rrogozhine,FK Partizani,0,0,X,,2024-25_al1.txt
+19.00,FC Dinamo City,FK Partizani,1,2,2,1-1,2024-25_al1.txt
+20.00,FK Vllaznia,Egnatia Rrogozhine,0,4,2,0-1,2024-25_al1.txt

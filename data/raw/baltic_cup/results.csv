@@ -1,0 +1,103 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Latvia,Lithuania,3,0,1,Tallinn,Estonia,1928_baltic_cup.txt
+Estonia,Lithuania,6,0,1,Tallinn,Estonia,1928_baltic_cup.txt
+Estonia,Latvia,0,1,2,Tallinn,Estonia,1928_baltic_cup.txt
+Latvia,Lithuania,3,1,1,Riga,Latvia,1929_baltic_cup.txt
+Latvia,Estonia,2,2,X,Riga,Latvia,1929_baltic_cup.txt
+Estonia,Lithuania,5,2,1,Riga,Latvia,1929_baltic_cup.txt
+Lithuania,Estonia,2,1,1,Kaunas,Lithuania,1930_baltic_cup.txt
+Latvia,Estonia,3,2,1,Kaunas,Lithuania,1930_baltic_cup.txt
+Lithuania,Latvia,3,3,X,Kaunas,Lithuania,1930_baltic_cup.txt
+Estonia,Lithuania,2,0,1,Tallinn,Estonia,1931_baltic_cup.txt
+Latvia,Lithuania,1,0,1,Tallinn,Estonia,1931_baltic_cup.txt
+Estonia,Latvia,3,1,1,Tallinn,Estonia,1931_baltic_cup.txt
+Latvia,Lithuania,4,1,1,Riga,Latvia,1932_baltic_cup.txt
+Estonia,Lithuania,1,2,2,Riga,Latvia,1932_baltic_cup.txt
+Latvia,Estonia,1,0,1,Riga,Latvia,1932_baltic_cup.txt
+Lithuania,Estonia,1,1,X,Kaunas,Lithuania,1933_baltic_cup.txt
+Estonia,Latvia,0,1,2,Kaunas,Lithuania,1933_baltic_cup.txt
+Lithuania,Latvia,2,2,X,Kaunas,Lithuania,1933_baltic_cup.txt
+Estonia,Lithuania,1,2,2,Tallinn,Estonia,1935_baltic_cup.txt
+Lithuania,Latvia,2,2,X,Tallinn,Estonia,1935_baltic_cup.txt
+Estonia,Latvia,1,1,X,Tallinn,Estonia,1935_baltic_cup.txt
+Latvia,Lithuania,2,1,1,Riga,Latvia,1936_baltic_cup.txt
+Estonia,Lithuania,2,1,1,Riga,Latvia,1936_baltic_cup.txt
+Latvia,Estonia,2,1,1,Riga,Latvia,1936_baltic_cup.txt
+Latvia,Estonia,1,1,X,Kaunas,Lithuania,1937_baltic_cup.txt
+Lithuania,Estonia,0,4,2,Kaunas,Lithuania,1937_baltic_cup.txt
+Estonia,Latvia,0,2,2,Kaunas,Lithuania,1937_baltic_cup.txt
+Estonia,Lithuania,3,1,1,Tallinn,Estonia,1938_baltic_cup.txt
+Latvia,Lithuania,1,1,X,Tallinn,Estonia,1938_baltic_cup.txt
+Estonia,Latvia,1,1,X,Tallinn,Estonia,1938_baltic_cup.txt
+Latvia,Lithuania,1,0,1,Riga,Soviet Union,1940_baltic_cup.txt
+Estonia,Lithuania,1,1,X,Riga,Soviet Union,1940_baltic_cup.txt
+Latvia,Estonia,2,2,X,Riga,Soviet Union,1940_baltic_cup.txt
+Latvia,Lithuania,0,1,2,Riga,Soviet Union,1948_baltic_cup.txt
+Estonia,Lithuania,1,2,2,Riga,Soviet Union,1948_baltic_cup.txt
+Latvia,Estonia,1,1,X,Riga,Soviet Union,1948_baltic_cup.txt
+Lithuania,Estonia,2,1,1,Vilnius,Soviet Union,1949_baltic_cup.txt
+Latvia,Estonia,2,1,1,Vilnius,Soviet Union,1949_baltic_cup.txt
+Lithuania,Latvia,1,0,1,Vilnius,Soviet Union,1949_baltic_cup.txt
+Lithuania,Estonia,4,1,1,Klaipėda,Lithuania,1991_baltic_cup.txt
+Estonia,Latvia,0,2,2,Klaipėda,Lithuania,1991_baltic_cup.txt
+Lithuania,Latvia,1,1,X,Kretinga,Lithuania,1991_baltic_cup.txt
+Latvia,Estonia,2,1,1,Liepāja,Latvia,1992_baltic_cup.txt
+Estonia,Lithuania,1,1,X,Liepāja,Latvia,1992_baltic_cup.txt
+Latvia,Lithuania,2,3,2,Liepāja,Latvia,1992_baltic_cup.txt
+Estonia,Latvia,0,2,2,Pärnu,Estonia,1993_baltic_cup.txt
+Latvia,Lithuania,0,0,X,Pärnu,Estonia,1993_baltic_cup.txt
+Estonia,Lithuania,2,1,1,Pärnu,Estonia,1993_baltic_cup.txt
+Lithuania,Estonia,3,0,1,Vilnius,Lithuania,1994_baltic_cup.txt
+Estonia,Latvia,0,2,2,Vilnius,Lithuania,1994_baltic_cup.txt
+Lithuania,Latvia,1,0,1,Vilnius,Lithuania,1994_baltic_cup.txt
+Latvia,Estonia,2,0,1,Riga,Latvia,1995_baltic_cup.txt
+Estonia,Lithuania,0,7,2,Riga,Latvia,1995_baltic_cup.txt
+Latvia,Lithuania,2,0,1,Riga,Latvia,1995_baltic_cup.txt
+Estonia,Latvia,1,1,X,Narva,Estonia,1996_baltic_cup.txt
+Latvia,Lithuania,1,2,2,Narva,Estonia,1996_baltic_cup.txt
+Estonia,Lithuania,1,1,X,Narva,Estonia,1996_baltic_cup.txt
+Lithuania,Estonia,2,1,1,Vilnius,Lithuania,1997_baltic_cup.txt
+Estonia,Latvia,1,2,2,Vilnius,Lithuania,1997_baltic_cup.txt
+Lithuania,Latvia,1,0,1,Vilnius,Lithuania,1997_baltic_cup.txt
+Latvia,Lithuania,1,2,2,Liepāja,Latvia,1998_baltic_cup.txt
+Estonia,Latvia,0,2,2,Valga,Estonia,1998_baltic_cup.txt
+Estonia,Lithuania,0,0,X,Viljandi,Estonia,1998_baltic_cup.txt
+Lithuania,Latvia,2,1,1,Kaunas,Lithuania,2000_baltic_cup.txt
+Latvia,Estonia,3,1,1,Riga,Latvia,2001_baltic_cup.txt
+Estonia,Lithuania,2,5,2,Riga,Latvia,2001_baltic_cup.txt
+Latvia,Lithuania,4,1,1,Riga,Latvia,2001_baltic_cup.txt
+Estonia,Lithuania,1,5,2,Valga,Estonia,2003_baltic_cup.txt
+Latvia,Lithuania,2,1,1,Valga,Estonia,2003_baltic_cup.txt
+Estonia,Latvia,0,0,X,Tallinn,Estonia,2003_baltic_cup.txt
+Lithuania,Latvia,2,0,1,Kaunas,Lithuania,2005_baltic_cup.txt
+Latvia,Estonia,1,0,1,Riga,Latvia,2008_baltic_cup.txt
+Estonia,Lithuania,0,1,2,Jūrmala,Latvia,2008_baltic_cup.txt
+Latvia,Lithuania,2,1,1,Riga,Latvia,2008_baltic_cup.txt
+Lithuania,Latvia,0,0,X,Kaunas,Lithuania,2010_baltic_cup.txt
+Estonia,Latvia,0,0,X,Kaunas,Lithuania,2010_baltic_cup.txt
+Lithuania,Estonia,2,0,1,Kaunas,Lithuania,2010_baltic_cup.txt
+Estonia,Finland,1,2,2,Tartu,Estonia,2012_baltic_cup.txt
+Latvia,Lithuania,5,0,1,Võru,Estonia,2012_baltic_cup.txt
+Estonia,Lithuania,1,0,1,Tartu,Estonia,2012_baltic_cup.txt
+Finland,Latvia,1,1,X,Võru,Estonia   [Latvia wins on penalties],2012_baltic_cup.txt
+Finland,Lithuania,0,1,2,Ventspils,Latvia,2014_baltic_cup.txt
+Latvia,Estonia,0,0,X,Liepāja,Latvia   [Latvia wins on penalties],2014_baltic_cup.txt
+Finland,Estonia,2,0,1,Ventspils,Latvia,2014_baltic_cup.txt
+Latvia,Lithuania,1,0,1,Liepāja,Latvia,2014_baltic_cup.txt
+Lithuania,Estonia,2,0,1,Klaipėda,Lithuania,2016_baltic_cup.txt
+Latvia,Lithuania,2,1,1,Liepāja,Latvia,2016_baltic_cup.txt
+Estonia,Latvia,0,0,X,Tallinn,Estonia,2016_baltic_cup.txt
+Estonia,Lithuania,2,0,1,Rakvere,Estonia,2018_baltic_cup.txt
+Latvia,Estonia,1,0,1,Riga,Latvia,2018_baltic_cup.txt
+Lithuania,Latvia,1,1,X,Vilnius,Lithuania,2018_baltic_cup.txt
+Lithuania,Estonia,0,1,2,Vilnius,Lithuania,2021_baltic_cup.txt
+Latvia,Lithuania,3,1,1,Riga,Latvia,2021_baltic_cup.txt
+Estonia,Latvia,2,1,1,Tallinn,Estonia,2021_baltic_cup.txt
+Lithuania,Iceland,0,0,X,Kaunas,Lithuania   [Iceland wins on penalties],2022_baltic_cup.txt
+Latvia,Estonia,1,1,X,Riga,Latvia   [Latvia wins on penalties],2022_baltic_cup.txt
+Estonia,Lithuania,2,0,1,Tallinn,Estonia,2022_baltic_cup.txt
+Latvia,Iceland,1,1,X,Riga,Latvia   [Iceland wins on penalties],2022_baltic_cup.txt
+Latvia,Lithuania,0,2,2,Liepāja,Latvia,2024_baltic_cup.txt
+Estonia,Faroe Islands,4,1,1,Tallinn,Estonia,2024_baltic_cup.txt
+Latvia,Faroe Islands,1,0,1,Liepāja,Latvia,2024_baltic_cup.txt
+Lithuania,Estonia,1,1,X,Kaunas,Lithuania   [Estonia wins on penalties],2024_baltic_cup.txt

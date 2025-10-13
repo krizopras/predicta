@@ -1,0 +1,17 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Chile,Argentina,1,1,X,Santiago,Chile,1962_copa_carlos_dittborn.txt
+Argentina,Chile,1,0,1,Buenos Aires,Argentina,1962_copa_carlos_dittborn.txt
+Argentina,Chile,5,0,1,Buenos Aires,Argentina,1964_copa_carlos_dittborn.txt
+Chile,Argentina,1,1,X,Santiago,Chile,1964_copa_carlos_dittborn.txt
+Argentina,Chile,1,0,1,Buenos Aires,Argentina,1965_copa_carlos_dittborn.txt
+Chile,Argentina,1,1,X,Santiago,Chile,1965_copa_carlos_dittborn.txt
+Argentina,Chile,4,0,1,Rosario,Argentina,1968_copa_carlos_dittborn.txt
+Chile,Argentina,2,1,1,Santiago,Chile,1968_copa_carlos_dittborn.txt
+Chile,Argentina,2,2,X,Santiago,Chile,1971_copa_carlos_dittborn.txt
+Argentina,Chile,1,0,1,Buenos Aires,Argentina,1971_copa_carlos_dittborn.txt
+Chile,Argentina,3,4,2,Santiago,Chile,1972_copa_carlos_dittborn.txt
+Argentina,Chile,5,4,1,Buenos Aires,Argentina,1973_copa_carlos_dittborn.txt
+Chile,Argentina,3,1,1,Santiago,Chile,1973_copa_carlos_dittborn.txt
+Chile,Argentina,0,2,2,Santiago,Chile,1974_copa_carlos_dittborn.txt
+Argentina,Chile,1,1,X,Buenos Aires,Argentina,1974_copa_carlos_dittborn.txt
+Argentina,Chile,2,0,1,Buenos Aires,Argentina,1976_copa_carlos_dittborn.txt

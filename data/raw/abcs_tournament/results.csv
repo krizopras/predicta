@@ -1,0 +1,21 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Curaçao,Aruba,3,0,1,Willemstad,Curaçao,2010_abcs_tournament.txt
+Suriname,Bonaire,4,2,1,Willemstad,Curaçao,2010_abcs_tournament.txt
+Aruba,Bonaire,3,3,X,Willemstad,Curaçao,2010_abcs_tournament.txt
+Curaçao,Suriname,2,2,X,Willemstad,Curaçao,2010_abcs_tournament.txt
+Curaçao,Bonaire,1,3,2,Paramaribo,Suriname,2011_abcs_tournament.txt
+Suriname,Aruba,0,0,X,Paramaribo,Suriname,2011_abcs_tournament.txt
+Bonaire,Aruba,2,2,X,Paramaribo,Suriname,2011_abcs_tournament.txt
+Suriname,Curaçao,2,0,1,Paramaribo,Suriname,2011_abcs_tournament.txt
+Aruba,Curaçao,3,2,1,Oranjestad,Aruba,2012_abcs_tournament.txt
+Suriname,Bonaire,8,0,1,Oranjestad,Aruba,2012_abcs_tournament.txt
+Aruba,Suriname,1,0,1,Oranjestad,Aruba,2012_abcs_tournament.txt
+Bonaire,Curaçao,2,9,2,Oranjestad,Aruba,2012_abcs_tournament.txt
+Bonaire,Suriname,0,2,2,Willemstad,Curaçao,2013_abcs_tournament.txt
+Curaçao,Aruba,2,0,1,Willemstad,Curaçao,2013_abcs_tournament.txt
+Aruba,Bonaire,1,2,2,Willemstad,Curaçao,2013_abcs_tournament.txt
+Curaçao,Suriname,1,3,2,Willemstad,Curaçao,2013_abcs_tournament.txt
+Curaçao,Aruba,0,0,X,Paramaribo,Suriname   [Aruba wins on penalties],2015_abcs_tournament.txt
+Suriname,Bonaire,3,0,1,Paramaribo,Suriname,2015_abcs_tournament.txt
+Curaçao,Bonaire,4,1,1,Paramaribo,Suriname,2015_abcs_tournament.txt
+Suriname,Aruba,1,0,1,Paramaribo,Suriname,2015_abcs_tournament.txt

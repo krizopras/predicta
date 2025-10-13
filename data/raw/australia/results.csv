@@ -1,0 +1,1114 @@
+time,home_team,away_team,home_score,away_score,result,ht_score,source_file
+19.50,Adelaide United,Sydney FC,1,1,X,1-0,2018-19_au1.txt
+19.50,Melbourne Victory,Melbourne City FC,1,2,2,1-1,2018-19_au1.txt
+15.00,Wellington Phoenix,Newcastle United Jets,2,1,1,1-0,2018-19_au1.txt
+17.00,Brisbane Roar,Central Coast Mariners,1,1,X,0-1,2018-19_au1.txt
+19.00,Perth Glory,Western Sydney Wanderers,1,1,X,1-0,2018-19_au1.txt
+19.50,Adelaide United,Newcastle United Jets,1,1,X,0-0,2018-19_au1.txt
+17.35,Central Coast Mariners,Melbourne City FC,1,1,X,1-0,2018-19_au1.txt
+19.50,Sydney FC,Western Sydney Wanderers,2,0,1,1-0,2018-19_au1.txt
+17.00,Brisbane Roar,Wellington Phoenix,0,0,X,,2018-19_au1.txt
+19.00,Melbourne Victory,Perth Glory,2,3,2,0-2,2018-19_au1.txt
+19.50,Melbourne City FC,Sydney FC,0,3,2,0-1,2018-19_au1.txt
+17.35,Wellington Phoenix,Western Sydney Wanderers,0,3,2,0-1,2018-19_au1.txt
+19.50,Newcastle United Jets,Melbourne Victory,0,1,2,0-0,2018-19_au1.txt
+22.00,Perth Glory,Brisbane Roar,2,1,1,1-0,2018-19_au1.txt
+17.00,Central Coast Mariners,Adelaide United,0,3,2,0-2,2018-19_au1.txt
+19.50,Melbourne City FC,Wellington Phoenix,2,0,1,1-0,2018-19_au1.txt
+17.35,Western Sydney Wanderers,Brisbane Roar,2,2,X,2-1,2018-19_au1.txt
+19.50,Newcastle United Jets,Sydney FC,1,1,X,0-1,2018-19_au1.txt
+17.00,Adelaide United,Perth Glory,0,2,2,0-0,2018-19_au1.txt
+19.00,Melbourne Victory,Central Coast Mariners,4,1,1,3-0,2018-19_au1.txt
+19.50,Western Sydney Wanderers,Newcastle United Jets,0,2,2,0-1,2018-19_au1.txt
+17.35,Wellington Phoenix,Adelaide United,1,3,2,1-1,2018-19_au1.txt
+19.50,Brisbane Roar,Melbourne City FC,2,0,1,1-0,2018-19_au1.txt
+17.00,Sydney FC,Melbourne Victory,1,2,2,1-1,2018-19_au1.txt
+19.00,Perth Glory,Central Coast Mariners,3,2,1,1-1,2018-19_au1.txt
+19.50,Adelaide United,Brisbane Roar,2,1,1,1-0,2018-19_au1.txt
+17.35,Central Coast Mariners,Sydney FC,1,2,2,1-1,2018-19_au1.txt
+19.50,Melbourne Victory,Western Sydney Wanderers,4,0,1,3-0,2018-19_au1.txt
+17.00,Wellington Phoenix,Perth Glory,1,1,X,1-0,2018-19_au1.txt
+19.00,Melbourne City FC,Newcastle United Jets,3,0,1,2-0,2018-19_au1.txt
+19.50,Western Sydney Wanderers,Central Coast Mariners,2,0,1,1-0,2018-19_au1.txt
+17.35,Sydney FC,Wellington Phoenix,1,3,2,0-3,2018-19_au1.txt
+19.50,Melbourne Victory,Adelaide United,2,0,1,0-0,2018-19_au1.txt
+22.00,Perth Glory,Melbourne City FC,1,0,1,1-0,2018-19_au1.txt
+17.00,Newcastle United Jets,Brisbane Roar,2,0,1,1-0,2018-19_au1.txt
+19.50,Brisbane Roar,Melbourne Victory,2,4,2,2-4,2018-19_au1.txt
+17.35,Wellington Phoenix,Central Coast Mariners,2,0,1,2-0,2018-19_au1.txt
+19.50,Western Sydney Wanderers,Sydney FC,1,3,2,1-1,2018-19_au1.txt
+17.00,Newcastle United Jets,Perth Glory,0,2,2,0-2,2018-19_au1.txt
+19.00,Adelaide United,Melbourne City FC,0,2,2,0-1,2018-19_au1.txt
+21.00,Perth Glory,Sydney FC,1,2,2,0-1,2018-19_au1.txt
+17.35,Wellington Phoenix,Brisbane Roar,4,1,1,1-1,2018-19_au1.txt
+19.50,Melbourne City FC,Melbourne Victory,1,1,X,0-0,2018-19_au1.txt
+17.00,Central Coast Mariners,Newcastle United Jets,1,2,2,1-0,2018-19_au1.txt
+19.50,Adelaide United,Western Sydney Wanderers,2,2,X,0-1,2018-19_au1.txt
+19.50,Melbourne Victory,Wellington Phoenix,1,1,X,0-0,2018-19_au1.txt
+19.50,Sydney FC,Brisbane Roar,2,1,1,1-1,2018-19_au1.txt
+19.30,Newcastle United Jets,Adelaide United,1,2,2,0-1,2018-19_au1.txt
+19.00,Central Coast Mariners,Perth Glory,1,4,2,0-3,2018-19_au1.txt
+19.50,Western Sydney Wanderers,Melbourne City FC,0,2,2,0-2,2018-19_au1.txt
+19.50,Sydney FC,Central Coast Mariners,5,2,1,0-1,2018-19_au1.txt
+17.35,Adelaide United,Wellington Phoenix,0,0,X,,2018-19_au1.txt
+19.50,Western Sydney Wanderers,Melbourne Victory,1,2,2,0-1,2018-19_au1.txt
+17.00,Melbourne City FC,Newcastle United Jets,2,1,1,2-1,2018-19_au1.txt
+19.00,Brisbane Roar,Perth Glory,2,4,2,2-0,2018-19_au1.txt
+19.50,Newcastle United Jets,Brisbane Roar,2,2,X,1-0,2018-19_au1.txt
+19.50,Western Sydney Wanderers,Wellington Phoenix,2,3,2,1-1,2018-19_au1.txt
+19.50,Adelaide United,Melbourne Victory,2,0,1,2-0,2018-19_au1.txt
+22.00,Perth Glory,Sydney FC,3,1,1,3-0,2018-19_au1.txt
+19.50,Central Coast Mariners,Melbourne City FC,2,1,1,1-0,2018-19_au1.txt
+19.50,Melbourne City FC,Brisbane Roar,1,0,1,0-0,2018-19_au1.txt
+17.35,Wellington Phoenix,Central Coast Mariners,3,2,1,0-2,2018-19_au1.txt
+19.50,Melbourne Victory,Newcastle United Jets,2,1,1,0-0,2018-19_au1.txt
+18.00,Sydney FC,Adelaide United,2,1,1,1-0,2018-19_au1.txt
+20.00,Perth Glory,Western Sydney Wanderers,4,3,1,0-1,2018-19_au1.txt
+19.50,Western Sydney Wanderers,Adelaide United,1,2,2,0-1,2018-19_au1.txt
+17.35,Sydney FC,Newcastle United Jets,1,0,1,1-0,2018-19_au1.txt
+19.50,Melbourne City FC,Perth Glory,0,0,X,,2018-19_au1.txt
+17.00,Melbourne Victory,Wellington Phoenix,3,3,X,1-3,2018-19_au1.txt
+19.00,Central Coast Mariners,Brisbane Roar,1,1,X,1-1,2018-19_au1.txt
+19.50,Brisbane Roar,Melbourne Victory,0,5,2,0-1,2018-19_au1.txt
+19.50,Melbourne City FC,Western Sydney Wanderers,4,3,1,2-1,2018-19_au1.txt
+17.35,Wellington Phoenix,Sydney FC,0,1,2,0-1,2018-19_au1.txt
+19.50,Newcastle United Jets,Central Coast Mariners,1,0,1,0-0,2018-19_au1.txt
+22.00,Perth Glory,Adelaide United,0,0,X,,2018-19_au1.txt
+19.50,Brisbane Roar,Western Sydney Wanderers,2,2,X,0-2,2018-19_au1.txt
+17.35,Wellington Phoenix,Melbourne City FC,1,0,1,1-0,2018-19_au1.txt
+19.50,Melbourne Victory,Sydney FC,2,1,1,1-0,2018-19_au1.txt
+18.00,Adelaide United,Central Coast Mariners,2,1,1,0-1,2018-19_au1.txt
+20.00,Perth Glory,Newcastle United Jets,2,0,1,1-0,2018-19_au1.txt
+19.50,Western Sydney Wanderers,Newcastle United Jets,1,5,2,0-3,2018-19_au1.txt
+17.35,Central Coast Mariners,Melbourne Victory,2,3,2,2-0,2018-19_au1.txt
+19.50,Adelaide United,Brisbane Roar,4,3,1,1-3,2018-19_au1.txt
+22.00,Perth Glory,Wellington Phoenix,3,0,1,2-0,2018-19_au1.txt
+17.00,Sydney FC,Melbourne City FC,2,0,1,1-0,2018-19_au1.txt
+19.50,Newcastle United Jets,Wellington Phoenix,1,1,X,1-0,2018-19_au1.txt
+19.50,Brisbane Roar,Sydney FC,2,1,1,0-0,2018-19_au1.txt
+17.35,Western Sydney Wanderers,Central Coast Mariners,2,0,1,1-0,2018-19_au1.txt
+19.50,Melbourne City FC,Adelaide United,1,1,X,0-1,2018-19_au1.txt
+17.00,Melbourne Victory,Perth Glory,1,2,2,0-0,2018-19_au1.txt
+17.35,Wellington Phoenix,Melbourne Victory,1,1,X,0-0,2018-19_au1.txt
+19.50,Newcastle United Jets,Melbourne City FC,3,1,1,1-0,2018-19_au1.txt
+19.50,Adelaide United,Western Sydney Wanderers,1,3,2,1-1,2018-19_au1.txt
+22.00,Perth Glory,Brisbane Roar,4,0,1,3-0,2018-19_au1.txt
+17.00,Sydney FC,Central Coast Mariners,1,1,X,0-1,2018-19_au1.txt
+19.50,Central Coast Mariners,Brisbane Roar,3,5,2,2-3,2018-19_au1.txt
+17.35,Wellington Phoenix,Sydney FC,0,1,2,0-0,2018-19_au1.txt
+19.50,Melbourne Victory,Melbourne City FC,1,1,X,0-1,2018-19_au1.txt
+17.00,Newcastle United Jets,Adelaide United,0,0,X,,2018-19_au1.txt
+19.00,Western Sydney Wanderers,Perth Glory,1,1,X,0-1,2018-19_au1.txt
+19.50,Sydney FC,Adelaide United,2,0,1,1-0,2018-19_au1.txt
+19.50,Melbourne Victory,Newcastle United Jets,0,2,2,0-1,2018-19_au1.txt
+17.00,Melbourne City FC,Perth Glory,2,2,X,2-0,2018-19_au1.txt
+19.50,Brisbane Roar,Western Sydney Wanderers,1,4,2,1-3,2018-19_au1.txt
+19.50,Central Coast Mariners,Wellington Phoenix,2,8,2,0-4,2018-19_au1.txt
+19.50,Adelaide United,Perth Glory,0,2,2,0-1,2018-19_au1.txt
+17.35,Newcastle United Jets,Central Coast Mariners,2,3,2,0-0,2018-19_au1.txt
+19.50,Melbourne Victory,Brisbane Roar,2,1,1,2-0,2018-19_au1.txt
+17.00,Wellington Phoenix,Western Sydney Wanderers,3,1,1,3-0,2018-19_au1.txt
+19.00,Sydney FC,Melbourne City FC,0,2,2,0-0,2018-19_au1.txt
+19.50,Brisbane Roar,Sydney FC,1,3,2,0-1,2018-19_au1.txt
+17.35,Wellington Phoenix,Newcastle United Jets,4,1,1,1-0,2018-19_au1.txt
+19.50,Western Sydney Wanderers,Melbourne City FC,3,0,1,1-0,2018-19_au1.txt
+22.00,Perth Glory,Melbourne Victory,0,2,2,0-1,2018-19_au1.txt
+17.00,Central Coast Mariners,Adelaide United,0,1,2,0-1,2018-19_au1.txt
+19.50,Melbourne City FC,Brisbane Roar,4,1,1,1-0,2018-19_au1.txt
+17.35,Newcastle United Jets,Western Sydney Wanderers,3,2,1,0-1,2018-19_au1.txt
+19.50,Sydney FC,Melbourne Victory,2,1,1,1-1,2018-19_au1.txt
+17.00,Adelaide United,Wellington Phoenix,3,1,1,3-0,2018-19_au1.txt
+19.00,Central Coast Mariners,Perth Glory,0,3,2,0-2,2018-19_au1.txt
+19.50,Brisbane Roar,Wellington Phoenix,2,1,1,2-0,2018-19_au1.txt
+17.35,Melbourne City FC,Adelaide United,0,0,X,,2018-19_au1.txt
+19.50,Western Sydney Wanderers,Sydney FC,1,1,X,0-1,2018-19_au1.txt
+17.00,Melbourne Victory,Central Coast Mariners,2,1,1,1-0,2018-19_au1.txt
+19.00,Perth Glory,Newcastle United Jets,1,0,1,0-0,2018-19_au1.txt
+19.50,Sydney FC,Perth Glory,1,0,1,1-0,2018-19_au1.txt
+19.50,Adelaide United,Melbourne Victory,1,0,1,0-0,2018-19_au1.txt
+17.35,Brisbane Roar,Newcastle United Jets,1,6,2,0-2,2018-19_au1.txt
+19.50,Central Coast Mariners,Western Sydney Wanderers,3,1,1,1-0,2018-19_au1.txt
+17.00,Wellington Phoenix,Melbourne City FC,3,2,1,1-1,2018-19_au1.txt
+14.00,Brisbane Roar,Adelaide United,3,5,2,2-1,2018-19_au1.txt
+19.50,Melbourne City FC,Central Coast Mariners,5,0,1,2-0,2018-19_au1.txt
+17.35,Newcastle United Jets,Sydney FC,2,0,1,1-0,2018-19_au1.txt
+19.50,Western Sydney Wanderers,Melbourne Victory,0,1,2,0-1,2018-19_au1.txt
+19.00,Perth Glory,Wellington Phoenix,5,0,1,2-0,2018-19_au1.txt
+19.50,Melbourne Victory,Wellington Phoenix,3,1,1,1-0,2018-19_au1.txt
+19.00,Adelaide United,Melbourne City FC,1,0,1,,2018-19_au1.txt
+20.30,Perth Glory,Adelaide United,5,4,1,,2018-19_au1.txt
+19.00,Sydney FC,Melbourne Victory,6,1,1,3-0,2018-19_au1.txt
+18.30,Perth Glory,Sydney FC,1,4,2,,2018-19_au1.txt
+19.30,Adelaide United,Sydney FC,2,3,2,1-2,2019-20_au1.txt
+17.00,Western Sydney Wanderers,Central Coast Mariners,2,1,1,1-1,2019-20_au1.txt
+19.30,Melbourne Victory,Melbourne City FC,0,0,X,,2019-20_au1.txt
+16.00,Wellington Phoenix,Western United,0,1,2,0-1,2019-20_au1.txt
+18.00,Perth Glory,Brisbane Roar,1,1,X,1-0,2019-20_au1.txt
+19.30,Melbourne Victory,Western Sydney Wanderers,1,2,2,0-0,2019-20_au1.txt
+17.00,Western United,Perth Glory,1,1,X,0-0,2019-20_au1.txt
+19.30,Central Coast Mariners,Newcastle United Jets,1,1,X,1-0,2019-20_au1.txt
+16.00,Melbourne City FC,Adelaide United,2,1,1,2-0,2019-20_au1.txt
+18.00,Sydney FC,Wellington Phoenix,2,1,1,1-0,2019-20_au1.txt
+19.30,Brisbane Roar,Melbourne Victory,0,1,2,0-1,2019-20_au1.txt
+17.00,Newcastle United Jets,Adelaide United,1,2,2,1-0,2019-20_au1.txt
+19.30,Western Sydney Wanderers,Sydney FC,1,0,1,1-0,2019-20_au1.txt
+16.00,Wellington Phoenix,Perth Glory,1,2,2,0-2,2019-20_au1.txt
+18.00,Western United,Melbourne City FC,1,2,2,0-1,2019-20_au1.txt
+19.30,Sydney FC,Newcastle United Jets,4,1,1,2-1,2019-20_au1.txt
+17.00,Western Sydney Wanderers,Brisbane Roar,0,0,X,,2019-20_au1.txt
+19.30,Melbourne Victory,Western United,2,3,2,2-2,2019-20_au1.txt
+16.00,Melbourne City FC,Wellington Phoenix,3,2,1,2-1,2019-20_au1.txt
+18.00,Perth Glory,Central Coast Mariners,1,2,2,1-2,2019-20_au1.txt
+19.30,Melbourne City FC,Central Coast Mariners,3,1,1,1-0,2019-20_au1.txt
+17.00,Newcastle United Jets,Perth Glory,1,1,X,1-0,2019-20_au1.txt
+19.30,Western United,Western Sydney Wanderers,2,1,1,1-1,2019-20_au1.txt
+16.00,Melbourne Victory,Wellington Phoenix,1,1,X,0-1,2019-20_au1.txt
+18.00,Adelaide United,Brisbane Roar,1,0,1,0-0,2019-20_au1.txt
+17.00,Central Coast Mariners,Adelaide United,1,3,2,1-3,2019-20_au1.txt
+19.30,Western United,Newcastle United Jets,0,1,2,0-1,2019-20_au1.txt
+16.00,Brisbane Roar,Melbourne City FC,4,3,1,0-2,2019-20_au1.txt
+18.30,Sydney FC,Melbourne Victory,2,1,1,0-1,2019-20_au1.txt
+20.06,Western Sydney Wanderers,Melbourne City FC,2,3,2,1-0,2019-20_au1.txt
+17.00,Wellington Phoenix,Brisbane Roar,2,1,1,1-0,2019-20_au1.txt
+19.30,Adelaide United,Melbourne Victory,3,1,1,1-0,2019-20_au1.txt
+21.45,Perth Glory,Sydney FC,1,3,2,1-1,2019-20_au1.txt
+18.00,Central Coast Mariners,Western United,1,0,1,0-0,2019-20_au1.txt
+19.30,Melbourne Victory,Perth Glory,1,0,1,1-0,2019-20_au1.txt
+17.00,Brisbane Roar,Central Coast Mariners,2,0,1,0-0,2019-20_au1.txt
+19.30,Newcastle United Jets,Western Sydney Wanderers,2,0,1,0-0,2019-20_au1.txt
+16.00,Western United,Sydney FC,0,2,2,0-2,2019-20_au1.txt
+18.00,Adelaide United,Wellington Phoenix,1,2,2,0-0,2019-20_au1.txt
+19.30,Melbourne City FC,Perth Glory,0,3,2,0-1,2019-20_au1.txt
+17.00,Wellington Phoenix,Western Sydney Wanderers,2,1,1,0-0,2019-20_au1.txt
+19.30,Sydney FC,Brisbane Roar,5,1,1,3-0,2019-20_au1.txt
+16.00,Western United,Melbourne Victory,3,1,1,3-1,2019-20_au1.txt
+18.00,Adelaide United,Newcastle United Jets,2,1,1,1-0,2019-20_au1.txt
+19.30,Brisbane Roar,Western United,0,2,2,0-2,2019-20_au1.txt
+17.00,Melbourne Victory,Wellington Phoenix,0,0,X,,2019-20_au1.txt
+19.30,Sydney FC,Central Coast Mariners,1,0,1,1-0,2019-20_au1.txt
+21.45,Perth Glory,Western Sydney Wanderers,2,0,1,1-0,2019-20_au1.txt
+18.30,Newcastle United Jets,Melbourne City FC,0,4,2,0-2,2019-20_au1.txt
+19.30,Western Sydney Wanderers,Western United,1,1,X,0-0,2019-20_au1.txt
+14.45,Wellington Phoenix,Sydney FC,2,2,X,2-1,2019-20_au1.txt
+17.00,Melbourne City FC,Melbourne Victory,1,2,2,0-2,2019-20_au1.txt
+19.30,Perth Glory,Newcastle United Jets,6,2,1,2-1,2019-20_au1.txt
+18.00,Central Coast Mariners,Adelaide United,2,1,1,2-0,2019-20_au1.txt
+19.30,Adelaide United,Western Sydney Wanderers,2,3,2,1-1,2019-20_au1.txt
+17.00,Western United,Wellington Phoenix,1,3,2,0-1,2019-20_au1.txt
+19.30,Newcastle United Jets,Brisbane Roar,1,1,X,1-0,2019-20_au1.txt
+18.30,Sydney FC,Melbourne City FC,2,1,1,1-1,2019-20_au1.txt
+19.00,Central Coast Mariners,Perth Glory,0,3,2,0-1,2019-20_au1.txt
+19.30,Western Sydney Wanderers,Brisbane Roar,1,2,2,1-1,2019-20_au1.txt
+19.30,Melbourne City FC,Western United,3,2,1,3-0,2019-20_au1.txt
+17.00,Wellington Phoenix,Central Coast Mariners,2,1,1,2-1,2019-20_au1.txt
+19.30,Sydney FC,Adelaide United,2,1,1,2-1,2019-20_au1.txt
+18.30,Melbourne Victory,Newcastle United Jets,4,0,1,1-0,2019-20_au1.txt
+19.30,Newcastle United Jets,Sydney FC,1,2,2,1-2,2019-20_au1.txt
+14.45,Wellington Phoenix,Western Sydney Wanderers,2,0,1,1-0,2019-20_au1.txt
+17.00,Brisbane Roar,Melbourne City FC,2,2,X,2-1,2019-20_au1.txt
+19.30,Perth Glory,Adelaide United,3,0,1,2-0,2019-20_au1.txt
+18.00,Central Coast Mariners,Melbourne Victory,3,2,1,1-1,2019-20_au1.txt
+19.30,Adelaide United,Melbourne Victory,1,0,1,1-0,2019-20_au1.txt
+17.00,Brisbane Roar,Wellington Phoenix,1,0,1,0-0,2019-20_au1.txt
+19.30,Melbourne City FC,Newcastle United Jets,2,0,1,1-0,2019-20_au1.txt
+16.00,Western United,Central Coast Mariners,3,0,1,3-0,2019-20_au1.txt
+18.30,Western Sydney Wanderers,Perth Glory,0,1,2,0-1,2019-20_au1.txt
+17.15,Wellington Phoenix,Newcastle United Jets,2,1,1,0-0,2019-20_au1.txt
+19.30,Melbourne Victory,Sydney FC,0,3,2,0-1,2019-20_au1.txt
+17.00,Central Coast Mariners,Brisbane Roar,0,1,2,0-0,2019-20_au1.txt
+19.30,Melbourne City FC,Perth Glory,0,0,X,,2019-20_au1.txt
+18.00,Western United,Adelaide United,3,4,2,2-3,2019-20_au1.txt
+19.30,Sydney FC,Brisbane Roar,1,0,1,0-0,2019-20_au1.txt
+17.00,Newcastle United Jets,Western United,0,0,X,,2019-20_au1.txt
+19.30,Adelaide United,Melbourne City FC,3,1,1,3-1,2019-20_au1.txt
+21.45,Perth Glory,Melbourne Victory,2,2,X,1-1,2019-20_au1.txt
+16.00,Central Coast Mariners,Western Sydney Wanderers,1,3,2,0-1,2019-20_au1.txt
+19.30,Melbourne City FC,Melbourne Victory,2,1,1,1-0,2019-20_au1.txt
+21.45,Perth Glory,Wellington Phoenix,4,2,1,2-0,2019-20_au1.txt
+19.30,Brisbane Roar,Adelaide United,2,1,1,0-0,2019-20_au1.txt
+16.00,Newcastle United Jets,Central Coast Mariners,4,3,1,2-1,2019-20_au1.txt
+20.00,Sydney FC,Western Sydney Wanderers,0,1,2,0-0,2019-20_au1.txt
+19.30,Adelaide United,Central Coast Mariners,2,0,1,0-0,2019-20_au1.txt
+17.00,Wellington Phoenix,Melbourne City FC,1,0,1,0-0,2019-20_au1.txt
+19.30,Western Sydney Wanderers,Newcastle United Jets,1,1,X,1-0,2019-20_au1.txt
+16.00,Western United,Brisbane Roar,0,1,2,0-0,2019-20_au1.txt
+17.15,Wellington Phoenix,Western United,2,0,1,1-0,2019-20_au1.txt
+19.30,Western Sydney Wanderers,Adelaide United,5,2,1,4-2,2019-20_au1.txt
+17.00,Brisbane Roar,Perth Glory,1,1,X,0-1,2019-20_au1.txt
+19.30,Newcastle United Jets,Melbourne Victory,1,1,X,1-0,2019-20_au1.txt
+18.00,Central Coast Mariners,Sydney FC,0,3,2,0-1,2019-20_au1.txt
+17.00,Newcastle United Jets,Perth Glory,2,1,1,1-1,2019-20_au1.txt
+19.30,Melbourne Victory,Adelaide United,2,1,1,0-1,2019-20_au1.txt
+16.00,Western United,Central Coast Mariners,6,2,1,4-2,2019-20_au1.txt
+18.30,Melbourne City FC,Brisbane Roar,1,0,1,0-0,2019-20_au1.txt
+19.30,Sydney FC,Wellington Phoenix,3,1,1,0-0,2019-20_au1.txt
+20.30,Brisbane Roar,Western Sydney Wanderers,3,1,1,2-0,2019-20_au1.txt
+17.00,Adelaide United,Western United,1,5,2,1-3,2019-20_au1.txt
+19.30,Melbourne Victory,Sydney FC,1,4,2,1-1,2019-20_au1.txt
+16.00,Central Coast Mariners,Wellington Phoenix,1,3,2,0-2,2019-20_au1.txt
+18.00,Perth Glory,Melbourne City FC,2,3,2,0-3,2019-20_au1.txt
+19.30,Brisbane Roar,Central Coast Mariners,1,0,1,1-0,2019-20_au1.txt
+17.00,Sydney FC,Perth Glory,0,0,X,,2019-20_au1.txt
+19.30,Melbourne City FC,Western Sydney Wanderers,1,1,X,1-1,2019-20_au1.txt
+16.20,Wellington Phoenix,Melbourne Victory,3,0,1,2-0,2019-20_au1.txt
+18.20,Adelaide United,Newcastle United Jets,0,3,2,0-1,2019-20_au1.txt
+17.30,Central Coast Mariners,Melbourne City FC,2,4,2,1-2,2019-20_au1.txt
+19.30,Western Sydney Wanderers,Sydney FC,1,1,X,0-1,2019-20_au1.txt
+19.30,Melbourne Victory,Brisbane Roar,1,2,2,0-0,2019-20_au1.txt
+17.35,Perth Glory,Western United,0,2,2,0-1,2019-20_au1.txt
+19.30,Newcastle United Jets,Wellington Phoenix,3,0,1,1-0,2019-20_au1.txt
+19.30,Central Coast Mariners,Newcastle United Jets,0,0,X,,2019-20_au1.txt
+19.30,Western United,Western Sydney Wanderers,5,3,1,2-0,2019-20_au1.txt
+17.00,Perth Glory,Melbourne Victory,0,4,2,0-1,2019-20_au1.txt
+19.30,Brisbane Roar,Sydney FC,1,1,X,1-1,2019-20_au1.txt
+19.30,Melbourne City FC,Adelaide United,2,2,X,2-0,2019-20_au1.txt
+19.30,Newcastle United Jets,Melbourne City FC,2,1,1,1-0,2019-20_au1.txt
+17.00,Wellington Phoenix,Adelaide United,1,1,X,0-0,2019-20_au1.txt
+19.30,Melbourne Victory,Central Coast Mariners,2,3,2,1-0,2019-20_au1.txt
+19.30,Western Sydney Wanderers,Perth Glory,1,3,2,0-0,2019-20_au1.txt
+17.00,Sydney FC,Western United,1,2,2,0-1,2019-20_au1.txt
+19.30,Brisbane Roar,Newcastle United Jets,1,0,1,1-0,2019-20_au1.txt
+19.30,Perth Glory,Wellington Phoenix,1,2,2,0-1,2019-20_au1.txt
+19.30,Adelaide United,Sydney FC,1,1,X,1-1,2019-20_au1.txt
+20.10,Western Sydney Wanderers,Melbourne Victory,2,1,1,1-0,2019-20_au1.txt
+19.30,Western United,Melbourne City FC,1,3,2,0-1,2019-20_au1.txt
+19.30,Sydney FC,Newcastle United Jets,1,2,2,1-0,2019-20_au1.txt
+19.35,Melbourne Victory,Western United,1,2,2,0-1,2019-20_au1.txt
+19.30,Central Coast Mariners,Western Sydney Wanderers,1,1,X,0-0,2019-20_au1.txt
+19.30,Adelaide United,Perth Glory,5,3,1,4-1,2019-20_au1.txt
+18.00,Wellington Phoenix,Brisbane Roar,1,1,X,0-0,2019-20_au1.txt
+17.00,Perth Glory,Central Coast Mariners,1,0,1,1-0,2019-20_au1.txt
+19.30,Brisbane Roar,Adelaide United,0,1,2,0-1,2019-20_au1.txt
+19.30,Western Sydney Wanderers,Wellington Phoenix,1,0,1,0-0,2019-20_au1.txt
+17.00,Melbourne City FC,Sydney FC,2,0,1,0-0,2019-20_au1.txt
+19.30,Newcastle United Jets,Western United,1,0,1,1-0,2019-20_au1.txt
+17.00,Wellington Phoenix,Perth Glory,0,1,2,0-1,2019-20_au1.txt
+18.00,Brisbane Roar,Western United,0,1,2,0-1,2019-20_au1.txt
+17.00,Melbourne City FC,Western United,2,0,1,0-0,2019-20_au1.txt
+20.10,Sydney FC,Perth Glory,2,0,1,2-0,2019-20_au1.txt
+18.30,Sydney FC,Melbourne City FC,1,0,1,,2019-20_au1.txt
+19.05,Western United,Adelaide United,0,0,X,,2020-21_au1.txt
+19.05,Brisbane Roar,Melbourne City FC,0,1,2,0-0,2020-21_au1.txt
+19.10,Western Sydney Wanderers,Macarthur FC,0,1,2,0-0,2020-21_au1.txt
+19.05,Central Coast Mariners,Newcastle United Jets,1,0,1,1-0,2020-21_au1.txt
+17.05,Wellington Phoenix,Sydney FC,1,2,2,1-1,2020-21_au1.txt
+19.10,Melbourne Victory,Brisbane Roar,1,3,2,1-1,2020-21_au1.txt
+16.05,Macarthur FC,Central Coast Mariners,0,2,2,0-1,2020-21_au1.txt
+18.05,Adelaide United,Melbourne City FC,2,0,1,0-0,2020-21_au1.txt
+19.05,Newcastle United Jets,Western Sydney Wanderers,1,2,2,0-1,2020-21_au1.txt
+17.05,Macarthur FC,Wellington Phoenix,1,1,X,0-1,2020-21_au1.txt
+17.05,Sydney FC,Western Sydney Wanderers,1,1,X,0-0,2020-21_au1.txt
+19.10,Melbourne City FC,Western United,2,1,1,1-1,2020-21_au1.txt
+16.05,Newcastle United Jets,Macarthur FC,1,2,2,1-2,2020-21_au1.txt
+19.05,Central Coast Mariners,Western Sydney Wanderers,0,1,2,0-0,2020-21_au1.txt
+19.05,Newcastle United Jets,Brisbane Roar,1,2,2,1-1,2020-21_au1.txt
+21.20,Perth Glory,Adelaide United,5,3,1,2-1,2020-21_au1.txt
+19.05,Sydney FC,Central Coast Mariners,0,2,2,0-0,2020-21_au1.txt
+17.05,Western United,Perth Glory,5,4,1,1-0,2020-21_au1.txt
+19.40,Adelaide United,Melbourne Victory,1,0,1,0-0,2020-21_au1.txt
+18.10,Wellington Phoenix,Newcastle United Jets,1,2,2,0-1,2020-21_au1.txt
+19.05,Melbourne Victory,Perth Glory,2,1,1,0-0,2020-21_au1.txt
+19.05,Western Sydney Wanderers,Newcastle United Jets,1,1,X,1-0,2020-21_au1.txt
+17.05,Western United,Melbourne Victory,0,0,X,,2020-21_au1.txt
+19.10,Macarthur FC,Sydney FC,0,3,2,0-0,2020-21_au1.txt
+21.40,Brisbane Roar,Adelaide United,3,1,1,2-0,2020-21_au1.txt
+16.05,Central Coast Mariners,Wellington Phoenix,1,2,2,1-1,2020-21_au1.txt
+18.40,Melbourne City FC,Perth Glory,1,3,2,1-2,2020-21_au1.txt
+19.05,Central Coast Mariners,Melbourne City FC,3,2,1,1-2,2020-21_au1.txt
+19.05,Adelaide United,Perth Glory,1,2,2,1-0,2020-21_au1.txt
+17.05,Brisbane Roar,Melbourne Victory,5,2,1,4-2,2020-21_au1.txt
+19.10,Macarthur FC,Western Sydney Wanderers,2,2,X,1-0,2020-21_au1.txt
+16.05,Newcastle United Jets,Melbourne City FC,1,0,1,1-0,2020-21_au1.txt
+18.10,Central Coast Mariners,Western United,3,2,1,1-2,2020-21_au1.txt
+19.10,Sydney FC,Wellington Phoenix,2,1,1,1-0,2020-21_au1.txt
+19.35,Brisbane Roar,Macarthur FC,0,2,2,0-0,2020-21_au1.txt
+19.05,Western Sydney Wanderers,Melbourne Victory,2,0,1,0-0,2020-21_au1.txt
+19.05,Macarthur FC,Adelaide United,4,0,1,0-0,2020-21_au1.txt
+16.05,Wellington Phoenix,Central Coast Mariners,0,2,2,0-1,2020-21_au1.txt
+18.10,Brisbane Roar,Newcastle United Jets,0,0,X,,2020-21_au1.txt
+19.05,Adelaide United,Central Coast Mariners,3,2,1,1-1,2020-21_au1.txt
+17.05,Western United,Macarthur FC,4,1,1,2-0,2020-21_au1.txt
+19.10,Sydney FC,Brisbane Roar,0,0,X,,2020-21_au1.txt
+16.05,Melbourne Victory,Newcastle United Jets,0,1,2,0-0,2020-21_au1.txt
+18.10,Wellington Phoenix,Western Sydney Wanderers,2,2,X,1-0,2020-21_au1.txt
+19.05,Melbourne City FC,Sydney FC,3,2,1,2-0,2020-21_au1.txt
+19.05,Melbourne Victory,Wellington Phoenix,2,0,1,1-0,2020-21_au1.txt
+21.05,Perth Glory,Brisbane Roar,3,1,1,1-1,2020-21_au1.txt
+17.05,Western Sydney Wanderers,Adelaide United,2,3,2,0-2,2020-21_au1.txt
+19.10,Melbourne Victory,Western United,3,4,2,1-1,2020-21_au1.txt
+16.05,Sydney FC,Macarthur FC,0,1,2,0-1,2020-21_au1.txt
+18.10,Newcastle United Jets,Wellington Phoenix,0,2,2,0-1,2020-21_au1.txt
+19.05,Western Sydney Wanderers,Melbourne City FC,0,2,2,0-1,2020-21_au1.txt
+21.20,Perth Glory,Central Coast Mariners,1,2,2,0-2,2020-21_au1.txt
+19.35,Adelaide United,Newcastle United Jets,2,1,1,1-1,2020-21_au1.txt
+17.05,Brisbane Roar,Sydney FC,1,1,X,1-0,2020-21_au1.txt
+19.10,Melbourne Victory,Melbourne City FC,0,6,2,0-1,2020-21_au1.txt
+16.05,Wellington Phoenix,Perth Glory,3,0,1,2-0,2020-21_au1.txt
+18.10,Western United,Western Sydney Wanderers,0,1,2,0-0,2020-21_au1.txt
+19.05,Central Coast Mariners,Macarthur FC,2,0,1,1-0,2020-21_au1.txt
+19.05,Sydney FC,Western United,2,0,1,1-0,2020-21_au1.txt
+19.05,Melbourne City FC,Macarthur FC,3,0,1,3-0,2020-21_au1.txt
+17.05,Sydney FC,Newcastle United Jets,2,1,1,0-1,2020-21_au1.txt
+19.10,Melbourne Victory,Adelaide United,1,3,2,1-1,2020-21_au1.txt
+16.05,Central Coast Mariners,Perth Glory,2,2,X,1-1,2020-21_au1.txt
+18.40,Western United,Brisbane Roar,1,0,1,0-0,2020-21_au1.txt
+19.05,Western Sydney Wanderers,Wellington Phoenix,4,3,1,1-2,2020-21_au1.txt
+19.05,Western Sydney Wanderers,Perth Glory,3,0,1,1-0,2020-21_au1.txt
+17.05,Macarthur FC,Western United,2,1,1,2-1,2020-21_au1.txt
+16.05,Wellington Phoenix,Brisbane Roar,1,1,X,1-0,2020-21_au1.txt
+18.40,Newcastle United Jets,Adelaide United,1,4,2,0-4,2020-21_au1.txt
+19.05,Melbourne City FC,Central Coast Mariners,2,0,1,1-0,2020-21_au1.txt
+19.05,Wellington Phoenix,Melbourne Victory,4,1,1,2-0,2020-21_au1.txt
+21.20,Perth Glory,Sydney FC,1,1,X,1-0,2020-21_au1.txt
+19.05,Melbourne City FC,Western Sydney Wanderers,4,1,1,1-1,2020-21_au1.txt
+19.10,Central Coast Mariners,Melbourne Victory,1,1,X,1-1,2020-21_au1.txt
+21.20,Perth Glory,Newcastle United Jets,2,1,1,2-0,2020-21_au1.txt
+16.05,Wellington Phoenix,Macarthur FC,0,1,2,0-0,2020-21_au1.txt
+18.10,Adelaide United,Sydney FC,1,0,1,0-0,2020-21_au1.txt
+17.35,Western United,Melbourne City FC,2,1,1,0-1,2020-21_au1.txt
+19.40,Central Coast Mariners,Adelaide United,2,1,1,0-0,2020-21_au1.txt
+18.05,Macarthur FC,Perth Glory,2,0,1,2-0,2020-21_au1.txt
+19.05,Brisbane Roar,Western Sydney Wanderers,1,1,X,0-1,2020-21_au1.txt
+19.05,Melbourne Victory,Sydney FC,0,3,2,0-1,2020-21_au1.txt
+17.05,Newcastle United Jets,Western United,0,1,2,0-1,2020-21_au1.txt
+19.10,Wellington Phoenix,Melbourne City FC,2,3,2,1-2,2020-21_au1.txt
+19.05,Western Sydney Wanderers,Central Coast Mariners,2,2,X,0-1,2020-21_au1.txt
+19.50,Sydney FC,Perth Glory,1,0,1,0-0,2020-21_au1.txt
+19.05,Macarthur FC,Brisbane Roar,1,2,2,0-1,2020-21_au1.txt
+15.05,Newcastle United Jets,Melbourne Victory,1,2,2,1-0,2020-21_au1.txt
+17.05,Sydney FC,Melbourne City FC,1,1,X,0-0,2020-21_au1.txt
+19.10,Adelaide United,Western Sydney Wanderers,1,1,X,1-0,2020-21_au1.txt
+19.05,Wellington Phoenix,Western United,3,2,1,1-1,2020-21_au1.txt
+19.05,Newcastle United Jets,Perth Glory,1,1,X,0-0,2020-21_au1.txt
+19.35,Adelaide United,Macarthur FC,3,1,1,1-1,2020-21_au1.txt
+19.05,Western Sydney Wanderers,Brisbane Roar,1,2,2,1-2,2020-21_au1.txt
+17.05,Western United,Central Coast Mariners,1,0,1,1-0,2020-21_au1.txt
+19.10,Melbourne City FC,Melbourne Victory,7,0,1,2-0,2020-21_au1.txt
+16.05,Sydney FC,Adelaide United,2,2,X,1-0,2020-21_au1.txt
+18.10,Macarthur FC,Newcastle United Jets,2,2,X,2-1,2020-21_au1.txt
+20.15,Perth Glory,Wellington Phoenix,1,3,2,0-0,2020-21_au1.txt
+19.05,Western United,Wellington Phoenix,1,1,X,1-1,2020-21_au1.txt
+19.05,Melbourne Victory,Western Sydney Wanderers,5,4,1,3-1,2020-21_au1.txt
+17.05,Central Coast Mariners,Sydney FC,2,2,X,2-1,2020-21_au1.txt
+19.10,Macarthur FC,Melbourne City FC,1,1,X,0-0,2020-21_au1.txt
+16.10,Wellington Phoenix,Adelaide United,2,1,1,0-0,2020-21_au1.txt
+19.05,Western United,Newcastle United Jets,2,0,1,1-0,2020-21_au1.txt
+19.35,Sydney FC,Melbourne Victory,1,0,1,1-0,2020-21_au1.txt
+19.05,Central Coast Mariners,Brisbane Roar,0,4,2,0-1,2020-21_au1.txt
+19.05,Melbourne City FC,Newcastle United Jets,3,1,1,1-0,2020-21_au1.txt
+19.35,Adelaide United,Western United,0,0,X,,2020-21_au1.txt
+15.05,Perth Glory,Macarthur FC,0,0,X,,2020-21_au1.txt
+17.05,Brisbane Roar,Wellington Phoenix,0,0,X,,2020-21_au1.txt
+19.10,Western Sydney Wanderers,Sydney FC,3,2,1,2-0,2020-21_au1.txt
+16.05,Melbourne Victory,Central Coast Mariners,1,1,X,0-1,2020-21_au1.txt
+19.05,Brisbane Roar,Western United,2,1,1,0-0,2020-21_au1.txt
+21.20,Perth Glory,Melbourne City FC,1,3,2,1-2,2020-21_au1.txt
+19.05,Melbourne Victory,Macarthur FC,1,2,2,1-1,2020-21_au1.txt
+19.35,Adelaide United,Wellington Phoenix,0,0,X,,2020-21_au1.txt
+17.05,Newcastle United Jets,Sydney FC,1,1,X,0-0,2020-21_au1.txt
+19.10,Western Sydney Wanderers,Western United,5,0,1,2-0,2020-21_au1.txt
+16.05,Melbourne City FC,Brisbane Roar,3,2,1,2-2,2020-21_au1.txt
+18.10,Perth Glory,Melbourne Victory,2,1,1,0-0,2020-21_au1.txt
+19.05,Brisbane Roar,Central Coast Mariners,0,0,X,,2020-21_au1.txt
+21.20,Perth Glory,Western United,3,0,1,2-0,2020-21_au1.txt
+19.05,Melbourne City FC,Adelaide United,4,1,1,2-0,2020-21_au1.txt
+19.05,Macarthur FC,Melbourne Victory,3,1,1,2-0,2020-21_au1.txt
+14.35,Western United,Sydney FC,0,1,2,0-0,2020-21_au1.txt
+19.10,Newcastle United Jets,Central Coast Mariners,0,1,2,0-0,2020-21_au1.txt
+16.05,Melbourne City FC,Wellington Phoenix,2,2,X,0-1,2020-21_au1.txt
+18.10,Adelaide United,Brisbane Roar,1,0,1,1-0,2020-21_au1.txt
+20.15,Perth Glory,Western Sydney Wanderers,5,1,1,2-0,2020-21_au1.txt
+19.05,Sydney FC,Melbourne Victory,2,0,1,1-0,2020-21_au1.txt
+21.20,Perth Glory,Adelaide United,2,1,1,0-1,2020-21_au1.txt
+19.05,Newcastle United Jets,Brisbane Roar,1,2,2,0-1,2020-21_au1.txt
+14.05,Wellington Phoenix,Western United,3,0,1,1-0,2020-21_au1.txt
+19.10,Melbourne City FC,Central Coast Mariners,1,0,1,0-0,2020-21_au1.txt
+16.05,Sydney FC,Western Sydney Wanderers,1,0,1,0-0,2020-21_au1.txt
+18.10,Melbourne Victory,Adelaide United,0,1,2,0-1,2020-21_au1.txt
+20.15,Perth Glory,Macarthur FC,1,1,X,1-1,2020-21_au1.txt
+19.05,Brisbane Roar,Melbourne City FC,3,0,1,2-0,2020-21_au1.txt
+19.05,Western Sydney Wanderers,Wellington Phoenix,1,2,2,1-2,2020-21_au1.txt
+19.05,Macarthur FC,Central Coast Mariners,1,2,2,1-1,2020-21_au1.txt
+19.05,Western United,Melbourne Victory,1,6,2,1-4,2020-21_au1.txt
+19.10,Adelaide United,Sydney FC,1,4,2,0-1,2020-21_au1.txt
+13.35,Wellington Phoenix,Perth Glory,2,2,X,1-0,2020-21_au1.txt
+16.05,Western Sydney Wanderers,Brisbane Roar,2,0,1,1-0,2020-21_au1.txt
+19.05,Western United,Macarthur FC,1,2,2,0-2,2020-21_au1.txt
+19.05,Central Coast Mariners,Newcastle United Jets,0,2,2,0-2,2020-21_au1.txt
+19.05,Brisbane Roar,Perth Glory,2,1,1,0-0,2020-21_au1.txt
+19.35,Adelaide United,Western Sydney Wanderers,2,2,X,1-2,2020-21_au1.txt
+19.05,Macarthur FC,Wellington Phoenix,0,3,2,0-1,2020-21_au1.txt
+15.05,Brisbane Roar,Sydney FC,0,2,2,0-1,2020-21_au1.txt
+17.05,Central Coast Mariners,Western United,2,0,1,1-0,2020-21_au1.txt
+19.10,Newcastle United Jets,Perth Glory,1,1,X,0-1,2020-21_au1.txt
+16.05,Melbourne Victory,Melbourne City FC,1,1,X,0-0,2020-21_au1.txt
+19.05,Melbourne City FC,Newcastle United Jets,1,2,2,1-1,2020-21_au1.txt
+19.05,Central Coast Mariners,Macarthur FC,0,2,2,,2020-21_au1.txt
+15.05,Brisbane Roar,Adelaide United,1,2,2,0-2,2020-21_au1.txt
+19.05,Sydney FC,Adelaide United,2,1,1,2-0,2020-21_au1.txt
+16.05,Melbourne City FC,Macarthur FC,2,0,1,0-0,2020-21_au1.txt
+17.05,Melbourne City FC,Sydney FC,3,1,1,2-1,2020-21_au1.txt
+19.45,Melbourne City FC,Brisbane Roar,2,1,1,2-0,2021-22_au1.txt
+19.45,Western Sydney Wanderers,Sydney FC,0,0,X,,2021-22_au1.txt
+,Western United,Melbourne Victory,0,1,2,0-0,2021-22_au1.txt
+22.05,Perth Glory,Adelaide United,1,1,X,1-1,2021-22_au1.txt
+16.05,Newcastle United Jets,Central Coast Mariners,1,2,2,0-0,2021-22_au1.txt
+18.45,Macarthur FC,Wellington Phoenix,1,1,X,0-1,2021-22_au1.txt
+19.45,Western United,Perth Glory,1,0,1,0-0,2021-22_au1.txt
+17.05,Wellington Phoenix,Central Coast Mariners,2,1,1,0-0,2021-22_au1.txt
+19.45,Adelaide United,Melbourne City FC,2,2,X,0-1,2021-22_au1.txt
+,Sydney FC,Macarthur FC,0,1,2,0-1,2021-22_au1.txt
+16.05,Melbourne Victory,Brisbane Roar,3,0,1,2-0,2021-22_au1.txt
+18.15,Western Sydney Wanderers,Newcastle United Jets,2,2,X,1-1,2021-22_au1.txt
+19.45,Wellington Phoenix,Western Sydney Wanderers,0,2,2,0-0,2021-22_au1.txt
+17.05,Brisbane Roar,Adelaide United,0,0,X,,2021-22_au1.txt
+19.45,Melbourne City FC,Western United,0,1,2,0-1,2021-22_au1.txt
+,Sydney FC,Newcastle United Jets,2,2,X,2-0,2021-22_au1.txt
+16.05,Macarthur FC,Central Coast Mariners,1,0,1,1-0,2021-22_au1.txt
+18.45,Melbourne Victory,Perth Glory,0,3,2,0-0,2021-22_au1.txt
+19.45,Melbourne City FC,Perth Glory,1,0,1,0-0,2021-22_au1.txt
+19.45,Newcastle United Jets,Wellington Phoenix,4,0,1,1-0,2021-22_au1.txt
+17.05,Western United,Brisbane Roar,1,0,1,0-0,2021-22_au1.txt
+19.45,Adelaide United,Melbourne Victory,1,2,2,0-0,2021-22_au1.txt
+,Western Sydney Wanderers,Macarthur FC,0,2,2,0-0,2021-22_au1.txt
+18.20,Central Coast Mariners,Sydney FC,2,0,1,2-0,2021-22_au1.txt
+19.45,Western United,Adelaide United,1,0,1,1-0,2021-22_au1.txt
+17.05,Central Coast Mariners,Western Sydney Wanderers,2,0,1,0-0,2021-22_au1.txt
+19.45,Melbourne City FC,Melbourne Victory,2,2,X,0-1,2021-22_au1.txt
+16.05,Macarthur FC,Newcastle United Jets,2,1,1,0-1,2021-22_au1.txt
+18.45,Sydney FC,Wellington Phoenix,2,1,1,1-0,2021-22_au1.txt
+19.45,Brisbane Roar,Perth Glory,1,0,1,0-0,2021-22_au1.txt
+19.45,Melbourne Victory,Western United,3,1,1,2-0,2021-22_au1.txt
+,Macarthur FC,Sydney FC,0,3,2,0-2,2021-22_au1.txt
+19.55,Newcastle United Jets,Western Sydney Wanderers,1,0,1,0-0,2021-22_au1.txt
+19.35,Brisbane Roar,Melbourne City FC,1,2,2,1-1,2021-22_au1.txt
+19.05,Central Coast Mariners,Wellington Phoenix,5,0,1,2-0,2021-22_au1.txt
+17.05,Adelaide United,Perth Glory,2,0,1,1-0,2021-22_au1.txt
+19.45,Adelaide United,Wellington Phoenix,4,0,1,1-0,2021-22_au1.txt
+19.45,Sydney FC,Perth Glory,1,2,2,0-0,2021-22_au1.txt
+17.05,Western Sydney Wanderers,Western United,0,1,2,0-1,2021-22_au1.txt
+20.05,Newcastle United Jets,Melbourne City FC,2,4,2,0-1,2021-22_au1.txt
+19.45,Central Coast Mariners,Macarthur FC,3,3,X,1-2,2021-22_au1.txt
+19.05,Melbourne Victory,Brisbane Roar,0,0,X,,2021-22_au1.txt
+19.45,Melbourne Victory,Sydney FC,2,2,X,1-1,2021-22_au1.txt
+17.25,Wellington Phoenix,Brisbane Roar,3,0,1,1-0,2021-22_au1.txt
+19.55,Melbourne City FC,Central Coast Mariners,3,2,1,1-1,2021-22_au1.txt
+19.35,Adelaide United,Western Sydney Wanderers,1,2,2,1-1,2021-22_au1.txt
+18.20,Macarthur FC,Perth Glory,4,2,1,1-2,2021-22_au1.txt
+19.05,Newcastle United Jets,Western United,1,1,X,0-1,2021-22_au1.txt
+19.45,Melbourne Victory,Adelaide United,1,1,X,0-0,2021-22_au1.txt
+19.45,Western Sydney Wanderers,Perth Glory,1,0,1,1-0,2021-22_au1.txt
+17.25,Western United,Sydney FC,1,0,1,0-0,2021-22_au1.txt
+19.05,Melbourne City FC,Macarthur FC,3,1,1,2-1,2021-22_au1.txt
+19.45,Wellington Phoenix,Newcastle United Jets,3,2,1,2-1,2021-22_au1.txt
+19.05,Brisbane Roar,Central Coast Mariners,0,2,2,0-1,2021-22_au1.txt
+19.45,Adelaide United,Melbourne City FC,2,2,X,0-1,2021-22_au1.txt
+,Sydney FC,Brisbane Roar,1,1,X,1-1,2021-22_au1.txt
+19.45,Macarthur FC,Western United,2,2,X,0-1,2021-22_au1.txt
+19.55,Western Sydney Wanderers,Melbourne Victory,2,0,1,0-0,2021-22_au1.txt
+19.05,Perth Glory,Wellington Phoenix,0,1,2,0-0,2021-22_au1.txt
+19.45,Central Coast Mariners,Newcastle United Jets,2,0,1,1-0,2021-22_au1.txt
+18.45,Brisbane Roar,Adelaide United,1,3,2,1-1,2021-22_au1.txt
+17.05,Central Coast Mariners,Melbourne Victory,1,1,X,0-1,2021-22_au1.txt
+21.40,Perth Glory,Newcastle United Jets,0,0,X,,2021-22_au1.txt
+19.05,Melbourne City FC,Sydney FC,4,0,1,1-0,2021-22_au1.txt
+14.05,Western United,Wellington Phoenix,1,4,2,0-3,2021-22_au1.txt
+16.05,Macarthur FC,Western Sydney Wanderers,1,1,X,0-1,2021-22_au1.txt
+19.45,Brisbane Roar,Western Sydney Wanderers,3,0,1,1-0,2021-22_au1.txt
+,Western United,Melbourne City FC,1,0,1,0-0,2021-22_au1.txt
+16.05,Sydney FC,Central Coast Mariners,3,2,1,1-0,2021-22_au1.txt
+18.45,Newcastle United Jets,Adelaide United,1,2,2,0-0,2021-22_au1.txt
+19.05,Wellington Phoenix,Melbourne Victory,1,0,1,0-0,2021-22_au1.txt
+19.55,Perth Glory,Macarthur FC,0,1,2,0-1,2021-22_au1.txt
+19.45,Newcastle United Jets,Brisbane Roar,2,1,1,1-0,2021-22_au1.txt
+19.45,Adelaide United,Sydney FC,1,2,2,1-1,2021-22_au1.txt
+16.05,Wellington Phoenix,Macarthur FC,3,1,1,1-0,2021-22_au1.txt
+19.05,Melbourne City FC,Perth Glory,2,2,X,2-1,2021-22_au1.txt
+19.05,Melbourne Victory,Western United,1,1,X,0-0,2021-22_au1.txt
+19.05,Western Sydney Wanderers,Central Coast Mariners,2,2,X,1-0,2021-22_au1.txt
+19.45,Western Sydney Wanderers,Melbourne City FC,1,3,2,0-2,2021-22_au1.txt
+16.50,Wellington Phoenix,Adelaide United,1,1,X,1-0,2021-22_au1.txt
+19.45,Sydney FC,Western United,1,1,X,0-0,2021-22_au1.txt
+,Melbourne Victory,Newcastle United Jets,1,2,2,1-0,2021-22_au1.txt
+17.45,Central Coast Mariners,Perth Glory,1,1,X,0-0,2021-22_au1.txt
+18.45,Brisbane Roar,Macarthur FC,3,1,1,1-0,2021-22_au1.txt
+19.45,Melbourne City FC,Newcastle United Jets,3,0,1,1-0,2021-22_au1.txt
+17.05,Wellington Phoenix,Sydney FC,1,1,X,1-0,2021-22_au1.txt
+19.45,Melbourne Victory,Central Coast Mariners,1,0,1,0-0,2021-22_au1.txt
+,Macarthur FC,Adelaide United,4,1,1,1-1,2021-22_au1.txt
+16.05,Perth Glory,Brisbane Roar,2,0,1,1-0,2021-22_au1.txt
+18.45,Western United,Western Sydney Wanderers,3,2,1,2-0,2021-22_au1.txt
+17.05,Newcastle United Jets,Macarthur FC,2,2,X,1-1,2021-22_au1.txt
+19.45,Sydney FC,Melbourne City FC,1,2,2,0-1,2021-22_au1.txt
+,Adelaide United,Central Coast Mariners,2,1,1,0-1,2021-22_au1.txt
+18.45,Perth Glory,Western United,0,2,2,0-1,2021-22_au1.txt
+14.05,Brisbane Roar,Melbourne Victory,1,1,X,0-0,2021-22_au1.txt
+19.05,Western Sydney Wanderers,Wellington Phoenix,1,2,2,1-1,2021-22_au1.txt
+19.45,Melbourne Victory,Macarthur FC,3,1,1,2-0,2021-22_au1.txt
+15.05,Western United,Newcastle United Jets,2,1,1,1-0,2021-22_au1.txt
+17.05,Central Coast Mariners,Brisbane Roar,2,1,1,0-0,2021-22_au1.txt
+19.45,Western Sydney Wanderers,Sydney FC,2,0,1,1-0,2021-22_au1.txt
+19.05,Perth Glory,Adelaide United,1,2,2,0-1,2021-22_au1.txt
+16.35,Wellington Phoenix,Melbourne City FC,0,6,2,0-1,2021-22_au1.txt
+17.05,Brisbane Roar,Wellington Phoenix,2,1,1,1-0,2021-22_au1.txt
+19.45,Macarthur FC,Western Sydney Wanderers,3,1,1,1-0,2021-22_au1.txt
+19.15,Adelaide United,Newcastle United Jets,2,1,1,1-0,2021-22_au1.txt
+22.05,Perth Glory,Central Coast Mariners,0,0,X,,2021-22_au1.txt
+19.45,Sydney FC,Western United,3,0,1,1-0,2021-22_au1.txt
+,Melbourne City FC,Melbourne Victory,1,1,X,1-1,2021-22_au1.txt
+17.05,Western United,Melbourne City FC,2,2,X,2-1,2021-22_au1.txt
+19.45,Newcastle United Jets,Wellington Phoenix,4,0,1,0-0,2021-22_au1.txt
+17.05,Central Coast Mariners,Macarthur FC,4,2,1,1-1,2021-22_au1.txt
+22.45,Perth Glory,Brisbane Roar,1,4,2,0-1,2021-22_au1.txt
+19.05,Western Sydney Wanderers,Adelaide United,0,0,X,,2021-22_au1.txt
+19.45,Sydney FC,Melbourne Victory,1,4,2,1-3,2021-22_au1.txt
+19.45,Newcastle United Jets,Sydney FC,2,0,1,2-0,2021-22_au1.txt
+17.05,Wellington Phoenix,Perth Glory,2,1,1,1-0,2021-22_au1.txt
+,Brisbane Roar,Western United,2,3,2,1-1,2021-22_au1.txt
+19.45,Macarthur FC,Melbourne City FC,0,1,2,0-0,2021-22_au1.txt
+,Central Coast Mariners,Adelaide United,3,0,1,0-0,2021-22_au1.txt
+19.05,Melbourne Victory,Western Sydney Wanderers,1,1,X,0-0,2021-22_au1.txt
+19.05,Sydney FC,Macarthur FC,2,2,X,1-2,2021-22_au1.txt
+14.05,Western United,Central Coast Mariners,2,2,X,0-1,2021-22_au1.txt
+19.45,Adelaide United,Melbourne Victory,0,1,2,0-1,2021-22_au1.txt
+16.05,Brisbane Roar,Newcastle United Jets,2,0,1,0-0,2021-22_au1.txt
+19.45,Perth Glory,Western Sydney Wanderers,1,1,X,1-0,2021-22_au1.txt
+19.05,Melbourne City FC,Wellington Phoenix,2,1,1,2-0,2021-22_au1.txt
+16.05,Central Coast Mariners,Melbourne City FC,1,3,2,1-1,2021-22_au1.txt
+19.05,Brisbane Roar,Wellington Phoenix,0,3,2,0-1,2021-22_au1.txt
+21.05,Perth Glory,Melbourne Victory,0,1,2,0-0,2021-22_au1.txt
+19.05,Sydney FC,Adelaide United,2,3,2,1-1,2021-22_au1.txt
+17.05,Western United,Macarthur FC,2,0,1,0-0,2021-22_au1.txt
+19.05,Western Sydney Wanderers,Newcastle United Jets,3,2,1,3-0,2021-22_au1.txt
+19.45,Wellington Phoenix,Western United,2,1,1,2-0,2021-22_au1.txt
+19.45,Adelaide United,Macarthur FC,1,0,1,1-0,2021-22_au1.txt
+17.05,Western Sydney Wanderers,Brisbane Roar,1,1,X,1-0,2021-22_au1.txt
+19.45,Melbourne Victory,Melbourne City FC,3,0,1,3-0,2021-22_au1.txt
+,Central Coast Mariners,Sydney FC,0,5,2,0-1,2021-22_au1.txt
+16.05,Newcastle United Jets,Perth Glory,6,1,1,3-0,2021-22_au1.txt
+19.55,Melbourne City FC,Adelaide United,1,2,2,1-1,2021-22_au1.txt
+19.45,Sydney FC,Western Sydney Wanderers,3,2,1,1-1,2021-22_au1.txt
+19.45,Macarthur FC,Brisbane Roar,2,1,1,1-0,2021-22_au1.txt
+17.05,Western United,Perth Glory,6,0,1,4-0,2021-22_au1.txt
+19.45,Newcastle United Jets,Melbourne Victory,1,2,2,0-1,2021-22_au1.txt
+13.05,Wellington Phoenix,Central Coast Mariners,0,4,2,0-1,2021-22_au1.txt
+19.45,Macarthur FC,Melbourne Victory,1,4,2,0-1,2021-22_au1.txt
+19.45,Newcastle United Jets,Central Coast Mariners,2,4,2,0-3,2021-22_au1.txt
+13.05,Wellington Phoenix,Western Sydney Wanderers,1,0,1,1-0,2021-22_au1.txt
+21.05,Perth Glory,Melbourne City FC,2,0,1,1-0,2021-22_au1.txt
+18.20,Adelaide United,Western United,2,1,1,1-1,2021-22_au1.txt
+19.05,Brisbane Roar,Sydney FC,3,1,1,2-1,2021-22_au1.txt
+18.45,Melbourne City FC,Western Sydney Wanderers,3,3,X,2-2,2021-22_au1.txt
+19.05,Perth Glory,Sydney FC,0,2,2,0-1,2021-22_au1.txt
+19.45,Melbourne Victory,Wellington Phoenix,3,1,1,1-1,2021-22_au1.txt
+16.05,Central Coast Mariners,Western United,1,0,1,0-0,2021-22_au1.txt
+19.45,Adelaide United,Brisbane Roar,2,0,1,2-0,2021-22_au1.txt
+16.05,Macarthur FC,Newcastle United Jets,0,3,2,0-1,2021-22_au1.txt
+19.45,Western United,Wellington Phoenix,1,0,1,1-0,2021-22_au1.txt
+16.05,Adelaide United,Central Coast Mariners,3,1,1,1-0,2021-22_au1.txt
+19.05,Western United,Melbourne Victory,0,1,2,0-0,2021-22_au1.txt
+19.05,Adelaide United,Melbourne City FC,0,0,X,,2021-22_au1.txt
+17.15,Melbourne Victory,Western United,1,4,2,1-1,2021-22_au1.txt
+14.05,Melbourne City FC,Adelaide United,2,1,1,,2021-22_au1.txt
+19.45,Melbourne City FC,Western United,0,2,2,0-2,2021-22_au1.txt
+19.45,Melbourne City FC,Western United,2,1,1,1-0,2022-23_au1.txt
+17.00,Brisbane Roar,Macarthur FC,0,0,X,,2022-23_au1.txt
+19.45,Sydney FC,Melbourne Victory,2,3,2,1-1,2022-23_au1.txt
+13.00,Wellington Phoenix,Adelaide United,1,1,X,0-0,2022-23_au1.txt
+15.00,Western Sydney Wanderers,Perth Glory,1,0,1,0-0,2022-23_au1.txt
+19.00,Central Coast Mariners,Newcastle United Jets,3,0,1,1-0,2022-23_au1.txt
+19.45,Brisbane Roar,Melbourne City FC,0,2,2,0-2,2022-23_au1.txt
+17.00,Newcastle United Jets,Perth Glory,2,1,1,0-0,2022-23_au1.txt
+19.45,Melbourne Victory,Western Sydney Wanderers,0,1,2,0-1,2022-23_au1.txt
+13.00,Wellington Phoenix,Central Coast Mariners,2,2,X,0-0,2022-23_au1.txt
+15.00,Macarthur FC,Adelaide United,2,0,1,1-0,2022-23_au1.txt
+17.00,Western United,Sydney FC,1,3,2,1-2,2022-23_au1.txt
+19.45,Western United,Macarthur FC,1,1,X,0-1,2022-23_au1.txt
+17.00,Newcastle United Jets,Wellington Phoenix,3,1,1,3-1,2022-23_au1.txt
+,Western Sydney Wanderers,Brisbane Roar,1,1,X,1-0,2022-23_au1.txt
+19.45,Melbourne Victory,Melbourne City FC,0,2,2,0-2,2022-23_au1.txt
+15.00,Sydney FC,Adelaide United,2,2,X,0-1,2022-23_au1.txt
+17.00,Central Coast Mariners,Perth Glory,1,2,2,1-1,2022-23_au1.txt
+19.45,Western Sydney Wanderers,Newcastle United Jets,2,0,1,1-0,2022-23_au1.txt
+15.00,Brisbane Roar,Melbourne Victory,0,0,X,,2022-23_au1.txt
+17.15,Central Coast Mariners,Western United,4,2,1,0-2,2022-23_au1.txt
+19.45,Macarthur FC,Sydney FC,2,3,2,1-2,2022-23_au1.txt
+15.00,Adelaide United,Perth Glory,2,1,1,2-1,2022-23_au1.txt
+17.00,Melbourne City FC,Wellington Phoenix,2,2,X,2-0,2022-23_au1.txt
+19.45,Melbourne Victory,Newcastle United Jets,4,0,1,1-0,2022-23_au1.txt
+17.00,Melbourne City FC,Perth Glory,4,0,1,0-0,2022-23_au1.txt
+19.45,Western Sydney Wanderers,Central Coast Mariners,0,3,2,0-0,2022-23_au1.txt
+13.00,Wellington Phoenix,Macarthur FC,4,1,1,1-0,2022-23_au1.txt
+15.00,Brisbane Roar,Sydney FC,3,1,1,2-1,2022-23_au1.txt
+17.00,Western United,Adelaide United,2,4,2,0-3,2022-23_au1.txt
+19.45,Adelaide United,Melbourne Victory,3,0,1,1-0,2022-23_au1.txt
+17.00,Newcastle United Jets,Melbourne City FC,1,2,2,1-1,2022-23_au1.txt
+19.45,Sydney FC,Western Sydney Wanderers,0,1,2,0-0,2022-23_au1.txt
+13.00,Wellington Phoenix,Western United,2,3,2,1-0,2022-23_au1.txt
+15.00,Central Coast Mariners,Macarthur FC,2,3,2,0-1,2022-23_au1.txt
+22.30,Perth Glory,Brisbane Roar,2,1,1,1-0,2022-23_au1.txt
+19.45,Brisbane Roar,Adelaide United,1,1,X,0-0,2022-23_au1.txt
+17.00,Wellington Phoenix,Western Sydney Wanderers,1,1,X,0-0,2022-23_au1.txt
+19.45,Sydney FC,Melbourne City FC,2,1,1,1-1,2022-23_au1.txt
+22.30,Perth Glory,Western United,2,1,1,1-0,2022-23_au1.txt
+15.00,Central Coast Mariners,Newcastle United Jets,1,2,2,0-1,2022-23_au1.txt
+17.00,Macarthur FC,Melbourne Victory,0,1,2,0-0,2022-23_au1.txt
+19.45,Newcastle United Jets,Brisbane Roar,0,1,2,0-0,2022-23_au1.txt
+13.00,Wellington Phoenix,Adelaide United,3,1,1,2-1,2022-23_au1.txt
+17.00,Central Coast Mariners,Sydney FC,2,1,1,2-1,2022-23_au1.txt
+15.00,Western United,Western Sydney Wanderers,1,0,1,1-0,2022-23_au1.txt
+17.00,Macarthur FC,Perth Glory,1,0,1,0-0,2022-23_au1.txt
+19.00,Melbourne City FC,Melbourne Victory,2,1,1,1-0,2022-23_au1.txt
+19.45,Brisbane Roar,Western Sydney Wanderers,1,1,X,0-1,2022-23_au1.txt
+22.30,Perth Glory,Wellington Phoenix,1,1,X,1-1,2022-23_au1.txt
+17.00,Sydney FC,Macarthur FC,0,3,2,0-1,2022-23_au1.txt
+18.00,Western United,Melbourne Victory,1,0,1,1-0,2022-23_au1.txt
+17.30,Melbourne City FC,Central Coast Mariners,1,0,1,1-0,2022-23_au1.txt
+20.15,Adelaide United,Newcastle United Jets,0,1,2,0-1,2022-23_au1.txt
+19.45,Western United,Brisbane Roar,1,1,X,0-1,2022-23_au1.txt
+19.00,Central Coast Mariners,Melbourne Victory,2,1,1,1-1,2022-23_au1.txt
+15.00,Newcastle United Jets,Sydney FC,0,2,2,0-2,2022-23_au1.txt
+17.00,Western Sydney Wanderers,Macarthur FC,4,0,1,2-0,2022-23_au1.txt
+13.00,Wellington Phoenix,Melbourne City FC,1,3,2,1-1,2022-23_au1.txt
+19.45,Adelaide United,Perth Glory,2,0,1,1-0,2022-23_au1.txt
+19.45,Melbourne Victory,Brisbane Roar,0,1,2,0-0,2022-23_au1.txt
+22.30,Perth Glory,Western Sydney Wanderers,1,0,1,0-0,2022-23_au1.txt
+17.00,Sydney FC,Wellington Phoenix,0,1,2,0-1,2022-23_au1.txt
+,Central Coast Mariners,Adelaide United,4,0,1,1-0,2022-23_au1.txt
+19.45,Melbourne City FC,Western United,4,0,1,3-0,2022-23_au1.txt
+15.00,Macarthur FC,Newcastle United Jets,2,0,1,1-0,2022-23_au1.txt
+19.45,Macarthur FC,Central Coast Mariners,1,2,2,0-2,2022-23_au1.txt
+17.00,Brisbane Roar,Wellington Phoenix,0,1,2,0-0,2022-23_au1.txt
+19.45,Adelaide United,Melbourne Victory,1,1,X,1-0,2022-23_au1.txt
+22.30,Perth Glory,Sydney FC,2,2,X,0-2,2022-23_au1.txt
+15.00,Western Sydney Wanderers,Melbourne City FC,1,1,X,1-0,2022-23_au1.txt
+17.00,Western United,Newcastle United Jets,1,1,X,1-1,2022-23_au1.txt
+19.45,Adelaide United,Macarthur FC,1,0,1,1-0,2022-23_au1.txt
+17.00,Western United,Sydney FC,1,0,1,0-0,2022-23_au1.txt
+19.45,Brisbane Roar,Melbourne City FC,0,0,X,,2022-23_au1.txt
+22.30,Perth Glory,Melbourne Victory,3,1,1,1-0,2022-23_au1.txt
+13.00,Wellington Phoenix,Central Coast Mariners,2,1,1,2-0,2022-23_au1.txt
+15.00,Newcastle United Jets,Western Sydney Wanderers,1,1,X,1-0,2022-23_au1.txt
+18.45,Melbourne Victory,Sydney FC,1,2,2,1-1,2022-23_au1.txt
+19.45,Newcastle United Jets,Brisbane Roar,4,0,1,0-0,2022-23_au1.txt
+13.00,Wellington Phoenix,Perth Glory,2,2,X,2-1,2022-23_au1.txt
+17.00,Macarthur FC,Western United,2,2,X,0-0,2022-23_au1.txt
+19.45,Central Coast Mariners,Western Sydney Wanderers,2,2,X,1-1,2022-23_au1.txt
+15.00,Melbourne City FC,Adelaide United,3,3,X,1-3,2022-23_au1.txt
+19.45,Melbourne Victory,Wellington Phoenix,3,1,1,1-1,2022-23_au1.txt
+17.00,Melbourne City FC,Macarthur FC,6,1,1,3-0,2022-23_au1.txt
+,Sydney FC,Central Coast Mariners,3,2,1,1-2,2022-23_au1.txt
+19.45,Adelaide United,Brisbane Roar,2,1,1,1-1,2022-23_au1.txt
+22.30,Perth Glory,Newcastle United Jets,2,2,X,1-0,2022-23_au1.txt
+15.00,Western Sydney Wanderers,Western United,1,0,1,1-0,2022-23_au1.txt
+19.45,Brisbane Roar,Central Coast Mariners,1,2,2,1-1,2022-23_au1.txt
+17.00,Western United,Adelaide United,2,3,2,1-0,2022-23_au1.txt
+19.45,Western Sydney Wanderers,Sydney FC,0,1,2,0-1,2022-23_au1.txt
+22.30,Perth Glory,Melbourne City FC,2,4,2,1-1,2022-23_au1.txt
+15.00,Newcastle United Jets,Melbourne Victory,2,1,1,1-0,2022-23_au1.txt
+17.00,Macarthur FC,Wellington Phoenix,2,1,1,1-1,2022-23_au1.txt
+19.45,Western United,Wellington Phoenix,0,3,2,0-1,2022-23_au1.txt
+17.00,Sydney FC,Brisbane Roar,1,1,X,0-1,2022-23_au1.txt
+18.00,Macarthur FC,Newcastle United Jets,0,1,2,0-1,2022-23_au1.txt
+19.45,Melbourne Victory,Melbourne City FC,3,2,1,1-1,2022-23_au1.txt
+22.30,Perth Glory,Central Coast Mariners,2,2,X,1-0,2022-23_au1.txt
+15.00,Adelaide United,Western Sydney Wanderers,4,4,X,2-1,2022-23_au1.txt
+19.45,Central Coast Mariners,Wellington Phoenix,1,1,X,1-0,2022-23_au1.txt
+17.00,Newcastle United Jets,Western United,1,3,2,1-2,2022-23_au1.txt
+,Melbourne City FC,Sydney FC,3,2,1,3-1,2022-23_au1.txt
+19.45,Western Sydney Wanderers,Macarthur FC,4,0,1,2-0,2022-23_au1.txt
+15.00,Melbourne Victory,Adelaide United,1,1,X,0-0,2022-23_au1.txt
+17.00,Brisbane Roar,Perth Glory,2,1,1,2-1,2022-23_au1.txt
+19.45,Adelaide United,Melbourne City FC,4,2,1,1-1,2022-23_au1.txt
+13.00,Wellington Phoenix,Newcastle United Jets,2,1,1,2-0,2022-23_au1.txt
+17.00,Western United,Perth Glory,2,1,1,2-1,2022-23_au1.txt
+,Western Sydney Wanderers,Central Coast Mariners,2,0,1,1-0,2022-23_au1.txt
+19.45,Sydney FC,Melbourne Victory,1,0,1,1-0,2022-23_au1.txt
+15.00,Macarthur FC,Brisbane Roar,3,2,1,1-0,2022-23_au1.txt
+22.00,Perth Glory,Western Sydney Wanderers,1,0,1,0-0,2022-23_au1.txt
+17.00,Central Coast Mariners,Macarthur FC,4,1,1,1-1,2022-23_au1.txt
+19.45,Newcastle United Jets,Adelaide United,2,4,2,2-3,2022-23_au1.txt
+13.00,Wellington Phoenix,Sydney FC,1,0,1,1-0,2022-23_au1.txt
+15.00,Melbourne City FC,Brisbane Roar,2,1,1,1-0,2022-23_au1.txt
+18.00,Melbourne Victory,Western United,1,2,2,0-1,2022-23_au1.txt
+19.45,Adelaide United,Wellington Phoenix,5,1,1,2-0,2022-23_au1.txt
+17.00,Newcastle United Jets,Perth Glory,2,2,X,1-0,2022-23_au1.txt
+,Brisbane Roar,Western United,1,0,1,0-0,2022-23_au1.txt
+19.45,Sydney FC,Western Sydney Wanderers,0,4,2,0-2,2022-23_au1.txt
+17.00,Melbourne Victory,Central Coast Mariners,2,0,1,1-0,2022-23_au1.txt
+19.00,Macarthur FC,Melbourne City FC,1,1,X,1-0,2022-23_au1.txt
+19.45,Western Sydney Wanderers,Adelaide United,2,3,2,1-1,2022-23_au1.txt
+13.00,Wellington Phoenix,Melbourne Victory,1,2,2,1-0,2022-23_au1.txt
+17.00,Central Coast Mariners,Brisbane Roar,4,1,1,3-0,2022-23_au1.txt
+19.45,Sydney FC,Western United,3,3,X,1-2,2022-23_au1.txt
+22.00,Perth Glory,Macarthur FC,2,1,1,0-1,2022-23_au1.txt
+15.00,Melbourne City FC,Newcastle United Jets,1,1,X,0-1,2022-23_au1.txt
+15.00,Western United,Central Coast Mariners,0,3,2,0-2,2022-23_au1.txt
+17.00,Adelaide United,Sydney FC,1,1,X,0-0,2022-23_au1.txt
+17.00,Brisbane Roar,Newcastle United Jets,3,0,1,1-0,2022-23_au1.txt
+19.45,Macarthur FC,Western Sydney Wanderers,2,2,X,0-1,2022-23_au1.txt
+15.00,Melbourne Victory,Perth Glory,0,0,X,,2022-23_au1.txt
+16.00,Melbourne City FC,Wellington Phoenix,4,1,1,1-0,2022-23_au1.txt
+19.45,Newcastle United Jets,Macarthur FC,2,1,1,0-0,2022-23_au1.txt
+17.00,Central Coast Mariners,Melbourne City FC,1,1,X,0-0,2022-23_au1.txt
+19.45,Western Sydney Wanderers,Melbourne Victory,2,1,1,1-0,2022-23_au1.txt
+13.00,Wellington Phoenix,Brisbane Roar,2,2,X,1-1,2022-23_au1.txt
+15.00,Sydney FC,Perth Glory,4,1,1,1-1,2022-23_au1.txt
+17.00,Adelaide United,Western United,0,1,2,0-1,2022-23_au1.txt
+19.45,Western Sydney Wanderers,Wellington Phoenix,4,0,1,2-0,2022-23_au1.txt
+17.00,Newcastle United Jets,Central Coast Mariners,1,3,2,1-1,2022-23_au1.txt
+19.45,Western United,Melbourne City FC,1,3,2,1-1,2022-23_au1.txt
+15.00,Melbourne Victory,Macarthur FC,2,1,1,1-0,2022-23_au1.txt
+18.00,Perth Glory,Adelaide United,4,4,X,1-1,2022-23_au1.txt
+19.00,Brisbane Roar,Sydney FC,0,2,2,0-1,2022-23_au1.txt
+19.45,Melbourne City FC,Western Sydney Wanderers,3,2,1,0-1,2022-23_au1.txt
+,Adelaide United,Central Coast Mariners,1,4,2,0-2,2022-23_au1.txt
+17.00,Sydney FC,Newcastle United Jets,2,0,1,1-0,2022-23_au1.txt
+,Macarthur FC,Wellington Phoenix,0,1,2,0-1,2022-23_au1.txt
+19.45,Melbourne Victory,Brisbane Roar,0,1,2,0-0,2022-23_au1.txt
+22.00,Perth Glory,Western United,1,2,2,1-1,2022-23_au1.txt
+19.45,Adelaide United,Wellington Phoenix,2,0,1,1-0,2022-23_au1.txt
+19.45,Western Sydney Wanderers,Sydney FC,1,2,2,1-0,2022-23_au1.txt
+19.45,Sydney FC,Melbourne City FC,1,1,X,0-1,2022-23_au1.txt
+19.45,Adelaide United,Central Coast Mariners,1,2,2,1-2,2022-23_au1.txt
+19.45,Melbourne City FC,Sydney FC,4,0,1,1-0,2022-23_au1.txt
+19.45,Central Coast Mariners,Adelaide United,2,0,1,0-0,2022-23_au1.txt
+19.45,Melbourne City FC,Central Coast Mariners,1,6,2,1-2,2022-23_au1.txt
+19.45,Adelaide United,Central Coast Mariners,3,0,1,1-0,2023-24_au1.txt
+15.30,Macarthur FC,Brisbane Roar,1,1,X,0-0,2023-24_au1.txt
+17.30,Melbourne City FC,Western United,1,2,2,0-0,2023-24_au1.txt
+19.45,Sydney FC,Melbourne Victory,0,2,2,0-0,2023-24_au1.txt
+15.00,Western Sydney Wanderers,Wellington Phoenix,0,0,X,,2023-24_au1.txt
+19.45,Perth Glory,Newcastle United Jets,2,2,X,1-1,2023-24_au1.txt
+19.45,Brisbane Roar,Sydney FC,3,0,1,2-0,2023-24_au1.txt
+15.30,Wellington Phoenix,Perth Glory,2,1,1,1-0,2023-24_au1.txt
+19.45,Western Sydney Wanderers,Western United,5,0,1,5-0,2023-24_au1.txt
+15.00,Central Coast Mariners,Macarthur FC,1,2,2,0-0,2023-24_au1.txt
+17.00,Melbourne Victory,Newcastle United Jets,5,3,1,4-1,2023-24_au1.txt
+19.00,Adelaide United,Melbourne City FC,6,0,1,2-0,2023-24_au1.txt
+19.45,Melbourne City FC,Sydney FC,2,0,1,1-0,2023-24_au1.txt
+15.30,Wellington Phoenix,Brisbane Roar,5,2,1,2-1,2023-24_au1.txt
+17.30,Macarthur FC,Western United,1,0,1,0-0,2023-24_au1.txt
+19.45,Melbourne Victory,Adelaide United,1,1,X,1-0,2023-24_au1.txt
+21.45,Perth Glory,Central Coast Mariners,2,0,1,0-0,2023-24_au1.txt
+15.00,Newcastle United Jets,Western Sydney Wanderers,2,2,X,2-0,2023-24_au1.txt
+19.45,Melbourne Victory,Wellington Phoenix,1,1,X,1-1,2023-24_au1.txt
+15.30,Western United,Newcastle United Jets,0,1,2,0-1,2023-24_au1.txt
+17.30,Western Sydney Wanderers,Perth Glory,2,0,1,0-0,2023-24_au1.txt
+19.45,Adelaide United,Sydney FC,1,5,2,0-4,2023-24_au1.txt
+15.00,Melbourne City FC,Macarthur FC,3,3,X,0-0,2023-24_au1.txt
+17.00,Central Coast Mariners,Brisbane Roar,1,2,2,1-2,2023-24_au1.txt
+19.45,Macarthur FC,Melbourne Victory,1,1,X,1-0,2023-24_au1.txt
+14.30,Wellington Phoenix,Melbourne City FC,1,0,1,0-0,2023-24_au1.txt
+17.30,Central Coast Mariners,Newcastle United Jets,3,1,1,1-0,2023-24_au1.txt
+19.45,Sydney FC,Western Sydney Wanderers,0,1,2,0-0,2023-24_au1.txt
+15.00,Brisbane Roar,Perth Glory,2,1,1,0-0,2023-24_au1.txt
+17.00,Western United,Adelaide United,1,3,2,0-1,2023-24_au1.txt
+19.45,Brisbane Roar,Western Sydney Wanderers,2,2,X,2-0,2023-24_au1.txt
+17.30,Western United,Wellington Phoenix,0,1,2,0-0,2023-24_au1.txt
+19.45,Sydney FC,Perth Glory,3,2,1,2-0,2023-24_au1.txt
+15.00,Central Coast Mariners,Melbourne Victory,2,2,X,1-1,2023-24_au1.txt
+17.00,Newcastle United Jets,Melbourne City FC,0,2,2,0-1,2023-24_au1.txt
+19.00,Macarthur FC,Adelaide United,4,3,1,2-2,2023-24_au1.txt
+19.45,Central Coast Mariners,Western United,4,0,1,3-0,2023-24_au1.txt
+21.45,Perth Glory,Melbourne City FC,1,2,2,1-1,2023-24_au1.txt
+17.30,Wellington Phoenix,Newcastle United Jets,0,3,2,0-2,2023-24_au1.txt
+19.45,Sydney FC,Macarthur FC,0,2,2,0-1,2023-24_au1.txt
+15.00,Adelaide United,Brisbane Roar,0,2,2,0-0,2023-24_au1.txt
+17.00,Western Sydney Wanderers,Melbourne Victory,3,4,2,0-2,2023-24_au1.txt
+18.00,Western United,Brisbane Roar,2,1,1,0-0,2023-24_au1.txt
+19.45,Western Sydney Wanderers,Adelaide United,1,0,1,1-0,2023-24_au1.txt
+18.00,Newcastle United Jets,Perth Glory,2,2,X,1-0,2023-24_au1.txt
+19.45,Melbourne Victory,Sydney FC,3,0,1,2-0,2023-24_au1.txt
+17.00,Melbourne City FC,Central Coast Mariners,3,3,X,1-0,2023-24_au1.txt
+19.00,Macarthur FC,Wellington Phoenix,0,3,2,0-1,2023-24_au1.txt
+19.45,Brisbane Roar,Central Coast Mariners,0,3,2,0-1,2023-24_au1.txt
+19.45,Adelaide United,Newcastle United Jets,3,1,1,1-0,2023-24_au1.txt
+15.30,Wellington Phoenix,Western Sydney Wanderers,2,0,1,0-0,2023-24_au1.txt
+17.30,Sydney FC,Western United,4,2,1,2-1,2023-24_au1.txt
+19.45,Melbourne City FC,Melbourne Victory,0,0,X,,2023-24_au1.txt
+22.30,Perth Glory,Macarthur FC,3,2,1,0-2,2023-24_au1.txt
+19.45,Melbourne City FC,Brisbane Roar,8,1,1,3-0,2023-24_au1.txt
+19.45,Sydney FC,Wellington Phoenix,3,1,1,1-0,2023-24_au1.txt
+17.30,Newcastle United Jets,Western United,2,0,1,2-0,2023-24_au1.txt
+19.45,Melbourne Victory,Adelaide United,2,0,1,0-0,2023-24_au1.txt
+19.00,Central Coast Mariners,Perth Glory,4,2,1,3-1,2023-24_au1.txt
+17.00,Western Sydney Wanderers,Macarthur FC,3,1,1,2-1,2023-24_au1.txt
+19.45,Adelaide United,Wellington Phoenix,2,2,X,1-1,2023-24_au1.txt
+19.45,Macarthur FC,Newcastle United Jets,1,1,X,0-1,2023-24_au1.txt
+17.30,Western Sydney Wanderers,Central Coast Mariners,0,1,2,0-1,2023-24_au1.txt
+19.45,Brisbane Roar,Sydney FC,1,2,2,1-2,2023-24_au1.txt
+21.45,Perth Glory,Melbourne Victory,2,3,2,1-1,2023-24_au1.txt
+17.00,Western United,Melbourne City FC,1,2,2,1-0,2023-24_au1.txt
+19.45,Adelaide United,Macarthur FC,1,1,X,1-1,2023-24_au1.txt
+19.00,Newcastle United Jets,Brisbane Roar,3,1,1,1-0,2023-24_au1.txt
+14.00,Wellington Phoenix,Central Coast Mariners,0,0,X,,2023-24_au1.txt
+19.00,Melbourne Victory,Western United,2,1,1,0-0,2023-24_au1.txt
+19.00,Melbourne City FC,Western Sydney Wanderers,7,0,1,4-0,2023-24_au1.txt
+21.45,Perth Glory,Sydney FC,1,1,X,0-1,2023-24_au1.txt
+19.45,Brisbane Roar,Macarthur FC,1,3,2,0-1,2023-24_au1.txt
+17.00,Wellington Phoenix,Melbourne Victory,1,1,X,0-0,2023-24_au1.txt
+19.45,Sydney FC,Newcastle United Jets,4,0,1,1-0,2023-24_au1.txt
+19.45,Western Sydney Wanderers,Perth Glory,1,2,2,0-1,2023-24_au1.txt
+18.00,Central Coast Mariners,Melbourne City FC,2,1,1,0-0,2023-24_au1.txt
+19.00,Western United,Adelaide United,3,3,X,2-1,2023-24_au1.txt
+19.45,Melbourne City FC,Adelaide United,1,0,1,1-0,2023-24_au1.txt
+19.45,Melbourne Victory,Sydney FC,1,1,X,1-1,2023-24_au1.txt
+17.00,Western United,Western Sydney Wanderers,0,1,2,0-1,2023-24_au1.txt
+18.00,Newcastle United Jets,Wellington Phoenix,1,2,2,0-1,2023-24_au1.txt
+19.45,Central Coast Mariners,Brisbane Roar,2,0,1,1-0,2023-24_au1.txt
+17.00,Macarthur FC,Perth Glory,2,2,X,1-0,2023-24_au1.txt
+19.45,Brisbane Roar,Wellington Phoenix,1,1,X,0-0,2023-24_au1.txt
+21.45,Perth Glory,Melbourne City FC,4,2,1,1-1,2023-24_au1.txt
+17.00,Western United,Sydney FC,2,2,X,1-2,2023-24_au1.txt
+18.00,Newcastle United Jets,Melbourne Victory,1,1,X,0-1,2023-24_au1.txt
+19.45,Adelaide United,Central Coast Mariners,0,4,2,0-3,2023-24_au1.txt
+19.00,Macarthur FC,Western Sydney Wanderers,4,3,1,3-3,2023-24_au1.txt
+19.45,Adelaide United,Perth Glory,3,3,X,2-1,2023-24_au1.txt
+15.30,Wellington Phoenix,Western United,2,0,1,1-0,2023-24_au1.txt
+17.30,Melbourne Victory,Macarthur FC,0,1,2,0-1,2023-24_au1.txt
+18.00,Brisbane Roar,Melbourne City FC,5,1,1,4-0,2023-24_au1.txt
+19.45,Central Coast Mariners,Sydney FC,1,3,2,0-3,2023-24_au1.txt
+17.00,Western Sydney Wanderers,Newcastle United Jets,3,3,X,2-1,2023-24_au1.txt
+19.45,Western United,Newcastle United Jets,2,0,1,1-0,2023-24_au1.txt
+18.00,Sydney FC,Adelaide United,2,1,1,1-0,2023-24_au1.txt
+19.45,Melbourne City FC,Melbourne Victory,0,0,X,,2023-24_au1.txt
+21.45,Perth Glory,Brisbane Roar,3,2,1,1-2,2023-24_au1.txt
+17.00,Macarthur FC,Wellington Phoenix,1,2,2,0-1,2023-24_au1.txt
+,Central Coast Mariners,Western Sydney Wanderers,1,0,1,0-0,2023-24_au1.txt
+19.45,Brisbane Roar,Western United,2,2,X,0-1,2023-24_au1.txt
+17.30,Sydney FC,Melbourne City FC,1,1,X,1-0,2023-24_au1.txt
+19.45,Adelaide United,Western Sydney Wanderers,1,2,2,0-2,2023-24_au1.txt
+21.45,Perth Glory,Wellington Phoenix,0,0,X,,2023-24_au1.txt
+17.00,Newcastle United Jets,Macarthur FC,2,2,X,0-0,2023-24_au1.txt
+,Melbourne Victory,Central Coast Mariners,0,1,2,0-0,2023-24_au1.txt
+19.45,Macarthur FC,Melbourne City FC,2,0,1,0-0,2023-24_au1.txt
+17.00,Western United,Perth Glory,1,0,1,0-0,2023-24_au1.txt
+18.00,Newcastle United Jets,Central Coast Mariners,0,1,2,0-0,2023-24_au1.txt
+19.45,Western Sydney Wanderers,Sydney FC,1,4,2,0-2,2023-24_au1.txt
+15.00,Wellington Phoenix,Adelaide United,3,2,1,1-0,2023-24_au1.txt
+17.00,Brisbane Roar,Melbourne Victory,3,2,1,1-1,2023-24_au1.txt
+19.45,Western Sydney Wanderers,Western United,1,3,2,0-0,2023-24_au1.txt
+19.00,Melbourne City FC,Wellington Phoenix,1,0,1,0-0,2023-24_au1.txt
+20.15,Adelaide United,Melbourne Victory,1,2,2,0-1,2023-24_au1.txt
+21.45,Perth Glory,Newcastle United Jets,2,2,X,0-1,2023-24_au1.txt
+17.00,Macarthur FC,Central Coast Mariners,0,3,2,0-2,2023-24_au1.txt
+,Sydney FC,Brisbane Roar,1,1,X,0-0,2023-24_au1.txt
+19.00,Western United,Melbourne Victory,2,2,X,1-0,2023-24_au1.txt
+19.45,Newcastle United Jets,Adelaide United,0,1,2,0-0,2023-24_au1.txt
+15.30,Wellington Phoenix,Sydney FC,2,1,1,0-1,2023-24_au1.txt
+16.00,Brisbane Roar,Macarthur FC,1,2,2,1-2,2023-24_au1.txt
+19.45,Perth Glory,Western Sydney Wanderers,1,2,2,1-1,2023-24_au1.txt
+19.00,Central Coast Mariners,Melbourne City FC,2,1,1,0-0,2023-24_au1.txt
+19.45,Adelaide United,Western United,4,1,1,1-0,2023-24_au1.txt
+17.30,Melbourne City FC,Newcastle United Jets,0,0,X,,2023-24_au1.txt
+19.45,Sydney FC,Central Coast Mariners,2,0,1,0-0,2023-24_au1.txt
+11.00,Wellington Phoenix,Brisbane Roar,1,0,1,1-0,2023-24_au1.txt
+15.00,Melbourne Victory,Perth Glory,2,1,1,1-0,2023-24_au1.txt
+15.00,Macarthur FC,Western Sydney Wanderers,1,3,2,0-0,2023-24_au1.txt
+19.45,Western Sydney Wanderers,Brisbane Roar,1,2,2,0-1,2023-24_au1.txt
+15.30,Western United,Macarthur FC,4,2,1,0-2,2023-24_au1.txt
+17.30,Central Coast Mariners,Wellington Phoenix,2,1,1,0-0,2023-24_au1.txt
+19.45,Melbourne Victory,Melbourne City FC,2,1,1,1-1,2023-24_au1.txt
+15.00,Newcastle United Jets,Sydney FC,3,1,1,2-1,2023-24_au1.txt
+17.00,Perth Glory,Adelaide United,2,4,2,2-3,2023-24_au1.txt
+17.00,Wellington Phoenix,Melbourne Victory,1,0,1,0-0,2023-24_au1.txt
+19.45,Adelaide United,Macarthur FC,1,2,2,1-0,2023-24_au1.txt
+15.30,Western United,Central Coast Mariners,0,2,2,0-0,2023-24_au1.txt
+17.30,Brisbane Roar,Newcastle United Jets,0,2,2,0-0,2023-24_au1.txt
+19.45,Sydney FC,Western Sydney Wanderers,2,1,1,0-0,2023-24_au1.txt
+15.00,Melbourne City FC,Perth Glory,8,0,1,5-0,2023-24_au1.txt
+19.45,Newcastle United Jets,Wellington Phoenix,1,1,X,1-0,2023-24_au1.txt
+15.30,Western Sydney Wanderers,Melbourne City FC,1,2,2,0-2,2023-24_au1.txt
+17.30,Melbourne Victory,Brisbane Roar,0,0,X,,2023-24_au1.txt
+19.45,Macarthur FC,Sydney FC,1,0,1,1-0,2023-24_au1.txt
+17.00,Perth Glory,Western United,3,4,2,1-1,2023-24_au1.txt
+19.00,Central Coast Mariners,Adelaide United,2,0,1,1-0,2023-24_au1.txt
+19.45,Brisbane Roar,Adelaide United,3,4,2,1-1,2023-24_au1.txt
+17.15,Wellington Phoenix,Macarthur FC,3,0,1,2-0,2023-24_au1.txt
+,Newcastle United Jets,Central Coast Mariners,1,3,2,0-1,2023-24_au1.txt
+19.45,Melbourne Victory,Western Sydney Wanderers,3,4,2,2-2,2023-24_au1.txt
+15.00,Sydney FC,Perth Glory,7,1,1,3-0,2023-24_au1.txt
+17.00,Melbourne City FC,Western United,1,0,1,1-0,2023-24_au1.txt
+17.30,Macarthur FC,Western United,3,3,X,1-1,2023-24_au1.txt
+20.15,Melbourne City FC,Western Sydney Wanderers,0,1,2,0-1,2023-24_au1.txt
+17.15,Central Coast Mariners,Melbourne Victory,1,1,X,0-1,2023-24_au1.txt
+20.00,Adelaide United,Sydney FC,4,3,1,3-1,2023-24_au1.txt
+19.45,Brisbane Roar,Newcastle United Jets,3,2,1,0-1,2023-24_au1.txt
+,Perth Glory,Wellington Phoenix,3,4,2,1-2,2023-24_au1.txt
+19.45,Sydney FC,Macarthur FC,4,0,1,1-0,2023-24_au1.txt
+17.00,Melbourne Victory,Melbourne City FC,3,2,1,,2023-24_au1.txt
+19.45,Sydney FC,Central Coast Mariners,1,2,2,1-1,2023-24_au1.txt
+16.00,Melbourne Victory,Wellington Phoenix,0,0,X,,2023-24_au1.txt
+16.30,Wellington Phoenix,Melbourne Victory,1,2,2,,2023-24_au1.txt
+19.45,Central Coast Mariners,Sydney FC,0,0,X,,2023-24_au1.txt
+19.45,Central Coast Mariners,Melbourne Victory,3,1,1,,2023-24_au1.txt
+19.35,Central Coast Mariners,Melbourne Victory,0,0,X,,2024-25_au1.txt
+15.00,Auckland FC,Brisbane Roar,2,0,1,1-0,2024-25_au1.txt
+17.00,Newcastle United Jets,Melbourne City FC,0,1,2,0-1,2024-25_au1.txt
+19.35,Western Sydney Wanderers,Sydney FC,1,2,2,0-1,2024-25_au1.txt
+14.00,Wellington Phoenix,Western United,1,1,X,1-0,2024-25_au1.txt
+16.00,Macarthur FC,Perth Glory,6,1,1,5-0,2024-25_au1.txt
+19.35,Macarthur FC,Newcastle United Jets,1,2,2,1-0,2024-25_au1.txt
+17.00,Adelaide United,Central Coast Mariners,1,1,X,1-0,2024-25_au1.txt
+19.35,Melbourne City FC,Melbourne Victory,1,3,2,0-3,2024-25_au1.txt
+21.45,Perth Glory,Wellington Phoenix,0,2,2,0-1,2024-25_au1.txt
+14.00,Auckland FC,Sydney FC,1,0,1,0-0,2024-25_au1.txt
+16.00,Western United,Western Sydney Wanderers,1,1,X,0-1,2024-25_au1.txt
+19.35,Brisbane Roar,Sydney FC,2,3,2,0-0,2024-25_au1.txt
+15.00,Wellington Phoenix,Auckland FC,0,2,2,0-0,2024-25_au1.txt
+17.00,Central Coast Mariners,Perth Glory,0,0,X,,2024-25_au1.txt
+19.35,Western Sydney Wanderers,Adelaide United,3,4,2,1-3,2024-25_au1.txt
+16.00,Melbourne Victory,Macarthur FC,2,1,1,0-0,2024-25_au1.txt
+19.00,Western United,Melbourne City FC,0,1,2,0-0,2024-25_au1.txt
+19.35,Western Sydney Wanderers,Newcastle United Jets,4,1,1,2-0,2024-25_au1.txt
+17.00,Melbourne Victory,Brisbane Roar,2,0,1,1-0,2024-25_au1.txt
+19.35,Adelaide United,Western United,2,1,1,1-1,2024-25_au1.txt
+16.00,Central Coast Mariners,Wellington Phoenix,0,3,2,0-2,2024-25_au1.txt
+18.00,Sydney FC,Macarthur FC,1,2,2,0-0,2024-25_au1.txt
+20.45,Perth Glory,Melbourne City FC,0,5,2,0-2,2024-25_au1.txt
+17.30,Perth Glory,Western United,1,3,2,0-0,2024-25_au1.txt
+20.00,Newcastle United Jets,Central Coast Mariners,1,2,2,0-0,2024-25_au1.txt
+17.00,Brisbane Roar,Adelaide United,2,3,2,2-1,2024-25_au1.txt
+19.35,Sydney FC,Western Sydney Wanderers,4,2,1,1-1,2024-25_au1.txt
+13.30,Wellington Phoenix,Melbourne Victory,1,0,1,0-0,2024-25_au1.txt
+16.00,Macarthur FC,Auckland FC,0,1,2,0-1,2024-25_au1.txt
+19.35,Adelaide United,Perth Glory,2,2,X,0-1,2024-25_au1.txt
+15.00,Auckland FC,Newcastle United Jets,2,0,1,0-0,2024-25_au1.txt
+17.00,Melbourne City FC,Western Sydney Wanderers,0,2,2,0-1,2024-25_au1.txt
+19.35,Macarthur FC,Brisbane Roar,4,4,X,1-2,2024-25_au1.txt
+16.00,Western United,Melbourne Victory,1,3,2,1-1,2024-25_au1.txt
+19.35,Brisbane Roar,Melbourne City FC,1,4,2,0-2,2024-25_au1.txt
+15.00,Auckland FC,Wellington Phoenix,2,1,1,1-0,2024-25_au1.txt
+18.00,Newcastle United Jets,Adelaide United,0,1,2,0-1,2024-25_au1.txt
+,Western United,Macarthur FC,0,0,X,,2024-25_au1.txt
+17.00,Melbourne Victory,Perth Glory,2,0,1,1-0,2024-25_au1.txt
+18.00,Central Coast Mariners,Sydney FC,2,1,1,0-0,2024-25_au1.txt
+19.35,Central Coast Mariners,Adelaide United,0,4,2,0-1,2024-25_au1.txt
+15.00,Wellington Phoenix,Macarthur FC,1,2,2,1-1,2024-25_au1.txt
+17.00,Sydney FC,Western United,3,4,2,2-1,2024-25_au1.txt
+19.35,Western Sydney Wanderers,Brisbane Roar,2,2,X,2-2,2024-25_au1.txt
+21.45,Perth Glory,Newcastle United Jets,0,4,2,0-3,2024-25_au1.txt
+17.00,Melbourne City FC,Auckland FC,2,2,X,1-0,2024-25_au1.txt
+19.35,Adelaide United,Sydney FC,3,3,X,2-1,2024-25_au1.txt
+15.00,Auckland FC,Western United,0,4,2,0-3,2024-25_au1.txt
+17.00,Brisbane Roar,Perth Glory,0,1,2,0-0,2024-25_au1.txt
+19.35,Melbourne Victory,Melbourne City FC,1,1,X,0-1,2024-25_au1.txt
+17.00,Western Sydney Wanderers,Wellington Phoenix,4,1,1,2-0,2024-25_au1.txt
+19.00,Macarthur FC,Central Coast Mariners,1,1,X,1-0,2024-25_au1.txt
+19.35,Adelaide United,Western Sydney Wanderers,2,3,2,2-1,2024-25_au1.txt
+22.45,Perth Glory,Macarthur FC,0,3,2,0-2,2024-25_au1.txt
+15.00,Wellington Phoenix,Newcastle United Jets,2,1,1,1-0,2024-25_au1.txt
+17.00,Central Coast Mariners,Auckland FC,1,4,2,1-3,2024-25_au1.txt
+19.35,Sydney FC,Melbourne Victory,3,0,1,2-0,2024-25_au1.txt
+17.00,Western United,Brisbane Roar,1,0,1,1-0,2024-25_au1.txt
+19.00,Central Coast Mariners,Melbourne City FC,1,1,X,0-1,2024-25_au1.txt
+15.00,Auckland FC,Melbourne Victory,0,0,X,,2024-25_au1.txt
+18.00,Western Sydney Wanderers,Macarthur FC,2,3,2,1-3,2024-25_au1.txt
+20.00,Brisbane Roar,Newcastle United Jets,0,1,2,0-0,2024-25_au1.txt
+19.00,Sydney FC,Perth Glory,3,0,1,0-0,2024-25_au1.txt
+17.00,Melbourne City FC,Wellington Phoenix,2,0,1,1-0,2024-25_au1.txt
+19.35,Brisbane Roar,Central Coast Mariners,1,3,2,0-1,2024-25_au1.txt
+21.45,Perth Glory,Western United,2,3,2,1-1,2024-25_au1.txt
+17.00,Newcastle United Jets,Sydney FC,2,2,X,1-0,2024-25_au1.txt
+19.35,Melbourne Victory,Western Sydney Wanderers,2,2,X,1-1,2024-25_au1.txt
+19.00,Macarthur FC,Adelaide United,1,2,2,0-0,2024-25_au1.txt
+19.35,Melbourne Victory,Western United,3,4,2,2-1,2024-25_au1.txt
+15.00,Wellington Phoenix,Adelaide United,1,2,2,0-1,2024-25_au1.txt
+17.00,Melbourne City FC,Brisbane Roar,1,0,1,0-0,2024-25_au1.txt
+19.35,Sydney FC,Central Coast Mariners,4,1,1,1-1,2024-25_au1.txt
+21.45,Perth Glory,Auckland FC,1,0,1,1-0,2024-25_au1.txt
+17.00,Newcastle United Jets,Macarthur FC,1,3,2,1-1,2024-25_au1.txt
+21.45,Perth Glory,Western Sydney Wanderers,1,2,2,0-1,2024-25_au1.txt
+17.00,Wellington Phoenix,Sydney FC,0,0,X,,2024-25_au1.txt
+19.30,Adelaide United,Auckland FC,2,2,X,0-0,2024-25_au1.txt
+19.00,Western United,Central Coast Mariners,2,2,X,1-2,2024-25_au1.txt
+19.00,Melbourne City FC,Newcastle United Jets,0,1,2,0-0,2024-25_au1.txt
+17.00,Western United,Newcastle United Jets,3,1,1,2-0,2024-25_au1.txt
+19.35,Western Sydney Wanderers,Central Coast Mariners,1,3,2,0-1,2024-25_au1.txt
+15.00,Auckland FC,Melbourne City FC,3,0,1,3-0,2024-25_au1.txt
+17.00,Sydney FC,Brisbane Roar,3,4,2,1-3,2024-25_au1.txt
+19.35,Adelaide United,Melbourne Victory,3,2,1,2-1,2024-25_au1.txt
+19.00,Macarthur FC,Wellington Phoenix,1,2,2,1-0,2024-25_au1.txt
+19.35,Melbourne Victory,Sydney FC,2,0,1,1-0,2024-25_au1.txt
+15.00,Wellington Phoenix,Central Coast Mariners,0,0,X,,2024-25_au1.txt
+17.00,Newcastle United Jets,Perth Glory,2,2,X,1-1,2024-25_au1.txt
+19.35,Macarthur FC,Melbourne City FC,1,0,1,0-0,2024-25_au1.txt
+17.00,Western Sydney Wanderers,Auckland FC,0,1,2,0-0,2024-25_au1.txt
+19.00,Brisbane Roar,Adelaide United,1,1,X,0-1,2024-25_au1.txt
+18.00,Melbourne City FC,Western United,2,0,1,1-0,2024-25_au1.txt
+19.35,Brisbane Roar,Western Sydney Wanderers,0,1,2,0-1,2024-25_au1.txt
+15.00,Auckland FC,Macarthur FC,2,1,1,1-1,2024-25_au1.txt
+17.00,Sydney FC,Adelaide United,4,1,1,1-0,2024-25_au1.txt
+19.35,Central Coast Mariners,Newcastle United Jets,2,2,X,1-0,2024-25_au1.txt
+21.45,Perth Glory,Melbourne Victory,0,2,2,0-0,2024-25_au1.txt
+15.00,Wellington Phoenix,Brisbane Roar,1,1,X,0-0,2024-25_au1.txt
+19.35,Adelaide United,Melbourne City FC,1,0,1,0-0,2024-25_au1.txt
+21.45,Perth Glory,Central Coast Mariners,1,1,X,1-0,2024-25_au1.txt
+17.00,Newcastle United Jets,Melbourne Victory,3,0,1,0-0,2024-25_au1.txt
+19.35,Sydney FC,Western Sydney Wanderers,3,3,X,1-2,2024-25_au1.txt
+17.00,Macarthur FC,Western United,2,2,X,1-2,2024-25_au1.txt
+19.35,Melbourne Victory,Wellington Phoenix,1,0,1,0-0,2024-25_au1.txt
+17.00,Melbourne City FC,Perth Glory,1,0,1,1-0,2024-25_au1.txt
+18.00,Western United,Auckland FC,0,2,2,0-2,2024-25_au1.txt
+19.35,Adelaide United,Newcastle United Jets,1,2,2,1-1,2024-25_au1.txt
+17.00,Western Sydney Wanderers,Macarthur FC,2,1,1,0-0,2024-25_au1.txt
+19.35,Newcastle United Jets,Brisbane Roar,3,1,1,2-1,2024-25_au1.txt
+15.00,Auckland FC,Wellington Phoenix,6,1,1,3-0,2024-25_au1.txt
+17.00,Central Coast Mariners,Western Sydney Wanderers,0,4,2,0-3,2024-25_au1.txt
+19.35,Melbourne Victory,Melbourne City FC,2,2,X,1-1,2024-25_au1.txt
+21.45,Perth Glory,Sydney FC,0,0,X,,2024-25_au1.txt
+17.00,Western United,Adelaide United,3,0,1,1-0,2024-25_au1.txt
+17.30,Wellington Phoenix,Melbourne City FC,0,1,2,0-0,2024-25_au1.txt
+19.35,Central Coast Mariners,Western United,1,3,2,0-0,2024-25_au1.txt
+15.00,Auckland FC,Adelaide United,4,4,X,2-1,2024-25_au1.txt
+17.00,Brisbane Roar,Melbourne Victory,1,1,X,1-0,2024-25_au1.txt
+19.35,Macarthur FC,Sydney FC,0,2,2,0-0,2024-25_au1.txt
+17.00,Western Sydney Wanderers,Perth Glory,4,1,1,2-1,2024-25_au1.txt
+19.35,Melbourne City FC,Macarthur FC,2,0,1,1-0,2024-25_au1.txt
+17.00,Adelaide United,Brisbane Roar,1,1,X,1-0,2024-25_au1.txt
+18.00,Western United,Wellington Phoenix,4,1,1,2-0,2024-25_au1.txt
+19.35,Melbourne Victory,Central Coast Mariners,3,0,1,2-0,2024-25_au1.txt
+17.00,Newcastle United Jets,Auckland FC,1,1,X,1-1,2024-25_au1.txt
+19.35,Adelaide United,Macarthur FC,4,5,2,3-2,2024-25_au1.txt
+19.30,Western Sydney Wanderers,Melbourne Victory,4,2,1,1-2,2024-25_au1.txt
+21.45,Perth Glory,Brisbane Roar,1,3,2,1-1,2024-25_au1.txt
+15.00,Auckland FC,Central Coast Mariners,2,2,X,1-0,2024-25_au1.txt
+17.00,Newcastle United Jets,Western United,2,6,2,0-4,2024-25_au1.txt
+19.00,Sydney FC,Wellington Phoenix,1,1,X,1-1,2024-25_au1.txt
+19.35,Macarthur FC,Newcastle United Jets,3,3,X,0-2,2024-25_au1.txt
+15.00,Wellington Phoenix,Western Sydney Wanderers,2,2,X,1-1,2024-25_au1.txt
+17.00,Sydney FC,Melbourne City FC,2,3,2,2-2,2024-25_au1.txt
+19.35,Melbourne Victory,Adelaide United,5,3,1,2-1,2024-25_au1.txt
+15.00,Central Coast Mariners,Perth Glory,3,1,1,2-1,2024-25_au1.txt
+17.00,Brisbane Roar,Auckland FC,0,2,2,0-1,2024-25_au1.txt
+19.35,Brisbane Roar,Macarthur FC,1,5,2,1-1,2024-25_au1.txt
+15.00,Auckland FC,Western Sydney Wanderers,1,1,X,1-0,2024-25_au1.txt
+17.00,Melbourne City FC,Central Coast Mariners,1,0,1,1-0,2024-25_au1.txt
+18.00,Western United,Perth Glory,3,1,1,1-0,2024-25_au1.txt
+19.35,Adelaide United,Sydney FC,2,3,2,0-1,2024-25_au1.txt
+17.00,Newcastle United Jets,Wellington Phoenix,1,2,2,0-2,2024-25_au1.txt
+19.35,Melbourne City FC,Brisbane Roar,3,2,1,0-1,2024-25_au1.txt
+15.00,Wellington Phoenix,Melbourne Victory,2,3,2,1-2,2024-25_au1.txt
+17.00,Sydney FC,Auckland FC,2,2,X,2-1,2024-25_au1.txt
+19.35,Newcastle United Jets,Central Coast Mariners,6,0,1,2-0,2024-25_au1.txt
+21.45,Perth Glory,Adelaide United,4,1,1,2-1,2024-25_au1.txt
+17.00,Western Sydney Wanderers,Western United,2,0,1,1-0,2024-25_au1.txt
+19.35,Brisbane Roar,Western United,2,1,1,2-1,2024-25_au1.txt
+19.35,Adelaide United,Wellington Phoenix,3,2,1,2-2,2024-25_au1.txt
+17.00,Melbourne Victory,Auckland FC,0,2,2,0-0,2024-25_au1.txt
+19.35,Western Sydney Wanderers,Melbourne City FC,2,2,X,2-1,2024-25_au1.txt
+15.00,Sydney FC,Newcastle United Jets,3,2,1,1-2,2024-25_au1.txt
+17.00,Central Coast Mariners,Macarthur FC,2,2,X,2-1,2024-25_au1.txt
+19.35,Macarthur FC,Melbourne Victory,1,2,2,0-2,2024-25_au1.txt
+15.00,Brisbane Roar,Wellington Phoenix,1,0,1,0-0,2024-25_au1.txt
+17.00,Newcastle United Jets,Western Sydney Wanderers,0,1,2,0-0,2024-25_au1.txt
+19.35,Melbourne City FC,Adelaide United,0,0,X,,2024-25_au1.txt
+15.00,Auckland FC,Perth Glory,1,0,1,0-0,2024-25_au1.txt
+17.00,Western United,Sydney FC,1,0,1,1-0,2024-25_au1.txt
+19.35,Central Coast Mariners,Brisbane Roar,1,2,2,1-1,2024-25_au1.txt
+17.00,Melbourne City FC,Sydney FC,5,1,1,3-0,2024-25_au1.txt
+18.00,Western United,Auckland FC,4,2,1,2-0,2024-25_au1.txt
+19.35,Macarthur FC,Western Sydney Wanderers,1,3,2,1-1,2024-25_au1.txt
+15.00,Wellington Phoenix,Perth Glory,0,2,2,0-1,2024-25_au1.txt
+17.00,Melbourne Victory,Newcastle United Jets,1,1,X,0-0,2024-25_au1.txt

@@ -1,0 +1,369 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Iran,Burma,2,0,1,New Delhi,India,1951_asian_games.txt
+India,Indonesia,3,0,1,New Delhi,India,1951_asian_games.txt
+Iran,Japan,0,0,X,New Delhi,India,1951_asian_games.txt
+India,Afghanistan,3,0,1,New Delhi,India,1951_asian_games.txt
+Iran,Japan,3,2,1,New Delhi,India,1951_asian_games.txt
+Japan,Afghanistan,2,0,1,New Delhi,India,1951_asian_games.txt
+India,Iran,1,0,1,New Delhi,India,1951_asian_games.txt
+Taiwan,Vietnam,3,2,1,Manila,Philippines,1954_asian_games.txt
+Japan,Indonesia,3,5,2,Manila,Philippines,1954_asian_games.txt
+Singapore,Pakistan,2,6,2,Manila,Philippines,1954_asian_games.txt
+South Korea,Hong Kong,3,3,X,Manila,Philippines,1954_asian_games.txt
+Philippines,Vietnam,2,3,2,Manila,Philippines,1954_asian_games.txt
+India,Japan,3,2,1,Manila,Philippines,1954_asian_games.txt
+Burma,Singapore,1,1,X,Manila,Philippines,1954_asian_games.txt
+South Korea,Afghanistan,8,2,1,Manila,Philippines,1954_asian_games.txt
+Burma,Pakistan,2,1,1,Manila,Philippines,1954_asian_games.txt
+India,Indonesia,0,4,2,Manila,Philippines,1954_asian_games.txt
+Philippines,Taiwan,0,4,2,Manila,Philippines,1954_asian_games.txt
+Hong Kong,Afghanistan,4,2,1,Manila,Philippines,1954_asian_games.txt
+Taiwan,Indonesia,4,2,1,Manila,Philippines,1954_asian_games.txt
+Burma,South Korea,2,2,X,Manila,Philippines,1954_asian_games.txt
+Indonesia,Burma,4,5,2,Manila,Philippines,1954_asian_games.txt
+Taiwan,South Korea,5,2,1,Manila,Philippines,1954_asian_games.txt
+Vietnam Republic,Pakistan,1,1,X,Tokyo,Japan,1958_asian_games.txt
+Taiwan,Malaya,2,1,1,Tokyo,Japan,1958_asian_games.txt
+Indonesia,Burma,4,2,1,Tokyo,Japan,1958_asian_games.txt
+Hong Kong,Philippines,4,1,1,Tokyo,Japan,1958_asian_games.txt
+Burma,India,2,3,2,Tokyo,Japan,1958_asian_games.txt
+Japan,Philippines,0,1,2,Tokyo,Japan,1958_asian_games.txt
+South Korea,Singapore,2,1,1,Tokyo,Japan,1958_asian_games.txt
+Israel,Iran,4,0,1,Tokyo,Japan,1958_asian_games.txt
+Malaya,Vietnam Republic,1,6,2,Tokyo,Japan,1958_asian_games.txt
+Pakistan,Taiwan,1,3,2,Tokyo,Japan,1958_asian_games.txt
+India,Indonesia,1,2,2,Tokyo,Japan,1958_asian_games.txt
+Japan,Hong Kong,0,2,2,Tokyo,Japan,1958_asian_games.txt
+Iran,South Korea,0,5,2,Tokyo,Japan,1958_asian_games.txt
+Singapore,Israel,1,2,2,Tokyo,Japan,1958_asian_games.txt
+Taiwan,Israel,2,0,1,Tokyo,Japan,1958_asian_games.txt
+Indonesia,Philippines,5,2,1,Tokyo,Japan,1958_asian_games.txt
+Hong Kong,India,2,5,2,Tokyo,Japan,1958_asian_games.txt
+South Korea,Vietnam Republic,3,1,1,Tokyo,Japan,1958_asian_games.txt
+Taiwan,Indonesia,1,0,1,Tokyo,Japan,1958_asian_games.txt
+India,South Korea,1,3,2,Tokyo,Japan,1958_asian_games.txt
+Indonesia,India,4,1,1,Tokyo,Japan,1958_asian_games.txt
+Taiwan,South Korea,3,2,1,Tokyo,Japan,1958_asian_games.txt
+Indonesia,Vietnam Republic,1,0,1,Jakarta,Indonesia,1962_asian_games.txt
+Japan,Thailand,3,1,1,Jakarta,Indonesia,1962_asian_games.txt
+Malaysia,Philippines,15,1,1,Jakarta,Indonesia,1962_asian_games.txt
+India,South Korea,0,2,2,Jakarta,Indonesia,1962_asian_games.txt
+Indonesia,Philippines,6,0,1,Jakarta,Indonesia,1962_asian_games.txt
+South Korea,Thailand,3,2,1,Jakarta,Indonesia,1962_asian_games.txt
+Indonesia,Malaysia,2,3,2,Jakarta,Indonesia,1962_asian_games.txt
+Thailand,India,1,4,2,Jakarta,Indonesia,1962_asian_games.txt
+Vietnam Republic,Malaysia,3,0,1,Jakarta,Indonesia,1962_asian_games.txt
+India,Japan,2,0,1,Jakarta,Indonesia,1962_asian_games.txt
+Vietnam Republic,Philippines,6,0,1,Jakarta,Indonesia,1962_asian_games.txt
+South Korea,Japan,1,0,1,Jakarta,Indonesia,1962_asian_games.txt
+Vietnam Republic,India,2,3,2,Jakarta,Indonesia,1962_asian_games.txt
+South Korea,Malaysia,2,1,1,Jakarta,Indonesia,1962_asian_games.txt
+Vietnam Republic,Malaysia,1,4,2,Jakarta,Indonesia,1962_asian_games.txt
+India,South Korea,2,1,1,Jakarta,Indonesia,1962_asian_games.txt
+Thailand,South Korea,3,0,1,Bangkok,Thailand,1966_asian_games.txt
+Japan,India,2,1,1,Bangkok,Thailand,1966_asian_games.txt
+Iran,Malaysia,2,0,1,Bangkok,Thailand,1966_asian_games.txt
+Indonesia,Singapore,3,0,1,Bangkok,Thailand,1966_asian_games.txt
+Iran,Japan,1,3,2,Bangkok,Thailand,1966_asian_games.txt
+Indonesia,Vietnam Republic,0,0,X,Bangkok,Thailand,1966_asian_games.txt
+South Korea,Myanmar,0,1,2,Bangkok,Thailand,1966_asian_games.txt
+Malaysia,India,1,2,2,Bangkok,Thailand,1966_asian_games.txt
+Vietnam Republic,Taiwan,2,1,1,Bangkok,Thailand,1966_asian_games.txt
+India,Iran,1,4,2,Bangkok,Thailand,1966_asian_games.txt
+Singapore,Taiwan,3,3,X,Bangkok,Thailand,1966_asian_games.txt
+Thailand,Myanmar,1,1,X,Bangkok,Thailand,1966_asian_games.txt
+Malaysia,Japan,0,1,2,Bangkok,Thailand,1966_asian_games.txt
+Taiwan,Indonesia,1,3,2,Bangkok,Thailand,1966_asian_games.txt
+Singapore,Vietnam Republic,5,0,1,Bangkok,Thailand,1966_asian_games.txt
+Thailand,Singapore,0,2,2,Bangkok,Thailand,1966_asian_games.txt
+Myanmar,Indonesia,2,2,X,Bangkok,Thailand,1966_asian_games.txt
+Japan,Singapore,5,1,1,Bangkok,Thailand,1966_asian_games.txt
+Iran,Indonesia,1,0,1,Bangkok,Thailand,1966_asian_games.txt
+Thailand,Japan,1,5,2,Bangkok,Thailand,1966_asian_games.txt
+Myanmar,Iran,1,0,1,Bangkok,Thailand,1966_asian_games.txt
+Japan,Iran,0,1,2,Bangkok,Thailand,1966_asian_games.txt
+Myanmar,Singapore,2,0,1,Bangkok,Thailand,1966_asian_games.txt
+Japan,Singapore,2,0,1,Bangkok,Thailand,1966_asian_games.txt
+Iran,Myanmar,0,1,2,Bangkok,Thailand,1966_asian_games.txt
+Thailand,India,2,2,X,Bangkok,Thailand,1970_asian_games.txt
+Japan,Malaysia,1,0,1,Bangkok,Thailand,1970_asian_games.txt
+Myanmar,Cambodia,2,1,1,Bangkok,Thailand,1970_asian_games.txt
+Indonesia,Iran,2,2,X,Bangkok,Thailand,1970_asian_games.txt
+India,Vietnam Republic,2,0,1,Bangkok,Thailand,1970_asian_games.txt
+Iran,South Korea,0,1,2,Bangkok,Thailand,1970_asian_games.txt
+Japan,Cambodia,1,0,1,Bangkok,Thailand,1970_asian_games.txt
+Myanmar,Malaysia,1,0,1,Bangkok,Thailand,1970_asian_games.txt
+Thailand,Vietnam Republic,1,0,1,Bangkok,Thailand,1970_asian_games.txt
+Indonesia,South Korea,0,0,X,Bangkok,Thailand,1970_asian_games.txt
+Japan,Myanmar,2,1,1,Bangkok,Thailand,1970_asian_games.txt
+Malaysia,Cambodia,0,2,2,Bangkok,Thailand,1970_asian_games.txt
+India,Indonesia,3,0,1,Bangkok,Thailand,1970_asian_games.txt
+Thailand,South Korea,1,2,2,Bangkok,Thailand,1970_asian_games.txt
+Indonesia,Japan,1,2,2,Bangkok,Thailand,1970_asian_games.txt
+Thailand,Myanmar,2,2,X,Bangkok,Thailand,1970_asian_games.txt
+Japan,India,1,0,1,Bangkok,Thailand,1970_asian_games.txt
+Myanmar,South Korea,1,0,1,Bangkok,Thailand,1970_asian_games.txt
+Japan,South Korea,1,2,2,Bangkok,Thailand,1970_asian_games.txt
+Myanmar,India,2,0,1,Bangkok,Thailand,1970_asian_games.txt
+Thailand,Indonesia,0,1,2,Bangkok,Thailand,1970_asian_games.txt
+Japan,India,0,1,2,Bangkok,Thailand,1970_asian_games.txt
+South Korea,Myanmar,0,0,X,Bangkok,Thailand,1970_asian_games.txt
+Kuwait,Thailand,3,2,1,Tehran,Iran,1974_asian_games.txt
+India,Iraq,0,3,2,Tehran,Iran,1974_asian_games.txt
+North Korea,China PR,2,0,1,Tehran,Iran,1974_asian_games.txt
+Japan,Philippines,4,0,1,Tehran,Iran,1974_asian_games.txt
+Israel,Malaysia,8,3,1,Tehran,Iran,1974_asian_games.txt
+Iran,Pakistan,7,0,1,Tehran,Iran,1974_asian_games.txt
+Myanmar,Bahrain,4,0,1,Tehran,Iran,1974_asian_games.txt
+South Korea,Thailand,1,0,1,Tehran,Iran,1974_asian_games.txt
+China PR,India,7,1,1,Tehran,Iran,1974_asian_games.txt
+North Korea,Iraq,0,1,2,Tehran,Iran,1974_asian_games.txt
+Israel,Philippines,6,0,1,Tehran,Iran,1974_asian_games.txt
+Japan,Malaysia,1,1,X,Tehran,Iran,1974_asian_games.txt
+Pakistan,Bahrain,5,1,1,Tehran,Iran,1974_asian_games.txt
+Iran,Myanmar,2,1,1,Tehran,Iran,1974_asian_games.txt
+South Korea,Kuwait,0,4,2,Tehran,Iran,1974_asian_games.txt
+China PR,Iraq,0,1,2,Tehran,Iran,1974_asian_games.txt
+India,North Korea,1,4,2,Tehran,Iran,1974_asian_games.txt
+Malaysia,Philippines,11,0,1,Tehran,Iran,1974_asian_games.txt
+Japan,Israel,0,3,2,Tehran,Iran,1974_asian_games.txt
+Myanmar,Pakistan,5,1,1,Tehran,Iran,1974_asian_games.txt
+Iran,Bahrain,6,0,1,Tehran,Iran,1974_asian_games.txt
+Iran,Malaysia,1,0,1,Tehran,Iran,1974_asian_games.txt
+Iraq,South Korea,1,1,X,Tehran,Iran,1974_asian_games.txt
+Kuwait,North Korea,0,2,2,Tehran,Iran,1974_asian_games.txt
+Israel,Myanmar,3,0,1,Tehran,Iran,1974_asian_games.txt
+Iran,South Korea,2,0,1,Tehran,Iran,1974_asian_games.txt
+Malaysia,Iraq,0,0,X,Tehran,Iran,1974_asian_games.txt
+Kuwait,Myanmar,5,2,1,Tehran,Iran,1974_asian_games.txt
+Israel,North Korea,2,0,1,Tehran,Iran,1974_asian_games.txt
+Iran,Iraq,1,0,1,Tehran,Iran,1974_asian_games.txt
+South Korea,Malaysia,2,3,2,Tehran,Iran,1974_asian_games.txt
+North Korea,Myanmar,2,2,X,Tehran,Iran,1974_asian_games.txt
+Israel,Kuwait,2,0,1,Tehran,Iran,1974_asian_games.txt
+North Korea,Malaysia,1,2,2,Tehran,Iran,1974_asian_games.txt
+Iran,Israel,1,0,1,Tehran,Iran,1974_asian_games.txt
+India,Malaysia,0,1,2,Bangkok,Thailand,1978_asian_games.txt
+Iraq,Qatar,2,1,1,Bangkok,Thailand,1978_asian_games.txt
+China PR,Saudi Arabia,1,0,1,Bangkok,Thailand,1978_asian_games.txt
+Bahrain,South Korea,1,5,2,Bangkok,Thailand,1978_asian_games.txt
+Japan,Kuwait,0,2,2,Bangkok,Thailand,1978_asian_games.txt
+Thailand,Myanmar,2,1,1,Bangkok,Thailand,1978_asian_games.txt
+Bangladesh,Malaysia,0,1,2,Bangkok,Thailand,1978_asian_games.txt
+Qatar,Saudi Arabia,2,2,X,Bangkok,Thailand,1978_asian_games.txt
+China PR,Iraq,0,2,2,Bangkok,Thailand,1978_asian_games.txt
+Bahrain,Japan,0,4,2,Bangkok,Thailand,1978_asian_games.txt
+South Korea,Kuwait,2,0,1,Bangkok,Thailand,1978_asian_games.txt
+Myanmar,North Korea,0,3,2,Bangkok,Thailand,1978_asian_games.txt
+Bangladesh,India,0,3,2,Bangkok,Thailand,1978_asian_games.txt
+China PR,Qatar,3,0,1,Bangkok,Thailand,1978_asian_games.txt
+Iraq,Saudi Arabia,1,1,X,Bangkok,Thailand,1978_asian_games.txt
+Japan,South Korea,1,3,2,Bangkok,Thailand,1978_asian_games.txt
+Bahrain,Kuwait,0,3,2,Bangkok,Thailand,1978_asian_games.txt
+Thailand,North Korea,0,3,2,Bangkok,Thailand,1978_asian_games.txt
+India,Kuwait,1,6,2,Bangkok,Thailand,1978_asian_games.txt
+Iraq,North Korea,0,1,2,Bangkok,Thailand,1978_asian_games.txt
+China PR,South Korea,0,1,2,Bangkok,Thailand,1978_asian_games.txt
+Thailand,Malaysia,2,1,1,Bangkok,Thailand,1978_asian_games.txt
+Iraq,Kuwait,3,0,1,Bangkok,Thailand,1978_asian_games.txt
+India,North Korea,1,3,2,Bangkok,Thailand,1978_asian_games.txt
+Thailand,China PR,1,4,2,Bangkok,Thailand,1978_asian_games.txt
+Malaysia,South Korea,0,1,2,Bangkok,Thailand,1978_asian_games.txt
+India,Iraq,0,3,2,Bangkok,Thailand,1978_asian_games.txt
+North Korea,Kuwait,2,2,X,Bangkok,Thailand,1978_asian_games.txt
+China PR,Malaysia,7,1,1,Bangkok,Thailand,1978_asian_games.txt
+Thailand,South Korea,1,3,2,Bangkok,Thailand,1978_asian_games.txt
+Iraq,China PR,0,1,2,Bangkok,Thailand,1978_asian_games.txt
+North Korea,South Korea,0,0,X,Bangkok,Thailand,1978_asian_games.txt
+North Korea,Syria,1,1,X,New Delhi,India,1982_asian_games.txt
+Saudi Arabia,Thailand,1,0,1,New Delhi,India,1982_asian_games.txt
+China PR,Malaysia,1,0,1,New Delhi,India,1982_asian_games.txt
+India,Bangladesh,2,0,1,New Delhi,India,1982_asian_games.txt
+Kuwait,Nepal,3,1,1,New Delhi,India,1982_asian_games.txt
+Iraq,Myanmar,4,0,1,New Delhi,India,1982_asian_games.txt
+Japan,Iran,1,0,1,New Delhi,India,1982_asian_games.txt
+South Korea,South Yemen,3,0,1,New Delhi,India,1982_asian_games.txt
+North Korea,Thailand,3,0,1,New Delhi,India,1982_asian_games.txt
+Saudi Arabia,Syria,1,1,X,New Delhi,India,1982_asian_games.txt
+India,Malaysia,1,0,1,New Delhi,India,1982_asian_games.txt
+China PR,Bangladesh,1,0,1,New Delhi,India,1982_asian_games.txt
+Kuwait,Myanmar,4,0,1,New Delhi,India,1982_asian_games.txt
+Iraq,Nepal,3,0,1,New Delhi,India,1982_asian_games.txt
+South Korea,Iran,0,1,2,New Delhi,India,1982_asian_games.txt
+Japan,South Yemen,3,1,1,New Delhi,India,1982_asian_games.txt
+North Korea,Saudi Arabia,2,2,X,New Delhi,India,1982_asian_games.txt
+Thailand,Syria,3,1,1,New Delhi,India,1982_asian_games.txt
+India,China PR,2,2,X,New Delhi,India,1982_asian_games.txt
+Malaysia,Bangladesh,1,2,2,New Delhi,India,1982_asian_games.txt
+Iraq,Kuwait,1,2,2,New Delhi,India,1982_asian_games.txt
+Myanmar,Nepal,3,0,1,New Delhi,India,1982_asian_games.txt
+South Korea,Japan,1,2,2,New Delhi,India,1982_asian_games.txt
+Iran,South Yemen,2,0,1,New Delhi,India,1982_asian_games.txt
+North Korea,China PR,1,0,1,New Delhi,India,1982_asian_games.txt
+India,Saudi Arabia,0,1,2,New Delhi,India,1982_asian_games.txt
+Japan,Iraq,0,1,2,New Delhi,India,1982_asian_games.txt
+Kuwait,Iran,1,0,1,New Delhi,India,1982_asian_games.txt
+North Korea,Kuwait,2,3,2,New Delhi,India,1982_asian_games.txt
+Saudi Arabia,Iraq,0,1,2,New Delhi,India,1982_asian_games.txt
+North Korea,Saudi Arabia,0,2,2,New Delhi,India,1982_asian_games.txt
+Kuwait,Iraq,0,1,2,New Delhi,India,1982_asian_games.txt
+South Korea,India,3,0,1,Busan,South Korea,1986_asian_games.txt
+China PR,Bahrain,5,1,1,Busan,South Korea,1986_asian_games.txt
+Kuwait,Bangladesh,4,0,1,Daejeon,South Korea,1986_asian_games.txt
+Japan,Nepal,5,0,1,Daejeon,South Korea,1986_asian_games.txt
+Iraq,Oman,4,0,1,Daegu,South Korea,1986_asian_games.txt
+United Arab Emirates,Pakistan,1,0,1,Daegu,South Korea,1986_asian_games.txt
+Malaysia,Saudi Arabia,1,3,2,Gwangju,South Korea,1986_asian_games.txt
+Qatar,Indonesia,1,1,X,Gwangju,South Korea,1986_asian_games.txt
+China PR,India,2,1,1,Busan,South Korea,1986_asian_games.txt
+Japan,Iran,0,2,2,Daejeon,South Korea,1986_asian_games.txt
+Nepal,Kuwait,0,5,2,Daejeon,South Korea,1986_asian_games.txt
+United Arab Emirates,Thailand,2,1,1,Daegu,South Korea,1986_asian_games.txt
+Pakistan,Iraq,1,5,2,Daegu,South Korea,1986_asian_games.txt
+Qatar,Malaysia,1,1,X,Gwangju,South Korea,1986_asian_games.txt
+South Korea,Bahrain,0,0,X,Busan,South Korea,1986_asian_games.txt
+Iran,Bangladesh,4,0,1,Daejeon,South Korea,1986_asian_games.txt
+Japan,Kuwait,0,2,2,Daejeon,South Korea,1986_asian_games.txt
+Thailand,Oman,0,0,X,Daegu,South Korea,1986_asian_games.txt
+United Arab Emirates,Iraq,2,1,1,Daegu,South Korea,1986_asian_games.txt
+Indonesia,Saudi Arabia,0,2,2,Gwangju,South Korea,1986_asian_games.txt
+Bahrain,India,3,0,1,Busan,South Korea,1986_asian_games.txt
+Nepal,Bangladesh,0,1,2,Daejeon,South Korea,1986_asian_games.txt
+Iran,Kuwait,0,1,2,Daejeon,South Korea,1986_asian_games.txt
+Oman,Pakistan,3,1,1,Daegu,South Korea,1986_asian_games.txt
+Thailand,Iraq,1,2,2,Daegu,South Korea,1986_asian_games.txt
+Indonesia,Malaysia,1,0,1,Gwangju,South Korea,1986_asian_games.txt
+South Korea,China PR,4,2,1,Busan,South Korea,1986_asian_games.txt
+Japan,Bangladesh,4,0,1,Daejeon,South Korea,1986_asian_games.txt
+Iran,Nepal,6,0,1,Daejeon,South Korea,1986_asian_games.txt
+United Arab Emirates,Oman,0,0,X,Daegu,South Korea,1986_asian_games.txt
+Thailand,Pakistan,6,0,1,Daegu,South Korea,1986_asian_games.txt
+Qatar,Saudi Arabia,0,1,2,Gwangju,South Korea,1986_asian_games.txt
+Saudi Arabia,Iraq,1,1,X,Seoul,South Korea   [Saudi Arabia wins on penalties],1986_asian_games.txt
+South Korea,Iran,1,1,X,Busan,South Korea   [South Korea wins on penalties],1986_asian_games.txt
+United Arab Emirates,Indonesia,2,2,X,Seoul,South Korea   [Indonesia wins on penalties],1986_asian_games.txt
+Kuwait,China PR,1,1,X,Busan,South Korea   [Kuwait wins on penalties],1986_asian_games.txt
+South Korea,Indonesia,4,0,1,Seoul,South Korea,1986_asian_games.txt
+Saudi Arabia,Kuwait,2,2,X,Seoul,South Korea   [Saudi Arabia wins on penalties],1986_asian_games.txt
+Indonesia,Kuwait,0,5,2,Seoul,South Korea,1986_asian_games.txt
+South Korea,Saudi Arabia,2,0,1,Seoul,South Korea,1986_asian_games.txt
+South Korea,Singapore,7,0,1,Beijing,China PR,1990_asian_games.txt
+China PR,Pakistan,3,0,1,Beijing,China PR,1990_asian_games.txt
+Kuwait,Hong Kong,2,1,1,Beijing,China PR,1990_asian_games.txt
+Yemen,Thailand,0,0,X,Beijing,China PR,1990_asian_games.txt
+Iran,Malaysia,3,0,1,Beijing,China PR,1990_asian_games.txt
+Saudi Arabia,Bangladesh,4,0,1,Beijing,China PR,1990_asian_games.txt
+China PR,Singapore,5,1,1,Beijing,China PR,1990_asian_games.txt
+Pakistan,South Korea,0,7,2,Beijing,China PR,1990_asian_games.txt
+Hong Kong,Thailand,0,2,2,Beijing,China PR,1990_asian_games.txt
+Yemen,Kuwait,0,0,X,Beijing,China PR,1990_asian_games.txt
+Malaysia,North Korea,0,0,X,Beijing,China PR,1990_asian_games.txt
+Bangladesh,Japan,0,3,2,Beijing,China PR,1990_asian_games.txt
+China PR,South Korea,0,2,2,Beijing,China PR,1990_asian_games.txt
+Singapore,Pakistan,6,1,1,Beijing,China PR,1990_asian_games.txt
+Hong Kong,Yemen,2,0,1,Beijing,China PR,1990_asian_games.txt
+Thailand,Kuwait,2,1,1,Beijing,China PR,1990_asian_games.txt
+North Korea,Iran,1,2,2,Beijing,China PR,1990_asian_games.txt
+Japan,Saudi Arabia,0,2,2,Beijing,China PR,1990_asian_games.txt
+South Korea,Kuwait,1,0,1,Beijing,China PR,1990_asian_games.txt
+Iran,Japan,1,0,1,Beijing,China PR,1990_asian_games.txt
+China PR,Thailand,0,1,2,Beijing,China PR,1990_asian_games.txt
+Saudi Arabia,North Korea,0,0,X,Beijing,China PR   [North Korea wins on penalties],1990_asian_games.txt
+South Korea,Iran,0,1,2,Beijing,China PR,1990_asian_games.txt
+Thailand,North Korea,0,1,2,Beijing,China PR,1990_asian_games.txt
+South Korea,Thailand,1,0,1,Beijing,China PR,1990_asian_games.txt
+Iran,North Korea,0,0,X,Beijing,China PR   [Iran wins on penalties],1990_asian_games.txt
+Turkmenistan,China PR,2,2,X,Hiroshima,Japan,1994_asian_games.txt
+Yemen,Bahrain,0,2,2,Hiroshima,Japan,1994_asian_games.txt
+Saudi Arabia,Uzbekistan,1,4,2,Hiroshima,Japan,1994_asian_games.txt
+Malaysia,Hong Kong,4,3,1,Hiroshima,Japan,1994_asian_games.txt
+South Korea,Nepal,11,0,1,Onomichi,Japan,1994_asian_games.txt
+Kuwait,Oman,2,2,X,Miyoshi,Japan,1994_asian_games.txt
+China PR,Yemen,4,0,1,Hiroshima,Japan,1994_asian_games.txt
+Iran,Bahrain,0,0,X,Hiroshima,Japan,1994_asian_games.txt
+Uzbekistan,Malaysia,5,0,1,Hiroshima,Japan,1994_asian_games.txt
+Thailand,Hong Kong,1,2,2,Hiroshima,Japan,1994_asian_games.txt
+Kuwait,Nepal,8,0,1,Onomichi,Japan,1994_asian_games.txt
+Qatar,Myanmar,2,2,X,Miyoshi,Japan,1994_asian_games.txt
+Japan,United Arab Emirates,1,1,X,Miyoshi,Japan,1994_asian_games.txt
+Bahrain,China PR,2,3,2,Onomichi,Japan,1994_asian_games.txt
+Iran,Turkmenistan,1,1,X,Onomichi,Japan,1994_asian_games.txt
+Hong Kong,Uzbekistan,0,1,2,Miyoshi,Japan,1994_asian_games.txt
+Thailand,Saudi Arabia,2,4,2,Miyoshi,Japan,1994_asian_games.txt
+South Korea,Oman,2,1,1,Hiroshima,Japan,1994_asian_games.txt
+Myanmar,United Arab Emirates,0,2,2,Hiroshima,Japan,1994_asian_games.txt
+Japan,Qatar,1,1,X,Hiroshima,Japan,1994_asian_games.txt
+Iran,China PR,0,1,2,Hiroshima,Japan,1994_asian_games.txt
+Yemen,Turkmenistan,0,4,2,Hiroshima,Japan,1994_asian_games.txt
+Thailand,Uzbekistan,4,5,2,Hiroshima,Japan,1994_asian_games.txt
+Malaysia,Saudi Arabia,1,2,2,Hiroshima,Japan,1994_asian_games.txt
+South Korea,Kuwait,0,1,2,Miyoshi,Japan,1994_asian_games.txt
+Bahrain,Turkmenistan,2,2,X,Miyoshi,Japan,1994_asian_games.txt
+Iran,Yemen,4,0,1,Miyoshi,Japan,1994_asian_games.txt
+Hong Kong,Saudi Arabia,1,2,2,Hiroshima,Japan,1994_asian_games.txt
+Thailand,Malaysia,1,1,X,Hiroshima,Japan,1994_asian_games.txt
+Oman,Nepal,1,0,1,Hiroshima,Japan,1994_asian_games.txt
+United Arab Emirates,Qatar,2,2,X,Onomichi,Japan,1994_asian_games.txt
+Japan,Myanmar,5,0,1,Onomichi,Japan,1994_asian_games.txt
+China PR,Saudi Arabia,2,0,1,Onomichi,Japan,1994_asian_games.txt
+Kuwait,United Arab Emirates,2,1,1,Hiroshima,Japan,1994_asian_games.txt
+Uzbekistan,Turkmenistan,3,0,1,Miyoshi,Japan,1994_asian_games.txt
+Japan,South Korea,2,3,2,Hiroshima,Japan,1994_asian_games.txt
+China PR,Kuwait,2,0,1,Hiroshima,Japan,1994_asian_games.txt
+Uzbekistan,South Korea,1,0,1,Hiroshima,Japan,1994_asian_games.txt
+Kuwait,South Korea,2,1,1,Hiroshima,Japan,1994_asian_games.txt
+China PR,Uzbekistan,2,4,2,Hiroshima,Japan,1994_asian_games.txt
+Turkmenistan,Vietnam,2,0,1,Nakhon Sawan,Thailand,1998_asian_games.txt
+China PR,Lebanon,4,1,1,Surat Thani,Thailand,1998_asian_games.txt
+Hong Kong,Oman,0,6,2,Bangkok,Thailand,1998_asian_games.txt
+Nepal,Japan,0,5,2,Trang,Thailand,1998_asian_games.txt
+Tajikistan,Maldives,3,0,1,Suphan Buri,Thailand,1998_asian_games.txt
+Mongolia,Kuwait,0,11,2,Chiang Mai,Thailand,1998_asian_games.txt
+Kazakhstan,Iran,0,2,2,Sisaket,Thailand,1998_asian_games.txt
+South Korea,Turkmenistan,2,3,2,Nakhon Sawan,Thailand,1998_asian_games.txt
+Cambodia,China PR,1,4,2,Surat Thani,Thailand,1998_asian_games.txt
+United Arab Emirates,North Korea,3,3,X,Songkhla,Thailand   [United Arab Emirates wins on penalties],1998_asian_games.txt
+Thailand,Hong Kong,5,0,1,Bangkok,Thailand,1998_asian_games.txt
+Japan,India,1,0,1,Trang,Thailand,1998_asian_games.txt
+Qatar,Tajikistan,2,1,1,Suphan Buri,Thailand,1998_asian_games.txt
+Uzbekistan,Kuwait,3,3,X,Chiang Mai,Thailand,1998_asian_games.txt
+Laos,Kazakhstan,0,5,2,Sisaket,Thailand,1998_asian_games.txt
+Vietnam,South Korea,0,4,2,Nakhon Sawan,Thailand,1998_asian_games.txt
+Lebanon,Cambodia,5,1,1,Surat Thani,Thailand,1998_asian_games.txt
+Thailand,Oman,2,0,1,Bangkok,Thailand,1998_asian_games.txt
+India,Nepal,1,0,1,Trang,Thailand,1998_asian_games.txt
+Maldives,Qatar,0,4,2,Suphan Buri,Thailand,1998_asian_games.txt
+Mongolia,Uzbekistan,0,15,2,Chiang Mai,Thailand,1998_asian_games.txt
+Iran,Laos,6,1,1,Sisaket,Thailand,1998_asian_games.txt
+Turkmenistan,India,3,2,1,Bangkok,Thailand,1998_asian_games.txt
+North Korea,Uzbekistan,0,4,2,Bangkok,Thailand,1998_asian_games.txt
+Japan,South Korea,0,2,2,Bangkok,Thailand,1998_asian_games.txt
+United Arab Emirates,Kuwait,0,5,2,Bangkok,Thailand,1998_asian_games.txt
+China PR,Tajikistan,3,1,1,Bangkok,Thailand,1998_asian_games.txt
+Iran,Oman,2,4,2,Bangkok,Thailand,1998_asian_games.txt
+Qatar,Lebanon,1,0,1,Bangkok,Thailand,1998_asian_games.txt
+Thailand,Kazakhstan,1,1,X,Bangkok,Thailand,1998_asian_games.txt
+North Korea,Turkmenistan,1,1,X,Bangkok,Thailand,1998_asian_games.txt
+India,Uzbekistan,0,2,2,Bangkok,Thailand,1998_asian_games.txt
+United Arab Emirates,South Korea,1,2,2,Bangkok,Thailand,1998_asian_games.txt
+Japan,Kuwait,2,1,1,Bangkok,Thailand,1998_asian_games.txt
+Tajikistan,Iran,0,5,2,Bangkok,Thailand,1998_asian_games.txt
+Oman,China PR,1,6,2,Bangkok,Thailand,1998_asian_games.txt
+Qatar,Kazakhstan,0,2,2,Bangkok,Thailand,1998_asian_games.txt
+Thailand,Lebanon,1,0,1,Bangkok,Thailand,1998_asian_games.txt
+India,North Korea,0,2,2,Bangkok,Thailand,1998_asian_games.txt
+Uzbekistan,Turkmenistan,1,1,X,Bangkok,Thailand,1998_asian_games.txt
+Japan,United Arab Emirates,0,1,2,Bangkok,Thailand,1998_asian_games.txt
+South Korea,Kuwait,1,0,1,Bangkok,Thailand,1998_asian_games.txt
+Iran,China PR,2,1,1,Bangkok,Thailand,1998_asian_games.txt
+Tajikistan,Oman,3,3,X,Bangkok,Thailand,1998_asian_games.txt
+Kazakhstan,Lebanon,0,3,2,Bangkok,Thailand,1998_asian_games.txt
+Thailand,Qatar,1,2,2,Bangkok,Thailand,1998_asian_games.txt
+Uzbekistan,Iran,0,4,2,Bangkok,Thailand,1998_asian_games.txt
+Thailand,South Korea,2,1,1,Bangkok,Thailand,1998_asian_games.txt
+Turkmenistan,China PR,0,3,2,Bangkok,Thailand,1998_asian_games.txt
+Qatar,Kuwait,0,0,X,Bangkok,Thailand   [Kuwait wins on penalties],1998_asian_games.txt
+Iran,China PR,1,0,1,Bangkok,Thailand,1998_asian_games.txt
+Thailand,Kuwait,0,3,2,Bangkok,Thailand,1998_asian_games.txt
+Thailand,China PR,0,3,2,Songkhla,Thailand,1998_asian_games.txt
+Iran,Kuwait,2,0,1,Bangkok,Thailand,1998_asian_games.txt

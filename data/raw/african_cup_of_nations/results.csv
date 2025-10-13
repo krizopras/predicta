@@ -1,0 +1,794 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Sudan,Egypt,1,2,2,Khartoum,Sudan,1957_african_cup_of_nations.txt
+Egypt,Ethiopia,4,0,1,Khartoum,Sudan,1957_african_cup_of_nations.txt
+Egypt,Ethiopia,4,0,1,Cairo,United Arab Republic,1959_african_cup_of_nations.txt
+Ethiopia,Sudan,0,1,2,Cairo,United Arab Republic,1959_african_cup_of_nations.txt
+Egypt,Sudan,2,1,1,Cairo,United Arab Republic,1959_african_cup_of_nations.txt
+Ethiopia,Tunisia,4,2,1,Addis Ababa,Ethiopia,1962_african_cup_of_nations.txt
+Egypt,Uganda,2,1,1,Addis Ababa,Ethiopia,1962_african_cup_of_nations.txt
+Tunisia,Uganda,3,0,1,Addis Ababa,Ethiopia,1962_african_cup_of_nations.txt
+Ethiopia,Egypt,4,2,1,Addis Ababa,Ethiopia,1962_african_cup_of_nations.txt
+Egypt,Nigeria,6,3,1,Kumasi,Ghana,1963_african_cup_of_nations.txt
+Ghana,Tunisia,1,1,X,Accra,Ghana,1963_african_cup_of_nations.txt
+Egypt,Sudan,2,2,X,Kumasi,Ghana,1963_african_cup_of_nations.txt
+Ghana,Ethiopia,2,0,1,Accra,Ghana,1963_african_cup_of_nations.txt
+Ethiopia,Tunisia,4,2,1,Accra,Ghana,1963_african_cup_of_nations.txt
+Nigeria,Sudan,0,4,2,Kumasi,Ghana,1963_african_cup_of_nations.txt
+Egypt,Ethiopia,3,0,1,Accra,Ghana,1963_african_cup_of_nations.txt
+Ghana,Sudan,3,0,1,Accra,Ghana,1963_african_cup_of_nations.txt
+DR Congo,Ghana,2,5,2,Sousse,Tunisia,1965_african_cup_of_nations.txt
+Tunisia,Ethiopia,4,0,1,Tunis,Tunisia,1965_african_cup_of_nations.txt
+DR Congo,Ivory Coast,0,3,2,Sfax,Tunisia,1965_african_cup_of_nations.txt
+Tunisia,Senegal,0,0,X,Tunis,Tunisia,1965_african_cup_of_nations.txt
+Ethiopia,Senegal,1,5,2,Tunis,Tunisia,1965_african_cup_of_nations.txt
+Ghana,Ivory Coast,4,1,1,Bizerte,Tunisia,1965_african_cup_of_nations.txt
+Ivory Coast,Senegal,1,0,1,Tunis,Tunisia,1965_african_cup_of_nations.txt
+Tunisia,Ghana,2,3,2,Tunis,Tunisia,1965_african_cup_of_nations.txt
+Algeria,Ivory Coast,0,3,2,Addis Ababa,Ethiopia,1968_african_cup_of_nations.txt
+Congo,DR Congo,0,3,2,Asmara,Ethiopia,1968_african_cup_of_nations.txt
+Ethiopia,Uganda,2,1,1,Addis Ababa,Ethiopia,1968_african_cup_of_nations.txt
+Ghana,Senegal,2,2,X,Asmara,Ethiopia,1968_african_cup_of_nations.txt
+Algeria,Uganda,4,0,1,Addis Ababa,Ethiopia,1968_african_cup_of_nations.txt
+Congo,Senegal,1,2,2,Asmara,Ethiopia,1968_african_cup_of_nations.txt
+DR Congo,Ghana,1,2,2,Asmara,Ethiopia,1968_african_cup_of_nations.txt
+Ethiopia,Ivory Coast,1,0,1,Addis Ababa,Ethiopia,1968_african_cup_of_nations.txt
+Congo,Ghana,1,3,2,Asmara,Ethiopia,1968_african_cup_of_nations.txt
+DR Congo,Senegal,2,1,1,Asmara,Ethiopia,1968_african_cup_of_nations.txt
+Ethiopia,Algeria,3,1,1,Addis Ababa,Ethiopia,1968_african_cup_of_nations.txt
+Ivory Coast,Uganda,2,1,1,Addis Ababa,Ethiopia,1968_african_cup_of_nations.txt
+Ethiopia,DR Congo,2,3,2,Addis Ababa,Ethiopia,1968_african_cup_of_nations.txt
+Ghana,Ivory Coast,4,3,1,Asmara,Ethiopia,1968_african_cup_of_nations.txt
+DR Congo,Ghana,1,0,1,Addis Ababa,Ethiopia,1968_african_cup_of_nations.txt
+Ethiopia,Ivory Coast,0,1,2,Addis Ababa,Ethiopia,1968_african_cup_of_nations.txt
+Cameroon,Ivory Coast,3,2,1,Khartoum,Sudan,1970_african_cup_of_nations.txt
+Sudan,Ethiopia,3,0,1,Khartoum,Sudan,1970_african_cup_of_nations.txt
+DR Congo,Ghana,0,2,2,Wad Madani,Sudan,1970_african_cup_of_nations.txt
+Egypt,Guinea,4,1,1,Wad Madani,Sudan,1970_african_cup_of_nations.txt
+Cameroon,Ethiopia,3,2,1,Khartoum,Sudan,1970_african_cup_of_nations.txt
+Sudan,Ivory Coast,0,1,2,Khartoum,Sudan,1970_african_cup_of_nations.txt
+DR Congo,Guinea,2,2,X,Wad Madani,Sudan,1970_african_cup_of_nations.txt
+Egypt,Ghana,1,1,X,Wad Madani,Sudan,1970_african_cup_of_nations.txt
+Ethiopia,Ivory Coast,1,6,2,Khartoum,Sudan,1970_african_cup_of_nations.txt
+Sudan,Cameroon,2,1,1,Khartoum,Sudan,1970_african_cup_of_nations.txt
+DR Congo,Egypt,0,1,2,Wad Madani,Sudan,1970_african_cup_of_nations.txt
+Ghana,Guinea,1,1,X,Wad Madani,Sudan,1970_african_cup_of_nations.txt
+Ghana,Ivory Coast,2,1,1,Khartoum,Sudan,1970_african_cup_of_nations.txt
+Sudan,Egypt,2,1,1,Khartoum,Sudan,1970_african_cup_of_nations.txt
+Egypt,Ivory Coast,3,1,1,Khartoum,Sudan,1970_african_cup_of_nations.txt
+Sudan,Ghana,1,0,1,Khartoum,Sudan,1970_african_cup_of_nations.txt
+Cameroon,Kenya,2,1,1,Yaoundé,Cameroon,1972_african_cup_of_nations.txt
+Mali,Togo,3,3,X,Yaoundé,Cameroon,1972_african_cup_of_nations.txt
+Congo,Morocco,1,1,X,Douala,Cameroon,1972_african_cup_of_nations.txt
+Sudan,DR Congo,1,1,X,Douala,Cameroon,1972_african_cup_of_nations.txt
+Cameroon,Togo,2,0,1,Yaoundé,Cameroon,1972_african_cup_of_nations.txt
+Kenya,Mali,1,1,X,Yaoundé,Cameroon,1972_african_cup_of_nations.txt
+Congo,DR Congo,0,2,2,Douala,Cameroon,1972_african_cup_of_nations.txt
+Morocco,Sudan,1,1,X,Douala,Cameroon,1972_african_cup_of_nations.txt
+Cameroon,Mali,1,1,X,Yaoundé,Cameroon,1972_african_cup_of_nations.txt
+Kenya,Togo,1,1,X,Yaoundé,Cameroon,1972_african_cup_of_nations.txt
+Congo,Sudan,4,2,1,Douala,Cameroon,1972_african_cup_of_nations.txt
+Morocco,DR Congo,1,1,X,Douala,Cameroon,1972_african_cup_of_nations.txt
+Cameroon,Congo,0,1,2,Yaoundé,Cameroon,1972_african_cup_of_nations.txt
+Mali,DR Congo,4,3,1,Douala,Cameroon,1972_african_cup_of_nations.txt
+Cameroon,DR Congo,5,2,1,Yaoundé,Cameroon,1972_african_cup_of_nations.txt
+Congo,Mali,3,2,1,Yaoundé,Cameroon,1972_african_cup_of_nations.txt
+Egypt,Uganda,2,1,1,Cairo,Egypt,1974_african_cup_of_nations.txt
+Ivory Coast,Zambia,0,1,2,El Mahalla El Kubra,Egypt,1974_african_cup_of_nations.txt
+Congo,Mauritius,2,0,1,Alexandria,Egypt,1974_african_cup_of_nations.txt
+Guinea,DR Congo,1,2,2,Damanhur,Egypt,1974_african_cup_of_nations.txt
+Egypt,Zambia,3,1,1,Cairo,Egypt,1974_african_cup_of_nations.txt
+Ivory Coast,Uganda,2,2,X,El Mahalla El Kubra,Egypt,1974_african_cup_of_nations.txt
+Congo,DR Congo,2,1,1,Alexandria,Egypt,1974_african_cup_of_nations.txt
+Guinea,Mauritius,2,1,1,Damanhur,Egypt,1974_african_cup_of_nations.txt
+Egypt,Ivory Coast,2,0,1,Cairo,Egypt,1974_african_cup_of_nations.txt
+Uganda,Zambia,0,1,2,El Mahalla El Kubra,Egypt,1974_african_cup_of_nations.txt
+Congo,Guinea,1,1,X,Alexandria,Egypt,1974_african_cup_of_nations.txt
+Mauritius,DR Congo,1,4,2,Damanhur,Egypt,1974_african_cup_of_nations.txt
+Congo,Zambia,2,4,2,Alexandria,Egypt,1974_african_cup_of_nations.txt
+Egypt,DR Congo,2,3,2,Cairo,Egypt,1974_african_cup_of_nations.txt
+Egypt,Congo,4,0,1,Cairo,Egypt,1974_african_cup_of_nations.txt
+DR Congo,Zambia,2,2,X,Cairo,Egypt,1974_african_cup_of_nations.txt
+DR Congo,Zambia,2,0,1,Cairo,Egypt,1974_african_cup_of_nations.txt
+Egypt,Guinea,1,1,X,Addis Ababa,Ethiopia,1976_african_cup_of_nations.txt
+Ethiopia,Uganda,2,0,1,Addis Ababa,Ethiopia,1976_african_cup_of_nations.txt
+Morocco,Sudan,2,2,X,Dire Dawa,Ethiopia,1976_african_cup_of_nations.txt
+Nigeria,DR Congo,4,2,1,Dire Dawa,Ethiopia,1976_african_cup_of_nations.txt
+Egypt,Uganda,2,1,1,Addis Ababa,Ethiopia,1976_african_cup_of_nations.txt
+Ethiopia,Guinea,1,2,2,Addis Ababa,Ethiopia,1976_african_cup_of_nations.txt
+Morocco,DR Congo,1,0,1,Dire Dawa,Ethiopia,1976_african_cup_of_nations.txt
+Nigeria,Sudan,1,0,1,Dire Dawa,Ethiopia,1976_african_cup_of_nations.txt
+Ethiopia,Egypt,1,1,X,Addis Ababa,Ethiopia,1976_african_cup_of_nations.txt
+Guinea,Uganda,2,1,1,Addis Ababa,Ethiopia,1976_african_cup_of_nations.txt
+Morocco,Nigeria,3,1,1,Dire Dawa,Ethiopia,1976_african_cup_of_nations.txt
+Sudan,DR Congo,1,1,X,Dire Dawa,Ethiopia,1976_african_cup_of_nations.txt
+Egypt,Morocco,1,2,2,Addis Ababa,Ethiopia,1976_african_cup_of_nations.txt
+Guinea,Nigeria,1,1,X,Addis Ababa,Ethiopia,1976_african_cup_of_nations.txt
+Egypt,Guinea,2,4,2,Addis Ababa,Ethiopia,1976_african_cup_of_nations.txt
+Morocco,Nigeria,2,1,1,Addis Ababa,Ethiopia,1976_african_cup_of_nations.txt
+Egypt,Nigeria,2,3,2,Addis Ababa,Ethiopia,1976_african_cup_of_nations.txt
+Guinea,Morocco,1,1,X,Addis Ababa,Ethiopia,1976_african_cup_of_nations.txt
+Ghana,Zambia,2,1,1,Accra,Ghana,1978_african_cup_of_nations.txt
+Nigeria,Burkina Faso,4,2,1,Accra,Ghana,1978_african_cup_of_nations.txt
+Congo,Uganda,1,3,2,Kumasi,Ghana,1978_african_cup_of_nations.txt
+Morocco,Tunisia,1,1,X,Kumasi,Ghana,1978_african_cup_of_nations.txt
+Burkina Faso,Zambia,0,2,2,Accra,Ghana,1978_african_cup_of_nations.txt
+Ghana,Nigeria,1,1,X,Accra,Ghana,1978_african_cup_of_nations.txt
+Congo,Morocco,0,1,2,Kumasi,Ghana,1978_african_cup_of_nations.txt
+Tunisia,Uganda,3,1,1,Kumasi,Ghana,1978_african_cup_of_nations.txt
+Ghana,Burkina Faso,3,0,1,Accra,Ghana,1978_african_cup_of_nations.txt
+Nigeria,Zambia,0,0,X,Accra,Ghana,1978_african_cup_of_nations.txt
+Congo,Tunisia,0,0,X,Kumasi,Ghana,1978_african_cup_of_nations.txt
+Morocco,Uganda,0,3,2,Kumasi,Ghana,1978_african_cup_of_nations.txt
+Ghana,Tunisia,1,0,1,Accra,Ghana,1978_african_cup_of_nations.txt
+Nigeria,Uganda,1,2,2,Kumasi,Ghana,1978_african_cup_of_nations.txt
+Ghana,Uganda,2,0,1,Accra,Ghana,1978_african_cup_of_nations.txt
+Egypt,Ivory Coast,2,1,1,Lagos,Nigeria,1980_african_cup_of_nations.txt
+Nigeria,Tanzania,3,1,1,Lagos,Nigeria,1980_african_cup_of_nations.txt
+Algeria,Ghana,0,0,X,Ibadan,Nigeria,1980_african_cup_of_nations.txt
+Guinea,Morocco,1,1,X,Ibadan,Nigeria,1980_african_cup_of_nations.txt
+Egypt,Tanzania,2,1,1,Lagos,Nigeria,1980_african_cup_of_nations.txt
+Nigeria,Ivory Coast,0,0,X,Lagos,Nigeria,1980_african_cup_of_nations.txt
+Algeria,Morocco,1,0,1,Ibadan,Nigeria,1980_african_cup_of_nations.txt
+Ghana,Guinea,1,0,1,Ibadan,Nigeria,1980_african_cup_of_nations.txt
+Ivory Coast,Tanzania,1,1,X,Lagos,Nigeria,1980_african_cup_of_nations.txt
+Nigeria,Egypt,1,0,1,Lagos,Nigeria,1980_african_cup_of_nations.txt
+Algeria,Guinea,3,2,1,Ibadan,Nigeria,1980_african_cup_of_nations.txt
+Ghana,Morocco,0,1,2,Ibadan,Nigeria,1980_african_cup_of_nations.txt
+Algeria,Egypt,2,2,X,Ibadan,Nigeria   [Algeria wins on penalties],1980_african_cup_of_nations.txt
+Nigeria,Morocco,1,0,1,Lagos,Nigeria,1980_african_cup_of_nations.txt
+Egypt,Morocco,0,2,2,Lagos,Nigeria,1980_african_cup_of_nations.txt
+Nigeria,Algeria,3,0,1,Lagos,Nigeria,1980_african_cup_of_nations.txt
+Cameroon,Tunisia,1,1,X,Tripoli,Libya,1982_african_cup_of_nations.txt
+Libya,Ghana,2,2,X,Tripoli,Libya,1982_african_cup_of_nations.txt
+Algeria,Zambia,1,0,1,Benghazi,Libya,1982_african_cup_of_nations.txt
+Ethiopia,Nigeria,0,3,2,Benghazi,Libya,1982_african_cup_of_nations.txt
+Cameroon,Ghana,0,0,X,Tripoli,Libya,1982_african_cup_of_nations.txt
+Libya,Tunisia,2,0,1,Tripoli,Libya,1982_african_cup_of_nations.txt
+Algeria,Nigeria,2,1,1,Benghazi,Libya,1982_african_cup_of_nations.txt
+Ethiopia,Zambia,0,1,2,Benghazi,Libya,1982_african_cup_of_nations.txt
+Ghana,Tunisia,1,0,1,Tripoli,Libya,1982_african_cup_of_nations.txt
+Libya,Cameroon,0,0,X,Tripoli,Libya,1982_african_cup_of_nations.txt
+Algeria,Ethiopia,0,0,X,Benghazi,Libya,1982_african_cup_of_nations.txt
+Nigeria,Zambia,0,3,2,Benghazi,Libya,1982_african_cup_of_nations.txt
+Algeria,Ghana,2,3,2,Benghazi,Libya,1982_african_cup_of_nations.txt
+Libya,Zambia,2,1,1,Tripoli,Libya,1982_african_cup_of_nations.txt
+Algeria,Zambia,0,2,2,Tripoli,Libya,1982_african_cup_of_nations.txt
+Libya,Ghana,1,1,X,Tripoli,Libya   [Ghana wins on penalties],1982_african_cup_of_nations.txt
+Cameroon,Egypt,0,1,2,Abidjan,Ivory Coast,1984_african_cup_of_nations.txt
+Ivory Coast,Togo,3,0,1,Abidjan,Ivory Coast,1984_african_cup_of_nations.txt
+Algeria,Malawi,3,0,1,Bouaké,Ivory Coast,1984_african_cup_of_nations.txt
+Ghana,Nigeria,1,2,2,Bouaké,Ivory Coast,1984_african_cup_of_nations.txt
+Cameroon,Togo,4,1,1,Abidjan,Ivory Coast,1984_african_cup_of_nations.txt
+Ivory Coast,Egypt,1,2,2,Abidjan,Ivory Coast,1984_african_cup_of_nations.txt
+Algeria,Ghana,2,0,1,Bouaké,Ivory Coast,1984_african_cup_of_nations.txt
+Malawi,Nigeria,2,2,X,Bouaké,Ivory Coast,1984_african_cup_of_nations.txt
+Egypt,Togo,0,0,X,Abidjan,Ivory Coast,1984_african_cup_of_nations.txt
+Ivory Coast,Cameroon,0,2,2,Abidjan,Ivory Coast,1984_african_cup_of_nations.txt
+Algeria,Nigeria,0,0,X,Bouaké,Ivory Coast,1984_african_cup_of_nations.txt
+Ghana,Malawi,1,0,1,Bouaké,Ivory Coast,1984_african_cup_of_nations.txt
+Algeria,Cameroon,0,0,X,Bouaké,Ivory Coast   [Cameroon wins on penalties],1984_african_cup_of_nations.txt
+Egypt,Nigeria,2,2,X,Abidjan,Ivory Coast   [Nigeria wins on penalties],1984_african_cup_of_nations.txt
+Algeria,Egypt,3,1,1,Abidjan,Ivory Coast,1984_african_cup_of_nations.txt
+Cameroon,Nigeria,3,1,1,Abidjan,Ivory Coast,1984_african_cup_of_nations.txt
+Egypt,Senegal,0,1,2,Cairo,Egypt,1986_african_cup_of_nations.txt
+Ivory Coast,Mozambique,3,0,1,Cairo,Egypt,1986_african_cup_of_nations.txt
+Algeria,Morocco,0,0,X,Alexandria,Egypt,1986_african_cup_of_nations.txt
+Cameroon,Zambia,3,2,1,Alexandria,Egypt,1986_african_cup_of_nations.txt
+Egypt,Ivory Coast,2,0,1,Cairo,Egypt,1986_african_cup_of_nations.txt
+Mozambique,Senegal,0,2,2,Cairo,Egypt,1986_african_cup_of_nations.txt
+Algeria,Zambia,0,0,X,Alexandria,Egypt,1986_african_cup_of_nations.txt
+Cameroon,Morocco,1,1,X,Alexandria,Egypt,1986_african_cup_of_nations.txt
+Egypt,Mozambique,2,0,1,Cairo,Egypt,1986_african_cup_of_nations.txt
+Ivory Coast,Senegal,1,0,1,Cairo,Egypt,1986_african_cup_of_nations.txt
+Algeria,Cameroon,2,3,2,Alexandria,Egypt,1986_african_cup_of_nations.txt
+Morocco,Zambia,1,0,1,Alexandria,Egypt,1986_african_cup_of_nations.txt
+Cameroon,Ivory Coast,1,0,1,Alexandria,Egypt,1986_african_cup_of_nations.txt
+Egypt,Morocco,1,0,1,Cairo,Egypt,1986_african_cup_of_nations.txt
+Ivory Coast,Morocco,3,2,1,Cairo,Egypt,1986_african_cup_of_nations.txt
+Egypt,Cameroon,0,0,X,Cairo,Egypt   [Egypt wins on penalties],1986_african_cup_of_nations.txt
+Algeria,Ivory Coast,1,1,X,Casablanca,Morocco,1988_african_cup_of_nations.txt
+Morocco,DR Congo,1,1,X,Casablanca,Morocco,1988_african_cup_of_nations.txt
+Cameroon,Egypt,1,0,1,Rabat,Morocco,1988_african_cup_of_nations.txt
+Kenya,Nigeria,0,3,2,Rabat,Morocco,1988_african_cup_of_nations.txt
+Ivory Coast,DR Congo,1,1,X,Casablanca,Morocco,1988_african_cup_of_nations.txt
+Morocco,Algeria,1,0,1,Casablanca,Morocco,1988_african_cup_of_nations.txt
+Cameroon,Nigeria,1,1,X,Rabat,Morocco,1988_african_cup_of_nations.txt
+Egypt,Kenya,3,0,1,Rabat,Morocco,1988_african_cup_of_nations.txt
+Algeria,DR Congo,1,0,1,Casablanca,Morocco,1988_african_cup_of_nations.txt
+Morocco,Ivory Coast,0,0,X,Casablanca,Morocco,1988_african_cup_of_nations.txt
+Cameroon,Kenya,0,0,X,Rabat,Morocco,1988_african_cup_of_nations.txt
+Egypt,Nigeria,0,0,X,Rabat,Morocco,1988_african_cup_of_nations.txt
+Algeria,Nigeria,1,1,X,Rabat,Morocco   [Nigeria wins on penalties],1988_african_cup_of_nations.txt
+Morocco,Cameroon,0,1,2,Casablanca,Morocco,1988_african_cup_of_nations.txt
+Morocco,Algeria,1,1,X,Casablanca,Morocco   [Algeria wins on penalties],1988_african_cup_of_nations.txt
+Cameroon,Nigeria,1,0,1,Casablanca,Morocco,1988_african_cup_of_nations.txt
+Algeria,Nigeria,5,1,1,Algiers,Algeria,1990_african_cup_of_nations.txt
+Ivory Coast,Egypt,3,1,1,Algiers,Algeria,1990_african_cup_of_nations.txt
+Cameroon,Zambia,0,1,2,Annaba,Algeria,1990_african_cup_of_nations.txt
+Senegal,Kenya,0,0,X,Annaba,Algeria,1990_african_cup_of_nations.txt
+Algeria,Ivory Coast,3,0,1,Algiers,Algeria,1990_african_cup_of_nations.txt
+Nigeria,Egypt,1,0,1,Algiers,Algeria,1990_african_cup_of_nations.txt
+Cameroon,Senegal,0,2,2,Annaba,Algeria,1990_african_cup_of_nations.txt
+Zambia,Kenya,1,0,1,Annaba,Algeria,1990_african_cup_of_nations.txt
+Algeria,Egypt,2,0,1,Algiers,Algeria,1990_african_cup_of_nations.txt
+Nigeria,Ivory Coast,1,0,1,Algiers,Algeria,1990_african_cup_of_nations.txt
+Cameroon,Kenya,2,0,1,Annaba,Algeria,1990_african_cup_of_nations.txt
+Zambia,Senegal,0,0,X,Annaba,Algeria,1990_african_cup_of_nations.txt
+Algeria,Senegal,2,1,1,Algiers,Algeria,1990_african_cup_of_nations.txt
+Nigeria,Zambia,2,0,1,Annaba,Algeria,1990_african_cup_of_nations.txt
+Senegal,Zambia,0,1,2,Algiers,Algeria,1990_african_cup_of_nations.txt
+Algeria,Nigeria,1,0,1,Algiers,Algeria,1990_african_cup_of_nations.txt
+Cameroon,Morocco,1,0,1,Dakar,Senegal,1992_african_cup_of_nations.txt
+Senegal,Nigeria,1,2,2,Dakar,Senegal,1992_african_cup_of_nations.txt
+Algeria,Ivory Coast,0,3,2,Ziguinchor,Senegal,1992_african_cup_of_nations.txt
+Egypt,Zambia,0,1,2,Ziguinchor,Senegal,1992_african_cup_of_nations.txt
+Morocco,DR Congo,1,1,X,Dakar,Senegal,1992_african_cup_of_nations.txt
+Nigeria,Kenya,2,1,1,Dakar,Senegal,1992_african_cup_of_nations.txt
+Ivory Coast,Congo,0,0,X,Ziguinchor,Senegal,1992_african_cup_of_nations.txt
+Zambia,Ghana,0,1,2,Ziguinchor,Senegal,1992_african_cup_of_nations.txt
+Cameroon,DR Congo,1,1,X,Dakar,Senegal,1992_african_cup_of_nations.txt
+Senegal,Kenya,3,0,1,Dakar,Senegal,1992_african_cup_of_nations.txt
+Algeria,Congo,1,1,X,Ziguinchor,Senegal,1992_african_cup_of_nations.txt
+Egypt,Ghana,0,1,2,Ziguinchor,Senegal,1992_african_cup_of_nations.txt
+Nigeria,DR Congo,1,0,1,Dakar,Senegal,1992_african_cup_of_nations.txt
+Senegal,Cameroon,0,1,2,Dakar,Senegal,1992_african_cup_of_nations.txt
+Ghana,Congo,2,1,1,Dakar,Senegal,1992_african_cup_of_nations.txt
+Ivory Coast,Zambia,1,0,1,Dakar,Senegal,1992_african_cup_of_nations.txt
+Cameroon,Ivory Coast,0,0,X,Dakar,Senegal   [Ivory Coast wins on penalties],1992_african_cup_of_nations.txt
+Nigeria,Ghana,1,2,2,Dakar,Senegal,1992_african_cup_of_nations.txt
+Cameroon,Nigeria,1,2,2,Dakar,Senegal,1992_african_cup_of_nations.txt
+Ghana,Ivory Coast,0,0,X,Dakar,Senegal   [Ivory Coast wins on penalties],1992_african_cup_of_nations.txt
+Nigeria,Gabon,3,0,1,Tunis,Tunisia,1994_african_cup_of_nations.txt
+Tunisia,Mali,0,2,2,Tunis,Tunisia,1994_african_cup_of_nations.txt
+Ghana,Guinea,1,0,1,Sousse,Tunisia,1994_african_cup_of_nations.txt
+Ivory Coast,Sierra Leone,4,0,1,Sousse,Tunisia,1994_african_cup_of_nations.txt
+Egypt,Gabon,4,0,1,Tunis,Tunisia,1994_african_cup_of_nations.txt
+Mali,DR Congo,0,1,2,Tunis,Tunisia,1994_african_cup_of_nations.txt
+Senegal,Guinea,2,1,1,Sousse,Tunisia,1994_african_cup_of_nations.txt
+Zambia,Sierra Leone,0,0,X,Sousse,Tunisia,1994_african_cup_of_nations.txt
+Nigeria,Egypt,0,0,X,Tunis,Tunisia,1994_african_cup_of_nations.txt
+Tunisia,DR Congo,1,1,X,Tunis,Tunisia,1994_african_cup_of_nations.txt
+Ghana,Senegal,1,0,1,Sousse,Tunisia,1994_african_cup_of_nations.txt
+Zambia,Ivory Coast,1,0,1,Sousse,Tunisia,1994_african_cup_of_nations.txt
+DR Congo,Nigeria,0,2,2,Tunis,Tunisia,1994_african_cup_of_nations.txt
+Egypt,Mali,0,1,2,Tunis,Tunisia,1994_african_cup_of_nations.txt
+Ghana,Ivory Coast,1,2,2,Sousse,Tunisia,1994_african_cup_of_nations.txt
+Zambia,Senegal,1,0,1,Sousse,Tunisia,1994_african_cup_of_nations.txt
+Nigeria,Ivory Coast,2,2,X,Tunis,Tunisia   [Nigeria wins on penalties],1994_african_cup_of_nations.txt
+Zambia,Mali,4,0,1,Tunis,Tunisia,1994_african_cup_of_nations.txt
+Ivory Coast,Mali,3,1,1,Tunis,Tunisia,1994_african_cup_of_nations.txt
+Nigeria,Zambia,2,1,1,Tunis,Tunisia,1994_african_cup_of_nations.txt
+South Africa,Cameroon,3,0,1,Johannesburg,South Africa,1996_african_cup_of_nations.txt
+Ivory Coast,Ghana,0,2,2,Port Elizabeth,South Africa,1996_african_cup_of_nations.txt
+Zambia,Algeria,0,0,X,Bloemfontein,South Africa,1996_african_cup_of_nations.txt
+Egypt,Angola,2,1,1,Johannesburg,South Africa,1996_african_cup_of_nations.txt
+Sierra Leone,Burkina Faso,2,1,1,Bloemfontein,South Africa,1996_african_cup_of_nations.txt
+Gabon,Liberia,1,2,2,Durban,South Africa,1996_african_cup_of_nations.txt
+Tunisia,Mozambique,1,1,X,Port Elizabeth,South Africa,1996_african_cup_of_nations.txt
+Algeria,Sierra Leone,2,0,1,Bloemfontein,South Africa,1996_african_cup_of_nations.txt
+Cameroon,Egypt,2,1,1,Johannesburg,South Africa,1996_african_cup_of_nations.txt
+DR Congo,Gabon,0,2,2,Durban,South Africa,1996_african_cup_of_nations.txt
+Ghana,Tunisia,2,1,1,Port Elizabeth,South Africa,1996_african_cup_of_nations.txt
+Burkina Faso,Zambia,1,5,2,Bloemfontein,South Africa,1996_african_cup_of_nations.txt
+South Africa,Angola,1,0,1,Johannesburg,South Africa,1996_african_cup_of_nations.txt
+Mozambique,Ivory Coast,0,1,2,Port Elizabeth,South Africa,1996_african_cup_of_nations.txt
+Angola,Cameroon,3,3,X,Durban,South Africa,1996_african_cup_of_nations.txt
+Burkina Faso,Algeria,1,2,2,Port Elizabeth,South Africa,1996_african_cup_of_nations.txt
+Sierra Leone,Zambia,0,4,2,Bloemfontein,South Africa,1996_african_cup_of_nations.txt
+South Africa,Egypt,0,1,2,Johannesburg,South Africa,1996_african_cup_of_nations.txt
+Liberia,DR Congo,0,2,2,Johannesburg,South Africa,1996_african_cup_of_nations.txt
+Mozambique,Ghana,0,2,2,Bloemfontein,South Africa,1996_african_cup_of_nations.txt
+Tunisia,Ivory Coast,3,1,1,Port Elizabeth,South Africa,1996_african_cup_of_nations.txt
+South Africa,Algeria,2,1,1,Johannesburg,South Africa,1996_african_cup_of_nations.txt
+Zambia,Egypt,3,1,1,Bloemfontein,South Africa,1996_african_cup_of_nations.txt
+Gabon,Tunisia,1,1,X,Durban,South Africa   [Tunisia wins on penalties],1996_african_cup_of_nations.txt
+Ghana,DR Congo,1,0,1,Port Elizabeth,South Africa,1996_african_cup_of_nations.txt
+South Africa,Ghana,3,0,1,Johannesburg,South Africa,1996_african_cup_of_nations.txt
+Zambia,Tunisia,2,4,2,Durban,South Africa,1996_african_cup_of_nations.txt
+South Africa,Tunisia,2,0,1,Johannesburg,South Africa,1996_african_cup_of_nations.txt
+Zambia,Ghana,1,0,1,Johannesburg,South Africa,1996_african_cup_of_nations.txt
+Burkina Faso,Cameroon,0,1,2,Ouagadougou,Burkina Faso,1998_african_cup_of_nations.txt
+Algeria,Guinea,0,1,2,Ouagadougou,Burkina Faso,1998_african_cup_of_nations.txt
+Ivory Coast,Namibia,4,3,1,Bobo Dioulasso,Burkina Faso,1998_african_cup_of_nations.txt
+South Africa,Angola,0,0,X,Bobo Dioulasso,Burkina Faso,1998_african_cup_of_nations.txt
+DR Congo,Togo,2,1,1,Ouagadougou,Burkina Faso,1998_african_cup_of_nations.txt
+Ghana,Tunisia,2,0,1,Ouagadougou,Burkina Faso,1998_african_cup_of_nations.txt
+Zambia,Morocco,1,1,X,Bobo Dioulasso,Burkina Faso,1998_african_cup_of_nations.txt
+Egypt,Mozambique,2,0,1,Bobo Dioulasso,Burkina Faso,1998_african_cup_of_nations.txt
+Burkina Faso,Algeria,2,1,1,Ouagadougou,Burkina Faso,1998_african_cup_of_nations.txt
+Cameroon,Guinea,2,2,X,Ouagadougou,Burkina Faso,1998_african_cup_of_nations.txt
+South Africa,Ivory Coast,1,1,X,Bobo Dioulasso,Burkina Faso,1998_african_cup_of_nations.txt
+Angola,Namibia,3,3,X,Bobo Dioulasso,Burkina Faso,1998_african_cup_of_nations.txt
+Ghana,Togo,1,2,2,Ouagadougou,Burkina Faso,1998_african_cup_of_nations.txt
+Tunisia,DR Congo,2,1,1,Ouagadougou,Burkina Faso,1998_african_cup_of_nations.txt
+Morocco,Mozambique,3,0,1,Bobo Dioulasso,Burkina Faso,1998_african_cup_of_nations.txt
+Zambia,Egypt,0,4,2,Bobo Dioulasso,Burkina Faso,1998_african_cup_of_nations.txt
+Burkina Faso,Guinea,1,0,1,Ouagadougou,Burkina Faso,1998_african_cup_of_nations.txt
+Cameroon,Algeria,2,1,1,Ouagadougou,Burkina Faso,1998_african_cup_of_nations.txt
+Ghana,DR Congo,0,1,2,Ouagadougou,Burkina Faso,1998_african_cup_of_nations.txt
+Ivory Coast,Angola,5,2,1,Ouagadougou,Burkina Faso,1998_african_cup_of_nations.txt
+South Africa,Namibia,4,1,1,Bobo Dioulasso,Burkina Faso,1998_african_cup_of_nations.txt
+Tunisia,Togo,3,1,1,Ouagadougou,Burkina Faso,1998_african_cup_of_nations.txt
+Egypt,Morocco,0,1,2,Ouagadougou,Burkina Faso,1998_african_cup_of_nations.txt
+Zambia,Mozambique,3,1,1,Bobo Dioulasso,Burkina Faso,1998_african_cup_of_nations.txt
+Cameroon,DR Congo,0,1,2,Bobo Dioulasso,Burkina Faso,1998_african_cup_of_nations.txt
+Burkina Faso,Tunisia,1,1,X,Ouagadougou,Burkina Faso   [Burkina Faso wins on penalties],1998_african_cup_of_nations.txt
+Ivory Coast,Egypt,0,0,X,Ouagadougou,Burkina Faso   [Egypt wins on penalties],1998_african_cup_of_nations.txt
+Morocco,South Africa,1,2,2,Ouagadougou,Burkina Faso,1998_african_cup_of_nations.txt
+Burkina Faso,Egypt,0,2,2,Bobo Dioulasso,Burkina Faso,1998_african_cup_of_nations.txt
+DR Congo,South Africa,1,2,2,Ouagadougou,Burkina Faso,1998_african_cup_of_nations.txt
+Burkina Faso,DR Congo,4,4,X,Ouagadougou,Burkina Faso   [DR Congo wins on penalties],1998_african_cup_of_nations.txt
+South Africa,Egypt,0,2,2,Ouagadougou,Burkina Faso,1998_african_cup_of_nations.txt
+Ghana,Cameroon,1,1,X,Accra,Ghana,2000_african_cup_of_nations.txt
+Egypt,Zambia,2,0,1,Kano,Nigeria,2000_african_cup_of_nations.txt
+Nigeria,Tunisia,4,2,1,Lagos,Nigeria,2000_african_cup_of_nations.txt
+South Africa,Gabon,3,1,1,Kumasi,Ghana,2000_african_cup_of_nations.txt
+DR Congo,Algeria,0,0,X,Kumasi,Ghana,2000_african_cup_of_nations.txt
+Ivory Coast,Togo,1,1,X,Accra,Ghana,2000_african_cup_of_nations.txt
+Burkina Faso,Senegal,1,3,2,Kano,Nigeria,2000_african_cup_of_nations.txt
+Morocco,Congo,1,0,1,Lagos,Nigeria,2000_african_cup_of_nations.txt
+Ghana,Togo,2,0,1,Accra,Ghana,2000_african_cup_of_nations.txt
+South Africa,DR Congo,1,0,1,Kumasi,Ghana,2000_african_cup_of_nations.txt
+Cameroon,Ivory Coast,3,0,1,Accra,Ghana,2000_african_cup_of_nations.txt
+Egypt,Senegal,1,0,1,Kano,Nigeria,2000_african_cup_of_nations.txt
+Nigeria,Congo,0,0,X,Lagos,Nigeria,2000_african_cup_of_nations.txt
+Algeria,Gabon,3,1,1,Kumasi,Ghana,2000_african_cup_of_nations.txt
+Tunisia,Morocco,0,0,X,Lagos,Nigeria,2000_african_cup_of_nations.txt
+Zambia,Burkina Faso,1,1,X,Kano,Nigeria,2000_african_cup_of_nations.txt
+Cameroon,Togo,0,1,2,Kumasi,Ghana,2000_african_cup_of_nations.txt
+Ghana,Ivory Coast,0,2,2,Accra,Ghana,2000_african_cup_of_nations.txt
+Egypt,Burkina Faso,4,2,1,Kano,Nigeria,2000_african_cup_of_nations.txt
+Zambia,Senegal,2,2,X,Lagos,Nigeria,2000_african_cup_of_nations.txt
+DR Congo,Gabon,0,0,X,Accra,Ghana,2000_african_cup_of_nations.txt
+South Africa,Algeria,1,1,X,Kumasi,Ghana,2000_african_cup_of_nations.txt
+Nigeria,Morocco,2,0,1,Lagos,Nigeria,2000_african_cup_of_nations.txt
+Tunisia,Congo,1,0,1,Kano,Nigeria,2000_african_cup_of_nations.txt
+Cameroon,Algeria,2,1,1,Accra,Ghana,2000_african_cup_of_nations.txt
+Ghana,South Africa,0,1,2,Kumasi,Ghana,2000_african_cup_of_nations.txt
+Egypt,Tunisia,0,1,2,Kano,Nigeria,2000_african_cup_of_nations.txt
+Nigeria,Senegal,2,1,1,Lagos,Nigeria,2000_african_cup_of_nations.txt
+Cameroon,Tunisia,3,0,1,Accra,Ghana,2000_african_cup_of_nations.txt
+Nigeria,South Africa,2,0,1,Lagos,Nigeria,2000_african_cup_of_nations.txt
+South Africa,Tunisia,2,2,X,Accra,Ghana   [South Africa wins on penalties],2000_african_cup_of_nations.txt
+Nigeria,Cameroon,2,2,X,Lagos,Nigeria   [Cameroon wins on penalties],2000_african_cup_of_nations.txt
+Mali,Liberia,1,1,X,Bamako,Mali,2002_african_cup_of_nations.txt
+Cameroon,DR Congo,1,0,1,Sikasso,Mali,2002_african_cup_of_nations.txt
+Egypt,Senegal,0,1,2,Bamako,Mali,2002_african_cup_of_nations.txt
+South Africa,Burkina Faso,0,0,X,Ségou,Mali,2002_african_cup_of_nations.txt
+Algeria,Nigeria,0,1,2,Bamako,Mali,2002_african_cup_of_nations.txt
+Morocco,Ghana,0,0,X,Ségou,Mali,2002_african_cup_of_nations.txt
+Togo,Ivory Coast,0,0,X,Sikasso,Mali,2002_african_cup_of_nations.txt
+Zambia,Tunisia,0,0,X,Bamako,Mali,2002_african_cup_of_nations.txt
+Mali,Nigeria,0,0,X,Bamako,Mali,2002_african_cup_of_nations.txt
+South Africa,Ghana,0,0,X,Ségou,Mali,2002_african_cup_of_nations.txt
+Cameroon,Ivory Coast,1,0,1,Sikasso,Mali,2002_african_cup_of_nations.txt
+Egypt,Tunisia,1,0,1,Bamako,Mali,2002_african_cup_of_nations.txt
+Liberia,Algeria,2,2,X,Bamako,Mali,2002_african_cup_of_nations.txt
+Burkina Faso,Morocco,1,2,2,Ségou,Mali,2002_african_cup_of_nations.txt
+DR Congo,Togo,0,0,X,Sikasso,Mali,2002_african_cup_of_nations.txt
+Senegal,Zambia,1,0,1,Bamako,Mali,2002_african_cup_of_nations.txt
+Liberia,Nigeria,0,1,2,Mopti,Mali,2002_african_cup_of_nations.txt
+Mali,Algeria,2,0,1,Bamako,Mali,2002_african_cup_of_nations.txt
+Cameroon,Togo,3,0,1,Sikasso,Mali,2002_african_cup_of_nations.txt
+DR Congo,Ivory Coast,3,1,1,Kayes,Mali,2002_african_cup_of_nations.txt
+Burkina Faso,Ghana,1,2,2,Mopti,Mali,2002_african_cup_of_nations.txt
+South Africa,Morocco,3,1,1,Ségou,Mali,2002_african_cup_of_nations.txt
+Egypt,Zambia,2,1,1,Bamako,Mali,2002_african_cup_of_nations.txt
+Senegal,Tunisia,0,0,X,Kayes,Mali,2002_african_cup_of_nations.txt
+Mali,South Africa,2,0,1,Kayes,Mali,2002_african_cup_of_nations.txt
+Nigeria,Ghana,1,0,1,Bamako,Mali,2002_african_cup_of_nations.txt
+Cameroon,Egypt,1,0,1,Sikasso,Mali,2002_african_cup_of_nations.txt
+Senegal,DR Congo,2,0,1,Bamako,Mali,2002_african_cup_of_nations.txt
+Mali,Cameroon,0,3,2,Bamako,Mali,2002_african_cup_of_nations.txt
+Nigeria,Senegal,1,2,2,Bamako,Mali,2002_african_cup_of_nations.txt
+Mali,Nigeria,0,1,2,Mopti,Mali,2002_african_cup_of_nations.txt
+Senegal,Cameroon,0,0,X,Bamako,Mali   [Cameroon wins on penalties],2002_african_cup_of_nations.txt
+Tunisia,Rwanda,2,1,1,Radès,Tunisia,2004_african_cup_of_nations.txt
+Cameroon,Algeria,1,1,X,Sousse,Tunisia,2004_african_cup_of_nations.txt
+DR Congo,Guinea,1,2,2,Tunis,Tunisia,2004_african_cup_of_nations.txt
+Zimbabwe,Egypt,1,2,2,Sfax,Tunisia,2004_african_cup_of_nations.txt
+Kenya,Mali,1,3,2,Bizerte,Tunisia,2004_african_cup_of_nations.txt
+Senegal,Burkina Faso,0,0,X,Tunis,Tunisia,2004_african_cup_of_nations.txt
+Nigeria,Morocco,0,1,2,Monastir,Tunisia,2004_african_cup_of_nations.txt
+South Africa,Benin,2,0,1,Sfax,Tunisia,2004_african_cup_of_nations.txt
+Rwanda,Guinea,1,1,X,Bizerte,Tunisia,2004_african_cup_of_nations.txt
+Tunisia,DR Congo,3,0,1,Radès,Tunisia,2004_african_cup_of_nations.txt
+Algeria,Egypt,2,1,1,Sousse,Tunisia,2004_african_cup_of_nations.txt
+Cameroon,Zimbabwe,5,3,1,Sfax,Tunisia,2004_african_cup_of_nations.txt
+Burkina Faso,Mali,1,3,2,Tunis,Tunisia,2004_african_cup_of_nations.txt
+Senegal,Kenya,3,0,1,Bizerte,Tunisia,2004_african_cup_of_nations.txt
+Morocco,Benin,4,0,1,Sfax,Tunisia,2004_african_cup_of_nations.txt
+Nigeria,South Africa,4,0,1,Monastir,Tunisia,2004_african_cup_of_nations.txt
+Rwanda,DR Congo,1,0,1,Bizerte,Tunisia,2004_african_cup_of_nations.txt
+Tunisia,Guinea,1,1,X,Radès,Tunisia,2004_african_cup_of_nations.txt
+Burkina Faso,Kenya,0,3,2,Bizerte,Tunisia,2004_african_cup_of_nations.txt
+Senegal,Mali,1,1,X,Tunis,Tunisia,2004_african_cup_of_nations.txt
+Algeria,Zimbabwe,1,2,2,Sousse,Tunisia,2004_african_cup_of_nations.txt
+Cameroon,Egypt,0,0,X,Monastir,Tunisia,2004_african_cup_of_nations.txt
+Morocco,South Africa,1,1,X,Sousse,Tunisia,2004_african_cup_of_nations.txt
+Nigeria,Benin,2,1,1,Sfax,Tunisia,2004_african_cup_of_nations.txt
+Mali,Guinea,2,1,1,Tunis,Tunisia,2004_african_cup_of_nations.txt
+Tunisia,Senegal,1,0,1,Radès,Tunisia,2004_african_cup_of_nations.txt
+Cameroon,Nigeria,1,2,2,Monastir,Tunisia,2004_african_cup_of_nations.txt
+Morocco,Algeria,3,1,1,Sfax,Tunisia,2004_african_cup_of_nations.txt
+Morocco,Mali,4,0,1,Sousse,Tunisia,2004_african_cup_of_nations.txt
+Tunisia,Nigeria,1,1,X,Radès,Tunisia   [Tunisia wins on penalties],2004_african_cup_of_nations.txt
+Nigeria,Mali,2,1,1,Monastir,Tunisia,2004_african_cup_of_nations.txt
+Tunisia,Morocco,2,1,1,Radès,Tunisia,2004_african_cup_of_nations.txt
+Egypt,Libya,3,0,1,Cairo,Egypt,2006_african_cup_of_nations.txt
+Cameroon,Angola,3,1,1,Cairo,Egypt,2006_african_cup_of_nations.txt
+Morocco,Ivory Coast,0,1,2,Cairo,Egypt,2006_african_cup_of_nations.txt
+Togo,DR Congo,0,2,2,Cairo,Egypt,2006_african_cup_of_nations.txt
+South Africa,Guinea,0,2,2,Alexandria,Egypt,2006_african_cup_of_nations.txt
+Tunisia,Zambia,4,1,1,Alexandria,Egypt,2006_african_cup_of_nations.txt
+Nigeria,Ghana,1,0,1,Port Said,Egypt,2006_african_cup_of_nations.txt
+Zimbabwe,Senegal,0,2,2,Port Said,Egypt,2006_african_cup_of_nations.txt
+Egypt,Morocco,0,0,X,Cairo,Egypt,2006_african_cup_of_nations.txt
+Libya,Ivory Coast,1,2,2,Cairo,Egypt,2006_african_cup_of_nations.txt
+Angola,DR Congo,0,0,X,Cairo,Egypt,2006_african_cup_of_nations.txt
+Cameroon,Togo,2,0,1,Cairo,Egypt,2006_african_cup_of_nations.txt
+Tunisia,South Africa,2,0,1,Alexandria,Egypt,2006_african_cup_of_nations.txt
+Zambia,Guinea,1,2,2,Alexandria,Egypt,2006_african_cup_of_nations.txt
+Ghana,Senegal,1,0,1,Port Said,Egypt,2006_african_cup_of_nations.txt
+Nigeria,Zimbabwe,2,0,1,Port Said,Egypt,2006_african_cup_of_nations.txt
+Egypt,Ivory Coast,3,1,1,Cairo,Egypt,2006_african_cup_of_nations.txt
+Libya,Morocco,0,0,X,Cairo,Egypt,2006_african_cup_of_nations.txt
+Angola,Togo,3,2,1,Cairo,Egypt,2006_african_cup_of_nations.txt
+Cameroon,DR Congo,2,0,1,Cairo,Egypt,2006_african_cup_of_nations.txt
+Tunisia,Guinea,0,3,2,Alexandria,Egypt,2006_african_cup_of_nations.txt
+Zambia,South Africa,1,0,1,Alexandria,Egypt,2006_african_cup_of_nations.txt
+Ghana,Zimbabwe,1,2,2,Ismailia,Egypt,2006_african_cup_of_nations.txt
+Nigeria,Senegal,2,1,1,Port Said,Egypt,2006_african_cup_of_nations.txt
+Egypt,DR Congo,4,1,1,Cairo,Egypt,2006_african_cup_of_nations.txt
+Guinea,Senegal,2,3,2,Alexandria,Egypt,2006_african_cup_of_nations.txt
+Cameroon,Ivory Coast,1,1,X,Cairo,Egypt   [Ivory Coast wins on penalties],2006_african_cup_of_nations.txt
+Nigeria,Tunisia,1,1,X,Port Said,Egypt   [Nigeria wins on penalties],2006_african_cup_of_nations.txt
+Egypt,Senegal,2,1,1,Cairo,Egypt,2006_african_cup_of_nations.txt
+Nigeria,Ivory Coast,0,1,2,Alexandria,Egypt,2006_african_cup_of_nations.txt
+Senegal,Nigeria,0,1,2,Cairo,Egypt,2006_african_cup_of_nations.txt
+Egypt,Ivory Coast,0,0,X,Cairo,Egypt   [Egypt wins on penalties],2006_african_cup_of_nations.txt
+Ghana,Guinea,2,1,1,Accra,Ghana,2008_african_cup_of_nations.txt
+Mali,Benin,1,0,1,Sekondi,Ghana,2008_african_cup_of_nations.txt
+Namibia,Morocco,1,5,2,Accra,Ghana,2008_african_cup_of_nations.txt
+Nigeria,Ivory Coast,0,1,2,Sekondi,Ghana,2008_african_cup_of_nations.txt
+Egypt,Cameroon,4,2,1,Kumasi,Ghana,2008_african_cup_of_nations.txt
+Sudan,Zambia,0,3,2,Kumasi,Ghana,2008_african_cup_of_nations.txt
+South Africa,Angola,1,1,X,Tamale,Ghana,2008_african_cup_of_nations.txt
+Tunisia,Senegal,2,2,X,Tamale,Ghana,2008_african_cup_of_nations.txt
+Ghana,Namibia,1,0,1,Accra,Ghana,2008_african_cup_of_nations.txt
+Guinea,Morocco,3,2,1,Accra,Ghana,2008_african_cup_of_nations.txt
+Ivory Coast,Benin,4,1,1,Sekondi,Ghana,2008_african_cup_of_nations.txt
+Nigeria,Mali,0,0,X,Sekondi,Ghana,2008_african_cup_of_nations.txt
+Cameroon,Zambia,5,1,1,Kumasi,Ghana,2008_african_cup_of_nations.txt
+Egypt,Sudan,3,0,1,Kumasi,Ghana,2008_african_cup_of_nations.txt
+Senegal,Angola,1,3,2,Tamale,Ghana,2008_african_cup_of_nations.txt
+Tunisia,South Africa,3,1,1,Tamale,Ghana,2008_african_cup_of_nations.txt
+Ghana,Morocco,2,0,1,Accra,Ghana,2008_african_cup_of_nations.txt
+Guinea,Namibia,1,1,X,Sekondi,Ghana,2008_african_cup_of_nations.txt
+Ivory Coast,Mali,3,0,1,Accra,Ghana,2008_african_cup_of_nations.txt
+Nigeria,Benin,2,0,1,Sekondi,Ghana,2008_african_cup_of_nations.txt
+Cameroon,Sudan,3,0,1,Tamale,Ghana,2008_african_cup_of_nations.txt
+Egypt,Zambia,1,1,X,Kumasi,Ghana,2008_african_cup_of_nations.txt
+Senegal,South Africa,1,1,X,Kumasi,Ghana,2008_african_cup_of_nations.txt
+Tunisia,Angola,0,0,X,Tamale,Ghana,2008_african_cup_of_nations.txt
+Ghana,Nigeria,2,1,1,Accra,Ghana,2008_african_cup_of_nations.txt
+Ivory Coast,Guinea,5,0,1,Sekondi,Ghana,2008_african_cup_of_nations.txt
+Egypt,Angola,2,1,1,Kumasi,Ghana,2008_african_cup_of_nations.txt
+Tunisia,Cameroon,2,3,2,Tamale,Ghana,2008_african_cup_of_nations.txt
+Ghana,Cameroon,0,1,2,Accra,Ghana,2008_african_cup_of_nations.txt
+Ivory Coast,Egypt,1,4,2,Kumasi,Ghana,2008_african_cup_of_nations.txt
+Ghana,Ivory Coast,4,2,1,Kumasi,Ghana,2008_african_cup_of_nations.txt
+Cameroon,Egypt,0,1,2,Accra,Ghana,2008_african_cup_of_nations.txt
+Angola,Mali,4,4,X,Luanda,Angola,2010_african_cup_of_nations.txt
+Ivory Coast,Burkina Faso,0,0,X,Cabinda,Angola,2010_african_cup_of_nations.txt
+Malawi,Algeria,3,0,1,Luanda,Angola,2010_african_cup_of_nations.txt
+Egypt,Nigeria,3,1,1,Benguela,Angola,2010_african_cup_of_nations.txt
+Mozambique,Benin,2,2,X,Benguela,Angola,2010_african_cup_of_nations.txt
+Cameroon,Gabon,0,1,2,Lubango,Angola,2010_african_cup_of_nations.txt
+Zambia,Tunisia,1,1,X,Lubango,Angola,2010_african_cup_of_nations.txt
+Angola,Malawi,2,0,1,Luanda,Angola,2010_african_cup_of_nations.txt
+Mali,Algeria,0,1,2,Luanda,Angola,2010_african_cup_of_nations.txt
+Ivory Coast,Ghana,3,1,1,Cabinda,Angola,2010_african_cup_of_nations.txt
+Egypt,Mozambique,2,0,1,Benguela,Angola,2010_african_cup_of_nations.txt
+Nigeria,Benin,1,0,1,Benguela,Angola,2010_african_cup_of_nations.txt
+Cameroon,Zambia,3,2,1,Lubango,Angola,2010_african_cup_of_nations.txt
+Gabon,Tunisia,0,0,X,Lubango,Angola,2010_african_cup_of_nations.txt
+Angola,Algeria,0,0,X,Luanda,Angola,2010_african_cup_of_nations.txt
+Mali,Malawi,3,1,1,Cabinda,Angola,2010_african_cup_of_nations.txt
+Burkina Faso,Ghana,0,1,2,Luanda,Angola,2010_african_cup_of_nations.txt
+Egypt,Benin,2,0,1,Benguela,Angola,2010_african_cup_of_nations.txt
+Nigeria,Mozambique,3,0,1,Lubango,Angola,2010_african_cup_of_nations.txt
+Cameroon,Tunisia,2,2,X,Lubango,Angola,2010_african_cup_of_nations.txt
+Gabon,Zambia,1,2,2,Benguela,Angola,2010_african_cup_of_nations.txt
+Angola,Ghana,0,1,2,Luanda,Angola,2010_african_cup_of_nations.txt
+Ivory Coast,Algeria,2,3,2,Cabinda,Angola,2010_african_cup_of_nations.txt
+Egypt,Cameroon,3,1,1,Benguela,Angola,2010_african_cup_of_nations.txt
+Zambia,Nigeria,0,0,X,Lubango,Angola   [Nigeria wins on penalties],2010_african_cup_of_nations.txt
+Algeria,Egypt,0,4,2,Benguela,Angola,2010_african_cup_of_nations.txt
+Ghana,Nigeria,1,0,1,Luanda,Angola,2010_african_cup_of_nations.txt
+Nigeria,Algeria,1,0,1,Benguela,Angola,2010_african_cup_of_nations.txt
+Ghana,Egypt,0,1,2,Luanda,Angola,2010_african_cup_of_nations.txt
+Equatorial Guinea,Libya,1,0,1,Bata,Equatorial Guinea,2012_african_cup_of_nations.txt
+Senegal,Zambia,1,2,2,Bata,Equatorial Guinea,2012_african_cup_of_nations.txt
+Burkina Faso,Angola,1,2,2,Malabo,Equatorial Guinea,2012_african_cup_of_nations.txt
+Ivory Coast,Sudan,1,0,1,Malabo,Equatorial Guinea,2012_african_cup_of_nations.txt
+Gabon,Niger,2,0,1,Libreville,Gabon,2012_african_cup_of_nations.txt
+Morocco,Tunisia,1,2,2,Libreville,Gabon,2012_african_cup_of_nations.txt
+Ghana,Botswana,1,0,1,Franceville,Gabon,2012_african_cup_of_nations.txt
+Mali,Guinea,1,0,1,Franceville,Gabon,2012_african_cup_of_nations.txt
+Equatorial Guinea,Senegal,2,1,1,Bata,Equatorial Guinea,2012_african_cup_of_nations.txt
+Libya,Zambia,2,2,X,Bata,Equatorial Guinea,2012_african_cup_of_nations.txt
+Ivory Coast,Burkina Faso,2,0,1,Malabo,Equatorial Guinea,2012_african_cup_of_nations.txt
+Sudan,Angola,2,2,X,Malabo,Equatorial Guinea,2012_african_cup_of_nations.txt
+Gabon,Morocco,3,2,1,Libreville,Gabon,2012_african_cup_of_nations.txt
+Niger,Tunisia,1,2,2,Libreville,Gabon,2012_african_cup_of_nations.txt
+Botswana,Guinea,1,6,2,Franceville,Gabon,2012_african_cup_of_nations.txt
+Ghana,Mali,2,0,1,Franceville,Gabon,2012_african_cup_of_nations.txt
+Equatorial Guinea,Zambia,0,1,2,Malabo,Equatorial Guinea,2012_african_cup_of_nations.txt
+Libya,Senegal,2,1,1,Bata,Equatorial Guinea,2012_african_cup_of_nations.txt
+Ivory Coast,Angola,2,0,1,Malabo,Equatorial Guinea,2012_african_cup_of_nations.txt
+Sudan,Burkina Faso,2,1,1,Bata,Equatorial Guinea,2012_african_cup_of_nations.txt
+Gabon,Tunisia,1,0,1,Franceville,Gabon,2012_african_cup_of_nations.txt
+Niger,Morocco,0,1,2,Libreville,Gabon,2012_african_cup_of_nations.txt
+Botswana,Mali,1,2,2,Libreville,Gabon,2012_african_cup_of_nations.txt
+Ghana,Guinea,1,1,X,Franceville,Gabon,2012_african_cup_of_nations.txt
+Equatorial Guinea,Ivory Coast,0,3,2,Malabo,Equatorial Guinea,2012_african_cup_of_nations.txt
+Zambia,Sudan,3,0,1,Bata,Equatorial Guinea,2012_african_cup_of_nations.txt
+Gabon,Mali,1,1,X,Libreville,Gabon   [Mali wins on penalties],2012_african_cup_of_nations.txt
+Ghana,Tunisia,2,1,1,Franceville,Gabon,2012_african_cup_of_nations.txt
+Mali,Ivory Coast,0,1,2,Libreville,Gabon,2012_african_cup_of_nations.txt
+Zambia,Ghana,1,0,1,Bata,Equatorial Guinea,2012_african_cup_of_nations.txt
+Ghana,Mali,0,2,2,Malabo,Equatorial Guinea,2012_african_cup_of_nations.txt
+Zambia,Ivory Coast,0,0,X,Libreville,Gabon   [Zambia wins on penalties],2012_african_cup_of_nations.txt
+Angola,Morocco,0,0,X,Johannesburg,South Africa,2013_african_cup_of_nations.txt
+South Africa,Cape Verde,0,0,X,Johannesburg,South Africa,2013_african_cup_of_nations.txt
+Ghana,DR Congo,2,2,X,Port Elizabeth,South Africa,2013_african_cup_of_nations.txt
+Mali,Niger,1,0,1,Port Elizabeth,South Africa,2013_african_cup_of_nations.txt
+Nigeria,Burkina Faso,1,1,X,Nelspruit,South Africa,2013_african_cup_of_nations.txt
+Zambia,Ethiopia,1,1,X,Nelspruit,South Africa,2013_african_cup_of_nations.txt
+Ivory Coast,Togo,2,1,1,Rustenburg,South Africa,2013_african_cup_of_nations.txt
+Tunisia,Algeria,1,0,1,Rustenburg,South Africa,2013_african_cup_of_nations.txt
+Morocco,Cape Verde,1,1,X,Durban,South Africa,2013_african_cup_of_nations.txt
+South Africa,Angola,2,0,1,Durban,South Africa,2013_african_cup_of_nations.txt
+Ghana,Mali,1,0,1,Port Elizabeth,South Africa,2013_african_cup_of_nations.txt
+Niger,DR Congo,0,0,X,Port Elizabeth,South Africa,2013_african_cup_of_nations.txt
+Burkina Faso,Ethiopia,4,0,1,Nelspruit,South Africa,2013_african_cup_of_nations.txt
+Zambia,Nigeria,1,1,X,Nelspruit,South Africa,2013_african_cup_of_nations.txt
+Algeria,Togo,0,2,2,Rustenburg,South Africa,2013_african_cup_of_nations.txt
+Ivory Coast,Tunisia,3,0,1,Rustenburg,South Africa,2013_african_cup_of_nations.txt
+Cape Verde,Angola,2,1,1,Port Elizabeth,South Africa,2013_african_cup_of_nations.txt
+South Africa,Morocco,2,2,X,Durban,South Africa,2013_african_cup_of_nations.txt
+DR Congo,Mali,1,1,X,Durban,South Africa,2013_african_cup_of_nations.txt
+Niger,Ghana,0,3,2,Port Elizabeth,South Africa,2013_african_cup_of_nations.txt
+Burkina Faso,Zambia,0,0,X,Nelspruit,South Africa,2013_african_cup_of_nations.txt
+Ethiopia,Nigeria,0,2,2,Rustenburg,South Africa,2013_african_cup_of_nations.txt
+Algeria,Ivory Coast,2,2,X,Rustenburg,South Africa,2013_african_cup_of_nations.txt
+Togo,Tunisia,1,1,X,Nelspruit,South Africa,2013_african_cup_of_nations.txt
+Ghana,Cape Verde,2,0,1,Port Elizabeth,South Africa,2013_african_cup_of_nations.txt
+South Africa,Mali,1,1,X,Durban,South Africa   [Mali wins on penalties],2013_african_cup_of_nations.txt
+Burkina Faso,Togo,1,0,1,Nelspruit,South Africa,2013_african_cup_of_nations.txt
+Ivory Coast,Nigeria,1,2,2,Rustenburg,South Africa,2013_african_cup_of_nations.txt
+Burkina Faso,Ghana,1,1,X,Nelspruit,South Africa   [Burkina Faso wins on penalties],2013_african_cup_of_nations.txt
+Mali,Nigeria,1,4,2,Durban,South Africa,2013_african_cup_of_nations.txt
+Mali,Ghana,3,1,1,Port Elizabeth,South Africa,2013_african_cup_of_nations.txt
+Nigeria,Burkina Faso,1,0,1,Johannesburg,South Africa,2013_african_cup_of_nations.txt
+Burkina Faso,Gabon,0,2,2,Bata,Equatorial Guinea,2015_african_cup_of_nations.txt
+Equatorial Guinea,Congo,1,1,X,Bata,Equatorial Guinea,2015_african_cup_of_nations.txt
+Tunisia,Cape Verde,1,1,X,Ebebiyín,Equatorial Guinea,2015_african_cup_of_nations.txt
+Zambia,DR Congo,1,1,X,Ebebiyín,Equatorial Guinea,2015_african_cup_of_nations.txt
+Algeria,South Africa,3,1,1,Mongomo,Equatorial Guinea,2015_african_cup_of_nations.txt
+Ghana,Senegal,1,2,2,Mongomo,Equatorial Guinea,2015_african_cup_of_nations.txt
+Ivory Coast,Guinea,1,1,X,Malabo,Equatorial Guinea,2015_african_cup_of_nations.txt
+Mali,Cameroon,1,1,X,Malabo,Equatorial Guinea,2015_african_cup_of_nations.txt
+Equatorial Guinea,Burkina Faso,0,0,X,Bata,Equatorial Guinea,2015_african_cup_of_nations.txt
+Gabon,Congo,0,1,2,Bata,Equatorial Guinea,2015_african_cup_of_nations.txt
+Cape Verde,DR Congo,0,0,X,Ebebiyín,Equatorial Guinea,2015_african_cup_of_nations.txt
+Zambia,Tunisia,1,2,2,Ebebiyín,Equatorial Guinea,2015_african_cup_of_nations.txt
+Ghana,Algeria,1,0,1,Mongomo,Equatorial Guinea,2015_african_cup_of_nations.txt
+South Africa,Senegal,1,1,X,Mongomo,Equatorial Guinea,2015_african_cup_of_nations.txt
+Cameroon,Guinea,1,1,X,Malabo,Equatorial Guinea,2015_african_cup_of_nations.txt
+Ivory Coast,Mali,1,1,X,Malabo,Equatorial Guinea,2015_african_cup_of_nations.txt
+Congo,Burkina Faso,2,1,1,Ebebiyín,Equatorial Guinea,2015_african_cup_of_nations.txt
+Equatorial Guinea,Gabon,2,0,1,Bata,Equatorial Guinea,2015_african_cup_of_nations.txt
+Cape Verde,Zambia,0,0,X,Ebebiyín,Equatorial Guinea,2015_african_cup_of_nations.txt
+DR Congo,Tunisia,1,1,X,Bata,Equatorial Guinea,2015_african_cup_of_nations.txt
+Senegal,Algeria,0,2,2,Malabo,Equatorial Guinea,2015_african_cup_of_nations.txt
+South Africa,Ghana,1,2,2,Mongomo,Equatorial Guinea,2015_african_cup_of_nations.txt
+Cameroon,Ivory Coast,0,1,2,Malabo,Equatorial Guinea,2015_african_cup_of_nations.txt
+Guinea,Mali,1,1,X,Mongomo,Equatorial Guinea,2015_african_cup_of_nations.txt
+Congo,DR Congo,2,4,2,Bata,Equatorial Guinea,2015_african_cup_of_nations.txt
+Equatorial Guinea,Tunisia,2,1,1,Bata,Equatorial Guinea,2015_african_cup_of_nations.txt
+Ghana,Guinea,3,0,1,Malabo,Equatorial Guinea,2015_african_cup_of_nations.txt
+Ivory Coast,Algeria,3,1,1,Malabo,Equatorial Guinea,2015_african_cup_of_nations.txt
+DR Congo,Ivory Coast,1,3,2,Bata,Equatorial Guinea,2015_african_cup_of_nations.txt
+Equatorial Guinea,Ghana,0,3,2,Malabo,Equatorial Guinea,2015_african_cup_of_nations.txt
+Equatorial Guinea,DR Congo,0,0,X,Malabo,Equatorial Guinea   [DR Congo wins on penalties],2015_african_cup_of_nations.txt
+Ivory Coast,Ghana,0,0,X,Bata,Equatorial Guinea   [Ivory Coast wins on penalties],2015_african_cup_of_nations.txt
+Burkina Faso,Cameroon,1,1,X,Libreville,Gabon,2017_african_cup_of_nations.txt
+Gabon - Guinea,Bissau,1,1,X,Libreville,Gabon,2017_african_cup_of_nations.txt
+Algeria,Zimbabwe,2,2,X,Franceville,Gabon,2017_african_cup_of_nations.txt
+Tunisia,Senegal,0,2,2,Franceville,Gabon,2017_african_cup_of_nations.txt
+DR Congo,Morocco,1,0,1,Oyem,Gabon,2017_african_cup_of_nations.txt
+Ivory Coast,Togo,0,0,X,Oyem,Gabon,2017_african_cup_of_nations.txt
+Ghana,Uganda,1,0,1,Port-Gentil,Gabon,2017_african_cup_of_nations.txt
+Mali,Egypt,0,0,X,Port-Gentil,Gabon,2017_african_cup_of_nations.txt
+Cameroon - Guinea,Bissau,2,1,1,Libreville,Gabon,2017_african_cup_of_nations.txt
+Gabon,Burkina Faso,1,1,X,Libreville,Gabon,2017_african_cup_of_nations.txt
+Algeria,Tunisia,1,2,2,Franceville,Gabon,2017_african_cup_of_nations.txt
+Senegal,Zimbabwe,2,0,1,Franceville,Gabon,2017_african_cup_of_nations.txt
+Ivory Coast,DR Congo,2,2,X,Oyem,Gabon,2017_african_cup_of_nations.txt
+Morocco,Togo,3,1,1,Oyem,Gabon,2017_african_cup_of_nations.txt
+Egypt,Uganda,1,0,1,Port-Gentil,Gabon,2017_african_cup_of_nations.txt
+Ghana,Mali,1,0,1,Port-Gentil,Gabon,2017_african_cup_of_nations.txt
+Gabon,Cameroon,0,0,X,Libreville,Gabon,2017_african_cup_of_nations.txt
+Guinea-Bissau,Burkina Faso,0,2,2,Franceville,Gabon,2017_african_cup_of_nations.txt
+Senegal,Algeria,2,2,X,Franceville,Gabon,2017_african_cup_of_nations.txt
+Zimbabwe,Tunisia,2,4,2,Libreville,Gabon,2017_african_cup_of_nations.txt
+Morocco,Ivory Coast,1,0,1,Oyem,Gabon,2017_african_cup_of_nations.txt
+Togo,DR Congo,1,3,2,Port-Gentil,Gabon,2017_african_cup_of_nations.txt
+Egypt,Ghana,1,0,1,Port-Gentil,Gabon,2017_african_cup_of_nations.txt
+Uganda,Mali,1,1,X,Oyem,Gabon,2017_african_cup_of_nations.txt
+Burkina Faso,Tunisia,2,0,1,Libreville,Gabon,2017_african_cup_of_nations.txt
+Senegal,Cameroon,0,0,X,Franceville,Gabon   [Cameroon wins on penalties],2017_african_cup_of_nations.txt
+DR Congo,Ghana,1,2,2,Oyem,Gabon,2017_african_cup_of_nations.txt
+Egypt,Morocco,1,0,1,Port-Gentil,Gabon,2017_african_cup_of_nations.txt
+Burkina Faso,Egypt,1,1,X,Libreville,Gabon   [Egypt wins on penalties],2017_african_cup_of_nations.txt
+Cameroon,Ghana,2,0,1,Franceville,Gabon,2017_african_cup_of_nations.txt
+Burkina Faso,Ghana,1,0,1,Port-Gentil,Gabon,2017_african_cup_of_nations.txt
+Egypt,Cameroon,1,2,2,Libreville,Gabon,2017_african_cup_of_nations.txt
+Egypt,Zimbabwe,1,0,1,Cairo,Egypt,2019_african_cup_of_nations.txt
+DR Congo,Uganda,0,2,2,Cairo,Egypt,2019_african_cup_of_nations.txt
+Nigeria,Burundi,1,0,1,Alexandria,Egypt,2019_african_cup_of_nations.txt
+Guinea,Madagascar,2,2,X,Alexandria,Egypt,2019_african_cup_of_nations.txt
+Senegal,Tanzania,2,0,1,Cairo,Egypt,2019_african_cup_of_nations.txt
+Algeria,Kenya,2,0,1,Cairo,Egypt,2019_african_cup_of_nations.txt
+Morocco,Namibia,1,0,1,Cairo,Egypt,2019_african_cup_of_nations.txt
+Ivory Coast,South Africa,1,0,1,Cairo,Egypt,2019_african_cup_of_nations.txt
+Tunisia,Angola,1,1,X,Suez,Egypt,2019_african_cup_of_nations.txt
+Mali,Mauritania,4,1,1,Suez,Egypt,2019_african_cup_of_nations.txt
+Cameroon - Guinea,Bissau,2,0,1,Ismailia,Egypt,2019_african_cup_of_nations.txt
+Ghana,Benin,2,2,X,Ismailia,Egypt,2019_african_cup_of_nations.txt
+Uganda,Zimbabwe,1,1,X,Cairo,Egypt,2019_african_cup_of_nations.txt
+Egypt,DR Congo,2,0,1,Cairo,Egypt,2019_african_cup_of_nations.txt
+Nigeria,Guinea,1,0,1,Alexandria,Egypt,2019_african_cup_of_nations.txt
+Madagascar,Burundi,1,0,1,Alexandria,Egypt,2019_african_cup_of_nations.txt
+Senegal,Algeria,0,1,2,Cairo,Egypt,2019_african_cup_of_nations.txt
+Kenya,Tanzania,3,2,1,Cairo,Egypt,2019_african_cup_of_nations.txt
+Morocco,Ivory Coast,1,0,1,Cairo,Egypt,2019_african_cup_of_nations.txt
+South Africa,Namibia,1,0,1,Cairo,Egypt,2019_african_cup_of_nations.txt
+Tunisia,Mali,1,1,X,Suez,Egypt,2019_african_cup_of_nations.txt
+Mauritania,Angola,0,0,X,Suez,Egypt,2019_african_cup_of_nations.txt
+Cameroon,Ghana,0,0,X,Ismailia,Egypt,2019_african_cup_of_nations.txt
+Benin - Guinea,Bissau,0,0,X,Ismailia,Egypt,2019_african_cup_of_nations.txt
+Egypt,Uganda,2,0,1,Cairo,Egypt,2019_african_cup_of_nations.txt
+Zimbabwe,DR Congo,0,4,2,Cairo,Egypt,2019_african_cup_of_nations.txt
+Burundi,Guinea,0,2,2,Cairo,Egypt,2019_african_cup_of_nations.txt
+Madagascar,Nigeria,2,0,1,Alexandria,Egypt,2019_african_cup_of_nations.txt
+Kenya,Senegal,0,3,2,Cairo,Egypt,2019_african_cup_of_nations.txt
+Tanzania,Algeria,0,3,2,Cairo,Egypt,2019_african_cup_of_nations.txt
+Namibia,Ivory Coast,1,4,2,Cairo,Egypt,2019_african_cup_of_nations.txt
+South Africa,Morocco,0,1,2,Cairo,Egypt,2019_african_cup_of_nations.txt
+Angola,Mali,0,1,2,Ismailia,Egypt,2019_african_cup_of_nations.txt
+Mauritania,Tunisia,0,0,X,Suez,Egypt,2019_african_cup_of_nations.txt
+Benin,Cameroon,0,0,X,Ismailia,Egypt,2019_african_cup_of_nations.txt
+Guinea-Bissau,Ghana,0,2,2,Suez,Egypt,2019_african_cup_of_nations.txt
+Morocco,Benin,1,1,X,Cairo,Egypt   [Benin wins on penalties],2019_african_cup_of_nations.txt
+Uganda,Senegal,0,1,2,Cairo,Egypt,2019_african_cup_of_nations.txt
+Egypt,South Africa,0,1,2,Cairo,Egypt,2019_african_cup_of_nations.txt
+Nigeria,Cameroon,3,2,1,Alexandria,Egypt,2019_african_cup_of_nations.txt
+Algeria,Guinea,3,0,1,Cairo,Egypt,2019_african_cup_of_nations.txt
+Madagascar,DR Congo,2,2,X,Alexandria,Egypt   [Madagascar wins on penalties],2019_african_cup_of_nations.txt
+Ghana,Tunisia,1,1,X,Ismailia,Egypt   [Tunisia wins on penalties],2019_african_cup_of_nations.txt
+Mali,Ivory Coast,0,1,2,Suez,Egypt,2019_african_cup_of_nations.txt
+Nigeria,South Africa,2,1,1,Cairo,Egypt,2019_african_cup_of_nations.txt
+Senegal,Benin,1,0,1,Cairo,Egypt,2019_african_cup_of_nations.txt
+Ivory Coast,Algeria,1,1,X,Suez,Egypt   [Algeria wins on penalties],2019_african_cup_of_nations.txt
+Madagascar,Tunisia,0,3,2,Cairo,Egypt,2019_african_cup_of_nations.txt
+Algeria,Nigeria,2,1,1,Cairo,Egypt,2019_african_cup_of_nations.txt
+Senegal,Tunisia,1,0,1,Cairo,Egypt,2019_african_cup_of_nations.txt
+Tunisia,Nigeria,0,1,2,Cairo,Egypt,2019_african_cup_of_nations.txt
+Senegal,Algeria,0,1,2,Cairo,Egypt,2019_african_cup_of_nations.txt
+Cameroon,Burkina Faso,2,1,1,Yaoundé,Cameroon,2022_african_cup_of_nations.txt
+Ethiopia,Cape Verde,0,1,2,Yaoundé,Cameroon,2022_african_cup_of_nations.txt
+Senegal,Zimbabwe,1,0,1,Bafoussam,Cameroon,2022_african_cup_of_nations.txt
+Guinea,Malawi,1,0,1,Bafoussam,Cameroon,2022_african_cup_of_nations.txt
+Morocco,Ghana,1,0,1,Yaoundé,Cameroon,2022_african_cup_of_nations.txt
+Comoros,Gabon,0,1,2,Yaoundé,Cameroon,2022_african_cup_of_nations.txt
+Nigeria,Egypt,1,0,1,Garoua,Cameroon,2022_african_cup_of_nations.txt
+Sudan - Guinea,Bissau,0,0,X,Garoua,Cameroon,2022_african_cup_of_nations.txt
+Algeria,Sierra Leone,0,0,X,Douala,Cameroon,2022_african_cup_of_nations.txt
+Equatorial Guinea,Ivory Coast,0,1,2,Douala,Cameroon,2022_african_cup_of_nations.txt
+Tunisia,Mali,0,1,2,Limbé,Cameroon,2022_african_cup_of_nations.txt
+Mauritania,Gambia,0,1,2,Limbé,Cameroon,2022_african_cup_of_nations.txt
+Cameroon,Ethiopia,4,1,1,Yaoundé,Cameroon,2022_african_cup_of_nations.txt
+Cape Verde,Burkina Faso,0,1,2,Yaoundé,Cameroon,2022_african_cup_of_nations.txt
+Senegal,Guinea,0,0,X,Bafoussam,Cameroon,2022_african_cup_of_nations.txt
+Malawi,Zimbabwe,2,1,1,Bafoussam,Cameroon,2022_african_cup_of_nations.txt
+Morocco,Comoros,2,0,1,Yaoundé,Cameroon,2022_african_cup_of_nations.txt
+Gabon,Ghana,1,1,X,Yaoundé,Cameroon,2022_african_cup_of_nations.txt
+Nigeria,Sudan,3,1,1,Garoua,Cameroon,2022_african_cup_of_nations.txt
+Guinea-Bissau,Egypt,0,1,2,Garoua,Cameroon,2022_african_cup_of_nations.txt
+Ivory Coast,Sierra Leone,2,2,X,Douala,Cameroon,2022_african_cup_of_nations.txt
+Algeria,Equatorial Guinea,0,1,2,Douala,Cameroon,2022_african_cup_of_nations.txt
+Gambia,Mali,1,1,X,Limbé,Cameroon,2022_african_cup_of_nations.txt
+Tunisia,Mauritania,4,0,1,Limbé,Cameroon,2022_african_cup_of_nations.txt
+Burkina Faso,Ethiopia,1,1,X,Bafoussam,Cameroon,2022_african_cup_of_nations.txt
+Cameroon,Cape Verde,1,1,X,Yaoundé,Cameroon,2022_african_cup_of_nations.txt
+Malawi,Senegal,0,0,X,Bafoussam,Cameroon,2022_african_cup_of_nations.txt
+Zimbabwe,Guinea,2,1,1,Yaoundé,Cameroon,2022_african_cup_of_nations.txt
+Gabon,Morocco,2,2,X,Yaoundé,Cameroon,2022_african_cup_of_nations.txt
+Ghana,Comoros,2,3,2,Garoua,Cameroon,2022_african_cup_of_nations.txt
+Egypt,Sudan,1,0,1,Yaoundé,Cameroon,2022_african_cup_of_nations.txt
+Guinea-Bissau,Nigeria,0,2,2,Garoua,Cameroon,2022_african_cup_of_nations.txt
+Ivory Coast,Algeria,3,1,1,Douala,Cameroon,2022_african_cup_of_nations.txt
+Sierra Leone,Equatorial Guinea,0,1,2,Limbé,Cameroon,2022_african_cup_of_nations.txt
+Gambia,Tunisia,1,0,1,Limbé,Cameroon,2022_african_cup_of_nations.txt
+Mali,Mauritania,2,0,1,Douala,Cameroon,2022_african_cup_of_nations.txt
+Burkina Faso,Gabon,1,1,X,Limbé,Cameroon   [Burkina Faso wins on penalties],2022_african_cup_of_nations.txt
+Nigeria,Tunisia,0,1,2,Garoua,Cameroon,2022_african_cup_of_nations.txt
+Cameroon,Comoros,2,1,1,Yaoundé,Cameroon,2022_african_cup_of_nations.txt
+Guinea,Gambia,0,1,2,Bafoussam,Cameroon,2022_african_cup_of_nations.txt
+Morocco,Malawi,2,1,1,Yaoundé,Cameroon,2022_african_cup_of_nations.txt
+Senegal,Cape Verde,2,0,1,Bafoussam,Cameroon,2022_african_cup_of_nations.txt
+Ivory Coast,Egypt,0,0,X,Douala,Cameroon   [Egypt wins on penalties],2022_african_cup_of_nations.txt
+Mali,Equatorial Guinea,0,0,X,Limbé,Cameroon   [Equatorial Guinea wins on penalties],2022_african_cup_of_nations.txt
+Burkina Faso,Tunisia,1,0,1,Garoua,Cameroon,2022_african_cup_of_nations.txt
+Cameroon,Gambia,2,0,1,Douala,Cameroon,2022_african_cup_of_nations.txt
+Egypt,Morocco,2,1,1,Yaoundé,Cameroon,2022_african_cup_of_nations.txt
+Senegal,Equatorial Guinea,3,1,1,Yaoundé,Cameroon,2022_african_cup_of_nations.txt
+Burkina Faso,Senegal,1,3,2,Yaoundé,Cameroon,2022_african_cup_of_nations.txt
+Cameroon,Egypt,0,0,X,Yaoundé,Cameroon   [Egypt wins on penalties],2022_african_cup_of_nations.txt
+Cameroon,Burkina Faso,3,3,X,Yaoundé,Cameroon   [Cameroon wins on penalties],2022_african_cup_of_nations.txt
+Senegal,Egypt,0,0,X,Yaoundé,Cameroon   [Senegal wins on penalties],2022_african_cup_of_nations.txt
+Ivory Coast - Guinea,Bissau,2,0,1,Ebimpé,Ivory Coast,2024_african_cup_of_nations.txt
+Nigeria,Equatorial Guinea,1,1,X,Ebimpé,Ivory Coast,2024_african_cup_of_nations.txt
+Egypt,Mozambique,2,2,X,Abidjan,Ivory Coast,2024_african_cup_of_nations.txt
+Ghana,Cape Verde,1,2,2,Abidjan,Ivory Coast,2024_african_cup_of_nations.txt
+Senegal,Gambia,3,0,1,Yamoussoukro,Ivory Coast,2024_african_cup_of_nations.txt
+Cameroon,Guinea,1,1,X,Yamoussoukro,Ivory Coast,2024_african_cup_of_nations.txt
+Algeria,Angola,1,1,X,Bouaké,Ivory Coast,2024_african_cup_of_nations.txt
+Burkina Faso,Mauritania,1,0,1,Bouaké,Ivory Coast,2024_african_cup_of_nations.txt
+Tunisia,Namibia,0,1,2,Korhogo,Ivory Coast,2024_african_cup_of_nations.txt
+Mali,South Africa,2,0,1,Korhogo,Ivory Coast,2024_african_cup_of_nations.txt
+Morocco,Tanzania,3,0,1,San-Pédro,Ivory Coast,2024_african_cup_of_nations.txt
+DR Congo,Zambia,1,1,X,San-Pédro,Ivory Coast,2024_african_cup_of_nations.txt
+Equatorial Guinea - Guinea,Bissau,4,2,1,Ebimpé,Ivory Coast,2024_african_cup_of_nations.txt
+Ivory Coast,Nigeria,0,1,2,Ebimpé,Ivory Coast,2024_african_cup_of_nations.txt
+Egypt,Ghana,2,2,X,Abidjan,Ivory Coast,2024_african_cup_of_nations.txt
+Cape Verde,Mozambique,3,0,1,Abidjan,Ivory Coast,2024_african_cup_of_nations.txt
+Senegal,Cameroon,3,1,1,Yamoussoukro,Ivory Coast,2024_african_cup_of_nations.txt
+Guinea,Gambia,1,0,1,Yamoussoukro,Ivory Coast,2024_african_cup_of_nations.txt
+Algeria,Burkina Faso,2,2,X,Bouaké,Ivory Coast,2024_african_cup_of_nations.txt
+Mauritania,Angola,2,3,2,Bouaké,Ivory Coast,2024_african_cup_of_nations.txt
+Tunisia,Mali,1,1,X,Korhogo,Ivory Coast,2024_african_cup_of_nations.txt
+South Africa,Namibia,4,0,1,Korhogo,Ivory Coast,2024_african_cup_of_nations.txt
+Morocco,DR Congo,1,1,X,San-Pédro,Ivory Coast,2024_african_cup_of_nations.txt
+Zambia,Tanzania,1,1,X,San-Pédro,Ivory Coast,2024_african_cup_of_nations.txt
+Guinea-Bissau,Nigeria,0,1,2,Abidjan,Ivory Coast,2024_african_cup_of_nations.txt
+Ivory Coast,Equatorial Guinea,0,4,2,Ebimpé,Ivory Coast,2024_african_cup_of_nations.txt
+Cape Verde,Egypt,2,2,X,Abidjan,Ivory Coast,2024_african_cup_of_nations.txt
+Mozambique,Ghana,2,2,X,Ebimpé,Ivory Coast,2024_african_cup_of_nations.txt
+Gambia,Cameroon,2,3,2,Bouaké,Ivory Coast,2024_african_cup_of_nations.txt
+Guinea,Senegal,0,2,2,Yamoussoukro,Ivory Coast,2024_african_cup_of_nations.txt
+Angola,Burkina Faso,2,0,1,Yamoussoukro,Ivory Coast,2024_african_cup_of_nations.txt
+Mauritania,Algeria,1,0,1,Bouaké,Ivory Coast,2024_african_cup_of_nations.txt
+Namibia,Mali,0,0,X,San-Pédro,Ivory Coast,2024_african_cup_of_nations.txt
+South Africa,Tunisia,0,0,X,Korhogo,Ivory Coast,2024_african_cup_of_nations.txt
+Tanzania,DR Congo,0,0,X,Korhogo,Ivory Coast,2024_african_cup_of_nations.txt
+Zambia,Morocco,0,1,2,San-Pédro,Ivory Coast,2024_african_cup_of_nations.txt
+Angola,Namibia,3,0,1,Bouaké,Ivory Coast,2024_african_cup_of_nations.txt
+Nigeria,Cameroon,2,0,1,Abidjan,Ivory Coast,2024_african_cup_of_nations.txt
+Egypt,DR Congo,1,1,X,San-Pédro,Ivory Coast   [DR Congo wins on penalties],2024_african_cup_of_nations.txt
+Equatorial Guinea,Guinea,0,1,2,Ebimpé,Ivory Coast,2024_african_cup_of_nations.txt
+Cape Verde,Mauritania,1,0,1,Abidjan,Ivory Coast,2024_african_cup_of_nations.txt
+Ivory Coast,Senegal,1,1,X,Yamoussoukro,Ivory Coast   [Ivory Coast wins on penalties],2024_african_cup_of_nations.txt
+Mali,Burkina Faso,2,1,1,Korhogo,Ivory Coast,2024_african_cup_of_nations.txt
+Morocco,South Africa,0,2,2,San-Pédro,Ivory Coast,2024_african_cup_of_nations.txt
+DR Congo,Guinea,3,1,1,Ebimpé,Ivory Coast,2024_african_cup_of_nations.txt
+Nigeria,Angola,1,0,1,Abidjan,Ivory Coast,2024_african_cup_of_nations.txt
+Cape Verde,South Africa,0,0,X,Yamoussoukro,Ivory Coast   [South Africa wins on penalties],2024_african_cup_of_nations.txt
+Ivory Coast,Mali,2,1,1,Bouaké,Ivory Coast,2024_african_cup_of_nations.txt
+Ivory Coast,DR Congo,1,0,1,Ebimpé,Ivory Coast,2024_african_cup_of_nations.txt
+Nigeria,South Africa,1,1,X,Bouaké,Ivory Coast   [Nigeria wins on penalties],2024_african_cup_of_nations.txt
+South Africa,DR Congo,0,0,X,Abidjan,Ivory Coast,2024_african_cup_of_nations.txt
+Ivory Coast,Nigeria,2,1,1,Ebimpé,Ivory Coast,2024_african_cup_of_nations.txt

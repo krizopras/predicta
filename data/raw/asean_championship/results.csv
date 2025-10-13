@@ -1,0 +1,27 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Cambodia,Malaysia,2,2,X,Phnom Penh,Cambodia,2024_asean_championship.txt
+Timor-Leste,Thailand,0,10,2,Hanoi,Vietnam,2024_asean_championship.txt
+Myanmar,Indonesia,0,1,2,Yangon,Myanmar,2024_asean_championship.txt
+Laos,Vietnam,1,4,2,Vientiane,Laos,2024_asean_championship.txt
+Singapore,Cambodia,2,1,1,Singapore,Singapore,2024_asean_championship.txt
+Malaysia - Timor,Leste,3,2,1,Kuala Lumpur,Malaysia,2024_asean_championship.txt
+Philippines,Myanmar,1,1,X,Manila,Philippines,2024_asean_championship.txt
+Indonesia,Laos,3,3,X,Surakarta,Indonesia,2024_asean_championship.txt
+Timor-Leste,Singapore,0,3,2,Hanoi,Vietnam,2024_asean_championship.txt
+Thailand,Malaysia,1,0,1,Bangkok,Thailand,2024_asean_championship.txt
+Laos,Philippines,1,1,X,Vientiane,Laos,2024_asean_championship.txt
+Vietnam,Indonesia,1,0,1,Việt Trì,Vietnam,2024_asean_championship.txt
+Cambodia - Timor,Leste,2,1,1,Phnom Penh,Cambodia,2024_asean_championship.txt
+Singapore,Thailand,2,4,2,Singapore,Singapore,2024_asean_championship.txt
+Myanmar,Laos,3,2,1,Yangon,Myanmar,2024_asean_championship.txt
+Philippines,Vietnam,1,1,X,Manila,Philippines,2024_asean_championship.txt
+Thailand,Cambodia,3,2,1,Bangkok,Thailand,2024_asean_championship.txt
+Malaysia,Singapore,0,0,X,Kuala Lumpur,Malaysia,2024_asean_championship.txt
+Vietnam,Myanmar,5,0,1,Việt Trì,Vietnam,2024_asean_championship.txt
+Indonesia,Philippines,0,1,2,Surakarta,Indonesia,2024_asean_championship.txt
+Singapore,Vietnam,0,2,2,Singapore,Singapore,2024_asean_championship.txt
+Philippines,Thailand,2,1,1,Manila,Philippines,2024_asean_championship.txt
+Vietnam,Singapore,3,1,1,Việt Trì,Vietnam,2024_asean_championship.txt
+Thailand,Philippines,3,1,1,Bangkok,Thailand,2024_asean_championship.txt
+Vietnam,Thailand,2,1,1,Việt Trì,Vietnam,2025_asean_championship.txt
+Thailand,Vietnam,2,3,2,Bangkok,Thailand,2025_asean_championship.txt

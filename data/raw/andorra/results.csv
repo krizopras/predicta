@@ -1,0 +1,271 @@
+time,home_team,away_team,home_score,away_score,result,ht_score,source_file
+20.30,UE Santa Coloma,FC Ordino,2,0,1,1-0,2023-24_ad1.txt
+11.00,Penya Encarnada,CF Esperança d'Andorra,1,0,1,1-0,2023-24_ad1.txt
+13.30,CE Carroi,CF Atlètic Amèrica,2,2,X,0-1,2023-24_ad1.txt
+16.00,Atlétic Escaldes,FC Pas de la Casa,1,1,X,0-0,2023-24_ad1.txt
+18.30,Inter Club d'Escaldes,FC Santa Coloma,2,0,1,1-0,2023-24_ad1.txt
+20.30,FC Santa Coloma,Atlétic Escaldes,1,0,1,1-0,2023-24_ad1.txt
+11.00,FC Pas de la Casa,CE Carroi,0,1,2,0-0,2023-24_ad1.txt
+13.30,CF Esperança d'Andorra,UE Santa Coloma,0,2,2,0-1,2023-24_ad1.txt
+16.00,CF Atlètic Amèrica,Penya Encarnada,1,1,X,1-1,2023-24_ad1.txt
+18.30,FC Ordino,Inter Club d'Escaldes,2,2,X,1-2,2023-24_ad1.txt
+20.30,UE Santa Coloma,Inter Club d'Escaldes,2,1,1,1-0,2023-24_ad1.txt
+11.00,Atlétic Escaldes,FC Ordino,1,0,1,0-0,2023-24_ad1.txt
+13.30,Penya Encarnada,FC Pas de la Casa,2,0,1,1-0,2023-24_ad1.txt
+16.00,CE Carroi,FC Santa Coloma,0,2,2,0-1,2023-24_ad1.txt
+18.30,CF Esperança d'Andorra,CF Atlètic Amèrica,2,0,1,0-0,2023-24_ad1.txt
+20.30,FC Pas de la Casa,CF Esperança d'Andorra,3,2,1,2-2,2023-24_ad1.txt
+11.00,CF Atlètic Amèrica,UE Santa Coloma,0,1,2,0-0,2023-24_ad1.txt
+13.30,Inter Club d'Escaldes,Atlétic Escaldes,1,0,1,1-0,2023-24_ad1.txt
+16.00,FC Ordino,CE Carroi,4,0,1,2-0,2023-24_ad1.txt
+18.30,FC Santa Coloma,Penya Encarnada,0,1,2,0-1,2023-24_ad1.txt
+20.30,CF Atlètic Amèrica,FC Pas de la Casa,1,3,2,1-2,2023-24_ad1.txt
+11.00,CF Esperança d'Andorra,FC Santa Coloma,0,5,2,0-3,2023-24_ad1.txt
+13.30,Penya Encarnada,FC Ordino,2,1,1,1-1,2023-24_ad1.txt
+16.00,CE Carroi,Inter Club d'Escaldes,1,6,2,0-3,2023-24_ad1.txt
+18.30,UE Santa Coloma,Atlétic Escaldes,2,1,1,1-0,2023-24_ad1.txt
+20.30,FC Ordino,CF Esperança d'Andorra,4,0,1,3-0,2023-24_ad1.txt
+11.00,Inter Club d'Escaldes,Penya Encarnada,4,2,1,1-1,2023-24_ad1.txt
+13.30,FC Santa Coloma,CF Atlètic Amèrica,4,0,1,0-0,2023-24_ad1.txt
+16.00,FC Pas de la Casa,UE Santa Coloma,1,5,2,1-2,2023-24_ad1.txt
+18.30,Atlétic Escaldes,CE Carroi,8,1,1,5-0,2023-24_ad1.txt
+20.30,Penya Encarnada,Atlétic Escaldes,1,1,X,0-1,2023-24_ad1.txt
+11.00,FC Pas de la Casa,FC Santa Coloma,0,5,2,0-1,2023-24_ad1.txt
+13.30,UE Santa Coloma,CE Carroi,3,0,1,1-0,2023-24_ad1.txt
+16.00,CF Esperança d'Andorra,Inter Club d'Escaldes,0,2,2,0-1,2023-24_ad1.txt
+18.30,CF Atlètic Amèrica,FC Ordino,1,2,2,0-2,2023-24_ad1.txt
+20.30,CE Carroi,Penya Encarnada,0,2,2,0-1,2023-24_ad1.txt
+11.00,Inter Club d'Escaldes,CF Atlètic Amèrica,6,0,1,5-0,2023-24_ad1.txt
+13.30,FC Ordino,FC Pas de la Casa,1,0,1,0-0,2023-24_ad1.txt
+16.00,UE Santa Coloma,FC Santa Coloma,1,2,2,0-1,2023-24_ad1.txt
+18.30,Atlétic Escaldes,CF Esperança d'Andorra,3,1,1,1-1,2023-24_ad1.txt
+20.30,Penya Encarnada,UE Santa Coloma,1,2,2,1-2,2023-24_ad1.txt
+11.00,FC Santa Coloma,FC Ordino,2,0,1,0-0,2023-24_ad1.txt
+13.30,CF Esperança d'Andorra,CE Carroi,0,2,2,0-0,2023-24_ad1.txt
+16.00,CF Atlètic Amèrica,Atlétic Escaldes,1,4,2,1-3,2023-24_ad1.txt
+18.30,FC Pas de la Casa,Inter Club d'Escaldes,0,3,2,0-2,2023-24_ad1.txt
+20.30,CF Atlètic Amèrica,Inter Club d'Escaldes,0,3,2,0-2,2023-24_ad1.txt
+11.00,Atlétic Escaldes,UE Santa Coloma,1,2,2,0-0,2023-24_ad1.txt
+13.30,FC Pas de la Casa,FC Ordino,1,1,X,0-0,2023-24_ad1.txt
+16.00,CF Esperança d'Andorra,Penya Encarnada,0,3,2,0-1,2023-24_ad1.txt
+18.30,FC Santa Coloma,CE Carroi,2,1,1,1-0,2023-24_ad1.txt
+20.30,FC Pas de la Casa,Atlétic Escaldes,0,2,2,0-0,2023-24_ad1.txt
+11.00,CF Atlètic Amèrica,CE Carroi,1,3,2,0-2,2023-24_ad1.txt
+13.30,Inter Club d'Escaldes,CF Esperança d'Andorra,6,0,1,4-0,2023-24_ad1.txt
+16.00,FC Ordino,Penya Encarnada,1,0,1,0-0,2023-24_ad1.txt
+18.30,FC Santa Coloma,UE Santa Coloma,1,2,2,0-0,2023-24_ad1.txt
+20.30,UE Santa Coloma,CF Atlètic Amèrica,6,0,1,2-0,2023-24_ad1.txt
+11.00,CF Esperança d'Andorra,FC Ordino,0,3,2,0-0,2023-24_ad1.txt
+13.30,Atlétic Escaldes,Penya Encarnada,3,0,1,1-0,2023-24_ad1.txt
+16.00,FC Santa Coloma,FC Pas de la Casa,3,2,1,2-0,2023-24_ad1.txt
+18.30,Inter Club d'Escaldes,CE Carroi,3,1,1,3-0,2023-24_ad1.txt
+20.30,CE Carroi,CF Esperança d'Andorra,0,4,2,0-2,2023-24_ad1.txt
+11.00,UE Santa Coloma,Inter Club d'Escaldes,0,0,X,,2023-24_ad1.txt
+13.30,Penya Encarnada,FC Santa Coloma,0,2,2,0-0,2023-24_ad1.txt
+16.00,FC Ordino,Atlétic Escaldes,1,1,X,0-1,2023-24_ad1.txt
+18.30,FC Pas de la Casa,CF Atlètic Amèrica,1,2,2,1-1,2023-24_ad1.txt
+20.30,FC Ordino,FC Santa Coloma,1,1,X,1-1,2023-24_ad1.txt
+11.00,Inter Club d'Escaldes,FC Pas de la Casa,2,0,1,0-0,2023-24_ad1.txt
+13.30,CF Esperança d'Andorra,Atlétic Escaldes,0,5,2,0-1,2023-24_ad1.txt
+16.00,Penya Encarnada,CF Atlètic Amèrica,6,0,1,2-0,2023-24_ad1.txt
+18.30,CE Carroi,UE Santa Coloma,0,5,2,0-4,2023-24_ad1.txt
+20.30,FC Ordino,CF Atlètic Amèrica,1,0,1,1-0,2023-24_ad1.txt
+11.00,FC Pas de la Casa,CE Carroi,2,2,X,1-1,2023-24_ad1.txt
+13.30,Atlétic Escaldes,FC Santa Coloma,5,1,1,3-0,2023-24_ad1.txt
+16.00,UE Santa Coloma,CF Esperança d'Andorra,6,0,1,3-0,2023-24_ad1.txt
+18.30,Penya Encarnada,Inter Club d'Escaldes,0,2,2,0-1,2023-24_ad1.txt
+20.30,FC Santa Coloma,CF Esperança d'Andorra,6,1,1,3-0,2023-24_ad1.txt
+11.00,Penya Encarnada,CE Carroi,4,1,1,1-0,2023-24_ad1.txt
+13.30,Inter Club d'Escaldes,FC Ordino,2,0,1,1-0,2023-24_ad1.txt
+16.00,CF Atlètic Amèrica,Atlétic Escaldes,1,8,2,0-2,2023-24_ad1.txt
+18.30,UE Santa Coloma,FC Pas de la Casa,0,0,X,,2023-24_ad1.txt
+20.30,Atlétic Escaldes,Inter Club d'Escaldes,2,1,1,0-1,2023-24_ad1.txt
+11.00,Penya Encarnada,UE Santa Coloma,0,0,X,,2023-24_ad1.txt
+13.30,FC Santa Coloma,CF Atlètic Amèrica,3,0,1,1-0,2023-24_ad1.txt
+16.00,CE Carroi,FC Ordino,0,2,2,0-1,2023-24_ad1.txt
+18.30,CF Esperança d'Andorra,FC Pas de la Casa,0,0,X,,2023-24_ad1.txt
+20.30,CF Atlètic Amèrica,CF Esperança d'Andorra,6,3,1,0-2,2023-24_ad1.txt
+11.00,CE Carroi,Atlétic Escaldes,0,4,2,0-1,2023-24_ad1.txt
+13.30,UE Santa Coloma,FC Ordino,2,0,1,0-0,2023-24_ad1.txt
+16.00,FC Santa Coloma,Inter Club d'Escaldes,0,1,2,0-1,2023-24_ad1.txt
+18.30,FC Pas de la Casa,Penya Encarnada,0,1,2,0-0,2023-24_ad1.txt
+20.30,Inter Club d'Escaldes,FC Santa Coloma,1,2,2,0-0,2023-24_ad1.txt
+11.00,CF Esperança d'Andorra,Atlétic Escaldes,1,3,2,0-1,2023-24_ad1.txt
+13.30,CE Carroi,FC Pas de la Casa,0,0,X,,2023-24_ad1.txt
+16.00,CF Atlètic Amèrica,UE Santa Coloma,0,1,2,0-1,2023-24_ad1.txt
+18.30,Penya Encarnada,FC Ordino,2,1,1,0-0,2023-24_ad1.txt
+11.00,FC Santa Coloma,CF Atlètic Amèrica,4,2,1,2-0,2023-24_ad1.txt
+13.30,UE Santa Coloma,CF Esperança d'Andorra,2,0,1,1-0,2023-24_ad1.txt
+16.00,FC Ordino,Inter Club d'Escaldes,0,1,2,0-1,2023-24_ad1.txt
+18.30,Atlétic Escaldes,CE Carroi,2,1,1,2-1,2023-24_ad1.txt
+20.45,FC Pas de la Casa,Penya Encarnada,2,2,X,1-0,2023-24_ad1.txt
+20.30,CE Carroi,UE Santa Coloma,0,3,2,0-1,2023-24_ad1.txt
+11.00,FC Ordino,FC Pas de la Casa,1,1,X,0-0,2023-24_ad1.txt
+13.30,Inter Club d'Escaldes,CF Atlètic Amèrica,2,0,1,2-0,2023-24_ad1.txt
+16.00,CF Esperança d'Andorra,FC Santa Coloma,0,6,2,0-4,2023-24_ad1.txt
+18.30,Penya Encarnada,Atlétic Escaldes,1,2,2,0-1,2023-24_ad1.txt
+20.30,UE Santa Coloma,Penya Encarnada,1,1,X,0-0,2023-24_ad1.txt
+11.00,Atlétic Escaldes,FC Ordino,1,0,1,1-0,2023-24_ad1.txt
+13.30,FC Santa Coloma,CE Carroi,4,0,1,0-0,2023-24_ad1.txt
+16.00,FC Pas de la Casa,Inter Club d'Escaldes,0,1,2,0-1,2023-24_ad1.txt
+18.30,CF Atlètic Amèrica,CF Esperança d'Andorra,0,5,2,0-2,2023-24_ad1.txt
+20.30,CE Carroi,CF Atlètic Amèrica,2,3,2,1-0,2023-24_ad1.txt
+11.00,Penya Encarnada,FC Santa Coloma,2,4,2,1-0,2023-24_ad1.txt
+13.30,FC Pas de la Casa,Atlétic Escaldes,1,2,2,0-1,2023-24_ad1.txt
+16.00,Inter Club d'Escaldes,CF Esperança d'Andorra,4,0,1,2-0,2023-24_ad1.txt
+18.30,FC Ordino,UE Santa Coloma,1,2,2,0-2,2023-24_ad1.txt
+20.30,CF Esperança d'Andorra,CE Carroi,2,0,1,1-0,2023-24_ad1.txt
+11.00,Atlétic Escaldes,Inter Club d'Escaldes,2,0,1,1-0,2023-24_ad1.txt
+13.30,CF Atlètic Amèrica,Penya Encarnada,1,4,2,0-1,2023-24_ad1.txt
+16.00,UE Santa Coloma,FC Pas de la Casa,2,1,1,1-1,2023-24_ad1.txt
+18.30,FC Santa Coloma,FC Ordino,2,0,1,1-0,2023-24_ad1.txt
+20.30,FC Pas de la Casa,FC Santa Coloma,0,2,2,0-1,2023-24_ad1.txt
+11.00,FC Ordino,CF Atlètic Amèrica,1,0,1,0-0,2023-24_ad1.txt
+13.30,Penya Encarnada,CF Esperança d'Andorra,3,2,1,0-0,2023-24_ad1.txt
+16.00,Atlétic Escaldes,UE Santa Coloma,0,2,2,0-2,2023-24_ad1.txt
+18.30,Inter Club d'Escaldes,CE Carroi,6,0,1,3-0,2023-24_ad1.txt
+20.30,FC Santa Coloma,Atlétic Escaldes,0,1,2,0-1,2023-24_ad1.txt
+,Inter Club d'Escaldes,UE Santa Coloma,1,1,X,1-0,2023-24_ad1.txt
+11.00,CF Atlètic Amèrica,FC Pas de la Casa,0,3,2,0-1,2023-24_ad1.txt
+,CE Carroi,Penya Encarnada,0,2,2,0-1,2023-24_ad1.txt
+,CF Esperança d'Andorra,FC Ordino,2,4,2,1-2,2023-24_ad1.txt
+16.00,Atlétic Escaldes,CF Atlètic Amèrica,8,0,1,6-0,2023-24_ad1.txt
+17.00,FC Ordino,CE Carroi,1,1,X,1-0,2023-24_ad1.txt
+,FC Pas de la Casa,CF Esperança d'Andorra,2,2,X,0-1,2023-24_ad1.txt
+,Penya Encarnada,Inter Club d'Escaldes,1,3,2,1-2,2023-24_ad1.txt
+,UE Santa Coloma,FC Santa Coloma,0,0,X,,2023-24_ad1.txt
+20.30,FC Pas de la Casa,FC Ordino,1,2,2,1-0,2024-25_ad1.txt
+,Penya Encarnada,Atlétic Escaldes,0,0,X,,2024-25_ad1.txt
+11.00,UE Santa Coloma,FC Santa Coloma,0,1,2,0-0,2024-25_ad1.txt
+13.30,Inter Club d'Escaldes,FS La Massana,6,1,1,5-0,2024-25_ad1.txt
+16.00,FC Rànger's,CF Esperança d'Andorra,4,0,1,3-0,2024-25_ad1.txt
+20.30,FC Santa Coloma,FC Rànger's,1,1,X,1-0,2024-25_ad1.txt
+11.00,CF Esperança d'Andorra,Inter Club d'Escaldes,0,3,2,0-1,2024-25_ad1.txt
+13.30,Atlétic Escaldes,FC Pas de la Casa,3,2,1,1-0,2024-25_ad1.txt
+16.00,FS La Massana,Penya Encarnada,1,3,2,0-1,2024-25_ad1.txt
+18.30,FC Ordino,UE Santa Coloma,0,2,2,0-1,2024-25_ad1.txt
+20.30,FC Pas de la Casa,UE Santa Coloma,2,2,X,1-2,2024-25_ad1.txt
+11.00,FC Rànger's,FC Ordino,3,0,1,1-0,2024-25_ad1.txt
+13.30,Penya Encarnada,CF Esperança d'Andorra,4,1,1,3-1,2024-25_ad1.txt
+16.00,Inter Club d'Escaldes,FC Santa Coloma,2,0,1,2-0,2024-25_ad1.txt
+18.30,Atlétic Escaldes,FS La Massana,3,1,1,1-0,2024-25_ad1.txt
+20.30,CF Esperança d'Andorra,Atlétic Escaldes,0,5,2,0-3,2024-25_ad1.txt
+11.00,FS La Massana,FC Pas de la Casa,0,4,2,0-2,2024-25_ad1.txt
+13.30,UE Santa Coloma,FC Rànger's,0,1,2,0-1,2024-25_ad1.txt
+16.00,FC Ordino,Inter Club d'Escaldes,0,4,2,0-1,2024-25_ad1.txt
+18.30,FC Santa Coloma,Penya Encarnada,2,1,1,1-0,2024-25_ad1.txt
+20.30,FS La Massana,CF Esperança d'Andorra,1,1,X,1-0,2024-25_ad1.txt
+11.00,Atlétic Escaldes,FC Santa Coloma,4,2,1,2-1,2024-25_ad1.txt
+13.30,Penya Encarnada,FC Ordino,0,0,X,,2024-25_ad1.txt
+16.00,Inter Club d'Escaldes,UE Santa Coloma,3,2,1,1-1,2024-25_ad1.txt
+18.30,FC Pas de la Casa,FC Rànger's,0,0,X,,2024-25_ad1.txt
+20.30,FC Ordino,Atlétic Escaldes,2,2,X,0-2,2024-25_ad1.txt
+11.00,UE Santa Coloma,Penya Encarnada,2,1,1,1-0,2024-25_ad1.txt
+13.30,FC Santa Coloma,FS La Massana,2,0,1,1-0,2024-25_ad1.txt
+16.00,CF Esperança d'Andorra,FC Pas de la Casa,0,2,2,0-2,2024-25_ad1.txt
+18.30,FC Rànger's,Inter Club d'Escaldes,2,2,X,1-0,2024-25_ad1.txt
+20.30,Penya Encarnada,FC Rànger's,0,6,2,0-1,2024-25_ad1.txt
+11.00,CF Esperança d'Andorra,FC Santa Coloma,0,2,2,0-2,2024-25_ad1.txt
+13.30,FC Pas de la Casa,Inter Club d'Escaldes,1,1,X,1-1,2024-25_ad1.txt
+16.00,Atlétic Escaldes,UE Santa Coloma,0,0,X,,2024-25_ad1.txt
+18.30,FS La Massana,FC Ordino,0,3,2,0-1,2024-25_ad1.txt
+20.30,Inter Club d'Escaldes,Penya Encarnada,5,1,1,3-1,2024-25_ad1.txt
+11.00,UE Santa Coloma,FS La Massana,5,0,1,4-0,2024-25_ad1.txt
+13.30,FC Ordino,CF Esperança d'Andorra,3,1,1,0-0,2024-25_ad1.txt
+16.00,FC Pas de la Casa,FC Santa Coloma,2,0,1,0-0,2024-25_ad1.txt
+18.30,FC Rànger's,Atlétic Escaldes,3,2,1,1-0,2024-25_ad1.txt
+20.30,Penya Encarnada,FC Pas de la Casa,1,0,1,0-0,2024-25_ad1.txt
+11.00,FC Santa Coloma,FC Ordino,3,1,1,1-0,2024-25_ad1.txt
+13.30,Atlétic Escaldes,Inter Club d'Escaldes,3,1,1,2-1,2024-25_ad1.txt
+16.00,FS La Massana,FC Rànger's,0,4,2,0-3,2024-25_ad1.txt
+18.30,CF Esperança d'Andorra,UE Santa Coloma,0,5,2,0-2,2024-25_ad1.txt
+20.30,UE Santa Coloma,Penya Encarnada,2,0,1,1-0,2024-25_ad1.txt
+11.00,Inter Club d'Escaldes,FC Rànger's,0,0,X,,2024-25_ad1.txt
+13.30,Atlétic Escaldes,FC Santa Coloma,0,0,X,,2024-25_ad1.txt
+16.00,FC Ordino,FS La Massana,2,1,1,2-0,2024-25_ad1.txt
+18.30,FC Pas de la Casa,CF Esperança d'Andorra,1,0,1,0-0,2024-25_ad1.txt
+13.30,Penya Encarnada,FC Rànger's,0,0,X,,2024-25_ad1.txt
+16.00,FC Ordino,FC Santa Coloma,0,1,2,0-1,2024-25_ad1.txt
+18.30,Inter Club d'Escaldes,Atlétic Escaldes,0,0,X,,2024-25_ad1.txt
+10.30,FC Pas de la Casa,UE Santa Coloma,1,2,2,1-0,2024-25_ad1.txt
+20.45,FS La Massana,CF Esperança d'Andorra,3,0,1,2-0,2024-25_ad1.txt
+20.30,FS La Massana,FC Santa Coloma,0,4,2,0-1,2024-25_ad1.txt
+11.00,Inter Club d'Escaldes,FC Ordino,3,0,1,2-0,2024-25_ad1.txt
+13.30,UE Santa Coloma,CF Esperança d'Andorra,4,0,1,1-0,2024-25_ad1.txt
+16.00,Atlétic Escaldes,Penya Encarnada,6,1,1,2-0,2024-25_ad1.txt
+18.30,FC Rànger's,FC Pas de la Casa,0,1,2,0-1,2024-25_ad1.txt
+20.30,Inter Club d'Escaldes,FS La Massana,9,0,1,,2024-25_ad1.txt
+11.00,FC Pas de la Casa,Atlétic Escaldes,2,2,X,,2024-25_ad1.txt
+13.30,UE Santa Coloma,FC Rànger's,1,1,X,1-0,2024-25_ad1.txt
+16.00,FC Santa Coloma,CF Esperança d'Andorra,3,2,1,2-1,2024-25_ad1.txt
+18.30,FC Ordino,Penya Encarnada,0,1,2,0-0,2024-25_ad1.txt
+20.30,CF Esperança d'Andorra,FC Rànger's,0,7,2,0-3,2024-25_ad1.txt
+11.00,FS La Massana,Penya Encarnada,0,0,X,,2024-25_ad1.txt
+13.30,FC Ordino,FC Pas de la Casa,2,1,1,,2024-25_ad1.txt
+16.00,UE Santa Coloma,Atlétic Escaldes,1,0,1,,2024-25_ad1.txt
+18.30,FC Santa Coloma,Inter Club d'Escaldes,2,2,X,,2024-25_ad1.txt
+20.30,UE Santa Coloma,FC Ordino,2,2,X,1-2,2024-25_ad1.txt
+11.00,Inter Club d'Escaldes,CF Esperança d'Andorra,9,1,1,4-0,2024-25_ad1.txt
+13.30,Penya Encarnada,FC Santa Coloma,0,1,2,0-1,2024-25_ad1.txt
+16.00,FC Pas de la Casa,FS La Massana,4,0,1,0-0,2024-25_ad1.txt
+18.30,Atlétic Escaldes,FC Rànger's,3,1,1,,2024-25_ad1.txt
+20.30,FC Santa Coloma,FC Pas de la Casa,1,0,1,,2024-25_ad1.txt
+11.00,FC Ordino,FC Rànger's,2,1,1,,2024-25_ad1.txt
+13.30,FS La Massana,UE Santa Coloma,0,6,2,,2024-25_ad1.txt
+16.00,Penya Encarnada,Inter Club d'Escaldes,1,1,X,,2024-25_ad1.txt
+18.30,CF Esperança d'Andorra,Atlétic Escaldes,0,5,2,,2024-25_ad1.txt
+20.30,Atlétic Escaldes,FC Ordino,3,0,1,0-0,2024-25_ad1.txt
+11.00,FC Santa Coloma,UE Santa Coloma,1,1,X,,2024-25_ad1.txt
+13.30,FC Pas de la Casa,Inter Club d'Escaldes,1,3,2,,2024-25_ad1.txt
+16.00,FC Rànger's,FS La Massana,2,0,1,2-0,2024-25_ad1.txt
+18.30,CF Esperança d'Andorra,Penya Encarnada,1,2,2,,2024-25_ad1.txt
+20.30,Inter Club d'Escaldes,UE Santa Coloma,3,0,1,,2024-25_ad1.txt
+11.00,Penya Encarnada,FC Pas de la Casa,1,0,1,,2024-25_ad1.txt
+13.30,FC Rànger's,FC Santa Coloma,1,0,1,,2024-25_ad1.txt
+16.00,CF Esperança d'Andorra,FC Ordino,2,2,X,,2024-25_ad1.txt
+18.30,FS La Massana,Atlétic Escaldes,0,6,2,,2024-25_ad1.txt
+20.30,FC Rànger's,Penya Encarnada,6,2,1,,2024-25_ad1.txt
+11.00,FC Santa Coloma,CF Esperança d'Andorra,4,0,1,,2024-25_ad1.txt
+13.30,Atlétic Escaldes,FC Ordino,4,0,1,,2024-25_ad1.txt
+16.00,UE Santa Coloma,FC Pas de la Casa,2,1,1,,2024-25_ad1.txt
+18.30,FS La Massana,Inter Club d'Escaldes,0,6,2,0-1,2024-25_ad1.txt
+20.30,Inter Club d'Escaldes,Atlétic Escaldes,0,0,X,,2024-25_ad1.txt
+11.00,CF Esperança d'Andorra,FC Rànger's,1,1,X,,2024-25_ad1.txt
+13.30,Penya Encarnada,FS La Massana,2,0,1,,2024-25_ad1.txt
+16.00,FC Ordino,UE Santa Coloma,1,3,2,,2024-25_ad1.txt
+18.30,FC Pas de la Casa,FC Santa Coloma,1,2,2,,2024-25_ad1.txt
+20.30,UE Santa Coloma,Inter Club d'Escaldes,0,0,X,,2024-25_ad1.txt
+11.00,FC Rànger's,FS La Massana,5,0,1,,2024-25_ad1.txt
+13.30,CF Esperança d'Andorra,FC Pas de la Casa,0,1,2,,2024-25_ad1.txt
+16.00,Atlétic Escaldes,Penya Encarnada,1,0,1,,2024-25_ad1.txt
+18.30,FC Santa Coloma,FC Ordino,0,1,2,,2024-25_ad1.txt
+20.30,Inter Club d'Escaldes,FC Santa Coloma,1,0,1,,2024-25_ad1.txt
+11.00,FS La Massana,Atlétic Escaldes,0,4,2,,2024-25_ad1.txt
+13.30,FC Ordino,CF Esperança d'Andorra,1,1,X,,2024-25_ad1.txt
+16.00,FC Pas de la Casa,FC Rànger's,0,0,X,,2024-25_ad1.txt
+18.30,Penya Encarnada,UE Santa Coloma,2,2,X,,2024-25_ad1.txt
+20.30,FC Rànger's,Atlétic Escaldes,1,1,X,,2024-25_ad1.txt
+11.00,FC Pas de la Casa,FC Ordino,1,2,2,,2024-25_ad1.txt
+13.30,UE Santa Coloma,FS La Massana,6,0,1,,2024-25_ad1.txt
+16.00,CF Esperança d'Andorra,Inter Club d'Escaldes,0,7,2,,2024-25_ad1.txt
+18.30,FC Santa Coloma,Penya Encarnada,1,0,1,0-0,2024-25_ad1.txt
+19.00,FS La Massana,FC Santa Coloma,1,4,2,,2024-25_ad1.txt
+11.00,Atlétic Escaldes,UE Santa Coloma,2,0,1,,2024-25_ad1.txt
+13.30,FC Ordino,FC Rànger's,0,2,2,0-1,2024-25_ad1.txt
+16.00,Penya Encarnada,CF Esperança d'Andorra,4,1,1,,2024-25_ad1.txt
+18.30,Inter Club d'Escaldes,FC Pas de la Casa,3,0,1,,2024-25_ad1.txt
+19.00,FC Pas de la Casa,Penya Encarnada,0,2,2,0-0,2024-25_ad1.txt
+11.00,FC Ordino,Inter Club d'Escaldes,0,4,2,0-3,2024-25_ad1.txt
+13.30,FC Santa Coloma,Atlétic Escaldes,3,1,1,2-1,2024-25_ad1.txt
+16.00,FC Rànger's,UE Santa Coloma,0,1,2,0-0,2024-25_ad1.txt
+18.30,CF Esperança d'Andorra,FS La Massana,1,0,1,1-0,2024-25_ad1.txt
+11.00,FC Rànger's,Inter Club d'Escaldes,2,3,2,,2024-25_ad1.txt
+,FS La Massana,FC Pas de la Casa,0,5,2,,2024-25_ad1.txt
+,Atlétic Escaldes,CF Esperança d'Andorra,5,1,1,,2024-25_ad1.txt
+,UE Santa Coloma,FC Santa Coloma,1,2,2,,2024-25_ad1.txt
+13.30,Penya Encarnada,FC Ordino,1,1,X,,2024-25_ad1.txt
+10.30,Inter Club d'Escaldes,Penya Encarnada,3,2,1,,2024-25_ad1.txt
+11.00,FC Ordino,FS La Massana,5,1,1,,2024-25_ad1.txt
+,CF Esperança d'Andorra,UE Santa Coloma,0,4,2,,2024-25_ad1.txt
+13.30,FC Pas de la Casa,Atlétic Escaldes,1,5,2,,2024-25_ad1.txt
+16.00,FC Santa Coloma,FC Rànger's,0,5,2,,2024-25_ad1.txt

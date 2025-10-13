@@ -1,0 +1,11 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Brazil,Chile,1,1,X,Rio de Janeiro,Brazil,1955_copa_bernardo_ohiggins.txt
+Brazil,Chile,2,1,1,São Paulo,Brazil,1955_copa_bernardo_ohiggins.txt
+Chile,Brazil,1,0,1,Santiago,Chile,1957_copa_bernardo_ohiggins.txt
+Chile,Brazil,1,1,X,Santiago,Chile,1957_copa_bernardo_ohiggins.txt
+Brazil,Chile,7,0,1,Rio de Janeiro,Brazil,1959_copa_bernardo_ohiggins.txt
+Brazil,Chile,1,0,1,Rio de Janeiro,Brazil,1959_copa_bernardo_ohiggins.txt
+Chile,Brazil,1,2,2,Santiago,Chile,1961_copa_bernardo_ohiggins.txt
+Chile,Brazil,0,1,2,Santiago,Chile,1961_copa_bernardo_ohiggins.txt
+Chile,Brazil,0,1,2,Santiago,Chile,1966_copa_bernardo_ohiggins.txt
+Chile,Brazil,2,1,1,Viña del Mar,Chile,1966_copa_bernardo_ohiggins.txt

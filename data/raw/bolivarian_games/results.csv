@@ -1,0 +1,13 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Bolivia,Ecuador,1,1,X,Bogotá,Colombia,1938_bolivarian_games.txt
+Colombia,Peru,2,4,2,Bogotá,Colombia,1938_bolivarian_games.txt
+Colombia,Ecuador,1,2,2,Bogotá,Colombia,1938_bolivarian_games.txt
+Bolivia,Venezuela,3,1,1,Bogotá,Colombia,1938_bolivarian_games.txt
+Ecuador,Peru,1,9,2,Bogotá,Colombia,1938_bolivarian_games.txt
+Colombia,Venezuela,2,0,1,Bogotá,Colombia,1938_bolivarian_games.txt
+Bolivia,Peru,0,3,2,Bogota,Colombia,1938_bolivarian_games.txt
+Colombia,Bolivia,1,2,2,Bogotá,Colombia,1938_bolivarian_games.txt
+Peru,Venezuela,2,1,1,Bogotá,Colombia,1938_bolivarian_games.txt
+Ecuador,Venezuela,5,2,1,Bogotá,Colombia,1938_bolivarian_games.txt
+Bolivia,Ecuador,2,1,1,Bogotá,Colombia,1938_bolivarian_games.txt
+Venezuela,Bolivia,2,2,X,Lima,Peru,1947_bolivarian_games.txt

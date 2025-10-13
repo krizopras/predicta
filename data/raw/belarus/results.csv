@@ -1,0 +1,459 @@
+time,home_team,away_team,home_score,away_score,result,ht_score,source_file
+18.00,FK Minsk,FK Slaviya Mozyr,2,0,1,1-0,2023_by1.txt
+14.00,Shakhter Soligorsk,Naftan Novopolotsk,2,1,1,1-1,2023_by1.txt
+16.00,FK Gomel,BATE Borisov,0,2,2,0-1,2023_by1.txt
+18.00,Dinamo Minsk,FK Isloch Minsk,3,0,1,1-0,2023_by1.txt
+20.00,Dinamo Brest,Torpedo-BelAZ Zhodino,0,1,2,0-0,2023_by1.txt
+14.00,Energetik-BGU Minsk,FK Slutsk,1,0,1,1-0,2023_by1.txt
+16.00,FK Smorgon,Belshina Bobruisk,1,0,1,0-0,2023_by1.txt
+14.00,Naftan Novopolotsk,FK Gomel,1,1,X,1-0,2023_by1.txt
+16.00,Torpedo-BelAZ Zhodino,FK Smorgon,2,1,1,1-0,2023_by1.txt
+18.00,FK Isloch Minsk,Dinamo Brest,3,0,1,1-0,2023_by1.txt
+14.00,FK Slutsk,FK Minsk,1,1,X,0-1,2023_by1.txt
+16.00,Neman Grodno,Shakhter Soligorsk,0,1,2,0-0,2023_by1.txt
+18.00,FK Slaviya Mozyr,Dinamo Minsk,0,2,2,0-1,2023_by1.txt
+20.00,BATE Borisov,Energetik-BGU Minsk,1,1,X,0-1,2023_by1.txt
+17.30,FK Smorgon,FK Isloch Minsk,0,4,2,0-3,2023_by1.txt
+15.00,FK Minsk,BATE Borisov,2,2,X,0-1,2023_by1.txt
+17.00,Belshina Bobruisk,Torpedo-BelAZ Zhodino,0,0,X,,2023_by1.txt
+19.00,Dinamo Minsk,FK Slutsk,3,1,1,0-0,2023_by1.txt
+14.00,Dinamo Brest,FK Slaviya Mozyr,0,1,2,0-1,2023_by1.txt
+15.45,Energetik-BGU Minsk,Naftan Novopolotsk,0,1,2,0-0,2023_by1.txt
+17.30,FK Gomel,Neman Grodno,3,3,X,1-2,2023_by1.txt
+15.00,Naftan Novopolotsk,FK Minsk,0,0,X,,2023_by1.txt
+17.00,FK Isloch Minsk,Belshina Bobruisk,2,0,1,1-0,2023_by1.txt
+19.00,FK Slaviya Mozyr,FK Smorgon,4,1,1,1-0,2023_by1.txt
+14.00,FK Slutsk,Dinamo Brest,2,0,1,1-0,2023_by1.txt
+16.00,Shakhter Soligorsk,FK Gomel,1,1,X,1-0,2023_by1.txt
+18.00,BATE Borisov,Dinamo Minsk,1,3,2,0-0,2023_by1.txt
+20.00,Neman Grodno,Energetik-BGU Minsk,2,0,1,0-0,2023_by1.txt
+17.30,FK Smorgon,FK Slutsk,3,2,1,1-1,2023_by1.txt
+14.00,Torpedo-BelAZ Zhodino,FK Isloch Minsk,2,1,1,1-1,2023_by1.txt
+17.00,Belshina Bobruisk,FK Slaviya Mozyr,1,1,X,0-0,2023_by1.txt
+19.00,Dinamo Minsk,Naftan Novopolotsk,3,1,1,1-0,2023_by1.txt
+14.00,FK Minsk,Neman Grodno,0,1,2,0-0,2023_by1.txt
+17.00,Energetik-BGU Minsk,Shakhter Soligorsk,1,4,2,0-2,2023_by1.txt
+19.00,Dinamo Brest,BATE Borisov,1,2,2,1-0,2023_by1.txt
+17.30,FK Slutsk,Belshina Bobruisk,2,1,1,1-0,2023_by1.txt
+14.00,Neman Grodno,Dinamo Minsk,1,0,1,0-0,2023_by1.txt
+17.00,FK Slaviya Mozyr,Torpedo-BelAZ Zhodino,0,1,2,0-1,2023_by1.txt
+19.00,BATE Borisov,FK Smorgon,2,0,1,2-0,2023_by1.txt
+14.00,FK Gomel,Energetik-BGU Minsk,1,0,1,1-0,2023_by1.txt
+16.00,Naftan Novopolotsk,Dinamo Brest,0,3,2,0-1,2023_by1.txt
+18.30,Shakhter Soligorsk,FK Minsk,1,0,1,1-0,2023_by1.txt
+18.00,FK Isloch Minsk,FK Slaviya Mozyr,0,1,2,0-1,2023_by1.txt
+20.00,Torpedo-BelAZ Zhodino,FK Slutsk,1,1,X,0-1,2023_by1.txt
+14.00,Dinamo Brest,Neman Grodno,1,3,2,1-3,2023_by1.txt
+16.00,Belshina Bobruisk,BATE Borisov,0,3,2,0-2,2023_by1.txt
+18.00,FK Minsk,FK Gomel,2,2,X,2-0,2023_by1.txt
+16.00,Dinamo Minsk,Shakhter Soligorsk,1,0,1,1-0,2023_by1.txt
+18.00,FK Smorgon,Naftan Novopolotsk,1,0,1,0-0,2023_by1.txt
+18.00,FK Slutsk,FK Isloch Minsk,1,1,X,0-0,2023_by1.txt
+17.00,Energetik-BGU Minsk,FK Minsk,1,0,1,0-0,2023_by1.txt
+19.00,FK Gomel,Dinamo Minsk,0,4,2,0-2,2023_by1.txt
+21.00,Shakhter Soligorsk,Dinamo Brest,2,0,1,1-0,2023_by1.txt
+14.00,Naftan Novopolotsk,Belshina Bobruisk,0,1,2,0-0,2023_by1.txt
+16.00,Neman Grodno,FK Smorgon,3,1,1,1-0,2023_by1.txt
+18.00,BATE Borisov,Torpedo-BelAZ Zhodino,1,2,2,1-1,2023_by1.txt
+19.10,FK Slaviya Mozyr,FK Slutsk,1,0,1,1-0,2023_by1.txt
+15.00,Belshina Bobruisk,Neman Grodno,0,2,2,0-0,2023_by1.txt
+17.00,FK Isloch Minsk,BATE Borisov,1,1,X,0-0,2023_by1.txt
+19.00,Torpedo-BelAZ Zhodino,Naftan Novopolotsk,5,0,1,1-0,2023_by1.txt
+15.00,FK Smorgon,Shakhter Soligorsk,1,3,2,1-2,2023_by1.txt
+17.00,Dinamo Brest,FK Gomel,3,3,X,2-2,2023_by1.txt
+19.00,Dinamo Minsk,Energetik-BGU Minsk,2,0,1,0-0,2023_by1.txt
+18.00,Neman Grodno,Torpedo-BelAZ Zhodino,0,0,X,,2023_by1.txt
+20.00,BATE Borisov,FK Slaviya Mozyr,1,1,X,1-0,2023_by1.txt
+18.00,FK Gomel,FK Smorgon,2,0,1,0-0,2023_by1.txt
+20.00,Shakhter Soligorsk,Belshina Bobruisk,7,3,1,4-2,2023_by1.txt
+16.00,Naftan Novopolotsk,FK Isloch Minsk,0,1,2,0-0,2023_by1.txt
+18.00,Energetik-BGU Minsk,Dinamo Brest,1,0,1,0-0,2023_by1.txt
+20.00,FK Minsk,Dinamo Minsk,1,1,X,0-0,2023_by1.txt
+18.20,FK Slaviya Mozyr,Naftan Novopolotsk,1,0,1,0-0,2023_by1.txt
+20.30,Dinamo Brest,FK Minsk,1,0,1,1-0,2023_by1.txt
+15.00,FK Gomel,Belshina Bobruisk,2,0,1,2-0,2023_by1.txt
+18.00,FK Smorgon,Energetik-BGU Minsk,1,0,1,1-0,2023_by1.txt
+20.00,Torpedo-BelAZ Zhodino,Shakhter Soligorsk,1,1,X,0-1,2023_by1.txt
+16.00,FK Isloch Minsk,Neman Grodno,0,3,2,0-1,2023_by1.txt
+18.00,FK Slutsk,BATE Borisov,1,0,1,1-0,2023_by1.txt
+18.00,Shakhter Soligorsk,FK Isloch Minsk,3,0,1,2-0,2023_by1.txt
+20.00,Dinamo Minsk,Dinamo Brest,4,1,1,2-0,2023_by1.txt
+16.00,FK Slutsk,Naftan Novopolotsk,3,1,1,2-1,2023_by1.txt
+18.00,FK Minsk,FK Smorgon,2,1,1,2-0,2023_by1.txt
+20.00,Neman Grodno,FK Slaviya Mozyr,1,0,1,0-0,2023_by1.txt
+17.30,Energetik-BGU Minsk,Belshina Bobruisk,0,0,X,,2023_by1.txt
+19.30,FK Gomel,Torpedo-BelAZ Zhodino,0,3,2,0-0,2023_by1.txt
+20.00,Torpedo-BelAZ Zhodino,Energetik-BGU Minsk,1,1,X,0-0,2023_by1.txt
+16.00,FK Slutsk,Neman Grodno,0,2,2,0-1,2023_by1.txt
+18.00,FK Isloch Minsk,FK Gomel,3,1,1,1-0,2023_by1.txt
+20.00,FK Slaviya Mozyr,Shakhter Soligorsk,3,1,1,2-0,2023_by1.txt
+17.00,Belshina Bobruisk,FK Minsk,1,2,2,1-2,2023_by1.txt
+19.00,FK Smorgon,Dinamo Minsk,3,1,1,2-1,2023_by1.txt
+21.00,BATE Borisov,Naftan Novopolotsk,1,2,2,1-1,2023_by1.txt
+18.00,Energetik-BGU Minsk,FK Isloch Minsk,0,1,2,0-0,2023_by1.txt
+20.00,Shakhter Soligorsk,FK Slutsk,1,0,1,1-0,2023_by1.txt
+16.50,FK Minsk,Torpedo-BelAZ Zhodino,1,0,1,0-0,2023_by1.txt
+18.30,Dinamo Minsk,Belshina Bobruisk,7,2,1,4-1,2023_by1.txt
+20.30,Neman Grodno,BATE Borisov,0,1,2,0-1,2023_by1.txt
+18.30,Dinamo Brest,FK Smorgon,2,1,1,1-1,2023_by1.txt
+20.30,FK Gomel,FK Slaviya Mozyr,3,2,1,2-1,2023_by1.txt
+18.30,Torpedo-BelAZ Zhodino,Dinamo Minsk,0,0,X,,2023_by1.txt
+20.30,BATE Borisov,Shakhter Soligorsk,2,0,1,1-0,2023_by1.txt
+18.30,Naftan Novopolotsk,Neman Grodno,0,3,2,0-1,2023_by1.txt
+20.30,FK Slaviya Mozyr,Energetik-BGU Minsk,0,0,X,,2023_by1.txt
+15.00,FK Isloch Minsk,FK Minsk,0,0,X,,2023_by1.txt
+17.00,Belshina Bobruisk,Dinamo Brest,1,0,1,1-0,2023_by1.txt
+19.00,FK Slutsk,FK Gomel,3,1,1,1-0,2023_by1.txt
+16.00,Naftan Novopolotsk,Shakhter Soligorsk,1,1,X,0-1,2023_by1.txt
+20.00,FK Slaviya Mozyr,FK Minsk,1,0,1,0-0,2023_by1.txt
+16.00,Belshina Bobruisk,FK Smorgon,2,0,1,0-0,2023_by1.txt
+18.00,FK Slutsk,Energetik-BGU Minsk,1,1,X,0-1,2023_by1.txt
+16.00,FK Isloch Minsk,Dinamo Minsk,2,3,2,0-1,2023_by1.txt
+18.00,Torpedo-BelAZ Zhodino,Dinamo Brest,1,2,2,0-2,2023_by1.txt
+19.00,BATE Borisov,FK Gomel,1,2,2,0-1,2023_by1.txt
+19.00,FK Minsk,FK Slutsk,0,1,2,0-0,2023_by1.txt
+18.00,FK Gomel,Naftan Novopolotsk,3,2,1,1-1,2023_by1.txt
+20.00,Dinamo Brest,FK Isloch Minsk,0,1,2,0-0,2023_by1.txt
+16.00,FK Smorgon,Torpedo-BelAZ Zhodino,1,1,X,0-1,2023_by1.txt
+18.00,Dinamo Minsk,FK Slaviya Mozyr,2,2,X,1-1,2023_by1.txt
+19.45,Shakhter Soligorsk,Neman Grodno,2,5,2,1-2,2023_by1.txt
+19.00,Energetik-BGU Minsk,BATE Borisov,1,0,1,1-0,2023_by1.txt
+17.30,Naftan Novopolotsk,Energetik-BGU Minsk,4,0,1,2-0,2023_by1.txt
+16.00,FK Isloch Minsk,FK Smorgon,1,0,1,0-0,2023_by1.txt
+18.00,Torpedo-BelAZ Zhodino,Belshina Bobruisk,1,1,X,1-0,2023_by1.txt
+15.30,FK Slaviya Mozyr,Dinamo Brest,0,1,2,0-1,2023_by1.txt
+17.30,FK Slutsk,Dinamo Minsk,1,2,2,0-1,2023_by1.txt
+20.00,Neman Grodno,FK Gomel,2,2,X,0-1,2023_by1.txt
+19.00,BATE Borisov,FK Minsk,1,2,2,0-1,2023_by1.txt
+20.00,FK Minsk,Naftan Novopolotsk,1,0,1,0-0,2023_by1.txt
+15.00,Belshina Bobruisk,FK Isloch Minsk,0,2,2,0-1,2023_by1.txt
+17.00,FK Smorgon,FK Slaviya Mozyr,0,2,2,0-1,2023_by1.txt
+19.00,Dinamo Brest,FK Slutsk,2,1,1,1-0,2023_by1.txt
+15.00,FK Gomel,Shakhter Soligorsk,3,2,1,2-0,2023_by1.txt
+17.00,Energetik-BGU Minsk,Neman Grodno,1,3,2,1-2,2023_by1.txt
+18.45,Dinamo Minsk,BATE Borisov,0,1,2,0-0,2023_by1.txt
+17.00,FK Isloch Minsk,Torpedo-BelAZ Zhodino,1,2,2,1-2,2023_by1.txt
+15.00,Neman Grodno,FK Minsk,3,0,1,3-0,2023_by1.txt
+17.00,Naftan Novopolotsk,Dinamo Minsk,0,3,2,0-2,2023_by1.txt
+19.00,FK Slaviya Mozyr,Belshina Bobruisk,4,1,1,2-0,2023_by1.txt
+15.00,Shakhter Soligorsk,Energetik-BGU Minsk,3,2,1,1-0,2023_by1.txt
+17.00,FK Slutsk,FK Smorgon,3,3,X,1-1,2023_by1.txt
+19.00,BATE Borisov,Dinamo Brest,4,0,1,2-0,2023_by1.txt
+20.30,Torpedo-BelAZ Zhodino,FK Slaviya Mozyr,2,2,X,1-1,2023_by1.txt
+14.00,Belshina Bobruisk,FK Slutsk,1,1,X,0-1,2023_by1.txt
+16.00,Dinamo Brest,Naftan Novopolotsk,2,2,X,1-1,2023_by1.txt
+18.00,Energetik-BGU Minsk,FK Gomel,1,2,2,0-0,2023_by1.txt
+14.30,FK Smorgon,BATE Borisov,1,2,2,1-1,2023_by1.txt
+16.30,FK Minsk,Shakhter Soligorsk,0,0,X,,2023_by1.txt
+18.30,Dinamo Minsk,Neman Grodno,2,1,1,1-0,2023_by1.txt
+17.30,FK Gomel,FK Minsk,2,0,1,1-0,2023_by1.txt
+19.30,BATE Borisov,Belshina Bobruisk,2,1,1,2-1,2023_by1.txt
+16.00,FK Slutsk,Torpedo-BelAZ Zhodino,0,0,X,,2023_by1.txt
+18.00,Neman Grodno,Dinamo Brest,3,1,1,0-1,2023_by1.txt
+21.00,Shakhter Soligorsk,Dinamo Minsk,0,4,2,0-2,2023_by1.txt
+16.00,Naftan Novopolotsk,FK Smorgon,3,0,1,,2023_by1.txt
+19.30,FK Slaviya Mozyr,FK Isloch Minsk,2,1,1,0-0,2023_by1.txt
+18.00,FK Minsk,Energetik-BGU Minsk,1,1,X,1-1,2023_by1.txt
+16.00,Belshina Bobruisk,Naftan Novopolotsk,0,3,2,0-1,2023_by1.txt
+18.00,Torpedo-BelAZ Zhodino,BATE Borisov,1,1,X,1-1,2023_by1.txt
+20.00,Dinamo Minsk,FK Gomel,2,1,1,2-0,2023_by1.txt
+14.00,FK Isloch Minsk,FK Slutsk,0,0,X,,2023_by1.txt
+16.00,FK Smorgon,Neman Grodno,1,3,2,1-2,2023_by1.txt
+18.30,Dinamo Brest,Shakhter Soligorsk,3,3,X,2-2,2023_by1.txt
+16.00,FK Slutsk,FK Slaviya Mozyr,1,0,1,0-0,2023_by1.txt
+19.00,Shakhter Soligorsk,FK Smorgon,2,0,1,0-0,2023_by1.txt
+16.00,Energetik-BGU Minsk,Dinamo Minsk,1,4,2,1-1,2023_by1.txt
+18.00,Neman Grodno,Belshina Bobruisk,3,1,1,2-1,2023_by1.txt
+20.00,BATE Borisov,FK Isloch Minsk,1,2,2,1-0,2023_by1.txt
+14.30,Naftan Novopolotsk,Torpedo-BelAZ Zhodino,0,1,2,0-1,2023_by1.txt
+16.30,FK Gomel,Dinamo Brest,1,4,2,0-3,2023_by1.txt
+19.00,Torpedo-BelAZ Zhodino,Neman Grodno,1,1,X,0-0,2023_by1.txt
+15.00,FK Isloch Minsk,Naftan Novopolotsk,5,1,1,1-0,2023_by1.txt
+18.30,Dinamo Minsk,FK Minsk,1,0,1,1-0,2023_by1.txt
+20.30,FK Slaviya Mozyr,BATE Borisov,0,2,2,0-0,2023_by1.txt
+13.00,FK Smorgon,FK Gomel,0,3,2,0-0,2023_by1.txt
+15.00,Belshina Bobruisk,Shakhter Soligorsk,1,4,2,0-2,2023_by1.txt
+19.30,Dinamo Brest,Energetik-BGU Minsk,0,2,2,0-2,2023_by1.txt
+19.00,Energetik-BGU Minsk,FK Smorgon,2,4,2,1-1,2023_by1.txt
+14.00,Naftan Novopolotsk,FK Slaviya Mozyr,2,2,X,1-2,2023_by1.txt
+18.30,Shakhter Soligorsk,Torpedo-BelAZ Zhodino,0,1,2,0-0,2023_by1.txt
+20.30,Neman Grodno,FK Isloch Minsk,0,0,X,,2023_by1.txt
+14.00,Belshina Bobruisk,FK Gomel,0,2,2,0-1,2023_by1.txt
+16.30,FK Minsk,Dinamo Brest,0,1,2,0-1,2023_by1.txt
+18.30,BATE Borisov,FK Slutsk,4,3,1,2-2,2023_by1.txt
+13.00,Naftan Novopolotsk,FK Slutsk,2,1,1,1-1,2023_by1.txt
+15.00,FK Isloch Minsk,Shakhter Soligorsk,2,1,1,0-1,2023_by1.txt
+17.30,Torpedo-BelAZ Zhodino,FK Gomel,0,0,X,,2023_by1.txt
+13.00,Belshina Bobruisk,Energetik-BGU Minsk,0,1,2,0-0,2023_by1.txt
+15.00,FK Smorgon,FK Minsk,0,0,X,,2023_by1.txt
+17.30,FK Slaviya Mozyr,Neman Grodno,0,2,2,0-0,2023_by1.txt
+16.00,Dinamo Brest,Dinamo Minsk,1,3,2,0-1,2023_by1.txt
+17.00,Shakhter Soligorsk,FK Slaviya Mozyr,0,1,2,0-1,2023_by1.txt
+19.00,FK Gomel,FK Isloch Minsk,0,2,2,0-0,2023_by1.txt
+17.30,Dinamo Minsk,FK Smorgon,7,0,1,4-0,2023_by1.txt
+19.30,Neman Grodno,FK Slutsk,2,0,1,1-0,2023_by1.txt
+13.00,Naftan Novopolotsk,BATE Borisov,0,7,2,0-5,2023_by1.txt
+15.00,Energetik-BGU Minsk,Torpedo-BelAZ Zhodino,1,2,2,0-2,2023_by1.txt
+17.00,FK Minsk,Belshina Bobruisk,2,1,1,1-1,2023_by1.txt
+13.00,FK Isloch Minsk,Energetik-BGU Minsk,3,2,1,1-2,2023_by1.txt
+14.45,FK Slutsk,Shakhter Soligorsk,3,2,1,1-1,2023_by1.txt
+17.00,Torpedo-BelAZ Zhodino,FK Minsk,1,0,1,0-0,2023_by1.txt
+19.00,FK Slaviya Mozyr,FK Gomel,0,0,X,,2023_by1.txt
+13.00,Belshina Bobruisk,Dinamo Minsk,0,4,2,0-1,2023_by1.txt
+14.45,FK Smorgon,Dinamo Brest,3,1,1,0-1,2023_by1.txt
+17.00,BATE Borisov,Neman Grodno,3,2,1,1-1,2023_by1.txt
+14.00,Dinamo Minsk,Torpedo-BelAZ Zhodino,1,0,1,1-0,2023_by1.txt
+,Dinamo Brest,Belshina Bobruisk,3,2,1,1-1,2023_by1.txt
+,Energetik-BGU Minsk,FK Slaviya Mozyr,3,1,1,0-1,2023_by1.txt
+,FK Minsk,FK Isloch Minsk,2,1,1,2-0,2023_by1.txt
+,Neman Grodno,Naftan Novopolotsk,6,1,1,1-0,2023_by1.txt
+,FK Gomel,FK Slutsk,4,5,2,1-2,2023_by1.txt
+,Shakhter Soligorsk,BATE Borisov,3,0,1,1-0,2023_by1.txt
+17.00,FK Isloch Minsk,Dinamo Brest,1,1,X,1-0,2024_by1.txt
+19.00,FK Slaviya Mozyr,Dnepr Mogilev,2,0,1,1-0,2024_by1.txt
+13.00,FK Minsk,BATE Borisov,0,1,2,0-0,2024_by1.txt
+15.00,Neman Grodno,Naftan Novopolotsk,2,1,1,1-1,2024_by1.txt
+17.00,Dinamo Minsk,FK Smorgon,5,0,1,4-0,2024_by1.txt
+13.00,Arsenal Dzerzhinsk,Torpedo-BelAZ Zhodino,0,1,2,0-0,2024_by1.txt
+15.00,FK Slutsk,FK Gomel,1,1,X,0-0,2024_by1.txt
+17.00,Shakhter Soligorsk,FK Vitebsk,1,0,1,1-0,2024_by1.txt
+17.00,Dnepr Mogilev,Arsenal Dzerzhinsk,0,0,X,,2024_by1.txt
+19.00,Dinamo Brest,FK Smorgon,4,1,1,3-0,2024_by1.txt
+14.00,Naftan Novopolotsk,BATE Borisov,0,0,X,,2024_by1.txt
+16.00,FK Vitebsk,FK Slaviya Mozyr,2,3,2,2-2,2024_by1.txt
+18.00,FK Isloch Minsk,Shakhter Soligorsk,0,0,X,,2024_by1.txt
+13.00,FK Gomel,Neman Grodno,2,3,2,1-1,2024_by1.txt
+15.00,Torpedo-BelAZ Zhodino,FK Slutsk,1,0,1,0-0,2024_by1.txt
+17.00,FK Minsk,Dinamo Minsk,0,0,X,,2024_by1.txt
+17.00,Arsenal Dzerzhinsk,FK Vitebsk,1,1,X,1-1,2024_by1.txt
+19.00,FK Minsk,FK Smorgon,2,3,2,1-2,2024_by1.txt
+14.00,FK Slutsk,Dnepr Mogilev,0,1,2,0-1,2024_by1.txt
+16.00,BATE Borisov,FK Gomel,1,3,2,0-2,2024_by1.txt
+18.00,Shakhter Soligorsk,Dinamo Brest,0,4,2,0-3,2024_by1.txt
+14.00,FK Slaviya Mozyr,FK Isloch Minsk,2,1,1,1-0,2024_by1.txt
+16.00,Neman Grodno,Torpedo-BelAZ Zhodino,1,0,1,1-0,2024_by1.txt
+18.00,Dinamo Minsk,Naftan Novopolotsk,2,2,X,1-2,2024_by1.txt
+17.30,FK Vitebsk,FK Slutsk,2,0,1,0-0,2024_by1.txt
+14.00,Dnepr Mogilev,Neman Grodno,0,2,2,0-1,2024_by1.txt
+16.00,FK Gomel,Dinamo Minsk,0,1,2,0-1,2024_by1.txt
+18.00,FK Isloch Minsk,Arsenal Dzerzhinsk,0,2,2,0-1,2024_by1.txt
+20.00,Torpedo-BelAZ Zhodino,BATE Borisov,2,0,1,0-0,2024_by1.txt
+14.00,Naftan Novopolotsk,FK Smorgon,1,1,X,0-0,2024_by1.txt
+16.00,Shakhter Soligorsk,FK Slaviya Mozyr,1,3,2,0-2,2024_by1.txt
+18.00,Dinamo Brest,FK Minsk,3,0,1,1-0,2024_by1.txt
+17.00,FK Smorgon,FK Gomel,2,2,X,1-1,2024_by1.txt
+19.30,BATE Borisov,Dnepr Mogilev,1,1,X,0-0,2024_by1.txt
+14.10,FK Minsk,Naftan Novopolotsk,1,1,X,1-1,2024_by1.txt
+16.00,Arsenal Dzerzhinsk,Shakhter Soligorsk,2,0,1,2-0,2024_by1.txt
+18.00,FK Slaviya Mozyr,Dinamo Brest,1,1,X,1-1,2024_by1.txt
+14.00,FK Slutsk,FK Isloch Minsk,1,3,2,0-2,2024_by1.txt
+16.00,Dinamo Minsk,Torpedo-BelAZ Zhodino,0,0,X,,2024_by1.txt
+18.00,Neman Grodno,FK Vitebsk,0,1,2,0-0,2024_by1.txt
+18.30,FK Vitebsk,BATE Borisov,1,0,1,1-0,2024_by1.txt
+20.30,Dinamo Brest,Naftan Novopolotsk,2,2,X,1-0,2024_by1.txt
+16.00,FK Isloch Minsk,Neman Grodno,2,0,1,1-0,2024_by1.txt
+18.00,Torpedo-BelAZ Zhodino,FK Smorgon,2,0,1,1-0,2024_by1.txt
+20.15,Dnepr Mogilev,Dinamo Minsk,0,2,2,0-0,2024_by1.txt
+16.00,FK Gomel,FK Minsk,2,0,1,1-0,2024_by1.txt
+18.00,FK Slaviya Mozyr,Arsenal Dzerzhinsk,3,0,1,1-0,2024_by1.txt
+20.00,Shakhter Soligorsk,FK Slutsk,1,2,2,1-2,2024_by1.txt
+16.00,FK Smorgon,Dnepr Mogilev,0,0,X,,2024_by1.txt
+18.15,Dinamo Minsk,FK Vitebsk,1,1,X,0-1,2024_by1.txt
+20.30,Neman Grodno,Shakhter Soligorsk,1,0,1,0-0,2024_by1.txt
+18.00,FK Minsk,Torpedo-BelAZ Zhodino,1,2,2,0-0,2024_by1.txt
+20.00,BATE Borisov,FK Isloch Minsk,1,1,X,1-0,2024_by1.txt
+14.30,Naftan Novopolotsk,FK Gomel,0,2,2,0-2,2024_by1.txt
+16.30,FK Slutsk,FK Slaviya Mozyr,1,0,1,0-0,2024_by1.txt
+18.30,Arsenal Dzerzhinsk,Dinamo Brest,0,2,2,0-0,2024_by1.txt
+19.00,FK Vitebsk,FK Smorgon,0,1,2,0-0,2024_by1.txt
+21.00,Dnepr Mogilev,FK Minsk,1,1,X,0-1,2024_by1.txt
+17.00,Arsenal Dzerzhinsk,FK Slutsk,1,0,1,1-0,2024_by1.txt
+19.00,Shakhter Soligorsk,BATE Borisov,1,3,2,1-1,2024_by1.txt
+21.00,Dinamo Brest,FK Gomel,1,1,X,1-0,2024_by1.txt
+16.00,FK Isloch Minsk,Dinamo Minsk,0,1,2,0-0,2024_by1.txt
+18.00,Torpedo-BelAZ Zhodino,Naftan Novopolotsk,2,1,1,1-1,2024_by1.txt
+20.00,FK Slaviya Mozyr,Neman Grodno,0,1,2,0-0,2024_by1.txt
+18.50,FK Smorgon,FK Isloch Minsk,1,1,X,0-1,2024_by1.txt
+20.45,Neman Grodno,Arsenal Dzerzhinsk,1,0,1,0-0,2024_by1.txt
+18.55,FK Slutsk,Dinamo Brest,1,4,2,0-1,2024_by1.txt
+20.30,BATE Borisov,FK Slaviya Mozyr,1,0,1,1-0,2024_by1.txt
+16.00,Naftan Novopolotsk,Dnepr Mogilev,2,1,1,0-0,2024_by1.txt
+18.00,FK Minsk,FK Vitebsk,1,2,2,0-0,2024_by1.txt
+21.00,FK Gomel,Torpedo-BelAZ Zhodino,0,0,X,,2024_by1.txt
+20.00,Dinamo Minsk,Shakhter Soligorsk,3,2,1,1-1,2024_by1.txt
+16.45,FK Isloch Minsk,FK Minsk,3,0,1,1-0,2024_by1.txt
+18.45,FK Slutsk,Neman Grodno,2,0,1,1-0,2024_by1.txt
+19.00,FK Vitebsk,Naftan Novopolotsk,2,0,1,2-0,2024_by1.txt
+21.00,Dinamo Brest,Torpedo-BelAZ Zhodino,0,1,2,0-0,2024_by1.txt
+15.00,Arsenal Dzerzhinsk,BATE Borisov,2,0,1,2-0,2024_by1.txt
+17.00,Shakhter Soligorsk,FK Smorgon,2,2,X,0-0,2024_by1.txt
+19.00,FK Slaviya Mozyr,Dinamo Minsk,1,1,X,1-1,2024_by1.txt
+20.00,Dnepr Mogilev,FK Gomel,0,1,2,0-0,2024_by1.txt
+19.00,FK Minsk,Shakhter Soligorsk,0,0,X,,2024_by1.txt
+17.30,FK Smorgon,FK Slaviya Mozyr,3,3,X,0-1,2024_by1.txt
+19.30,BATE Borisov,FK Slutsk,6,0,1,2-0,2024_by1.txt
+16.00,Naftan Novopolotsk,FK Isloch Minsk,2,1,1,1-0,2024_by1.txt
+18.00,Arsenal Dzerzhinsk,Dinamo Minsk,1,2,2,1-1,2024_by1.txt
+20.00,Neman Grodno,Dinamo Brest,2,0,1,2-0,2024_by1.txt
+16.00,Torpedo-BelAZ Zhodino,Dnepr Mogilev,4,2,1,1-1,2024_by1.txt
+19.00,FK Gomel,FK Vitebsk,0,0,X,,2024_by1.txt
+18.00,FK Isloch Minsk,FK Gomel,1,0,1,1-0,2024_by1.txt
+19.45,FK Vitebsk,Torpedo-BelAZ Zhodino,0,1,2,0-0,2024_by1.txt
+16.00,FK Slutsk,Dinamo Minsk,0,5,2,0-3,2024_by1.txt
+18.00,Dinamo Brest,Dnepr Mogilev,6,1,1,2-0,2024_by1.txt
+20.00,Neman Grodno,BATE Borisov,1,0,1,0-0,2024_by1.txt
+16.00,Arsenal Dzerzhinsk,FK Smorgon,2,0,1,0-0,2024_by1.txt
+18.00,Shakhter Soligorsk,Naftan Novopolotsk,0,0,X,,2024_by1.txt
+20.00,FK Slaviya Mozyr,FK Minsk,1,1,X,0-0,2024_by1.txt
+18.00,FK Smorgon,FK Slutsk,4,1,1,2-1,2024_by1.txt
+20.00,FK Gomel,Shakhter Soligorsk,1,2,2,0-0,2024_by1.txt
+16.00,Naftan Novopolotsk,FK Slaviya Mozyr,0,1,2,0-0,2024_by1.txt
+18.00,FK Minsk,Arsenal Dzerzhinsk,1,2,2,0-2,2024_by1.txt
+20.00,BATE Borisov,Dinamo Brest,3,1,1,3-0,2024_by1.txt
+16.00,Dnepr Mogilev,FK Vitebsk,1,2,2,0-1,2024_by1.txt
+18.00,Torpedo-BelAZ Zhodino,FK Isloch Minsk,1,0,1,0-0,2024_by1.txt
+20.00,Dinamo Minsk,Neman Grodno,2,1,1,1-0,2024_by1.txt
+19.00,FK Slaviya Mozyr,FK Gomel,0,0,X,,2024_by1.txt
+20.45,Dinamo Brest,FK Vitebsk,1,1,X,0-0,2024_by1.txt
+16.00,Shakhter Soligorsk,Torpedo-BelAZ Zhodino,1,0,1,0-0,2024_by1.txt
+18.00,Neman Grodno,FK Smorgon,2,1,1,1-1,2024_by1.txt
+20.00,BATE Borisov,Dinamo Minsk,0,2,2,0-1,2024_by1.txt
+16.00,FK Slutsk,FK Minsk,1,0,1,0-0,2024_by1.txt
+18.00,FK Isloch Minsk,Dnepr Mogilev,1,1,X,0-0,2024_by1.txt
+20.00,Arsenal Dzerzhinsk,Naftan Novopolotsk,0,3,2,0-3,2024_by1.txt
+20.00,Dinamo Minsk,Dinamo Brest,1,0,1,1-0,2024_by1.txt
+21.00,Torpedo-BelAZ Zhodino,FK Slaviya Mozyr,3,0,1,3-0,2024_by1.txt
+17.00,FK Smorgon,BATE Borisov,0,0,X,,2024_by1.txt
+19.00,FK Vitebsk,FK Isloch Minsk,0,1,2,0-0,2024_by1.txt
+21.00,FK Gomel,Arsenal Dzerzhinsk,5,0,1,2-0,2024_by1.txt
+16.00,FK Minsk,Neman Grodno,0,2,2,0-1,2024_by1.txt
+18.00,Naftan Novopolotsk,FK Slutsk,1,4,2,0-1,2024_by1.txt
+20.00,Dnepr Mogilev,Shakhter Soligorsk,2,3,2,1-1,2024_by1.txt
+18.30,FK Vitebsk,Shakhter Soligorsk,2,1,1,1-1,2024_by1.txt
+20.30,BATE Borisov,FK Minsk,0,1,2,0-1,2024_by1.txt
+16.30,FK Gomel,FK Slutsk,1,2,2,1-1,2024_by1.txt
+20.00,Dnepr Mogilev,FK Slaviya Mozyr,1,2,2,0-0,2024_by1.txt
+17.30,Dinamo Brest,FK Isloch Minsk,3,2,1,1-1,2024_by1.txt
+19.30,Torpedo-BelAZ Zhodino,Arsenal Dzerzhinsk,1,1,X,1-0,2024_by1.txt
+16.30,Naftan Novopolotsk,Neman Grodno,0,0,X,,2024_by1.txt
+14.00,FK Smorgon,Dinamo Minsk,1,0,1,1-0,2024_by1.txt
+18.30,FK Slaviya Mozyr,FK Vitebsk,1,2,2,1-1,2024_by1.txt
+15.00,BATE Borisov,Naftan Novopolotsk,1,1,X,0-0,2024_by1.txt
+17.00,FK Smorgon,Dinamo Brest,0,2,2,0-1,2024_by1.txt
+19.00,Shakhter Soligorsk,FK Isloch Minsk,0,1,2,0-0,2024_by1.txt
+15.30,FK Slutsk,Torpedo-BelAZ Zhodino,1,0,1,1-0,2024_by1.txt
+17.30,Arsenal Dzerzhinsk,Dnepr Mogilev,3,1,1,1-0,2024_by1.txt
+19.30,Neman Grodno,FK Gomel,1,1,X,0-1,2024_by1.txt
+19.30,Dinamo Minsk,FK Minsk,2,0,1,1-0,2024_by1.txt
+19.00,Dinamo Brest,Shakhter Soligorsk,3,0,1,2-0,2024_by1.txt
+21.00,FK Vitebsk,Arsenal Dzerzhinsk,0,0,X,,2024_by1.txt
+17.00,FK Isloch Minsk,FK Slaviya Mozyr,0,0,X,,2024_by1.txt
+19.00,Dnepr Mogilev,FK Slutsk,2,3,2,0-3,2024_by1.txt
+21.00,Torpedo-BelAZ Zhodino,Neman Grodno,1,4,2,0-0,2024_by1.txt
+17.00,FK Smorgon,FK Minsk,1,1,X,0-1,2024_by1.txt
+19.00,FK Gomel,BATE Borisov,2,0,1,1-0,2024_by1.txt
+15.00,Naftan Novopolotsk,Dinamo Minsk,1,2,2,1-1,2024_by1.txt
+18.00,FK Slutsk,FK Vitebsk,2,0,1,0-0,2024_by1.txt
+20.00,Arsenal Dzerzhinsk,FK Isloch Minsk,3,1,1,0-1,2024_by1.txt
+16.00,FK Minsk,Dinamo Brest,3,2,1,0-1,2024_by1.txt
+18.00,FK Smorgon,Naftan Novopolotsk,1,0,1,1-0,2024_by1.txt
+20.00,FK Slaviya Mozyr,Shakhter Soligorsk,0,1,2,0-0,2024_by1.txt
+17.30,Neman Grodno,Dnepr Mogilev,3,1,1,1-1,2024_by1.txt
+20.00,BATE Borisov,Torpedo-BelAZ Zhodino,1,2,2,0-1,2024_by1.txt
+19.00,Dinamo Minsk,FK Gomel,2,0,1,0-0,2024_by1.txt
+18.45,Dinamo Brest,FK Slaviya Mozyr,3,0,1,2-0,2024_by1.txt
+20.45,FK Gomel,FK Smorgon,2,1,1,2-1,2024_by1.txt
+15.00,Naftan Novopolotsk,FK Minsk,0,2,2,0-2,2024_by1.txt
+17.00,Shakhter Soligorsk,Arsenal Dzerzhinsk,0,3,2,0-2,2024_by1.txt
+19.00,FK Vitebsk,Neman Grodno,0,1,2,0-1,2024_by1.txt
+15.30,FK Isloch Minsk,FK Slutsk,0,0,X,,2024_by1.txt
+17.30,Dnepr Mogilev,BATE Borisov,1,1,X,1-1,2024_by1.txt
+19.10,Torpedo-BelAZ Zhodino,Dinamo Minsk,1,1,X,0-1,2024_by1.txt
+17.00,FK Slutsk,Shakhter Soligorsk,0,0,X,,2024_by1.txt
+15.00,FK Smorgon,Torpedo-BelAZ Zhodino,0,4,2,0-1,2024_by1.txt
+17.00,Arsenal Dzerzhinsk,FK Slaviya Mozyr,1,1,X,0-1,2024_by1.txt
+21.00,Neman Grodno,FK Isloch Minsk,0,3,2,0-2,2024_by1.txt
+16.00,Naftan Novopolotsk,Dinamo Brest,3,6,2,2-1,2024_by1.txt
+17.30,BATE Borisov,FK Vitebsk,1,0,1,0-0,2024_by1.txt
+17.00,FK Minsk,FK Gomel,3,1,1,2-0,2024_by1.txt
+20.30,Dinamo Minsk,Dnepr Mogilev,2,0,1,1-0,2024_by1.txt
+18.00,Torpedo-BelAZ Zhodino,FK Minsk,2,2,X,0-1,2024_by1.txt
+20.00,FK Vitebsk,Dinamo Minsk,1,0,1,0-0,2024_by1.txt
+15.00,FK Gomel,Naftan Novopolotsk,2,1,1,0-1,2024_by1.txt
+17.00,Shakhter Soligorsk,Neman Grodno,0,1,2,0-0,2024_by1.txt
+20.00,FK Slaviya Mozyr,FK Slutsk,0,0,X,,2024_by1.txt
+15.00,FK Isloch Minsk,BATE Borisov,1,2,2,1-1,2024_by1.txt
+17.00,Dnepr Mogilev,FK Smorgon,2,1,1,0-0,2024_by1.txt
+19.30,Dinamo Brest,Arsenal Dzerzhinsk,2,1,1,2-0,2024_by1.txt
+18.30,BATE Borisov,Shakhter Soligorsk,1,1,X,0-0,2024_by1.txt
+20.30,FK Gomel,Dinamo Brest,2,1,1,0-1,2024_by1.txt
+14.00,FK Slutsk,Arsenal Dzerzhinsk,1,1,X,1-0,2024_by1.txt
+16.00,FK Smorgon,FK Vitebsk,0,3,2,0-1,2024_by1.txt
+18.00,Dinamo Minsk,FK Isloch Minsk,2,0,1,0-0,2024_by1.txt
+14.00,Naftan Novopolotsk,Torpedo-BelAZ Zhodino,1,1,X,1-0,2024_by1.txt
+16.00,FK Minsk,Dnepr Mogilev,2,2,X,2-0,2024_by1.txt
+19.45,Neman Grodno,FK Slaviya Mozyr,1,0,1,0-0,2024_by1.txt
+18.00,Dinamo Brest,FK Slutsk,1,2,2,0-2,2024_by1.txt
+20.00,FK Vitebsk,FK Minsk,2,1,1,1-0,2024_by1.txt
+14.00,FK Isloch Minsk,FK Smorgon,3,2,1,2-0,2024_by1.txt
+17.00,Torpedo-BelAZ Zhodino,FK Gomel,2,2,X,1-1,2024_by1.txt
+21.00,FK Slaviya Mozyr,BATE Borisov,2,3,2,0-2,2024_by1.txt
+15.00,Arsenal Dzerzhinsk,Neman Grodno,0,4,2,0-3,2024_by1.txt
+17.00,Dnepr Mogilev,Naftan Novopolotsk,0,3,2,0-1,2024_by1.txt
+20.00,Shakhter Soligorsk,Dinamo Minsk,0,3,2,0-2,2024_by1.txt
+13.00,FK Smorgon,Shakhter Soligorsk,2,0,1,1-0,2024_by1.txt
+15.00,Naftan Novopolotsk,FK Vitebsk,0,4,2,0-3,2024_by1.txt
+17.00,Neman Grodno,FK Slutsk,2,0,1,1-0,2024_by1.txt
+21.00,Dinamo Minsk,FK Slaviya Mozyr,2,0,1,1-0,2024_by1.txt
+13.00,BATE Borisov,Arsenal Dzerzhinsk,3,2,1,1-1,2024_by1.txt
+15.00,FK Minsk,FK Isloch Minsk,3,2,1,1-0,2024_by1.txt
+17.00,FK Gomel,Dnepr Mogilev,1,1,X,0-0,2024_by1.txt
+20.00,Torpedo-BelAZ Zhodino,Dinamo Brest,3,1,1,0-0,2024_by1.txt
+19.00,FK Slaviya Mozyr,FK Smorgon,0,0,X,,2024_by1.txt
+15.00,FK Slutsk,BATE Borisov,0,1,2,0-0,2024_by1.txt
+17.00,Dinamo Brest,Neman Grodno,2,2,X,1-0,2024_by1.txt
+21.00,Dnepr Mogilev,Torpedo-BelAZ Zhodino,1,1,X,0-0,2024_by1.txt
+14.00,FK Isloch Minsk,Naftan Novopolotsk,3,0,1,2-0,2024_by1.txt
+16.00,FK Vitebsk,FK Gomel,0,1,2,0-0,2024_by1.txt
+18.00,Shakhter Soligorsk,FK Minsk,0,1,2,0-1,2024_by1.txt
+19.00,Dinamo Minsk,Arsenal Dzerzhinsk,2,0,1,1-0,2024_by1.txt
+18.15,Dnepr Mogilev,Dinamo Brest,0,3,2,0-3,2024_by1.txt
+14.30,FK Minsk,FK Slaviya Mozyr,1,1,X,1-1,2024_by1.txt
+16.30,BATE Borisov,Neman Grodno,0,3,2,0-1,2024_by1.txt
+18.30,Dinamo Minsk,FK Slutsk,2,0,1,1-0,2024_by1.txt
+20.30,Torpedo-BelAZ Zhodino,FK Vitebsk,3,0,1,2-0,2024_by1.txt
+13.00,Naftan Novopolotsk,Shakhter Soligorsk,0,0,X,,2024_by1.txt
+15.00,FK Smorgon,Arsenal Dzerzhinsk,1,0,1,0-0,2024_by1.txt
+17.00,FK Gomel,FK Isloch Minsk,0,0,X,,2024_by1.txt
+18.00,FK Vitebsk,Dnepr Mogilev,2,1,1,0-1,2024_by1.txt
+20.00,FK Slaviya Mozyr,Naftan Novopolotsk,1,0,1,0-0,2024_by1.txt
+14.00,FK Slutsk,FK Smorgon,0,0,X,,2024_by1.txt
+16.00,Arsenal Dzerzhinsk,FK Minsk,0,0,X,,2024_by1.txt
+18.30,Dinamo Brest,BATE Borisov,2,0,1,0-0,2024_by1.txt
+14.00,FK Isloch Minsk,Torpedo-BelAZ Zhodino,0,1,2,0-0,2024_by1.txt
+16.00,Shakhter Soligorsk,FK Gomel,1,2,2,0-0,2024_by1.txt
+19.00,Neman Grodno,Dinamo Minsk,0,0,X,,2024_by1.txt
+13.00,FK Smorgon,Neman Grodno,0,0,X,,2024_by1.txt
+15.00,FK Minsk,FK Slutsk,0,1,2,0-0,2024_by1.txt
+17.00,Dnepr Mogilev,FK Isloch Minsk,1,3,2,0-1,2024_by1.txt
+13.00,Naftan Novopolotsk,Arsenal Dzerzhinsk,0,0,X,,2024_by1.txt
+14.10,FK Vitebsk,Dinamo Brest,2,0,1,2-0,2024_by1.txt
+18.30,FK Gomel,FK Slaviya Mozyr,0,0,X,,2024_by1.txt
+20.00,Dinamo Minsk,BATE Borisov,1,0,1,1-0,2024_by1.txt
+19.00,Torpedo-BelAZ Zhodino,Shakhter Soligorsk,1,0,1,0-0,2024_by1.txt
+18.15,BATE Borisov,FK Smorgon,7,4,1,2-1,2024_by1.txt
+14.10,Arsenal Dzerzhinsk,FK Gomel,1,0,1,1-0,2024_by1.txt
+,FK Slutsk,Naftan Novopolotsk,0,1,2,0-1,2024_by1.txt
+14.00,Neman Grodno,FK Minsk,4,0,1,1-0,2024_by1.txt
+,Shakhter Soligorsk,Dnepr Mogilev,1,2,2,0-1,2024_by1.txt
+,FK Slaviya Mozyr,Torpedo-BelAZ Zhodino,0,2,2,0-1,2024_by1.txt
+16.00,FK Isloch Minsk,FK Vitebsk,1,0,1,1-0,2024_by1.txt
+14.30,Dinamo Brest,Dinamo Minsk,1,1,X,1-0,2024_by1.txt
+19.00,FK Minsk,Naftan Novopolotsk,1,2,2,1-0,2025_by1.txt
+19.00,FK Isloch Minsk,FK Slaviya Mozyr,2,2,X,2-0,2025_by1.txt
+13.00,FK Gomel,Torpedo-BelAZ Zhodino,1,1,X,0-0,2025_by1.txt
+15.00,Neman Grodno,FK Molodechno,3,0,1,1-0,2025_by1.txt
+17.00,FK Vitebsk,BATE Borisov,0,1,2,0-0,2025_by1.txt
+13.00,Arsenal Dzerzhinsk,Dinamo Brest,1,1,X,1-1,2025_by1.txt
+15.00,FK Slutsk,FK Maxline Vitebsk,0,1,2,0-0,2025_by1.txt
+17.00,Dinamo Minsk,FK Smorgon,1,0,1,0-0,2025_by1.txt

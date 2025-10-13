@@ -1,0 +1,13 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Argentina,Uruguay,0,1,2,Buenos Aires,Argentina,1908_copa_premio_honor_argentino.txt
+Argentina,Uruguay,3,1,1,Buenos Aires,Argentina,1909_copa_premio_honor_argentino.txt
+Argentina,Uruguay,1,1,X,Buenos Aires,Argentina,1910_copa_premio_honor_argentino.txt
+Argentina,Uruguay,2,6,2,Buenos Aires,Argentina,1910_copa_premio_honor_argentino.txt
+Argentina,Uruguay,2,0,1,Buenos Aires,Argentina,1911_copa_premio_honor_argentino.txt
+Argentina,Uruguay,0,1,2,Buenos Aires,Argentina,1912_copa_premio_honor_argentino.txt
+Argentina,Uruguay,2,0,1,Buenos Aires,Argentina,1913_copa_premio_honor_argentino.txt
+Argentina,Uruguay,2,1,1,Buenos Aires,Argentina,1914_copa_premio_honor_argentino.txt
+Argentina,Uruguay,0,0,X,Buenos Aires,Argentina,1918_copa_premio_honor_argentino.txt
+Argentina,Uruguay,2,1,1,Buenos Aires,Argentina,1918_copa_premio_honor_argentino.txt
+Argentina,Uruguay,6,1,1,Buenos Aires,Argentina,1919_copa_premio_honor_argentino.txt
+Argentina,Uruguay,1,0,1,Buenos Aires,Argentina,1920_copa_premio_honor_argentino.txt

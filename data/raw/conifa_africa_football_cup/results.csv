@@ -1,0 +1,5 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Yoruba Nation,Matabeleland,1,1,X,Johannesburg,South Africa,2022_conifa_africa_football_cup.txt
+Biafra,Matabeleland,0,1,2,Johannesburg,South Africa,2022_conifa_africa_football_cup.txt
+Yoruba Nation,Biafra,0,1,2,Johannesburg,South Africa,2022_conifa_africa_football_cup.txt
+Biafra,Matabeleland,1,0,1,Johannesburg,South Africa,2022_conifa_africa_football_cup.txt

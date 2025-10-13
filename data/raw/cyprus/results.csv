@@ -1,0 +1,534 @@
+time,home_team,away_team,home_score,away_score,result,ht_score,source_file
+20.00,Paphos FC,Karmiotissa Polemidion,3,0,1,1-0,2023-24_cy1.txt
+20.00,Anorthosis Famagusta,Ethnikos Achna,3,1,1,0-0,2023-24_cy1.txt
+,Apollon Limassol,Othellos Athienou,1,1,X,1-1,2023-24_cy1.txt
+20.00,AE Zakakiou,APOEL Nikosia,0,2,2,0-0,2023-24_cy1.txt
+20.00,Aris Limassol,AEK Larnaca,2,0,1,1-0,2023-24_cy1.txt
+,Doxa Katokopias,AEL Limassol,0,1,2,0-1,2023-24_cy1.txt
+,Omonia Nikosia,Nea Salamina,4,0,1,1-0,2023-24_cy1.txt
+20.00,Karmiotissa Polemidion,Omonia Nikosia,3,3,X,1-1,2023-24_cy1.txt
+,Othellos Athienou,Anorthosis Famagusta,0,2,2,0-1,2023-24_cy1.txt
+20.00,AEL Limassol,AE Zakakiou,4,3,1,1-2,2023-24_cy1.txt
+,Nea Salamina,Apollon Limassol,1,1,X,0-1,2023-24_cy1.txt
+20.00,AEK Larnaca,Ethnikos Achna,5,5,X,4-4,2023-24_cy1.txt
+,Aris Limassol,Doxa Katokopias,2,1,1,0-0,2023-24_cy1.txt
+19.00,APOEL Nikosia,Paphos FC,1,0,1,0-0,2023-24_cy1.txt
+20.00,Anorthosis Famagusta,Nea Salamina,2,2,X,1-0,2023-24_cy1.txt
+20.00,Ethnikos Achna,Othellos Athienou,1,1,X,1-0,2023-24_cy1.txt
+,Doxa Katokopias,AEK Larnaca,0,2,2,0-1,2023-24_cy1.txt
+,Paphos FC,AEL Limassol,3,1,1,0-1,2023-24_cy1.txt
+20.00,Apollon Limassol,Karmiotissa Polemidion,1,0,1,1-0,2023-24_cy1.txt
+,AE Zakakiou,Aris Limassol,0,5,2,0-3,2023-24_cy1.txt
+21.00,Omonia Nikosia,APOEL Nikosia,2,1,1,2-1,2023-24_cy1.txt
+19.00,AEK Larnaca,Othellos Athienou,3,2,1,3-1,2023-24_cy1.txt
+,Doxa Katokopias,AE Zakakiou,1,3,2,0-2,2023-24_cy1.txt
+20.00,AEL Limassol,Omonia Nikosia,0,0,X,,2023-24_cy1.txt
+18.00,Karmiotissa Polemidion,Anorthosis Famagusta,1,3,2,0-1,2023-24_cy1.txt
+19.00,Aris Limassol,Paphos FC,1,1,X,0-0,2023-24_cy1.txt
+20.30,APOEL Nikosia,Apollon Limassol,1,1,X,1-1,2023-24_cy1.txt
+19.00,Nea Salamina,Ethnikos Achna,4,0,1,2-0,2023-24_cy1.txt
+19.00,AE Zakakiou,AEK Larnaca,3,1,1,1-1,2023-24_cy1.txt
+18.00,Paphos FC,Doxa Katokopias,4,0,1,3-0,2023-24_cy1.txt
+19.00,Ethnikos Achna,Karmiotissa Polemidion,3,0,1,1-0,2023-24_cy1.txt
+20.30,Anorthosis Famagusta,APOEL Nikosia,1,1,X,1-1,2023-24_cy1.txt
+19.00,Apollon Limassol,AEL Limassol,2,0,1,0-0,2023-24_cy1.txt
+,Othellos Athienou,Nea Salamina,2,3,2,1-2,2023-24_cy1.txt
+19.00,Omonia Nikosia,Aris Limassol,2,2,X,1-1,2023-24_cy1.txt
+18.00,AEK Larnaca,Nea Salamina,1,1,X,1-1,2023-24_cy1.txt
+19.00,Aris Limassol,Apollon Limassol,0,1,2,0-1,2023-24_cy1.txt
+,Karmiotissa Polemidion,Othellos Athienou,0,0,X,,2023-24_cy1.txt
+19.00,AEL Limassol,Anorthosis Famagusta,1,3,2,0-2,2023-24_cy1.txt
+,Doxa Katokopias,Omonia Nikosia,1,3,2,1-0,2023-24_cy1.txt
+19.00,APOEL Nikosia,Ethnikos Achna,5,1,1,2-1,2023-24_cy1.txt
+,AE Zakakiou,Paphos FC,1,4,2,1-3,2023-24_cy1.txt
+19.00,Nea Salamina,Karmiotissa Polemidion,2,0,1,0-0,2023-24_cy1.txt
+19.00,Omonia Nikosia,AE Zakakiou,3,3,X,1-1,2023-24_cy1.txt
+,Othellos Athienou,APOEL Nikosia,0,1,2,0-0,2023-24_cy1.txt
+,Paphos FC,AEK Larnaca,0,0,X,,2023-24_cy1.txt
+19.00,Ethnikos Achna,AEL Limassol,1,0,1,1-0,2023-24_cy1.txt
+,Anorthosis Famagusta,Aris Limassol,2,3,2,1-2,2023-24_cy1.txt
+,Apollon Limassol,Doxa Katokopias,4,0,1,1-0,2023-24_cy1.txt
+19.00,AEK Larnaca,Karmiotissa Polemidion,5,0,1,2-0,2023-24_cy1.txt
+,APOEL Nikosia,Nea Salamina,1,0,1,1-0,2023-24_cy1.txt
+,Aris Limassol,Ethnikos Achna,2,0,1,2-0,2023-24_cy1.txt
+17.00,AEL Limassol,Othellos Athienou,2,1,1,1-0,2023-24_cy1.txt
+19.00,Doxa Katokopias,Anorthosis Famagusta,0,2,2,0-2,2023-24_cy1.txt
+,AE Zakakiou,Apollon Limassol,0,5,2,0-1,2023-24_cy1.txt
+19.00,Paphos FC,Omonia Nikosia,0,2,2,0-2,2023-24_cy1.txt
+18.00,Ethnikos Achna,Doxa Katokopias,2,0,1,1-0,2023-24_cy1.txt
+19.00,Karmiotissa Polemidion,APOEL Nikosia,1,2,2,0-1,2023-24_cy1.txt
+,Nea Salamina,AEL Limassol,2,1,1,1-0,2023-24_cy1.txt
+18.00,Omonia Nikosia,AEK Larnaca,0,0,X,,2023-24_cy1.txt
+19.00,Anorthosis Famagusta,AE Zakakiou,1,1,X,0-0,2023-24_cy1.txt
+,Apollon Limassol,Paphos FC,0,3,2,0-2,2023-24_cy1.txt
+19.00,Othellos Athienou,Aris Limassol,0,1,2,0-1,2023-24_cy1.txt
+19.00,AE Zakakiou,Ethnikos Achna,1,1,X,0-0,2023-24_cy1.txt
+18.00,Doxa Katokopias,Othellos Athienou,0,2,2,0-0,2023-24_cy1.txt
+19.00,Aris Limassol,Nea Salamina,2,1,1,0-0,2023-24_cy1.txt
+,Omonia Nikosia,Apollon Limassol,2,0,1,1-0,2023-24_cy1.txt
+18.00,AEK Larnaca,APOEL Nikosia,0,3,2,0-1,2023-24_cy1.txt
+,Paphos FC,Anorthosis Famagusta,1,0,1,1-0,2023-24_cy1.txt
+19.00,AEL Limassol,Karmiotissa Polemidion,2,1,1,2-0,2023-24_cy1.txt
+20.00,Anorthosis Famagusta,Omonia Nikosia,2,0,1,0-0,2023-24_cy1.txt
+18.00,Nea Salamina,Doxa Katokopias,2,0,1,0-0,2023-24_cy1.txt
+19.00,Ethnikos Achna,Paphos FC,1,4,2,1-2,2023-24_cy1.txt
+,APOEL Nikosia,AEL Limassol,1,0,1,1-0,2023-24_cy1.txt
+17.00,Othellos Athienou,AE Zakakiou,2,1,1,0-1,2023-24_cy1.txt
+19.00,Apollon Limassol,AEK Larnaca,0,1,2,0-1,2023-24_cy1.txt
+,Karmiotissa Polemidion,Aris Limassol,4,1,1,0-0,2023-24_cy1.txt
+19.00,Aris Limassol,APOEL Nikosia,1,0,1,0-0,2023-24_cy1.txt
+,Paphos FC,Othellos Athienou,3,0,1,0-0,2023-24_cy1.txt
+18.00,Omonia Nikosia,Ethnikos Achna,4,1,1,2-1,2023-24_cy1.txt
+,AE Zakakiou,Nea Salamina,2,2,X,1-1,2023-24_cy1.txt
+19.00,Apollon Limassol,Anorthosis Famagusta,0,1,2,0-0,2023-24_cy1.txt
+19.00,AEK Larnaca,AEL Limassol,3,0,1,1-0,2023-24_cy1.txt
+,Doxa Katokopias,Karmiotissa Polemidion,2,2,X,2-2,2023-24_cy1.txt
+19.00,Othellos Athienou,Omonia Nikosia,1,2,2,1-1,2023-24_cy1.txt
+19.00,Ethnikos Achna,Apollon Limassol,2,2,X,1-1,2023-24_cy1.txt
+,Anorthosis Famagusta,AEK Larnaca,0,0,X,,2023-24_cy1.txt
+16.30,Karmiotissa Polemidion,AE Zakakiou,1,1,X,1-0,2023-24_cy1.txt
+19.00,APOEL Nikosia,Doxa Katokopias,5,0,1,1-0,2023-24_cy1.txt
+,Nea Salamina,Paphos FC,0,2,2,0-0,2023-24_cy1.txt
+19.00,AEL Limassol,Aris Limassol,0,4,2,0-2,2023-24_cy1.txt
+19.00,Othellos Athienou,Apollon Limassol,0,3,2,0-1,2023-24_cy1.txt
+17.00,AEK Larnaca,Aris Limassol,2,1,1,0-1,2023-24_cy1.txt
+19.00,AEL Limassol,Doxa Katokopias,2,0,1,1-0,2023-24_cy1.txt
+,APOEL Nikosia,AE Zakakiou,3,1,1,1-1,2023-24_cy1.txt
+17.00,Ethnikos Achna,Anorthosis Famagusta,0,1,2,0-0,2023-24_cy1.txt
+18.00,Karmiotissa Polemidion,Paphos FC,2,1,1,2-0,2023-24_cy1.txt
+19.00,Nea Salamina,Omonia Nikosia,0,2,2,0-0,2023-24_cy1.txt
+18.00,Ethnikos Achna,AEK Larnaca,0,3,2,0-1,2023-24_cy1.txt
+,Omonia Nikosia,Karmiotissa Polemidion,2,1,1,1-1,2023-24_cy1.txt
+19.00,Anorthosis Famagusta,Othellos Athienou,2,1,1,0-1,2023-24_cy1.txt
+17.00,AE Zakakiou,AEL Limassol,1,4,2,1-2,2023-24_cy1.txt
+18.00,Paphos FC,APOEL Nikosia,0,1,2,0-0,2023-24_cy1.txt
+19.00,Apollon Limassol,Nea Salamina,0,2,2,0-2,2023-24_cy1.txt
+19.00,Doxa Katokopias,Aris Limassol,2,0,1,2-0,2023-24_cy1.txt
+19.00,Othellos Athienou,Ethnikos Achna,2,1,1,1-1,2023-24_cy1.txt
+19.00,AEK Larnaca,Doxa Katokopias,2,1,1,0-1,2023-24_cy1.txt
+,Aris Limassol,AE Zakakiou,1,0,1,1-0,2023-24_cy1.txt
+,Karmiotissa Polemidion,Apollon Limassol,3,4,2,1-2,2023-24_cy1.txt
+17.00,AEL Limassol,Paphos FC,1,2,2,0-1,2023-24_cy1.txt
+,APOEL Nikosia,Omonia Nikosia,3,0,1,1-0,2023-24_cy1.txt
+19.00,Nea Salamina,Anorthosis Famagusta,0,3,2,0-1,2023-24_cy1.txt
+17.00,Apollon Limassol,APOEL Nikosia,2,2,X,2-0,2023-24_cy1.txt
+19.00,Anorthosis Famagusta,Karmiotissa Polemidion,1,0,1,1-0,2023-24_cy1.txt
+,Omonia Nikosia,AEL Limassol,3,1,1,2-0,2023-24_cy1.txt
+19.00,Ethnikos Achna,Nea Salamina,2,3,2,1-2,2023-24_cy1.txt
+,Othellos Athienou,AEK Larnaca,0,0,X,,2023-24_cy1.txt
+,Paphos FC,Aris Limassol,1,0,1,0-0,2023-24_cy1.txt
+19.00,AE Zakakiou,Doxa Katokopias,1,1,X,1-0,2023-24_cy1.txt
+17.00,APOEL Nikosia,Anorthosis Famagusta,1,0,1,0-0,2023-24_cy1.txt
+19.00,AEL Limassol,Apollon Limassol,1,3,2,1-2,2023-24_cy1.txt
+17.00,Karmiotissa Polemidion,Ethnikos Achna,1,1,X,0-0,2023-24_cy1.txt
+,Nea Salamina,Othellos Athienou,3,2,1,1-0,2023-24_cy1.txt
+19.00,Aris Limassol,Omonia Nikosia,2,0,1,2-0,2023-24_cy1.txt
+19.00,AEK Larnaca,AE Zakakiou,2,0,1,1-0,2023-24_cy1.txt
+,Doxa Katokopias,Paphos FC,1,0,1,0-0,2023-24_cy1.txt
+19.00,Ethnikos Achna,APOEL Nikosia,2,1,1,0-0,2023-24_cy1.txt
+,Nea Salamina,AEK Larnaca,0,1,2,0-0,2023-24_cy1.txt
+17.00,Othellos Athienou,Karmiotissa Polemidion,0,3,2,0-3,2023-24_cy1.txt
+18.00,Omonia Nikosia,Doxa Katokopias,5,1,1,4-1,2023-24_cy1.txt
+19.00,Anorthosis Famagusta,AEL Limassol,1,0,1,0-0,2023-24_cy1.txt
+16.00,Paphos FC,AE Zakakiou,4,0,1,1-0,2023-24_cy1.txt
+19.00,Apollon Limassol,Aris Limassol,0,1,2,0-1,2023-24_cy1.txt
+17.00,Doxa Katokopias,Apollon Limassol,0,3,2,0-2,2023-24_cy1.txt
+19.00,AEL Limassol,Ethnikos Achna,1,1,X,1-1,2023-24_cy1.txt
+16.00,APOEL Nikosia,Othellos Athienou,6,0,1,4-0,2023-24_cy1.txt
+19.00,Karmiotissa Polemidion,Nea Salamina,0,1,2,0-0,2023-24_cy1.txt
+,AE Zakakiou,Omonia Nikosia,0,0,X,,2023-24_cy1.txt
+19.00,AEK Larnaca,Paphos FC,1,0,1,0-0,2023-24_cy1.txt
+,Aris Limassol,Anorthosis Famagusta,2,1,1,1-0,2023-24_cy1.txt
+19.00,Karmiotissa Polemidion,AEK Larnaca,1,3,2,1-1,2023-24_cy1.txt
+,Nea Salamina,APOEL Nikosia,0,4,2,0-2,2023-24_cy1.txt
+17.00,Omonia Nikosia,Paphos FC,1,2,2,1-1,2023-24_cy1.txt
+18.00,Anorthosis Famagusta,Doxa Katokopias,0,2,2,0-1,2023-24_cy1.txt
+19.00,Apollon Limassol,AE Zakakiou,0,0,X,,2023-24_cy1.txt
+,Othellos Athienou,AEL Limassol,0,3,2,,2023-24_cy1.txt
+19.00,Ethnikos Achna,Aris Limassol,2,6,2,0-2,2023-24_cy1.txt
+19.00,AEK Larnaca,Omonia Nikosia,2,1,1,1-1,2023-24_cy1.txt
+,Aris Limassol,Othellos Athienou,4,0,1,0-0,2023-24_cy1.txt
+,Paphos FC,Apollon Limassol,1,1,X,0-1,2023-24_cy1.txt
+16.00,APOEL Nikosia,Karmiotissa Polemidion,4,1,1,1-1,2023-24_cy1.txt
+19.00,AEL Limassol,Nea Salamina,3,1,1,3-1,2023-24_cy1.txt
+,Doxa Katokopias,Ethnikos Achna,0,2,2,0-2,2023-24_cy1.txt
+19.00,AE Zakakiou,Anorthosis Famagusta,0,2,2,0-2,2023-24_cy1.txt
+16.00,Anorthosis Famagusta,Paphos FC,2,2,X,1-1,2023-24_cy1.txt
+19.00,Apollon Limassol,Omonia Nikosia,1,2,2,0-1,2023-24_cy1.txt
+19.00,Ethnikos Achna,AE Zakakiou,4,1,1,2-1,2023-24_cy1.txt
+,APOEL Nikosia,AEK Larnaca,2,2,X,1-0,2023-24_cy1.txt
+,Othellos Athienou,Doxa Katokopias,0,0,X,,2023-24_cy1.txt
+19.00,Karmiotissa Polemidion,AEL Limassol,1,3,2,1-2,2023-24_cy1.txt
+,Nea Salamina,Aris Limassol,0,3,2,0-0,2023-24_cy1.txt
+19.00,Omonia Nikosia,Anorthosis Famagusta,3,1,1,0-1,2023-24_cy1.txt
+,AE Zakakiou,Othellos Athienou,3,3,X,2-1,2023-24_cy1.txt
+17.00,Paphos FC,Ethnikos Achna,4,3,1,2-2,2023-24_cy1.txt
+18.00,Aris Limassol,Karmiotissa Polemidion,3,0,1,0-0,2023-24_cy1.txt
+19.00,AEK Larnaca,Apollon Limassol,1,2,2,1-2,2023-24_cy1.txt
+17.00,Doxa Katokopias,Nea Salamina,0,3,2,0-3,2023-24_cy1.txt
+19.00,AEL Limassol,APOEL Nikosia,1,1,X,0-1,2023-24_cy1.txt
+19.00,Othellos Athienou,Paphos FC,0,3,2,0-1,2023-24_cy1.txt
+19.00,Ethnikos Achna,Omonia Nikosia,2,2,X,0-2,2023-24_cy1.txt
+,AEL Limassol,AEK Larnaca,2,3,2,0-1,2023-24_cy1.txt
+,Anorthosis Famagusta,Apollon Limassol,2,0,1,1-0,2023-24_cy1.txt
+17.00,Karmiotissa Polemidion,Doxa Katokopias,3,1,1,0-0,2023-24_cy1.txt
+19.00,Nea Salamina,AE Zakakiou,1,1,X,0-0,2023-24_cy1.txt
+20.00,APOEL Nikosia,Aris Limassol,1,0,1,1-0,2023-24_cy1.txt
+16.30,Omonia Nikosia,Othellos Athienou,1,0,1,0-0,2023-24_cy1.txt
+19.00,AEK Larnaca,Anorthosis Famagusta,1,0,1,0-0,2023-24_cy1.txt
+,Apollon Limassol,Ethnikos Achna,0,0,X,,2023-24_cy1.txt
+16.00,AE Zakakiou,Karmiotissa Polemidion,1,2,2,1-0,2023-24_cy1.txt
+19.00,Aris Limassol,AEL Limassol,4,0,1,4-0,2023-24_cy1.txt
+,Doxa Katokopias,APOEL Nikosia,0,1,2,0-0,2023-24_cy1.txt
+19.00,Paphos FC,Nea Salamina,0,0,X,,2023-24_cy1.txt
+16.00,Anorthosis Famagusta,APOEL Nikosia,0,0,X,,2023-24_cy1.txt
+19.00,Aris Limassol,Omonia Nikosia,1,2,2,1-2,2023-24_cy1.txt
+,Paphos FC,AEK Larnaca,0,1,2,0-1,2023-24_cy1.txt
+17.00,APOEL Nikosia,Paphos FC,1,0,1,1-0,2023-24_cy1.txt
+18.00,AEK Larnaca,Aris Limassol,1,1,X,1-0,2023-24_cy1.txt
+20.30,Omonia Nikosia,Anorthosis Famagusta,2,1,1,1-0,2023-24_cy1.txt
+17.00,Omonia Nikosia,AEK Larnaca,0,1,2,0-0,2023-24_cy1.txt
+17.00,Anorthosis Famagusta,Paphos FC,2,3,2,0-1,2023-24_cy1.txt
+19.00,Aris Limassol,APOEL Nikosia,2,1,1,2-0,2023-24_cy1.txt
+16.00,APOEL Nikosia,Omonia Nikosia,0,1,2,0-1,2023-24_cy1.txt
+19.00,Paphos FC,Aris Limassol,1,0,1,0-0,2023-24_cy1.txt
+17.00,Anorthosis Famagusta,AEK Larnaca,0,1,2,0-0,2023-24_cy1.txt
+17.00,AEK Larnaca,APOEL Nikosia,1,2,2,1-0,2023-24_cy1.txt
+19.00,Aris Limassol,Anorthosis Famagusta,1,1,X,0-1,2023-24_cy1.txt
+19.30,Omonia Nikosia,Paphos FC,1,1,X,1-0,2023-24_cy1.txt
+17.00,Omonia Nikosia,Aris Limassol,3,0,1,0-0,2023-24_cy1.txt
+19.30,AEK Larnaca,Paphos FC,3,0,1,3-0,2023-24_cy1.txt
+17.00,APOEL Nikosia,Anorthosis Famagusta,0,2,2,0-1,2023-24_cy1.txt
+17.00,Paphos FC,APOEL Nikosia,0,2,2,0-0,2023-24_cy1.txt
+19.00,Aris Limassol,AEK Larnaca,0,1,2,0-0,2023-24_cy1.txt
+19.30,Anorthosis Famagusta,Omonia Nikosia,0,2,2,0-0,2023-24_cy1.txt
+17.00,Paphos FC,Anorthosis Famagusta,5,1,1,4-1,2023-24_cy1.txt
+19.00,AEK Larnaca,Omonia Nikosia,2,0,1,0-0,2023-24_cy1.txt
+19.30,APOEL Nikosia,Aris Limassol,2,0,1,2-0,2023-24_cy1.txt
+19.00,AEK Larnaca,Anorthosis Famagusta,1,1,X,1-0,2023-24_cy1.txt
+,Omonia Nikosia,APOEL Nikosia,1,0,1,0-0,2023-24_cy1.txt
+,Aris Limassol,Paphos FC,1,1,X,1-1,2023-24_cy1.txt
+19.00,Paphos FC,Omonia Nikosia,1,1,X,0-1,2023-24_cy1.txt
+,APOEL Nikosia,AEK Larnaca,1,1,X,1-1,2023-24_cy1.txt
+,Anorthosis Famagusta,Aris Limassol,0,4,2,0-2,2023-24_cy1.txt
+16.30,Ethnikos Achna,Karmiotissa Polemidion,2,1,1,1-1,2023-24_cy1.txt
+18.00,AEL Limassol,AE Zakakiou,2,1,1,0-1,2023-24_cy1.txt
+19.00,Nea Salamina,Othellos Athienou,1,1,X,0-0,2023-24_cy1.txt
+19.00,Apollon Limassol,Doxa Katokopias,0,1,2,0-0,2023-24_cy1.txt
+18.00,Doxa Katokopias,Karmiotissa Polemidion,1,4,2,1-0,2023-24_cy1.txt
+19.00,Othellos Athienou,AEL Limassol,1,1,X,1-1,2023-24_cy1.txt
+19.00,AE Zakakiou,Ethnikos Achna,0,1,2,0-0,2023-24_cy1.txt
+19.00,Apollon Limassol,Nea Salamina,2,0,1,1-0,2023-24_cy1.txt
+19.00,Ethnikos Achna,Othellos Athienou,2,1,1,1-1,2023-24_cy1.txt
+,Karmiotissa Polemidion,AE Zakakiou,0,0,X,,2023-24_cy1.txt
+19.00,Nea Salamina,Doxa Katokopias,0,1,2,0-0,2023-24_cy1.txt
+19.00,AEL Limassol,Apollon Limassol,2,1,1,0-1,2023-24_cy1.txt
+18.00,Othellos Athienou,Karmiotissa Polemidion,1,2,2,0-1,2023-24_cy1.txt
+17.00,Doxa Katokopias,AE Zakakiou,2,1,1,1-1,2023-24_cy1.txt
+19.00,Apollon Limassol,Ethnikos Achna,2,2,X,2-2,2023-24_cy1.txt
+19.30,Nea Salamina,AEL Limassol,1,1,X,1-0,2023-24_cy1.txt
+19.00,Karmiotissa Polemidion,Apollon Limassol,0,0,X,,2023-24_cy1.txt
+,AEL Limassol,Doxa Katokopias,0,0,X,,2023-24_cy1.txt
+19.00,AE Zakakiou,Othellos Athienou,0,4,2,0-3,2023-24_cy1.txt
+17.00,Ethnikos Achna,Nea Salamina,2,0,1,1-0,2023-24_cy1.txt
+19.00,Doxa Katokopias,Othellos Athienou,0,1,2,0-1,2023-24_cy1.txt
+,Apollon Limassol,AE Zakakiou,1,0,1,0-0,2023-24_cy1.txt
+19.00,Nea Salamina,Karmiotissa Polemidion,0,2,2,0-1,2023-24_cy1.txt
+,AEL Limassol,Ethnikos Achna,1,1,X,0-0,2023-24_cy1.txt
+17.00,Ethnikos Achna,Doxa Katokopias,1,2,2,1-1,2023-24_cy1.txt
+19.00,Karmiotissa Polemidion,AEL Limassol,0,0,X,,2023-24_cy1.txt
+,Othellos Athienou,Apollon Limassol,0,1,2,0-1,2023-24_cy1.txt
+19.00,AE Zakakiou,Nea Salamina,0,3,2,0-1,2023-24_cy1.txt
+18.00,Doxa Katokopias,Apollon Limassol,0,2,2,0-1,2023-24_cy1.txt
+19.00,Othellos Athienou,Nea Salamina,2,3,2,1-2,2023-24_cy1.txt
+19.30,Karmiotissa Polemidion,Ethnikos Achna,1,4,2,1-0,2023-24_cy1.txt
+19.00,AE Zakakiou,AEL Limassol,1,5,2,0-3,2023-24_cy1.txt
+19.00,AEL Limassol,Othellos Athienou,3,2,1,3-0,2023-24_cy1.txt
+17.00,Nea Salamina,Apollon Limassol,0,2,2,0-1,2023-24_cy1.txt
+18.00,Karmiotissa Polemidion,Doxa Katokopias,2,1,1,1-0,2023-24_cy1.txt
+19.00,Ethnikos Achna,AE Zakakiou,6,2,1,2-1,2023-24_cy1.txt
+19.00,Othellos Athienou,Ethnikos Achna,2,1,1,2-0,2023-24_cy1.txt
+,Doxa Katokopias,Nea Salamina,1,0,1,0-0,2023-24_cy1.txt
+19.00,AE Zakakiou,Karmiotissa Polemidion,2,5,2,2-1,2023-24_cy1.txt
+19.30,Apollon Limassol,AEL Limassol,4,1,1,3-0,2023-24_cy1.txt
+17.00,Ethnikos Achna,Apollon Limassol,3,3,X,2-0,2023-24_cy1.txt
+19.00,AE Zakakiou,Doxa Katokopias,2,3,2,1-0,2023-24_cy1.txt
+18.00,Karmiotissa Polemidion,Othellos Athienou,6,6,X,1-4,2023-24_cy1.txt
+19.00,AEL Limassol,Nea Salamina,5,4,1,2-0,2023-24_cy1.txt
+19.00,Nea Salamina,Ethnikos Achna,2,1,1,0-1,2023-24_cy1.txt
+17.00,Othellos Athienou,AE Zakakiou,3,1,1,1-1,2023-24_cy1.txt
+19.30,Apollon Limassol,Karmiotissa Polemidion,0,0,X,,2023-24_cy1.txt
+,Doxa Katokopias,AEL Limassol,2,2,X,0-0,2023-24_cy1.txt
+19.00,Othellos Athienou,Doxa Katokopias,3,0,1,2-0,2023-24_cy1.txt
+,Karmiotissa Polemidion,Nea Salamina,1,3,2,1-2,2023-24_cy1.txt
+,Ethnikos Achna,AEL Limassol,2,0,1,1-0,2023-24_cy1.txt
+18.00,AE Zakakiou,Apollon Limassol,1,5,2,1-3,2023-24_cy1.txt
+17.00,Doxa Katokopias,Ethnikos Achna,6,3,1,2-1,2023-24_cy1.txt
+19.00,AEL Limassol,Karmiotissa Polemidion,4,3,1,2-1,2023-24_cy1.txt
+17.00,Nea Salamina,AE Zakakiou,1,1,X,1-0,2023-24_cy1.txt
+19.00,Apollon Limassol,Othellos Athienou,4,1,1,1-0,2023-24_cy1.txt
+20.00,Omonia Aradippou,Anorthosis Famagusta,0,0,X,,2024-25_cy1.txt
+19.00,Omonia 29is Maiou,AEL Limassol,2,4,2,1-3,2024-25_cy1.txt
+20.00,Karmiotissa Polemidion,Aris Limassol,1,3,2,0-1,2024-25_cy1.txt
+20.00,Apollon Limassol,AEK Larnaca,1,2,2,1-0,2024-25_cy1.txt
+,Omonia Nikosia,Ethnikos Achna,3,0,1,1-0,2024-25_cy1.txt
+19.00,Enosis Neon Paralimni,APOEL Nikosia,0,4,2,0-2,2024-25_cy1.txt
+,Paphos FC,Nea Salamina,4,0,1,3-0,2024-25_cy1.txt
+20.00,Aris Limassol,Omonia 29is Maiou,1,0,1,0-0,2024-25_cy1.txt
+20.00,Enosis Neon Paralimni,Karmiotissa Polemidion,0,1,2,0-0,2024-25_cy1.txt
+,Anorthosis Famagusta,Apollon Limassol,1,2,2,0-1,2024-25_cy1.txt
+,AEL Limassol,Omonia Aradippou,1,0,1,0-0,2024-25_cy1.txt
+18.30,AEK Larnaca,Paphos FC,0,2,2,0-1,2024-25_cy1.txt
+20.00,APOEL Nikosia,Ethnikos Achna,1,3,2,0-2,2024-25_cy1.txt
+20.30,Nea Salamina,Omonia Nikosia,2,3,2,2-1,2024-25_cy1.txt
+19.00,Karmiotissa Polemidion,APOEL Nikosia,0,3,2,0-0,2024-25_cy1.txt
+,Paphos FC,Anorthosis Famagusta,3,1,1,1-0,2024-25_cy1.txt
+,Ethnikos Achna,Nea Salamina,2,3,2,0-1,2024-25_cy1.txt
+,Apollon Limassol,AEL Limassol,3,0,1,,2024-25_cy1.txt
+18.00,Omonia 29is Maiou,Enosis Neon Paralimni,0,1,2,0-0,2024-25_cy1.txt
+20.30,Omonia Aradippou,Aris Limassol,0,3,2,0-1,2024-25_cy1.txt
+19.00,Omonia Nikosia,AEK Larnaca,1,0,1,1-0,2024-25_cy1.txt
+19.00,Karmiotissa Polemidion,Omonia 29is Maiou,1,1,X,0-0,2024-25_cy1.txt
+19.00,Anorthosis Famagusta,Omonia Nikosia,1,0,1,1-0,2024-25_cy1.txt
+,Aris Limassol,Apollon Limassol,0,0,X,,2024-25_cy1.txt
+19.00,AEK Larnaca,Ethnikos Achna,2,2,X,0-1,2024-25_cy1.txt
+,AEL Limassol,Paphos FC,1,3,2,1-0,2024-25_cy1.txt
+,APOEL Nikosia,Nea Salamina,3,1,1,2-0,2024-25_cy1.txt
+19.00,Enosis Neon Paralimni,Omonia Aradippou,0,2,2,0-2,2024-25_cy1.txt
+19.00,Omonia Nikosia,AEL Limassol,3,1,1,1-1,2024-25_cy1.txt
+,Nea Salamina,AEK Larnaca,1,3,2,0-1,2024-25_cy1.txt
+19.00,Omonia Aradippou,Karmiotissa Polemidion,1,1,X,0-1,2024-25_cy1.txt
+,Ethnikos Achna,Anorthosis Famagusta,2,2,X,1-0,2024-25_cy1.txt
+19.00,Omonia 29is Maiou,APOEL Nikosia,0,0,X,,2024-25_cy1.txt
+,Apollon Limassol,Enosis Neon Paralimni,3,1,1,0-0,2024-25_cy1.txt
+,Paphos FC,Aris Limassol,1,1,X,1-1,2024-25_cy1.txt
+19.00,Karmiotissa Polemidion,Apollon Limassol,2,0,1,1-0,2024-25_cy1.txt
+18.00,Omonia 29is Maiou,Omonia Aradippou,1,2,2,1-2,2024-25_cy1.txt
+19.00,Anorthosis Famagusta,Nea Salamina,3,1,1,3-0,2024-25_cy1.txt
+,AEL Limassol,Ethnikos Achna,5,2,1,2-1,2024-25_cy1.txt
+19.00,Enosis Neon Paralimni,Paphos FC,1,2,2,1-0,2024-25_cy1.txt
+,Aris Limassol,Omonia Nikosia,2,0,1,1-0,2024-25_cy1.txt
+20.00,APOEL Nikosia,AEK Larnaca,0,1,2,0-0,2024-25_cy1.txt
+18.00,Omonia Aradippou,APOEL Nikosia,0,5,2,0-2,2024-25_cy1.txt
+,Omonia Nikosia,Enosis Neon Paralimni,0,1,2,0-1,2024-25_cy1.txt
+19.00,Paphos FC,Karmiotissa Polemidion,4,0,1,1-0,2024-25_cy1.txt
+16.30,Ethnikos Achna,Aris Limassol,1,2,2,0-2,2024-25_cy1.txt
+19.00,Apollon Limassol,Omonia 29is Maiou,2,0,1,2-0,2024-25_cy1.txt
+,AEK Larnaca,Anorthosis Famagusta,1,0,1,1-0,2024-25_cy1.txt
+19.00,Nea Salamina,AEL Limassol,0,2,2,0-0,2024-25_cy1.txt
+17.00,Enosis Neon Paralimni,Ethnikos Achna,1,1,X,0-0,2024-25_cy1.txt
+19.00,Aris Limassol,Nea Salamina,2,1,1,2-1,2024-25_cy1.txt
+17.00,Omonia Aradippou,Apollon Limassol,0,1,2,0-1,2024-25_cy1.txt
+19.00,AEL Limassol,AEK Larnaca,1,1,X,1-1,2024-25_cy1.txt
+19.00,Karmiotissa Polemidion,Omonia Nikosia,2,6,2,1-2,2024-25_cy1.txt
+,Omonia 29is Maiou,Paphos FC,1,2,2,1-1,2024-25_cy1.txt
+20.00,APOEL Nikosia,Anorthosis Famagusta,2,0,1,1-0,2024-25_cy1.txt
+19.00,Nea Salamina,Enosis Neon Paralimni,1,0,1,1-0,2024-25_cy1.txt
+19.00,Omonia Nikosia,Omonia 29is Maiou,1,1,X,0-0,2024-25_cy1.txt
+20.15,Apollon Limassol,APOEL Nikosia,0,0,X,,2024-25_cy1.txt
+,Paphos FC,Omonia Aradippou,4,0,1,3-0,2024-25_cy1.txt
+17.00,Ethnikos Achna,Karmiotissa Polemidion,3,2,1,0-1,2024-25_cy1.txt
+19.00,AEK Larnaca,Aris Limassol,2,0,1,1-0,2024-25_cy1.txt
+19.00,Anorthosis Famagusta,AEL Limassol,1,0,1,1-0,2024-25_cy1.txt
+19.00,Omonia 29is Maiou,Ethnikos Achna,1,2,2,1-1,2024-25_cy1.txt
+17.00,Enosis Neon Paralimni,AEK Larnaca,0,0,X,,2024-25_cy1.txt
+19.00,Karmiotissa Polemidion,Nea Salamina,2,2,X,0-1,2024-25_cy1.txt
+19.30,Aris Limassol,Anorthosis Famagusta,3,0,1,2-0,2024-25_cy1.txt
+17.00,Omonia Aradippou,Omonia Nikosia,3,5,2,1-4,2024-25_cy1.txt
+19.00,Apollon Limassol,Paphos FC,0,1,2,0-0,2024-25_cy1.txt
+,APOEL Nikosia,AEL Limassol,4,0,1,2-0,2024-25_cy1.txt
+17.00,Paphos FC,APOEL Nikosia,2,1,1,0-0,2024-25_cy1.txt
+18.00,Nea Salamina,Omonia 29is Maiou,0,1,2,0-1,2024-25_cy1.txt
+19.00,Omonia Nikosia,Apollon Limassol,3,1,1,0-0,2024-25_cy1.txt
+17.00,Ethnikos Achna,Omonia Aradippou,0,0,X,,2024-25_cy1.txt
+18.00,Anorthosis Famagusta,Enosis Neon Paralimni,3,2,1,0-1,2024-25_cy1.txt
+19.00,AEL Limassol,Aris Limassol,0,3,2,0-1,2024-25_cy1.txt
+19.00,AEK Larnaca,Karmiotissa Polemidion,2,0,1,1-0,2024-25_cy1.txt
+17.00,Enosis Neon Paralimni,AEL Limassol,0,0,X,,2024-25_cy1.txt
+18.00,Karmiotissa Polemidion,Anorthosis Famagusta,1,1,X,1-0,2024-25_cy1.txt
+19.30,Apollon Limassol,Ethnikos Achna,2,2,X,0-1,2024-25_cy1.txt
+17.00,Omonia Aradippou,Nea Salamina,1,0,1,0-0,2024-25_cy1.txt
+19.00,Omonia 29is Maiou,AEK Larnaca,1,5,2,0-3,2024-25_cy1.txt
+19.00,Paphos FC,Omonia Nikosia,0,1,2,0-0,2024-25_cy1.txt
+,APOEL Nikosia,Aris Limassol,1,2,2,0-1,2024-25_cy1.txt
+18.00,Aris Limassol,Enosis Neon Paralimni,2,1,1,0-0,2024-25_cy1.txt
+19.00,AEK Larnaca,Omonia Aradippou,1,0,1,0-0,2024-25_cy1.txt
+17.00,Omonia Nikosia,APOEL Nikosia,2,2,X,2-1,2024-25_cy1.txt
+19.00,Anorthosis Famagusta,Omonia 29is Maiou,2,0,1,1-0,2024-25_cy1.txt
+14.30,Ethnikos Achna,Paphos FC,0,2,2,0-2,2024-25_cy1.txt
+17.00,AEL Limassol,Karmiotissa Polemidion,4,0,1,3-0,2024-25_cy1.txt
+19.00,Nea Salamina,Apollon Limassol,1,0,1,0-0,2024-25_cy1.txt
+19.00,Aris Limassol,Karmiotissa Polemidion,1,1,X,1-0,2024-25_cy1.txt
+17.00,AEL Limassol,Omonia 29is Maiou,1,1,X,1-0,2024-25_cy1.txt
+19.00,Anorthosis Famagusta,Omonia Aradippou,3,0,1,2-0,2024-25_cy1.txt
+17.00,AEK Larnaca,Apollon Limassol,4,0,1,2-0,2024-25_cy1.txt
+18.00,APOEL Nikosia,Enosis Neon Paralimni,2,0,1,2-0,2024-25_cy1.txt
+19.00,Ethnikos Achna,Omonia Nikosia,1,0,1,0-0,2024-25_cy1.txt
+19.00,Nea Salamina,Paphos FC,0,2,2,0-1,2024-25_cy1.txt
+16.00,Omonia 29is Maiou,Aris Limassol,0,3,2,0-1,2024-25_cy1.txt
+17.00,Karmiotissa Polemidion,Enosis Neon Paralimni,2,0,1,1-0,2024-25_cy1.txt
+19.00,Apollon Limassol,Anorthosis Famagusta,2,0,1,0-0,2024-25_cy1.txt
+17.00,Omonia Aradippou,AEL Limassol,2,2,X,2-0,2024-25_cy1.txt
+18.00,Paphos FC,AEK Larnaca,0,1,2,0-1,2024-25_cy1.txt
+19.00,Omonia Nikosia,Nea Salamina,3,0,1,1-0,2024-25_cy1.txt
+19.00,Ethnikos Achna,APOEL Nikosia,2,2,X,1-0,2024-25_cy1.txt
+19.00,AEL Limassol,Apollon Limassol,0,1,2,0-0,2024-25_cy1.txt
+,Anorthosis Famagusta,Paphos FC,0,2,2,0-0,2024-25_cy1.txt
+17.00,Enosis Neon Paralimni,Omonia 29is Maiou,2,1,1,2-0,2024-25_cy1.txt
+19.00,Aris Limassol,Omonia Aradippou,2,0,1,0-0,2024-25_cy1.txt
+19.50,AEK Larnaca,Omonia Nikosia,0,3,2,0-1,2024-25_cy1.txt
+18.00,APOEL Nikosia,Karmiotissa Polemidion,3,0,1,0-0,2024-25_cy1.txt
+19.00,Nea Salamina,Ethnikos Achna,0,3,2,0-1,2024-25_cy1.txt
+19.00,Paphos FC,AEL Limassol,4,0,1,1-0,2024-25_cy1.txt
+17.00,Omonia Aradippou,Enosis Neon Paralimni,2,0,1,0-0,2024-25_cy1.txt
+19.00,Apollon Limassol,Aris Limassol,1,1,X,0-1,2024-25_cy1.txt
+19.30,Omonia Nikosia,Anorthosis Famagusta,0,2,2,0-1,2024-25_cy1.txt
+17.00,Omonia 29is Maiou,Karmiotissa Polemidion,1,2,2,0-0,2024-25_cy1.txt
+19.00,Ethnikos Achna,AEK Larnaca,2,2,X,1-2,2024-25_cy1.txt
+19.30,Nea Salamina,APOEL Nikosia,1,1,X,0-0,2024-25_cy1.txt
+17.00,Enosis Neon Paralimni,Apollon Limassol,0,1,2,0-1,2024-25_cy1.txt
+19.00,Aris Limassol,Paphos FC,1,0,1,0-0,2024-25_cy1.txt
+17.00,AEK Larnaca,Nea Salamina,2,0,1,2-0,2024-25_cy1.txt
+18.00,APOEL Nikosia,Omonia 29is Maiou,4,0,1,1-0,2024-25_cy1.txt
+19.00,AEL Limassol,Omonia Nikosia,0,4,2,0-1,2024-25_cy1.txt
+18.30,Karmiotissa Polemidion,Omonia Aradippou,3,1,1,1-1,2024-25_cy1.txt
+19.30,Anorthosis Famagusta,Ethnikos Achna,2,1,1,1-0,2024-25_cy1.txt
+18.00,Apollon Limassol,Karmiotissa Polemidion,3,0,1,1-0,2024-25_cy1.txt
+19.00,Nea Salamina,Anorthosis Famagusta,0,4,2,0-3,2024-25_cy1.txt
+16.00,Ethnikos Achna,AEL Limassol,0,0,X,,2024-25_cy1.txt
+18.00,Paphos FC,Enosis Neon Paralimni,2,0,1,1-0,2024-25_cy1.txt
+19.00,Omonia Nikosia,Aris Limassol,0,0,X,,2024-25_cy1.txt
+19.00,AEK Larnaca,APOEL Nikosia,2,1,1,1-0,2024-25_cy1.txt
+19.00,Omonia Aradippou,Omonia 29is Maiou,1,0,1,0-0,2024-25_cy1.txt
+19.00,Enosis Neon Paralimni,Omonia Nikosia,0,2,2,0-0,2024-25_cy1.txt
+,AEL Limassol,Nea Salamina,0,0,X,,2024-25_cy1.txt
+17.00,Omonia 29is Maiou,Apollon Limassol,2,1,1,1-1,2024-25_cy1.txt
+19.00,Anorthosis Famagusta,AEK Larnaca,2,2,X,0-2,2024-25_cy1.txt
+17.00,APOEL Nikosia,Omonia Aradippou,7,0,1,3-0,2024-25_cy1.txt
+,Karmiotissa Polemidion,Paphos FC,0,2,2,0-0,2024-25_cy1.txt
+19.00,Aris Limassol,Ethnikos Achna,6,1,1,3-1,2024-25_cy1.txt
+18.00,Nea Salamina,Aris Limassol,2,2,X,2-1,2024-25_cy1.txt
+19.00,Omonia Nikosia,Karmiotissa Polemidion,3,0,1,1-0,2024-25_cy1.txt
+16.00,Ethnikos Achna,Enosis Neon Paralimni,0,1,2,0-0,2024-25_cy1.txt
+17.00,Apollon Limassol,Omonia Aradippou,1,0,1,1-0,2024-25_cy1.txt
+19.00,AEK Larnaca,AEL Limassol,2,0,1,1-0,2024-25_cy1.txt
+17.00,Paphos FC,Omonia 29is Maiou,2,1,1,0-1,2024-25_cy1.txt
+20.00,Anorthosis Famagusta,APOEL Nikosia,2,2,X,2-1,2024-25_cy1.txt
+19.00,Omonia 29is Maiou,Omonia Nikosia,2,3,2,1-0,2024-25_cy1.txt
+17.00,APOEL Nikosia,Apollon Limassol,0,0,X,,2024-25_cy1.txt
+18.00,Omonia Aradippou,Paphos FC,0,2,2,0-1,2024-25_cy1.txt
+19.00,AEL Limassol,Anorthosis Famagusta,0,1,2,0-0,2024-25_cy1.txt
+16.00,Karmiotissa Polemidion,Ethnikos Achna,0,0,X,,2024-25_cy1.txt
+17.00,Enosis Neon Paralimni,Nea Salamina,2,0,1,1-0,2024-25_cy1.txt
+19.00,Aris Limassol,AEK Larnaca,1,1,X,0-1,2024-25_cy1.txt
+18.30,Nea Salamina,Karmiotissa Polemidion,2,1,1,1-0,2024-25_cy1.txt
+19.30,AEK Larnaca,Enosis Neon Paralimni,4,1,1,3-1,2024-25_cy1.txt
+16.00,Ethnikos Achna,Omonia 29is Maiou,1,0,1,1-0,2024-25_cy1.txt
+19.00,Anorthosis Famagusta,Aris Limassol,0,3,2,0-1,2024-25_cy1.txt
+17.00,Omonia Nikosia,Omonia Aradippou,3,1,1,1-1,2024-25_cy1.txt
+,Paphos FC,Apollon Limassol,1,0,1,1-0,2024-25_cy1.txt
+19.00,AEL Limassol,APOEL Nikosia,1,2,2,0-2,2024-25_cy1.txt
+17.00,Karmiotissa Polemidion,AEK Larnaca,0,3,2,0-1,2024-25_cy1.txt
+19.00,Omonia 29is Maiou,Nea Salamina,2,1,1,1-1,2024-25_cy1.txt
+16.00,Omonia Aradippou,Ethnikos Achna,2,2,X,1-0,2024-25_cy1.txt
+19.00,Aris Limassol,AEL Limassol,4,0,1,1-0,2024-25_cy1.txt
+19.00,APOEL Nikosia,Paphos FC,0,2,2,0-0,2024-25_cy1.txt
+,Apollon Limassol,Omonia Nikosia,1,1,X,1-0,2024-25_cy1.txt
+,Enosis Neon Paralimni,Anorthosis Famagusta,2,2,X,0-1,2024-25_cy1.txt
+17.00,Ethnikos Achna,Apollon Limassol,0,1,2,0-1,2024-25_cy1.txt
+19.00,AEL Limassol,Enosis Neon Paralimni,2,1,1,1-0,2024-25_cy1.txt
+,Anorthosis Famagusta,Karmiotissa Polemidion,1,2,2,1-2,2024-25_cy1.txt
+16.00,Nea Salamina,Omonia Aradippou,2,3,2,2-2,2024-25_cy1.txt
+17.00,Aris Limassol,APOEL Nikosia,3,0,1,1-0,2024-25_cy1.txt
+19.00,Omonia Nikosia,Paphos FC,2,1,1,1-1,2024-25_cy1.txt
+19.00,AEK Larnaca,Omonia 29is Maiou,2,0,1,1-0,2024-25_cy1.txt
+18.00,Karmiotissa Polemidion,AEL Limassol,2,1,1,1-1,2024-25_cy1.txt
+19.00,APOEL Nikosia,Omonia Nikosia,2,1,1,0-0,2024-25_cy1.txt
+,Apollon Limassol,Nea Salamina,1,1,X,0-0,2024-25_cy1.txt
+,Omonia 29is Maiou,Anorthosis Famagusta,0,0,X,,2024-25_cy1.txt
+16.00,Enosis Neon Paralimni,Aris Limassol,1,2,2,1-2,2024-25_cy1.txt
+19.00,Paphos FC,Ethnikos Achna,0,0,X,,2024-25_cy1.txt
+,Omonia Aradippou,AEK Larnaca,2,0,1,0-0,2024-25_cy1.txt
+19.00,Aris Limassol,APOEL Nikosia,1,0,1,1-0,2024-25_cy1.txt
+19.00,Apollon Limassol,Paphos FC,1,2,2,0-1,2024-25_cy1.txt
+20.30,Omonia Nikosia,AEK Larnaca,1,1,X,1-0,2024-25_cy1.txt
+17.00,APOEL Nikosia,Apollon Limassol,1,1,X,0-1,2024-25_cy1.txt
+19.00,AEK Larnaca,Aris Limassol,1,1,X,1-1,2024-25_cy1.txt
+19.30,Paphos FC,Omonia Nikosia,3,1,1,1-0,2024-25_cy1.txt
+18.00,Apollon Limassol,Omonia Nikosia,3,1,1,0-1,2024-25_cy1.txt
+19.00,Aris Limassol,Paphos FC,0,1,2,0-1,2024-25_cy1.txt
+19.30,APOEL Nikosia,AEK Larnaca,0,1,2,0-1,2024-25_cy1.txt
+18.00,Paphos FC,APOEL Nikosia,0,1,2,0-0,2024-25_cy1.txt
+,Apollon Limassol,AEK Larnaca,1,1,X,1-0,2024-25_cy1.txt
+19.00,Omonia Nikosia,Aris Limassol,2,1,1,1-1,2024-25_cy1.txt
+19.00,APOEL Nikosia,Omonia Nikosia,1,1,X,0-0,2024-25_cy1.txt
+,Aris Limassol,Apollon Limassol,2,1,1,1-1,2024-25_cy1.txt
+,AEK Larnaca,Paphos FC,2,2,X,1-2,2024-25_cy1.txt
+19.00,Paphos FC,Apollon Limassol,2,0,1,2-0,2024-25_cy1.txt
+,AEK Larnaca,Omonia Nikosia,1,1,X,0-1,2024-25_cy1.txt
+,APOEL Nikosia,Aris Limassol,2,1,1,0-1,2024-25_cy1.txt
+19.00,Apollon Limassol,APOEL Nikosia,0,0,X,,2024-25_cy1.txt
+,Omonia Nikosia,Paphos FC,3,0,1,2-0,2024-25_cy1.txt
+19.00,Aris Limassol,AEK Larnaca,1,0,1,1-0,2024-25_cy1.txt
+19.00,Omonia Nikosia,Apollon Limassol,1,0,1,0-0,2024-25_cy1.txt
+,Paphos FC,Aris Limassol,4,0,1,2-0,2024-25_cy1.txt
+,AEK Larnaca,APOEL Nikosia,3,0,1,2-0,2024-25_cy1.txt
+19.00,APOEL Nikosia,Paphos FC,1,1,X,0-0,2024-25_cy1.txt
+,Aris Limassol,Omonia Nikosia,3,3,X,1-3,2024-25_cy1.txt
+,AEK Larnaca,Apollon Limassol,3,0,1,2-0,2024-25_cy1.txt
+18.00,Paphos FC,AEK Larnaca,2,0,1,1-0,2024-25_cy1.txt
+19.00,Apollon Limassol,Aris Limassol,2,3,2,1-0,2024-25_cy1.txt
+,Omonia Nikosia,APOEL Nikosia,2,1,1,1-1,2024-25_cy1.txt
+19.00,Anorthosis Famagusta,Omonia 29is Maiou,4,2,1,2-1,2024-25_cy1.txt
+16.00,Karmiotissa Polemidion,Enosis Neon Paralimni,0,2,2,0-1,2024-25_cy1.txt
+19.00,Omonia Aradippou,AEL Limassol,1,2,2,1-0,2024-25_cy1.txt
+17.00,Ethnikos Achna,Nea Salamina,1,1,X,0-0,2024-25_cy1.txt
+16.00,Omonia 29is Maiou,AEL Limassol,0,3,2,0-0,2024-25_cy1.txt
+19.00,Enosis Neon Paralimni,Omonia Aradippou,1,0,1,0-0,2024-25_cy1.txt
+,Nea Salamina,Karmiotissa Polemidion,0,0,X,,2024-25_cy1.txt
+19.00,Anorthosis Famagusta,Ethnikos Achna,2,0,1,1-0,2024-25_cy1.txt
+16.30,Ethnikos Achna,Omonia 29is Maiou,3,1,1,2-0,2024-25_cy1.txt
+17.00,Karmiotissa Polemidion,Anorthosis Famagusta,0,1,2,0-0,2024-25_cy1.txt
+19.30,AEL Limassol,Enosis Neon Paralimni,2,0,1,0-0,2024-25_cy1.txt
+19.00,Omonia Aradippou,Nea Salamina,0,2,2,0-1,2024-25_cy1.txt
+19.00,Ethnikos Achna,Karmiotissa Polemidion,2,1,1,0-1,2024-25_cy1.txt
+19.00,Nea Salamina,AEL Limassol,1,3,2,0-0,2024-25_cy1.txt
+,Omonia 29is Maiou,Enosis Neon Paralimni,0,2,2,0-2,2024-25_cy1.txt
+,Anorthosis Famagusta,Omonia Aradippou,1,2,2,0-0,2024-25_cy1.txt
+19.00,AEL Limassol,Anorthosis Famagusta,1,3,2,1-2,2024-25_cy1.txt
+19.00,Omonia Aradippou,Ethnikos Achna,2,1,1,1-1,2024-25_cy1.txt
+,Karmiotissa Polemidion,Omonia 29is Maiou,2,0,1,1-0,2024-25_cy1.txt
+,Enosis Neon Paralimni,Nea Salamina,2,2,X,1-2,2024-25_cy1.txt
+17.00,Ethnikos Achna,AEL Limassol,2,0,1,0-0,2024-25_cy1.txt
+19.00,Anorthosis Famagusta,Enosis Neon Paralimni,1,2,2,1-1,2024-25_cy1.txt
+,Karmiotissa Polemidion,Omonia Aradippou,1,0,1,0-0,2024-25_cy1.txt
+,Omonia 29is Maiou,Nea Salamina,0,1,2,0-0,2024-25_cy1.txt
+19.00,Nea Salamina,Anorthosis Famagusta,2,4,2,0-2,2024-25_cy1.txt
+19.00,Omonia Aradippou,Omonia 29is Maiou,4,1,1,2-0,2024-25_cy1.txt
+,AEL Limassol,Karmiotissa Polemidion,1,0,1,1-0,2024-25_cy1.txt
+,Enosis Neon Paralimni,Ethnikos Achna,4,2,1,2-2,2024-25_cy1.txt
+18.00,Othellos Athienou,Apollon Limassol,0,4,2,0-1,2024-25_cycup.txt
+19.00,AEK Larnaca,Akritas Chlorakas,5,0,1,2-0,2024-25_cycup.txt
+19.00,Olympiakos Nikosia,Anorthosis Famagusta,1,4,2,0-0,2024-25_cycup.txt
+,Ethnikos Achna,AE Zakakiou,3,1,1,1-1,2024-25_cycup.txt
+,Nea Salamina,Doxa Katokopias,1,0,1,1-0,2024-25_cycup.txt
+16.00,Karmiotissa Polemidion,AO Agia Napa,2,3,2,2-1,2024-25_cycup.txt
+19.00,Chalkanoras Idaliou,Omonia 29is Maiou,0,1,2,0-0,2024-25_cycup.txt
+17.00,ASIL Lysi,Aris Limassol,1,6,2,0-5,2024-25_cycup.txt
+19.00,PO Achyronas-Onisilos,AEL Limassol,0,2,2,0-1,2024-25_cycup.txt
+19.00,Anagennisi Derynias,Enosis Neon Paralimni,1,2,2,1-1,2024-25_cycup.txt
+,Ypsonas FC,Omonia Aradippou,1,2,2,0-0,2024-25_cycup.txt
+17.00,AO Agia Napa,AEL Limassol,1,4,2,1-3,2024-25_cycup.txt
+19.00,Apollon Limassol,Ethnikos Achna,4,3,1,,2024-25_cycup.txt
+19.00,AEK Larnaca,PAEEK,8,0,1,3-0,2024-25_cycup.txt
+19.00,Enosis Neon Paralimni,Nea Salamina,4,2,1,,2024-25_cycup.txt
+,Omonia Aradippou,Anorthosis Famagusta,2,4,2,0-3,2024-25_cycup.txt
+19.00,Omonia Nikosia,Spartakos Kitiou,7,0,1,3-0,2024-25_cycup.txt
+,Paphos FC,Aris Limassol,5,4,1,,2024-25_cycup.txt
+19.00,APOEL Nikosia,Omonia 29is Maiou,6,1,1,4-0,2024-25_cycup.txt
+19.00,Omonia Nikosia,AEL Limassol,3,0,1,1-0,2024-25_cycup.txt
+18.30,Enosis Neon Paralimni,AEK Larnaca,0,3,2,0-2,2024-25_cycup.txt
+19.30,Anorthosis Famagusta,Apollon Limassol,1,3,2,0-2,2024-25_cycup.txt
+19.00,APOEL Nikosia,Paphos FC,4,5,2,,2024-25_cycup.txt
+19.00,Omonia Nikosia,AEK Larnaca,0,0,X,,2024-25_cycup.txt
+,Paphos FC,Apollon Limassol,4,2,1,2-1,2024-25_cycup.txt

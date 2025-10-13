@@ -1,0 +1,252 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Haiti,Suriname,0,3,2,Port of Spain,Trinidad and Tobago,1978_cfu_caribbean_cup.txt
+Trinidad and Tobago,Antigua and Barbuda,3,1,1,San Fernando,Trinidad and Tobago,1978_cfu_caribbean_cup.txt
+Trinidad and Tobago,Suriname,0,1,2,Port of Spain,Trinidad and Tobago,1978_cfu_caribbean_cup.txt
+Antigua and Barbuda,Haiti,0,1,2,San Fernando,Trinidad and Tobago,1978_cfu_caribbean_cup.txt
+Antigua and Barbuda,Suriname,0,4,2,San Fernando,Trinidad and Tobago,1978_cfu_caribbean_cup.txt
+Trinidad and Tobago,Haiti,2,2,X,Port of Spain,Trinidad and Tobago,1978_cfu_caribbean_cup.txt
+Haiti,Trinidad and Tobago,1,0,1,Paramaribo,Suriname,1979_cfu_caribbean_cup.txt
+Suriname,Saint Vincent and the Grenadines,2,3,2,Paramaribo,Suriname,1979_cfu_caribbean_cup.txt
+Haiti,Saint Vincent and the Grenadines,3,1,1,Paramaribo,Suriname,1979_cfu_caribbean_cup.txt
+Suriname,Trinidad and Tobago,3,0,1,Paramaribo,Suriname,1979_cfu_caribbean_cup.txt
+Suriname,Haiti,0,1,2,Paramaribo,Suriname,1979_cfu_caribbean_cup.txt
+Puerto Rico,Guadeloupe,1,1,X,San Juan,Puerto Rico,1981_cfu_caribbean_cup.txt
+Saint Vincent and the Grenadines,Trinidad and Tobago,0,2,2,San Juan,Puerto Rico,1981_cfu_caribbean_cup.txt
+Guadeloupe,Trinidad and Tobago,0,2,2,San Juan,Puerto Rico,1981_cfu_caribbean_cup.txt
+Puerto Rico,Saint Vincent and the Grenadines,0,2,2,San Juan,Puerto Rico,1981_cfu_caribbean_cup.txt
+Guadeloupe,Saint Vincent and the Grenadines,1,3,2,San Juan,Puerto Rico,1981_cfu_caribbean_cup.txt
+Antigua and Barbuda,Martinique,0,2,2,Cayenne,French Guiana,1983_cfu_caribbean_cup.txt
+French Guiana,Trinidad and Tobago,0,1,2,Cayenne,French Guiana,1983_cfu_caribbean_cup.txt
+French Guiana,Antigua and Barbuda,1,0,1,Cayenne,French Guiana,1983_cfu_caribbean_cup.txt
+Martinique,Trinidad and Tobago,3,1,1,Cayenne,French Guiana,1983_cfu_caribbean_cup.txt
+Antigua and Barbuda,Trinidad and Tobago,1,2,2,Cayenne,French Guiana,1983_cfu_caribbean_cup.txt
+French Guiana,Martinique,0,0,X,Cayenne,French Guiana,1983_cfu_caribbean_cup.txt
+Barbados,Suriname,0,0,X,Bridgetown,Barbados,1985_cfu_caribbean_cup.txt
+Guadeloupe,Martinique,1,2,2,Bridgetown,Barbados,1985_cfu_caribbean_cup.txt
+Barbados,Guadeloupe,1,1,X,Bridgetown,Barbados,1985_cfu_caribbean_cup.txt
+Martinique,Suriname,2,0,1,Bridgetown,Barbados,1985_cfu_caribbean_cup.txt
+Barbados,Martinique,1,1,X,Bridgetown,Barbados,1985_cfu_caribbean_cup.txt
+Guadeloupe,Suriname,2,2,X,Bridgetown,Barbados,1985_cfu_caribbean_cup.txt
+Guadeloupe,Trinidad and Tobago,0,3,2,Fort-de-France,Martinique,1988_cfu_caribbean_cup.txt
+Martinique,Antigua and Barbuda,2,2,X,Fort-de-France,Martinique,1988_cfu_caribbean_cup.txt
+Antigua and Barbuda,Trinidad and Tobago,1,1,X,Fort-de-France,Martinique,1988_cfu_caribbean_cup.txt
+Martinique,Guadeloupe,2,1,1,Fort-de-France,Martinique,1988_cfu_caribbean_cup.txt
+Antigua and Barbuda,Guadeloupe,0,0,X,Fort-de-France,Martinique,1988_cfu_caribbean_cup.txt
+Martinique,Trinidad and Tobago,0,3,2,Fort-de-France,Martinique,1988_cfu_caribbean_cup.txt
+Grenada,Saint Vincent and the Grenadines,2,0,1,Bridgetown,Barbados,1989_cfu_caribbean_cup.txt
+Barbados,Guadeloupe,1,0,1,Bridgetown,Barbados,1989_cfu_caribbean_cup.txt
+Curaçao,Saint Vincent and the Grenadines,1,1,X,Bridgetown,Barbados,1989_cfu_caribbean_cup.txt
+Barbados,Trinidad and Tobago,0,3,2,Bridgetown,Barbados,1989_cfu_caribbean_cup.txt
+Curaçao,Grenada,1,1,X,Bridgetown,Barbados,1989_cfu_caribbean_cup.txt
+Guadeloupe,Trinidad and Tobago,2,0,1,Bridgetown,Barbados,1989_cfu_caribbean_cup.txt
+Grenada,Trinidad and Tobago,1,2,2,Bridgetown,Barbados,1989_cfu_caribbean_cup.txt
+Barbados,Martinique,2,2,X,Port of Spain,Trinidad and Tobago,1990_cfu_caribbean_cup.txt
+Trinidad and Tobago,Jamaica,0,0,X,Port of Spain,Trinidad and Tobago,1990_cfu_caribbean_cup.txt
+Dominican Republic,Trinidad and Tobago,0,7,2,Kingston,Jamaica,1991_cfu_caribbean_cup.txt
+Saint Lucia,Martinique,0,0,X,Kingston,Jamaica,1991_cfu_caribbean_cup.txt
+Jamaica,Guyana,6,0,1,Kingston,Jamaica,1991_cfu_caribbean_cup.txt
+Dominican Republic,Saint Lucia,0,0,X,Kingston,Jamaica,1991_cfu_caribbean_cup.txt
+Martinique,Trinidad and Tobago,0,1,2,Kingston,Jamaica,1991_cfu_caribbean_cup.txt
+Jamaica,Cayman Islands,3,2,1,Kingston,Jamaica,1991_cfu_caribbean_cup.txt
+Dominican Republic,Martinique,1,4,2,Kingston,Jamaica,1991_cfu_caribbean_cup.txt
+Saint Lucia,Trinidad and Tobago,2,1,1,Kingston,Jamaica,1991_cfu_caribbean_cup.txt
+Cayman Islands,Guyana,1,2,2,Kingston,Jamaica,1991_cfu_caribbean_cup.txt
+Guyana,Trinidad and Tobago,1,3,2,Kingston,Jamaica,1991_cfu_caribbean_cup.txt
+Jamaica,Saint Lucia,2,0,1,Kingston,Jamaica,1991_cfu_caribbean_cup.txt
+Guyana,Saint Lucia,1,4,2,Kingston,Jamaica,1991_cfu_caribbean_cup.txt
+Jamaica,Trinidad and Tobago,2,0,1,Kingston,Jamaica,1991_cfu_caribbean_cup.txt
+Antigua and Barbuda,Suriname,1,1,X,Port of Spain,Trinidad and Tobago,1992_cfu_caribbean_cup.txt
+Guadeloupe,Jamaica,0,1,2,San Fernando,Trinidad and Tobago,1992_cfu_caribbean_cup.txt
+Antigua and Barbuda,Martinique,1,4,2,Port of Spain,Trinidad and Tobago,1992_cfu_caribbean_cup.txt
+Cuba,Jamaica,0,0,X,San Fernando,Trinidad and Tobago,1992_cfu_caribbean_cup.txt
+Jamaica,Martinique,1,0,1,Port of Spain,Trinidad and Tobago,1992_cfu_caribbean_cup.txt
+Trinidad and Tobago,Cuba,1,0,1,Port of Spain,Trinidad and Tobago,1992_cfu_caribbean_cup.txt
+Cuba,Martinique,1,1,X,Port of Spain,Trinidad and Tobago   [Martinique wins on penalties],1992_cfu_caribbean_cup.txt
+Trinidad and Tobago,Jamaica,3,1,1,Port of Spain,Trinidad and Tobago,1992_cfu_caribbean_cup.txt
+Jamaica,Saint Kitts and Nevis,4,1,1,Kingston,Jamaica,1993_cfu_caribbean_cup.txt
+Martinique,Saint Lucia,2,0,1,Montego Bay,Jamaica,1993_cfu_caribbean_cup.txt
+Puerto Rico,Sint Maarten,3,0,1,Kingston,Jamaica,1993_cfu_caribbean_cup.txt
+Jamaica,Sint Maarten,2,0,1,Kingston,Jamaica,1993_cfu_caribbean_cup.txt
+Saint Kitts and Nevis,Puerto Rico,1,0,1,Kingston,Jamaica,1993_cfu_caribbean_cup.txt
+Trinidad and Tobago,Saint Lucia,1,1,X,Montego Bay,Jamaica,1993_cfu_caribbean_cup.txt
+Jamaica,Puerto Rico,1,0,1,Kingston,Jamaica,1993_cfu_caribbean_cup.txt
+Martinique,Trinidad and Tobago,3,2,1,Montego Bay,Jamaica,1993_cfu_caribbean_cup.txt
+Saint Kitts and Nevis,Sint Maarten,2,2,X,Kingston,Jamaica,1993_cfu_caribbean_cup.txt
+Saint Vincent and the Grenadines,Saint Lucia,4,1,1,Montego Bay,Jamaica,1993_cfu_caribbean_cup.txt
+Jamaica,Trinidad and Tobago,3,0,1,Kingston,Jamaica,1993_cfu_caribbean_cup.txt
+Martinique,Saint Kitts and Nevis,1,1,X,Montego Bay,Jamaica   [Martinique wins on penalties],1993_cfu_caribbean_cup.txt
+Jamaica,Martinique,0,0,X,Kingston,Jamaica   [Martinique wins on penalties],1993_cfu_caribbean_cup.txt
+Trinidad and Tobago,Saint Kitts and Nevis,3,2,1,Kingston,Jamaica,1993_cfu_caribbean_cup.txt
+Cayman Islands,Haiti,2,3,2,San Fernando,Trinidad and Tobago,1994_cfu_caribbean_cup.txt
+Martinique,Suriname,2,0,1,San Fernando,Trinidad and Tobago,1994_cfu_caribbean_cup.txt
+Martinique,Haiti,3,0,1,San Fernando,Trinidad and Tobago,1994_cfu_caribbean_cup.txt
+Suriname,Cayman Islands,2,0,1,San Fernando,Trinidad and Tobago,1994_cfu_caribbean_cup.txt
+Martinique,Cayman Islands,1,1,X,San Fernando,Trinidad and Tobago,1994_cfu_caribbean_cup.txt
+Suriname,Haiti,1,1,X,San Fernando,Trinidad and Tobago,1994_cfu_caribbean_cup.txt
+Martinique,Guadeloupe,4,2,1,Port of Spain,Trinidad and Tobago,1994_cfu_caribbean_cup.txt
+Trinidad and Tobago,Suriname,3,2,1,Port of Spain,Trinidad and Tobago,1994_cfu_caribbean_cup.txt
+Guadeloupe,Suriname,2,0,1,Port of Spain,Trinidad and Tobago,1994_cfu_caribbean_cup.txt
+Trinidad and Tobago,Martinique,7,2,1,Port of Spain,Trinidad and Tobago,1994_cfu_caribbean_cup.txt
+Jamaica,Saint Lucia,2,1,1,Kingston,Jamaica,1995_cfu_caribbean_cup.txt
+Trinidad and Tobago,Cuba,2,0,1,Kingston,Jamaica,1995_cfu_caribbean_cup.txt
+Cayman Islands,Antigua and Barbuda,2,0,1,George Town,Cayman Islands,1995_cfu_caribbean_cup.txt
+French Guiana,Saint Vincent and the Grenadines,1,3,2,George Town,Cayman Islands,1995_cfu_caribbean_cup.txt
+Jamaica,Cuba,1,2,2,Montego Bay,Jamaica,1995_cfu_caribbean_cup.txt
+Saint Lucia,Trinidad and Tobago,0,5,2,Montego Bay,Jamaica,1995_cfu_caribbean_cup.txt
+Cayman Islands,French Guiana,1,0,1,George Town,Cayman Islands,1995_cfu_caribbean_cup.txt
+Cuba,Saint Lucia,2,0,1,Kingston,Jamaica,1995_cfu_caribbean_cup.txt
+Jamaica,Trinidad and Tobago,1,0,1,Kingston,Jamaica,1995_cfu_caribbean_cup.txt
+Saint Vincent and the Grenadines,Antigua and Barbuda,5,1,1,George Town,Cayman Islands,1995_cfu_caribbean_cup.txt
+Antigua and Barbuda,French Guiana,2,1,1,George Town,Cayman Islands,1995_cfu_caribbean_cup.txt
+Cayman Islands,Trinidad and Tobago,2,9,2,George Town,Cayman Islands,1995_cfu_caribbean_cup.txt
+Cayman Islands,Cuba,0,3,2,George Town,Cayman Islands,1995_cfu_caribbean_cup.txt
+Trinidad and Tobago,Jamaica,1,0,1,Port of Spain,Trinidad and Tobago,1996_cfu_caribbean_cup.txt
+Cuba,Saint Vincent and the Grenadines,2,0,1,San Fernando,Trinidad and Tobago,1996_cfu_caribbean_cup.txt
+Martinique,Haiti,1,0,1,San Fernando,Trinidad and Tobago,1996_cfu_caribbean_cup.txt
+Jamaica,Saint Kitts and Nevis,4,1,1,Palo Seco,Trinidad and Tobago,1996_cfu_caribbean_cup.txt
+Trinidad and Tobago,Suriname,3,0,1,Palo Seco,Trinidad and Tobago,1996_cfu_caribbean_cup.txt
+Cuba,Martinique,1,0,1,Port of Spain,Trinidad and Tobago,1996_cfu_caribbean_cup.txt
+Suriname,Jamaica,3,1,1,Port of Spain,Trinidad and Tobago,1996_cfu_caribbean_cup.txt
+Trinidad and Tobago,Saint Kitts and Nevis,5,1,1,Port of Spain,Trinidad and Tobago,1996_cfu_caribbean_cup.txt
+Cuba,Haiti,0,0,X,Arima,Trinidad and Tobago,1996_cfu_caribbean_cup.txt
+Saint Kitts and Nevis,Suriname,1,1,X,Port of Spain,Trinidad and Tobago,1996_cfu_caribbean_cup.txt
+Trinidad and Tobago,Martinique,2,1,1,Port of Spain,Trinidad and Tobago,1996_cfu_caribbean_cup.txt
+Cuba,Suriname,4,0,1,Port of Spain,Trinidad and Tobago,1996_cfu_caribbean_cup.txt
+Martinique,Suriname,1,1,X,Port of Spain,Trinidad and Tobago   [Martinique wins on penalties],1996_cfu_caribbean_cup.txt
+Trinidad and Tobago,Cuba,2,0,1,Port of Spain,Trinidad and Tobago,1996_cfu_caribbean_cup.txt
+Jamaica,Grenada,1,1,X,St. John's,Antigua and Barbuda,1997_cfu_caribbean_cup.txt
+Martinique,Trinidad and Tobago,2,1,1,Basseterre,Saint Kitts and Nevis,1997_cfu_caribbean_cup.txt
+Antigua and Barbuda,Grenada,1,3,2,St. John's,Antigua and Barbuda,1997_cfu_caribbean_cup.txt
+Saint Kitts and Nevis,Martinique,2,0,1,Basseterre,Saint Kitts and Nevis,1997_cfu_caribbean_cup.txt
+Antigua and Barbuda,Jamaica,0,2,2,St. John's,Antigua and Barbuda,1997_cfu_caribbean_cup.txt
+Saint Kitts and Nevis,Trinidad and Tobago,0,3,2,Basseterre,Saint Kitts and Nevis,1997_cfu_caribbean_cup.txt
+Saint Kitts and Nevis,Grenada,2,1,1,Basseterre,Saint Kitts and Nevis,1997_cfu_caribbean_cup.txt
+Trinidad and Tobago,Jamaica,1,1,X,St. John's,Antigua and Barbuda   [Trinidad and Tobago wins on penalties],1997_cfu_caribbean_cup.txt
+Jamaica,Grenada,4,1,1,St. John's,Antigua and Barbuda,1997_cfu_caribbean_cup.txt
+Trinidad and Tobago,Saint Kitts and Nevis,4,0,1,St. John's,Antigua and Barbuda,1997_cfu_caribbean_cup.txt
+Curaçao,Haiti,0,4,2,Kingston,Jamaica,1998_cfu_caribbean_cup.txt
+Jamaica,Cayman Islands,4,0,1,Kingston,Jamaica,1998_cfu_caribbean_cup.txt
+Martinique,Dominica,5,1,1,Port of Spain,Trinidad and Tobago,1998_cfu_caribbean_cup.txt
+Trinidad and Tobago,Antigua and Barbuda,3,2,1,Port of Spain,Trinidad and Tobago,1998_cfu_caribbean_cup.txt
+Antigua and Barbuda,Dominica,2,1,1,Port of Spain,Trinidad and Tobago,1998_cfu_caribbean_cup.txt
+Cayman Islands,Haiti,0,1,2,Kingston,Jamaica,1998_cfu_caribbean_cup.txt
+Jamaica,Curaçao,3,2,1,Kingston,Jamaica,1998_cfu_caribbean_cup.txt
+Trinidad and Tobago,Martinique,2,1,1,Port of Spain,Trinidad and Tobago,1998_cfu_caribbean_cup.txt
+Antigua and Barbuda,Martinique,5,1,1,Port of Spain,Trinidad and Tobago,1998_cfu_caribbean_cup.txt
+Curaçao,Cayman Islands,0,2,2,Kingston,Jamaica,1998_cfu_caribbean_cup.txt
+Jamaica,Haiti,2,1,1,Kingston,Jamaica,1998_cfu_caribbean_cup.txt
+Trinidad and Tobago,Dominica,8,0,1,Port of Spain,Trinidad and Tobago,1998_cfu_caribbean_cup.txt
+Jamaica,Antigua and Barbuda,1,0,1,Port of Spain,Trinidad and Tobago,1998_cfu_caribbean_cup.txt
+Trinidad and Tobago,Haiti,4,1,1,Port of Spain,Trinidad and Tobago,1998_cfu_caribbean_cup.txt
+Antigua and Barbuda,Haiti,2,3,2,Port of Spain,Trinidad and Tobago,1998_cfu_caribbean_cup.txt
+Trinidad and Tobago,Jamaica,1,2,2,Port of Spain,Trinidad and Tobago,1998_cfu_caribbean_cup.txt
+Grenada,Guadeloupe,2,1,1,Port of Spain,Trinidad and Tobago,1999_cfu_caribbean_cup.txt
+Trinidad and Tobago,Jamaica,1,0,1,Port of Spain,Trinidad and Tobago,1999_cfu_caribbean_cup.txt
+Cuba,Haiti,3,1,1,Macoya,Trinidad and Tobago,1999_cfu_caribbean_cup.txt
+Jamaica,Guadeloupe,5,1,1,Port of Spain,Trinidad and Tobago,1999_cfu_caribbean_cup.txt
+Trinidad and Tobago,Grenada,7,0,1,Port of Spain,Trinidad and Tobago,1999_cfu_caribbean_cup.txt
+Haiti,Saint Kitts and Nevis,2,0,1,Macoya,Trinidad and Tobago,1999_cfu_caribbean_cup.txt
+Jamaica,Grenada,2,1,1,Port of Spain,Trinidad and Tobago,1999_cfu_caribbean_cup.txt
+Trinidad and Tobago,Guadeloupe,3,2,1,Port of Spain,Trinidad and Tobago,1999_cfu_caribbean_cup.txt
+Cuba,Saint Kitts and Nevis,2,0,1,Macoya,Trinidad and Tobago,1999_cfu_caribbean_cup.txt
+Cuba,Jamaica,2,0,1,Port of Spain,Trinidad and Tobago,1999_cfu_caribbean_cup.txt
+Trinidad and Tobago,Haiti,6,1,1,Port of Spain,Trinidad and Tobago,1999_cfu_caribbean_cup.txt
+Trinidad and Tobago,Cuba,2,1,1,Port of Spain,Trinidad and Tobago,1999_cfu_caribbean_cup.txt
+Martinique,Jamaica,0,1,2,Arima,Trinidad and Tobago,2001_cfu_caribbean_cup.txt
+Trinidad and Tobago,Barbados,5,0,1,Arima,Trinidad and Tobago,2001_cfu_caribbean_cup.txt
+Cuba,Suriname,4,3,1,Macoya,Trinidad and Tobago,2001_cfu_caribbean_cup.txt
+Haiti,Saint Kitts and Nevis,7,2,1,Macoya,Trinidad and Tobago,2001_cfu_caribbean_cup.txt
+Martinique,Barbados,3,1,1,Port of Spain,Trinidad and Tobago,2001_cfu_caribbean_cup.txt
+Trinidad and Tobago,Jamaica,2,1,1,Port of Spain,Trinidad and Tobago,2001_cfu_caribbean_cup.txt
+Haiti,Suriname,1,1,X,Macoya,Trinidad and Tobago,2001_cfu_caribbean_cup.txt
+Saint Kitts and Nevis,Cuba,1,1,X,Macoya,Trinidad and Tobago,2001_cfu_caribbean_cup.txt
+Barbados,Jamaica,1,2,2,Port of Spain,Trinidad and Tobago,2001_cfu_caribbean_cup.txt
+Trinidad and Tobago,Martinique,1,2,2,Port of Spain,Trinidad and Tobago,2001_cfu_caribbean_cup.txt
+Haiti,Cuba,0,0,X,Arima,Trinidad and Tobago,2001_cfu_caribbean_cup.txt
+Suriname,Saint Kitts and Nevis,0,4,2,Arima,Trinidad and Tobago,2001_cfu_caribbean_cup.txt
+Haiti,Martinique,5,0,1,Port of Spain,Trinidad and Tobago,2001_cfu_caribbean_cup.txt
+Trinidad and Tobago,Cuba,2,0,1,Port of Spain,Trinidad and Tobago,2001_cfu_caribbean_cup.txt
+Martinique,Cuba,1,0,1,Arima,Trinidad and Tobago,2001_cfu_caribbean_cup.txt
+Trinidad and Tobago,Haiti,3,0,1,Port of Spain,Trinidad and Tobago,2001_cfu_caribbean_cup.txt
+Barbados,Cuba,0,3,2,Bridgetown,Barbados,2005_cfu_caribbean_cup.txt
+Jamaica,Trinidad and Tobago,2,1,1,Bridgetown,Barbados,2005_cfu_caribbean_cup.txt
+Barbados,Jamaica,0,1,2,Bridgetown,Barbados,2005_cfu_caribbean_cup.txt
+Trinidad and Tobago,Cuba,1,2,2,Bridgetown,Barbados,2005_cfu_caribbean_cup.txt
+Barbados,Trinidad and Tobago,2,3,2,Bridgetown,Barbados,2005_cfu_caribbean_cup.txt
+Cuba,Jamaica,0,1,2,Bridgetown,Barbados,2005_cfu_caribbean_cup.txt
+Haiti,Martinique,1,0,1,Port of Spain,Trinidad and Tobago,2007_cfu_caribbean_cup.txt
+Trinidad and Tobago,Barbados,1,1,X,Port of Spain,Trinidad and Tobago,2007_cfu_caribbean_cup.txt
+Cuba,Guadeloupe,1,2,2,San Fernando,Trinidad and Tobago,2007_cfu_caribbean_cup.txt
+Haiti,Barbados,2,0,1,Port of Spain,Trinidad and Tobago,2007_cfu_caribbean_cup.txt
+Trinidad and Tobago,Martinique,5,1,1,Port of Spain,Trinidad and Tobago,2007_cfu_caribbean_cup.txt
+Guadeloupe,Guyana,3,4,2,San Fernando,Trinidad and Tobago,2007_cfu_caribbean_cup.txt
+Barbados,Martinique,2,3,2,Port of Spain,Trinidad and Tobago,2007_cfu_caribbean_cup.txt
+Trinidad and Tobago,Haiti,3,1,1,Port of Spain,Trinidad and Tobago,2007_cfu_caribbean_cup.txt
+Cuba,Guyana,0,0,X,San Fernando,Trinidad and Tobago,2007_cfu_caribbean_cup.txt
+Saint Vincent and the Grenadines,Guadeloupe,0,1,2,San Fernando,Trinidad and Tobago,2007_cfu_caribbean_cup.txt
+Guadeloupe,Haiti,1,3,2,Port of Spain,Trinidad and Tobago,2007_cfu_caribbean_cup.txt
+Trinidad and Tobago,Cuba,3,1,1,Port of Spain,Trinidad and Tobago,2007_cfu_caribbean_cup.txt
+Cuba,Guadeloupe,2,1,1,Port of Spain,Trinidad and Tobago,2007_cfu_caribbean_cup.txt
+Trinidad and Tobago,Haiti,1,2,2,Port of Spain,Trinidad and Tobago,2007_cfu_caribbean_cup.txt
+Jamaica,Barbados,2,1,1,Kingston,Jamaica,2008_cfu_caribbean_cup.txt
+Trinidad and Tobago,Grenada,1,2,2,Kingston,Jamaica,2008_cfu_caribbean_cup.txt
+Guadeloupe,Cuba,1,2,2,Montego Bay,Jamaica,2008_cfu_caribbean_cup.txt
+Haiti,Antigua and Barbuda,1,1,X,Montego Bay,Jamaica,2008_cfu_caribbean_cup.txt
+Barbados,Trinidad and Tobago,1,2,2,Montego Bay,Jamaica,2008_cfu_caribbean_cup.txt
+Jamaica,Grenada,4,0,1,Montego Bay,Jamaica,2008_cfu_caribbean_cup.txt
+Cuba,Antigua and Barbuda,3,0,1,Falmouth,Jamaica,2008_cfu_caribbean_cup.txt
+Haiti,Guadeloupe,2,3,2,Falmouth,Jamaica,2008_cfu_caribbean_cup.txt
+Grenada,Barbados,4,2,1,Falmouth,Jamaica,2008_cfu_caribbean_cup.txt
+Jamaica,Trinidad and Tobago,1,1,X,Falmouth,Jamaica,2008_cfu_caribbean_cup.txt
+Antigua and Barbuda,Guadeloupe,2,2,X,Montego Bay,Jamaica,2008_cfu_caribbean_cup.txt
+Cuba,Haiti,0,1,2,Montego Bay,Jamaica,2008_cfu_caribbean_cup.txt
+Cuba,Grenada,2,2,X,Kingston,Jamaica,2008_cfu_caribbean_cup.txt
+Jamaica,Guadeloupe,2,0,1,Kingston,Jamaica,2008_cfu_caribbean_cup.txt
+Cuba,Guadeloupe,0,0,X,Kingston,Jamaica,2008_cfu_caribbean_cup.txt
+Jamaica,Grenada,2,0,1,Kingston,Jamaica,2008_cfu_caribbean_cup.txt
+Martinique,Grenada,1,1,X,Fort-de-France,Martinique,2010_cfu_caribbean_cup.txt
+Trinidad and Tobago,Cuba,0,2,2,Fort-de-France,Martinique,2010_cfu_caribbean_cup.txt
+Guyana,Guadeloupe,1,1,X,Rivière-Pilote,Martinique,2010_cfu_caribbean_cup.txt
+Jamaica,Antigua and Barbuda,3,1,1,Rivière-Pilote,Martinique,2010_cfu_caribbean_cup.txt
+Grenada,Trinidad and Tobago,1,0,1,Fort-de-France,Martinique,2010_cfu_caribbean_cup.txt
+Martinique,Cuba,0,1,2,Fort-de-France,Martinique,2010_cfu_caribbean_cup.txt
+Antigua and Barbuda,Guyana,1,0,1,Rivière-Pilote,Martinique,2010_cfu_caribbean_cup.txt
+Guadeloupe,Jamaica,0,2,2,Rivière-Pilote,Martinique,2010_cfu_caribbean_cup.txt
+Cuba,Grenada,0,0,X,Fort-de-France,Martinique,2010_cfu_caribbean_cup.txt
+Martinique,Trinidad and Tobago,0,1,2,Fort-de-France,Martinique,2010_cfu_caribbean_cup.txt
+Guadeloupe,Antigua and Barbuda,1,0,1,Rivière-Pilote,Martinique,2010_cfu_caribbean_cup.txt
+Guyana,Jamaica,0,4,2,Rivière-Pilote,Martinique,2010_cfu_caribbean_cup.txt
+Cuba,Guadeloupe,1,2,2,Fort-de-France,Martinique,2010_cfu_caribbean_cup.txt
+Jamaica,Grenada,2,1,1,Fort-de-France,Martinique,2010_cfu_caribbean_cup.txt
+Grenada,Cuba,0,1,2,Fort-de-France,Martinique,2010_cfu_caribbean_cup.txt
+Guadeloupe,Jamaica,1,1,X,Fort-de-France,Martinique,2010_cfu_caribbean_cup.txt
+Antigua and Barbuda,Dominican Republic,1,2,2,St. John's,Antigua and Barbuda,2012_cfu_caribbean_cup.txt
+Haiti,Trinidad and Tobago,0,0,X,St. John's,Antigua and Barbuda,2012_cfu_caribbean_cup.txt
+Jamaica,French Guiana,1,2,2,North Sound,Antigua and Barbuda,2012_cfu_caribbean_cup.txt
+Martinique,Cuba,1,0,1,North Sound,Antigua and Barbuda,2012_cfu_caribbean_cup.txt
+Antigua and Barbuda,Trinidad and Tobago,2,0,1,St. John's,Antigua and Barbuda,2012_cfu_caribbean_cup.txt
+Dominican Republic,Haiti,1,2,2,St. John's,Antigua and Barbuda,2012_cfu_caribbean_cup.txt
+Cuba,French Guiana,2,1,1,North Sound,Antigua and Barbuda,2012_cfu_caribbean_cup.txt
+Jamaica,Martinique,0,0,X,North Sound,Antigua and Barbuda,2012_cfu_caribbean_cup.txt
+Antigua and Barbuda,Haiti,0,1,2,St. John's,Antigua and Barbuda,2012_cfu_caribbean_cup.txt
+Trinidad and Tobago,Dominican Republic,2,1,1,St. John's,Antigua and Barbuda,2012_cfu_caribbean_cup.txt
+French Guiana,Martinique,1,3,2,North Sound,Antigua and Barbuda,2012_cfu_caribbean_cup.txt
+Jamaica,Cuba,0,1,2,North Sound,Antigua and Barbuda,2012_cfu_caribbean_cup.txt
+Haiti,Cuba,0,1,2,St. John's,Antigua and Barbuda,2012_cfu_caribbean_cup.txt
+Martinique,Trinidad and Tobago,1,1,X,St. John's,Antigua and Barbuda,2012_cfu_caribbean_cup.txt
+Cuba,Trinidad and Tobago,1,0,1,St. John's,Antigua and Barbuda,2012_cfu_caribbean_cup.txt
+Haiti,Martinique,1,0,1,St. John's,Antigua and Barbuda,2012_cfu_caribbean_cup.txt
+Cuba,French Guiana,1,1,X,Montego Bay,Jamaica,2014_cfu_caribbean_cup.txt
+Curaçao,Trinidad and Tobago,2,3,2,Montego Bay,Jamaica,2014_cfu_caribbean_cup.txt
+Haiti,Antigua and Barbuda,2,2,X,Montego Bay,Jamaica,2014_cfu_caribbean_cup.txt
+Curaçao,Cuba,2,3,2,Montego Bay,Jamaica,2014_cfu_caribbean_cup.txt
+Trinidad and Tobago,French Guiana,4,2,1,Montego Bay,Jamaica,2014_cfu_caribbean_cup.txt
+Martinique,Haiti,0,3,2,Montego Bay,Jamaica,2014_cfu_caribbean_cup.txt
+French Guiana,Curaçao,4,1,1,Montego Bay,Jamaica,2014_cfu_caribbean_cup.txt
+Antigua and Barbuda,Martinique,0,2,2,Montego Bay,Jamaica,2014_cfu_caribbean_cup.txt
+Cuba,Haiti,1,2,2,Montego Bay,Jamaica,2014_cfu_caribbean_cup.txt
+Jamaica,Trinidad and Tobago,0,0,X,Montego Bay,Jamaica,2014_cfu_caribbean_cup.txt
+Jamaica,French Guiana,1,1,X,Fort-de-France,Martinique,2017_cfu_caribbean_cup.txt
+Martinique,Curaçao,1,2,2,Fort-de-France,Martinique,2017_cfu_caribbean_cup.txt
+Jamaica,Curaçao,1,2,2,Fort-de-France,Martinique,2017_cfu_caribbean_cup.txt
+Martinique,French Guiana,0,1,2,Fort-de-France,Martinique,2017_cfu_caribbean_cup.txt

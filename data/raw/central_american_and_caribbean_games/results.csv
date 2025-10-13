@@ -1,0 +1,64 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Cuba,Jamaica,3,1,1,Havana,Cuba,1930_central_american_and_caribbean_games.txt
+Costa Rica,Guatemala,8,1,1,Havana,Cuba,1930_central_american_and_caribbean_games.txt
+Honduras,Jamaica,5,4,1,Havana,Cuba,1930_central_american_and_caribbean_games.txt
+El Salvador,Guatemala,8,2,1,Havana,Cuba,1930_central_american_and_caribbean_games.txt
+Cuba,Honduras,7,0,1,Havana,Cuba,1930_central_american_and_caribbean_games.txt
+Costa Rica,El Salvador,9,2,1,Havana,Cuba,1930_central_american_and_caribbean_games.txt
+Cuba,Honduras,5,0,1,Havana,Cuba,1930_central_american_and_caribbean_games.txt
+Costa Rica,El Salvador,5,0,1,Havana,Cuba,1930_central_american_and_caribbean_games.txt
+El Salvador,Honduras,1,4,2,Havana,Cuba,1930_central_american_and_caribbean_games.txt
+Cuba,Costa Rica,2,1,1,Havana,Cuba,1930_central_american_and_caribbean_games.txt
+Cuba,El Salvador,5,2,1,Havana,Cuba,1930_central_american_and_caribbean_games.txt
+Costa Rica,Honduras,8,0,1,Havana,Cuba,1930_central_american_and_caribbean_games.txt
+El Salvador,Cuba,4,1,1,San Salvador,El Salvador,1935_central_american_and_caribbean_games.txt
+Costa Rica,Guatemala,4,3,1,San Salvador,El Salvador,1935_central_american_and_caribbean_games.txt
+Cuba,Honduras,3,0,1,San Salvador,El Salvador,1935_central_american_and_caribbean_games.txt
+El Salvador,Mexico,1,8,2,San Salvador,El Salvador,1935_central_american_and_caribbean_games.txt
+Cuba,Guatemala,2,1,1,San Salvador,El Salvador,1935_central_american_and_caribbean_games.txt
+El Salvador,Honduras,3,4,2,San Salvador,El Salvador,1935_central_american_and_caribbean_games.txt
+Mexico,Guatemala,5,1,1,San Salvador,El Salvador,1935_central_american_and_caribbean_games.txt
+Mexico,Cuba,6,1,1,San Salvador,El Salvador,1935_central_american_and_caribbean_games.txt
+El Salvador,Costa Rica,1,6,2,San Salvador,El Salvador,1935_central_american_and_caribbean_games.txt
+Honduras,Guatemala,0,0,X,San Salvador,El Salvador,1935_central_american_and_caribbean_games.txt
+Costa Rica,Cuba,2,1,1,San Salvador,El Salvador,1935_central_american_and_caribbean_games.txt
+Mexico,Honduras,8,2,1,San Salvador,El Salvador,1935_central_american_and_caribbean_games.txt
+Mexico,Costa Rica,2,0,1,San Salvador,El Salvador,1935_central_american_and_caribbean_games.txt
+Costa Rica,Honduras,6,0,1,San Salvador,El Salvador,1935_central_american_and_caribbean_games.txt
+El Salvador,Guatemala,6,1,1,San Salvador,El Salvador,1935_central_american_and_caribbean_games.txt
+Mexico,Colombia,3,1,1,Panama City,Panama,1938_central_american_and_caribbean_games.txt
+Costa Rica,El Salvador,7,0,1,Panama City,Panama,1938_central_american_and_caribbean_games.txt
+Panama,Venezuela,2,1,1,Panama City,Panama,1938_central_american_and_caribbean_games.txt
+Panama,Colombia,2,4,2,Panama City,Panama,1938_central_american_and_caribbean_games.txt
+Mexico,Venezuela,1,0,1,Panama City,Panama,1938_central_american_and_caribbean_games.txt
+Panama,Costa Rica,0,11,2,Panama City,Panama,1938_central_american_and_caribbean_games.txt
+El Salvador,Venezuela,3,2,1,Panama City,Panama,1938_central_american_and_caribbean_games.txt
+Colombia,Costa Rica,1,2,2,Panama City,Panama,1938_central_american_and_caribbean_games.txt
+Mexico,El Salvador,6,0,1,Panama City,Panama,1938_central_american_and_caribbean_games.txt
+Panama,Mexico,2,2,X,Panama City,Panama,1938_central_american_and_caribbean_games.txt
+Venezuela,Costa Rica,0,3,2,Panama City,Panama,1938_central_american_and_caribbean_games.txt
+Colombia,El Salvador,3,2,1,Panama City,Panama,1938_central_american_and_caribbean_games.txt
+Mexico,Costa Rica,2,1,1,Panama City,Panama,1938_central_american_and_caribbean_games.txt
+Venezuela,Colombia,2,1,1,Panama City,Panama,1938_central_american_and_caribbean_games.txt
+Panama,El Salvador,1,2,2,Panama City,Panama,1938_central_american_and_caribbean_games.txt
+Colombia,Curaçao,4,2,1,Barranquilla,Colombia,1946_central_american_and_caribbean_games.txt
+Panama,Guatemala,4,2,1,Barranquilla,Colombia,1946_central_american_and_caribbean_games.txt
+Costa Rica,Puerto Rico,12,0,1,Barranquilla,Colombia,1946_central_american_and_caribbean_games.txt
+Colombia,Venezuela,2,0,1,Barranquilla,Colombia,1946_central_american_and_caribbean_games.txt
+Curaçao,Guatemala,2,2,X,Barranquilla,Colombia,1946_central_american_and_caribbean_games.txt
+Panama,Puerto Rico,12,1,1,Barranquilla,Colombia,1946_central_american_and_caribbean_games.txt
+Costa Rica,Venezuela,4,2,1,Barranquilla,Colombia,1946_central_american_and_caribbean_games.txt
+Colombia,Guatemala,4,2,1,Barranquilla,Colombia,1946_central_american_and_caribbean_games.txt
+Curaçao,Puerto Rico,14,0,1,Barranquilla,Colombia,1946_central_american_and_caribbean_games.txt
+Colombia,Puerto Rico,4,1,1,Barranquilla,Colombia,1946_central_american_and_caribbean_games.txt
+Costa Rica,Guatemala,6,0,1,Barranquilla,Colombia,1946_central_american_and_caribbean_games.txt
+Panama,Venezuela,2,1,1,Barranquilla,Colombia,1946_central_american_and_caribbean_games.txt
+Panama,Curaçao,2,2,X,Barranquilla,Colombia,1946_central_american_and_caribbean_games.txt
+Venezuela,Guatemala,3,2,1,Barranquilla,Colombia,1946_central_american_and_caribbean_games.txt
+Colombia,Costa Rica,4,1,1,Barranquilla,Colombia,1946_central_american_and_caribbean_games.txt
+Curaçao,Venezuela,1,0,1,Barranquilla,Colombia,1946_central_american_and_caribbean_games.txt
+Guatemala,Puerto Rico,4,1,1,Barranquilla,Colombia,1946_central_american_and_caribbean_games.txt
+Colombia,Panama,2,1,1,Barranquilla,Colombia,1946_central_american_and_caribbean_games.txt
+Curaçao,Costa Rica,4,2,1,Barranquilla,Colombia,1946_central_american_and_caribbean_games.txt
+Venezuela,Puerto Rico,6,0,1,Barranquilla,Colombia,1946_central_american_and_caribbean_games.txt
+Panama,Costa Rica,2,0,1,Barranquilla,Colombia,1946_central_american_and_caribbean_games.txt

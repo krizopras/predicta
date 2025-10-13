@@ -1,0 +1,874 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Chile,Uruguay,0,4,2,Buenos Aires,Argentina,1916_copa_america.txt
+Argentina,Chile,6,1,1,Buenos Aires,Argentina,1916_copa_america.txt
+Brazil,Chile,1,1,X,Buenos Aires,Argentina,1916_copa_america.txt
+Argentina,Brazil,1,1,X,Buenos Aires,Argentina,1916_copa_america.txt
+Brazil,Uruguay,1,2,2,Buenos Aires,Argentina,1916_copa_america.txt
+Argentina,Uruguay,0,0,X,Avellaneda,Argentina,1916_copa_america.txt
+Uruguay,Chile,4,0,1,Montevideo,Uruguay,1917_copa_america.txt
+Argentina,Brazil,4,2,1,Montevideo,Uruguay,1917_copa_america.txt
+Argentina,Chile,1,0,1,Montevideo,Uruguay,1917_copa_america.txt
+Uruguay,Brazil,4,0,1,Montevideo,Uruguay,1917_copa_america.txt
+Brazil,Chile,5,0,1,Montevideo,Uruguay,1917_copa_america.txt
+Uruguay,Argentina,1,0,1,Montevideo,Uruguay,1917_copa_america.txt
+Brazil,Chile,6,0,1,Rio de Janeiro,Brazil,1919_copa_america.txt
+Argentina,Uruguay,2,3,2,Rio de Janeiro,Brazil,1919_copa_america.txt
+Chile,Uruguay,0,2,2,Rio de Janeiro,Brazil,1919_copa_america.txt
+Brazil,Argentina,3,1,1,Rio de Janeiro,Brazil,1919_copa_america.txt
+Argentina,Chile,4,1,1,Rio de Janeiro,Brazil,1919_copa_america.txt
+Brazil,Uruguay,2,2,X,Rio de Janeiro,Brazil,1919_copa_america.txt
+Brazil,Uruguay,1,0,1,Rio de Janeiro,Brazil,1919_copa_america.txt
+Chile,Brazil,0,1,2,Viña del Mar,Chile,1920_copa_america.txt
+Uruguay,Argentina,1,1,X,Viña del Mar,Chile,1920_copa_america.txt
+Brazil,Uruguay,0,6,2,Viña del Mar,Chile,1920_copa_america.txt
+Chile,Argentina,1,1,X,Viña del Mar,Chile,1920_copa_america.txt
+Argentina,Brazil,2,0,1,Viña del Mar,Chile,1920_copa_america.txt
+Chile,Uruguay,1,2,2,Viña del Mar,Chile,1920_copa_america.txt
+Argentina,Brazil,1,0,1,Buenos Aires,Argentina,1921_copa_america.txt
+Paraguay,Uruguay,2,1,1,Buenos Aires,Argentina,1921_copa_america.txt
+Brazil,Paraguay,3,0,1,Buenos Aires,Argentina,1921_copa_america.txt
+Argentina,Paraguay,3,0,1,Buenos Aires,Argentina,1921_copa_america.txt
+Brazil,Uruguay,1,2,2,Buenos Aires,Argentina,1921_copa_america.txt
+Argentina,Uruguay,1,0,1,Buenos Aires,Argentina,1921_copa_america.txt
+Brazil,Chile,1,1,X,Rio de Janeiro,Brazil,1922_copa_america.txt
+Chile,Uruguay,0,2,2,Rio de Janeiro,Brazil,1922_copa_america.txt
+Brazil,Paraguay,1,1,X,Rio de Janeiro,Brazil,1922_copa_america.txt
+Argentina,Chile,4,0,1,Rio de Janeiro,Brazil,1922_copa_america.txt
+Brazil,Uruguay,0,0,X,Rio de Janeiro,Brazil,1922_copa_america.txt
+Chile,Paraguay,0,3,2,Rio de Janeiro,Brazil,1922_copa_america.txt
+Argentina,Uruguay,0,1,2,Rio de Janeiro,Brazil,1922_copa_america.txt
+Paraguay,Uruguay,1,0,1,Rio de Janeiro,Brazil,1922_copa_america.txt
+Brazil,Argentina,2,0,1,Rio de Janeiro,Brazil,1922_copa_america.txt
+Argentina,Paraguay,2,0,1,Rio de Janeiro,Brazil,1922_copa_america.txt
+Brazil,Paraguay,3,0,1,Rio de Janeiro,Brazil,1922_copa_america.txt
+Argentina,Paraguay,4,3,1,Montevideo,Uruguay,1923_copa_america.txt
+Uruguay,Paraguay,2,0,1,Montevideo,Uruguay,1923_copa_america.txt
+Brazil,Paraguay,0,1,2,Montevideo,Uruguay,1923_copa_america.txt
+Argentina,Brazil,2,1,1,Montevideo,Uruguay,1923_copa_america.txt
+Uruguay,Brazil,2,1,1,Montevideo,Uruguay,1923_copa_america.txt
+Uruguay,Argentina,2,0,1,Montevideo,Uruguay,1923_copa_america.txt
+Argentina,Paraguay,0,0,X,Montevideo,Uruguay,1924_copa_america.txt
+Uruguay,Chile,5,0,1,Montevideo,Uruguay,1924_copa_america.txt
+Argentina,Chile,2,0,1,Montevideo,Uruguay,1924_copa_america.txt
+Uruguay,Paraguay,3,1,1,Montevideo,Uruguay,1924_copa_america.txt
+Chile,Paraguay,1,3,2,Montevideo,Uruguay,1924_copa_america.txt
+Uruguay,Argentina,0,0,X,Montevideo,Uruguay,1924_copa_america.txt
+Argentina,Paraguay,2,0,1,Buenos Aires,Argentina,1925_copa_america.txt
+Brazil,Paraguay,5,2,1,Buenos Aires,Argentina,1925_copa_america.txt
+Argentina,Brazil,4,1,1,Buenos Aires,Argentina,1925_copa_america.txt
+Brazil,Paraguay,3,1,1,Buenos Aires,Argentina,1925_copa_america.txt
+Argentina,Paraguay,3,1,1,Buenos Aires,Argentina,1925_copa_america.txt
+Argentina,Brazil,2,2,X,Buenos Aires,Argentina,1925_copa_america.txt
+Chile,Bolivia,7,1,1,Santiago,Chile,1926_copa_america.txt
+Argentina,Bolivia,5,0,1,Santiago,Chile,1926_copa_america.txt
+Chile,Uruguay,1,3,2,Santiago,Chile,1926_copa_america.txt
+Argentina,Paraguay,8,0,1,Santiago,Chile,1926_copa_america.txt
+Bolivia,Paraguay,1,6,2,Santiago,Chile,1926_copa_america.txt
+Argentina,Uruguay,0,2,2,Santiago,Chile,1926_copa_america.txt
+Bolivia,Uruguay,0,6,2,Santiago,Chile,1926_copa_america.txt
+Chile,Argentina,1,1,X,Santiago,Chile,1926_copa_america.txt
+Paraguay,Uruguay,1,6,2,Santiago,Chile,1926_copa_america.txt
+Chile,Paraguay,5,1,1,Santiago,Chile,1926_copa_america.txt
+Argentina,Bolivia,7,1,1,Lima,Peru,1927_copa_america.txt
+Peru,Uruguay,0,4,2,Lima,Peru,1927_copa_america.txt
+Bolivia,Uruguay,0,9,2,Lima,Peru,1927_copa_america.txt
+Peru,Bolivia,3,2,1,Lima,Peru,1927_copa_america.txt
+Argentina,Uruguay,3,2,1,Lima,Peru,1927_copa_america.txt
+Peru,Argentina,1,5,2,Lima,Peru,1927_copa_america.txt
+Paraguay,Uruguay,3,0,1,Buenos Aires,Argentina,1929_copa_america.txt
+Argentina,Peru,3,0,1,Buenos Aires,Argentina,1929_copa_america.txt
+Argentina,Paraguay,4,1,1,Buenos Aires,Argentina,1929_copa_america.txt
+Peru,Uruguay,1,4,2,Buenos Aires,Argentina,1929_copa_america.txt
+Paraguay,Peru,5,0,1,Avellaneda,Argentina,1929_copa_america.txt
+Argentina,Uruguay,2,0,1,Buenos Aires,Argentina,1929_copa_america.txt
+Argentina,Chile,4,1,1,Lima,Peru,1935_copa_america.txt
+Peru,Uruguay,0,1,2,Lima,Peru,1935_copa_america.txt
+Chile,Uruguay,1,2,2,Lima,Peru,1935_copa_america.txt
+Peru,Argentina,1,4,2,Lima,Peru,1935_copa_america.txt
+Peru,Chile,1,0,1,Lima,Peru,1935_copa_america.txt
+Argentina,Uruguay,0,3,2,Lima,Peru,1935_copa_america.txt
+Brazil,Peru,3,2,1,Buenos Aires,Argentina,1936_copa_america.txt
+Argentina,Chile,2,1,1,Buenos Aires,Argentina,1936_copa_america.txt
+Paraguay,Uruguay,4,2,1,Buenos Aires,Argentina,1937_copa_america.txt
+Brazil,Chile,6,4,1,Buenos Aires,Argentina,1937_copa_america.txt
+Peru,Uruguay,2,4,2,Buenos Aires,Argentina,1937_copa_america.txt
+Argentina,Paraguay,6,1,1,Buenos Aires,Argentina,1937_copa_america.txt
+Chile,Uruguay,3,0,1,Buenos Aires,Argentina,1937_copa_america.txt
+Brazil,Paraguay,5,0,1,Buenos Aires,Argentina,1937_copa_america.txt
+Argentina,Peru,1,0,1,Buenos Aires,Argentina,1937_copa_america.txt
+Chile,Paraguay,2,3,2,Buenos Aires,Argentina,1937_copa_america.txt
+Brazil,Uruguay,3,2,1,Buenos Aires,Argentina,1937_copa_america.txt
+Chile,Peru,2,2,X,Buenos Aires,Argentina,1937_copa_america.txt
+Argentina,Uruguay,2,3,2,Buenos Aires,Argentina,1937_copa_america.txt
+Paraguay,Peru,0,1,2,Buenos Aires,Argentina,1937_copa_america.txt
+Argentina,Brazil,1,0,1,Buenos Aires,Argentina,1937_copa_america.txt
+Argentina,Brazil,2,0,1,Buenos Aires,Argentina,1937_copa_america.txt
+Chile,Paraguay,1,5,2,Lima,Peru,1939_copa_america.txt
+Peru,Ecuador,5,2,1,Lima,Peru,1939_copa_america.txt
+Ecuador,Uruguay,0,6,2,Lima,Peru,1939_copa_america.txt
+Peru,Chile,3,1,1,Lima,Peru,1939_copa_america.txt
+Chile,Uruguay,2,3,2,Lima,Peru,1939_copa_america.txt
+Peru,Paraguay,3,0,1,Lima,Peru,1939_copa_america.txt
+Chile,Ecuador,4,1,1,Lima,Peru,1939_copa_america.txt
+Paraguay,Uruguay,1,3,2,Lima,Peru,1939_copa_america.txt
+Ecuador,Paraguay,1,3,2,Lima,Peru,1939_copa_america.txt
+Peru,Uruguay,2,1,1,Lima,Peru,1939_copa_america.txt
+Chile,Ecuador,5,0,1,Santiago,Chile,1941_copa_america.txt
+Chile,Peru,1,0,1,Santiago,Chile,1941_copa_america.txt
+Ecuador,Uruguay,0,6,2,Santiago,Chile,1941_copa_america.txt
+Argentina,Peru,2,1,1,Santiago,Chile,1941_copa_america.txt
+Argentina,Ecuador,6,1,1,Santiago,Chile,1941_copa_america.txt
+Chile,Uruguay,0,2,2,Santiago,Chile,1941_copa_america.txt
+Argentina,Uruguay,1,0,1,Santiago,Chile,1941_copa_america.txt
+Ecuador,Peru,0,4,2,Santiago,Chile,1941_copa_america.txt
+Peru,Uruguay,0,2,2,Santiago,Chile,1941_copa_america.txt
+Chile,Argentina,0,1,2,Santiago,Chile,1941_copa_america.txt
+Uruguay,Chile,6,1,1,Montevideo,Uruguay,1942_copa_america.txt
+Argentina,Paraguay,4,3,1,Montevideo,Uruguay,1942_copa_america.txt
+Brazil,Chile,6,1,1,Montevideo,Uruguay,1942_copa_america.txt
+Argentina,Brazil,2,1,1,Montevideo,Uruguay,1942_copa_america.txt
+Paraguay,Peru,1,1,X,Montevideo,Uruguay,1942_copa_america.txt
+Uruguay,Ecuador,7,0,1,Montevideo,Uruguay,1942_copa_america.txt
+Brazil,Peru,2,1,1,Montevideo,Uruguay,1942_copa_america.txt
+Argentina,Ecuador,12,0,1,Montevideo,Uruguay,1942_copa_america.txt
+Chile,Paraguay,0,2,2,Montevideo,Uruguay,1942_copa_america.txt
+Uruguay,Brazil,1,0,1,Montevideo,Uruguay,1942_copa_america.txt
+Argentina,Peru,3,1,1,Montevideo,Uruguay,1942_copa_america.txt
+Ecuador,Paraguay,1,3,2,Montevideo,Uruguay,1942_copa_america.txt
+Ecuador,Peru,1,2,2,Montevideo,Uruguay,1942_copa_america.txt
+Uruguay,Paraguay,3,1,1,Montevideo,Uruguay,1942_copa_america.txt
+Argentina,Chile,0,0,X,Montevideo,Uruguay,1942_copa_america.txt
+Brazil,Ecuador,5,1,1,Montevideo,Uruguay,1942_copa_america.txt
+Uruguay,Peru,3,0,1,Montevideo,Uruguay,1942_copa_america.txt
+Brazil,Paraguay,1,1,X,Montevideo,Uruguay,1942_copa_america.txt
+Chile,Ecuador,2,1,1,Montevideo,Uruguay,1942_copa_america.txt
+Chile,Peru,0,0,X,Montevideo,Uruguay,1942_copa_america.txt
+Uruguay,Argentina,1,0,1,Montevideo,Uruguay,1942_copa_america.txt
+Chile,Ecuador,6,3,1,Santiago,Chile,1945_copa_america.txt
+Argentina,Bolivia,4,0,1,Santiago,Chile,1945_copa_america.txt
+Brazil,Colombia,3,0,1,Santiago,Chile,1945_copa_america.txt
+Chile,Bolivia,5,0,1,Santiago,Chile,1945_copa_america.txt
+Ecuador,Uruguay,1,5,2,Santiago,Chile,1945_copa_america.txt
+Bolivia,Brazil,0,2,2,Santiago,Chile,1945_copa_america.txt
+Colombia,Uruguay,0,7,2,Santiago,Chile,1945_copa_america.txt
+Argentina,Ecuador,4,2,1,Santiago,Chile,1945_copa_america.txt
+Chile,Colombia,2,0,1,Santiago,Chile,1945_copa_america.txt
+Argentina,Colombia,9,1,1,Santiago,Chile,1945_copa_america.txt
+Brazil,Uruguay,3,0,1,Santiago,Chile,1945_copa_america.txt
+Bolivia,Ecuador,0,0,X,Santiago,Chile,1945_copa_america.txt
+Chile,Argentina,1,1,X,Santiago,Chile,1945_copa_america.txt
+Argentina,Brazil,3,1,1,Santiago,Chile,1945_copa_america.txt
+Bolivia,Uruguay,0,2,2,Santiago,Chile,1945_copa_america.txt
+Chile,Uruguay,1,0,1,Santiago,Chile,1945_copa_america.txt
+Colombia,Ecuador,3,1,1,Santiago,Chile,1945_copa_america.txt
+Bolivia,Colombia,3,3,X,Santiago,Chile,1945_copa_america.txt
+Brazil,Ecuador,9,2,1,Santiago,Chile,1945_copa_america.txt
+Argentina,Uruguay,1,0,1,Santiago,Chile,1945_copa_america.txt
+Chile,Brazil,0,1,2,Santiago,Chile,1945_copa_america.txt
+Argentina,Paraguay,2,0,1,Buenos Aires,Argentina,1946_copa_america.txt
+Bolivia,Brazil,0,3,2,Buenos Aires,Argentina,1946_copa_america.txt
+Chile,Uruguay,0,1,2,Buenos Aires,Argentina,1946_copa_america.txt
+Argentina,Bolivia,7,1,1,Buenos Aires,Argentina,1946_copa_america.txt
+Chile,Paraguay,2,1,1,Buenos Aires,Argentina,1946_copa_america.txt
+Brazil,Uruguay,4,3,1,Buenos Aires,Argentina,1946_copa_america.txt
+Argentina,Chile,3,1,1,Buenos Aires,Argentina,1946_copa_america.txt
+Bolivia,Paraguay,2,4,2,Buenos Aires,Argentina,1946_copa_america.txt
+Bolivia,Uruguay,0,5,2,Avellaneda,Argentina,1946_copa_america.txt
+Brazil,Paraguay,1,1,X,Avellaneda,Argentina,1946_copa_america.txt
+Argentina,Uruguay,3,1,1,Buenos Aires,Argentina,1946_copa_america.txt
+Brazil,Chile,5,1,1,Buenos Aires,Argentina,1946_copa_america.txt
+Bolivia,Chile,1,4,2,Buenos Aires,Argentina,1946_copa_america.txt
+Paraguay,Uruguay,2,1,1,Buenos Aires,Argentina,1946_copa_america.txt
+Argentina,Brazil,2,0,1,Buenos Aires,Argentina,1946_copa_america.txt
+Ecuador,Bolivia,2,2,X,Guayaquil,Ecuador,1947_copa_america.txt
+Argentina,Paraguay,6,0,1,Guayaquil,Ecuador,1947_copa_america.txt
+Colombia,Uruguay,0,2,2,Guayaquil,Ecuador,1947_copa_america.txt
+Argentina,Bolivia,7,0,1,Guayaquil,Ecuador,1947_copa_america.txt
+Ecuador,Colombia,0,0,X,Guayaquil,Ecuador,1947_copa_america.txt
+Chile,Uruguay,0,6,2,Guayaquil,Ecuador,1947_copa_america.txt
+Paraguay,Peru,2,2,X,Guayaquil,Ecuador,1947_copa_america.txt
+Bolivia,Uruguay,0,3,2,Guayaquil,Ecuador,1947_copa_america.txt
+Chile,Peru,2,1,1,Guayaquil,Ecuador,1947_copa_america.txt
+Argentina,Peru,3,2,1,Guayaquil,Ecuador,1947_copa_america.txt
+Ecuador,Chile,0,3,2,Guayaquil,Ecuador,1947_copa_america.txt
+Bolivia,Colombia,0,0,X,Guayaquil,Ecuador,1947_copa_america.txt
+Paraguay,Uruguay,4,2,1,Guayaquil,Ecuador,1947_copa_america.txt
+Argentina,Chile,1,1,X,Guayaquil,Ecuador,1947_copa_america.txt
+Ecuador,Uruguay,1,6,2,Guayaquil,Ecuador,1947_copa_america.txt
+Argentina,Colombia,6,0,1,Guayaquil,Ecuador,1947_copa_america.txt
+Bolivia,Paraguay,1,3,2,Guayaquil,Ecuador,1947_copa_america.txt
+Colombia,Paraguay,0,2,2,Guayaquil,Ecuador,1947_copa_america.txt
+Ecuador,Peru,0,0,X,Guayaquil,Ecuador,1947_copa_america.txt
+Chile,Paraguay,0,1,2,Guayaquil,Ecuador,1947_copa_america.txt
+Colombia,Peru,1,5,2,Guayaquil,Ecuador,1947_copa_america.txt
+Ecuador,Argentina,0,2,2,Guayaquil,Ecuador,1947_copa_america.txt
+Peru,Uruguay,0,1,2,Guayaquil,Ecuador,1947_copa_america.txt
+Bolivia,Peru,0,2,2,Guayaquil,Ecuador,1947_copa_america.txt
+Argentina,Uruguay,3,1,1,Guayaquil,Ecuador,1947_copa_america.txt
+Chile,Colombia,4,1,1,Guayaquil,Ecuador,1947_copa_america.txt
+Ecuador,Paraguay,0,4,2,Guayaquil,Ecuador,1947_copa_america.txt
+Bolivia,Chile,3,4,2,Guayaquil,Ecuador,1947_copa_america.txt
+Brazil,Ecuador,9,1,1,Rio de Janeiro,Brazil,1949_copa_america.txt
+Bolivia,Chile,3,2,1,São Paulo,Brazil,1949_copa_america.txt
+Colombia,Paraguay,0,3,2,São Paulo,Brazil,1949_copa_america.txt
+Brazil,Bolivia,10,1,1,São Paulo,Brazil,1949_copa_america.txt
+Colombia,Peru,0,4,2,Rio de Janeiro,Brazil,1949_copa_america.txt
+Ecuador,Paraguay,0,1,2,Rio de Janeiro,Brazil,1949_copa_america.txt
+Brazil,Chile,2,1,1,São Paulo,Brazil,1949_copa_america.txt
+Ecuador,Uruguay,2,3,2,Rio de Janeiro,Brazil,1949_copa_america.txt
+Paraguay,Peru,3,1,1,Rio de Janeiro,Brazil,1949_copa_america.txt
+Bolivia,Uruguay,3,2,1,Rio de Janeiro,Brazil,1949_copa_america.txt
+Brazil,Colombia,5,0,1,São Paulo,Brazil,1949_copa_america.txt
+Chile,Ecuador,1,0,1,São Paulo,Brazil,1949_copa_america.txt
+Chile,Colombia,1,1,X,Rio de Janeiro,Brazil,1949_copa_america.txt
+Ecuador,Peru,0,4,2,Rio de Janeiro,Brazil,1949_copa_america.txt
+Paraguay,Uruguay,1,2,2,São Paulo,Brazil,1949_copa_america.txt
+Brazil,Peru,7,1,1,Rio de Janeiro,Brazil,1949_copa_america.txt
+Bolivia,Ecuador,2,0,1,São Paulo,Brazil,1949_copa_america.txt
+Uruguay,Colombia,2,2,X,São Paulo,Brazil,1949_copa_america.txt
+Bolivia,Peru,0,3,2,Santos,Brazil,1949_copa_america.txt
+Chile,Paraguay,2,4,2,São Paulo,Brazil,1949_copa_america.txt
+Bolivia,Paraguay,0,7,2,Rio de Janeiro,Brazil,1949_copa_america.txt
+Brazil,Uruguay,5,1,1,Rio de Janeiro,Brazil,1949_copa_america.txt
+Chile,Peru,0,3,2,São Paulo,Brazil,1949_copa_america.txt
+Colombia,Ecuador,1,4,2,Rio de Janeiro,Brazil,1949_copa_america.txt
+Peru,Uruguay,4,3,1,Rio de Janeiro,Brazil,1949_copa_america.txt
+Bolivia,Colombia,4,0,1,Rio de Janeiro,Brazil,1949_copa_america.txt
+Brazil,Paraguay,1,2,2,Rio de Janeiro,Brazil,1949_copa_america.txt
+Chile,Uruguay,3,1,1,Belo Horizonte,Brazil,1949_copa_america.txt
+Brazil,Paraguay,7,0,1,Rio de Janeiro,Brazil,1949_copa_america.txt
+Peru,Bolivia,0,1,2,Lima,Peru,1953_copa_america.txt
+Bolivia,Uruguay,0,2,2,Lima,Peru,1953_copa_america.txt
+Chile,Paraguay,0,3,2,Lima,Peru,1953_copa_america.txt
+Peru,Ecuador,1,0,1,Lima,Peru,1953_copa_america.txt
+Bolivia,Brazil,1,8,2,Lima,Peru,1953_copa_america.txt
+Chile,Uruguay,3,2,1,Lima,Peru,1953_copa_america.txt
+Ecuador,Paraguay,0,0,X,Lima,Peru,1953_copa_america.txt
+Peru,Chile,0,0,X,Lima,Peru,1953_copa_america.txt
+Bolivia,Ecuador,1,1,X,Lima,Peru,1953_copa_america.txt
+Peru,Paraguay,2,2,X,Lima,Peru,1953_copa_america.txt
+Brazil,Ecuador,2,0,1,Lima,Peru,1953_copa_america.txt
+Paraguay,Uruguay,2,2,X,Lima,Peru,1953_copa_america.txt
+Brazil,Uruguay,1,0,1,Lima,Peru,1953_copa_america.txt
+Bolivia,Paraguay,1,2,2,Lima,Peru,1953_copa_america.txt
+Chile,Ecuador,3,0,1,Lima,Peru,1953_copa_america.txt
+Peru,Brazil,1,0,1,Lima,Peru,1953_copa_america.txt
+Brazil,Chile,3,2,1,Lima,Peru,1953_copa_america.txt
+Ecuador,Uruguay,0,6,2,Lima,Peru,1953_copa_america.txt
+Brazil,Paraguay,1,2,2,Lima,Peru,1953_copa_america.txt
+Bolivia,Chile,2,2,X,Lima,Peru,1953_copa_america.txt
+Peru,Uruguay,0,3,2,Lima,Peru,1953_copa_america.txt
+Brazil,Paraguay,2,3,2,Lima,Peru,1953_copa_america.txt
+Chile,Ecuador,7,1,1,Santiago,Chile,1955_copa_america.txt
+Argentina,Paraguay,5,3,1,Santiago,Chile,1955_copa_america.txt
+Chile,Peru,5,4,1,Santiago,Chile,1955_copa_america.txt
+Argentina,Ecuador,4,0,1,Santiago,Chile,1955_copa_america.txt
+Paraguay,Uruguay,1,3,2,Santiago,Chile,1955_copa_america.txt
+Chile,Uruguay,2,2,X,Santiago,Chile,1955_copa_america.txt
+Ecuador,Peru,2,4,2,Santiago,Chile,1955_copa_america.txt
+Argentina,Peru,2,2,X,Santiago,Chile,1955_copa_america.txt
+Ecuador,Paraguay,0,2,2,Santiago,Chile,1955_copa_america.txt
+Chile,Paraguay,5,0,1,Santiago,Chile,1955_copa_america.txt
+Ecuador,Uruguay,1,5,2,Santiago,Chile,1955_copa_america.txt
+Paraguay,Peru,1,1,X,Santiago,Chile,1955_copa_america.txt
+Argentina,Uruguay,6,1,1,Santiago,Chile,1955_copa_america.txt
+Chile,Argentina,0,1,2,Santiago,Chile,1955_copa_america.txt
+Peru,Uruguay,2,1,1,Santiago,Chile,1955_copa_america.txt
+Uruguay,Paraguay,4,2,1,Montevideo,Uruguay,1956_copa_america.txt
+Argentina,Peru,2,1,1,Montevideo,Uruguay,1956_copa_america.txt
+Brazil,Chile,1,4,2,Montevideo,Uruguay,1956_copa_america.txt
+Uruguay,Peru,2,0,1,Montevideo,Uruguay,1956_copa_america.txt
+Argentina,Chile,2,0,1,Montevideo,Uruguay,1956_copa_america.txt
+Brazil,Paraguay,0,0,X,Montevideo,Uruguay,1956_copa_america.txt
+Argentina,Paraguay,1,0,1,Montevideo,Uruguay,1956_copa_america.txt
+Brazil,Peru,2,1,1,Montevideo,Uruguay,1956_copa_america.txt
+Argentina,Brazil,0,1,2,Montevideo,Uruguay,1956_copa_america.txt
+Paraguay,Peru,1,1,X,Montevideo,Uruguay,1956_copa_america.txt
+Uruguay,Chile,2,1,1,Montevideo,Uruguay,1956_copa_america.txt
+Chile,Peru,4,3,1,Montevideo,Uruguay,1956_copa_america.txt
+Uruguay,Brazil,0,0,X,Montevideo,Uruguay,1956_copa_america.txt
+Chile,Paraguay,2,0,1,Montevideo,Uruguay,1956_copa_america.txt
+Uruguay,Argentina,1,0,1,Montevideo,Uruguay,1956_copa_america.txt
+Ecuador,Uruguay,2,5,2,Lima,Peru,1957_copa_america.txt
+Peru,Ecuador,2,1,1,Lima,Peru,1957_copa_america.txt
+Argentina,Colombia,8,2,1,Lima,Peru,1957_copa_america.txt
+Brazil,Chile,4,2,1,Lima,Peru,1957_copa_america.txt
+Peru,Chile,1,0,1,Lima,Peru,1957_copa_america.txt
+Argentina,Ecuador,3,0,1,Lima,Peru,1957_copa_america.txt
+Colombia,Uruguay,1,0,1,Lima,Peru,1957_copa_america.txt
+Argentina,Uruguay,4,0,1,Lima,Peru,1957_copa_america.txt
+Brazil,Ecuador,7,1,1,Lima,Peru,1957_copa_america.txt
+Chile,Colombia,3,2,1,Lima,Peru,1957_copa_america.txt
+Peru,Uruguay,3,5,2,Lima,Peru,1957_copa_america.txt
+Brazil,Colombia,9,0,1,Lima,Peru,1957_copa_america.txt
+Chile,Ecuador,2,2,X,Lima,Peru,1957_copa_america.txt
+Peru,Colombia,4,1,1,Lima,Peru,1957_copa_america.txt
+Argentina,Chile,6,2,1,Lima,Peru,1957_copa_america.txt
+Brazil,Uruguay,2,3,2,Lima,Peru,1957_copa_america.txt
+Peru,Brazil,0,1,2,Lima,Peru,1957_copa_america.txt
+Chile,Uruguay,0,2,2,Lima,Peru,1957_copa_america.txt
+Colombia,Ecuador,4,1,1,Lima,Peru,1957_copa_america.txt
+Argentina,Brazil,3,0,1,Lima,Peru,1957_copa_america.txt
+Peru,Argentina,2,1,1,Lima,Peru,1957_copa_america.txt
+Argentina,Chile,6,1,1,Buenos Aires,Argentina,1959_copa_america.txt
+Bolivia,Uruguay,0,7,2,Buenos Aires,Argentina,1959_copa_america.txt
+Brazil,Peru,2,2,X,Buenos Aires,Argentina,1959_copa_america.txt
+Argentina,Bolivia,2,0,1,Buenos Aires,Argentina,1959_copa_america.txt
+Chile,Paraguay,1,2,2,Buenos Aires,Argentina,1959_copa_america.txt
+Peru,Uruguay,5,3,1,Buenos Aires,Argentina,1959_copa_america.txt
+Bolivia,Paraguay,0,5,2,Buenos Aires,Argentina,1959_copa_america.txt
+Brazil,Chile,3,0,1,Buenos Aires,Argentina,1959_copa_america.txt
+Argentina,Peru,3,1,1,Buenos Aires,Argentina,1959_copa_america.txt
+Paraguay,Uruguay,1,3,2,Buenos Aires,Argentina,1959_copa_america.txt
+Bolivia,Brazil,2,4,2,Buenos Aires,Argentina,1959_copa_america.txt
+Chile,Peru,1,1,X,Buenos Aires,Argentina,1959_copa_america.txt
+Argentina,Paraguay,3,1,1,Buenos Aires,Argentina,1959_copa_america.txt
+Bolivia,Chile,2,5,2,Buenos Aires,Argentina,1959_copa_america.txt
+Brazil,Uruguay,3,1,1,Buenos Aires,Argentina,1959_copa_america.txt
+Bolivia,Peru,0,0,X,Buenos Aires,Argentina,1959_copa_america.txt
+Brazil,Paraguay,4,1,1,Buenos Aires,Argentina,1959_copa_america.txt
+Argentina,Uruguay,4,1,1,Buenos Aires,Argentina,1959_copa_america.txt
+Chile,Uruguay,1,0,1,Buenos Aires,Argentina,1959_copa_america.txt
+Paraguay,Peru,2,1,1,Buenos Aires,Argentina,1959_copa_america.txt
+Argentina,Brazil,1,1,X,Buenos Aires,Argentina,1959_copa_america.txt
+Brazil,Paraguay,3,2,1,Guayaquil,Ecuador,1959_copa_america.txt
+Ecuador,Uruguay,0,4,2,Guayaquil,Ecuador,1959_copa_america.txt
+Argentina,Paraguay,4,2,1,Guayaquil,Ecuador,1959_copa_america.txt
+Brazil,Uruguay,0,3,2,Guayaquil,Ecuador,1959_copa_america.txt
+Ecuador,Argentina,1,1,X,Guayaquil,Ecuador,1959_copa_america.txt
+Argentina,Uruguay,0,5,2,Guayaquil,Ecuador,1959_copa_america.txt
+Ecuador,Brazil,1,3,2,Guayaquil,Ecuador,1959_copa_america.txt
+Argentina,Brazil,4,1,1,Guayaquil,Ecuador,1959_copa_america.txt
+Paraguay,Uruguay,1,1,X,Guayaquil,Ecuador,1959_copa_america.txt
+Ecuador,Paraguay,3,1,1,Guayaquil,Ecuador,1959_copa_america.txt
+Argentina,Colombia,4,2,1,Cochabamba,Bolivia,1963_copa_america.txt
+Bolivia,Ecuador,4,4,X,La Paz,Bolivia,1963_copa_america.txt
+Brazil,Peru,1,0,1,Cochabamba,Bolivia,1963_copa_america.txt
+Argentina,Peru,1,2,2,Cochabamba,Bolivia,1963_copa_america.txt
+Brazil,Colombia,5,1,1,La Paz,Bolivia,1963_copa_america.txt
+Ecuador,Paraguay,1,3,2,La Paz,Bolivia,1963_copa_america.txt
+Bolivia,Colombia,2,1,1,Cochabamba,Bolivia,1963_copa_america.txt
+Brazil,Paraguay,0,2,2,La Paz,Bolivia,1963_copa_america.txt
+Ecuador,Peru,1,2,2,La Paz,Bolivia,1963_copa_america.txt
+Argentina,Ecuador,4,2,1,Cochabamba,Bolivia,1963_copa_america.txt
+Colombia,Paraguay,2,3,2,Cochabamba,Bolivia,1963_copa_america.txt
+Bolivia,Peru,3,2,1,La Paz,Bolivia,1963_copa_america.txt
+Argentina,Brazil,3,0,1,La Paz,Bolivia,1963_copa_america.txt
+Bolivia,Paraguay,2,0,1,Cochabamba,Bolivia,1963_copa_america.txt
+Colombia,Peru,1,1,X,La Paz,Bolivia,1963_copa_america.txt
+Brazil,Ecuador,2,2,X,Cochabamba,Bolivia,1963_copa_america.txt
+Paraguay,Peru,4,1,1,Cochabamba,Bolivia,1963_copa_america.txt
+Bolivia,Argentina,3,2,1,La Paz,Bolivia,1963_copa_america.txt
+Argentina,Paraguay,1,1,X,La Paz,Bolivia,1963_copa_america.txt
+Bolivia,Brazil,5,4,1,Cochabamba,Bolivia,1963_copa_america.txt
+Colombia,Ecuador,3,4,2,La Paz,Bolivia,1963_copa_america.txt
+Chile,Colombia,5,2,1,Santiago,Chile,1966_copa_america.txt
+Colombia,Chile,0,0,X,Bogotá,Colombia,1966_copa_america.txt
+Ecuador,Paraguay,2,2,X,Guayaquil,Ecuador,1966_copa_america.txt
+Paraguay,Ecuador,3,1,1,Asunción,Paraguay,1966_copa_america.txt
+Uruguay,Bolivia,4,0,1,Montevideo,Uruguay,1967_copa_america.txt
+Argentina,Paraguay,4,1,1,Montevideo,Uruguay,1967_copa_america.txt
+Chile,Venezuela,2,0,1,Montevideo,Uruguay,1967_copa_america.txt
+Uruguay,Venezuela,4,0,1,Montevideo,Uruguay,1967_copa_america.txt
+Bolivia,Argentina,0,1,2,Montevideo,Uruguay,1967_copa_america.txt
+Chile,Paraguay,4,2,1,Montevideo,Uruguay,1967_copa_america.txt
+Argentina,Venezuela,5,1,1,Montevideo,Uruguay,1967_copa_america.txt
+Paraguay,Bolivia,1,0,1,Montevideo,Uruguay,1967_copa_america.txt
+Uruguay,Chile,2,2,X,Montevideo,Uruguay,1967_copa_america.txt
+Argentina,Chile,2,0,1,Montevideo,Uruguay,1967_copa_america.txt
+Bolivia,Venezuela,0,3,2,Montevideo,Uruguay,1967_copa_america.txt
+Uruguay,Paraguay,2,0,1,Montevideo,Uruguay,1967_copa_america.txt
+Bolivia,Chile,0,0,X,Montevideo,Uruguay,1967_copa_america.txt
+Venezuela,Paraguay,3,5,2,Montevideo,Uruguay,1967_copa_america.txt
+Uruguay,Argentina,1,0,1,Montevideo,Uruguay,1967_copa_america.txt
+Chile,Peru,1,1,X,Santiago,Chile,1975_copa_america.txt
+Bolivia,Chile,2,1,1,Oruro,Bolivia,1975_copa_america.txt
+Colombia,Paraguay,1,0,1,Bogotá,Colombia,1975_copa_america.txt
+Ecuador,Paraguay,2,2,X,Guayaquil,Ecuador,1975_copa_america.txt
+Bolivia,Peru,0,1,2,Oruro,Bolivia,1975_copa_america.txt
+Ecuador,Colombia,1,3,2,Quito,Ecuador,1975_copa_america.txt
+Paraguay,Colombia,0,1,2,Asunción,Paraguay,1975_copa_america.txt
+Venezuela,Brazil,0,4,2,Caracas,Venezuela,1975_copa_america.txt
+Venezuela,Argentina,1,5,2,Caracas,Venezuela,1975_copa_america.txt
+Brazil,Argentina,2,1,1,Belo Horizonte,Brazil,1975_copa_america.txt
+Colombia,Ecuador,2,0,1,Bogotá,Colombia,1975_copa_america.txt
+Peru,Bolivia,3,1,1,Lima,Peru,1975_copa_america.txt
+Argentina,Venezuela,11,0,1,Rosario,Argentina,1975_copa_america.txt
+Paraguay,Ecuador,3,1,1,Asunción,Paraguay,1975_copa_america.txt
+Brazil,Venezuela,6,0,1,Belo Horizonte,Brazil,1975_copa_america.txt
+Chile,Bolivia,4,0,1,Santiago,Chile,1975_copa_america.txt
+Argentina,Brazil,0,1,2,Rosario,Argentina,1975_copa_america.txt
+Peru,Chile,3,1,1,Lima,Peru,1975_copa_america.txt
+Colombia,Uruguay,3,0,1,Bogotá,Colombia,1975_copa_america.txt
+Brazil,Peru,1,3,2,Belo Horizonte,Brazil,1975_copa_america.txt
+Uruguay,Colombia,1,0,1,Montevideo,Uruguay,1975_copa_america.txt
+Peru,Brazil,0,2,2,Lima,Peru,1975_copa_america.txt
+Colombia,Peru,1,0,1,Bogotá,Colombia,1975_copa_america.txt
+Peru,Colombia,2,0,1,Lima,Peru,1975_copa_america.txt
+Colombia,Peru,0,1,2,Caracas,Venezuela,1975_copa_america.txt
+Bolivia,Argentina,2,1,1,La Paz,Bolivia,1979_copa_america.txt
+Bolivia,Brazil,2,1,1,La Paz,Bolivia,1979_copa_america.txt
+Venezuela,Colombia,0,0,X,San Cristóbal,Venezuela,1979_copa_america.txt
+Brazil,Argentina,2,1,1,Rio de Janeiro,Brazil,1979_copa_america.txt
+Argentina,Bolivia,3,0,1,Buenos Aires,Argentina,1979_copa_america.txt
+Venezuela,Chile,1,1,X,San Cristóbal,Venezuela,1979_copa_america.txt
+Colombia,Chile,1,0,1,Bogotá,Colombia,1979_copa_america.txt
+Brazil,Bolivia,2,0,1,São Paulo,Brazil,1979_copa_america.txt
+Colombia,Venezuela,4,0,1,Bogotá,Colombia,1979_copa_america.txt
+Argentina,Brazil,2,2,X,Buenos Aires,Argentina,1979_copa_america.txt
+Chile,Venezuela,7,0,1,Santiago,Chile,1979_copa_america.txt
+Ecuador,Paraguay,1,2,2,Quito,Ecuador,1979_copa_america.txt
+Chile,Colombia,2,0,1,Santiago,Chile,1979_copa_america.txt
+Ecuador,Uruguay,2,1,1,Quito,Ecuador,1979_copa_america.txt
+Paraguay,Ecuador,2,0,1,Asunción,Paraguay,1979_copa_america.txt
+Uruguay,Ecuador,2,1,1,Montevideo,Uruguay,1979_copa_america.txt
+Paraguay,Uruguay,0,0,X,Asunción,Paraguay,1979_copa_america.txt
+Uruguay,Paraguay,2,2,X,Montevideo,Uruguay,1979_copa_america.txt
+Peru,Chile,1,2,2,Lima,Peru,1979_copa_america.txt
+Chile,Peru,0,0,X,Santiago,Chile,1979_copa_america.txt
+Paraguay,Brazil,2,1,1,Asunción,Paraguay,1979_copa_america.txt
+Brazil,Paraguay,2,2,X,Rio de Janeiro,Brazil,1979_copa_america.txt
+Paraguay,Chile,3,0,1,Asunción,Paraguay,1979_copa_america.txt
+Chile,Paraguay,1,0,1,Santiago,Chile,1979_copa_america.txt
+Chile,Paraguay,0,0,X,Buenos Aires,Argentina,1979_copa_america.txt
+Ecuador,Argentina,2,2,X,Quito,Ecuador,1983_copa_america.txt
+Bolivia,Colombia,0,1,2,La Paz,Bolivia,1983_copa_america.txt
+Ecuador,Brazil,0,1,2,Quito,Ecuador,1983_copa_america.txt
+Peru,Colombia,1,0,1,Lima,Peru,1983_copa_america.txt
+Bolivia,Peru,1,1,X,La Paz,Bolivia,1983_copa_america.txt
+Argentina,Brazil,1,0,1,Buenos Aires,Argentina,1983_copa_america.txt
+Colombia,Peru,2,2,X,Bogotá,Colombia,1983_copa_america.txt
+Colombia,Bolivia,2,2,X,Bogotá,Colombia,1983_copa_america.txt
+Brazil,Ecuador,5,0,1,Goiânia,Brazil,1983_copa_america.txt
+Uruguay,Chile,2,1,1,Montevideo,Uruguay,1983_copa_america.txt
+Peru,Bolivia,2,1,1,Lima,Peru,1983_copa_america.txt
+Uruguay,Venezuela,3,0,1,Montevideo,Uruguay,1983_copa_america.txt
+Argentina,Ecuador,2,2,X,Buenos Aires,Argentina,1983_copa_america.txt
+Chile,Venezuela,5,0,1,Santiago,Chile,1983_copa_america.txt
+Chile,Uruguay,2,0,1,Santiago,Chile,1983_copa_america.txt
+Brazil,Argentina,0,0,X,Rio de Janeiro,Brazil,1983_copa_america.txt
+Venezuela,Uruguay,1,2,2,Caracas,Venezuela,1983_copa_america.txt
+Venezuela,Chile,0,0,X,Caracas,Venezuela,1983_copa_america.txt
+Paraguay,Brazil,1,1,X,Asunción,Paraguay,1983_copa_america.txt
+Peru,Uruguay,0,1,2,Lima,Peru,1983_copa_america.txt
+Brazil,Paraguay,0,0,X,Uberlândia,Brazil,1983_copa_america.txt
+Uruguay,Peru,1,1,X,Montevideo,Uruguay,1983_copa_america.txt
+Uruguay,Brazil,2,0,1,Montevideo,Uruguay,1983_copa_america.txt
+Brazil,Uruguay,1,1,X,Salvador,Brazil,1983_copa_america.txt
+Argentina,Peru,1,1,X,Buenos Aires,Argentina,1987_copa_america.txt
+Brazil,Venezuela,5,0,1,Córdoba,Argentina,1987_copa_america.txt
+Paraguay,Bolivia,0,0,X,Rosario,Argentina,1987_copa_america.txt
+Venezuela,Chile,1,3,2,Córdoba,Argentina,1987_copa_america.txt
+Bolivia,Colombia,0,2,2,Rosario,Argentina,1987_copa_america.txt
+Argentina,Ecuador,3,0,1,Buenos Aires,Argentina,1987_copa_america.txt
+Chile,Brazil,4,0,1,Córdoba,Argentina,1987_copa_america.txt
+Peru,Ecuador,1,1,X,Buenos Aires,Argentina,1987_copa_america.txt
+Colombia,Paraguay,3,0,1,Rosario,Argentina,1987_copa_america.txt
+Chile,Colombia,2,1,1,Córdoba,Argentina,1987_copa_america.txt
+Argentina,Uruguay,0,1,2,Buenos Aires,Argentina,1987_copa_america.txt
+Argentina,Colombia,1,2,2,Buenos Aires,Argentina,1987_copa_america.txt
+Chile,Uruguay,0,1,2,Buenos Aires,Argentina,1987_copa_america.txt
+Brazil,Venezuela,3,1,1,Salvador,Brazil,1989_copa_america.txt
+Paraguay,Peru,5,2,1,Salvador,Brazil,1989_copa_america.txt
+Argentina,Chile,1,0,1,Goiânia,Brazil,1989_copa_america.txt
+Uruguay,Ecuador,0,1,2,Goiânia,Brazil,1989_copa_america.txt
+Brazil,Peru,0,0,X,Salvador,Brazil,1989_copa_america.txt
+Venezuela,Colombia,2,4,2,Salvador,Brazil,1989_copa_america.txt
+Argentina,Ecuador,0,0,X,Goiânia,Brazil,1989_copa_america.txt
+Uruguay,Bolivia,3,0,1,Goiânia,Brazil,1989_copa_america.txt
+Colombia,Paraguay,0,1,2,Salvador,Brazil,1989_copa_america.txt
+Peru,Venezuela,1,1,X,Salvador,Brazil,1989_copa_america.txt
+Chile,Uruguay,0,3,2,Goiânia,Brazil,1989_copa_america.txt
+Ecuador,Bolivia,0,0,X,Goiânia,Brazil,1989_copa_america.txt
+Brazil,Colombia,0,0,X,Salvador,Brazil,1989_copa_america.txt
+Paraguay,Venezuela,3,0,1,Salvador,Brazil,1989_copa_america.txt
+Bolivia,Chile,0,5,2,Goiânia,Brazil,1989_copa_america.txt
+Uruguay,Argentina,0,1,2,Goiânia,Brazil,1989_copa_america.txt
+Brazil,Paraguay,2,0,1,Recife,Brazil,1989_copa_america.txt
+Colombia,Peru,1,1,X,Recife,Brazil,1989_copa_america.txt
+Argentina,Bolivia,0,0,X,Goiânia,Brazil,1989_copa_america.txt
+Chile,Ecuador,2,1,1,Goiânia,Brazil,1989_copa_america.txt
+Brazil,Argentina,2,0,1,Rio de Janeiro,Brazil,1989_copa_america.txt
+Paraguay,Uruguay,0,3,2,Rio de Janeiro,Brazil,1989_copa_america.txt
+Argentina,Uruguay,0,2,2,Rio de Janeiro,Brazil,1989_copa_america.txt
+Brazil,Paraguay,3,0,1,Rio de Janeiro,Brazil,1989_copa_america.txt
+Brazil,Uruguay,1,0,1,Rio de Janeiro,Brazil,1989_copa_america.txt
+Paraguay,Argentina,0,0,X,Rio de Janeiro,Brazil,1989_copa_america.txt
+Chile,Venezuela,2,0,1,Santiago,Chile,1991_copa_america.txt
+Paraguay,Peru,1,0,1,Santiago,Chile,1991_copa_america.txt
+Bolivia,Uruguay,1,1,X,Valparaíso,Chile,1991_copa_america.txt
+Colombia,Ecuador,1,0,1,Valparaíso,Chile,1991_copa_america.txt
+Argentina,Venezuela,3,0,1,Santiago,Chile,1991_copa_america.txt
+Chile,Peru,4,2,1,Concepción,Chile,1991_copa_america.txt
+Bolivia,Brazil,1,2,2,Viña del Mar,Chile,1991_copa_america.txt
+Ecuador,Uruguay,1,1,X,Viña del Mar,Chile,1991_copa_america.txt
+Chile,Argentina,0,1,2,Santiago,Chile,1991_copa_america.txt
+Paraguay,Venezuela,5,0,1,Santiago,Chile,1991_copa_america.txt
+Bolivia,Colombia,0,0,X,Viña del Mar,Chile,1991_copa_america.txt
+Brazil,Uruguay,1,1,X,Viña del Mar,Chile,1991_copa_america.txt
+Argentina,Paraguay,4,1,1,Concepción,Chile,1991_copa_america.txt
+Peru,Venezuela,5,1,1,Santiago,Chile,1991_copa_america.txt
+Bolivia,Ecuador,0,4,2,Viña del Mar,Chile,1991_copa_america.txt
+Brazil,Colombia,0,2,2,Viña del Mar,Chile,1991_copa_america.txt
+Argentina,Peru,3,2,1,Santiago,Chile,1991_copa_america.txt
+Chile,Paraguay,4,0,1,Santiago,Chile,1991_copa_america.txt
+Brazil,Ecuador,3,1,1,Viña del Mar,Chile,1991_copa_america.txt
+Colombia,Uruguay,0,1,2,Viña del Mar,Chile,1991_copa_america.txt
+Argentina,Brazil,3,2,1,Santiago,Chile,1991_copa_america.txt
+Chile,Colombia,1,1,X,Santiago,Chile,1991_copa_america.txt
+Brazil,Colombia,2,0,1,Santiago,Chile,1991_copa_america.txt
+Chile,Argentina,0,0,X,Santiago,Chile,1991_copa_america.txt
+Argentina,Colombia,2,1,1,Santiago,Chile,1991_copa_america.txt
+Chile,Brazil,0,2,2,Santiago,Chile,1991_copa_america.txt
+Ecuador,Venezuela,6,1,1,Quito,Ecuador,1993_copa_america.txt
+Colombia,Mexico,2,1,1,Machala,Ecuador,1993_copa_america.txt
+Uruguay,United States,1,0,1,Ambato,Ecuador,1993_copa_america.txt
+Argentina,Bolivia,1,0,1,Guayaquil,Ecuador,1993_copa_america.txt
+Brazil,Peru,0,0,X,Cuenca,Ecuador,1993_copa_america.txt
+Paraguay,Chile,1,0,1,Cuenca,Ecuador,1993_copa_america.txt
+Ecuador,United States,2,0,1,Quito,Ecuador,1993_copa_america.txt
+Uruguay,Venezuela,2,2,X,Ambato,Ecuador,1993_copa_america.txt
+Argentina,Mexico,1,1,X,Guayaquil,Ecuador,1993_copa_america.txt
+Colombia,Bolivia,1,1,X,Machala,Ecuador,1993_copa_america.txt
+Brazil,Chile,2,3,2,Cuenca,Ecuador,1993_copa_america.txt
+Paraguay,Peru,1,1,X,Cuenca,Ecuador,1993_copa_america.txt
+Ecuador,Uruguay,2,1,1,Quito,Ecuador,1993_copa_america.txt
+United States,Venezuela,3,3,X,Quito,Ecuador,1993_copa_america.txt
+Argentina,Colombia,1,1,X,Guayaquil,Ecuador,1993_copa_america.txt
+Mexico,Bolivia,0,0,X,Portoviejo,Ecuador,1993_copa_america.txt
+Brazil,Paraguay,3,0,1,Cuenca,Ecuador,1993_copa_america.txt
+Chile,Peru,0,1,2,Cuenca,Ecuador,1993_copa_america.txt
+Colombia,Uruguay,1,1,X,Guayaquil,Ecuador   [Colombia wins on penalties],1993_copa_america.txt
+Ecuador,Paraguay,3,0,1,Quito,Ecuador,1993_copa_america.txt
+Brazil,Argentina,1,1,X,Guayaquil,Ecuador   [Argentina wins on penalties],1993_copa_america.txt
+Peru,Mexico,2,4,2,Quito,Ecuador,1993_copa_america.txt
+Ecuador,Mexico,0,2,2,Quito,Ecuador,1993_copa_america.txt
+Colombia,Argentina,0,0,X,Guayaquil,Ecuador   [Argentina wins on penalties],1993_copa_america.txt
+Ecuador,Colombia,0,1,2,Portoviejo,Ecuador,1993_copa_america.txt
+Argentina,Mexico,2,1,1,Guayaquil,Ecuador,1993_copa_america.txt
+Uruguay,Venezuela,4,1,1,Montevideo,Uruguay,1995_copa_america.txt
+Mexico,Paraguay,1,2,2,Maldonado,Uruguay,1995_copa_america.txt
+Brazil,Ecuador,1,0,1,Rivera,Uruguay,1995_copa_america.txt
+Colombia,Peru,1,1,X,Rivera,Uruguay,1995_copa_america.txt
+Argentina,Bolivia,2,1,1,Paysandú,Uruguay,1995_copa_america.txt
+United States,Chile,2,1,1,Paysandú,Uruguay,1995_copa_america.txt
+Mexico,Venezuela,3,1,1,Maldonado,Uruguay,1995_copa_america.txt
+Uruguay,Paraguay,1,0,1,Montevideo,Uruguay,1995_copa_america.txt
+Brazil,Peru,2,0,1,Rivera,Uruguay,1995_copa_america.txt
+Colombia,Ecuador,1,0,1,Rivera,Uruguay,1995_copa_america.txt
+Argentina,Chile,4,0,1,Paysandú,Uruguay,1995_copa_america.txt
+United States,Bolivia,0,1,2,Paysandú,Uruguay,1995_copa_america.txt
+Paraguay,Venezuela,3,2,1,Maldonado,Uruguay,1995_copa_america.txt
+Brazil,Colombia,3,0,1,Rivera,Uruguay,1995_copa_america.txt
+Peru,Ecuador,1,2,2,Rivera,Uruguay,1995_copa_america.txt
+Uruguay,Mexico,1,1,X,Montevideo,Uruguay,1995_copa_america.txt
+Argentina,United States,0,3,2,Paysandú,Uruguay,1995_copa_america.txt
+Chile,Bolivia,2,2,X,Paysandú,Uruguay,1995_copa_america.txt
+Paraguay,Colombia,1,1,X,Montevideo,Uruguay   [Colombia wins on penalties],1995_copa_america.txt
+Uruguay,Bolivia,2,1,1,Montevideo,Uruguay,1995_copa_america.txt
+Brazil,Argentina,2,2,X,Rivera,Uruguay   [Brazil wins on penalties],1995_copa_america.txt
+United States,Mexico,0,0,X,Paysandú,Uruguay   [United States wins on penalties],1995_copa_america.txt
+Uruguay,Colombia,2,0,1,Montevideo,Uruguay,1995_copa_america.txt
+United States,Brazil,0,1,2,Maldonado,Uruguay,1995_copa_america.txt
+Colombia,United States,4,1,1,Maldonado,Uruguay,1995_copa_america.txt
+Uruguay,Brazil,1,1,X,Montevideo,Uruguay   [Uruguay wins on penalties],1995_copa_america.txt
+Argentina,Ecuador,0,0,X,Cochabamba,Bolivia,1997_copa_america.txt
+Chile,Paraguay,0,1,2,Cochabamba,Bolivia,1997_copa_america.txt
+Bolivia,Venezuela,1,0,1,La Paz,Bolivia,1997_copa_america.txt
+Peru,Uruguay,1,0,1,Sucre,Bolivia,1997_copa_america.txt
+Brazil,Costa Rica,5,0,1,Santa Cruz,Bolivia,1997_copa_america.txt
+Mexico,Colombia,2,1,1,Santa Cruz,Bolivia,1997_copa_america.txt
+Argentina,Chile,2,0,1,Cochabamba,Bolivia,1997_copa_america.txt
+Paraguay,Ecuador,0,2,2,Cochabamba,Bolivia,1997_copa_america.txt
+Bolivia,Peru,2,0,1,La Paz,Bolivia,1997_copa_america.txt
+Uruguay,Venezuela,2,0,1,Sucre,Bolivia,1997_copa_america.txt
+Brazil,Mexico,3,2,1,Santa Cruz,Bolivia,1997_copa_america.txt
+Colombia,Costa Rica,4,1,1,Santa Cruz,Bolivia,1997_copa_america.txt
+Argentina,Paraguay,1,1,X,Cochabamba,Bolivia,1997_copa_america.txt
+Chile,Ecuador,1,2,2,Cochabamba,Bolivia,1997_copa_america.txt
+Bolivia,Uruguay,1,0,1,La Paz,Bolivia,1997_copa_america.txt
+Peru,Venezuela,2,0,1,Sucre,Bolivia,1997_copa_america.txt
+Brazil,Colombia,2,0,1,Santa Cruz,Bolivia,1997_copa_america.txt
+Mexico,Costa Rica,1,1,X,Santa Cruz,Bolivia,1997_copa_america.txt
+Bolivia,Colombia,2,1,1,La Paz,Bolivia,1997_copa_america.txt
+Peru,Argentina,2,1,1,Sucre,Bolivia,1997_copa_america.txt
+Brazil,Paraguay,2,0,1,Santa Cruz,Bolivia,1997_copa_america.txt
+Ecuador,Mexico,1,1,X,Cochabamba,Bolivia   [Mexico wins on penalties],1997_copa_america.txt
+Bolivia,Mexico,3,1,1,La Paz,Bolivia,1997_copa_america.txt
+Brazil,Peru,7,0,1,Santa Cruz,Bolivia,1997_copa_america.txt
+Mexico,Peru,1,0,1,Oruro,Bolivia,1997_copa_america.txt
+Bolivia,Brazil,1,3,2,La Paz,Bolivia,1997_copa_america.txt
+Paraguay,Bolivia,0,0,X,Asunción,Paraguay,1999_copa_america.txt
+Peru,Japan,3,2,1,Asunción,Paraguay,1999_copa_america.txt
+Brazil,Venezuela,7,0,1,Ciudad del Este,Paraguay,1999_copa_america.txt
+Chile,Mexico,0,1,2,Ciudad del Este,Paraguay,1999_copa_america.txt
+Argentina,Ecuador,3,1,1,Luque,Paraguay,1999_copa_america.txt
+Uruguay,Colombia,0,1,2,Asunción,Paraguay,1999_copa_america.txt
+Paraguay,Japan,4,0,1,Asunción,Paraguay,1999_copa_america.txt
+Peru,Bolivia,1,0,1,Asunción,Paraguay,1999_copa_america.txt
+Brazil,Mexico,2,1,1,Ciudad del Este,Paraguay,1999_copa_america.txt
+Chile,Venezuela,3,0,1,Ciudad del Este,Paraguay,1999_copa_america.txt
+Argentina,Colombia,0,3,2,Luque,Paraguay,1999_copa_america.txt
+Uruguay,Ecuador,2,1,1,Luque,Paraguay,1999_copa_america.txt
+Bolivia,Japan,1,1,X,Pedro Juan Caballero,Paraguay,1999_copa_america.txt
+Paraguay,Peru,1,0,1,Pedro Juan Caballero,Paraguay,1999_copa_america.txt
+Brazil,Chile,1,0,1,Ciudad del Este,Paraguay,1999_copa_america.txt
+Mexico,Venezuela,3,1,1,Ciudad del Este,Paraguay,1999_copa_america.txt
+Colombia,Ecuador,2,1,1,Luque,Paraguay,1999_copa_america.txt
+Uruguay,Argentina,0,2,2,Luque,Paraguay,1999_copa_america.txt
+Mexico,Peru,3,3,X,Asunción,Paraguay   [Mexico wins on penalties],1999_copa_america.txt
+Paraguay,Uruguay,1,1,X,Asunción,Paraguay   [Uruguay wins on penalties],1999_copa_america.txt
+Brazil,Argentina,2,1,1,Ciudad del Este,Paraguay,1999_copa_america.txt
+Chile,Colombia,3,2,1,Luque,Paraguay,1999_copa_america.txt
+Uruguay,Chile,1,1,X,Asunción,Paraguay   [Uruguay wins on penalties],1999_copa_america.txt
+Mexico,Brazil,0,2,2,Ciudad del Este,Paraguay,1999_copa_america.txt
+Chile,Mexico,1,2,2,Asunción,Paraguay,1999_copa_america.txt
+Brazil,Uruguay,3,0,1,Asunción,Paraguay,1999_copa_america.txt
+Colombia,Venezuela,2,0,1,Barranquilla,Colombia,2001_copa_america.txt
+Ecuador,Chile,1,4,2,Barranquilla,Colombia,2001_copa_america.txt
+Brazil,Mexico,0,1,2,Cali,Colombia,2001_copa_america.txt
+Peru,Paraguay,3,3,X,Cali,Colombia,2001_copa_america.txt
+Bolivia,Uruguay,0,1,2,Medellín,Colombia,2001_copa_america.txt
+Honduras,Costa Rica,0,1,2,Medellín,Colombia,2001_copa_america.txt
+Chile,Venezuela,1,0,1,Barranquilla,Colombia,2001_copa_america.txt
+Colombia,Ecuador,1,0,1,Barranquilla,Colombia,2001_copa_america.txt
+Brazil,Peru,2,0,1,Cali,Colombia,2001_copa_america.txt
+Paraguay,Mexico,0,0,X,Cali,Colombia,2001_copa_america.txt
+Honduras,Bolivia,2,0,1,Medellín,Colombia,2001_copa_america.txt
+Uruguay,Costa Rica,1,1,X,Medellín,Colombia,2001_copa_america.txt
+Colombia,Chile,2,0,1,Barranquilla,Colombia,2001_copa_america.txt
+Ecuador,Venezuela,4,0,1,Barranquilla,Colombia,2001_copa_america.txt
+Brazil,Paraguay,3,1,1,Cali,Colombia,2001_copa_america.txt
+Peru,Mexico,1,0,1,Cali,Colombia,2001_copa_america.txt
+Bolivia,Costa Rica,0,4,2,Medellín,Colombia,2001_copa_america.txt
+Honduras,Uruguay,1,0,1,Medellín,Colombia,2001_copa_america.txt
+Chile,Mexico,0,2,2,Pereira,Colombia,2001_copa_america.txt
+Uruguay,Costa Rica,2,1,1,Armenia,Colombia,2001_copa_america.txt
+Brazil,Honduras,0,2,2,Manizales,Colombia,2001_copa_america.txt
+Colombia,Peru,3,0,1,Armenia,Colombia,2001_copa_america.txt
+Mexico,Uruguay,2,1,1,Pereira,Colombia,2001_copa_america.txt
+Colombia,Honduras,2,0,1,Manizales,Colombia,2001_copa_america.txt
+Uruguay,Honduras,2,2,X,Bogotá,Colombia   [Honduras wins on penalties],2001_copa_america.txt
+Colombia,Mexico,1,0,1,Bogotá,Colombia,2001_copa_america.txt
+Peru,Bolivia,2,2,X,Lima,Peru,2004_copa_america.txt
+Venezuela,Colombia,0,1,2,Lima,Peru,2004_copa_america.txt
+Argentina,Ecuador,6,1,1,Chiclayo,Peru,2004_copa_america.txt
+Mexico,Uruguay,2,2,X,Chiclayo,Peru,2004_copa_america.txt
+Brazil,Chile,1,0,1,Arequipa,Peru,2004_copa_america.txt
+Costa Rica,Paraguay,0,1,2,Arequipa,Peru,2004_copa_america.txt
+Colombia,Bolivia,1,0,1,Lima,Peru,2004_copa_america.txt
+Peru,Venezuela,3,1,1,Lima,Peru,2004_copa_america.txt
+Argentina,Mexico,0,1,2,Chiclayo,Peru,2004_copa_america.txt
+Uruguay,Ecuador,2,1,1,Chiclayo,Peru,2004_copa_america.txt
+Brazil,Costa Rica,4,1,1,Arequipa,Peru,2004_copa_america.txt
+Paraguay,Chile,1,1,X,Arequipa,Peru,2004_copa_america.txt
+Peru,Colombia,2,2,X,Trujillo,Peru,2004_copa_america.txt
+Venezuela,Bolivia,1,1,X,Trujillo,Peru,2004_copa_america.txt
+Argentina,Uruguay,4,2,1,Piura,Peru,2004_copa_america.txt
+Mexico,Ecuador,2,1,1,Piura,Peru,2004_copa_america.txt
+Brazil,Paraguay,1,2,2,Arequipa,Peru,2004_copa_america.txt
+Costa Rica,Chile,2,1,1,Tacna,Peru,2004_copa_america.txt
+Colombia,Costa Rica,2,0,1,Trujillo,Peru,2004_copa_america.txt
+Peru,Argentina,0,1,2,Chiclayo,Peru,2004_copa_america.txt
+Mexico,Brazil,0,4,2,Piura,Peru,2004_copa_america.txt
+Paraguay,Uruguay,1,3,2,Tacna,Peru,2004_copa_america.txt
+Argentina,Colombia,3,0,1,Lima,Peru,2004_copa_america.txt
+Uruguay,Brazil,1,1,X,Lima,Peru   [Brazil wins on penalties],2004_copa_america.txt
+Colombia,Uruguay,1,2,2,Cusco,Peru,2004_copa_america.txt
+Argentina,Brazil,2,2,X,Lima,Peru   [Brazil wins on penalties],2004_copa_america.txt
+Uruguay,Peru,0,3,2,Mérida,Venezuela,2007_copa_america.txt
+Venezuela,Bolivia,2,2,X,San Cristóbal,Venezuela,2007_copa_america.txt
+Brazil,Mexico,0,2,2,Puerto Ordaz,Venezuela,2007_copa_america.txt
+Ecuador,Chile,2,3,2,Puerto Ordaz,Venezuela,2007_copa_america.txt
+Argentina,United States,4,1,1,Maracaibo,Venezuela,2007_copa_america.txt
+Paraguay,Colombia,5,0,1,Barinas,Venezuela,2007_copa_america.txt
+Bolivia,Uruguay,0,1,2,San Cristóbal,Venezuela,2007_copa_america.txt
+Venezuela,Peru,2,0,1,San Cristóbal,Venezuela,2007_copa_america.txt
+Brazil,Chile,3,0,1,Maturín,Venezuela,2007_copa_america.txt
+Mexico,Ecuador,2,1,1,Maturín,Venezuela,2007_copa_america.txt
+Argentina,Colombia,4,2,1,Maracaibo,Venezuela,2007_copa_america.txt
+United States,Paraguay,1,3,2,Barinas,Venezuela,2007_copa_america.txt
+Peru,Bolivia,2,2,X,Mérida,Venezuela,2007_copa_america.txt
+Venezuela,Uruguay,0,0,X,Mérida,Venezuela,2007_copa_america.txt
+Brazil,Ecuador,1,0,1,Puerto la Cruz,Venezuela,2007_copa_america.txt
+Mexico,Chile,0,0,X,Puerto la Cruz,Venezuela,2007_copa_america.txt
+Argentina,Paraguay,1,0,1,Barquisimeto,Venezuela,2007_copa_america.txt
+Colombia,United States,1,0,1,Barquisimeto,Venezuela,2007_copa_america.txt
+Chile,Brazil,1,6,2,Puerto la Cruz,Venezuela,2007_copa_america.txt
+Venezuela,Uruguay,1,4,2,San Cristóbal,Venezuela,2007_copa_america.txt
+Argentina,Peru,4,0,1,Barquisimeto,Venezuela,2007_copa_america.txt
+Mexico,Paraguay,6,0,1,Maturín,Venezuela,2007_copa_america.txt
+Uruguay,Brazil,2,2,X,Maracaibo,Venezuela   [Brazil wins on penalties],2007_copa_america.txt
+Mexico,Argentina,0,3,2,Puerto Ordaz,Venezuela,2007_copa_america.txt
+Mexico,Uruguay,3,1,1,Caracas,Venezuela,2007_copa_america.txt
+Brazil,Argentina,3,0,1,Maracaibo,Venezuela,2007_copa_america.txt
+Argentina,Bolivia,1,1,X,La Plata,Argentina,2011_copa_america.txt
+Colombia,Costa Rica,1,0,1,San Salvador de Jujuy,Argentina,2011_copa_america.txt
+Brazil,Venezuela,0,0,X,La Plata,Argentina,2011_copa_america.txt
+Paraguay,Ecuador,0,0,X,Santa Fe,Argentina,2011_copa_america.txt
+Chile,Mexico,2,1,1,San Juan,Argentina,2011_copa_america.txt
+Uruguay,Peru,1,1,X,San Juan,Argentina,2011_copa_america.txt
+Argentina,Colombia,0,0,X,Santa Fe,Argentina,2011_copa_america.txt
+Bolivia,Costa Rica,0,2,2,San Salvador de Jujuy,Argentina,2011_copa_america.txt
+Peru,Mexico,1,0,1,Mendoza,Argentina,2011_copa_america.txt
+Uruguay,Chile,1,1,X,Mendoza,Argentina,2011_copa_america.txt
+Brazil,Paraguay,2,2,X,Córdoba,Argentina,2011_copa_america.txt
+Venezuela,Ecuador,1,0,1,Salta,Argentina,2011_copa_america.txt
+Colombia,Bolivia,2,0,1,Santa Fe,Argentina,2011_copa_america.txt
+Argentina,Costa Rica,3,0,1,Córdoba,Argentina,2011_copa_america.txt
+Chile,Peru,1,0,1,Mendoza,Argentina,2011_copa_america.txt
+Uruguay,Mexico,1,0,1,La Plata,Argentina,2011_copa_america.txt
+Brazil,Ecuador,4,2,1,Córdoba,Argentina,2011_copa_america.txt
+Paraguay,Venezuela,3,3,X,Salta,Argentina,2011_copa_america.txt
+Argentina,Uruguay,1,1,X,Santa Fe,Argentina   [Uruguay wins on penalties],2011_copa_america.txt
+Colombia,Peru,0,2,2,Córdoba,Argentina,2011_copa_america.txt
+Brazil,Paraguay,0,0,X,La Plata,Argentina   [Paraguay wins on penalties],2011_copa_america.txt
+Chile,Venezuela,1,2,2,San Juan,Argentina,2011_copa_america.txt
+Peru,Uruguay,0,2,2,La Plata,Argentina,2011_copa_america.txt
+Paraguay,Venezuela,0,0,X,Mendoza,Argentina   [Paraguay wins on penalties],2011_copa_america.txt
+Peru,Venezuela,4,1,1,La Plata,Argentina,2011_copa_america.txt
+Uruguay,Paraguay,3,0,1,Buenos Aires,Argentina,2011_copa_america.txt
+Chile,Ecuador,2,0,1,Santiago,Chile,2015_copa_america.txt
+Mexico,Bolivia,0,0,X,Viña del Mar,Chile,2015_copa_america.txt
+Argentina,Paraguay,2,2,X,La Serena,Chile,2015_copa_america.txt
+Uruguay,Jamaica,1,0,1,Antofagasta,Chile,2015_copa_america.txt
+Brazil,Peru,2,1,1,Temuco,Chile,2015_copa_america.txt
+Colombia,Venezuela,0,1,2,Rancagua,Chile,2015_copa_america.txt
+Chile,Mexico,3,3,X,Santiago,Chile,2015_copa_america.txt
+Ecuador,Bolivia,2,3,2,Valparaíso,Chile,2015_copa_america.txt
+Argentina,Uruguay,1,0,1,La Serena,Chile,2015_copa_america.txt
+Paraguay,Jamaica,1,0,1,Antofagasta,Chile,2015_copa_america.txt
+Brazil,Colombia,0,1,2,Santiago,Chile,2015_copa_america.txt
+Peru,Venezuela,1,0,1,Valparaíso,Chile,2015_copa_america.txt
+Chile,Bolivia,5,0,1,Santiago,Chile,2015_copa_america.txt
+Mexico,Ecuador,1,2,2,Rancagua,Chile,2015_copa_america.txt
+Argentina,Jamaica,1,0,1,Viña del Mar,Chile,2015_copa_america.txt
+Uruguay,Paraguay,1,1,X,La Serena,Chile,2015_copa_america.txt
+Brazil,Venezuela,2,1,1,Santiago,Chile,2015_copa_america.txt
+Colombia,Peru,0,0,X,Temuco,Chile,2015_copa_america.txt
+Chile,Uruguay,1,0,1,Santiago,Chile,2015_copa_america.txt
+Bolivia,Peru,1,3,2,Temuco,Chile,2015_copa_america.txt
+Argentina,Colombia,0,0,X,Viña del Mar,Chile   [Argentina wins on penalties],2015_copa_america.txt
+Brazil,Paraguay,1,1,X,Concepción,Chile   [Paraguay wins on penalties],2015_copa_america.txt
+Chile,Peru,2,1,1,Santiago,Chile,2015_copa_america.txt
+Argentina,Paraguay,6,1,1,Concepción,Chile,2015_copa_america.txt
+Peru,Paraguay,2,0,1,Concepción,Chile,2015_copa_america.txt
+Chile,Argentina,0,0,X,Santiago,Chile   [Chile wins on penalties],2015_copa_america.txt
+United States,Colombia,0,2,2,Santa Clara,United States,2016_copa_america.txt
+Brazil,Ecuador,0,0,X,Pasadena,United States,2016_copa_america.txt
+Costa Rica,Paraguay,0,0,X,Orlando,United States,2016_copa_america.txt
+Haiti,Peru,0,1,2,Seattle,United States,2016_copa_america.txt
+Jamaica,Venezuela,0,1,2,Chicago,United States,2016_copa_america.txt
+Mexico,Uruguay,3,1,1,Glendale,United States,2016_copa_america.txt
+Argentina,Chile,2,1,1,Santa Clara,United States,2016_copa_america.txt
+Panama,Bolivia,2,1,1,Orlando,United States,2016_copa_america.txt
+Colombia,Paraguay,2,1,1,Pasadena,United States,2016_copa_america.txt
+United States,Costa Rica,4,0,1,Chicago,United States,2016_copa_america.txt
+Brazil,Haiti,7,1,1,Orlando,United States,2016_copa_america.txt
+Ecuador,Peru,2,2,X,Glendale,United States,2016_copa_america.txt
+Mexico,Jamaica,2,0,1,Pasadena,United States,2016_copa_america.txt
+Uruguay,Venezuela,0,1,2,Philadelphia,United States,2016_copa_america.txt
+Argentina,Panama,5,0,1,Chicago,United States,2016_copa_america.txt
+Chile,Bolivia,2,1,1,Foxborough,United States,2016_copa_america.txt
+Colombia,Costa Rica,2,3,2,Houston,United States,2016_copa_america.txt
+United States,Paraguay,1,0,1,Philadelphia,United States,2016_copa_america.txt
+Brazil,Peru,0,1,2,Foxborough,United States,2016_copa_america.txt
+Ecuador,Haiti,4,0,1,East Rutherford,United States,2016_copa_america.txt
+Mexico,Venezuela,1,1,X,Houston,United States,2016_copa_america.txt
+Uruguay,Jamaica,3,0,1,Santa Clara,United States,2016_copa_america.txt
+Argentina,Bolivia,3,0,1,Seattle,United States,2016_copa_america.txt
+Chile,Panama,4,2,1,Philadelphia,United States,2016_copa_america.txt
+United States,Ecuador,2,1,1,Seattle,United States,2016_copa_america.txt
+Peru,Colombia,0,0,X,East Rutherford,United States   [Colombia wins on penalties],2016_copa_america.txt
+Argentina,Venezuela,4,1,1,Foxborough,United States,2016_copa_america.txt
+Mexico,Chile,0,7,2,Santa Clara,United States,2016_copa_america.txt
+United States,Argentina,0,4,2,Houston,United States,2016_copa_america.txt
+Colombia,Chile,0,2,2,Chicago,United States,2016_copa_america.txt
+United States,Colombia,0,1,2,Glendale,United States,2016_copa_america.txt
+Argentina,Chile,0,0,X,East Rutherford,United States   [Chile wins on penalties],2016_copa_america.txt
+Brazil,Bolivia,3,0,1,São Paulo,Brazil,2019_copa_america.txt
+Venezuela,Peru,0,0,X,Porto Alegre,Brazil,2019_copa_america.txt
+Argentina,Colombia,0,2,2,Salvador,Brazil,2019_copa_america.txt
+Paraguay,Qatar,2,2,X,Rio de Janeiro,Brazil,2019_copa_america.txt
+Uruguay,Ecuador,4,0,1,Belo Horizonte,Brazil,2019_copa_america.txt
+Japan,Chile,0,4,2,São Paulo,Brazil,2019_copa_america.txt
+Bolivia,Peru,1,3,2,Rio de Janeiro,Brazil,2019_copa_america.txt
+Brazil,Venezuela,0,0,X,Salvador,Brazil,2019_copa_america.txt
+Colombia,Qatar,1,0,1,São Paulo,Brazil,2019_copa_america.txt
+Argentina,Paraguay,1,1,X,Belo Horizonte,Brazil,2019_copa_america.txt
+Uruguay,Japan,2,2,X,Porto Alegre,Brazil,2019_copa_america.txt
+Ecuador,Chile,1,2,2,Salvador,Brazil,2019_copa_america.txt
+Bolivia,Venezuela,1,3,2,Belo Horizonte,Brazil,2019_copa_america.txt
+Brazil,Peru,5,0,1,São Paulo,Brazil,2019_copa_america.txt
+Colombia,Paraguay,1,0,1,Salvador,Brazil,2019_copa_america.txt
+Qatar,Argentina,0,2,2,Porto Alegre,Brazil,2019_copa_america.txt
+Chile,Uruguay,0,1,2,Rio de Janeiro,Brazil,2019_copa_america.txt
+Ecuador,Japan,1,1,X,Belo Horizonte,Brazil,2019_copa_america.txt
+Brazil,Paraguay,0,0,X,Porto Alegre,Brazil   [Brazil wins on penalties],2019_copa_america.txt
+Colombia,Chile,0,0,X,São Paulo,Brazil   [Chile wins on penalties],2019_copa_america.txt
+Venezuela,Argentina,0,2,2,Rio de Janeiro,Brazil,2019_copa_america.txt
+Uruguay,Peru,0,0,X,Salvador,Brazil   [Peru wins on penalties],2019_copa_america.txt
+Brazil,Argentina,2,0,1,Belo Horizonte,Brazil,2019_copa_america.txt
+Chile,Peru,0,3,2,Porto Alegre,Brazil,2019_copa_america.txt
+Argentina,Chile,2,1,1,São Paulo,Brazil,2019_copa_america.txt
+Brazil,Peru,3,1,1,Rio de Janeiro,Brazil,2019_copa_america.txt
+Brazil,Venezuela,3,0,1,Brasília,Brazil,2021_copa_america.txt
+Colombia,Ecuador,1,0,1,Cuiabá,Brazil,2021_copa_america.txt
+Argentina,Chile,1,1,X,Rio de Janeiro,Brazil,2021_copa_america.txt
+Paraguay,Bolivia,3,1,1,Goiânia,Brazil,2021_copa_america.txt
+Colombia,Venezuela,0,0,X,Goiânia,Brazil,2021_copa_america.txt
+Brazil,Peru,4,0,1,Rio de Janeiro,Brazil,2021_copa_america.txt
+Chile,Bolivia,1,0,1,Cuiabá,Brazil,2021_copa_america.txt
+Argentina,Uruguay,1,0,1,Brasília,Brazil,2021_copa_america.txt
+Venezuela,Ecuador,2,2,X,Rio de Janeiro,Brazil,2021_copa_america.txt
+Colombia,Peru,1,2,2,Goiânia,Brazil,2021_copa_america.txt
+Uruguay,Chile,1,1,X,Cuiabá,Brazil,2021_copa_america.txt
+Argentina,Paraguay,1,0,1,Brasília,Brazil,2021_copa_america.txt
+Ecuador,Peru,2,2,X,Goiânia,Brazil,2021_copa_america.txt
+Brazil,Colombia,2,1,1,Rio de Janeiro,Brazil,2021_copa_america.txt
+Bolivia,Uruguay,0,2,2,Cuiabá,Brazil,2021_copa_america.txt
+Chile,Paraguay,0,2,2,Brasília,Brazil,2021_copa_america.txt
+Brazil,Ecuador,1,1,X,Goiânia,Brazil,2021_copa_america.txt
+Venezuela,Peru,0,1,2,Brasília,Brazil,2021_copa_america.txt
+Argentina,Bolivia,4,1,1,Cuiabá,Brazil,2021_copa_america.txt
+Uruguay,Paraguay,1,0,1,Rio de Janeiro,Brazil,2021_copa_america.txt
+Peru,Paraguay,3,3,X,Goiânia,Brazil   [Peru wins on penalties],2021_copa_america.txt
+Brazil,Chile,1,0,1,Rio de Janeiro,Brazil,2021_copa_america.txt
+Uruguay,Colombia,0,0,X,Brasília,Brazil   [Colombia wins on penalties],2021_copa_america.txt
+Argentina,Ecuador,3,0,1,Goiânia,Brazil,2021_copa_america.txt
+Brazil,Peru,1,0,1,Rio de Janeiro,Brazil,2021_copa_america.txt
+Argentina,Colombia,1,1,X,Brasília,Brazil   [Argentina wins on penalties],2021_copa_america.txt
+Peru,Colombia,2,3,2,Brasília,Brazil,2021_copa_america.txt
+Brazil,Argentina,0,1,2,Rio de Janeiro,Brazil,2021_copa_america.txt
+Argentina,Canada,2,0,1,Atlanta,United States,2024_copa_america.txt
+Peru,Chile,0,0,X,Arlington,United States,2024_copa_america.txt
+Ecuador,Venezuela,1,2,2,Santa Clara,United States,2024_copa_america.txt
+Mexico,Jamaica,1,0,1,Houston,United States,2024_copa_america.txt
+United States,Bolivia,2,0,1,Arlington,United States,2024_copa_america.txt
+Uruguay,Panama,3,1,1,Miami Gardens,United States,2024_copa_america.txt
+Colombia,Paraguay,2,1,1,Houston,United States,2024_copa_america.txt
+Brazil,Costa Rica,0,0,X,Inglewood,United States,2024_copa_america.txt
+Peru,Canada,0,1,2,Kansas City,United States,2024_copa_america.txt
+Chile,Argentina,0,1,2,East Rutherford,United States,2024_copa_america.txt
+Ecuador,Jamaica,3,1,1,Las Vegas,United States,2024_copa_america.txt
+Venezuela,Mexico,1,0,1,Inglewood,United States,2024_copa_america.txt
+United States,Panama,1,2,2,Atlanta,United States,2024_copa_america.txt
+Uruguay,Bolivia,4,0,1,East Rutherford,United States,2024_copa_america.txt
+Colombia,Costa Rica,3,0,1,Glendale,United States,2024_copa_america.txt
+Paraguay,Brazil,1,4,2,Las Vegas,United States,2024_copa_america.txt
+Argentina,Peru,2,0,1,Miami Gardens,United States,2024_copa_america.txt
+Canada,Chile,0,0,X,Orlando,United States,2024_copa_america.txt
+Mexico,Ecuador,0,0,X,Glendale,United States,2024_copa_america.txt
+Jamaica,Venezuela,0,3,2,Austin,United States,2024_copa_america.txt
+United States,Uruguay,0,1,2,Kansas City,United States,2024_copa_america.txt
+Bolivia,Panama,1,3,2,Orlando,United States,2024_copa_america.txt
+Brazil,Colombia,1,1,X,Santa Clara,United States,2024_copa_america.txt
+Costa Rica,Paraguay,2,1,1,Austin,United States,2024_copa_america.txt
+Argentina,Ecuador,1,1,X,Houston,United States   [Argentina wins on penalties],2024_copa_america.txt
+Venezuela,Canada,1,1,X,Arlington,United States   [Canada wins on penalties],2024_copa_america.txt
+Uruguay,Brazil,0,0,X,Las Vegas,United States   [Uruguay wins on penalties],2024_copa_america.txt
+Colombia,Panama,5,0,1,Glendale,United States,2024_copa_america.txt
+Argentina,Canada,2,0,1,East Rutherford,United States,2024_copa_america.txt
+Uruguay,Colombia,0,1,2,Charlotte,United States,2024_copa_america.txt
+Canada,Uruguay,2,2,X,Charlotte,United States   [Uruguay wins on penalties],2024_copa_america.txt
+Argentina,Colombia,1,0,1,Miami Gardens,United States,2024_copa_america.txt

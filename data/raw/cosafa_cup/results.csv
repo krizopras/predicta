@@ -1,0 +1,355 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Malawi,Mozambique,2,2,X,Lilongwe,Malawi,1997_cosafa_cup.txt
+Zambia,Malawi,4,0,1,Lusaka,Zambia,1997_cosafa_cup.txt
+Tanzania,Namibia,0,0,X,Mwanza,Tanzania,1997_cosafa_cup.txt
+Mozambique,Tanzania,3,0,1,Maputo,Mozambique,1997_cosafa_cup.txt
+Namibia,Malawi,4,1,1,Windhoek,Namibia,1997_cosafa_cup.txt
+Tanzania,Zambia,2,2,X,Arusha,Tanzania,1997_cosafa_cup.txt
+Mozambique,Namibia,1,1,X,Maputo,Mozambique,1997_cosafa_cup.txt
+Zambia,Mozambique,2,1,1,Lusaka,Zambia,1997_cosafa_cup.txt
+Malawi,Tanzania,2,2,X,Lilongwe,Malawi,1997_cosafa_cup.txt
+Namibia,Zambia,1,1,X,Windhoek,Namibia,1997_cosafa_cup.txt
+Zimbabwe,Namibia,5,2,1,Harare,Zimbabwe,1998_cosafa_cup.txt
+Angola,Zambia,1,1,X,Luanda,Angola,1998_cosafa_cup.txt
+Zambia,Mozambique,1,0,1,Lusaka,Zambia,1998_cosafa_cup.txt
+Mozambique,Zimbabwe,0,2,2,Maputo,Mozambique,1998_cosafa_cup.txt
+Namibia,Angola,1,1,X,Windhoek,Namibia,1998_cosafa_cup.txt
+Mozambique,Angola,1,1,X,Maputo,Mozambique,1998_cosafa_cup.txt
+Zambia,Namibia,1,1,X,Lusaka,Zambia,1998_cosafa_cup.txt
+Angola,Zimbabwe,2,1,1,Luanda,Angola,1998_cosafa_cup.txt
+Namibia,Mozambique,2,1,1,Windhoek,Namibia,1998_cosafa_cup.txt
+Zimbabwe,Zambia,0,1,2,Harare,Zimbabwe,1998_cosafa_cup.txt
+Lesotho,Angola,0,1,2,Maseru,Lesotho,1999_cosafa_cup.txt
+Eswatini,Zimbabwe,1,1,X,Lobamba,Swaziland   [Eswatini wins on penalties],1999_cosafa_cup.txt
+Namibia,South Africa,1,1,X,Windhoek,Namibia   [Namibia wins on penalties],1999_cosafa_cup.txt
+Zambia,Mozambique,1,1,X,Lusaka,Zambia   [Zambia wins on penalties],1999_cosafa_cup.txt
+Zambia,Angola,0,1,2,Lusaka,Zambia,1999_cosafa_cup.txt
+Namibia,Eswatini,1,1,X,Windhoek,Namibia   [Namibia wins on penalties],1999_cosafa_cup.txt
+Angola,Namibia,1,0,1,Luanda,Angola,1999_cosafa_cup.txt
+Namibia,Angola,1,1,X,Windhoek,Namibia,1999_cosafa_cup.txt
+Zimbabwe,Lesotho,2,1,1,Harare,Zimbabwe,2000_cosafa_cup.txt
+Zambia,Botswana,3,0,1,Lusaka,Zambia,2000_cosafa_cup.txt
+Malawi,Mozambique,2,1,1,Blantyre,Malawi,2000_cosafa_cup.txt
+South Africa,Mauritius,3,0,1,Rustenburg,South Africa,2000_cosafa_cup.txt
+Zimbabwe,Namibia,3,2,1,Harare,Zimbabwe,2000_cosafa_cup.txt
+Malawi,Angola,0,0,X,Blantyre,Malawi   [Angola wins on penalties],2000_cosafa_cup.txt
+Lesotho,Zambia,0,0,X,Maseru,Lesotho   [Lesotho wins on penalties],2000_cosafa_cup.txt
+South Africa,Eswatini,2,0,1,Witbank,South Africa,2000_cosafa_cup.txt
+Lesotho,Angola,2,1,1,Maseru,Lesotho,2000_cosafa_cup.txt
+South Africa,Zimbabwe,0,1,2,Port Elizabeth,South Africa,2000_cosafa_cup.txt
+Lesotho,Zimbabwe,0,3,2,Maseru,Lesotho,2000_cosafa_cup.txt
+Zimbabwe,Lesotho,3,0,1,Bulawayo,Zimbabwe,2000_cosafa_cup.txt
+Eswatini,Zambia,0,0,X,Lobamba,Swaziland   [Eswatini wins on penalties],2001_cosafa_cup.txt
+Botswana,Malawi,0,1,2,Gaborone,Botswana,2001_cosafa_cup.txt
+Mauritius,Namibia,1,0,1,Mapou,Mauritius,2001_cosafa_cup.txt
+Mozambique,South Africa,0,3,2,Maputo,Mozambique,2001_cosafa_cup.txt
+Angola,Mauritius,1,0,1,Luanda,Angola,2001_cosafa_cup.txt
+Lesotho,Zambia,1,2,2,Maseru,Lesotho,2001_cosafa_cup.txt
+Zimbabwe,Eswatini,2,1,1,Harare,Zimbabwe,2001_cosafa_cup.txt
+Malawi,South Africa,1,0,1,Blantyre,Malawi,2001_cosafa_cup.txt
+Zambia,Angola,1,1,X,Lusaka,Zambia   [Angola wins on penalties],2001_cosafa_cup.txt
+Malawi,Zimbabwe,0,2,2,Blantyre,Malawi,2001_cosafa_cup.txt
+Angola,Zimbabwe,0,0,X,Luanda,Angola,2001_cosafa_cup.txt
+Zimbabwe,Angola,0,1,2,Harare,Zimbabwe,2001_cosafa_cup.txt
+Mauritius,Madagascar,2,3,2,Mapou,Mauritius,2002_cosafa_cup.txt
+Botswana,South Africa,0,0,X,Gaborone,Botswana   [South Africa wins on penalties],2002_cosafa_cup.txt
+Lesotho,Mozambique,0,2,2,Maseru,Lesotho,2002_cosafa_cup.txt
+Eswatini,Namibia,2,1,1,Lobamba,Swaziland,2002_cosafa_cup.txt
+Zimbabwe,Eswatini,0,2,2,Harare,Zimbabwe,2002_cosafa_cup.txt
+Malawi,Angola,2,1,1,Blantyre,Malawi,2002_cosafa_cup.txt
+Zambia,Mozambique,3,0,1,Lusaka,Zambia,2002_cosafa_cup.txt
+South Africa,Madagascar,0,0,X,Port Elizabeth,South Africa   [South Africa wins on penalties],2002_cosafa_cup.txt
+Malawi,Zambia,1,0,1,Blantyre,Malawi,2002_cosafa_cup.txt
+South Africa,Eswatini,4,1,1,Polokwane,South Africa,2002_cosafa_cup.txt
+Malawi,South Africa,1,3,2,Blantyre,Malawi,2002_cosafa_cup.txt
+South Africa,Malawi,1,0,1,Durban,South Africa,2002_cosafa_cup.txt
+Madagascar,Mauritius,2,1,1,Antananarivo,Madagascar,2003_cosafa_cup.txt
+Namibia,Botswana,0,1,2,Windhoek,Namibia,2003_cosafa_cup.txt
+Mozambique,Lesotho,0,0,X,Maputo,Mozambique   [Mozambique wins on penalties],2003_cosafa_cup.txt
+Zimbabwe,Angola,1,0,1,Harare,Zimbabwe,2003_cosafa_cup.txt
+Botswana,Malawi,1,1,X,Gaborone,Botswana   [Malawi wins on penalties],2003_cosafa_cup.txt
+Eswatini,Madagascar,2,0,1,Lobamba,Swaziland,2003_cosafa_cup.txt
+South Africa,Zimbabwe,0,1,2,East London,South Africa,2003_cosafa_cup.txt
+Zambia,Mozambique,4,2,1,Lusaka,Zambia,2003_cosafa_cup.txt
+Malawi,Zambia,1,1,X,Blantyre,Malawi   [Malawi wins on penalties],2003_cosafa_cup.txt
+Zimbabwe,Eswatini,2,0,1,Bulawayo,Zimbabwe,2003_cosafa_cup.txt
+Malawi,Zimbabwe,1,2,2,Blantyre,Malawi,2003_cosafa_cup.txt
+Zimbabwe,Malawi,2,0,1,Harare,Zimbabwe,2003_cosafa_cup.txt
+Mauritius,South Africa,2,0,1,Curepipe,Mauritius,2004_cosafa_cup.txt
+Lesotho,Botswana,0,0,X,Maseru,Lesotho   [Botswana wins on penalties],2004_cosafa_cup.txt
+Mozambique,Madagascar,2,0,1,Maputo,Mozambique,2004_cosafa_cup.txt
+Angola,Namibia,2,1,1,Luanda,Angola,2004_cosafa_cup.txt
+Mozambique,Malawi,2,0,1,Maputo,Mozambique,2004_cosafa_cup.txt
+Eswatini,Zimbabwe,0,5,2,Lobamba,Swaziland,2004_cosafa_cup.txt
+Angola,Botswana,1,1,X,Luanda,Angola   [Angola wins on penalties],2004_cosafa_cup.txt
+Zambia,Mauritius,3,1,1,Lusaka,Zambia,2004_cosafa_cup.txt
+Mozambique,Angola,0,1,2,Maputo,Mozambique,2004_cosafa_cup.txt
+Zimbabwe,Zambia,0,0,X,Harare,Zimbabwe   [Zambia wins on penalties],2004_cosafa_cup.txt
+Zambia,Angola,0,0,X,Lusaka,Zambia   [Angola wins on penalties],2004_cosafa_cup.txt
+Mauritius,Madagascar,2,0,1,Curepipe,Mauritius,2005_cosafa_cup.txt
+Seychelles,South Africa,0,3,2,Curepipe,Mauritius,2005_cosafa_cup.txt
+Mauritius,South Africa,0,1,2,Curepipe,Mauritius,2005_cosafa_cup.txt
+Mozambique,Zimbabwe,0,3,2,Windhoek,Namibia,2005_cosafa_cup.txt
+Namibia,Botswana,1,1,X,Windhoek,Namibia   [Botswana wins on penalties],2005_cosafa_cup.txt
+Botswana,Zimbabwe,0,2,2,Windhoek,Namibia,2005_cosafa_cup.txt
+Lesotho,Malawi,1,2,2,Lusaka,Zambia,2005_cosafa_cup.txt
+Zambia,Eswatini,3,0,1,Lusaka,Zambia,2005_cosafa_cup.txt
+Zambia,Malawi,2,1,1,Lusaka,Zambia,2005_cosafa_cup.txt
+Angola,Zimbabwe,1,2,2,Mafikeng,South Africa,2005_cosafa_cup.txt
+South Africa,Zambia,2,2,X,Mafikeng,South Africa   [Zambia wins on penalties],2005_cosafa_cup.txt
+Zambia,Zimbabwe,0,1,2,Mafikeng,South Africa,2005_cosafa_cup.txt
+Angola,Mauritius,5,1,1,Maseru,Lesotho,2006_cosafa_cup.txt
+Lesotho,Mozambique,0,0,X,Maseru,Lesotho   [Lesotho wins on penalties],2006_cosafa_cup.txt
+Lesotho,Angola,1,3,2,Maseru,Lesotho,2006_cosafa_cup.txt
+Mauritius,Mozambique,0,0,X,Maseru,Lesotho   [Mozambique wins on penalties],2006_cosafa_cup.txt
+Botswana,Madagascar,2,0,1,Gaborone,Botswana,2006_cosafa_cup.txt
+South Africa,Eswatini,1,0,1,Gaborone,Botswana,2006_cosafa_cup.txt
+Botswana,South Africa,0,0,X,Gaborone,Botswana   [Botswana wins on penalties],2006_cosafa_cup.txt
+Madagascar,Eswatini,0,2,2,Gaborone,Botswana,2006_cosafa_cup.txt
+Malawi,Zambia,1,3,2,Windhoek,Namibia,2006_cosafa_cup.txt
+Namibia,Seychelles,1,1,X,Windhoek,Namibia   [Seychelles wins on penalties],2006_cosafa_cup.txt
+Namibia,Malawi,3,2,1,Windhoek,Namibia,2006_cosafa_cup.txt
+Seychelles,Zambia,0,2,2,Windhoek,Namibia,2006_cosafa_cup.txt
+Zambia,Botswana,1,0,1,Lusaka,Zambia,2006_cosafa_cup.txt
+Zimbabwe,Angola,1,2,2,Harare,Zimbabwe,2006_cosafa_cup.txt
+Zambia,Angola,2,0,1,Lusaka,Zambia,2006_cosafa_cup.txt
+Madagascar,Zimbabwe,0,1,2,Maputo,Mozambique,2007_cosafa_cup.txt
+Mozambique,Seychelles,2,0,1,Maputo,Mozambique,2007_cosafa_cup.txt
+Madagascar,Seychelles,5,0,1,Maputo,Mozambique,2007_cosafa_cup.txt
+Mozambique,Zimbabwe,0,0,X,Maputo,Mozambique   [Mozambique wins on penalties],2007_cosafa_cup.txt
+Malawi,South Africa,0,0,X,Lobamba,Swaziland   [South Africa wins on penalties],2007_cosafa_cup.txt
+Eswatini,Mauritius,0,0,X,Lobamba,Swaziland   [Mauritius wins on penalties],2007_cosafa_cup.txt
+Mauritius,South Africa,0,2,2,Lobamba,Swaziland,2007_cosafa_cup.txt
+Eswatini,Malawi,1,0,1,Lobamba,Swaziland,2007_cosafa_cup.txt
+Angola,Lesotho,2,0,1,Gaborone,Botswana,2007_cosafa_cup.txt
+Botswana,Namibia,1,0,1,Gaborone,Botswana,2007_cosafa_cup.txt
+Botswana,Angola,0,0,X,Gaborone,Botswana   [Botswana wins on penalties],2007_cosafa_cup.txt
+Lesotho,Namibia,2,3,2,Gaborone,Botswana,2007_cosafa_cup.txt
+Mozambique,Zambia,0,3,2,Atteridgeville,South Africa,2007_cosafa_cup.txt
+South Africa,Botswana,1,0,1,Atteridgeville,South Africa,2007_cosafa_cup.txt
+South Africa,Zambia,0,0,X,Bloemfontein,South Africa   [South Africa wins on penalties],2007_cosafa_cup.txt
+South Africa,Namibia,1,0,1,Witbank,South Africa,2008_cosafa_cup.txt
+Botswana,Mozambique,0,2,2,Secunda,South Africa,2008_cosafa_cup.txt
+Zambia,Zimbabwe,0,0,X,Secunda,South Africa   [Zambia wins on penalties],2008_cosafa_cup.txt
+Madagascar,Mozambique,1,2,2,Bushbuckridge,South Africa,2008_cosafa_cup.txt
+South Africa,Zambia,1,0,1,Bushbuckridge,South Africa,2008_cosafa_cup.txt
+Madagascar,Zambia,0,2,2,Bushbuckridge,South Africa,2008_cosafa_cup.txt
+South Africa,Mozambique,2,1,1,Bushbuckridge,South Africa,2008_cosafa_cup.txt
+Zimbabwe,Mauritius,3,0,1,Harare,Zimbabwe,2009_cosafa_cup.txt
+Comoros,Botswana,0,0,X,Bulawayo,Zimbabwe,2009_cosafa_cup.txt
+Eswatini,Seychelles,2,1,1,Bulawayo,Zimbabwe,2009_cosafa_cup.txt
+Zimbabwe,Lesotho,2,2,X,Harare,Zimbabwe,2009_cosafa_cup.txt
+Botswana,Eswatini,1,0,1,Bulawayo,Zimbabwe,2009_cosafa_cup.txt
+Seychelles,Comoros,1,2,2,Bulawayo,Zimbabwe,2009_cosafa_cup.txt
+Mauritius,Lesotho,0,1,2,Harare,Zimbabwe,2009_cosafa_cup.txt
+Seychelles,Botswana,0,2,2,Bulawayo,Zimbabwe,2009_cosafa_cup.txt
+Eswatini,Comoros,3,0,1,Bulawayo,Zimbabwe,2009_cosafa_cup.txt
+Malawi,Mozambique,0,1,2,Harare,Zimbabwe,2009_cosafa_cup.txt
+Namibia,Zambia,0,1,2,Harare,Zimbabwe,2009_cosafa_cup.txt
+Zimbabwe,Botswana,1,0,1,Bulawayo,Zimbabwe,2009_cosafa_cup.txt
+South Africa,Angola,2,0,1,Bulawayo,Zimbabwe,2009_cosafa_cup.txt
+Zimbabwe,South Africa,1,1,X,Harare,Zimbabwe   [Zimbabwe wins on penalties],2009_cosafa_cup.txt
+Mozambique,Zambia,0,2,2,Bulawayo,Zimbabwe,2009_cosafa_cup.txt
+South Africa,Mozambique,0,1,2,Bulawayo,Zimbabwe,2009_cosafa_cup.txt
+Zimbabwe,Zambia,3,1,1,Harare,Zimbabwe,2009_cosafa_cup.txt
+Namibia,Mauritius,2,1,1,Lusaka,Zambia,2013_cosafa_cup.txt
+Botswana,Eswatini,0,0,X,Kitwe,Zambia,2013_cosafa_cup.txt
+Kenya,Lesotho,2,2,X,Kitwe,Zambia,2013_cosafa_cup.txt
+Namibia,Seychelles,4,2,1,Lusaka,Zambia,2013_cosafa_cup.txt
+Kenya,Eswatini,2,0,1,Kitwe,Zambia,2013_cosafa_cup.txt
+Lesotho,Botswana,3,3,X,Kitwe,Zambia,2013_cosafa_cup.txt
+Mauritius,Seychelles,4,0,1,Kitwe,Zambia,2013_cosafa_cup.txt
+Kenya,Botswana,1,2,2,Kitwe,Zambia,2013_cosafa_cup.txt
+Lesotho,Eswatini,2,0,1,Lusaka,Zambia,2013_cosafa_cup.txt
+South Africa,Namibia,2,1,1,Lusaka,Zambia,2013_cosafa_cup.txt
+Zimbabwe,Malawi,1,1,X,Lusaka,Zambia   [Zimbabwe wins on penalties],2013_cosafa_cup.txt
+Zambia,Mozambique,3,1,1,Kitwe,Zambia,2013_cosafa_cup.txt
+Angola,Lesotho,1,1,X,Kitwe,Zambia   [Lesotho wins on penalties],2013_cosafa_cup.txt
+Namibia,Mozambique,0,1,2,Kitwe,Zambia,2013_cosafa_cup.txt
+Malawi,Angola,2,3,2,Kitwe,Zambia,2013_cosafa_cup.txt
+Zambia,South Africa,0,0,X,Ndola,Zambia   [Zambia wins on penalties],2013_cosafa_cup.txt
+Zimbabwe,Lesotho,2,1,1,Ndola,Zambia,2013_cosafa_cup.txt
+Angola,Mozambique,0,1,2,Kitwe,Zambia,2013_cosafa_cup.txt
+Lesotho,South Africa,1,2,2,Ndola,Zambia,2013_cosafa_cup.txt
+Zambia,Zimbabwe,2,0,1,Ndola,Zambia,2013_cosafa_cup.txt
+Namibia,Seychelles,0,0,X,Moruleng-Saulspoort,South Africa,2015_cosafa_cup.txt
+Zimbabwe,Mauritius,2,0,1,Moruleng-Saulspoort,South Africa,2015_cosafa_cup.txt
+Lesotho,Madagascar,1,2,2,Phokeng,South Africa,2015_cosafa_cup.txt
+Tanzania,Eswatini,0,1,2,Phokeng,South Africa,2015_cosafa_cup.txt
+Namibia,Mauritius,2,0,1,Moruleng-Saulspoort,South Africa,2015_cosafa_cup.txt
+Seychelles,Zimbabwe,0,1,2,Moruleng-Saulspoort,South Africa,2015_cosafa_cup.txt
+Lesotho,Eswatini,0,2,2,Phokeng,South Africa,2015_cosafa_cup.txt
+Madagascar,Tanzania,2,0,1,Phokeng,South Africa,2015_cosafa_cup.txt
+Namibia,Zimbabwe,4,1,1,Moruleng-Saulspoort,South Africa,2015_cosafa_cup.txt
+Seychelles,Mauritius,0,1,2,Phokeng,South Africa,2015_cosafa_cup.txt
+Lesotho,Tanzania,1,0,1,Moruleng-Saulspoort,South Africa,2015_cosafa_cup.txt
+Madagascar,Eswatini,1,1,X,Phokeng,South Africa,2015_cosafa_cup.txt
+South Africa,Botswana,0,0,X,Moruleng-Saulspoort,South Africa   [Botswana wins on penalties],2015_cosafa_cup.txt
+Zambia,Namibia,0,0,X,Moruleng-Saulspoort,South Africa   [Namibia wins on penalties],2015_cosafa_cup.txt
+Ghana,Madagascar,1,2,2,Phokeng,South Africa,2015_cosafa_cup.txt
+Mozambique,Malawi,2,2,X,Phokeng,South Africa   [Mozambique wins on penalties],2015_cosafa_cup.txt
+South Africa,Malawi,0,0,X,Moruleng-Saulspoort,South Africa   [Malawi wins on penalties],2015_cosafa_cup.txt
+Zambia,Ghana,3,0,1,Moruleng-Saulspoort,South Africa,2015_cosafa_cup.txt
+Botswana,Mozambique,1,2,2,Moruleng-Saulspoort,South Africa,2015_cosafa_cup.txt
+Namibia,Madagascar,3,2,1,Moruleng-Saulspoort,South Africa,2015_cosafa_cup.txt
+Zambia,Malawi,0,1,2,Phokeng,South Africa,2015_cosafa_cup.txt
+Madagascar,Botswana,2,1,1,Moruleng-Saulspoort,South Africa,2015_cosafa_cup.txt
+Namibia,Mozambique,2,0,1,Moruleng-Saulspoort,South Africa,2015_cosafa_cup.txt
+Seychelles,Madagascar,0,1,2,Windhoek,Namibia,2016_cosafa_cup.txt
+Zimbabwe,Eswatini,2,2,X,Windhoek,Namibia,2016_cosafa_cup.txt
+Lesotho,Mauritius,3,0,1,Windhoek,Namibia,2016_cosafa_cup.txt
+Malawi,Angola,3,0,1,Windhoek,Namibia,2016_cosafa_cup.txt
+Madagascar,Zimbabwe,0,0,X,Windhoek,Namibia,2016_cosafa_cup.txt
+Eswatini,Seychelles,4,0,1,Windhoek,Namibia,2016_cosafa_cup.txt
+Angola,Lesotho,0,2,2,Windhoek,Namibia,2016_cosafa_cup.txt
+Mauritius,Malawi,0,1,2,Windhoek,Namibia,2016_cosafa_cup.txt
+Eswatini,Madagascar,1,0,1,Windhoek,Namibia,2016_cosafa_cup.txt
+Zimbabwe,Seychelles,5,0,1,Windhoek,Namibia,2016_cosafa_cup.txt
+Angola,Mauritius,0,2,2,Windhoek,Namibia,2016_cosafa_cup.txt
+Malawi,Lesotho,0,1,2,Windhoek,Namibia,2016_cosafa_cup.txt
+Namibia,Botswana,1,1,X,Windhoek,Namibia   [Botswana wins on penalties],2016_cosafa_cup.txt
+South Africa,Lesotho,1,1,X,Windhoek,Namibia   [South Africa wins on penalties],2016_cosafa_cup.txt
+DR Congo,Mozambique,1,0,1,Windhoek,Namibia,2016_cosafa_cup.txt
+Zambia,Eswatini,0,0,X,Windhoek,Namibia   [Eswatini wins on penalties],2016_cosafa_cup.txt
+Lesotho,Zambia,2,3,2,Windhoek,Namibia,2016_cosafa_cup.txt
+Namibia,Mozambique,3,0,1,Windhoek,Namibia,2016_cosafa_cup.txt
+Botswana,DR Congo,0,0,X,Windhoek,Namibia   [Botswana wins on penalties],2016_cosafa_cup.txt
+South Africa,Eswatini,5,1,1,Windhoek,Namibia,2016_cosafa_cup.txt
+Namibia,Zambia,1,0,1,Windhoek,Namibia,2016_cosafa_cup.txt
+South Africa,Botswana,3,2,1,Windhoek,Namibia,2016_cosafa_cup.txt
+Eswatini,DR Congo,1,0,1,Windhoek,Namibia,2016_cosafa_cup.txt
+Mauritius,Angola,0,1,2,Moruleng,South Africa,2017_cosafa_cup.txt
+Tanzania,Malawi,2,0,1,Moruleng,South Africa,2017_cosafa_cup.txt
+Madagascar,Seychelles,2,0,1,Moruleng,South Africa,2017_cosafa_cup.txt
+Mozambique,Zimbabwe,0,4,2,Moruleng,South Africa,2017_cosafa_cup.txt
+Angola,Tanzania,0,0,X,Rustenburg,South Africa,2017_cosafa_cup.txt
+Malawi,Mauritius,0,0,X,Rustenburg,South Africa,2017_cosafa_cup.txt
+Seychelles,Mozambique,1,2,2,Rustenburg,South Africa,2017_cosafa_cup.txt
+Zimbabwe,Madagascar,0,0,X,Rustenburg,South Africa,2017_cosafa_cup.txt
+Malawi,Angola,0,0,X,Rustenburg,South Africa,2017_cosafa_cup.txt
+Tanzania,Mauritius,1,1,X,Moruleng,South Africa,2017_cosafa_cup.txt
+Mozambique,Madagascar,1,4,2,Moruleng,South Africa,2017_cosafa_cup.txt
+Zimbabwe,Seychelles,6,0,1,Rustenburg,South Africa,2017_cosafa_cup.txt
+Botswana,Zambia,1,2,2,Rustenburg,South Africa,2017_cosafa_cup.txt
+Namibia,Lesotho,0,0,X,Rustenburg,South Africa   [Lesotho wins on penalties],2017_cosafa_cup.txt
+South Africa,Tanzania,0,1,2,Rustenburg,South Africa,2017_cosafa_cup.txt
+Eswatini,Zimbabwe,1,2,2,Rustenburg,South Africa,2017_cosafa_cup.txt
+Namibia,Eswatini,1,0,1,Moruleng,South Africa,2017_cosafa_cup.txt
+South Africa,Botswana,2,0,1,Moruleng,South Africa,2017_cosafa_cup.txt
+Lesotho,Zimbabwe,3,4,2,Moruleng,South Africa,2017_cosafa_cup.txt
+Zambia,Tanzania,4,2,1,Moruleng,South Africa,2017_cosafa_cup.txt
+South Africa,Namibia,1,0,1,Moruleng,South Africa,2017_cosafa_cup.txt
+Tanzania,Lesotho,0,0,X,Moruleng,South Africa   [Tanzania wins on penalties],2017_cosafa_cup.txt
+Zambia,Zimbabwe,1,3,2,Rustenburg,South Africa,2017_cosafa_cup.txt
+Madagascar,Mozambique,2,1,1,Polokwane,South Africa,2018_cosafa_cup.txt
+Comoros,Seychelles,1,1,X,Polokwane,South Africa,2018_cosafa_cup.txt
+Malawi,Mauritius,0,1,2,Polokwane,South Africa,2018_cosafa_cup.txt
+Angola,Botswana,1,2,2,Polokwane,South Africa,2018_cosafa_cup.txt
+Madagascar,Seychelles,1,1,X,Polokwane,South Africa,2018_cosafa_cup.txt
+Comoros,Mozambique,0,3,2,Polokwane,South Africa,2018_cosafa_cup.txt
+Malawi,Botswana,1,1,X,Polokwane,South Africa,2018_cosafa_cup.txt
+Angola,Mauritius,1,0,1,Polokwane,South Africa,2018_cosafa_cup.txt
+Mozambique,Seychelles,2,1,1,Polokwane,South Africa,2018_cosafa_cup.txt
+Comoros,Madagascar,0,1,2,Polokwane,South Africa,2018_cosafa_cup.txt
+Botswana,Mauritius,6,0,1,Polokwane,South Africa,2018_cosafa_cup.txt
+Angola,Malawi,0,0,X,Polokwane,South Africa,2018_cosafa_cup.txt
+Zambia,Namibia,0,0,X,Polokwane,South Africa   [Zambia wins on penalties],2018_cosafa_cup.txt
+Lesotho,Eswatini,1,0,1,Polokwane,South Africa,2018_cosafa_cup.txt
+South Africa,Madagascar,0,0,X,Polokwane,South Africa   [Madagascar wins on penalties],2018_cosafa_cup.txt
+Zimbabwe,Botswana,1,1,X,Polokwane,South Africa   [Zimbabwe wins on penalties],2018_cosafa_cup.txt
+South Africa,Namibia,4,1,1,Polokwane,South Africa,2018_cosafa_cup.txt
+Eswatini,Botswana,0,2,2,Polokwane,South Africa,2018_cosafa_cup.txt
+Zambia,Madagascar,1,0,1,Polokwane,South Africa,2018_cosafa_cup.txt
+Lesotho,Zimbabwe,0,0,X,Polokwane,South Africa   [Zimbabwe wins on penalties],2018_cosafa_cup.txt
+South Africa,Botswana,3,0,1,Polokwane,South Africa,2018_cosafa_cup.txt
+Madagascar,Lesotho,0,1,2,Polokwane,South Africa,2018_cosafa_cup.txt
+Zambia,Zimbabwe,2,4,2,Polokwane,South Africa,2018_cosafa_cup.txt
+Eswatini,Mauritius,2,2,X,Durban,South Africa,2019_cosafa_cup.txt
+Mozambique,Namibia,1,2,2,Durban,South Africa,2019_cosafa_cup.txt
+Malawi,Seychelles,3,0,1,Durban,South Africa,2019_cosafa_cup.txt
+Eswatini,Comoros,2,2,X,Durban,South Africa,2019_cosafa_cup.txt
+Seychelles,Mozambique,0,0,X,Durban,South Africa,2019_cosafa_cup.txt
+Namibia,Malawi,1,2,2,Durban,South Africa,2019_cosafa_cup.txt
+Comoros,Mauritius,2,1,1,Durban,South Africa,2019_cosafa_cup.txt
+Mozambique,Malawi,1,1,X,Durban,South Africa,2019_cosafa_cup.txt
+Namibia,Seychelles,3,0,1,Durban,South Africa,2019_cosafa_cup.txt
+Lesotho,Uganda,0,0,X,Durban,South Africa   [Lesotho wins on penalties],2019_cosafa_cup.txt
+Zimbabwe,Comoros,2,0,1,Durban,South Africa,2019_cosafa_cup.txt
+South Africa,Botswana,2,2,X,Durban,South Africa   [Botswana wins on penalties],2019_cosafa_cup.txt
+Zambia,Malawi,2,2,X,Durban,South Africa   [Zambia wins on penalties],2019_cosafa_cup.txt
+Comoros,Malawi,1,2,2,Durban,South Africa,2019_cosafa_cup.txt
+South Africa,Uganda,1,1,X,Durban,South Africa   [South Africa wins on penalties],2019_cosafa_cup.txt
+Lesotho,Botswana,1,2,2,Durban,South Africa,2019_cosafa_cup.txt
+Zimbabwe,Zambia,0,0,X,Durban,South Africa   [Zambia wins on penalties],2019_cosafa_cup.txt
+Lesotho,Zimbabwe,2,2,X,Durban,South Africa   [Zimbabwe wins on penalties],2019_cosafa_cup.txt
+South Africa,Malawi,0,0,X,Durban,South Africa   [South Africa wins on penalties],2019_cosafa_cup.txt
+Botswana,Zambia,0,1,2,Durban,South Africa,2019_cosafa_cup.txt
+Eswatini,Lesotho,3,1,1,Port Elizabeth,South Africa,2021_cosafa_cup.txt
+South Africa,Botswana,1,0,1,Port Elizabeth,South Africa,2021_cosafa_cup.txt
+Mozambique,Zimbabwe,0,0,X,Port Elizabeth,South Africa,2021_cosafa_cup.txt
+Senegal,Namibia,1,2,2,Port Elizabeth,South Africa,2021_cosafa_cup.txt
+Zambia,Lesotho,1,2,2,Port Elizabeth,South Africa,2021_cosafa_cup.txt
+South Africa,Eswatini,1,0,1,Port Elizabeth,South Africa,2021_cosafa_cup.txt
+Malawi,Zimbabwe,2,2,X,Port Elizabeth,South Africa,2021_cosafa_cup.txt
+Senegal,Mozambique,1,0,1,Port Elizabeth,South Africa,2021_cosafa_cup.txt
+Lesotho,Botswana,0,4,2,Port Elizabeth,South Africa,2021_cosafa_cup.txt
+Zambia,Eswatini,0,1,2,Port Elizabeth,South Africa,2021_cosafa_cup.txt
+Namibia,Zimbabwe,2,0,1,Port Elizabeth,South Africa,2021_cosafa_cup.txt
+Mozambique,Malawi,2,0,1,Port Elizabeth,South Africa,2021_cosafa_cup.txt
+Botswana,Zambia,1,2,2,Port Elizabeth,South Africa,2021_cosafa_cup.txt
+South Africa,Lesotho,4,0,1,Port Elizabeth,South Africa,2021_cosafa_cup.txt
+Senegal,Zimbabwe,2,1,1,Port Elizabeth,South Africa,2021_cosafa_cup.txt
+Malawi,Namibia,1,1,X,Port Elizabeth,South Africa,2021_cosafa_cup.txt
+South Africa,Zambia,0,0,X,Port Elizabeth,South Africa,2021_cosafa_cup.txt
+Eswatini,Botswana,1,1,X,Port Elizabeth,South Africa,2021_cosafa_cup.txt
+Mozambique,Namibia,1,0,1,Port Elizabeth,South Africa,2021_cosafa_cup.txt
+Senegal,Malawi,2,1,1,Port Elizabeth,South Africa,2021_cosafa_cup.txt
+Senegal,Eswatini,2,2,X,Port Elizabeth,South Africa   [Senegal wins on penalties],2021_cosafa_cup.txt
+South Africa,Mozambique,3,0,1,Port Elizabeth,South Africa,2021_cosafa_cup.txt
+Eswatini,Mozambique,1,1,X,Port Elizabeth,South Africa   [Eswatini wins on penalties],2021_cosafa_cup.txt
+South Africa,Senegal,0,0,X,Port Elizabeth,South Africa   [South Africa wins on penalties],2021_cosafa_cup.txt
+Seychelles,Botswana,0,1,2,Durban,South Africa,2022_cosafa_cup.txt
+Angola,Comoros,3,1,1,Durban,South Africa,2022_cosafa_cup.txt
+Mauritius,Eswatini,0,3,2,Durban,South Africa,2022_cosafa_cup.txt
+Lesotho,Malawi,2,1,1,Durban,South Africa,2022_cosafa_cup.txt
+Comoros,Botswana,0,1,2,Durban,South Africa,2022_cosafa_cup.txt
+Angola,Seychelles,3,0,1,Durban,South Africa,2022_cosafa_cup.txt
+Malawi,Eswatini,1,1,X,Durban,South Africa,2022_cosafa_cup.txt
+Lesotho,Mauritius,2,1,1,Durban,South Africa,2022_cosafa_cup.txt
+Seychelles,Comoros,1,2,2,KwaMashu,South Africa,2022_cosafa_cup.txt
+Botswana,Angola,1,0,1,Durban,South Africa,2022_cosafa_cup.txt
+Mauritius,Malawi,0,2,2,KwaMashu,South Africa,2022_cosafa_cup.txt
+Eswatini,Lesotho,2,0,1,Durban,South Africa,2022_cosafa_cup.txt
+Madagascar,Namibia,0,2,2,KwaMashu,South Africa,2022_cosafa_cup.txt
+Zambia,Botswana,1,1,X,KwaMashu,South Africa   [Zambia wins on penalties],2022_cosafa_cup.txt
+South Africa,Mozambique,0,0,X,KwaMashu,South Africa   [Mozambique wins on penalties],2022_cosafa_cup.txt
+Senegal,Eswatini,1,1,X,KwaMashu,South Africa   [Senegal wins on penalties],2022_cosafa_cup.txt
+South Africa,Madagascar,2,1,1,Sugar Ray Xulu Stadium,South Africa,2022_cosafa_cup.txt
+Botswana,Eswatini,2,0,1,Sugar Ray Xulu Stadium,South Africa,2022_cosafa_cup.txt
+Namibia,Mozambique,1,0,1,Durban,South Africa,2022_cosafa_cup.txt
+Zambia,Senegal,4,3,1,Durban,South Africa,2022_cosafa_cup.txt
+South Africa,Botswana,2,1,1,Sugar Ray Xulu Stadium,South Africa,2022_cosafa_cup.txt
+Mozambique,Senegal,1,1,X,Moses Mabhida Stadium,South Africa   [Senegal wins on penalties],2022_cosafa_cup.txt
+Namibia,Zambia,0,1,2,Moses Mabhida Stadium,South Africa,2022_cosafa_cup.txt
+Eswatini,Botswana,0,1,2,Durban,South Africa,2023_cosafa_cup.txt
+South Africa,Namibia,1,1,X,Durban,South Africa,2023_cosafa_cup.txt
+Seychelles,Comoros,0,3,2,Durban,South Africa,2023_cosafa_cup.txt
+Zambia,Malawi,0,1,2,Durban,South Africa,2023_cosafa_cup.txt
+Mauritius,Lesotho,0,2,2,Durban,South Africa,2023_cosafa_cup.txt
+Mozambique,Angola,1,1,X,Durban,South Africa,2023_cosafa_cup.txt
+South Africa,Botswana,2,1,1,Durban,South Africa,2023_cosafa_cup.txt
+Namibia,Eswatini,1,2,2,Durban,South Africa,2023_cosafa_cup.txt
+Zambia,Comoros,2,1,1,Durban,South Africa,2023_cosafa_cup.txt
+Malawi,Seychelles,2,0,1,Durban,South Africa,2023_cosafa_cup.txt
+Angola,Mauritius,0,1,2,KwaMashu,South Africa,2023_cosafa_cup.txt
+Mozambique,Lesotho,0,1,2,KwaMashu,South Africa,2023_cosafa_cup.txt
+Namibia,Botswana,0,0,X,Durban,South Africa,2023_cosafa_cup.txt
+South Africa,Eswatini,2,1,1,KwaMashu,South Africa,2023_cosafa_cup.txt
+Malawi,Comoros,2,0,1,Durban,South Africa,2023_cosafa_cup.txt
+Seychelles,Zambia,2,4,2,KwaMashu,South Africa,2023_cosafa_cup.txt
+Angola,Lesotho,4,2,1,Durban,South Africa,2023_cosafa_cup.txt
+Mauritius,Mozambique,0,1,2,KwaMashu,South Africa,2023_cosafa_cup.txt
+Malawi,Lesotho,1,1,X,Durban,South Africa   [Lesotho wins on penalties],2023_cosafa_cup.txt
+South Africa,Zambia,1,2,2,Durban,South Africa,2023_cosafa_cup.txt
+South Africa,Malawi,0,0,X,Durban,South Africa   [South Africa wins on penalties],2023_cosafa_cup.txt
+Lesotho,Zambia,0,1,2,Durban,South Africa,2023_cosafa_cup.txt

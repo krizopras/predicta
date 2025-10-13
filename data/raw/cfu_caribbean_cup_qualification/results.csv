@@ -1,0 +1,607 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Barbados,Curaçao,0,0,X,Bridgetown,Barbados,1978_cfu_caribbean_cup_qualification.txt
+Guadeloupe,Jamaica,1,0,1,Pointe-à-Pitre,Guadeloupe,1978_cfu_caribbean_cup_qualification.txt
+Guyana,Suriname,0,2,2,Linden,Guyana,1978_cfu_caribbean_cup_qualification.txt
+Curaçao,Barbados,1,0,1,Oranjestad,Aruba,1978_cfu_caribbean_cup_qualification.txt
+Jamaica,Guadeloupe,1,2,2,Kingston,Jamaica,1978_cfu_caribbean_cup_qualification.txt
+Suriname,Guyana,2,1,1,Paramaribo,Suriname,1978_cfu_caribbean_cup_qualification.txt
+Puerto Rico,Haiti,1,1,X,San Juan,Puerto Rico,1978_cfu_caribbean_cup_qualification.txt
+Trinidad and Tobago,French Guiana,2,4,2,Port of Spain,Trinidad and Tobago,1978_cfu_caribbean_cup_qualification.txt
+Haiti,Puerto Rico,1,0,1,Port-au-Prince,Haiti,1978_cfu_caribbean_cup_qualification.txt
+French Guiana,Trinidad and Tobago,1,4,2,Cayenne,French Guiana,1978_cfu_caribbean_cup_qualification.txt
+Haiti,Martinique,0,0,X,Port-au-Prince,Haiti,1978_cfu_caribbean_cup_qualification.txt
+Curaçao,Suriname,0,2,2,Oranjestad,Aruba,1978_cfu_caribbean_cup_qualification.txt
+Martinique,Haiti,0,0,X,Fort-de-France,Martinique,1978_cfu_caribbean_cup_qualification.txt
+Suriname,Curaçao,3,0,1,Paramaribo,Suriname,1978_cfu_caribbean_cup_qualification.txt
+Saint Vincent and the Grenadines,Martinique,2,2,X,Kingstown,Saint Vincent and the Grenadines,1979_cfu_caribbean_cup_qualification.txt
+Jamaica,Saint Kitts and Nevis,2,1,1,Kingston,Jamaica,1979_cfu_caribbean_cup_qualification.txt
+Martinique,Saint Vincent and the Grenadines,0,1,2,Fort-de-France,Martinique,1979_cfu_caribbean_cup_qualification.txt
+Saint Kitts and Nevis,Jamaica,1,2,2,Basseterre,Saint Kitts and Nevis,1979_cfu_caribbean_cup_qualification.txt
+Grenada,Trinidad and Tobago,0,1,2,St. George's,Grenada,1979_cfu_caribbean_cup_qualification.txt
+Trinidad and Tobago,Grenada,2,1,1,San Fernando,Trinidad and Tobago,1979_cfu_caribbean_cup_qualification.txt
+Haiti,Antigua and Barbuda,1,0,1,Port-au-Prince,Haiti,1979_cfu_caribbean_cup_qualification.txt
+Antigua and Barbuda,Haiti,1,2,2,St. John's,Antigua and Barbuda,1979_cfu_caribbean_cup_qualification.txt
+Guadeloupe,Saint Vincent and the Grenadines,1,3,2,Basse-Terre,Guadeloupe,1979_cfu_caribbean_cup_qualification.txt
+Saint Vincent and the Grenadines,Guadeloupe,0,0,X,Kingstown,Saint Vincent and the Grenadines,1979_cfu_caribbean_cup_qualification.txt
+Haiti,Jamaica,3,0,1,Port-au-Prince,Haiti,1979_cfu_caribbean_cup_qualification.txt
+Jamaica,Haiti,0,4,2,Kingston,Jamaica,1979_cfu_caribbean_cup_qualification.txt
+Suriname,French Guiana,3,1,1,Paramaribo,Suriname,1981_cfu_caribbean_cup_qualification.txt
+French Guiana,Suriname,3,1,1,Cayenne,French Guiana,1981_cfu_caribbean_cup_qualification.txt
+Guadeloupe,Dominica,5,0,1,Basse-Terre,Guadeloupe,1981_cfu_caribbean_cup_qualification.txt
+Barbados,Trinidad and Tobago,1,1,X,Bridgetown,Barbados,1981_cfu_caribbean_cup_qualification.txt
+Dominica,Guadeloupe,2,3,2,Roseau,Dominica,1981_cfu_caribbean_cup_qualification.txt
+Saint Vincent and the Grenadines,Martinique,2,1,1,Kingstown,Saint Vincent and the Grenadines,1981_cfu_caribbean_cup_qualification.txt
+Trinidad and Tobago,Barbados,1,1,X,Port of Spain,Trinidad and Tobago,1981_cfu_caribbean_cup_qualification.txt
+Martinique,Saint Vincent and the Grenadines,1,2,2,Fort-de-France,Martinique,1981_cfu_caribbean_cup_qualification.txt
+Suriname,French Guiana,1,0,1,Paramaribo,Suriname,1981_cfu_caribbean_cup_qualification.txt
+Guadeloupe,Saint Vincent and the Grenadines,3,0,1,Basse-Terre,Guadeloupe,1981_cfu_caribbean_cup_qualification.txt
+Suriname,Trinidad and Tobago,1,1,X,Paramaribo,Suriname,1981_cfu_caribbean_cup_qualification.txt
+Trinidad and Tobago,Suriname,3,2,1,San Fernando,Trinidad and Tobago,1981_cfu_caribbean_cup_qualification.txt
+Saint Vincent and the Grenadines,Guadeloupe,3,1,1,Kingstown,Saint Vincent and the Grenadines,1981_cfu_caribbean_cup_qualification.txt
+Saint Vincent and the Grenadines,Suriname,2,1,1,Kingstown,Saint Vincent and the Grenadines,1981_cfu_caribbean_cup_qualification.txt
+Suriname,Saint Vincent and the Grenadines,3,3,X,Paramaribo,Suriname,1981_cfu_caribbean_cup_qualification.txt
+Guadeloupe,Dominica,1,0,1,Basse-Terre,Guadeloupe,1983_cfu_caribbean_cup_qualification.txt
+Saint Vincent and the Grenadines,Martinique,1,3,2,Kingstown,Saint Vincent and the Grenadines,1983_cfu_caribbean_cup_qualification.txt
+Barbados,Suriname,1,0,1,Bridgetown,Barbados,1983_cfu_caribbean_cup_qualification.txt
+Dominica,Guadeloupe,1,2,2,Roseau,Dominica,1983_cfu_caribbean_cup_qualification.txt
+Barbados,Suriname,0,0,X,Bridgetown,Barbados,1983_cfu_caribbean_cup_qualification.txt
+Guadeloupe,Antigua and Barbuda,2,3,2,Basse-Terre,Guadeloupe,1983_cfu_caribbean_cup_qualification.txt
+Barbados,Guyana,1,1,X,Bridgetown,Barbados,1983_cfu_caribbean_cup_qualification.txt
+Antigua and Barbuda,Guadeloupe,3,3,X,St. John's,Antigua and Barbuda,1983_cfu_caribbean_cup_qualification.txt
+Guyana,Barbados,2,0,1,Georgetown,Guyana,1983_cfu_caribbean_cup_qualification.txt
+Martinique,Saint Kitts and Nevis,7,0,1,Fort-de-France,Martinique,1983_cfu_caribbean_cup_qualification.txt
+Guyana,Antigua and Barbuda,0,0,X,Georgetown,Guyana,1983_cfu_caribbean_cup_qualification.txt
+Antigua and Barbuda,Guyana,4,0,1,St. John's,Antigua and Barbuda,1983_cfu_caribbean_cup_qualification.txt
+Saint Kitts and Nevis,Martinique,0,5,2,Basseterre,Saint Kitts and Nevis,1983_cfu_caribbean_cup_qualification.txt
+Antigua and Barbuda,Dominica,2,1,1,St. John's,Antigua and Barbuda,1985_cfu_caribbean_cup_qualification.txt
+Saint Vincent and the Grenadines,Trinidad and Tobago,1,1,X,Kingstown,Saint Vincent and the Grenadines,1985_cfu_caribbean_cup_qualification.txt
+Antigua and Barbuda,Guadeloupe,0,1,2,St. John's,Antigua and Barbuda,1985_cfu_caribbean_cup_qualification.txt
+Dominica,Cayman Islands,2,1,1,Roseau,Dominica,1985_cfu_caribbean_cup_qualification.txt
+Grenada,Trinidad and Tobago,1,5,2,St. George's,Grenada,1985_cfu_caribbean_cup_qualification.txt
+French Guiana,Guyana,0,1,2,Cayenne,French Guiana,1985_cfu_caribbean_cup_qualification.txt
+French Guiana,Suriname,0,1,2,Cayenne,French Guiana,1985_cfu_caribbean_cup_qualification.txt
+Guyana,Suriname,0,1,2,Georgetown,Guyana,1985_cfu_caribbean_cup_qualification.txt
+Saint Vincent and the Grenadines,Grenada,3,0,1,Kingstown,Saint Vincent and the Grenadines,1985_cfu_caribbean_cup_qualification.txt
+Guadeloupe,Trinidad and Tobago,1,1,X,Basse-Terre,Guadeloupe,1985_cfu_caribbean_cup_qualification.txt
+Suriname,Guadeloupe,0,1,2,Cayenne,French Guiana,1985_cfu_caribbean_cup_qualification.txt
+Trinidad and Tobago,Suriname,0,1,2,San Fernando,Trinidad and Tobago,1985_cfu_caribbean_cup_qualification.txt
+French Guiana,Suriname,1,1,X,Cayenne,French Guiana,1987_cfu_caribbean_cup_qualification.txt
+Barbados,Trinidad and Tobago,0,4,2,Bridgetown,Barbados,1987_cfu_caribbean_cup_qualification.txt
+Suriname,French Guiana,1,0,1,Paramaribo,Suriname,1987_cfu_caribbean_cup_qualification.txt
+Trinidad and Tobago,Barbados,5,1,1,Port of Spain,Trinidad and Tobago,1987_cfu_caribbean_cup_qualification.txt
+Dominica,Antigua and Barbuda,0,0,X,Roseau,Dominica,1988_cfu_caribbean_cup_qualification.txt
+Guadeloupe,Suriname,0,2,2,Basse-Terre,Guadeloupe,1988_cfu_caribbean_cup_qualification.txt
+Antigua and Barbuda,Dominica,2,1,1,St. John's,Antigua and Barbuda,1988_cfu_caribbean_cup_qualification.txt
+Guadeloupe,Suriname,1,1,X,Basse-Terre,Guadeloupe,1988_cfu_caribbean_cup_qualification.txt
+Antigua and Barbuda,Jamaica,1,0,1,St. John's,Antigua and Barbuda,1989_cfu_caribbean_cup_qualification.txt
+Saint Kitts and Nevis,French Guiana,1,0,1,Basseterre,Saint Kitts and Nevis,1989_cfu_caribbean_cup_qualification.txt
+Saint Lucia,Dominica,0,0,X,Castries,Saint Lucia,1989_cfu_caribbean_cup_qualification.txt
+Trinidad and Tobago,Aruba,11,0,1,Arima,Trinidad and Tobago,1989_cfu_caribbean_cup_qualification.txt
+Curaçao,Martinique,3,1,1,Willemstad,Curaçao,1989_cfu_caribbean_cup_qualification.txt
+Grenada,Saint Kitts and Nevis,2,1,1,St. George's,Grenada,1989_cfu_caribbean_cup_qualification.txt
+Jamaica,Guadeloupe,1,3,2,Kingston,Jamaica,1989_cfu_caribbean_cup_qualification.txt
+Sint Maarten,British Virgin Islands,1,2,2,Philipsburg,Sint Maarten,1989_cfu_caribbean_cup_qualification.txt
+French Guiana,Trinidad and Tobago,1,3,2,Cayenne,French Guiana,1989_cfu_caribbean_cup_qualification.txt
+Dominica,Antigua and Barbuda,0,1,2,Roseau,Dominica,1989_cfu_caribbean_cup_qualification.txt
+Aruba,Grenada,0,0,X,Oranjestad,Aruba,1989_cfu_caribbean_cup_qualification.txt
+Guadeloupe,Dominica,0,0,X,Basse-Terre,Guadeloupe,1989_cfu_caribbean_cup_qualification.txt
+Martinique,British Virgin Islands,0,0,X,Fort-de-France,Martinique,1989_cfu_caribbean_cup_qualification.txt
+Saint Kitts and Nevis,Trinidad and Tobago,0,2,2,Basseterre,Saint Kitts and Nevis,1989_cfu_caribbean_cup_qualification.txt
+Saint Vincent and the Grenadines,Curaçao,3,2,1,Kingstown,Saint Vincent and the Grenadines,1989_cfu_caribbean_cup_qualification.txt
+Curaçao,British Virgin Islands,4,0,1,Willemstad,Curaçao,1989_cfu_caribbean_cup_qualification.txt
+Dominica,Jamaica,0,0,X,Roseau,Dominica,1989_cfu_caribbean_cup_qualification.txt
+Grenada,Trinidad and Tobago,1,0,1,St. George's,Grenada,1989_cfu_caribbean_cup_qualification.txt
+Martinique,Sint Maarten,10,0,1,Fort-de-France,Martinique,1989_cfu_caribbean_cup_qualification.txt
+French Guiana,Aruba,4,0,1,Cayenne,French Guiana,1989_cfu_caribbean_cup_qualification.txt
+Aruba,Saint Kitts and Nevis,1,4,2,Oranjestad,Aruba,1989_cfu_caribbean_cup_qualification.txt
+Jamaica,Saint Lucia,1,1,X,Kingston,Jamaica,1989_cfu_caribbean_cup_qualification.txt
+Sint Maarten,Curaçao,1,2,2,Philipsburg,Sint Maarten,1989_cfu_caribbean_cup_qualification.txt
+Grenada,French Guiana,0,0,X,St. George's,Grenada,1989_cfu_caribbean_cup_qualification.txt
+Sint Maarten,Cayman Islands,1,1,X,Marigot,Saint Martin,1990_cfu_caribbean_cup_qualification.txt
+Saint Martin,British Virgin Islands,3,0,1,Marigot,Saint Martin,1990_cfu_caribbean_cup_qualification.txt
+Bermuda,Antigua and Barbuda,2,2,X,Hamilton,Bermuda,1990_cfu_caribbean_cup_qualification.txt
+Barbados,Saint Lucia,1,0,1,Bridgetown,Barbados,1990_cfu_caribbean_cup_qualification.txt
+Grenada,Curaçao,1,1,X,St. George's,Grenada,1990_cfu_caribbean_cup_qualification.txt
+Martinique,French Guiana,4,0,1,Fort-de-France,Martinique,1990_cfu_caribbean_cup_qualification.txt
+Saint Vincent and the Grenadines,Dominica,2,1,1,Kingstown,Saint Vincent and the Grenadines,1990_cfu_caribbean_cup_qualification.txt
+Barbados,Antigua and Barbuda,1,0,1,Bridgetown,Barbados,1990_cfu_caribbean_cup_qualification.txt
+Jamaica,Saint Kitts and Nevis,3,0,1,Kingston,Jamaica,1990_cfu_caribbean_cup_qualification.txt
+Suriname,Guyana,5,0,1,Paramaribo,Suriname,1990_cfu_caribbean_cup_qualification.txt
+Saint Martin,Guadeloupe,2,1,1,Marigot,Saint Martin,1990_cfu_caribbean_cup_qualification.txt
+Dominica,French Guiana,1,1,X,Roseau,Dominica,1990_cfu_caribbean_cup_qualification.txt
+Saint Lucia,Bermuda,0,2,2,Castries,Saint Lucia,1990_cfu_caribbean_cup_qualification.txt
+Grenada,Suriname,3,1,1,Georgetown,Guyana,1990_cfu_caribbean_cup_qualification.txt
+Saint Kitts and Nevis,Guadeloupe,2,0,1,Basseterre,Saint Kitts and Nevis,1990_cfu_caribbean_cup_qualification.txt
+Guyana,Curaçao,1,1,X,Georgetown,Guyana,1990_cfu_caribbean_cup_qualification.txt
+Jamaica,Saint Martin,1,0,1,Kingston,Jamaica,1990_cfu_caribbean_cup_qualification.txt
+Bermuda,Barbados,1,1,X,Hamilton,Bermuda,1990_cfu_caribbean_cup_qualification.txt
+Antigua and Barbuda,Saint Lucia,0,2,2,St. John's,Antigua and Barbuda,1990_cfu_caribbean_cup_qualification.txt
+Curaçao,Suriname,1,1,X,Willemstad,Curaçao,1990_cfu_caribbean_cup_qualification.txt
+Guyana,Grenada,0,0,X,Georgetown,Guyana,1990_cfu_caribbean_cup_qualification.txt
+French Guiana,Saint Vincent and the Grenadines,2,2,X,Cayenne,French Guiana,1990_cfu_caribbean_cup_qualification.txt
+Guadeloupe,Jamaica,0,0,X,Pointe-à-Pitre,Guadeloupe,1990_cfu_caribbean_cup_qualification.txt
+Martinique,Dominica,0,0,X,Fort-de-France,Martinique,1990_cfu_caribbean_cup_qualification.txt
+Aruba,Suriname,0,1,2,Georgetown,Guyana,1991_cfu_caribbean_cup_qualification.txt
+Cayman Islands,British Virgin Islands,2,1,1,Basseterre,Saint Kitts and Nevis,1991_cfu_caribbean_cup_qualification.txt
+Guyana,Aruba,4,1,1,Georgetown,Guyana,1991_cfu_caribbean_cup_qualification.txt
+Puerto Rico,Haiti,2,3,2,San Juan,Puerto Rico,1991_cfu_caribbean_cup_qualification.txt
+Saint Lucia,Montserrat,3,0,1,Castries,Saint Lucia,1991_cfu_caribbean_cup_qualification.txt
+Dominican Republic,Haiti,1,1,X,San Juan,Puerto Rico,1991_cfu_caribbean_cup_qualification.txt
+Guyana,Suriname,1,1,X,Georgetown,Guyana,1991_cfu_caribbean_cup_qualification.txt
+Saint Kitts and Nevis,Cayman Islands,1,1,X,Basseterre,Saint Kitts and Nevis,1991_cfu_caribbean_cup_qualification.txt
+Anguilla,Montserrat,1,1,X,Castries,Saint Lucia,1991_cfu_caribbean_cup_qualification.txt
+Puerto Rico,Dominican Republic,1,3,2,San Juan,Puerto Rico,1991_cfu_caribbean_cup_qualification.txt
+Saint Kitts and Nevis,British Virgin Islands,0,0,X,Basseterre,Saint Kitts and Nevis,1991_cfu_caribbean_cup_qualification.txt
+Martinique,French Guiana,1,2,2,Fort-de-France,Martinique,1991_cfu_caribbean_cup_qualification.txt
+Saint Lucia,Anguilla,6,0,1,Castries,Saint Lucia,1991_cfu_caribbean_cup_qualification.txt
+Guadeloupe,French Guiana,1,0,1,Fort-de-France,Martinique,1991_cfu_caribbean_cup_qualification.txt
+Martinique,Guadeloupe,3,1,1,Fort-de-France,Martinique,1991_cfu_caribbean_cup_qualification.txt
+Saint Vincent and the Grenadines,Curaçao,2,2,X,Bridgetown,Barbados,1992_cfu_caribbean_cup_qualification.txt
+Dominica,Guadeloupe,0,0,X,Castries,Saint Lucia,1992_cfu_caribbean_cup_qualification.txt
+Barbados,Curaçao,1,0,1,Bridgetown,Barbados,1992_cfu_caribbean_cup_qualification.txt
+Grenada,Curaçao,0,1,2,Bridgetown,Barbados,1992_cfu_caribbean_cup_qualification.txt
+Cayman Islands,Martinique,0,7,2,Philipsburg,Sint Maarten,1992_cfu_caribbean_cup_qualification.txt
+Sint Maarten,Cayman Islands,4,2,1,Philipsburg,Sint Maarten,1992_cfu_caribbean_cup_qualification.txt
+Sint Maarten,Martinique,1,1,X,Philipsburg,Sint Maarten,1992_cfu_caribbean_cup_qualification.txt
+Antigua and Barbuda,Montserrat,5,0,1,Basseterre,Saint Kitts and Nevis,1992_cfu_caribbean_cup_qualification.txt
+Saint Kitts and Nevis,British Virgin Islands,4,0,1,Basseterre,Saint Kitts and Nevis,1992_cfu_caribbean_cup_qualification.txt
+Antigua and Barbuda,British Virgin Islands,2,0,1,Basseterre,Saint Kitts and Nevis,1992_cfu_caribbean_cup_qualification.txt
+Saint Kitts and Nevis,Montserrat,10,0,1,Basseterre,Saint Kitts and Nevis,1992_cfu_caribbean_cup_qualification.txt
+Anguilla,Cuba,0,3,2,The Valley,Anguilla,1992_cfu_caribbean_cup_qualification.txt
+French Guiana,Guyana,1,1,X,Paramaribo,Suriname,1992_cfu_caribbean_cup_qualification.txt
+Aruba,French Guiana,0,2,2,Paramaribo,Suriname,1992_cfu_caribbean_cup_qualification.txt
+Cuba,Anguilla,5,0,1,Havana,Cuba,1992_cfu_caribbean_cup_qualification.txt
+Suriname,French Guiana,3,2,1,Paramaribo,Suriname,1992_cfu_caribbean_cup_qualification.txt
+Martinique,French Guiana,2,1,1,Fort-de-France,Martinique,1993_cfu_caribbean_cup_qualification.txt
+Guyana,Cayman Islands,3,2,1,Georgetown,Guyana,1993_cfu_caribbean_cup_qualification.txt
+Puerto Rico,Barbados,1,0,1,Georgetown,Guyana,1993_cfu_caribbean_cup_qualification.txt
+Cayman Islands,Barbados,1,6,2,Georgetown,Guyana,1993_cfu_caribbean_cup_qualification.txt
+Guyana,Puerto Rico,0,2,2,Georgetown,Guyana,1993_cfu_caribbean_cup_qualification.txt
+Guyana,Barbados,0,3,2,Georgetown,Guyana,1993_cfu_caribbean_cup_qualification.txt
+Puerto Rico,Cayman Islands,4,0,1,Georgetown,Guyana,1993_cfu_caribbean_cup_qualification.txt
+French Guiana,Guadeloupe,2,1,1,Cayenne,French Guiana,1993_cfu_caribbean_cup_qualification.txt
+Saint Kitts and Nevis,British Virgin Islands,5,1,1,Basseterre,Saint Kitts and Nevis,1993_cfu_caribbean_cup_qualification.txt
+Anguilla,Antigua and Barbuda,0,4,2,The Valley,Anguilla,1993_cfu_caribbean_cup_qualification.txt
+Dominican Republic,British Virgin Islands,3,1,1,Basseterre,Saint Kitts and Nevis,1993_cfu_caribbean_cup_qualification.txt
+Antigua and Barbuda,Sint Maarten,0,2,2,The Valley,Anguilla,1993_cfu_caribbean_cup_qualification.txt
+Anguilla,Sint Maarten,0,1,2,The Valley,Anguilla,1993_cfu_caribbean_cup_qualification.txt
+Saint Kitts and Nevis,Dominican Republic,2,2,X,Basseterre,Saint Kitts and Nevis,1993_cfu_caribbean_cup_qualification.txt
+Guadeloupe,Martinique,1,4,2,Pointe-à-Pitre,Guadeloupe,1993_cfu_caribbean_cup_qualification.txt
+Grenada,Dominica,1,1,X,St. George's,Grenada,1993_cfu_caribbean_cup_qualification.txt
+Saint Vincent and the Grenadines,Saint Lucia,0,1,2,St. George's,Grenada,1993_cfu_caribbean_cup_qualification.txt
+Dominica,Saint Lucia,2,4,2,St. George's,Grenada,1993_cfu_caribbean_cup_qualification.txt
+Dominica,Saint Vincent and the Grenadines,0,2,2,St. George's,Grenada,1993_cfu_caribbean_cup_qualification.txt
+Grenada,Saint Lucia,0,1,2,St. George's,Grenada,1993_cfu_caribbean_cup_qualification.txt
+Suriname,French Guiana,1,0,1,Paramaribo,Suriname,1994_cfu_caribbean_cup_qualification.txt
+Guyana,French Guiana,1,1,X,Paramaribo,Suriname,1994_cfu_caribbean_cup_qualification.txt
+Barbados,Puerto Rico,0,1,2,Bridgetown,Barbados,1994_cfu_caribbean_cup_qualification.txt
+Suriname,Guyana,2,0,1,Paramaribo,Suriname,1994_cfu_caribbean_cup_qualification.txt
+Grenada,Puerto Rico,1,0,1,Bridgetown,Barbados,1994_cfu_caribbean_cup_qualification.txt
+Barbados,Grenada,3,2,1,Bridgetown,Barbados,1994_cfu_caribbean_cup_qualification.txt
+Dominica,Antigua and Barbuda,3,2,1,Basseterre,Saint Kitts and Nevis,1994_cfu_caribbean_cup_qualification.txt
+Saint Kitts and Nevis,Montserrat,9,1,1,Basseterre,Saint Kitts and Nevis,1994_cfu_caribbean_cup_qualification.txt
+Antigua and Barbuda,Montserrat,8,0,1,Basseterre,Saint Kitts and Nevis,1994_cfu_caribbean_cup_qualification.txt
+Saint Kitts and Nevis,Dominica,2,3,2,Basseterre,Saint Kitts and Nevis,1994_cfu_caribbean_cup_qualification.txt
+Cayman Islands,British Virgin Islands,5,0,1,George Town,Cayman Islands,1994_cfu_caribbean_cup_qualification.txt
+Jamaica,Sint Maarten,3,2,1,George Town,Cayman Islands,1994_cfu_caribbean_cup_qualification.txt
+Cayman Islands,Sint Maarten,5,0,1,George Town,Cayman Islands,1994_cfu_caribbean_cup_qualification.txt
+Guadeloupe,Anguilla,9,0,1,Kingstown,Saint Vincent and the Grenadines,1994_cfu_caribbean_cup_qualification.txt
+Jamaica,British Virgin Islands,12,0,1,George Town,Cayman Islands,1994_cfu_caribbean_cup_qualification.txt
+Cayman Islands,Jamaica,3,2,1,West Bay,Cayman Islands,1994_cfu_caribbean_cup_qualification.txt
+Sint Maarten,British Virgin Islands,3,0,1,George Town,Cayman Islands,1994_cfu_caribbean_cup_qualification.txt
+Saint Vincent and the Grenadines,Anguilla,2,0,1,Kingstown,Saint Vincent and the Grenadines,1994_cfu_caribbean_cup_qualification.txt
+Dominican Republic,Haiti,0,1,2,Santo Domingo,Dominican Republic,1994_cfu_caribbean_cup_qualification.txt
+Sint Maarten,Saint Kitts and Nevis,0,2,2,Philipsburg,Sint Maarten,1995_cfu_caribbean_cup_qualification.txt
+Grenada,Saint Lucia,2,0,1,St. George's,Grenada,1995_cfu_caribbean_cup_qualification.txt
+Barbados,Guyana,3,0,1,Bridgetown,Barbados,1995_cfu_caribbean_cup_qualification.txt
+Montserrat,Anguilla,3,2,1,Plymouth,Montserrat,1995_cfu_caribbean_cup_qualification.txt
+Saint Kitts and Nevis,Sint Maarten,0,1,2,Basseterre,Saint Kitts and Nevis,1995_cfu_caribbean_cup_qualification.txt
+Anguilla,Montserrat,0,1,2,The Valley,Anguilla,1995_cfu_caribbean_cup_qualification.txt
+Guyana,Barbados,0,4,2,Georgetown,Guyana,1995_cfu_caribbean_cup_qualification.txt
+Saint Lucia,Grenada,4,0,1,Castries,Saint Lucia,1995_cfu_caribbean_cup_qualification.txt
+Barbados,Saint Lucia,1,1,X,Bridgetown,Barbados,1995_cfu_caribbean_cup_qualification.txt
+Saint Kitts and Nevis,Antigua and Barbuda,1,1,X,Basseterre,Saint Kitts and Nevis,1995_cfu_caribbean_cup_qualification.txt
+Aruba,Curaçao,3,4,2,Oranjestad,Aruba,1995_cfu_caribbean_cup_qualification.txt
+Saint Lucia,Barbados,2,1,1,Castries,Saint Lucia,1995_cfu_caribbean_cup_qualification.txt
+French Guiana,Martinique,1,3,2,Cayenne,French Guiana,1995_cfu_caribbean_cup_qualification.txt
+Guadeloupe,Suriname,1,2,2,Cayenne,French Guiana,1995_cfu_caribbean_cup_qualification.txt
+French Guiana,Guadeloupe,2,2,X,Cayenne,French Guiana,1995_cfu_caribbean_cup_qualification.txt
+Martinique,Suriname,1,1,X,Cayenne,French Guiana,1995_cfu_caribbean_cup_qualification.txt
+French Guiana,Suriname,4,0,1,Cayenne,French Guiana,1995_cfu_caribbean_cup_qualification.txt
+Guadeloupe,Martinique,2,1,1,Cayenne,French Guiana,1995_cfu_caribbean_cup_qualification.txt
+Curaçao,Aruba,3,2,1,Willemstad,Curaçao,1995_cfu_caribbean_cup_qualification.txt
+Antigua and Barbuda,Saint Kitts and Nevis,2,2,X,St. John's,Antigua and Barbuda   [Antigua and Barbuda wins on penalties],1995_cfu_caribbean_cup_qualification.txt
+Cuba,Curaçao,3,0,1,Santo Domingo,Dominican Republic,1995_cfu_caribbean_cup_qualification.txt
+Dominican Republic,Puerto Rico,3,1,1,Santo Domingo,Dominican Republic,1995_cfu_caribbean_cup_qualification.txt
+Curaçao,Puerto Rico,2,2,X,Santo Domingo,Dominican Republic,1995_cfu_caribbean_cup_qualification.txt
+Dominican Republic,Cuba,0,3,2,Santo Domingo,Dominican Republic,1995_cfu_caribbean_cup_qualification.txt
+Cuba,Puerto Rico,9,0,1,Santo Domingo,Dominican Republic,1995_cfu_caribbean_cup_qualification.txt
+Dominican Republic,Curaçao,1,2,2,Santo Domingo,Dominican Republic,1995_cfu_caribbean_cup_qualification.txt
+Dominica,Saint Lucia,0,1,2,Roseau,Dominica,1996_cfu_caribbean_cup_qualification.txt
+Curaçao,Grenada,0,1,2,Willemstad,Curaçao,1996_cfu_caribbean_cup_qualification.txt
+French Guiana,Suriname,1,2,2,Cayenne,French Guiana,1996_cfu_caribbean_cup_qualification.txt
+Saint Kitts and Nevis,Anguilla,8,0,1,Basseterre,Saint Kitts and Nevis,1996_cfu_caribbean_cup_qualification.txt
+Sint Maarten,Anguilla,4,0,1,Basseterre,Saint Kitts and Nevis,1996_cfu_caribbean_cup_qualification.txt
+Saint Kitts and Nevis,Sint Maarten,3,0,1,Basseterre,Saint Kitts and Nevis,1996_cfu_caribbean_cup_qualification.txt
+Suriname,French Guiana,1,1,X,Paramaribo,Suriname,1996_cfu_caribbean_cup_qualification.txt
+Saint Lucia,Dominica,1,1,X,Castries,Saint Lucia,1996_cfu_caribbean_cup_qualification.txt
+Jamaica,Barbados,2,0,1,Kingston,Jamaica,1996_cfu_caribbean_cup_qualification.txt
+Martinique,Saint Lucia,1,0,1,Fort-de-France,Martinique,1996_cfu_caribbean_cup_qualification.txt
+Cayman Islands,Cuba,0,4,2,George Town,Cayman Islands,1996_cfu_caribbean_cup_qualification.txt
+Haiti,Dominican Republic,6,0,1,Port-au-Prince,Haiti,1996_cfu_caribbean_cup_qualification.txt
+Barbados,Jamaica,2,0,1,Bridgetown,Barbados   [Jamaica wins on penalties],1996_cfu_caribbean_cup_qualification.txt
+Haiti,Dominican Republic,1,1,X,Port-au-Prince,Haiti,1996_cfu_caribbean_cup_qualification.txt
+Saint Lucia,Martinique,0,1,2,Castries,Saint Lucia,1996_cfu_caribbean_cup_qualification.txt
+Suriname,Guyana,2,1,1,Paramaribo,Suriname,1996_cfu_caribbean_cup_qualification.txt
+Guyana,Suriname,2,1,1,Georgetown,Guyana   [Suriname wins on penalties],1996_cfu_caribbean_cup_qualification.txt
+Guyana,French Guiana,2,0,1,Georgetown,Guyana,1997_cfu_caribbean_cup_qualification.txt
+Jamaica,Bermuda,1,0,1,Kingston,Jamaica,1997_cfu_caribbean_cup_qualification.txt
+Guyana,French Guiana,2,2,X,Georgetown,Guyana,1997_cfu_caribbean_cup_qualification.txt
+Jamaica,Bermuda,3,2,1,Kingston,Jamaica,1997_cfu_caribbean_cup_qualification.txt
+Aruba,Curaçao,2,1,1,Oranjestad,Aruba,1997_cfu_caribbean_cup_qualification.txt
+Martinique,Saint Lucia,1,0,1,Fort-de-France,Martinique,1997_cfu_caribbean_cup_qualification.txt
+Saint Lucia,Saint Vincent and the Grenadines,3,2,1,Fort-de-France,Martinique,1997_cfu_caribbean_cup_qualification.txt
+Barbados,Grenada,1,1,X,Port of Spain,Trinidad and Tobago,1997_cfu_caribbean_cup_qualification.txt
+Dominica,British Virgin Islands,6,1,1,Roseau,Dominica,1997_cfu_caribbean_cup_qualification.txt
+Sint Maarten,Anguilla,3,0,1,Roseau,Dominica,1997_cfu_caribbean_cup_qualification.txt
+British Virgin Islands,Anguilla,4,2,1,Roseau,Dominica,1997_cfu_caribbean_cup_qualification.txt
+Dominica,Sint Maarten,1,0,1,Roseau,Dominica,1997_cfu_caribbean_cup_qualification.txt
+Grenada,Guyana,5,1,1,Palo Seco,Trinidad and Tobago,1997_cfu_caribbean_cup_qualification.txt
+Dominica,Anguilla,5,0,1,Roseau,Dominica,1997_cfu_caribbean_cup_qualification.txt
+Guyana,Barbados,0,2,2,Arima,Trinidad and Tobago,1997_cfu_caribbean_cup_qualification.txt
+Sint Maarten,British Virgin Islands,3,2,1,Roseau,Dominica,1997_cfu_caribbean_cup_qualification.txt
+Dominica,Martinique,1,2,2,Roseau,Dominica,1997_cfu_caribbean_cup_qualification.txt
+Aruba,Jamaica,0,6,2,Oranjestad,Aruba,1997_cfu_caribbean_cup_qualification.txt
+Martinique,Dominica,7,0,1,Fort-de-France,Martinique,1997_cfu_caribbean_cup_qualification.txt
+Aruba,French Guiana,1,0,1,Oranjestad,Aruba,1998_cfu_caribbean_cup_qualification.txt
+Suriname,Curaçao,3,3,X,Oranjestad,Aruba,1998_cfu_caribbean_cup_qualification.txt
+Aruba,Curaçao,0,1,2,Oranjestad,Aruba,1998_cfu_caribbean_cup_qualification.txt
+Suriname,French Guiana,2,2,X,Oranjestad,Aruba,1998_cfu_caribbean_cup_qualification.txt
+Aruba,Suriname,3,3,X,Oranjestad,Aruba,1998_cfu_caribbean_cup_qualification.txt
+Curaçao,French Guiana,2,1,1,Oranjestad,Aruba,1998_cfu_caribbean_cup_qualification.txt
+Haiti,Puerto Rico,4,0,1,Port-au-Prince,Haiti,1998_cfu_caribbean_cup_qualification.txt
+Dominican Republic,Puerto Rico,3,1,1,Port-au-Prince,Haiti,1998_cfu_caribbean_cup_qualification.txt
+Haiti,Dominican Republic,5,0,1,Port-au-Prince,Haiti,1998_cfu_caribbean_cup_qualification.txt
+Saint Lucia,Barbados,2,1,1,Castries,Saint Lucia,1998_cfu_caribbean_cup_qualification.txt
+Martinique,Barbados,4,1,1,Castries,Saint Lucia,1998_cfu_caribbean_cup_qualification.txt
+Saint Lucia,Saint Vincent and the Grenadines,3,2,1,Castries,Saint Lucia,1998_cfu_caribbean_cup_qualification.txt
+Saint Lucia,Martinique,1,2,2,Castries,Saint Lucia,1998_cfu_caribbean_cup_qualification.txt
+Dominica,Guadeloupe,1,1,X,Basseterre,Saint Kitts and Nevis,1998_cfu_caribbean_cup_qualification.txt
+Saint Kitts and Nevis,British Virgin Islands,4,0,1,Basseterre,Saint Kitts and Nevis,1998_cfu_caribbean_cup_qualification.txt
+Guadeloupe,British Virgin Islands,3,0,1,Basseterre,Saint Kitts and Nevis,1998_cfu_caribbean_cup_qualification.txt
+Saint Kitts and Nevis,Dominica,1,2,2,Basseterre,Saint Kitts and Nevis,1998_cfu_caribbean_cup_qualification.txt
+Dominica,British Virgin Islands,4,1,1,Basseterre,Saint Kitts and Nevis,1998_cfu_caribbean_cup_qualification.txt
+Saint Kitts and Nevis,Guadeloupe,2,1,1,Basseterre,Saint Kitts and Nevis,1998_cfu_caribbean_cup_qualification.txt
+Grenada,Anguilla,14,1,1,St. John's,Antigua and Barbuda,1998_cfu_caribbean_cup_qualification.txt
+Antigua and Barbuda,Grenada,2,1,1,St. John's,Antigua and Barbuda,1998_cfu_caribbean_cup_qualification.txt
+Guyana,Anguilla,14,0,1,St. John's,Antigua and Barbuda,1998_cfu_caribbean_cup_qualification.txt
+Cayman Islands,Cuba,2,2,X,George Town,Cayman Islands,1998_cfu_caribbean_cup_qualification.txt
+Cuba,Bermuda,2,1,1,George Town,Cayman Islands,1998_cfu_caribbean_cup_qualification.txt
+Cayman Islands,Bermuda,2,0,1,George Town,Cayman Islands,1998_cfu_caribbean_cup_qualification.txt
+Martinique,French Guiana,3,1,1,Fort-de-France,Martinique,1999_cfu_caribbean_cup_qualification.txt
+British Virgin Islands,Montserrat,3,1,1,Road Town,British Virgin Islands,1999_cfu_caribbean_cup_qualification.txt
+British Virgin Islands,Montserrat,3,0,1,Road Town,British Virgin Islands,1999_cfu_caribbean_cup_qualification.txt
+Bahamas,Turks and Caicos Islands,3,0,1,Nassau,Bahamas,1999_cfu_caribbean_cup_qualification.txt
+United States Virgin Islands,Turks and Caicos Islands,2,2,X,Nassau,Bahamas,1999_cfu_caribbean_cup_qualification.txt
+Bahamas,United States Virgin Islands,0,0,X,Nassau,Bahamas,1999_cfu_caribbean_cup_qualification.txt
+Guyana,Barbados,2,2,X,Georgetown,Guyana,1999_cfu_caribbean_cup_qualification.txt
+Barbados,Guyana,2,0,1,Bridgetown,Barbados,1999_cfu_caribbean_cup_qualification.txt
+Barbados,Antigua and Barbuda,2,0,1,Pointe-à-Pitre,Guadeloupe,1999_cfu_caribbean_cup_qualification.txt
+Guadeloupe,Dominica,1,0,1,Pointe-à-Pitre,Guadeloupe,1999_cfu_caribbean_cup_qualification.txt
+Barbados,Dominica,3,1,1,Pointe-à-Pitre,Guadeloupe,1999_cfu_caribbean_cup_qualification.txt
+Guadeloupe,Antigua and Barbuda,2,1,1,Pointe-à-Pitre,Guadeloupe,1999_cfu_caribbean_cup_qualification.txt
+Antigua and Barbuda,Dominica,1,1,X,Pointe-à-Pitre,Guadeloupe,1999_cfu_caribbean_cup_qualification.txt
+Guadeloupe,Barbados,1,0,1,Pointe-à-Pitre,Guadeloupe,1999_cfu_caribbean_cup_qualification.txt
+British Virgin Islands,Dominican Republic,0,0,X,Port-au-Prince,Haiti,1999_cfu_caribbean_cup_qualification.txt
+Haiti,Puerto Rico,2,0,1,Port-au-Prince,Haiti,1999_cfu_caribbean_cup_qualification.txt
+British Virgin Islands,Puerto Rico,5,0,1,Port-au-Prince,Haiti,1999_cfu_caribbean_cup_qualification.txt
+Haiti,Dominican Republic,4,0,1,Port-au-Prince,Haiti,1999_cfu_caribbean_cup_qualification.txt
+Dominican Republic,Puerto Rico,2,0,1,Port-au-Prince,Haiti,1999_cfu_caribbean_cup_qualification.txt
+Haiti,British Virgin Islands,6,0,1,Port-au-Prince,Haiti,1999_cfu_caribbean_cup_qualification.txt
+Saint Lucia,Martinique,3,1,1,Kingstown,Saint Vincent and the Grenadines,1999_cfu_caribbean_cup_qualification.txt
+Saint Vincent and the Grenadines,Saint Kitts and Nevis,3,4,2,Kingstown,Saint Vincent and the Grenadines,1999_cfu_caribbean_cup_qualification.txt
+Martinique,Saint Kitts and Nevis,2,1,1,Kingstown,Saint Vincent and the Grenadines,1999_cfu_caribbean_cup_qualification.txt
+Saint Vincent and the Grenadines,Saint Lucia,2,2,X,Kingstown,Saint Vincent and the Grenadines,1999_cfu_caribbean_cup_qualification.txt
+Saint Kitts and Nevis,Saint Lucia,4,3,1,Kingstown,Saint Vincent and the Grenadines,1999_cfu_caribbean_cup_qualification.txt
+Curaçao,Grenada,1,3,2,Willemstad,Curaçao,1999_cfu_caribbean_cup_qualification.txt
+Bermuda,Bahamas,6,0,1,Hamilton,Bermuda,1999_cfu_caribbean_cup_qualification.txt
+Cuba,Cayman Islands,4,1,1,Hamilton,Bermuda,1999_cfu_caribbean_cup_qualification.txt
+Grenada,Suriname,0,0,X,Willemstad,Curaçao,1999_cfu_caribbean_cup_qualification.txt
+Bermuda,Cayman Islands,4,1,1,Hamilton,Bermuda,1999_cfu_caribbean_cup_qualification.txt
+Cuba,Bahamas,7,0,1,Hamilton,Bermuda,1999_cfu_caribbean_cup_qualification.txt
+Curaçao,Suriname,1,1,X,Willemstad,Curaçao,1999_cfu_caribbean_cup_qualification.txt
+Bermuda,Cuba,1,2,2,Hamilton,Bermuda,1999_cfu_caribbean_cup_qualification.txt
+Cayman Islands,Bahamas,4,1,1,Hamilton,Bermuda,1999_cfu_caribbean_cup_qualification.txt
+Puerto Rico,British Virgin Islands,1,2,2,San Juan,Puerto Rico,2001_cfu_caribbean_cup_qualification.txt
+Saint Martin,Montserrat,3,1,1,Philipsburg,Sint Maarten,2001_cfu_caribbean_cup_qualification.txt
+Anguilla,Montserrat,4,1,1,Marigot,Saint Martin,2001_cfu_caribbean_cup_qualification.txt
+Saint Martin,Anguilla,3,1,1,Marigot,Saint Martin,2001_cfu_caribbean_cup_qualification.txt
+British Virgin Islands,Puerto Rico,0,0,X,Road Town,British Virgin Islands,2001_cfu_caribbean_cup_qualification.txt
+Saint Kitts and Nevis,Dominican Republic,2,1,1,St. John's,Antigua and Barbuda,2001_cfu_caribbean_cup_qualification.txt
+Antigua and Barbuda,Dominican Republic,2,3,2,St. John's,Antigua and Barbuda,2001_cfu_caribbean_cup_qualification.txt
+Antigua and Barbuda,Saint Kitts and Nevis,2,2,X,St. John's,Antigua and Barbuda,2001_cfu_caribbean_cup_qualification.txt
+Barbados,Grenada,2,1,1,Paramaribo,Suriname,2001_cfu_caribbean_cup_qualification.txt
+Cayman Islands,British Virgin Islands,2,2,X,Fort-de-France,Martinique,2001_cfu_caribbean_cup_qualification.txt
+Cuba,Dominica,3,1,1,Uitvlugt,Guyana,2001_cfu_caribbean_cup_qualification.txt
+Guyana,Saint Martin,2,0,1,Georgetown,Guyana,2001_cfu_caribbean_cup_qualification.txt
+Suriname,Aruba,5,0,1,Paramaribo,Suriname,2001_cfu_caribbean_cup_qualification.txt
+Cuba,Saint Martin,1,0,1,Uitvlugt,Guyana,2001_cfu_caribbean_cup_qualification.txt
+Grenada,Aruba,4,2,1,Paramaribo,Suriname,2001_cfu_caribbean_cup_qualification.txt
+Guyana,Dominica,2,0,1,Georgetown,Guyana,2001_cfu_caribbean_cup_qualification.txt
+Martinique,British Virgin Islands,6,0,1,Fort-de-France,Martinique,2001_cfu_caribbean_cup_qualification.txt
+Suriname,Barbados,2,2,X,Paramaribo,Suriname,2001_cfu_caribbean_cup_qualification.txt
+Barbados,Aruba,5,2,1,Paramaribo,Suriname,2001_cfu_caribbean_cup_qualification.txt
+Dominica,Saint Martin,2,3,2,Georgetown,Guyana,2001_cfu_caribbean_cup_qualification.txt
+Guyana,Cuba,0,3,2,Georgetown,Guyana,2001_cfu_caribbean_cup_qualification.txt
+Martinique,Cayman Islands,1,1,X,Fort-de-France,Martinique,2001_cfu_caribbean_cup_qualification.txt
+Suriname,Grenada,3,1,1,Paramaribo,Suriname,2001_cfu_caribbean_cup_qualification.txt
+Guadeloupe,Saint Lucia,2,3,2,Port-au-Prince,Haiti,2001_cfu_caribbean_cup_qualification.txt
+Haiti,United States Virgin Islands,12,1,1,Port-au-Prince,Haiti,2001_cfu_caribbean_cup_qualification.txt
+Guadeloupe,United States Virgin Islands,11,0,1,Port-au-Prince,Haiti,2001_cfu_caribbean_cup_qualification.txt
+Haiti,Saint Lucia,3,2,1,Port-au-Prince,Haiti,2001_cfu_caribbean_cup_qualification.txt
+Haiti,Guadeloupe,2,0,1,Port-au-Prince,Haiti,2001_cfu_caribbean_cup_qualification.txt
+Saint Lucia,United States Virgin Islands,14,1,1,Port-au-Prince,Haiti,2001_cfu_caribbean_cup_qualification.txt
+Saint Kitts and Nevis,Montserrat,6,1,1,Basseterre,Saint Kitts and Nevis,2004_cfu_caribbean_cup_qualification.txt
+Montserrat,Antigua and Barbuda,4,5,2,Basseterre,Saint Kitts and Nevis,2004_cfu_caribbean_cup_qualification.txt
+Saint Kitts and Nevis,Saint Lucia,1,1,X,Basseterre,Saint Kitts and Nevis,2004_cfu_caribbean_cup_qualification.txt
+Saint Kitts and Nevis,Antigua and Barbuda,2,0,1,Basseterre,Saint Kitts and Nevis,2004_cfu_caribbean_cup_qualification.txt
+Antigua and Barbuda,Saint Lucia,1,2,2,Basseterre,Saint Kitts and Nevis,2004_cfu_caribbean_cup_qualification.txt
+Guadeloupe,French Guiana,0,1,2,Fort-de-France,Martinique,2004_cfu_caribbean_cup_qualification.txt
+Martinique,Dominica,5,1,1,Fort-de-France,Martinique,2004_cfu_caribbean_cup_qualification.txt
+Guadeloupe,Dominica,7,0,1,Rivière-Pilote,Martinique,2004_cfu_caribbean_cup_qualification.txt
+Martinique,French Guiana,0,0,X,Rivière-Pilote,Martinique,2004_cfu_caribbean_cup_qualification.txt
+Dominica,French Guiana,0,4,2,Fort-de-France,Martinique,2004_cfu_caribbean_cup_qualification.txt
+Martinique,Guadeloupe,0,0,X,Fort-de-France,Martinique,2004_cfu_caribbean_cup_qualification.txt
+Cayman Islands,Bermuda,1,2,2,Kingstown,Saint Vincent and the Grenadines,2004_cfu_caribbean_cup_qualification.txt
+Grenada,Suriname,2,2,X,Macoya,Trinidad and Tobago,2004_cfu_caribbean_cup_qualification.txt
+Haiti,United States Virgin Islands,11,0,1,Kingston,Jamaica,2004_cfu_caribbean_cup_qualification.txt
+Jamaica,Saint Martin,12,0,1,Kingston,Jamaica,2004_cfu_caribbean_cup_qualification.txt
+Trinidad and Tobago,Puerto Rico,5,0,1,Macoya,Trinidad and Tobago,2004_cfu_caribbean_cup_qualification.txt
+British Virgin Islands,Cayman Islands,0,1,2,Kingstown,Saint Vincent and the Grenadines,2004_cfu_caribbean_cup_qualification.txt
+Jamaica,United States Virgin Islands,11,1,1,Montego Bay,Jamaica,2004_cfu_caribbean_cup_qualification.txt
+Puerto Rico,Suriname,1,1,X,San Fernando,Trinidad and Tobago,2004_cfu_caribbean_cup_qualification.txt
+Saint Martin,Haiti,0,2,2,Montego Bay,Jamaica,2004_cfu_caribbean_cup_qualification.txt
+Trinidad and Tobago,Grenada,2,0,1,San Fernando,Trinidad and Tobago,2004_cfu_caribbean_cup_qualification.txt
+Bermuda,British Virgin Islands,0,2,2,Kingstown,Saint Vincent and the Grenadines,2004_cfu_caribbean_cup_qualification.txt
+Grenada,Puerto Rico,5,2,1,Arima,Trinidad and Tobago,2004_cfu_caribbean_cup_qualification.txt
+Jamaica,Haiti,3,1,1,Kingston,Jamaica,2004_cfu_caribbean_cup_qualification.txt
+Trinidad and Tobago,Suriname,1,0,1,Arima,Trinidad and Tobago,2004_cfu_caribbean_cup_qualification.txt
+United States Virgin Islands,Saint Martin,0,0,X,Kingston,Jamaica,2004_cfu_caribbean_cup_qualification.txt
+British Virgin Islands,Trinidad and Tobago,0,4,2,Road Town,British Virgin Islands,2004_cfu_caribbean_cup_qualification.txt
+Cuba,Martinique,2,0,1,Havana,Cuba,2004_cfu_caribbean_cup_qualification.txt
+Haiti,Saint Kitts and Nevis,1,0,1,Fort Lauderdale,United States,2004_cfu_caribbean_cup_qualification.txt
+Saint Lucia,Jamaica,1,1,X,Vieux Fort,Saint Lucia,2004_cfu_caribbean_cup_qualification.txt
+Saint Kitts and Nevis,Haiti,0,2,2,Basseterre,Saint Kitts and Nevis,2004_cfu_caribbean_cup_qualification.txt
+Jamaica,Saint Lucia,2,1,1,Kingston,Jamaica,2004_cfu_caribbean_cup_qualification.txt
+Trinidad and Tobago,British Virgin Islands,2,0,1,Macoya,Trinidad and Tobago,2004_cfu_caribbean_cup_qualification.txt
+Martinique,Cuba,0,2,2,Fort-de-France,Martinique,2004_cfu_caribbean_cup_qualification.txt
+Jamaica,French Guiana,5,0,1,Kingston,Jamaica,2005_cfu_caribbean_cup_qualification.txt
+Haiti,Cuba,0,1,2,Port-au-Prince,Haiti,2005_cfu_caribbean_cup_qualification.txt
+French Guiana,Jamaica,0,0,X,Cayenne,French Guiana,2005_cfu_caribbean_cup_qualification.txt
+Cuba,Haiti,1,1,X,Havana,Cuba,2005_cfu_caribbean_cup_qualification.txt
+Bahamas,Cayman Islands,3,1,1,Havana,Cuba,2006_cfu_caribbean_cup_qualification.txt
+Cuba,Turks and Caicos Islands,6,0,1,Havana,Cuba,2006_cfu_caribbean_cup_qualification.txt
+Cayman Islands,Turks and Caicos Islands,0,2,2,Havana,Cuba,2006_cfu_caribbean_cup_qualification.txt
+Cuba,Bahamas,6,0,1,Havana,Cuba,2006_cfu_caribbean_cup_qualification.txt
+Cuba,Cayman Islands,7,0,1,Havana,Cuba,2006_cfu_caribbean_cup_qualification.txt
+Curaçao,Grenada,1,1,X,Willemstad,Curaçao,2006_cfu_caribbean_cup_qualification.txt
+Suriname,Guyana,0,5,2,Willemstad,Curaçao,2006_cfu_caribbean_cup_qualification.txt
+Turks and Caicos Islands,Bahamas,2,3,2,Havana,Cuba,2006_cfu_caribbean_cup_qualification.txt
+Curaçao,Guyana,0,5,2,Willemstad,Curaçao,2006_cfu_caribbean_cup_qualification.txt
+Suriname,Grenada,1,0,1,Willemstad,Curaçao,2006_cfu_caribbean_cup_qualification.txt
+Curaçao,Suriname,0,1,2,Willemstad,Curaçao,2006_cfu_caribbean_cup_qualification.txt
+Grenada,Guyana,0,1,2,Willemstad,Curaçao,2006_cfu_caribbean_cup_qualification.txt
+Antigua and Barbuda,Anguilla,5,3,1,St. John's,Antigua and Barbuda,2006_cfu_caribbean_cup_qualification.txt
+Barbados,Saint Kitts and Nevis,1,1,X,St. John's,Antigua and Barbuda,2006_cfu_caribbean_cup_qualification.txt
+Dominica,Martinique,0,4,2,Les Abymes,Guadeloupe,2006_cfu_caribbean_cup_qualification.txt
+Guadeloupe,Saint Martin,1,0,1,Les Abymes,Guadeloupe,2006_cfu_caribbean_cup_qualification.txt
+Anguilla,Saint Kitts and Nevis,1,6,2,St. John's,Antigua and Barbuda,2006_cfu_caribbean_cup_qualification.txt
+Antigua and Barbuda,Barbados,1,3,2,St. John's,Antigua and Barbuda,2006_cfu_caribbean_cup_qualification.txt
+Guadeloupe,Dominica,1,0,1,Les Abymes,Guadeloupe,2006_cfu_caribbean_cup_qualification.txt
+Martinique,Saint Martin,1,0,1,Les Abymes,Guadeloupe,2006_cfu_caribbean_cup_qualification.txt
+Antigua and Barbuda,Saint Kitts and Nevis,1,0,1,St. John's,Antigua and Barbuda,2006_cfu_caribbean_cup_qualification.txt
+Barbados,Anguilla,7,1,1,St. John's,Antigua and Barbuda,2006_cfu_caribbean_cup_qualification.txt
+Dominica,Saint Martin,0,0,X,Les Abymes,Guadeloupe,2006_cfu_caribbean_cup_qualification.txt
+Guadeloupe,Martinique,4,0,1,Les Abymes,Guadeloupe,2006_cfu_caribbean_cup_qualification.txt
+Jamaica,Saint Lucia,4,0,1,Kingston,Jamaica,2006_cfu_caribbean_cup_qualification.txt
+United States Virgin Islands,Bermuda,0,6,2,Charlotte Amalie,United States Virgin Islands,2006_cfu_caribbean_cup_qualification.txt
+Bermuda,Dominican Republic,3,1,1,Charlotte Amalie,United States Virgin Islands,2006_cfu_caribbean_cup_qualification.txt
+Saint Lucia,Haiti,1,7,2,Kingston,Jamaica,2006_cfu_caribbean_cup_qualification.txt
+Jamaica,Haiti,2,0,1,Kingston,Jamaica,2006_cfu_caribbean_cup_qualification.txt
+Saint Vincent and the Grenadines,Saint Lucia,8,0,1,Kingston,Jamaica,2006_cfu_caribbean_cup_qualification.txt
+United States Virgin Islands,Dominican Republic,1,6,2,Charlotte Amalie,United States Virgin Islands,2006_cfu_caribbean_cup_qualification.txt
+Haiti,Cuba,1,2,2,Fort-de-France,Martinique,2006_cfu_caribbean_cup_qualification.txt
+Martinique,Suriname,1,0,1,Fort-de-France,Martinique,2006_cfu_caribbean_cup_qualification.txt
+Cuba,Suriname,3,1,1,Fort-de-France,Martinique,2006_cfu_caribbean_cup_qualification.txt
+Martinique,Haiti,1,0,1,Fort-de-France,Martinique,2006_cfu_caribbean_cup_qualification.txt
+Haiti,Suriname,1,1,X,Fort-de-France,Martinique,2006_cfu_caribbean_cup_qualification.txt
+Martinique,Cuba,0,0,X,Fort-de-France,Martinique,2006_cfu_caribbean_cup_qualification.txt
+Barbados,Bahamas,2,1,1,Bridgetown,Barbados,2006_cfu_caribbean_cup_qualification.txt
+Bahamas,Bermuda,0,4,2,Bridgetown,Barbados,2006_cfu_caribbean_cup_qualification.txt
+Barbados,Bermuda,1,1,X,Bridgetown,Barbados,2006_cfu_caribbean_cup_qualification.txt
+Dominican Republic,Guadeloupe,0,3,2,Georgetown,Guyana,2006_cfu_caribbean_cup_qualification.txt
+Guyana,Antigua and Barbuda,6,0,1,Georgetown,Guyana,2006_cfu_caribbean_cup_qualification.txt
+Dominican Republic,Antigua and Barbuda,2,0,1,Georgetown,Guyana,2006_cfu_caribbean_cup_qualification.txt
+Guyana,Guadeloupe,3,2,1,Georgetown,Guyana,2006_cfu_caribbean_cup_qualification.txt
+Antigua and Barbuda,Guadeloupe,1,3,2,Georgetown,Guyana,2006_cfu_caribbean_cup_qualification.txt
+Guyana,Dominican Republic,4,0,1,Georgetown,Guyana,2006_cfu_caribbean_cup_qualification.txt
+Haiti,Bermuda,2,0,1,Couva,Trinidad and Tobago,2007_cfu_caribbean_cup_qualification.txt
+Bermuda,Haiti,0,3,2,Couva,Trinidad and Tobago,2007_cfu_caribbean_cup_qualification.txt
+Curaçao,Aruba,0,0,X,Willemstad,Curaçao,2008_cfu_caribbean_cup_qualification.txt
+Grenada,Aruba,3,1,1,Willemstad,Curaçao,2008_cfu_caribbean_cup_qualification.txt
+Curaçao,Grenada,2,0,1,Willemstad,Curaçao,2008_cfu_caribbean_cup_qualification.txt
+Guyana,Dominica,3,0,1,Providence,Guyana,2008_cfu_caribbean_cup_qualification.txt
+Dominica,Suriname,1,3,2,Blairmont,Guyana,2008_cfu_caribbean_cup_qualification.txt
+Guyana,Suriname,1,1,X,Providence,Guyana,2008_cfu_caribbean_cup_qualification.txt
+Bermuda,Antigua and Barbuda,0,4,2,George Town,Cayman Islands,2008_cfu_caribbean_cup_qualification.txt
+Cayman Islands,Saint Martin,3,0,1,George Town,Cayman Islands,2008_cfu_caribbean_cup_qualification.txt
+Cayman Islands,Antigua and Barbuda,1,1,X,George Town,Cayman Islands,2008_cfu_caribbean_cup_qualification.txt
+Saint Martin,Bermuda,0,7,2,George Town,Cayman Islands,2008_cfu_caribbean_cup_qualification.txt
+Antigua and Barbuda,Saint Martin,3,2,1,George Town,Cayman Islands,2008_cfu_caribbean_cup_qualification.txt
+Cayman Islands,Bermuda,0,0,X,George Town,Cayman Islands,2008_cfu_caribbean_cup_qualification.txt
+Martinique,Anguilla,3,1,1,Fort-de-France,Martinique,2008_cfu_caribbean_cup_qualification.txt
+Saint Kitts and Nevis,British Virgin Islands,4,0,1,Basseterre,Saint Kitts and Nevis,2008_cfu_caribbean_cup_qualification.txt
+British Virgin Islands,Barbados,1,2,2,Basseterre,Saint Kitts and Nevis,2008_cfu_caribbean_cup_qualification.txt
+Saint Kitts and Nevis,Barbados,1,3,2,Basseterre,Saint Kitts and Nevis,2008_cfu_caribbean_cup_qualification.txt
+Guadeloupe,Cayman Islands,7,1,1,Les Abymes,Guadeloupe,2008_cfu_caribbean_cup_qualification.txt
+Martinique,Grenada,2,2,X,Les Abymes,Guadeloupe,2008_cfu_caribbean_cup_qualification.txt
+Cayman Islands,Martinique,0,1,2,Les Abymes,Guadeloupe,2008_cfu_caribbean_cup_qualification.txt
+Guadeloupe,Grenada,2,1,1,Les Abymes,Guadeloupe,2008_cfu_caribbean_cup_qualification.txt
+Grenada,Cayman Islands,4,2,1,Les Abymes,Guadeloupe,2008_cfu_caribbean_cup_qualification.txt
+Guadeloupe,Martinique,3,1,1,Les Abymes,Guadeloupe,2008_cfu_caribbean_cup_qualification.txt
+Barbados,Suriname,3,2,1,Havana,Cuba,2008_cfu_caribbean_cup_qualification.txt
+Cuba,Curaçao,7,1,1,Havana,Cuba,2008_cfu_caribbean_cup_qualification.txt
+Cuba,Barbados,1,1,X,Havana,Cuba,2008_cfu_caribbean_cup_qualification.txt
+Suriname,Curaçao,2,1,1,Havana,Cuba,2008_cfu_caribbean_cup_qualification.txt
+Cuba,Suriname,6,0,1,Havana,Cuba,2008_cfu_caribbean_cup_qualification.txt
+Curaçao,Barbados,1,2,2,Havana,Cuba,2008_cfu_caribbean_cup_qualification.txt
+Guyana,Saint Kitts and Nevis,1,1,X,Macoya,Trinidad and Tobago,2008_cfu_caribbean_cup_qualification.txt
+Trinidad and Tobago,Antigua and Barbuda,3,2,1,Macoya,Trinidad and Tobago,2008_cfu_caribbean_cup_qualification.txt
+Antigua and Barbuda,Guyana,2,1,1,Macoya,Trinidad and Tobago,2008_cfu_caribbean_cup_qualification.txt
+Trinidad and Tobago,Saint Kitts and Nevis,3,1,1,Macoya,Trinidad and Tobago,2008_cfu_caribbean_cup_qualification.txt
+Saint Kitts and Nevis,Antigua and Barbuda,3,4,2,Macoya,Trinidad and Tobago,2008_cfu_caribbean_cup_qualification.txt
+Trinidad and Tobago,Guyana,1,1,X,Macoya,Trinidad and Tobago,2008_cfu_caribbean_cup_qualification.txt
+Saint Martin,Cayman Islands,1,1,X,Bayamón,Puerto Rico,2010_cfu_caribbean_cup_qualification.txt
+Puerto Rico,Anguilla,3,1,1,Bayamón,Puerto Rico,2010_cfu_caribbean_cup_qualification.txt
+Cayman Islands,Anguilla,4,1,1,Bayamón,Puerto Rico,2010_cfu_caribbean_cup_qualification.txt
+Puerto Rico,Saint Martin,2,0,1,Bayamón,Puerto Rico,2010_cfu_caribbean_cup_qualification.txt
+Anguilla,Saint Martin,2,1,1,Bayamón,Puerto Rico,2010_cfu_caribbean_cup_qualification.txt
+Barbados,Saint Kitts and Nevis,1,1,X,Kingstown,Saint Vincent and the Grenadines,2010_cfu_caribbean_cup_qualification.txt
+Puerto Rico,Cayman Islands,2,0,1,Bayamón,Puerto Rico,2010_cfu_caribbean_cup_qualification.txt
+Montserrat,Barbados,0,5,2,Kingstown,Saint Vincent and the Grenadines,2010_cfu_caribbean_cup_qualification.txt
+Saint Vincent and the Grenadines,Saint Kitts and Nevis,1,1,X,Kingstown,Saint Vincent and the Grenadines,2010_cfu_caribbean_cup_qualification.txt
+Saint Kitts and Nevis,Montserrat,4,0,1,Kingstown,Saint Vincent and the Grenadines,2010_cfu_caribbean_cup_qualification.txt
+Guyana,Saint Lucia,1,0,1,Paramaribo,Suriname,2010_cfu_caribbean_cup_qualification.txt
+Suriname,Curaçao,2,1,1,Paramaribo,Suriname,2010_cfu_caribbean_cup_qualification.txt
+Dominican Republic,British Virgin Islands,17,0,1,San Cristóbal,Dominican Republic,2010_cfu_caribbean_cup_qualification.txt
+British Virgin Islands,Dominica,0,10,2,San Cristóbal,Dominican Republic,2010_cfu_caribbean_cup_qualification.txt
+Curaçao,Guyana,2,3,2,Paramaribo,Suriname,2010_cfu_caribbean_cup_qualification.txt
+Suriname,Saint Lucia,2,1,1,Paramaribo,Suriname,2010_cfu_caribbean_cup_qualification.txt
+Dominican Republic,Dominica,0,1,2,San Cristóbal,Dominican Republic,2010_cfu_caribbean_cup_qualification.txt
+Saint Lucia,Curaçao,2,2,X,Paramaribo,Suriname,2010_cfu_caribbean_cup_qualification.txt
+Suriname,Guyana,0,2,2,Paramaribo,Suriname,2010_cfu_caribbean_cup_qualification.txt
+Grenada,Puerto Rico,3,1,1,St. George's,Grenada,2010_cfu_caribbean_cup_qualification.txt
+Saint Kitts and Nevis,Guadeloupe,1,2,2,St. George's,Grenada,2010_cfu_caribbean_cup_qualification.txt
+Grenada,Saint Kitts and Nevis,2,0,1,St. George's,Grenada,2010_cfu_caribbean_cup_qualification.txt
+Guadeloupe,Puerto Rico,3,2,1,St. George's,Grenada,2010_cfu_caribbean_cup_qualification.txt
+Grenada,Guadeloupe,0,3,2,St. George's,Grenada,2010_cfu_caribbean_cup_qualification.txt
+Puerto Rico,Saint Kitts and Nevis,0,1,2,St. George's,Grenada,2010_cfu_caribbean_cup_qualification.txt
+Haiti,Guyana,0,0,X,San Fernando,Trinidad and Tobago,2010_cfu_caribbean_cup_qualification.txt
+Trinidad and Tobago,Guyana,2,1,1,San Fernando,Trinidad and Tobago,2010_cfu_caribbean_cup_qualification.txt
+Trinidad and Tobago,Haiti,4,0,1,San Fernando,Trinidad and Tobago,2010_cfu_caribbean_cup_qualification.txt
+Antigua and Barbuda,Suriname,2,1,1,St. John's,Antigua and Barbuda,2010_cfu_caribbean_cup_qualification.txt
+Cuba,Dominica,4,2,1,St. John's,Antigua and Barbuda,2010_cfu_caribbean_cup_qualification.txt
+Antigua and Barbuda,Dominica,0,0,X,St. John's,Antigua and Barbuda,2010_cfu_caribbean_cup_qualification.txt
+Suriname,Cuba,3,3,X,St. John's,Antigua and Barbuda,2010_cfu_caribbean_cup_qualification.txt
+Antigua and Barbuda,Cuba,0,0,X,St. John's,Antigua and Barbuda,2010_cfu_caribbean_cup_qualification.txt
+Dominica,Suriname,0,5,2,St. John's,Antigua and Barbuda,2010_cfu_caribbean_cup_qualification.txt
+Martinique,British Virgin Islands,16,0,1,Le Lamentin,Martinique,2012_cfu_caribbean_cup_qualification.txt
+Montserrat,Suriname,1,7,2,Le Lamentin,Martinique,2012_cfu_caribbean_cup_qualification.txt
+Bermuda,Puerto Rico,1,2,2,Port-au-Prince,Haiti,2012_cfu_caribbean_cup_qualification.txt
+British Virgin Islands,Suriname,0,4,2,Rivière-Pilote,Martinique,2012_cfu_caribbean_cup_qualification.txt
+Haiti,Saint Martin,7,0,1,Port-au-Prince,Haiti,2012_cfu_caribbean_cup_qualification.txt
+Martinique,Montserrat,5,0,1,Rivière-Pilote,Martinique,2012_cfu_caribbean_cup_qualification.txt
+British Virgin Islands,Montserrat,0,7,2,Fort-de-France,Martinique,2012_cfu_caribbean_cup_qualification.txt
+Haiti,Bermuda,3,1,1,Port-au-Prince,Haiti,2012_cfu_caribbean_cup_qualification.txt
+Martinique,Suriname,2,2,X,Fort-de-France,Martinique,2012_cfu_caribbean_cup_qualification.txt
+Puerto Rico,Saint Martin,9,0,1,Port-au-Prince,Haiti,2012_cfu_caribbean_cup_qualification.txt
+Haiti,Puerto Rico,2,1,1,Port-au-Prince,Haiti,2012_cfu_caribbean_cup_qualification.txt
+Saint Martin,Bermuda,0,8,2,Port-au-Prince,Haiti,2012_cfu_caribbean_cup_qualification.txt
+Aruba,Dominican Republic,2,2,X,Bridgetown,Barbados,2012_cfu_caribbean_cup_qualification.txt
+Barbados,Dominica,1,0,1,Bridgetown,Barbados,2012_cfu_caribbean_cup_qualification.txt
+Barbados,Dominican Republic,0,1,2,Bridgetown,Barbados,2012_cfu_caribbean_cup_qualification.txt
+Dominica,Aruba,3,2,1,Bridgetown,Barbados,2012_cfu_caribbean_cup_qualification.txt
+Barbados,Aruba,2,1,1,Bridgetown,Barbados,2012_cfu_caribbean_cup_qualification.txt
+Dominican Republic,Dominica,2,1,1,Bridgetown,Barbados,2012_cfu_caribbean_cup_qualification.txt
+French Guiana,Trinidad and Tobago,1,4,2,Basseterre,Saint Kitts and Nevis,2012_cfu_caribbean_cup_qualification.txt
+French Guiana,Anguilla,4,1,1,Basseterre,Saint Kitts and Nevis,2012_cfu_caribbean_cup_qualification.txt
+Saint Kitts and Nevis,French Guiana,0,3,2,Basseterre,Saint Kitts and Nevis,2012_cfu_caribbean_cup_qualification.txt
+Trinidad and Tobago,Anguilla,10,0,1,Basseterre,Saint Kitts and Nevis,2012_cfu_caribbean_cup_qualification.txt
+Saint Lucia,Curaçao,5,1,1,Gros Islet,Saint Lucia,2012_cfu_caribbean_cup_qualification.txt
+Curaçao,Guyana,1,2,2,Gros Islet,Saint Lucia,2012_cfu_caribbean_cup_qualification.txt
+Guadeloupe,Dominican Republic,0,2,2,Les Abymes,Guadeloupe,2012_cfu_caribbean_cup_qualification.txt
+Martinique,Puerto Rico,2,1,1,Les Abymes,Guadeloupe,2012_cfu_caribbean_cup_qualification.txt
+Dominican Republic,Martinique,1,1,X,Les Abymes,Guadeloupe,2012_cfu_caribbean_cup_qualification.txt
+Guadeloupe,Puerto Rico,4,1,1,Les Abymes,Guadeloupe,2012_cfu_caribbean_cup_qualification.txt
+Saint Vincent and the Grenadines,Curaçao,4,0,1,Gros Islet,Saint Lucia,2012_cfu_caribbean_cup_qualification.txt
+Guadeloupe,Martinique,3,3,X,Les Abymes,Guadeloupe,2012_cfu_caribbean_cup_qualification.txt
+Puerto Rico,Dominican Republic,1,3,2,Les Abymes,Guadeloupe,2012_cfu_caribbean_cup_qualification.txt
+Cuba,Suriname,5,0,1,Bacolet,Trinidad and Tobago,2012_cfu_caribbean_cup_qualification.txt
+Grenada,French Guiana,1,1,X,St. George's,Grenada,2012_cfu_caribbean_cup_qualification.txt
+Haiti,Guyana,1,0,1,St. George's,Grenada,2012_cfu_caribbean_cup_qualification.txt
+French Guiana,Haiti,1,0,1,St. George's,Grenada,2012_cfu_caribbean_cup_qualification.txt
+Trinidad and Tobago,Suriname,3,0,1,Bacolet,Trinidad and Tobago,2012_cfu_caribbean_cup_qualification.txt
+Guyana,French Guiana,4,3,1,St. George's,Grenada,2012_cfu_caribbean_cup_qualification.txt
+Aruba,Turks and Caicos Islands,1,0,1,Oranjestad,Aruba,2014_cfu_caribbean_cup_qualification.txt
+French Guiana,British Virgin Islands,6,0,1,Oranjestad,Aruba,2014_cfu_caribbean_cup_qualification.txt
+Montserrat,United States Virgin Islands,1,0,1,Lookout,Montserrat,2014_cfu_caribbean_cup_qualification.txt
+Aruba,British Virgin Islands,7,0,1,Oranjestad,Aruba,2014_cfu_caribbean_cup_qualification.txt
+Turks and Caicos Islands,French Guiana,0,6,2,Oranjestad,Aruba,2014_cfu_caribbean_cup_qualification.txt
+United States Virgin Islands,Bonaire,1,2,2,Lookout,Montserrat,2014_cfu_caribbean_cup_qualification.txt
+Aruba,French Guiana,0,2,2,Oranjestad,Aruba,2014_cfu_caribbean_cup_qualification.txt
+British Virgin Islands,Turks and Caicos Islands,0,2,2,Oranjestad,Aruba,2014_cfu_caribbean_cup_qualification.txt
+Grenada,French Guiana,1,1,X,Bayamón,Puerto Rico,2014_cfu_caribbean_cup_qualification.txt
+Guyana,Dominica,0,0,X,Basseterre,Saint Kitts and Nevis,2014_cfu_caribbean_cup_qualification.txt
+Puerto Rico,Curaçao,2,2,X,Bayamón,Puerto Rico,2014_cfu_caribbean_cup_qualification.txt
+Curaçao,Grenada,2,1,1,Bayamón,Puerto Rico,2014_cfu_caribbean_cup_qualification.txt
+Puerto Rico,French Guiana,1,2,2,Bayamón,Puerto Rico,2014_cfu_caribbean_cup_qualification.txt
+Saint Kitts and Nevis,Dominica,5,0,1,Basseterre,Saint Kitts and Nevis,2014_cfu_caribbean_cup_qualification.txt
+Saint Lucia,Guyana,2,0,1,Basseterre,Saint Kitts and Nevis,2014_cfu_caribbean_cup_qualification.txt
+Saint Vincent and the Grenadines,Anguilla,4,0,1,St. John's,Antigua and Barbuda,2014_cfu_caribbean_cup_qualification.txt
+Suriname,Bonaire,2,3,2,Rivière-Pilote,Martinique,2014_cfu_caribbean_cup_qualification.txt
+Bonaire,Barbados,1,4,2,Fort-de-France,Martinique,2014_cfu_caribbean_cup_qualification.txt
+Dominica,Saint Lucia,1,2,2,Basseterre,Saint Kitts and Nevis,2014_cfu_caribbean_cup_qualification.txt
+French Guiana,Curaçao,0,0,X,Bayamón,Puerto Rico,2014_cfu_caribbean_cup_qualification.txt
+Puerto Rico,Grenada,2,2,X,Bayamón,Puerto Rico,2014_cfu_caribbean_cup_qualification.txt
+Antigua and Barbuda,Saint Lucia,2,1,1,Couva,Trinidad and Tobago,2014_cfu_caribbean_cup_qualification.txt
+Curaçao,Martinique,1,1,X,Les Abymes,Guadeloupe,2014_cfu_caribbean_cup_qualification.txt
+Haiti,French Guiana,2,2,X,Port-au-Prince,Haiti,2014_cfu_caribbean_cup_qualification.txt
+Saint Kitts and Nevis,Barbados,2,3,2,Port-au-Prince,Haiti,2014_cfu_caribbean_cup_qualification.txt
+Trinidad and Tobago,Dominican Republic,6,1,1,Couva,Trinidad and Tobago,2014_cfu_caribbean_cup_qualification.txt
+French Guiana,Saint Kitts and Nevis,1,2,2,Port-au-Prince,Haiti,2014_cfu_caribbean_cup_qualification.txt
+Saint Vincent and the Grenadines,Curaçao,1,0,1,Les Abymes,Guadeloupe,2014_cfu_caribbean_cup_qualification.txt
+Trinidad and Tobago,Saint Lucia,2,0,1,Couva,Trinidad and Tobago,2014_cfu_caribbean_cup_qualification.txt
+Barbados,French Guiana,0,2,2,Port-au-Prince,Haiti,2014_cfu_caribbean_cup_qualification.txt
+Guadeloupe,Curaçao,0,1,2,Les Abymes,Guadeloupe,2014_cfu_caribbean_cup_qualification.txt
+Haiti,Saint Kitts and Nevis,0,0,X,Port-au-Prince,Haiti,2014_cfu_caribbean_cup_qualification.txt
+Saint Lucia,Dominican Republic,2,3,2,Couva,Trinidad and Tobago,2014_cfu_caribbean_cup_qualification.txt
+Trinidad and Tobago,Antigua and Barbuda,1,0,1,Couva,Trinidad and Tobago,2014_cfu_caribbean_cup_qualification.txt
+Cuba,Bermuda,2,1,1,Havana,Cuba,2016_cfu_caribbean_cup_qualification.txt
+Antigua and Barbuda,Aruba,2,1,1,St. John's,Antigua and Barbuda,2016_cfu_caribbean_cup_qualification.txt
+Barbados,Curaçao,1,0,1,Bridgetown,Barbados,2016_cfu_caribbean_cup_qualification.txt
+Guadeloupe,Suriname,0,0,X,Les Abymes,Guadeloupe,2016_cfu_caribbean_cup_qualification.txt
+Martinique,British Virgin Islands,3,0,1,Fort-de-France,Martinique,2016_cfu_caribbean_cup_qualification.txt
+Anguilla,Puerto Rico,0,4,2,The Valley,Anguilla,2016_cfu_caribbean_cup_qualification.txt
+Aruba,Saint Kitts and Nevis,0,2,2,Oranjestad,Aruba,2016_cfu_caribbean_cup_qualification.txt
+Bermuda,French Guiana,2,1,1,Hamilton,Bermuda,2016_cfu_caribbean_cup_qualification.txt
+British Virgin Islands,Dominica,0,7,2,Road Town,British Virgin Islands,2016_cfu_caribbean_cup_qualification.txt
+Curaçao,Dominican Republic,2,1,1,Willemstad,Curaçao,2016_cfu_caribbean_cup_qualification.txt
+Sint Maarten,United States Virgin Islands,1,2,2,Philipsburg,Sint Maarten,2016_cfu_caribbean_cup_qualification.txt
+Dominica,Martinique,1,4,2,Roseau,Dominica,2016_cfu_caribbean_cup_qualification.txt
+Dominican Republic,Barbados,2,0,1,Santo Domingo,Dominican Republic,2016_cfu_caribbean_cup_qualification.txt
+French Guiana,Cuba,3,0,1,Cayenne,French Guiana,2016_cfu_caribbean_cup_qualification.txt
+Saint Kitts and Nevis,Antigua and Barbuda,1,0,1,Basseterre,Saint Kitts and Nevis,2016_cfu_caribbean_cup_qualification.txt
+Suriname,Guadeloupe,3,2,1,Paramaribo,Suriname,2016_cfu_caribbean_cup_qualification.txt
+United States Virgin Islands,Grenada,1,2,2,Charlotte Amalie,United States Virgin Islands,2016_cfu_caribbean_cup_qualification.txt
+Curaçao,Guyana,5,2,1,Willemstad,Curaçao,2016_cfu_caribbean_cup_qualification.txt
+Grenada,Puerto Rico,3,3,X,St. George's,Grenada,2016_cfu_caribbean_cup_qualification.txt
+Martinique,Guadeloupe,2,0,1,Fort-de-France,Martinique,2016_cfu_caribbean_cup_qualification.txt
+Saint Kitts and Nevis,Suriname,1,0,1,Basseterre,Saint Kitts and Nevis,2016_cfu_caribbean_cup_qualification.txt
+Guadeloupe,Dominica,2,1,1,Les Abymes,Guadeloupe,2016_cfu_caribbean_cup_qualification.txt
+United States Virgin Islands,Guyana,0,7,2,Charlotte Amalie,United States Virgin Islands,2016_cfu_caribbean_cup_qualification.txt
+Curaçao,United States Virgin Islands,7,0,1,Willemstad,Curaçao,2016_cfu_caribbean_cup_qualification.txt
+Dominican Republic,French Guiana,2,1,1,Santo Domingo,Dominican Republic,2016_cfu_caribbean_cup_qualification.txt
+Saint Vincent and the Grenadines,Saint Kitts and Nevis,0,1,2,Kingstown,Saint Vincent and the Grenadines,2016_cfu_caribbean_cup_qualification.txt
+French Guiana,Bermuda,3,0,1,Cayenne,French Guiana,2016_cfu_caribbean_cup_qualification.txt
+Curaçao,Antigua and Barbuda,3,0,1,Willemstad,Curaçao,2016_cfu_caribbean_cup_qualification.txt
+Trinidad and Tobago,Dominican Republic,4,0,1,Couva,Trinidad and Tobago,2016_cfu_caribbean_cup_qualification.txt
+Dominican Republic,Martinique,1,2,2,San Cristóbal,Dominican Republic,2016_cfu_caribbean_cup_qualification.txt
+French Guiana,Saint Kitts and Nevis,1,0,1,Cayenne,French Guiana,2016_cfu_caribbean_cup_qualification.txt
+Suriname,Guyana,3,2,1,Paramaribo,Suriname,2016_cfu_caribbean_cup_qualification.txt
+Puerto Rico,Curaçao,2,4,2,Bayamón,Puerto Rico,2016_cfu_caribbean_cup_qualification.txt
+Haiti,French Guiana,2,5,2,Port-au-Prince,Haiti,2016_cfu_caribbean_cup_qualification.txt
+Jamaica,Suriname,1,0,1,Kingston,Jamaica,2016_cfu_caribbean_cup_qualification.txt
+Saint Kitts and Nevis,Haiti,0,2,2,Basseterre,Saint Kitts and Nevis,2016_cfu_caribbean_cup_qualification.txt
+Trinidad and Tobago,Suriname,1,2,2,Couva,Trinidad and Tobago,2017_cfu_caribbean_cup_qualification.txt
+Suriname,Haiti,2,4,2,Couva,Trinidad and Tobago,2017_cfu_caribbean_cup_qualification.txt
+Trinidad and Tobago,Haiti,3,4,2,Couva,Trinidad and Tobago,2017_cfu_caribbean_cup_qualification.txt

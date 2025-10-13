@@ -1,0 +1,4 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Mapuche,Maule Sur,0,1,2,Linares,Chile,2022_conifa_south_america_football_cup.txt
+Mapuche,Aymara,3,1,1,Linares,Chile,2022_conifa_south_america_football_cup.txt
+Aymara,Maule Sur,0,1,2,Linares,Chile,2022_conifa_south_america_football_cup.txt

@@ -1,0 +1,28 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Botswana,Malawi,1,4,2,Gaborone,Botswana,1997_cosafa_cup_qualification.txt
+Lesotho,Zambia,0,2,2,Maseru,Lesotho,1997_cosafa_cup_qualification.txt
+Eswatini,Mozambique,0,4,2,Lobamba,Swaziland,1997_cosafa_cup_qualification.txt
+Namibia,Zimbabwe,2,1,1,Windhoek,Namibia,1997_cosafa_cup_qualification.txt
+Malawi,Zambia,0,1,2,Blantyre,Malawi,1998_cosafa_cup_qualification.txt
+Lesotho,Zimbabwe,0,2,2,Maseru,Lesotho,1998_cosafa_cup_qualification.txt
+Namibia,South Africa,3,2,1,Windhoek,Namibia,1998_cosafa_cup_qualification.txt
+Botswana,Mozambique,1,2,2,Gaborone,Botswana,1998_cosafa_cup_qualification.txt
+Eswatini,Angola,0,1,2,Lobamba,Swaziland,1998_cosafa_cup_qualification.txt
+Lesotho,Namibia,1,0,1,Maseru,Lesotho,1999_cosafa_cup_qualification.txt
+Botswana,South Africa,1,2,2,Gaborone,Botswana,1999_cosafa_cup_qualification.txt
+Malawi,Angola,1,2,2,Blantyre,Malawi,1999_cosafa_cup_qualification.txt
+Eswatini,Mozambique,3,1,1,Lobamba,Swaziland,1999_cosafa_cup_qualification.txt
+Malawi,Namibia,1,1,X,Blantyre,Malawi   [Namibia wins on penalties],1999_cosafa_cup_qualification.txt
+Botswana,Mozambique,0,2,2,Gaborone,Botswana,1999_cosafa_cup_qualification.txt
+Madagascar,Eswatini,1,1,X,Witbank,South Africa,2008_cosafa_cup_qualification.txt
+Mauritius,Seychelles,0,7,2,Witbank,South Africa,2008_cosafa_cup_qualification.txt
+Comoros,Namibia,0,3,2,Secunda,South Africa,2008_cosafa_cup_qualification.txt
+Lesotho,Malawi,0,1,2,Secunda,South Africa,2008_cosafa_cup_qualification.txt
+Madagascar,Seychelles,1,1,X,Witbank,South Africa,2008_cosafa_cup_qualification.txt
+Mauritius,Eswatini,1,1,X,Witbank,South Africa,2008_cosafa_cup_qualification.txt
+Comoros,Malawi,0,1,2,Secunda,South Africa,2008_cosafa_cup_qualification.txt
+Lesotho,Namibia,1,1,X,Secunda,South Africa,2008_cosafa_cup_qualification.txt
+Madagascar,Mauritius,2,1,1,Witbank,South Africa,2008_cosafa_cup_qualification.txt
+Seychelles,Eswatini,0,1,2,Witbank,South Africa,2008_cosafa_cup_qualification.txt
+Comoros,Lesotho,0,1,2,Secunda,South Africa,2008_cosafa_cup_qualification.txt
+Malawi,Namibia,0,1,2,Secunda,South Africa,2008_cosafa_cup_qualification.txt

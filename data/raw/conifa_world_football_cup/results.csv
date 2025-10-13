@@ -1,0 +1,102 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Iraqi Kurdistan,Arameans Suryoye,1,2,2,Östersund,Sweden,2014_conifa_world_football_cup.txt
+Abkhazia,Occitania,1,1,X,Östersund,Sweden,2014_conifa_world_football_cup.txt
+Darfur,Padania,0,20,2,Östersund,Sweden,2014_conifa_world_football_cup.txt
+Ellan Vannin,Artsakh,3,2,1,Östersund,Sweden,2014_conifa_world_football_cup.txt
+Tamil Eelam,Arameans Suryoye,0,2,2,Östersund,Sweden,2014_conifa_world_football_cup.txt
+Sápmi,Abkhazia,1,2,2,Östersund,Sweden,2014_conifa_world_football_cup.txt
+Darfur,South Ossetia,0,19,2,Östersund,Sweden,2014_conifa_world_football_cup.txt
+Ellan Vannin,County of Nice,4,2,1,Östersund,Sweden,2014_conifa_world_football_cup.txt
+Tamil Eelam,Iraqi Kurdistan,0,9,2,Östersund,Sweden,2014_conifa_world_football_cup.txt
+Sápmi,Occitania,0,1,2,Östersund,Sweden,2014_conifa_world_football_cup.txt
+South Ossetia,Padania,1,3,2,Östersund,Sweden,2014_conifa_world_football_cup.txt
+Artsakh,County of Nice,0,1,2,Östersund,Sweden,2014_conifa_world_football_cup.txt
+Padania,County of Nice,1,2,2,Östersund,Sweden,2014_conifa_world_football_cup.txt
+Abkhazia,South Ossetia,0,0,X,Östersund,Sweden   [South Ossetia wins on penalties],2014_conifa_world_football_cup.txt
+Arameans Suryoye,Occitania,0,0,X,Östersund,Sweden,2014_conifa_world_football_cup.txt
+Ellan Vannin,Iraqi Kurdistan,1,1,X,Östersund,Sweden   [Ellan Vannin wins on penalties],2014_conifa_world_football_cup.txt
+Sápmi,Tamil Eelam,4,2,1,Östersund,Sweden,2014_conifa_world_football_cup.txt
+Darfur,Artsakh,0,12,2,Östersund,Sweden,2014_conifa_world_football_cup.txt
+Padania,Abkhazia,3,3,X,Östersund,Sweden   [Padania wins on penalties],2014_conifa_world_football_cup.txt
+Occitania,Iraqi Kurdistan,2,2,X,Östersund,Sweden   [Iraqi Kurdistan wins on penalties],2014_conifa_world_football_cup.txt
+County of Nice,South Ossetia,3,0,1,Östersund,Sweden,2014_conifa_world_football_cup.txt
+Arameans Suryoye,Ellan Vannin,1,4,2,Östersund,Sweden,2014_conifa_world_football_cup.txt
+Sápmi,Artsakh,1,5,2,Östersund,Sweden,2014_conifa_world_football_cup.txt
+Tamil Eelam,Darfur,10,0,1,Östersund,Sweden,2014_conifa_world_football_cup.txt
+Abkhazia,Occitania,0,1,2,Östersund,Sweden,2014_conifa_world_football_cup.txt
+Padania,Iraqi Kurdistan,1,1,X,Östersund,Sweden   [Padania wins on penalties],2014_conifa_world_football_cup.txt
+South Ossetia,Arameans Suryoye,1,4,2,Östersund,Sweden,2014_conifa_world_football_cup.txt
+County of Nice,Ellan Vannin,0,0,X,Östersund,Sweden   [County of Nice wins on penalties],2014_conifa_world_football_cup.txt
+Abkhazia,Chagos Islands,9,0,1,Sukhumi,Georgia,2016_conifa_world_football_cup.txt
+Iraqi Kurdistan,Székely Land,3,0,1,Sukhumi,Georgia,2016_conifa_world_football_cup.txt
+Padania,Northern Cyprus,1,2,2,Gagra,Georgia,2016_conifa_world_football_cup.txt
+Sápmi,Somaliland,5,0,1,Gagra,Georgia,2016_conifa_world_football_cup.txt
+Chagos Islands,Western Armenia,0,12,2,Sukhumi,Georgia,2016_conifa_world_football_cup.txt
+United Koreans in Japan,Székely Land,1,0,1,Sukhumi,Georgia,2016_conifa_world_football_cup.txt
+Raetia,Padania,0,6,2,Gagra,Georgia,2016_conifa_world_football_cup.txt
+Sápmi,Panjab,0,1,2,Gagra,Georgia,2016_conifa_world_football_cup.txt
+Abkhazia,Western Armenia,1,0,1,Sukhumi,Georgia,2016_conifa_world_football_cup.txt
+United Koreans in Japan,Iraqi Kurdistan,0,3,2,Sukhumi,Georgia,2016_conifa_world_football_cup.txt
+Northern Cyprus,Raetia,7,0,1,Gagra,Georgia,2016_conifa_world_football_cup.txt
+Somaliland,Panjab,0,5,2,Gagra,Georgia,2016_conifa_world_football_cup.txt
+United Koreans in Japan,Northern Cyprus,1,1,X,Sukhumi,Georgia   [Northern Cyprus wins on penalties],2016_conifa_world_football_cup.txt
+Abkhazia,Sápmi,2,0,1,Sukhumi,Georgia,2016_conifa_world_football_cup.txt
+Iraqi Kurdistan,Padania,2,2,X,Sukhumi,Georgia   [Padania wins on penalties],2016_conifa_world_football_cup.txt
+Western Armenia,Panjab,2,3,2,Sukhumi,Georgia,2016_conifa_world_football_cup.txt
+Chagos Islands,Somaliland,2,3,2,Sukhumi,Georgia,2016_conifa_world_football_cup.txt
+Székely Land,Raetia,7,0,1,Sukhumi,Georgia,2016_conifa_world_football_cup.txt
+United Koreans in Japan,Sápmi,1,2,2,Sukhumi,Georgia,2016_conifa_world_football_cup.txt
+Iraqi Kurdistan,Western Armenia,0,0,X,Sukhumi,Georgia   [Western Armenia wins on penalties],2016_conifa_world_football_cup.txt
+Chagos Islands,Raetia,3,3,X,Sukhumi,Georgia   [Raetia wins on penalties],2016_conifa_world_football_cup.txt
+Somaliland,Székely Land,7,0,1,Sukhumi,Georgia,2016_conifa_world_football_cup.txt
+Abkhazia,Northern Cyprus,2,0,1,Sukhumi,Georgia,2016_conifa_world_football_cup.txt
+Padania,Panjab,1,0,1,Sukhumi,Georgia,2016_conifa_world_football_cup.txt
+United Koreans in Japan,Iraqi Kurdistan,1,1,X,Sukhumi,Georgia   [United Koreans in Japan wins on penalties],2016_conifa_world_football_cup.txt
+Sápmi,Western Armenia,3,0,1,Sukhumi,Georgia,2016_conifa_world_football_cup.txt
+Padania,Northern Cyprus,0,2,2,Sukhumi,Georgia,2016_conifa_world_football_cup.txt
+Abkhazia,Panjab,1,1,X,Sukhumi,Georgia   [Abkhazia wins on penalties],2016_conifa_world_football_cup.txt
+Ellan Vannin,Cascadia,4,1,1,Sutton,England,2018_conifa_world_football_cup.txt
+Barawa,Tamil Eelam,4,0,1,Bromley,England,2018_conifa_world_football_cup.txt
+Abkhazia,Tibet,3,0,1,Enfield,England,2018_conifa_world_football_cup.txt
+Northern Cyprus,Kárpátalja,1,1,X,Enfield,England,2018_conifa_world_football_cup.txt
+Székely Land,Tuvalu,4,0,1,Haringey,England,2018_conifa_world_football_cup.txt
+Padania,Matabeleland,6,1,1,Sutton,England,2018_conifa_world_football_cup.txt
+United Koreans in Japan,Western Armenia,0,0,X,Carshalton,England,2018_conifa_world_football_cup.txt
+Panjab,Kabylia,8,0,1,Slough,England,2018_conifa_world_football_cup.txt
+Ellan Vannin,Tamil Eelam,2,0,1,Carshalton,England,2018_conifa_world_football_cup.txt
+Barawa,Cascadia,1,2,2,Carshalton,England,2018_conifa_world_football_cup.txt
+Abkhazia,Kárpátalja,0,2,2,Enfield,England,2018_conifa_world_football_cup.txt
+Northern Cyprus,Tibet,3,1,1,Enfield,England,2018_conifa_world_football_cup.txt
+Székely Land,Matabeleland,5,0,1,Haringey,England,2018_conifa_world_football_cup.txt
+Padania,Tuvalu,8,0,1,Haringey,England,2018_conifa_world_football_cup.txt
+United Koreans in Japan,Kabylia,0,0,X,Bracknell,England,2018_conifa_world_football_cup.txt
+Panjab,Western Armenia,0,1,2,Slough,England,2018_conifa_world_football_cup.txt
+Tamil Eelam,Cascadia,0,6,2,Haringey,England,2018_conifa_world_football_cup.txt
+Barawa,Ellan Vannin,2,0,1,Rotherhithe,England,2018_conifa_world_football_cup.txt
+Abkhazia,Northern Cyprus,2,2,X,Enfield,England,2018_conifa_world_football_cup.txt
+Kárpátalja,Tibet,5,1,1,Bracknell,England,2018_conifa_world_football_cup.txt
+Padania,Székely Land,3,1,1,Bedfont,England,2018_conifa_world_football_cup.txt
+Tuvalu,Matabeleland,1,3,2,Haringey,England,2018_conifa_world_football_cup.txt
+Panjab,United Koreans in Japan,1,1,X,Slough,England,2018_conifa_world_football_cup.txt
+Western Armenia,Kabylia,4,0,1,Enfield,England,2018_conifa_world_football_cup.txt
+Matabeleland,Kabylia,0,0,X,Enfield,England   [Kabylia wins on penalties],2018_conifa_world_football_cup.txt
+Abkhazia,Tamil Eelam,6,0,1,Aveley,England,2018_conifa_world_football_cup.txt
+United Koreans in Japan,Tuvalu,5,0,1,Bracknell,England,2018_conifa_world_football_cup.txt
+Barawa,Northern Cyprus,0,8,2,Sutton,England,2018_conifa_world_football_cup.txt
+Padania,Panjab,2,0,1,Bracknell,England,2018_conifa_world_football_cup.txt
+Kárpátalja,Cascadia,3,1,1,Sutton,England,2018_conifa_world_football_cup.txt
+Western Armenia,Székely Land,0,4,2,Bromley,England,2018_conifa_world_football_cup.txt
+Tamil Eelam,Tuvalu,4,3,1,Sutton,England,2018_conifa_world_football_cup.txt
+Tibet,Kabylia,1,8,2,Enfield,England,2018_conifa_world_football_cup.txt
+Abkhazia,United Koreans in Japan,2,0,1,Bromley,England,2018_conifa_world_football_cup.txt
+Barawa,Panjab,0,5,2,Sutton,England,2018_conifa_world_football_cup.txt
+Cascadia,Western Armenia,4,0,1,Bromley,England,2018_conifa_world_football_cup.txt
+Northern Cyprus,Padania,3,2,1,Carshalton,England,2018_conifa_world_football_cup.txt
+Kárpátalja,Székely Land,4,2,1,Carshalton,England,2018_conifa_world_football_cup.txt
+Matabeleland,Tamil Eelam,1,0,1,Aveley,England,2018_conifa_world_football_cup.txt
+Tibet,United Koreans in Japan,1,1,X,Rotherhithe,England   [United Koreans in Japan wins on penalties],2018_conifa_world_football_cup.txt
+Kabylia,Abkhazia,0,2,2,Aveley,England,2018_conifa_world_football_cup.txt
+Barawa,Western Armenia,0,7,2,Haringey,England,2018_conifa_world_football_cup.txt
+Panjab,Cascadia,3,3,X,Rotherhithe,England   [Panjab wins on penalties],2018_conifa_world_football_cup.txt
+Padania,Székely Land,0,0,X,Enfield,England   [Padania wins on penalties],2018_conifa_world_football_cup.txt
+Northern Cyprus,Kárpátalja,0,0,X,Enfield,England   [Kárpátalja wins on penalties],2018_conifa_world_football_cup.txt

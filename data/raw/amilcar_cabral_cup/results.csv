@@ -1,0 +1,236 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Guinea-Bissau,Cape Verde,3,0,1,Bissau,Guinea-Bissau,1979_amilcar_cabral_cup.txt
+Gambia,Mauritania,3,1,1,Bissau,Guinea-Bissau,1979_amilcar_cabral_cup.txt
+Guinea,Mali,0,1,2,Bissau,Guinea-Bissau,1979_amilcar_cabral_cup.txt
+Cape Verde,Senegal,0,1,2,Bissau,Guinea-Bissau,1979_amilcar_cabral_cup.txt
+Gambia,Mali,0,1,2,Bissau,Guinea-Bissau,1979_amilcar_cabral_cup.txt
+Guinea,Mauritania,4,1,1,Bissau,Guinea-Bissau,1979_amilcar_cabral_cup.txt
+Guinea-Bissau,Senegal,0,2,2,Bissau,Guinea-Bissau,1979_amilcar_cabral_cup.txt
+Gambia,Guinea,1,1,X,Bissau,Guinea-Bissau,1979_amilcar_cabral_cup.txt
+Mali,Mauritania,4,2,1,Bissau,Guinea-Bissau,1979_amilcar_cabral_cup.txt
+Guinea,Senegal,1,3,2,Bissau,Guinea-Bissau,1979_amilcar_cabral_cup.txt
+Guinea-Bissau,Mali,1,1,X,Bissau,Guinea-Bissau   [Mali wins on penalties],1979_amilcar_cabral_cup.txt
+Guinea-Bissau,Guinea,2,2,X,Bissau,Guinea-Bissau   [Guinea wins on penalties],1979_amilcar_cabral_cup.txt
+Mali,Senegal,0,1,2,Bissau,Guinea-Bissau,1979_amilcar_cabral_cup.txt
+Gambia - Guinea,Bissau,2,0,1,Banjul,Gambia,1980_amilcar_cabral_cup.txt
+Mali,Senegal,1,0,1,Banjul,Gambia,1980_amilcar_cabral_cup.txt
+Guinea-Bissau,Guinea,1,2,2,Banjul,Gambia,1980_amilcar_cabral_cup.txt
+Mali,Mauritania,0,1,2,Banjul,Gambia,1980_amilcar_cabral_cup.txt
+Gambia,Guinea,0,0,X,Banjul,Gambia,1980_amilcar_cabral_cup.txt
+Mauritania,Senegal,1,2,2,Banjul,Gambia,1980_amilcar_cabral_cup.txt
+Gambia,Mauritania,2,2,X,Banjul,Gambia   [Gambia wins on penalties],1980_amilcar_cabral_cup.txt
+Guinea,Senegal,1,2,2,Banjul,Gambia,1980_amilcar_cabral_cup.txt
+Guinea-Bissau,Mali,2,4,2,Banjul,Gambia,1980_amilcar_cabral_cup.txt
+Gambia,Senegal,0,1,2,Banjul,Gambia,1980_amilcar_cabral_cup.txt
+Gambia,Guinea,1,1,X,Bamako,Mali,1981_amilcar_cabral_cup.txt
+Mali,Mauritania,2,0,1,Bamako,Mali,1981_amilcar_cabral_cup.txt
+Cape Verde,Senegal,0,1,2,Bamako,Mali,1981_amilcar_cabral_cup.txt
+Mali,Guinea,1,1,X,Bamako,Mali,1981_amilcar_cabral_cup.txt
+Guinea-Bissau,Senegal,0,1,2,Bamako,Mali,1981_amilcar_cabral_cup.txt
+Guinea,Mauritania,2,1,1,Bamako,Mali,1981_amilcar_cabral_cup.txt
+Mali,Gambia,4,1,1,Bamako,Mali,1981_amilcar_cabral_cup.txt
+Cape Verde - Guinea,Bissau,3,0,1,Bamako,Mali,1981_amilcar_cabral_cup.txt
+Mali,Cape Verde,2,0,1,Bamako,Mali,1981_amilcar_cabral_cup.txt
+Guinea,Senegal,1,0,1,Bamako,Mali,1981_amilcar_cabral_cup.txt
+Guinea-Bissau,Mauritania,4,3,1,Bamako,Mali,1981_amilcar_cabral_cup.txt
+Cape Verde,Senegal,1,5,2,Bamako,Mali,1981_amilcar_cabral_cup.txt
+Mali,Guinea,0,0,X,Bamako,Mali   [Guinea wins on penalties],1981_amilcar_cabral_cup.txt
+Cape Verde,Gambia,2,0,1,Praia,Cape Verde,1982_amilcar_cabral_cup.txt
+Guinea,Senegal,1,1,X,Praia,Cape Verde,1982_amilcar_cabral_cup.txt
+Guinea-Bissau,Sierra Leone,1,2,2,Praia,Cape Verde,1982_amilcar_cabral_cup.txt
+Mali,Mauritania,4,0,1,Praia,Cape Verde,1982_amilcar_cabral_cup.txt
+Cape Verde,Mali,1,0,1,Praia,Cape Verde,1982_amilcar_cabral_cup.txt
+Gambia,Mauritania,3,1,1,Praia,Cape Verde,1982_amilcar_cabral_cup.txt
+Guinea,Sierra Leone,1,0,1,Praia,Cape Verde,1982_amilcar_cabral_cup.txt
+Guinea-Bissau,Senegal,0,1,2,Praia,Cape Verde,1982_amilcar_cabral_cup.txt
+Cape Verde,Mauritania,1,2,2,Praia,Cape Verde,1982_amilcar_cabral_cup.txt
+Gambia,Mali,1,1,X,Praia,Cape Verde,1982_amilcar_cabral_cup.txt
+Guinea-Bissau,Guinea,0,0,X,Praia,Cape Verde,1982_amilcar_cabral_cup.txt
+Senegal,Sierra Leone,2,0,1,Praia,Cape Verde,1982_amilcar_cabral_cup.txt
+Cape Verde,Guinea,0,1,2,Praia,Cape Verde,1982_amilcar_cabral_cup.txt
+Mali,Senegal,0,1,2,Praia,Cape Verde,1982_amilcar_cabral_cup.txt
+Cape Verde,Mali,1,2,2,Praia,Cape Verde,1982_amilcar_cabral_cup.txt
+Guinea,Senegal,3,0,1,Praia,Cape Verde,1982_amilcar_cabral_cup.txt
+Guinea-Bissau,Senegal,1,1,X,Nouakchott,Mauritania,1983_amilcar_cabral_cup.txt
+Mauritania,Cape Verde,2,0,1,Nouakchott,Mauritania,1983_amilcar_cabral_cup.txt
+Gambia,Guinea,4,1,1,Nouakchott,Mauritania,1983_amilcar_cabral_cup.txt
+Cape Verde,Mali,1,0,1,Nouakchott,Mauritania,1983_amilcar_cabral_cup.txt
+Guinea-Bissau,Guinea,2,1,1,Nouakchott,Mauritania,1983_amilcar_cabral_cup.txt
+Gambia,Senegal,1,2,2,Nouakchott,Mauritania,1983_amilcar_cabral_cup.txt
+Guinea,Senegal,1,1,X,Nouakchott,Mauritania,1983_amilcar_cabral_cup.txt
+Mauritania,Mali,0,2,2,Nouakchott,Mauritania,1983_amilcar_cabral_cup.txt
+Gambia - Guinea,Bissau,2,2,X,Nouakchott,Mauritania,1983_amilcar_cabral_cup.txt
+Mali,Senegal,1,2,2,Nouakchott,Mauritania,1983_amilcar_cabral_cup.txt
+Mauritania - Guinea,Bissau,1,2,2,Nouakchott,Mauritania,1983_amilcar_cabral_cup.txt
+Mauritania,Mali,0,2,2,Nouakchott,Mauritania,1983_amilcar_cabral_cup.txt
+Guinea-Bissau,Senegal,0,3,2,Nouakchott,Mauritania,1983_amilcar_cabral_cup.txt
+Gambia,Guinea,2,2,X,Freetown,Sierra Leone,1984_amilcar_cabral_cup.txt
+Sierra Leone,Cape Verde,2,0,1,Freetown,Sierra Leone,1984_amilcar_cabral_cup.txt
+Guinea-Bissau,Senegal,2,3,2,Freetown,Sierra Leone,1984_amilcar_cabral_cup.txt
+Mali,Mauritania,1,0,1,Freetown,Sierra Leone,1984_amilcar_cabral_cup.txt
+Cape Verde,Guinea,1,1,X,Freetown,Sierra Leone,1984_amilcar_cabral_cup.txt
+Sierra Leone,Gambia,1,0,1,Freetown,Sierra Leone,1984_amilcar_cabral_cup.txt
+Guinea-Bissau,Mauritania,2,1,1,Freetown,Sierra Leone,1984_amilcar_cabral_cup.txt
+Mali,Senegal,1,0,1,Freetown,Sierra Leone,1984_amilcar_cabral_cup.txt
+Cape Verde,Gambia,0,2,2,Freetown,Sierra Leone,1984_amilcar_cabral_cup.txt
+Sierra Leone,Guinea,0,0,X,Freetown,Sierra Leone,1984_amilcar_cabral_cup.txt
+Guinea-Bissau,Mali,1,0,1,Freetown,Sierra Leone,1984_amilcar_cabral_cup.txt
+Mauritania,Senegal,0,6,2,Freetown,Sierra Leone,1984_amilcar_cabral_cup.txt
+Gambia,Senegal,0,1,2,Freetown,Sierra Leone,1984_amilcar_cabral_cup.txt
+Sierra Leone,Mali,0,0,X,Freetown,Sierra Leone   [Sierra Leone wins on penalties],1984_amilcar_cabral_cup.txt
+Gambia,Mali,0,2,2,Freetown,Sierra Leone,1984_amilcar_cabral_cup.txt
+Sierra Leone,Senegal,0,0,X,Freetown,Sierra Leone   [Senegal wins on penalties],1984_amilcar_cabral_cup.txt
+Gambia,Cape Verde,1,2,2,Banjul,Gambia,1985_amilcar_cabral_cup.txt
+Guinea-Bissau,Sierra Leone,0,0,X,Banjul,Gambia,1985_amilcar_cabral_cup.txt
+Guinea,Senegal,0,2,2,Bakau,Gambia,1985_amilcar_cabral_cup.txt
+Mali,Mauritania,3,0,1,Bakau,Gambia,1985_amilcar_cabral_cup.txt
+Cape Verde,Sierra Leone,2,2,X,Bakau,Gambia,1985_amilcar_cabral_cup.txt
+Gambia - Guinea,Bissau,1,0,1,Banjul,Gambia,1985_amilcar_cabral_cup.txt
+Guinea,Mali,1,3,2,Bakau,Gambia,1985_amilcar_cabral_cup.txt
+Mauritania,Senegal,0,2,2,Bakau,Gambia,1985_amilcar_cabral_cup.txt
+Cape Verde - Guinea,Bissau,2,0,1,Banjul,Gambia,1985_amilcar_cabral_cup.txt
+Gambia,Sierra Leone,1,1,X,Banjul,Gambia,1985_amilcar_cabral_cup.txt
+Guinea,Mauritania,1,0,1,Banjul,Gambia,1985_amilcar_cabral_cup.txt
+Mali,Senegal,2,2,X,Bakau,Gambia,1985_amilcar_cabral_cup.txt
+Cape Verde,Senegal,0,1,2,Bakau,Gambia,1985_amilcar_cabral_cup.txt
+Gambia,Mali,1,0,1,Bakau,Gambia,1985_amilcar_cabral_cup.txt
+Cape Verde,Mali,0,1,2,Bakau,Gambia,1985_amilcar_cabral_cup.txt
+Gambia,Senegal,0,1,2,Bakau,Gambia,1985_amilcar_cabral_cup.txt
+Senegal,Guinea,2,1,1,Dakar,Senegal,1986_amilcar_cabral_cup.txt
+Gambia - Guinea,Bissau,3,0,1,Dakar,Senegal,1986_amilcar_cabral_cup.txt
+Mauritania,Sierra Leone,0,1,2,Dakar,Senegal,1986_amilcar_cabral_cup.txt
+Guinea,Mali,1,1,X,Dakar,Senegal,1986_amilcar_cabral_cup.txt
+Gambia,Sierra Leone,1,2,2,Dakar,Senegal,1986_amilcar_cabral_cup.txt
+Guinea-Bissau,Mauritania,1,0,1,Dakar,Senegal,1986_amilcar_cabral_cup.txt
+Senegal,Mali,1,0,1,Dakar,Senegal,1986_amilcar_cabral_cup.txt
+Gambia,Mauritania,3,1,1,Dakar,Senegal,1986_amilcar_cabral_cup.txt
+Guinea-Bissau,Sierra Leone,2,3,2,Dakar,Senegal,1986_amilcar_cabral_cup.txt
+Guinea,Sierra Leone,1,2,2,Dakar,Senegal,1986_amilcar_cabral_cup.txt
+Senegal,Gambia,1,0,1,Dakar,Senegal,1986_amilcar_cabral_cup.txt
+Senegal,Sierra Leone,3,1,1,Dakar,Senegal,1986_amilcar_cabral_cup.txt
+Guinea,Mauritania,1,0,1,Conakry,Guinea,1987_amilcar_cabral_cup.txt
+Guinea-Bissau,Mali,0,0,X,Conakry,Guinea,1987_amilcar_cabral_cup.txt
+Senegal,Sierra Leone,0,1,2,Conakry,Guinea,1987_amilcar_cabral_cup.txt
+Guinea,Mali,0,0,X,Conakry,Guinea,1987_amilcar_cabral_cup.txt
+Guinea-Bissau,Mauritania,1,1,X,Conakry,Guinea,1987_amilcar_cabral_cup.txt
+Cape Verde,Senegal,0,2,2,Conakry,Guinea,1987_amilcar_cabral_cup.txt
+Guinea - Guinea,Bissau,0,0,X,Conakry,Guinea,1987_amilcar_cabral_cup.txt
+Mali,Mauritania,1,0,1,Conakry,Guinea,1987_amilcar_cabral_cup.txt
+Cape Verde,Sierra Leone,0,2,2,Conakry,Guinea,1987_amilcar_cabral_cup.txt
+Guinea,Senegal,1,0,1,Conakry,Guinea,1987_amilcar_cabral_cup.txt
+Mali,Sierra Leone,0,0,X,Conakry,Guinea   [Mali wins on penalties],1987_amilcar_cabral_cup.txt
+Senegal,Sierra Leone,0,0,X,Conakry,Guinea   [Senegal wins on penalties],1987_amilcar_cabral_cup.txt
+Guinea,Mali,1,0,1,Conakry,Guinea,1987_amilcar_cabral_cup.txt
+Gambia,Senegal,0,4,2,Bissau,Guinea-Bissau,1988_amilcar_cabral_cup.txt
+Guinea-Bissau,Sierra Leone,0,0,X,Bissau,Guinea-Bissau,1988_amilcar_cabral_cup.txt
+Cape Verde,Mali,1,3,2,Bissau,Guinea-Bissau,1988_amilcar_cabral_cup.txt
+Guinea,Mauritania,1,1,X,Bissau,Guinea-Bissau,1988_amilcar_cabral_cup.txt
+Gambia,Sierra Leone,1,3,2,Bissau,Guinea-Bissau,1988_amilcar_cabral_cup.txt
+Guinea-Bissau,Senegal,1,1,X,Bissau,Guinea-Bissau,1988_amilcar_cabral_cup.txt
+Cape Verde,Mauritania,3,2,1,Bissau,Guinea-Bissau,1988_amilcar_cabral_cup.txt
+Guinea,Mali,1,0,1,Bissau,Guinea-Bissau,1988_amilcar_cabral_cup.txt
+Guinea-Bissau,Gambia,3,1,1,Bissau,Guinea-Bissau,1988_amilcar_cabral_cup.txt
+Senegal,Sierra Leone,2,2,X,Bissau,Guinea-Bissau,1988_amilcar_cabral_cup.txt
+Cape Verde,Guinea,1,1,X,Bissau,Guinea-Bissau,1988_amilcar_cabral_cup.txt
+Mali,Mauritania,2,2,X,Bissau,Guinea-Bissau,1988_amilcar_cabral_cup.txt
+Guinea,Sierra Leone,3,0,1,Bissau,Guinea-Bissau,1988_amilcar_cabral_cup.txt
+Mali,Senegal,1,1,X,Bissau,Guinea-Bissau   [Mali wins on penalties],1988_amilcar_cabral_cup.txt
+Senegal,Sierra Leone,2,1,1,Bissau,Guinea-Bissau,1988_amilcar_cabral_cup.txt
+Guinea,Mali,0,0,X,Bissau,Guinea-Bissau   [Guinea wins on penalties],1988_amilcar_cabral_cup.txt
+Guinea-Bissau,Senegal,0,0,X,Bamako,Mali,1989_amilcar_cabral_cup.txt
+Mali,Cape Verde,1,1,X,Bamako,Mali,1989_amilcar_cabral_cup.txt
+Mauritania,Sierra Leone,1,2,2,Bamako,Mali,1989_amilcar_cabral_cup.txt
+Cape Verde - Guinea,Bissau,2,3,2,Bamako,Mali,1989_amilcar_cabral_cup.txt
+Mali,Senegal,2,2,X,Bamako,Mali,1989_amilcar_cabral_cup.txt
+Cape Verde,Senegal,2,1,1,Bamako,Mali,1989_amilcar_cabral_cup.txt
+Guinea,Mauritania,3,1,1,Bamako,Mali,1989_amilcar_cabral_cup.txt
+Mali - Guinea,Bissau,2,1,1,Bamako,Mali,1989_amilcar_cabral_cup.txt
+Cape Verde,Guinea,0,1,2,Bamako,Mali,1989_amilcar_cabral_cup.txt
+Mali,Sierra Leone,1,0,1,Bamako,Mali,1989_amilcar_cabral_cup.txt
+Cape Verde,Sierra Leone,1,0,1,Bamako,Mali,1989_amilcar_cabral_cup.txt
+Mali,Guinea,3,0,1,Bamako,Mali,1989_amilcar_cabral_cup.txt
+Cape Verde - Guinea,Bissau,2,1,1,Dakar,Senegal,1991_amilcar_cabral_cup.txt
+Gambia,Mali,1,0,1,Dakar,Senegal,1991_amilcar_cabral_cup.txt
+Guinea,Sierra Leone,0,1,2,Dakar,Senegal,1991_amilcar_cabral_cup.txt
+Senegal - Guinea,Bissau,4,0,1,Dakar,Senegal,1991_amilcar_cabral_cup.txt
+Gambia,Guinea,0,0,X,Dakar,Senegal,1991_amilcar_cabral_cup.txt
+Mali,Sierra Leone,1,1,X,Dakar,Senegal,1991_amilcar_cabral_cup.txt
+Senegal,Cape Verde,0,0,X,Dakar,Senegal,1991_amilcar_cabral_cup.txt
+Gambia,Sierra Leone,0,0,X,Dakar,Senegal,1991_amilcar_cabral_cup.txt
+Guinea,Mali,0,2,2,Dakar,Senegal,1991_amilcar_cabral_cup.txt
+Cape Verde,Sierra Leone,0,0,X,Dakar,Senegal,1991_amilcar_cabral_cup.txt
+Senegal,Gambia,2,0,1,Dakar,Senegal,1991_amilcar_cabral_cup.txt
+Senegal,Cape Verde,1,0,1,Dakar,Senegal,1991_amilcar_cabral_cup.txt
+Sierra Leone,Guinea,1,1,X,Freetown,Sierra Leone,1993_amilcar_cabral_cup.txt
+Guinea-Bissau,Mauritania,1,0,1,Freetown,Sierra Leone,1993_amilcar_cabral_cup.txt
+Senegal,Mali,0,1,2,Freetown,Sierra Leone,1993_amilcar_cabral_cup.txt
+Guinea,Gambia,1,2,2,Freetown,Sierra Leone,1993_amilcar_cabral_cup.txt
+Mali - Guinea,Bissau,3,0,1,Freetown,Sierra Leone,1993_amilcar_cabral_cup.txt
+Senegal,Mauritania,4,0,1,Freetown,Sierra Leone,1993_amilcar_cabral_cup.txt
+Sierra Leone,Gambia,1,1,X,Freetown,Sierra Leone,1993_amilcar_cabral_cup.txt
+Mali,Mauritania,0,0,X,Freetown,Sierra Leone,1993_amilcar_cabral_cup.txt
+Senegal - Guinea,Bissau,0,0,X,Freetown,Sierra Leone,1993_amilcar_cabral_cup.txt
+Gambia,Senegal,0,2,2,Freetown,Sierra Leone,1993_amilcar_cabral_cup.txt
+Sierra Leone,Mali,2,0,1,Freetown,Sierra Leone,1993_amilcar_cabral_cup.txt
+Gambia,Mali,2,0,1,Freetown,Sierra Leone,1993_amilcar_cabral_cup.txt
+Sierra Leone,Senegal,2,0,1,Freetown,Sierra Leone,1993_amilcar_cabral_cup.txt
+Cape Verde,Mali,1,0,1,Nouakchott,Mauritania,1995_amilcar_cabral_cup.txt
+Mauritania,Gambia,2,1,1,Nouakchott,Mauritania,1995_amilcar_cabral_cup.txt
+Guinea-Bissau,Senegal,2,1,1,Nouakchott,Mauritania,1995_amilcar_cabral_cup.txt
+Sierra Leone,Guinea,2,0,1,Nouakchott,Mauritania,1995_amilcar_cabral_cup.txt
+Mali,Gambia,1,0,1,Nouakchott,Mauritania,1995_amilcar_cabral_cup.txt
+Mauritania,Cape Verde,1,1,X,Nouakchott,Mauritania,1995_amilcar_cabral_cup.txt
+Senegal,Guinea,3,0,1,Nouakchott,Mauritania,1995_amilcar_cabral_cup.txt
+Sierra Leone - Guinea,Bissau,2,0,1,Nouakchott,Mauritania,1995_amilcar_cabral_cup.txt
+Guinea-Bissau,Guinea,2,1,1,Nouakchott,Mauritania,1995_amilcar_cabral_cup.txt
+Senegal,Sierra Leone,1,1,X,Nouakchott,Mauritania,1995_amilcar_cabral_cup.txt
+Mauritania - Guinea,Bissau,1,0,1,Nouakchott,Mauritania,1995_amilcar_cabral_cup.txt
+Sierra Leone,Cape Verde,2,0,1,Nouakchott,Mauritania,1995_amilcar_cabral_cup.txt
+Cape Verde - Guinea,Bissau,1,0,1,Nouakchott,Mauritania,1995_amilcar_cabral_cup.txt
+Mauritania,Sierra Leone,0,0,X,Nouakchott,Mauritania   [Sierra Leone wins on penalties],1995_amilcar_cabral_cup.txt
+Gambia,Cape Verde,3,1,1,Banjul,Gambia,1997_amilcar_cabral_cup.txt
+Mauritania,Senegal,1,1,X,Banjul,Gambia,1997_amilcar_cabral_cup.txt
+Guinea,Mali,0,0,X,Banjul,Gambia,1997_amilcar_cabral_cup.txt
+Sierra Leone - Guinea,Bissau,2,1,1,Banjul,Gambia,1997_amilcar_cabral_cup.txt
+Gambia,Mauritania,2,1,1,Banjul,Gambia,1997_amilcar_cabral_cup.txt
+Senegal,Cape Verde,2,0,1,Banjul,Gambia,1997_amilcar_cabral_cup.txt
+Guinea,Sierra Leone,3,0,1,Banjul,Gambia,1997_amilcar_cabral_cup.txt
+Mali - Guinea,Bissau,6,1,1,Banjul,Gambia,1997_amilcar_cabral_cup.txt
+Cape Verde,Mauritania,2,2,X,Banjul,Gambia,1997_amilcar_cabral_cup.txt
+Gambia,Senegal,0,0,X,Banjul,Gambia,1997_amilcar_cabral_cup.txt
+Guinea - Guinea,Bissau,2,0,1,Banjul,Gambia,1997_amilcar_cabral_cup.txt
+Mali,Sierra Leone,1,1,X,Banjul,Gambia,1997_amilcar_cabral_cup.txt
+Gambia,Mali,1,2,2,Banjul,Gambia,1997_amilcar_cabral_cup.txt
+Guinea,Senegal,1,2,2,Banjul,Gambia,1997_amilcar_cabral_cup.txt
+Gambia,Guinea,2,2,X,Banjul,Gambia   [Guinea wins on penalties],1997_amilcar_cabral_cup.txt
+Mali,Senegal,1,0,1,Banjul,Gambia,1997_amilcar_cabral_cup.txt
+Cape Verde,Gambia,1,1,X,Praia,Cape Verde,2000_amilcar_cabral_cup.txt
+Guinea,Mali,3,1,1,Praia,Cape Verde,2000_amilcar_cabral_cup.txt
+Guinea-Bissau,Mauritania,1,0,1,Praia,Cape Verde,2000_amilcar_cabral_cup.txt
+Cape Verde,Sierra Leone,1,0,1,Praia,Cape Verde,2000_amilcar_cabral_cup.txt
+Gambia,Senegal,1,1,X,Praia,Cape Verde,2000_amilcar_cabral_cup.txt
+Guinea,Mauritania,1,1,X,Praia,Cape Verde,2000_amilcar_cabral_cup.txt
+Mali - Guinea,Bissau,3,2,1,Praia,Cape Verde,2000_amilcar_cabral_cup.txt
+Cape Verde,Senegal,2,2,X,Praia,Cape Verde,2000_amilcar_cabral_cup.txt
+Gambia,Sierra Leone,2,2,X,Praia,Cape Verde,2000_amilcar_cabral_cup.txt
+Guinea - Guinea,Bissau,2,1,1,Praia,Cape Verde,2000_amilcar_cabral_cup.txt
+Mali,Mauritania,2,2,X,Praia,Cape Verde,2000_amilcar_cabral_cup.txt
+Cape Verde,Guinea,2,0,1,Praia,Cape Verde,2000_amilcar_cabral_cup.txt
+Senegal,Mali,2,2,X,Praia,Cape Verde   [Senegal wins on penalties],2000_amilcar_cabral_cup.txt
+Cape Verde,Senegal,1,0,1,Praia,Cape Verde,2000_amilcar_cabral_cup.txt
+Guinea,Mali,2,0,1,Praia,Cape Verde,2000_amilcar_cabral_cup.txt
+Benin - Guinea,Bissau,2,7,2,Bamako,Mali,2001_amilcar_cabral_cup.txt
+Mali,Mauritania,3,2,1,Bamako,Mali,2001_amilcar_cabral_cup.txt
+Benin,Mauritania,2,0,1,Ségou,Mali,2001_amilcar_cabral_cup.txt
+Mali - Guinea,Bissau,2,0,1,Ségou,Mali,2001_amilcar_cabral_cup.txt
+Cape Verde,Gambia,1,1,X,Sikasso,Mali,2001_amilcar_cabral_cup.txt
+Guinea-Bissau,Mauritania,1,0,1,Ségou,Mali,2001_amilcar_cabral_cup.txt
+Mali,Benin,0,0,X,Ségou,Mali,2001_amilcar_cabral_cup.txt
+Mali,Gambia,0,1,2,Ségou,Mali,2001_amilcar_cabral_cup.txt
+Mali - Guinea,Bissau,2,1,1,Bamako,Mali,2001_amilcar_cabral_cup.txt
+Guinea - Guinea,Bissau,2,2,X,Conakry,Guinea,2005_amilcar_cabral_cup.txt
+Guinea-Bissau,Sierra Leone,1,1,X,Conakry,Guinea,2005_amilcar_cabral_cup.txt
+Guinea,Sierra Leone,1,0,1,Conakry,Guinea,2005_amilcar_cabral_cup.txt
+Guinea-Bissau,Sierra Leone,2,0,1,Bissau,Guinea-Bissau,2007_amilcar_cabral_cup.txt
+Cape Verde,Gambia,0,0,X,Bissau,Guinea-Bissau,2007_amilcar_cabral_cup.txt
+Guinea-Bissau,Cape Verde,1,1,X,Bissau,Guinea-Bissau,2007_amilcar_cabral_cup.txt

@@ -1,0 +1,69 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Dominica,Suriname,0,0,X,Les Abymes,Guadeloupe,2018_concacaf_nations_league_qualification.txt
+Guyana,Barbados,3,0,1,Leonora,Guyana,2018_concacaf_nations_league_qualification.txt
+Anguilla,French Guiana,0,5,2,The Valley,Anguilla,2018_concacaf_nations_league_qualification.txt
+Antigua and Barbuda,Saint Lucia,0,3,2,North Sound,Antigua and Barbuda,2018_concacaf_nations_league_qualification.txt
+Belize,Bahamas,4,0,1,Belmopan,Belize,2018_concacaf_nations_league_qualification.txt
+Saint Vincent and the Grenadines,Nicaragua,0,2,2,Kingstown,Saint Vincent and the Grenadines,2018_concacaf_nations_league_qualification.txt
+Cuba,Turks and Caicos Islands,11,0,1,Havana,Cuba,2018_concacaf_nations_league_qualification.txt
+Montserrat,El Salvador,1,2,2,Lookout,Montserrat,2018_concacaf_nations_league_qualification.txt
+Bonaire,Dominican Republic,0,5,2,Willemstad,Curaçao,2018_concacaf_nations_league_qualification.txt
+United States Virgin Islands,Canada,0,8,2,Bradenton,United States,2018_concacaf_nations_league_qualification.txt
+Aruba,Bermuda,3,1,1,Willemstad,Curaçao,2018_concacaf_nations_league_qualification.txt
+Jamaica,Cayman Islands,4,0,1,Kingston,Jamaica,2018_concacaf_nations_league_qualification.txt
+Saint Kitts and Nevis,Puerto Rico,1,0,1,Basseterre,Saint Kitts and Nevis,2018_concacaf_nations_league_qualification.txt
+Haiti,Sint Maarten,13,0,1,Port-au-Prince,Haiti,2018_concacaf_nations_league_qualification.txt
+Curaçao,Grenada,10,0,1,Willemstad,Curaçao,2018_concacaf_nations_league_qualification.txt
+Saint Martin,Guadeloupe,0,3,2,The Valley,Anguilla,2018_concacaf_nations_league_qualification.txt
+French Guiana,Saint Vincent and the Grenadines,0,1,2,Cayenne,French Guiana,2018_concacaf_nations_league_qualification.txt
+United States Virgin Islands,Curaçao,0,5,2,Bradenton,United States,2018_concacaf_nations_league_qualification.txt
+Bahamas,Antigua and Barbuda,0,6,2,Nassau,Bahamas,2018_concacaf_nations_league_qualification.txt
+Dominican Republic,Cayman Islands,3,0,1,Santiago de los Caballeros,Dominican Republic,2018_concacaf_nations_league_qualification.txt
+Bermuda,Sint Maarten,12,0,1,Hamilton,Bermuda,2018_concacaf_nations_league_qualification.txt
+Grenada,Cuba,0,2,2,St. George's,Grenada,2018_concacaf_nations_league_qualification.txt
+Puerto Rico,Martinique,0,1,2,Bayamón,Puerto Rico,2018_concacaf_nations_league_qualification.txt
+Turks and Caicos Islands,Guyana,0,8,2,Providenciales,Turks and Caicos Islands,2018_concacaf_nations_league_qualification.txt
+Suriname,British Virgin Islands,5,0,1,Paramaribo,Suriname,2018_concacaf_nations_league_qualification.txt
+El Salvador,Barbados,3,0,1,San Salvador,El Salvador,2018_concacaf_nations_league_qualification.txt
+Saint Martin,Saint Kitts and Nevis,0,10,2,The Valley,Anguilla,2018_concacaf_nations_league_qualification.txt
+Bonaire,Jamaica,0,6,2,Willemstad,Curaçao,2018_concacaf_nations_league_qualification.txt
+Montserrat,Belize,1,0,1,Lookout,Montserrat,2018_concacaf_nations_league_qualification.txt
+Nicaragua,Anguilla,6,0,1,Heredia,Costa Rica,2018_concacaf_nations_league_qualification.txt
+Martinique,British Virgin Islands,4,0,1,Fort-de-France,Martinique,2018_concacaf_nations_league_qualification.txt
+Canada,Dominica,5,0,1,Toronto,Canada,2018_concacaf_nations_league_qualification.txt
+Guadeloupe,Aruba,0,0,X,Les Abymes,Guadeloupe,2018_concacaf_nations_league_qualification.txt
+Saint Lucia,Haiti,1,2,2,Fort-de-France,Martinique,2018_concacaf_nations_league_qualification.txt
+Grenada,Saint Martin,5,2,1,St. George's,Grenada,2018_concacaf_nations_league_qualification.txt
+Bermuda,El Salvador,1,0,1,Hamilton,Bermuda,2018_concacaf_nations_league_qualification.txt
+Aruba,Montserrat,0,2,2,Willemstad,Curaçao,2018_concacaf_nations_league_qualification.txt
+Belize,Puerto Rico,1,0,1,Belmopan,Belize,2018_concacaf_nations_league_qualification.txt
+Cuba,Dominican Republic,1,0,1,Havana,Cuba,2018_concacaf_nations_league_qualification.txt
+Jamaica,Suriname,2,1,1,Kingston,Jamaica,2018_concacaf_nations_league_qualification.txt
+Cayman Islands,Saint Lucia,0,0,X,George Town,Cayman Islands,2018_concacaf_nations_league_qualification.txt
+Nicaragua,Haiti,0,2,2,Managua,Nicaragua,2018_concacaf_nations_league_qualification.txt
+Turks and Caicos Islands,Saint Vincent and the Grenadines,3,2,1,Providenciales,Turks and Caicos Islands,2018_concacaf_nations_league_qualification.txt
+Bahamas,Anguilla,1,1,X,Nassau,Bahamas,2018_concacaf_nations_league_qualification.txt
+Barbados,United States Virgin Islands,3,0,1,Bridgetown,Barbados,2018_concacaf_nations_league_qualification.txt
+Saint Kitts and Nevis,Canada,0,1,2,Basseterre,Saint Kitts and Nevis,2018_concacaf_nations_league_qualification.txt
+Curaçao,Guadeloupe,6,0,1,Willemstad,Curaçao,2018_concacaf_nations_league_qualification.txt
+Martinique,Antigua and Barbuda,4,2,1,Fort-de-France,Martinique,2018_concacaf_nations_league_qualification.txt
+Sint Maarten,Dominica,0,2,2,The Valley,Anguilla,2018_concacaf_nations_league_qualification.txt
+French Guiana,Guyana,2,1,1,Cayenne,French Guiana,2018_concacaf_nations_league_qualification.txt
+British Virgin Islands,Turks and Caicos Islands,2,2,X,The Valley,Anguilla,2019_concacaf_nations_league_qualification.txt
+Anguilla,United States Virgin Islands,0,3,2,The Valley,Anguilla,2019_concacaf_nations_league_qualification.txt
+Saint Vincent and the Grenadines,Bonaire,2,1,1,Arnos Vale,Saint Vincent and the Grenadines,2019_concacaf_nations_league_qualification.txt
+Cayman Islands,Montserrat,1,2,2,West Bay,Cayman Islands,2019_concacaf_nations_league_qualification.txt
+Saint Lucia,Aruba,3,2,1,North Sound,Antigua and Barbuda,2019_concacaf_nations_league_qualification.txt
+Dominica,Bahamas,4,0,1,Roseau,Dominica,2019_concacaf_nations_league_qualification.txt
+Sint Maarten,Saint Martin,4,3,1,The Valley,Anguilla,2019_concacaf_nations_league_qualification.txt
+Antigua and Barbuda,Curaçao,2,1,1,North Sound,Antigua and Barbuda,2019_concacaf_nations_league_qualification.txt
+Guyana,Belize,2,1,1,Leonora,Guyana,2019_concacaf_nations_league_qualification.txt
+Suriname,Saint Kitts and Nevis,2,0,1,Paramaribo,Suriname,2019_concacaf_nations_league_qualification.txt
+Guadeloupe,Martinique,0,1,2,Les Abymes,Guadeloupe,2019_concacaf_nations_league_qualification.txt
+British Virgin Islands,Bonaire,1,2,2,The Valley,Anguilla,2019_concacaf_nations_league_qualification.txt
+Puerto Rico,Grenada,0,2,2,Bayamón,Puerto Rico,2019_concacaf_nations_league_qualification.txt
+Canada,French Guiana,4,1,1,Vancouver,Canada,2019_concacaf_nations_league_qualification.txt
+Dominican Republic,Bermuda,1,3,2,Santiago de los Caballeros,Dominican Republic,2019_concacaf_nations_league_qualification.txt
+Haiti,Cuba,2,1,1,Port-au-Prince,Haiti,2019_concacaf_nations_league_qualification.txt
+Barbados,Nicaragua,0,1,2,Bridgetown,Barbados,2019_concacaf_nations_league_qualification.txt
+El Salvador,Jamaica,2,0,1,San Salvador,El Salvador,2019_concacaf_nations_league_qualification.txt

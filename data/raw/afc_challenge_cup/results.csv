@@ -1,0 +1,101 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Bangladesh,Cambodia,2,1,1,Dhaka,Bangladesh,2006_afc_challenge_cup.txt
+Palestine,Guam,11,0,1,Dhaka,Bangladesh,2006_afc_challenge_cup.txt
+Kyrgyzstan,Pakistan,0,1,2,Dhaka,Bangladesh,2006_afc_challenge_cup.txt
+Nepal,Bhutan,2,0,1,Chittagong,Bangladesh,2006_afc_challenge_cup.txt
+Sri Lanka,Brunei,1,0,1,Chittagong,Bangladesh,2006_afc_challenge_cup.txt
+Tajikistan,Macau,4,0,1,Dhaka,Bangladesh,2006_afc_challenge_cup.txt
+Afghanistan,Taiwan,2,2,X,Chittagong,Bangladesh,2006_afc_challenge_cup.txt
+Bangladesh,Guam,3,0,1,Dhaka,Bangladesh,2006_afc_challenge_cup.txt
+Cambodia,Palestine,0,4,2,Dhaka,Bangladesh,2006_afc_challenge_cup.txt
+Bhutan,Sri Lanka,0,1,2,Chittagong,Bangladesh,2006_afc_challenge_cup.txt
+Brunei,Nepal,2,1,1,Chittagong,Bangladesh,2006_afc_challenge_cup.txt
+Pakistan,Tajikistan,0,2,2,Dhaka,Bangladesh,2006_afc_challenge_cup.txt
+Bangladesh,Palestine,1,1,X,Dhaka,Bangladesh,2006_afc_challenge_cup.txt
+Philippines,Afghanistan,1,1,X,Chittagong,Bangladesh,2006_afc_challenge_cup.txt
+Bhutan,Brunei,0,0,X,Chittagong,Bangladesh,2006_afc_challenge_cup.txt
+Cambodia,Guam,3,0,1,Dhaka,Bangladesh,2006_afc_challenge_cup.txt
+Pakistan,Macau,2,2,X,Dhaka,Bangladesh,2006_afc_challenge_cup.txt
+Sri Lanka,Nepal,1,1,X,Chittagong,Bangladesh,2006_afc_challenge_cup.txt
+Tajikistan,Kyrgyzstan,0,1,2,Dhaka,Bangladesh,2006_afc_challenge_cup.txt
+Macau,Kyrgyzstan,0,2,2,Dhaka,Bangladesh,2006_afc_challenge_cup.txt
+Sri Lanka,Taiwan,3,0,1,Chittagong,Bangladesh,2006_afc_challenge_cup.txt
+Palestine,Kyrgyzstan,0,1,2,Dhaka,Bangladesh,2006_afc_challenge_cup.txt
+Bangladesh,Tajikistan,1,6,2,Dhaka,Bangladesh,2006_afc_challenge_cup.txt
+Sri Lanka,Nepal,1,1,X,Chittagong,Bangladesh,2006_afc_challenge_cup.txt
+Tajikistan,Kyrgyzstan,2,0,1,Dhaka,Bangladesh,2006_afc_challenge_cup.txt
+Sri Lanka,Tajikistan,0,4,2,Dhaka,Bangladesh,2006_afc_challenge_cup.txt
+India,Afghanistan,1,0,1,Hyderabad,India,2008_afc_challenge_cup.txt
+Turkmenistan,Tajikistan,0,0,X,Hyderabad,India,2008_afc_challenge_cup.txt
+Myanmar,Nepal,3,0,1,Hyderabad,India,2008_afc_challenge_cup.txt
+North Korea,Sri Lanka,3,0,1,Hyderabad,India,2008_afc_challenge_cup.txt
+Afghanistan,Turkmenistan,0,5,2,Hyderabad,India,2008_afc_challenge_cup.txt
+India,Tajikistan,1,1,X,Hyderabad,India,2008_afc_challenge_cup.txt
+Nepal,North Korea,0,1,2,Hyderabad,India,2008_afc_challenge_cup.txt
+Sri Lanka,Myanmar,1,3,2,Hyderabad,India,2008_afc_challenge_cup.txt
+Afghanistan,Tajikistan,0,4,2,Hyderabad,India,2008_afc_challenge_cup.txt
+India,Turkmenistan,2,1,1,Hyderabad,India,2008_afc_challenge_cup.txt
+North Korea,Myanmar,1,0,1,Hyderabad,India,2008_afc_challenge_cup.txt
+Nepal,Sri Lanka,3,0,1,Hyderabad,India,2008_afc_challenge_cup.txt
+India,Myanmar,1,0,1,Hyderabad,India,2008_afc_challenge_cup.txt
+North Korea,Tajikistan,0,1,2,Hyderabad,India,2008_afc_challenge_cup.txt
+Myanmar,North Korea,0,4,2,New Delhi,India,2008_afc_challenge_cup.txt
+India,Tajikistan,4,1,1,New Delhi,India,2008_afc_challenge_cup.txt
+Sri Lanka,Myanmar,0,4,2,Colombo,Sri Lanka,2010_afc_challenge_cup.txt
+Tajikistan,Bangladesh,1,2,2,Colombo,Sri Lanka,2010_afc_challenge_cup.txt
+North Korea,Turkmenistan,1,1,X,Colombo,Sri Lanka,2010_afc_challenge_cup.txt
+Bangladesh,Myanmar,1,2,2,Colombo,Sri Lanka,2010_afc_challenge_cup.txt
+Sri Lanka,Tajikistan,1,3,2,Colombo,Sri Lanka,2010_afc_challenge_cup.txt
+Kyrgyzstan,North Korea,0,4,2,Colombo,Sri Lanka,2010_afc_challenge_cup.txt
+Sri Lanka,Bangladesh,3,0,1,Colombo,Sri Lanka,2010_afc_challenge_cup.txt
+Tajikistan,Myanmar,3,0,1,Colombo,Sri Lanka,2010_afc_challenge_cup.txt
+Turkmenistan,Kyrgyzstan,1,0,1,Colombo,Sri Lanka,2010_afc_challenge_cup.txt
+North Korea,Myanmar,5,0,1,Colombo,Sri Lanka,2010_afc_challenge_cup.txt
+Tajikistan,Turkmenistan,0,2,2,Colombo,Sri Lanka,2010_afc_challenge_cup.txt
+Turkmenistan,North Korea,1,1,X,Colombo,Sri Lanka,2010_afc_challenge_cup.txt
+Tajikistan,Myanmar,1,0,1,Colombo,Sri Lanka,2010_afc_challenge_cup.txt
+Nepal,Palestine,0,2,2,Kathmandu,Nepal,2012_afc_challenge_cup.txt
+Turkmenistan,Maldives,3,1,1,Kathmandu,Nepal,2012_afc_challenge_cup.txt
+India,Tajikistan,0,2,2,Kathmandu,Nepal,2012_afc_challenge_cup.txt
+North Korea,Philippines,2,0,1,Kathmandu,Nepal,2012_afc_challenge_cup.txt
+Nepal,Maldives,0,1,2,Kathmandu,Nepal,2012_afc_challenge_cup.txt
+Palestine,Turkmenistan,0,0,X,Kathmandu,Nepal,2012_afc_challenge_cup.txt
+Philippines,India,2,0,1,Kathmandu,Nepal,2012_afc_challenge_cup.txt
+Tajikistan,North Korea,0,2,2,Kathmandu,Nepal,2012_afc_challenge_cup.txt
+Maldives,Palestine,0,2,2,Kathmandu,Nepal,2012_afc_challenge_cup.txt
+Nepal,Turkmenistan,0,3,2,Kathmandu,Nepal,2012_afc_challenge_cup.txt
+North Korea,India,4,0,1,Kathmandu,Nepal,2012_afc_challenge_cup.txt
+Tajikistan,Philippines,1,2,2,Kathmandu,Nepal,2012_afc_challenge_cup.txt
+North Korea,Palestine,2,0,1,Kathmandu,Nepal,2012_afc_challenge_cup.txt
+Turkmenistan,Philippines,2,1,1,Kathmandu,Nepal,2012_afc_challenge_cup.txt
+Philippines,Palestine,4,3,1,Kathmandu,Nepal,2012_afc_challenge_cup.txt
+Turkmenistan,North Korea,1,2,2,Kathmandu,Nepal,2012_afc_challenge_cup.txt
+Maldives,Myanmar,2,3,2,Malé,Maldives,2014_afc_challenge_cup.txt
+Palestine,Kyrgyzstan,1,0,1,Malé,Maldives,2014_afc_challenge_cup.txt
+Philippines,Afghanistan,0,0,X,Addu City,Maldives,2014_afc_challenge_cup.txt
+Turkmenistan,Laos,5,1,1,Addu City,Maldives,2014_afc_challenge_cup.txt
+Myanmar,Palestine,0,2,2,Malé,Maldives,2014_afc_challenge_cup.txt
+Maldives,Kyrgyzstan,2,0,1,Malé,Maldives,2014_afc_challenge_cup.txt
+Afghanistan,Turkmenistan,3,1,1,Addu City,Maldives,2014_afc_challenge_cup.txt
+Laos,Philippines,0,2,2,Addu City,Maldives,2014_afc_challenge_cup.txt
+Kyrgyzstan,Myanmar,1,0,1,Addu City,Maldives,2014_afc_challenge_cup.txt
+Maldives,Palestine,0,0,X,Malé,Maldives,2014_afc_challenge_cup.txt
+Afghanistan,Laos,0,0,X,Addu City,Maldives,2014_afc_challenge_cup.txt
+Turkmenistan,Philippines,0,2,2,Malé,Maldives,2014_afc_challenge_cup.txt
+Maldives,Philippines,2,3,2,Malé,Maldives,2014_afc_challenge_cup.txt
+Palestine,Afghanistan,2,0,1,Malé,Maldives,2014_afc_challenge_cup.txt
+Maldives,Afghanistan,1,1,X,Malé,Maldives,2014_afc_challenge_cup.txt
+Palestine,Philippines,1,0,1,Malé,Maldives,2014_afc_challenge_cup.txt
+Brunei - Timor,Leste,4,0,1,Kuching,Malaysia,2016_afc_challenge_cup.txt
+Macau,Mongolia,2,1,1,Kuching,Malaysia,2016_afc_challenge_cup.txt
+Sri Lanka,Laos,1,2,2,Kuching,Malaysia,2016_afc_challenge_cup.txt
+Timor-Leste,Nepal,0,0,X,Kuching,Malaysia,2016_afc_challenge_cup.txt
+Laos,Macau,1,4,2,Kuching,Malaysia,2016_afc_challenge_cup.txt
+Mongolia,Sri Lanka,2,0,1,Kuching,Malaysia,2016_afc_challenge_cup.txt
+Nepal,Brunei,3,0,1,Kuching,Malaysia,2016_afc_challenge_cup.txt
+Mongolia,Laos,0,3,2,Kuching,Malaysia,2016_afc_challenge_cup.txt
+Sri Lanka,Macau,1,1,X,Kuching,Malaysia,2016_afc_challenge_cup.txt
+Macau,Brunei,1,1,X,Kuching,Malaysia,2016_afc_challenge_cup.txt
+Nepal,Laos,2,2,X,Kuching,Malaysia,2016_afc_challenge_cup.txt
+Laos,Brunei,3,2,1,Kuching,Malaysia,2016_afc_challenge_cup.txt
+Nepal,Macau,1,0,1,Kuching,Malaysia,2016_afc_challenge_cup.txt

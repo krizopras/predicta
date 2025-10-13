@@ -1,0 +1,608 @@
+time,home_team,away_team,home_score,away_score,result,ht_score,source_file
+18.45,Pirin Blagoevgrad,PFC Beroe,1,2,2,1-1,2023-24_bg1.txt
+21.00,FK Krumovgrad,PFC Ludogorets Razgrad,3,1,1,2-1,2023-24_bg1.txt
+18.45,Levski Sofia,CSKA 1948 Sofia,1,2,2,1-1,2023-24_bg1.txt
+21.00,Arda Kardzhali,Cherno More Varna,3,3,X,0-1,2023-24_bg1.txt
+18.30,Lokomotiv Plovdiv,Botev Plovdiv,1,1,X,0-1,2023-24_bg1.txt
+21.00,Hebar Pazardzhik,CSKA Sofia,0,0,X,,2023-24_bg1.txt
+18.30,Lokomotiv Sofia,Botev Vratsa,1,0,1,0-0,2023-24_bg1.txt
+20.45,Etar Veliko Tarnovo,Slavia Sofia,0,1,2,0-1,2023-24_bg1.txt
+19.00,CSKA 1948 Sofia,Pirin Blagoevgrad,3,0,1,2-0,2023-24_bg1.txt
+21.15,CSKA Sofia,FK Krumovgrad,1,0,1,1-0,2023-24_bg1.txt
+19.15,Botev Plovdiv,Levski Sofia,1,3,2,0-0,2023-24_bg1.txt
+21.30,PFC Ludogorets Razgrad,Etar Veliko Tarnovo,5,0,1,1-0,2023-24_bg1.txt
+19.00,Cherno More Varna,Hebar Pazardzhik,1,0,1,1-0,2023-24_bg1.txt
+21.15,Lokomotiv Sofia,Lokomotiv Plovdiv,2,4,2,1-1,2023-24_bg1.txt
+19.00,Botev Vratsa,Slavia Sofia,2,0,1,0-0,2023-24_bg1.txt
+21.15,PFC Beroe,Arda Kardzhali,1,0,1,1-0,2023-24_bg1.txt
+21.15,FK Krumovgrad,Cherno More Varna,1,3,2,1-1,2023-24_bg1.txt
+19.00,Hebar Pazardzhik,PFC Beroe,1,0,1,0-0,2023-24_bg1.txt
+21.15,Pirin Blagoevgrad,Botev Plovdiv,0,0,X,,2023-24_bg1.txt
+21.15,Levski Sofia,Lokomotiv Sofia,6,0,1,2-0,2023-24_bg1.txt
+21.15,Lokomotiv Plovdiv,Botev Vratsa,4,0,1,2-0,2023-24_bg1.txt
+17.00,Etar Veliko Tarnovo,CSKA Sofia,0,1,2,0-0,2023-24_bg1.txt
+18.00,Slavia Sofia,PFC Ludogorets Razgrad,0,2,2,0-0,2023-24_bg1.txt
+12.45,Arda Kardzhali,CSKA 1948 Sofia,0,3,2,0-2,2023-24_bg1.txt
+19.00,Cherno More Varna,Etar Veliko Tarnovo,2,1,1,0-0,2023-24_bg1.txt
+21.15,Botev Plovdiv,Arda Kardzhali,0,2,2,0-2,2023-24_bg1.txt
+19.00,Botev Vratsa,PFC Ludogorets Razgrad,0,5,2,0-1,2023-24_bg1.txt
+21.15,Lokomotiv Sofia,Pirin Blagoevgrad,2,0,1,1-0,2023-24_bg1.txt
+18.45,CSKA Sofia,Slavia Sofia,1,1,X,0-0,2023-24_bg1.txt
+21.15,Lokomotiv Plovdiv,Levski Sofia,2,1,1,2-1,2023-24_bg1.txt
+19.00,CSKA 1948 Sofia,Hebar Pazardzhik,1,1,X,0-0,2023-24_bg1.txt
+21.15,PFC Beroe,FK Krumovgrad,2,0,1,2-0,2023-24_bg1.txt
+19.00,Arda Kardzhali,Lokomotiv Sofia,1,0,1,1-0,2023-24_bg1.txt
+21.15,Pirin Blagoevgrad,Lokomotiv Plovdiv,0,1,2,0-0,2023-24_bg1.txt
+19.00,Hebar Pazardzhik,Botev Plovdiv,1,0,1,0-0,2023-24_bg1.txt
+21.15,Slavia Sofia,Cherno More Varna,1,5,2,1-2,2023-24_bg1.txt
+18.45,Levski Sofia,Botev Vratsa,1,0,1,0-0,2023-24_bg1.txt
+21.15,PFC Ludogorets Razgrad,CSKA Sofia,3,0,1,2-0,2023-24_bg1.txt
+19.00,Etar Veliko Tarnovo,PFC Beroe,2,2,X,1-1,2023-24_bg1.txt
+21.15,FK Krumovgrad,CSKA 1948 Sofia,1,0,1,0-0,2023-24_bg1.txt
+19.00,Lokomotiv Sofia,Hebar Pazardzhik,0,1,2,0-1,2023-24_bg1.txt
+21.15,Lokomotiv Plovdiv,Arda Kardzhali,1,0,1,0-0,2023-24_bg1.txt
+19.00,PFC Beroe,Slavia Sofia,3,0,1,3-0,2023-24_bg1.txt
+21.15,Botev Vratsa,CSKA Sofia,0,2,2,0-1,2023-24_bg1.txt
+19.00,Botev Plovdiv,FK Krumovgrad,1,2,2,1-0,2023-24_bg1.txt
+21.15,Cherno More Varna,PFC Ludogorets Razgrad,1,0,1,0-0,2023-24_bg1.txt
+20.30,CSKA 1948 Sofia,Etar Veliko Tarnovo,1,0,1,1-0,2023-24_bg1.txt
+20.30,Levski Sofia,Pirin Blagoevgrad,2,0,1,0-0,2023-24_bg1.txt
+19.00,Pirin Blagoevgrad,Botev Vratsa,0,1,2,0-0,2023-24_bg1.txt
+21.15,Hebar Pazardzhik,Lokomotiv Plovdiv,3,4,2,3-4,2023-24_bg1.txt
+19.00,FK Krumovgrad,Lokomotiv Sofia,2,0,1,1-0,2023-24_bg1.txt
+21.15,CSKA Sofia,Cherno More Varna,1,1,X,1-0,2023-24_bg1.txt
+19.00,Etar Veliko Tarnovo,Botev Plovdiv,1,2,2,0-0,2023-24_bg1.txt
+21.15,PFC Ludogorets Razgrad,PFC Beroe,5,0,1,2-0,2023-24_bg1.txt
+20.30,Slavia Sofia,CSKA 1948 Sofia,0,2,2,0-2,2023-24_bg1.txt
+19.30,Arda Kardzhali,Levski Sofia,0,0,X,,2023-24_bg1.txt
+17.00,Pirin Blagoevgrad,Arda Kardzhali,0,2,2,0-1,2023-24_bg1.txt
+19.15,Botev Vratsa,Cherno More Varna,0,1,2,0-0,2023-24_bg1.txt
+21.30,Botev Plovdiv,Slavia Sofia,3,1,1,3-0,2023-24_bg1.txt
+19.00,Lokomotiv Sofia,Etar Veliko Tarnovo,1,3,2,1-2,2023-24_bg1.txt
+21.15,PFC Beroe,CSKA Sofia,0,3,2,0-2,2023-24_bg1.txt
+19.00,Lokomotiv Plovdiv,FK Krumovgrad,4,0,1,2-0,2023-24_bg1.txt
+21.15,Levski Sofia,Hebar Pazardzhik,1,0,1,0-0,2023-24_bg1.txt
+18.45,CSKA 1948 Sofia,PFC Ludogorets Razgrad,0,1,2,0-0,2023-24_bg1.txt
+17.30,Arda Kardzhali,Botev Vratsa,4,0,1,2-0,2023-24_bg1.txt
+20.00,Cherno More Varna,PFC Beroe,2,0,1,1-0,2023-24_bg1.txt
+17.30,Slavia Sofia,Lokomotiv Sofia,1,2,2,0-1,2023-24_bg1.txt
+20.00,PFC Ludogorets Razgrad,Botev Plovdiv,2,2,X,1-0,2023-24_bg1.txt
+17.45,Etar Veliko Tarnovo,Lokomotiv Plovdiv,0,1,2,0-1,2023-24_bg1.txt
+20.15,CSKA Sofia,CSKA 1948 Sofia,2,0,1,0-0,2023-24_bg1.txt
+17.30,Hebar Pazardzhik,Pirin Blagoevgrad,1,2,2,0-0,2023-24_bg1.txt
+20.00,FK Krumovgrad,Levski Sofia,2,2,X,1-2,2023-24_bg1.txt
+15.00,Botev Vratsa,PFC Beroe,1,0,1,0-0,2023-24_bg1.txt
+17.30,CSKA 1948 Sofia,Cherno More Varna,1,1,X,0-1,2023-24_bg1.txt
+20.00,Botev Plovdiv,CSKA Sofia,1,2,2,0-1,2023-24_bg1.txt
+15.00,Arda Kardzhali,Hebar Pazardzhik,3,1,1,1-0,2023-24_bg1.txt
+17.30,Lokomotiv Plovdiv,Slavia Sofia,2,0,1,0-0,2023-24_bg1.txt
+20.00,Levski Sofia,Etar Veliko Tarnovo,1,0,1,0-0,2023-24_bg1.txt
+18.00,Pirin Blagoevgrad,FK Krumovgrad,1,0,1,1-0,2023-24_bg1.txt
+20.30,Lokomotiv Sofia,PFC Ludogorets Razgrad,1,3,2,1-0,2023-24_bg1.txt
+17.00,PFC Beroe,CSKA 1948 Sofia,0,0,X,,2023-24_bg1.txt
+19.30,Cherno More Varna,Botev Plovdiv,1,0,1,1-0,2023-24_bg1.txt
+15.30,Hebar Pazardzhik,Botev Vratsa,1,1,X,1-0,2023-24_bg1.txt
+18.00,Slavia Sofia,Levski Sofia,0,2,2,0-1,2023-24_bg1.txt
+20.30,PFC Ludogorets Razgrad,Lokomotiv Plovdiv,1,1,X,1-0,2023-24_bg1.txt
+15.30,Etar Veliko Tarnovo,Pirin Blagoevgrad,0,2,2,0-2,2023-24_bg1.txt
+18.00,FK Krumovgrad,Arda Kardzhali,1,3,2,0-3,2023-24_bg1.txt
+20.30,CSKA Sofia,Lokomotiv Sofia,2,0,1,2-0,2023-24_bg1.txt
+17.30,Botev Vratsa,CSKA 1948 Sofia,1,2,2,1-1,2023-24_bg1.txt
+20.00,Botev Plovdiv,PFC Beroe,4,1,1,1-0,2023-24_bg1.txt
+15.15,Arda Kardzhali,Etar Veliko Tarnovo,3,0,1,1-0,2023-24_bg1.txt
+17.45,Lokomotiv Sofia,Cherno More Varna,0,0,X,,2023-24_bg1.txt
+20.30,Levski Sofia,PFC Ludogorets Razgrad,0,1,2,0-1,2023-24_bg1.txt
+15.00,Hebar Pazardzhik,FK Krumovgrad,0,0,X,,2023-24_bg1.txt
+17.30,Pirin Blagoevgrad,Slavia Sofia,1,1,X,0-1,2023-24_bg1.txt
+20.00,Lokomotiv Plovdiv,CSKA Sofia,0,2,2,0-2,2023-24_bg1.txt
+17.30,FK Krumovgrad,Botev Vratsa,1,0,1,1-0,2023-24_bg1.txt
+20.00,PFC Beroe,Lokomotiv Sofia,0,1,2,0-0,2023-24_bg1.txt
+14.45,CSKA Sofia,Levski Sofia,1,1,X,0-1,2023-24_bg1.txt
+17.45,Slavia Sofia,Arda Kardzhali,1,0,1,1-0,2023-24_bg1.txt
+20.15,Cherno More Varna,Lokomotiv Plovdiv,2,2,X,1-2,2023-24_bg1.txt
+15.15,Etar Veliko Tarnovo,Hebar Pazardzhik,2,5,2,2-2,2023-24_bg1.txt
+17.45,CSKA 1948 Sofia,Botev Plovdiv,1,0,1,0-0,2023-24_bg1.txt
+20.15,PFC Ludogorets Razgrad,Pirin Blagoevgrad,4,0,1,1-0,2023-24_bg1.txt
+16.45,FK Krumovgrad,Etar Veliko Tarnovo,0,0,X,,2023-24_bg1.txt
+19.15,Lokomotiv Plovdiv,PFC Beroe,1,2,2,0-2,2023-24_bg1.txt
+14.00,Botev Vratsa,Botev Plovdiv,3,5,2,1-2,2023-24_bg1.txt
+16.30,Lokomotiv Sofia,CSKA 1948 Sofia,0,0,X,,2023-24_bg1.txt
+19.00,Pirin Blagoevgrad,CSKA Sofia,1,2,2,1-0,2023-24_bg1.txt
+14.00,Hebar Pazardzhik,Slavia Sofia,1,0,1,0-0,2023-24_bg1.txt
+16.30,Levski Sofia,Cherno More Varna,1,0,1,0-0,2023-24_bg1.txt
+19.00,Arda Kardzhali,PFC Ludogorets Razgrad,0,0,X,,2023-24_bg1.txt
+17.30,Etar Veliko Tarnovo,Botev Vratsa,2,1,1,1-1,2023-24_bg1.txt
+12.30,Botev Plovdiv,Lokomotiv Sofia,6,0,1,3-0,2023-24_bg1.txt
+15.00,Cherno More Varna,Pirin Blagoevgrad,2,1,1,1-1,2023-24_bg1.txt
+17.30,CSKA 1948 Sofia,Lokomotiv Plovdiv,1,1,X,1-1,2023-24_bg1.txt
+14.00,Slavia Sofia,FK Krumovgrad,2,0,1,1-0,2023-24_bg1.txt
+16.30,CSKA Sofia,Arda Kardzhali,0,0,X,,2023-24_bg1.txt
+19.00,PFC Beroe,Levski Sofia,2,1,1,1-1,2023-24_bg1.txt
+18.15,PFC Ludogorets Razgrad,Hebar Pazardzhik,3,1,1,2-0,2023-24_bg1.txt
+17.00,PFC Beroe,Pirin Blagoevgrad,0,0,X,,2023-24_bg1.txt
+19.30,Botev Plovdiv,Lokomotiv Plovdiv,0,0,X,,2023-24_bg1.txt
+15.30,PFC Ludogorets Razgrad,FK Krumovgrad,1,0,1,1-0,2023-24_bg1.txt
+13.00,Botev Vratsa,Lokomotiv Sofia,0,2,2,0-1,2023-24_bg1.txt
+15.30,Slavia Sofia,Etar Veliko Tarnovo,1,0,1,1-0,2023-24_bg1.txt
+18.00,CSKA Sofia,Hebar Pazardzhik,3,0,1,1-0,2023-24_bg1.txt
+15.00,Cherno More Varna,Arda Kardzhali,1,0,1,0-0,2023-24_bg1.txt
+17.30,CSKA 1948 Sofia,Levski Sofia,1,0,1,0-0,2023-24_bg1.txt
+15.00,Slavia Sofia,Botev Vratsa,1,0,1,1-0,2023-24_bg1.txt
+17.30,Lokomotiv Plovdiv,Lokomotiv Sofia,2,1,1,1-1,2023-24_bg1.txt
+12.45,Hebar Pazardzhik,Cherno More Varna,1,1,X,0-0,2023-24_bg1.txt
+15.15,Pirin Blagoevgrad,CSKA 1948 Sofia,2,1,1,0-0,2023-24_bg1.txt
+17.45,Arda Kardzhali,PFC Beroe,1,0,1,0-0,2023-24_bg1.txt
+13.00,FK Krumovgrad,CSKA Sofia,1,4,2,1-1,2023-24_bg1.txt
+15.30,Levski Sofia,Botev Plovdiv,1,1,X,1-0,2023-24_bg1.txt
+18.00,Etar Veliko Tarnovo,PFC Ludogorets Razgrad,0,4,2,0-4,2023-24_bg1.txt
+17.30,PFC Beroe,Hebar Pazardzhik,2,1,1,1-0,2023-24_bg1.txt
+12.30,Botev Vratsa,Lokomotiv Plovdiv,2,0,1,1-0,2023-24_bg1.txt
+15.00,Botev Plovdiv,Pirin Blagoevgrad,3,1,1,1-1,2023-24_bg1.txt
+17.30,CSKA Sofia,Etar Veliko Tarnovo,2,0,1,0-0,2023-24_bg1.txt
+17.45,Cherno More Varna,FK Krumovgrad,3,2,1,2-0,2023-24_bg1.txt
+15.15,PFC Ludogorets Razgrad,Slavia Sofia,2,3,2,1-1,2023-24_bg1.txt
+17.30,Lokomotiv Sofia,Levski Sofia,2,2,X,0-1,2023-24_bg1.txt
+17.30,CSKA 1948 Sofia,Arda Kardzhali,1,0,1,1-0,2023-24_bg1.txt
+15.00,Arda Kardzhali,Botev Plovdiv,0,2,2,0-0,2023-24_bg1.txt
+17.30,Slavia Sofia,CSKA Sofia,1,1,X,0-0,2023-24_bg1.txt
+12.30,Hebar Pazardzhik,CSKA 1948 Sofia,1,3,2,0-1,2023-24_bg1.txt
+15.00,Etar Veliko Tarnovo,Cherno More Varna,1,2,2,0-0,2023-24_bg1.txt
+17.30,Levski Sofia,Lokomotiv Plovdiv,3,0,1,2-0,2023-24_bg1.txt
+12.45,Pirin Blagoevgrad,Lokomotiv Sofia,1,1,X,1-0,2023-24_bg1.txt
+15.15,PFC Ludogorets Razgrad,Botev Vratsa,5,0,1,1-0,2023-24_bg1.txt
+17.45,FK Krumovgrad,PFC Beroe,1,0,1,1-0,2023-24_bg1.txt
+12.30,Lokomotiv Sofia,Arda Kardzhali,0,1,2,0-0,2023-24_bg1.txt
+15.00,Cherno More Varna,Slavia Sofia,3,0,1,1-0,2023-24_bg1.txt
+17.30,Botev Vratsa,Levski Sofia,0,1,2,0-1,2023-24_bg1.txt
+12.30,CSKA 1948 Sofia,FK Krumovgrad,0,3,2,0-1,2023-24_bg1.txt
+15.00,Botev Plovdiv,Hebar Pazardzhik,1,0,1,0-0,2023-24_bg1.txt
+17.45,CSKA Sofia,PFC Ludogorets Razgrad,0,1,2,0-0,2023-24_bg1.txt
+15.00,Lokomotiv Plovdiv,Pirin Blagoevgrad,3,0,1,0-0,2023-24_bg1.txt
+17.30,PFC Beroe,Etar Veliko Tarnovo,0,0,X,,2023-24_bg1.txt
+17.30,Hebar Pazardzhik,Lokomotiv Sofia,0,1,2,0-1,2023-24_bg1.txt
+12.00,FK Krumovgrad,Botev Plovdiv,2,1,1,1-1,2023-24_bg1.txt
+14.30,Slavia Sofia,PFC Beroe,3,0,1,2-0,2023-24_bg1.txt
+17.00,Pirin Blagoevgrad,Levski Sofia,1,2,2,1-2,2023-24_bg1.txt
+12.45,Etar Veliko Tarnovo,CSKA 1948 Sofia,1,1,X,0-0,2023-24_bg1.txt
+15.15,Arda Kardzhali,Lokomotiv Plovdiv,1,2,2,1-1,2023-24_bg1.txt
+17.45,CSKA Sofia,Botev Vratsa,3,0,1,2-0,2023-24_bg1.txt
+16.00,PFC Ludogorets Razgrad,Cherno More Varna,3,1,1,3-1,2023-24_bg1.txt
+15.00,Botev Vratsa,Pirin Blagoevgrad,1,2,2,0-1,2023-24_bg1.txt
+17.30,Botev Plovdiv,Etar Veliko Tarnovo,2,0,1,0-0,2023-24_bg1.txt
+12.45,Lokomotiv Plovdiv,Hebar Pazardzhik,1,2,2,1-0,2023-24_bg1.txt
+15.15,Cherno More Varna,CSKA Sofia,1,0,1,0-0,2023-24_bg1.txt
+17.45,Levski Sofia,Arda Kardzhali,4,0,1,3-0,2023-24_bg1.txt
+14.30,Lokomotiv Sofia,FK Krumovgrad,0,2,2,0-1,2023-24_bg1.txt
+16.45,CSKA 1948 Sofia,Slavia Sofia,1,1,X,0-1,2023-24_bg1.txt
+17.30,PFC Beroe,PFC Ludogorets Razgrad,0,2,2,0-1,2023-24_bg1.txt
+17.30,Cherno More Varna,Botev Vratsa,2,1,1,1-0,2023-24_bg1.txt
+12.45,Etar Veliko Tarnovo,Lokomotiv Sofia,1,2,2,0-0,2023-24_bg1.txt
+15.15,FK Krumovgrad,Lokomotiv Plovdiv,3,1,1,0-0,2023-24_bg1.txt
+17.45,Slavia Sofia,Botev Plovdiv,2,2,X,1-0,2023-24_bg1.txt
+14.30,CSKA Sofia,PFC Beroe,3,0,1,2-0,2023-24_bg1.txt
+17.00,PFC Ludogorets Razgrad,CSKA 1948 Sofia,2,0,1,1-0,2023-24_bg1.txt
+15.00,Arda Kardzhali,Pirin Blagoevgrad,0,0,X,,2023-24_bg1.txt
+17.30,Hebar Pazardzhik,Levski Sofia,0,1,2,0-0,2023-24_bg1.txt
+18.30,Lokomotiv Plovdiv,Etar Veliko Tarnovo,3,0,1,0-0,2023-24_bg1.txt
+12.30,Lokomotiv Sofia,Slavia Sofia,1,2,2,1-0,2023-24_bg1.txt
+15.00,CSKA 1948 Sofia,CSKA Sofia,1,2,2,1-0,2023-24_bg1.txt
+17.30,PFC Beroe,Cherno More Varna,2,0,1,2-0,2023-24_bg1.txt
+12.45,Botev Vratsa,Arda Kardzhali,1,2,2,0-0,2023-24_bg1.txt
+15.15,Levski Sofia,FK Krumovgrad,0,0,X,,2023-24_bg1.txt
+17.45,Botev Plovdiv,PFC Ludogorets Razgrad,0,2,2,0-2,2023-24_bg1.txt
+17.30,Pirin Blagoevgrad,Hebar Pazardzhik,1,1,X,1-0,2023-24_bg1.txt
+16.15,PFC Beroe,Botev Vratsa,2,2,X,1-0,2023-24_bg1.txt
+18.45,Cherno More Varna,CSKA 1948 Sofia,2,1,1,1-1,2023-24_bg1.txt
+12.45,Slavia Sofia,Lokomotiv Plovdiv,1,2,2,0-1,2023-24_bg1.txt
+15.15,Etar Veliko Tarnovo,Levski Sofia,0,3,2,0-0,2023-24_bg1.txt
+17.45,PFC Ludogorets Razgrad,Lokomotiv Sofia,6,0,1,3-0,2023-24_bg1.txt
+12.45,FK Krumovgrad,Pirin Blagoevgrad,2,2,X,2-1,2023-24_bg1.txt
+15.15,Hebar Pazardzhik,Arda Kardzhali,1,0,1,0-0,2023-24_bg1.txt
+17.45,CSKA Sofia,Botev Plovdiv,4,0,1,3-0,2023-24_bg1.txt
+14.00,Pirin Blagoevgrad,Etar Veliko Tarnovo,2,1,1,1-1,2023-24_bg1.txt
+16.30,Arda Kardzhali,FK Krumovgrad,1,1,X,1-1,2023-24_bg1.txt
+19.00,Levski Sofia,Slavia Sofia,2,0,1,1-0,2023-24_bg1.txt
+14.00,Botev Vratsa,Hebar Pazardzhik,3,2,1,1-0,2023-24_bg1.txt
+16.30,Lokomotiv Plovdiv,PFC Ludogorets Razgrad,1,2,2,1-1,2023-24_bg1.txt
+19.00,Lokomotiv Sofia,CSKA Sofia,0,1,2,0-1,2023-24_bg1.txt
+16.30,Botev Plovdiv,Cherno More Varna,0,0,X,,2023-24_bg1.txt
+19.00,CSKA 1948 Sofia,PFC Beroe,0,1,2,0-0,2023-24_bg1.txt
+17.00,Etar Veliko Tarnovo,Arda Kardzhali,2,1,1,1-0,2023-24_bg1.txt
+19.30,Slavia Sofia,Pirin Blagoevgrad,0,0,X,,2023-24_bg1.txt
+14.30,FK Krumovgrad,Hebar Pazardzhik,3,2,1,2-0,2023-24_bg1.txt
+17.00,CSKA Sofia,Lokomotiv Plovdiv,1,2,2,0-0,2023-24_bg1.txt
+19.30,PFC Ludogorets Razgrad,Levski Sofia,5,1,1,1-1,2023-24_bg1.txt
+14.30,CSKA 1948 Sofia,Botev Vratsa,0,0,X,,2023-24_bg1.txt
+17.00,PFC Beroe,Botev Plovdiv,0,3,2,0-2,2023-24_bg1.txt
+19.30,Cherno More Varna,Lokomotiv Sofia,3,0,1,3-0,2023-24_bg1.txt
+17.45,Hebar Pazardzhik,Etar Veliko Tarnovo,3,0,1,1-0,2023-24_bg1.txt
+20.15,Arda Kardzhali,Slavia Sofia,2,1,1,2-1,2023-24_bg1.txt
+14.45,Levski Sofia,CSKA Sofia,0,2,2,0-0,2023-24_bg1.txt
+17.45,Botev Plovdiv,CSKA 1948 Sofia,0,0,X,,2023-24_bg1.txt
+20.15,Pirin Blagoevgrad,PFC Ludogorets Razgrad,0,2,2,0-0,2023-24_bg1.txt
+17.00,Botev Vratsa,FK Krumovgrad,0,0,X,,2023-24_bg1.txt
+19.30,Lokomotiv Plovdiv,Cherno More Varna,1,0,1,1-0,2023-24_bg1.txt
+18.30,Lokomotiv Sofia,PFC Beroe,1,0,1,1-0,2023-24_bg1.txt
+17.45,Botev Plovdiv,Botev Vratsa,2,0,1,1-0,2023-24_bg1.txt
+20.15,CSKA Sofia,Pirin Blagoevgrad,1,2,2,1-1,2023-24_bg1.txt
+17.45,Slavia Sofia,Hebar Pazardzhik,3,1,1,1-0,2023-24_bg1.txt
+20.15,Cherno More Varna,Levski Sofia,3,1,1,1-0,2023-24_bg1.txt
+17.00,Etar Veliko Tarnovo,FK Krumovgrad,0,0,X,,2023-24_bg1.txt
+19.30,PFC Beroe,Lokomotiv Plovdiv,2,2,X,1-1,2023-24_bg1.txt
+17.30,CSKA 1948 Sofia,Lokomotiv Sofia,2,1,1,1-1,2023-24_bg1.txt
+20.00,PFC Ludogorets Razgrad,Arda Kardzhali,2,0,1,2-0,2023-24_bg1.txt
+17.30,Botev Vratsa,Etar Veliko Tarnovo,2,0,1,1-0,2023-24_bg1.txt
+20.00,FK Krumovgrad,Slavia Sofia,2,0,1,2-0,2023-24_bg1.txt
+15.15,Pirin Blagoevgrad,Cherno More Varna,0,0,X,,2023-24_bg1.txt
+17.45,Hebar Pazardzhik,PFC Ludogorets Razgrad,0,3,2,0-2,2023-24_bg1.txt
+20.15,Levski Sofia,PFC Beroe,1,0,1,0-0,2023-24_bg1.txt
+15.15,Lokomotiv Plovdiv,CSKA 1948 Sofia,1,1,X,0-0,2023-24_bg1.txt
+17.45,Lokomotiv Sofia,Botev Plovdiv,0,4,2,0-2,2023-24_bg1.txt
+20.15,Arda Kardzhali,CSKA Sofia,2,3,2,2-1,2023-24_bg1.txt
+16.15,CSKA Sofia,Levski Sofia,3,1,1,3-0,2023-24_bg1.txt
+17.45,PFC Ludogorets Razgrad,FK Krumovgrad,3,3,X,0-2,2023-24_bg1.txt
+20.15,Cherno More Varna,Lokomotiv Plovdiv,1,0,1,1-0,2023-24_bg1.txt
+19.15,FK Krumovgrad,Lokomotiv Plovdiv,4,1,1,3-0,2023-24_bg1.txt
+19.30,PFC Ludogorets Razgrad,CSKA Sofia,3,1,1,1-1,2023-24_bg1.txt
+19.30,Levski Sofia,Cherno More Varna,0,0,X,,2023-24_bg1.txt
+17.45,CSKA Sofia,FK Krumovgrad,2,2,X,1-1,2023-24_bg1.txt
+20.15,Lokomotiv Plovdiv,Levski Sofia,1,2,2,1-2,2023-24_bg1.txt
+20.30,Cherno More Varna,PFC Ludogorets Razgrad,4,0,1,1-0,2023-24_bg1.txt
+16.00,FK Krumovgrad,Levski Sofia,0,1,2,0-0,2023-24_bg1.txt
+18.30,PFC Ludogorets Razgrad,Lokomotiv Plovdiv,3,0,1,3-0,2023-24_bg1.txt
+20.15,CSKA Sofia,Cherno More Varna,0,1,2,0-0,2023-24_bg1.txt
+18.00,Levski Sofia,PFC Ludogorets Razgrad,1,0,1,0-0,2023-24_bg1.txt
+18.30,Cherno More Varna,FK Krumovgrad,3,1,1,1-1,2023-24_bg1.txt
+20.30,Lokomotiv Plovdiv,CSKA Sofia,1,0,1,1-0,2023-24_bg1.txt
+19.00,Botev Plovdiv,Slavia Sofia,0,1,2,0-1,2023-24_bg1.txt
+17.45,CSKA 1948 Sofia,Arda Kardzhali,1,1,X,0-1,2023-24_bg1.txt
+17.45,Slavia Sofia,Arda Kardzhali,0,0,X,,2023-24_bg1.txt
+20.15,Botev Plovdiv,CSKA 1948 Sofia,0,0,X,,2023-24_bg1.txt
+16.45,CSKA 1948 Sofia,Slavia Sofia,0,2,2,0-1,2023-24_bg1.txt
+17.00,Arda Kardzhali,Botev Plovdiv,2,1,1,0-1,2023-24_bg1.txt
+17.45,Arda Kardzhali,CSKA 1948 Sofia,0,0,X,,2023-24_bg1.txt
+20.15,Slavia Sofia,Botev Plovdiv,3,1,1,2-1,2023-24_bg1.txt
+15.15,Arda Kardzhali,Slavia Sofia,3,1,1,1-1,2023-24_bg1.txt
+17.45,CSKA 1948 Sofia,Botev Plovdiv,2,1,1,0-0,2023-24_bg1.txt
+20.00,Slavia Sofia,CSKA 1948 Sofia,0,2,2,0-1,2023-24_bg1.txt
+,Botev Plovdiv,Arda Kardzhali,0,1,2,0-1,2023-24_bg1.txt
+20.00,CSKA Sofia,CSKA 1948 Sofia,0,2,2,0-1,2023-24_bg1.txt
+20.00,Pirin Blagoevgrad,Botev Vratsa,1,2,2,1-1,2023-24_bg1.txt
+15.15,Hebar Pazardzhik,Lokomotiv Sofia,0,2,2,0-1,2023-24_bg1.txt
+20.15,PFC Beroe,Etar Veliko Tarnovo,3,0,1,2-0,2023-24_bg1.txt
+17.00,PFC Beroe,Pirin Blagoevgrad,2,0,1,2-0,2023-24_bg1.txt
+17.45,Etar Veliko Tarnovo,Lokomotiv Sofia,1,1,X,1-0,2023-24_bg1.txt
+20.15,Botev Vratsa,Hebar Pazardzhik,1,0,1,1-0,2023-24_bg1.txt
+15.15,Pirin Blagoevgrad,Etar Veliko Tarnovo,2,2,X,1-0,2023-24_bg1.txt
+17.45,Lokomotiv Sofia,Botev Vratsa,1,1,X,1-1,2023-24_bg1.txt
+20.15,Hebar Pazardzhik,PFC Beroe,0,1,2,0-0,2023-24_bg1.txt
+16.30,Etar Veliko Tarnovo,Botev Vratsa,1,1,X,1-1,2023-24_bg1.txt
+18.45,PFC Beroe,Lokomotiv Sofia,0,3,2,0-2,2023-24_bg1.txt
+21.00,Pirin Blagoevgrad,Hebar Pazardzhik,0,0,X,,2023-24_bg1.txt
+20.30,Hebar Pazardzhik,Etar Veliko Tarnovo,3,1,1,0-1,2023-24_bg1.txt
+,Lokomotiv Sofia,Pirin Blagoevgrad,1,0,1,0-0,2023-24_bg1.txt
+,Botev Vratsa,PFC Beroe,1,0,1,1-0,2023-24_bg1.txt
+18.45,Cherno More Varna,CSKA 1948 Sofia,0,0,X,,2024-25_bg1.txt
+21.15,FK Krumovgrad,Slavia Sofia,1,0,1,1-0,2024-25_bg1.txt
+19.00,Lokomotiv Plovdiv,Arda Kardzhali,1,0,1,1-0,2024-25_bg1.txt
+21.15,Lokomotiv Sofia,Levski Sofia,1,6,2,1-4,2024-25_bg1.txt
+19.00,Botev Vratsa,Botev Plovdiv,1,3,2,0-0,2024-25_bg1.txt
+21.15,PFC Ludogorets Razgrad,CSKA Sofia,1,0,1,0-0,2024-25_bg1.txt
+19.00,Hebar Pazardzhik,Spartak Varna,0,2,2,0-1,2024-25_bg1.txt
+21.15,Septemvri Sofia,PFC Beroe,0,1,2,0-0,2024-25_bg1.txt
+19.00,Arda Kardzhali,FK Krumovgrad,1,0,1,1-0,2024-25_bg1.txt
+21.15,Levski Sofia,Botev Vratsa,4,0,1,1-0,2024-25_bg1.txt
+19.00,CSKA Sofia,Hebar Pazardzhik,3,1,1,2-0,2024-25_bg1.txt
+19.00,CSKA 1948 Sofia,Spartak Varna,2,2,X,2-1,2024-25_bg1.txt
+21.15,Botev Plovdiv,Lokomotiv Plovdiv,2,2,X,1-0,2024-25_bg1.txt
+19.00,PFC Beroe,Lokomotiv Sofia,0,0,X,,2024-25_bg1.txt
+21.15,Cherno More Varna,Septemvri Sofia,2,0,1,0-0,2024-25_bg1.txt
+17.30,Slavia Sofia,PFC Ludogorets Razgrad,0,1,2,0-1,2024-25_bg1.txt
+19.00,Hebar Pazardzhik,Slavia Sofia,1,1,X,0-1,2024-25_bg1.txt
+21.15,Lokomotiv Plovdiv,Levski Sofia,0,2,2,0-1,2024-25_bg1.txt
+19.00,Spartak Varna,CSKA Sofia,3,0,1,2-0,2024-25_bg1.txt
+21.15,PFC Ludogorets Razgrad,Arda Kardzhali,5,1,1,2-0,2024-25_bg1.txt
+19.00,Lokomotiv Sofia,Cherno More Varna,2,1,1,0-0,2024-25_bg1.txt
+21.15,FK Krumovgrad,Botev Plovdiv,0,1,2,0-0,2024-25_bg1.txt
+21.15,Botev Vratsa,PFC Beroe,1,2,2,1-1,2024-25_bg1.txt
+17.30,Septemvri Sofia,CSKA 1948 Sofia,1,1,X,1-1,2024-25_bg1.txt
+19.00,Slavia Sofia,Spartak Varna,3,1,1,2-1,2024-25_bg1.txt
+21.15,Arda Kardzhali,Hebar Pazardzhik,2,1,1,1-0,2024-25_bg1.txt
+19.00,PFC Beroe,Lokomotiv Plovdiv,0,2,2,0-0,2024-25_bg1.txt
+21.15,Levski Sofia,FK Krumovgrad,3,0,1,1-0,2024-25_bg1.txt
+19.00,Septemvri Sofia,Lokomotiv Sofia,0,1,2,0-1,2024-25_bg1.txt
+21.15,Cherno More Varna,Botev Vratsa,2,1,1,1-1,2024-25_bg1.txt
+17.30,CSKA 1948 Sofia,CSKA Sofia,1,3,2,1-2,2024-25_bg1.txt
+17.00,Botev Plovdiv,PFC Ludogorets Razgrad,2,4,2,1-3,2024-25_bg1.txt
+19.00,Spartak Varna,Arda Kardzhali,1,0,1,1-0,2024-25_bg1.txt
+21.15,FK Krumovgrad,PFC Beroe,0,1,2,0-0,2024-25_bg1.txt
+19.00,CSKA Sofia,Slavia Sofia,0,1,2,0-1,2024-25_bg1.txt
+21.15,PFC Ludogorets Razgrad,Levski Sofia,1,0,1,0-0,2024-25_bg1.txt
+19.00,Lokomotiv Sofia,CSKA 1948 Sofia,0,0,X,,2024-25_bg1.txt
+21.15,Hebar Pazardzhik,Botev Plovdiv,0,1,2,0-0,2024-25_bg1.txt
+19.00,Botev Vratsa,Septemvri Sofia,2,0,1,2-0,2024-25_bg1.txt
+21.15,Lokomotiv Plovdiv,Cherno More Varna,1,2,2,0-0,2024-25_bg1.txt
+19.00,Lokomotiv Sofia,Botev Vratsa,0,1,2,0-1,2024-25_bg1.txt
+21.15,Levski Sofia,Hebar Pazardzhik,1,0,1,1-0,2024-25_bg1.txt
+19.00,Arda Kardzhali,CSKA Sofia,2,1,1,1-0,2024-25_bg1.txt
+21.15,Botev Plovdiv,Spartak Varna,0,1,2,0-0,2024-25_bg1.txt
+19.00,CSKA 1948 Sofia,Slavia Sofia,2,0,1,1-0,2024-25_bg1.txt
+21.15,PFC Beroe,PFC Ludogorets Razgrad,0,1,2,0-0,2024-25_bg1.txt
+19.00,Septemvri Sofia,Lokomotiv Plovdiv,2,3,2,1-0,2024-25_bg1.txt
+21.15,Cherno More Varna,FK Krumovgrad,3,0,1,1-0,2024-25_bg1.txt
+17.00,Slavia Sofia,Arda Kardzhali,1,1,X,0-1,2024-25_bg1.txt
+19.15,Botev Vratsa,CSKA 1948 Sofia,0,3,2,0-2,2024-25_bg1.txt
+21.30,CSKA Sofia,Botev Plovdiv,0,1,2,0-0,2024-25_bg1.txt
+19.00,Spartak Varna,Levski Sofia,0,0,X,,2024-25_bg1.txt
+21.15,FK Krumovgrad,Septemvri Sofia,2,0,1,1-0,2024-25_bg1.txt
+17.00,Lokomotiv Plovdiv,Lokomotiv Sofia,1,1,X,0-1,2024-25_bg1.txt
+19.15,Hebar Pazardzhik,PFC Beroe,3,1,1,1-0,2024-25_bg1.txt
+21.30,PFC Ludogorets Razgrad,Cherno More Varna,0,0,X,,2024-25_bg1.txt
+17.00,PFC Beroe,Spartak Varna,3,0,1,2-0,2024-25_bg1.txt
+19.30,Botev Vratsa,Lokomotiv Plovdiv,0,0,X,,2024-25_bg1.txt
+12.45,Lokomotiv Sofia,FK Krumovgrad,0,0,X,,2024-25_bg1.txt
+15.45,Levski Sofia,CSKA Sofia,1,0,1,0-0,2024-25_bg1.txt
+18.45,Botev Plovdiv,Slavia Sofia,1,0,1,0-0,2024-25_bg1.txt
+16.45,Cherno More Varna,Hebar Pazardzhik,1,0,1,0-0,2024-25_bg1.txt
+19.15,Septemvri Sofia,PFC Ludogorets Razgrad,0,2,2,0-1,2024-25_bg1.txt
+18.00,CSKA 1948 Sofia,Arda Kardzhali,1,2,2,0-1,2024-25_bg1.txt
+17.00,Lokomotiv Plovdiv,CSKA 1948 Sofia,0,2,2,0-0,2024-25_bg1.txt
+17.00,Hebar Pazardzhik,Septemvri Sofia,1,2,2,1-1,2024-25_bg1.txt
+17.30,CSKA Sofia,PFC Beroe,1,0,1,1-0,2024-25_bg1.txt
+20.00,PFC Ludogorets Razgrad,Lokomotiv Sofia,2,0,1,1-0,2024-25_bg1.txt
+17.30,Slavia Sofia,Levski Sofia,0,1,2,0-1,2024-25_bg1.txt
+20.00,Spartak Varna,Cherno More Varna,0,2,2,0-1,2024-25_bg1.txt
+17.30,FK Krumovgrad,Botev Vratsa,3,0,1,1-0,2024-25_bg1.txt
+20.00,Arda Kardzhali,Botev Plovdiv,1,0,1,0-0,2024-25_bg1.txt
+17.30,Lokomotiv Sofia,Hebar Pazardzhik,0,0,X,,2024-25_bg1.txt
+20.00,PFC Beroe,Slavia Sofia,1,0,1,0-0,2024-25_bg1.txt
+17.00,Lokomotiv Plovdiv,FK Krumovgrad,0,2,2,0-2,2024-25_bg1.txt
+20.00,Cherno More Varna,CSKA Sofia,0,0,X,,2024-25_bg1.txt
+16.15,CSKA 1948 Sofia,Botev Plovdiv,0,1,2,0-0,2024-25_bg1.txt
+18.45,Levski Sofia,Arda Kardzhali,2,1,1,1-1,2024-25_bg1.txt
+21.15,Botev Vratsa,PFC Ludogorets Razgrad,0,2,2,0-2,2024-25_bg1.txt
+20.00,Septemvri Sofia,Spartak Varna,0,1,2,0-0,2024-25_bg1.txt
+15.00,FK Krumovgrad,CSKA 1948 Sofia,1,1,X,1-0,2024-25_bg1.txt
+17.30,Arda Kardzhali,PFC Beroe,1,1,X,0-0,2024-25_bg1.txt
+20.00,Slavia Sofia,Cherno More Varna,1,0,1,0-0,2024-25_bg1.txt
+17.30,CSKA Sofia,Septemvri Sofia,0,1,2,0-1,2024-25_bg1.txt
+20.00,Botev Plovdiv,Levski Sofia,1,0,1,0-0,2024-25_bg1.txt
+15.00,Hebar Pazardzhik,Botev Vratsa,1,1,X,1-1,2024-25_bg1.txt
+17.30,Spartak Varna,Lokomotiv Sofia,3,2,1,1-2,2024-25_bg1.txt
+20.00,PFC Ludogorets Razgrad,Lokomotiv Plovdiv,1,0,1,0-0,2024-25_bg1.txt
+17.00,Lokomotiv Plovdiv,Hebar Pazardzhik,3,3,X,2-1,2024-25_bg1.txt
+19.30,Botev Vratsa,Spartak Varna,1,1,X,0-0,2024-25_bg1.txt
+17.30,Septemvri Sofia,Slavia Sofia,3,2,1,1-0,2024-25_bg1.txt
+20.00,PFC Beroe,Botev Plovdiv,0,1,2,0-1,2024-25_bg1.txt
+17.00,Cherno More Varna,Arda Kardzhali,1,1,X,0-1,2024-25_bg1.txt
+19.15,CSKA 1948 Sofia,Levski Sofia,2,4,2,1-2,2024-25_bg1.txt
+21.30,FK Krumovgrad,PFC Ludogorets Razgrad,0,3,2,0-1,2024-25_bg1.txt
+19.45,Lokomotiv Sofia,CSKA Sofia,0,3,2,0-2,2024-25_bg1.txt
+17.30,Spartak Varna,Lokomotiv Plovdiv,1,0,1,0-0,2024-25_bg1.txt
+15.00,Slavia Sofia,Lokomotiv Sofia,3,2,1,3-1,2024-25_bg1.txt
+17.30,CSKA Sofia,Botev Vratsa,2,0,1,1-0,2024-25_bg1.txt
+14.00,Arda Kardzhali,Septemvri Sofia,2,1,1,2-0,2024-25_bg1.txt
+16.30,Botev Plovdiv,Cherno More Varna,1,0,1,1-0,2024-25_bg1.txt
+19.00,Levski Sofia,PFC Beroe,0,2,2,0-0,2024-25_bg1.txt
+14.00,Hebar Pazardzhik,FK Krumovgrad,0,0,X,,2024-25_bg1.txt
+18.00,PFC Ludogorets Razgrad,CSKA 1948 Sofia,3,0,1,2-0,2024-25_bg1.txt
+17.30,Botev Vratsa,Slavia Sofia,3,2,1,0-1,2024-25_bg1.txt
+12.00,Lokomotiv Sofia,Arda Kardzhali,0,2,2,0-1,2024-25_bg1.txt
+14.30,Lokomotiv Plovdiv,CSKA Sofia,2,2,X,1-1,2024-25_bg1.txt
+17.00,FK Krumovgrad,Spartak Varna,0,1,2,0-0,2024-25_bg1.txt
+12.30,CSKA 1948 Sofia,PFC Beroe,1,1,X,1-1,2024-25_bg1.txt
+15.00,PFC Ludogorets Razgrad,Hebar Pazardzhik,3,0,1,3-0,2024-25_bg1.txt
+17.30,Cherno More Varna,Levski Sofia,2,1,1,2-0,2024-25_bg1.txt
+17.30,Septemvri Sofia,Botev Plovdiv,1,0,1,1-0,2024-25_bg1.txt
+15.00,Arda Kardzhali,Botev Vratsa,2,0,1,1-0,2024-25_bg1.txt
+17.30,Botev Plovdiv,Lokomotiv Sofia,2,0,1,0-0,2024-25_bg1.txt
+12.30,Slavia Sofia,Lokomotiv Plovdiv,2,1,1,2-0,2024-25_bg1.txt
+15.00,PFC Beroe,Cherno More Varna,0,1,2,0-0,2024-25_bg1.txt
+17.30,Levski Sofia,Septemvri Sofia,2,3,2,1-2,2024-25_bg1.txt
+12.30,Hebar Pazardzhik,CSKA 1948 Sofia,1,1,X,0-1,2024-25_bg1.txt
+15.00,CSKA Sofia,FK Krumovgrad,2,2,X,1-0,2024-25_bg1.txt
+17.30,Spartak Varna,PFC Ludogorets Razgrad,1,3,2,1-1,2024-25_bg1.txt
+17.00,Spartak Varna,Hebar Pazardzhik,4,0,1,2-0,2024-25_bg1.txt
+12.30,Arda Kardzhali,Lokomotiv Plovdiv,4,2,1,3-1,2024-25_bg1.txt
+15.00,Botev Plovdiv,Botev Vratsa,3,1,1,2-0,2024-25_bg1.txt
+17.30,Levski Sofia,Lokomotiv Sofia,2,0,1,2-0,2024-25_bg1.txt
+12.15,PFC Beroe,Septemvri Sofia,2,0,1,1-0,2024-25_bg1.txt
+14.30,CSKA 1948 Sofia,Cherno More Varna,0,4,2,0-2,2024-25_bg1.txt
+17.00,CSKA Sofia,PFC Ludogorets Razgrad,2,2,X,1-1,2024-25_bg1.txt
+17.30,Slavia Sofia,FK Krumovgrad,0,1,2,0-1,2024-25_bg1.txt
+14.30,Spartak Varna,CSKA 1948 Sofia,1,1,X,0-1,2024-25_bg1.txt
+17.00,Septemvri Sofia,Cherno More Varna,1,2,2,0-2,2024-25_bg1.txt
+12.30,Lokomotiv Sofia,PFC Beroe,2,1,1,1-0,2024-25_bg1.txt
+15.00,Botev Vratsa,Levski Sofia,0,2,2,0-0,2024-25_bg1.txt
+17.30,Hebar Pazardzhik,CSKA Sofia,0,1,2,0-1,2024-25_bg1.txt
+12.30,Lokomotiv Plovdiv,Botev Plovdiv,0,1,2,0-0,2024-25_bg1.txt
+15.00,FK Krumovgrad,Arda Kardzhali,0,0,X,,2024-25_bg1.txt
+17.30,PFC Ludogorets Razgrad,Slavia Sofia,2,0,1,1-0,2024-25_bg1.txt
+12.30,CSKA 1948 Sofia,Septemvri Sofia,2,0,1,1-0,2024-25_bg1.txt
+15.00,Cherno More Varna,Lokomotiv Sofia,4,0,1,2-0,2024-25_bg1.txt
+17.30,CSKA Sofia,Spartak Varna,3,1,1,1-0,2024-25_bg1.txt
+12.30,PFC Beroe,Botev Vratsa,5,1,1,2-0,2024-25_bg1.txt
+15.00,Arda Kardzhali,PFC Ludogorets Razgrad,0,4,2,0-2,2024-25_bg1.txt
+17.30,Levski Sofia,Lokomotiv Plovdiv,2,1,1,1-0,2024-25_bg1.txt
+15.00,Slavia Sofia,Hebar Pazardzhik,3,2,1,1-0,2024-25_bg1.txt
+17.30,Botev Plovdiv,FK Krumovgrad,1,0,1,0-0,2024-25_bg1.txt
+12.30,Lokomotiv Plovdiv,PFC Beroe,1,2,2,0-1,2024-25_bg1.txt
+15.00,Botev Vratsa,Cherno More Varna,2,3,2,2-2,2024-25_bg1.txt
+17.30,CSKA Sofia,CSKA 1948 Sofia,2,2,X,0-2,2024-25_bg1.txt
+12.00,Lokomotiv Sofia,Septemvri Sofia,1,2,2,1-1,2024-25_bg1.txt
+14.30,FK Krumovgrad,Levski Sofia,0,2,2,0-2,2024-25_bg1.txt
+17.00,PFC Ludogorets Razgrad,Botev Plovdiv,3,0,1,1-0,2024-25_bg1.txt
+14.45,Hebar Pazardzhik,Arda Kardzhali,0,2,2,0-0,2024-25_bg1.txt
+17.00,Spartak Varna,Slavia Sofia,1,3,2,0-1,2024-25_bg1.txt
+17.30,Arda Kardzhali,Spartak Varna,2,2,X,1-1,2024-25_bg1.txt
+12.30,Septemvri Sofia,Botev Vratsa,2,2,X,1-0,2024-25_bg1.txt
+15.00,Cherno More Varna,Lokomotiv Plovdiv,1,2,2,0-2,2024-25_bg1.txt
+17.30,Slavia Sofia,CSKA Sofia,1,0,1,0-0,2024-25_bg1.txt
+12.00,CSKA 1948 Sofia,Lokomotiv Sofia,1,4,2,0-3,2024-25_bg1.txt
+14.30,Botev Plovdiv,Hebar Pazardzhik,1,1,X,1-1,2024-25_bg1.txt
+17.15,Levski Sofia,PFC Ludogorets Razgrad,2,1,1,1-0,2024-25_bg1.txt
+17.30,PFC Beroe,FK Krumovgrad,0,0,X,,2024-25_bg1.txt
+17.30,Botev Vratsa,Lokomotiv Sofia,0,3,2,0-0,2024-25_bg1.txt
+12.30,FK Krumovgrad,Cherno More Varna,1,1,X,0-1,2024-25_bg1.txt
+15.00,Spartak Varna,Botev Plovdiv,1,0,1,0-0,2024-25_bg1.txt
+17.30,Hebar Pazardzhik,Levski Sofia,1,4,2,0-2,2024-25_bg1.txt
+12.30,Lokomotiv Plovdiv,Septemvri Sofia,0,1,2,0-0,2024-25_bg1.txt
+15.00,PFC Ludogorets Razgrad,PFC Beroe,2,1,1,0-0,2024-25_bg1.txt
+17.30,CSKA Sofia,Arda Kardzhali,2,0,1,1-0,2024-25_bg1.txt
+18.00,Slavia Sofia,CSKA 1948 Sofia,1,1,X,1-0,2024-25_bg1.txt
+12.45,CSKA 1948 Sofia,Botev Vratsa,1,0,1,0-0,2024-25_bg1.txt
+15.15,PFC Beroe,Hebar Pazardzhik,2,1,1,1-1,2024-25_bg1.txt
+17.45,Levski Sofia,Spartak Varna,2,0,1,1-0,2024-25_bg1.txt
+12.30,Arda Kardzhali,Slavia Sofia,1,1,X,1-0,2024-25_bg1.txt
+15.00,Botev Plovdiv,CSKA Sofia,0,3,2,0-1,2024-25_bg1.txt
+17.30,Cherno More Varna,PFC Ludogorets Razgrad,1,1,X,1-1,2024-25_bg1.txt
+17.00,Lokomotiv Sofia,Lokomotiv Plovdiv,0,1,2,0-0,2024-25_bg1.txt
+17.30,Septemvri Sofia,FK Krumovgrad,1,0,1,1-0,2024-25_bg1.txt
+12.00,FK Krumovgrad,Lokomotiv Sofia,0,2,2,0-2,2024-25_bg1.txt
+14.30,Lokomotiv Plovdiv,Botev Vratsa,1,0,1,1-0,2024-25_bg1.txt
+16.45,Spartak Varna,PFC Beroe,0,3,2,0-2,2024-25_bg1.txt
+14.00,CSKA Sofia,Levski Sofia,2,2,X,1-0,2024-25_bg1.txt
+17.15,Hebar Pazardzhik,Cherno More Varna,0,1,2,0-0,2024-25_bg1.txt
+12.30,Arda Kardzhali,CSKA 1948 Sofia,1,0,1,1-0,2024-25_bg1.txt
+15.00,Slavia Sofia,Botev Plovdiv,3,2,1,2-1,2024-25_bg1.txt
+17.30,PFC Ludogorets Razgrad,Septemvri Sofia,0,0,X,,2024-25_bg1.txt
+17.30,Botev Vratsa,FK Krumovgrad,0,0,X,,2024-25_bg1.txt
+12.30,CSKA 1948 Sofia,Lokomotiv Plovdiv,2,1,1,1-0,2024-25_bg1.txt
+15.00,PFC Beroe,CSKA Sofia,0,2,2,0-0,2024-25_bg1.txt
+17.30,Cherno More Varna,Spartak Varna,1,1,X,1-0,2024-25_bg1.txt
+12.00,Botev Plovdiv,Arda Kardzhali,1,1,X,1-0,2024-25_bg1.txt
+14.30,Levski Sofia,Slavia Sofia,3,3,X,1-2,2024-25_bg1.txt
+17.00,Lokomotiv Sofia,PFC Ludogorets Razgrad,1,2,2,0-1,2024-25_bg1.txt
+17.30,Septemvri Sofia,Hebar Pazardzhik,6,1,1,3-0,2024-25_bg1.txt
+15.15,Slavia Sofia,PFC Beroe,2,1,1,1-1,2024-25_bg1.txt
+17.45,FK Krumovgrad,Lokomotiv Plovdiv,0,0,X,,2024-25_bg1.txt
+12.30,Hebar Pazardzhik,Lokomotiv Sofia,2,1,1,1-0,2024-25_bg1.txt
+15.00,PFC Ludogorets Razgrad,Botev Vratsa,3,0,1,1-0,2024-25_bg1.txt
+17.30,CSKA Sofia,Cherno More Varna,1,1,X,0-1,2024-25_bg1.txt
+12.00,Spartak Varna,Septemvri Sofia,4,2,1,2-0,2024-25_bg1.txt
+14.30,Botev Plovdiv,CSKA 1948 Sofia,0,5,2,0-2,2024-25_bg1.txt
+17.00,Arda Kardzhali,Levski Sofia,1,1,X,0-1,2024-25_bg1.txt
+16.15,Lokomotiv Sofia,Spartak Varna,2,1,1,1-0,2024-25_bg1.txt
+18.45,Botev Vratsa,Hebar Pazardzhik,1,0,1,0-0,2024-25_bg1.txt
+12.15,CSKA 1948 Sofia,FK Krumovgrad,4,1,1,3-1,2024-25_bg1.txt
+14.45,Cherno More Varna,Slavia Sofia,1,1,X,0-0,2024-25_bg1.txt
+17.15,Septemvri Sofia,CSKA Sofia,0,1,2,0-0,2024-25_bg1.txt
+13.30,PFC Beroe,Arda Kardzhali,1,4,2,1-1,2024-25_bg1.txt
+16.00,Lokomotiv Plovdiv,PFC Ludogorets Razgrad,1,0,1,1-0,2024-25_bg1.txt
+18.30,Levski Sofia,Botev Plovdiv,1,1,X,0-0,2024-25_bg1.txt
+16.15,Spartak Varna,Botev Vratsa,1,0,1,1-0,2024-25_bg1.txt
+18.45,Slavia Sofia,Septemvri Sofia,2,3,2,1-1,2024-25_bg1.txt
+14.15,Arda Kardzhali,Cherno More Varna,4,0,1,3-0,2024-25_bg1.txt
+16.45,Botev Plovdiv,PFC Beroe,0,0,X,,2024-25_bg1.txt
+19.15,CSKA Sofia,Lokomotiv Sofia,1,0,1,1-0,2024-25_bg1.txt
+14.30,Hebar Pazardzhik,Lokomotiv Plovdiv,0,0,X,,2024-25_bg1.txt
+17.00,PFC Ludogorets Razgrad,FK Krumovgrad,3,0,1,1-0,2024-25_bg1.txt
+19.30,Levski Sofia,CSKA 1948 Sofia,2,0,1,2-0,2024-25_bg1.txt
+18.30,Cherno More Varna,Botev Plovdiv,1,1,X,0-1,2024-25_bg1.txt
+19.00,Botev Vratsa,CSKA Sofia,1,1,X,1-0,2024-25_bg1.txt
+12.15,FK Krumovgrad,Hebar Pazardzhik,1,0,1,1-0,2024-25_bg1.txt
+14.45,Lokomotiv Sofia,Slavia Sofia,3,2,1,2-0,2024-25_bg1.txt
+17.15,PFC Beroe,Levski Sofia,0,1,2,0-0,2024-25_bg1.txt
+15.00,Septemvri Sofia,Arda Kardzhali,0,4,2,0-2,2024-25_bg1.txt
+17.30,Lokomotiv Plovdiv,Spartak Varna,1,2,2,0-2,2024-25_bg1.txt
+20.00,CSKA 1948 Sofia,PFC Ludogorets Razgrad,1,3,2,0-1,2024-25_bg1.txt
+16.30,Spartak Varna,FK Krumovgrad,1,0,1,1-0,2024-25_bg1.txt
+19.00,PFC Beroe,CSKA 1948 Sofia,2,0,1,1-0,2024-25_bg1.txt
+14.00,Botev Plovdiv,Septemvri Sofia,3,0,1,1-0,2024-25_bg1.txt
+16.30,CSKA Sofia,Lokomotiv Plovdiv,2,0,1,0-0,2024-25_bg1.txt
+15.00,Arda Kardzhali,Lokomotiv Sofia,5,0,1,3-0,2024-25_bg1.txt
+17.30,Levski Sofia,Cherno More Varna,1,2,2,1-0,2024-25_bg1.txt
+17.30,Slavia Sofia,Botev Vratsa,4,2,1,1-0,2024-25_bg1.txt
+20.00,Hebar Pazardzhik,PFC Ludogorets Razgrad,0,2,2,0-0,2024-25_bg1.txt
+14.00,Lokomotiv Sofia,Botev Plovdiv,1,1,X,0-0,2024-25_bg1.txt
+16.30,Cherno More Varna,PFC Beroe,1,1,X,1-0,2024-25_bg1.txt
+19.00,FK Krumovgrad,CSKA Sofia,1,0,1,0-0,2024-25_bg1.txt
+14.00,Botev Vratsa,Arda Kardzhali,3,1,1,1-1,2024-25_bg1.txt
+16.30,Lokomotiv Plovdiv,Slavia Sofia,0,1,2,0-1,2024-25_bg1.txt
+19.00,PFC Ludogorets Razgrad,Spartak Varna,2,1,1,1-0,2024-25_bg1.txt
+16.30,Septemvri Sofia,Levski Sofia,0,1,2,0-0,2024-25_bg1.txt
+19.00,CSKA 1948 Sofia,Hebar Pazardzhik,1,3,2,0-3,2024-25_bg1.txt
+20.00,Levski Sofia,Arda Kardzhali,1,1,X,1-0,2024-25_bg1.txt
+20.30,PFC Ludogorets Razgrad,Cherno More Varna,2,0,1,1-0,2024-25_bg1.txt
+19.30,PFC Ludogorets Razgrad,Levski Sofia,1,1,X,1-0,2024-25_bg1.txt
+15.30,Cherno More Varna,Arda Kardzhali,1,1,X,0-0,2024-25_bg1.txt
+17.45,Arda Kardzhali,PFC Ludogorets Razgrad,1,1,X,0-0,2024-25_bg1.txt
+20.00,Levski Sofia,Cherno More Varna,2,0,1,1-0,2024-25_bg1.txt
+17.45,Cherno More Varna,PFC Ludogorets Razgrad,2,0,1,0-0,2024-25_bg1.txt
+20.15,Arda Kardzhali,Levski Sofia,0,3,2,0-3,2024-25_bg1.txt
+20.00,Levski Sofia,PFC Ludogorets Razgrad,2,2,X,0-1,2024-25_bg1.txt
+19.30,Arda Kardzhali,Cherno More Varna,0,0,X,,2024-25_bg1.txt
+17.45,Cherno More Varna,Levski Sofia,0,0,X,,2024-25_bg1.txt
+,PFC Ludogorets Razgrad,Arda Kardzhali,2,2,X,1-1,2024-25_bg1.txt
+17.30,Spartak Varna,CSKA Sofia,0,1,2,0-1,2024-25_bg1.txt
+15.15,Botev Plovdiv,PFC Beroe,1,1,X,1-0,2024-25_bg1.txt
+17.00,PFC Beroe,CSKA Sofia,0,3,2,0-1,2024-25_bg1.txt
+18.00,Botev Plovdiv,Spartak Varna,3,2,1,2-1,2024-25_bg1.txt
+20.15,CSKA Sofia,Botev Plovdiv,3,0,1,2-0,2024-25_bg1.txt
+17.30,Spartak Varna,PFC Beroe,1,2,2,1-0,2024-25_bg1.txt
+20.15,CSKA Sofia,Spartak Varna,5,0,1,1-0,2024-25_bg1.txt
+17.45,PFC Beroe,Botev Plovdiv,0,6,2,0-2,2024-25_bg1.txt
+17.30,CSKA Sofia,PFC Beroe,2,1,1,1-1,2024-25_bg1.txt
+17.00,Spartak Varna,Botev Plovdiv,2,1,1,2-0,2024-25_bg1.txt
+20.45,PFC Beroe,Spartak Varna,3,1,1,2-1,2024-25_bg1.txt
+,Botev Plovdiv,CSKA Sofia,0,4,2,0-1,2024-25_bg1.txt
+17.30,Slavia Sofia,Hebar Pazardzhik,3,2,1,3-2,2024-25_bg1.txt
+20.00,Lokomotiv Sofia,FK Krumovgrad,3,0,1,3-0,2024-25_bg1.txt
+17.30,Septemvri Sofia,Lokomotiv Plovdiv,2,0,1,0-0,2024-25_bg1.txt
+20.00,CSKA 1948 Sofia,Botev Vratsa,0,1,2,0-0,2024-25_bg1.txt
+19.30,Hebar Pazardzhik,FK Krumovgrad,1,3,2,0-2,2024-25_bg1.txt
+15.00,Botev Vratsa,Septemvri Sofia,3,2,1,2-0,2024-25_bg1.txt
+17.30,Slavia Sofia,CSKA 1948 Sofia,0,1,2,0-0,2024-25_bg1.txt
+20.00,Lokomotiv Plovdiv,Lokomotiv Sofia,1,1,X,1-0,2024-25_bg1.txt
+17.00,FK Krumovgrad,Lokomotiv Plovdiv,0,4,2,0-2,2024-25_bg1.txt
+19.30,Septemvri Sofia,Slavia Sofia,3,1,1,2-1,2024-25_bg1.txt
+17.00,CSKA 1948 Sofia,Hebar Pazardzhik,0,0,X,,2024-25_bg1.txt
+19.30,Lokomotiv Sofia,Botev Vratsa,3,0,1,2-0,2024-25_bg1.txt
+15.00,Slavia Sofia,Lokomotiv Sofia,0,0,X,,2024-25_bg1.txt
+15.30,Hebar Pazardzhik,Lokomotiv Plovdiv,1,2,2,1-0,2024-25_bg1.txt
+18.00,Botev Vratsa,FK Krumovgrad,1,0,1,1-0,2024-25_bg1.txt
+20.30,CSKA 1948 Sofia,Septemvri Sofia,2,0,1,1-0,2024-25_bg1.txt
+15.15,Lokomotiv Sofia,CSKA 1948 Sofia,2,1,1,0-1,2024-25_bg1.txt
+15.15,FK Krumovgrad,Slavia Sofia,0,1,2,0-1,2024-25_bg1.txt
+17.45,Lokomotiv Plovdiv,Botev Vratsa,1,3,2,1-1,2024-25_bg1.txt
+20.15,Septemvri Sofia,Hebar Pazardzhik,1,0,1,1-0,2024-25_bg1.txt
+17.45,CSKA 1948 Sofia,FK Krumovgrad,2,0,1,0-0,2024-25_bg1.txt
+20.15,Slavia Sofia,Lokomotiv Plovdiv,1,2,2,0-2,2024-25_bg1.txt
+17.45,Hebar Pazardzhik,Botev Vratsa,1,0,1,1-0,2024-25_bg1.txt
+20.15,Septemvri Sofia,Lokomotiv Sofia,0,2,2,0-2,2024-25_bg1.txt
+20.45,Lokomotiv Sofia,Hebar Pazardzhik,3,0,1,0-0,2024-25_bg1.txt
+,FK Krumovgrad,Septemvri Sofia,1,2,2,0-0,2024-25_bg1.txt
+,Lokomotiv Plovdiv,CSKA 1948 Sofia,0,1,2,0-1,2024-25_bg1.txt
+,Botev Vratsa,Slavia Sofia,2,1,1,1-1,2024-25_bg1.txt
+13.30,PSFC Chernomorets,Lokomotiv Plovdiv,2,4,2,,2024-25_bgcup.txt
+13.30,FK Sportist Svoge,Botev Vratsa,0,2,2,0-2,2024-25_bgcup.txt
+,FC Yantra,Lokomotiv Sofia,0,1,2,0-1,2024-25_bgcup.txt
+,Sayana Haskovo,Spartak Varna,0,4,2,0-4,2024-25_bgcup.txt
+,Lokomotiv Mezdra,Septemvri Sofia,2,1,1,,2024-25_bgcup.txt
+,FK Rozova Dolina,Arda Kardzhali,1,2,2,1-2,2024-25_bgcup.txt
+,FK Dobrudzha,CSKA Sofia,0,4,2,0-2,2024-25_bgcup.txt
+17.00,PFC Montana,Slavia Sofia,1,3,2,0-0,2024-25_bgcup.txt
+13.30,FC Kyustendil,Cherno More Varna,0,4,2,0-2,2024-25_bgcup.txt
+,FC Oborishte,FK Krumovgrad,0,1,2,0-1,2024-25_bgcup.txt
+17.00,FC Dunav Ruse,Hebar Pazardzhik,11,10,1,,2024-25_bgcup.txt
+,Pirin Blagoevgrad,Levski Sofia,0,2,2,,2024-25_bgcup.txt
+13.30,Belasitsa Petrich,CSKA 1948 Sofia,0,5,2,0-2,2024-25_bgcup.txt
+,Minyor Pernik,Botev Plovdiv,0,1,2,0-1,2024-25_bgcup.txt
+17.00,Chernolomets Popovo,PFC Ludogorets Razgrad,0,6,2,0-4,2024-25_bgcup.txt
+13.30,Fratria Varna,PFC Beroe,2,4,2,,2024-25_bgcup.txt
+13.00,Lokomotiv Mezdra,Botev Vratsa,0,1,2,0-0,2024-25_bgcup.txt
+16.00,PFC Beroe,Lokomotiv Plovdiv,2,0,1,1-0,2024-25_bgcup.txt
+13.00,Cherno More Varna,Slavia Sofia,1,0,1,0-0,2024-25_bgcup.txt
+16.00,Levski Sofia,FC Dunav Ruse,1,0,1,0-0,2024-25_bgcup.txt
+13.00,Lokomotiv Sofia,Botev Plovdiv,1,5,2,0-3,2024-25_bgcup.txt
+16.00,Spartak Varna,CSKA Sofia,2,3,2,2-2,2024-25_bgcup.txt
+13.00,FK Krumovgrad,Arda Kardzhali,0,2,2,0-0,2024-25_bgcup.txt
+16.00,CSKA 1948 Sofia,PFC Ludogorets Razgrad,2,3,2,1-1,2024-25_bgcup.txt
+18.00,Botev Vratsa,PFC Beroe,4,2,1,,2024-25_bgcup.txt
+15.00,Cherno More Varna,Levski Sofia,1,0,1,0-0,2024-25_bgcup.txt
+18.00,CSKA Sofia,Arda Kardzhali,2,1,1,2-0,2024-25_bgcup.txt
+18.00,PFC Ludogorets Razgrad,Botev Plovdiv,4,2,1,,2024-25_bgcup.txt
+19.00,Cherno More Varna,CSKA Sofia,0,0,X,,2024-25_bgcup.txt
+19.00,Botev Vratsa,PFC Ludogorets Razgrad,0,1,2,0-0,2024-25_bgcup.txt
+19.00,CSKA Sofia,Cherno More Varna,2,1,1,2-0,2024-25_bgcup.txt
+19.00,PFC Ludogorets Razgrad,Botev Vratsa,2,0,1,2-0,2024-25_bgcup.txt

@@ -1,0 +1,524 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Northern Ireland,Scotland,0,5,2,Belfast,Ireland,1884_british_home_championship.txt
+Wales,Northern Ireland,6,0,1,Wrexham,Wales,1884_british_home_championship.txt
+Northern Ireland,England,1,8,2,Belfast,Ireland,1884_british_home_championship.txt
+Scotland,England,1,0,1,Glasgow,Scotland,1884_british_home_championship.txt
+Wales,England,0,4,2,Wrexham,Wales,1884_british_home_championship.txt
+Scotland,Wales,4,1,1,Glasgow,Scotland,1884_british_home_championship.txt
+England,Northern Ireland,4,0,1,Manchester,England,1885_british_home_championship.txt
+England,Wales,1,1,X,Blackburn,England,1885_british_home_championship.txt
+Scotland,Northern Ireland,8,2,1,Glasgow,Scotland,1885_british_home_championship.txt
+England,Scotland,1,1,X,London,England,1885_british_home_championship.txt
+Wales,Scotland,1,8,2,Wrexham,Wales,1885_british_home_championship.txt
+Northern Ireland,Wales,2,8,2,Belfast,Ireland,1885_british_home_championship.txt
+Wales,Northern Ireland,5,0,1,Wrexham,Wales,1886_british_home_championship.txt
+Northern Ireland,England,1,6,2,Belfast,Ireland,1886_british_home_championship.txt
+Northern Ireland,Scotland,2,7,2,Belfast,Ireland,1886_british_home_championship.txt
+Scotland,England,1,1,X,Glasgow,Scotland,1886_british_home_championship.txt
+Wales,England,1,3,2,Wrexham,Wales,1886_british_home_championship.txt
+Scotland,Wales,4,1,1,Glasgow,Scotland,1886_british_home_championship.txt
+England,Northern Ireland,7,0,1,Sheffield,England,1887_british_home_championship.txt
+Scotland,Northern Ireland,4,1,1,Glasgow,Scotland,1887_british_home_championship.txt
+England,Wales,4,0,1,London,England,1887_british_home_championship.txt
+Northern Ireland,Wales,4,1,1,Belfast,Ireland,1887_british_home_championship.txt
+England,Scotland,2,3,2,Blackburn,England,1887_british_home_championship.txt
+Wales,Scotland,0,2,2,Wrexham,Wales,1887_british_home_championship.txt
+England,Wales,5,1,1,Crewe,England,1888_british_home_championship.txt
+Wales,Northern Ireland,11,0,1,Wrexham,Wales,1888_british_home_championship.txt
+Scotland,Wales,5,1,1,Edinburgh,Scotland,1888_british_home_championship.txt
+Scotland,England,0,5,2,Glasgow,Scotland,1888_british_home_championship.txt
+Northern Ireland,Scotland,2,10,2,Belfast,Ireland,1888_british_home_championship.txt
+Northern Ireland,England,1,5,2,Belfast,Ireland,1888_british_home_championship.txt
+England,Wales,4,1,1,Stoke-on-Trent,England,1889_british_home_championship.txt
+England,Northern Ireland,6,1,1,Liverpool,England,1889_british_home_championship.txt
+Scotland,Northern Ireland,7,0,1,Glasgow,Scotland,1889_british_home_championship.txt
+England,Scotland,2,3,2,London,England,1889_british_home_championship.txt
+Wales,Scotland,0,0,X,Wrexham,Wales,1889_british_home_championship.txt
+Northern Ireland,Wales,1,3,2,Belfast,Ireland,1889_british_home_championship.txt
+Wales,Northern Ireland,5,2,1,Shrewsbury,England,1890_british_home_championship.txt
+Northern Ireland,England,1,9,2,Belfast,Ireland,1890_british_home_championship.txt
+Wales,England,1,3,2,Wrexham,Wales,1890_british_home_championship.txt
+Scotland,Wales,5,0,1,Paisley,Scotland,1890_british_home_championship.txt
+Northern Ireland,Scotland,1,4,2,Belfast,Ireland,1890_british_home_championship.txt
+Scotland,England,1,1,X,Glasgow,Scotland,1890_british_home_championship.txt
+Northern Ireland,Wales,7,2,1,Belfast,Ireland,1891_british_home_championship.txt
+England,Wales,4,1,1,Sunderland,England,1891_british_home_championship.txt
+England,Northern Ireland,6,1,1,Wolverhampton,England,1891_british_home_championship.txt
+Wales,Scotland,3,4,2,Wrexham,Wales,1891_british_home_championship.txt
+Scotland,Northern Ireland,2,1,1,Glasgow,Scotland,1891_british_home_championship.txt
+England,Scotland,2,1,1,Blackburn,England,1891_british_home_championship.txt
+Wales,Northern Ireland,1,1,X,Bangor,Wales,1892_british_home_championship.txt
+Northern Ireland,England,0,2,2,Belfast,Ireland,1892_british_home_championship.txt
+Wales,England,0,2,2,Wrexham,Wales,1892_british_home_championship.txt
+Northern Ireland,Scotland,2,3,2,Belfast,Ireland,1892_british_home_championship.txt
+Scotland,Wales,6,1,1,Edinburgh,Scotland,1892_british_home_championship.txt
+Scotland,England,1,4,2,Glasgow,Scotland,1892_british_home_championship.txt
+England,Northern Ireland,6,1,1,Birmingham,England,1893_british_home_championship.txt
+England,Wales,6,0,1,Stoke-on-Trent,England,1893_british_home_championship.txt
+Wales,Scotland,0,8,2,Wrexham,Wales,1893_british_home_championship.txt
+Scotland,Northern Ireland,6,1,1,Glasgow,Scotland,1893_british_home_championship.txt
+England,Scotland,5,2,1,Richmond,England,1893_british_home_championship.txt
+Wales,Northern Ireland,4,1,1,Swansea,Wales,1894_british_home_championship.txt
+Northern Ireland,England,2,2,X,Belfast,Ireland,1894_british_home_championship.txt
+Wales,England,1,5,2,Wrexham,Wales,1894_british_home_championship.txt
+Scotland,Wales,5,2,1,Kilmarnock,Scotland,1894_british_home_championship.txt
+Northern Ireland,Scotland,1,2,2,Belfast,Ireland,1894_british_home_championship.txt
+Scotland,England,2,2,X,Glasgow,Scotland,1894_british_home_championship.txt
+England,Northern Ireland,9,0,1,Derby,England,1895_british_home_championship.txt
+Northern Ireland,Wales,2,2,X,Belfast,Ireland,1895_british_home_championship.txt
+England,Wales,1,1,X,London,England,1895_british_home_championship.txt
+Wales,Scotland,2,2,X,Wrexham,Wales,1895_british_home_championship.txt
+Scotland,Northern Ireland,3,1,1,Glasgow,Scotland,1895_british_home_championship.txt
+England,Scotland,3,0,1,Liverpool,England,1895_british_home_championship.txt
+Wales,Northern Ireland,6,1,1,Wrexham,Wales,1896_british_home_championship.txt
+Northern Ireland,England,0,2,2,Belfast,Ireland,1896_british_home_championship.txt
+Wales,England,1,9,2,Cardiff,Wales,1896_british_home_championship.txt
+Scotland,Wales,4,0,1,Dundee,Scotland,1896_british_home_championship.txt
+Northern Ireland,Scotland,3,3,X,Belfast,Ireland,1896_british_home_championship.txt
+Scotland,England,2,1,1,Glasgow,Scotland,1896_british_home_championship.txt
+England,Northern Ireland,6,0,1,Nottingham,England,1897_british_home_championship.txt
+Northern Ireland,Wales,4,3,1,Belfast,Ireland,1897_british_home_championship.txt
+Wales,Scotland,2,2,X,Wrexham,Wales,1897_british_home_championship.txt
+Scotland,Northern Ireland,5,1,1,Glasgow,Scotland,1897_british_home_championship.txt
+England,Wales,4,0,1,Sheffield,England,1897_british_home_championship.txt
+England,Scotland,1,2,2,London,England,1897_british_home_championship.txt
+Wales,Northern Ireland,0,1,2,Llandudno,Wales,1898_british_home_championship.txt
+Northern Ireland,England,2,3,2,Belfast,Ireland,1898_british_home_championship.txt
+Scotland,Wales,5,2,1,Motherwell,Scotland,1898_british_home_championship.txt
+Northern Ireland,Scotland,0,3,2,Belfast,Ireland,1898_british_home_championship.txt
+Wales,England,0,3,2,Wrexham,Wales,1898_british_home_championship.txt
+Scotland,England,1,3,2,Glasgow,Scotland,1898_british_home_championship.txt
+England,Northern Ireland,13,2,1,Sunderland,England,1899_british_home_championship.txt
+Northern Ireland,Wales,1,0,1,Belfast,Ireland,1899_british_home_championship.txt
+Wales,Scotland,0,6,2,Wrexham,Wales,1899_british_home_championship.txt
+England,Wales,4,0,1,Bristol,England,1899_british_home_championship.txt
+Scotland,Northern Ireland,9,1,1,Glasgow,Scotland,1899_british_home_championship.txt
+England,Scotland,2,1,1,Birmingham,England,1899_british_home_championship.txt
+Scotland,Wales,5,2,1,Aberdeen,Scotland,1900_british_home_championship.txt
+Wales,Northern Ireland,2,0,1,Llandudno,Wales,1900_british_home_championship.txt
+Northern Ireland,Scotland,0,3,2,Belfast,Ireland,1900_british_home_championship.txt
+Northern Ireland,England,0,2,2,Dublin,Ireland,1900_british_home_championship.txt
+Wales,England,1,1,X,Cardiff,Wales,1900_british_home_championship.txt
+Scotland,England,4,1,1,Glasgow,Scotland,1900_british_home_championship.txt
+Scotland,Northern Ireland,11,0,1,Glasgow,Scotland,1901_british_home_championship.txt
+Wales,Scotland,1,1,X,Wrexham,Wales,1901_british_home_championship.txt
+England,Northern Ireland,3,0,1,Southampton,England,1901_british_home_championship.txt
+England,Wales,6,0,1,Newcastle,England,1901_british_home_championship.txt
+Northern Ireland,Wales,0,1,2,Belfast,Ireland,1901_british_home_championship.txt
+England,Scotland,2,2,X,London,England,1901_british_home_championship.txt
+Wales,Northern Ireland,0,3,2,Cardiff,Wales,1902_british_home_championship.txt
+Northern Ireland,Scotland,1,5,2,Belfast,Ireland,1902_british_home_championship.txt
+Wales,England,0,0,X,Wrexham,Wales,1902_british_home_championship.txt
+Scotland,Wales,5,1,1,Greenock,Scotland,1902_british_home_championship.txt
+Northern Ireland,England,0,1,2,Belfast,Ireland,1902_british_home_championship.txt
+England,Scotland,2,2,X,Birmingham,England,1902_british_home_championship.txt
+England,Northern Ireland,4,0,1,Wolverhampton,England,1903_british_home_championship.txt
+England,Wales,2,1,1,Portsmouth,England,1903_british_home_championship.txt
+Wales,Scotland,0,1,2,Cardiff,Wales,1903_british_home_championship.txt
+Scotland,Northern Ireland,0,2,2,Glasgow,Scotland,1903_british_home_championship.txt
+Northern Ireland,Wales,2,0,1,Belfast,Ireland,1903_british_home_championship.txt
+England,Scotland,1,2,2,Sheffield,England,1903_british_home_championship.txt
+Wales,England,2,2,X,Wrexham,Wales,1904_british_home_championship.txt
+Northern Ireland,England,1,3,2,Belfast,Ireland,1904_british_home_championship.txt
+Scotland,Wales,1,1,X,Dundee,Scotland,1904_british_home_championship.txt
+Wales,Northern Ireland,0,1,2,Bangor,Wales,1904_british_home_championship.txt
+Northern Ireland,Scotland,1,1,X,Dublin,Ireland,1904_british_home_championship.txt
+Scotland,England,0,1,2,Glasgow,Scotland,1904_british_home_championship.txt
+England,Northern Ireland,1,1,X,Middlesbrough,England,1905_british_home_championship.txt
+Wales,Scotland,3,1,1,Wrexham,Wales,1905_british_home_championship.txt
+Scotland,Northern Ireland,4,0,1,Glasgow,Scotland,1905_british_home_championship.txt
+England,Wales,3,1,1,Liverpool,England,1905_british_home_championship.txt
+England,Scotland,1,0,1,London,England,1905_british_home_championship.txt
+Northern Ireland,Wales,2,2,X,Belfast,Ireland,1905_british_home_championship.txt
+Northern Ireland,England,0,5,2,Belfast,Ireland,1906_british_home_championship.txt
+Scotland,Wales,0,2,2,Edinburgh,Scotland,1906_british_home_championship.txt
+Northern Ireland,Scotland,0,1,2,Dublin,Ireland,1906_british_home_championship.txt
+Wales,England,0,1,2,Cardiff,Wales,1906_british_home_championship.txt
+Wales,Northern Ireland,4,4,X,Wrexham,Wales,1906_british_home_championship.txt
+Scotland,England,2,1,1,Glasgow,Scotland,1906_british_home_championship.txt
+England,Northern Ireland,1,0,1,Liverpool,England,1907_british_home_championship.txt
+Northern Ireland,Wales,2,3,2,Belfast,Ireland,1907_british_home_championship.txt
+Wales,Scotland,1,0,1,Wrexham,Wales,1907_british_home_championship.txt
+Scotland,Northern Ireland,3,0,1,Glasgow,Scotland,1907_british_home_championship.txt
+England,Wales,1,1,X,London,England,1907_british_home_championship.txt
+England,Scotland,1,1,X,Newcastle,England,1907_british_home_championship.txt
+Northern Ireland,England,1,3,2,Belfast,Ireland,1908_british_home_championship.txt
+Scotland,Wales,2,1,1,Dundee,Scotland,1908_british_home_championship.txt
+Northern Ireland,Scotland,0,5,2,Dublin,Ireland,1908_british_home_championship.txt
+Wales,England,1,7,2,Wrexham,Wales,1908_british_home_championship.txt
+Scotland,England,1,1,X,Glasgow,Scotland,1908_british_home_championship.txt
+Wales,Northern Ireland,0,1,2,Aberdare,Wales,1908_british_home_championship.txt
+England,Northern Ireland,4,0,1,Bradford,England,1909_british_home_championship.txt
+Wales,Scotland,3,2,1,Wrexham,Wales,1909_british_home_championship.txt
+England,Wales,2,0,1,Nottingham,England,1909_british_home_championship.txt
+Scotland,Northern Ireland,5,0,1,Glasgow,Scotland,1909_british_home_championship.txt
+Northern Ireland,Wales,2,3,2,Belfast,Ireland,1909_british_home_championship.txt
+England,Scotland,2,0,1,London,England,1909_british_home_championship.txt
+Northern Ireland,England,1,1,X,Belfast,Ireland,1910_british_home_championship.txt
+Scotland,Wales,1,0,1,Kilmarnock,Scotland,1910_british_home_championship.txt
+Wales,England,0,1,2,Cardiff,Wales,1910_british_home_championship.txt
+Northern Ireland,Scotland,1,0,1,Belfast,Ireland,1910_british_home_championship.txt
+Scotland,England,2,0,1,Glasgow,Scotland,1910_british_home_championship.txt
+Wales,Northern Ireland,4,1,1,Wrexham,Wales,1910_british_home_championship.txt
+Northern Ireland,Wales,1,2,2,Belfast,Ireland,1911_british_home_championship.txt
+England,Northern Ireland,2,1,1,Derby,England,1911_british_home_championship.txt
+Wales,Scotland,2,2,X,Cardiff,Wales,1911_british_home_championship.txt
+England,Wales,3,0,1,London,England,1911_british_home_championship.txt
+Scotland,Northern Ireland,2,0,1,Glasgow,Scotland,1911_british_home_championship.txt
+England,Scotland,1,1,X,Liverpool,England,1911_british_home_championship.txt
+Northern Ireland,England,1,6,2,Dublin,Ireland,1912_british_home_championship.txt
+Scotland,Wales,1,0,1,Edinburgh,Scotland,1912_british_home_championship.txt
+Wales,England,0,2,2,Wrexham,Wales,1912_british_home_championship.txt
+Northern Ireland,Scotland,1,4,2,Belfast,Ireland,1912_british_home_championship.txt
+Scotland,England,1,1,X,Glasgow,Scotland,1912_british_home_championship.txt
+Wales,Northern Ireland,2,3,2,Cardiff,Wales,1912_british_home_championship.txt
+Northern Ireland,Wales,0,1,2,Belfast,Ireland,1913_british_home_championship.txt
+Northern Ireland,England,2,1,1,Belfast,Ireland,1913_british_home_championship.txt
+Wales,Scotland,0,0,X,Wrexham,Wales,1913_british_home_championship.txt
+Northern Ireland,Scotland,1,2,2,Dublin,Ireland,1913_british_home_championship.txt
+England,Wales,4,3,1,Bristol,England,1913_british_home_championship.txt
+England,Scotland,1,0,1,London,England,1913_british_home_championship.txt
+Wales,Northern Ireland,1,2,2,Wrexham,Wales,1914_british_home_championship.txt
+England,Northern Ireland,0,3,2,Middlesbrough,England,1914_british_home_championship.txt
+Scotland,Wales,0,0,X,Glasgow,Scotland,1914_british_home_championship.txt
+Northern Ireland,Scotland,1,1,X,Belfast,Ireland,1914_british_home_championship.txt
+Wales,England,0,2,2,Cardiff,Wales,1914_british_home_championship.txt
+Scotland,England,3,1,1,Glasgow,Scotland,1914_british_home_championship.txt
+Northern Ireland,England,1,1,X,Belfast,Ireland,1919_british_home_championship.txt
+Northern Ireland,Wales,2,2,X,Belfast,Ireland,1920_british_home_championship.txt
+Wales,Scotland,1,1,X,Cardiff,Wales,1920_british_home_championship.txt
+Scotland,Northern Ireland,3,0,1,Glasgow,Scotland,1920_british_home_championship.txt
+England,Wales,1,2,2,London,England,1920_british_home_championship.txt
+England,Scotland,5,4,1,Sheffield,England,1920_british_home_championship.txt
+England,Northern Ireland,2,0,1,Sunderland,England,1920_british_home_championship.txt
+Scotland,Wales,2,1,1,Aberdeen,Scotland,1921_british_home_championship.txt
+Northern Ireland,Scotland,0,2,2,Belfast,Ireland,1921_british_home_championship.txt
+Wales,England,0,0,X,Cardiff,Wales,1921_british_home_championship.txt
+Scotland,England,3,0,1,Glasgow,Scotland,1921_british_home_championship.txt
+Wales,Northern Ireland,2,1,1,Swansea,Wales,1921_british_home_championship.txt
+Northern Ireland,England,1,1,X,Belfast,Ireland,1921_british_home_championship.txt
+Wales,Scotland,2,1,1,Wrexham,Wales,1922_british_home_championship.txt
+Scotland,Northern Ireland,2,1,1,Glasgow,Scotland,1922_british_home_championship.txt
+England,Wales,1,0,1,Liverpool,England,1922_british_home_championship.txt
+England,Scotland,0,1,2,Birmingham,England,1922_british_home_championship.txt
+England,Northern Ireland,2,0,1,West Bromwich,England,1922_british_home_championship.txt
+Northern Ireland,Scotland,0,1,2,Belfast,Northern Ireland,1923_british_home_championship.txt
+Wales,England,2,2,X,Cardiff,Wales,1923_british_home_championship.txt
+Scotland,Wales,2,0,1,Paisley,Scotland,1923_british_home_championship.txt
+Scotland,England,2,2,X,Glasgow,Scotland,1923_british_home_championship.txt
+Wales,Northern Ireland,0,3,2,Wrexham,Wales,1923_british_home_championship.txt
+Northern Ireland,England,2,1,1,Belfast,Northern Ireland,1923_british_home_championship.txt
+Wales,Scotland,2,0,1,Cardiff,Wales,1924_british_home_championship.txt
+Scotland,Northern Ireland,2,0,1,Glasgow,Scotland,1924_british_home_championship.txt
+England,Wales,1,2,2,Blackburn,England,1924_british_home_championship.txt
+Northern Ireland,Wales,0,1,2,Belfast,Northern Ireland,1924_british_home_championship.txt
+England,Scotland,1,1,X,London,England,1924_british_home_championship.txt
+England,Northern Ireland,3,1,1,Liverpool,England,1924_british_home_championship.txt
+Scotland,Wales,3,1,1,Edinburgh,Scotland,1925_british_home_championship.txt
+Northern Ireland,Scotland,0,3,2,Belfast,Northern Ireland,1925_british_home_championship.txt
+Wales,England,1,2,2,Swansea,Wales,1925_british_home_championship.txt
+Scotland,England,2,0,1,Glasgow,Scotland,1925_british_home_championship.txt
+Wales,Northern Ireland,0,0,X,Wrexham,Wales,1925_british_home_championship.txt
+Northern Ireland,England,0,0,X,Belfast,Northern Ireland,1925_british_home_championship.txt
+Wales,Scotland,0,3,2,Cardiff,Wales,1925_british_home_championship.txt
+Northern Ireland,Wales,3,0,1,Belfast,Northern Ireland,1926_british_home_championship.txt
+Scotland,Northern Ireland,4,0,1,Glasgow,Scotland,1926_british_home_championship.txt
+England,Wales,1,3,2,London,England,1926_british_home_championship.txt
+England,Scotland,0,1,2,Manchester,England,1926_british_home_championship.txt
+England,Northern Ireland,3,3,X,Liverpool,England,1926_british_home_championship.txt
+Scotland,Wales,3,0,1,Glasgow,Scotland,1926_british_home_championship.txt
+Wales,England,3,3,X,Wrexham,Wales,1927_british_home_championship.txt
+Northern Ireland,Scotland,0,2,2,Belfast,Northern Ireland,1927_british_home_championship.txt
+Scotland,England,1,2,2,Glasgow,Scotland,1927_british_home_championship.txt
+Wales,Northern Ireland,2,2,X,Cardiff,Wales,1927_british_home_championship.txt
+Northern Ireland,England,2,0,1,Belfast,Northern Ireland,1927_british_home_championship.txt
+Wales,Scotland,2,2,X,Wrexham,Wales,1927_british_home_championship.txt
+England,Wales,1,2,2,Burnley,England,1927_british_home_championship.txt
+Northern Ireland,Wales,1,2,2,Belfast,Northern Ireland,1928_british_home_championship.txt
+Scotland,Northern Ireland,0,1,2,Glasgow,Scotland,1928_british_home_championship.txt
+England,Scotland,1,5,2,London,England,1928_british_home_championship.txt
+England,Northern Ireland,2,1,1,Liverpool,England,1928_british_home_championship.txt
+Scotland,Wales,4,2,1,Glasgow,Scotland,1928_british_home_championship.txt
+Wales,England,2,3,2,Swansea,Wales,1928_british_home_championship.txt
+Wales,Northern Ireland,2,2,X,Wrexham,Wales,1929_british_home_championship.txt
+Northern Ireland,Scotland,3,7,2,Belfast,Northern Ireland,1929_british_home_championship.txt
+Scotland,England,1,0,1,Glasgow,Scotland,1929_british_home_championship.txt
+Northern Ireland,England,0,3,2,Belfast,Northern Ireland,1929_british_home_championship.txt
+Wales,Scotland,2,4,2,Cardiff,Wales,1929_british_home_championship.txt
+England,Wales,6,0,1,London,England,1929_british_home_championship.txt
+Northern Ireland,Wales,7,0,1,Belfast,Northern Ireland,1930_british_home_championship.txt
+Scotland,Northern Ireland,3,1,1,Glasgow,Scotland,1930_british_home_championship.txt
+England,Scotland,5,2,1,London,England,1930_british_home_championship.txt
+England,Northern Ireland,5,1,1,Sheffield,England,1930_british_home_championship.txt
+Scotland,Wales,1,1,X,Glasgow,Scotland,1930_british_home_championship.txt
+Wales,England,0,4,2,Wrexham,Wales,1930_british_home_championship.txt
+Northern Ireland,Scotland,0,0,X,Belfast,Northern Ireland,1931_british_home_championship.txt
+Scotland,England,2,0,1,Glasgow,Scotland,1931_british_home_championship.txt
+Wales,Northern Ireland,3,2,1,Wrexham,Wales,1931_british_home_championship.txt
+Scotland,Northern Ireland,3,1,1,Glasgow,Scotland,1931_british_home_championship.txt
+Northern Ireland,England,2,6,2,Belfast,Northern Ireland,1931_british_home_championship.txt
+Wales,Scotland,2,3,2,Wrexham,Wales,1931_british_home_championship.txt
+England,Wales,3,1,1,Liverpool,England,1931_british_home_championship.txt
+Northern Ireland,Wales,4,0,1,Belfast,Northern Ireland,1931_british_home_championship.txt
+England,Scotland,3,0,1,London,England,1932_british_home_championship.txt
+Northern Ireland,Scotland,0,4,2,Belfast,Northern Ireland,1932_british_home_championship.txt
+England,Northern Ireland,1,0,1,Blackpool,England,1932_british_home_championship.txt
+Scotland,Wales,2,5,2,Edinburgh,Scotland,1932_british_home_championship.txt
+Wales,England,0,0,X,Wrexham,Wales,1932_british_home_championship.txt
+Wales,Northern Ireland,4,1,1,Wrexham,Wales,1932_british_home_championship.txt
+Scotland,England,2,1,1,Glasgow,Scotland,1933_british_home_championship.txt
+Scotland,Northern Ireland,1,2,2,Glasgow,Scotland,1933_british_home_championship.txt
+Wales,Scotland,3,2,1,Cardiff,Wales,1933_british_home_championship.txt
+Northern Ireland,England,0,3,2,Belfast,Northern Ireland,1933_british_home_championship.txt
+Northern Ireland,Wales,1,1,X,Belfast,Northern Ireland,1933_british_home_championship.txt
+England,Wales,1,2,2,Newcastle,England,1933_british_home_championship.txt
+England,Scotland,3,0,1,London,England,1934_british_home_championship.txt
+Wales,England,0,4,2,Cardiff,Wales,1934_british_home_championship.txt
+Northern Ireland,Scotland,2,1,1,Belfast,Northern Ireland,1934_british_home_championship.txt
+Scotland,Wales,3,2,1,Aberdeen,Scotland,1934_british_home_championship.txt
+England,Northern Ireland,2,1,1,Liverpool,England,1935_british_home_championship.txt
+Wales,Northern Ireland,3,1,1,Wrexham,Wales,1935_british_home_championship.txt
+Scotland,England,2,0,1,Glasgow,Scotland,1935_british_home_championship.txt
+Wales,Scotland,1,1,X,Cardiff,Wales,1935_british_home_championship.txt
+Northern Ireland,England,1,3,2,Belfast,Northern Ireland,1935_british_home_championship.txt
+Scotland,Northern Ireland,2,1,1,Edinburgh,Scotland,1935_british_home_championship.txt
+England,Wales,1,2,2,Wolverhampton,England,1936_british_home_championship.txt
+Northern Ireland,Wales,3,2,1,Belfast,Northern Ireland,1936_british_home_championship.txt
+England,Scotland,1,1,X,London,England,1936_british_home_championship.txt
+Wales,England,2,1,1,Cardiff,Wales,1936_british_home_championship.txt
+Northern Ireland,Scotland,1,3,2,Belfast,Northern Ireland,1936_british_home_championship.txt
+England,Northern Ireland,3,1,1,Stoke-on-Trent,England,1936_british_home_championship.txt
+Scotland,Wales,1,2,2,Dundee,Scotland,1936_british_home_championship.txt
+Wales,Northern Ireland,4,1,1,Wrexham,Wales,1937_british_home_championship.txt
+Scotland,England,3,1,1,Glasgow,Scotland,1937_british_home_championship.txt
+Northern Ireland,England,1,5,2,Belfast,Northern Ireland,1937_british_home_championship.txt
+Wales,Scotland,2,1,1,Cardiff,Wales,1937_british_home_championship.txt
+Scotland,Northern Ireland,1,1,X,Aberdeen,Scotland,1937_british_home_championship.txt
+England,Wales,2,1,1,Middlesbrough,England,1937_british_home_championship.txt
+Northern Ireland,Wales,1,0,1,Belfast,Northern Ireland,1938_british_home_championship.txt
+England,Scotland,0,1,2,London,England,1938_british_home_championship.txt
+Northern Ireland,Scotland,0,2,2,Belfast,Northern Ireland,1938_british_home_championship.txt
+Wales,England,4,2,1,Cardiff,Wales,1938_british_home_championship.txt
+Scotland,Wales,3,2,1,Edinburgh,Scotland,1938_british_home_championship.txt
+England,Northern Ireland,7,0,1,Manchester,England,1938_british_home_championship.txt
+Wales,Northern Ireland,3,1,1,Wrexham,Wales,1939_british_home_championship.txt
+Scotland,England,1,2,2,Glasgow,Scotland,1939_british_home_championship.txt
+Northern Ireland,England,2,7,2,Belfast,Northern Ireland,1946_british_home_championship.txt
+Wales,Scotland,3,1,1,Wrexham,Wales,1946_british_home_championship.txt
+England,Wales,3,0,1,Manchester,England,1946_british_home_championship.txt
+Scotland,Northern Ireland,0,0,X,Glasgow,Scotland,1946_british_home_championship.txt
+England,Scotland,1,1,X,London,England,1947_british_home_championship.txt
+Northern Ireland,Wales,2,1,1,Belfast,Northern Ireland,1947_british_home_championship.txt
+Northern Ireland,Scotland,2,0,1,Belfast,Northern Ireland,1947_british_home_championship.txt
+Wales,England,0,3,2,Cardiff,Wales,1947_british_home_championship.txt
+England,Northern Ireland,2,2,X,Liverpool,England,1947_british_home_championship.txt
+Scotland,Wales,1,2,2,Glasgow,Scotland,1947_british_home_championship.txt
+Wales,Northern Ireland,2,0,1,Wrexham,Wales,1948_british_home_championship.txt
+Scotland,England,0,2,2,Glasgow,Scotland,1948_british_home_championship.txt
+Northern Ireland,England,2,6,2,Belfast,Northern Ireland,1948_british_home_championship.txt
+Wales,Scotland,1,3,2,Cardiff,Wales,1948_british_home_championship.txt
+England,Wales,1,0,1,Birmingham,England,1948_british_home_championship.txt
+Scotland,Northern Ireland,3,2,1,Glasgow,Scotland,1948_british_home_championship.txt
+Northern Ireland,Wales,0,2,2,Belfast,Northern Ireland,1949_british_home_championship.txt
+England,Scotland,1,3,2,London,England,1949_british_home_championship.txt
+Northern Ireland,England,1,4,2,Belfast,Northern Ireland,1950_british_home_championship.txt
+Wales,Scotland,1,3,2,Cardiff,Wales,1950_british_home_championship.txt
+Scotland,Northern Ireland,6,1,1,Glasgow,Scotland,1950_british_home_championship.txt
+England,Wales,4,2,1,Sunderland,England,1950_british_home_championship.txt
+Northern Ireland,Wales,1,2,2,Belfast,Northern Ireland,1951_british_home_championship.txt
+England,Scotland,2,3,2,London,England,1951_british_home_championship.txt
+Northern Ireland,Scotland,0,3,2,Belfast,Northern Ireland,1951_british_home_championship.txt
+Wales,England,1,1,X,Cardiff,Wales,1951_british_home_championship.txt
+England,Northern Ireland,2,0,1,London,England,1951_british_home_championship.txt
+Scotland,Wales,0,1,2,Glasgow,Scotland,1951_british_home_championship.txt
+Wales,Northern Ireland,3,0,1,Swansea,Wales,1952_british_home_championship.txt
+Scotland,England,1,2,2,Glasgow,Scotland,1952_british_home_championship.txt
+Northern Ireland,England,2,2,X,Belfast,Northern Ireland,1952_british_home_championship.txt
+Wales,Scotland,1,2,2,Cardiff,Wales,1952_british_home_championship.txt
+Scotland,Northern Ireland,1,1,X,Glasgow,Scotland,1952_british_home_championship.txt
+England,Wales,5,2,1,London,England,1952_british_home_championship.txt
+Northern Ireland,Wales,2,3,2,Belfast,Northern Ireland,1953_british_home_championship.txt
+England,Scotland,2,2,X,London,England,1953_british_home_championship.txt
+Northern Ireland,Scotland,1,3,2,Belfast,Northern Ireland,1953_british_home_championship.txt
+Wales,England,1,4,2,Cardiff,Wales,1953_british_home_championship.txt
+Scotland,Wales,3,3,X,Glasgow,Scotland,1953_british_home_championship.txt
+England,Northern Ireland,3,1,1,Liverpool,England,1953_british_home_championship.txt
+Wales,Northern Ireland,1,2,2,Wrexham,Wales,1954_british_home_championship.txt
+Scotland,England,2,4,2,Glasgow,Scotland,1954_british_home_championship.txt
+Northern Ireland,England,0,2,2,Belfast,Northern Ireland,1954_british_home_championship.txt
+Wales,Scotland,0,1,2,Cardiff,Wales,1954_british_home_championship.txt
+Scotland,Northern Ireland,2,2,X,Glasgow,Scotland,1954_british_home_championship.txt
+England,Wales,3,2,1,London,England,1954_british_home_championship.txt
+England,Scotland,7,2,1,London,England,1955_british_home_championship.txt
+Northern Ireland,Wales,2,3,2,Belfast,Northern Ireland,1955_british_home_championship.txt
+Northern Ireland,Scotland,2,1,1,Belfast,Northern Ireland,1955_british_home_championship.txt
+Wales,England,2,1,1,Cardiff,Wales,1955_british_home_championship.txt
+England,Northern Ireland,3,0,1,London,England,1955_british_home_championship.txt
+Scotland,Wales,2,0,1,Glasgow,Scotland,1955_british_home_championship.txt
+Wales,Northern Ireland,1,1,X,Cardiff,Wales,1956_british_home_championship.txt
+Scotland,England,1,1,X,Glasgow,Scotland,1956_british_home_championship.txt
+Northern Ireland,England,1,1,X,Belfast,Northern Ireland,1956_british_home_championship.txt
+Wales,Scotland,2,2,X,Cardiff,Wales,1956_british_home_championship.txt
+Scotland,Northern Ireland,1,0,1,Glasgow,Scotland,1956_british_home_championship.txt
+England,Wales,3,1,1,London,England,1956_british_home_championship.txt
+England,Scotland,2,1,1,London,England,1957_british_home_championship.txt
+Northern Ireland,Wales,0,0,X,Belfast,Northern Ireland,1957_british_home_championship.txt
+Northern Ireland,Scotland,1,1,X,Belfast,Northern Ireland,1957_british_home_championship.txt
+Wales,England,0,4,2,Cardiff,Wales,1957_british_home_championship.txt
+England,Northern Ireland,2,3,2,London,England,1957_british_home_championship.txt
+Scotland,Wales,1,1,X,Glasgow,Scotland,1957_british_home_championship.txt
+Wales,Northern Ireland,1,1,X,Cardiff,Wales,1958_british_home_championship.txt
+Scotland,England,0,4,2,Glasgow,Scotland,1958_british_home_championship.txt
+Northern Ireland,England,3,3,X,Belfast,Northern Ireland,1958_british_home_championship.txt
+Wales,Scotland,0,3,2,Cardiff,Wales,1958_british_home_championship.txt
+Scotland,Northern Ireland,2,2,X,Glasgow,Scotland,1958_british_home_championship.txt
+England,Wales,2,2,X,Birmingham,England,1958_british_home_championship.txt
+England,Scotland,1,0,1,London,England,1959_british_home_championship.txt
+Northern Ireland,Wales,4,1,1,Belfast,Northern Ireland,1959_british_home_championship.txt
+Northern Ireland,Scotland,0,4,2,Belfast,Northern Ireland,1959_british_home_championship.txt
+Wales,England,1,1,X,Cardiff,Wales,1959_british_home_championship.txt
+England,Northern Ireland,2,1,1,London,England,1959_british_home_championship.txt
+Wales,Northern Ireland,3,2,1,Wrexham,Wales,1960_british_home_championship.txt
+Scotland,England,1,1,X,Glasgow,Scotland,1960_british_home_championship.txt
+Northern Ireland,England,2,5,2,Belfast,Northern Ireland,1960_british_home_championship.txt
+Wales,Scotland,2,0,1,Cardiff,Wales,1960_british_home_championship.txt
+Scotland,Northern Ireland,5,2,1,Glasgow,Scotland,1960_british_home_championship.txt
+England,Wales,5,1,1,London,England,1960_british_home_championship.txt
+Northern Ireland,Wales,1,5,2,Belfast,Northern Ireland,1961_british_home_championship.txt
+England,Scotland,9,3,1,London,England,1961_british_home_championship.txt
+Northern Ireland,Scotland,1,6,2,Belfast,Northern Ireland,1961_british_home_championship.txt
+Wales,England,1,1,X,Cardiff,Wales,1961_british_home_championship.txt
+Scotland,Wales,2,0,1,Glasgow,Scotland,1961_british_home_championship.txt
+England,Northern Ireland,1,1,X,London,England,1961_british_home_championship.txt
+Wales,Northern Ireland,4,0,1,Cardiff,Wales,1962_british_home_championship.txt
+Scotland,England,2,0,1,Glasgow,Scotland,1962_british_home_championship.txt
+Northern Ireland,England,1,3,2,Belfast,Northern Ireland,1962_british_home_championship.txt
+Wales,Scotland,2,3,2,Cardiff,Wales,1962_british_home_championship.txt
+Scotland,Northern Ireland,5,1,1,Glasgow,Scotland,1962_british_home_championship.txt
+England,Wales,4,0,1,London,England,1962_british_home_championship.txt
+Northern Ireland,Wales,1,4,2,Belfast,Northern Ireland,1963_british_home_championship.txt
+England,Scotland,1,2,2,London,England,1963_british_home_championship.txt
+Northern Ireland,Scotland,2,1,1,Belfast,Northern Ireland,1963_british_home_championship.txt
+Wales,England,0,4,2,Cardiff,Wales,1963_british_home_championship.txt
+England,Northern Ireland,8,3,1,London,England,1963_british_home_championship.txt
+Scotland,Wales,2,1,1,Glasgow,Scotland,1963_british_home_championship.txt
+Scotland,England,1,0,1,Glasgow,Scotland,1964_british_home_championship.txt
+Wales,Northern Ireland,2,3,2,Swansea,Wales,1964_british_home_championship.txt
+Northern Ireland,England,3,4,2,Belfast,Northern Ireland,1964_british_home_championship.txt
+Wales,Scotland,3,2,1,Cardiff,Wales,1964_british_home_championship.txt
+England,Wales,2,1,1,London,England,1964_british_home_championship.txt
+Scotland,Northern Ireland,3,2,1,Glasgow,Scotland,1964_british_home_championship.txt
+Northern Ireland,Wales,0,5,2,Belfast,Northern Ireland,1965_british_home_championship.txt
+England,Scotland,2,2,X,London,England,1965_british_home_championship.txt
+Northern Ireland,Scotland,3,2,1,Belfast,Northern Ireland,1965_british_home_championship.txt
+Wales,England,0,0,X,Cardiff,Wales,1965_british_home_championship.txt
+England,Northern Ireland,2,1,1,London,England,1965_british_home_championship.txt
+Scotland,Wales,4,1,1,Glasgow,Scotland,1965_british_home_championship.txt
+Wales,Northern Ireland,1,4,2,Cardiff,Wales,1966_british_home_championship.txt
+Scotland,England,3,4,2,Glasgow,Scotland,1966_british_home_championship.txt
+Northern Ireland,England,0,2,2,Belfast,Northern Ireland,1966_british_home_championship.txt
+Wales,Scotland,1,1,X,Cardiff,Wales,1966_british_home_championship.txt
+England,Wales,5,1,1,London,England,1966_british_home_championship.txt
+Scotland,Northern Ireland,2,1,1,Glasgow,Scotland,1966_british_home_championship.txt
+Northern Ireland,Wales,0,0,X,Belfast,Northern Ireland,1967_british_home_championship.txt
+England,Scotland,2,3,2,London,England,1967_british_home_championship.txt
+Northern Ireland,Scotland,1,0,1,Belfast,Northern Ireland,1967_british_home_championship.txt
+Wales,England,0,3,2,Cardiff,Wales,1967_british_home_championship.txt
+England,Northern Ireland,2,0,1,London,England,1967_british_home_championship.txt
+Scotland,Wales,3,2,1,Glasgow,Scotland,1967_british_home_championship.txt
+Scotland,England,1,1,X,Glasgow,Scotland,1968_british_home_championship.txt
+Wales,Northern Ireland,2,0,1,Wrexham,Wales,1968_british_home_championship.txt
+Northern Ireland,England,1,3,2,Belfast,Northern Ireland,1969_british_home_championship.txt
+Wales,Scotland,3,5,2,Wrexham,Wales,1969_british_home_championship.txt
+Scotland,Northern Ireland,1,1,X,Glasgow,Scotland,1969_british_home_championship.txt
+England,Wales,2,1,1,London,England,1969_british_home_championship.txt
+England,Scotland,4,1,1,London,England,1969_british_home_championship.txt
+Northern Ireland,Wales,0,0,X,Belfast,Northern Ireland,1969_british_home_championship.txt
+Northern Ireland,Scotland,0,1,2,Belfast,Northern Ireland,1970_british_home_championship.txt
+Wales,England,1,1,X,Cardiff,Wales,1970_british_home_championship.txt
+England,Northern Ireland,3,1,1,London,England,1970_british_home_championship.txt
+Scotland,Wales,0,0,X,Glasgow,Scotland,1970_british_home_championship.txt
+Scotland,England,0,0,X,Glasgow,Scotland,1970_british_home_championship.txt
+Wales,Northern Ireland,1,0,1,Swansea,Wales,1970_british_home_championship.txt
+Northern Ireland,England,0,1,2,Belfast,Northern Ireland,1971_british_home_championship.txt
+Wales,Scotland,0,0,X,Cardiff,Wales,1971_british_home_championship.txt
+Scotland,Northern Ireland,0,1,2,Glasgow,Scotland,1971_british_home_championship.txt
+England,Wales,0,0,X,London,England,1971_british_home_championship.txt
+England,Scotland,3,1,1,London,England,1971_british_home_championship.txt
+Northern Ireland,Wales,1,0,1,Belfast,Northern Ireland,1971_british_home_championship.txt
+Scotland,Northern Ireland,2,0,1,Glasgow,Scotland,1972_british_home_championship.txt
+Wales,England,0,3,2,Cardiff,Wales,1972_british_home_championship.txt
+England,Northern Ireland,0,1,2,London,England,1972_british_home_championship.txt
+Scotland,Wales,1,0,1,Glasgow,Scotland,1972_british_home_championship.txt
+Scotland,England,0,1,2,Glasgow,Scotland,1972_british_home_championship.txt
+Wales,Northern Ireland,0,0,X,Wrexham,Wales,1972_british_home_championship.txt
+England,Northern Ireland,2,1,1,Liverpool,England,1973_british_home_championship.txt
+Wales,Scotland,0,2,2,Wrexham,Wales,1973_british_home_championship.txt
+England,Wales,3,0,1,London,England,1973_british_home_championship.txt
+Scotland,Northern Ireland,1,2,2,Glasgow,Scotland,1973_british_home_championship.txt
+England,Scotland,1,0,1,London,England,1973_british_home_championship.txt
+Northern Ireland,Wales,1,0,1,Liverpool,England,1973_british_home_championship.txt
+Scotland,Northern Ireland,0,1,2,Glasgow,Scotland,1974_british_home_championship.txt
+Wales,England,0,2,2,Cardiff,Wales,1974_british_home_championship.txt
+Scotland,Wales,2,0,1,Glasgow,Scotland,1974_british_home_championship.txt
+England,Northern Ireland,1,0,1,London,England,1974_british_home_championship.txt
+Scotland,England,2,0,1,Glasgow,Scotland,1974_british_home_championship.txt
+Wales,Northern Ireland,1,0,1,Wrexham,Wales,1974_british_home_championship.txt
+Northern Ireland,England,0,0,X,Belfast,Northern Ireland,1975_british_home_championship.txt
+Wales,Scotland,2,2,X,Cardiff,Wales,1975_british_home_championship.txt
+Scotland,Northern Ireland,3,0,1,Glasgow,Scotland,1975_british_home_championship.txt
+England,Wales,2,2,X,London,England,1975_british_home_championship.txt
+Northern Ireland,Wales,1,0,1,Belfast,Northern Ireland,1975_british_home_championship.txt
+England,Scotland,5,1,1,London,England,1975_british_home_championship.txt
+Scotland,Wales,3,1,1,Glasgow,Scotland,1976_british_home_championship.txt
+Scotland,Northern Ireland,3,0,1,Glasgow,Scotland,1976_british_home_championship.txt
+Wales,England,0,1,2,Cardiff,Wales,1976_british_home_championship.txt
+England,Northern Ireland,4,0,1,London,England,1976_british_home_championship.txt
+Wales,Northern Ireland,1,0,1,Swansea,Wales,1976_british_home_championship.txt
+Scotland,England,2,1,1,Glasgow,Scotland,1976_british_home_championship.txt
+Northern Ireland,England,1,2,2,Belfast,Northern Ireland,1977_british_home_championship.txt
+Wales,Scotland,0,0,X,Wrexham,Wales,1977_british_home_championship.txt
+England,Wales,0,1,2,London,England,1977_british_home_championship.txt
+Scotland,Northern Ireland,3,0,1,Glasgow,Scotland,1977_british_home_championship.txt
+Northern Ireland,Wales,1,1,X,Belfast,Northern Ireland,1977_british_home_championship.txt
+England,Scotland,1,2,2,London,England,1977_british_home_championship.txt
+Scotland,Northern Ireland,1,1,X,Glasgow,Scotland,1978_british_home_championship.txt
+Wales,England,1,3,2,Cardiff,Wales,1978_british_home_championship.txt
+England,Northern Ireland,1,0,1,London,England,1978_british_home_championship.txt
+Scotland,Wales,1,1,X,Glasgow,Scotland,1978_british_home_championship.txt
+Wales,Northern Ireland,1,0,1,Wrexham,Wales,1978_british_home_championship.txt
+Scotland,England,0,1,2,Glasgow,Scotland,1978_british_home_championship.txt
+Northern Ireland,England,0,2,2,Belfast,Northern Ireland,1979_british_home_championship.txt
+Wales,Scotland,3,0,1,Cardiff,Wales,1979_british_home_championship.txt
+Scotland,Northern Ireland,1,0,1,Glasgow,Scotland,1979_british_home_championship.txt
+England,Wales,0,0,X,London,England,1979_british_home_championship.txt
+England,Scotland,3,1,1,London,England,1979_british_home_championship.txt
+Northern Ireland,Wales,1,1,X,Belfast,Northern Ireland,1979_british_home_championship.txt
+Northern Ireland,Scotland,1,0,1,Belfast,Northern Ireland,1980_british_home_championship.txt
+Wales,England,4,1,1,Wrexham,Wales,1980_british_home_championship.txt
+England,Northern Ireland,1,1,X,London,England,1980_british_home_championship.txt
+Scotland,Wales,1,0,1,Glasgow,Scotland,1980_british_home_championship.txt
+Wales,Northern Ireland,0,1,2,Cardiff,Wales,1980_british_home_championship.txt
+Scotland,England,0,2,2,Glasgow,Scotland,1980_british_home_championship.txt
+Wales,Scotland,2,0,1,Swansea,Wales,1981_british_home_championship.txt
+Scotland,Northern Ireland,2,0,1,Glasgow,Scotland,1981_british_home_championship.txt
+England,Wales,0,0,X,London,England,1981_british_home_championship.txt
+England,Scotland,0,1,2,London,England,1981_british_home_championship.txt
+England,Northern Ireland,4,0,1,London,England,1982_british_home_championship.txt
+Wales,England,0,1,2,Cardiff,Wales,1982_british_home_championship.txt
+Northern Ireland,Scotland,1,1,X,Belfast,Northern Ireland,1982_british_home_championship.txt
+Scotland,Wales,1,0,1,Glasgow,Scotland,1982_british_home_championship.txt
+Wales,Northern Ireland,3,0,1,Wrexham,Wales,1982_british_home_championship.txt
+Scotland,England,0,1,2,Glasgow,Scotland,1982_british_home_championship.txt
+England,Wales,2,1,1,London,England,1983_british_home_championship.txt
+Scotland,Northern Ireland,0,0,X,Glasgow,Scotland,1983_british_home_championship.txt
+Northern Ireland,England,0,0,X,Belfast,Northern Ireland,1983_british_home_championship.txt
+Wales,Scotland,0,2,2,Cardiff,Wales,1983_british_home_championship.txt
+Northern Ireland,Wales,0,1,2,Belfast,Northern Ireland,1983_british_home_championship.txt
+England,Scotland,2,0,1,London,England,1983_british_home_championship.txt
+Northern Ireland,Scotland,2,0,1,Belfast,Northern Ireland,1983_british_home_championship.txt
+Scotland,Wales,2,1,1,Glasgow,Scotland,1984_british_home_championship.txt
+England,Northern Ireland,1,0,1,London,England,1984_british_home_championship.txt
+Wales,England,1,0,1,Wrexham,Wales,1984_british_home_championship.txt
+Wales,Northern Ireland,1,1,X,Swansea,Wales,1984_british_home_championship.txt
+Scotland,England,1,1,X,Glasgow,Scotland,1984_british_home_championship.txt

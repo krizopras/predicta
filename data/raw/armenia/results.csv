@@ -1,0 +1,346 @@
+time,home_team,away_team,home_score,away_score,result,ht_score,source_file
+17.00,FC West Armenia,Shirak FC,2,4,2,2-2,2023-24_am1.txt
+19.00,FC Noah,FK Van,1,0,1,1-0,2023-24_am1.txt
+18.00,BKMA Yerevan,FC Urartu,1,2,2,0-1,2023-24_am1.txt
+20.00,FC Ararat,FC Ararat-Armenia,1,3,2,1-0,2023-24_am1.txt
+18.00,FC Alashkert,Pyunik FC,0,2,2,0-1,2023-24_am1.txt
+19.00,BKMA Yerevan,FC Noah,1,0,1,0-0,2023-24_am1.txt
+18.00,FK Van,Shirak FC,1,0,1,0-0,2023-24_am1.txt
+19.00,Pyunik FC,FC Ararat,1,1,X,1-1,2023-24_am1.txt
+18.00,FC West Armenia,FC Alashkert,1,4,2,1-2,2023-24_am1.txt
+20.00,FC Urartu,FC Ararat-Armenia,2,1,1,1-0,2023-24_am1.txt
+19.00,Shirak FC,BKMA Yerevan,0,1,2,0-0,2023-24_am1.txt
+19.00,FC Ararat,FC West Armenia,1,0,1,1-0,2023-24_am1.txt
+19.00,FC Noah,FC Urartu,2,0,1,1-0,2023-24_am1.txt
+17.00,FC Alashkert,FK Van,0,0,X,,2023-24_am1.txt
+19.00,FC Ararat-Armenia,Pyunik FC,1,2,2,1-0,2023-24_am1.txt
+19.00,FC Noah,Shirak FC,4,0,1,1-0,2023-24_am1.txt
+17.00,FK Van,FC Ararat,1,2,2,0-1,2023-24_am1.txt
+19.00,BKMA Yerevan,FC Alashkert,0,4,2,0-1,2023-24_am1.txt
+17.00,FC West Armenia,FC Ararat-Armenia,1,4,2,1-0,2023-24_am1.txt
+19.00,FC Urartu,Pyunik FC,1,1,X,1-1,2023-24_am1.txt
+17.00,FC Alashkert,FC Noah,3,1,1,1-1,2023-24_am1.txt
+19.00,FC Ararat,BKMA Yerevan,0,2,2,0-1,2023-24_am1.txt
+19.00,Shirak FC,FC Urartu,0,2,2,0-1,2023-24_am1.txt
+19.00,FC Ararat-Armenia,FK Van,3,0,1,1-0,2023-24_am1.txt
+19.00,Pyunik FC,FC West Armenia,3,0,1,0-0,2023-24_am1.txt
+17.00,Shirak FC,FC Alashkert,2,3,2,0-1,2023-24_am1.txt
+20.00,FC Noah,FC Ararat,3,0,1,2-0,2023-24_am1.txt
+17.00,FC West Armenia,FC Urartu,2,5,2,1-0,2023-24_am1.txt
+19.00,BKMA Yerevan,FC Ararat-Armenia,1,1,X,0-1,2023-24_am1.txt
+17.00,FK Van,Pyunik FC,0,5,2,0-2,2023-24_am1.txt
+14.00,FC West Armenia,FK Van,2,0,1,1-0,2023-24_am1.txt
+16.00,FC Ararat,Shirak FC,2,1,1,2-1,2023-24_am1.txt
+16.00,FC Alashkert,FC Urartu,4,2,1,0-0,2023-24_am1.txt
+18.00,FC Ararat-Armenia,FC Noah,4,3,1,3-0,2023-24_am1.txt
+18.00,Pyunik FC,BKMA Yerevan,3,0,1,3-0,2023-24_am1.txt
+16.00,FC Urartu,FK Van,3,1,1,1-1,2023-24_am1.txt
+19.00,Shirak FC,FC Ararat-Armenia,1,3,2,0-1,2023-24_am1.txt
+14.00,FC Alashkert,FC Ararat,2,1,1,1-1,2023-24_am1.txt
+18.00,BKMA Yerevan,FC West Armenia,0,4,2,0-0,2023-24_am1.txt
+19.00,FC Noah,Pyunik FC,0,1,2,0-0,2023-24_am1.txt
+15.00,FK Van,BKMA Yerevan,1,2,2,0-1,2023-24_am1.txt
+18.00,FC Ararat,FC Urartu,1,1,X,1-1,2023-24_am1.txt
+16.00,Pyunik FC,Shirak FC,1,0,1,1-0,2023-24_am1.txt
+18.00,FC Ararat-Armenia,FC Alashkert,3,1,1,2-0,2023-24_am1.txt
+16.00,FC West Armenia,FC Noah,2,4,2,0-3,2023-24_am1.txt
+15.00,FC Urartu,BKMA Yerevan,2,1,1,0-0,2023-24_am1.txt
+17.00,FC Ararat-Armenia,FC Ararat,2,1,1,1-0,2023-24_am1.txt
+19.00,Pyunik FC,FC Alashkert,3,1,1,2-1,2023-24_am1.txt
+15.00,FK Van,FC Noah,0,2,2,0-0,2023-24_am1.txt
+19.00,Shirak FC,FC West Armenia,0,0,X,,2023-24_am1.txt
+17.00,FC Ararat-Armenia,FC Urartu,1,2,2,1-1,2023-24_am1.txt
+19.00,Shirak FC,FK Van,2,0,1,1-0,2023-24_am1.txt
+15.00,FC Alashkert,FC West Armenia,2,0,1,1-0,2023-24_am1.txt
+17.00,FC Ararat,Pyunik FC,0,5,2,0-2,2023-24_am1.txt
+15.00,FC Noah,BKMA Yerevan,3,0,1,2-0,2023-24_am1.txt
+15.00,FC West Armenia,FC Ararat,0,2,2,0-0,2023-24_am1.txt
+15.00,FK Van,FC Alashkert,2,1,1,1-0,2023-24_am1.txt
+,Pyunik FC,FC Ararat-Armenia,1,1,X,1-0,2023-24_am1.txt
+15.00,BKMA Yerevan,Shirak FC,1,3,2,1-2,2023-24_am1.txt
+19.00,FC Urartu,FC Noah,1,0,1,1-0,2023-24_am1.txt
+16.00,FC Ararat-Armenia,FC West Armenia,4,0,1,3-0,2023-24_am1.txt
+18.00,FC Ararat,FK Van,2,1,1,0-1,2023-24_am1.txt
+15.00,Pyunik FC,FC Urartu,3,1,1,3-1,2023-24_am1.txt
+,FC Alashkert,BKMA Yerevan,1,0,1,0-0,2023-24_am1.txt
+19.00,Shirak FC,FC Noah,0,2,2,0-2,2023-24_am1.txt
+15.00,FK Van,FC Ararat-Armenia,0,2,2,0-0,2023-24_am1.txt
+14.00,FC West Armenia,Pyunik FC,2,3,2,0-2,2023-24_am1.txt
+17.00,BKMA Yerevan,FC Ararat,2,0,1,0-0,2023-24_am1.txt
+17.00,FC Noah,FC Alashkert,4,2,1,3-2,2023-24_am1.txt
+19.00,FC Urartu,Shirak FC,2,2,X,1-1,2023-24_am1.txt
+14.00,Pyunik FC,FK Van,6,0,1,2-0,2023-24_am1.txt
+18.00,FC Ararat-Armenia,BKMA Yerevan,4,1,1,1-0,2023-24_am1.txt
+16.00,FC Urartu,FC West Armenia,1,2,2,1-0,2023-24_am1.txt
+18.00,FC Ararat,FC Noah,0,2,2,0-1,2023-24_am1.txt
+15.00,FC Alashkert,Shirak FC,0,0,X,,2023-24_am1.txt
+19.00,BKMA Yerevan,Pyunik FC,1,4,2,1-3,2023-24_am1.txt
+14.30,FK Van,FC West Armenia,4,1,1,0-1,2023-24_am1.txt
+18.00,FC Noah,FC Ararat-Armenia,1,0,1,1-0,2023-24_am1.txt
+16.00,Shirak FC,FC Ararat,1,2,2,0-1,2023-24_am1.txt
+19.00,FC Urartu,FC Alashkert,1,0,1,0-0,2023-24_am1.txt
+14.30,FC West Armenia,BKMA Yerevan,1,0,1,1-0,2023-24_am1.txt
+15.00,Pyunik FC,FC Noah,3,1,1,1-1,2023-24_am1.txt
+18.00,FC Ararat-Armenia,Shirak FC,2,0,1,0-0,2023-24_am1.txt
+14.30,FK Van,FC Urartu,2,2,X,0-1,2023-24_am1.txt
+18.00,FC Ararat,FC Alashkert,0,1,2,0-1,2023-24_am1.txt
+18.00,Shirak FC,Pyunik FC,1,1,X,0-1,2023-24_am1.txt
+16.00,FC Noah,FC West Armenia,5,1,1,1-1,2023-24_am1.txt
+18.00,FC Urartu,FC Ararat,2,1,1,1-1,2023-24_am1.txt
+14.30,FC Alashkert,FC Ararat-Armenia,1,1,X,1-1,2023-24_am1.txt
+18.00,BKMA Yerevan,FK Van,7,1,1,3-0,2023-24_am1.txt
+16.00,FC Noah,FK Van,3,1,1,2-0,2023-24_am1.txt
+18.00,BKMA Yerevan,FC Urartu,2,0,1,0-0,2023-24_am1.txt
+16.00,FC Ararat,FC Ararat-Armenia,0,1,2,0-1,2023-24_am1.txt
+18.00,Shirak FC,FC West Armenia,1,2,2,0-1,2023-24_am1.txt
+14.00,FC Alashkert,Pyunik FC,1,1,X,1-1,2023-24_am1.txt
+18.00,BKMA Yerevan,FC Noah,0,2,2,0-1,2023-24_am1.txt
+14.00,FK Van,Shirak FC,4,0,1,0-0,2023-24_am1.txt
+18.00,FC Urartu,FC Ararat-Armenia,1,3,2,0-3,2023-24_am1.txt
+14.00,FC West Armenia,FC Alashkert,1,1,X,0-1,2023-24_am1.txt
+14.00,Pyunik FC,FC Ararat,2,2,X,1-1,2023-24_am1.txt
+15.00,Shirak FC,BKMA Yerevan,1,0,1,0-0,2023-24_am1.txt
+18.00,FC Noah,FC Urartu,1,1,X,1-0,2023-24_am1.txt
+15.00,FC Alashkert,FK Van,0,1,2,0-1,2023-24_am1.txt
+18.00,FC Ararat-Armenia,Pyunik FC,3,1,1,2-0,2023-24_am1.txt
+17.00,FC Ararat,FC West Armenia,1,0,1,0-0,2023-24_am1.txt
+18.00,FC Noah,Shirak FC,1,0,1,0-0,2023-24_am1.txt
+17.00,BKMA Yerevan,FC Alashkert,0,6,2,0-2,2023-24_am1.txt
+19.00,FC Urartu,Pyunik FC,1,1,X,0-1,2023-24_am1.txt
+15.00,FC West Armenia,FC Ararat-Armenia,1,1,X,0-1,2023-24_am1.txt
+,FK Van,FC Ararat,0,2,2,0-1,2023-24_am1.txt
+15.00,Shirak FC,FC Urartu,1,0,1,0-0,2023-24_am1.txt
+,FC Alashkert,FC Noah,0,2,2,0-0,2023-24_am1.txt
+15.00,FC Ararat-Armenia,FK Van,0,2,2,0-0,2023-24_am1.txt
+18.00,FC Ararat,BKMA Yerevan,1,0,1,0-0,2023-24_am1.txt
+15.00,Pyunik FC,FC West Armenia,2,1,1,1-1,2023-24_am1.txt
+15.00,Shirak FC,FC Alashkert,2,0,1,0-0,2023-24_am1.txt
+15.00,BKMA Yerevan,FC Ararat-Armenia,0,1,2,0-0,2023-24_am1.txt
+18.00,FC Noah,FC Ararat,4,3,1,4-1,2023-24_am1.txt
+15.00,FK Van,Pyunik FC,1,0,1,1-0,2023-24_am1.txt
+18.00,FC Urartu,FC West Armenia,1,2,2,0-0,2023-24_am1.txt
+17.00,FC Ararat,Shirak FC,2,0,1,1-0,2023-24_am1.txt
+19.00,FC Ararat-Armenia,FC Noah,0,1,2,0-0,2023-24_am1.txt
+15.00,FC Alashkert,FC Urartu,0,2,2,0-1,2023-24_am1.txt
+16.00,Pyunik FC,BKMA Yerevan,3,1,1,0-0,2023-24_am1.txt
+16.00,FC West Armenia,FK Van,2,0,1,1-0,2023-24_am1.txt
+15.00,FC Alashkert,FC Ararat,2,1,1,2-0,2023-24_am1.txt
+19.00,FC Urartu,FK Van,1,1,X,1-0,2023-24_am1.txt
+17.00,Shirak FC,FC Ararat-Armenia,0,1,2,0-0,2023-24_am1.txt
+19.00,FC Noah,Pyunik FC,1,1,X,0-1,2023-24_am1.txt
+16.00,BKMA Yerevan,FC West Armenia,1,1,X,0-1,2023-24_am1.txt
+19.00,FC Ararat,FC Urartu,0,0,X,,2023-24_am1.txt
+16.00,FC Ararat-Armenia,FC Alashkert,2,1,1,0-0,2023-24_am1.txt
+,Pyunik FC,Shirak FC,1,1,X,0-0,2023-24_am1.txt
+15.00,FC West Armenia,FC Noah,2,5,2,0-1,2023-24_am1.txt
+16.00,FK Van,BKMA Yerevan,2,2,X,0-1,2023-24_am1.txt
+16.00,FK Van,FC Noah,0,1,2,0-0,2023-24_am1.txt
+16.00,Pyunik FC,FC Alashkert,2,1,1,2-0,2023-24_am1.txt
+19.00,FC Ararat-Armenia,FC Ararat,2,1,1,0-1,2023-24_am1.txt
+18.00,FC Urartu,BKMA Yerevan,2,1,1,0-0,2023-24_am1.txt
+16.00,FC West Armenia,Shirak FC,1,0,1,0-0,2023-24_am1.txt
+17.00,FC Ararat,Pyunik FC,0,1,2,0-0,2023-24_am1.txt
+19.00,FC Ararat-Armenia,FC Urartu,2,0,1,1-0,2023-24_am1.txt
+17.00,FC Alashkert,FC West Armenia,1,2,2,0-1,2023-24_am1.txt
+19.00,Shirak FC,FK Van,0,0,X,,2023-24_am1.txt
+19.00,FC Noah,BKMA Yerevan,1,0,1,1-0,2023-24_am1.txt
+16.00,Pyunik FC,FC Ararat-Armenia,2,2,X,1-1,2023-24_am1.txt
+15.00,FK Van,FC Alashkert,2,3,2,0-1,2023-24_am1.txt
+17.00,FC West Armenia,FC Ararat,1,2,2,0-0,2023-24_am1.txt
+17.00,BKMA Yerevan,Shirak FC,0,0,X,,2023-24_am1.txt
+19.00,FC Urartu,FC Noah,0,1,2,0-1,2023-24_am1.txt
+19.00,FC Ararat,FK Van,1,1,X,0-0,2023-24_am1.txt
+16.00,FC West Armenia,FC Ararat-Armenia,0,1,2,0-1,2023-24_am1.txt
+19.00,Shirak FC,FC Noah,1,0,1,0-0,2023-24_am1.txt
+14.00,FC Alashkert,BKMA Yerevan,0,0,X,,2023-24_am1.txt
+16.00,Pyunik FC,FC Urartu,5,0,1,2-0,2023-24_am1.txt
+16.00,FK Van,FC Ararat-Armenia,0,5,2,0-1,2023-24_am1.txt
+,FC West Armenia,Pyunik FC,1,4,2,0-2,2023-24_am1.txt
+17.00,BKMA Yerevan,FC Ararat,1,3,2,1-0,2023-24_am1.txt
+19.00,FC Urartu,Shirak FC,0,0,X,,2023-24_am1.txt
+17.00,FC Noah,FC Alashkert,2,1,1,1-0,2023-24_am1.txt
+16.00,FC West Armenia,FC Urartu,1,0,1,0-0,2023-24_am1.txt
+19.00,FC Ararat-Armenia,BKMA Yerevan,4,1,1,3-0,2023-24_am1.txt
+16.00,Pyunik FC,FK Van,3,1,1,1-1,2023-24_am1.txt
+19.00,FC Ararat,FC Noah,0,1,2,0-1,2023-24_am1.txt
+16.00,FC Alashkert,Shirak FC,2,3,2,2-1,2023-24_am1.txt
+17.00,FK Van,FC West Armenia,1,0,1,1-0,2023-24_am1.txt
+19.00,BKMA Yerevan,Pyunik FC,0,3,2,0-2,2023-24_am1.txt
+19.00,Shirak FC,FC Ararat,0,1,2,0-0,2023-24_am1.txt
+18.00,FC Urartu,FC Alashkert,6,1,1,1-1,2023-24_am1.txt
+20.00,FC Noah,FC Ararat-Armenia,2,1,1,2-0,2023-24_am1.txt
+17.00,FC West Armenia,BKMA Yerevan,3,2,1,0-1,2023-24_am1.txt
+17.00,FK Van,FC Urartu,1,1,X,1-1,2023-24_am1.txt
+19.00,FC Ararat,FC Alashkert,1,3,2,0-2,2023-24_am1.txt
+17.00,Pyunik FC,FC Noah,3,0,1,1-0,2023-24_am1.txt
+20.00,FC Ararat-Armenia,Shirak FC,1,1,X,0-0,2023-24_am1.txt
+17.00,BKMA Yerevan,FK Van,0,0,X,,2023-24_am1.txt
+19.00,FC Urartu,FC Ararat,1,1,X,0-0,2023-24_am1.txt
+17.30,Shirak FC,Pyunik FC,0,1,2,0-0,2023-24_am1.txt
+,FC Noah,FC West Armenia,3,1,1,1-1,2023-24_am1.txt
+17.00,FC Alashkert,FC Ararat-Armenia,1,3,2,0-1,2023-24_am1.txt
+19.00,BKMA Yerevan,Shirak FC,0,2,2,0-0,2024-25_am1.txt
+19.00,FC Ararat,FC Alashkert,2,0,1,1-0,2024-25_am1.txt
+17.00,FK Van,FC Ararat-Armenia,0,2,2,0-1,2024-25_am1.txt
+19.00,FC Urartu,Pyunik FC,0,0,X,,2024-25_am1.txt
+19.00,FC Noah,Gandzasar Kapan,7,0,1,3-0,2024-25_am1.txt
+17.00,FC Alashkert,FK Van,1,1,X,0-1,2024-25_am1.txt
+19.00,FC West Armenia,BKMA Yerevan,2,5,2,1-4,2024-25_am1.txt
+19.00,Gandzasar Kapan,FC Ararat,0,2,2,0-0,2024-25_am1.txt
+19.00,Shirak FC,FC Noah,0,5,2,0-2,2024-25_am1.txt
+18.00,FC Ararat-Armenia,Pyunik FC,1,3,2,1-0,2024-25_am1.txt
+17.00,FK Van,Gandzasar Kapan,6,1,1,4-1,2024-25_am1.txt
+18.00,FC Ararat,Shirak FC,1,2,2,0-1,2024-25_am1.txt
+18.00,Pyunik FC,FC Alashkert,0,2,2,0-1,2024-25_am1.txt
+19.00,FC Urartu,FC Ararat-Armenia,3,1,1,1-0,2024-25_am1.txt
+17.00,FC Noah,FC West Armenia,7,1,1,3-1,2024-25_am1.txt
+17.00,FC West Armenia,FC Ararat,1,2,2,0-0,2024-25_am1.txt
+19.00,FC Alashkert,FC Urartu,0,3,2,0-1,2024-25_am1.txt
+20.00,BKMA Yerevan,FC Noah,1,2,2,0-1,2024-25_am1.txt
+17.00,Shirak FC,FK Van,0,2,2,0-0,2024-25_am1.txt
+15.00,Gandzasar Kapan,Pyunik FC,0,5,2,0-2,2024-25_am1.txt
+17.00,FC Ararat,BKMA Yerevan,2,2,X,2-1,2024-25_am1.txt
+19.00,FC Ararat-Armenia,FC Alashkert,3,1,1,2-1,2024-25_am1.txt
+17.00,FK Van,FC West Armenia,6,0,1,4-0,2024-25_am1.txt
+19.00,FC Urartu,Gandzasar Kapan,2,0,1,1-0,2024-25_am1.txt
+16.30,Pyunik FC,Shirak FC,2,0,1,0-0,2024-25_am1.txt
+17.00,BKMA Yerevan,FK Van,0,1,2,0-1,2024-25_am1.txt
+19.00,FC West Armenia,Pyunik FC,1,3,2,0-2,2024-25_am1.txt
+16.00,Gandzasar Kapan,FC Ararat-Armenia,0,3,2,0-2,2024-25_am1.txt
+18.00,Shirak FC,FC Urartu,0,2,2,0-1,2024-25_am1.txt
+19.00,FC Ararat,FC Noah,2,1,1,0-0,2024-25_am1.txt
+17.00,FC Alashkert,Gandzasar Kapan,2,2,X,0-1,2024-25_am1.txt
+19.00,FC Urartu,FC West Armenia,1,2,2,1-1,2024-25_am1.txt
+16.00,FK Van,FC Noah,1,1,X,0-1,2024-25_am1.txt
+18.00,FC Ararat-Armenia,Shirak FC,4,0,1,2-0,2024-25_am1.txt
+19.00,Pyunik FC,BKMA Yerevan,4,1,1,1-1,2024-25_am1.txt
+17.00,FC Ararat,FK Van,0,3,2,0-2,2024-25_am1.txt
+19.00,Shirak FC,FC Alashkert,0,0,X,,2024-25_am1.txt
+17.00,FC West Armenia,FC Ararat-Armenia,1,2,2,1-1,2024-25_am1.txt
+19.00,FC Noah,Pyunik FC,2,0,1,0-0,2024-25_am1.txt
+18.00,BKMA Yerevan,FC Urartu,2,1,1,1-1,2024-25_am1.txt
+17.00,Gandzasar Kapan,Shirak FC,1,2,2,0-1,2024-25_am1.txt
+16.00,FC Alashkert,FC West Armenia,0,2,2,0-0,2024-25_am1.txt
+18.00,Pyunik FC,FC Ararat,3,0,1,2-0,2024-25_am1.txt
+17.00,FC Ararat-Armenia,BKMA Yerevan,2,0,1,1-0,2024-25_am1.txt
+19.00,FC Urartu,FC Noah,2,1,1,1-0,2024-25_am1.txt
+14.30,FK Van,Pyunik FC,1,3,2,0-2,2024-25_am1.txt
+15.00,FC Ararat,FC Urartu,0,1,2,0-0,2024-25_am1.txt
+17.00,BKMA Yerevan,FC Alashkert,1,0,1,0-0,2024-25_am1.txt
+19.00,FC West Armenia,Gandzasar Kapan,2,0,1,1-0,2024-25_am1.txt
+18.00,FC Noah,FC Ararat-Armenia,2,1,1,2-1,2024-25_am1.txt
+18.00,FC Alashkert,FC Noah,0,6,2,0-3,2024-25_am1.txt
+19.00,FC Urartu,FK Van,3,1,1,1-1,2024-25_am1.txt
+19.00,Shirak FC,FC West Armenia,2,0,1,1-0,2024-25_am1.txt
+18.00,FC Ararat-Armenia,FC Ararat,3,2,1,1-1,2024-25_am1.txt
+15.00,Gandzasar Kapan,BKMA Yerevan,1,6,2,1-3,2024-25_am1.txt
+19.00,FC Noah,FK Van,5,0,1,2-0,2024-25_am1.txt
+19.00,FC West Armenia,FC Urartu,2,2,X,0-1,2024-25_am1.txt
+19.00,Shirak FC,FC Ararat-Armenia,0,3,2,0-0,2024-25_am1.txt
+16.00,Gandzasar Kapan,FC Alashkert,0,1,2,0-1,2024-25_am1.txt
+18.00,BKMA Yerevan,Pyunik FC,1,2,2,1-2,2024-25_am1.txt
+16.00,FC Urartu,FC Ararat,1,0,1,1-0,2024-25_am1.txt
+15.00,FC Alashkert,BKMA Yerevan,2,0,1,1-0,2024-25_am1.txt
+,Gandzasar Kapan,FC West Armenia,0,1,2,0-0,2024-25_am1.txt
+17.00,Pyunik FC,FK Van,1,0,1,1-0,2024-25_am1.txt
+19.00,FC Ararat-Armenia,FC Noah,0,1,2,0-1,2024-25_am1.txt
+16.00,FC West Armenia,FC Alashkert,2,0,1,1-0,2024-25_am1.txt
+18.00,Shirak FC,Gandzasar Kapan,0,0,X,,2024-25_am1.txt
+19.00,FC Noah,FC Urartu,2,1,1,1-1,2024-25_am1.txt
+17.00,FC Ararat,Pyunik FC,0,2,2,0-1,2024-25_am1.txt
+19.00,BKMA Yerevan,FC Ararat-Armenia,2,4,2,1-3,2024-25_am1.txt
+15.00,FC Alashkert,Shirak FC,1,3,2,1-1,2024-25_am1.txt
+15.00,FK Van,FC Ararat,4,0,1,2-0,2024-25_am1.txt
+17.00,FC Ararat-Armenia,FC West Armenia,3,0,1,1-0,2024-25_am1.txt
+19.00,FC Urartu,BKMA Yerevan,4,2,1,3-0,2024-25_am1.txt
+19.00,Pyunik FC,FC Noah,1,3,2,0-1,2024-25_am1.txt
+19.00,FC West Armenia,Shirak FC,0,0,X,,2024-25_am1.txt
+15.00,FC Ararat,FC Ararat-Armenia,0,0,X,,2024-25_am1.txt
+19.00,FC Noah,FC Alashkert,4,0,1,2-0,2024-25_am1.txt
+15.00,FK Van,FC Urartu,3,1,1,1-1,2024-25_am1.txt
+17.00,BKMA Yerevan,Gandzasar Kapan,2,1,1,2-0,2024-25_am1.txt
+17.00,FC Urartu,Shirak FC,1,2,2,0-0,2024-25_am1.txt
+18.00,FC Noah,FC Ararat,4,0,1,2-0,2024-25_am1.txt
+,Pyunik FC,FC West Armenia,3,0,1,,2024-25_am1.txt
+18.00,FC Ararat-Armenia,Gandzasar Kapan,3,0,1,1-0,2024-25_am1.txt
+15.00,FK Van,BKMA Yerevan,2,3,2,0-2,2024-25_am1.txt
+15.00,FC West Armenia,FK Van,0,2,2,0-1,2024-25_am1.txt
+15.00,FC Alashkert,FC Ararat-Armenia,2,2,X,1-0,2024-25_am1.txt
+17.00,BKMA Yerevan,FC Ararat,1,1,X,1-1,2024-25_am1.txt
+14.00,Gandzasar Kapan,FC Urartu,0,4,2,0-0,2024-25_am1.txt
+19.00,Shirak FC,Pyunik FC,1,0,1,0-0,2024-25_am1.txt
+14.00,FK Van,Shirak FC,1,0,1,0-0,2024-25_am1.txt
+18.00,Pyunik FC,Gandzasar Kapan,1,0,1,0-0,2024-25_am1.txt
+15.00,FC Ararat,FC West Armenia,2,3,2,2-1,2024-25_am1.txt
+18.00,FC Urartu,FC Alashkert,1,0,1,0-0,2024-25_am1.txt
+16.00,FC Noah,BKMA Yerevan,3,0,1,2-0,2024-25_am1.txt
+16.00,FC West Armenia,FC Noah,0,4,2,0-2,2024-25_am1.txt
+14.00,FC Alashkert,Pyunik FC,0,2,2,0-1,2024-25_am1.txt
+16.00,FC Ararat-Armenia,FC Urartu,1,2,2,0-0,2024-25_am1.txt
+18.30,Shirak FC,FC Ararat,1,3,2,0-2,2024-25_am1.txt
+16.00,Gandzasar Kapan,FK Van,1,2,2,1-2,2024-25_am1.txt
+15.00,FK Van,FC Alashkert,1,1,X,1-0,2024-25_am1.txt
+19.00,Pyunik FC,FC Ararat-Armenia,1,2,2,0-1,2024-25_am1.txt
+13.00,BKMA Yerevan,FC West Armenia,0,1,2,0-1,2024-25_am1.txt
+18.30,FC Noah,Shirak FC,4,0,1,2-0,2024-25_am1.txt
+,Gandzasar Kapan,FC Ararat,0,3,2,,2024-25_am1.txt
+14.00,FC Alashkert,FC Ararat,0,1,2,0-0,2024-25_am1.txt
+18.00,Shirak FC,BKMA Yerevan,0,0,X,,2024-25_am1.txt
+16.00,Pyunik FC,FC Urartu,0,3,2,0-1,2024-25_am1.txt
+15.30,Gandzasar Kapan,FC Noah,0,3,2,0-2,2024-25_am1.txt
+18.00,FC Ararat-Armenia,FK Van,1,1,X,1-0,2024-25_am1.txt
+15.00,FC Ararat,BKMA Yerevan,1,1,X,1-1,2024-25_am1.txt
+19.00,Pyunik FC,Shirak FC,6,1,1,3-0,2024-25_am1.txt
+15.00,FC Urartu,Gandzasar Kapan,2,1,1,0-1,2024-25_am1.txt
+16.00,FC Ararat-Armenia,FC Alashkert,3,0,1,2-0,2024-25_am1.txt
+15.00,FK Van,FC West Armenia,2,0,1,2-0,2024-25_am1.txt
+16.00,BKMA Yerevan,FC West Armenia,3,0,1,1-0,2024-25_am1.txt
+18.00,FC Ararat,Gandzasar Kapan,1,1,X,0-1,2024-25_am1.txt
+19.00,FC Ararat-Armenia,Pyunik FC,3,2,1,1-2,2024-25_am1.txt
+14.00,FC Alashkert,FK Van,2,2,X,0-1,2024-25_am1.txt
+19.00,Shirak FC,FC Noah,1,2,2,1-0,2024-25_am1.txt
+18.00,FC Ararat,Shirak FC,1,2,2,1-0,2024-25_am1.txt
+16.00,Pyunik FC,FC Alashkert,1,1,X,1-1,2024-25_am1.txt
+19.00,FC Urartu,FC Ararat-Armenia,0,3,2,0-2,2024-25_am1.txt
+16.00,FK Van,Gandzasar Kapan,2,0,1,1-0,2024-25_am1.txt
+19.00,FC Noah,FC West Armenia,5,1,1,1-0,2024-25_am1.txt
+16.00,FC Alashkert,FC Urartu,1,1,X,0-0,2024-25_am1.txt
+16.00,Gandzasar Kapan,Pyunik FC,1,3,2,1-0,2024-25_am1.txt
+19.00,Shirak FC,FK Van,0,1,2,0-0,2024-25_am1.txt
+18.30,BKMA Yerevan,FC Noah,1,5,2,0-2,2024-25_am1.txt
+16.00,FC West Armenia,FC Ararat,2,1,1,0-0,2024-25_am1.txt
+16.00,FC Ararat,FC Alashkert,3,2,1,1-2,2024-25_am1.txt
+18.30,BKMA Yerevan,Shirak FC,3,2,1,0-0,2024-25_am1.txt
+16.00,Pyunik FC,FC Urartu,1,4,2,1-0,2024-25_am1.txt
+16.00,FK Van,FC Ararat-Armenia,2,3,2,2-2,2024-25_am1.txt
+19.00,FC Noah,Gandzasar Kapan,1,0,1,0-0,2024-25_am1.txt
+16.00,FC West Armenia,Pyunik FC,0,1,2,0-1,2024-25_am1.txt
+16.00,Gandzasar Kapan,FC Ararat-Armenia,0,4,2,0-1,2024-25_am1.txt
+16.00,BKMA Yerevan,FK Van,1,1,X,1-0,2024-25_am1.txt
+19.00,FC Noah,FC Ararat,3,0,1,0-0,2024-25_am1.txt
+19.00,Shirak FC,FC Urartu,1,1,X,0-0,2024-25_am1.txt
+16.00,FC Alashkert,Gandzasar Kapan,1,0,1,0-0,2024-25_am1.txt
+16.00,FC Ararat-Armenia,Shirak FC,5,1,1,2-1,2024-25_am1.txt
+19.00,FC Urartu,FC West Armenia,8,0,1,6-0,2024-25_am1.txt
+16.00,FK Van,FC Noah,2,2,X,1-0,2024-25_am1.txt
+19.00,Pyunik FC,BKMA Yerevan,1,2,2,0-0,2024-25_am1.txt
+16.00,FC Ararat,FK Van,2,1,1,1-1,2024-25_am1.txt
+,FC West Armenia,FC Ararat-Armenia,0,3,2,,2024-25_am1.txt
+18.30,FC Noah,Pyunik FC,2,1,1,2-1,2024-25_am1.txt
+18.30,Shirak FC,FC Alashkert,4,0,1,2-0,2024-25_am1.txt
+15.30,BKMA Yerevan,FC Urartu,0,1,2,0-0,2024-25_am1.txt
+16.00,FC Alashkert,FC West Armenia,3,0,1,,2024-25_am1.txt
+16.00,Gandzasar Kapan,Shirak FC,1,0,1,0-0,2024-25_am1.txt
+18.30,Pyunik FC,FC Ararat,5,2,1,2-1,2024-25_am1.txt
+15.00,FC Ararat-Armenia,BKMA Yerevan,4,0,1,2-0,2024-25_am1.txt
+17.00,FC Urartu,FC Noah,3,3,X,3-2,2024-25_am1.txt
+16.00,FC West Armenia,Gandzasar Kapan,0,3,2,,2024-25_am1.txt
+19.00,BKMA Yerevan,FC Alashkert,2,0,1,1-0,2024-25_am1.txt
+16.00,FK Van,Pyunik FC,3,2,1,2-1,2024-25_am1.txt
+16.00,FC Ararat,FC Urartu,2,4,2,1-1,2024-25_am1.txt
+19.00,FC Noah,FC Ararat-Armenia,2,0,1,1-0,2024-25_am1.txt
+16.00,Gandzasar Kapan,BKMA Yerevan,2,2,X,0-0,2024-25_am1.txt
+16.00,FC Alashkert,FC Noah,1,0,1,1-0,2024-25_am1.txt
+18.30,Shirak FC,FC West Armenia,3,0,1,,2024-25_am1.txt
+19.00,FC Ararat-Armenia,FC Ararat,6,0,1,2-0,2024-25_am1.txt
+,FC Urartu,FK Van,0,2,2,0-1,2024-25_am1.txt

@@ -1,0 +1,421 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Bermuda,Panama,1,4,2,Hamilton,Bermuda,2019_concacaf_nations_league.txt
+Grenada,Saint Kitts and Nevis,2,1,1,St. George's,Grenada,2019_concacaf_nations_league.txt
+French Guiana,Belize,3,0,1,Cayenne,French Guiana,2019_concacaf_nations_league.txt
+Dominica,Suriname,1,2,2,Roseau,Dominica,2019_concacaf_nations_league.txt
+United States Virgin Islands,Cayman Islands,0,2,2,Saint Croix,United States Virgin Islands,2019_concacaf_nations_league.txt
+Barbados,Saint Martin,4,0,1,Bridgetown,Barbados,2019_concacaf_nations_league.txt
+Guatemala,Anguilla,10,0,1,Guatemala City,Guatemala,2019_concacaf_nations_league.txt
+Martinique,Trinidad and Tobago,1,1,X,Fort-de-France,Martinique,2019_concacaf_nations_league.txt
+Aruba,Guyana,0,1,2,Willemstad,Curaçao,2019_concacaf_nations_league.txt
+Jamaica,Antigua and Barbuda,6,0,1,Montego Bay,Jamaica,2019_concacaf_nations_league.txt
+Nicaragua,Saint Vincent and the Grenadines,1,1,X,Managua,Nicaragua,2019_concacaf_nations_league.txt
+Bonaire,British Virgin Islands,4,2,1,Willemstad,Curaçao,2019_concacaf_nations_league.txt
+Canada,Cuba,6,0,1,Toronto,Canada,2019_concacaf_nations_league.txt
+Curaçao,Haiti,1,0,1,Willemstad,Curaçao,2019_concacaf_nations_league.txt
+Montserrat,Dominican Republic,2,1,1,Lookout,Montserrat,2019_concacaf_nations_league.txt
+El Salvador,Saint Lucia,3,0,1,San Salvador,El Salvador,2019_concacaf_nations_league.txt
+Guadeloupe,Sint Maarten,5,1,1,Les Abymes,Guadeloupe,2019_concacaf_nations_league.txt
+Panama,Bermuda,0,2,2,Panama City,Panama,2019_concacaf_nations_league.txt
+Belize,Grenada,1,2,2,Belmopan,Belize,2019_concacaf_nations_league.txt
+Saint Kitts and Nevis,French Guiana,2,2,X,Basseterre,Saint Kitts and Nevis,2019_concacaf_nations_league.txt
+Saint Vincent and the Grenadines,Dominica,1,0,1,Arnos Vale,Saint Vincent and the Grenadines,2019_concacaf_nations_league.txt
+Suriname,Nicaragua,6,0,1,Paramaribo,Suriname,2019_concacaf_nations_league.txt
+Saint Martin,United States Virgin Islands,1,2,2,The Valley,Anguilla,2019_concacaf_nations_league.txt
+Cayman Islands,Barbados,3,2,1,George Town,Cayman Islands,2019_concacaf_nations_league.txt
+Trinidad and Tobago,Martinique,2,2,X,Couva,Trinidad and Tobago,2019_concacaf_nations_league.txt
+Antigua and Barbuda,Aruba,2,1,1,North Sound,Antigua and Barbuda,2019_concacaf_nations_league.txt
+Guyana,Jamaica,0,4,2,Georgetown,Guyana,2019_concacaf_nations_league.txt
+Bahamas,Bonaire,2,1,1,Nassau,Bahamas,2019_concacaf_nations_league.txt
+Cuba,Canada,0,1,2,George Town,Cayman Islands,2019_concacaf_nations_league.txt
+Haiti,Curaçao,1,1,X,Port-au-Prince,Haiti,2019_concacaf_nations_league.txt
+Montserrat,Saint Lucia,1,1,X,Lookout,Montserrat,2019_concacaf_nations_league.txt
+Dominican Republic,El Salvador,1,0,1,Santiago de los Caballeros,Dominican Republic,2019_concacaf_nations_league.txt
+Puerto Rico,Guatemala,0,5,2,Mayagüez,Puerto Rico,2019_concacaf_nations_league.txt
+Turks and Caicos Islands,Guadeloupe,0,3,2,Providenciales,Turks and Caicos Islands,2019_concacaf_nations_league.txt
+Trinidad and Tobago,Honduras,0,2,2,Port of Spain,Trinidad and Tobago,2019_concacaf_nations_league.txt
+Haiti,Costa Rica,1,1,X,Port-au-Prince,Haiti,2019_concacaf_nations_league.txt
+Belize,Saint Kitts and Nevis,0,4,2,Belmopan,Belize,2019_concacaf_nations_league.txt
+French Guiana,Grenada,0,0,X,Cayenne,French Guiana,2019_concacaf_nations_league.txt
+British Virgin Islands,Bahamas,0,4,2,Basseterre,Saint Kitts and Nevis,2019_concacaf_nations_league.txt
+Sint Maarten,Turks and Caicos Islands,2,5,2,Willemstad,Curaçao,2019_concacaf_nations_league.txt
+United States,Cuba,7,0,1,D.C.,United States,2019_concacaf_nations_league.txt
+Bermuda,Mexico,1,5,2,Hamilton,Bermuda,2019_concacaf_nations_league.txt
+Antigua and Barbuda,Guyana,2,1,1,North Sound,Antigua and Barbuda,2019_concacaf_nations_league.txt
+Saint Vincent and the Grenadines,Suriname,2,2,X,Arnos Vale,Saint Vincent and the Grenadines,2019_concacaf_nations_league.txt
+Nicaragua,Dominica,3,1,1,Managua,Nicaragua,2019_concacaf_nations_league.txt
+Dominican Republic,Saint Lucia,3,0,1,Santo Domingo,Dominican Republic,2019_concacaf_nations_league.txt
+Montserrat,El Salvador,0,2,2,Lookout,Montserrat,2019_concacaf_nations_league.txt
+Jamaica,Aruba,2,0,1,Kingston,Jamaica,2019_concacaf_nations_league.txt
+Barbados,United States Virgin Islands,1,0,1,Bridgetown,Barbados,2019_concacaf_nations_league.txt
+Saint Martin,Cayman Islands,3,0,1,The Valley,Anguilla,2019_concacaf_nations_league.txt
+Anguilla,Guatemala,0,5,2,The Valley,Anguilla,2019_concacaf_nations_league.txt
+Honduras,Martinique,1,0,1,San Pedro Sula,Honduras,2019_concacaf_nations_league.txt
+Costa Rica,Curaçao,0,0,X,San José,Costa Rica,2019_concacaf_nations_league.txt
+Saint Kitts and Nevis,Belize,0,1,2,Saint Kitts and Nevis,Saint Kitts and Nevis,2019_concacaf_nations_league.txt
+Grenada,French Guiana,1,0,1,Grenada,Grenada,2019_concacaf_nations_league.txt
+British Virgin Islands,Bonaire,3,4,2,Basseterre,Saint Kitts and Nevis,2019_concacaf_nations_league.txt
+Guyana,Antigua and Barbuda,5,1,1,Leonora,Guyana,2019_concacaf_nations_league.txt
+Dominica,Nicaragua,0,4,2,Roseau,Dominica,2019_concacaf_nations_league.txt
+Suriname,Saint Vincent and the Grenadines,0,1,2,Paramaribo,Suriname,2019_concacaf_nations_league.txt
+Sint Maarten,Guadeloupe,1,2,2,Willemstad,Curaçao,2019_concacaf_nations_league.txt
+Canada,United States,2,0,1,Toronto,Canada,2019_concacaf_nations_league.txt
+Mexico,Panama,3,1,1,Mexico City,Mexico,2019_concacaf_nations_league.txt
+Dominican Republic,Montserrat,0,0,X,Santo Domingo,Dominican Republic,2019_concacaf_nations_league.txt
+Saint Lucia,El Salvador,0,2,2,Gros Islet,Saint Lucia,2019_concacaf_nations_league.txt
+Aruba,Jamaica,0,6,2,Willemstad,Curaçao,2019_concacaf_nations_league.txt
+Cayman Islands,Saint Martin,1,0,1,George Town,Cayman Islands,2019_concacaf_nations_league.txt
+United States Virgin Islands,Barbados,0,4,2,Saint Croix,United States Virgin Islands,2019_concacaf_nations_league.txt
+Anguilla,Puerto Rico,2,3,2,The Valley,Anguilla,2019_concacaf_nations_league.txt
+Martinique,Honduras,1,1,X,Fort-de-France,Martinique,2019_concacaf_nations_league.txt
+Curaçao,Costa Rica,1,2,2,Willemstad,Curaçao,2019_concacaf_nations_league.txt
+Saint Kitts and Nevis,Grenada,0,0,X,Basseterre,Saint Kitts and Nevis,2019_concacaf_nations_league.txt
+Belize,French Guiana,2,0,1,Belmopan,Belize,2019_concacaf_nations_league.txt
+Bahamas,British Virgin Islands,3,0,1,Nassau,Bahamas,2019_concacaf_nations_league.txt
+Turks and Caicos Islands,Sint Maarten,3,2,1,Providenciales,Turks and Caicos Islands,2019_concacaf_nations_league.txt
+United States,Canada,4,1,1,Orlando,United States,2019_concacaf_nations_league.txt
+Panama,Mexico,0,3,2,Panama City,Panama,2019_concacaf_nations_league.txt
+Antigua and Barbuda,Jamaica,0,2,2,North Sound,Antigua and Barbuda,2019_concacaf_nations_league.txt
+Guyana,Aruba,4,2,1,Leonora,Guyana,2019_concacaf_nations_league.txt
+Saint Vincent and the Grenadines,Nicaragua,1,0,1,Arnos Vale,Saint Vincent and the Grenadines,2019_concacaf_nations_league.txt
+Suriname,Dominica,4,0,1,Paramaribo,Suriname,2019_concacaf_nations_league.txt
+Saint Lucia,Dominican Republic,1,0,1,Gros Islet,Saint Lucia,2019_concacaf_nations_league.txt
+El Salvador,Montserrat,1,0,1,San Salvador,El Salvador,2019_concacaf_nations_league.txt
+Saint Martin,Barbados,1,0,1,The Valley,Anguilla,2019_concacaf_nations_league.txt
+Cayman Islands,United States Virgin Islands,1,0,1,George Town,Cayman Islands,2019_concacaf_nations_league.txt
+Guatemala,Puerto Rico,5,0,1,Guatemala City,Guatemala,2019_concacaf_nations_league.txt
+Honduras,Trinidad and Tobago,4,0,1,San Pedro Sula,Honduras,2019_concacaf_nations_league.txt
+Costa Rica,Haiti,1,1,X,San José,Costa Rica,2019_concacaf_nations_league.txt
+Grenada,Belize,3,2,1,St. George's,Grenada,2019_concacaf_nations_league.txt
+French Guiana,Saint Kitts and Nevis,3,1,1,Cayenne,French Guiana,2019_concacaf_nations_league.txt
+Bonaire,Bahamas,1,1,X,Willemstad,Curaçao,2019_concacaf_nations_league.txt
+Guadeloupe,Turks and Caicos Islands,10,0,1,Les Abymes,Guadeloupe,2019_concacaf_nations_league.txt
+Jamaica,Guyana,1,1,X,Montego Bay,Jamaica,2019_concacaf_nations_league.txt
+Aruba,Antigua and Barbuda,2,3,2,Willemstad,Curaçao,2019_concacaf_nations_league.txt
+Nicaragua,Suriname,1,2,2,Managua,Nicaragua,2019_concacaf_nations_league.txt
+Dominica,Saint Vincent and the Grenadines,1,0,1,Roseau,Dominica,2019_concacaf_nations_league.txt
+Cuba,United States,0,4,2,George Town,Cayman Islands,2019_concacaf_nations_league.txt
+Mexico,Bermuda,2,1,1,Mexico City,Mexico,2019_concacaf_nations_league.txt
+El Salvador,Dominican Republic,2,0,1,San Salvador,El Salvador,2019_concacaf_nations_league.txt
+Saint Lucia,Montserrat,0,1,2,Gros Islet,Saint Lucia,2019_concacaf_nations_league.txt
+Barbados,Cayman Islands,3,0,1,Bridgetown,Barbados,2019_concacaf_nations_league.txt
+United States Virgin Islands,Saint Martin,1,2,2,Upper Bethlehem,United States Virgin Islands,2019_concacaf_nations_league.txt
+Puerto Rico,Anguilla,3,0,1,Bayamón,Puerto Rico,2019_concacaf_nations_league.txt
+Mexico,Costa Rica,0,0,X,Denver,United States   [Mexico wins on penalties],2021_concacaf_nations_league.txt
+United States,Honduras,1,0,1,Denver,United States,2021_concacaf_nations_league.txt
+Honduras,Costa Rica,2,2,X,Denver,United States   [Honduras wins on penalties],2021_concacaf_nations_league.txt
+United States,Mexico,3,2,1,Denver,United States,2021_concacaf_nations_league.txt
+Panama,Costa Rica,2,0,1,Panama City,Panama,2022_concacaf_nations_league.txt
+Barbados,Antigua and Barbuda,0,1,2,Gros Islet,Saint Lucia,2022_concacaf_nations_league.txt
+Guadeloupe,Cuba,2,1,1,Les Abymes,Guadeloupe,2022_concacaf_nations_league.txt
+Belize,Dominican Republic,0,2,2,Belmopan,Belize,2022_concacaf_nations_league.txt
+French Guiana,Guatemala,2,0,1,Cayenne,French Guiana,2022_concacaf_nations_league.txt
+Anguilla,Dominica,0,0,X,The Valley,Anguilla,2022_concacaf_nations_league.txt
+Curaçao,Honduras,0,1,2,Willemstad,Curaçao,2022_concacaf_nations_league.txt
+Bahamas,Saint Vincent and the Grenadines,1,0,1,Nassau,Bahamas,2022_concacaf_nations_league.txt
+Nicaragua,Trinidad and Tobago,2,1,1,Managua,Nicaragua,2022_concacaf_nations_league.txt
+Sint Maarten,United States Virgin Islands,1,1,X,Willemstad,Curaçao,2022_concacaf_nations_league.txt
+Turks and Caicos Islands,Bonaire,1,4,2,Providenciales,Turks and Caicos Islands,2022_concacaf_nations_league.txt
+Saint Martin,Aruba,0,0,X,The Valley,Anguilla,2022_concacaf_nations_league.txt
+British Virgin Islands,Cayman Islands,1,1,X,Tortola,British Virgin Islands,2022_concacaf_nations_league.txt
+Suriname,Jamaica,1,1,X,Paramaribo,Suriname,2022_concacaf_nations_league.txt
+El Salvador,Grenada,3,1,1,San Salvador,El Salvador,2022_concacaf_nations_league.txt
+Bermuda,Haiti,0,0,X,Devonshire Parish,Bermuda,2022_concacaf_nations_league.txt
+Montserrat,Guyana,1,2,2,Santo Domingo,Dominican Republic,2022_concacaf_nations_league.txt
+Costa Rica,Martinique,2,0,1,San José,Costa Rica,2022_concacaf_nations_league.txt
+Cuba,Barbados,3,0,1,Santiago,Cuba,2022_concacaf_nations_league.txt
+Antigua and Barbuda,Guadeloupe,1,0,1,Basseterre,Saint Kitts and Nevis,2022_concacaf_nations_league.txt
+Guatemala,Belize,2,0,1,Guatemala City,Guatemala,2022_concacaf_nations_league.txt
+Dominican Republic,French Guiana,2,3,2,Santo Domingo,Dominican Republic,2022_concacaf_nations_league.txt
+Dominica,Anguilla,1,1,X,Basseterre,Saint Kitts and Nevis,2022_concacaf_nations_league.txt
+Honduras,Curaçao,1,2,2,San Pedro Sula,Honduras,2022_concacaf_nations_league.txt
+Saint Vincent and the Grenadines,Nicaragua,2,2,X,Kingstown,Saint Vincent and the Grenadines,2022_concacaf_nations_league.txt
+Trinidad and Tobago,Bahamas,1,0,1,Port of Spain,Trinidad and Tobago,2022_concacaf_nations_league.txt
+Bonaire,Sint Maarten,2,2,X,Willemstad,Curaçao,2022_concacaf_nations_league.txt
+United States Virgin Islands,Turks and Caicos Islands,3,2,1,Saint Croix,United States Virgin Islands,2022_concacaf_nations_league.txt
+Aruba,Saint Martin,3,0,1,Willemstad,Curaçao,2022_concacaf_nations_league.txt
+Cayman Islands,British Virgin Islands,1,1,X,George Town,Cayman Islands,2022_concacaf_nations_league.txt
+Jamaica,Suriname,3,1,1,Kingston,Jamaica,2022_concacaf_nations_league.txt
+Grenada,El Salvador,2,2,X,St. George's,Grenada,2022_concacaf_nations_league.txt
+Guyana,Bermuda,2,1,1,Leonora,Guyana,2022_concacaf_nations_league.txt
+Haiti,Montserrat,3,2,1,Santo Domingo,Dominican Republic,2022_concacaf_nations_league.txt
+Panama,Martinique,5,0,1,Panama City,Panama,2022_concacaf_nations_league.txt
+Canada,Curaçao,4,0,1,Vancouver,Canada,2022_concacaf_nations_league.txt
+Barbados,Guadeloupe,0,1,2,Gros Islet,Saint Lucia,2022_concacaf_nations_league.txt
+Antigua and Barbuda,Cuba,0,2,2,Basseterre,Saint Kitts and Nevis,2022_concacaf_nations_league.txt
+Belize,French Guiana,1,1,X,Belmopan,Belize,2022_concacaf_nations_league.txt
+Aruba,Saint Kitts and Nevis,2,3,2,Willemstad,Curaçao,2022_concacaf_nations_league.txt
+Dominica,Saint Lucia,0,1,2,Roseau,Dominica,2022_concacaf_nations_league.txt
+Cayman Islands,Puerto Rico,0,3,2,George Town,Cayman Islands,2022_concacaf_nations_league.txt
+United States,Grenada,5,0,1,Austin,United States,2022_concacaf_nations_league.txt
+Saint Vincent and the Grenadines,Trinidad and Tobago,0,2,2,Kingstown,Saint Vincent and the Grenadines,2022_concacaf_nations_league.txt
+Bahamas,Nicaragua,0,2,2,Nassau,Bahamas,2022_concacaf_nations_league.txt
+Dominican Republic,Guatemala,1,1,X,Santo Domingo,Dominican Republic,2022_concacaf_nations_league.txt
+Mexico,Suriname,3,0,1,Torreón,Mexico,2022_concacaf_nations_league.txt
+Guyana,Haiti,2,6,2,Leonora,Guyana,2022_concacaf_nations_league.txt
+Montserrat,Bermuda,3,2,1,Santo Domingo,Dominican Republic,2022_concacaf_nations_league.txt
+United States Virgin Islands,Bonaire,0,2,2,Saint Croix,United States Virgin Islands,2022_concacaf_nations_league.txt
+Sint Maarten,Turks and Caicos Islands,8,2,1,Willemstad,Curaçao,2022_concacaf_nations_league.txt
+Martinique,Panama,0,0,X,Fort-de-France,Martinique,2022_concacaf_nations_league.txt
+Cuba,Antigua and Barbuda,3,1,1,Santiago,Cuba,2022_concacaf_nations_league.txt
+Guadeloupe,Barbados,2,1,1,Les Abymes,Guadeloupe,2022_concacaf_nations_league.txt
+Saint Kitts and Nevis,Saint Martin,1,1,X,Basseterre,Saint Kitts and Nevis,2022_concacaf_nations_league.txt
+Saint Lucia,Anguilla,2,0,1,Gros Islet,Saint Lucia,2022_concacaf_nations_league.txt
+Puerto Rico,British Virgin Islands,6,0,1,Mayagüez,Puerto Rico,2022_concacaf_nations_league.txt
+Honduras,Canada,2,1,1,San Pedro Sula,Honduras,2022_concacaf_nations_league.txt
+Nicaragua,Bahamas,4,0,1,Managua,Nicaragua,2022_concacaf_nations_league.txt
+Trinidad and Tobago,Saint Vincent and the Grenadines,4,1,1,Port of Spain,Trinidad and Tobago,2022_concacaf_nations_league.txt
+Guatemala,Dominican Republic,2,0,1,Guatemala City,Guatemala,2022_concacaf_nations_league.txt
+Jamaica,Mexico,1,1,X,Kingston,Jamaica,2022_concacaf_nations_league.txt
+El Salvador,United States,1,1,X,San Salvador,El Salvador,2022_concacaf_nations_league.txt
+Haiti,Guyana,6,0,1,Santo Domingo,Dominican Republic,2022_concacaf_nations_league.txt
+French Guiana,Belize,1,0,1,Cayenne,French Guiana,2022_concacaf_nations_league.txt
+Bonaire,United States Virgin Islands,2,0,1,Willemstad,Curaçao,2022_concacaf_nations_league.txt
+Turks and Caicos Islands,Sint Maarten,2,0,1,Providenciales,Turks and Caicos Islands,2022_concacaf_nations_league.txt
+Suriname,Mexico,0,2,2,Paramaribo,Suriname,2023_concacaf_nations_league.txt
+Barbados,Cuba,0,1,2,Bridgetown,Barbados,2023_concacaf_nations_league.txt
+Guadeloupe,Antigua and Barbuda,0,1,2,Les Abymes,Guadeloupe,2023_concacaf_nations_league.txt
+French Guiana,Dominican Republic,1,1,X,Cayenne,French Guiana,2023_concacaf_nations_league.txt
+Saint Martin,Saint Kitts and Nevis,1,3,2,The Valley,Anguilla,2023_concacaf_nations_league.txt
+British Virgin Islands,Puerto Rico,1,3,2,Road Town,British Virgin Islands,2023_concacaf_nations_league.txt
+Grenada,United States,1,7,2,St. George's,Grenada,2023_concacaf_nations_league.txt
+Bahamas,Trinidad and Tobago,0,3,2,Nassau,Bahamas,2023_concacaf_nations_league.txt
+Nicaragua,Saint Vincent and the Grenadines,4,1,1,Managua,Nicaragua,2023_concacaf_nations_league.txt
+Belize,Guatemala,1,2,2,Belmopan,Belize,2023_concacaf_nations_league.txt
+Anguilla,Saint Lucia,1,2,2,The Valley,Anguilla,2023_concacaf_nations_league.txt
+Martinique,Costa Rica,1,2,2,Fort-de-France,Martinique,2023_concacaf_nations_league.txt
+Curaçao,Canada,0,2,2,Willemstad,Curaçao,2023_concacaf_nations_league.txt
+Bermuda,Guyana,0,2,2,Devonshire Parish,Bermuda,2023_concacaf_nations_league.txt
+Montserrat,Haiti,0,4,2,Lookout,Montserrat,2023_concacaf_nations_league.txt
+Sint Maarten,Bonaire,6,1,1,Saint Croix,United States Virgin Islands,2023_concacaf_nations_league.txt
+Turks and Caicos Islands,United States Virgin Islands,1,0,1,Providenciales,Turks and Caicos Islands,2023_concacaf_nations_league.txt
+Mexico,Jamaica,2,2,X,Mexico City,Mexico,2023_concacaf_nations_league.txt
+Antigua and Barbuda,Barbados,1,2,2,North Sound,Antigua and Barbuda,2023_concacaf_nations_league.txt
+Cuba,Guadeloupe,1,0,1,Santiago,Cuba,2023_concacaf_nations_league.txt
+Puerto Rico,Cayman Islands,5,1,1,Bayamón,Puerto Rico,2023_concacaf_nations_league.txt
+United States,El Salvador,1,0,1,Orlando,United States,2023_concacaf_nations_league.txt
+Saint Vincent and the Grenadines,Bahamas,1,1,X,Kingstown,Saint Vincent and the Grenadines,2023_concacaf_nations_league.txt
+Trinidad and Tobago,Nicaragua,1,1,X,Bacolet,Trinidad and Tobago,2023_concacaf_nations_league.txt
+Dominican Republic,Belize,2,0,1,Santo Domingo,Dominican Republic,2023_concacaf_nations_league.txt
+Guatemala,French Guiana,4,0,1,Guatemala City,Guatemala,2023_concacaf_nations_league.txt
+Saint Kitts and Nevis,Aruba,2,0,1,Basseterre,Saint Kitts and Nevis,2023_concacaf_nations_league.txt
+Saint Lucia,Dominica,3,1,1,Gros Islet,Saint Lucia,2023_concacaf_nations_league.txt
+Costa Rica,Panama,0,1,2,San José,Costa Rica,2023_concacaf_nations_league.txt
+Canada,Honduras,4,1,1,Toronto,Canada,2023_concacaf_nations_league.txt
+Haiti,Bermuda,3,1,1,San Cristóbal,Dominican Republic,2023_concacaf_nations_league.txt
+Guyana,Montserrat,0,0,X,Bridgetown,Barbados,2023_concacaf_nations_league.txt
+Bonaire,Turks and Caicos Islands,1,2,2,Rincon,Bonaire,2023_concacaf_nations_league.txt
+United States Virgin Islands,Sint Maarten,1,2,2,Saint Croix,United States Virgin Islands,2023_concacaf_nations_league.txt
+Panama,Canada,0,2,2,Las Vegas,United States,2023_concacaf_nations_league.txt
+United States,Mexico,3,0,1,Las Vegas,United States,2023_concacaf_nations_league.txt
+Panama,Mexico,0,1,2,Las Vegas,United States,2023_concacaf_nations_league.txt
+United States,Canada,2,0,1,Las Vegas,United States,2023_concacaf_nations_league.txt
+Trinidad and Tobago,Curaçao,1,0,1,Port of Spain,Trinidad and Tobago,2023_concacaf_nations_league.txt
+Panama,Martinique,3,0,1,Panama City,Panama,2023_concacaf_nations_league.txt
+Guatemala,El Salvador,2,0,1,Guatemala City,Guatemala,2023_concacaf_nations_league.txt
+Sint Maarten,Saint Lucia,1,5,2,Willemstad,Curaçao,2023_concacaf_nations_league.txt
+Saint Kitts and Nevis,Guadeloupe,1,2,2,Basseterre,Saint Kitts and Nevis,2023_concacaf_nations_league.txt
+Anguilla,Saint Martin,0,6,2,The Valley,Anguilla,2023_concacaf_nations_league.txt
+United States Virgin Islands,Cayman Islands,2,2,X,Saint Croix,United States Virgin Islands,2023_concacaf_nations_league.txt
+Haiti,Cuba,0,0,X,Santo Domingo,Dominican Republic,2023_concacaf_nations_league.txt
+Grenada,Suriname,1,1,X,St. George's,Grenada,2023_concacaf_nations_league.txt
+Jamaica,Honduras,1,0,1,Kingston,Jamaica,2023_concacaf_nations_league.txt
+Barbados,Montserrat,2,3,2,Bridgetown,Barbados,2023_concacaf_nations_league.txt
+Dominican Republic,Nicaragua,0,2,2,Santo Domingo,Dominican Republic,2023_concacaf_nations_league.txt
+Bermuda,French Guiana,0,0,X,Devonshire Parish,Bermuda,2023_concacaf_nations_league.txt
+Belize,Saint Vincent and the Grenadines,1,2,2,Belmopan,Belize,2023_concacaf_nations_league.txt
+Antigua and Barbuda,Guyana,1,5,2,North Sound,Antigua and Barbuda,2023_concacaf_nations_league.txt
+Bahamas,Puerto Rico,1,6,2,Nassau,Bahamas,2023_concacaf_nations_league.txt
+British Virgin Islands,Turks and Caicos Islands,3,1,1,Road Town,British Virgin Islands,2023_concacaf_nations_league.txt
+Guatemala,Panama,1,1,X,Guatemala City,Guatemala,2023_concacaf_nations_league.txt
+El Salvador,Trinidad and Tobago,2,3,2,San Salvador,El Salvador,2023_concacaf_nations_league.txt
+Martinique,Curaçao,1,0,1,Fort-de-France,Martinique,2023_concacaf_nations_league.txt
+Guadeloupe,Sint Maarten,4,0,1,Sainte-Anne,Guadeloupe,2023_concacaf_nations_league.txt
+Saint Lucia,Saint Kitts and Nevis,2,0,1,Gros Islet,Saint Lucia,2023_concacaf_nations_league.txt
+Dominican Republic,Montserrat,3,0,1,Santo Domingo,Dominican Republic,2023_concacaf_nations_league.txt
+Nicaragua,Barbados,5,1,1,Managua,Nicaragua,2023_concacaf_nations_league.txt
+Saint Martin,Bonaire,2,1,1,Basseterre,Saint Kitts and Nevis,2023_concacaf_nations_league.txt
+Cayman Islands,Aruba,1,2,2,George Town,Cayman Islands,2023_concacaf_nations_league.txt
+Cuba,Suriname,1,0,1,Santiago,Cuba,2023_concacaf_nations_league.txt
+Jamaica,Haiti,2,2,X,Kingston,Jamaica,2023_concacaf_nations_league.txt
+Honduras,Grenada,4,0,1,Tegucigalpa,Honduras,2023_concacaf_nations_league.txt
+Saint Vincent and the Grenadines,Bermuda,4,3,1,Kingstown,Saint Vincent and the Grenadines,2023_concacaf_nations_league.txt
+French Guiana,Belize,0,2,2,Cayenne,French Guiana,2023_concacaf_nations_league.txt
+Guyana,Bahamas,3,2,1,Leonora,Guyana,2023_concacaf_nations_league.txt
+Puerto Rico,Antigua and Barbuda,5,0,1,Nassau,Bahamas,2023_concacaf_nations_league.txt
+Turks and Caicos Islands,Dominica,0,3,2,Providenciales,Turks and Caicos Islands,2023_concacaf_nations_league.txt
+Suriname,Haiti,1,1,X,Paramaribo,Suriname,2023_concacaf_nations_league.txt
+Grenada,Jamaica,1,4,2,St. George's,Grenada,2023_concacaf_nations_league.txt
+Cuba,Honduras,0,0,X,Santo Domingo,Dominican Republic,2023_concacaf_nations_league.txt
+Sint Maarten,Saint Kitts and Nevis,2,3,2,The Valley,Anguilla,2023_concacaf_nations_league.txt
+Saint Lucia,Guadeloupe,2,1,1,Gros Islet,Saint Lucia,2023_concacaf_nations_league.txt
+Bonaire,Anguilla,2,0,1,Rincon,Bonaire,2023_concacaf_nations_league.txt
+Dominica,British Virgin Islands,1,1,X,Gros Islet,Saint Lucia,2023_concacaf_nations_league.txt
+Curaçao,Panama,1,2,2,Willemstad,Curaçao,2023_concacaf_nations_league.txt
+Martinique,El Salvador,1,0,1,Fort-de-France,Martinique,2023_concacaf_nations_league.txt
+Trinidad and Tobago,Guatemala,3,2,1,Port of Spain,Trinidad and Tobago,2023_concacaf_nations_league.txt
+Montserrat,Nicaragua,0,3,2,Bridgetown,Barbados,2023_concacaf_nations_league.txt
+Barbados,Dominican Republic,0,5,2,Bridgetown,Barbados,2023_concacaf_nations_league.txt
+Saint Vincent and the Grenadines,French Guiana,1,4,2,Kingstown,Saint Vincent and the Grenadines,2023_concacaf_nations_league.txt
+Belize,Bermuda,0,1,2,Belmopan,Belize,2023_concacaf_nations_league.txt
+Puerto Rico,Guyana,1,3,2,Añasco,Puerto Rico,2023_concacaf_nations_league.txt
+Bahamas,Antigua and Barbuda,1,4,2,Nassau,Bahamas,2023_concacaf_nations_league.txt
+Aruba,United States Virgin Islands,3,1,1,Oranjestad,Aruba,2023_concacaf_nations_league.txt
+Honduras,Cuba,4,0,1,Tegucigalpa,Honduras,2023_concacaf_nations_league.txt
+Haiti,Jamaica,2,3,2,Port of Spain,Trinidad and Tobago,2023_concacaf_nations_league.txt
+Suriname,Grenada,4,0,1,Paramaribo,Suriname,2023_concacaf_nations_league.txt
+Guadeloupe,Saint Lucia,2,0,1,Sainte-Anne,Guadeloupe,2023_concacaf_nations_league.txt
+Saint Kitts and Nevis,Sint Maarten,0,1,2,Basseterre,Saint Kitts and Nevis,2023_concacaf_nations_league.txt
+Dominican Republic,Barbados,5,2,1,Santiago de los Caballeros,Dominican Republic,2023_concacaf_nations_league.txt
+Nicaragua,Montserrat,3,0,1,Managua,Nicaragua,2023_concacaf_nations_league.txt
+French Guiana,Saint Vincent and the Grenadines,3,2,1,Fort-de-France,Martinique,2023_concacaf_nations_league.txt
+Saint Martin,Anguilla,8,0,1,Basseterre,Saint Kitts and Nevis,2023_concacaf_nations_league.txt
+Turks and Caicos Islands,British Virgin Islands,2,2,X,Providenciales,Turks and Caicos Islands,2023_concacaf_nations_league.txt
+El Salvador,Martinique,0,0,X,San Salvador,El Salvador,2023_concacaf_nations_league.txt
+Panama,Guatemala,3,0,1,Panama City,Panama,2023_concacaf_nations_league.txt
+Curaçao,Trinidad and Tobago,5,3,1,Willemstad,Curaçao,2023_concacaf_nations_league.txt
+Bermuda,Belize,1,1,X,Devonshire Parish,Bermuda,2023_concacaf_nations_league.txt
+Antigua and Barbuda,Bahamas,2,2,X,Piggotts,Antigua and Barbuda,2023_concacaf_nations_league.txt
+Guyana,Puerto Rico,3,1,1,Basseterre,Saint Kitts and Nevis,2023_concacaf_nations_league.txt
+Cayman Islands,United States Virgin Islands,2,1,1,George Town,Cayman Islands,2023_concacaf_nations_league.txt
+Sint Maarten,Guadeloupe,0,2,2,Bridgetown,Barbados,2023_concacaf_nations_league.txt
+Saint Kitts and Nevis,Saint Lucia,0,0,X,Basseterre,Saint Kitts and Nevis,2023_concacaf_nations_league.txt
+United States Virgin Islands,Aruba,1,4,2,Saint Croix,United States Virgin Islands,2023_concacaf_nations_league.txt
+British Virgin Islands,Dominica,1,2,2,Road Town,British Virgin Islands,2023_concacaf_nations_league.txt
+Costa Rica,Panama,0,3,2,San José,Costa Rica,2023_concacaf_nations_league.txt
+United States,Trinidad and Tobago,3,0,1,Austin,United States,2023_concacaf_nations_league.txt
+Montserrat,Dominican Republic,2,1,1,Lookout,Montserrat,2023_concacaf_nations_league.txt
+Barbados,Nicaragua,0,4,2,Bridgetown,Barbados,2023_concacaf_nations_league.txt
+Bermuda,Saint Vincent and the Grenadines,3,1,1,Devonshire Parish,Bermuda,2023_concacaf_nations_league.txt
+Belize,French Guiana,1,0,1,Belmopan,Belize,2023_concacaf_nations_league.txt
+Honduras,Mexico,2,0,1,Tegucigalpa,Honduras,2023_concacaf_nations_league.txt
+Antigua and Barbuda,Puerto Rico,2,3,2,Piggotts,Antigua and Barbuda,2023_concacaf_nations_league.txt
+Anguilla,Bonaire,0,3,2,The Valley,Anguilla,2023_concacaf_nations_league.txt
+Jamaica,Canada,1,2,2,Kingston,Jamaica,2023_concacaf_nations_league.txt
+Guadeloupe,Saint Kitts and Nevis,5,0,1,Sainte-Anne,Guadeloupe,2023_concacaf_nations_league.txt
+Saint Lucia,Sint Maarten,1,2,2,Gros Islet,Saint Lucia,2023_concacaf_nations_league.txt
+Montserrat,Barbados,4,2,1,Lookout,Montserrat,2023_concacaf_nations_league.txt
+Aruba,Cayman Islands,5,1,1,Oranjestad,Aruba,2023_concacaf_nations_league.txt
+Dominica,Turks and Caicos Islands,2,0,1,Road Town,British Virgin Islands,2023_concacaf_nations_league.txt
+Panama,Costa Rica,3,1,1,Panama City,Panama,2023_concacaf_nations_league.txt
+Trinidad and Tobago,United States,2,1,1,Port of Spain,Trinidad and Tobago,2023_concacaf_nations_league.txt
+Nicaragua,Dominican Republic,0,0,X,Managua,Nicaragua,2023_concacaf_nations_league.txt
+French Guiana,Bermuda,3,0,1,Fort-de-France,Martinique,2023_concacaf_nations_league.txt
+Saint Vincent and the Grenadines,Belize,3,0,1,Saint George's,Saint Vincent and the Grenadines,2023_concacaf_nations_league.txt
+Guyana,Antigua and Barbuda,6,0,1,Santo Domingo,Dominican Republic,2023_concacaf_nations_league.txt
+Puerto Rico,Bahamas,6,1,1,Bayamón,Puerto Rico,2023_concacaf_nations_league.txt
+Bonaire,Saint Martin,0,4,2,Rincon,Bonaire,2023_concacaf_nations_league.txt
+Canada,Jamaica,2,3,2,Toronto,Canada,2023_concacaf_nations_league.txt
+Mexico,Honduras,2,0,1,Mexico City,Mexico   [Mexico wins on penalties],2023_concacaf_nations_league.txt
+Panama,Mexico,0,3,2,Arlington,United States,2024_concacaf_nations_league.txt
+United States,Jamaica,3,1,1,Arlington,United States,2024_concacaf_nations_league.txt
+Canada,Trinidad and Tobago,2,0,1,Frisco,United States,2024_concacaf_nations_league.txt
+Costa Rica,Honduras,3,1,1,Frisco,United States,2024_concacaf_nations_league.txt
+Jamaica,Panama,1,0,1,Arlington,United States,2024_concacaf_nations_league.txt
+United States,Mexico,2,0,1,Arlington,United States,2024_concacaf_nations_league.txt
+United States Virgin Islands,Bahamas,3,3,X,Saint Croix,United States Virgin Islands,2024_concacaf_nations_league.txt
+Turks and Caicos Islands,Anguilla,0,2,2,Providenciales,Turks and Caicos Islands,2024_concacaf_nations_league.txt
+Cayman Islands,British Virgin Islands,1,0,1,George Town,Cayman Islands,2024_concacaf_nations_league.txt
+Guyana,Suriname,1,3,2,Leonora,Guyana,2024_concacaf_nations_league.txt
+Costa Rica,Guadeloupe,3,0,1,San José,Costa Rica,2024_concacaf_nations_league.txt
+Guatemala,Martinique,3,1,1,Guatemala City,Guatemala,2024_concacaf_nations_league.txt
+Montserrat,El Salvador,1,4,2,Rincon,Bonaire,2024_concacaf_nations_league.txt
+Bonaire,Saint Vincent and the Grenadines,1,1,X,Rincon,Bonaire,2024_concacaf_nations_league.txt
+French Guiana,Nicaragua,0,1,2,Cayenne,French Guiana,2024_concacaf_nations_league.txt
+Jamaica,Cuba,0,0,X,Kingston,Jamaica,2024_concacaf_nations_league.txt
+Honduras,Trinidad and Tobago,4,0,1,Tegucigalpa,Honduras,2024_concacaf_nations_league.txt
+Saint Lucia,Curaçao,2,1,1,Saint George's,Grenada,2024_concacaf_nations_league.txt
+Grenada,Saint Martin,2,0,1,St George's,Grenada,2024_concacaf_nations_league.txt
+Sint Maarten,Aruba,2,0,1,Mayagüez,Puerto Rico,2024_concacaf_nations_league.txt
+Puerto Rico,Haiti,1,4,2,Mayagüez,Puerto Rico,2024_concacaf_nations_league.txt
+Bermuda,Dominican Republic,2,3,2,Piggotts,Antigua and Barbuda,2024_concacaf_nations_league.txt
+Antigua and Barbuda,Dominica,1,2,2,Piggotts,Antigua and Barbuda,2024_concacaf_nations_league.txt
+Bahamas,Barbados,2,3,2,Saint Croix,United States Virgin Islands,2024_concacaf_nations_league.txt
+Turks and Caicos Islands,Belize,0,4,2,Providenciales,Turks and Caicos Islands,2024_concacaf_nations_league.txt
+Cayman Islands,Saint Kitts and Nevis,1,4,2,George Town,Cayman Islands,2024_concacaf_nations_league.txt
+Saint Vincent and the Grenadines,Montserrat,2,0,1,Rincon,Bonaire,2024_concacaf_nations_league.txt
+Bonaire,El Salvador,1,2,2,Rincon,Bonaire,2024_concacaf_nations_league.txt
+Guadeloupe,Suriname,1,0,1,Le Gosier,Guadeloupe,2024_concacaf_nations_league.txt
+Martinique,Guyana,2,2,X,Fort de France,Martinique,2024_concacaf_nations_league.txt
+Guatemala,Costa Rica,0,0,X,Guatemala City,Guatemala,2024_concacaf_nations_league.txt
+Curaçao,Saint Martin,4,0,1,Saint George's,Grenada,2024_concacaf_nations_league.txt
+Grenada,Saint Lucia,1,2,2,Saint George's,Grenada,2024_concacaf_nations_league.txt
+Haiti,Sint Maarten,6,0,1,Mayagüez,Puerto Rico,2024_concacaf_nations_league.txt
+Puerto Rico,Aruba,1,0,1,Mayagüez,Puerto Rico,2024_concacaf_nations_league.txt
+Cuba,Nicaragua,1,1,X,Santiago,Cuba,2024_concacaf_nations_league.txt
+Trinidad and Tobago,French Guiana,0,0,X,Bacolet,Trinidad and Tobago,2024_concacaf_nations_league.txt
+Honduras,Jamaica,1,2,2,Tegucigalpa,Honduras,2024_concacaf_nations_league.txt
+Dominican Republic,Dominica,2,0,1,Piggotts,Antigua and Barbuda,2024_concacaf_nations_league.txt
+Antigua and Barbuda,Bermuda,0,1,2,Piggotts,Antigua and Barbuda,2024_concacaf_nations_league.txt
+United States Virgin Islands,Barbados,0,3,2,Saint Croix,United States Virgin Islands,2024_concacaf_nations_league.txt
+Belize,Anguilla,1,0,1,Providenciales,Turks and Caicos Islands,2024_concacaf_nations_league.txt
+Saint Kitts and Nevis,British Virgin Islands,2,0,1,George Town,Cayman Islands,2024_concacaf_nations_league.txt
+Barbados,United States Virgin Islands,5,0,1,Bridgetown,Barbados,2024_concacaf_nations_league.txt
+Belize,Anguilla,1,0,1,Belmopan,Belize,2024_concacaf_nations_league.txt
+Saint Kitts and Nevis,British Virgin Islands,3,1,1,Basseterre,Saint Kitts and Nevis,2024_concacaf_nations_league.txt
+Cuba,Trinidad and Tobago,2,2,X,Santiago,Cuba,2024_concacaf_nations_league.txt
+French Guiana,Honduras,2,3,2,Cayenne,French Guiana,2024_concacaf_nations_league.txt
+Nicaragua,Jamaica,0,2,2,Managua,Nicaragua,2024_concacaf_nations_league.txt
+Bonaire,Montserrat,0,1,2,Kingstown,Saint Vincent and the Grenadines,2024_concacaf_nations_league.txt
+Saint Vincent and the Grenadines,El Salvador,2,3,2,Kingstown,Saint Vincent and the Grenadines,2024_concacaf_nations_league.txt
+Guadeloupe,Martinique,0,1,2,Le Gosier,Guadeloupe,2024_concacaf_nations_league.txt
+Suriname,Costa Rica,1,1,X,Paramaribo,Suriname,2024_concacaf_nations_league.txt
+Guyana,Guatemala,1,3,2,Leonora,Guyana,2024_concacaf_nations_league.txt
+Grenada,Curaçao,0,0,X,Gros Islet,Saint Lucia,2024_concacaf_nations_league.txt
+Saint Lucia,Saint Martin,2,1,1,Gros Islet,Saint Lucia,2024_concacaf_nations_league.txt
+Sint Maarten,Puerto Rico,3,2,1,Oranjestad,Aruba,2024_concacaf_nations_league.txt
+Aruba,Haiti,1,3,2,Oranjestad,Aruba,2024_concacaf_nations_league.txt
+Antigua and Barbuda,Dominican Republic,0,5,2,Hamilton,Bermuda,2024_concacaf_nations_league.txt
+Bermuda,Dominica,6,1,1,Hamilton,Bermuda,2024_concacaf_nations_league.txt
+Bahamas,United States Virgin Islands,3,1,1,Bridgetown,Barbados,2024_concacaf_nations_league.txt
+Turks and Caicos Islands,Anguilla,2,1,1,Belmopan,Belize,2024_concacaf_nations_league.txt
+Cayman Islands,British Virgin Islands,1,0,1,Basseterre,Saint Kitts and Nevis,2024_concacaf_nations_league.txt
+Montserrat,Bonaire,0,1,2,Kingstown,Saint Vincent and the Grenadines,2024_concacaf_nations_league.txt
+Saint Vincent and the Grenadines,El Salvador,2,1,1,Kingstown,Saint Vincent and the Grenadines,2024_concacaf_nations_league.txt
+Nicaragua,French Guiana,3,2,1,Managua,Nicaragua,2024_concacaf_nations_league.txt
+Jamaica,Honduras,0,0,X,Kingston,Jamaica,2024_concacaf_nations_league.txt
+Trinidad and Tobago,Cuba,3,1,1,Bacolet,Trinidad and Tobago,2024_concacaf_nations_league.txt
+Curaçao,Grenada,1,0,1,Gros Islet,Saint Lucia,2024_concacaf_nations_league.txt
+Saint Lucia,Saint Martin,0,4,2,Gros Islet,Saint Lucia,2024_concacaf_nations_league.txt
+Puerto Rico,Sint Maarten,2,1,1,Oranjestad,Aruba,2024_concacaf_nations_league.txt
+Aruba,Haiti,3,5,2,Oranjestad,Aruba,2024_concacaf_nations_league.txt
+Costa Rica,Guatemala,3,0,1,San José,Costa Rica,2024_concacaf_nations_league.txt
+Guadeloupe,Martinique,0,0,X,Le Gosier,Guadeloupe,2024_concacaf_nations_league.txt
+Suriname,Guyana,5,1,1,Paramaribo,Suriname,2024_concacaf_nations_league.txt
+Dominican Republic,Antigua and Barbuda,5,0,1,Hamilton,Bermuda,2024_concacaf_nations_league.txt
+Bermuda,Dominica,3,2,1,Hamilton,Bermuda,2024_concacaf_nations_league.txt
+Barbados,Bahamas,6,2,1,Bridgetown,Barbados,2024_concacaf_nations_league.txt
+Belize,Turks and Caicos Islands,3,0,1,Belmopan,Belize,2024_concacaf_nations_league.txt
+Saint Kitts and Nevis,Cayman Islands,1,1,X,Basseterre,Saint Kitts and Nevis,2024_concacaf_nations_league.txt
+Montserrat,Saint Vincent and the Grenadines,1,2,2,San Salvador,El Salvador,2024_concacaf_nations_league.txt
+El Salvador,Bonaire,1,0,1,San Salvador,El Salvador,2024_concacaf_nations_league.txt
+Belize,French Guiana,2,1,1,Belmopan,Belize,2024_concacaf_nations_league.txt
+Saint Kitts and Nevis,Cuba,2,1,1,Basseterre,Saint Kitts and Nevis,2024_concacaf_nations_league.txt
+Costa Rica,Panama,0,1,2,San José,Costa Rica,2024_concacaf_nations_league.txt
+Jamaica,United States,0,1,2,Kingston,Jamaica,2024_concacaf_nations_league.txt
+Saint Lucia,Grenada,0,4,2,Willemstad,Curaçao,2024_concacaf_nations_league.txt
+Curaçao,Saint Martin,5,0,1,Willemstad,Curaçao,2024_concacaf_nations_league.txt
+Puerto Rico,Aruba,5,1,1,Mayagüez,Puerto Rico,2024_concacaf_nations_league.txt
+Sint Maarten,Haiti,0,8,2,Mayagüez,Puerto Rico,2024_concacaf_nations_league.txt
+Barbados,Guyana,1,4,2,Bridgetown,Barbados,2024_concacaf_nations_league.txt
+Cayman Islands,Guadeloupe,0,6,2,George Town,Cayman Islands,2024_concacaf_nations_league.txt
+Honduras,Mexico,2,0,1,San Pedro Sula,Honduras,2024_concacaf_nations_league.txt
+Suriname,Canada,0,1,2,Paramaribo,Suriname,2024_concacaf_nations_league.txt
+Bermuda,Antigua and Barbuda,2,1,1,Santiago de los Caballeros,Dominican Republic,2024_concacaf_nations_league.txt
+Dominican Republic,Dominica,6,1,1,Santiago de los Caballeros,Dominican Republic,2024_concacaf_nations_league.txt
+Saint Vincent and the Grenadines,Bonaire,3,1,1,San Salvador,El Salvador,2024_concacaf_nations_league.txt
+El Salvador,Montserrat,1,0,1,San Salvador,El Salvador,2024_concacaf_nations_league.txt
+Grenada,Saint Martin,0,3,2,Gros Islet,Saint Lucia,2024_concacaf_nations_league.txt
+Saint Lucia,Curaçao,1,4,2,Gros Islet,Saint Lucia,2024_concacaf_nations_league.txt
+Aruba,Sint Maarten,0,1,2,Mayagüez,Puerto Rico,2024_concacaf_nations_league.txt
+Puerto Rico,Haiti,0,3,2,Mayagüez,Puerto Rico,2024_concacaf_nations_league.txt
+Cuba,Saint Kitts and Nevis,4,0,1,Santiago,Cuba,2024_concacaf_nations_league.txt
+Panama,Costa Rica,2,2,X,Panama City,Panama,2024_concacaf_nations_league.txt
+United States,Jamaica,4,2,1,Saint Louis,United States,2024_concacaf_nations_league.txt
+Antigua and Barbuda,Dominica,0,0,X,Santiago de los Caballeros,Dominican Republic,2024_concacaf_nations_league.txt
+Dominican Republic,Bermuda,6,1,1,Santiago de los Caballeros,Dominican Republic,2024_concacaf_nations_league.txt
+French Guiana,Belize,2,2,X,Paramaribo,Suriname,2024_concacaf_nations_league.txt
+Guadeloupe,Cayman Islands,1,0,1,Le Gosier,Guadeloupe,2024_concacaf_nations_league.txt
+Guyana,Barbados,5,3,1,Georgetown,Guyana,2024_concacaf_nations_league.txt
+Canada,Suriname,3,0,1,Toronto,Canada,2024_concacaf_nations_league.txt
+Mexico,Honduras,4,0,1,Toluca,Mexico,2024_concacaf_nations_league.txt

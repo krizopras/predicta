@@ -1,0 +1,5 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Gabon,Togo,3,0,1,Ajaccio,France,2010_corsica_cup.txt
+Corsica,Brittany,2,0,1,Ajaccio,France,2010_corsica_cup.txt
+Brittany,Togo,2,1,1,Bastia,France,2010_corsica_cup.txt
+Corsica,Gabon,1,1,X,Bastia,France   [Corsica wins on penalties],2010_corsica_cup.txt

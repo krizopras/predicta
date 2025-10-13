@@ -1,0 +1,11 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Tajikistan,Turkmenistan,1,1,X,Tashkent,Uzbekistan,2023_cafa_nations_cup.txt
+Uzbekistan,Oman,3,0,1,Tashkent,Uzbekistan,2023_cafa_nations_cup.txt
+Iran,Afghanistan,6,1,1,Bishkek,Kyrgyzstan,2023_cafa_nations_cup.txt
+Oman,Tajikistan,1,1,X,Tashkent,Uzbekistan,2023_cafa_nations_cup.txt
+Uzbekistan,Turkmenistan,2,0,1,Tashkent,Uzbekistan,2023_cafa_nations_cup.txt
+Kyrgyzstan,Iran,1,5,2,Bishkek,Kyrgyzstan,2023_cafa_nations_cup.txt
+Turkmenistan,Oman,0,2,2,Tashkent,Uzbekistan,2023_cafa_nations_cup.txt
+Uzbekistan,Tajikistan,5,1,1,Tashkent,Uzbekistan,2023_cafa_nations_cup.txt
+Kyrgyzstan,Oman,0,1,2,Tashkent,Uzbekistan,2023_cafa_nations_cup.txt
+Uzbekistan,Iran,0,1,2,Tashkent,Uzbekistan,2023_cafa_nations_cup.txt

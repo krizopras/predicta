@@ -1,0 +1,11 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+China PR,DR Congo,3,2,1,Shanghai,China PR,1977_beijing_international_friendship_tournament.txt
+Hong Kong,Iran,1,0,1,Beijing,China PR,1977_beijing_international_friendship_tournament.txt
+China PR,Morocco,3,2,1,Beijing,China PR,1977_beijing_international_friendship_tournament.txt
+China PR,Hong Kong,1,2,2,Beijing,China PR,1977_beijing_international_friendship_tournament.txt
+Iran,Morocco,1,1,X,Beijing,China PR   [Iran wins on penalties],1977_beijing_international_friendship_tournament.txt
+Iran,DR Congo,1,3,2,Beijing,China PR,1977_beijing_international_friendship_tournament.txt
+China PR,Congo,1,0,1,Beijing,China PR,1978_beijing_international_friendship_tournament.txt
+China PR,Hong Kong,2,0,1,Beijing,China PR,1982_beijing_international_friendship_tournament.txt
+China PR,Morocco,3,3,X,Beijing,China PR,1982_beijing_international_friendship_tournament.txt
+Hong Kong,Morocco,0,0,X,Beijing,China PR,1982_beijing_international_friendship_tournament.txt

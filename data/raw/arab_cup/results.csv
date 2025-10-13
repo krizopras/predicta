@@ -1,0 +1,145 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Lebanon,Kuwait,6,0,1,Beirut,Lebanon,1963_arab_cup.txt
+Syria,Jordan,4,0,1,Beirut,Lebanon,1963_arab_cup.txt
+Syria,Tunisia,0,1,2,Beirut,Lebanon,1963_arab_cup.txt
+Kuwait,Jordan,4,0,1,Beirut,Lebanon,1963_arab_cup.txt
+Jordan,Tunisia,0,4,2,Beirut,Lebanon,1963_arab_cup.txt
+Lebanon,Syria,2,3,2,Beirut,Lebanon,1963_arab_cup.txt
+Kuwait,Tunisia,1,5,2,Beirut,Lebanon,1963_arab_cup.txt
+Lebanon,Jordan,5,0,1,Beirut,Lebanon,1963_arab_cup.txt
+Kuwait,Syria,0,4,2,Beirut,Lebanon,1963_arab_cup.txt
+Lebanon,Tunisia,0,1,2,Beirut,Lebanon,1963_arab_cup.txt
+Jordan,Lebanon,0,0,X,Kuwait City,Kuwait,1964_arab_cup.txt
+Kuwait,Iraq,0,1,2,Kuwait City,Kuwait,1964_arab_cup.txt
+Libya,Lebanon,2,1,1,Kuwait City,Kuwait,1964_arab_cup.txt
+Kuwait,Jordan,2,0,1,Kuwait City,Kuwait,1964_arab_cup.txt
+Iraq,Lebanon,1,0,1,Kuwait City,Kuwait,1964_arab_cup.txt
+Jordan,Libya,2,5,2,Kuwait City,Kuwait,1964_arab_cup.txt
+Kuwait,Lebanon,2,3,2,Kuwait City,Kuwait,1964_arab_cup.txt
+Iraq,Libya,1,1,X,Kuwait City,Kuwait,1964_arab_cup.txt
+Kuwait,Libya,1,1,X,Kuwait City,Kuwait,1964_arab_cup.txt
+Libya,Palestine,0,0,X,Baghdad,Iraq,1966_arab_cup.txt
+Iraq,Kuwait,3,1,1,Baghdad,Iraq,1966_arab_cup.txt
+Syria,Yemen,4,1,1,Baghdad,Iraq,1966_arab_cup.txt
+Iraq,Jordan,2,1,1,Baghdad,Iraq,1966_arab_cup.txt
+Lebanon,Bahrain,6,1,1,Baghdad,Iraq,1966_arab_cup.txt
+Libya,Oman,21,0,1,Baghdad,Iraq,1966_arab_cup.txt
+Kuwait,Lebanon,1,2,2,Baghdad,Iraq,1966_arab_cup.txt
+Libya,Syria,0,0,X,Baghdad,Iraq,1966_arab_cup.txt
+Palestine,Yemen,7,0,1,Baghdad,Iraq,1966_arab_cup.txt
+Jordan,Lebanon,1,2,2,Baghdad,Iraq,1966_arab_cup.txt
+Iraq,Bahrain,10,1,1,Baghdad,Iraq,1966_arab_cup.txt
+Bahrain,Kuwait,4,4,X,Habbaniyah,Iraq,1966_arab_cup.txt
+Libya,Yemen,13,0,1,Kut,Iraq,1966_arab_cup.txt
+Palestine,Syria,1,3,2,Baghdad,Iraq,1966_arab_cup.txt
+Iraq,Lebanon,0,0,X,Baghdad,Iraq,1966_arab_cup.txt
+Bahrain,Jordan,1,5,2,Baghdad,Iraq,1966_arab_cup.txt
+Jordan,Kuwait,0,4,2,Baghdad,Iraq,1966_arab_cup.txt
+Iraq,Libya,3,1,1,Baghdad,Iraq,1966_arab_cup.txt
+Lebanon,Syria,0,1,2,Baghdad,Iraq,1966_arab_cup.txt
+Iraq,Syria,2,1,1,Baghdad,Iraq,1966_arab_cup.txt
+Libya,Lebanon,6,1,1,Baghdad,Iraq,1966_arab_cup.txt
+Saudi Arabia,Jordan,4,0,1,Taif,Saudi Arabia,1985_arab_cup.txt
+Bahrain,Iraq,1,1,X,Taif,Saudi Arabia,1985_arab_cup.txt
+Jordan,Qatar,0,2,2,Taif,Saudi Arabia,1985_arab_cup.txt
+Bahrain,Mauritania,2,0,1,Taif,Saudi Arabia,1985_arab_cup.txt
+Saudi Arabia,Qatar,1,0,1,Taif,Saudi Arabia,1985_arab_cup.txt
+Iraq,Mauritania,2,0,1,Taif,Saudi Arabia,1985_arab_cup.txt
+Bahrain,Qatar,1,1,X,Taif,Saudi Arabia   [Bahrain wins on penalties],1985_arab_cup.txt
+Saudi Arabia,Iraq,2,3,2,Taif,Saudi Arabia,1985_arab_cup.txt
+Bahrain,Iraq,0,1,2,Taif,Saudi Arabia,1985_arab_cup.txt
+Saudi Arabia,Qatar,0,0,X,Taif,Saudi Arabia   [Saudi Arabia wins on penalties],1985_arab_cup.txt
+Jordan,Bahrain,0,0,X,Amman,Jordan,1988_arab_cup.txt
+Iraq,Tunisia,1,1,X,Amman,Jordan,1988_arab_cup.txt
+Iraq,Lebanon,0,0,X,Amman,Jordan,1988_arab_cup.txt
+Bahrain,Syria,1,2,2,Amman,Jordan,1988_arab_cup.txt
+Egypt,Tunisia,1,0,1,Amman,Jordan,1988_arab_cup.txt
+Egypt,Lebanon,3,0,1,Amman,Jordan,1988_arab_cup.txt
+Jordan,Syria,2,0,1,Amman,Jordan,1988_arab_cup.txt
+Egypt,Iraq,0,0,X,Amman,Jordan,1988_arab_cup.txt
+Lebanon,Tunisia,1,1,X,Amman,Jordan,1988_arab_cup.txt
+Egypt,Syria,0,0,X,Amman,Jordan   [Syria wins on penalties],1988_arab_cup.txt
+Jordan,Iraq,0,3,2,Amman,Jordan,1988_arab_cup.txt
+Iraq,Syria,1,1,X,Amman,Jordan   [Iraq wins on penalties],1988_arab_cup.txt
+Jordan,Egypt,0,2,2,Amman,Jordan,1988_arab_cup.txt
+Egypt,Jordan,1,1,X,Aleppo,Syria,1992_arab_cup.txt
+Syria,Saudi Arabia,1,1,X,Aleppo,Syria,1992_arab_cup.txt
+Kuwait,Jordan,4,1,1,Aleppo,Syria,1992_arab_cup.txt
+Syria,Palestine,0,0,X,Aleppo,Syria,1992_arab_cup.txt
+Egypt,Kuwait,1,0,1,Aleppo,Syria,1992_arab_cup.txt
+Saudi Arabia,Palestine,2,1,1,Aleppo,Syria,1992_arab_cup.txt
+Syria,Egypt,0,0,X,Aleppo,Syria   [Egypt wins on penalties],1992_arab_cup.txt
+Saudi Arabia,Kuwait,2,0,1,Aleppo,Syria,1992_arab_cup.txt
+Syria,Kuwait,1,2,2,Aleppo,Syria,1992_arab_cup.txt
+Egypt,Saudi Arabia,3,2,1,Aleppo,Syria,1992_arab_cup.txt
+Qatar,Libya,2,1,1,Doha,Qatar,1998_arab_cup.txt
+Libya,Jordan,1,2,2,Doha,Qatar,1998_arab_cup.txt
+Kuwait,Syria,4,0,1,Doha,Qatar,1998_arab_cup.txt
+Qatar,Jordan,2,0,1,Doha,Qatar,1998_arab_cup.txt
+Saudi Arabia,Lebanon,4,1,1,Doha,Qatar,1998_arab_cup.txt
+United Arab Emirates,Sudan,4,1,1,Doha,Qatar,1998_arab_cup.txt
+Qatar,United Arab Emirates,2,1,1,Doha,Qatar,1998_arab_cup.txt
+Saudi Arabia,Kuwait,2,1,1,Doha,Qatar,1998_arab_cup.txt
+Kuwait,United Arab Emirates,4,1,1,Doha,Qatar,1998_arab_cup.txt
+Qatar,Saudi Arabia,1,3,2,Doha,Qatar,1998_arab_cup.txt
+Palestine,Jordan,1,1,X,Kuwait City,Kuwait,2002_arab_cup.txt
+Saudi Arabia,Bahrain,2,1,1,Kuwait City,Kuwait,2002_arab_cup.txt
+Yemen,Syria,0,4,2,Kuwait City,Kuwait,2002_arab_cup.txt
+Kuwait,Sudan,1,0,1,Kuwait City,Kuwait,2002_arab_cup.txt
+Bahrain,Syria,2,0,1,Kuwait City,Kuwait,2002_arab_cup.txt
+Saudi Arabia,Lebanon,1,0,1,Kuwait City,Kuwait,2002_arab_cup.txt
+Jordan,Sudan,2,1,1,Kuwait City,Kuwait,2002_arab_cup.txt
+Bahrain,Yemen,3,1,1,Kuwait City,Kuwait,2002_arab_cup.txt
+Syria,Lebanon,4,1,1,Kuwait City,Kuwait,2002_arab_cup.txt
+Kuwait,Jordan,1,2,2,Kuwait City,Kuwait,2002_arab_cup.txt
+Sudan,Palestine,2,2,X,Kuwait City,Kuwait,2002_arab_cup.txt
+Lebanon,Yemen,4,2,1,Kuwait City,Kuwait,2002_arab_cup.txt
+Syria,Saudi Arabia,0,3,2,Kuwait City,Kuwait,2002_arab_cup.txt
+Kuwait,Palestine,3,3,X,Kuwait City,Kuwait,2002_arab_cup.txt
+Lebanon,Bahrain,0,0,X,Kuwait City,Kuwait,2002_arab_cup.txt
+Yemen,Saudi Arabia,2,2,X,Kuwait City,Kuwait,2002_arab_cup.txt
+Jordan,Bahrain,1,2,2,Kuwait City,Kuwait,2002_arab_cup.txt
+Saudi Arabia,Bahrain,1,0,1,Kuwait City,Kuwait,2002_arab_cup.txt
+Saudi Arabia,Kuwait,4,0,1,Taif,Saudi Arabia,2012_arab_cup.txt
+Libya,Yemen,3,1,1,Jeddah,Saudi Arabia,2012_arab_cup.txt
+Iraq,Lebanon,1,0,1,Jeddah,Saudi Arabia,2012_arab_cup.txt
+Kuwait,Palestine,2,0,1,Taif,Saudi Arabia,2012_arab_cup.txt
+Bahrain,Yemen,0,2,2,Jeddah,Saudi Arabia,2012_arab_cup.txt
+Lebanon,Sudan,0,2,2,Jeddah,Saudi Arabia,2012_arab_cup.txt
+Saudi Arabia,Palestine,2,2,X,Taif,Saudi Arabia,2012_arab_cup.txt
+Libya,Bahrain,2,1,1,Taif,Saudi Arabia,2012_arab_cup.txt
+Sudan,Iraq,1,1,X,Jeddah,Saudi Arabia,2012_arab_cup.txt
+Saudi Arabia,Libya,0,2,2,Jeddah,Saudi Arabia,2012_arab_cup.txt
+Saudi Arabia,Iraq,0,1,2,Jeddah,Saudi Arabia,2012_arab_cup.txt
+Iraq,Oman,1,1,X,Al Wakrah,Qatar,2021_arab_cup.txt
+Qatar,Bahrain,1,0,1,Al Khor,Qatar,2021_arab_cup.txt
+Tunisia,Mauritania,5,1,1,Al Rayyan,Qatar,2021_arab_cup.txt
+United Arab Emirates,Syria,2,1,1,Doha,Qatar,2021_arab_cup.txt
+Morocco,Palestine,4,0,1,Al Wakrah,Qatar,2021_arab_cup.txt
+Saudi Arabia,Jordan,0,1,2,Al Rayyan,Qatar,2021_arab_cup.txt
+Algeria,Sudan,4,0,1,Al Rayyan,Qatar,2021_arab_cup.txt
+Egypt,Lebanon,1,0,1,Doha,Qatar,2021_arab_cup.txt
+Bahrain,Iraq,0,0,X,Doha,Qatar,2021_arab_cup.txt
+Qatar,Oman,2,1,1,Al Rayyan,Qatar,2021_arab_cup.txt
+Mauritania,United Arab Emirates,0,1,2,Doha,Qatar,2021_arab_cup.txt
+Syria,Tunisia,2,0,1,Al Khor,Qatar,2021_arab_cup.txt
+Jordan,Morocco,0,4,2,Al Rayyan,Qatar,2021_arab_cup.txt
+Palestine,Saudi Arabia,1,1,X,Al Rayyan,Qatar,2021_arab_cup.txt
+Lebanon,Algeria,0,2,2,Al Wakrah,Qatar,2021_arab_cup.txt
+Sudan,Egypt,0,5,2,Doha,Qatar,2021_arab_cup.txt
+Oman,Bahrain,3,0,1,Al Rayyan,Qatar,2021_arab_cup.txt
+Qatar,Iraq,3,0,1,Al Khor,Qatar,2021_arab_cup.txt
+Syria,Mauritania,1,2,2,Al Wakrah,Qatar,2021_arab_cup.txt
+Tunisia,United Arab Emirates,1,0,1,Doha,Qatar,2021_arab_cup.txt
+Jordan,Palestine,5,1,1,Doha,Qatar,2021_arab_cup.txt
+Morocco,Saudi Arabia,1,0,1,Doha,Qatar,2021_arab_cup.txt
+Algeria,Egypt,1,1,X,Al Wakrah,Qatar,2021_arab_cup.txt
+Lebanon,Sudan,1,0,1,Al Rayyan,Qatar,2021_arab_cup.txt
+Tunisia,Oman,2,1,1,Al Rayyan,Qatar,2021_arab_cup.txt
+Qatar,United Arab Emirates,5,0,1,Al Khor,Qatar,2021_arab_cup.txt
+Egypt,Jordan,3,1,1,Al Wakrah,Qatar,2021_arab_cup.txt
+Morocco,Algeria,2,2,X,Doha,Qatar   [Algeria wins on penalties],2021_arab_cup.txt
+Tunisia,Egypt,1,0,1,Doha,Qatar,2021_arab_cup.txt
+Qatar,Algeria,1,2,2,Doha,Qatar,2021_arab_cup.txt
+Qatar,Egypt,0,0,X,Doha,Qatar   [Qatar wins on penalties],2021_arab_cup.txt
+Tunisia,Algeria,0,2,2,Al Khor,Qatar,2021_arab_cup.txt

@@ -1,0 +1,771 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Philippines,South Korea,0,2,2,Manila,Philippines,1956_afc_asian_cup_qualification.txt
+Malaysia,Cambodia,9,2,1,Kuala Lumpur,Malaya,1956_afc_asian_cup_qualification.txt
+South Korea,Philippines,3,0,1,Seoul,South Korea,1956_afc_asian_cup_qualification.txt
+Cambodia,Malaysia,3,2,1,Phnom Penh,Cambodia,1956_afc_asian_cup_qualification.txt
+Vietnam Republic,Malaysia,4,0,1,Saigon,Vietnam Republic,1956_afc_asian_cup_qualification.txt
+Malaysia,Vietnam Republic,3,3,X,Kuala Lumpur,Malaya,1956_afc_asian_cup_qualification.txt
+South Korea,Taiwan,2,0,1,Seoul,South Korea,1956_afc_asian_cup_qualification.txt
+Philippines,Hong Kong,0,7,2,Manila,Philippines,1959_afc_asian_cup_qualification.txt
+Philippines,Taiwan,4,7,2,Manila,Philippines,1959_afc_asian_cup_qualification.txt
+Singapore,Vietnam Republic,1,4,2,Kallang,Singapore,1959_afc_asian_cup_qualification.txt
+Singapore,Malaysia,2,5,2,Kallang,Singapore,1959_afc_asian_cup_qualification.txt
+Malaysia,Vietnam Republic,0,1,2,Kallang,Singapore,1959_afc_asian_cup_qualification.txt
+Iran,Israel,3,0,1,Ernakulam,India,1959_afc_asian_cup_qualification.txt
+India,Pakistan,1,0,1,Ernakulam,India,1959_afc_asian_cup_qualification.txt
+India,Israel,1,3,2,Ernakulam,India,1959_afc_asian_cup_qualification.txt
+Israel,Pakistan,2,0,1,Ernakulam,India,1959_afc_asian_cup_qualification.txt
+Israel,Iran,1,1,X,Ernakulam,India,1959_afc_asian_cup_qualification.txt
+Pakistan,Israel,2,2,X,Ernakulam,India,1959_afc_asian_cup_qualification.txt
+Hong Kong,Thailand,3,3,X,Saigon,Vietnam Republic,1963_afc_asian_cup_qualification.txt
+Vietnam Republic,Malaysia,5,3,1,Saigon,Vietnam Republic,1963_afc_asian_cup_qualification.txt
+Malaysia,Thailand,3,1,1,Saigon,Vietnam Republic,1963_afc_asian_cup_qualification.txt
+Vietnam Republic,Hong Kong,1,4,2,Saigon,Vietnam Republic,1963_afc_asian_cup_qualification.txt
+Hong Kong,Malaysia,4,3,1,Saigon,Vietnam Republic,1963_afc_asian_cup_qualification.txt
+Vietnam Republic,Thailand,3,0,1,Saigon,Vietnam Republic,1963_afc_asian_cup_qualification.txt
+Hong Kong,Vietnam Republic,2,0,1,So Kon Po,Hong Kong,1967_afc_asian_cup_qualification.txt
+Thailand,Vietnam Republic,0,1,2,So Kon Po,Hong Kong,1967_afc_asian_cup_qualification.txt
+Vietnam Republic,Malaysia,0,2,2,So Kon Po,Hong Kong,1967_afc_asian_cup_qualification.txt
+Vietnam Republic,Singapore,3,0,1,So Kon Po,Hong Kong,1967_afc_asian_cup_qualification.txt
+South Korea,Indonesia,1,1,X,Taipei,Taiwan,1967_afc_asian_cup_qualification.txt
+Japan,South Korea,2,1,1,Taipei,Taiwan,1967_afc_asian_cup_qualification.txt
+Japan,Philippines,2,0,1,Taipei,Taiwan,1967_afc_asian_cup_qualification.txt
+Japan,Indonesia,2,1,1,Taipei,Taiwan,1967_afc_asian_cup_qualification.txt
+South Korea,Philippines,7,0,1,Taipei,Taiwan,1967_afc_asian_cup_qualification.txt
+Indonesia,Philippines,6,0,1,Taipei,Taiwan,1967_afc_asian_cup_qualification.txt
+Myanmar,India,2,0,1,Yangon,Burma,1967_afc_asian_cup_qualification.txt
+India,Pakistan,1,1,X,Yangon,Burma,1967_afc_asian_cup_qualification.txt
+Myanmar,Cambodia,1,0,1,Yangon,Burma,1967_afc_asian_cup_qualification.txt
+Myanmar,Pakistan,2,0,1,Yangon,Burma,1967_afc_asian_cup_qualification.txt
+Thailand,Cambodia,1,1,X,Bangkok,Thailand,1971_afc_asian_cup_qualification.txt
+Indonesia,Hong Kong,2,1,1,Bangkok,Thailand,1971_afc_asian_cup_qualification.txt
+Malaysia,Brunei,8,0,1,Bangkok,Thailand,1971_afc_asian_cup_qualification.txt
+Cambodia,Hong Kong,2,1,1,Bangkok,Thailand,1971_afc_asian_cup_qualification.txt
+Thailand,Brunei,10,0,1,Bangkok,Thailand,1971_afc_asian_cup_qualification.txt
+Malaysia,Cambodia,2,1,1,Bangkok,Thailand,1971_afc_asian_cup_qualification.txt
+Thailand,Indonesia,0,1,2,Bangkok,Thailand,1971_afc_asian_cup_qualification.txt
+Indonesia,Brunei,9,0,1,Bangkok,Thailand,1971_afc_asian_cup_qualification.txt
+Malaysia,Hong Kong,2,1,1,Bangkok,Thailand,1971_afc_asian_cup_qualification.txt
+Cambodia,Indonesia,2,0,1,Bangkok,Thailand,1971_afc_asian_cup_qualification.txt
+Thailand,Malaysia,1,0,1,Bangkok,Thailand,1971_afc_asian_cup_qualification.txt
+Malaysia,Indonesia,3,0,1,Bangkok,Thailand,1971_afc_asian_cup_qualification.txt
+Thailand,Cambodia,4,2,1,Bangkok,Thailand,1971_afc_asian_cup_qualification.txt
+Kuwait,Iraq,1,1,X,Kuwait City,Kuwait,1971_afc_asian_cup_qualification.txt
+Bahrain,Lebanon,3,0,1,Kuwait City,Kuwait,1971_afc_asian_cup_qualification.txt
+Syria,Jordan,0,0,X,Kuwait City,Kuwait,1971_afc_asian_cup_qualification.txt
+Iraq,Sri Lanka,5,0,1,Kuwait City,Kuwait,1971_afc_asian_cup_qualification.txt
+Jordan,Bahrain,3,2,1,Kuwait City,Kuwait,1971_afc_asian_cup_qualification.txt
+Kuwait,Lebanon,1,0,1,Kuwait City,Kuwait,1971_afc_asian_cup_qualification.txt
+Iraq,Bahrain,1,0,1,Kuwait City,Kuwait,1971_afc_asian_cup_qualification.txt
+Jordan,Sri Lanka,2,1,1,Kuwait City,Kuwait,1971_afc_asian_cup_qualification.txt
+Kuwait,Syria,2,2,X,Kuwait City,Kuwait,1971_afc_asian_cup_qualification.txt
+Iraq,Jordan,2,0,1,Kuwait City,Kuwait,1971_afc_asian_cup_qualification.txt
+Lebanon,Syria,3,2,1,Kuwait City,Kuwait,1971_afc_asian_cup_qualification.txt
+Bahrain,Sri Lanka,3,0,1,Kuwait City,Kuwait,1971_afc_asian_cup_qualification.txt
+Kuwait,Jordan,2,0,1,Kuwait City,Kuwait,1971_afc_asian_cup_qualification.txt
+Iraq,Lebanon,4,1,1,Kuwait City,Kuwait,1971_afc_asian_cup_qualification.txt
+Kuwait,Iraq,0,1,2,Kuwait City,Kuwait,1971_afc_asian_cup_qualification.txt
+Lebanon,Jordan,2,0,1,Kuwait City,Kuwait,1971_afc_asian_cup_qualification.txt
+Thailand,Indonesia,3,1,1,Bangkok,Thailand,1975_afc_asian_cup_qualification.txt
+Malaysia,South Korea,2,1,1,Bangkok,Thailand,1975_afc_asian_cup_qualification.txt
+Indonesia,Vietnam Republic,2,1,1,Bangkok,Thailand,1975_afc_asian_cup_qualification.txt
+Thailand,Malaysia,0,1,2,Bangkok,Thailand,1975_afc_asian_cup_qualification.txt
+South Korea,Vietnam Republic,1,0,1,Bangkok,Thailand,1975_afc_asian_cup_qualification.txt
+Malaysia,Indonesia,0,0,X,Bangkok,Thailand,1975_afc_asian_cup_qualification.txt
+Thailand,Vietnam Republic,4,0,1,Bangkok,Thailand,1975_afc_asian_cup_qualification.txt
+South Korea,Indonesia,1,0,1,Bangkok,Thailand,1975_afc_asian_cup_qualification.txt
+Malaysia,Vietnam Republic,3,0,1,Bangkok,Thailand,1975_afc_asian_cup_qualification.txt
+Thailand,South Korea,1,0,1,Bangkok,Thailand,1975_afc_asian_cup_qualification.txt
+Iraq,Qatar,1,0,1,Baghdad,Iraq,1975_afc_asian_cup_qualification.txt
+Saudi Arabia,Afghanistan,2,0,1,Baghdad,Iraq,1975_afc_asian_cup_qualification.txt
+Iraq,Afghanistan,4,0,1,Baghdad,Iraq,1975_afc_asian_cup_qualification.txt
+Saudi Arabia,Qatar,2,1,1,Baghdad,Iraq,1975_afc_asian_cup_qualification.txt
+Iraq,Saudi Arabia,1,1,X,Baghdad,Iraq,1975_afc_asian_cup_qualification.txt
+Qatar,Afghanistan,2,1,1,Baghdad,Iraq,1975_afc_asian_cup_qualification.txt
+Iraq,Qatar,3,0,1,Baghdad,Iraq,1975_afc_asian_cup_qualification.txt
+Saudi Arabia,Afghanistan,6,0,1,Baghdad,Iraq,1975_afc_asian_cup_qualification.txt
+Iraq,Saudi Arabia,2,1,1,Baghdad,Iraq,1975_afc_asian_cup_qualification.txt
+Qatar,Afghanistan,1,1,X,Baghdad,Iraq,1975_afc_asian_cup_qualification.txt
+Iraq,Afghanistan,3,1,1,Baghdad,Iraq,1975_afc_asian_cup_qualification.txt
+Saudi Arabia,Qatar,0,1,2,Baghdad,Iraq,1975_afc_asian_cup_qualification.txt
+Hong Kong,Japan,0,0,X,So Kon Po,Hong Kong,1975_afc_asian_cup_qualification.txt
+China PR,North Korea,1,0,1,So Kon Po,Hong Kong,1975_afc_asian_cup_qualification.txt
+North Korea,Japan,1,0,1,So Kon Po,Hong Kong,1975_afc_asian_cup_qualification.txt
+China PR,Brunei,10,1,1,So Kon Po,Hong Kong,1975_afc_asian_cup_qualification.txt
+North Korea,Singapore,1,0,1,So Kon Po,Hong Kong,1975_afc_asian_cup_qualification.txt
+Hong Kong,China PR,0,1,2,So Kon Po,Hong Kong,1975_afc_asian_cup_qualification.txt
+China PR,Japan,2,1,1,So Kon Po,Hong Kong,1975_afc_asian_cup_qualification.txt
+Hong Kong,North Korea,3,3,X,So Kon Po,Hong Kong,1975_afc_asian_cup_qualification.txt
+North Korea,China PR,2,0,1,So Kon Po,Hong Kong,1975_afc_asian_cup_qualification.txt
+South Korea,Macau,4,1,1,Manila,Philippines,1978_afc_asian_cup_qualification.txt
+Philippines,China PR,0,3,2,Manila,Philippines,1978_afc_asian_cup_qualification.txt
+China PR,Macau,2,1,1,Manila,Philippines,1978_afc_asian_cup_qualification.txt
+Philippines,South Korea,0,5,2,Manila,Philippines,1978_afc_asian_cup_qualification.txt
+South Korea,China PR,1,0,1,Manila,Philippines,1978_afc_asian_cup_qualification.txt
+Bangladesh,Afghanistan,3,2,1,Dhaka,Bangladesh,1979_afc_asian_cup_qualification.txt
+Bangladesh,Qatar,1,3,2,Dhaka,Bangladesh,1979_afc_asian_cup_qualification.txt
+North Korea,Hong Kong,3,0,1,Bangkok,Thailand,1979_afc_asian_cup_qualification.txt
+North Korea,Indonesia,3,1,1,Bangkok,Thailand,1979_afc_asian_cup_qualification.txt
+Malaysia,North Korea,1,1,X,Bangkok,Thailand,1979_afc_asian_cup_qualification.txt
+Malaysia,Hong Kong,0,0,X,Bangkok,Thailand,1979_afc_asian_cup_qualification.txt
+Thailand,North Korea,0,1,2,Bangkok,Thailand,1979_afc_asian_cup_qualification.txt
+North Korea,Malaysia,1,0,1,Bangkok,Thailand,1979_afc_asian_cup_qualification.txt
+Indonesia,Thailand,2,1,1,Jakarta,Indonesia,1984_afc_asian_cup_qualification.txt
+Iran,Bangladesh,5,0,1,Jakarta,Indonesia,1984_afc_asian_cup_qualification.txt
+Syria,Philippines,2,0,1,Jakarta,Indonesia,1984_afc_asian_cup_qualification.txt
+Indonesia,Bangladesh,2,1,1,Jakarta,Indonesia,1984_afc_asian_cup_qualification.txt
+Iran,Syria,3,1,1,Solo,Indonesia,1984_afc_asian_cup_qualification.txt
+Thailand,Philippines,3,0,1,Jakarta,Indonesia,1984_afc_asian_cup_qualification.txt
+Indonesia,Philippines,1,0,1,Solo,Indonesia,1984_afc_asian_cup_qualification.txt
+Iran,Thailand,5,0,1,Jakarta,Indonesia,1984_afc_asian_cup_qualification.txt
+Syria,Bangladesh,2,1,1,Jakarta,Indonesia,1984_afc_asian_cup_qualification.txt
+Bangladesh,Philippines,3,2,1,Solo,Indonesia,1984_afc_asian_cup_qualification.txt
+Indonesia,Iran,0,1,2,Jakarta,Indonesia,1984_afc_asian_cup_qualification.txt
+Syria,Thailand,2,3,2,Jakarta,Indonesia,1984_afc_asian_cup_qualification.txt
+Indonesia,Syria,1,2,2,Jakarta,Indonesia,1984_afc_asian_cup_qualification.txt
+Iran,Philippines,7,1,1,Jakarta,Indonesia,1984_afc_asian_cup_qualification.txt
+Thailand,Bangladesh,2,1,1,Solo,Indonesia,1984_afc_asian_cup_qualification.txt
+Jordan,Hong Kong,1,1,X,Guangzhou,China PR,1984_afc_asian_cup_qualification.txt
+Qatar,Afghanistan,8,0,1,Guangzhou,China PR,1984_afc_asian_cup_qualification.txt
+China PR,Afghanistan,6,0,1,Guangzhou,China PR,1984_afc_asian_cup_qualification.txt
+Qatar,Hong Kong,1,0,1,Guangzhou,China PR,1984_afc_asian_cup_qualification.txt
+China PR,Jordan,6,0,1,Guangzhou,China PR,1984_afc_asian_cup_qualification.txt
+Hong Kong,Afghanistan,0,0,X,Guangzhou,China PR,1984_afc_asian_cup_qualification.txt
+China PR,Hong Kong,2,0,1,Guangzhou,China PR,1984_afc_asian_cup_qualification.txt
+Qatar,Jordan,2,0,1,Guangzhou,China PR,1984_afc_asian_cup_qualification.txt
+China PR,Qatar,1,0,1,Guangzhou,China PR,1984_afc_asian_cup_qualification.txt
+Jordan,Afghanistan,6,1,1,Guangzhou,China PR,1984_afc_asian_cup_qualification.txt
+South Korea,Yemen,6,0,1,Calcutta,India,1984_afc_asian_cup_qualification.txt
+Malaysia,Pakistan,5,0,1,Calcutta,India,1984_afc_asian_cup_qualification.txt
+India,Yemen,4,0,1,Calcutta,India,1984_afc_asian_cup_qualification.txt
+South Korea,Pakistan,6,0,1,Calcutta,India,1984_afc_asian_cup_qualification.txt
+India,Malaysia,2,1,1,Calcutta,India,1984_afc_asian_cup_qualification.txt
+Pakistan,Yemen,4,1,1,Calcutta,India,1984_afc_asian_cup_qualification.txt
+South Korea,Malaysia,0,0,X,Calcutta,India,1984_afc_asian_cup_qualification.txt
+India,Pakistan,2,0,1,Calcutta,India,1984_afc_asian_cup_qualification.txt
+Malaysia,Yemen,4,1,1,Calcutta,India,1984_afc_asian_cup_qualification.txt
+India,South Korea,0,1,2,Calcutta,India,1984_afc_asian_cup_qualification.txt
+Saudi Arabia,Nepal,7,0,1,Jeddah,Saudi Arabia,1984_afc_asian_cup_qualification.txt
+Oman,Sri Lanka,1,1,X,Jeddah,Saudi Arabia,1984_afc_asian_cup_qualification.txt
+Saudi Arabia,United Arab Emirates,1,0,1,Jeddah,Saudi Arabia,1984_afc_asian_cup_qualification.txt
+Sri Lanka,Nepal,4,0,1,Jeddah,Saudi Arabia,1984_afc_asian_cup_qualification.txt
+Saudi Arabia,Sri Lanka,5,0,1,Jeddah,Saudi Arabia,1984_afc_asian_cup_qualification.txt
+United Arab Emirates,Oman,8,0,1,Jeddah,Saudi Arabia,1984_afc_asian_cup_qualification.txt
+Saudi Arabia,Oman,6,0,1,Jeddah,Saudi Arabia,1984_afc_asian_cup_qualification.txt
+United Arab Emirates,Nepal,11,0,1,Jeddah,Saudi Arabia,1984_afc_asian_cup_qualification.txt
+Oman,Nepal,8,0,1,Jeddah,Saudi Arabia,1984_afc_asian_cup_qualification.txt
+United Arab Emirates,Sri Lanka,5,1,1,Jeddah,Saudi Arabia,1984_afc_asian_cup_qualification.txt
+United Arab Emirates,Thailand,3,0,1,Abu Dhabi,United Arab Emirates,1988_afc_asian_cup_qualification.txt
+China PR,Yemen,0,0,X,Abu Dhabi,United Arab Emirates,1988_afc_asian_cup_qualification.txt
+Bangladesh,India,0,0,X,Abu Dhabi,United Arab Emirates,1988_afc_asian_cup_qualification.txt
+United Arab Emirates,Yemen,2,1,1,Abu Dhabi,United Arab Emirates,1988_afc_asian_cup_qualification.txt
+China PR,Bangladesh,4,0,1,Abu Dhabi,United Arab Emirates,1988_afc_asian_cup_qualification.txt
+Thailand,India,1,0,1,Abu Dhabi,United Arab Emirates,1988_afc_asian_cup_qualification.txt
+United Arab Emirates,China PR,0,0,X,Abu Dhabi,United Arab Emirates,1988_afc_asian_cup_qualification.txt
+Yemen,India,1,0,1,Abu Dhabi,United Arab Emirates,1988_afc_asian_cup_qualification.txt
+Thailand,Bangladesh,1,1,X,Abu Dhabi,United Arab Emirates,1988_afc_asian_cup_qualification.txt
+United Arab Emirates,India,3,0,1,Abu Dhabi,United Arab Emirates,1988_afc_asian_cup_qualification.txt
+China PR,Thailand,5,0,1,Abu Dhabi,United Arab Emirates,1988_afc_asian_cup_qualification.txt
+Yemen,Bangladesh,0,0,X,Abu Dhabi,United Arab Emirates,1988_afc_asian_cup_qualification.txt
+China PR,India,1,1,X,Abu Dhabi,United Arab Emirates,1988_afc_asian_cup_qualification.txt
+Yemen,Thailand,3,3,X,Abu Dhabi,United Arab Emirates,1988_afc_asian_cup_qualification.txt
+United Arab Emirates,Bangladesh,4,0,1,Abu Dhabi,United Arab Emirates,1988_afc_asian_cup_qualification.txt
+Malaysia,Pakistan,4,0,1,Kuala Lumpur,Malaysia,1988_afc_asian_cup_qualification.txt
+Kuwait,Japan,1,0,1,Kuala Lumpur,Malaysia,1988_afc_asian_cup_qualification.txt
+Jordan,Pakistan,1,0,1,Kuala Lumpur,Malaysia,1988_afc_asian_cup_qualification.txt
+Malaysia,Japan,0,1,2,Kuala Lumpur,Malaysia,1988_afc_asian_cup_qualification.txt
+Kuwait,Jordan,0,0,X,Kuala Lumpur,Malaysia,1988_afc_asian_cup_qualification.txt
+Malaysia,Jordan,0,0,X,Kuala Lumpur,Malaysia,1988_afc_asian_cup_qualification.txt
+Kuwait,Pakistan,3,0,1,Kuala Lumpur,Malaysia,1988_afc_asian_cup_qualification.txt
+Japan,Jordan,1,1,X,Kuala Lumpur,Malaysia,1988_afc_asian_cup_qualification.txt
+Japan,Pakistan,4,1,1,Kuala Lumpur,Malaysia,1988_afc_asian_cup_qualification.txt
+Malaysia,Kuwait,0,5,2,Kuala Lumpur,Malaysia,1988_afc_asian_cup_qualification.txt
+Nepal,Hong Kong,0,0,X,Kathmandu,Nepal,1988_afc_asian_cup_qualification.txt
+Syria,North Korea,2,1,1,Kathmandu,Nepal,1988_afc_asian_cup_qualification.txt
+Iran,Hong Kong,2,0,1,Kathmandu,Nepal,1988_afc_asian_cup_qualification.txt
+Nepal,North Korea,0,1,2,Kathmandu,Nepal,1988_afc_asian_cup_qualification.txt
+Syria,Iran,1,1,X,Kathmandu,Nepal,1988_afc_asian_cup_qualification.txt
+North Korea,Hong Kong,1,0,1,Kathmandu,Nepal,1988_afc_asian_cup_qualification.txt
+Nepal,Syria,0,3,2,Kathmandu,Nepal,1988_afc_asian_cup_qualification.txt
+Iran,North Korea,0,0,X,Kathmandu,Nepal,1988_afc_asian_cup_qualification.txt
+Syria,Hong Kong,2,0,1,Kathmandu,Nepal,1988_afc_asian_cup_qualification.txt
+Nepal,Iran,0,3,2,Kathmandu,Nepal,1988_afc_asian_cup_qualification.txt
+Bahrain,South Korea,2,0,1,Jakarta,Indonesia,1988_afc_asian_cup_qualification.txt
+Indonesia,Yemen DPR,1,0,1,Jakarta,Indonesia,1988_afc_asian_cup_qualification.txt
+Indonesia,Bahrain,0,0,X,Jakarta,Indonesia,1988_afc_asian_cup_qualification.txt
+South Korea,Yemen DPR,1,1,X,Jakarta,Indonesia,1988_afc_asian_cup_qualification.txt
+Bahrain,Yemen DPR,2,0,1,Jakarta,Indonesia,1988_afc_asian_cup_qualification.txt
+Indonesia,South Korea,0,4,2,Jakarta,Indonesia,1988_afc_asian_cup_qualification.txt
+Singapore,Malaysia,1,1,X,Singapore,Singapore,1992_afc_asian_cup_qualification.txt
+China PR,Indonesia,2,0,1,Singapore,Singapore,1992_afc_asian_cup_qualification.txt
+Singapore,Indonesia,1,2,2,Singapore,Singapore,1992_afc_asian_cup_qualification.txt
+China PR,Malaysia,4,0,1,Singapore,Singapore,1992_afc_asian_cup_qualification.txt
+Indonesia,Malaysia,1,1,X,Singapore,Singapore,1992_afc_asian_cup_qualification.txt
+Singapore,China PR,0,1,2,Singapore,Singapore,1992_afc_asian_cup_qualification.txt
+Iran,Pakistan,7,0,1,Calcutta,India,1992_afc_asian_cup_qualification.txt
+India,Iran,0,3,2,Calcutta,India,1992_afc_asian_cup_qualification.txt
+Qatar,Syria,4,2,1,Doha,Qatar,1992_afc_asian_cup_qualification.txt
+Qatar,Oman,4,0,1,Doha,Qatar,1992_afc_asian_cup_qualification.txt
+North Korea,Taiwan,6,0,1,Pyongyang,North Korea,1992_afc_asian_cup_qualification.txt
+Macau,Hong Kong,2,2,X,Pyongyang,North Korea,1992_afc_asian_cup_qualification.txt
+Hong Kong,Taiwan,0,0,X,Pyongyang,North Korea,1992_afc_asian_cup_qualification.txt
+North Korea,Macau,2,0,1,Pyongyang,North Korea,1992_afc_asian_cup_qualification.txt
+North Korea,Hong Kong,0,0,X,Pyongyang,North Korea,1992_afc_asian_cup_qualification.txt
+Macau,Taiwan,2,0,1,Pyongyang,North Korea,1992_afc_asian_cup_qualification.txt
+South Korea,Bangladesh,6,0,1,Bangkok,Thailand,1992_afc_asian_cup_qualification.txt
+Thailand,South Korea,2,1,1,Bangkok,Thailand,1992_afc_asian_cup_qualification.txt
+Thailand,Bangladesh,1,0,1,Bangkok,Thailand,1992_afc_asian_cup_qualification.txt
+Saudi Arabia,Kyrgyzstan,3,0,1,Riyadh,Saudi Arabia,1996_afc_asian_cup_qualification.txt
+Yemen,Kyrgyzstan,1,0,1,Riyadh,Saudi Arabia,1996_afc_asian_cup_qualification.txt
+Saudi Arabia,Yemen,4,0,1,Riyadh,Saudi Arabia,1996_afc_asian_cup_qualification.txt
+China PR,Macau,7,1,1,Victoria,Hong Kong,1996_afc_asian_cup_qualification.txt
+Hong Kong,Philippines,8,0,1,Victoria,Hong Kong,1996_afc_asian_cup_qualification.txt
+Saudi Arabia,Kyrgyzstan,2,0,1,Riyadh,Saudi Arabia,1996_afc_asian_cup_qualification.txt
+Hong Kong,Macau,4,1,1,Victoria,Hong Kong,1996_afc_asian_cup_qualification.txt
+Philippines,China PR,0,7,2,Victoria,Hong Kong,1996_afc_asian_cup_qualification.txt
+Kyrgyzstan,Yemen,3,1,1,Riyadh,Saudi Arabia,1996_afc_asian_cup_qualification.txt
+Hong Kong,China PR,0,2,2,Victoria,Hong Kong,1996_afc_asian_cup_qualification.txt
+Macau,Philippines,5,1,1,Victoria,Hong Kong,1996_afc_asian_cup_qualification.txt
+Saudi Arabia,Yemen,1,0,1,Riyadh,Saudi Arabia,1996_afc_asian_cup_qualification.txt
+Malaysia,Indonesia,1,1,X,Kuala Lumpur,Malaysia,1996_afc_asian_cup_qualification.txt
+Indonesia,India,7,1,1,Kuala Lumpur,Malaysia,1996_afc_asian_cup_qualification.txt
+Malaysia,India,5,2,1,Kuala Lumpur,Malaysia,1996_afc_asian_cup_qualification.txt
+Turkmenistan,Kuwait,2,2,X,Ashgabat,Turkmenistan,1996_afc_asian_cup_qualification.txt
+Kuwait,Turkmenistan,2,0,1,Kuwait City,Kuwait,1996_afc_asian_cup_qualification.txt
+Tajikistan,Uzbekistan,4,0,1,Dushanbe,Tajikistan,1996_afc_asian_cup_qualification.txt
+Lebanon,Turkmenistan,3,1,1,Beirut,Lebanon,1996_afc_asian_cup_qualification.txt
+Turkmenistan,Lebanon,0,1,2,Ashgabat,Turkmenistan,1996_afc_asian_cup_qualification.txt
+Lebanon,Kuwait,3,5,2,Beirut,Lebanon,1996_afc_asian_cup_qualification.txt
+Iran,Nepal,8,0,1,Tehran,Iran,1996_afc_asian_cup_qualification.txt
+Sri Lanka,Oman,0,3,2,Tehran,Iran,1996_afc_asian_cup_qualification.txt
+Iran,Sri Lanka,7,0,1,Tehran,Iran,1996_afc_asian_cup_qualification.txt
+Nepal,Oman,0,7,2,Tehran,Iran,1996_afc_asian_cup_qualification.txt
+Iran,Oman,2,0,1,Tehran,Iran,1996_afc_asian_cup_qualification.txt
+Kazakhstan,Qatar,1,0,1,Almaty,Kazakhstan,1996_afc_asian_cup_qualification.txt
+Sri Lanka,Nepal,3,1,1,Tehran,Iran,1996_afc_asian_cup_qualification.txt
+Oman,Nepal,2,1,1,Muscat,Oman,1996_afc_asian_cup_qualification.txt
+Sri Lanka,Iran,0,4,2,Muscat,Oman,1996_afc_asian_cup_qualification.txt
+Nepal,Iran,0,4,2,Muscat,Oman,1996_afc_asian_cup_qualification.txt
+Oman,Sri Lanka,10,0,1,Muscat,Oman,1996_afc_asian_cup_qualification.txt
+Uzbekistan,Tajikistan,5,0,1,Tashkent,Uzbekistan,1996_afc_asian_cup_qualification.txt
+Kuwait,Lebanon,0,0,X,Kuwait City,Kuwait,1996_afc_asian_cup_qualification.txt
+Nepal,Sri Lanka,0,2,2,Muscat,Oman,1996_afc_asian_cup_qualification.txt
+Oman,Iran,1,2,2,Muscat,Oman,1996_afc_asian_cup_qualification.txt
+Syria,Kazakhstan,2,0,1,Damascus,Syria,1996_afc_asian_cup_qualification.txt
+Myanmar,Singapore,0,4,2,Bangkok,Thailand,1996_afc_asian_cup_qualification.txt
+Thailand,Maldives,8,0,1,Bangkok,Thailand,1996_afc_asian_cup_qualification.txt
+Qatar,Syria,1,0,1,Doha,Qatar,1996_afc_asian_cup_qualification.txt
+Maldives,Singapore,0,2,2,Bangkok,Thailand,1996_afc_asian_cup_qualification.txt
+Thailand,Myanmar,5,1,1,Bangkok,Thailand,1996_afc_asian_cup_qualification.txt
+Myanmar,Maldives,3,1,1,Bangkok,Thailand,1996_afc_asian_cup_qualification.txt
+Thailand,Singapore,1,1,X,Bangkok,Thailand,1996_afc_asian_cup_qualification.txt
+Maldives,Thailand,0,8,2,Singapore,Singapore,1996_afc_asian_cup_qualification.txt
+Singapore,Myanmar,2,2,X,Singapore,Singapore,1996_afc_asian_cup_qualification.txt
+Qatar,Kazakhstan,3,0,1,Doha,Qatar,1996_afc_asian_cup_qualification.txt
+Myanmar,Thailand,1,7,2,Singapore,Singapore,1996_afc_asian_cup_qualification.txt
+Singapore,Maldives,5,2,1,Singapore,Singapore,1996_afc_asian_cup_qualification.txt
+Myanmar,Maldives,4,1,1,Singapore,Singapore,1996_afc_asian_cup_qualification.txt
+Singapore,Thailand,2,2,X,Singapore,Singapore,1996_afc_asian_cup_qualification.txt
+Kazakhstan,Syria,0,1,2,Almaty,Kazakhstan,1996_afc_asian_cup_qualification.txt
+Syria,Qatar,3,1,1,Damascus,Syria,1996_afc_asian_cup_qualification.txt
+Vietnam,Taiwan,4,1,1,Ho Chi Minh City,Vietnam,1996_afc_asian_cup_qualification.txt
+South Korea,Guam,9,0,1,Ho Chi Minh City,Vietnam,1996_afc_asian_cup_qualification.txt
+Vietnam,Guam,9,0,1,Ho Chi Minh City,Vietnam,1996_afc_asian_cup_qualification.txt
+South Korea,Taiwan,4,0,1,Ho Chi Minh City,Vietnam,1996_afc_asian_cup_qualification.txt
+Jordan,Pakistan,4,0,1,Amman,Jordan,1996_afc_asian_cup_qualification.txt
+Iraq,Pakistan,3,0,1,Amman,Jordan,1996_afc_asian_cup_qualification.txt
+Vietnam,South Korea,0,4,2,Ho Chi Minh City,Vietnam,1996_afc_asian_cup_qualification.txt
+Jordan,Iraq,0,1,2,Amman,Jordan,1996_afc_asian_cup_qualification.txt
+Oman,Kyrgyzstan,3,0,1,Dushanbe,Tajikistan,1999_afc_asian_cup_qualification.txt
+Tajikistan,Iraq,1,2,2,Dushanbe,Tajikistan,1999_afc_asian_cup_qualification.txt
+Iraq,Oman,2,0,1,Dushanbe,Tajikistan,1999_afc_asian_cup_qualification.txt
+Tajikistan,Kyrgyzstan,3,2,1,Dushanbe,Tajikistan,1999_afc_asian_cup_qualification.txt
+Iraq,Kyrgyzstan,5,1,1,Dushanbe,Tajikistan,1999_afc_asian_cup_qualification.txt
+Tajikistan,Oman,2,1,1,Dushanbe,Tajikistan,1999_afc_asian_cup_qualification.txt
+Hong Kong,Cambodia,4,1,1,Victoria,Hong Kong,1999_afc_asian_cup_qualification.txt
+Hong Kong,Indonesia,1,1,X,Victoria,Hong Kong,1999_afc_asian_cup_qualification.txt
+Cambodia,Indonesia,1,5,2,Phnom Penh,Cambodia,1999_afc_asian_cup_qualification.txt
+Cambodia,Hong Kong,0,1,2,Phnom Penh,Cambodia,1999_afc_asian_cup_qualification.txt
+Indonesia,Hong Kong,3,1,1,Jakarta,Indonesia,1999_afc_asian_cup_qualification.txt
+Indonesia,Cambodia,9,2,1,Jakarta,Indonesia,1999_afc_asian_cup_qualification.txt
+Bangladesh,Uzbekistan,0,6,2,Abu Dhabi,United Arab Emirates,1999_afc_asian_cup_qualification.txt
+United Arab Emirates,India,3,1,1,Abu Dhabi,United Arab Emirates,1999_afc_asian_cup_qualification.txt
+Sri Lanka,Uzbekistan,0,6,2,Abu Dhabi,United Arab Emirates,1999_afc_asian_cup_qualification.txt
+United Arab Emirates,Bangladesh,3,0,1,Abu Dhabi,United Arab Emirates,1999_afc_asian_cup_qualification.txt
+India,Uzbekistan,2,3,2,Abu Dhabi,United Arab Emirates,1999_afc_asian_cup_qualification.txt
+Sri Lanka,Bangladesh,1,3,2,Abu Dhabi,United Arab Emirates,1999_afc_asian_cup_qualification.txt
+Sri Lanka,India,1,3,2,Abu Dhabi,United Arab Emirates,1999_afc_asian_cup_qualification.txt
+United Arab Emirates,Uzbekistan,0,1,2,Abu Dhabi,United Arab Emirates,1999_afc_asian_cup_qualification.txt
+India,Bangladesh,2,2,X,Abu Dhabi,United Arab Emirates,1999_afc_asian_cup_qualification.txt
+United Arab Emirates,Sri Lanka,6,0,1,Abu Dhabi,United Arab Emirates,1999_afc_asian_cup_qualification.txt
+China PR,Philippines,8,0,1,Hanoi,Vietnam,2000_afc_asian_cup_qualification.txt
+Vietnam,Guam,11,0,1,Hanoi,Vietnam,2000_afc_asian_cup_qualification.txt
+China PR,Guam,19,0,1,Hanoi,Vietnam,2000_afc_asian_cup_qualification.txt
+Vietnam,Philippines,3,0,1,Hanoi,Vietnam,2000_afc_asian_cup_qualification.txt
+Philippines,Guam,2,0,1,Hanoi,Vietnam,2000_afc_asian_cup_qualification.txt
+Vietnam,China PR,0,2,2,Hanoi,Vietnam,2000_afc_asian_cup_qualification.txt
+Kuwait,Turkmenistan,6,1,1,Kuwait City,Kuwait,2000_afc_asian_cup_qualification.txt
+Nepal,Yemen,0,3,2,Kuwait City,Kuwait,2000_afc_asian_cup_qualification.txt
+Nepal,Bhutan,3,0,1,Kuwait City,Kuwait,2000_afc_asian_cup_qualification.txt
+Yemen,Turkmenistan,0,1,2,Kuwait City,Kuwait,2000_afc_asian_cup_qualification.txt
+Macau,Brunei,1,0,1,Macau,Macau,2000_afc_asian_cup_qualification.txt
+Singapore,Japan,0,3,2,Macau,Macau,2000_afc_asian_cup_qualification.txt
+Kuwait,Bhutan,20,0,1,Kuwait City,Kuwait,2000_afc_asian_cup_qualification.txt
+Turkmenistan,Nepal,5,0,1,Kuwait City,Kuwait,2000_afc_asian_cup_qualification.txt
+Bhutan,Turkmenistan,0,8,2,Kuwait City,Kuwait,2000_afc_asian_cup_qualification.txt
+Japan,Brunei,9,0,1,Macau,Macau,2000_afc_asian_cup_qualification.txt
+Kuwait,Yemen,2,0,1,Kuwait City,Kuwait,2000_afc_asian_cup_qualification.txt
+Macau,Singapore,0,1,2,Macau,Macau,2000_afc_asian_cup_qualification.txt
+Kuwait,Nepal,5,0,1,Kuwait City,Kuwait,2000_afc_asian_cup_qualification.txt
+Yemen,Bhutan,11,2,1,Kuwait City,Kuwait,2000_afc_asian_cup_qualification.txt
+Macau,Japan,0,3,2,Macau,Macau,2000_afc_asian_cup_qualification.txt
+Singapore,Brunei,1,0,1,Macau,Macau,2000_afc_asian_cup_qualification.txt
+Malaysia,Taiwan,3,0,1,Kuala Lumpur,Malaysia,2000_afc_asian_cup_qualification.txt
+Thailand,North Korea,0,0,X,Kuala Lumpur,Malaysia,2000_afc_asian_cup_qualification.txt
+Malaysia,North Korea,1,1,X,Kuala Lumpur,Malaysia,2000_afc_asian_cup_qualification.txt
+Thailand,Taiwan,2,0,1,Kuala Lumpur,Malaysia,2000_afc_asian_cup_qualification.txt
+Malaysia,Thailand,3,2,1,Kuala Lumpur,Malaysia,2000_afc_asian_cup_qualification.txt
+Jordan,Kazakhstan,0,1,2,Doha,Qatar,2000_afc_asian_cup_qualification.txt
+Maldives,Iran,0,8,2,Damascus,Syria,2000_afc_asian_cup_qualification.txt
+Qatar,Palestine,1,0,1,Doha,Qatar,2000_afc_asian_cup_qualification.txt
+Syria,Bahrain,1,0,1,Damascus,Syria,2000_afc_asian_cup_qualification.txt
+Bahrain,Maldives,4,1,1,Damascus,Syria,2000_afc_asian_cup_qualification.txt
+Palestine,Pakistan,2,0,1,Doha,Qatar,2000_afc_asian_cup_qualification.txt
+Qatar,Kazakhstan,3,1,1,Doha,Qatar,2000_afc_asian_cup_qualification.txt
+Syria,Iran,0,1,2,Damascus,Syria,2000_afc_asian_cup_qualification.txt
+Bahrain,Iran,1,0,1,Damascus,Syria,2000_afc_asian_cup_qualification.txt
+Malaysia,Taiwan,2,3,2,Bangkok,Thailand,2000_afc_asian_cup_qualification.txt
+Palestine,Jordan,1,5,2,Doha,Qatar,2000_afc_asian_cup_qualification.txt
+Qatar,Pakistan,5,0,1,Doha,Qatar,2000_afc_asian_cup_qualification.txt
+Syria,Maldives,6,0,1,Damascus,Syria,2000_afc_asian_cup_qualification.txt
+Thailand,North Korea,5,3,1,Bangkok,Thailand,2000_afc_asian_cup_qualification.txt
+Myanmar,Mongolia,2,0,1,Seoul,South Korea,2000_afc_asian_cup_qualification.txt
+South Korea,Laos,9,0,1,Seoul,South Korea,2000_afc_asian_cup_qualification.txt
+Kazakhstan,Palestine,2,0,1,Doha,Qatar,2000_afc_asian_cup_qualification.txt
+Malaysia,North Korea,1,4,2,Bangkok,Thailand,2000_afc_asian_cup_qualification.txt
+Pakistan,Jordan,0,5,2,Doha,Qatar,2000_afc_asian_cup_qualification.txt
+Thailand,Taiwan,1,0,1,Bangkok,Thailand,2000_afc_asian_cup_qualification.txt
+Myanmar,Laos,4,0,1,Seoul,South Korea,2000_afc_asian_cup_qualification.txt
+South Korea,Mongolia,6,0,1,Seoul,South Korea,2000_afc_asian_cup_qualification.txt
+Pakistan,Kazakhstan,0,4,2,Doha,Qatar,2000_afc_asian_cup_qualification.txt
+Qatar,Jordan,2,2,X,Doha,Qatar,2000_afc_asian_cup_qualification.txt
+Thailand,Malaysia,3,2,1,Bangkok,Thailand,2000_afc_asian_cup_qualification.txt
+Iran,Bahrain,3,0,1,Tehran,Iran,2000_afc_asian_cup_qualification.txt
+South Korea,Myanmar,4,0,1,Seoul,South Korea,2000_afc_asian_cup_qualification.txt
+Laos,Mongolia,2,1,1,Seoul,South Korea,2000_afc_asian_cup_qualification.txt
+Syria,Maldives,2,1,1,Tehran,Iran,2000_afc_asian_cup_qualification.txt
+Bahrain,Maldives,1,0,1,Tehran,Iran,2000_afc_asian_cup_qualification.txt
+Iran,Syria,1,1,X,Tehran,Iran,2000_afc_asian_cup_qualification.txt
+Bahrain,Syria,0,1,2,Tehran,Iran,2000_afc_asian_cup_qualification.txt
+Iran,Maldives,3,0,1,Tehran,Iran,2000_afc_asian_cup_qualification.txt
+Kyrgyzstan,Afghanistan,1,2,2,Kathmandu,Nepal,2003_afc_asian_cup_qualification.txt
+Nepal,Afghanistan,4,0,1,Kathmandu,Nepal,2003_afc_asian_cup_qualification.txt
+Nepal,Kyrgyzstan,0,2,2,Kathmandu,Nepal,2003_afc_asian_cup_qualification.txt
+Macau,Pakistan,0,3,2,Singapore,Singapore,2003_afc_asian_cup_qualification.txt
+Maldives,Brunei,1,1,X,Malé,Maldives,2003_afc_asian_cup_qualification.txt
+Sri Lanka - Timor,Leste,3,2,1,Colombo,Sri Lanka,2003_afc_asian_cup_qualification.txt
+Myanmar,Brunei,5,0,1,Malé,Maldives,2003_afc_asian_cup_qualification.txt
+Singapore,Macau,2,0,1,Singapore,Singapore,2003_afc_asian_cup_qualification.txt
+North Korea,India,2,0,1,Pyongyang,North Korea,2003_afc_asian_cup_qualification.txt
+Hong Kong,Laos,5,1,1,Kowloon,Hong Kong,2003_afc_asian_cup_qualification.txt
+Maldives,Myanmar,0,2,2,Malé,Maldives,2003_afc_asian_cup_qualification.txt
+Singapore,Pakistan,3,0,1,Singapore,Singapore,2003_afc_asian_cup_qualification.txt
+Sri Lanka,Taiwan,2,1,1,Colombo,Sri Lanka,2003_afc_asian_cup_qualification.txt
+Laos,Bangladesh,2,1,1,Kowloon,Hong Kong,2003_afc_asian_cup_qualification.txt
+Hong Kong,Bangladesh,2,2,X,Kowloon,Hong Kong,2003_afc_asian_cup_qualification.txt
+India,North Korea,1,1,X,Margao,India,2003_afc_asian_cup_qualification.txt
+Bhutan,Guam,6,0,1,Thimphu,Bhutan,2003_afc_asian_cup_qualification.txt
+Guam,Mongolia,0,5,2,Thimphu,Bhutan,2003_afc_asian_cup_qualification.txt
+Bhutan,Mongolia,0,0,X,Thimphu,Bhutan,2003_afc_asian_cup_qualification.txt
+North Korea,Lebanon,0,1,2,Pyongyang,North Korea,2003_afc_asian_cup_qualification.txt
+Singapore,Kuwait,1,3,2,Singapore,Singapore,2003_afc_asian_cup_qualification.txt
+Iran,Jordan,4,1,1,Tehran,Iran,2003_afc_asian_cup_qualification.txt
+Kuwait,Qatar,2,1,1,Kuwait City,Kuwait,2003_afc_asian_cup_qualification.txt
+Qatar,Kuwait,2,2,X,Doha,Qatar,2003_afc_asian_cup_qualification.txt
+Qatar,Palestine,1,1,X,Doha,Qatar,2003_afc_asian_cup_qualification.txt
+South Korea,Vietnam,5,0,1,Incheon,South Korea,2003_afc_asian_cup_qualification.txt
+Nepal,Oman,0,7,2,Incheon,South Korea,2003_afc_asian_cup_qualification.txt
+Jordan,Iran,3,2,1,Amman,Jordan,2003_afc_asian_cup_qualification.txt
+South Korea,Oman,1,0,1,Incheon,South Korea,2003_afc_asian_cup_qualification.txt
+Kuwait,Singapore,4,0,1,Kuwait City,Kuwait,2003_afc_asian_cup_qualification.txt
+Qatar,Palestine,2,1,1,Doha,Qatar,2003_afc_asian_cup_qualification.txt
+Vietnam,Nepal,5,0,1,Incheon,South Korea,2003_afc_asian_cup_qualification.txt
+South Korea,Nepal,16,0,1,Incheon,South Korea,2003_afc_asian_cup_qualification.txt
+Vietnam,Oman,0,6,2,Incheon,South Korea,2003_afc_asian_cup_qualification.txt
+Kuwait,Palestine,2,1,1,Kuwait City,Kuwait,2003_afc_asian_cup_qualification.txt
+Indonesia,Bhutan,2,0,1,Jeddah,Saudi Arabia,2003_afc_asian_cup_qualification.txt
+Saudi Arabia,Yemen,7,0,1,Jeddah,Saudi Arabia,2003_afc_asian_cup_qualification.txt
+Iraq,Bahrain,5,1,1,Kuala Lumpur,Malaysia,2003_afc_asian_cup_qualification.txt
+Kuwait,Palestine,4,0,1,Kuwait City,Kuwait,2003_afc_asian_cup_qualification.txt
+Malaysia,Myanmar,4,0,1,Kuala Lumpur,Malaysia,2003_afc_asian_cup_qualification.txt
+Saudi Arabia,Bhutan,6,0,1,Jeddah,Saudi Arabia,2003_afc_asian_cup_qualification.txt
+Yemen,Indonesia,0,3,2,Jeddah,Saudi Arabia,2003_afc_asian_cup_qualification.txt
+Bhutan,Yemen,0,8,2,Jeddah,Saudi Arabia,2003_afc_asian_cup_qualification.txt
+Myanmar,Bahrain,1,3,2,Kuala Lumpur,Malaysia,2003_afc_asian_cup_qualification.txt
+Malaysia,Iraq,0,0,X,Kuala Lumpur,Malaysia,2003_afc_asian_cup_qualification.txt
+Saudi Arabia,Indonesia,5,0,1,Jeddah,Saudi Arabia,2003_afc_asian_cup_qualification.txt
+Iraq,Myanmar,3,0,1,Kuala Lumpur,Malaysia,2003_afc_asian_cup_qualification.txt
+Malaysia,Bahrain,2,2,X,Kuala Lumpur,Malaysia,2003_afc_asian_cup_qualification.txt
+Bhutan,Indonesia,0,2,2,Jeddah,Saudi Arabia,2003_afc_asian_cup_qualification.txt
+Saudi Arabia,Yemen,3,1,1,Jeddah,Saudi Arabia,2003_afc_asian_cup_qualification.txt
+Indonesia,Yemen,2,2,X,Jeddah,Saudi Arabia,2003_afc_asian_cup_qualification.txt
+Saudi Arabia,Bhutan,4,0,1,Jeddah,Saudi Arabia,2003_afc_asian_cup_qualification.txt
+Syria,Sri Lanka,5,0,1,Damascus,Syria,2003_afc_asian_cup_qualification.txt
+Jordan,Lebanon,1,0,1,Amman,Jordan,2003_afc_asian_cup_qualification.txt
+Saudi Arabia,Indonesia,6,0,1,Jeddah,Saudi Arabia,2003_afc_asian_cup_qualification.txt
+Yemen,Bhutan,4,0,1,Jeddah,Saudi Arabia,2003_afc_asian_cup_qualification.txt
+Syria,Sri Lanka,8,0,1,Damascus,Syria,2003_afc_asian_cup_qualification.txt
+Oman,Nepal,6,0,1,Muscat,Oman,2003_afc_asian_cup_qualification.txt
+Singapore,Palestine,2,0,1,Singapore,Singapore,2003_afc_asian_cup_qualification.txt
+Turkmenistan,United Arab Emirates,1,0,1,Ashgabat,Turkmenistan,2003_afc_asian_cup_qualification.txt
+Vietnam,South Korea,1,0,1,Muscat,Oman,2003_afc_asian_cup_qualification.txt
+Bahrain,Myanmar,4,0,1,Riffa,Bahrain,2003_afc_asian_cup_qualification.txt
+Iraq,Malaysia,5,1,1,Riffa,Bahrain,2003_afc_asian_cup_qualification.txt
+Nepal,Vietnam,0,2,2,Muscat,Oman,2003_afc_asian_cup_qualification.txt
+Oman,South Korea,3,1,1,Muscat,Oman,2003_afc_asian_cup_qualification.txt
+Bahrain,Malaysia,3,1,1,Riffa,Bahrain,2003_afc_asian_cup_qualification.txt
+Myanmar,Iraq,1,3,2,Riffa,Bahrain,2003_afc_asian_cup_qualification.txt
+Singapore,Palestine,0,0,X,Singapore,Singapore,2003_afc_asian_cup_qualification.txt
+Bahrain,Iraq,1,0,1,Riffa,Bahrain,2003_afc_asian_cup_qualification.txt
+Myanmar,Malaysia,2,1,1,Riffa,Bahrain,2003_afc_asian_cup_qualification.txt
+Nepal,South Korea,0,7,2,Muscat,Oman,2003_afc_asian_cup_qualification.txt
+Oman,Vietnam,2,0,1,Muscat,Oman,2003_afc_asian_cup_qualification.txt
+North Korea,Iran,1,3,2,Pyongyang,North Korea,2003_afc_asian_cup_qualification.txt
+United Arab Emirates,Turkmenistan,1,1,X,Sharjah,United Arab Emirates,2003_afc_asian_cup_qualification.txt
+Lebanon,North Korea,1,1,X,Beirut,Lebanon,2003_afc_asian_cup_qualification.txt
+Thailand,Tajikistan,0,1,2,Tashkent,Uzbekistan,2003_afc_asian_cup_qualification.txt
+Uzbekistan,Hong Kong,4,1,1,Tashkent,Uzbekistan,2003_afc_asian_cup_qualification.txt
+Syria,United Arab Emirates,1,3,2,Damascus,Syria,2003_afc_asian_cup_qualification.txt
+Hong Kong,Tajikistan,0,0,X,Tashkent,Uzbekistan,2003_afc_asian_cup_qualification.txt
+Uzbekistan,Thailand,3,0,1,Tashkent,Uzbekistan,2003_afc_asian_cup_qualification.txt
+Turkmenistan,Sri Lanka,1,0,1,Balkanabat,Turkmenistan,2003_afc_asian_cup_qualification.txt
+Hong Kong,Thailand,2,1,1,Tashkent,Uzbekistan,2003_afc_asian_cup_qualification.txt
+Uzbekistan,Tajikistan,0,0,X,Tashkent,Uzbekistan,2003_afc_asian_cup_qualification.txt
+Iran,North Korea,3,0,1,Tehran,Iran,2003_afc_asian_cup_qualification.txt
+Lebanon,Jordan,0,2,2,Beirut,Lebanon,2003_afc_asian_cup_qualification.txt
+Turkmenistan,Sri Lanka,3,0,1,Ashgabat,Turkmenistan,2003_afc_asian_cup_qualification.txt
+United Arab Emirates,Syria,3,1,1,Sharjah,United Arab Emirates,2003_afc_asian_cup_qualification.txt
+Tajikistan,Uzbekistan,1,4,2,Bangkok,Thailand,2003_afc_asian_cup_qualification.txt
+Thailand,Hong Kong,4,0,1,Bangkok,Thailand,2003_afc_asian_cup_qualification.txt
+Jordan,North Korea,3,0,1,Amman,Jordan,2003_afc_asian_cup_qualification.txt
+United Arab Emirates,Sri Lanka,3,1,1,Dubai,United Arab Emirates,2003_afc_asian_cup_qualification.txt
+Hong Kong,Uzbekistan,0,1,2,Bangkok,Thailand,2003_afc_asian_cup_qualification.txt
+Lebanon,Iran,0,3,2,Beirut,Lebanon,2003_afc_asian_cup_qualification.txt
+Qatar,Singapore,2,0,1,Doha,Qatar,2003_afc_asian_cup_qualification.txt
+Thailand,Tajikistan,1,0,1,Bangkok,Thailand,2003_afc_asian_cup_qualification.txt
+Tajikistan,Hong Kong,1,0,1,Bangkok,Thailand,2003_afc_asian_cup_qualification.txt
+Thailand,Uzbekistan,4,1,1,Bangkok,Thailand,2003_afc_asian_cup_qualification.txt
+United Arab Emirates,Sri Lanka,3,0,1,Dubai,United Arab Emirates,2003_afc_asian_cup_qualification.txt
+Iran,Lebanon,1,0,1,Tehran,Iran,2003_afc_asian_cup_qualification.txt
+Syria,Turkmenistan,1,1,X,Aleppo,Syria,2003_afc_asian_cup_qualification.txt
+Bangladesh,Pakistan,0,0,X,Dhaka,Bangladesh,2005_afc_asian_cup_qualification.txt
+Pakistan,Bangladesh,0,1,2,Karachi,Pakistan,2005_afc_asian_cup_qualification.txt
+Bahrain,Australia,1,3,2,Riffa,Bahrain,2006_afc_asian_cup_qualification.txt
+China PR,Palestine,2,0,1,Guangzhou,China PR,2006_afc_asian_cup_qualification.txt
+Hong Kong,Qatar,0,3,2,So Kon Po,Hong Kong,2006_afc_asian_cup_qualification.txt
+Iran,Taiwan,4,0,1,Tehran,Iran,2006_afc_asian_cup_qualification.txt
+Japan,India,6,0,1,Yokohama,Japan,2006_afc_asian_cup_qualification.txt
+Jordan,Pakistan,3,0,1,Amman,Jordan,2006_afc_asian_cup_qualification.txt
+Lebanon,Kuwait,1,1,X,Beirut,Lebanon,2006_afc_asian_cup_qualification.txt
+Singapore,Iraq,2,0,1,Singapore,Singapore,2006_afc_asian_cup_qualification.txt
+Syria,South Korea,1,2,2,Aleppo,Syria,2006_afc_asian_cup_qualification.txt
+United Arab Emirates,Oman,1,0,1,Dubai,United Arab Emirates,2006_afc_asian_cup_qualification.txt
+Uzbekistan,Bangladesh,5,0,1,Tashkent,Uzbekistan,2006_afc_asian_cup_qualification.txt
+Yemen,Saudi Arabia,0,4,2,Sana'a,Yemen,2006_afc_asian_cup_qualification.txt
+Bangladesh,Hong Kong,0,1,2,Dhaka,Bangladesh,2006_afc_asian_cup_qualification.txt
+India,Yemen,0,3,2,New Delhi,India,2006_afc_asian_cup_qualification.txt
+Iraq,China PR,2,1,1,Al Ain,United Arab Emirates,2006_afc_asian_cup_qualification.txt
+Kuwait,Bahrain,0,0,X,Kuwait City,Kuwait,2006_afc_asian_cup_qualification.txt
+Oman,Jordan,3,0,1,Muscat,Oman,2006_afc_asian_cup_qualification.txt
+Pakistan,United Arab Emirates,1,4,2,Karachi,Pakistan,2006_afc_asian_cup_qualification.txt
+Palestine,Singapore,1,0,1,Amman,Jordan,2006_afc_asian_cup_qualification.txt
+Qatar,Uzbekistan,2,1,1,Doha,Qatar,2006_afc_asian_cup_qualification.txt
+Australia,Kuwait,2,0,1,Sydney,Australia,2006_afc_asian_cup_qualification.txt
+Bangladesh,Qatar,1,4,2,Chittagong,Bangladesh,2006_afc_asian_cup_qualification.txt
+China PR,Singapore,1,0,1,Tianjin,China PR,2006_afc_asian_cup_qualification.txt
+India,Saudi Arabia,0,3,2,Calcutta,India,2006_afc_asian_cup_qualification.txt
+Iran,Syria,1,1,X,Tehran,Iran,2006_afc_asian_cup_qualification.txt
+Japan,Yemen,2,0,1,Niigata,Japan,2006_afc_asian_cup_qualification.txt
+Jordan,United Arab Emirates,1,2,2,Amman,Jordan,2006_afc_asian_cup_qualification.txt
+Pakistan,Oman,1,4,2,Islamabad,Pakistan,2006_afc_asian_cup_qualification.txt
+Uzbekistan,Hong Kong,2,2,X,Tashkent,Uzbekistan,2006_afc_asian_cup_qualification.txt
+Palestine,Iraq,0,3,2,Amman,Jordan,2006_afc_asian_cup_qualification.txt
+South Korea,Iran,1,1,X,Seoul,South Korea,2006_afc_asian_cup_qualification.txt
+Saudi Arabia,Japan,1,0,1,Jeddah,Saudi Arabia,2006_afc_asian_cup_qualification.txt
+Hong Kong,Uzbekistan,0,0,X,So Kon Po,Hong Kong,2006_afc_asian_cup_qualification.txt
+Iraq,Palestine,2,2,X,Al Ain,United Arab Emirates,2006_afc_asian_cup_qualification.txt
+South Korea,Taiwan,8,0,1,Suwon,South Korea,2006_afc_asian_cup_qualification.txt
+Kuwait,Australia,2,0,1,Kuwait City,Kuwait,2006_afc_asian_cup_qualification.txt
+Oman,Pakistan,5,0,1,Muscat,Oman,2006_afc_asian_cup_qualification.txt
+Qatar,Bangladesh,3,0,1,Doha,Qatar,2006_afc_asian_cup_qualification.txt
+Saudi Arabia,India,7,1,1,Jeddah,Saudi Arabia,2006_afc_asian_cup_qualification.txt
+Singapore,China PR,0,0,X,Singapore,Singapore,2006_afc_asian_cup_qualification.txt
+United Arab Emirates,Jordan,0,0,X,Sharjah,United Arab Emirates,2006_afc_asian_cup_qualification.txt
+Yemen,Japan,0,1,2,Sana'a,Yemen,2006_afc_asian_cup_qualification.txt
+Australia,Bahrain,2,0,1,Sydney,Australia,2006_afc_asian_cup_qualification.txt
+Bangladesh,Uzbekistan,0,4,2,Dhaka,Bangladesh,2006_afc_asian_cup_qualification.txt
+India,Japan,0,3,2,Bangalore,India,2006_afc_asian_cup_qualification.txt
+Iraq,Singapore,4,2,1,Al Ain,United Arab Emirates,2006_afc_asian_cup_qualification.txt
+South Korea,Syria,1,1,X,Seoul,South Korea,2006_afc_asian_cup_qualification.txt
+Oman,United Arab Emirates,2,1,1,Muscat,Oman,2006_afc_asian_cup_qualification.txt
+Pakistan,Jordan,0,3,2,Lahore,Pakistan,2006_afc_asian_cup_qualification.txt
+Palestine,China PR,0,2,2,Amman,Jordan,2006_afc_asian_cup_qualification.txt
+Qatar,Hong Kong,2,0,1,Doha,Qatar,2006_afc_asian_cup_qualification.txt
+Saudi Arabia,Yemen,5,0,1,Jeddah,Saudi Arabia,2006_afc_asian_cup_qualification.txt
+Bahrain,Kuwait,2,1,1,Riffa,Bahrain,2006_afc_asian_cup_qualification.txt
+China PR,Iraq,1,1,X,Changsha,China PR,2006_afc_asian_cup_qualification.txt
+Hong Kong,Bangladesh,2,0,1,Kowloon,Hong Kong,2006_afc_asian_cup_qualification.txt
+Iran,South Korea,2,0,1,Tehran,Iran,2006_afc_asian_cup_qualification.txt
+Japan,Saudi Arabia,3,1,1,Sapporo,Japan,2006_afc_asian_cup_qualification.txt
+Jordan,Oman,3,0,1,Amman,Jordan,2006_afc_asian_cup_qualification.txt
+Syria,Taiwan,3,0,1,Damascus,Syria,2006_afc_asian_cup_qualification.txt
+United Arab Emirates,Pakistan,3,2,1,Abu Dhabi,United Arab Emirates,2006_afc_asian_cup_qualification.txt
+Uzbekistan,Qatar,2,0,1,Tashkent,Uzbekistan,2006_afc_asian_cup_qualification.txt
+Yemen,India,2,1,1,Sana'a,Yemen,2006_afc_asian_cup_qualification.txt
+Lebanon,Maldives,4,0,1,Beirut,Lebanon,2008_afc_asian_cup_qualification.txt
+Maldives,Lebanon,1,2,2,Malé,Maldives,2008_afc_asian_cup_qualification.txt
+Iran,Singapore,6,0,1,Tehran,Iran,2009_afc_asian_cup_qualification.txt
+Jordan,Thailand,0,0,X,Amman,Jordan,2009_afc_asian_cup_qualification.txt
+Syria,China PR,3,2,1,Aleppo,Syria,2009_afc_asian_cup_qualification.txt
+Vietnam,Lebanon,3,1,1,Hanoi,Vietnam,2009_afc_asian_cup_qualification.txt
+Oman,Indonesia,0,0,X,Muscat,Oman,2009_afc_asian_cup_qualification.txt
+Japan,Yemen,2,1,1,Kumamoto,Japan,2009_afc_asian_cup_qualification.txt
+China PR,Vietnam,6,1,1,Hangzhou,China PR,2009_afc_asian_cup_qualification.txt
+Hong Kong,Bahrain,1,3,2,So Kon Po,Hong Kong,2009_afc_asian_cup_qualification.txt
+Malaysia,United Arab Emirates,0,5,2,Kuala Lumpur,Malaysia,2009_afc_asian_cup_qualification.txt
+Bahrain,Japan,1,0,1,Riffa,Bahrain,2009_afc_asian_cup_qualification.txt
+Indonesia,Australia,0,0,X,Jakarta,Indonesia,2009_afc_asian_cup_qualification.txt
+Kuwait,Oman,0,1,2,Kuwait City,Kuwait,2009_afc_asian_cup_qualification.txt
+Lebanon,Syria,0,2,2,Sidon,Lebanon,2009_afc_asian_cup_qualification.txt
+Singapore,Jordan,2,1,1,Singapore,Singapore,2009_afc_asian_cup_qualification.txt
+Thailand,Iran,0,0,X,Bangkok,Thailand,2009_afc_asian_cup_qualification.txt
+United Arab Emirates,Uzbekistan,0,1,2,Sharjah,United Arab Emirates,2009_afc_asian_cup_qualification.txt
+Yemen,Hong Kong,1,0,1,Sana'a,Yemen,2009_afc_asian_cup_qualification.txt
+Australia,Kuwait,0,1,2,Canberra,Australia,2009_afc_asian_cup_qualification.txt
+Japan,Hong Kong,6,0,1,Shizuoka,Japan,2009_afc_asian_cup_qualification.txt
+Australia,Oman,1,0,1,Melbourne,Australia,2009_afc_asian_cup_qualification.txt
+Iran,Jordan,1,0,1,Tehran,Iran,2009_afc_asian_cup_qualification.txt
+Kuwait,Indonesia,2,1,1,Kuwait City,Kuwait,2009_afc_asian_cup_qualification.txt
+Lebanon,China PR,0,2,2,Beirut,Lebanon,2009_afc_asian_cup_qualification.txt
+Oman,Australia,1,2,2,Muscat,Oman,2009_afc_asian_cup_qualification.txt
+Singapore,Thailand,1,3,2,Singapore,Singapore,2009_afc_asian_cup_qualification.txt
+Uzbekistan,Malaysia,3,1,1,Tashkent,Uzbekistan,2009_afc_asian_cup_qualification.txt
+Vietnam,Syria,0,1,2,Hanoi,Vietnam,2009_afc_asian_cup_qualification.txt
+Bahrain,Yemen,4,0,1,Riffa,Bahrain,2009_afc_asian_cup_qualification.txt
+Hong Kong,Japan,0,4,2,So Kon Po,Hong Kong,2009_afc_asian_cup_qualification.txt
+Indonesia,Kuwait,1,1,X,Jakarta,Indonesia,2009_afc_asian_cup_qualification.txt
+Malaysia,Uzbekistan,1,3,2,Kuala Lumpur,Malaysia,2009_afc_asian_cup_qualification.txt
+Syria,Vietnam,0,0,X,Aleppo,Syria,2009_afc_asian_cup_qualification.txt
+Thailand,Singapore,0,1,2,Bangkok,Thailand,2009_afc_asian_cup_qualification.txt
+China PR,Lebanon,1,0,1,Hangzhou,China PR,2009_afc_asian_cup_qualification.txt
+Jordan,Iran,1,0,1,Amman,Jordan,2009_afc_asian_cup_qualification.txt
+Bahrain,Hong Kong,4,0,1,Riffa,Bahrain,2010_afc_asian_cup_qualification.txt
+China PR,Syria,0,0,X,Hangzhou,China PR,2010_afc_asian_cup_qualification.txt
+Indonesia,Oman,1,2,2,Jakarta,Indonesia,2010_afc_asian_cup_qualification.txt
+Kuwait,Australia,2,2,X,Kuwait City,Kuwait,2010_afc_asian_cup_qualification.txt
+Lebanon,Vietnam,1,1,X,Sidon,Lebanon,2010_afc_asian_cup_qualification.txt
+Singapore,Iran,1,3,2,Singapore,Singapore,2010_afc_asian_cup_qualification.txt
+Thailand,Jordan,0,0,X,Bangkok,Thailand,2010_afc_asian_cup_qualification.txt
+United Arab Emirates,Malaysia,1,0,1,Dubai,United Arab Emirates,2010_afc_asian_cup_qualification.txt
+Yemen,Japan,2,3,2,Sana'a,Yemen,2010_afc_asian_cup_qualification.txt
+Vietnam,China PR,1,2,2,Hanoi,Vietnam,2010_afc_asian_cup_qualification.txt
+Yemen,Bahrain,3,0,1,Sana'a,Yemen,2010_afc_asian_cup_qualification.txt
+Australia,Indonesia,1,0,1,Brisbane,Australia,2010_afc_asian_cup_qualification.txt
+Hong Kong,Yemen,0,0,X,So Kon Po,Hong Kong,2010_afc_asian_cup_qualification.txt
+Iran,Thailand,1,0,1,Tehran,Iran,2010_afc_asian_cup_qualification.txt
+Japan,Bahrain,2,0,1,Toyota,Japan,2010_afc_asian_cup_qualification.txt
+Jordan,Singapore,2,1,1,Amman,Jordan,2010_afc_asian_cup_qualification.txt
+Oman,Kuwait,0,0,X,Muscat,Oman,2010_afc_asian_cup_qualification.txt
+Syria,Lebanon,4,0,1,Damascus,Syria,2010_afc_asian_cup_qualification.txt
+Uzbekistan,United Arab Emirates,0,1,2,Tashkent,Uzbekistan,2010_afc_asian_cup_qualification.txt
+Iran,Lebanon,5,0,1,Tehran,Iran,2013_afc_asian_cup_qualification.txt
+Iraq,Indonesia,1,0,1,Dubai,United Arab Emirates,2013_afc_asian_cup_qualification.txt
+Jordan,Singapore,4,0,1,Amman,Jordan,2013_afc_asian_cup_qualification.txt
+Oman,Syria,1,0,1,Muscat,Oman,2013_afc_asian_cup_qualification.txt
+Qatar,Malaysia,2,0,1,Doha,Qatar,2013_afc_asian_cup_qualification.txt
+Saudi Arabia,China PR,2,1,1,Dammam,Saudi Arabia,2013_afc_asian_cup_qualification.txt
+Thailand,Kuwait,1,3,2,Bangkok,Thailand,2013_afc_asian_cup_qualification.txt
+Uzbekistan,Hong Kong,0,0,X,Tashkent,Uzbekistan,2013_afc_asian_cup_qualification.txt
+Vietnam,United Arab Emirates,1,2,2,Hanoi,Vietnam,2013_afc_asian_cup_qualification.txt
+Yemen,Bahrain,0,2,2,Sharjah,United Arab Emirates,2013_afc_asian_cup_qualification.txt
+Bahrain,Qatar,1,0,1,Riffa,Bahrain,2013_afc_asian_cup_qualification.txt
+China PR,Iraq,1,0,1,Changsha,China PR,2013_afc_asian_cup_qualification.txt
+Hong Kong,Vietnam,1,0,1,Kowloon,Hong Kong,2013_afc_asian_cup_qualification.txt
+Lebanon,Thailand,5,2,1,Beirut,Lebanon,2013_afc_asian_cup_qualification.txt
+Malaysia,Yemen,2,1,1,Shah Alam,Malaysia,2013_afc_asian_cup_qualification.txt
+United Arab Emirates,Uzbekistan,2,1,1,Abu Dhabi,United Arab Emirates,2013_afc_asian_cup_qualification.txt
+Indonesia,Saudi Arabia,1,2,2,Jakarta,Indonesia,2013_afc_asian_cup_qualification.txt
+Kuwait,Iran,1,1,X,Kuwait City,Kuwait,2013_afc_asian_cup_qualification.txt
+Singapore,Oman,0,2,2,Jalan Besar,Singapore,2013_afc_asian_cup_qualification.txt
+Syria,Jordan,1,1,X,Tehran,Iran,2013_afc_asian_cup_qualification.txt
+Qatar,Yemen,6,0,1,Doha,Qatar,2013_afc_asian_cup_qualification.txt
+Hong Kong,United Arab Emirates,0,4,2,So Kon Po,Hong Kong,2013_afc_asian_cup_qualification.txt
+Indonesia,China PR,1,1,X,Jakarta,Indonesia,2013_afc_asian_cup_qualification.txt
+Iran,Thailand,2,1,1,Tehran,Iran,2013_afc_asian_cup_qualification.txt
+Iraq,Saudi Arabia,0,2,2,Amman,Jordan,2013_afc_asian_cup_qualification.txt
+Jordan,Oman,0,0,X,Amman,Jordan,2013_afc_asian_cup_qualification.txt
+Lebanon,Kuwait,1,1,X,Beirut,Lebanon,2013_afc_asian_cup_qualification.txt
+Malaysia,Bahrain,1,1,X,Shah Alam,Malaysia,2013_afc_asian_cup_qualification.txt
+Singapore,Syria,2,1,1,Singapore,Singapore,2013_afc_asian_cup_qualification.txt
+Uzbekistan,Vietnam,3,1,1,Tashkent,Uzbekistan,2013_afc_asian_cup_qualification.txt
+Bahrain,Malaysia,1,0,1,Riffa,Bahrain,2013_afc_asian_cup_qualification.txt
+China PR,Indonesia,1,0,1,Xi'an,China PR,2013_afc_asian_cup_qualification.txt
+Kuwait,Lebanon,0,0,X,Kuwait City,Kuwait,2013_afc_asian_cup_qualification.txt
+Saudi Arabia,Iraq,2,1,1,Dammam,Saudi Arabia,2013_afc_asian_cup_qualification.txt
+Syria,Singapore,4,0,1,Tehran,Iran,2013_afc_asian_cup_qualification.txt
+Thailand,Iran,0,3,2,Bangkok,Thailand,2013_afc_asian_cup_qualification.txt
+United Arab Emirates,Hong Kong,4,0,1,Abu Dhabi,United Arab Emirates,2013_afc_asian_cup_qualification.txt
+Vietnam,Uzbekistan,0,3,2,Hanoi,Vietnam,2013_afc_asian_cup_qualification.txt
+Yemen,Qatar,1,4,2,Al Ain,United Arab Emirates,2013_afc_asian_cup_qualification.txt
+Bahrain,Yemen,2,0,1,Riffa,Bahrain,2013_afc_asian_cup_qualification.txt
+China PR,Saudi Arabia,0,0,X,Xi'an,China PR,2013_afc_asian_cup_qualification.txt
+Hong Kong,Uzbekistan,0,2,2,So Kon Po,Hong Kong,2013_afc_asian_cup_qualification.txt
+Indonesia,Iraq,0,2,2,Jakarta,Indonesia,2013_afc_asian_cup_qualification.txt
+Kuwait,Thailand,3,1,1,Kuwait City,Kuwait,2013_afc_asian_cup_qualification.txt
+Lebanon,Iran,1,4,2,Beirut,Lebanon,2013_afc_asian_cup_qualification.txt
+Malaysia,Qatar,0,1,2,Shah Alam,Malaysia,2013_afc_asian_cup_qualification.txt
+Syria,Oman,0,1,2,Tehran,Iran,2013_afc_asian_cup_qualification.txt
+United Arab Emirates,Vietnam,5,0,1,Abu Dhabi,United Arab Emirates,2013_afc_asian_cup_qualification.txt
+Oman,Jordan,0,0,X,Muscat,Oman,2014_afc_asian_cup_qualification.txt
+Singapore,Jordan,1,3,2,Singapore,Singapore,2014_afc_asian_cup_qualification.txt
+Iran,Kuwait,3,2,1,Karaj,Iran,2014_afc_asian_cup_qualification.txt
+Iraq,China PR,3,1,1,Sharjah,United Arab Emirates,2014_afc_asian_cup_qualification.txt
+Jordan,Syria,2,1,1,Amman,Jordan,2014_afc_asian_cup_qualification.txt
+Oman,Singapore,3,1,1,Muscat,Oman,2014_afc_asian_cup_qualification.txt
+Qatar,Bahrain,0,0,X,Doha,Qatar,2014_afc_asian_cup_qualification.txt
+Saudi Arabia,Indonesia,1,0,1,Dammam,Saudi Arabia,2014_afc_asian_cup_qualification.txt
+Thailand,Lebanon,2,5,2,Bangkok,Thailand,2014_afc_asian_cup_qualification.txt
+Uzbekistan,United Arab Emirates,1,1,X,Tashkent,Uzbekistan,2014_afc_asian_cup_qualification.txt
+Vietnam,Hong Kong,3,1,1,Hanoi,Vietnam,2014_afc_asian_cup_qualification.txt
+Yemen,Malaysia,1,2,2,Al Ain,United Arab Emirates,2014_afc_asian_cup_qualification.txt
+Laos,India,0,1,2,Vientiane,Laos,2016_afc_asian_cup_qualification.txt
+Malaysia - Timor,Leste,3,0,1,Johor Bahru,Malaysia,2016_afc_asian_cup_qualification.txt
+Maldives,Yemen,0,2,2,Malé,Maldives,2016_afc_asian_cup_qualification.txt
+Tajikistan,Bangladesh,5,0,1,Dushanbe,Tajikistan,2016_afc_asian_cup_qualification.txt
+Malaysia - Timor,Leste,3,0,1,Johor Bahru,Malaysia,2016_afc_asian_cup_qualification.txt
+Bangladesh,Tajikistan,0,1,2,Dhaka,Bangladesh,2016_afc_asian_cup_qualification.txt
+Cambodia,Taiwan,2,0,1,Phnom Penh,Cambodia,2016_afc_asian_cup_qualification.txt
+India,Laos,6,1,1,Guwahati,India,2016_afc_asian_cup_qualification.txt
+Yemen,Maldives,2,0,1,Doha,Qatar,2016_afc_asian_cup_qualification.txt
+Bangladesh,Bhutan,0,0,X,Dhaka,Bangladesh,2016_afc_asian_cup_qualification.txt
+Maldives,Laos,4,0,1,Malé,Maldives,2016_afc_asian_cup_qualification.txt
+Taiwan - Timor,Leste,2,1,1,Kaohsiung,Taiwan,2016_afc_asian_cup_qualification.txt
+Bhutan,Bangladesh,3,1,1,Thimphu,Bhutan,2016_afc_asian_cup_qualification.txt
+Laos,Maldives,1,1,X,Vientiane,Laos,2016_afc_asian_cup_qualification.txt
+Afghanistan,Vietnam,1,1,X,Dushanbe,Tajikistan,2017_afc_asian_cup_qualification.txt
+Bahrain,Singapore,0,0,X,Riffa,Bahrain,2017_afc_asian_cup_qualification.txt
+Myanmar,India,0,1,2,Yangon,Myanmar,2017_afc_asian_cup_qualification.txt
+Jordan,Cambodia,7,0,1,Amman,Jordan,2017_afc_asian_cup_qualification.txt
+Kyrgyzstan,Macau,1,0,1,Bishkek,Kyrgyzstan,2017_afc_asian_cup_qualification.txt
+Lebanon,Hong Kong,2,0,1,Beirut,Lebanon,2017_afc_asian_cup_qualification.txt
+Maldives,Palestine,0,3,2,Malé,Maldives,2017_afc_asian_cup_qualification.txt
+Oman,Bhutan,14,0,1,Muscat,Oman,2017_afc_asian_cup_qualification.txt
+Philippines,Nepal,4,1,1,Manila,Philippines,2017_afc_asian_cup_qualification.txt
+Yemen,Tajikistan,2,1,1,Doha,Qatar,2017_afc_asian_cup_qualification.txt
+Singapore,Taiwan,1,2,2,Kallang,Singapore,2017_afc_asian_cup_qualification.txt
+Bhutan,Maldives,0,2,2,Thimphu,Bhutan,2017_afc_asian_cup_qualification.txt
+Cambodia,Afghanistan,1,0,1,Phnom Penh,Cambodia,2017_afc_asian_cup_qualification.txt
+Hong Kong,North Korea,1,1,X,So Kon Po,Hong Kong,2017_afc_asian_cup_qualification.txt
+India,Kyrgyzstan,1,0,1,Bangalore,India,2017_afc_asian_cup_qualification.txt
+Macau,Myanmar,0,4,2,Macau,Macau,2017_afc_asian_cup_qualification.txt
+Malaysia,Lebanon,1,2,2,Johor Bahru,Malaysia,2017_afc_asian_cup_qualification.txt
+Nepal,Yemen,0,0,X,Kathmandu,Nepal,2017_afc_asian_cup_qualification.txt
+Palestine,Oman,2,1,1,Al-Ram,Palestine,2017_afc_asian_cup_qualification.txt
+Tajikistan,Philippines,3,4,2,Dushanbe,Tajikistan,2017_afc_asian_cup_qualification.txt
+Turkmenistan,Bahrain,1,2,2,Daşoguz,Turkmenistan,2017_afc_asian_cup_qualification.txt
+Vietnam,Jordan,0,0,X,Ho Chi Minh City,Vietnam,2017_afc_asian_cup_qualification.txt
+Bahrain,Taiwan,5,0,1,Riffa,Bahrain,2017_afc_asian_cup_qualification.txt
+Bhutan,Palestine,0,2,2,Thimphu,Bhutan,2017_afc_asian_cup_qualification.txt
+Cambodia,Vietnam,1,2,2,Phnom Penh,Cambodia,2017_afc_asian_cup_qualification.txt
+Jordan,Afghanistan,4,1,1,Amman,Jordan,2017_afc_asian_cup_qualification.txt
+North Korea,Lebanon,2,2,X,Pyongyang,North Korea,2017_afc_asian_cup_qualification.txt
+Macau,India,0,2,2,Macau,Macau,2017_afc_asian_cup_qualification.txt
+Malaysia,Hong Kong,1,1,X,Paya Rumput,Malaysia,2017_afc_asian_cup_qualification.txt
+Nepal,Tajikistan,1,2,2,Lalitpur,Nepal,2017_afc_asian_cup_qualification.txt
+Oman,Maldives,5,0,1,Muscat,Oman,2017_afc_asian_cup_qualification.txt
+Philippines,Yemen,2,2,X,Bacolod,Philippines,2017_afc_asian_cup_qualification.txt
+Singapore,Turkmenistan,1,1,X,Kallang,Singapore,2017_afc_asian_cup_qualification.txt
+Afghanistan,Jordan,3,3,X,Dushanbe,Tajikistan,2017_afc_asian_cup_qualification.txt
+Myanmar,Kyrgyzstan,2,2,X,Yangon,Myanmar,2017_afc_asian_cup_qualification.txt
+Hong Kong,Malaysia,2,0,1,So Kon Po,Hong Kong,2017_afc_asian_cup_qualification.txt
+Lebanon,North Korea,5,0,1,Beirut,Lebanon,2017_afc_asian_cup_qualification.txt
+Maldives,Oman,1,3,2,Malé,Maldives,2017_afc_asian_cup_qualification.txt
+Palestine,Bhutan,10,0,1,Hebron,Palestine,2017_afc_asian_cup_qualification.txt
+Taiwan,Bahrain,2,1,1,Taipei,Taiwan,2017_afc_asian_cup_qualification.txt
+Tajikistan,Nepal,3,0,1,Hisor,Tajikistan,2017_afc_asian_cup_qualification.txt
+Turkmenistan,Singapore,2,1,1,Ashgabat,Turkmenistan,2017_afc_asian_cup_qualification.txt
+Vietnam,Cambodia,5,0,1,Hanoi,Vietnam,2017_afc_asian_cup_qualification.txt
+Yemen,Philippines,1,1,X,Al Wakrah,Qatar,2017_afc_asian_cup_qualification.txt
+India,Macau,4,1,1,Bangalore,India,2017_afc_asian_cup_qualification.txt
+North Korea,Malaysia,4,1,1,Buriram,Thailand,2017_afc_asian_cup_qualification.txt
+Malaysia,North Korea,1,4,2,Buriram,Thailand,2017_afc_asian_cup_qualification.txt
+Bhutan,Oman,2,4,2,Thimphu,Bhutan,2017_afc_asian_cup_qualification.txt
+Cambodia,Jordan,0,1,2,Phnom Penh,Cambodia,2017_afc_asian_cup_qualification.txt
+Hong Kong,Lebanon,0,1,2,So Kon Po,Hong Kong,2017_afc_asian_cup_qualification.txt
+India,Myanmar,2,2,X,Margao,India,2017_afc_asian_cup_qualification.txt
+Macau,Kyrgyzstan,3,4,2,Macau,Macau,2017_afc_asian_cup_qualification.txt
+Nepal,Philippines,0,0,X,Lalitpur,Nepal,2017_afc_asian_cup_qualification.txt
+Palestine,Maldives,8,1,1,Jenin,Palestine,2017_afc_asian_cup_qualification.txt
+Singapore,Bahrain,0,3,2,Kallang,Singapore,2017_afc_asian_cup_qualification.txt
+Tajikistan,Yemen,0,0,X,Hisor,Tajikistan,2017_afc_asian_cup_qualification.txt
+Turkmenistan,Taiwan,2,1,1,Balkanabat,Turkmenistan,2017_afc_asian_cup_qualification.txt
+Vietnam,Afghanistan,0,0,X,Hanoi,Vietnam,2017_afc_asian_cup_qualification.txt
+Kyrgyzstan,Myanmar,5,1,1,Incheon,South Korea,2018_afc_asian_cup_qualification.txt
+Afghanistan,Cambodia,2,1,1,Dushanbe,Tajikistan,2018_afc_asian_cup_qualification.txt
+Bahrain,Turkmenistan,4,0,1,Riffa,Bahrain,2018_afc_asian_cup_qualification.txt
+Myanmar,Macau,1,0,1,Yangon,Myanmar,2018_afc_asian_cup_qualification.txt
+Jordan,Vietnam,1,1,X,Amman,Jordan,2018_afc_asian_cup_qualification.txt
+North Korea,Hong Kong,2,0,1,Pyongyang,North Korea,2018_afc_asian_cup_qualification.txt
+Kyrgyzstan,India,2,1,1,Bishkek,Kyrgyzstan,2018_afc_asian_cup_qualification.txt
+Lebanon,Malaysia,2,1,1,Beirut,Lebanon,2018_afc_asian_cup_qualification.txt
+Maldives,Bhutan,7,0,1,Malé,Maldives,2018_afc_asian_cup_qualification.txt
+Oman,Palestine,1,0,1,Muscat,Oman,2018_afc_asian_cup_qualification.txt
+Philippines,Tajikistan,2,1,1,Manila,Philippines,2018_afc_asian_cup_qualification.txt
+Taiwan,Singapore,1,0,1,Taipei,Taiwan,2018_afc_asian_cup_qualification.txt
+Yemen,Nepal,2,1,1,Doha,Qatar,2018_afc_asian_cup_qualification.txt
+Indonesia,Taiwan,2,1,1,Buriram,Thailand,2021_afc_asian_cup_qualification.txt
+Guam,Cambodia,0,1,2,Isa Town,Bahrain,2021_afc_asian_cup_qualification.txt
+Taiwan,Indonesia,0,3,2,Buriram,Thailand,2021_afc_asian_cup_qualification.txt
+Cambodia,Guam,2,1,1,Isa Town,Bahrain,2021_afc_asian_cup_qualification.txt
+Kuwait,Indonesia,1,2,2,Kuwait City,Kuwait,2022_afc_asian_cup_qualification.txt
+Jordan,Nepal,2,0,1,Kuwait City,Kuwait,2022_afc_asian_cup_qualification.txt
+Philippines,Yemen,0,0,X,Ulaanbaatar,Mongolia,2022_afc_asian_cup_qualification.txt
+Mongolia,Palestine,0,1,2,Ulaanbaatar,Mongolia,2022_afc_asian_cup_qualification.txt
+Thailand,Maldives,3,0,1,Namangan,Uzbekistan,2022_afc_asian_cup_qualification.txt
+Uzbekistan,Sri Lanka,3,0,1,Namangan,Uzbekistan,2022_afc_asian_cup_qualification.txt
+Hong Kong,Afghanistan,2,1,1,Kolkota,India,2022_afc_asian_cup_qualification.txt
+India,Cambodia,2,0,1,Kolkota,India,2022_afc_asian_cup_qualification.txt
+Bahrain,Bangladesh,2,0,1,Kuala Lumpur,Malaysia,2022_afc_asian_cup_qualification.txt
+Malaysia,Turkmenistan,3,1,1,Kuala Lumpur,Malaysia,2022_afc_asian_cup_qualification.txt
+Tajikistan,Myanmar,4,0,1,Bishkek,Kyrgyzstan,2022_afc_asian_cup_qualification.txt
+Kyrgyzstan,Singapore,2,1,1,Bishkek,Kyrgyzstan,2022_afc_asian_cup_qualification.txt
+Kuwait,Nepal,4,1,1,Kuwait City,Kuwait,2022_afc_asian_cup_qualification.txt
+Indonesia,Jordan,0,1,2,Kuwait City,Kuwait,2022_afc_asian_cup_qualification.txt
+Mongolia,Philippines,0,1,2,Ulaanbaatar,Mongolia,2022_afc_asian_cup_qualification.txt
+Yemen,Palestine,0,5,2,Ulaanbaatar,Mongolia,2022_afc_asian_cup_qualification.txt
+Sri Lanka,Thailand,0,2,2,Namangan,Uzbekistan,2022_afc_asian_cup_qualification.txt
+Uzbekistan,Maldives,4,0,1,Namangan,Uzbekistan,2022_afc_asian_cup_qualification.txt
+Cambodia,Hong Kong,0,3,2,Kolkota,India,2022_afc_asian_cup_qualification.txt
+India,Afghanistan,2,1,1,Kolkota,India,2022_afc_asian_cup_qualification.txt
+Bangladesh,Turkmenistan,1,2,2,Kuala Lumpur,Malaysia,2022_afc_asian_cup_qualification.txt
+Malaysia,Bahrain,1,2,2,Kuala Lumpur,Malaysia,2022_afc_asian_cup_qualification.txt
+Singapore,Tajikistan,0,1,2,Bishkek,Kyrgyzstan,2022_afc_asian_cup_qualification.txt
+Kyrgyzstan,Myanmar,2,0,1,Bishkek,Kyrgyzstan,2022_afc_asian_cup_qualification.txt
+Kuwait,Jordan,0,3,2,Kuwait City,Kuwait,2022_afc_asian_cup_qualification.txt
+Indonesia,Nepal,7,0,1,Kuwait City,Kuwait,2022_afc_asian_cup_qualification.txt
+Palestine,Philippines,4,0,1,Ulaanbaatar,Mongolia,2022_afc_asian_cup_qualification.txt
+Mongolia,Yemen,2,0,1,Ulaanbaatar,Mongolia,2022_afc_asian_cup_qualification.txt
+Maldives,Sri Lanka,1,0,1,Namangan,Uzbekistan,2022_afc_asian_cup_qualification.txt
+Uzbekistan,Thailand,2,0,1,Namangan,Uzbekistan,2022_afc_asian_cup_qualification.txt
+Afghanistan,Cambodia,2,2,X,Kolkota,India,2022_afc_asian_cup_qualification.txt
+India,Hong Kong,4,0,1,Kolkota,India,2022_afc_asian_cup_qualification.txt
+Bahrain,Turkmenistan,1,0,1,Kuala Lumpur,Malaysia,2022_afc_asian_cup_qualification.txt
+Malaysia,Bangladesh,4,1,1,Kuala Lumpur,Malaysia,2022_afc_asian_cup_qualification.txt
+Myanmar,Singapore,2,6,2,Bishkek,Kyrgyzstan,2022_afc_asian_cup_qualification.txt
+Kyrgyzstan,Tajikistan,0,0,X,Bishkek,Kyrgyzstan,2022_afc_asian_cup_qualification.txt
+Sri Lanka,Cambodia,0,0,X,Colombo,Sri Lanka,2024_afc_asian_cup_qualification.txt
+Timor-Leste,Mongolia,4,1,1,Gianyar,Indonesia,2024_afc_asian_cup_qualification.txt
+Brunei,Macau,3,0,1,Bandar Seri Begawan,Brunei,2024_afc_asian_cup_qualification.txt
+Cambodia,Sri Lanka,2,2,X,Phnom Penh,Cambodia,2024_afc_asian_cup_qualification.txt
+Macau,Brunei,0,1,2,Taipa,Macau,2024_afc_asian_cup_qualification.txt
+Mongolia - Timor,Leste,2,0,1,Ulaanbaatar,Mongolia,2024_afc_asian_cup_qualification.txt

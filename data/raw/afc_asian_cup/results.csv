@@ -1,0 +1,422 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Hong Kong,Israel,2,3,2,So Kon Po,Hong Kong,1956_afc_asian_cup.txt
+Hong Kong,South Korea,2,2,X,So Kon Po,Hong Kong,1956_afc_asian_cup.txt
+Israel,South Korea,1,2,2,So Kon Po,Hong Kong,1956_afc_asian_cup.txt
+Hong Kong,Vietnam Republic,2,2,X,So Kon Po,Hong Kong,1956_afc_asian_cup.txt
+Israel,Vietnam Republic,2,1,1,So Kon Po,Hong Kong,1956_afc_asian_cup.txt
+South Korea,Vietnam Republic,5,3,1,So Kon Po,Hong Kong,1956_afc_asian_cup.txt
+South Korea,Vietnam Republic,5,1,1,Seoul,South Korea,1960_afc_asian_cup.txt
+Taiwan,Vietnam Republic,2,0,1,Seoul,South Korea,1960_afc_asian_cup.txt
+South Korea,Israel,3,0,1,Seoul,South Korea,1960_afc_asian_cup.txt
+Israel,Vietnam Republic,5,1,1,Seoul,South Korea,1960_afc_asian_cup.txt
+South Korea,Taiwan,1,0,1,Seoul,South Korea,1960_afc_asian_cup.txt
+Israel,Taiwan,1,0,1,Seoul,South Korea,1960_afc_asian_cup.txt
+Israel,Hong Kong,1,0,1,Ramat Gan,Israel,1964_afc_asian_cup.txt
+India,South Korea,2,0,1,Haifa,Israel,1964_afc_asian_cup.txt
+Israel,India,2,0,1,Jaffa,Israel,1964_afc_asian_cup.txt
+Hong Kong,South Korea,0,1,2,Jerusalem,Israel,1964_afc_asian_cup.txt
+Hong Kong,India,1,3,2,Jaffa,Israel,1964_afc_asian_cup.txt
+Israel,South Korea,2,1,1,Ramat Gan,Israel,1964_afc_asian_cup.txt
+Iran,Hong Kong,2,0,1,Tehran,Iran,1968_afc_asian_cup.txt
+Myanmar,Taiwan,1,1,X,Tehran,Iran,1968_afc_asian_cup.txt
+Hong Kong,Israel,1,6,2,Tehran,Iran,1968_afc_asian_cup.txt
+Iran,Taiwan,4,0,1,Tehran,Iran,1968_afc_asian_cup.txt
+Myanmar,Israel,1,0,1,Tehran,Iran,1968_afc_asian_cup.txt
+Hong Kong,Taiwan,1,1,X,Tehran,Iran,1968_afc_asian_cup.txt
+Iran,Myanmar,3,1,1,Tehran,Iran,1968_afc_asian_cup.txt
+Israel,Taiwan,4,1,1,Tehran,Iran,1968_afc_asian_cup.txt
+Myanmar,Hong Kong,2,0,1,Tehran,Iran,1968_afc_asian_cup.txt
+Iran,Israel,2,1,1,Tehran,Iran,1968_afc_asian_cup.txt
+Iran,Cambodia,2,0,1,Bangkok,Thailand,1972_afc_asian_cup.txt
+South Korea,Iraq,0,0,X,Bangkok,Thailand   [Iraq wins on penalties],1972_afc_asian_cup.txt
+Thailand,Kuwait,0,2,2,Bangkok,Thailand,1972_afc_asian_cup.txt
+Iran,Iraq,3,0,1,Bangkok,Thailand,1972_afc_asian_cup.txt
+Cambodia,South Korea,1,4,2,Bangkok,Thailand,1972_afc_asian_cup.txt
+Thailand,Iraq,1,1,X,Bangkok,Thailand,1972_afc_asian_cup.txt
+South Korea,Kuwait,1,2,2,Bangkok,Thailand,1972_afc_asian_cup.txt
+Thailand,Iran,2,3,2,Bangkok,Thailand,1972_afc_asian_cup.txt
+Cambodia,Kuwait,4,0,1,Bangkok,Thailand,1972_afc_asian_cup.txt
+Iran,Cambodia,2,1,1,Bangkok,Thailand,1972_afc_asian_cup.txt
+Thailand,South Korea,1,1,X,Bangkok,Thailand   [South Korea wins on penalties],1972_afc_asian_cup.txt
+Iran,South Korea,2,1,1,Bangkok,Thailand,1972_afc_asian_cup.txt
+Thailand,Cambodia,2,2,X,Bangkok,Thailand   [Thailand wins on penalties],1972_afc_asian_cup.txt
+Kuwait,Malaysia,2,0,1,Tehran,Iran,1976_afc_asian_cup.txt
+Iran,Iraq,2,0,1,Tehran,Iran,1976_afc_asian_cup.txt
+China PR,Malaysia,1,1,X,Tehran,Iran,1976_afc_asian_cup.txt
+Iraq,Yemen DPR,1,0,1,Tehran,Iran,1976_afc_asian_cup.txt
+China PR,Kuwait,0,1,2,Tehran,Iran,1976_afc_asian_cup.txt
+Iran,Yemen DPR,8,0,1,Tehran,Iran,1976_afc_asian_cup.txt
+Iran,China PR,2,0,1,Tehran,Iran,1976_afc_asian_cup.txt
+Iraq,Kuwait,2,3,2,Tehran,Iran,1976_afc_asian_cup.txt
+China PR,Iraq,1,0,1,Tehran,Iran,1976_afc_asian_cup.txt
+Iran,Kuwait,1,0,1,Tehran,Iran,1976_afc_asian_cup.txt
+Kuwait,United Arab Emirates,1,1,X,Kuwait City,Kuwait,1980_afc_asian_cup.txt
+North Korea,Bangladesh,3,2,1,Kuwait City,Kuwait,1980_afc_asian_cup.txt
+Malaysia,South Korea,1,1,X,Kuwait City,Kuwait,1980_afc_asian_cup.txt
+Iran,Syria,0,0,X,Kuwait City,Kuwait,1980_afc_asian_cup.txt
+Qatar,United Arab Emirates,2,1,1,Kuwait City,Kuwait,1980_afc_asian_cup.txt
+North Korea,China PR,2,1,1,Kuwait City,Kuwait,1980_afc_asian_cup.txt
+Kuwait,Malaysia,3,1,1,Kuwait City,Kuwait,1980_afc_asian_cup.txt
+Bangladesh,Syria,0,1,2,Kuwait City,Kuwait,1980_afc_asian_cup.txt
+Qatar,South Korea,0,2,2,Kuwait City,Kuwait,1980_afc_asian_cup.txt
+China PR,Iran,2,2,X,Kuwait City,Kuwait,1980_afc_asian_cup.txt
+United Arab Emirates,Malaysia,0,2,2,Kuwait City,Kuwait,1980_afc_asian_cup.txt
+Kuwait,South Korea,0,3,2,Kuwait City,Kuwait,1980_afc_asian_cup.txt
+Bangladesh,Iran,0,7,2,Kuwait City,Kuwait,1980_afc_asian_cup.txt
+Malaysia,Qatar,1,1,X,Kuwait City,Kuwait,1980_afc_asian_cup.txt
+Syria,China PR,1,0,1,Kuwait City,Kuwait,1980_afc_asian_cup.txt
+Iran,North Korea,3,2,1,Kuwait City,Kuwait,1980_afc_asian_cup.txt
+South Korea,United Arab Emirates,4,1,1,Kuwait City,Kuwait,1980_afc_asian_cup.txt
+China PR,Bangladesh,6,0,1,Kuwait City,Kuwait,1980_afc_asian_cup.txt
+Kuwait,Qatar,4,0,1,Kuwait City,Kuwait,1980_afc_asian_cup.txt
+Syria,North Korea,1,2,2,Kuwait City,Kuwait,1980_afc_asian_cup.txt
+South Korea,North Korea,2,1,1,Kuwait City,Kuwait,1980_afc_asian_cup.txt
+Kuwait,Iran,2,1,1,Kuwait City,Kuwait,1980_afc_asian_cup.txt
+Iran,North Korea,3,0,1,Kuwait City,Kuwait,1980_afc_asian_cup.txt
+Kuwait,South Korea,3,0,1,Kuwait City,Kuwait,1980_afc_asian_cup.txt
+Iran,United Arab Emirates,3,0,1,Kallang,Singapore,1984_afc_asian_cup.txt
+Qatar,Syria,1,1,X,Kallang,Singapore,1984_afc_asian_cup.txt
+Saudi Arabia,South Korea,1,1,X,Kallang,Singapore,1984_afc_asian_cup.txt
+Singapore,India,2,0,1,Kallang,Singapore,1984_afc_asian_cup.txt
+China PR,Iran,0,2,2,Kallang,Singapore,1984_afc_asian_cup.txt
+Kuwait,Qatar,1,0,1,Kallang,Singapore,1984_afc_asian_cup.txt
+Syria,Saudi Arabia,0,1,2,Kallang,Singapore,1984_afc_asian_cup.txt
+United Arab Emirates,India,2,0,1,Kallang,Singapore,1984_afc_asian_cup.txt
+South Korea,Kuwait,0,0,X,Kallang,Singapore,1984_afc_asian_cup.txt
+Singapore,China PR,0,2,2,Kallang,Singapore,1984_afc_asian_cup.txt
+Iran,India,0,0,X,Kallang,Singapore,1984_afc_asian_cup.txt
+Syria,South Korea,1,0,1,Kallang,Singapore,1984_afc_asian_cup.txt
+Qatar,Saudi Arabia,1,1,X,Kallang,Singapore,1984_afc_asian_cup.txt
+Singapore,United Arab Emirates,0,1,2,Kallang,Singapore,1984_afc_asian_cup.txt
+India,China PR,0,3,2,Kallang,Singapore,1984_afc_asian_cup.txt
+Kuwait,Syria,3,1,1,Kallang,Singapore,1984_afc_asian_cup.txt
+South Korea,Qatar,0,1,2,Kallang,Singapore,1984_afc_asian_cup.txt
+Singapore,Iran,1,1,X,Kallang,Singapore,1984_afc_asian_cup.txt
+China PR,United Arab Emirates,5,0,1,Kallang,Singapore,1984_afc_asian_cup.txt
+Saudi Arabia,Kuwait,1,0,1,Kallang,Singapore,1984_afc_asian_cup.txt
+Saudi Arabia,Iran,1,1,X,Kallang,Singapore   [Saudi Arabia wins on penalties],1984_afc_asian_cup.txt
+Kuwait,China PR,0,1,2,Kallang,Singapore,1984_afc_asian_cup.txt
+Iran,Kuwait,1,1,X,Kallang,Singapore   [Kuwait wins on penalties],1984_afc_asian_cup.txt
+Saudi Arabia,China PR,2,0,1,Kallang,Singapore,1984_afc_asian_cup.txt
+Qatar,Iran,0,2,2,Doha,Qatar,1988_afc_asian_cup.txt
+Syria,Saudi Arabia,0,2,2,Doha,Qatar,1988_afc_asian_cup.txt
+Kuwait,Bahrain,0,0,X,Doha,Qatar,1988_afc_asian_cup.txt
+United Arab Emirates,South Korea,0,1,2,Doha,Qatar,1988_afc_asian_cup.txt
+China PR,Syria,3,0,1,Doha,Qatar,1988_afc_asian_cup.txt
+Japan,Iran,0,0,X,Doha,Qatar,1988_afc_asian_cup.txt
+Qatar,United Arab Emirates,2,1,1,Doha,Qatar,1988_afc_asian_cup.txt
+Saudi Arabia,Kuwait,0,0,X,Doha,Qatar,1988_afc_asian_cup.txt
+Bahrain,China PR,0,1,2,Doha,Qatar,1988_afc_asian_cup.txt
+South Korea,Japan,2,0,1,Doha,Qatar,1988_afc_asian_cup.txt
+Iran,United Arab Emirates,1,0,1,Doha,Qatar,1988_afc_asian_cup.txt
+Syria,Kuwait,1,0,1,Doha,Qatar,1988_afc_asian_cup.txt
+Qatar,South Korea,2,3,2,Doha,Qatar,1988_afc_asian_cup.txt
+Saudi Arabia,Bahrain,1,1,X,Doha,Qatar,1988_afc_asian_cup.txt
+Kuwait,China PR,2,2,X,Doha,Qatar,1988_afc_asian_cup.txt
+United Arab Emirates,Japan,1,0,1,Doha,Qatar,1988_afc_asian_cup.txt
+Bahrain,Syria,0,1,2,Doha,Qatar,1988_afc_asian_cup.txt
+South Korea,Iran,3,0,1,Doha,Qatar,1988_afc_asian_cup.txt
+China PR,Saudi Arabia,0,1,2,Doha,Qatar,1988_afc_asian_cup.txt
+Qatar,Japan,3,0,1,Doha,Qatar,1988_afc_asian_cup.txt
+South Korea,China PR,2,1,1,Doha,Qatar,1988_afc_asian_cup.txt
+Saudi Arabia,Iran,1,0,1,Doha,Qatar,1988_afc_asian_cup.txt
+China PR,Iran,0,0,X,Doha,Qatar   [Iran wins on penalties],1988_afc_asian_cup.txt
+South Korea,Saudi Arabia,0,0,X,Doha,Qatar   [Saudi Arabia wins on penalties],1988_afc_asian_cup.txt
+Qatar,Thailand,1,1,X,Hiroshima,Japan,1992_afc_asian_cup.txt
+Saudi Arabia,China PR,1,1,X,Hiroshima,Japan,1992_afc_asian_cup.txt
+Japan,United Arab Emirates,0,0,X,Onomichi,Japan,1992_afc_asian_cup.txt
+North Korea,Iran,0,2,2,Onomichi,Japan,1992_afc_asian_cup.txt
+China PR,Thailand,0,0,X,Hiroshima,Japan,1992_afc_asian_cup.txt
+Saudi Arabia,Qatar,1,1,X,Hiroshima,Japan,1992_afc_asian_cup.txt
+Japan,North Korea,1,1,X,Hiroshima,Japan,1992_afc_asian_cup.txt
+United Arab Emirates,Iran,0,0,X,Hiroshima,Japan,1992_afc_asian_cup.txt
+China PR,Qatar,2,1,1,Onomichi,Japan,1992_afc_asian_cup.txt
+Saudi Arabia,Thailand,4,0,1,Onomichi,Japan,1992_afc_asian_cup.txt
+Japan,Iran,1,0,1,Hiroshima,Japan,1992_afc_asian_cup.txt
+United Arab Emirates,North Korea,2,1,1,Hiroshima,Japan,1992_afc_asian_cup.txt
+Japan,China PR,3,2,1,Hiroshima,Japan,1992_afc_asian_cup.txt
+Saudi Arabia,United Arab Emirates,2,0,1,Hiroshima,Japan,1992_afc_asian_cup.txt
+China PR,United Arab Emirates,1,1,X,Hiroshima,Japan   [China PR wins on penalties],1992_afc_asian_cup.txt
+Japan,Saudi Arabia,1,0,1,Hiroshima,Japan,1992_afc_asian_cup.txt
+Indonesia,Kuwait,2,2,X,Abu Dhabi,United Arab Emirates,1996_afc_asian_cup.txt
+United Arab Emirates,South Korea,1,1,X,Abu Dhabi,United Arab Emirates,1996_afc_asian_cup.txt
+Iran,Iraq,1,2,2,Dubai,United Arab Emirates,1996_afc_asian_cup.txt
+Saudi Arabia,Thailand,6,0,1,Dubai,United Arab Emirates,1996_afc_asian_cup.txt
+China PR,Uzbekistan,0,2,2,Al Ain,United Arab Emirates,1996_afc_asian_cup.txt
+Japan,Syria,2,1,1,Al Ain,United Arab Emirates,1996_afc_asian_cup.txt
+South Korea,Indonesia,4,2,1,Abu Dhabi,United Arab Emirates,1996_afc_asian_cup.txt
+United Arab Emirates,Kuwait,3,2,1,Abu Dhabi,United Arab Emirates,1996_afc_asian_cup.txt
+Saudi Arabia,Iraq,1,0,1,Dubai,United Arab Emirates,1996_afc_asian_cup.txt
+Thailand,Iran,1,3,2,Dubai,United Arab Emirates,1996_afc_asian_cup.txt
+Japan,Uzbekistan,4,0,1,Al Ain,United Arab Emirates,1996_afc_asian_cup.txt
+Syria,China PR,0,3,2,Al Ain,United Arab Emirates,1996_afc_asian_cup.txt
+Kuwait,South Korea,2,0,1,Abu Dhabi,United Arab Emirates,1996_afc_asian_cup.txt
+United Arab Emirates,Indonesia,2,0,1,Abu Dhabi,United Arab Emirates,1996_afc_asian_cup.txt
+Iraq,Thailand,4,1,1,Dubai,United Arab Emirates,1996_afc_asian_cup.txt
+Saudi Arabia,Iran,0,3,2,Dubai,United Arab Emirates,1996_afc_asian_cup.txt
+Japan,China PR,1,0,1,Al Ain,United Arab Emirates,1996_afc_asian_cup.txt
+Uzbekistan,Syria,1,2,2,Al Ain,United Arab Emirates,1996_afc_asian_cup.txt
+Kuwait,Japan,2,0,1,Al Ain,United Arab Emirates,1996_afc_asian_cup.txt
+United Arab Emirates,Iraq,1,0,1,Abu Dhabi,United Arab Emirates,1996_afc_asian_cup.txt
+South Korea,Iran,2,6,2,Dubai,United Arab Emirates,1996_afc_asian_cup.txt
+Saudi Arabia,China PR,4,3,1,Abu Dhabi,United Arab Emirates,1996_afc_asian_cup.txt
+Iran,Saudi Arabia,0,0,X,Abu Dhabi,United Arab Emirates   [Saudi Arabia wins on penalties],1996_afc_asian_cup.txt
+United Arab Emirates,Kuwait,1,0,1,Abu Dhabi,United Arab Emirates,1996_afc_asian_cup.txt
+Iran,Kuwait,1,1,X,Abu Dhabi,United Arab Emirates   [Iran wins on penalties],1996_afc_asian_cup.txt
+United Arab Emirates,Saudi Arabia,0,0,X,Abu Dhabi,United Arab Emirates   [Saudi Arabia wins on penalties],1996_afc_asian_cup.txt
+Iraq,Thailand,2,0,1,Tripoli,Lebanon,2000_afc_asian_cup.txt
+Lebanon,Iran,0,4,2,Beirut,Lebanon,2000_afc_asian_cup.txt
+South Korea,China PR,2,2,X,Tripoli,Lebanon,2000_afc_asian_cup.txt
+Kuwait,Indonesia,0,0,X,Tripoli,Lebanon,2000_afc_asian_cup.txt
+Qatar,Uzbekistan,1,1,X,Sidon,Lebanon,2000_afc_asian_cup.txt
+Saudi Arabia,Japan,1,4,2,Sidon,Lebanon,2000_afc_asian_cup.txt
+Iran,Thailand,1,1,X,Beirut,Lebanon,2000_afc_asian_cup.txt
+Lebanon,Iraq,2,2,X,Beirut,Lebanon,2000_afc_asian_cup.txt
+China PR,Indonesia,4,0,1,Tripoli,Lebanon,2000_afc_asian_cup.txt
+South Korea,Kuwait,0,1,2,Tripoli,Lebanon,2000_afc_asian_cup.txt
+Japan,Uzbekistan,8,1,1,Sidon,Lebanon,2000_afc_asian_cup.txt
+Saudi Arabia,Qatar,0,0,X,Sidon,Lebanon,2000_afc_asian_cup.txt
+Iran,Iraq,1,0,1,Sidon,Lebanon,2000_afc_asian_cup.txt
+Lebanon,Thailand,1,1,X,Beirut,Lebanon,2000_afc_asian_cup.txt
+China PR,Kuwait,0,0,X,Tripoli,Lebanon,2000_afc_asian_cup.txt
+South Korea,Indonesia,3,0,1,Beirut,Lebanon,2000_afc_asian_cup.txt
+Japan,Qatar,1,1,X,Beirut,Lebanon,2000_afc_asian_cup.txt
+Saudi Arabia,Uzbekistan,5,0,1,Sidon,Lebanon,2000_afc_asian_cup.txt
+China PR,Qatar,3,1,1,Sidon,Lebanon,2000_afc_asian_cup.txt
+Iran,South Korea,1,2,2,Tripoli,Lebanon,2000_afc_asian_cup.txt
+Japan,Iraq,4,1,1,Beirut,Lebanon,2000_afc_asian_cup.txt
+Kuwait,Saudi Arabia,2,3,2,Beirut,Lebanon,2000_afc_asian_cup.txt
+China PR,Japan,2,3,2,Beirut,Lebanon,2000_afc_asian_cup.txt
+South Korea,Saudi Arabia,1,2,2,Beirut,Lebanon,2000_afc_asian_cup.txt
+China PR,South Korea,0,1,2,Beirut,Lebanon,2000_afc_asian_cup.txt
+Japan,Saudi Arabia,1,0,1,Beirut,Lebanon,2000_afc_asian_cup.txt
+China PR,Bahrain,2,2,X,Beijing,China PR,2004_afc_asian_cup.txt
+Iraq,Uzbekistan,0,1,2,Chengdu,China PR,2004_afc_asian_cup.txt
+Qatar,Indonesia,1,2,2,Beijing,China PR,2004_afc_asian_cup.txt
+Saudi Arabia,Turkmenistan,2,2,X,Chengdu,China PR,2004_afc_asian_cup.txt
+South Korea,Jordan,0,0,X,Jinan,China PR,2004_afc_asian_cup.txt
+Kuwait,United Arab Emirates,3,1,1,Jinan,China PR,2004_afc_asian_cup.txt
+Iran,Thailand,3,0,1,Chongqing,China PR,2004_afc_asian_cup.txt
+Japan,Oman,1,0,1,Chongqing,China PR,2004_afc_asian_cup.txt
+Bahrain,Qatar,1,1,X,Beijing,China PR,2004_afc_asian_cup.txt
+China PR,Indonesia,5,0,1,Beijing,China PR,2004_afc_asian_cup.txt
+Turkmenistan,Iraq,2,3,2,Chengdu,China PR,2004_afc_asian_cup.txt
+Uzbekistan,Saudi Arabia,1,0,1,Chengdu,China PR,2004_afc_asian_cup.txt
+Jordan,Kuwait,2,0,1,Jinan,China PR,2004_afc_asian_cup.txt
+United Arab Emirates,South Korea,0,2,2,Jinan,China PR,2004_afc_asian_cup.txt
+Oman,Iran,2,2,X,Chongqing,China PR,2004_afc_asian_cup.txt
+Thailand,Japan,1,4,2,Chongqing,China PR,2004_afc_asian_cup.txt
+Bahrain,Indonesia,3,1,1,Jinan,China PR,2004_afc_asian_cup.txt
+China PR,Qatar,1,0,1,Beijing,China PR,2004_afc_asian_cup.txt
+Saudi Arabia,Iraq,1,2,2,Chengdu,China PR,2004_afc_asian_cup.txt
+Turkmenistan,Uzbekistan,0,1,2,Chongqing,China PR,2004_afc_asian_cup.txt
+Jordan,United Arab Emirates,0,0,X,Beijing,China PR,2004_afc_asian_cup.txt
+South Korea,Kuwait,4,0,1,Jinan,China PR,2004_afc_asian_cup.txt
+Japan,Iran,0,0,X,Chongqing,China PR,2004_afc_asian_cup.txt
+Oman,Thailand,2,0,1,Chengdu,China PR,2004_afc_asian_cup.txt
+China PR,Iraq,3,0,1,Beijing,China PR,2004_afc_asian_cup.txt
+Uzbekistan,Bahrain,2,2,X,Chengdu,China PR   [Bahrain wins on penalties],2004_afc_asian_cup.txt
+Japan,Jordan,1,1,X,Chongqing,China PR   [Japan wins on penalties],2004_afc_asian_cup.txt
+South Korea,Iran,3,4,2,Jinan,China PR,2004_afc_asian_cup.txt
+Bahrain,Japan,3,4,2,Jinan,China PR,2004_afc_asian_cup.txt
+China PR,Iran,1,1,X,Beijing,China PR   [China PR wins on penalties],2004_afc_asian_cup.txt
+Iran,Bahrain,4,2,1,Beijing,China PR,2004_afc_asian_cup.txt
+China PR,Japan,1,3,2,Beijing,China PR,2004_afc_asian_cup.txt
+Thailand,Iraq,1,1,X,Bangkok,Thailand,2007_afc_asian_cup.txt
+Australia,Oman,1,1,X,Bangkok,Thailand,2007_afc_asian_cup.txt
+Vietnam,United Arab Emirates,2,0,1,Hanoi,Vietnam,2007_afc_asian_cup.txt
+Japan,Qatar,1,1,X,Hanoi,Vietnam,2007_afc_asian_cup.txt
+Indonesia,Bahrain,2,1,1,Jakarta,Indonesia,2007_afc_asian_cup.txt
+Malaysia,China PR,1,5,2,Kuala Lumpur,Malaysia,2007_afc_asian_cup.txt
+Iran,Uzbekistan,2,1,1,Kuala Lumpur,Malaysia,2007_afc_asian_cup.txt
+South Korea,Saudi Arabia,1,1,X,Jakarta,Indonesia,2007_afc_asian_cup.txt
+Thailand,Oman,2,0,1,Bangkok,Thailand,2007_afc_asian_cup.txt
+Vietnam,Qatar,1,1,X,Hanoi,Vietnam,2007_afc_asian_cup.txt
+Iraq,Australia,3,1,1,Bangkok,Thailand,2007_afc_asian_cup.txt
+United Arab Emirates,Japan,1,3,2,Hanoi,Vietnam,2007_afc_asian_cup.txt
+Indonesia,Saudi Arabia,1,2,2,Jakarta,Indonesia,2007_afc_asian_cup.txt
+Malaysia,Uzbekistan,0,5,2,Kuala Lumpur,Malaysia,2007_afc_asian_cup.txt
+Bahrain,South Korea,2,1,1,Jakarta,Indonesia,2007_afc_asian_cup.txt
+China PR,Iran,2,2,X,Kuala Lumpur,Malaysia,2007_afc_asian_cup.txt
+Oman,Iraq,0,0,X,Bangkok,Thailand,2007_afc_asian_cup.txt
+Qatar,United Arab Emirates,1,2,2,Ho Chi Minh City,Vietnam,2007_afc_asian_cup.txt
+Thailand,Australia,0,4,2,Bangkok,Thailand,2007_afc_asian_cup.txt
+Vietnam,Japan,1,4,2,Hanoi,Vietnam,2007_afc_asian_cup.txt
+Indonesia,South Korea,0,1,2,Jakarta,Indonesia,2007_afc_asian_cup.txt
+Malaysia,Iran,0,2,2,Kuala Lumpur,Malaysia,2007_afc_asian_cup.txt
+Saudi Arabia,Bahrain,4,0,1,Palembang,Indonesia,2007_afc_asian_cup.txt
+Uzbekistan,China PR,3,0,1,Shah Alam,Malaysia,2007_afc_asian_cup.txt
+Iraq,Vietnam,2,0,1,Bangkok,Thailand,2007_afc_asian_cup.txt
+Japan,Australia,1,1,X,Hanoi,Vietnam   [Japan wins on penalties],2007_afc_asian_cup.txt
+Iran,South Korea,0,0,X,Kuala Lumpur,Malaysia   [South Korea wins on penalties],2007_afc_asian_cup.txt
+Saudi Arabia,Uzbekistan,2,1,1,Jakarta,Indonesia,2007_afc_asian_cup.txt
+Iraq,South Korea,0,0,X,Kuala Lumpur,Malaysia   [Iraq wins on penalties],2007_afc_asian_cup.txt
+Japan,Saudi Arabia,2,3,2,Hanoi,Vietnam,2007_afc_asian_cup.txt
+South Korea,Japan,0,0,X,Palembang,Indonesia   [South Korea wins on penalties],2007_afc_asian_cup.txt
+Iraq,Saudi Arabia,1,0,1,Jakarta,Indonesia,2007_afc_asian_cup.txt
+Qatar,Uzbekistan,0,2,2,Doha,Qatar,2011_afc_asian_cup.txt
+Kuwait,China PR,0,2,2,Doha,Qatar,2011_afc_asian_cup.txt
+Japan,Jordan,1,1,X,Doha,Qatar,2011_afc_asian_cup.txt
+Saudi Arabia,Syria,1,2,2,Al Rayyan,Qatar,2011_afc_asian_cup.txt
+India,Australia,0,4,2,Doha,Qatar,2011_afc_asian_cup.txt
+South Korea,Bahrain,2,1,1,Doha,Qatar,2011_afc_asian_cup.txt
+Iraq,Iran,1,2,2,Al Rayyan,Qatar,2011_afc_asian_cup.txt
+North Korea,United Arab Emirates,0,0,X,Doha,Qatar,2011_afc_asian_cup.txt
+Qatar,China PR,2,0,1,Doha,Qatar,2011_afc_asian_cup.txt
+Uzbekistan,Kuwait,2,1,1,Doha,Qatar,2011_afc_asian_cup.txt
+Jordan,Saudi Arabia,1,0,1,Al Rayyan,Qatar,2011_afc_asian_cup.txt
+Syria,Japan,1,2,2,Doha,Qatar,2011_afc_asian_cup.txt
+Australia,South Korea,1,1,X,Doha,Qatar,2011_afc_asian_cup.txt
+Bahrain,India,5,2,1,Doha,Qatar,2011_afc_asian_cup.txt
+Iran,North Korea,1,0,1,Doha,Qatar,2011_afc_asian_cup.txt
+United Arab Emirates,Iraq,0,1,2,Al Rayyan,Qatar,2011_afc_asian_cup.txt
+China PR,Uzbekistan,2,2,X,Doha,Qatar,2011_afc_asian_cup.txt
+Qatar,Kuwait,3,0,1,Doha,Qatar,2011_afc_asian_cup.txt
+Jordan,Syria,2,1,1,Doha,Qatar,2011_afc_asian_cup.txt
+Saudi Arabia,Japan,0,5,2,Al Rayyan,Qatar,2011_afc_asian_cup.txt
+Australia,Bahrain,1,0,1,Doha,Qatar,2011_afc_asian_cup.txt
+South Korea,India,4,1,1,Doha,Qatar,2011_afc_asian_cup.txt
+Iraq,North Korea,1,0,1,Al Rayyan,Qatar,2011_afc_asian_cup.txt
+United Arab Emirates,Iran,0,3,2,Doha,Qatar,2011_afc_asian_cup.txt
+Qatar,Japan,2,3,2,Doha,Qatar,2011_afc_asian_cup.txt
+Uzbekistan,Jordan,2,1,1,Doha,Qatar,2011_afc_asian_cup.txt
+Australia,Iraq,1,0,1,Doha,Qatar,2011_afc_asian_cup.txt
+Iran,South Korea,0,1,2,Doha,Qatar,2011_afc_asian_cup.txt
+Japan,South Korea,2,2,X,Doha,Qatar   [Japan wins on penalties],2011_afc_asian_cup.txt
+Uzbekistan,Australia,0,6,2,Doha,Qatar,2011_afc_asian_cup.txt
+Uzbekistan,South Korea,2,3,2,Doha,Qatar,2011_afc_asian_cup.txt
+Australia,Japan,0,1,2,Doha,Qatar,2011_afc_asian_cup.txt
+Australia,Kuwait,4,1,1,Melbourne,Australia,2015_afc_asian_cup.txt
+South Korea,Oman,1,0,1,Canberra,Australia,2015_afc_asian_cup.txt
+Saudi Arabia,China PR,0,1,2,Brisbane,Australia,2015_afc_asian_cup.txt
+Uzbekistan,North Korea,1,0,1,Sydney,Australia,2015_afc_asian_cup.txt
+Iran,Bahrain,2,0,1,Melbourne,Australia,2015_afc_asian_cup.txt
+United Arab Emirates,Qatar,4,1,1,Canberra,Australia,2015_afc_asian_cup.txt
+Japan,Palestine,4,0,1,Newcastle,Australia,2015_afc_asian_cup.txt
+Jordan,Iraq,0,1,2,Brisbane,Australia,2015_afc_asian_cup.txt
+Australia,Oman,4,0,1,Sydney,Australia,2015_afc_asian_cup.txt
+Kuwait,South Korea,0,1,2,Canberra,Australia,2015_afc_asian_cup.txt
+China PR,Uzbekistan,2,1,1,Brisbane,Australia,2015_afc_asian_cup.txt
+North Korea,Saudi Arabia,1,4,2,Melbourne,Australia,2015_afc_asian_cup.txt
+Bahrain,United Arab Emirates,1,2,2,Canberra,Australia,2015_afc_asian_cup.txt
+Qatar,Iran,0,1,2,Sydney,Australia,2015_afc_asian_cup.txt
+Iraq,Japan,0,1,2,Brisbane,Australia,2015_afc_asian_cup.txt
+Palestine,Jordan,1,5,2,Melbourne,Australia,2015_afc_asian_cup.txt
+Australia,South Korea,0,1,2,Brisbane,Australia,2015_afc_asian_cup.txt
+Oman,Kuwait,1,0,1,Newcastle,Australia,2015_afc_asian_cup.txt
+China PR,North Korea,2,1,1,Canberra,Australia,2015_afc_asian_cup.txt
+Uzbekistan,Saudi Arabia,3,1,1,Melbourne,Australia,2015_afc_asian_cup.txt
+Iran,United Arab Emirates,1,0,1,Brisbane,Australia,2015_afc_asian_cup.txt
+Qatar,Bahrain,1,2,2,Sydney,Australia,2015_afc_asian_cup.txt
+Iraq,Palestine,2,0,1,Canberra,Australia,2015_afc_asian_cup.txt
+Japan,Jordan,2,0,1,Melbourne,Australia,2015_afc_asian_cup.txt
+Australia,China PR,2,0,1,Brisbane,Australia,2015_afc_asian_cup.txt
+South Korea,Uzbekistan,2,0,1,Melbourne,Australia,2015_afc_asian_cup.txt
+Iran,Iraq,3,3,X,Canberra,Australia   [Iraq wins on penalties],2015_afc_asian_cup.txt
+Japan,United Arab Emirates,1,1,X,Sydney,Australia   [United Arab Emirates wins on penalties],2015_afc_asian_cup.txt
+South Korea,Iraq,2,0,1,Sydney,Australia,2015_afc_asian_cup.txt
+Australia,United Arab Emirates,2,0,1,Newcastle,Australia,2015_afc_asian_cup.txt
+Iraq,United Arab Emirates,2,3,2,Newcastle,Australia,2015_afc_asian_cup.txt
+Australia,South Korea,2,1,1,Sydney,Australia,2015_afc_asian_cup.txt
+United Arab Emirates,Bahrain,1,1,X,Abu Dhabi,United Arab Emirates,2019_afc_asian_cup.txt
+Thailand,India,1,4,2,Abu Dhabi,United Arab Emirates,2019_afc_asian_cup.txt
+Australia,Jordan,0,1,2,Al Ain,United Arab Emirates,2019_afc_asian_cup.txt
+Syria,Palestine,0,0,X,Sharjah,United Arab Emirates,2019_afc_asian_cup.txt
+China PR,Kyrgyzstan,2,1,1,Al Ain,United Arab Emirates,2019_afc_asian_cup.txt
+South Korea,Philippines,1,0,1,Dubai,United Arab Emirates,2019_afc_asian_cup.txt
+Iran,Yemen,5,0,1,Abu Dhabi,United Arab Emirates,2019_afc_asian_cup.txt
+Iraq,Vietnam,3,2,1,Abu Dhabi,United Arab Emirates,2019_afc_asian_cup.txt
+Saudi Arabia,North Korea,4,0,1,Dubai,United Arab Emirates,2019_afc_asian_cup.txt
+Qatar,Lebanon,2,0,1,Al Ain,United Arab Emirates,2019_afc_asian_cup.txt
+Japan,Turkmenistan,3,2,1,Abu Dhabi,United Arab Emirates,2019_afc_asian_cup.txt
+Uzbekistan,Oman,2,1,1,Sharjah,United Arab Emirates,2019_afc_asian_cup.txt
+Bahrain,Thailand,0,1,2,Dubai,United Arab Emirates,2019_afc_asian_cup.txt
+Jordan,Syria,2,0,1,Al Ain,United Arab Emirates,2019_afc_asian_cup.txt
+United Arab Emirates,India,2,0,1,Abu Dhabi,United Arab Emirates,2019_afc_asian_cup.txt
+Palestine,Australia,0,3,2,Dubai,United Arab Emirates,2019_afc_asian_cup.txt
+Philippines,China PR,0,3,2,Abu Dhabi,United Arab Emirates,2019_afc_asian_cup.txt
+Kyrgyzstan,South Korea,0,1,2,Al Ain,United Arab Emirates,2019_afc_asian_cup.txt
+Vietnam,Iran,0,2,2,Abu Dhabi,United Arab Emirates,2019_afc_asian_cup.txt
+Yemen,Iraq,0,3,2,Sharjah,United Arab Emirates,2019_afc_asian_cup.txt
+Lebanon,Saudi Arabia,0,2,2,Dubai,United Arab Emirates,2019_afc_asian_cup.txt
+North Korea,Qatar,0,6,2,Al Ain,United Arab Emirates,2019_afc_asian_cup.txt
+Oman,Japan,0,1,2,Abu Dhabi,United Arab Emirates,2019_afc_asian_cup.txt
+Turkmenistan,Uzbekistan,0,4,2,Dubai,United Arab Emirates,2019_afc_asian_cup.txt
+India,Bahrain,0,1,2,Sharjah,United Arab Emirates,2019_afc_asian_cup.txt
+United Arab Emirates,Thailand,1,1,X,Al Ain,United Arab Emirates,2019_afc_asian_cup.txt
+Australia,Syria,3,2,1,Al Ain,United Arab Emirates,2019_afc_asian_cup.txt
+Palestine,Jordan,0,0,X,Abu Dhabi,United Arab Emirates,2019_afc_asian_cup.txt
+South Korea,China PR,2,0,1,Abu Dhabi,United Arab Emirates,2019_afc_asian_cup.txt
+Kyrgyzstan,Philippines,3,1,1,Dubai,United Arab Emirates,2019_afc_asian_cup.txt
+Iran,Iraq,0,0,X,Dubai,United Arab Emirates,2019_afc_asian_cup.txt
+Vietnam,Yemen,2,0,1,Al Ain,United Arab Emirates,2019_afc_asian_cup.txt
+Lebanon,North Korea,4,1,1,Sharjah,United Arab Emirates,2019_afc_asian_cup.txt
+Saudi Arabia,Qatar,0,2,2,Abu Dhabi,United Arab Emirates,2019_afc_asian_cup.txt
+Japan,Uzbekistan,2,1,1,Al Ain,United Arab Emirates,2019_afc_asian_cup.txt
+Oman,Turkmenistan,3,1,1,Abu Dhabi,United Arab Emirates,2019_afc_asian_cup.txt
+Iran,Oman,2,0,1,Abu Dhabi,United Arab Emirates,2019_afc_asian_cup.txt
+Jordan,Vietnam,1,1,X,Dubai,United Arab Emirates   [Vietnam wins on penalties],2019_afc_asian_cup.txt
+Thailand,China PR,1,2,2,Al Ain,United Arab Emirates,2019_afc_asian_cup.txt
+Australia,Uzbekistan,0,0,X,Al Ain,United Arab Emirates   [Australia wins on penalties],2019_afc_asian_cup.txt
+Japan,Saudi Arabia,1,0,1,Sharjah,United Arab Emirates,2019_afc_asian_cup.txt
+United Arab Emirates,Kyrgyzstan,3,2,1,Abu Dhabi,United Arab Emirates,2019_afc_asian_cup.txt
+South Korea,Bahrain,2,1,1,Dubai,United Arab Emirates,2019_afc_asian_cup.txt
+Qatar,Iraq,1,0,1,Abu Dhabi,United Arab Emirates,2019_afc_asian_cup.txt
+China PR,Iran,0,3,2,Abu Dhabi,United Arab Emirates,2019_afc_asian_cup.txt
+Vietnam,Japan,0,1,2,Dubai,United Arab Emirates,2019_afc_asian_cup.txt
+South Korea,Qatar,0,1,2,Abu Dhabi,United Arab Emirates,2019_afc_asian_cup.txt
+United Arab Emirates,Australia,1,0,1,Al Ain,United Arab Emirates,2019_afc_asian_cup.txt
+Iran,Japan,0,3,2,Al Ain,United Arab Emirates,2019_afc_asian_cup.txt
+United Arab Emirates,Qatar,0,4,2,Abu Dhabi,United Arab Emirates,2019_afc_asian_cup.txt
+Japan,Qatar,1,3,2,Abu Dhabi,United Arab Emirates,2019_afc_asian_cup.txt
+Qatar,Lebanon,3,0,1,Lusail,Qatar,2024_afc_asian_cup.txt
+China PR,Tajikistan,0,0,X,Doha,Qatar,2024_afc_asian_cup.txt
+Australia,India,2,0,1,Al Rayyan,Qatar,2024_afc_asian_cup.txt
+Uzbekistan,Syria,0,0,X,Doha,Qatar,2024_afc_asian_cup.txt
+United Arab Emirates,Hong Kong,3,1,1,Al Rayyan,Qatar,2024_afc_asian_cup.txt
+Iran,Palestine,4,1,1,Al Rayyan,Qatar,2024_afc_asian_cup.txt
+Japan,Vietnam,4,2,1,Doha,Qatar,2024_afc_asian_cup.txt
+Indonesia,Iraq,1,3,2,Doha,Qatar,2024_afc_asian_cup.txt
+South Korea,Bahrain,3,1,1,Doha,Qatar,2024_afc_asian_cup.txt
+Malaysia,Jordan,0,4,2,Al Wakrah,Qatar,2024_afc_asian_cup.txt
+Thailand,Kyrgyzstan,2,0,1,Doha,Qatar,2024_afc_asian_cup.txt
+Saudi Arabia,Oman,2,1,1,Al Rayyan,Qatar,2024_afc_asian_cup.txt
+Lebanon,China PR,0,0,X,Doha,Qatar,2024_afc_asian_cup.txt
+Qatar,Tajikistan,1,0,1,Al Khor,Qatar,2024_afc_asian_cup.txt
+Syria,Australia,0,1,2,Doha,Qatar,2024_afc_asian_cup.txt
+India,Uzbekistan,0,3,2,Al Rayyan,Qatar,2024_afc_asian_cup.txt
+Palestine,United Arab Emirates,1,1,X,Al Wakrah,Qatar,2024_afc_asian_cup.txt
+Hong Kong,Iran,0,1,2,Al Rayyan,Qatar,2024_afc_asian_cup.txt
+Iraq,Japan,2,1,1,Al Rayyan,Qatar,2024_afc_asian_cup.txt
+Vietnam,Indonesia,0,1,2,Doha,Qatar,2024_afc_asian_cup.txt
+Jordan,South Korea,2,2,X,Doha,Qatar,2024_afc_asian_cup.txt
+Bahrain,Malaysia,1,0,1,Doha,Qatar,2024_afc_asian_cup.txt
+Oman,Thailand,0,0,X,Doha,Qatar,2024_afc_asian_cup.txt
+Kyrgyzstan,Saudi Arabia,0,2,2,Al Rayyan,Qatar,2024_afc_asian_cup.txt
+Qatar,China PR,1,0,1,Al Rayyan,Qatar,2024_afc_asian_cup.txt
+Tajikistan,Lebanon,2,1,1,Doha,Qatar,2024_afc_asian_cup.txt
+Australia,Uzbekistan,1,1,X,Al Wakrah,Qatar,2024_afc_asian_cup.txt
+Syria,India,1,0,1,Al Khor,Qatar,2024_afc_asian_cup.txt
+Hong Kong,Palestine,0,3,2,Doha,Qatar,2024_afc_asian_cup.txt
+Iran,United Arab Emirates,2,1,1,Al Rayyan,Qatar,2024_afc_asian_cup.txt
+Iraq,Vietnam,3,2,1,Doha,Qatar,2024_afc_asian_cup.txt
+Japan,Indonesia,3,1,1,Doha,Qatar,2024_afc_asian_cup.txt
+Jordan,Bahrain,0,1,2,Al Rayyan,Qatar,2024_afc_asian_cup.txt
+South Korea,Malaysia,3,3,X,Al Wakrah,Qatar,2024_afc_asian_cup.txt
+Kyrgyzstan,Oman,1,1,X,Doha,Qatar,2024_afc_asian_cup.txt
+Saudi Arabia,Thailand,0,0,X,Al Rayyan,Qatar,2024_afc_asian_cup.txt
+Australia,Indonesia,4,0,1,Doha,Qatar,2024_afc_asian_cup.txt
+Tajikistan,United Arab Emirates,1,1,X,Al Rayyan,Qatar   [Tajikistan wins on penalties],2024_afc_asian_cup.txt
+Iraq,Jordan,2,3,2,Al Rayyan,Qatar,2024_afc_asian_cup.txt
+Qatar,Palestine,2,1,1,Al Khor,Qatar,2024_afc_asian_cup.txt
+Saudi Arabia,South Korea,1,1,X,Al Rayyan,Qatar   [South Korea wins on penalties],2024_afc_asian_cup.txt
+Uzbekistan,Thailand,2,1,1,Al Wakrah,Qatar,2024_afc_asian_cup.txt
+Bahrain,Japan,1,3,2,Doha,Qatar,2024_afc_asian_cup.txt
+Iran,Syria,1,1,X,Doha,Qatar   [Iran wins on penalties],2024_afc_asian_cup.txt
+Australia,South Korea,1,2,2,Al Wakrah,Qatar,2024_afc_asian_cup.txt
+Tajikistan,Jordan,0,1,2,Al Rayyan,Qatar,2024_afc_asian_cup.txt
+Iran,Japan,2,1,1,Al Rayyan,Qatar,2024_afc_asian_cup.txt
+Qatar,Uzbekistan,1,1,X,Al Khor,Qatar   [Qatar wins on penalties],2024_afc_asian_cup.txt
+Jordan,South Korea,2,0,1,Al Rayyan,Qatar,2024_afc_asian_cup.txt
+Qatar,Iran,3,2,1,Doha,Qatar,2024_afc_asian_cup.txt
+Qatar,Jordan,3,1,1,Lusail,Qatar,2024_afc_asian_cup.txt

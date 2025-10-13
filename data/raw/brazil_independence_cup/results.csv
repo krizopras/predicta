@@ -1,0 +1,38 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Bolivia,Peru,0,3,2,Curitiba,Brazil,1972_brazil_independence_cup.txt
+Ecuador,Portugal,0,3,2,Natal,Brazil,1972_brazil_independence_cup.txt
+Iran,Republic of Ireland,1,2,2,Recife,Brazil,1972_brazil_independence_cup.txt
+Paraguay,Venezuela,4,1,1,Campo Grande,Brazil,1972_brazil_independence_cup.txt
+Chile,Ecuador,2,1,1,Natal,Brazil,1972_brazil_independence_cup.txt
+Iran,Portugal,0,3,2,Recife,Brazil,1972_brazil_independence_cup.txt
+Paraguay,Peru,1,0,1,Campo Grande,Brazil,1972_brazil_independence_cup.txt
+Venezuela,Yugoslavia,0,10,2,Curitiba,Brazil,1972_brazil_independence_cup.txt
+Bolivia,Yugoslavia,1,1,X,Campo Grande,Brazil,1972_brazil_independence_cup.txt
+Chile,Portugal,1,4,2,Recife,Brazil,1972_brazil_independence_cup.txt
+Colombia,France,2,3,2,Salvador,Brazil,1972_brazil_independence_cup.txt
+Ecuador,Republic of Ireland,2,3,2,Natal,Brazil,1972_brazil_independence_cup.txt
+Peru,Venezuela,1,0,1,Manaus,Brazil,1972_brazil_independence_cup.txt
+Bolivia,Venezuela,2,2,X,Manaus,Brazil,1972_brazil_independence_cup.txt
+Chile,Republic of Ireland,2,1,1,Recife,Brazil,1972_brazil_independence_cup.txt
+Ecuador,Iran,1,1,X,Recife,Brazil,1972_brazil_independence_cup.txt
+Argentina,Colombia,4,1,1,Salvador,Brazil,1972_brazil_independence_cup.txt
+Paraguay,Yugoslavia,1,2,2,Manaus,Brazil,1972_brazil_independence_cup.txt
+Argentina,France,0,0,X,Salvador,Brazil,1972_brazil_independence_cup.txt
+Bolivia,Paraguay,1,6,2,Manaus,Brazil,1972_brazil_independence_cup.txt
+Chile,Iran,2,1,1,Recife,Brazil,1972_brazil_independence_cup.txt
+Republic of Ireland,Portugal,1,2,2,Recife,Brazil,1972_brazil_independence_cup.txt
+Peru,Yugoslavia,1,2,2,Manaus,Brazil,1972_brazil_independence_cup.txt
+Brazil,Czechoslovakia,0,0,X,Rio de Janeiro,Brazil,1972_brazil_independence_cup.txt
+Argentina,Portugal,1,3,2,Rio de Janeiro,Brazil,1972_brazil_independence_cup.txt
+Scotland,Yugoslavia,2,2,X,Belo Horizonte,Brazil,1972_brazil_independence_cup.txt
+Uruguay,Russia,0,1,2,São Paulo,Brazil,1972_brazil_independence_cup.txt
+Argentina,Russia,1,0,1,Belo Horizonte,Brazil,1972_brazil_independence_cup.txt
+Brazil,Yugoslavia,3,0,1,São Paulo,Brazil,1972_brazil_independence_cup.txt
+Czechoslovakia,Scotland,0,0,X,Porto Alegre,Brazil,1972_brazil_independence_cup.txt
+Portugal,Uruguay,1,1,X,Rio de Janeiro,Brazil,1972_brazil_independence_cup.txt
+Brazil,Scotland,1,0,1,Rio de Janeiro,Brazil,1972_brazil_independence_cup.txt
+Argentina,Uruguay,1,0,1,Porto Alegre,Brazil,1972_brazil_independence_cup.txt
+Czechoslovakia,Yugoslavia,1,2,2,São Paulo,Brazil,1972_brazil_independence_cup.txt
+Portugal,Russia,1,0,1,Belo Horizonte,Brazil,1972_brazil_independence_cup.txt
+Argentina,Yugoslavia,2,4,2,Rio de Janeiro,Brazil,1972_brazil_independence_cup.txt
+Brazil,Portugal,1,0,1,Rio de Janeiro,Brazil,1972_brazil_independence_cup.txt

@@ -1,0 +1,50 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Székely Land,County of Nice,2,3,2,Debrecen,Hungary,2015_conifa_european_football_cup.txt
+Padania,Romani people,3,2,1,Debrecen,Hungary,2015_conifa_european_football_cup.txt
+Székely Land,Felvidék,1,3,2,Debrecen,Hungary,2015_conifa_european_football_cup.txt
+Romani people,Ellan Vannin,1,3,2,Debrecen,Hungary,2015_conifa_european_football_cup.txt
+Felvidék,County of Nice,1,4,2,Debrecen,Hungary,2015_conifa_european_football_cup.txt
+Padania,Ellan Vannin,1,0,1,Debrecen,Hungary,2015_conifa_european_football_cup.txt
+Székely Land,Romani people,2,4,2,Debrecen,Hungary,2015_conifa_european_football_cup.txt
+County of Nice,Ellan Vannin,3,1,1,Debrecen,Hungary,2015_conifa_european_football_cup.txt
+Padania,Felvidék,5,0,1,Debrecen,Hungary,2015_conifa_european_football_cup.txt
+Ellan Vannin,Felvidék,1,1,X,Debrecen,Hungary   [Ellan Vannin wins on penalties],2015_conifa_european_football_cup.txt
+County of Nice,Padania,1,4,2,Debrecen,Hungary,2015_conifa_european_football_cup.txt
+Northern Cyprus,Kárpátalja,1,0,1,Nicosia,Northern Cyprus,2017_conifa_european_football_cup.txt
+Abkhazia,South Ossetia,2,1,1,Kyrenia,Northern Cyprus,2017_conifa_european_football_cup.txt
+Padania,Ellan Vannin,1,0,1,Morphou,Northern Cyprus,2017_conifa_european_football_cup.txt
+Felvidék,Székely Land,1,0,1,Famagusta,Northern Cyprus,2017_conifa_european_football_cup.txt
+Northern Cyprus,South Ossetia,8,0,1,Kyrenia,Northern Cyprus,2017_conifa_european_football_cup.txt
+Kárpátalja,Abkhazia,2,2,X,Nicosia,Northern Cyprus,2017_conifa_european_football_cup.txt
+Székely Land,Padania,1,1,X,Famagusta,Northern Cyprus,2017_conifa_european_football_cup.txt
+Ellan Vannin,Felvidék,1,0,1,Morphou,Northern Cyprus,2017_conifa_european_football_cup.txt
+Northern Cyprus,Abkhazia,0,0,X,Morphou,Northern Cyprus,2017_conifa_european_football_cup.txt
+South Ossetia,Kárpátalja,1,4,2,Famagusta,Northern Cyprus,2017_conifa_european_football_cup.txt
+Ellan Vannin,Székely Land,2,4,2,Kyrenia,Northern Cyprus,2017_conifa_european_football_cup.txt
+Padania,Felvidék,2,0,1,Nicosia,Northern Cyprus,2017_conifa_european_football_cup.txt
+South Ossetia,Felvidék,0,2,2,Famagusta,Northern Cyprus,2017_conifa_european_football_cup.txt
+Kárpátalja,Ellan Vannin,3,3,X,Morphou,Northern Cyprus   [Kárpátalja wins on penalties],2017_conifa_european_football_cup.txt
+Northern Cyprus,Székely Land,2,1,1,Nicosia,Northern Cyprus,2017_conifa_european_football_cup.txt
+Padania,Abkhazia,0,0,X,Kyrenia,Northern Cyprus   [Padania wins on penalties],2017_conifa_european_football_cup.txt
+Székely Land,Abkhazia,3,1,1,Kyrenia,Northern Cyprus,2017_conifa_european_football_cup.txt
+Northern Cyprus,Padania,1,1,X,Nicosia,Northern Cyprus   [Padania wins on penalties],2017_conifa_european_football_cup.txt
+Abkhazia,Chameria,3,1,1,Askeran,Azerbaijan,2019_conifa_european_football_cup.txt
+Artsakh,Sápmi,3,2,1,Stepanakert,Azerbaijan,2019_conifa_european_football_cup.txt
+Padania,Székely Land,4,0,1,Martakert,Azerbaijan,2019_conifa_european_football_cup.txt
+Western Armenia,South Ossetia,1,2,2,Martuni,Azerbaijan,2019_conifa_european_football_cup.txt
+Artsakh,Chameria,1,4,2,Martuni,Azerbaijan,2019_conifa_european_football_cup.txt
+Sápmi,Abkhazia,0,1,2,Martakert,Azerbaijan,2019_conifa_european_football_cup.txt
+Székely Land,Western Armenia,0,5,2,Askeran,Azerbaijan,2019_conifa_european_football_cup.txt
+South Ossetia,Padania,2,1,1,Stepanakert,Azerbaijan,2019_conifa_european_football_cup.txt
+Artsakh,Abkhazia,1,1,X,Martuni,Azerbaijan,2019_conifa_european_football_cup.txt
+Chameria,Sápmi,4,0,1,Martakert,Azerbaijan,2019_conifa_european_football_cup.txt
+South Ossetia,Székely Land,2,2,X,Askeran,Azerbaijan,2019_conifa_european_football_cup.txt
+Padania,Western Armenia,1,1,X,Stepanakert,Azerbaijan,2019_conifa_european_football_cup.txt
+Abkhazia,Western Armenia,1,1,X,Stepanakert,Azerbaijan   [Western Armenia wins on penalties],2019_conifa_european_football_cup.txt
+South Ossetia,Chameria,0,0,X,Askeran,Azerbaijan   [South Ossetia wins on penalties],2019_conifa_european_football_cup.txt
+Padania,Sápmi,4,0,1,Martakert,Azerbaijan,2019_conifa_european_football_cup.txt
+Artsakh,Székely Land,2,1,1,Martuni,Azerbaijan,2019_conifa_european_football_cup.txt
+Abkhazia,Chameria,0,0,X,Stepanakert,Azerbaijan   [Abkhazia wins on penalties],2019_conifa_european_football_cup.txt
+Sápmi,Székely Land,3,2,1,Askeran,Azerbaijan,2019_conifa_european_football_cup.txt
+Artsakh,Padania,2,0,1,Stepanakert,Azerbaijan,2019_conifa_european_football_cup.txt
+Western Armenia,South Ossetia,0,1,2,Stepanakert,Azerbaijan,2019_conifa_european_football_cup.txt

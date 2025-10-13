@@ -1,0 +1,124 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Curaçao,Panama,3,3,X,San José,Costa Rica,1941_cccf_championship.txt
+Costa Rica,Nicaragua,7,2,1,San José,Costa Rica,1941_cccf_championship.txt
+Costa Rica,Panama,7,0,1,San José,Costa Rica,1941_cccf_championship.txt
+Curaçao,El Salvador,2,2,X,San José,Costa Rica,1941_cccf_championship.txt
+Costa Rica,Curaçao,6,2,1,San José,Costa Rica,1941_cccf_championship.txt
+El Salvador,Nicaragua,8,0,1,San José,Costa Rica,1941_cccf_championship.txt
+Curaçao,Nicaragua,9,1,1,San José,Costa Rica,1941_cccf_championship.txt
+El Salvador,Panama,4,3,1,San José,Costa Rica,1941_cccf_championship.txt
+Costa Rica,El Salvador,3,1,1,San José,Costa Rica,1941_cccf_championship.txt
+Nicaragua,Panama,2,5,2,San José,Costa Rica,1941_cccf_championship.txt
+Costa Rica,Nicaragua,7,0,1,San Salvador,El Salvador,1943_cccf_championship.txt
+El Salvador,Guatemala,2,2,X,San Salvador,El Salvador,1943_cccf_championship.txt
+Costa Rica,Guatemala,2,3,2,San Salvador,El Salvador,1943_cccf_championship.txt
+El Salvador,Nicaragua,8,1,1,San Salvador,El Salvador,1943_cccf_championship.txt
+El Salvador,Costa Rica,4,2,1,San Salvador,El Salvador,1943_cccf_championship.txt
+Guatemala,Nicaragua,6,2,1,San Salvador,El Salvador,1943_cccf_championship.txt
+El Salvador,Guatemala,2,1,1,San Salvador,El Salvador,1943_cccf_championship.txt
+Nicaragua,Costa Rica,2,3,2,San Salvador,El Salvador,1943_cccf_championship.txt
+El Salvador,Nicaragua,10,1,1,San Salvador,El Salvador,1943_cccf_championship.txt
+Guatemala,Costa Rica,4,2,1,San Salvador,El Salvador,1943_cccf_championship.txt
+El Salvador,Costa Rica,2,4,2,San Salvador,El Salvador,1943_cccf_championship.txt
+Nicaragua,Guatemala,1,5,2,San Salvador,El Salvador,1943_cccf_championship.txt
+El Salvador,Guatemala,1,3,2,San José,Costa Rica,1946_cccf_championship.txt
+Panama,Honduras,1,0,1,San José,Costa Rica,1946_cccf_championship.txt
+Costa Rica,Nicaragua,7,1,1,San José,Costa Rica,1946_cccf_championship.txt
+Costa Rica,Panama,7,0,1,San José,Costa Rica,1946_cccf_championship.txt
+El Salvador,Nicaragua,7,2,1,San José,Costa Rica,1946_cccf_championship.txt
+Honduras,Guatemala,5,3,1,San José,Costa Rica,1946_cccf_championship.txt
+Costa Rica,Honduras,5,1,1,San José,Costa Rica,1946_cccf_championship.txt
+El Salvador,Panama,4,1,1,San José,Costa Rica,1946_cccf_championship.txt
+Guatemala,Nicaragua,7,0,1,San José,Costa Rica,1946_cccf_championship.txt
+Costa Rica,Guatemala,1,4,2,San José,Costa Rica,1946_cccf_championship.txt
+El Salvador,Honduras,3,1,1,San José,Costa Rica,1946_cccf_championship.txt
+Panama,Nicaragua,0,2,2,San José,Costa Rica,1946_cccf_championship.txt
+Costa Rica,El Salvador,4,0,1,San José,Costa Rica,1946_cccf_championship.txt
+Honduras,Nicaragua,10,0,1,San José,Costa Rica,1946_cccf_championship.txt
+Panama,Guatemala,3,3,X,San José,Costa Rica,1946_cccf_championship.txt
+Costa Rica,El Salvador,3,1,1,Guatemala City,Guatemala,1948_cccf_championship.txt
+Guatemala,El Salvador,3,0,1,Guatemala City,Guatemala,1948_cccf_championship.txt
+Guatemala,Costa Rica,1,1,X,Guatemala City,Guatemala,1948_cccf_championship.txt
+Panama,Curaçao,1,3,2,Guatemala City,Guatemala,1948_cccf_championship.txt
+Guatemala,Curaçao,2,2,X,Guatemala City,Guatemala,1948_cccf_championship.txt
+Costa Rica,Curaçao,2,1,1,Guatemala City,Guatemala,1948_cccf_championship.txt
+El Salvador,Panama,1,2,2,Guatemala City,Guatemala,1948_cccf_championship.txt
+El Salvador,Curaçao,1,0,1,Guatemala City,Guatemala,1948_cccf_championship.txt
+Guatemala,Panama,4,3,1,Guatemala City,Guatemala,1948_cccf_championship.txt
+Costa Rica,Panama,3,1,1,Guatemala City,Guatemala,1948_cccf_championship.txt
+Curaçao,El Salvador,0,2,2,Guatemala City,Guatemala,1948_cccf_championship.txt
+Guatemala,El Salvador,1,1,X,Guatemala City,Guatemala,1948_cccf_championship.txt
+Curaçao,Panama,2,5,2,Guatemala City,Guatemala,1948_cccf_championship.txt
+Guatemala,Costa Rica,3,2,1,Guatemala City,Guatemala,1948_cccf_championship.txt
+Panama,El Salvador,2,0,1,Guatemala City,Guatemala,1948_cccf_championship.txt
+El Salvador,Costa Rica,0,6,2,Guatemala City,Guatemala,1948_cccf_championship.txt
+Guatemala,Curaçao,2,2,X,Guatemala City,Guatemala,1948_cccf_championship.txt
+Curaçao,Costa Rica,4,1,1,Guatemala City,Guatemala,1948_cccf_championship.txt
+Guatemala,Panama,4,5,2,Guatemala City,Guatemala,1948_cccf_championship.txt
+Costa Rica,Nicaragua,8,1,1,Panama City,Panama,1951_cccf_championship.txt
+Panama,Costa Rica,2,0,1,Panama City,Panama,1951_cccf_championship.txt
+Panama,Nicaragua,4,0,1,Panama City,Panama,1951_cccf_championship.txt
+Panama,Costa Rica,1,1,X,Panama City,Panama,1951_cccf_championship.txt
+Nicaragua,Costa Rica,1,4,2,Panama City,Panama,1951_cccf_championship.txt
+Panama,Nicaragua,6,2,1,Panama City,Panama,1951_cccf_championship.txt
+Costa Rica,El Salvador,5,1,1,San José,Costa Rica,1953_cccf_championship.txt
+Honduras,Nicaragua,2,1,1,San José,Costa Rica,1953_cccf_championship.txt
+Guatemala,Curaçao,1,1,X,San José,Costa Rica,1953_cccf_championship.txt
+Costa Rica,Panama,3,0,1,San José,Costa Rica,1953_cccf_championship.txt
+El Salvador,Nicaragua,4,1,1,San José,Costa Rica,1953_cccf_championship.txt
+Curaçao,Nicaragua,8,0,1,San José,Costa Rica,1953_cccf_championship.txt
+Guatemala,Honduras,1,0,1,San José,Costa Rica,1953_cccf_championship.txt
+Panama,Curaçao,2,4,2,San José,Costa Rica,1953_cccf_championship.txt
+Costa Rica,Honduras,4,1,1,San José,Costa Rica,1953_cccf_championship.txt
+Guatemala,El Salvador,3,2,1,San José,Costa Rica,1953_cccf_championship.txt
+Panama,Nicaragua,0,2,2,San José,Costa Rica,1953_cccf_championship.txt
+Costa Rica,Curaçao,1,0,1,San José,Costa Rica,1953_cccf_championship.txt
+El Salvador,Honduras,0,3,2,San José,Costa Rica,1953_cccf_championship.txt
+Costa Rica,Nicaragua,3,0,1,San José,Costa Rica,1953_cccf_championship.txt
+Panama,Guatemala,2,2,X,San José,Costa Rica,1953_cccf_championship.txt
+Curaçao,Honduras,3,4,2,San José,Costa Rica,1953_cccf_championship.txt
+El Salvador,Panama,2,1,1,San José,Costa Rica,1953_cccf_championship.txt
+Guatemala,Nicaragua,1,0,1,San José,Costa Rica,1953_cccf_championship.txt
+Costa Rica,Guatemala,3,0,1,San José,Costa Rica,1953_cccf_championship.txt
+El Salvador,Curaçao,1,1,X,San José,Costa Rica,1953_cccf_championship.txt
+Honduras,Panama,3,1,1,San José,Costa Rica,1953_cccf_championship.txt
+Costa Rica,Aruba,3,2,1,Tegucigalpa,Honduras,1955_cccf_championship.txt
+Honduras,Cuba,3,0,1,Tegucigalpa,Honduras,1955_cccf_championship.txt
+Guatemala,El Salvador,2,3,2,Tegucigalpa,Honduras,1955_cccf_championship.txt
+Costa Rica,Cuba,6,0,1,Tegucigalpa,Honduras,1955_cccf_championship.txt
+Curaçao,Aruba,2,1,1,Tegucigalpa,Honduras,1955_cccf_championship.txt
+Honduras,El Salvador,3,1,1,Tegucigalpa,Honduras,1955_cccf_championship.txt
+Guatemala,Curaçao,4,1,1,Tegucigalpa,Honduras,1955_cccf_championship.txt
+Aruba,Cuba,4,1,1,Tegucigalpa,Honduras,1955_cccf_championship.txt
+Costa Rica,El Salvador,4,0,1,Tegucigalpa,Honduras,1955_cccf_championship.txt
+El Salvador,Cuba,2,1,1,Tegucigalpa,Honduras,1955_cccf_championship.txt
+Honduras,Curaçao,0,2,2,Tegucigalpa,Honduras,1955_cccf_championship.txt
+Guatemala,Costa Rica,0,2,2,Tegucigalpa,Honduras,1955_cccf_championship.txt
+Honduras,Aruba,1,1,X,Tegucigalpa,Honduras,1955_cccf_championship.txt
+Costa Rica,Curaçao,2,1,1,Tegucigalpa,Honduras,1955_cccf_championship.txt
+El Salvador,Aruba,2,0,1,Tegucigalpa,Honduras,1955_cccf_championship.txt
+Curaçao,El Salvador,3,0,1,Tegucigalpa,Honduras,1955_cccf_championship.txt
+Curaçao,Cuba,2,0,1,Tegucigalpa,Honduras,1955_cccf_championship.txt
+Honduras,Costa Rica,1,2,2,Tegucigalpa,Honduras,1955_cccf_championship.txt
+Curaçao,Haiti,1,3,2,Willemstad,Curaçao,1957_cccf_championship.txt
+Cuba,Panama,0,1,2,Willemstad,Curaçao,1957_cccf_championship.txt
+Curaçao,Cuba,2,0,1,Willemstad,Curaçao,1957_cccf_championship.txt
+Cuba,Honduras,0,2,2,Willemstad,Curaçao,1957_cccf_championship.txt
+Curaçao,Panama,3,0,1,Willemstad,Curaçao,1957_cccf_championship.txt
+Cuba,Haiti,1,6,2,Willemstad,Curaçao,1957_cccf_championship.txt
+Curaçao,Honduras,1,1,X,Willemstad,Curaçao,1957_cccf_championship.txt
+Costa Rica,Curaçao,1,1,X,Havana,Cuba,1960_cccf_championship.txt
+Honduras,Curaçao,3,3,X,Havana,Cuba,1960_cccf_championship.txt
+Cuba,Curaçao,3,4,2,Havana,Cuba,1960_cccf_championship.txt
+Curaçao,Suriname,1,0,1,Havana,Cuba,1960_cccf_championship.txt
+Costa Rica,Curaçao,4,0,1,Havana,Cuba,1960_cccf_championship.txt
+Costa Rica,Cuba,4,1,1,San José,Costa Rica,1961_cccf_championship.txt
+Curaçao,El Salvador,0,0,X,San José,Costa Rica,1961_cccf_championship.txt
+Cuba,Haiti,1,2,2,San José,Costa Rica,1961_cccf_championship.txt
+Guatemala,Haiti,1,3,2,San José,Costa Rica,1961_cccf_championship.txt
+Cuba,Panama,0,1,2,San José,Costa Rica,1961_cccf_championship.txt
+Curaçao,Honduras,2,4,2,San José,Costa Rica,1961_cccf_championship.txt
+Cuba,Guatemala,0,2,2,San José,Costa Rica,1961_cccf_championship.txt
+Curaçao,Nicaragua,2,1,1,San José,Costa Rica,1961_cccf_championship.txt
+Haiti,Panama,3,1,1,San José,Costa Rica,1961_cccf_championship.txt
+Haiti,Honduras,0,2,2,San José,Costa Rica,1961_cccf_championship.txt
