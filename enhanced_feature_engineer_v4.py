@@ -90,7 +90,7 @@ ENHANCED_FEATURE_NAMES_V4 = [
     "is_critical_match", "motivation_imbalance"
 ]
 
-TOTAL_FEATURES_V4 = 100
+TOTAL_FEATURES_V4 = 101
 
 assert len(ENHANCED_FEATURE_NAMES_V4) == TOTAL_FEATURES_V4, \
     f"Feature sayısı uyuşmuyor: {len(ENHANCED_FEATURE_NAMES_V4)} != {TOTAL_FEATURES_V4}"
