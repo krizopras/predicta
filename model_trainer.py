@@ -197,9 +197,7 @@ class ImprovedModelTrainer:
         # ✅ YENİ: Tarih filtreleme (sadece son 4 sezon)
         if 'date' in df.columns:
             df['date'] = pd.to_datetime(df['date'], errors='coerce')
-            cutoff_date = pd.Timestamp.now() - pd.Timedelta(days=4*365)
-            df = df[df['date'] >= cutoff_date]
-            self.logger.info(f"📅 Son 10 sezon: {len(df):,} maç")
+            self.logger.info(f"📅 Tüm sezonlar dahil: {len(df):,} maç")
         
         df = df.dropna(subset=["home_team", "away_team", "home_score", "away_score"])
         
