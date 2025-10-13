@@ -1,0 +1,481 @@
+time,home_team,away_team,home_score,away_score,result,ht_score,source_file
+17.00,FK Obolon,Kolos Kovalivka,0,0,X,,2023-24_ua1.txt
+19.00,NK Veres,Polissya Zhytomyr,0,2,2,0-2,2023-24_ua1.txt
+15.00,Rukh Lviv,Zorya Lugansk,2,1,1,0-1,2023-24_ua1.txt
+17.00,Metalist 1925 Kharkiv,Shakhtar Donetsk,1,2,2,0-1,2023-24_ua1.txt
+15.00,FC LNZ Cherkasy,Chernomorets Odessa,0,2,2,0-1,2023-24_ua1.txt
+17.00,Dinamo Kiev,FC Mynai,4,1,1,2-1,2023-24_ua1.txt
+19.00,FK Oleksandriya,Kryvbas Kryvyi Rih,1,0,1,1-0,2023-24_ua1.txt
+16.00,Vorskla Poltava,SK Dnipro-1,2,3,2,1-2,2023-24_ua1.txt
+17.00,NK Veres,Shakhtar Donetsk,1,1,X,0-1,2023-24_ua1.txt
+17.00,FK Obolon,Dinamo Kiev,2,4,2,1-3,2023-24_ua1.txt
+15.00,FC Mynai,FC LNZ Cherkasy,0,3,2,0-1,2023-24_ua1.txt
+20.00,FK Oleksandriya,Metalist 1925 Kharkiv,1,0,1,1-0,2023-24_ua1.txt
+15.00,SK Dnipro-1,Polissya Zhytomyr,2,1,1,0-0,2023-24_ua1.txt
+17.00,Kolos Kovalivka,Chernomorets Odessa,2,0,1,0-0,2023-24_ua1.txt
+,Zorya Lugansk,Kryvbas Kryvyi Rih,1,3,2,1-1,2023-24_ua1.txt
+19.00,Rukh Lviv,Vorskla Poltava,4,1,1,1-1,2023-24_ua1.txt
+15.00,Chernomorets Odessa,FK Obolon,2,0,1,1-0,2023-24_ua1.txt
+17.00,Kolos Kovalivka,NK Veres,2,0,1,1-0,2023-24_ua1.txt
+,Polissya Zhytomyr,Rukh Lviv,0,1,2,0-0,2023-24_ua1.txt
+13.00,FC Mynai,SK Dnipro-1,1,1,X,0-0,2023-24_ua1.txt
+15.00,Vorskla Poltava,Zorya Lugansk,1,2,2,0-1,2023-24_ua1.txt
+17.00,Kryvbas Kryvyi Rih,FC LNZ Cherkasy,2,0,1,1-0,2023-24_ua1.txt
+17.00,Shakhtar Donetsk,FK Oleksandriya,2,1,1,2-0,2023-24_ua1.txt
+15.00,Dinamo Kiev,Metalist 1925 Kharkiv,4,2,1,3-1,2023-24_ua1.txt
+17.00,FC LNZ Cherkasy,Polissya Zhytomyr,1,2,2,0-0,2023-24_ua1.txt
+19.00,Zorya Lugansk,FK Oleksandriya,0,0,X,,2023-24_ua1.txt
+15.00,NK Veres,Vorskla Poltava,1,2,2,1-2,2023-24_ua1.txt
+17.00,Metalist 1925 Kharkiv,FC Mynai,1,0,1,0-0,2023-24_ua1.txt
+19.00,Rukh Lviv,Kolos Kovalivka,1,1,X,0-1,2023-24_ua1.txt
+15.00,SK Dnipro-1,FK Obolon,1,2,2,1-0,2023-24_ua1.txt
+17.00,Chernomorets Odessa,Dinamo Kiev,3,2,1,1-0,2023-24_ua1.txt
+19.00,Kryvbas Kryvyi Rih,Shakhtar Donetsk,3,3,X,2-3,2023-24_ua1.txt
+15.00,FC LNZ Cherkasy,Metalist 1925 Kharkiv,0,1,2,0-1,2023-24_ua1.txt
+17.00,FK Oleksandriya,Polissya Zhytomyr,0,3,2,0-0,2023-24_ua1.txt
+13.00,FC Mynai,Zorya Lugansk,1,1,X,1-1,2023-24_ua1.txt
+15.00,Kolos Kovalivka,Shakhtar Donetsk,0,2,2,0-2,2023-24_ua1.txt
+17.00,Vorskla Poltava,Chernomorets Odessa,2,1,1,2-0,2023-24_ua1.txt
+19.00,FK Obolon,Kryvbas Kryvyi Rih,0,0,X,,2023-24_ua1.txt
+18.00,Rukh Lviv,SK Dnipro-1,0,2,2,0-2,2023-24_ua1.txt
+15.30,Dinamo Kiev,NK Veres,3,0,1,1-0,2023-24_ua1.txt
+17.00,NK Veres,Chernomorets Odessa,3,1,1,2-1,2023-24_ua1.txt
+13.00,FC Mynai,Shakhtar Donetsk,1,4,2,0-1,2023-24_ua1.txt
+15.00,Polissya Zhytomyr,FK Obolon,2,0,1,0-0,2023-24_ua1.txt
+17.00,Vorskla Poltava,FK Oleksandriya,1,0,1,1-0,2023-24_ua1.txt
+13.00,SK Dnipro-1,FC LNZ Cherkasy,0,0,X,,2023-24_ua1.txt
+17.00,Kolos Kovalivka,Kryvbas Kryvyi Rih,0,3,2,0-1,2023-24_ua1.txt
+19.00,Rukh Lviv,Metalist 1925 Kharkiv,1,1,X,1-1,2023-24_ua1.txt
+15.30,Zorya Lugansk,Dinamo Kiev,0,3,2,0-2,2023-24_ua1.txt
+18.30,Metalist 1925 Kharkiv,Zorya Lugansk,2,1,1,2-1,2023-24_ua1.txt
+15.00,Chernomorets Odessa,Polissya Zhytomyr,1,0,1,1-0,2023-24_ua1.txt
+17.00,Shakhtar Donetsk,FK Obolon,1,0,1,0-0,2023-24_ua1.txt
+19.00,FK Oleksandriya,FC Mynai,1,1,X,0-0,2023-24_ua1.txt
+13.00,FC LNZ Cherkasy,Rukh Lviv,2,1,1,1-0,2023-24_ua1.txt
+15.00,SK Dnipro-1,Kolos Kovalivka,1,1,X,0-0,2023-24_ua1.txt
+17.00,Kryvbas Kryvyi Rih,NK Veres,2,1,1,1-1,2023-24_ua1.txt
+17.00,Dinamo Kiev,Vorskla Poltava,2,0,1,1-0,2023-24_ua1.txt
+17.00,FK Obolon,NK Veres,0,0,X,,2023-24_ua1.txt
+19.00,FK Oleksandriya,Chernomorets Odessa,1,5,2,0-4,2023-24_ua1.txt
+15.00,Polissya Zhytomyr,FC Mynai,2,1,1,0-1,2023-24_ua1.txt
+17.00,Vorskla Poltava,Kryvbas Kryvyi Rih,1,4,2,1-2,2023-24_ua1.txt
+19.00,Rukh Lviv,Shakhtar Donetsk,1,1,X,0-1,2023-24_ua1.txt
+13.00,FC LNZ Cherkasy,Dinamo Kiev,2,4,2,0-1,2023-24_ua1.txt
+15.00,Zorya Lugansk,SK Dnipro-1,0,1,2,0-1,2023-24_ua1.txt
+17.00,Metalist 1925 Kharkiv,Kolos Kovalivka,0,0,X,,2023-24_ua1.txt
+15.00,NK Veres,FC LNZ Cherkasy,0,0,X,,2023-24_ua1.txt
+17.00,Shakhtar Donetsk,Vorskla Poltava,1,2,2,0-1,2023-24_ua1.txt
+19.00,Chernomorets Odessa,Zorya Lugansk,0,0,X,,2023-24_ua1.txt
+13.00,FC Mynai,FK Obolon,0,1,2,0-0,2023-24_ua1.txt
+15.00,Kryvbas Kryvyi Rih,Rukh Lviv,1,3,2,1-0,2023-24_ua1.txt
+17.00,Kolos Kovalivka,Polissya Zhytomyr,0,0,X,,2023-24_ua1.txt
+19.00,Dinamo Kiev,FK Oleksandriya,4,2,1,2-1,2023-24_ua1.txt
+17.00,SK Dnipro-1,Metalist 1925 Kharkiv,1,0,1,0-0,2023-24_ua1.txt
+15.00,Polissya Zhytomyr,Dinamo Kiev,3,2,1,1-1,2023-24_ua1.txt
+13.00,SK Dnipro-1,NK Veres,2,0,1,2-0,2023-24_ua1.txt
+15.00,FC LNZ Cherkasy,FK Oleksandriya,0,0,X,,2023-24_ua1.txt
+17.00,Kolos Kovalivka,Vorskla Poltava,0,0,X,,2023-24_ua1.txt
+13.00,FK Obolon,Metalist 1925 Kharkiv,1,0,1,1-0,2023-24_ua1.txt
+15.00,Rukh Lviv,FC Mynai,0,0,X,,2023-24_ua1.txt
+17.00,Kryvbas Kryvyi Rih,Chernomorets Odessa,1,0,1,0-0,2023-24_ua1.txt
+15.30,Zorya Lugansk,Shakhtar Donetsk,1,3,2,0-1,2023-24_ua1.txt
+17.00,FK Obolon,Zorya Lugansk,2,4,2,2-2,2023-24_ua1.txt
+19.00,Metalist 1925 Kharkiv,Kryvbas Kryvyi Rih,1,3,2,1-2,2023-24_ua1.txt
+15.00,Chernomorets Odessa,FC Mynai,3,0,1,1-0,2023-24_ua1.txt
+17.00,Shakhtar Donetsk,FC LNZ Cherkasy,3,0,1,1-0,2023-24_ua1.txt
+19.00,FK Oleksandriya,Kolos Kovalivka,0,1,2,0-1,2023-24_ua1.txt
+13.00,NK Veres,Rukh Lviv,2,5,2,0-2,2023-24_ua1.txt
+15.00,Vorskla Poltava,Polissya Zhytomyr,0,3,2,0-1,2023-24_ua1.txt
+17.00,Dinamo Kiev,SK Dnipro-1,0,1,2,0-1,2023-24_ua1.txt
+13.00,Kryvbas Kryvyi Rih,SK Dnipro-1,3,0,1,2-0,2023-24_ua1.txt
+15.00,Kolos Kovalivka,Dinamo Kiev,1,1,X,0-1,2023-24_ua1.txt
+16.00,Zorya Lugansk,Polissya Zhytomyr,0,1,2,0-1,2023-24_ua1.txt
+18.00,Rukh Lviv,FK Oleksandriya,0,0,X,,2023-24_ua1.txt
+13.00,FC Mynai,NK Veres,0,0,X,,2023-24_ua1.txt
+,FC LNZ Cherkasy,FK Obolon,3,0,1,1-0,2023-24_ua1.txt
+15.00,Vorskla Poltava,Metalist 1925 Kharkiv,2,2,X,0-1,2023-24_ua1.txt
+13.00,Chernomorets Odessa,Shakhtar Donetsk,1,4,2,1-3,2023-24_ua1.txt
+17.00,Dinamo Kiev,Shakhtar Donetsk,0,1,2,0-0,2023-24_ua1.txt
+13.00,FC LNZ Cherkasy,Kolos Kovalivka,1,1,X,1-0,2023-24_ua1.txt
+13.00,FC Mynai,Vorskla Poltava,0,0,X,,2023-24_ua1.txt
+15.00,Metalist 1925 Kharkiv,Chernomorets Odessa,2,1,1,0-1,2023-24_ua1.txt
+17.00,NK Veres,Zorya Lugansk,2,2,X,1-1,2023-24_ua1.txt
+15.00,Polissya Zhytomyr,Kryvbas Kryvyi Rih,1,1,X,0-1,2023-24_ua1.txt
+17.00,SK Dnipro-1,FK Oleksandriya,1,0,1,1-0,2023-24_ua1.txt
+19.00,Rukh Lviv,FK Obolon,2,2,X,1-1,2023-24_ua1.txt
+17.00,Kolos Kovalivka,FC Mynai,2,0,1,2-0,2023-24_ua1.txt
+13.00,FK Obolon,Vorskla Poltava,0,1,2,0-0,2023-24_ua1.txt
+15.00,Polissya Zhytomyr,Metalist 1925 Kharkiv,2,1,1,0-1,2023-24_ua1.txt
+17.00,FK Oleksandriya,NK Veres,1,0,1,0-0,2023-24_ua1.txt
+13.00,Kryvbas Kryvyi Rih,Dinamo Kiev,0,2,2,0-2,2023-24_ua1.txt
+15.00,Zorya Lugansk,FC LNZ Cherkasy,1,2,2,0-1,2023-24_ua1.txt
+17.00,Chernomorets Odessa,Rukh Lviv,2,3,2,1-1,2023-24_ua1.txt
+19.00,Shakhtar Donetsk,SK Dnipro-1,1,3,2,1-1,2023-24_ua1.txt
+19.00,Shakhtar Donetsk,Polissya Zhytomyr,0,0,X,,2023-24_ua1.txt
+13.00,FC Mynai,Kryvbas Kryvyi Rih,0,1,2,0-0,2023-24_ua1.txt
+15.00,NK Veres,Metalist 1925 Kharkiv,4,3,1,2-1,2023-24_ua1.txt
+17.00,Vorskla Poltava,FC LNZ Cherkasy,0,0,X,,2023-24_ua1.txt
+17.00,Dinamo Kiev,Rukh Lviv,2,0,1,2-0,2023-24_ua1.txt
+17.00,SK Dnipro-1,Chernomorets Odessa,5,2,1,1-1,2023-24_ua1.txt
+18.00,FK Oleksandriya,FK Obolon,2,2,X,0-0,2023-24_ua1.txt
+15.30,Kolos Kovalivka,Zorya Lugansk,0,1,2,0-1,2023-24_ua1.txt
+17.00,Polissya Zhytomyr,NK Veres,1,1,X,0-0,2023-24_ua1.txt
+13.00,Kolos Kovalivka,FK Obolon,0,0,X,,2023-24_ua1.txt
+15.00,Kryvbas Kryvyi Rih,FK Oleksandriya,2,1,1,0-1,2023-24_ua1.txt
+17.00,SK Dnipro-1,Vorskla Poltava,1,2,2,1-2,2023-24_ua1.txt
+15.00,Chernomorets Odessa,FC LNZ Cherkasy,1,3,2,0-0,2023-24_ua1.txt
+17.00,Shakhtar Donetsk,Metalist 1925 Kharkiv,2,0,1,0-0,2023-24_ua1.txt
+13.00,Zorya Lugansk,Rukh Lviv,0,0,X,,2023-24_ua1.txt
+15.30,FC Mynai,Dinamo Kiev,1,3,2,0-2,2023-24_ua1.txt
+15.00,Polissya Zhytomyr,SK Dnipro-1,1,1,X,0-0,2023-24_ua1.txt
+17.00,Shakhtar Donetsk,NK Veres,2,0,1,1-0,2023-24_ua1.txt
+15.00,Kryvbas Kryvyi Rih,Zorya Lugansk,2,2,X,2-1,2023-24_ua1.txt
+13.00,Vorskla Poltava,Rukh Lviv,1,1,X,0-1,2023-24_ua1.txt
+15.00,Chernomorets Odessa,Kolos Kovalivka,1,0,1,0-0,2023-24_ua1.txt
+15.00,Dinamo Kiev,FK Obolon,2,0,1,0-0,2023-24_ua1.txt
+17.00,Metalist 1925 Kharkiv,FK Oleksandriya,0,3,2,0-0,2023-24_ua1.txt
+15.30,FC LNZ Cherkasy,FC Mynai,1,2,2,0-1,2023-24_ua1.txt
+15.30,FC LNZ Cherkasy,Kryvbas Kryvyi Rih,0,3,2,0-1,2023-24_ua1.txt
+13.00,NK Veres,Kolos Kovalivka,0,2,2,0-0,2023-24_ua1.txt
+,SK Dnipro-1,FC Mynai,1,1,X,0-1,2023-24_ua1.txt
+15.30,Metalist 1925 Kharkiv,Dinamo Kiev,2,4,2,1-1,2023-24_ua1.txt
+18.00,Rukh Lviv,Polissya Zhytomyr,1,1,X,1-1,2023-24_ua1.txt
+13.00,Zorya Lugansk,Vorskla Poltava,1,0,1,1-0,2023-24_ua1.txt
+14.45,FK Oleksandriya,Shakhtar Donetsk,0,3,2,,2023-24_ua1.txt
+15.30,FK Obolon,Chernomorets Odessa,1,1,X,0-0,2023-24_ua1.txt
+18.00,Polissya Zhytomyr,FC LNZ Cherkasy,0,1,2,0-0,2023-24_ua1.txt
+13.00,FC Mynai,Metalist 1925 Kharkiv,2,0,1,1-0,2023-24_ua1.txt
+15.30,Dinamo Kiev,Chernomorets Odessa,1,0,1,1-0,2023-24_ua1.txt
+,Vorskla Poltava,NK Veres,2,1,1,0-1,2023-24_ua1.txt
+18.00,Kolos Kovalivka,Rukh Lviv,0,1,2,0-1,2023-24_ua1.txt
+13.00,FK Obolon,SK Dnipro-1,0,1,2,0-1,2023-24_ua1.txt
+15.30,FK Oleksandriya,Zorya Lugansk,0,0,X,,2023-24_ua1.txt
+18.00,Shakhtar Donetsk,Kryvbas Kryvyi Rih,5,2,1,2-1,2023-24_ua1.txt
+15.30,Zorya Lugansk,FC Mynai,2,0,1,1-0,2023-24_ua1.txt
+18.00,NK Veres,Dinamo Kiev,1,1,X,0-1,2023-24_ua1.txt
+13.00,SK Dnipro-1,Rukh Lviv,0,1,2,0-1,2023-24_ua1.txt
+15.30,Metalist 1925 Kharkiv,FC LNZ Cherkasy,1,1,X,0-0,2023-24_ua1.txt
+18.00,Shakhtar Donetsk,Kolos Kovalivka,3,2,1,0-1,2023-24_ua1.txt
+13.00,Chernomorets Odessa,Vorskla Poltava,0,1,2,0-0,2023-24_ua1.txt
+15.30,Polissya Zhytomyr,FK Oleksandriya,1,2,2,0-1,2023-24_ua1.txt
+18.00,Kryvbas Kryvyi Rih,FK Obolon,1,0,1,0-0,2023-24_ua1.txt
+13.00,FC LNZ Cherkasy,SK Dnipro-1,1,1,X,0-0,2023-24_ua1.txt
+15.30,Dinamo Kiev,Zorya Lugansk,2,0,1,1-0,2023-24_ua1.txt
+18.00,Shakhtar Donetsk,FC Mynai,2,0,1,2-0,2023-24_ua1.txt
+18.00,FK Oleksandriya,Vorskla Poltava,1,0,1,0-0,2023-24_ua1.txt
+13.00,Metalist 1925 Kharkiv,Rukh Lviv,1,4,2,0-4,2023-24_ua1.txt
+15.30,FK Obolon,Polissya Zhytomyr,1,0,1,1-0,2023-24_ua1.txt
+18.00,Kryvbas Kryvyi Rih,Kolos Kovalivka,1,0,1,0-0,2023-24_ua1.txt
+15.30,Chernomorets Odessa,NK Veres,0,1,2,0-1,2023-24_ua1.txt
+13.00,FK Obolon,Shakhtar Donetsk,0,3,2,0-2,2023-24_ua1.txt
+15.30,Polissya Zhytomyr,Chernomorets Odessa,1,4,2,0-0,2023-24_ua1.txt
+18.00,NK Veres,Kryvbas Kryvyi Rih,0,2,2,0-0,2023-24_ua1.txt
+13.00,FC Mynai,FK Oleksandriya,2,2,X,0-0,2023-24_ua1.txt
+15.30,Zorya Lugansk,Metalist 1925 Kharkiv,2,1,1,1-0,2023-24_ua1.txt
+,Vorskla Poltava,Dinamo Kiev,1,5,2,0-2,2023-24_ua1.txt
+18.00,Kolos Kovalivka,SK Dnipro-1,0,2,2,0-1,2023-24_ua1.txt
+18.00,Rukh Lviv,FC LNZ Cherkasy,1,0,1,0-0,2023-24_ua1.txt
+15.30,NK Veres,FK Obolon,3,0,1,2-0,2023-24_ua1.txt
+13.00,Chernomorets Odessa,FK Oleksandriya,3,2,1,3-1,2023-24_ua1.txt
+15.30,Kolos Kovalivka,Metalist 1925 Kharkiv,1,1,X,1-0,2023-24_ua1.txt
+18.00,Shakhtar Donetsk,Rukh Lviv,3,1,1,2-1,2023-24_ua1.txt
+13.00,FC Mynai,Polissya Zhytomyr,2,3,2,0-2,2023-24_ua1.txt
+15.30,Dinamo Kiev,FC LNZ Cherkasy,1,1,X,1-1,2023-24_ua1.txt
+18.00,Kryvbas Kryvyi Rih,Vorskla Poltava,1,1,X,1-1,2023-24_ua1.txt
+13.00,SK Dnipro-1,Zorya Lugansk,2,2,X,0-0,2023-24_ua1.txt
+13.00,FK Obolon,FC Mynai,1,1,X,0-0,2023-24_ua1.txt
+15.30,FK Oleksandriya,Dinamo Kiev,0,1,2,0-0,2023-24_ua1.txt
+18.00,Rukh Lviv,Kryvbas Kryvyi Rih,1,1,X,0-1,2023-24_ua1.txt
+13.00,Vorskla Poltava,Shakhtar Donetsk,0,1,2,0-1,2023-24_ua1.txt
+15.30,Zorya Lugansk,Chernomorets Odessa,1,0,1,1-0,2023-24_ua1.txt
+18.00,Polissya Zhytomyr,Kolos Kovalivka,1,0,1,0-0,2023-24_ua1.txt
+15.30,FC LNZ Cherkasy,NK Veres,1,0,1,0-0,2023-24_ua1.txt
+18.00,Metalist 1925 Kharkiv,SK Dnipro-1,1,1,X,0-1,2023-24_ua1.txt
+15.30,Chernomorets Odessa,Kryvbas Kryvyi Rih,1,2,2,1-0,2023-24_ua1.txt
+18.00,Vorskla Poltava,Kolos Kovalivka,0,2,2,0-0,2023-24_ua1.txt
+13.00,NK Veres,SK Dnipro-1,1,1,X,1-1,2023-24_ua1.txt
+15.30,FK Oleksandriya,FC LNZ Cherkasy,1,2,2,1-1,2023-24_ua1.txt
+18.00,Dinamo Kiev,Polissya Zhytomyr,3,0,1,1-0,2023-24_ua1.txt
+13.00,FC Mynai,Rukh Lviv,1,1,X,0-0,2023-24_ua1.txt
+15.30,Metalist 1925 Kharkiv,FK Obolon,1,1,X,0-1,2023-24_ua1.txt
+18.00,Shakhtar Donetsk,Zorya Lugansk,2,1,1,0-0,2023-24_ua1.txt
+13.00,FC Mynai,Chernomorets Odessa,2,0,1,1-0,2023-24_ua1.txt
+,SK Dnipro-1,Dinamo Kiev,1,2,2,1-0,2023-24_ua1.txt
+15.30,FC LNZ Cherkasy,Shakhtar Donetsk,0,3,2,0-1,2023-24_ua1.txt
+18.00,Rukh Lviv,NK Veres,3,1,1,0-1,2023-24_ua1.txt
+13.00,Zorya Lugansk,FK Obolon,0,0,X,,2023-24_ua1.txt
+15.30,Kolos Kovalivka,FK Oleksandriya,0,0,X,,2023-24_ua1.txt
+18.00,Kryvbas Kryvyi Rih,Metalist 1925 Kharkiv,3,0,1,3-0,2023-24_ua1.txt
+18.00,Polissya Zhytomyr,Vorskla Poltava,1,0,1,0-0,2023-24_ua1.txt
+13.00,FK Oleksandriya,Rukh Lviv,2,2,X,1-1,2023-24_ua1.txt
+15.30,FK Obolon,FC LNZ Cherkasy,1,0,1,1-0,2023-24_ua1.txt
+18.00,Metalist 1925 Kharkiv,Vorskla Poltava,3,2,1,2-1,2023-24_ua1.txt
+13.00,Polissya Zhytomyr,Zorya Lugansk,1,1,X,1-0,2023-24_ua1.txt
+15.30,Dinamo Kiev,Kolos Kovalivka,5,0,1,0-0,2023-24_ua1.txt
+18.00,Shakhtar Donetsk,Chernomorets Odessa,3,0,1,2-0,2023-24_ua1.txt
+13.00,SK Dnipro-1,Kryvbas Kryvyi Rih,1,0,1,0-0,2023-24_ua1.txt
+18.00,NK Veres,FC Mynai,3,1,1,1-1,2023-24_ua1.txt
+13.00,Vorskla Poltava,FC Mynai,2,3,2,1-0,2023-24_ua1.txt
+15.30,FK Obolon,Rukh Lviv,0,0,X,,2023-24_ua1.txt
+18.00,Shakhtar Donetsk,Dinamo Kiev,1,0,1,1-0,2023-24_ua1.txt
+13.00,FK Oleksandriya,SK Dnipro-1,1,0,1,1-0,2023-24_ua1.txt
+15.30,Chernomorets Odessa,Metalist 1925 Kharkiv,3,0,1,1-0,2023-24_ua1.txt
+13.00,Kryvbas Kryvyi Rih,Polissya Zhytomyr,0,1,2,0-1,2023-24_ua1.txt
+16.15,Kolos Kovalivka,FC LNZ Cherkasy,1,3,2,1-1,2023-24_ua1.txt
+18.00,Zorya Lugansk,NK Veres,1,1,X,1-0,2023-24_ua1.txt
+15.30,Dinamo Kiev,Kryvbas Kryvyi Rih,3,1,1,2-1,2023-24_ua1.txt
+13.00,FC LNZ Cherkasy,Zorya Lugansk,2,1,1,0-1,2023-24_ua1.txt
+15.30,FC Mynai,Kolos Kovalivka,3,2,1,1-1,2023-24_ua1.txt
+,Metalist 1925 Kharkiv,Polissya Zhytomyr,3,3,X,1-3,2023-24_ua1.txt
+,NK Veres,FK Oleksandriya,2,2,X,2-1,2023-24_ua1.txt
+,Rukh Lviv,Chernomorets Odessa,2,0,1,1-0,2023-24_ua1.txt
+,SK Dnipro-1,Shakhtar Donetsk,1,1,X,1-1,2023-24_ua1.txt
+,Vorskla Poltava,FK Obolon,3,1,1,2-0,2023-24_ua1.txt
+15.30,FC LNZ Cherkasy,Vorskla Poltava,1,0,1,1-0,2023-24_ua1.txt
+15.30,Kryvbas Kryvyi Rih,FC Mynai,3,0,1,2-0,2023-24_ua1.txt
+,Metalist 1925 Kharkiv,NK Veres,1,2,2,0-1,2023-24_ua1.txt
+,FK Obolon,FK Oleksandriya,0,3,2,0-1,2023-24_ua1.txt
+,Rukh Lviv,Dinamo Kiev,1,2,2,0-0,2023-24_ua1.txt
+,Zorya Lugansk,Kolos Kovalivka,0,1,2,0-0,2023-24_ua1.txt
+,Chernomorets Odessa,SK Dnipro-1,0,2,2,0-1,2023-24_ua1.txt
+,Polissya Zhytomyr,Shakhtar Donetsk,2,0,1,2-0,2023-24_ua1.txt
+15.30,NK Veres,Karpaty Lviv,0,0,X,,2024-25_ua1.txt
+18.00,Kryvbas Kryvyi Rih,Chernomorets Odessa,1,0,1,1-0,2024-25_ua1.txt
+13.00,FC LNZ Cherkasy,Livyi Bereh,1,0,1,0-0,2024-25_ua1.txt
+15.30,Vorskla Poltava,Shakhtar Donetsk,0,5,2,0-2,2024-25_ua1.txt
+,FK Obolon,Kolos Kovalivka,2,2,X,0-0,2024-25_ua1.txt
+18.00,Zorya Lugansk,Inhulets Petrove,2,1,1,1-1,2024-25_ua1.txt
+15.30,FK Oleksandriya,Dinamo Kiev,0,0,X,,2024-25_ua1.txt
+18.00,Rukh Lviv,Polissya Zhytomyr,1,1,X,0-0,2024-25_ua1.txt
+15.30,Livyi Bereh,Vorskla Poltava,0,3,2,0-0,2024-25_ua1.txt
+18.00,NK Veres,Dinamo Kiev,1,2,2,0-2,2024-25_ua1.txt
+15.30,Chernomorets Odessa,Zorya Lugansk,0,1,2,0-0,2024-25_ua1.txt
+18.00,Kolos Kovalivka,Inhulets Petrove,0,0,X,,2024-25_ua1.txt
+13.00,FK Obolon,Rukh Lviv,0,4,2,0-1,2024-25_ua1.txt
+15.30,Karpaty Lviv,Kryvbas Kryvyi Rih,3,0,1,2-0,2024-25_ua1.txt
+18.00,Shakhtar Donetsk,Polissya Zhytomyr,0,1,2,0-1,2024-25_ua1.txt
+15.30,FC LNZ Cherkasy,FK Oleksandriya,0,2,2,0-0,2024-25_ua1.txt
+15.30,Chernomorets Odessa,Kolos Kovalivka,1,0,1,1-0,2024-25_ua1.txt
+18.00,Vorskla Poltava,FK Obolon,2,0,1,1-0,2024-25_ua1.txt
+13.00,Zorya Lugansk,FK Oleksandriya,1,2,2,0-2,2024-25_ua1.txt
+15.30,Polissya Zhytomyr,Inhulets Petrove,1,1,X,1-1,2024-25_ua1.txt
+18.00,Karpaty Lviv,Dinamo Kiev,1,3,2,1-1,2024-25_ua1.txt
+15.30,FC LNZ Cherkasy,Rukh Lviv,3,1,1,0-0,2024-25_ua1.txt
+,NK Veres,Kryvbas Kryvyi Rih,0,2,2,0-1,2024-25_ua1.txt
+18.00,Livyi Bereh,Shakhtar Donetsk,0,1,2,0-0,2024-25_ua1.txt
+13.00,FK Oleksandriya,Shakhtar Donetsk,4,3,1,2-2,2024-25_ua1.txt
+13.00,Polissya Zhytomyr,FK Obolon,4,0,1,3-0,2024-25_ua1.txt
+15.30,Rukh Lviv,Zorya Lugansk,3,0,1,1-0,2024-25_ua1.txt
+18.00,Kryvbas Kryvyi Rih,Inhulets Petrove,1,1,X,1-1,2024-25_ua1.txt
+15.30,Livyi Bereh,Chernomorets Odessa,1,0,1,1-0,2024-25_ua1.txt
+18.00,Kolos Kovalivka,NK Veres,0,1,2,0-0,2024-25_ua1.txt
+19.00,FC LNZ Cherkasy,Karpaty Lviv,2,1,1,0-1,2024-25_ua1.txt
+18.00,Dinamo Kiev,Vorskla Poltava,3,1,1,2-0,2024-25_ua1.txt
+15.30,FK Obolon,Zorya Lugansk,0,2,2,0-1,2024-25_ua1.txt
+18.00,Rukh Lviv,Inhulets Petrove,5,0,1,1-0,2024-25_ua1.txt
+13.00,Karpaty Lviv,Vorskla Poltava,1,1,X,1-0,2024-25_ua1.txt
+15.30,FK Oleksandriya,Kolos Kovalivka,2,1,1,1-0,2024-25_ua1.txt
+18.00,Chernomorets Odessa,Polissya Zhytomyr,1,4,2,1-3,2024-25_ua1.txt
+13.00,NK Veres,Livyi Bereh,1,3,2,1-0,2024-25_ua1.txt
+15.30,Dinamo Kiev,FC LNZ Cherkasy,1,0,1,1-0,2024-25_ua1.txt
+14.45,Kryvbas Kryvyi Rih,Shakhtar Donetsk,1,2,2,0-1,2024-25_ua1.txt
+18.00,FK Obolon,FK Oleksandriya,0,0,X,,2024-25_ua1.txt
+13.00,Chernomorets Odessa,Inhulets Petrove,1,0,1,0-0,2024-25_ua1.txt
+15.30,Zorya Lugansk,Dinamo Kiev,0,2,2,0-0,2024-25_ua1.txt
+18.00,Shakhtar Donetsk,Karpaty Lviv,5,2,1,4-1,2024-25_ua1.txt
+13.00,Vorskla Poltava,Rukh Lviv,0,0,X,,2024-25_ua1.txt
+15.30,Livyi Bereh,Kryvbas Kryvyi Rih,0,1,2,0-0,2024-25_ua1.txt
+18.00,Polissya Zhytomyr,NK Veres,2,1,1,0-1,2024-25_ua1.txt
+18.00,Kolos Kovalivka,FC LNZ Cherkasy,1,1,X,1-0,2024-25_ua1.txt
+13.00,Chernomorets Odessa,Karpaty Lviv,0,1,2,0-0,2024-25_ua1.txt
+15.30,FK Oleksandriya,Livyi Bereh,2,0,1,0-0,2024-25_ua1.txt
+18.00,Dinamo Kiev,Rukh Lviv,0,0,X,,2024-25_ua1.txt
+13.00,NK Veres,Inhulets Petrove,2,2,X,0-2,2024-25_ua1.txt
+15.30,Kryvbas Kryvyi Rih,Vorskla Poltava,1,1,X,1-1,2024-25_ua1.txt
+18.00,Polissya Zhytomyr,FC LNZ Cherkasy,1,1,X,0-1,2024-25_ua1.txt
+15.30,Kolos Kovalivka,Zorya Lugansk,1,0,1,0-0,2024-25_ua1.txt
+18.00,Shakhtar Donetsk,FK Obolon,4,0,1,1-0,2024-25_ua1.txt
+18.00,NK Veres,Shakhtar Donetsk,1,1,X,0-0,2024-25_ua1.txt
+13.00,Kryvbas Kryvyi Rih,FK Oleksandriya,0,1,2,0-1,2024-25_ua1.txt
+15.30,FC LNZ Cherkasy,Chernomorets Odessa,1,1,X,1-0,2024-25_ua1.txt
+18.00,Karpaty Lviv,Polissya Zhytomyr,1,3,2,1-2,2024-25_ua1.txt
+13.00,FK Obolon,Inhulets Petrove,2,1,1,0-0,2024-25_ua1.txt
+15.30,Rukh Lviv,Kolos Kovalivka,0,0,X,,2024-25_ua1.txt
+18.00,Livyi Bereh,Dinamo Kiev,0,3,2,0-1,2024-25_ua1.txt
+18.00,Zorya Lugansk,Vorskla Poltava,2,0,1,1-0,2024-25_ua1.txt
+15.30,Chernomorets Odessa,FK Obolon,1,0,1,0-0,2024-25_ua1.txt
+18.00,Karpaty Lviv,Inhulets Petrove,0,0,X,,2024-25_ua1.txt
+13.00,NK Veres,Zorya Lugansk,2,1,1,1-1,2024-25_ua1.txt
+15.30,FK Oleksandriya,Rukh Lviv,1,1,X,0-0,2024-25_ua1.txt
+18.00,Kolos Kovalivka,Livyi Bereh,0,0,X,,2024-25_ua1.txt
+13.00,Polissya Zhytomyr,Vorskla Poltava,2,1,1,1-1,2024-25_ua1.txt
+15.30,Shakhtar Donetsk,FC LNZ Cherkasy,5,1,1,2-0,2024-25_ua1.txt
+18.00,Dinamo Kiev,Kryvbas Kryvyi Rih,2,1,1,2-1,2024-25_ua1.txt
+18.00,Kolos Kovalivka,Shakhtar Donetsk,0,1,2,0-0,2024-25_ua1.txt
+13.00,FK Oleksandriya,Vorskla Poltava,1,0,1,0-0,2024-25_ua1.txt
+15.30,FK Obolon,Dinamo Kiev,1,5,2,0-3,2024-25_ua1.txt
+18.00,Polissya Zhytomyr,Livyi Bereh,0,0,X,,2024-25_ua1.txt
+13.00,FC LNZ Cherkasy,Inhulets Petrove,2,0,1,1-0,2024-25_ua1.txt
+15.30,Chernomorets Odessa,NK Veres,1,1,X,1-0,2024-25_ua1.txt
+18.00,Zorya Lugansk,Kryvbas Kryvyi Rih,0,1,2,0-0,2024-25_ua1.txt
+18.00,Rukh Lviv,Karpaty Lviv,0,1,2,0-1,2024-25_ua1.txt
+15.30,Rukh Lviv,Chernomorets Odessa,1,1,X,0-0,2024-25_ua1.txt
+18.00,Polissya Zhytomyr,Kolos Kovalivka,1,1,X,0-1,2024-25_ua1.txt
+13.00,FK Oleksandriya,Inhulets Petrove,2,1,1,2-1,2024-25_ua1.txt
+15.30,Kryvbas Kryvyi Rih,FC LNZ Cherkasy,3,1,1,1-0,2024-25_ua1.txt
+18.00,Karpaty Lviv,FK Obolon,1,0,1,1-0,2024-25_ua1.txt
+13.00,Livyi Bereh,Zorya Lugansk,0,2,2,0-1,2024-25_ua1.txt
+15.30,NK Veres,Vorskla Poltava,2,2,X,1-0,2024-25_ua1.txt
+18.00,Dinamo Kiev,Shakhtar Donetsk,1,1,X,0-0,2024-25_ua1.txt
+15.30,Karpaty Lviv,Livyi Bereh,3,0,1,0-0,2024-25_ua1.txt
+18.00,Shakhtar Donetsk,Chernomorets Odessa,2,1,1,2-1,2024-25_ua1.txt
+13.00,Vorskla Poltava,Kolos Kovalivka,0,1,2,0-0,2024-25_ua1.txt
+15.30,FK Oleksandriya,Polissya Zhytomyr,1,0,1,0-0,2024-25_ua1.txt
+18.00,Dinamo Kiev,Inhulets Petrove,5,2,1,4-1,2024-25_ua1.txt
+13.00,FK Obolon,NK Veres,0,0,X,,2024-25_ua1.txt
+15.30,Kryvbas Kryvyi Rih,Rukh Lviv,1,1,X,0-1,2024-25_ua1.txt
+18.00,Zorya Lugansk,FC LNZ Cherkasy,1,2,2,1-0,2024-25_ua1.txt
+15.30,Chernomorets Odessa,Vorskla Poltava,0,1,2,0-0,2024-25_ua1.txt
+18.00,Livyi Bereh,Inhulets Petrove,0,0,X,,2024-25_ua1.txt
+13.00,FC LNZ Cherkasy,FK Obolon,0,1,2,0-0,2024-25_ua1.txt
+15.30,FK Oleksandriya,Karpaty Lviv,3,0,1,1-0,2024-25_ua1.txt
+18.00,Kolos Kovalivka,Kryvbas Kryvyi Rih,1,1,X,0-0,2024-25_ua1.txt
+13.00,NK Veres,Rukh Lviv,2,0,1,2-0,2024-25_ua1.txt
+15.30,Shakhtar Donetsk,Zorya Lugansk,3,1,1,0-1,2024-25_ua1.txt
+18.00,Dinamo Kiev,Polissya Zhytomyr,2,1,1,2-0,2024-25_ua1.txt
+18.00,Karpaty Lviv,Kolos Kovalivka,1,0,1,1-0,2024-25_ua1.txt
+13.00,Vorskla Poltava,FC LNZ Cherkasy,2,0,1,1-0,2024-25_ua1.txt
+15.30,Dinamo Kiev,Chernomorets Odessa,3,1,1,1-0,2024-25_ua1.txt
+18.00,Shakhtar Donetsk,Inhulets Petrove,6,0,1,1-0,2024-25_ua1.txt
+13.00,FK Obolon,Kryvbas Kryvyi Rih,0,1,2,0-1,2024-25_ua1.txt
+15.30,NK Veres,FK Oleksandriya,1,1,X,1-0,2024-25_ua1.txt
+18.00,Rukh Lviv,Livyi Bereh,1,0,1,1-0,2024-25_ua1.txt
+18.00,Polissya Zhytomyr,Zorya Lugansk,1,1,X,0-0,2024-25_ua1.txt
+15.30,Vorskla Poltava,Inhulets Petrove,0,3,2,0-2,2024-25_ua1.txt
+13.00,FC LNZ Cherkasy,NK Veres,1,2,2,1-1,2024-25_ua1.txt
+15.30,Kryvbas Kryvyi Rih,Polissya Zhytomyr,3,1,1,1-0,2024-25_ua1.txt
+18.00,Livyi Bereh,FK Obolon,1,1,X,0-1,2024-25_ua1.txt
+13.00,FK Oleksandriya,Chernomorets Odessa,3,0,1,1-0,2024-25_ua1.txt
+15.30,Kolos Kovalivka,Dinamo Kiev,1,1,X,1-1,2024-25_ua1.txt
+18.00,Shakhtar Donetsk,Rukh Lviv,1,1,X,1-0,2024-25_ua1.txt
+18.00,Zorya Lugansk,Karpaty Lviv,2,1,1,0-1,2024-25_ua1.txt
+18.00,Shakhtar Donetsk,Vorskla Poltava,3,1,1,3-0,2024-25_ua1.txt
+13.00,Livyi Bereh,FC LNZ Cherkasy,3,1,1,1-1,2024-25_ua1.txt
+15.30,Chernomorets Odessa,Kryvbas Kryvyi Rih,1,3,2,1-2,2024-25_ua1.txt
+18.00,Karpaty Lviv,NK Veres,5,0,1,2-0,2024-25_ua1.txt
+15.30,Kolos Kovalivka,FK Obolon,0,0,X,,2024-25_ua1.txt
+18.00,Dinamo Kiev,FK Oleksandriya,3,0,1,2-0,2024-25_ua1.txt
+18.00,Polissya Zhytomyr,Rukh Lviv,0,1,2,0-1,2024-25_ua1.txt
+13.00,Inhulets Petrove,Zorya Lugansk,1,0,1,1-0,2024-25_ua1.txt
+15.30,Vorskla Poltava,Livyi Bereh,0,1,2,0-0,2024-25_ua1.txt
+13.00,FK Oleksandriya,FC LNZ Cherkasy,1,1,X,1-0,2024-25_ua1.txt
+15.30,Kryvbas Kryvyi Rih,Karpaty Lviv,2,0,1,1-0,2024-25_ua1.txt
+18.00,Zorya Lugansk,Chernomorets Odessa,2,1,1,1-0,2024-25_ua1.txt
+13.00,Inhulets Petrove,Kolos Kovalivka,0,2,2,0-1,2024-25_ua1.txt
+15.30,Rukh Lviv,FK Obolon,1,3,2,0-1,2024-25_ua1.txt
+18.00,Polissya Zhytomyr,Shakhtar Donetsk,1,0,1,0-0,2024-25_ua1.txt
+13.00,Dinamo Kiev,NK Veres,1,0,1,1-0,2024-25_ua1.txt
+15.30,Kolos Kovalivka,Chernomorets Odessa,1,2,2,1-1,2024-25_ua1.txt
+13.00,Kryvbas Kryvyi Rih,NK Veres,0,3,2,0-2,2024-25_ua1.txt
+15.30,Inhulets Petrove,Polissya Zhytomyr,0,1,2,0-0,2024-25_ua1.txt
+18.00,Rukh Lviv,FC LNZ Cherkasy,0,1,2,0-1,2024-25_ua1.txt
+13.00,FK Obolon,Vorskla Poltava,1,0,1,0-0,2024-25_ua1.txt
+15.30,FK Oleksandriya,Zorya Lugansk,2,1,1,1-1,2024-25_ua1.txt
+18.00,Dinamo Kiev,Karpaty Lviv,2,0,1,0-0,2024-25_ua1.txt
+18.00,Shakhtar Donetsk,Livyi Bereh,1,0,1,0-0,2024-25_ua1.txt
+13.00,FK Obolon,Polissya Zhytomyr,0,0,X,,2024-25_ua1.txt
+15.30,Vorskla Poltava,Dinamo Kiev,1,1,X,0-1,2024-25_ua1.txt
+18.00,Karpaty Lviv,FC LNZ Cherkasy,1,0,1,0-0,2024-25_ua1.txt
+15.30,Chernomorets Odessa,Livyi Bereh,0,1,2,0-1,2024-25_ua1.txt
+18.00,Shakhtar Donetsk,FK Oleksandriya,3,0,1,0-0,2024-25_ua1.txt
+13.00,Inhulets Petrove,Kryvbas Kryvyi Rih,2,0,1,2-0,2024-25_ua1.txt
+15.30,Zorya Lugansk,Rukh Lviv,2,0,1,1-0,2024-25_ua1.txt
+18.00,NK Veres,Kolos Kovalivka,2,1,1,1-1,2024-25_ua1.txt
+13.00,Polissya Zhytomyr,Chernomorets Odessa,3,1,1,2-0,2024-25_ua1.txt
+,Vorskla Poltava,Karpaty Lviv,0,0,X,,2024-25_ua1.txt
+15.30,FC LNZ Cherkasy,Dinamo Kiev,1,2,2,0-1,2024-25_ua1.txt
+18.00,Shakhtar Donetsk,Kryvbas Kryvyi Rih,1,1,X,0-0,2024-25_ua1.txt
+13.00,Livyi Bereh,NK Veres,2,0,1,1-0,2024-25_ua1.txt
+15.30,Kolos Kovalivka,FK Oleksandriya,0,1,2,0-1,2024-25_ua1.txt
+18.00,Zorya Lugansk,FK Obolon,2,1,1,1-0,2024-25_ua1.txt
+15.30,Inhulets Petrove,Rukh Lviv,0,1,2,0-0,2024-25_ua1.txt
+13.00,FK Oleksandriya,FK Obolon,4,0,1,3-0,2024-25_ua1.txt
+15.30,Dinamo Kiev,Zorya Lugansk,2,2,X,1-2,2024-25_ua1.txt
+,NK Veres,Polissya Zhytomyr,5,1,1,2-1,2024-25_ua1.txt
+18.00,Karpaty Lviv,Shakhtar Donetsk,0,0,X,,2024-25_ua1.txt
+18.00,Rukh Lviv,Vorskla Poltava,0,1,2,0-0,2024-25_ua1.txt
+13.00,Inhulets Petrove,Chernomorets Odessa,1,0,1,1-0,2024-25_ua1.txt
+15.30,FC LNZ Cherkasy,Kolos Kovalivka,2,0,1,1-0,2024-25_ua1.txt
+13.00,Kryvbas Kryvyi Rih,Livyi Bereh,4,0,1,1-0,2024-25_ua1.txt
+13.00,Inhulets Petrove,NK Veres,0,0,X,,2024-25_ua1.txt
+15.30,FC LNZ Cherkasy,Polissya Zhytomyr,0,1,2,0-0,2024-25_ua1.txt
+13.00,Livyi Bereh,FK Oleksandriya,0,1,2,0-1,2024-25_ua1.txt
+15.30,FK Obolon,Shakhtar Donetsk,0,2,2,0-1,2024-25_ua1.txt
+18.00,Rukh Lviv,Dinamo Kiev,0,2,2,0-2,2024-25_ua1.txt
+13.00,Vorskla Poltava,Kryvbas Kryvyi Rih,0,1,2,0-1,2024-25_ua1.txt
+15.30,Karpaty Lviv,Chernomorets Odessa,4,0,1,2-0,2024-25_ua1.txt
+18.00,Zorya Lugansk,Kolos Kovalivka,0,3,2,0-1,2024-25_ua1.txt
+15.30,Inhulets Petrove,FK Obolon,0,1,2,0-1,2024-25_ua1.txt
+13.00,Vorskla Poltava,Zorya Lugansk,1,2,2,0-0,2024-25_ua1.txt
+15.30,Chernomorets Odessa,FC LNZ Cherkasy,1,0,1,1-0,2024-25_ua1.txt
+13.00,FK Oleksandriya,Kryvbas Kryvyi Rih,1,0,1,0-0,2024-25_ua1.txt
+15.30,Dinamo Kiev,Livyi Bereh,2,0,1,1-0,2024-25_ua1.txt
+18.00,Shakhtar Donetsk,NK Veres,3,0,1,0-0,2024-25_ua1.txt
+15.30,Kolos Kovalivka,Rukh Lviv,0,1,2,0-1,2024-25_ua1.txt
+18.00,Polissya Zhytomyr,Karpaty Lviv,1,1,X,0-0,2024-25_ua1.txt
+15.30,FC LNZ Cherkasy,Shakhtar Donetsk,1,4,2,0-3,2024-25_ua1.txt
+13.00,Kryvbas Kryvyi Rih,Dinamo Kiev,0,2,2,0-1,2024-25_ua1.txt
+15.30,Rukh Lviv,FK Oleksandriya,1,1,X,0-1,2024-25_ua1.txt
+18.00,FK Obolon,Chernomorets Odessa,1,0,1,1-0,2024-25_ua1.txt
+13.00,Vorskla Poltava,Polissya Zhytomyr,0,2,2,0-1,2024-25_ua1.txt
+15.30,Livyi Bereh,Kolos Kovalivka,0,2,2,0-2,2024-25_ua1.txt
+18.00,Zorya Lugansk,NK Veres,1,2,2,0-2,2024-25_ua1.txt
+15.30,Inhulets Petrove,Karpaty Lviv,1,2,2,0-1,2024-25_ua1.txt
+13.00,Vorskla Poltava,FK Oleksandriya,1,3,2,0-3,2024-25_ua1.txt
+18.00,Dinamo Kiev,FK Obolon,3,0,1,1-0,2024-25_ua1.txt
+13.00,Karpaty Lviv,Rukh Lviv,3,1,1,2-0,2024-25_ua1.txt
+15.30,Livyi Bereh,Polissya Zhytomyr,1,1,X,1-0,2024-25_ua1.txt
+18.00,Shakhtar Donetsk,Kolos Kovalivka,2,4,2,1-2,2024-25_ua1.txt
+13.00,Kryvbas Kryvyi Rih,Zorya Lugansk,3,0,1,1-0,2024-25_ua1.txt
+15.30,Inhulets Petrove,FC LNZ Cherkasy,0,0,X,,2024-25_ua1.txt
+18.00,NK Veres,Chernomorets Odessa,2,1,1,0-1,2024-25_ua1.txt
+15.30,Inhulets Petrove,FK Oleksandriya,0,1,2,0-1,2024-25_ua1.txt
+18.00,Zorya Lugansk,Livyi Bereh,2,1,1,1-0,2024-25_ua1.txt
+13.00,Chernomorets Odessa,Rukh Lviv,1,2,2,0-1,2024-25_ua1.txt
+15.30,FC LNZ Cherkasy,Kryvbas Kryvyi Rih,0,0,X,,2024-25_ua1.txt
+18.00,FK Obolon,Karpaty Lviv,2,2,X,1-1,2024-25_ua1.txt
+13.00,Vorskla Poltava,NK Veres,3,0,1,1-0,2024-25_ua1.txt
+15.30,Kolos Kovalivka,Polissya Zhytomyr,1,1,X,0-0,2024-25_ua1.txt
+18.00,Shakhtar Donetsk,Dinamo Kiev,2,2,X,2-0,2024-25_ua1.txt
+15.30,Livyi Bereh,Karpaty Lviv,2,3,2,1-1,2024-25_ua1.txt
+18.00,Rukh Lviv,Kryvbas Kryvyi Rih,0,0,X,,2024-25_ua1.txt
+13.00,Chernomorets Odessa,Shakhtar Donetsk,0,3,2,0-0,2024-25_ua1.txt
+15.30,Inhulets Petrove,Dinamo Kiev,0,4,2,0-2,2024-25_ua1.txt
+18.00,NK Veres,FK Obolon,0,2,2,0-2,2024-25_ua1.txt
+13.00,FC LNZ Cherkasy,Zorya Lugansk,1,1,X,0-0,2024-25_ua1.txt
+15.30,Kolos Kovalivka,Vorskla Poltava,0,0,X,,2024-25_ua1.txt
+18.00,Polissya Zhytomyr,FK Oleksandriya,1,2,2,1-1,2024-25_ua1.txt
+15.30,Zorya Lugansk,Shakhtar Donetsk,0,0,X,,2024-25_ua1.txt
+18.00,Polissya Zhytomyr,Dinamo Kiev,0,0,X,,2024-25_ua1.txt
+13.00,Vorskla Poltava,Chernomorets Odessa,1,2,2,1-0,2024-25_ua1.txt
+15.30,FK Obolon,FC LNZ Cherkasy,0,0,X,,2024-25_ua1.txt
+18.00,Rukh Lviv,NK Veres,2,0,1,1-0,2024-25_ua1.txt
+13.00,Kryvbas Kryvyi Rih,Kolos Kovalivka,0,1,2,0-1,2024-25_ua1.txt
+18.00,Karpaty Lviv,FK Oleksandriya,2,1,1,0-1,2024-25_ua1.txt
+15.30,Inhulets Petrove,Livyi Bereh,2,1,1,1-0,2024-25_ua1.txt
+13.00,Zorya Lugansk,Polissya Zhytomyr,0,1,2,0-1,2024-25_ua1.txt
+,Kryvbas Kryvyi Rih,FK Obolon,1,0,1,0-0,2024-25_ua1.txt
+,Kolos Kovalivka,Karpaty Lviv,2,1,1,0-1,2024-25_ua1.txt
+15.30,FK Oleksandriya,NK Veres,3,1,1,3-0,2024-25_ua1.txt
+,Inhulets Petrove,Shakhtar Donetsk,1,4,2,1-1,2024-25_ua1.txt
+,Livyi Bereh,Rukh Lviv,1,0,1,1-0,2024-25_ua1.txt
+,Chernomorets Odessa,Dinamo Kiev,1,1,X,0-0,2024-25_ua1.txt
+,FC LNZ Cherkasy,Vorskla Poltava,0,0,X,,2024-25_ua1.txt
+15.30,Inhulets Petrove,Vorskla Poltava,1,1,X,0-1,2024-25_ua1.txt
+,FK Obolon,Livyi Bereh,1,0,1,0-0,2024-25_ua1.txt
+13.00,Chernomorets Odessa,FK Oleksandriya,0,0,X,,2024-25_ua1.txt
+15.30,Rukh Lviv,Shakhtar Donetsk,1,1,X,0-0,2024-25_ua1.txt
+18.00,Dinamo Kiev,Kolos Kovalivka,1,1,X,1-0,2024-25_ua1.txt
+15.30,NK Veres,FC LNZ Cherkasy,1,1,X,0-0,2024-25_ua1.txt
+18.00,Polissya Zhytomyr,Kryvbas Kryvyi Rih,1,1,X,0-1,2024-25_ua1.txt
+,Karpaty Lviv,Zorya Lugansk,1,3,2,1-1,2024-25_ua1.txt

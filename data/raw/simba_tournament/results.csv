@@ -1,0 +1,18 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Cameroon,Ivory Coast,1,2,2,Pretoria,South Africa,1994_simba_tournament.txt
+Cameroon,Ghana,0,1,2,Port Elizabeth,South Africa,1994_simba_tournament.txt
+South Africa,Ivory Coast,0,0,X,Port Elizabeth,South Africa,1994_simba_tournament.txt
+Ghana,Ivory Coast,1,1,X,Johannesburg,South Africa,1994_simba_tournament.txt
+South Africa,Cameroon,1,1,X,Johannesburg,South Africa,1994_simba_tournament.txt
+Egypt,Zimbabwe,2,2,X,Pretoria,South Africa,1995_simba_tournament.txt
+South Africa,Zambia,2,2,X,Pretoria,South Africa,1995_simba_tournament.txt
+South Africa,Egypt,2,0,1,Mafikeng,South Africa,1995_simba_tournament.txt
+Zambia,Zimbabwe,1,1,X,Mmabatho,South Africa,1995_simba_tournament.txt
+Egypt,Zambia,3,1,1,Johannesburg,South Africa,1995_simba_tournament.txt
+South Africa,Zimbabwe,2,0,1,Johannesburg,South Africa,1995_simba_tournament.txt
+Australia,Ghana,2,0,1,Durban,South Africa,1996_simba_tournament.txt
+South Africa,Kenya,1,0,1,Durban,South Africa,1996_simba_tournament.txt
+Ghana,Kenya,1,0,1,Johannesburg,South Africa,1996_simba_tournament.txt
+South Africa,Australia,2,0,1,Johannesburg,South Africa,1996_simba_tournament.txt
+Australia,Kenya,4,0,1,Pretoria,South Africa,1996_simba_tournament.txt
+South Africa,Ghana,0,0,X,Pretoria,South Africa,1996_simba_tournament.txt

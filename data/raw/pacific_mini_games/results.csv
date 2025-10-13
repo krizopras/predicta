@@ -1,0 +1,16 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Fiji,Tuvalu,8,0,1,Port Vila,Vanuatu,2017_pacific_mini_games.txt
+Tonga,Solomon Islands,0,8,2,Port Vila,Vanuatu,2017_pacific_mini_games.txt
+Vanuatu,New Caledonia,2,1,1,Port Vila,Vanuatu,2017_pacific_mini_games.txt
+Tuvalu,New Caledonia,2,1,1,Port Vila,Vanuatu,2017_pacific_mini_games.txt
+Solomon Islands,Fiji,0,0,X,Port Vila,Vanuatu,2017_pacific_mini_games.txt
+Vanuatu,Tonga,5,0,1,Port Vila,Vanuatu,2017_pacific_mini_games.txt
+Tonga,New Caledonia,2,4,2,Port Vila,Vanuatu,2017_pacific_mini_games.txt
+Solomon Islands,Tuvalu,6,0,1,Port Vila,Vanuatu,2017_pacific_mini_games.txt
+Vanuatu,Fiji,1,1,X,Port Vila,Vanuatu,2017_pacific_mini_games.txt
+Fiji,Tonga,4,0,1,Port Vila,Vanuatu,2017_pacific_mini_games.txt
+New Caledonia,Solomon Islands,0,0,X,Port Vila,Vanuatu,2017_pacific_mini_games.txt
+Vanuatu,Tuvalu,10,0,1,Port Vila,Vanuatu,2017_pacific_mini_games.txt
+Tuvalu,Tonga,4,3,1,Port Vila,Vanuatu,2017_pacific_mini_games.txt
+Fiji,New Caledonia,4,1,1,Port Vila,Vanuatu,2017_pacific_mini_games.txt
+Vanuatu,Solomon Islands,3,2,1,Port Vila,Vanuatu,2017_pacific_mini_games.txt

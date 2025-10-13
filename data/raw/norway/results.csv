@@ -1,0 +1,626 @@
+time,home_team,away_team,home_score,away_score,result,ht_score,source_file
+14.30,Rosenborg BK,Viking FK,1,0,1,0-0,2023_no1.txt
+17.00,Aalesunds FK,Vålerenga IF,0,1,2,0-0,2023_no1.txt
+,Hamarkameratene,Sandefjord Fotball,2,0,1,2-0,2023_no1.txt
+,Stabæk IF,Odds BK,0,0,X,,2023_no1.txt
+,Tromsø IL,Molde FK,1,0,1,0-0,2023_no1.txt
+19.15,SK Brann,FK Haugesund,3,0,1,2-0,2023_no1.txt
+18.30,Lillestrøm SK,Strømsgodset IF,4,3,1,2-2,2023_no1.txt
+18.00,Viking FK,Lillestrøm SK,2,0,1,0-0,2023_no1.txt
+,Glimt,Stabæk IF,4,0,1,3-0,2023_no1.txt
+,FK Haugesund,Hamarkameratene,3,2,1,1-0,2023_no1.txt
+,Molde FK,Rosenborg BK,1,1,X,1-1,2023_no1.txt
+,Odds BK,SK Brann,2,0,1,1-0,2023_no1.txt
+,Sandefjord Fotball,Tromsø IL,0,0,X,,2023_no1.txt
+,Strømsgodset IF,Aalesunds FK,1,0,1,1-0,2023_no1.txt
+19.15,Vålerenga IF,Sarpsborg 08,0,2,2,0-0,2023_no1.txt
+18.00,SK Brann,Vålerenga IF,3,1,1,1-1,2023_no1.txt
+,Hamarkameratene,Strømsgodset IF,2,0,1,0-0,2023_no1.txt
+,Rosenborg BK,Sandefjord Fotball,1,1,X,0-1,2023_no1.txt
+,Sarpsborg 08,Odds BK,0,0,X,,2023_no1.txt
+,Stabæk IF,FK Haugesund,3,0,1,1-0,2023_no1.txt
+,Tromsø IL,Viking FK,1,1,X,1-0,2023_no1.txt
+19.15,Lillestrøm SK,Molde FK,2,1,1,2-1,2023_no1.txt
+,Glimt,SK Brann,2,2,X,0-2,2023_no1.txt
+17.00,FK Haugesund,Sarpsborg 08,0,0,X,,2023_no1.txt
+,Molde FK,Stabæk IF,2,3,2,1-2,2023_no1.txt
+,Sandefjord Fotball,Aalesunds FK,4,0,1,2-0,2023_no1.txt
+,Strømsgodset IF,Tromsø IL,0,1,2,0-0,2023_no1.txt
+,Viking FK,Hamarkameratene,7,3,1,0-1,2023_no1.txt
+19.15,Odds BK,Rosenborg BK,0,0,X,,2023_no1.txt
+18.00,Vålerenga IF,Lillestrøm SK,3,4,2,3-1,2023_no1.txt
+18.00,Rosenborg BK,Vålerenga IF,1,3,2,0-1,2023_no1.txt
+17.00,Aalesunds FK,FK Haugesund,0,0,X,,2023_no1.txt
+,Hamarkameratene,Molde FK,0,4,2,0-1,2023_no1.txt
+,Stabæk IF,Sarpsborg 08,1,1,X,0-0,2023_no1.txt
+,Tromsø IL,Odds BK,0,1,2,0-0,2023_no1.txt
+,Viking FK,Strømsgodset IF,1,1,X,0-0,2023_no1.txt
+19.00,SK Brann,Sandefjord Fotball,0,0,X,,2023_no1.txt
+19.00,Odds BK,Lillestrøm SK,0,1,2,0-0,2023_no1.txt
+,Glimt,Rosenborg BK,3,2,1,2-1,2023_no1.txt
+,Hamarkameratene,Tromsø IL,1,2,2,0-1,2023_no1.txt
+,Molde FK,Strømsgodset IF,3,2,1,1-0,2023_no1.txt
+,Sandefjord Fotball,Viking FK,1,2,2,1-1,2023_no1.txt
+,Sarpsborg 08,SK Brann,2,1,1,2-0,2023_no1.txt
+,Stabæk IF,Aalesunds FK,1,0,1,0-0,2023_no1.txt
+19.15,FK Haugesund,Vålerenga IF,1,1,X,0-0,2023_no1.txt
+18.00,Aalesunds FK,Molde FK,3,1,1,1-0,2023_no1.txt
+,SK Brann,Stabæk IF,4,1,1,2-1,2023_no1.txt
+,Lillestrøm SK,Sarpsborg 08,1,2,2,0-0,2023_no1.txt
+,Rosenborg BK,FK Haugesund,1,0,1,0-0,2023_no1.txt
+,Strømsgodset IF,Sandefjord Fotball,1,0,1,1-0,2023_no1.txt
+,Vålerenga IF,Hamarkameratene,3,0,1,3-0,2023_no1.txt
+,Viking FK,Odds BK,3,2,1,0-2,2023_no1.txt
+17.00,SK Brann,Rosenborg BK,3,1,1,1-0,2023_no1.txt
+,Glimt,Viking FK,5,1,1,2-0,2023_no1.txt
+,FK Haugesund,Tromsø IL,1,2,2,1-1,2023_no1.txt
+,Molde FK,Sandefjord Fotball,5,0,1,2-0,2023_no1.txt
+,Odds BK,Strømsgodset IF,1,1,X,0-0,2023_no1.txt
+,Sarpsborg 08,Aalesunds FK,3,1,1,2-1,2023_no1.txt
+,Stabæk IF,Vålerenga IF,2,1,1,2-0,2023_no1.txt
+19.15,Hamarkameratene,Lillestrøm SK,0,0,X,,2023_no1.txt
+17.00,Aalesunds FK,SK Brann,1,3,2,1-0,2023_no1.txt
+,Lillestrøm SK,Stabæk IF,3,1,1,1-1,2023_no1.txt
+,Rosenborg BK,Hamarkameratene,4,0,1,1-0,2023_no1.txt
+,Sandefjord Fotball,Odds BK,4,1,1,1-0,2023_no1.txt
+,Strømsgodset IF,FK Haugesund,1,2,2,0-1,2023_no1.txt
+,Tromsø IL,Sarpsborg 08,2,1,1,0-1,2023_no1.txt
+19.15,Viking FK,Molde FK,3,4,2,1-2,2023_no1.txt
+17.00,Aalesunds FK,Tromsø IL,2,3,2,1-1,2023_no1.txt
+,Glimt,Hamarkameratene,3,0,1,0-0,2023_no1.txt
+,FK Haugesund,Sandefjord Fotball,3,2,1,3-0,2023_no1.txt
+,Odds BK,Molde FK,1,0,1,0-0,2023_no1.txt
+,Sarpsborg 08,Viking FK,1,3,2,0-1,2023_no1.txt
+,Stabæk IF,Rosenborg BK,2,2,X,2-1,2023_no1.txt
+,Vålerenga IF,Strømsgodset IF,0,1,2,0-0,2023_no1.txt
+19.15,SK Brann,Lillestrøm SK,2,2,X,0-1,2023_no1.txt
+18.00,Viking FK,SK Brann,3,1,1,1-1,2023_no1.txt
+17.00,Hamarkameratene,Odds BK,0,1,2,0-0,2023_no1.txt
+,Molde FK,FK Haugesund,1,0,1,1-0,2023_no1.txt
+,Rosenborg BK,Sarpsborg 08,0,3,2,0-3,2023_no1.txt
+,Tromsø IL,Stabæk IF,2,1,1,2-1,2023_no1.txt
+18.00,Lillestrøm SK,Aalesunds FK,5,1,1,2-1,2023_no1.txt
+17.00,Sandefjord Fotball,Vålerenga IF,1,2,2,0-1,2023_no1.txt
+18.00,Vålerenga IF,Viking FK,1,2,2,0-1,2023_no1.txt
+17.00,Aalesunds FK,Rosenborg BK,1,0,1,0-0,2023_no1.txt
+,SK Brann,Hamarkameratene,2,1,1,1-0,2023_no1.txt
+,FK Haugesund,Odds BK,2,1,1,1-1,2023_no1.txt
+,Lillestrøm SK,Tromsø IL,0,1,2,0-0,2023_no1.txt
+,Sarpsborg 08,Sandefjord Fotball,6,1,1,3-1,2023_no1.txt
+,Glimt,Molde FK,2,2,X,0-2,2023_no1.txt
+19.00,Stabæk IF,Strømsgodset IF,0,1,2,0-1,2023_no1.txt
+19.00,Hamarkameratene,Aalesunds FK,2,1,1,0-0,2023_no1.txt
+18.00,Viking FK,FK Haugesund,2,0,1,0-0,2023_no1.txt
+,Rosenborg BK,Lillestrøm SK,1,2,2,1-0,2023_no1.txt
+,Sandefjord Fotball,Stabæk IF,0,0,X,,2023_no1.txt
+,Strømsgodset IF,Sarpsborg 08,5,2,1,3-2,2023_no1.txt
+,Tromsø IL,Vålerenga IF,0,0,X,,2023_no1.txt
+19.15,Molde FK,SK Brann,2,0,1,1-0,2023_no1.txt
+18.00,Vålerenga IF,Molde FK,0,4,2,0-3,2023_no1.txt
+17.00,Aalesunds FK,Odds BK,0,3,2,0-0,2023_no1.txt
+,Glimt,FK Haugesund,2,1,1,0-1,2023_no1.txt
+,Lillestrøm SK,Sandefjord Fotball,4,2,1,3-1,2023_no1.txt
+,Rosenborg BK,Tromsø IL,2,1,1,1-0,2023_no1.txt
+,Sarpsborg 08,Hamarkameratene,2,3,2,2-3,2023_no1.txt
+,Stabæk IF,Viking FK,0,1,2,0-0,2023_no1.txt
+19.15,SK Brann,Strømsgodset IF,1,0,1,1-0,2023_no1.txt
+18.00,Molde FK,Sarpsborg 08,5,1,1,2-1,2023_no1.txt
+17.00,FK Haugesund,Lillestrøm SK,1,0,1,0-0,2023_no1.txt
+,Hamarkameratene,Stabæk IF,3,2,1,1-0,2023_no1.txt
+,Odds BK,Vålerenga IF,2,1,1,1-0,2023_no1.txt
+,Tromsø IL,SK Brann,3,1,1,1-0,2023_no1.txt
+19.15,Strømsgodset IF,Rosenborg BK,0,1,2,0-1,2023_no1.txt
+19.00,Viking FK,Aalesunds FK,3,1,1,1-1,2023_no1.txt
+15.30,Vålerenga IF,Sandefjord Fotball,2,3,2,0-0,2023_no1.txt
+18.00,Stabæk IF,Molde FK,0,1,2,0-0,2023_no1.txt
+17.00,Aalesunds FK,Strømsgodset IF,1,0,1,0-0,2023_no1.txt
+,SK Brann,Viking FK,0,2,2,0-1,2023_no1.txt
+,Lillestrøm SK,Hamarkameratene,3,1,1,2-1,2023_no1.txt
+,Rosenborg BK,Odds BK,3,2,1,0-2,2023_no1.txt
+,Sarpsborg 08,FK Haugesund,2,1,1,0-1,2023_no1.txt
+,Glimt,Tromsø IL,0,2,2,0-1,2023_no1.txt
+18.00,Molde FK,Aalesunds FK,3,0,1,0-0,2023_no1.txt
+18.00,Strømsgodset IF,Vålerenga IF,1,3,2,1-1,2023_no1.txt
+17.00,FK Haugesund,Rosenborg BK,1,2,2,1-0,2023_no1.txt
+,Hamarkameratene,SK Brann,0,2,2,0-2,2023_no1.txt
+,Odds BK,Stabæk IF,4,0,1,2-0,2023_no1.txt
+,Sandefjord Fotball,Sarpsborg 08,5,1,1,2-1,2023_no1.txt
+,Tromsø IL,Lillestrøm SK,3,1,1,0-1,2023_no1.txt
+,Glimt,Odds BK,2,0,1,0-0,2023_no1.txt
+,Rosenborg BK,SK Brann,0,2,2,0-1,2023_no1.txt
+16.00,Sandefjord Fotball,Molde FK,2,2,X,1-0,2023_no1.txt
+18.00,Sarpsborg 08,Strømsgodset IF,1,2,2,1-0,2023_no1.txt
+17.00,Aalesunds FK,Hamarkameratene,0,2,2,0-1,2023_no1.txt
+,Lillestrøm SK,Viking FK,1,3,2,0-0,2023_no1.txt
+19.15,Vålerenga IF,FK Haugesund,1,1,X,0-1,2023_no1.txt
+15.00,Stabæk IF,Tromsø IL,0,1,2,0-0,2023_no1.txt
+18.00,Molde FK,Vålerenga IF,0,0,X,,2023_no1.txt
+,Odds BK,Sarpsborg 08,0,3,2,0-1,2023_no1.txt
+17.00,SK Brann,Aalesunds FK,5,1,1,3-0,2023_no1.txt
+,Hamarkameratene,Rosenborg BK,3,0,1,2-0,2023_no1.txt
+,Tromsø IL,Sandefjord Fotball,1,0,1,0-0,2023_no1.txt
+,Viking FK,Stabæk IF,1,0,1,0-0,2023_no1.txt
+19.15,Strømsgodset IF,Lillestrøm SK,1,2,2,0-1,2023_no1.txt
+18.00,Sarpsborg 08,Tromsø IL,4,0,1,1-0,2023_no1.txt
+17.00,Sandefjord Fotball,FK Haugesund,0,0,X,,2023_no1.txt
+,Vålerenga IF,Odds BK,2,2,X,2-1,2023_no1.txt
+19.15,Rosenborg BK,Aalesunds FK,4,0,1,2-0,2023_no1.txt
+15.00,Lillestrøm SK,SK Brann,0,2,2,0-1,2023_no1.txt
+17.00,Molde FK,Viking FK,4,0,1,2-0,2023_no1.txt
+,Glimt,Strømsgodset IF,2,0,1,1-0,2023_no1.txt
+19.00,Stabæk IF,Hamarkameratene,5,2,1,2-1,2023_no1.txt
+18.00,Viking FK,Vålerenga IF,1,1,X,0-0,2023_no1.txt
+17.00,Aalesunds FK,Lillestrøm SK,1,1,X,0-1,2023_no1.txt
+,SK Brann,Sarpsborg 08,1,0,1,0-0,2023_no1.txt
+,FK Haugesund,Molde FK,1,2,2,0-1,2023_no1.txt
+,Odds BK,Sandefjord Fotball,3,2,1,2-2,2023_no1.txt
+,Strømsgodset IF,Stabæk IF,2,1,1,1-1,2023_no1.txt
+,Tromsø IL,Rosenborg BK,3,1,1,1-0,2023_no1.txt
+18.00,FK Haugesund,Viking FK,0,2,2,0-1,2023_no1.txt
+,Molde FK,Odds BK,4,1,1,2-1,2023_no1.txt
+,Sandefjord Fotball,Strømsgodset IF,2,0,1,0-0,2023_no1.txt
+,Sarpsborg 08,Lillestrøm SK,3,1,1,2-0,2023_no1.txt
+,Stabæk IF,SK Brann,0,1,2,0-1,2023_no1.txt
+,Tromsø IL,Hamarkameratene,2,1,1,2-0,2023_no1.txt
+19.15,Vålerenga IF,Aalesunds FK,3,1,1,1-1,2023_no1.txt
+18.00,Aalesunds FK,Stabæk IF,1,1,X,1-1,2023_no1.txt
+,Glimt,Vålerenga IF,4,2,1,2-1,2023_no1.txt
+,Hamarkameratene,Sarpsborg 08,1,1,X,0-1,2023_no1.txt
+,Lillestrøm SK,Rosenborg BK,3,0,1,1-0,2023_no1.txt
+,Odds BK,FK Haugesund,1,1,X,0-0,2023_no1.txt
+,Strømsgodset IF,Molde FK,1,1,X,1-1,2023_no1.txt
+,Viking FK,Sandefjord Fotball,4,3,1,2-2,2023_no1.txt
+19.15,SK Brann,Tromsø IL,2,1,1,2-0,2023_no1.txt
+18.00,Odds BK,Viking FK,1,1,X,1-1,2023_no1.txt
+17.00,FK Haugesund,Strømsgodset IF,1,0,1,0-0,2023_no1.txt
+,Sandefjord Fotball,Hamarkameratene,0,1,2,0-0,2023_no1.txt
+,Sarpsborg 08,Rosenborg BK,5,2,1,1-0,2023_no1.txt
+,Stabæk IF,Lillestrøm SK,1,0,1,0-0,2023_no1.txt
+,Tromsø IL,Aalesunds FK,1,2,2,0-1,2023_no1.txt
+19.15,Vålerenga IF,SK Brann,1,2,2,1-1,2023_no1.txt
+,Glimt,Sandefjord Fotball,4,3,1,4-2,2023_no1.txt
+18.00,SK Brann,Molde FK,3,2,1,0-1,2023_no1.txt
+14.30,Lillestrøm SK,Vålerenga IF,2,0,1,1-0,2023_no1.txt
+17.00,Aalesunds FK,Sarpsborg 08,3,2,1,2-2,2023_no1.txt
+,Hamarkameratene,FK Haugesund,0,3,2,0-1,2023_no1.txt
+,Rosenborg BK,Stabæk IF,1,1,X,1-1,2023_no1.txt
+,Strømsgodset IF,Odds BK,3,1,1,0-1,2023_no1.txt
+19.15,Viking FK,Tromsø IL,3,4,2,0-0,2023_no1.txt
+18.00,FK Haugesund,Aalesunds FK,6,1,1,3-0,2023_no1.txt
+17.00,Odds BK,Hamarkameratene,2,0,1,1-0,2023_no1.txt
+,Sandefjord Fotball,SK Brann,1,1,X,0-0,2023_no1.txt
+,Sarpsborg 08,Stabæk IF,2,2,X,1-0,2023_no1.txt
+,Strømsgodset IF,Viking FK,1,0,1,1-0,2023_no1.txt
+19.10,Vålerenga IF,Rosenborg BK,1,3,2,1-2,2023_no1.txt
+,Glimt,Lillestrøm SK,3,1,1,1-0,2023_no1.txt
+21.00,Molde FK,Tromsø IL,1,4,2,0-1,2023_no1.txt
+18.00,Hamarkameratene,Viking FK,3,0,1,0-0,2023_no1.txt
+17.00,SK Brann,Odds BK,2,1,1,0-0,2023_no1.txt
+,Lillestrøm SK,FK Haugesund,1,0,1,0-0,2023_no1.txt
+,Rosenborg BK,Molde FK,3,1,1,1-1,2023_no1.txt
+,Sarpsborg 08,Vålerenga IF,3,2,1,3-1,2023_no1.txt
+19.15,Tromsø IL,Strømsgodset IF,0,1,2,0-0,2023_no1.txt
+19.00,Aalesunds FK,Sandefjord Fotball,0,3,2,0-0,2023_no1.txt
+18.00,FK Haugesund,SK Brann,0,2,2,0-2,2023_no1.txt
+,Glimt,Aalesunds FK,1,0,1,1-0,2023_no1.txt
+,Odds BK,Tromsø IL,1,2,2,0-1,2023_no1.txt
+,Sandefjord Fotball,Rosenborg BK,3,2,1,3-0,2023_no1.txt
+,Strømsgodset IF,Hamarkameratene,0,1,2,0-0,2023_no1.txt
+,Vålerenga IF,Stabæk IF,0,0,X,,2023_no1.txt
+,Viking FK,Sarpsborg 08,2,1,1,0-1,2023_no1.txt
+19.15,Molde FK,Lillestrøm SK,4,0,1,3-0,2023_no1.txt
+17.00,Aalesunds FK,Viking FK,0,4,2,0-2,2023_no1.txt
+,Hamarkameratene,Vålerenga IF,0,2,2,0-0,2023_no1.txt
+,Lillestrøm SK,Odds BK,4,4,X,1-3,2023_no1.txt
+,Rosenborg BK,Strømsgodset IF,1,3,2,1-2,2023_no1.txt
+,Sarpsborg 08,Molde FK,1,3,2,0-2,2023_no1.txt
+,Stabæk IF,Sandefjord Fotball,2,1,1,1-0,2023_no1.txt
+,Tromsø IL,FK Haugesund,2,1,1,1-0,2023_no1.txt
+,Glimt,Sarpsborg 08,2,0,1,1-0,2023_no1.txt
+,FK Haugesund,Stabæk IF,3,0,1,0-0,2023_no1.txt
+,Molde FK,Hamarkameratene,1,1,X,0-1,2023_no1.txt
+,Odds BK,Aalesunds FK,4,1,1,2-1,2023_no1.txt
+,Sandefjord Fotball,Lillestrøm SK,1,0,1,1-0,2023_no1.txt
+,Strømsgodset IF,SK Brann,3,0,1,1-0,2023_no1.txt
+,Vålerenga IF,Tromsø IL,1,1,X,0-0,2023_no1.txt
+,Viking FK,Rosenborg BK,1,5,2,0-1,2023_no1.txt
+18.00,Odds BK,FK Haugesund,1,2,2,0-1,2024_no1.txt
+17.00,Lillestrøm SK,Kristiansund BK,2,3,2,0-1,2024_no1.txt
+,Molde FK,Strømsgodset IF,4,0,1,1-0,2024_no1.txt
+,Rosenborg BK,Sandefjord Fotball,2,0,1,0-0,2024_no1.txt
+,Tromsø IL,SK Brann,2,4,2,0-2,2024_no1.txt
+19.15,Viking FK,Sarpsborg 08,1,0,1,1-0,2024_no1.txt
+19.00,KFUM Oslo,Hamarkameratene,1,1,X,0-1,2024_no1.txt
+,Glimt,Viking FK,1,0,1,0-0,2024_no1.txt
+14.30,Kristiansund BK,KFUM Oslo,1,1,X,1-1,2024_no1.txt
+17.00,FK Haugesund,Lillestrøm SK,0,2,2,0-2,2024_no1.txt
+,Hamarkameratene,Molde FK,0,1,2,0-1,2024_no1.txt
+,Sarpsborg 08,Odds BK,0,1,2,0-1,2024_no1.txt
+,Strømsgodset IF,Rosenborg BK,1,0,1,0-0,2024_no1.txt
+19.15,SK Brann,Fredrikstad FK,0,2,2,0-1,2024_no1.txt
+19.00,Sandefjord Fotball,Tromsø IL,1,2,2,0-2,2024_no1.txt
+18.00,Fredrikstad FK,Sarpsborg 08,2,2,X,0-1,2024_no1.txt
+14.30,Viking FK,SK Brann,1,1,X,1-0,2024_no1.txt
+17.00,Molde FK,Kristiansund BK,2,0,1,1-0,2024_no1.txt
+,Odds BK,Sandefjord Fotball,2,2,X,1-1,2024_no1.txt
+,Rosenborg BK,Hamarkameratene,1,0,1,1-0,2024_no1.txt
+,Tromsø IL,FK Haugesund,0,1,2,0-1,2024_no1.txt
+19.00,KFUM Oslo,Strømsgodset IF,1,3,2,0-2,2024_no1.txt
+14.30,Hamarkameratene,Strømsgodset IF,0,1,2,0-1,2024_no1.txt
+17.00,SK Brann,Odds BK,2,0,1,1-0,2024_no1.txt
+,FK Haugesund,Rosenborg BK,1,3,2,0-2,2024_no1.txt
+,Kristiansund BK,Tromsø IL,1,0,1,1-0,2024_no1.txt
+,Sandefjord Fotball,Lillestrøm SK,0,1,2,0-0,2024_no1.txt
+,Sarpsborg 08,KFUM Oslo,0,2,2,0-2,2024_no1.txt
+,Viking FK,Fredrikstad FK,1,1,X,1-1,2024_no1.txt
+,Glimt,Molde FK,1,1,X,1-0,2024_no1.txt
+17.00,Fredrikstad FK,Sandefjord Fotball,1,0,1,1-0,2024_no1.txt
+,KFUM Oslo,SK Brann,0,0,X,,2024_no1.txt
+,Lillestrøm SK,Hamarkameratene,1,1,X,1-0,2024_no1.txt
+,Molde FK,FK Haugesund,2,1,1,2-0,2024_no1.txt
+,Strømsgodset IF,Kristiansund BK,2,2,X,0-2,2024_no1.txt
+,Tromsø IL,Sarpsborg 08,0,3,2,0-2,2024_no1.txt
+19.15,Odds BK,Viking FK,3,3,X,2-1,2024_no1.txt
+18.00,SK Brann,Rosenborg BK,3,0,1,1-0,2024_no1.txt
+,Glimt,Strømsgodset IF,1,0,1,0-0,2024_no1.txt
+,FK Haugesund,KFUM Oslo,0,1,2,0-1,2024_no1.txt
+,Kristiansund BK,Hamarkameratene,1,1,X,1-1,2024_no1.txt
+,Odds BK,Fredrikstad FK,0,2,2,0-0,2024_no1.txt
+,Sandefjord Fotball,Molde FK,3,1,1,0-1,2024_no1.txt
+,Sarpsborg 08,Lillestrøm SK,1,0,1,0-0,2024_no1.txt
+19.15,Viking FK,Tromsø IL,2,1,1,0-0,2024_no1.txt
+18.00,Molde FK,Rosenborg BK,2,2,X,1-0,2024_no1.txt
+17.00,Hamarkameratene,FK Haugesund,2,2,X,1-0,2024_no1.txt
+,KFUM Oslo,Fredrikstad FK,1,4,2,0-4,2024_no1.txt
+,Sandefjord Fotball,Sarpsborg 08,4,1,1,1-0,2024_no1.txt
+,Strømsgodset IF,Viking FK,0,1,2,0-0,2024_no1.txt
+,Tromsø IL,Odds BK,4,0,1,0-0,2024_no1.txt
+19.15,Lillestrøm SK,SK Brann,0,2,2,0-0,2024_no1.txt
+18.00,SK Brann,Sandefjord Fotball,2,1,1,0-0,2024_no1.txt
+,Glimt,Tromsø IL,4,0,1,2-0,2024_no1.txt
+,FK Haugesund,Kristiansund BK,1,0,1,0-0,2024_no1.txt
+,Fredrikstad FK,Strømsgodset IF,4,1,1,3-1,2024_no1.txt
+,Odds BK,Molde FK,0,4,2,0-2,2024_no1.txt
+,Rosenborg BK,KFUM Oslo,1,3,2,1-1,2024_no1.txt
+,Sarpsborg 08,Hamarkameratene,1,7,2,0-5,2024_no1.txt
+,Viking FK,Lillestrøm SK,1,4,2,0-3,2024_no1.txt
+,KFUM Oslo,Odds BK,0,0,X,,2024_no1.txt
+,Kristiansund BK,SK Brann,2,2,X,1-1,2024_no1.txt
+,Lillestrøm SK,Fredrikstad FK,0,3,2,0-1,2024_no1.txt
+,Molde FK,Sarpsborg 08,2,4,2,1-2,2024_no1.txt
+,Sandefjord Fotball,Viking FK,0,3,2,0-1,2024_no1.txt
+,Strømsgodset IF,FK Haugesund,2,0,1,1-0,2024_no1.txt
+19.15,Tromsø IL,Rosenborg BK,3,2,1,0-2,2024_no1.txt
+,Glimt,KFUM Oslo,2,2,X,1-1,2024_no1.txt
+18.00,Fredrikstad FK,Tromsø IL,0,0,X,,2024_no1.txt
+17.00,FK Haugesund,Sandefjord Fotball,2,1,1,0-0,2024_no1.txt
+,Odds BK,Lillestrøm SK,2,1,1,0-0,2024_no1.txt
+,Rosenborg BK,Kristiansund BK,2,1,1,0-1,2024_no1.txt
+,Sarpsborg 08,Strømsgodset IF,1,3,2,0-1,2024_no1.txt
+,Viking FK,Hamarkameratene,3,0,1,2-0,2024_no1.txt
+19.15,SK Brann,Molde FK,1,3,2,1-0,2024_no1.txt
+18.00,Hamarkameratene,SK Brann,1,2,2,0-1,2024_no1.txt
+14.30,Molde FK,Viking FK,2,2,X,1-1,2024_no1.txt
+,KFUM Oslo,Sandefjord Fotball,3,3,X,0-0,2024_no1.txt
+,Kristiansund BK,Sarpsborg 08,3,1,1,0-0,2024_no1.txt
+,Strømsgodset IF,Odds BK,1,1,X,1-0,2024_no1.txt
+,Tromsø IL,Lillestrøm SK,1,2,2,0-1,2024_no1.txt
+19.15,Rosenborg BK,Fredrikstad FK,1,1,X,0-0,2024_no1.txt
+19.00,Sandefjord Fotball,Hamarkameratene,1,2,2,1-1,2024_no1.txt
+21.15,Lillestrøm SK,KFUM Oslo,2,1,1,1-0,2024_no1.txt
+19.00,SK Brann,Strømsgodset IF,0,0,X,,2024_no1.txt
+,Odds BK,Kristiansund BK,1,1,X,0-1,2024_no1.txt
+21.15,Tromsø IL,Molde FK,0,2,2,0-1,2024_no1.txt
+15.00,Viking FK,Rosenborg BK,4,2,1,1-0,2024_no1.txt
+19.00,Fredrikstad FK,FK Haugesund,1,0,1,0-0,2024_no1.txt
+,Glimt,SK Brann,5,1,1,2-0,2024_no1.txt
+17.00,FK Haugesund,Sarpsborg 08,1,2,2,0-0,2024_no1.txt
+,Hamarkameratene,Tromsø IL,0,0,X,,2024_no1.txt
+,KFUM Oslo,Viking FK,1,2,2,1-0,2024_no1.txt
+,Molde FK,Lillestrøm SK,3,0,1,2-0,2024_no1.txt
+19.15,Rosenborg BK,Odds BK,2,1,1,2-0,2024_no1.txt
+19.00,Kristiansund BK,Fredrikstad FK,3,1,1,2-1,2024_no1.txt
+,Strømsgodset IF,Sandefjord Fotball,1,1,X,1-1,2024_no1.txt
+19.00,Sarpsborg 08,Rosenborg BK,4,1,1,3-0,2024_no1.txt
+17.00,Fredrikstad FK,Molde FK,0,0,X,,2024_no1.txt
+,Lillestrøm SK,Strømsgodset IF,3,1,1,2-1,2024_no1.txt
+,Odds BK,Hamarkameratene,1,2,2,1-1,2024_no1.txt
+,Viking FK,Kristiansund BK,2,0,1,0-0,2024_no1.txt
+19.15,SK Brann,FK Haugesund,1,1,X,0-0,2024_no1.txt
+22.00,Tromsø IL,KFUM Oslo,1,2,2,0-0,2024_no1.txt
+,Glimt,Odds BK,3,1,1,1-1,2024_no1.txt
+18.00,Sarpsborg 08,SK Brann,1,1,X,0-0,2024_no1.txt
+20.15,Molde FK,KFUM Oslo,2,3,2,1-2,2024_no1.txt
+14.30,Strømsgodset IF,Tromsø IL,0,1,2,0-0,2024_no1.txt
+17.00,FK Haugesund,Viking FK,1,0,1,0-0,2024_no1.txt
+,Hamarkameratene,Fredrikstad FK,0,1,2,0-0,2024_no1.txt
+19.00,Rosenborg BK,Lillestrøm SK,4,0,1,2-0,2024_no1.txt
+15.00,Kristiansund BK,Sandefjord Fotball,2,1,1,1-0,2024_no1.txt
+18.00,SK Brann,Hamarkameratene,1,0,1,0-0,2024_no1.txt
+18.00,Fredrikstad FK,Rosenborg BK,2,2,X,2-1,2024_no1.txt
+17.00,Lillestrøm SK,Sarpsborg 08,2,2,X,0-2,2024_no1.txt
+,Odds BK,Strømsgodset IF,2,0,1,2-0,2024_no1.txt
+,Sandefjord Fotball,FK Haugesund,4,3,1,3-1,2024_no1.txt
+,Tromsø IL,Kristiansund BK,0,0,X,,2024_no1.txt
+19.15,Viking FK,Molde FK,1,0,1,0-0,2024_no1.txt
+18.00,Molde FK,Odds BK,1,2,2,1-1,2024_no1.txt
+,Glimt,FK Haugesund,4,2,1,1-1,2024_no1.txt
+17.00,Hamarkameratene,Viking FK,3,3,X,0-1,2024_no1.txt
+,Fredrikstad FK,KFUM Oslo,0,0,X,,2024_no1.txt
+,Kristiansund BK,Lillestrøm SK,2,1,1,1-1,2024_no1.txt
+,Sarpsborg 08,Sandefjord Fotball,2,1,1,1-0,2024_no1.txt
+,Strømsgodset IF,SK Brann,2,3,2,1-2,2024_no1.txt
+19.15,Rosenborg BK,Tromsø IL,1,0,1,0-0,2024_no1.txt
+19.00,SK Brann,Kristiansund BK,2,1,1,1-0,2024_no1.txt
+,Tromsø IL,Fredrikstad FK,3,0,1,2-0,2024_no1.txt
+19.00,Sandefjord Fotball,Strømsgodset IF,2,2,X,0-2,2024_no1.txt
+16.00,FK Haugesund,Hamarkameratene,0,1,2,0-0,2024_no1.txt
+17.00,KFUM Oslo,Rosenborg BK,1,0,1,0-0,2024_no1.txt
+,Odds BK,Sarpsborg 08,1,1,X,1-0,2024_no1.txt
+19.15,Lillestrøm SK,Molde FK,1,2,2,1-1,2024_no1.txt
+,Glimt,Sandefjord Fotball,1,1,X,1-1,2024_no1.txt
+18.00,Strømsgodset IF,Lillestrøm SK,3,2,1,1-2,2024_no1.txt
+14.30,Fredrikstad FK,SK Brann,0,4,2,0-1,2024_no1.txt
+17.00,Hamarkameratene,Odds BK,1,0,1,0-0,2024_no1.txt
+,KFUM Oslo,Tromsø IL,0,1,2,0-0,2024_no1.txt
+,Sarpsborg 08,FK Haugesund,2,2,X,1-1,2024_no1.txt
+19.15,Rosenborg BK,Viking FK,2,1,1,2-0,2024_no1.txt
+18.00,Kristiansund BK,Molde FK,0,4,2,0-2,2024_no1.txt
+,Glimt,Sarpsborg 08,6,0,1,2-0,2024_no1.txt
+14.30,Lillestrøm SK,Tromsø IL,0,1,2,0-1,2024_no1.txt
+17.00,FK Haugesund,Fredrikstad FK,1,0,1,0-0,2024_no1.txt
+,Molde FK,Hamarkameratene,3,0,1,1-0,2024_no1.txt
+,Sandefjord Fotball,Kristiansund BK,1,0,1,0-0,2024_no1.txt
+,Viking FK,Strømsgodset IF,5,2,1,2-1,2024_no1.txt
+19.15,Odds BK,Rosenborg BK,1,3,2,0-1,2024_no1.txt
+19.00,SK Brann,KFUM Oslo,2,0,1,0-0,2024_no1.txt
+19.00,KFUM Oslo,Lillestrøm SK,2,0,1,0-0,2024_no1.txt
+18.00,Fredrikstad FK,Odds BK,2,0,1,0-0,2024_no1.txt
+17.00,Hamarkameratene,Sandefjord Fotball,1,1,X,0-0,2024_no1.txt
+,Kristiansund BK,FK Haugesund,2,2,X,1-1,2024_no1.txt
+,Rosenborg BK,Molde FK,2,1,1,0-1,2024_no1.txt
+,Tromsø IL,Viking FK,2,2,X,2-0,2024_no1.txt
+19.15,SK Brann,Sarpsborg 08,1,3,2,0-1,2024_no1.txt
+,Glimt,Hamarkameratene,3,0,1,0-0,2024_no1.txt
+16.00,Viking FK,KFUM Oslo,1,0,1,1-0,2024_no1.txt
+18.00,Molde FK,Fredrikstad FK,6,1,1,3-1,2024_no1.txt
+14.30,Odds BK,Tromsø IL,1,0,1,0-0,2024_no1.txt
+17.00,FK Haugesund,Strømsgodset IF,0,0,X,,2024_no1.txt
+,Sandefjord Fotball,SK Brann,2,2,X,1-1,2024_no1.txt
+,Sarpsborg 08,Kristiansund BK,0,2,2,0-0,2024_no1.txt
+19.15,Lillestrøm SK,Rosenborg BK,1,1,X,1-1,2024_no1.txt
+16.00,Strømsgodset IF,Sarpsborg 08,2,1,1,2-1,2024_no1.txt
+18.00,Hamarkameratene,Lillestrøm SK,5,0,1,4-0,2024_no1.txt
+17.00,Kristiansund BK,Odds BK,0,0,X,,2024_no1.txt
+,Rosenborg BK,FK Haugesund,4,0,1,2-0,2024_no1.txt
+,Tromsø IL,Sandefjord Fotball,3,0,1,3-0,2024_no1.txt
+19.15,Fredrikstad FK,Viking FK,3,2,1,2-0,2024_no1.txt
+19.00,KFUM Oslo,Molde FK,1,1,X,0-0,2024_no1.txt
+14.00,Molde FK,Tromsø IL,5,3,1,2-0,2024_no1.txt
+18.00,FK Haugesund,SK Brann,0,1,2,0-1,2024_no1.txt
+20.00,Sarpsborg 08,Fredrikstad FK,0,1,2,0-0,2024_no1.txt
+14.30,Strømsgodset IF,Hamarkameratene,1,1,X,1-0,2024_no1.txt
+,Glimt,Kristiansund BK,4,0,1,3-0,2024_no1.txt
+,Lillestrøm SK,Viking FK,1,4,2,0-1,2024_no1.txt
+,Odds BK,KFUM Oslo,1,3,2,1-2,2024_no1.txt
+19.15,Sandefjord Fotball,Rosenborg BK,0,1,2,0-0,2024_no1.txt
+16.00,Molde FK,Sandefjord Fotball,0,1,2,0-0,2024_no1.txt
+14.30,Rosenborg BK,SK Brann,1,2,2,0-1,2024_no1.txt
+17.00,Hamarkameratene,Sarpsborg 08,0,2,2,0-2,2024_no1.txt
+,KFUM Oslo,FK Haugesund,0,0,X,,2024_no1.txt
+,Kristiansund BK,Strømsgodset IF,0,0,X,,2024_no1.txt
+,Viking FK,Odds BK,3,3,X,1-2,2024_no1.txt
+19.15,Fredrikstad FK,Lillestrøm SK,2,1,1,0-0,2024_no1.txt
+18.00,Strømsgodset IF,Fredrikstad FK,2,0,1,1-0,2024_no1.txt
+17.00,Hamarkameratene,Kristiansund BK,1,0,1,0-0,2024_no1.txt
+,FK Haugesund,Molde FK,0,3,2,0-1,2024_no1.txt
+,Lillestrøm SK,Odds BK,3,0,1,2-0,2024_no1.txt
+,Sandefjord Fotball,KFUM Oslo,2,1,1,0-1,2024_no1.txt
+,Sarpsborg 08,Viking FK,1,2,2,1-1,2024_no1.txt
+19.15,SK Brann,Tromsø IL,4,0,1,2-0,2024_no1.txt
+,Glimt,Rosenborg BK,2,3,2,1-1,2024_no1.txt
+18.00,Viking FK,Sandefjord Fotball,3,2,1,2-2,2024_no1.txt
+17.00,KFUM Oslo,Sarpsborg 08,1,2,2,1-0,2024_no1.txt
+,Fredrikstad FK,Kristiansund BK,1,1,X,1-0,2024_no1.txt
+,Lillestrøm SK,FK Haugesund,0,1,2,0-0,2024_no1.txt
+,Odds BK,SK Brann,0,3,2,0-2,2024_no1.txt
+,Tromsø IL,Hamarkameratene,3,3,X,1-2,2024_no1.txt
+19.15,Rosenborg BK,Strømsgodset IF,1,0,1,0-0,2024_no1.txt
+18.00,SK Brann,Lillestrøm SK,2,1,1,1-0,2024_no1.txt
+17.00,FK Haugesund,Tromsø IL,2,0,1,1-0,2024_no1.txt
+,Hamarkameratene,Rosenborg BK,0,2,2,0-2,2024_no1.txt
+,Kristiansund BK,Viking FK,0,1,2,0-1,2024_no1.txt
+,Sandefjord Fotball,Odds BK,1,0,1,0-0,2024_no1.txt
+,Sarpsborg 08,Molde FK,2,2,X,2-2,2024_no1.txt
+,Strømsgodset IF,KFUM Oslo,1,0,1,0-0,2024_no1.txt
+,Glimt,Fredrikstad FK,2,2,X,0-1,2024_no1.txt
+17.00,Fredrikstad FK,Hamarkameratene,1,0,1,0-0,2024_no1.txt
+,KFUM Oslo,Kristiansund BK,1,2,2,0-1,2024_no1.txt
+,Lillestrøm SK,Sandefjord Fotball,0,3,2,0-1,2024_no1.txt
+,Molde FK,SK Brann,2,1,1,2-0,2024_no1.txt
+,Rosenborg BK,Sarpsborg 08,1,1,X,0-0,2024_no1.txt
+,Tromsø IL,Strømsgodset IF,2,0,1,1-0,2024_no1.txt
+,Viking FK,FK Haugesund,5,1,1,1-1,2024_no1.txt
+17.00,SK Brann,Viking FK,1,1,X,0-0,2024_no1.txt
+,Glimt,Lillestrøm SK,5,2,1,2-1,2024_no1.txt
+,FK Haugesund,Odds BK,2,1,1,0-1,2024_no1.txt
+,Hamarkameratene,KFUM Oslo,0,2,2,0-1,2024_no1.txt
+,Kristiansund BK,Rosenborg BK,0,4,2,0-1,2024_no1.txt
+,Sandefjord Fotball,Fredrikstad FK,0,1,2,0-0,2024_no1.txt
+,Sarpsborg 08,Tromsø IL,2,1,1,1-0,2024_no1.txt
+,Strømsgodset IF,Molde FK,1,0,1,0-0,2024_no1.txt
+16.00,Strømsgodset IF,Rosenborg BK,1,2,2,0-1,2025_no1.txt
+18.00,Fredrikstad FK,SK Brann,3,0,1,2-0,2025_no1.txt
+14.30,Vålerenga IF,Viking FK,3,1,1,1-0,2025_no1.txt
+17.00,Hamarkameratene,Kristiansund BK,2,1,1,1-1,2025_no1.txt
+,KFUM Oslo,Sandefjord Fotball,3,1,1,1-1,2025_no1.txt
+,Molde FK,Sarpsborg 08,0,2,2,0-1,2025_no1.txt
+,Tromsø IL,FK Haugesund,1,0,1,1-0,2025_no1.txt
+,Glimt,Hamarkameratene,3,0,1,1-0,2025_no1.txt
+18.00,Rosenborg BK,Fredrikstad FK,1,0,1,1-0,2025_no1.txt
+14.30,SK Brann,Tromsø IL,3,1,1,0-1,2025_no1.txt
+17.00,FK Haugesund,Strømsgodset IF,0,5,2,0-2,2025_no1.txt
+,Kristiansund BK,Bryne FK,2,1,1,1-1,2025_no1.txt
+,Sandefjord Fotball,Molde FK,3,0,1,2-0,2025_no1.txt
+,Sarpsborg 08,Vålerenga IF,1,1,X,0-1,2025_no1.txt
+19.15,Viking FK,KFUM Oslo,3,1,1,1-1,2025_no1.txt
+14.30,Tromsø IL,Kristiansund BK,2,3,2,1-0,2025_no1.txt
+14.30,Vålerenga IF,Rosenborg BK,0,2,2,0-1,2025_no1.txt
+17.00,Bryne FK,FK Haugesund,3,1,1,2-0,2025_no1.txt
+,Fredrikstad FK,Sandefjord Fotball,3,1,1,3-1,2025_no1.txt
+,Hamarkameratene,Viking FK,2,5,2,0-4,2025_no1.txt
+,KFUM Oslo,Sarpsborg 08,1,3,2,0-2,2025_no1.txt
+,Strømsgodset IF,SK Brann,1,2,2,1-0,2025_no1.txt
+14.30,Rosenborg BK,Molde FK,0,0,X,,2025_no1.txt
+,Glimt,KFUM Oslo,3,0,1,0-0,2025_no1.txt
+,SK Brann,Bryne FK,3,2,1,0-2,2025_no1.txt
+,FK Haugesund,Fredrikstad FK,0,0,X,,2025_no1.txt
+,Kristiansund BK,Vålerenga IF,0,2,2,0-0,2025_no1.txt
+,Sandefjord Fotball,Hamarkameratene,2,0,1,1-0,2025_no1.txt
+,Sarpsborg 08,Strømsgodset IF,2,3,2,0-1,2025_no1.txt
+19.15,Viking FK,Tromsø IL,4,4,X,0-1,2025_no1.txt
+19.00,Hamarkameratene,KFUM Oslo,0,0,X,,2025_no1.txt
+18.00,Vålerenga IF,SK Brann,2,4,2,0-2,2025_no1.txt
+17.00,Molde FK,FK Haugesund,2,1,1,1-0,2025_no1.txt
+,Strømsgodset IF,Kristiansund BK,1,2,2,1-0,2025_no1.txt
+,Tromsø IL,Sandefjord Fotball,0,1,2,0-0,2025_no1.txt
+,Viking FK,Sarpsborg 08,0,0,X,,2025_no1.txt
+19.15,Rosenborg BK,Bryne FK,3,0,1,1-0,2025_no1.txt
+19.00,Viking FK,Kristiansund BK,3,1,1,0-1,2025_no1.txt
+19.00,Fredrikstad FK,Vålerenga IF,2,0,1,1-0,2025_no1.txt
+19.00,SK Brann,Strømsgodset IF,2,1,1,1-0,2025_no1.txt
+18.00,Rosenborg BK,Kristiansund BK,1,1,X,0-0,2025_no1.txt
+18.00,Viking FK,FK Haugesund,5,1,1,2-1,2025_no1.txt
+19.00,Egersunds IK,Mjøndalen IF,3,2,1,1-2,2025_no2.txt
+,Kongsvinger IL,Åsane Fotball,1,1,X,1-0,2025_no2.txt
+,Odds BK,Skeid Fotball,2,1,1,2-1,2025_no2.txt
+,Ranheim IL,Lyn Oslo,0,3,2,0-1,2025_no2.txt
+,Stabæk IF,IL Hødd,1,1,X,0-0,2025_no2.txt
+,IK Start,Sogndal IL,2,1,1,1-1,2025_no2.txt
+,Aalesunds FK,Lillestrøm SK,2,2,X,2-2,2025_no2.txt
+19.00,Raufoss IL,Moss FK,3,2,1,2-0,2025_no2.txt
+16.00,IL Hødd,Kongsvinger IL,0,2,2,0-1,2025_no2.txt
+,Lillestrøm SK,Odds BK,1,0,1,0-0,2025_no2.txt
+,Mjøndalen IF,Raufoss IL,1,1,X,0-0,2025_no2.txt
+,Moss FK,Ranheim IL,2,0,1,1-0,2025_no2.txt
+,Skeid Fotball,IK Start,1,3,2,1-0,2025_no2.txt
+,Sogndal IL,Aalesunds FK,3,4,2,2-1,2025_no2.txt
+,Åsane Fotball,Egersunds IK,0,2,2,0-2,2025_no2.txt
+17.00,Lyn Oslo,Stabæk IF,0,1,2,0-0,2025_no2.txt
+17.00,Egersunds IK,Skeid Fotball,4,3,1,1-3,2025_no2.txt
+,Kongsvinger IL,Moss FK,6,0,1,2-0,2025_no2.txt
+,Odds BK,Lyn Oslo,2,1,1,0-0,2025_no2.txt
+,Ranheim IL,Sogndal IL,1,2,2,0-2,2025_no2.txt
+,Raufoss IL,Åsane Fotball,3,2,1,3-0,2025_no2.txt
+,Stabæk IF,Lillestrøm SK,0,3,2,0-2,2025_no2.txt
+,IK Start,IL Hødd,1,2,2,0-2,2025_no2.txt
+,Aalesunds FK,Mjøndalen IF,0,0,X,,2025_no2.txt
+17.00,Lyn Oslo,Lillestrøm SK,0,1,2,0-0,2025_no2.txt
+,Moss FK,Stabæk IF,4,2,1,3-0,2025_no2.txt
+19.00,Mjøndalen IF,IK Start,2,3,2,0-1,2025_no2.txt
+,Raufoss IL,Egersunds IK,0,1,2,0-1,2025_no2.txt
+,Skeid Fotball,Kongsvinger IL,1,4,2,0-2,2025_no2.txt
+,Sogndal IL,Odds BK,3,2,1,0-1,2025_no2.txt
+,Åsane Fotball,Aalesunds FK,0,0,X,,2025_no2.txt
+19.00,IL Hødd,Ranheim IL,0,1,2,0-1,2025_no2.txt
+16.00,Lillestrøm SK,Moss FK,3,0,1,2-0,2025_no2.txt
+,Odds BK,Egersunds IK,1,1,X,0-1,2025_no2.txt
+,Ranheim IL,Kongsvinger IL,2,1,1,1-0,2025_no2.txt
+,Sogndal IL,Mjøndalen IF,1,0,1,0-0,2025_no2.txt
+,IK Start,Åsane Fotball,2,3,2,1-1,2025_no2.txt
+,Aalesunds FK,Raufoss IL,3,1,1,1-0,2025_no2.txt
+14.30,Stabæk IF,Skeid Fotball,1,0,1,0-0,2025_no2.txt
+17.00,Lyn Oslo,IL Hødd,0,1,2,0-1,2025_no2.txt
+18.30,Os TF,Fana IL,4,2,1,2-0,2025_nocup.txt
+13.00,Våg Fotballklubb,IK Start,2,4,2,1-1,2025_nocup.txt
+14.00,Bjørnevatn IL,Alta IF,0,11,2,0-4,2025_nocup.txt
+,IL Gneist,Lysekloster IL,0,2,2,0-0,2025_nocup.txt
+,Askøy FK,Åsane Fotball,1,5,2,1-2,2025_nocup.txt
+,SK Djerv 1919,Sotra SK,2,3,2,,2025_nocup.txt
+,Torvastad IL,SK Vard,2,0,1,0-0,2025_nocup.txt
+,FK Ørn-Horten,FK Arendal,4,3,1,,2025_nocup.txt
+,Oppsal IF,Kjelsås Fotball,0,1,2,0-1,2025_nocup.txt
+,Bærum SK,Grorud IL,3,5,2,,2025_nocup.txt
+15.00,Vindbjart FK,FK Jerv,0,3,2,0-1,2025_nocup.txt
+,Åssiden IF,Mjøndalen IF,1,4,2,,2025_nocup.txt
+,Lillehammer FK,Hamarkameratene,0,2,2,0-0,2025_nocup.txt
+,Brumunddal,Raufoss IL,1,4,2,1-2,2025_nocup.txt
+,Elverum Fotball,SK Gjøvik-Lyn,2,0,1,1-0,2025_nocup.txt
+16.00,IK Junkeren,Harstad IL,2,1,1,1-0,2025_nocup.txt
+,Volda,Sogndal IL,1,2,2,1-1,2025_nocup.txt
+,SK Rollon,Aalesunds FK,0,3,2,0-1,2025_nocup.txt
+,NHHI,IL Sandviken,1,3,2,,2025_nocup.txt
+,Sarpsborg FK,Fredrikstad FK,0,4,2,0-1,2025_nocup.txt
+,Spjelkavik IL,SK Træff,0,2,2,0-0,2025_nocup.txt
+,Frigg Oslo FK,Lørenskog IF,1,3,2,0-2,2025_nocup.txt
+17.00,Union Carl Berner,Skeid Fotball,0,3,2,0-0,2025_nocup.txt
+14.00,Brattvåg IL,IL Hødd,3,5,2,,2025_nocup.txt
+,IL Flint,Odds BK,3,2,1,1-0,2025_nocup.txt
+15.00,Bjørkelangen,Strømmen IF,1,6,2,1-2,2025_nocup.txt
+,IL Ulfstind,Tromsdalen UIL,0,3,2,0-1,2025_nocup.txt
+16.00,Hamna IL,Tromsø IL,0,10,2,0-4,2025_nocup.txt
+,Skjervøy IK,IF Fløya,2,1,1,1-0,2025_nocup.txt
+,Melbo IL,Sortland IL,0,1,2,0-0,2025_nocup.txt
+,Mosjøen IL,Rana FK,0,4,2,0-2,2025_nocup.txt
+,Rindal IL,Rosenborg BK,1,11,2,0-3,2025_nocup.txt
+,Sverresborg IF,Ranheim IL,2,4,2,0-2,2025_nocup.txt
+,Kvik Trondheim,IL Stjørdals-Blink,0,1,2,0-1,2025_nocup.txt
+,Verdal IL,Levanger FK,0,8,2,0-3,2025_nocup.txt
+,Lade,Strindheim IL,0,1,2,0-1,2025_nocup.txt
+,Byåsen Toppfotball,Nardo FK,3,5,2,,2025_nocup.txt
+,Melhus IL,Kristiansund BK,1,5,2,0-3,2025_nocup.txt
+,Elnesvågen,Molde FK,0,7,2,0-4,2025_nocup.txt
+,Fjøra FK,IL Bjarg,1,3,2,0-1,2025_nocup.txt
+,IL Varegg,SK Brann,0,6,2,0-3,2025_nocup.txt
+,SK Nord,FK Haugesund,0,11,2,0-6,2025_nocup.txt
+,FK Vidar,Sandnes Ulf,2,0,1,1-0,2025_nocup.txt
+,Eiger FK,Egersunds IK,1,7,2,1-2,2025_nocup.txt
+,Hana IL,Viking FK,0,6,2,0-3,2025_nocup.txt
+,Varhaug IL,Bryne FK,0,4,2,0-2,2025_nocup.txt
+,IL Brodd,Flekkerøy IL,1,3,2,0-1,2025_nocup.txt
+,Notodden FK,Stabæk IF,0,3,2,0-1,2025_nocup.txt
+,Konnerud IL,Strømsgodset IF,0,5,2,0-4,2025_nocup.txt
+,Hønefoss BK,Pors Grenland,0,1,2,0-0,2025_nocup.txt
+,Teie IF,Sandefjord Fotball,0,5,2,0-2,2025_nocup.txt
+,Fram Larvik,Eik Tønsberg,4,1,1,1-0,2025_nocup.txt
+,Ridabu IL,Kongsvinger IL,0,12,2,0-5,2025_nocup.txt
+,Skjetten SK,Lillestrøm SK,0,5,2,0-1,2025_nocup.txt
+,SF Grei,KFUM Oslo,1,5,2,1-2,2025_nocup.txt
+,Ullern IF,Follo FK,2,5,2,1-1,2025_nocup.txt
+,Ready Fotball,Asker SK,4,3,1,,2025_nocup.txt
+,Gamle Oslo FK,Vålerenga IF,3,1,1,,2025_nocup.txt
+,Råde IL,Lyn Oslo,1,2,2,1-1,2025_nocup.txt
+,SK Sprint-Jeløy,Sarpsborg 08,0,4,2,0-3,2025_nocup.txt
+17.00,Kvik Halden,Moss FK,1,3,2,1-2,2025_nocup.txt
+18.00,Skedsmo FK,Eidsvold TF,0,5,2,0-3,2025_nocup.txt
+18.00,Skjervøy IK,Tromsø IL,0,1,2,0-1,2025_nocup.txt
+17.00,Levanger FK,Rana FK,1,2,2,0-0,2025_nocup.txt
+17.30,Grorud IL,IL Hødd,3,1,1,3-1,2025_nocup.txt
+,Alta IF,Skeid Fotball,3,0,1,1-0,2025_nocup.txt
+,Sortland IL,Tromsdalen UIL,0,5,2,0-1,2025_nocup.txt
+,Nardo FK,Kristiansund BK,1,4,2,0-3,2025_nocup.txt
+,Strindheim IL,Rosenborg BK,0,3,2,0-2,2025_nocup.txt
+,IL Stjørdals-Blink,Ranheim IL,1,2,2,0-1,2025_nocup.txt
+,SK Træff,Molde FK,11,12,2,,2025_nocup.txt
+,Os TF,Lysekloster IL,5,4,1,,2025_nocup.txt
+,IL Sandviken,Sogndal IL,0,4,2,0-0,2025_nocup.txt
+,IL Bjarg,SK Brann,0,2,2,0-2,2025_nocup.txt
+,Sotra SK,Åsane Fotball,0,2,2,0-1,2025_nocup.txt
+,Torvastad IL,Bryne FK,1,2,2,1-2,2025_nocup.txt
+,FK Vidar,FK Haugesund,1,2,2,0-0,2025_nocup.txt
+,Flekkerøy IL,Viking FK,0,3,2,0-0,2025_nocup.txt
+,FK Jerv,Egersunds IK,0,1,2,0-1,2025_nocup.txt
+,Pors Grenland,IK Start,3,2,1,,2025_nocup.txt
+,Fram Larvik,Stabæk IF,0,4,2,0-1,2025_nocup.txt
+,IL Flint,Fredrikstad FK,0,5,2,0-3,2025_nocup.txt
+,FK Ørn-Horten,Sandefjord Fotball,0,2,2,0-0,2025_nocup.txt
+,Elverum Fotball,Kongsvinger IL,2,7,2,0-3,2025_nocup.txt
+,Kisa IL,Aalesunds FK,2,3,2,2-3,2025_nocup.txt
+,Lørenskog IF,Hamarkameratene,0,1,2,0-1,2025_nocup.txt
+,Strømmen IF,Raufoss IL,2,1,1,1-0,2025_nocup.txt
+,Follo FK,Moss FK,2,3,2,1-1,2025_nocup.txt
+,Gamle Oslo FK,Sarpsborg 08,1,6,2,1-4,2025_nocup.txt
+,Ready Fotball,KFUM Oslo,0,3,2,0-1,2025_nocup.txt
+,Kjelsås Fotball,Lyn Oslo,0,3,2,0-1,2025_nocup.txt
+18.30,Eidsvold TF,Lillestrøm SK,0,2,2,0-1,2025_nocup.txt
+19.05,Mjøndalen IF,Strømsgodset IF,4,3,1,,2025_nocup.txt

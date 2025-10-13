@@ -1,0 +1,76 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Fiji,Tahiti,3,0,1,Boulari,New Caledonia,2011_pacific_games.txt
+New Caledonia,Vanuatu,5,0,1,Nouméa,New Caledonia,2011_pacific_games.txt
+Papua New Guinea,Cook Islands,4,0,1,Boulari,New Caledonia,2011_pacific_games.txt
+Solomon Islands,Guam,7,0,1,Nouméa,New Caledonia,2011_pacific_games.txt
+Tuvalu,American Samoa,4,0,1,Nouméa,New Caledonia,2011_pacific_games.txt
+American Samoa,Solomon Islands,0,4,2,Nouméa,New Caledonia,2011_pacific_games.txt
+Fiji,Kiribati,9,0,1,Boulari,New Caledonia,2011_pacific_games.txt
+New Caledonia,Guam,9,0,1,Nouméa,New Caledonia,2011_pacific_games.txt
+Tahiti,Cook Islands,7,0,1,Boulari,New Caledonia,2011_pacific_games.txt
+Vanuatu,Tuvalu,5,1,1,Nouméa,New Caledonia,2011_pacific_games.txt
+American Samoa,Guam,0,2,2,Nouméa,New Caledonia,2011_pacific_games.txt
+Cook Islands,Kiribati,3,0,1,Boulari,New Caledonia,2011_pacific_games.txt
+New Caledonia,Tuvalu,8,0,1,Nouméa,New Caledonia,2011_pacific_games.txt
+Tahiti,Papua New Guinea,1,1,X,Boulari,New Caledonia,2011_pacific_games.txt
+Vanuatu,Solomon Islands,1,0,1,Nouméa,New Caledonia,2011_pacific_games.txt
+Cook Islands,Fiji,1,4,2,Boulari,New Caledonia,2011_pacific_games.txt
+Guam,Vanuatu,1,4,2,Nouméa,New Caledonia,2011_pacific_games.txt
+Kiribati,Papua New Guinea,1,17,2,Boulari,New Caledonia,2011_pacific_games.txt
+New Caledonia,American Samoa,8,0,1,Nouméa,New Caledonia,2011_pacific_games.txt
+Solomon Islands,Tuvalu,6,1,1,Nouméa,New Caledonia,2011_pacific_games.txt
+American Samoa,Vanuatu,0,8,2,Nouméa,New Caledonia,2011_pacific_games.txt
+Guam,Tuvalu,1,1,X,Nouméa,New Caledonia,2011_pacific_games.txt
+Kiribati,Tahiti,1,17,2,Boulari,New Caledonia,2011_pacific_games.txt
+New Caledonia,Solomon Islands,1,2,2,Nouméa,New Caledonia,2011_pacific_games.txt
+Papua New Guinea,Fiji,0,2,2,Boulari,New Caledonia,2011_pacific_games.txt
+New Caledonia,Tahiti,3,1,1,Koné,New Caledonia,2011_pacific_games.txt
+Solomon Islands,Fiji,2,1,1,Lifou,New Caledonia,2011_pacific_games.txt
+New Caledonia,Solomon Islands,2,0,1,Nouméa,New Caledonia,2011_pacific_games.txt
+Tahiti,Fiji,2,1,1,Boulari,New Caledonia,2011_pacific_games.txt
+Samoa,Papua New Guinea,0,6,2,Apia,Samoa,2019_pacific_games.txt
+American Samoa,New Caledonia,0,5,2,Apia,Samoa,2019_pacific_games.txt
+Tuvalu,Solomon Islands,0,13,2,Apia,Samoa,2019_pacific_games.txt
+Tahiti,Fiji,1,2,2,Apia,Samoa,2019_pacific_games.txt
+Papua New Guinea,Vanuatu,2,0,1,Apia,Samoa,2019_pacific_games.txt
+Tuvalu,Tahiti,0,7,2,Apia,Samoa,2019_pacific_games.txt
+American Samoa,Fiji,0,9,2,Apia,Samoa,2019_pacific_games.txt
+Solomon Islands,New Caledonia,0,2,2,Apia,Samoa,2019_pacific_games.txt
+Samoa,Tonga,2,0,1,Apia,Samoa,2019_pacific_games.txt
+American Samoa,Tuvalu,1,1,X,Apia,Samoa,2019_pacific_games.txt
+Solomon Islands,Tahiti,0,3,2,Apia,Samoa,2019_pacific_games.txt
+New Caledonia,Fiji,1,0,1,Apia,Samoa,2019_pacific_games.txt
+Tonga,Vanuatu,0,14,2,Apia,Samoa,2019_pacific_games.txt
+Fiji,Tuvalu,10,1,1,Apia,Samoa,2019_pacific_games.txt
+Solomon Islands,American Samoa,13,0,1,Apia,Samoa,2019_pacific_games.txt
+Tahiti,New Caledonia,0,3,2,Apia,Samoa,2019_pacific_games.txt
+Papua New Guinea,Tonga,8,0,1,Apia,Samoa,2019_pacific_games.txt
+Samoa,Vanuatu,0,11,2,Apia,Samoa,2019_pacific_games.txt
+New Caledonia,Tuvalu,11,0,1,Apia,Samoa,2019_pacific_games.txt
+Tahiti,American Samoa,8,1,1,Apia,Samoa,2019_pacific_games.txt
+Fiji,Solomon Islands,4,4,X,Apia,Samoa,2019_pacific_games.txt
+Papua New Guinea,Fiji,1,1,X,Apia,Samoa,2019_pacific_games.txt
+Papua New Guinea,Tuvalu,3,0,1,Honiara,Solomon Islands,2023_pacific_games.txt
+Solomon Islands,Samoa,1,0,1,Honiara,Solomon Islands,2023_pacific_games.txt
+New Caledonia,Tonga,7,0,1,Honiara,Solomon Islands,2023_pacific_games.txt
+Fiji,Northern Mariana Islands,10,0,1,Honiara,Solomon Islands,2023_pacific_games.txt
+Tuvalu,Vanuatu,0,6,2,Honiara,Solomon Islands,2023_pacific_games.txt
+Samoa,American Samoa,10,0,1,Honiara,Solomon Islands,2023_pacific_games.txt
+Tonga,Cook Islands,1,2,2,Honiara,Solomon Islands,2023_pacific_games.txt
+Fiji,Tahiti,0,0,X,Honiara,Solomon Islands,2023_pacific_games.txt
+Vanuatu,Papua New Guinea,1,1,X,Honiara,Solomon Islands,2023_pacific_games.txt
+Solomon Islands,American Samoa,11,0,1,Honiara,Solomon Islands,2023_pacific_games.txt
+Cook Islands,New Caledonia,0,8,2,Honiara,Solomon Islands,2023_pacific_games.txt
+Northern Mariana Islands,Tahiti,0,5,2,Honiara,Solomon Islands,2023_pacific_games.txt
+Northern Mariana Islands,American Samoa,4,0,1,Honiara,Solomon Islands,2023_pacific_games.txt
+Tonga,Tuvalu,0,4,2,Honiara,Solomon Islands,2023_pacific_games.txt
+Tahiti,Samoa,2,1,1,Honiara,Solomon Islands,2023_pacific_games.txt
+Cook Islands,Papua New Guinea,0,3,2,Solomon Islands,Solomon Islands,2023_pacific_games.txt
+New Caledonia,Vanuatu,1,0,1,Solomon Islands,Solomon Islands,2023_pacific_games.txt
+Solomon Islands,Fiji,2,0,1,Solomon Islands,Solomon Islands,2023_pacific_games.txt
+American Samoa,Tonga,2,6,2,Solomon Islands,Solomon Islands,2023_pacific_games.txt
+Northern Mariana Islands,Tuvalu,1,4,2,Solomon Islands,Solomon Islands,2023_pacific_games.txt
+Samoa,Cook Islands,3,0,1,Solomon Islands,Solomon Islands,2023_pacific_games.txt
+Tahiti,Papua New Guinea,2,0,1,Solomon Islands,Solomon Islands,2023_pacific_games.txt
+Vanuatu,Fiji,2,4,2,Solomon Islands,Solomon Islands,2023_pacific_games.txt
+Solomon Islands,New Caledonia,2,2,X,Solomon Islands,Solomon Islands   [New Caledonia wins on penalties],2023_pacific_games.txt

@@ -1,0 +1,359 @@
+time,home_team,away_team,home_score,away_score,result,ht_score,source_file
+20.15,FC Koper,Olimpija Ljubljana,2,1,1,0-0,2023-24_si1.txt
+17.30,NK Radomlje,NK Maribor,0,4,2,0-2,2023-24_si1.txt
+20.15,NK Aluminij,NK Celje,2,2,X,1-0,2023-24_si1.txt
+17.30,FC Koper,NK Radomlje,1,0,1,1-0,2023-24_si1.txt
+,ale,NK Bravo,1,1,X,0-1,2023-24_si1.txt
+,NK Maribor,NK Aluminij,1,0,1,0-0,2023-24_si1.txt
+17.30,NK Radomlje,Olimpija Ljubljana,0,2,2,0-0,2023-24_si1.txt
+13.00,NK Bravo,NK Celje,0,2,2,0-1,2023-24_si1.txt
+,Mura,NK Maribor,0,0,X,,2023-24_si1.txt
+17.30,NK Aluminij,FC Koper,3,2,1,2-1,2023-24_si1.txt
+20.15,NK Radomlje,NK Aluminij,0,2,2,0-2,2023-24_si1.txt
+17.30,NK Maribor,NK Bravo,2,1,1,2-0,2023-24_si1.txt
+17.30,NK Bravo,FC Koper,0,3,2,0-1,2023-24_si1.txt
+,Mura,NK Radomlje,0,2,2,0-2,2023-24_si1.txt
+20.15,NK Aluminij,Olimpija Ljubljana,4,5,2,2-1,2023-24_si1.txt
+,ka,NK Maribor,2,2,X,0-1,2023-24_si1.txt
+,ale,NK Celje,1,2,2,0-1,2023-24_si1.txt
+17.30,Olimpija Ljubljana,NK Celje,2,4,2,1-2,2023-24_si1.txt
+20.15,NK Radomlje,NK Bravo,1,2,2,0-2,2023-24_si1.txt
+15.00,NK Bravo,NK Aluminij,2,0,1,1-0,2023-24_si1.txt
+,ale,FC Koper,1,2,2,1-1,2023-24_si1.txt
+,ka,NK Radomlje,1,1,X,1-1,2023-24_si1.txt
+17.30,NK Celje,NK Maribor,2,0,1,1-0,2023-24_si1.txt
+,Mura,Olimpija Ljubljana,1,3,2,1-1,2023-24_si1.txt
+,Mura,NK Bravo,1,1,X,1-0,2023-24_si1.txt
+20.15,Olimpija Ljubljana,NK Maribor,2,1,1,1-0,2023-24_si1.txt
+20.15,FC Koper,NK Celje,1,1,X,0-1,2023-24_si1.txt
+,ale,NK Aluminij,2,1,1,0-1,2023-24_si1.txt
+13.00,NK Bravo,Olimpija Ljubljana,4,2,1,1-2,2023-24_si1.txt
+17.30,NK Celje,NK Radomlje,1,0,1,1-0,2023-24_si1.txt
+20.15,NK Maribor,FC Koper,0,1,2,0-1,2023-24_si1.txt
+,ka,NK Bravo,2,0,1,1-0,2023-24_si1.txt
+17.30,NK Celje,NK Aluminij,1,3,2,1-0,2023-24_si1.txt
+17.30,NK Maribor,NK Radomlje,3,1,1,0-1,2023-24_si1.txt
+20.15,Olimpija Ljubljana,FC Koper,1,1,X,0-1,2023-24_si1.txt
+,Mura,NK Celje,0,2,2,0-0,2023-24_si1.txt
+,ka,Olimpija Ljubljana,0,2,2,0-0,2023-24_si1.txt
+17.30,NK Radomlje,FC Koper,1,1,X,0-0,2023-24_si1.txt
+20.15,NK Aluminij,NK Maribor,1,0,1,1-0,2023-24_si1.txt
+17.30,NK Celje,NK Bravo,2,1,1,1-1,2023-24_si1.txt
+17.30,Olimpija Ljubljana,NK Radomlje,1,1,X,1-1,2023-24_si1.txt
+20.15,FC Koper,NK Aluminij,4,1,1,3-0,2023-24_si1.txt
+,ka,NK Celje,0,4,2,0-3,2023-24_si1.txt
+,ale,Olimpija Ljubljana,0,2,2,0-0,2023-24_si1.txt
+15.00,NK Bravo,NK Maribor,2,1,1,0-0,2023-24_si1.txt
+17.30,NK Aluminij,NK Radomlje,0,2,2,0-1,2023-24_si1.txt
+,Mura,FC Koper,2,2,X,1-0,2023-24_si1.txt
+17.30,FC Koper,NK Bravo,1,1,X,1-0,2023-24_si1.txt
+17.30,Olimpija Ljubljana,NK Aluminij,0,0,X,,2023-24_si1.txt
+,ka,FC Koper,0,1,2,0-1,2023-24_si1.txt
+,Mura,NK Aluminij,1,0,1,0-0,2023-24_si1.txt
+,ale,NK Maribor,1,2,2,1-1,2023-24_si1.txt
+13.00,NK Bravo,NK Radomlje,0,2,2,0-1,2023-24_si1.txt
+15.00,NK Celje,Olimpija Ljubljana,0,1,2,0-1,2023-24_si1.txt
+17.30,NK Aluminij,NK Bravo,1,1,X,0-1,2023-24_si1.txt
+15.00,NK Maribor,NK Celje,0,1,2,0-0,2023-24_si1.txt
+,ale,NK Radomlje,3,0,1,2-0,2023-24_si1.txt
+15.00,NK Maribor,Olimpija Ljubljana,3,1,1,3-0,2023-24_si1.txt
+,ka,NK Aluminij,0,1,2,0-0,2023-24_si1.txt
+15.00,NK Celje,FC Koper,2,0,1,2-0,2023-24_si1.txt
+17.30,NK Radomlje,NK Celje,0,4,2,0-0,2023-24_si1.txt
+17.30,FC Koper,NK Maribor,3,3,X,2-2,2023-24_si1.txt
+17.30,Olimpija Ljubljana,NK Bravo,1,1,X,0-0,2023-24_si1.txt
+15.00,NK Aluminij,NK Celje,1,3,2,0-2,2023-24_si1.txt
+15.00,FC Koper,Olimpija Ljubljana,2,4,2,0-3,2023-24_si1.txt
+17.30,NK Radomlje,NK Maribor,2,2,X,1-2,2023-24_si1.txt
+,ale,NK Bravo,1,3,2,0-2,2023-24_si1.txt
+17.30,FC Koper,NK Radomlje,0,1,2,0-0,2023-24_si1.txt
+17.30,NK Maribor,NK Aluminij,7,0,1,4-0,2023-24_si1.txt
+17.30,NK Aluminij,FC Koper,1,2,2,1-1,2023-24_si1.txt
+15.00,NK Radomlje,Olimpija Ljubljana,1,3,2,0-2,2023-24_si1.txt
+13.00,NK Bravo,NK Celje,0,0,X,,2023-24_si1.txt
+,Mura,NK Maribor,3,0,1,,2023-24_si1.txt
+17.30,NK Radomlje,NK Aluminij,1,2,2,0-1,2023-24_si1.txt
+17.30,NK Maribor,NK Bravo,2,1,1,1-1,2023-24_si1.txt
+17.30,NK Aluminij,Olimpija Ljubljana,0,4,2,0-3,2023-24_si1.txt
+,ka,NK Maribor,0,0,X,,2023-24_si1.txt
+,ale,NK Celje,2,1,1,0-0,2023-24_si1.txt
+,Mura,NK Radomlje,0,0,X,,2023-24_si1.txt
+15.00,NK Bravo,FC Koper,0,0,X,,2023-24_si1.txt
+15.00,Olimpija Ljubljana,NK Celje,1,1,X,0-1,2023-24_si1.txt
+17.30,NK Radomlje,NK Bravo,0,1,2,0-0,2023-24_si1.txt
+15.00,NK Bravo,NK Aluminij,0,0,X,,2023-24_si1.txt
+17.30,NK Celje,NK Maribor,1,1,X,0-0,2023-24_si1.txt
+,ka,NK Radomlje,1,0,1,1-0,2023-24_si1.txt
+,Mura,Olimpija Ljubljana,1,1,X,1-0,2023-24_si1.txt
+,ale,FC Koper,1,0,1,0-0,2023-24_si1.txt
+,Mura,NK Bravo,1,2,2,0-1,2023-24_si1.txt
+16.45,FC Koper,NK Celje,1,3,2,0-1,2023-24_si1.txt
+18.30,Olimpija Ljubljana,NK Maribor,1,2,2,1-0,2023-24_si1.txt
+15.00,NK Bravo,Olimpija Ljubljana,1,1,X,1-1,2023-24_si1.txt
+,ale,NK Aluminij,2,0,1,1-0,2023-24_si1.txt
+15.00,NK Celje,NK Radomlje,2,1,1,1-1,2023-24_si1.txt
+17.30,NK Maribor,FC Koper,3,1,1,1-0,2023-24_si1.txt
+,ka,NK Bravo,2,0,1,1-0,2023-24_si1.txt
+17.30,NK Maribor,NK Radomlje,1,0,1,0-0,2023-24_si1.txt
+15.00,Olimpija Ljubljana,FC Koper,3,2,1,2-0,2023-24_si1.txt
+17.30,NK Celje,NK Aluminij,2,2,X,1-2,2023-24_si1.txt
+20.15,NK Aluminij,NK Maribor,0,2,2,0-1,2023-24_si1.txt
+,ka,Olimpija Ljubljana,2,3,2,1-1,2023-24_si1.txt
+17.30,NK Radomlje,FC Koper,1,1,X,0-0,2023-24_si1.txt
+,Mura,NK Celje,1,3,2,1-2,2023-24_si1.txt
+14.45,NK Celje,NK Bravo,2,1,1,1-0,2023-24_si1.txt
+18.45,Olimpija Ljubljana,NK Radomlje,2,2,X,1-1,2023-24_si1.txt
+16.45,FC Koper,NK Aluminij,2,1,1,0-1,2023-24_si1.txt
+,ka,NK Celje,1,2,2,0-0,2023-24_si1.txt
+15.00,NK Bravo,NK Maribor,1,1,X,1-1,2023-24_si1.txt
+,Mura,FC Koper,1,1,X,1-0,2023-24_si1.txt
+,ale,Olimpija Ljubljana,1,3,2,0-0,2023-24_si1.txt
+17.30,NK Aluminij,NK Radomlje,1,1,X,1-0,2023-24_si1.txt
+17.30,Olimpija Ljubljana,NK Aluminij,5,0,1,1-0,2023-24_si1.txt
+20.15,FC Koper,NK Bravo,0,0,X,,2023-24_si1.txt
+17.30,NK Bravo,NK Radomlje,1,1,X,1-1,2023-24_si1.txt
+,ale,NK Maribor,1,1,X,0-1,2023-24_si1.txt
+15.00,NK Celje,Olimpija Ljubljana,1,0,1,0-0,2023-24_si1.txt
+,ka,FC Koper,2,2,X,1-1,2023-24_si1.txt
+,Mura,NK Aluminij,3,1,1,1-0,2023-24_si1.txt
+15.00,NK Aluminij,NK Bravo,1,1,X,0-1,2023-24_si1.txt
+20.15,NK Maribor,NK Celje,3,1,1,2-0,2023-24_si1.txt
+,ka,NK Aluminij,1,4,2,0-4,2023-24_si1.txt
+,ale,NK Radomlje,1,1,X,1-1,2023-24_si1.txt
+20.15,NK Maribor,Olimpija Ljubljana,2,1,1,1-0,2023-24_si1.txt
+15.00,NK Celje,FC Koper,2,1,1,1-1,2023-24_si1.txt
+,NK Radomlje,NK Celje,1,1,X,1-0,2023-24_si1.txt
+17.30,FC Koper,NK Maribor,1,1,X,1-1,2023-24_si1.txt
+,Olimpija Ljubljana,NK Bravo,0,1,2,0-0,2023-24_si1.txt
+20.15,Olimpija Ljubljana,ND Primorje,2,0,1,1-0,2024-25_si1.txt
+17.30,NK Radomlje,FC Koper,0,1,2,0-0,2024-25_si1.txt
+,Mura,NK Nafta,1,0,1,0-0,2024-25_si1.txt
+20.15,NK Celje,NK Bravo,2,1,1,0-1,2024-25_si1.txt
+20.15,NK Nafta,NK Radomlje,2,1,1,0-1,2024-25_si1.txt
+20.15,FC Koper,Olimpija Ljubljana,0,1,2,0-1,2024-25_si1.txt
+20.15,NK Bravo,ND Primorje,4,0,1,0-0,2024-25_si1.txt
+17.00,NK Celje,NK Maribor,2,1,1,1-0,2024-25_si1.txt
+17.30,ND Primorje,FC Koper,0,2,2,0-1,2024-25_si1.txt
+,Mura,NK Celje,1,0,1,1-0,2024-25_si1.txt
+20.15,NK Maribor,NK Bravo,1,1,X,1-0,2024-25_si1.txt
+20.15,Olimpija Ljubljana,NK Nafta,2,0,1,1-0,2024-25_si1.txt
+20.15,NK Nafta,ND Primorje,0,3,2,0-2,2024-25_si1.txt
+,ale,Olimpija Ljubljana,0,0,X,,2024-25_si1.txt
+,NK Celje,NK Radomlje,4,2,1,2-0,2024-25_si1.txt
+20.15,NK Bravo,FC Koper,1,0,1,0-0,2024-25_si1.txt
+,Mura,NK Bravo,2,3,2,1-3,2024-25_si1.txt
+20.15,FC Koper,NK Nafta,3,0,1,0-0,2024-25_si1.txt
+17.30,NK Radomlje,NK Maribor,1,1,X,0-1,2024-25_si1.txt
+20.15,Olimpija Ljubljana,NK Celje,2,2,X,1-1,2024-25_si1.txt
+,Mura,NK Radomlje,1,0,1,0-0,2024-25_si1.txt
+,ale,FC Koper,0,3,2,0-1,2024-25_si1.txt
+17.30,NK Maribor,Olimpija Ljubljana,1,1,X,1-1,2024-25_si1.txt
+20.15,NK Celje,ND Primorje,0,3,2,0-3,2024-25_si1.txt
+17.30,NK Bravo,NK Nafta,2,0,1,1-0,2024-25_si1.txt
+20.15,NK Radomlje,NK Bravo,1,1,X,0-1,2024-25_si1.txt
+17.30,NK Maribor,ND Primorje,4,1,1,3-1,2024-25_si1.txt
+,FC Koper,NK Celje,0,0,X,,2024-25_si1.txt
+,Mura,ND Primorje,4,0,1,2-0,2024-25_si1.txt
+20.15,NK Radomlje,Olimpija Ljubljana,0,2,2,0-0,2024-25_si1.txt
+17.30,NK Celje,NK Nafta,3,1,1,1-0,2024-25_si1.txt
+20.15,NK Maribor,FC Koper,2,0,1,1-0,2024-25_si1.txt
+20.15,Olimpija Ljubljana,NK Bravo,1,1,X,1-0,2024-25_si1.txt
+17.30,NK Nafta,NK Maribor,0,3,2,0-0,2024-25_si1.txt
+,ale,NK Celje,0,3,2,0-1,2024-25_si1.txt
+13.00,ND Primorje,NK Radomlje,0,1,2,0-0,2024-25_si1.txt
+,ND Primorje,Olimpija Ljubljana,0,2,2,0-1,2024-25_si1.txt
+17.30,NK Bravo,NK Celje,3,2,1,1-1,2024-25_si1.txt
+17.30,FC Koper,NK Radomlje,1,0,1,0-0,2024-25_si1.txt
+,ale,NK Maribor,0,3,2,0-2,2024-25_si1.txt
+20.15,NK Radomlje,NK Nafta,2,0,1,1-0,2024-25_si1.txt
+15.00,ND Primorje,NK Bravo,1,0,1,0-0,2024-25_si1.txt
+17.30,NK Maribor,NK Celje,1,2,2,1-0,2024-25_si1.txt
+20.15,Olimpija Ljubljana,FC Koper,0,1,2,0-1,2024-25_si1.txt
+17.30,NK Nafta,Olimpija Ljubljana,0,1,2,0-1,2024-25_si1.txt
+20.15,FC Koper,ND Primorje,3,4,2,1-3,2024-25_si1.txt
+15.00,NK Bravo,NK Maribor,0,1,2,0-0,2024-25_si1.txt
+,ale,NK Radomlje,1,4,2,1-3,2024-25_si1.txt
+15.00,ND Primorje,NK Nafta,1,1,X,0-0,2024-25_si1.txt
+,Mura,NK Maribor,1,1,X,1-0,2024-25_si1.txt
+15.30,FC Koper,NK Bravo,3,2,1,2-1,2024-25_si1.txt
+17.30,NK Radomlje,NK Celje,4,2,1,0-1,2024-25_si1.txt
+,ale,ND Primorje,0,0,X,,2024-25_si1.txt
+17.30,NK Maribor,NK Radomlje,1,0,1,1-0,2024-25_si1.txt
+15.00,NK Celje,Olimpija Ljubljana,0,1,2,0-0,2024-25_si1.txt
+17.30,NK Nafta,FC Koper,1,2,2,0-2,2024-25_si1.txt
+17.30,NK Nafta,NK Bravo,0,1,2,0-1,2024-25_si1.txt
+15.00,Olimpija Ljubljana,NK Maribor,0,0,X,,2024-25_si1.txt
+20.15,ND Primorje,NK Celje,1,3,2,1-0,2024-25_si1.txt
+15.00,NK Celje,FC Koper,1,0,1,1-0,2024-25_si1.txt
+,ale,NK Nafta,2,1,1,0-0,2024-25_si1.txt
+,Mura,Olimpija Ljubljana,0,1,2,0-0,2024-25_si1.txt
+17.30,ND Primorje,NK Maribor,2,0,1,1-0,2024-25_si1.txt
+17.30,NK Bravo,NK Radomlje,0,0,X,,2024-25_si1.txt
+,ale,NK Bravo,2,3,2,0-3,2024-25_si1.txt
+15.00,FC Koper,NK Maribor,1,1,X,0-1,2024-25_si1.txt
+15.00,NK Nafta,NK Celje,0,0,X,,2024-25_si1.txt
+17.30,Olimpija Ljubljana,NK Radomlje,2,0,1,1-0,2024-25_si1.txt
+17.30,NK Bravo,Olimpija Ljubljana,1,1,X,1-1,2024-25_si1.txt
+15.00,NK Radomlje,ND Primorje,1,1,X,1-0,2024-25_si1.txt
+,NK Maribor,NK Nafta,4,0,1,1-0,2024-25_si1.txt
+,Mura,FC Koper,1,3,2,1-2,2024-25_si1.txt
+15.00,NK Celje,NK Bravo,2,3,2,1-2,2024-25_si1.txt
+13.00,Olimpija Ljubljana,ND Primorje,5,0,1,2-0,2024-25_si1.txt
+,Mura,NK Nafta,0,0,X,,2024-25_si1.txt
+17.30,NK Radomlje,FC Koper,1,2,2,0-0,2024-25_si1.txt
+15.00,NK Bravo,ND Primorje,3,1,1,2-1,2024-25_si1.txt
+17.30,NK Nafta,NK Radomlje,2,1,1,0-1,2024-25_si1.txt
+15.00,NK Celje,NK Maribor,1,2,2,0-1,2024-25_si1.txt
+17.30,FC Koper,Olimpija Ljubljana,1,2,2,1-0,2024-25_si1.txt
+15.00,NK Maribor,NK Bravo,2,3,2,2-1,2024-25_si1.txt
+,Mura,NK Celje,0,0,X,,2024-25_si1.txt
+17.30,Olimpija Ljubljana,NK Nafta,3,0,1,1-0,2024-25_si1.txt
+15.00,ND Primorje,FC Koper,1,1,X,1-1,2024-25_si1.txt
+17.30,NK Nafta,ND Primorje,2,2,X,2-2,2024-25_si1.txt
+13.00,NK Bravo,FC Koper,2,1,1,1-1,2024-25_si1.txt
+17.30,NK Celje,NK Radomlje,9,1,1,4-1,2024-25_si1.txt
+,ale,Olimpija Ljubljana,3,1,1,1-0,2024-25_si1.txt
+15.00,NK Radomlje,NK Maribor,0,4,2,0-1,2024-25_si1.txt
+17.30,FC Koper,NK Nafta,0,0,X,,2024-25_si1.txt
+15.00,Olimpija Ljubljana,NK Celje,2,0,1,1-0,2024-25_si1.txt
+,Mura,NK Bravo,1,1,X,1-1,2024-25_si1.txt
+13.00,NK Bravo,NK Nafta,1,1,X,0-1,2024-25_si1.txt
+,Mura,NK Radomlje,2,0,1,2-0,2024-25_si1.txt
+,ale,FC Koper,2,3,2,1-2,2024-25_si1.txt
+15.00,NK Maribor,Olimpija Ljubljana,1,0,1,0-0,2024-25_si1.txt
+17.30,NK Celje,ND Primorje,2,2,X,1-0,2024-25_si1.txt
+17.30,NK Radomlje,NK Bravo,2,0,1,1-0,2024-25_si1.txt
+15.00,ND Primorje,NK Maribor,2,1,1,1-0,2024-25_si1.txt
+18.45,FC Koper,NK Celje,1,1,X,0-0,2024-25_si1.txt
+,Mura,ND Primorje,3,1,1,1-0,2024-25_si1.txt
+17.30,NK Radomlje,Olimpija Ljubljana,0,3,2,0-0,2024-25_si1.txt
+17.30,NK Maribor,FC Koper,4,2,1,1-2,2024-25_si1.txt
+20.15,NK Celje,NK Nafta,3,2,1,1-0,2024-25_si1.txt
+,ale,NK Celje,0,1,2,0-1,2024-25_si1.txt
+15.00,ND Primorje,NK Radomlje,1,1,X,0-1,2024-25_si1.txt
+17.30,Olimpija Ljubljana,NK Bravo,3,0,1,2-0,2024-25_si1.txt
+17.30,NK Nafta,NK Maribor,1,1,X,0-1,2024-25_si1.txt
+20.15,FC Koper,NK Radomlje,3,1,1,1-0,2024-25_si1.txt
+15.00,ND Primorje,Olimpija Ljubljana,0,2,2,0-1,2024-25_si1.txt
+17.30,NK Bravo,NK Celje,1,2,2,1-2,2024-25_si1.txt
+,ale,NK Maribor,1,0,1,0-0,2024-25_si1.txt
+18.00,NK Radomlje,NK Nafta,4,1,1,2-0,2024-25_si1.txt
+17.00,Olimpija Ljubljana,FC Koper,1,1,X,0-0,2024-25_si1.txt
+16.00,ND Primorje,NK Bravo,3,0,1,1-0,2024-25_si1.txt
+18.45,NK Maribor,NK Celje,1,1,X,1-1,2024-25_si1.txt
+17.30,NK Nafta,Olimpija Ljubljana,1,1,X,0-0,2024-25_si1.txt
+15.00,FC Koper,ND Primorje,1,1,X,1-0,2024-25_si1.txt
+20.15,NK Bravo,NK Maribor,1,1,X,0-0,2024-25_si1.txt
+,ale,NK Radomlje,1,2,2,0-0,2024-25_si1.txt
+15.00,ND Primorje,NK Nafta,2,2,X,0-1,2024-25_si1.txt
+17.30,FC Koper,NK Bravo,1,0,1,0-0,2024-25_si1.txt
+15.00,NK Radomlje,NK Celje,1,3,2,1-0,2024-25_si1.txt
+,Mura,NK Maribor,1,2,2,0-0,2024-25_si1.txt
+,ale,ND Primorje,1,1,X,1-1,2024-25_si1.txt
+17.30,NK Maribor,NK Radomlje,4,0,1,0-0,2024-25_si1.txt
+15.00,NK Nafta,FC Koper,1,5,2,0-1,2024-25_si1.txt
+17.30,NK Celje,Olimpija Ljubljana,3,3,X,1-1,2024-25_si1.txt
+20.15,NK Nafta,NK Bravo,0,1,2,0-1,2024-25_si1.txt
+20.15,Olimpija Ljubljana,NK Maribor,1,2,2,1-1,2024-25_si1.txt
+17.30,ND Primorje,NK Celje,0,5,2,0-4,2024-25_si1.txt
+15.00,NK Bravo,NK Radomlje,4,0,1,4-0,2024-25_si1.txt
+17.30,NK Celje,FC Koper,2,3,2,2-1,2024-25_si1.txt
+,Mura,Olimpija Ljubljana,1,1,X,1-1,2024-25_si1.txt
+,ale,NK Nafta,2,0,1,1-0,2024-25_si1.txt
+17.30,NK Maribor,ND Primorje,3,1,1,2-0,2024-25_si1.txt
+15.00,Olimpija Ljubljana,NK Radomlje,5,0,1,2-0,2024-25_si1.txt
+,ale,NK Bravo,2,2,X,0-1,2024-25_si1.txt
+17.30,NK Nafta,NK Celje,1,6,2,0-4,2024-25_si1.txt
+20.15,FC Koper,NK Maribor,1,1,X,1-0,2024-25_si1.txt
+17.30,NK Radomlje,ND Primorje,0,1,2,0-0,2024-25_si1.txt
+15.00,NK Bravo,Olimpija Ljubljana,0,0,X,,2024-25_si1.txt
+15.00,NK Maribor,NK Nafta,0,1,2,0-1,2024-25_si1.txt
+,Mura,FC Koper,1,3,2,1-2,2024-25_si1.txt
+,NK Dren Vrhnika,NK Komenda,8,0,1,6-0,2024-25_sicup.txt
+17.30,NK Arne Tabor,ND Ilirija 1911,0,5,2,,2024-25_sicup.txt
+17.00,ND Bistrc Irbis,Jadran Dekani,0,10,2,0-5,2024-25_sicup.txt
+,NK Galeb Ankaran,FC Koper,0,6,2,0-1,2024-25_sicup.txt
+,NK Litija,NK Kresnice,1,0,1,0-0,2024-25_sicup.txt
+,NK Bela Krajina,Svoboda Ljubljana,5,4,1,,2024-25_sicup.txt
+,IB 1975 Ljubljana,NK Krka,1,5,2,0-4,2024-25_sicup.txt
+,NK Radomlje,NK Zagorje,14,0,1,7-0,2024-25_sicup.txt
+,NK Bogojina,NK Tromejnik,3,1,1,1-1,2024-25_sicup.txt
+,ani,NK Ljutomer,0,4,2,0-1,2024-25_sicup.txt
+,NK Idrija,NK Tolmin,1,2,2,0-0,2024-25_sicup.txt
+,NK Adria,NK Vipava,1,0,1,0-0,2024-25_sicup.txt
+,NK Malibu Panonija,NK Polana,0,11,2,0-7,2024-25_sicup.txt
+,ovci,NK Odranci,0,3,2,0-0,2024-25_sicup.txt
+,ina,NK Cankova,3,2,1,,2024-25_sicup.txt
+,a,NK Serdica,4,3,1,,2024-25_sicup.txt
+,D Cven,ND Beltinci,0,8,2,0-3,2024-25_sicup.txt
+,NK Trebnje,Slovan Ljubljana,0,3,2,,2024-25_sicup.txt
+18.00,NK Korte,MNK Izola,0,2,2,0-1,2024-25_sicup.txt
+,e,ND Bilje,0,2,2,0-1,2024-25_sicup.txt
+,NK Kamnik,Roltek Dob,2,7,2,,2024-25_sicup.txt
+20.00,ND Gorica,ND Primorje,4,2,1,,2024-25_sicup.txt
+17.00,NK Nedelica,NK Virs Bistrica,1,12,2,,2024-25_sicup.txt
+,ja vas,NK Aluminij,0,3,2,,2024-25_sicup.txt
+17.00,NK Makole,FC Drava Ptuj,4,5,2,,2024-25_sicup.txt
+17.00,Olimpija Dolga vas,NK Nafta,0,8,2,0-3,2024-25_sicup.txt
+,Pekre,NK Dobrovce,1,4,2,,2024-25_sicup.txt
+,e,Korotan Prevalje,3,1,1,,2024-25_sicup.txt
+,D Marjeta na Dravskem polju,NK Peca,6,5,1,,2024-25_sicup.txt
+,NK Maribor Tabor,NK Jurovski dol,3,2,1,,2024-25_sicup.txt
+,NK Zgornja Polskava,NK Stojnci,0,1,2,,2024-25_sicup.txt
+,D Bukovci,NK Podvinci,3,4,2,,2024-25_sicup.txt
+,NK Rogoznica,NK Hajdina,3,5,2,,2024-25_sicup.txt
+,D Pragersko,NK Bistrica,0,6,2,,2024-25_sicup.txt
+,elezniki,Medvode,5,3,1,,2024-25_sicup.txt
+,NK Kranj,NK Velesovo Cerklje,1,3,2,,2024-25_sicup.txt
+,ka,NK Dravinja,0,2,2,,2024-25_sicup.txt
+,e,Rudar Velenje,0,3,2,,2024-25_sicup.txt
+17.00,NK Triglav,SIJ Acroni Jesenice,4,0,1,,2024-25_sicup.txt
+,ovje,NK Ljutomer,2,1,1,1-0,2024-25_sicup.txt
+,NK Litija,ND Ilirija 1911,0,1,2,0-1,2024-25_sicup.txt
+,NK Bela Krajina,Slovan Ljubljana,2,1,1,1-0,2024-25_sicup.txt
+,NK Jevnica,NK Dren Vrhnika,0,3,2,0-2,2024-25_sicup.txt
+,NK Bravo,NK Krka,5,0,1,1-0,2024-25_sicup.txt
+,a,ND Beltinci,0,2,2,0-0,2024-25_sicup.txt
+,NK Adria,NK Tolmin,1,3,2,1-2,2024-25_sicup.txt
+,NK Velesovo Cerklje,Polet Sveti Duh,2,0,1,0-0,2024-25_sicup.txt
+,ar Lendava,NK Nafta,0,15,2,0-7,2024-25_sicup.txt
+,e,Tehnotim Pesnica,2,0,1,1-0,2024-25_sicup.txt
+17.00,Jadran Dekani,FC Koper,1,8,2,0-4,2024-25_sicup.txt
+,elezniki,NK Triglav,0,5,2,0-1,2024-25_sicup.txt
+18.30,NK Polana,NK Odranci,1,0,1,1-0,2024-25_sicup.txt
+19.00,NK Dobrovce,NK Maribor Tabor,5,2,1,4-0,2024-25_sicup.txt
+16.30,Roltek Dob,NK Radomlje,0,1,2,0-0,2024-25_sicup.txt
+,NK Hajdina,NK Aluminij,0,4,2,0-1,2024-25_sicup.txt
+,D Videm,NK Podvinci,2,0,1,0-0,2024-25_sicup.txt
+,e na Dravskem polju,NK Bistrica,0,5,2,,2024-25_sicup.txt
+15.30,NK Dravinja,NK Celje,0,3,2,0-1,2024-25_sicup.txt
+16.30,ND Gorica,ND Bilje,0,1,2,0-1,2024-25_sicup.txt
+,nica,FC Drava Ptuj,1,5,2,0-1,2024-25_sicup.txt
+,ko,Rudar Velenje,1,3,2,1-3,2024-25_sicup.txt
+,ale,Olimpija Ljubljana,0,3,2,0-2,2024-25_sicup.txt
+,D Marjeta na Dravskem polju,NK Maribor,0,4,2,0-4,2024-25_sicup.txt
+14.00,NK Dren Vrhnika,NK Bistrica,1,3,2,1-1,2024-25_sicup.txt
+,ND Beltinci,NK Triglav,4,0,1,2-0,2024-25_sicup.txt
+14.00,ND Bilje,FC Koper,1,2,2,,2024-25_sicup.txt
+,,NK Celje,0,8,2,0-4,2024-25_sicup.txt
+,NK Radomlje,Olimpija Ljubljana,1,2,2,1-2,2024-25_sicup.txt
+,NK Tolmin,NK Bravo,0,2,2,0-1,2024-25_sicup.txt
+,-Preddvor,NK Maribor,1,2,2,1-0,2024-25_sicup.txt
+16.00,Rudar Velenje,NK Aluminij,1,2,2,1-0,2024-25_sicup.txt
+,D Videm,NK Nafta,0,3,2,0-0,2024-25_sicup.txt
+,e,ND Ilirija 1911,0,1,2,0-1,2024-25_sicup.txt
+14.00,NK Bela Krajina,NK Polana,1,0,1,1-0,2024-25_sicup.txt
+,ovje,NK Dobrovce,2,4,2,1-2,2024-25_sicup.txt
+,ana,FC Drava Ptuj,1,0,1,1-0,2024-25_sicup.txt
+14.30,Olimpija Ljubljana,ND Ilirija 1911,3,0,1,2-0,2024-25_sicup.txt
+,Mura,FC Koper,0,1,2,0-0,2024-25_sicup.txt
+17.30,NK Maribor,NK Aluminij,2,0,1,0-0,2024-25_sicup.txt
+,arda Martjanci,NK Nafta,1,2,2,1-2,2024-25_sicup.txt
+18.00,NK Dobrovce,NK Bistrica,0,3,2,0-1,2024-25_sicup.txt
+14.30,ND Beltinci,NK Bela Krajina,10,0,1,5-0,2024-25_sicup.txt
+16.00,NK Bistrica,FC Koper,0,2,2,0-0,2024-25_sicup.txt
+16.00,NK Nafta,NK Bravo,4,5,2,,2024-25_sicup.txt
+19.00,NK Maribor,NK Celje,0,1,2,0-0,2024-25_sicup.txt
+16.00,Olimpija Ljubljana,ND Beltinci,5,2,1,4-1,2024-25_sicup.txt
+18.00,FC Koper,NK Bravo,3,0,1,3-0,2024-25_sicup.txt
+18.00,NK Celje,Olimpija Ljubljana,2,1,1,1-1,2024-25_sicup.txt

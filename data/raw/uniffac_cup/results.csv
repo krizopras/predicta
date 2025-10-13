@@ -1,0 +1,16 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Gabon,Equatorial Guinea,4,0,1,Libreville,Gabon,1999_uniffac_cup.txt
+Central African Republic,Chad,4,1,1,Libreville,Gabon,1999_uniffac_cup.txt
+Chad,São Tomé and Príncipe,5,0,1,Libreville,Gabon,1999_uniffac_cup.txt
+Congo,Equatorial Guinea,2,1,1,Libreville,Gabon,1999_uniffac_cup.txt
+Gabon,Central African Republic,1,0,1,Libreville,Gabon,1999_uniffac_cup.txt
+Congo,Chad,0,2,2,Libreville,Gabon,1999_uniffac_cup.txt
+Equatorial Guinea,Central African Republic,4,2,1,Libreville,Gabon,1999_uniffac_cup.txt
+Gabon,São Tomé and Príncipe,1,0,1,Libreville,Gabon,1999_uniffac_cup.txt
+Congo,São Tomé and Príncipe,1,0,1,Libreville,Gabon,1999_uniffac_cup.txt
+Central African Republic,São Tomé and Príncipe,3,0,1,Libreville,Gabon,1999_uniffac_cup.txt
+Chad,Equatorial Guinea,1,0,1,Libreville,Gabon,1999_uniffac_cup.txt
+Gabon,Congo,0,0,X,Libreville,Gabon,1999_uniffac_cup.txt
+Central African Republic,Congo,4,2,1,Libreville,Gabon,1999_uniffac_cup.txt
+Gabon,Chad,2,0,1,Libreville,Gabon,1999_uniffac_cup.txt
+São Tomé and Príncipe,Equatorial Guinea,2,0,1,Libreville,Gabon,1999_uniffac_cup.txt

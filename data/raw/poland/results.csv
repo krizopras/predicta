@@ -1,0 +1,431 @@
+time,home_team,away_team,home_score,away_score,result,ht_score,source_file
+15.00,FKS Stal Mielec,KS Cracovia,2,2,X,2-0,2023-24_pl1.txt
+15.00,Górnik Zabrze,Radomiak Radom,0,2,2,0-0,2023-24_pl1.txt
+,bie Lubin,Ruch Chorzów,2,1,1,0-1,2023-24_pl1.txt
+,,Górnik Zabrze,2,0,1,1-0,2023-24_pl1.txt
+15.00,FKS Stal Mielec,Piast Gliwice,0,0,X,,2023-24_pl1.txt
+,,Radomiak Radom,2,0,1,1-0,2023-24_pl1.txt
+19.00,KS Cracovia,Legia Warszawa,2,0,1,1-0,2023-24_pl1.txt
+,,Korona Kielce,2,1,1,1-0,2023-24_pl1.txt
+17.30,Górnik Zabrze,Piast Gliwice,0,0,X,,2023-24_pl1.txt
+20.00,Radomiak Radom,KS Cracovia,0,1,2,0-1,2023-24_pl1.txt
+20.00,Legia Warszawa,Ruch Chorzów,3,0,1,2-0,2023-24_pl1.txt
+,omice,FKS Stal Mielec,1,0,1,0-0,2023-24_pl1.txt
+17.30,Korona Kielce,Górnik Zabrze,0,1,2,0-0,2023-24_pl1.txt
+,Szczecin,Radomiak Radom,0,2,2,0-2,2023-24_pl1.txt
+,omice,Legia Warszawa,1,1,X,1-1,2023-24_pl1.txt
+,,Ruch Chorzów,2,2,X,2-1,2023-24_pl1.txt
+,stochowa,FKS Stal Mielec,2,0,1,1-0,2023-24_pl1.txt
+20.00,Legia Warszawa,Korona Kielce,1,0,1,1-0,2023-24_pl1.txt
+19.00,KS Cracovia,Piast Gliwice,1,1,X,1-0,2023-24_pl1.txt
+18.00,FKS Stal Mielec,Radomiak Radom,2,0,1,2-0,2023-24_pl1.txt
+,,KS Cracovia,0,0,X,,2023-24_pl1.txt
+20.00,Piast Gliwice,Ruch Chorzów,0,0,X,,2023-24_pl1.txt
+,ystok,Górnik Zabrze,4,1,1,3-1,2023-24_pl1.txt
+,Szczecin,Legia Warszawa,3,4,2,1-1,2023-24_pl1.txt
+20.30,Ruch Chorzów,FKS Stal Mielec,1,1,X,1-1,2023-24_pl1.txt
+15.00,Radomiak Radom,Piast Gliwice,1,1,X,0-0,2023-24_pl1.txt
+17.30,KS Cracovia,Korona Kielce,0,0,X,,2023-24_pl1.txt
+,,Górnik Zabrze,1,1,X,0-1,2023-24_pl1.txt
+20.30,Górnik Zabrze,Ruch Chorzów,1,0,1,0-0,2023-24_pl1.txt
+,Szczecin,Korona Kielce,3,1,1,1-1,2023-24_pl1.txt
+20.00,Piast Gliwice,Legia Warszawa,1,1,X,1-0,2023-24_pl1.txt
+,ystok,Radomiak Radom,3,2,1,2-2,2023-24_pl1.txt
+,,KS Cracovia,2,0,1,1-0,2023-24_pl1.txt
+,aw,Piast Gliwice,1,0,1,1-0,2023-24_pl1.txt
+,,FKS Stal Mielec,2,1,1,2-1,2023-24_pl1.txt
+17.30,Legia Warszawa,Górnik Zabrze,2,1,1,1-1,2023-24_pl1.txt
+18.00,FKS Stal Mielec,Korona Kielce,2,3,2,1-2,2023-24_pl1.txt
+,,KS Cracovia,0,2,2,0-2,2023-24_pl1.txt
+,omice,Ruch Chorzów,2,2,X,2-0,2023-24_pl1.txt
+,stochowa,Radomiak Radom,3,0,1,1-0,2023-24_pl1.txt
+,ystok,Legia Warszawa,2,0,1,2-0,2023-24_pl1.txt
+,,FKS Stal Mielec,1,0,1,0-0,2023-24_pl1.txt
+,bie Lubin,Piast Gliwice,1,1,X,1-0,2023-24_pl1.txt
+,aw,Górnik Zabrze,1,1,X,1-0,2023-24_pl1.txt
+,omice,KS Cracovia,1,1,X,1-0,2023-24_pl1.txt
+,aw,Legia Warszawa,4,0,1,0-0,2023-24_pl1.txt
+12.30,Radomiak Radom,Korona Kielce,1,1,X,0-0,2023-24_pl1.txt
+,,Ruch Chorzów,2,1,1,0-1,2023-24_pl1.txt
+,,Górnik Zabrze,0,5,2,0-1,2023-24_pl1.txt
+,,Piast Gliwice,1,1,X,1-1,2023-24_pl1.txt
+,bie Lubin,Radomiak Radom,2,3,2,0-2,2023-24_pl1.txt
+15.00,Legia Warszawa,FKS Stal Mielec,1,3,2,0-1,2023-24_pl1.txt
+18.00,Piast Gliwice,Korona Kielce,0,0,X,,2023-24_pl1.txt
+,ystok,FKS Stal Mielec,4,0,1,2-0,2023-24_pl1.txt
+,,Ruch Chorzów,2,0,1,1-0,2023-24_pl1.txt
+17.30,Radomiak Radom,Legia Warszawa,0,1,2,0-1,2023-24_pl1.txt
+19.00,Górnik Zabrze,KS Cracovia,1,0,1,0-0,2023-24_pl1.txt
+,,Piast Gliwice,3,3,X,1-3,2023-24_pl1.txt
+12.30,FKS Stal Mielec,Górnik Zabrze,2,1,1,1-1,2023-24_pl1.txt
+19.00,Ruch Chorzów,Radomiak Radom,0,0,X,,2023-24_pl1.txt
+,ystok,Piast Gliwice,0,0,X,,2023-24_pl1.txt
+,stochowa,KS Cracovia,1,1,X,0-1,2023-24_pl1.txt
+,Szczecin,FKS Stal Mielec,2,3,2,2-1,2023-24_pl1.txt
+,omice,Górnik Zabrze,2,1,1,0-1,2023-24_pl1.txt
+15.00,Ruch Chorzów,Korona Kielce,1,1,X,0-0,2023-24_pl1.txt
+,,Radomiak Radom,0,3,2,0-2,2023-24_pl1.txt
+12.30,KS Cracovia,Ruch Chorzów,4,4,X,1-2,2023-24_pl1.txt
+,bie Lubin,Legia Warszawa,0,3,2,0-2,2023-24_pl1.txt
+15.00,Radomiak Radom,Górnik Zabrze,1,1,X,1-1,2023-24_pl1.txt
+17.30,KS Cracovia,FKS Stal Mielec,2,2,X,0-0,2023-24_pl1.txt
+,aw,Korona Kielce,0,0,X,,2023-24_pl1.txt
+,,Piast Gliwice,0,1,2,0-0,2023-24_pl1.txt
+,,Legia Warszawa,1,1,X,1-0,2023-24_pl1.txt
+,,Ruch Chorzów,1,1,X,1-0,2023-24_pl1.txt
+,stochowa,Korona Kielce,1,0,1,0-0,2023-24_pl1.txt
+17.30,Legia Warszawa,KS Cracovia,2,0,1,0-0,2023-24_pl1.txt
+19.00,Piast Gliwice,FKS Stal Mielec,3,0,1,0-0,2023-24_pl1.txt
+20.30,Ruch Chorzów,Legia Warszawa,0,1,2,0-0,2023-24_pl1.txt
+15.00,KS Cracovia,Radomiak Radom,6,0,1,3-0,2023-24_pl1.txt
+17.30,Piast Gliwice,Górnik Zabrze,1,3,2,0-1,2023-24_pl1.txt
+,aw,FKS Stal Mielec,0,1,2,0-1,2023-24_pl1.txt
+,stochowa,Piast Gliwice,3,1,1,0-0,2023-24_pl1.txt
+,bie Lubin,KS Cracovia,1,1,X,1-0,2023-24_pl1.txt
+19.00,Górnik Zabrze,Korona Kielce,3,1,1,2-0,2023-24_pl1.txt
+18.00,Piast Gliwice,KS Cracovia,0,0,X,,2023-24_pl1.txt
+,ystok,Ruch Chorzów,1,1,X,0-1,2023-24_pl1.txt
+,,Górnik Zabrze,3,1,1,2-0,2023-24_pl1.txt
+17.30,Korona Kielce,Legia Warszawa,3,3,X,1-2,2023-24_pl1.txt
+,,Radomiak Radom,0,0,X,,2023-24_pl1.txt
+20.30,Ruch Chorzów,Piast Gliwice,3,0,1,1-0,2023-24_pl1.txt
+,bie Lubin,Korona Kielce,1,0,1,1-0,2023-24_pl1.txt
+19.00,Radomiak Radom,FKS Stal Mielec,2,1,1,1-0,2023-24_pl1.txt
+18.00,Piast Gliwice,Radomiak Radom,2,3,2,1-1,2023-24_pl1.txt
+15.00,Korona Kielce,KS Cracovia,1,1,X,0-1,2023-24_pl1.txt
+12.30,FKS Stal Mielec,Ruch Chorzów,3,1,1,2-0,2023-24_pl1.txt
+,,Legia Warszawa,1,0,1,0-0,2023-24_pl1.txt
+,bie Lubin,FKS Stal Mielec,0,0,X,,2023-24_pl1.txt
+17.30,Ruch Chorzów,Górnik Zabrze,1,2,2,0-1,2023-24_pl1.txt
+17.30,Legia Warszawa,Piast Gliwice,3,1,1,2-1,2023-24_pl1.txt
+,stochowa,Ruch Chorzów,1,1,X,1-0,2023-24_pl1.txt
+,Szczecin,KS Cracovia,3,1,1,2-1,2023-24_pl1.txt
+,omice,Radomiak Radom,1,1,X,1-0,2023-24_pl1.txt
+,,Korona Kielce,3,1,1,1-0,2023-24_pl1.txt
+20.00,Górnik Zabrze,Legia Warszawa,1,3,2,0-1,2023-24_pl1.txt
+15.00,Korona Kielce,FKS Stal Mielec,1,0,1,1-0,2023-24_pl1.txt
+,,Piast Gliwice,1,0,1,0-0,2023-24_pl1.txt
+,bie Lubin,Górnik Zabrze,1,2,2,1-1,2023-24_pl1.txt
+,,Korona Kielce,1,0,1,1-0,2023-24_pl1.txt
+,Szczecin,Ruch Chorzów,5,0,1,2-0,2023-24_pl1.txt
+,stochowa,Legia Warszawa,1,1,X,0-1,2023-24_pl1.txt
+,,Radomiak Radom,3,2,1,1-0,2023-24_pl1.txt
+,ystok,KS Cracovia,1,3,2,1-2,2023-24_pl1.txt
+18.00,Korona Kielce,Radomiak Radom,4,0,1,2-0,2023-24_pl1.txt
+,stochowa,Górnik Zabrze,0,1,2,0-0,2023-24_pl1.txt
+,Szczecin,Piast Gliwice,0,2,2,0-2,2023-24_pl1.txt
+,,FKS Stal Mielec,5,2,1,2-2,2023-24_pl1.txt
+,aw,Ruch Chorzów,2,3,2,0-2,2023-24_pl1.txt
+15.00,FKS Stal Mielec,Legia Warszawa,1,3,2,1-1,2023-24_pl1.txt
+,,KS Cracovia,0,0,X,,2023-24_pl1.txt
+,omice,Korona Kielce,1,1,X,1-0,2023-24_pl1.txt
+18.00,KS Cracovia,Górnik Zabrze,5,0,1,2-0,2023-24_pl1.txt
+15.00,Korona Kielce,Piast Gliwice,1,1,X,0-1,2023-24_pl1.txt
+17.30,Legia Warszawa,Radomiak Radom,0,3,2,0-0,2023-24_pl1.txt
+,aw,KS Cracovia,4,0,1,3-0,2023-24_pl1.txt
+15.00,Górnik Zabrze,FKS Stal Mielec,1,1,X,0-0,2023-24_pl1.txt
+,ystok,Korona Kielce,3,0,1,2-0,2023-24_pl1.txt
+,,Legia Warszawa,1,2,2,0-2,2023-24_pl1.txt
+19.00,Radomiak Radom,Ruch Chorzów,0,2,2,0-0,2023-24_pl1.txt
+15.00,Korona Kielce,Ruch Chorzów,2,0,1,1-0,2023-24_pl1.txt
+,aw,Radomiak Radom,2,0,1,1-0,2023-24_pl1.txt
+,,Legia Warszawa,0,1,2,0-1,2023-24_pl1.txt
+,,Korona Kielce,1,2,2,1-0,2023-24_pl1.txt
+,,FKS Stal Mielec,3,2,1,3-0,2023-24_pl1.txt
+,Szczecin,Górnik Zabrze,1,0,1,0-0,2023-24_pl1.txt
+,omice,Piast Gliwice,1,0,1,0-0,2023-24_pl1.txt
+,Ruch Chorzów,KS Cracovia,2,0,1,1-0,2023-24_pl1.txt
+14.45,GKS Katowice,Radomiak Radom,1,2,2,0-2,2024-25_pl1.txt
+,Szczecin,Korona Kielce,3,0,1,1-0,2024-25_pl1.txt
+14.45,KS Cracovia,Piast Gliwice,1,1,X,0-1,2024-25_pl1.txt
+,,Górnik Zabrze,2,0,1,1-0,2024-25_pl1.txt
+,omice,Górnik Zabrze,2,2,X,0-1,2024-25_pl1.txt
+,sk,Motor Lublin,0,2,2,0-0,2024-25_pl1.txt
+14.45,FKS Stal Mielec,GKS Katowice,0,1,2,0-1,2024-25_pl1.txt
+20.15,Korona Kielce,Legia Warszawa,0,1,2,0-0,2024-25_pl1.txt
+,stochowa,KS Cracovia,0,1,2,0-0,2024-25_pl1.txt
+,ystok,FKS Stal Mielec,2,0,1,1-0,2024-25_pl1.txt
+14.45,Motor Lublin,Korona Kielce,1,1,X,0-1,2024-25_pl1.txt
+20.15,Legia Warszawa,Piast Gliwice,1,2,2,1-1,2024-25_pl1.txt
+,aw,Radomiak Radom,1,2,2,1-0,2024-25_pl1.txt
+18.00,Radomiak Radom,Górnik Zabrze,1,2,2,0-0,2024-25_pl1.txt
+17.30,Korona Kielce,KS Cracovia,0,2,2,0-1,2024-25_pl1.txt
+,Szczecin,FKS Stal Mielec,1,0,1,0-0,2024-25_pl1.txt
+,omice,Legia Warszawa,2,2,X,2-2,2024-25_pl1.txt
+19.00,Piast Gliwice,GKS Katowice,2,2,X,1-1,2024-25_pl1.txt
+20.30,GKS Katowice,Motor Lublin,0,0,X,,2024-25_pl1.txt
+,ystok,KS Cracovia,2,4,2,2-2,2024-25_pl1.txt
+,aw,Korona Kielce,1,1,X,0-0,2024-25_pl1.txt
+17.30,Legia Warszawa,Radomiak Radom,4,1,1,2-0,2024-25_pl1.txt
+19.00,FKS Stal Mielec,Piast Gliwice,2,0,1,0-0,2024-25_pl1.txt
+,,Radomiak Radom,3,2,1,2-1,2024-25_pl1.txt
+17.30,KS Cracovia,Górnik Zabrze,3,2,1,1-2,2024-25_pl1.txt
+,aw,Legia Warszawa,1,1,X,0-0,2024-25_pl1.txt
+19.00,Korona Kielce,FKS Stal Mielec,2,1,1,0-0,2024-25_pl1.txt
+,stochowa,Piast Gliwice,0,1,2,0-0,2024-25_pl1.txt
+,omice,Korona Kielce,0,0,X,,2024-25_pl1.txt
+,bie Lubin,GKS Katowice,1,0,1,0-0,2024-25_pl1.txt
+20.15,Radomiak Radom,KS Cracovia,2,1,1,1-0,2024-25_pl1.txt
+14.45,Legia Warszawa,Motor Lublin,5,2,1,2-1,2024-25_pl1.txt
+18.00,Motor Lublin,Górnik Zabrze,1,0,1,0-0,2024-25_pl1.txt
+,sk,Radomiak Radom,1,0,1,0-0,2024-25_pl1.txt
+,aw,FKS Stal Mielec,2,1,1,2-0,2024-25_pl1.txt
+18.00,Radomiak Radom,Korona Kielce,4,0,1,2-0,2024-25_pl1.txt
+,Szczecin,Legia Warszawa,1,0,1,0-0,2024-25_pl1.txt
+,omice,KS Cracovia,1,2,2,1-1,2024-25_pl1.txt
+,,Piast Gliwice,1,0,1,1-0,2024-25_pl1.txt
+20.15,Górnik Zabrze,GKS Katowice,3,0,1,1-0,2024-25_pl1.txt
+12.15,FKS Stal Mielec,Motor Lublin,1,0,1,0-0,2024-25_pl1.txt
+20.15,Legia Warszawa,Górnik Zabrze,1,1,X,1-1,2024-25_pl1.txt
+,bie Lubin,Radomiak Radom,1,0,1,0-0,2024-25_pl1.txt
+19.00,KS Cracovia,FKS Stal Mielec,1,1,X,0-1,2024-25_pl1.txt
+,omice,GKS Katowice,0,6,2,0-2,2024-25_pl1.txt
+,,Korona Kielce,0,1,2,0-0,2024-25_pl1.txt
+,,Motor Lublin,1,2,2,1-1,2024-25_pl1.txt
+,aw,KS Cracovia,2,4,2,2-1,2024-25_pl1.txt
+,Szczecin,Piast Gliwice,1,0,1,0-0,2024-25_pl1.txt
+,ystok,Legia Warszawa,1,1,X,1-0,2024-25_pl1.txt
+18.00,Korona Kielce,Piast Gliwice,0,2,2,0-1,2024-25_pl1.txt
+,sk,Legia Warszawa,0,2,2,0-0,2024-25_pl1.txt
+14.45,Górnik Zabrze,FKS Stal Mielec,3,1,1,1-1,2024-25_pl1.txt
+14.45,KS Cracovia,Motor Lublin,6,2,1,2-2,2024-25_pl1.txt
+,,Radomiak Radom,2,1,1,1-0,2024-25_pl1.txt
+,ystok,Korona Kielce,3,1,1,1-0,2024-25_pl1.txt
+,,Górnik Zabrze,0,2,2,0-1,2024-25_pl1.txt
+20.15,Legia Warszawa,GKS Katowice,4,1,1,2-1,2024-25_pl1.txt
+,stochowa,FKS Stal Mielec,1,0,1,0-0,2024-25_pl1.txt
+12.15,Radomiak Radom,Piast Gliwice,1,1,X,1-0,2024-25_pl1.txt
+,sk,KS Cracovia,1,2,2,0-2,2024-25_pl1.txt
+18.00,GKS Katowice,Korona Kielce,1,2,2,1-1,2024-25_pl1.txt
+18.00,Piast Gliwice,Motor Lublin,2,3,2,1-2,2024-25_pl1.txt
+,Szczecin,Radomiak Radom,0,1,2,0-1,2024-25_pl1.txt
+14.45,KS Cracovia,GKS Katowice,3,4,2,1-2,2024-25_pl1.txt
+,aw,Górnik Zabrze,0,1,2,0-1,2024-25_pl1.txt
+,,Legia Warszawa,5,2,1,2-2,2024-25_pl1.txt
+,bie Lubin,Motor Lublin,1,2,2,0-1,2024-25_pl1.txt
+,,GKS Katowice,2,0,1,1-0,2024-25_pl1.txt
+20.15,Legia Warszawa,KS Cracovia,3,2,1,3-1,2024-25_pl1.txt
+12.15,Radomiak Radom,FKS Stal Mielec,1,2,2,0-2,2024-25_pl1.txt
+,stochowa,Korona Kielce,1,1,X,1-0,2024-25_pl1.txt
+17.30,Górnik Zabrze,Piast Gliwice,1,0,1,0-0,2024-25_pl1.txt
+12.15,Korona Kielce,Górnik Zabrze,2,4,2,0-0,2024-25_pl1.txt
+17.30,FKS Stal Mielec,Legia Warszawa,2,2,X,1-1,2024-25_pl1.txt
+19.00,Motor Lublin,Radomiak Radom,1,0,1,1-0,2024-25_pl1.txt
+18.00,Radomiak Radom,GKS Katowice,1,1,X,0-1,2024-25_pl1.txt
+,,FKS Stal Mielec,2,1,1,1-1,2024-25_pl1.txt
+,stochowa,Motor Lublin,2,2,X,1-1,2024-25_pl1.txt
+12.15,Piast Gliwice,KS Cracovia,0,0,X,,2024-25_pl1.txt
+,bie Lubin,Legia Warszawa,0,3,2,0-3,2024-25_pl1.txt
+18.00,GKS Katowice,FKS Stal Mielec,1,0,1,0-0,2024-25_pl1.txt
+,ystok,Radomiak Radom,5,0,1,5-0,2024-25_pl1.txt
+17.30,Legia Warszawa,Korona Kielce,1,1,X,1-1,2024-25_pl1.txt
+,aw,Piast Gliwice,1,3,2,1-2,2024-25_pl1.txt
+,Szczecin,Górnik Zabrze,3,0,1,1-0,2024-25_pl1.txt
+,stochowa,GKS Katowice,1,2,2,0-1,2024-25_pl1.txt
+20.15,Piast Gliwice,Legia Warszawa,1,0,1,1-0,2024-25_pl1.txt
+12.15,Korona Kielce,Motor Lublin,1,0,1,0-0,2024-25_pl1.txt
+,,KS Cracovia,1,1,X,1-1,2024-25_pl1.txt
+18.00,KS Cracovia,Korona Kielce,1,1,X,0-1,2024-25_pl1.txt
+17.30,Górnik Zabrze,Radomiak Radom,3,2,1,2-2,2024-25_pl1.txt
+14.45,GKS Katowice,Piast Gliwice,0,0,X,,2024-25_pl1.txt
+,ystok,Motor Lublin,3,0,1,1-0,2024-25_pl1.txt
+18.00,Piast Gliwice,FKS Stal Mielec,2,2,X,0-1,2024-25_pl1.txt
+,stochowa,Górnik Zabrze,1,0,1,1-0,2024-25_pl1.txt
+20.15,Radomiak Radom,Legia Warszawa,3,1,1,2-1,2024-25_pl1.txt
+19.00,Motor Lublin,GKS Katowice,3,2,1,2-1,2024-25_pl1.txt
+20.30,Górnik Zabrze,KS Cracovia,0,1,2,0-0,2024-25_pl1.txt
+14.45,FKS Stal Mielec,Korona Kielce,0,1,2,0-0,2024-25_pl1.txt
+,bie Lubin,Piast Gliwice,0,1,2,0-1,2024-25_pl1.txt
+,omice,Motor Lublin,0,1,2,0-1,2024-25_pl1.txt
+,ystok,GKS Katowice,1,0,1,1-0,2024-25_pl1.txt
+14.45,KS Cracovia,Radomiak Radom,1,2,2,1-0,2024-25_pl1.txt
+,,FKS Stal Mielec,3,1,1,2-1,2024-25_pl1.txt
+,sk,Górnik Zabrze,1,2,2,1-0,2024-25_pl1.txt
+19.00,Motor Lublin,Legia Warszawa,3,3,X,1-1,2024-25_pl1.txt
+,Szczecin,KS Cracovia,5,2,1,2-2,2024-25_pl1.txt
+17.30,Górnik Zabrze,Motor Lublin,4,0,1,1-0,2024-25_pl1.txt
+,,GKS Katowice,1,0,1,0-0,2024-25_pl1.txt
+,omice,Piast Gliwice,2,1,1,1-0,2024-25_pl1.txt
+,bie Lubin,Korona Kielce,1,1,X,1-0,2024-25_pl1.txt
+,stochowa,Legia Warszawa,3,2,1,2-0,2024-25_pl1.txt
+12.15,Korona Kielce,Radomiak Radom,1,3,2,1-1,2024-25_pl1.txt
+14.45,Motor Lublin,FKS Stal Mielec,4,1,1,1-0,2024-25_pl1.txt
+17.30,GKS Katowice,Górnik Zabrze,2,1,1,1-0,2024-25_pl1.txt
+18.00,FKS Stal Mielec,KS Cracovia,1,1,X,1-0,2024-25_pl1.txt
+,aw,Motor Lublin,1,1,X,1-0,2024-25_pl1.txt
+,,Korona Kielce,2,0,1,1-0,2024-25_pl1.txt
+,ystok,Piast Gliwice,1,1,X,1-0,2024-25_pl1.txt
+14.45,Górnik Zabrze,Legia Warszawa,1,2,2,1-0,2024-25_pl1.txt
+,Szczecin,GKS Katowice,4,0,1,1-0,2024-25_pl1.txt
+,bie Lubin,Górnik Zabrze,2,1,1,0-1,2024-25_pl1.txt
+,stochowa,Radomiak Radom,2,1,1,0-0,2024-25_pl1.txt
+,sk,FKS Stal Mielec,3,2,1,0-2,2024-25_pl1.txt
+12.15,Piast Gliwice,Korona Kielce,1,1,X,0-1,2024-25_pl1.txt
+,aw,GKS Katowice,0,2,2,0-2,2024-25_pl1.txt
+,,Motor Lublin,1,2,2,0-1,2024-25_pl1.txt
+,omice,Radomiak Radom,2,2,X,0-0,2024-25_pl1.txt
+,,KS Cracovia,2,1,1,1-0,2024-25_pl1.txt
+19.00,FKS Stal Mielec,Górnik Zabrze,0,0,X,,2024-25_pl1.txt
+,sk,Piast Gliwice,3,1,1,2-0,2024-25_pl1.txt
+17.30,Motor Lublin,KS Cracovia,0,1,2,0-0,2024-25_pl1.txt
+20.15,GKS Katowice,Legia Warszawa,1,3,2,0-2,2024-25_pl1.txt
+,bie Lubin,FKS Stal Mielec,2,2,X,1-0,2024-25_pl1.txt
+12.15,Piast Gliwice,Radomiak Radom,0,0,X,,2024-25_pl1.txt
+,ystok,Górnik Zabrze,1,1,X,1-1,2024-25_pl1.txt
+19.00,Korona Kielce,GKS Katowice,2,1,1,1-0,2024-25_pl1.txt
+,Szczecin,Motor Lublin,3,0,1,1-0,2024-25_pl1.txt
+,,Legia Warszawa,0,2,2,0-2,2024-25_pl1.txt
+18.00,Motor Lublin,Piast Gliwice,1,4,2,1-2,2024-25_pl1.txt
+,sk,Korona Kielce,3,2,1,2-0,2024-25_pl1.txt
+14.45,GKS Katowice,KS Cracovia,2,1,1,1-1,2024-25_pl1.txt
+,omice,FKS Stal Mielec,2,3,2,0-3,2024-25_pl1.txt
+18.00,FKS Stal Mielec,Radomiak Radom,2,2,X,1-1,2024-25_pl1.txt
+17.30,Piast Gliwice,Górnik Zabrze,2,0,1,1-0,2024-25_pl1.txt
+14.45,KS Cracovia,Legia Warszawa,3,1,1,1-1,2024-25_pl1.txt
+17.30,Górnik Zabrze,Korona Kielce,1,1,X,0-0,2024-25_pl1.txt
+,bie Lubin,KS Cracovia,1,2,2,0-2,2024-25_pl1.txt
+,,Piast Gliwice,1,0,1,1-0,2024-25_pl1.txt
+,sk,GKS Katowice,2,3,2,1-1,2024-25_pl1.txt
+,Legia Warszawa,FKS Stal Mielec,2,2,X,0-0,2024-25_pl1.txt
+,Radomiak Radom,Motor Lublin,2,3,2,0-1,2024-25_pl1.txt
+18.00,Polonia Warszawa,Znicz Pruszków,0,1,2,0-0,2024-25_pl2.txt
+20.30,Odra Opole,Ruch Chorzów,0,2,2,0-1,2024-25_pl2.txt
+19.00,Stal Rzeszow,Arka Gdynia,1,0,1,0-0,2024-25_pl2.txt
+,Legnica,Stal Stalowa Wola,4,2,1,3-0,2024-25_pl2.txt
+,obrzeg,GKS Tychy '71,0,0,X,,2024-25_pl2.txt
+,ogów,Bruk-Bet Termalica Nieciecza,0,4,2,0-0,2024-25_pl2.txt
+,czna,Stal Rzeszow,2,1,1,1-0,2024-25_pl2.txt
+,a Kraków,Polonia Warszawa,0,0,X,,2024-25_pl2.txt
+17.00,Ruch Chorzów,Znicz Pruszków,0,0,X,,2024-25_pl2.txt
+19.35,Polonia Warszawa,Arka Gdynia,0,3,2,0-1,2024-25_pl2.txt
+17.00,Bruk-Bet Termalica Nieciecza,Odra Opole,3,0,1,1-0,2024-25_pl2.txt
+,ogów,GKS Tychy '71,0,0,X,,2024-25_pl2.txt
+20.30,Arka Gdynia,Znicz Pruszków,1,1,X,1-1,2024-25_pl2.txt
+,czna,Polonia Warszawa,3,1,1,1-0,2024-25_pl2.txt
+,,Stal Stalowa Wola,1,0,1,1-0,2024-25_pl2.txt
+,Siedlce,Bruk-Bet Termalica Nieciecza,1,2,2,1-2,2024-25_pl2.txt
+,obrzeg,Stal Rzeszow,1,3,2,0-2,2024-25_pl2.txt
+,a Kraków,Ruch Chorzów,3,1,1,1-0,2024-25_pl2.txt
+19.35,GKS Tychy '71,Odra Opole,0,0,X,,2024-25_pl2.txt
+14.30,Bruk-Bet Termalica Nieciecza,Ruch Chorzów,1,1,X,1-0,2024-25_pl2.txt
+,a Kraków,Arka Gdynia,2,2,X,1-0,2024-25_pl2.txt
+,obrzeg,Polonia Warszawa,1,0,1,1-0,2024-25_pl2.txt
+,ogów,Stal Rzeszow,1,3,2,0-1,2024-25_pl2.txt
+20.30,Odra Opole,Stal Stalowa Wola,2,1,1,0-1,2024-25_pl2.txt
+,Siedlce,GKS Tychy '71,0,1,2,0-1,2024-25_pl2.txt
+,Legnica,Znicz Pruszków,4,0,1,3-0,2024-25_pl2.txt
+19.00,Arka Gdynia,Ruch Chorzów,1,1,X,0-1,2024-25_pl2.txt
+17.00,Stal Rzeszow,Odra Opole,2,2,X,1-1,2024-25_pl2.txt
+19.35,GKS Tychy '71,Bruk-Bet Termalica Nieciecza,0,2,2,0-1,2024-25_pl2.txt
+,ock,Ruch Chorzów,3,2,1,1-1,2024-25_pl2.txt
+,Legnica,Arka Gdynia,1,2,2,1-1,2024-25_pl2.txt
+,ogów,Polonia Warszawa,1,2,2,0-1,2024-25_pl2.txt
+,,Znicz Pruszków,1,1,X,1-1,2024-25_pl2.txt
+,ock,GKS Tychy '71,0,0,X,,2024-25_pl2.txt
+12.00,Bruk-Bet Termalica Nieciecza,Stal Stalowa Wola,3,0,1,1-0,2024-25_pl2.txt
+,Siedlce,Stal Rzeszow,1,1,X,1-1,2024-25_pl2.txt
+17.00,Polonia Warszawa,Odra Opole,3,0,1,2-0,2024-25_pl2.txt
+19.35,Stal Rzeszow,Bruk-Bet Termalica Nieciecza,1,2,2,0-2,2024-25_pl2.txt
+19.00,GKS Tychy '71,Ruch Chorzów,0,1,2,0-1,2024-25_pl2.txt
+,ock,Stal Rzeszow,1,1,X,0-1,2024-25_pl2.txt
+,,Arka Gdynia,0,1,2,0-0,2024-25_pl2.txt
+,Legnica,Ruch Chorzów,3,0,1,0-0,2024-25_pl2.txt
+17.00,GKS Tychy '71,Stal Stalowa Wola,0,0,X,,2024-25_pl2.txt
+,Siedlce,Polonia Warszawa,2,4,2,0-1,2024-25_pl2.txt
+18.00,Odra Opole,Znicz Pruszków,1,1,X,1-0,2024-25_pl2.txt
+,a Kraków,Odra Opole,5,0,1,0-0,2024-25_pl2.txt
+14.30,Polonia Warszawa,Bruk-Bet Termalica Nieciecza,0,1,2,0-0,2024-25_pl2.txt
+19.30,Stal Stalowa Wola,Ruch Chorzów,2,0,1,1-0,2024-25_pl2.txt
+18.00,Stal Rzeszow,GKS Tychy '71,5,1,1,3-1,2024-25_pl2.txt
+14.30,Stal Stalowa Wola,Stal Rzeszow,2,2,X,1-1,2024-25_pl2.txt
+,ock,Polonia Warszawa,4,1,1,1-1,2024-25_pl2.txt
+14.30,Odra Opole,Arka Gdynia,0,6,2,0-3,2024-25_pl2.txt
+19.00,Bruk-Bet Termalica Nieciecza,Znicz Pruszków,1,2,2,1-2,2024-25_pl2.txt
+,czna,Odra Opole,2,2,X,0-2,2024-25_pl2.txt
+,a Kraków,Bruk-Bet Termalica Nieciecza,2,0,1,0-0,2024-25_pl2.txt
+12.00,Polonia Warszawa,GKS Tychy '71,2,1,1,1-1,2024-25_pl2.txt
+,,Stal Stalowa Wola,0,0,X,,2024-25_pl2.txt
+19.00,Stal Rzeszow,Ruch Chorzów,0,2,2,0-2,2024-25_pl2.txt
+19.35,Bruk-Bet Termalica Nieciecza,Arka Gdynia,2,1,1,1-0,2024-25_pl2.txt
+17.00,Stal Stalowa Wola,Polonia Warszawa,1,1,X,0-0,2024-25_pl2.txt
+19.00,GKS Tychy '71,Znicz Pruszków,1,1,X,0-1,2024-25_pl2.txt
+12.00,Znicz Pruszków,Stal Stalowa Wola,0,1,2,0-0,2024-25_pl2.txt
+,obrzeg,Odra Opole,0,1,2,0-1,2024-25_pl2.txt
+,czna,Bruk-Bet Termalica Nieciecza,0,2,2,0-0,2024-25_pl2.txt
+,,Ruch Chorzów,0,1,2,0-0,2024-25_pl2.txt
+17.00,Polonia Warszawa,Stal Rzeszow,1,0,1,0-0,2024-25_pl2.txt
+,a Kraków,GKS Tychy '71,0,0,X,,2024-25_pl2.txt
+,,Polonia Warszawa,0,0,X,,2024-25_pl2.txt
+14.30,GKS Tychy '71,Arka Gdynia,1,1,X,1-1,2024-25_pl2.txt
+17.00,Stal Rzeszow,Znicz Pruszków,2,1,1,1-1,2024-25_pl2.txt
+,obrzeg,Bruk-Bet Termalica Nieciecza,0,5,2,0-2,2024-25_pl2.txt
+,a Kraków,Stal Rzeszow,1,1,X,1-1,2024-25_pl2.txt
+,ogów,Odra Opole,1,1,X,1-1,2024-25_pl2.txt
+,czna,GKS Tychy '71,2,2,X,1-1,2024-25_pl2.txt
+14.30,Polonia Warszawa,Ruch Chorzów,1,0,1,1-0,2024-25_pl2.txt
+17.00,Arka Gdynia,Stal Stalowa Wola,5,1,1,2-1,2024-25_pl2.txt
+18.00,Znicz Pruszków,Polonia Warszawa,2,1,1,2-1,2024-25_pl2.txt
+20.30,Ruch Chorzów,Odra Opole,6,0,1,3-0,2024-25_pl2.txt
+,Legnica,GKS Tychy '71,1,3,2,0-1,2024-25_pl2.txt
+,,Bruk-Bet Termalica Nieciecza,0,1,2,0-0,2024-25_pl2.txt
+,czna,Stal Stalowa Wola,2,0,1,0-0,2024-25_pl2.txt
+19.00,Arka Gdynia,Stal Rzeszow,2,1,1,2-0,2024-25_pl2.txt
+,Siedlce,Odra Opole,0,1,2,0-0,2024-25_pl2.txt
+14.30,Znicz Pruszków,Ruch Chorzów,2,3,2,2-1,2024-25_pl2.txt
+,,Arka Gdynia,0,2,2,0-0,2024-25_pl2.txt
+18.00,Odra Opole,Bruk-Bet Termalica Nieciecza,2,2,X,2-0,2024-25_pl2.txt
+20.45,Arka Gdynia,Polonia Warszawa,0,0,X,,2024-25_pl2.txt
+,obrzeg,Stal Stalowa Wola,1,1,X,0-1,2024-25_pl2.txt
+,a Kraków,Znicz Pruszków,0,1,2,0-1,2024-25_pl2.txt
+,Legnica,Stal Rzeszow,3,3,X,1-0,2024-25_pl2.txt
+,,GKS Tychy '71,1,3,2,0-1,2024-25_pl2.txt
+,Siedlce,Ruch Chorzów,1,1,X,1-1,2024-25_pl2.txt
+19.30,Znicz Pruszków,Arka Gdynia,0,1,2,0-1,2024-25_pl2.txt
+,ock,Odra Opole,2,1,1,1-0,2024-25_pl2.txt
+,,Stal Rzeszow,0,1,2,0-1,2024-25_pl2.txt
+17.00,Odra Opole,GKS Tychy '71,1,5,2,1-3,2024-25_pl2.txt
+,czna,Znicz Pruszków,1,2,2,1-0,2024-25_pl2.txt
+,ogów,Stal Stalowa Wola,2,0,1,0-0,2024-25_pl2.txt
+,Legnica,Polonia Warszawa,2,3,2,1-0,2024-25_pl2.txt
+19.00,Ruch Chorzów,Bruk-Bet Termalica Nieciecza,2,2,X,1-1,2024-25_pl2.txt
+17.30,Stal Stalowa Wola,Odra Opole,0,0,X,,2024-25_pl2.txt
+19.30,Ruch Chorzów,Arka Gdynia,0,1,2,0-0,2024-25_pl2.txt
+,ock,Bruk-Bet Termalica Nieciecza,3,0,1,2-0,2024-25_pl2.txt
+14.30,Bruk-Bet Termalica Nieciecza,GKS Tychy '71,2,1,1,1-1,2024-25_pl2.txt
+,,Polonia Warszawa,1,2,2,0-1,2024-25_pl2.txt
+,Siedlce,Stal Stalowa Wola,0,0,X,,2024-25_pl2.txt
+,czna,Arka Gdynia,0,1,2,0-1,2024-25_pl2.txt
+,obrzeg,Znicz Pruszków,0,0,X,,2024-25_pl2.txt
+18.00,Odra Opole,Stal Rzeszow,3,0,1,1-0,2024-25_pl2.txt
+,czna,Ruch Chorzów,2,0,1,0-0,2024-25_pl2.txt
+,,Odra Opole,1,2,2,1-1,2024-25_pl2.txt
+12.00,Stal Stalowa Wola,Bruk-Bet Termalica Nieciecza,3,3,X,2-1,2024-25_pl2.txt
+,ogów,Znicz Pruszków,3,2,1,2-1,2024-25_pl2.txt
+,obrzeg,Arka Gdynia,0,1,2,0-0,2024-25_pl2.txt
+,ock,Stal Stalowa Wola,2,1,1,0-0,2024-25_pl2.txt
+17.30,Odra Opole,Polonia Warszawa,0,1,2,0-0,2024-25_pl2.txt
+12.00,Bruk-Bet Termalica Nieciecza,Stal Rzeszow,3,1,1,1-0,2024-25_pl2.txt
+14.30,Ruch Chorzów,GKS Tychy '71,0,1,2,0-0,2024-25_pl2.txt
+18.00,Znicz Pruszków,Odra Opole,2,1,1,2-1,2024-25_pl2.txt
+,Stal Stalowa Wola,GKS Tychy '71,0,1,2,0-0,2024-25_pl2.txt
+,,Bruk-Bet Termalica Nieciecza,1,2,2,1-1,2024-25_pl2.txt
+,Siedlce,Znicz Pruszków,2,1,1,1-0,2024-25_pl2.txt
+,ogów,Arka Gdynia,2,2,X,0-1,2024-25_pl2.txt
+17.00,Ruch Chorzów,Stal Stalowa Wola,1,3,2,1-1,2024-25_pl2.txt
+19.00,GKS Tychy '71,Stal Rzeszow,1,0,1,0-0,2024-25_pl2.txt
+,Bruk-Bet Termalica Nieciecza,Polonia Warszawa,0,3,2,0-1,2024-25_pl2.txt
+13.00,Stal Rzeszow,Stal Stalowa Wola,2,2,X,2-1,2024-25_pl2.txt
+15.00,Arka Gdynia,Odra Opole,1,0,1,1-0,2024-25_pl2.txt
+14.30,Znicz Pruszków,Bruk-Bet Termalica Nieciecza,0,1,2,0-0,2024-25_pl2.txt
+,,GKS Tychy '71,1,3,2,0-3,2024-25_pl2.txt
+,obrzeg,Ruch Chorzów,3,4,2,1-1,2024-25_pl2.txt
+17.30,GKS Tychy '71,Polonia Warszawa,1,1,X,1-1,2024-25_pl2.txt
+,Siedlce,Arka Gdynia,1,1,X,0-1,2024-25_pl2.txt
+14.30,Ruch Chorzów,Stal Rzeszow,3,0,1,1-0,2024-25_pl2.txt
+,ock,Znicz Pruszków,2,3,2,1-2,2024-25_pl2.txt
+,,Ruch Chorzów,0,2,2,0-2,2024-25_pl2.txt
+17.30,Polonia Warszawa,Stal Stalowa Wola,2,3,2,1-3,2024-25_pl2.txt
+19.30,Znicz Pruszków,GKS Tychy '71,2,2,X,1-2,2024-25_pl2.txt
+,Legnica,Odra Opole,2,1,1,1-1,2024-25_pl2.txt
+14.30,Arka Gdynia,Bruk-Bet Termalica Nieciecza,2,1,1,2-1,2024-25_pl2.txt
+,,Stal Rzeszow,5,0,1,2-0,2024-25_pl2.txt

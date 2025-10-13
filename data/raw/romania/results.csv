@@ -1,0 +1,370 @@
+time,home_team,away_team,home_score,away_score,result,ht_score,source_file
+,i,UTA Arad,1,1,X,0-1,2023-24_ro1.txt
+,ti,Sepsi OSK,0,0,X,,2023-24_ro1.txt
+,ti,Universitatea Cluj,1,1,X,1-1,2023-24_ro1.txt
+21.30,FC Universitatea Craiova,FCSB,1,3,2,0-2,2023-24_ro1.txt
+,ti,CS Universitatea Craiova,0,2,2,0-0,2023-24_ro1.txt
+18.30,Sepsi OSK,FC Universitatea Craiova,1,0,1,0-0,2023-24_ro1.txt
+21.30,UTA Arad,CFR Cluj,1,3,2,1-2,2023-24_ro1.txt
+,a,FC Voluntari,4,1,1,1-1,2023-24_ro1.txt
+,i,FC Hermannstadt,1,3,2,0-1,2023-24_ro1.txt
+18.30,FC Universitatea Craiova,Universitatea Cluj,3,4,2,0-1,2023-24_ro1.txt
+18.30,FC Hermannstadt,UTA Arad,2,1,1,0-1,2023-24_ro1.txt
+,i,FCSB,0,2,2,0-1,2023-24_ro1.txt
+21.30,CFR Cluj,CS Universitatea Craiova,1,1,X,1-1,2023-24_ro1.txt
+,ti,FC Voluntari,0,2,2,0-0,2023-24_ro1.txt
+,ti,Sepsi OSK,0,3,2,0-1,2023-24_ro1.txt
+21.30,CS Universitatea Craiova,FC Hermannstadt,1,0,1,1-0,2023-24_ro1.txt
+,ani,FC Universitatea Craiova,0,1,2,0-1,2023-24_ro1.txt
+21.30,FCSB,CFR Cluj,1,0,1,0-0,2023-24_ro1.txt
+20.30,FC Universitatea Craiova,FC Voluntari,3,1,1,3-0,2023-24_ro1.txt
+,i,Universitatea Cluj,1,1,X,0-0,2023-24_ro1.txt
+,i,CS Universitatea Craiova,1,4,2,1-0,2023-24_ro1.txt
+20.00,FC Hermannstadt,FCSB,2,2,X,1-1,2023-24_ro1.txt
+20.00,CFR Cluj,Sepsi OSK,3,0,1,1-0,2023-24_ro1.txt
+,a,UTA Arad,2,2,X,1-2,2023-24_ro1.txt
+,ti,FC Universitatea Craiova,4,3,1,2-1,2023-24_ro1.txt
+21.30,CS Universitatea Craiova,UTA Arad,3,0,1,1-0,2023-24_ro1.txt
+18.30,Sepsi OSK,FC Hermannstadt,1,1,X,1-0,2023-24_ro1.txt
+21.30,Universitatea Cluj,CFR Cluj,3,4,2,2-1,2023-24_ro1.txt
+,i,FC Voluntari,2,2,X,2-0,2023-24_ro1.txt
+,a,CS Universitatea Craiova,2,0,1,2-0,2023-24_ro1.txt
+18.30,FC Hermannstadt,Universitatea Cluj,2,2,X,1-2,2023-24_ro1.txt
+21.30,UTA Arad,FCSB,2,1,1,1-1,2023-24_ro1.txt
+,i,Sepsi OSK,1,0,1,0-0,2023-24_ro1.txt
+19.00,FC Voluntari,CFR Cluj,1,4,2,1-2,2023-24_ro1.txt
+21.45,FCSB,CS Universitatea Craiova,3,0,1,3-0,2023-24_ro1.txt
+,ani,FC Hermannstadt,2,2,X,1-2,2023-24_ro1.txt
+21.30,Sepsi OSK,UTA Arad,1,0,1,0-0,2023-24_ro1.txt
+18.30,UTA Arad,Universitatea Cluj,0,1,2,0-0,2023-24_ro1.txt
+,ti,FC Universitatea Craiova,0,1,2,0-0,2023-24_ro1.txt
+21.30,CS Universitatea Craiova,Sepsi OSK,2,1,1,2-1,2023-24_ro1.txt
+17.00,FC Hermannstadt,FC Voluntari,3,1,1,0-1,2023-24_ro1.txt
+,a,FCSB,0,1,2,0-0,2023-24_ro1.txt
+,ani,UTA Arad,2,2,X,1-0,2023-24_ro1.txt
+21.30,Universitatea Cluj,CS Universitatea Craiova,1,1,X,0-1,2023-24_ro1.txt
+,ti,FC Hermannstadt,0,0,X,,2023-24_ro1.txt
+21.00,Sepsi OSK,FCSB,2,5,2,0-2,2023-24_ro1.txt
+,ti,CFR Cluj,3,1,1,1-1,2023-24_ro1.txt
+14.30,UTA Arad,FC Voluntari,0,0,X,,2023-24_ro1.txt
+,a,Sepsi OSK,2,1,1,1-1,2023-24_ro1.txt
+21.00,CFR Cluj,FC Universitatea Craiova,2,0,1,2-0,2023-24_ro1.txt
+21.00,FCSB,Universitatea Cluj,2,2,X,2-1,2023-24_ro1.txt
+18.00,FC Universitatea Craiova,FC Hermannstadt,1,1,X,1-0,2023-24_ro1.txt
+,ti,UTA Arad,0,0,X,,2023-24_ro1.txt
+18.45,FC Voluntari,CS Universitatea Craiova,0,0,X,,2023-24_ro1.txt
+,ani,FCSB,0,1,2,0-1,2023-24_ro1.txt
+,ti,CFR Cluj,1,1,X,1-0,2023-24_ro1.txt
+21.00,Universitatea Cluj,Sepsi OSK,1,0,1,0-0,2023-24_ro1.txt
+,a,Universitatea Cluj,1,1,X,0-1,2023-24_ro1.txt
+,i,FC Universitatea Craiova,1,1,X,1-0,2023-24_ro1.txt
+21.00,FCSB,FC Voluntari,0,0,X,,2023-24_ro1.txt
+17.30,FC Voluntari,Sepsi OSK,0,2,2,0-1,2023-24_ro1.txt
+,i,FC Hermannstadt,1,1,X,0-0,2023-24_ro1.txt
+,ti,FCSB,2,2,X,0-1,2023-24_ro1.txt
+14.00,FC Universitatea Craiova,UTA Arad,2,3,2,1-2,2023-24_ro1.txt
+,ti,CS Universitatea Craiova,2,0,1,1-0,2023-24_ro1.txt
+,ani,Universitatea Cluj,0,3,2,0-2,2023-24_ro1.txt
+21.15,CS Universitatea Craiova,FC Universitatea Craiova,1,1,X,1-0,2023-24_ro1.txt
+15.00,Universitatea Cluj,FC Voluntari,1,2,2,1-1,2023-24_ro1.txt
+21.00,FC Hermannstadt,CFR Cluj,1,0,1,0-0,2023-24_ro1.txt
+,i,CFR Cluj,3,3,X,2-3,2023-24_ro1.txt
+,a,FC Hermannstadt,1,1,X,1-0,2023-24_ro1.txt
+,ani,FC Voluntari,3,3,X,2-1,2023-24_ro1.txt
+21.00,FCSB,FC Universitatea Craiova,2,1,1,2-0,2023-24_ro1.txt
+20.30,CFR Cluj,UTA Arad,0,0,X,,2023-24_ro1.txt
+,i,CS Universitatea Craiova,1,3,2,1-0,2023-24_ro1.txt
+,ti,FCSB,0,1,2,0-0,2023-24_ro1.txt
+17.30,FC Universitatea Craiova,Sepsi OSK,2,1,1,1-1,2023-24_ro1.txt
+,ti,Universitatea Cluj,2,3,2,2-1,2023-24_ro1.txt
+14.00,UTA Arad,FC Hermannstadt,2,0,1,0-0,2023-24_ro1.txt
+20.30,CS Universitatea Craiova,CFR Cluj,1,0,1,0-0,2023-24_ro1.txt
+16.00,Universitatea Cluj,FC Universitatea Craiova,2,1,1,1-1,2023-24_ro1.txt
+,i,UTA Arad,1,0,1,0-0,2023-24_ro1.txt
+,ti,FC Voluntari,1,2,2,0-0,2023-24_ro1.txt
+14.00,FC Hermannstadt,CS Universitatea Craiova,2,1,1,0-0,2023-24_ro1.txt
+20.00,CFR Cluj,FCSB,1,1,X,1-1,2023-24_ro1.txt
+,ti,Universitatea Cluj,0,1,2,0-1,2023-24_ro1.txt
+,i,Sepsi OSK,2,3,2,1-1,2023-24_ro1.txt
+17.00,FC Voluntari,FC Universitatea Craiova,0,1,2,0-1,2023-24_ro1.txt
+20.00,FCSB,FC Hermannstadt,3,0,1,2-0,2023-24_ro1.txt
+21.00,Sepsi OSK,CFR Cluj,2,1,1,0-1,2023-24_ro1.txt
+,i,FCSB,1,3,2,1-2,2023-24_ro1.txt
+17.30,UTA Arad,CS Universitatea Craiova,2,2,X,2-1,2023-24_ro1.txt
+17.00,FC Hermannstadt,Sepsi OSK,1,1,X,1-0,2023-24_ro1.txt
+19.45,CFR Cluj,Universitatea Cluj,4,0,1,2-0,2023-24_ro1.txt
+,ti,FC Voluntari,1,0,1,0-0,2023-24_ro1.txt
+,ti,FC Universitatea Craiova,4,3,1,1-1,2023-24_ro1.txt
+17.00,Universitatea Cluj,FC Hermannstadt,2,1,1,0-0,2023-24_ro1.txt
+,ani,CFR Cluj,1,0,1,0-0,2023-24_ro1.txt
+20.00,FCSB,UTA Arad,4,0,1,2-0,2023-24_ro1.txt
+,a,FC Universitatea Craiova,1,0,1,1-0,2023-24_ro1.txt
+14.00,UTA Arad,Sepsi OSK,2,1,1,1-0,2023-24_ro1.txt
+,i,Universitatea Cluj,1,0,1,0-0,2023-24_ro1.txt
+20.00,CS Universitatea Craiova,FCSB,0,3,2,0-1,2023-24_ro1.txt
+20.00,CFR Cluj,FC Voluntari,4,1,1,1-1,2023-24_ro1.txt
+,ti,CFR Cluj,1,2,2,1-0,2023-24_ro1.txt
+13.00,Universitatea Cluj,UTA Arad,1,3,2,1-2,2023-24_ro1.txt
+15.30,Sepsi OSK,CS Universitatea Craiova,1,3,2,1-1,2023-24_ro1.txt
+17.00,FC Voluntari,FC Hermannstadt,1,1,X,0-1,2023-24_ro1.txt
+,i,FC Universitatea Craiova,1,0,1,0-0,2023-24_ro1.txt
+20.00,CS Universitatea Craiova,Universitatea Cluj,2,2,X,2-0,2023-24_ro1.txt
+,i,FC Voluntari,0,0,X,,2023-24_ro1.txt
+20.45,FCSB,Sepsi OSK,1,0,1,1-0,2023-24_ro1.txt
+,ti,FC Hermannstadt,2,0,1,0-0,2023-24_ro1.txt
+14.00,FC Voluntari,UTA Arad,0,1,2,0-0,2023-24_ro1.txt
+21.30,FC Universitatea Craiova,CFR Cluj,1,3,2,1-2,2023-24_ro1.txt
+,ani,CS Universitatea Craiova,2,2,X,2-0,2023-24_ro1.txt
+20.30,Universitatea Cluj,FCSB,0,0,X,,2023-24_ro1.txt
+17.00,FC Hermannstadt,FC Universitatea Craiova,1,0,1,0-0,2023-24_ro1.txt
+14.00,Sepsi OSK,Universitatea Cluj,0,0,X,,2023-24_ro1.txt
+20.00,CS Universitatea Craiova,FC Voluntari,2,1,1,1-0,2023-24_ro1.txt
+,ti,FC Hermannstadt,1,0,1,1-0,2023-24_ro1.txt
+,i,CFR Cluj,2,2,X,1-1,2023-24_ro1.txt
+,ti,UTA Arad,4,1,1,2-1,2023-24_ro1.txt
+,ani,Sepsi OSK,1,2,2,0-2,2023-24_ro1.txt
+,ti,CS Universitatea Craiova,2,3,2,1-2,2023-24_ro1.txt
+21.00,FC Voluntari,FCSB,1,2,2,1-0,2023-24_ro1.txt
+14.00,UTA Arad,FC Universitatea Craiova,3,2,1,2-2,2023-24_ro1.txt
+,a,CFR Cluj,1,1,X,0-0,2023-24_ro1.txt
+17.00,Sepsi OSK,FC Voluntari,4,0,1,1-0,2023-24_ro1.txt
+20.00,CFR Cluj,FC Hermannstadt,1,0,1,0-0,2023-24_ro1.txt
+,ti,UTA Arad,1,0,1,1-0,2023-24_ro1.txt
+,ti,Sepsi OSK,1,2,2,0-1,2023-24_ro1.txt
+,FC Voluntari,Universitatea Cluj,0,0,X,,2023-24_ro1.txt
+,ti,FCSB,4,0,1,1-0,2023-24_ro1.txt
+20.45,FC Universitatea Craiova,CS Universitatea Craiova,1,2,2,1-0,2023-24_ro1.txt
+20.00,CFR Cluj,CS Universitatea Craiova,1,2,2,0-1,2023-24_ro1.txt
+21.00,FCSB,Sepsi OSK,2,1,1,2-1,2023-24_ro1.txt
+20.30,Sepsi OSK,CFR Cluj,1,1,X,1-1,2023-24_ro1.txt
+,a,FCSB,0,1,2,0-0,2023-24_ro1.txt
+,ti,CFR Cluj,1,4,2,0-4,2023-24_ro1.txt
+20.30,FCSB,CS Universitatea Craiova,2,0,1,2-0,2023-24_ro1.txt
+21.00,CFR Cluj,FCSB,0,1,2,0-1,2023-24_ro1.txt
+,ti,Sepsi OSK,0,1,2,0-0,2023-24_ro1.txt
+,a,CFR Cluj,5,1,1,2-0,2023-24_ro1.txt
+19.00,Sepsi OSK,CS Universitatea Craiova,1,3,2,1-2,2023-24_ro1.txt
+21.45,Sepsi OSK,FCSB,2,2,X,1-2,2023-24_ro1.txt
+21.45,CS Universitatea Craiova,CFR Cluj,0,1,2,0-0,2023-24_ro1.txt
+21.00,CFR Cluj,Sepsi OSK,2,1,1,1-1,2023-24_ro1.txt
+,ti,CS Universitatea Craiova,1,2,2,0-1,2023-24_ro1.txt
+,a,Sepsi OSK,1,4,2,0-3,2023-24_ro1.txt
+21.00,CS Universitatea Craiova,FCSB,2,0,1,1-0,2023-24_ro1.txt
+20.00,FCSB,CFR Cluj,0,1,2,0-0,2023-24_ro1.txt
+,a,CS Universitatea Craiova,3,3,X,1-0,2023-24_ro1.txt
+,CS Universitatea Craiova,Sepsi OSK,3,2,1,0-1,2023-24_ro1.txt
+,ti,FCSB,2,0,1,2-0,2023-24_ro1.txt
+,i,Universitatea Cluj,0,2,2,0-0,2023-24_ro1.txt
+20.00,CS Universitatea Craiova,Universitatea Cluj,5,4,1,,2023-24_ro1.txt
+17.30,UTA Arad,FC Voluntari,4,3,1,1-2,2023-24_ro1.txt
+,ti,FC Universitatea Craiova,1,0,1,0-0,2023-24_ro1.txt
+17.30,FC Voluntari,FC Hermannstadt,1,0,1,0-0,2023-24_ro1.txt
+18.00,Universitatea Cluj,UTA Arad,0,0,X,,2023-24_ro1.txt
+,ti,FC Voluntari,0,4,2,0-3,2023-24_ro1.txt
+14.30,FC Hermannstadt,Universitatea Cluj,1,1,X,1-0,2023-24_ro1.txt
+,i,FC Universitatea Craiova,0,0,X,,2023-24_ro1.txt
+17.30,UTA Arad,FC Hermannstadt,1,3,2,0-1,2023-24_ro1.txt
+,ani,FC Universitatea Craiova,4,1,1,0-1,2023-24_ro1.txt
+,i,FC Voluntari,3,1,1,1-0,2023-24_ro1.txt
+,i,Universitatea Cluj,1,0,1,1-0,2023-24_ro1.txt
+,ti,UTA Arad,1,1,X,1-0,2023-24_ro1.txt
+17.00,FC Voluntari,FC Universitatea Craiova,0,0,X,,2023-24_ro1.txt
+,ti,FC Voluntari,1,1,X,1-1,2023-24_ro1.txt
+17.30,FC Universitatea Craiova,Universitatea Cluj,3,2,1,1-1,2023-24_ro1.txt
+,i,FC Hermannstadt,1,0,1,1-0,2023-24_ro1.txt
+,i,UTA Arad,0,2,2,0-0,2023-24_ro1.txt
+,ani,FC Voluntari,0,0,X,,2023-24_ro1.txt
+18.00,UTA Arad,FC Universitatea Craiova,3,1,1,2-0,2023-24_ro1.txt
+,FC Universitatea Craiova,FC Hermannstadt,1,3,2,0-0,2023-24_ro1.txt
+,ti,UTA Arad,2,0,1,2-0,2023-24_ro1.txt
+,FC Voluntari,Universitatea Cluj,0,1,2,0-1,2023-24_ro1.txt
+,a,Unirea Slobozia,0,1,2,0-1,2024-25_ro1.txt
+21.30,FC Hermannstadt,CS Universitatea Craiova,0,0,X,,2024-25_ro1.txt
+22.00,FCSB,Universitatea Cluj,1,1,X,0-0,2024-25_ro1.txt
+22.00,Unirea Slobozia,FCSB,2,2,X,1-1,2024-25_ro1.txt
+19.00,CS Universitatea Craiova,UTA Arad,4,2,1,1-1,2024-25_ro1.txt
+,ti,CFR Cluj,2,2,X,0-1,2024-25_ro1.txt
+19.00,Universitatea Cluj,FC Hermannstadt,3,1,1,3-1,2024-25_ro1.txt
+,u,Sepsi OSK,1,2,2,0-2,2024-25_ro1.txt
+19.00,FC Hermannstadt,Unirea Slobozia,1,1,X,1-1,2024-25_ro1.txt
+22.00,CFR Cluj,CS Universitatea Craiova,0,2,2,0-0,2024-25_ro1.txt
+19.00,UTA Arad,Universitatea Cluj,0,0,X,,2024-25_ro1.txt
+,i,FC Hermannstadt,1,0,1,0-0,2024-25_ro1.txt
+22.00,CFR Cluj,Universitatea Cluj,2,3,2,1-0,2024-25_ro1.txt
+19.00,Unirea Slobozia,UTA Arad,0,1,2,0-0,2024-25_ro1.txt
+,ti,Sepsi OSK,2,2,X,2-1,2024-25_ro1.txt
+,ani,FCSB,1,0,1,0-0,2024-25_ro1.txt
+19.00,Sepsi OSK,CS Universitatea Craiova,1,2,2,0-1,2024-25_ro1.txt
+22.00,CFR Cluj,Unirea Slobozia,3,0,1,1-0,2024-25_ro1.txt
+,ti,Universitatea Cluj,0,0,X,,2024-25_ro1.txt
+,ani,UTA Arad,1,0,1,0-0,2024-25_ro1.txt
+19.00,Universitatea Cluj,Sepsi OSK,3,0,1,1-0,2024-25_ro1.txt
+,a,FC Hermannstadt,3,2,1,1-0,2024-25_ro1.txt
+,i,CFR Cluj,0,1,2,0-1,2024-25_ro1.txt
+19.00,Sepsi OSK,Unirea Slobozia,0,1,2,0-0,2024-25_ro1.txt
+,ti,CS Universitatea Craiova,2,1,1,2-1,2024-25_ro1.txt
+22.00,FC Hermannstadt,FCSB,2,0,1,0-0,2024-25_ro1.txt
+,u,Universitatea Cluj,0,2,2,0-2,2024-25_ro1.txt
+,i,Sepsi OSK,2,0,1,2-0,2024-25_ro1.txt
+,a,CFR Cluj,0,3,2,0-1,2024-25_ro1.txt
+21.30,FCSB,UTA Arad,2,0,1,1-0,2024-25_ro1.txt
+,ti,Unirea Slobozia,1,0,1,1-0,2024-25_ro1.txt
+,i,CS Universitatea Craiova,2,0,1,1-0,2024-25_ro1.txt
+21.00,CFR Cluj,FCSB,2,2,X,1-0,2024-25_ro1.txt
+18.00,UTA Arad,FC Hermannstadt,1,1,X,0-0,2024-25_ro1.txt
+,ti,Universitatea Cluj,0,2,2,0-1,2024-25_ro1.txt
+18.30,FC Hermannstadt,CFR Cluj,0,0,X,,2024-25_ro1.txt
+,a,Sepsi OSK,2,1,1,1-0,2024-25_ro1.txt
+21.30,Universitatea Cluj,CS Universitatea Craiova,1,1,X,1-0,2024-25_ro1.txt
+,ti,FC Hermannstadt,4,1,1,3-0,2024-25_ro1.txt
+,i,Universitatea Cluj,1,0,1,0-0,2024-25_ro1.txt
+19.00,CFR Cluj,UTA Arad,1,3,2,0-1,2024-25_ro1.txt
+21.30,Sepsi OSK,FCSB,0,1,2,0-1,2024-25_ro1.txt
+21.00,CS Universitatea Craiova,Unirea Slobozia,3,0,1,2-0,2024-25_ro1.txt
+16.45,Unirea Slobozia,Universitatea Cluj,2,2,X,2-0,2024-25_ro1.txt
+,i,CS Universitatea Craiova,1,1,X,1-1,2024-25_ro1.txt
+13.30,FC Hermannstadt,Sepsi OSK,0,4,2,0-2,2024-25_ro1.txt
+,u,FC Hermannstadt,3,0,1,1-0,2024-25_ro1.txt
+18.15,Sepsi OSK,UTA Arad,1,0,1,1-0,2024-25_ro1.txt
+,ti,CFR Cluj,0,0,X,,2024-25_ro1.txt
+,ti,FCSB,0,2,2,0-1,2024-25_ro1.txt
+,i,Unirea Slobozia,1,0,1,1-0,2024-25_ro1.txt
+21.00,CFR Cluj,Sepsi OSK,3,3,X,0-1,2024-25_ro1.txt
+,i,Unirea Slobozia,0,2,2,0-0,2024-25_ro1.txt
+,ani,Universitatea Cluj,1,2,2,1-1,2024-25_ro1.txt
+,a,CS Universitatea Craiova,3,2,1,2-0,2024-25_ro1.txt
+,u,CFR Cluj,0,1,2,0-0,2024-25_ro1.txt
+,ti,UTA Arad,1,0,1,1-0,2024-25_ro1.txt
+21.00,CS Universitatea Craiova,FCSB,1,1,X,0-1,2024-25_ro1.txt
+,ti,FC Hermannstadt,1,0,1,1-0,2024-25_ro1.txt
+,ti,CFR Cluj,1,1,X,1-1,2024-25_ro1.txt
+,i,Sepsi OSK,1,2,2,1-1,2024-25_ro1.txt
+18.15,CS Universitatea Craiova,FC Hermannstadt,3,1,1,1-1,2024-25_ro1.txt
+,ti,UTA Arad,2,0,1,0-0,2024-25_ro1.txt
+21.00,Universitatea Cluj,FCSB,1,2,2,0-1,2024-25_ro1.txt
+17.00,FC Hermannstadt,Universitatea Cluj,2,1,1,1-0,2024-25_ro1.txt
+18.15,FCSB,Unirea Slobozia,3,0,1,2-0,2024-25_ro1.txt
+20.30,UTA Arad,CS Universitatea Craiova,1,2,2,1-0,2024-25_ro1.txt
+15.00,Unirea Slobozia,FC Hermannstadt,1,2,2,1-0,2024-25_ro1.txt
+,ti,Sepsi OSK,1,1,X,1-0,2024-25_ro1.txt
+20.30,CS Universitatea Craiova,CFR Cluj,0,2,2,0-1,2024-25_ro1.txt
+17.30,Universitatea Cluj,UTA Arad,0,1,2,0-1,2024-25_ro1.txt
+,i,FCSB,1,4,2,0-2,2024-25_ro1.txt
+,ti,CS Universitatea Craiova,1,1,X,1-0,2024-25_ro1.txt
+13.30,UTA Arad,Unirea Slobozia,3,4,2,1-1,2024-25_ro1.txt
+20.30,Universitatea Cluj,CFR Cluj,3,2,1,0-1,2024-25_ro1.txt
+,ani,FC Hermannstadt,1,2,2,1-1,2024-25_ro1.txt
+,i,UTA Arad,1,1,X,0-1,2024-25_ro1.txt
+17.00,CS Universitatea Craiova,Sepsi OSK,2,1,1,1-1,2024-25_ro1.txt
+16.00,Unirea Slobozia,CFR Cluj,1,1,X,1-0,2024-25_ro1.txt
+,a,FCSB,1,1,X,0-1,2024-25_ro1.txt
+19.00,Sepsi OSK,Universitatea Cluj,0,0,X,,2024-25_ro1.txt
+,u,CS Universitatea Craiova,0,2,2,0-1,2024-25_ro1.txt
+,ti,Unirea Slobozia,2,1,1,1-1,2024-25_ro1.txt
+,i,FCSB,0,2,2,0-1,2024-25_ro1.txt
+17.00,Unirea Slobozia,Sepsi OSK,3,2,1,2-0,2024-25_ro1.txt
+20.00,FCSB,FC Hermannstadt,1,1,X,0-1,2024-25_ro1.txt
+,ani,CFR Cluj,1,1,X,0-1,2024-25_ro1.txt
+,a,UTA Arad,1,1,X,0-0,2024-25_ro1.txt
+,u,Unirea Slobozia,3,0,1,0-0,2024-25_ro1.txt
+,ti,Universitatea Cluj,0,0,X,,2024-25_ro1.txt
+,i,FC Hermannstadt,0,2,2,0-0,2024-25_ro1.txt
+,ti,CS Universitatea Craiova,1,0,1,1-0,2024-25_ro1.txt
+20.00,UTA Arad,FCSB,0,1,2,0-0,2024-25_ro1.txt
+17.00,FC Hermannstadt,UTA Arad,0,0,X,,2024-25_ro1.txt
+,ani,Sepsi OSK,0,0,X,,2024-25_ro1.txt
+20.00,FCSB,CFR Cluj,1,1,X,0-0,2024-25_ro1.txt
+,ti,Unirea Slobozia,2,1,1,1-1,2024-25_ro1.txt
+18.00,CFR Cluj,FC Hermannstadt,1,0,1,1-0,2024-25_ro1.txt
+20.30,CS Universitatea Craiova,Universitatea Cluj,1,0,1,1-0,2024-25_ro1.txt
+,i,UTA Arad,0,1,2,0-0,2024-25_ro1.txt
+,ti,FCSB,0,0,X,,2024-25_ro1.txt
+16.00,Unirea Slobozia,CS Universitatea Craiova,0,1,2,0-0,2024-25_ro1.txt
+20.00,FCSB,Sepsi OSK,3,0,1,3-0,2024-25_ro1.txt
+20.00,UTA Arad,CFR Cluj,1,4,2,0-0,2024-25_ro1.txt
+17.00,Sepsi OSK,FC Hermannstadt,2,3,2,0-0,2024-25_ro1.txt
+,ti,UTA Arad,0,1,2,0-1,2024-25_ro1.txt
+,i,CFR Cluj,1,1,X,0-1,2024-25_ro1.txt
+,u,FCSB,0,2,2,0-0,2024-25_ro1.txt
+17.00,Universitatea Cluj,Unirea Slobozia,3,2,1,1-2,2024-25_ro1.txt
+,i,Universitatea Cluj,0,1,2,0-1,2024-25_ro1.txt
+,ani,CS Universitatea Craiova,2,2,X,1-1,2024-25_ro1.txt
+17.00,UTA Arad,Sepsi OSK,1,2,2,0-1,2024-25_ro1.txt
+20.00,Sepsi OSK,CFR Cluj,1,1,X,1-0,2024-25_ro1.txt
+,ti,FCSB,0,0,X,,2024-25_ro1.txt
+,u,UTA Arad,1,1,X,0-0,2024-25_ro1.txt
+,ti,FC Hermannstadt,2,0,1,0-0,2024-25_ro1.txt
+,a,Universitatea Cluj,1,1,X,0-1,2024-25_ro1.txt
+,ti,Sepsi OSK,1,0,1,0-0,2024-25_ro1.txt
+20.00,FCSB,CS Universitatea Craiova,1,0,1,1-0,2024-25_ro1.txt
+,ani,Unirea Slobozia,1,0,1,1-0,2024-25_ro1.txt
+20.00,CS Universitatea Craiova,Universitatea Cluj,3,0,1,1-0,2024-25_ro1.txt
+,ti,CS Universitatea Craiova,1,2,2,0-1,2024-25_ro1.txt
+,ti,FCSB,1,2,2,1-1,2024-25_ro1.txt
+20.30,Universitatea Cluj,CFR Cluj,1,0,1,1-0,2024-25_ro1.txt
+21.15,FCSB,Universitatea Cluj,1,0,1,0-0,2024-25_ro1.txt
+20.30,CFR Cluj,CS Universitatea Craiova,2,0,1,2-0,2024-25_ro1.txt
+21.00,CS Universitatea Craiova,FCSB,0,0,X,,2024-25_ro1.txt
+,ti,Universitatea Cluj,0,2,2,0-1,2024-25_ro1.txt
+20.00,FCSB,CFR Cluj,3,2,1,1-0,2024-25_ro1.txt
+,ti,CS Universitatea Craiova,0,2,2,0-0,2024-25_ro1.txt
+20.00,Universitatea Cluj,CS Universitatea Craiova,2,1,1,0-1,2024-25_ro1.txt
+,ti,FCSB,1,2,2,0-2,2024-25_ro1.txt
+,ti,CFR Cluj,1,1,X,0-0,2024-25_ro1.txt
+21.00,CFR Cluj,Universitatea Cluj,1,0,1,1-0,2024-25_ro1.txt
+20.30,CS Universitatea Craiova,CFR Cluj,2,2,X,0-0,2024-25_ro1.txt
+20.30,Universitatea Cluj,FCSB,0,2,2,0-0,2024-25_ro1.txt
+,ti,Universitatea Cluj,1,3,2,1-0,2024-25_ro1.txt
+20.00,FCSB,CS Universitatea Craiova,1,0,1,1-0,2024-25_ro1.txt
+,ti,CFR Cluj,1,4,2,0-3,2024-25_ro1.txt
+20.30,CFR Cluj,FCSB,1,1,X,0-1,2024-25_ro1.txt
+13.00,FC Hermannstadt,Unirea Slobozia,1,1,X,0-0,2024-25_ro1.txt
+20.30,Sepsi OSK,FC Hermannstadt,0,2,2,0-2,2024-25_ro1.txt
+,i,UTA Arad,4,0,1,3-0,2024-25_ro1.txt
+,ti,Sepsi OSK,2,1,1,2-1,2024-25_ro1.txt
+,a,Unirea Slobozia,1,1,X,1-0,2024-25_ro1.txt
+18.15,Unirea Slobozia,UTA Arad,2,1,1,0-0,2024-25_ro1.txt
+,i,Unirea Slobozia,2,0,1,1-0,2024-25_ro1.txt
+20.00,UTA Arad,Sepsi OSK,1,1,X,1-1,2024-25_ro1.txt
+,a,FC Hermannstadt,1,1,X,0-1,2024-25_ro1.txt
+17.00,FC Hermannstadt,UTA Arad,3,0,1,2-0,2024-25_ro1.txt
+,i,Sepsi OSK,0,0,X,,2024-25_ro1.txt
+,ani,Unirea Slobozia,1,1,X,0-0,2024-25_ro1.txt
+,i,FC Hermannstadt,1,2,2,1-0,2024-25_ro1.txt
+,u,Unirea Slobozia,0,3,2,0-1,2024-25_ro1.txt
+,a,UTA Arad,1,2,2,0-1,2024-25_ro1.txt
+,ani,FC Hermannstadt,2,1,1,0-0,2024-25_ro1.txt
+,Unirea Slobozia,Sepsi OSK,2,1,1,1-0,2024-25_ro1.txt
+17.30,Minaur Baia Mare,CSM Râmnicu-Vâlcea,2,3,2,0-2,2024-25_rocup.txt
+,CS Sanatatea Cluj,AFC Câmpulung Muscel,2,1,1,0-0,2024-25_rocup.txt
+,ani,FC Hermannstadt,0,3,2,0-1,2024-25_rocup.txt
+,FC Unirea Alba Iulia,FC Universitatea Craiova,5,4,1,,2024-25_rocup.txt
+,Agricola Borcea,CSM Slatina,4,3,1,,2024-25_rocup.txt
+,ti-Leordeni,Unirea Ungheni,0,2,2,0-1,2024-25_rocup.txt
+,u,Universitatea Cluj,1,0,1,0-0,2024-25_rocup.txt
+,FK Csikszereda,Unirea Slobozia,1,0,1,0-0,2024-25_rocup.txt
+,ti,FC Corvinul Hunedoara,2,0,1,2-0,2024-25_rocup.txt
+,ti,CFR Cluj,2,2,X,1-2,2024-25_rocup.txt
+,ul Piatra Neamt,CFR Cluj,1,2,2,0-1,2024-25_rocup.txt
+,ti,CFR Cluj,0,2,2,0-1,2024-25_rocup.txt
+,ti,FCSB,0,4,2,0-0,2024-25_rocup.txt
+,u,CS Universitatea Craiova,1,0,1,0-0,2024-25_rocup.txt
+,ti,CS Universitatea Craiova,0,2,2,0-0,2024-25_rocup.txt
+20.30,Agricola Borcea,FCSB,1,2,2,0-2,2024-25_rocup.txt
+20.00,FCSB,CS Universitatea Craiova,0,2,2,0-1,2024-25_rocup.txt
+,i,UTA Arad,1,1,X,1-0,2024-25_rocup.txt
+15.00,Unirea Ungheni,FC Hermannstadt,1,2,2,0-1,2024-25_rocup.txt
+14.00,Unirea Ungheni,UTA Arad,1,1,X,0-1,2024-25_rocup.txt
+,CS Sanatatea Cluj,Unirea Ungheni,1,1,X,0-1,2024-25_rocup.txt
+,i,FC Hermannstadt,0,0,X,,2024-25_rocup.txt
+15.45,FC Unirea Alba Iulia,Sepsi OSK,1,0,1,0-0,2024-25_rocup.txt
+,a,Sepsi OSK,3,1,1,1-0,2024-25_rocup.txt
+17.00,FC Unirea Alba Iulia,FK Csikszereda,0,0,X,,2024-25_rocup.txt
+,i,Sepsi OSK,0,0,X,,2024-25_rocup.txt
+,a,FK Csikszereda,0,0,X,,2024-25_rocup.txt
+,FC Unirea Alba Iulia,CSM Râmnicu-Vâlcea,3,1,1,2-0,2024-25_rocup.txt
+,a,FC Unirea Alba Iulia,1,0,1,1-0,2024-25_rocup.txt
+,i,FC Hermannstadt,0,1,2,,2024-25_rocup.txt
+,a,FC Unirea Alba Iulia,3,0,1,1-0,2024-25_rocup.txt
+,a,FC Hermannstadt,0,4,2,0-3,2024-25_rocup.txt
+20.00,CFR Cluj,CS Universitatea Craiova,5,3,1,,2024-25_rocup.txt

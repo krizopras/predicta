@@ -1,0 +1,4 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Fiji,Solomon Islands,1,0,1,Suva,Fiji,2024_tri-nations_series.txt
+Fiji,Hong Kong,1,1,X,Suva,Fiji,2024_tri-nations_series.txt
+Hong Kong,Solomon Islands,3,0,1,Suva,Fiji,2024_tri-nations_series.txt

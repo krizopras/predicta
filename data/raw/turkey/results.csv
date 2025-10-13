@@ -1,0 +1,1763 @@
+time,home_team,away_team,home_score,away_score,result,ht_score,source_file
+21.45,MKE Ankaragücü,Galatasaray,1,3,2,1-2,2018-19_tr1.txt
+,Sivasspor,Alanyaspor,1,0,1,0-0,2018-19_tr1.txt
+21.45,Fenerbahçe,Bursaspor,2,1,1,2-1,2018-19_tr1.txt
+,ehir,Trabzonspor,2,0,1,1-0,2018-19_tr1.txt
+,Atiker Konyaspor,BB Erzurumspor,3,2,1,2-1,2018-19_tr1.txt
+,,Akhisar Belediyespor,2,1,1,2-0,2018-19_tr1.txt
+,Göztepe,Yeni Malatyaspor,1,3,2,0-1,2018-19_tr1.txt
+21.45,Kayserispor,Antalyaspor,2,0,1,1-0,2018-19_tr1.txt
+21.45,Trabzonspor,Sivasspor,3,1,1,3-1,2018-19_tr1.txt
+19.15,Bursaspor,Kayserispor,0,0,X,,2018-19_tr1.txt
+21.45,Antalyaspor,Atiker Konyaspor,3,3,X,1-2,2018-19_tr1.txt
+,Yeni Malatyaspor,Fenerbahçe,1,0,1,0-0,2018-19_tr1.txt
+,Akhisar Belediyespor,Çaykur Rizespor,1,1,X,0-1,2018-19_tr1.txt
+21.45,Alanyaspor,MKE Ankaragücü,0,2,2,0-0,2018-19_tr1.txt
+,Galatasaray,Göztepe,1,0,1,1-0,2018-19_tr1.txt
+19.15,Çaykur Rizespor,BB Erzurumspor,0,0,X,,2018-19_tr1.txt
+19.15,MKE Ankaragücü,Trabzonspor,2,2,X,1-1,2018-19_tr1.txt
+21.45,Göztepe,Fenerbahçe,1,0,1,0-0,2018-19_tr1.txt
+,Kayserispor,Yeni Malatyaspor,0,0,X,,2018-19_tr1.txt
+,,Antalyaspor,2,3,2,1-3,2018-19_tr1.txt
+,Atiker Konyaspor,Bursaspor,1,1,X,1-1,2018-19_tr1.txt
+,ehir,Akhisar Belediyespor,3,1,1,1-1,2018-19_tr1.txt
+21.45,Galatasaray,Alanyaspor,6,0,1,1-0,2018-19_tr1.txt
+21.45,Yeni Malatyaspor,Atiker Konyaspor,0,1,2,0-1,2018-19_tr1.txt
+19.15,Fenerbahçe,Kayserispor,2,3,2,1-0,2018-19_tr1.txt
+,Akhisar Belediyespor,Sivasspor,1,1,X,0-0,2018-19_tr1.txt
+21.45,Trabzonspor,Galatasaray,4,0,1,3-0,2018-19_tr1.txt
+,Alanyaspor,Göztepe,1,0,1,0-0,2018-19_tr1.txt
+,a SK,MKE Ankaragücü,2,1,1,1-0,2018-19_tr1.txt
+21.45,Antalyaspor,Çaykur Rizespor,2,1,1,0-1,2018-19_tr1.txt
+17.00,MKE Ankaragücü,Akhisar Belediyespor,1,0,1,1-0,2018-19_tr1.txt
+20.00,Göztepe,Kayserispor,2,0,1,2-0,2018-19_tr1.txt
+,,Yeni Malatyaspor,2,1,1,0-0,2018-19_tr1.txt
+17.00,Sivasspor,BB Erzurumspor,2,2,X,1-1,2018-19_tr1.txt
+,ehir,Antalyaspor,4,0,1,1-0,2018-19_tr1.txt
+20.00,Çaykur Rizespor,Bursaspor,1,1,X,0-1,2018-19_tr1.txt
+,Atiker Konyaspor,Fenerbahçe,0,1,2,0-0,2018-19_tr1.txt
+20.00,Alanyaspor,Trabzonspor,1,0,1,1-0,2018-19_tr1.txt
+20.00,BB Erzurumspor,MKE Ankaragücü,0,1,2,0-0,2018-19_tr1.txt
+13.30,Yeni Malatyaspor,Çaykur Rizespor,1,0,1,1-0,2018-19_tr1.txt
+16.00,Kayserispor,Atiker Konyaspor,0,2,2,0-2,2018-19_tr1.txt
+19.00,Trabzonspor,Göztepe,1,2,2,0-2,2018-19_tr1.txt
+,a SK,Alanyaspor,1,2,2,0-1,2018-19_tr1.txt
+19.00,Antalyaspor,Sivasspor,2,1,1,2-1,2018-19_tr1.txt
+,Akhisar Belediyespor,Galatasaray,3,0,1,0-0,2018-19_tr1.txt
+20.00,Galatasaray,BB Erzurumspor,1,0,1,0-0,2018-19_tr1.txt
+,Alanyaspor,Akhisar Belediyespor,2,1,1,1-0,2018-19_tr1.txt
+,,Kayserispor,2,0,1,1-0,2018-19_tr1.txt
+13.30,Sivasspor,Bursaspor,2,0,1,1-0,2018-19_tr1.txt
+16.00,Göztepe,Atiker Konyaspor,3,2,1,2-0,2018-19_tr1.txt
+19.00,Çaykur Rizespor,Fenerbahçe,3,0,1,3-0,2018-19_tr1.txt
+20.00,MKE Ankaragücü,Antalyaspor,0,1,2,0-1,2018-19_tr1.txt
+,ehir,Yeni Malatyaspor,1,1,X,0-1,2018-19_tr1.txt
+,a SK,Göztepe,3,1,1,1-0,2018-19_tr1.txt
+13.30,Kayserispor,Çaykur Rizespor,2,2,X,0-1,2018-19_tr1.txt
+16.00,BB Erzurumspor,Alanyaspor,1,0,1,0-0,2018-19_tr1.txt
+,Bursaspor,MKE Ankaragücü,1,0,1,1-0,2018-19_tr1.txt
+19.00,Antalyaspor,Galatasaray,0,1,2,0-0,2018-19_tr1.txt
+13.30,Yeni Malatyaspor,Sivasspor,4,4,X,1-3,2018-19_tr1.txt
+19.00,Akhisar Belediyespor,Trabzonspor,1,3,2,0-2,2018-19_tr1.txt
+20.30,Galatasaray,Bursaspor,1,1,X,0-0,2018-19_tr1.txt
+,a SK,Akhisar Belediyespor,5,0,1,0-0,2018-19_tr1.txt
+,ehir,Kayserispor,1,0,1,1-0,2018-19_tr1.txt
+19.00,Sivasspor,Fenerbahçe,0,0,X,,2018-19_tr1.txt
+13.30,Çaykur Rizespor,Atiker Konyaspor,1,1,X,1-0,2018-19_tr1.txt
+16.00,MKE Ankaragücü,Yeni Malatyaspor,1,0,1,1-0,2018-19_tr1.txt
+,Alanyaspor,Antalyaspor,0,1,2,0-1,2018-19_tr1.txt
+20.00,Trabzonspor,BB Erzurumspor,0,0,X,,2018-19_tr1.txt
+20.30,Bursaspor,Alanyaspor,2,0,1,2-0,2018-19_tr1.txt
+19.00,Antalyaspor,Trabzonspor,1,1,X,1-1,2018-19_tr1.txt
+13.30,Kayserispor,Sivasspor,2,0,1,0-0,2018-19_tr1.txt
+18.00,Yeni Malatyaspor,Galatasaray,2,0,1,1-0,2018-19_tr1.txt
+20.30,Fenerbahçe,MKE Ankaragücü,1,3,2,0-1,2018-19_tr1.txt
+20.00,Akhisar Belediyespor,Göztepe,1,0,1,1-0,2018-19_tr1.txt
+,,Çaykur Rizespor,4,1,1,2-0,2018-19_tr1.txt
+21.00,Galatasaray,Fenerbahçe,2,2,X,1-0,2018-19_tr1.txt
+,a SK,Antalyaspor,1,2,2,1-1,2018-19_tr1.txt
+16.00,Akhisar Belediyespor,BB Erzurumspor,1,1,X,1-1,2018-19_tr1.txt
+13.30,MKE Ankaragücü,Kayserispor,3,1,1,2-0,2018-19_tr1.txt
+16.00,Alanyaspor,Yeni Malatyaspor,0,1,2,0-1,2018-19_tr1.txt
+19.00,Trabzonspor,Bursaspor,1,1,X,1-0,2018-19_tr1.txt
+20.00,Göztepe,Çaykur Rizespor,2,0,1,1-0,2018-19_tr1.txt
+,Sivasspor,Atiker Konyaspor,0,0,X,,2018-19_tr1.txt
+20.00,Yeni Malatyaspor,Trabzonspor,5,0,1,2-0,2018-19_tr1.txt
+13.30,BB Erzurumspor,Göztepe,2,1,1,1-0,2018-19_tr1.txt
+,Atiker Konyaspor,MKE Ankaragücü,2,0,1,0-0,2018-19_tr1.txt
+19.00,Kayserispor,Galatasaray,0,3,2,0-1,2018-19_tr1.txt
+18.00,Fenerbahçe,Alanyaspor,2,0,1,2-0,2018-19_tr1.txt
+19.00,Antalyaspor,Akhisar Belediyespor,1,2,2,0-0,2018-19_tr1.txt
+,,Sivasspor,1,2,2,1-1,2018-19_tr1.txt
+20.30,Galatasaray,Atiker Konyaspor,1,1,X,0-0,2018-19_tr1.txt
+13.30,BB Erzurumspor,Antalyaspor,1,0,1,0-0,2018-19_tr1.txt
+16.00,Alanyaspor,Kayserispor,5,0,1,1-0,2018-19_tr1.txt
+13.30,Sivasspor,Çaykur Rizespor,1,1,X,0-0,2018-19_tr1.txt
+16.00,Akhisar Belediyespor,Bursaspor,2,4,2,2-1,2018-19_tr1.txt
+19.00,Trabzonspor,Fenerbahçe,2,1,1,0-0,2018-19_tr1.txt
+,a SK,Yeni Malatyaspor,3,0,1,1-0,2018-19_tr1.txt
+20.00,Çaykur Rizespor,MKE Ankaragücü,1,1,X,0-1,2018-19_tr1.txt
+,Atiker Konyaspor,Alanyaspor,2,0,1,0-0,2018-19_tr1.txt
+,ehir,Sivasspor,0,1,2,0-1,2018-19_tr1.txt
+,Antalyaspor,Göztepe,1,0,1,1-0,2018-19_tr1.txt
+19.00,Kayserispor,Trabzonspor,0,2,2,0-0,2018-19_tr1.txt
+16.00,Bursaspor,BB Erzurumspor,2,1,1,1-1,2018-19_tr1.txt
+,,Galatasaray,1,0,1,1-0,2018-19_tr1.txt
+20.00,Yeni Malatyaspor,Akhisar Belediyespor,1,1,X,1-0,2018-19_tr1.txt
+13.30,Sivasspor,Göztepe,2,0,1,0-0,2018-19_tr1.txt
+16.00,Trabzonspor,Atiker Konyaspor,3,0,1,0-0,2018-19_tr1.txt
+19.00,Galatasaray,Çaykur Rizespor,2,2,X,1-0,2018-19_tr1.txt
+13.30,BB Erzurumspor,Yeni Malatyaspor,1,3,2,1-0,2018-19_tr1.txt
+16.00,Bursaspor,Antalyaspor,0,2,2,0-2,2018-19_tr1.txt
+19.00,Akhisar Belediyespor,Fenerbahçe,3,0,1,1-0,2018-19_tr1.txt
+,a SK,Kayserispor,0,3,2,0-1,2018-19_tr1.txt
+20.30,Göztepe,Bursaspor,0,0,X,,2018-19_tr1.txt
+13.30,Çaykur Rizespor,Alanyaspor,1,1,X,0-1,2018-19_tr1.txt
+,Sivasspor,MKE Ankaragücü,4,0,1,2-0,2018-19_tr1.txt
+,ehir,Galatasaray,1,1,X,1-1,2018-19_tr1.txt
+13.30,Yeni Malatyaspor,Antalyaspor,2,0,1,2-0,2018-19_tr1.txt
+16.00,Kayserispor,Akhisar Belediyespor,1,0,1,0-0,2018-19_tr1.txt
+,,Trabzonspor,2,2,X,0-1,2018-19_tr1.txt
+20.00,Fenerbahçe,BB Erzurumspor,2,2,X,2-0,2018-19_tr1.txt
+13.30,MKE Ankaragücü,Göztepe,0,3,2,0-0,2018-19_tr1.txt
+13.30,BB Erzurumspor,Kayserispor,1,1,X,1-1,2018-19_tr1.txt
+16.00,Trabzonspor,Çaykur Rizespor,4,1,1,1-0,2018-19_tr1.txt
+,Bursaspor,Yeni Malatyaspor,1,1,X,1-0,2018-19_tr1.txt
+19.00,Galatasaray,Sivasspor,4,2,1,2-2,2018-19_tr1.txt
+20.00,Antalyaspor,Fenerbahçe,0,0,X,,2018-19_tr1.txt
+,Akhisar Belediyespor,Atiker Konyaspor,0,0,X,,2018-19_tr1.txt
+13.30,BB Erzurumspor,Atiker Konyaspor,1,2,2,0-1,2018-19_tr1.txt
+,Yeni Malatyaspor,Göztepe,3,2,1,2-2,2018-19_tr1.txt
+16.00,Antalyaspor,Kayserispor,0,0,X,,2018-19_tr1.txt
+19.00,Galatasaray,MKE Ankaragücü,6,0,1,3-0,2018-19_tr1.txt
+16.00,Alanyaspor,Sivasspor,2,0,1,2-0,2018-19_tr1.txt
+,a SK,Çaykur Rizespor,0,1,2,0-1,2018-19_tr1.txt
+,Bursaspor,Fenerbahçe,1,1,X,0-1,2018-19_tr1.txt
+,,BB Erzurumspor,1,1,X,0-0,2018-19_tr1.txt
+16.00,Kayserispor,Bursaspor,1,1,X,0-1,2018-19_tr1.txt
+19.00,Göztepe,Galatasaray,0,1,2,0-0,2018-19_tr1.txt
+13.30,Çaykur Rizespor,Akhisar Belediyespor,3,1,1,0-1,2018-19_tr1.txt
+16.00,Atiker Konyaspor,Antalyaspor,2,0,1,1-0,2018-19_tr1.txt
+19.00,Sivasspor,Trabzonspor,1,1,X,0-0,2018-19_tr1.txt
+,MKE Ankaragücü,Alanyaspor,0,2,2,0-1,2018-19_tr1.txt
+,Fenerbahçe,Yeni Malatyaspor,3,2,1,2-2,2018-19_tr1.txt
+20.30,Fenerbahçe,Göztepe,2,0,1,1-0,2018-19_tr1.txt
+13.30,Yeni Malatyaspor,Kayserispor,1,1,X,1-1,2018-19_tr1.txt
+,a SK,Sivasspor,1,3,2,1-1,2018-19_tr1.txt
+,Trabzonspor,MKE Ankaragücü,1,0,1,1-0,2018-19_tr1.txt
+19.00,Alanyaspor,Galatasaray,1,1,X,1-0,2018-19_tr1.txt
+13.30,BB Erzurumspor,Çaykur Rizespor,0,1,2,0-0,2018-19_tr1.txt
+20.00,Bursaspor,Atiker Konyaspor,0,0,X,,2018-19_tr1.txt
+20.30,Kayserispor,Fenerbahçe,1,0,1,0-0,2018-19_tr1.txt
+,ehir,BB Erzurumspor,1,1,X,1-0,2018-19_tr1.txt
+,Çaykur Rizespor,Antalyaspor,1,1,X,1-0,2018-19_tr1.txt
+,,Bursaspor,2,0,1,1-0,2018-19_tr1.txt
+13.30,Atiker Konyaspor,Yeni Malatyaspor,1,1,X,0-0,2018-19_tr1.txt
+16.00,Göztepe,Alanyaspor,3,2,1,2-1,2018-19_tr1.txt
+19.00,Galatasaray,Trabzonspor,3,1,1,2-1,2018-19_tr1.txt
+,Sivasspor,Akhisar Belediyespor,2,1,1,1-0,2018-19_tr1.txt
+13.30,Akhisar Belediyespor,MKE Ankaragücü,0,0,X,,2018-19_tr1.txt
+16.00,Bursaspor,Çaykur Rizespor,0,2,2,0-1,2018-19_tr1.txt
+19.00,Fenerbahçe,Atiker Konyaspor,1,1,X,1-1,2018-19_tr1.txt
+13.30,BB Erzurumspor,Sivasspor,4,2,1,2-1,2018-19_tr1.txt
+16.00,Trabzonspor,Alanyaspor,0,2,2,0-0,2018-19_tr1.txt
+,Kayserispor,Göztepe,2,1,1,1-0,2018-19_tr1.txt
+,a SK,Galatasaray,1,4,2,1-2,2018-19_tr1.txt
+20.30,Göztepe,Trabzonspor,1,3,2,0-1,2018-19_tr1.txt
+,Çaykur Rizespor,Yeni Malatyaspor,3,0,1,1-0,2018-19_tr1.txt
+13.30,Sivasspor,Antalyaspor,1,2,2,0-2,2018-19_tr1.txt
+13.30,MKE Ankaragücü,BB Erzurumspor,2,1,1,1-0,2018-19_tr1.txt
+16.00,Atiker Konyaspor,Kayserispor,0,1,2,0-0,2018-19_tr1.txt
+19.00,Galatasaray,Akhisar Belediyespor,1,0,1,0-0,2018-19_tr1.txt
+,ehir,Bursaspor,3,0,1,2-0,2018-19_tr1.txt
+,,Fenerbahçe,3,3,X,3-0,2018-19_tr1.txt
+20.30,Antalyaspor,MKE Ankaragücü,2,4,2,2-3,2018-19_tr1.txt
+16.00,Bursaspor,Sivasspor,3,2,1,1-1,2018-19_tr1.txt
+19.00,Fenerbahçe,Çaykur Rizespor,3,2,1,2-1,2018-19_tr1.txt
+13.30,Atiker Konyaspor,Göztepe,1,1,X,1-0,2018-19_tr1.txt
+19.00,BB Erzurumspor,Galatasaray,1,1,X,1-0,2018-19_tr1.txt
+,a SK,Trabzonspor,2,2,X,0-2,2018-19_tr1.txt
+,Akhisar Belediyespor,Alanyaspor,3,1,1,0-0,2018-19_tr1.txt
+20.30,Sivasspor,Yeni Malatyaspor,2,0,1,2-0,2018-19_tr1.txt
+16.00,Trabzonspor,Akhisar Belediyespor,2,1,1,0-0,2018-19_tr1.txt
+,ehir,Fenerbahçe,2,1,1,1-0,2018-19_tr1.txt
+,MKE Ankaragücü,Bursaspor,0,0,X,,2018-19_tr1.txt
+13.30,Alanyaspor,BB Erzurumspor,2,1,1,1-0,2018-19_tr1.txt
+,Çaykur Rizespor,Kayserispor,3,0,1,1-0,2018-19_tr1.txt
+,,Atiker Konyaspor,3,2,1,2-1,2018-19_tr1.txt
+20.00,Galatasaray,Antalyaspor,5,0,1,1-0,2018-19_tr1.txt
+20.30,Fenerbahçe,Sivasspor,2,1,1,0-0,2018-19_tr1.txt
+13.30,Atiker Konyaspor,Çaykur Rizespor,0,2,2,0-1,2018-19_tr1.txt
+,BB Erzurumspor,Trabzonspor,0,1,2,0-0,2018-19_tr1.txt
+19.00,Antalyaspor,Alanyaspor,3,0,1,2-0,2018-19_tr1.txt
+,,Göztepe,1,0,1,0-0,2018-19_tr1.txt
+13.30,Yeni Malatyaspor,MKE Ankaragücü,3,1,1,0-0,2018-19_tr1.txt
+19.00,Bursaspor,Galatasaray,2,3,2,2-1,2018-19_tr1.txt
+20.30,Trabzonspor,Antalyaspor,4,1,1,1-1,2018-19_tr1.txt
+16.00,Sivasspor,Kayserispor,1,3,2,0-3,2018-19_tr1.txt
+,Alanyaspor,Bursaspor,1,0,1,0-0,2018-19_tr1.txt
+19.00,Galatasaray,Yeni Malatyaspor,3,0,1,1-0,2018-19_tr1.txt
+,a SK,BB Erzurumspor,2,1,1,1-0,2018-19_tr1.txt
+16.00,Göztepe,Akhisar Belediyespor,0,1,2,0-0,2018-19_tr1.txt
+,MKE Ankaragücü,Fenerbahçe,1,1,X,1-0,2018-19_tr1.txt
+,ehir,Atiker Konyaspor,2,0,1,0-0,2018-19_tr1.txt
+20.30,Bursaspor,Trabzonspor,0,1,2,0-0,2018-19_tr1.txt
+16.00,Çaykur Rizespor,Göztepe,1,0,1,0-0,2018-19_tr1.txt
+,Atiker Konyaspor,Sivasspor,1,1,X,1-1,2018-19_tr1.txt
+13.30,Kayserispor,MKE Ankaragücü,0,2,2,0-0,2018-19_tr1.txt
+,Yeni Malatyaspor,Alanyaspor,1,1,X,1-1,2018-19_tr1.txt
+19.00,Fenerbahçe,Galatasaray,1,1,X,0-0,2018-19_tr1.txt
+20.00,BB Erzurumspor,Akhisar Belediyespor,2,1,1,0-0,2018-19_tr1.txt
+,a SK,Bursaspor,1,1,X,0-0,2018-19_tr1.txt
+16.00,Trabzonspor,Yeni Malatyaspor,2,1,1,1-1,2018-19_tr1.txt
+,Akhisar Belediyespor,Antalyaspor,1,2,2,0-2,2018-19_tr1.txt
+19.00,Galatasaray,Kayserispor,3,1,1,3-1,2018-19_tr1.txt
+,Göztepe,BB Erzurumspor,0,1,2,0-1,2018-19_tr1.txt
+13.30,MKE Ankaragücü,Atiker Konyaspor,0,0,X,,2018-19_tr1.txt
+,ehir,Çaykur Rizespor,1,1,X,0-0,2018-19_tr1.txt
+19.00,Alanyaspor,Fenerbahçe,1,0,1,0-0,2018-19_tr1.txt
+,ehir,Göztepe,0,2,2,0-1,2018-19_tr1.txt
+16.00,Çaykur Rizespor,Sivasspor,0,0,X,,2018-19_tr1.txt
+,Antalyaspor,BB Erzurumspor,1,1,X,1-0,2018-19_tr1.txt
+19.00,Fenerbahçe,Trabzonspor,1,1,X,0-1,2018-19_tr1.txt
+16.00,Kayserispor,Alanyaspor,1,1,X,1-1,2018-19_tr1.txt
+,Bursaspor,Akhisar Belediyespor,0,0,X,,2018-19_tr1.txt
+,,MKE Ankaragücü,4,1,1,1-0,2018-19_tr1.txt
+,Atiker Konyaspor,Galatasaray,0,0,X,,2018-19_tr1.txt
+16.00,MKE Ankaragücü,Çaykur Rizespor,2,2,X,0-1,2018-19_tr1.txt
+,BB Erzurumspor,Bursaspor,2,0,1,0-0,2018-19_tr1.txt
+,a SK,Fenerbahçe,1,3,2,1-1,2018-19_tr1.txt
+16.00,Akhisar Belediyespor,Yeni Malatyaspor,0,2,2,0-0,2018-19_tr1.txt
+,Göztepe,Antalyaspor,4,1,1,2-1,2018-19_tr1.txt
+20.30,Alanyaspor,Atiker Konyaspor,2,4,2,1-2,2018-19_tr1.txt
+,Trabzonspor,Kayserispor,4,2,1,2-1,2018-19_tr1.txt
+20.30,Antalyaspor,Bursaspor,0,1,2,0-1,2018-19_tr1.txt
+16.00,Çaykur Rizespor,Galatasaray,2,3,2,1-1,2018-19_tr1.txt
+19.00,Fenerbahçe,Akhisar Belediyespor,2,1,1,2-1,2018-19_tr1.txt
+,Göztepe,Sivasspor,3,3,X,1-2,2018-19_tr1.txt
+,Atiker Konyaspor,Trabzonspor,2,2,X,2-1,2018-19_tr1.txt
+,ehir,MKE Ankaragücü,2,1,1,0-1,2018-19_tr1.txt
+,Yeni Malatyaspor,BB Erzurumspor,3,1,1,0-0,2018-19_tr1.txt
+,,Alanyaspor,2,1,1,1-1,2018-19_tr1.txt
+,a SK,Atiker Konyaspor,1,1,X,0-1,2018-19_tr1.txt
+19.00,Antalyaspor,Yeni Malatyaspor,3,0,1,1-0,2018-19_tr1.txt
+16.00,Akhisar Belediyespor,Kayserispor,2,2,X,1-0,2018-19_tr1.txt
+,Bursaspor,Göztepe,0,0,X,,2018-19_tr1.txt
+19.00,Alanyaspor,Çaykur Rizespor,1,1,X,1-0,2018-19_tr1.txt
+20.00,MKE Ankaragücü,Sivasspor,3,1,1,2-0,2018-19_tr1.txt
+,BB Erzurumspor,Fenerbahçe,0,1,2,0-0,2018-19_tr1.txt
+,ehir,Alanyaspor,1,1,X,1-1,2018-19_tr1.txt
+,Sivasspor,Galatasaray,4,3,1,2-2,2018-19_tr1.txt
+,Çaykur Rizespor,Trabzonspor,2,3,2,1-3,2018-19_tr1.txt
+19.00,Atiker Konyaspor,Akhisar Belediyespor,0,0,X,,2018-19_tr1.txt
+19.00,Göztepe,MKE Ankaragücü,2,1,1,1-0,2018-19_tr1.txt
+,Fenerbahçe,Antalyaspor,3,1,1,1-1,2018-19_tr1.txt
+,Kayserispor,BB Erzurumspor,0,2,2,0-2,2018-19_tr1.txt
+,Yeni Malatyaspor,Bursaspor,1,2,2,0-2,2018-19_tr1.txt
+20.30,Denizlispor,Galatasaray,2,0,1,0-0,2019-20_tr1.txt
+,i,Çaykur Rizespor,0,1,2,0-0,2019-20_tr1.txt
+21.45,Kayserispor,Alanyaspor,0,1,2,0-0,2019-20_tr1.txt
+19.15,Konyaspor,MKE Ankaragücü,0,0,X,,2019-20_tr1.txt
+21.45,Göztepe,Antalyaspor,0,1,2,0-1,2019-20_tr1.txt
+,a SK,Trabzonspor,1,1,X,1-1,2019-20_tr1.txt
+,,Göztepe,3,0,1,1-0,2019-20_tr1.txt
+19.15,MKE Ankaragücü,Kayserispor,1,1,X,0-0,2019-20_tr1.txt
+,ehir,Fenerbahçe,1,2,2,1-0,2019-20_tr1.txt
+19.15,Çaykur Rizespor,Sivasspor,2,1,1,0-0,2019-20_tr1.txt
+,Trabzonspor,Yeni Malatyaspor,2,1,1,1-0,2019-20_tr1.txt
+21.45,Antalyaspor,Denizlispor,0,2,2,0-1,2019-20_tr1.txt
+,Galatasaray,Konyaspor,1,1,X,0-0,2019-20_tr1.txt
+,a SK,MKE Ankaragücü,0,1,2,0-1,2019-20_tr1.txt
+,Kayserispor,Galatasaray,2,3,2,1-0,2019-20_tr1.txt
+19.15,Konyaspor,Antalyaspor,2,2,X,0-1,2019-20_tr1.txt
+,,Çaykur Rizespor,1,1,X,0-1,2019-20_tr1.txt
+,Göztepe,Denizlispor,0,0,X,,2019-20_tr1.txt
+21.45,Fenerbahçe,Trabzonspor,1,1,X,1-1,2019-20_tr1.txt
+,Yeni Malatyaspor,Alanyaspor,2,3,2,0-3,2019-20_tr1.txt
+,ehir,Sivasspor,1,1,X,0-1,2019-20_tr1.txt
+20.00,Antalyaspor,Kayserispor,2,2,X,1-1,2019-20_tr1.txt
+17.00,MKE Ankaragücü,Yeni Malatyaspor,0,4,2,0-3,2019-20_tr1.txt
+,Çaykur Rizespor,Göztepe,0,0,X,,2019-20_tr1.txt
+20.00,Denizlispor,Konyaspor,0,1,2,0-0,2019-20_tr1.txt
+20.00,Alanyaspor,Fenerbahçe,3,1,1,1-1,2019-20_tr1.txt
+20.30,Göztepe,Konyaspor,1,0,1,0-0,2019-20_tr1.txt
+,a SK,Antalyaspor,3,0,1,0-0,2019-20_tr1.txt
+17.30,Kayserispor,Denizlispor,1,1,X,1-0,2019-20_tr1.txt
+20.00,Fenerbahçe,MKE Ankaragücü,2,1,1,1-1,2019-20_tr1.txt
+,i,Alanyaspor,1,1,X,1-0,2019-20_tr1.txt
+19.00,Yeni Malatyaspor,Galatasaray,1,1,X,0-1,2019-20_tr1.txt
+,Sivasspor,Trabzonspor,2,1,1,1-1,2019-20_tr1.txt
+,ehir,Çaykur Rizespor,5,0,1,2-0,2019-20_tr1.txt
+17.30,Alanyaspor,Sivasspor,1,1,X,0-1,2019-20_tr1.txt
+20.00,Galatasaray,Fenerbahçe,0,0,X,,2019-20_tr1.txt
+14.00,Konyaspor,Kayserispor,2,1,1,1-1,2019-20_tr1.txt
+,Antalyaspor,Yeni Malatyaspor,3,0,1,1-0,2019-20_tr1.txt
+,ehir Gaziantep FK,Göztepe,1,1,X,0-0,2019-20_tr1.txt
+20.30,Fenerbahçe,Antalyaspor,0,1,2,0-1,2019-20_tr1.txt
+,Yeni Malatyaspor,Denizlispor,5,1,1,2-0,2019-20_tr1.txt
+,a SK,Konyaspor,1,4,2,1-3,2019-20_tr1.txt
+17.30,Göztepe,Kayserispor,4,0,1,3-0,2019-20_tr1.txt
+,i,Galatasaray,0,0,X,,2019-20_tr1.txt
+14.00,Sivasspor,MKE Ankaragücü,3,1,1,1-1,2019-20_tr1.txt
+,,Alanyaspor,2,0,1,0-0,2019-20_tr1.txt
+,Çaykur Rizespor,Trabzonspor,1,2,2,1-0,2019-20_tr1.txt
+20.30,Galatasaray,Sivasspor,3,2,1,2-0,2019-20_tr1.txt
+,ehir,Göztepe,2,1,1,1-0,2019-20_tr1.txt
+,Trabzonspor,Gaziantep FK,4,1,1,2-0,2019-20_tr1.txt
+16.30,Alanyaspor,Çaykur Rizespor,5,2,1,2-0,2019-20_tr1.txt
+19.00,Denizlispor,Fenerbahçe,1,2,2,0-1,2019-20_tr1.txt
+20.00,Konyaspor,Yeni Malatyaspor,0,2,2,0-1,2019-20_tr1.txt
+20.30,Çaykur Rizespor,MKE Ankaragücü,2,0,1,1-0,2019-20_tr1.txt
+15.00,Sivasspor,Antalyaspor,2,1,1,0-0,2019-20_tr1.txt
+17.30,Gaziantep FK,Alanyaspor,1,1,X,0-1,2019-20_tr1.txt
+20.00,Fenerbahçe,Konyaspor,5,1,1,3-1,2019-20_tr1.txt
+14.00,Yeni Malatyaspor,Kayserispor,4,0,1,1-0,2019-20_tr1.txt
+,i,Denizlispor,0,2,2,0-1,2019-20_tr1.txt
+,,Galatasaray,1,0,1,0-0,2019-20_tr1.txt
+,ehir,Trabzonspor,2,2,X,0-0,2019-20_tr1.txt
+20.30,Galatasaray,Çaykur Rizespor,2,0,1,2-0,2019-20_tr1.txt
+,Trabzonspor,Göztepe,0,1,2,0-1,2019-20_tr1.txt
+14.00,Denizlispor,Sivasspor,0,2,2,0-1,2019-20_tr1.txt
+,a SK,Yeni Malatyaspor,2,2,X,1-0,2019-20_tr1.txt
+19.00,Kayserispor,Fenerbahçe,1,0,1,0-0,2019-20_tr1.txt
+20.00,MKE Ankaragücü,Gaziantep FK,1,2,2,0-1,2019-20_tr1.txt
+,i,Kayserispor,2,1,1,1-0,2019-20_tr1.txt
+17.30,Çaykur Rizespor,Antalyaspor,1,0,1,1-0,2019-20_tr1.txt
+,Sivasspor,Konyaspor,2,0,1,0-0,2019-20_tr1.txt
+20.00,Gaziantep FK,Galatasaray,0,2,2,0-2,2019-20_tr1.txt
+14.00,Göztepe,Yeni Malatyaspor,1,1,X,1-0,2019-20_tr1.txt
+16.30,Trabzonspor,Alanyaspor,1,0,1,0-0,2019-20_tr1.txt
+,ehir,MKE Ankaragücü,2,1,1,1-0,2019-20_tr1.txt
+,,Denizlispor,1,0,1,0-0,2019-20_tr1.txt
+15.00,Denizlispor,Çaykur Rizespor,2,0,1,0-0,2019-20_tr1.txt
+17.30,MKE Ankaragücü,Trabzonspor,0,3,2,0-1,2019-20_tr1.txt
+14.00,Kayserispor,Sivasspor,1,4,2,1-1,2019-20_tr1.txt
+16.30,Alanyaspor,Göztepe,0,1,2,0-0,2019-20_tr1.txt
+19.00,Yeni Malatyaspor,Fenerbahçe,0,0,X,,2019-20_tr1.txt
+20.00,Antalyaspor,Gaziantep FK,1,1,X,0-1,2019-20_tr1.txt
+,i,Yeni Malatyaspor,3,3,X,0-1,2019-20_tr1.txt
+15.00,Çaykur Rizespor,Konyaspor,3,1,1,2-1,2019-20_tr1.txt
+17.30,Alanyaspor,MKE Ankaragücü,5,0,1,2-0,2019-20_tr1.txt
+20.00,Göztepe,Fenerbahçe,2,2,X,1-1,2019-20_tr1.txt
+14.00,Gaziantep FK,Denizlispor,1,2,2,0-0,2019-20_tr1.txt
+,ehir,Antalyaspor,2,0,1,0-0,2019-20_tr1.txt
+19.00,Trabzonspor,Galatasaray,1,1,X,0-0,2019-20_tr1.txt
+,,Kayserispor,4,1,1,3-0,2019-20_tr1.txt
+15.00,Yeni Malatyaspor,Sivasspor,1,3,2,1-2,2019-20_tr1.txt
+17.30,MKE Ankaragücü,Göztepe,1,3,2,1-1,2019-20_tr1.txt
+20.00,Galatasaray,Alanyaspor,1,0,1,1-0,2019-20_tr1.txt
+14.00,Konyaspor,Gaziantep FK,0,0,X,,2019-20_tr1.txt
+16.30,Antalyaspor,Trabzonspor,1,3,2,1-3,2019-20_tr1.txt
+20.00,Kayserispor,Çaykur Rizespor,1,0,1,1-0,2019-20_tr1.txt
+20.30,Alanyaspor,Antalyaspor,0,0,X,,2019-20_tr1.txt
+,i,Göztepe,3,1,1,2-1,2019-20_tr1.txt
+20.00,Galatasaray,MKE Ankaragücü,2,2,X,0-0,2019-20_tr1.txt
+14.00,Gaziantep FK,Kayserispor,3,0,1,0-0,2019-20_tr1.txt
+16.30,Sivasspor,Fenerbahçe,3,1,1,1-0,2019-20_tr1.txt
+,,Yeni Malatyaspor,0,2,2,0-0,2019-20_tr1.txt
+,ehir,Konyaspor,1,1,X,1-0,2019-20_tr1.txt
+,Trabzonspor,Denizlispor,1,2,2,1-0,2019-20_tr1.txt
+20.30,Antalyaspor,MKE Ankaragücü,2,2,X,1-0,2019-20_tr1.txt
+15.00,Yeni Malatyaspor,Çaykur Rizespor,0,2,2,0-1,2019-20_tr1.txt
+,a SK,Gaziantep FK,3,4,2,1-4,2019-20_tr1.txt
+20.00,Göztepe,Galatasaray,2,1,1,1-1,2019-20_tr1.txt
+,i,Sivasspor,2,2,X,0-1,2019-20_tr1.txt
+20.00,Denizlispor,Alanyaspor,1,5,2,0-3,2019-20_tr1.txt
+,Konyaspor,Trabzonspor,0,1,2,0-1,2019-20_tr1.txt
+15.00,MKE Ankaragücü,Denizlispor,2,2,X,0-2,2019-20_tr1.txt
+,Trabzonspor,Kayserispor,6,2,1,2-1,2019-20_tr1.txt
+20.00,Galatasaray,Antalyaspor,5,0,1,3-0,2019-20_tr1.txt
+14.00,Sivasspor,Göztepe,1,0,1,0-0,2019-20_tr1.txt
+16.30,Alanyaspor,Konyaspor,2,1,1,1-1,2019-20_tr1.txt
+,Gaziantep FK,Yeni Malatyaspor,1,1,X,1-0,2019-20_tr1.txt
+19.00,Çaykur Rizespor,Fenerbahçe,1,2,2,1-1,2019-20_tr1.txt
+20.00,MKE Ankaragücü,Konyaspor,0,1,2,0-0,2019-20_tr1.txt
+14.00,Alanyaspor,Kayserispor,5,1,1,1-0,2019-20_tr1.txt
+,ehir,Yeni Malatyaspor,4,1,1,4-0,2019-20_tr1.txt
+20.00,Gaziantep FK,Fenerbahçe,0,2,2,0-0,2019-20_tr1.txt
+13.30,Antalyaspor,Göztepe,0,3,2,0-3,2019-20_tr1.txt
+16.00,Galatasaray,Denizlispor,2,1,1,1-0,2019-20_tr1.txt
+,,Sivasspor,1,2,2,1-2,2019-20_tr1.txt
+,i,Gaziantep FK,1,0,1,0-0,2019-20_tr1.txt
+14.00,Kayserispor,MKE Ankaragücü,1,1,X,1-0,2019-20_tr1.txt
+,a SK,Alanyaspor,1,2,2,0-1,2019-20_tr1.txt
+13.30,Denizlispor,Antalyaspor,0,3,2,0-2,2019-20_tr1.txt
+19.00,Konyaspor,Galatasaray,0,3,2,0-2,2019-20_tr1.txt
+20.00,Sivasspor,Çaykur Rizespor,1,1,X,0-0,2019-20_tr1.txt
+20.00,Yeni Malatyaspor,Trabzonspor,1,3,2,1-2,2019-20_tr1.txt
+14.00,Antalyaspor,Konyaspor,0,0,X,,2019-20_tr1.txt
+20.00,Trabzonspor,Fenerbahçe,2,1,1,2-1,2019-20_tr1.txt
+16.00,Alanyaspor,Yeni Malatyaspor,2,1,1,1-0,2019-20_tr1.txt
+,Gaziantep FK,Sivasspor,5,1,1,3-1,2019-20_tr1.txt
+19.00,Galatasaray,Kayserispor,4,1,1,2-0,2019-20_tr1.txt
+20.00,Denizlispor,Göztepe,1,1,X,0-1,2019-20_tr1.txt
+20.00,Yeni Malatyaspor,MKE Ankaragücü,0,1,2,0-0,2019-20_tr1.txt
+14.00,Konyaspor,Denizlispor,0,0,X,,2019-20_tr1.txt
+,,Gaziantep FK,3,0,1,0-0,2019-20_tr1.txt
+,i,Trabzonspor,0,2,2,0-0,2019-20_tr1.txt
+20.00,Fenerbahçe,Alanyaspor,1,1,X,0-1,2019-20_tr1.txt
+13.30,Kayserispor,Antalyaspor,2,2,X,1-1,2019-20_tr1.txt
+,a SK,Galatasaray,0,3,2,0-3,2019-20_tr1.txt
+20.00,Göztepe,Çaykur Rizespor,2,0,1,0-0,2019-20_tr1.txt
+14.00,Denizlispor,Kayserispor,0,1,2,0-0,2019-20_tr1.txt
+17.00,Konyaspor,Göztepe,1,3,2,1-1,2019-20_tr1.txt
+20.00,MKE Ankaragücü,Fenerbahçe,2,1,1,1-0,2019-20_tr1.txt
+16.00,Trabzonspor,Sivasspor,2,1,1,2-0,2019-20_tr1.txt
+19.00,Galatasaray,Yeni Malatyaspor,1,0,1,1-0,2019-20_tr1.txt
+,Gaziantep FK,Çaykur Rizespor,2,0,1,0-0,2019-20_tr1.txt
+20.00,Sivasspor,Alanyaspor,1,0,1,1-0,2019-20_tr1.txt
+14.00,Kayserispor,Konyaspor,2,2,X,1-2,2019-20_tr1.txt
+17.00,Göztepe,Gaziantep FK,1,1,X,0-0,2019-20_tr1.txt
+,,Trabzonspor,2,2,X,0-1,2019-20_tr1.txt
+13.30,Yeni Malatyaspor,Antalyaspor,1,2,2,1-1,2019-20_tr1.txt
+,i,MKE Ankaragücü,1,0,1,0-0,2019-20_tr1.txt
+19.00,Fenerbahçe,Galatasaray,1,3,2,1-1,2019-20_tr1.txt
+,a SK,Denizlispor,2,0,1,1-0,2019-20_tr1.txt
+17.00,Trabzonspor,Çaykur Rizespor,5,2,1,0-1,2019-20_tr1.txt
+20.00,Antalyaspor,Fenerbahçe,2,2,X,0-1,2019-20_tr1.txt
+13.30,Denizlispor,Yeni Malatyaspor,2,0,1,1-0,2019-20_tr1.txt
+16.00,MKE Ankaragücü,Sivasspor,0,3,2,0-0,2019-20_tr1.txt
+,ehir,Gaziantep FK,3,1,1,0-0,2019-20_tr1.txt
+,Kayserispor,Göztepe,1,0,1,0-0,2019-20_tr1.txt
+,,MKE Ankaragücü,2,1,1,1-0,2019-20_tr1.txt
+14.00,Yeni Malatyaspor,Konyaspor,1,1,X,0-1,2019-20_tr1.txt
+17.00,Gaziantep FK,Trabzonspor,1,1,X,0-1,2019-20_tr1.txt
+20.00,Fenerbahçe,Denizlispor,2,2,X,1-1,2019-20_tr1.txt
+,a SK,Kayserispor,5,1,1,3-0,2019-20_tr1.txt
+16.00,Çaykur Rizespor,Alanyaspor,1,1,X,0-1,2019-20_tr1.txt
+19.00,Sivasspor,Galatasaray,2,2,X,1-2,2019-20_tr1.txt
+,i,Antalyaspor,1,1,X,0-0,2019-20_tr1.txt
+20.00,MKE Ankaragücü,Çaykur Rizespor,2,1,1,2-1,2019-20_tr1.txt
+,a SK,Göztepe,2,0,1,1-0,2019-20_tr1.txt
+17.00,Alanyaspor,Gaziantep FK,1,0,1,1-0,2019-20_tr1.txt
+20.00,Konyaspor,Fenerbahçe,1,0,1,1-0,2019-20_tr1.txt
+13.30,Kayserispor,Yeni Malatyaspor,2,1,1,2-0,2019-20_tr1.txt
+20.00,Antalyaspor,Sivasspor,1,0,1,0-0,2019-20_tr1.txt
+21.00,Fenerbahçe,Kayserispor,2,1,1,0-0,2019-20_tr1.txt
+,Göztepe,Trabzonspor,1,3,2,0-1,2019-20_tr1.txt
+,ehir,Alanyaspor,2,0,1,0-0,2019-20_tr1.txt
+,,Antalyaspor,1,2,2,0-2,2019-20_tr1.txt
+,i,Konyaspor,2,1,1,0-0,2019-20_tr1.txt
+21.00,Gaziantep FK,MKE Ankaragücü,1,1,X,1-0,2019-20_tr1.txt
+,Çaykur Rizespor,Galatasaray,2,0,1,1-0,2019-20_tr1.txt
+21.00,Sivasspor,Denizlispor,1,0,1,1-0,2019-20_tr1.txt
+,Yeni Malatyaspor,Göztepe,2,1,1,1-0,2019-20_tr1.txt
+,a SK,Fenerbahçe,2,0,1,0-0,2019-20_tr1.txt
+21.00,Galatasaray,Gaziantep FK,3,3,X,2-1,2019-20_tr1.txt
+,Konyaspor,Sivasspor,2,2,X,2-1,2019-20_tr1.txt
+21.00,Alanyaspor,Trabzonspor,2,2,X,1-1,2019-20_tr1.txt
+,Antalyaspor,Çaykur Rizespor,3,1,1,1-0,2019-20_tr1.txt
+,,Konyaspor,3,0,1,2-0,2019-20_tr1.txt
+18.30,Fenerbahçe,Yeni Malatyaspor,3,2,1,0-0,2019-20_tr1.txt
+21.00,Göztepe,Alanyaspor,3,3,X,1-2,2019-20_tr1.txt
+,Trabzonspor,MKE Ankaragücü,1,1,X,1-0,2019-20_tr1.txt
+18.30,Çaykur Rizespor,Denizlispor,2,2,X,1-2,2019-20_tr1.txt
+,Sivasspor,Kayserispor,0,2,2,0-1,2019-20_tr1.txt
+,ehir,Galatasaray,1,1,X,0-0,2019-20_tr1.txt
+,Gaziantep FK,Antalyaspor,1,1,X,0-0,2019-20_tr1.txt
+21.00,Denizlispor,Gaziantep FK,0,1,2,0-1,2019-20_tr1.txt
+18.30,MKE Ankaragücü,Alanyaspor,1,4,2,0-0,2019-20_tr1.txt
+,Fenerbahçe,Göztepe,2,1,1,2-0,2019-20_tr1.txt
+,a SK,Sivasspor,0,0,X,,2019-20_tr1.txt
+21.00,Galatasaray,Trabzonspor,1,3,2,0-1,2019-20_tr1.txt
+,Konyaspor,Çaykur Rizespor,1,0,1,0-0,2019-20_tr1.txt
+,i,Fenerbahçe,1,1,X,0-0,2019-20_tr1.txt
+,ehir,Denizlispor,2,0,1,0-0,2019-20_tr1.txt
+18.30,Sivasspor,Yeni Malatyaspor,0,1,2,0-0,2019-20_tr1.txt
+,Trabzonspor,Antalyaspor,2,2,X,2-1,2019-20_tr1.txt
+21.00,Alanyaspor,Galatasaray,4,1,1,2-1,2019-20_tr1.txt
+,Göztepe,MKE Ankaragücü,2,2,X,2-1,2019-20_tr1.txt
+18.30,Çaykur Rizespor,Kayserispor,3,2,1,1-1,2019-20_tr1.txt
+,Gaziantep FK,Konyaspor,3,1,1,0-1,2019-20_tr1.txt
+18.30,MKE Ankaragücü,Galatasaray,1,0,1,0-0,2019-20_tr1.txt
+21.00,Antalyaspor,Alanyaspor,1,0,1,1-0,2019-20_tr1.txt
+,Fenerbahçe,Sivasspor,1,2,2,1-2,2019-20_tr1.txt
+,a SK,Çaykur Rizespor,2,0,1,0-0,2019-20_tr1.txt
+,Kayserispor,Gaziantep FK,1,1,X,0-0,2019-20_tr1.txt
+21.00,Denizlispor,Trabzonspor,2,1,1,0-1,2019-20_tr1.txt
+21.00,Galatasaray,Göztepe,3,1,1,0-0,2019-20_tr1.txt
+21.00,Alanyaspor,Denizlispor,1,0,1,0-0,2019-20_tr1.txt
+,MKE Ankaragücü,Antalyaspor,0,1,2,0-0,2019-20_tr1.txt
+,ehir,Kayserispor,1,0,1,1-0,2019-20_tr1.txt
+,,Fenerbahçe,2,0,1,0-0,2019-20_tr1.txt
+,Çaykur Rizespor,Yeni Malatyaspor,3,0,1,3-0,2019-20_tr1.txt
+,Trabzonspor,Konyaspor,3,4,2,1-1,2019-20_tr1.txt
+21.00,Antalyaspor,Galatasaray,2,2,X,1-0,2019-20_tr1.txt
+21.00,Denizlispor,MKE Ankaragücü,0,1,2,0-0,2019-20_tr1.txt
+,Fenerbahçe,Çaykur Rizespor,3,1,1,1-0,2019-20_tr1.txt
+,Göztepe,Sivasspor,3,1,1,1-0,2019-20_tr1.txt
+,Kayserispor,Trabzonspor,1,2,2,0-0,2019-20_tr1.txt
+,Konyaspor,Alanyaspor,2,3,2,2-0,2019-20_tr1.txt
+,Yeni Malatyaspor,Gaziantep FK,0,1,2,0-0,2019-20_tr1.txt
+20.00,Giresunspor,Menemen Belediyespor,0,2,2,0-1,2019-20_tr2.txt
+19.15,Fatih Karagümrük,Bursaspor,3,1,1,1-0,2019-20_tr2.txt
+,spor FK,Boluspor,2,1,1,0-0,2019-20_tr2.txt
+21.45,Akhisar Belediyespor,Adanaspor,1,0,1,0-0,2019-20_tr2.txt
+,Altay Izmir,Ümraniyespor,1,3,2,0-1,2019-20_tr2.txt
+,ehirspor,Keçiörengücü,1,1,X,0-0,2019-20_tr2.txt
+20.00,Boluspor,Adana Demirspor,0,0,X,,2019-20_tr2.txt
+,nordu FK,Fatih Karagümrük,1,2,2,0-1,2019-20_tr2.txt
+,kesirspor,BB Erzurumspor,2,1,1,1-0,2019-20_tr2.txt
+17.00,Ümraniyespor,Giresunspor,4,1,1,2-0,2019-20_tr2.txt
+19.15,Menemen Belediyespor,Hatayspor,0,4,2,0-1,2019-20_tr2.txt
+,Bursaspor,Akhisar Belediyespor,2,1,1,1-0,2019-20_tr2.txt
+,,Altay Izmir,2,2,X,1-2,2019-20_tr2.txt
+,spor FK,Adanaspor,2,2,X,1-0,2019-20_tr2.txt
+19.15,BB Erzurumspor,Boluspor,1,0,1,0-0,2019-20_tr2.txt
+19.15,Giresunspor,Hatayspor,2,2,X,1-0,2019-20_tr2.txt
+,Fatih Karagümrük,Menemen Belediyespor,1,1,X,0-0,2019-20_tr2.txt
+21.45,Adana Demirspor,Keçiörengücü,0,0,X,,2019-20_tr2.txt
+,ehirspor,Bursaspor,0,2,2,0-0,2019-20_tr2.txt
+,kesirspor,Ümraniyespor,2,0,1,2-0,2019-20_tr2.txt
+15.30,Keçiörengücü,BB Erzurumspor,1,0,1,0-0,2019-20_tr2.txt
+,Boluspor,Altay Izmir,0,2,2,0-1,2019-20_tr2.txt
+,,Giresunspor,2,1,1,0-0,2019-20_tr2.txt
+19.00,Adanaspor,Adana Demirspor,0,0,X,,2019-20_tr2.txt
+,Menemen Belediyespor,Akhisar Belediyespor,0,1,2,0-0,2019-20_tr2.txt
+19.00,Hatayspor,Fatih Karagümrük,0,0,X,,2019-20_tr2.txt
+19.00,BB Erzurumspor,Adanaspor,2,1,1,1-1,2019-20_tr2.txt
+14.00,Ümraniyespor,Boluspor,1,1,X,0-1,2019-20_tr2.txt
+16.30,Altay Izmir,Keçiörengücü,0,0,X,,2019-20_tr2.txt
+19.00,Adana Demirspor,Bursaspor,4,1,1,3-0,2019-20_tr2.txt
+14.00,Giresunspor,Fatih Karagümrük,1,1,X,0-0,2019-20_tr2.txt
+,ehirspor,Menemen Belediyespor,3,0,1,0-0,2019-20_tr2.txt
+19.00,Akhisar Belediyespor,Hatayspor,3,1,1,2-1,2019-20_tr2.txt
+14.00,Keçiörengücü,Ümraniyespor,1,1,X,1-0,2019-20_tr2.txt
+19.00,Adanaspor,Altay Izmir,3,3,X,2-2,2019-20_tr2.txt
+,Bursaspor,BB Erzurumspor,1,0,1,1-0,2019-20_tr2.txt
+,Fatih Karagümrük,Akhisar Belediyespor,2,3,2,1-3,2019-20_tr2.txt
+,kesirspor,Giresunspor,2,0,1,2-0,2019-20_tr2.txt
+,nordu FK,Adana Demirspor,2,2,X,0-1,2019-20_tr2.txt
+19.00,Altay Izmir,Bursaspor,2,1,1,2-1,2019-20_tr2.txt
+14.00,Giresunspor,Akhisar Belediyespor,1,0,1,1-0,2019-20_tr2.txt
+,ehirspor,Fatih Karagümrük,1,3,2,0-2,2019-20_tr2.txt
+,,Keçiörengücü,1,1,X,0-0,2019-20_tr2.txt
+,kesirspor,Boluspor,3,2,1,1-1,2019-20_tr2.txt
+14.00,Ümraniyespor,Adanaspor,2,1,1,1-0,2019-20_tr2.txt
+,spor FK,Hatayspor,0,1,2,0-1,2019-20_tr2.txt
+19.00,Adana Demirspor,Menemen Belediyespor,0,1,2,0-1,2019-20_tr2.txt
+14.00,Hatayspor,Adana Demirspor,2,1,1,0-1,2019-20_tr2.txt
+16.30,Bursaspor,Ümraniyespor,2,1,1,0-1,2019-20_tr2.txt
+19.00,Menemen Belediyespor,BB Erzurumspor,0,0,X,,2019-20_tr2.txt
+16.30,Boluspor,Giresunspor,2,0,1,0-0,2019-20_tr2.txt
+,nordu FK,Altay Izmir,0,3,2,0-0,2019-20_tr2.txt
+19.00,Boluspor,Keçiörengücü,3,1,1,2-0,2019-20_tr2.txt
+,kesirspor,Adanaspor,3,0,1,2-0,2019-20_tr2.txt
+,,Bursaspor,1,2,2,0-1,2019-20_tr2.txt
+19.00,Altay Izmir,Menemen Belediyespor,0,2,2,0-0,2019-20_tr2.txt
+14.00,BB Erzurumspor,Hatayspor,3,1,1,2-0,2019-20_tr2.txt
+19.00,Adana Demirspor,Fatih Karagümrük,1,1,X,1-1,2019-20_tr2.txt
+,spor FK,Akhisar Belediyespor,2,1,1,1-0,2019-20_tr2.txt
+14.00,Hatayspor,Altay Izmir,3,2,1,1-0,2019-20_tr2.txt
+16.30,Adanaspor,Boluspor,0,0,X,,2019-20_tr2.txt
+,Menemen Belediyespor,Ümraniyespor,1,0,1,0-0,2019-20_tr2.txt
+19.00,Akhisar Belediyespor,Adana Demirspor,1,1,X,1-0,2019-20_tr2.txt
+14.00,Keçiörengücü,Giresunspor,0,0,X,,2019-20_tr2.txt
+,Fatih Karagümrük,BB Erzurumspor,0,1,2,0-0,2019-20_tr2.txt
+14.00,BB Erzurumspor,Akhisar Belediyespor,0,0,X,,2019-20_tr2.txt
+,,Menemen Belediyespor,1,2,2,0-1,2019-20_tr2.txt
+19.00,Altay Izmir,Fatih Karagümrük,0,1,2,0-1,2019-20_tr2.txt
+14.00,Keçiörengücü,Adanaspor,2,0,1,2-0,2019-20_tr2.txt
+,Ümraniyespor,Hatayspor,0,0,X,,2019-20_tr2.txt
+16.30,Boluspor,Bursaspor,1,1,X,0-0,2019-20_tr2.txt
+19.00,Adanaspor,Giresunspor,1,1,X,0-0,2019-20_tr2.txt
+14.00,Fatih Karagümrük,Ümraniyespor,2,3,2,1-0,2019-20_tr2.txt
+,ehirspor,BB Erzurumspor,1,2,2,1-1,2019-20_tr2.txt
+19.00,Bursaspor,Keçiörengücü,1,0,1,1-0,2019-20_tr2.txt
+,spor FK,Adana Demirspor,2,3,2,0-3,2019-20_tr2.txt
+19.00,Akhisar Belediyespor,Altay Izmir,2,1,1,0-0,2019-20_tr2.txt
+,nordu FK,Boluspor,2,0,1,1-0,2019-20_tr2.txt
+,,Fatih Karagümrük,4,0,1,2-0,2019-20_tr2.txt
+19.00,Adanaspor,Bursaspor,2,3,2,1-2,2019-20_tr2.txt
+14.00,Giresunspor,Adana Demirspor,1,0,1,1-0,2019-20_tr2.txt
+,Ümraniyespor,Akhisar Belediyespor,2,2,X,1-2,2019-20_tr2.txt
+16.30,Boluspor,Menemen Belediyespor,2,2,X,2-1,2019-20_tr2.txt
+,kesirspor,Hatayspor,0,1,2,0-0,2019-20_tr2.txt
+,ehirspor,Ümraniyespor,3,1,1,2-0,2019-20_tr2.txt
+14.00,Hatayspor,Boluspor,3,0,1,1-0,2019-20_tr2.txt
+,spor FK,Altay Izmir,0,0,X,,2019-20_tr2.txt
+,nordu FK,Adanaspor,1,0,1,0-0,2019-20_tr2.txt
+,Bursaspor,Giresunspor,2,3,2,0-2,2019-20_tr2.txt
+19.00,Adana Demirspor,BB Erzurumspor,1,0,1,0-0,2019-20_tr2.txt
+19.00,Menemen Belediyespor,Keçiörengücü,1,1,X,0-0,2019-20_tr2.txt
+19.00,Altay Izmir,Adana Demirspor,1,0,1,1-0,2019-20_tr2.txt
+14.00,Boluspor,Fatih Karagümrük,0,2,2,0-2,2019-20_tr2.txt
+,BB Erzurumspor,Giresunspor,2,0,1,0-0,2019-20_tr2.txt
+19.00,Adanaspor,Menemen Belediyespor,1,3,2,0-2,2019-20_tr2.txt
+14.00,Keçiörengücü,Hatayspor,0,1,2,0-0,2019-20_tr2.txt
+,kesirspor,Akhisar Belediyespor,0,0,X,,2019-20_tr2.txt
+,nordu FK,Bursaspor,0,0,X,,2019-20_tr2.txt
+19.00,Adana Demirspor,Ümraniyespor,4,2,1,3-0,2019-20_tr2.txt
+14.00,Hatayspor,Adanaspor,1,0,1,0-0,2019-20_tr2.txt
+19.00,Akhisar Belediyespor,Boluspor,0,0,X,,2019-20_tr2.txt
+14.00,BB Erzurumspor,Altay Izmir,1,3,2,1-2,2019-20_tr2.txt
+16.30,Fatih Karagümrük,Keçiörengücü,0,2,2,0-0,2019-20_tr2.txt
+19.00,Menemen Belediyespor,Bursaspor,2,1,1,0-1,2019-20_tr2.txt
+19.00,Adanaspor,Fatih Karagümrük,2,0,1,1-0,2019-20_tr2.txt
+14.00,Ümraniyespor,BB Erzurumspor,1,2,2,0-0,2019-20_tr2.txt
+,Bursaspor,Hatayspor,2,1,1,1-1,2019-20_tr2.txt
+,nordu FK,Menemen Belediyespor,1,0,1,1-0,2019-20_tr2.txt
+,Keçiörengücü,Akhisar Belediyespor,1,0,1,0-0,2019-20_tr2.txt
+,,Adana Demirspor,0,2,2,0-2,2019-20_tr2.txt
+19.00,Altay Izmir,Giresunspor,0,0,X,,2019-20_tr2.txt
+19.00,Menemen Belediyespor,Giresunspor,0,3,2,0-1,2019-20_tr2.txt
+14.00,Ümraniyespor,Altay Izmir,1,0,1,0-0,2019-20_tr2.txt
+16.30,Adanaspor,Akhisar Belediyespor,0,0,X,,2019-20_tr2.txt
+,nordu FK,Hatayspor,2,2,X,2-1,2019-20_tr2.txt
+,,BB Erzurumspor,1,1,X,0-1,2019-20_tr2.txt
+19.00,Bursaspor,Fatih Karagümrük,2,1,1,1-0,2019-20_tr2.txt
+,kesirspor,Adana Demirspor,1,6,2,0-4,2019-20_tr2.txt
+19.00,Akhisar Belediyespor,Bursaspor,0,1,2,0-0,2019-20_tr2.txt
+14.00,Giresunspor,Ümraniyespor,2,1,1,1-0,2019-20_tr2.txt
+,spor FK,Keçiörengücü,0,0,X,,2019-20_tr2.txt
+,Hatayspor,Menemen Belediyespor,2,0,1,0-0,2019-20_tr2.txt
+,ehirspor,Adanaspor,0,0,X,,2019-20_tr2.txt
+19.00,Adana Demirspor,Boluspor,2,2,X,1-0,2019-20_tr2.txt
+14.00,Keçiörengücü,Adana Demirspor,1,3,2,0-0,2019-20_tr2.txt
+16.30,Boluspor,BB Erzurumspor,1,1,X,1-1,2019-20_tr2.txt
+19.00,Menemen Belediyespor,Fatih Karagümrük,0,1,2,0-0,2019-20_tr2.txt
+14.00,Hatayspor,Giresunspor,1,1,X,0-0,2019-20_tr2.txt
+,nordu FK,Akhisar Belediyespor,2,0,1,1-0,2019-20_tr2.txt
+,kesirspor,Altay Izmir,0,0,X,,2019-20_tr2.txt
+,,Ümraniyespor,2,1,1,0-0,2019-20_tr2.txt
+19.00,Fatih Karagümrük,Hatayspor,1,1,X,0-0,2019-20_tr2.txt
+19.00,Adana Demirspor,Adanaspor,4,1,1,2-0,2019-20_tr2.txt
+,spor FK,Bursaspor,2,4,2,2-1,2019-20_tr2.txt
+19.00,Altay Izmir,Boluspor,2,1,1,0-1,2019-20_tr2.txt
+14.00,BB Erzurumspor,Keçiörengücü,1,0,1,0-0,2019-20_tr2.txt
+19.00,Akhisar Belediyespor,Menemen Belediyespor,2,2,X,1-0,2019-20_tr2.txt
+14.00,Hatayspor,Akhisar Belediyespor,2,3,2,1-3,2019-20_tr2.txt
+16.30,Boluspor,Ümraniyespor,1,1,X,1-0,2019-20_tr2.txt
+14.00,Keçiörengücü,Altay Izmir,2,0,1,1-0,2019-20_tr2.txt
+16.30,Bursaspor,Adana Demirspor,2,1,1,2-0,2019-20_tr2.txt
+,Fatih Karagümrük,Giresunspor,2,1,1,1-0,2019-20_tr2.txt
+19.00,Adanaspor,BB Erzurumspor,0,0,X,,2019-20_tr2.txt
+,ehirspor,Hatayspor,0,1,2,0-0,2019-20_tr2.txt
+,spor FK,Menemen Belediyespor,2,0,1,0-0,2019-20_tr2.txt
+14.00,BB Erzurumspor,Bursaspor,2,1,1,0-0,2019-20_tr2.txt
+,Ümraniyespor,Keçiörengücü,2,0,1,1-0,2019-20_tr2.txt
+16.30,Akhisar Belediyespor,Fatih Karagümrük,0,2,2,0-2,2019-20_tr2.txt
+16.30,Altay Izmir,Adanaspor,3,1,1,2-0,2019-20_tr2.txt
+,,Boluspor,0,0,X,,2019-20_tr2.txt
+16.30,Menemen Belediyespor,Adana Demirspor,2,3,2,2-1,2019-20_tr2.txt
+16.30,Akhisar Belediyespor,Giresunspor,2,0,1,2-0,2019-20_tr2.txt
+,nordu FK,BB Erzurumspor,2,1,1,0-0,2019-20_tr2.txt
+19.00,Adanaspor,Ümraniyespor,0,1,2,0-1,2019-20_tr2.txt
+19.00,Bursaspor,Altay Izmir,2,2,X,1-2,2019-20_tr2.txt
+,spor FK,Fatih Karagümrük,1,1,X,0-0,2019-20_tr2.txt
+,ehirspor,Akhisar Belediyespor,1,2,2,0-2,2019-20_tr2.txt
+19.00,Adana Demirspor,Hatayspor,1,1,X,0-0,2019-20_tr2.txt
+14.00,BB Erzurumspor,Menemen Belediyespor,2,0,1,1-0,2019-20_tr2.txt
+,Ümraniyespor,Bursaspor,1,1,X,0-1,2019-20_tr2.txt
+,,Adanaspor,1,0,1,1-0,2019-20_tr2.txt
+,kesirspor,Keçiörengücü,2,2,X,0-0,2019-20_tr2.txt
+,Giresunspor,Boluspor,2,0,1,1-0,2019-20_tr2.txt
+,Menemen Belediyespor,Altay Izmir,1,1,X,1-1,2019-20_tr2.txt
+14.00,Hatayspor,BB Erzurumspor,0,0,X,,2019-20_tr2.txt
+,Keçiörengücü,Boluspor,0,1,2,0-1,2019-20_tr2.txt
+,ehirspor,Giresunspor,0,2,2,0-1,2019-20_tr2.txt
+,Fatih Karagümrük,Adana Demirspor,2,2,X,1-0,2019-20_tr2.txt
+,nordu FK,Ümraniyespor,1,2,2,0-1,2019-20_tr2.txt
+14.00,Boluspor,Adanaspor,2,1,1,0-1,2019-20_tr2.txt
+16.30,Altay Izmir,Hatayspor,2,1,1,0-0,2019-20_tr2.txt
+,BB Erzurumspor,Fatih Karagümrük,1,3,2,1-0,2019-20_tr2.txt
+,kesirspor,Bursaspor,1,3,2,0-2,2019-20_tr2.txt
+14.00,Ümraniyespor,Menemen Belediyespor,1,1,X,1-0,2019-20_tr2.txt
+16.30,Giresunspor,Keçiörengücü,1,0,1,1-0,2019-20_tr2.txt
+19.00,Adana Demirspor,Akhisar Belediyespor,2,3,2,0-1,2019-20_tr2.txt
+16.30,Fatih Karagümrük,Altay Izmir,2,2,X,2-0,2019-20_tr2.txt
+19.00,Bursaspor,Boluspor,1,1,X,1-1,2019-20_tr2.txt
+14.00,Hatayspor,Ümraniyespor,2,0,1,0-0,2019-20_tr2.txt
+16.30,Adanaspor,Keçiörengücü,1,1,X,1-1,2019-20_tr2.txt
+19.00,Akhisar Belediyespor,BB Erzurumspor,0,0,X,,2019-20_tr2.txt
+,spor FK,Giresunspor,1,1,X,0-0,2019-20_tr2.txt
+,ehirspor,Adana Demirspor,1,4,2,0-2,2019-20_tr2.txt
+20.00,Giresunspor,Adanaspor,3,1,1,0-0,2019-20_tr2.txt
+,,Hatayspor,2,2,X,1-0,2019-20_tr2.txt
+17.30,Keçiörengücü,Bursaspor,1,0,1,0-0,2019-20_tr2.txt
+,kesirspor,Menemen Belediyespor,0,1,2,0-0,2019-20_tr2.txt
+17.30,Ümraniyespor,Fatih Karagümrük,1,1,X,1-1,2019-20_tr2.txt
+20.00,Altay Izmir,Akhisar Belediyespor,3,1,1,2-1,2019-20_tr2.txt
+,nordu FK,Keçiörengücü,1,2,2,0-1,2019-20_tr2.txt
+,Bursaspor,Adanaspor,1,0,1,1-0,2019-20_tr2.txt
+,ehirspor,Altay Izmir,2,2,X,0-0,2019-20_tr2.txt
+,spor FK,BB Erzurumspor,1,3,2,1-2,2019-20_tr2.txt
+20.00,Adana Demirspor,Giresunspor,4,2,1,2-0,2019-20_tr2.txt
+,Menemen Belediyespor,Boluspor,1,1,X,0-0,2019-20_tr2.txt
+20.00,Akhisar Belediyespor,Ümraniyespor,1,0,1,0-0,2019-20_tr2.txt
+17.30,Keçiörengücü,Menemen Belediyespor,2,1,1,0-1,2019-20_tr2.txt
+20.00,Giresunspor,Bursaspor,0,1,2,0-0,2019-20_tr2.txt
+17.30,Boluspor,Hatayspor,1,0,1,0-0,2019-20_tr2.txt
+,BB Erzurumspor,Adana Demirspor,1,2,2,1-0,2019-20_tr2.txt
+,kesirspor,Fatih Karagümrük,0,5,2,0-0,2019-20_tr2.txt
+,,Akhisar Belediyespor,0,1,2,0-0,2019-20_tr2.txt
+,Menemen Belediyespor,Adanaspor,4,2,1,2-1,2019-20_tr2.txt
+17.30,Giresunspor,BB Erzurumspor,0,2,2,0-2,2019-20_tr2.txt
+,Hatayspor,Keçiörengücü,1,0,1,0-0,2019-20_tr2.txt
+20.00,Adana Demirspor,Altay Izmir,2,2,X,1-0,2019-20_tr2.txt
+,spor FK,Ümraniyespor,3,2,1,1-1,2019-20_tr2.txt
+17.30,Fatih Karagümrük,Boluspor,3,1,1,1-0,2019-20_tr2.txt
+17.30,Adanaspor,Hatayspor,1,2,2,0-0,2019-20_tr2.txt
+,Altay Izmir,BB Erzurumspor,0,1,2,0-0,2019-20_tr2.txt
+,nordu FK,Giresunspor,3,1,1,2-1,2019-20_tr2.txt
+,Boluspor,Akhisar Belediyespor,0,1,2,0-1,2019-20_tr2.txt
+,Bursaspor,Menemen Belediyespor,2,2,X,2-1,2019-20_tr2.txt
+,Keçiörengücü,Fatih Karagümrük,3,0,1,2-0,2019-20_tr2.txt
+,Ümraniyespor,Adana Demirspor,2,3,2,0-2,2019-20_tr2.txt
+,Akhisar Belediyespor,Keçiörengücü,3,4,2,0-3,2019-20_tr2.txt
+,BB Erzurumspor,Ümraniyespor,4,1,1,2-0,2019-20_tr2.txt
+,Giresunspor,Altay Izmir,1,2,2,0-2,2019-20_tr2.txt
+,Hatayspor,Bursaspor,3,1,1,2-0,2019-20_tr2.txt
+,Fatih Karagümrük,Adanaspor,3,0,1,1-0,2019-20_tr2.txt
+,ehirspor,Boluspor,0,3,2,0-1,2019-20_tr2.txt
+21.00,Bursaspor,Adana Demirspor,0,0,X,,2019-20_tr2.txt
+,Fatih Karagümrük,Akhisar Belediyespor,3,3,X,1-1,2019-20_tr2.txt
+21.00,Adana Demirspor,Bursaspor,4,1,1,0-0,2019-20_tr2.txt
+,Akhisar Belediyespor,Fatih Karagümrük,0,1,2,0-0,2019-20_tr2.txt
+21.00,Adana Demirspor,Fatih Karagümrük,5,6,2,,2019-20_tr2.txt
+20.00,Çaykur Rizespor,Fenerbahçe,1,2,2,0-0,2020-21_tr1.txt
+17.00,Fatih Karagümrük,Yeni Malatyaspor,3,0,1,1-0,2020-21_tr1.txt
+,Sivasspor,Alanyaspor,0,2,2,0-1,2020-21_tr1.txt
+20.00,Galatasaray,Gaziantep FK,3,1,1,3-0,2020-21_tr1.txt
+,Göztepe,Denizlispor,5,1,1,3-0,2020-21_tr1.txt
+17.00,MKE Ankaragücü,BB Erzurumspor,1,2,2,0-0,2020-21_tr1.txt
+20.00,Yeni Malatyaspor,Göztepe,1,1,X,1-1,2020-21_tr1.txt
+,i,Konyaspor,0,0,X,,2020-21_tr1.txt
+16.00,Denizlispor,Trabzonspor,0,0,X,,2020-21_tr1.txt
+19.00,Alanyaspor,Kayserispor,2,0,1,1-0,2020-21_tr1.txt
+,,Antalyaspor,1,1,X,1-0,2020-21_tr1.txt
+13.30,BB Erzurumspor,Sivasspor,1,2,2,0-0,2020-21_tr1.txt
+,a SK,Çaykur Rizespor,2,0,1,1-0,2020-21_tr1.txt
+19.00,Gaziantep FK,Fatih Karagümrük,2,2,X,0-1,2020-21_tr1.txt
+,ehir,Galatasaray,0,2,2,0-1,2020-21_tr1.txt
+20.00,Fenerbahçe,Hatayspor,0,0,X,,2020-21_tr1.txt
+13.30,Kayserispor,BB Erzurumspor,1,3,2,0-2,2020-21_tr1.txt
+16.00,Göztepe,Gaziantep FK,2,2,X,0-1,2020-21_tr1.txt
+19.00,Trabzonspor,Yeni Malatyaspor,3,1,1,3-0,2020-21_tr1.txt
+13.30,Çaykur Rizespor,Alanyaspor,1,1,X,0-0,2020-21_tr1.txt
+,Sivasspor,MKE Ankaragücü,0,0,X,,2020-21_tr1.txt
+19.00,Galatasaray,Fenerbahçe,0,0,X,,2020-21_tr1.txt
+20.00,Antalyaspor,Denizlispor,1,0,1,0-0,2020-21_tr1.txt
+20.00,MKE Ankaragücü,Kayserispor,0,1,2,0-1,2020-21_tr1.txt
+,Gaziantep FK,Trabzonspor,1,1,X,0-0,2020-21_tr1.txt
+13.30,Yeni Malatyaspor,Antalyaspor,1,0,1,1-0,2020-21_tr1.txt
+16.00,BB Erzurumspor,Çaykur Rizespor,0,0,X,,2020-21_tr1.txt
+,ehir,Göztepe,0,0,X,,2020-21_tr1.txt
+19.00,Fenerbahçe,Fatih Karagümrük,2,1,1,1-0,2020-21_tr1.txt
+13.30,Denizlispor,Konyaspor,0,0,X,,2020-21_tr1.txt
+16.00,Alanyaspor,Hatayspor,6,0,1,4-0,2020-21_tr1.txt
+,a SK,Galatasaray,1,0,1,1-0,2020-21_tr1.txt
+13.30,Çaykur Rizespor,MKE Ankaragücü,5,3,1,2-3,2020-21_tr1.txt
+16.00,Kayserispor,Sivasspor,1,3,2,0-1,2020-21_tr1.txt
+,Konyaspor,Yeni Malatyaspor,1,1,X,0-0,2020-21_tr1.txt
+16.00,Antalyaspor,Gaziantep FK,1,1,X,1-0,2020-21_tr1.txt
+19.00,Göztepe,Fenerbahçe,2,3,2,1-2,2020-21_tr1.txt
+20.00,Galatasaray,Alanyaspor,1,2,2,1-1,2020-21_tr1.txt
+,i,Denizlispor,1,2,2,0-2,2020-21_tr1.txt
+19.30,Hatayspor,BB Erzurumspor,3,0,1,1-0,2020-21_tr1.txt
+,a SK,Göztepe,0,0,X,,2020-21_tr1.txt
+16.00,Gaziantep FK,Konyaspor,1,0,1,0-0,2020-21_tr1.txt
+19.00,BB Erzurumspor,Galatasaray,1,2,2,1-1,2020-21_tr1.txt
+,ehir,Antalyaspor,5,1,1,4-1,2020-21_tr1.txt
+16.00,Alanyaspor,Fatih Karagümrük,2,0,1,1-0,2020-21_tr1.txt
+19.00,Fenerbahçe,Trabzonspor,3,1,1,0-1,2020-21_tr1.txt
+,Sivasspor,Çaykur Rizespor,0,2,2,0-1,2020-21_tr1.txt
+16.00,MKE Ankaragücü,Hatayspor,2,0,1,0-0,2020-21_tr1.txt
+20.00,Fatih Karagümrük,BB Erzurumspor,5,1,1,3-0,2020-21_tr1.txt
+,i,Gaziantep FK,1,1,X,0-1,2020-21_tr1.txt
+19.00,Galatasaray,MKE Ankaragücü,1,0,1,1-0,2020-21_tr1.txt
+13.30,Çaykur Rizespor,Kayserispor,1,0,1,1-0,2020-21_tr1.txt
+,,Yeni Malatyaspor,1,0,1,0-0,2020-21_tr1.txt
+20.00,Antalyaspor,Fenerbahçe,1,2,2,0-0,2020-21_tr1.txt
+,Hatayspor,Sivasspor,1,1,X,1-1,2020-21_tr1.txt
+18.30,Göztepe,Alanyaspor,1,0,1,0-0,2020-21_tr1.txt
+,a SK,Antalyaspor,2,2,X,1-0,2020-21_tr1.txt
+16.00,Alanyaspor,Trabzonspor,1,1,X,0-0,2020-21_tr1.txt
+,BB Erzurumspor,Göztepe,1,1,X,0-1,2020-21_tr1.txt
+19.00,Fenerbahçe,Konyaspor,0,2,2,0-0,2020-21_tr1.txt
+13.30,MKE Ankaragücü,Fatih Karagümrük,2,2,X,1-2,2020-21_tr1.txt
+,Yeni Malatyaspor,Denizlispor,2,0,1,2-0,2020-21_tr1.txt
+,Kayserispor,Hatayspor,0,1,2,0-0,2020-21_tr1.txt
+19.00,Sivasspor,Galatasaray,1,2,2,0-1,2020-21_tr1.txt
+13.30,Fatih Karagümrük,Sivasspor,1,1,X,0-1,2020-21_tr1.txt
+16.00,Denizlispor,Gaziantep FK,0,1,2,0-1,2020-21_tr1.txt
+,i,Fenerbahçe,1,5,2,1-2,2020-21_tr1.txt
+13.30,Hatayspor,Çaykur Rizespor,2,2,X,1-1,2020-21_tr1.txt
+16.00,Göztepe,MKE Ankaragücü,3,1,1,1-0,2020-21_tr1.txt
+19.00,Antalyaspor,Alanyaspor,0,2,2,0-0,2020-21_tr1.txt
+,Trabzonspor,BB Erzurumspor,1,0,1,1-0,2020-21_tr1.txt
+19.30,Galatasaray,Kayserispor,1,1,X,0-0,2020-21_tr1.txt
+19.30,MKE Ankaragücü,Trabzonspor,0,1,2,0-1,2020-21_tr1.txt
+13.30,Gaziantep FK,Yeni Malatyaspor,2,2,X,1-0,2020-21_tr1.txt
+,ehir,Denizlispor,3,3,X,2-0,2020-21_tr1.txt
+19.00,Çaykur Rizespor,Galatasaray,0,4,2,0-1,2020-21_tr1.txt
+13.30,BB Erzurumspor,Antalyaspor,2,2,X,1-0,2020-21_tr1.txt
+16.00,Alanyaspor,Konyaspor,1,0,1,1-0,2020-21_tr1.txt
+19.30,Kayserispor,Fatih Karagümrük,0,0,X,,2020-21_tr1.txt
+,Sivasspor,Göztepe,0,1,2,0-0,2020-21_tr1.txt
+,i,Alanyaspor,2,1,1,1-0,2020-21_tr1.txt
+,Göztepe,Kayserispor,1,1,X,0-0,2020-21_tr1.txt
+16.00,Konyaspor,BB Erzurumspor,2,0,1,1-0,2020-21_tr1.txt
+19.00,Galatasaray,Hatayspor,3,0,1,1-0,2020-21_tr1.txt
+13.30,Fatih Karagümrük,Çaykur Rizespor,2,1,1,2-1,2020-21_tr1.txt
+16.00,Antalyaspor,MKE Ankaragücü,1,0,1,1-0,2020-21_tr1.txt
+19.00,Denizlispor,Fenerbahçe,0,2,2,0-2,2020-21_tr1.txt
+19.30,Trabzonspor,Sivasspor,1,1,X,1-0,2020-21_tr1.txt
+,a SK,Denizlispor,3,2,1,2-1,2020-21_tr1.txt
+13.30,Hatayspor,Fatih Karagümrük,3,1,1,1-0,2020-21_tr1.txt
+16.00,Çaykur Rizespor,Göztepe,3,2,1,1-0,2020-21_tr1.txt
+,Kayserispor,Trabzonspor,0,0,X,,2020-21_tr1.txt
+19.00,MKE Ankaragücü,Konyaspor,4,3,1,1-2,2020-21_tr1.txt
+,Fenerbahçe,Yeni Malatyaspor,0,3,2,0-2,2020-21_tr1.txt
+,ehir,Gaziantep FK,1,2,2,0-1,2020-21_tr1.txt
+19.00,Sivasspor,Antalyaspor,0,0,X,,2020-21_tr1.txt
+19.00,Fatih Karagümrük,Galatasaray,2,1,1,0-0,2020-21_tr1.txt
+13.30,Göztepe,Hatayspor,0,1,2,0-0,2020-21_tr1.txt
+16.00,Trabzonspor,Çaykur Rizespor,2,1,1,0-1,2020-21_tr1.txt
+19.00,Gaziantep FK,Fenerbahçe,3,1,1,2-1,2020-21_tr1.txt
+,i,MKE Ankaragücü,1,1,X,0-0,2020-21_tr1.txt
+16.00,Denizlispor,Alanyaspor,1,0,1,1-0,2020-21_tr1.txt
+,,BB Erzurumspor,4,0,1,0-0,2020-21_tr1.txt
+19.00,Antalyaspor,Kayserispor,2,0,1,2-0,2020-21_tr1.txt
+,Konyaspor,Sivasspor,0,1,2,0-0,2020-21_tr1.txt
+16.00,Hatayspor,Trabzonspor,0,1,2,0-0,2020-21_tr1.txt
+19.00,Galatasaray,Göztepe,3,1,1,2-1,2020-21_tr1.txt
+16.00,Alanyaspor,Yeni Malatyaspor,1,1,X,1-0,2020-21_tr1.txt
+,BB Erzurumspor,Denizlispor,1,2,2,0-1,2020-21_tr1.txt
+,a SK,Gaziantep FK,0,4,2,0-2,2020-21_tr1.txt
+16.00,Kayserispor,Konyaspor,1,2,2,1-0,2020-21_tr1.txt
+,Çaykur Rizespor,Antalyaspor,2,1,1,1-0,2020-21_tr1.txt
+16.00,Göztepe,Fatih Karagümrük,1,1,X,1-0,2020-21_tr1.txt
+19.00,Trabzonspor,Galatasaray,0,2,2,0-1,2020-21_tr1.txt
+13.30,Gaziantep FK,Alanyaspor,3,1,1,2-1,2020-21_tr1.txt
+16.00,Denizlispor,MKE Ankaragücü,1,2,2,0-2,2020-21_tr1.txt
+,Yeni Malatyaspor,BB Erzurumspor,1,3,2,0-1,2020-21_tr1.txt
+,i,Kayserispor,3,2,1,1-1,2020-21_tr1.txt
+,Konyaspor,Çaykur Rizespor,1,1,X,1-0,2020-21_tr1.txt
+,,Sivasspor,3,0,1,1-0,2020-21_tr1.txt
+19.00,Antalyaspor,Hatayspor,0,6,2,0-5,2020-21_tr1.txt
+13.30,BB Erzurumspor,Gaziantep FK,1,1,X,0-0,2020-21_tr1.txt
+,Sivasspor,Denizlispor,2,2,X,2-1,2020-21_tr1.txt
+,MKE Ankaragücü,Yeni Malatyaspor,3,1,1,2-0,2020-21_tr1.txt
+19.00,Galatasaray,Antalyaspor,0,0,X,,2020-21_tr1.txt
+,Hatayspor,Konyaspor,2,1,1,1-1,2020-21_tr1.txt
+16.00,Fatih Karagümrük,Trabzonspor,1,2,2,0-0,2020-21_tr1.txt
+,a SK,Fenerbahçe,0,3,2,0-2,2020-21_tr1.txt
+16.00,Gaziantep FK,MKE Ankaragücü,2,0,1,0-0,2020-21_tr1.txt
+,Yeni Malatyaspor,Sivasspor,2,2,X,1-2,2020-21_tr1.txt
+19.00,Konyaspor,Galatasaray,4,3,1,1-1,2020-21_tr1.txt
+13.30,Denizlispor,Kayserispor,0,1,2,0-1,2020-21_tr1.txt
+,i,Hatayspor,3,1,1,1-1,2020-21_tr1.txt
+,ehir,BB Erzurumspor,1,0,1,1-0,2020-21_tr1.txt
+,Trabzonspor,Göztepe,1,0,1,1-0,2020-21_tr1.txt
+19.00,Antalyaspor,Fatih Karagümrük,3,1,1,2-1,2020-21_tr1.txt
+,,Çaykur Rizespor,6,0,1,2-0,2020-21_tr1.txt
+19.00,Fenerbahçe,Alanyaspor,2,1,1,1-0,2020-21_tr1.txt
+13.30,Sivasspor,Gaziantep FK,2,1,1,1-1,2020-21_tr1.txt
+16.00,Göztepe,Antalyaspor,0,1,2,0-0,2020-21_tr1.txt
+,Kayserispor,Yeni Malatyaspor,1,0,1,1-0,2020-21_tr1.txt
+13.30,Fatih Karagümrük,Konyaspor,2,1,1,0-0,2020-21_tr1.txt
+,Çaykur Rizespor,Denizlispor,1,1,X,0-1,2020-21_tr1.txt
+16.00,BB Erzurumspor,Fenerbahçe,0,3,2,0-1,2020-21_tr1.txt
+,i,Fatih Karagümrük,1,3,2,0-2,2020-21_tr1.txt
+13.30,Konyaspor,Göztepe,2,3,2,0-2,2020-21_tr1.txt
+16.00,Gaziantep FK,Kayserispor,2,1,1,1-0,2020-21_tr1.txt
+,ehir,Sivasspor,1,1,X,1-1,2020-21_tr1.txt
+19.00,Antalyaspor,Trabzonspor,1,1,X,1-0,2020-21_tr1.txt
+13.30,Denizlispor,Hatayspor,0,2,2,0-0,2020-21_tr1.txt
+16.00,Yeni Malatyaspor,Çaykur Rizespor,4,1,1,0-1,2020-21_tr1.txt
+,,Galatasaray,2,0,1,0-0,2020-21_tr1.txt
+19.00,Fenerbahçe,MKE Ankaragücü,3,1,1,2-0,2020-21_tr1.txt
+,a SK,BB Erzurumspor,1,2,2,0-1,2020-21_tr1.txt
+19.00,Trabzonspor,Konyaspor,3,1,1,1-0,2020-21_tr1.txt
+16.00,Çaykur Rizespor,Gaziantep FK,3,0,1,1-0,2020-21_tr1.txt
+,Hatayspor,Yeni Malatyaspor,1,2,2,0-0,2020-21_tr1.txt
+19.00,Galatasaray,Denizlispor,6,1,1,3-0,2020-21_tr1.txt
+16.00,BB Erzurumspor,Alanyaspor,1,1,X,1-0,2020-21_tr1.txt
+,Sivasspor,Fenerbahçe,1,1,X,1-1,2020-21_tr1.txt
+,i,Trabzonspor,1,2,2,0-1,2020-21_tr1.txt
+,ehir,Çaykur Rizespor,1,1,X,0-0,2020-21_tr1.txt
+13.30,Konyaspor,Antalyaspor,0,0,X,,2020-21_tr1.txt
+16.00,Denizlispor,Fatih Karagümrük,1,2,2,0-1,2020-21_tr1.txt
+,Yeni Malatyaspor,Galatasaray,0,1,2,0-0,2020-21_tr1.txt
+,,Göztepe,2,1,1,0-1,2020-21_tr1.txt
+,Gaziantep FK,Hatayspor,1,1,X,1-0,2020-21_tr1.txt
+,a SK,Sivasspor,2,0,1,2-0,2020-21_tr1.txt
+19.00,Alanyaspor,MKE Ankaragücü,4,3,1,1-2,2020-21_tr1.txt
+,Fenerbahçe,Kayserispor,3,0,1,1-0,2020-21_tr1.txt
+16.00,Yeni Malatyaspor,Fatih Karagümrük,0,0,X,,2020-21_tr1.txt
+19.00,Gaziantep FK,Galatasaray,1,2,2,0-0,2020-21_tr1.txt
+,a SK,Kayserispor,0,1,2,0-0,2020-21_tr1.txt
+,ehir,Hatayspor,1,5,2,0-3,2020-21_tr1.txt
+19.00,Fenerbahçe,Çaykur Rizespor,1,0,1,1-0,2020-21_tr1.txt
+13.30,BB Erzurumspor,MKE Ankaragücü,1,0,1,0-0,2020-21_tr1.txt
+16.00,Alanyaspor,Sivasspor,3,1,1,2-0,2020-21_tr1.txt
+,Denizlispor,Göztepe,2,1,1,1-0,2020-21_tr1.txt
+,i,Antalyaspor,0,1,2,0-0,2020-21_tr1.txt
+,,Trabzonspor,1,2,2,1-1,2020-21_tr1.txt
+16.00,Hatayspor,Fenerbahçe,1,2,2,0-1,2020-21_tr1.txt
+13.30,Sivasspor,BB Erzurumspor,0,0,X,,2020-21_tr1.txt
+16.00,Fatih Karagümrük,Gaziantep FK,2,0,1,0-0,2020-21_tr1.txt
+,Kayserispor,Alanyaspor,1,1,X,0-0,2020-21_tr1.txt
+16.00,Göztepe,Yeni Malatyaspor,2,2,X,1-1,2020-21_tr1.txt
+19.00,Trabzonspor,Denizlispor,1,0,1,0-0,2020-21_tr1.txt
+,a SK,Hatayspor,1,4,2,0-1,2020-21_tr1.txt
+16.00,Alanyaspor,Çaykur Rizespor,2,1,1,1-1,2020-21_tr1.txt
+,ehir,Fatih Karagümrük,0,1,2,0-0,2020-21_tr1.txt
+19.00,Fenerbahçe,Galatasaray,0,1,2,0-0,2020-21_tr1.txt
+13.30,BB Erzurumspor,Kayserispor,1,1,X,1-0,2020-21_tr1.txt
+16.00,MKE Ankaragücü,Sivasspor,1,4,2,0-1,2020-21_tr1.txt
+,Denizlispor,Antalyaspor,1,1,X,1-0,2020-21_tr1.txt
+,,Konyaspor,1,0,1,0-0,2020-21_tr1.txt
+16.00,Gaziantep FK,Göztepe,2,0,1,0-0,2020-21_tr1.txt
+19.00,Yeni Malatyaspor,Trabzonspor,0,2,2,0-0,2020-21_tr1.txt
+19.00,Çaykur Rizespor,BB Erzurumspor,0,2,2,0-0,2020-21_tr1.txt
+13.30,Kayserispor,MKE Ankaragücü,0,0,X,,2020-21_tr1.txt
+16.00,Trabzonspor,Gaziantep FK,1,0,1,0-0,2020-21_tr1.txt
+19.00,Fatih Karagümrük,Fenerbahçe,1,2,2,0-1,2020-21_tr1.txt
+13.30,Konyaspor,Denizlispor,2,0,1,0-0,2020-21_tr1.txt
+,Hatayspor,Alanyaspor,0,0,X,,2020-21_tr1.txt
+19.00,Antalyaspor,Yeni Malatyaspor,1,1,X,1-1,2020-21_tr1.txt
+,ehir,Trabzonspor,0,1,2,0-0,2020-21_tr1.txt
+,a SK,Fatih Karagümrük,3,2,1,1-1,2020-21_tr1.txt
+,Yeni Malatyaspor,Konyaspor,2,3,2,2-0,2020-21_tr1.txt
+19.00,Alanyaspor,Galatasaray,0,1,2,0-1,2020-21_tr1.txt
+13.30,BB Erzurumspor,Hatayspor,1,3,2,0-2,2020-21_tr1.txt
+16.00,Gaziantep FK,Antalyaspor,0,0,X,,2020-21_tr1.txt
+,Sivasspor,Kayserispor,2,0,1,1-0,2020-21_tr1.txt
+19.00,Fenerbahçe,Göztepe,0,1,2,0-1,2020-21_tr1.txt
+19.00,MKE Ankaragücü,Çaykur Rizespor,1,1,X,1-1,2020-21_tr1.txt
+,i,Yeni Malatyaspor,1,1,X,0-1,2020-21_tr1.txt
+,Konyaspor,Gaziantep FK,0,0,X,,2020-21_tr1.txt
+,,Denizlispor,3,0,1,3-0,2020-21_tr1.txt
+13.30,Hatayspor,MKE Ankaragücü,4,1,1,1-1,2020-21_tr1.txt
+,Fatih Karagümrük,Alanyaspor,2,0,1,0-0,2020-21_tr1.txt
+,Çaykur Rizespor,Sivasspor,0,0,X,,2020-21_tr1.txt
+19.00,Galatasaray,BB Erzurumspor,2,0,1,2-0,2020-21_tr1.txt
+19.00,Trabzonspor,Fenerbahçe,0,1,2,0-0,2020-21_tr1.txt
+13.30,BB Erzurumspor,Fatih Karagümrük,2,2,X,1-1,2020-21_tr1.txt
+,ehir,Konyaspor,1,1,X,0-0,2020-21_tr1.txt
+,Sivasspor,Hatayspor,1,1,X,0-0,2020-21_tr1.txt
+19.00,MKE Ankaragücü,Galatasaray,2,1,1,1-0,2020-21_tr1.txt
+,Kayserispor,Çaykur Rizespor,2,1,1,0-0,2020-21_tr1.txt
+16.00,Alanyaspor,Göztepe,1,1,X,0-1,2020-21_tr1.txt
+,a SK,Trabzonspor,1,2,2,1-1,2020-21_tr1.txt
+19.00,Fenerbahçe,Antalyaspor,1,1,X,0-1,2020-21_tr1.txt
+16.00,Denizlispor,Yeni Malatyaspor,3,2,1,2-1,2020-21_tr1.txt
+,,Gaziantep FK,2,1,1,1-0,2020-21_tr1.txt
+13.30,Fatih Karagümrük,MKE Ankaragücü,0,1,2,0-0,2020-21_tr1.txt
+,Hatayspor,Kayserispor,1,3,2,0-2,2020-21_tr1.txt
+19.00,Galatasaray,Sivasspor,2,2,X,1-2,2020-21_tr1.txt
+,Trabzonspor,Alanyaspor,1,3,2,0-0,2020-21_tr1.txt
+19.00,Göztepe,BB Erzurumspor,3,1,1,1-0,2020-21_tr1.txt
+,Konyaspor,Fenerbahçe,0,3,2,0-2,2020-21_tr1.txt
+13.30,Sivasspor,Fatih Karagümrük,1,0,1,1-0,2020-21_tr1.txt
+16.00,Alanyaspor,Antalyaspor,4,0,1,2-0,2020-21_tr1.txt
+,Çaykur Rizespor,Hatayspor,1,0,1,0-0,2020-21_tr1.txt
+19.00,Kayserispor,Galatasaray,0,3,2,0-1,2020-21_tr1.txt
+13.30,MKE Ankaragücü,Göztepe,3,0,1,1-0,2020-21_tr1.txt
+16.00,BB Erzurumspor,Trabzonspor,0,0,X,,2020-21_tr1.txt
+,Gaziantep FK,Denizlispor,2,0,1,0-0,2020-21_tr1.txt
+,a SK,Konyaspor,1,1,X,0-0,2020-21_tr1.txt
+16.00,Fatih Karagümrük,Kayserispor,3,0,1,1-0,2020-21_tr1.txt
+19.00,Galatasaray,Çaykur Rizespor,3,4,2,2-2,2020-21_tr1.txt
+16.00,Göztepe,Sivasspor,3,5,2,0-4,2020-21_tr1.txt
+,Yeni Malatyaspor,Gaziantep FK,2,2,X,1-1,2020-21_tr1.txt
+19.00,Trabzonspor,MKE Ankaragücü,4,1,1,3-1,2020-21_tr1.txt
+13.30,Antalyaspor,BB Erzurumspor,3,1,1,0-1,2020-21_tr1.txt
+,Konyaspor,Alanyaspor,1,0,1,1-0,2020-21_tr1.txt
+,,Fenerbahçe,1,1,X,0-0,2020-21_tr1.txt
+13.30,Kayserispor,Göztepe,1,1,X,1-0,2020-21_tr1.txt
+16.00,Çaykur Rizespor,Fatih Karagümrük,0,0,X,,2020-21_tr1.txt
+,Sivasspor,Trabzonspor,0,0,X,,2020-21_tr1.txt
+19.00,Hatayspor,Galatasaray,3,0,1,2-0,2020-21_tr1.txt
+13.30,BB Erzurumspor,Konyaspor,1,2,2,1-2,2020-21_tr1.txt
+,MKE Ankaragücü,Antalyaspor,1,0,1,0-0,2020-21_tr1.txt
+,ehir,Yeni Malatyaspor,3,1,1,1-0,2020-21_tr1.txt
+19.00,Fenerbahçe,Denizlispor,1,0,1,0-0,2020-21_tr1.txt
+16.00,Göztepe,Çaykur Rizespor,2,0,1,0-0,2020-21_tr1.txt
+,Fatih Karagümrük,Hatayspor,1,0,1,0-0,2020-21_tr1.txt
+19.00,Trabzonspor,Kayserispor,1,1,X,1-1,2020-21_tr1.txt
+,i,BB Erzurumspor,1,1,X,1-0,2020-21_tr1.txt
+,Konyaspor,MKE Ankaragücü,1,1,X,0-0,2020-21_tr1.txt
+19.00,Antalyaspor,Sivasspor,2,4,2,1-2,2020-21_tr1.txt
+,,Alanyaspor,3,0,1,1-0,2020-21_tr1.txt
+19.00,Yeni Malatyaspor,Fenerbahçe,1,1,X,1-1,2020-21_tr1.txt
+13.30,Hatayspor,Göztepe,2,3,2,0-2,2020-21_tr1.txt
+16.00,Çaykur Rizespor,Trabzonspor,0,0,X,,2020-21_tr1.txt
+19.00,Galatasaray,Fatih Karagümrük,1,1,X,0-0,2020-21_tr1.txt
+13.30,Sivasspor,Konyaspor,3,1,1,1-0,2020-21_tr1.txt
+,Kayserispor,Antalyaspor,0,1,2,0-1,2020-21_tr1.txt
+,a SK,Yeni Malatyaspor,0,0,X,,2020-21_tr1.txt
+19.00,Alanyaspor,Denizlispor,3,2,1,0-1,2020-21_tr1.txt
+,Fenerbahçe,Gaziantep FK,3,1,1,0-0,2020-21_tr1.txt
+,i,Sivasspor,2,3,2,2-0,2020-21_tr1.txt
+,Konyaspor,Kayserispor,0,0,X,,2020-21_tr1.txt
+19.00,Antalyaspor,Çaykur Rizespor,2,3,2,1-2,2020-21_tr1.txt
+,,MKE Ankaragücü,2,2,X,1-0,2020-21_tr1.txt
+13.30,Denizlispor,BB Erzurumspor,2,3,2,0-1,2020-21_tr1.txt
+16.00,Trabzonspor,Hatayspor,1,1,X,1-0,2020-21_tr1.txt
+,Yeni Malatyaspor,Alanyaspor,1,0,1,0-0,2020-21_tr1.txt
+19.00,Göztepe,Galatasaray,1,3,2,1-2,2020-21_tr1.txt
+,ehir,Fenerbahçe,1,2,2,1-1,2020-21_tr1.txt
+16.00,Çaykur Rizespor,Konyaspor,5,3,1,2-2,2020-21_tr1.txt
+,Fatih Karagümrük,Göztepe,1,1,X,1-0,2020-21_tr1.txt
+19.00,Hatayspor,Antalyaspor,3,2,1,1-0,2020-21_tr1.txt
+16.00,MKE Ankaragücü,Denizlispor,1,1,X,1-1,2020-21_tr1.txt
+,BB Erzurumspor,Yeni Malatyaspor,1,0,1,0-0,2020-21_tr1.txt
+19.00,Galatasaray,Trabzonspor,1,1,X,0-0,2020-21_tr1.txt
+16.00,Alanyaspor,Gaziantep FK,3,2,1,2-2,2020-21_tr1.txt
+,i,Çaykur Rizespor,2,1,1,1-0,2020-21_tr1.txt
+13.30,Konyaspor,Hatayspor,0,0,X,,2020-21_tr1.txt
+16.00,Trabzonspor,Fatih Karagümrük,2,0,1,1-0,2020-21_tr1.txt
+20.30,Antalyaspor,Galatasaray,0,1,2,0-0,2020-21_tr1.txt
+,,Kayserispor,3,1,1,2-1,2020-21_tr1.txt
+,Denizlispor,Sivasspor,1,1,X,0-1,2020-21_tr1.txt
+13.30,Yeni Malatyaspor,MKE Ankaragücü,2,1,1,0-0,2020-21_tr1.txt
+16.00,Gaziantep FK,BB Erzurumspor,2,3,2,0-0,2020-21_tr1.txt
+,ehir,Alanyaspor,0,0,X,,2020-21_tr1.txt
+16.00,Göztepe,Trabzonspor,1,1,X,1-0,2020-21_tr1.txt
+,Fatih Karagümrük,Antalyaspor,2,2,X,2-1,2020-21_tr1.txt
+,Kayserispor,Denizlispor,6,3,1,3-1,2020-21_tr1.txt
+,Galatasaray,Konyaspor,1,0,1,0-0,2020-21_tr1.txt
+,Sivasspor,Yeni Malatyaspor,1,0,1,0-0,2020-21_tr1.txt
+20.30,Alanyaspor,Fenerbahçe,0,0,X,,2020-21_tr1.txt
+,MKE Ankaragücü,Gaziantep FK,0,1,2,0-0,2020-21_tr1.txt
+,,Hatayspor,7,0,1,5-0,2020-21_tr1.txt
+16.00,Antalyaspor,Göztepe,2,3,2,1-1,2020-21_tr1.txt
+,Denizlispor,Çaykur Rizespor,0,1,2,0-0,2020-21_tr1.txt
+,Konyaspor,Fatih Karagümrük,5,1,1,1-1,2020-21_tr1.txt
+,i,Galatasaray,0,2,2,0-1,2020-21_tr1.txt
+,ehir,MKE Ankaragücü,2,1,1,0-1,2020-21_tr1.txt
+,a SK,Alanyaspor,3,0,1,2-0,2020-21_tr1.txt
+,Yeni Malatyaspor,Kayserispor,1,1,X,0-1,2020-21_tr1.txt
+20.30,Fenerbahçe,BB Erzurumspor,3,1,1,3-0,2020-21_tr1.txt
+,Gaziantep FK,Sivasspor,0,1,2,0-1,2020-21_tr1.txt
+20.30,MKE Ankaragücü,Fenerbahçe,1,2,2,1-1,2020-21_tr1.txt
+,Çaykur Rizespor,Yeni Malatyaspor,0,4,2,0-2,2020-21_tr1.txt
+,Göztepe,Konyaspor,0,1,2,0-0,2020-21_tr1.txt
+,Hatayspor,Denizlispor,1,0,1,0-0,2020-21_tr1.txt
+,Kayserispor,Gaziantep FK,0,0,X,,2020-21_tr1.txt
+,Trabzonspor,Antalyaspor,2,1,1,1-0,2020-21_tr1.txt
+17.00,Konyaspor,Trabzonspor,1,1,X,0-0,2020-21_tr1.txt
+20.30,Alanyaspor,BB Erzurumspor,2,3,2,2-1,2020-21_tr1.txt
+,,Fatih Karagümrük,1,2,2,0-1,2020-21_tr1.txt
+,Denizlispor,Galatasaray,1,4,2,0-2,2020-21_tr1.txt
+,Fenerbahçe,Sivasspor,1,2,2,0-1,2020-21_tr1.txt
+,Gaziantep FK,Çaykur Rizespor,4,5,2,0-3,2020-21_tr1.txt
+,i,Göztepe,5,3,1,1-2,2020-21_tr1.txt
+,ehir,Kayserispor,0,0,X,,2020-21_tr1.txt
+,a SK,MKE Ankaragücü,3,1,1,2-0,2020-21_tr1.txt
+,Yeni Malatyaspor,Hatayspor,1,1,X,0-1,2020-21_tr1.txt
+18.00,MKE Ankaragücü,Alanyaspor,0,1,2,0-1,2020-21_tr1.txt
+,Antalyaspor,Konyaspor,0,0,X,,2020-21_tr1.txt
+,Hatayspor,Gaziantep FK,0,1,2,0-0,2020-21_tr1.txt
+,Fatih Karagümrük,Denizlispor,5,1,1,2-1,2020-21_tr1.txt
+20.30,Galatasaray,Yeni Malatyaspor,3,1,1,0-1,2020-21_tr1.txt
+,Kayserispor,Fenerbahçe,1,2,2,1-0,2020-21_tr1.txt
+21.00,Trabzonspor,Antalyaspor,1,0,1,1-0,2023-24_tr1.txt
+,a SK,MKE Ankaragücü,3,2,1,1-0,2023-24_tr1.txt
+21.45,Kayserispor,Galatasaray,0,0,X,,2023-24_tr1.txt
+,Pendikspor,Hatayspor,1,5,2,0-2,2023-24_tr1.txt
+19.15,Sivasspor,Samsunspor,1,1,X,1-0,2023-24_tr1.txt
+21.45,Adana Demirspor,Çaykur Rizespor,2,1,1,1-0,2023-24_tr1.txt
+,Fenerbahçe,Gaziantep FK,2,1,1,2-1,2023-24_tr1.txt
+,,Kayserispor,1,1,X,0-0,2023-24_tr1.txt
+,Antalyaspor,Konyaspor,1,1,X,0-0,2023-24_tr1.txt
+19.15,Çaykur Rizespor,Alanyaspor,0,0,X,,2023-24_tr1.txt
+,Galatasaray,Trabzonspor,2,0,1,1-0,2023-24_tr1.txt
+,ehir,Fatih Karagümrük,0,2,2,0-2,2023-24_tr1.txt
+21.45,Gaziantep FK,Sivasspor,1,3,2,0-2,2023-24_tr1.txt
+,,Pendikspor,1,1,X,1-0,2023-24_tr1.txt
+21.00,Samsunspor,Fenerbahçe,0,2,2,0-0,2023-24_tr1.txt
+,MKE Ankaragücü,Adana Demirspor,1,1,X,1-1,2023-24_tr1.txt
+21.00,Konyaspor,Gaziantep FK,2,0,1,0-0,2023-24_tr1.txt
+,a SK,Pendikspor,1,1,X,0-1,2023-24_tr1.txt
+,Trabzonspor,Çaykur Rizespor,2,3,2,0-2,2023-24_tr1.txt
+21.45,Sivasspor,Antalyaspor,1,1,X,1-1,2023-24_tr1.txt
+19.15,Kayserispor,Samsunspor,2,1,1,2-1,2023-24_tr1.txt
+,Fatih Karagümrük,MKE Ankaragücü,1,1,X,1-0,2023-24_tr1.txt
+21.45,Alanyaspor,Hatayspor,0,0,X,,2023-24_tr1.txt
+,,Galatasaray,0,1,2,0-1,2023-24_tr1.txt
+,a SK,Trabzonspor,1,5,2,0-3,2023-24_tr1.txt
+,Çaykur Rizespor,Fatih Karagümrük,1,0,1,1-0,2023-24_tr1.txt
+19.15,Pendikspor,Alanyaspor,1,1,X,0-0,2023-24_tr1.txt
+,ehir,Konyaspor,0,1,2,0-0,2023-24_tr1.txt
+21.45,Gaziantep FK,Galatasaray,0,3,2,0-1,2023-24_tr1.txt
+,Antalyaspor,Kayserispor,1,1,X,1-1,2023-24_tr1.txt
+,,Sivasspor,2,0,1,2-0,2023-24_tr1.txt
+21.45,Hatayspor,Adana Demirspor,3,3,X,0-1,2023-24_tr1.txt
+,MKE Ankaragücü,Fenerbahçe,0,1,2,0-0,2023-24_tr1.txt
+17.00,Kayserispor,Gaziantep FK,2,0,1,1-0,2023-24_tr1.txt
+,Konyaspor,Çaykur Rizespor,1,2,2,1-0,2023-24_tr1.txt
+20.00,Galatasaray,Samsunspor,4,2,1,3-0,2023-24_tr1.txt
+,Adana Demirspor,Pendikspor,3,0,1,2-0,2023-24_tr1.txt
+,Fenerbahçe,Antalyaspor,3,2,1,1-1,2023-24_tr1.txt
+20.00,Fatih Karagümrük,Hatayspor,0,0,X,,2023-24_tr1.txt
+,Sivasspor,MKE Ankaragücü,1,3,2,1-1,2023-24_tr1.txt
+17.00,Pendikspor,Fatih Karagümrük,1,1,X,1-0,2023-24_tr1.txt
+,Çaykur Rizespor,Sivasspor,1,1,X,1-1,2023-24_tr1.txt
+,ehir,Galatasaray,1,2,2,0-1,2023-24_tr1.txt
+,Antalyaspor,Samsunspor,2,0,1,2-0,2023-24_tr1.txt
+,,Kayserispor,2,1,1,0-0,2023-24_tr1.txt
+,MKE Ankaragücü,Konyaspor,1,1,X,1-1,2023-24_tr1.txt
+,a SK,Adana Demirspor,2,1,1,1-0,2023-24_tr1.txt
+,Alanyaspor,Fenerbahçe,0,1,2,0-1,2023-24_tr1.txt
+20.00,Hatayspor,Trabzonspor,3,2,1,0-1,2023-24_tr1.txt
+20.00,Samsunspor,Gaziantep FK,1,2,2,0-2,2023-24_tr1.txt
+13.30,Sivasspor,Hatayspor,0,0,X,,2023-24_tr1.txt
+,,Antalyaspor,1,2,2,1-0,2023-24_tr1.txt
+,Trabzonspor,Pendikspor,2,1,1,2-1,2023-24_tr1.txt
+19.00,Galatasaray,MKE Ankaragücü,2,1,1,0-0,2023-24_tr1.txt
+16.00,Fenerbahçe,Çaykur Rizespor,5,0,1,1-0,2023-24_tr1.txt
+19.00,Adana Demirspor,Alanyaspor,4,0,1,1-0,2023-24_tr1.txt
+20.00,Alanyaspor,Fatih Karagümrük,2,1,1,1-0,2023-24_tr1.txt
+,Adana Demirspor,Trabzonspor,1,0,1,1-0,2023-24_tr1.txt
+13.30,Pendikspor,Sivasspor,2,3,2,0-1,2023-24_tr1.txt
+16.00,MKE Ankaragücü,Kayserispor,3,0,1,0-0,2023-24_tr1.txt
+,ehir,Gaziantep FK,2,0,1,2-0,2023-24_tr1.txt
+,Antalyaspor,Galatasaray,0,2,2,0-0,2023-24_tr1.txt
+13.30,Çaykur Rizespor,Samsunspor,1,0,1,0-0,2023-24_tr1.txt
+19.00,Hatayspor,Konyaspor,3,1,1,1-1,2023-24_tr1.txt
+,a SK,Fenerbahçe,0,2,2,0-2,2023-24_tr1.txt
+13.30,Kayserispor,Çaykur Rizespor,3,1,1,1-0,2023-24_tr1.txt
+16.00,Gaziantep FK,Antalyaspor,1,0,1,0-0,2023-24_tr1.txt
+,Konyaspor,Pendikspor,1,2,2,0-0,2023-24_tr1.txt
+,,MKE Ankaragücü,2,1,1,1-1,2023-24_tr1.txt
+,Fenerbahçe,Hatayspor,4,2,1,3-0,2023-24_tr1.txt
+20.00,Fatih Karagümrük,Adana Demirspor,2,0,1,0-0,2023-24_tr1.txt
+,Trabzonspor,Alanyaspor,1,0,1,0-0,2023-24_tr1.txt
+20.00,Hatayspor,Kayserispor,1,2,2,0-1,2023-24_tr1.txt
+16.00,Alanyaspor,Sivasspor,1,2,2,0-0,2023-24_tr1.txt
+19.00,Adana Demirspor,Konyaspor,3,0,1,0-0,2023-24_tr1.txt
+,Çaykur Rizespor,Galatasaray,0,1,2,0-0,2023-24_tr1.txt
+16.00,Fatih Karagümrük,Trabzonspor,0,0,X,,2023-24_tr1.txt
+19.00,Pendikspor,Fenerbahçe,0,5,2,0-2,2023-24_tr1.txt
+,MKE Ankaragücü,Samsunspor,2,0,1,0-0,2023-24_tr1.txt
+,,Gaziantep FK,2,0,1,0-0,2023-24_tr1.txt
+,,Pendikspor,2,4,2,1-2,2023-24_tr1.txt
+16.00,Samsunspor,Hatayspor,2,1,1,0-1,2023-24_tr1.txt
+19.00,Fenerbahçe,Trabzonspor,2,3,2,0-1,2023-24_tr1.txt
+13.30,Sivasspor,Adana Demirspor,1,1,X,1-0,2023-24_tr1.txt
+,ehir,MKE Ankaragücü,3,3,X,2-2,2023-24_tr1.txt
+,Konyaspor,Fatih Karagümrük,1,1,X,0-0,2023-24_tr1.txt
+20.00,Kayserispor,Alanyaspor,1,0,1,0-0,2023-24_tr1.txt
+,Gaziantep FK,Çaykur Rizespor,2,0,1,1-0,2023-24_tr1.txt
+20.00,Trabzonspor,Konyaspor,2,1,1,0-0,2023-24_tr1.txt
+,MKE Ankaragücü,Antalyaspor,0,4,2,0-2,2023-24_tr1.txt
+,a SK,Kayserispor,3,4,2,1-3,2023-24_tr1.txt
+16.00,Alanyaspor,Gaziantep FK,0,3,2,0-2,2023-24_tr1.txt
+,Fatih Karagümrük,Sivasspor,3,0,1,1-0,2023-24_tr1.txt
+19.00,Hatayspor,Galatasaray,2,1,1,1-1,2023-24_tr1.txt
+13.30,Pendikspor,Samsunspor,1,0,1,0-0,2023-24_tr1.txt
+19.00,Adana Demirspor,Fenerbahçe,0,0,X,,2023-24_tr1.txt
+,,Hatayspor,2,1,1,1-0,2023-24_tr1.txt
+16.00,Gaziantep FK,MKE Ankaragücü,0,1,2,0-1,2023-24_tr1.txt
+19.00,Galatasaray,Alanyaspor,4,0,1,2-0,2023-24_tr1.txt
+13.30,Kayserispor,Adana Demirspor,1,1,X,0-1,2023-24_tr1.txt
+,Antalyaspor,Çaykur Rizespor,0,0,X,,2023-24_tr1.txt
+19.00,Fenerbahçe,Fatih Karagümrük,2,1,1,0-1,2023-24_tr1.txt
+,ehir,Pendikspor,4,1,1,1-1,2023-24_tr1.txt
+,Sivasspor,Trabzonspor,3,3,X,2-2,2023-24_tr1.txt
+20.00,Hatayspor,Antalyaspor,3,3,X,1-1,2023-24_tr1.txt
+13.30,Alanyaspor,Konyaspor,2,2,X,2-1,2023-24_tr1.txt
+19.00,Pendikspor,Galatasaray,0,2,2,0-0,2023-24_tr1.txt
+,Adana Demirspor,Samsunspor,2,3,2,1-2,2023-24_tr1.txt
+,a SK,Gaziantep FK,4,2,1,3-0,2023-24_tr1.txt
+16.00,Trabzonspor,Kayserispor,0,1,2,0-0,2023-24_tr1.txt
+20.00,Fenerbahçe,Sivasspor,4,1,1,2-0,2023-24_tr1.txt
+20.00,Galatasaray,Adana Demirspor,3,1,1,2-1,2023-24_tr1.txt
+13.30,Antalyaspor,Fatih Karagümrük,2,1,1,2-1,2023-24_tr1.txt
+,,Fenerbahçe,1,3,2,1-1,2023-24_tr1.txt
+,,Alanyaspor,0,1,2,0-0,2023-24_tr1.txt
+16.00,Kayserispor,Pendikspor,2,0,1,0-0,2023-24_tr1.txt
+,ehir,Hatayspor,1,0,1,1-0,2023-24_tr1.txt
+19.00,Gaziantep FK,Trabzonspor,1,3,2,0-0,2023-24_tr1.txt
+20.00,MKE Ankaragücü,Çaykur Rizespor,1,1,X,1-0,2023-24_tr1.txt
+,Konyaspor,Sivasspor,0,1,2,0-1,2023-24_tr1.txt
+17.00,Pendikspor,Antalyaspor,0,1,2,0-1,2023-24_tr1.txt
+,Alanyaspor,MKE Ankaragücü,1,1,X,0-0,2023-24_tr1.txt
+17.00,Hatayspor,Gaziantep FK,0,0,X,,2023-24_tr1.txt
+,Fatih Karagümrük,Kayserispor,4,1,1,3-1,2023-24_tr1.txt
+,Fenerbahçe,Konyaspor,7,1,1,5-0,2023-24_tr1.txt
+17.00,Sivasspor,Galatasaray,1,1,X,0-1,2023-24_tr1.txt
+20.00,Trabzonspor,Samsunspor,2,1,1,2-0,2023-24_tr1.txt
+,ehir,Sivasspor,3,1,1,1-1,2023-24_tr1.txt
+,,Trabzonspor,0,3,2,1-1,2023-24_tr1.txt
+,Gaziantep FK,Adana Demirspor,2,2,X,1-0,2023-24_tr1.txt
+17.00,Kayserispor,Fenerbahçe,3,4,2,1-2,2023-24_tr1.txt
+20.00,Galatasaray,Fatih Karagümrük,1,0,1,1-0,2023-24_tr1.txt
+17.00,Samsunspor,Konyaspor,1,1,X,0-1,2023-24_tr1.txt
+,Çaykur Rizespor,Pendikspor,5,1,1,3-1,2023-24_tr1.txt
+,,Alanyaspor,1,3,2,1-1,2023-24_tr1.txt
+,MKE Ankaragücü,Hatayspor,0,0,X,,2023-24_tr1.txt
+16.00,Fatih Karagümrük,Gaziantep FK,0,3,2,0-1,2023-24_tr1.txt
+13.30,Konyaspor,Kayserispor,2,0,1,0-0,2023-24_tr1.txt
+16.00,Adana Demirspor,Antalyaspor,2,1,1,2-0,2023-24_tr1.txt
+19.00,Fenerbahçe,Galatasaray,0,0,X,,2023-24_tr1.txt
+,a SK,Çaykur Rizespor,2,2,X,1-1,2023-24_tr1.txt
+,Alanyaspor,Samsunspor,3,1,1,2-0,2023-24_tr1.txt
+,Pendikspor,MKE Ankaragücü,1,1,X,0-1,2023-24_tr1.txt
+17.00,Gaziantep FK,Pendikspor,2,2,X,1-0,2023-24_tr1.txt
+20.00,Antalyaspor,Alanyaspor,0,0,X,,2023-24_tr1.txt
+13.30,Çaykur Rizespor,Hatayspor,2,0,1,1-0,2023-24_tr1.txt
+,ehir,Adana Demirspor,0,0,X,,2023-24_tr1.txt
+19.00,Samsunspor,Fatih Karagümrük,1,0,1,0-0,2023-24_tr1.txt
+,MKE Ankaragücü,Trabzonspor,0,1,2,0-1,2023-24_tr1.txt
+13.30,Kayserispor,Sivasspor,1,3,2,1-1,2023-24_tr1.txt
+,,Fenerbahçe,1,5,2,1-4,2023-24_tr1.txt
+19.00,Galatasaray,Konyaspor,3,0,1,0-0,2023-24_tr1.txt
+13.30,Hatayspor,Pendikspor,1,1,X,0-0,2023-24_tr1.txt
+,ehir,Alanyaspor,3,2,1,2-1,2023-24_tr1.txt
+19.00,Çaykur Rizespor,Adana Demirspor,1,0,1,0-0,2023-24_tr1.txt
+,,Fatih Karagümrük,3,0,1,0-0,2023-24_tr1.txt
+,,Konyaspor,0,0,X,,2023-24_tr1.txt
+16.00,Antalyaspor,Trabzonspor,1,1,X,0-1,2023-24_tr1.txt
+,Samsunspor,Sivasspor,2,0,1,2-0,2023-24_tr1.txt
+19.00,Gaziantep FK,Fenerbahçe,0,1,2,0-0,2023-24_tr1.txt
+20.00,Galatasaray,Kayserispor,2,1,1,1-0,2023-24_tr1.txt
+,a SK,Hatayspor,3,0,1,0-0,2023-24_tr1.txt
+,Alanyaspor,Çaykur Rizespor,2,1,1,0-0,2023-24_tr1.txt
+19.00,Adana Demirspor,MKE Ankaragücü,1,1,X,0-0,2023-24_tr1.txt
+13.30,Sivasspor,Gaziantep FK,2,2,X,2-2,2023-24_tr1.txt
+16.00,Fenerbahçe,Samsunspor,1,1,X,1-0,2023-24_tr1.txt
+,Konyaspor,Antalyaspor,1,1,X,1-0,2023-24_tr1.txt
+19.00,Trabzonspor,Galatasaray,1,5,2,0-1,2023-24_tr1.txt
+17.00,Hatayspor,Alanyaspor,1,1,X,1-0,2023-24_tr1.txt
+,,Adana Demirspor,0,0,X,,2023-24_tr1.txt
+17.00,MKE Ankaragücü,Fatih Karagümrük,2,0,1,1-0,2023-24_tr1.txt
+,Gaziantep FK,Konyaspor,1,1,X,1-1,2023-24_tr1.txt
+,ehir,Fenerbahçe,0,1,2,0-0,2023-24_tr1.txt
+,Antalyaspor,Sivasspor,2,1,1,2-1,2023-24_tr1.txt
+17.00,Samsunspor,Kayserispor,2,0,1,1-0,2023-24_tr1.txt
+,Çaykur Rizespor,Trabzonspor,1,0,1,0-0,2023-24_tr1.txt
+16.00,Alanyaspor,Pendikspor,1,1,X,0-0,2023-24_tr1.txt
+19.00,Adana Demirspor,Hatayspor,0,1,2,0-1,2023-24_tr1.txt
+,Fatih Karagümrük,Çaykur Rizespor,4,0,1,1-0,2023-24_tr1.txt
+19.00,Fenerbahçe,MKE Ankaragücü,2,1,1,2-1,2023-24_tr1.txt
+,,Samsunspor,1,1,X,0-0,2023-24_tr1.txt
+,Kayserispor,Antalyaspor,1,1,X,0-1,2023-24_tr1.txt
+,Galatasaray,Gaziantep FK,2,1,1,0-1,2023-24_tr1.txt
+17.00,Hatayspor,Fatih Karagümrük,3,1,1,1-0,2023-24_tr1.txt
+,MKE Ankaragücü,Sivasspor,0,0,X,,2023-24_tr1.txt
+20.00,Samsunspor,Galatasaray,0,2,2,0-2,2023-24_tr1.txt
+13.30,Çaykur Rizespor,Konyaspor,0,0,X,,2023-24_tr1.txt
+19.00,Gaziantep FK,Kayserispor,1,1,X,0-1,2023-24_tr1.txt
+,Antalyaspor,Fenerbahçe,0,2,2,0-1,2023-24_tr1.txt
+13.30,Pendikspor,Adana Demirspor,2,1,1,2-0,2023-24_tr1.txt
+,a SK,Alanyaspor,2,1,1,1-1,2023-24_tr1.txt
+,,Trabzonspor,2,0,1,1-0,2023-24_tr1.txt
+16.00,Fatih Karagümrük,Pendikspor,2,0,1,1-0,2023-24_tr1.txt
+13.30,Sivasspor,Çaykur Rizespor,1,0,1,1-0,2023-24_tr1.txt
+,,Gaziantep FK,1,3,2,1-1,2023-24_tr1.txt
+,Konyaspor,MKE Ankaragücü,1,0,1,1-0,2023-24_tr1.txt
+19.00,Fenerbahçe,Alanyaspor,2,2,X,0-1,2023-24_tr1.txt
+17.00,Trabzonspor,Hatayspor,2,0,1,0-0,2023-24_tr1.txt
+20.00,Samsunspor,Antalyaspor,2,0,1,0-0,2023-24_tr1.txt
+,a SK,Fatih Karagümrük,1,1,X,1-1,2023-24_tr1.txt
+16.00,Hatayspor,Sivasspor,1,1,X,0-1,2023-24_tr1.txt
+19.00,Çaykur Rizespor,Fenerbahçe,1,3,2,1-0,2023-24_tr1.txt
+13.30,Alanyaspor,Adana Demirspor,3,3,X,2-0,2023-24_tr1.txt
+16.00,Gaziantep FK,Samsunspor,1,1,X,0-0,2023-24_tr1.txt
+,Pendikspor,Trabzonspor,0,2,2,0-0,2023-24_tr1.txt
+19.00,MKE Ankaragücü,Galatasaray,0,3,2,0-3,2023-24_tr1.txt
+,ehir,Kayserispor,2,3,2,0-2,2023-24_tr1.txt
+,,Konyaspor,2,0,1,0-0,2023-24_tr1.txt
+20.00,Samsunspor,Çaykur Rizespor,3,0,1,1-0,2023-24_tr1.txt
+13.30,Kayserispor,MKE Ankaragücü,3,2,1,0-2,2023-24_tr1.txt
+19.00,Konyaspor,Hatayspor,2,0,1,0-0,2023-24_tr1.txt
+13.30,Sivasspor,Pendikspor,4,1,1,1-1,2023-24_tr1.txt
+16.00,Fatih Karagümrük,Alanyaspor,1,1,X,1-0,2023-24_tr1.txt
+,Trabzonspor,Adana Demirspor,1,0,1,1-0,2023-24_tr1.txt
+20.00,Galatasaray,Antalyaspor,2,1,1,2-1,2023-24_tr1.txt
+,a SK,Sivasspor,0,0,X,,2023-24_tr1.txt
+16.00,Çaykur Rizespor,Kayserispor,3,0,1,0-0,2023-24_tr1.txt
+19.00,Hatayspor,Fenerbahçe,0,2,2,0-2,2023-24_tr1.txt
+,ehir,Samsunspor,1,0,1,0-0,2023-24_tr1.txt
+,Pendikspor,Konyaspor,0,2,2,0-1,2023-24_tr1.txt
+,,Galatasaray,0,1,2,0-1,2023-24_tr1.txt
+17.00,Adana Demirspor,Fatih Karagümrük,1,0,1,1-0,2023-24_tr1.txt
+20.00,Antalyaspor,Gaziantep FK,1,0,1,1-0,2023-24_tr1.txt
+,Alanyaspor,Trabzonspor,3,1,1,2-0,2023-24_tr1.txt
+20.00,Galatasaray,Çaykur Rizespor,6,2,1,4-1,2023-24_tr1.txt
+13.30,Sivasspor,Alanyaspor,1,2,2,0-0,2023-24_tr1.txt
+16.00,Konyaspor,Adana Demirspor,2,2,X,2-1,2023-24_tr1.txt
+19.00,Trabzonspor,Fatih Karagümrük,5,1,1,1-1,2023-24_tr1.txt
+,ehir,Antalyaspor,1,0,1,0-0,2023-24_tr1.txt
+13.30,Kayserispor,Hatayspor,1,1,X,1-1,2023-24_tr1.txt
+,Samsunspor,MKE Ankaragücü,2,1,1,1-1,2023-24_tr1.txt
+19.00,Fenerbahçe,Pendikspor,4,1,1,0-1,2023-24_tr1.txt
+,Fatih Karagümrük,Konyaspor,1,1,X,0-1,2023-24_tr1.txt
+13.30,Alanyaspor,Kayserispor,1,0,1,0-0,2023-24_tr1.txt
+,,Antalyaspor,1,2,2,0-2,2023-24_tr1.txt
+,Adana Demirspor,Sivasspor,4,1,1,1-0,2023-24_tr1.txt
+13.30,Çaykur Rizespor,Gaziantep FK,3,1,1,0-0,2023-24_tr1.txt
+,a SK,Galatasaray,3,4,2,1-1,2023-24_tr1.txt
+,Hatayspor,Samsunspor,3,0,1,1-0,2023-24_tr1.txt
+20.30,Trabzonspor,Fenerbahçe,2,3,2,0-2,2023-24_tr1.txt
+,,Çaykur Rizespor,0,4,2,0-2,2023-24_tr1.txt
+20.30,Galatasaray,Hatayspor,1,0,1,1-0,2023-24_tr1.txt
+,Gaziantep FK,Alanyaspor,0,3,2,0-2,2023-24_tr1.txt
+,Antalyaspor,MKE Ankaragücü,1,1,X,1-0,2023-24_tr1.txt
+17.00,Sivasspor,Fatih Karagümrük,1,0,1,0-0,2023-24_tr1.txt
+,Fenerbahçe,Adana Demirspor,4,2,1,1-1,2023-24_tr1.txt
+,Konyaspor,Trabzonspor,1,3,2,0-1,2023-24_tr1.txt
+20.30,Samsunspor,Pendikspor,0,0,X,,2023-24_tr1.txt
+20.00,Trabzonspor,Sivasspor,0,1,2,0-0,2023-24_tr1.txt
+,a SK,Konyaspor,0,2,2,0-1,2023-24_tr1.txt
+16.00,MKE Ankaragücü,Gaziantep FK,3,1,1,1-1,2023-24_tr1.txt
+19.00,Adana Demirspor,Kayserispor,0,0,X,,2023-24_tr1.txt
+,,Samsunspor,1,1,X,1-0,2023-24_tr1.txt
+,Çaykur Rizespor,Antalyaspor,3,0,1,1-0,2023-24_tr1.txt
+19.00,Fatih Karagümrük,Fenerbahçe,1,2,2,1-0,2023-24_tr1.txt
+20.00,Alanyaspor,Galatasaray,0,4,2,0-0,2023-24_tr1.txt
+,,MKE Ankaragücü,2,0,1,1-0,2023-24_tr1.txt
+,,Fatih Karagümrük,1,2,2,0-0,2023-24_tr1.txt
+16.00,Konyaspor,Alanyaspor,0,2,2,0-1,2023-24_tr1.txt
+19.00,Samsunspor,Adana Demirspor,1,1,X,0-1,2023-24_tr1.txt
+,Kayserispor,Trabzonspor,1,2,2,0-1,2023-24_tr1.txt
+,ehir,Çaykur Rizespor,2,0,1,1-0,2023-24_tr1.txt
+19.00,Antalyaspor,Hatayspor,2,1,1,0-1,2023-24_tr1.txt
+,Galatasaray,Pendikspor,4,1,1,2-0,2023-24_tr1.txt
+20.00,Sivasspor,Fenerbahçe,2,2,X,0-1,2023-24_tr1.txt
+20.00,Adana Demirspor,Galatasaray,0,3,2,0-0,2023-24_tr1.txt
+,a SK,Samsunspor,1,0,1,1-0,2023-24_tr1.txt
+,Sivasspor,Konyaspor,1,0,1,0-0,2023-24_tr1.txt
+16.00,Pendikspor,Kayserispor,1,2,2,1-1,2023-24_tr1.txt
+19.00,Trabzonspor,Gaziantep FK,4,2,1,0-2,2023-24_tr1.txt
+,Çaykur Rizespor,MKE Ankaragücü,2,2,X,2-0,2023-24_tr1.txt
+20.00,Fatih Karagümrük,Antalyaspor,4,1,1,1-0,2023-24_tr1.txt
+20.00,MKE Ankaragücü,Alanyaspor,1,1,X,1-0,2023-24_tr1.txt
+,,Çaykur Rizespor,3,2,1,1-1,2023-24_tr1.txt
+,,Adana Demirspor,0,1,2,0-1,2023-24_tr1.txt
+19.00,Kayserispor,Fatih Karagümrük,2,2,X,1-0,2023-24_tr1.txt
+,Samsunspor,Trabzonspor,3,1,1,3-1,2023-24_tr1.txt
+19.00,Gaziantep FK,Hatayspor,1,1,X,1-1,2023-24_tr1.txt
+,Galatasaray,Sivasspor,6,1,1,2-0,2023-24_tr1.txt
+20.00,Antalyaspor,Pendikspor,1,2,2,1-2,2023-24_tr1.txt
+,Konyaspor,Fenerbahçe,0,0,X,,2023-24_tr1.txt
+19.00,Fenerbahçe,Kayserispor,3,0,1,2-0,2023-24_tr1.txt
+,Fatih Karagümrük,Galatasaray,2,3,2,1-1,2023-24_tr1.txt
+,Konyaspor,Samsunspor,3,0,1,3-0,2023-24_tr1.txt
+,Adana Demirspor,Gaziantep FK,1,6,2,1-3,2023-24_tr1.txt
+,a SK,Antalyaspor,3,1,1,2-0,2023-24_tr1.txt
+,Hatayspor,MKE Ankaragücü,2,1,1,0-0,2023-24_tr1.txt
+,Pendikspor,Çaykur Rizespor,2,1,1,0-1,2023-24_tr1.txt
+,,Sivasspor,1,3,2,0-2,2023-24_tr1.txt
+20.00,Antalyaspor,Adana Demirspor,2,1,1,1-0,2023-24_tr1.txt
+,,Hatayspor,2,2,X,0-1,2023-24_tr1.txt
+,MKE Ankaragücü,Pendikspor,0,0,X,,2023-24_tr1.txt
+,Samsunspor,Alanyaspor,1,1,X,0-1,2023-24_tr1.txt
+,Gaziantep FK,Fatih Karagümrük,3,1,1,0-0,2023-24_tr1.txt
+,ehir,Trabzonspor,0,1,2,0-1,2023-24_tr1.txt
+,Kayserispor,Konyaspor,2,2,X,1-1,2023-24_tr1.txt
+19.00,Galatasaray,Fenerbahçe,0,1,2,0-0,2023-24_tr1.txt
+20.00,Alanyaspor,Antalyaspor,1,1,X,1-0,2023-24_tr1.txt
+16.00,Fatih Karagümrük,Samsunspor,3,1,1,1-0,2023-24_tr1.txt
+19.00,Sivasspor,Kayserispor,2,1,1,1-1,2023-24_tr1.txt
+,Konyaspor,Galatasaray,1,3,2,0-1,2023-24_tr1.txt
+,Pendikspor,Gaziantep FK,0,1,2,0-1,2023-24_tr1.txt
+,Trabzonspor,MKE Ankaragücü,4,2,1,0-1,2023-24_tr1.txt
+,Hatayspor,Çaykur Rizespor,2,0,1,1-0,2023-24_tr1.txt
+21.00,Galatasaray,Hatayspor,2,1,1,0-0,2024-25_tr1.txt
+,a SK,Konyaspor,2,3,2,0-1,2024-25_tr1.txt
+21.45,Antalyaspor,Göztepe,0,0,X,,2024-25_tr1.txt
+,Fenerbahçe,Adana Demirspor,1,0,1,1-0,2024-25_tr1.txt
+19.15,Sivasspor,Trabzonspor,0,0,X,,2024-25_tr1.txt
+21.45,Alanyaspor,Eyüpspor,1,1,X,0-0,2024-25_tr1.txt
+,Bodrum FK,Gaziantep FK,0,1,2,0-0,2024-25_tr1.txt
+21.00,Konyaspor,Galatasaray,1,2,2,1-1,2024-25_tr1.txt
+19.15,Kayserispor,Sivasspor,1,2,2,1-1,2024-25_tr1.txt
+21.45,Göztepe,Fenerbahçe,2,2,X,0-2,2024-25_tr1.txt
+,Adana Demirspor,Çaykur Rizespor,1,2,2,0-1,2024-25_tr1.txt
+,ehir,Alanyaspor,4,2,1,1-2,2024-25_tr1.txt
+21.45,Gaziantep FK,Samsunspor,0,1,2,0-1,2024-25_tr1.txt
+,,Antalyaspor,4,2,1,2-1,2024-25_tr1.txt
+21.00,Eyüpspor,Bodrum FK,4,1,1,0-1,2024-25_tr1.txt
+21.00,Alanyaspor,Göztepe,1,1,X,0-1,2024-25_tr1.txt
+19.15,Sivasspor,Eyüpspor,0,1,2,0-1,2024-25_tr1.txt
+21.45,Bodrum FK,Konyaspor,3,1,1,2-1,2024-25_tr1.txt
+,a SK,Adana Demirspor,2,2,X,1-0,2024-25_tr1.txt
+21.45,Antalyaspor,Hatayspor,3,2,1,0-2,2024-25_tr1.txt
+,Çaykur Rizespor,Fenerbahçe,0,5,2,0-1,2024-25_tr1.txt
+20.00,Galatasaray,Gaziantep FK,3,1,1,2-0,2024-25_tr1.txt
+20.00,Trabzonspor,Kayserispor,2,2,X,0-1,2024-25_tr1.txt
+21.00,Fenerbahçe,Alanyaspor,3,0,1,1-0,2024-25_tr1.txt
+,Konyaspor,Kayserispor,0,0,X,,2024-25_tr1.txt
+21.45,Göztepe,Bodrum FK,2,0,1,2-0,2024-25_tr1.txt
+,Adana Demirspor,Galatasaray,1,5,2,0-4,2024-25_tr1.txt
+,ehir,Antalyaspor,5,2,1,1-2,2024-25_tr1.txt
+,Eyüpspor,Trabzonspor,0,0,X,,2024-25_tr1.txt
+21.45,Hatayspor,Samsunspor,0,3,2,0-1,2024-25_tr1.txt
+,,Sivasspor,2,0,1,1-0,2024-25_tr1.txt
+17.00,Sivasspor,Gaziantep FK,3,2,1,1-1,2024-25_tr1.txt
+,Samsunspor,Konyaspor,0,1,2,0-1,2024-25_tr1.txt
+20.00,Galatasaray,Çaykur Rizespor,5,0,1,2-0,2024-25_tr1.txt
+,a SK,Fenerbahçe,0,2,2,0-2,2024-25_tr1.txt
+,Kayserispor,Eyüpspor,2,2,X,0-2,2024-25_tr1.txt
+20.00,Alanyaspor,Hatayspor,0,0,X,,2024-25_tr1.txt
+20.00,Antalyaspor,Adana Demirspor,2,1,1,0-0,2024-25_tr1.txt
+20.00,Hatayspor,Bodrum FK,0,1,2,0-1,2024-25_tr1.txt
+17.00,Konyaspor,Sivasspor,0,0,X,,2024-25_tr1.txt
+20.00,Fenerbahçe,Galatasaray,1,3,2,0-2,2024-25_tr1.txt
+17.00,Çaykur Rizespor,Samsunspor,0,1,2,0-0,2024-25_tr1.txt
+,a SK,Antalyaspor,0,0,X,,2024-25_tr1.txt
+20.00,Adana Demirspor,Alanyaspor,0,2,2,0-2,2024-25_tr1.txt
+,,Eyüpspor,2,1,1,1-0,2024-25_tr1.txt
+20.00,Gaziantep FK,Trabzonspor,0,0,X,,2024-25_tr1.txt
+,Göztepe,Kayserispor,3,0,1,2-0,2024-25_tr1.txt
+16.00,Samsunspor,Göztepe,4,3,1,1-2,2024-25_tr1.txt
+19.00,Alanyaspor,Çaykur Rizespor,1,0,1,1-0,2024-25_tr1.txt
+16.00,Trabzonspor,Konyaspor,3,2,1,2-1,2024-25_tr1.txt
+,Eyüpspor,Gaziantep FK,3,2,1,1-1,2024-25_tr1.txt
+19.00,Antalyaspor,Fenerbahçe,0,2,2,0-0,2024-25_tr1.txt
+,Bodrum FK,Adana Demirspor,3,1,1,1-0,2024-25_tr1.txt
+20.00,Çaykur Rizespor,Antalyaspor,2,1,1,2-0,2024-25_tr1.txt
+,a SK,Bodrum FK,0,0,X,,2024-25_tr1.txt
+16.00,Göztepe,Sivasspor,3,2,1,2-0,2024-25_tr1.txt
+,ehir,Kayserispor,1,1,X,0-1,2024-25_tr1.txt
+,Hatayspor,Trabzonspor,1,1,X,1-0,2024-25_tr1.txt
+13.30,Konyaspor,Eyüpspor,2,1,1,0-0,2024-25_tr1.txt
+16.00,Adana Demirspor,Samsunspor,1,3,2,1-0,2024-25_tr1.txt
+,Galatasaray,Alanyaspor,1,0,1,1-0,2024-25_tr1.txt
+13.30,Kayserispor,Gaziantep FK,2,2,X,1-2,2024-25_tr1.txt
+19.00,Antalyaspor,Galatasaray,0,3,2,0-1,2024-25_tr1.txt
+,Eyüpspor,Göztepe,1,0,1,1-0,2024-25_tr1.txt
+13.30,Sivasspor,Hatayspor,3,2,1,1-1,2024-25_tr1.txt
+,,Konyaspor,2,0,1,2-0,2024-25_tr1.txt
+,Samsunspor,Fenerbahçe,2,2,X,0-1,2024-25_tr1.txt
+20.00,Bodrum FK,Çaykur Rizespor,0,1,2,0-0,2024-25_tr1.txt
+20.00,Adana Demirspor,Sivasspor,2,4,2,2-1,2024-25_tr1.txt
+13.30,Hatayspor,Kayserispor,0,1,2,0-0,2024-25_tr1.txt
+,a SK,Samsunspor,1,4,2,1-0,2024-25_tr1.txt
+19.00,Göztepe,Trabzonspor,2,1,1,0-0,2024-25_tr1.txt
+13.30,Gaziantep FK,Konyaspor,3,1,1,1-1,2024-25_tr1.txt
+16.00,Alanyaspor,Antalyaspor,1,2,2,1-0,2024-25_tr1.txt
+19.00,Fenerbahçe,Bodrum FK,2,0,1,1-0,2024-25_tr1.txt
+,ehir,Eyüpspor,1,1,X,0-1,2024-25_tr1.txt
+20.00,Gaziantep FK,Göztepe,2,1,1,0-0,2024-25_tr1.txt
+13.30,Sivasspor,Çaykur Rizespor,2,1,1,0-1,2024-25_tr1.txt
+16.00,Kayserispor,Adana Demirspor,0,0,X,,2024-25_tr1.txt
+16.00,Eyüpspor,Hatayspor,2,0,1,1-0,2024-25_tr1.txt
+,Bodrum FK,Alanyaspor,0,0,X,,2024-25_tr1.txt
+19.00,Trabzonspor,Fenerbahçe,2,3,2,0-1,2024-25_tr1.txt
+20.00,Samsunspor,Antalyaspor,2,0,1,1-0,2024-25_tr1.txt
+,a SK,Kayserispor,1,2,2,0-1,2024-25_tr1.txt
+13.30,Antalyaspor,Bodrum FK,3,2,1,3-1,2024-25_tr1.txt
+16.00,Hatayspor,Gaziantep FK,3,1,1,2-1,2024-25_tr1.txt
+19.00,Çaykur Rizespor,Trabzonspor,3,1,1,1-1,2024-25_tr1.txt
+,Adana Demirspor,Eyüpspor,0,1,2,0-1,2024-25_tr1.txt
+13.30,Göztepe,Konyaspor,2,0,1,0-0,2024-25_tr1.txt
+16.00,Galatasaray,Samsunspor,3,2,1,1-0,2024-25_tr1.txt
+,Fenerbahçe,Sivasspor,4,0,1,1-0,2024-25_tr1.txt
+13.30,Eyüpspor,Çaykur Rizespor,1,2,2,1-0,2024-25_tr1.txt
+16.00,Kayserispor,Fenerbahçe,2,6,2,1-3,2024-25_tr1.txt
+19.00,Bodrum FK,Galatasaray,0,1,2,0-0,2024-25_tr1.txt
+16.00,Konyaspor,Hatayspor,1,1,X,1-0,2024-25_tr1.txt
+,Samsunspor,Alanyaspor,1,1,X,1-0,2024-25_tr1.txt
+,,Göztepe,2,4,2,2-2,2024-25_tr1.txt
+20.00,Trabzonspor,Adana Demirspor,5,0,1,1-0,2024-25_tr1.txt
+20.00,Antalyaspor,Sivasspor,2,1,1,1-1,2024-25_tr1.txt
+13.30,Samsunspor,Bodrum FK,4,0,1,1-0,2024-25_tr1.txt
+16.00,Adana Demirspor,Konyaspor,0,1,2,0-0,2024-25_tr1.txt
+,ehir,Göztepe,4,1,1,4-0,2024-25_tr1.txt
+,Alanyaspor,Trabzonspor,2,1,1,1-1,2024-25_tr1.txt
+16.00,Çaykur Rizespor,Kayserispor,3,0,1,1-0,2024-25_tr1.txt
+19.00,Galatasaray,Eyüpspor,2,2,X,1-1,2024-25_tr1.txt
+,Fenerbahçe,Gaziantep FK,3,1,1,1-1,2024-25_tr1.txt
+13.30,Konyaspor,Antalyaspor,1,1,X,1-0,2024-25_tr1.txt
+16.00,Göztepe,Adana Demirspor,3,1,1,2-0,2024-25_tr1.txt
+,,Fenerbahçe,1,0,1,0-0,2024-25_tr1.txt
+13.30,Eyüpspor,Samsunspor,3,0,1,0-0,2024-25_tr1.txt
+16.00,Sivasspor,Galatasaray,2,3,2,1-2,2024-25_tr1.txt
+,Kayserispor,Alanyaspor,2,0,1,0-0,2024-25_tr1.txt
+,ehir,Hatayspor,3,0,1,0-0,2024-25_tr1.txt
+20.00,Gaziantep FK,Çaykur Rizespor,1,0,1,1-0,2024-25_tr1.txt
+20.00,Bodrum FK,Sivasspor,2,0,1,0-0,2024-25_tr1.txt
+,a SK,Eyüpspor,2,0,1,0-0,2024-25_tr1.txt
+16.00,Çaykur Rizespor,Konyaspor,1,1,X,1-0,2024-25_tr1.txt
+19.00,Alanyaspor,Gaziantep FK,3,0,1,0-0,2024-25_tr1.txt
+13.30,Hatayspor,Göztepe,1,1,X,0-1,2024-25_tr1.txt
+16.00,Antalyaspor,Kayserispor,2,0,1,1-0,2024-25_tr1.txt
+21.00,Galatasaray,Trabzonspor,4,3,1,2-1,2024-25_tr1.txt
+20.00,Eyüpspor,Fenerbahçe,1,1,X,1-1,2024-25_tr1.txt
+16.00,Sivasspor,Samsunspor,0,0,X,,2024-25_tr1.txt
+,,Alanyaspor,1,1,X,1-1,2024-25_tr1.txt
+13.30,Gaziantep FK,Antalyaspor,2,0,1,1-0,2024-25_tr1.txt
+16.00,Kayserispor,Galatasaray,1,5,2,1-2,2024-25_tr1.txt
+,Göztepe,Çaykur Rizespor,3,0,1,1-0,2024-25_tr1.txt
+19.00,Trabzonspor,Bodrum FK,1,0,1,0-0,2024-25_tr1.txt
+20.00,Hatayspor,Adana Demirspor,1,3,2,1-0,2024-25_tr1.txt
+,Alanyaspor,Konyaspor,2,1,1,1-0,2024-25_tr1.txt
+16.00,Antalyaspor,Eyüpspor,1,4,2,0-3,2024-25_tr1.txt
+19.00,Galatasaray,Göztepe,2,1,1,1-1,2024-25_tr1.txt
+20.00,Samsunspor,Trabzonspor,2,1,1,1-0,2024-25_tr1.txt
+,a SK,Gaziantep FK,2,2,X,2-1,2024-25_tr1.txt
+16.00,Bodrum FK,Kayserispor,1,1,X,0-0,2024-25_tr1.txt
+19.00,Fenerbahçe,Hatayspor,2,1,1,2-1,2024-25_tr1.txt
+13.30,Kayserispor,Samsunspor,0,1,2,0-1,2024-25_tr1.txt
+16.00,Hatayspor,Çaykur Rizespor,1,2,2,1-1,2024-25_tr1.txt
+,,Bodrum FK,2,1,1,2-0,2024-25_tr1.txt
+13.30,Sivasspor,Alanyaspor,1,1,X,1-0,2024-25_tr1.txt
+16.00,Trabzonspor,Antalyaspor,5,0,1,1-0,2024-25_tr1.txt
+,ehir,Galatasaray,1,2,2,0-1,2024-25_tr1.txt
+,Gaziantep FK,Adana Demirspor,1,0,1,1-0,2024-25_tr1.txt
+20.00,Konyaspor,Fenerbahçe,2,3,2,2-2,2024-25_tr1.txt
+20.00,Hatayspor,Galatasaray,1,1,X,1-0,2024-25_tr1.txt
+,ehir,Çaykur Rizespor,2,0,1,1-0,2024-25_tr1.txt
+16.00,Gaziantep FK,Bodrum FK,0,0,X,,2024-25_tr1.txt
+,,Samsunspor,0,0,X,,2024-25_tr1.txt
+13.30,Göztepe,Antalyaspor,1,0,1,1-0,2024-25_tr1.txt
+19.00,Eyüpspor,Alanyaspor,3,0,1,1-0,2024-25_tr1.txt
+,Adana Demirspor,Fenerbahçe,0,4,2,0-0,2024-25_tr1.txt
+20.00,Trabzonspor,Sivasspor,4,0,1,3-0,2024-25_tr1.txt
+20.00,Samsunspor,Gaziantep FK,2,1,1,1-0,2024-25_tr1.txt
+13.30,Sivasspor,Kayserispor,5,2,1,3-0,2024-25_tr1.txt
+19.00,Galatasaray,Konyaspor,1,0,1,1-0,2024-25_tr1.txt
+13.30,Çaykur Rizespor,Adana Demirspor,3,2,1,1-0,2024-25_tr1.txt
+,Bodrum FK,Eyüpspor,0,1,2,0-1,2024-25_tr1.txt
+19.00,Fenerbahçe,Göztepe,3,2,1,0-1,2024-25_tr1.txt
+,a SK,Hatayspor,5,4,1,2-3,2024-25_tr1.txt
+20.00,Eyüpspor,Sivasspor,1,0,1,0-0,2024-25_tr1.txt
+,Konyaspor,Bodrum FK,3,1,1,2-0,2024-25_tr1.txt
+13.30,Hatayspor,Antalyaspor,2,3,2,1-2,2024-25_tr1.txt
+16.00,Kayserispor,Trabzonspor,0,0,X,,2024-25_tr1.txt
+,ehir,Samsunspor,4,0,1,1-0,2024-25_tr1.txt
+16.00,Göztepe,Alanyaspor,0,1,2,0-1,2024-25_tr1.txt
+19.00,Fenerbahçe,Çaykur Rizespor,3,2,1,1-2,2024-25_tr1.txt
+20.00,Gaziantep FK,Galatasaray,0,1,2,0-1,2024-25_tr1.txt
+20.00,Samsunspor,Hatayspor,2,0,1,2-0,2024-25_tr1.txt
+16.00,Kayserispor,Konyaspor,3,2,1,2-1,2024-25_tr1.txt
+,a SK,Çaykur Rizespor,3,2,1,2-1,2024-25_tr1.txt
+16.00,Alanyaspor,Fenerbahçe,0,2,2,0-2,2024-25_tr1.txt
+,Galatasaray,Adana Demirspor,3,0,1,,2024-25_tr1.txt
+20.00,Trabzonspor,Eyüpspor,1,0,1,0-0,2024-25_tr1.txt
+,Bodrum FK,Göztepe,0,0,X,,2024-25_tr1.txt
+20.00,Adana Demirspor,Antalyaspor,1,1,X,1-1,2024-25_tr1.txt
+13.30,Gaziantep FK,Sivasspor,2,1,1,1-1,2024-25_tr1.txt
+,ehir,Bodrum FK,0,1,2,0-0,2024-25_tr1.txt
+,,Trabzonspor,2,1,1,0-1,2024-25_tr1.txt
+13.30,Hatayspor,Alanyaspor,1,0,1,0-0,2024-25_tr1.txt
+16.00,Eyüpspor,Kayserispor,1,1,X,0-0,2024-25_tr1.txt
+,Konyaspor,Samsunspor,0,1,2,0-1,2024-25_tr1.txt
+20.00,Çaykur Rizespor,Galatasaray,1,2,2,0-0,2024-25_tr1.txt
+,Bodrum FK,Hatayspor,1,0,1,1-0,2024-25_tr1.txt
+13.30,Sivasspor,Konyaspor,1,1,X,1-1,2024-25_tr1.txt
+19.00,Samsunspor,Çaykur Rizespor,2,3,2,2-0,2024-25_tr1.txt
+13.30,Kayserispor,Göztepe,1,0,1,1-0,2024-25_tr1.txt
+16.00,Alanyaspor,Adana Demirspor,3,2,1,0-2,2024-25_tr1.txt
+19.00,Trabzonspor,Gaziantep FK,3,2,1,2-0,2024-25_tr1.txt
+20.00,Galatasaray,Fenerbahçe,0,0,X,,2024-25_tr1.txt
+16.00,Adana Demirspor,Bodrum FK,0,0,X,,2024-25_tr1.txt
+,,Kayserispor,2,0,1,1-0,2024-25_tr1.txt
+13.30,Çaykur Rizespor,Alanyaspor,3,1,1,0-0,2024-25_tr1.txt
+,a SK,Galatasaray,3,3,X,0-1,2024-25_tr1.txt
+20.30,Fenerbahçe,Antalyaspor,3,0,1,3-0,2024-25_tr1.txt
+16.00,Gaziantep FK,Eyüpspor,3,1,1,0-0,2024-25_tr1.txt
+,Konyaspor,Trabzonspor,1,0,1,0-0,2024-25_tr1.txt
+20.30,Göztepe,Samsunspor,2,2,X,1-0,2024-25_tr1.txt
+,ehir,Sivasspor,1,0,1,1-0,2024-25_tr1.txt
+16.00,Antalyaspor,Çaykur Rizespor,2,1,1,0-0,2024-25_tr1.txt
+20.30,Trabzonspor,Hatayspor,1,2,2,1-1,2024-25_tr1.txt
+13.30,Sivasspor,Göztepe,3,1,1,0-1,2024-25_tr1.txt
+16.00,Samsunspor,Adana Demirspor,3,2,1,2-1,2024-25_tr1.txt
+,Eyüpspor,Konyaspor,2,1,1,1-0,2024-25_tr1.txt
+20.30,Alanyaspor,Galatasaray,1,2,2,1-0,2024-25_tr1.txt
+,,Gaziantep FK,1,2,2,1-0,2024-25_tr1.txt
+20.30,Galatasaray,Antalyaspor,4,0,1,3-0,2024-25_tr1.txt
+13.30,Gaziantep FK,Kayserispor,1,0,1,0-0,2024-25_tr1.txt
+,a SK,Alanyaspor,2,1,1,2-1,2024-25_tr1.txt
+,ehir,Trabzonspor,0,3,2,0-1,2024-25_tr1.txt
+13.30,Çaykur Rizespor,Bodrum FK,0,2,2,0-1,2024-25_tr1.txt
+16.00,Göztepe,Eyüpspor,1,1,X,0-0,2024-25_tr1.txt
+,Hatayspor,Sivasspor,3,2,1,1-1,2024-25_tr1.txt
+20.30,Fenerbahçe,Samsunspor,0,0,X,,2024-25_tr1.txt
+16.00,Antalyaspor,Alanyaspor,2,1,1,1-1,2024-25_tr1.txt
+,Kayserispor,Hatayspor,5,0,1,2-0,2024-25_tr1.txt
+20.30,Konyaspor,Gaziantep FK,1,0,1,0-0,2024-25_tr1.txt
+,Bodrum FK,Fenerbahçe,2,4,2,1-4,2024-25_tr1.txt
+13.30,Sivasspor,Adana Demirspor,5,1,1,2-1,2024-25_tr1.txt
+16.00,Trabzonspor,Göztepe,1,1,X,1-1,2024-25_tr1.txt
+,,Galatasaray,2,1,1,1-1,2024-25_tr1.txt
+20.00,Adana Demirspor,Kayserispor,0,2,2,0-1,2024-25_tr1.txt
+13.30,Çaykur Rizespor,Sivasspor,1,1,X,0-0,2024-25_tr1.txt
+,ehir,Konyaspor,1,0,1,0-0,2024-25_tr1.txt
+19.00,Antalyaspor,Samsunspor,2,1,1,1-0,2024-25_tr1.txt
+13.30,Alanyaspor,Bodrum FK,0,1,2,0-0,2024-25_tr1.txt
+16.00,Hatayspor,Eyüpspor,0,1,2,0-1,2024-25_tr1.txt
+19.00,Fenerbahçe,Trabzonspor,4,1,1,0-1,2024-25_tr1.txt
+20.00,Göztepe,Gaziantep FK,1,1,X,0-0,2024-25_tr1.txt
+20.00,Samsunspor,Galatasaray,0,2,2,0-1,2024-25_tr1.txt
+16.00,Konyaspor,Göztepe,1,0,1,1-0,2024-25_tr1.txt
+,Bodrum FK,Antalyaspor,0,0,X,,2024-25_tr1.txt
+,Gaziantep FK,Hatayspor,2,1,1,1-1,2024-25_tr1.txt
+19.00,Sivasspor,Fenerbahçe,1,3,2,0-1,2024-25_tr1.txt
+,Trabzonspor,Çaykur Rizespor,2,0,1,2-0,2024-25_tr1.txt
+20.00,Eyüpspor,Adana Demirspor,6,0,1,3-0,2024-25_tr1.txt
+20.00,Galatasaray,Bodrum FK,2,0,1,1-0,2024-25_tr1.txt
+,Hatayspor,Konyaspor,2,3,2,2-1,2024-25_tr1.txt
+,a SK,Sivasspor,3,1,1,2-0,2024-25_tr1.txt
+16.00,Adana Demirspor,Trabzonspor,0,1,2,0-1,2024-25_tr1.txt
+,ehir,Gaziantep FK,2,1,1,2-1,2024-25_tr1.txt
+16.00,Çaykur Rizespor,Eyüpspor,1,0,1,0-0,2024-25_tr1.txt
+19.00,Fenerbahçe,Kayserispor,3,3,X,1-1,2024-25_tr1.txt
+20.00,Alanyaspor,Samsunspor,1,0,1,1-0,2024-25_tr1.txt
+,,Hatayspor,5,1,1,1-1,2024-25_tr1.txt
+16.00,Sivasspor,Antalyaspor,2,0,1,0-0,2024-25_tr1.txt
+19.00,Bodrum FK,Samsunspor,1,2,2,1-2,2024-25_tr1.txt
+,Gaziantep FK,Fenerbahçe,1,3,2,1-0,2024-25_tr1.txt
+16.00,Konyaspor,Adana Demirspor,3,1,1,0-1,2024-25_tr1.txt
+,Trabzonspor,Alanyaspor,4,3,1,4-2,2024-25_tr1.txt
+19.00,Kayserispor,Çaykur Rizespor,1,0,1,1-0,2024-25_tr1.txt
+,Eyüpspor,Galatasaray,1,5,2,0-1,2024-25_tr1.txt
+20.00,Antalyaspor,Konyaspor,1,0,1,0-0,2024-25_tr1.txt
+16.00,Çaykur Rizespor,Gaziantep FK,2,0,1,0-0,2024-25_tr1.txt
+,Alanyaspor,Kayserispor,1,1,X,1-0,2024-25_tr1.txt
+19.00,Galatasaray,Sivasspor,4,1,1,4-1,2024-25_tr1.txt
+16.00,Samsunspor,Eyüpspor,3,0,1,1-0,2024-25_tr1.txt
+19.00,Adana Demirspor,Göztepe,1,2,2,1-2,2024-25_tr1.txt
+,a SK,Trabzonspor,1,1,X,1-0,2024-25_tr1.txt
+,ehir,Fenerbahçe,1,4,2,0-1,2024-25_tr1.txt
+,Gaziantep FK,Alanyaspor,0,1,2,0-0,2024-25_tr1.txt
+16.00,Konyaspor,Çaykur Rizespor,2,1,1,0-0,2024-25_tr1.txt
+19.00,Trabzonspor,Galatasaray,0,2,2,0-0,2024-25_tr1.txt
+16.00,Sivasspor,Bodrum FK,0,0,X,,2024-25_tr1.txt
+,,Adana Demirspor,4,1,1,2-1,2024-25_tr1.txt
+,Göztepe,Hatayspor,1,1,X,1-1,2024-25_tr1.txt
+20.00,Kayserispor,Antalyaspor,3,1,1,2-1,2024-25_tr1.txt
+19.00,Adana Demirspor,Hatayspor,0,5,2,0-3,2024-25_tr1.txt
+19.00,Bodrum FK,Trabzonspor,1,1,X,1-0,2024-25_tr1.txt
+,Galatasaray,Kayserispor,3,0,1,2-0,2024-25_tr1.txt
+,Çaykur Rizespor,Göztepe,6,3,1,2-2,2024-25_tr1.txt
+,Samsunspor,Sivasspor,1,0,1,1-0,2024-25_tr1.txt
+,Antalyaspor,Gaziantep FK,0,0,X,,2024-25_tr1.txt
+,Fenerbahçe,Eyüpspor,2,1,1,1-0,2024-25_tr1.txt
+16.00,Eyüpspor,Antalyaspor,2,1,1,2-0,2024-25_tr1.txt
+,Göztepe,Galatasaray,0,2,2,0-0,2024-25_tr1.txt
+,,Çaykur Rizespor,1,2,2,0-0,2024-25_tr1.txt
+,Kayserispor,Bodrum FK,1,1,X,0-1,2024-25_tr1.txt
+,Konyaspor,Alanyaspor,1,2,2,0-2,2024-25_tr1.txt
+,Trabzonspor,Samsunspor,2,2,X,0-1,2024-25_tr1.txt
+,ehir,Adana Demirspor,2,3,2,2-1,2024-25_tr1.txt
+20.00,Hatayspor,Fenerbahçe,4,2,1,1-1,2024-25_tr1.txt
+,Antalyaspor,Trabzonspor,0,2,2,0-0,2024-25_tr1.txt
+,a SK,Göztepe,1,2,2,0-1,2024-25_tr1.txt
+16.00,Çaykur Rizespor,Hatayspor,5,2,1,1-0,2024-25_tr1.txt
+,Fenerbahçe,Konyaspor,2,1,1,0-1,2024-25_tr1.txt
+19.00,Fethiyespor,Düzcespor,4,3,1,,2024-25_trcup.txt
+,yaman FK,Afjet Afyonspor,5,0,1,,2024-25_trcup.txt
+,Artvin Hopaspor,Belediye Derincespor,1,3,2,,2024-25_trcup.txt
+,1970 SK,Arnavutköy Belediye,4,0,1,,2024-25_trcup.txt
+,Beykoz Anadoluspor,Tire 2021 FK,0,3,2,,2024-25_trcup.txt
+,SF,Mardin 1969 SK,2,6,2,,2024-25_trcup.txt
+,Bitlis Özgüzelderespor,Kelkit Hürriyetspor,3,4,2,,2024-25_trcup.txt
+,e,Çankaya FK,1,0,1,,2024-25_trcup.txt
+,Fatsa Belediyespor,Silifke Belediyespor,2,1,1,,2024-25_trcup.txt
+,spor,Çorluspor,0,3,2,,2024-25_trcup.txt
+,dmanyurdu Spor,Bursa Nilüfer FK,0,4,2,,2024-25_trcup.txt
+,Nazillispor 1984,Somaspor,1,5,2,,2024-25_trcup.txt
+,de Belediyesispor,68 Yeni Aksarayspor,1,0,1,,2024-25_trcup.txt
+15.00,Altay Izmir,Karaman FK,0,1,2,,2024-25_trcup.txt
+13.00,Osmaniyespor 2011,Diyarbekirspor,3,0,1,,2024-25_trcup.txt
+14.00,Bulvarspor,Inegölspor,0,1,2,,2024-25_trcup.txt
+,Büyükçekmece Tepecikspor,Serik Belediyespor,0,1,2,,2024-25_trcup.txt
+,Türk Metal 1963,Pazarspor,1,3,2,,2024-25_trcup.txt
+,akspor,Bursaspor,0,1,2,,2024-25_trcup.txt
+19.00,Erciyes 38 FSK,Orduspor 1967,2,1,1,,2024-25_trcup.txt
+13.00,Bursa Nilüfer FK,MKE Ankaragücü,2,3,2,1-1,2024-25_trcup.txt
+,Bornova FK,Fethiyespor,0,2,2,0-0,2024-25_trcup.txt
+,Etimesgut Belediyespor,Mardin 1969 SK,2,0,1,1-0,2024-25_trcup.txt
+15.00,Fatih Karagümrük,Tokat Belediye Plevnespor,1,0,1,0-0,2024-25_trcup.txt
+,FK,Konyaspor,0,4,2,0-1,2024-25_trcup.txt
+20.30,Adanaspor,Çorluspor,1,2,2,,2024-25_trcup.txt
+13.00,Silivrispor,Kayserispor,4,2,1,2-1,2024-25_trcup.txt
+,spor,Inegölspor,2,1,1,2-0,2024-25_trcup.txt
+,kkale FK,Yeni Malatyaspor,2,0,1,0-0,2024-25_trcup.txt
+,Kelkit Hürriyetspor,Kepez Belediyespor,2,3,2,,2024-25_trcup.txt
+,a FK,Anadolu Üniversitesi,2,3,2,,2024-25_trcup.txt
+,spor,Karaköprü Belediyespor,1,2,2,1-0,2024-25_trcup.txt
+,Osmaniyespor 2011,Serik Belediyespor,6,0,1,3-0,2024-25_trcup.txt
+,Somaspor,Belediye Kütahyaspor,0,1,2,0-0,2024-25_trcup.txt
+,e,Kilis Sebat Gençlik,0,3,2,0-0,2024-25_trcup.txt
+,Karacabey Belediyespor,Amasyaspor,3,0,1,1-0,2024-25_trcup.txt
+,Belediye Derincespor,Tire 2021 FK,0,1,2,0-0,2024-25_trcup.txt
+,Fatsa Belediyespor,Karaman FK,1,2,2,0-0,2024-25_trcup.txt
+,Küçükçekmece Sinopspor,Erbaaspor,3,2,1,1-1,2024-25_trcup.txt
+,Ankara Demirspor,Erciyes 38 FSK,3,0,1,1-0,2024-25_trcup.txt
+,negöl Kafkasspor,Hatayspor,0,4,2,0-3,2024-25_trcup.txt
+17.30,Isparta 32 SK,Pazarspor,1,0,1,0-0,2024-25_trcup.txt
+,dare,Samsunspor,2,4,2,,2024-25_trcup.txt
+,Efeler 09 Spor,Adana 1954 FK,1,2,2,0-2,2024-25_trcup.txt
+14.30,Edirnespor,Batman Petrolspor,0,1,2,0-1,2024-25_trcup.txt
+,,Kilis Belediyespor,4,2,1,2-0,2024-25_trcup.txt
+20.30,Bursaspor,Turgutluspor,3,1,1,1-0,2024-25_trcup.txt
+,rmaspor,Karacabey Belediyespor,2,3,2,,2024-25_trcup.txt
+15.30,Antalyaspor,Küçükçekmece Sinopspor,4,1,1,2-0,2024-25_trcup.txt
+18.00,Adana Demirspor,Kilis Sebat Gençlik,4,3,1,,2024-25_trcup.txt
+20.30,Samsunspor,52 Orduspor,2,4,2,,2024-25_trcup.txt
+13.00,Alanyaspor,Fethiyespor,4,1,1,3-0,2024-25_trcup.txt
+,Ankaraspor,Etimesgut Belediyespor,1,2,2,,2024-25_trcup.txt
+,Amed SK,Adana 1954 FK,1,0,1,,2024-25_trcup.txt
+,Çorluspor,Manisa FK,4,2,1,0-2,2024-25_trcup.txt
+,,Alanya 1221 FSK,4,1,1,1-0,2024-25_trcup.txt
+,,Tire 2021 FK,4,1,1,3-0,2024-25_trcup.txt
+,i,Belediye Kütahyaspor,1,0,1,,2024-25_trcup.txt
+,Anadolu Üniversitesi,Bucaspor 1928,1,2,2,1-1,2024-25_trcup.txt
+,24 Erzincanspor,Karaköprü Belediyespor,3,0,1,0-0,2024-25_trcup.txt
+,yaka SK,MKE Ankaragücü,1,2,2,0-1,2024-25_trcup.txt
+18.00,Konyaspor,Kepez Belediyespor,9,0,1,5-0,2024-25_trcup.txt
+20.30,Bursaspor,Vanspor FK,6,7,2,,2024-25_trcup.txt
+13.00,Ümraniyespor,Isparta 32 SK,3,2,1,1-1,2024-25_trcup.txt
+13.30,Ankara Demirspor,Kastamonuspor,1,3,2,1-0,2024-25_trcup.txt
+,Karaman FK,Erokspor,0,2,2,0-1,2024-25_trcup.txt
+15.30,Hatayspor,Osmaniyespor 2011,5,0,1,2-0,2024-25_trcup.txt
+18.00,Çaykur Rizespor,Silivrispor,3,2,1,1-1,2024-25_trcup.txt
+20.30,Gaziantep FK,Batman Petrolspor,1,0,1,0-0,2024-25_trcup.txt
+13.00,Eyüpspor,Etimesgut Belediyespor,4,1,1,2-1,2024-25_trcup.txt
+15.30,Konyaspor,Karacabey Belediyespor,1,0,1,0-0,2024-25_trcup.txt
+18.00,Çaykur Rizespor,Vanspor FK,6,0,1,5-0,2024-25_trcup.txt
+20.30,Alanyaspor,Amed SK,3,2,1,1-1,2024-25_trcup.txt
+,spor,Antalyaspor,3,4,2,,2024-25_trcup.txt
+,Çorluspor,Kocaelispor,2,3,2,1-1,2024-25_trcup.txt
+,Kastamonuspor,Bodrum FK,1,6,2,0-2,2024-25_trcup.txt
+,Boluspor,1461 Trabzon FK,4,0,1,0-0,2024-25_trcup.txt
+,Keçiörengücü,Sivasspor,1,4,2,1-2,2024-25_trcup.txt
+15.30,BB Erzurumspor,Sakaryaspor,2,0,1,1-0,2024-25_trcup.txt
+,Ümraniyespor,Fatih Karagümrük,1,2,2,1-0,2024-25_trcup.txt
+18.00,Menemen FK,MKE Ankaragücü,2,3,2,1-2,2024-25_trcup.txt
+20.30,Gaziantep FK,52 Orduspor,2,0,1,0-0,2024-25_trcup.txt
+,,Hatayspor,1,0,1,1-0,2024-25_trcup.txt
+,rklarelispor,Adana Demirspor,2,0,1,0-0,2024-25_trcup.txt
+,24 Erzincanspor,Çorum FK,4,6,2,0-1,2024-25_trcup.txt
+20.00,Bucaspor 1928,Göztepe,0,4,2,0-2,2024-25_trcup.txt
+15.30,Fatih Karagümrük,Çaykur Rizespor,1,0,1,0-0,2024-25_trcup.txt
+18.00,Trabzonspor,Alanyaspor,3,0,1,0-0,2024-25_trcup.txt
+,,Trabzonspor,2,2,X,1-0,2024-25_trcup.txt
+18.00,Çaykur Rizespor,MKE Ankaragücü,2,1,1,2-0,2024-25_trcup.txt
+18.30,Alanyaspor,Fatih Karagümrük,4,1,1,3-1,2024-25_trcup.txt
+,MKE Ankaragücü,Alanyaspor,1,1,X,0-0,2024-25_trcup.txt
+,Trabzonspor,Çaykur Rizespor,5,2,1,3-0,2024-25_trcup.txt
+13.00,BB Erzurumspor,Göztepe,0,1,2,0-1,2024-25_trcup.txt
+,a SK,Fenerbahçe,0,3,2,0-3,2024-25_trcup.txt
+20.30,Fenerbahçe,BB Erzurumspor,5,0,1,1-0,2024-25_trcup.txt
+20.45,Göztepe,Gaziantep FK,1,0,1,0-0,2024-25_trcup.txt
+,Gaziantep FK,Fenerbahçe,1,4,2,0-3,2024-25_trcup.txt
+,a SK,Göztepe,0,5,2,0-2,2024-25_trcup.txt
+15.30,Eyüpspor,Boluspor,1,0,1,0-0,2024-25_trcup.txt
+15.30,Çorum FK,Konyaspor,0,1,2,0-0,2024-25_trcup.txt
+,ehir,Çorum FK,4,1,1,2-1,2024-25_trcup.txt
+18.00,Konyaspor,Eyüpspor,3,1,1,1-0,2024-25_trcup.txt
+16.00,Boluspor,Galatasaray,1,4,2,1-2,2024-25_trcup.txt
+15.00,Çorum FK,Boluspor,2,1,1,1-0,2024-25_trcup.txt
+,Galatasaray,Konyaspor,0,0,X,,2024-25_trcup.txt
+21.00,Antalyaspor,Kocaelispor,3,1,1,2-0,2024-25_trcup.txt
+,rklarelispor,Bodrum FK,4,4,X,3-3,2024-25_trcup.txt
+13.00,Kocaelispor,Sivasspor,3,0,1,0-1,2024-25_trcup.txt
+15.30,Bodrum FK,Antalyaspor,3,1,1,2-0,2024-25_trcup.txt
+,rklarelispor,Kocaelispor,1,3,2,0-2,2024-25_trcup.txt
+,Sivasspor,Bodrum FK,0,1,2,0-1,2024-25_trcup.txt
+17.45,Trabzonspor,Bodrum FK,3,2,1,,2024-25_trcup.txt
+20.45,Fenerbahçe,Galatasaray,1,2,2,1-2,2024-25_trcup.txt
+,,Göztepe,1,3,2,1-1,2024-25_trcup.txt
+20.30,Konyaspor,Galatasaray,1,5,2,0-2,2024-25_trcup.txt
+20.30,Trabzonspor,Göztepe,2,0,1,0-0,2024-25_trcup.txt

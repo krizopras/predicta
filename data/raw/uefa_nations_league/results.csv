@@ -1,0 +1,631 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Germany,France,0,0,X,Munich,Germany,2018_uefa_nations_league.txt
+Czech Republic,Ukraine,1,2,2,Uherské Hradiště,Czech Republic,2018_uefa_nations_league.txt
+Wales,Republic of Ireland,4,1,1,Cardiff,Wales,2018_uefa_nations_league.txt
+Norway,Cyprus,2,0,1,Oslo,Norway,2018_uefa_nations_league.txt
+Slovenia,Bulgaria,1,2,2,Ljubljana,Slovenia,2018_uefa_nations_league.txt
+Kazakhstan,Georgia,0,2,2,Astana,Kazakhstan,2018_uefa_nations_league.txt
+Latvia,Andorra,0,0,X,Riga,Latvia,2018_uefa_nations_league.txt
+Armenia,Liechtenstein,2,1,1,Yerevan,Armenia,2018_uefa_nations_league.txt
+Gibraltar,North Macedonia,0,2,2,Gibraltar,Gibraltar,2018_uefa_nations_league.txt
+Italy,Poland,1,1,X,Bologna,Italy,2018_uefa_nations_league.txt
+Turkey,Russia,1,2,2,Trabzon,Turkey,2018_uefa_nations_league.txt
+Albania,Israel,1,0,1,Elbasan,Albania,2018_uefa_nations_league.txt
+Lithuania,Serbia,0,1,2,Vilnius,Lithuania,2018_uefa_nations_league.txt
+Romania,Montenegro,0,0,X,Ploiești,Romania,2018_uefa_nations_league.txt
+Faroe Islands,Malta,3,1,1,Tórshavn,Faroe Islands,2018_uefa_nations_league.txt
+Azerbaijan,Kosovo,0,0,X,Baku,Azerbaijan,2018_uefa_nations_league.txt
+Switzerland,Iceland,6,0,1,St. Gallen,Switzerland,2018_uefa_nations_league.txt
+England,Spain,1,2,2,London,England,2018_uefa_nations_league.txt
+Northern Ireland,Bosnia and Herzegovina,1,2,2,Belfast,Northern Ireland,2018_uefa_nations_league.txt
+Finland,Hungary,1,0,1,Tampere,Finland,2018_uefa_nations_league.txt
+Estonia,Greece,0,1,2,Tallinn,Estonia,2018_uefa_nations_league.txt
+Belarus,San Marino,5,0,1,Minsk,Belarus,2018_uefa_nations_league.txt
+Luxembourg,Moldova,4,0,1,Luxembourg,Luxembourg,2018_uefa_nations_league.txt
+France,Netherlands,2,1,1,Paris,France,2018_uefa_nations_league.txt
+Ukraine,Slovakia,1,0,1,Lviv,Ukraine,2018_uefa_nations_league.txt
+Denmark,Wales,2,0,1,Aarhus,Denmark,2018_uefa_nations_league.txt
+Bulgaria,Norway,1,0,1,Sofia,Bulgaria,2018_uefa_nations_league.txt
+Cyprus,Slovenia,2,1,1,Nicosia,Cyprus,2018_uefa_nations_league.txt
+Georgia,Latvia,1,0,1,Tbilisi,Georgia,2018_uefa_nations_league.txt
+North Macedonia,Armenia,2,0,1,Skopje,North Macedonia,2018_uefa_nations_league.txt
+Liechtenstein,Gibraltar,2,0,1,Vaduz,Liechtenstein,2018_uefa_nations_league.txt
+Portugal,Italy,1,0,1,Lisbon,Portugal,2018_uefa_nations_league.txt
+Sweden,Turkey,2,3,2,Stockholm,Sweden,2018_uefa_nations_league.txt
+Scotland,Albania,2,0,1,Glasgow,Scotland,2018_uefa_nations_league.txt
+Montenegro,Lithuania,2,0,1,Podgorica,Montenegro,2018_uefa_nations_league.txt
+Serbia,Romania,2,2,X,Belgrade,Serbia,2018_uefa_nations_league.txt
+Andorra,Kazakhstan,1,1,X,Andorra la Vella,Andorra,2018_uefa_nations_league.txt
+Kosovo,Faroe Islands,2,0,1,Pristina,Kosovo,2018_uefa_nations_league.txt
+Malta,Azerbaijan,1,1,X,Attard,Malta,2018_uefa_nations_league.txt
+Iceland,Belgium,0,3,2,Reykjavík,Iceland,2018_uefa_nations_league.txt
+Spain,Croatia,6,0,1,Elche,Spain,2018_uefa_nations_league.txt
+Bosnia and Herzegovina,Austria,1,0,1,Zenica,Bosnia and Herzegovina,2018_uefa_nations_league.txt
+Hungary,Greece,2,1,1,Budapest,Hungary,2018_uefa_nations_league.txt
+Finland,Estonia,1,0,1,Turku,Finland,2018_uefa_nations_league.txt
+San Marino,Luxembourg,0,3,2,Serravalle,San Marino,2018_uefa_nations_league.txt
+Moldova,Belarus,0,0,X,Chișinău,Moldova,2018_uefa_nations_league.txt
+Poland,Portugal,2,3,2,Chorzów,Poland,2018_uefa_nations_league.txt
+Russia,Sweden,0,0,X,Kaliningrad,Russia,2018_uefa_nations_league.txt
+Israel,Scotland,2,1,1,Haifa,Israel,2018_uefa_nations_league.txt
+Montenegro,Serbia,0,2,2,Podgorica,Montenegro,2018_uefa_nations_league.txt
+Lithuania,Romania,1,2,2,Vilnius,Lithuania,2018_uefa_nations_league.txt
+Faroe Islands,Azerbaijan,0,3,2,Tórshavn,Faroe Islands,2018_uefa_nations_league.txt
+Kosovo,Malta,3,1,1,Pristina,Kosovo,2018_uefa_nations_league.txt
+Belgium,Switzerland,2,1,1,Brussels,Belgium,2018_uefa_nations_league.txt
+Croatia,England,0,0,X,Rijeka,Croatia,2018_uefa_nations_league.txt
+Austria,Northern Ireland,1,0,1,Vienna,Austria,2018_uefa_nations_league.txt
+Estonia,Finland,0,1,2,Tallinn,Estonia,2018_uefa_nations_league.txt
+Greece,Hungary,1,0,1,Athens,Greece,2018_uefa_nations_league.txt
+Belarus,Luxembourg,1,0,1,Minsk,Belarus,2018_uefa_nations_league.txt
+Moldova,San Marino,2,0,1,Chișinău,Moldova,2018_uefa_nations_league.txt
+Netherlands,Germany,3,0,1,Amsterdam,Netherlands,2018_uefa_nations_league.txt
+Slovakia,Czech Republic,1,2,2,Trnava,Slovakia,2018_uefa_nations_league.txt
+Republic of Ireland,Denmark,0,0,X,Dublin,Republic of Ireland,2018_uefa_nations_league.txt
+Norway,Slovenia,1,0,1,Oslo,Norway,2018_uefa_nations_league.txt
+Bulgaria,Cyprus,2,1,1,Sofia,Bulgaria,2018_uefa_nations_league.txt
+Latvia,Kazakhstan,1,1,X,Riga,Latvia,2018_uefa_nations_league.txt
+Georgia,Andorra,3,0,1,Tbilisi,Georgia,2018_uefa_nations_league.txt
+Armenia,Gibraltar,0,1,2,Yerevan,Armenia,2018_uefa_nations_league.txt
+North Macedonia,Liechtenstein,4,1,1,Skopje,North Macedonia,2018_uefa_nations_league.txt
+Poland,Italy,0,1,2,Chorzów,Poland,2018_uefa_nations_league.txt
+Russia,Turkey,2,0,1,Sochi,Russia,2018_uefa_nations_league.txt
+Israel,Albania,2,0,1,Beer Sheva,Israel,2018_uefa_nations_league.txt
+Romania,Serbia,0,0,X,Bucharest,Romania,2018_uefa_nations_league.txt
+Lithuania,Montenegro,1,4,2,Vilnius,Lithuania,2018_uefa_nations_league.txt
+Faroe Islands,Kosovo,1,1,X,Tórshavn,Faroe Islands,2018_uefa_nations_league.txt
+Azerbaijan,Malta,1,1,X,Baku,Azerbaijan,2018_uefa_nations_league.txt
+Iceland,Switzerland,1,2,2,Reykjavík,Iceland,2018_uefa_nations_league.txt
+Spain,England,2,3,2,Seville,Spain,2018_uefa_nations_league.txt
+Bosnia and Herzegovina,Northern Ireland,2,0,1,Sarajevo,Bosnia and Herzegovina,2018_uefa_nations_league.txt
+Estonia,Hungary,3,3,X,Tallinn,Estonia,2018_uefa_nations_league.txt
+Finland,Greece,2,0,1,Tampere,Finland,2018_uefa_nations_league.txt
+Luxembourg,San Marino,3,0,1,Luxembourg,Luxembourg,2018_uefa_nations_league.txt
+Belarus,Moldova,0,0,X,Minsk,Belarus,2018_uefa_nations_league.txt
+France,Germany,2,1,1,Paris,France,2018_uefa_nations_league.txt
+Ukraine,Czech Republic,1,0,1,Kharkiv,Ukraine,2018_uefa_nations_league.txt
+Republic of Ireland,Wales,0,1,2,Dublin,Republic of Ireland,2018_uefa_nations_league.txt
+Norway,Bulgaria,1,0,1,Oslo,Norway,2018_uefa_nations_league.txt
+Slovenia,Cyprus,1,1,X,Ljubljana,Slovenia,2018_uefa_nations_league.txt
+Kazakhstan,Andorra,4,0,1,Astana,Kazakhstan,2018_uefa_nations_league.txt
+Latvia,Georgia,0,3,2,Riga,Latvia,2018_uefa_nations_league.txt
+Armenia,North Macedonia,4,0,1,Yerevan,Armenia,2018_uefa_nations_league.txt
+Gibraltar,Liechtenstein,2,1,1,Gibraltar,Gibraltar,2018_uefa_nations_league.txt
+Belgium,Iceland,2,0,1,Brussels,Belgium,2018_uefa_nations_league.txt
+Croatia,Spain,3,2,1,Zagreb,Croatia,2018_uefa_nations_league.txt
+Austria,Bosnia and Herzegovina,0,0,X,Vienna,Austria,2018_uefa_nations_league.txt
+Hungary,Estonia,2,0,1,Budapest,Hungary,2018_uefa_nations_league.txt
+Greece,Finland,1,0,1,Athens,Greece,2018_uefa_nations_league.txt
+Andorra,Georgia,1,1,X,Andorra la Vella,Andorra,2018_uefa_nations_league.txt
+Kazakhstan,Latvia,1,1,X,Astana,Kazakhstan,2018_uefa_nations_league.txt
+Luxembourg,Belarus,0,2,2,Luxembourg,Luxembourg,2018_uefa_nations_league.txt
+San Marino,Moldova,0,1,2,Serravalle,San Marino,2018_uefa_nations_league.txt
+Netherlands,France,2,0,1,Rotterdam,Netherlands,2018_uefa_nations_league.txt
+Slovakia,Ukraine,4,1,1,Trnava,Slovakia,2018_uefa_nations_league.txt
+Wales,Denmark,1,2,2,Cardiff,Wales,2018_uefa_nations_league.txt
+Slovenia,Norway,1,1,X,Ljubljana,Slovenia,2018_uefa_nations_league.txt
+Cyprus,Bulgaria,1,1,X,Nicosia,Cyprus,2018_uefa_nations_league.txt
+Gibraltar,Armenia,2,6,2,Gibraltar,Gibraltar,2018_uefa_nations_league.txt
+Liechtenstein,North Macedonia,0,2,2,Vaduz,Liechtenstein,2018_uefa_nations_league.txt
+Italy,Portugal,0,0,X,Milan,Italy,2018_uefa_nations_league.txt
+Turkey,Sweden,0,1,2,Konya,Turkey,2018_uefa_nations_league.txt
+Albania,Scotland,0,4,2,Shkodër,Albania,2018_uefa_nations_league.txt
+Serbia,Montenegro,2,1,1,Belgrade,Serbia,2018_uefa_nations_league.txt
+Romania,Lithuania,3,0,1,Ploiești,Romania,2018_uefa_nations_league.txt
+Malta,Kosovo,0,5,2,Attard,Malta,2018_uefa_nations_league.txt
+Azerbaijan,Faroe Islands,2,0,1,Baku,Azerbaijan,2018_uefa_nations_league.txt
+Switzerland,Belgium,5,2,1,Lucerne,Switzerland,2018_uefa_nations_league.txt
+England,Croatia,2,1,1,London,England,2018_uefa_nations_league.txt
+Northern Ireland,Austria,1,2,2,Belfast,Northern Ireland,2018_uefa_nations_league.txt
+Greece,Estonia,0,1,2,Athens,Greece,2018_uefa_nations_league.txt
+Hungary,Finland,2,0,1,Budapest,Hungary,2018_uefa_nations_league.txt
+San Marino,Belarus,0,2,2,Serravalle,San Marino,2018_uefa_nations_league.txt
+Moldova,Luxembourg,1,1,X,Chișinău,Moldova,2018_uefa_nations_league.txt
+Germany,Netherlands,2,2,X,Gelsenkirchen,Germany,2018_uefa_nations_league.txt
+Czech Republic,Slovakia,1,0,1,Prague,Czech Republic,2018_uefa_nations_league.txt
+Denmark,Republic of Ireland,0,0,X,Aarhus,Denmark,2018_uefa_nations_league.txt
+Bulgaria,Slovenia,1,1,X,Sofia,Bulgaria,2018_uefa_nations_league.txt
+Cyprus,Norway,0,2,2,Nicosia,Cyprus,2018_uefa_nations_league.txt
+Andorra,Latvia,0,0,X,Andorra la Vella,Andorra,2018_uefa_nations_league.txt
+Georgia,Kazakhstan,2,1,1,Tbilisi,Georgia,2018_uefa_nations_league.txt
+North Macedonia,Gibraltar,4,0,1,Skopje,North Macedonia,2018_uefa_nations_league.txt
+Liechtenstein,Armenia,2,2,X,Vaduz,Liechtenstein,2018_uefa_nations_league.txt
+Portugal,Poland,1,1,X,Guimarães,Portugal,2018_uefa_nations_league.txt
+Sweden,Russia,2,0,1,Stockholm,Sweden,2018_uefa_nations_league.txt
+Scotland,Israel,3,2,1,Glasgow,Scotland,2018_uefa_nations_league.txt
+Montenegro,Romania,0,1,2,Podgorica,Montenegro,2018_uefa_nations_league.txt
+Serbia,Lithuania,4,1,1,Belgrade,Serbia,2018_uefa_nations_league.txt
+Kosovo,Azerbaijan,4,0,1,Pristina,Kosovo,2018_uefa_nations_league.txt
+Malta,Faroe Islands,1,1,X,Attard,Malta,2018_uefa_nations_league.txt
+Portugal,Switzerland,3,1,1,Porto,Portugal,2019_uefa_nations_league.txt
+England,Netherlands,1,3,2,Guimarães,Portugal,2019_uefa_nations_league.txt
+Switzerland,England,0,0,X,Guimarães,Portugal   [England wins on penalties],2019_uefa_nations_league.txt
+Portugal,Netherlands,1,0,1,Porto,Portugal,2019_uefa_nations_league.txt
+Germany,Spain,1,1,X,Stuttgart,Germany,2020_uefa_nations_league.txt
+Ukraine,Switzerland,2,1,1,Lviv,Ukraine,2020_uefa_nations_league.txt
+Russia,Serbia,3,1,1,Moscow,Russia,2020_uefa_nations_league.txt
+Turkey,Hungary,0,1,2,Sivas,Turkey,2020_uefa_nations_league.txt
+Bulgaria,Republic of Ireland,1,1,X,Sofia,Bulgaria,2020_uefa_nations_league.txt
+Finland,Wales,0,1,2,Helsinki,Finland,2020_uefa_nations_league.txt
+Moldova,Kosovo,1,1,X,Parma,Italy,2020_uefa_nations_league.txt
+Slovenia,Greece,0,0,X,Ljubljana,Slovenia,2020_uefa_nations_league.txt
+Latvia,Andorra,0,0,X,Riga,Latvia,2020_uefa_nations_league.txt
+Faroe Islands,Malta,3,2,1,Tórshavn,Faroe Islands,2020_uefa_nations_league.txt
+Italy,Bosnia and Herzegovina,1,1,X,Florence,Italy,2020_uefa_nations_league.txt
+Netherlands,Poland,1,0,1,Amsterdam,Netherlands,2020_uefa_nations_league.txt
+Norway,Austria,1,2,2,Oslo,Norway,2020_uefa_nations_league.txt
+Romania,Northern Ireland,1,1,X,Bucharest,Romania,2020_uefa_nations_league.txt
+Scotland,Israel,1,1,X,Glasgow,Scotland,2020_uefa_nations_league.txt
+Slovakia,Czech Republic,1,3,2,Bratislava,Slovakia,2020_uefa_nations_league.txt
+Lithuania,Kazakhstan,0,2,2,Vilnius,Lithuania,2020_uefa_nations_league.txt
+Belarus,Albania,0,2,2,Minsk,Belarus,2020_uefa_nations_league.txt
+Iceland,England,0,1,2,Reykjavík,Iceland,2020_uefa_nations_league.txt
+Denmark,Belgium,0,2,2,Copenhagen,Denmark,2020_uefa_nations_league.txt
+Portugal,Croatia,4,1,1,Porto,Portugal,2020_uefa_nations_league.txt
+Sweden,France,0,1,2,Stockholm,Sweden,2020_uefa_nations_league.txt
+Cyprus,Montenegro,0,2,2,Nicosia,Cyprus,2020_uefa_nations_league.txt
+Azerbaijan,Luxembourg,1,2,2,Baku,Azerbaijan,2020_uefa_nations_league.txt
+North Macedonia,Armenia,2,1,1,Skopje,North Macedonia,2020_uefa_nations_league.txt
+Estonia,Georgia,0,1,2,Tallinn,Estonia,2020_uefa_nations_league.txt
+Gibraltar,San Marino,1,0,1,Gibraltar,Gibraltar,2020_uefa_nations_league.txt
+Spain,Ukraine,4,0,1,Madrid,Spain,2020_uefa_nations_league.txt
+Switzerland,Germany,1,1,X,Basel,Switzerland,2020_uefa_nations_league.txt
+Hungary,Russia,2,3,2,Budapest,Hungary,2020_uefa_nations_league.txt
+Serbia,Turkey,0,0,X,Belgrade,Serbia,2020_uefa_nations_league.txt
+Wales,Bulgaria,1,0,1,Cardiff,Wales,2020_uefa_nations_league.txt
+Republic of Ireland,Finland,0,1,2,Dublin,Republic of Ireland,2020_uefa_nations_league.txt
+Slovenia,Moldova,1,0,1,Ljubljana,Slovenia,2020_uefa_nations_league.txt
+Kosovo,Greece,1,2,2,Pristina,Kosovo,2020_uefa_nations_league.txt
+Andorra,Faroe Islands,0,1,2,Andorra la Vella,Andorra,2020_uefa_nations_league.txt
+Malta,Latvia,1,1,X,Attard,Malta,2020_uefa_nations_league.txt
+Bosnia and Herzegovina,Poland,1,2,2,Zenica,Bosnia and Herzegovina,2020_uefa_nations_league.txt
+Netherlands,Italy,0,1,2,Amsterdam,Netherlands,2020_uefa_nations_league.txt
+Northern Ireland,Norway,1,5,2,Belfast,Northern Ireland,2020_uefa_nations_league.txt
+Austria,Romania,2,3,2,Klagenfurt,Austria,2020_uefa_nations_league.txt
+Czech Republic,Scotland,1,2,2,Olomouc,Czech Republic,2020_uefa_nations_league.txt
+Israel,Slovakia,1,1,X,Netanya,Israel,2020_uefa_nations_league.txt
+Kazakhstan,Belarus,1,2,2,Almaty,Kazakhstan,2020_uefa_nations_league.txt
+Albania,Lithuania,0,1,2,Tirana,Albania,2020_uefa_nations_league.txt
+Belgium,Iceland,5,1,1,Brussels,Belgium,2020_uefa_nations_league.txt
+Denmark,England,0,0,X,Copenhagen,Denmark,2020_uefa_nations_league.txt
+France,Croatia,4,2,1,Paris,France,2020_uefa_nations_league.txt
+Sweden,Portugal,0,2,2,Stockholm,Sweden,2020_uefa_nations_league.txt
+Luxembourg,Montenegro,0,1,2,Luxembourg,Luxembourg,2020_uefa_nations_league.txt
+Cyprus,Azerbaijan,0,1,2,Nicosia,Cyprus,2020_uefa_nations_league.txt
+Armenia,Estonia,2,0,1,Yerevan,Armenia,2020_uefa_nations_league.txt
+Georgia,North Macedonia,1,1,X,Tbilisi,Georgia,2020_uefa_nations_league.txt
+San Marino,Liechtenstein,0,2,2,Rimini,Italy,2020_uefa_nations_league.txt
+Spain,Switzerland,1,0,1,Madrid,Spain,2020_uefa_nations_league.txt
+Ukraine,Germany,1,2,2,Kyiv,Ukraine,2020_uefa_nations_league.txt
+Luxembourg,Cyprus,2,0,1,Luxembourg,Luxembourg,2020_uefa_nations_league.txt
+Montenegro,Azerbaijan,2,0,1,Podgorica,Montenegro,2020_uefa_nations_league.txt
+Faroe Islands,Latvia,1,1,X,Tórshavn,Faroe Islands,2020_uefa_nations_league.txt
+Andorra,Malta,0,0,X,Andorra la Vella,Andorra,2020_uefa_nations_league.txt
+Liechtenstein,Gibraltar,0,1,2,Vaduz,Liechtenstein,2020_uefa_nations_league.txt
+Bosnia and Herzegovina,Netherlands,0,0,X,Zenica,Bosnia and Herzegovina,2020_uefa_nations_league.txt
+Poland,Italy,0,0,X,Gdańsk,Poland,2020_uefa_nations_league.txt
+England,Belgium,2,1,1,London,England,2020_uefa_nations_league.txt
+Iceland,Denmark,0,3,2,Reykjavík,Iceland,2020_uefa_nations_league.txt
+Croatia,Sweden,2,1,1,Zagreb,Croatia,2020_uefa_nations_league.txt
+France,Portugal,0,0,X,Paris,France,2020_uefa_nations_league.txt
+Norway,Romania,4,0,1,Oslo,Norway,2020_uefa_nations_league.txt
+Northern Ireland,Austria,0,1,2,Belfast,Northern Ireland,2020_uefa_nations_league.txt
+Scotland,Slovakia,1,0,1,Glasgow,Scotland,2020_uefa_nations_league.txt
+Israel,Czech Republic,1,2,2,Haifa,Israel,2020_uefa_nations_league.txt
+Serbia,Hungary,0,1,2,Belgrade,Serbia,2020_uefa_nations_league.txt
+Russia,Turkey,1,1,X,Moscow,Russia,2020_uefa_nations_league.txt
+Republic of Ireland,Wales,0,0,X,Dublin,Republic of Ireland,2020_uefa_nations_league.txt
+Finland,Bulgaria,2,0,1,Helsinki,Finland,2020_uefa_nations_league.txt
+Armenia,Georgia,2,2,X,Tychy,Poland,2020_uefa_nations_league.txt
+Estonia,North Macedonia,3,3,X,Tallinn,Estonia,2020_uefa_nations_league.txt
+Kosovo,Slovenia,0,1,2,Pristina,Kosovo,2020_uefa_nations_league.txt
+Greece,Moldova,2,0,1,Athens,Greece,2020_uefa_nations_league.txt
+Kazakhstan,Albania,0,0,X,Almaty,Kazakhstan,2020_uefa_nations_league.txt
+Lithuania,Belarus,2,2,X,Vilnius,Lithuania,2020_uefa_nations_league.txt
+Germany,Switzerland,3,3,X,Cologne,Germany,2020_uefa_nations_league.txt
+Ukraine,Spain,1,0,1,Kyiv,Ukraine,2020_uefa_nations_league.txt
+Azerbaijan,Cyprus,0,0,X,Elbasan,Albania,2020_uefa_nations_league.txt
+Montenegro,Luxembourg,1,2,2,Podgorica,Montenegro,2020_uefa_nations_league.txt
+Latvia,Malta,0,1,2,Riga,Latvia,2020_uefa_nations_league.txt
+Faroe Islands,Andorra,2,0,1,Tórshavn,Faroe Islands,2020_uefa_nations_league.txt
+Liechtenstein,San Marino,0,0,X,Vaduz,Liechtenstein,2020_uefa_nations_league.txt
+Italy,Netherlands,1,1,X,Bergamo,Italy,2020_uefa_nations_league.txt
+Poland,Bosnia and Herzegovina,3,0,1,Wrocław,Poland,2020_uefa_nations_league.txt
+Iceland,Belgium,1,2,2,Reykjavík,Iceland,2020_uefa_nations_league.txt
+England,Denmark,0,1,2,London,England,2020_uefa_nations_league.txt
+Portugal,Sweden,3,0,1,Lisbon,Portugal,2020_uefa_nations_league.txt
+Croatia,France,1,2,2,Zagreb,Croatia,2020_uefa_nations_league.txt
+Norway,Northern Ireland,1,0,1,Oslo,Norway,2020_uefa_nations_league.txt
+Romania,Austria,0,1,2,Ploiești,Romania,2020_uefa_nations_league.txt
+Scotland,Czech Republic,1,0,1,Glasgow,Scotland,2020_uefa_nations_league.txt
+Slovakia,Israel,2,3,2,Trnava,Slovakia,2020_uefa_nations_league.txt
+Russia,Hungary,0,0,X,Moscow,Russia,2020_uefa_nations_league.txt
+Turkey,Serbia,2,2,X,Istanbul,Turkey,2020_uefa_nations_league.txt
+Finland,Republic of Ireland,1,0,1,Helsinki,Finland,2020_uefa_nations_league.txt
+Bulgaria,Wales,0,1,2,Sofia,Bulgaria,2020_uefa_nations_league.txt
+North Macedonia,Georgia,1,1,X,Skopje,North Macedonia,2020_uefa_nations_league.txt
+Estonia,Armenia,1,1,X,Tallinn,Estonia,2020_uefa_nations_league.txt
+Greece,Kosovo,0,0,X,Athens,Greece,2020_uefa_nations_league.txt
+Moldova,Slovenia,0,4,2,Chișinău,Moldova,2020_uefa_nations_league.txt
+Lithuania,Albania,0,0,X,Vilnius,Lithuania,2020_uefa_nations_league.txt
+Belarus,Kazakhstan,2,0,1,Minsk,Belarus,2020_uefa_nations_league.txt
+Portugal,France,0,1,2,Lisbon,Portugal,2020_uefa_nations_league.txt
+Sweden,Croatia,2,1,1,Stockholm,Sweden,2020_uefa_nations_league.txt
+Germany,Ukraine,3,1,1,Leipzig,Germany,2020_uefa_nations_league.txt
+Switzerland,Spain,1,1,X,Basel,Switzerland,2020_uefa_nations_league.txt
+Azerbaijan,Montenegro,0,0,X,Zaprešić,Croatia,2020_uefa_nations_league.txt
+Cyprus,Luxembourg,2,1,1,Nicosia,Cyprus,2020_uefa_nations_league.txt
+Malta,Andorra,3,1,1,Ta' Qali,Malta,2020_uefa_nations_league.txt
+Latvia,Faroe Islands,1,1,X,Riga,Latvia,2020_uefa_nations_league.txt
+San Marino,Gibraltar,0,0,X,Serravalle,San Marino,2020_uefa_nations_league.txt
+Netherlands,Bosnia and Herzegovina,3,1,1,Amsterdam,Netherlands,2020_uefa_nations_league.txt
+Italy,Poland,2,0,1,Reggio Emilia,Italy,2020_uefa_nations_league.txt
+Belgium,England,2,0,1,Leuven,Belgium,2020_uefa_nations_league.txt
+Denmark,Iceland,2,1,1,Copenhagen,Denmark,2020_uefa_nations_league.txt
+Austria,Northern Ireland,2,1,1,Vienna,Austria,2020_uefa_nations_league.txt
+Romania,Norway,3,0,1,Bucharest,Romania,2020_uefa_nations_league.txt
+Slovakia,Scotland,1,0,1,Trnava,Slovakia,2020_uefa_nations_league.txt
+Czech Republic,Israel,1,0,1,Plzeň,Czech Republic,2020_uefa_nations_league.txt
+Turkey,Russia,3,2,1,Istanbul,Turkey,2020_uefa_nations_league.txt
+Hungary,Serbia,1,1,X,Budapest,Hungary,2020_uefa_nations_league.txt
+Wales,Republic of Ireland,1,0,1,Cardiff,Wales,2020_uefa_nations_league.txt
+Bulgaria,Finland,1,2,2,Sofia,Bulgaria,2020_uefa_nations_league.txt
+North Macedonia,Estonia,2,1,1,Skopje,North Macedonia,2020_uefa_nations_league.txt
+Georgia,Armenia,1,2,2,Tbilisi,Georgia,2020_uefa_nations_league.txt
+Slovenia,Kosovo,2,1,1,Ljubljana,Slovenia,2020_uefa_nations_league.txt
+Moldova,Greece,0,2,2,Chișinău,Moldova,2020_uefa_nations_league.txt
+Albania,Kazakhstan,3,1,1,Tirana,Albania,2020_uefa_nations_league.txt
+Belarus,Lithuania,2,0,1,Minsk,Belarus,2020_uefa_nations_league.txt
+Croatia,Portugal,2,3,2,Split,Croatia,2020_uefa_nations_league.txt
+France,Sweden,4,2,1,Paris,France,2020_uefa_nations_league.txt
+Spain,Germany,6,0,1,Seville,Spain,2020_uefa_nations_league.txt
+Switzerland,Ukraine,3,0,1,Lucerne,Switzerland,2020_uefa_nations_league.txt
+Luxembourg,Azerbaijan,0,0,X,Luxembourg,Luxembourg,2020_uefa_nations_league.txt
+Montenegro,Cyprus,4,0,1,Podgorica,Montenegro,2020_uefa_nations_league.txt
+Andorra,Latvia,0,5,2,Andorra la Vella,Andorra,2020_uefa_nations_league.txt
+Malta,Faroe Islands,1,1,X,Ta' Qali,Malta,2020_uefa_nations_league.txt
+Gibraltar,Liechtenstein,1,1,X,Gibraltar,Gibraltar,2020_uefa_nations_league.txt
+Bosnia and Herzegovina,Italy,0,2,2,Sarajevo,Bosnia and Herzegovina,2020_uefa_nations_league.txt
+Poland,Netherlands,1,2,2,Chorzów,Poland,2020_uefa_nations_league.txt
+England,Iceland,4,0,1,London,England,2020_uefa_nations_league.txt
+Belgium,Denmark,4,2,1,Leuven,Belgium,2020_uefa_nations_league.txt
+Northern Ireland,Romania,1,1,X,Belfast,Northern Ireland,2020_uefa_nations_league.txt
+Austria,Norway,1,1,X,Vienna,Austria,2020_uefa_nations_league.txt
+Czech Republic,Slovakia,2,0,1,Plzeň,Czech Republic,2020_uefa_nations_league.txt
+Israel,Scotland,1,0,1,Netanya,Israel,2020_uefa_nations_league.txt
+Hungary,Turkey,2,0,1,Budapest,Hungary,2020_uefa_nations_league.txt
+Serbia,Russia,5,0,1,Belgrade,Serbia,2020_uefa_nations_league.txt
+Republic of Ireland,Bulgaria,0,0,X,Dublin,Republic of Ireland,2020_uefa_nations_league.txt
+Wales,Finland,3,1,1,Cardiff,Wales,2020_uefa_nations_league.txt
+Armenia,North Macedonia,1,0,1,Nicosia,Cyprus,2020_uefa_nations_league.txt
+Georgia,Estonia,0,0,X,Tbilisi,Georgia,2020_uefa_nations_league.txt
+Kosovo,Moldova,1,0,1,Pristina,Kosovo,2020_uefa_nations_league.txt
+Greece,Slovenia,0,0,X,Athens,Greece,2020_uefa_nations_league.txt
+Albania,Belarus,3,2,1,Tirana,Albania,2020_uefa_nations_league.txt
+Kazakhstan,Lithuania,1,2,2,Almaty,Kazakhstan,2020_uefa_nations_league.txt
+Italy,Spain,1,2,2,Milan,Italy,2021_uefa_nations_league.txt
+Belgium,France,2,3,2,Turin,Italy,2021_uefa_nations_league.txt
+Italy,Belgium,2,1,1,Turin,Italy,2021_uefa_nations_league.txt
+Spain,France,1,2,2,Milan,Italy,2021_uefa_nations_league.txt
+Estonia,Cyprus,0,0,X,Tallinn,Estonia,2022_uefa_nations_league.txt
+Moldova,Kazakhstan,1,2,2,Chișinău,Moldova,2022_uefa_nations_league.txt
+Cyprus,Estonia,2,0,1,Larnaca,Cyprus,2022_uefa_nations_league.txt
+Kazakhstan,Moldova,0,1,2,Nur-Sultan,Kazakhstan   [Kazakhstan wins on penalties],2022_uefa_nations_league.txt
+Poland,Wales,2,1,1,Wrocław,Poland,2022_uefa_nations_league.txt
+Czech Republic,Switzerland,2,1,1,Prague,Czech Republic,2022_uefa_nations_league.txt
+Spain,Portugal,1,1,X,Seville,Spain,2022_uefa_nations_league.txt
+Israel,Iceland,2,2,X,Haifa,Israel,2022_uefa_nations_league.txt
+Serbia,Norway,0,1,2,Belgrade,Serbia,2022_uefa_nations_league.txt
+Slovenia,Sweden,0,2,2,Ljubljana,Slovenia,2022_uefa_nations_league.txt
+Northern Ireland,Greece,0,1,2,Belfast,Northern Ireland,2022_uefa_nations_league.txt
+Cyprus,Kosovo,0,2,2,Larnaca,Cyprus,2022_uefa_nations_league.txt
+Georgia,Gibraltar,4,0,1,Tbilisi,Georgia,2022_uefa_nations_league.txt
+Bulgaria,North Macedonia,1,1,X,Razgrad,Bulgaria,2022_uefa_nations_league.txt
+Estonia,San Marino,2,0,1,Tallinn,Estonia,2022_uefa_nations_league.txt
+Croatia,Austria,0,3,2,Osijek,Croatia,2022_uefa_nations_league.txt
+France,Denmark,1,2,2,Paris,France,2022_uefa_nations_league.txt
+Belgium,Netherlands,1,4,2,Brussels,Belgium,2022_uefa_nations_league.txt
+Kazakhstan,Azerbaijan,2,0,1,Nur-Sultan,Kazakhstan,2022_uefa_nations_league.txt
+Belarus,Slovakia,0,1,2,Novi Sad,Serbia,2022_uefa_nations_league.txt
+Liechtenstein,Moldova,0,2,2,Vaduz,Liechtenstein,2022_uefa_nations_league.txt
+Latvia,Andorra,3,0,1,Riga,Latvia,2022_uefa_nations_league.txt
+Hungary,England,1,0,1,Budapest,Hungary,2022_uefa_nations_league.txt
+Italy,Germany,1,1,X,Bologna,Italy,2022_uefa_nations_league.txt
+Armenia,Republic of Ireland,1,0,1,Yerevan,Armenia,2022_uefa_nations_league.txt
+Finland,Bosnia and Herzegovina,1,1,X,Helsinki,Finland,2022_uefa_nations_league.txt
+Montenegro,Romania,2,0,1,Podgorica,Montenegro,2022_uefa_nations_league.txt
+Lithuania,Luxembourg,0,2,2,Vilnius,Lithuania,2022_uefa_nations_league.txt
+Turkey,Faroe Islands,4,0,1,Istanbul,Turkey,2022_uefa_nations_league.txt
+Portugal,Switzerland,4,0,1,Lisbon,Portugal,2022_uefa_nations_league.txt
+Czech Republic,Spain,2,2,X,Prague,Czech Republic,2022_uefa_nations_league.txt
+Serbia,Slovenia,4,1,1,Belgrade,Serbia,2022_uefa_nations_league.txt
+Sweden,Norway,1,2,2,Stockholm,Sweden,2022_uefa_nations_league.txt
+Cyprus,Northern Ireland,0,0,X,Larnaca,Cyprus,2022_uefa_nations_league.txt
+Kosovo,Greece,0,1,2,Pristina,Kosovo,2022_uefa_nations_league.txt
+Gibraltar,North Macedonia,0,2,2,Gibraltar,Gibraltar,2022_uefa_nations_league.txt
+Bulgaria,Georgia,2,5,2,Razgrad,Bulgaria,2022_uefa_nations_league.txt
+San Marino,Malta,0,2,2,Serravalle,San Marino,2022_uefa_nations_league.txt
+Austria,Denmark,1,2,2,Vienna,Austria,2022_uefa_nations_league.txt
+Croatia,France,1,1,X,Split,Croatia,2022_uefa_nations_league.txt
+Iceland,Albania,1,1,X,Reykjavík,Iceland,2022_uefa_nations_league.txt
+Belarus,Azerbaijan,0,0,X,Novi Sad,Serbia,2022_uefa_nations_league.txt
+Slovakia,Kazakhstan,0,1,2,Trnava,Slovakia,2022_uefa_nations_league.txt
+Latvia,Liechtenstein,1,0,1,Riga,Latvia,2022_uefa_nations_league.txt
+Andorra,Moldova,0,0,X,Andorra la Vella,Andorra,2022_uefa_nations_league.txt
+Germany,England,1,1,X,Munich,Germany,2022_uefa_nations_league.txt
+Italy,Hungary,2,1,1,Cesena,Italy,2022_uefa_nations_league.txt
+Finland,Montenegro,2,0,1,Helsinki,Finland,2022_uefa_nations_league.txt
+Bosnia and Herzegovina,Romania,1,0,1,Zenica,Bosnia and Herzegovina,2022_uefa_nations_league.txt
+Faroe Islands,Luxembourg,0,1,2,Tórshavn,Faroe Islands,2022_uefa_nations_league.txt
+Lithuania,Turkey,0,6,2,Vilnius,Lithuania,2022_uefa_nations_league.txt
+Wales,Netherlands,1,2,2,Cardiff,Wales,2022_uefa_nations_league.txt
+Belgium,Poland,6,1,1,Brussels,Belgium,2022_uefa_nations_league.txt
+Republic of Ireland,Ukraine,0,1,2,Dublin,Republic of Ireland,2022_uefa_nations_league.txt
+Scotland,Armenia,2,0,1,Glasgow,Scotland,2022_uefa_nations_league.txt
+Portugal,Czech Republic,2,0,1,Lisbon,Portugal,2022_uefa_nations_league.txt
+Switzerland,Spain,0,1,2,Geneva,Switzerland,2022_uefa_nations_league.txt
+Norway,Slovenia,0,0,X,Oslo,Norway,2022_uefa_nations_league.txt
+Sweden,Serbia,0,1,2,Stockholm,Sweden,2022_uefa_nations_league.txt
+Kosovo,Northern Ireland,3,2,1,Pristina,Kosovo,2022_uefa_nations_league.txt
+Greece,Cyprus,3,0,1,Vólos,Greece,2022_uefa_nations_league.txt
+Gibraltar,Bulgaria,1,1,X,Gibraltar,Gibraltar,2022_uefa_nations_league.txt
+North Macedonia,Georgia,0,3,2,Skopje,North Macedonia,2022_uefa_nations_league.txt
+Malta,Estonia,1,2,2,Ta' Qali,Malta,2022_uefa_nations_league.txt
+Austria,France,1,1,X,Vienna,Austria,2022_uefa_nations_league.txt
+Denmark,Croatia,0,1,2,Copenhagen,Denmark,2022_uefa_nations_league.txt
+Albania,Israel,1,2,2,Tirana,Albania,2022_uefa_nations_league.txt
+Azerbaijan,Slovakia,0,1,2,Mardakan,Azerbaijan,2022_uefa_nations_league.txt
+Belarus,Kazakhstan,1,1,X,Novi Sad,Serbia,2022_uefa_nations_league.txt
+Moldova,Latvia,2,4,2,Chișinău,Moldova,2022_uefa_nations_league.txt
+Andorra,Liechtenstein,2,1,1,Andorra la Vella,Andorra,2022_uefa_nations_league.txt
+England,Italy,0,0,X,Wolverhampton,England,2022_uefa_nations_league.txt
+Hungary,Germany,1,1,X,Budapest,Hungary,2022_uefa_nations_league.txt
+Wales,Belgium,1,1,X,Cardiff,Wales,2022_uefa_nations_league.txt
+Netherlands,Poland,2,2,X,Rotterdam,Netherlands,2022_uefa_nations_league.txt
+Ukraine,Armenia,3,0,1,Łódź,Poland,2022_uefa_nations_league.txt
+Republic of Ireland,Scotland,3,0,1,Dublin,Republic of Ireland,2022_uefa_nations_league.txt
+Montenegro,Bosnia and Herzegovina,1,1,X,Podgorica,Montenegro,2022_uefa_nations_league.txt
+Romania,Finland,1,0,1,Bucharest,Romania,2022_uefa_nations_league.txt
+Faroe Islands,Lithuania,2,1,1,Tórshavn,Faroe Islands,2022_uefa_nations_league.txt
+Luxembourg,Turkey,0,2,2,Luxembourg,Luxembourg,2022_uefa_nations_league.txt
+Spain,Czech Republic,2,0,1,Málaga,Spain,2022_uefa_nations_league.txt
+Switzerland,Portugal,1,0,1,Geneva,Switzerland,2022_uefa_nations_league.txt
+Norway,Sweden,3,2,1,Oslo,Norway,2022_uefa_nations_league.txt
+Slovenia,Serbia,2,2,X,Ljubljana,Slovenia,2022_uefa_nations_league.txt
+Northern Ireland,Cyprus,2,2,X,Belfast,Northern Ireland,2022_uefa_nations_league.txt
+Greece,Kosovo,2,0,1,Vólos,Greece,2022_uefa_nations_league.txt
+North Macedonia,Gibraltar,4,0,1,Skopje,North Macedonia,2022_uefa_nations_league.txt
+Georgia,Bulgaria,0,0,X,Tbilisi,Georgia,2022_uefa_nations_league.txt
+Malta,San Marino,1,0,1,Ta' Qali,Malta,2022_uefa_nations_league.txt
+Denmark,Austria,2,0,1,Copenhagen,Denmark,2022_uefa_nations_league.txt
+France,Croatia,0,1,2,Paris,France,2022_uefa_nations_league.txt
+Iceland,Israel,2,2,X,Reykjavík,Iceland,2022_uefa_nations_league.txt
+Azerbaijan,Belarus,2,0,1,Mardakan,Azerbaijan,2022_uefa_nations_league.txt
+Kazakhstan,Slovakia,2,1,1,Nur-Sultan,Kazakhstan,2022_uefa_nations_league.txt
+England,Hungary,0,4,2,Wolverhampton,England,2022_uefa_nations_league.txt
+Germany,Italy,5,2,1,Mönchengladbach,Germany,2022_uefa_nations_league.txt
+Netherlands,Wales,3,2,1,Rotterdam,Netherlands,2022_uefa_nations_league.txt
+Poland,Belgium,0,1,2,Warsaw,Poland,2022_uefa_nations_league.txt
+Armenia,Scotland,1,4,2,Yerevan,Armenia,2022_uefa_nations_league.txt
+Ukraine,Republic of Ireland,1,1,X,Łódź,Poland,2022_uefa_nations_league.txt
+Bosnia and Herzegovina,Finland,3,2,1,Zenica,Bosnia and Herzegovina,2022_uefa_nations_league.txt
+Romania,Montenegro,0,3,2,Bucharest,Romania,2022_uefa_nations_league.txt
+Luxembourg,Faroe Islands,2,2,X,Luxembourg,Luxembourg,2022_uefa_nations_league.txt
+Turkey,Lithuania,2,0,1,İzmir,Turkey,2022_uefa_nations_league.txt
+Moldova,Andorra,2,1,1,Chișinău,Moldova,2022_uefa_nations_league.txt
+Liechtenstein,Latvia,0,2,2,Vaduz,Liechtenstein,2022_uefa_nations_league.txt
+Scotland,Ukraine,3,0,1,Glasgow,Scotland,2022_uefa_nations_league.txt
+Croatia,Denmark,2,1,1,Zagreb,Croatia,2022_uefa_nations_league.txt
+France,Austria,2,0,1,Paris,France,2022_uefa_nations_league.txt
+Belgium,Wales,2,1,1,Brussels,Belgium,2022_uefa_nations_league.txt
+Poland,Netherlands,0,2,2,Warsaw,Poland,2022_uefa_nations_league.txt
+Lithuania,Faroe Islands,1,1,X,Vilnius,Lithuania,2022_uefa_nations_league.txt
+Turkey,Luxembourg,3,3,X,Istanbul,Turkey,2022_uefa_nations_league.txt
+Kazakhstan,Belarus,2,1,1,Astana,Kazakhstan,2022_uefa_nations_league.txt
+Slovakia,Azerbaijan,1,2,2,Trnava,Slovakia,2022_uefa_nations_league.txt
+Latvia,Moldova,1,2,2,Riga,Latvia,2022_uefa_nations_league.txt
+Liechtenstein,Andorra,0,2,2,Vaduz,Liechtenstein,2022_uefa_nations_league.txt
+Germany,Hungary,0,1,2,Leipzig,Germany,2022_uefa_nations_league.txt
+Italy,England,1,0,1,Milan,Italy,2022_uefa_nations_league.txt
+Bosnia and Herzegovina,Montenegro,1,0,1,Zenica,Bosnia and Herzegovina,2022_uefa_nations_league.txt
+Finland,Romania,1,1,X,Helsinki,Finland,2022_uefa_nations_league.txt
+Georgia,North Macedonia,2,0,1,Tbilisi,Georgia,2022_uefa_nations_league.txt
+Bulgaria,Gibraltar,5,1,1,Razgrad,Bulgaria,2022_uefa_nations_league.txt
+Estonia,Malta,2,1,1,Tallinn,Estonia,2022_uefa_nations_league.txt
+Czech Republic,Portugal,0,4,2,Prague,Czech Republic,2022_uefa_nations_league.txt
+Spain,Switzerland,1,2,2,Zaragoza,Spain,2022_uefa_nations_league.txt
+Armenia,Ukraine,0,5,2,Yerevan,Armenia,2022_uefa_nations_league.txt
+Scotland,Republic of Ireland,2,1,1,Glasgow,Scotland,2022_uefa_nations_league.txt
+Israel,Albania,2,1,1,Tel Aviv,Israel,2022_uefa_nations_league.txt
+Slovenia,Norway,2,1,1,Ljubljana,Slovenia,2022_uefa_nations_league.txt
+Serbia,Sweden,4,1,1,Belgrade,Serbia,2022_uefa_nations_league.txt
+Northern Ireland,Kosovo,2,1,1,Belfast,Northern Ireland,2022_uefa_nations_league.txt
+Cyprus,Greece,1,0,1,Larnaca,Cyprus,2022_uefa_nations_league.txt
+Austria,Croatia,1,3,2,Vienna,Austria,2022_uefa_nations_league.txt
+Denmark,France,2,0,1,Copenhagen,Denmark,2022_uefa_nations_league.txt
+Wales,Poland,0,1,2,Cardiff,Wales,2022_uefa_nations_league.txt
+Netherlands,Belgium,1,0,1,Amsterdam,Netherlands,2022_uefa_nations_league.txt
+Faroe Islands,Turkey,2,1,1,Tórshavn,Faroe Islands,2022_uefa_nations_league.txt
+Luxembourg,Lithuania,1,0,1,Luxembourg,Luxembourg,2022_uefa_nations_league.txt
+Slovakia,Belarus,1,1,X,Bačka Topola,Serbia,2022_uefa_nations_league.txt
+Azerbaijan,Kazakhstan,3,0,1,Baku,Azerbaijan,2022_uefa_nations_league.txt
+Andorra,Latvia,1,1,X,Andorra la Vella,Andorra,2022_uefa_nations_league.txt
+Moldova,Liechtenstein,2,0,1,Chișinău,Moldova,2022_uefa_nations_league.txt
+England,Germany,3,3,X,London,England,2022_uefa_nations_league.txt
+Hungary,Italy,0,2,2,Budapest,Hungary,2022_uefa_nations_league.txt
+Montenegro,Finland,0,2,2,Podgorica,Montenegro,2022_uefa_nations_league.txt
+Romania,Bosnia and Herzegovina,4,1,1,Bucharest,Romania,2022_uefa_nations_league.txt
+Gibraltar,Georgia,1,2,2,Gibraltar,Gibraltar,2022_uefa_nations_league.txt
+North Macedonia,Bulgaria,0,1,2,Skopje,North Macedonia,2022_uefa_nations_league.txt
+San Marino,Estonia,0,4,2,Serravalle,San Marino,2022_uefa_nations_league.txt
+Portugal,Spain,0,1,2,Braga,Portugal,2022_uefa_nations_league.txt
+Switzerland,Czech Republic,2,1,1,St. Gallen,Switzerland,2022_uefa_nations_league.txt
+Republic of Ireland,Armenia,3,2,1,Dublin,Republic of Ireland,2022_uefa_nations_league.txt
+Ukraine,Scotland,0,0,X,Kraków,Poland,2022_uefa_nations_league.txt
+Albania,Iceland,1,1,X,Tirana,Albania,2022_uefa_nations_league.txt
+Norway,Serbia,0,2,2,Oslo,Norway,2022_uefa_nations_league.txt
+Sweden,Slovenia,1,1,X,Stockholm,Sweden,2022_uefa_nations_league.txt
+Kosovo,Cyprus,5,1,1,Pristina,Kosovo,2022_uefa_nations_league.txt
+Greece,Northern Ireland,3,1,1,Athens,Greece,2022_uefa_nations_league.txt
+Netherlands,Croatia,2,4,2,Rotterdam,Netherlands,2023_uefa_nations_league.txt
+Spain,Italy,2,1,1,Enschede,Netherlands,2023_uefa_nations_league.txt
+Netherlands,Italy,2,3,2,Enschede,Netherlands,2023_uefa_nations_league.txt
+Croatia,Spain,0,0,X,Rotterdam,Netherlands   [Spain wins on penalties],2023_uefa_nations_league.txt
+Gibraltar,Lithuania,0,1,2,Faro-Loulé,Portugal,2024_uefa_nations_league.txt
+Lithuania,Gibraltar,1,0,1,Kaunas,Lithuania,2024_uefa_nations_league.txt
+Portugal,Croatia,2,1,1,Lisbon,Portugal,2024_uefa_nations_league.txt
+Scotland,Poland,2,3,2,Glasgow,Scotland,2024_uefa_nations_league.txt
+Denmark,Switzerland,2,0,1,Copenhagen,Denmark,2024_uefa_nations_league.txt
+Serbia,Spain,0,0,X,Belgrade,Serbia,2024_uefa_nations_league.txt
+Azerbaijan,Sweden,1,3,2,Baku,Azerbaijan,2024_uefa_nations_league.txt
+Estonia,Slovakia,0,1,2,Tallinn,Estonia,2024_uefa_nations_league.txt
+Northern Ireland,Luxembourg,2,0,1,Belfast,Northern Ireland,2024_uefa_nations_league.txt
+Belarus,Bulgaria,0,0,X,Zalaegerszeg,Hungary,2024_uefa_nations_league.txt
+San Marino,Liechtenstein,1,0,1,Serravalle,San Marino,2024_uefa_nations_league.txt
+Belgium,Israel,3,1,1,Debrecen,Hungary,2024_uefa_nations_league.txt
+France,Italy,1,3,2,Paris,France,2024_uefa_nations_league.txt
+Kazakhstan,Norway,0,0,X,Almaty,Kazakhstan,2024_uefa_nations_league.txt
+Slovenia,Austria,1,1,X,Ljubljana,Slovenia,2024_uefa_nations_league.txt
+Iceland,Montenegro,2,0,1,Reykjavík,Iceland,2024_uefa_nations_league.txt
+Wales,Turkey,0,0,X,Cardiff,Wales,2024_uefa_nations_league.txt
+Kosovo,Romania,0,3,2,Pristina,Kosovo,2024_uefa_nations_league.txt
+Lithuania,Cyprus,0,1,2,Kaunas,Lithuania,2024_uefa_nations_league.txt
+Germany,Hungary,5,0,1,Düsseldorf,Germany,2024_uefa_nations_league.txt
+Netherlands,Bosnia and Herzegovina,5,2,1,Eindhoven,Netherlands,2024_uefa_nations_league.txt
+Georgia,Czech Republic,4,1,1,Tbilisi,Georgia,2024_uefa_nations_league.txt
+Ukraine,Albania,1,2,2,Prague,Czech Republic,2024_uefa_nations_league.txt
+Republic of Ireland,England,0,2,2,Dublin,Republic of Ireland,2024_uefa_nations_league.txt
+Greece,Finland,3,0,1,Piraeus,Greece,2024_uefa_nations_league.txt
+Faroe Islands,North Macedonia,1,1,X,Toftir,Faroe Islands,2024_uefa_nations_league.txt
+Armenia,Latvia,4,1,1,Yerevan,Armenia,2024_uefa_nations_league.txt
+Moldova,Malta,2,0,1,Chișinău,Moldova,2024_uefa_nations_league.txt
+Portugal,Scotland,2,1,1,Lisbon,Portugal,2024_uefa_nations_league.txt
+Croatia,Poland,1,0,1,Osijek,Croatia,2024_uefa_nations_league.txt
+Denmark,Serbia,2,0,1,Copenhagen,Denmark,2024_uefa_nations_league.txt
+Switzerland,Spain,1,4,2,Geneva,Switzerland,2024_uefa_nations_league.txt
+Slovakia,Azerbaijan,2,0,1,Košice,Slovakia,2024_uefa_nations_league.txt
+Sweden,Estonia,3,0,1,Stockholm,Sweden,2024_uefa_nations_league.txt
+Luxembourg,Belarus,0,1,2,Luxembourg,Luxembourg,2024_uefa_nations_league.txt
+Bulgaria,Northern Ireland,1,0,1,Plovdiv,Bulgaria,2024_uefa_nations_league.txt
+Gibraltar,Liechtenstein,2,2,X,Gibraltar,Gibraltar,2024_uefa_nations_league.txt
+France,Belgium,2,0,1,Décines-Charpieu,France,2024_uefa_nations_league.txt
+Israel,Italy,1,2,2,Budapest,Hungary,2024_uefa_nations_league.txt
+Norway,Austria,2,1,1,Oslo,Norway,2024_uefa_nations_league.txt
+Slovenia,Kazakhstan,3,0,1,Ljubljana,Slovenia,2024_uefa_nations_league.txt
+Montenegro,Wales,1,2,2,Nikšić,Montenegro,2024_uefa_nations_league.txt
+Turkey,Iceland,3,1,1,Izmir,Turkey,2024_uefa_nations_league.txt
+Cyprus,Kosovo,0,4,2,Larnaca,Cyprus,2024_uefa_nations_league.txt
+Romania,Lithuania,3,1,1,Bucharest,Romania,2024_uefa_nations_league.txt
+Hungary,Bosnia and Herzegovina,0,0,X,Budapest,Hungary,2024_uefa_nations_league.txt
+Netherlands,Germany,2,2,X,Amsterdam,Netherlands,2024_uefa_nations_league.txt
+Albania,Georgia,0,1,2,Tirana,Albania,2024_uefa_nations_league.txt
+Czech Republic,Ukraine,3,2,1,Prague,Czech Republic,2024_uefa_nations_league.txt
+England,Finland,2,0,1,London,England,2024_uefa_nations_league.txt
+Republic of Ireland,Greece,0,2,2,Dublin,Republic of Ireland,2024_uefa_nations_league.txt
+Latvia,Faroe Islands,1,0,1,Riga,Latvia,2024_uefa_nations_league.txt
+North Macedonia,Armenia,2,0,1,Skopje,North Macedonia,2024_uefa_nations_league.txt
+Andorra,Malta,0,1,2,Andorra la Vella,Andorra,2024_uefa_nations_league.txt
+Israel,France,1,4,2,Budapest,Hungary,2024_uefa_nations_league.txt
+Italy,Belgium,2,2,X,Rome,Italy,2024_uefa_nations_league.txt
+England,Greece,1,2,2,London,England,2024_uefa_nations_league.txt
+Finland,Republic of Ireland,1,2,2,Helsinki,Finland,2024_uefa_nations_league.txt
+Austria,Kazakhstan,4,0,1,Salzburg,Austria,2024_uefa_nations_league.txt
+Norway,Slovenia,3,0,1,Oslo,Norway,2024_uefa_nations_league.txt
+Latvia,North Macedonia,0,3,2,Riga,Latvia,2024_uefa_nations_league.txt
+Faroe Islands,Armenia,2,2,X,Tórshavn,Faroe Islands,2024_uefa_nations_league.txt
+Gibraltar,San Marino,1,0,1,Gibraltar,Gibraltar,2024_uefa_nations_league.txt
+Moldova,Andorra,2,0,1,Chișinău,Moldova,2024_uefa_nations_league.txt
+Bosnia and Herzegovina,Germany,1,2,2,Zenica,Bosnia and Herzegovina,2024_uefa_nations_league.txt
+Hungary,Netherlands,1,1,X,Budapest,Hungary,2024_uefa_nations_league.txt
+Czech Republic,Albania,2,0,1,Prague,Czech Republic,2024_uefa_nations_league.txt
+Ukraine,Georgia,1,0,1,Poznań,Poland,2024_uefa_nations_league.txt
+Iceland,Wales,2,2,X,Reykjavík,Iceland,2024_uefa_nations_league.txt
+Turkey,Montenegro,1,0,1,Tekkeköy,Turkey,2024_uefa_nations_league.txt
+Estonia,Azerbaijan,3,1,1,Tallinn,Estonia,2024_uefa_nations_league.txt
+Slovakia,Sweden,2,2,X,Bratislava,Slovakia,2024_uefa_nations_league.txt
+Croatia,Scotland,2,1,1,Zagreb,Croatia,2024_uefa_nations_league.txt
+Poland,Portugal,1,3,2,Warsaw,Poland,2024_uefa_nations_league.txt
+Serbia,Switzerland,2,0,1,Leskovac,Serbia,2024_uefa_nations_league.txt
+Spain,Denmark,1,0,1,Murcia,Spain,2024_uefa_nations_league.txt
+Lithuania,Kosovo,1,2,2,Kaunas,Lithuania,2024_uefa_nations_league.txt
+Cyprus,Romania,0,3,2,Larnaca,Cyprus,2024_uefa_nations_league.txt
+Bulgaria,Luxembourg,0,0,X,Plovdiv,Bulgaria,2024_uefa_nations_league.txt
+Belarus,Northern Ireland,0,0,X,Zalaegerszeg,Hungary,2024_uefa_nations_league.txt
+Finland,England,1,3,2,Helsinki,Finland,2024_uefa_nations_league.txt
+Greece,Republic of Ireland,2,0,1,Piraeus,Greece,2024_uefa_nations_league.txt
+Kazakhstan,Slovenia,0,1,2,Astana,Kazakhstan,2024_uefa_nations_league.txt
+Austria,Norway,5,1,1,Linz,Austria,2024_uefa_nations_league.txt
+Faroe Islands,Latvia,1,1,X,Tórshavn,Faroe Islands,2024_uefa_nations_league.txt
+Armenia,North Macedonia,0,2,2,Yerevan,Armenia,2024_uefa_nations_league.txt
+Liechtenstein,Gibraltar,0,0,X,Vaduz,Liechtenstein,2024_uefa_nations_league.txt
+Malta,Moldova,1,0,1,Ta' Qali,Malta,2024_uefa_nations_league.txt
+Belgium,France,1,2,2,Leuven,Belgium,2024_uefa_nations_league.txt
+Italy,Israel,4,1,1,Udine,Italy,2024_uefa_nations_league.txt
+Bosnia and Herzegovina,Hungary,0,2,2,Zenica,Bosnia and Herzegovina,2024_uefa_nations_league.txt
+Germany,Netherlands,1,0,1,Munich,Germany,2024_uefa_nations_league.txt
+Georgia,Albania,0,1,2,Tbilisi,Georgia,2024_uefa_nations_league.txt
+Ukraine,Czech Republic,1,1,X,Wrocław,Poland,2024_uefa_nations_league.txt
+Iceland,Turkey,2,4,2,Reykjavík,Iceland,2024_uefa_nations_league.txt
+Wales,Montenegro,1,0,1,Cardiff,Wales,2024_uefa_nations_league.txt
+Azerbaijan,Slovakia,1,3,2,Baku,Azerbaijan,2024_uefa_nations_league.txt
+Estonia,Sweden,0,3,2,Tallinn,Estonia,2024_uefa_nations_league.txt
+Scotland,Portugal,0,0,X,Glasgow,Scotland,2024_uefa_nations_league.txt
+Poland,Croatia,3,3,X,Warsaw,Poland,2024_uefa_nations_league.txt
+Spain,Serbia,3,0,1,Cordoba,Spain,2024_uefa_nations_league.txt
+Switzerland,Denmark,2,2,X,St. Gallen,Switzerland,2024_uefa_nations_league.txt
+Kosovo,Cyprus,3,0,1,Pristina,Kosovo,2024_uefa_nations_league.txt
+Lithuania,Romania,1,2,2,Kaunas,Lithuania,2024_uefa_nations_league.txt
+Northern Ireland,Bulgaria,5,0,1,Belfast,Northern Ireland,2024_uefa_nations_league.txt
+Belarus,Luxembourg,1,1,X,Zalaegerszeg,Hungary,2024_uefa_nations_league.txt
+Belgium,Italy,0,1,2,Brussels,Belgium,2024_uefa_nations_league.txt
+France,Israel,0,0,X,Paris,France,2024_uefa_nations_league.txt
+Republic of Ireland,Finland,1,0,1,Dublin,Republic of Ireland,2024_uefa_nations_league.txt
+Greece,England,0,3,2,Athens,Greece,2024_uefa_nations_league.txt
+Kazakhstan,Austria,0,2,2,Almaty,Kazakhstan,2024_uefa_nations_league.txt
+Slovenia,Norway,1,4,2,Ljubljana,Slovenia,2024_uefa_nations_league.txt
+North Macedonia,Latvia,1,0,1,Skopje,North Macedonia,2024_uefa_nations_league.txt
+Armenia,Faroe Islands,0,1,2,Yerevan,Armenia,2024_uefa_nations_league.txt
+Portugal,Poland,5,1,1,Porto,Portugal,2024_uefa_nations_league.txt
+Scotland,Croatia,1,0,1,Glasgow,Scotland,2024_uefa_nations_league.txt
+Denmark,Spain,1,2,2,Copenhagen,Denmark,2024_uefa_nations_league.txt
+Switzerland,Serbia,1,1,X,Zürich,Switzerland,2024_uefa_nations_league.txt
+Cyprus,Lithuania,2,1,1,Larnaca,Cyprus,2024_uefa_nations_league.txt
+Romania,Kosovo,0,0,X,Bucharest,Romania,2024_uefa_nations_league.txt
+Northern Ireland,Belarus,2,0,1,Belfast,Northern Ireland,2024_uefa_nations_league.txt
+Luxembourg,Bulgaria,0,1,2,Luxembourg,Luxembourg,2024_uefa_nations_league.txt
+San Marino,Gibraltar,1,1,X,Serravalle,San Marino,2024_uefa_nations_league.txt
+Germany,Bosnia and Herzegovina,7,0,1,Freiburg,Germany,2024_uefa_nations_league.txt
+Netherlands,Hungary,4,0,1,Amsterdam,Netherlands,2024_uefa_nations_league.txt
+Albania,Czech Republic,0,0,X,Tirana,Albania,2024_uefa_nations_league.txt
+Georgia,Ukraine,1,1,X,Batumi,Georgia,2024_uefa_nations_league.txt
+Montenegro,Iceland,0,2,2,Nikšić,Montenegro,2024_uefa_nations_league.txt
+Turkey,Wales,0,0,X,Kayseri,Turkey,2024_uefa_nations_league.txt
+Azerbaijan,Estonia,0,0,X,Gabala,Azerbaijan,2024_uefa_nations_league.txt
+Sweden,Slovakia,2,1,1,Solna,Sweden,2024_uefa_nations_league.txt
+Andorra,Moldova,0,1,2,Andorra la Vella,Andorra,2024_uefa_nations_league.txt
+Israel,Belgium,1,0,1,Budapest,Hungary,2024_uefa_nations_league.txt
+Italy,France,1,3,2,Milan,Italy,2024_uefa_nations_league.txt
+England,Republic of Ireland,5,0,1,London,England,2024_uefa_nations_league.txt
+Finland,Greece,0,2,2,Helsinki,Finland,2024_uefa_nations_league.txt
+Norway,Kazakhstan,5,0,1,Oslo,Norway,2024_uefa_nations_league.txt
+Austria,Slovenia,1,1,X,Vienna,Austria,2024_uefa_nations_league.txt
+North Macedonia,Faroe Islands,1,0,1,Skopje,North Macedonia,2024_uefa_nations_league.txt
+Latvia,Armenia,1,2,2,Riga,Latvia,2024_uefa_nations_league.txt
+Croatia,Portugal,1,1,X,Split,Croatia,2024_uefa_nations_league.txt
+Poland,Scotland,1,2,2,Warsaw,Poland,2024_uefa_nations_league.txt
+Serbia,Denmark,0,0,X,Leskovac,Serbia,2024_uefa_nations_league.txt
+Spain,Switzerland,3,2,1,Santa Cruz de Tenerife,Spain,2024_uefa_nations_league.txt
+Kosovo,Lithuania,1,0,1,Pristina,Kosovo,2024_uefa_nations_league.txt
+Romania,Cyprus,4,1,1,Bucharest,Romania,2024_uefa_nations_league.txt
+Luxembourg,Northern Ireland,2,2,X,Luxembourg,Luxembourg,2024_uefa_nations_league.txt
+Bulgaria,Belarus,1,1,X,Sofia,Bulgaria,2024_uefa_nations_league.txt
+Liechtenstein,San Marino,1,3,2,Vaduz,Liechtenstein,2024_uefa_nations_league.txt
+Bosnia and Herzegovina,Netherlands,1,1,X,Zenica,Bosnia and Herzegovina,2024_uefa_nations_league.txt
+Hungary,Germany,1,1,X,Budapest,Hungary,2024_uefa_nations_league.txt
+Albania,Ukraine,1,2,2,Tirana,Albania,2024_uefa_nations_league.txt
+Czech Republic,Georgia,2,1,1,Olomouc,Czech Republic,2024_uefa_nations_league.txt
+Wales,Iceland,4,1,1,Cardiff,Wales,2024_uefa_nations_league.txt
+Montenegro,Turkey,3,1,1,Podgorica,Montenegro,2024_uefa_nations_league.txt
+Slovakia,Estonia,1,0,1,Trnava,Slovakia,2024_uefa_nations_league.txt
+Sweden,Azerbaijan,6,0,1,Solna,Sweden,2024_uefa_nations_league.txt
+Malta,Andorra,0,0,X,Ta' Qali,Malta,2024_uefa_nations_league.txt

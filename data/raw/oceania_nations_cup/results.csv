@@ -1,0 +1,142 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+New Caledonia,Tahiti,1,2,2,Auckland,New Zealand,1973_oceania_nations_cup.txt
+New Zealand,Fiji,5,1,1,Auckland,New Zealand,1973_oceania_nations_cup.txt
+New Caledonia,Vanuatu,4,1,1,Auckland,New Zealand,1973_oceania_nations_cup.txt
+New Zealand,Tahiti,1,1,X,Auckland,New Zealand,1973_oceania_nations_cup.txt
+Fiji,New Caledonia,0,2,2,Auckland,New Zealand,1973_oceania_nations_cup.txt
+Vanuatu,Tahiti,0,1,2,Auckland,New Zealand,1973_oceania_nations_cup.txt
+Fiji,Vanuatu,1,2,2,Auckland,New Zealand,1973_oceania_nations_cup.txt
+New Zealand,New Caledonia,2,1,1,Auckland,New Zealand,1973_oceania_nations_cup.txt
+Fiji,Tahiti,0,4,2,Auckland,New Zealand,1973_oceania_nations_cup.txt
+New Zealand,Vanuatu,3,1,1,Auckland,New Zealand,1973_oceania_nations_cup.txt
+New Caledonia,Vanuatu,2,1,1,Auckland,New Zealand,1973_oceania_nations_cup.txt
+New Zealand,Tahiti,2,0,1,Auckland,New Zealand,1973_oceania_nations_cup.txt
+New Caledonia,Australia,0,8,2,Nouméa,New Caledonia,1980_oceania_nations_cup.txt
+Vanuatu,Papua New Guinea,3,4,2,Nouméa,New Caledonia,1980_oceania_nations_cup.txt
+Fiji,Solomon Islands,3,1,1,Nouméa,New Caledonia,1980_oceania_nations_cup.txt
+New Zealand,Tahiti,1,3,2,Nouméa,New Caledonia,1980_oceania_nations_cup.txt
+Australia,Papua New Guinea,11,2,1,Nouméa,New Caledonia,1980_oceania_nations_cup.txt
+New Caledonia,Vanuatu,4,3,1,Nouméa,New Caledonia,1980_oceania_nations_cup.txt
+Fiji,New Zealand,4,0,1,Nouméa,New Caledonia,1980_oceania_nations_cup.txt
+Solomon Islands,Tahiti,1,12,2,Nouméa,New Caledonia,1980_oceania_nations_cup.txt
+Australia,Vanuatu,1,0,1,Nouméa,New Caledonia,1980_oceania_nations_cup.txt
+New Caledonia,Papua New Guinea,8,0,1,Nouméa,New Caledonia,1980_oceania_nations_cup.txt
+Fiji,Tahiti,3,6,2,Nouméa,New Caledonia,1980_oceania_nations_cup.txt
+New Zealand,Solomon Islands,6,1,1,Nouméa,New Caledonia,1980_oceania_nations_cup.txt
+Australia,Tahiti,4,2,1,Nouméa,New Caledonia,1980_oceania_nations_cup.txt
+New Caledonia,Fiji,2,1,1,Nouméa,New Caledonia,1980_oceania_nations_cup.txt
+New Zealand,Australia,0,0,X,Christchurch,New Zealand,1995_oceania_nations_cup.txt
+Australia,New Zealand,3,0,1,Newcastle,Australia,1995_oceania_nations_cup.txt
+Solomon Islands,Tahiti,0,1,2,Honiara,Solomon Islands,1995_oceania_nations_cup.txt
+Tahiti,Solomon Islands,2,1,1,Papeete,Tahiti,1996_oceania_nations_cup.txt
+Tahiti,Australia,0,6,2,Papeete,Tahiti,1996_oceania_nations_cup.txt
+Australia,Tahiti,5,0,1,Canberra,Australia,1996_oceania_nations_cup.txt
+Australia,Fiji,3,1,1,Brisbane,Australia,1998_oceania_nations_cup.txt
+New Zealand,Tahiti,1,0,1,Brisbane,Australia,1998_oceania_nations_cup.txt
+Australia,Cook Islands,16,0,1,Brisbane,Australia,1998_oceania_nations_cup.txt
+New Zealand,Vanuatu,8,1,1,Brisbane,Australia,1998_oceania_nations_cup.txt
+Fiji,Cook Islands,3,0,1,Brisbane,Australia,1998_oceania_nations_cup.txt
+Tahiti,Vanuatu,5,1,1,Brisbane,Australia,1998_oceania_nations_cup.txt
+Australia,Tahiti,4,1,1,Brisbane,Australia,1998_oceania_nations_cup.txt
+New Zealand,Fiji,1,0,1,Brisbane,Australia,1998_oceania_nations_cup.txt
+Australia,New Zealand,0,1,2,Brisbane,Australia,1998_oceania_nations_cup.txt
+Tahiti,Fiji,2,4,2,Brisbane,Australia,1998_oceania_nations_cup.txt
+Australia,Cook Islands,17,0,1,Papeete,Tahiti,2000_oceania_nations_cup.txt
+Tahiti,New Zealand,0,2,2,Papeete,Tahiti,2000_oceania_nations_cup.txt
+New Zealand,Vanuatu,3,1,1,Papeete,Tahiti,2000_oceania_nations_cup.txt
+Solomon Islands,Cook Islands,5,1,1,Papeete,Tahiti,2000_oceania_nations_cup.txt
+Tahiti,Vanuatu,2,3,2,Papeete,Tahiti,2000_oceania_nations_cup.txt
+Solomon Islands,Australia,0,6,2,Papeete,Tahiti,2000_oceania_nations_cup.txt
+Australia,Vanuatu,1,0,1,Papeete,Tahiti,2000_oceania_nations_cup.txt
+New Zealand,Solomon Islands,2,0,1,Papeete,Tahiti,2000_oceania_nations_cup.txt
+Australia,New Zealand,2,0,1,Papeete,Tahiti,2000_oceania_nations_cup.txt
+Vanuatu,Solomon Islands,1,2,2,Papeete,Tahiti,2000_oceania_nations_cup.txt
+New Zealand,Tahiti,4,0,1,North Shore,New Zealand,2002_oceania_nations_cup.txt
+Papua New Guinea,Solomon Islands,0,0,X,North Shore,New Zealand,2002_oceania_nations_cup.txt
+Australia,Vanuatu,2,0,1,Auckland,New Zealand,2002_oceania_nations_cup.txt
+Fiji,New Caledonia,2,1,1,Auckland,New Zealand,2002_oceania_nations_cup.txt
+New Zealand,Papua New Guinea,9,1,1,North Shore,New Zealand,2002_oceania_nations_cup.txt
+Solomon Islands,Tahiti,2,3,2,North Shore,New Zealand,2002_oceania_nations_cup.txt
+Australia,New Caledonia,11,0,1,Auckland,New Zealand,2002_oceania_nations_cup.txt
+Fiji,Vanuatu,0,1,2,Auckland,New Zealand,2002_oceania_nations_cup.txt
+New Zealand,Solomon Islands,6,1,1,North Shore,New Zealand,2002_oceania_nations_cup.txt
+Papua New Guinea,Tahiti,1,3,2,North Shore,New Zealand,2002_oceania_nations_cup.txt
+Australia,Fiji,8,0,1,Auckland,New Zealand,2002_oceania_nations_cup.txt
+New Caledonia,Vanuatu,0,1,2,Auckland,New Zealand,2002_oceania_nations_cup.txt
+Australia,Tahiti,2,1,1,Auckland,New Zealand,2002_oceania_nations_cup.txt
+New Zealand,Vanuatu,3,0,1,Auckland,New Zealand,2002_oceania_nations_cup.txt
+New Zealand,Australia,1,0,1,Auckland,New Zealand,2002_oceania_nations_cup.txt
+Tahiti,Vanuatu,1,0,1,Auckland,New Zealand,2002_oceania_nations_cup.txt
+Australia,New Zealand,1,0,1,Adelaide,Australia,2004_oceania_nations_cup.txt
+Tahiti,Fiji,0,0,X,Adelaide,Australia,2004_oceania_nations_cup.txt
+Vanuatu,Solomon Islands,0,1,2,Adelaide,Australia,2004_oceania_nations_cup.txt
+Australia,Tahiti,9,0,1,Adelaide,Australia,2004_oceania_nations_cup.txt
+Fiji,Vanuatu,1,0,1,Adelaide,Australia,2004_oceania_nations_cup.txt
+New Zealand,Solomon Islands,3,0,1,Adelaide,Australia,2004_oceania_nations_cup.txt
+Australia,Fiji,6,1,1,Adelaide,Australia,2004_oceania_nations_cup.txt
+New Zealand,Vanuatu,2,4,2,Adelaide,Australia,2004_oceania_nations_cup.txt
+Tahiti,Solomon Islands,0,4,2,Adelaide,Australia,2004_oceania_nations_cup.txt
+Australia,Vanuatu,3,0,1,Adelaide,Australia,2004_oceania_nations_cup.txt
+Fiji,Solomon Islands,1,2,2,Adelaide,Australia,2004_oceania_nations_cup.txt
+New Zealand,Tahiti,10,0,1,Adelaide,Australia,2004_oceania_nations_cup.txt
+Australia,Solomon Islands,2,2,X,Adelaide,Australia,2004_oceania_nations_cup.txt
+Fiji,New Zealand,0,2,2,Adelaide,Australia,2004_oceania_nations_cup.txt
+Tahiti,Vanuatu,2,1,1,Adelaide,Australia,2004_oceania_nations_cup.txt
+Solomon Islands,Australia,1,5,2,Honiara,Solomon Islands,2004_oceania_nations_cup.txt
+Australia,Solomon Islands,6,0,1,Sydney,Australia,2004_oceania_nations_cup.txt
+Fiji,New Zealand,0,2,2,Lautoka,Fiji,2007_oceania_nations_cup.txt
+Fiji,New Caledonia,3,3,X,Ba,Fiji,2007_oceania_nations_cup.txt
+Vanuatu,New Zealand,1,2,2,Port Vila,Vanuatu,2007_oceania_nations_cup.txt
+New Caledonia,Fiji,4,0,1,Nouméa,New Caledonia,2007_oceania_nations_cup.txt
+New Zealand,Vanuatu,4,1,1,Wellington,New Zealand,2007_oceania_nations_cup.txt
+Vanuatu,New Caledonia,1,1,X,Port Vila,Vanuatu,2008_oceania_nations_cup.txt
+New Caledonia,Vanuatu,3,0,1,Nouméa,New Caledonia,2008_oceania_nations_cup.txt
+Fiji,Vanuatu,2,0,1,Ba,Fiji,2008_oceania_nations_cup.txt
+New Caledonia,New Zealand,1,3,2,Nouméa,New Caledonia,2008_oceania_nations_cup.txt
+New Zealand,New Caledonia,3,0,1,North Shore,New Zealand,2008_oceania_nations_cup.txt
+Vanuatu,Fiji,2,1,1,Port Vila,Vanuatu,2008_oceania_nations_cup.txt
+Fiji,New Zealand,2,0,1,Lautoka,Fiji,2008_oceania_nations_cup.txt
+Samoa,Tahiti,1,10,2,Honiara,Solomon Islands,2012_oceania_nations_cup.txt
+Vanuatu,New Caledonia,2,5,2,Honiara,Solomon Islands,2012_oceania_nations_cup.txt
+Fiji,New Zealand,0,1,2,Honiara,Solomon Islands,2012_oceania_nations_cup.txt
+Solomon Islands,Papua New Guinea,1,0,1,Honiara,Solomon Islands,2012_oceania_nations_cup.txt
+Tahiti,New Caledonia,4,3,1,Honiara,Solomon Islands,2012_oceania_nations_cup.txt
+Vanuatu,Samoa,5,0,1,Honiara,Solomon Islands,2012_oceania_nations_cup.txt
+Papua New Guinea,New Zealand,1,2,2,Honiara,Solomon Islands,2012_oceania_nations_cup.txt
+Solomon Islands,Fiji,0,0,X,Honiara,Solomon Islands,2012_oceania_nations_cup.txt
+New Caledonia,Samoa,9,0,1,Honiara,Solomon Islands,2012_oceania_nations_cup.txt
+Tahiti,Vanuatu,4,1,1,Honiara,Solomon Islands,2012_oceania_nations_cup.txt
+Papua New Guinea,Fiji,1,1,X,Honiara,Solomon Islands,2012_oceania_nations_cup.txt
+Solomon Islands,New Zealand,1,1,X,Honiara,Solomon Islands,2012_oceania_nations_cup.txt
+New Zealand,New Caledonia,0,2,2,Honiara,Solomon Islands,2012_oceania_nations_cup.txt
+Solomon Islands,Tahiti,0,1,2,Honiara,Solomon Islands,2012_oceania_nations_cup.txt
+Solomon Islands,New Zealand,3,4,2,Honiara,Solomon Islands,2012_oceania_nations_cup.txt
+Tahiti,New Caledonia,1,0,1,Honiara,Solomon Islands,2012_oceania_nations_cup.txt
+New Zealand,Fiji,3,1,1,Port Moresby,Papua New Guinea,2016_oceania_nations_cup.txt
+Vanuatu,Solomon Islands,0,1,2,Port Moresby,Papua New Guinea,2016_oceania_nations_cup.txt
+Papua New Guinea,New Caledonia,1,1,X,Port Moresby,Papua New Guinea,2016_oceania_nations_cup.txt
+Tahiti,Samoa,4,0,1,Port Moresby,Papua New Guinea,2016_oceania_nations_cup.txt
+Solomon Islands,Fiji,0,1,2,Port Moresby,Papua New Guinea,2016_oceania_nations_cup.txt
+Vanuatu,New Zealand,0,5,2,Port Moresby,Papua New Guinea,2016_oceania_nations_cup.txt
+New Caledonia,Samoa,7,0,1,Port Moresby,Papua New Guinea,2016_oceania_nations_cup.txt
+Papua New Guinea,Tahiti,2,2,X,Port Moresby,Papua New Guinea,2016_oceania_nations_cup.txt
+Fiji,Vanuatu,2,3,2,Port Moresby,Papua New Guinea,2016_oceania_nations_cup.txt
+New Zealand,Solomon Islands,1,0,1,Port Moresby,Papua New Guinea,2016_oceania_nations_cup.txt
+Papua New Guinea,Samoa,8,0,1,Port Moresby,Papua New Guinea,2016_oceania_nations_cup.txt
+Tahiti,New Caledonia,1,1,X,Port Moresby,Papua New Guinea,2016_oceania_nations_cup.txt
+New Zealand,New Caledonia,1,0,1,Port Moresby,Papua New Guinea,2016_oceania_nations_cup.txt
+Papua New Guinea,Solomon Islands,2,1,1,Port Moresby,Papua New Guinea,2016_oceania_nations_cup.txt
+Papua New Guinea,New Zealand,0,0,X,Port Moresby,Papua New Guinea   [New Zealand wins on penalties],2016_oceania_nations_cup.txt
+Vanuatu,Solomon Islands,1,0,1,Port Vila,Vanuatu,2024_oceania_nations_cup.txt
+Tahiti,Samoa,2,0,1,Suva,Fiji,2024_oceania_nations_cup.txt
+Fiji,Papua New Guinea,5,1,1,Suva,Fiji,2024_oceania_nations_cup.txt
+New Zealand,Solomon Islands,3,0,1,Port Vila,Vanuatu,2024_oceania_nations_cup.txt
+Papua New Guinea,Tahiti,1,1,X,Suva,Fiji,2024_oceania_nations_cup.txt
+Fiji,Samoa,9,1,1,Suva,Fiji,2024_oceania_nations_cup.txt
+Vanuatu,New Zealand,0,4,2,Port Vila,Vanuatu,2024_oceania_nations_cup.txt
+Samoa,Papua New Guinea,1,2,2,Suva,Fiji,2024_oceania_nations_cup.txt
+Fiji,Tahiti,1,0,1,Suva,Fiji,2024_oceania_nations_cup.txt
+Vanuatu,Fiji,2,1,1,Port Vila,Vanuatu,2024_oceania_nations_cup.txt
+New Zealand,Tahiti,5,0,1,Port Vila,Vanuatu,2024_oceania_nations_cup.txt
+Tahiti,Fiji,2,1,1,Port Vila,Vanuatu,2024_oceania_nations_cup.txt
+Vanuatu,New Zealand,0,3,2,Port Vila,Vanuatu,2024_oceania_nations_cup.txt

@@ -1,0 +1,5 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Denmark,Italy,0,2,2,Malmö,Sweden,1991_scania_100_tournament.txt
+Sweden,Russia,2,3,2,Gothenburg,Sweden,1991_scania_100_tournament.txt
+Sweden,Denmark,4,0,1,Norrköping,Sweden,1991_scania_100_tournament.txt
+Italy,Russia,1,1,X,Solna,Sweden   [Italy wins on penalties],1991_scania_100_tournament.txt

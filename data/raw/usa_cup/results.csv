@@ -1,0 +1,38 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+United States,Republic of Ireland,3,1,1,D.C.,United States,1992_usa_cup.txt
+Italy,Portugal,0,0,X,New Haven,United States,1992_usa_cup.txt
+United States,Portugal,1,0,1,Chicago,United States,1992_usa_cup.txt
+Republic of Ireland,Italy,0,2,2,Foxborough,United States,1992_usa_cup.txt
+United States,Italy,1,1,X,Chicago,United States,1992_usa_cup.txt
+Republic of Ireland,Portugal,2,0,1,Foxborough,United States,1992_usa_cup.txt
+United States,Brazil,0,2,2,New Haven,United States,1993_usa_cup.txt
+United States,England,2,0,1,Foxborough,United States,1993_usa_cup.txt
+Brazil,Germany,3,3,X,D.C.,United States,1993_usa_cup.txt
+Brazil,England,1,1,X,D.C.,United States,1993_usa_cup.txt
+United States,Germany,3,4,2,Chicago,United States,1993_usa_cup.txt
+England,Germany,1,2,2,Pontiac,United States,1993_usa_cup.txt
+United States,Nigeria,3,2,1,Foxborough,United States,1995_usa_cup.txt
+Colombia,Nigeria,1,0,1,Piscataway,United States,1995_usa_cup.txt
+United States,Mexico,4,0,1,D.C.,United States,1995_usa_cup.txt
+Mexico,Colombia,0,0,X,D.C.,United States,1995_usa_cup.txt
+Mexico,Nigeria,2,1,1,Dallas,United States,1995_usa_cup.txt
+United States,Colombia,0,0,X,Piscataway,United States,1995_usa_cup.txt
+Mexico,Bolivia,1,0,1,Dallas,United States,1996_usa_cup.txt
+United States,Republic of Ireland,2,1,1,Foxborough,United States,1996_usa_cup.txt
+Mexico,Republic of Ireland,2,2,X,East Rutherford,United States,1996_usa_cup.txt
+United States,Bolivia,0,2,2,D.C.,United States,1996_usa_cup.txt
+Bolivia,Republic of Ireland,0,3,2,East Rutherford,United States,1996_usa_cup.txt
+United States,Mexico,2,2,X,Pasadena,United States,1996_usa_cup.txt
+United States,Peru,0,1,2,San Diego,United States,1997_usa_cup.txt
+United States,Mexico,0,2,2,Pasadena,United States,1997_usa_cup.txt
+Mexico,Peru,0,0,X,Pasadena,United States,1997_usa_cup.txt
+Mexico,Bolivia,2,1,1,Los Angeles,United States,1999_usa_cup.txt
+United States,Guatemala,3,1,1,Los Angeles,United States,1999_usa_cup.txt
+Guatemala,Bolivia,2,1,1,San Diego,United States,1999_usa_cup.txt
+United States,Mexico,1,2,2,San Diego,United States,1999_usa_cup.txt
+United States,South Africa,4,0,1,D.C.,United States,2000_usa_cup.txt
+Mexico,Republic of Ireland,2,2,X,Chicago,United States,2000_usa_cup.txt
+United States,Republic of Ireland,1,1,X,Foxborough,United States,2000_usa_cup.txt
+Mexico,South Africa,4,2,1,Dallas,United States,2000_usa_cup.txt
+Republic of Ireland,South Africa,2,1,1,East Rutherford,United States,2000_usa_cup.txt
+United States,Mexico,3,0,1,East Rutherford,United States,2000_usa_cup.txt

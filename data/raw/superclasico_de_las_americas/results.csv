@@ -1,0 +1,9 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Argentina,Brazil,0,0,X,Córdoba,Argentina,2011_superclasico_de_las_americas.txt
+Brazil,Argentina,2,0,1,Belém,Brazil,2011_superclasico_de_las_americas.txt
+Brazil,Argentina,2,1,1,Goiânia,Brazil,2012_superclasico_de_las_americas.txt
+Argentina,Brazil,2,1,1,Buenos Aires,Argentina   [Brazil wins on penalties],2012_superclasico_de_las_americas.txt
+Argentina,Brazil,0,2,2,Beijing,China PR,2014_superclasico_de_las_americas.txt
+Argentina,Brazil,1,0,1,Melbourne,Australia,2017_superclasico_de_las_americas.txt
+Argentina,Brazil,0,1,2,Jeddah,Saudi Arabia,2018_superclasico_de_las_americas.txt
+Brazil,Argentina,0,1,2,Riyadh,Saudi Arabia,2019_superclasico_de_las_americas.txt

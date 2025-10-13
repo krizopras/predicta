@@ -1,0 +1,183 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Malaysia,Indonesia,1,2,2,Kuala Lumpur,Malaysia,1977_southeast_asian_games.txt
+Philippines,Brunei,4,1,1,Kuala Lumpur,Malaysia,1977_southeast_asian_games.txt
+Thailand,Singapore,2,0,1,Kuala Lumpur,Malaysia,1977_southeast_asian_games.txt
+Malaysia,Philippines,5,0,1,Kuala Lumpur,Malaysia,1977_southeast_asian_games.txt
+Myanmar,Singapore,5,1,1,Kuala Lumpur,Malaysia,1977_southeast_asian_games.txt
+Indonesia,Brunei,4,0,1,Kuala Lumpur,Malaysia,1977_southeast_asian_games.txt
+Thailand,Myanmar,0,3,2,Kuala Lumpur,Malaysia,1977_southeast_asian_games.txt
+Philippines,Indonesia,1,1,X,Kuala Lumpur,Malaysia,1977_southeast_asian_games.txt
+Malaysia,Brunei,7,0,1,Kuala Lumpur,Malaysia,1977_southeast_asian_games.txt
+Malaysia,Myanmar,9,1,1,Kuala Lumpur,Malaysia,1977_southeast_asian_games.txt
+Indonesia,Thailand,0,2,2,Kuala Lumpur,Malaysia,1977_southeast_asian_games.txt
+Myanmar,Indonesia,2,0,1,Kuala Lumpur,Malaysia,1977_southeast_asian_games.txt
+Malaysia,Thailand,2,0,1,Kuala Lumpur,Malaysia,1977_southeast_asian_games.txt
+Indonesia,Singapore,3,0,1,Jakarta,Indonesia,1979_southeast_asian_games.txt
+Thailand,Myanmar,1,0,1,Jakarta,Indonesia,1979_southeast_asian_games.txt
+Singapore,Malaysia,0,2,2,Jakarta,Indonesia,1979_southeast_asian_games.txt
+Indonesia,Thailand,1,3,2,Jakarta,Indonesia,1979_southeast_asian_games.txt
+Malaysia,Myanmar,0,0,X,Jakarta,Indonesia,1979_southeast_asian_games.txt
+Singapore,Thailand,2,2,X,Jakarta,Indonesia,1979_southeast_asian_games.txt
+Myanmar,Singapore,1,2,2,Jakarta,Indonesia,1979_southeast_asian_games.txt
+Indonesia,Malaysia,0,0,X,Jakarta,Indonesia,1979_southeast_asian_games.txt
+Malaysia,Thailand,1,0,1,Jakarta,Indonesia,1979_southeast_asian_games.txt
+Indonesia,Myanmar,2,1,1,Jakarta,Indonesia,1979_southeast_asian_games.txt
+Indonesia,Thailand,0,0,X,Jakarta,Indonesia   [Indonesia wins on penalties],1979_southeast_asian_games.txt
+Indonesia,Malaysia,0,1,2,Jakarta,Indonesia,1979_southeast_asian_games.txt
+Malaysia,Myanmar,1,0,1,Manila,Philippines,1981_southeast_asian_games.txt
+Indonesia,Singapore,1,0,1,Manila,Philippines,1981_southeast_asian_games.txt
+Malaysia,Thailand,2,2,X,Manila,Philippines,1981_southeast_asian_games.txt
+Philippines,Singapore,0,4,2,Manila,Philippines,1981_southeast_asian_games.txt
+Thailand,Myanmar,3,3,X,Manila,Philippines,1981_southeast_asian_games.txt
+Philippines,Indonesia,0,2,2,Manila,Philippines,1981_southeast_asian_games.txt
+Malaysia,Singapore,1,1,X,Manila,Philippines   [Malaysia wins on penalties],1981_southeast_asian_games.txt
+Thailand,Indonesia,2,1,1,Manila,Philippines,1981_southeast_asian_games.txt
+Indonesia,Singapore,2,0,1,Manila,Philippines,1981_southeast_asian_games.txt
+Thailand,Malaysia,2,1,1,Manila,Philippines,1981_southeast_asian_games.txt
+Singapore,Malaysia,2,1,1,Singapore,Singapore,1983_southeast_asian_games.txt
+Thailand,Indonesia,5,0,1,Singapore,Singapore,1983_southeast_asian_games.txt
+Myanmar,Brunei,1,2,2,Singapore,Singapore,1983_southeast_asian_games.txt
+Philippines,Malaysia,0,0,X,Singapore,Singapore,1983_southeast_asian_games.txt
+Indonesia,Myanmar,2,1,1,Singapore,Singapore,1983_southeast_asian_games.txt
+Thailand,Brunei,2,1,1,Singapore,Singapore,1983_southeast_asian_games.txt
+Singapore,Philippines,5,0,1,Singapore,Singapore,1983_southeast_asian_games.txt
+Myanmar,Thailand,1,0,1,Singapore,Singapore,1983_southeast_asian_games.txt
+Indonesia,Brunei,1,1,X,Singapore,Singapore,1983_southeast_asian_games.txt
+Singapore,Brunei,4,0,1,Singapore,Singapore,1983_southeast_asian_games.txt
+Thailand,Malaysia,1,1,X,Singapore,Singapore   [Thailand wins on penalties],1983_southeast_asian_games.txt
+Malaysia,Brunei,5,0,1,Singapore,Singapore,1983_southeast_asian_games.txt
+Singapore,Thailand,1,2,2,Singapore,Singapore,1983_southeast_asian_games.txt
+Thailand,Malaysia,1,1,X,Bangkok,Thailand,1985_southeast_asian_games.txt
+Indonesia,Singapore,0,1,2,Bangkok,Thailand,1985_southeast_asian_games.txt
+Malaysia,Philippines,6,0,1,Bangkok,Thailand,1985_southeast_asian_games.txt
+Brunei,Indonesia,1,1,X,Bangkok,Thailand,1985_southeast_asian_games.txt
+Thailand,Philippines,7,0,1,Bangkok,Thailand,1985_southeast_asian_games.txt
+Singapore,Brunei,3,0,1,Bangkok,Thailand,1985_southeast_asian_games.txt
+Singapore,Malaysia,2,2,X,Bangkok,Thailand   [Singapore wins on penalties],1985_southeast_asian_games.txt
+Thailand,Indonesia,7,0,1,Bangkok,Thailand,1985_southeast_asian_games.txt
+Malaysia,Indonesia,1,0,1,Bangkok,Thailand,1985_southeast_asian_games.txt
+Thailand,Singapore,2,0,1,Bangkok,Thailand,1985_southeast_asian_games.txt
+Singapore,Malaysia,0,0,X,Jakarta,Indonesia,1987_southeast_asian_games.txt
+Thailand,Brunei,3,1,1,Jakarta,Indonesia,1987_southeast_asian_games.txt
+Indonesia,Brunei,2,0,1,Jakarta,Indonesia,1987_southeast_asian_games.txt
+Indonesia,Thailand,0,0,X,Jakarta,Indonesia,1987_southeast_asian_games.txt
+Thailand,Malaysia,0,2,2,Jakarta,Indonesia,1987_southeast_asian_games.txt
+Indonesia,Malaysia,1,0,1,Jakarta,Indonesia,1987_southeast_asian_games.txt
+Indonesia,Brunei,6,0,1,Kuala Lumpur,Malaysia,1989_southeast_asian_games.txt
+Malaysia,Philippines,3,0,1,Kuala Lumpur,Malaysia,1989_southeast_asian_games.txt
+Thailand,Myanmar,3,0,1,Kuala Lumpur,Malaysia,1989_southeast_asian_games.txt
+Malaysia,Brunei,2,1,1,Kuala Lumpur,Malaysia,1989_southeast_asian_games.txt
+Indonesia,Philippines,5,1,1,Kuala Lumpur,Malaysia,1989_southeast_asian_games.txt
+Singapore,Thailand,1,1,X,Kuala Lumpur,Malaysia,1989_southeast_asian_games.txt
+Brunei,Philippines,2,0,1,Kuala Lumpur,Malaysia,1989_southeast_asian_games.txt
+Malaysia,Indonesia,2,0,1,Kuala Lumpur,Malaysia,1989_southeast_asian_games.txt
+Singapore,Myanmar,4,0,1,Kuala Lumpur,Malaysia,1989_southeast_asian_games.txt
+Singapore,Indonesia,1,0,1,Kuala Lumpur,Malaysia,1989_southeast_asian_games.txt
+Malaysia,Thailand,1,0,1,Kuala Lumpur,Malaysia,1989_southeast_asian_games.txt
+Indonesia,Thailand,1,1,X,Kuala Lumpur,Malaysia   [Indonesia wins on penalties],1989_southeast_asian_games.txt
+Malaysia,Singapore,3,1,1,Kuala Lumpur,Malaysia,1989_southeast_asian_games.txt
+Singapore,Thailand,0,0,X,Manila,Philippines,1991_southeast_asian_games.txt
+Indonesia,Malaysia,2,0,1,Manila,Philippines,1991_southeast_asian_games.txt
+Philippines,Vietnam,2,2,X,Manila,Philippines,1991_southeast_asian_games.txt
+Thailand,Myanmar,4,0,1,Manila,Philippines,1991_southeast_asian_games.txt
+Indonesia,Vietnam,1,0,1,Manila,Philippines,1991_southeast_asian_games.txt
+Philippines,Malaysia,1,0,1,Manila,Philippines,1991_southeast_asian_games.txt
+Singapore,Myanmar,2,1,1,Manila,Philippines,1991_southeast_asian_games.txt
+Philippines,Indonesia,1,2,2,Manila,Philippines,1991_southeast_asian_games.txt
+Malaysia,Vietnam,2,1,1,Manila,Philippines,1991_southeast_asian_games.txt
+Philippines,Thailand,2,6,2,Manila,Philippines,1991_southeast_asian_games.txt
+Indonesia,Singapore,0,0,X,Manila,Philippines   [Indonesia wins on penalties],1991_southeast_asian_games.txt
+Philippines,Singapore,0,2,2,Manila,Philippines,1991_southeast_asian_games.txt
+Indonesia,Thailand,0,0,X,Manila,Philippines   [Indonesia wins on penalties],1991_southeast_asian_games.txt
+Thailand,Myanmar,2,0,1,Singapore,Singapore,1993_southeast_asian_games.txt
+Laos,Brunei,3,2,1,Singapore,Singapore,1993_southeast_asian_games.txt
+Singapore,Philippines,7,0,1,Singapore,Singapore,1993_southeast_asian_games.txt
+Indonesia,Vietnam,1,0,1,Singapore,Singapore,1993_southeast_asian_games.txt
+Malaysia,Brunei,3,1,1,Jurong Stadium,Singapore,1993_southeast_asian_games.txt
+Myanmar,Laos,7,1,1,Jurong Stadium,Singapore,1993_southeast_asian_games.txt
+Singapore,Indonesia,1,1,X,Singapore,Singapore,1993_southeast_asian_games.txt
+Vietnam,Philippines,1,0,1,Singapore,Singapore,1993_southeast_asian_games.txt
+Malaysia,Laos,9,0,1,Jurong Stadium,Singapore,1993_southeast_asian_games.txt
+Thailand,Brunei,5,2,1,Jurong Stadium,Singapore,1993_southeast_asian_games.txt
+Myanmar,Malaysia,2,1,1,Singapore,Singapore,1993_southeast_asian_games.txt
+Thailand,Laos,4,1,1,Singapore,Singapore,1993_southeast_asian_games.txt
+Singapore,Vietnam,2,0,1,Singapore,Singapore,1993_southeast_asian_games.txt
+Indonesia,Philippines,3,1,1,Singapore,Singapore,1993_southeast_asian_games.txt
+Myanmar,Brunei,6,0,1,Jurong Stadium,Singapore,1993_southeast_asian_games.txt
+Thailand,Malaysia,2,0,1,Jurong Stadium,Singapore,1993_southeast_asian_games.txt
+Singapore,Myanmar,3,3,X,Singapore,Singapore   [Singapore wins on penalties],1993_southeast_asian_games.txt
+Thailand,Indonesia,1,0,1,Singapore,Singapore,1993_southeast_asian_games.txt
+Singapore,Indonesia,3,1,1,Singapore,Singapore,1993_southeast_asian_games.txt
+Thailand,Myanmar,4,3,1,Singapore,Singapore,1993_southeast_asian_games.txt
+Thailand,Indonesia,2,1,1,Chiang Mai,Thailand,1995_southeast_asian_games.txt
+Vietnam,Malaysia,2,0,1,Chiang Mai,Thailand,1995_southeast_asian_games.txt
+Singapore,Brunei,2,2,X,Chiang Mai,Thailand,1995_southeast_asian_games.txt
+Myanmar,Philippines,4,1,1,Chiang Mai,Thailand,1995_southeast_asian_games.txt
+Thailand,Malaysia,0,0,X,Chiang Mai,Thailand,1995_southeast_asian_games.txt
+Indonesia,Cambodia,10,0,1,Chiang Mai,Thailand,1995_southeast_asian_games.txt
+Singapore,Myanmar,4,2,1,Chiang Mai,Thailand,1995_southeast_asian_games.txt
+Laos,Philippines,1,0,1,Chiang Mai,Thailand,1995_southeast_asian_games.txt
+Vietnam,Cambodia,4,0,1,Chiang Mai,Thailand,1995_southeast_asian_games.txt
+Indonesia,Malaysia,3,0,1,Chiang Mai,Thailand,1995_southeast_asian_games.txt
+Singapore,Philippines,4,0,1,Chiang Mai,Thailand,1995_southeast_asian_games.txt
+Laos,Brunei,3,0,1,Chiang Mai,Thailand,1995_southeast_asian_games.txt
+Thailand,Vietnam,3,1,1,Chiang Mai,Thailand,1995_southeast_asian_games.txt
+Malaysia,Cambodia,9,0,1,Chiang Mai,Thailand,1995_southeast_asian_games.txt
+Singapore,Laos,0,0,X,Chiang Mai,Thailand,1995_southeast_asian_games.txt
+Myanmar,Brunei,2,0,1,Chiang Mai,Thailand,1995_southeast_asian_games.txt
+Thailand,Cambodia,9,0,1,Chiang Mai,Thailand,1995_southeast_asian_games.txt
+Vietnam,Indonesia,1,0,1,Chiang Mai,Thailand,1995_southeast_asian_games.txt
+Philippines,Brunei,1,0,1,Chiang Mai,Thailand,1995_southeast_asian_games.txt
+Myanmar,Laos,1,0,1,Chiang Mai,Thailand,1995_southeast_asian_games.txt
+Thailand,Singapore,1,0,1,Chiang Mai,Thailand,1995_southeast_asian_games.txt
+Vietnam,Myanmar,2,1,1,Chiang Mai,Thailand,1995_southeast_asian_games.txt
+Singapore,Myanmar,1,0,1,Chiang Mai,Thailand,1995_southeast_asian_games.txt
+Thailand,Vietnam,4,0,1,Chiang Mai,Thailand,1995_southeast_asian_games.txt
+Vietnam,Malaysia,0,1,2,Jakarta,Indonesia,1997_southeast_asian_games.txt
+Indonesia,Laos,5,2,1,Jakarta,Indonesia,1997_southeast_asian_games.txt
+Thailand,Myanmar,2,1,1,Jakarta,Indonesia,1997_southeast_asian_games.txt
+Brunei,Cambodia,0,4,2,Jakarta,Indonesia,1997_southeast_asian_games.txt
+Malaysia,Philippines,4,0,1,Jakarta,Indonesia,1997_southeast_asian_games.txt
+Indonesia,Vietnam,2,2,X,Jakarta,Indonesia,1997_southeast_asian_games.txt
+Brunei,Thailand,0,6,2,Jakarta,Indonesia,1997_southeast_asian_games.txt
+Singapore,Myanmar,2,2,X,Jakarta,Indonesia,1997_southeast_asian_games.txt
+Laos,Philippines,4,1,1,Jakarta,Indonesia,1997_southeast_asian_games.txt
+Indonesia,Malaysia,4,0,1,Jakarta,Indonesia,1997_southeast_asian_games.txt
+Singapore,Cambodia,2,1,1,Jakarta,Indonesia,1997_southeast_asian_games.txt
+Brunei,Myanmar,1,6,2,Jakarta,Indonesia,1997_southeast_asian_games.txt
+Indonesia,Philippines,2,0,1,Jakarta,Indonesia,1997_southeast_asian_games.txt
+Vietnam,Laos,2,1,1,Jakarta,Indonesia,1997_southeast_asian_games.txt
+Thailand,Cambodia,4,0,1,Jakarta,Indonesia,1997_southeast_asian_games.txt
+Singapore,Brunei,1,0,1,Jakarta,Indonesia,1997_southeast_asian_games.txt
+Vietnam,Philippines,3,0,1,Jakarta,Indonesia,1997_southeast_asian_games.txt
+Laos,Malaysia,1,0,1,Jakarta,Indonesia,1997_southeast_asian_games.txt
+Myanmar,Cambodia,1,3,2,Jakarta,Indonesia,1997_southeast_asian_games.txt
+Singapore,Thailand,0,0,X,Jakarta,Indonesia,1997_southeast_asian_games.txt
+Thailand,Vietnam,2,1,1,Jakarta,Indonesia,1997_southeast_asian_games.txt
+Indonesia,Singapore,2,1,1,Jakarta,Indonesia,1997_southeast_asian_games.txt
+Vietnam,Singapore,1,0,1,Jakarta,Indonesia,1997_southeast_asian_games.txt
+Indonesia,Thailand,1,1,X,Jakarta,Indonesia   [Thailand wins on penalties],1997_southeast_asian_games.txt
+Thailand,Philippines,9,0,1,Bandar Seri Begawan,Brunei,1999_southeast_asian_games.txt
+Vietnam,Laos,9,0,1,Bandar Seri Begawan,Brunei,1999_southeast_asian_games.txt
+Indonesia,Cambodia,1,0,1,Bandar Seri Begawan,Brunei,1999_southeast_asian_games.txt
+Singapore,Malaysia,2,1,1,Bandar Seri Begawan,Brunei,1999_southeast_asian_games.txt
+Laos,Thailand,1,4,2,Bandar Seri Begawan,Brunei,1999_southeast_asian_games.txt
+Myanmar,Philippines,4,1,1,Bandar Seri Begawan,Brunei,1999_southeast_asian_games.txt
+Indonesia,Malaysia,6,0,1,Bandar Seri Begawan,Brunei,1999_southeast_asian_games.txt
+Brunei,Cambodia,3,3,X,Bandar Seri Begawan,Brunei,1999_southeast_asian_games.txt
+Myanmar,Vietnam,0,2,2,Bandar Seri Begawan,Brunei,1999_southeast_asian_games.txt
+Philippines,Laos,2,3,2,Bandar Seri Begawan,Brunei,1999_southeast_asian_games.txt
+Brunei,Singapore,1,3,2,Bandar Seri Begawan,Brunei,1999_southeast_asian_games.txt
+Cambodia,Malaysia,2,7,2,Bandar Seri Begawan,Brunei,1999_southeast_asian_games.txt
+Laos,Myanmar,0,0,X,Bandar Seri Begawan,Brunei,1999_southeast_asian_games.txt
+Vietnam,Thailand,0,0,X,Bandar Seri Begawan,Brunei,1999_southeast_asian_games.txt
+Brunei,Malaysia,0,2,2,Bandar Seri Begawan,Brunei,1999_southeast_asian_games.txt
+Indonesia,Singapore,1,1,X,Bandar Seri Begawan,Brunei,1999_southeast_asian_games.txt
+Philippines,Vietnam,0,2,2,Bandar Seri Begawan,Brunei,1999_southeast_asian_games.txt
+Thailand,Myanmar,7,0,1,Bandar Seri Begawan,Brunei,1999_southeast_asian_games.txt
+Cambodia,Singapore,0,2,2,Bandar Seri Begawan,Brunei,1999_southeast_asian_games.txt
+Brunei,Indonesia,0,3,2,Bandar Seri Begawan,Brunei,1999_southeast_asian_games.txt
+Thailand,Singapore,2,0,1,Bandar Seri Begawan,Brunei,1999_southeast_asian_games.txt
+Indonesia,Vietnam,0,1,2,Bandar Seri Begawan,Brunei,1999_southeast_asian_games.txt
+Indonesia,Singapore,0,0,X,Bandar Seri Begawan,Brunei   [Indonesia wins on penalties],1999_southeast_asian_games.txt
+Thailand,Vietnam,2,0,1,Bandar Seri Begawan,Brunei,1999_southeast_asian_games.txt

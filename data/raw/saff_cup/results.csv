@@ -1,0 +1,163 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Nepal,Bangladesh,0,2,2,Colombo,Sri Lanka,1995_saff_cup.txt
+Pakistan,Bangladesh,1,0,1,Colombo,Sri Lanka,1995_saff_cup.txt
+Nepal,Pakistan,2,0,1,Colombo,Sri Lanka,1995_saff_cup.txt
+Sri Lanka,India,2,2,X,Colombo,Sri Lanka,1995_saff_cup.txt
+India,Bangladesh,0,0,X,Colombo,Sri Lanka   [India wins on penalties],1995_saff_cup.txt
+Sri Lanka,Nepal,2,1,1,Colombo,Sri Lanka,1995_saff_cup.txt
+Sri Lanka,India,1,0,1,Colombo,Sri Lanka,1995_saff_cup.txt
+Nepal,Pakistan,0,2,2,Kathmandu,Nepal,1997_saff_cup.txt
+Maldives,Bangladesh,1,1,X,Kathmandu,Nepal,1997_saff_cup.txt
+Sri Lanka,Pakistan,2,0,1,Kathmandu,Nepal,1997_saff_cup.txt
+India,Bangladesh,3,0,1,Kathmandu,Nepal,1997_saff_cup.txt
+Nepal,Sri Lanka,1,3,2,Kathmandu,Nepal,1997_saff_cup.txt
+Maldives,India,2,2,X,Kathmandu,Nepal,1997_saff_cup.txt
+Sri Lanka,Maldives,1,2,2,Kathmandu,Nepal,1997_saff_cup.txt
+India,Pakistan,2,0,1,Kathmandu,Nepal,1997_saff_cup.txt
+India,Maldives,5,1,1,Kathmandu,Nepal,1997_saff_cup.txt
+Pakistan,Sri Lanka,1,0,1,Kathmandu,Nepal,1997_saff_cup.txt
+India,Bangladesh,0,0,X,Margao,India,1999_saff_cup.txt
+Sri Lanka,Maldives,0,0,X,Margao,India,1999_saff_cup.txt
+Pakistan,Bangladesh,0,4,2,Margao,India,1999_saff_cup.txt
+Sri Lanka,Nepal,2,3,2,Margao,India,1999_saff_cup.txt
+India,Pakistan,2,0,1,Margao,India,1999_saff_cup.txt
+Nepal,Maldives,2,3,2,Margao,India,1999_saff_cup.txt
+Bangladesh,Nepal,2,1,1,Margao,India,1999_saff_cup.txt
+India,Maldives,2,1,1,Margao,India,1999_saff_cup.txt
+India,Bangladesh,2,0,1,Margao,India,1999_saff_cup.txt
+Maldives,Nepal,2,0,1,Margao,India,1999_saff_cup.txt
+India,Pakistan,0,1,2,Dhaka,Bangladesh,2003_saff_cup.txt
+Sri Lanka,Afghanistan,1,0,1,Dhaka,Bangladesh,2003_saff_cup.txt
+Bangladesh,Nepal,1,0,1,Dhaka,Bangladesh,2003_saff_cup.txt
+Maldives,Bhutan,6,0,1,Dhaka,Bangladesh,2003_saff_cup.txt
+Afghanistan,India,0,4,2,Dhaka,Bangladesh,2003_saff_cup.txt
+Pakistan,Sri Lanka,2,1,1,Dhaka,Bangladesh,2003_saff_cup.txt
+Bangladesh,Maldives,1,0,1,Dhaka,Bangladesh,2003_saff_cup.txt
+Nepal,Bhutan,2,0,1,Dhaka,Bangladesh,2003_saff_cup.txt
+Afghanistan,Pakistan,0,1,2,Dhaka,Bangladesh,2003_saff_cup.txt
+India,Sri Lanka,1,1,X,Dhaka,Bangladesh,2003_saff_cup.txt
+Bangladesh,Bhutan,3,0,1,Dhaka,Bangladesh,2003_saff_cup.txt
+Nepal,Maldives,2,3,2,Dhaka,Bangladesh,2003_saff_cup.txt
+Bangladesh,India,2,1,1,Dhaka,Bangladesh,2003_saff_cup.txt
+Pakistan,Maldives,0,1,2,Dhaka,Bangladesh,2003_saff_cup.txt
+Bangladesh,Maldives,1,1,X,Dhaka,Bangladesh   [Bangladesh wins on penalties],2003_saff_cup.txt
+Pakistan,India,1,2,2,Dhaka,Bangladesh,2003_saff_cup.txt
+Maldives,Afghanistan,9,1,1,Karachi,Pakistan,2005_saff_cup.txt
+Pakistan,Sri Lanka,1,0,1,Karachi,Pakistan,2005_saff_cup.txt
+Bangladesh,Bhutan,3,0,1,Karachi,Pakistan,2005_saff_cup.txt
+India,Nepal,2,1,1,Karachi,Pakistan,2005_saff_cup.txt
+Maldives,Sri Lanka,2,0,1,Karachi,Pakistan,2005_saff_cup.txt
+Pakistan,Afghanistan,1,0,1,Karachi,Pakistan,2005_saff_cup.txt
+Bangladesh,Nepal,2,0,1,Karachi,Pakistan,2005_saff_cup.txt
+India,Bhutan,3,0,1,Karachi,Pakistan,2005_saff_cup.txt
+Pakistan,Maldives,0,0,X,Karachi,Pakistan,2005_saff_cup.txt
+Sri Lanka,Afghanistan,1,2,2,Karachi,Pakistan,2005_saff_cup.txt
+Bangladesh,India,1,1,X,Karachi,Pakistan,2005_saff_cup.txt
+Nepal,Bhutan,3,1,1,Karachi,Pakistan,2005_saff_cup.txt
+Maldives,India,0,1,2,Karachi,Pakistan,2005_saff_cup.txt
+Pakistan,Bangladesh,0,1,2,Karachi,Pakistan,2005_saff_cup.txt
+Bangladesh,India,0,2,2,Karachi,Pakistan,2005_saff_cup.txt
+India,Nepal,4,0,1,Malé,Maldives,2008_saff_cup.txt
+Maldives,Pakistan,3,0,1,Malé,Maldives,2008_saff_cup.txt
+Bangladesh,Bhutan,1,1,X,Colombo,Sri Lanka,2008_saff_cup.txt
+Sri Lanka,Afghanistan,2,2,X,Colombo,Sri Lanka,2008_saff_cup.txt
+India,Pakistan,2,1,1,Malé,Maldives,2008_saff_cup.txt
+Maldives,Nepal,4,1,1,Malé,Maldives,2008_saff_cup.txt
+Bangladesh,Afghanistan,2,2,X,Colombo,Sri Lanka,2008_saff_cup.txt
+Sri Lanka,Bhutan,2,0,1,Colombo,Sri Lanka,2008_saff_cup.txt
+Maldives,India,0,1,2,Malé,Maldives,2008_saff_cup.txt
+Pakistan,Nepal,1,4,2,Malé,Maldives,2008_saff_cup.txt
+Afghanistan,Bhutan,1,3,2,Colombo,Sri Lanka,2008_saff_cup.txt
+Sri Lanka,Bangladesh,1,0,1,Colombo,Sri Lanka,2008_saff_cup.txt
+India,Bhutan,2,1,1,Malé,Maldives,2008_saff_cup.txt
+Sri Lanka,Maldives,0,1,2,Colombo,Sri Lanka,2008_saff_cup.txt
+India,Maldives,0,1,2,Colombo,Sri Lanka,2008_saff_cup.txt
+Bangladesh,Bhutan,4,1,1,Dhaka,Bangladesh,2009_saff_cup.txt
+Sri Lanka,Pakistan,1,0,1,Dhaka,Bangladesh,2009_saff_cup.txt
+Maldives,Nepal,1,1,X,Dhaka,Bangladesh,2009_saff_cup.txt
+Bangladesh,Pakistan,0,0,X,Dhaka,Bangladesh,2009_saff_cup.txt
+Sri Lanka,Bhutan,6,0,1,Dhaka,Bangladesh,2009_saff_cup.txt
+Maldives,Afghanistan,3,1,1,Dhaka,Bangladesh,2009_saff_cup.txt
+Bangladesh,Sri Lanka,2,1,1,Dhaka,Bangladesh,2009_saff_cup.txt
+Pakistan,Bhutan,7,0,1,Dhaka,Bangladesh,2009_saff_cup.txt
+Afghanistan,Nepal,0,3,2,Dhaka,Bangladesh,2009_saff_cup.txt
+Maldives,Sri Lanka,5,1,1,Dhaka,Bangladesh,2009_saff_cup.txt
+Bangladesh,Pakistan,0,0,X,New Delhi,India,2011_saff_cup.txt
+Maldives,Nepal,1,1,X,New Delhi,India,2011_saff_cup.txt
+India,Afghanistan,1,1,X,New Delhi,India,2011_saff_cup.txt
+Sri Lanka,Bhutan,3,0,1,New Delhi,India,2011_saff_cup.txt
+Bangladesh,Nepal,0,1,2,New Delhi,India,2011_saff_cup.txt
+Maldives,Pakistan,0,0,X,New Delhi,India,2011_saff_cup.txt
+India,Bhutan,5,0,1,New Delhi,India,2011_saff_cup.txt
+Sri Lanka,Afghanistan,1,3,2,New Delhi,India,2011_saff_cup.txt
+Maldives,Bangladesh,3,1,1,New Delhi,India,2011_saff_cup.txt
+Pakistan,Nepal,1,1,X,New Delhi,India,2011_saff_cup.txt
+Bhutan,Afghanistan,1,8,2,New Delhi,India,2011_saff_cup.txt
+India,Sri Lanka,3,0,1,New Delhi,India,2011_saff_cup.txt
+Afghanistan,Nepal,1,0,1,New Delhi,India,2011_saff_cup.txt
+India,Maldives,3,1,1,New Delhi,India,2011_saff_cup.txt
+India,Afghanistan,4,0,1,New Delhi,India,2011_saff_cup.txt
+Nepal,Bangladesh,2,0,1,Kathmandu,Nepal,2013_saff_cup.txt
+India,Pakistan,1,0,1,Kathmandu,Nepal,2013_saff_cup.txt
+Afghanistan,Bhutan,3,0,1,Kathmandu,Nepal,2013_saff_cup.txt
+Maldives,Sri Lanka,10,0,1,Kathmandu,Nepal,2013_saff_cup.txt
+Bangladesh,India,1,1,X,Kathmandu,Nepal,2013_saff_cup.txt
+Nepal,Pakistan,1,1,X,Kathmandu,Nepal,2013_saff_cup.txt
+Bhutan,Maldives,2,8,2,Kathmandu,Nepal,2013_saff_cup.txt
+Sri Lanka,Afghanistan,1,3,2,Kathmandu,Nepal,2013_saff_cup.txt
+Bangladesh,Pakistan,1,2,2,Kathmandu,Nepal,2013_saff_cup.txt
+Nepal,India,2,1,1,Kathmandu,Nepal,2013_saff_cup.txt
+Afghanistan,Maldives,0,0,X,Kathmandu,Nepal,2013_saff_cup.txt
+Sri Lanka,Bhutan,5,2,1,Kathmandu,Nepal,2013_saff_cup.txt
+Nepal,Afghanistan,0,1,2,Kathmandu,Nepal,2013_saff_cup.txt
+Maldives,India,0,1,2,Kathmandu,Nepal,2013_saff_cup.txt
+Nepal,Sri Lanka,0,1,2,Thiruvananthapuram,India,2015_saff_cup.txt
+Afghanistan,Bangladesh,4,0,1,Thiruvananthapuram,India,2015_saff_cup.txt
+Maldives,Bhutan,3,1,1,Thiruvananthapuram,India,2015_saff_cup.txt
+India,Sri Lanka,2,0,1,Thiruvananthapuram,India,2015_saff_cup.txt
+Bangladesh,Maldives,1,3,2,Thiruvananthapuram,India,2015_saff_cup.txt
+Bhutan,Afghanistan,0,3,2,Thiruvananthapuram,India,2015_saff_cup.txt
+India,Nepal,4,1,1,Thiruvananthapuram,India,2015_saff_cup.txt
+Afghanistan,Maldives,4,1,1,Thiruvananthapuram,India,2015_saff_cup.txt
+Bhutan,Bangladesh,0,3,2,Thiruvananthapuram,India,2015_saff_cup.txt
+Afghanistan,Sri Lanka,5,0,1,Thiruvananthapuram,India,2015_saff_cup.txt
+India,Maldives,3,2,1,Thiruvananthapuram,India,2015_saff_cup.txt
+India,Afghanistan,2,1,1,Thiruvananthapuram,India,2016_saff_cup.txt
+Nepal,Pakistan,1,2,2,Dhaka,Bangladesh,2018_saff_cup.txt
+Bangladesh,Bhutan,2,0,1,Dhaka,Bangladesh,2018_saff_cup.txt
+India,Sri Lanka,2,0,1,Dhaka,Bangladesh,2018_saff_cup.txt
+Nepal,Bhutan,4,0,1,Dhaka,Bangladesh,2018_saff_cup.txt
+Bangladesh,Pakistan,1,0,1,Dhaka,Bangladesh,2018_saff_cup.txt
+Maldives,Sri Lanka,0,0,X,Dhaka,Bangladesh,2018_saff_cup.txt
+Pakistan,Bhutan,3,0,1,Dhaka,Bangladesh,2018_saff_cup.txt
+Bangladesh,Nepal,0,2,2,Dhaka,Bangladesh,2018_saff_cup.txt
+India,Maldives,2,0,1,Dhaka,Bangladesh,2018_saff_cup.txt
+India,Pakistan,3,1,1,Dhaka,Bangladesh,2018_saff_cup.txt
+Nepal,Maldives,0,3,2,Dhaka,Bangladesh,2018_saff_cup.txt
+Maldives,India,2,1,1,Dhaka,Bangladesh,2018_saff_cup.txt
+Sri Lanka,Bangladesh,0,1,2,Malé,Maldives,2021_saff_cup.txt
+Maldives,Nepal,0,1,2,Malé,Maldives,2021_saff_cup.txt
+Bangladesh,India,1,1,X,Malé,Maldives,2021_saff_cup.txt
+Sri Lanka,Nepal,2,3,2,Malé,Maldives,2021_saff_cup.txt
+India,Sri Lanka,0,0,X,Malé,Maldives,2021_saff_cup.txt
+Maldives,Bangladesh,2,0,1,Malé,Maldives,2021_saff_cup.txt
+Maldives,Sri Lanka,1,0,1,Malé,Maldives,2021_saff_cup.txt
+Nepal,India,0,1,2,Malé,Maldives,2021_saff_cup.txt
+Bangladesh,Nepal,1,1,X,Malé,Maldives,2021_saff_cup.txt
+Maldives,India,1,3,2,Malé,Maldives,2021_saff_cup.txt
+India,Nepal,3,0,1,Malé,Maldives,2021_saff_cup.txt
+Kuwait,Nepal,3,1,1,Bengaluru,India,2023_saff_cup.txt
+India,Pakistan,4,0,1,Bengaluru,India,2023_saff_cup.txt
+Lebanon,Bangladesh,2,0,1,Bengaluru,India,2023_saff_cup.txt
+Maldives,Bhutan,2,0,1,Bengaluru,India,2023_saff_cup.txt
+Pakistan,Kuwait,0,4,2,Bengaluru,India,2023_saff_cup.txt
+India,Nepal,2,0,1,Bengaluru,India,2023_saff_cup.txt
+Bangladesh,Maldives,3,1,1,Bengaluru,India,2023_saff_cup.txt
+Bhutan,Lebanon,1,4,2,Bengaluru,India,2023_saff_cup.txt
+Nepal,Pakistan,1,0,1,Bengaluru,India,2023_saff_cup.txt
+India,Kuwait,1,1,X,Bengaluru,India,2023_saff_cup.txt
+Lebanon,Maldives,1,0,1,Bengaluru,India,2023_saff_cup.txt
+Bhutan,Bangladesh,1,3,2,Bengaluru,India,2023_saff_cup.txt
+India,Lebanon,0,0,X,Bengaluru,India   [India wins on penalties],2023_saff_cup.txt
+Kuwait,Bangladesh,1,0,1,Bengaluru,India,2023_saff_cup.txt
+India,Kuwait,1,1,X,Bengaluru,India   [India wins on penalties],2023_saff_cup.txt

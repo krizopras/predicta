@@ -1,0 +1,12 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Burkina Faso,Niger,1,0,1,Ouagadougou,Burkina Faso,1988_tournament_burkina_faso.txt
+Benin,Ghana,1,1,X,Ouagadougou,Burkina Faso,1988_tournament_burkina_faso.txt
+Burkina Faso,Ghana,3,1,1,Ouagadougou,Burkina Faso,1988_tournament_burkina_faso.txt
+Mali,Niger,1,0,1,Ouagadougou,Burkina Faso,1988_tournament_burkina_faso.txt
+Benin,Mali,0,1,2,Ouagadougou,Burkina Faso,1988_tournament_burkina_faso.txt
+Ghana,Niger,0,3,2,Ouagadougou,Burkina Faso,1988_tournament_burkina_faso.txt
+Burkina Faso,Benin,1,0,1,Ouagadougou,Burkina Faso,1988_tournament_burkina_faso.txt
+Ghana,Mali,1,0,1,Ouagadougou,Burkina Faso,1988_tournament_burkina_faso.txt
+Benin,Niger,0,5,2,Ouagadougou,Burkina Faso,1988_tournament_burkina_faso.txt
+Burkina Faso,Mali,2,1,1,Ouagadougou,Burkina Faso,1988_tournament_burkina_faso.txt
+Burkina Faso,Niger,1,0,1,Ouagadougou,Burkina Faso,1988_tournament_burkina_faso.txt

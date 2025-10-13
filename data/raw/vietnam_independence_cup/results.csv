@@ -1,0 +1,61 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Vietnam Republic,Indonesia,4,1,1,Saigon,Vietnam Republic,1961_vietnam_independence_cup.txt
+Indonesia,Malaysia,1,3,2,Saigon,Vietnam Republic,1961_vietnam_independence_cup.txt
+Vietnam Republic,Malaysia,1,0,1,Saigon,Vietnam Republic,1961_vietnam_independence_cup.txt
+Vietnam Republic,Indonesia,4,0,1,Saigon,Vietnam Republic,1962_vietnam_independence_cup.txt
+Malaysia,Thailand,4,2,1,Saigon,Vietnam Republic,1962_vietnam_independence_cup.txt
+Indonesia,Malaysia,2,1,1,Saigon,Vietnam Republic,1962_vietnam_independence_cup.txt
+Vietnam Republic,Thailand,0,1,2,Saigon,Vietnam Republic,1962_vietnam_independence_cup.txt
+Indonesia,Thailand,7,0,1,Saigon,Vietnam Republic,1962_vietnam_independence_cup.txt
+Vietnam Republic,Malaysia,2,0,1,Saigon,Vietnam Republic,1962_vietnam_independence_cup.txt
+Vietnam Republic,Indonesia,2,0,1,Saigon,Vietnam Republic,1962_vietnam_independence_cup.txt
+Vietnam Republic,Thailand,4,0,1,Saigon,Vietnam Republic,1965_vietnam_independence_cup.txt
+Vietnam Republic,Malaysia,2,2,X,Saigon,Vietnam Republic,1965_vietnam_independence_cup.txt
+Vietnam Republic,Malaysia,3,2,1,Saigon,Vietnam Republic,1966_vietnam_independence_cup.txt
+Malaysia,Thailand,1,1,X,Saigon,Vietnam Republic,1966_vietnam_independence_cup.txt
+Vietnam Republic,Thailand,4,1,1,Saigon,Vietnam Republic,1966_vietnam_independence_cup.txt
+Malaysia,Thailand,3,2,1,Saigon,Vietnam Republic,1967_vietnam_independence_cup.txt
+Vietnam Republic,Singapore,2,0,1,Saigon,Vietnam Republic,1967_vietnam_independence_cup.txt
+Australia,New Zealand,5,3,1,Saigon,Vietnam Republic,1967_vietnam_independence_cup.txt
+Hong Kong,South Korea,0,1,2,Saigon,Vietnam Republic,1967_vietnam_independence_cup.txt
+South Korea,Thailand,3,1,1,Saigon,Vietnam Republic,1967_vietnam_independence_cup.txt
+Vietnam Republic,Australia,0,1,2,Saigon,Vietnam Republic,1967_vietnam_independence_cup.txt
+Hong Kong,Malaysia,0,2,2,Saigon,Vietnam Republic,1967_vietnam_independence_cup.txt
+New Zealand,Singapore,3,1,1,Saigon,Vietnam Republic,1967_vietnam_independence_cup.txt
+Hong Kong,Thailand,1,5,2,Saigon,Vietnam Republic,1967_vietnam_independence_cup.txt
+Vietnam Republic,New Zealand,5,1,1,Saigon,Vietnam Republic,1967_vietnam_independence_cup.txt
+Australia,Singapore,5,1,1,Saigon,Vietnam Republic,1967_vietnam_independence_cup.txt
+South Korea,Malaysia,2,1,1,Saigon,Vietnam Republic,1967_vietnam_independence_cup.txt
+Australia,Malaysia,1,0,1,Saigon,Vietnam Republic,1967_vietnam_independence_cup.txt
+Vietnam Republic,South Korea,0,3,2,Saigon,Vietnam Republic,1967_vietnam_independence_cup.txt
+Australia,South Korea,3,2,1,Saigon,Vietnam Republic,1967_vietnam_independence_cup.txt
+Vietnam Republic,Malaysia,4,1,1,Saigon,Vietnam Republic,1967_vietnam_independence_cup.txt
+Indonesia,Thailand,1,2,2,Saigon,Vietnam Republic,1970_vietnam_independence_cup.txt
+Vietnam Republic,Malaysia,1,1,X,Saigon,Vietnam Republic,1970_vietnam_independence_cup.txt
+Malaysia,Thailand,1,4,2,Saigon,Vietnam Republic,1970_vietnam_independence_cup.txt
+Vietnam Republic,Indonesia,3,1,1,Saigon,Vietnam Republic,1970_vietnam_independence_cup.txt
+Indonesia,Malaysia,1,3,2,Saigon,Vietnam Republic,1970_vietnam_independence_cup.txt
+Vietnam Republic,Thailand,1,0,1,Saigon,Vietnam Republic,1970_vietnam_independence_cup.txt
+Singapore,Thailand,0,1,2,Saigon,Vietnam Republic,1971_vietnam_independence_cup.txt
+Vietnam Republic,Malaysia,0,1,2,Saigon,Vietnam Republic,1971_vietnam_independence_cup.txt
+Malaysia,Singapore,1,1,X,Saigon,Vietnam Republic,1971_vietnam_independence_cup.txt
+Vietnam Republic,Thailand,3,0,1,Saigon,Vietnam Republic,1971_vietnam_independence_cup.txt
+Singapore,Thailand,3,1,1,Saigon,Vietnam Republic,1971_vietnam_independence_cup.txt
+Vietnam Republic,Malaysia,1,1,X,Saigon,Vietnam Republic,1971_vietnam_independence_cup.txt
+Cambodia,Singapore,0,1,2,Saigon,Vietnam Republic,1972_vietnam_independence_cup.txt
+Vietnam Republic,Malaysia,0,0,X,Saigon,Vietnam Republic,1972_vietnam_independence_cup.txt
+Cambodia,Malaysia,1,0,1,Saigon,Vietnam Republic,1972_vietnam_independence_cup.txt
+Vietnam Republic,Singapore,4,1,1,Saigon,Vietnam Republic,1972_vietnam_independence_cup.txt
+Malaysia,Singapore,1,3,2,Saigon,Vietnam Republic,1972_vietnam_independence_cup.txt
+Vietnam Republic,Cambodia,1,2,2,Saigon,Vietnam Republic,1972_vietnam_independence_cup.txt
+Vietnam Republic,Malaysia,1,5,2,Saigon,Vietnam Republic,1973_vietnam_independence_cup.txt
+Malaysia,Singapore,2,1,1,Saigon,Vietnam Republic,1973_vietnam_independence_cup.txt
+Vietnam Republic,Singapore,4,2,1,Saigon,Vietnam Republic,1973_vietnam_independence_cup.txt
+Vietnam Republic,Laos,1,0,1,Saigon,Vietnam Republic,1974_vietnam_independence_cup.txt
+Laos,Malaysia,0,0,X,Saigon,Vietnam Republic,1974_vietnam_independence_cup.txt
+Cambodia,Thailand,2,2,X,Saigon,Vietnam Republic,1974_vietnam_independence_cup.txt
+Malaysia,Taiwan,0,0,X,Saigon,Vietnam Republic,1974_vietnam_independence_cup.txt
+Laos,Taiwan,1,2,2,Saigon,Vietnam Republic,1974_vietnam_independence_cup.txt
+Vietnam Republic,Malaysia,1,0,1,Saigon,Vietnam Republic,1974_vietnam_independence_cup.txt
+Vietnam Republic,Taiwan,1,1,X,Saigon,Vietnam Republic,1974_vietnam_independence_cup.txt
+Vietnam Republic,Thailand,3,2,1,Saigon,Vietnam Republic,1974_vietnam_independence_cup.txt

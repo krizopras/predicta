@@ -1,0 +1,10 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Thailand,North Korea,1,0,1,Hanoi,Vietnam,2008_vff_cup.txt
+Vietnam,North Korea,0,0,X,Hanoi,Vietnam,2008_vff_cup.txt
+Vietnam,Thailand,2,2,X,Hanoi,Vietnam,2008_vff_cup.txt
+Singapore,North Korea,1,2,2,Hanoi,Vietnam,2010_vff_cup.txt
+Vietnam,Singapore,1,1,X,Hanoi,Vietnam,2010_vff_cup.txt
+Vietnam,North Korea,0,2,2,Hanoi,Vietnam,2010_vff_cup.txt
+Vietnam,Turkmenistan,0,1,2,Ho Chi Minh City,Vietnam,2012_vff_cup.txt
+Vietnam,Laos,4,0,1,Ho Chi Minh City,Vietnam,2012_vff_cup.txt
+Laos,Turkmenistan,2,4,2,Ho Chi Minh City,Vietnam,2012_vff_cup.txt

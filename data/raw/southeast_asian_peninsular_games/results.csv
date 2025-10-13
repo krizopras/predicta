@@ -1,0 +1,69 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Malaysia,Myanmar,2,1,1,Bangkok,Thailand,1959_southeast_asian_peninsular_games.txt
+Thailand,Vietnam Republic,0,4,2,Bangkok,Thailand,1959_southeast_asian_peninsular_games.txt
+Vietnam Republic,Myanmar,3,0,1,Bangkok,Thailand,1959_southeast_asian_peninsular_games.txt
+Thailand,Malaysia,3,1,1,Bangkok,Thailand,1959_southeast_asian_peninsular_games.txt
+Malaysia,Vietnam Republic,2,1,1,Bangkok,Thailand,1959_southeast_asian_peninsular_games.txt
+Thailand,Myanmar,5,2,1,Bangkok,Thailand,1959_southeast_asian_peninsular_games.txt
+Thailand,Vietnam Republic,1,3,2,Bangkok,Thailand,1959_southeast_asian_peninsular_games.txt
+Myanmar,Cambodia,4,0,1,Rangoon,Burma,1961_southeast_asian_peninsular_games.txt
+Thailand,Vietnam Republic,0,0,X,Rangoon,Burma,1961_southeast_asian_peninsular_games.txt
+Malaysia,Cambodia,4,0,1,Rangoon,Burma,1961_southeast_asian_peninsular_games.txt
+Vietnam Republic,Laos,7,0,1,Rangoon,Burma,1961_southeast_asian_peninsular_games.txt
+Myanmar,Malaysia,1,2,2,Rangoon,Burma,1961_southeast_asian_peninsular_games.txt
+Thailand,Laos,5,2,1,Rangoon,Burma,1961_southeast_asian_peninsular_games.txt
+Malaysia,Thailand,2,2,X,Rangoon,Burma,1961_southeast_asian_peninsular_games.txt
+Myanmar,Vietnam Republic,2,1,1,Rangoon,Burma,1961_southeast_asian_peninsular_games.txt
+Thailand,Vietnam Republic,1,1,X,Rangoon,Burma,1961_southeast_asian_peninsular_games.txt
+Myanmar,Malaysia,0,2,2,Rangoon,Burma,1961_southeast_asian_peninsular_games.txt
+Thailand,Vietnam Republic,2,1,1,Kuala Lumpur,Malaysia,1965_southeast_asian_peninsular_games.txt
+Myanmar,Singapore,1,0,1,Kuala Lumpur,Malaysia,1965_southeast_asian_peninsular_games.txt
+Vietnam Republic,Singapore,5,1,1,Kuala Lumpur,Malaysia,1965_southeast_asian_peninsular_games.txt
+Thailand,Vietnam Republic,2,0,1,Kuala Lumpur,Malaysia,1965_southeast_asian_peninsular_games.txt
+Malaysia,Myanmar,0,2,2,Kuala Lumpur,Malaysia,1965_southeast_asian_peninsular_games.txt
+Malaysia,Vietnam Republic,0,2,2,Kuala Lumpur,Malaysia,1965_southeast_asian_peninsular_games.txt
+Myanmar,Thailand,2,2,X,Kuala Lumpur,Malaysia,1965_southeast_asian_peninsular_games.txt
+Thailand,Malaysia,4,0,1,Bangkok,Thailand,1967_southeast_asian_peninsular_games.txt
+Myanmar,Malaysia,2,1,1,Bangkok,Thailand,1967_southeast_asian_peninsular_games.txt
+Laos,Vietnam Republic,0,5,2,Bangkok,Thailand,1967_southeast_asian_peninsular_games.txt
+Thailand,Myanmar,0,1,2,Bangkok,Thailand,1967_southeast_asian_peninsular_games.txt
+Myanmar,Laos,2,0,1,Bangkok,Thailand,1967_southeast_asian_peninsular_games.txt
+Thailand,Vietnam Republic,0,5,2,Bangkok,Thailand,1967_southeast_asian_peninsular_games.txt
+Thailand,Laos,5,2,1,Bangkok,Thailand,1967_southeast_asian_peninsular_games.txt
+Myanmar,Vietnam Republic,2,1,1,Bangkok,Thailand,1967_southeast_asian_peninsular_games.txt
+Malaysia,Laos,2,1,1,Rangoon,Burma,1969_southeast_asian_peninsular_games.txt
+Malaysia,Vietnam Republic,2,1,1,Rangoon,Burma,1969_southeast_asian_peninsular_games.txt
+Myanmar,Thailand,1,1,X,Rangoon,Burma,1969_southeast_asian_peninsular_games.txt
+Laos,Vietnam Republic,0,0,X,Rangoon,Burma,1969_southeast_asian_peninsular_games.txt
+Malaysia,Thailand,0,3,2,Rangoon,Burma,1969_southeast_asian_peninsular_games.txt
+Myanmar,Laos,4,0,1,Rangoon,Burma,1969_southeast_asian_peninsular_games.txt
+Myanmar,Thailand,3,0,1,Rangoon,Burma,1969_southeast_asian_peninsular_games.txt
+Cambodia,Thailand,1,1,X,Malaysia,Malaysia,1971_southeast_asian_peninsular_games.txt
+Malaysia,Laos,5,0,1,Malaysia,Malaysia,1971_southeast_asian_peninsular_games.txt
+Myanmar,Vietnam Republic,0,0,X,Kuala Lumpur,Malaysia,1971_southeast_asian_peninsular_games.txt
+Laos,Cambodia,0,2,2,Malaysia,Malaysia,1971_southeast_asian_peninsular_games.txt
+Malaysia,Thailand,4,2,1,Malaysia,Malaysia,1971_southeast_asian_peninsular_games.txt
+Malaysia,Cambodia,3,0,1,Malaysia,Malaysia,1971_southeast_asian_peninsular_games.txt
+Vietnam Republic,Singapore,3,1,1,Kuala Lumpur,Malaysia,1971_southeast_asian_peninsular_games.txt
+Thailand,Laos,3,0,1,Malaysia,Malaysia,1971_southeast_asian_peninsular_games.txt
+Myanmar,Singapore,8,1,1,Kuala Lumpur,Malaysia,1971_southeast_asian_peninsular_games.txt
+Malaysia,Vietnam Republic,3,2,1,Kuala Lumpur,Malaysia,1971_southeast_asian_peninsular_games.txt
+Myanmar,Thailand,3,1,1,Kuala Lumpur,Malaysia,1971_southeast_asian_peninsular_games.txt
+Thailand,Vietnam Republic,0,0,X,Kuala Lumpur,Malaysia,1971_southeast_asian_peninsular_games.txt
+Malaysia,Myanmar,1,2,2,Kuala Lumpur,Malaysia,1971_southeast_asian_peninsular_games.txt
+Singapore,Thailand,1,0,1,Singapore,Singapore,1973_southeast_asian_peninsular_games.txt
+Malaysia,Thailand,1,1,X,Singapore,Singapore,1973_southeast_asian_peninsular_games.txt
+Myanmar,Laos,8,0,1,Singapore,Singapore,1973_southeast_asian_peninsular_games.txt
+Myanmar,Vietnam Republic,3,2,1,Singapore,Singapore,1973_southeast_asian_peninsular_games.txt
+Singapore,Malaysia,0,0,X,Singapore,Singapore,1973_southeast_asian_peninsular_games.txt
+Vietnam Republic,Laos,5,1,1,Singapore,Singapore,1973_southeast_asian_peninsular_games.txt
+Singapore,Malaysia,0,3,2,Singapore,Singapore,1973_southeast_asian_peninsular_games.txt
+Myanmar,Malaysia,1,0,1,Singapore,Singapore,1973_southeast_asian_peninsular_games.txt
+Singapore,Vietnam Republic,1,1,X,Singapore,Singapore   [Vietnam Republic wins on penalties],1973_southeast_asian_peninsular_games.txt
+Myanmar,Vietnam Republic,3,2,1,Singapore,Singapore,1973_southeast_asian_peninsular_games.txt
+Thailand,Malaysia,1,1,X,Thailand,Thailand   [Thailand wins on penalties],1975_southeast_asian_peninsular_games.txt
+Myanmar,Singapore,1,0,1,Thailand,Thailand,1975_southeast_asian_peninsular_games.txt
+Thailand,Singapore,2,2,X,Thailand,Thailand,1975_southeast_asian_peninsular_games.txt
+Myanmar,Malaysia,0,1,2,Thailand,Thailand,1975_southeast_asian_peninsular_games.txt
+Myanmar,Singapore,2,2,X,Thailand,Thailand,1975_southeast_asian_peninsular_games.txt
+Thailand,Malaysia,2,1,1,Thailand,Thailand,1975_southeast_asian_peninsular_games.txt

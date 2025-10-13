@@ -1,0 +1,11 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Austria,Morocco,1,3,2,Toulouse,France,1988_tournoi_de_france.txt
+France,Switzerland,2,1,1,Toulouse,France,1988_tournoi_de_france.txt
+Austria,Switzerland,1,2,2,Monaco,Monaco,1988_tournoi_de_france.txt
+France,Morocco,2,1,1,Monaco,Monaco,1988_tournoi_de_france.txt
+France,Brazil,1,1,X,Lyon,France,1997_tournoi_de_france.txt
+England,Italy,2,0,1,Nantes,France,1997_tournoi_de_france.txt
+France,England,0,1,2,Montpellier,France,1997_tournoi_de_france.txt
+Italy,Brazil,3,3,X,Lyon,France,1997_tournoi_de_france.txt
+England,Brazil,0,1,2,Paris,France,1997_tournoi_de_france.txt
+France,Italy,2,2,X,Paris,France,1997_tournoi_de_france.txt

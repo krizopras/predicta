@@ -1,0 +1,61 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Monaco,Ambazonia,3,0,1,Costebelle,France,2006_viva_world_cup.txt
+Occitania,Sápmi,0,7,2,Costebelle,France,2006_viva_world_cup.txt
+Sápmi,Ambazonia,3,0,1,Costebelle,France,2006_viva_world_cup.txt
+Occitania,Monaco,2,3,2,Hyères,France,2006_viva_world_cup.txt
+Occitania,Ambazonia,3,0,1,Hyères,France,2006_viva_world_cup.txt
+Sápmi,Monaco,14,0,1,Hyères,France,2006_viva_world_cup.txt
+Occitania,Ambazonia,3,0,1,Hyères,France,2006_viva_world_cup.txt
+Sápmi,Monaco,21,1,1,Hyères,France,2006_viva_world_cup.txt
+Sápmi,Iraqi Kurdistan,2,2,X,Gällivare,Sweden,2008_viva_world_cup.txt
+Provence,Padania,1,6,2,Gällivare,Sweden,2008_viva_world_cup.txt
+Provence,Iraqi Kurdistan,0,3,2,Malmberget,Sweden,2008_viva_world_cup.txt
+Sápmi,Arameans Suryoye,0,1,2,Gällivare,Sweden,2008_viva_world_cup.txt
+Arameans Suryoye,Provence,5,0,1,Malmberget,Sweden,2008_viva_world_cup.txt
+Padania,Iraqi Kurdistan,2,1,1,Gällivare,Sweden,2008_viva_world_cup.txt
+Sápmi,Padania,0,2,2,Malmberget,Sweden,2008_viva_world_cup.txt
+Iraqi Kurdistan,Arameans Suryoye,0,0,X,Gällivare,Sweden,2008_viva_world_cup.txt
+Padania,Arameans Suryoye,4,1,1,Malmberget,Sweden,2008_viva_world_cup.txt
+Sápmi,Provence,4,2,1,Gällivare,Sweden,2008_viva_world_cup.txt
+Sápmi,Iraqi Kurdistan,3,1,1,Malmberget,Sweden,2008_viva_world_cup.txt
+Padania,Arameans Suryoye,2,0,1,Gällivare,Sweden,2008_viva_world_cup.txt
+Padania,Occitania,1,0,1,Novara,Italy,2009_viva_world_cup.txt
+Provence,Gozo,3,1,1,Novara,Italy,2009_viva_world_cup.txt
+Occitania,Iraqi Kurdistan,0,4,2,Varese,Italy,2009_viva_world_cup.txt
+Sápmi,Provence,1,2,2,Varese,Italy,2009_viva_world_cup.txt
+Padania,Iraqi Kurdistan,2,1,1,Brescia,Italy,2009_viva_world_cup.txt
+Sápmi,Gozo,7,2,1,Brescia,Italy,2009_viva_world_cup.txt
+Provence,Iraqi Kurdistan,0,6,2,Varese,Italy,2009_viva_world_cup.txt
+Padania,Sápmi,4,0,1,Varese,Italy,2009_viva_world_cup.txt
+Occitania,Gozo,2,1,1,Brescia,Italy,2009_viva_world_cup.txt
+Provence,Sápmi,4,4,X,Brescia,Italy   [Sápmi wins on penalties],2009_viva_world_cup.txt
+Padania,Iraqi Kurdistan,2,0,1,Verona,Italy,2009_viva_world_cup.txt
+Gozo,Padania,1,2,2,Xewkija,Malta,2010_viva_world_cup.txt
+Iraqi Kurdistan,Two Sicilies,4,1,1,Sannat,Malta,2010_viva_world_cup.txt
+Occitania,Padania,0,1,2,Xewkija,Malta,2010_viva_world_cup.txt
+Provence,Two Sicilies,0,1,2,Sannat,Malta,2010_viva_world_cup.txt
+Gozo,Occitania,0,5,2,Xewkija,Malta,2010_viva_world_cup.txt
+Iraqi Kurdistan,Provence,3,2,1,Sannat,Malta,2010_viva_world_cup.txt
+Iraqi Kurdistan,Occitania,2,1,1,Sannat,Malta,2010_viva_world_cup.txt
+Padania,Two Sicilies,2,0,1,Xewkija,Malta,2010_viva_world_cup.txt
+Gozo,Provence,2,1,1,Xewkija,Malta,2010_viva_world_cup.txt
+Occitania,Two Sicilies,2,0,1,Sannat,Malta,2010_viva_world_cup.txt
+Iraqi Kurdistan,Padania,0,1,2,Xewkija,Malta,2010_viva_world_cup.txt
+Iraqi Kurdistan,Western Sahara,6,0,1,Erbil,Iraq,2012_viva_world_cup.txt
+Zanzibar,Raetia,6,0,1,Erbil,Iraq,2012_viva_world_cup.txt
+Northern Cyprus,Darfur,15,0,1,Erbil,Iraq,2012_viva_world_cup.txt
+Western Sahara,Occitania,2,6,2,Salahaddin,Iraq,2012_viva_world_cup.txt
+Raetia,Tamil Eelam,1,0,1,Erbil,Iraq,2012_viva_world_cup.txt
+Darfur,Provence,0,18,2,Erbil,Iraq,2012_viva_world_cup.txt
+Iraqi Kurdistan,Occitania,1,0,1,Sulaymaniyah,Iraq,2012_viva_world_cup.txt
+Tamil Eelam,Zanzibar,0,3,2,Erbil,Iraq,2012_viva_world_cup.txt
+Provence,Northern Cyprus,2,1,1,Erbil,Iraq,2012_viva_world_cup.txt
+Western Sahara,Darfur,5,1,1,Erbil,Iraq,2012_viva_world_cup.txt
+Occitania,Tamil Eelam,7,0,1,Erbil,Iraq,2012_viva_world_cup.txt
+Western Sahara,Raetia,3,0,1,Erbil,Iraq,2012_viva_world_cup.txt
+Iraqi Kurdistan,Provence,2,1,1,Duhok,Iraq,2012_viva_world_cup.txt
+Zanzibar,Northern Cyprus,0,2,2,Duhok,Iraq,2012_viva_world_cup.txt
+Tamil Eelam,Raetia,4,0,1,Erbil,Iraq,2012_viva_world_cup.txt
+Occitania,Western Sahara,3,1,1,Salahaddin,Iraq,2012_viva_world_cup.txt
+Provence,Zanzibar,2,7,2,Erbil,Iraq,2012_viva_world_cup.txt
+Iraqi Kurdistan,Northern Cyprus,2,1,1,Erbil,Iraq,2012_viva_world_cup.txt

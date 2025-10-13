@@ -1,0 +1,1441 @@
+time,home_team,away_team,home_score,away_score,result,ht_score,source_file
+16.30,FK Ural,Anzhi Makhachkala,0,1,2,0-0,2018-19_ru1.txt
+19.00,Spartak Moskva,FK Orenburg,1,0,1,1-0,2018-19_ru1.txt
+21.30,FK Rostov,Akhmat Grozny,1,0,1,1-0,2018-19_ru1.txt
+14.00,Enisey Krasnoyarsk,Zenit St. Petersburg,0,2,2,0-0,2018-19_ru1.txt
+16.30,Arsenal Tula,Dinamo Moskva,0,0,X,,2018-19_ru1.txt
+19.00,Rubin Kazan,FK Krasnodar,2,1,1,2-1,2018-19_ru1.txt
+18.00,FK Ufa,Lokomotiv Moskva,0,0,X,,2018-19_ru1.txt
+19.00,Krylia Sovetov,CSKA Moskva,0,0,X,,2018-19_ru1.txt
+19.30,Dinamo Moskva,Rubin Kazan,1,1,X,1-0,2018-19_ru1.txt
+14.00,FK Ural,FK Krasnodar,1,2,2,1-0,2018-19_ru1.txt
+16.30,Zenit St. Petersburg,Arsenal Tula,1,0,1,0-0,2018-19_ru1.txt
+19.00,Lokomotiv Moskva,Spartak Moskva,0,0,X,,2018-19_ru1.txt
+16.30,Krylia Sovetov,FK Orenburg,0,3,2,0-3,2018-19_ru1.txt
+19.00,CSKA Moskva,FK Rostov,0,1,2,0-1,2018-19_ru1.txt
+21.30,Akhmat Grozny,Enisey Krasnoyarsk,1,0,1,0-0,2018-19_ru1.txt
+17.30,FK Ufa,Anzhi Makhachkala,3,0,1,1-0,2018-19_ru1.txt
+17.30,FK Ural,Dinamo Moskva,1,1,X,0-0,2018-19_ru1.txt
+16.30,Enisey Krasnoyarsk,CSKA Moskva,1,1,X,0-0,2018-19_ru1.txt
+19.00,Spartak Moskva,Anzhi Makhachkala,1,0,1,0-0,2018-19_ru1.txt
+21.30,FK Rostov,Krylia Sovetov,0,1,2,0-1,2018-19_ru1.txt
+14.00,FK Orenburg,Lokomotiv Moskva,1,0,1,0-0,2018-19_ru1.txt
+16.30,Arsenal Tula,Akhmat Grozny,3,1,1,0-1,2018-19_ru1.txt
+17.30,FK Ufa,FK Krasnodar,0,1,2,0-0,2018-19_ru1.txt
+20.00,Rubin Kazan,Zenit St. Petersburg,0,1,2,0-0,2018-19_ru1.txt
+19.30,Anzhi Makhachkala,FK Orenburg,1,3,2,1-0,2018-19_ru1.txt
+16.30,CSKA Moskva,Arsenal Tula,3,0,1,1-0,2018-19_ru1.txt
+19.00,FK Krasnodar,Spartak Moskva,0,1,2,0-0,2018-19_ru1.txt
+21.30,Akhmat Grozny,Rubin Kazan,1,1,X,0-0,2018-19_ru1.txt
+16.30,Krylia Sovetov,Lokomotiv Moskva,0,1,2,0-1,2018-19_ru1.txt
+19.00,Zenit St. Petersburg,FK Ural,4,1,1,2-1,2018-19_ru1.txt
+21.30,FK Rostov,Enisey Krasnoyarsk,4,0,1,2-0,2018-19_ru1.txt
+19.30,Dinamo Moskva,FK Ufa,3,0,1,0-0,2018-19_ru1.txt
+19.30,Arsenal Tula,FK Rostov,0,1,2,0-0,2018-19_ru1.txt
+14.00,FK Ural,Akhmat Grozny,2,1,1,0-1,2018-19_ru1.txt
+16.30,Rubin Kazan,CSKA Moskva,1,1,X,1-0,2018-19_ru1.txt
+19.00,Spartak Moskva,Dinamo Moskva,2,1,1,2-0,2018-19_ru1.txt
+14.00,FK Orenburg,FK Krasnodar,1,1,X,1-0,2018-19_ru1.txt
+16.30,FK Ufa,Zenit St. Petersburg,0,2,2,0-2,2018-19_ru1.txt
+19.00,Lokomotiv Moskva,Anzhi Makhachkala,2,1,1,0-0,2018-19_ru1.txt
+17.30,Enisey Krasnoyarsk,Krylia Sovetov,1,0,1,1-0,2018-19_ru1.txt
+19.30,FK Rostov,Rubin Kazan,1,1,X,1-0,2018-19_ru1.txt
+14.00,Krylia Sovetov,Anzhi Makhachkala,1,0,1,0-0,2018-19_ru1.txt
+16.30,CSKA Moskva,FK Ural,4,0,1,2-0,2018-19_ru1.txt
+19.00,FK Krasnodar,Lokomotiv Moskva,2,1,1,1-1,2018-19_ru1.txt
+14.00,Enisey Krasnoyarsk,Arsenal Tula,0,0,X,,2018-19_ru1.txt
+16.30,Dinamo Moskva,FK Orenburg,2,0,1,0-0,2018-19_ru1.txt
+19.00,Zenit St. Petersburg,Spartak Moskva,0,0,X,,2018-19_ru1.txt
+21.30,Akhmat Grozny,FK Ufa,2,1,1,0-0,2018-19_ru1.txt
+19.30,Lokomotiv Moskva,Dinamo Moskva,1,1,X,1-1,2018-19_ru1.txt
+14.00,Rubin Kazan,Enisey Krasnoyarsk,1,0,1,1-0,2018-19_ru1.txt
+16.30,FK Ufa,CSKA Moskva,0,3,2,0-1,2018-19_ru1.txt
+19.00,Arsenal Tula,Krylia Sovetov,4,0,1,1-0,2018-19_ru1.txt
+14.00,FK Orenburg,Zenit St. Petersburg,1,2,2,0-2,2018-19_ru1.txt
+16.30,Anzhi Makhachkala,FK Krasnodar,0,4,2,0-2,2018-19_ru1.txt
+19.00,Spartak Moskva,Akhmat Grozny,1,2,2,0-1,2018-19_ru1.txt
+17.30,FK Ural,FK Rostov,1,1,X,0-0,2018-19_ru1.txt
+11.30,Enisey Krasnoyarsk,FK Ural,1,2,2,0-1,2018-19_ru1.txt
+14.00,Dinamo Moskva,Anzhi Makhachkala,0,1,2,0-0,2018-19_ru1.txt
+16.30,Arsenal Tula,Rubin Kazan,2,2,X,1-0,2018-19_ru1.txt
+19.00,FK Rostov,FK Ufa,0,0,X,,2018-19_ru1.txt
+,Akhmat Grozny,FK Orenburg,1,1,X,1-0,2018-19_ru1.txt
+16.30,Zenit St. Petersburg,Lokomotiv Moskva,5,3,1,1-1,2018-19_ru1.txt
+19.00,CSKA Moskva,Spartak Moskva,1,1,X,0-1,2018-19_ru1.txt
+18.30,Krylia Sovetov,FK Krasnodar,0,3,2,0-0,2018-19_ru1.txt
+17.30,FK Orenburg,CSKA Moskva,0,1,2,0-1,2018-19_ru1.txt
+11.30,FK Ural,Arsenal Tula,2,1,1,0-1,2018-19_ru1.txt
+16.30,FK Ufa,Enisey Krasnoyarsk,2,1,1,0-1,2018-19_ru1.txt
+19.00,Lokomotiv Moskva,Akhmat Grozny,2,0,1,0-0,2018-19_ru1.txt
+14.00,Anzhi Makhachkala,Zenit St. Petersburg,2,1,1,0-0,2018-19_ru1.txt
+16.30,FK Krasnodar,Dinamo Moskva,3,0,1,2-0,2018-19_ru1.txt
+19.00,Spartak Moskva,FK Rostov,0,1,2,0-0,2018-19_ru1.txt
+19.30,Rubin Kazan,Krylia Sovetov,2,1,1,1-0,2018-19_ru1.txt
+19.30,Arsenal Tula,FK Ufa,1,1,X,0-1,2018-19_ru1.txt
+14.00,Krylia Sovetov,Dinamo Moskva,1,0,1,0-0,2018-19_ru1.txt
+16.30,FK Rostov,FK Orenburg,0,1,2,0-1,2018-19_ru1.txt
+19.00,Rubin Kazan,FK Ural,1,0,1,1-0,2018-19_ru1.txt
+11.30,Enisey Krasnoyarsk,Spartak Moskva,2,3,2,0-0,2018-19_ru1.txt
+14.00,Akhmat Grozny,Anzhi Makhachkala,0,0,X,,2018-19_ru1.txt
+16.30,Zenit St. Petersburg,FK Krasnodar,2,1,1,0-0,2018-19_ru1.txt
+19.00,CSKA Moskva,Lokomotiv Moskva,0,1,2,0-0,2018-19_ru1.txt
+18.00,Anzhi Makhachkala,CSKA Moskva,0,2,2,0-1,2018-19_ru1.txt
+20.30,Lokomotiv Moskva,FK Rostov,2,1,1,1-1,2018-19_ru1.txt
+11.30,FK Orenburg,Enisey Krasnoyarsk,0,0,X,,2018-19_ru1.txt
+14.00,FK Ural,Krylia Sovetov,1,1,X,1-0,2018-19_ru1.txt
+16.30,FK Ufa,Rubin Kazan,0,0,X,,2018-19_ru1.txt
+14.00,Dinamo Moskva,Zenit St. Petersburg,1,0,1,0-0,2018-19_ru1.txt
+16.30,Spartak Moskva,Arsenal Tula,2,3,2,2-1,2018-19_ru1.txt
+19.00,FK Krasnodar,Akhmat Grozny,0,1,2,0-0,2018-19_ru1.txt
+14.00,FK Ural,FK Ufa,1,1,X,0-1,2018-19_ru1.txt
+16.30,Arsenal Tula,FK Orenburg,2,2,X,1-0,2018-19_ru1.txt
+19.00,FK Rostov,Anzhi Makhachkala,1,0,1,1-0,2018-19_ru1.txt
+14.00,Enisey Krasnoyarsk,Lokomotiv Moskva,0,3,2,0-1,2018-19_ru1.txt
+16.30,Akhmat Grozny,Dinamo Moskva,0,0,X,,2018-19_ru1.txt
+19.00,CSKA Moskva,FK Krasnodar,1,2,2,0-0,2018-19_ru1.txt
+18.00,Krylia Sovetov,Zenit St. Petersburg,0,1,2,0-1,2018-19_ru1.txt
+20.30,Rubin Kazan,Spartak Moskva,1,1,X,0-0,2018-19_ru1.txt
+14.00,Lokomotiv Moskva,Arsenal Tula,3,1,1,1-1,2018-19_ru1.txt
+16.30,Dinamo Moskva,CSKA Moskva,0,0,X,,2018-19_ru1.txt
+14.00,Zenit St. Petersburg,Akhmat Grozny,1,0,1,1-0,2018-19_ru1.txt
+16.30,FK Krasnodar,FK Rostov,2,2,X,1-1,2018-19_ru1.txt
+19.00,Spartak Moskva,FK Ural,1,2,2,0-1,2018-19_ru1.txt
+14.00,FK Orenburg,Rubin Kazan,1,0,1,0-0,2018-19_ru1.txt
+16.30,FK Ufa,Krylia Sovetov,1,2,2,0-1,2018-19_ru1.txt
+19.00,Anzhi Makhachkala,Enisey Krasnoyarsk,2,1,1,1-0,2018-19_ru1.txt
+19.30,Arsenal Tula,Anzhi Makhachkala,2,0,1,1-0,2018-19_ru1.txt
+14.00,FK Ural,FK Orenburg,2,1,1,1-0,2018-19_ru1.txt
+16.30,Krylia Sovetov,Akhmat Grozny,1,2,2,0-0,2018-19_ru1.txt
+19.00,FK Rostov,Dinamo Moskva,0,0,X,,2018-19_ru1.txt
+14.00,FK Ufa,Spartak Moskva,2,0,1,0-0,2018-19_ru1.txt
+16.00,FK Krasnodar,Enisey Krasnoyarsk,3,0,1,0-0,2018-19_ru1.txt
+16.30,Rubin Kazan,Lokomotiv Moskva,0,0,X,,2018-19_ru1.txt
+19.00,CSKA Moskva,Zenit St. Petersburg,2,0,1,2-0,2018-19_ru1.txt
+18.00,Akhmat Grozny,CSKA Moskva,0,2,2,0-0,2018-19_ru1.txt
+20.30,Lokomotiv Moskva,FK Ural,1,2,2,1-1,2018-19_ru1.txt
+14.00,Dinamo Moskva,Enisey Krasnoyarsk,1,2,2,0-1,2018-19_ru1.txt
+16.30,FK Orenburg,FK Ufa,1,0,1,0-0,2018-19_ru1.txt
+19.00,Anzhi Makhachkala,Rubin Kazan,1,1,X,1-1,2018-19_ru1.txt
+14.00,Spartak Moskva,Krylia Sovetov,3,1,1,0-0,2018-19_ru1.txt
+16.30,FK Krasnodar,Arsenal Tula,3,0,1,1-0,2018-19_ru1.txt
+19.00,Zenit St. Petersburg,FK Rostov,2,0,1,1-0,2018-19_ru1.txt
+19.30,Rubin Kazan,Dinamo Moskva,1,1,X,0-0,2018-19_ru1.txt
+14.00,Enisey Krasnoyarsk,Akhmat Grozny,1,1,X,0-0,2018-19_ru1.txt
+19.00,Anzhi Makhachkala,FK Ufa,0,0,X,,2018-19_ru1.txt
+14.00,FK Krasnodar,FK Ural,2,0,1,0-0,2018-19_ru1.txt
+16.30,FK Rostov,CSKA Moskva,0,0,X,,2018-19_ru1.txt
+19.00,Spartak Moskva,Lokomotiv Moskva,2,1,1,2-0,2018-19_ru1.txt
+19.30,Arsenal Tula,Zenit St. Petersburg,4,2,1,2-1,2018-19_ru1.txt
+17.00,FK Orenburg,Krylia Sovetov,3,1,1,2-1,2018-19_ru1.txt
+12.30,Krylia Sovetov,FK Rostov,1,0,1,1-0,2018-19_ru1.txt
+15.00,CSKA Moskva,Enisey Krasnoyarsk,2,1,1,2-0,2018-19_ru1.txt
+17.30,Lokomotiv Moskva,FK Orenburg,2,1,1,0-1,2018-19_ru1.txt
+20.00,Anzhi Makhachkala,Spartak Moskva,0,3,2,0-1,2018-19_ru1.txt
+14.00,Dinamo Moskva,FK Ural,4,0,1,2-0,2018-19_ru1.txt
+16.30,FK Krasnodar,FK Ufa,1,1,X,1-1,2018-19_ru1.txt
+19.00,Zenit St. Petersburg,Rubin Kazan,1,2,2,0-1,2018-19_ru1.txt
+19.30,Akhmat Grozny,Arsenal Tula,2,0,1,1-0,2018-19_ru1.txt
+16.30,FK Orenburg,Anzhi Makhachkala,0,1,2,0-0,2018-19_ru1.txt
+11.30,FK Ural,Zenit St. Petersburg,0,1,2,0-1,2018-19_ru1.txt
+14.00,Arsenal Tula,CSKA Moskva,2,0,1,0-0,2018-19_ru1.txt
+16.30,Lokomotiv Moskva,Krylia Sovetov,2,2,X,1-1,2018-19_ru1.txt
+19.00,Rubin Kazan,Akhmat Grozny,1,0,1,0-0,2018-19_ru1.txt
+11.30,FK Ufa,Dinamo Moskva,1,2,2,1-0,2018-19_ru1.txt
+14.00,Enisey Krasnoyarsk,FK Rostov,1,1,X,0-0,2018-19_ru1.txt
+19.00,Spartak Moskva,FK Krasnodar,1,1,X,1-1,2018-19_ru1.txt
+14.00,Krylia Sovetov,Enisey Krasnoyarsk,4,0,1,1-0,2018-19_ru1.txt
+16.30,CSKA Moskva,Rubin Kazan,3,0,1,1-0,2018-19_ru1.txt
+14.00,FK Rostov,Arsenal Tula,0,0,X,,2018-19_ru1.txt
+16.30,Zenit St. Petersburg,FK Ufa,2,1,1,2-1,2018-19_ru1.txt
+19.00,Dinamo Moskva,Spartak Moskva,0,1,2,0-1,2018-19_ru1.txt
+21.00,Anzhi Makhachkala,Lokomotiv Moskva,0,2,2,0-1,2018-19_ru1.txt
+17.30,Akhmat Grozny,FK Ural,1,1,X,0-1,2018-19_ru1.txt
+19.30,FK Krasnodar,FK Orenburg,2,2,X,0-1,2018-19_ru1.txt
+19.30,Anzhi Makhachkala,Krylia Sovetov,0,2,2,0-1,2018-19_ru1.txt
+11.30,FK Orenburg,Dinamo Moskva,1,0,1,0-0,2018-19_ru1.txt
+14.00,FK Ural,CSKA Moskva,0,1,2,0-0,2018-19_ru1.txt
+16.30,Rubin Kazan,FK Rostov,0,2,2,0-0,2018-19_ru1.txt
+19.00,Arsenal Tula,Enisey Krasnoyarsk,2,0,1,1-0,2018-19_ru1.txt
+14.00,FK Ufa,Akhmat Grozny,0,1,2,0-0,2018-19_ru1.txt
+16.30,Lokomotiv Moskva,FK Krasnodar,1,0,1,0-0,2018-19_ru1.txt
+19.00,Spartak Moskva,Zenit St. Petersburg,1,1,X,1-1,2018-19_ru1.txt
+18.30,Krylia Sovetov,Arsenal Tula,0,1,2,0-0,2018-19_ru1.txt
+11.30,Enisey Krasnoyarsk,Rubin Kazan,1,1,X,0-0,2018-19_ru1.txt
+14.00,Dinamo Moskva,Lokomotiv Moskva,0,1,2,0-0,2018-19_ru1.txt
+16.30,Akhmat Grozny,Spartak Moskva,1,3,2,1-1,2018-19_ru1.txt
+19.00,FK Rostov,FK Ural,2,1,1,1-0,2018-19_ru1.txt
+14.00,Zenit St. Petersburg,FK Orenburg,3,1,1,0-1,2018-19_ru1.txt
+16.30,CSKA Moskva,FK Ufa,2,2,X,1-0,2018-19_ru1.txt
+19.00,FK Krasnodar,Anzhi Makhachkala,5,0,1,2-0,2018-19_ru1.txt
+14.00,Anzhi Makhachkala,Dinamo Moskva,1,1,X,1-0,2018-19_ru1.txt
+16.30,FK Krasnodar,Krylia Sovetov,1,0,1,0-0,2018-19_ru1.txt
+19.00,Spartak Moskva,CSKA Moskva,0,2,2,0-0,2018-19_ru1.txt
+11.30,FK Ufa,FK Rostov,1,0,1,1-0,2018-19_ru1.txt
+14.00,FK Ural,Enisey Krasnoyarsk,3,2,1,0-1,2018-19_ru1.txt
+16.30,Rubin Kazan,Arsenal Tula,0,0,X,,2018-19_ru1.txt
+19.00,Lokomotiv Moskva,Zenit St. Petersburg,1,1,X,0-0,2018-19_ru1.txt
+17.00,FK Orenburg,Akhmat Grozny,1,3,2,1-1,2018-19_ru1.txt
+18.30,Krylia Sovetov,Rubin Kazan,1,0,1,0-0,2018-19_ru1.txt
+11.30,Enisey Krasnoyarsk,FK Ufa,0,0,X,,2018-19_ru1.txt
+14.00,Arsenal Tula,FK Ural,0,0,X,,2018-19_ru1.txt
+,CSKA Moskva,FK Orenburg,2,3,2,2-2,2018-19_ru1.txt
+19.30,Akhmat Grozny,Lokomotiv Moskva,1,3,2,0-1,2018-19_ru1.txt
+14.00,Dinamo Moskva,FK Krasnodar,1,1,X,0-0,2018-19_ru1.txt
+16.30,Zenit St. Petersburg,Anzhi Makhachkala,5,0,1,2-0,2018-19_ru1.txt
+19.00,FK Rostov,Spartak Moskva,2,1,1,1-1,2018-19_ru1.txt
+19.30,Anzhi Makhachkala,Akhmat Grozny,0,1,2,0-0,2018-19_ru1.txt
+11.30,FK Ufa,Arsenal Tula,1,2,2,1-2,2018-19_ru1.txt
+14.00,FK Orenburg,FK Rostov,3,0,1,1-0,2018-19_ru1.txt
+16.30,Dinamo Moskva,Krylia Sovetov,1,0,1,0-0,2018-19_ru1.txt
+19.00,Lokomotiv Moskva,CSKA Moskva,1,1,X,1-1,2018-19_ru1.txt
+21.00,FK Krasnodar,Zenit St. Petersburg,2,3,2,1-1,2018-19_ru1.txt
+16.30,FK Ural,Rubin Kazan,2,1,1,1-1,2018-19_ru1.txt
+19.00,Spartak Moskva,Enisey Krasnoyarsk,2,0,1,1-0,2018-19_ru1.txt
+19.00,FK Rostov,Lokomotiv Moskva,1,2,2,1-1,2018-19_ru1.txt
+,Akhmat Grozny,FK Krasnodar,1,1,X,1-0,2018-19_ru1.txt
+19.30,Rubin Kazan,FK Ufa,1,1,X,0-1,2018-19_ru1.txt
+,CSKA Moskva,Anzhi Makhachkala,2,0,1,1-0,2018-19_ru1.txt
+21.00,Zenit St. Petersburg,Dinamo Moskva,2,0,1,0-0,2018-19_ru1.txt
+16.00,Enisey Krasnoyarsk,FK Orenburg,2,1,1,1-0,2018-19_ru1.txt
+18.30,Krylia Sovetov,FK Ural,0,1,2,0-0,2018-19_ru1.txt
+20.30,Arsenal Tula,Spartak Moskva,3,0,1,3-0,2018-19_ru1.txt
+16.30,Anzhi Makhachkala,FK Rostov,1,1,X,0-1,2018-19_ru1.txt
+19.00,Dinamo Moskva,Akhmat Grozny,0,0,X,,2018-19_ru1.txt
+11.30,FK Ufa,FK Ural,4,1,1,1-1,2018-19_ru1.txt
+14.00,Lokomotiv Moskva,Enisey Krasnoyarsk,2,1,1,0-0,2018-19_ru1.txt
+16.30,Zenit St. Petersburg,Krylia Sovetov,4,2,1,3-2,2018-19_ru1.txt
+19.00,FK Krasnodar,CSKA Moskva,2,0,1,1-0,2018-19_ru1.txt
+17.00,FK Orenburg,Arsenal Tula,1,1,X,0-0,2018-19_ru1.txt
+19.30,Spartak Moskva,Rubin Kazan,1,1,X,1-0,2018-19_ru1.txt
+14.00,Enisey Krasnoyarsk,Anzhi Makhachkala,3,1,1,0-1,2018-19_ru1.txt
+16.30,Rubin Kazan,FK Orenburg,2,0,1,1-0,2018-19_ru1.txt
+14.00,FK Ural,Spartak Moskva,0,1,2,0-0,2018-19_ru1.txt
+16.30,Akhmat Grozny,Zenit St. Petersburg,1,1,X,0-0,2018-19_ru1.txt
+19.00,Arsenal Tula,Lokomotiv Moskva,2,0,1,1-0,2018-19_ru1.txt
+14.00,Krylia Sovetov,FK Ufa,1,1,X,1-0,2018-19_ru1.txt
+16.30,CSKA Moskva,Dinamo Moskva,2,2,X,1-2,2018-19_ru1.txt
+19.00,FK Rostov,FK Krasnodar,1,1,X,0-1,2018-19_ru1.txt
+11.30,FK Orenburg,FK Ural,2,2,X,0-0,2018-19_ru1.txt
+14.00,Dinamo Moskva,FK Rostov,0,0,X,,2018-19_ru1.txt
+16.30,Anzhi Makhachkala,Arsenal Tula,0,1,2,0-1,2018-19_ru1.txt
+19.00,Lokomotiv Moskva,Rubin Kazan,4,0,1,2-0,2018-19_ru1.txt
+14.00,Enisey Krasnoyarsk,FK Krasnodar,0,4,2,0-2,2018-19_ru1.txt
+16.30,Akhmat Grozny,Krylia Sovetov,2,1,1,2-1,2018-19_ru1.txt
+16.30,Spartak Moskva,FK Ufa,1,0,1,1-0,2018-19_ru1.txt
+19.00,Zenit St. Petersburg,CSKA Moskva,3,1,1,1-1,2018-19_ru1.txt
+14.00,FK Ufa,FK Orenburg,0,2,2,0-1,2018-19_ru1.txt
+16.30,CSKA Moskva,Akhmat Grozny,1,0,1,0-0,2018-19_ru1.txt
+19.00,Krylia Sovetov,Spartak Moskva,1,2,2,0-1,2018-19_ru1.txt
+11.30,FK Ural,Lokomotiv Moskva,2,2,X,1-1,2018-19_ru1.txt
+14.00,Enisey Krasnoyarsk,Dinamo Moskva,2,2,X,1-1,2018-19_ru1.txt
+16.30,Arsenal Tula,FK Krasnodar,0,3,2,0-0,2018-19_ru1.txt
+19.00,FK Rostov,Zenit St. Petersburg,1,0,1,0-0,2018-19_ru1.txt
+19.00,Rubin Kazan,Anzhi Makhachkala,0,0,X,,2018-19_ru1.txt
+14.00,CSKA Moskva,Krylia Sovetov,6,0,1,1-0,2018-19_ru1.txt
+,Akhmat Grozny,FK Rostov,1,0,1,1-0,2018-19_ru1.txt
+,Zenit St. Petersburg,Enisey Krasnoyarsk,4,1,1,1-0,2018-19_ru1.txt
+,Dinamo Moskva,Arsenal Tula,3,3,X,2-1,2018-19_ru1.txt
+,FK Krasnodar,Rubin Kazan,1,0,1,0-0,2018-19_ru1.txt
+,Anzhi Makhachkala,FK Ural,0,2,2,0-0,2018-19_ru1.txt
+,Lokomotiv Moskva,FK Ufa,1,0,1,1-0,2018-19_ru1.txt
+,FK Orenburg,Spartak Moskva,2,0,1,1-0,2018-19_ru1.txt
+20.00,Arsenal Tula,Dinamo Moskva,1,1,X,0-1,2019-20_ru1.txt
+16.30,FK Ural,FK Ufa,3,2,1,1-0,2019-20_ru1.txt
+19.00,Spartak Moskva,FK Sochi,1,0,1,0-0,2019-20_ru1.txt
+21.30,FK Rostov,FK Orenburg,2,1,1,2-0,2019-20_ru1.txt
+16.30,Krylia Sovetov,CSKA Moskva,2,0,1,0-0,2019-20_ru1.txt
+19.00,Zenit St. Petersburg,FK Tambov,2,1,1,0-0,2019-20_ru1.txt
+21.30,Akhmat Grozny,FK Krasnodar,1,0,1,1-0,2019-20_ru1.txt
+20.00,Lokomotiv Moskva,Rubin Kazan,1,1,X,0-0,2019-20_ru1.txt
+14.00,FK Ufa,FK Krasnodar,2,3,2,2-0,2019-20_ru1.txt
+16.30,Krylia Sovetov,Arsenal Tula,2,3,2,1-2,2019-20_ru1.txt
+19.00,CSKA Moskva,FK Orenburg,2,1,1,2-1,2019-20_ru1.txt
+21.30,FK Rostov,Spartak Moskva,2,2,X,1-1,2019-20_ru1.txt
+14.00,FK Ural,Akhmat Grozny,3,0,1,1-0,2019-20_ru1.txt
+16.30,Lokomotiv Moskva,FK Tambov,2,1,1,2-1,2019-20_ru1.txt
+19.00,Dinamo Moskva,Rubin Kazan,0,1,2,0-0,2019-20_ru1.txt
+21.30,FK Sochi,Zenit St. Petersburg,0,2,2,0-1,2019-20_ru1.txt
+20.00,Dinamo Moskva,FK Ural,2,0,1,2-0,2019-20_ru1.txt
+14.00,FK Ufa,Krylia Sovetov,2,1,1,2-1,2019-20_ru1.txt
+16.30,FK Tambov,Spartak Moskva,2,0,1,1-0,2019-20_ru1.txt
+19.00,FK Krasnodar,FK Sochi,3,0,1,2-0,2019-20_ru1.txt
+14.00,FK Orenburg,Zenit St. Petersburg,0,2,2,0-1,2019-20_ru1.txt
+16.30,Arsenal Tula,FK Rostov,2,3,2,0-1,2019-20_ru1.txt
+19.00,CSKA Moskva,Lokomotiv Moskva,1,0,1,1-0,2019-20_ru1.txt
+20.00,Rubin Kazan,Akhmat Grozny,1,0,1,0-0,2019-20_ru1.txt
+14.00,FK Ural,FK Rostov,2,2,X,1-0,2019-20_ru1.txt
+16.30,Krylia Sovetov,Lokomotiv Moskva,1,2,2,0-1,2019-20_ru1.txt
+19.00,Spartak Moskva,Dinamo Moskva,0,0,X,,2019-20_ru1.txt
+21.30,Zenit St. Petersburg,FK Krasnodar,1,1,X,0-0,2019-20_ru1.txt
+16.30,FK Tambov,Arsenal Tula,0,1,2,0-1,2019-20_ru1.txt
+19.00,Rubin Kazan,CSKA Moskva,0,1,2,0-1,2019-20_ru1.txt
+21.30,FK Sochi,FK Ufa,0,0,X,,2019-20_ru1.txt
+20.00,Akhmat Grozny,FK Orenburg,2,1,1,0-0,2019-20_ru1.txt
+14.00,FK Orenburg,FK Tambov,2,2,X,0-1,2019-20_ru1.txt
+19.00,FK Krasnodar,Rubin Kazan,1,0,1,1-0,2019-20_ru1.txt
+,Dinamo Moskva,Zenit St. Petersburg,0,2,2,0-1,2019-20_ru1.txt
+14.00,Arsenal Tula,FK Ufa,1,0,1,1-0,2019-20_ru1.txt
+16.30,Lokomotiv Moskva,FK Ural,4,0,1,2-0,2019-20_ru1.txt
+19.00,CSKA Moskva,FK Sochi,0,0,X,,2019-20_ru1.txt
+21.30,Akhmat Grozny,Spartak Moskva,1,3,2,0-2,2019-20_ru1.txt
+20.00,FK Rostov,Krylia Sovetov,1,0,1,1-0,2019-20_ru1.txt
+18.00,FK Orenburg,FK Sochi,1,1,X,0-0,2019-20_ru1.txt
+14.00,FK Ural,Krylia Sovetov,1,3,2,0-1,2019-20_ru1.txt
+16.30,FK Tambov,FK Krasnodar,0,2,2,0-1,2019-20_ru1.txt
+19.00,Zenit St. Petersburg,Akhmat Grozny,0,0,X,,2019-20_ru1.txt
+14.00,Rubin Kazan,Arsenal Tula,1,0,1,0-0,2019-20_ru1.txt
+16.30,FK Ufa,FK Rostov,2,0,1,1-0,2019-20_ru1.txt
+19.00,Dinamo Moskva,Lokomotiv Moskva,1,2,2,1-1,2019-20_ru1.txt
+20.00,Spartak Moskva,CSKA Moskva,2,1,1,0-0,2019-20_ru1.txt
+14.00,FK Tambov,Dinamo Moskva,0,2,2,0-1,2019-20_ru1.txt
+16.30,FK Ufa,Zenit St. Petersburg,1,0,1,0-0,2019-20_ru1.txt
+19.00,FK Krasnodar,Lokomotiv Moskva,1,1,X,1-1,2019-20_ru1.txt
+16.30,CSKA Moskva,Akhmat Grozny,3,0,1,1-0,2019-20_ru1.txt
+19.00,FK Rostov,Rubin Kazan,2,1,1,1-1,2019-20_ru1.txt
+,Krylia Sovetov,Spartak Moskva,1,2,2,1-0,2019-20_ru1.txt
+21.30,Arsenal Tula,FK Orenburg,2,1,1,1-0,2019-20_ru1.txt
+18.00,FK Ural,FK Sochi,3,1,1,1-1,2019-20_ru1.txt
+20.00,Krylia Sovetov,Dinamo Moskva,0,0,X,,2019-20_ru1.txt
+11.30,FK Ufa,FK Orenburg,1,2,2,0-1,2019-20_ru1.txt
+14.00,Rubin Kazan,FK Sochi,0,3,2,0-1,2019-20_ru1.txt
+16.30,Lokomotiv Moskva,FK Rostov,1,2,2,0-1,2019-20_ru1.txt
+19.00,Akhmat Grozny,FK Tambov,1,1,X,0-1,2019-20_ru1.txt
+14.00,FK Ural,FK Krasnodar,2,4,2,1-2,2019-20_ru1.txt
+16.30,Arsenal Tula,CSKA Moskva,1,2,2,1-1,2019-20_ru1.txt
+19.00,Spartak Moskva,Zenit St. Petersburg,0,1,2,0-1,2019-20_ru1.txt
+20.00,Zenit St. Petersburg,Arsenal Tula,3,1,1,1-0,2019-20_ru1.txt
+16.30,Spartak Moskva,FK Ural,1,2,2,1-0,2019-20_ru1.txt
+19.00,FK Sochi,Lokomotiv Moskva,0,1,2,0-1,2019-20_ru1.txt
+14.00,FK Orenburg,Rubin Kazan,2,1,1,0-0,2019-20_ru1.txt
+16.30,FK Tambov,CSKA Moskva,0,2,2,0-0,2019-20_ru1.txt
+19.00,FK Krasnodar,Krylia Sovetov,4,2,1,1-1,2019-20_ru1.txt
+20.00,Dinamo Moskva,FK Ufa,0,0,X,,2019-20_ru1.txt
+20.30,FK Rostov,Akhmat Grozny,2,1,1,0-1,2019-20_ru1.txt
+17.30,FK Ufa,Spartak Moskva,1,0,1,1-0,2019-20_ru1.txt
+14.00,Akhmat Grozny,Krylia Sovetov,1,1,X,1-0,2019-20_ru1.txt
+19.00,Zenit St. Petersburg,Rubin Kazan,5,0,1,0-0,2019-20_ru1.txt
+,FK Tambov,FK Rostov,2,1,1,1-1,2019-20_ru1.txt
+11.30,FK Orenburg,Lokomotiv Moskva,2,3,2,0-1,2019-20_ru1.txt
+14.00,Dinamo Moskva,FK Sochi,2,3,2,0-1,2019-20_ru1.txt
+16.30,Arsenal Tula,FK Ural,1,1,X,1-0,2019-20_ru1.txt
+19.00,CSKA Moskva,FK Krasnodar,3,2,1,3-0,2019-20_ru1.txt
+14.00,Krylia Sovetov,FK Tambov,2,0,1,0-0,2019-20_ru1.txt
+16.30,FK Rostov,Dinamo Moskva,3,0,1,2-0,2019-20_ru1.txt
+19.00,Lokomotiv Moskva,Zenit St. Petersburg,1,0,1,0-0,2019-20_ru1.txt
+11.30,FK Ural,CSKA Moskva,0,3,2,0-1,2019-20_ru1.txt
+14.00,Rubin Kazan,FK Ufa,0,0,X,,2019-20_ru1.txt
+16.30,Spartak Moskva,FK Orenburg,1,2,2,0-1,2019-20_ru1.txt
+19.00,FK Krasnodar,Arsenal Tula,2,0,1,1-0,2019-20_ru1.txt
+19.30,FK Sochi,Akhmat Grozny,2,0,1,1-0,2019-20_ru1.txt
+11.30,FK Ufa,Akhmat Grozny,0,1,2,0-1,2019-20_ru1.txt
+14.00,FK Orenburg,Dinamo Moskva,2,0,1,0-0,2019-20_ru1.txt
+16.30,Rubin Kazan,FK Tambov,2,1,1,2-0,2019-20_ru1.txt
+19.00,FK Sochi,Krylia Sovetov,0,2,2,0-1,2019-20_ru1.txt
+11.30,FK Ural,Zenit St. Petersburg,1,3,2,0-2,2019-20_ru1.txt
+14.00,Lokomotiv Moskva,Arsenal Tula,2,1,1,2-1,2019-20_ru1.txt
+16.30,CSKA Moskva,FK Rostov,1,3,2,0-2,2019-20_ru1.txt
+19.00,FK Krasnodar,Spartak Moskva,2,1,1,2-1,2019-20_ru1.txt
+19.30,Akhmat Grozny,Lokomotiv Moskva,0,2,2,0-1,2019-20_ru1.txt
+14.00,FK Tambov,FK Ural,1,2,2,0-0,2019-20_ru1.txt
+16.30,Spartak Moskva,Rubin Kazan,0,0,X,,2019-20_ru1.txt
+19.00,Zenit St. Petersburg,FK Rostov,6,1,1,3-0,2019-20_ru1.txt
+11.30,FK Orenburg,Krylia Sovetov,0,1,2,0-1,2019-20_ru1.txt
+14.00,FK Ufa,CSKA Moskva,1,1,X,0-1,2019-20_ru1.txt
+16.30,Arsenal Tula,FK Sochi,1,1,X,1-1,2019-20_ru1.txt
+19.00,Dinamo Moskva,FK Krasnodar,1,1,X,1-1,2019-20_ru1.txt
+19.30,Rubin Kazan,FK Ural,0,0,X,,2019-20_ru1.txt
+14.00,FK Tambov,FK Ufa,3,0,1,1-0,2019-20_ru1.txt
+16.30,Akhmat Grozny,Arsenal Tula,1,1,X,1-0,2019-20_ru1.txt
+19.00,FK Rostov,FK Sochi,2,0,1,1-0,2019-20_ru1.txt
+14.00,Krylia Sovetov,Zenit St. Petersburg,0,2,2,0-1,2019-20_ru1.txt
+16.30,CSKA Moskva,Dinamo Moskva,0,1,2,0-0,2019-20_ru1.txt
+,Lokomotiv Moskva,Spartak Moskva,0,3,2,0-0,2019-20_ru1.txt
+19.00,FK Krasnodar,FK Orenburg,1,1,X,1-1,2019-20_ru1.txt
+14.00,Dinamo Moskva,Akhmat Grozny,1,1,X,0-1,2019-20_ru1.txt
+,FK Ufa,Lokomotiv Moskva,1,1,X,0-0,2019-20_ru1.txt
+16.30,FK Sochi,FK Tambov,1,2,2,1-1,2019-20_ru1.txt
+19.00,Zenit St. Petersburg,CSKA Moskva,1,1,X,0-1,2019-20_ru1.txt
+16.30,FK Krasnodar,FK Rostov,2,2,X,0-2,2019-20_ru1.txt
+14.00,FK Ural,FK Orenburg,1,2,2,0-2,2019-20_ru1.txt
+16.30,Krylia Sovetov,Rubin Kazan,0,0,X,,2019-20_ru1.txt
+19.00,Spartak Moskva,Arsenal Tula,0,1,2,0-1,2019-20_ru1.txt
+19.30,Akhmat Grozny,FK Ural,0,0,X,,2019-20_ru1.txt
+14.00,Rubin Kazan,Dinamo Moskva,0,1,2,0-1,2019-20_ru1.txt
+16.30,FK Rostov,FK Tambov,1,2,2,1-0,2019-20_ru1.txt
+19.00,Spartak Moskva,Krylia Sovetov,2,0,1,1-0,2019-20_ru1.txt
+11.30,FK Orenburg,FK Ufa,0,0,X,,2019-20_ru1.txt
+14.00,Arsenal Tula,Zenit St. Petersburg,0,1,2,0-0,2019-20_ru1.txt
+16.30,FK Sochi,CSKA Moskva,2,3,2,2-1,2019-20_ru1.txt
+19.00,Lokomotiv Moskva,FK Krasnodar,1,1,X,1-1,2019-20_ru1.txt
+19.30,FK Tambov,Lokomotiv Moskva,2,3,2,1-2,2019-20_ru1.txt
+11.30,FK Orenburg,Akhmat Grozny,1,2,2,0-1,2019-20_ru1.txt
+14.00,Rubin Kazan,Zenit St. Petersburg,1,2,2,0-1,2019-20_ru1.txt
+16.30,Dinamo Moskva,FK Rostov,2,1,1,1-1,2019-20_ru1.txt
+11.30,FK Ufa,FK Sochi,1,1,X,0-1,2019-20_ru1.txt
+14.00,FK Ural,Spartak Moskva,0,0,X,,2019-20_ru1.txt
+16.30,Arsenal Tula,FK Krasnodar,1,2,2,1-2,2019-20_ru1.txt
+19.00,CSKA Moskva,Krylia Sovetov,1,0,1,0-0,2019-20_ru1.txt
+14.00,Krylia Sovetov,FK Ufa,0,1,2,0-1,2019-20_ru1.txt
+16.30,FK Rostov,FK Ural,0,0,X,,2019-20_ru1.txt
+19.00,Akhmat Grozny,Rubin Kazan,1,1,X,1-0,2019-20_ru1.txt
+16.30,Lokomotiv Moskva,Dinamo Moskva,1,2,2,1-1,2019-20_ru1.txt
+19.00,Zenit St. Petersburg,Spartak Moskva,1,0,1,1-0,2019-20_ru1.txt
+19.30,FK Krasnodar,FK Tambov,0,0,X,,2019-20_ru1.txt
+,CSKA Moskva,Arsenal Tula,0,1,2,0-0,2019-20_ru1.txt
+19.30,FK Sochi,FK Orenburg,5,1,1,2-0,2019-20_ru1.txt
+19.30,Zenit St. Petersburg,Dinamo Moskva,3,0,1,3-0,2019-20_ru1.txt
+,Arsenal Tula,Lokomotiv Moskva,4,0,1,0-0,2019-20_ru1.txt
+14.00,FK Tambov,FK Orenburg,3,0,1,0-0,2019-20_ru1.txt
+16.30,FK Krasnodar,CSKA Moskva,1,1,X,0-1,2019-20_ru1.txt
+19.00,Akhmat Grozny,FK Ufa,0,1,2,0-1,2019-20_ru1.txt
+14.00,Krylia Sovetov,FK Ural,2,3,2,1-1,2019-20_ru1.txt
+16.30,FK Sochi,Rubin Kazan,1,1,X,1-0,2019-20_ru1.txt
+19.00,Spartak Moskva,FK Rostov,1,4,2,0-1,2019-20_ru1.txt
+18.30,Krylia Sovetov,FK Orenburg,1,1,X,1-0,2019-20_ru1.txt
+14.00,CSKA Moskva,FK Ural,1,1,X,0-0,2019-20_ru1.txt
+16.30,Dinamo Moskva,Spartak Moskva,0,2,2,0-1,2019-20_ru1.txt
+19.00,Zenit St. Petersburg,Lokomotiv Moskva,0,0,X,,2019-20_ru1.txt
+,Akhmat Grozny,FK Rostov,1,1,X,0-1,2019-20_ru1.txt
+14.00,FK Tambov,Rubin Kazan,0,0,X,,2019-20_ru1.txt
+16.30,FK Krasnodar,FK Ufa,2,0,1,0-0,2019-20_ru1.txt
+19.00,FK Sochi,Arsenal Tula,1,2,2,0-1,2019-20_ru1.txt
+14.00,FK Orenburg,Arsenal Tula,2,0,1,1-0,2019-20_ru1.txt
+16.30,Dinamo Moskva,FK Tambov,1,0,1,1-0,2019-20_ru1.txt
+14.00,Rubin Kazan,Krylia Sovetov,0,1,2,0-1,2019-20_ru1.txt
+16.30,FK Sochi,FK Ural,2,0,1,1-0,2019-20_ru1.txt
+19.00,Lokomotiv Moskva,Akhmat Grozny,1,0,1,1-0,2019-20_ru1.txt
+14.00,FK Rostov,CSKA Moskva,3,2,1,1-1,2019-20_ru1.txt
+16.30,Spartak Moskva,FK Krasnodar,0,1,2,0-0,2019-20_ru1.txt
+19.00,Zenit St. Petersburg,FK Ufa,0,0,X,,2019-20_ru1.txt
+19.30,Akhmat Grozny,Dinamo Moskva,2,3,2,1-1,2019-20_ru1.txt
+14.00,FK Orenburg,Spartak Moskva,1,3,2,1-1,2019-20_ru1.txt
+16.30,Zenit St. Petersburg,FK Ural,7,1,1,4-0,2019-20_ru1.txt
+19.00,Arsenal Tula,Rubin Kazan,0,1,2,0-1,2019-20_ru1.txt
+14.00,FK Sochi,FK Krasnodar,2,0,1,0-0,2019-20_ru1.txt
+16.30,CSKA Moskva,FK Ufa,0,0,X,,2019-20_ru1.txt
+19.00,FK Rostov,Lokomotiv Moskva,1,3,2,0-3,2019-20_ru1.txt
+19.30,FK Tambov,Krylia Sovetov,3,0,1,1-0,2019-20_ru1.txt
+18.00,Krylia Sovetov,Akhmat Grozny,2,4,2,1-0,2019-20_ru1.txt
+20.00,FK Sochi,FK Rostov,10,1,1,4-1,2019-20_ru1.txt
+14.00,FK Ural,Rubin Kazan,1,2,2,1-1,2019-20_ru1.txt
+16.30,Arsenal Tula,Spartak Moskva,2,3,2,0-1,2019-20_ru1.txt
+19.00,CSKA Moskva,Zenit St. Petersburg,0,4,2,0-3,2019-20_ru1.txt
+15.00,FK Ufa,FK Tambov,2,1,1,1-0,2019-20_ru1.txt
+17.30,Lokomotiv Moskva,FK Orenburg,1,0,1,1-0,2019-20_ru1.txt
+20.30,FK Krasnodar,Dinamo Moskva,0,2,2,0-1,2019-20_ru1.txt
+18.00,Akhmat Grozny,FK Sochi,1,1,X,1-1,2019-20_ru1.txt
+20.30,Zenit St. Petersburg,Krylia Sovetov,2,1,1,0-1,2019-20_ru1.txt
+,FK Orenburg,FK Krasnodar,0,3,2,,2019-20_ru1.txt
+16.30,Spartak Moskva,FK Ufa,0,0,X,,2019-20_ru1.txt
+17.30,Rubin Kazan,Lokomotiv Moskva,0,2,2,0-2,2019-20_ru1.txt
+19.00,Dinamo Moskva,CSKA Moskva,0,0,X,,2019-20_ru1.txt
+20.00,FK Rostov,Arsenal Tula,2,1,1,2-0,2019-20_ru1.txt
+16.30,FK Ural,FK Tambov,2,1,1,1-0,2019-20_ru1.txt
+18.00,Lokomotiv Moskva,Krylia Sovetov,1,1,X,0-1,2019-20_ru1.txt
+20.30,CSKA Moskva,Spartak Moskva,2,0,1,1-0,2019-20_ru1.txt
+15.00,FK Ufa,Rubin Kazan,0,0,X,,2019-20_ru1.txt
+,FK Orenburg,FK Ural,0,3,2,,2019-20_ru1.txt
+17.30,FK Tambov,Zenit St. Petersburg,1,2,2,0-1,2019-20_ru1.txt
+,Arsenal Tula,Akhmat Grozny,1,3,2,0-2,2019-20_ru1.txt
+20.00,FK Rostov,FK Krasnodar,1,1,X,0-1,2019-20_ru1.txt
+,FK Sochi,Dinamo Moskva,1,1,X,0-0,2019-20_ru1.txt
+16.30,Dinamo Moskva,Arsenal Tula,0,1,2,0-1,2019-20_ru1.txt
+18.30,Spartak Moskva,FK Tambov,2,3,2,1-0,2019-20_ru1.txt
+,Krylia Sovetov,FK Rostov,0,0,X,,2019-20_ru1.txt
+20.30,Lokomotiv Moskva,FK Sochi,0,0,X,,2019-20_ru1.txt
+,Akhmat Grozny,CSKA Moskva,0,4,2,0-0,2019-20_ru1.txt
+16.30,FK Ufa,FK Ural,1,1,X,0-0,2019-20_ru1.txt
+18.30,Rubin Kazan,FK Orenburg,1,0,1,0-0,2019-20_ru1.txt
+20.30,FK Krasnodar,Zenit St. Petersburg,2,4,2,1-2,2019-20_ru1.txt
+18.30,FK Tambov,Akhmat Grozny,1,2,2,1-1,2019-20_ru1.txt
+20.30,Arsenal Tula,Krylia Sovetov,2,4,2,1-1,2019-20_ru1.txt
+18.00,Zenit St. Petersburg,FK Sochi,2,1,1,1-1,2019-20_ru1.txt
+,FK Orenburg,CSKA Moskva,0,4,2,0-1,2019-20_ru1.txt
+20.30,Spartak Moskva,Lokomotiv Moskva,1,1,X,1-1,2019-20_ru1.txt
+,FK Rostov,FK Ufa,1,2,2,1-0,2019-20_ru1.txt
+17.00,FK Ural,Dinamo Moskva,2,1,1,1-1,2019-20_ru1.txt
+20.30,Rubin Kazan,FK Krasnodar,1,0,1,0-0,2019-20_ru1.txt
+16.00,Arsenal Tula,FK Tambov,2,1,1,1-0,2019-20_ru1.txt
+18.30,Akhmat Grozny,Zenit St. Petersburg,1,1,X,1-1,2019-20_ru1.txt
+20.30,FK Sochi,Spartak Moskva,1,0,1,1-0,2019-20_ru1.txt
+16.30,Lokomotiv Moskva,FK Ufa,1,1,X,0-1,2019-20_ru1.txt
+18.30,CSKA Moskva,Rubin Kazan,1,1,X,0-0,2019-20_ru1.txt
+,Dinamo Moskva,Krylia Sovetov,2,0,1,2-0,2019-20_ru1.txt
+,FK Orenburg,FK Rostov,0,0,X,,2019-20_ru1.txt
+20.30,FK Krasnodar,FK Ural,3,0,1,1-0,2019-20_ru1.txt
+16.00,FK Ural,Arsenal Tula,1,3,2,1-1,2019-20_ru1.txt
+18.00,Spartak Moskva,Akhmat Grozny,3,0,1,0-0,2019-20_ru1.txt
+,Krylia Sovetov,FK Krasnodar,0,0,X,,2019-20_ru1.txt
+20.30,Zenit St. Petersburg,FK Orenburg,4,1,1,1-1,2019-20_ru1.txt
+,FK Tambov,FK Sochi,3,0,1,,2019-20_ru1.txt
+18.00,Rubin Kazan,FK Rostov,0,0,X,,2019-20_ru1.txt
+,FK Ufa,Dinamo Moskva,0,1,2,0-0,2019-20_ru1.txt
+20.30,Lokomotiv Moskva,CSKA Moskva,2,1,1,1-0,2019-20_ru1.txt
+19.00,FK Rostov,Zenit St. Petersburg,1,2,2,1-0,2019-20_ru1.txt
+,FK Krasnodar,Akhmat Grozny,4,0,1,1-0,2019-20_ru1.txt
+,CSKA Moskva,FK Tambov,2,0,1,1-0,2019-20_ru1.txt
+,Dinamo Moskva,FK Orenburg,0,1,2,0-1,2019-20_ru1.txt
+,Rubin Kazan,Spartak Moskva,1,2,2,1-1,2019-20_ru1.txt
+,Krylia Sovetov,FK Sochi,3,0,1,,2019-20_ru1.txt
+,FK Ufa,Arsenal Tula,0,0,X,,2019-20_ru1.txt
+,FK Ural,Lokomotiv Moskva,0,1,2,0-1,2019-20_ru1.txt
+20.00,Arsenal Tula,Dinamo Moskva,1,1,X,0-1,2019-20_ru2.txt
+16.30,FK Ural,FK Ufa,3,2,1,1-0,2019-20_ru2.txt
+19.00,Spartak Moskva,FK Sochi,1,0,1,0-0,2019-20_ru2.txt
+21.30,FK Rostov,FK Orenburg,2,1,1,2-0,2019-20_ru2.txt
+16.30,Krylia Sovetov,CSKA Moskva,2,0,1,0-0,2019-20_ru2.txt
+19.00,Zenit St. Petersburg,FK Tambov,2,1,1,0-0,2019-20_ru2.txt
+21.30,Akhmat Grozny,FK Krasnodar,1,0,1,1-0,2019-20_ru2.txt
+20.00,Lokomotiv Moskva,Rubin Kazan,1,1,X,0-0,2019-20_ru2.txt
+14.00,FK Ufa,FK Krasnodar,2,3,2,2-0,2019-20_ru2.txt
+16.30,Krylia Sovetov,Arsenal Tula,2,3,2,1-2,2019-20_ru2.txt
+19.00,CSKA Moskva,FK Orenburg,2,1,1,2-1,2019-20_ru2.txt
+21.30,FK Rostov,Spartak Moskva,2,2,X,1-1,2019-20_ru2.txt
+14.00,FK Ural,Akhmat Grozny,3,0,1,1-0,2019-20_ru2.txt
+16.30,Lokomotiv Moskva,FK Tambov,2,1,1,2-1,2019-20_ru2.txt
+19.00,Dinamo Moskva,Rubin Kazan,0,1,2,0-0,2019-20_ru2.txt
+21.30,FK Sochi,Zenit St. Petersburg,0,2,2,0-1,2019-20_ru2.txt
+20.00,Dinamo Moskva,FK Ural,2,0,1,2-0,2019-20_ru2.txt
+14.00,FK Ufa,Krylia Sovetov,2,1,1,2-1,2019-20_ru2.txt
+16.30,FK Tambov,Spartak Moskva,2,0,1,1-0,2019-20_ru2.txt
+19.00,FK Krasnodar,FK Sochi,3,0,1,2-0,2019-20_ru2.txt
+14.00,FK Orenburg,Zenit St. Petersburg,0,2,2,0-1,2019-20_ru2.txt
+16.30,Arsenal Tula,FK Rostov,2,3,2,0-1,2019-20_ru2.txt
+19.00,CSKA Moskva,Lokomotiv Moskva,1,0,1,1-0,2019-20_ru2.txt
+20.00,Rubin Kazan,Akhmat Grozny,1,0,1,0-0,2019-20_ru2.txt
+14.00,FK Ural,FK Rostov,2,2,X,1-0,2019-20_ru2.txt
+16.30,Krylia Sovetov,Lokomotiv Moskva,1,2,2,0-1,2019-20_ru2.txt
+19.00,Spartak Moskva,Dinamo Moskva,0,0,X,,2019-20_ru2.txt
+21.30,Zenit St. Petersburg,FK Krasnodar,1,1,X,0-0,2019-20_ru2.txt
+16.30,FK Tambov,Arsenal Tula,0,1,2,0-1,2019-20_ru2.txt
+19.00,Rubin Kazan,CSKA Moskva,0,1,2,0-1,2019-20_ru2.txt
+21.30,FK Sochi,FK Ufa,0,0,X,,2019-20_ru2.txt
+20.00,Akhmat Grozny,FK Orenburg,2,1,1,0-0,2019-20_ru2.txt
+14.00,FK Orenburg,FK Tambov,2,2,X,0-1,2019-20_ru2.txt
+19.00,FK Krasnodar,Rubin Kazan,1,0,1,1-0,2019-20_ru2.txt
+,Dinamo Moskva,Zenit St. Petersburg,0,2,2,0-1,2019-20_ru2.txt
+14.00,Arsenal Tula,FK Ufa,1,0,1,1-0,2019-20_ru2.txt
+16.30,Lokomotiv Moskva,FK Ural,4,0,1,2-0,2019-20_ru2.txt
+19.00,CSKA Moskva,FK Sochi,0,0,X,,2019-20_ru2.txt
+21.30,Akhmat Grozny,Spartak Moskva,1,3,2,0-2,2019-20_ru2.txt
+20.00,FK Rostov,Krylia Sovetov,1,0,1,1-0,2019-20_ru2.txt
+18.00,FK Orenburg,FK Sochi,1,1,X,0-0,2019-20_ru2.txt
+14.00,FK Ural,Krylia Sovetov,1,3,2,0-1,2019-20_ru2.txt
+16.30,FK Tambov,FK Krasnodar,0,2,2,0-1,2019-20_ru2.txt
+19.00,Zenit St. Petersburg,Akhmat Grozny,0,0,X,,2019-20_ru2.txt
+14.00,Rubin Kazan,Arsenal Tula,1,0,1,0-0,2019-20_ru2.txt
+16.30,FK Ufa,FK Rostov,2,0,1,1-0,2019-20_ru2.txt
+19.00,Dinamo Moskva,Lokomotiv Moskva,1,2,2,1-1,2019-20_ru2.txt
+20.00,Spartak Moskva,CSKA Moskva,2,1,1,0-0,2019-20_ru2.txt
+14.00,FK Tambov,Dinamo Moskva,0,2,2,0-1,2019-20_ru2.txt
+16.30,FK Ufa,Zenit St. Petersburg,1,0,1,0-0,2019-20_ru2.txt
+19.00,FK Krasnodar,Lokomotiv Moskva,1,1,X,1-1,2019-20_ru2.txt
+16.30,CSKA Moskva,Akhmat Grozny,3,0,1,1-0,2019-20_ru2.txt
+19.00,FK Rostov,Rubin Kazan,2,1,1,1-1,2019-20_ru2.txt
+,Krylia Sovetov,Spartak Moskva,1,2,2,1-0,2019-20_ru2.txt
+21.30,Arsenal Tula,FK Orenburg,2,1,1,1-0,2019-20_ru2.txt
+18.00,FK Ural,FK Sochi,3,1,1,1-1,2019-20_ru2.txt
+20.00,Krylia Sovetov,Dinamo Moskva,0,0,X,,2019-20_ru2.txt
+11.30,FK Ufa,FK Orenburg,1,2,2,0-1,2019-20_ru2.txt
+14.00,Rubin Kazan,FK Sochi,0,3,2,0-1,2019-20_ru2.txt
+16.30,Lokomotiv Moskva,FK Rostov,1,2,2,0-1,2019-20_ru2.txt
+19.00,Akhmat Grozny,FK Tambov,1,1,X,0-1,2019-20_ru2.txt
+14.00,FK Ural,FK Krasnodar,2,4,2,1-2,2019-20_ru2.txt
+16.30,Arsenal Tula,CSKA Moskva,1,2,2,1-1,2019-20_ru2.txt
+19.00,Spartak Moskva,Zenit St. Petersburg,0,1,2,0-1,2019-20_ru2.txt
+20.00,Zenit St. Petersburg,Arsenal Tula,3,1,1,1-0,2019-20_ru2.txt
+16.30,Spartak Moskva,FK Ural,1,2,2,1-0,2019-20_ru2.txt
+19.00,FK Sochi,Lokomotiv Moskva,0,1,2,0-1,2019-20_ru2.txt
+14.00,FK Orenburg,Rubin Kazan,2,1,1,0-0,2019-20_ru2.txt
+16.30,FK Tambov,CSKA Moskva,0,2,2,0-0,2019-20_ru2.txt
+19.00,FK Krasnodar,Krylia Sovetov,4,2,1,1-1,2019-20_ru2.txt
+20.00,Dinamo Moskva,FK Ufa,0,0,X,,2019-20_ru2.txt
+20.30,FK Rostov,Akhmat Grozny,2,1,1,0-1,2019-20_ru2.txt
+17.30,FK Ufa,Spartak Moskva,1,0,1,1-0,2019-20_ru2.txt
+14.00,Akhmat Grozny,Krylia Sovetov,1,1,X,1-0,2019-20_ru2.txt
+19.00,Zenit St. Petersburg,Rubin Kazan,5,0,1,0-0,2019-20_ru2.txt
+,FK Tambov,FK Rostov,2,1,1,1-1,2019-20_ru2.txt
+11.30,FK Orenburg,Lokomotiv Moskva,2,3,2,0-1,2019-20_ru2.txt
+14.00,Dinamo Moskva,FK Sochi,2,3,2,0-1,2019-20_ru2.txt
+16.30,Arsenal Tula,FK Ural,1,1,X,1-0,2019-20_ru2.txt
+19.00,CSKA Moskva,FK Krasnodar,3,2,1,3-0,2019-20_ru2.txt
+14.00,Krylia Sovetov,FK Tambov,2,0,1,0-0,2019-20_ru2.txt
+16.30,FK Rostov,Dinamo Moskva,3,0,1,2-0,2019-20_ru2.txt
+19.00,Lokomotiv Moskva,Zenit St. Petersburg,1,0,1,0-0,2019-20_ru2.txt
+11.30,FK Ural,CSKA Moskva,0,3,2,0-1,2019-20_ru2.txt
+14.00,Rubin Kazan,FK Ufa,0,0,X,,2019-20_ru2.txt
+16.30,Spartak Moskva,FK Orenburg,1,2,2,0-1,2019-20_ru2.txt
+19.00,FK Krasnodar,Arsenal Tula,2,0,1,1-0,2019-20_ru2.txt
+19.30,FK Sochi,Akhmat Grozny,2,0,1,1-0,2019-20_ru2.txt
+11.30,FK Ufa,Akhmat Grozny,0,1,2,0-1,2019-20_ru2.txt
+14.00,FK Orenburg,Dinamo Moskva,2,0,1,0-0,2019-20_ru2.txt
+16.30,Rubin Kazan,FK Tambov,2,1,1,2-0,2019-20_ru2.txt
+19.00,FK Sochi,Krylia Sovetov,0,2,2,0-1,2019-20_ru2.txt
+11.30,FK Ural,Zenit St. Petersburg,1,3,2,0-2,2019-20_ru2.txt
+14.00,Lokomotiv Moskva,Arsenal Tula,2,1,1,2-1,2019-20_ru2.txt
+16.30,CSKA Moskva,FK Rostov,1,3,2,0-2,2019-20_ru2.txt
+19.00,FK Krasnodar,Spartak Moskva,2,1,1,2-1,2019-20_ru2.txt
+19.30,Akhmat Grozny,Lokomotiv Moskva,0,2,2,0-1,2019-20_ru2.txt
+14.00,FK Tambov,FK Ural,1,2,2,0-0,2019-20_ru2.txt
+16.30,Spartak Moskva,Rubin Kazan,0,0,X,,2019-20_ru2.txt
+19.00,Zenit St. Petersburg,FK Rostov,6,1,1,3-0,2019-20_ru2.txt
+11.30,FK Orenburg,Krylia Sovetov,0,1,2,0-1,2019-20_ru2.txt
+14.00,FK Ufa,CSKA Moskva,1,1,X,0-1,2019-20_ru2.txt
+16.30,Arsenal Tula,FK Sochi,1,1,X,1-1,2019-20_ru2.txt
+19.00,Dinamo Moskva,FK Krasnodar,1,1,X,1-1,2019-20_ru2.txt
+19.30,Rubin Kazan,FK Ural,0,0,X,,2019-20_ru2.txt
+14.00,FK Tambov,FK Ufa,3,0,1,1-0,2019-20_ru2.txt
+16.30,Akhmat Grozny,Arsenal Tula,1,1,X,1-0,2019-20_ru2.txt
+19.00,FK Rostov,FK Sochi,2,0,1,1-0,2019-20_ru2.txt
+14.00,Krylia Sovetov,Zenit St. Petersburg,0,2,2,0-1,2019-20_ru2.txt
+16.30,CSKA Moskva,Dinamo Moskva,0,1,2,0-0,2019-20_ru2.txt
+,Lokomotiv Moskva,Spartak Moskva,0,3,2,0-0,2019-20_ru2.txt
+19.00,FK Krasnodar,FK Orenburg,1,1,X,1-1,2019-20_ru2.txt
+14.00,Dinamo Moskva,Akhmat Grozny,1,1,X,0-1,2019-20_ru2.txt
+,FK Ufa,Lokomotiv Moskva,1,1,X,0-0,2019-20_ru2.txt
+16.30,FK Sochi,FK Tambov,1,2,2,1-1,2019-20_ru2.txt
+19.00,Zenit St. Petersburg,CSKA Moskva,1,1,X,0-1,2019-20_ru2.txt
+16.30,FK Krasnodar,FK Rostov,2,2,X,0-2,2019-20_ru2.txt
+14.00,FK Ural,FK Orenburg,1,2,2,0-2,2019-20_ru2.txt
+16.30,Krylia Sovetov,Rubin Kazan,0,0,X,,2019-20_ru2.txt
+19.00,Spartak Moskva,Arsenal Tula,0,1,2,0-1,2019-20_ru2.txt
+19.30,Akhmat Grozny,FK Ural,0,0,X,,2019-20_ru2.txt
+14.00,Rubin Kazan,Dinamo Moskva,0,1,2,0-1,2019-20_ru2.txt
+16.30,FK Rostov,FK Tambov,1,2,2,1-0,2019-20_ru2.txt
+19.00,Spartak Moskva,Krylia Sovetov,2,0,1,1-0,2019-20_ru2.txt
+11.30,FK Orenburg,FK Ufa,0,0,X,,2019-20_ru2.txt
+14.00,Arsenal Tula,Zenit St. Petersburg,0,1,2,0-0,2019-20_ru2.txt
+16.30,FK Sochi,CSKA Moskva,2,3,2,2-1,2019-20_ru2.txt
+19.00,Lokomotiv Moskva,FK Krasnodar,1,1,X,1-1,2019-20_ru2.txt
+19.30,FK Tambov,Lokomotiv Moskva,2,3,2,1-2,2019-20_ru2.txt
+11.30,FK Orenburg,Akhmat Grozny,1,2,2,0-1,2019-20_ru2.txt
+14.00,Rubin Kazan,Zenit St. Petersburg,1,2,2,0-1,2019-20_ru2.txt
+16.30,Dinamo Moskva,FK Rostov,2,1,1,1-1,2019-20_ru2.txt
+11.30,FK Ufa,FK Sochi,1,1,X,0-1,2019-20_ru2.txt
+14.00,FK Ural,Spartak Moskva,0,0,X,,2019-20_ru2.txt
+16.30,Arsenal Tula,FK Krasnodar,1,2,2,1-2,2019-20_ru2.txt
+19.00,CSKA Moskva,Krylia Sovetov,1,0,1,0-0,2019-20_ru2.txt
+14.00,Krylia Sovetov,FK Ufa,0,1,2,0-1,2019-20_ru2.txt
+16.30,FK Rostov,FK Ural,0,0,X,,2019-20_ru2.txt
+19.00,Akhmat Grozny,Rubin Kazan,1,1,X,1-0,2019-20_ru2.txt
+16.30,Lokomotiv Moskva,Dinamo Moskva,1,2,2,1-1,2019-20_ru2.txt
+19.00,Zenit St. Petersburg,Spartak Moskva,1,0,1,1-0,2019-20_ru2.txt
+19.30,FK Krasnodar,FK Tambov,0,0,X,,2019-20_ru2.txt
+,CSKA Moskva,Arsenal Tula,0,1,2,0-0,2019-20_ru2.txt
+19.30,FK Sochi,FK Orenburg,5,1,1,2-0,2019-20_ru2.txt
+19.30,Zenit St. Petersburg,Dinamo Moskva,3,0,1,3-0,2019-20_ru2.txt
+,Arsenal Tula,Lokomotiv Moskva,4,0,1,0-0,2019-20_ru2.txt
+14.00,FK Tambov,FK Orenburg,3,0,1,0-0,2019-20_ru2.txt
+16.30,FK Krasnodar,CSKA Moskva,1,1,X,0-1,2019-20_ru2.txt
+19.00,Akhmat Grozny,FK Ufa,0,1,2,0-1,2019-20_ru2.txt
+14.00,Krylia Sovetov,FK Ural,2,3,2,1-1,2019-20_ru2.txt
+16.30,FK Sochi,Rubin Kazan,1,1,X,1-0,2019-20_ru2.txt
+19.00,Spartak Moskva,FK Rostov,1,4,2,0-1,2019-20_ru2.txt
+18.30,Krylia Sovetov,FK Orenburg,1,1,X,1-0,2019-20_ru2.txt
+14.00,CSKA Moskva,FK Ural,1,1,X,0-0,2019-20_ru2.txt
+16.30,Dinamo Moskva,Spartak Moskva,0,2,2,0-1,2019-20_ru2.txt
+19.00,Zenit St. Petersburg,Lokomotiv Moskva,0,0,X,,2019-20_ru2.txt
+,Akhmat Grozny,FK Rostov,1,1,X,0-1,2019-20_ru2.txt
+14.00,FK Tambov,Rubin Kazan,0,0,X,,2019-20_ru2.txt
+16.30,FK Krasnodar,FK Ufa,2,0,1,0-0,2019-20_ru2.txt
+19.00,FK Sochi,Arsenal Tula,1,2,2,0-1,2019-20_ru2.txt
+14.00,FK Orenburg,Arsenal Tula,2,0,1,1-0,2019-20_ru2.txt
+16.30,Dinamo Moskva,FK Tambov,1,0,1,1-0,2019-20_ru2.txt
+14.00,Rubin Kazan,Krylia Sovetov,0,1,2,0-1,2019-20_ru2.txt
+16.30,FK Sochi,FK Ural,2,0,1,1-0,2019-20_ru2.txt
+19.00,Lokomotiv Moskva,Akhmat Grozny,1,0,1,1-0,2019-20_ru2.txt
+14.00,FK Rostov,CSKA Moskva,3,2,1,1-1,2019-20_ru2.txt
+16.30,Spartak Moskva,FK Krasnodar,0,1,2,0-0,2019-20_ru2.txt
+19.00,Zenit St. Petersburg,FK Ufa,0,0,X,,2019-20_ru2.txt
+19.30,Akhmat Grozny,Dinamo Moskva,2,3,2,1-1,2019-20_ru2.txt
+14.00,FK Orenburg,Spartak Moskva,1,3,2,1-1,2019-20_ru2.txt
+16.30,Zenit St. Petersburg,FK Ural,7,1,1,4-0,2019-20_ru2.txt
+19.00,Arsenal Tula,Rubin Kazan,0,1,2,0-1,2019-20_ru2.txt
+14.00,FK Sochi,FK Krasnodar,2,0,1,0-0,2019-20_ru2.txt
+16.30,CSKA Moskva,FK Ufa,0,0,X,,2019-20_ru2.txt
+19.00,FK Rostov,Lokomotiv Moskva,1,3,2,0-3,2019-20_ru2.txt
+19.30,FK Tambov,Krylia Sovetov,3,0,1,1-0,2019-20_ru2.txt
+18.00,Krylia Sovetov,Akhmat Grozny,2,4,2,1-0,2019-20_ru2.txt
+20.00,FK Sochi,FK Rostov,10,1,1,4-1,2019-20_ru2.txt
+14.00,FK Ural,Rubin Kazan,1,2,2,1-1,2019-20_ru2.txt
+16.30,Arsenal Tula,Spartak Moskva,2,3,2,0-1,2019-20_ru2.txt
+19.00,CSKA Moskva,Zenit St. Petersburg,0,4,2,0-3,2019-20_ru2.txt
+15.00,FK Ufa,FK Tambov,2,1,1,1-0,2019-20_ru2.txt
+17.30,Lokomotiv Moskva,FK Orenburg,1,0,1,1-0,2019-20_ru2.txt
+20.30,FK Krasnodar,Dinamo Moskva,0,2,2,0-1,2019-20_ru2.txt
+18.00,Akhmat Grozny,FK Sochi,1,1,X,1-1,2019-20_ru2.txt
+20.30,Zenit St. Petersburg,Krylia Sovetov,2,1,1,0-1,2019-20_ru2.txt
+,FK Orenburg,FK Krasnodar,0,3,2,,2019-20_ru2.txt
+16.30,Spartak Moskva,FK Ufa,0,0,X,,2019-20_ru2.txt
+17.30,Rubin Kazan,Lokomotiv Moskva,0,2,2,0-2,2019-20_ru2.txt
+19.00,Dinamo Moskva,CSKA Moskva,0,0,X,,2019-20_ru2.txt
+20.00,FK Rostov,Arsenal Tula,2,1,1,2-0,2019-20_ru2.txt
+16.30,FK Ural,FK Tambov,2,1,1,1-0,2019-20_ru2.txt
+18.00,Lokomotiv Moskva,Krylia Sovetov,1,1,X,0-1,2019-20_ru2.txt
+20.30,CSKA Moskva,Spartak Moskva,2,0,1,1-0,2019-20_ru2.txt
+15.00,FK Ufa,Rubin Kazan,0,0,X,,2019-20_ru2.txt
+,FK Orenburg,FK Ural,0,3,2,,2019-20_ru2.txt
+17.30,FK Tambov,Zenit St. Petersburg,1,2,2,0-1,2019-20_ru2.txt
+,Arsenal Tula,Akhmat Grozny,1,3,2,0-2,2019-20_ru2.txt
+20.00,FK Rostov,FK Krasnodar,1,1,X,0-1,2019-20_ru2.txt
+,FK Sochi,Dinamo Moskva,1,1,X,0-0,2019-20_ru2.txt
+16.30,Dinamo Moskva,Arsenal Tula,0,1,2,0-1,2019-20_ru2.txt
+18.30,Spartak Moskva,FK Tambov,2,3,2,1-0,2019-20_ru2.txt
+,Krylia Sovetov,FK Rostov,0,0,X,,2019-20_ru2.txt
+20.30,Lokomotiv Moskva,FK Sochi,0,0,X,,2019-20_ru2.txt
+,Akhmat Grozny,CSKA Moskva,0,4,2,0-0,2019-20_ru2.txt
+16.30,FK Ufa,FK Ural,1,1,X,0-0,2019-20_ru2.txt
+18.30,Rubin Kazan,FK Orenburg,1,0,1,0-0,2019-20_ru2.txt
+20.30,FK Krasnodar,Zenit St. Petersburg,2,4,2,1-2,2019-20_ru2.txt
+18.30,FK Tambov,Akhmat Grozny,1,2,2,1-1,2019-20_ru2.txt
+20.30,Arsenal Tula,Krylia Sovetov,2,4,2,1-1,2019-20_ru2.txt
+18.00,Zenit St. Petersburg,FK Sochi,2,1,1,1-1,2019-20_ru2.txt
+,FK Orenburg,CSKA Moskva,0,4,2,0-1,2019-20_ru2.txt
+20.30,Spartak Moskva,Lokomotiv Moskva,1,1,X,1-1,2019-20_ru2.txt
+,FK Rostov,FK Ufa,1,2,2,1-0,2019-20_ru2.txt
+17.00,FK Ural,Dinamo Moskva,2,1,1,1-1,2019-20_ru2.txt
+20.30,Rubin Kazan,FK Krasnodar,1,0,1,0-0,2019-20_ru2.txt
+16.00,Arsenal Tula,FK Tambov,2,1,1,1-0,2019-20_ru2.txt
+18.30,Akhmat Grozny,Zenit St. Petersburg,1,1,X,1-1,2019-20_ru2.txt
+20.30,FK Sochi,Spartak Moskva,1,0,1,1-0,2019-20_ru2.txt
+16.30,Lokomotiv Moskva,FK Ufa,1,1,X,0-1,2019-20_ru2.txt
+18.30,CSKA Moskva,Rubin Kazan,1,1,X,0-0,2019-20_ru2.txt
+,Dinamo Moskva,Krylia Sovetov,2,0,1,2-0,2019-20_ru2.txt
+,FK Orenburg,FK Rostov,0,0,X,,2019-20_ru2.txt
+20.30,FK Krasnodar,FK Ural,3,0,1,1-0,2019-20_ru2.txt
+16.00,FK Ural,Arsenal Tula,1,3,2,1-1,2019-20_ru2.txt
+18.00,Spartak Moskva,Akhmat Grozny,3,0,1,0-0,2019-20_ru2.txt
+,Krylia Sovetov,FK Krasnodar,0,0,X,,2019-20_ru2.txt
+20.30,Zenit St. Petersburg,FK Orenburg,4,1,1,1-1,2019-20_ru2.txt
+,FK Tambov,FK Sochi,3,0,1,,2019-20_ru2.txt
+18.00,Rubin Kazan,FK Rostov,0,0,X,,2019-20_ru2.txt
+,FK Ufa,Dinamo Moskva,0,1,2,0-0,2019-20_ru2.txt
+20.30,Lokomotiv Moskva,CSKA Moskva,2,1,1,1-0,2019-20_ru2.txt
+19.00,FK Rostov,Zenit St. Petersburg,1,2,2,1-0,2019-20_ru2.txt
+,FK Krasnodar,Akhmat Grozny,4,0,1,1-0,2019-20_ru2.txt
+,CSKA Moskva,FK Tambov,2,0,1,1-0,2019-20_ru2.txt
+,Dinamo Moskva,FK Orenburg,0,1,2,0-1,2019-20_ru2.txt
+,Rubin Kazan,Spartak Moskva,1,2,2,1-1,2019-20_ru2.txt
+,Krylia Sovetov,FK Sochi,3,0,1,,2019-20_ru2.txt
+,FK Ufa,Arsenal Tula,0,0,X,,2019-20_ru2.txt
+,FK Ural,Lokomotiv Moskva,0,1,2,0-1,2019-20_ru2.txt
+16.00,FK Khimki,CSKA Moskva,0,2,2,0-2,2020-21_ru1.txt
+18.30,FK Tambov,FK Rostov,0,1,2,0-1,2020-21_ru1.txt
+17.00,FK Ufa,FK Krasnodar,0,3,2,0-0,2020-21_ru1.txt
+19.00,Arsenal Tula,Akhmat Grozny,0,0,X,,2020-21_ru1.txt
+20.00,Spartak Moskva,FK Sochi,2,2,X,2-1,2020-21_ru1.txt
+17.00,FK Ural,Dinamo Moskva,0,2,2,0-1,2020-21_ru1.txt
+18.00,Rotor Volgograd,Zenit St. Petersburg,0,2,2,0-1,2020-21_ru1.txt
+20.00,Rubin Kazan,Lokomotiv Moskva,0,2,2,0-2,2020-21_ru1.txt
+18.00,Arsenal Tula,FK Ufa,2,3,2,1-1,2020-21_ru1.txt
+19.00,FK Sochi,FK Khimki,1,1,X,0-1,2020-21_ru1.txt
+20.00,Spartak Moskva,Akhmat Grozny,2,0,1,0-0,2020-21_ru1.txt
+15.30,Dinamo Moskva,Rotor Volgograd,0,0,X,,2020-21_ru1.txt
+,Rubin Kazan,FK Ural,1,1,X,1-1,2020-21_ru1.txt
+18.00,CSKA Moskva,FK Tambov,2,1,1,1-1,2020-21_ru1.txt
+19.00,Lokomotiv Moskva,FK Krasnodar,1,0,1,1-0,2020-21_ru1.txt
+20.00,FK Rostov,Zenit St. Petersburg,0,2,2,0-1,2020-21_ru1.txt
+18.00,FK Sochi,Rubin Kazan,3,2,1,1-0,2020-21_ru1.txt
+19.00,FK Tambov,FK Khimki,1,0,1,1-0,2020-21_ru1.txt
+20.00,FK Krasnodar,Arsenal Tula,2,0,1,1-0,2020-21_ru1.txt
+16.00,FK Ufa,Spartak Moskva,1,1,X,1-1,2020-21_ru1.txt
+,FK Ural,Lokomotiv Moskva,1,1,X,0-0,2020-21_ru1.txt
+18.00,Akhmat Grozny,Rotor Volgograd,3,1,1,0-0,2020-21_ru1.txt
+19.00,Dinamo Moskva,FK Rostov,2,0,1,2-0,2020-21_ru1.txt
+20.00,Zenit St. Petersburg,CSKA Moskva,2,1,1,1-1,2020-21_ru1.txt
+14.00,FK Ural,FK Krasnodar,1,0,1,1-0,2020-21_ru1.txt
+16.00,FK Khimki,Akhmat Grozny,1,2,2,1-0,2020-21_ru1.txt
+17.30,Arsenal Tula,Dinamo Moskva,2,0,1,1-0,2020-21_ru1.txt
+18.00,Zenit St. Petersburg,FK Tambov,4,1,1,1-0,2020-21_ru1.txt
+20.00,Rotor Volgograd,FK Sochi,1,2,2,0-1,2020-21_ru1.txt
+,CSKA Moskva,Rubin Kazan,1,2,2,1-1,2020-21_ru1.txt
+16.30,FK Ufa,FK Rostov,0,1,2,0-0,2020-21_ru1.txt
+19.00,Spartak Moskva,Lokomotiv Moskva,2,1,1,0-1,2020-21_ru1.txt
+18.30,FK Tambov,FK Sochi,0,1,2,0-0,2020-21_ru1.txt
+20.30,Arsenal Tula,FK Khimki,1,1,X,0-1,2020-21_ru1.txt
+18.30,Lokomotiv Moskva,Akhmat Grozny,2,3,2,0-2,2020-21_ru1.txt
+,Rotor Volgograd,Spartak Moskva,0,1,2,0-0,2020-21_ru1.txt
+,Rubin Kazan,FK Ufa,3,0,1,0-0,2020-21_ru1.txt
+20.30,FK Krasnodar,CSKA Moskva,1,1,X,0-1,2020-21_ru1.txt
+,FK Rostov,FK Ural,1,0,1,0-0,2020-21_ru1.txt
+20.45,Dinamo Moskva,Zenit St. Petersburg,1,0,1,1-0,2020-21_ru1.txt
+18.00,Spartak Moskva,Arsenal Tula,2,1,1,2-1,2020-21_ru1.txt
+20.00,FK Khimki,Rotor Volgograd,1,1,X,0-1,2020-21_ru1.txt
+14.00,FK Ufa,Dinamo Moskva,1,1,X,0-1,2020-21_ru1.txt
+16.00,Lokomotiv Moskva,Zenit St. Petersburg,0,0,X,,2020-21_ru1.txt
+18.00,Akhmat Grozny,CSKA Moskva,0,3,2,0-1,2020-21_ru1.txt
+,Rubin Kazan,FK Tambov,2,2,X,1-1,2020-21_ru1.txt
+20.00,FK Krasnodar,FK Rostov,1,1,X,0-0,2020-21_ru1.txt
+,FK Sochi,FK Ural,0,0,X,,2020-21_ru1.txt
+13.45,FK Tambov,FK Ufa,2,0,1,1-0,2020-21_ru1.txt
+16.30,FK Ural,FK Khimki,3,1,1,2-0,2020-21_ru1.txt
+19.00,Akhmat Grozny,FK Sochi,0,1,2,0-1,2020-21_ru1.txt
+,Rotor Volgograd,FK Krasnodar,0,3,2,,2020-21_ru1.txt
+16.30,Dinamo Moskva,Rubin Kazan,0,1,2,0-1,2020-21_ru1.txt
+19.00,CSKA Moskva,Spartak Moskva,3,1,1,2-1,2020-21_ru1.txt
+18.30,Zenit St. Petersburg,Arsenal Tula,3,1,1,2-0,2020-21_ru1.txt
+20.30,FK Rostov,Lokomotiv Moskva,0,0,X,,2020-21_ru1.txt
+20.00,FK Krasnodar,FK Khimki,7,2,1,3-2,2020-21_ru1.txt
+,FK Rostov,Rotor Volgograd,3,0,1,,2020-21_ru1.txt
+16.30,FK Ural,Zenit St. Petersburg,1,1,X,0-1,2020-21_ru1.txt
+14.00,Arsenal Tula,FK Sochi,3,2,1,2-1,2020-21_ru1.txt
+,FK Ufa,CSKA Moskva,0,1,2,0-0,2020-21_ru1.txt
+16.30,Rubin Kazan,Spartak Moskva,0,2,2,0-2,2020-21_ru1.txt
+19.00,Lokomotiv Moskva,FK Tambov,1,0,1,1-0,2020-21_ru1.txt
+19.00,Dinamo Moskva,Akhmat Grozny,1,0,1,0-0,2020-21_ru1.txt
+14.00,FK Tambov,Spartak Moskva,0,2,2,0-0,2020-21_ru1.txt
+16.30,Zenit St. Petersburg,FK Ufa,6,0,1,2-0,2020-21_ru1.txt
+20.00,FK Sochi,FK Krasnodar,1,1,X,1-0,2020-21_ru1.txt
+14.00,Arsenal Tula,FK Rostov,2,3,2,1-3,2020-21_ru1.txt
+16.30,Akhmat Grozny,FK Ural,2,0,1,1-0,2020-21_ru1.txt
+19.00,Rotor Volgograd,Rubin Kazan,1,3,2,0-1,2020-21_ru1.txt
+,CSKA Moskva,Lokomotiv Moskva,0,1,2,0-1,2020-21_ru1.txt
+19.00,FK Khimki,Dinamo Moskva,1,0,1,1-0,2020-21_ru1.txt
+14.00,FK Ufa,Rotor Volgograd,0,0,X,,2020-21_ru1.txt
+16.30,FK Tambov,Arsenal Tula,1,1,X,0-1,2020-21_ru1.txt
+,FK Ural,CSKA Moskva,0,2,2,0-0,2020-21_ru1.txt
+19.00,Spartak Moskva,Zenit St. Petersburg,1,1,X,0-0,2020-21_ru1.txt
+14.00,Lokomotiv Moskva,FK Khimki,2,1,1,1-0,2020-21_ru1.txt
+16.30,Rubin Kazan,Akhmat Grozny,1,1,X,0-0,2020-21_ru1.txt
+,FK Sochi,FK Rostov,4,2,1,1-0,2020-21_ru1.txt
+20.00,Dinamo Moskva,FK Krasnodar,2,0,1,1-0,2020-21_ru1.txt
+14.00,Zenit St. Petersburg,FK Sochi,3,1,1,2-0,2020-21_ru1.txt
+16.30,FK Krasnodar,Rubin Kazan,3,1,1,1-0,2020-21_ru1.txt
+,Lokomotiv Moskva,FK Ufa,1,0,1,0-0,2020-21_ru1.txt
+19.00,FK Khimki,Spartak Moskva,2,3,2,0-0,2020-21_ru1.txt
+14.00,Arsenal Tula,FK Ural,1,0,1,1-0,2020-21_ru1.txt
+,Rotor Volgograd,FK Tambov,0,2,2,0-0,2020-21_ru1.txt
+16.30,CSKA Moskva,Dinamo Moskva,3,1,1,0-0,2020-21_ru1.txt
+19.00,FK Rostov,Akhmat Grozny,3,0,1,1-0,2020-21_ru1.txt
+14.00,Dinamo Moskva,FK Sochi,3,1,1,2-1,2020-21_ru1.txt
+16.30,Zenit St. Petersburg,Rubin Kazan,1,2,2,1-1,2020-21_ru1.txt
+19.00,FK Krasnodar,Spartak Moskva,1,3,2,0-2,2020-21_ru1.txt
+,Lokomotiv Moskva,Rotor Volgograd,1,2,2,1-1,2020-21_ru1.txt
+14.00,FK Ural,FK Tambov,0,0,X,,2020-21_ru1.txt
+16.30,FK Rostov,FK Khimki,0,2,2,0-0,2020-21_ru1.txt
+19.00,Akhmat Grozny,FK Ufa,3,1,1,1-0,2020-21_ru1.txt
+19.00,CSKA Moskva,Arsenal Tula,5,1,1,1-0,2020-21_ru1.txt
+14.00,Rubin Kazan,Arsenal Tula,3,1,1,2-0,2020-21_ru1.txt
+16.30,Akhmat Grozny,FK Krasnodar,2,0,1,0-0,2020-21_ru1.txt
+,Spartak Moskva,FK Rostov,0,1,2,0-1,2020-21_ru1.txt
+19.00,FK Sochi,Lokomotiv Moskva,2,1,1,2-0,2020-21_ru1.txt
+12.00,FK Ufa,FK Ural,1,2,2,0-2,2020-21_ru1.txt
+14.00,FK Khimki,Zenit St. Petersburg,0,2,2,0-1,2020-21_ru1.txt
+16.30,Rotor Volgograd,CSKA Moskva,0,1,2,0-1,2020-21_ru1.txt
+19.00,FK Tambov,Dinamo Moskva,1,2,2,0-1,2020-21_ru1.txt
+19.00,FK Sochi,FK Ufa,1,1,X,0-0,2020-21_ru1.txt
+14.00,FK Ural,Spartak Moskva,2,2,X,1-2,2020-21_ru1.txt
+16.30,Arsenal Tula,Rotor Volgograd,1,1,X,1-0,2020-21_ru1.txt
+19.00,FK Tambov,Akhmat Grozny,0,1,2,0-0,2020-21_ru1.txt
+14.00,FK Khimki,Rubin Kazan,2,0,1,0-0,2020-21_ru1.txt
+16.30,CSKA Moskva,FK Rostov,2,0,1,1-0,2020-21_ru1.txt
+19.00,Dinamo Moskva,Lokomotiv Moskva,5,1,1,2-1,2020-21_ru1.txt
+,Zenit St. Petersburg,FK Krasnodar,3,1,1,0-1,2020-21_ru1.txt
+14.00,FK Krasnodar,FK Tambov,1,0,1,1-0,2020-21_ru1.txt
+16.30,Akhmat Grozny,Zenit St. Petersburg,2,2,X,1-1,2020-21_ru1.txt
+19.00,Lokomotiv Moskva,Arsenal Tula,1,0,1,0-0,2020-21_ru1.txt
+,Spartak Moskva,Dinamo Moskva,1,1,X,0-0,2020-21_ru1.txt
+14.00,CSKA Moskva,FK Sochi,1,1,X,1-1,2020-21_ru1.txt
+16.30,Rotor Volgograd,FK Ural,0,0,X,,2020-21_ru1.txt
+19.00,Rubin Kazan,FK Rostov,0,2,2,0-0,2020-21_ru1.txt
+17.00,FK Ufa,FK Khimki,1,2,2,0-2,2020-21_ru1.txt
+14.00,Arsenal Tula,Zenit St. Petersburg,0,0,X,,2020-21_ru1.txt
+16.30,FK Khimki,FK Krasnodar,1,0,1,0-0,2020-21_ru1.txt
+19.00,Akhmat Grozny,Lokomotiv Moskva,0,0,X,,2020-21_ru1.txt
+,FK Rostov,Dinamo Moskva,4,1,1,1-0,2020-21_ru1.txt
+12.00,FK Ural,FK Sochi,1,0,1,0-0,2020-21_ru1.txt
+14.00,FK Ufa,FK Tambov,4,0,1,2-0,2020-21_ru1.txt
+16.30,Rubin Kazan,CSKA Moskva,1,0,1,0-0,2020-21_ru1.txt
+19.00,Spartak Moskva,Rotor Volgograd,2,0,1,1-0,2020-21_ru1.txt
+14.00,Lokomotiv Moskva,Rubin Kazan,3,1,1,1-1,2020-21_ru1.txt
+16.30,Spartak Moskva,FK Tambov,5,1,1,1-0,2020-21_ru1.txt
+19.00,FK Krasnodar,Rotor Volgograd,5,0,1,3-0,2020-21_ru1.txt
+,Zenit St. Petersburg,FK Ural,5,1,1,4-0,2020-21_ru1.txt
+14.00,FK Rostov,FK Ufa,0,1,2,0-0,2020-21_ru1.txt
+16.30,Dinamo Moskva,Arsenal Tula,1,0,1,1-0,2020-21_ru1.txt
+19.00,CSKA Moskva,FK Khimki,2,2,X,1-0,2020-21_ru1.txt
+19.00,FK Sochi,Akhmat Grozny,2,0,1,2-0,2020-21_ru1.txt
+19.00,FK Khimki,Arsenal Tula,1,0,1,1-0,2020-21_ru1.txt
+14.00,Rotor Volgograd,FK Ufa,1,0,1,0-0,2020-21_ru1.txt
+16.30,FK Sochi,Spartak Moskva,1,0,1,0-0,2020-21_ru1.txt
+19.00,Zenit St. Petersburg,Dinamo Moskva,3,1,1,2-0,2020-21_ru1.txt
+14.00,FK Tambov,Rubin Kazan,0,1,2,0-1,2020-21_ru1.txt
+16.30,FK Krasnodar,Lokomotiv Moskva,5,0,1,2-0,2020-21_ru1.txt
+19.00,Akhmat Grozny,FK Rostov,0,1,2,0-0,2020-21_ru1.txt
+,CSKA Moskva,FK Ural,2,2,X,1-1,2020-21_ru1.txt
+18.00,Rotor Volgograd,Arsenal Tula,1,0,1,0-0,2020-21_ru1.txt
+,FK Sochi,Dinamo Moskva,2,0,1,0-0,2020-21_ru1.txt
+20.00,Zenit St. Petersburg,Spartak Moskva,3,1,1,1-1,2020-21_ru1.txt
+18.00,FK Krasnodar,FK Ufa,1,0,1,1-0,2020-21_ru1.txt
+,FK Khimki,Lokomotiv Moskva,3,2,1,1-2,2020-21_ru1.txt
+20.00,Akhmat Grozny,Rubin Kazan,0,0,X,,2020-21_ru1.txt
+,FK Rostov,CSKA Moskva,1,3,2,0-1,2020-21_ru1.txt
+18.00,FK Tambov,FK Ural,1,1,X,1-1,2020-21_ru1.txt
+19.00,FK Tambov,Rotor Volgograd,1,3,2,1-0,2020-21_ru1.txt
+14.00,FK Khimki,FK Ufa,2,1,1,0-0,2020-21_ru1.txt
+16.30,Zenit St. Petersburg,FK Rostov,2,2,X,0-1,2020-21_ru1.txt
+19.00,Lokomotiv Moskva,CSKA Moskva,2,0,1,2-0,2020-21_ru1.txt
+,FK Sochi,Arsenal Tula,4,0,1,0-0,2020-21_ru1.txt
+14.00,Spartak Moskva,Rubin Kazan,0,2,2,0-0,2020-21_ru1.txt
+16.30,Akhmat Grozny,Dinamo Moskva,1,2,2,0-2,2020-21_ru1.txt
+19.00,FK Krasnodar,FK Ural,2,2,X,1-0,2020-21_ru1.txt
+14.00,CSKA Moskva,Akhmat Grozny,2,0,1,1-0,2020-21_ru1.txt
+16.30,Rotor Volgograd,FK Khimki,0,0,X,,2020-21_ru1.txt
+19.00,FK Rostov,FK Sochi,0,0,X,,2020-21_ru1.txt
+14.00,FK Ural,FK Ufa,0,0,X,,2020-21_ru1.txt
+16.30,Dinamo Moskva,FK Tambov,2,0,1,1-0,2020-21_ru1.txt
+19.00,Spartak Moskva,FK Krasnodar,6,1,1,2-0,2020-21_ru1.txt
+14.00,Arsenal Tula,Lokomotiv Moskva,0,3,2,0-0,2020-21_ru1.txt
+16.30,Rubin Kazan,Zenit St. Petersburg,2,1,1,1-0,2020-21_ru1.txt
+19.00,FK Khimki,FK Rostov,1,0,1,0-0,2020-21_ru1.txt
+12.00,FK Ural,Rotor Volgograd,1,0,1,0-0,2020-21_ru1.txt
+14.00,Arsenal Tula,CSKA Moskva,2,1,1,2-0,2020-21_ru1.txt
+16.30,Zenit St. Petersburg,Akhmat Grozny,4,0,1,0-0,2020-21_ru1.txt
+19.00,Dinamo Moskva,Spartak Moskva,1,2,2,1-1,2020-21_ru1.txt
+14.00,FK Ufa,Rubin Kazan,0,3,2,0-2,2020-21_ru1.txt
+16.30,FK Tambov,FK Krasnodar,0,4,2,0-1,2020-21_ru1.txt
+19.00,Lokomotiv Moskva,FK Sochi,3,1,1,1-0,2020-21_ru1.txt
+18.00,Rotor Volgograd,FK Rostov,0,4,2,0-1,2020-21_ru1.txt
+20.00,Akhmat Grozny,Arsenal Tula,2,0,1,1-0,2020-21_ru1.txt
+,CSKA Moskva,Zenit St. Petersburg,2,3,2,1-1,2020-21_ru1.txt
+17.00,FK Ufa,Lokomotiv Moskva,0,1,2,0-0,2020-21_ru1.txt
+19.00,FK Krasnodar,Dinamo Moskva,2,3,2,1-0,2020-21_ru1.txt
+,Spartak Moskva,FK Ural,5,1,1,3-0,2020-21_ru1.txt
+19.00,Rubin Kazan,FK Khimki,1,3,2,1-2,2020-21_ru1.txt
+,FK Sochi,FK Tambov,5,0,1,1-0,2020-21_ru1.txt
+14.00,Rotor Volgograd,Lokomotiv Moskva,0,2,2,0-1,2020-21_ru1.txt
+16.30,FK Krasnodar,Akhmat Grozny,0,5,2,0-1,2020-21_ru1.txt
+,Rubin Kazan,FK Sochi,1,0,1,0-0,2020-21_ru1.txt
+19.00,Dinamo Moskva,FK Ufa,4,0,1,2-0,2020-21_ru1.txt
+14.00,FK Ural,Arsenal Tula,2,0,1,1-0,2020-21_ru1.txt
+16.30,FK Tambov,CSKA Moskva,1,2,2,1-1,2020-21_ru1.txt
+19.00,FK Rostov,Spartak Moskva,2,3,2,2-2,2020-21_ru1.txt
+19.00,Zenit St. Petersburg,FK Khimki,2,0,1,1-0,2020-21_ru1.txt
+14.00,FK Khimki,FK Tambov,1,0,1,0-0,2020-21_ru1.txt
+16.30,FK Ufa,Akhmat Grozny,3,0,1,2-0,2020-21_ru1.txt
+19.00,FK Rostov,Rubin Kazan,0,1,2,0-0,2020-21_ru1.txt
+14.00,Arsenal Tula,FK Krasnodar,1,0,1,0-0,2020-21_ru1.txt
+16.30,Dinamo Moskva,FK Ural,2,2,X,0-1,2020-21_ru1.txt
+,FK Sochi,Zenit St. Petersburg,1,2,2,0-0,2020-21_ru1.txt
+19.00,Lokomotiv Moskva,Spartak Moskva,2,0,1,2-0,2020-21_ru1.txt
+19.00,CSKA Moskva,Rotor Volgograd,2,0,1,1-0,2020-21_ru1.txt
+14.00,Akhmat Grozny,FK Khimki,3,1,1,2-0,2020-21_ru1.txt
+16.30,Lokomotiv Moskva,FK Rostov,4,1,1,2-1,2020-21_ru1.txt
+,Rotor Volgograd,Dinamo Moskva,0,3,2,0-0,2020-21_ru1.txt
+19.00,FK Krasnodar,Zenit St. Petersburg,2,2,X,1-0,2020-21_ru1.txt
+12.00,FK Ural,Rubin Kazan,0,1,2,0-1,2020-21_ru1.txt
+14.00,Arsenal Tula,FK Tambov,4,0,1,2-0,2020-21_ru1.txt
+16.30,FK Sochi,CSKA Moskva,2,1,1,1-0,2020-21_ru1.txt
+19.00,Spartak Moskva,FK Ufa,0,3,2,0-1,2020-21_ru1.txt
+14.00,FK Ural,Akhmat Grozny,1,1,X,0-1,2020-21_ru1.txt
+16.30,Zenit St. Petersburg,Rotor Volgograd,6,0,1,1-0,2020-21_ru1.txt
+19.00,Dinamo Moskva,FK Khimki,0,1,2,0-0,2020-21_ru1.txt
+,FK Tambov,Lokomotiv Moskva,2,5,2,1-1,2020-21_ru1.txt
+14.00,FK Ufa,FK Sochi,2,3,2,1-2,2020-21_ru1.txt
+16.30,FK Rostov,Arsenal Tula,1,0,1,0-0,2020-21_ru1.txt
+,Spartak Moskva,CSKA Moskva,1,0,1,0-0,2020-21_ru1.txt
+19.00,Rubin Kazan,FK Krasnodar,0,1,2,0-1,2020-21_ru1.txt
+14.00,Rotor Volgograd,Akhmat Grozny,1,0,1,1-0,2020-21_ru1.txt
+,Rubin Kazan,Dinamo Moskva,2,0,1,1-0,2020-21_ru1.txt
+16.30,CSKA Moskva,FK Ufa,1,1,X,0-0,2020-21_ru1.txt
+19.00,FK Krasnodar,FK Sochi,1,3,2,0-1,2020-21_ru1.txt
+14.00,FK Khimki,FK Ural,1,0,1,1-0,2020-21_ru1.txt
+16.30,FK Rostov,FK Tambov,2,0,1,0-0,2020-21_ru1.txt
+19.00,Zenit St. Petersburg,Lokomotiv Moskva,6,1,1,3-0,2020-21_ru1.txt
+16.30,Arsenal Tula,Spartak Moskva,1,2,2,1-1,2020-21_ru1.txt
+18.00,Akhmat Grozny,FK Tambov,3,1,1,2-0,2020-21_ru1.txt
+20.00,FK Sochi,Rotor Volgograd,2,1,1,1-1,2020-21_ru1.txt
+14.00,FK Ufa,Zenit St. Petersburg,0,0,X,,2020-21_ru1.txt
+16.30,Arsenal Tula,Rubin Kazan,2,4,2,2-0,2020-21_ru1.txt
+,Lokomotiv Moskva,Dinamo Moskva,0,0,X,,2020-21_ru1.txt
+19.30,CSKA Moskva,FK Krasnodar,3,1,1,1-1,2020-21_ru1.txt
+16.30,FK Ural,FK Rostov,1,0,1,1-0,2020-21_ru1.txt
+19.00,Spartak Moskva,FK Khimki,2,1,1,0-1,2020-21_ru1.txt
+14.00,Akhmat Grozny,Spartak Moskva,2,2,X,2-0,2020-21_ru1.txt
+,Dinamo Moskva,CSKA Moskva,3,2,1,0-1,2020-21_ru1.txt
+,FK Rostov,FK Krasnodar,1,3,2,0-1,2020-21_ru1.txt
+,FK Tambov,Zenit St. Petersburg,1,5,2,1-1,2020-21_ru1.txt
+,FK Khimki,FK Sochi,0,0,X,,2020-21_ru1.txt
+,Lokomotiv Moskva,FK Ural,1,0,1,0-0,2020-21_ru1.txt
+,Rubin Kazan,Rotor Volgograd,1,1,X,0-0,2020-21_ru1.txt
+16.00,FK Ufa,Arsenal Tula,2,1,1,2-1,2020-21_ru1.txt
+19.00,Dinamo Moskva,FK Krasnodar,1,3,2,0-2,2023-24_ru1.txt
+13.00,FK Ural,CSKA Moskva,2,1,1,1-0,2023-24_ru1.txt
+15.15,FK Nizhny Novgorod,Zenit St. Petersburg,0,2,2,0-0,2023-24_ru1.txt
+17.30,Lokomotiv Moskva,Rubin Kazan,2,2,X,1-1,2023-24_ru1.txt
+20.00,Akhmat Grozny,Krylia Sovetov,1,2,2,0-1,2023-24_ru1.txt
+17.30,Spartak Moskva,FK Orenburg,3,2,1,1-0,2023-24_ru1.txt
+20.00,FK Rostov,Fakel Voronezh,2,1,1,1-1,2023-24_ru1.txt
+,FK Sochi,Baltika Kaliningrad,2,0,1,1-0,2023-24_ru1.txt
+15.00,Krylia Sovetov,Dinamo Moskva,3,3,X,1-3,2023-24_ru1.txt
+17.30,FK Ural,FK Nizhny Novgorod,0,0,X,,2023-24_ru1.txt
+20.00,FK Rostov,Zenit St. Petersburg,1,1,X,0-1,2023-24_ru1.txt
+15.00,Rubin Kazan,FK Orenburg,1,1,X,1-0,2023-24_ru1.txt
+17.30,Fakel Voronezh,Lokomotiv Moskva,1,4,2,1-1,2023-24_ru1.txt
+20.00,Akhmat Grozny,CSKA Moskva,2,3,2,2-2,2023-24_ru1.txt
+,FK Krasnodar,FK Sochi,2,0,1,1-0,2023-24_ru1.txt
+19.30,Spartak Moskva,Baltika Kaliningrad,2,1,1,1-0,2023-24_ru1.txt
+20.00,FK Krasnodar,FK Nizhny Novgorod,1,0,1,1-0,2023-24_ru1.txt
+15.00,Krylia Sovetov,FK Rostov,5,1,1,3-1,2023-24_ru1.txt
+17.30,FK Orenburg,FK Ural,0,2,2,0-2,2023-24_ru1.txt
+,Rubin Kazan,Spartak Moskva,1,4,2,1-1,2023-24_ru1.txt
+20.00,CSKA Moskva,Lokomotiv Moskva,4,1,1,2-0,2023-24_ru1.txt
+17.30,Baltika Kaliningrad,Fakel Voronezh,2,1,1,1-1,2023-24_ru1.txt
+19.00,Zenit St. Petersburg,Dinamo Moskva,2,3,2,1-2,2023-24_ru1.txt
+20.00,FK Sochi,Akhmat Grozny,1,2,2,1-2,2023-24_ru1.txt
+18.00,FK Ural,Spartak Moskva,3,2,1,1-0,2023-24_ru1.txt
+15.00,Lokomotiv Moskva,Krylia Sovetov,1,1,X,0-0,2023-24_ru1.txt
+17.30,FK Orenburg,FK Krasnodar,0,2,2,0-0,2023-24_ru1.txt
+20.00,FK Rostov,Rubin Kazan,3,0,1,0-0,2023-24_ru1.txt
+15.00,Dinamo Moskva,Baltika Kaliningrad,2,0,1,0-0,2023-24_ru1.txt
+17.30,Zenit St. Petersburg,Fakel Voronezh,2,0,1,1-0,2023-24_ru1.txt
+20.00,CSKA Moskva,FK Sochi,3,1,1,0-0,2023-24_ru1.txt
+19.30,FK Nizhny Novgorod,Akhmat Grozny,2,0,1,2-0,2023-24_ru1.txt
+19.30,Rubin Kazan,Krylia Sovetov,2,1,1,2-1,2023-24_ru1.txt
+15.00,Dinamo Moskva,CSKA Moskva,2,1,1,0-1,2023-24_ru1.txt
+17.30,Baltika Kaliningrad,FK Ural,0,1,2,0-0,2023-24_ru1.txt
+19.30,FK Krasnodar,Lokomotiv Moskva,1,1,X,0-0,2023-24_ru1.txt
+20.00,FK Sochi,FK Rostov,4,0,1,2-0,2023-24_ru1.txt
+17.30,Fakel Voronezh,FK Nizhny Novgorod,2,0,1,0-0,2023-24_ru1.txt
+19.30,Spartak Moskva,Zenit St. Petersburg,1,3,2,0-1,2023-24_ru1.txt
+20.00,Akhmat Grozny,FK Orenburg,4,0,1,3-0,2023-24_ru1.txt
+17.30,FK Orenburg,CSKA Moskva,1,1,X,0-0,2023-24_ru1.txt
+20.00,Fakel Voronezh,FK Krasnodar,0,0,X,,2023-24_ru1.txt
+15.00,Zenit St. Petersburg,FK Ural,4,0,1,3-0,2023-24_ru1.txt
+17.30,Rubin Kazan,Dinamo Moskva,2,2,X,1-0,2023-24_ru1.txt
+19.30,Spartak Moskva,Akhmat Grozny,0,0,X,,2023-24_ru1.txt
+20.00,FK Nizhny Novgorod,FK Rostov,1,0,1,0-0,2023-24_ru1.txt
+17.30,Krylia Sovetov,Baltika Kaliningrad,2,1,1,0-0,2023-24_ru1.txt
+20.00,FK Sochi,Lokomotiv Moskva,0,1,2,0-0,2023-24_ru1.txt
+13.00,FK Ural,Akhmat Grozny,0,1,2,0-1,2023-24_ru1.txt
+15.15,FK Nizhny Novgorod,Rubin Kazan,2,1,1,2-0,2023-24_ru1.txt
+17.30,Krylia Sovetov,Fakel Voronezh,3,0,1,1-0,2023-24_ru1.txt
+20.00,FK Krasnodar,Spartak Moskva,2,0,1,1-0,2023-24_ru1.txt
+13.00,FK Orenburg,FK Sochi,3,0,1,0-0,2023-24_ru1.txt
+15.15,Lokomotiv Moskva,Baltika Kaliningrad,3,2,1,3-0,2023-24_ru1.txt
+17.30,CSKA Moskva,Zenit St. Petersburg,1,1,X,1-0,2023-24_ru1.txt
+20.00,FK Rostov,Dinamo Moskva,1,2,2,0-2,2023-24_ru1.txt
+19.00,Dinamo Moskva,FK Nizhny Novgorod,1,1,X,1-0,2023-24_ru1.txt
+14.00,CSKA Moskva,Krylia Sovetov,2,2,X,1-2,2023-24_ru1.txt
+16.30,Akhmat Grozny,FK Krasnodar,1,1,X,1-1,2023-24_ru1.txt
+19.00,FK Sochi,Spartak Moskva,0,1,2,0-0,2023-24_ru1.txt
+21.15,Baltika Kaliningrad,FK Rostov,2,2,X,0-2,2023-24_ru1.txt
+14.00,FK Ural,Fakel Voronezh,0,0,X,,2023-24_ru1.txt
+16.30,Rubin Kazan,Zenit St. Petersburg,0,3,2,0-1,2023-24_ru1.txt
+19.00,Lokomotiv Moskva,FK Orenburg,0,2,2,0-0,2023-24_ru1.txt
+14.00,Krylia Sovetov,FK Sochi,2,1,1,2-0,2023-24_ru1.txt
+16.30,Baltika Kaliningrad,Akhmat Grozny,1,0,1,1-0,2023-24_ru1.txt
+19.00,Spartak Moskva,Dinamo Moskva,1,0,1,1-0,2023-24_ru1.txt
+14.00,FK Nizhny Novgorod,FK Orenburg,3,1,1,1-1,2023-24_ru1.txt
+16.30,Zenit St. Petersburg,Lokomotiv Moskva,1,2,2,1-0,2023-24_ru1.txt
+19.00,FK Krasnodar,FK Ural,2,0,1,0-0,2023-24_ru1.txt
+,FK Rostov,CSKA Moskva,3,3,X,2-1,2023-24_ru1.txt
+19.00,Fakel Voronezh,Rubin Kazan,0,1,2,0-0,2023-24_ru1.txt
+19.00,FK Rostov,FK Ural,2,2,X,1-2,2023-24_ru1.txt
+12.00,FK Orenburg,Zenit St. Petersburg,3,1,1,3-1,2023-24_ru1.txt
+14.15,Lokomotiv Moskva,FK Nizhny Novgorod,1,0,1,0-0,2023-24_ru1.txt
+16.30,Rubin Kazan,FK Krasnodar,0,2,2,0-1,2023-24_ru1.txt
+19.00,CSKA Moskva,Baltika Kaliningrad,1,0,1,1-0,2023-24_ru1.txt
+14.00,Fakel Voronezh,FK Sochi,2,0,1,1-0,2023-24_ru1.txt
+16.30,Krylia Sovetov,Spartak Moskva,4,0,1,2-0,2023-24_ru1.txt
+19.00,Akhmat Grozny,Dinamo Moskva,1,1,X,1-0,2023-24_ru1.txt
+12.00,FK Ural,Lokomotiv Moskva,2,2,X,1-1,2023-24_ru1.txt
+14.00,FK Sochi,Zenit St. Petersburg,0,2,2,0-2,2023-24_ru1.txt
+16.30,Baltika Kaliningrad,FK Orenburg,1,0,1,1-0,2023-24_ru1.txt
+19.00,FK Krasnodar,FK Rostov,3,2,1,0-2,2023-24_ru1.txt
+14.00,FK Nizhny Novgorod,Krylia Sovetov,2,0,1,1-0,2023-24_ru1.txt
+16.30,Dinamo Moskva,Fakel Voronezh,0,0,X,,2023-24_ru1.txt
+19.00,Akhmat Grozny,Rubin Kazan,0,1,2,0-1,2023-24_ru1.txt
+,Spartak Moskva,CSKA Moskva,2,2,X,1-1,2023-24_ru1.txt
+12.00,FK Orenburg,Fakel Voronezh,1,2,2,0-1,2023-24_ru1.txt
+14.00,Rubin Kazan,CSKA Moskva,0,0,X,,2023-24_ru1.txt
+16.30,Lokomotiv Moskva,Dinamo Moskva,0,0,X,,2023-24_ru1.txt
+19.00,Baltika Kaliningrad,FK Krasnodar,2,2,X,2-1,2023-24_ru1.txt
+12.00,FK Ural,FK Sochi,1,4,2,1-3,2023-24_ru1.txt
+14.00,Spartak Moskva,FK Nizhny Novgorod,2,0,1,1-0,2023-24_ru1.txt
+16.30,Zenit St. Petersburg,Krylia Sovetov,3,1,1,0-0,2023-24_ru1.txt
+19.00,FK Rostov,Akhmat Grozny,3,0,1,2-0,2023-24_ru1.txt
+19.00,Rubin Kazan,Baltika Kaliningrad,1,0,1,0-0,2023-24_ru1.txt
+14.00,Fakel Voronezh,Spartak Moskva,2,0,1,0-0,2023-24_ru1.txt
+16.30,FK Rostov,Lokomotiv Moskva,1,0,1,1-0,2023-24_ru1.txt
+,Krylia Sovetov,FK Orenburg,1,1,X,1-0,2023-24_ru1.txt
+19.00,Zenit St. Petersburg,Akhmat Grozny,2,1,1,2-1,2023-24_ru1.txt
+14.00,FK Nizhny Novgorod,FK Sochi,1,0,1,1-0,2023-24_ru1.txt
+16.30,Dinamo Moskva,FK Ural,2,1,1,1-0,2023-24_ru1.txt
+19.30,CSKA Moskva,FK Krasnodar,1,0,1,1-0,2023-24_ru1.txt
+16.30,Akhmat Grozny,Fakel Voronezh,1,2,2,1-0,2023-24_ru1.txt
+19.00,Baltika Kaliningrad,Zenit St. Petersburg,0,2,2,0-0,2023-24_ru1.txt
+14.00,FK Krasnodar,Krylia Sovetov,2,1,1,1-0,2023-24_ru1.txt
+16.30,CSKA Moskva,FK Nizhny Novgorod,3,2,1,1-2,2023-24_ru1.txt
+19.30,Lokomotiv Moskva,Spartak Moskva,1,1,X,0-0,2023-24_ru1.txt
+14.00,FK Orenburg,FK Rostov,1,1,X,0-0,2023-24_ru1.txt
+16.30,FK Ural,Rubin Kazan,0,1,2,0-0,2023-24_ru1.txt
+19.30,FK Sochi,Dinamo Moskva,3,3,X,1-3,2023-24_ru1.txt
+14.00,Fakel Voronezh,CSKA Moskva,1,1,X,0-1,2023-24_ru1.txt
+,Krylia Sovetov,FK Ural,3,1,1,1-0,2023-24_ru1.txt
+16.30,Lokomotiv Moskva,Akhmat Grozny,2,1,1,0-0,2023-24_ru1.txt
+19.30,Zenit St. Petersburg,FK Krasnodar,1,1,X,0-0,2023-24_ru1.txt
+14.00,FK Nizhny Novgorod,Baltika Kaliningrad,0,0,X,,2023-24_ru1.txt
+16.30,Dinamo Moskva,FK Orenburg,2,0,1,0-0,2023-24_ru1.txt
+19.00,FK Sochi,Rubin Kazan,0,2,2,0-1,2023-24_ru1.txt
+19.30,Spartak Moskva,FK Rostov,2,1,1,2-0,2023-24_ru1.txt
+13.00,Krylia Sovetov,Lokomotiv Moskva,3,3,X,1-1,2023-24_ru1.txt
+15.15,Zenit St. Petersburg,FK Sochi,3,0,1,1-0,2023-24_ru1.txt
+17.30,CSKA Moskva,Dinamo Moskva,2,3,2,2-1,2023-24_ru1.txt
+19.45,Baltika Kaliningrad,Spartak Moskva,0,2,2,0-1,2023-24_ru1.txt
+12.00,FK Orenburg,Akhmat Grozny,1,1,X,0-0,2023-24_ru1.txt
+14.00,FK Ural,FK Krasnodar,3,1,1,1-1,2023-24_ru1.txt
+16.30,Rubin Kazan,Fakel Voronezh,1,0,1,1-0,2023-24_ru1.txt
+19.00,FK Rostov,FK Nizhny Novgorod,1,0,1,0-0,2023-24_ru1.txt
+14.00,Fakel Voronezh,Baltika Kaliningrad,0,0,X,,2023-24_ru1.txt
+16.30,FK Sochi,Krylia Sovetov,0,2,2,0-0,2023-24_ru1.txt
+19.30,FK Nizhny Novgorod,FK Ural,1,0,1,0-0,2023-24_ru1.txt
+14.00,CSKA Moskva,FK Rostov,2,0,1,1-0,2023-24_ru1.txt
+16.30,FK Krasnodar,FK Orenburg,2,1,1,1-0,2023-24_ru1.txt
+17.00,Lokomotiv Moskva,Zenit St. Petersburg,3,1,1,1-1,2023-24_ru1.txt
+19.00,Akhmat Grozny,Spartak Moskva,2,1,1,1-1,2023-24_ru1.txt
+19.30,Dinamo Moskva,Rubin Kazan,1,0,1,1-0,2023-24_ru1.txt
+19.00,Lokomotiv Moskva,FK Ural,2,0,1,1-0,2023-24_ru1.txt
+14.00,Spartak Moskva,Krylia Sovetov,3,0,1,2-0,2023-24_ru1.txt
+16.30,Akhmat Grozny,FK Rostov,0,0,X,,2023-24_ru1.txt
+19.45,Zenit St. Petersburg,FK Nizhny Novgorod,1,0,1,1-0,2023-24_ru1.txt
+14.00,Fakel Voronezh,Dinamo Moskva,1,1,X,0-1,2023-24_ru1.txt
+16.30,FK Sochi,FK Orenburg,1,1,X,1-0,2023-24_ru1.txt
+19.45,Baltika Kaliningrad,Rubin Kazan,0,1,2,0-1,2023-24_ru1.txt
+,FK Krasnodar,CSKA Moskva,1,0,1,0-0,2023-24_ru1.txt
+19.00,FK Rostov,Krylia Sovetov,2,0,1,1-0,2023-24_ru1.txt
+14.00,CSKA Moskva,FK Orenburg,1,1,X,0-0,2023-24_ru1.txt
+16.30,FK Krasnodar,Rubin Kazan,1,1,X,1-0,2023-24_ru1.txt
+19.00,Akhmat Grozny,FK Ural,1,0,1,0-0,2023-24_ru1.txt
+19.30,Zenit St. Petersburg,Spartak Moskva,0,0,X,,2023-24_ru1.txt
+14.00,FK Nizhny Novgorod,Fakel Voronezh,1,1,X,0-1,2023-24_ru1.txt
+16.30,Dinamo Moskva,Lokomotiv Moskva,2,1,1,1-0,2023-24_ru1.txt
+19.00,Baltika Kaliningrad,FK Sochi,0,0,X,,2023-24_ru1.txt
+14.00,Krylia Sovetov,CSKA Moskva,0,2,2,0-1,2023-24_ru1.txt
+18.30,FK Rostov,FK Krasnodar,2,1,1,1-0,2023-24_ru1.txt
+14.00,FK Ural,Zenit St. Petersburg,1,4,2,0-1,2023-24_ru1.txt
+16.30,Rubin Kazan,FK Nizhny Novgorod,0,1,2,0-1,2023-24_ru1.txt
+19.00,Dinamo Moskva,Akhmat Grozny,2,0,1,1-0,2023-24_ru1.txt
+14.00,FK Orenburg,Baltika Kaliningrad,1,0,1,0-0,2023-24_ru1.txt
+16.30,Lokomotiv Moskva,FK Sochi,2,2,X,2-1,2023-24_ru1.txt
+19.00,Spartak Moskva,Fakel Voronezh,0,2,2,0-1,2023-24_ru1.txt
+16.00,FK Orenburg,Dinamo Moskva,1,2,2,0-0,2023-24_ru1.txt
+18.15,FK Nizhny Novgorod,Lokomotiv Moskva,2,3,2,1-0,2023-24_ru1.txt
+20.30,FK Krasnodar,Baltika Kaliningrad,3,2,1,1-0,2023-24_ru1.txt
+,Zenit St. Petersburg,Rubin Kazan,0,2,2,0-0,2023-24_ru1.txt
+16.00,FK Ural,FK Rostov,0,1,2,0-0,2023-24_ru1.txt
+18.15,Fakel Voronezh,Krylia Sovetov,0,1,2,0-0,2023-24_ru1.txt
+20.30,Akhmat Grozny,FK Sochi,1,0,1,1-0,2023-24_ru1.txt
+,CSKA Moskva,Spartak Moskva,0,0,X,,2023-24_ru1.txt
+19.30,Dinamo Moskva,FK Rostov,1,4,2,0-3,2023-24_ru1.txt
+14.00,Krylia Sovetov,Zenit St. Petersburg,1,1,X,1-1,2023-24_ru1.txt
+16.30,FK Sochi,CSKA Moskva,2,2,X,0-1,2023-24_ru1.txt
+17.30,Baltika Kaliningrad,FK Nizhny Novgorod,2,0,1,2-0,2023-24_ru1.txt
+19.00,Spartak Moskva,FK Ural,0,0,X,,2023-24_ru1.txt
+14.00,Fakel Voronezh,FK Orenburg,0,0,X,,2023-24_ru1.txt
+16.30,Rubin Kazan,Akhmat Grozny,2,1,1,2-0,2023-24_ru1.txt
+19.30,Lokomotiv Moskva,FK Krasnodar,1,1,X,0-1,2023-24_ru1.txt
+14.00,FK Ural,Krylia Sovetov,1,2,2,1-1,2023-24_ru1.txt
+16.30,FK Nizhny Novgorod,FK Krasnodar,3,4,2,2-2,2023-24_ru1.txt
+20.00,FK Rostov,FK Sochi,2,2,X,2-2,2023-24_ru1.txt
+14.00,CSKA Moskva,Fakel Voronezh,4,1,1,1-0,2023-24_ru1.txt
+16.30,Akhmat Grozny,Lokomotiv Moskva,0,2,2,0-1,2023-24_ru1.txt
+,Zenit St. Petersburg,Baltika Kaliningrad,1,0,1,1-0,2023-24_ru1.txt
+19.30,Dinamo Moskva,Spartak Moskva,1,2,2,1-0,2023-24_ru1.txt
+17.00,FK Orenburg,Rubin Kazan,3,0,1,0-0,2023-24_ru1.txt
+14.00,FK Sochi,Spartak Moskva,1,0,1,0-0,2023-24_ru1.txt
+16.30,Akhmat Grozny,Baltika Kaliningrad,1,7,2,0-5,2023-24_ru1.txt
+17.00,FK Krasnodar,Zenit St. Petersburg,1,2,2,1-0,2023-24_ru1.txt
+19.30,Lokomotiv Moskva,CSKA Moskva,3,3,X,1-0,2023-24_ru1.txt
+12.00,FK Orenburg,FK Nizhny Novgorod,3,1,1,1-1,2023-24_ru1.txt
+14.15,FK Ural,Dinamo Moskva,2,1,1,1-1,2023-24_ru1.txt
+16.45,Fakel Voronezh,FK Rostov,0,1,2,0-0,2023-24_ru1.txt
+19.00,Krylia Sovetov,Rubin Kazan,2,0,1,1-0,2023-24_ru1.txt
+19.00,FK Krasnodar,Fakel Voronezh,2,0,1,0-0,2023-24_ru1.txt
+14.00,Rubin Kazan,Lokomotiv Moskva,1,1,X,1-1,2023-24_ru1.txt
+16.30,Baltika Kaliningrad,Krylia Sovetov,2,1,1,0-0,2023-24_ru1.txt
+19.30,CSKA Moskva,Akhmat Grozny,1,2,2,0-0,2023-24_ru1.txt
+14.00,FK Nizhny Novgorod,Dinamo Moskva,1,4,2,0-2,2023-24_ru1.txt
+16.15,Zenit St. Petersburg,FK Orenburg,1,0,1,1-0,2023-24_ru1.txt
+18.15,FK Sochi,FK Ural,2,2,X,0-0,2023-24_ru1.txt
+20.30,FK Rostov,Spartak Moskva,1,5,2,1-1,2023-24_ru1.txt
+14.00,Akhmat Grozny,FK Nizhny Novgorod,5,1,1,2-1,2023-24_ru1.txt
+16.15,Spartak Moskva,Lokomotiv Moskva,3,2,1,1-0,2023-24_ru1.txt
+19.15,Dinamo Moskva,Zenit St. Petersburg,1,0,1,0-0,2023-24_ru1.txt
+21.30,Baltika Kaliningrad,CSKA Moskva,3,1,1,0-0,2023-24_ru1.txt
+13.00,Krylia Sovetov,FK Krasnodar,0,0,X,,2023-24_ru1.txt
+15.15,Rubin Kazan,FK Ural,1,1,X,1-0,2023-24_ru1.txt
+17.30,FK Sochi,Fakel Voronezh,0,0,X,,2023-24_ru1.txt
+19.45,FK Rostov,FK Orenburg,2,1,1,0-1,2023-24_ru1.txt
+17.00,FK Orenburg,Krylia Sovetov,2,1,1,1-0,2023-24_ru1.txt
+19.30,FK Krasnodar,Akhmat Grozny,0,1,2,0-0,2023-24_ru1.txt
+16.30,Dinamo Moskva,FK Sochi,3,2,1,0-0,2023-24_ru1.txt
+19.00,FK Nizhny Novgorod,Spartak Moskva,0,0,X,,2023-24_ru1.txt
+15.45,FK Ural,Baltika Kaliningrad,2,1,1,1-1,2023-24_ru1.txt
+18.00,Fakel Voronezh,Zenit St. Petersburg,1,1,X,0-1,2023-24_ru1.txt
+20.30,Lokomotiv Moskva,FK Rostov,1,0,1,1-0,2023-24_ru1.txt
+,CSKA Moskva,Rubin Kazan,2,2,X,1-1,2023-24_ru1.txt
+16.00,Krylia Sovetov,Akhmat Grozny,0,2,2,0-1,2023-24_ru1.txt
+14.00,Rubin Kazan,FK Rostov,3,1,1,2-0,2023-24_ru1.txt
+16.30,Spartak Moskva,FK Krasnodar,1,0,1,1-0,2023-24_ru1.txt
+19.00,Zenit St. Petersburg,CSKA Moskva,0,1,2,0-0,2023-24_ru1.txt
+21.30,Baltika Kaliningrad,Dinamo Moskva,2,3,2,1-1,2023-24_ru1.txt
+14.00,FK Orenburg,Lokomotiv Moskva,0,2,2,0-1,2023-24_ru1.txt
+16.30,Fakel Voronezh,FK Ural,0,0,X,,2023-24_ru1.txt
+19.00,FK Sochi,FK Nizhny Novgorod,6,1,1,2-0,2023-24_ru1.txt
+14.00,Dinamo Moskva,Krylia Sovetov,4,1,1,1-1,2023-24_ru1.txt
+16.30,Lokomotiv Moskva,Fakel Voronezh,2,0,1,1-0,2023-24_ru1.txt
+19.00,FK Sochi,FK Krasnodar,2,3,2,1-1,2023-24_ru1.txt
+12.00,FK Ural,FK Orenburg,3,3,X,1-1,2023-24_ru1.txt
+14.15,Spartak Moskva,Rubin Kazan,3,1,1,2-0,2023-24_ru1.txt
+16.30,FK Rostov,Baltika Kaliningrad,2,1,1,2-1,2023-24_ru1.txt
+19.00,Akhmat Grozny,Zenit St. Petersburg,1,5,2,1-3,2023-24_ru1.txt
+20.00,FK Nizhny Novgorod,CSKA Moskva,2,6,2,0-3,2023-24_ru1.txt
+16.30,Baltika Kaliningrad,Lokomotiv Moskva,1,3,2,0-1,2023-24_ru1.txt
+,Fakel Voronezh,Akhmat Grozny,2,0,1,1-0,2023-24_ru1.txt
+,FK Krasnodar,Dinamo Moskva,1,0,1,0-0,2023-24_ru1.txt
+,FK Orenburg,Spartak Moskva,0,0,X,,2023-24_ru1.txt
+,Krylia Sovetov,FK Nizhny Novgorod,1,1,X,0-0,2023-24_ru1.txt
+,Rubin Kazan,FK Sochi,1,1,X,1-0,2023-24_ru1.txt
+,Zenit St. Petersburg,FK Rostov,2,1,1,0-0,2023-24_ru1.txt
+,CSKA Moskva,FK Ural,2,0,1,2-0,2023-24_ru1.txt
+15.00,Lokomotiv Moskva,Akron Tolyatti,3,2,1,2-2,2024-25_ru1.txt
+17.30,Krylia Sovetov,Zenit St. Petersburg,0,4,2,0-3,2024-25_ru1.txt
+20.00,FK Rostov,CSKA Moskva,0,0,X,,2024-25_ru1.txt
+,Dinamo Moskva,Fakel Voronezh,3,1,1,3-0,2024-25_ru1.txt
+17.30,FK Orenburg,Spartak Moskva,2,0,1,0-0,2024-25_ru1.txt
+20.00,Akhmat Grozny,FK Krasnodar,1,1,X,1-1,2024-25_ru1.txt
+,FK Khimki,FK Dinamo Makhachkala,1,1,X,0-1,2024-25_ru1.txt
+20.00,FK Nizhny Novgorod,Rubin Kazan,2,4,2,1-3,2024-25_ru1.txt
+18.00,Krylia Sovetov,FK Rostov,1,3,2,0-1,2024-25_ru1.txt
+15.00,FK Nizhny Novgorod,CSKA Moskva,0,3,2,0-1,2024-25_ru1.txt
+17.30,Dinamo Moskva,Lokomotiv Moskva,3,1,1,1-1,2024-25_ru1.txt
+,Rubin Kazan,Zenit St. Petersburg,0,4,2,0-2,2024-25_ru1.txt
+20.00,Fakel Voronezh,Akron Tolyatti,0,2,2,0-0,2024-25_ru1.txt
+15.00,FK Khimki,Spartak Moskva,1,3,2,0-0,2024-25_ru1.txt
+17.30,FK Orenburg,Akhmat Grozny,0,0,X,,2024-25_ru1.txt
+20.00,FK Krasnodar,FK Dinamo Makhachkala,0,0,X,,2024-25_ru1.txt
+15.00,Akron Tolyatti,Dinamo Moskva,0,2,2,0-1,2024-25_ru1.txt
+17.30,Zenit St. Petersburg,FK Rostov,5,0,1,4-0,2024-25_ru1.txt
+20.00,Rubin Kazan,FK Khimki,2,3,2,1-0,2024-25_ru1.txt
+15.30,CSKA Moskva,FK Orenburg,5,1,1,3-1,2024-25_ru1.txt
+17.30,Fakel Voronezh,FK Krasnodar,0,0,X,,2024-25_ru1.txt
+20.30,Akhmat Grozny,Lokomotiv Moskva,0,5,2,0-3,2024-25_ru1.txt
+,FK Dinamo Makhachkala,FK Nizhny Novgorod,0,1,2,0-0,2024-25_ru1.txt
+20.00,Spartak Moskva,Krylia Sovetov,3,0,1,2-0,2024-25_ru1.txt
+18.30,FK Nizhny Novgorod,FK Khimki,1,0,1,1-0,2024-25_ru1.txt
+20.45,FK Rostov,Rubin Kazan,1,1,X,1-0,2024-25_ru1.txt
+15.00,Lokomotiv Moskva,FK Dinamo Makhachkala,2,0,1,1-0,2024-25_ru1.txt
+17.30,Zenit St. Petersburg,Dinamo Moskva,1,0,1,0-0,2024-25_ru1.txt
+,FK Orenburg,Akron Tolyatti,2,2,X,0-1,2024-25_ru1.txt
+20.00,FK Krasnodar,CSKA Moskva,2,1,1,1-0,2024-25_ru1.txt
+17.30,Krylia Sovetov,Fakel Voronezh,2,0,1,0-0,2024-25_ru1.txt
+20.00,Spartak Moskva,Akhmat Grozny,0,0,X,,2024-25_ru1.txt
+17.00,Dinamo Moskva,Krylia Sovetov,1,0,1,0-0,2024-25_ru1.txt
+19.30,FK Rostov,FK Orenburg,3,2,1,0-2,2024-25_ru1.txt
+15.00,FK Khimki,Zenit St. Petersburg,1,1,X,0-0,2024-25_ru1.txt
+17.30,CSKA Moskva,Lokomotiv Moskva,0,1,2,0-0,2024-25_ru1.txt
+,Spartak Moskva,Fakel Voronezh,3,0,1,2-0,2024-25_ru1.txt
+20.00,FK Krasnodar,FK Nizhny Novgorod,2,1,1,0-1,2024-25_ru1.txt
+17.30,Akron Tolyatti,Rubin Kazan,1,2,2,1-0,2024-25_ru1.txt
+20.00,FK Dinamo Makhachkala,Akhmat Grozny,1,0,1,0-0,2024-25_ru1.txt
+20.00,Rubin Kazan,FK Dinamo Makhachkala,2,0,1,1-0,2024-25_ru1.txt
+15.00,CSKA Moskva,Akron Tolyatti,4,0,1,0-0,2024-25_ru1.txt
+17.30,Zenit St. Petersburg,Spartak Moskva,0,0,X,,2024-25_ru1.txt
+,Fakel Voronezh,FK Orenburg,1,0,1,0-0,2024-25_ru1.txt
+20.00,Akhmat Grozny,FK Khimki,3,3,X,0-1,2024-25_ru1.txt
+15.00,Krylia Sovetov,FK Nizhny Novgorod,3,1,1,0-0,2024-25_ru1.txt
+17.30,Dinamo Moskva,FK Krasnodar,0,1,2,0-1,2024-25_ru1.txt
+20.00,Lokomotiv Moskva,FK Rostov,3,2,1,2-1,2024-25_ru1.txt
+15.00,FK Khimki,CSKA Moskva,0,2,2,0-1,2024-25_ru1.txt
+17.30,FK Nizhny Novgorod,Zenit St. Petersburg,0,3,2,0-1,2024-25_ru1.txt
+19.45,Spartak Moskva,Rubin Kazan,1,0,1,0-0,2024-25_ru1.txt
+20.00,Akhmat Grozny,Akron Tolyatti,0,0,X,,2024-25_ru1.txt
+15.00,FK Orenburg,Dinamo Moskva,2,2,X,1-0,2024-25_ru1.txt
+17.30,Krylia Sovetov,FK Dinamo Makhachkala,0,1,2,0-1,2024-25_ru1.txt
+19.45,Lokomotiv Moskva,FK Krasnodar,0,3,2,0-2,2024-25_ru1.txt
+20.00,FK Rostov,Fakel Voronezh,4,1,1,2-0,2024-25_ru1.txt
+20.15,Rubin Kazan,Krylia Sovetov,0,2,2,0-2,2024-25_ru1.txt
+12.00,FK Orenburg,Lokomotiv Moskva,2,4,2,1-2,2024-25_ru1.txt
+14.15,Fakel Voronezh,FK Nizhny Novgorod,0,0,X,,2024-25_ru1.txt
+16.30,CSKA Moskva,Zenit St. Petersburg,0,1,2,0-1,2024-25_ru1.txt
+19.00,FK Krasnodar,FK Rostov,2,0,1,1-0,2024-25_ru1.txt
+14.15,Dinamo Moskva,Akhmat Grozny,4,2,1,1-0,2024-25_ru1.txt
+16.30,Akron Tolyatti,FK Khimki,3,0,1,2-0,2024-25_ru1.txt
+19.00,FK Dinamo Makhachkala,Spartak Moskva,1,1,X,1-1,2024-25_ru1.txt
+14.00,Akron Tolyatti,FK Krasnodar,2,5,2,0-2,2024-25_ru1.txt
+16.30,Zenit St. Petersburg,Fakel Voronezh,3,1,1,0-1,2024-25_ru1.txt
+19.00,Rubin Kazan,CSKA Moskva,1,1,X,0-1,2024-25_ru1.txt
+14.15,FK Khimki,FK Orenburg,0,0,X,,2024-25_ru1.txt
+16.30,Spartak Moskva,Dinamo Moskva,2,2,X,2-1,2024-25_ru1.txt
+,FK Rostov,FK Dinamo Makhachkala,0,0,X,,2024-25_ru1.txt
+19.00,FK Nizhny Novgorod,Lokomotiv Moskva,1,3,2,1-1,2024-25_ru1.txt
+18.30,Akhmat Grozny,Krylia Sovetov,1,1,X,0-0,2024-25_ru1.txt
+16.30,FK Orenburg,FK Nizhny Novgorod,1,2,2,0-1,2024-25_ru1.txt
+19.00,Fakel Voronezh,Rubin Kazan,0,0,X,,2024-25_ru1.txt
+14.00,CSKA Moskva,Akhmat Grozny,3,0,1,2-0,2024-25_ru1.txt
+16.30,Lokomotiv Moskva,Spartak Moskva,3,1,1,2-1,2024-25_ru1.txt
+19.30,FK Krasnodar,Zenit St. Petersburg,2,0,1,0-0,2024-25_ru1.txt
+20.00,FK Rostov,Akron Tolyatti,0,2,2,0-2,2024-25_ru1.txt
+16.30,Krylia Sovetov,FK Khimki,0,0,X,,2024-25_ru1.txt
+19.00,FK Dinamo Makhachkala,Dinamo Moskva,0,1,2,0-1,2024-25_ru1.txt
+14.00,Akron Tolyatti,FK Nizhny Novgorod,2,2,X,1-0,2024-25_ru1.txt
+16.30,Zenit St. Petersburg,FK Orenburg,1,0,1,0-0,2024-25_ru1.txt
+19.00,Spartak Moskva,FK Rostov,3,0,1,3-0,2024-25_ru1.txt
+,Rubin Kazan,Akhmat Grozny,2,0,1,1-0,2024-25_ru1.txt
+14.00,Fakel Voronezh,FK Dinamo Makhachkala,1,1,X,0-1,2024-25_ru1.txt
+16.30,Lokomotiv Moskva,Krylia Sovetov,1,0,1,0-0,2024-25_ru1.txt
+19.00,FK Krasnodar,FK Khimki,4,0,1,1-0,2024-25_ru1.txt
+,Dinamo Moskva,CSKA Moskva,1,2,2,0-1,2024-25_ru1.txt
+18.00,Akron Tolyatti,Zenit St. Petersburg,0,5,2,0-3,2024-25_ru1.txt
+20.15,Akhmat Grozny,Fakel Voronezh,2,3,2,2-1,2024-25_ru1.txt
+14.00,FK Nizhny Novgorod,FK Rostov,1,1,X,0-0,2024-25_ru1.txt
+16.30,Spartak Moskva,FK Krasnodar,0,3,2,0-2,2024-25_ru1.txt
+,FK Khimki,Lokomotiv Moskva,2,0,1,0-0,2024-25_ru1.txt
+19.00,FK Dinamo Makhachkala,CSKA Moskva,0,1,2,0-0,2024-25_ru1.txt
+16.30,FK Orenburg,Krylia Sovetov,2,2,X,0-2,2024-25_ru1.txt
+19.00,Rubin Kazan,Dinamo Moskva,0,4,2,0-2,2024-25_ru1.txt
+14.00,FK Dinamo Makhachkala,Akron Tolyatti,1,1,X,0-0,2024-25_ru1.txt
+16.30,CSKA Moskva,Fakel Voronezh,0,0,X,,2024-25_ru1.txt
+19.00,FK Rostov,Akhmat Grozny,2,3,2,1-2,2024-25_ru1.txt
+12.00,FK Orenburg,Rubin Kazan,1,2,2,1-0,2024-25_ru1.txt
+14.15,FK Nizhny Novgorod,Spartak Moskva,0,2,2,0-0,2024-25_ru1.txt
+16.30,FK Khimki,Dinamo Moskva,3,4,2,2-2,2024-25_ru1.txt
+19.30,Zenit St. Petersburg,Lokomotiv Moskva,1,1,X,0-0,2024-25_ru1.txt
+18.30,Krylia Sovetov,FK Krasnodar,1,2,2,0-1,2024-25_ru1.txt
+19.00,Dinamo Moskva,FK Rostov,1,1,X,1-1,2024-25_ru1.txt
+18.00,Zenit St. Petersburg,FK Dinamo Makhachkala,2,1,1,2-0,2024-25_ru1.txt
+,Lokomotiv Moskva,Rubin Kazan,1,0,1,0-0,2024-25_ru1.txt
+20.45,CSKA Moskva,Spartak Moskva,0,2,2,0-1,2024-25_ru1.txt
+13.00,Akron Tolyatti,Krylia Sovetov,2,0,1,1-0,2024-25_ru1.txt
+15.15,Akhmat Grozny,FK Nizhny Novgorod,0,2,2,0-0,2024-25_ru1.txt
+17.30,Fakel Voronezh,FK Khimki,1,1,X,1-1,2024-25_ru1.txt
+19.45,FK Krasnodar,FK Orenburg,4,0,1,1-0,2024-25_ru1.txt
+14.00,Lokomotiv Moskva,Fakel Voronezh,2,1,1,1-0,2024-25_ru1.txt
+16.30,FK Dinamo Makhachkala,FK Orenburg,2,1,1,0-1,2024-25_ru1.txt
+19.00,FK Rostov,FK Khimki,3,1,1,1-0,2024-25_ru1.txt
+19.30,Dinamo Moskva,FK Nizhny Novgorod,3,1,1,2-1,2024-25_ru1.txt
+13.00,Krylia Sovetov,CSKA Moskva,1,2,2,0-1,2024-25_ru1.txt
+15.15,Spartak Moskva,Akron Tolyatti,4,0,1,1-0,2024-25_ru1.txt
+17.30,Akhmat Grozny,Zenit St. Petersburg,1,2,2,1-2,2024-25_ru1.txt
+19.45,Rubin Kazan,FK Krasnodar,1,1,X,1-0,2024-25_ru1.txt
+19.00,Rubin Kazan,Akron Tolyatti,3,0,1,2-0,2024-25_ru1.txt
+12.00,FK Orenburg,Zenit St. Petersburg,0,1,2,0-0,2024-25_ru1.txt
+14.15,CSKA Moskva,FK Rostov,1,2,2,1-0,2024-25_ru1.txt
+16.30,FK Khimki,FK Krasnodar,2,2,X,0-0,2024-25_ru1.txt
+18.00,Spartak Moskva,Lokomotiv Moskva,5,2,1,3-0,2024-25_ru1.txt
+14.00,Krylia Sovetov,Akhmat Grozny,2,1,1,0-1,2024-25_ru1.txt
+16.30,Fakel Voronezh,Dinamo Moskva,1,1,X,0-1,2024-25_ru1.txt
+19.00,FK Nizhny Novgorod,FK Dinamo Makhachkala,0,0,X,,2024-25_ru1.txt
+14.00,Akron Tolyatti,FK Orenburg,1,0,1,0-0,2024-25_ru1.txt
+16.30,CSKA Moskva,Rubin Kazan,2,2,X,0-1,2024-25_ru1.txt
+19.00,FK Rostov,FK Nizhny Novgorod,4,0,1,1-0,2024-25_ru1.txt
+14.00,Lokomotiv Moskva,FK Khimki,1,3,2,1-2,2024-25_ru1.txt
+16.30,Zenit St. Petersburg,Krylia Sovetov,2,3,2,1-3,2024-25_ru1.txt
+19.00,FK Dinamo Makhachkala,Fakel Voronezh,0,0,X,,2024-25_ru1.txt
+19.30,FK Krasnodar,Spartak Moskva,0,3,2,0-2,2024-25_ru1.txt
+19.00,Akhmat Grozny,Dinamo Moskva,1,1,X,1-0,2024-25_ru1.txt
+14.00,Spartak Moskva,FK Nizhny Novgorod,3,0,1,0-0,2024-25_ru1.txt
+16.30,Zenit St. Petersburg,Akron Tolyatti,1,2,2,1-2,2024-25_ru1.txt
+,FK Rostov,Krylia Sovetov,3,1,1,1-1,2024-25_ru1.txt
+19.00,FK Dinamo Makhachkala,Rubin Kazan,2,3,2,2-1,2024-25_ru1.txt
+14.00,Dinamo Moskva,FK Khimki,4,1,1,1-0,2024-25_ru1.txt
+16.30,Fakel Voronezh,CSKA Moskva,0,1,2,0-1,2024-25_ru1.txt
+19.00,Akhmat Grozny,FK Orenburg,1,0,1,0-0,2024-25_ru1.txt
+19.30,FK Krasnodar,Lokomotiv Moskva,0,0,X,,2024-25_ru1.txt
+19.00,FK Dinamo Makhachkala,Lokomotiv Moskva,1,1,X,1-0,2024-25_ru1.txt
+14.00,FK Nizhny Novgorod,Akron Tolyatti,2,1,1,0-0,2024-25_ru1.txt
+16.30,Zenit St. Petersburg,CSKA Moskva,0,0,X,,2024-25_ru1.txt
+19.00,Akhmat Grozny,Rubin Kazan,2,1,1,1-1,2024-25_ru1.txt
+19.30,FK Krasnodar,Krylia Sovetov,1,1,X,0-1,2024-25_ru1.txt
+14.00,FK Khimki,Fakel Voronezh,1,0,1,1-0,2024-25_ru1.txt
+16.30,Spartak Moskva,FK Orenburg,2,0,1,0-0,2024-25_ru1.txt
+19.30,FK Rostov,Dinamo Moskva,1,1,X,0-0,2024-25_ru1.txt
+18.00,FK Nizhny Novgorod,FK Krasnodar,0,3,2,0-2,2024-25_ru1.txt
+20.15,Lokomotiv Moskva,Akhmat Grozny,1,1,X,1-1,2024-25_ru1.txt
+12.00,FK Orenburg,FK Rostov,1,2,2,1-1,2024-25_ru1.txt
+14.30,Fakel Voronezh,Zenit St. Petersburg,0,2,2,0-1,2024-25_ru1.txt
+17.00,CSKA Moskva,FK Khimki,1,0,1,0-0,2024-25_ru1.txt
+19.30,Dinamo Moskva,FK Dinamo Makhachkala,4,0,1,1-0,2024-25_ru1.txt
+16.30,Krylia Sovetov,Akron Tolyatti,0,2,2,0-1,2024-25_ru1.txt
+19.30,Rubin Kazan,Spartak Moskva,2,1,1,2-1,2024-25_ru1.txt
+12.00,FK Orenburg,Fakel Voronezh,1,0,1,0-0,2024-25_ru1.txt
+14.30,FK Khimki,Akhmat Grozny,1,1,X,0-0,2024-25_ru1.txt
+17.00,FK Dinamo Makhachkala,Krylia Sovetov,4,0,1,2-0,2024-25_ru1.txt
+19.30,Lokomotiv Moskva,Dinamo Moskva,2,1,1,1-1,2024-25_ru1.txt
+13.00,Akron Tolyatti,CSKA Moskva,1,2,2,0-1,2024-25_ru1.txt
+15.15,Rubin Kazan,FK Nizhny Novgorod,1,0,1,0-0,2024-25_ru1.txt
+17.00,FK Rostov,FK Krasnodar,0,1,2,0-0,2024-25_ru1.txt
+19.45,Spartak Moskva,Zenit St. Petersburg,2,1,1,1-0,2024-25_ru1.txt
+18.30,Krylia Sovetov,Lokomotiv Moskva,5,1,1,4-0,2024-25_ru1.txt
+14.00,Dinamo Moskva,FK Orenburg,5,1,1,2-0,2024-25_ru1.txt
+16.30,FK Khimki,FK Nizhny Novgorod,2,0,1,1-0,2024-25_ru1.txt
+19.30,CSKA Moskva,FK Dinamo Makhachkala,2,0,1,1-0,2024-25_ru1.txt
+14.00,FK Krasnodar,Fakel Voronezh,5,0,1,0-0,2024-25_ru1.txt
+16.30,Akhmat Grozny,Spartak Moskva,0,0,X,,2024-25_ru1.txt
+19.30,Zenit St. Petersburg,Rubin Kazan,4,0,1,0-0,2024-25_ru1.txt
+18.30,Akron Tolyatti,FK Rostov,2,3,2,1-1,2024-25_ru1.txt
+19.00,FK Nizhny Novgorod,FK Orenburg,1,2,2,1-2,2024-25_ru1.txt
+13.00,Krylia Sovetov,Rubin Kazan,1,1,X,1-0,2024-25_ru1.txt
+15.15,Fakel Voronezh,Akhmat Grozny,0,0,X,,2024-25_ru1.txt
+17.30,Lokomotiv Moskva,Zenit St. Petersburg,1,1,X,0-0,2024-25_ru1.txt
+19.45,FK Krasnodar,Akron Tolyatti,1,0,1,0-0,2024-25_ru1.txt
+14.00,FK Dinamo Makhachkala,FK Khimki,4,1,1,3-0,2024-25_ru1.txt
+16.30,FK Rostov,Spartak Moskva,0,3,2,0-0,2024-25_ru1.txt
+19.30,CSKA Moskva,Dinamo Moskva,3,1,1,1-1,2024-25_ru1.txt
+19.30,Spartak Moskva,FK Dinamo Makhachkala,1,2,2,0-2,2024-25_ru1.txt
+12.00,FK Orenburg,CSKA Moskva,0,2,2,0-0,2024-25_ru1.txt
+14.30,FK Nizhny Novgorod,Dinamo Moskva,1,1,X,0-0,2024-25_ru1.txt
+17.00,Rubin Kazan,Lokomotiv Moskva,1,0,1,0-0,2024-25_ru1.txt
+19.30,Akhmat Grozny,FK Rostov,2,1,1,0-0,2024-25_ru1.txt
+14.30,Akron Tolyatti,Fakel Voronezh,1,0,1,0-0,2024-25_ru1.txt
+17.00,Zenit St. Petersburg,FK Krasnodar,4,1,1,2-1,2024-25_ru1.txt
+19.30,FK Khimki,Krylia Sovetov,1,3,2,1-0,2024-25_ru1.txt
+12.00,FK Orenburg,FK Dinamo Makhachkala,2,1,1,0-1,2024-25_ru1.txt
+14.30,Akron Tolyatti,Spartak Moskva,2,3,2,2-1,2024-25_ru1.txt
+17.00,Lokomotiv Moskva,FK Nizhny Novgorod,3,0,1,1-0,2024-25_ru1.txt
+19.30,FK Krasnodar,Akhmat Grozny,3,1,1,1-0,2024-25_ru1.txt
+14.00,Dinamo Moskva,Rubin Kazan,3,1,1,1-1,2024-25_ru1.txt
+,Fakel Voronezh,FK Rostov,0,2,2,0-1,2024-25_ru1.txt
+16.30,Zenit St. Petersburg,FK Khimki,1,0,1,1-0,2024-25_ru1.txt
+19.30,CSKA Moskva,Krylia Sovetov,1,1,X,0-0,2024-25_ru1.txt
+19.30,FK Dinamo Makhachkala,FK Krasnodar,2,3,2,1-2,2024-25_ru1.txt
+14.00,Dinamo Moskva,Zenit St. Petersburg,1,1,X,1-1,2024-25_ru1.txt
+,FK Nizhny Novgorod,Akhmat Grozny,1,0,1,1-0,2024-25_ru1.txt
+16.30,FK Rostov,Lokomotiv Moskva,1,1,X,1-0,2024-25_ru1.txt
+19.30,Spartak Moskva,CSKA Moskva,1,2,2,0-1,2024-25_ru1.txt
+14.00,Krylia Sovetov,FK Orenburg,2,0,1,0-0,2024-25_ru1.txt
+16.30,FK Khimki,Akron Tolyatti,2,2,X,2-1,2024-25_ru1.txt
+19.00,Rubin Kazan,Fakel Voronezh,2,1,1,0-1,2024-25_ru1.txt
+18.00,Akron Tolyatti,FK Dinamo Makhachkala,1,0,1,0-0,2024-25_ru1.txt
+17.00,Lokomotiv Moskva,FK Orenburg,1,1,X,0-0,2024-25_ru1.txt
+19.30,FK Krasnodar,Rubin Kazan,2,1,1,2-0,2024-25_ru1.txt
+14.00,Fakel Voronezh,Spartak Moskva,0,0,X,,2024-25_ru1.txt
+16.30,Akhmat Grozny,CSKA Moskva,1,1,X,1-1,2024-25_ru1.txt
+19.30,Zenit St. Petersburg,FK Nizhny Novgorod,2,1,1,0-1,2024-25_ru1.txt
+,FK Khimki,FK Rostov,1,1,X,0-0,2024-25_ru1.txt
+18.30,Krylia Sovetov,Dinamo Moskva,1,3,2,1-1,2024-25_ru1.txt
+14.30,FK Orenburg,FK Khimki,1,1,X,0-0,2024-25_ru1.txt
+17.00,FK Dinamo Makhachkala,Zenit St. Petersburg,0,1,2,0-1,2024-25_ru1.txt
+19.30,CSKA Moskva,FK Krasnodar,1,0,1,0-0,2024-25_ru1.txt
+14.00,Akron Tolyatti,Akhmat Grozny,3,2,1,2-1,2024-25_ru1.txt
+16.30,Fakel Voronezh,Lokomotiv Moskva,0,1,2,0-1,2024-25_ru1.txt
+19.30,Dinamo Moskva,Spartak Moskva,2,0,1,2-0,2024-25_ru1.txt
+,Rubin Kazan,FK Rostov,1,0,1,0-0,2024-25_ru1.txt
+19.00,FK Nizhny Novgorod,Krylia Sovetov,5,2,1,4-1,2024-25_ru1.txt
+14.00,FK Orenburg,FK Krasnodar,1,2,2,1-1,2024-25_ru1.txt
+16.30,FK Khimki,Rubin Kazan,3,2,1,1-1,2024-25_ru1.txt
+19.00,FK Nizhny Novgorod,Fakel Voronezh,1,1,X,0-1,2024-25_ru1.txt
+13.30,Krylia Sovetov,Spartak Moskva,0,2,2,0-2,2024-25_ru1.txt
+14.00,Akhmat Grozny,FK Dinamo Makhachkala,1,1,X,0-1,2024-25_ru1.txt
+16.30,Dinamo Moskva,Akron Tolyatti,2,1,1,1-0,2024-25_ru1.txt
+19.00,FK Rostov,Zenit St. Petersburg,0,1,2,0-1,2024-25_ru1.txt
+20.30,Lokomotiv Moskva,CSKA Moskva,2,2,X,2-0,2024-25_ru1.txt
+16.30,Zenit St. Petersburg,Akhmat Grozny,3,0,1,2-0,2024-25_ru1.txt
+,Spartak Moskva,FK Khimki,5,0,1,2-0,2024-25_ru1.txt
+,FK Krasnodar,Dinamo Moskva,3,0,1,0-0,2024-25_ru1.txt
+,CSKA Moskva,FK Nizhny Novgorod,2,0,1,1-0,2024-25_ru1.txt
+,Fakel Voronezh,Krylia Sovetov,1,1,X,0-1,2024-25_ru1.txt
+,Rubin Kazan,FK Orenburg,4,2,1,3-2,2024-25_ru1.txt
+,FK Dinamo Makhachkala,FK Rostov,1,1,X,1-0,2024-25_ru1.txt
+,Akron Tolyatti,Lokomotiv Moskva,1,4,2,0-1,2024-25_ru1.txt

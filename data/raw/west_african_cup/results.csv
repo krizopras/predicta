@@ -1,0 +1,55 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Benin,Ghana,0,4,2,Cotonou,Benin,1982_west_african_cup.txt
+Liberia,Togo,0,1,2,Cotonou,Benin,1982_west_african_cup.txt
+Benin,Niger,2,0,1,Cotonou,Benin,1982_west_african_cup.txt
+Ghana,Ivory Coast,5,5,X,Cotonou,Benin,1982_west_african_cup.txt
+Liberia,Burkina Faso,1,2,2,Cotonou,Benin,1982_west_african_cup.txt
+Benin,Ivory Coast,3,3,X,Cotonou,Benin,1982_west_african_cup.txt
+Ghana,Niger,2,2,X,Cotonou,Benin,1982_west_african_cup.txt
+Togo,Burkina Faso,2,1,1,Cotonou,Benin,1982_west_african_cup.txt
+Ghana,Burkina Faso,1,0,1,Cotonou,Benin,1982_west_african_cup.txt
+Ivory Coast,Niger,1,1,X,Cotonou,Benin,1982_west_african_cup.txt
+Ivory Coast,Togo,1,1,X,Cotonou,Benin   [Togo wins on penalties],1982_west_african_cup.txt
+Ivory Coast,Burkina Faso,1,1,X,Cotonou,Benin   [Burkina Faso wins on penalties],1982_west_african_cup.txt
+Ghana,Togo,2,1,1,Cotonou,Benin,1982_west_african_cup.txt
+Ivory Coast,Liberia,0,0,X,Abidjan,Ivory Coast,1983_west_african_cup.txt
+Ghana,Togo,1,1,X,Abidjan,Ivory Coast,1983_west_african_cup.txt
+Ghana,Liberia,1,0,1,Abidjan,Ivory Coast,1983_west_african_cup.txt
+Ivory Coast,Togo,3,0,1,Abidjan,Ivory Coast,1983_west_african_cup.txt
+Ivory Coast,Ghana,0,2,2,Abidjan,Ivory Coast,1983_west_african_cup.txt
+Liberia,Togo,0,4,2,Abidjan,Ivory Coast,1983_west_african_cup.txt
+Ghana,Togo,3,1,1,Abidjan,Ivory Coast,1983_west_african_cup.txt
+Ivory Coast,Liberia,2,1,1,Abidjan,Ivory Coast,1983_west_african_cup.txt
+Burkina Faso,Togo,1,1,X,Ouagadougou,Burkina Faso,1984_west_african_cup.txt
+Ghana,Ivory Coast,2,0,1,Ouagadougou,Burkina Faso,1984_west_african_cup.txt
+Burkina Faso,Ivory Coast,2,2,X,Ouagadougou,Burkina Faso,1984_west_african_cup.txt
+Ghana,Togo,2,2,X,Ouagadougou,Burkina Faso,1984_west_african_cup.txt
+Burkina Faso,Benin,2,1,1,Ouagadougou,Burkina Faso,1984_west_african_cup.txt
+Ivory Coast,Togo,1,1,X,Ouagadougou,Burkina Faso,1984_west_african_cup.txt
+Benin,Ivory Coast,1,2,2,Ouagadougou,Burkina Faso,1984_west_african_cup.txt
+Burkina Faso,Ghana,1,1,X,Ouagadougou,Burkina Faso,1984_west_african_cup.txt
+Benin,Togo,0,2,2,Ouagadougou,Burkina Faso,1984_west_african_cup.txt
+Benin,Ghana,1,3,2,Ouagadougou,Burkina Faso,1984_west_african_cup.txt
+Burkina Faso,Ivory Coast,0,2,2,Ouagadougou,Burkina Faso,1984_west_african_cup.txt
+Ghana,Togo,1,1,X,Ouagadougou,Burkina Faso   [Ghana wins on penalties],1984_west_african_cup.txt
+Liberia,Burkina Faso,0,1,2,Accra,Ghana,1986_west_african_cup.txt
+Burkina Faso,Togo,0,1,2,Accra,Ghana,1986_west_african_cup.txt
+Ghana,Niger,2,0,1,Accra,Ghana,1986_west_african_cup.txt
+Ghana,Togo,2,2,X,Accra,Ghana,1986_west_african_cup.txt
+Liberia,Niger,3,0,1,Accra,Ghana,1986_west_african_cup.txt
+Burkina Faso,Niger,0,0,X,Accra,Ghana,1986_west_african_cup.txt
+Ghana,Liberia,3,0,1,Accra,Ghana,1986_west_african_cup.txt
+Ghana,Burkina Faso,2,0,1,Accra,Ghana,1986_west_african_cup.txt
+Togo,Liberia,1,0,1,Accra,Ghana,1986_west_african_cup.txt
+Niger,Togo,3,1,1,Accra,Ghana,1986_west_african_cup.txt
+Ghana,Burkina Faso,2,0,1,Accra,Ghana,1986_west_african_cup.txt
+Togo,Niger,3,1,1,Accra,Ghana,1986_west_african_cup.txt
+Burkina Faso,Niger,1,2,2,Accra,Ghana,1986_west_african_cup.txt
+Ghana,Togo,1,0,1,Accra,Ghana,1986_west_african_cup.txt
+Ivory Coast,Ghana,0,2,2,Monrovia,Liberia,1987_west_african_cup.txt
+Liberia,Burkina Faso,2,0,1,Monrovia,Liberia,1987_west_african_cup.txt
+Niger,Ghana,0,4,2,Monrovia,Liberia,1987_west_african_cup.txt
+Liberia,Benin,0,0,X,Monrovia,Liberia,1987_west_african_cup.txt
+Niger,Ivory Coast,0,1,2,Monrovia,Liberia,1987_west_african_cup.txt
+Burkina Faso,Benin,3,2,1,Monrovia,Liberia,1987_west_african_cup.txt
+Liberia,Ghana,1,2,2,Monrovia,Liberia,1987_west_african_cup.txt

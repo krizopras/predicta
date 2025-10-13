@@ -1,0 +1,8 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+India,Myanmar,1,0,1,Imphal,India,2023_tri_nation_tournament.txt
+Nepal,Laos,2,0,1,Kathmandu,Nepal,2023_tri_nation_tournament.txt
+Bhutan,Laos,1,2,2,Kathmandu,Nepal,2023_tri_nation_tournament.txt
+Myanmar,Kyrgyzstan,1,1,X,Imphal,India,2023_tri_nation_tournament.txt
+India,Kyrgyzstan,2,0,1,Imphal,India,2023_tri_nation_tournament.txt
+Nepal,Bhutan,1,1,X,Kathmandu,Nepal,2023_tri_nation_tournament.txt
+Nepal,Laos,2,1,1,Kathmandu,Nepal,2023_tri_nation_tournament.txt

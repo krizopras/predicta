@@ -1,0 +1,4 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Jamaica,Haiti,3,2,1,Kingston,Jamaica,1963_phillip_seaga_cup.txt
+Jamaica,Curaçao,1,2,2,Kingston,Jamaica,1963_phillip_seaga_cup.txt
+Haiti,Curaçao,0,1,2,Kingston,Jamaica,1963_phillip_seaga_cup.txt

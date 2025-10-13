@@ -1,0 +1,4 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Uganda,Kenya,3,2,1,Lusaka,Northern Rhodesia,1964_zambian_independence_tournament.txt
+Zambia,Uganda,0,2,2,Luanshya,Northern Rhodesia,1964_zambian_independence_tournament.txt
+Zambia,Kenya,2,3,2,Ndola,Northern Rhodesia,1964_zambian_independence_tournament.txt

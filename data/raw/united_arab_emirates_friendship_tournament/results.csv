@@ -1,0 +1,32 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Egypt,Morocco,1,1,X,Sharjah,United Arab Emirates,1994_united_arab_emirates_friendship_tournament.txt
+United Arab Emirates,Slovakia,0,1,2,Sharjah,United Arab Emirates,1994_united_arab_emirates_friendship_tournament.txt
+Egypt,Slovakia,1,0,1,Sharjah,United Arab Emirates,1994_united_arab_emirates_friendship_tournament.txt
+United Arab Emirates,Morocco,1,1,X,Sharjah,United Arab Emirates,1994_united_arab_emirates_friendship_tournament.txt
+Morocco,Slovakia,2,1,1,Sharjah,United Arab Emirates,1994_united_arab_emirates_friendship_tournament.txt
+United Arab Emirates,Egypt,0,1,2,Dubai,United Arab Emirates,1994_united_arab_emirates_friendship_tournament.txt
+United Arab Emirates,South Korea,3,2,1,Dubai,United Arab Emirates,1996_united_arab_emirates_friendship_tournament.txt
+Egypt,Morocco,0,2,2,Dubai,United Arab Emirates,1996_united_arab_emirates_friendship_tournament.txt
+United Arab Emirates,Egypt,0,0,X,Dubai,United Arab Emirates,1996_united_arab_emirates_friendship_tournament.txt
+South Korea,Morocco,2,2,X,Dubai,United Arab Emirates,1996_united_arab_emirates_friendship_tournament.txt
+Egypt,South Korea,1,1,X,Dubai,United Arab Emirates,1996_united_arab_emirates_friendship_tournament.txt
+United Arab Emirates,Morocco,1,0,1,Dubai,United Arab Emirates,1996_united_arab_emirates_friendship_tournament.txt
+Lebanon,Syria,3,3,X,Abu Dhabi,United Arab Emirates,1998_united_arab_emirates_friendship_tournament.txt
+United Arab Emirates,Sudan,2,1,1,Abu Dhabi,United Arab Emirates,1998_united_arab_emirates_friendship_tournament.txt
+Lebanon,Sudan,1,1,X,Abu Dhabi,United Arab Emirates,1998_united_arab_emirates_friendship_tournament.txt
+United Arab Emirates,Syria,1,0,1,Abu Dhabi,United Arab Emirates,1998_united_arab_emirates_friendship_tournament.txt
+Sudan,Syria,2,3,2,Abu Dhabi,United Arab Emirates,1998_united_arab_emirates_friendship_tournament.txt
+United Arab Emirates,Lebanon,1,0,1,Abu Dhabi,United Arab Emirates,1998_united_arab_emirates_friendship_tournament.txt
+Iraq,Estonia,1,1,X,Abu Dhabi,United Arab Emirates,1999_united_arab_emirates_friendship_tournament.txt
+United Arab Emirates,Turkmenistan,3,1,1,Abu Dhabi,United Arab Emirates,1999_united_arab_emirates_friendship_tournament.txt
+Iraq,Turkmenistan,3,0,1,Abu Dhabi,United Arab Emirates,1999_united_arab_emirates_friendship_tournament.txt
+United Arab Emirates,Estonia,2,2,X,Abu Dhabi,United Arab Emirates,1999_united_arab_emirates_friendship_tournament.txt
+Turkmenistan,Estonia,1,1,X,Abu Dhabi,United Arab Emirates,1999_united_arab_emirates_friendship_tournament.txt
+United Arab Emirates,Iraq,2,2,X,Abu Dhabi,United Arab Emirates,1999_united_arab_emirates_friendship_tournament.txt
+Australia,Kuwait,1,0,1,Dubai,United Arab Emirates,2000_united_arab_emirates_friendship_tournament.txt
+United Arab Emirates,South Korea,1,1,X,Dubai,United Arab Emirates   [United Arab Emirates wins on penalties],2000_united_arab_emirates_friendship_tournament.txt
+Australia,South Korea,2,4,2,Dubai,United Arab Emirates,2000_united_arab_emirates_friendship_tournament.txt
+United Arab Emirates,Kuwait,1,0,1,Dubai,United Arab Emirates,2000_united_arab_emirates_friendship_tournament.txt
+Morocco,South Korea,1,1,X,Dubai,United Arab Emirates,2001_united_arab_emirates_friendship_tournament.txt
+United Arab Emirates,South Korea,1,4,2,Dubai,United Arab Emirates,2001_united_arab_emirates_friendship_tournament.txt
+United Arab Emirates,Morocco,1,1,X,Dubai,United Arab Emirates,2001_united_arab_emirates_friendship_tournament.txt

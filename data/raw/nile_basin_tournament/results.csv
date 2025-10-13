@@ -1,0 +1,15 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Egypt,Tanzania,5,1,1,Cairo,Egypt,2011_nile_basin_tournament.txt
+Kenya,Sudan,1,0,1,Cairo,Egypt,2011_nile_basin_tournament.txt
+Uganda,Burundi,3,1,1,Cairo,Egypt,2011_nile_basin_tournament.txt
+DR Congo,Kenya,1,0,1,Cairo,Egypt,2011_nile_basin_tournament.txt
+Egypt,Uganda,1,0,1,Cairo,Egypt,2011_nile_basin_tournament.txt
+Tanzania,Burundi,1,1,X,Cairo,Egypt,2011_nile_basin_tournament.txt
+DR Congo,Sudan,2,1,1,Cairo,Egypt,2011_nile_basin_tournament.txt
+Egypt,Burundi,3,0,1,Ismailia,Egypt,2011_nile_basin_tournament.txt
+Uganda,Tanzania,1,1,X,Cairo,Egypt,2011_nile_basin_tournament.txt
+DR Congo,Uganda,0,1,2,Cairo,Egypt,2011_nile_basin_tournament.txt
+Egypt,Kenya,5,1,1,Cairo,Egypt,2011_nile_basin_tournament.txt
+Tanzania,Sudan,0,2,2,Cairo,Egypt,2011_nile_basin_tournament.txt
+DR Congo,Kenya,1,0,1,Ismailia,Egypt,2011_nile_basin_tournament.txt
+Egypt,Uganda,3,1,1,Ismailia,Egypt,2011_nile_basin_tournament.txt

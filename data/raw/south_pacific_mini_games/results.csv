@@ -1,0 +1,40 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Vanuatu,Samoa,13,1,1,Honiara,Solomon Islands,1981_south_pacific_mini_games.txt
+Solomon Islands,Fiji,1,2,2,Honiara,Solomon Islands,1981_south_pacific_mini_games.txt
+Tahiti,New Caledonia,1,0,1,Honiara,Solomon Islands,1981_south_pacific_mini_games.txt
+Papua New Guinea,Fiji,3,2,1,Honiara,Solomon Islands,1981_south_pacific_mini_games.txt
+Vanuatu,New Caledonia,2,2,X,Honiara,Solomon Islands,1981_south_pacific_mini_games.txt
+Tahiti,Samoa,13,0,1,Honiara,Solomon Islands,1981_south_pacific_mini_games.txt
+Solomon Islands,New Caledonia,1,1,X,Honiara,Solomon Islands,1981_south_pacific_mini_games.txt
+Papua New Guinea,Samoa,4,1,1,Honiara,Solomon Islands,1981_south_pacific_mini_games.txt
+Tahiti,Vanuatu,1,1,X,Honiara,Solomon Islands,1981_south_pacific_mini_games.txt
+Vanuatu,Fiji,1,1,X,Honiara,Solomon Islands,1981_south_pacific_mini_games.txt
+Solomon Islands,Samoa,5,0,1,Honiara,Solomon Islands,1981_south_pacific_mini_games.txt
+New Caledonia,Papua New Guinea,5,1,1,Honiara,Solomon Islands,1981_south_pacific_mini_games.txt
+Fiji,Samoa,4,0,1,Honiara,Solomon Islands,1981_south_pacific_mini_games.txt
+Tahiti,Papua New Guinea,5,0,1,Honiara,Solomon Islands,1981_south_pacific_mini_games.txt
+Solomon Islands,Vanuatu,2,1,1,Honiara,Solomon Islands,1981_south_pacific_mini_games.txt
+Vanuatu,Papua New Guinea,2,3,2,Honiara,Solomon Islands,1981_south_pacific_mini_games.txt
+New Caledonia,Fiji,3,0,1,Honiara,Solomon Islands,1981_south_pacific_mini_games.txt
+Solomon Islands,Tahiti,1,4,2,Honiara,Solomon Islands,1981_south_pacific_mini_games.txt
+New Caledonia,Samoa,8,0,1,Honiara,Solomon Islands,1981_south_pacific_mini_games.txt
+Tahiti,Fiji,6,0,1,Honiara,Solomon Islands,1981_south_pacific_mini_games.txt
+Solomon Islands,Papua New Guinea,1,2,2,Honiara,Solomon Islands,1981_south_pacific_mini_games.txt
+Papua New Guinea,Vanuatu,1,0,1,Honiara,Solomon Islands,1981_south_pacific_mini_games.txt
+Tahiti,New Caledonia,1,0,1,Honiara,Solomon Islands,1981_south_pacific_mini_games.txt
+Vanuatu,Tonga,3,0,1,Port Vila,Vanuatu,1993_south_pacific_mini_games.txt
+Tahiti,Guam,11,0,1,Port Vila,Vanuatu,1993_south_pacific_mini_games.txt
+Fiji,Solomon Islands,1,0,1,Port Vila,Vanuatu,1993_south_pacific_mini_games.txt
+New Caledonia,Papua New Guinea,1,1,X,Port Vila,Vanuatu,1993_south_pacific_mini_games.txt
+Tahiti,Fiji,1,0,1,Port Vila,Vanuatu,1993_south_pacific_mini_games.txt
+Tonga,Papua New Guinea,0,5,2,Port Vila,Vanuatu,1993_south_pacific_mini_games.txt
+Vanuatu,New Caledonia,1,1,X,Port Vila,Vanuatu,1993_south_pacific_mini_games.txt
+Solomon Islands,Guam,12,1,1,Port Vila,Vanuatu,1993_south_pacific_mini_games.txt
+New Caledonia,Tonga,11,0,1,Port Vila,Vanuatu,1993_south_pacific_mini_games.txt
+Vanuatu,Papua New Guinea,1,0,1,Port Vila,Vanuatu,1993_south_pacific_mini_games.txt
+Fiji,Guam,12,0,1,Port Vila,Vanuatu,1993_south_pacific_mini_games.txt
+Tahiti,Solomon Islands,3,0,1,Port Vila,Vanuatu,1993_south_pacific_mini_games.txt
+Tahiti,New Caledonia,2,1,1,Port Vila,Vanuatu,1993_south_pacific_mini_games.txt
+Vanuatu,Fiji,0,2,2,Port Vila,Vanuatu,1993_south_pacific_mini_games.txt
+Vanuatu,New Caledonia,1,2,2,Port Vila,Vanuatu,1993_south_pacific_mini_games.txt
+Tahiti,Fiji,3,0,1,Port Vila,Vanuatu,1993_south_pacific_mini_games.txt

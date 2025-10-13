@@ -1,0 +1,5 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Saudi Arabia,New Zealand,0,1,2,Riyadh,Saudi Arabia,2013_osn_cup.txt
+United Arab Emirates,Trinidad and Tobago,3,3,X,Riyadh,Saudi Arabia,2013_osn_cup.txt
+Saudi Arabia,Trinidad and Tobago,1,3,2,Riyadh,Saudi Arabia,2013_osn_cup.txt
+United Arab Emirates,New Zealand,2,0,1,Riyadh,Saudi Arabia,2013_osn_cup.txt

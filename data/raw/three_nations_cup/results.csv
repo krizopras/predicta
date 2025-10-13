@@ -1,0 +1,4 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Kyrgyzstan,Palestine,1,0,1,Bishkek,Kyrgyzstan,2021_three_nations_cup.txt
+Bangladesh,Palestine,0,2,2,Bishkek,Kyrgyzstan,2021_three_nations_cup.txt
+Kyrgyzstan,Bangladesh,4,1,1,Bishkek,Kyrgyzstan,2021_three_nations_cup.txt

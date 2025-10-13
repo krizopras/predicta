@@ -1,0 +1,23 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Bahrain,Finland,0,2,2,Riffa,Bahrain,2002_prime_ministers_cup.txt
+Albania,North Macedonia,0,0,X,Riffa,Bahrain,2002_prime_ministers_cup.txt
+Albania,Finland,1,1,X,Riffa,Bahrain,2002_prime_ministers_cup.txt
+Bahrain,North Macedonia,1,1,X,Riffa,Bahrain,2002_prime_ministers_cup.txt
+Bahrain,Albania,3,0,1,Riffa,Bahrain,2002_prime_ministers_cup.txt
+Finland,North Macedonia,3,0,1,Riffa,Bahrain,2002_prime_ministers_cup.txt
+Bahrain,Jordan,0,3,2,Riffa,Bahrain,2002_prime_ministers_cup.txt
+China PR,Syria,3,1,1,Riffa,Bahrain,2002_prime_ministers_cup.txt
+Bahrain,Syria,2,3,2,Riffa,Bahrain,2002_prime_ministers_cup.txt
+China PR,Jordan,0,0,X,Riffa,Bahrain,2002_prime_ministers_cup.txt
+Bahrain,China PR,2,2,X,Riffa,Bahrain,2002_prime_ministers_cup.txt
+Jordan,Syria,3,0,1,Riffa,Bahrain,2002_prime_ministers_cup.txt
+Bahrain,Iraq,2,2,X,Riffa,Bahrain,2003_prime_ministers_cup.txt
+Kenya,Egypt,0,1,2,Riffa,Bahrain,2003_prime_ministers_cup.txt
+Bahrain,Egypt,0,1,2,Riffa,Bahrain,2003_prime_ministers_cup.txt
+Iraq,Kenya,2,0,1,Riffa,Bahrain,2003_prime_ministers_cup.txt
+Bahrain,Kenya,2,1,1,Riffa,Bahrain,2003_prime_ministers_cup.txt
+Egypt,Iraq,2,0,1,Riffa,Bahrain,2003_prime_ministers_cup.txt
+Bahrain,Finland,1,2,2,Riffa,Bahrain,2004_prime_ministers_cup.txt
+Latvia,Oman,2,3,2,Riffa,Bahrain,2004_prime_ministers_cup.txt
+Bahrain,Latvia,2,2,X,Riffa,Bahrain   [Bahrain wins on penalties],2004_prime_ministers_cup.txt
+Finland,Oman,0,0,X,Riffa,Bahrain   [Oman wins on penalties],2004_prime_ministers_cup.txt

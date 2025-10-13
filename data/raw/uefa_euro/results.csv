@@ -1,0 +1,389 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Czechoslovakia,Russia,0,3,2,Marseille,France,1960_uefa_euro.txt
+France,Yugoslavia,4,5,2,Paris,France,1960_uefa_euro.txt
+France,Czechoslovakia,0,2,2,Marseille,France,1960_uefa_euro.txt
+Russia,Yugoslavia,2,1,1,Paris,France,1960_uefa_euro.txt
+Denmark,Russia,0,3,2,Barcelona,Spain,1964_uefa_euro.txt
+Spain,Hungary,2,1,1,Madrid,Spain,1964_uefa_euro.txt
+Hungary,Denmark,3,1,1,Barcelona,Spain,1964_uefa_euro.txt
+Spain,Russia,2,1,1,Madrid,Spain,1964_uefa_euro.txt
+England,Yugoslavia,0,1,2,Florence,Italy,1968_uefa_euro.txt
+Italy,Russia,0,0,X,Naples,Italy,1968_uefa_euro.txt
+England,Russia,2,0,1,Rome,Italy,1968_uefa_euro.txt
+Italy,Yugoslavia,1,1,X,Rome,Italy,1968_uefa_euro.txt
+Italy,Yugoslavia,2,0,1,Rome,Italy,1968_uefa_euro.txt
+Belgium,Germany,1,2,2,Antwerp,Belgium,1972_uefa_euro.txt
+Hungary,Russia,0,1,2,Brussels,Belgium,1972_uefa_euro.txt
+Belgium,Hungary,2,1,1,Liège,Belgium,1972_uefa_euro.txt
+Germany,Russia,3,0,1,Brussels,Belgium,1972_uefa_euro.txt
+Czechoslovakia,Netherlands,3,1,1,Zagreb,Yugoslavia,1976_uefa_euro.txt
+Yugoslavia,Germany,2,4,2,Belgrade,Yugoslavia,1976_uefa_euro.txt
+Yugoslavia,Netherlands,2,3,2,Zagreb,Yugoslavia,1976_uefa_euro.txt
+Czechoslovakia,Germany,2,2,X,Belgrade,Yugoslavia   [Czechoslovakia wins on penalties],1976_uefa_euro.txt
+Czechoslovakia,Germany,0,1,2,Rome,Italy,1980_uefa_euro.txt
+Netherlands,Greece,1,0,1,Naples,Italy,1980_uefa_euro.txt
+Belgium,England,1,1,X,Turin,Italy,1980_uefa_euro.txt
+Italy,Spain,0,0,X,Milan,Italy,1980_uefa_euro.txt
+Germany,Netherlands,3,2,1,Naples,Italy,1980_uefa_euro.txt
+Greece,Czechoslovakia,1,3,2,Rome,Italy,1980_uefa_euro.txt
+Belgium,Spain,2,1,1,Milan,Italy,1980_uefa_euro.txt
+Italy,England,1,0,1,Turin,Italy,1980_uefa_euro.txt
+Greece,Germany,0,0,X,Turin,Italy,1980_uefa_euro.txt
+Netherlands,Czechoslovakia,1,1,X,Milan,Italy,1980_uefa_euro.txt
+Italy,Belgium,0,0,X,Rome,Italy,1980_uefa_euro.txt
+Spain,England,1,2,2,Naples,Italy,1980_uefa_euro.txt
+Italy,Czechoslovakia,1,1,X,Naples,Italy   [Czechoslovakia wins on penalties],1980_uefa_euro.txt
+Belgium,Germany,1,2,2,Rome,Italy,1980_uefa_euro.txt
+France,Denmark,1,0,1,Paris,France,1984_uefa_euro.txt
+Belgium,Yugoslavia,2,0,1,Lens,France,1984_uefa_euro.txt
+Germany,Portugal,0,0,X,Strasbourg,France,1984_uefa_euro.txt
+Romania,Spain,1,1,X,Saint-Étienne,France,1984_uefa_euro.txt
+Denmark,Yugoslavia,5,0,1,Lyon,France,1984_uefa_euro.txt
+France,Belgium,5,0,1,Nantes,France,1984_uefa_euro.txt
+Germany,Romania,2,1,1,Lens,France,1984_uefa_euro.txt
+Portugal,Spain,1,1,X,Marseille,France,1984_uefa_euro.txt
+Denmark,Belgium,3,2,1,Strasbourg,France,1984_uefa_euro.txt
+France,Yugoslavia,3,2,1,Saint-Étienne,France,1984_uefa_euro.txt
+Germany,Spain,0,1,2,Paris,France,1984_uefa_euro.txt
+Portugal,Romania,1,0,1,Nantes,France,1984_uefa_euro.txt
+France,Portugal,3,2,1,Marseille,France,1984_uefa_euro.txt
+Denmark,Spain,1,1,X,Lyon,France   [Spain wins on penalties],1984_uefa_euro.txt
+France,Spain,2,0,1,Paris,France,1984_uefa_euro.txt
+Germany,Italy,1,1,X,Düsseldorf,Germany,1988_uefa_euro.txt
+Denmark,Spain,2,3,2,Hanover,Germany,1988_uefa_euro.txt
+England,Republic of Ireland,0,1,2,Stuttgart,Germany,1988_uefa_euro.txt
+Netherlands,Russia,0,1,2,Cologne,Germany,1988_uefa_euro.txt
+Germany,Denmark,2,0,1,Gelsenkirchen,Germany,1988_uefa_euro.txt
+Italy,Spain,1,0,1,Frankfurt am Main,Germany,1988_uefa_euro.txt
+England,Netherlands,1,3,2,Düsseldorf,Germany,1988_uefa_euro.txt
+Republic of Ireland,Russia,1,1,X,Hanover,Germany,1988_uefa_euro.txt
+Germany,Spain,2,0,1,Munich,Germany,1988_uefa_euro.txt
+Italy,Denmark,2,0,1,Cologne,Germany,1988_uefa_euro.txt
+England,Russia,1,3,2,Frankfurt am Main,Germany,1988_uefa_euro.txt
+Republic of Ireland,Netherlands,0,1,2,Gelsenkirchen,Germany,1988_uefa_euro.txt
+Germany,Netherlands,1,2,2,Hamburg,Germany,1988_uefa_euro.txt
+Russia,Italy,2,0,1,Stuttgart,Germany,1988_uefa_euro.txt
+Russia,Netherlands,0,2,2,Munich,Germany,1988_uefa_euro.txt
+Sweden,France,1,1,X,Solna,Sweden,1992_uefa_euro.txt
+Denmark,England,0,0,X,Malmö,Sweden,1992_uefa_euro.txt
+Netherlands,Scotland,1,0,1,Gothenburg,Sweden,1992_uefa_euro.txt
+Russia,Germany,1,1,X,Norrköping,Sweden,1992_uefa_euro.txt
+France,England,0,0,X,Malmö,Sweden,1992_uefa_euro.txt
+Sweden,Denmark,1,0,1,Solna,Sweden,1992_uefa_euro.txt
+Netherlands,Russia,0,0,X,Gothenburg,Sweden,1992_uefa_euro.txt
+Scotland,Germany,0,2,2,Norrköping,Sweden,1992_uefa_euro.txt
+France,Denmark,1,2,2,Malmö,Sweden,1992_uefa_euro.txt
+Sweden,England,2,1,1,Solna,Sweden,1992_uefa_euro.txt
+Netherlands,Germany,3,1,1,Gothenburg,Sweden,1992_uefa_euro.txt
+Scotland,Russia,3,0,1,Norrköping,Sweden,1992_uefa_euro.txt
+Sweden,Germany,2,3,2,Solna,Sweden,1992_uefa_euro.txt
+Netherlands,Denmark,2,2,X,Gothenburg,Sweden   [Denmark wins on penalties],1992_uefa_euro.txt
+Denmark,Germany,2,0,1,Gothenburg,Sweden,1992_uefa_euro.txt
+England,Switzerland,1,1,X,London,England,1996_uefa_euro.txt
+Denmark,Portugal,1,1,X,Sheffield,England,1996_uefa_euro.txt
+Germany,Czech Republic,2,0,1,Manchester,England,1996_uefa_euro.txt
+Spain,Bulgaria,1,1,X,Leeds,England,1996_uefa_euro.txt
+Netherlands,Scotland,0,0,X,Birmingham,England,1996_uefa_euro.txt
+Romania,France,0,1,2,Newcastle,England,1996_uefa_euro.txt
+Italy,Russia,2,1,1,Liverpool,England,1996_uefa_euro.txt
+Turkey,Croatia,0,1,2,Nottingham,England,1996_uefa_euro.txt
+Bulgaria,Romania,1,0,1,Newcastle,England,1996_uefa_euro.txt
+Switzerland,Netherlands,0,2,2,Birmingham,England,1996_uefa_euro.txt
+Czech Republic,Italy,2,1,1,Liverpool,England,1996_uefa_euro.txt
+Portugal,Turkey,1,0,1,Nottingham,England,1996_uefa_euro.txt
+England,Scotland,2,0,1,London,England,1996_uefa_euro.txt
+France,Spain,1,1,X,Leeds,England,1996_uefa_euro.txt
+Croatia,Denmark,3,0,1,Sheffield,England,1996_uefa_euro.txt
+Russia,Germany,0,3,2,Manchester,England,1996_uefa_euro.txt
+England,Netherlands,4,1,1,London,England,1996_uefa_euro.txt
+France,Bulgaria,3,1,1,Newcastle,England,1996_uefa_euro.txt
+Romania,Spain,1,2,2,Leeds,England,1996_uefa_euro.txt
+Scotland,Switzerland,1,0,1,Birmingham,England,1996_uefa_euro.txt
+Croatia,Portugal,0,3,2,Nottingham,England,1996_uefa_euro.txt
+Italy,Germany,0,0,X,Manchester,England,1996_uefa_euro.txt
+Russia,Czech Republic,3,3,X,Liverpool,England,1996_uefa_euro.txt
+Turkey,Denmark,0,3,2,Sheffield,England,1996_uefa_euro.txt
+England,Spain,0,0,X,London,England   [England wins on penalties],1996_uefa_euro.txt
+France,Netherlands,0,0,X,Liverpool,England   [France wins on penalties],1996_uefa_euro.txt
+Czech Republic,Portugal,1,0,1,Birmingham,England,1996_uefa_euro.txt
+Germany,Croatia,2,1,1,Manchester,England,1996_uefa_euro.txt
+England,Germany,1,1,X,London,England   [Germany wins on penalties],1996_uefa_euro.txt
+France,Czech Republic,0,0,X,Manchester,England   [Czech Republic wins on penalties],1996_uefa_euro.txt
+Czech Republic,Germany,1,2,2,London,England,1996_uefa_euro.txt
+Belgium,Sweden,2,1,1,Brussels,Belgium,2000_uefa_euro.txt
+France,Denmark,3,0,1,Bruges,Belgium,2000_uefa_euro.txt
+Netherlands,Czech Republic,1,0,1,Amsterdam,Netherlands,2000_uefa_euro.txt
+Turkey,Italy,1,2,2,Arnhem,Netherlands,2000_uefa_euro.txt
+Germany,Romania,1,1,X,Liège,Belgium,2000_uefa_euro.txt
+Portugal,England,3,2,1,Eindhoven,Netherlands,2000_uefa_euro.txt
+Serbia,Slovenia,3,3,X,Charleroi,Belgium,2000_uefa_euro.txt
+Spain,Norway,0,1,2,Rotterdam,Netherlands,2000_uefa_euro.txt
+Belgium,Italy,0,2,2,Brussels,Belgium,2000_uefa_euro.txt
+Sweden,Turkey,0,0,X,Eindhoven,Netherlands,2000_uefa_euro.txt
+Czech Republic,France,1,2,2,Bruges,Belgium,2000_uefa_euro.txt
+Netherlands,Denmark,3,0,1,Rotterdam,Netherlands,2000_uefa_euro.txt
+England,Germany,1,0,1,Charleroi,Belgium,2000_uefa_euro.txt
+Romania,Portugal,0,1,2,Arnhem,Netherlands,2000_uefa_euro.txt
+Norway,Serbia,0,1,2,Liège,Belgium,2000_uefa_euro.txt
+Slovenia,Spain,1,2,2,Amsterdam,Netherlands,2000_uefa_euro.txt
+Belgium,Turkey,0,2,2,Brussels,Belgium,2000_uefa_euro.txt
+Italy,Sweden,2,1,1,Eindhoven,Netherlands,2000_uefa_euro.txt
+England,Romania,2,3,2,Charleroi,Belgium,2000_uefa_euro.txt
+Portugal,Germany,3,0,1,Rotterdam,Netherlands,2000_uefa_euro.txt
+Denmark,Czech Republic,0,2,2,Liège,Belgium,2000_uefa_euro.txt
+Netherlands,France,3,2,1,Amsterdam,Netherlands,2000_uefa_euro.txt
+Serbia,Spain,3,4,2,Bruges,Belgium,2000_uefa_euro.txt
+Slovenia,Norway,0,0,X,Arnhem,Netherlands,2000_uefa_euro.txt
+Italy,Romania,2,0,1,Brussels,Belgium,2000_uefa_euro.txt
+Turkey,Portugal,0,2,2,Amsterdam,Netherlands,2000_uefa_euro.txt
+Netherlands,Serbia,6,1,1,Rotterdam,Netherlands,2000_uefa_euro.txt
+Spain,France,1,2,2,Bruges,Belgium,2000_uefa_euro.txt
+France,Portugal,2,1,1,Brussels,Belgium,2000_uefa_euro.txt
+Netherlands,Italy,0,0,X,Amsterdam,Netherlands   [Italy wins on penalties],2000_uefa_euro.txt
+France,Italy,2,1,1,Rotterdam,Netherlands,2000_uefa_euro.txt
+Portugal,Greece,1,2,2,Porto,Portugal,2004_uefa_euro.txt
+Spain,Russia,1,0,1,Faro,Portugal,2004_uefa_euro.txt
+France,England,2,1,1,Lisbon,Portugal,2004_uefa_euro.txt
+Switzerland,Croatia,0,0,X,Leiria,Portugal,2004_uefa_euro.txt
+Denmark,Italy,0,0,X,Guimarães,Portugal,2004_uefa_euro.txt
+Sweden,Bulgaria,5,0,1,Lisbon,Portugal,2004_uefa_euro.txt
+Czech Republic,Latvia,2,1,1,Aveiro,Portugal,2004_uefa_euro.txt
+Germany,Netherlands,1,1,X,Porto,Portugal,2004_uefa_euro.txt
+Greece,Spain,1,1,X,Porto,Portugal,2004_uefa_euro.txt
+Portugal,Russia,2,0,1,Lisbon,Portugal,2004_uefa_euro.txt
+Croatia,France,2,2,X,Leiria,Portugal,2004_uefa_euro.txt
+England,Switzerland,3,0,1,Coimbra,Portugal,2004_uefa_euro.txt
+Bulgaria,Denmark,0,2,2,Braga,Portugal,2004_uefa_euro.txt
+Italy,Sweden,1,1,X,Porto,Portugal,2004_uefa_euro.txt
+Latvia,Germany,0,0,X,Porto,Portugal,2004_uefa_euro.txt
+Netherlands,Czech Republic,2,3,2,Aveiro,Portugal,2004_uefa_euro.txt
+Portugal,Spain,1,0,1,Lisbon,Portugal,2004_uefa_euro.txt
+Russia,Greece,2,1,1,Faro,Portugal,2004_uefa_euro.txt
+Croatia,England,2,4,2,Lisbon,Portugal,2004_uefa_euro.txt
+Switzerland,France,1,3,2,Coimbra,Portugal,2004_uefa_euro.txt
+Denmark,Sweden,2,2,X,Porto,Portugal,2004_uefa_euro.txt
+Italy,Bulgaria,2,1,1,Guimarães,Portugal,2004_uefa_euro.txt
+Germany,Czech Republic,1,2,2,Lisbon,Portugal,2004_uefa_euro.txt
+Netherlands,Latvia,3,0,1,Braga,Portugal,2004_uefa_euro.txt
+Portugal,England,2,2,X,Lisbon,Portugal   [Portugal wins on penalties],2004_uefa_euro.txt
+France,Greece,0,1,2,Lisbon,Portugal,2004_uefa_euro.txt
+Sweden,Netherlands,0,0,X,Faro,Portugal   [Netherlands wins on penalties],2004_uefa_euro.txt
+Czech Republic,Denmark,3,0,1,Porto,Portugal,2004_uefa_euro.txt
+Portugal,Netherlands,2,1,1,Lisbon,Portugal,2004_uefa_euro.txt
+Greece,Czech Republic,1,0,1,Porto,Portugal,2004_uefa_euro.txt
+Portugal,Greece,0,1,2,Lisbon,Portugal,2004_uefa_euro.txt
+Portugal,Turkey,2,0,1,Geneva,Switzerland,2008_uefa_euro.txt
+Switzerland,Czech Republic,0,1,2,Basel,Switzerland,2008_uefa_euro.txt
+Austria,Croatia,0,1,2,Vienna,Austria,2008_uefa_euro.txt
+Germany,Poland,2,0,1,Klagenfurt,Austria,2008_uefa_euro.txt
+Netherlands,Italy,3,0,1,Berne,Switzerland,2008_uefa_euro.txt
+Romania,France,0,0,X,Zürich,Switzerland,2008_uefa_euro.txt
+Greece,Sweden,0,2,2,Salzburg,Austria,2008_uefa_euro.txt
+Spain,Russia,4,1,1,Innsbruck,Austria,2008_uefa_euro.txt
+Czech Republic,Portugal,1,3,2,Geneva,Switzerland,2008_uefa_euro.txt
+Switzerland,Turkey,1,2,2,Basel,Switzerland,2008_uefa_euro.txt
+Austria,Poland,1,1,X,Vienna,Austria,2008_uefa_euro.txt
+Croatia,Germany,2,1,1,Klagenfurt,Austria,2008_uefa_euro.txt
+Italy,Romania,1,1,X,Zürich,Switzerland,2008_uefa_euro.txt
+Netherlands,France,4,1,1,Berne,Switzerland,2008_uefa_euro.txt
+Greece,Russia,0,1,2,Salzburg,Austria,2008_uefa_euro.txt
+Sweden,Spain,1,2,2,Innsbruck,Austria,2008_uefa_euro.txt
+Switzerland,Portugal,2,0,1,Basel,Switzerland,2008_uefa_euro.txt
+Turkey,Czech Republic,3,2,1,Geneva,Switzerland,2008_uefa_euro.txt
+Austria,Germany,0,1,2,Vienna,Austria,2008_uefa_euro.txt
+Poland,Croatia,0,1,2,Klagenfurt,Austria,2008_uefa_euro.txt
+France,Italy,0,2,2,Zürich,Switzerland,2008_uefa_euro.txt
+Netherlands,Romania,2,0,1,Berne,Switzerland,2008_uefa_euro.txt
+Greece,Spain,1,2,2,Salzburg,Austria,2008_uefa_euro.txt
+Russia,Sweden,2,0,1,Innsbruck,Austria,2008_uefa_euro.txt
+Portugal,Germany,2,3,2,Basel,Switzerland,2008_uefa_euro.txt
+Croatia,Turkey,1,1,X,Vienna,Austria   [Turkey wins on penalties],2008_uefa_euro.txt
+Netherlands,Russia,1,3,2,Basel,Switzerland,2008_uefa_euro.txt
+Spain,Italy,0,0,X,Vienna,Austria   [Spain wins on penalties],2008_uefa_euro.txt
+Germany,Turkey,3,2,1,Basel,Switzerland,2008_uefa_euro.txt
+Russia,Spain,0,3,2,Vienna,Austria,2008_uefa_euro.txt
+Germany,Spain,0,1,2,Vienna,Austria,2008_uefa_euro.txt
+Poland,Greece,1,1,X,Warsaw,Poland,2012_uefa_euro.txt
+Russia,Czech Republic,4,1,1,Wrocław,Poland,2012_uefa_euro.txt
+Germany,Portugal,1,0,1,Lviv,Ukraine,2012_uefa_euro.txt
+Netherlands,Denmark,0,1,2,Kharkiv,Ukraine,2012_uefa_euro.txt
+Republic of Ireland,Croatia,1,3,2,Poznań,Poland,2012_uefa_euro.txt
+Spain,Italy,1,1,X,Gdańsk,Poland,2012_uefa_euro.txt
+France,England,1,1,X,Donetsk,Ukraine,2012_uefa_euro.txt
+Ukraine,Sweden,2,1,1,Kyiv,Ukraine,2012_uefa_euro.txt
+Greece,Czech Republic,1,2,2,Wrocław,Poland,2012_uefa_euro.txt
+Poland,Russia,1,1,X,Warsaw,Poland,2012_uefa_euro.txt
+Denmark,Portugal,2,3,2,Lviv,Ukraine,2012_uefa_euro.txt
+Netherlands,Germany,1,2,2,Kharkiv,Ukraine,2012_uefa_euro.txt
+Italy,Croatia,1,1,X,Poznań,Poland,2012_uefa_euro.txt
+Spain,Republic of Ireland,4,0,1,Gdańsk,Poland,2012_uefa_euro.txt
+Sweden,England,2,3,2,Kyiv,Ukraine,2012_uefa_euro.txt
+Ukraine,France,0,2,2,Donetsk,Ukraine,2012_uefa_euro.txt
+Greece,Russia,1,0,1,Warsaw,Poland,2012_uefa_euro.txt
+Poland,Czech Republic,0,1,2,Wrocław,Poland,2012_uefa_euro.txt
+Denmark,Germany,1,2,2,Lviv,Ukraine,2012_uefa_euro.txt
+Portugal,Netherlands,2,1,1,Kharkiv,Ukraine,2012_uefa_euro.txt
+Croatia,Spain,0,1,2,Gdańsk,Poland,2012_uefa_euro.txt
+Italy,Republic of Ireland,2,0,1,Poznań,Poland,2012_uefa_euro.txt
+Sweden,France,2,0,1,Kyiv,Ukraine,2012_uefa_euro.txt
+Ukraine,England,0,1,2,Donetsk,Ukraine,2012_uefa_euro.txt
+Czech Republic,Portugal,0,1,2,Warsaw,Poland,2012_uefa_euro.txt
+Germany,Greece,4,2,1,Gdańsk,Poland,2012_uefa_euro.txt
+Spain,France,2,0,1,Donetsk,Ukraine,2012_uefa_euro.txt
+England,Italy,0,0,X,Kyiv,Ukraine   [Italy wins on penalties],2012_uefa_euro.txt
+Portugal,Spain,0,0,X,Donetsk,Ukraine   [Spain wins on penalties],2012_uefa_euro.txt
+Germany,Italy,1,2,2,Warsaw,Poland,2012_uefa_euro.txt
+Spain,Italy,4,0,1,Kyiv,Ukraine,2012_uefa_euro.txt
+France,Romania,2,1,1,Saint-Denis,France,2016_uefa_euro.txt
+Albania,Switzerland,0,1,2,Lens,France,2016_uefa_euro.txt
+England,Russia,1,1,X,Marseille,France,2016_uefa_euro.txt
+Wales,Slovakia,2,1,1,Bordeaux,France,2016_uefa_euro.txt
+Germany,Ukraine,2,0,1,Villeneuve-d'Ascq,France,2016_uefa_euro.txt
+Poland,Northern Ireland,1,0,1,Nice,France,2016_uefa_euro.txt
+Turkey,Croatia,0,1,2,Paris,France,2016_uefa_euro.txt
+Belgium,Italy,0,2,2,Lyon,France,2016_uefa_euro.txt
+Republic of Ireland,Sweden,1,1,X,Saint-Denis,France,2016_uefa_euro.txt
+Spain,Czech Republic,1,0,1,Toulouse,France,2016_uefa_euro.txt
+Austria,Hungary,0,2,2,Bordeaux,France,2016_uefa_euro.txt
+Portugal,Iceland,1,1,X,Saint-Étienne,France,2016_uefa_euro.txt
+France,Albania,2,0,1,Marseille,France,2016_uefa_euro.txt
+Romania,Switzerland,1,1,X,Paris,France,2016_uefa_euro.txt
+Russia,Slovakia,1,2,2,Villeneuve-d'Ascq,France,2016_uefa_euro.txt
+England,Wales,2,1,1,Lens,France,2016_uefa_euro.txt
+Germany,Poland,0,0,X,Saint-Denis,France,2016_uefa_euro.txt
+Ukraine,Northern Ireland,0,2,2,Lyon,France,2016_uefa_euro.txt
+Czech Republic,Croatia,2,2,X,Saint-Étienne,France,2016_uefa_euro.txt
+Italy,Sweden,1,0,1,Toulouse,France,2016_uefa_euro.txt
+Spain,Turkey,3,0,1,Nice,France,2016_uefa_euro.txt
+Belgium,Republic of Ireland,3,0,1,Bordeaux,France,2016_uefa_euro.txt
+Iceland,Hungary,1,1,X,Marseille,France,2016_uefa_euro.txt
+Portugal,Austria,0,0,X,Lyon,France,2016_uefa_euro.txt
+France,Switzerland,0,0,X,Villeneuve-d'Ascq,France,2016_uefa_euro.txt
+Romania,Albania,0,1,2,Lyon,France,2016_uefa_euro.txt
+Russia,Wales,0,3,2,Toulouse,France,2016_uefa_euro.txt
+Slovakia,England,0,0,X,Saint-Étienne,France,2016_uefa_euro.txt
+Croatia,Spain,2,1,1,Bordeaux,France,2016_uefa_euro.txt
+Czech Republic,Turkey,0,2,2,Lens,France,2016_uefa_euro.txt
+Northern Ireland,Germany,0,1,2,Paris,France,2016_uefa_euro.txt
+Ukraine,Poland,0,1,2,Marseille,France,2016_uefa_euro.txt
+Hungary,Portugal,3,3,X,Lyon,France,2016_uefa_euro.txt
+Iceland,Austria,2,1,1,Saint-Denis,France,2016_uefa_euro.txt
+Italy,Republic of Ireland,0,1,2,Villeneuve-d'Ascq,France,2016_uefa_euro.txt
+Sweden,Belgium,0,1,2,Nice,France,2016_uefa_euro.txt
+Croatia,Portugal,0,1,2,Lens,France,2016_uefa_euro.txt
+Switzerland,Poland,1,1,X,Saint-Étienne,France   [Poland wins on penalties],2016_uefa_euro.txt
+Wales,Northern Ireland,1,0,1,Paris,France,2016_uefa_euro.txt
+France,Republic of Ireland,2,1,1,Lyon,France,2016_uefa_euro.txt
+Germany,Slovakia,3,0,1,Villeneuve-d'Ascq,France,2016_uefa_euro.txt
+Hungary,Belgium,0,4,2,Toulouse,France,2016_uefa_euro.txt
+England,Iceland,1,2,2,Nice,France,2016_uefa_euro.txt
+Italy,Spain,2,0,1,Saint-Denis,France,2016_uefa_euro.txt
+Poland,Portugal,1,1,X,Marseille,France   [Portugal wins on penalties],2016_uefa_euro.txt
+Wales,Belgium,3,1,1,Villeneuve-d'Ascq,France,2016_uefa_euro.txt
+Germany,Italy,1,1,X,Bordeaux,France   [Germany wins on penalties],2016_uefa_euro.txt
+France,Iceland,5,2,1,Saint-Denis,France,2016_uefa_euro.txt
+Portugal,Wales,2,0,1,Lyon,France,2016_uefa_euro.txt
+France,Germany,2,0,1,Marseille,France,2016_uefa_euro.txt
+France,Portugal,0,1,2,Saint-Denis,France,2016_uefa_euro.txt
+Italy,Turkey,3,0,1,Rome,Italy,2021_uefa_euro.txt
+Wales,Switzerland,1,1,X,Cardiff,Wales,2021_uefa_euro.txt
+Denmark,Finland,0,1,2,Copenhagen,Denmark,2021_uefa_euro.txt
+Russia,Belgium,0,3,2,Saint Petersburg,Russia,2021_uefa_euro.txt
+Austria,North Macedonia,3,1,1,Bucharest,Romania,2021_uefa_euro.txt
+Netherlands,Ukraine,3,2,1,Amsterdam,Netherlands,2021_uefa_euro.txt
+England,Croatia,1,0,1,London,England,2021_uefa_euro.txt
+Scotland,Czech Republic,0,2,2,Glasgow,Scotland,2021_uefa_euro.txt
+Poland,Slovakia,1,2,2,Saint Petersburg,Russia,2021_uefa_euro.txt
+Spain,Sweden,0,0,X,Seville,Spain,2021_uefa_euro.txt
+Hungary,Portugal,0,3,2,Budapest,Hungary,2021_uefa_euro.txt
+Germany,France,0,1,2,Munich,Germany,2021_uefa_euro.txt
+Turkey,Wales,0,2,2,Baku,Azerbaijan,2021_uefa_euro.txt
+Italy,Switzerland,3,0,1,Rome,Italy,2021_uefa_euro.txt
+Russia,Finland,1,0,1,Saint Petersburg,Russia,2021_uefa_euro.txt
+Denmark,Belgium,1,2,2,Copenhagen,Denmark,2021_uefa_euro.txt
+Ukraine,North Macedonia,2,1,1,Bucharest,Romania,2021_uefa_euro.txt
+Netherlands,Austria,2,0,1,Amsterdam,Netherlands,2021_uefa_euro.txt
+Croatia,Czech Republic,1,1,X,Glasgow,Scotland,2021_uefa_euro.txt
+England,Scotland,0,0,X,London,England,2021_uefa_euro.txt
+Sweden,Slovakia,1,0,1,Saint Petersburg,Russia,2021_uefa_euro.txt
+Spain,Poland,1,1,X,Seville,Spain,2021_uefa_euro.txt
+Hungary,France,1,1,X,Budapest,Hungary,2021_uefa_euro.txt
+Germany,Portugal,4,2,1,Munich,Germany,2021_uefa_euro.txt
+Italy,Wales,1,0,1,Rome,Italy,2021_uefa_euro.txt
+Switzerland,Turkey,3,1,1,Baku,Azerbaijan,2021_uefa_euro.txt
+Denmark,Russia,4,1,1,Copenhagen,Denmark,2021_uefa_euro.txt
+Finland,Belgium,0,2,2,Saint Petersburg,Russia,2021_uefa_euro.txt
+Netherlands,North Macedonia,3,0,1,Amsterdam,Netherlands,2021_uefa_euro.txt
+Ukraine,Austria,0,1,2,Bucharest,Romania,2021_uefa_euro.txt
+Scotland,Croatia,1,3,2,Glasgow,Scotland,2021_uefa_euro.txt
+England,Czech Republic,1,0,1,London,England,2021_uefa_euro.txt
+Spain,Slovakia,5,0,1,Seville,Spain,2021_uefa_euro.txt
+Sweden,Poland,3,2,1,Saint Petersburg,Russia,2021_uefa_euro.txt
+Germany,Hungary,2,2,X,Munich,Germany,2021_uefa_euro.txt
+Portugal,France,2,2,X,Budapest,Hungary,2021_uefa_euro.txt
+Italy,Austria,2,1,1,London,England,2021_uefa_euro.txt
+Wales,Denmark,0,4,2,Amsterdam,Netherlands,2021_uefa_euro.txt
+Netherlands,Czech Republic,0,2,2,Budapest,Hungary,2021_uefa_euro.txt
+Belgium,Portugal,1,0,1,Seville,Spain,2021_uefa_euro.txt
+Croatia,Spain,3,5,2,Copenhagen,Denmark,2021_uefa_euro.txt
+France,Switzerland,3,3,X,Bucharest,Romania   [Switzerland wins on penalties],2021_uefa_euro.txt
+England,Germany,2,0,1,London,England,2021_uefa_euro.txt
+Sweden,Ukraine,1,2,2,Glasgow,Scotland,2021_uefa_euro.txt
+Switzerland,Spain,1,1,X,Saint Petersburg,Russia   [Spain wins on penalties],2021_uefa_euro.txt
+Belgium,Italy,1,2,2,Munich,Germany,2021_uefa_euro.txt
+Czech Republic,Denmark,1,2,2,Baku,Azerbaijan,2021_uefa_euro.txt
+Ukraine,England,0,4,2,Rome,Italy,2021_uefa_euro.txt
+Italy,Spain,1,1,X,London,England   [Italy wins on penalties],2021_uefa_euro.txt
+England,Denmark,2,1,1,London,England,2021_uefa_euro.txt
+England,Italy,1,1,X,London,England   [Italy wins on penalties],2021_uefa_euro.txt
+Germany,Scotland,5,1,1,Munich,Germany,2024_uefa_euro.txt
+Hungary,Switzerland,1,3,2,Cologne,Germany,2024_uefa_euro.txt
+Spain,Croatia,3,0,1,Berlin,Germany,2024_uefa_euro.txt
+Italy,Albania,2,1,1,Dortmund,Germany,2024_uefa_euro.txt
+Slovenia,Denmark,1,1,X,Stuttgart,Germany,2024_uefa_euro.txt
+Serbia,England,0,1,2,Gelsenkirchen,Germany,2024_uefa_euro.txt
+Poland,Netherlands,1,2,2,Hamburg,Germany,2024_uefa_euro.txt
+Austria,France,0,1,2,Düsseldorf,Germany,2024_uefa_euro.txt
+Romania,Ukraine,3,0,1,Munich,Germany,2024_uefa_euro.txt
+Belgium,Slovakia,0,1,2,Frankfurt,Germany,2024_uefa_euro.txt
+Turkey,Georgia,3,1,1,Dortmund,Germany,2024_uefa_euro.txt
+Portugal,Czech Republic,2,1,1,Leipzig,Germany,2024_uefa_euro.txt
+Germany,Hungary,2,0,1,Stuttgart,Germany,2024_uefa_euro.txt
+Scotland,Switzerland,1,1,X,Cologne,Germany,2024_uefa_euro.txt
+Croatia,Albania,2,2,X,Hamburg,Germany,2024_uefa_euro.txt
+Spain,Italy,1,0,1,Gelsenkirchen,Germany,2024_uefa_euro.txt
+Slovenia,Serbia,1,1,X,Munich,Germany,2024_uefa_euro.txt
+Denmark,England,1,1,X,Frankfurt,Germany,2024_uefa_euro.txt
+Poland,Austria,1,3,2,Berlin,Germany,2024_uefa_euro.txt
+Netherlands,France,0,0,X,Leipzig,Germany,2024_uefa_euro.txt
+Slovakia,Ukraine,1,2,2,Düsseldorf,Germany,2024_uefa_euro.txt
+Belgium,Romania,2,0,1,Cologne,Germany,2024_uefa_euro.txt
+Georgia,Czech Republic,1,1,X,Hamburg,Germany,2024_uefa_euro.txt
+Turkey,Portugal,0,3,2,Dortmund,Germany,2024_uefa_euro.txt
+Germany,Switzerland,1,1,X,Frankfurt,Germany,2024_uefa_euro.txt
+Scotland,Hungary,0,1,2,Stuttgart,Germany,2024_uefa_euro.txt
+Albania,Spain,0,1,2,Düsseldorf,Germany,2024_uefa_euro.txt
+Croatia,Italy,1,1,X,Leipzig,Germany,2024_uefa_euro.txt
+England,Slovenia,0,0,X,Cologne,Germany,2024_uefa_euro.txt
+Denmark,Serbia,0,0,X,Munich,Germany,2024_uefa_euro.txt
+Netherlands,Austria,2,3,2,Berlin,Germany,2024_uefa_euro.txt
+France,Poland,1,1,X,Dortmund,Germany,2024_uefa_euro.txt
+Slovakia,Romania,1,1,X,Frankfurt,Germany,2024_uefa_euro.txt
+Ukraine,Belgium,0,0,X,Stuttgart,Germany,2024_uefa_euro.txt
+Georgia,Portugal,2,0,1,Gelsenkirchen,Germany,2024_uefa_euro.txt
+Czech Republic,Turkey,1,2,2,Hamburg,Germany,2024_uefa_euro.txt
+Switzerland,Italy,2,0,1,Berlin,Germany,2024_uefa_euro.txt
+Germany,Denmark,2,0,1,Dortmund,Germany,2024_uefa_euro.txt
+England,Slovakia,2,1,1,Gelsenkirchen,Germany,2024_uefa_euro.txt
+Spain,Georgia,4,1,1,Cologne,Germany,2024_uefa_euro.txt
+France,Belgium,1,0,1,Düsseldorf,Germany,2024_uefa_euro.txt
+Portugal,Slovenia,0,0,X,Frankfurt,Germany   [Portugal wins on penalties],2024_uefa_euro.txt
+Romania,Netherlands,0,3,2,Munich,Germany,2024_uefa_euro.txt
+Austria,Turkey,1,2,2,Leipzig,Germany,2024_uefa_euro.txt
+Germany,Spain,1,2,2,Stuttgart,Germany,2024_uefa_euro.txt
+Portugal,France,0,0,X,Hamburg,Germany   [France wins on penalties],2024_uefa_euro.txt
+England,Switzerland,1,1,X,Düsseldorf,Germany   [England wins on penalties],2024_uefa_euro.txt
+Netherlands,Turkey,2,1,1,Berlin,Germany,2024_uefa_euro.txt
+Spain,France,2,1,1,Munich,Germany,2024_uefa_euro.txt
+Netherlands,England,1,2,2,Dortmund,Germany,2024_uefa_euro.txt
+Spain,England,2,1,1,Berlin,Germany,2024_uefa_euro.txt

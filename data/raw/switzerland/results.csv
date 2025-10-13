@@ -1,0 +1,1969 @@
+time,home_team,away_team,home_score,away_score,result,ht_score,source_file
+17.45,FC Aarau,FC Basel 1893,1,2,2,0-2,2014-15_ch1.txt
+20.00,FC St. Gallen,BSC Young Boys,2,2,X,1-1,2014-15_ch1.txt
+13.45,FC Thun,FC Vaduz,1,0,1,1-0,2014-15_ch1.txt
+,FC Luzern,FC Sion,1,1,X,1-1,2014-15_ch1.txt
+16.00,FC Zürich,Grasshopper Club Zürich,1,0,1,0-0,2014-15_ch1.txt
+17.45,Grasshopper Club Zürich,FC Thun,2,3,2,2-2,2014-15_ch1.txt
+20.00,FC Sion,FC St. Gallen,1,0,1,0-0,2014-15_ch1.txt
+13.45,BSC Young Boys,FC Aarau,1,1,X,0-1,2014-15_ch1.txt
+,FC Vaduz,FC Zürich,1,4,2,1-2,2014-15_ch1.txt
+16.00,FC Basel 1893,FC Luzern,3,0,1,2-0,2014-15_ch1.txt
+17.45,FC Thun,FC Basel 1893,2,3,2,0-2,2014-15_ch1.txt
+20.00,Grasshopper Club Zürich,FC Sion,0,0,X,,2014-15_ch1.txt
+13.45,FC Zürich,BSC Young Boys,2,1,1,0-0,2014-15_ch1.txt
+16.00,FC St. Gallen,FC Luzern,2,1,1,0-1,2014-15_ch1.txt
+19.45,FC Aarau,FC Vaduz,1,1,X,1-0,2014-15_ch1.txt
+17.45,FC St. Gallen,FC Aarau,2,2,X,0-1,2014-15_ch1.txt
+20.00,FC Basel 1893,FC Zürich,4,1,1,2-0,2014-15_ch1.txt
+13.45,FC Sion,FC Vaduz,1,0,1,0-0,2014-15_ch1.txt
+,FC Luzern,Grasshopper Club Zürich,1,1,X,1-1,2014-15_ch1.txt
+16.00,BSC Young Boys,FC Thun,1,1,X,1-1,2014-15_ch1.txt
+19.45,FC Aarau,FC Sion,1,0,1,0-0,2014-15_ch1.txt
+,FC Zürich,FC Thun,2,1,1,1-0,2014-15_ch1.txt
+19.45,FC Vaduz,FC Luzern,1,1,X,0-0,2014-15_ch1.txt
+,BSC Young Boys,Grasshopper Club Zürich,4,0,1,1-0,2014-15_ch1.txt
+20.00,FC Basel 1893,FC St. Gallen,0,2,2,0-2,2014-15_ch1.txt
+17.45,FC Aarau,Grasshopper Club Zürich,1,2,2,0-1,2014-15_ch1.txt
+20.00,FC Luzern,FC Zürich,1,1,X,1-1,2014-15_ch1.txt
+13.45,FC Sion,FC Basel 1893,2,3,2,0-1,2014-15_ch1.txt
+,FC Thun,FC St. Gallen,3,1,1,2-1,2014-15_ch1.txt
+16.00,FC Vaduz,BSC Young Boys,0,2,2,0-1,2014-15_ch1.txt
+17.45,FC Thun,FC Sion,2,1,1,1-0,2014-15_ch1.txt
+20.00,FC Luzern,FC Aarau,1,1,X,1-0,2014-15_ch1.txt
+13.45,Grasshopper Club Zürich,FC Vaduz,0,1,2,0-1,2014-15_ch1.txt
+,FC St. Gallen,FC Zürich,0,2,2,0-0,2014-15_ch1.txt
+16.00,FC Basel 1893,BSC Young Boys,3,1,1,2-1,2014-15_ch1.txt
+17.45,Grasshopper Club Zürich,FC Basel 1893,3,1,1,2-1,2014-15_ch1.txt
+20.00,FC Aarau,FC Thun,2,1,1,1-0,2014-15_ch1.txt
+13.45,BSC Young Boys,FC Luzern,3,2,1,2-1,2014-15_ch1.txt
+,FC Vaduz,FC St. Gallen,2,2,X,1-1,2014-15_ch1.txt
+16.00,FC Zürich,FC Sion,4,1,1,1-1,2014-15_ch1.txt
+19.45,FC Basel 1893,FC Vaduz,3,1,1,1-1,2014-15_ch1.txt
+,FC Thun,FC Luzern,3,2,1,1-1,2014-15_ch1.txt
+19.45,FC St. Gallen,Grasshopper Club Zürich,3,0,1,2-0,2014-15_ch1.txt
+,FC Zürich,FC Aarau,0,0,X,,2014-15_ch1.txt
+20.30,FC Sion,BSC Young Boys,0,1,2,0-0,2014-15_ch1.txt
+17.45,Grasshopper Club Zürich,FC Aarau,2,1,1,1-0,2014-15_ch1.txt
+20.00,FC Basel 1893,FC Thun,1,1,X,0-0,2014-15_ch1.txt
+13.45,BSC Young Boys,FC Zürich,2,1,1,1-0,2014-15_ch1.txt
+,FC Vaduz,FC Sion,1,0,1,0-0,2014-15_ch1.txt
+16.00,FC Luzern,FC St. Gallen,1,2,2,0-1,2014-15_ch1.txt
+17.45,FC Thun,Grasshopper Club Zürich,3,2,1,3-0,2014-15_ch1.txt
+20.00,FC St. Gallen,FC Basel 1893,2,1,1,0-0,2014-15_ch1.txt
+13.45,FC Zürich,FC Vaduz,3,0,1,3-0,2014-15_ch1.txt
+,FC Sion,FC Luzern,3,1,1,1-1,2014-15_ch1.txt
+16.00,FC Aarau,BSC Young Boys,3,2,1,1-2,2014-15_ch1.txt
+17.45,FC Aarau,FC St. Gallen,0,3,2,0-1,2014-15_ch1.txt
+20.00,BSC Young Boys,FC Basel 1893,0,1,2,0-1,2014-15_ch1.txt
+13.45,FC Sion,FC Thun,0,0,X,,2014-15_ch1.txt
+,FC Luzern,FC Vaduz,0,0,X,,2014-15_ch1.txt
+16.00,Grasshopper Club Zürich,FC Zürich,1,3,2,1-1,2014-15_ch1.txt
+17.45,FC Thun,FC Aarau,0,0,X,,2014-15_ch1.txt
+20.00,FC Basel 1893,FC Sion,1,1,X,0-0,2014-15_ch1.txt
+16.00,FC Zürich,FC St. Gallen,1,1,X,0-0,2014-15_ch1.txt
+,FC Vaduz,Grasshopper Club Zürich,1,1,X,1-0,2014-15_ch1.txt
+19.45,FC Luzern,BSC Young Boys,1,2,2,0-1,2014-15_ch1.txt
+17.45,FC Zürich,FC Luzern,2,3,2,1-0,2014-15_ch1.txt
+20.00,FC Basel 1893,Grasshopper Club Zürich,2,0,1,1-0,2014-15_ch1.txt
+13.45,BSC Young Boys,FC Vaduz,0,1,2,0-0,2014-15_ch1.txt
+,FC Sion,FC Aarau,2,2,X,1-2,2014-15_ch1.txt
+16.00,FC St. Gallen,FC Thun,1,0,1,0-0,2014-15_ch1.txt
+17.45,FC Luzern,FC Thun,0,0,X,,2014-15_ch1.txt
+20.00,Grasshopper Club Zürich,FC St. Gallen,3,0,1,0-0,2014-15_ch1.txt
+13.45,FC Aarau,FC Zürich,0,1,2,0-1,2014-15_ch1.txt
+,FC Vaduz,FC Basel 1893,0,4,2,0-2,2014-15_ch1.txt
+16.00,BSC Young Boys,FC Sion,2,1,1,1-1,2014-15_ch1.txt
+17.45,FC Sion,FC Zürich,1,3,2,1-2,2014-15_ch1.txt
+20.00,Grasshopper Club Zürich,FC Luzern,3,2,1,2-0,2014-15_ch1.txt
+13.45,FC Basel 1893,FC Aarau,3,0,1,1-0,2014-15_ch1.txt
+,FC St. Gallen,FC Vaduz,3,3,X,0-1,2014-15_ch1.txt
+16.00,FC Thun,BSC Young Boys,0,1,2,0-0,2014-15_ch1.txt
+17.45,FC Aarau,FC Luzern,0,3,2,0-1,2014-15_ch1.txt
+20.00,FC Sion,Grasshopper Club Zürich,3,3,X,1-1,2014-15_ch1.txt
+13.45,BSC Young Boys,FC St. Gallen,4,2,1,2-2,2014-15_ch1.txt
+,FC Vaduz,FC Thun,0,1,2,0-1,2014-15_ch1.txt
+16.00,FC Zürich,FC Basel 1893,1,2,2,0-1,2014-15_ch1.txt
+17.45,FC Luzern,FC Basel 1893,0,3,2,0-0,2014-15_ch1.txt
+20.00,Grasshopper Club Zürich,BSC Young Boys,0,1,2,0-1,2014-15_ch1.txt
+13.45,FC Thun,FC Zürich,2,1,1,2-1,2014-15_ch1.txt
+,FC Vaduz,FC Aarau,1,0,1,1-0,2014-15_ch1.txt
+16.00,FC St. Gallen,FC Sion,2,0,1,0-0,2014-15_ch1.txt
+17.45,FC Luzern,BSC Young Boys,1,1,X,0-0,2014-15_ch1.txt
+20.00,FC St. Gallen,FC Zürich,1,4,2,0-2,2014-15_ch1.txt
+13.45,FC Thun,FC Aarau,1,1,X,0-0,2014-15_ch1.txt
+16.00,Grasshopper Club Zürich,FC Basel 1893,2,4,2,0-1,2014-15_ch1.txt
+18.30,FC Vaduz,FC Sion,0,2,2,0-1,2014-15_ch1.txt
+17.45,FC Basel 1893,FC Sion,1,1,X,0-0,2014-15_ch1.txt
+20.00,BSC Young Boys,Grasshopper Club Zürich,4,2,1,2-0,2014-15_ch1.txt
+13.45,FC St. Gallen,FC Luzern,0,0,X,,2014-15_ch1.txt
+,FC Aarau,FC Vaduz,0,1,2,0-0,2014-15_ch1.txt
+16.00,FC Zürich,FC Thun,0,1,2,0-0,2014-15_ch1.txt
+17.45,Grasshopper Club Zürich,FC Zürich,0,2,2,0-0,2014-15_ch1.txt
+13.45,FC Luzern,FC Aarau,4,0,1,1-0,2014-15_ch1.txt
+,FC Vaduz,FC Thun,1,1,X,0-0,2014-15_ch1.txt
+16.00,BSC Young Boys,FC Basel 1893,4,2,1,2-0,2014-15_ch1.txt
+18.30,FC Sion,FC St. Gallen,3,0,1,2-0,2014-15_ch1.txt
+17.45,FC Zürich,FC Aarau,0,0,X,,2014-15_ch1.txt
+20.00,FC Basel 1893,FC Vaduz,1,0,1,1-0,2014-15_ch1.txt
+13.45,FC Thun,BSC Young Boys,0,0,X,,2014-15_ch1.txt
+,FC St. Gallen,Grasshopper Club Zürich,1,1,X,0-1,2014-15_ch1.txt
+16.00,FC Sion,FC Luzern,2,2,X,2-0,2014-15_ch1.txt
+17.45,Grasshopper Club Zürich,FC Luzern,1,0,1,1-0,2014-15_ch1.txt
+20.00,FC Basel 1893,FC Thun,3,0,1,1-0,2014-15_ch1.txt
+13.45,BSC Young Boys,FC Sion,3,2,1,2-0,2014-15_ch1.txt
+,FC Vaduz,FC Zürich,2,2,X,0-0,2014-15_ch1.txt
+16.00,FC Aarau,FC St. Gallen,0,2,2,0-1,2014-15_ch1.txt
+17.45,FC Luzern,FC Vaduz,2,0,1,1-0,2014-15_ch1.txt
+20.00,FC Thun,Grasshopper Club Zürich,2,2,X,1-0,2014-15_ch1.txt
+13.45,FC Zürich,FC Sion,0,1,2,0-0,2014-15_ch1.txt
+,FC Aarau,BSC Young Boys,1,1,X,1-0,2014-15_ch1.txt
+16.00,FC St. Gallen,FC Basel 1893,2,2,X,2-2,2014-15_ch1.txt
+17.45,FC Luzern,FC Basel 1893,1,4,2,0-1,2014-15_ch1.txt
+20.00,Grasshopper Club Zürich,FC Aarau,3,1,1,1-0,2014-15_ch1.txt
+13.45,FC Sion,FC Thun,3,0,1,2-0,2014-15_ch1.txt
+,FC Vaduz,FC St. Gallen,3,1,1,2-0,2014-15_ch1.txt
+16.00,BSC Young Boys,FC Zürich,3,0,1,2-0,2014-15_ch1.txt
+18.15,FC Vaduz,BSC Young Boys,0,1,2,0-1,2014-15_ch1.txt
+20.30,FC Sion,Grasshopper Club Zürich,0,5,2,0-5,2014-15_ch1.txt
+17.45,FC Zürich,FC Luzern,0,1,2,0-0,2014-15_ch1.txt
+,FC Thun,FC St. Gallen,4,1,1,2-0,2014-15_ch1.txt
+20.00,FC Basel 1893,FC Aarau,6,0,1,5-0,2014-15_ch1.txt
+17.45,FC Thun,FC Luzern,1,0,1,0-0,2014-15_ch1.txt
+20.00,FC St. Gallen,BSC Young Boys,3,1,1,0-1,2014-15_ch1.txt
+13.45,Grasshopper Club Zürich,FC Vaduz,1,1,X,0-0,2014-15_ch1.txt
+,FC Aarau,FC Sion,0,1,2,0-0,2014-15_ch1.txt
+16.00,FC Basel 1893,FC Zürich,5,1,1,2-0,2014-15_ch1.txt
+17.45,FC Sion,FC Basel 1893,0,1,2,0-1,2014-15_ch1.txt
+20.00,FC Zürich,FC St. Gallen,1,2,2,1-0,2014-15_ch1.txt
+13.45,BSC Young Boys,FC Thun,4,0,1,2-0,2014-15_ch1.txt
+,FC Vaduz,FC Aarau,0,2,2,0-1,2014-15_ch1.txt
+16.00,FC Luzern,Grasshopper Club Zürich,2,0,1,1-0,2014-15_ch1.txt
+17.45,FC Aarau,FC Zürich,0,0,X,,2014-15_ch1.txt
+20.00,FC Thun,FC Sion,2,1,1,2-0,2014-15_ch1.txt
+13.45,FC Basel 1893,FC Luzern,1,2,2,1-2,2014-15_ch1.txt
+,FC St. Gallen,FC Vaduz,1,2,2,1-0,2014-15_ch1.txt
+16.00,Grasshopper Club Zürich,BSC Young Boys,2,2,X,0-1,2014-15_ch1.txt
+19.45,FC Sion,FC Zürich,1,2,2,0-1,2014-15_ch1.txt
+19.45,Grasshopper Club Zürich,FC Thun,0,0,X,,2014-15_ch1.txt
+,FC Vaduz,FC Basel 1893,1,3,2,0-2,2014-15_ch1.txt
+20.30,BSC Young Boys,FC Aarau,2,2,X,0-1,2014-15_ch1.txt
+19.45,FC Luzern,FC St. Gallen,6,2,1,3-1,2014-15_ch1.txt
+17.45,FC Thun,FC Vaduz,4,0,1,4-0,2014-15_ch1.txt
+20.00,FC Basel 1893,Grasshopper Club Zürich,2,1,1,0-0,2014-15_ch1.txt
+13.45,FC St. Gallen,FC Sion,0,1,2,0-0,2014-15_ch1.txt
+,FC Aarau,FC Luzern,2,6,2,0-2,2014-15_ch1.txt
+16.00,FC Zürich,BSC Young Boys,0,1,2,0-1,2014-15_ch1.txt
+17.45,FC Aarau,Grasshopper Club Zürich,0,1,2,0-1,2014-15_ch1.txt
+20.00,FC Sion,FC Vaduz,4,0,1,1-0,2014-15_ch1.txt
+13.45,BSC Young Boys,FC St. Gallen,3,1,1,2-0,2014-15_ch1.txt
+,FC Luzern,FC Thun,0,0,X,,2014-15_ch1.txt
+16.00,FC Zürich,FC Basel 1893,1,2,2,0-1,2014-15_ch1.txt
+17.45,FC Vaduz,FC Luzern,0,2,2,0-1,2014-15_ch1.txt
+20.00,FC Sion,FC Aarau,1,0,1,1-0,2014-15_ch1.txt
+13.45,Grasshopper Club Zürich,FC St. Gallen,2,0,1,0-0,2014-15_ch1.txt
+,FC Thun,FC Zürich,2,2,X,1-1,2014-15_ch1.txt
+16.00,FC Basel 1893,BSC Young Boys,0,0,X,,2014-15_ch1.txt
+19.45,Grasshopper Club Zürich,FC Sion,0,0,X,,2014-15_ch1.txt
+,FC St. Gallen,FC Thun,2,1,1,1-0,2014-15_ch1.txt
+20.30,FC Aarau,FC Basel 1893,2,1,1,1-0,2014-15_ch1.txt
+19.45,FC Zürich,FC Vaduz,2,2,X,1-2,2014-15_ch1.txt
+,BSC Young Boys,FC Luzern,0,1,2,0-1,2014-15_ch1.txt
+16.00,FC Thun,FC Basel 1893,2,2,X,1-0,2014-15_ch1.txt
+,FC Sion,BSC Young Boys,6,2,1,3-1,2014-15_ch1.txt
+,FC Luzern,FC Zürich,0,1,2,0-0,2014-15_ch1.txt
+,FC St. Gallen,FC Aarau,5,1,1,1-0,2014-15_ch1.txt
+,FC Vaduz,Grasshopper Club Zürich,0,1,2,0-0,2014-15_ch1.txt
+20.30,FC Basel 1893,FC St. Gallen,4,3,1,1-2,2014-15_ch1.txt
+,FC Zürich,Grasshopper Club Zürich,4,3,1,3-3,2014-15_ch1.txt
+,BSC Young Boys,FC Vaduz,2,1,1,0-0,2014-15_ch1.txt
+,FC Luzern,FC Sion,3,0,1,2-0,2014-15_ch1.txt
+,FC Aarau,FC Thun,3,2,1,1-0,2014-15_ch1.txt
+19.00,FC Basel 1893,FC St. Gallen,1,2,2,0-0,2018-19_ch1.txt
+,FC Luzern,Neuchâtel Xamax FCS,0,2,2,0-1,2018-19_ch1.txt
+16.00,BSC Young Boys,Grasshopper Club Zürich,2,0,1,0-0,2018-19_ch1.txt
+,FC Sion,FC Lugano,1,2,2,0-2,2018-19_ch1.txt
+,FC Zürich,FC Thun,2,1,1,1-0,2018-19_ch1.txt
+19.00,Grasshopper Club Zürich,FC Zürich,0,2,2,0-0,2018-19_ch1.txt
+,Neuchâtel Xamax FCS,FC Basel 1893,1,1,X,0-0,2018-19_ch1.txt
+16.00,FC Lugano,BSC Young Boys,0,2,2,0-1,2018-19_ch1.txt
+,FC St. Gallen,FC Sion,2,4,2,0-2,2018-19_ch1.txt
+,FC Thun,FC Luzern,2,1,1,0-1,2018-19_ch1.txt
+19.00,FC Basel 1893,Grasshopper Club Zürich,4,2,1,2-0,2018-19_ch1.txt
+,FC Luzern,FC Lugano,4,2,1,2-1,2018-19_ch1.txt
+16.00,BSC Young Boys,FC Zürich,4,0,1,3-0,2018-19_ch1.txt
+,FC Sion,Neuchâtel Xamax FCS,3,0,1,2-0,2018-19_ch1.txt
+,FC St. Gallen,FC Thun,3,2,1,3-0,2018-19_ch1.txt
+19.00,FC Lugano,Grasshopper Club Zürich,2,2,X,1-0,2018-19_ch1.txt
+,Neuchâtel Xamax FCS,FC Thun,1,5,2,1-3,2018-19_ch1.txt
+16.00,FC Basel 1893,FC Sion,3,2,1,2-1,2018-19_ch1.txt
+,FC Luzern,BSC Young Boys,2,3,2,0-1,2018-19_ch1.txt
+,FC Zürich,FC St. Gallen,0,0,X,,2018-19_ch1.txt
+19.00,BSC Young Boys,Neuchâtel Xamax FCS,5,2,1,2-1,2018-19_ch1.txt
+,Grasshopper Club Zürich,FC Sion,2,1,1,0-0,2018-19_ch1.txt
+16.00,FC Zürich,FC Basel 1893,1,1,X,0-1,2018-19_ch1.txt
+,FC St. Gallen,FC Luzern,0,1,2,0-0,2018-19_ch1.txt
+,FC Thun,FC Lugano,1,1,X,0-0,2018-19_ch1.txt
+19.00,FC Lugano,FC Zürich,1,0,1,1-0,2018-19_ch1.txt
+,FC Sion,BSC Young Boys,0,3,2,0-1,2018-19_ch1.txt
+16.00,FC Basel 1893,FC Thun,1,1,X,1-1,2018-19_ch1.txt
+,FC Luzern,Grasshopper Club Zürich,2,1,1,0-1,2018-19_ch1.txt
+,Neuchâtel Xamax FCS,FC St. Gallen,2,3,2,1-0,2018-19_ch1.txt
+19.00,Grasshopper Club Zürich,Neuchâtel Xamax FCS,3,1,1,1-0,2018-19_ch1.txt
+,FC Thun,FC Sion,4,1,1,0-0,2018-19_ch1.txt
+16.00,BSC Young Boys,FC Basel 1893,7,1,1,2-0,2018-19_ch1.txt
+,FC St. Gallen,FC Lugano,2,2,X,2-0,2018-19_ch1.txt
+,FC Zürich,FC Luzern,1,0,1,0-0,2018-19_ch1.txt
+20.00,Grasshopper Club Zürich,FC Thun,0,2,2,0-0,2018-19_ch1.txt
+20.00,BSC Young Boys,FC St. Gallen,2,0,1,2-0,2018-19_ch1.txt
+,FC Basel 1893,FC Luzern,2,1,1,1-0,2018-19_ch1.txt
+,Neuchâtel Xamax FCS,FC Lugano,2,1,1,1-0,2018-19_ch1.txt
+20.00,FC Sion,FC Zürich,1,2,2,0-1,2018-19_ch1.txt
+19.00,FC St. Gallen,Grasshopper Club Zürich,2,1,1,0-1,2018-19_ch1.txt
+,FC Thun,BSC Young Boys,1,4,2,1-2,2018-19_ch1.txt
+16.00,FC Lugano,FC Basel 1893,2,2,X,0-1,2018-19_ch1.txt
+,FC Luzern,FC Sion,1,3,2,0-1,2018-19_ch1.txt
+,FC Zürich,Neuchâtel Xamax FCS,0,0,X,,2018-19_ch1.txt
+19.00,FC St. Gallen,FC Basel 1893,1,3,2,1-1,2018-19_ch1.txt
+,BSC Young Boys,FC Luzern,2,3,2,0-1,2018-19_ch1.txt
+16.00,Grasshopper Club Zürich,FC Lugano,2,1,1,2-1,2018-19_ch1.txt
+,Neuchâtel Xamax FCS,FC Sion,1,1,X,1-1,2018-19_ch1.txt
+,FC Thun,FC Zürich,2,2,X,0-1,2018-19_ch1.txt
+19.00,FC Luzern,FC Thun,0,2,2,0-0,2018-19_ch1.txt
+,FC Zürich,BSC Young Boys,3,3,X,2-0,2018-19_ch1.txt
+16.00,FC Basel 1893,Neuchâtel Xamax FCS,1,1,X,1-0,2018-19_ch1.txt
+,FC Lugano,FC St. Gallen,3,1,1,2-0,2018-19_ch1.txt
+,FC Sion,Grasshopper Club Zürich,0,0,X,,2018-19_ch1.txt
+19.00,Grasshopper Club Zürich,FC Basel 1893,1,3,2,0-3,2018-19_ch1.txt
+,BSC Young Boys,FC Sion,3,2,1,0-2,2018-19_ch1.txt
+16.00,Neuchâtel Xamax FCS,FC Luzern,1,2,2,1-1,2018-19_ch1.txt
+,FC Lugano,FC Thun,2,1,1,2-1,2018-19_ch1.txt
+,FC St. Gallen,FC Zürich,3,2,1,1-0,2018-19_ch1.txt
+19.00,Grasshopper Club Zürich,BSC Young Boys,0,3,2,0-0,2018-19_ch1.txt
+,FC Thun,Neuchâtel Xamax FCS,2,2,X,1-0,2018-19_ch1.txt
+16.00,FC Basel 1893,FC Lugano,3,2,1,2-0,2018-19_ch1.txt
+,FC Luzern,FC Zürich,2,5,2,1-2,2018-19_ch1.txt
+,FC Sion,FC St. Gallen,0,1,2,0-1,2018-19_ch1.txt
+19.00,FC Lugano,FC Luzern,1,4,2,0-1,2018-19_ch1.txt
+,FC Thun,FC Basel 1893,4,2,1,1-2,2018-19_ch1.txt
+16.00,Neuchâtel Xamax FCS,Grasshopper Club Zürich,2,3,2,0-1,2018-19_ch1.txt
+,FC St. Gallen,BSC Young Boys,2,3,2,1-3,2018-19_ch1.txt
+,FC Zürich,FC Sion,1,2,2,0-0,2018-19_ch1.txt
+19.00,Neuchâtel Xamax FCS,FC Zürich,3,3,X,1-0,2018-19_ch1.txt
+,BSC Young Boys,FC Lugano,1,0,1,0-0,2018-19_ch1.txt
+16.00,Grasshopper Club Zürich,FC St. Gallen,2,1,1,2-0,2018-19_ch1.txt
+,FC Luzern,FC Basel 1893,1,1,X,1-0,2018-19_ch1.txt
+,FC Sion,FC Thun,2,1,1,1-0,2018-19_ch1.txt
+19.00,FC Sion,FC Luzern,2,0,1,0-0,2018-19_ch1.txt
+,FC Thun,FC St. Gallen,2,0,1,0-0,2018-19_ch1.txt
+16.00,FC Basel 1893,BSC Young Boys,1,3,2,1-0,2018-19_ch1.txt
+,FC Lugano,Neuchâtel Xamax FCS,2,2,X,1-0,2018-19_ch1.txt
+,FC Zürich,Grasshopper Club Zürich,2,0,1,0-0,2018-19_ch1.txt
+19.00,FC St. Gallen,Neuchâtel Xamax FCS,3,2,1,2-1,2018-19_ch1.txt
+,BSC Young Boys,FC Thun,3,2,1,0-1,2018-19_ch1.txt
+16.00,FC Basel 1893,FC Zürich,2,0,1,1-0,2018-19_ch1.txt
+,Grasshopper Club Zürich,FC Luzern,2,3,2,2-2,2018-19_ch1.txt
+,FC Lugano,FC Sion,2,2,X,1-1,2018-19_ch1.txt
+19.00,FC Sion,FC Basel 1893,1,2,2,1-0,2018-19_ch1.txt
+,FC Thun,Grasshopper Club Zürich,1,0,1,0-0,2018-19_ch1.txt
+16.00,Neuchâtel Xamax FCS,BSC Young Boys,1,4,2,0-2,2018-19_ch1.txt
+,FC Luzern,FC St. Gallen,2,1,1,2-0,2018-19_ch1.txt
+,FC Zürich,FC Lugano,0,0,X,,2018-19_ch1.txt
+19.00,BSC Young Boys,Neuchâtel Xamax FCS,2,0,1,1-0,2018-19_ch1.txt
+16.00,Grasshopper Club Zürich,FC Basel 1893,0,4,2,0-2,2018-19_ch1.txt
+20.00,FC Lugano,FC Thun,1,3,2,0-1,2018-19_ch1.txt
+,FC St. Gallen,FC Zürich,3,1,1,1-0,2018-19_ch1.txt
+18.45,FC Luzern,FC Sion,1,3,2,1-1,2018-19_ch1.txt
+19.00,FC Basel 1893,FC St. Gallen,1,1,X,0-0,2018-19_ch1.txt
+,FC Zürich,Grasshopper Club Zürich,3,1,1,1-1,2018-19_ch1.txt
+16.00,Neuchâtel Xamax FCS,FC Luzern,2,1,1,2-0,2018-19_ch1.txt
+,FC Sion,FC Lugano,2,2,X,1-1,2018-19_ch1.txt
+,FC Thun,BSC Young Boys,1,1,X,0-1,2018-19_ch1.txt
+19.00,FC Luzern,FC Lugano,0,3,2,0-1,2018-19_ch1.txt
+,FC St. Gallen,FC Thun,1,3,2,0-1,2018-19_ch1.txt
+16.00,FC Basel 1893,FC Sion,1,0,1,1-0,2018-19_ch1.txt
+,Grasshopper Club Zürich,Neuchâtel Xamax FCS,0,1,2,0-1,2018-19_ch1.txt
+,BSC Young Boys,FC Zürich,2,0,1,0-0,2018-19_ch1.txt
+19.00,Neuchâtel Xamax FCS,FC Basel 1893,0,2,2,0-1,2018-19_ch1.txt
+,FC Sion,FC St. Gallen,2,2,X,1-1,2018-19_ch1.txt
+16.00,FC Lugano,BSC Young Boys,0,1,2,0-0,2018-19_ch1.txt
+,FC Thun,Grasshopper Club Zürich,1,1,X,1-1,2018-19_ch1.txt
+,FC Zürich,FC Luzern,1,1,X,1-0,2018-19_ch1.txt
+19.00,Grasshopper Club Zürich,FC Luzern,1,3,2,0-2,2018-19_ch1.txt
+,BSC Young Boys,FC Sion,1,0,1,0-0,2018-19_ch1.txt
+16.00,FC Basel 1893,FC Thun,3,1,1,2-0,2018-19_ch1.txt
+,FC St. Gallen,Neuchâtel Xamax FCS,3,0,1,1-0,2018-19_ch1.txt
+,FC Zürich,FC Lugano,0,1,2,0-1,2018-19_ch1.txt
+19.00,Grasshopper Club Zürich,BSC Young Boys,0,1,2,0-0,2018-19_ch1.txt
+,Neuchâtel Xamax FCS,FC Sion,3,1,1,2-0,2018-19_ch1.txt
+16.00,FC Lugano,FC Basel 1893,1,1,X,1-1,2018-19_ch1.txt
+,FC Luzern,FC St. Gallen,3,0,1,1-0,2018-19_ch1.txt
+,FC Thun,FC Zürich,2,2,X,2-1,2018-19_ch1.txt
+,FC Sion,Grasshopper Club Zürich,3,0,1,,2018-19_ch1.txt
+19.00,FC St. Gallen,FC Lugano,0,2,2,0-1,2018-19_ch1.txt
+16.00,FC Basel 1893,BSC Young Boys,2,2,X,1-2,2018-19_ch1.txt
+,FC Thun,FC Luzern,1,1,X,0-0,2018-19_ch1.txt
+,FC Zürich,Neuchâtel Xamax FCS,2,1,1,0-0,2018-19_ch1.txt
+19.00,FC Luzern,FC Basel 1893,0,1,2,0-0,2018-19_ch1.txt
+,FC Sion,FC Zürich,1,0,1,1-0,2018-19_ch1.txt
+16.00,Grasshopper Club Zürich,FC Lugano,1,1,X,1-1,2018-19_ch1.txt
+,Neuchâtel Xamax FCS,FC Thun,3,2,1,0-1,2018-19_ch1.txt
+,BSC Young Boys,FC St. Gallen,3,2,1,1-1,2018-19_ch1.txt
+20.00,FC Lugano,Neuchâtel Xamax FCS,0,0,X,,2018-19_ch1.txt
+,FC St. Gallen,Grasshopper Club Zürich,0,0,X,,2018-19_ch1.txt
+,FC Zürich,FC Basel 1893,0,2,2,0-0,2018-19_ch1.txt
+20.00,FC Thun,FC Sion,1,2,2,1-2,2018-19_ch1.txt
+18.45,FC Luzern,BSC Young Boys,1,3,2,0-0,2018-19_ch1.txt
+19.00,Grasshopper Club Zürich,FC Zürich,1,1,X,0-1,2018-19_ch1.txt
+,Neuchâtel Xamax FCS,FC St. Gallen,0,1,2,0-0,2018-19_ch1.txt
+16.00,FC Basel 1893,FC Lugano,1,1,X,0-0,2018-19_ch1.txt
+,FC Sion,FC Luzern,2,2,X,1-1,2018-19_ch1.txt
+,BSC Young Boys,FC Thun,5,1,1,4-0,2018-19_ch1.txt
+19.00,FC Basel 1893,Grasshopper Club Zürich,0,0,X,,2018-19_ch1.txt
+,FC Luzern,Neuchâtel Xamax FCS,0,1,2,0-0,2018-19_ch1.txt
+16.00,FC Lugano,FC Sion,1,1,X,0-0,2018-19_ch1.txt
+,FC Thun,FC St. Gallen,0,0,X,,2018-19_ch1.txt
+,FC Zürich,BSC Young Boys,0,1,2,0-0,2018-19_ch1.txt
+20.00,FC Lugano,FC Zürich,3,0,1,1-0,2018-19_ch1.txt
+,FC Sion,FC Basel 1893,0,3,2,0-1,2018-19_ch1.txt
+19.00,Grasshopper Club Zürich,FC Thun,1,1,X,0-0,2018-19_ch1.txt
+,FC St. Gallen,FC Luzern,1,2,2,0-1,2018-19_ch1.txt
+16.00,Neuchâtel Xamax FCS,BSC Young Boys,1,0,1,0-0,2018-19_ch1.txt
+19.00,Neuchâtel Xamax FCS,Grasshopper Club Zürich,1,1,X,0-1,2018-19_ch1.txt
+,FC Luzern,FC Thun,3,1,1,2-0,2018-19_ch1.txt
+16.00,FC St. Gallen,FC Basel 1893,0,3,2,0-1,2018-19_ch1.txt
+,BSC Young Boys,FC Lugano,2,2,X,2-1,2018-19_ch1.txt
+,FC Zürich,FC Sion,1,0,1,0-0,2018-19_ch1.txt
+19.00,FC Basel 1893,FC Zürich,3,0,1,0-0,2018-19_ch1.txt
+,Grasshopper Club Zürich,FC St. Gallen,0,1,2,0-0,2018-19_ch1.txt
+16.00,FC Lugano,FC Luzern,1,0,1,1-0,2018-19_ch1.txt
+,FC Thun,Neuchâtel Xamax FCS,0,2,2,0-0,2018-19_ch1.txt
+,FC Sion,BSC Young Boys,0,4,2,0-2,2018-19_ch1.txt
+19.00,Neuchâtel Xamax FCS,FC Zürich,1,2,2,0-0,2018-19_ch1.txt
+,FC Thun,FC Lugano,1,0,1,1-0,2018-19_ch1.txt
+16.00,FC Luzern,Grasshopper Club Zürich,4,0,1,,2018-19_ch1.txt
+,FC St. Gallen,FC Sion,2,1,1,1-0,2018-19_ch1.txt
+,BSC Young Boys,FC Basel 1893,3,1,1,0-1,2018-19_ch1.txt
+20.00,FC Basel 1893,FC Luzern,3,2,1,2-0,2018-19_ch1.txt
+,FC Sion,Neuchâtel Xamax FCS,1,0,1,0-0,2018-19_ch1.txt
+,FC Zürich,FC Thun,3,0,1,3-0,2018-19_ch1.txt
+20.00,FC Lugano,FC St. Gallen,1,0,1,1-0,2018-19_ch1.txt
+,BSC Young Boys,Grasshopper Club Zürich,6,1,1,3-0,2018-19_ch1.txt
+20.00,Grasshopper Club Zürich,FC Sion,0,3,2,0-2,2018-19_ch1.txt
+,Neuchâtel Xamax FCS,FC Lugano,1,1,X,0-1,2018-19_ch1.txt
+,FC Luzern,FC Zürich,3,0,1,2-0,2018-19_ch1.txt
+,FC St. Gallen,BSC Young Boys,4,1,1,2-0,2018-19_ch1.txt
+,FC Thun,FC Basel 1893,1,2,2,0-0,2018-19_ch1.txt
+19.00,FC Basel 1893,Neuchâtel Xamax FCS,4,1,1,1-0,2018-19_ch1.txt
+,FC Lugano,Grasshopper Club Zürich,3,3,X,1-1,2018-19_ch1.txt
+,FC Sion,FC Thun,0,1,2,0-0,2018-19_ch1.txt
+,BSC Young Boys,FC Luzern,4,0,1,1-0,2018-19_ch1.txt
+,FC Zürich,FC St. Gallen,1,1,X,0-1,2018-19_ch1.txt
+20.00,FC Sion,FC Basel 1893,1,4,2,1-1,2019-20_ch1.txt
+19.00,FC Thun,Neuchâtel Xamax FCS,2,2,X,0-1,2019-20_ch1.txt
+,FC St. Gallen,FC Luzern,0,2,2,0-0,2019-20_ch1.txt
+16.00,BSC Young Boys,Servette FC,1,1,X,1-1,2019-20_ch1.txt
+,FC Zürich,FC Lugano,0,4,2,0-3,2019-20_ch1.txt
+19.00,FC Basel 1893,FC St. Gallen,1,2,2,0-1,2019-20_ch1.txt
+,Servette FC,FC Sion,0,0,X,,2019-20_ch1.txt
+16.00,FC Lugano,FC Thun,0,0,X,,2019-20_ch1.txt
+,FC Luzern,FC Zürich,0,0,X,,2019-20_ch1.txt
+,Neuchâtel Xamax FCS,BSC Young Boys,0,1,2,0-0,2019-20_ch1.txt
+19.00,FC Sion,FC Zürich,3,1,1,1-1,2019-20_ch1.txt
+,FC Thun,FC Basel 1893,2,3,2,1-1,2019-20_ch1.txt
+16.00,Neuchâtel Xamax FCS,FC St. Gallen,1,1,X,0-1,2019-20_ch1.txt
+,Servette FC,FC Luzern,1,0,1,0-0,2019-20_ch1.txt
+,BSC Young Boys,FC Lugano,2,0,1,1-0,2019-20_ch1.txt
+19.00,FC Basel 1893,Servette FC,3,1,1,2-1,2019-20_ch1.txt
+,FC St. Gallen,BSC Young Boys,2,3,2,1-2,2019-20_ch1.txt
+16.00,FC Lugano,FC Sion,0,1,2,0-0,2019-20_ch1.txt
+,FC Luzern,FC Thun,0,2,2,0-1,2019-20_ch1.txt
+,FC Zürich,Neuchâtel Xamax FCS,2,2,X,1-0,2019-20_ch1.txt
+19.00,Neuchâtel Xamax FCS,FC Basel 1893,0,3,2,0-0,2019-20_ch1.txt
+,BSC Young Boys,FC Zürich,4,0,1,1-0,2019-20_ch1.txt
+16.00,FC Sion,FC Luzern,2,1,1,1-0,2019-20_ch1.txt
+,FC St. Gallen,FC Lugano,3,2,1,0-1,2019-20_ch1.txt
+,FC Thun,Servette FC,0,4,2,0-2,2019-20_ch1.txt
+19.00,FC Zürich,FC St. Gallen,2,1,1,1-1,2019-20_ch1.txt
+19.00,Servette FC,Neuchâtel Xamax FCS,2,2,X,0-2,2019-20_ch1.txt
+16.00,FC Basel 1893,FC Lugano,2,1,1,1-0,2019-20_ch1.txt
+,FC Luzern,BSC Young Boys,2,2,X,1-2,2019-20_ch1.txt
+,FC Thun,FC Sion,0,1,2,0-1,2019-20_ch1.txt
+19.00,Neuchâtel Xamax FCS,FC Sion,1,3,2,1-1,2019-20_ch1.txt
+,FC St. Gallen,Servette FC,3,1,1,2-0,2019-20_ch1.txt
+16.00,FC Lugano,FC Luzern,1,1,X,1-1,2019-20_ch1.txt
+,BSC Young Boys,FC Basel 1893,1,1,X,0-1,2019-20_ch1.txt
+,FC Zürich,FC Thun,2,0,1,1-0,2019-20_ch1.txt
+20.00,FC Basel 1893,FC Zürich,4,0,1,1-0,2019-20_ch1.txt
+,FC Sion,FC St. Gallen,1,2,2,0-1,2019-20_ch1.txt
+,FC Thun,BSC Young Boys,1,1,X,0-0,2019-20_ch1.txt
+20.00,FC Luzern,Neuchâtel Xamax FCS,1,0,1,0-0,2019-20_ch1.txt
+,Servette FC,FC Lugano,0,0,X,,2019-20_ch1.txt
+19.00,FC St. Gallen,FC Thun,4,0,1,2-0,2019-20_ch1.txt
+,BSC Young Boys,FC Sion,3,2,1,2-1,2019-20_ch1.txt
+16.00,FC Basel 1893,FC Luzern,3,0,1,1-0,2019-20_ch1.txt
+,FC Lugano,Neuchâtel Xamax FCS,0,1,2,0-1,2019-20_ch1.txt
+,Servette FC,FC Zürich,0,1,2,0-1,2019-20_ch1.txt
+19.00,Neuchâtel Xamax FCS,Servette FC,2,2,X,0-2,2019-20_ch1.txt
+,FC Thun,FC Luzern,0,2,2,0-0,2019-20_ch1.txt
+16.00,FC Sion,FC Lugano,1,2,2,0-0,2019-20_ch1.txt
+,FC St. Gallen,FC Basel 1893,0,0,X,,2019-20_ch1.txt
+,FC Zürich,BSC Young Boys,0,4,2,0-1,2019-20_ch1.txt
+19.00,FC Basel 1893,FC Thun,3,1,1,0-0,2019-20_ch1.txt
+,BSC Young Boys,Neuchâtel Xamax FCS,4,1,1,1-0,2019-20_ch1.txt
+16.00,FC Lugano,FC Zürich,0,0,X,,2019-20_ch1.txt
+,FC Luzern,FC Sion,3,1,1,0-1,2019-20_ch1.txt
+,Servette FC,FC St. Gallen,1,2,2,0-1,2019-20_ch1.txt
+19.00,Neuchâtel Xamax FCS,FC Luzern,2,0,1,1-0,2019-20_ch1.txt
+,FC Sion,Servette FC,1,1,X,1-1,2019-20_ch1.txt
+16.00,FC Lugano,FC St. Gallen,1,3,2,0-2,2019-20_ch1.txt
+,BSC Young Boys,FC Thun,4,2,1,2-1,2019-20_ch1.txt
+,FC Zürich,FC Basel 1893,3,2,1,2-1,2019-20_ch1.txt
+19.00,FC St. Gallen,FC Sion,3,0,1,0-0,2019-20_ch1.txt
+,FC Thun,FC Zürich,0,1,2,0-1,2019-20_ch1.txt
+16.00,FC Basel 1893,Neuchâtel Xamax FCS,1,1,X,0-1,2019-20_ch1.txt
+,FC Luzern,FC Lugano,1,2,2,0-0,2019-20_ch1.txt
+,Servette FC,BSC Young Boys,3,0,1,0-0,2019-20_ch1.txt
+19.00,FC Luzern,Servette FC,1,2,2,0-2,2019-20_ch1.txt
+,Neuchâtel Xamax FCS,FC Thun,2,3,2,0-0,2019-20_ch1.txt
+16.00,FC Lugano,FC Basel 1893,0,3,2,0-2,2019-20_ch1.txt
+,BSC Young Boys,FC St. Gallen,4,3,1,2-2,2019-20_ch1.txt
+,FC Zürich,FC Sion,4,2,1,2-2,2019-20_ch1.txt
+19.00,Servette FC,FC Basel 1893,2,0,1,1-0,2019-20_ch1.txt
+,FC Zürich,FC Luzern,3,0,1,1-0,2019-20_ch1.txt
+16.00,FC Sion,BSC Young Boys,3,4,2,2-3,2019-20_ch1.txt
+,FC St. Gallen,Neuchâtel Xamax FCS,4,1,1,2-0,2019-20_ch1.txt
+,FC Thun,FC Lugano,0,3,2,0-2,2019-20_ch1.txt
+19.00,Neuchâtel Xamax FCS,FC Zürich,0,1,2,0-0,2019-20_ch1.txt
+,FC Sion,FC Thun,2,1,1,0-1,2019-20_ch1.txt
+16.00,FC Basel 1893,BSC Young Boys,3,0,1,2-0,2019-20_ch1.txt
+,FC Lugano,Servette FC,1,0,1,0-0,2019-20_ch1.txt
+,FC Luzern,FC St. Gallen,1,4,2,1-1,2019-20_ch1.txt
+19.00,Neuchâtel Xamax FCS,FC Lugano,1,1,X,1-0,2019-20_ch1.txt
+,BSC Young Boys,FC Luzern,1,0,1,0-0,2019-20_ch1.txt
+16.00,FC Basel 1893,FC Sion,4,0,1,2-0,2019-20_ch1.txt
+,FC Thun,FC St. Gallen,1,4,2,0-2,2019-20_ch1.txt
+,FC Zürich,Servette FC,0,5,2,0-2,2019-20_ch1.txt
+19.00,Servette FC,FC Thun,2,1,1,0-0,2019-20_ch1.txt
+,FC St. Gallen,FC Zürich,1,3,2,1-2,2019-20_ch1.txt
+16.00,FC Lugano,BSC Young Boys,0,0,X,,2019-20_ch1.txt
+,FC Luzern,FC Basel 1893,2,1,1,1-0,2019-20_ch1.txt
+,FC Sion,Neuchâtel Xamax FCS,1,1,X,1-0,2019-20_ch1.txt
+19.00,Neuchâtel Xamax FCS,Servette FC,1,2,2,0-2,2019-20_ch1.txt
+,FC Zürich,FC Luzern,2,3,2,1-3,2019-20_ch1.txt
+16.00,FC St. Gallen,FC Lugano,3,1,1,0-1,2019-20_ch1.txt
+,FC Thun,FC Sion,2,1,1,2-0,2019-20_ch1.txt
+,BSC Young Boys,FC Basel 1893,2,0,1,1-0,2019-20_ch1.txt
+19.00,FC Lugano,Neuchâtel Xamax FCS,1,1,X,1-1,2019-20_ch1.txt
+,FC Luzern,BSC Young Boys,2,0,1,0-0,2019-20_ch1.txt
+16.00,FC Basel 1893,FC St. Gallen,1,2,2,1-1,2019-20_ch1.txt
+,Servette FC,FC Thun,2,0,1,0-0,2019-20_ch1.txt
+,FC Sion,FC Zürich,1,1,X,1-1,2019-20_ch1.txt
+19.00,BSC Young Boys,FC Sion,1,0,1,1-0,2019-20_ch1.txt
+,FC Zürich,FC Basel 1893,0,4,2,0-2,2019-20_ch1.txt
+16.00,Neuchâtel Xamax FCS,FC Luzern,0,1,2,0-1,2019-20_ch1.txt
+,FC St. Gallen,Servette FC,1,0,1,1-0,2019-20_ch1.txt
+,FC Thun,FC Lugano,3,2,1,2-1,2019-20_ch1.txt
+19.00,FC Basel 1893,FC Thun,0,1,2,0-0,2019-20_ch1.txt
+,FC Sion,Neuchâtel Xamax FCS,1,2,2,0-1,2019-20_ch1.txt
+16.00,FC Lugano,BSC Young Boys,2,1,1,1-0,2019-20_ch1.txt
+,FC Luzern,FC St. Gallen,1,0,1,1-0,2019-20_ch1.txt
+,Servette FC,FC Zürich,4,1,1,1-0,2019-20_ch1.txt
+19.00,FC Thun,FC Luzern,1,1,X,1-1,2019-20_ch1.txt
+,FC Zürich,Neuchâtel Xamax FCS,1,1,X,1-1,2019-20_ch1.txt
+16.00,FC Basel 1893,Servette FC,2,2,X,2-0,2019-20_ch1.txt
+,FC Lugano,FC Sion,0,0,X,,2019-20_ch1.txt
+,FC St. Gallen,BSC Young Boys,3,3,X,1-2,2019-20_ch1.txt
+20.30,BSC Young Boys,FC Zürich,3,2,1,1-2,2019-20_ch1.txt
+18.15,Neuchâtel Xamax FCS,FC Thun,2,1,1,1-0,2019-20_ch1.txt
+20.30,FC Sion,FC St. Gallen,1,2,2,0-1,2019-20_ch1.txt
+16.00,FC Luzern,FC Basel 1893,2,1,1,1-0,2019-20_ch1.txt
+,Servette FC,FC Lugano,1,1,X,0-1,2019-20_ch1.txt
+20.30,FC Thun,BSC Young Boys,1,0,1,0-0,2019-20_ch1.txt
+18.15,Neuchâtel Xamax FCS,FC Basel 1893,1,2,2,1-1,2019-20_ch1.txt
+20.30,FC Lugano,FC Luzern,2,0,1,0-0,2019-20_ch1.txt
+,FC Sion,Servette FC,1,1,X,1-1,2019-20_ch1.txt
+20.30,FC St. Gallen,FC Zürich,0,4,2,0-1,2019-20_ch1.txt
+18.15,FC Luzern,Servette FC,2,2,X,0-2,2019-20_ch1.txt
+20.30,BSC Young Boys,Neuchâtel Xamax FCS,6,0,1,4-0,2019-20_ch1.txt
+16.00,FC Basel 1893,FC Sion,2,0,1,0-0,2019-20_ch1.txt
+,FC St. Gallen,FC Thun,3,2,1,3-0,2019-20_ch1.txt
+,FC Zürich,FC Lugano,1,0,1,0-0,2019-20_ch1.txt
+20.30,Servette FC,BSC Young Boys,1,1,X,0-0,2019-20_ch1.txt
+18.15,FC Lugano,FC Basel 1893,2,1,1,0-0,2019-20_ch1.txt
+20.30,Neuchâtel Xamax FCS,FC St. Gallen,1,2,2,1-1,2019-20_ch1.txt
+,FC Thun,FC Zürich,3,2,1,3-2,2019-20_ch1.txt
+20.30,FC Sion,FC Luzern,0,2,2,0-1,2019-20_ch1.txt
+18.15,FC Basel 1893,Neuchâtel Xamax FCS,2,0,1,1-0,2019-20_ch1.txt
+20.30,FC Zürich,Servette FC,2,0,1,1-0,2019-20_ch1.txt
+16.00,FC Luzern,FC Thun,3,0,1,2-0,2019-20_ch1.txt
+,FC St. Gallen,FC Sion,2,1,1,2-1,2019-20_ch1.txt
+,BSC Young Boys,FC Lugano,3,0,1,1-0,2019-20_ch1.txt
+20.30,Neuchâtel Xamax FCS,FC Zürich,1,1,X,1-1,2019-20_ch1.txt
+18.15,BSC Young Boys,FC Thun,4,0,1,1-0,2019-20_ch1.txt
+20.30,Servette FC,FC Luzern,2,0,1,2-0,2019-20_ch1.txt
+,FC Sion,FC Basel 1893,1,0,1,1-0,2019-20_ch1.txt
+20.30,FC Lugano,FC St. Gallen,3,3,X,1-2,2019-20_ch1.txt
+20.30,FC Basel 1893,BSC Young Boys,3,2,1,1-0,2019-20_ch1.txt
+16.00,FC Luzern,FC Lugano,3,3,X,0-2,2019-20_ch1.txt
+,Servette FC,FC St. Gallen,1,1,X,0-1,2019-20_ch1.txt
+,FC Thun,Neuchâtel Xamax FCS,3,0,1,2-0,2019-20_ch1.txt
+20.30,FC Zürich,FC Sion,0,2,2,0-1,2019-20_ch1.txt
+20.30,FC Basel 1893,FC Zürich,4,0,1,2-0,2019-20_ch1.txt
+20.30,FC Lugano,FC Thun,1,1,X,0-0,2019-20_ch1.txt
+,BSC Young Boys,Servette FC,4,2,1,1-1,2019-20_ch1.txt
+18.15,Neuchâtel Xamax FCS,FC Sion,0,0,X,,2019-20_ch1.txt
+20.30,FC St. Gallen,FC Luzern,4,1,1,3-0,2019-20_ch1.txt
+20.30,FC Zürich,BSC Young Boys,0,5,2,0-2,2019-20_ch1.txt
+16.00,FC Luzern,Neuchâtel Xamax FCS,1,2,2,0-1,2019-20_ch1.txt
+,Servette FC,FC Basel 1893,2,2,X,1-1,2019-20_ch1.txt
+,FC Sion,FC Lugano,1,1,X,0-1,2019-20_ch1.txt
+,FC Thun,FC St. Gallen,2,1,1,0-0,2019-20_ch1.txt
+18.15,FC Thun,Servette FC,5,1,1,2-0,2019-20_ch1.txt
+20.30,FC Lugano,FC Zürich,1,0,1,1-0,2019-20_ch1.txt
+,FC Luzern,FC Sion,1,2,2,0-2,2019-20_ch1.txt
+,FC St. Gallen,FC Basel 1893,0,5,2,0-2,2019-20_ch1.txt
+20.30,Neuchâtel Xamax FCS,BSC Young Boys,0,1,2,0-1,2019-20_ch1.txt
+18.15,FC Sion,FC Thun,1,1,X,0-0,2019-20_ch1.txt
+20.30,FC Zürich,FC St. Gallen,1,3,2,1-1,2019-20_ch1.txt
+16.00,FC Basel 1893,FC Lugano,4,4,X,2-3,2019-20_ch1.txt
+,Servette FC,Neuchâtel Xamax FCS,4,1,1,1-1,2019-20_ch1.txt
+,BSC Young Boys,FC Luzern,1,0,1,0-0,2019-20_ch1.txt
+20.30,FC Lugano,Servette FC,3,1,1,1-1,2019-20_ch1.txt
+,FC Luzern,FC Zürich,2,1,1,1-1,2019-20_ch1.txt
+,FC Sion,BSC Young Boys,0,1,2,0-1,2019-20_ch1.txt
+,FC St. Gallen,Neuchâtel Xamax FCS,6,0,1,4-0,2019-20_ch1.txt
+,FC Thun,FC Basel 1893,0,0,X,,2019-20_ch1.txt
+20.30,FC Basel 1893,FC Luzern,0,0,X,,2019-20_ch1.txt
+,Neuchâtel Xamax FCS,FC Lugano,0,1,2,0-0,2019-20_ch1.txt
+,Servette FC,FC Sion,1,2,2,1-1,2019-20_ch1.txt
+,BSC Young Boys,FC St. Gallen,3,1,1,2-1,2019-20_ch1.txt
+,FC Zürich,FC Thun,3,3,X,2-0,2019-20_ch1.txt
+17.00,FC Winterthur,FC Aarau,1,1,X,0-1,2019-20_ch2.txt
+17.30,Grasshopper Club Zürich,Stade Lausanne-Ouchy,2,1,1,1-0,2019-20_ch2.txt
+18.30,FC Chiasso,FC Wil 1900,0,1,2,0-0,2019-20_ch2.txt
+19.00,FC Schaffhausen,FC Lausanne-Sport,2,2,X,0-0,2019-20_ch2.txt
+16.00,SC Kriens,FC Vaduz,1,0,1,1-0,2019-20_ch2.txt
+20.00,FC Wil 1900,Grasshopper Club Zürich,0,1,2,0-1,2019-20_ch2.txt
+19.00,FC Aarau,SC Kriens,4,1,1,0-0,2019-20_ch2.txt
+,FC Lausanne-Sport,FC Chiasso,3,0,1,0-0,2019-20_ch2.txt
+16.00,FC Vaduz,FC Schaffhausen,2,0,1,1-0,2019-20_ch2.txt
+19.00,Stade Lausanne-Ouchy,FC Winterthur,1,2,2,1-0,2019-20_ch2.txt
+20.00,FC Aarau,Grasshopper Club Zürich,1,2,2,0-0,2019-20_ch2.txt
+17.30,SC Kriens,FC Chiasso,2,0,1,1-0,2019-20_ch2.txt
+18.00,FC Winterthur,FC Lausanne-Sport,0,6,2,0-2,2019-20_ch2.txt
+19.00,FC Schaffhausen,FC Wil 1900,3,3,X,2-1,2019-20_ch2.txt
+16.00,Stade Lausanne-Ouchy,FC Vaduz,3,3,X,2-3,2019-20_ch2.txt
+20.00,FC Chiasso,FC Aarau,4,2,1,1-2,2019-20_ch2.txt
+20.00,Grasshopper Club Zürich,FC Schaffhausen,0,1,2,0-0,2019-20_ch2.txt
+19.00,FC Lausanne-Sport,SC Kriens,4,0,1,2-0,2019-20_ch2.txt
+14.30,FC Wil 1900,Stade Lausanne-Ouchy,2,0,1,1-0,2019-20_ch2.txt
+16.00,FC Vaduz,FC Winterthur,0,1,2,0-0,2019-20_ch2.txt
+20.00,Grasshopper Club Zürich,FC Winterthur,2,2,X,0-1,2019-20_ch2.txt
+17.30,FC Wil 1900,SC Kriens,2,0,1,0-0,2019-20_ch2.txt
+19.00,FC Lausanne-Sport,FC Aarau,5,1,1,1-0,2019-20_ch2.txt
+,FC Schaffhausen,Stade Lausanne-Ouchy,0,1,2,0-0,2019-20_ch2.txt
+16.00,FC Chiasso,FC Vaduz,2,2,X,2-1,2019-20_ch2.txt
+20.00,Stade Lausanne-Ouchy,FC Lausanne-Sport,3,0,1,0-0,2019-20_ch2.txt
+17.30,SC Kriens,FC Winterthur,3,2,1,2-0,2019-20_ch2.txt
+19.00,FC Aarau,FC Wil 1900,1,0,1,1-0,2019-20_ch2.txt
+,FC Schaffhausen,FC Chiasso,1,0,1,1-0,2019-20_ch2.txt
+16.00,FC Vaduz,Grasshopper Club Zürich,2,2,X,1-1,2019-20_ch2.txt
+20.00,SC Kriens,Grasshopper Club Zürich,1,2,2,1-0,2019-20_ch2.txt
+17.00,Stade Lausanne-Ouchy,FC Chiasso,3,0,1,2-0,2019-20_ch2.txt
+18.00,FC Winterthur,FC Wil 1900,0,3,2,0-1,2019-20_ch2.txt
+19.00,FC Aarau,FC Schaffhausen,3,1,1,2-1,2019-20_ch2.txt
+16.00,FC Vaduz,FC Lausanne-Sport,1,2,2,1-1,2019-20_ch2.txt
+19.00,FC Chiasso,FC Winterthur,0,2,2,0-0,2019-20_ch2.txt
+19.30,FC Aarau,Stade Lausanne-Ouchy,1,1,X,1-1,2019-20_ch2.txt
+20.00,FC Schaffhausen,SC Kriens,0,2,2,0-1,2019-20_ch2.txt
+20.00,FC Lausanne-Sport,Grasshopper Club Zürich,2,1,1,1-0,2019-20_ch2.txt
+,FC Wil 1900,FC Vaduz,4,1,1,2-0,2019-20_ch2.txt
+20.00,FC Winterthur,FC Schaffhausen,3,1,1,1-1,2019-20_ch2.txt
+17.00,Stade Lausanne-Ouchy,SC Kriens,2,1,1,2-1,2019-20_ch2.txt
+17.30,Grasshopper Club Zürich,FC Chiasso,3,2,1,3-1,2019-20_ch2.txt
+14.30,FC Wil 1900,FC Lausanne-Sport,2,2,X,0-2,2019-20_ch2.txt
+16.00,FC Vaduz,FC Aarau,5,2,1,2-1,2019-20_ch2.txt
+20.00,FC Lausanne-Sport,FC Winterthur,0,0,X,,2019-20_ch2.txt
+17.00,FC Chiasso,FC Schaffhausen,0,1,2,0-0,2019-20_ch2.txt
+17.30,Grasshopper Club Zürich,FC Wil 1900,3,0,1,3-0,2019-20_ch2.txt
+18.30,SC Kriens,FC Aarau,2,3,2,0-0,2019-20_ch2.txt
+16.00,FC Vaduz,Stade Lausanne-Ouchy,3,2,1,1-0,2019-20_ch2.txt
+20.00,FC Aarau,FC Lausanne-Sport,1,3,2,0-3,2019-20_ch2.txt
+17.00,FC Chiasso,SC Kriens,0,1,2,0-1,2019-20_ch2.txt
+,Stade Lausanne-Ouchy,FC Wil 1900,0,3,2,0-2,2019-20_ch2.txt
+18.00,FC Winterthur,FC Vaduz,1,0,1,1-0,2019-20_ch2.txt
+19.00,FC Schaffhausen,Grasshopper Club Zürich,1,1,X,1-1,2019-20_ch2.txt
+20.00,Grasshopper Club Zürich,FC Vaduz,3,3,X,1-1,2019-20_ch2.txt
+17.30,SC Kriens,FC Schaffhausen,2,2,X,1-1,2019-20_ch2.txt
+18.00,FC Winterthur,FC Chiasso,2,1,1,1-0,2019-20_ch2.txt
+14.30,FC Wil 1900,FC Aarau,3,0,1,1-0,2019-20_ch2.txt
+15.00,FC Lausanne-Sport,Stade Lausanne-Ouchy,5,0,1,2-0,2019-20_ch2.txt
+17.00,FC Schaffhausen,FC Winterthur,1,1,X,1-0,2019-20_ch2.txt
+,Stade Lausanne-Ouchy,FC Aarau,0,2,2,0-0,2019-20_ch2.txt
+17.30,Grasshopper Club Zürich,SC Kriens,2,0,1,1-0,2019-20_ch2.txt
+14.30,FC Chiasso,FC Lausanne-Sport,3,2,1,2-0,2019-20_ch2.txt
+16.00,FC Vaduz,FC Wil 1900,4,2,1,1-1,2019-20_ch2.txt
+20.00,FC Winterthur,Grasshopper Club Zürich,1,1,X,1-1,2019-20_ch2.txt
+17.30,FC Wil 1900,FC Chiasso,1,4,2,1-1,2019-20_ch2.txt
+14.30,SC Kriens,Stade Lausanne-Ouchy,3,0,1,3-0,2019-20_ch2.txt
+15.00,FC Aarau,FC Vaduz,2,2,X,2-2,2019-20_ch2.txt
+,FC Lausanne-Sport,FC Schaffhausen,5,0,1,2-0,2019-20_ch2.txt
+20.00,FC Lausanne-Sport,FC Wil 1900,5,0,1,2-0,2019-20_ch2.txt
+17.00,FC Chiasso,Stade Lausanne-Ouchy,2,2,X,2-1,2019-20_ch2.txt
+19.00,FC Schaffhausen,FC Vaduz,0,3,2,0-0,2019-20_ch2.txt
+15.00,FC Winterthur,SC Kriens,0,2,2,0-1,2019-20_ch2.txt
+16.00,Grasshopper Club Zürich,FC Aarau,0,0,X,,2019-20_ch2.txt
+20.00,FC Aarau,FC Winterthur,2,2,X,1-1,2019-20_ch2.txt
+17.00,Stade Lausanne-Ouchy,Grasshopper Club Zürich,0,1,2,0-0,2019-20_ch2.txt
+17.30,SC Kriens,FC Lausanne-Sport,1,2,2,0-1,2019-20_ch2.txt
+,FC Wil 1900,FC Schaffhausen,1,1,X,0-1,2019-20_ch2.txt
+16.00,FC Vaduz,FC Chiasso,4,2,1,4-0,2019-20_ch2.txt
+20.00,FC Schaffhausen,FC Aarau,0,0,X,,2019-20_ch2.txt
+17.00,FC Chiasso,Grasshopper Club Zürich,0,1,2,0-0,2019-20_ch2.txt
+17.30,SC Kriens,FC Wil 1900,2,1,1,2-0,2019-20_ch2.txt
+15.00,FC Lausanne-Sport,FC Vaduz,0,2,2,0-0,2019-20_ch2.txt
+,FC Winterthur,Stade Lausanne-Ouchy,1,2,2,1-0,2019-20_ch2.txt
+20.00,Grasshopper Club Zürich,FC Lausanne-Sport,1,2,2,1-1,2019-20_ch2.txt
+17.00,Stade Lausanne-Ouchy,FC Schaffhausen,2,0,1,1-0,2019-20_ch2.txt
+14.30,FC Wil 1900,FC Winterthur,4,0,1,3-0,2019-20_ch2.txt
+15.00,FC Aarau,FC Chiasso,3,3,X,2-1,2019-20_ch2.txt
+16.00,FC Vaduz,SC Kriens,1,2,2,0-2,2019-20_ch2.txt
+20.00,FC Schaffhausen,FC Lausanne-Sport,0,0,X,,2019-20_ch2.txt
+17.00,Stade Lausanne-Ouchy,FC Aarau,0,2,2,0-0,2019-20_ch2.txt
+17.30,SC Kriens,FC Winterthur,0,0,X,,2019-20_ch2.txt
+15.00,FC Vaduz,FC Wil 1900,2,1,1,0-1,2019-20_ch2.txt
+16.00,FC Chiasso,Grasshopper Club Zürich,1,1,X,1-0,2019-20_ch2.txt
+20.00,Grasshopper Club Zürich,FC Vaduz,1,2,2,0-1,2019-20_ch2.txt
+17.30,FC Wil 1900,Stade Lausanne-Ouchy,1,2,2,0-1,2019-20_ch2.txt
+15.00,FC Aarau,FC Schaffhausen,1,2,2,1-0,2019-20_ch2.txt
+,FC Lausanne-Sport,SC Kriens,2,0,1,1-0,2019-20_ch2.txt
+,FC Winterthur,FC Chiasso,3,2,1,2-0,2019-20_ch2.txt
+20.00,Stade Lausanne-Ouchy,Grasshopper Club Zürich,4,1,1,2-0,2019-20_ch2.txt
+17.00,FC Schaffhausen,FC Winterthur,1,0,1,0-0,2019-20_ch2.txt
+17.30,SC Kriens,FC Wil 1900,2,0,1,2-0,2019-20_ch2.txt
+14.30,FC Chiasso,FC Lausanne-Sport,0,2,2,0-1,2019-20_ch2.txt
+15.00,FC Aarau,FC Vaduz,1,2,2,1-0,2019-20_ch2.txt
+20.00,Grasshopper Club Zürich,SC Kriens,0,1,2,0-0,2019-20_ch2.txt
+17.30,FC Wil 1900,FC Schaffhausen,0,0,X,,2019-20_ch2.txt
+15.00,FC Lausanne-Sport,FC Aarau,1,0,1,0-0,2019-20_ch2.txt
+,FC Vaduz,FC Chiasso,0,0,X,,2019-20_ch2.txt
+,FC Winterthur,Stade Lausanne-Ouchy,1,0,1,1-0,2019-20_ch2.txt
+20.00,FC Winterthur,FC Lausanne-Sport,0,4,2,0-2,2019-20_ch2.txt
+17.00,FC Chiasso,FC Wil 1900,2,0,1,2-0,2019-20_ch2.txt
+,FC Schaffhausen,Grasshopper Club Zürich,0,3,2,0-1,2019-20_ch2.txt
+,Stade Lausanne-Ouchy,FC Vaduz,1,1,X,1-1,2019-20_ch2.txt
+15.00,FC Aarau,SC Kriens,4,4,X,2-1,2019-20_ch2.txt
+18.15,Grasshopper Club Zürich,FC Aarau,5,0,1,3-0,2019-20_ch2.txt
+,FC Wil 1900,FC Lausanne-Sport,1,1,X,0-1,2019-20_ch2.txt
+20.30,FC Vaduz,FC Winterthur,4,1,1,1-0,2019-20_ch2.txt
+18.15,Stade Lausanne-Ouchy,FC Chiasso,2,1,1,1-1,2019-20_ch2.txt
+20.30,SC Kriens,FC Schaffhausen,3,0,1,2-0,2019-20_ch2.txt
+18.15,FC Schaffhausen,FC Chiasso,2,1,1,0-0,2019-20_ch2.txt
+,FC Winterthur,Grasshopper Club Zürich,1,1,X,0-1,2019-20_ch2.txt
+20.30,FC Aarau,FC Wil 1900,4,1,1,1-1,2019-20_ch2.txt
+,FC Lausanne-Sport,FC Vaduz,1,1,X,0-0,2019-20_ch2.txt
+18.15,SC Kriens,Stade Lausanne-Ouchy,2,2,X,1-1,2019-20_ch2.txt
+18.15,FC Chiasso,FC Aarau,1,3,2,0-0,2019-20_ch2.txt
+,FC Wil 1900,FC Winterthur,3,1,1,2-0,2019-20_ch2.txt
+20.30,Grasshopper Club Zürich,FC Lausanne-Sport,3,1,1,1-0,2019-20_ch2.txt
+18.15,Stade Lausanne-Ouchy,FC Schaffhausen,1,1,X,1-0,2019-20_ch2.txt
+20.30,FC Vaduz,SC Kriens,4,2,1,0-0,2019-20_ch2.txt
+18.15,FC Schaffhausen,FC Vaduz,2,2,X,2-1,2019-20_ch2.txt
+,FC Winterthur,FC Aarau,5,2,1,5-1,2019-20_ch2.txt
+20.30,Grasshopper Club Zürich,FC Wil 1900,4,1,1,1-1,2019-20_ch2.txt
+,FC Lausanne-Sport,Stade Lausanne-Ouchy,0,0,X,,2019-20_ch2.txt
+18.15,SC Kriens,FC Chiasso,4,1,1,4-0,2019-20_ch2.txt
+18.15,Stade Lausanne-Ouchy,FC Winterthur,2,2,X,1-1,2019-20_ch2.txt
+,FC Vaduz,Grasshopper Club Zürich,2,3,2,2-0,2019-20_ch2.txt
+20.30,FC Aarau,FC Lausanne-Sport,5,4,1,1-2,2019-20_ch2.txt
+18.15,FC Chiasso,FC Schaffhausen,1,1,X,1-0,2019-20_ch2.txt
+20.30,FC Wil 1900,SC Kriens,2,0,1,0-0,2019-20_ch2.txt
+18.15,FC Lausanne-Sport,FC Chiasso,2,1,1,2-1,2019-20_ch2.txt
+,FC Winterthur,FC Vaduz,1,4,2,1-2,2019-20_ch2.txt
+20.30,Grasshopper Club Zürich,Stade Lausanne-Ouchy,4,0,1,1-0,2019-20_ch2.txt
+,FC Schaffhausen,FC Wil 1900,2,3,2,2-3,2019-20_ch2.txt
+18.15,SC Kriens,FC Aarau,4,1,1,4-1,2019-20_ch2.txt
+18.15,FC Lausanne-Sport,FC Schaffhausen,1,0,1,1-0,2019-20_ch2.txt
+,FC Vaduz,Stade Lausanne-Ouchy,5,1,1,4-0,2019-20_ch2.txt
+18.15,FC Chiasso,SC Kriens,2,4,2,0-2,2019-20_ch2.txt
+20.30,FC Aarau,FC Winterthur,2,3,2,1-3,2019-20_ch2.txt
+20.30,FC Wil 1900,Grasshopper Club Zürich,3,2,1,1-0,2019-20_ch2.txt
+18.15,SC Kriens,FC Lausanne-Sport,0,3,2,0-2,2019-20_ch2.txt
+,FC Winterthur,FC Schaffhausen,1,0,1,1-0,2019-20_ch2.txt
+20.30,Grasshopper Club Zürich,FC Chiasso,2,1,1,1-0,2019-20_ch2.txt
+,FC Vaduz,FC Aarau,1,1,X,1-1,2019-20_ch2.txt
+18.15,Stade Lausanne-Ouchy,FC Wil 1900,1,2,2,0-1,2019-20_ch2.txt
+18.15,FC Chiasso,FC Winterthur,0,2,2,0-0,2019-20_ch2.txt
+,FC Schaffhausen,SC Kriens,0,0,X,,2019-20_ch2.txt
+20.30,FC Lausanne-Sport,Grasshopper Club Zürich,1,0,1,0-0,2019-20_ch2.txt
+18.15,FC Aarau,Stade Lausanne-Ouchy,1,3,2,0-2,2019-20_ch2.txt
+20.30,FC Wil 1900,FC Vaduz,1,2,2,1-0,2019-20_ch2.txt
+18.15,FC Aarau,FC Chiasso,2,2,X,1-1,2019-20_ch2.txt
+,FC Vaduz,FC Lausanne-Sport,2,1,1,0-0,2019-20_ch2.txt
+,FC Winterthur,FC Wil 1900,2,2,X,1-2,2019-20_ch2.txt
+20.30,Grasshopper Club Zürich,FC Schaffhausen,5,3,1,1-2,2019-20_ch2.txt
+,Stade Lausanne-Ouchy,SC Kriens,2,0,1,0-0,2019-20_ch2.txt
+18.15,SC Kriens,Grasshopper Club Zürich,4,4,X,2-3,2019-20_ch2.txt
+19.00,FC Schaffhausen,Stade Lausanne-Ouchy,2,2,X,0-0,2019-20_ch2.txt
+20.30,FC Lausanne-Sport,FC Winterthur,1,2,2,0-1,2019-20_ch2.txt
+,FC Wil 1900,FC Aarau,3,1,1,1-0,2019-20_ch2.txt
+18.15,FC Chiasso,FC Vaduz,1,2,2,0-2,2019-20_ch2.txt
+20.30,FC Aarau,Grasshopper Club Zürich,2,2,X,1-0,2019-20_ch2.txt
+,Stade Lausanne-Ouchy,FC Lausanne-Sport,0,4,2,0-1,2019-20_ch2.txt
+,FC Vaduz,FC Schaffhausen,3,1,1,0-1,2019-20_ch2.txt
+,FC Wil 1900,FC Chiasso,1,1,X,1-1,2019-20_ch2.txt
+,FC Winterthur,SC Kriens,4,0,1,4-0,2019-20_ch2.txt
+16.00,FC Chiasso,Stade Lausanne-Ouchy,3,1,1,1-0,2019-20_ch2.txt
+,Grasshopper Club Zürich,FC Winterthur,0,6,2,0-1,2019-20_ch2.txt
+,SC Kriens,FC Vaduz,2,1,1,1-1,2019-20_ch2.txt
+,FC Lausanne-Sport,FC Wil 1900,5,3,1,3-2,2019-20_ch2.txt
+,FC Schaffhausen,FC Aarau,2,4,2,0-1,2019-20_ch2.txt
+19.00,FC Lugano,FC Luzern,2,1,1,2-0,2020-21_ch1.txt
+,BSC Young Boys,FC Zürich,2,1,1,1-1,2020-21_ch1.txt
+16.00,FC Basel 1893,FC Vaduz,2,2,X,2-1,2020-21_ch1.txt
+,FC Lausanne-Sport,Servette FC,2,1,1,1-0,2020-21_ch1.txt
+,FC St. Gallen,FC Sion,1,0,1,1-0,2020-21_ch1.txt
+19.00,FC Sion,BSC Young Boys,0,0,X,,2020-21_ch1.txt
+,FC Zürich,FC Lugano,2,2,X,1-1,2020-21_ch1.txt
+16.00,FC Luzern,FC Lausanne-Sport,2,2,X,1-1,2020-21_ch1.txt
+,FC Vaduz,FC St. Gallen,0,1,2,0-0,2020-21_ch1.txt
+,Servette FC,FC Basel 1893,1,0,1,0-0,2020-21_ch1.txt
+19.00,FC Lausanne-Sport,FC Zürich,4,0,1,2-0,2020-21_ch1.txt
+,FC Lugano,FC Sion,2,2,X,0-1,2020-21_ch1.txt
+16.00,FC Basel 1893,FC Luzern,3,2,1,2-1,2020-21_ch1.txt
+,FC St. Gallen,Servette FC,1,0,1,1-0,2020-21_ch1.txt
+,BSC Young Boys,FC Vaduz,1,0,1,0-0,2020-21_ch1.txt
+19.00,FC Vaduz,FC Lugano,1,1,X,1-0,2020-21_ch1.txt
+,Servette FC,BSC Young Boys,0,0,X,,2020-21_ch1.txt
+16.00,FC Luzern,FC St. Gallen,2,2,X,0-1,2020-21_ch1.txt
+,FC Sion,FC Lausanne-Sport,0,0,X,,2020-21_ch1.txt
+18.00,FC Zürich,FC Basel 1893,1,0,1,0-0,2020-21_ch1.txt
+19.00,FC Vaduz,FC Zürich,1,4,2,0-2,2020-21_ch1.txt
+,FC Lugano,FC St. Gallen,1,0,1,1-0,2020-21_ch1.txt
+16.00,BSC Young Boys,FC Luzern,2,1,1,0-1,2020-21_ch1.txt
+18.15,FC Basel 1893,FC Lausanne-Sport,2,1,1,1-0,2020-21_ch1.txt
+,FC Sion,Servette FC,2,0,1,1-0,2020-21_ch1.txt
+16.00,FC St. Gallen,FC Basel 1893,1,3,2,1-2,2020-21_ch1.txt
+18.15,FC Lausanne-Sport,FC Vaduz,3,0,1,0-0,2020-21_ch1.txt
+,FC Luzern,FC Sion,2,0,1,0-0,2020-21_ch1.txt
+,Servette FC,FC Zürich,2,1,1,0-0,2020-21_ch1.txt
+18.00,FC Lugano,BSC Young Boys,0,2,2,0-0,2020-21_ch1.txt
+19.00,FC Lausanne-Sport,FC Lugano,0,1,2,0-1,2020-21_ch1.txt
+,FC Zürich,FC Luzern,2,0,1,2-0,2020-21_ch1.txt
+16.00,BSC Young Boys,FC St. Gallen,0,0,X,,2020-21_ch1.txt
+18.15,FC Basel 1893,FC Sion,4,2,1,3-1,2020-21_ch1.txt
+,FC Vaduz,Servette FC,0,2,2,0-1,2020-21_ch1.txt
+18.15,FC Luzern,FC Vaduz,1,1,X,1-0,2020-21_ch1.txt
+20.30,BSC Young Boys,FC Basel 1893,2,1,1,1-1,2020-21_ch1.txt
+16.00,FC Sion,FC Zürich,2,2,X,0-0,2020-21_ch1.txt
+,FC St. Gallen,FC Lausanne-Sport,2,2,X,0-2,2020-21_ch1.txt
+,Servette FC,FC Lugano,1,1,X,1-0,2020-21_ch1.txt
+18.15,FC Vaduz,FC Sion,4,1,1,1-1,2020-21_ch1.txt
+20.30,Servette FC,FC Luzern,1,3,2,0-1,2020-21_ch1.txt
+16.00,FC Lausanne-Sport,BSC Young Boys,0,3,2,0-1,2020-21_ch1.txt
+,FC Lugano,FC Basel 1893,1,0,1,0-0,2020-21_ch1.txt
+18.15,FC Zürich,FC St. Gallen,1,2,2,1-2,2020-21_ch1.txt
+20.30,FC Basel 1893,Servette FC,1,0,1,0-0,2020-21_ch1.txt
+16.00,FC Luzern,BSC Young Boys,2,3,2,0-3,2020-21_ch1.txt
+,FC Zürich,FC Lausanne-Sport,4,0,1,2-0,2020-21_ch1.txt
+16.00,FC Sion,FC Lugano,1,1,X,0-0,2020-21_ch1.txt
+18.00,FC St. Gallen,FC Vaduz,2,0,1,0-0,2020-21_ch1.txt
+18.45,FC Sion,FC Luzern,1,2,2,0-0,2020-21_ch1.txt
+20.30,FC Vaduz,FC Basel 1893,0,2,2,0-0,2020-21_ch1.txt
+16.00,FC Lausanne-Sport,FC St. Gallen,0,1,2,0-0,2020-21_ch1.txt
+,FC Lugano,FC Zürich,0,1,2,0-0,2020-21_ch1.txt
+,BSC Young Boys,Servette FC,1,2,2,0-1,2020-21_ch1.txt
+18.15,FC Luzern,FC Zürich,0,0,X,,2020-21_ch1.txt
+20.30,FC Basel 1893,BSC Young Boys,0,2,2,0-2,2020-21_ch1.txt
+,FC St. Gallen,FC Lugano,0,0,X,,2020-21_ch1.txt
+18.15,FC Vaduz,FC Lausanne-Sport,0,2,2,0-0,2020-21_ch1.txt
+20.30,Servette FC,FC Sion,1,1,X,0-1,2020-21_ch1.txt
+18.15,BSC Young Boys,FC Lugano,2,2,X,2-1,2020-21_ch1.txt
+20.30,FC Basel 1893,FC St. Gallen,0,0,X,,2020-21_ch1.txt
+16.00,FC Lausanne-Sport,FC Luzern,2,1,1,0-1,2020-21_ch1.txt
+,FC Sion,FC Vaduz,2,1,1,0-0,2020-21_ch1.txt
+,FC Zürich,Servette FC,0,1,2,0-0,2020-21_ch1.txt
+20.30,FC St. Gallen,BSC Young Boys,1,2,2,0-0,2020-21_ch1.txt
+18.15,FC Luzern,FC Basel 1893,1,2,2,0-2,2020-21_ch1.txt
+,Servette FC,FC Vaduz,1,1,X,0-0,2020-21_ch1.txt
+20.30,FC Lugano,FC Lausanne-Sport,0,0,X,,2020-21_ch1.txt
+,FC Zürich,FC Sion,0,0,X,,2020-21_ch1.txt
+18.15,FC Lausanne-Sport,FC Sion,0,1,2,0-1,2020-21_ch1.txt
+20.30,FC Basel 1893,FC Zürich,1,4,2,0-0,2020-21_ch1.txt
+16.00,FC Vaduz,BSC Young Boys,0,0,X,,2020-21_ch1.txt
+18.15,FC Luzern,FC Lugano,1,1,X,0-1,2020-21_ch1.txt
+,Servette FC,FC St. Gallen,2,2,X,1-1,2020-21_ch1.txt
+18.15,FC Zürich,FC Vaduz,0,1,2,0-0,2020-21_ch1.txt
+20.30,FC Sion,FC Basel 1893,2,3,2,0-2,2020-21_ch1.txt
+20.30,BSC Young Boys,FC Lausanne-Sport,1,0,1,1-0,2020-21_ch1.txt
+18.15,FC Lugano,Servette FC,1,1,X,1-0,2020-21_ch1.txt
+,FC St. Gallen,FC Luzern,2,1,1,0-1,2020-21_ch1.txt
+20.30,FC St. Gallen,FC Zürich,2,3,2,2-3,2020-21_ch1.txt
+16.00,FC Basel 1893,FC Lugano,2,2,X,0-1,2020-21_ch1.txt
+,Servette FC,FC Lausanne-Sport,1,1,X,0-1,2020-21_ch1.txt
+,BSC Young Boys,FC Sion,2,1,1,2-1,2020-21_ch1.txt
+18.15,FC Vaduz,FC Luzern,1,1,X,0-1,2020-21_ch1.txt
+18.15,FC Zürich,BSC Young Boys,1,4,2,0-3,2020-21_ch1.txt
+20.30,FC Lugano,FC Vaduz,1,1,X,1-1,2020-21_ch1.txt
+,FC Sion,FC St. Gallen,3,2,1,1-1,2020-21_ch1.txt
+18.15,FC Luzern,Servette FC,3,0,1,1-0,2020-21_ch1.txt
+20.30,FC Lausanne-Sport,FC Basel 1893,1,3,2,0-1,2020-21_ch1.txt
+16.00,FC St. Gallen,FC Lugano,0,1,2,0-0,2020-21_ch1.txt
+20.30,FC Vaduz,FC Zürich,3,2,1,0-1,2020-21_ch1.txt
+16.00,FC Basel 1893,FC Sion,2,2,X,2-0,2020-21_ch1.txt
+,Servette FC,FC Luzern,4,2,1,2-1,2020-21_ch1.txt
+,BSC Young Boys,FC Lausanne-Sport,4,2,1,4-0,2020-21_ch1.txt
+18.15,FC Lausanne-Sport,Servette FC,3,1,1,2-0,2020-21_ch1.txt
+20.30,FC Sion,FC St. Gallen,1,1,X,1-0,2020-21_ch1.txt
+16.00,FC Lugano,BSC Young Boys,1,3,2,0-3,2020-21_ch1.txt
+,FC Luzern,FC Vaduz,4,0,1,2-0,2020-21_ch1.txt
+,FC Zürich,FC Basel 1893,2,0,1,1-0,2020-21_ch1.txt
+18.15,FC Vaduz,FC St. Gallen,2,1,1,1-0,2020-21_ch1.txt
+20.30,FC Basel 1893,FC Lausanne-Sport,0,0,X,,2020-21_ch1.txt
+16.00,FC Lugano,FC Luzern,2,3,2,1-1,2020-21_ch1.txt
+,BSC Young Boys,Servette FC,2,0,1,2-0,2020-21_ch1.txt
+,FC Zürich,FC Sion,1,1,X,1-1,2020-21_ch1.txt
+18.15,Servette FC,FC Zürich,3,1,1,1-1,2020-21_ch1.txt
+20.30,FC St. Gallen,FC Basel 1893,3,1,1,1-0,2020-21_ch1.txt
+16.00,FC Lausanne-Sport,FC Lugano,2,0,1,1-0,2020-21_ch1.txt
+,FC Luzern,BSC Young Boys,2,2,X,1-0,2020-21_ch1.txt
+,FC Sion,FC Vaduz,0,2,2,0-0,2020-21_ch1.txt
+18.15,FC St. Gallen,Servette FC,0,1,2,0-1,2020-21_ch1.txt
+20.30,FC Basel 1893,BSC Young Boys,1,1,X,1-1,2020-21_ch1.txt
+,FC Vaduz,FC Lausanne-Sport,0,3,2,0-1,2020-21_ch1.txt
+18.15,FC Sion,FC Lugano,0,3,2,0-3,2020-21_ch1.txt
+20.30,FC Zürich,FC Luzern,1,2,2,0-2,2020-21_ch1.txt
+18.15,BSC Young Boys,FC Vaduz,1,1,X,0-0,2020-21_ch1.txt
+20.30,Servette FC,FC Basel 1893,2,1,1,0-0,2020-21_ch1.txt
+16.00,FC Lausanne-Sport,FC Sion,1,3,2,1-1,2020-21_ch1.txt
+,FC Lugano,FC Zürich,0,1,2,0-1,2020-21_ch1.txt
+,FC Luzern,FC St. Gallen,4,2,1,1-2,2020-21_ch1.txt
+18.15,FC Zürich,FC Lausanne-Sport,1,1,X,1-0,2020-21_ch1.txt
+20.30,FC Basel 1893,FC Luzern,4,1,1,1-0,2020-21_ch1.txt
+16.00,FC Sion,Servette FC,1,2,2,0-2,2020-21_ch1.txt
+,FC St. Gallen,BSC Young Boys,2,2,X,1-0,2020-21_ch1.txt
+,FC Vaduz,FC Lugano,0,3,2,0-2,2020-21_ch1.txt
+18.15,FC Lausanne-Sport,FC St. Gallen,4,3,1,3-1,2020-21_ch1.txt
+20.30,FC Lugano,FC Basel 1893,2,1,1,0-1,2020-21_ch1.txt
+16.00,BSC Young Boys,FC Zürich,4,0,1,1-0,2020-21_ch1.txt
+,FC Luzern,FC Sion,1,1,X,0-0,2020-21_ch1.txt
+,Servette FC,FC Vaduz,1,2,2,0-1,2020-21_ch1.txt
+18.15,FC Lausanne-Sport,FC Luzern,2,1,1,2-0,2020-21_ch1.txt
+20.30,FC St. Gallen,FC Zürich,1,1,X,0-1,2020-21_ch1.txt
+16.00,Servette FC,FC Lugano,1,1,X,0-0,2020-21_ch1.txt
+,FC Sion,BSC Young Boys,0,3,2,0-0,2020-21_ch1.txt
+16.00,FC Basel 1893,FC Vaduz,1,2,2,0-1,2020-21_ch1.txt
+18.15,FC Lugano,FC Lausanne-Sport,1,0,1,1-0,2020-21_ch1.txt
+20.30,FC Luzern,FC Basel 1893,3,4,2,1-3,2020-21_ch1.txt
+16.00,FC Vaduz,FC Sion,3,0,1,0-0,2020-21_ch1.txt
+,BSC Young Boys,FC St. Gallen,2,0,1,0-0,2020-21_ch1.txt
+,FC Zürich,Servette FC,1,2,2,0-0,2020-21_ch1.txt
+18.15,FC Sion,FC Zürich,2,2,X,1-1,2020-21_ch1.txt
+20.30,FC St. Gallen,FC Luzern,0,0,X,,2020-21_ch1.txt
+16.00,FC Basel 1893,Servette FC,5,0,1,3-0,2020-21_ch1.txt
+,FC Lausanne-Sport,FC Vaduz,2,1,1,0-1,2020-21_ch1.txt
+,BSC Young Boys,FC Lugano,3,0,1,1-0,2020-21_ch1.txt
+18.15,FC Luzern,FC Lausanne-Sport,1,0,1,0-0,2020-21_ch1.txt
+20.30,FC Lugano,FC St. Gallen,2,0,1,1-0,2020-21_ch1.txt
+,FC Vaduz,FC Basel 1893,1,1,X,0-0,2020-21_ch1.txt
+18.15,Servette FC,FC Sion,3,5,2,1-1,2020-21_ch1.txt
+20.30,FC Zürich,BSC Young Boys,1,2,2,1-2,2020-21_ch1.txt
+18.15,FC St. Gallen,FC Vaduz,1,0,1,1-0,2020-21_ch1.txt
+20.30,FC Lausanne-Sport,FC Basel 1893,3,3,X,2-1,2020-21_ch1.txt
+16.00,FC Lugano,Servette FC,0,1,2,0-1,2020-21_ch1.txt
+,FC Luzern,FC Zürich,3,1,1,1-1,2020-21_ch1.txt
+,BSC Young Boys,FC Sion,2,1,1,1-1,2020-21_ch1.txt
+18.15,FC Vaduz,FC Luzern,1,2,2,1-2,2020-21_ch1.txt
+20.30,FC Basel 1893,FC St. Gallen,1,0,1,0-0,2020-21_ch1.txt
+16.00,Servette FC,BSC Young Boys,2,1,1,0-0,2020-21_ch1.txt
+,FC Sion,FC Lausanne-Sport,1,1,X,0-0,2020-21_ch1.txt
+,FC Zürich,FC Lugano,3,0,1,1-0,2020-21_ch1.txt
+18.15,FC Lugano,FC Vaduz,0,2,2,0-1,2020-21_ch1.txt
+20.30,BSC Young Boys,FC Basel 1893,2,0,1,0-0,2020-21_ch1.txt
+16.00,FC Lausanne-Sport,FC Zürich,2,2,X,0-2,2020-21_ch1.txt
+,FC Luzern,Servette FC,3,0,1,0-0,2020-21_ch1.txt
+,FC St. Gallen,FC Sion,0,3,2,0-0,2020-21_ch1.txt
+18.15,FC Vaduz,BSC Young Boys,0,2,2,0-1,2020-21_ch1.txt
+20.30,FC Basel 1893,FC Lugano,2,0,1,2-0,2020-21_ch1.txt
+18.15,Servette FC,FC Lausanne-Sport,1,4,2,1-3,2020-21_ch1.txt
+20.30,FC Sion,FC Luzern,1,1,X,0-0,2020-21_ch1.txt
+,FC Zürich,FC St. Gallen,2,2,X,2-0,2020-21_ch1.txt
+20.30,FC Basel 1893,FC Zürich,4,0,1,2-0,2020-21_ch1.txt
+,FC Lugano,FC Sion,3,1,1,2-1,2020-21_ch1.txt
+,FC St. Gallen,FC Lausanne-Sport,5,0,1,3-0,2020-21_ch1.txt
+,FC Vaduz,Servette FC,1,3,2,1-1,2020-21_ch1.txt
+,BSC Young Boys,FC Luzern,5,2,1,1-2,2020-21_ch1.txt
+20.30,FC Lausanne-Sport,BSC Young Boys,2,4,2,2-2,2020-21_ch1.txt
+,FC Luzern,FC Lugano,1,2,2,0-1,2020-21_ch1.txt
+,Servette FC,FC St. Gallen,1,2,2,0-2,2020-21_ch1.txt
+,FC Sion,FC Basel 1893,4,0,1,3-0,2020-21_ch1.txt
+,FC Zürich,FC Vaduz,4,1,1,2-1,2020-21_ch1.txt
+19.00,FC Thun,Stade Lausanne-Ouchy,2,2,X,2-0,2020-21_ch2.txt
+20.00,Grasshopper Club Zürich,FC Winterthur,3,2,1,2-1,2020-21_ch2.txt
+17.00,FC Schaffhausen,FC Chiasso,5,2,1,3-0,2020-21_ch2.txt
+17.30,SC Kriens,Neuchâtel Xamax FCS,3,1,1,2-0,2020-21_ch2.txt
+18.30,FC Aarau,FC Wil 1900,1,3,2,1-0,2020-21_ch2.txt
+19.00,Neuchâtel Xamax FCS,FC Schaffhausen,0,3,2,0-2,2020-21_ch2.txt
+20.00,FC Winterthur,FC Aarau,5,2,1,3-1,2020-21_ch2.txt
+17.30,FC Wil 1900,FC Thun,3,1,1,0-1,2020-21_ch2.txt
+18.00,Stade Lausanne-Ouchy,SC Kriens,2,1,1,0-0,2020-21_ch2.txt
+16.00,FC Chiasso,Grasshopper Club Zürich,0,2,2,0-0,2020-21_ch2.txt
+20.00,FC Thun,Neuchâtel Xamax FCS,1,3,2,0-1,2020-21_ch2.txt
+17.30,SC Kriens,FC Winterthur,0,2,2,0-2,2020-21_ch2.txt
+18.30,FC Aarau,FC Chiasso,2,1,1,2-0,2020-21_ch2.txt
+19.00,Grasshopper Club Zürich,FC Wil 1900,3,0,1,1-0,2020-21_ch2.txt
+14.45,FC Schaffhausen,Stade Lausanne-Ouchy,1,3,2,0-0,2020-21_ch2.txt
+19.00,Stade Lausanne-Ouchy,FC Aarau,1,1,X,1-0,2020-21_ch2.txt
+19.30,FC Chiasso,FC Thun,0,2,2,0-0,2020-21_ch2.txt
+20.00,FC Wil 1900,SC Kriens,0,1,2,0-0,2020-21_ch2.txt
+,FC Winterthur,FC Schaffhausen,2,2,X,2-1,2020-21_ch2.txt
+,Neuchâtel Xamax FCS,Grasshopper Club Zürich,1,0,1,1-0,2020-21_ch2.txt
+20.00,FC Schaffhausen,FC Aarau,1,2,2,0-0,2020-21_ch2.txt
+19.00,FC Thun,FC Winterthur,0,1,2,0-0,2020-21_ch2.txt
+,Stade Lausanne-Ouchy,FC Chiasso,4,1,1,3-0,2020-21_ch2.txt
+,Neuchâtel Xamax FCS,FC Wil 1900,2,1,1,2-0,2020-21_ch2.txt
+19.30,SC Kriens,Grasshopper Club Zürich,5,2,1,1-1,2020-21_ch2.txt
+20.00,SC Kriens,FC Thun,1,2,2,0-1,2020-21_ch2.txt
+17.30,FC Wil 1900,Stade Lausanne-Ouchy,0,0,X,,2020-21_ch2.txt
+18.30,FC Aarau,Neuchâtel Xamax FCS,3,1,1,2-0,2020-21_ch2.txt
+19.00,Grasshopper Club Zürich,FC Schaffhausen,2,1,1,1-0,2020-21_ch2.txt
+19.00,FC Winterthur,FC Chiasso,2,0,1,1-0,2020-21_ch2.txt
+20.00,Stade Lausanne-Ouchy,Grasshopper Club Zürich,1,2,2,0-0,2020-21_ch2.txt
+20.00,FC Thun,FC Aarau,1,0,1,0-0,2020-21_ch2.txt
+17.30,FC Chiasso,FC Wil 1900,1,1,X,0-0,2020-21_ch2.txt
+19.00,FC Schaffhausen,SC Kriens,3,1,1,1-0,2020-21_ch2.txt
+19.00,Neuchâtel Xamax FCS,FC Winterthur,2,0,1,1-0,2020-21_ch2.txt
+20.00,Grasshopper Club Zürich,FC Thun,1,1,X,0-0,2020-21_ch2.txt
+19.30,FC Aarau,SC Kriens,2,2,X,1-1,2020-21_ch2.txt
+20.00,FC Wil 1900,FC Schaffhausen,1,1,X,0-0,2020-21_ch2.txt
+19.00,FC Chiasso,Neuchâtel Xamax FCS,3,2,1,1-0,2020-21_ch2.txt
+,FC Winterthur,Stade Lausanne-Ouchy,2,1,1,1-0,2020-21_ch2.txt
+17.30,SC Kriens,FC Chiasso,0,0,X,,2020-21_ch2.txt
+14.45,FC Schaffhausen,FC Thun,1,1,X,0-0,2020-21_ch2.txt
+20.00,FC Aarau,Grasshopper Club Zürich,0,1,2,0-1,2020-21_ch2.txt
+19.00,Neuchâtel Xamax FCS,Stade Lausanne-Ouchy,0,1,2,0-0,2020-21_ch2.txt
+20.00,FC Wil 1900,FC Winterthur,1,0,1,0-0,2020-21_ch2.txt
+19.00,Stade Lausanne-Ouchy,FC Schaffhausen,2,2,X,0-0,2020-21_ch2.txt
+20.00,FC Winterthur,SC Kriens,1,1,X,1-1,2020-21_ch2.txt
+18.15,FC Thun,FC Wil 1900,3,0,1,1-0,2020-21_ch2.txt
+20.00,Grasshopper Club Zürich,Neuchâtel Xamax FCS,3,0,1,1-0,2020-21_ch2.txt
+19.00,FC Chiasso,FC Aarau,0,2,2,0-0,2020-21_ch2.txt
+19.00,FC Aarau,FC Winterthur,3,1,1,1-1,2020-21_ch2.txt
+,SC Kriens,Stade Lausanne-Ouchy,0,2,2,0-2,2020-21_ch2.txt
+20.00,FC Schaffhausen,Neuchâtel Xamax FCS,2,0,1,2-0,2020-21_ch2.txt
+,FC Wil 1900,Grasshopper Club Zürich,1,1,X,1-0,2020-21_ch2.txt
+18.15,FC Thun,FC Chiasso,3,0,1,0-0,2020-21_ch2.txt
+20.00,Grasshopper Club Zürich,SC Kriens,2,0,1,1-0,2020-21_ch2.txt
+,Neuchâtel Xamax FCS,FC Aarau,2,4,2,1-2,2020-21_ch2.txt
+18.15,FC Thun,FC Winterthur,0,0,X,,2020-21_ch2.txt
+18.15,FC Chiasso,FC Schaffhausen,0,2,2,0-1,2020-21_ch2.txt
+,Stade Lausanne-Ouchy,FC Wil 1900,1,0,1,1-0,2020-21_ch2.txt
+19.00,FC Aarau,Stade Lausanne-Ouchy,3,3,X,0-1,2020-21_ch2.txt
+,SC Kriens,FC Schaffhausen,1,1,X,1-0,2020-21_ch2.txt
+20.00,FC Thun,Grasshopper Club Zürich,3,1,1,1-0,2020-21_ch2.txt
+,FC Wil 1900,FC Chiasso,0,3,2,0-1,2020-21_ch2.txt
+,FC Winterthur,Neuchâtel Xamax FCS,4,0,1,0-0,2020-21_ch2.txt
+20.00,FC Schaffhausen,FC Wil 1900,1,0,1,0-0,2020-21_ch2.txt
+,Grasshopper Club Zürich,FC Chiasso,2,1,1,1-0,2020-21_ch2.txt
+,Stade Lausanne-Ouchy,FC Winterthur,1,1,X,0-0,2020-21_ch2.txt
+,Neuchâtel Xamax FCS,FC Thun,1,2,2,0-1,2020-21_ch2.txt
+,SC Kriens,FC Aarau,1,3,2,0-1,2020-21_ch2.txt
+19.00,FC Chiasso,SC Kriens,3,2,1,1-1,2020-21_ch2.txt
+,Stade Lausanne-Ouchy,Neuchâtel Xamax FCS,1,0,1,0-0,2020-21_ch2.txt
+20.00,FC Schaffhausen,Grasshopper Club Zürich,2,1,1,1-1,2020-21_ch2.txt
+,FC Winterthur,FC Wil 1900,3,2,1,2-1,2020-21_ch2.txt
+18.15,FC Aarau,FC Thun,3,1,1,1-0,2020-21_ch2.txt
+19.00,Neuchâtel Xamax FCS,SC Kriens,0,1,2,0-0,2020-21_ch2.txt
+20.00,Grasshopper Club Zürich,Stade Lausanne-Ouchy,2,0,1,0-0,2020-21_ch2.txt
+17.00,FC Chiasso,FC Winterthur,0,3,2,0-2,2020-21_ch2.txt
+18.15,FC Thun,FC Schaffhausen,3,1,1,2-0,2020-21_ch2.txt
+,FC Wil 1900,FC Aarau,3,1,1,1-0,2020-21_ch2.txt
+19.00,Stade Lausanne-Ouchy,FC Thun,1,3,2,0-2,2020-21_ch2.txt
+,Neuchâtel Xamax FCS,FC Chiasso,2,0,1,0-0,2020-21_ch2.txt
+,SC Kriens,FC Wil 1900,1,2,2,0-0,2020-21_ch2.txt
+20.00,FC Schaffhausen,FC Winterthur,1,0,1,0-0,2020-21_ch2.txt
+18.00,Grasshopper Club Zürich,FC Aarau,2,1,1,0-1,2020-21_ch2.txt
+19.00,FC Aarau,FC Schaffhausen,1,2,2,1-0,2020-21_ch2.txt
+,FC Chiasso,Stade Lausanne-Ouchy,0,0,X,,2020-21_ch2.txt
+,FC Thun,SC Kriens,2,0,1,1-0,2020-21_ch2.txt
+20.00,FC Wil 1900,Neuchâtel Xamax FCS,1,0,1,0-0,2020-21_ch2.txt
+20.00,FC Winterthur,Grasshopper Club Zürich,2,3,2,2-1,2020-21_ch2.txt
+19.00,SC Kriens,FC Aarau,0,0,X,,2020-21_ch2.txt
+,Stade Lausanne-Ouchy,FC Winterthur,4,1,1,0-0,2020-21_ch2.txt
+20.00,Neuchâtel Xamax FCS,FC Thun,0,3,2,0-2,2020-21_ch2.txt
+,FC Schaffhausen,FC Wil 1900,1,1,X,1-0,2020-21_ch2.txt
+18.15,Grasshopper Club Zürich,FC Chiasso,1,1,X,0-0,2020-21_ch2.txt
+20.00,FC Wil 1900,Stade Lausanne-Ouchy,2,0,1,1-0,2020-21_ch2.txt
+,FC Thun,Grasshopper Club Zürich,0,2,2,0-1,2020-21_ch2.txt
+18.15,FC Chiasso,FC Schaffhausen,1,1,X,0-0,2020-21_ch2.txt
+18.15,FC Aarau,Neuchâtel Xamax FCS,4,0,1,2-0,2020-21_ch2.txt
+,FC Winterthur,SC Kriens,0,0,X,,2020-21_ch2.txt
+19.00,Stade Lausanne-Ouchy,FC Aarau,1,1,X,1-0,2020-21_ch2.txt
+20.00,FC Schaffhausen,FC Thun,4,0,1,3-0,2020-21_ch2.txt
+,FC Wil 1900,Grasshopper Club Zürich,1,1,X,0-0,2020-21_ch2.txt
+18.15,Neuchâtel Xamax FCS,FC Winterthur,3,1,1,0-0,2020-21_ch2.txt
+,SC Kriens,FC Chiasso,2,0,1,0-0,2020-21_ch2.txt
+19.00,FC Chiasso,FC Wil 1900,1,0,1,1-0,2020-21_ch2.txt
+,SC Kriens,Neuchâtel Xamax FCS,1,1,X,0-0,2020-21_ch2.txt
+20.00,FC Thun,Stade Lausanne-Ouchy,0,2,2,0-0,2020-21_ch2.txt
+,FC Aarau,FC Winterthur,0,0,X,,2020-21_ch2.txt
+18.15,Grasshopper Club Zürich,FC Schaffhausen,1,1,X,0-0,2020-21_ch2.txt
+19.00,FC Aarau,FC Thun,4,2,1,2-0,2020-21_ch2.txt
+,Neuchâtel Xamax FCS,FC Chiasso,2,1,1,0-1,2020-21_ch2.txt
+20.00,FC Schaffhausen,SC Kriens,2,0,1,2-0,2020-21_ch2.txt
+,Stade Lausanne-Ouchy,Grasshopper Club Zürich,1,1,X,1-1,2020-21_ch2.txt
+,FC Wil 1900,FC Winterthur,1,1,X,0-0,2020-21_ch2.txt
+19.00,FC Chiasso,FC Aarau,2,0,1,1-0,2020-21_ch2.txt
+,FC Schaffhausen,Stade Lausanne-Ouchy,1,3,2,0-1,2020-21_ch2.txt
+20.00,Grasshopper Club Zürich,FC Winterthur,0,1,2,0-0,2020-21_ch2.txt
+,FC Wil 1900,Neuchâtel Xamax FCS,1,0,1,0-0,2020-21_ch2.txt
+18.15,FC Thun,SC Kriens,1,0,1,0-0,2020-21_ch2.txt
+19.00,Neuchâtel Xamax FCS,FC Schaffhausen,3,0,1,1-0,2020-21_ch2.txt
+20.00,SC Kriens,Grasshopper Club Zürich,1,2,2,0-1,2020-21_ch2.txt
+,FC Winterthur,FC Thun,2,3,2,0-2,2020-21_ch2.txt
+18.15,Stade Lausanne-Ouchy,FC Chiasso,3,0,1,1-0,2020-21_ch2.txt
+,FC Aarau,FC Wil 1900,3,0,1,1-0,2020-21_ch2.txt
+19.00,FC Chiasso,FC Thun,1,1,X,1-1,2020-21_ch2.txt
+,FC Schaffhausen,FC Winterthur,3,3,X,2-2,2020-21_ch2.txt
+20.00,Grasshopper Club Zürich,FC Aarau,4,1,1,3-0,2020-21_ch2.txt
+,Neuchâtel Xamax FCS,Stade Lausanne-Ouchy,0,0,X,,2020-21_ch2.txt
+18.15,FC Wil 1900,SC Kriens,0,2,2,0-1,2020-21_ch2.txt
+16.00,FC Aarau,FC Schaffhausen,1,0,1,1-0,2020-21_ch2.txt
+18.15,Grasshopper Club Zürich,Neuchâtel Xamax FCS,1,4,2,0-2,2020-21_ch2.txt
+,SC Kriens,Stade Lausanne-Ouchy,1,1,X,0-1,2020-21_ch2.txt
+,FC Thun,FC Wil 1900,3,1,1,0-0,2020-21_ch2.txt
+,FC Winterthur,FC Chiasso,0,1,2,0-1,2020-21_ch2.txt
+19.00,FC Chiasso,SC Kriens,0,0,X,,2020-21_ch2.txt
+20.00,FC Schaffhausen,Grasshopper Club Zürich,0,2,2,0-2,2020-21_ch2.txt
+,Stade Lausanne-Ouchy,FC Thun,2,3,2,0-2,2020-21_ch2.txt
+18.15,Neuchâtel Xamax FCS,FC Aarau,0,1,2,0-0,2020-21_ch2.txt
+,FC Winterthur,FC Wil 1900,1,0,1,1-0,2020-21_ch2.txt
+19.00,FC Aarau,FC Chiasso,3,1,1,1-0,2020-21_ch2.txt
+20.00,FC Thun,Neuchâtel Xamax FCS,0,0,X,,2020-21_ch2.txt
+,FC Winterthur,Stade Lausanne-Ouchy,1,1,X,1-1,2020-21_ch2.txt
+18.15,Grasshopper Club Zürich,FC Wil 1900,1,0,1,0-0,2020-21_ch2.txt
+,SC Kriens,FC Schaffhausen,0,1,2,0-0,2020-21_ch2.txt
+20.00,FC Winterthur,FC Thun,1,2,2,0-2,2020-21_ch2.txt
+19.00,FC Chiasso,Grasshopper Club Zürich,2,2,X,1-1,2020-21_ch2.txt
+,Neuchâtel Xamax FCS,SC Kriens,0,3,2,0-2,2020-21_ch2.txt
+20.00,Stade Lausanne-Ouchy,FC Schaffhausen,2,1,1,1-0,2020-21_ch2.txt
+,FC Wil 1900,FC Aarau,7,0,1,5-0,2020-21_ch2.txt
+19.00,FC Chiasso,Stade Lausanne-Ouchy,2,1,1,2-1,2020-21_ch2.txt
+,FC Schaffhausen,Neuchâtel Xamax FCS,3,0,1,0-0,2020-21_ch2.txt
+20.00,FC Winterthur,FC Aarau,3,3,X,2-1,2020-21_ch2.txt
+,Grasshopper Club Zürich,FC Thun,3,1,1,1-1,2020-21_ch2.txt
+18.15,SC Kriens,FC Wil 1900,2,2,X,2-1,2020-21_ch2.txt
+19.00,Stade Lausanne-Ouchy,SC Kriens,1,2,2,0-1,2020-21_ch2.txt
+,FC Thun,FC Chiasso,2,0,1,1-0,2020-21_ch2.txt
+20.00,FC Aarau,Grasshopper Club Zürich,2,1,1,0-0,2020-21_ch2.txt
+,FC Winterthur,Neuchâtel Xamax FCS,0,1,2,0-0,2020-21_ch2.txt
+18.15,FC Wil 1900,FC Schaffhausen,2,3,2,1-2,2020-21_ch2.txt
+19.00,FC Chiasso,FC Winterthur,2,1,1,0-0,2020-21_ch2.txt
+,SC Kriens,FC Thun,1,1,X,1-0,2020-21_ch2.txt
+20.00,Grasshopper Club Zürich,Stade Lausanne-Ouchy,1,2,2,1-0,2020-21_ch2.txt
+,Neuchâtel Xamax FCS,FC Wil 1900,2,2,X,0-1,2020-21_ch2.txt
+18.15,FC Schaffhausen,FC Aarau,3,2,1,0-1,2020-21_ch2.txt
+20.00,Stade Lausanne-Ouchy,Neuchâtel Xamax FCS,1,1,X,1-1,2020-21_ch2.txt
+,FC Winterthur,Grasshopper Club Zürich,2,1,1,0-0,2020-21_ch2.txt
+19.00,FC Aarau,SC Kriens,4,0,1,0-0,2020-21_ch2.txt
+20.00,FC Thun,FC Schaffhausen,1,0,1,0-0,2020-21_ch2.txt
+,FC Wil 1900,FC Chiasso,3,2,1,1-1,2020-21_ch2.txt
+20.00,SC Kriens,FC Winterthur,3,0,1,0-0,2020-21_ch2.txt
+,Neuchâtel Xamax FCS,Grasshopper Club Zürich,1,1,X,1-1,2020-21_ch2.txt
+,FC Schaffhausen,FC Chiasso,1,1,X,1-0,2020-21_ch2.txt
+,Stade Lausanne-Ouchy,FC Wil 1900,3,0,1,2-0,2020-21_ch2.txt
+,FC Thun,FC Aarau,1,3,2,0-1,2020-21_ch2.txt
+20.00,FC Aarau,Stade Lausanne-Ouchy,0,3,2,0-1,2020-21_ch2.txt
+,FC Chiasso,Neuchâtel Xamax FCS,2,1,1,2-1,2020-21_ch2.txt
+,Grasshopper Club Zürich,SC Kriens,2,1,1,2-0,2020-21_ch2.txt
+,FC Wil 1900,FC Thun,1,2,2,0-1,2020-21_ch2.txt
+,FC Winterthur,FC Schaffhausen,1,2,2,0-1,2020-21_ch2.txt
+18.00,FC St. Gallen,FC Basel 1893,2,1,1,1-1,2023-24_ch1.txt
+,Grasshopper Club Zürich,Servette FC,1,3,2,1-1,2023-24_ch1.txt
+20.30,FC Winterthur,FC Luzern,0,0,X,,2023-24_ch1.txt
+16.30,FC Zürich,Yverdon Sport FC,2,0,1,1-0,2023-24_ch1.txt
+,BSC Young Boys,FC Lausanne-Sport,2,1,1,0-0,2023-24_ch1.txt
+20.30,Stade Lausanne-Ouchy,FC Lugano,0,3,2,0-1,2023-24_ch1.txt
+18.00,FC Lausanne-Sport,Grasshopper Club Zürich,1,1,X,1-0,2023-24_ch1.txt
+,FC Lugano,FC St. Gallen,1,0,1,0-0,2023-24_ch1.txt
+20.30,Servette FC,FC Zürich,2,2,X,0-1,2023-24_ch1.txt
+14.15,FC Luzern,Stade Lausanne-Ouchy,2,1,1,0-0,2023-24_ch1.txt
+16.30,FC Basel 1893,FC Winterthur,5,2,1,1-1,2023-24_ch1.txt
+,Yverdon Sport FC,BSC Young Boys,2,2,X,0-1,2023-24_ch1.txt
+18.00,Stade Lausanne-Ouchy,Servette FC,1,1,X,0-0,2023-24_ch1.txt
+,BSC Young Boys,FC Winterthur,5,2,1,3-1,2023-24_ch1.txt
+20.30,FC Zürich,FC Lugano,3,0,1,0-0,2023-24_ch1.txt
+14.15,FC Lausanne-Sport,Yverdon Sport FC,1,2,2,1-1,2023-24_ch1.txt
+16.30,FC St. Gallen,FC Luzern,2,1,1,0-0,2023-24_ch1.txt
+,Grasshopper Club Zürich,FC Basel 1893,3,1,1,3-1,2023-24_ch1.txt
+18.00,FC Winterthur,Grasshopper Club Zürich,3,1,1,1-1,2023-24_ch1.txt
+,Stade Lausanne-Ouchy,FC Zürich,0,3,2,0-1,2023-24_ch1.txt
+20.30,Servette FC,FC St. Gallen,1,1,X,1-0,2023-24_ch1.txt
+14.15,FC Basel 1893,FC Lausanne-Sport,1,2,2,0-1,2023-24_ch1.txt
+16.30,FC Lugano,Yverdon Sport FC,6,1,1,3-1,2023-24_ch1.txt
+,FC Luzern,BSC Young Boys,1,1,X,1-0,2023-24_ch1.txt
+18.00,FC Zürich,FC St. Gallen,1,1,X,0-0,2023-24_ch1.txt
+,Yverdon Sport FC,Servette FC,4,1,1,1-0,2023-24_ch1.txt
+16.30,FC Lausanne-Sport,FC Winterthur,2,5,2,0-1,2023-24_ch1.txt
+,Grasshopper Club Zürich,FC Luzern,0,1,2,0-0,2023-24_ch1.txt
+20.30,BSC Young Boys,Stade Lausanne-Ouchy,1,0,1,0-0,2023-24_ch1.txt
+,FC Lugano,FC Basel 1893,1,3,2,0-1,2023-24_ch1.txt
+18.00,FC St. Gallen,FC Lausanne-Sport,2,1,1,0-0,2023-24_ch1.txt
+,Stade Lausanne-Ouchy,Grasshopper Club Zürich,2,1,1,0-1,2023-24_ch1.txt
+20.30,FC Winterthur,Yverdon Sport FC,1,1,X,1-0,2023-24_ch1.txt
+14.15,Servette FC,BSC Young Boys,0,1,2,0-1,2023-24_ch1.txt
+16.30,FC Basel 1893,FC Zürich,2,2,X,0-1,2023-24_ch1.txt
+,FC Luzern,FC Lugano,3,2,1,2-1,2023-24_ch1.txt
+18.00,FC Lausanne-Sport,FC Zürich,0,0,X,,2023-24_ch1.txt
+,FC Winterthur,Stade Lausanne-Ouchy,2,1,1,2-1,2023-24_ch1.txt
+20.30,Grasshopper Club Zürich,FC St. Gallen,1,1,X,1-0,2023-24_ch1.txt
+14.15,Yverdon Sport FC,FC Basel 1893,3,2,1,1-1,2023-24_ch1.txt
+16.30,FC Luzern,Servette FC,2,0,1,2-0,2023-24_ch1.txt
+,BSC Young Boys,FC Lugano,4,1,1,3-0,2023-24_ch1.txt
+20.30,FC Zürich,Grasshopper Club Zürich,2,1,1,1-0,2023-24_ch1.txt
+20.30,FC Lugano,FC Lausanne-Sport,2,1,1,1-0,2023-24_ch1.txt
+,FC St. Gallen,BSC Young Boys,2,1,1,0-0,2023-24_ch1.txt
+,Servette FC,FC Winterthur,2,2,X,0-1,2023-24_ch1.txt
+20.30,FC Basel 1893,FC Luzern,1,1,X,0-0,2023-24_ch1.txt
+,Stade Lausanne-Ouchy,Yverdon Sport FC,1,1,X,0-0,2023-24_ch1.txt
+18.00,FC Winterthur,FC Lugano,2,3,2,0-1,2023-24_ch1.txt
+,Servette FC,FC Lausanne-Sport,2,1,1,0-1,2023-24_ch1.txt
+20.30,Grasshopper Club Zürich,BSC Young Boys,0,1,2,0-1,2023-24_ch1.txt
+14.15,Yverdon Sport FC,FC St. Gallen,1,0,1,1-0,2023-24_ch1.txt
+16.30,FC Basel 1893,Stade Lausanne-Ouchy,0,3,2,0-1,2023-24_ch1.txt
+,FC Luzern,FC Zürich,1,4,2,0-1,2023-24_ch1.txt
+18.00,FC Zürich,FC Winterthur,3,2,1,2-1,2023-24_ch1.txt
+,Yverdon Sport FC,Grasshopper Club Zürich,0,3,2,0-1,2023-24_ch1.txt
+20.30,FC St. Gallen,Stade Lausanne-Ouchy,4,0,1,2-0,2023-24_ch1.txt
+14.15,FC Lugano,Servette FC,0,1,2,0-1,2023-24_ch1.txt
+16.30,FC Lausanne-Sport,FC Luzern,3,1,1,0-1,2023-24_ch1.txt
+,BSC Young Boys,FC Basel 1893,3,0,1,2-0,2023-24_ch1.txt
+18.00,Stade Lausanne-Ouchy,FC Lausanne-Sport,2,2,X,0-1,2023-24_ch1.txt
+,BSC Young Boys,FC Zürich,0,0,X,,2023-24_ch1.txt
+20.30,FC Basel 1893,Servette FC,0,1,2,0-0,2023-24_ch1.txt
+14.15,FC Winterthur,FC St. Gallen,2,1,1,0-0,2023-24_ch1.txt
+16.30,FC Luzern,Yverdon Sport FC,2,1,1,1-0,2023-24_ch1.txt
+,Grasshopper Club Zürich,FC Lugano,2,1,1,0-0,2023-24_ch1.txt
+18.00,FC St. Gallen,Grasshopper Club Zürich,3,1,1,3-1,2023-24_ch1.txt
+,Yverdon Sport FC,FC Winterthur,1,1,X,1-1,2023-24_ch1.txt
+20.30,FC Zürich,Stade Lausanne-Ouchy,1,1,X,1-1,2023-24_ch1.txt
+13.15,FC Lausanne-Sport,FC Basel 1893,3,0,1,1-0,2023-24_ch1.txt
+15.30,FC Lugano,BSC Young Boys,1,1,X,0-0,2023-24_ch1.txt
+,Servette FC,FC Luzern,4,2,1,1-1,2023-24_ch1.txt
+18.00,FC Lausanne-Sport,FC Lugano,3,1,1,0-0,2023-24_ch1.txt
+,FC Winterthur,BSC Young Boys,1,4,2,1-2,2023-24_ch1.txt
+20.30,FC Zürich,Servette FC,0,2,2,0-1,2023-24_ch1.txt
+14.15,FC Luzern,Grasshopper Club Zürich,2,0,1,1-0,2023-24_ch1.txt
+16.30,FC Basel 1893,Yverdon Sport FC,2,1,1,1-0,2023-24_ch1.txt
+,Stade Lausanne-Ouchy,FC St. Gallen,2,5,2,2-1,2023-24_ch1.txt
+18.00,FC St. Gallen,FC Winterthur,4,2,1,3-1,2023-24_ch1.txt
+,Yverdon Sport FC,FC Lausanne-Sport,2,2,X,2-2,2023-24_ch1.txt
+20.30,BSC Young Boys,FC Luzern,6,1,1,3-1,2023-24_ch1.txt
+14.15,Grasshopper Club Zürich,Stade Lausanne-Ouchy,5,2,1,4-1,2023-24_ch1.txt
+16.30,FC Lugano,FC Zürich,0,3,2,0-2,2023-24_ch1.txt
+,Servette FC,FC Basel 1893,4,1,1,1-1,2023-24_ch1.txt
+18.00,FC Luzern,FC Winterthur,3,1,1,1-0,2023-24_ch1.txt
+,FC Zürich,BSC Young Boys,3,1,1,2-1,2023-24_ch1.txt
+20.30,Yverdon Sport FC,FC Lugano,0,5,2,0-0,2023-24_ch1.txt
+14.15,FC Lausanne-Sport,Stade Lausanne-Ouchy,1,0,1,0-0,2023-24_ch1.txt
+16.30,FC Basel 1893,FC St. Gallen,2,0,1,1-0,2023-24_ch1.txt
+,Servette FC,Grasshopper Club Zürich,2,0,1,1-0,2023-24_ch1.txt
+18.00,Grasshopper Club Zürich,FC Lausanne-Sport,5,0,1,0-0,2023-24_ch1.txt
+,Stade Lausanne-Ouchy,FC Basel 1893,1,1,X,0-1,2023-24_ch1.txt
+16.30,FC Lugano,FC Luzern,1,0,1,0-0,2023-24_ch1.txt
+,BSC Young Boys,Servette FC,1,1,X,0-1,2023-24_ch1.txt
+18.30,FC St. Gallen,Yverdon Sport FC,4,0,1,3-0,2023-24_ch1.txt
+20.30,FC Winterthur,FC Zürich,2,1,1,1-1,2023-24_ch1.txt
+18.00,FC Basel 1893,Grasshopper Club Zürich,0,1,2,0-0,2023-24_ch1.txt
+,BSC Young Boys,FC St. Gallen,3,0,1,2-0,2023-24_ch1.txt
+20.30,FC Lausanne-Sport,Servette FC,1,1,X,0-1,2023-24_ch1.txt
+14.15,FC Lugano,FC Winterthur,2,1,1,1-0,2023-24_ch1.txt
+16.30,FC Zürich,FC Luzern,1,1,X,0-0,2023-24_ch1.txt
+,Yverdon Sport FC,Stade Lausanne-Ouchy,2,1,1,0-1,2023-24_ch1.txt
+18.00,FC St. Gallen,FC Zürich,1,0,1,1-0,2023-24_ch1.txt
+,Stade Lausanne-Ouchy,BSC Young Boys,1,3,2,0-3,2023-24_ch1.txt
+20.30,Grasshopper Club Zürich,Yverdon Sport FC,1,1,X,1-0,2023-24_ch1.txt
+14.15,FC Winterthur,FC Lausanne-Sport,1,0,1,0-0,2023-24_ch1.txt
+16.30,FC Luzern,FC Basel 1893,0,1,2,0-0,2023-24_ch1.txt
+,Servette FC,FC Lugano,2,2,X,2-0,2023-24_ch1.txt
+18.00,BSC Young Boys,Grasshopper Club Zürich,1,0,1,0-0,2023-24_ch1.txt
+20.30,FC Lausanne-Sport,FC St. Gallen,0,1,2,0-1,2023-24_ch1.txt
+16.30,FC Lugano,Stade Lausanne-Ouchy,2,3,2,0-3,2023-24_ch1.txt
+,FC Zürich,FC Basel 1893,0,0,X,,2023-24_ch1.txt
+19.00,FC Winterthur,Servette FC,3,3,X,0-2,2023-24_ch1.txt
+,Yverdon Sport FC,FC Luzern,2,1,1,1-0,2023-24_ch1.txt
+18.00,Stade Lausanne-Ouchy,FC Winterthur,1,3,2,0-2,2023-24_ch1.txt
+,Servette FC,Yverdon Sport FC,1,0,1,0-0,2023-24_ch1.txt
+20.30,FC Basel 1893,BSC Young Boys,1,0,1,1-0,2023-24_ch1.txt
+14.15,FC St. Gallen,FC Lugano,1,4,2,0-1,2023-24_ch1.txt
+16.30,FC Luzern,FC Lausanne-Sport,2,1,1,0-1,2023-24_ch1.txt
+,Grasshopper Club Zürich,FC Zürich,2,1,1,0-1,2023-24_ch1.txt
+20.30,FC Winterthur,FC Basel 1893,1,3,2,0-1,2023-24_ch1.txt
+,BSC Young Boys,Yverdon Sport FC,5,1,1,2-1,2023-24_ch1.txt
+20.30,FC Lugano,Grasshopper Club Zürich,0,0,X,,2023-24_ch1.txt
+,FC St. Gallen,Servette FC,0,2,2,0-2,2023-24_ch1.txt
+,FC Zürich,FC Lausanne-Sport,2,2,X,0-2,2023-24_ch1.txt
+20.30,Stade Lausanne-Ouchy,FC Luzern,0,3,2,0-2,2023-24_ch1.txt
+18.00,FC Lausanne-Sport,BSC Young Boys,0,1,2,0-1,2023-24_ch1.txt
+,Grasshopper Club Zürich,FC Winterthur,0,1,2,0-1,2023-24_ch1.txt
+20.30,FC Basel 1893,FC Lugano,0,1,2,0-0,2023-24_ch1.txt
+14.15,Yverdon Sport FC,FC Zürich,3,0,1,1-0,2023-24_ch1.txt
+16.30,FC Luzern,FC St. Gallen,1,0,1,0-0,2023-24_ch1.txt
+,Servette FC,Stade Lausanne-Ouchy,3,1,1,2-0,2023-24_ch1.txt
+18.00,Stade Lausanne-Ouchy,FC Lausanne-Sport,1,1,X,1-1,2023-24_ch1.txt
+,FC Zürich,Grasshopper Club Zürich,1,0,1,1-0,2023-24_ch1.txt
+20.30,FC Lugano,BSC Young Boys,3,3,X,1-1,2023-24_ch1.txt
+14.15,FC Winterthur,FC Luzern,2,1,1,0-1,2023-24_ch1.txt
+16.30,FC Basel 1893,FC St. Gallen,1,0,1,0-0,2023-24_ch1.txt
+,Yverdon Sport FC,Servette FC,2,1,1,1-1,2023-24_ch1.txt
+18.00,FC Lausanne-Sport,Yverdon Sport FC,3,1,1,3-1,2023-24_ch1.txt
+,FC St. Gallen,FC Winterthur,2,2,X,1-0,2023-24_ch1.txt
+20.30,Grasshopper Club Zürich,FC Basel 1893,2,1,1,2-1,2023-24_ch1.txt
+14.15,BSC Young Boys,Stade Lausanne-Ouchy,1,0,1,0-0,2023-24_ch1.txt
+16.30,FC Luzern,FC Zürich,0,1,2,0-0,2023-24_ch1.txt
+,Servette FC,FC Lugano,2,1,1,0-1,2023-24_ch1.txt
+18.00,FC St. Gallen,Stade Lausanne-Ouchy,1,0,1,0-0,2023-24_ch1.txt
+,Yverdon Sport FC,FC Basel 1893,0,2,2,0-1,2023-24_ch1.txt
+20.30,Grasshopper Club Zürich,FC Luzern,0,1,2,0-0,2023-24_ch1.txt
+14.15,FC Lugano,FC Zürich,2,0,1,1-0,2023-24_ch1.txt
+16.30,FC Lausanne-Sport,FC Winterthur,1,1,X,1-1,2023-24_ch1.txt
+,BSC Young Boys,Servette FC,0,1,2,0-1,2023-24_ch1.txt
+18.00,Stade Lausanne-Ouchy,Grasshopper Club Zürich,1,1,X,1-1,2023-24_ch1.txt
+,Servette FC,FC St. Gallen,2,0,1,1-0,2023-24_ch1.txt
+20.30,FC Basel 1893,FC Lausanne-Sport,1,2,2,0-1,2023-24_ch1.txt
+14.15,FC Luzern,FC Lugano,0,1,2,0-1,2023-24_ch1.txt
+16.30,FC Winterthur,Yverdon Sport FC,2,1,1,1-0,2023-24_ch1.txt
+,FC Zürich,BSC Young Boys,1,0,1,1-0,2023-24_ch1.txt
+18.00,FC Winterthur,Grasshopper Club Zürich,2,0,1,0-0,2023-24_ch1.txt
+,Yverdon Sport FC,FC Zürich,3,2,1,2-1,2023-24_ch1.txt
+20.30,FC St. Gallen,FC Lugano,2,3,2,2-1,2023-24_ch1.txt
+14.15,Servette FC,FC Lausanne-Sport,3,1,1,1-1,2023-24_ch1.txt
+16.30,Stade Lausanne-Ouchy,FC Luzern,2,1,1,0-0,2023-24_ch1.txt
+,BSC Young Boys,FC Basel 1893,5,1,1,3-0,2023-24_ch1.txt
+18.00,FC Basel 1893,FC Winterthur,1,1,X,0-1,2023-24_ch1.txt
+,Grasshopper Club Zürich,FC St. Gallen,1,1,X,0-1,2023-24_ch1.txt
+20.30,FC Lugano,Yverdon Sport FC,2,0,1,1-0,2023-24_ch1.txt
+14.15,FC Zürich,Stade Lausanne-Ouchy,2,2,X,2-1,2023-24_ch1.txt
+16.30,FC Lausanne-Sport,BSC Young Boys,2,0,1,2-0,2023-24_ch1.txt
+,FC Luzern,Servette FC,2,2,X,1-2,2023-24_ch1.txt
+18.00,Stade Lausanne-Ouchy,FC Lugano,1,3,2,0-0,2023-24_ch1.txt
+,FC Winterthur,Servette FC,1,0,1,0-0,2023-24_ch1.txt
+20.30,FC Basel 1893,FC Zürich,2,2,X,2-1,2023-24_ch1.txt
+14.15,Yverdon Sport FC,BSC Young Boys,0,0,X,,2023-24_ch1.txt
+16.30,FC St. Gallen,FC Luzern,1,1,X,1-0,2023-24_ch1.txt
+,Grasshopper Club Zürich,FC Lausanne-Sport,0,1,2,0-1,2023-24_ch1.txt
+20.30,FC Lugano,FC Basel 1893,2,0,1,1-0,2023-24_ch1.txt
+20.30,FC Zürich,FC Winterthur,0,0,X,,2023-24_ch1.txt
+,Servette FC,Stade Lausanne-Ouchy,1,2,2,0-1,2023-24_ch1.txt
+20.30,FC Lausanne-Sport,FC St. Gallen,3,3,X,1-2,2023-24_ch1.txt
+,FC Luzern,Yverdon Sport FC,1,0,1,1-0,2023-24_ch1.txt
+,BSC Young Boys,Grasshopper Club Zürich,3,0,1,3-0,2023-24_ch1.txt
+18.00,Stade Lausanne-Ouchy,FC Basel 1893,0,2,2,0-1,2023-24_ch1.txt
+,FC Winterthur,FC Lugano,2,2,X,0-0,2023-24_ch1.txt
+20.30,Servette FC,FC Zürich,0,1,2,0-1,2023-24_ch1.txt
+14.15,FC Luzern,FC Lausanne-Sport,0,0,X,,2023-24_ch1.txt
+16.30,FC St. Gallen,BSC Young Boys,2,2,X,1-0,2023-24_ch1.txt
+,Yverdon Sport FC,Grasshopper Club Zürich,3,2,1,1-0,2023-24_ch1.txt
+18.00,FC Lausanne-Sport,FC Zürich,1,0,1,1-0,2023-24_ch1.txt
+,Grasshopper Club Zürich,FC Lugano,0,1,2,0-1,2023-24_ch1.txt
+20.30,FC St. Gallen,Yverdon Sport FC,5,1,1,1-1,2023-24_ch1.txt
+14.15,FC Basel 1893,Servette FC,2,1,1,2-0,2023-24_ch1.txt
+16.30,Stade Lausanne-Ouchy,FC Winterthur,0,1,2,0-0,2023-24_ch1.txt
+,BSC Young Boys,FC Luzern,4,2,1,1-2,2023-24_ch1.txt
+18.00,Servette FC,Grasshopper Club Zürich,1,0,1,1-0,2023-24_ch1.txt
+,Yverdon Sport FC,Stade Lausanne-Ouchy,3,0,1,1-0,2023-24_ch1.txt
+20.30,FC Lugano,FC Lausanne-Sport,2,0,1,2-0,2023-24_ch1.txt
+16.30,FC Luzern,FC Basel 1893,1,1,X,0-1,2023-24_ch1.txt
+,FC Winterthur,BSC Young Boys,1,2,2,0-0,2023-24_ch1.txt
+,FC Zürich,FC St. Gallen,0,1,2,0-0,2023-24_ch1.txt
+18.00,Servette FC,FC Winterthur,2,1,1,2-0,2023-24_ch1.txt
+20.30,FC Lugano,FC St. Gallen,0,1,2,0-1,2023-24_ch1.txt
+16.30,FC Zürich,BSC Young Boys,0,2,2,0-1,2023-24_ch1.txt
+20.30,BSC Young Boys,FC Lugano,0,1,2,0-1,2023-24_ch1.txt
+14.15,FC Winterthur,FC Zürich,1,3,2,1-2,2023-24_ch1.txt
+16.30,FC St. Gallen,Servette FC,1,1,X,1-1,2023-24_ch1.txt
+20.30,FC Zürich,Servette FC,2,1,1,0-1,2023-24_ch1.txt
+20.30,FC Lugano,FC Winterthur,4,2,1,1-1,2023-24_ch1.txt
+,BSC Young Boys,FC St. Gallen,3,1,1,0-1,2023-24_ch1.txt
+18.00,Servette FC,BSC Young Boys,0,1,2,0-0,2023-24_ch1.txt
+,FC Winterthur,FC St. Gallen,1,3,2,0-2,2023-24_ch1.txt
+,FC Zürich,FC Lugano,2,1,1,1-0,2023-24_ch1.txt
+20.30,FC Lugano,Servette FC,0,2,2,0-1,2023-24_ch1.txt
+,FC St. Gallen,FC Zürich,1,2,2,1-2,2023-24_ch1.txt
+,BSC Young Boys,FC Winterthur,3,0,1,0-0,2023-24_ch1.txt
+18.00,Grasshopper Club Zürich,Stade Lausanne-Ouchy,3,2,1,1-1,2023-24_ch1.txt
+14.15,FC Basel 1893,FC Luzern,1,1,X,0-0,2023-24_ch1.txt
+16.30,Yverdon Sport FC,FC Lausanne-Sport,3,1,1,3-0,2023-24_ch1.txt
+20.30,FC Lausanne-Sport,FC Basel 1893,0,0,X,,2023-24_ch1.txt
+,FC Luzern,Grasshopper Club Zürich,1,1,X,0-0,2023-24_ch1.txt
+20.30,Stade Lausanne-Ouchy,Yverdon Sport FC,3,1,1,0-0,2023-24_ch1.txt
+20.30,FC Basel 1893,Stade Lausanne-Ouchy,2,0,1,0-0,2023-24_ch1.txt
+,Grasshopper Club Zürich,Yverdon Sport FC,2,0,1,1-0,2023-24_ch1.txt
+20.30,FC Lausanne-Sport,FC Luzern,0,2,2,0-1,2023-24_ch1.txt
+18.00,Grasshopper Club Zürich,FC Basel 1893,0,1,2,0-0,2023-24_ch1.txt
+,Stade Lausanne-Ouchy,FC Lausanne-Sport,0,4,2,0-3,2023-24_ch1.txt
+,Yverdon Sport FC,FC Luzern,3,1,1,1-0,2023-24_ch1.txt
+20.30,FC Basel 1893,Yverdon Sport FC,0,0,X,,2023-24_ch1.txt
+,FC Lausanne-Sport,Grasshopper Club Zürich,0,0,X,,2023-24_ch1.txt
+,FC Luzern,Stade Lausanne-Ouchy,1,2,2,0-2,2023-24_ch1.txt
+19.30,FC Thun Berner Oberland,FC Stade Nyonnais,1,1,X,0-1,2023-24_ch2.txt
+,Neuchâtel Xamax FCS,FC Schaffhausen,3,0,1,2-0,2023-24_ch2.txt
+20.15,FC Aarau,FC Baden,1,0,1,1-0,2023-24_ch2.txt
+14.15,AC Bellinzona,FC Wil 1900,0,2,2,0-1,2023-24_ch2.txt
+,FC Vaduz,FC Sion,0,2,2,0-1,2023-24_ch2.txt
+19.30,FC Schaffhausen,FC Thun Berner Oberland,0,1,2,0-0,2023-24_ch2.txt
+,FC Stade Nyonnais,Neuchâtel Xamax FCS,1,1,X,0-0,2023-24_ch2.txt
+20.15,FC Sion,FC Aarau,1,0,1,1-0,2023-24_ch2.txt
+14.15,FC Baden,AC Bellinzona,1,1,X,1-1,2023-24_ch2.txt
+,FC Wil 1900,FC Vaduz,3,2,1,1-1,2023-24_ch2.txt
+19.30,FC Thun Berner Oberland,FC Baden,6,0,1,3-0,2023-24_ch2.txt
+20.15,FC Schaffhausen,FC Wil 1900,1,3,2,0-2,2023-24_ch2.txt
+,FC Sion,AC Bellinzona,1,0,1,1-0,2023-24_ch2.txt
+14.15,FC Aarau,Neuchâtel Xamax FCS,2,3,2,0-2,2023-24_ch2.txt
+,FC Vaduz,FC Stade Nyonnais,2,1,1,0-1,2023-24_ch2.txt
+19.30,Neuchâtel Xamax FCS,FC Thun Berner Oberland,4,0,1,1-0,2023-24_ch2.txt
+,FC Stade Nyonnais,FC Schaffhausen,2,1,1,0-0,2023-24_ch2.txt
+20.15,FC Wil 1900,FC Sion,0,0,X,,2023-24_ch2.txt
+14.15,AC Bellinzona,FC Aarau,1,3,2,0-1,2023-24_ch2.txt
+,FC Baden,FC Vaduz,2,3,2,0-0,2023-24_ch2.txt
+19.30,FC Schaffhausen,FC Aarau,2,2,X,1-1,2023-24_ch2.txt
+,FC Stade Nyonnais,FC Sion,1,2,2,0-1,2023-24_ch2.txt
+20.15,AC Bellinzona,FC Thun Berner Oberland,0,3,2,0-1,2023-24_ch2.txt
+14.15,FC Baden,FC Wil 1900,0,5,2,0-1,2023-24_ch2.txt
+,FC Vaduz,Neuchâtel Xamax FCS,1,1,X,0-0,2023-24_ch2.txt
+19.30,Neuchâtel Xamax FCS,AC Bellinzona,1,1,X,1-0,2023-24_ch2.txt
+20.15,FC Aarau,FC Stade Nyonnais,0,2,2,0-0,2023-24_ch2.txt
+,FC Sion,FC Baden,1,1,X,0-0,2023-24_ch2.txt
+18.00,FC Thun Berner Oberland,FC Wil 1900,3,1,1,1-0,2023-24_ch2.txt
+14.15,FC Vaduz,FC Schaffhausen,6,0,1,2-0,2023-24_ch2.txt
+19.30,AC Bellinzona,FC Vaduz,0,4,2,0-1,2023-24_ch2.txt
+,FC Schaffhausen,FC Sion,1,1,X,1-0,2023-24_ch2.txt
+,FC Wil 1900,Neuchâtel Xamax FCS,2,0,1,0-0,2023-24_ch2.txt
+20.15,FC Thun Berner Oberland,FC Aarau,2,0,1,1-0,2023-24_ch2.txt
+18.00,FC Baden,FC Stade Nyonnais,2,0,1,1-0,2023-24_ch2.txt
+19.30,FC Aarau,FC Vaduz,3,2,1,1-2,2023-24_ch2.txt
+20.15,FC Sion,FC Thun Berner Oberland,2,3,2,2-0,2023-24_ch2.txt
+19.30,FC Schaffhausen,AC Bellinzona,0,0,X,,2023-24_ch2.txt
+,Neuchâtel Xamax FCS,FC Baden,1,2,2,1-2,2023-24_ch2.txt
+,FC Stade Nyonnais,FC Wil 1900,2,0,1,1-0,2023-24_ch2.txt
+19.30,FC Wil 1900,FC Aarau,0,2,2,0-1,2023-24_ch2.txt
+20.15,Neuchâtel Xamax FCS,FC Sion,0,3,2,0-1,2023-24_ch2.txt
+14.15,AC Bellinzona,FC Stade Nyonnais,1,0,1,0-0,2023-24_ch2.txt
+,FC Baden,FC Schaffhausen,1,1,X,0-1,2023-24_ch2.txt
+,FC Vaduz,FC Thun Berner Oberland,1,1,X,0-0,2023-24_ch2.txt
+19.30,FC Schaffhausen,FC Vaduz,1,0,1,1-0,2023-24_ch2.txt
+,FC Stade Nyonnais,FC Baden,1,1,X,0-1,2023-24_ch2.txt
+20.15,FC Sion,FC Wil 1900,3,0,1,1-0,2023-24_ch2.txt
+18.00,FC Thun Berner Oberland,Neuchâtel Xamax FCS,1,1,X,1-0,2023-24_ch2.txt
+14.15,FC Aarau,AC Bellinzona,1,2,2,1-2,2023-24_ch2.txt
+19.30,Neuchâtel Xamax FCS,FC Stade Nyonnais,1,1,X,1-1,2023-24_ch2.txt
+20.15,FC Wil 1900,FC Thun Berner Oberland,0,3,2,0-1,2023-24_ch2.txt
+18.00,FC Baden,FC Sion,0,4,2,0-1,2023-24_ch2.txt
+14.15,AC Bellinzona,FC Schaffhausen,0,0,X,,2023-24_ch2.txt
+,FC Vaduz,FC Aarau,2,2,X,1-2,2023-24_ch2.txt
+19.30,FC Wil 1900,FC Baden,0,1,2,0-1,2023-24_ch2.txt
+,FC Stade Nyonnais,AC Bellinzona,2,3,2,0-0,2023-24_ch2.txt
+20.15,FC Aarau,FC Schaffhausen,1,1,X,0-1,2023-24_ch2.txt
+,FC Sion,Neuchâtel Xamax FCS,1,0,1,0-0,2023-24_ch2.txt
+16.30,FC Thun Berner Oberland,FC Vaduz,2,1,1,1-1,2023-24_ch2.txt
+19.30,FC Schaffhausen,FC Stade Nyonnais,1,1,X,1-0,2023-24_ch2.txt
+,Neuchâtel Xamax FCS,FC Wil 1900,2,2,X,0-0,2023-24_ch2.txt
+20.15,FC Aarau,FC Thun Berner Oberland,5,2,1,3-0,2023-24_ch2.txt
+14.15,AC Bellinzona,FC Sion,1,2,2,0-1,2023-24_ch2.txt
+,FC Vaduz,FC Baden,1,2,2,1-1,2023-24_ch2.txt
+19.30,FC Wil 1900,AC Bellinzona,0,0,X,,2023-24_ch2.txt
+20.15,FC Baden,Neuchâtel Xamax FCS,0,4,2,0-3,2023-24_ch2.txt
+,FC Sion,FC Vaduz,3,3,X,1-3,2023-24_ch2.txt
+18.00,FC Thun Berner Oberland,FC Schaffhausen,1,0,1,0-0,2023-24_ch2.txt
+14.15,FC Stade Nyonnais,FC Aarau,4,0,1,1-0,2023-24_ch2.txt
+19.30,FC Schaffhausen,Neuchâtel Xamax FCS,2,2,X,2-1,2023-24_ch2.txt
+,FC Stade Nyonnais,FC Thun Berner Oberland,3,2,1,1-1,2023-24_ch2.txt
+20.15,FC Vaduz,FC Wil 1900,2,2,X,0-0,2023-24_ch2.txt
+14.15,AC Bellinzona,FC Baden,3,1,1,2-1,2023-24_ch2.txt
+,FC Aarau,FC Sion,0,0,X,,2023-24_ch2.txt
+19.30,Neuchâtel Xamax FCS,FC Vaduz,1,1,X,0-0,2023-24_ch2.txt
+19.00,FC Sion,FC Stade Nyonnais,1,1,X,0-0,2023-24_ch2.txt
+19.00,FC Thun Berner Oberland,AC Bellinzona,3,1,1,1-0,2023-24_ch2.txt
+19.30,FC Wil 1900,FC Schaffhausen,2,0,1,0-0,2023-24_ch2.txt
+20.15,FC Baden,FC Aarau,1,2,2,0-1,2023-24_ch2.txt
+19.30,FC Schaffhausen,FC Baden,2,0,1,2-0,2023-24_ch2.txt
+,FC Stade Nyonnais,FC Vaduz,1,0,1,1-0,2023-24_ch2.txt
+20.15,FC Thun Berner Oberland,FC Sion,1,1,X,1-1,2023-24_ch2.txt
+14.15,AC Bellinzona,Neuchâtel Xamax FCS,1,0,1,0-0,2023-24_ch2.txt
+,FC Aarau,FC Wil 1900,1,1,X,1-0,2023-24_ch2.txt
+19.30,FC Wil 1900,FC Stade Nyonnais,3,2,1,0-0,2023-24_ch2.txt
+20.15,FC Sion,FC Schaffhausen,2,1,1,0-1,2023-24_ch2.txt
+,Neuchâtel Xamax FCS,FC Aarau,2,1,1,2-1,2023-24_ch2.txt
+18.00,FC Baden,FC Thun Berner Oberland,0,2,2,0-1,2023-24_ch2.txt
+14.15,FC Vaduz,AC Bellinzona,1,2,2,0-0,2023-24_ch2.txt
+19.30,FC Aarau,FC Vaduz,1,0,1,0-0,2023-24_ch2.txt
+,FC Wil 1900,FC Sion,1,4,2,0-1,2023-24_ch2.txt
+20.15,Neuchâtel Xamax FCS,FC Baden,1,1,X,1-0,2023-24_ch2.txt
+18.00,AC Bellinzona,FC Thun Berner Oberland,0,0,X,,2023-24_ch2.txt
+19.00,FC Stade Nyonnais,FC Schaffhausen,0,3,2,0-0,2023-24_ch2.txt
+19.30,FC Schaffhausen,FC Wil 1900,3,2,1,3-0,2023-24_ch2.txt
+20.15,FC Sion,FC Aarau,2,0,1,2-0,2023-24_ch2.txt
+,FC Thun Berner Oberland,FC Stade Nyonnais,4,1,1,1-1,2023-24_ch2.txt
+14.15,FC Baden,AC Bellinzona,2,1,1,1-1,2023-24_ch2.txt
+,FC Vaduz,Neuchâtel Xamax FCS,5,3,1,3-0,2023-24_ch2.txt
+19.30,Neuchâtel Xamax FCS,AC Bellinzona,0,1,2,0-1,2023-24_ch2.txt
+20.15,FC Schaffhausen,FC Thun Berner Oberland,1,1,X,1-1,2023-24_ch2.txt
+,FC Sion,FC Baden,4,1,1,2-0,2023-24_ch2.txt
+18.00,FC Aarau,FC Stade Nyonnais,5,2,1,3-0,2023-24_ch2.txt
+,FC Wil 1900,FC Vaduz,1,0,1,1-0,2023-24_ch2.txt
+19.30,FC Stade Nyonnais,Neuchâtel Xamax FCS,0,2,2,0-1,2023-24_ch2.txt
+20.15,FC Thun Berner Oberland,FC Aarau,1,0,1,0-0,2023-24_ch2.txt
+,FC Vaduz,FC Sion,1,2,2,1-0,2023-24_ch2.txt
+18.00,AC Bellinzona,FC Wil 1900,0,0,X,,2023-24_ch2.txt
+,FC Baden,FC Schaffhausen,0,1,2,0-0,2023-24_ch2.txt
+19.30,FC Schaffhausen,FC Sion,0,4,2,0-3,2023-24_ch2.txt
+,Neuchâtel Xamax FCS,FC Thun Berner Oberland,4,0,1,1-0,2023-24_ch2.txt
+20.15,FC Wil 1900,FC Aarau,1,1,X,0-0,2023-24_ch2.txt
+18.00,FC Baden,FC Stade Nyonnais,2,3,2,1-0,2023-24_ch2.txt
+18.30,AC Bellinzona,FC Vaduz,0,1,2,0-0,2023-24_ch2.txt
+19.30,FC Stade Nyonnais,FC Wil 1900,1,1,X,0-1,2023-24_ch2.txt
+20.15,FC Aarau,Neuchâtel Xamax FCS,2,0,1,1-0,2023-24_ch2.txt
+18.00,FC Thun Berner Oberland,FC Baden,3,1,1,1-0,2023-24_ch2.txt
+14.15,FC Sion,AC Bellinzona,3,0,1,0-0,2023-24_ch2.txt
+,FC Vaduz,FC Schaffhausen,3,2,1,0-0,2023-24_ch2.txt
+19.30,FC Schaffhausen,FC Aarau,1,1,X,1-1,2023-24_ch2.txt
+20.15,Neuchâtel Xamax FCS,FC Sion,0,0,X,,2023-24_ch2.txt
+18.00,AC Bellinzona,FC Stade Nyonnais,0,2,2,0-1,2023-24_ch2.txt
+,FC Baden,FC Vaduz,1,1,X,1-0,2023-24_ch2.txt
+,FC Thun Berner Oberland,FC Wil 1900,2,1,1,0-1,2023-24_ch2.txt
+19.30,FC Schaffhausen,AC Bellinzona,2,1,1,1-1,2023-24_ch2.txt
+20.15,FC Sion,FC Thun Berner Oberland,1,2,2,1-1,2023-24_ch2.txt
+18.00,FC Aarau,FC Baden,2,0,1,0-0,2023-24_ch2.txt
+14.15,FC Vaduz,FC Stade Nyonnais,1,3,2,0-0,2023-24_ch2.txt
+,FC Wil 1900,Neuchâtel Xamax FCS,0,0,X,,2023-24_ch2.txt
+19.30,Neuchâtel Xamax FCS,FC Schaffhausen,2,1,1,1-1,2023-24_ch2.txt
+,FC Stade Nyonnais,FC Sion,0,4,2,0-1,2023-24_ch2.txt
+20.15,AC Bellinzona,FC Aarau,5,2,1,1-2,2023-24_ch2.txt
+18.00,FC Baden,FC Wil 1900,2,1,1,1-1,2023-24_ch2.txt
+14.15,FC Vaduz,FC Thun Berner Oberland,1,0,1,1-0,2023-24_ch2.txt
+20.15,FC Stade Nyonnais,FC Baden,1,0,1,1-0,2023-24_ch2.txt
+18.00,FC Aarau,FC Schaffhausen,1,2,2,1-1,2023-24_ch2.txt
+,FC Thun Berner Oberland,Neuchâtel Xamax FCS,4,0,1,0-0,2023-24_ch2.txt
+,FC Wil 1900,AC Bellinzona,4,1,1,1-1,2023-24_ch2.txt
+20.15,FC Sion,FC Vaduz,2,2,X,1-0,2023-24_ch2.txt
+19.30,Neuchâtel Xamax FCS,FC Aarau,3,1,1,1-0,2023-24_ch2.txt
+20.15,FC Schaffhausen,FC Vaduz,0,1,2,0-1,2023-24_ch2.txt
+18.00,FC Baden,FC Sion,0,3,2,0-1,2023-24_ch2.txt
+,FC Thun Berner Oberland,AC Bellinzona,1,0,1,0-0,2023-24_ch2.txt
+14.15,FC Wil 1900,FC Stade Nyonnais,0,0,X,,2023-24_ch2.txt
+19.30,FC Schaffhausen,Neuchâtel Xamax FCS,1,1,X,1-1,2023-24_ch2.txt
+20.00,AC Bellinzona,FC Baden,4,0,1,1-0,2023-24_ch2.txt
+20.15,FC Aarau,FC Thun Berner Oberland,3,0,1,2-0,2023-24_ch2.txt
+,FC Sion,FC Stade Nyonnais,1,0,1,0-0,2023-24_ch2.txt
+18.00,FC Vaduz,FC Wil 1900,3,1,1,1-1,2023-24_ch2.txt
+20.15,FC Thun Berner Oberland,FC Sion,1,0,1,1-0,2023-24_ch2.txt
+19.30,AC Bellinzona,FC Schaffhausen,1,1,X,0-1,2023-24_ch2.txt
+,Neuchâtel Xamax FCS,FC Wil 1900,2,2,X,0-1,2023-24_ch2.txt
+20.15,FC Baden,FC Aarau,0,1,2,0-0,2023-24_ch2.txt
+19.30,FC Stade Nyonnais,FC Vaduz,0,2,2,0-2,2023-24_ch2.txt
+20.15,FC Sion,Neuchâtel Xamax FCS,1,1,X,0-0,2023-24_ch2.txt
+20.15,FC Aarau,AC Bellinzona,0,2,2,0-0,2023-24_ch2.txt
+18.00,FC Vaduz,FC Baden,6,0,1,2-0,2023-24_ch2.txt
+,FC Wil 1900,FC Schaffhausen,0,1,2,0-0,2023-24_ch2.txt
+,FC Stade Nyonnais,FC Thun Berner Oberland,0,0,X,,2023-24_ch2.txt
+19.30,AC Bellinzona,Neuchâtel Xamax FCS,1,2,2,1-0,2023-24_ch2.txt
+,FC Schaffhausen,FC Stade Nyonnais,1,1,X,0-0,2023-24_ch2.txt
+20.15,FC Baden,FC Thun Berner Oberland,1,5,2,1-2,2023-24_ch2.txt
+,FC Sion,FC Wil 1900,4,0,1,2-0,2023-24_ch2.txt
+,FC Vaduz,FC Aarau,2,1,1,0-0,2023-24_ch2.txt
+18.00,FC Aarau,FC Sion,1,2,2,1-1,2023-24_ch2.txt
+,FC Wil 1900,FC Baden,3,1,1,1-1,2023-24_ch2.txt
+,FC Stade Nyonnais,AC Bellinzona,1,3,2,1-1,2023-24_ch2.txt
+18.00,FC Thun Berner Oberland,FC Schaffhausen,3,0,1,1-0,2023-24_ch2.txt
+,Neuchâtel Xamax FCS,FC Vaduz,1,1,X,1-0,2023-24_ch2.txt
+20.15,AC Bellinzona,FC Sion,0,2,2,0-1,2023-24_ch2.txt
+,FC Aarau,FC Wil 1900,0,4,2,0-3,2023-24_ch2.txt
+,FC Schaffhausen,FC Baden,2,2,X,2-1,2023-24_ch2.txt
+,FC Thun Berner Oberland,FC Vaduz,6,3,1,3-0,2023-24_ch2.txt
+,Neuchâtel Xamax FCS,FC Stade Nyonnais,4,0,1,1-0,2023-24_ch2.txt
+14.15,FC Baden,Neuchâtel Xamax FCS,2,2,X,1-1,2023-24_ch2.txt
+,FC Sion,FC Schaffhausen,3,0,1,1-0,2023-24_ch2.txt
+,FC Vaduz,AC Bellinzona,2,2,X,0-1,2023-24_ch2.txt
+,FC Wil 1900,FC Thun Berner Oberland,0,3,2,0-0,2023-24_ch2.txt
+,FC Stade Nyonnais,FC Aarau,4,3,1,2-1,2023-24_ch2.txt
+19.30,FC Ajoie-Monterri,SR Delémont,0,3,2,0-2,2023-24_chcup.txt
+,FC Breitenrain Bern,BSC Young Boys,0,5,2,0-1,2023-24_chcup.txt
+20.00,Lancy FC,FC Stade Nyonnais,2,1,1,2-1,2023-24_chcup.txt
+,Etoile Carouge FC,FC Sion,1,3,2,1-1,2023-24_chcup.txt
+20.30,FC Genolier-Begnins,FC Onex,0,1,2,,2023-24_chcup.txt
+16.00,SV Höngg,FC Rapperswil-Jona,1,3,2,0-1,2023-24_chcup.txt
+,FC Affoltern,FC Baden,0,4,2,0-1,2023-24_chcup.txt
+,FC Wettswil-Bonstetten,FC Winterthur,0,2,2,0-0,2023-24_chcup.txt
+,FC Grand-Saconnex,Stade Lausanne-Ouchy,0,4,2,0-1,2023-24_chcup.txt
+,FC Buchs AG,AC Bellinzona,0,4,2,0-1,2023-24_chcup.txt
+17.00,FC Dietikon,FC Aarau,0,1,2,0-0,2023-24_chcup.txt
+,FC Haute-Gruyère,Yverdon Sport FC,0,9,2,0-6,2023-24_chcup.txt
+17.30,FC Courtételle,FC Black Stars Basel,0,2,2,0-2,2023-24_chcup.txt
+,FC Schönenwerd-Niedergösgen,FC Greifensee,0,2,2,0-1,2023-24_chcup.txt
+18.00,FC Porrentruy,FC Bosporus,0,2,2,0-2,2023-24_chcup.txt
+,FC Frutigen,FC Thun Berner Oberland,0,5,2,0-1,2023-24_chcup.txt
+,FC Red Star Zürich,FC Zürich,0,2,2,0-1,2023-24_chcup.txt
+,FC Meyrin,Servette FC,0,8,2,0-2,2023-24_chcup.txt
+,FC Mendrisio,SC Kriens,1,3,2,1-0,2023-24_chcup.txt
+,AC Malcantone,FC Tuggen,1,2,2,1-1,2023-24_chcup.txt
+,FC Gunzwil,FC Lugano,0,7,2,0-2,2023-24_chcup.txt
+19.00,AC Taverne,SC Brühl,0,3,2,0-1,2023-24_chcup.txt
+20.00,Iliria Solothurn,FC La Chaux-de-Fonds,0,2,2,0-0,2023-24_chcup.txt
+,Vevey-Sports,FC Lausanne-Sport,0,3,2,0-1,2023-24_chcup.txt
+14.00,VfR Kleinhüningen,Neuchâtel Xamax FCS,0,8,2,0-3,2023-24_chcup.txt
+,FC Saint-Blaise,FC Basel 1893,1,8,2,1-5,2023-24_chcup.txt
+,SC Cham,FC Schaffhausen,1,3,2,1-2,2023-24_chcup.txt
+,FC Savièse,FC Bulle,0,5,2,0-2,2023-24_chcup.txt
+,FC Winkeln St. Gallen,FC Luzern,0,6,2,0-3,2023-24_chcup.txt
+,FC Widnau,FC St. Gallen,1,2,2,1-0,2023-24_chcup.txt
+16.15,SV Schaffhausen,Grasshopper Club Zürich,0,4,2,0-2,2023-24_chcup.txt
+17.30,FC Collina d'Oro,FC Wil 1900,0,4,2,0-0,2023-24_chcup.txt
+19.30,Neuchâtel Xamax FCS,BSC Young Boys,0,1,2,0-0,2023-24_chcup.txt
+,FC Wil 1900,Stade Lausanne-Ouchy,3,4,2,,2023-24_chcup.txt
+20.30,FC Sion,Grasshopper Club Zürich,3,0,1,1-0,2023-24_chcup.txt
+16.00,Lancy FC,FC Lugano,0,3,2,0-1,2023-24_chcup.txt
+,FC Rapperswil-Jona,Yverdon Sport FC,1,0,1,0-0,2023-24_chcup.txt
+17.30,FC Black Stars Basel,FC La Chaux-de-Fonds,4,1,1,1-0,2023-24_chcup.txt
+,SC Kriens,FC Baden,4,0,1,2-0,2023-24_chcup.txt
+18.30,FC Thun Berner Oberland,FC Luzern,1,3,2,,2023-24_chcup.txt
+19.00,FC Bulle,Servette FC,1,4,2,0-2,2023-24_chcup.txt
+19.30,FC Bosporus,FC Basel 1893,0,8,2,0-3,2023-24_chcup.txt
+20.00,FC Greifensee,FC Onex,1,2,2,1-0,2023-24_chcup.txt
+14.30,SR Delémont,FC St. Gallen,2,1,1,2-1,2023-24_chcup.txt
+15.00,SC Brühl,FC Lausanne-Sport,0,4,2,0-1,2023-24_chcup.txt
+16.00,AC Bellinzona,FC Schaffhausen,3,1,1,,2023-24_chcup.txt
+,FC Tuggen,FC Zürich,0,3,2,0-2,2023-24_chcup.txt
+,FC Aarau,FC Winterthur,1,2,2,0-0,2023-24_chcup.txt
+18.30,AC Bellinzona,FC Zürich,0,1,2,,2023-24_chcup.txt
+20.30,FC Onex,FC Sion,1,6,2,0-3,2023-24_chcup.txt
+19.00,FC Rapperswil-Jona,BSC Young Boys,0,2,2,0-1,2023-24_chcup.txt
+19.30,Servette FC,Stade Lausanne-Ouchy,4,1,1,,2023-24_chcup.txt
+20.00,FC Black Stars Basel,FC Winterthur,2,6,2,0-1,2023-24_chcup.txt
+20.30,SC Kriens,FC Basel 1893,0,1,2,0-1,2023-24_chcup.txt
+,SR Delémont,FC Luzern,1,0,1,1-0,2023-24_chcup.txt
+,FC Lausanne-Sport,FC Lugano,0,4,2,0-2,2023-24_chcup.txt
+20.15,SR Delémont,Servette FC,0,2,2,0-0,2023-24_chcup.txt
+20.30,FC Basel 1893,FC Lugano,3,4,2,,2023-24_chcup.txt
+,FC Zürich,FC Winterthur,0,2,2,0-0,2023-24_chcup.txt
+20.30,FC Sion,BSC Young Boys,2,1,1,1-0,2023-24_chcup.txt
+20.30,FC Sion,FC Lugano,0,2,2,0-1,2023-24_chcup.txt
+16.30,FC Winterthur,Servette FC,0,1,2,0-0,2023-24_chcup.txt
+14.00,Servette FC,FC Lugano,9,8,1,,2023-24_chcup.txt
+18.00,FC Lugano,Grasshopper Club Zürich,2,1,1,0-1,2024-25_ch1.txt
+,Yverdon Sport FC,FC Zürich,0,2,2,0-0,2024-25_ch1.txt
+20.30,FC Winterthur,FC St. Gallen,1,0,1,0-0,2024-25_ch1.txt
+14.15,BSC Young Boys,FC Sion,1,2,2,1-1,2024-25_ch1.txt
+16.30,FC Lausanne-Sport,FC Basel 1893,3,2,1,3-1,2024-25_ch1.txt
+,FC Luzern,Servette FC,1,2,2,0-1,2024-25_ch1.txt
+18.00,FC Sion,FC Lausanne-Sport,4,0,1,2-0,2024-25_ch1.txt
+,Grasshopper Club Zürich,FC Luzern,2,2,X,0-1,2024-25_ch1.txt
+20.30,FC Basel 1893,FC Lugano,1,2,2,0-1,2024-25_ch1.txt
+14.15,Servette FC,Yverdon Sport FC,3,2,1,2-1,2024-25_ch1.txt
+16.30,FC St. Gallen,BSC Young Boys,4,0,1,2-0,2024-25_ch1.txt
+,FC Zürich,FC Winterthur,4,2,1,2-1,2024-25_ch1.txt
+18.00,FC Lugano,Servette FC,3,1,1,0-0,2024-25_ch1.txt
+,Grasshopper Club Zürich,FC Basel 1893,0,3,2,0-2,2024-25_ch1.txt
+20.30,FC Luzern,FC Sion,1,0,1,0-0,2024-25_ch1.txt
+14.15,FC Lausanne-Sport,FC St. Gallen,3,4,2,1-2,2024-25_ch1.txt
+16.30,FC Winterthur,Yverdon Sport FC,0,0,X,,2024-25_ch1.txt
+,BSC Young Boys,FC Zürich,2,2,X,1-1,2024-25_ch1.txt
+18.00,FC Sion,FC Winterthur,2,0,1,0-0,2024-25_ch1.txt
+20.30,Yverdon Sport FC,BSC Young Boys,2,2,X,1-1,2024-25_ch1.txt
+14.15,FC St. Gallen,Grasshopper Club Zürich,1,0,1,0-0,2024-25_ch1.txt
+16.30,FC Lugano,FC Luzern,2,3,2,2-1,2024-25_ch1.txt
+,FC Zürich,FC Lausanne-Sport,2,0,1,1-0,2024-25_ch1.txt
+,Servette FC,FC Basel 1893,0,6,2,0-1,2024-25_ch1.txt
+20.30,Servette FC,BSC Young Boys,3,1,1,2-0,2024-25_ch1.txt
+18.00,FC Luzern,FC Winterthur,3,0,1,1-0,2024-25_ch1.txt
+20.30,Grasshopper Club Zürich,FC Sion,3,1,1,1-0,2024-25_ch1.txt
+16.30,FC Basel 1893,Yverdon Sport FC,2,0,1,1-0,2024-25_ch1.txt
+19.30,FC Lausanne-Sport,FC Lugano,1,2,2,0-1,2024-25_ch1.txt
+20.30,FC St. Gallen,FC Zürich,4,1,1,1-1,2024-25_ch1.txt
+18.00,FC Sion,FC Basel 1893,1,1,X,1-1,2024-25_ch1.txt
+,Yverdon Sport FC,Grasshopper Club Zürich,2,1,1,2-1,2024-25_ch1.txt
+20.30,BSC Young Boys,FC Lausanne-Sport,1,1,X,1-0,2024-25_ch1.txt
+14.15,FC Winterthur,Servette FC,0,1,2,0-1,2024-25_ch1.txt
+16.30,FC Lugano,FC St. Gallen,1,1,X,1-1,2024-25_ch1.txt
+,FC Zürich,FC Luzern,1,1,X,0-1,2024-25_ch1.txt
+18.00,FC St. Gallen,FC Luzern,2,3,2,2-0,2024-25_ch1.txt
+,Grasshopper Club Zürich,Servette FC,2,2,X,1-2,2024-25_ch1.txt
+20.30,FC Basel 1893,FC Zürich,0,2,2,0-1,2024-25_ch1.txt
+14.15,FC Lausanne-Sport,Yverdon Sport FC,3,1,1,2-0,2024-25_ch1.txt
+16.30,FC Sion,FC Lugano,0,0,X,,2024-25_ch1.txt
+,FC Winterthur,BSC Young Boys,1,4,2,0-1,2024-25_ch1.txt
+18.00,Servette FC,FC Lausanne-Sport,1,0,1,1-0,2024-25_ch1.txt
+,Yverdon Sport FC,FC St. Gallen,1,0,1,0-0,2024-25_ch1.txt
+20.30,BSC Young Boys,Grasshopper Club Zürich,0,1,2,0-1,2024-25_ch1.txt
+14.15,FC Zürich,FC Sion,1,0,1,1-0,2024-25_ch1.txt
+16.30,FC Lugano,FC Winterthur,2,1,1,0-0,2024-25_ch1.txt
+,FC Luzern,FC Basel 1893,1,0,1,0-0,2024-25_ch1.txt
+18.00,FC Luzern,FC Lausanne-Sport,2,2,X,1-2,2024-25_ch1.txt
+,FC Sion,Yverdon Sport FC,1,1,X,0-1,2024-25_ch1.txt
+20.30,FC Winterthur,Grasshopper Club Zürich,1,0,1,0-0,2024-25_ch1.txt
+14.15,FC Zürich,FC Lugano,1,1,X,1-1,2024-25_ch1.txt
+16.30,FC Basel 1893,BSC Young Boys,1,0,1,0-0,2024-25_ch1.txt
+,FC St. Gallen,Servette FC,1,1,X,1-0,2024-25_ch1.txt
+18.00,Grasshopper Club Zürich,FC Zürich,1,2,2,0-2,2024-25_ch1.txt
+,BSC Young Boys,FC Luzern,2,1,1,0-0,2024-25_ch1.txt
+20.30,Servette FC,FC Sion,3,0,1,1-0,2024-25_ch1.txt
+16.30,FC Basel 1893,FC St. Gallen,2,1,1,1-1,2024-25_ch1.txt
+,FC Lausanne-Sport,FC Winterthur,2,0,1,2-0,2024-25_ch1.txt
+,Yverdon Sport FC,FC Lugano,2,0,1,1-0,2024-25_ch1.txt
+18.00,FC Lausanne-Sport,Grasshopper Club Zürich,3,0,1,1-0,2024-25_ch1.txt
+,FC Winterthur,FC Basel 1893,1,6,2,0-3,2024-25_ch1.txt
+20.30,FC Luzern,Yverdon Sport FC,2,3,2,0-2,2024-25_ch1.txt
+14.15,FC Sion,FC St. Gallen,2,2,X,2-1,2024-25_ch1.txt
+16.30,FC Lugano,BSC Young Boys,2,0,1,2-0,2024-25_ch1.txt
+,FC Zürich,Servette FC,1,3,2,0-1,2024-25_ch1.txt
+20.30,Yverdon Sport FC,FC Lausanne-Sport,0,3,2,0-0,2024-25_ch1.txt
+20.30,FC Sion,FC Zürich,0,2,2,0-0,2024-25_ch1.txt
+,FC St. Gallen,FC Winterthur,2,2,X,1-1,2024-25_ch1.txt
+,BSC Young Boys,FC Basel 1893,3,2,1,0-1,2024-25_ch1.txt
+20.30,Grasshopper Club Zürich,FC Lugano,1,1,X,1-0,2024-25_ch1.txt
+,Servette FC,FC Luzern,2,2,X,1-1,2024-25_ch1.txt
+18.00,FC Basel 1893,FC Winterthur,5,0,1,3-0,2024-25_ch1.txt
+,FC Zürich,BSC Young Boys,0,0,X,,2024-25_ch1.txt
+20.30,FC St. Gallen,FC Sion,1,1,X,0-0,2024-25_ch1.txt
+14.15,FC Lausanne-Sport,Servette FC,1,0,1,1-0,2024-25_ch1.txt
+16.30,FC Lugano,Yverdon Sport FC,2,0,1,1-0,2024-25_ch1.txt
+,FC Luzern,Grasshopper Club Zürich,2,0,1,1-0,2024-25_ch1.txt
+18.00,FC Winterthur,FC Lausanne-Sport,1,0,1,0-0,2024-25_ch1.txt
+,Yverdon Sport FC,FC Basel 1893,1,4,2,0-2,2024-25_ch1.txt
+20.30,Servette FC,FC Zürich,1,1,X,1-1,2024-25_ch1.txt
+14.15,FC Sion,FC Luzern,4,2,1,2-0,2024-25_ch1.txt
+16.30,Grasshopper Club Zürich,FC St. Gallen,1,2,2,0-1,2024-25_ch1.txt
+,BSC Young Boys,FC Lugano,2,1,1,1-1,2024-25_ch1.txt
+18.00,FC Luzern,BSC Young Boys,1,1,X,0-1,2024-25_ch1.txt
+,Grasshopper Club Zürich,FC Winterthur,1,1,X,0-0,2024-25_ch1.txt
+20.30,FC Lausanne-Sport,FC Sion,1,0,1,0-0,2024-25_ch1.txt
+14.15,FC Lugano,FC Zürich,4,1,1,3-1,2024-25_ch1.txt
+16.30,FC Basel 1893,Servette FC,3,1,1,1-0,2024-25_ch1.txt
+,FC St. Gallen,Yverdon Sport FC,0,0,X,,2024-25_ch1.txt
+18.00,FC Basel 1893,FC Lausanne-Sport,1,1,X,1-0,2024-25_ch1.txt
+,Yverdon Sport FC,FC Luzern,0,1,2,0-0,2024-25_ch1.txt
+20.30,FC Zürich,Grasshopper Club Zürich,1,1,X,1-1,2024-25_ch1.txt
+14.15,FC Winterthur,FC Sion,1,3,2,0-1,2024-25_ch1.txt
+16.30,Servette FC,FC Lugano,3,0,1,0-0,2024-25_ch1.txt
+,BSC Young Boys,FC St. Gallen,3,1,1,2-0,2024-25_ch1.txt
+18.00,FC Sion,BSC Young Boys,3,1,1,3-0,2024-25_ch1.txt
+,Grasshopper Club Zürich,Yverdon Sport FC,1,1,X,1-0,2024-25_ch1.txt
+20.30,FC Luzern,FC Lugano,1,4,2,0-2,2024-25_ch1.txt
+14.15,FC Lausanne-Sport,FC Zürich,3,0,1,1-0,2024-25_ch1.txt
+16.30,FC St. Gallen,FC Basel 1893,1,1,X,1-0,2024-25_ch1.txt
+,Servette FC,FC Winterthur,1,1,X,1-0,2024-25_ch1.txt
+18.00,FC Winterthur,FC Luzern,3,4,2,3-2,2024-25_ch1.txt
+,Yverdon Sport FC,FC Sion,0,1,2,0-1,2024-25_ch1.txt
+20.30,FC Basel 1893,Grasshopper Club Zürich,0,1,2,0-1,2024-25_ch1.txt
+14.15,BSC Young Boys,Servette FC,2,1,1,1-1,2024-25_ch1.txt
+16.30,FC Lugano,FC Lausanne-Sport,1,4,2,0-2,2024-25_ch1.txt
+,FC Zürich,FC St. Gallen,0,2,2,0-1,2024-25_ch1.txt
+18.00,FC Sion,Grasshopper Club Zürich,0,1,2,0-0,2024-25_ch1.txt
+,BSC Young Boys,FC Winterthur,0,0,X,,2024-25_ch1.txt
+20.30,Servette FC,FC St. Gallen,1,1,X,0-0,2024-25_ch1.txt
+14.15,FC Zürich,Yverdon Sport FC,1,0,1,0-0,2024-25_ch1.txt
+16.30,FC Lausanne-Sport,FC Luzern,0,0,X,,2024-25_ch1.txt
+,FC Lugano,FC Basel 1893,2,2,X,1-1,2024-25_ch1.txt
+18.00,Grasshopper Club Zürich,BSC Young Boys,0,0,X,,2024-25_ch1.txt
+,Yverdon Sport FC,Servette FC,0,0,X,,2024-25_ch1.txt
+20.30,FC Winterthur,FC Lugano,2,3,2,2-0,2024-25_ch1.txt
+14.15,FC St. Gallen,FC Lausanne-Sport,3,2,1,1-1,2024-25_ch1.txt
+16.30,FC Basel 1893,FC Sion,4,1,1,1-1,2024-25_ch1.txt
+,FC Luzern,FC Zürich,3,1,1,2-0,2024-25_ch1.txt
+18.00,FC Lausanne-Sport,BSC Young Boys,1,2,2,0-2,2024-25_ch1.txt
+,FC Lugano,FC Sion,3,2,1,1-1,2024-25_ch1.txt
+20.30,Servette FC,Grasshopper Club Zürich,1,1,X,0-0,2024-25_ch1.txt
+14.15,FC Luzern,FC St. Gallen,2,0,1,1-0,2024-25_ch1.txt
+16.30,FC Zürich,FC Basel 1893,0,1,2,0-1,2024-25_ch1.txt
+,Yverdon Sport FC,FC Winterthur,3,0,1,1-0,2024-25_ch1.txt
+20.30,FC Sion,Servette FC,3,3,X,1-1,2024-25_ch1.txt
+,Grasshopper Club Zürich,FC Lausanne-Sport,2,2,X,0-1,2024-25_ch1.txt
+20.30,FC St. Gallen,FC Lugano,2,1,1,0-1,2024-25_ch1.txt
+,BSC Young Boys,Yverdon Sport FC,6,1,1,2-0,2024-25_ch1.txt
+20.30,FC Basel 1893,FC Luzern,2,1,1,1-1,2024-25_ch1.txt
+,FC Winterthur,FC Zürich,0,2,2,0-0,2024-25_ch1.txt
+18.00,FC Lausanne-Sport,Yverdon Sport FC,4,1,1,3-1,2024-25_ch1.txt
+,FC Lugano,Grasshopper Club Zürich,1,1,X,0-1,2024-25_ch1.txt
+20.30,BSC Young Boys,FC Sion,5,1,1,3-1,2024-25_ch1.txt
+14.15,Servette FC,FC Basel 1893,2,1,1,0-0,2024-25_ch1.txt
+16.30,FC Luzern,FC Winterthur,3,2,1,1-1,2024-25_ch1.txt
+,FC Zürich,FC St. Gallen,1,2,2,1-0,2024-25_ch1.txt
+18.00,FC Lugano,FC Luzern,2,0,1,0-0,2024-25_ch1.txt
+,FC Sion,FC Zürich,2,1,1,2-1,2024-25_ch1.txt
+20.30,FC Winterthur,BSC Young Boys,1,0,1,0-0,2024-25_ch1.txt
+14.15,Yverdon Sport FC,FC St. Gallen,1,0,1,0-0,2024-25_ch1.txt
+16.30,FC Basel 1893,FC Lausanne-Sport,1,1,X,1-0,2024-25_ch1.txt
+,Grasshopper Club Zürich,Servette FC,1,2,2,1-0,2024-25_ch1.txt
+18.00,FC Lausanne-Sport,Grasshopper Club Zürich,2,2,X,1-0,2024-25_ch1.txt
+,FC Zürich,Yverdon Sport FC,2,1,1,1-0,2024-25_ch1.txt
+20.30,FC St. Gallen,FC Basel 1893,2,2,X,0-1,2024-25_ch1.txt
+14.15,FC Luzern,FC Sion,2,1,1,1-0,2024-25_ch1.txt
+16.30,Servette FC,FC Winterthur,3,1,1,0-0,2024-25_ch1.txt
+,BSC Young Boys,FC Lugano,1,0,1,0-0,2024-25_ch1.txt
+18.00,FC Basel 1893,FC Sion,2,0,1,2-0,2024-25_ch1.txt
+,FC Winterthur,FC St. Gallen,4,0,1,3-0,2024-25_ch1.txt
+20.30,FC Lausanne-Sport,Servette FC,0,1,2,0-1,2024-25_ch1.txt
+14.15,FC Lugano,FC Zürich,0,3,2,0-1,2024-25_ch1.txt
+16.30,Grasshopper Club Zürich,BSC Young Boys,1,0,1,0-0,2024-25_ch1.txt
+,Yverdon Sport FC,FC Luzern,2,2,X,0-0,2024-25_ch1.txt
+18.00,BSC Young Boys,FC Lausanne-Sport,3,0,1,1-0,2024-25_ch1.txt
+,Yverdon Sport FC,FC Winterthur,2,1,1,1-1,2024-25_ch1.txt
+20.30,FC St. Gallen,Grasshopper Club Zürich,3,1,1,1-1,2024-25_ch1.txt
+14.15,FC Zürich,Servette FC,1,3,2,0-2,2024-25_ch1.txt
+16.30,FC Luzern,FC Basel 1893,1,1,X,0-1,2024-25_ch1.txt
+,FC Sion,FC Lugano,2,1,1,1-1,2024-25_ch1.txt
+18.00,Servette FC,Yverdon Sport FC,2,3,2,1-2,2024-25_ch1.txt
+,FC St. Gallen,FC Lausanne-Sport,0,2,2,0-2,2024-25_ch1.txt
+20.30,FC Zürich,FC Luzern,3,2,1,2-1,2024-25_ch1.txt
+14.15,Grasshopper Club Zürich,FC Sion,1,1,X,0-1,2024-25_ch1.txt
+16.30,FC Basel 1893,BSC Young Boys,1,2,2,0-1,2024-25_ch1.txt
+,FC Lugano,FC Winterthur,2,1,1,0-0,2024-25_ch1.txt
+18.00,FC Sion,Yverdon Sport FC,1,1,X,0-1,2024-25_ch1.txt
+,BSC Young Boys,FC St. Gallen,1,0,1,0-0,2024-25_ch1.txt
+20.30,FC Lugano,Servette FC,0,2,2,0-1,2024-25_ch1.txt
+14.15,FC Winterthur,FC Basel 1893,0,2,2,0-0,2024-25_ch1.txt
+16.30,Grasshopper Club Zürich,FC Zürich,1,2,2,0-1,2024-25_ch1.txt
+,FC Lausanne-Sport,FC Luzern,1,4,2,0-3,2024-25_ch1.txt
+20.30,Servette FC,BSC Young Boys,0,1,2,0-1,2024-25_ch1.txt
+,Yverdon Sport FC,FC Lugano,0,2,2,0-1,2024-25_ch1.txt
+20.30,FC Sion,FC Winterthur,1,2,2,1-0,2024-25_ch1.txt
+,FC Zürich,FC Lausanne-Sport,2,2,X,0-1,2024-25_ch1.txt
+20.30,FC Basel 1893,Grasshopper Club Zürich,2,1,1,2-0,2024-25_ch1.txt
+,FC Luzern,FC St. Gallen,1,1,X,1-1,2024-25_ch1.txt
+18.00,FC Lausanne-Sport,FC Sion,2,0,1,0-0,2024-25_ch1.txt
+,FC Winterthur,FC Zürich,0,0,X,,2024-25_ch1.txt
+20.30,BSC Young Boys,Yverdon Sport FC,1,1,X,0-1,2024-25_ch1.txt
+14.15,FC St. Gallen,Servette FC,1,0,1,0-0,2024-25_ch1.txt
+16.30,FC Basel 1893,FC Lugano,2,0,1,0-0,2024-25_ch1.txt
+,Grasshopper Club Zürich,FC Luzern,3,1,1,1-0,2024-25_ch1.txt
+18.00,FC Winterthur,FC Lausanne-Sport,1,0,1,0-0,2024-25_ch1.txt
+,Yverdon Sport FC,Grasshopper Club Zürich,1,2,2,1-1,2024-25_ch1.txt
+20.30,FC Zürich,FC Basel 1893,0,4,2,0-2,2024-25_ch1.txt
+14.15,FC Lugano,FC St. Gallen,1,1,X,0-0,2024-25_ch1.txt
+16.30,FC Luzern,BSC Young Boys,5,0,1,2-0,2024-25_ch1.txt
+,FC Sion,Servette FC,1,1,X,0-0,2024-25_ch1.txt
+18.00,Grasshopper Club Zürich,FC Winterthur,0,1,2,0-0,2024-25_ch1.txt
+16.30,FC Basel 1893,Yverdon Sport FC,5,0,1,4-0,2024-25_ch1.txt
+,FC Lausanne-Sport,FC Lugano,2,0,1,2-0,2024-25_ch1.txt
+,Servette FC,FC Luzern,2,1,1,1-0,2024-25_ch1.txt
+,FC St. Gallen,FC Sion,1,0,1,0-0,2024-25_ch1.txt
+,BSC Young Boys,FC Zürich,2,1,1,2-0,2024-25_ch1.txt
+20.30,FC Lausanne-Sport,BSC Young Boys,3,2,1,1-1,2024-25_ch1.txt
+16.30,FC Basel 1893,Servette FC,5,1,1,3-0,2024-25_ch1.txt
+,FC Luzern,FC Lugano,0,2,2,0-1,2024-25_ch1.txt
+20.30,FC Lugano,FC Basel 1893,2,5,2,1-1,2024-25_ch1.txt
+14.15,FC Luzern,FC Lausanne-Sport,1,1,X,0-0,2024-25_ch1.txt
+16.30,Servette FC,BSC Young Boys,0,0,X,,2024-25_ch1.txt
+20.30,FC Lausanne-Sport,FC Basel 1893,2,3,2,1-2,2024-25_ch1.txt
+20.30,Servette FC,FC Lugano,4,1,1,2-1,2024-25_ch1.txt
+,BSC Young Boys,FC Luzern,2,1,1,1-0,2024-25_ch1.txt
+14.15,BSC Young Boys,FC Basel 1893,6,2,1,2-1,2024-25_ch1.txt
+16.30,FC Lausanne-Sport,FC Lugano,1,1,X,1-1,2024-25_ch1.txt
+,FC Luzern,Servette FC,3,4,2,0-2,2024-25_ch1.txt
+18.00,FC Basel 1893,FC Luzern,4,0,1,2-0,2024-25_ch1.txt
+,FC Lugano,BSC Young Boys,1,1,X,0-0,2024-25_ch1.txt
+,Servette FC,FC Lausanne-Sport,3,3,X,1-0,2024-25_ch1.txt
+18.00,FC Winterthur,Grasshopper Club Zürich,2,0,1,0-0,2024-25_ch1.txt
+14.15,FC Sion,FC Zürich,2,1,1,2-1,2024-25_ch1.txt
+19.00,Yverdon Sport FC,FC St. Gallen,1,1,X,0-1,2024-25_ch1.txt
+18.00,FC St. Gallen,FC Winterthur,1,4,2,1-2,2024-25_ch1.txt
+,Yverdon Sport FC,FC Sion,1,1,X,1-0,2024-25_ch1.txt
+,FC Zürich,Grasshopper Club Zürich,3,0,1,2-0,2024-25_ch1.txt
+20.30,FC Sion,FC St. Gallen,1,1,X,0-1,2024-25_ch1.txt
+,FC Zürich,FC Winterthur,4,1,1,0-1,2024-25_ch1.txt
+20.30,Grasshopper Club Zürich,Yverdon Sport FC,5,0,1,3-0,2024-25_ch1.txt
+18.00,FC St. Gallen,FC Zürich,3,2,1,2-1,2024-25_ch1.txt
+,FC Winterthur,Yverdon Sport FC,2,2,X,1-2,2024-25_ch1.txt
+20.30,FC Sion,Grasshopper Club Zürich,2,1,1,0-0,2024-25_ch1.txt
+20.30,Grasshopper Club Zürich,FC St. Gallen,2,0,1,1-0,2024-25_ch1.txt
+,FC Winterthur,FC Sion,2,0,1,2-0,2024-25_ch1.txt
+,Yverdon Sport FC,FC Zürich,3,2,1,1-0,2024-25_ch1.txt
+19.30,FC Schaffhausen,Etoile Carouge FC,2,3,2,1-2,2024-25_ch2.txt
+,Neuchâtel Xamax FCS,Stade Lausanne-Ouchy,3,2,1,2-1,2024-25_ch2.txt
+20.15,FC Aarau,FC Thun Berner Oberland,1,3,2,0-2,2024-25_ch2.txt
+18.00,AC Bellinzona,FC Wil 1900,0,3,2,,2024-25_ch2.txt
+14.15,FC Vaduz,FC Stade Nyonnais,0,0,X,,2024-25_ch2.txt
+19.30,Stade Lausanne-Ouchy,FC Schaffhausen,0,1,2,0-1,2024-25_ch2.txt
+,FC Stade Nyonnais,AC Bellinzona,2,1,1,0-1,2024-25_ch2.txt
+20.15,Etoile Carouge FC,Neuchâtel Xamax FCS,3,1,1,3-0,2024-25_ch2.txt
+,FC Wil 1900,FC Aarau,2,2,X,2-0,2024-25_ch2.txt
+16.30,FC Thun Berner Oberland,FC Vaduz,2,0,1,0-0,2024-25_ch2.txt
+19.30,FC Stade Nyonnais,FC Schaffhausen,0,3,2,0-1,2024-25_ch2.txt
+20.15,FC Thun Berner Oberland,Stade Lausanne-Ouchy,1,1,X,1-0,2024-25_ch2.txt
+18.00,AC Bellinzona,Etoile Carouge FC,1,1,X,1-0,2024-25_ch2.txt
+,FC Aarau,Neuchâtel Xamax FCS,1,3,2,1-0,2024-25_ch2.txt
+14.15,FC Vaduz,FC Wil 1900,3,2,1,0-1,2024-25_ch2.txt
+19.30,Stade Lausanne-Ouchy,FC Aarau,1,1,X,1-1,2024-25_ch2.txt
+20.15,Etoile Carouge FC,FC Thun Berner Oberland,0,2,2,0-2,2024-25_ch2.txt
+,Neuchâtel Xamax FCS,AC Bellinzona,2,2,X,2-1,2024-25_ch2.txt
+18.00,FC Wil 1900,FC Stade Nyonnais,0,3,2,0-2,2024-25_ch2.txt
+14.15,FC Schaffhausen,FC Vaduz,1,1,X,0-1,2024-25_ch2.txt
+20.15,FC Wil 1900,Neuchâtel Xamax FCS,4,0,1,1-0,2024-25_ch2.txt
+18.00,AC Bellinzona,FC Schaffhausen,2,1,1,2-0,2024-25_ch2.txt
+,FC Aarau,Etoile Carouge FC,1,0,1,1-0,2024-25_ch2.txt
+14.15,FC Vaduz,Stade Lausanne-Ouchy,3,1,1,2-0,2024-25_ch2.txt
+16.30,FC Thun Berner Oberland,FC Stade Nyonnais,4,2,1,1-1,2024-25_ch2.txt
+19.30,Neuchâtel Xamax FCS,FC Vaduz,4,1,1,1-1,2024-25_ch2.txt
+,FC Stade Nyonnais,Stade Lausanne-Ouchy,0,3,2,0-2,2024-25_ch2.txt
+20.15,Etoile Carouge FC,FC Wil 1900,3,1,1,1-0,2024-25_ch2.txt
+,FC Schaffhausen,FC Thun Berner Oberland,2,2,X,2-1,2024-25_ch2.txt
+18.00,FC Aarau,AC Bellinzona,1,2,2,1-1,2024-25_ch2.txt
+19.30,FC Schaffhausen,Neuchâtel Xamax FCS,1,2,2,1-0,2024-25_ch2.txt
+,Stade Lausanne-Ouchy,FC Wil 1900,0,0,X,,2024-25_ch2.txt
+,FC Stade Nyonnais,Etoile Carouge FC,2,4,2,1-2,2024-25_ch2.txt
+20.15,FC Thun Berner Oberland,AC Bellinzona,1,2,2,0-0,2024-25_ch2.txt
+,FC Vaduz,FC Aarau,2,5,2,2-3,2024-25_ch2.txt
+19.30,FC Wil 1900,FC Thun Berner Oberland,0,0,X,,2024-25_ch2.txt
+,Neuchâtel Xamax FCS,FC Stade Nyonnais,3,2,1,0-1,2024-25_ch2.txt
+20.15,FC Aarau,FC Schaffhausen,1,2,2,1-1,2024-25_ch2.txt
+20.15,AC Bellinzona,Stade Lausanne-Ouchy,2,1,1,1-0,2024-25_ch2.txt
+,Etoile Carouge FC,FC Vaduz,1,0,1,1-0,2024-25_ch2.txt
+19.30,FC Schaffhausen,FC Wil 1900,0,2,2,0-1,2024-25_ch2.txt
+,Stade Lausanne-Ouchy,Etoile Carouge FC,5,1,1,2-0,2024-25_ch2.txt
+,FC Stade Nyonnais,FC Aarau,1,2,2,0-1,2024-25_ch2.txt
+20.15,FC Thun Berner Oberland,Neuchâtel Xamax FCS,1,0,1,0-0,2024-25_ch2.txt
+14.15,FC Vaduz,AC Bellinzona,2,1,1,2-0,2024-25_ch2.txt
+19.30,Neuchâtel Xamax FCS,FC Schaffhausen,2,1,1,2-0,2024-25_ch2.txt
+20.15,AC Bellinzona,FC Thun Berner Oberland,0,0,X,,2024-25_ch2.txt
+,Etoile Carouge FC,FC Stade Nyonnais,3,1,1,0-1,2024-25_ch2.txt
+18.00,FC Aarau,FC Vaduz,0,0,X,,2024-25_ch2.txt
+,FC Wil 1900,Stade Lausanne-Ouchy,2,2,X,2-1,2024-25_ch2.txt
+19.30,Neuchâtel Xamax FCS,Etoile Carouge FC,0,3,2,0-1,2024-25_ch2.txt
+,FC Stade Nyonnais,FC Wil 1900,3,1,1,0-1,2024-25_ch2.txt
+20.15,FC Schaffhausen,FC Aarau,0,3,2,0-3,2024-25_ch2.txt
+18.00,Stade Lausanne-Ouchy,AC Bellinzona,1,1,X,1-1,2024-25_ch2.txt
+,FC Vaduz,FC Thun Berner Oberland,2,0,1,0-0,2024-25_ch2.txt
+20.15,Etoile Carouge FC,Stade Lausanne-Ouchy,1,1,X,0-0,2024-25_ch2.txt
+,FC Aarau,FC Stade Nyonnais,1,0,1,0-0,2024-25_ch2.txt
+18.00,AC Bellinzona,Neuchâtel Xamax FCS,0,2,2,0-1,2024-25_ch2.txt
+14.15,FC Wil 1900,FC Vaduz,0,0,X,,2024-25_ch2.txt
+16.30,FC Thun Berner Oberland,FC Schaffhausen,3,1,1,1-0,2024-25_ch2.txt
+19.30,FC Schaffhausen,AC Bellinzona,2,1,1,2-0,2024-25_ch2.txt
+,Stade Lausanne-Ouchy,FC Vaduz,2,2,X,1-1,2024-25_ch2.txt
+,Neuchâtel Xamax FCS,FC Wil 1900,1,4,2,0-1,2024-25_ch2.txt
+20.15,Etoile Carouge FC,FC Aarau,2,1,1,2-0,2024-25_ch2.txt
+,FC Stade Nyonnais,FC Thun Berner Oberland,1,6,2,0-3,2024-25_ch2.txt
+19.30,Stade Lausanne-Ouchy,FC Stade Nyonnais,6,2,1,1-1,2024-25_ch2.txt
+20.15,FC Vaduz,Neuchâtel Xamax FCS,2,1,1,1-0,2024-25_ch2.txt
+18.00,AC Bellinzona,FC Aarau,1,4,2,0-3,2024-25_ch2.txt
+,FC Thun Berner Oberland,Etoile Carouge FC,2,1,1,1-0,2024-25_ch2.txt
+14.15,FC Wil 1900,FC Schaffhausen,2,2,X,1-1,2024-25_ch2.txt
+20.15,Etoile Carouge FC,AC Bellinzona,2,2,X,1-1,2024-25_ch2.txt
+,Neuchâtel Xamax FCS,FC Thun Berner Oberland,2,3,2,1-0,2024-25_ch2.txt
+14.15,FC Aarau,FC Wil 1900,1,1,X,0-1,2024-25_ch2.txt
+19.30,FC Stade Nyonnais,FC Vaduz,1,1,X,0-1,2024-25_ch2.txt
+19.30,FC Schaffhausen,Stade Lausanne-Ouchy,0,1,2,0-0,2024-25_ch2.txt
+19.30,Stade Lausanne-Ouchy,Neuchâtel Xamax FCS,1,2,2,0-1,2024-25_ch2.txt
+20.15,FC Vaduz,FC Schaffhausen,2,2,X,0-2,2024-25_ch2.txt
+18.00,AC Bellinzona,FC Stade Nyonnais,1,1,X,0-0,2024-25_ch2.txt
+,FC Thun Berner Oberland,FC Aarau,1,1,X,1-0,2024-25_ch2.txt
+,FC Wil 1900,Etoile Carouge FC,2,1,1,1-1,2024-25_ch2.txt
+19.30,FC Stade Nyonnais,Neuchâtel Xamax FCS,2,1,1,2-1,2024-25_ch2.txt
+20.15,FC Thun Berner Oberland,FC Wil 1900,0,2,2,0-1,2024-25_ch2.txt
+14.15,Etoile Carouge FC,FC Schaffhausen,1,0,1,1-0,2024-25_ch2.txt
+16.30,AC Bellinzona,FC Vaduz,1,2,2,1-1,2024-25_ch2.txt
+,FC Aarau,Stade Lausanne-Ouchy,1,0,1,1-0,2024-25_ch2.txt
+19.30,FC Schaffhausen,FC Stade Nyonnais,0,1,2,0-1,2024-25_ch2.txt
+,Stade Lausanne-Ouchy,FC Thun Berner Oberland,1,1,X,1-0,2024-25_ch2.txt
+20.15,Neuchâtel Xamax FCS,FC Aarau,1,3,2,1-1,2024-25_ch2.txt
+18.00,FC Vaduz,Etoile Carouge FC,3,2,1,1-1,2024-25_ch2.txt
+,FC Wil 1900,AC Bellinzona,0,2,2,0-1,2024-25_ch2.txt
+19.30,Neuchâtel Xamax FCS,Stade Lausanne-Ouchy,1,2,2,1-1,2024-25_ch2.txt
+,FC Stade Nyonnais,FC Aarau,1,2,2,1-0,2024-25_ch2.txt
+20.15,Etoile Carouge FC,FC Wil 1900,1,1,X,1-1,2024-25_ch2.txt
+,FC Thun Berner Oberland,FC Vaduz,3,1,1,1-0,2024-25_ch2.txt
+18.00,AC Bellinzona,FC Schaffhausen,3,0,1,1-0,2024-25_ch2.txt
+19.30,FC Schaffhausen,FC Thun Berner Oberland,2,3,2,0-1,2024-25_ch2.txt
+,Stade Lausanne-Ouchy,Etoile Carouge FC,1,0,1,1-0,2024-25_ch2.txt
+20.15,FC Wil 1900,Neuchâtel Xamax FCS,2,0,1,1-0,2024-25_ch2.txt
+18.00,FC Aarau,AC Bellinzona,2,1,1,0-1,2024-25_ch2.txt
+,FC Vaduz,FC Stade Nyonnais,1,1,X,0-0,2024-25_ch2.txt
+19.30,FC Stade Nyonnais,FC Schaffhausen,0,1,2,0-1,2024-25_ch2.txt
+20.15,Etoile Carouge FC,Neuchâtel Xamax FCS,2,1,1,1-0,2024-25_ch2.txt
+,Stade Lausanne-Ouchy,FC Aarau,2,4,2,2-0,2024-25_ch2.txt
+14.15,FC Vaduz,FC Wil 1900,1,0,1,1-0,2024-25_ch2.txt
+16.30,FC Thun Berner Oberland,AC Bellinzona,2,0,1,1-0,2024-25_ch2.txt
+19.30,Neuchâtel Xamax FCS,FC Vaduz,0,0,X,,2024-25_ch2.txt
+,FC Schaffhausen,Etoile Carouge FC,0,0,X,,2024-25_ch2.txt
+20.15,FC Aarau,FC Thun Berner Oberland,1,0,1,1-0,2024-25_ch2.txt
+18.00,AC Bellinzona,Stade Lausanne-Ouchy,0,1,2,0-0,2024-25_ch2.txt
+,FC Wil 1900,FC Stade Nyonnais,2,1,1,1-1,2024-25_ch2.txt
+19.30,FC Stade Nyonnais,Stade Lausanne-Ouchy,3,0,1,0-0,2024-25_ch2.txt
+20.15,FC Schaffhausen,Neuchâtel Xamax FCS,2,4,2,1-1,2024-25_ch2.txt
+18.00,AC Bellinzona,Etoile Carouge FC,0,0,X,,2024-25_ch2.txt
+14.15,FC Vaduz,FC Aarau,0,1,2,0-1,2024-25_ch2.txt
+,FC Wil 1900,FC Thun Berner Oberland,2,3,2,0-1,2024-25_ch2.txt
+19.30,Stade Lausanne-Ouchy,FC Wil 1900,2,1,1,2-1,2024-25_ch2.txt
+20.15,FC Thun Berner Oberland,FC Stade Nyonnais,2,2,X,1-2,2024-25_ch2.txt
+18.00,FC Aarau,FC Schaffhausen,3,0,1,2-0,2024-25_ch2.txt
+14.15,Neuchâtel Xamax FCS,AC Bellinzona,1,1,X,0-0,2024-25_ch2.txt
+16.30,Etoile Carouge FC,FC Vaduz,3,2,1,2-0,2024-25_ch2.txt
+19.30,FC Schaffhausen,FC Vaduz,1,1,X,1-1,2024-25_ch2.txt
+,FC Stade Nyonnais,Etoile Carouge FC,0,3,2,0-3,2024-25_ch2.txt
+20.15,FC Aarau,Neuchâtel Xamax FCS,2,0,1,1-0,2024-25_ch2.txt
+18.00,AC Bellinzona,FC Wil 1900,0,3,2,0-2,2024-25_ch2.txt
+16.30,FC Thun Berner Oberland,Stade Lausanne-Ouchy,2,1,1,0-0,2024-25_ch2.txt
+20.15,Etoile Carouge FC,FC Thun Berner Oberland,0,0,X,,2024-25_ch2.txt
+18.00,Stade Lausanne-Ouchy,FC Schaffhausen,0,1,2,0-0,2024-25_ch2.txt
+14.15,Neuchâtel Xamax FCS,FC Stade Nyonnais,4,0,1,2-0,2024-25_ch2.txt
+,FC Vaduz,AC Bellinzona,3,1,1,2-0,2024-25_ch2.txt
+,FC Wil 1900,FC Aarau,2,2,X,0-2,2024-25_ch2.txt
+20.00,FC Wettswil-Bonstetten,FC Winterthur,1,2,2,0-0,2024-25_chcup.txt
+,Lancy FC,Etoile Carouge FC,1,4,2,,2024-25_chcup.txt
+,FC Dardania Lausanne,Yverdon Sport FC,0,3,2,0-0,2024-25_chcup.txt
+,SC Kriens,AC Bellinzona,1,2,2,0-2,2024-25_chcup.txt
+,AC Taverne,FC Wil 1900,1,3,2,0-0,2024-25_chcup.txt
+16.00,FC Subingen,FC Basel 1893,0,8,2,0-5,2024-25_chcup.txt
+,FC Baden,FC Rapperswil-Jona,1,3,2,0-1,2024-25_chcup.txt
+,FC Ursy,FC Stade Nyonnais,0,6,2,0-4,2024-25_chcup.txt
+,FC Schattdorf,FC Paradiso,0,1,2,0-0,2024-25_chcup.txt
+17.00,FC Printse-Nendaz,BSC Young Boys,0,10,2,0-6,2024-25_chcup.txt
+,FC Suhr,FC Aarau,0,4,2,0-2,2024-25_chcup.txt
+,FC Echallens,Stade Lausanne-Ouchy,1,6,2,0-3,2024-25_chcup.txt
+,FC Besa St. Gallen,Chur 97,1,0,1,1-0,2024-25_chcup.txt
+18.00,FC Monthey,FC Solothurn,4,3,1,,2024-25_chcup.txt
+,FC Wallbach,FC Langenthal,0,2,2,0-0,2024-25_chcup.txt
+,FC Tuggen,FC Schaffhausen,0,2,2,0-1,2024-25_chcup.txt
+,FC Mendrisio,FC Luzern,1,4,2,1-3,2024-25_chcup.txt
+19.00,FC Aemme,FC Haute-Ajoie,2,1,1,2-0,2024-25_chcup.txt
+,FC CSL,FC Prishtina Bern,3,1,1,,2024-25_chcup.txt
+,SC Emmen,FC Altstätten,3,2,1,0-2,2024-25_chcup.txt
+,Bienne,Neuchâtel Xamax FCS,2,1,1,1-0,2024-25_chcup.txt
+20.00,SR Delémont,FC Sion,1,4,2,,2024-25_chcup.txt
+14.00,FC Genolier-Begnins,Vevey-Sports,1,3,2,0-1,2024-25_chcup.txt
+14.30,Signal FC Bernex-Confignon,Servette FC,1,7,2,0-4,2024-25_chcup.txt
+,FC Champel,FC Lausanne-Sport,0,7,2,0-2,2024-25_chcup.txt
+15.00,SC Schwyz,FC Thun Berner Oberland,0,6,2,0-2,2024-25_chcup.txt
+,KF Dardania St. Gallen,FC Gambarogno-Contone,1,2,2,0-2,2024-25_chcup.txt
+,SC Brühl,FC Lugano,1,7,2,1-4,2024-25_chcup.txt
+16.00,Zug 94,FC Zürich,0,2,2,0-2,2024-25_chcup.txt
+,FC Regensdorf,Grasshopper Club Zürich,0,9,2,0-6,2024-25_chcup.txt
+16.30,FC Malcantone,FC St. Gallen,0,4,2,0-3,2024-25_chcup.txt
+20.00,FC Monthey,Etoile Carouge FC,0,2,2,0-2,2024-25_chcup.txt
+,SC Emmen,Yverdon Sport FC,1,2,2,1-2,2024-25_chcup.txt
+,Juventus Zürich,FC Sion,0,2,2,0-1,2024-25_chcup.txt
+,FC Thun Berner Oberland,Grasshopper Club Zürich,0,2,2,0-1,2024-25_chcup.txt
+15.00,FC Langenthal,Stade Lausanne-Ouchy,1,0,1,1-0,2024-25_chcup.txt
+16.00,FC Paradiso,FC St. Gallen,1,3,2,1-1,2024-25_chcup.txt
+17.00,FC Rapperswil-Jona,FC Lugano,1,3,2,0-0,2024-25_chcup.txt
+,FC Aemme,FC Lausanne-Sport,0,4,2,0-1,2024-25_chcup.txt
+18.00,Vevey-Sports,BSC Young Boys,2,4,2,0-2,2024-25_chcup.txt
+,FC Wil 1900,FC Winterthur,2,4,2,,2024-25_chcup.txt
+18.30,FC CSL,FC Zürich,0,3,2,0-0,2024-25_chcup.txt
+14.30,FC Schaffhausen,Servette FC,2,1,1,0-1,2024-25_chcup.txt
+16.00,FC Gambarogno-Contone,AC Bellinzona,1,2,2,0-2,2024-25_chcup.txt
+,FC Aarau,FC Luzern,1,0,1,0-0,2024-25_chcup.txt
+16.30,FC Stade Nyonnais,FC Basel 1893,0,1,2,,2024-25_chcup.txt
+20.00,Grasshopper Club Zürich,FC Zürich,0,1,2,0-0,2024-25_chcup.txt
+20.00,FC Schaffhausen,BSC Young Boys,0,1,2,0-1,2024-25_chcup.txt
+20.15,FC Basel 1893,FC Sion,4,1,1,,2024-25_chcup.txt
+20.30,Yverdon Sport FC,FC Lugano,0,2,2,0-0,2024-25_chcup.txt
+20.00,FC Aarau,Etoile Carouge FC,0,1,2,0-0,2024-25_chcup.txt
+20.30,AC Bellinzona,FC St. Gallen,1,0,1,0-0,2024-25_chcup.txt
+,FC Winterthur,FC Lausanne-Sport,0,3,2,0-2,2024-25_chcup.txt
+20.30,AC Bellinzona,FC Lausanne-Sport,3,4,2,,2024-25_chcup.txt
+19.30,Etoile Carouge FC,FC Basel 1893,1,3,2,0-0,2024-25_chcup.txt
+,Bienne,FC Lugano,2,0,1,0-0,2024-25_chcup.txt
+20.30,FC Zürich,BSC Young Boys,2,3,2,1-1,2024-25_chcup.txt
+,Bienne,BSC Young Boys,1,0,1,,2024-25_chcup.txt
+15.30,FC Basel 1893,FC Lausanne-Sport,3,2,1,,2024-25_chcup.txt

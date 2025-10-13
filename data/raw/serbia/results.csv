@@ -1,0 +1,332 @@
+time,home_team,away_team,home_score,away_score,result,ht_score,source_file
+18.55,Spartak Subotica,IMT Beograd,2,1,1,1-1,2023-24_rs1.txt
+,dovac,FK Javor,0,0,X,,2023-24_rs1.txt
+,ka Topola,Partizan,3,3,X,2-2,2023-24_rs1.txt
+20.00,Crvena Zvezda,Vojvodina,5,0,1,2-0,2023-24_rs1.txt
+,ani,Radnik Surdulica,0,0,X,,2023-24_rs1.txt
+18.00,FK Javor,FK Novi Pazar,3,1,1,1-0,2023-24_rs1.txt
+16.55,Crvena Zvezda,FK Napredak,4,0,1,3-0,2023-24_rs1.txt
+19.00,Vojvodina,Partizan,0,2,2,0-0,2023-24_rs1.txt
+18.00,Radnik Surdulica,Spartak Subotica,2,0,1,1-0,2023-24_rs1.txt
+,ani,Crvena Zvezda,1,4,2,1-2,2023-24_rs1.txt
+,dovac,Radnik Surdulica,1,1,X,0-1,2023-24_rs1.txt
+,ki,FK Javor,2,2,X,1-1,2023-24_rs1.txt
+18.55,FK Napredak,Vojvodina,0,0,X,,2023-24_rs1.txt
+18.00,FK Novi Pazar,IMT Beograd,3,4,2,2-1,2023-24_rs1.txt
+20.30,Crvena Zvezda,Spartak Subotica,3,0,1,3-0,2023-24_rs1.txt
+17.15,Radnik Surdulica,FK Novi Pazar,0,0,X,,2023-24_rs1.txt
+,ki 1923,Partizan,0,4,2,0-1,2023-24_rs1.txt
+,ka Topola,IMT Beograd,1,0,1,0-0,2023-24_rs1.txt
+,dovac,Crvena Zvezda,3,2,1,2-0,2023-24_rs1.txt
+,ani,Vojvodina,2,2,X,2-2,2023-24_rs1.txt
+19.30,Spartak Subotica,FK Napredak,1,3,2,0-2,2023-24_rs1.txt
+,ki,Radnik Surdulica,0,0,X,,2023-24_rs1.txt
+19.35,Partizan,FK Javor,3,1,1,1-0,2023-24_rs1.txt
+,Crvena Zvezda,FK Novi Pazar,2,1,1,1-0,2023-24_rs1.txt
+,ani,Spartak Subotica,2,1,1,1-0,2023-24_rs1.txt
+20.00,IMT Beograd,Partizan,2,3,2,1-0,2023-24_rs1.txt
+,ki,Crvena Zvezda,2,1,1,1-0,2023-24_rs1.txt
+20.15,Spartak Subotica,Vojvodina,2,0,1,1-0,2023-24_rs1.txt
+,ki 1923,FK Javor,2,0,1,1-0,2023-24_rs1.txt
+17.00,FK Novi Pazar,FK Napredak,2,1,1,1-0,2023-24_rs1.txt
+,,IMT Beograd,1,0,1,1-0,2023-24_rs1.txt
+19.35,Partizan,Radnik Surdulica,3,2,1,0-2,2023-24_rs1.txt
+,evo,Partizan,1,2,2,1-1,2023-24_rs1.txt
+19.00,Vojvodina,FK Javor,2,1,1,0-1,2023-24_rs1.txt
+,ani,FK Novi Pazar,2,0,1,2-0,2023-24_rs1.txt
+,ki 1923,Radnik Surdulica,1,0,1,1-0,2023-24_rs1.txt
+18.00,Partizan,Crvena Zvezda,2,1,1,1-0,2023-24_rs1.txt
+15.00,FK Novi Pazar,Spartak Subotica,0,1,2,0-0,2023-24_rs1.txt
+,dovac,Vojvodina,3,2,1,2-1,2023-24_rs1.txt
+16.00,FK Javor,IMT Beograd,1,1,X,0-1,2023-24_rs1.txt
+,ka Topola,FK Napredak,1,1,X,1-0,2023-24_rs1.txt
+18.30,Vojvodina,IMT Beograd,2,1,1,1-1,2023-24_rs1.txt
+16.00,Radnik Surdulica,FK Javor,0,1,2,0-0,2023-24_rs1.txt
+17.00,FK Napredak,Partizan,0,2,2,0-1,2023-24_rs1.txt
+,dovac,FK Novi Pazar,1,0,1,0-0,2023-24_rs1.txt
+16.30,IMT Beograd,Radnik Surdulica,1,1,X,1-0,2023-24_rs1.txt
+,,FK Napredak,1,1,X,1-0,2023-24_rs1.txt
+16.00,FK Novi Pazar,Vojvodina,3,1,1,0-0,2023-24_rs1.txt
+,ki 1923,Crvena Zvezda,0,3,2,,2023-24_rs1.txt
+,ka Topola,Spartak Subotica,0,2,2,0-0,2023-24_rs1.txt
+20.00,Spartak Subotica,Partizan,0,3,2,0-0,2023-24_rs1.txt
+18.30,Crvena Zvezda,FK Javor,3,2,1,1-0,2023-24_rs1.txt
+18.00,Vojvodina,Radnik Surdulica,3,0,1,3-0,2023-24_rs1.txt
+,evo,IMT Beograd,3,1,1,1-1,2023-24_rs1.txt
+18.00,FK Javor,FK Napredak,0,2,2,0-2,2023-24_rs1.txt
+,,Spartak Subotica,1,1,X,0-1,2023-24_rs1.txt
+,IMT Beograd,Crvena Zvezda,1,2,2,0-2,2023-24_rs1.txt
+,ki,Vojvodina,2,2,X,1-2,2023-24_rs1.txt
+,ka Topola,FK Novi Pazar,1,1,X,0-0,2023-24_rs1.txt
+18.00,Crvena Zvezda,Radnik Surdulica,3,1,1,1-0,2023-24_rs1.txt
+15.00,FK Novi Pazar,Partizan,0,1,2,0-1,2023-24_rs1.txt
+18.30,FK Napredak,IMT Beograd,0,4,2,0-2,2023-24_rs1.txt
+,ani,FK Javor,1,0,1,1-0,2023-24_rs1.txt
+,,FK Novi Pazar,0,1,2,0-0,2023-24_rs1.txt
+16.00,Radnik Surdulica,FK Napredak,1,2,2,0-1,2023-24_rs1.txt
+,evo,Crvena Zvezda,1,2,2,1-0,2023-24_rs1.txt
+16.30,FK Javor,Spartak Subotica,2,0,1,1-0,2023-24_rs1.txt
+,ka Topola,Vojvodina,1,2,2,1-2,2023-24_rs1.txt
+17.00,IMT Beograd,Spartak Subotica,0,1,2,0-0,2023-24_rs1.txt
+16.00,Vojvodina,Crvena Zvezda,1,2,2,1-2,2023-24_rs1.txt
+,ki 1923,FK Novi Pazar,0,4,2,0-2,2023-24_rs1.txt
+,evo,FK Napredak,2,1,1,0-1,2023-24_rs1.txt
+16.30,FK Novi Pazar,FK Javor,2,0,1,0-0,2023-24_rs1.txt
+18.30,Spartak Subotica,Radnik Surdulica,1,0,1,1-0,2023-24_rs1.txt
+15.30,Partizan,Vojvodina,3,1,1,0-0,2023-24_rs1.txt
+,dovac,IMT Beograd,4,0,1,2-0,2023-24_rs1.txt
+15.00,FK Napredak,Crvena Zvezda,0,1,2,0-1,2023-24_rs1.txt
+,evo,Spartak Subotica,2,1,1,2-1,2023-24_rs1.txt
+17.00,IMT Beograd,FK Novi Pazar,1,0,1,0-0,2023-24_rs1.txt
+,,Partizan,2,1,1,0-0,2023-24_rs1.txt
+18.30,Vojvodina,FK Napredak,2,0,1,2-0,2023-24_rs1.txt
+16.00,FK Novi Pazar,Radnik Surdulica,2,1,1,2-0,2023-24_rs1.txt
+,,Vojvodina,0,1,2,0-0,2023-24_rs1.txt
+,ani,FK Napredak,1,2,2,0-1,2023-24_rs1.txt
+16.00,Spartak Subotica,Crvena Zvezda,1,4,2,0-1,2023-24_rs1.txt
+,ka Topola,FK Javor,3,0,1,2-0,2023-24_rs1.txt
+,ki,IMT Beograd,0,1,2,0-1,2023-24_rs1.txt
+,evo,FK Novi Pazar,2,2,X,2-1,2023-24_rs1.txt
+14.00,FK Javor,Partizan,0,1,2,0-0,2023-24_rs1.txt
+16.00,FK Napredak,Spartak Subotica,1,1,X,1-1,2023-24_rs1.txt
+14.00,FK Novi Pazar,Crvena Zvezda,0,3,2,0-2,2023-24_rs1.txt
+16.15,Partizan,IMT Beograd,5,2,1,2-0,2023-24_rs1.txt
+,ki 1923,Vojvodina,2,1,1,1-0,2023-24_rs1.txt
+,,FK Javor,1,0,1,1-0,2023-24_rs1.txt
+,ka Topola,Radnik Surdulica,1,0,1,0-0,2023-24_rs1.txt
+,dovac,FK Napredak,1,2,2,1-1,2023-24_rs1.txt
+13.45,Radnik Surdulica,Partizan,1,2,2,0-0,2023-24_rs1.txt
+16.30,FK Napredak,FK Novi Pazar,3,1,1,3-1,2023-24_rs1.txt
+18.30,Vojvodina,Spartak Subotica,0,0,X,,2023-24_rs1.txt
+,ki 1923,IMT Beograd,1,0,1,1-0,2023-24_rs1.txt
+,ki,FK Napredak,2,1,1,0-1,2023-24_rs1.txt
+14.00,FK Javor,Vojvodina,2,2,X,0-1,2023-24_rs1.txt
+,ka Topola,Crvena Zvezda,1,3,2,0-1,2023-24_rs1.txt
+,,Radnik Surdulica,0,3,2,0-0,2023-24_rs1.txt
+,dovac,Spartak Subotica,0,2,2,0-0,2023-24_rs1.txt
+14.00,IMT Beograd,FK Javor,2,1,1,1-0,2023-24_rs1.txt
+16.30,Spartak Subotica,FK Novi Pazar,0,1,2,0-0,2023-24_rs1.txt
+17.00,Crvena Zvezda,Partizan,2,2,X,1-1,2023-24_rs1.txt
+,ki,Spartak Subotica,2,2,X,1-0,2023-24_rs1.txt
+18.00,FK Javor,Radnik Surdulica,2,1,1,2-0,2023-24_rs1.txt
+20.00,IMT Beograd,Vojvodina,1,3,2,0-1,2023-24_rs1.txt
+16.55,Partizan,FK Napredak,0,1,2,0-1,2023-24_rs1.txt
+,,Crvena Zvezda,0,2,2,0-1,2023-24_rs1.txt
+14.00,Radnik Surdulica,IMT Beograd,0,1,2,0-0,2023-24_rs1.txt
+20.00,Vojvodina,FK Novi Pazar,1,0,1,0-0,2023-24_rs1.txt
+,ani,Partizan,1,1,X,1-0,2023-24_rs1.txt
+,evo,FK Javor,0,1,2,0-0,2023-24_rs1.txt
+,ki,FK Novi Pazar,2,0,1,0-0,2023-24_rs1.txt
+16.00,Radnik Surdulica,Vojvodina,0,4,2,0-3,2023-24_rs1.txt
+,ki 1923,FK Napredak,3,1,1,2-0,2023-24_rs1.txt
+16.00,FK Javor,Crvena Zvezda,0,3,2,0-2,2023-24_rs1.txt
+18.30,Partizan,Spartak Subotica,1,0,1,1-0,2023-24_rs1.txt
+,evo,Radnik Surdulica,3,1,1,3-1,2023-24_rs1.txt
+,dovac,Partizan,2,3,2,0-1,2023-24_rs1.txt
+19.00,Crvena Zvezda,IMT Beograd,2,0,1,1-0,2023-24_rs1.txt
+17.30,FK Napredak,FK Javor,3,0,1,0-0,2023-24_rs1.txt
+,evo,Vojvodina,0,3,2,0-2,2023-24_rs1.txt
+,ki 1923,Spartak Subotica,3,1,1,1-1,2023-24_rs1.txt
+16.00,Radnik Surdulica,Crvena Zvezda,0,2,2,0-0,2023-24_rs1.txt
+20.00,Partizan,FK Novi Pazar,2,0,1,1-0,2023-24_rs1.txt
+16.00,IMT Beograd,FK Napredak,1,1,X,0-1,2023-24_rs1.txt
+,FK Napredak,Radnik Surdulica,0,2,2,0-1,2023-24_rs1.txt
+,ki,Partizan,3,2,1,1-0,2023-24_rs1.txt
+18.00,Spartak Subotica,FK Javor,1,0,1,0-0,2023-24_rs1.txt
+,ani,IMT Beograd,1,2,2,1-0,2023-24_rs1.txt
+,ka Topola,Vojvodina,3,2,1,2-1,2023-24_rs1.txt
+18.00,Crvena Zvezda,Partizan,3,2,1,1-1,2023-24_rs1.txt
+,ani,FK Napredak,3,1,1,1-0,2023-24_rs1.txt
+17.30,Vojvodina,Crvena Zvezda,0,0,X,,2023-24_rs1.txt
+16.55,Partizan,Vojvodina,2,3,2,1-2,2023-24_rs1.txt
+,ki,FK Napredak,2,0,1,1-0,2023-24_rs1.txt
+,FK Napredak,Partizan,3,3,X,2-1,2023-24_rs1.txt
+,ani,Crvena Zvezda,0,1,2,0-0,2023-24_rs1.txt
+19.30,Vojvodina,FK Napredak,5,0,1,4-0,2023-24_rs1.txt
+,ki 1923,Vojvodina,0,0,X,,2023-24_rs1.txt
+19.00,FK Napredak,Crvena Zvezda,0,4,2,0-3,2023-24_rs1.txt
+,ki,Partizan,0,1,2,0-0,2023-24_rs1.txt
+,ka Topola,FK Napredak,6,0,1,2-0,2023-24_rs1.txt
+16.00,Spartak Subotica,FK Javor,1,0,1,0-0,2023-24_rs1.txt
+,,Radnik Surdulica,1,0,1,0-0,2023-24_rs1.txt
+,dovac,Spartak Subotica,0,0,X,,2023-24_rs1.txt
+16.00,Radnik Surdulica,FK Novi Pazar,1,4,2,0-2,2023-24_rs1.txt
+18.00,FK Javor,IMT Beograd,1,1,X,1-1,2023-24_rs1.txt
+16.00,IMT Beograd,Radnik Surdulica,5,2,1,3-2,2023-24_rs1.txt
+18.00,FK Novi Pazar,FK Javor,1,0,1,0-0,2023-24_rs1.txt
+14.00,IMT Beograd,FK Novi Pazar,0,1,2,0-1,2023-24_rs1.txt
+,Radnik Surdulica,FK Javor,0,1,2,0-0,2023-24_rs1.txt
+16.00,FK Novi Pazar,Spartak Subotica,0,1,2,0-0,2023-24_rs1.txt
+,,IMT Beograd,0,0,X,,2023-24_rs1.txt
+,evo,Radnik Surdulica,4,0,1,2-0,2023-24_rs1.txt
+,evo,FK Novi Pazar,3,1,1,1-1,2023-24_rs1.txt
+,,FK Javor,1,2,2,0-0,2023-24_rs1.txt
+18.00,Radnik Surdulica,Spartak Subotica,0,0,X,,2023-24_rs1.txt
+,Spartak Subotica,IMT Beograd,1,1,X,0-0,2023-24_rs1.txt
+,dovac,Radnik Surdulica,3,2,1,0-1,2023-24_rs1.txt
+21.00,FK Napredak,Partizan,0,1,2,0-0,2024-25_rs1.txt
+20.00,Crvena Zvezda,Jedinstvo Ub,4,0,1,2-0,2024-25_rs1.txt
+,ani,OFK Beograd,1,2,2,0-0,2024-25_rs1.txt
+17.30,FK Novi Pazar,Spartak Subotica,3,2,1,2-0,2024-25_rs1.txt
+,aci,Vojvodina,1,3,2,0-1,2024-25_rs1.txt
+,ka Topola,IMT Beograd,1,0,1,0-0,2024-25_rs1.txt
+20.00,Jedinstvo Ub,Partizan,0,4,2,0-2,2024-25_rs1.txt
+,evo,FK Napredak,1,1,X,1-0,2024-25_rs1.txt
+19.00,Vojvodina,FK Novi Pazar,0,1,2,0-1,2024-25_rs1.txt
+20.00,FK Napredak,IMT Beograd,1,1,X,0-0,2024-25_rs1.txt
+17.30,FK Novi Pazar,OFK Beograd,0,0,X,,2024-25_rs1.txt
+,ani,Jedinstvo Ub,2,1,1,0-1,2024-25_rs1.txt
+,aci,Crvena Zvezda,0,4,2,0-0,2024-25_rs1.txt
+,ka Topola,Spartak Subotica,0,0,X,,2024-25_rs1.txt
+,ki,Vojvodina,3,1,1,3-1,2024-25_rs1.txt
+,,FK Napredak,3,1,1,2-1,2024-25_rs1.txt
+,Crvena Zvezda,FK Novi Pazar,4,1,1,1-0,2024-25_rs1.txt
+20.00,IMT Beograd,Partizan,0,0,X,,2024-25_rs1.txt
+,ki,Crvena Zvezda,1,4,2,0-2,2024-25_rs1.txt
+,ka Topola,OFK Beograd,0,1,2,0-1,2024-25_rs1.txt
+,aci,Jedinstvo Ub,1,1,X,1-0,2024-25_rs1.txt
+,FK Napredak,Spartak Subotica,2,0,1,1-0,2024-25_rs1.txt
+,evo,IMT Beograd,2,1,1,1-1,2024-25_rs1.txt
+,ki 1923,Vojvodina,2,2,X,1-2,2024-25_rs1.txt
+,aci,FK Novi Pazar,2,1,1,1-0,2024-25_rs1.txt
+21.00,Jedinstvo Ub,IMT Beograd,2,3,2,1-3,2024-25_rs1.txt
+19.30,Vojvodina,FK Napredak,1,2,2,0-0,2024-25_rs1.txt
+16.30,Spartak Subotica,Partizan,2,1,1,1-1,2024-25_rs1.txt
+17.00,FK Novi Pazar,Jedinstvo Ub,3,1,1,1-1,2024-25_rs1.txt
+20.30,FK Napredak,OFK Beograd,1,3,2,1-0,2024-25_rs1.txt
+,evo,Spartak Subotica,2,0,1,1-0,2024-25_rs1.txt
+,ki 1923,Crvena Zvezda,0,1,2,0-0,2024-25_rs1.txt
+21.05,Partizan,Vojvodina,0,0,X,,2024-25_rs1.txt
+19.00,Spartak Subotica,IMT Beograd,2,0,1,1-0,2024-25_rs1.txt
+20.00,Crvena Zvezda,FK Napredak,2,0,1,1-0,2024-25_rs1.txt
+19.00,OFK Beograd,Partizan,3,2,1,1-2,2024-25_rs1.txt
+,ki,Jedinstvo Ub,2,1,1,0-1,2024-25_rs1.txt
+,ka Topola,FK Novi Pazar,5,2,1,0-0,2024-25_rs1.txt
+19.00,IMT Beograd,Vojvodina,0,3,2,0-0,2024-25_rs1.txt
+,,Spartak Subotica,3,2,1,2-0,2024-25_rs1.txt
+,evo,OFK Beograd,0,1,2,0-1,2024-25_rs1.txt
+19.00,Partizan,Crvena Zvezda,0,4,2,0-2,2024-25_rs1.txt
+17.00,OFK Beograd,IMT Beograd,4,3,1,2-1,2024-25_rs1.txt
+,aci,FK Napredak,0,0,X,,2024-25_rs1.txt
+,ani,Partizan,1,3,2,1-2,2024-25_rs1.txt
+19.00,Jedinstvo Ub,Spartak Subotica,2,0,1,0-0,2024-25_rs1.txt
+,,OFK Beograd,1,1,X,1-0,2024-25_rs1.txt
+14.00,FK Napredak,FK Novi Pazar,2,1,1,0-1,2024-25_rs1.txt
+19.00,IMT Beograd,Crvena Zvezda,1,3,2,0-1,2024-25_rs1.txt
+,Spartak Subotica,Vojvodina,0,4,2,0-2,2024-25_rs1.txt
+,ka Topola,Jedinstvo Ub,2,0,1,0-0,2024-25_rs1.txt
+,ki,FK Napredak,0,0,X,,2024-25_rs1.txt
+14.00,OFK Beograd,Spartak Subotica,1,1,X,1-0,2024-25_rs1.txt
+18.00,Jedinstvo Ub,Vojvodina,1,1,X,1-0,2024-25_rs1.txt
+,ani,IMT Beograd,1,0,1,1-0,2024-25_rs1.txt
+16.00,FK Novi Pazar,Partizan,3,4,2,2-2,2024-25_rs1.txt
+,ki 1923,Jedinstvo Ub,4,0,1,3-0,2024-25_rs1.txt
+,evo,FK Novi Pazar,0,1,2,0-1,2024-25_rs1.txt
+,Spartak Subotica,Crvena Zvezda,1,5,2,0-2,2024-25_rs1.txt
+20.00,Vojvodina,OFK Beograd,2,1,1,1-1,2024-25_rs1.txt
+,FK Novi Pazar,IMT Beograd,3,1,1,3-1,2024-25_rs1.txt
+17.00,Crvena Zvezda,Vojvodina,3,0,1,3-0,2024-25_rs1.txt
+,ki 1923,FK Napredak,1,0,1,0-0,2024-25_rs1.txt
+,ka Topola,Partizan,1,2,2,0-2,2024-25_rs1.txt
+,ani,Spartak Subotica,0,0,X,,2024-25_rs1.txt
+18.30,Jedinstvo Ub,OFK Beograd,0,1,2,0-0,2024-25_rs1.txt
+,,FK Novi Pazar,2,1,1,0-1,2024-25_rs1.txt
+13.00,FK Napredak,Jedinstvo Ub,2,1,1,1-1,2024-25_rs1.txt
+17.00,OFK Beograd,Crvena Zvezda,0,1,2,0-0,2024-25_rs1.txt
+15.00,Spartak Subotica,FK Novi Pazar,1,1,X,0-1,2024-25_rs1.txt
+16.00,Partizan,FK Napredak,0,0,X,,2024-25_rs1.txt
+16.00,Jedinstvo Ub,Crvena Zvezda,0,4,2,0-1,2024-25_rs1.txt
+14.30,FK Novi Pazar,Vojvodina,0,4,2,0-1,2024-25_rs1.txt
+,ki,Spartak Subotica,1,2,2,1-1,2024-25_rs1.txt
+,aci,OFK Beograd,2,0,1,1-0,2024-25_rs1.txt
+,ki 1923,IMT Beograd,1,3,2,1-2,2024-25_rs1.txt
+14.55,Partizan,Jedinstvo Ub,3,0,1,0-0,2024-25_rs1.txt
+,ani,Crvena Zvezda,0,2,2,0-1,2024-25_rs1.txt
+,evo,Partizan,0,1,2,0-0,2024-25_rs1.txt
+14.00,OFK Beograd,FK Novi Pazar,1,1,X,0-0,2024-25_rs1.txt
+16.00,IMT Beograd,FK Napredak,3,2,1,1-2,2024-25_rs1.txt
+,evo,Jedinstvo Ub,6,0,1,2-0,2024-25_rs1.txt
+,ki,OFK Beograd,0,1,2,0-0,2024-25_rs1.txt
+15.00,FK Novi Pazar,Crvena Zvezda,1,7,2,1-4,2024-25_rs1.txt
+,ka Topola,Vojvodina,1,3,2,0-2,2024-25_rs1.txt
+,ki 1923,Spartak Subotica,2,0,1,1-0,2024-25_rs1.txt
+19.00,Partizan,IMT Beograd,1,1,X,1-0,2024-25_rs1.txt
+,ani,FK Novi Pazar,1,3,2,0-2,2024-25_rs1.txt
+,,Partizan,0,1,2,0-1,2024-25_rs1.txt
+17.00,Spartak Subotica,FK Napredak,0,2,2,0-0,2024-25_rs1.txt
+17.00,FK Napredak,Vojvodina,1,1,X,1-0,2024-25_rs1.txt
+18.30,Partizan,Spartak Subotica,2,2,X,0-2,2024-25_rs1.txt
+14.00,IMT Beograd,Jedinstvo Ub,2,0,1,1-0,2024-25_rs1.txt
+,ka Topola,Crvena Zvezda,1,2,2,0-1,2024-25_rs1.txt
+,ki 1923,OFK Beograd,2,0,1,0-0,2024-25_rs1.txt
+18.30,Vojvodina,Partizan,0,0,X,,2024-25_rs1.txt
+14.00,Jedinstvo Ub,FK Novi Pazar,0,1,2,0-1,2024-25_rs1.txt
+16.00,OFK Beograd,FK Napredak,0,2,2,0-0,2024-25_rs1.txt
+,,IMT Beograd,3,0,1,0-0,2024-25_rs1.txt
+13.00,IMT Beograd,Spartak Subotica,1,2,2,1-0,2024-25_rs1.txt
+14.00,Partizan,OFK Beograd,4,1,1,3-0,2024-25_rs1.txt
+15.00,FK Napredak,Crvena Zvezda,0,4,2,0-2,2024-25_rs1.txt
+,,Jedinstvo Ub,1,4,2,0-2,2024-25_rs1.txt
+,ki,FK Novi Pazar,1,1,X,1-0,2024-25_rs1.txt
+,evo,Vojvodina,1,1,X,0-1,2024-25_rs1.txt
+13.00,Vojvodina,IMT Beograd,0,1,2,0-0,2024-25_rs1.txt
+16.00,Crvena Zvezda,Partizan,3,3,X,0-1,2024-25_rs1.txt
+,ani,FK Napredak,1,0,1,0-0,2024-25_rs1.txt
+13.00,Spartak Subotica,Jedinstvo Ub,1,0,1,0-0,2024-25_rs1.txt
+,evo,Crvena Zvezda,1,3,2,1-2,2024-25_rs1.txt
+,,Vojvodina,1,4,2,1-1,2024-25_rs1.txt
+19.30,IMT Beograd,OFK Beograd,1,1,X,0-0,2024-25_rs1.txt
+,ki 1923,FK Novi Pazar,2,0,1,0-0,2024-25_rs1.txt
+,aci,Partizan,1,4,2,0-2,2024-25_rs1.txt
+16.00,Crvena Zvezda,IMT Beograd,4,0,1,1-0,2024-25_rs1.txt
+17.00,Vojvodina,Spartak Subotica,1,3,2,0-1,2024-25_rs1.txt
+16.30,FK Novi Pazar,FK Napredak,2,0,1,2-0,2024-25_rs1.txt
+18.00,Spartak Subotica,OFK Beograd,0,1,2,0-1,2024-25_rs1.txt
+,,Crvena Zvezda,0,3,2,0-2,2024-25_rs1.txt
+18.05,Partizan,FK Novi Pazar,3,2,1,2-0,2024-25_rs1.txt
+17.00,Vojvodina,Jedinstvo Ub,1,0,1,0-0,2024-25_rs1.txt
+,aci,IMT Beograd,1,2,2,0-0,2024-25_rs1.txt
+,ka Topola,FK Napredak,4,2,1,2-2,2024-25_rs1.txt
+16.00,Crvena Zvezda,Spartak Subotica,2,1,1,0-0,2024-25_rs1.txt
+16.30,OFK Beograd,Vojvodina,3,1,1,2-1,2024-25_rs1.txt
+,ki,Partizan,0,1,2,0-1,2024-25_rs1.txt
+18.00,IMT Beograd,FK Novi Pazar,0,0,X,,2024-25_rs1.txt
+19.00,Vojvodina,Crvena Zvezda,3,5,2,2-1,2024-25_rs1.txt
+15.00,OFK Beograd,Jedinstvo Ub,3,0,1,0-0,2024-25_rs1.txt
+,aci,Spartak Subotica,2,0,1,1-0,2024-25_rs1.txt
+,ki 1923,Partizan,0,2,2,0-0,2024-25_rs1.txt
+17.00,Crvena Zvezda,OFK Beograd,3,1,1,3-0,2024-25_rs1.txt
+20.00,Jedinstvo Ub,FK Napredak,0,0,X,,2024-25_rs1.txt
+,ki,IMT Beograd,0,2,2,0-1,2024-25_rs1.txt
+,ani,Vojvodina,1,3,2,0-2,2024-25_rs1.txt
+16.00,Crvena Zvezda,Partizan,2,1,1,0-1,2024-25_rs1.txt
+,ka Topola,FK Novi Pazar,1,2,2,1-0,2024-25_rs1.txt
+16.00,FK Novi Pazar,Vojvodina,0,1,2,0-1,2024-25_rs1.txt
+18.00,Partizan,OFK Beograd,2,2,X,2-2,2024-25_rs1.txt
+,ki 1923,Crvena Zvezda,4,1,1,1-0,2024-25_rs1.txt
+18.00,Crvena Zvezda,OFK Beograd,5,2,1,3-0,2024-25_rs1.txt
+,ani,FK Novi Pazar,1,1,X,1-0,2024-25_rs1.txt
+18.30,OFK Beograd,Vojvodina,1,2,2,0-2,2024-25_rs1.txt
+,ka Topola,Crvena Zvezda,1,2,2,1-0,2024-25_rs1.txt
+17.00,FK Novi Pazar,Partizan,2,1,1,1-0,2024-25_rs1.txt
+,ki 1923,FK Novi Pazar,2,3,2,1-2,2024-25_rs1.txt
+19.00,Crvena Zvezda,Vojvodina,1,1,X,1-0,2024-25_rs1.txt
+18.30,FK Novi Pazar,Crvena Zvezda,3,3,X,1-1,2024-25_rs1.txt
+,ka Topola,OFK Beograd,3,2,1,2-2,2024-25_rs1.txt
+,ani,Partizan,0,4,2,0-2,2024-25_rs1.txt
+,Partizan,Vojvodina,3,2,1,2-0,2024-25_rs1.txt
+,OFK Beograd,FK Novi Pazar,2,3,2,1-1,2024-25_rs1.txt
+20.00,IMT Beograd,Spartak Subotica,2,4,2,2-2,2024-25_rs1.txt
+,evo,Jedinstvo Ub,3,1,1,2-1,2024-25_rs1.txt
+,,IMT Beograd,1,1,X,1-1,2024-25_rs1.txt
+17.00,Spartak Subotica,FK Napredak,2,1,1,1-0,2024-25_rs1.txt
+16.30,FK Napredak,Jedinstvo Ub,1,0,1,1-0,2024-25_rs1.txt
+,ki,Spartak Subotica,0,0,X,,2024-25_rs1.txt
+16.30,Jedinstvo Ub,Spartak Subotica,1,0,1,0-0,2024-25_rs1.txt
+,aci,Jedinstvo Ub,2,3,2,1-1,2024-25_rs1.txt
+,ki,IMT Beograd,1,1,X,0-1,2024-25_rs1.txt
+,evo,FK Napredak,1,1,X,0-0,2024-25_rs1.txt
+,evo,Spartak Subotica,3,0,1,1-0,2024-25_rs1.txt
+,Jedinstvo Ub,IMT Beograd,0,3,2,0-2,2024-25_rs1.txt
+,IMT Beograd,FK Napredak,2,1,1,0-1,2024-25_rs1.txt
+,,Jedinstvo Ub,3,1,1,2-0,2024-25_rs1.txt

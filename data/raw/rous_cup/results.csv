@@ -1,0 +1,12 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Scotland,England,1,0,1,Glasgow,Scotland,1985_rous_cup.txt
+England,Scotland,2,1,1,London,England,1986_rous_cup.txt
+England,Brazil,1,1,X,London,England,1987_rous_cup.txt
+Scotland,England,0,0,X,Glasgow,Scotland,1987_rous_cup.txt
+Scotland,Brazil,0,2,2,Glasgow,Scotland,1987_rous_cup.txt
+Scotland,Colombia,0,0,X,Glasgow,Scotland,1988_rous_cup.txt
+England,Scotland,1,0,1,London,England,1988_rous_cup.txt
+England,Colombia,1,1,X,London,England,1988_rous_cup.txt
+England,Chile,0,0,X,London,England,1989_rous_cup.txt
+Scotland,England,0,2,2,Glasgow,Scotland,1989_rous_cup.txt
+Scotland,Chile,2,0,1,Glasgow,Scotland,1989_rous_cup.txt

@@ -1,0 +1,47 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Italy,Spain,1,0,1,Colombes,France,1924_olympic_games.txt
+Czechoslovakia,Turkey,5,2,1,Paris,France,1924_olympic_games.txt
+Switzerland,Lithuania,9,0,1,Vincennes,France,1924_olympic_games.txt
+United States,Estonia,1,0,1,Vincennes,France,1924_olympic_games.txt
+Uruguay,Yugoslavia,7,0,1,Colombes,France,1924_olympic_games.txt
+Hungary,Poland,5,0,1,Paris,France,1924_olympic_games.txt
+France,Latvia,7,0,1,Paris,France,1924_olympic_games.txt
+Netherlands,Romania,6,0,1,Colombes,France,1924_olympic_games.txt
+Switzerland,Czechoslovakia,1,1,X,Paris,France,1924_olympic_games.txt
+Republic of Ireland,Bulgaria,1,0,1,Colombes,France,1924_olympic_games.txt
+Italy,Luxembourg,2,0,1,Paris,France,1924_olympic_games.txt
+Sweden,Belgium,8,1,1,Colombes,France,1924_olympic_games.txt
+Egypt,Hungary,3,0,1,Paris,France,1924_olympic_games.txt
+Uruguay,United States,3,0,1,Paris,France,1924_olympic_games.txt
+Switzerland,Czechoslovakia,1,0,1,Paris,France,1924_olympic_games.txt
+France,Uruguay,1,5,2,Colombes,France,1924_olympic_games.txt
+Sweden,Egypt,5,0,1,Paris,France,1924_olympic_games.txt
+Switzerland,Italy,2,1,1,Paris,France,1924_olympic_games.txt
+Netherlands,Republic of Ireland,2,1,1,Paris,France,1924_olympic_games.txt
+Switzerland,Sweden,2,1,1,Colombes,France,1924_olympic_games.txt
+Uruguay,Netherlands,2,1,1,Colombes,France,1924_olympic_games.txt
+Sweden,Netherlands,1,1,X,Colombes,France,1924_olympic_games.txt
+Sweden,Netherlands,3,1,1,Colombes,France,1924_olympic_games.txt
+Uruguay,Switzerland,3,0,1,Colombes,France,1924_olympic_games.txt
+Portugal,Chile,4,2,1,Amsterdam,Netherlands,1928_olympic_games.txt
+Belgium,Luxembourg,5,3,1,Amsterdam,Netherlands,1928_olympic_games.txt
+Germany,Switzerland,4,0,1,Amsterdam,Netherlands,1928_olympic_games.txt
+Egypt,Turkey,7,1,1,Amsterdam,Netherlands,1928_olympic_games.txt
+Italy,France,4,3,1,Amsterdam,Netherlands,1928_olympic_games.txt
+Portugal,Yugoslavia,2,1,1,Amsterdam,Netherlands,1928_olympic_games.txt
+Argentina,United States,11,2,1,Amsterdam,Netherlands,1928_olympic_games.txt
+Spain,Mexico,7,1,1,Amsterdam,Netherlands,1928_olympic_games.txt
+Netherlands,Uruguay,0,2,2,Amsterdam,Netherlands,1928_olympic_games.txt
+Italy,Spain,1,1,X,Amsterdam,Netherlands,1928_olympic_games.txt
+Argentina,Belgium,6,3,1,Amsterdam,Netherlands,1928_olympic_games.txt
+Uruguay,Germany,4,1,1,Amsterdam,Netherlands,1928_olympic_games.txt
+Italy,Spain,7,1,1,Amsterdam,Netherlands,1928_olympic_games.txt
+Egypt,Portugal,2,1,1,Amsterdam,Netherlands,1928_olympic_games.txt
+Netherlands,Belgium,3,1,1,Rotterdam,Netherlands,1928_olympic_games.txt
+Chile,Mexico,3,1,1,Arnhem,Netherlands,1928_olympic_games.txt
+Argentina,Egypt,6,0,1,Amsterdam,Netherlands,1928_olympic_games.txt
+Uruguay,Italy,3,2,1,Amsterdam,Netherlands,1928_olympic_games.txt
+Netherlands,Chile,2,2,X,Rotterdam,Netherlands,1928_olympic_games.txt
+Italy,Egypt,11,3,1,Amsterdam,Netherlands,1928_olympic_games.txt
+Uruguay,Argentina,1,1,X,Amsterdam,Netherlands,1928_olympic_games.txt
+Uruguay,Argentina,2,1,1,Amsterdam,Netherlands,1928_olympic_games.txt

@@ -1,0 +1,62 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Papua New Guinea,New Caledonia,1,0,1,Honiara,Solomon Islands,1994_oceania_nations_cup_qualification.txt
+Fiji,New Caledonia,3,1,1,Honiara,Solomon Islands,1994_oceania_nations_cup_qualification.txt
+Solomon Islands,Papua New Guinea,2,0,1,Honiara,Solomon Islands,1994_oceania_nations_cup_qualification.txt
+Vanuatu,New Caledonia,2,3,2,Honiara,Solomon Islands,1994_oceania_nations_cup_qualification.txt
+Papua New Guinea,Fiji,0,1,2,Honiara,Solomon Islands,1994_oceania_nations_cup_qualification.txt
+Solomon Islands,Vanuatu,4,0,1,Honiara,Solomon Islands,1994_oceania_nations_cup_qualification.txt
+Solomon Islands,Fiji,1,0,1,Honiara,Solomon Islands,1994_oceania_nations_cup_qualification.txt
+Vanuatu,Papua New Guinea,1,1,X,Honiara,Solomon Islands,1994_oceania_nations_cup_qualification.txt
+Solomon Islands,New Caledonia,3,1,1,Honiara,Solomon Islands,1994_oceania_nations_cup_qualification.txt
+Vanuatu,Fiji,2,4,2,Honiara,Solomon Islands,1994_oceania_nations_cup_qualification.txt
+Samoa,American Samoa,3,1,1,Apia,Western Samoa,1994_oceania_nations_cup_qualification.txt
+Tahiti,Tonga,1,0,1,Apia,Western Samoa,1994_oceania_nations_cup_qualification.txt
+Samoa,Tonga,2,2,X,Apia,Western Samoa,1994_oceania_nations_cup_qualification.txt
+Tahiti,American Samoa,2,1,1,Apia,Western Samoa,1994_oceania_nations_cup_qualification.txt
+Samoa,Tahiti,0,7,2,Apia,Western Samoa,1994_oceania_nations_cup_qualification.txt
+Tonga,American Samoa,2,1,1,Apia,Western Samoa,1994_oceania_nations_cup_qualification.txt
+Cook Islands,Samoa,2,1,1,Avarua,Cook Islands,1998_oceania_nations_cup_qualification.txt
+Tonga,American Samoa,3,0,1,Avarua,Cook Islands,1998_oceania_nations_cup_qualification.txt
+Cook Islands,American Samoa,4,3,1,Avarua,Cook Islands,1998_oceania_nations_cup_qualification.txt
+Tahiti,Tonga,5,0,1,Avarua,Cook Islands,1998_oceania_nations_cup_qualification.txt
+Cook Islands,Tonga,2,2,X,Avarua,Cook Islands,1998_oceania_nations_cup_qualification.txt
+Fiji,New Caledonia,3,0,1,Luganville,Vanuatu,1998_oceania_nations_cup_qualification.txt
+Solomon Islands,Papua New Guinea,3,1,1,Luganville,Vanuatu,1998_oceania_nations_cup_qualification.txt
+Tahiti,Samoa,5,1,1,Avarua,Cook Islands,1998_oceania_nations_cup_qualification.txt
+Papua New Guinea,New Caledonia,1,0,1,Luganville,Vanuatu,1998_oceania_nations_cup_qualification.txt
+Samoa,Tonga,2,0,1,Avarua,Cook Islands,1998_oceania_nations_cup_qualification.txt
+Tahiti,American Samoa,12,0,1,Avarua,Cook Islands,1998_oceania_nations_cup_qualification.txt
+Vanuatu,Fiji,1,2,2,Luganville,Vanuatu,1998_oceania_nations_cup_qualification.txt
+Cook Islands,Tahiti,0,5,2,Avarua,Cook Islands,1998_oceania_nations_cup_qualification.txt
+Samoa,American Samoa,4,0,1,Avarua,Cook Islands,1998_oceania_nations_cup_qualification.txt
+Solomon Islands,New Caledonia,3,2,1,Luganville,Vanuatu,1998_oceania_nations_cup_qualification.txt
+Vanuatu,Papua New Guinea,1,1,X,Luganville,Vanuatu,1998_oceania_nations_cup_qualification.txt
+Fiji,Papua New Guinea,2,0,1,Luganville,Vanuatu,1998_oceania_nations_cup_qualification.txt
+Vanuatu,Solomon Islands,3,1,1,Luganville,Vanuatu,1998_oceania_nations_cup_qualification.txt
+Fiji,Solomon Islands,1,1,X,Luganville,Vanuatu,1998_oceania_nations_cup_qualification.txt
+Vanuatu,New Caledonia,3,2,1,Luganville,Vanuatu,1998_oceania_nations_cup_qualification.txt
+Fiji,Papua New Guinea,5,0,1,Suva,Fiji,2000_oceania_nations_cup_qualification.txt
+New Caledonia,Solomon Islands,4,2,1,Suva,Fiji,2000_oceania_nations_cup_qualification.txt
+Fiji,New Caledonia,2,1,1,Suva,Fiji,2000_oceania_nations_cup_qualification.txt
+Solomon Islands,Vanuatu,2,1,1,Suva,Fiji,2000_oceania_nations_cup_qualification.txt
+Fiji,Vanuatu,4,1,1,Suva,Fiji,2000_oceania_nations_cup_qualification.txt
+New Caledonia,Papua New Guinea,6,1,1,Suva,Fiji,2000_oceania_nations_cup_qualification.txt
+Solomon Islands,Papua New Guinea,4,2,1,Suva,Fiji,2000_oceania_nations_cup_qualification.txt
+Vanuatu,New Caledonia,6,0,1,Suva,Fiji,2000_oceania_nations_cup_qualification.txt
+Fiji,Solomon Islands,2,2,X,Suva,Fiji,2000_oceania_nations_cup_qualification.txt
+Papua New Guinea,Vanuatu,1,4,2,Suva,Fiji,2000_oceania_nations_cup_qualification.txt
+Tonga,Cook Islands,1,2,2,Papeete,Tahiti,2000_oceania_nations_cup_qualification.txt
+American Samoa,Tonga,1,2,2,Papeete,Tahiti,2000_oceania_nations_cup_qualification.txt
+American Samoa,New Caledonia,0,10,2,Apia,Samoa,2002_oceania_nations_cup_qualification.txt
+Samoa,Tonga,2,0,1,Apia,Samoa,2002_oceania_nations_cup_qualification.txt
+American Samoa,Tonga,2,7,2,Apia,Samoa,2002_oceania_nations_cup_qualification.txt
+New Caledonia,Papua New Guinea,1,4,2,Apia,Samoa,2002_oceania_nations_cup_qualification.txt
+Papua New Guinea,Tonga,5,0,1,Apia,Samoa,2002_oceania_nations_cup_qualification.txt
+Samoa,American Samoa,5,0,1,Apia,Samoa,2002_oceania_nations_cup_qualification.txt
+New Caledonia,Tonga,9,0,1,Apia,Samoa,2002_oceania_nations_cup_qualification.txt
+Samoa,Papua New Guinea,1,4,2,Apia,Samoa,2002_oceania_nations_cup_qualification.txt
+American Samoa,Papua New Guinea,0,7,2,Apia,Samoa,2002_oceania_nations_cup_qualification.txt
+Samoa,New Caledonia,0,5,2,Apia,Samoa,2002_oceania_nations_cup_qualification.txt
+Tonga,Samoa,1,4,2,Nuku'alofa,Tonga,2024_oceania_nations_cup_qualification.txt
+Samoa,Cook Islands,1,0,1,Nuku'alofa,Tonga,2024_oceania_nations_cup_qualification.txt
+Tonga,Cook Islands,0,1,2,Nuku'alofa,Tonga,2024_oceania_nations_cup_qualification.txt

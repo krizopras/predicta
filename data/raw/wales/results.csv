@@ -1,0 +1,392 @@
+time,home_team,away_team,home_score,away_score,result,ht_score,source_file
+19.45,Haverfordwest County,Pontypridd United,0,0,X,,2023-24_wal1.txt
+,The New Saints,Connah's Quay Nomads,6,2,1,3-2,2023-24_wal1.txt
+14.30,Aberystwyth Town,Cardiff Metropolitan,0,1,2,0-1,2023-24_wal1.txt
+,Bala Town,Barry Town United,1,0,1,0-0,2023-24_wal1.txt
+,Newtown AFC,Penybont FC,1,3,2,0-2,2023-24_wal1.txt
+17.15,Colwyn Bay FC,Caernarfon Town,0,4,2,0-1,2023-24_wal1.txt
+19.45,Caernarfon Town,Newtown AFC,2,1,1,1-0,2023-24_wal1.txt
+,Connah's Quay Nomads,Aberystwyth Town,4,0,1,4-0,2023-24_wal1.txt
+,Penybont FC,Haverfordwest County,2,0,1,1-0,2023-24_wal1.txt
+14.30,Cardiff Metropolitan,Bala Town,0,0,X,,2023-24_wal1.txt
+,Pontypridd United,The New Saints,0,1,2,0-0,2023-24_wal1.txt
+17.15,Barry Town United,Colwyn Bay FC,1,1,X,1-0,2023-24_wal1.txt
+19.45,Bala Town,Connah's Quay Nomads,1,0,1,0-0,2023-24_wal1.txt
+,Pontypridd United,Penybont FC,0,0,X,,2023-24_wal1.txt
+14.30,Cardiff Metropolitan,Colwyn Bay FC,1,0,1,1-0,2023-24_wal1.txt
+,Haverfordwest County,Caernarfon Town,1,1,X,0-0,2023-24_wal1.txt
+,The New Saints,Barry Town United,2,2,X,0-0,2023-24_wal1.txt
+17.15,Newtown AFC,Aberystwyth Town,0,0,X,,2023-24_wal1.txt
+19.45,Barry Town United,Haverfordwest County,2,2,X,2-0,2023-24_wal1.txt
+,Caernarfon Town,Bala Town,1,1,X,0-0,2023-24_wal1.txt
+,Colwyn Bay FC,The New Saints,0,1,2,0-0,2023-24_wal1.txt
+,Connah's Quay Nomads,Newtown AFC,3,1,1,1-1,2023-24_wal1.txt
+,Penybont FC,Cardiff Metropolitan,0,0,X,,2023-24_wal1.txt
+20.00,Aberystwyth Town,Pontypridd United,0,1,2,0-0,2023-24_wal1.txt
+19.45,Caernarfon Town,Connah's Quay Nomads,0,4,2,0-1,2023-24_wal1.txt
+,Newtown AFC,Cardiff Metropolitan,2,1,1,2-1,2023-24_wal1.txt
+,The New Saints,Aberystwyth Town,6,0,1,2-0,2023-24_wal1.txt
+14.30,Bala Town,Penybont FC,2,1,1,2-0,2023-24_wal1.txt
+,Colwyn Bay FC,Haverfordwest County,1,2,2,0-0,2023-24_wal1.txt
+,Pontypridd United,Barry Town United,1,0,1,1-0,2023-24_wal1.txt
+19.45,Cardiff Metropolitan,Pontypridd United,2,0,1,0-0,2023-24_wal1.txt
+14.30,Aberystwyth Town,Caernarfon Town,2,4,2,2-2,2023-24_wal1.txt
+,Barry Town United,Connah's Quay Nomads,1,4,2,1-2,2023-24_wal1.txt
+,Haverfordwest County,Newtown AFC,0,4,2,0-2,2023-24_wal1.txt
+,Penybont FC,Colwyn Bay FC,0,1,2,0-0,2023-24_wal1.txt
+19.45,Bala Town,The New Saints,0,0,X,,2023-24_wal1.txt
+19.45,Colwyn Bay FC,Aberystwyth Town,3,1,1,2-1,2023-24_wal1.txt
+14.30,Connah's Quay Nomads,Cardiff Metropolitan,4,0,1,2-0,2023-24_wal1.txt
+,Newtown AFC,Barry Town United,2,0,1,1-0,2023-24_wal1.txt
+,Penybont FC,Caernarfon Town,3,2,1,1-1,2023-24_wal1.txt
+,Pontypridd United,Bala Town,0,0,X,,2023-24_wal1.txt
+,The New Saints,Haverfordwest County,5,1,1,1-0,2023-24_wal1.txt
+19.45,Cardiff Metropolitan,The New Saints,1,5,2,1-3,2023-24_wal1.txt
+20.00,Aberystwyth Town,Penybont FC,1,2,2,0-0,2023-24_wal1.txt
+14.30,Barry Town United,Bala Town,3,1,1,2-0,2023-24_wal1.txt
+,Colwyn Bay FC,Newtown AFC,2,4,2,1-3,2023-24_wal1.txt
+,Haverfordwest County,Connah's Quay Nomads,1,3,2,0-1,2023-24_wal1.txt
+17.15,Caernarfon Town,Pontypridd United,1,0,1,0-0,2023-24_wal1.txt
+19.45,Caernarfon Town,The New Saints,1,3,2,1-0,2023-24_wal1.txt
+,Cardiff Metropolitan,Haverfordwest County,1,1,X,0-0,2023-24_wal1.txt
+,Connah's Quay Nomads,Colwyn Bay FC,2,1,1,0-0,2023-24_wal1.txt
+,Penybont FC,Barry Town United,1,0,1,1-0,2023-24_wal1.txt
+,Pontypridd United,Newtown AFC,0,1,2,0-0,2023-24_wal1.txt
+19.45,Bala Town,Aberystwyth Town,0,1,2,0-1,2023-24_wal1.txt
+14.30,Barry Town United,Caernarfon Town,0,3,2,0-2,2023-24_wal1.txt
+,Colwyn Bay FC,Cardiff Metropolitan,2,2,X,1-1,2023-24_wal1.txt
+,Haverfordwest County,Aberystwyth Town,3,0,1,0-0,2023-24_wal1.txt
+,Newtown AFC,Bala Town,1,0,1,0-0,2023-24_wal1.txt
+,The New Saints,Pontypridd United,4,0,1,3-0,2023-24_wal1.txt
+17.15,Connah's Quay Nomads,Penybont FC,4,2,1,2-0,2023-24_wal1.txt
+19.45,Cardiff Metropolitan,Barry Town United,2,1,1,0-0,2023-24_wal1.txt
+20.00,Aberystwyth Town,Connah's Quay Nomads,1,1,X,1-1,2023-24_wal1.txt
+14.30,Bala Town,Colwyn Bay FC,2,1,1,1-1,2023-24_wal1.txt
+,Newtown AFC,Caernarfon Town,4,0,1,2-0,2023-24_wal1.txt
+,Penybont FC,The New Saints,1,4,2,1-0,2023-24_wal1.txt
+17.15,Pontypridd United,Haverfordwest County,2,0,1,1-0,2023-24_wal1.txt
+19.45,Barry Town United,Pontypridd United,2,0,1,2-0,2023-24_wal1.txt
+,Caernarfon Town,Aberystwyth Town,3,0,1,0-0,2023-24_wal1.txt
+,Cardiff Metropolitan,Newtown AFC,2,1,1,0-0,2023-24_wal1.txt
+,Haverfordwest County,Penybont FC,3,2,1,3-1,2023-24_wal1.txt
+19.45,Connah's Quay Nomads,Bala Town,1,1,X,0-1,2023-24_wal1.txt
+19.45,The New Saints,Colwyn Bay FC,6,1,1,1-1,2023-24_wal1.txt
+14.30,Bala Town,Haverfordwest County,2,0,1,1-0,2023-24_wal1.txt
+,Barry Town United,The New Saints,2,6,2,0-1,2023-24_wal1.txt
+,Caernarfon Town,Cardiff Metropolitan,5,1,1,2-0,2023-24_wal1.txt
+,Pontypridd United,Connah's Quay Nomads,0,3,2,0-3,2023-24_wal1.txt
+20.00,Aberystwyth Town,Newtown AFC,0,1,2,0-0,2023-24_wal1.txt
+14.30,Colwyn Bay FC,Penybont FC,2,1,1,0-1,2023-24_wal1.txt
+19.45,Connah's Quay Nomads,Caernarfon Town,6,1,1,5-0,2023-24_wal1.txt
+,Penybont FC,Aberystwyth Town,0,2,2,0-2,2023-24_wal1.txt
+14.30,Colwyn Bay FC,Barry Town United,0,1,2,0-0,2023-24_wal1.txt
+,Newtown AFC,Haverfordwest County,1,1,X,1-1,2023-24_wal1.txt
+,Pontypridd United,Cardiff Metropolitan,1,3,2,1-1,2023-24_wal1.txt
+17.15,The New Saints,Bala Town,2,0,1,2-0,2023-24_wal1.txt
+14.30,Bala Town,Pontypridd United,0,0,X,,2023-24_wal1.txt
+,Barry Town United,Aberystwyth Town,0,1,2,0-0,2023-24_wal1.txt
+,Caernarfon Town,Penybont FC,2,4,2,0-2,2023-24_wal1.txt
+,Cardiff Metropolitan,Connah's Quay Nomads,3,1,1,2-0,2023-24_wal1.txt
+,Haverfordwest County,Colwyn Bay FC,5,0,1,3-0,2023-24_wal1.txt
+,Newtown AFC,The New Saints,0,2,2,0-0,2023-24_wal1.txt
+20.00,Aberystwyth Town,Bala Town,2,3,2,1-1,2023-24_wal1.txt
+14.30,Caernarfon Town,Barry Town United,2,3,2,2-1,2023-24_wal1.txt
+,Connah's Quay Nomads,Haverfordwest County,1,2,2,1-2,2023-24_wal1.txt
+,Penybont FC,Newtown AFC,1,1,X,0-0,2023-24_wal1.txt
+,Pontypridd United,Colwyn Bay FC,0,3,2,0-1,2023-24_wal1.txt
+14.30,The New Saints,Cardiff Metropolitan,8,0,1,4-0,2023-24_wal1.txt
+19.45,Barry Town United,Penybont FC,1,1,X,1-0,2023-24_wal1.txt
+,Newtown AFC,Pontypridd United,3,1,1,1-0,2023-24_wal1.txt
+,Bala Town,Caernarfon Town,1,1,X,1-1,2023-24_wal1.txt
+,Haverfordwest County,Cardiff Metropolitan,1,1,X,1-1,2023-24_wal1.txt
+20.00,Aberystwyth Town,The New Saints,1,3,2,1-1,2023-24_wal1.txt
+19.45,Colwyn Bay FC,Connah's Quay Nomads,2,3,2,1-1,2023-24_wal1.txt
+14.30,Cardiff Metropolitan,Aberystwyth Town,4,2,1,1-0,2023-24_wal1.txt
+,Connah's Quay Nomads,Barry Town United,7,0,1,2-0,2023-24_wal1.txt
+,Newtown AFC,Colwyn Bay FC,4,2,1,1-2,2023-24_wal1.txt
+,Pontypridd United,Caernarfon Town,1,2,2,1-0,2023-24_wal1.txt
+17.15,Penybont FC,Bala Town,0,2,2,0-2,2023-24_wal1.txt
+14.30,Haverfordwest County,The New Saints,0,1,2,0-0,2023-24_wal1.txt
+14.30,Caernarfon Town,Haverfordwest County,0,1,2,0-0,2023-24_wal1.txt
+,Connah's Quay Nomads,Pontypridd United,3,1,1,3-0,2023-24_wal1.txt
+,The New Saints,Penybont FC,3,0,1,1-0,2023-24_wal1.txt
+17.15,Bala Town,Cardiff Metropolitan,0,1,2,0-1,2023-24_wal1.txt
+20.00,Aberystwyth Town,Colwyn Bay FC,1,0,1,0-0,2023-24_wal1.txt
+14.30,Barry Town United,Newtown AFC,4,0,1,2-0,2023-24_wal1.txt
+14.30,Cardiff Metropolitan,Penybont FC,0,3,2,0-2,2023-24_wal1.txt
+,Colwyn Bay FC,Bala Town,2,3,2,0-2,2023-24_wal1.txt
+,Haverfordwest County,Barry Town United,2,0,1,0-0,2023-24_wal1.txt
+,Newtown AFC,Connah's Quay Nomads,1,2,2,0-0,2023-24_wal1.txt
+,Pontypridd United,Aberystwyth Town,2,0,1,1-0,2023-24_wal1.txt
+,The New Saints,Caernarfon Town,2,1,1,0-1,2023-24_wal1.txt
+14.30,Aberystwyth Town,Haverfordwest County,1,1,X,1-1,2023-24_wal1.txt
+,Bala Town,Newtown AFC,2,1,1,0-0,2023-24_wal1.txt
+,Barry Town United,Cardiff Metropolitan,0,0,X,,2023-24_wal1.txt
+12.30,Caernarfon Town,Colwyn Bay FC,2,1,1,0-0,2023-24_wal1.txt
+14.30,Connah's Quay Nomads,The New Saints,0,4,2,0-3,2023-24_wal1.txt
+,Penybont FC,Pontypridd United,1,0,1,1-0,2023-24_wal1.txt
+17.15,Aberystwyth Town,Barry Town United,2,4,2,1-0,2023-24_wal1.txt
+,Cardiff Metropolitan,Caernarfon Town,2,2,X,0-1,2023-24_wal1.txt
+,Colwyn Bay FC,Pontypridd United,2,3,2,0-1,2023-24_wal1.txt
+,Haverfordwest County,Bala Town,2,3,2,1-0,2023-24_wal1.txt
+,Penybont FC,Connah's Quay Nomads,0,1,2,0-0,2023-24_wal1.txt
+,The New Saints,Newtown AFC,3,1,1,1-0,2023-24_wal1.txt
+19.45,Connah's Quay Nomads,Caernarfon Town,1,1,X,0-1,2023-24_wal1.txt
+14.30,Bala Town,Cardiff Metropolitan,1,1,X,0-1,2023-24_wal1.txt
+19.45,The New Saints,Newtown AFC,3,0,1,2-0,2023-24_wal1.txt
+19.45,Bala Town,The New Saints,0,1,2,0-1,2023-24_wal1.txt
+14.30,Cardiff Metropolitan,Caernarfon Town,2,2,X,1-1,2023-24_wal1.txt
+,Newtown AFC,Connah's Quay Nomads,2,3,2,1-2,2023-24_wal1.txt
+19.45,Caernarfon Town,The New Saints,1,8,2,1-4,2023-24_wal1.txt
+14.30,Newtown AFC,Bala Town,1,5,2,1-4,2023-24_wal1.txt
+17.15,Connah's Quay Nomads,Cardiff Metropolitan,2,1,1,1-0,2023-24_wal1.txt
+19.45,Bala Town,Connah's Quay Nomads,1,0,1,0-0,2023-24_wal1.txt
+,Caernarfon Town,Newtown AFC,1,0,1,1-0,2023-24_wal1.txt
+12.45,The New Saints,Cardiff Metropolitan,4,0,1,3-0,2023-24_wal1.txt
+19.45,Bala Town,Caernarfon Town,1,1,X,1-0,2023-24_wal1.txt
+,Connah's Quay Nomads,The New Saints,1,5,2,0-4,2023-24_wal1.txt
+14.30,Newtown AFC,Cardiff Metropolitan,2,0,1,0-0,2023-24_wal1.txt
+19.45,Caernarfon Town,Connah's Quay Nomads,2,1,1,0-0,2023-24_wal1.txt
+14.30,Cardiff Metropolitan,Bala Town,0,1,2,0-0,2023-24_wal1.txt
+,Newtown AFC,The New Saints,0,1,2,0-1,2023-24_wal1.txt
+14.30,Caernarfon Town,Cardiff Metropolitan,1,2,2,0-2,2023-24_wal1.txt
+12.30,Connah's Quay Nomads,Newtown AFC,0,0,X,,2023-24_wal1.txt
+19.45,The New Saints,Bala Town,4,1,1,3-1,2023-24_wal1.txt
+19.45,Bala Town,Newtown AFC,1,1,X,1-1,2023-24_wal1.txt
+,The New Saints,Caernarfon Town,7,1,1,4-0,2023-24_wal1.txt
+14.30,Cardiff Metropolitan,Connah's Quay Nomads,0,3,2,0-2,2023-24_wal1.txt
+19.45,Connah's Quay Nomads,Bala Town,0,0,X,,2023-24_wal1.txt
+14.30,Cardiff Metropolitan,The New Saints,0,5,2,0-1,2023-24_wal1.txt
+,Newtown AFC,Caernarfon Town,5,0,1,1-0,2023-24_wal1.txt
+14.15,Caernarfon Town,Bala Town,2,2,X,1-1,2023-24_wal1.txt
+,Cardiff Metropolitan,Newtown AFC,1,3,2,0-2,2023-24_wal1.txt
+,The New Saints,Connah's Quay Nomads,2,0,1,0-0,2023-24_wal1.txt
+19.45,Caernarfon Town,Cardiff Metropolitan,2,0,1,0-0,2023-24_wal1.txt
+12.20,Newtown AFC,Penybont FC,0,5,2,0-3,2023-24_wal1.txt
+14.45,Caernarfon Town,Penybont FC,3,1,1,3-0,2023-24_wal1.txt
+20.00,Aberystwyth Town,Haverfordwest County,1,0,1,1-0,2023-24_wal1.txt
+13.00,Barry Town United,Pontypridd United,0,3,2,0-1,2023-24_wal1.txt
+14.30,Colwyn Bay FC,Penybont FC,1,2,2,0-1,2023-24_wal1.txt
+19.45,Haverfordwest County,Pontypridd United,1,1,X,1-1,2023-24_wal1.txt
+20.00,Aberystwyth Town,Colwyn Bay FC,0,1,2,0-0,2023-24_wal1.txt
+12.45,Penybont FC,Barry Town United,2,2,X,0-1,2023-24_wal1.txt
+19.45,Barry Town United,Haverfordwest County,1,1,X,0-0,2023-24_wal1.txt
+,Penybont FC,Aberystwyth Town,1,1,X,0-0,2023-24_wal1.txt
+12.15,Pontypridd United,Colwyn Bay FC,4,0,1,2-0,2023-24_wal1.txt
+12.30,Colwyn Bay FC,Haverfordwest County,0,0,X,,2023-24_wal1.txt
+14.30,Aberystwyth Town,Barry Town United,1,1,X,1-1,2023-24_wal1.txt
+,Penybont FC,Pontypridd United,0,1,2,0-0,2023-24_wal1.txt
+19.45,Haverfordwest County,Penybont FC,0,1,2,0-1,2023-24_wal1.txt
+14.30,Barry Town United,Colwyn Bay FC,1,1,X,0-0,2023-24_wal1.txt
+19.45,Pontypridd United,Aberystwyth Town,0,0,X,,2023-24_wal1.txt
+19.45,Haverfordwest County,Aberystwyth Town,2,0,1,1-0,2023-24_wal1.txt
+14.30,Penybont FC,Colwyn Bay FC,5,0,1,1-0,2023-24_wal1.txt
+17.15,Pontypridd United,Barry Town United,1,1,X,1-1,2023-24_wal1.txt
+12.30,Barry Town United,Penybont FC,0,0,X,,2023-24_wal1.txt
+,Colwyn Bay FC,Aberystwyth Town,1,2,2,0-1,2023-24_wal1.txt
+,Pontypridd United,Haverfordwest County,0,1,2,0-0,2023-24_wal1.txt
+19.45,Haverfordwest County,Barry Town United,2,1,1,0-0,2023-24_wal1.txt
+14.30,Colwyn Bay FC,Pontypridd United,1,0,1,1-0,2023-24_wal1.txt
+17.15,Aberystwyth Town,Penybont FC,0,3,2,0-1,2023-24_wal1.txt
+12.45,Haverfordwest County,Colwyn Bay FC,3,1,1,2-0,2023-24_wal1.txt
+14.30,Barry Town United,Aberystwyth Town,2,1,1,1-0,2023-24_wal1.txt
+,Pontypridd United,Penybont FC,0,3,2,0-2,2023-24_wal1.txt
+14.15,Aberystwyth Town,Pontypridd United,3,0,1,1-0,2023-24_wal1.txt
+,Colwyn Bay FC,Barry Town United,1,0,1,0-0,2023-24_wal1.txt
+,Penybont FC,Haverfordwest County,1,0,1,1-0,2023-24_wal1.txt
+19.45,Newtown AFC,Aberystwyth Town,4,1,1,0-1,2024-25_wal1.txt
+14.30,Barry Town United,Bala Town,1,1,X,1-0,2024-25_wal1.txt
+,Flint Town United,Cardiff Metropolitan,1,2,2,1-1,2024-25_wal1.txt
+14.30,Connah's Quay Nomads,Haverfordwest County,0,1,2,0-0,2024-25_wal1.txt
+17.10,Briton Ferry Llansawel AFC,Penybont FC,0,2,2,0-2,2024-25_wal1.txt
+19.45,The New Saints,Caernarfon Town,1,2,2,1-1,2024-25_wal1.txt
+19.45,Bala Town,Briton Ferry Llansawel AFC,2,0,1,1-0,2024-25_wal1.txt
+,Cardiff Metropolitan,Barry Town United,1,1,X,1-0,2024-25_wal1.txt
+,Flint Town United,The New Saints,1,4,2,0-2,2024-25_wal1.txt
+,Penybont FC,Newtown AFC,0,0,X,,2024-25_wal1.txt
+20.00,Aberystwyth Town,Connah's Quay Nomads,1,1,X,0-0,2024-25_wal1.txt
+17.15,Caernarfon Town,Haverfordwest County,1,2,2,0-0,2024-25_wal1.txt
+19.45,Bala Town,Flint Town United,2,0,1,1-0,2024-25_wal1.txt
+,Briton Ferry Llansawel AFC,Cardiff Metropolitan,1,5,2,0-2,2024-25_wal1.txt
+,Haverfordwest County,Penybont FC,0,0,X,,2024-25_wal1.txt
+,Newtown AFC,Caernarfon Town,0,4,2,0-1,2024-25_wal1.txt
+20.00,Aberystwyth Town,Barry Town United,1,0,1,1-0,2024-25_wal1.txt
+19.45,Connah's Quay Nomads,The New Saints,1,2,2,0-0,2024-25_wal1.txt
+14.30,Caernarfon Town,Bala Town,0,0,X,,2024-25_wal1.txt
+,Cardiff Metropolitan,Haverfordwest County,0,0,X,,2024-25_wal1.txt
+,Flint Town United,Connah's Quay Nomads,0,1,2,0-0,2024-25_wal1.txt
+,Penybont FC,Aberystwyth Town,5,1,1,2-1,2024-25_wal1.txt
+,Barry Town United,Newtown AFC,1,2,2,1-1,2024-25_wal1.txt
+14.30,The New Saints,Briton Ferry Llansawel AFC,5,2,1,3-1,2024-25_wal1.txt
+19.45,Haverfordwest County,Newtown AFC,3,0,1,1-0,2024-25_wal1.txt
+14.30,Bala Town,Penybont FC,1,2,2,1-0,2024-25_wal1.txt
+,Barry Town United,Flint Town United,3,2,1,0-2,2024-25_wal1.txt
+,Briton Ferry Llansawel AFC,Connah's Quay Nomads,1,5,2,1-1,2024-25_wal1.txt
+,Caernarfon Town,Cardiff Metropolitan,1,2,2,1-2,2024-25_wal1.txt
+19.45,The New Saints,Aberystwyth Town,2,0,1,0-0,2024-25_wal1.txt
+14.30,Bala Town,Cardiff Metropolitan,0,1,2,0-1,2024-25_wal1.txt
+,Connah's Quay Nomads,Barry Town United,1,2,2,1-0,2024-25_wal1.txt
+,Haverfordwest County,The New Saints,0,1,2,0-1,2024-25_wal1.txt
+,Newtown AFC,Briton Ferry Llansawel AFC,1,0,1,0-0,2024-25_wal1.txt
+,Penybont FC,Caernarfon Town,2,0,1,1-0,2024-25_wal1.txt
+17.15,Aberystwyth Town,Flint Town United,0,2,2,0-1,2024-25_wal1.txt
+19.45,Bala Town,Aberystwyth Town,3,0,1,3-0,2024-25_wal1.txt
+,Newtown AFC,Cardiff Metropolitan,2,1,1,1-0,2024-25_wal1.txt
+14.30,Caernarfon Town,Briton Ferry Llansawel AFC,3,2,1,2-1,2024-25_wal1.txt
+,Flint Town United,Haverfordwest County,1,0,1,0-0,2024-25_wal1.txt
+,The New Saints,Barry Town United,4,0,1,1-0,2024-25_wal1.txt
+14.30,Connah's Quay Nomads,Penybont FC,0,1,2,0-0,2024-25_wal1.txt
+19.45,Bala Town,Newtown AFC,2,2,X,1-2,2024-25_wal1.txt
+,Penybont FC,The New Saints,2,1,1,1-1,2024-25_wal1.txt
+20.00,Aberystwyth Town,Haverfordwest County,0,3,2,0-0,2024-25_wal1.txt
+14.30,Barry Town United,Caernarfon Town,1,1,X,1-1,2024-25_wal1.txt
+,Briton Ferry Llansawel AFC,Flint Town United,1,1,X,0-0,2024-25_wal1.txt
+,Cardiff Metropolitan,Connah's Quay Nomads,2,1,1,1-1,2024-25_wal1.txt
+19.45,Connah's Quay Nomads,Newtown AFC,1,1,X,1-1,2024-25_wal1.txt
+,Haverfordwest County,Barry Town United,1,1,X,1-1,2024-25_wal1.txt
+,Penybont FC,Briton Ferry Llansawel AFC,0,1,2,0-0,2024-25_wal1.txt
+,The New Saints,Bala Town,2,3,2,1-1,2024-25_wal1.txt
+20.00,Aberystwyth Town,Cardiff Metropolitan,1,2,2,0-1,2024-25_wal1.txt
+19.45,Flint Town United,Caernarfon Town,1,2,2,1-1,2024-25_wal1.txt
+19.45,Barry Town United,Aberystwyth Town,1,0,1,0-0,2024-25_wal1.txt
+,Newtown AFC,The New Saints,1,6,2,0-2,2024-25_wal1.txt
+,Haverfordwest County,Cardiff Metropolitan,1,0,1,0-0,2024-25_wal1.txt
+14.30,Briton Ferry Llansawel AFC,Bala Town,2,2,X,2-1,2024-25_wal1.txt
+,Flint Town United,Penybont FC,0,1,2,0-0,2024-25_wal1.txt
+17.15,Caernarfon Town,Connah's Quay Nomads,3,1,1,2-0,2024-25_wal1.txt
+19.45,Bala Town,Haverfordwest County,0,2,2,0-0,2024-25_wal1.txt
+,Connah's Quay Nomads,Aberystwyth Town,3,0,1,2-0,2024-25_wal1.txt
+,Newtown AFC,Flint Town United,2,4,2,1-2,2024-25_wal1.txt
+,Penybont FC,Barry Town United,4,1,1,0-1,2024-25_wal1.txt
+14.30,Cardiff Metropolitan,Caernarfon Town,1,2,2,1-1,2024-25_wal1.txt
+19.45,Briton Ferry Llansawel AFC,The New Saints,3,1,1,3-1,2024-25_wal1.txt
+14.30,Aberystwyth Town,Penybont FC,0,3,2,0-2,2024-25_wal1.txt
+,Barry Town United,Briton Ferry Llansawel AFC,3,1,1,2-1,2024-25_wal1.txt
+,Caernarfon Town,Newtown AFC,1,2,2,0-1,2024-25_wal1.txt
+,Flint Town United,Bala Town,2,2,X,1-0,2024-25_wal1.txt
+,Haverfordwest County,Connah's Quay Nomads,0,0,X,,2024-25_wal1.txt
+,The New Saints,Cardiff Metropolitan,3,0,1,2-0,2024-25_wal1.txt
+19.45,Bala Town,Connah's Quay Nomads,0,0,X,,2024-25_wal1.txt
+,Briton Ferry Llansawel AFC,Haverfordwest County,1,2,2,1-1,2024-25_wal1.txt
+,Caernarfon Town,Aberystwyth Town,1,4,2,0-3,2024-25_wal1.txt
+,Cardiff Metropolitan,Penybont FC,1,1,X,0-1,2024-25_wal1.txt
+,Newtown AFC,Barry Town United,2,4,2,2-0,2024-25_wal1.txt
+,The New Saints,Flint Town United,5,0,1,3-0,2024-25_wal1.txt
+19.45,Cardiff Metropolitan,Newtown AFC,2,1,1,1-1,2024-25_wal1.txt
+14.30,Flint Town United,Barry Town United,1,2,2,0-2,2024-25_wal1.txt
+,Penybont FC,Bala Town,1,1,X,1-0,2024-25_wal1.txt
+17.15,Haverfordwest County,Caernarfon Town,0,0,X,,2024-25_wal1.txt
+13.00,Aberystwyth Town,The New Saints,2,4,2,1-3,2024-25_wal1.txt
+14.30,Connah's Quay Nomads,Briton Ferry Llansawel AFC,2,1,1,2-0,2024-25_wal1.txt
+13.00,Barry Town United,The New Saints,1,4,2,1-3,2024-25_wal1.txt
+14.30,Caernarfon Town,Penybont FC,1,5,2,0-2,2024-25_wal1.txt
+,Connah's Quay Nomads,Cardiff Metropolitan,1,0,1,0-0,2024-25_wal1.txt
+,Haverfordwest County,Flint Town United,4,1,1,2-1,2024-25_wal1.txt
+,Newtown AFC,Bala Town,0,0,X,,2024-25_wal1.txt
+17.15,Briton Ferry Llansawel AFC,Aberystwyth Town,4,0,1,2-0,2024-25_wal1.txt
+19.45,Aberystwyth Town,Newtown AFC,3,1,1,2-0,2024-25_wal1.txt
+14.30,Barry Town United,Connah's Quay Nomads,3,2,1,1-0,2024-25_wal1.txt
+,Briton Ferry Llansawel AFC,Caernarfon Town,0,1,2,0-1,2024-25_wal1.txt
+,Penybont FC,Flint Town United,3,1,1,3-0,2024-25_wal1.txt
+17.15,Cardiff Metropolitan,Bala Town,3,3,X,1-1,2024-25_wal1.txt
+14.30,The New Saints,Haverfordwest County,2,1,1,1-1,2024-25_wal1.txt
+14.30,Cardiff Metropolitan,Aberystwyth Town,3,0,1,0-0,2024-25_wal1.txt
+,Flint Town United,Briton Ferry Llansawel AFC,2,1,1,0-0,2024-25_wal1.txt
+,Haverfordwest County,Bala Town,0,0,X,,2024-25_wal1.txt
+,The New Saints,Penybont FC,3,2,1,0-2,2024-25_wal1.txt
+14.30,Newtown AFC,Connah's Quay Nomads,0,3,2,0-1,2024-25_wal1.txt
+14.30,Caernarfon Town,Barry Town United,3,2,1,2-1,2024-25_wal1.txt
+19.45,Briton Ferry Llansawel AFC,Newtown AFC,2,1,1,0-0,2024-25_wal1.txt
+,Connah's Quay Nomads,Caernarfon Town,1,1,X,1-0,2024-25_wal1.txt
+,Penybont FC,Haverfordwest County,1,0,1,0-0,2024-25_wal1.txt
+19.45,Bala Town,The New Saints,1,0,1,1-0,2024-25_wal1.txt
+,Flint Town United,Aberystwyth Town,3,0,1,2-0,2024-25_wal1.txt
+19.45,Barry Town United,Cardiff Metropolitan,2,1,1,0-1,2024-25_wal1.txt
+14.30,Cardiff Metropolitan,Flint Town United,2,0,1,0-0,2024-25_wal1.txt
+14.30,Aberystwyth Town,Caernarfon Town,3,1,1,1-0,2024-25_wal1.txt
+,Bala Town,Barry Town United,3,1,1,1-0,2024-25_wal1.txt
+14.30,Haverfordwest County,Briton Ferry Llansawel AFC,5,1,1,1-1,2024-25_wal1.txt
+,The New Saints,Newtown AFC,2,1,1,0-1,2024-25_wal1.txt
+,Penybont FC,Connah's Quay Nomads,1,0,1,0-0,2024-25_wal1.txt
+12.30,Barry Town United,Penybont FC,1,2,2,1-0,2024-25_wal1.txt
+,Cardiff Metropolitan,Briton Ferry Llansawel AFC,1,3,2,1-1,2024-25_wal1.txt
+14.30,Aberystwyth Town,Bala Town,0,0,X,,2024-25_wal1.txt
+,Caernarfon Town,The New Saints,2,5,2,2-3,2024-25_wal1.txt
+,Connah's Quay Nomads,Flint Town United,7,2,1,6-1,2024-25_wal1.txt
+,Newtown AFC,Haverfordwest County,0,2,2,0-1,2024-25_wal1.txt
+12.30,Briton Ferry Llansawel AFC,Barry Town United,0,0,X,,2024-25_wal1.txt
+14.30,The New Saints,Connah's Quay Nomads,2,1,1,2-1,2024-25_wal1.txt
+17.45,Penybont FC,Cardiff Metropolitan,2,2,X,1-0,2024-25_wal1.txt
+14.30,Flint Town United,Newtown AFC,2,0,1,0-0,2024-25_wal1.txt
+,Haverfordwest County,Aberystwyth Town,1,0,1,1-0,2024-25_wal1.txt
+12.45,Bala Town,Caernarfon Town,0,2,2,0-1,2024-25_wal1.txt
+12.45,Aberystwyth Town,Briton Ferry Llansawel AFC,1,6,2,1-2,2024-25_wal1.txt
+19.45,Barry Town United,Haverfordwest County,1,1,X,1-1,2024-25_wal1.txt
+,Caernarfon Town,Flint Town United,3,0,1,0-0,2024-25_wal1.txt
+,Cardiff Metropolitan,The New Saints,0,2,2,0-1,2024-25_wal1.txt
+,Newtown AFC,Penybont FC,1,2,2,0-1,2024-25_wal1.txt
+19.45,Connah's Quay Nomads,Bala Town,0,2,2,0-0,2024-25_wal1.txt
+19.45,Cardiff Metropolitan,Penybont FC,2,1,1,0-0,2024-25_wal1.txt
+14.30,Haverfordwest County,Bala Town,3,2,1,1-1,2024-25_wal1.txt
+19.45,Caernarfon Town,The New Saints,0,1,2,0-1,2024-25_wal1.txt
+19.45,Bala Town,Caernarfon Town,1,3,2,0-2,2024-25_wal1.txt
+12.15,Penybont FC,Haverfordwest County,0,0,X,,2024-25_wal1.txt
+14.30,The New Saints,Cardiff Metropolitan,3,1,1,1-1,2024-25_wal1.txt
+12.15,The New Saints,Penybont FC,4,0,1,1-0,2024-25_wal1.txt
+14.30,Caernarfon Town,Haverfordwest County,1,1,X,1-1,2024-25_wal1.txt
+,Cardiff Metropolitan,Bala Town,2,1,1,1-0,2024-25_wal1.txt
+19.45,Bala Town,The New Saints,0,2,2,0-1,2024-25_wal1.txt
+,Haverfordwest County,Cardiff Metropolitan,1,0,1,0-0,2024-25_wal1.txt
+14.30,Caernarfon Town,Penybont FC,3,2,1,1-0,2024-25_wal1.txt
+12.15,The New Saints,Haverfordwest County,5,1,1,3-1,2024-25_wal1.txt
+14.30,Cardiff Metropolitan,Caernarfon Town,4,2,1,1-1,2024-25_wal1.txt
+,Penybont FC,Bala Town,3,2,1,1-0,2024-25_wal1.txt
+19.45,The New Saints,Caernarfon Town,2,0,1,1-0,2024-25_wal1.txt
+19.45,Penybont FC,Cardiff Metropolitan,0,0,X,,2024-25_wal1.txt
+14.30,Bala Town,Haverfordwest County,0,0,X,,2024-25_wal1.txt
+19.45,Caernarfon Town,Bala Town,5,0,1,1-0,2024-25_wal1.txt
+,Haverfordwest County,Penybont FC,1,2,2,1-1,2024-25_wal1.txt
+14.30,Cardiff Metropolitan,The New Saints,0,6,2,0-2,2024-25_wal1.txt
+14.30,Bala Town,Cardiff Metropolitan,0,0,X,,2024-25_wal1.txt
+,Haverfordwest County,Caernarfon Town,1,1,X,0-0,2024-25_wal1.txt
+,Penybont FC,The New Saints,1,0,1,0-0,2024-25_wal1.txt
+19.45,Cardiff Metropolitan,Haverfordwest County,1,1,X,1-0,2024-25_wal1.txt
+,The New Saints,Bala Town,2,1,1,1-0,2024-25_wal1.txt
+14.30,Penybont FC,Caernarfon Town,3,1,1,1-1,2024-25_wal1.txt
+12.45,Bala Town,Penybont FC,3,2,1,1-0,2024-25_wal1.txt
+,Caernarfon Town,Cardiff Metropolitan,2,1,1,0-1,2024-25_wal1.txt
+,Haverfordwest County,The New Saints,1,3,2,0-0,2024-25_wal1.txt
+12.15,Caernarfon Town,Barry Town United,5,2,1,2-1,2024-25_wal1.txt
+14.30,Cardiff Metropolitan,Bala Town,1,0,1,0-0,2024-25_wal1.txt
+17.10,Caernarfon Town,Cardiff Metropolitan,4,2,1,,2024-25_wal1.txt
+17.10,Haverfordwest County,Caernarfon Town,3,1,1,2-0,2024-25_wal1.txt
+19.45,Newtown AFC,Briton Ferry Llansawel AFC,2,2,X,2-1,2024-25_wal1.txt
+20.00,Aberystwyth Town,Barry Town United,1,2,2,0-0,2024-25_wal1.txt
+14.30,Flint Town United,Connah's Quay Nomads,2,1,1,1-0,2024-25_wal1.txt
+14.30,Barry Town United,Flint Town United,3,1,1,2-1,2024-25_wal1.txt
+,Briton Ferry Llansawel AFC,Aberystwyth Town,2,3,2,0-1,2024-25_wal1.txt
+,Connah's Quay Nomads,Newtown AFC,1,0,1,1-0,2024-25_wal1.txt
+19.45,Flint Town United,Aberystwyth Town,2,0,1,0-0,2024-25_wal1.txt
+14.30,Connah's Quay Nomads,Briton Ferry Llansawel AFC,0,1,2,0-0,2024-25_wal1.txt
+,Newtown AFC,Barry Town United,1,1,X,0-1,2024-25_wal1.txt
+12.15,Aberystwyth Town,Newtown AFC,0,1,2,0-0,2024-25_wal1.txt
+14.30,Barry Town United,Connah's Quay Nomads,0,2,2,0-1,2024-25_wal1.txt
+,Flint Town United,Briton Ferry Llansawel AFC,3,1,1,2-0,2024-25_wal1.txt
+19.45,Briton Ferry Llansawel AFC,Barry Town United,3,4,2,1-2,2024-25_wal1.txt
+,Connah's Quay Nomads,Aberystwyth Town,3,0,1,1-0,2024-25_wal1.txt
+,Newtown AFC,Flint Town United,2,2,X,1-1,2024-25_wal1.txt
+19.45,Barry Town United,Aberystwyth Town,2,1,1,1-0,2024-25_wal1.txt
+,Briton Ferry Llansawel AFC,Newtown AFC,1,1,X,0-0,2024-25_wal1.txt
+,Connah's Quay Nomads,Flint Town United,4,0,1,2-0,2024-25_wal1.txt
+19.45,Newtown AFC,Connah's Quay Nomads,2,3,2,0-2,2024-25_wal1.txt
+20.00,Aberystwyth Town,Briton Ferry Llansawel AFC,0,1,2,0-0,2024-25_wal1.txt
+14.30,Flint Town United,Barry Town United,3,2,1,2-1,2024-25_wal1.txt
+19.45,Barry Town United,Newtown AFC,2,1,1,1-0,2024-25_wal1.txt
+20.00,Aberystwyth Town,Flint Town United,1,2,2,0-1,2024-25_wal1.txt
+14.30,Briton Ferry Llansawel AFC,Connah's Quay Nomads,1,0,1,0-0,2024-25_wal1.txt
+12.45,Newtown AFC,Aberystwyth Town,2,3,2,1-1,2024-25_wal1.txt
+14.30,Briton Ferry Llansawel AFC,Flint Town United,1,2,2,1-1,2024-25_wal1.txt
+14.30,Connah's Quay Nomads,Barry Town United,0,2,2,0-1,2024-25_wal1.txt
+12.45,Aberystwyth Town,Connah's Quay Nomads,1,1,X,1-1,2024-25_wal1.txt
+,Barry Town United,Briton Ferry Llansawel AFC,5,0,1,3-0,2024-25_wal1.txt
+,Flint Town United,Newtown AFC,4,0,1,3-0,2024-25_wal1.txt

@@ -1,0 +1,7 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Republic of Ireland,Wales,3,0,1,Dublin,Republic of Ireland,2011_nations_cup.txt
+Scotland,Northern Ireland,3,0,1,Dublin,Republic of Ireland,2011_nations_cup.txt
+Republic of Ireland,Northern Ireland,5,0,1,Dublin,Republic of Ireland,2011_nations_cup.txt
+Wales,Scotland,1,3,2,Dublin,Republic of Ireland,2011_nations_cup.txt
+Wales,Northern Ireland,2,0,1,Dublin,Republic of Ireland,2011_nations_cup.txt
+Republic of Ireland,Scotland,1,0,1,Dublin,Republic of Ireland,2011_nations_cup.txt

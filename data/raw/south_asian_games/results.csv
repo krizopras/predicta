@@ -1,0 +1,69 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Nepal,Maldives,4,0,1,Kathmandu,Nepal,1984_south_asian_games.txt
+Bangladesh,Bhutan,2,0,1,Kathmandu,Nepal,1984_south_asian_games.txt
+Bangladesh,Maldives,5,0,1,Kathmandu,Nepal,1984_south_asian_games.txt
+Nepal,Bhutan,5,0,1,Kathmandu,Nepal,1984_south_asian_games.txt
+Maldives,Bhutan,1,0,1,Kathmandu,Nepal,1984_south_asian_games.txt
+Nepal,Bangladesh,0,5,2,Kathmandu,Nepal,1984_south_asian_games.txt
+Nepal,Bangladesh,4,2,1,Kathmandu,Nepal,1984_south_asian_games.txt
+Bangladesh,Pakistan,2,1,1,Dhaka,Bangladesh,1985_south_asian_games.txt
+India,Nepal,2,0,1,Dhaka,Bangladesh,1985_south_asian_games.txt
+Pakistan,Maldives,3,1,1,Dhaka,Bangladesh,1985_south_asian_games.txt
+Nepal,Bhutan,1,0,1,Dhaka,Bangladesh,1985_south_asian_games.txt
+Bangladesh,Maldives,8,0,1,Dhaka,Bangladesh,1985_south_asian_games.txt
+India,Bhutan,3,0,1,Dhaka,Bangladesh,1985_south_asian_games.txt
+Pakistan,Nepal,2,2,X,Dhaka,Bangladesh   [Nepal wins on penalties],1985_south_asian_games.txt
+Bangladesh,India,1,1,X,Dhaka,Bangladesh   [India wins on penalties],1985_south_asian_games.txt
+India,Pakistan,0,0,X,Calcutta,India,1987_south_asian_games.txt
+Nepal,Bangladesh,1,0,1,Calcutta,India,1987_south_asian_games.txt
+Pakistan,Maldives,1,0,1,Calcutta,India,1987_south_asian_games.txt
+Bangladesh,Bhutan,3,0,1,Calcutta,India,1987_south_asian_games.txt
+India,Maldives,5,0,1,Calcutta,India,1987_south_asian_games.txt
+Nepal,Bhutan,6,2,1,Calcutta,India,1987_south_asian_games.txt
+Pakistan,Bangladesh,1,0,1,Calcutta,India,1987_south_asian_games.txt
+India,Nepal,1,0,1,Calcutta,India,1987_south_asian_games.txt
+Bangladesh,Sri Lanka,3,0,1,Islamabad,Pakistan,1989_south_asian_games.txt
+India,Sri Lanka,2,1,1,Islamabad,Pakistan,1989_south_asian_games.txt
+Maldives,Nepal,0,0,X,Islamabad,Pakistan,1989_south_asian_games.txt
+Pakistan,Nepal,0,0,X,Islamabad,Pakistan,1989_south_asian_games.txt
+Bangladesh,India,1,1,X,Islamabad,Pakistan,1989_south_asian_games.txt
+Pakistan,Maldives,2,0,1,Islamabad,Pakistan,1989_south_asian_games.txt
+India,Nepal,2,1,1,Islamabad,Pakistan,1989_south_asian_games.txt
+Pakistan,Bangladesh,1,0,1,Islamabad,Pakistan,1989_south_asian_games.txt
+Pakistan,India,0,0,X,Colombo,Sri Lanka,1991_south_asian_games.txt
+Sri Lanka,Nepal,2,2,X,Colombo,Sri Lanka,1991_south_asian_games.txt
+Pakistan,Bangladesh,1,0,1,Colombo,Sri Lanka,1991_south_asian_games.txt
+Maldives,Nepal,1,0,1,Colombo,Sri Lanka,1991_south_asian_games.txt
+Bangladesh,India,2,1,1,Colombo,Sri Lanka,1991_south_asian_games.txt
+Sri Lanka,Maldives,0,1,2,Colombo,Sri Lanka,1991_south_asian_games.txt
+Bangladesh,Nepal,2,0,1,Colombo,Sri Lanka,1991_south_asian_games.txt
+Pakistan,Maldives,2,0,1,Colombo,Sri Lanka,1991_south_asian_games.txt
+Bangladesh,Maldives,0,0,X,Dhaka,Bangladesh,1993_south_asian_games.txt
+Sri Lanka,Pakistan,2,1,1,Dhaka,Bangladesh,1993_south_asian_games.txt
+Nepal,Maldives,0,0,X,Dhaka,Bangladesh,1993_south_asian_games.txt
+India,Sri Lanka,2,0,1,Dhaka,Bangladesh,1993_south_asian_games.txt
+Bangladesh,Nepal,0,1,2,Dhaka,Bangladesh,1993_south_asian_games.txt
+India,Pakistan,2,2,X,Dhaka,Bangladesh,1993_south_asian_games.txt
+Sri Lanka,Maldives,3,1,1,Dhaka,Bangladesh,1993_south_asian_games.txt
+Nepal,India,2,2,X,Dhaka,Bangladesh   [Nepal wins on penalties],1993_south_asian_games.txt
+Nepal,Maldives,1,0,1,Madras,India,1995_south_asian_games.txt
+Maldives,Bangladesh,0,0,X,Madras,India,1995_south_asian_games.txt
+India,Sri Lanka,1,0,1,Madras,India,1995_south_asian_games.txt
+Bangladesh,Nepal,2,1,1,Madras,India,1995_south_asian_games.txt
+Bangladesh,Sri Lanka,0,0,X,Madras,India   [Bangladesh wins on penalties],1995_south_asian_games.txt
+India,Nepal,3,0,1,Madras,India,1995_south_asian_games.txt
+Sri Lanka,Nepal,0,0,X,Madras,India   [Sri Lanka wins on penalties],1995_south_asian_games.txt
+India,Bangladesh,1,0,1,Madras,India,1995_south_asian_games.txt
+Sri Lanka,Maldives,0,4,2,Kathmandu,Nepal,1999_south_asian_games.txt
+India,Pakistan,5,2,1,Kathmandu,Nepal,1999_south_asian_games.txt
+Nepal,Bhutan,7,0,1,Kathmandu,Nepal,1999_south_asian_games.txt
+Bangladesh,Maldives,1,2,2,Kathmandu,Nepal,1999_south_asian_games.txt
+India,Bhutan,3,0,1,Kathmandu,Nepal,1999_south_asian_games.txt
+Nepal,Pakistan,3,1,1,Kathmandu,Nepal,1999_south_asian_games.txt
+Bangladesh,Sri Lanka,1,0,1,Kathmandu,Nepal,1999_south_asian_games.txt
+Nepal,India,0,4,2,Kathmandu,Nepal,1999_south_asian_games.txt
+Pakistan,Bhutan,2,1,1,Kathmandu,Nepal,1999_south_asian_games.txt
+Nepal,Maldives,2,1,1,Kathmandu,Nepal,1999_south_asian_games.txt
+India,Bangladesh,0,1,2,Kathmandu,Nepal,1999_south_asian_games.txt
+India,Maldives,3,1,1,Kathmandu,Nepal,1999_south_asian_games.txt
+Nepal,Bangladesh,0,1,2,Kathmandu,Nepal,1999_south_asian_games.txt
