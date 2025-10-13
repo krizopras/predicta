@@ -1,0 +1,933 @@
+﻿date,season,confederation,league,stage,home_team,away_team,home_score,away_score
+,2011-12,CONCACAF,CONCACAF Champions League,Group A,21.00 Los Angeles Galaxy,Motagua,2,0
+,2011-12,CONCACAF,CONCACAF Champions League,Group A,LD Alajuelense,Monarcas Morelia,1,0
+,2011-12,CONCACAF,CONCACAF Champions League,Group A,21.00 Los Angeles Galaxy,LD Alajuelense,2,0
+,2011-12,CONCACAF,CONCACAF Champions League,Group A,Monarcas Morelia,Motagua,4,0
+,2011-12,CONCACAF,CONCACAF Champions League,Group A,19.00 Monarcas Morelia,Los Angeles Galaxy,2,1
+,2011-12,CONCACAF,CONCACAF Champions League,Group A,21.00 Motagua,LD Alajuelense,2,4
+,2011-12,CONCACAF,CONCACAF Champions League,Group A,21.00 LD Alajuelense,Los Angeles Galaxy,1,0
+,2011-12,CONCACAF,CONCACAF Champions League,Group A,21.00 Motagua,Monarcas Morelia,0,2
+,2011-12,CONCACAF,CONCACAF Champions League,Group A,21.00 Los Angeles Galaxy,Monarcas Morelia,2,1
+,2011-12,CONCACAF,CONCACAF Champions League,Group A,21.00 LD Alajuelense,Motagua,1,0
+,2011-12,CONCACAF,CONCACAF Champions League,Group A,19.00 Monarcas Morelia,LD Alajuelense,2,1
+,2011-12,CONCACAF,CONCACAF Champions League,Group A,21.00 Motagua,Los Angeles Galaxy,0,1
+,2011-12,CONCACAF,CONCACAF Champions League,Group B,19.00 Santos Laguna,Real España,3,2
+,2011-12,CONCACAF,CONCACAF Champions League,Group B,21.00 Colorado Rapids,Isidro Metapán,3,2
+,2011-12,CONCACAF,CONCACAF Champions League,Group B,21.00 Real España,Colorado Rapids,1,1
+,2011-12,CONCACAF,CONCACAF Champions League,Group B,21.00 Isidro Metapán,Santos Laguna,2,0
+,2011-12,CONCACAF,CONCACAF Champions League,Group B,21.00 Real España,Isidro Metapán,1,2
+,2011-12,CONCACAF,CONCACAF Champions League,Group B,Colorado Rapids,Santos Laguna,1,4
+,2011-12,CONCACAF,CONCACAF Champions League,Group B,21.00 Colorado Rapids,Real España,1,2
+,2011-12,CONCACAF,CONCACAF Champions League,Group B,19.00 Santos Laguna,Isidro Metapán,6,0
+,2011-12,CONCACAF,CONCACAF Champions League,Group B,19.00 Real España,Santos Laguna,1,1
+,2011-12,CONCACAF,CONCACAF Champions League,Group B,21.00 Isidro Metapán,Colorado Rapids,1,3
+,2011-12,CONCACAF,CONCACAF Champions League,Group B,19.00 Santos Laguna,Colorado Rapids,2,0
+,2011-12,CONCACAF,CONCACAF Champions League,Group B,19.00 Isidro Metapán,Real España,3,2
+,2011-12,CONCACAF,CONCACAF Champions League,Group C,21.00 Pumas UNAM,FC Dallas,0,1
+,2011-12,CONCACAF,CONCACAF Champions League,Group C,19.00 Tauro FC,Toronto FC,1,2
+,2011-12,CONCACAF,CONCACAF Champions League,Group C,09.15 Toronto FC,FC Dallas,0,1
+,2011-12,CONCACAF,CONCACAF Champions League,Group C,19.00 Tauro FC,Pumas UNAM,0,0
+,2011-12,CONCACAF,CONCACAF Champions League,Group C,19.00 FC Dallas,Tauro FC,1,1
+,2011-12,CONCACAF,CONCACAF Champions League,Group C,Pumas UNAM,Toronto FC,4,0
+,2011-12,CONCACAF,CONCACAF Champions League,Group C,19.00 Toronto FC,Tauro FC,1,0
+,2011-12,CONCACAF,CONCACAF Champions League,Group C,19.00 FC Dallas,Pumas UNAM,0,2
+,2011-12,CONCACAF,CONCACAF Champions League,Group C,19.00 Toronto FC,Pumas UNAM,1,1
+,2011-12,CONCACAF,CONCACAF Champions League,Group C,19.00 Tauro FC,FC Dallas,5,3
+,2011-12,CONCACAF,CONCACAF Champions League,Group C,19.00 FC Dallas,Toronto FC,0,3
+,2011-12,CONCACAF,CONCACAF Champions League,Group C,21.00 Pumas UNAM,Tauro FC,1,0
+,2011-12,CONCACAF,CONCACAF Champions League,Group D,21.00 Seattle Sounders,CSD Comunicaciones,4,1
+,2011-12,CONCACAF,CONCACAF Champions League,Group D,19.00 CS Herediano,CF Monterrey,0,5
+,2011-12,CONCACAF,CONCACAF Champions League,Group D,19.00 CF Monterrey,Seattle Sounders,0,1
+,2011-12,CONCACAF,CONCACAF Champions League,Group D,16.00 CSD Comunicaciones,CS Herediano,2,0
+,2011-12,CONCACAF,CONCACAF Champions League,Group D,21.00 CS Herediano,Seattle Sounders,1,2
+,2011-12,CONCACAF,CONCACAF Champions League,Group D,CSD Comunicaciones,CF Monterrey,1,0
+,2011-12,CONCACAF,CONCACAF Champions League,Group D,19.00 CF Monterrey,CSD Comunicaciones,3,1
+,2011-12,CONCACAF,CONCACAF Champions League,Group D,21.00 Seattle Sounders,CS Herediano,0,1
+,2011-12,CONCACAF,CONCACAF Champions League,Group D,21.00 CSD Comunicaciones,Seattle Sounders,2,2
+,2011-12,CONCACAF,CONCACAF Champions League,Group D,CF Monterrey,CS Herediano,1,0
+,2011-12,CONCACAF,CONCACAF Champions League,Group D,21.00 Seattle Sounders,CF Monterrey,1,2
+,2011-12,CONCACAF,CONCACAF Champions League,Group D,21.00 CS Herediano,CSD Comunicaciones,4,1
+,2011-12,CONCACAF,CONCACAF Champions League,Quarterfinals,21.00 Monarcas Morelia,CF Monterrey,1,3
+,2011-12,CONCACAF,CONCACAF Champions League,Quarterfinals,19.00 Toronto FC,Los Angeles Galaxy,2,2
+,2011-12,CONCACAF,CONCACAF Champions League,Quarterfinals,21.00 Seattle Sounders,Santos Laguna,2,1
+,2011-12,CONCACAF,CONCACAF Champions League,Quarterfinals,19.00 Isidro Metapán,Pumas UNAM,2,1
+,2011-12,CONCACAF,CONCACAF Champions League,Quarterfinals,20.00 CF Monterrey,Monarcas Morelia,4,1
+,2011-12,CONCACAF,CONCACAF Champions League,Quarterfinals,18.00 Santos Laguna,Seattle Sounders,6,1
+,2011-12,CONCACAF,CONCACAF Champions League,Quarterfinals,20.00 Los Angeles Galaxy,Toronto FC,1,2
+,2011-12,CONCACAF,CONCACAF Champions League,Quarterfinals,20.00 Pumas UNAM,Isidro Metapán,8,0
+,2011-12,CONCACAF,CONCACAF Champions League,Semifinals,18.00 Toronto FC,Santos Laguna,1,1
+,2011-12,CONCACAF,CONCACAF Champions League,Semifinals,20.00 CF Monterrey,Pumas UNAM,3,0
+,2011-12,CONCACAF,CONCACAF Champions League,Semifinals,19.00 Santos Laguna,Toronto FC,6,2
+,2011-12,CONCACAF,CONCACAF Champions League,Semifinals,21.00 Pumas UNAM,CF Monterrey,1,1
+,2011-12,CONCACAF,CONCACAF Champions League,Final,21.00 CF Monterrey,Santos Laguna,2,0
+,2011-12,CONCACAF,CONCACAF Champions League,Final,19.00 Santos Laguna,CF Monterrey,2,1
+,2012-13,CONCACAF,CONCACAF Champions League,Gruppe 1,19.00 Toronto FC,CD Águila,5,1
+,2012-13,CONCACAF,CONCACAF Champions League,Gruppe 1,19.00 Santos Laguna,CD Águila,5,0
+,2012-13,CONCACAF,CONCACAF Champions League,Gruppe 1,19.00 Toronto FC,Santos Laguna,1,3
+,2012-13,CONCACAF,CONCACAF Champions League,Gruppe 1,21.00 CD Águila,Santos Laguna,0,4
+,2012-13,CONCACAF,CONCACAF Champions League,Gruppe 1,21.00 CD Águila,Toronto FC,0,3
+,2012-13,CONCACAF,CONCACAF Champions League,Gruppe 1,19.00 Santos Laguna,Toronto FC,1,0
+,2012-13,CONCACAF,CONCACAF Champions League,Gruppe 2,21.00 CS Herediano,Real Salt Lake,1,0
+,2012-13,CONCACAF,CONCACAF Champions League,Gruppe 2,21.00 Real Salt Lake,Tauro FC,2,0
+,2012-13,CONCACAF,CONCACAF Champions League,Gruppe 2,19.00 Tauro FC,CS Herediano,0,1
+,2012-13,CONCACAF,CONCACAF Champions League,Gruppe 2,19.00 Tauro FC,Real Salt Lake,0,1
+,2012-13,CONCACAF,CONCACAF Champions League,Gruppe 2,21.00 CS Herediano,Tauro FC,2,1
+,2012-13,CONCACAF,CONCACAF Champions League,Gruppe 2,21.00 Real Salt Lake,CS Herediano,0,0
+,2012-13,CONCACAF,CONCACAF Champions League,Gruppe 3,21.00 Olimpia,FAS,3,0
+,2012-13,CONCACAF,CONCACAF Champions League,Gruppe 3,21.00 FAS,Houston Dynamo,1,3
+,2012-13,CONCACAF,CONCACAF Champions League,Gruppe 3,21.00 Olimpia,Houston Dynamo,1,1
+,2012-13,CONCACAF,CONCACAF Champions League,Gruppe 3,19.00 Houston Dynamo,FAS,4,0
+,2012-13,CONCACAF,CONCACAF Champions League,Gruppe 3,21.00 FAS,Olimpia,2,1
+,2012-13,CONCACAF,CONCACAF Champions League,Gruppe 3,19.00 Houston Dynamo,Olimpia,1,1
+,2012-13,CONCACAF,CONCACAF Champions League,Gruppe 4,21.00 Seattle Sounders,Caledonia AIA Fire,3,1
+,2012-13,CONCACAF,CONCACAF Champions League,Gruppe 4,19.00 Caledonia AIA Fire,Marathón,0,0
+,2012-13,CONCACAF,CONCACAF Champions League,Gruppe 4,19.00 Caledonia AIA Fire,Seattle Sounders,1,3
+,2012-13,CONCACAF,CONCACAF Champions League,Gruppe 4,21.00 Marathón,Seattle Sounders,2,3
+,2012-13,CONCACAF,CONCACAF Champions League,Gruppe 4,21.00 Marathón,Caledonia AIA Fire,2,1
+,2012-13,CONCACAF,CONCACAF Champions League,Gruppe 4,21.00 Seattle Sounders,Marathón,3,1
+,2012-13,CONCACAF,CONCACAF Champions League,Gruppe 5,21.00 Isidro Metapán,Puerto Rico Islanders,3,1
+,2012-13,CONCACAF,CONCACAF Champions League,Gruppe 5,21.00 Los Angeles Galaxy,Isidro Metapán,5,2
+,2012-13,CONCACAF,CONCACAF Champions League,Gruppe 5,21.00 Los Angeles Galaxy,Puerto Rico Islanders,4,0
+,2012-13,CONCACAF,CONCACAF Champions League,Gruppe 5,19.00 Puerto Rico Islanders,Los Angeles Galaxy,0,0
+,2012-13,CONCACAF,CONCACAF Champions League,Gruppe 5,19.00 Puerto Rico Islanders,Isidro Metapán,3,0
+,2012-13,CONCACAF,CONCACAF Champions League,Gruppe 5,21.00 Isidro Metapán,Los Angeles Galaxy,2,3
+,2012-13,CONCACAF,CONCACAF Champions League,Gruppe 6,21.00 UANL Tigres,Real Estelí FC,4,0
+,2012-13,CONCACAF,CONCACAF Champions League,Gruppe 6,21.00 LD Alajuelense,UANL Tigres,2,2
+,2012-13,CONCACAF,CONCACAF Champions League,Gruppe 6,21.00 Real Estelí FC,LD Alajuelense,0,1
+,2012-13,CONCACAF,CONCACAF Champions League,Gruppe 6,21.00 Real Estelí FC,UANL Tigres,1,1
+,2012-13,CONCACAF,CONCACAF Champions League,Gruppe 6,21.00 LD Alajuelense,Real Estelí FC,1,0
+,2012-13,CONCACAF,CONCACAF Champions League,Gruppe 6,21.00 UANL Tigres,LD Alajuelense,5,0
+,2012-13,CONCACAF,CONCACAF Champions League,Gruppe 7,19.00 CF Monterrey,Chorrillo FC,5,0
+,2012-13,CONCACAF,CONCACAF Champions League,Gruppe 7,19.00 Chorrillo FC,CSD Municipal,1,2
+,2012-13,CONCACAF,CONCACAF Champions League,Gruppe 7,21.00 CSD Municipal,CF Monterrey,0,1
+,2012-13,CONCACAF,CONCACAF Champions League,Gruppe 7,21.00 CSD Municipal,Chorrillo FC,2,1
+,2012-13,CONCACAF,CONCACAF Champions League,Gruppe 7,21.00 CF Monterrey,CSD Municipal,3,0
+,2012-13,CONCACAF,CONCACAF Champions League,Gruppe 7,21.00 Chorrillo FC,CF Monterrey,0,6
+,2012-13,CONCACAF,CONCACAF Champions League,Gruppe 8,19.00 W Connection FC,Xelaju MC,2,2
+,2012-13,CONCACAF,CONCACAF Champions League,Gruppe 8,21.00 Xelaju MC,Deportivo Guadalajara,1,0
+,2012-13,CONCACAF,CONCACAF Champions League,Gruppe 8,19.00 Deportivo Guadalajara,W Connection FC,4,0
+,2012-13,CONCACAF,CONCACAF Champions League,Gruppe 8,21.00 Xelaju MC,W Connection FC,3,2
+,2012-13,CONCACAF,CONCACAF Champions League,Gruppe 8,19.00 W Connection FC,Deportivo Guadalajara,1,1
+,2012-13,CONCACAF,CONCACAF Champions League,Gruppe 8,21.00 Deportivo Guadalajara,Xelaju MC,2,1
+,2012-13,CONCACAF,CONCACAF Champions League,Quarterfinals,19.00 Houston Dynamo,Santos Laguna,1,0
+,2012-13,CONCACAF,CONCACAF Champions League,Quarterfinals,19.00 Xelaju MC,CF Monterrey,1,3
+,2012-13,CONCACAF,CONCACAF Champions League,Quarterfinals,21.00 UANL Tigres,Seattle Sounders,1,0
+,2012-13,CONCACAF,CONCACAF Champions League,Quarterfinals,19.00 CS Herediano,Los Angeles Galaxy,0,0
+,2012-13,CONCACAF,CONCACAF Champions League,Quarterfinals,18.00 CF Monterrey,Xelaju MC,1,1
+,2012-13,CONCACAF,CONCACAF Champions League,Quarterfinals,20.00 Seattle Sounders,UANL Tigres,3,1
+,2012-13,CONCACAF,CONCACAF Champions League,Quarterfinals,18.00 Santos Laguna,Houston Dynamo,3,0
+,2012-13,CONCACAF,CONCACAF Champions League,Quarterfinals,20.00 Los Angeles Galaxy,CS Herediano,4,1
+,2012-13,CONCACAF,CONCACAF Champions League,Semifinals,20.00 Seattle Sounders,Santos Laguna,0,1
+,2012-13,CONCACAF,CONCACAF Champions League,Semifinals,20.00 Los Angeles Galaxy,CF Monterrey,1,2
+,2012-13,CONCACAF,CONCACAF Champions League,Semifinals,19.00 Santos Laguna,Seattle Sounders,1,1
+,2012-13,CONCACAF,CONCACAF Champions League,Semifinals,21.00 CF Monterrey,Los Angeles Galaxy,1,0
+,2012-13,CONCACAF,CONCACAF Champions League,Final,21.00 Santos Laguna,CF Monterrey,0,0
+,2012-13,CONCACAF,CONCACAF Champions League,Final,21.00 CF Monterrey,Santos Laguna,4,2
+,2013-14,CONCACAF,CONCACAF Champions League,Gruppe 1,21.00 Árabe Unido,W Connection FC,3,1
+,2013-14,CONCACAF,CONCACAF Champions League,Gruppe 1,19.00 W Connection FC,Houston Dynamo,0,0
+,2013-14,CONCACAF,CONCACAF Champions League,Gruppe 1,19.00 Houston Dynamo,Árabe Unido,2,1
+,2013-14,CONCACAF,CONCACAF Champions League,Gruppe 1,19.00 W Connection FC,Árabe Unido,0,2
+,2013-14,CONCACAF,CONCACAF Champions League,Gruppe 1,19.00 Houston Dynamo,W Connection FC,2,0
+,2013-14,CONCACAF,CONCACAF Champions League,Gruppe 1,19.00 Árabe Unido,Houston Dynamo,1,0
+,2013-14,CONCACAF,CONCACAF Champions League,Gruppe 2,21.00 Real Estelí FC,Sporting Kansas City,0,2
+,2013-14,CONCACAF,CONCACAF Champions League,Gruppe 2,21.00 Real Estelí FC,Olimpia,0,1
+,2013-14,CONCACAF,CONCACAF Champions League,Gruppe 2,21.00 Olimpia,Sporting Kansas City,0,2
+,2013-14,CONCACAF,CONCACAF Champions League,Gruppe 2,19.00 Sporting Kansas City,Real Estelí FC,1,1
+,2013-14,CONCACAF,CONCACAF Champions League,Gruppe 2,21.00 Olimpia,Real Estelí FC,1,0
+,2013-14,CONCACAF,CONCACAF Champions League,Gruppe 2,19.00 Sporting Kansas City,Olimpia,0,0
+,2013-14,CONCACAF,CONCACAF Champions League,Gruppe 3,19.00 Valencia Leogane,CS Herediano,1,6
+,2013-14,CONCACAF,CONCACAF Champions League,Gruppe 3,19.00 Cruz Azul,CS Herediano,3,0
+,2013-14,CONCACAF,CONCACAF Champions League,Gruppe 3,19.00 Valencia Leogane,Cruz Azul,1,2
+,2013-14,CONCACAF,CONCACAF Champions League,Gruppe 3,21.00 CS Herediano,Valencia Leogane,4,2
+,2013-14,CONCACAF,CONCACAF Champions League,Gruppe 3,19.00 Cruz Azul,Valencia Leogane,3,0
+,2013-14,CONCACAF,CONCACAF Champions League,Gruppe 3,21.00 CS Herediano,Cruz Azul,1,2
+,2013-14,CONCACAF,CONCACAF Champions League,Gruppe 4,21.00 Sporting San Miguelito,CF América,0,1
+,2013-14,CONCACAF,CONCACAF Champions League,Gruppe 4,21.00 Sporting San Miguelito,LD Alajuelense,1,0
+,2013-14,CONCACAF,CONCACAF Champions League,Gruppe 4,21.00 LD Alajuelense,CF América,1,0
+,2013-14,CONCACAF,CONCACAF Champions League,Gruppe 4,21.00 CF América,Sporting San Miguelito,3,0
+,2013-14,CONCACAF,CONCACAF Champions League,Gruppe 4,21.00 LD Alajuelense,Sporting San Miguelito,2,0
+,2013-14,CONCACAF,CONCACAF Champions League,Gruppe 4,19.00 CF América,LD Alajuelense,0,1
+,2013-14,CONCACAF,CONCACAF Champions League,Gruppe 5,19.00 Impact de Montréal,San Jose Earthquakes,1,0
+,2013-14,CONCACAF,CONCACAF Champions League,Gruppe 5,21.00 Deportivo Heredia,Impact de Montréal,1,0
+,2013-14,CONCACAF,CONCACAF Champions League,Gruppe 5,21.00 Deportivo Heredia,San Jose Earthquakes,1,0
+,2013-14,CONCACAF,CONCACAF Champions League,Gruppe 5,21.00 San Jose Earthquakes,Impact de Montréal,3,0
+,2013-14,CONCACAF,CONCACAF Champions League,Gruppe 5,19.00 Impact de Montréal,Deportivo Heredia,2,0
+,2013-14,CONCACAF,CONCACAF Champions League,Gruppe 5,21.00 San Jose Earthquakes,Deportivo Heredia,1,0
+,2013-14,CONCACAF,CONCACAF Champions League,Gruppe 6,19.00 Deportivo Toluca,Caledonia AIA Fire,3,1
+,2013-14,CONCACAF,CONCACAF Champions League,Gruppe 6,21.00 CSD Comunicaciones,Deportivo Toluca,1,2
+,2013-14,CONCACAF,CONCACAF Champions League,Gruppe 6,19.00 Caledonia AIA Fire,CSD Comunicaciones,0,3
+,2013-14,CONCACAF,CONCACAF Champions League,Gruppe 6,19.00 Caledonia AIA Fire,Deportivo Toluca,1,5
+,2013-14,CONCACAF,CONCACAF Champions League,Gruppe 6,21.00 CSD Comunicaciones,Caledonia AIA Fire,2,0
+,2013-14,CONCACAF,CONCACAF Champions League,Gruppe 6,19.00 Deportivo Toluca,CSD Comunicaciones,5,1
+,2013-14,CONCACAF,CONCACAF Champions League,Gruppe 7,21.00 Luis Ángel Firpo,Club Tijuana,0,0
+,2013-14,CONCACAF,CONCACAF Champions League,Gruppe 7,21.00 Victoria,Club Tijuana,2,3
+,2013-14,CONCACAF,CONCACAF Champions League,Gruppe 7,21.00 Club Tijuana,Luis Ángel Firpo,1,0
+,2013-14,CONCACAF,CONCACAF Champions League,Gruppe 7,21.00 Luis Ángel Firpo,Victoria,2,1
+,2013-14,CONCACAF,CONCACAF Champions League,Gruppe 7,21.00 Club Tijuana,Victoria,6,0
+,2013-14,CONCACAF,CONCACAF Champions League,Gruppe 7,21.00 Victoria,Luis Ángel Firpo,1,4
+,2013-14,CONCACAF,CONCACAF Champions League,Gruppe 8,21.00 Isidro Metapán,CS Cartaginés,2,4
+,2013-14,CONCACAF,CONCACAF Champions League,Gruppe 8,21.00 Los Angeles Galaxy,CS Cartaginés,2,0
+,2013-14,CONCACAF,CONCACAF Champions League,Gruppe 8,21.00 CS Cartaginés,Isidro Metapán,0,0
+,2013-14,CONCACAF,CONCACAF Champions League,Gruppe 8,21.00 Los Angeles Galaxy,Isidro Metapán,1,0
+,2013-14,CONCACAF,CONCACAF Champions League,Gruppe 8,21.00 CS Cartaginés,Los Angeles Galaxy,0,3
+,2013-14,CONCACAF,CONCACAF Champions League,Gruppe 8,21.00 Isidro Metapán,Los Angeles Galaxy,4,0
+,2013-14,CONCACAF,CONCACAF Champions League,Quarterfinals,20.00 LD Alajuelense,Árabe Unido,0,0
+,2013-14,CONCACAF,CONCACAF Champions League,Quarterfinals,20.00 San Jose Earthquakes,Deportivo Toluca,1,1
+,2013-14,CONCACAF,CONCACAF Champions League,Quarterfinals,18.00 Sporting Kansas City,Cruz Azul,1,0
+,2013-14,CONCACAF,CONCACAF Champions League,Quarterfinals,20.00 Los Angeles Galaxy,Club Tijuana,1,0
+,2013-14,CONCACAF,CONCACAF Champions League,Quarterfinals,20.00 Club Tijuana,Los Angeles Galaxy,4,2
+,2013-14,CONCACAF,CONCACAF Champions League,Quarterfinals,18.00 Deportivo Toluca,San Jose Earthquakes,5,4
+,2013-14,CONCACAF,CONCACAF Champions League,Quarterfinals,20.00 Cruz Azul,Sporting Kansas City,5,1
+,2013-14,CONCACAF,CONCACAF Champions League,Quarterfinals,20.00 Árabe Unido,LD Alajuelense,0,2
+,2013-14,CONCACAF,CONCACAF Champions League,Semifinals,18.00 LD Alajuelense,Deportivo Toluca,0,1
+,2013-14,CONCACAF,CONCACAF Champions League,Semifinals,20.00 Club Tijuana,Cruz Azul,1,0
+,2013-14,CONCACAF,CONCACAF Champions League,Semifinals,19.00 Deportivo Toluca,LD Alajuelense,2,0
+,2013-14,CONCACAF,CONCACAF Champions League,Semifinals,19.00 Cruz Azul,Club Tijuana,2,0
+,2013-14,CONCACAF,CONCACAF Champions League,Final,19.00 Cruz Azul,Deportivo Toluca,0,0
+,2013-14,CONCACAF,CONCACAF Champions League,Final,19.00 Deportivo Toluca,Cruz Azul,1,1
+,2014-15,CONCACAF,CONCACAF Champions League,Gruppe 1,19.00 CF Pachuca,Real España,4,1
+,2014-15,CONCACAF,CONCACAF Champions League,Gruppe 1,21.00 Real España,CSD Municipal,1,1
+,2014-15,CONCACAF,CONCACAF Champions League,Gruppe 1,21.00 CSD Municipal,CF Pachuca,3,7
+,2014-15,CONCACAF,CONCACAF Champions League,Gruppe 1,21.00 CSD Municipal,Real España,3,0
+,2014-15,CONCACAF,CONCACAF Champions League,Gruppe 1,19.00 CF Pachuca,CSD Municipal,4,1
+,2014-15,CONCACAF,CONCACAF Champions League,Gruppe 1,21.00 Real España,CF Pachuca,3,2
+,2014-15,CONCACAF,CONCACAF Champions League,Gruppe 2,21.00 Real Estelí FC,Deportivo Saprissa,1,1
+,2014-15,CONCACAF,CONCACAF Champions League,Gruppe 2,21.00 Real Estelí FC,Sporting Kansas City,1,1
+,2014-15,CONCACAF,CONCACAF Champions League,Gruppe 2,21.00 Deportivo Saprissa,Real Estelí FC,3,0
+,2014-15,CONCACAF,CONCACAF Champions League,Gruppe 2,19.00 Sporting Kansas City,Deportivo Saprissa,3,1
+,2014-15,CONCACAF,CONCACAF Champions League,Gruppe 2,19.00 Sporting Kansas City,Real Estelí FC,3,0
+,2014-15,CONCACAF,CONCACAF Champions League,Gruppe 2,21.00 Deportivo Saprissa,Sporting Kansas City,2,0
+,2014-15,CONCACAF,CONCACAF Champions League,Gruppe 3,19.00 Impact de Montréal,FAS,1,0
+,2014-15,CONCACAF,CONCACAF Champions League,Gruppe 3,21.00 FAS,Impact de Montréal,2,3
+,2014-15,CONCACAF,CONCACAF Champions League,Gruppe 3,19.00 New York RB,FAS,2,0
+,2014-15,CONCACAF,CONCACAF Champions League,Gruppe 3,19.00 Impact de Montréal,New York RB,1,0
+,2014-15,CONCACAF,CONCACAF Champions League,Gruppe 3,21.00 FAS,New York RB,0,0
+,2014-15,CONCACAF,CONCACAF Champions League,Gruppe 3,19.00 New York RB,Impact de Montréal,1,1
+,2014-15,CONCACAF,CONCACAF Champions League,Gruppe 4,21.00 Tauro FC,Waterhouse FC,1,2
+,2014-15,CONCACAF,CONCACAF Champions League,Gruppe 4,19.00 D.C. United,Waterhouse FC,1,0
+,2014-15,CONCACAF,CONCACAF Champions League,Gruppe 4,19.00 Waterhouse FC,Tauro FC,4,1
+,2014-15,CONCACAF,CONCACAF Champions League,Gruppe 4,19.00 Waterhouse FC,D.C. United,1,2
+,2014-15,CONCACAF,CONCACAF Champions League,Gruppe 4,19.00 D.C. United,Tauro FC,2,0
+,2014-15,CONCACAF,CONCACAF Champions League,Gruppe 4,19.00 Tauro FC,D.C. United,0,1
+,2014-15,CONCACAF,CONCACAF Champions League,Gruppe 5,19.00 Alpha United,Olimpia,0,1
+,2014-15,CONCACAF,CONCACAF Champions League,Gruppe 5,19.00 Alpha United,Portland Timbers,1,4
+,2014-15,CONCACAF,CONCACAF Champions League,Gruppe 5,21.00 Olimpia,Alpha United,6,0
+,2014-15,CONCACAF,CONCACAF Champions League,Gruppe 5,21.00 Portland Timbers,Olimpia,4,2
+,2014-15,CONCACAF,CONCACAF Champions League,Gruppe 5,21.00 Portland Timbers,Alpha United,6,0
+,2014-15,CONCACAF,CONCACAF Champions League,Gruppe 5,21.00 Olimpia,Portland Timbers,3,1
+,2014-15,CONCACAF,CONCACAF Champions League,Gruppe 6,19.00 Cruz Azul,LD Alajuelense,1,1
+,2014-15,CONCACAF,CONCACAF Champions League,Gruppe 6,21.00 Chorrillo FC,Cruz Azul,1,0
+,2014-15,CONCACAF,CONCACAF Champions League,Gruppe 6,21.00 LD Alajuelense,Chorrillo FC,1,0
+,2014-15,CONCACAF,CONCACAF Champions League,Gruppe 6,19.00 Cruz Azul,Chorrillo FC,3,0
+,2014-15,CONCACAF,CONCACAF Champions League,Gruppe 6,21.00 Chorrillo FC,LD Alajuelense,1,1
+,2014-15,CONCACAF,CONCACAF Champions League,Gruppe 6,21.00 LD Alajuelense,Cruz Azul,1,1
+,2014-15,CONCACAF,CONCACAF Champions League,Gruppe 7,21.00 Isidro Metapán,Club León,2,4
+,2014-15,CONCACAF,CONCACAF Champions League,Gruppe 7,21.00 CS Herediano,Isidro Metapán,4,0
+,2014-15,CONCACAF,CONCACAF Champions League,Gruppe 7,19.00 Club León,CS Herediano,1,1
+,2014-15,CONCACAF,CONCACAF Champions League,Gruppe 7,21.00 Isidro Metapán,CS Herediano,2,4
+,2014-15,CONCACAF,CONCACAF Champions League,Gruppe 7,21.00 CS Herediano,Club León,2,1
+,2014-15,CONCACAF,CONCACAF Champions League,Gruppe 7,19.00 Club León,Isidro Metapán,4,1
+,2014-15,CONCACAF,CONCACAF Champions League,Gruppe 8,21.00 Comunicaciones,Bayamón FC,5,0
+,2014-15,CONCACAF,CONCACAF Champions League,Gruppe 8,19.00 CF América,Bayamón FC,6,1
+,2014-15,CONCACAF,CONCACAF Champions League,Gruppe 8,21.00 Comunicaciones,CF América,1,1
+,2014-15,CONCACAF,CONCACAF Champions League,Gruppe 8,19.00 Bayamón FC,CF América,1,10
+,2014-15,CONCACAF,CONCACAF Champions League,Gruppe 8,19.00 Bayamón FC,Comunicaciones,0,2
+,2014-15,CONCACAF,CONCACAF Champions League,Gruppe 8,19.00 CF América,Comunicaciones,2,0
+,2014-15,CONCACAF,CONCACAF Champions League,Quarterfinals,19.00 Olimpia,CS Herediano,1,1
+,2014-15,CONCACAF,CONCACAF Champions League,Quarterfinals,21.00 CF Pachuca,Impact de Montréal,2,2
+,2014-15,CONCACAF,CONCACAF Champions League,Quarterfinals,20.00 Deportivo Saprissa,CF América,0,3
+,2014-15,CONCACAF,CONCACAF Champions League,Quarterfinals,19.00 LD Alajuelense,D.C. United,5,2
+,2014-15,CONCACAF,CONCACAF Champions League,Quarterfinals,19.00 Impact de Montréal,CF Pachuca,1,1
+,2014-15,CONCACAF,CONCACAF Champions League,Quarterfinals,19.00 D.C. United,LD Alajuelense,2,1
+,2014-15,CONCACAF,CONCACAF Champions League,Quarterfinals,21.00 CF América,Deportivo Saprissa,2,0
+,2014-15,CONCACAF,CONCACAF Champions League,Quarterfinals,19.00 CS Herediano,Olimpia,2,0
+,2014-15,CONCACAF,CONCACAF Champions League,Semifinals,20.00 CS Herediano,CF América,3,0
+,2014-15,CONCACAF,CONCACAF Champions League,Semifinals,18.00 Impact de Montréal,LD Alajuelense,2,0
+,2014-15,CONCACAF,CONCACAF Champions League,Semifinals,21.00 LD Alajuelense,Impact de Montréal,4,2
+,2014-15,CONCACAF,CONCACAF Champions League,Semifinals,21.00 CF América,CS Herediano,6,0
+,2014-15,CONCACAF,CONCACAF Champions League,Final,20.00 CF América,Impact de Montréal,1,1
+,2014-15,CONCACAF,CONCACAF Champions League,Final,19.00 Impact de Montréal,CF América,2,4
+,2015-16,CONCACAF,CONCACAF Champions League,Group A,21.00 Santos Laguna,W Connection FC,4,0
+,2015-16,CONCACAF,CONCACAF Champions League,Group A,21.00 Deportivo Saprissa,W Connection FC,4,0
+,2015-16,CONCACAF,CONCACAF Champions League,Group A,21.00 Deportivo Saprissa,Santos Laguna,2,1
+,2015-16,CONCACAF,CONCACAF Champions League,Group A,19.00 W Connection FC,Deportivo Saprissa,2,1
+,2015-16,CONCACAF,CONCACAF Champions League,Group A,19.00 W Connection FC,Santos Laguna,0,1
+,2015-16,CONCACAF,CONCACAF Champions League,Group A,19.00 Santos Laguna,Deportivo Saprissa,6,1
+,2015-16,CONCACAF,CONCACAF Champions League,Group B,21.00 CS Herediano,Isidro Metapán,3,0
+,2015-16,CONCACAF,CONCACAF Champions League,Group B,19.00 UANL Tigres,Isidro Metapán,2,1
+,2015-16,CONCACAF,CONCACAF Champions League,Group B,21.00 CS Herediano,UANL Tigres,1,1
+,2015-16,CONCACAF,CONCACAF Champions League,Group B,21.00 Isidro Metapán,CS Herediano,2,0
+,2015-16,CONCACAF,CONCACAF Champions League,Group B,21.00 Isidro Metapán,UANL Tigres,1,2
+,2015-16,CONCACAF,CONCACAF Champions League,Group B,19.00 UANL Tigres,CS Herediano,0,0
+,2015-16,CONCACAF,CONCACAF Champions League,Group C,19.00 Gallos Blancos,San Francisco FC,2,0
+,2015-16,CONCACAF,CONCACAF Champions League,Group C,21.00 Hankook Verdes,Gallos Blancos,0,0
+,2015-16,CONCACAF,CONCACAF Champions League,Group C,19.00 San Francisco FC,Gallos Blancos,2,1
+,2015-16,CONCACAF,CONCACAF Champions League,Group C,21.00 Gallos Blancos,Hankook Verdes,8,0
+,2015-16,CONCACAF,CONCACAF Champions League,Group C,21.00 Hankook Verdes,San Francisco FC,2,1
+,2015-16,CONCACAF,CONCACAF Champions League,Group C,21.00 San Francisco FC,Hankook Verdes,8,0
+,2015-16,CONCACAF,CONCACAF Champions League,Group D,21.00 Los Angeles Galaxy,Central FC,5,1
+,2015-16,CONCACAF,CONCACAF Champions League,Group D,21.00 Los Angeles Galaxy,Comunicaciones,5,0
+,2015-16,CONCACAF,CONCACAF Champions League,Group D,21.00 Comunicaciones,Central FC,1,0
+,2015-16,CONCACAF,CONCACAF Champions League,Group D,19.00 Central FC,Comunicaciones,1,0
+,2015-16,CONCACAF,CONCACAF Champions League,Group D,19.00 Central FC,Los Angeles Galaxy,1,1
+,2015-16,CONCACAF,CONCACAF Champions League,Group D,21.00 Comunicaciones,Los Angeles Galaxy,1,1
+,2015-16,CONCACAF,CONCACAF Champions League,Group E,21.00 CF América,Motagua,4,0
+,2015-16,CONCACAF,CONCACAF Champions League,Group E,21.00 CF América,CD Walter Ferretti,1,0
+,2015-16,CONCACAF,CONCACAF Champions League,Group E,21.00 Motagua,CD Walter Ferretti,2,0
+,2015-16,CONCACAF,CONCACAF Champions League,Group E,21.00 CD Walter Ferretti,CF América,1,3
+,2015-16,CONCACAF,CONCACAF Champions League,Group E,19.00 CD Walter Ferretti,Motagua,1,2
+,2015-16,CONCACAF,CONCACAF Champions League,Group E,21.00 Motagua,CF América,1,1
+,2015-16,CONCACAF,CONCACAF Champions League,Group F,21.00 Vancouver Whitecaps,Seattle Sounders,1,1
+,2015-16,CONCACAF,CONCACAF Champions League,Group F,21.00 Seattle Sounders,Olimpia,2,1
+,2015-16,CONCACAF,CONCACAF Champions League,Group F,21.00 Olimpia,Seattle Sounders,1,0
+,2015-16,CONCACAF,CONCACAF Champions League,Group F,21.00 Vancouver Whitecaps,Olimpia,1,0
+,2015-16,CONCACAF,CONCACAF Champions League,Group F,21.00 Seattle Sounders,Vancouver Whitecaps,3,0
+,2015-16,CONCACAF,CONCACAF Champions League,Group F,21.00 Olimpia,Vancouver Whitecaps,1,0
+,2015-16,CONCACAF,CONCACAF Champions League,Gruppe G,21.00 CSD Municipal,Real Salt Lake,0,1
+,2015-16,CONCACAF,CONCACAF Champions League,Gruppe G,21.00 Santa Tecla FC,CSD Municipal,1,1
+,2015-16,CONCACAF,CONCACAF Champions League,Gruppe G,21.00 CSD Municipal,Santa Tecla FC,2,1
+,2015-16,CONCACAF,CONCACAF Champions League,Gruppe G,21.00 Santa Tecla FC,Real Salt Lake,0,0
+,2015-16,CONCACAF,CONCACAF Champions League,Gruppe G,21.00 Real Salt Lake,Santa Tecla FC,2,1
+,2015-16,CONCACAF,CONCACAF Champions League,Gruppe G,21.00 Real Salt Lake,CSD Municipal,1,0
+,2015-16,CONCACAF,CONCACAF Champions League,Gruppe H,19.00 Árabe Unido,Montego Bay United FC,3,0
+,2015-16,CONCACAF,CONCACAF Champions League,Gruppe H,19.00 Árabe Unido,D.C. United,0,1
+,2015-16,CONCACAF,CONCACAF Champions League,Gruppe H,19.00 D.C. United,Montego Bay United FC,3,0
+,2015-16,CONCACAF,CONCACAF Champions League,Gruppe H,19.00 D.C. United,Árabe Unido,2,0
+,2015-16,CONCACAF,CONCACAF Champions League,Gruppe H,19.00 Montego Bay United FC,D.C. United,3,3
+,2015-16,CONCACAF,CONCACAF Champions League,Gruppe H,19.00 Montego Bay United FC,Árabe Unido,1,2
+,2015-16,CONCACAF,CONCACAF Champions League,Quarterfinals,19.00 Gallos Blancos,D.C. United,2,0
+,2015-16,CONCACAF,CONCACAF Champions League,Quarterfinals,21.00 Seattle Sounders,CF América,2,2
+,2015-16,CONCACAF,CONCACAF Champions League,Quarterfinals,19.00 UANL Tigres,Real Salt Lake,2,0
+,2015-16,CONCACAF,CONCACAF Champions League,Quarterfinals,21.00 Los Angeles Galaxy,Santos Laguna,0,0
+,2015-16,CONCACAF,CONCACAF Champions League,Quarterfinals,19.00 D.C. United,Gallos Blancos,1,1
+,2015-16,CONCACAF,CONCACAF Champions League,Quarterfinals,21.00 Santos Laguna,Los Angeles Galaxy,4,0
+,2015-16,CONCACAF,CONCACAF Champions League,Quarterfinals,19.00 CF América,Seattle Sounders,3,1
+,2015-16,CONCACAF,CONCACAF Champions League,Quarterfinals,21.00 Real Salt Lake,UANL Tigres,1,1
+,2015-16,CONCACAF,CONCACAF Champions League,Semifinals,20.00 Gallos Blancos,UANL Tigres,0,0
+,2015-16,CONCACAF,CONCACAF Champions League,Semifinals,20.00 Santos Laguna,CF América,0,0
+,2015-16,CONCACAF,CONCACAF Champions League,Semifinals,19.00 UANL Tigres,Gallos Blancos,2,0
+,2015-16,CONCACAF,CONCACAF Champions League,Semifinals,21.00 CF América,Santos Laguna,1,0
+,2015-16,CONCACAF,CONCACAF Champions League,Final,20.45 UANL Tigres,CF América,0,2
+,2015-16,CONCACAF,CONCACAF Champions League,Final,20.45 CF América,UANL Tigres,2,1
+,2016-17,CONCACAF,CONCACAF Champions League,Group A,19.00 W Connection FC,Pumas UNAM,2,4
+,2016-17,CONCACAF,CONCACAF Champions League,Group A,21.00 Pumas UNAM,Honduras Progreso,2,0
+,2016-17,CONCACAF,CONCACAF Champions League,Group A,19.00 W Connection FC,Honduras Progreso,1,1
+,2016-17,CONCACAF,CONCACAF Champions League,Group A,21.00 Honduras Progreso,Pumas UNAM,2,1
+,2016-17,CONCACAF,CONCACAF Champions League,Group A,21.00 Honduras Progreso,W Connection FC,1,0
+,2016-17,CONCACAF,CONCACAF Champions League,Group A,21.00 Pumas UNAM,W Connection FC,8,1
+,2016-17,CONCACAF,CONCACAF Champions League,Group B,21.00 Portland Timbers,Dragón,2,1
+,2016-17,CONCACAF,CONCACAF Champions League,Group B,21.00 Deportivo Saprissa,Dragón,6,0
+,2016-17,CONCACAF,CONCACAF Champions League,Group B,21.00 Dragón,Deportivo Saprissa,0,0
+,2016-17,CONCACAF,CONCACAF Champions League,Group B,21.00 Deportivo Saprissa,Portland Timbers,4,2
+,2016-17,CONCACAF,CONCACAF Champions League,Group B,21.00 Dragón,Portland Timbers,1,2
+,2016-17,CONCACAF,CONCACAF Champions League,Group B,21.00 Portland Timbers,Deportivo Saprissa,1,1
+,2016-17,CONCACAF,CONCACAF Champions League,Group C,19.00 Central FC,Vancouver Whitecaps,0,1
+,2016-17,CONCACAF,CONCACAF Champions League,Group C,19.00 Central FC,Sporting Kansas City,2,2
+,2016-17,CONCACAF,CONCACAF Champions League,Group C,21.00 Vancouver Whitecaps,Sporting Kansas City,3,0
+,2016-17,CONCACAF,CONCACAF Champions League,Group C,19.00 Sporting Kansas City,Vancouver Whitecaps,1,2
+,2016-17,CONCACAF,CONCACAF Champions League,Group C,21.00 Vancouver Whitecaps,Central FC,4,1
+,2016-17,CONCACAF,CONCACAF Champions League,Group C,19.00 Sporting Kansas City,Central FC,3,1
+,2016-17,CONCACAF,CONCACAF Champions League,Group D,21.00 Don Bosco FC,CF Monterrey,0,3
+,2016-17,CONCACAF,CONCACAF Champions League,Group D,19.00 CF Monterrey,Árabe Unido,2,3
+,2016-17,CONCACAF,CONCACAF Champions League,Group D,19.00 Don Bosco FC,Árabe Unido,2,5
+,2016-17,CONCACAF,CONCACAF Champions League,Group D,19.00 Árabe Unido,CF Monterrey,2,1
+,2016-17,CONCACAF,CONCACAF Champions League,Group D,21.00 CF Monterrey,Don Bosco FC,3,0
+,2016-17,CONCACAF,CONCACAF Champions League,Group D,19.00 Árabe Unido,Don Bosco FC,2,0
+,2016-17,CONCACAF,CONCACAF Champions League,Group E,21.00 CF Pachuca,Olimpia,1,0
+,2016-17,CONCACAF,CONCACAF Champions League,Group E,21.00 Olimpia,Police United,4,0
+,2016-17,CONCACAF,CONCACAF Champions League,Group E,21.00 CF Pachuca,Police United,3,0
+,2016-17,CONCACAF,CONCACAF Champions League,Group E,19.00 Police United,CF Pachuca,0,11
+,2016-17,CONCACAF,CONCACAF Champions League,Group E,19.00 Police United,Olimpia,1,5
+,2016-17,CONCACAF,CONCACAF Champions League,Group E,21.00 Olimpia,CF Pachuca,4,4
+,2016-17,CONCACAF,CONCACAF Champions League,Group F,19.00 New York RB,Antigua GFC,3,0
+,2016-17,CONCACAF,CONCACAF Champions League,Group F,21.00 Alianza,New York RB,1,1
+,2016-17,CONCACAF,CONCACAF Champions League,Group F,19.00 Alianza,Antigua GFC,1,1
+,2016-17,CONCACAF,CONCACAF Champions League,Group F,19.00 New York RB,Alianza,1,0
+,2016-17,CONCACAF,CONCACAF Champions League,Group F,19.00 Antigua GFC,New York RB,0,0
+,2016-17,CONCACAF,CONCACAF Champions League,Group F,21.00 Antigua GFC,Alianza,1,3
+,2016-17,CONCACAF,CONCACAF Champions League,Gruppe G,21.00 Plaza Amador,CS Herediano,1,1
+,2016-17,CONCACAF,CONCACAF Champions League,Gruppe G,21.00 CS Herediano,UANL Tigres,1,3
+,2016-17,CONCACAF,CONCACAF Champions League,Gruppe G,21.00 UANL Tigres,Plaza Amador,3,1
+,2016-17,CONCACAF,CONCACAF Champions League,Gruppe G,21.00 CS Herediano,Plaza Amador,2,0
+,2016-17,CONCACAF,CONCACAF Champions League,Gruppe G,19.00 Plaza Amador,UANL Tigres,1,0
+,2016-17,CONCACAF,CONCACAF Champions League,Gruppe G,21.00 UANL Tigres,CS Herediano,3,0
+,2016-17,CONCACAF,CONCACAF Champions League,Gruppe H,19.00 FC Dallas,Real Estelí FC,2,1
+,2016-17,CONCACAF,CONCACAF Champions League,Gruppe H,19.00 Deportivo Suchitepéquez,Real Estelí FC,1,0
+,2016-17,CONCACAF,CONCACAF Champions League,Gruppe H,21.00 Real Estelí FC,FC Dallas,1,1
+,2016-17,CONCACAF,CONCACAF Champions League,Gruppe H,21.00 Real Estelí FC,Deportivo Suchitepéquez,1,1
+,2016-17,CONCACAF,CONCACAF Champions League,Gruppe H,19.00 FC Dallas,Deportivo Suchitepéquez,0,0
+,2016-17,CONCACAF,CONCACAF Champions League,Gruppe H,19.00 Deportivo Suchitepéquez,FC Dallas,2,5
+,2016-17,CONCACAF,CONCACAF Champions League,Quarterfinals,20.00 Deportivo Saprissa,CF Pachuca,0,0
+,2016-17,CONCACAF,CONCACAF Champions League,Quarterfinals,19.00 New York RB,Vancouver Whitecaps,1,1
+,2016-17,CONCACAF,CONCACAF Champions League,Quarterfinals,21.00 UANL Tigres,Pumas UNAM,1,1
+,2016-17,CONCACAF,CONCACAF Champions League,Quarterfinals,19.00 FC Dallas,Árabe Unido,4,0
+,2016-17,CONCACAF,CONCACAF Champions League,Quarterfinals,21.00 CF Pachuca,Deportivo Saprissa,4,0
+,2016-17,CONCACAF,CONCACAF Champions League,Quarterfinals,19.00 Árabe Unido,FC Dallas,2,1
+,2016-17,CONCACAF,CONCACAF Champions League,Quarterfinals,21.00 Pumas UNAM,UANL Tigres,0,3
+,2016-17,CONCACAF,CONCACAF Champions League,Quarterfinals,21.00 Vancouver Whitecaps,New York RB,2,0
+,2016-17,CONCACAF,CONCACAF Champions League,Semifinals,20.00 UANL Tigres,Vancouver Whitecaps,2,0
+,2016-17,CONCACAF,CONCACAF Champions League,Semifinals,18.00 FC Dallas,CF Pachuca,2,1
+,2016-17,CONCACAF,CONCACAF Champions League,Semifinals,21.00 CF Pachuca,FC Dallas,3,1
+,2016-17,CONCACAF,CONCACAF Champions League,Semifinals,21.00 Vancouver Whitecaps,UANL Tigres,1,2
+,2016-17,CONCACAF,CONCACAF Champions League,Final,21.00 UANL Tigres,CF Pachuca,1,1
+,2016-17,CONCACAF,CONCACAF Champions League,Final,21.00 CF Pachuca,UANL Tigres,1,0
+,2018,CONCACAF,CONCACAF Champions League,Round of 16,19.00 CS Herediano,UANL Tigres,2,2
+,2018,CONCACAF,CONCACAF Champions League,Round of 16,21.00 Colorado Rapids,Toronto FC,0,2
+,2018,CONCACAF,CONCACAF Champions League,Round of 16,19.00 Tauro FC,FC Dallas,1,0
+,2018,CONCACAF,CONCACAF Champions League,Round of 16,Deportivo Saprissa,CF América,1,5
+,2018,CONCACAF,CONCACAF Champions League,Round of 16,21.00 Motagua,Club Tijuana,0,1
+,2018,CONCACAF,CONCACAF Champions League,Round of 16,19.00 Cibao FC,Deportivo Guadalajara,0,2
+,2018,CONCACAF,CONCACAF Champions League,Round of 16,21.00 Santa Tecla FC,Seattle Sounders,2,1
+,2018,CONCACAF,CONCACAF Champions League,Round of 16,Olimpia,New York RB,1,1
+,2018,CONCACAF,CONCACAF Champions League,Round of 16,19.00 UANL Tigres,CS Herediano,3,1
+,2018,CONCACAF,CONCACAF Champions League,Round of 16,Toronto FC,Colorado Rapids,0,0
+,2018,CONCACAF,CONCACAF Champions League,Round of 16,21.00 Club Tijuana,Motagua,1,1
+,2018,CONCACAF,CONCACAF Champions League,Round of 16,19.00 Deportivo Guadalajara,Cibao FC,5,0
+,2018,CONCACAF,CONCACAF Champions League,Round of 16,FC Dallas,Tauro FC,3,2
+,2018,CONCACAF,CONCACAF Champions League,Round of 16,21.00 CF América,Deportivo Saprissa,1,1
+,2018,CONCACAF,CONCACAF Champions League,Round of 16,19.00 New York RB,Olimpia,2,0
+,2018,CONCACAF,CONCACAF Champions League,Round of 16,21.00 Seattle Sounders,Santa Tecla FC,4,0
+,2018,CONCACAF,CONCACAF Champions League,Quarterfinals,19.00 CF América,Tauro FC,4,0
+,2018,CONCACAF,CONCACAF Champions League,Quarterfinals,21.00 Club Tijuana,New York RB,0,2
+,2018,CONCACAF,CONCACAF Champions League,Quarterfinals,19.00 Toronto FC,UANL Tigres,2,1
+,2018,CONCACAF,CONCACAF Champions League,Quarterfinals,21.00 Seattle Sounders,Deportivo Guadalajara,1,0
+,2018,CONCACAF,CONCACAF Champions League,Quarterfinals,18.00 New York RB,Club Tijuana,3,1
+,2018,CONCACAF,CONCACAF Champions League,Quarterfinals,20.00 UANL Tigres,Toronto FC,3,2
+,2018,CONCACAF,CONCACAF Champions League,Quarterfinals,18.00 Tauro FC,CF América,1,3
+,2018,CONCACAF,CONCACAF Champions League,Quarterfinals,20.00 Deportivo Guadalajara,Seattle Sounders,3,0
+,2018,CONCACAF,CONCACAF Champions League,Semifinals,19.00 Toronto FC,CF América,3,1
+,2018,CONCACAF,CONCACAF Champions League,Semifinals,21.00 Deportivo Guadalajara,New York RB,1,0
+,2018,CONCACAF,CONCACAF Champions League,Semifinals,19.00 New York RB,Deportivo Guadalajara,0,0
+,2018,CONCACAF,CONCACAF Champions League,Semifinals,21.00 CF América,Toronto FC,1,1
+,2018,CONCACAF,CONCACAF Champions League,Final,19.15 Toronto FC,Deportivo Guadalajara,1,2
+,2018,CONCACAF,CONCACAF Champions League,Final,20.30 Deportivo Guadalajara,Toronto FC,4,2
+,2019,CONCACAF,CONCACAF Champions League,Round of 16,19.00 Deportivo Saprissa,UANL Tigres,1,0
+,2019,CONCACAF,CONCACAF Champions League,Round of 16,Independiente de La Chorrera,Toronto FC,4,0
+,2019,CONCACAF,CONCACAF Champions League,Round of 16,21.00 Deportivo Guastatoya,Houston Dynamo,0,1
+,2019,CONCACAF,CONCACAF Champions League,Round of 16,19.00 Marathón,Santos Laguna,2,6
+,2019,CONCACAF,CONCACAF Champions League,Round of 16,CD Pantoja,New York RB,0,2
+,2019,CONCACAF,CONCACAF Champions League,Round of 16,21.00 Alianza,CF Monterrey,0,0
+,2019,CONCACAF,CONCACAF Champions League,Round of 16,19.00 Sporting Kansas City,Deportivo Toluca,3,0
+,2019,CONCACAF,CONCACAF Champions League,Round of 16,21.00 CS Herediano,Atlanta United FC,3,1
+,2019,CONCACAF,CONCACAF Champions League,Round of 16,19.00 Toronto FC,Independiente de La Chorrera,1,1
+,2019,CONCACAF,CONCACAF Champions League,Round of 16,20.30 Houston Dynamo,Deportivo Guastatoya,2,1
+,2019,CONCACAF,CONCACAF Champions League,Round of 16,21.00 UANL Tigres,Deportivo Saprissa,5,1
+,2019,CONCACAF,CONCACAF Champions League,Round of 16,19.00 Santos Laguna,Marathón,5,0
+,2019,CONCACAF,CONCACAF Champions League,Round of 16,New York RB,CD Pantoja,3,0
+,2019,CONCACAF,CONCACAF Champions League,Round of 16,21.00 CF Monterrey,Alianza,1,0
+,2019,CONCACAF,CONCACAF Champions League,Round of 16,19.00 Atlanta United FC,CS Herediano,4,0
+,2019,CONCACAF,CONCACAF Champions League,Round of 16,21.00 Deportivo Toluca,Sporting Kansas City,0,2
+,2019,CONCACAF,CONCACAF Champions League,Quarterfinals,19.00 New York RB,Santos Laguna,0,2
+,2019,CONCACAF,CONCACAF Champions League,Quarterfinals,21.00 Houston Dynamo,UANL Tigres,0,2
+,2019,CONCACAF,CONCACAF Champions League,Quarterfinals,19.00 Independiente de La Chorrera,Sporting Kansas City,2,1
+,2019,CONCACAF,CONCACAF Champions League,Quarterfinals,21.00 CF Monterrey,Atlanta United FC,3,0
+,2019,CONCACAF,CONCACAF Champions League,Quarterfinals,19.00 Santos Laguna,New York RB,4,2
+,2019,CONCACAF,CONCACAF Champions League,Quarterfinals,21.00 UANL Tigres,Houston Dynamo,1,0
+,2019,CONCACAF,CONCACAF Champions League,Quarterfinals,18.00 Atlanta United FC,CF Monterrey,1,0
+,2019,CONCACAF,CONCACAF Champions League,Quarterfinals,18.00 Sporting Kansas City,Independiente de La Chorrera,3,0
+,2019,CONCACAF,CONCACAF Champions League,Semifinals,20.00 UANL Tigres,Santos Laguna,3,0
+,2019,CONCACAF,CONCACAF Champions League,Semifinals,20.00 CF Monterrey,Sporting Kansas City,5,0
+,2019,CONCACAF,CONCACAF Champions League,Semifinals,19.00 Santos Laguna,UANL Tigres,3,2
+,2019,CONCACAF,CONCACAF Champions League,Semifinals,20.00 Sporting Kansas City,CF Monterrey,2,5
+,2019,CONCACAF,CONCACAF Champions League,Final,21.00 UANL Tigres,CF Monterrey,0,1
+,2019,CONCACAF,CONCACAF Champions League,Final,21.00 CF Monterrey,UANL Tigres,1,1
+,2020,CONCACAF,CONCACAF Champions League,Round of 16,19.00 Portmore United,Cruz Azul,1,2
+,2020,CONCACAF,CONCACAF Champions League,Round of 16,21.00 Motagua,Atlanta United FC,1,1
+,2020,CONCACAF,CONCACAF Champions League,Round of 16,Club León,Los Angeles FC,2,0
+,2020,CONCACAF,CONCACAF Champions League,Round of 16,19.00 Alianza,UANL Tigres,2,1
+,2020,CONCACAF,CONCACAF Champions League,Round of 16,Deportivo Saprissa,Impact de Montréal,2,2
+,2020,CONCACAF,CONCACAF Champions League,Round of 16,21.00 Comunicaciones,CF América,1,1
+,2020,CONCACAF,CONCACAF Champions League,Round of 16,19.00 AD San Carlos,New York City FC,3,5
+,2020,CONCACAF,CONCACAF Champions League,Round of 16,21.00 Olimpia,Seattle Sounders,2,2
+,2020,CONCACAF,CONCACAF Champions League,Round of 16,19.00 Atlanta United FC,Motagua,3,0
+,2020,CONCACAF,CONCACAF Champions League,Round of 16,21.15 Cruz Azul,Portmore United,4,0
+,2020,CONCACAF,CONCACAF Champions League,Round of 16,17.00 New York City FC,AD San Carlos,1,0
+,2020,CONCACAF,CONCACAF Champions League,Round of 16,19.00 UANL Tigres,Alianza,4,2
+,2020,CONCACAF,CONCACAF Champions League,Round of 16,Impact de Montréal,Deportivo Saprissa,0,0
+,2020,CONCACAF,CONCACAF Champions League,Round of 16,21.15 CF América,Comunicaciones,5,3
+,2020,CONCACAF,CONCACAF Champions League,Round of 16,21.00 Los Angeles FC,Club León,3,0
+,2020,CONCACAF,CONCACAF Champions League,Round of 16,Seattle Sounders,Olimpia,2,4
+,2020,CONCACAF,CONCACAF Champions League,Quarterfinals,18.00 Impact de Montréal,Olimpia,1,2
+,2020,CONCACAF,CONCACAF Champions League,Quarterfinals,18.00 New York City FC,UANL Tigres,0,1
+,2020,CONCACAF,CONCACAF Champions League,Quarterfinals,20.30 CF América,Atlanta United FC,3,0
+,2020,CONCACAF,CONCACAF Champions League,Quarterfinals,21.30 Los Angeles FC,Cruz Azul,2,1
+,2020,CONCACAF,CONCACAF Champions League,Quarterfinals,19.00 Olimpia,Impact de Montréal,0,1
+,2020,CONCACAF,CONCACAF Champions League,Quarterfinals,21.30 UANL Tigres,New York City FC,4,0
+,2020,CONCACAF,CONCACAF Champions League,Quarterfinals,19.00 Atlanta United FC,CF América,1,0
+,2020,CONCACAF,CONCACAF Champions League,Semifinals,19.00 UANL Tigres,Olimpia,3,0
+,2020,CONCACAF,CONCACAF Champions League,Semifinals,21.30 Los Angeles FC,CF América,3,1
+,2020,CONCACAF,CONCACAF Champions League,Final,21.00 Los Angeles FC,UANL Tigres,1,2
+,2021,CONCACAF,CONCACAF Champions League,Round of 16,17.00 Marathón,Portland Timbers,2,2
+,2021,CONCACAF,CONCACAF Champions League,Round of 16,19.00 LD Alajuelense,Atlanta United FC,0,1
+,2021,CONCACAF,CONCACAF Champions League,Round of 16,21.00 Arcahaie FC,Cruz Azul,0,0
+,2021,CONCACAF,CONCACAF Champions League,Round of 16,17.00 Deportivo Saprissa,Philadelphia Union,0,1
+,2021,CONCACAF,CONCACAF Champions League,Round of 16,19.00 Club León,Toronto FC,1,1
+,2021,CONCACAF,CONCACAF Champions League,Round of 16,21.00 Olimpia,CF América,1,2
+,2021,CONCACAF,CONCACAF Champions League,Round of 16,19.00 Real Estelí FC,Columbus Crew,0,4
+,2021,CONCACAF,CONCACAF Champions League,Round of 16,21.00 CD Pantoja,CF Monterrey,0,3
+,2021,CONCACAF,CONCACAF Champions League,Round of 16,17.00 Atlanta United FC,LD Alajuelense,1,0
+,2021,CONCACAF,CONCACAF Champions League,Round of 16,19.00 Portland Timbers,Marathón,5,0
+,2021,CONCACAF,CONCACAF Champions League,Round of 16,21.00 Cruz Azul,Arcahaie FC,8,0
+,2021,CONCACAF,CONCACAF Champions League,Round of 16,17.00 Toronto FC,Club León,2,1
+,2021,CONCACAF,CONCACAF Champions League,Round of 16,19.00 Philadelphia Union,Deportivo Saprissa,4,0
+,2021,CONCACAF,CONCACAF Champions League,Round of 16,CF América,Olimpia,0,1
+,2021,CONCACAF,CONCACAF Champions League,Round of 16,19.00 Columbus Crew,Real Estelí FC,1,0
+,2021,CONCACAF,CONCACAF Champions League,Round of 16,21.00 CF Monterrey,CD Pantoja,3,1
+,2021,CONCACAF,CONCACAF Champions League,Quarterfinals,19.00 Atlanta United FC,Philadelphia Union,0,3
+,2021,CONCACAF,CONCACAF Champions League,Quarterfinals,21.00 Toronto FC,Cruz Azul,1,3
+,2021,CONCACAF,CONCACAF Champions League,Quarterfinals,19.30 Columbus Crew,CF Monterrey,2,2
+,2021,CONCACAF,CONCACAF Champions League,Quarterfinals,21.30 Portland Timbers,CF América,1,1
+,2021,CONCACAF,CONCACAF Champions League,Quarterfinals,19.00 Philadelphia Union,Atlanta United FC,1,1
+,2021,CONCACAF,CONCACAF Champions League,Quarterfinals,21.15 Cruz Azul,Toronto FC,1,0
+,2021,CONCACAF,CONCACAF Champions League,Quarterfinals,19.00 CF Monterrey,Columbus Crew,3,0
+,2021,CONCACAF,CONCACAF Champions League,Quarterfinals,21.15 CF América,Portland Timbers,3,1
+,2021,CONCACAF,CONCACAF Champions League,Semifinals,21.00 CF Monterrey,Cruz Azul,1,0
+,2021,CONCACAF,CONCACAF Champions League,Semifinals,21.00 CF América,Philadelphia Union,2,0
+,2021,CONCACAF,CONCACAF Champions League,Semifinals,20.00 Philadelphia Union,CF América,0,2
+,2021,CONCACAF,CONCACAF Champions League,Semifinals,21.00 Cruz Azul,CF Monterrey,1,4
+,2021,CONCACAF,CONCACAF Champions League,Final,21.00 CF Monterrey,CF América,1,0
+,2022,CONCACAF,CONCACAF Champions League,Round of 16,19.00 Santos de Guápiles,New York City FC,0,2
+,2022,CONCACAF,CONCACAF Champions League,Round of 16,21.00 Santos Laguna,CF Montréal,1,0
+,2022,CONCACAF,CONCACAF Champions League,Round of 16,17.00 Deportivo Guastatoya,Club León,0,2
+,2022,CONCACAF,CONCACAF Champions League,Round of 16,19.00 Forge FC,Cruz Azul,0,1
+,2022,CONCACAF,CONCACAF Champions League,Round of 16,21.00 Deportivo Saprissa,Pumas UNAM,2,2
+,2022,CONCACAF,CONCACAF Champions League,Round of 16,18.00 Comunicaciones,Colorado Rapids,1,0
+,2022,CONCACAF,CONCACAF Champions League,Round of 16,20.00 Motagua,Seattle Sounders,0,0
+,2022,CONCACAF,CONCACAF Champions League,Round of 16,16.30 Cavaly AS,New England Revolution,0,3
+,2022,CONCACAF,CONCACAF Champions League,Round of 16,New England Revolution,Cavaly AS,3,0
+,2022,CONCACAF,CONCACAF Champions League,Round of 16,21.15 Club León,Deportivo Guastatoya,1,0
+,2022,CONCACAF,CONCACAF Champions League,Round of 16,17.00 New York City FC,Santos de Guápiles,4,0
+,2022,CONCACAF,CONCACAF Champions League,Round of 16,19.15 CF Montréal,Santos Laguna,3,0
+,2022,CONCACAF,CONCACAF Champions League,Round of 16,Colorado Rapids,Comunicaciones,3,4
+,2022,CONCACAF,CONCACAF Champions League,Round of 16,21.30 Pumas UNAM,Deportivo Saprissa,4,1
+,2022,CONCACAF,CONCACAF Champions League,Round of 16,19.30 Cruz Azul,Forge FC,3,1
+,2022,CONCACAF,CONCACAF Champions League,Round of 16,21.45 Seattle Sounders,Motagua,5,0
+,2022,CONCACAF,CONCACAF Champions League,Quarterfinals,19.00 New York City FC,Comunicaciones,3,1
+,2022,CONCACAF,CONCACAF Champions League,Quarterfinals,21.00 Seattle Sounders,Club León,3,0
+,2022,CONCACAF,CONCACAF Champions League,Quarterfinals,19.00 New England Revolution,Pumas UNAM,3,0
+,2022,CONCACAF,CONCACAF Champions League,Quarterfinals,21.00 Cruz Azul,CF Montréal,1,0
+,2022,CONCACAF,CONCACAF Champions League,Quarterfinals,18.00 Comunicaciones,New York City FC,4,2
+,2022,CONCACAF,CONCACAF Champions League,Quarterfinals,18.00 CF Montréal,Cruz Azul,1,1
+,2022,CONCACAF,CONCACAF Champions League,Quarterfinals,20.15 Pumas UNAM,New England Revolution,3,0
+,2022,CONCACAF,CONCACAF Champions League,Quarterfinals,18.30 Club León,Seattle Sounders,1,1
+,2022,CONCACAF,CONCACAF Champions League,Semifinals,21.00 Pumas UNAM,Cruz Azul,2,1
+,2022,CONCACAF,CONCACAF Champions League,Semifinals,21.00 Seattle Sounders,New York City FC,3,1
+,2022,CONCACAF,CONCACAF Champions League,Semifinals,21.00 Cruz Azul,Pumas UNAM,0,0
+,2022,CONCACAF,CONCACAF Champions League,Semifinals,20.00 New York City FC,Seattle Sounders,1,1
+,2022,CONCACAF,CONCACAF Champions League,Final,21.30 Pumas UNAM,Seattle Sounders,2,2
+,2022,CONCACAF,CONCACAF Champions League,Final,21.00 Seattle Sounders,Pumas UNAM,3,0
+,2023-24,CAF,CAF Champions League,Qual. Round 1,16.00 KMKM,St. George SC,1,2
+,2023-24,CAF,CAF Champions League,Qual. Round 1,22.00 CS Constantine,Étoile du Sahel,0,2
+,2023-24,CAF,CAF Champions League,Qual. Round 1,15.30 Djabal Club,Orlando Pirates,0,1
+,2023-24,CAF,CAF Champions League,Qual. Round 1,16.00 APR FC,Gaadiidka FC,1,1
+,2023-24,CAF,CAF Champions League,Qual. Round 1,African Stars,Power Dynamos,2,1
+,2023-24,CAF,CAF Champions League,Qual. Round 1,17.30 CS Bendjé,Bumamuru FC,1,1
+,2023-24,CAF,CAF Champions League,Qual. Round 1,19.00 Bo Rangers,LISCR FC,1,1
+,2023-24,CAF,CAF Champions League,Qual. Round 1,AS Real Bamako,Coton Sport Garoua,0,0
+,2023-24,CAF,CAF Champions League,Qual. Round 1,16.00 UD Songo,Green Mamba FC,1,0
+,2023-24,CAF,CAF Champions League,Qual. Round 1,Jwaneng Galaxy,Vipers SC,2,0
+,2023-24,CAF,CAF Champions League,Qual. Round 1,17.00 CD 1º de Agosto,AS Vita Club,1,0
+,2023-24,CAF,CAF Champions League,Qual. Round 1,AS Ali Sabieh,Young Africans,0,2
+,2023-24,CAF,CAF Champions League,Qual. Round 1,17.30 AS Otôho,Al Merrikh SC,1,1
+,2023-24,CAF,CAF Champions League,Qual. Round 1,18.00 Medeama SC,Remo Stars,1,0
+,2023-24,CAF,CAF Champions League,Qual. Round 1,Dragons Bata,Big Bullets FC,0,2
+,2023-24,CAF,CAF Champions League,Qual. Round 1,ASKO Kara,FAR de Rabat,0,1
+,2023-24,CAF,CAF Champions League,Qual. Round 1,19.00 Hafia FC,AS Génération Foot,0,0
+,2023-24,CAF,CAF Champions League,Qual. Round 1,Coton FC,ASEC Mimosas,0,0
+,2023-24,CAF,CAF Champions League,Qual. Round 1,FC Nouadhibou,Al Ahly Tripolis,2,0
+,2023-24,CAF,CAF Champions League,Qual. Round 1,20.00 Al Ahly Benghazi,Enyimba Aba,4,3
+,2023-24,CAF,CAF Champions League,Qual. Round 1,21.00 Wau Salaam FC,Al Hilal Omdurman,0,3
+,2023-24,CAF,CAF Champions League,Qual. Round 1,16.00 AS GNN Niamey,AS Douanes,0,3
+,2023-24,CAF,CAF Champions League,Qual. Round 1,16.00 Gaadiidka FC,APR FC,0,2
+,2023-24,CAF,CAF Champions League,Qual. Round 1,15.00 Bumamuru FC,CS Bendjé,5,1
+,2023-24,CAF,CAF Champions League,Qual. Round 1,16.00 Al Merrikh SC,AS Otôho,0,0
+,2023-24,CAF,CAF Champions League,Qual. Round 1,20.30 Orlando Pirates,Djabal Club,3,0
+,2023-24,CAF,CAF Champions League,Qual. Round 1,16.00 Power Dynamos,African Stars,1,0
+,2023-24,CAF,CAF Champions League,Qual. Round 1,Green Mamba FC,UD Songo,1,1
+,2023-24,CAF,CAF Champions League,Qual. Round 1,Al Hilal Omdurman,Wau Salaam FC,3,0
+,2023-24,CAF,CAF Champions League,Qual. Round 1,17.00 Young Africans,AS Ali Sabieh,5,1
+,2023-24,CAF,CAF Champions League,Qual. Round 1,18.00 Étoile du Sahel,CS Constantine,1,0
+,2023-24,CAF,CAF Champions League,Qual. Round 1,20.00 Vipers SC,Jwaneng Galaxy,2,1
+,2023-24,CAF,CAF Champions League,Qual. Round 1,22.00 FAR de Rabat,ASKO Kara,7,0
+,2023-24,CAF,CAF Champions League,Qual. Round 1,16.00 St. George SC,KMKM,3,1
+,2023-24,CAF,CAF Champions League,Qual. Round 1,Big Bullets FC,Dragons Bata,1,0
+,2023-24,CAF,CAF Champions League,Qual. Round 1,17.00 Enyimba Aba,Al Ahly Benghazi,0,0
+,2023-24,CAF,CAF Champions League,Qual. Round 1,Coton Sport Garoua,AS Real Bamako,0,2
+,2023-24,CAF,CAF Champions League,Qual. Round 1,AS Vita Club,CD 1º de Agosto,1,1
+,2023-24,CAF,CAF Champions League,Qual. Round 1,18.00 Remo Stars,Medeama SC,2,3
+,2023-24,CAF,CAF Champions League,Qual. Round 1,Al Ahly Tripolis,FC Nouadhibou,1,0
+,2023-24,CAF,CAF Champions League,Qual. Round 1,18.30 LISCR FC,Bo Rangers,0,1
+,2023-24,CAF,CAF Champions League,Qual. Round 1,19.00 ASEC Mimosas,Coton FC,2,0
+,2023-24,CAF,CAF Champions League,Qual. Round 1,22.00 AS Génération Foot,Hafia FC,2,2
+,2023-24,CAF,CAF Champions League,Qual. Round 1,19.00 AS Douanes,AS GNN Niamey,3,0
+,2023-24,CAF,CAF Champions League,Qual. Round 2,16.00 Bumamuru FC,Mamelodi Sundowns,0,4
+,2023-24,CAF,CAF Champions League,Qual. Round 2,16.00 Power Dynamos,Simba SC,2,2
+,2023-24,CAF,CAF Champions League,Qual. Round 2,Al Merrikh SC,Young Africans,0,2
+,2023-24,CAF,CAF Champions League,Qual. Round 2,18.00 Étoile du Sahel,FAR de Rabat,1,0
+,2023-24,CAF,CAF Champions League,Qual. Round 2,19.00 AS Real Bamako,FC Nouadhibou,0,3
+,2023-24,CAF,CAF Champions League,Qual. Round 2,16.00 APR FC,Pyramids FC,0,0
+,2023-24,CAF,CAF Champions League,Qual. Round 2,UD Songo,Petro Atlético,1,2
+,2023-24,CAF,CAF Champions League,Qual. Round 2,Big Bullets FC,TP Mazembe,0,1
+,2023-24,CAF,CAF Champions League,Qual. Round 2,Jwaneng Galaxy,Orlando Pirates,1,0
+,2023-24,CAF,CAF Champions League,Qual. Round 2,18.00 Medeama SC,Horoya AC,3,1
+,2023-24,CAF,CAF Champions League,Qual. Round 2,CD 1º de Agosto,Al Hilal Omdurman,0,0
+,2023-24,CAF,CAF Champions League,Qual. Round 2,19.00 Hafia FC,Wydad AC,1,1
+,2023-24,CAF,CAF Champions League,Qual. Round 2,AS Douanes,Espérance de Tunis,0,1
+,2023-24,CAF,CAF Champions League,Qual. Round 2,Bo Rangers,CR Bélouizdad,1,3
+,2023-24,CAF,CAF Champions League,Qual. Round 2,17.30 Al Ahly Benghazi,ASEC Mimosas,0,0
+,2023-24,CAF,CAF Champions League,Qual. Round 2,20.00 St. George SC,Al Ahly SC,0,3
+,2023-24,CAF,CAF Champions League,Qual. Round 2,18.00 Pyramids FC,APR FC,6,1
+,2023-24,CAF,CAF Champions League,Qual. Round 2,19.00 Al Ahly SC,St. George SC,4,0
+,2023-24,CAF,CAF Champions League,Qual. Round 2,20.30 Orlando Pirates,Jwaneng Galaxy,4,5
+,2023-24,CAF,CAF Champions League,Qual. Round 2,16.00 TP Mazembe,Big Bullets FC,4,0
+,2023-24,CAF,CAF Champions League,Qual. Round 2,17.00 Petro Atlético,UD Songo,3,1
+,2023-24,CAF,CAF Champions League,Qual. Round 2,19.00 Espérance de Tunis,AS Douanes,0,0
+,2023-24,CAF,CAF Champions League,Qual. Round 2,Horoya AC,Medeama SC,2,1
+,2023-24,CAF,CAF Champions League,Qual. Round 2,Mamelodi Sundowns,Bumamuru FC,2,0
+,2023-24,CAF,CAF Champions League,Qual. Round 2,Young Africans,Al Merrikh SC,1,0
+,2023-24,CAF,CAF Champions League,Qual. Round 2,21.30 FAR de Rabat,Étoile du Sahel,1,2
+,2023-24,CAF,CAF Champions League,Qual. Round 2,22.00 Wydad AC,Hafia FC,3,0
+,2023-24,CAF,CAF Champions League,Qual. Round 2,16.00 Simba SC,Power Dynamos,1,1
+,2023-24,CAF,CAF Champions League,Qual. Round 2,19.00 ASEC Mimosas,Al Ahly Benghazi,2,1
+,2023-24,CAF,CAF Champions League,Qual. Round 2,21.00 FC Nouadhibou,AS Real Bamako,1,1
+,2023-24,CAF,CAF Champions League,Qual. Round 2,Al Hilal Omdurman,CD 1º de Agosto,2,1
+,2023-24,CAF,CAF Champions League,Qual. Round 2,20.00 CR Bélouizdad,Bo Rangers,3,1
+,2023-24,CAF,CAF Champions League,Group A,18.00 Pyramids FC,TP Mazembe,1,0
+,2023-24,CAF,CAF Champions League,Group A,15.00 Mamelodi Sundowns,FC Nouadhibou,3,0
+,2023-24,CAF,CAF Champions League,Group A,15.00 TP Mazembe,Mamelodi Sundowns,1,0
+,2023-24,CAF,CAF Champions League,Group A,18.00 FC Nouadhibou,Pyramids FC,2,0
+,2023-24,CAF,CAF Champions League,Group A,18.00 FC Nouadhibou,TP Mazembe,0,0
+,2023-24,CAF,CAF Champions League,Group A,15.00 Mamelodi Sundowns,Pyramids FC,0,0
+,2023-24,CAF,CAF Champions League,Group A,15.00 TP Mazembe,FC Nouadhibou,2,0
+,2023-24,CAF,CAF Champions League,Group A,18.00 Pyramids FC,Mamelodi Sundowns,0,1
+,2023-24,CAF,CAF Champions League,Group A,15.00 TP Mazembe,Pyramids FC,3,0
+,2023-24,CAF,CAF Champions League,Group A,18.00 FC Nouadhibou,Mamelodi Sundowns,0,2
+,2023-24,CAF,CAF Champions League,Group A,15.00 Pyramids FC,FC Nouadhibou,2,2
+,2023-24,CAF,CAF Champions League,Group A,Mamelodi Sundowns,TP Mazembe,1,0
+,2023-24,CAF,CAF Champions League,Group B,15.00 Simba SC,ASEC Mimosas,1,1
+,2023-24,CAF,CAF Champions League,Group B,21.00 Wydad AC,Jwaneng Galaxy,0,1
+,2023-24,CAF,CAF Champions League,Group B,15.00 Jwaneng Galaxy,Simba SC,0,0
+,2023-24,CAF,CAF Champions League,Group B,21.00 ASEC Mimosas,Wydad AC,1,0
+,2023-24,CAF,CAF Champions League,Group B,15.00 Jwaneng Galaxy,ASEC Mimosas,0,2
+,2023-24,CAF,CAF Champions League,Group B,21.00 Wydad AC,Simba SC,1,0
+,2023-24,CAF,CAF Champions League,Group B,15.00 Simba SC,Wydad AC,2,0
+,2023-24,CAF,CAF Champions League,Group B,18.00 ASEC Mimosas,Jwaneng Galaxy,3,0
+,2023-24,CAF,CAF Champions League,Group B,21.00 ASEC Mimosas,Simba SC,0,0
+,2023-24,CAF,CAF Champions League,Group B,15.00 Jwaneng Galaxy,Wydad AC,0,1
+,2023-24,CAF,CAF Champions League,Group B,18.00 Wydad AC,ASEC Mimosas,1,0
+,2023-24,CAF,CAF Champions League,Group B,Simba SC,Jwaneng Galaxy,6,0
+,2023-24,CAF,CAF Champions League,Group C,18.00 Petro Atlético,Al Hilal Omdurman,1,0
+,2023-24,CAF,CAF Champions League,Group C,Espérance de Tunis,Étoile du Sahel,2,0
+,2023-24,CAF,CAF Champions League,Group C,18.00 Al Hilal Omdurman,Espérance de Tunis,3,1
+,2023-24,CAF,CAF Champions League,Group C,21.00 Étoile du Sahel,Petro Atlético,0,2
+,2023-24,CAF,CAF Champions League,Group C,21.00 Étoile du Sahel,Al Hilal Omdurman,1,0
+,2023-24,CAF,CAF Champions League,Group C,21.00 Espérance de Tunis,Petro Atlético,0,0
+,2023-24,CAF,CAF Champions League,Group C,18.00 Petro Atlético,Espérance de Tunis,0,0
+,2023-24,CAF,CAF Champions League,Group C,21.00 Al Hilal Omdurman,Étoile du Sahel,1,1
+,2023-24,CAF,CAF Champions League,Group C,18.00 Al Hilal Omdurman,Petro Atlético,0,0
+,2023-24,CAF,CAF Champions League,Group C,21.00 Étoile du Sahel,Espérance de Tunis,0,2
+,2023-24,CAF,CAF Champions League,Group C,21.00 Espérance de Tunis,Al Hilal Omdurman,1,0
+,2023-24,CAF,CAF Champions League,Group C,Petro Atlético,Étoile du Sahel,2,0
+,2023-24,CAF,CAF Champions League,Group D,21.00 CR Bélouizdad,Young Africans,3,0
+,2023-24,CAF,CAF Champions League,Group D,21.00 Al Ahly SC,Medeama SC,3,0
+,2023-24,CAF,CAF Champions League,Group D,18.00 Medeama SC,CR Bélouizdad,2,1
+,2023-24,CAF,CAF Champions League,Group D,18.00 Young Africans,Al Ahly SC,1,1
+,2023-24,CAF,CAF Champions League,Group D,18.00 Al Ahly SC,CR Bélouizdad,0,0
+,2023-24,CAF,CAF Champions League,Group D,Medeama SC,Young Africans,1,1
+,2023-24,CAF,CAF Champions League,Group D,15.00 Young Africans,Medeama SC,3,0
+,2023-24,CAF,CAF Champions League,Group D,21.00 CR Bélouizdad,Al Ahly SC,0,0
+,2023-24,CAF,CAF Champions League,Group D,18.00 Medeama SC,Al Ahly SC,0,1
+,2023-24,CAF,CAF Champions League,Group D,18.00 Young Africans,CR Bélouizdad,4,0
+,2023-24,CAF,CAF Champions League,Group D,18.00 Al Ahly SC,Young Africans,1,0
+,2023-24,CAF,CAF Champions League,Group D,CR Bélouizdad,Medeama SC,3,0
+,2023-24,CAF,CAF Champions League,Quarterfinals,20.00 Simba SC,Al Ahly SC,0,1
+,2023-24,CAF,CAF Champions League,Quarterfinals,15.00 TP Mazembe,Petro Atlético,0,0
+,2023-24,CAF,CAF Champions League,Quarterfinals,20.00 Young Africans,Mamelodi Sundowns,0,0
+,2023-24,CAF,CAF Champions League,Quarterfinals,23.00 Espérance de Tunis,ASEC Mimosas,0,0
+,2023-24,CAF,CAF Champions League,Quarterfinals,20.00 Mamelodi Sundowns,Young Africans,3,2
+,2023-24,CAF,CAF Champions League,Quarterfinals,22.00 Al Ahly SC,Simba SC,2,0
+,2023-24,CAF,CAF Champions League,Quarterfinals,18.00 Petro Atlético,TP Mazembe,1,2
+,2023-24,CAF,CAF Champions League,Quarterfinals,22.00 ASEC Mimosas,Espérance de Tunis,1,4
+,2023-24,CAF,CAF Champions League,Semifinals,15.00 TP Mazembe,Al Ahly SC,0,0
+,2023-24,CAF,CAF Champions League,Semifinals,21.00 Espérance de Tunis,Mamelodi Sundowns,1,0
+,2023-24,CAF,CAF Champions League,Semifinals,21.00 Mamelodi Sundowns,Espérance de Tunis,0,1
+,2023-24,CAF,CAF Champions League,Semifinals,22.00 Al Ahly SC,TP Mazembe,3,0
+,2023-24,CAF,CAF Champions League,Final,22.00 Espérance de Tunis,Al Ahly SC,0,0
+,2023-24,CAF,CAF Champions League,Final,20.00 Al Ahly SC,Espérance de Tunis,1,0
+,2023,CONCACAF,CONCACAF Champions League,Round of 16,17.00 Violette AC,Austin FC,3,0
+,2023,CONCACAF,CONCACAF Champions League,Round of 16,19.00 Alianza,Philadelphia Union,0,0
+,2023,CONCACAF,CONCACAF Champions League,Round of 16,21.00 UANL Tigres,Orlando City,0,0
+,2023,CONCACAF,CONCACAF Champions League,Round of 16,17.00 Tauro FC,Club León,0,1
+,2023,CONCACAF,CONCACAF Champions League,Round of 16,19.00 Olimpia,Atlas Guadalajara,4,1
+,2023,CONCACAF,CONCACAF Champions League,Round of 16,21.00 Vancouver Whitecaps,Real España,5,0
+,2023,CONCACAF,CONCACAF Champions League,Round of 16,19.00 Motagua,CF Pachuca,0,0
+,2023,CONCACAF,CONCACAF Champions League,Round of 16,21.00 LD Alajuelense,Los Angeles FC,0,3
+,2023,CONCACAF,CONCACAF Champions League,Round of 16,18.00 Austin FC,Violette AC,2,0
+,2023,CONCACAF,CONCACAF Champions League,Round of 16,Philadelphia Union,Alianza,4,0
+,2023,CONCACAF,CONCACAF Champions League,Round of 16,20.15 Atlas Guadalajara,Olimpia,4,0
+,2023,CONCACAF,CONCACAF Champions League,Round of 16,16.00 Real España,Vancouver Whitecaps,3,2
+,2023,CONCACAF,CONCACAF Champions League,Round of 16,18.15 Orlando City,UANL Tigres,1,1
+,2023,CONCACAF,CONCACAF Champions League,Round of 16,20.30 Los Angeles FC,LD Alajuelense,1,2
+,2023,CONCACAF,CONCACAF Champions League,Round of 16,18.00 Club León,Tauro FC,2,0
+,2023,CONCACAF,CONCACAF Champions League,Round of 16,20.15 CF Pachuca,Motagua,1,1
+,2023,CONCACAF,CONCACAF Champions League,Quarterfinals,18.00 Philadelphia Union,Atlas Guadalajara,1,0
+,2023,CONCACAF,CONCACAF Champions League,Quarterfinals,20.00 Club León,Violette AC,5,0
+,2023,CONCACAF,CONCACAF Champions League,Quarterfinals,18.00 Motagua,UANL Tigres,0,1
+,2023,CONCACAF,CONCACAF Champions League,Quarterfinals,20.00 Vancouver Whitecaps,Los Angeles FC,0,3
+,2023,CONCACAF,CONCACAF Champions League,Quarterfinals,18.00 Violette AC,Club León,2,1
+,2023,CONCACAF,CONCACAF Champions League,Quarterfinals,20.15 Los Angeles FC,Vancouver Whitecaps,3,0
+,2023,CONCACAF,CONCACAF Champions League,Quarterfinals,20.00 Atlas Guadalajara,Philadelphia Union,2,2
+,2023,CONCACAF,CONCACAF Champions League,Quarterfinals,20.00 UANL Tigres,Motagua,5,0
+,2023,CONCACAF,CONCACAF Champions League,Semifinals,20.00 UANL Tigres,Club León,2,1
+,2023,CONCACAF,CONCACAF Champions League,Semifinals,19.00 Philadelphia Union,Los Angeles FC,1,1
+,2023,CONCACAF,CONCACAF Champions League,Semifinals,20.00 Los Angeles FC,Philadelphia Union,3,0
+,2023,CONCACAF,CONCACAF Champions League,Semifinals,20.00 Club León,UANL Tigres,3,1
+,2023,CONCACAF,CONCACAF Champions League,Final,20.00 Club León,Los Angeles FC,2,1
+,2023,CONCACAF,CONCACAF Champions League,Final,19.00 Los Angeles FC,Club León,0,1
+,2024-25,CAF,CAF Champions League,Qual. Round 1,18.00 AS Arta,Dekedaha FC,0,2
+,2024-25,CAF,CAF Champions League,Qual. Round 1,19.00 Milo FC,FC Nouadhibou,0,0
+,2024-25,CAF,CAF Champions League,Qual. Round 1,20.00 Mbabane Swallows,Ferroviário da Beira,1,0
+,2024-25,CAF,CAF Champions League,Qual. Round 1,16.00 Vital'O,Young Africans,0,4
+,2024-25,CAF,CAF Champions League,Qual. Round 1,Ngezi Platinum FC,AS Maniema Union,0,0
+,2024-25,CAF,CAF Champions League,Qual. Round 1,African Stars,Jwaneng Galaxy,1,0
+,2024-25,CAF,CAF Champions League,Qual. Round 1,Villa SC,CBE SA Addis Abeba,1,2
+,2024-25,CAF,CAF Champions League,Qual. Round 1,17.00 Saint Louis Suns United,GD Sagrada Esperança,0,1
+,2024-25,CAF,CAF Champions League,Qual. Round 1,Red Star Bangui,Djoliba AC,0,0
+,2024-25,CAF,CAF Champions League,Qual. Round 1,18.00 AS GNN Niamey,Raja Casablanca,1,2
+,2024-25,CAF,CAF Champions League,Qual. Round 1,19.00 AS Douanes,Coton FC,0,0
+,2024-25,CAF,CAF Champions League,Qual. Round 1,Stade Abidjan,Teungueth FC,1,1
+,2024-25,CAF,CAF Champions League,Qual. Round 1,Bo Rangers,FC San Pédro,1,1
+,2024-25,CAF,CAF Champions League,Qual. Round 1,20.00 Al Nasr Benghazi,Al Merrikh SC,0,0
+,2024-25,CAF,CAF Champions League,Qual. Round 1,14.00 Disciples FC,Orlando Pirates,0,0
+,2024-25,CAF,CAF Champions League,Qual. Round 1,16.00 Al Merreikh Juba,Gor Mahia FC,1,0
+,2024-25,CAF,CAF Champions League,Qual. Round 1,Big Bullets FC,Red Arrows,2,1
+,2024-25,CAF,CAF Champions League,Qual. Round 1,16.30 AC Léopards,CR Bélouizdad,0,2
+,2024-25,CAF,CAF Champions League,Qual. Round 1,17.00 US Zilimadjou,Enugu Rangers,0,1
+,2024-25,CAF,CAF Champions League,Qual. Round 1,Victoria United,Samartex,0,1
+,2024-25,CAF,CAF Champions League,Qual. Round 1,AS PSI,US Monastir,0,1
+,2024-25,CAF,CAF Champions League,Qual. Round 1,Deportivo Mongomo,ASKO Kara,2,2
+,2024-25,CAF,CAF Champions League,Qual. Round 1,18.00 Azam FC,APR FC,1,0
+,2024-25,CAF,CAF Champions League,Qual. Round 1,Remo Stars,FAR de Rabat,2,1
+,2024-25,CAF,CAF Champions League,Qual. Round 1,20.00 JKU FC,Pyramids FC,0,6
+,2024-25,CAF,CAF Champions League,Qual. Round 1,Al Ahly Benghazi,Al Hilal Omdurman,0,1
+,2024-25,CAF,CAF Champions League,Qual. Round 1,22.00 Watanga FC,MC Alger,0,2
+,2024-25,CAF,CAF Champions League,Qual. Round 1,22.00 MC Alger,Watanga FC,2,0
+,2024-25,CAF,CAF Champions League,Qual. Round 1,17.00 Enugu Rangers,US Zilimadjou,1,1
+,2024-25,CAF,CAF Champions League,Qual. Round 1,19.00 Dekedaha FC,AS Arta,3,4
+,2024-25,CAF,CAF Champions League,Qual. Round 1,20.30 Orlando Pirates,Disciples FC,4,0
+,2024-25,CAF,CAF Champions League,Qual. Round 1,15.00 CBE SA Addis Abeba,Villa SC,1,1
+,2024-25,CAF,CAF Champions League,Qual. Round 1,16.00 Red Arrows,Big Bullets FC,2,0
+,2024-25,CAF,CAF Champions League,Qual. Round 1,Al Merrikh SC,Al Nasr Benghazi,2,0
+,2024-25,CAF,CAF Champions League,Qual. Round 1,17.00 Jwaneng Galaxy,African Stars,6,5
+,2024-25,CAF,CAF Champions League,Qual. Round 1,17.30 GD Sagrada Esperança,Saint Louis Suns United,3,0
+,2024-25,CAF,CAF Champions League,Qual. Round 1,19.00 Young Africans,Vital'O,6,0
+,2024-25,CAF,CAF Champions League,Qual. Round 1,APR FC,Azam FC,2,0
+,2024-25,CAF,CAF Champions League,Qual. Round 1,20.00 Pyramids FC,JKU FC,3,1
+,2024-25,CAF,CAF Champions League,Qual. Round 1,Teungueth FC,Stade Abidjan,4,5
+,2024-25,CAF,CAF Champions League,Qual. Round 1,22.00 Raja Casablanca,AS GNN Niamey,5,0
+,2024-25,CAF,CAF Champions League,Qual. Round 1,15.00 Gor Mahia FC,Al Merreikh Juba,5,1
+,2024-25,CAF,CAF Champions League,Qual. Round 1,16.00 Ferroviário da Beira,Mbabane Swallows,0,0
+,2024-25,CAF,CAF Champions League,Qual. Round 1,Coton FC,AS Douanes,1,1
+,2024-25,CAF,CAF Champions League,Qual. Round 1,Al Hilal Omdurman,Al Ahly Benghazi,1,1
+,2024-25,CAF,CAF Champions League,Qual. Round 1,17.30 AS Maniema Union,Ngezi Platinum FC,4,3
+,2024-25,CAF,CAF Champions League,Qual. Round 1,18.00 Samartex,Victoria United,1,0
+,2024-25,CAF,CAF Champions League,Qual. Round 1,19.00 US Monastir,AS PSI,2,0
+,2024-25,CAF,CAF Champions League,Qual. Round 1,Djoliba AC,Red Star Bangui,3,0
+,2024-25,CAF,CAF Champions League,Qual. Round 1,ASKO Kara,Deportivo Mongomo,1,0
+,2024-25,CAF,CAF Champions League,Qual. Round 1,FC San Pédro,Bo Rangers,1,0
+,2024-25,CAF,CAF Champions League,Qual. Round 1,20.00 FC Nouadhibou,Milo FC,1,1
+,2024-25,CAF,CAF Champions League,Qual. Round 1,22.00 CR Bélouizdad,AC Léopards,1,0
+,2024-25,CAF,CAF Champions League,Qual. Round 1,23.00 FAR de Rabat,Remo Stars,2,0
+,2024-25,CAF,CAF Champions League,Qual. Round 2,17.00 Enugu Rangers,GD Sagrada Esperança,1,0
+,2024-25,CAF,CAF Champions League,Qual. Round 2,20.00 US Monastir,MC Alger,1,0
+,2024-25,CAF,CAF Champions League,Qual. Round 2,15.00 CBE SA Addis Abeba,Young Africans,0,1
+,2024-25,CAF,CAF Champions League,Qual. Round 2,16.00 Red Arrows,TP Mazembe,0,2
+,2024-25,CAF,CAF Champions League,Qual. Round 2,Al Merrikh SC,FAR de Rabat,2,2
+,2024-25,CAF,CAF Champions League,Qual. Round 2,17.00 AS Maniema Union,Petro Atlético,2,1
+,2024-25,CAF,CAF Champions League,Qual. Round 2,Jwaneng Galaxy,Orlando Pirates,0,2
+,2024-25,CAF,CAF Champions League,Qual. Round 2,19.00 APR FC,Pyramids FC,1,1
+,2024-25,CAF,CAF Champions League,Qual. Round 2,AS Douanes,CR Bélouizdad,1,0
+,2024-25,CAF,CAF Champions League,Qual. Round 2,Djoliba AC,ASKO Kara,1,0
+,2024-25,CAF,CAF Champions League,Qual. Round 2,21.00 Mbabane Swallows,Mamelodi Sundowns,0,4
+,2024-25,CAF,CAF Champions League,Qual. Round 2,15.00 Gor Mahia FC,Al Ahly SC,0,3
+,2024-25,CAF,CAF Champions League,Qual. Round 2,18.00 Samartex,Raja Casablanca,2,2
+,2024-25,CAF,CAF Champions League,Qual. Round 2,19.00 Dekedaha FC,Espérance de Tunis,1,4
+,2024-25,CAF,CAF Champions League,Qual. Round 2,FC San Pédro,Al Hilal Omdurman,2,2
+,2024-25,CAF,CAF Champions League,Qual. Round 2,22.00 Stade Abidjan,Milo FC,2,0
+,2024-25,CAF,CAF Champions League,Qual. Round 2,20.00 CR Bélouizdad,AS Douanes,4,3
+,2024-25,CAF,CAF Champions League,Qual. Round 2,16.00 TP Mazembe,Red Arrows,2,1
+,2024-25,CAF,CAF Champions League,Qual. Round 2,18.00 Petro Atlético,AS Maniema Union,0,0
+,2024-25,CAF,CAF Champions League,Qual. Round 2,19.00 Al Ahly SC,Gor Mahia FC,3,0
+,2024-25,CAF,CAF Champions League,Qual. Round 2,Mamelodi Sundowns,Mbabane Swallows,4,0
+,2024-25,CAF,CAF Champions League,Qual. Round 2,Orlando Pirates,Jwaneng Galaxy,1,0
+,2024-25,CAF,CAF Champions League,Qual. Round 2,20.30 Young Africans,CBE SA Addis Abeba,6,0
+,2024-25,CAF,CAF Champions League,Qual. Round 2,21.00 Espérance de Tunis,Dekedaha FC,8,0
+,2024-25,CAF,CAF Champions League,Qual. Round 2,Pyramids FC,APR FC,3,1
+,2024-25,CAF,CAF Champions League,Qual. Round 2,22.00 Raja Casablanca,Samartex,2,0
+,2024-25,CAF,CAF Champions League,Qual. Round 2,MC Alger,US Monastir,2,0
+,2024-25,CAF,CAF Champions League,Qual. Round 2,17.30 GD Sagrada Esperança,Enugu Rangers,3,1
+,2024-25,CAF,CAF Champions League,Qual. Round 2,19.00 ASKO Kara,Djoliba AC,0,1
+,2024-25,CAF,CAF Champions League,Qual. Round 2,Milo FC,Stade Abidjan,2,1
+,2024-25,CAF,CAF Champions League,Qual. Round 2,21.00 FAR de Rabat,Al Merrikh SC,2,0
+,2024-25,CAF,CAF Champions League,Qual. Round 2,22.00 Al Hilal Omdurman,FC San Pédro,1,0
+,2024-25,CAF,CAF Champions League,Group A,15.00 TP Mazembe,MC Alger,0,0
+,2024-25,CAF,CAF Champions League,Group A,Young Africans,Al Hilal Omdurman,0,2
+,2024-25,CAF,CAF Champions League,Group A,21.00 MC Alger,Young Africans,2,0
+,2024-25,CAF,CAF Champions League,Group A,21.00 Al Hilal Omdurman,TP Mazembe,2,1
+,2024-25,CAF,CAF Champions League,Group A,15.00 TP Mazembe,Young Africans,1,1
+,2024-25,CAF,CAF Champions League,Group A,21.00 MC Alger,Al Hilal Omdurman,0,1
+,2024-25,CAF,CAF Champions League,Group A,15.00 Young Africans,TP Mazembe,3,1
+,2024-25,CAF,CAF Champions League,Group A,21.00 Al Hilal Omdurman,MC Alger,1,1
+,2024-25,CAF,CAF Champions League,Group A,21.00 MC Alger,TP Mazembe,1,0
+,2024-25,CAF,CAF Champions League,Group A,21.00 Al Hilal Omdurman,Young Africans,0,1
+,2024-25,CAF,CAF Champions League,Group A,15.00 TP Mazembe,Al Hilal Omdurman,4,0
+,2024-25,CAF,CAF Champions League,Group A,Young Africans,MC Alger,0,0
+,2024-25,CAF,CAF Champions League,Group B,18.00 Mamelodi Sundowns,AS Maniema Union,0,0
+,2024-25,CAF,CAF Champions League,Group B,21.00 Raja Casablanca,FAR de Rabat,0,2
+,2024-25,CAF,CAF Champions League,Group B,15.00 AS Maniema Union,Raja Casablanca,1,1
+,2024-25,CAF,CAF Champions League,Group B,21.00 FAR de Rabat,Mamelodi Sundowns,1,1
+,2024-25,CAF,CAF Champions League,Group B,15.00 AS Maniema Union,FAR de Rabat,1,1
+,2024-25,CAF,CAF Champions League,Group B,15.00 Mamelodi Sundowns,Raja Casablanca,1,0
+,2024-25,CAF,CAF Champions League,Group B,21.00 FAR de Rabat,AS Maniema Union,2,0
+,2024-25,CAF,CAF Champions League,Group B,Raja Casablanca,Mamelodi Sundowns,1,0
+,2024-25,CAF,CAF Champions League,Group B,15.00 AS Maniema Union,Mamelodi Sundowns,1,2
+,2024-25,CAF,CAF Champions League,Group B,21.00 FAR de Rabat,Raja Casablanca,1,1
+,2024-25,CAF,CAF Champions League,Group B,18.00 Mamelodi Sundowns,FAR de Rabat,1,1
+,2024-25,CAF,CAF Champions League,Group B,Raja Casablanca,AS Maniema Union,1,0
+,2024-25,CAF,CAF Champions League,Group C,18.00 Al Ahly SC,Stade Abidjan,4,2
+,2024-25,CAF,CAF Champions League,Group C,21.00 CR Bélouizdad,Orlando Pirates,1,2
+,2024-25,CAF,CAF Champions League,Group C,15.00 Orlando Pirates,Al Ahly SC,0,0
+,2024-25,CAF,CAF Champions League,Group C,18.00 Stade Abidjan,CR Bélouizdad,0,1
+,2024-25,CAF,CAF Champions League,Group C,18.00 Stade Abidjan,Orlando Pirates,1,1
+,2024-25,CAF,CAF Champions League,Group C,18.00 Al Ahly SC,CR Bélouizdad,6,1
+,2024-25,CAF,CAF Champions League,Group C,21.00 CR Bélouizdad,Al Ahly SC,1,0
+,2024-25,CAF,CAF Champions League,Group C,18.00 Orlando Pirates,Stade Abidjan,3,0
+,2024-25,CAF,CAF Champions League,Group C,18.00 Stade Abidjan,Al Ahly SC,1,3
+,2024-25,CAF,CAF Champions League,Group C,15.00 Orlando Pirates,CR Bélouizdad,2,1
+,2024-25,CAF,CAF Champions League,Group C,18.00 Al Ahly SC,Orlando Pirates,1,2
+,2024-25,CAF,CAF Champions League,Group C,CR Bélouizdad,Stade Abidjan,6,0
+,2024-25,CAF,CAF Champions League,Group D,18.00 Pyramids FC,GD Sagrada Esperança,5,1
+,2024-25,CAF,CAF Champions League,Group D,21.00 Espérance de Tunis,Djoliba AC,4,0
+,2024-25,CAF,CAF Champions League,Group D,18.00 GD Sagrada Esperança,Espérance de Tunis,0,0
+,2024-25,CAF,CAF Champions League,Group D,18.00 Djoliba AC,Pyramids FC,0,0
+,2024-25,CAF,CAF Champions League,Group D,21.00 Espérance de Tunis,Pyramids FC,2,0
+,2024-25,CAF,CAF Champions League,Group D,18.00 Djoliba AC,GD Sagrada Esperança,0,0
+,2024-25,CAF,CAF Champions League,Group D,18.00 GD Sagrada Esperança,Djoliba AC,1,0
+,2024-25,CAF,CAF Champions League,Group D,Pyramids FC,Espérance de Tunis,2,1
+,2024-25,CAF,CAF Champions League,Group D,18.00 GD Sagrada Esperança,Pyramids FC,0,1
+,2024-25,CAF,CAF Champions League,Group D,18.00 Djoliba AC,Espérance de Tunis,0,1
+,2024-25,CAF,CAF Champions League,Group D,21.00 Espérance de Tunis,GD Sagrada Esperança,4,1
+,2024-25,CAF,CAF Champions League,Group D,Pyramids FC,Djoliba AC,6,0
+,2024-25,CAF,CAF Champions League,Quarterfinals,15.00 Mamelodi Sundowns,Espérance de Tunis,1,0
+,2024-25,CAF,CAF Champions League,Quarterfinals,21.00 Al Ahly SC,Al Hilal Omdurman,1,0
+,2024-25,CAF,CAF Champions League,Quarterfinals,Pyramids FC,FAR de Rabat,4,1
+,2024-25,CAF,CAF Champions League,Quarterfinals,MC Alger,Orlando Pirates,0,1
+,2024-25,CAF,CAF Champions League,Quarterfinals,21.00 Al Hilal Omdurman,Al Ahly SC,0,1
+,2024-25,CAF,CAF Champions League,Quarterfinals,FAR de Rabat,Pyramids FC,2,0
+,2024-25,CAF,CAF Champions League,Quarterfinals,Espérance de Tunis,Mamelodi Sundowns,0,0
+,2024-25,CAF,CAF Champions League,Quarterfinals,18.00 Orlando Pirates,MC Alger,0,0
+,2024-25,CAF,CAF Champions League,Semifinals,15.00 Mamelodi Sundowns,Al Ahly SC,0,0
+,2024-25,CAF,CAF Champions League,Semifinals,18.00 Orlando Pirates,Pyramids FC,0,0
+,2024-25,CAF,CAF Champions League,Semifinals,19.00 Al Ahly SC,Mamelodi Sundowns,1,1
+,2024-25,CAF,CAF Champions League,Semifinals,21.00 Pyramids FC,Orlando Pirates,3,2
+,2024,CONCACAF,CONCACAF Champions League,Round 1,19.00 Comunicaciones,CF Monterrey,1,4
+,2024,CONCACAF,CONCACAF Champions League,Round 1,21.00 Real Estelí FC,CF América,2,1
+,2024,CONCACAF,CONCACAF Champions League,Round 1,17.00 CS Herediano,Deportivo Toluca,1,2
+,2024,CONCACAF,CONCACAF Champions League,Round 1,19.00 Forge FC,Deportivo Guadalajara,1,3
+,2024,CONCACAF,CONCACAF Champions League,Round 1,21.00 Vancouver Whitecaps,UANL Tigres,1,1
+,2024,CONCACAF,CONCACAF Champions League,Round 1,19.00 St. Louis City SC,Houston Dynamo,2,1
+,2024,CONCACAF,CONCACAF Champions League,Round 1,21.00 Deportivo Saprissa,Philadelphia Union,2,3
+,2024,CONCACAF,CONCACAF Champions League,Round 1,19.00 Independiente de La Chorrera,New England Revolution,0,1
+,2024,CONCACAF,CONCACAF Champions League,Round 1,21.00 Cavalry FC,Orlando City,0,3
+,2024,CONCACAF,CONCACAF Champions League,Round 1,18.00 Moca FC,Nashville SC,0,3
+,2024,CONCACAF,CONCACAF Champions League,Round 1,20.00 Cavalier FC,FC Cincinnati,0,2
+,2024,CONCACAF,CONCACAF Champions League,Round 1,21.00 Deportivo Guadalajara,Forge FC,2,1
+,2024,CONCACAF,CONCACAF Champions League,Round 1,19.00 UANL Tigres,Vancouver Whitecaps,3,0
+,2024,CONCACAF,CONCACAF Champions League,Round 1,21.15 CF América,Real Estelí FC,2,0
+,2024,CONCACAF,CONCACAF Champions League,Round 1,19.00 Deportivo Toluca,CS Herediano,2,3
+,2024,CONCACAF,CONCACAF Champions League,Round 1,21.15 CF Monterrey,Comunicaciones,3,0
+,2024,CONCACAF,CONCACAF Champions League,Round 1,17.00 Orlando City,Cavalry FC,3,1
+,2024,CONCACAF,CONCACAF Champions League,Round 1,19.15 Philadelphia Union,Deportivo Saprissa,3,3
+,2024,CONCACAF,CONCACAF Champions League,Round 1,21.30 Houston Dynamo,St. Louis City SC,1,0
+,2024,CONCACAF,CONCACAF Champions League,Round 1,18.00 FC Cincinnati,Cavalier FC,4,0
+,2024,CONCACAF,CONCACAF Champions League,Round 1,20.15 Nashville SC,Moca FC,4,0
+,2024,CONCACAF,CONCACAF Champions League,Round 1,19.15 New England Revolution,Independiente de La Chorrera,3,0
+,2024,CONCACAF,CONCACAF Champions League,Round of 16,16.00 CS Herediano,SV Robinhood,2,0
+,2024,CONCACAF,CONCACAF Champions League,Round of 16,18.00 Philadelphia Union,CF Pachuca,0,0
+,2024,CONCACAF,CONCACAF Champions League,Round of 16,20.00 Orlando City,UANL Tigres,0,0
+,2024,CONCACAF,CONCACAF Champions League,Round of 16,17.00 New England Revolution,LD Alajuelense,4,0
+,2024,CONCACAF,CONCACAF Champions League,Round of 16,19.00 Houston Dynamo,Columbus Crew,0,1
+,2024,CONCACAF,CONCACAF Champions League,Round of 16,21.00 Deportivo Guadalajara,CF América,0,3
+,2024,CONCACAF,CONCACAF Champions League,Round of 16,18.00 FC Cincinnati,CF Monterrey,0,1
+,2024,CONCACAF,CONCACAF Champions League,Round of 16,20.00 Nashville SC,Inter Miami CF,2,2
+,2024,CONCACAF,CONCACAF Champions League,Round of 16,16.00 Columbus Crew,Houston Dynamo,1,1
+,2024,CONCACAF,CONCACAF Champions League,Round of 16,18.15 CF Pachuca,Philadelphia Union,6,0
+,2024,CONCACAF,CONCACAF Champions League,Round of 16,20.30 UANL Tigres,Orlando City,4,2
+,2024,CONCACAF,CONCACAF Champions League,Round of 16,16.00 SV Robinhood,CS Herediano,1,1
+,2024,CONCACAF,CONCACAF Champions League,Round of 16,18.15 Inter Miami CF,Nashville SC,3,1
+,2024,CONCACAF,CONCACAF Champions League,Round of 16,20.30 CF América,Deportivo Guadalajara,2,3
+,2024,CONCACAF,CONCACAF Champions League,Round of 16,18.00 LD Alajuelense,New England Revolution,1,1
+,2024,CONCACAF,CONCACAF Champions League,Round of 16,20.15 CF Monterrey,FC Cincinnati,2,1
+,2024,CONCACAF,CONCACAF Champions League,Quarterfinals,18.45 Columbus Crew,UANL Tigres,1,1
+,2024,CONCACAF,CONCACAF Champions League,Quarterfinals,19.00 New England Revolution,CF América,0,4
+,2024,CONCACAF,CONCACAF Champions League,Quarterfinals,18.00 Inter Miami CF,CF Monterrey,1,2
+,2024,CONCACAF,CONCACAF Champions League,Quarterfinals,20.00 CS Herediano,CF Pachuca,0,5
+,2024,CONCACAF,CONCACAF Champions League,Quarterfinals,18.45 UANL Tigres,Columbus Crew,3,4
+,2024,CONCACAF,CONCACAF Champions League,Quarterfinals,20.30 CF América,New England Revolution,5,2
+,2024,CONCACAF,CONCACAF Champions League,Quarterfinals,18.15 CF Pachuca,CS Herediano,2,1
+,2024,CONCACAF,CONCACAF Champions League,Quarterfinals,20.30 CF Monterrey,Inter Miami CF,3,1
+,2024,CONCACAF,CONCACAF Champions League,Semifinals,20.15 CF América,CF Pachuca,1,1
+,2024,CONCACAF,CONCACAF Champions League,Semifinals,18.15 Columbus Crew,CF Monterrey,2,1
+,2024,CONCACAF,CONCACAF Champions League,Semifinals,19.15 CF Pachuca,CF América,2,1
+,2024,CONCACAF,CONCACAF Champions League,Semifinals,20.15 CF Monterrey,Columbus Crew,1,3
+,2024,CONCACAF,CONCACAF Champions League,Final,19.15 CF Pachuca,Columbus Crew,3,0
+,2025,CONCACAF,CONCACAF Champions League,Round 1,19.00 Real Hope,Cruz Azul,0,2
+,2025,CONCACAF,CONCACAF Champions League,Round 1,19.00 Forge FC,CF Monterrey,0,2
+,2025,CONCACAF,CONCACAF Champions League,Round 1,21.00 Real Estelí FC,UANL Tigres,1,0
+,2025,CONCACAF,CONCACAF Champions League,Round 1,19.00 Cibao FC,Deportivo Guadalajara,1,1
+,2025,CONCACAF,CONCACAF Champions League,Round 1,21.00 Cavalry FC,Pumas UNAM,2,1
+,2025,CONCACAF,CONCACAF Champions League,Round 1,21.00 Colorado Rapids,Los Angeles FC,2,1
+,2025,CONCACAF,CONCACAF Champions League,Round 1,17.30 CS Herediano,Real Salt Lake,0,0
+,2025,CONCACAF,CONCACAF Champions League,Round 1,19.00 Sporting Kansas City,Inter Miami CF,0,1
+,2025,CONCACAF,CONCACAF Champions League,Round 1,Antigua GFC,Seattle Sounders,1,3
+,2025,CONCACAF,CONCACAF Champions League,Round 1,21.00 Motagua,FC Cincinnati,1,4
+,2025,CONCACAF,CONCACAF Champions League,Round 1,19.00 Deportivo Saprissa,Vancouver Whitecaps,2,1
+,2025,CONCACAF,CONCACAF Champions League,Round 1,19.00 CF Monterrey,Forge FC,3,0
+,2025,CONCACAF,CONCACAF Champions League,Round 1,21.00 Cruz Azul,Real Hope,5,0
+,2025,CONCACAF,CONCACAF Champions League,Round 1,19.00 Deportivo Guadalajara,Cibao FC,3,0
+,2025,CONCACAF,CONCACAF Champions League,Round 1,21.00 UANL Tigres,Real Estelí FC,3,0
+,2025,CONCACAF,CONCACAF Champions League,Round 1,19.00 Pumas UNAM,Cavalry FC,2,0
+,2025,CONCACAF,CONCACAF Champions League,Round 1,19.00 Inter Miami CF,Sporting Kansas City,3,1
+,2025,CONCACAF,CONCACAF Champions League,Round 1,21.00 Los Angeles FC,Colorado Rapids,1,0
+,2025,CONCACAF,CONCACAF Champions League,Round 1,17.30 FC Cincinnati,Motagua,1,1
+,2025,CONCACAF,CONCACAF Champions League,Round 1,19.30 Real Salt Lake,CS Herediano,1,2
+,2025,CONCACAF,CONCACAF Champions League,Round 1,21.30 Seattle Sounders,Antigua GFC,3,1
+,2025,CONCACAF,CONCACAF Champions League,Round 1,21.00 Vancouver Whitecaps,Deportivo Saprissa,2,0
+,2025,CONCACAF,CONCACAF Champions League,Round of 16,17.30 FC Cincinnati,UANL Tigres,1,1
+,2025,CONCACAF,CONCACAF Champions League,Round of 16,19.30 Pumas UNAM,LD Alajuelense,2,0
+,2025,CONCACAF,CONCACAF Champions League,Round of 16,21.30 Los Angeles FC,Columbus Crew,3,0
+,2025,CONCACAF,CONCACAF Champions League,Round of 16,19.30 Deportivo Guadalajara,CF América,1,0
+,2025,CONCACAF,CONCACAF Champions League,Round of 16,CS Herediano,Los Angeles Galaxy,1,0
+,2025,CONCACAF,CONCACAF Champions League,Round of 16,21.30 Seattle Sounders,Cruz Azul,0,0
+,2025,CONCACAF,CONCACAF Champions League,Round of 16,Vancouver Whitecaps,CF Monterrey,1,1
+,2025,CONCACAF,CONCACAF Champions League,Round of 16,19.00 Inter Miami CF,Cavalier FC,2,0
+,2025,CONCACAF,CONCACAF Champions League,Round of 16,18.30 Columbus Crew,Los Angeles FC,2,1
+,2025,CONCACAF,CONCACAF Champions League,Round of 16,Cruz Azul,Seattle Sounders,4,1
+,2025,CONCACAF,CONCACAF Champions League,Round of 16,20.30 UANL Tigres,FC Cincinnati,3,1
+,2025,CONCACAF,CONCACAF Champions League,Round of 16,18.30 CF Monterrey,Vancouver Whitecaps,2,2
+,2025,CONCACAF,CONCACAF Champions League,Round of 16,20.30 CF América,Deportivo Guadalajara,4,0
+,2025,CONCACAF,CONCACAF Champions League,Round of 16,Los Angeles Galaxy,CS Herediano,4,1
+,2025,CONCACAF,CONCACAF Champions League,Round of 16,18.00 Cavalier FC,Inter Miami CF,0,2
+,2025,CONCACAF,CONCACAF Champions League,Round of 16,20.00 LD Alajuelense,Pumas UNAM,1,1
+,2025,CONCACAF,CONCACAF Champions League,Quarterfinals,19.15 CF América,Cruz Azul,0,0
+,2025,CONCACAF,CONCACAF Champions League,Quarterfinals,21.15 Los Angeles Galaxy,UANL Tigres,0,0
+,2025,CONCACAF,CONCACAF Champions League,Quarterfinals,19.30 Vancouver Whitecaps,Pumas UNAM,1,1
+,2025,CONCACAF,CONCACAF Champions League,Quarterfinals,21.30 Los Angeles FC,Inter Miami CF,1,0
+,2025,CONCACAF,CONCACAF Champions League,Quarterfinals,19.00 UANL Tigres,Los Angeles Galaxy,3,2
+,2025,CONCACAF,CONCACAF Champions League,Quarterfinals,21.30 Cruz Azul,CF América,2,1
+,2025,CONCACAF,CONCACAF Champions League,Quarterfinals,18.00 Inter Miami CF,Los Angeles FC,3,1
+,2025,CONCACAF,CONCACAF Champions League,Quarterfinals,20.30 Pumas UNAM,Vancouver Whitecaps,2,2
+,2025,CONCACAF,CONCACAF Champions League,Semifinals,20.00 UANL Tigres,Cruz Azul,1,1
+,2025,CONCACAF,CONCACAF Champions League,Semifinals,20.30 Vancouver Whitecaps,Inter Miami CF,2,0
+,2025,CONCACAF,CONCACAF Champions League,Semifinals,18.00 Inter Miami CF,Vancouver Whitecaps,1,3
+,2025,CONCACAF,CONCACAF Champions League,Semifinals,20.00 Cruz Azul,UANL Tigres,1,0
