@@ -24,8 +24,8 @@ logger = logging.getLogger("RailwayStartup")
 
 def check_models_exist():
     """Eğitilmiş modeller var mı?"""
-    models_dir = Path("data/ai_models_v2")
-    required = ["ensemble_models.pkl", "score_model.pkl", "scaler.pkl"]
+    models_dir = Path("data/ai_models_v3")
+    required = ["ensemble_models.pkl", "score_model.pkl", "scaler.pkl", "meta_ensemble.pkl"]
     
     if not models_dir.exists():
         return False
