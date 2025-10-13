@@ -1,22 +1,33 @@
-# Web Framework
-Flask==3.0.0
-flask-cors==4.0.0
-gunicorn==21.2.0
+########################################################
+# Predicta ML v3 - Full Stack Machine Learning Platform
+# Flask API + Ensemble ML + Railway Deploy Support
+########################################################
 
-# HTTP & Scraping
-requests==2.31.0
+# ==== Core Web Framework ====
+Flask==3.0.3
+flask-cors==4.0.1
+gunicorn==22.0.0
 
-# Machine Learning
-scikit-learn==1.3.2
-xgboost==2.0.3
-numpy==1.24.3
-pandas==2.1.4
-joblib==1.3.2
+# ==== HTTP & Parsing ====
+requests==2.32.3
+beautifulsoup4==4.12.3
+lxml==5.2.1
 
-# Utilities
-python-dateutil==2.8.2
-psutil==5.9.6
+# ==== Data Science Stack ====
+numpy==1.26.4
+pandas==2.2.2
+scikit-learn==1.5.2
+xgboost==2.1.1
+lightgbm==4.5.0
+joblib==1.4.2
 
-# Optional (Railway için önerilen)
-beautifulsoup4==4.12.2
-lxml==4.9.3
+# ==== Utilities & System ====
+python-dateutil==2.9.0.post0
+psutil==6.0.0
+fuzzywuzzy==0.18.0
+python-Levenshtein==0.25.1
+tqdm==4.66.4
+
+# ==== Optional Enhancements ====
+colorlog==6.8.2          # Renkli log çıktısı (isteğe bağlı)
+pytz==2024.1             # Zaman bölgesi desteği
