@@ -3,7 +3,7 @@ import os
 def create_required_folders():
     """Gerekli tüm klasörleri oluştur"""
     folders = [
-        "data/ai_models_v2",
+        "data/ai_models_v3",
         "data/historical",
         "data/predictions",
         "data/team_stats"
@@ -17,3 +17,4 @@ def create_required_folders():
 
 if __name__ == "__main__":
     create_required_folders()
+
