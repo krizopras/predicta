@@ -1,8 +1,0 @@
-home_team,away_team,home_score,away_score,result,city,country,source_file
-Uruguay,Netherlands,2,0,1,Montevideo,Uruguay,1980_mundialito.txt
-Argentina,Germany,2,1,1,Montevideo,Uruguay,1981_mundialito.txt
-Uruguay,Italy,2,0,1,Montevideo,Uruguay,1981_mundialito.txt
-Argentina,Brazil,1,1,X,Montevideo,Uruguay,1981_mundialito.txt
-Netherlands,Italy,1,1,X,Montevideo,Uruguay,1981_mundialito.txt
-Brazil,Germany,4,1,1,Montevideo,Uruguay,1981_mundialito.txt
-Uruguay,Brazil,2,1,1,Montevideo,Uruguay,1981_mundialito.txt

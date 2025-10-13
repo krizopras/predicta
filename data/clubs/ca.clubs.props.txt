@@ -1,7 +1,0 @@
-#########################
-#  Canada, ca
-
-Name,                Web
-Toronto FC,          www.torontofc.ca
-Vancouver Whitecaps, www.whitecapsfc.com
-Montreal Impact,     www.impactmontreal.com
