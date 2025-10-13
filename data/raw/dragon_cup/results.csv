@@ -1,0 +1,5 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Philippines,Macau,5,0,1,Kaohsiung,Taiwan,2010_dragon_cup.txt
+Hong Kong,Philippines,3,3,X,Kaohsiung,Taiwan,2011_dragon_cup.txt
+Hong Kong,Macau,5,1,1,Kaohsiung,Taiwan,2011_dragon_cup.txt
+Philippines,Macau,2,0,1,Kaohsiung,Taiwan,2011_dragon_cup.txt

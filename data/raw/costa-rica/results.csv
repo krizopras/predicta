@@ -1,0 +1,268 @@
+time,home_team,away_team,home_score,away_score,result,ht_score,source_file
+16.03,AD Guanacasteca,AD San Carlos,0,3,2,,2024-25_cr1.txt
+20.00,Puntarenas FC,Municipal Liberia,0,0,X,,2024-25_cr1.txt
+17.00,CS Cartaginés,Santa Ana,4,0,1,2-0,2024-25_cr1.txt
+18.00,Sporting FC,Deportivo Saprissa,3,1,1,2-1,2024-25_cr1.txt
+20.00,Municipal Pérez Zeledón,CS Herediano,0,0,X,,2024-25_cr1.txt
+18.00,LD Alajuelense,Santos de Guápiles,2,1,1,1-1,2024-25_cr1.txt
+17.00,Santa Ana,Sporting FC,0,2,2,0-0,2024-25_cr1.txt
+20.00,CS Herediano,Puntarenas FC,2,0,1,2-0,2024-25_cr1.txt
+18.00,Municipal Liberia,LD Alajuelense,1,2,2,0-2,2024-25_cr1.txt
+,AD San Carlos,CS Cartaginés,0,0,X,,2024-25_cr1.txt
+20.30,Deportivo Saprissa,AD Guanacasteca,3,1,1,0-0,2024-25_cr1.txt
+18.00,Santos de Guápiles,Municipal Pérez Zeledón,3,3,X,2-1,2024-25_cr1.txt
+19.00,AD Guanacasteca,CS Herediano,2,1,1,1-0,2024-25_cr1.txt
+20.00,AD San Carlos,Municipal Liberia,1,2,2,0-2,2024-25_cr1.txt
+11.00,CS Cartaginés,Santos de Guápiles,2,1,1,1-0,2024-25_cr1.txt
+15.00,Puntarenas FC,Deportivo Saprissa,2,3,2,1-1,2024-25_cr1.txt
+18.00,LD Alajuelense,Santa Ana,1,1,X,1-0,2024-25_cr1.txt
+19.00,Municipal Pérez Zeledón,Sporting FC,0,2,2,0-1,2024-25_cr1.txt
+19.00,Santos de Guápiles,Puntarenas FC,0,0,X,,2024-25_cr1.txt
+15.00,Sporting FC,AD Guanacasteca,2,2,X,1-0,2024-25_cr1.txt
+17.00,Deportivo Saprissa,Municipal Liberia,2,2,X,2-1,2024-25_cr1.txt
+20.00,Santa Ana,CS Herediano,1,1,X,0-0,2024-25_cr1.txt
+11.00,CS Cartaginés,LD Alajuelense,0,1,2,0-0,2024-25_cr1.txt
+16.00,Municipal Pérez Zeledón,AD San Carlos,0,0,X,,2024-25_cr1.txt
+20.00,Municipal Liberia,Santos de Guápiles,4,0,1,2-0,2024-25_cr1.txt
+17.00,AD Guanacasteca,CS Cartaginés,1,3,2,1-1,2024-25_cr1.txt
+18.00,AD San Carlos,Santa Ana,5,1,1,3-0,2024-25_cr1.txt
+20.00,LD Alajuelense,Municipal Pérez Zeledón,2,1,1,1-0,2024-25_cr1.txt
+16.00,Puntarenas FC,Sporting FC,1,2,2,0-1,2024-25_cr1.txt
+18.00,CS Herediano,Deportivo Saprissa,2,0,1,0-0,2024-25_cr1.txt
+20.00,Santa Ana,Deportivo Saprissa,0,3,2,0-0,2024-25_cr1.txt
+18.00,Santos de Guápiles,AD San Carlos,0,4,2,0-1,2024-25_cr1.txt
+11.00,CS Cartaginés,CS Herediano,3,1,1,1-0,2024-25_cr1.txt
+16.00,Municipal Pérez Zeledón,Puntarenas FC,1,0,1,1-0,2024-25_cr1.txt
+18.00,Sporting FC,Municipal Liberia,1,0,1,0-0,2024-25_cr1.txt
+19.00,LD Alajuelense,AD Guanacasteca,4,0,1,3-0,2024-25_cr1.txt
+19.00,AD San Carlos,LD Alajuelense,0,0,X,,2024-25_cr1.txt
+20.00,Deportivo Saprissa,CS Cartaginés,1,0,1,1-0,2024-25_cr1.txt
+15.00,Municipal Liberia,Municipal Pérez Zeledón,1,0,1,1-0,2024-25_cr1.txt
+,Puntarenas FC,Santa Ana,1,2,2,0-1,2024-25_cr1.txt
+18.00,CS Herediano,Sporting FC,2,0,1,0-0,2024-25_cr1.txt
+19.00,AD Guanacasteca,Santos de Guápiles,2,1,1,2-0,2024-25_cr1.txt
+19.00,Sporting FC,AD San Carlos,2,3,2,0-2,2024-25_cr1.txt
+20.00,Santa Ana,Municipal Liberia,2,1,1,1-0,2024-25_cr1.txt
+18.00,CS Cartaginés,Puntarenas FC,1,0,1,1-0,2024-25_cr1.txt
+20.00,Santos de Guápiles,CS Herediano,3,4,2,2-1,2024-25_cr1.txt
+16.00,LD Alajuelense,Deportivo Saprissa,1,1,X,0-1,2024-25_cr1.txt
+19.00,Municipal Pérez Zeledón,AD Guanacasteca,1,1,X,0-0,2024-25_cr1.txt
+16.00,Municipal Liberia,CS Cartaginés,3,0,1,1-0,2024-25_cr1.txt
+20.00,CS Herediano,AD San Carlos,1,2,2,1-2,2024-25_cr1.txt
+20.30,Sporting FC,Santos de Guápiles,1,1,X,0-1,2024-25_cr1.txt
+16.00,AD Guanacasteca,Santa Ana,1,0,1,0-0,2024-25_cr1.txt
+20.00,Deportivo Saprissa,Municipal Pérez Zeledón,2,2,X,0-1,2024-25_cr1.txt
+15.00,Puntarenas FC,LD Alajuelense,1,1,X,0-1,2024-25_cr1.txt
+16.00,Santos de Guápiles,Deportivo Saprissa,1,2,2,0-1,2024-25_cr1.txt
+20.00,Municipal Liberia,AD Guanacasteca,0,1,2,0-0,2024-25_cr1.txt
+11.00,CS Cartaginés,Sporting FC,1,0,1,0-0,2024-25_cr1.txt
+16.00,Santa Ana,Municipal Pérez Zeledón,0,0,X,,2024-25_cr1.txt
+18.00,AD San Carlos,Puntarenas FC,2,1,1,1-1,2024-25_cr1.txt
+20.00,LD Alajuelense,CS Herediano,2,0,1,0-0,2024-25_cr1.txt
+20.00,CS Herediano,Municipal Liberia,5,4,1,0-1,2024-25_cr1.txt
+16.00,Santa Ana,Santos de Guápiles,1,1,X,1-1,2024-25_cr1.txt
+18.30,Puntarenas FC,AD Guanacasteca,0,0,X,,2024-25_cr1.txt
+20.00,Deportivo Saprissa,AD San Carlos,3,2,1,2-2,2024-25_cr1.txt
+20.00,Sporting FC,LD Alajuelense,0,1,2,0-0,2024-25_cr1.txt
+,Municipal Pérez Zeledón,CS Cartaginés,0,0,X,,2024-25_cr1.txt
+20.00,CS Herediano,Santa Ana,2,1,1,1-0,2024-25_cr1.txt
+15.00,Puntarenas FC,Municipal Pérez Zeledón,1,1,X,0-0,2024-25_cr1.txt
+16.00,LD Alajuelense,CS Cartaginés,2,1,1,0-1,2024-25_cr1.txt
+19.00,AD Guanacasteca,Sporting FC,2,1,1,0-0,2024-25_cr1.txt
+19.00,AD San Carlos,Santos de Guápiles,2,2,X,2-1,2024-25_cr1.txt
+20.00,Municipal Liberia,Deportivo Saprissa,0,1,2,0-0,2024-25_cr1.txt
+20.00,Santa Ana,AD San Carlos,3,4,2,1-2,2024-25_cr1.txt
+15.00,Santos de Guápiles,Municipal Liberia,0,1,2,0-0,2024-25_cr1.txt
+17.00,CS Cartaginés,AD Guanacasteca,1,1,X,0-1,2024-25_cr1.txt
+20.00,Deportivo Saprissa,CS Herediano,1,0,1,0-0,2024-25_cr1.txt
+17.00,Municipal Pérez Zeledón,LD Alajuelense,2,2,X,2-2,2024-25_cr1.txt
+19.00,Sporting FC,Puntarenas FC,1,0,1,1-0,2024-25_cr1.txt
+20.00,Municipal Liberia,Santa Ana,2,3,2,0-2,2024-25_cr1.txt
+16.00,AD Guanacasteca,Municipal Pérez Zeledón,1,0,1,1-0,2024-25_cr1.txt
+19.00,AD San Carlos,Sporting FC,2,0,1,0-0,2024-25_cr1.txt
+20.00,CS Herediano,CS Cartaginés,0,2,2,0-1,2024-25_cr1.txt
+15.00,Santos de Guápiles,LD Alajuelense,1,3,2,1-1,2024-25_cr1.txt
+16.00,Deportivo Saprissa,Puntarenas FC,2,3,2,1-1,2024-25_cr1.txt
+16.00,Municipal Pérez Zeledón,Santos de Guápiles,3,1,1,2-0,2024-25_cr1.txt
+20.00,LD Alajuelense,Municipal Liberia,2,2,X,0-1,2024-25_cr1.txt
+,Puntarenas FC,CS Herediano,0,2,2,0-1,2024-25_cr1.txt
+16.00,CS Cartaginés,AD San Carlos,4,4,X,1-3,2024-25_cr1.txt
+18.00,Sporting FC,Santa Ana,1,0,1,0-0,2024-25_cr1.txt
+20.00,AD Guanacasteca,Deportivo Saprissa,2,0,1,0-0,2024-25_cr1.txt
+17.00,Municipal Liberia,Puntarenas FC,4,2,1,1-1,2024-25_cr1.txt
+20.00,CS Herediano,LD Alajuelense,1,1,X,1-1,2024-25_cr1.txt
+15.00,Santos de Guápiles,AD Guanacasteca,4,0,1,1-0,2024-25_cr1.txt
+16.00,Deportivo Saprissa,Sporting FC,1,0,1,1-0,2024-25_cr1.txt
+18.30,AD San Carlos,Municipal Pérez Zeledón,1,1,X,1-0,2024-25_cr1.txt
+20.00,Santa Ana,CS Cartaginés,2,1,1,2-0,2024-25_cr1.txt
+19.00,Puntarenas FC,Santos de Guápiles,1,0,1,0-0,2024-25_cr1.txt
+20.00,Municipal Pérez Zeledón,Santa Ana,2,1,1,1-0,2024-25_cr1.txt
+17.00,CS Cartaginés,Deportivo Saprissa,2,1,1,0-0,2024-25_cr1.txt
+20.00,LD Alajuelense,AD San Carlos,3,1,1,0-1,2024-25_cr1.txt
+15.00,AD Guanacasteca,Municipal Liberia,2,0,1,1-0,2024-25_cr1.txt
+16.00,Sporting FC,CS Herediano,1,3,2,0-2,2024-25_cr1.txt
+19.00,AD San Carlos,AD Guanacasteca,2,2,X,2-1,2024-25_cr1.txt
+20.00,Municipal Liberia,Sporting FC,1,1,X,0-1,2024-25_cr1.txt
+16.00,Santos de Guápiles,CS Cartaginés,1,0,1,1-0,2024-25_cr1.txt
+20.00,Deportivo Saprissa,LD Alajuelense,3,0,1,2-0,2024-25_cr1.txt
+11.00,Santa Ana,Puntarenas FC,1,1,X,1-1,2024-25_cr1.txt
+16.00,CS Herediano,Municipal Pérez Zeledón,4,1,1,1-1,2024-25_cr1.txt
+20.00,CS Cartaginés,Municipal Liberia,2,1,1,1-1,2024-25_cr1.txt
+19.00,AD San Carlos,CS Herediano,0,0,X,,2024-25_cr1.txt
+20.00,LD Alajuelense,Sporting FC,1,0,1,1-0,2024-25_cr1.txt
+15.00,Santos de Guápiles,Santa Ana,1,0,1,1-0,2024-25_cr1.txt
+20.00,Municipal Pérez Zeledón,Deportivo Saprissa,1,2,2,0-0,2024-25_cr1.txt
+19.00,AD Guanacasteca,Puntarenas FC,2,1,1,1-0,2024-25_cr1.txt
+18.00,Puntarenas FC,CS Cartaginés,3,2,1,2-0,2024-25_cr1.txt
+20.00,CS Herediano,AD Guanacasteca,2,1,1,1-0,2024-25_cr1.txt
+11.00,Santa Ana,LD Alajuelense,0,2,2,0-2,2024-25_cr1.txt
+16.00,Deportivo Saprissa,Santos de Guápiles,3,3,X,2-1,2024-25_cr1.txt
+18.00,Sporting FC,Municipal Pérez Zeledón,0,1,2,0-0,2024-25_cr1.txt
+16.00,Municipal Liberia,AD San Carlos,1,2,2,1-0,2024-25_cr1.txt
+16.00,Santos de Guápiles,Sporting FC,2,1,1,0-1,2024-25_cr1.txt
+19.00,AD San Carlos,Deportivo Saprissa,0,0,X,,2024-25_cr1.txt
+20.00,LD Alajuelense,Puntarenas FC,4,0,1,3-0,2024-25_cr1.txt
+11.00,CS Cartaginés,Municipal Pérez Zeledón,2,0,1,1-0,2024-25_cr1.txt
+16.00,Municipal Liberia,CS Herediano,1,1,X,1-0,2024-25_cr1.txt
+20.00,Santa Ana,AD Guanacasteca,2,1,1,1-1,2024-25_cr1.txt
+17.00,AD Guanacasteca,LD Alajuelense,1,0,1,0-0,2024-25_cr1.txt
+20.00,Municipal Pérez Zeledón,Municipal Liberia,0,1,2,0-0,2024-25_cr1.txt
+15.00,CS Herediano,Santos de Guápiles,0,2,2,0-2,2024-25_cr1.txt
+,Puntarenas FC,AD San Carlos,0,1,2,0-1,2024-25_cr1.txt
+,Deportivo Saprissa,Santa Ana,2,1,1,1-0,2024-25_cr1.txt
+,Sporting FC,CS Cartaginés,6,2,1,4-1,2024-25_cr1.txt
+19.30,AD San Carlos,Deportivo Saprissa,2,2,X,0-0,2024-25_cr1.txt
+17.00,CS Herediano,LD Alajuelense,2,0,1,2-0,2024-25_cr1.txt
+20.00,Deportivo Saprissa,AD San Carlos,2,0,1,2-0,2024-25_cr1.txt
+20.00,LD Alajuelense,CS Herediano,2,2,X,1-1,2024-25_cr1.txt
+17.00,CS Herediano,Deportivo Saprissa,3,0,1,1-0,2024-25_cr1.txt
+20.15,Deportivo Saprissa,CS Herediano,2,0,1,2-0,2024-25_cr1.txt
+17.00,CS Herediano,LD Alajuelense,2,0,1,1-0,2024-25_cr1.txt
+18.00,LD Alajuelense,CS Herediano,2,1,1,1-0,2024-25_cr1.txt
+19.00,AD Guanacasteca,Municipal Liberia,1,0,1,0-0,2024-25_cr1.txt
+19.00,AD San Carlos,Deportivo Saprissa,0,1,2,0-1,2024-25_cr1.txt
+20.00,LD Alajuelense,Santa Ana,6,3,1,4-2,2024-25_cr1.txt
+11.00,CS Cartaginés,Santos de Guápiles,5,0,1,3-0,2024-25_cr1.txt
+15.00,Puntarenas FC,CS Herediano,1,1,X,1-0,2024-25_cr1.txt
+,Municipal Pérez Zeledón,Sporting FC,1,1,X,0-1,2024-25_cr1.txt
+20.00,Municipal Liberia,LD Alajuelense,1,3,2,0-1,2024-25_cr1.txt
+16.00,Santos de Guápiles,AD San Carlos,1,1,X,1-0,2024-25_cr1.txt
+17.00,Santa Ana,Puntarenas FC,1,2,2,1-1,2024-25_cr1.txt
+20.00,CS Herediano,AD Guanacasteca,4,1,1,2-1,2024-25_cr1.txt
+18.00,Sporting FC,CS Cartaginés,1,1,X,0-0,2024-25_cr1.txt
+20.00,Deportivo Saprissa,Municipal Pérez Zeledón,0,0,X,,2024-25_cr1.txt
+15.00,Puntarenas FC,Santos de Guápiles,2,1,1,2-0,2024-25_cr1.txt
+11.00,CS Cartaginés,Municipal Liberia,0,1,2,0-1,2024-25_cr1.txt
+18.00,Municipal Pérez Zeledón,Santa Ana,1,0,1,1-0,2024-25_cr1.txt
+19.00,AD San Carlos,Sporting FC,0,1,2,0-1,2024-25_cr1.txt
+20.00,AD Guanacasteca,Deportivo Saprissa,2,0,1,2-0,2024-25_cr1.txt
+20.00,LD Alajuelense,CS Herediano,1,1,X,1-0,2024-25_cr1.txt
+16.00,Municipal Liberia,Santa Ana,4,0,1,2-0,2024-25_cr1.txt
+16.00,AD Guanacasteca,Municipal Pérez Zeledón,0,1,2,0-1,2024-25_cr1.txt
+20.00,CS Cartaginés,AD San Carlos,2,1,1,1-0,2024-25_cr1.txt
+19.00,Sporting FC,LD Alajuelense,0,1,2,0-1,2024-25_cr1.txt
+20.00,Deportivo Saprissa,Puntarenas FC,0,0,X,,2024-25_cr1.txt
+20.00,Santos de Guápiles,CS Herediano,2,2,X,1-1,2024-25_cr1.txt
+16.00,Municipal Liberia,Santos de Guápiles,0,1,2,0-0,2024-25_cr1.txt
+20.00,CS Herediano,Deportivo Saprissa,3,1,1,2-1,2024-25_cr1.txt
+11.00,Santa Ana,Sporting FC,1,2,2,1-0,2024-25_cr1.txt
+18.00,LD Alajuelense,Municipal Pérez Zeledón,0,0,X,,2024-25_cr1.txt
+,AD San Carlos,AD Guanacasteca,1,1,X,0-0,2024-25_cr1.txt
+19.00,Puntarenas FC,CS Cartaginés,1,0,1,0-0,2024-25_cr1.txt
+18.30,Sporting FC,Municipal Liberia,2,1,1,1-0,2024-25_cr1.txt
+16.00,AD Guanacasteca,Puntarenas FC,1,1,X,0-1,2024-25_cr1.txt
+19.00,AD San Carlos,LD Alajuelense,0,0,X,,2024-25_cr1.txt
+20.00,Deportivo Saprissa,Santos de Guápiles,1,0,1,1-0,2024-25_cr1.txt
+20.00,Municipal Pérez Zeledón,CS Herediano,0,1,2,0-1,2024-25_cr1.txt
+20.00,CS Cartaginés,Santa Ana,2,1,1,2-0,2024-25_cr1.txt
+16.00,Santa Ana,AD San Carlos,2,2,X,1-1,2024-25_cr1.txt
+18.00,Santos de Guápiles,AD Guanacasteca,1,0,1,1-0,2024-25_cr1.txt
+20.00,Municipal Liberia,Deportivo Saprissa,2,3,2,1-2,2024-25_cr1.txt
+15.00,CS Herediano,Sporting FC,2,0,1,0-0,2024-25_cr1.txt
+,Puntarenas FC,Municipal Pérez Zeledón,2,1,1,1-0,2024-25_cr1.txt
+19.00,LD Alajuelense,CS Cartaginés,1,0,1,0-0,2024-25_cr1.txt
+19.00,Municipal Pérez Zeledón,AD San Carlos,1,0,1,0-0,2024-25_cr1.txt
+16.00,Santos de Guápiles,Santa Ana,2,3,2,1-1,2024-25_cr1.txt
+20.00,CS Herediano,Municipal Liberia,2,1,1,1-0,2024-25_cr1.txt
+11.00,Deportivo Saprissa,LD Alajuelense,1,1,X,0-1,2024-25_cr1.txt
+15.00,AD Guanacasteca,CS Cartaginés,1,0,1,0-0,2024-25_cr1.txt
+17.00,Sporting FC,Puntarenas FC,2,4,2,0-2,2024-25_cr1.txt
+19.00,Municipal Liberia,Municipal Pérez Zeledón,2,1,1,2-0,2024-25_cr1.txt
+19.00,LD Alajuelense,AD Guanacasteca,1,0,1,0-0,2024-25_cr1.txt
+11.00,CS Cartaginés,CS Herediano,0,1,2,0-0,2024-25_cr1.txt
+15.00,Santa Ana,Deportivo Saprissa,2,1,1,1-0,2024-25_cr1.txt
+17.00,AD San Carlos,Puntarenas FC,0,1,2,0-1,2024-25_cr1.txt
+19.00,Sporting FC,Santos de Guápiles,0,3,2,0-0,2024-25_cr1.txt
+19.00,AD Guanacasteca,Santa Ana,0,0,X,,2024-25_cr1.txt
+17.00,Puntarenas FC,Municipal Liberia,2,0,1,1-0,2024-25_cr1.txt
+20.00,CS Herediano,AD San Carlos,2,1,1,0-1,2024-25_cr1.txt
+15.00,Deportivo Saprissa,Sporting FC,2,0,1,2-0,2024-25_cr1.txt
+16.00,Santos de Guápiles,LD Alajuelense,0,0,X,,2024-25_cr1.txt
+19.00,Municipal Pérez Zeledón,CS Cartaginés,0,1,2,0-0,2024-25_cr1.txt
+19.00,AD San Carlos,Municipal Liberia,1,0,1,0-0,2024-25_cr1.txt
+20.00,LD Alajuelense,Puntarenas FC,0,0,X,,2024-25_cr1.txt
+17.00,Municipal Pérez Zeledón,Santos de Guápiles,2,1,1,0-0,2024-25_cr1.txt
+11.00,Santa Ana,CS Herediano,1,1,X,1-0,2024-25_cr1.txt
+18.00,CS Cartaginés,Deportivo Saprissa,2,1,1,0-1,2024-25_cr1.txt
+19.00,Sporting FC,AD Guanacasteca,2,1,1,2-1,2024-25_cr1.txt
+16.00,Santos de Guápiles,CS Cartaginés,1,1,X,1-1,2024-25_cr1.txt
+17.00,Municipal Liberia,Sporting FC,1,0,1,1-0,2024-25_cr1.txt
+20.00,CS Herediano,LD Alajuelense,1,2,2,1-1,2024-25_cr1.txt
+11.00,Santa Ana,Municipal Pérez Zeledón,0,0,X,,2024-25_cr1.txt
+15.00,Deportivo Saprissa,AD San Carlos,3,0,1,1-0,2024-25_cr1.txt
+17.00,Puntarenas FC,AD Guanacasteca,2,2,X,1-2,2024-25_cr1.txt
+19.00,AD Guanacasteca,Santos de Guápiles,0,1,2,0-1,2024-25_cr1.txt
+19.00,AD San Carlos,Santa Ana,1,1,X,0-0,2024-25_cr1.txt
+20.00,Municipal Pérez Zeledón,Puntarenas FC,0,1,2,0-1,2024-25_cr1.txt
+11.00,CS Cartaginés,LD Alajuelense,1,1,X,1-1,2024-25_cr1.txt
+16.00,Deportivo Saprissa,Municipal Liberia,1,1,X,1-1,2024-25_cr1.txt
+18.00,Sporting FC,CS Herediano,1,3,2,1-1,2024-25_cr1.txt
+21.00,Municipal Liberia,AD Guanacasteca,1,1,X,1-1,2024-25_cr1.txt
+19.00,Puntarenas FC,Sporting FC,2,1,1,0-1,2024-25_cr1.txt
+20.00,CS Herediano,Municipal Pérez Zeledón,3,0,1,2-0,2024-25_cr1.txt
+16.00,Santa Ana,CS Cartaginés,0,1,2,0-1,2024-25_cr1.txt
+20.00,Santos de Guápiles,Deportivo Saprissa,2,0,1,1-0,2024-25_cr1.txt
+,LD Alajuelense,AD San Carlos,0,0,X,,2024-25_cr1.txt
+20.00,AD Guanacasteca,AD San Carlos,0,2,2,0-2,2024-25_cr1.txt
+11.00,CS Cartaginés,Puntarenas FC,1,0,1,0-0,2024-25_cr1.txt
+16.00,Deportivo Saprissa,CS Herediano,1,0,1,1-0,2024-25_cr1.txt
+18.00,Sporting FC,Santa Ana,3,1,1,1-1,2024-25_cr1.txt
+18.00,Santos de Guápiles,Municipal Liberia,0,1,2,0-0,2024-25_cr1.txt
+20.00,Municipal Pérez Zeledón,LD Alajuelense,1,2,2,0-1,2024-25_cr1.txt
+19.00,AD San Carlos,Municipal Pérez Zeledón,0,2,2,0-1,2024-25_cr1.txt
+16.00,Santa Ana,AD Guanacasteca,0,0,X,,2024-25_cr1.txt
+19.00,Sporting FC,Deportivo Saprissa,0,1,2,0-1,2024-25_cr1.txt
+20.00,CS Herediano,CS Cartaginés,1,1,X,0-0,2024-25_cr1.txt
+15.00,Municipal Liberia,Puntarenas FC,1,1,X,0-1,2024-25_cr1.txt
+18.00,LD Alajuelense,Santos de Guápiles,2,0,1,1-0,2024-25_cr1.txt
+19.00,Municipal Liberia,CS Herediano,0,1,2,0-0,2024-25_cr1.txt
+20.00,Puntarenas FC,AD San Carlos,1,0,1,1-0,2024-25_cr1.txt
+16.00,CS Cartaginés,Municipal Pérez Zeledón,3,0,1,2-0,2024-25_cr1.txt
+18.00,Santos de Guápiles,Sporting FC,2,3,2,1-2,2024-25_cr1.txt
+20.00,Deportivo Saprissa,Santa Ana,3,0,1,3-0,2024-25_cr1.txt
+15.00,AD Guanacasteca,LD Alajuelense,1,1,X,1-1,2024-25_cr1.txt
+16.00,Municipal Pérez Zeledón,AD Guanacasteca,3,0,1,2-0,2024-25_cr1.txt
+20.00,CS Herediano,Santos de Guápiles,2,1,1,2-1,2024-25_cr1.txt
+,Puntarenas FC,Deportivo Saprissa,1,2,2,0-1,2024-25_cr1.txt
+16.00,Santa Ana,Municipal Liberia,1,4,2,0-3,2024-25_cr1.txt
+19.00,AD San Carlos,CS Cartaginés,1,2,2,0-1,2024-25_cr1.txt
+20.00,LD Alajuelense,Sporting FC,0,0,X,,2024-25_cr1.txt
+,CS Cartaginés,AD Guanacasteca,3,0,1,,2024-25_cr1.txt
+16.00,Santos de Guápiles,Puntarenas FC,1,1,X,1-1,2024-25_cr1.txt
+18.00,Municipal Liberia,AD San Carlos,0,1,2,0-1,2024-25_cr1.txt
+16.00,CS Herediano,Santa Ana,2,1,1,0-1,2024-25_cr1.txt
+18.00,Sporting FC,Municipal Pérez Zeledón,0,0,X,,2024-25_cr1.txt
+20.00,LD Alajuelense,Deportivo Saprissa,1,1,X,1-1,2024-25_cr1.txt
+20.00,Santa Ana,Santos de Guápiles,3,3,X,1-1,2024-25_cr1.txt
+,AD Guanacasteca,Sporting FC,0,3,2,,2024-25_cr1.txt
+16.00,AD San Carlos,CS Herediano,1,1,X,0-0,2024-25_cr1.txt
+20.00,Deportivo Saprissa,CS Cartaginés,1,1,X,1-1,2024-25_cr1.txt
+15.00,Municipal Pérez Zeledón,Municipal Liberia,1,5,2,0-3,2024-25_cr1.txt
+17.00,Puntarenas FC,LD Alajuelense,0,2,2,0-2,2024-25_cr1.txt
+19.00,Sporting FC,AD San Carlos,1,0,1,0-0,2024-25_cr1.txt
+16.00,Santos de Guápiles,Municipal Pérez Zeledón,3,1,1,2-1,2024-25_cr1.txt
+17.00,Municipal Liberia,CS Cartaginés,0,1,2,0-0,2024-25_cr1.txt
+20.00,CS Herediano,Puntarenas FC,1,1,X,0-0,2024-25_cr1.txt
+11.00,Santa Ana,LD Alajuelense,1,1,X,0-0,2024-25_cr1.txt
+16.00,Deportivo Saprissa,AD Guanacasteca,3,0,1,,2024-25_cr1.txt
+15.00,AD Guanacasteca,CS Herediano,0,3,2,,2024-25_cr1.txt

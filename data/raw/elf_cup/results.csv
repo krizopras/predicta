@@ -1,0 +1,17 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Găgăuzia,Greenland,0,2,2,Kyrenia,Northern Cyprus,2006_elf_cup.txt
+Kyrgyzstan,Zanzibar,0,1,2,Kyrenia,Northern Cyprus,2006_elf_cup.txt
+Tibet,Tajikistan,0,3,2,Güzelyurt,Northern Cyprus,2006_elf_cup.txt
+Northern Cyprus,Crimea,5,0,1,Lefkoşa,Northern Cyprus,2006_elf_cup.txt
+Găgăuzia,Kyrgyzstan,1,6,2,Gazimağusa,Northern Cyprus,2006_elf_cup.txt
+Greenland,Zanzibar,1,1,X,Gazimağusa,Northern Cyprus,2006_elf_cup.txt
+Tibet,Crimea,0,1,2,Güzelyurt,Northern Cyprus,2006_elf_cup.txt
+Northern Cyprus,Tajikistan,5,1,1,Güzelyurt,Northern Cyprus,2006_elf_cup.txt
+Greenland,Kyrgyzstan,0,1,2,Kyrenia,Northern Cyprus,2006_elf_cup.txt
+Găgăuzia,Zanzibar,1,1,X,Kyrenia,Northern Cyprus,2006_elf_cup.txt
+Tajikistan,Crimea,1,2,2,Gazimağusa,Northern Cyprus,2006_elf_cup.txt
+Northern Cyprus,Tibet,10,0,1,Gazimağusa,Northern Cyprus,2006_elf_cup.txt
+Kyrgyzstan,Crimea,2,3,2,Lefkoşa,Northern Cyprus,2006_elf_cup.txt
+Northern Cyprus,Zanzibar,5,0,1,Lefkoşa,Northern Cyprus,2006_elf_cup.txt
+Kyrgyzstan,Zanzibar,2,2,X,Lefkoşa,Northern Cyprus,2006_elf_cup.txt
+Northern Cyprus,Crimea,3,1,1,Lefkoşa,Northern Cyprus,2006_elf_cup.txt

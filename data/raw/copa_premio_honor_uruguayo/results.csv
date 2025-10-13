@@ -1,0 +1,16 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Uruguay,Argentina,1,1,X,Montevideo,Uruguay,1911_copa_premio_honor_uruguayo.txt
+Uruguay,Argentina,3,0,1,Montevideo,Uruguay,1911_copa_premio_honor_uruguayo.txt
+Uruguay,Argentina,3,0,1,Montevideo,Uruguay,1912_copa_premio_honor_uruguayo.txt
+Uruguay,Argentina,1,0,1,Montevideo,Uruguay,1913_copa_premio_honor_uruguayo.txt
+Uruguay,Argentina,3,2,1,Montevideo,Uruguay,1914_copa_premio_honor_uruguayo.txt
+Uruguay,Argentina,2,3,2,Montevideo,Uruguay,1915_copa_premio_honor_uruguayo.txt
+Uruguay,Argentina,0,1,2,Montevideo,Uruguay,1916_copa_premio_honor_uruguayo.txt
+Uruguay,Argentina,0,2,2,Montevideo,Uruguay,1917_copa_premio_honor_uruguayo.txt
+Uruguay,Argentina,1,1,X,Montevideo,Uruguay,1918_copa_premio_honor_uruguayo.txt
+Uruguay,Argentina,3,1,1,Montevideo,Uruguay,1918_copa_premio_honor_uruguayo.txt
+Uruguay,Argentina,4,1,1,Montevideo,Uruguay,1919_copa_premio_honor_uruguayo.txt
+Uruguay,Argentina,2,0,1,Montevideo,Uruguay,1920_copa_premio_honor_uruguayo.txt
+Uruguay,Argentina,1,0,1,Montevideo,Uruguay,1922_copa_premio_honor_uruguayo.txt
+Uruguay,Argentina,2,2,X,Montevideo,Uruguay,1923_copa_premio_honor_uruguayo.txt
+Uruguay,Argentina,0,2,2,Montevideo,Uruguay,1923_copa_premio_honor_uruguayo.txt

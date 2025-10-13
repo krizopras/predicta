@@ -1,0 +1,7 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Paraguay,Argentina,2,3,2,Asunción,Paraguay,1976_copa_felix_bogado.txt
+Argentina,Paraguay,2,2,X,Buenos Aires,Argentina,1976_copa_felix_bogado.txt
+Argentina,Paraguay,2,1,1,Buenos Aires,Argentina,1977_copa_felix_bogado.txt
+Paraguay,Argentina,2,0,1,Asunción,Paraguay   [Paraguay wins on penalties],1977_copa_felix_bogado.txt
+Paraguay,Argentina,1,0,1,Asunción,Paraguay,1983_copa_felix_bogado.txt
+Argentina,Paraguay,0,0,X,Buenos Aires,Argentina,1983_copa_felix_bogado.txt

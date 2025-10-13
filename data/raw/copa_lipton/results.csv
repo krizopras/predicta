@@ -1,0 +1,29 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Argentina,Uruguay,0,0,X,Buenos Aires,Argentina,1905_copa_lipton.txt
+Uruguay,Argentina,0,2,2,Montevideo,Uruguay,1906_copa_lipton.txt
+Uruguay,Argentina,2,2,X,Montevideo,Uruguay,1908_copa_lipton.txt
+Argentina,Uruguay,2,1,1,Buenos Aires,Argentina,1909_copa_lipton.txt
+Uruguay,Argentina,3,1,1,Montevideo,Uruguay,1910_copa_lipton.txt
+Argentina,Uruguay,0,2,2,Buenos Aires,Argentina,1911_copa_lipton.txt
+Uruguay,Argentina,2,0,1,Montevideo,Uruguay,1912_copa_lipton.txt
+Argentina,Uruguay,4,0,1,Avellaneda,Argentina,1913_copa_lipton.txt
+Argentina,Uruguay,2,1,1,Buenos Aires,Argentina,1915_copa_lipton.txt
+Uruguay,Argentina,1,2,2,Montevideo,Uruguay,1916_copa_lipton.txt
+Argentina,Uruguay,1,0,1,Avellaneda,Argentina,1917_copa_lipton.txt
+Uruguay,Argentina,1,1,X,Montevideo,Uruguay,1918_copa_lipton.txt
+Argentina,Uruguay,1,2,2,Buenos Aires,Argentina,1919_copa_lipton.txt
+Uruguay,Argentina,1,0,1,Montevideo,Uruguay,1922_copa_lipton.txt
+Argentina,Uruguay,0,0,X,Buenos Aires,Argentina,1923_copa_lipton.txt
+Uruguay,Argentina,2,0,1,Montevideo,Uruguay,1924_copa_lipton.txt
+Argentina,Uruguay,0,1,2,Buenos Aires,Argentina,1927_copa_lipton.txt
+Uruguay,Argentina,2,2,X,Montevideo,Uruguay,1928_copa_lipton.txt
+Argentina,Uruguay,0,0,X,Buenos Aires,Argentina,1929_copa_lipton.txt
+Argentina,Uruguay,5,1,1,Avellaneda,Argentina,1937_copa_lipton.txt
+Uruguay,Argentina,1,1,X,Montevideo,Uruguay,1942_copa_lipton.txt
+Uruguay,Argentina,2,2,X,Montevideo,Uruguay,1945_copa_lipton.txt
+Argentina,Uruguay,1,1,X,Buenos Aires,Argentina,1957_copa_lipton.txt
+Argentina,Uruguay,3,1,1,Buenos Aires,Argentina,1962_copa_lipton.txt
+Argentina,Uruguay,2,0,1,Buenos Aires,Argentina,1968_copa_lipton.txt
+Argentina,Uruguay,1,1,X,Buenos Aires,Argentina,1973_copa_lipton.txt
+Argentina,Uruguay,4,1,1,Buenos Aires,Argentina,1976_copa_lipton.txt
+Uruguay,Argentina,0,0,X,Montevideo,Uruguay,1992_copa_lipton.txt

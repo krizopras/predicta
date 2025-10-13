@@ -1,0 +1,25 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+South Africa,Andorra,1,1,X,Annaba,Algeria,2024_fifa_series.txt
+Cape Verde,Guyana,1,0,1,Jeddah,Saudi Arabia,2024_fifa_series.txt
+Guinea,Vanuatu,6,0,1,Jeddah,Saudi Arabia,2024_fifa_series.txt
+Algeria,Bolivia,3,2,1,Algiers,Algeria,2024_fifa_series.txt
+Azerbaijan,Mongolia,1,0,1,Baku,Azerbaijan,2024_fifa_series.txt
+Bulgaria,Tanzania,1,0,1,Baku,Azerbaijan,2024_fifa_series.txt
+Egypt,New Zealand,1,0,1,Cairo,Egypt,2024_fifa_series.txt
+Equatorial Guinea,Cambodia,2,0,1,Jeddah,Saudi Arabia,2024_fifa_series.txt
+Brunei,Bermuda,0,2,2,Jeddah,Saudi Arabia,2024_fifa_series.txt
+Central African Republic,Bhutan,6,0,1,Colombo,Sri Lanka,2024_fifa_series.txt
+Sri Lanka,Papua New Guinea,0,0,X,Colombo,Sri Lanka,2024_fifa_series.txt
+Tunisia,Croatia,0,0,X,Cairo,Egypt   [Croatia wins on penalties],2024_fifa_series.txt
+Bolivia,Andorra,1,0,1,Annaba,Algeria,2024_fifa_series.txt
+Azerbaijan,Bulgaria,1,1,X,Baku,Azerbaijan,2024_fifa_series.txt
+Tanzania,Mongolia,3,0,1,Baku,Azerbaijan,2024_fifa_series.txt
+Cape Verde,Equatorial Guinea,1,0,1,Jeddah,Saudi Arabia,2024_fifa_series.txt
+Bermuda,Guinea,1,5,2,Jeddah,Saudi Arabia,2024_fifa_series.txt
+Central African Republic,Papua New Guinea,4,0,1,Colombo,Sri Lanka,2024_fifa_series.txt
+Sri Lanka,Bhutan,2,0,1,Colombo,Sri Lanka,2024_fifa_series.txt
+Algeria,South Africa,3,3,X,Algiers,Algeria,2024_fifa_series.txt
+Egypt,Croatia,2,4,2,Cairo,Egypt,2024_fifa_series.txt
+New Zealand,Tunisia,0,0,X,Cairo,Egypt   [Tunisia wins on penalties],2024_fifa_series.txt
+Cambodia,Guyana,1,4,2,Jeddah,Saudi Arabia,2024_fifa_series.txt
+Brunei,Vanuatu,3,2,1,Jeddah,Saudi Arabia,2024_fifa_series.txt

@@ -1,0 +1,9 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Argentina,Russia,2,4,2,Berlin,Germany,1988_four_nations_tournament.txt
+Germany,Sweden,1,1,X,Berlin,Germany   [Sweden wins on penalties],1988_four_nations_tournament.txt
+Germany,Argentina,1,0,1,Berlin,Germany,1988_four_nations_tournament.txt
+Sweden,Russia,2,0,1,Berlin,Germany,1988_four_nations_tournament.txt
+Finland,Estonia,0,0,X,Vantaa,Finland   [Finland wins on penalties],1993_four_nations_tournament.txt
+Latvia,Lithuania,1,2,2,Vantaa,Finland,1993_four_nations_tournament.txt
+Estonia,Latvia,0,2,2,Vantaa,Finland,1993_four_nations_tournament.txt
+Finland,Lithuania,3,0,1,Vantaa,Finland,1993_four_nations_tournament.txt

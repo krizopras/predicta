@@ -1,0 +1,5 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Cameroon,Algeria,0,0,X,Dakar,Senegal   [Cameroon wins on penalties],1991_dakar_tournament.txt
+Senegal,Ivory Coast,0,0,X,Dakar,Senegal   [Ivory Coast wins on penalties],1991_dakar_tournament.txt
+Senegal,Algeria,2,2,X,Dakar,Senegal   [Senegal wins on penalties],1991_dakar_tournament.txt
+Ivory Coast,Cameroon,1,1,X,Dakar,Senegal   [Ivory Coast wins on penalties],1991_dakar_tournament.txt

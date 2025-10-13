@@ -1,0 +1,24 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Argentina,Brazil,0,1,2,Buenos Aires,Argentina,1914_copa_roca.txt
+Brazil,Argentina,2,1,1,São Paulo,Brazil,1922_copa_roca.txt
+Argentina,Brazil,2,0,1,Buenos Aires,Argentina,1923_copa_roca.txt
+Brazil,Argentina,1,5,2,Rio de Janeiro,Brazil,1939_copa_roca.txt
+Brazil,Argentina,3,2,1,Rio de Janeiro,Brazil,1939_copa_roca.txt
+Brazil,Argentina,2,2,X,São Paulo,Brazil,1940_copa_roca.txt
+Brazil,Argentina,0,3,2,São Paulo,Brazil,1940_copa_roca.txt
+Argentina,Brazil,6,1,1,Buenos Aires,Argentina,1940_copa_roca.txt
+Argentina,Brazil,2,3,2,Buenos Aires,Argentina,1940_copa_roca.txt
+Argentina,Brazil,5,1,1,Avellaneda,Argentina,1940_copa_roca.txt
+Brazil,Argentina,3,4,2,São Paulo,Brazil,1945_copa_roca.txt
+Brazil,Argentina,6,2,1,Rio de Janeiro,Brazil,1945_copa_roca.txt
+Brazil,Argentina,3,1,1,Rio de Janeiro,Brazil,1945_copa_roca.txt
+Brazil,Argentina,1,2,2,Rio de Janeiro,Brazil,1957_copa_roca.txt
+Brazil,Argentina,2,0,1,São Paulo,Brazil,1957_copa_roca.txt
+Argentina,Brazil,4,2,1,Buenos Aires,Argentina,1960_copa_roca.txt
+Argentina,Brazil,1,4,2,Buenos Aires,Argentina,1960_copa_roca.txt
+Brazil,Argentina,2,3,2,São Paulo,Brazil,1963_copa_roca.txt
+Brazil,Argentina,5,2,1,Rio de Janeiro,Brazil,1963_copa_roca.txt
+Argentina,Brazil,1,1,X,Buenos Aires,Argentina,1971_copa_roca.txt
+Argentina,Brazil,2,2,X,Buenos Aires,Argentina,1971_copa_roca.txt
+Argentina,Brazil,1,2,2,Buenos Aires,Argentina,1976_copa_roca.txt
+Brazil,Argentina,2,0,1,Rio de Janeiro,Brazil,1976_copa_roca.txt

@@ -1,0 +1,221 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Guernsey,Alderney,6,0,1,Guernsey,Guernsey,1905_muratti_vase.txt
+Jersey,Guernsey,0,1,2,Jersey,Jersey,1905_muratti_vase.txt
+Jersey,Guernsey,1,2,2,Jersey,Jersey,1906_muratti_vase.txt
+Guernsey,Alderney,1,0,1,Guernsey,Guernsey,1906_muratti_vase.txt
+Alderney,Jersey,1,2,2,Guernsey,Guernsey,1907_muratti_vase.txt
+Jersey,Guernsey,2,3,2,Jersey,Jersey,1907_muratti_vase.txt
+Guernsey,Alderney,3,0,1,Jersey,Jersey,1908_muratti_vase.txt
+Guernsey,Jersey,0,4,2,Guernsey,Guernsey,1908_muratti_vase.txt
+Guernsey,Jersey,3,0,1,Guernsey,Guernsey,1909_muratti_vase.txt
+Guernsey,Alderney,2,0,1,Jersey,Jersey,1909_muratti_vase.txt
+Jersey,Alderney,7,1,1,Jersey,Jersey,1910_muratti_vase.txt
+Guernsey,Jersey,2,3,2,Guernsey,Guernsey,1910_muratti_vase.txt
+Guernsey,Alderney,2,1,1,Guernsey,Guernsey,1911_muratti_vase.txt
+Jersey,Guernsey,4,1,1,Jersey,Jersey,1911_muratti_vase.txt
+Jersey,Guernsey,3,3,X,Jersey,Jersey,1912_muratti_vase.txt
+Jersey,Guernsey,2,5,2,Jersey,Jersey,1912_muratti_vase.txt
+Guernsey,Alderney,4,0,1,Guernsey,Guernsey,1912_muratti_vase.txt
+Jersey,Alderney,5,2,1,Guernsey,Guernsey,1913_muratti_vase.txt
+Jersey,Guernsey,2,4,2,Jersey,Jersey,1913_muratti_vase.txt
+Guernsey,Alderney,4,0,1,Jersey,Jersey,1914_muratti_vase.txt
+Guernsey,Jersey,2,1,1,Guernsey,Guernsey,1914_muratti_vase.txt
+Guernsey,Jersey,2,0,1,Guernsey,Guernsey,1919_muratti_vase.txt
+Guernsey,Jersey,1,0,1,Guernsey,Guernsey,1920_muratti_vase.txt
+Alderney,Guernsey,1,0,1,Jersey,Jersey,1920_muratti_vase.txt
+Jersey,Alderney,2,0,1,Jersey,Jersey,1921_muratti_vase.txt
+Guernsey,Jersey,0,1,2,Guernsey,Guernsey,1921_muratti_vase.txt
+Guernsey,Alderney,8,0,1,Guernsey,Guernsey,1922_muratti_vase.txt
+Jersey,Guernsey,1,2,2,Jersey,Jersey,1922_muratti_vase.txt
+Jersey,Guernsey,0,1,2,Jersey,Jersey,1923_muratti_vase.txt
+Guernsey,Alderney,3,2,1,Guernsey,Guernsey,1923_muratti_vase.txt
+Jersey,Alderney,1,0,1,Guernsey,Guernsey,1924_muratti_vase.txt
+Jersey,Guernsey,1,0,1,Jersey,Jersey,1924_muratti_vase.txt
+Guernsey,Alderney,3,0,1,Jersey,Jersey,1925_muratti_vase.txt
+Guernsey,Jersey,2,1,1,Guernsey,Guernsey,1925_muratti_vase.txt
+Guernsey,Jersey,1,5,2,Guernsey,Guernsey,1926_muratti_vase.txt
+Jersey,Alderney,7,1,1,Jersey,Jersey,1926_muratti_vase.txt
+Jersey,Alderney,3,0,1,Jersey,Jersey,1927_muratti_vase.txt
+Guernsey,Jersey,1,0,1,Guernsey,Guernsey,1927_muratti_vase.txt
+Guernsey,Alderney,4,0,1,Guernsey,Guernsey,1928_muratti_vase.txt
+Jersey,Guernsey,2,1,1,Jersey,Jersey,1928_muratti_vase.txt
+Jersey,Guernsey,1,7,2,Jersey,Jersey,1929_muratti_vase.txt
+Guernsey,Alderney,5,0,1,Guernsey,Guernsey,1929_muratti_vase.txt
+Jersey,Alderney,3,2,1,Guernsey,Guernsey,1930_muratti_vase.txt
+Jersey,Guernsey,2,3,2,Jersey,Jersey,1930_muratti_vase.txt
+Guernsey,Alderney,1,0,1,Jersey,Jersey,1931_muratti_vase.txt
+Guernsey,Jersey,2,4,2,Guernsey,Guernsey,1931_muratti_vase.txt
+Guernsey,Jersey,2,0,1,Guernsey,Guernsey,1932_muratti_vase.txt
+Guernsey,Alderney,4,2,1,Jersey,Jersey,1932_muratti_vase.txt
+Jersey,Alderney,6,0,1,Jersey,Jersey,1933_muratti_vase.txt
+Guernsey,Jersey,4,1,1,Guernsey,Guernsey,1933_muratti_vase.txt
+Guernsey,Alderney,3,0,1,Guernsey,Guernsey,1934_muratti_vase.txt
+Jersey,Guernsey,0,1,2,Jersey,Jersey,1934_muratti_vase.txt
+Jersey,Guernsey,0,1,2,Jersey,Jersey,1935_muratti_vase.txt
+Guernsey,Alderney,5,0,1,Guernsey,Guernsey,1935_muratti_vase.txt
+Jersey,Alderney,9,0,1,Jersey,Jersey,1936_muratti_vase.txt
+Guernsey,Jersey,2,1,1,Guernsey,Guernsey,1936_muratti_vase.txt
+Guernsey,Alderney,4,1,1,Guernsey,Guernsey,1937_muratti_vase.txt
+Jersey,Guernsey,2,2,X,Jersey,Jersey,1937_muratti_vase.txt
+Guernsey,Jersey,3,3,X,Guernsey,Guernsey,1937_muratti_vase.txt
+Guernsey,Jersey,4,3,1,Guernsey,Guernsey,1938_muratti_vase.txt
+Guernsey,Alderney,3,1,1,Jersey,Jersey,1938_muratti_vase.txt
+Jersey,Alderney,2,1,1,Jersey,Jersey,1939_muratti_vase.txt
+Guernsey,Jersey,0,1,2,Guernsey,Guernsey,1939_muratti_vase.txt
+Jersey,Guernsey,7,0,1,Jersey,Jersey,1946_muratti_vase.txt
+Guernsey,Jersey,0,4,2,Guernsey,Guernsey,1946_muratti_vase.txt
+Guernsey,Jersey,1,3,2,Guernsey,Guernsey,1947_muratti_vase.txt
+Guernsey,Alderney,3,0,1,Guernsey,Guernsey,1948_muratti_vase.txt
+Jersey,Guernsey,6,3,1,Jersey,Jersey,1948_muratti_vase.txt
+Jersey,Alderney,9,0,1,Jersey,Jersey,1949_muratti_vase.txt
+Guernsey,Jersey,1,2,2,Guernsey,Guernsey,1949_muratti_vase.txt
+Guernsey,Alderney,3,1,1,Guernsey,Guernsey,1950_muratti_vase.txt
+Jersey,Guernsey,0,2,2,Jersey,Jersey,1950_muratti_vase.txt
+Jersey,Alderney,8,1,1,Jersey,Jersey,1951_muratti_vase.txt
+Guernsey,Jersey,3,1,1,Guernsey,Guernsey,1951_muratti_vase.txt
+Guernsey,Alderney,7,2,1,Guernsey,Guernsey,1952_muratti_vase.txt
+Jersey,Guernsey,1,3,2,Jersey,Jersey,1952_muratti_vase.txt
+Jersey,Alderney,4,0,1,Jersey,Jersey,1953_muratti_vase.txt
+Guernsey,Jersey,0,2,2,Guernsey,Guernsey,1953_muratti_vase.txt
+Guernsey,Alderney,2,1,1,Guernsey,Guernsey,1954_muratti_vase.txt
+Jersey,Guernsey,3,5,2,Jersey,Jersey,1954_muratti_vase.txt
+Jersey,Alderney,3,0,1,Jersey,Jersey,1955_muratti_vase.txt
+Guernsey,Jersey,0,0,X,Guernsey,Guernsey,1955_muratti_vase.txt
+Jersey,Guernsey,1,0,1,Jersey,Jersey,1955_muratti_vase.txt
+Guernsey,Alderney,4,0,1,Guernsey,Guernsey,1956_muratti_vase.txt
+Jersey,Guernsey,2,1,1,Jersey,Jersey,1956_muratti_vase.txt
+Jersey,Alderney,7,1,1,Jersey,Jersey,1957_muratti_vase.txt
+Guernsey,Jersey,6,4,1,Guernsey,Guernsey,1957_muratti_vase.txt
+Guernsey,Alderney,8,2,1,Guernsey,Guernsey,1958_muratti_vase.txt
+Jersey,Guernsey,2,1,1,Jersey,Jersey,1958_muratti_vase.txt
+Jersey,Alderney,6,0,1,Jersey,Jersey,1959_muratti_vase.txt
+Guernsey,Jersey,2,3,2,Guernsey,Guernsey,1959_muratti_vase.txt
+Guernsey,Alderney,5,1,1,Guernsey,Guernsey,1960_muratti_vase.txt
+Jersey,Guernsey,5,1,1,Jersey,Jersey,1960_muratti_vase.txt
+Jersey,Alderney,4,2,1,Jersey,Jersey,1961_muratti_vase.txt
+Guernsey,Jersey,1,2,2,Guernsey,Guernsey,1961_muratti_vase.txt
+Guernsey,Alderney,6,1,1,Guernsey,Guernsey,1962_muratti_vase.txt
+Jersey,Guernsey,2,1,1,Jersey,Jersey,1962_muratti_vase.txt
+Jersey,Alderney,6,0,1,Jersey,Jersey,1963_muratti_vase.txt
+Guernsey,Jersey,1,4,2,Guernsey,Guernsey,1963_muratti_vase.txt
+Guernsey,Alderney,3,0,1,Guernsey,Guernsey,1964_muratti_vase.txt
+Jersey,Guernsey,1,0,1,Jersey,Jersey,1964_muratti_vase.txt
+Jersey,Alderney,8,0,1,Jersey,Jersey,1965_muratti_vase.txt
+Guernsey,Jersey,2,4,2,Guernsey,Guernsey,1965_muratti_vase.txt
+Guernsey,Alderney,10,0,1,Guernsey,Guernsey,1966_muratti_vase.txt
+Jersey,Guernsey,1,1,X,Jersey,Jersey,1966_muratti_vase.txt
+Guernsey,Jersey,3,1,1,Guernsey,Guernsey,1966_muratti_vase.txt
+Jersey,Alderney,3,1,1,Jersey,Jersey,1967_muratti_vase.txt
+Guernsey,Jersey,1,3,2,Guernsey,Guernsey,1967_muratti_vase.txt
+Guernsey,Alderney,2,0,1,Guernsey,Guernsey,1968_muratti_vase.txt
+Jersey,Guernsey,2,1,1,Jersey,Jersey,1968_muratti_vase.txt
+Jersey,Alderney,5,0,1,Jersey,Jersey,1969_muratti_vase.txt
+Guernsey,Jersey,2,1,1,Guernsey,Guernsey,1969_muratti_vase.txt
+Guernsey,Alderney,5,0,1,Guernsey,Guernsey,1970_muratti_vase.txt
+Jersey,Guernsey,2,0,1,Jersey,Jersey,1970_muratti_vase.txt
+Jersey,Alderney,11,0,1,Jersey,Jersey,1971_muratti_vase.txt
+Guernsey,Jersey,0,1,2,Guernsey,Guernsey,1971_muratti_vase.txt
+Guernsey,Alderney,5,0,1,Guernsey,Guernsey,1972_muratti_vase.txt
+Jersey,Guernsey,0,3,2,Jersey,Jersey,1972_muratti_vase.txt
+Jersey,Alderney,6,1,1,Jersey,Jersey,1973_muratti_vase.txt
+Guernsey,Jersey,1,4,2,Guernsey,Guernsey,1973_muratti_vase.txt
+Guernsey,Alderney,6,0,1,Guernsey,Guernsey,1974_muratti_vase.txt
+Jersey,Guernsey,1,2,2,Jersey,Jersey,1974_muratti_vase.txt
+Jersey,Alderney,3,1,1,Jersey,Jersey,1975_muratti_vase.txt
+Guernsey,Jersey,2,2,X,Guernsey,Guernsey,1975_muratti_vase.txt
+Jersey,Guernsey,2,3,2,Jersey,Jersey,1975_muratti_vase.txt
+Alderney,Guernsey,0,5,2,Alderney,Alderney,1976_muratti_vase.txt
+Jersey,Guernsey,3,1,1,Jersey,Jersey,1976_muratti_vase.txt
+Alderney,Jersey,0,3,2,Alderney,Alderney,1977_muratti_vase.txt
+Guernsey,Jersey,1,5,2,Guernsey,Guernsey,1977_muratti_vase.txt
+Guernsey,Alderney,12,0,1,Guernsey,Guernsey,1978_muratti_vase.txt
+Jersey,Guernsey,0,2,2,Jersey,Jersey,1978_muratti_vase.txt
+Jersey,Alderney,8,0,1,Jersey,Jersey,1979_muratti_vase.txt
+Guernsey,Jersey,5,0,1,Guernsey,Guernsey,1979_muratti_vase.txt
+Alderney,Guernsey,0,5,2,Alderney,Alderney,1980_muratti_vase.txt
+Jersey,Guernsey,1,2,2,Jersey,Jersey,1980_muratti_vase.txt
+Alderney,Jersey,0,5,2,Alderney,Alderney,1981_muratti_vase.txt
+Guernsey,Jersey,1,4,2,Guernsey,Guernsey,1981_muratti_vase.txt
+Guernsey,Alderney,5,1,1,Guernsey,Guernsey,1982_muratti_vase.txt
+Jersey,Guernsey,2,1,1,Jersey,Jersey,1982_muratti_vase.txt
+Jersey,Alderney,6,1,1,Jersey,Jersey,1983_muratti_vase.txt
+Guernsey,Jersey,2,1,1,Guernsey,Guernsey,1983_muratti_vase.txt
+Alderney,Guernsey,0,6,2,Alderney,Alderney,1984_muratti_vase.txt
+Jersey,Guernsey,6,2,1,Jersey,Jersey,1984_muratti_vase.txt
+Alderney,Jersey,0,5,2,Alderney,Alderney,1985_muratti_vase.txt
+Guernsey,Jersey,4,3,1,Guernsey,Guernsey,1985_muratti_vase.txt
+Guernsey,Alderney,7,0,1,Guernsey,Guernsey,1986_muratti_vase.txt
+Jersey,Guernsey,3,2,1,Jersey,Jersey,1986_muratti_vase.txt
+Jersey,Alderney,10,0,1,Jersey,Jersey,1987_muratti_vase.txt
+Guernsey,Jersey,3,4,2,Guernsey,Guernsey,1987_muratti_vase.txt
+Alderney,Guernsey,1,5,2,Alderney,Alderney,1988_muratti_vase.txt
+Jersey,Guernsey,0,1,2,Jersey,Jersey,1988_muratti_vase.txt
+Alderney,Jersey,0,4,2,Alderney,Alderney,1989_muratti_vase.txt
+Guernsey,Jersey,0,4,2,Guernsey,Guernsey,1989_muratti_vase.txt
+Guernsey,Alderney,4,0,1,Guernsey,Guernsey,1990_muratti_vase.txt
+Jersey,Guernsey,2,1,1,Jersey,Jersey,1990_muratti_vase.txt
+Alderney,Jersey,1,4,2,Alderney,Alderney,1991_muratti_vase.txt
+Guernsey,Jersey,3,0,1,Guernsey,Guernsey,1991_muratti_vase.txt
+Guernsey,Alderney,9,1,1,Guernsey,Guernsey,1992_muratti_vase.txt
+Jersey,Guernsey,2,3,2,Jersey,Jersey,1992_muratti_vase.txt
+Alderney,Guernsey,0,10,2,Alderney,Alderney,1993_muratti_vase.txt
+Guernsey,Jersey,1,2,2,Saint Sampson,Guernsey,1993_muratti_vase.txt
+Jersey,Alderney,18,0,1,Jersey,Jersey,1994_muratti_vase.txt
+Jersey,Guernsey,3,1,1,St Helier,Jersey,1994_muratti_vase.txt
+Alderney,Jersey,1,7,2,Alderney,Alderney,1995_muratti_vase.txt
+Guernsey,Jersey,1,2,2,Saint Sampson,Guernsey,1995_muratti_vase.txt
+Alderney,Guernsey,0,2,2,Alderney,Alderney,1996_muratti_vase.txt
+Jersey,Guernsey,0,0,X,St Helier,Jersey,1996_muratti_vase.txt
+Guernsey,Jersey,0,1,2,Saint Sampson,Guernsey,1996_muratti_vase.txt
+Alderney,Guernsey,0,6,2,Alderney,Alderney,1997_muratti_vase.txt
+Guernsey,Jersey,2,1,1,Saint Sampson,Guernsey,1997_muratti_vase.txt
+Alderney,Jersey,0,2,2,Alderney,Alderney,1998_muratti_vase.txt
+Jersey,Guernsey,2,0,1,St Helier,Jersey,1998_muratti_vase.txt
+Alderney,Guernsey,0,1,2,Alderney,Alderney,1999_muratti_vase.txt
+Guernsey,Jersey,2,0,1,Saint Sampson,Guernsey,1999_muratti_vase.txt
+Alderney,Jersey,0,10,2,Alderney,Alderney,2000_muratti_vase.txt
+Jersey,Guernsey,1,0,1,St Helier,Jersey,2000_muratti_vase.txt
+Alderney,Guernsey,0,6,2,Alderney,Alderney,2001_muratti_vase.txt
+Guernsey,Jersey,4,1,1,Saint Sampson,Guernsey,2001_muratti_vase.txt
+Alderney,Jersey,1,2,2,Alderney,Alderney,2002_muratti_vase.txt
+Jersey,Guernsey,2,1,1,St Helier,Jersey,2002_muratti_vase.txt
+Alderney,Guernsey,1,4,2,Alderney,Alderney,2003_muratti_vase.txt
+Guernsey,Jersey,3,3,X,Saint Sampson,Guernsey,2003_muratti_vase.txt
+Jersey,Guernsey,1,0,1,St Helier,Jersey,2003_muratti_vase.txt
+Alderney,Jersey,0,4,2,Alderney,Alderney,2004_muratti_vase.txt
+Jersey,Guernsey,3,0,1,St Helier,Jersey,2004_muratti_vase.txt
+Alderney,Guernsey,1,2,2,Alderney,Alderney,2005_muratti_vase.txt
+Guernsey,Jersey,0,0,X,Saint Sampson,Guernsey,2005_muratti_vase.txt
+Jersey,Guernsey,3,3,X,St Helier,Jersey   [Guernsey wins on penalties],2005_muratti_vase.txt
+Alderney,Jersey,1,4,2,Alderney,Alderney,2006_muratti_vase.txt
+Jersey,Guernsey,3,2,1,St Helier,Jersey,2006_muratti_vase.txt
+Alderney,Guernsey,0,5,2,Alderney,Alderney,2007_muratti_vase.txt
+Guernsey,Jersey,0,0,X,St. Peter Port,Guernsey   [Jersey wins on penalties],2007_muratti_vase.txt
+Alderney,Jersey,0,7,2,Alderney,Alderney,2008_muratti_vase.txt
+Jersey,Guernsey,1,1,X,St Helier,Jersey   [Jersey wins on penalties],2008_muratti_vase.txt
+Alderney,Guernsey,0,5,2,Alderney,Alderney,2009_muratti_vase.txt
+Guernsey,Jersey,0,1,2,Saint Sampson,Guernsey,2009_muratti_vase.txt
+Alderney,Jersey,0,3,2,Alderney,Alderney,2010_muratti_vase.txt
+Jersey,Guernsey,0,1,2,Jersey,Jersey,2010_muratti_vase.txt
+Alderney,Guernsey,0,5,2,Alderney,Alderney,2011_muratti_vase.txt
+Guernsey,Jersey,1,1,X,Guernsey,Guernsey   [Jersey wins on penalties],2011_muratti_vase.txt
+Alderney,Guernsey,0,7,2,Alderney,Alderney,2012_muratti_vase.txt
+Jersey,Guernsey,0,2,2,Jersey,Jersey,2012_muratti_vase.txt
+Alderney,Jersey,2,9,2,Alderney,Alderney,2013_muratti_vase.txt
+Guernsey,Jersey,2,1,1,Guernsey,Guernsey,2013_muratti_vase.txt
+Alderney,Guernsey,0,4,2,Alderney,Alderney,2014_muratti_vase.txt
+Jersey,Guernsey,1,4,2,Jersey,Jersey,2014_muratti_vase.txt
+Alderney,Jersey,0,5,2,Alderney,Alderney,2015_muratti_vase.txt
+Guernsey,Jersey,2,3,2,Guernsey,Guernsey,2015_muratti_vase.txt
+Alderney,Guernsey,0,1,2,Alderney,Alderney,2016_muratti_vase.txt
+Jersey,Guernsey,1,0,1,Jersey,Jersey,2016_muratti_vase.txt
+Alderney,Jersey,1,2,2,Alderney,Alderney,2017_muratti_vase.txt
+Guernsey,Jersey,2,1,1,Guernsey,Guernsey,2017_muratti_vase.txt
+Alderney,Guernsey,0,2,2,Alderney,Alderney,2018_muratti_vase.txt
+Jersey,Guernsey,1,0,1,Jersey,Jersey,2018_muratti_vase.txt
+Alderney,Jersey,0,2,2,Alderney,Alderney,2019_muratti_vase.txt
+Guernsey,Jersey,0,0,X,Guernsey,Guernsey   [Jersey wins on penalties],2019_muratti_vase.txt
+Alderney,Jersey,1,6,2,Alderney,Alderney,2022_muratti_vase.txt
+Alderney,Guernsey,0,2,2,Alderney,Alderney,2022_muratti_vase.txt
+Guernsey,Jersey,1,2,2,Guernsey,Guernsey,2022_muratti_vase.txt
+Jersey,Guernsey,1,0,1,Jersey,Jersey,2022_muratti_vase.txt

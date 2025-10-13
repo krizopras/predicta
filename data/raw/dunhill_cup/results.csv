@@ -1,0 +1,16 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+China PR,Singapore,3,1,1,Kuala Lumpur,Malaysia,1997_dunhill_cup.txt
+Malaysia,Finland,2,1,1,Kuala Lumpur,Malaysia,1997_dunhill_cup.txt
+Bosnia and Herzegovina,Vietnam,4,0,1,Kuala Lumpur,Malaysia,1997_dunhill_cup.txt
+Indonesia,Zimbabwe,0,0,X,Kuala Lumpur,Malaysia,1997_dunhill_cup.txt
+China PR,Finland,2,1,1,Kuala Lumpur,Malaysia,1997_dunhill_cup.txt
+Malaysia,Singapore,0,0,X,Kuala Lumpur,Malaysia,1997_dunhill_cup.txt
+Bosnia and Herzegovina,Zimbabwe,2,2,X,Kuala Lumpur,Malaysia,1997_dunhill_cup.txt
+Indonesia,Vietnam,1,0,1,Kuala Lumpur,Malaysia,1997_dunhill_cup.txt
+Malaysia,China PR,0,2,2,Kuala Lumpur,Malaysia,1997_dunhill_cup.txt
+Singapore,Finland,0,1,2,Kuala Lumpur,Malaysia,1997_dunhill_cup.txt
+Bosnia and Herzegovina,Indonesia,2,0,1,Kuala Lumpur,Malaysia,1997_dunhill_cup.txt
+Vietnam,Zimbabwe,0,6,2,Kuala Lumpur,Malaysia,1997_dunhill_cup.txt
+China PR,Zimbabwe,3,1,1,Kuala Lumpur,Malaysia,1997_dunhill_cup.txt
+Malaysia,Bosnia and Herzegovina,0,1,2,Kuala Lumpur,Malaysia,1997_dunhill_cup.txt
+Bosnia and Herzegovina,China PR,0,3,2,Kuala Lumpur,Malaysia,1997_dunhill_cup.txt

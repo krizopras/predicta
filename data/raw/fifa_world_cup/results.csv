@@ -1,0 +1,965 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Belgium,United States,0,3,2,Montevideo,Uruguay,1930_fifa_world_cup.txt
+France,Mexico,4,1,1,Montevideo,Uruguay,1930_fifa_world_cup.txt
+Brazil,Yugoslavia,1,2,2,Montevideo,Uruguay,1930_fifa_world_cup.txt
+Peru,Romania,1,3,2,Montevideo,Uruguay,1930_fifa_world_cup.txt
+Argentina,France,1,0,1,Montevideo,Uruguay,1930_fifa_world_cup.txt
+Chile,Mexico,3,0,1,Montevideo,Uruguay,1930_fifa_world_cup.txt
+Bolivia,Yugoslavia,0,4,2,Montevideo,Uruguay,1930_fifa_world_cup.txt
+Paraguay,United States,0,3,2,Montevideo,Uruguay,1930_fifa_world_cup.txt
+Uruguay,Peru,1,0,1,Montevideo,Uruguay,1930_fifa_world_cup.txt
+Argentina,Mexico,6,3,1,Montevideo,Uruguay,1930_fifa_world_cup.txt
+Chile,France,1,0,1,Montevideo,Uruguay,1930_fifa_world_cup.txt
+Belgium,Paraguay,0,1,2,Montevideo,Uruguay,1930_fifa_world_cup.txt
+Bolivia,Brazil,0,4,2,Montevideo,Uruguay,1930_fifa_world_cup.txt
+Uruguay,Romania,4,0,1,Montevideo,Uruguay,1930_fifa_world_cup.txt
+Argentina,Chile,3,1,1,Montevideo,Uruguay,1930_fifa_world_cup.txt
+Argentina,United States,6,1,1,Montevideo,Uruguay,1930_fifa_world_cup.txt
+Uruguay,Yugoslavia,6,1,1,Montevideo,Uruguay,1930_fifa_world_cup.txt
+Uruguay,Argentina,4,2,1,Montevideo,Uruguay,1930_fifa_world_cup.txt
+Argentina,Sweden,2,3,2,Bologna,Italy,1934_fifa_world_cup.txt
+Austria,France,3,2,1,Turin,Italy,1934_fifa_world_cup.txt
+Belgium,Germany,2,5,2,Florence,Italy,1934_fifa_world_cup.txt
+Brazil,Spain,1,3,2,Genoa,Italy,1934_fifa_world_cup.txt
+Czechoslovakia,Romania,2,1,1,Trieste,Italy,1934_fifa_world_cup.txt
+Egypt,Hungary,2,4,2,Naples,Italy,1934_fifa_world_cup.txt
+Italy,United States,7,1,1,Rome,Italy,1934_fifa_world_cup.txt
+Netherlands,Switzerland,2,3,2,Milan,Italy,1934_fifa_world_cup.txt
+Austria,Hungary,2,1,1,Bologna,Italy,1934_fifa_world_cup.txt
+Czechoslovakia,Switzerland,3,2,1,Turin,Italy,1934_fifa_world_cup.txt
+Germany,Sweden,2,1,1,Milan,Italy,1934_fifa_world_cup.txt
+Italy,Spain,1,1,X,Florence,Italy,1934_fifa_world_cup.txt
+Italy,Spain,1,0,1,Florence,Italy,1934_fifa_world_cup.txt
+Czechoslovakia,Germany,3,1,1,Rome,Italy,1934_fifa_world_cup.txt
+Italy,Austria,1,0,1,Milan,Italy,1934_fifa_world_cup.txt
+Austria,Germany,2,3,2,Naples,Italy,1934_fifa_world_cup.txt
+Italy,Czechoslovakia,2,1,1,Rome,Italy,1934_fifa_world_cup.txt
+Germany,Switzerland,1,1,X,Paris,France,1938_fifa_world_cup.txt
+Brazil,Poland,6,5,1,Strasbourg,France,1938_fifa_world_cup.txt
+Cuba,Romania,3,3,X,Toulouse,France,1938_fifa_world_cup.txt
+Czechoslovakia,Netherlands,3,0,1,Le Havre,France,1938_fifa_world_cup.txt
+France,Belgium,3,1,1,Colombes,France,1938_fifa_world_cup.txt
+Hungary,Indonesia,6,0,1,Reims,France,1938_fifa_world_cup.txt
+Italy,Norway,2,1,1,Marseille,France,1938_fifa_world_cup.txt
+Cuba,Romania,2,1,1,Toulouse,France,1938_fifa_world_cup.txt
+Germany,Switzerland,2,4,2,Paris,France,1938_fifa_world_cup.txt
+Brazil,Czechoslovakia,1,1,X,Bordeaux,France,1938_fifa_world_cup.txt
+Cuba,Sweden,0,8,2,Antibes,France,1938_fifa_world_cup.txt
+France,Italy,1,3,2,Colombes,France,1938_fifa_world_cup.txt
+Hungary,Switzerland,2,0,1,Lille,France,1938_fifa_world_cup.txt
+Brazil,Czechoslovakia,2,1,1,Bordeaux,France,1938_fifa_world_cup.txt
+Brazil,Italy,1,2,2,Marseille,France,1938_fifa_world_cup.txt
+Hungary,Sweden,5,1,1,Paris,France,1938_fifa_world_cup.txt
+Brazil,Sweden,4,2,1,Bordeaux,France,1938_fifa_world_cup.txt
+Hungary,Italy,2,4,2,Colombes,France,1938_fifa_world_cup.txt
+Brazil,Mexico,4,0,1,Rio de Janeiro,Brazil,1950_fifa_world_cup.txt
+Chile,England,0,2,2,Rio de Janeiro,Brazil,1950_fifa_world_cup.txt
+Italy,Sweden,2,3,2,São Paulo,Brazil,1950_fifa_world_cup.txt
+Spain,United States,3,1,1,Curitiba,Brazil,1950_fifa_world_cup.txt
+Switzerland,Yugoslavia,0,3,2,Belo Horizonte,Brazil,1950_fifa_world_cup.txt
+Brazil,Switzerland,2,2,X,São Paulo,Brazil,1950_fifa_world_cup.txt
+Mexico,Yugoslavia,1,4,2,Porto Alegre,Brazil,1950_fifa_world_cup.txt
+Chile,Spain,0,2,2,Rio de Janeiro,Brazil,1950_fifa_world_cup.txt
+England,United States,0,1,2,Belo Horizonte,Brazil,1950_fifa_world_cup.txt
+Paraguay,Sweden,2,2,X,Curitiba,Brazil,1950_fifa_world_cup.txt
+Brazil,Yugoslavia,2,0,1,Rio de Janeiro,Brazil,1950_fifa_world_cup.txt
+Bolivia,Uruguay,0,8,2,Belo Horizonte,Brazil,1950_fifa_world_cup.txt
+Chile,United States,5,2,1,Recife,Brazil,1950_fifa_world_cup.txt
+England,Spain,0,1,2,Rio de Janeiro,Brazil,1950_fifa_world_cup.txt
+Italy,Paraguay,2,0,1,São Paulo,Brazil,1950_fifa_world_cup.txt
+Mexico,Switzerland,1,2,2,Porto Alegre,Brazil,1950_fifa_world_cup.txt
+Brazil,Sweden,7,1,1,Rio de Janeiro,Brazil,1950_fifa_world_cup.txt
+Spain,Uruguay,2,2,X,São Paulo,Brazil,1950_fifa_world_cup.txt
+Brazil,Spain,6,1,1,Rio de Janeiro,Brazil,1950_fifa_world_cup.txt
+Sweden,Uruguay,2,3,2,São Paulo,Brazil,1950_fifa_world_cup.txt
+Brazil,Uruguay,1,2,2,Rio de Janeiro,Brazil,1950_fifa_world_cup.txt
+Spain,Sweden,1,3,2,São Paulo,Brazil,1950_fifa_world_cup.txt
+Austria,Scotland,1,0,1,Zürich,Switzerland,1954_fifa_world_cup.txt
+Brazil,Mexico,5,0,1,Geneva,Switzerland,1954_fifa_world_cup.txt
+Czechoslovakia,Uruguay,0,2,2,Berne,Switzerland,1954_fifa_world_cup.txt
+France,Yugoslavia,0,1,2,Lausanne,Switzerland,1954_fifa_world_cup.txt
+Belgium,England,4,4,X,Basel,Switzerland,1954_fifa_world_cup.txt
+Germany,Turkey,4,1,1,Berne,Switzerland,1954_fifa_world_cup.txt
+Hungary,South Korea,9,0,1,Zürich,Switzerland,1954_fifa_world_cup.txt
+Switzerland,Italy,2,1,1,Lausanne,Switzerland,1954_fifa_world_cup.txt
+Austria,Czechoslovakia,5,0,1,Zürich,Switzerland,1954_fifa_world_cup.txt
+Brazil,Yugoslavia,1,1,X,Lausanne,Switzerland,1954_fifa_world_cup.txt
+France,Mexico,3,2,1,Geneva,Switzerland,1954_fifa_world_cup.txt
+Scotland,Uruguay,0,7,2,Basel,Switzerland,1954_fifa_world_cup.txt
+Belgium,Italy,1,4,2,Lugano,Switzerland,1954_fifa_world_cup.txt
+Germany,Hungary,3,8,2,Basel,Switzerland,1954_fifa_world_cup.txt
+South Korea,Turkey,0,7,2,Geneva,Switzerland,1954_fifa_world_cup.txt
+Switzerland,England,0,2,2,Berne,Switzerland,1954_fifa_world_cup.txt
+Germany,Turkey,7,2,1,Zürich,Switzerland,1954_fifa_world_cup.txt
+Switzerland,Italy,4,1,1,Basel,Switzerland,1954_fifa_world_cup.txt
+England,Uruguay,2,4,2,Basel,Switzerland,1954_fifa_world_cup.txt
+Switzerland,Austria,5,7,2,Lausanne,Switzerland,1954_fifa_world_cup.txt
+Brazil,Hungary,2,4,2,Berne,Switzerland,1954_fifa_world_cup.txt
+Germany,Yugoslavia,2,0,1,Geneva,Switzerland,1954_fifa_world_cup.txt
+Austria,Germany,1,6,2,Basel,Switzerland,1954_fifa_world_cup.txt
+Hungary,Uruguay,4,2,1,Lausanne,Switzerland,1954_fifa_world_cup.txt
+Austria,Uruguay,3,1,1,Zürich,Switzerland,1954_fifa_world_cup.txt
+Germany,Hungary,3,2,1,Berne,Switzerland,1954_fifa_world_cup.txt
+Argentina,Germany,1,3,2,Malmö,Sweden,1958_fifa_world_cup.txt
+Austria,Brazil,0,3,2,Uddevalla,Sweden,1958_fifa_world_cup.txt
+Czechoslovakia,Northern Ireland,0,1,2,Halmstad,Sweden,1958_fifa_world_cup.txt
+England,Russia,2,2,X,Gothenburg,Sweden,1958_fifa_world_cup.txt
+France,Paraguay,7,3,1,Norrköping,Sweden,1958_fifa_world_cup.txt
+Hungary,Wales,1,1,X,Sandviken,Sweden,1958_fifa_world_cup.txt
+Scotland,Yugoslavia,1,1,X,Västerås,Sweden,1958_fifa_world_cup.txt
+Sweden,Mexico,3,0,1,Solna,Sweden,1958_fifa_world_cup.txt
+Argentina,Northern Ireland,3,1,1,Halmstad,Sweden,1958_fifa_world_cup.txt
+Austria,Russia,0,2,2,Borås,Sweden,1958_fifa_world_cup.txt
+Brazil,England,0,0,X,Gothenburg,Sweden,1958_fifa_world_cup.txt
+Czechoslovakia,Germany,2,2,X,Helsingborg,Sweden,1958_fifa_world_cup.txt
+France,Yugoslavia,2,3,2,Västerås,Sweden,1958_fifa_world_cup.txt
+Mexico,Wales,1,1,X,Solna,Sweden,1958_fifa_world_cup.txt
+Paraguay,Scotland,3,2,1,Norrköping,Sweden,1958_fifa_world_cup.txt
+Sweden,Hungary,2,1,1,Solna,Sweden,1958_fifa_world_cup.txt
+Argentina,Czechoslovakia,1,6,2,Helsingborg,Sweden,1958_fifa_world_cup.txt
+Austria,England,2,2,X,Borås,Sweden,1958_fifa_world_cup.txt
+Brazil,Russia,2,0,1,Gothenburg,Sweden,1958_fifa_world_cup.txt
+France,Scotland,2,1,1,Örebro,Sweden,1958_fifa_world_cup.txt
+Germany,Northern Ireland,2,2,X,Malmö,Sweden,1958_fifa_world_cup.txt
+Hungary,Mexico,4,0,1,Sandviken,Sweden,1958_fifa_world_cup.txt
+Paraguay,Yugoslavia,3,3,X,Eskilstuna,Sweden,1958_fifa_world_cup.txt
+Sweden,Wales,0,0,X,Solna,Sweden,1958_fifa_world_cup.txt
+Czechoslovakia,Northern Ireland,1,2,2,Malmö,Sweden,1958_fifa_world_cup.txt
+England,Russia,0,1,2,Gothenburg,Sweden,1958_fifa_world_cup.txt
+Hungary,Wales,1,2,2,Solna,Sweden,1958_fifa_world_cup.txt
+Brazil,Wales,1,0,1,Gothenburg,Sweden,1958_fifa_world_cup.txt
+France,Northern Ireland,4,0,1,Norrköping,Sweden,1958_fifa_world_cup.txt
+Germany,Yugoslavia,1,0,1,Malmö,Sweden,1958_fifa_world_cup.txt
+Sweden,Russia,2,0,1,Solna,Sweden,1958_fifa_world_cup.txt
+Brazil,France,5,2,1,Solna,Sweden,1958_fifa_world_cup.txt
+Sweden,Germany,3,1,1,Gothenburg,Sweden,1958_fifa_world_cup.txt
+France,Germany,6,3,1,Gothenburg,Sweden,1958_fifa_world_cup.txt
+Sweden,Brazil,2,5,2,Solna,Sweden,1958_fifa_world_cup.txt
+Argentina,Bulgaria,1,0,1,Rancagua,Chile,1962_fifa_world_cup.txt
+Brazil,Mexico,2,0,1,Viña del Mar,Chile,1962_fifa_world_cup.txt
+Chile,Switzerland,3,1,1,Santiago,Chile,1962_fifa_world_cup.txt
+Colombia,Uruguay,1,2,2,Arica,Chile,1962_fifa_world_cup.txt
+Czechoslovakia,Spain,1,0,1,Viña del Mar,Chile,1962_fifa_world_cup.txt
+England,Hungary,1,2,2,Rancagua,Chile,1962_fifa_world_cup.txt
+Germany,Italy,0,0,X,Santiago,Chile,1962_fifa_world_cup.txt
+Russia,Yugoslavia,2,0,1,Arica,Chile,1962_fifa_world_cup.txt
+Argentina,England,1,3,2,Rancagua,Chile,1962_fifa_world_cup.txt
+Brazil,Czechoslovakia,0,0,X,Viña del Mar,Chile,1962_fifa_world_cup.txt
+Chile,Italy,2,0,1,Santiago,Chile,1962_fifa_world_cup.txt
+Uruguay,Yugoslavia,1,3,2,Arica,Chile,1962_fifa_world_cup.txt
+Bulgaria,Hungary,1,6,2,Rancagua,Chile,1962_fifa_world_cup.txt
+Colombia,Russia,4,4,X,Arica,Chile,1962_fifa_world_cup.txt
+Germany,Switzerland,2,1,1,Santiago,Chile,1962_fifa_world_cup.txt
+Mexico,Spain,0,1,2,Viña del Mar,Chile,1962_fifa_world_cup.txt
+Argentina,Hungary,0,0,X,Rancagua,Chile,1962_fifa_world_cup.txt
+Brazil,Spain,2,1,1,Viña del Mar,Chile,1962_fifa_world_cup.txt
+Chile,Germany,0,2,2,Santiago,Chile,1962_fifa_world_cup.txt
+Russia,Uruguay,2,1,1,Arica,Chile,1962_fifa_world_cup.txt
+Bulgaria,England,0,0,X,Rancagua,Chile,1962_fifa_world_cup.txt
+Colombia,Yugoslavia,0,5,2,Arica,Chile,1962_fifa_world_cup.txt
+Czechoslovakia,Mexico,1,3,2,Viña del Mar,Chile,1962_fifa_world_cup.txt
+Italy,Switzerland,3,0,1,Santiago,Chile,1962_fifa_world_cup.txt
+Brazil,England,3,1,1,Viña del Mar,Chile,1962_fifa_world_cup.txt
+Chile,Russia,2,1,1,Arica,Chile,1962_fifa_world_cup.txt
+Czechoslovakia,Hungary,1,0,1,Rancagua,Chile,1962_fifa_world_cup.txt
+Germany,Yugoslavia,0,1,2,Santiago,Chile,1962_fifa_world_cup.txt
+Chile,Brazil,2,4,2,Santiago,Chile,1962_fifa_world_cup.txt
+Czechoslovakia,Yugoslavia,3,1,1,Viña del Mar,Chile,1962_fifa_world_cup.txt
+Chile,Yugoslavia,1,0,1,Santiago,Chile,1962_fifa_world_cup.txt
+Brazil,Czechoslovakia,3,1,1,Santiago,Chile,1962_fifa_world_cup.txt
+England,Uruguay,0,0,X,London,England,1966_fifa_world_cup.txt
+Brazil,Bulgaria,2,0,1,Liverpool,England,1966_fifa_world_cup.txt
+Germany,Switzerland,5,0,1,Sheffield,England,1966_fifa_world_cup.txt
+North Korea,Russia,0,3,2,Middlesbrough,England,1966_fifa_world_cup.txt
+Argentina,Spain,2,1,1,Birmingham,England,1966_fifa_world_cup.txt
+Chile,Italy,0,2,2,Sunderland,England,1966_fifa_world_cup.txt
+France,Mexico,1,1,X,London,England,1966_fifa_world_cup.txt
+Hungary,Portugal,1,3,2,Manchester,England,1966_fifa_world_cup.txt
+Brazil,Hungary,1,3,2,Liverpool,England,1966_fifa_world_cup.txt
+Chile,North Korea,1,1,X,Middlesbrough,England,1966_fifa_world_cup.txt
+France,Uruguay,1,2,2,London,England,1966_fifa_world_cup.txt
+Spain,Switzerland,2,1,1,Sheffield,England,1966_fifa_world_cup.txt
+Argentina,Germany,0,0,X,Birmingham,England,1966_fifa_world_cup.txt
+Bulgaria,Portugal,0,3,2,Manchester,England,1966_fifa_world_cup.txt
+England,Mexico,2,0,1,London,England,1966_fifa_world_cup.txt
+Italy,Russia,0,1,2,Sunderland,England,1966_fifa_world_cup.txt
+Argentina,Switzerland,2,0,1,Sheffield,England,1966_fifa_world_cup.txt
+Brazil,Portugal,1,3,2,Liverpool,England,1966_fifa_world_cup.txt
+Italy,North Korea,0,1,2,Middlesbrough,England,1966_fifa_world_cup.txt
+Mexico,Uruguay,0,0,X,London,England,1966_fifa_world_cup.txt
+Bulgaria,Hungary,1,3,2,Manchester,England,1966_fifa_world_cup.txt
+Chile,Russia,1,2,2,Sunderland,England,1966_fifa_world_cup.txt
+England,France,2,0,1,London,England,1966_fifa_world_cup.txt
+Germany,Spain,2,1,1,Birmingham,England,1966_fifa_world_cup.txt
+England,Argentina,1,0,1,London,England,1966_fifa_world_cup.txt
+Germany,Uruguay,4,0,1,Sheffield,England,1966_fifa_world_cup.txt
+Hungary,Russia,1,2,2,Sunderland,England,1966_fifa_world_cup.txt
+North Korea,Portugal,3,5,2,Liverpool,England,1966_fifa_world_cup.txt
+Germany,Russia,2,1,1,Liverpool,England,1966_fifa_world_cup.txt
+England,Portugal,2,1,1,London,England,1966_fifa_world_cup.txt
+Portugal,Russia,2,1,1,London,England,1966_fifa_world_cup.txt
+England,Germany,4,2,1,London,England,1966_fifa_world_cup.txt
+Mexico,Russia,0,0,X,Mexico City,Mexico,1970_fifa_world_cup.txt
+Bulgaria,Peru,2,3,2,León,Mexico,1970_fifa_world_cup.txt
+England,Romania,1,0,1,Guadalajara,Mexico,1970_fifa_world_cup.txt
+Israel,Uruguay,0,2,2,Puebla,Mexico,1970_fifa_world_cup.txt
+Belgium,El Salvador,3,0,1,Mexico City,Mexico,1970_fifa_world_cup.txt
+Brazil,Czechoslovakia,4,1,1,Guadalajara,Mexico,1970_fifa_world_cup.txt
+Germany,Morocco,2,1,1,León,Mexico,1970_fifa_world_cup.txt
+Italy,Sweden,1,0,1,Toluca,Mexico,1970_fifa_world_cup.txt
+Belgium,Russia,1,4,2,Mexico City,Mexico,1970_fifa_world_cup.txt
+Czechoslovakia,Romania,1,2,2,Guadalajara,Mexico,1970_fifa_world_cup.txt
+Italy,Uruguay,0,0,X,Puebla,Mexico,1970_fifa_world_cup.txt
+Morocco,Peru,0,3,2,León,Mexico,1970_fifa_world_cup.txt
+Brazil,England,1,0,1,Guadalajara,Mexico,1970_fifa_world_cup.txt
+Bulgaria,Germany,2,5,2,León,Mexico,1970_fifa_world_cup.txt
+Israel,Sweden,1,1,X,Toluca,Mexico,1970_fifa_world_cup.txt
+Mexico,El Salvador,4,0,1,Mexico City,Mexico,1970_fifa_world_cup.txt
+Brazil,Romania,3,2,1,Guadalajara,Mexico,1970_fifa_world_cup.txt
+El Salvador,Russia,0,2,2,Mexico City,Mexico,1970_fifa_world_cup.txt
+Germany,Peru,3,1,1,León,Mexico,1970_fifa_world_cup.txt
+Sweden,Uruguay,1,0,1,Puebla,Mexico,1970_fifa_world_cup.txt
+Bulgaria,Morocco,1,1,X,León,Mexico,1970_fifa_world_cup.txt
+Czechoslovakia,England,0,1,2,Guadalajara,Mexico,1970_fifa_world_cup.txt
+Israel,Italy,0,0,X,Toluca,Mexico,1970_fifa_world_cup.txt
+Mexico,Belgium,1,0,1,Mexico City,Mexico,1970_fifa_world_cup.txt
+Brazil,Peru,4,2,1,Guadalajara,Mexico,1970_fifa_world_cup.txt
+England,Germany,2,3,2,León,Mexico,1970_fifa_world_cup.txt
+Mexico,Italy,1,4,2,Toluca,Mexico,1970_fifa_world_cup.txt
+Russia,Uruguay,0,1,2,Mexico City,Mexico,1970_fifa_world_cup.txt
+Brazil,Uruguay,3,1,1,Guadalajara,Mexico,1970_fifa_world_cup.txt
+Germany,Italy,3,4,2,Mexico City,Mexico,1970_fifa_world_cup.txt
+Germany,Uruguay,1,0,1,Mexico City,Mexico,1970_fifa_world_cup.txt
+Brazil,Italy,4,1,1,Mexico City,Mexico,1970_fifa_world_cup.txt
+Brazil,Yugoslavia,0,0,X,Frankfurt am Main,Germany,1974_fifa_world_cup.txt
+DR Congo,Scotland,0,2,2,Dortmund,Germany,1974_fifa_world_cup.txt
+German DR,Australia,2,0,1,Hamburg,Germany,1974_fifa_world_cup.txt
+Germany,Chile,1,0,1,Berlin,Germany,1974_fifa_world_cup.txt
+Italy,Haiti,3,1,1,Munich,Germany,1974_fifa_world_cup.txt
+Poland,Argentina,3,2,1,Stuttgart,Germany,1974_fifa_world_cup.txt
+Sweden,Bulgaria,0,0,X,Düsseldorf,Germany,1974_fifa_world_cup.txt
+Uruguay,Netherlands,0,2,2,Hanover,Germany,1974_fifa_world_cup.txt
+Chile,German DR,1,1,X,Berlin,Germany,1974_fifa_world_cup.txt
+Germany,Australia,3,0,1,Hamburg,Germany,1974_fifa_world_cup.txt
+Scotland,Brazil,0,0,X,Frankfurt am Main,Germany,1974_fifa_world_cup.txt
+Yugoslavia,DR Congo,9,0,1,Gelsenkirchen,Germany,1974_fifa_world_cup.txt
+Argentina,Italy,1,1,X,Stuttgart,Germany,1974_fifa_world_cup.txt
+Bulgaria,Uruguay,1,1,X,Hanover,Germany,1974_fifa_world_cup.txt
+Haiti,Poland,0,7,2,Munich,Germany,1974_fifa_world_cup.txt
+Netherlands,Sweden,0,0,X,Dortmund,Germany,1974_fifa_world_cup.txt
+Australia,Chile,0,0,X,Berlin,Germany,1974_fifa_world_cup.txt
+DR Congo,Brazil,0,3,2,Gelsenkirchen,Germany,1974_fifa_world_cup.txt
+Germany,German DR,0,1,2,Hamburg,Germany,1974_fifa_world_cup.txt
+Scotland,Yugoslavia,1,1,X,Frankfurt am Main,Germany,1974_fifa_world_cup.txt
+Argentina,Haiti,4,1,1,Munich,Germany,1974_fifa_world_cup.txt
+Bulgaria,Netherlands,1,4,2,Dortmund,Germany,1974_fifa_world_cup.txt
+Poland,Italy,2,1,1,Stuttgart,Germany,1974_fifa_world_cup.txt
+Sweden,Uruguay,3,0,1,Düsseldorf,Germany,1974_fifa_world_cup.txt
+Brazil,German DR,1,0,1,Hanover,Germany,1974_fifa_world_cup.txt
+Germany,Yugoslavia,2,0,1,Düsseldorf,Germany,1974_fifa_world_cup.txt
+Netherlands,Argentina,4,0,1,Gelsenkirchen,Germany,1974_fifa_world_cup.txt
+Sweden,Poland,0,1,2,Stuttgart,Germany,1974_fifa_world_cup.txt
+Argentina,Brazil,1,2,2,Hanover,Germany,1974_fifa_world_cup.txt
+German DR,Netherlands,0,2,2,Gelsenkirchen,Germany,1974_fifa_world_cup.txt
+Germany,Sweden,4,2,1,Düsseldorf,Germany,1974_fifa_world_cup.txt
+Poland,Yugoslavia,2,1,1,Frankfurt am Main,Germany,1974_fifa_world_cup.txt
+Argentina,German DR,1,1,X,Gelsenkirchen,Germany,1974_fifa_world_cup.txt
+Germany,Poland,1,0,1,Frankfurt am Main,Germany,1974_fifa_world_cup.txt
+Netherlands,Brazil,2,0,1,Dortmund,Germany,1974_fifa_world_cup.txt
+Sweden,Yugoslavia,2,1,1,Düsseldorf,Germany,1974_fifa_world_cup.txt
+Brazil,Poland,0,1,2,Munich,Germany,1974_fifa_world_cup.txt
+Germany,Netherlands,2,1,1,Munich,Germany,1974_fifa_world_cup.txt
+Germany,Poland,0,0,X,Buenos Aires,Argentina,1978_fifa_world_cup.txt
+Argentina,Hungary,2,1,1,Buenos Aires,Argentina,1978_fifa_world_cup.txt
+France,Italy,1,2,2,Mar del Plata,Argentina,1978_fifa_world_cup.txt
+Mexico,Tunisia,1,3,2,Rosario,Argentina,1978_fifa_world_cup.txt
+Austria,Spain,2,1,1,Buenos Aires,Argentina,1978_fifa_world_cup.txt
+Brazil,Sweden,1,1,X,Mar del Plata,Argentina,1978_fifa_world_cup.txt
+Iran,Netherlands,0,3,2,Mendoza,Argentina,1978_fifa_world_cup.txt
+Peru,Scotland,3,1,1,Córdoba,Argentina,1978_fifa_world_cup.txt
+Argentina,France,2,1,1,Buenos Aires,Argentina,1978_fifa_world_cup.txt
+Germany,Mexico,6,0,1,Córdoba,Argentina,1978_fifa_world_cup.txt
+Hungary,Italy,1,3,2,Mar del Plata,Argentina,1978_fifa_world_cup.txt
+Poland,Tunisia,1,0,1,Rosario,Argentina,1978_fifa_world_cup.txt
+Austria,Sweden,1,0,1,Buenos Aires,Argentina,1978_fifa_world_cup.txt
+Brazil,Spain,0,0,X,Mar del Plata,Argentina,1978_fifa_world_cup.txt
+Iran,Scotland,1,1,X,Córdoba,Argentina,1978_fifa_world_cup.txt
+Netherlands,Peru,0,0,X,Mendoza,Argentina,1978_fifa_world_cup.txt
+Argentina,Italy,0,1,2,Buenos Aires,Argentina,1978_fifa_world_cup.txt
+France,Hungary,3,1,1,Mar del Plata,Argentina,1978_fifa_world_cup.txt
+Germany,Tunisia,0,0,X,Córdoba,Argentina,1978_fifa_world_cup.txt
+Mexico,Poland,1,3,2,Rosario,Argentina,1978_fifa_world_cup.txt
+Austria,Brazil,0,1,2,Mar del Plata,Argentina,1978_fifa_world_cup.txt
+Iran,Peru,1,4,2,Córdoba,Argentina,1978_fifa_world_cup.txt
+Netherlands,Scotland,2,3,2,Mendoza,Argentina,1978_fifa_world_cup.txt
+Spain,Sweden,1,0,1,Buenos Aires,Argentina,1978_fifa_world_cup.txt
+Argentina,Poland,2,0,1,Rosario,Argentina,1978_fifa_world_cup.txt
+Austria,Netherlands,1,5,2,Córdoba,Argentina,1978_fifa_world_cup.txt
+Brazil,Peru,3,0,1,Mendoza,Argentina,1978_fifa_world_cup.txt
+Germany,Italy,0,0,X,Buenos Aires,Argentina,1978_fifa_world_cup.txt
+Argentina,Brazil,0,0,X,Rosario,Argentina,1978_fifa_world_cup.txt
+Austria,Italy,0,1,2,Buenos Aires,Argentina,1978_fifa_world_cup.txt
+Germany,Netherlands,2,2,X,Córdoba,Argentina,1978_fifa_world_cup.txt
+Peru,Poland,0,1,2,Mendoza,Argentina,1978_fifa_world_cup.txt
+Argentina,Peru,6,0,1,Rosario,Argentina,1978_fifa_world_cup.txt
+Austria,Germany,3,2,1,Córdoba,Argentina,1978_fifa_world_cup.txt
+Brazil,Poland,3,1,1,Mendoza,Argentina,1978_fifa_world_cup.txt
+Italy,Netherlands,1,2,2,Buenos Aires,Argentina,1978_fifa_world_cup.txt
+Brazil,Italy,2,1,1,Buenos Aires,Argentina,1978_fifa_world_cup.txt
+Argentina,Netherlands,3,1,1,Buenos Aires,Argentina,1978_fifa_world_cup.txt
+Argentina,Belgium,0,1,2,Barcelona,Spain,1982_fifa_world_cup.txt
+Brazil,Russia,2,1,1,Seville,Spain,1982_fifa_world_cup.txt
+Italy,Poland,0,0,X,Vigo,Spain,1982_fifa_world_cup.txt
+Hungary,El Salvador,10,1,1,Elche,Spain,1982_fifa_world_cup.txt
+Peru,Cameroon,0,0,X,La Coruña,Spain,1982_fifa_world_cup.txt
+Scotland,New Zealand,5,2,1,Málaga,Spain,1982_fifa_world_cup.txt
+England,France,3,1,1,Bilbao,Spain,1982_fifa_world_cup.txt
+Germany,Algeria,1,2,2,Gijón,Spain,1982_fifa_world_cup.txt
+Spain,Honduras,1,1,X,Valencia,Spain,1982_fifa_world_cup.txt
+Chile,Austria,0,1,2,Oviedo,Spain,1982_fifa_world_cup.txt
+Czechoslovakia,Kuwait,1,1,X,Valladolid,Spain,1982_fifa_world_cup.txt
+Yugoslavia,Northern Ireland,0,0,X,Zaragoza,Spain,1982_fifa_world_cup.txt
+Argentina,Hungary,4,1,1,Alicante,Spain,1982_fifa_world_cup.txt
+Brazil,Scotland,4,1,1,Seville,Spain,1982_fifa_world_cup.txt
+Italy,Peru,1,1,X,Vigo,Spain,1982_fifa_world_cup.txt
+Belgium,El Salvador,1,0,1,Elche,Spain,1982_fifa_world_cup.txt
+Poland,Cameroon,0,0,X,La Coruña,Spain,1982_fifa_world_cup.txt
+Russia,New Zealand,3,0,1,Málaga,Spain,1982_fifa_world_cup.txt
+England,Czechoslovakia,2,0,1,Bilbao,Spain,1982_fifa_world_cup.txt
+Germany,Chile,4,1,1,Gijón,Spain,1982_fifa_world_cup.txt
+Spain,Yugoslavia,2,1,1,Valencia,Spain,1982_fifa_world_cup.txt
+Algeria,Austria,0,2,2,Oviedo,Spain,1982_fifa_world_cup.txt
+France,Kuwait,4,1,1,Valladolid,Spain,1982_fifa_world_cup.txt
+Honduras,Northern Ireland,1,1,X,Zaragoza,Spain,1982_fifa_world_cup.txt
+Belgium,Hungary,1,1,X,Elche,Spain,1982_fifa_world_cup.txt
+Poland,Peru,5,1,1,La Coruña,Spain,1982_fifa_world_cup.txt
+Russia,Scotland,2,2,X,Málaga,Spain,1982_fifa_world_cup.txt
+Argentina,El Salvador,2,0,1,Alicante,Spain,1982_fifa_world_cup.txt
+Brazil,New Zealand,4,0,1,Seville,Spain,1982_fifa_world_cup.txt
+Italy,Cameroon,1,1,X,Vigo,Spain,1982_fifa_world_cup.txt
+Algeria,Chile,3,2,1,Oviedo,Spain,1982_fifa_world_cup.txt
+France,Czechoslovakia,1,1,X,Valladolid,Spain,1982_fifa_world_cup.txt
+Honduras,Yugoslavia,0,1,2,Zaragoza,Spain,1982_fifa_world_cup.txt
+England,Kuwait,1,0,1,Bilbao,Spain,1982_fifa_world_cup.txt
+Germany,Austria,1,0,1,Gijón,Spain,1982_fifa_world_cup.txt
+Spain,Northern Ireland,0,1,2,Valencia,Spain,1982_fifa_world_cup.txt
+Austria,France,0,1,2,Madrid,Spain,1982_fifa_world_cup.txt
+Poland,Belgium,3,0,1,Barcelona,Spain,1982_fifa_world_cup.txt
+Germany,England,0,0,X,Madrid,Spain,1982_fifa_world_cup.txt
+Italy,Argentina,2,1,1,Barcelona,Spain,1982_fifa_world_cup.txt
+Austria,Northern Ireland,2,2,X,Madrid,Spain,1982_fifa_world_cup.txt
+Belgium,Russia,0,1,2,Barcelona,Spain,1982_fifa_world_cup.txt
+Argentina,Brazil,1,3,2,Barcelona,Spain,1982_fifa_world_cup.txt
+Spain,Germany,1,2,2,Madrid,Spain,1982_fifa_world_cup.txt
+France,Northern Ireland,4,1,1,Madrid,Spain,1982_fifa_world_cup.txt
+Poland,Russia,0,0,X,Barcelona,Spain,1982_fifa_world_cup.txt
+Italy,Brazil,3,2,1,Barcelona,Spain,1982_fifa_world_cup.txt
+Spain,England,0,0,X,Madrid,Spain,1982_fifa_world_cup.txt
+Germany,France,3,3,X,Seville,Spain   [Germany wins on penalties],1982_fifa_world_cup.txt
+Poland,Italy,0,2,2,Barcelona,Spain,1982_fifa_world_cup.txt
+Poland,France,3,2,1,Alicante,Spain,1982_fifa_world_cup.txt
+Italy,Germany,3,1,1,Madrid,Spain,1982_fifa_world_cup.txt
+Bulgaria,Italy,1,1,X,Mexico City,Mexico,1986_fifa_world_cup.txt
+Canada,France,0,1,2,León,Mexico,1986_fifa_world_cup.txt
+Spain,Brazil,0,1,2,Guadalajara,Mexico,1986_fifa_world_cup.txt
+Argentina,South Korea,3,1,1,Mexico City,Mexico,1986_fifa_world_cup.txt
+Morocco,Poland,0,0,X,Monterrey,Mexico,1986_fifa_world_cup.txt
+Russia,Hungary,6,0,1,Irapuato,Mexico,1986_fifa_world_cup.txt
+Algeria,Northern Ireland,1,1,X,Guadalajara,Mexico,1986_fifa_world_cup.txt
+Mexico,Belgium,2,1,1,Mexico City,Mexico,1986_fifa_world_cup.txt
+Portugal,England,1,0,1,Monterrey,Mexico,1986_fifa_world_cup.txt
+Paraguay,Iraq,1,0,1,Toluca,Mexico,1986_fifa_world_cup.txt
+Scotland,Denmark,0,1,2,Nezahualcóyotl,Mexico,1986_fifa_world_cup.txt
+Uruguay,Germany,1,1,X,Querétaro,Mexico,1986_fifa_world_cup.txt
+France,Russia,1,1,X,León,Mexico,1986_fifa_world_cup.txt
+Italy,Argentina,1,1,X,Puebla,Mexico,1986_fifa_world_cup.txt
+South Korea,Bulgaria,1,1,X,Mexico City,Mexico,1986_fifa_world_cup.txt
+Brazil,Algeria,1,0,1,Guadalajara,Mexico,1986_fifa_world_cup.txt
+England,Morocco,0,0,X,Monterrey,Mexico,1986_fifa_world_cup.txt
+Hungary,Canada,2,0,1,Irapuato,Mexico,1986_fifa_world_cup.txt
+Mexico,Paraguay,1,1,X,Mexico City,Mexico,1986_fifa_world_cup.txt
+Northern Ireland,Spain,1,2,2,Guadalajara,Mexico,1986_fifa_world_cup.txt
+Poland,Portugal,1,0,1,Monterrey,Mexico,1986_fifa_world_cup.txt
+Denmark,Uruguay,6,1,1,Nezahualcóyotl,Mexico,1986_fifa_world_cup.txt
+Germany,Scotland,2,1,1,Querétaro,Mexico,1986_fifa_world_cup.txt
+Iraq,Belgium,1,2,2,Toluca,Mexico,1986_fifa_world_cup.txt
+Hungary,France,0,3,2,León,Mexico,1986_fifa_world_cup.txt
+Russia,Canada,2,0,1,Irapuato,Mexico,1986_fifa_world_cup.txt
+Argentina,Bulgaria,2,0,1,Mexico City,Mexico,1986_fifa_world_cup.txt
+South Korea,Italy,2,3,2,Puebla,Mexico,1986_fifa_world_cup.txt
+England,Poland,3,0,1,Monterrey,Mexico,1986_fifa_world_cup.txt
+Mexico,Iraq,1,0,1,Mexico City,Mexico,1986_fifa_world_cup.txt
+Paraguay,Belgium,2,2,X,Toluca,Mexico,1986_fifa_world_cup.txt
+Portugal,Morocco,1,3,2,Guadalajara,Mexico,1986_fifa_world_cup.txt
+Algeria,Spain,0,3,2,Monterrey,Mexico,1986_fifa_world_cup.txt
+Northern Ireland,Brazil,0,3,2,Guadalajara,Mexico,1986_fifa_world_cup.txt
+Denmark,Germany,2,0,1,Querétaro,Mexico,1986_fifa_world_cup.txt
+Scotland,Uruguay,0,0,X,Nezahualcóyotl,Mexico,1986_fifa_world_cup.txt
+Mexico,Bulgaria,2,0,1,Mexico City,Mexico,1986_fifa_world_cup.txt
+Russia,Belgium,3,4,2,León,Mexico,1986_fifa_world_cup.txt
+Argentina,Uruguay,1,0,1,Puebla,Mexico,1986_fifa_world_cup.txt
+Brazil,Poland,4,0,1,Guadalajara,Mexico,1986_fifa_world_cup.txt
+Italy,France,0,2,2,Mexico City,Mexico,1986_fifa_world_cup.txt
+Morocco,Germany,0,1,2,Monterrey,Mexico,1986_fifa_world_cup.txt
+Denmark,Spain,1,5,2,Querétaro,Mexico,1986_fifa_world_cup.txt
+England,Paraguay,3,0,1,Mexico City,Mexico,1986_fifa_world_cup.txt
+Brazil,France,1,1,X,Guadalajara,Mexico   [France wins on penalties],1986_fifa_world_cup.txt
+Mexico,Germany,0,0,X,Monterrey,Mexico   [Germany wins on penalties],1986_fifa_world_cup.txt
+Argentina,England,2,1,1,Mexico City,Mexico,1986_fifa_world_cup.txt
+Spain,Belgium,1,1,X,Puebla,Mexico   [Belgium wins on penalties],1986_fifa_world_cup.txt
+Argentina,Belgium,2,0,1,Mexico City,Mexico,1986_fifa_world_cup.txt
+France,Germany,0,2,2,Guadalajara,Mexico,1986_fifa_world_cup.txt
+France,Belgium,4,2,1,Puebla,Mexico,1986_fifa_world_cup.txt
+Argentina,Germany,3,2,1,Mexico City,Mexico,1986_fifa_world_cup.txt
+Argentina,Cameroon,0,1,2,Milan,Italy,1990_fifa_world_cup.txt
+Italy,Austria,1,0,1,Rome,Italy,1990_fifa_world_cup.txt
+Russia,Romania,0,2,2,Bari,Italy,1990_fifa_world_cup.txt
+United Arab Emirates,Colombia,0,2,2,Bologna,Italy,1990_fifa_world_cup.txt
+Brazil,Sweden,2,1,1,Turin,Italy,1990_fifa_world_cup.txt
+Germany,Yugoslavia,4,1,1,Milan,Italy,1990_fifa_world_cup.txt
+United States,Czechoslovakia,1,5,2,Florence,Italy,1990_fifa_world_cup.txt
+Costa Rica,Scotland,1,0,1,Genoa,Italy,1990_fifa_world_cup.txt
+England,Republic of Ireland,1,1,X,Cagliari,Italy,1990_fifa_world_cup.txt
+Belgium,South Korea,2,0,1,Verona,Italy,1990_fifa_world_cup.txt
+Netherlands,Egypt,1,1,X,Palermo,Italy,1990_fifa_world_cup.txt
+Argentina,Russia,2,0,1,Naples,Italy,1990_fifa_world_cup.txt
+Uruguay,Spain,0,0,X,Udine,Italy,1990_fifa_world_cup.txt
+Cameroon,Romania,2,1,1,Bari,Italy,1990_fifa_world_cup.txt
+Italy,United States,1,0,1,Rome,Italy,1990_fifa_world_cup.txt
+Yugoslavia,Colombia,1,0,1,Bologna,Italy,1990_fifa_world_cup.txt
+Austria,Czechoslovakia,0,1,2,Florence,Italy,1990_fifa_world_cup.txt
+Germany,United Arab Emirates,5,1,1,Milan,Italy,1990_fifa_world_cup.txt
+Brazil,Costa Rica,1,0,1,Turin,Italy,1990_fifa_world_cup.txt
+England,Netherlands,0,0,X,Cagliari,Italy,1990_fifa_world_cup.txt
+Sweden,Scotland,1,2,2,Genoa,Italy,1990_fifa_world_cup.txt
+Belgium,Uruguay,3,1,1,Verona,Italy,1990_fifa_world_cup.txt
+Republic of Ireland,Egypt,0,0,X,Palermo,Italy,1990_fifa_world_cup.txt
+South Korea,Spain,1,3,2,Udine,Italy,1990_fifa_world_cup.txt
+Argentina,Romania,1,1,X,Naples,Italy,1990_fifa_world_cup.txt
+Cameroon,Russia,0,4,2,Bari,Italy,1990_fifa_world_cup.txt
+Austria,United States,2,1,1,Florence,Italy,1990_fifa_world_cup.txt
+Germany,Colombia,1,1,X,Milan,Italy,1990_fifa_world_cup.txt
+Italy,Czechoslovakia,2,0,1,Rome,Italy,1990_fifa_world_cup.txt
+Yugoslavia,United Arab Emirates,4,1,1,Bologna,Italy,1990_fifa_world_cup.txt
+Brazil,Scotland,1,0,1,Turin,Italy,1990_fifa_world_cup.txt
+Sweden,Costa Rica,1,2,2,Genoa,Italy,1990_fifa_world_cup.txt
+Belgium,Spain,1,2,2,Verona,Italy,1990_fifa_world_cup.txt
+England,Egypt,1,0,1,Cagliari,Italy,1990_fifa_world_cup.txt
+Republic of Ireland,Netherlands,1,1,X,Palermo,Italy,1990_fifa_world_cup.txt
+South Korea,Uruguay,0,1,2,Udine,Italy,1990_fifa_world_cup.txt
+Cameroon,Colombia,2,1,1,Naples,Italy,1990_fifa_world_cup.txt
+Czechoslovakia,Costa Rica,4,1,1,Bari,Italy,1990_fifa_world_cup.txt
+Brazil,Argentina,0,1,2,Turin,Italy,1990_fifa_world_cup.txt
+Germany,Netherlands,2,1,1,Milan,Italy,1990_fifa_world_cup.txt
+Republic of Ireland,Romania,0,0,X,Genoa,Italy   [Republic of Ireland wins on penalties],1990_fifa_world_cup.txt
+Italy,Uruguay,2,0,1,Rome,Italy,1990_fifa_world_cup.txt
+England,Belgium,1,0,1,Bologna,Italy,1990_fifa_world_cup.txt
+Spain,Yugoslavia,1,2,2,Verona,Italy,1990_fifa_world_cup.txt
+Italy,Republic of Ireland,1,0,1,Rome,Italy,1990_fifa_world_cup.txt
+Yugoslavia,Argentina,0,0,X,Florence,Italy   [Argentina wins on penalties],1990_fifa_world_cup.txt
+Cameroon,England,2,3,2,Naples,Italy,1990_fifa_world_cup.txt
+Germany,Czechoslovakia,1,0,1,Milan,Italy,1990_fifa_world_cup.txt
+Italy,Argentina,1,1,X,Naples,Italy   [Argentina wins on penalties],1990_fifa_world_cup.txt
+Germany,England,1,1,X,Turin,Italy   [Germany wins on penalties],1990_fifa_world_cup.txt
+Italy,England,2,1,1,Bari,Italy,1990_fifa_world_cup.txt
+Germany,Argentina,1,0,1,Rome,Italy,1990_fifa_world_cup.txt
+Germany,Bolivia,1,0,1,Chicago,United States,1994_fifa_world_cup.txt
+Spain,South Korea,2,2,X,Dallas,United States,1994_fifa_world_cup.txt
+Colombia,Romania,1,3,2,Pasadena,United States,1994_fifa_world_cup.txt
+Italy,Republic of Ireland,0,1,2,East Rutherford,United States,1994_fifa_world_cup.txt
+United States,Switzerland,1,1,X,Pontiac,United States,1994_fifa_world_cup.txt
+Belgium,Morocco,1,0,1,Orlando,United States,1994_fifa_world_cup.txt
+Cameroon,Sweden,2,2,X,Pasadena,United States,1994_fifa_world_cup.txt
+Norway,Mexico,1,0,1,D.C.,United States,1994_fifa_world_cup.txt
+Brazil,Russia,2,0,1,Palo Alto,United States,1994_fifa_world_cup.txt
+Netherlands,Saudi Arabia,2,1,1,D.C.,United States,1994_fifa_world_cup.txt
+Argentina,Greece,4,0,1,Foxborough,United States,1994_fifa_world_cup.txt
+Germany,Spain,1,1,X,Chicago,United States,1994_fifa_world_cup.txt
+Nigeria,Bulgaria,3,0,1,Dallas,United States,1994_fifa_world_cup.txt
+Romania,Switzerland,1,4,2,Pontiac,United States,1994_fifa_world_cup.txt
+United States,Colombia,2,1,1,Pasadena,United States,1994_fifa_world_cup.txt
+Italy,Norway,1,0,1,East Rutherford,United States,1994_fifa_world_cup.txt
+South Korea,Bolivia,0,0,X,Foxborough,United States,1994_fifa_world_cup.txt
+Brazil,Cameroon,3,0,1,Palo Alto,United States,1994_fifa_world_cup.txt
+Mexico,Republic of Ireland,2,1,1,Orlando,United States,1994_fifa_world_cup.txt
+Sweden,Russia,3,1,1,Pontiac,United States,1994_fifa_world_cup.txt
+Argentina,Nigeria,2,1,1,Foxborough,United States,1994_fifa_world_cup.txt
+Belgium,Netherlands,1,0,1,Orlando,United States,1994_fifa_world_cup.txt
+Saudi Arabia,Morocco,2,1,1,East Rutherford,United States,1994_fifa_world_cup.txt
+Bulgaria,Greece,4,0,1,Chicago,United States,1994_fifa_world_cup.txt
+Switzerland,Colombia,0,2,2,Palo Alto,United States,1994_fifa_world_cup.txt
+United States,Romania,0,1,2,Pasadena,United States,1994_fifa_world_cup.txt
+Bolivia,Spain,1,3,2,Chicago,United States,1994_fifa_world_cup.txt
+Germany,South Korea,3,2,1,Dallas,United States,1994_fifa_world_cup.txt
+Brazil,Sweden,1,1,X,Pontiac,United States,1994_fifa_world_cup.txt
+Republic of Ireland,Norway,0,0,X,East Rutherford,United States,1994_fifa_world_cup.txt
+Italy,Mexico,1,1,X,D.C.,United States,1994_fifa_world_cup.txt
+Russia,Cameroon,6,1,1,Palo Alto,United States,1994_fifa_world_cup.txt
+Belgium,Saudi Arabia,0,1,2,D.C.,United States,1994_fifa_world_cup.txt
+Morocco,Netherlands,1,2,2,Orlando,United States,1994_fifa_world_cup.txt
+Argentina,Bulgaria,0,2,2,Dallas,United States,1994_fifa_world_cup.txt
+Greece,Nigeria,0,2,2,Foxborough,United States,1994_fifa_world_cup.txt
+Germany,Belgium,3,2,1,Chicago,United States,1994_fifa_world_cup.txt
+Spain,Switzerland,3,0,1,D.C.,United States,1994_fifa_world_cup.txt
+Romania,Argentina,3,2,1,Pasadena,United States,1994_fifa_world_cup.txt
+Saudi Arabia,Sweden,1,3,2,Dallas,United States,1994_fifa_world_cup.txt
+Netherlands,Republic of Ireland,2,0,1,Orlando,United States,1994_fifa_world_cup.txt
+United States,Brazil,0,1,2,Palo Alto,United States,1994_fifa_world_cup.txt
+Mexico,Bulgaria,1,1,X,East Rutherford,United States   [Bulgaria wins on penalties],1994_fifa_world_cup.txt
+Nigeria,Italy,1,2,2,Foxborough,United States,1994_fifa_world_cup.txt
+Italy,Spain,2,1,1,Foxborough,United States,1994_fifa_world_cup.txt
+Netherlands,Brazil,2,3,2,Dallas,United States,1994_fifa_world_cup.txt
+Bulgaria,Germany,2,1,1,East Rutherford,United States,1994_fifa_world_cup.txt
+Romania,Sweden,2,2,X,Palo Alto,United States   [Sweden wins on penalties],1994_fifa_world_cup.txt
+Bulgaria,Italy,1,2,2,East Rutherford,United States,1994_fifa_world_cup.txt
+Sweden,Brazil,0,1,2,Pasadena,United States,1994_fifa_world_cup.txt
+Sweden,Bulgaria,4,0,1,Pasadena,United States,1994_fifa_world_cup.txt
+Brazil,Italy,0,0,X,Pasadena,United States   [Brazil wins on penalties],1994_fifa_world_cup.txt
+Brazil,Scotland,2,1,1,Saint-Denis,France,1998_fifa_world_cup.txt
+Morocco,Norway,2,2,X,Montpellier,France,1998_fifa_world_cup.txt
+Cameroon,Austria,1,1,X,Toulouse,France,1998_fifa_world_cup.txt
+Italy,Chile,2,2,X,Bordeaux,France,1998_fifa_world_cup.txt
+France,South Africa,3,0,1,Marseille,France,1998_fifa_world_cup.txt
+Paraguay,Bulgaria,0,0,X,Montpellier,France,1998_fifa_world_cup.txt
+Saudi Arabia,Denmark,0,1,2,Lens,France,1998_fifa_world_cup.txt
+South Korea,Mexico,1,3,2,Lyon,France,1998_fifa_world_cup.txt
+Netherlands,Belgium,0,0,X,Saint-Denis,France,1998_fifa_world_cup.txt
+Spain,Nigeria,2,3,2,Nantes,France,1998_fifa_world_cup.txt
+Argentina,Japan,1,0,1,Toulouse,France,1998_fifa_world_cup.txt
+Jamaica,Croatia,1,3,2,Lens,France,1998_fifa_world_cup.txt
+Serbia,Iran,1,0,1,Saint-Étienne,France,1998_fifa_world_cup.txt
+England,Tunisia,2,0,1,Marseille,France,1998_fifa_world_cup.txt
+Germany,United States,2,0,1,Paris,France,1998_fifa_world_cup.txt
+Romania,Colombia,1,0,1,Lyon,France,1998_fifa_world_cup.txt
+Brazil,Morocco,3,0,1,Nantes,France,1998_fifa_world_cup.txt
+Scotland,Norway,1,1,X,Bordeaux,France,1998_fifa_world_cup.txt
+Chile,Austria,1,1,X,Saint-Étienne,France,1998_fifa_world_cup.txt
+Italy,Cameroon,3,0,1,Montpellier,France,1998_fifa_world_cup.txt
+France,Saudi Arabia,4,0,1,Saint-Denis,France,1998_fifa_world_cup.txt
+South Africa,Denmark,1,1,X,Toulouse,France,1998_fifa_world_cup.txt
+Nigeria,Bulgaria,1,0,1,Paris,France,1998_fifa_world_cup.txt
+Spain,Paraguay,0,0,X,Saint-Étienne,France,1998_fifa_world_cup.txt
+Belgium,Mexico,2,2,X,Bordeaux,France,1998_fifa_world_cup.txt
+Japan,Croatia,0,1,2,Nantes,France,1998_fifa_world_cup.txt
+Netherlands,South Korea,5,0,1,Marseille,France,1998_fifa_world_cup.txt
+Argentina,Jamaica,5,0,1,Paris,France,1998_fifa_world_cup.txt
+Germany,Serbia,2,2,X,Lens,France,1998_fifa_world_cup.txt
+United States,Iran,1,2,2,Lyon,France,1998_fifa_world_cup.txt
+Colombia,Tunisia,1,0,1,Montpellier,France,1998_fifa_world_cup.txt
+Romania,England,2,1,1,Toulouse,France,1998_fifa_world_cup.txt
+Brazil,Norway,1,2,2,Marseille,France,1998_fifa_world_cup.txt
+Chile,Cameroon,1,1,X,Nantes,France,1998_fifa_world_cup.txt
+Italy,Austria,2,1,1,Saint-Denis,France,1998_fifa_world_cup.txt
+Scotland,Morocco,0,3,2,Saint-Étienne,France,1998_fifa_world_cup.txt
+France,Denmark,2,1,1,Lyon,France,1998_fifa_world_cup.txt
+Nigeria,Paraguay,1,3,2,Toulouse,France,1998_fifa_world_cup.txt
+South Africa,Saudi Arabia,2,2,X,Bordeaux,France,1998_fifa_world_cup.txt
+Spain,Bulgaria,6,1,1,Lens,France,1998_fifa_world_cup.txt
+Belgium,South Korea,1,1,X,Paris,France,1998_fifa_world_cup.txt
+Germany,Iran,2,0,1,Montpellier,France,1998_fifa_world_cup.txt
+Netherlands,Mexico,2,2,X,Saint-Étienne,France,1998_fifa_world_cup.txt
+United States,Serbia,0,1,2,Nantes,France,1998_fifa_world_cup.txt
+Argentina,Croatia,1,0,1,Bordeaux,France,1998_fifa_world_cup.txt
+Colombia,England,0,2,2,Lens,France,1998_fifa_world_cup.txt
+Japan,Jamaica,1,2,2,Lyon,France,1998_fifa_world_cup.txt
+Romania,Tunisia,1,1,X,Saint-Denis,France,1998_fifa_world_cup.txt
+Brazil,Chile,4,1,1,Paris,France,1998_fifa_world_cup.txt
+Italy,Norway,1,0,1,Marseille,France,1998_fifa_world_cup.txt
+France,Paraguay,1,0,1,Lens,France,1998_fifa_world_cup.txt
+Nigeria,Denmark,1,4,2,Saint-Denis,France,1998_fifa_world_cup.txt
+Germany,Mexico,2,1,1,Montpellier,France,1998_fifa_world_cup.txt
+Netherlands,Serbia,2,1,1,Toulouse,France,1998_fifa_world_cup.txt
+Argentina,England,2,2,X,Saint-Étienne,France   [Argentina wins on penalties],1998_fifa_world_cup.txt
+Romania,Croatia,0,1,2,Bordeaux,France,1998_fifa_world_cup.txt
+Brazil,Denmark,3,2,1,Nantes,France,1998_fifa_world_cup.txt
+France,Italy,0,0,X,Saint-Denis,France   [France wins on penalties],1998_fifa_world_cup.txt
+Germany,Croatia,0,3,2,Lyon,France,1998_fifa_world_cup.txt
+Netherlands,Argentina,2,1,1,Marseille,France,1998_fifa_world_cup.txt
+Brazil,Netherlands,1,1,X,Marseille,France   [Brazil wins on penalties],1998_fifa_world_cup.txt
+France,Croatia,2,1,1,Saint-Denis,France,1998_fifa_world_cup.txt
+Netherlands,Croatia,1,2,2,Paris,France,1998_fifa_world_cup.txt
+France,Brazil,3,0,1,Saint-Denis,France,1998_fifa_world_cup.txt
+France,Senegal,0,1,2,Seoul,South Korea,2002_fifa_world_cup.txt
+Germany,Saudi Arabia,8,0,1,Sapporo,Japan,2002_fifa_world_cup.txt
+Republic of Ireland,Cameroon,1,1,X,Niigata,Japan,2002_fifa_world_cup.txt
+Uruguay,Denmark,1,2,2,Ulsan,South Korea,2002_fifa_world_cup.txt
+Argentina,Nigeria,1,0,1,Kashima,Japan,2002_fifa_world_cup.txt
+England,Sweden,1,1,X,Saitama,Japan,2002_fifa_world_cup.txt
+Paraguay,South Africa,2,2,X,Busan,South Korea,2002_fifa_world_cup.txt
+Spain,Slovenia,3,1,1,Gwangju,South Korea,2002_fifa_world_cup.txt
+Brazil,Turkey,2,1,1,Ulsan,South Korea,2002_fifa_world_cup.txt
+Croatia,Mexico,0,1,2,Niigata,Japan,2002_fifa_world_cup.txt
+Italy,Ecuador,2,0,1,Sapporo,Japan,2002_fifa_world_cup.txt
+China PR,Costa Rica,0,2,2,Gwangju,South Korea,2002_fifa_world_cup.txt
+Japan,Belgium,2,2,X,Saitama,Japan,2002_fifa_world_cup.txt
+South Korea,Poland,2,0,1,Busan,South Korea,2002_fifa_world_cup.txt
+Germany,Republic of Ireland,1,1,X,Kashima,Japan,2002_fifa_world_cup.txt
+Russia,Tunisia,2,0,1,Kobe,Japan,2002_fifa_world_cup.txt
+United States,Portugal,3,2,1,Suwon,South Korea,2002_fifa_world_cup.txt
+Cameroon,Saudi Arabia,1,0,1,Saitama,Japan,2002_fifa_world_cup.txt
+Denmark,Senegal,1,1,X,Daegu,South Korea,2002_fifa_world_cup.txt
+France,Uruguay,0,0,X,Busan,South Korea,2002_fifa_world_cup.txt
+Argentina,England,0,1,2,Sapporo,Japan,2002_fifa_world_cup.txt
+Spain,Paraguay,3,1,1,Jeonju,South Korea,2002_fifa_world_cup.txt
+Sweden,Nigeria,2,1,1,Kobe,Japan,2002_fifa_world_cup.txt
+Brazil,China PR,4,0,1,Seogwipo,South Korea,2002_fifa_world_cup.txt
+Italy,Croatia,1,2,2,Kashima,Japan,2002_fifa_world_cup.txt
+South Africa,Slovenia,1,0,1,Daegu,South Korea,2002_fifa_world_cup.txt
+Costa Rica,Turkey,1,1,X,Incheon,South Korea,2002_fifa_world_cup.txt
+Japan,Russia,1,0,1,Yokohama,Japan,2002_fifa_world_cup.txt
+Mexico,Ecuador,2,1,1,Rifu,Japan,2002_fifa_world_cup.txt
+South Korea,United States,1,1,X,Daegu,South Korea,2002_fifa_world_cup.txt
+Portugal,Poland,4,0,1,Jeonju,South Korea,2002_fifa_world_cup.txt
+Tunisia,Belgium,1,1,X,Ōita,Japan,2002_fifa_world_cup.txt
+Cameroon,Germany,0,2,2,Fukuroi,Japan,2002_fifa_world_cup.txt
+Denmark,France,2,0,1,Incheon,South Korea,2002_fifa_world_cup.txt
+Saudi Arabia,Republic of Ireland,0,3,2,Yokohama,Japan,2002_fifa_world_cup.txt
+Senegal,Uruguay,3,3,X,Suwon,South Korea,2002_fifa_world_cup.txt
+Nigeria,England,0,0,X,Osaka,Japan,2002_fifa_world_cup.txt
+Slovenia,Paraguay,1,3,2,Seogwipo,South Korea,2002_fifa_world_cup.txt
+South Africa,Spain,2,3,2,Daejeon,South Korea,2002_fifa_world_cup.txt
+Sweden,Argentina,1,1,X,Rifu,Japan,2002_fifa_world_cup.txt
+Costa Rica,Brazil,2,5,2,Suwon,South Korea,2002_fifa_world_cup.txt
+Ecuador,Croatia,1,0,1,Yokohama,Japan,2002_fifa_world_cup.txt
+Mexico,Italy,1,1,X,Ōita,Japan,2002_fifa_world_cup.txt
+Turkey,China PR,3,0,1,Seoul,South Korea,2002_fifa_world_cup.txt
+Belgium,Russia,3,2,1,Fukuroi,Japan,2002_fifa_world_cup.txt
+Japan,Tunisia,2,0,1,Osaka,Japan,2002_fifa_world_cup.txt
+South Korea,Portugal,1,0,1,Incheon,South Korea,2002_fifa_world_cup.txt
+Poland,United States,3,1,1,Daejeon,South Korea,2002_fifa_world_cup.txt
+Denmark,England,0,3,2,Niigata,Japan,2002_fifa_world_cup.txt
+Germany,Paraguay,1,0,1,Seogwipo,South Korea,2002_fifa_world_cup.txt
+Spain,Republic of Ireland,1,1,X,Suwon,South Korea   [Spain wins on penalties],2002_fifa_world_cup.txt
+Sweden,Senegal,1,2,2,Ōita,Japan,2002_fifa_world_cup.txt
+Brazil,Belgium,2,0,1,Kobe,Japan,2002_fifa_world_cup.txt
+Mexico,United States,0,2,2,Jeonju,South Korea,2002_fifa_world_cup.txt
+Japan,Turkey,0,1,2,Rifu,Japan,2002_fifa_world_cup.txt
+South Korea,Italy,2,1,1,Daejeon,South Korea,2002_fifa_world_cup.txt
+England,Brazil,1,2,2,Fukuroi,Japan,2002_fifa_world_cup.txt
+Germany,United States,1,0,1,Ulsan,South Korea,2002_fifa_world_cup.txt
+South Korea,Spain,0,0,X,Gwangju,South Korea   [South Korea wins on penalties],2002_fifa_world_cup.txt
+Senegal,Turkey,0,1,2,Osaka,Japan,2002_fifa_world_cup.txt
+South Korea,Germany,0,1,2,Seoul,South Korea,2002_fifa_world_cup.txt
+Brazil,Turkey,1,0,1,Saitama,Japan,2002_fifa_world_cup.txt
+South Korea,Turkey,2,3,2,Daegu,South Korea,2002_fifa_world_cup.txt
+Germany,Brazil,0,2,2,Yokohama,Japan,2002_fifa_world_cup.txt
+Germany,Costa Rica,4,2,1,Munich,Germany,2006_fifa_world_cup.txt
+Poland,Ecuador,0,2,2,Gelsenkirchen,Germany,2006_fifa_world_cup.txt
+Argentina,Ivory Coast,2,1,1,Hamburg,Germany,2006_fifa_world_cup.txt
+England,Paraguay,1,0,1,Frankfurt am Main,Germany,2006_fifa_world_cup.txt
+Trinidad and Tobago,Sweden,0,0,X,Dortmund,Germany,2006_fifa_world_cup.txt
+Angola,Portugal,0,1,2,Cologne,Germany,2006_fifa_world_cup.txt
+Mexico,Iran,3,1,1,Nuremberg,Germany,2006_fifa_world_cup.txt
+Serbia,Netherlands,0,1,2,Leipzig,Germany,2006_fifa_world_cup.txt
+Australia,Japan,3,1,1,Kaiserslautern,Germany,2006_fifa_world_cup.txt
+Italy,Ghana,2,0,1,Hanover,Germany,2006_fifa_world_cup.txt
+United States,Czech Republic,0,3,2,Gelsenkirchen,Germany,2006_fifa_world_cup.txt
+Brazil,Croatia,1,0,1,Berlin,Germany,2006_fifa_world_cup.txt
+France,Switzerland,0,0,X,Stuttgart,Germany,2006_fifa_world_cup.txt
+South Korea,Togo,2,1,1,Frankfurt am Main,Germany,2006_fifa_world_cup.txt
+Germany,Poland,1,0,1,Dortmund,Germany,2006_fifa_world_cup.txt
+Spain,Ukraine,4,0,1,Leipzig,Germany,2006_fifa_world_cup.txt
+Tunisia,Saudi Arabia,2,2,X,Munich,Germany,2006_fifa_world_cup.txt
+Ecuador,Costa Rica,3,0,1,Hamburg,Germany,2006_fifa_world_cup.txt
+England,Trinidad and Tobago,2,0,1,Nuremberg,Germany,2006_fifa_world_cup.txt
+Sweden,Paraguay,1,0,1,Berlin,Germany,2006_fifa_world_cup.txt
+Argentina,Serbia,6,0,1,Gelsenkirchen,Germany,2006_fifa_world_cup.txt
+Mexico,Angola,0,0,X,Hanover,Germany,2006_fifa_world_cup.txt
+Netherlands,Ivory Coast,2,1,1,Stuttgart,Germany,2006_fifa_world_cup.txt
+Czech Republic,Ghana,0,2,2,Cologne,Germany,2006_fifa_world_cup.txt
+Italy,United States,1,1,X,Kaiserslautern,Germany,2006_fifa_world_cup.txt
+Portugal,Iran,2,0,1,Frankfurt am Main,Germany,2006_fifa_world_cup.txt
+Brazil,Australia,2,0,1,Munich,Germany,2006_fifa_world_cup.txt
+France,South Korea,1,1,X,Leipzig,Germany,2006_fifa_world_cup.txt
+Japan,Croatia,0,0,X,Nuremberg,Germany,2006_fifa_world_cup.txt
+Saudi Arabia,Ukraine,0,4,2,Hamburg,Germany,2006_fifa_world_cup.txt
+Spain,Tunisia,3,1,1,Stuttgart,Germany,2006_fifa_world_cup.txt
+Togo,Switzerland,0,2,2,Dortmund,Germany,2006_fifa_world_cup.txt
+Costa Rica,Poland,1,2,2,Hanover,Germany,2006_fifa_world_cup.txt
+Germany,Ecuador,3,0,1,Berlin,Germany,2006_fifa_world_cup.txt
+Paraguay,Trinidad and Tobago,2,0,1,Kaiserslautern,Germany,2006_fifa_world_cup.txt
+Sweden,England,2,2,X,Cologne,Germany,2006_fifa_world_cup.txt
+Iran,Angola,1,1,X,Leipzig,Germany,2006_fifa_world_cup.txt
+Ivory Coast,Serbia,3,2,1,Munich,Germany,2006_fifa_world_cup.txt
+Netherlands,Argentina,0,0,X,Frankfurt am Main,Germany,2006_fifa_world_cup.txt
+Portugal,Mexico,2,1,1,Gelsenkirchen,Germany,2006_fifa_world_cup.txt
+Croatia,Australia,2,2,X,Stuttgart,Germany,2006_fifa_world_cup.txt
+Czech Republic,Italy,0,2,2,Hamburg,Germany,2006_fifa_world_cup.txt
+Ghana,United States,2,1,1,Nuremberg,Germany,2006_fifa_world_cup.txt
+Japan,Brazil,1,4,2,Dortmund,Germany,2006_fifa_world_cup.txt
+Saudi Arabia,Spain,0,1,2,Kaiserslautern,Germany,2006_fifa_world_cup.txt
+Switzerland,South Korea,2,0,1,Hanover,Germany,2006_fifa_world_cup.txt
+Togo,France,0,2,2,Cologne,Germany,2006_fifa_world_cup.txt
+Ukraine,Tunisia,1,0,1,Berlin,Germany,2006_fifa_world_cup.txt
+Argentina,Mexico,2,1,1,Leipzig,Germany,2006_fifa_world_cup.txt
+Germany,Sweden,2,0,1,Munich,Germany,2006_fifa_world_cup.txt
+England,Ecuador,1,0,1,Stuttgart,Germany,2006_fifa_world_cup.txt
+Portugal,Netherlands,1,0,1,Nuremberg,Germany,2006_fifa_world_cup.txt
+Italy,Australia,1,0,1,Kaiserslautern,Germany,2006_fifa_world_cup.txt
+Switzerland,Ukraine,0,0,X,Cologne,Germany   [Ukraine wins on penalties],2006_fifa_world_cup.txt
+Brazil,Ghana,3,0,1,Dortmund,Germany,2006_fifa_world_cup.txt
+Spain,France,1,3,2,Hanover,Germany,2006_fifa_world_cup.txt
+Germany,Argentina,1,1,X,Berlin,Germany   [Germany wins on penalties],2006_fifa_world_cup.txt
+Italy,Ukraine,3,0,1,Hamburg,Germany,2006_fifa_world_cup.txt
+Brazil,France,0,1,2,Frankfurt am Main,Germany,2006_fifa_world_cup.txt
+England,Portugal,0,0,X,Gelsenkirchen,Germany   [Portugal wins on penalties],2006_fifa_world_cup.txt
+Germany,Italy,0,2,2,Dortmund,Germany,2006_fifa_world_cup.txt
+Portugal,France,0,1,2,Munich,Germany,2006_fifa_world_cup.txt
+Germany,Portugal,3,1,1,Stuttgart,Germany,2006_fifa_world_cup.txt
+Italy,France,1,1,X,Berlin,Germany   [Italy wins on penalties],2006_fifa_world_cup.txt
+South Africa,Mexico,1,1,X,Johannesburg,South Africa,2010_fifa_world_cup.txt
+Uruguay,France,0,0,X,Cape Town,South Africa,2010_fifa_world_cup.txt
+Argentina,Nigeria,1,0,1,Johannesburg,South Africa,2010_fifa_world_cup.txt
+England,United States,1,1,X,Rustenburg,South Africa,2010_fifa_world_cup.txt
+South Korea,Greece,2,0,1,Port Elizabeth,South Africa,2010_fifa_world_cup.txt
+Algeria,Slovenia,0,1,2,Polokwane,South Africa,2010_fifa_world_cup.txt
+Germany,Australia,4,0,1,Durban,South Africa,2010_fifa_world_cup.txt
+Serbia,Ghana,0,1,2,Pretoria,South Africa,2010_fifa_world_cup.txt
+Italy,Paraguay,1,1,X,Cape Town,South Africa,2010_fifa_world_cup.txt
+Japan,Cameroon,1,0,1,Bloemfontein,South Africa,2010_fifa_world_cup.txt
+Netherlands,Denmark,2,0,1,Johannesburg,South Africa,2010_fifa_world_cup.txt
+Brazil,North Korea,2,1,1,Johannesburg,South Africa,2010_fifa_world_cup.txt
+Ivory Coast,Portugal,0,0,X,Port Elizabeth,South Africa,2010_fifa_world_cup.txt
+New Zealand,Slovakia,1,1,X,Rustenburg,South Africa,2010_fifa_world_cup.txt
+Honduras,Chile,0,1,2,Nelspruit,South Africa,2010_fifa_world_cup.txt
+South Africa,Uruguay,0,3,2,Pretoria,South Africa,2010_fifa_world_cup.txt
+Spain,Switzerland,0,1,2,Durban,South Africa,2010_fifa_world_cup.txt
+Argentina,South Korea,4,1,1,Johannesburg,South Africa,2010_fifa_world_cup.txt
+France,Mexico,0,2,2,Polokwane,South Africa,2010_fifa_world_cup.txt
+Greece,Nigeria,2,1,1,Bloemfontein,South Africa,2010_fifa_world_cup.txt
+England,Algeria,0,0,X,Cape Town,South Africa,2010_fifa_world_cup.txt
+Germany,Serbia,0,1,2,Port Elizabeth,South Africa,2010_fifa_world_cup.txt
+Slovenia,United States,2,2,X,Johannesburg,South Africa,2010_fifa_world_cup.txt
+Cameroon,Denmark,1,2,2,Pretoria,South Africa,2010_fifa_world_cup.txt
+Ghana,Australia,1,1,X,Rustenburg,South Africa,2010_fifa_world_cup.txt
+Netherlands,Japan,1,0,1,Durban,South Africa,2010_fifa_world_cup.txt
+Brazil,Ivory Coast,3,1,1,Johannesburg,South Africa,2010_fifa_world_cup.txt
+Italy,New Zealand,1,1,X,Nelspruit,South Africa,2010_fifa_world_cup.txt
+Slovakia,Paraguay,0,2,2,Bloemfontein,South Africa,2010_fifa_world_cup.txt
+Chile,Switzerland,1,0,1,Port Elizabeth,South Africa,2010_fifa_world_cup.txt
+Portugal,North Korea,7,0,1,Cape Town,South Africa,2010_fifa_world_cup.txt
+Spain,Honduras,2,0,1,Johannesburg,South Africa,2010_fifa_world_cup.txt
+Greece,Argentina,0,2,2,Polokwane,South Africa,2010_fifa_world_cup.txt
+Mexico,Uruguay,0,1,2,Rustenburg,South Africa,2010_fifa_world_cup.txt
+Nigeria,South Korea,2,2,X,Durban,South Africa,2010_fifa_world_cup.txt
+South Africa,France,2,1,1,Bloemfontein,South Africa,2010_fifa_world_cup.txt
+Australia,Serbia,2,1,1,Nelspruit,South Africa,2010_fifa_world_cup.txt
+Ghana,Germany,0,1,2,Johannesburg,South Africa,2010_fifa_world_cup.txt
+Slovenia,England,0,1,2,Port Elizabeth,South Africa,2010_fifa_world_cup.txt
+United States,Algeria,1,0,1,Pretoria,South Africa,2010_fifa_world_cup.txt
+Cameroon,Netherlands,1,2,2,Cape Town,South Africa,2010_fifa_world_cup.txt
+Denmark,Japan,1,3,2,Rustenburg,South Africa,2010_fifa_world_cup.txt
+Paraguay,New Zealand,0,0,X,Polokwane,South Africa,2010_fifa_world_cup.txt
+Slovakia,Italy,3,2,1,Johannesburg,South Africa,2010_fifa_world_cup.txt
+Chile,Spain,1,2,2,Pretoria,South Africa,2010_fifa_world_cup.txt
+North Korea,Ivory Coast,0,3,2,Nelspruit,South Africa,2010_fifa_world_cup.txt
+Portugal,Brazil,0,0,X,Durban,South Africa,2010_fifa_world_cup.txt
+Switzerland,Honduras,0,0,X,Bloemfontein,South Africa,2010_fifa_world_cup.txt
+Uruguay,South Korea,2,1,1,Port Elizabeth,South Africa,2010_fifa_world_cup.txt
+United States,Ghana,1,2,2,Rustenburg,South Africa,2010_fifa_world_cup.txt
+Argentina,Mexico,3,1,1,Johannesburg,South Africa,2010_fifa_world_cup.txt
+Germany,England,4,1,1,Bloemfontein,South Africa,2010_fifa_world_cup.txt
+Brazil,Chile,3,0,1,Johannesburg,South Africa,2010_fifa_world_cup.txt
+Netherlands,Slovakia,2,1,1,Durban,South Africa,2010_fifa_world_cup.txt
+Paraguay,Japan,0,0,X,Pretoria,South Africa   [Paraguay wins on penalties],2010_fifa_world_cup.txt
+Spain,Portugal,1,0,1,Cape Town,South Africa,2010_fifa_world_cup.txt
+Netherlands,Brazil,2,1,1,Port Elizabeth,South Africa,2010_fifa_world_cup.txt
+Uruguay,Ghana,1,1,X,Johannesburg,South Africa   [Uruguay wins on penalties],2010_fifa_world_cup.txt
+Argentina,Germany,0,4,2,Cape Town,South Africa,2010_fifa_world_cup.txt
+Paraguay,Spain,0,1,2,Johannesburg,South Africa,2010_fifa_world_cup.txt
+Uruguay,Netherlands,2,3,2,Cape Town,South Africa,2010_fifa_world_cup.txt
+Germany,Spain,0,1,2,Durban,South Africa,2010_fifa_world_cup.txt
+Uruguay,Germany,2,3,2,Port Elizabeth,South Africa,2010_fifa_world_cup.txt
+Netherlands,Spain,0,1,2,Johannesburg,South Africa,2010_fifa_world_cup.txt
+Brazil,Croatia,3,1,1,São Paulo,Brazil,2014_fifa_world_cup.txt
+Chile,Australia,3,1,1,Cuiabá,Brazil,2014_fifa_world_cup.txt
+Mexico,Cameroon,1,0,1,Natal,Brazil,2014_fifa_world_cup.txt
+Spain,Netherlands,1,5,2,Salvador,Brazil,2014_fifa_world_cup.txt
+Colombia,Greece,3,0,1,Belo Horizonte,Brazil,2014_fifa_world_cup.txt
+England,Italy,1,2,2,Manaus,Brazil,2014_fifa_world_cup.txt
+Ivory Coast,Japan,2,1,1,Recife,Brazil,2014_fifa_world_cup.txt
+Uruguay,Costa Rica,1,3,2,Fortaleza,Brazil,2014_fifa_world_cup.txt
+Argentina,Bosnia and Herzegovina,2,1,1,Rio de Janeiro,Brazil,2014_fifa_world_cup.txt
+France,Honduras,3,0,1,Porto Alegre,Brazil,2014_fifa_world_cup.txt
+Switzerland,Ecuador,2,1,1,Brasília,Brazil,2014_fifa_world_cup.txt
+Germany,Portugal,4,0,1,Salvador,Brazil,2014_fifa_world_cup.txt
+Ghana,United States,1,2,2,Natal,Brazil,2014_fifa_world_cup.txt
+Iran,Nigeria,0,0,X,Curitiba,Brazil,2014_fifa_world_cup.txt
+Belgium,Algeria,2,1,1,Belo Horizonte,Brazil,2014_fifa_world_cup.txt
+Brazil,Mexico,0,0,X,Fortaleza,Brazil,2014_fifa_world_cup.txt
+Russia,South Korea,1,1,X,Cuiabá,Brazil,2014_fifa_world_cup.txt
+Australia,Netherlands,2,3,2,Curitiba,Brazil,2014_fifa_world_cup.txt
+Cameroon,Croatia,0,4,2,Manaus,Brazil,2014_fifa_world_cup.txt
+Spain,Chile,0,2,2,Rio de Janeiro,Brazil,2014_fifa_world_cup.txt
+Colombia,Ivory Coast,2,1,1,Brasília,Brazil,2014_fifa_world_cup.txt
+Japan,Greece,0,0,X,Natal,Brazil,2014_fifa_world_cup.txt
+Uruguay,England,2,1,1,São Paulo,Brazil,2014_fifa_world_cup.txt
+Honduras,Ecuador,1,2,2,Curitiba,Brazil,2014_fifa_world_cup.txt
+Italy,Costa Rica,0,1,2,Recife,Brazil,2014_fifa_world_cup.txt
+Switzerland,France,2,5,2,Salvador,Brazil,2014_fifa_world_cup.txt
+Argentina,Iran,1,0,1,Belo Horizonte,Brazil,2014_fifa_world_cup.txt
+Germany,Ghana,2,2,X,Fortaleza,Brazil,2014_fifa_world_cup.txt
+Nigeria,Bosnia and Herzegovina,1,0,1,Cuiabá,Brazil,2014_fifa_world_cup.txt
+Belgium,Russia,1,0,1,Rio de Janeiro,Brazil,2014_fifa_world_cup.txt
+South Korea,Algeria,2,4,2,Porto Alegre,Brazil,2014_fifa_world_cup.txt
+United States,Portugal,2,2,X,Manaus,Brazil,2014_fifa_world_cup.txt
+Australia,Spain,0,3,2,Curitiba,Brazil,2014_fifa_world_cup.txt
+Brazil,Cameroon,4,1,1,Brasília,Brazil,2014_fifa_world_cup.txt
+Croatia,Mexico,1,3,2,Recife,Brazil,2014_fifa_world_cup.txt
+Netherlands,Chile,2,0,1,São Paulo,Brazil,2014_fifa_world_cup.txt
+Costa Rica,England,0,0,X,Belo Horizonte,Brazil,2014_fifa_world_cup.txt
+Greece,Ivory Coast,2,1,1,Fortaleza,Brazil,2014_fifa_world_cup.txt
+Italy,Uruguay,0,1,2,Natal,Brazil,2014_fifa_world_cup.txt
+Japan,Colombia,1,4,2,Cuiabá,Brazil,2014_fifa_world_cup.txt
+Bosnia and Herzegovina,Iran,3,1,1,Salvador,Brazil,2014_fifa_world_cup.txt
+Ecuador,France,0,0,X,Rio de Janeiro,Brazil,2014_fifa_world_cup.txt
+Honduras,Switzerland,0,3,2,Manaus,Brazil,2014_fifa_world_cup.txt
+Nigeria,Argentina,2,3,2,Porto Alegre,Brazil,2014_fifa_world_cup.txt
+Algeria,Russia,1,1,X,Curitiba,Brazil,2014_fifa_world_cup.txt
+South Korea,Belgium,0,1,2,São Paulo,Brazil,2014_fifa_world_cup.txt
+Portugal,Ghana,2,1,1,Brasília,Brazil,2014_fifa_world_cup.txt
+United States,Germany,0,1,2,Recife,Brazil,2014_fifa_world_cup.txt
+Brazil,Chile,1,1,X,Belo Horizonte,Brazil   [Brazil wins on penalties],2014_fifa_world_cup.txt
+Colombia,Uruguay,2,0,1,Rio de Janeiro,Brazil,2014_fifa_world_cup.txt
+Costa Rica,Greece,1,1,X,Recife,Brazil   [Costa Rica wins on penalties],2014_fifa_world_cup.txt
+Netherlands,Mexico,2,1,1,Fortaleza,Brazil,2014_fifa_world_cup.txt
+France,Nigeria,2,0,1,Brasília,Brazil,2014_fifa_world_cup.txt
+Germany,Algeria,2,1,1,Porto Alegre,Brazil,2014_fifa_world_cup.txt
+Argentina,Switzerland,1,0,1,São Paulo,Brazil,2014_fifa_world_cup.txt
+Belgium,United States,2,1,1,Salvador,Brazil,2014_fifa_world_cup.txt
+Brazil,Colombia,2,1,1,Fortaleza,Brazil,2014_fifa_world_cup.txt
+France,Germany,0,1,2,Rio de Janeiro,Brazil,2014_fifa_world_cup.txt
+Argentina,Belgium,1,0,1,Brasília,Brazil,2014_fifa_world_cup.txt
+Netherlands,Costa Rica,0,0,X,Salvador,Brazil   [Netherlands wins on penalties],2014_fifa_world_cup.txt
+Brazil,Germany,1,7,2,Belo Horizonte,Brazil,2014_fifa_world_cup.txt
+Netherlands,Argentina,0,0,X,São Paulo,Brazil   [Argentina wins on penalties],2014_fifa_world_cup.txt
+Brazil,Netherlands,0,3,2,Brasília,Brazil,2014_fifa_world_cup.txt
+Germany,Argentina,1,0,1,Rio de Janeiro,Brazil,2014_fifa_world_cup.txt
+Russia,Saudi Arabia,5,0,1,Moscow,Russia,2018_fifa_world_cup.txt
+Egypt,Uruguay,0,1,2,Ekaterinburg,Russia,2018_fifa_world_cup.txt
+Morocco,Iran,0,1,2,Saint Petersburg,Russia,2018_fifa_world_cup.txt
+Portugal,Spain,3,3,X,Sochi,Russia,2018_fifa_world_cup.txt
+France,Australia,2,1,1,Kazan,Russia,2018_fifa_world_cup.txt
+Argentina,Iceland,1,1,X,Moscow,Russia,2018_fifa_world_cup.txt
+Peru,Denmark,0,1,2,Saransk,Russia,2018_fifa_world_cup.txt
+Croatia,Nigeria,2,0,1,Kaliningrad,Russia,2018_fifa_world_cup.txt
+Costa Rica,Serbia,0,1,2,Samara,Russia,2018_fifa_world_cup.txt
+Germany,Mexico,0,1,2,Moscow,Russia,2018_fifa_world_cup.txt
+Brazil,Switzerland,1,1,X,Rostov-on-Don,Russia,2018_fifa_world_cup.txt
+Sweden,South Korea,1,0,1,Nizhny Novgorod,Russia,2018_fifa_world_cup.txt
+Belgium,Panama,3,0,1,Sochi,Russia,2018_fifa_world_cup.txt
+Tunisia,England,1,2,2,Volgograd,Russia,2018_fifa_world_cup.txt
+Colombia,Japan,1,2,2,Saransk,Russia,2018_fifa_world_cup.txt
+Poland,Senegal,1,2,2,Moscow,Russia,2018_fifa_world_cup.txt
+Russia,Egypt,3,1,1,Saint Petersburg,Russia,2018_fifa_world_cup.txt
+Portugal,Morocco,1,0,1,Moscow,Russia,2018_fifa_world_cup.txt
+Uruguay,Saudi Arabia,1,0,1,Rostov-on-Don,Russia,2018_fifa_world_cup.txt
+Iran,Spain,0,1,2,Kazan,Russia,2018_fifa_world_cup.txt
+Denmark,Australia,1,1,X,Samara,Russia,2018_fifa_world_cup.txt
+France,Peru,1,0,1,Ekaterinburg,Russia,2018_fifa_world_cup.txt
+Argentina,Croatia,0,3,2,Nizhny Novgorod,Russia,2018_fifa_world_cup.txt
+Brazil,Costa Rica,2,0,1,Saint Petersburg,Russia,2018_fifa_world_cup.txt
+Nigeria,Iceland,2,0,1,Volgograd,Russia,2018_fifa_world_cup.txt
+Serbia,Switzerland,1,2,2,Kaliningrad,Russia,2018_fifa_world_cup.txt
+Belgium,Tunisia,5,2,1,Moscow,Russia,2018_fifa_world_cup.txt
+South Korea,Mexico,1,2,2,Rostov-on-Don,Russia,2018_fifa_world_cup.txt
+Germany,Sweden,2,1,1,Sochi,Russia,2018_fifa_world_cup.txt
+England,Panama,6,1,1,Nizhny Novgorod,Russia,2018_fifa_world_cup.txt
+Japan,Senegal,2,2,X,Ekaterinburg,Russia,2018_fifa_world_cup.txt
+Poland,Colombia,0,3,2,Kazan,Russia,2018_fifa_world_cup.txt
+Russia,Uruguay,0,3,2,Samara,Russia,2018_fifa_world_cup.txt
+Saudi Arabia,Egypt,2,1,1,Volgograd,Russia,2018_fifa_world_cup.txt
+Spain,Morocco,2,2,X,Kaliningrad,Russia,2018_fifa_world_cup.txt
+Iran,Portugal,1,1,X,Saransk,Russia,2018_fifa_world_cup.txt
+Australia,Peru,0,2,2,Sochi,Russia,2018_fifa_world_cup.txt
+Denmark,France,0,0,X,Moscow,Russia,2018_fifa_world_cup.txt
+Nigeria,Argentina,1,2,2,Saint Petersburg,Russia,2018_fifa_world_cup.txt
+Iceland,Croatia,1,2,2,Rostov-on-Don,Russia,2018_fifa_world_cup.txt
+South Korea,Germany,2,0,1,Kazan,Russia,2018_fifa_world_cup.txt
+Mexico,Sweden,0,3,2,Ekaterinburg,Russia,2018_fifa_world_cup.txt
+Serbia,Brazil,0,2,2,Moscow,Russia,2018_fifa_world_cup.txt
+Switzerland,Costa Rica,2,2,X,Nizhny Novgorod,Russia,2018_fifa_world_cup.txt
+Japan,Poland,0,1,2,Volgograd,Russia,2018_fifa_world_cup.txt
+Senegal,Colombia,0,1,2,Samara,Russia,2018_fifa_world_cup.txt
+Panama,Tunisia,1,2,2,Saransk,Russia,2018_fifa_world_cup.txt
+England,Belgium,0,1,2,Kaliningrad,Russia,2018_fifa_world_cup.txt
+France,Argentina,4,3,1,Kazan,Russia,2018_fifa_world_cup.txt
+Uruguay,Portugal,2,1,1,Sochi,Russia,2018_fifa_world_cup.txt
+Russia,Spain,1,1,X,Moscow,Russia   [Russia wins on penalties],2018_fifa_world_cup.txt
+Croatia,Denmark,1,1,X,Nizhny Novgorod,Russia   [Croatia wins on penalties],2018_fifa_world_cup.txt
+Brazil,Mexico,2,0,1,Samara,Russia,2018_fifa_world_cup.txt
+Belgium,Japan,3,2,1,Rostov-on-Don,Russia,2018_fifa_world_cup.txt
+Sweden,Switzerland,1,0,1,Saint Petersburg,Russia,2018_fifa_world_cup.txt
+Colombia,England,1,1,X,Moscow,Russia   [England wins on penalties],2018_fifa_world_cup.txt
+Uruguay,France,0,2,2,Nizhny Novgorod,Russia,2018_fifa_world_cup.txt
+Brazil,Belgium,1,2,2,Kazan,Russia,2018_fifa_world_cup.txt
+Sweden,England,0,2,2,Samara,Russia,2018_fifa_world_cup.txt
+Russia,Croatia,2,2,X,Sochi,Russia   [Croatia wins on penalties],2018_fifa_world_cup.txt
+France,Belgium,1,0,1,Saint Petersburg,Russia,2018_fifa_world_cup.txt
+Croatia,England,2,1,1,Moscow,Russia,2018_fifa_world_cup.txt
+Belgium,England,2,0,1,Saint Petersburg,Russia,2018_fifa_world_cup.txt
+France,Croatia,4,2,1,Moscow,Russia,2018_fifa_world_cup.txt
+Qatar,Ecuador,0,2,2,Al Khor,Qatar,2022_fifa_world_cup.txt
+Senegal,Netherlands,0,2,2,Doha,Qatar,2022_fifa_world_cup.txt
+England,Iran,6,2,1,Al Rayyan,Qatar,2022_fifa_world_cup.txt
+United States,Wales,1,1,X,Al Rayyan,Qatar,2022_fifa_world_cup.txt
+Argentina,Saudi Arabia,1,2,2,Lusail,Qatar,2022_fifa_world_cup.txt
+Mexico,Poland,0,0,X,Doha,Qatar,2022_fifa_world_cup.txt
+Denmark,Tunisia,0,0,X,Al Rayyan,Qatar,2022_fifa_world_cup.txt
+France,Australia,4,1,1,Al Wakrah,Qatar,2022_fifa_world_cup.txt
+Germany,Japan,1,2,2,Al Rayyan,Qatar,2022_fifa_world_cup.txt
+Spain,Costa Rica,7,0,1,Doha,Qatar,2022_fifa_world_cup.txt
+Morocco,Croatia,0,0,X,Al Khor,Qatar,2022_fifa_world_cup.txt
+Belgium,Canada,1,0,1,Al Rayyan,Qatar,2022_fifa_world_cup.txt
+Switzerland,Cameroon,1,0,1,Al Wakrah,Qatar,2022_fifa_world_cup.txt
+Brazil,Serbia,2,0,1,Lusail,Qatar,2022_fifa_world_cup.txt
+Uruguay,South Korea,0,0,X,Al Rayyan,Qatar,2022_fifa_world_cup.txt
+Portugal,Ghana,3,2,1,Doha,Qatar,2022_fifa_world_cup.txt
+Qatar,Senegal,1,3,2,Doha,Qatar,2022_fifa_world_cup.txt
+Netherlands,Ecuador,1,1,X,Al Rayyan,Qatar,2022_fifa_world_cup.txt
+Wales,Iran,0,2,2,Al Rayyan,Qatar,2022_fifa_world_cup.txt
+England,United States,0,0,X,Al Khor,Qatar,2022_fifa_world_cup.txt
+Poland,Saudi Arabia,2,0,1,Al Rayyan,Qatar,2022_fifa_world_cup.txt
+Argentina,Mexico,2,0,1,Lusail,Qatar,2022_fifa_world_cup.txt
+Tunisia,Australia,0,1,2,Al Wakrah,Qatar,2022_fifa_world_cup.txt
+France,Denmark,2,1,1,Doha,Qatar,2022_fifa_world_cup.txt
+Japan,Costa Rica,0,1,2,Al Rayyan,Qatar,2022_fifa_world_cup.txt
+Spain,Germany,1,1,X,Al Khor,Qatar,2022_fifa_world_cup.txt
+Belgium,Morocco,0,2,2,Doha,Qatar,2022_fifa_world_cup.txt
+Croatia,Canada,4,1,1,Al Rayyan,Qatar,2022_fifa_world_cup.txt
+Cameroon,Serbia,3,3,X,Al Wakrah,Qatar,2022_fifa_world_cup.txt
+Brazil,Switzerland,1,0,1,Doha,Qatar,2022_fifa_world_cup.txt
+South Korea,Ghana,2,3,2,Al Rayyan,Qatar,2022_fifa_world_cup.txt
+Portugal,Uruguay,2,0,1,Lusail,Qatar,2022_fifa_world_cup.txt
+Ecuador,Senegal,1,2,2,Al Rayyan,Qatar,2022_fifa_world_cup.txt
+Qatar,Netherlands,0,2,2,Al Khor,Qatar,2022_fifa_world_cup.txt
+Wales,England,0,3,2,Al Rayyan,Qatar,2022_fifa_world_cup.txt
+Iran,United States,0,1,2,Doha,Qatar,2022_fifa_world_cup.txt
+Poland,Argentina,0,2,2,Doha,Qatar,2022_fifa_world_cup.txt
+Saudi Arabia,Mexico,1,2,2,Lusail,Qatar,2022_fifa_world_cup.txt
+Australia,Denmark,1,0,1,Al Wakrah,Qatar,2022_fifa_world_cup.txt
+Tunisia,France,1,0,1,Al Rayyan,Qatar,2022_fifa_world_cup.txt
+Japan,Spain,2,1,1,Al Rayyan,Qatar,2022_fifa_world_cup.txt
+Costa Rica,Germany,2,4,2,Al Khor,Qatar,2022_fifa_world_cup.txt
+Croatia,Belgium,0,0,X,Al Rayyan,Qatar,2022_fifa_world_cup.txt
+Canada,Morocco,1,2,2,Doha,Qatar,2022_fifa_world_cup.txt
+Serbia,Switzerland,2,3,2,Doha,Qatar,2022_fifa_world_cup.txt
+Cameroon,Brazil,1,0,1,Lusail,Qatar,2022_fifa_world_cup.txt
+Ghana,Uruguay,0,2,2,Al Wakrah,Qatar,2022_fifa_world_cup.txt
+South Korea,Portugal,2,1,1,Al Rayyan,Qatar,2022_fifa_world_cup.txt
+Netherlands,United States,3,1,1,Al Rayyan,Qatar,2022_fifa_world_cup.txt
+Argentina,Australia,2,1,1,Al Rayyan,Qatar,2022_fifa_world_cup.txt
+France,Poland,3,1,1,Doha,Qatar,2022_fifa_world_cup.txt
+England,Senegal,3,0,1,Al Khor,Qatar,2022_fifa_world_cup.txt
+Japan,Croatia,1,1,X,Al Wakrah,Qatar   [Croatia wins on penalties],2022_fifa_world_cup.txt
+Brazil,South Korea,4,1,1,Doha,Qatar,2022_fifa_world_cup.txt
+Morocco,Spain,0,0,X,Al Rayyan,Qatar   [Morocco wins on penalties],2022_fifa_world_cup.txt
+Portugal,Switzerland,6,1,1,Lusail,Qatar,2022_fifa_world_cup.txt
+Croatia,Brazil,1,1,X,Al Rayyan,Qatar   [Croatia wins on penalties],2022_fifa_world_cup.txt
+Netherlands,Argentina,2,2,X,Lusail,Qatar   [Argentina wins on penalties],2022_fifa_world_cup.txt
+Morocco,Portugal,1,0,1,Doha,Qatar,2022_fifa_world_cup.txt
+England,France,1,2,2,Al Khor,Qatar,2022_fifa_world_cup.txt
+Argentina,Croatia,3,0,1,Lusail,Qatar,2022_fifa_world_cup.txt
+France,Morocco,2,0,1,Al Khor,Qatar,2022_fifa_world_cup.txt
+Croatia,Morocco,2,1,1,Al Rayyan,Qatar,2022_fifa_world_cup.txt
+Argentina,France,3,3,X,Lusail,Qatar   [Argentina wins on penalties],2022_fifa_world_cup.txt

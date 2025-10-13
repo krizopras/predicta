@@ -1,0 +1,75 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Saint Kitts and Nevis,Cuba,0,2,2,Basseterre,Saint Kitts and Nevis,1997_gold_cup_qualification.txt
+Canada,Cuba,0,0,X,Los Angeles,United States,1999_gold_cup_qualification.txt
+El Salvador,Haiti,1,1,X,Los Angeles,United States,1999_gold_cup_qualification.txt
+Canada,El Salvador,2,1,1,Los Angeles,United States,1999_gold_cup_qualification.txt
+Cuba,Haiti,0,1,2,Los Angeles,United States,1999_gold_cup_qualification.txt
+Canada,Haiti,2,1,1,Los Angeles,United States,1999_gold_cup_qualification.txt
+Cuba,El Salvador,3,1,1,Los Angeles,United States,1999_gold_cup_qualification.txt
+Panama,Cuba,0,0,X,Panama City,Panama,2001_gold_cup_qualification.txt
+Cuba,Panama,1,0,1,Havana,Cuba,2001_gold_cup_qualification.txt
+Grenada,Saint Martin,8,3,1,St. George's,Grenada,2002_gold_cup_qualification.txt
+Guadeloupe,Puerto Rico,4,0,1,Baie-Mahault,Guadeloupe,2002_gold_cup_qualification.txt
+British Virgin Islands,Saint Lucia,1,3,2,Road Town,British Virgin Islands,2002_gold_cup_qualification.txt
+Puerto Rico,Guadeloupe,0,2,2,San Juan,Puerto Rico,2002_gold_cup_qualification.txt
+Aruba,Suriname,0,2,2,Oranjestad,Aruba,2002_gold_cup_qualification.txt
+Guyana,Curaçao,2,1,1,Georgetown,Guyana,2002_gold_cup_qualification.txt
+Saint Lucia,British Virgin Islands,8,1,1,Vieux Fort,Saint Lucia,2002_gold_cup_qualification.txt
+Saint Martin,Grenada,1,7,2,Marigot,Saint Martin,2002_gold_cup_qualification.txt
+Curaçao,Guyana,1,0,1,Willemstad,Curaçao,2002_gold_cup_qualification.txt
+Suriname,Aruba,6,0,1,Paramaribo,Suriname,2002_gold_cup_qualification.txt
+Dominican Republic,United States Virgin Islands,6,1,1,San Cristóbal,Dominican Republic,2002_gold_cup_qualification.txt
+Dominican Republic,United States Virgin Islands,5,1,1,San Cristóbal,Dominican Republic,2002_gold_cup_qualification.txt
+Barbados,Jamaica,1,1,X,St. George's,Grenada,2002_gold_cup_qualification.txt
+Grenada,Guadeloupe,4,5,2,St. George's,Grenada,2002_gold_cup_qualification.txt
+Grenada,Barbados,0,2,2,St. George's,Grenada,2002_gold_cup_qualification.txt
+Jamaica,Guadeloupe,2,0,1,St. George's,Grenada,2002_gold_cup_qualification.txt
+Barbados,Guadeloupe,0,1,2,St. George's,Grenada,2002_gold_cup_qualification.txt
+Grenada,Jamaica,1,4,2,St. George's,Grenada,2002_gold_cup_qualification.txt
+Saint Kitts and Nevis,Saint Lucia,2,1,1,Macoya,Trinidad and Tobago,2002_gold_cup_qualification.txt
+Trinidad and Tobago,Saint Kitts and Nevis,2,0,1,Port of Spain,Trinidad and Tobago,2002_gold_cup_qualification.txt
+Trinidad and Tobago,Saint Lucia,0,1,2,Macoya,Trinidad and Tobago,2002_gold_cup_qualification.txt
+Haiti,Antigua and Barbuda,1,0,1,Port-au-Prince,Haiti,2002_gold_cup_qualification.txt
+Antigua and Barbuda,Curaçao,1,1,X,Port-au-Prince,Haiti,2002_gold_cup_qualification.txt
+Haiti,Curaçao,3,0,1,Port-au-Prince,Haiti,2002_gold_cup_qualification.txt
+Cayman Islands,Cuba,0,5,2,George Town,Cayman Islands,2002_gold_cup_qualification.txt
+Martinique,Dominican Republic,4,0,1,George Town,Cayman Islands,2002_gold_cup_qualification.txt
+Cayman Islands,Dominican Republic,1,0,1,George Town,Cayman Islands,2002_gold_cup_qualification.txt
+Martinique,Cuba,1,2,2,George Town,Cayman Islands,2002_gold_cup_qualification.txt
+Cayman Islands,Martinique,0,3,2,George Town,Cayman Islands,2002_gold_cup_qualification.txt
+Dominican Republic,Cuba,1,2,2,George Town,Cayman Islands,2002_gold_cup_qualification.txt
+Guadeloupe,Cuba,2,3,2,Port of Spain,Trinidad and Tobago,2003_gold_cup_qualification.txt
+Haiti,Martinique,2,1,1,Kingston,Jamaica,2003_gold_cup_qualification.txt
+Jamaica,Saint Lucia,5,0,1,Kingston,Jamaica,2003_gold_cup_qualification.txt
+Trinidad and Tobago,Antigua and Barbuda,2,0,1,Port of Spain,Trinidad and Tobago,2003_gold_cup_qualification.txt
+Cuba,Antigua and Barbuda,2,0,1,Macoya,Trinidad and Tobago,2003_gold_cup_qualification.txt
+Jamaica,Martinique,2,2,X,Kingston,Jamaica,2003_gold_cup_qualification.txt
+Saint Lucia,Haiti,2,1,1,Kingston,Jamaica,2003_gold_cup_qualification.txt
+Trinidad and Tobago,Guadeloupe,1,0,1,Macoya,Trinidad and Tobago,2003_gold_cup_qualification.txt
+Guadeloupe,Antigua and Barbuda,2,0,1,San Fernando,Trinidad and Tobago,2003_gold_cup_qualification.txt
+Jamaica,Haiti,3,0,1,Kingston,Jamaica,2003_gold_cup_qualification.txt
+Saint Lucia,Martinique,4,5,2,Kingston,Jamaica,2003_gold_cup_qualification.txt
+Trinidad and Tobago,Cuba,1,3,2,San Fernando,Trinidad and Tobago,2003_gold_cup_qualification.txt
+Martinique,Trinidad and Tobago,3,2,1,Fort-de-France,Martinique,2003_gold_cup_qualification.txt
+Trinidad and Tobago,Honduras,0,2,2,Rivière-Pilote,Martinique,2003_gold_cup_qualification.txt
+Martinique,Honduras,2,4,2,Fort-de-France,Martinique,2003_gold_cup_qualification.txt
+French Guiana,Honduras,3,1,1,Cayenne,French Guiana,2015_gold_cup_qualification.txt
+Honduras,French Guiana,3,0,1,San Pedro Sula,Honduras,2015_gold_cup_qualification.txt
+Haiti,Saint Vincent and the Grenadines,6,1,1,Fort Lauderdale,United States,2021_gold_cup_qualification.txt
+Trinidad and Tobago,Montserrat,6,1,1,Fort Lauderdale,United States,2021_gold_cup_qualification.txt
+Bermuda,Barbados,8,1,1,Fort Lauderdale,United States,2021_gold_cup_qualification.txt
+Guatemala,Guyana,4,0,1,Fort Lauderdale,United States,2021_gold_cup_qualification.txt
+Cuba,French Guiana,0,3,2,Fort Lauderdale,United States,2021_gold_cup_qualification.txt
+Guadeloupe,Bahamas,2,0,1,Fort Lauderdale,United States,2021_gold_cup_qualification.txt
+Haiti,Bermuda,4,1,1,Fort Lauderdale,United States,2021_gold_cup_qualification.txt
+Guatemala,Guadeloupe,1,1,X,Fort Lauderdale,United States   [Guadeloupe wins on penalties],2021_gold_cup_qualification.txt
+Trinidad and Tobago,French Guiana,1,1,X,Fort Lauderdale,United States   [Trinidad and Tobago wins on penalties],2021_gold_cup_qualification.txt
+Antigua and Barbuda,Guadeloupe,0,5,2,Fort Lauderdale,United States,2023_gold_cup_qualification.txt
+Martinique,Saint Lucia,3,1,1,Fort Lauderdale,United States,2023_gold_cup_qualification.txt
+Curaçao,Saint Kitts and Nevis,1,1,X,Fort Lauderdale,United States   [Saint Kitts and Nevis wins on penalties],2023_gold_cup_qualification.txt
+Guyana,Grenada,1,1,X,Fort Lauderdale,United States   [Guyana wins on penalties],2023_gold_cup_qualification.txt
+Suriname,Puerto Rico,0,0,X,Fort Lauderdale,United States   [Puerto Rico wins on penalties],2023_gold_cup_qualification.txt
+French Guiana,Sint Maarten,4,1,1,Fort Lauderdale,United States,2023_gold_cup_qualification.txt
+Guadeloupe,Guyana,2,0,1,Fort Lauderdale,United States,2023_gold_cup_qualification.txt
+Martinique,Puerto Rico,2,0,1,Fort Lauderdale,United States,2023_gold_cup_qualification.txt
+Saint Kitts and Nevis,French Guiana,1,1,X,Fort Lauderdale,United States   [Saint Kitts and Nevis wins on penalties],2023_gold_cup_qualification.txt

@@ -1,0 +1,7 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Peru,Argentina,0,2,2,Lima,Peru,1972_copa_ramon_castilla.txt
+Argentina,Peru,3,1,1,Buenos Aires,Argentina,1973_copa_ramon_castilla.txt
+Peru,Argentina,1,3,2,Lima,Peru,1976_copa_ramon_castilla.txt
+Argentina,Peru,1,0,1,Buenos Aires,Argentina,1976_copa_ramon_castilla.txt
+Argentina,Peru,2,1,1,Buenos Aires,Argentina,1978_copa_ramon_castilla.txt
+Peru,Argentina,1,3,2,Lima,Peru,1978_copa_ramon_castilla.txt

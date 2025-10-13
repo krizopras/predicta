@@ -1,0 +1,3 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+China PR,Egypt,0,0,X,Tehran,Iran   [Egypt wins on penalties],2001_cup_of_ancient_civilizations.txt
+Iran,China PR,4,0,1,Tehran,Iran,2001_cup_of_ancient_civilizations.txt

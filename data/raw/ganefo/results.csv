@@ -1,0 +1,15 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Palestine,Yemen,5,3,1,Phnom Penh,Cambodia,1966_ganefo.txt
+Cambodia,North Korea,0,2,2,Phnom Penh,Cambodia,1966_ganefo.txt
+China PR,Palestine,7,0,1,Phnom Penh,Cambodia,1966_ganefo.txt
+North Vietnam,Yemen,9,0,1,Phnom Penh,Cambodia,1966_ganefo.txt
+Cambodia,China PR,0,4,2,Phnom Penh,Cambodia,1966_ganefo.txt
+Palestine,North Vietnam,0,4,2,Phnom Penh,Cambodia,1966_ganefo.txt
+Cambodia,Yemen,8,0,1,Phnom Penh,Cambodia,1966_ganefo.txt
+Palestine,North Korea,1,5,2,Phnom Penh,Cambodia,1966_ganefo.txt
+Cambodia,North Vietnam,2,2,X,Phnom Penh,Cambodia,1966_ganefo.txt
+China PR,North Vietnam,2,0,1,Phnom Penh,Cambodia,1966_ganefo.txt
+North Korea,Yemen,14,0,1,Phnom Penh,Cambodia,1966_ganefo.txt
+China PR,North Korea,1,2,2,Phnom Penh,Cambodia,1966_ganefo.txt
+China PR,Yemen,6,0,1,Phnom Penh,Cambodia,1966_ganefo.txt
+North Korea,North Vietnam,3,1,1,Phnom Penh,Cambodia,1966_ganefo.txt

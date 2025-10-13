@@ -1,0 +1,17 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Uruguay,Chile,3,2,1,Montevideo,Uruguay,1963_copa_juan_pinto_duran.txt
+Chile,Uruguay,0,0,X,Santiago,Chile,1963_copa_juan_pinto_duran.txt
+Chile,Uruguay,0,0,X,Santiago,Chile,1965_copa_juan_pinto_duran.txt
+Uruguay,Chile,1,1,X,Montevideo,Uruguay,1965_copa_juan_pinto_duran.txt
+Uruguay,Chile,3,0,1,Montevideo,Uruguay,1971_copa_juan_pinto_duran.txt
+Chile,Uruguay,5,0,1,Santiago,Chile,1971_copa_juan_pinto_duran.txt
+Uruguay,Chile,1,0,1,Montevideo,Uruguay,1975_copa_juan_pinto_duran.txt
+Chile,Uruguay,1,3,2,Santiago,Chile,1975_copa_juan_pinto_duran.txt
+Chile,Uruguay,0,0,X,Santiago,Chile,1976_copa_juan_pinto_duran.txt
+Uruguay,Chile,3,0,1,Montevideo,Uruguay,1977_copa_juan_pinto_duran.txt
+Chile,Uruguay,1,0,1,Santiago,Chile,1979_copa_juan_pinto_duran.txt
+Uruguay,Chile,2,1,1,Montevideo,Uruguay,1979_copa_juan_pinto_duran.txt
+Chile,Uruguay,1,2,2,Santiago,Chile,1981_copa_juan_pinto_duran.txt
+Uruguay,Chile,0,0,X,Montevideo,Uruguay,1981_copa_juan_pinto_duran.txt
+Chile,Uruguay,1,1,X,Concepción,Chile,1988_copa_juan_pinto_duran.txt
+Uruguay,Chile,3,1,1,Montevideo,Uruguay,1988_copa_juan_pinto_duran.txt

@@ -1,0 +1,289 @@
+time,home_team,away_team,home_score,away_score,result,ht_score,source_file
+20.00,Dinamo Zagreb,Hajduk Split,1,2,2,1-0,2023-24_hr1.txt
+21.00,NK Osijek,Slaven Belupo,6,1,1,3-1,2023-24_hr1.txt
+21.00,Lokomotiva Zagreb,NK Istra 1961,1,1,X,0-1,2023-24_hr1.txt
+,din,Slaven Belupo,2,2,X,2-0,2023-24_hr1.txt
+18.55,HNK Gorica,Lokomotiva Zagreb,1,0,1,0-0,2023-24_hr1.txt
+21.00,NK Istra 1961,Dinamo Zagreb,0,3,2,0-1,2023-24_hr1.txt
+,,NK Osijek,3,4,2,3-1,2023-24_hr1.txt
+21.00,Hajduk Split,HNK Rijeka,1,0,1,0-0,2023-24_hr1.txt
+21.00,Dinamo Zagreb,HNK Gorica,0,0,X,,2023-24_hr1.txt
+21.00,HNK Rijeka,NK Istra 1961,6,0,1,3-0,2023-24_hr1.txt
+17.00,NK Osijek,Hajduk Split,0,1,2,0-1,2023-24_hr1.txt
+18.55,NK Istra 1961,NK Osijek,4,4,X,1-1,2023-24_hr1.txt
+21.05,Hajduk Split,Slaven Belupo,3,0,1,0-0,2023-24_hr1.txt
+17.00,Dinamo Zagreb,Lokomotiva Zagreb,0,3,2,0-2,2023-24_hr1.txt
+17.00,HNK Gorica,HNK Rijeka,2,3,2,2-1,2023-24_hr1.txt
+18.30,Slaven Belupo,NK Istra 1961,2,2,X,2-1,2023-24_hr1.txt
+,,Hajduk Split,0,2,2,0-2,2023-24_hr1.txt
+21.00,NK Osijek,HNK Gorica,1,0,1,1-0,2023-24_hr1.txt
+21.05,HNK Rijeka,Lokomotiva Zagreb,2,1,1,1-1,2023-24_hr1.txt
+20.00,HNK Gorica,Slaven Belupo,2,2,X,1-0,2023-24_hr1.txt
+,din,Hajduk Split,1,2,2,1-1,2023-24_hr1.txt
+21.05,Lokomotiva Zagreb,NK Osijek,2,2,X,0-1,2023-24_hr1.txt
+21.05,Dinamo Zagreb,HNK Rijeka,2,1,1,1-0,2023-24_hr1.txt
+20.00,Slaven Belupo,Lokomotiva Zagreb,0,1,2,0-0,2023-24_hr1.txt
+,,HNK Gorica,0,2,2,0-2,2023-24_hr1.txt
+21.05,Hajduk Split,NK Istra 1961,0,1,2,0-0,2023-24_hr1.txt
+21.05,NK Osijek,Dinamo Zagreb,2,3,2,1-0,2023-24_hr1.txt
+17.00,Dinamo Zagreb,Slaven Belupo,3,0,1,1-0,2023-24_hr1.txt
+19.30,HNK Rijeka,NK Osijek,2,1,1,0-0,2023-24_hr1.txt
+17.00,HNK Gorica,Hajduk Split,2,1,1,0-0,2023-24_hr1.txt
+,din,NK Istra 1961,1,0,1,0-0,2023-24_hr1.txt
+17.00,NK Istra 1961,HNK Gorica,0,1,2,0-1,2023-24_hr1.txt
+19.15,Hajduk Split,Lokomotiva Zagreb,1,0,1,0-0,2023-24_hr1.txt
+17.00,Slaven Belupo,HNK Rijeka,0,1,2,0-1,2023-24_hr1.txt
+,,Dinamo Zagreb,1,5,2,0-2,2023-24_hr1.txt
+,din,HNK Gorica,1,0,1,1-0,2023-24_hr1.txt
+19.15,Slaven Belupo,NK Osijek,1,0,1,0-0,2023-24_hr1.txt
+,,HNK Rijeka,1,2,2,0-1,2023-24_hr1.txt
+18.00,Hajduk Split,Dinamo Zagreb,1,0,1,0-0,2023-24_hr1.txt
+18.00,NK Istra 1961,Lokomotiva Zagreb,0,4,2,0-2,2023-24_hr1.txt
+18.30,HNK Rijeka,Hajduk Split,1,0,1,0-0,2023-24_hr1.txt
+15.00,Lokomotiva Zagreb,HNK Gorica,1,1,X,0-0,2023-24_hr1.txt
+17.15,Dinamo Zagreb,NK Istra 1961,3,0,1,1-0,2023-24_hr1.txt
+,,Slaven Belupo,0,0,X,,2023-24_hr1.txt
+,din,Lokomotiva Zagreb,0,0,X,,2023-24_hr1.txt
+18.10,HNK Gorica,Dinamo Zagreb,2,1,1,0-0,2023-24_hr1.txt
+15.00,NK Istra 1961,HNK Rijeka,1,1,X,0-1,2023-24_hr1.txt
+18.00,Hajduk Split,NK Osijek,0,2,2,0-0,2023-24_hr1.txt
+18.00,Slaven Belupo,Hajduk Split,0,1,2,0-1,2023-24_hr1.txt
+18.10,NK Osijek,NK Istra 1961,3,1,1,0-0,2023-24_hr1.txt
+15.00,HNK Rijeka,HNK Gorica,1,0,1,1-0,2023-24_hr1.txt
+17.10,Dinamo Zagreb,Lokomotiva Zagreb,2,1,1,0-1,2023-24_hr1.txt
+18.00,Lokomotiva Zagreb,HNK Rijeka,1,1,X,1-1,2023-24_hr1.txt
+16.00,HNK Gorica,NK Osijek,3,0,1,1-0,2023-24_hr1.txt
+,din,Dinamo Zagreb,1,1,X,0-0,2023-24_hr1.txt
+17.10,NK Istra 1961,Slaven Belupo,2,0,1,1-0,2023-24_hr1.txt
+18.00,Slaven Belupo,HNK Gorica,0,0,X,,2023-24_hr1.txt
+,,NK Istra 1961,0,4,2,0-3,2023-24_hr1.txt
+18.10,NK Osijek,Lokomotiva Zagreb,1,1,X,0-1,2023-24_hr1.txt
+19.00,HNK Rijeka,Dinamo Zagreb,2,2,X,0-1,2023-24_hr1.txt
+18.00,Lokomotiva Zagreb,Slaven Belupo,1,3,2,1-2,2023-24_hr1.txt
+,din,HNK Rijeka,0,2,2,0-1,2023-24_hr1.txt
+17.30,Dinamo Zagreb,NK Osijek,2,1,1,1-0,2023-24_hr1.txt
+15.00,NK Istra 1961,Hajduk Split,0,2,2,0-1,2023-24_hr1.txt
+15.00,NK Osijek,HNK Rijeka,0,0,X,,2023-24_hr1.txt
+17.30,Hajduk Split,HNK Gorica,3,0,1,1-0,2023-24_hr1.txt
+,,Lokomotiva Zagreb,0,0,X,,2023-24_hr1.txt
+17.00,Slaven Belupo,Dinamo Zagreb,0,2,2,0-1,2023-24_hr1.txt
+17.30,Lokomotiva Zagreb,Hajduk Split,1,1,X,1-0,2023-24_hr1.txt
+14.50,HNK Gorica,NK Istra 1961,0,0,X,,2023-24_hr1.txt
+,din,NK Osijek,2,2,X,1-1,2023-24_hr1.txt
+17.10,HNK Rijeka,Slaven Belupo,2,4,2,0-1,2023-24_hr1.txt
+14.50,Lokomotiva Zagreb,NK Istra 1961,3,0,1,1-0,2023-24_hr1.txt
+14.30,NK Osijek,Slaven Belupo,4,1,1,2-0,2023-24_hr1.txt
+17.15,Dinamo Zagreb,Hajduk Split,0,0,X,,2023-24_hr1.txt
+,din,Slaven Belupo,1,2,2,1-1,2023-24_hr1.txt
+17.00,NK Istra 1961,Dinamo Zagreb,0,1,2,0-1,2023-24_hr1.txt
+15.00,HNK Gorica,Lokomotiva Zagreb,1,2,2,1-1,2023-24_hr1.txt
+17.45,Hajduk Split,HNK Rijeka,1,2,2,1-0,2023-24_hr1.txt
+17.30,NK Osijek,Hajduk Split,1,1,X,0-0,2023-24_hr1.txt
+15.00,HNK Rijeka,NK Istra 1961,3,0,1,2-0,2023-24_hr1.txt
+17.15,Dinamo Zagreb,HNK Gorica,2,0,1,1-0,2023-24_hr1.txt
+15.00,NK Istra 1961,NK Osijek,1,0,1,1-0,2023-24_hr1.txt
+17.10,Lokomotiva Zagreb,Dinamo Zagreb,2,2,X,2-2,2023-24_hr1.txt
+15.00,Hajduk Split,Slaven Belupo,4,0,1,1-0,2023-24_hr1.txt
+17.10,HNK Gorica,HNK Rijeka,0,2,2,0-0,2023-24_hr1.txt
+17.00,Slaven Belupo,NK Istra 1961,1,1,X,0-1,2023-24_hr1.txt
+15.00,HNK Rijeka,Lokomotiva Zagreb,4,0,1,2-0,2023-24_hr1.txt
+,,Hajduk Split,0,2,2,0-0,2023-24_hr1.txt
+15.00,NK Osijek,HNK Gorica,3,0,1,0-0,2023-24_hr1.txt
+17.00,Lokomotiva Zagreb,NK Osijek,1,1,X,1-0,2023-24_hr1.txt
+,din,Hajduk Split,1,1,X,1-0,2023-24_hr1.txt
+15.00,Dinamo Zagreb,HNK Rijeka,1,0,1,0-0,2023-24_hr1.txt
+17.30,HNK Gorica,Slaven Belupo,1,0,1,0-0,2023-24_hr1.txt
+15.00,Slaven Belupo,Lokomotiva Zagreb,2,3,2,0-2,2023-24_hr1.txt
+17.10,Hajduk Split,NK Istra 1961,1,0,1,0-0,2023-24_hr1.txt
+17.30,NK Osijek,Dinamo Zagreb,1,1,X,1-0,2023-24_hr1.txt
+,,HNK Gorica,2,1,1,1-1,2023-24_hr1.txt
+,din,NK Istra 1961,2,2,X,2-1,2023-24_hr1.txt
+17.10,HNK Gorica,Hajduk Split,0,3,2,0-3,2023-24_hr1.txt
+15.00,HNK Rijeka,NK Osijek,3,0,1,2-0,2023-24_hr1.txt
+17.30,Dinamo Zagreb,Slaven Belupo,5,2,1,2-1,2023-24_hr1.txt
+15.00,Slaven Belupo,HNK Rijeka,0,1,2,0-0,2023-24_hr1.txt
+17.10,Hajduk Split,Lokomotiva Zagreb,1,2,2,0-1,2023-24_hr1.txt
+15.00,NK Istra 1961,HNK Gorica,0,0,X,,2023-24_hr1.txt
+,,Dinamo Zagreb,0,3,2,0-0,2023-24_hr1.txt
+15.50,NK Istra 1961,Lokomotiva Zagreb,0,0,X,,2023-24_hr1.txt
+18.00,Slaven Belupo,NK Osijek,0,1,2,0-1,2023-24_hr1.txt
+,din,HNK Gorica,2,4,2,1-2,2023-24_hr1.txt
+,,HNK Rijeka,0,3,2,0-1,2023-24_hr1.txt
+19.30,Hajduk Split,Dinamo Zagreb,0,1,2,0-1,2023-24_hr1.txt
+,,NK Osijek,2,3,2,1-1,2023-24_hr1.txt
+16.50,Lokomotiva Zagreb,HNK Gorica,1,1,X,1-0,2023-24_hr1.txt
+17.00,Dinamo Zagreb,NK Istra 1961,4,1,1,2-1,2023-24_hr1.txt
+19.30,HNK Rijeka,Hajduk Split,1,0,1,0-0,2023-24_hr1.txt
+,,Slaven Belupo,1,3,2,1-0,2023-24_hr1.txt
+,din,Lokomotiva Zagreb,0,2,2,0-1,2023-24_hr1.txt
+19.00,HNK Gorica,Dinamo Zagreb,0,2,2,0-1,2023-24_hr1.txt
+16.30,Hajduk Split,NK Osijek,1,2,2,1-2,2023-24_hr1.txt
+19.00,NK Istra 1961,HNK Rijeka,0,2,2,0-1,2023-24_hr1.txt
+17.00,NK Osijek,NK Istra 1961,1,2,2,1-1,2023-24_hr1.txt
+19.10,Slaven Belupo,Hajduk Split,0,1,2,0-1,2023-24_hr1.txt
+17.00,Lokomotiva Zagreb,Dinamo Zagreb,0,1,2,0-0,2023-24_hr1.txt
+19.30,HNK Rijeka,HNK Gorica,3,0,1,0-0,2023-24_hr1.txt
+18.00,NK Istra 1961,Slaven Belupo,3,0,1,3-0,2023-24_hr1.txt
+,din,Dinamo Zagreb,0,1,2,0-0,2023-24_hr1.txt
+17.00,HNK Gorica,NK Osijek,0,3,2,0-1,2023-24_hr1.txt
+19.30,Lokomotiva Zagreb,HNK Rijeka,3,1,1,2-0,2023-24_hr1.txt
+,,NK Istra 1961,1,3,2,1-1,2023-24_hr1.txt
+17.00,Slaven Belupo,HNK Gorica,4,1,1,1-1,2023-24_hr1.txt
+19.30,NK Osijek,Lokomotiva Zagreb,3,1,1,0-0,2023-24_hr1.txt
+19.30,HNK Rijeka,Dinamo Zagreb,1,2,2,0-0,2023-24_hr1.txt
+,din,HNK Rijeka,3,1,1,2-1,2023-24_hr1.txt
+19.30,Dinamo Zagreb,NK Osijek,1,0,1,0-0,2023-24_hr1.txt
+17.00,Lokomotiva Zagreb,Slaven Belupo,2,1,1,0-1,2023-24_hr1.txt
+19.10,NK Istra 1961,Hajduk Split,1,1,X,1-1,2023-24_hr1.txt
+,,Lokomotiva Zagreb,3,3,X,0-3,2023-24_hr1.txt
+19.10,Slaven Belupo,Dinamo Zagreb,2,3,2,1-0,2023-24_hr1.txt
+17.00,Hajduk Split,HNK Gorica,2,1,1,1-1,2023-24_hr1.txt
+19.30,NK Osijek,HNK Rijeka,2,0,1,1-0,2023-24_hr1.txt
+18.00,HNK Gorica,NK Istra 1961,2,0,1,0-0,2023-24_hr1.txt
+,din,NK Osijek,0,2,2,0-0,2023-24_hr1.txt
+19.10,Lokomotiva Zagreb,Hajduk Split,2,5,2,0-2,2023-24_hr1.txt
+15.00,HNK Rijeka,Slaven Belupo,4,0,1,2-0,2023-24_hr1.txt
+21.00,Dinamo Zagreb,NK Istra 1961,5,0,1,3-0,2024-25_hr1.txt
+18.50,HNK Rijeka,Lokomotiva Zagreb,4,0,1,2-0,2024-25_hr1.txt
+21.00,Hajduk Split,Slaven Belupo,2,1,1,2-1,2024-25_hr1.txt
+,ibenik,Slaven Belupo,2,0,1,2-0,2024-25_hr1.txt
+21.00,NK Istra 1961,HNK Gorica,2,1,1,0-0,2024-25_hr1.txt
+18.30,Lokomotiva Zagreb,Hajduk Split,1,1,X,0-0,2024-25_hr1.txt
+21.00,NK Osijek,Dinamo Zagreb,1,2,2,1-1,2024-25_hr1.txt
+,din,HNK Rijeka,0,0,X,,2024-25_hr1.txt
+21.00,Slaven Belupo,Lokomotiva Zagreb,2,2,X,1-2,2024-25_hr1.txt
+21.00,HNK Gorica,NK Osijek,2,2,X,1-0,2024-25_hr1.txt
+,HNK Rijeka,NK Istra 1961,4,0,1,3-0,2024-25_hr1.txt
+,din,Slaven Belupo,2,0,1,0-0,2024-25_hr1.txt
+20.30,Dinamo Zagreb,HNK Gorica,2,1,1,1-0,2024-25_hr1.txt
+18.15,NK Istra 1961,Hajduk Split,1,1,X,1-0,2024-25_hr1.txt
+20.45,NK Osijek,HNK Rijeka,0,2,2,0-1,2024-25_hr1.txt
+18.15,Slaven Belupo,NK Istra 1961,0,1,2,0-1,2024-25_hr1.txt
+20.45,Hajduk Split,NK Osijek,1,0,1,0-0,2024-25_hr1.txt
+20.45,HNK Rijeka,Dinamo Zagreb,1,1,X,0-1,2024-25_hr1.txt
+20.00,Dinamo Zagreb,Hajduk Split,0,1,2,0-0,2024-25_hr1.txt
+17.30,NK Istra 1961,Lokomotiva Zagreb,0,2,2,0-1,2024-25_hr1.txt
+20.00,HNK Gorica,HNK Rijeka,0,1,2,0-0,2024-25_hr1.txt
+17.30,NK Osijek,Slaven Belupo,1,0,1,1-0,2024-25_hr1.txt
+,din,NK Istra 1961,1,0,1,0-0,2024-25_hr1.txt
+17.30,Slaven Belupo,Dinamo Zagreb,4,1,1,1-1,2024-25_hr1.txt
+20.00,Hajduk Split,HNK Gorica,4,1,1,1-1,2024-25_hr1.txt
+17.30,Lokomotiva Zagreb,NK Osijek,0,1,2,0-1,2024-25_hr1.txt
+,ibenik,NK Istra 1961,0,0,X,,2024-25_hr1.txt
+20.00,Dinamo Zagreb,Lokomotiva Zagreb,5,1,1,2-0,2024-25_hr1.txt
+20.00,HNK Rijeka,Hajduk Split,0,0,X,,2024-25_hr1.txt
+16.00,HNK Gorica,Slaven Belupo,2,1,1,1-1,2024-25_hr1.txt
+18.00,NK Istra 1961,NK Osijek,2,1,1,2-0,2024-25_hr1.txt
+16.00,Lokomotiva Zagreb,HNK Gorica,2,0,1,1-0,2024-25_hr1.txt
+18.30,Slaven Belupo,HNK Rijeka,0,0,X,,2024-25_hr1.txt
+,din,Dinamo Zagreb,0,1,2,0-1,2024-25_hr1.txt
+18.00,Lokomotiva Zagreb,HNK Rijeka,2,2,X,1-1,2024-25_hr1.txt
+,ibenik,NK Osijek,1,3,2,1-1,2024-25_hr1.txt
+18.30,NK Istra 1961,Dinamo Zagreb,2,2,X,1-0,2024-25_hr1.txt
+16.00,Slaven Belupo,Hajduk Split,0,2,2,0-2,2024-25_hr1.txt
+,din,HNK Gorica,2,1,1,1-0,2024-25_hr1.txt
+16.00,Hajduk Split,Lokomotiva Zagreb,2,1,1,1-1,2024-25_hr1.txt
+16.00,Dinamo Zagreb,NK Osijek,2,4,2,1-2,2024-25_hr1.txt
+18.30,HNK Gorica,NK Istra 1961,1,0,1,0-0,2024-25_hr1.txt
+,ibenik,Dinamo Zagreb,0,4,2,0-2,2024-25_hr1.txt
+15.00,Lokomotiva Zagreb,Slaven Belupo,0,1,2,0-1,2024-25_hr1.txt
+17.30,NK Osijek,HNK Gorica,2,0,1,1-0,2024-25_hr1.txt
+15.00,NK Istra 1961,HNK Rijeka,0,1,2,0-0,2024-25_hr1.txt
+,din,Hajduk Split,1,0,1,1-0,2024-25_hr1.txt
+,ibenik,Lokomotiva Zagreb,0,3,2,0-0,2024-25_hr1.txt
+15.00,HNK Gorica,Dinamo Zagreb,2,2,X,1-1,2024-25_hr1.txt
+17.30,Hajduk Split,NK Istra 1961,1,1,X,0-0,2024-25_hr1.txt
+17.45,HNK Rijeka,NK Osijek,1,1,X,0-0,2024-25_hr1.txt
+18.00,NK Istra 1961,Slaven Belupo,2,3,2,1-1,2024-25_hr1.txt
+,din,Lokomotiva Zagreb,1,1,X,0-1,2024-25_hr1.txt
+17.45,Dinamo Zagreb,HNK Rijeka,0,0,X,,2024-25_hr1.txt
+15.00,NK Osijek,Hajduk Split,2,2,X,1-1,2024-25_hr1.txt
+,ibenik,HNK Gorica,1,0,1,1-0,2024-25_hr1.txt
+15.00,Slaven Belupo,NK Osijek,3,2,1,1-1,2024-25_hr1.txt
+17.30,HNK Rijeka,HNK Gorica,1,0,1,0-0,2024-25_hr1.txt
+15.00,Lokomotiva Zagreb,NK Istra 1961,1,2,2,0-2,2024-25_hr1.txt
+17.45,Hajduk Split,Dinamo Zagreb,1,0,1,0-0,2024-25_hr1.txt
+18.00,Dinamo Zagreb,Slaven Belupo,1,1,X,1-0,2024-25_hr1.txt
+17.30,HNK Gorica,Hajduk Split,1,0,1,0-0,2024-25_hr1.txt
+,ibenik,HNK Rijeka,0,1,2,0-1,2024-25_hr1.txt
+17.30,NK Osijek,Lokomotiva Zagreb,3,0,1,2-0,2024-25_hr1.txt
+18.00,Slaven Belupo,HNK Gorica,2,1,1,0-1,2024-25_hr1.txt
+15.00,Lokomotiva Zagreb,Dinamo Zagreb,3,1,1,3-1,2024-25_hr1.txt
+,din,NK Osijek,0,0,X,,2024-25_hr1.txt
+17.45,Hajduk Split,HNK Rijeka,2,2,X,2-1,2024-25_hr1.txt
+18.00,NK Osijek,NK Istra 1961,2,2,X,0-1,2024-25_hr1.txt
+15.00,HNK Gorica,Lokomotiva Zagreb,1,4,2,1-1,2024-25_hr1.txt
+15.00,HNK Rijeka,Slaven Belupo,2,0,1,0-0,2024-25_hr1.txt
+,ibenik,Hajduk Split,1,2,2,0-0,2024-25_hr1.txt
+17.30,Dinamo Zagreb,NK Istra 1961,3,1,1,1-1,2024-25_hr1.txt
+15.00,HNK Rijeka,Lokomotiva Zagreb,4,1,1,2-0,2024-25_hr1.txt
+17.30,Hajduk Split,Slaven Belupo,0,0,X,,2024-25_hr1.txt
+17.00,NK Istra 1961,HNK Gorica,0,0,X,,2024-25_hr1.txt
+,ibenik,Slaven Belupo,1,1,X,0-1,2024-25_hr1.txt
+,din,HNK Rijeka,1,0,1,1-0,2024-25_hr1.txt
+12.50,Lokomotiva Zagreb,Hajduk Split,3,2,1,2-1,2024-25_hr1.txt
+15.00,NK Osijek,Dinamo Zagreb,2,1,1,1-0,2024-25_hr1.txt
+15.00,HNK Gorica,NK Osijek,1,0,1,0-0,2024-25_hr1.txt
+15.00,HNK Rijeka,NK Istra 1961,0,1,2,0-1,2024-25_hr1.txt
+17.45,Slaven Belupo,Lokomotiva Zagreb,2,1,1,1-1,2024-25_hr1.txt
+,ibenik,Lokomotiva Zagreb,1,2,2,0-0,2024-25_hr1.txt
+15.00,NK Istra 1961,Hajduk Split,1,1,X,1-1,2024-25_hr1.txt
+17.30,Dinamo Zagreb,HNK Gorica,3,1,1,1-1,2024-25_hr1.txt
+,din,Slaven Belupo,0,1,2,0-1,2024-25_hr1.txt
+17.45,NK Osijek,HNK Rijeka,0,2,2,0-2,2024-25_hr1.txt
+15.00,Hajduk Split,NK Osijek,4,0,1,3-0,2024-25_hr1.txt
+17.45,HNK Rijeka,Dinamo Zagreb,4,0,1,3-0,2024-25_hr1.txt
+17.30,Slaven Belupo,NK Istra 1961,0,0,X,,2024-25_hr1.txt
+18.00,NK Istra 1961,Lokomotiva Zagreb,3,2,1,3-1,2024-25_hr1.txt
+15.00,HNK Gorica,HNK Rijeka,0,0,X,,2024-25_hr1.txt
+17.30,NK Osijek,Slaven Belupo,1,2,2,1-0,2024-25_hr1.txt
+15.00,Dinamo Zagreb,Hajduk Split,2,2,X,1-1,2024-25_hr1.txt
+,din,NK Istra 1961,0,0,X,,2024-25_hr1.txt
+17.30,Lokomotiva Zagreb,NK Osijek,3,0,1,1-0,2024-25_hr1.txt
+15.00,Hajduk Split,HNK Gorica,2,1,1,1-0,2024-25_hr1.txt
+17.30,Slaven Belupo,Dinamo Zagreb,0,1,2,0-1,2024-25_hr1.txt
+18.00,HNK Gorica,Slaven Belupo,0,3,2,0-2,2024-25_hr1.txt
+,ibenik,NK Istra 1961,1,0,1,1-0,2024-25_hr1.txt
+17.30,Dinamo Zagreb,Lokomotiva Zagreb,3,0,1,2-0,2024-25_hr1.txt
+17.45,HNK Rijeka,Hajduk Split,3,0,1,2-0,2024-25_hr1.txt
+18.00,Lokomotiva Zagreb,HNK Gorica,1,1,X,1-1,2024-25_hr1.txt
+16.00,NK Istra 1961,NK Osijek,2,1,1,1-0,2024-25_hr1.txt
+18.45,Slaven Belupo,HNK Rijeka,2,1,1,0-1,2024-25_hr1.txt
+,din,Dinamo Zagreb,1,1,X,0-0,2024-25_hr1.txt
+,din,HNK Gorica,0,0,X,,2024-25_hr1.txt
+16.00,Slaven Belupo,Hajduk Split,0,1,2,0-1,2024-25_hr1.txt
+18.45,NK Istra 1961,Dinamo Zagreb,3,0,1,1-0,2024-25_hr1.txt
+16.00,Lokomotiva Zagreb,HNK Rijeka,0,1,2,0-0,2024-25_hr1.txt
+,ibenik,NK Osijek,4,1,1,2-0,2024-25_hr1.txt
+16.00,HNK Gorica,NK Istra 1961,3,2,1,2-2,2024-25_hr1.txt
+18.45,Dinamo Zagreb,NK Osijek,2,0,1,1-0,2024-25_hr1.txt
+18.45,Hajduk Split,Lokomotiva Zagreb,1,1,X,0-1,2024-25_hr1.txt
+,ibenik,Dinamo Zagreb,0,4,2,0-1,2024-25_hr1.txt
+16.00,Lokomotiva Zagreb,Slaven Belupo,0,2,2,0-0,2024-25_hr1.txt
+,din,Hajduk Split,1,1,X,1-0,2024-25_hr1.txt
+16.00,NK Osijek,HNK Gorica,0,1,2,0-1,2024-25_hr1.txt
+18.45,NK Istra 1961,HNK Rijeka,2,0,1,1-0,2024-25_hr1.txt
+15.00,HNK Gorica,Dinamo Zagreb,1,0,1,0-0,2024-25_hr1.txt
+17.30,Hajduk Split,NK Istra 1961,0,1,2,0-1,2024-25_hr1.txt
+20.00,HNK Rijeka,NK Osijek,0,2,2,0-1,2024-25_hr1.txt
+,din,Lokomotiva Zagreb,2,1,1,0-1,2024-25_hr1.txt
+16.00,NK Osijek,Hajduk Split,2,0,1,0-0,2024-25_hr1.txt
+18.45,Dinamo Zagreb,HNK Rijeka,1,0,1,1-0,2024-25_hr1.txt
+17.00,NK Istra 1961,Slaven Belupo,1,1,X,1-1,2024-25_hr1.txt
+,ibenik,HNK Gorica,0,0,X,,2024-25_hr1.txt
+16.00,Hajduk Split,Dinamo Zagreb,1,3,2,0-0,2024-25_hr1.txt
+18.45,Lokomotiva Zagreb,NK Istra 1961,0,0,X,,2024-25_hr1.txt
+16.00,Slaven Belupo,NK Osijek,1,4,2,0-3,2024-25_hr1.txt
+18.15,HNK Rijeka,HNK Gorica,2,1,1,2-0,2024-25_hr1.txt
+18.00,NK Osijek,Lokomotiva Zagreb,1,1,X,1-0,2024-25_hr1.txt
+,ibenik,HNK Rijeka,0,1,2,0-0,2024-25_hr1.txt
+19.45,Dinamo Zagreb,Slaven Belupo,5,0,1,3-0,2024-25_hr1.txt
+16.00,HNK Gorica,Hajduk Split,1,1,X,0-0,2024-25_hr1.txt
+,din,NK Osijek,2,1,1,2-1,2024-25_hr1.txt
+19.15,Lokomotiva Zagreb,Dinamo Zagreb,1,1,X,0-1,2024-25_hr1.txt
+16.00,Slaven Belupo,HNK Gorica,4,0,1,2-0,2024-25_hr1.txt
+18.45,Hajduk Split,HNK Rijeka,2,1,1,1-0,2024-25_hr1.txt
+19.15,HNK Gorica,Lokomotiva Zagreb,0,3,2,0-1,2024-25_hr1.txt
+,HNK Rijeka,Slaven Belupo,2,0,1,1-0,2024-25_hr1.txt
+,NK Osijek,NK Istra 1961,1,1,X,0-1,2024-25_hr1.txt
+,ibenik,Hajduk Split,0,1,2,0-0,2024-25_hr1.txt

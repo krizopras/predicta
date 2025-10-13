@@ -1,0 +1,27 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Argentina,Uruguay,2,1,1,Buenos Aires,Argentina,1906_copa_newton.txt
+Argentina,Uruguay,2,1,1,Buenos Aires,Argentina,1908_copa_newton.txt
+Uruguay,Argentina,2,2,X,Montevideo,Uruguay,1909_copa_newton.txt
+Uruguay,Argentina,2,3,2,Montevideo,Uruguay,1911_copa_newton.txt
+Argentina,Uruguay,3,3,X,Avellaneda,Argentina,1912_copa_newton.txt
+Uruguay,Argentina,1,0,1,Montevideo,Uruguay,1913_copa_newton.txt
+Uruguay,Argentina,2,0,1,Montevideo,Uruguay,1915_copa_newton.txt
+Argentina,Uruguay,3,1,1,Avellaneda,Argentina,1916_copa_newton.txt
+Uruguay,Argentina,1,0,1,Montevideo,Uruguay,1917_copa_newton.txt
+Argentina,Uruguay,2,0,1,Buenos Aires,Argentina,1918_copa_newton.txt
+Uruguay,Argentina,2,1,1,Montevideo,Uruguay,1919_copa_newton.txt
+Argentina,Uruguay,1,3,2,Buenos Aires,Argentina,1920_copa_newton.txt
+Argentina,Uruguay,2,2,X,Buenos Aires,Argentina,1922_copa_newton.txt
+Argentina,Uruguay,4,0,1,Buenos Aires,Argentina,1924_copa_newton.txt
+Uruguay,Argentina,0,1,2,Montevideo,Uruguay,1927_copa_newton.txt
+Argentina,Uruguay,1,0,1,Avellaneda,Argentina,1928_copa_newton.txt
+Uruguay,Argentina,2,1,1,Montevideo,Uruguay,1929_copa_newton.txt
+Argentina,Uruguay,1,1,X,Buenos Aires,Argentina,1930_copa_newton.txt
+Uruguay,Argentina,0,3,2,Montevideo,Uruguay,1937_copa_newton.txt
+Argentina,Uruguay,4,1,1,Buenos Aires,Argentina,1942_copa_newton.txt
+Argentina,Uruguay,6,2,1,Buenos Aires,Argentina,1945_copa_newton.txt
+Uruguay,Argentina,0,0,X,Montevideo,Uruguay,1957_copa_newton.txt
+Uruguay,Argentina,2,1,1,Montevideo,Uruguay,1968_copa_newton.txt
+Uruguay,Argentina,1,1,X,Montevideo,Uruguay,1973_copa_newton.txt
+Uruguay,Argentina,2,3,2,Montevideo,Uruguay,1975_copa_newton.txt
+Uruguay,Argentina,0,3,2,Montevideo,Uruguay,1976_copa_newton.txt

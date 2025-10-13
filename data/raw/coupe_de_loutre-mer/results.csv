@@ -1,0 +1,43 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Tahiti,New Caledonia,0,1,2,La Courneuve,France,2008_coupe_de_loutre-mer.txt
+Guadeloupe,Martinique,0,1,2,La Courneuve,France,2008_coupe_de_loutre-mer.txt
+Mayotte,Réunion,1,6,2,Franconville,France,2008_coupe_de_loutre-mer.txt
+New Caledonia,Guadeloupe,0,4,2,Melun,France,2008_coupe_de_loutre-mer.txt
+Tahiti,Martinique,0,1,2,Melun,France,2008_coupe_de_loutre-mer.txt
+French Guiana,Mayotte,4,2,1,Bonneuil-sur-Marne,France,2008_coupe_de_loutre-mer.txt
+Tahiti,Guadeloupe,0,1,2,Colombes,France,2008_coupe_de_loutre-mer.txt
+New Caledonia,Martinique,1,1,X,Poissy,France   [Martinique wins on penalties],2008_coupe_de_loutre-mer.txt
+French Guiana,Réunion,0,2,2,Viry-Châtillon,France,2008_coupe_de_loutre-mer.txt
+New Caledonia,Mayotte,3,2,1,La Courneuve,France,2008_coupe_de_loutre-mer.txt
+Guadeloupe,French Guiana,4,0,1,La Courneuve,France,2008_coupe_de_loutre-mer.txt
+Martinique,Réunion,0,1,2,Val-de-Marne,France,2008_coupe_de_loutre-mer.txt
+Réunion,Saint Pierre and Miquelon,11,0,1,Val-d'Oise,France,2010_coupe_de_loutre-mer.txt
+French Guiana,Mayotte,2,2,X,Val-d'Oise,France   [Mayotte wins on penalties],2010_coupe_de_loutre-mer.txt
+Martinique,Tahiti,4,1,1,Val-de-Marne,France,2010_coupe_de_loutre-mer.txt
+Guadeloupe,New Caledonia,1,1,X,Val-de-Marne,France   [New Caledonia wins on penalties],2010_coupe_de_loutre-mer.txt
+Mayotte,Réunion,1,2,2,Hauts de Seine,France,2010_coupe_de_loutre-mer.txt
+French Guiana,Saint Pierre and Miquelon,7,0,1,Hauts de Seine,France,2010_coupe_de_loutre-mer.txt
+New Caledonia,Martinique,0,4,2,Essonne,France,2010_coupe_de_loutre-mer.txt
+Guadeloupe,Tahiti,1,1,X,Essonne,France   [Tahiti wins on penalties],2010_coupe_de_loutre-mer.txt
+French Guiana,Réunion,0,1,2,Saint-Denis,France,2010_coupe_de_loutre-mer.txt
+Mayotte,Saint Pierre and Miquelon,10,0,1,Val-d'Oise,France,2010_coupe_de_loutre-mer.txt
+Guadeloupe,Martinique,2,0,1,Val-de-Marne,France,2010_coupe_de_loutre-mer.txt
+New Caledonia,Tahiti,1,1,X,Essonne,France   [Tahiti wins on penalties],2010_coupe_de_loutre-mer.txt
+Mayotte,Guadeloupe,0,4,2,Saint-Denis,France,2010_coupe_de_loutre-mer.txt
+Réunion,Martinique,0,0,X,Val-de-Marne,France   [Martinique wins on penalties],2010_coupe_de_loutre-mer.txt
+Guadeloupe,Saint Pierre and Miquelon,13,0,1,Versailles,France,2012_coupe_de_loutre-mer.txt
+Réunion,French Guiana,2,0,1,Versailles,France,2012_coupe_de_loutre-mer.txt
+Tahiti,Mayotte,1,3,2,Issy-les-Moulineaux,France,2012_coupe_de_loutre-mer.txt
+Martinique,New Caledonia,2,0,1,Issy-les-Moulineaux,France,2012_coupe_de_loutre-mer.txt
+Réunion,Saint Pierre and Miquelon,10,0,1,Saint-Ouen,France,2012_coupe_de_loutre-mer.txt
+Guadeloupe,French Guiana,4,2,1,Saint-Ouen,France,2012_coupe_de_loutre-mer.txt
+New Caledonia,Mayotte,0,2,2,Corbeil-Essonnes,France,2012_coupe_de_loutre-mer.txt
+Martinique,Tahiti,2,3,2,Corbeil-Essonnes,France,2012_coupe_de_loutre-mer.txt
+Réunion,Guadeloupe,2,1,1,Franconville,France,2012_coupe_de_loutre-mer.txt
+French Guiana,Saint Pierre and Miquelon,11,1,1,Saint-Ouen-l'Aumône,France,2012_coupe_de_loutre-mer.txt
+New Caledonia,Tahiti,0,1,2,Franconville,France,2012_coupe_de_loutre-mer.txt
+Martinique,Mayotte,3,0,1,Saint-Ouen-l'Aumône,France,2012_coupe_de_loutre-mer.txt
+Saint Pierre and Miquelon,New Caledonia,1,16,2,Clairefontaine-en-Yvelines,France,2012_coupe_de_loutre-mer.txt
+French Guiana,Tahiti,2,1,1,Clairefontaine-en-Yvelines,France,2012_coupe_de_loutre-mer.txt
+Guadeloupe,Mayotte,1,0,1,Saint-Gratien,France,2012_coupe_de_loutre-mer.txt
+Réunion,Martinique,2,2,X,Saint-Gratien,France   [Réunion wins on penalties],2012_coupe_de_loutre-mer.txt

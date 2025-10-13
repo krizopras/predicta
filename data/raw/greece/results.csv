@@ -1,0 +1,1197 @@
+time,home_team,away_team,home_score,away_score,result,ht_score,source_file
+19.15,Panetolikos,Atromitos,1,2,2,1-1,2018-19_gr1.txt
+,PAOK Saloniki,Asteras Tripolis,1,0,1,0-0,2018-19_gr1.txt
+21.30,AEK Athen,PAS Giannina,2,0,1,1-0,2018-19_gr1.txt
+,Apollon Smyrnis,AE Lárissa,0,1,2,0-1,2018-19_gr1.txt
+19.15,Xanthi FC,Panathinaikos,0,1,2,0-0,2018-19_gr1.txt
+,Panionios GSS,OFI Heraklion,2,2,X,2-2,2018-19_gr1.txt
+21.30,Olympiakos Piraeus,Levadiakos,1,0,1,0-0,2018-19_gr1.txt
+21.30,Lamia,Aris Saloniki,0,3,2,0-0,2018-19_gr1.txt
+19.15,Panathinaikos,Lamia,3,1,1,1-1,2018-19_gr1.txt
+21.30,Asteras Tripolis,AEK Athen,0,1,2,0-1,2018-19_gr1.txt
+,Atromitos,Xanthi FC,0,0,X,,2018-19_gr1.txt
+19.15,Aris Saloniki,AE Lárissa,2,0,1,0-0,2018-19_gr1.txt
+,Panionios GSS,PAOK Saloniki,0,1,2,0-0,2018-19_gr1.txt
+21.30,Olympiakos Piraeus,PAS Giannina,5,0,1,2-0,2018-19_gr1.txt
+21.30,Levadiakos,Apollon Smyrnis,1,0,1,0-0,2018-19_gr1.txt
+,Panetolikos,OFI Heraklion,2,1,1,1-0,2018-19_gr1.txt
+18.15,OFI Heraklion,PAOK Saloniki,1,3,2,1-2,2018-19_gr1.txt
+19.00,Apollon Smyrnis,PAS Giannina,1,2,2,0-1,2018-19_gr1.txt
+20.30,AEK Athen,Panionios GSS,4,0,1,1-0,2018-19_gr1.txt
+17.00,Xanthi FC,Panetolikos,1,1,X,1-1,2018-19_gr1.txt
+18.15,AE Lárissa,Panathinaikos,1,3,2,0-1,2018-19_gr1.txt
+20.00,Atromitos,Lamia,1,0,1,1-0,2018-19_gr1.txt
+20.30,Olympiakos Piraeus,Asteras Tripolis,2,1,1,1-0,2018-19_gr1.txt
+19.00,Aris Saloniki,Levadiakos,2,0,1,1-0,2018-19_gr1.txt
+18.15,Asteras Tripolis,Apollon Smyrnis,2,0,1,2-0,2018-19_gr1.txt
+19.00,Atromitos,AE Lárissa,2,0,1,0-0,2018-19_gr1.txt
+20.30,PAS Giannina,Aris Saloniki,1,0,1,0-0,2018-19_gr1.txt
+16.00,Xanthi FC,OFI Heraklion,3,0,1,2-0,2018-19_gr1.txt
+19.00,Panathinaikos,Levadiakos,3,0,1,2-0,2018-19_gr1.txt
+20.30,PAOK Saloniki,AEK Athen,2,0,1,1-0,2018-19_gr1.txt
+19.00,Panetolikos,Lamia,2,2,X,1-0,2018-19_gr1.txt
+19.30,Panionios GSS,Olympiakos Piraeus,0,1,2,0-0,2018-19_gr1.txt
+18.15,AE Lárissa,Panetolikos,1,0,1,1-0,2018-19_gr1.txt
+19.00,Panathinaikos,PAS Giannina,2,1,1,1-1,2018-19_gr1.txt
+20.30,OFI Heraklion,AEK Athen,0,3,2,0-2,2018-19_gr1.txt
+16.00,Apollon Smyrnis,Panionios GSS,0,2,2,0-1,2018-19_gr1.txt
+18.15,Levadiakos,Atromitos,0,2,2,0-0,2018-19_gr1.txt
+19.00,Aris Saloniki,Asteras Tripolis,2,0,1,0-0,2018-19_gr1.txt
+20.30,Olympiakos Piraeus,PAOK Saloniki,0,1,2,0-0,2018-19_gr1.txt
+19.00,Lamia,Xanthi FC,0,0,X,,2018-19_gr1.txt
+18.15,Panionios GSS,Aris Saloniki,1,0,1,1-0,2018-19_gr1.txt
+19.00,Panetolikos,Levadiakos,2,1,1,0-0,2018-19_gr1.txt
+20.30,Asteras Tripolis,Panathinaikos,1,1,X,0-0,2018-19_gr1.txt
+16.00,Lamia,OFI Heraklion,1,1,X,0-0,2018-19_gr1.txt
+18.15,PAOK Saloniki,Apollon Smyrnis,2,0,1,1-0,2018-19_gr1.txt
+19.00,Atromitos,PAS Giannina,1,0,1,1-0,2018-19_gr1.txt
+20.30,AEK Athen,Olympiakos Piraeus,1,1,X,0-0,2018-19_gr1.txt
+19.00,Xanthi FC,AE Lárissa,1,0,1,0-0,2018-19_gr1.txt
+16.00,Panathinaikos,Panionios GSS,1,0,1,0-0,2018-19_gr1.txt
+18.15,PAS Giannina,Panetolikos,0,2,2,0-1,2018-19_gr1.txt
+19.00,Apollon Smyrnis,AEK Athen,0,2,2,0-1,2018-19_gr1.txt
+20.30,AE Lárissa,Lamia,1,2,2,1-0,2018-19_gr1.txt
+18.15,Levadiakos,Xanthi FC,1,2,2,0-1,2018-19_gr1.txt
+19.00,Aris Saloniki,PAOK Saloniki,1,2,2,1-1,2018-19_gr1.txt
+20.30,OFI Heraklion,Olympiakos Piraeus,1,0,1,1-0,2018-19_gr1.txt
+19.00,Atromitos,Asteras Tripolis,3,2,1,1-0,2018-19_gr1.txt
+17.15,AE Lárissa,OFI Heraklion,0,0,X,,2018-19_gr1.txt
+19.00,Lamia,Levadiakos,3,2,1,2-0,2018-19_gr1.txt
+17.15,Panionios GSS,Atromitos,2,2,X,1-1,2018-19_gr1.txt
+19.00,Panetolikos,Asteras Tripolis,1,1,X,0-0,2018-19_gr1.txt
+19.30,AEK Athen,Aris Saloniki,4,0,1,1-0,2018-19_gr1.txt
+19.00,Xanthi FC,PAS Giannina,2,1,1,0-1,2018-19_gr1.txt
+19.30,Olympiakos Piraeus,Apollon Smyrnis,1,0,1,0-0,2018-19_gr1.txt
+21.30,PAOK Saloniki,Panathinaikos,2,0,1,0-0,2018-19_gr1.txt
+16.00,Atromitos,PAOK Saloniki,1,1,X,0-1,2018-19_gr1.txt
+17.15,Panionios GSS,Panetolikos,3,0,1,3-0,2018-19_gr1.txt
+19.00,Panathinaikos,AEK Athen,0,0,X,,2018-19_gr1.txt
+19.30,Levadiakos,AE Lárissa,1,1,X,0-1,2018-19_gr1.txt
+17.15,PAS Giannina,Lamia,0,0,X,,2018-19_gr1.txt
+19.00,Aris Saloniki,Olympiakos Piraeus,0,1,2,0-0,2018-19_gr1.txt
+19.30,OFI Heraklion,Apollon Smyrnis,0,0,X,,2018-19_gr1.txt
+19.30,Asteras Tripolis,Xanthi FC,0,1,2,0-0,2018-19_gr1.txt
+17.15,AE Lárissa,PAS Giannina,2,0,1,0-0,2018-19_gr1.txt
+19.00,Xanthi FC,Panionios GSS,0,1,2,0-1,2018-19_gr1.txt
+19.30,Levadiakos,OFI Heraklion,2,1,1,2-1,2018-19_gr1.txt
+15.00,AEK Athen,Atromitos,0,2,2,0-0,2018-19_gr1.txt
+17.15,PAOK Saloniki,Panetolikos,2,1,1,0-0,2018-19_gr1.txt
+19.00,Lamia,Asteras Tripolis,0,0,X,,2018-19_gr1.txt
+19.30,Olympiakos Piraeus,Panathinaikos,1,1,X,0-0,2018-19_gr1.txt
+19.00,Apollon Smyrnis,Aris Saloniki,1,2,2,1-1,2018-19_gr1.txt
+16.00,Panathinaikos,Apollon Smyrnis,5,1,1,2-0,2018-19_gr1.txt
+17.15,Asteras Tripolis,AE Lárissa,2,0,1,0-0,2018-19_gr1.txt
+19.00,Panetolikos,AEK Athen,2,1,1,1-0,2018-19_gr1.txt
+19.30,PAOK Saloniki,Xanthi FC,2,0,1,0-0,2018-19_gr1.txt
+17.15,PAS Giannina,Levadiakos,2,0,1,1-0,2018-19_gr1.txt
+19.00,Atromitos,Olympiakos Piraeus,1,2,2,1-0,2018-19_gr1.txt
+19.30,OFI Heraklion,Aris Saloniki,1,2,2,0-0,2018-19_gr1.txt
+19.30,Panionios GSS,Lamia,1,0,1,0-0,2018-19_gr1.txt
+17.15,AE Lárissa,Panionios GSS,4,2,1,1-1,2018-19_gr1.txt
+19.00,Apollon Smyrnis,Atromitos,1,1,X,1-1,2018-19_gr1.txt
+19.30,PAS Giannina,OFI Heraklion,1,1,X,0-0,2018-19_gr1.txt
+17.15,Levadiakos,Asteras Tripolis,0,2,2,0-0,2018-19_gr1.txt
+19.00,Aris Saloniki,Panathinaikos,1,1,X,1-0,2018-19_gr1.txt
+19.30,AEK Athen,Xanthi FC,2,0,1,1-0,2018-19_gr1.txt
+19.00,Lamia,PAOK Saloniki,0,1,2,0-0,2018-19_gr1.txt
+19.30,Olympiakos Piraeus,Panetolikos,2,1,1,2-0,2018-19_gr1.txt
+17.15,Asteras Tripolis,PAS Giannina,1,0,1,0-0,2018-19_gr1.txt
+19.30,AEK Athen,Lamia,2,0,1,1-0,2018-19_gr1.txt
+15.30,Xanthi FC,Olympiakos Piraeus,1,1,X,0-0,2018-19_gr1.txt
+17.15,OFI Heraklion,Panathinaikos,3,1,1,2-1,2018-19_gr1.txt
+19.00,Atromitos,Aris Saloniki,4,2,1,1-0,2018-19_gr1.txt
+19.30,PAOK Saloniki,AE Lárissa,2,1,1,1-1,2018-19_gr1.txt
+19.00,Panetolikos,Apollon Smyrnis,2,1,1,2-0,2018-19_gr1.txt
+19.30,Panionios GSS,Levadiakos,1,1,X,0-1,2018-19_gr1.txt
+17.15,PAS Giannina,Panionios GSS,3,1,1,0-0,2018-19_gr1.txt
+19.00,Aris Saloniki,Panetolikos,1,2,2,0-0,2018-19_gr1.txt
+19.30,Asteras Tripolis,OFI Heraklion,2,1,1,0-1,2018-19_gr1.txt
+16.00,Apollon Smyrnis,Xanthi FC,1,0,1,0-0,2018-19_gr1.txt
+17.15,AE Lárissa,AEK Athen,0,0,X,,2018-19_gr1.txt
+19.00,Panathinaikos,Atromitos,1,0,1,1-0,2018-19_gr1.txt
+19.30,Olympiakos Piraeus,Lamia,3,0,1,1-0,2018-19_gr1.txt
+19.30,Levadiakos,PAOK Saloniki,1,2,2,0-1,2018-19_gr1.txt
+15.00,Panionios GSS,Asteras Tripolis,1,0,1,1-0,2018-19_gr1.txt
+16.00,Lamia,Apollon Smyrnis,2,1,1,2-1,2018-19_gr1.txt
+17.15,AEK Athen,Levadiakos,1,0,1,1-0,2018-19_gr1.txt
+,PAOK Saloniki,PAS Giannina,2,1,1,1-0,2018-19_gr1.txt
+19.00,Panetolikos,Panathinaikos,0,1,2,0-1,2018-19_gr1.txt
+19.30,Olympiakos Piraeus,AE Lárissa,4,0,1,3-0,2018-19_gr1.txt
+17.15,OFI Heraklion,Atromitos,1,1,X,1-1,2018-19_gr1.txt
+19.00,Xanthi FC,Aris Saloniki,0,1,2,0-1,2018-19_gr1.txt
+17.15,AE Lárissa,Apollon Smyrnis,3,0,1,1-0,2018-19_gr1.txt
+19.00,Atromitos,Panetolikos,2,2,X,0-0,2018-19_gr1.txt
+19.30,OFI Heraklion,Panionios GSS,1,1,X,1-0,2018-19_gr1.txt
+17.15,Levadiakos,Olympiakos Piraeus,0,2,2,0-1,2018-19_gr1.txt
+19.00,Panathinaikos,Xanthi FC,2,2,X,0-1,2018-19_gr1.txt
+19.30,Asteras Tripolis,PAOK Saloniki,0,3,2,0-0,2018-19_gr1.txt
+19.00,Aris Saloniki,Lamia,1,0,1,0-0,2018-19_gr1.txt
+19.30,PAS Giannina,AEK Athen,0,4,2,0-4,2018-19_gr1.txt
+17.15,PAS Giannina,Olympiakos Piraeus,1,2,2,1-2,2018-19_gr1.txt
+19.00,Apollon Smyrnis,Levadiakos,0,0,X,,2018-19_gr1.txt
+19.30,PAOK Saloniki,Panionios GSS,3,0,1,2-0,2018-19_gr1.txt
+15.00,OFI Heraklion,Panetolikos,3,0,1,1-0,2018-19_gr1.txt
+17.15,AE Lárissa,Aris Saloniki,0,0,X,,2018-19_gr1.txt
+19.00,Xanthi FC,Atromitos,2,1,1,1-1,2018-19_gr1.txt
+19.30,AEK Athen,Asteras Tripolis,3,0,1,3-0,2018-19_gr1.txt
+19.00,Lamia,Panathinaikos,1,0,1,0-0,2018-19_gr1.txt
+17.15,PAS Giannina,Apollon Smyrnis,1,0,1,1-0,2018-19_gr1.txt
+19.00,Panetolikos,Xanthi FC,0,0,X,,2018-19_gr1.txt
+19.30,Panionios GSS,AEK Athen,0,2,2,0-1,2018-19_gr1.txt
+15.00,Levadiakos,Aris Saloniki,1,0,1,1-0,2018-19_gr1.txt
+16.00,Lamia,Atromitos,2,1,1,0-0,2018-19_gr1.txt
+17.15,PAOK Saloniki,OFI Heraklion,4,0,1,2-0,2018-19_gr1.txt
+19.00,Panathinaikos,AE Lárissa,1,1,X,1-0,2018-19_gr1.txt
+19.30,Asteras Tripolis,Olympiakos Piraeus,0,2,2,0-1,2018-19_gr1.txt
+19.00,Lamia,Panetolikos,0,2,2,0-1,2018-19_gr1.txt
+19.30,Olympiakos Piraeus,Panionios GSS,4,0,1,0-0,2018-19_gr1.txt
+15.00,OFI Heraklion,Xanthi FC,0,0,X,,2018-19_gr1.txt
+16.00,Apollon Smyrnis,Asteras Tripolis,0,2,2,0-1,2018-19_gr1.txt
+17.15,AE Lárissa,Atromitos,0,1,2,0-0,2018-19_gr1.txt
+,Levadiakos,Panathinaikos,0,0,X,,2018-19_gr1.txt
+19.00,Aris Saloniki,PAS Giannina,1,0,1,0-0,2018-19_gr1.txt
+19.30,AEK Athen,PAOK Saloniki,1,1,X,0-1,2018-19_gr1.txt
+17.15,Panionios GSS,Apollon Smyrnis,0,1,2,0-0,2018-19_gr1.txt
+19.00,Xanthi FC,Lamia,0,0,X,,2018-19_gr1.txt
+19.30,PAS Giannina,Panathinaikos,1,0,1,0-0,2018-19_gr1.txt
+15.00,AEK Athen,OFI Heraklion,1,0,1,1-0,2018-19_gr1.txt
+19.00,Atromitos,Levadiakos,1,0,1,1-0,2018-19_gr1.txt
+19.30,PAOK Saloniki,Olympiakos Piraeus,3,1,1,2-0,2018-19_gr1.txt
+19.00,Panetolikos,AE Lárissa,2,2,X,2-0,2018-19_gr1.txt
+19.30,Asteras Tripolis,Aris Saloniki,0,3,2,0-3,2018-19_gr1.txt
+19.00,Panathinaikos,Asteras Tripolis,1,0,1,1-0,2018-19_gr1.txt
+19.30,PAS Giannina,Atromitos,0,2,2,0-1,2018-19_gr1.txt
+15.00,AE Lárissa,Xanthi FC,1,1,X,1-1,2018-19_gr1.txt
+17.15,Levadiakos,Panetolikos,1,0,1,0-0,2018-19_gr1.txt
+18.00,Aris Saloniki,Panionios GSS,1,1,X,0-0,2018-19_gr1.txt
+19.30,Olympiakos Piraeus,AEK Athen,4,1,1,0-1,2018-19_gr1.txt
+19.00,Apollon Smyrnis,PAOK Saloniki,1,5,2,0-3,2018-19_gr1.txt
+19.30,OFI Heraklion,Lamia,1,3,2,0-0,2018-19_gr1.txt
+17.15,Asteras Tripolis,Atromitos,1,1,X,1-0,2018-19_gr1.txt
+19.30,AEK Athen,Apollon Smyrnis,2,1,1,1-1,2018-19_gr1.txt
+15.00,Panionios GSS,Panathinaikos,2,0,1,1-0,2018-19_gr1.txt
+16.00,Xanthi FC,Levadiakos,0,1,2,0-0,2018-19_gr1.txt
+19.00,Lamia,AE Lárissa,2,1,1,1-1,2018-19_gr1.txt
+19.30,PAOK Saloniki,Aris Saloniki,1,1,X,1-0,2018-19_gr1.txt
+17.15,Olympiakos Piraeus,OFI Heraklion,5,1,1,3-0,2018-19_gr1.txt
+19.00,Panetolikos,PAS Giannina,1,0,1,0-0,2018-19_gr1.txt
+19.00,Aris Saloniki,AEK Athen,2,0,1,1-0,2018-19_gr1.txt
+19.30,PAS Giannina,Xanthi FC,0,0,X,,2018-19_gr1.txt
+15.00,OFI Heraklion,AE Lárissa,0,0,X,,2018-19_gr1.txt
+16.00,Atromitos,Panionios GSS,3,0,1,2-0,2018-19_gr1.txt
+17.15,Levadiakos,Lamia,1,1,X,1-1,2018-19_gr1.txt
+19.00,Panathinaikos,PAOK Saloniki,0,2,2,0-1,2018-19_gr1.txt
+19.30,Asteras Tripolis,Panetolikos,3,0,1,2-0,2018-19_gr1.txt
+19.00,Apollon Smyrnis,Olympiakos Piraeus,0,2,2,0-1,2018-19_gr1.txt
+16.00,Xanthi FC,Asteras Tripolis,0,0,X,,2018-19_gr1.txt
+19.30,AEK Athen,Panathinaikos,0,0,X,,2018-19_gr1.txt
+15.00,AE Lárissa,Levadiakos,2,0,1,0-0,2018-19_gr1.txt
+16.00,Apollon Smyrnis,OFI Heraklion,0,0,X,,2018-19_gr1.txt
+17.15,PAOK Saloniki,Atromitos,3,0,1,2-0,2018-19_gr1.txt
+19.00,Lamia,PAS Giannina,1,1,X,0-0,2018-19_gr1.txt
+19.30,Olympiakos Piraeus,Aris Saloniki,4,1,1,2-0,2018-19_gr1.txt
+19.00,Panetolikos,Panionios GSS,5,0,1,3-0,2018-19_gr1.txt
+17.15,Asteras Tripolis,Lamia,0,0,X,,2018-19_gr1.txt
+19.00,Panetolikos,PAOK Saloniki,1,2,2,0-0,2018-19_gr1.txt
+19.30,PAS Giannina,AE Lárissa,0,0,X,,2018-19_gr1.txt
+15.00,OFI Heraklion,Levadiakos,2,0,1,1-0,2018-19_gr1.txt
+16.00,Atromitos,AEK Athen,0,1,2,0-0,2018-19_gr1.txt
+19.00,Panathinaikos,Olympiakos Piraeus,0,3,2,,2018-19_gr1.txt
+19.30,Panionios GSS,Xanthi FC,1,0,1,0-0,2018-19_gr1.txt
+19.00,Aris Saloniki,Apollon Smyrnis,5,0,1,1-0,2018-19_gr1.txt
+17.15,Levadiakos,PAS Giannina,0,2,2,0-0,2018-19_gr1.txt
+19.00,Lamia,Panionios GSS,1,0,1,1-0,2018-19_gr1.txt
+19.30,AE Lárissa,Asteras Tripolis,2,1,1,1-1,2018-19_gr1.txt
+16.00,Aris Saloniki,OFI Heraklion,3,1,1,0-1,2018-19_gr1.txt
+17.15,AEK Athen,Panetolikos,4,0,1,1-0,2018-19_gr1.txt
+19.00,Xanthi FC,PAOK Saloniki,1,2,2,0-1,2018-19_gr1.txt
+19.30,Olympiakos Piraeus,Atromitos,2,1,1,0-1,2018-19_gr1.txt
+19.00,Apollon Smyrnis,Panathinaikos,1,3,2,0-1,2018-19_gr1.txt
+17.15,OFI Heraklion,PAS Giannina,1,0,1,1-0,2018-19_gr1.txt
+19.00,Panathinaikos,Aris Saloniki,2,0,1,0-0,2018-19_gr1.txt
+19.30,Panionios GSS,AE Lárissa,1,0,1,1-0,2018-19_gr1.txt
+16.00,Xanthi FC,AEK Athen,1,3,2,1-0,2018-19_gr1.txt
+17.15,Asteras Tripolis,Levadiakos,0,0,X,,2018-19_gr1.txt
+19.00,Panetolikos,Olympiakos Piraeus,0,5,2,0-1,2018-19_gr1.txt
+19.30,PAOK Saloniki,Lamia,3,0,1,1-0,2018-19_gr1.txt
+19.00,Atromitos,Apollon Smyrnis,1,0,1,1-0,2018-19_gr1.txt
+19.00,AE Lárissa,PAOK Saloniki,1,1,X,0-0,2018-19_gr1.txt
+,Apollon Smyrnis,Panetolikos,0,1,2,0-1,2018-19_gr1.txt
+,Aris Saloniki,Atromitos,0,2,2,0-2,2018-19_gr1.txt
+,Lamia,AEK Athen,2,2,X,1-1,2018-19_gr1.txt
+,Levadiakos,Panionios GSS,1,2,2,1-1,2018-19_gr1.txt
+,Olympiakos Piraeus,Xanthi FC,4,0,1,3-0,2018-19_gr1.txt
+,Panathinaikos,OFI Heraklion,1,3,2,1-0,2018-19_gr1.txt
+,PAS Giannina,Asteras Tripolis,0,0,X,,2018-19_gr1.txt
+19.00,AEK Athen,AE Lárissa,0,1,2,0-1,2018-19_gr1.txt
+,Xanthi FC,Apollon Smyrnis,2,0,1,1-0,2018-19_gr1.txt
+,Atromitos,Panathinaikos,2,0,1,0-0,2018-19_gr1.txt
+,Lamia,Olympiakos Piraeus,1,3,2,0-1,2018-19_gr1.txt
+,OFI Heraklion,Asteras Tripolis,1,1,X,1-0,2018-19_gr1.txt
+,PAOK Saloniki,Levadiakos,5,0,1,2-0,2018-19_gr1.txt
+,Panetolikos,Aris Saloniki,1,2,2,0-1,2018-19_gr1.txt
+,Panionios GSS,PAS Giannina,2,1,1,1-0,2018-19_gr1.txt
+19.00,Apollon Smyrnis,Lamia,0,3,2,0-0,2018-19_gr1.txt
+16.00,Panathinaikos,Panetolikos,4,0,1,3-0,2018-19_gr1.txt
+19.00,AE Lárissa,Olympiakos Piraeus,0,3,2,0-1,2018-19_gr1.txt
+,Aris Saloniki,Xanthi FC,7,2,1,2-1,2018-19_gr1.txt
+,Asteras Tripolis,Panionios GSS,3,0,1,1-0,2018-19_gr1.txt
+,Atromitos,OFI Heraklion,0,2,2,0-1,2018-19_gr1.txt
+,Levadiakos,AEK Athen,0,3,2,0-1,2018-19_gr1.txt
+,PAS Giannina,PAOK Saloniki,0,2,2,0-0,2018-19_gr1.txt
+19.00,Lamia,Panathinaikos,1,1,X,1-1,2019-20_gr1.txt
+21.00,Aris Saloniki,OFI Heraklion,1,1,X,0-1,2019-20_gr1.txt
+21.30,Olympiakos Piraeus,Asteras Tripolis,1,0,1,1-0,2019-20_gr1.txt
+18.45,Atromitos,AE Lárissa,1,1,X,1-1,2019-20_gr1.txt
+19.15,Panionios GSS,Volos NFC,1,2,2,0-1,2019-20_gr1.txt
+20.00,PAOK Saloniki,Panetolikos,2,1,1,1-0,2019-20_gr1.txt
+22.00,AEK Athen,Xanthi FC,1,2,2,0-0,2019-20_gr1.txt
+19.00,Panetolikos,Xanthi FC,1,2,2,0-0,2019-20_gr1.txt
+19.15,Panathinaikos,OFI Heraklion,1,3,2,0-1,2019-20_gr1.txt
+21.30,Volos NFC,Aris Saloniki,1,0,1,0-0,2019-20_gr1.txt
+19.00,PAOK Saloniki,Panionios GSS,2,1,1,1-0,2019-20_gr1.txt
+19.15,AE Lárissa,Olympiakos Piraeus,0,1,2,0-1,2019-20_gr1.txt
+20.00,Lamia,Atromitos,2,2,X,1-1,2019-20_gr1.txt
+21.30,Asteras Tripolis,AEK Athen,2,3,2,1-1,2019-20_gr1.txt
+19.00,Atromitos,PAOK Saloniki,2,3,2,1-2,2019-20_gr1.txt
+19.15,OFI Heraklion,Panetolikos,3,1,1,0-0,2019-20_gr1.txt
+21.30,Olympiakos Piraeus,Volos NFC,5,0,1,1-0,2019-20_gr1.txt
+19.00,Xanthi FC,Asteras Tripolis,2,1,1,1-0,2019-20_gr1.txt
+19.15,AEK Athen,Lamia,2,0,1,2-0,2019-20_gr1.txt
+,Panionios GSS,AE Lárissa,1,0,1,0-0,2019-20_gr1.txt
+21.30,Aris Saloniki,Panathinaikos,4,0,1,2-0,2019-20_gr1.txt
+17.15,Volos NFC,OFI Heraklion,1,0,1,0-0,2019-20_gr1.txt
+19.30,Asteras Tripolis,Atromitos,2,1,1,2-0,2019-20_gr1.txt
+20.00,Panetolikos,AEK Athen,0,1,2,0-0,2019-20_gr1.txt
+15.00,AE Lárissa,Xanthi FC,3,0,1,1-0,2019-20_gr1.txt
+18.30,PAOK Saloniki,Aris Saloniki,2,2,X,1-1,2019-20_gr1.txt
+19.30,Lamia,Panionios GSS,1,1,X,0-0,2019-20_gr1.txt
+20.30,Panathinaikos,Olympiakos Piraeus,1,1,X,0-1,2019-20_gr1.txt
+17.15,Aris Saloniki,AE Lárissa,2,3,2,2-2,2019-20_gr1.txt
+19.00,Atromitos,Panetolikos,2,0,1,1-0,2019-20_gr1.txt
+19.30,Olympiakos Piraeus,Lamia,2,0,1,0-0,2019-20_gr1.txt
+15.00,OFI Heraklion,Asteras Tripolis,3,1,1,0-0,2019-20_gr1.txt
+17.00,Xanthi FC,Volos NFC,3,1,1,1-0,2019-20_gr1.txt
+17.15,Panionios GSS,Panathinaikos,0,1,2,0-1,2019-20_gr1.txt
+19.30,AEK Athen,PAOK Saloniki,2,2,X,0-1,2019-20_gr1.txt
+17.15,Panathinaikos,Xanthi FC,0,1,2,0-0,2019-20_gr1.txt
+19.30,AE Lárissa,AEK Athen,0,0,X,,2019-20_gr1.txt
+15.00,Volos NFC,Atromitos,2,3,2,2-2,2019-20_gr1.txt
+17.15,Asteras Tripolis,PAOK Saloniki,1,2,2,0-1,2019-20_gr1.txt
+,OFI Heraklion,Panionios GSS,4,1,1,1-1,2019-20_gr1.txt
+19.30,Aris Saloniki,Olympiakos Piraeus,1,2,2,1-2,2019-20_gr1.txt
+20.00,Lamia,Panetolikos,0,0,X,,2019-20_gr1.txt
+19.30,Olympiakos Piraeus,OFI Heraklion,2,1,1,1-1,2019-20_gr1.txt
+20.00,Panetolikos,AE Lárissa,2,2,X,1-1,2019-20_gr1.txt
+16.45,Panionios GSS,Asteras Tripolis,0,1,2,0-1,2019-20_gr1.txt
+17.00,Xanthi FC,Aris Saloniki,0,1,2,0-1,2019-20_gr1.txt
+18.00,PAOK Saloniki,Lamia,3,0,1,3-0,2019-20_gr1.txt
+19.30,AEK Athen,Volos NFC,3,2,1,1-1,2019-20_gr1.txt
+20.00,Atromitos,Panathinaikos,0,1,2,0-1,2019-20_gr1.txt
+17.15,OFI Heraklion,Xanthi FC,2,0,1,0-0,2019-20_gr1.txt
+19.30,Volos NFC,PAOK Saloniki,0,2,2,0-1,2019-20_gr1.txt
+15.00,Panathinaikos,AE Lárissa,1,2,2,0-1,2019-20_gr1.txt
+17.00,Atromitos,Panionios GSS,4,0,1,3-0,2019-20_gr1.txt
+17.15,Aris Saloniki,Panetolikos,2,0,1,2-0,2019-20_gr1.txt
+19.30,Olympiakos Piraeus,AEK Athen,2,0,1,1-0,2019-20_gr1.txt
+19.30,Asteras Tripolis,Lamia,4,1,1,2-1,2019-20_gr1.txt
+19.30,Panionios GSS,Aris Saloniki,1,1,X,0-0,2019-20_gr1.txt
+20.00,Xanthi FC,Olympiakos Piraeus,0,0,X,,2019-20_gr1.txt
+15.00,AE Lárissa,OFI Heraklion,3,2,1,1-2,2019-20_gr1.txt
+17.00,Panetolikos,Asteras Tripolis,1,1,X,1-1,2019-20_gr1.txt
+19.30,AEK Athen,Atromitos,3,2,1,0-1,2019-20_gr1.txt
+20.00,PAOK Saloniki,Panathinaikos,2,2,X,0-1,2019-20_gr1.txt
+20.00,Lamia,Volos NFC,1,0,1,0-0,2019-20_gr1.txt
+17.15,Volos NFC,Panetolikos,3,2,1,0-1,2019-20_gr1.txt
+19.30,OFI Heraklion,PAOK Saloniki,0,1,2,0-0,2019-20_gr1.txt
+15.00,Aris Saloniki,Asteras Tripolis,2,1,1,2-1,2019-20_gr1.txt
+17.00,Xanthi FC,Panionios GSS,1,2,2,0-0,2019-20_gr1.txt
+17.15,Olympiakos Piraeus,Atromitos,2,0,1,0-0,2019-20_gr1.txt
+19.30,Panathinaikos,AEK Athen,3,2,1,0-2,2019-20_gr1.txt
+19.30,AE Lárissa,Lamia,0,3,2,0-1,2019-20_gr1.txt
+19.30,Panionios GSS,Olympiakos Piraeus,1,1,X,0-0,2019-20_gr1.txt
+20.00,Lamia,Xanthi FC,1,0,1,0-0,2019-20_gr1.txt
+17.00,Atromitos,OFI Heraklion,2,1,1,1-1,2019-20_gr1.txt
+17.15,Asteras Tripolis,Volos NFC,0,0,X,,2019-20_gr1.txt
+18.00,PAOK Saloniki,AE Lárissa,1,0,1,1-0,2019-20_gr1.txt
+19.30,AEK Athen,Aris Saloniki,1,1,X,0-0,2019-20_gr1.txt
+,Panetolikos,Panathinaikos,0,0,X,,2019-20_gr1.txt
+17.15,AE Lárissa,Volos NFC,2,1,1,0-1,2019-20_gr1.txt
+,Panionios GSS,Panetolikos,3,0,1,1-0,2019-20_gr1.txt
+19.30,OFI Heraklion,AEK Athen,1,0,1,0-0,2019-20_gr1.txt
+15.00,Panathinaikos,Asteras Tripolis,1,0,1,1-0,2019-20_gr1.txt
+17.15,Xanthi FC,Atromitos,1,0,1,0-0,2019-20_gr1.txt
+,Aris Saloniki,Lamia,1,1,X,1-1,2019-20_gr1.txt
+19.30,Olympiakos Piraeus,PAOK Saloniki,1,1,X,0-1,2019-20_gr1.txt
+18.00,PAOK Saloniki,Xanthi FC,2,0,1,0-0,2019-20_gr1.txt
+19.30,AEK Athen,Panionios GSS,5,0,1,2-0,2019-20_gr1.txt
+20.00,Panetolikos,Olympiakos Piraeus,0,3,2,0-3,2019-20_gr1.txt
+15.00,Lamia,OFI Heraklion,2,1,1,1-1,2019-20_gr1.txt
+17.15,Asteras Tripolis,AE Lárissa,1,1,X,1-0,2019-20_gr1.txt
+19.30,Atromitos,Aris Saloniki,2,2,X,1-1,2019-20_gr1.txt
+,Volos NFC,Panathinaikos,1,1,X,1-1,2019-20_gr1.txt
+17.15,OFI Heraklion,Aris Saloniki,3,1,1,1-1,2019-20_gr1.txt
+19.30,Panathinaikos,Lamia,2,0,1,1-0,2019-20_gr1.txt
+20.00,Xanthi FC,AEK Athen,0,1,2,0-0,2019-20_gr1.txt
+15.00,AE Lárissa,Atromitos,1,2,2,1-2,2019-20_gr1.txt
+17.15,Volos NFC,Panionios GSS,2,1,1,0-1,2019-20_gr1.txt
+19.30,Asteras Tripolis,Olympiakos Piraeus,0,5,2,0-4,2019-20_gr1.txt
+,Panetolikos,PAOK Saloniki,0,3,2,0-1,2019-20_gr1.txt
+17.00,Xanthi FC,Panetolikos,0,0,X,,2019-20_gr1.txt
+17.15,Olympiakos Piraeus,AE Lárissa,4,1,1,4-0,2019-20_gr1.txt
+,OFI Heraklion,Panathinaikos,1,1,X,0-0,2019-20_gr1.txt
+19.30,AEK Athen,Asteras Tripolis,2,1,1,1-0,2019-20_gr1.txt
+,Atromitos,Lamia,1,1,X,0-0,2019-20_gr1.txt
+17.15,Aris Saloniki,Volos NFC,4,0,1,3-0,2019-20_gr1.txt
+19.30,Panionios GSS,PAOK Saloniki,0,2,2,0-0,2019-20_gr1.txt
+19.30,Asteras Tripolis,Xanthi FC,5,0,1,2-0,2019-20_gr1.txt
+20.00,Lamia,AEK Athen,0,0,X,,2019-20_gr1.txt
+15.00,AE Lárissa,Panionios GSS,2,0,1,2-0,2019-20_gr1.txt
+17.00,Panetolikos,OFI Heraklion,2,0,1,0-0,2019-20_gr1.txt
+17.15,Volos NFC,Olympiakos Piraeus,0,0,X,,2019-20_gr1.txt
+19.30,Panathinaikos,Aris Saloniki,0,0,X,,2019-20_gr1.txt
+18.00,PAOK Saloniki,Atromitos,5,1,1,3-0,2019-20_gr1.txt
+17.15,OFI Heraklion,Volos NFC,1,2,2,0-1,2019-20_gr1.txt
+19.30,Aris Saloniki,PAOK Saloniki,4,2,1,2-1,2019-20_gr1.txt
+20.00,Atromitos,Asteras Tripolis,2,1,1,0-0,2019-20_gr1.txt
+15.00,AEK Athen,Panetolikos,3,1,1,1-1,2019-20_gr1.txt
+17.15,Xanthi FC,AE Lárissa,2,1,1,0-0,2019-20_gr1.txt
+,Panionios GSS,Lamia,0,1,2,0-1,2019-20_gr1.txt
+19.30,Olympiakos Piraeus,Panathinaikos,1,0,1,0-0,2019-20_gr1.txt
+17.15,Volos NFC,Xanthi FC,1,3,2,0-1,2019-20_gr1.txt
+19.30,AE Lárissa,Aris Saloniki,0,0,X,,2019-20_gr1.txt
+20.00,Panetolikos,Atromitos,0,1,2,0-0,2019-20_gr1.txt
+15.00,Asteras Tripolis,OFI Heraklion,2,0,1,1-0,2019-20_gr1.txt
+17.15,Lamia,Olympiakos Piraeus,0,4,2,0-1,2019-20_gr1.txt
+19.30,Panathinaikos,Panionios GSS,3,0,1,2-0,2019-20_gr1.txt
+,PAOK Saloniki,AEK Athen,1,0,1,0-0,2019-20_gr1.txt
+19.30,Panionios GSS,OFI Heraklion,1,2,2,0-1,2019-20_gr1.txt
+20.00,Panetolikos,Lamia,1,1,X,0-1,2019-20_gr1.txt
+15.00,Xanthi FC,Panathinaikos,0,1,2,0-0,2019-20_gr1.txt
+17.15,AEK Athen,AE Lárissa,3,0,1,1-0,2019-20_gr1.txt
+,Atromitos,Volos NFC,0,0,X,,2019-20_gr1.txt
+18.00,PAOK Saloniki,Asteras Tripolis,3,1,1,1-0,2019-20_gr1.txt
+19.30,Olympiakos Piraeus,Aris Saloniki,4,2,1,3-1,2019-20_gr1.txt
+15.00,AE Lárissa,Panetolikos,2,2,X,0-1,2019-20_gr1.txt
+17.15,Volos NFC,AEK Athen,1,3,2,0-2,2019-20_gr1.txt
+,OFI Heraklion,Olympiakos Piraeus,0,1,2,0-1,2019-20_gr1.txt
+19.30,Panathinaikos,Atromitos,3,0,1,1-0,2019-20_gr1.txt
+17.15,Asteras Tripolis,Panionios GSS,2,0,1,1-0,2019-20_gr1.txt
+19.00,Lamia,PAOK Saloniki,0,1,2,0-1,2019-20_gr1.txt
+19.30,Aris Saloniki,Xanthi FC,1,0,1,0-0,2019-20_gr1.txt
+19.30,AE Lárissa,Panathinaikos,0,2,2,0-1,2019-20_gr1.txt
+15.00,Xanthi FC,OFI Heraklion,2,2,X,0-1,2019-20_gr1.txt
+,Panionios GSS,Atromitos,1,0,1,0-0,2019-20_gr1.txt
+17.15,Panetolikos,Aris Saloniki,2,0,1,0-0,2019-20_gr1.txt
+19.30,AEK Athen,Olympiakos Piraeus,0,0,X,,2019-20_gr1.txt
+18.00,PAOK Saloniki,Volos NFC,1,0,1,0-0,2019-20_gr1.txt
+20.00,Lamia,Asteras Tripolis,1,1,X,0-0,2019-20_gr1.txt
+17.15,Volos NFC,Lamia,1,0,1,0-0,2019-20_gr1.txt
+,OFI Heraklion,AE Lárissa,0,0,X,,2019-20_gr1.txt
+19.30,Olympiakos Piraeus,Xanthi FC,3,1,1,2-0,2019-20_gr1.txt
+15.00,Aris Saloniki,Panionios GSS,2,0,1,2-0,2019-20_gr1.txt
+17.15,Asteras Tripolis,Panetolikos,2,1,1,0-0,2019-20_gr1.txt
+,Atromitos,AEK Athen,0,1,2,0-0,2019-20_gr1.txt
+19.30,Panathinaikos,PAOK Saloniki,2,0,1,0-0,2019-20_gr1.txt
+19.30,Panionios GSS,Xanthi FC,0,0,X,,2019-20_gr1.txt
+20.00,Lamia,AE Lárissa,0,0,X,,2019-20_gr1.txt
+15.00,Asteras Tripolis,Aris Saloniki,1,1,X,1-1,2019-20_gr1.txt
+17.15,Atromitos,Olympiakos Piraeus,0,1,2,0-0,2019-20_gr1.txt
+18.00,PAOK Saloniki,OFI Heraklion,4,0,1,0-0,2019-20_gr1.txt
+19.30,AEK Athen,Panathinaikos,1,0,1,1-0,2019-20_gr1.txt
+18.00,Panetolikos,Volos NFC,1,1,X,1-0,2019-20_gr1.txt
+17.15,AE Lárissa,PAOK Saloniki,1,2,2,0-2,2019-20_gr1.txt
+19.30,Olympiakos Piraeus,Panionios GSS,4,0,1,4-0,2019-20_gr1.txt
+15.00,Panathinaikos,Panetolikos,3,1,1,2-0,2019-20_gr1.txt
+17.15,Xanthi FC,Lamia,0,0,X,,2019-20_gr1.txt
+,Volos NFC,Asteras Tripolis,0,1,2,0-0,2019-20_gr1.txt
+19.30,Aris Saloniki,AEK Athen,0,1,2,0-1,2019-20_gr1.txt
+19.30,OFI Heraklion,Atromitos,1,0,1,0-0,2019-20_gr1.txt
+19.30,Asteras Tripolis,Panathinaikos,1,1,X,0-0,2019-20_gr1.txt
+20.00,Lamia,Aris Saloniki,2,2,X,1-0,2019-20_gr1.txt
+15.00,Panetolikos,Panionios GSS,1,0,1,0-0,2019-20_gr1.txt
+17.15,Atromitos,Xanthi FC,1,0,1,1-0,2019-20_gr1.txt
+,Volos NFC,AE Lárissa,0,0,X,,2019-20_gr1.txt
+19.30,AEK Athen,OFI Heraklion,3,0,1,3-0,2019-20_gr1.txt
+,PAOK Saloniki,Olympiakos Piraeus,0,1,2,0-0,2019-20_gr1.txt
+19.00,AE Lárissa,Asteras Tripolis,3,0,1,3-0,2019-20_gr1.txt
+,Xanthi FC,PAOK Saloniki,1,1,X,1-1,2019-20_gr1.txt
+,Aris Saloniki,Atromitos,1,2,2,0-0,2019-20_gr1.txt
+,Olympiakos Piraeus,Panetolikos,2,0,1,0-0,2019-20_gr1.txt
+,OFI Heraklion,Lamia,3,0,1,3-0,2019-20_gr1.txt
+,Panathinaikos,Volos NFC,4,1,1,2-0,2019-20_gr1.txt
+,Panionios GSS,AEK Athen,1,1,X,1-0,2019-20_gr1.txt
+19.15,Panionios GSS,Volos NFC,1,0,1,0-0,2019-20_gr1.txt
+19.15,AE Lárissa,Asteras Tripolis,1,2,2,1-1,2019-20_gr1.txt
+20.00,Lamia,Panetolikos,2,0,1,1-0,2019-20_gr1.txt
+20.00,Xanthi FC,Atromitos,1,0,1,0-0,2019-20_gr1.txt
+19.15,Volos NFC,Xanthi FC,1,0,1,1-0,2019-20_gr1.txt
+19.30,Atromitos,Lamia,1,1,X,1-1,2019-20_gr1.txt
+19.30,Asteras Tripolis,Panionios GSS,0,0,X,,2019-20_gr1.txt
+20.00,Panetolikos,AE Lárissa,3,0,1,0-0,2019-20_gr1.txt
+19.15,Asteras Tripolis,Atromitos,1,1,X,1-1,2019-20_gr1.txt
+19.30,Xanthi FC,Panetolikos,1,1,X,0-0,2019-20_gr1.txt
+19.30,AE Lárissa,Volos NFC,3,1,1,1-1,2019-20_gr1.txt
+20.00,Lamia,Panionios GSS,0,1,2,0-1,2019-20_gr1.txt
+19.15,Panionios GSS,Xanthi FC,2,1,1,1-0,2019-20_gr1.txt
+19.30,Panetolikos,Asteras Tripolis,1,1,X,1-1,2019-20_gr1.txt
+19.30,Volos NFC,Lamia,0,0,X,,2019-20_gr1.txt
+20.00,Atromitos,AE Lárissa,3,0,1,1-0,2019-20_gr1.txt
+19.15,Asteras Tripolis,Volos NFC,4,0,1,2-0,2019-20_gr1.txt
+19.30,Lamia,Xanthi FC,0,0,X,,2019-20_gr1.txt
+,AE Lárissa,Panionios GSS,0,0,X,,2019-20_gr1.txt
+20.00,Atromitos,Panetolikos,2,2,X,1-1,2019-20_gr1.txt
+19.15,Lamia,AE Lárissa,0,0,X,,2019-20_gr1.txt
+,Panionios GSS,Panetolikos,0,2,2,0-1,2019-20_gr1.txt
+,Volos NFC,Atromitos,2,3,2,0-3,2019-20_gr1.txt
+,Xanthi FC,Asteras Tripolis,1,2,2,0-1,2019-20_gr1.txt
+19.15,AE Lárissa,Xanthi FC,0,0,X,,2019-20_gr1.txt
+,Asteras Tripolis,Lamia,1,1,X,1-0,2019-20_gr1.txt
+,Atromitos,Panionios GSS,0,0,X,,2019-20_gr1.txt
+,Panetolikos,Volos NFC,1,0,1,1-0,2019-20_gr1.txt
+21.30,Aris Saloniki,OFI Heraklion,3,1,1,1-1,2019-20_gr1.txt
+19.30,PAOK Saloniki,Olympiakos Piraeus,0,1,2,0-1,2019-20_gr1.txt
+21.30,AEK Athen,Panathinaikos,1,1,X,0-0,2019-20_gr1.txt
+21.30,Panathinaikos,PAOK Saloniki,0,0,X,,2019-20_gr1.txt
+19.15,OFI Heraklion,AEK Athen,0,2,2,0-1,2019-20_gr1.txt
+21.30,Olympiakos Piraeus,Aris Saloniki,3,1,1,3-0,2019-20_gr1.txt
+20.30,PAOK Saloniki,OFI Heraklion,3,1,1,0-0,2019-20_gr1.txt
+21.30,AEK Athen,Aris Saloniki,2,2,X,0-0,2019-20_gr1.txt
+21.30,Olympiakos Piraeus,Panathinaikos,3,0,1,2-0,2019-20_gr1.txt
+21.30,OFI Heraklion,Panathinaikos,0,0,X,,2019-20_gr1.txt
+19.15,Aris Saloniki,PAOK Saloniki,0,2,2,0-2,2019-20_gr1.txt
+21.30,AEK Athen,Olympiakos Piraeus,1,2,2,0-2,2019-20_gr1.txt
+19.15,Panathinaikos,Aris Saloniki,2,0,1,1-0,2019-20_gr1.txt
+21.00,PAOK Saloniki,AEK Athen,0,2,2,0-1,2019-20_gr1.txt
+21.30,Olympiakos Piraeus,OFI Heraklion,2,1,1,1-1,2019-20_gr1.txt
+21.30,OFI Heraklion,PAOK Saloniki,2,2,X,2-1,2019-20_gr1.txt
+19.15,Aris Saloniki,AEK Athen,1,4,2,1-1,2019-20_gr1.txt
+21.30,Panathinaikos,Olympiakos Piraeus,0,0,X,,2019-20_gr1.txt
+19.15,Aris Saloniki,Olympiakos Piraeus,2,4,2,0-2,2019-20_gr1.txt
+21.00,PAOK Saloniki,Panathinaikos,0,0,X,,2019-20_gr1.txt
+21.30,AEK Athen,OFI Heraklion,2,0,1,2-0,2019-20_gr1.txt
+21.30,OFI Heraklion,Aris Saloniki,0,1,2,0-1,2019-20_gr1.txt
+20.00,Panathinaikos,AEK Athen,1,3,2,1-2,2019-20_gr1.txt
+21.45,Olympiakos Piraeus,PAOK Saloniki,0,1,2,0-0,2019-20_gr1.txt
+19.15,Aris Saloniki,Panathinaikos,0,1,2,0-0,2019-20_gr1.txt
+,OFI Heraklion,Olympiakos Piraeus,1,3,2,0-2,2019-20_gr1.txt
+21.30,AEK Athen,PAOK Saloniki,0,0,X,,2019-20_gr1.txt
+20.00,Olympiakos Piraeus,AEK Athen,3,0,1,2-0,2019-20_gr1.txt
+,Panathinaikos,OFI Heraklion,3,2,1,3-2,2019-20_gr1.txt
+,PAOK Saloniki,Aris Saloniki,0,0,X,,2019-20_gr1.txt
+18.15,Aris Saloniki,Lamia,3,1,1,0-1,2020-21_gr1.txt
+20.30,PAOK Saloniki,AE Lárissa,1,0,1,1-0,2020-21_gr1.txt
+18.00,OFI Heraklion,Panetolikos,1,1,X,0-1,2020-21_gr1.txt
+18.30,Atromitos,Volos NFC,0,2,2,0-0,2020-21_gr1.txt
+20.30,Asteras Tripolis,Panathinaikos,1,0,1,0-0,2020-21_gr1.txt
+17.15,Apollon Smyrnis,PAS Giannina,1,2,2,0-2,2020-21_gr1.txt
+19.30,AEK Athen,Olympiakos Piraeus,1,1,X,0-0,2020-21_gr1.txt
+19.00,PAOK Saloniki,Atromitos,1,1,X,0-0,2020-21_gr1.txt
+20.30,Olympiakos Piraeus,Asteras Tripolis,3,0,1,0-0,2020-21_gr1.txt
+20.30,Panetolikos,AEK Athen,0,2,2,0-0,2020-21_gr1.txt
+18.15,Lamia,OFI Heraklion,1,2,2,0-1,2020-21_gr1.txt
+20.30,Volos NFC,Aris Saloniki,0,1,2,0-1,2020-21_gr1.txt
+17.15,Panathinaikos,Apollon Smyrnis,1,0,1,1-0,2020-21_gr1.txt
+17.15,PAS Giannina,AE Lárissa,1,2,2,0-0,2020-21_gr1.txt
+18.30,Volos NFC,PAOK Saloniki,0,0,X,,2020-21_gr1.txt
+20.30,Olympiakos Piraeus,Panetolikos,2,0,1,0-0,2020-21_gr1.txt
+16.00,Aris Saloniki,PAS Giannina,2,2,X,0-2,2020-21_gr1.txt
+18.00,OFI Heraklion,Atromitos,2,2,X,0-1,2020-21_gr1.txt
+20.30,AEK Athen,Lamia,3,0,1,1-0,2020-21_gr1.txt
+19.30,AE Lárissa,Panathinaikos,1,1,X,0-1,2020-21_gr1.txt
+17.15,Asteras Tripolis,Apollon Smyrnis,0,0,X,,2020-21_gr1.txt
+19.30,Panetolikos,Asteras Tripolis,1,1,X,0-1,2020-21_gr1.txt
+16.00,Panathinaikos,Aris Saloniki,0,1,2,0-1,2020-21_gr1.txt
+18.15,Apollon Smyrnis,AE Lárissa,1,0,1,0-0,2020-21_gr1.txt
+,PAOK Saloniki,OFI Heraklion,3,0,1,1-0,2020-21_gr1.txt
+20.30,PAS Giannina,Olympiakos Piraeus,1,1,X,1-0,2020-21_gr1.txt
+21.45,Atromitos,AEK Athen,1,0,1,1-0,2020-21_gr1.txt
+19.30,Lamia,Volos NFC,1,2,2,0-1,2020-21_gr1.txt
+16.00,Volos NFC,PAS Giannina,2,1,1,0-1,2020-21_gr1.txt
+18.15,Aris Saloniki,Apollon Smyrnis,1,0,1,1-0,2020-21_gr1.txt
+20.30,Olympiakos Piraeus,Atromitos,4,0,1,0-0,2020-21_gr1.txt
+16.00,OFI Heraklion,Panathinaikos,2,2,X,1-0,2020-21_gr1.txt
+18.15,AE Lárissa,Asteras Tripolis,1,3,2,0-1,2020-21_gr1.txt
+20.30,AEK Athen,PAOK Saloniki,1,1,X,1-0,2020-21_gr1.txt
+19.30,Lamia,Panetolikos,0,0,X,,2020-21_gr1.txt
+20.30,Panathinaikos,Volos NFC,1,1,X,0-0,2020-21_gr1.txt
+16.00,Asteras Tripolis,OFI Heraklion,1,0,1,0-0,2020-21_gr1.txt
+20.30,PAS Giannina,AEK Athen,0,1,2,0-1,2020-21_gr1.txt
+19.30,Atromitos,Panetolikos,2,0,1,1-0,2020-21_gr1.txt
+17.15,AE Lárissa,Aris Saloniki,0,3,2,0-1,2020-21_gr1.txt
+19.30,PAOK Saloniki,Olympiakos Piraeus,1,1,X,0-0,2020-21_gr1.txt
+17.15,Apollon Smyrnis,Lamia,0,1,2,0-1,2020-21_gr1.txt
+15.00,Olympiakos Piraeus,Apollon Smyrnis,2,0,1,0-0,2020-21_gr1.txt
+17.15,Atromitos,PAS Giannina,0,2,2,0-1,2020-21_gr1.txt
+,Volos NFC,AE Lárissa,1,1,X,0-0,2020-21_gr1.txt
+19.30,Lamia,Panathinaikos,0,2,2,0-1,2020-21_gr1.txt
+15.00,Aris Saloniki,Asteras Tripolis,1,0,1,0-0,2020-21_gr1.txt
+17.15,Panetolikos,PAOK Saloniki,1,3,2,0-1,2020-21_gr1.txt
+19.30,AEK Athen,OFI Heraklion,2,1,1,1-1,2020-21_gr1.txt
+17.15,PAS Giannina,Panetolikos,0,0,X,,2020-21_gr1.txt
+19.30,Panathinaikos,Atromitos,0,1,2,0-0,2020-21_gr1.txt
+15.00,OFI Heraklion,Olympiakos Piraeus,0,2,2,0-0,2020-21_gr1.txt
+19.30,Apollon Smyrnis,PAOK Saloniki,1,3,2,0-1,2020-21_gr1.txt
+17.15,Asteras Tripolis,Volos NFC,1,1,X,1-0,2020-21_gr1.txt
+19.30,Aris Saloniki,AEK Athen,0,1,2,0-0,2020-21_gr1.txt
+17.15,AE Lárissa,Lamia,0,1,2,0-1,2020-21_gr1.txt
+15.00,Lamia,Asteras Tripolis,2,2,X,0-1,2020-21_gr1.txt
+17.15,Atromitos,Apollon Smyrnis,2,2,X,1-1,2020-21_gr1.txt
+19.30,Olympiakos Piraeus,Panathinaikos,1,0,1,1-0,2020-21_gr1.txt
+15.00,AEK Athen,AE Lárissa,4,1,1,0-0,2020-21_gr1.txt
+17.15,Panetolikos,Aris Saloniki,0,1,2,0-1,2020-21_gr1.txt
+19.30,PAOK Saloniki,PAS Giannina,2,1,1,0-1,2020-21_gr1.txt
+19.30,Volos NFC,OFI Heraklion,1,4,2,0-1,2020-21_gr1.txt
+17.15,AE Lárissa,Atromitos,0,0,X,,2020-21_gr1.txt
+19.30,Aris Saloniki,Olympiakos Piraeus,1,2,2,0-1,2020-21_gr1.txt
+15.00,Panathinaikos,Panetolikos,2,1,1,2-0,2020-21_gr1.txt
+17.00,OFI Heraklion,PAS Giannina,2,1,1,1-1,2020-21_gr1.txt
+17.15,Lamia,PAOK Saloniki,0,2,2,0-1,2020-21_gr1.txt
+19.30,Asteras Tripolis,AEK Athen,1,2,2,1-1,2020-21_gr1.txt
+19.30,Apollon Smyrnis,Volos NFC,3,3,X,1-0,2020-21_gr1.txt
+17.15,Atromitos,Aris Saloniki,2,2,X,1-0,2020-21_gr1.txt
+19.30,Olympiakos Piraeus,Volos NFC,4,1,1,1-1,2020-21_gr1.txt
+15.00,OFI Heraklion,Apollon Smyrnis,0,2,2,0-1,2020-21_gr1.txt
+17.15,PAOK Saloniki,Asteras Tripolis,2,0,1,0-0,2020-21_gr1.txt
+,PAS Giannina,Lamia,2,0,1,1-0,2020-21_gr1.txt
+19.30,AEK Athen,Panathinaikos,1,2,2,0-2,2020-21_gr1.txt
+19.30,Panetolikos,AE Lárissa,2,1,1,1-0,2020-21_gr1.txt
+17.15,AE Lárissa,OFI Heraklion,0,1,2,0-0,2020-21_gr1.txt
+19.30,Panathinaikos,PAS Giannina,2,0,1,1-0,2020-21_gr1.txt
+15.00,Lamia,Olympiakos Piraeus,0,6,2,0-3,2020-21_gr1.txt
+17.15,Apollon Smyrnis,AEK Athen,3,4,2,1-3,2020-21_gr1.txt
+,Volos NFC,Panetolikos,0,0,X,,2020-21_gr1.txt
+19.30,Aris Saloniki,PAOK Saloniki,1,0,1,1-0,2020-21_gr1.txt
+19.30,Asteras Tripolis,Atromitos,2,0,1,1-0,2020-21_gr1.txt
+17.15,Panetolikos,Apollon Smyrnis,0,1,2,0-1,2020-21_gr1.txt
+19.30,OFI Heraklion,Aris Saloniki,0,3,2,0-2,2020-21_gr1.txt
+15.00,Olympiakos Piraeus,AE Lárissa,5,1,1,2-1,2020-21_gr1.txt
+19.30,PAOK Saloniki,Panathinaikos,2,1,1,1-1,2020-21_gr1.txt
+17.15,PAS Giannina,Asteras Tripolis,2,2,X,1-1,2020-21_gr1.txt
+19.30,AEK Athen,Volos NFC,2,2,X,1-2,2020-21_gr1.txt
+17.15,Atromitos,Lamia,2,1,1,1-1,2020-21_gr1.txt
+15.00,Panathinaikos,Asteras Tripolis,0,0,X,,2020-21_gr1.txt
+,Panetolikos,OFI Heraklion,2,1,1,0-0,2020-21_gr1.txt
+17.15,AE Lárissa,PAOK Saloniki,1,1,X,0-0,2020-21_gr1.txt
+,PAS Giannina,Apollon Smyrnis,1,3,2,1-1,2020-21_gr1.txt
+19.30,Olympiakos Piraeus,AEK Athen,3,0,1,1-0,2020-21_gr1.txt
+17.15,Volos NFC,Atromitos,1,0,1,1-0,2020-21_gr1.txt
+19.30,Lamia,Aris Saloniki,2,0,1,2-0,2020-21_gr1.txt
+15.00,Apollon Smyrnis,Panathinaikos,0,1,2,0-1,2020-21_gr1.txt
+17.15,AEK Athen,Panetolikos,1,0,1,1-0,2020-21_gr1.txt
+,AE Lárissa,PAS Giannina,0,0,X,,2020-21_gr1.txt
+19.30,Asteras Tripolis,Olympiakos Piraeus,0,4,2,0-2,2020-21_gr1.txt
+17.15,Aris Saloniki,Volos NFC,2,0,1,1-0,2020-21_gr1.txt
+,OFI Heraklion,Lamia,2,0,1,1-0,2020-21_gr1.txt
+19.30,Atromitos,PAOK Saloniki,3,2,1,0-1,2020-21_gr1.txt
+19.30,Panetolikos,Olympiakos Piraeus,1,2,2,0-1,2020-21_gr1.txt
+15.00,PAOK Saloniki,Volos NFC,3,1,1,1-1,2020-21_gr1.txt
+17.15,Apollon Smyrnis,Asteras Tripolis,0,1,2,0-1,2020-21_gr1.txt
+,Atromitos,OFI Heraklion,0,0,X,,2020-21_gr1.txt
+19.30,Panathinaikos,AE Lárissa,2,0,1,1-0,2020-21_gr1.txt
+17.15,PAS Giannina,Aris Saloniki,0,0,X,,2020-21_gr1.txt
+19.30,Lamia,AEK Athen,0,1,2,0-1,2020-21_gr1.txt
+17.15,Asteras Tripolis,Panetolikos,2,0,1,1-0,2020-21_gr1.txt
+19.30,AE Lárissa,Apollon Smyrnis,0,1,2,0-0,2020-21_gr1.txt
+15.00,Olympiakos Piraeus,PAS Giannina,1,0,1,0-0,2020-21_gr1.txt
+17.15,Volos NFC,Lamia,1,1,X,0-0,2020-21_gr1.txt
+,OFI Heraklion,PAOK Saloniki,0,3,2,0-0,2020-21_gr1.txt
+19.30,Aris Saloniki,Panathinaikos,0,1,2,0-1,2020-21_gr1.txt
+21.30,AEK Athen,Atromitos,2,1,1,0-0,2020-21_gr1.txt
+15.00,Asteras Tripolis,AE Lárissa,1,0,1,0-0,2020-21_gr1.txt
+17.15,Apollon Smyrnis,Aris Saloniki,0,1,2,0-1,2020-21_gr1.txt
+19.30,Panathinaikos,OFI Heraklion,2,0,1,1-0,2020-21_gr1.txt
+15.00,Atromitos,Olympiakos Piraeus,0,1,2,0-1,2020-21_gr1.txt
+17.15,Panetolikos,Lamia,0,0,X,,2020-21_gr1.txt
+,PAS Giannina,Volos NFC,0,1,2,0-1,2020-21_gr1.txt
+19.30,PAOK Saloniki,AEK Athen,2,2,X,1-1,2020-21_gr1.txt
+17.15,OFI Heraklion,Asteras Tripolis,0,1,2,0-1,2020-21_gr1.txt
+19.30,Aris Saloniki,AE Lárissa,1,0,1,1-0,2020-21_gr1.txt
+15.00,Volos NFC,Panathinaikos,0,2,2,0-1,2020-21_gr1.txt
+17.15,AEK Athen,PAS Giannina,0,2,2,0-1,2020-21_gr1.txt
+,Lamia,Apollon Smyrnis,1,0,1,1-0,2020-21_gr1.txt
+19.30,Olympiakos Piraeus,PAOK Saloniki,3,0,1,0-0,2020-21_gr1.txt
+17.15,Panetolikos,Atromitos,1,1,X,0-0,2020-21_gr1.txt
+15.00,AE Lárissa,Volos NFC,0,0,X,,2020-21_gr1.txt
+17.15,Asteras Tripolis,Aris Saloniki,2,1,1,0-1,2020-21_gr1.txt
+19.30,Panathinaikos,Lamia,0,0,X,,2020-21_gr1.txt
+15.00,OFI Heraklion,AEK Athen,0,2,2,0-1,2020-21_gr1.txt
+17.15,PAOK Saloniki,Panetolikos,5,0,1,1-0,2020-21_gr1.txt
+,PAS Giannina,Atromitos,0,1,2,0-1,2020-21_gr1.txt
+19.30,Apollon Smyrnis,Olympiakos Piraeus,1,3,2,0-1,2020-21_gr1.txt
+19.30,Atromitos,Panathinaikos,2,3,2,1-1,2020-21_gr1.txt
+15.00,PAOK Saloniki,Apollon Smyrnis,2,2,X,1-0,2020-21_gr1.txt
+17.15,Volos NFC,Asteras Tripolis,0,1,2,0-1,2020-21_gr1.txt
+,Olympiakos Piraeus,OFI Heraklion,3,0,1,2-0,2020-21_gr1.txt
+19.30,AEK Athen,Aris Saloniki,0,2,2,0-1,2020-21_gr1.txt
+19.30,Panetolikos,PAS Giannina,1,2,2,1-0,2020-21_gr1.txt
+17.15,Lamia,AE Lárissa,2,1,1,1-1,2020-21_gr1.txt
+17.15,Asteras Tripolis,Lamia,0,0,X,,2020-21_gr1.txt
+19.30,Apollon Smyrnis,Atromitos,2,1,1,1-0,2020-21_gr1.txt
+15.00,Aris Saloniki,Panetolikos,0,0,X,,2020-21_gr1.txt
+17.15,OFI Heraklion,Volos NFC,1,2,2,0-2,2020-21_gr1.txt
+19.30,Panathinaikos,Olympiakos Piraeus,2,1,1,1-0,2020-21_gr1.txt
+17.15,AE Lárissa,AEK Athen,2,4,2,0-2,2020-21_gr1.txt
+,PAS Giannina,PAOK Saloniki,0,2,2,0-0,2020-21_gr1.txt
+17.15,Atromitos,AE Lárissa,1,1,X,0-1,2020-21_gr1.txt
+19.30,AEK Athen,Asteras Tripolis,2,2,X,1-2,2020-21_gr1.txt
+15.00,Volos NFC,Apollon Smyrnis,2,0,1,1-0,2020-21_gr1.txt
+,PAOK Saloniki,Lamia,4,0,1,1-0,2020-21_gr1.txt
+17.15,PAS Giannina,OFI Heraklion,1,0,1,1-0,2020-21_gr1.txt
+19.30,Olympiakos Piraeus,Aris Saloniki,1,1,X,1-0,2020-21_gr1.txt
+19.30,Panetolikos,Panathinaikos,1,0,1,1-0,2020-21_gr1.txt
+17.15,Apollon Smyrnis,OFI Heraklion,2,1,1,1-1,2020-21_gr1.txt
+19.30,Asteras Tripolis,PAOK Saloniki,2,1,1,1-0,2020-21_gr1.txt
+15.00,Aris Saloniki,Atromitos,3,0,1,1-0,2020-21_gr1.txt
+17.15,AE Lárissa,Panetolikos,1,0,1,1-0,2020-21_gr1.txt
+,Lamia,PAS Giannina,0,0,X,,2020-21_gr1.txt
+19.30,Panathinaikos,AEK Athen,1,1,X,0-0,2020-21_gr1.txt
+19.30,Volos NFC,Olympiakos Piraeus,1,2,2,1-1,2020-21_gr1.txt
+15.00,OFI Heraklion,AE Lárissa,2,3,2,1-1,2020-21_gr1.txt
+17.15,Atromitos,Asteras Tripolis,1,1,X,1-0,2020-21_gr1.txt
+19.30,PAS Giannina,Panathinaikos,1,0,1,1-0,2020-21_gr1.txt
+15.00,Olympiakos Piraeus,Lamia,3,0,1,3-0,2020-21_gr1.txt
+17.15,Panetolikos,Volos NFC,1,0,1,0-0,2020-21_gr1.txt
+19.30,PAOK Saloniki,Aris Saloniki,2,2,X,0-1,2020-21_gr1.txt
+19.30,AEK Athen,Apollon Smyrnis,2,0,1,2-0,2020-21_gr1.txt
+19.00,AE Lárissa,Olympiakos Piraeus,1,3,2,0-1,2020-21_gr1.txt
+,Apollon Smyrnis,Panetolikos,1,0,1,0-0,2020-21_gr1.txt
+,Aris Saloniki,OFI Heraklion,1,0,1,1-0,2020-21_gr1.txt
+,Asteras Tripolis,PAS Giannina,0,1,2,0-0,2020-21_gr1.txt
+,Volos NFC,AEK Athen,1,0,1,1-0,2020-21_gr1.txt
+,Panathinaikos,PAOK Saloniki,2,1,1,1-0,2020-21_gr1.txt
+,Lamia,Atromitos,0,0,X,,2020-21_gr1.txt
+15.00,Apollon Smyrnis,AE Lárissa,0,2,2,0-0,2020-21_gr1.txt
+17.15,Volos NFC,OFI Heraklion,0,0,X,,2020-21_gr1.txt
+19.30,PAS Giannina,Atromitos,1,0,1,1-0,2020-21_gr1.txt
+,Panetolikos,Lamia,0,3,2,0-3,2020-21_gr1.txt
+15.00,Atromitos,Apollon Smyrnis,1,1,X,0-0,2020-21_gr1.txt
+17.15,OFI Heraklion,PAS Giannina,2,1,1,0-1,2020-21_gr1.txt
+19.30,AE Lárissa,Panetolikos,1,1,X,1-0,2020-21_gr1.txt
+,Lamia,Volos NFC,1,1,X,0-0,2020-21_gr1.txt
+15.00,Volos NFC,Panetolikos,3,1,1,3-1,2020-21_gr1.txt
+17.15,Apollon Smyrnis,OFI Heraklion,0,0,X,,2020-21_gr1.txt
+19.30,Atromitos,AE Lárissa,0,1,2,0-1,2020-21_gr1.txt
+19.30,PAS Giannina,Lamia,1,2,2,1-0,2020-21_gr1.txt
+15.00,OFI Heraklion,Atromitos,1,1,X,0-0,2020-21_gr1.txt
+17.15,Panetolikos,Apollon Smyrnis,1,0,1,0-0,2020-21_gr1.txt
+19.30,Volos NFC,PAS Giannina,1,1,X,1-1,2020-21_gr1.txt
+19.30,Lamia,AE Lárissa,0,0,X,,2020-21_gr1.txt
+15.00,PAS Giannina,Panetolikos,0,1,2,0-1,2020-21_gr1.txt
+17.15,AE Lárissa,OFI Heraklion,0,1,2,0-1,2020-21_gr1.txt
+19.30,Atromitos,Lamia,0,0,X,,2020-21_gr1.txt
+19.30,Apollon Smyrnis,Volos NFC,0,0,X,,2020-21_gr1.txt
+19.30,Panetolikos,Atromitos,1,3,2,0-2,2020-21_gr1.txt
+,Lamia,OFI Heraklion,0,2,2,0-1,2020-21_gr1.txt
+,Volos NFC,AE Lárissa,3,1,1,2-0,2020-21_gr1.txt
+17.15,PAS Giannina,Apollon Smyrnis,0,2,2,0-1,2020-21_gr1.txt
+19.30,OFI Heraklion,Panetolikos,2,2,X,1-0,2020-21_gr1.txt
+,AE Lárissa,PAS Giannina,2,0,1,2-0,2020-21_gr1.txt
+,Apollon Smyrnis,Lamia,0,1,2,0-1,2020-21_gr1.txt
+,Atromitos,Volos NFC,1,0,1,0-0,2020-21_gr1.txt
+15.00,Asteras Tripolis,Panathinaikos,2,2,X,0-0,2020-21_gr1.txt
+17.15,Olympiakos Piraeus,Aris Saloniki,1,0,1,1-0,2020-21_gr1.txt
+19.30,PAOK Saloniki,AEK Athen,3,1,1,1-1,2020-21_gr1.txt
+15.00,Panathinaikos,PAOK Saloniki,3,0,1,1-0,2020-21_gr1.txt
+17.15,Aris Saloniki,Asteras Tripolis,2,0,1,0-0,2020-21_gr1.txt
+19.30,AEK Athen,Olympiakos Piraeus,1,5,2,0-4,2020-21_gr1.txt
+15.00,Aris Saloniki,AEK Athen,1,3,2,0-3,2020-21_gr1.txt
+17.15,Asteras Tripolis,PAOK Saloniki,1,1,X,0-0,2020-21_gr1.txt
+19.30,Olympiakos Piraeus,Panathinaikos,3,1,1,1-1,2020-21_gr1.txt
+15.00,Panathinaikos,Aris Saloniki,1,2,2,1-0,2020-21_gr1.txt
+17.15,AEK Athen,Asteras Tripolis,3,1,1,1-1,2020-21_gr1.txt
+19.30,PAOK Saloniki,Olympiakos Piraeus,2,0,1,0-0,2020-21_gr1.txt
+17.15,Olympiakos Piraeus,Asteras Tripolis,1,0,1,0-0,2020-21_gr1.txt
+19.30,Aris Saloniki,PAOK Saloniki,0,1,2,0-1,2020-21_gr1.txt
+21.30,AEK Athen,Panathinaikos,1,1,X,0-1,2020-21_gr1.txt
+15.00,PAOK Saloniki,Panathinaikos,0,0,X,,2020-21_gr1.txt
+17.15,Asteras Tripolis,Aris Saloniki,1,1,X,0-0,2020-21_gr1.txt
+19.30,Olympiakos Piraeus,AEK Athen,2,0,1,0-0,2020-21_gr1.txt
+17.15,Aris Saloniki,Olympiakos Piraeus,1,1,X,1-0,2020-21_gr1.txt
+19.30,Panathinaikos,Asteras Tripolis,2,2,X,1-2,2020-21_gr1.txt
+21.30,AEK Athen,PAOK Saloniki,1,2,2,0-0,2020-21_gr1.txt
+15.00,PAOK Saloniki,Aris Saloniki,2,0,1,0-0,2020-21_gr1.txt
+17.15,Asteras Tripolis,Olympiakos Piraeus,0,0,X,,2020-21_gr1.txt
+19.30,Panathinaikos,AEK Athen,0,1,2,0-0,2020-21_gr1.txt
+19.30,Aris Saloniki,Panathinaikos,0,0,X,,2020-21_gr1.txt
+,Asteras Tripolis,AEK Athen,1,1,X,0-0,2020-21_gr1.txt
+,Olympiakos Piraeus,PAOK Saloniki,1,0,1,1-0,2020-21_gr1.txt
+19.30,AEK Athen,Aris Saloniki,0,0,X,,2020-21_gr1.txt
+,Panathinaikos,Olympiakos Piraeus,1,4,2,0-3,2020-21_gr1.txt
+,PAOK Saloniki,Asteras Tripolis,0,1,2,0-1,2020-21_gr1.txt
+21.00,Volos NFC,Lamia,2,2,X,0-0,2023-24_gr1.txt
+19.00,PAS Giannina,AE Kifisias,3,0,1,1-0,2023-24_gr1.txt
+19.30,OFI Heraklion,Aris Saloniki,3,2,1,2-1,2023-24_gr1.txt
+20.00,PAOK Saloniki,Asteras Tripolis,3,0,1,1-0,2023-24_gr1.txt
+22.00,Olympiakos Piraeus,Panserraikos,2,0,1,0-0,2023-24_gr1.txt
+19.30,AEK Athen,Panetolikos,3,0,1,2-0,2023-24_gr1.txt
+21.30,Panathinaikos,Atromitos,5,0,1,3-0,2023-24_gr1.txt
+21.00,Panetolikos,PAS Giannina,0,0,X,,2023-24_gr1.txt
+20.00,Asteras Tripolis,OFI Heraklion,3,0,1,2-0,2023-24_gr1.txt
+,Panathinaikos,Volos NFC,3,0,1,2-0,2023-24_gr1.txt
+21.30,AEK Athen,Panserraikos,1,1,X,0-1,2023-24_gr1.txt
+19.15,Lamia,Aris Saloniki,1,0,1,1-0,2023-24_gr1.txt
+21.00,PAOK Saloniki,AE Kifisias,2,1,1,1-0,2023-24_gr1.txt
+21.30,Olympiakos Piraeus,Atromitos,4,0,1,2-0,2023-24_gr1.txt
+21.00,AE Kifisias,Atromitos,2,1,1,1-0,2023-24_gr1.txt
+21.00,Panserraikos,Panetolikos,1,1,X,1-0,2023-24_gr1.txt
+20.00,Aris Saloniki,Asteras Tripolis,3,2,1,1-1,2023-24_gr1.txt
+,OFI Heraklion,PAOK Saloniki,1,0,1,0-0,2023-24_gr1.txt
+,Olympiakos Piraeus,Lamia,4,0,1,2-0,2023-24_gr1.txt
+21.30,Volos NFC,AEK Athen,2,3,2,1-2,2023-24_gr1.txt
+21.45,PAS Giannina,Panathinaikos,0,1,2,0-0,2023-24_gr1.txt
+17.30,Lamia,OFI Heraklion,2,2,X,0-1,2023-24_gr1.txt
+20.30,Panetolikos,Panathinaikos,0,5,2,0-2,2023-24_gr1.txt
+15.00,Asteras Tripolis,PAS Giannina,2,2,X,2-2,2023-24_gr1.txt
+18.00,AE Kifisias,Panserraikos,4,4,X,0-3,2023-24_gr1.txt
+20.30,PAOK Saloniki,Aris Saloniki,0,0,X,,2023-24_gr1.txt
+21.30,AEK Athen,Olympiakos Piraeus,1,1,X,1-1,2023-24_gr1.txt
+18.00,Atromitos,Volos NFC,1,1,X,1-0,2023-24_gr1.txt
+17.30,OFI Heraklion,Atromitos,1,1,X,1-0,2023-24_gr1.txt
+20.00,Panserraikos,Lamia,2,0,1,0-0,2023-24_gr1.txt
+17.00,Olympiakos Piraeus,AE Kifisias,4,0,1,2-0,2023-24_gr1.txt
+17.30,Aris Saloniki,Panetolikos,3,0,1,1-0,2023-24_gr1.txt
+20.00,Volos NFC,Asteras Tripolis,1,2,2,0-2,2023-24_gr1.txt
+20.30,PAS Giannina,PAOK Saloniki,1,3,2,1-2,2023-24_gr1.txt
+21.00,Panathinaikos,AEK Athen,1,2,2,1-1,2023-24_gr1.txt
+16.00,Panetolikos,OFI Heraklion,1,1,X,1-1,2023-24_gr1.txt
+18.00,AE Kifisias,Lamia,1,1,X,0-0,2023-24_gr1.txt
+20.30,Olympiakos Piraeus,Aris Saloniki,4,1,1,1-0,2023-24_gr1.txt
+,PAOK Saloniki,Volos NFC,3,0,1,2-0,2023-24_gr1.txt
+17.30,Panserraikos,PAS Giannina,3,2,1,2-1,2023-24_gr1.txt
+20.30,Asteras Tripolis,Panathinaikos,1,4,2,1-2,2023-24_gr1.txt
+21.00,AEK Athen,Atromitos,2,1,1,1-0,2023-24_gr1.txt
+15.00,Lamia,Panetolikos,1,0,1,1-0,2023-24_gr1.txt
+17.30,Aris Saloniki,AE Kifisias,1,1,X,1-0,2023-24_gr1.txt
+19.30,Panathinaikos,PAOK Saloniki,2,2,X,1-1,2023-24_gr1.txt
+20.30,PAS Giannina,Olympiakos Piraeus,0,3,2,0-2,2023-24_gr1.txt
+18.00,Atromitos,Asteras Tripolis,0,0,X,,2023-24_gr1.txt
+20.00,OFI Heraklion,AEK Athen,2,0,1,1-0,2023-24_gr1.txt
+17.00,Volos NFC,Panserraikos,1,0,1,0-0,2023-24_gr1.txt
+20.30,Lamia,PAS Giannina,2,1,1,2-1,2023-24_gr1.txt
+17.30,Panetolikos,Volos NFC,2,0,1,1-0,2023-24_gr1.txt
+20.00,Panserraikos,Aris Saloniki,0,1,2,0-0,2023-24_gr1.txt
+16.00,Asteras Tripolis,AEK Athen,0,3,2,0-1,2023-24_gr1.txt
+,AE Kifisias,OFI Heraklion,0,0,X,,2023-24_gr1.txt
+18.30,PAOK Saloniki,Atromitos,2,0,1,1-0,2023-24_gr1.txt
+19.30,Olympiakos Piraeus,Panathinaikos,0,3,2,0-1,2023-24_gr1.txt
+17.30,Volos NFC,AE Kifisias,2,1,1,1-0,2023-24_gr1.txt
+20.00,Atromitos,Panetolikos,3,2,1,0-1,2023-24_gr1.txt
+17.30,Asteras Tripolis,Lamia,0,1,2,0-0,2023-24_gr1.txt
+19.30,Panathinaikos,Panserraikos,5,0,1,3-0,2023-24_gr1.txt
+20.30,Aris Saloniki,PAS Giannina,2,0,1,0-0,2023-24_gr1.txt
+19.30,AEK Athen,PAOK Saloniki,2,0,1,1-0,2023-24_gr1.txt
+21.30,OFI Heraklion,Olympiakos Piraeus,0,2,2,0-1,2023-24_gr1.txt
+17.30,Lamia,Panathinaikos,1,2,2,0-1,2023-24_gr1.txt
+20.00,AE Kifisias,AEK Athen,1,1,X,0-0,2023-24_gr1.txt
+16.00,Panetolikos,Asteras Tripolis,0,1,2,0-1,2023-24_gr1.txt
+17.30,PAS Giannina,Volos NFC,1,1,X,0-0,2023-24_gr1.txt
+19.30,Olympiakos Piraeus,PAOK Saloniki,2,4,2,0-1,2023-24_gr1.txt
+20.15,Aris Saloniki,Atromitos,1,3,2,1-1,2023-24_gr1.txt
+18.00,Panserraikos,OFI Heraklion,2,1,1,1-1,2023-24_gr1.txt
+17.30,OFI Heraklion,PAS Giannina,1,1,X,1-0,2023-24_gr1.txt
+19.30,Atromitos,Panserraikos,1,1,X,0-1,2023-24_gr1.txt
+20.00,Volos NFC,Aris Saloniki,0,2,2,0-0,2023-24_gr1.txt
+17.30,PAOK Saloniki,Panetolikos,2,1,1,2-1,2023-24_gr1.txt
+19.30,AEK Athen,Lamia,3,0,1,2-0,2023-24_gr1.txt
+20.30,Asteras Tripolis,Olympiakos Piraeus,0,2,2,0-0,2023-24_gr1.txt
+21.30,AE Kifisias,Panathinaikos,0,1,2,0-0,2023-24_gr1.txt
+18.15,OFI Heraklion,Volos NFC,1,1,X,0-1,2023-24_gr1.txt
+17.30,Olympiakos Piraeus,Panetolikos,3,1,1,2-1,2023-24_gr1.txt
+19.30,PAOK Saloniki,Panserraikos,5,0,1,2-0,2023-24_gr1.txt
+16.00,AE Kifisias,Asteras Tripolis,1,3,2,0-2,2023-24_gr1.txt
+17.00,PAS Giannina,AEK Athen,0,1,2,0-1,2023-24_gr1.txt
+19.30,Lamia,Atromitos,3,3,X,2-2,2023-24_gr1.txt
+20.30,Aris Saloniki,Panathinaikos,2,0,1,1-0,2023-24_gr1.txt
+17.30,Panetolikos,AE Kifisias,3,0,1,1-0,2023-24_gr1.txt
+20.00,Asteras Tripolis,Panserraikos,1,0,1,0-0,2023-24_gr1.txt
+16.30,Volos NFC,Olympiakos Piraeus,2,2,X,1-1,2023-24_gr1.txt
+17.30,Atromitos,PAS Giannina,1,1,X,0-0,2023-24_gr1.txt
+19.30,Panathinaikos,OFI Heraklion,4,0,1,1-0,2023-24_gr1.txt
+18.00,PAOK Saloniki,Lamia,3,0,1,2-0,2023-24_gr1.txt
+21.00,AEK Athen,Aris Saloniki,1,0,1,0-0,2023-24_gr1.txt
+17.30,AE Kifisias,PAS Giannina,4,2,1,3-2,2023-24_gr1.txt
+15.00,Aris Saloniki,OFI Heraklion,1,0,1,1-0,2023-24_gr1.txt
+17.30,Asteras Tripolis,PAOK Saloniki,1,4,2,0-1,2023-24_gr1.txt
+19.30,Lamia,Volos NFC,1,2,2,0-0,2023-24_gr1.txt
+20.30,Atromitos,Panathinaikos,3,2,1,1-1,2023-24_gr1.txt
+17.00,Panetolikos,AEK Athen,2,2,X,1-2,2023-24_gr1.txt
+18.00,Panserraikos,Olympiakos Piraeus,0,1,2,0-0,2023-24_gr1.txt
+17.00,Aris Saloniki,Lamia,2,2,X,0-0,2023-24_gr1.txt
+19.00,Volos NFC,Panathinaikos,0,3,2,0-0,2023-24_gr1.txt
+15.00,PAS Giannina,Panetolikos,0,0,X,,2023-24_gr1.txt
+17.00,Panserraikos,AEK Athen,2,2,X,1-2,2023-24_gr1.txt
+17.30,OFI Heraklion,Asteras Tripolis,0,2,2,0-1,2023-24_gr1.txt
+20.00,AE Kifisias,PAOK Saloniki,0,6,2,0-3,2023-24_gr1.txt
+20.30,Atromitos,Olympiakos Piraeus,0,0,X,,2023-24_gr1.txt
+16.00,Asteras Tripolis,Aris Saloniki,3,2,1,1-2,2023-24_gr1.txt
+17.00,Lamia,Olympiakos Piraeus,1,0,1,1-0,2023-24_gr1.txt
+19.00,AEK Athen,Volos NFC,3,0,1,1-0,2023-24_gr1.txt
+20.00,PAOK Saloniki,OFI Heraklion,4,0,1,2-0,2023-24_gr1.txt
+21.00,Panathinaikos,PAS Giannina,2,0,1,1-0,2023-24_gr1.txt
+17.00,Panetolikos,Panserraikos,3,2,1,1-1,2023-24_gr1.txt
+19.00,Atromitos,AE Kifisias,3,0,1,1-0,2023-24_gr1.txt
+15.00,Panserraikos,AE Kifisias,1,1,X,0-1,2023-24_gr1.txt
+,Volos NFC,Atromitos,1,2,2,0-1,2023-24_gr1.txt
+17.00,Panathinaikos,Panetolikos,2,1,1,0-0,2023-24_gr1.txt
+17.30,PAS Giannina,Asteras Tripolis,2,1,1,2-1,2023-24_gr1.txt
+19.30,Aris Saloniki,PAOK Saloniki,2,1,1,0-0,2023-24_gr1.txt
+21.00,Olympiakos Piraeus,AEK Athen,1,2,2,1-2,2023-24_gr1.txt
+20.00,OFI Heraklion,Lamia,1,1,X,1-1,2023-24_gr1.txt
+19.00,Atromitos,OFI Heraklion,1,1,X,0-0,2023-24_gr1.txt
+20.00,Lamia,Panserraikos,0,2,2,0-1,2023-24_gr1.txt
+15.00,Panetolikos,Aris Saloniki,0,4,2,0-1,2023-24_gr1.txt
+17.00,AE Kifisias,Olympiakos Piraeus,2,3,2,1-2,2023-24_gr1.txt
+17.30,Asteras Tripolis,Volos NFC,1,0,1,0-0,2023-24_gr1.txt
+20.30,AEK Athen,Panathinaikos,2,2,X,1-1,2023-24_gr1.txt
+,PAOK Saloniki,PAS Giannina,4,0,1,1-0,2023-24_gr1.txt
+17.30,Lamia,AE Kifisias,4,1,1,2-1,2023-24_gr1.txt
+19.00,PAS Giannina,Panserraikos,0,2,2,0-2,2023-24_gr1.txt
+20.00,OFI Heraklion,Panetolikos,1,0,1,1-0,2023-24_gr1.txt
+16.00,Volos NFC,PAOK Saloniki,1,5,2,0-2,2023-24_gr1.txt
+17.30,Atromitos,AEK Athen,0,5,2,0-3,2023-24_gr1.txt
+19.30,Panathinaikos,Asteras Tripolis,2,0,1,0-0,2023-24_gr1.txt
+20.30,Aris Saloniki,Olympiakos Piraeus,1,2,2,0-2,2023-24_gr1.txt
+17.30,Panetolikos,Lamia,1,2,2,0-1,2023-24_gr1.txt
+19.30,Panserraikos,Volos NFC,2,2,X,0-1,2023-24_gr1.txt
+20.00,AE Kifisias,Aris Saloniki,0,1,2,0-1,2023-24_gr1.txt
+16.00,AEK Athen,OFI Heraklion,3,0,1,1-0,2023-24_gr1.txt
+17.30,Asteras Tripolis,Atromitos,3,1,1,1-0,2023-24_gr1.txt
+19.30,Olympiakos Piraeus,PAS Giannina,3,1,1,0-0,2023-24_gr1.txt
+20.30,PAOK Saloniki,Panathinaikos,2,1,1,1-0,2023-24_gr1.txt
+17.30,Volos NFC,Panetolikos,1,1,X,1-1,2023-24_gr1.txt
+19.30,Panserraikos,Aris Saloniki,1,1,X,0-0,2023-24_gr1.txt
+16.00,OFI Heraklion,AE Kifisias,1,2,2,0-1,2023-24_gr1.txt
+17.30,AEK Athen,Asteras Tripolis,4,2,1,3-1,2023-24_gr1.txt
+,PAS Giannina,Lamia,1,4,2,1-2,2023-24_gr1.txt
+20.30,Atromitos,PAOK Saloniki,0,2,2,0-0,2023-24_gr1.txt
+21.00,Panathinaikos,Olympiakos Piraeus,2,0,1,1-0,2023-24_gr1.txt
+17.30,Olympiakos Piraeus,OFI Heraklion,4,0,1,3-0,2023-24_gr1.txt
+19.00,PAS Giannina,Aris Saloniki,0,0,X,,2023-24_gr1.txt
+19.30,Panetolikos,Atromitos,1,0,1,1-0,2023-24_gr1.txt
+16.00,AE Kifisias,Volos NFC,3,0,1,,2023-24_gr1.txt
+17.00,Panserraikos,Panathinaikos,0,3,2,0-2,2023-24_gr1.txt
+19.30,Lamia,Asteras Tripolis,2,1,1,0-1,2023-24_gr1.txt
+20.00,PAOK Saloniki,AEK Athen,1,1,X,0-0,2023-24_gr1.txt
+19.30,Atromitos,Aris Saloniki,0,2,2,0-1,2023-24_gr1.txt
+20.30,Panathinaikos,Lamia,2,2,X,1-1,2023-24_gr1.txt
+15.30,Volos NFC,PAS Giannina,1,2,2,0-1,2023-24_gr1.txt
+19.00,AEK Athen,AE Kifisias,3,0,1,2-0,2023-24_gr1.txt
+20.30,PAOK Saloniki,Olympiakos Piraeus,1,4,2,1-1,2023-24_gr1.txt
+17.30,OFI Heraklion,Panserraikos,4,0,1,3-0,2023-24_gr1.txt
+18.00,Asteras Tripolis,Panetolikos,2,2,X,1-1,2023-24_gr1.txt
+19.00,Lamia,AEK Athen,1,3,2,0-2,2023-24_gr1.txt
+19.30,Panserraikos,Atromitos,0,0,X,,2023-24_gr1.txt
+16.30,PAS Giannina,OFI Heraklion,2,2,X,2-0,2023-24_gr1.txt
+17.00,Panetolikos,PAOK Saloniki,1,3,2,1-0,2023-24_gr1.txt
+18.00,Olympiakos Piraeus,Asteras Tripolis,2,1,1,0-1,2023-24_gr1.txt
+19.30,Aris Saloniki,Volos NFC,2,0,1,1-0,2023-24_gr1.txt
+20.00,Panathinaikos,AE Kifisias,1,1,X,1-0,2023-24_gr1.txt
+15.00,Asteras Tripolis,AE Kifisias,3,3,X,3-2,2023-24_gr1.txt
+,Volos NFC,OFI Heraklion,3,1,1,1-1,2023-24_gr1.txt
+17.00,Atromitos,Lamia,3,1,1,1-1,2023-24_gr1.txt
+,Panetolikos,Olympiakos Piraeus,1,2,2,1-0,2023-24_gr1.txt
+19.00,AEK Athen,PAS Giannina,4,2,1,1-2,2023-24_gr1.txt
+20.00,Panserraikos,PAOK Saloniki,0,2,2,0-1,2023-24_gr1.txt
+21.00,Panathinaikos,Aris Saloniki,2,0,1,1-0,2023-24_gr1.txt
+19.30,Aris Saloniki,AEK Athen,3,3,X,1-1,2023-24_gr1.txt
+,AE Kifisias,Panetolikos,2,2,X,1-0,2023-24_gr1.txt
+,Lamia,PAOK Saloniki,0,2,2,0-0,2023-24_gr1.txt
+,OFI Heraklion,Panathinaikos,2,2,X,1-1,2023-24_gr1.txt
+,Olympiakos Piraeus,Volos NFC,3,0,1,2-0,2023-24_gr1.txt
+,Panserraikos,Asteras Tripolis,2,1,1,1-1,2023-24_gr1.txt
+,PAS Giannina,Atromitos,1,1,X,1-0,2023-24_gr1.txt
+17.00,Asteras Tripolis,Volos NFC,0,2,2,0-0,2023-24_gr1.txt
+17.30,AE Kifisias,OFI Heraklion,0,0,X,,2023-24_gr1.txt
+19.30,Atromitos,PAS Giannina,3,2,1,1-0,2023-24_gr1.txt
+20.00,Panetolikos,Panserraikos,3,0,1,2-0,2023-24_gr1.txt
+15.00,Panserraikos,Asteras Tripolis,2,0,1,0-0,2023-24_gr1.txt
+17.30,Volos NFC,AE Kifisias,4,1,1,3-1,2023-24_gr1.txt
+19.30,PAS Giannina,Panetolikos,1,1,X,1-0,2023-24_gr1.txt
+20.00,OFI Heraklion,Atromitos,0,0,X,,2023-24_gr1.txt
+17.00,Atromitos,Panserraikos,1,1,X,0-1,2023-24_gr1.txt
+19.30,Asteras Tripolis,AE Kifisias,1,2,2,1-0,2023-24_gr1.txt
+,Panetolikos,Volos NFC,0,1,2,0-1,2023-24_gr1.txt
+20.00,OFI Heraklion,PAS Giannina,4,0,1,2-0,2023-24_gr1.txt
+15.00,Panserraikos,OFI Heraklion,2,2,X,2-1,2023-24_gr1.txt
+17.30,Volos NFC,Atromitos,2,2,X,1-1,2023-24_gr1.txt
+19.30,PAS Giannina,Asteras Tripolis,0,1,2,0-0,2023-24_gr1.txt
+20.00,AE Kifisias,Panetolikos,0,1,2,0-0,2023-24_gr1.txt
+18.30,OFI Heraklion,Volos NFC,2,1,1,1-0,2023-24_gr1.txt
+19.30,Asteras Tripolis,Panetolikos,0,2,2,0-1,2023-24_gr1.txt
+,Atromitos,AE Kifisias,1,2,2,1-0,2023-24_gr1.txt
+15.00,Panserraikos,PAS Giannina,2,1,1,2-0,2023-24_gr1.txt
+20.00,Asteras Tripolis,OFI Heraklion,1,1,X,1-0,2023-24_gr1.txt
+,Volos NFC,Panserraikos,1,0,1,0-0,2023-24_gr1.txt
+,AE Kifisias,PAS Giannina,2,3,2,1-1,2023-24_gr1.txt
+,Panetolikos,Atromitos,1,0,1,0-0,2023-24_gr1.txt
+20.00,Atromitos,Asteras Tripolis,0,1,2,0-0,2023-24_gr1.txt
+,OFI Heraklion,Panetolikos,1,2,2,0-1,2023-24_gr1.txt
+,Panserraikos,AE Kifisias,2,0,1,0-0,2023-24_gr1.txt
+,PAS Giannina,Volos NFC,1,1,X,0-0,2023-24_gr1.txt
+17.00,Lamia,AEK Athen,0,4,2,0-1,2023-24_gr1.txt
+20.30,Olympiakos Piraeus,Panathinaikos,1,3,2,1-2,2023-24_gr1.txt
+21.00,PAOK Saloniki,Aris Saloniki,0,1,2,0-1,2023-24_gr1.txt
+18.00,Panathinaikos,PAOK Saloniki,2,3,2,1-2,2023-24_gr1.txt
+20.30,AEK Athen,Olympiakos Piraeus,1,0,1,0-0,2023-24_gr1.txt
+,Aris Saloniki,Lamia,3,1,1,0-0,2023-24_gr1.txt
+19.00,Olympiakos Piraeus,Aris Saloniki,3,0,1,1-0,2023-24_gr1.txt
+19.30,PAOK Saloniki,Lamia,3,1,1,1-1,2023-24_gr1.txt
+21.00,Panathinaikos,AEK Athen,2,1,1,2-1,2023-24_gr1.txt
+17.00,Lamia,Olympiakos Piraeus,1,5,2,0-3,2023-24_gr1.txt
+19.30,Aris Saloniki,Panathinaikos,0,2,2,0-0,2023-24_gr1.txt
+20.30,AEK Athen,PAOK Saloniki,2,2,X,1-0,2023-24_gr1.txt
+17.00,Panathinaikos,Lamia,3,1,1,1-1,2023-24_gr1.txt
+20.30,AEK Athen,Aris Saloniki,2,0,1,2-0,2023-24_gr1.txt
+20.00,PAOK Saloniki,Olympiakos Piraeus,2,0,1,1-0,2023-24_gr1.txt
+17.00,Lamia,Panathinaikos,0,5,2,0-2,2023-24_gr1.txt
+19.30,Aris Saloniki,AEK Athen,1,2,2,1-0,2023-24_gr1.txt
+20.30,Olympiakos Piraeus,PAOK Saloniki,2,1,1,1-0,2023-24_gr1.txt
+17.00,Lamia,PAOK Saloniki,1,1,X,1-0,2023-24_gr1.txt
+19.30,Aris Saloniki,Olympiakos Piraeus,1,1,X,0-0,2023-24_gr1.txt
+20.30,AEK Athen,Panathinaikos,3,0,1,2-0,2023-24_gr1.txt
+17.00,Olympiakos Piraeus,Lamia,4,1,1,2-0,2023-24_gr1.txt
+19.30,PAOK Saloniki,AEK Athen,3,2,1,1-1,2023-24_gr1.txt
+20.30,Panathinaikos,Aris Saloniki,0,1,2,0-1,2023-24_gr1.txt
+18.00,Lamia,Aris Saloniki,2,4,2,2-0,2023-24_gr1.txt
+20.00,Olympiakos Piraeus,AEK Athen,2,0,1,0-0,2023-24_gr1.txt
+,PAOK Saloniki,Panathinaikos,4,1,1,1-0,2023-24_gr1.txt
+20.00,AEK Athen,Lamia,3,0,1,2-0,2023-24_gr1.txt
+,Aris Saloniki,PAOK Saloniki,1,2,2,0-1,2023-24_gr1.txt
+,Panathinaikos,Olympiakos Piraeus,2,2,X,1-0,2023-24_gr1.txt
+20.00,Volos NFC,Olympiakos Piraeus,0,2,2,0-1,2024-25_gr1.txt
+,PAOK Saloniki,Panserraikos,3,2,1,2-1,2024-25_gr1.txt
+19.00,Levadiakos,GS Kallithea,0,0,X,,2024-25_gr1.txt
+20.00,Panathinaikos,Asteras Tripolis,0,1,2,0-0,2024-25_gr1.txt
+20.30,Atromitos,Aris Saloniki,1,1,X,0-0,2024-25_gr1.txt
+22.00,AEK Athen,OFI Heraklion,3,0,1,2-0,2024-25_gr1.txt
+21.00,Panetolikos,Lamia,0,1,2,0-0,2024-25_gr1.txt
+19.30,OFI Heraklion,Atromitos,1,1,X,1-0,2024-25_gr1.txt
+20.00,Panserraikos,Aris Saloniki,0,1,2,0-1,2024-25_gr1.txt
+21.30,AEK Athen,Lamia,1,1,X,0-1,2024-25_gr1.txt
+19.00,Asteras Tripolis,Volos NFC,0,1,2,0-1,2024-25_gr1.txt
+20.30,PAOK Saloniki,Panetolikos,2,0,1,0-0,2024-25_gr1.txt
+21.00,Panathinaikos,Levadiakos,1,0,1,0-0,2024-25_gr1.txt
+20.30,Olympiakos Piraeus,GS Kallithea,2,1,1,1-0,2024-25_gr1.txt
+19.30,Lamia,Olympiakos Piraeus,0,3,2,0-1,2024-25_gr1.txt
+20.00,Aris Saloniki,Asteras Tripolis,1,1,X,0-0,2024-25_gr1.txt
+22.00,Panetolikos,Panserraikos,3,0,1,1-0,2024-25_gr1.txt
+19.00,Levadiakos,AEK Athen,0,3,2,0-1,2024-25_gr1.txt
+19.30,Volos NFC,OFI Heraklion,1,3,2,0-1,2024-25_gr1.txt
+20.30,Atromitos,PAOK Saloniki,1,2,2,0-1,2024-25_gr1.txt
+22.00,GS Kallithea,Panathinaikos,2,2,X,1-1,2024-25_gr1.txt
+18.00,Lamia,GS Kallithea,0,0,X,,2024-25_gr1.txt
+20.00,Asteras Tripolis,Atromitos,1,2,2,1-2,2024-25_gr1.txt
+16.30,Panserraikos,Levadiakos,2,2,X,2-0,2024-25_gr1.txt
+18.30,Olympiakos Piraeus,Panetolikos,0,0,X,,2024-25_gr1.txt
+20.30,OFI Heraklion,Aris Saloniki,3,2,1,1-0,2024-25_gr1.txt
+,PAOK Saloniki,Panathinaikos,0,0,X,,2024-25_gr1.txt
+20.00,AEK Athen,Volos NFC,2,0,1,1-0,2024-25_gr1.txt
+17.00,Volos NFC,PAOK Saloniki,1,4,2,0-1,2024-25_gr1.txt
+20.00,Aris Saloniki,Olympiakos Piraeus,2,1,1,2-0,2024-25_gr1.txt
+20.30,Panetolikos,Asteras Tripolis,1,1,X,1-1,2024-25_gr1.txt
+16.30,Levadiakos,OFI Heraklion,1,1,X,0-0,2024-25_gr1.txt
+18.00,Panathinaikos,Panserraikos,3,1,1,1-1,2024-25_gr1.txt
+20.30,Atromitos,Lamia,4,2,1,1-1,2024-25_gr1.txt
+21.00,GS Kallithea,AEK Athen,0,0,X,,2024-25_gr1.txt
+17.00,Volos NFC,GS Kallithea,1,1,X,1-1,2024-25_gr1.txt
+20.00,Asteras Tripolis,Levadiakos,1,1,X,1-1,2024-25_gr1.txt
+17.00,OFI Heraklion,Panetolikos,1,2,2,1-0,2024-25_gr1.txt
+18.00,Olympiakos Piraeus,Atromitos,2,0,1,1-0,2024-25_gr1.txt
+20.30,PAOK Saloniki,Aris Saloniki,0,1,2,0-0,2024-25_gr1.txt
+21.30,AEK Athen,Panathinaikos,2,0,1,1-0,2024-25_gr1.txt
+20.00,Lamia,Panserraikos,1,2,2,0-1,2024-25_gr1.txt
+18.30,Atromitos,Volos NFC,1,2,2,1-0,2024-25_gr1.txt
+19.30,Panetolikos,AEK Athen,1,0,1,0-0,2024-25_gr1.txt
+20.00,Aris Saloniki,Lamia,2,0,1,2-0,2024-25_gr1.txt
+16.00,Panserraikos,OFI Heraklion,2,3,2,2-2,2024-25_gr1.txt
+17.00,GS Kallithea,Asteras Tripolis,1,3,2,1-1,2024-25_gr1.txt
+20.30,Levadiakos,PAOK Saloniki,0,2,2,0-0,2024-25_gr1.txt
+,Panathinaikos,Olympiakos Piraeus,0,0,X,,2024-25_gr1.txt
+17.00,Volos NFC,Panserraikos,0,1,2,0-0,2024-25_gr1.txt
+20.00,Atromitos,Panetolikos,0,2,2,0-2,2024-25_gr1.txt
+20.30,Lamia,Asteras Tripolis,0,0,X,,2024-25_gr1.txt
+16.00,Olympiakos Piraeus,Levadiakos,2,2,X,2-1,2024-25_gr1.txt
+18.00,OFI Heraklion,Panathinaikos,0,1,2,0-1,2024-25_gr1.txt
+20.00,Aris Saloniki,GS Kallithea,2,0,1,0-0,2024-25_gr1.txt
+20.30,AEK Athen,PAOK Saloniki,1,1,X,1-1,2024-25_gr1.txt
+17.00,Panetolikos,Volos NFC,0,1,2,0-0,2024-25_gr1.txt
+17.30,Levadiakos,Lamia,2,2,X,1-1,2024-25_gr1.txt
+20.00,Panserraikos,AEK Athen,1,0,1,1-0,2024-25_gr1.txt
+17.00,Asteras Tripolis,Olympiakos Piraeus,1,0,1,1-0,2024-25_gr1.txt
+18.00,Panathinaikos,Aris Saloniki,1,1,X,1-0,2024-25_gr1.txt
+21.00,PAOK Saloniki,OFI Heraklion,1,2,2,1-0,2024-25_gr1.txt
+21.30,GS Kallithea,Atromitos,0,3,2,0-1,2024-25_gr1.txt
+17.00,Olympiakos Piraeus,Panserraikos,2,1,1,1-0,2024-25_gr1.txt
+20.30,GS Kallithea,Panetolikos,1,1,X,1-1,2024-25_gr1.txt
+16.30,Aris Saloniki,Levadiakos,3,1,1,2-1,2024-25_gr1.txt
+17.00,Volos NFC,Panathinaikos,0,1,2,0-1,2024-25_gr1.txt
+20.30,Atromitos,AEK Athen,0,1,2,0-1,2024-25_gr1.txt
+,Lamia,PAOK Saloniki,1,2,2,1-0,2024-25_gr1.txt
+17.30,Asteras Tripolis,OFI Heraklion,3,0,1,0-0,2024-25_gr1.txt
+17.00,Panetolikos,Aris Saloniki,2,1,1,1-1,2024-25_gr1.txt
+18.45,Panserraikos,Atromitos,2,3,2,1-3,2024-25_gr1.txt
+20.00,AEK Athen,Asteras Tripolis,3,0,1,2-0,2024-25_gr1.txt
+16.00,OFI Heraklion,GS Kallithea,2,2,X,2-0,2024-25_gr1.txt
+16.30,Levadiakos,Volos NFC,3,2,1,1-1,2024-25_gr1.txt
+19.30,Panathinaikos,Lamia,1,0,1,0-0,2024-25_gr1.txt
+20.30,PAOK Saloniki,Olympiakos Piraeus,2,3,2,0-1,2024-25_gr1.txt
+19.30,GS Kallithea,Panserraikos,1,2,2,0-1,2024-25_gr1.txt
+17.00,Lamia,OFI Heraklion,1,1,X,1-1,2024-25_gr1.txt
+19.30,Aris Saloniki,Volos NFC,0,1,2,0-1,2024-25_gr1.txt
+17.00,Panetolikos,Panathinaikos,1,2,2,0-1,2024-25_gr1.txt
+19.30,Asteras Tripolis,PAOK Saloniki,1,2,2,0-0,2024-25_gr1.txt
+20.30,Olympiakos Piraeus,AEK Athen,4,1,1,1-1,2024-25_gr1.txt
+18.00,Atromitos,Levadiakos,2,1,1,0-1,2024-25_gr1.txt
+17.00,Volos NFC,Lamia,0,0,X,,2024-25_gr1.txt
+19.30,Levadiakos,Panetolikos,1,1,X,1-0,2024-25_gr1.txt
+20.30,AEK Athen,Aris Saloniki,4,0,1,2-0,2024-25_gr1.txt
+15.30,Panserraikos,Asteras Tripolis,2,1,1,1-1,2024-25_gr1.txt
+17.00,OFI Heraklion,Olympiakos Piraeus,0,2,2,0-0,2024-25_gr1.txt
+19.00,PAOK Saloniki,GS Kallithea,2,2,X,1-0,2024-25_gr1.txt
+20.30,Panathinaikos,Atromitos,1,1,X,1-0,2024-25_gr1.txt
+17.00,Olympiakos Piraeus,Volos NFC,3,0,1,2-0,2024-25_gr1.txt
+19.30,Aris Saloniki,Atromitos,2,1,1,2-0,2024-25_gr1.txt
+15.30,Panserraikos,PAOK Saloniki,1,4,2,0-2,2024-25_gr1.txt
+17.00,OFI Heraklion,AEK Athen,1,2,2,1-1,2024-25_gr1.txt
+19.00,Asteras Tripolis,Panathinaikos,0,1,2,0-0,2024-25_gr1.txt
+20.30,Lamia,Panetolikos,0,1,2,0-1,2024-25_gr1.txt
+17.30,GS Kallithea,Levadiakos,2,4,2,1-0,2024-25_gr1.txt
+17.00,Lamia,AEK Athen,0,1,2,0-0,2024-25_gr1.txt
+19.30,Atromitos,OFI Heraklion,0,0,X,,2024-25_gr1.txt
+20.30,Volos NFC,Asteras Tripolis,2,1,1,0-0,2024-25_gr1.txt
+15.30,Aris Saloniki,Panserraikos,1,0,1,0-0,2024-25_gr1.txt
+18.00,Levadiakos,Panathinaikos,0,1,2,0-0,2024-25_gr1.txt
+19.00,Panetolikos,PAOK Saloniki,0,1,2,0-0,2024-25_gr1.txt
+20.30,GS Kallithea,Olympiakos Piraeus,1,1,X,0-0,2024-25_gr1.txt
+19.00,Olympiakos Piraeus,Lamia,1,0,1,0-0,2024-25_gr1.txt
+15.30,Panserraikos,Panetolikos,0,0,X,,2024-25_gr1.txt
+18.00,Panathinaikos,GS Kallithea,1,0,1,0-0,2024-25_gr1.txt
+19.30,PAOK Saloniki,Atromitos,3,0,1,1-0,2024-25_gr1.txt
+21.00,AEK Athen,Levadiakos,1,1,X,0-0,2024-25_gr1.txt
+15.00,Asteras Tripolis,Aris Saloniki,2,1,1,0-1,2024-25_gr1.txt
+18.00,OFI Heraklion,Volos NFC,4,0,1,2-0,2024-25_gr1.txt
+17.00,GS Kallithea,Lamia,2,1,1,1-0,2024-25_gr1.txt
+15.00,Levadiakos,Panserraikos,1,0,1,0-0,2024-25_gr1.txt
+16.30,Aris Saloniki,OFI Heraklion,0,2,2,0-0,2024-25_gr1.txt
+17.00,Volos NFC,AEK Athen,2,4,2,0-1,2024-25_gr1.txt
+19.30,Atromitos,Asteras Tripolis,0,1,2,0-0,2024-25_gr1.txt
+20.30,Panathinaikos,PAOK Saloniki,2,1,1,1-1,2024-25_gr1.txt
+18.00,Panetolikos,Olympiakos Piraeus,0,2,2,0-1,2024-25_gr1.txt
+20.30,Olympiakos Piraeus,Aris Saloniki,2,1,1,0-1,2024-25_gr1.txt
+16.30,Panserraikos,Panathinaikos,2,2,X,0-1,2024-25_gr1.txt
+17.00,Lamia,Atromitos,0,3,2,0-2,2024-25_gr1.txt
+19.30,PAOK Saloniki,Volos NFC,1,2,2,0-0,2024-25_gr1.txt
+20.30,AEK Athen,GS Kallithea,2,0,1,1-0,2024-25_gr1.txt
+18.00,Asteras Tripolis,Panetolikos,2,0,1,0-0,2024-25_gr1.txt
+,OFI Heraklion,Levadiakos,0,0,X,,2024-25_gr1.txt
+17.00,GS Kallithea,Volos NFC,2,0,1,0-0,2024-25_gr1.txt
+15.00,Atromitos,Olympiakos Piraeus,1,2,2,1-2,2024-25_gr1.txt
+16.30,Levadiakos,Asteras Tripolis,1,2,2,1-0,2024-25_gr1.txt
+,Panetolikos,OFI Heraklion,1,0,1,1-0,2024-25_gr1.txt
+19.00,Aris Saloniki,PAOK Saloniki,0,0,X,,2024-25_gr1.txt
+20.30,Panathinaikos,AEK Athen,1,0,1,1-0,2024-25_gr1.txt
+18.00,Panserraikos,Lamia,2,0,1,1-0,2024-25_gr1.txt
+20.00,Volos NFC,Atromitos,0,1,2,0-0,2024-25_gr1.txt
+17.00,Asteras Tripolis,GS Kallithea,1,0,1,1-0,2024-25_gr1.txt
+,OFI Heraklion,Panserraikos,3,2,1,2-1,2024-25_gr1.txt
+20.00,AEK Athen,Panetolikos,1,0,1,0-0,2024-25_gr1.txt
+17.00,Lamia,Aris Saloniki,0,2,2,0-0,2024-25_gr1.txt
+19.30,PAOK Saloniki,Levadiakos,1,0,1,0-0,2024-25_gr1.txt
+20.30,Olympiakos Piraeus,Panathinaikos,1,1,X,1-0,2024-25_gr1.txt
+18.00,Panathinaikos,OFI Heraklion,3,2,1,0-2,2024-25_gr1.txt
+19.30,Panserraikos,Volos NFC,1,1,X,1-0,2024-25_gr1.txt
+16.30,Levadiakos,Olympiakos Piraeus,0,1,2,0-0,2024-25_gr1.txt
+17.00,GS Kallithea,Aris Saloniki,0,1,2,0-1,2024-25_gr1.txt
+19.30,PAOK Saloniki,AEK Athen,1,2,2,0-1,2024-25_gr1.txt
+20.30,Panetolikos,Atromitos,0,1,2,0-1,2024-25_gr1.txt
+18.00,Asteras Tripolis,Lamia,1,0,1,1-0,2024-25_gr1.txt
+17.00,Volos NFC,Panetolikos,0,1,2,0-0,2024-25_gr1.txt
+20.00,OFI Heraklion,PAOK Saloniki,0,5,2,0-3,2024-25_gr1.txt
+17.00,Olympiakos Piraeus,Asteras Tripolis,1,1,X,1-1,2024-25_gr1.txt
+19.30,Aris Saloniki,Panathinaikos,2,0,1,1-0,2024-25_gr1.txt
+20.30,AEK Athen,Panserraikos,5,0,1,2-0,2024-25_gr1.txt
+18.00,Atromitos,GS Kallithea,1,2,2,0-2,2024-25_gr1.txt
+,Lamia,Levadiakos,0,2,2,0-2,2024-25_gr1.txt
+17.00,OFI Heraklion,Asteras Tripolis,2,1,1,0-0,2024-25_gr1.txt
+20.00,AEK Athen,Atromitos,2,1,1,1-1,2024-25_gr1.txt
+15.00,Levadiakos,Aris Saloniki,4,1,1,1-1,2024-25_gr1.txt
+17.00,Panathinaikos,Volos NFC,2,1,1,1-0,2024-25_gr1.txt
+,Panserraikos,Olympiakos Piraeus,0,4,2,0-2,2024-25_gr1.txt
+20.00,PAOK Saloniki,Lamia,7,0,1,2-0,2024-25_gr1.txt
+20.30,Panetolikos,GS Kallithea,2,0,1,0-0,2024-25_gr1.txt
+17.00,GS Kallithea,OFI Heraklion,1,3,2,0-3,2024-25_gr1.txt
+19.30,Atromitos,Panserraikos,1,0,1,0-0,2024-25_gr1.txt
+20.00,Volos NFC,Levadiakos,1,2,2,1-0,2024-25_gr1.txt
+16.30,Aris Saloniki,Panetolikos,2,1,1,2-0,2024-25_gr1.txt
+17.00,Lamia,Panathinaikos,3,1,1,1-0,2024-25_gr1.txt
+19.30,Asteras Tripolis,AEK Athen,0,3,2,0-0,2024-25_gr1.txt
+20.30,Olympiakos Piraeus,PAOK Saloniki,2,1,1,2-1,2024-25_gr1.txt
+17.00,Volos NFC,Aris Saloniki,1,1,X,0-0,2024-25_gr1.txt
+,Panserraikos,GS Kallithea,2,1,1,1-0,2024-25_gr1.txt
+20.00,Panathinaikos,Panetolikos,2,0,1,1-0,2024-25_gr1.txt
+16.30,Levadiakos,Atromitos,1,2,2,1-1,2024-25_gr1.txt
+17.00,OFI Heraklion,Lamia,3,0,1,1-0,2024-25_gr1.txt
+19.30,PAOK Saloniki,Asteras Tripolis,2,0,1,1-0,2024-25_gr1.txt
+20.30,AEK Athen,Olympiakos Piraeus,0,1,2,0-0,2024-25_gr1.txt
+19.00,Asteras Tripolis,Panserraikos,1,2,2,0-0,2024-25_gr1.txt
+,GS Kallithea,PAOK Saloniki,2,1,1,1-1,2024-25_gr1.txt
+,Aris Saloniki,AEK Athen,0,0,X,,2024-25_gr1.txt
+,Atromitos,Panathinaikos,1,1,X,0-0,2024-25_gr1.txt
+,Olympiakos Piraeus,OFI Heraklion,1,0,1,1-0,2024-25_gr1.txt
+,Panetolikos,Levadiakos,0,0,X,,2024-25_gr1.txt
+,Lamia,Volos NFC,1,0,1,1-0,2024-25_gr1.txt
+19.00,AEK Athen,PAOK Saloniki,2,3,2,1-0,2024-25_gr1.txt
+21.00,Olympiakos Piraeus,Panathinaikos,4,2,1,2-1,2024-25_gr1.txt
+19.30,PAOK Saloniki,Olympiakos Piraeus,2,1,1,2-0,2024-25_gr1.txt
+21.30,Panathinaikos,AEK Athen,3,1,1,1-0,2024-25_gr1.txt
+19.00,Panathinaikos,PAOK Saloniki,3,1,1,2-0,2024-25_gr1.txt
+21.00,Olympiakos Piraeus,AEK Athen,1,0,1,0-0,2024-25_gr1.txt
+20.00,AEK Athen,Olympiakos Piraeus,0,2,2,0-1,2024-25_gr1.txt
+,PAOK Saloniki,Panathinaikos,2,1,1,1-1,2024-25_gr1.txt
+20.00,AEK Athen,Panathinaikos,1,2,2,1-0,2024-25_gr1.txt
+,Olympiakos Piraeus,PAOK Saloniki,4,2,1,2-2,2024-25_gr1.txt
+20.00,PAOK Saloniki,AEK Athen,1,0,1,1-0,2024-25_gr1.txt
+,Panathinaikos,Olympiakos Piraeus,0,1,2,0-0,2024-25_gr1.txt
+16.30,OFI Heraklion,Atromitos,1,2,2,1-1,2024-25_gr1.txt
+19.30,Asteras Tripolis,Aris Saloniki,0,2,2,0-1,2024-25_gr1.txt
+19.30,Aris Saloniki,OFI Heraklion,2,0,1,0-0,2024-25_gr1.txt
+18.00,Atromitos,Asteras Tripolis,0,1,2,0-0,2024-25_gr1.txt
+16.30,Asteras Tripolis,OFI Heraklion,2,1,1,1-1,2024-25_gr1.txt
+19.30,Aris Saloniki,Atromitos,1,0,1,0-0,2024-25_gr1.txt
+20.00,Atromitos,Aris Saloniki,1,1,X,0-1,2024-25_gr1.txt
+,OFI Heraklion,Asteras Tripolis,0,2,2,0-0,2024-25_gr1.txt
+20.00,OFI Heraklion,Aris Saloniki,1,1,X,1-0,2024-25_gr1.txt
+,Asteras Tripolis,Atromitos,1,4,2,0-4,2024-25_gr1.txt
+18.30,Aris Saloniki,Asteras Tripolis,4,2,1,2-0,2024-25_gr1.txt
+19.15,Atromitos,OFI Heraklion,0,0,X,,2024-25_gr1.txt
+18.30,GS Kallithea,Volos NFC,1,1,X,0-0,2024-25_gr1.txt
+20.30,Panetolikos,Levadiakos,1,2,2,1-0,2024-25_gr1.txt
+17.00,Panserraikos,Lamia,1,1,X,0-0,2024-25_gr1.txt
+17.00,Levadiakos,Panserraikos,3,0,1,2-0,2024-25_gr1.txt
+20.00,Lamia,GS Kallithea,0,2,2,0-1,2024-25_gr1.txt
+17.00,Volos NFC,Panetolikos,0,0,X,,2024-25_gr1.txt
+17.00,Panetolikos,Lamia,1,0,1,1-0,2024-25_gr1.txt
+19.30,Panserraikos,GS Kallithea,3,1,1,1-1,2024-25_gr1.txt
+20.00,Volos NFC,Levadiakos,1,0,1,1-0,2024-25_gr1.txt
+18.00,Panserraikos,Panetolikos,1,1,X,1-0,2024-25_gr1.txt
+,Lamia,Volos NFC,1,3,2,1-2,2024-25_gr1.txt
+20.30,GS Kallithea,Levadiakos,0,3,2,0-1,2024-25_gr1.txt
+18.00,Levadiakos,Lamia,0,0,X,,2024-25_gr1.txt
+,Panetolikos,GS Kallithea,0,1,2,0-1,2024-25_gr1.txt
+20.00,Volos NFC,Panserraikos,3,0,1,2-0,2024-25_gr1.txt
+18.00,Panserraikos,Volos NFC,3,0,1,1-0,2024-25_gr1.txt
+,GS Kallithea,Panetolikos,0,0,X,,2024-25_gr1.txt
+20.00,Lamia,Levadiakos,2,3,2,1-3,2024-25_gr1.txt
+17.00,Levadiakos,GS Kallithea,4,1,1,1-0,2024-25_gr1.txt
+,Lamia,Panserraikos,2,1,1,0-1,2024-25_gr1.txt
+20.00,Panetolikos,Volos NFC,0,3,2,0-2,2024-25_gr1.txt
+18.00,Levadiakos,Panetolikos,1,2,2,1-2,2024-25_gr1.txt
+20.00,GS Kallithea,Panserraikos,1,1,X,1-0,2024-25_gr1.txt
+,Volos NFC,Lamia,3,0,1,3-0,2024-25_gr1.txt
+15.00,Panserraikos,Levadiakos,0,1,2,0-1,2024-25_gr1.txt
+18.00,Lamia,Panetolikos,1,3,2,1-1,2024-25_gr1.txt
+20.00,Volos NFC,GS Kallithea,0,2,2,0-1,2024-25_gr1.txt
+18.00,Levadiakos,Volos NFC,3,2,1,1-1,2024-25_gr1.txt
+,Panetolikos,Panserraikos,1,0,1,1-0,2024-25_gr1.txt
+20.00,GS Kallithea,Lamia,3,0,1,1-0,2024-25_gr1.txt

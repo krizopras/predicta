@@ -1,0 +1,376 @@
+time,home_team,away_team,home_score,away_score,result,ht_score,source_file
+19.00,FC Flora,Harju JK,4,0,1,2-0,2023_ee1.txt
+17.00,JK Tallinna Kalev,JK Nõmme Kalju,0,0,X,,2023_ee1.txt
+14.00,Paide Linnameeskond,JK Narva Trans,2,1,1,1-1,2023_ee1.txt
+16.00,FCI Levadia,Pärnu JK Vaprus,0,0,X,,2023_ee1.txt
+19.45,FC Kuressaare,JK Tammeka,3,1,1,1-1,2023_ee1.txt
+18.00,FC Kuressaare,Harju JK,1,1,X,0-0,2023_ee1.txt
+18.00,Paide Linnameeskond,FCI Levadia,1,1,X,0-0,2023_ee1.txt
+18.00,JK Tammeka,JK Tallinna Kalev,1,2,2,0-1,2023_ee1.txt
+,Pärnu JK Vaprus,JK Narva Trans,1,0,1,1-0,2023_ee1.txt
+19.00,JK Nõmme Kalju,FC Flora,2,2,X,2-0,2023_ee1.txt
+18.00,FC Flora,JK Narva Trans,5,0,1,2-0,2023_ee1.txt
+18.00,Harju JK,JK Tallinna Kalev,0,2,2,0-1,2023_ee1.txt
+,FCI Levadia,JK Tammeka,3,0,1,2-0,2023_ee1.txt
+19.00,Paide Linnameeskond,FC Kuressaare,0,1,2,0-0,2023_ee1.txt
+18.00,Pärnu JK Vaprus,JK Nõmme Kalju,1,1,X,0-1,2023_ee1.txt
+17.00,JK Narva Trans,FCI Levadia,0,2,2,0-1,2023_ee1.txt
+19.30,JK Tallinna Kalev,FC Flora,0,2,2,0-0,2023_ee1.txt
+12.30,FC Kuressaare,Pärnu JK Vaprus,1,2,2,0-0,2023_ee1.txt
+14.30,Harju JK,JK Nõmme Kalju,1,2,2,0-0,2023_ee1.txt
+17.00,JK Tammeka,Paide Linnameeskond,0,0,X,,2023_ee1.txt
+14.30,FC Flora,JK Tammeka,1,1,X,0-1,2023_ee1.txt
+17.00,Paide Linnameeskond,Harju JK,1,0,1,1-0,2023_ee1.txt
+19.30,JK Nõmme Kalju,JK Narva Trans,2,0,1,2-0,2023_ee1.txt
+14.30,Pärnu JK Vaprus,JK Tallinna Kalev,0,2,2,0-1,2023_ee1.txt
+19.00,FCI Levadia,FC Kuressaare,4,1,1,3-1,2023_ee1.txt
+14.30,Harju JK,JK Narva Trans,1,2,2,1-1,2023_ee1.txt
+17.00,FC Kuressaare,FC Flora,1,4,2,1-3,2023_ee1.txt
+19.30,Pärnu JK Vaprus,JK Tammeka,1,0,1,0-0,2023_ee1.txt
+14.30,JK Nõmme Kalju,Paide Linnameeskond,1,1,X,0-0,2023_ee1.txt
+19.00,JK Tallinna Kalev,FCI Levadia,0,2,2,0-2,2023_ee1.txt
+14.30,Paide Linnameeskond,JK Tallinna Kalev,0,1,2,0-1,2023_ee1.txt
+17.00,FCI Levadia,Harju JK,6,1,1,3-1,2023_ee1.txt
+12.30,JK Tammeka,JK Nõmme Kalju,0,2,2,0-1,2023_ee1.txt
+14.30,FC Flora,Pärnu JK Vaprus,4,0,1,4-0,2023_ee1.txt
+17.00,JK Narva Trans,FC Kuressaare,0,1,2,0-0,2023_ee1.txt
+19.30,JK Narva Trans,JK Tallinna Kalev,2,1,1,0-1,2023_ee1.txt
+12.30,Harju JK,JK Tammeka,2,3,2,2-2,2023_ee1.txt
+14.30,FC Flora,FCI Levadia,0,2,2,0-0,2023_ee1.txt
+17.00,FC Kuressaare,JK Nõmme Kalju,2,0,1,1-0,2023_ee1.txt
+19.00,Pärnu JK Vaprus,Paide Linnameeskond,2,2,X,2-1,2023_ee1.txt
+18.00,JK Tammeka,JK Narva Trans,1,1,X,0-1,2023_ee1.txt
+,Harju JK,Pärnu JK Vaprus,1,2,2,1-0,2023_ee1.txt
+14.00,JK Tallinna Kalev,FC Kuressaare,0,3,2,0-1,2023_ee1.txt
+17.00,Paide Linnameeskond,FC Flora,1,3,2,0-2,2023_ee1.txt
+19.30,JK Nõmme Kalju,FCI Levadia,0,1,2,0-0,2023_ee1.txt
+18.00,JK Narva Trans,Harju JK,2,0,1,0-0,2023_ee1.txt
+20.00,JK Nõmme Kalju,JK Tallinna Kalev,1,2,2,0-0,2023_ee1.txt
+18.00,JK Tammeka,FC Flora,0,3,2,0-3,2023_ee1.txt
+19.00,FCI Levadia,Paide Linnameeskond,2,0,1,2-0,2023_ee1.txt
+20.00,Pärnu JK Vaprus,FC Kuressaare,1,2,2,0-0,2023_ee1.txt
+17.00,Harju JK,FCI Levadia,2,1,1,0-1,2023_ee1.txt
+12.30,FC Kuressaare,Paide Linnameeskond,1,4,2,0-2,2023_ee1.txt
+14.30,FC Flora,JK Nõmme Kalju,3,1,1,1-1,2023_ee1.txt
+17.00,Pärnu JK Vaprus,JK Narva Trans,2,0,1,2-0,2023_ee1.txt
+19.00,JK Tallinna Kalev,JK Tammeka,1,1,X,0-0,2023_ee1.txt
+19.00,JK Nõmme Kalju,Harju JK,1,1,X,1-0,2023_ee1.txt
+17.00,Pärnu JK Vaprus,JK Tallinna Kalev,0,2,2,0-0,2023_ee1.txt
+19.30,Paide Linnameeskond,JK Tammeka,0,0,X,,2023_ee1.txt
+14.30,FC Kuressaare,FC Flora,0,3,2,0-2,2023_ee1.txt
+17.00,JK Narva Trans,FCI Levadia,0,1,2,0-1,2023_ee1.txt
+19.00,Harju JK,FC Flora,0,1,2,0-1,2023_ee1.txt
+17.00,JK Narva Trans,JK Nõmme Kalju,0,2,2,0-1,2023_ee1.txt
+19.30,FC Kuressaare,JK Tallinna Kalev,1,2,2,1-0,2023_ee1.txt
+14.30,JK Tammeka,FCI Levadia,2,2,X,2-1,2023_ee1.txt
+17.00,Paide Linnameeskond,Pärnu JK Vaprus,0,1,2,0-0,2023_ee1.txt
+18.00,JK Narva Trans,FC Flora,0,1,2,0-1,2023_ee1.txt
+20.00,Harju JK,FC Kuressaare,1,1,X,1-1,2023_ee1.txt
+18.00,JK Tallinna Kalev,Paide Linnameeskond,1,1,X,0-0,2023_ee1.txt
+,JK Nõmme Kalju,JK Tammeka,1,2,2,1-0,2023_ee1.txt
+19.00,Pärnu JK Vaprus,FCI Levadia,0,0,X,,2023_ee1.txt
+17.00,JK Tammeka,FC Kuressaare,0,0,X,,2023_ee1.txt
+19.30,FC Flora,JK Tallinna Kalev,3,0,1,2-0,2023_ee1.txt
+14.30,FCI Levadia,JK Nõmme Kalju,2,1,1,2-0,2023_ee1.txt
+17.00,Pärnu JK Vaprus,Harju JK,0,1,2,0-1,2023_ee1.txt
+19.00,Paide Linnameeskond,JK Narva Trans,1,2,2,1-1,2023_ee1.txt
+18.00,FC Kuressaare,FCI Levadia,0,2,2,0-0,2023_ee1.txt
+20.00,JK Nõmme Kalju,Pärnu JK Vaprus,1,0,1,1-0,2023_ee1.txt
+18.00,JK Tallinna Kalev,JK Narva Trans,0,1,2,0-1,2023_ee1.txt
+,JK Tammeka,Harju JK,2,0,1,0-0,2023_ee1.txt
+19.00,FC Flora,Paide Linnameeskond,0,0,X,,2023_ee1.txt
+17.00,Pärnu JK Vaprus,FC Flora,1,5,2,1-1,2023_ee1.txt
+19.30,JK Nõmme Kalju,FC Kuressaare,2,0,1,0-0,2023_ee1.txt
+14.30,Harju JK,Paide Linnameeskond,0,1,2,0-0,2023_ee1.txt
+17.00,FCI Levadia,JK Tallinna Kalev,2,1,1,1-1,2023_ee1.txt
+19.00,JK Narva Trans,JK Tammeka,2,0,1,1-0,2023_ee1.txt
+18.00,FC Kuressaare,JK Narva Trans,3,0,1,1-0,2023_ee1.txt
+19.00,JK Tammeka,Pärnu JK Vaprus,2,3,2,1-1,2023_ee1.txt
+20.00,Paide Linnameeskond,JK Nõmme Kalju,0,0,X,,2023_ee1.txt
+18.00,JK Tallinna Kalev,Harju JK,1,1,X,1-0,2023_ee1.txt
+19.00,FCI Levadia,FC Flora,0,0,X,,2023_ee1.txt
+20.00,Pärnu JK Vaprus,Paide Linnameeskond,1,1,X,0-1,2023_ee1.txt
+17.00,Harju JK,FC Kuressaare,1,1,X,1-0,2023_ee1.txt
+19.30,FCI Levadia,JK Narva Trans,3,0,1,1-0,2023_ee1.txt
+17.00,JK Nõmme Kalju,JK Tallinna Kalev,1,2,2,1-0,2023_ee1.txt
+19.00,FC Flora,JK Tammeka,3,0,1,1-0,2023_ee1.txt
+19.00,Paide Linnameeskond,FC Flora,0,0,X,,2023_ee1.txt
+17.00,JK Narva Trans,Pärnu JK Vaprus,0,4,2,0-2,2023_ee1.txt
+19.30,JK Tallinna Kalev,FC Kuressaare,1,3,2,0-2,2023_ee1.txt
+17.00,Harju JK,JK Tammeka,3,0,1,0-0,2023_ee1.txt
+19.00,FCI Levadia,JK Nõmme Kalju,3,0,1,3-0,2023_ee1.txt
+17.00,JK Tallinna Kalev,Pärnu JK Vaprus,1,1,X,0-0,2023_ee1.txt
+19.30,JK Nõmme Kalju,Harju JK,1,0,1,1-0,2023_ee1.txt
+16.00,FC Kuressaare,Paide Linnameeskond,0,4,2,0-2,2023_ee1.txt
+18.00,JK Tammeka,FCI Levadia,0,0,X,,2023_ee1.txt
+20.00,FC Flora,JK Narva Trans,1,4,2,0-3,2023_ee1.txt
+19.00,FC Flora,FC Kuressaare,4,0,1,2-0,2023_ee1.txt
+17.00,JK Nõmme Kalju,JK Narva Trans,4,0,1,2-0,2023_ee1.txt
+19.30,JK Tallinna Kalev,JK Tammeka,1,1,X,0-0,2023_ee1.txt
+17.00,Harju JK,Paide Linnameeskond,0,1,2,0-0,2023_ee1.txt
+19.00,Pärnu JK Vaprus,FCI Levadia,0,3,2,0-2,2023_ee1.txt
+19.00,FC Flora,Pärnu JK Vaprus,1,1,X,0-0,2023_ee1.txt
+17.00,Paide Linnameeskond,JK Tallinna Kalev,1,1,X,0-0,2023_ee1.txt
+19.30,FCI Levadia,Harju JK,1,1,X,0-0,2023_ee1.txt
+17.00,JK Tammeka,JK Nõmme Kalju,1,1,X,1-0,2023_ee1.txt
+19.00,JK Narva Trans,FC Kuressaare,2,0,1,0-0,2023_ee1.txt
+19.00,Harju JK,JK Narva Trans,0,2,2,0-1,2023_ee1.txt
+17.00,Paide Linnameeskond,JK Tammeka,6,3,1,3-3,2023_ee1.txt
+19.00,Pärnu JK Vaprus,JK Nõmme Kalju,3,3,X,0-2,2023_ee1.txt
+14.30,FC Kuressaare,FCI Levadia,2,1,1,2-0,2023_ee1.txt
+18.00,JK Tallinna Kalev,FC Flora,1,1,X,1-1,2023_ee1.txt
+19.00,FC Flora,Harju JK,2,0,1,0-0,2023_ee1.txt
+17.00,JK Tammeka,Pärnu JK Vaprus,0,0,X,,2023_ee1.txt
+19.00,FCI Levadia,JK Tallinna Kalev,1,1,X,0-0,2023_ee1.txt
+17.00,JK Narva Trans,Paide Linnameeskond,0,0,X,,2023_ee1.txt
+18.30,JK Nõmme Kalju,FC Kuressaare,4,1,1,2-1,2023_ee1.txt
+18.00,JK Narva Trans,JK Tallinna Kalev,2,1,1,1-0,2023_ee1.txt
+14.30,Harju JK,Pärnu JK Vaprus,0,4,2,0-2,2023_ee1.txt
+17.00,FC Kuressaare,JK Tammeka,1,1,X,1-1,2023_ee1.txt
+14.30,Paide Linnameeskond,JK Nõmme Kalju,2,0,1,1-0,2023_ee1.txt
+17.00,FC Flora,FCI Levadia,2,2,X,1-1,2023_ee1.txt
+19.00,JK Tammeka,JK Narva Trans,3,0,1,0-0,2023_ee1.txt
+17.00,JK Tallinna Kalev,Harju JK,2,1,1,0-1,2023_ee1.txt
+19.30,FCI Levadia,Paide Linnameeskond,1,0,1,0-0,2023_ee1.txt
+14.30,JK Nõmme Kalju,FC Flora,0,0,X,,2023_ee1.txt
+17.00,Pärnu JK Vaprus,FC Kuressaare,3,1,1,1-0,2023_ee1.txt
+19.45,FC Flora,JK Tallinna Kalev,1,0,1,1-0,2023_ee1.txt
+14.30,JK Narva Trans,Harju JK,1,3,2,0-1,2023_ee1.txt
+,Paide Linnameeskond,Pärnu JK Vaprus,3,0,1,3-0,2023_ee1.txt
+17.00,JK Nõmme Kalju,JK Tammeka,4,1,1,1-1,2023_ee1.txt
+19.30,FCI Levadia,FC Kuressaare,4,0,1,2-0,2023_ee1.txt
+17.15,FC Kuressaare,JK Nõmme Kalju,0,2,2,0-1,2023_ee1.txt
+19.45,Harju JK,FCI Levadia,0,1,2,0-0,2023_ee1.txt
+17.00,JK Tallinna Kalev,Paide Linnameeskond,2,1,1,1-0,2023_ee1.txt
+19.00,Pärnu JK Vaprus,JK Narva Trans,3,2,1,1-0,2023_ee1.txt
+,JK Tammeka,FC Flora,1,2,2,1-0,2023_ee1.txt
+14.30,Harju JK,JK Nõmme Kalju,1,0,1,1-0,2023_ee1.txt
+17.00,JK Tammeka,Paide Linnameeskond,1,2,2,0-2,2023_ee1.txt
+14.30,FC Kuressaare,JK Tallinna Kalev,1,1,X,1-1,2023_ee1.txt
+17.00,Pärnu JK Vaprus,FC Flora,0,1,2,0-0,2023_ee1.txt
+19.00,FCI Levadia,JK Narva Trans,3,0,1,2-0,2023_ee1.txt
+12.30,JK Nõmme Kalju,Pärnu JK Vaprus,1,1,X,0-1,2023_ee1.txt
+14.30,JK Tallinna Kalev,FCI Levadia,1,2,2,0-0,2023_ee1.txt
+17.00,JK Narva Trans,JK Tammeka,2,0,1,2-0,2023_ee1.txt
+19.30,FC Flora,FC Kuressaare,3,0,1,1-0,2023_ee1.txt
+14.30,Paide Linnameeskond,Harju JK,4,0,1,2-0,2023_ee1.txt
+12.30,JK Tallinna Kalev,Pärnu JK Vaprus,1,0,1,1-0,2023_ee1.txt
+14.30,JK Narva Trans,JK Nõmme Kalju,2,1,1,1-1,2023_ee1.txt
+17.00,FCI Levadia,JK Tammeka,2,1,1,2-0,2023_ee1.txt
+14.30,Paide Linnameeskond,FC Kuressaare,1,0,1,0-0,2023_ee1.txt
+17.00,Harju JK,FC Flora,2,3,2,0-2,2023_ee1.txt
+19.00,Pärnu JK Vaprus,Harju JK,0,0,X,,2023_ee1.txt
+,JK Tammeka,JK Tallinna Kalev,2,7,2,2-2,2023_ee1.txt
+12.30,FC Kuressaare,JK Narva Trans,1,0,1,0-0,2023_ee1.txt
+14.30,FC Flora,Paide Linnameeskond,2,1,1,0-1,2023_ee1.txt
+17.00,JK Nõmme Kalju,FCI Levadia,4,3,1,1-1,2023_ee1.txt
+18.00,Harju JK,JK Tallinna Kalev,0,2,2,0-0,2023_ee1.txt
+19.45,JK Nõmme Kalju,Paide Linnameeskond,3,3,X,3-2,2023_ee1.txt
+18.00,JK Tammeka,FC Kuressaare,0,1,2,0-0,2023_ee1.txt
+,FCI Levadia,Pärnu JK Vaprus,0,0,X,,2023_ee1.txt
+19.00,JK Narva Trans,FC Flora,1,3,2,0-2,2023_ee1.txt
+12.30,FC Kuressaare,Harju JK,1,1,X,0-1,2023_ee1.txt
+14.30,Paide Linnameeskond,JK Narva Trans,3,1,1,2-0,2023_ee1.txt
+12.30,JK Tallinna Kalev,JK Nõmme Kalju,1,1,X,1-1,2023_ee1.txt
+14.30,FCI Levadia,FC Flora,2,1,1,1-0,2023_ee1.txt
+17.00,Pärnu JK Vaprus,JK Tammeka,2,0,1,1-0,2023_ee1.txt
+19.00,JK Tammeka,Harju JK,2,1,1,1-0,2023_ee1.txt
+14.00,FC Kuressaare,Pärnu JK Vaprus,1,0,1,0-0,2023_ee1.txt
+,FC Flora,JK Nõmme Kalju,0,0,X,,2023_ee1.txt
+,JK Tallinna Kalev,JK Narva Trans,5,0,1,2-0,2023_ee1.txt
+,Paide Linnameeskond,FCI Levadia,2,2,X,2-0,2023_ee1.txt
+19.00,FC Flora,Nõmme United,2,0,1,2-0,2024_ee1.txt
+12.30,FC Kuressaare,JK Nõmme Kalju,0,6,2,0-3,2024_ee1.txt
+14.30,FCI Levadia,JK Narva Trans,6,0,1,3-0,2024_ee1.txt
+12.30,JK Tallinna Kalev,JK Tammeka,1,1,X,0-0,2024_ee1.txt
+14.30,Pärnu JK Vaprus,Paide Linnameeskond,0,3,2,0-0,2024_ee1.txt
+12.30,JK Tammeka,Pärnu JK Vaprus,1,0,1,1-0,2024_ee1.txt
+14.30,FC Kuressaare,FCI Levadia,0,6,2,0-2,2024_ee1.txt
+,JK Nõmme Kalju,JK Narva Trans,3,0,1,2-0,2024_ee1.txt
+12.30,Paide Linnameeskond,Nõmme United,3,1,1,2-0,2024_ee1.txt
+14.30,FC Flora,JK Tallinna Kalev,2,2,X,0-1,2024_ee1.txt
+12.30,JK Tallinna Kalev,FCI Levadia,0,2,2,0-2,2024_ee1.txt
+14.30,Paide Linnameeskond,FC Flora,2,1,1,1-1,2024_ee1.txt
+,JK Narva Trans,JK Tammeka,0,5,2,0-2,2024_ee1.txt
+12.30,Pärnu JK Vaprus,FC Kuressaare,3,2,1,0-1,2024_ee1.txt
+14.30,Nõmme United,JK Nõmme Kalju,0,0,X,,2024_ee1.txt
+14.30,FC Kuressaare,JK Tallinna Kalev,3,0,1,1-0,2024_ee1.txt
+12.30,Pärnu JK Vaprus,JK Nõmme Kalju,1,2,2,1-1,2024_ee1.txt
+14.30,JK Narva Trans,Nõmme United,2,0,1,1-0,2024_ee1.txt
+12.30,JK Tammeka,FC Flora,0,0,X,,2024_ee1.txt
+14.30,FCI Levadia,Paide Linnameeskond,2,0,1,1-0,2024_ee1.txt
+19.00,Nõmme United,JK Tammeka,2,1,1,0-1,2024_ee1.txt
+12.30,JK Nõmme Kalju,FCI Levadia,1,5,2,1-3,2024_ee1.txt
+14.30,Paide Linnameeskond,FC Kuressaare,3,1,1,1-1,2024_ee1.txt
+17.00,FC Flora,JK Narva Trans,4,3,1,2-0,2024_ee1.txt
+14.30,JK Tallinna Kalev,Pärnu JK Vaprus,3,1,1,1-0,2024_ee1.txt
+12.30,JK Tammeka,FC Kuressaare,1,2,2,0-2,2024_ee1.txt
+17.00,JK Narva Trans,JK Tallinna Kalev,2,2,X,0-0,2024_ee1.txt
+19.00,FCI Levadia,Nõmme United,2,0,1,1-0,2024_ee1.txt
+14.30,Pärnu JK Vaprus,FC Flora,1,3,2,0-3,2024_ee1.txt
+17.00,JK Nõmme Kalju,Paide Linnameeskond,2,1,1,1-1,2024_ee1.txt
+12.30,Nõmme United,JK Tallinna Kalev,0,2,2,0-2,2024_ee1.txt
+14.30,Paide Linnameeskond,JK Tammeka,0,1,2,0-0,2024_ee1.txt
+17.00,FCI Levadia,Pärnu JK Vaprus,1,1,X,1-0,2024_ee1.txt
+14.30,FC Kuressaare,JK Narva Trans,5,0,1,5-0,2024_ee1.txt
+17.00,FC Flora,JK Nõmme Kalju,2,2,X,1-1,2024_ee1.txt
+19.00,Pärnu JK Vaprus,Nõmme United,2,1,1,1-1,2024_ee1.txt
+14.30,JK Tallinna Kalev,JK Nõmme Kalju,0,2,2,0-1,2024_ee1.txt
+17.00,FC Kuressaare,FC Flora,2,2,X,1-0,2024_ee1.txt
+14.30,JK Tammeka,FCI Levadia,0,3,2,0-2,2024_ee1.txt
+17.00,JK Narva Trans,Paide Linnameeskond,1,1,X,1-0,2024_ee1.txt
+19.00,JK Nõmme Kalju,JK Tammeka,4,2,1,3-2,2024_ee1.txt
+14.30,Nõmme United,FC Kuressaare,1,1,X,1-1,2024_ee1.txt
+17.00,JK Narva Trans,Pärnu JK Vaprus,0,0,X,,2024_ee1.txt
+19.00,Paide Linnameeskond,JK Tallinna Kalev,2,0,1,1-0,2024_ee1.txt
+14.30,FC Flora,FCI Levadia,1,0,1,1-0,2024_ee1.txt
+14.30,FC Flora,Pärnu JK Vaprus,0,1,2,0-0,2024_ee1.txt
+17.00,FC Kuressaare,JK Tammeka,0,0,X,,2024_ee1.txt
+14.30,FCI Levadia,JK Nõmme Kalju,0,0,X,,2024_ee1.txt
+17.00,JK Tallinna Kalev,JK Narva Trans,1,0,1,0-0,2024_ee1.txt
+19.00,Nõmme United,Paide Linnameeskond,0,1,2,0-1,2024_ee1.txt
+14.30,JK Tammeka,Paide Linnameeskond,1,2,2,1-1,2024_ee1.txt
+17.00,JK Narva Trans,FC Flora,1,3,2,0-0,2024_ee1.txt
+19.00,JK Nõmme Kalju,FC Kuressaare,3,0,1,2-0,2024_ee1.txt
+14.30,JK Tallinna Kalev,Nõmme United,2,0,1,2-0,2024_ee1.txt
+17.00,Pärnu JK Vaprus,FCI Levadia,0,2,2,0-0,2024_ee1.txt
+19.00,FC Flora,FC Kuressaare,1,0,1,0-0,2024_ee1.txt
+19.00,FCI Levadia,JK Tallinna Kalev,2,2,X,0-1,2024_ee1.txt
+,Paide Linnameeskond,JK Nõmme Kalju,0,2,2,0-0,2024_ee1.txt
+18.00,Nõmme United,JK Narva Trans,1,3,2,0-1,2024_ee1.txt
+20.00,Pärnu JK Vaprus,JK Tammeka,1,1,X,0-1,2024_ee1.txt
+19.00,JK Tammeka,JK Narva Trans,0,2,2,0-1,2024_ee1.txt
+18.00,FC Kuressaare,Pärnu JK Vaprus,2,2,X,2-0,2024_ee1.txt
+20.00,JK Nõmme Kalju,Nõmme United,1,1,X,1-1,2024_ee1.txt
+19.00,JK Tallinna Kalev,FC Flora,2,3,2,1-3,2024_ee1.txt
+,Paide Linnameeskond,FCI Levadia,0,1,2,0-0,2024_ee1.txt
+20.00,Nõmme United,Pärnu JK Vaprus,2,1,1,1-0,2024_ee1.txt
+14.30,FC Flora,Paide Linnameeskond,2,0,1,2-0,2024_ee1.txt
+19.00,FCI Levadia,FC Kuressaare,2,0,1,1-0,2024_ee1.txt
+14.30,JK Narva Trans,JK Nõmme Kalju,4,1,1,2-1,2024_ee1.txt
+20.00,JK Tammeka,JK Tallinna Kalev,4,0,1,0-0,2024_ee1.txt
+12.00,JK Tallinna Kalev,Paide Linnameeskond,2,5,2,2-2,2024_ee1.txt
+,JK Nõmme Kalju,FC Flora,0,0,X,,2024_ee1.txt
+14.00,Pärnu JK Vaprus,JK Narva Trans,1,4,2,0-2,2024_ee1.txt
+12.00,FCI Levadia,JK Tammeka,2,1,1,1-0,2024_ee1.txt
+14.00,FC Kuressaare,Nõmme United,1,1,X,1-1,2024_ee1.txt
+18.00,JK Nõmme Kalju,JK Tallinna Kalev,2,0,1,1-0,2024_ee1.txt
+,Paide Linnameeskond,Pärnu JK Vaprus,0,1,2,0-0,2024_ee1.txt
+18.00,Nõmme United,FCI Levadia,0,6,2,0-3,2024_ee1.txt
+,JK Narva Trans,FC Kuressaare,0,1,2,0-0,2024_ee1.txt
+19.00,FC Flora,JK Tammeka,3,1,1,1-1,2024_ee1.txt
+19.00,FC Kuressaare,Paide Linnameeskond,0,2,2,0-1,2024_ee1.txt
+,JK Tammeka,JK Nõmme Kalju,1,1,X,1-1,2024_ee1.txt
+20.00,Pärnu JK Vaprus,JK Tallinna Kalev,0,1,2,0-0,2024_ee1.txt
+14.30,Nõmme United,FC Flora,1,1,X,0-1,2024_ee1.txt
+,JK Narva Trans,FCI Levadia,1,2,2,0-2,2024_ee1.txt
+18.00,JK Nõmme Kalju,Pärnu JK Vaprus,4,2,1,2-1,2024_ee1.txt
+20.00,JK Tallinna Kalev,FC Kuressaare,2,2,X,2-2,2024_ee1.txt
+19.00,JK Tammeka,Nõmme United,2,1,1,2-1,2024_ee1.txt
+,FCI Levadia,FC Flora,1,0,1,1-0,2024_ee1.txt
+,Paide Linnameeskond,JK Narva Trans,2,2,X,0-2,2024_ee1.txt
+19.00,JK Tallinna Kalev,FCI Levadia,1,2,2,0-0,2024_ee1.txt
+19.00,FC Flora,Paide Linnameeskond,1,3,2,1-2,2024_ee1.txt
+19.30,FC Kuressaare,JK Tammeka,0,0,X,,2024_ee1.txt
+14.30,Pärnu JK Vaprus,Nõmme United,2,0,1,1-0,2024_ee1.txt
+17.00,JK Narva Trans,JK Nõmme Kalju,2,2,X,2-1,2024_ee1.txt
+19.00,JK Tammeka,FC Flora,2,0,1,0-0,2024_ee1.txt
+19.30,Nõmme United,JK Nõmme Kalju,0,4,2,0-1,2024_ee1.txt
+19.00,Pärnu JK Vaprus,JK Narva Trans,0,0,X,,2024_ee1.txt
+17.00,FCI Levadia,FC Kuressaare,0,0,X,,2024_ee1.txt
+19.00,Paide Linnameeskond,JK Tallinna Kalev,3,1,1,1-1,2024_ee1.txt
+14.30,FCI Levadia,Paide Linnameeskond,1,0,1,1-0,2024_ee1.txt
+19.00,JK Tallinna Kalev,FC Flora,0,3,2,0-2,2024_ee1.txt
+19.30,JK Narva Trans,Nõmme United,2,1,1,1-1,2024_ee1.txt
+17.00,JK Nõmme Kalju,JK Tammeka,3,0,1,3-0,2024_ee1.txt
+19.00,FC Kuressaare,Pärnu JK Vaprus,1,1,X,0-0,2024_ee1.txt
+19.30,JK Tammeka,Pärnu JK Vaprus,0,1,2,0-0,2024_ee1.txt
+17.00,JK Tallinna Kalev,JK Nõmme Kalju,0,2,2,0-0,2024_ee1.txt
+19.00,FC Flora,JK Narva Trans,3,1,1,0-0,2024_ee1.txt
+17.00,FC Kuressaare,Paide Linnameeskond,0,2,2,0-2,2024_ee1.txt
+19.00,Nõmme United,FCI Levadia,0,1,2,0-0,2024_ee1.txt
+19.30,JK Tallinna Kalev,FC Kuressaare,0,3,2,0-0,2024_ee1.txt
+19.00,Pärnu JK Vaprus,FCI Levadia,1,4,2,0-2,2024_ee1.txt
+17.00,JK Tammeka,Nõmme United,1,1,X,0-1,2024_ee1.txt
+17.00,Paide Linnameeskond,JK Narva Trans,2,3,2,1-2,2024_ee1.txt
+,JK Nõmme Kalju,FC Flora,3,0,1,1-0,2024_ee1.txt
+19.30,FCI Levadia,JK Tammeka,3,1,1,1-0,2024_ee1.txt
+17.00,JK Narva Trans,JK Tallinna Kalev,2,2,X,1-0,2024_ee1.txt
+14.30,JK Nõmme Kalju,FC Kuressaare,5,1,1,4-0,2024_ee1.txt
+17.00,Paide Linnameeskond,Pärnu JK Vaprus,1,0,1,1-0,2024_ee1.txt
+19.00,FC Flora,Nõmme United,1,0,1,0-0,2024_ee1.txt
+19.30,Pärnu JK Vaprus,FC Flora,0,1,2,0-0,2024_ee1.txt
+17.00,FC Kuressaare,JK Narva Trans,0,1,2,0-0,2024_ee1.txt
+19.00,JK Tammeka,Paide Linnameeskond,1,3,2,0-1,2024_ee1.txt
+17.00,Nõmme United,JK Tallinna Kalev,1,1,X,0-0,2024_ee1.txt
+19.00,FCI Levadia,JK Nõmme Kalju,3,0,1,1-0,2024_ee1.txt
+19.30,FC Flora,FCI Levadia,2,1,1,1-0,2024_ee1.txt
+17.00,JK Narva Trans,JK Tammeka,0,1,2,0-1,2024_ee1.txt
+14.30,Nõmme United,FC Kuressaare,2,2,X,0-1,2024_ee1.txt
+17.00,JK Nõmme Kalju,Paide Linnameeskond,2,4,2,0-3,2024_ee1.txt
+19.00,JK Tallinna Kalev,Pärnu JK Vaprus,1,0,1,0-0,2024_ee1.txt
+19.00,JK Tammeka,JK Tallinna Kalev,4,1,1,1-1,2024_ee1.txt
+14.30,FC Kuressaare,FC Flora,3,4,2,1-2,2024_ee1.txt
+17.00,Paide Linnameeskond,Nõmme United,7,2,1,5-0,2024_ee1.txt
+14.30,Pärnu JK Vaprus,JK Nõmme Kalju,0,4,2,0-3,2024_ee1.txt
+18.00,FCI Levadia,JK Narva Trans,0,0,X,,2024_ee1.txt
+17.30,JK Narva Trans,FC Flora,1,1,X,0-0,2024_ee1.txt
+,FC Kuressaare,FCI Levadia,0,1,2,0-0,2024_ee1.txt
+19.30,JK Tallinna Kalev,Paide Linnameeskond,3,2,1,3-1,2024_ee1.txt
+17.30,JK Nõmme Kalju,Nõmme United,3,0,1,1-0,2024_ee1.txt
+19.00,Pärnu JK Vaprus,JK Tammeka,2,2,X,2-1,2024_ee1.txt
+12.30,Paide Linnameeskond,FC Kuressaare,4,3,1,2-3,2024_ee1.txt
+14.30,Nõmme United,JK Narva Trans,0,4,2,0-2,2024_ee1.txt
+17.00,FC Flora,JK Tammeka,2,1,1,1-0,2024_ee1.txt
+14.30,JK Nõmme Kalju,JK Tallinna Kalev,3,1,1,2-0,2024_ee1.txt
+19.00,FCI Levadia,Pärnu JK Vaprus,3,1,1,0-1,2024_ee1.txt
+19.00,FCI Levadia,JK Tallinna Kalev,4,0,1,3-0,2024_ee1.txt
+14.30,FC Kuressaare,Nõmme United,4,1,1,0-0,2024_ee1.txt
+14.30,FC Flora,Pärnu JK Vaprus,3,0,1,2-0,2024_ee1.txt
+17.00,JK Narva Trans,Paide Linnameeskond,0,3,2,0-0,2024_ee1.txt
+19.00,JK Tammeka,JK Nõmme Kalju,2,3,2,1-3,2024_ee1.txt
+12.30,Nõmme United,FC Flora,0,4,2,0-1,2024_ee1.txt
+14.30,JK Narva Trans,FCI Levadia,0,2,2,0-2,2024_ee1.txt
+17.00,JK Tallinna Kalev,JK Tammeka,1,2,2,0-1,2024_ee1.txt
+14.30,Paide Linnameeskond,JK Nõmme Kalju,1,1,X,1-0,2024_ee1.txt
+17.00,Pärnu JK Vaprus,FC Kuressaare,3,1,1,1-1,2024_ee1.txt
+12.30,FC Kuressaare,JK Tallinna Kalev,2,1,1,1-1,2024_ee1.txt
+14.30,Nõmme United,Pärnu JK Vaprus,0,2,2,0-1,2024_ee1.txt
+17.00,JK Tammeka,FCI Levadia,0,3,2,0-1,2024_ee1.txt
+12.30,JK Nõmme Kalju,JK Narva Trans,2,2,X,1-1,2024_ee1.txt
+14.30,Paide Linnameeskond,FC Flora,2,1,1,1-1,2024_ee1.txt
+18.00,JK Tammeka,FC Kuressaare,2,1,1,0-1,2024_ee1.txt
+,FCI Levadia,Nõmme United,1,1,X,0-0,2024_ee1.txt
+18.00,JK Tallinna Kalev,JK Narva Trans,0,1,2,0-0,2024_ee1.txt
+,Pärnu JK Vaprus,Paide Linnameeskond,0,1,2,0-1,2024_ee1.txt
+19.00,FC Flora,JK Nõmme Kalju,3,2,1,0-1,2024_ee1.txt
+12.30,FC Flora,FC Kuressaare,3,0,1,1-0,2024_ee1.txt
+14.30,Paide Linnameeskond,JK Tammeka,2,0,1,1-0,2024_ee1.txt
+17.00,JK Tallinna Kalev,Nõmme United,1,0,1,0-0,2024_ee1.txt
+12.30,JK Narva Trans,Pärnu JK Vaprus,1,1,X,0-0,2024_ee1.txt
+14.30,JK Nõmme Kalju,FCI Levadia,0,4,2,0-2,2024_ee1.txt
+12.30,FC Kuressaare,JK Nõmme Kalju,1,2,2,0-1,2024_ee1.txt
+12.30,JK Tammeka,JK Narva Trans,3,3,X,2-2,2024_ee1.txt
+,Nõmme United,Paide Linnameeskond,0,4,2,0-1,2024_ee1.txt
+14.30,FCI Levadia,FC Flora,4,2,1,1-1,2024_ee1.txt
+19.00,Pärnu JK Vaprus,JK Tallinna Kalev,2,0,1,2-0,2024_ee1.txt
+12.30,FC Flora,JK Tallinna Kalev,5,1,1,3-0,2024_ee1.txt
+,JK Nõmme Kalju,Pärnu JK Vaprus,2,1,1,2-0,2024_ee1.txt
+,Nõmme United,JK Tammeka,1,2,2,1-1,2024_ee1.txt
+,Paide Linnameeskond,FCI Levadia,3,0,1,2-0,2024_ee1.txt
+,JK Narva Trans,FC Kuressaare,0,2,2,0-0,2024_ee1.txt
+19.00,FCI Levadia,Harju JK,5,0,1,2-0,2025_ee1.txt
+12.30,Pärnu JK Vaprus,JK Nõmme Kalju,0,3,2,0-1,2025_ee1.txt
+14.30,FC Flora,JK Narva Trans,2,2,X,1-0,2025_ee1.txt
+12.30,FC Kuressaare,Paide Linnameeskond,1,2,2,0-0,2025_ee1.txt
+14.30,JK Tallinna Kalev,JK Tammeka,1,2,2,0-1,2025_ee1.txt
+12.30,FC Flora,Pärnu JK Vaprus,0,1,2,0-1,2025_ee1.txt
+14.30,JK Tammeka,FCI Levadia,2,3,2,1-2,2025_ee1.txt
+,JK Narva Trans,FC Kuressaare,0,2,2,0-1,2025_ee1.txt
+12.30,Harju JK,JK Tallinna Kalev,2,0,1,2-0,2025_ee1.txt
+14.30,Paide Linnameeskond,JK Nõmme Kalju,4,0,1,1-0,2025_ee1.txt
+12.30,Pärnu JK Vaprus,FCI Levadia,1,2,2,1-0,2025_ee1.txt
+14.30,JK Narva Trans,Paide Linnameeskond,1,0,1,1-0,2025_ee1.txt
+,JK Tallinna Kalev,FC Flora,0,4,2,0-2,2025_ee1.txt
+12.30,FC Kuressaare,Harju JK,1,2,2,1-1,2025_ee1.txt
+14.30,JK Nõmme Kalju,JK Tammeka,2,2,X,1-1,2025_ee1.txt

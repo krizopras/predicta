@@ -1,0 +1,5 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Hong Kong,Japan,1,3,2,Guangzhou,China PR,1980_guangzhou_international_friendship_tournament.txt
+China PR,Japan,1,0,1,Guangzhou,China PR,1980_guangzhou_international_friendship_tournament.txt
+China PR,Hong Kong,7,0,1,Guangzhou,China PR,1980_guangzhou_international_friendship_tournament.txt
+Hong Kong,Japan,0,2,2,Guangzhou,China PR,1980_guangzhou_international_friendship_tournament.txt
