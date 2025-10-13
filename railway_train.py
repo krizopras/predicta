@@ -51,7 +51,7 @@ def check_environment():
         logger.warning("⚠️ psutil not installed, skipping memory check")
 
     # Disk ve klasör kontrolü
-    models_dir = Path("data/ai_models_v2")
+    models_dir = Path("data/ai_models_v3")
     raw_dir = Path("data/raw")
 
     logger.info(f"Models directory exists: {models_dir.exists()}")
