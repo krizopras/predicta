@@ -32,6 +32,16 @@ from sklearn.ensemble import (
 )
 from sklearn.linear_model import LogisticRegression
 import xgboost as xgb
+import logging
+
+# Log yapılandırması
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(message)s",
+    datefmt="%H:%M:%S"
+)
+logger = logging.getLogger("ModelTrainer")
+
 
 # Local imports - Enhanced components for v3.5
 try:
