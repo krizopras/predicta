@@ -1,0 +1,409 @@
+time,home_team,away_team,home_score,away_score,result,ht_score,source_file
+14.00,KA Akureyri,KR Reykjavík,1,1,X,0-0,2023_is1.txt
+,Fylkir Reykjavík,Keflavík ÍF,1,2,2,1-0,2023_is1.txt
+19.15,Valur Reykjavík,ÍBV Vestmannaeyjar,2,1,1,0-1,2023_is1.txt
+,Fram Reykjavík,FH Hafnarfjörður,2,2,X,1-1,2023_is1.txt
+,UMF Stjarnan,Víkingur Reykjavík,0,2,2,0-1,2023_is1.txt
+20.00,Breiðablik,HK Kópavogur,3,4,2,0-2,2023_is1.txt
+14.00,Keflavík ÍF,KR Reykjavík,0,2,2,0-0,2023_is1.txt
+16.00,KA Akureyri,ÍBV Vestmannaeyjar,3,0,1,1-0,2023_is1.txt
+,FH Hafnarfjörður,UMF Stjarnan,1,0,1,0-0,2023_is1.txt
+17.00,Víkingur Reykjavík,Fylkir Reykjavík,2,0,1,2-0,2023_is1.txt
+19.15,HK Kópavogur,Fram Reykjavík,1,1,X,0-0,2023_is1.txt
+,Valur Reykjavík,Breiðablik,0,2,2,0-1,2023_is1.txt
+16.00,ÍBV Vestmannaeyjar,Breiðablik,2,1,1,1-1,2023_is1.txt
+,KA Akureyri,Keflavík ÍF,0,0,X,,2023_is1.txt
+19.15,Fram Reykjavík,Valur Reykjavík,1,3,2,1-1,2023_is1.txt
+19.15,Víkingur Reykjavík,KR Reykjavík,3,0,1,1-0,2023_is1.txt
+,Fylkir Reykjavík,FH Hafnarfjörður,4,2,1,2-0,2023_is1.txt
+,UMF Stjarnan,HK Kópavogur,5,4,1,2-3,2023_is1.txt
+20.00,Breiðablik,Fram Reykjavík,5,4,1,3-1,2023_is1.txt
+14.00,FH Hafnarfjörður,KR Reykjavík,3,0,1,1-0,2023_is1.txt
+,HK Kópavogur,Fylkir Reykjavík,1,0,1,0-0,2023_is1.txt
+17.00,Keflavík ÍF,ÍBV Vestmannaeyjar,1,3,2,0-0,2023_is1.txt
+,Víkingur Reykjavík,KA Akureyri,1,0,1,0-0,2023_is1.txt
+19.15,Valur Reykjavík,UMF Stjarnan,3,2,1,2-0,2023_is1.txt
+18.00,Fram Reykjavík,ÍBV Vestmannaeyjar,3,1,1,1-1,2023_is1.txt
+,KA Akureyri,FH Hafnarfjörður,4,2,1,1-0,2023_is1.txt
+19.15,KR Reykjavík,HK Kópavogur,0,1,2,0-1,2023_is1.txt
+20.15,Fylkir Reykjavík,Valur Reykjavík,1,6,2,0-4,2023_is1.txt
+19.15,UMF Stjarnan,Breiðablik,0,2,2,0-2,2023_is1.txt
+,Víkingur Reykjavík,Keflavík ÍF,4,1,1,1-0,2023_is1.txt
+17.00,HK Kópavogur,KA Akureyri,1,2,2,1-0,2023_is1.txt
+19.15,Valur Reykjavík,KR Reykjavík,5,0,1,2-0,2023_is1.txt
+18.00,ÍBV Vestmannaeyjar,Víkingur Reykjavík,0,1,2,0-0,2023_is1.txt
+19.15,FH Hafnarfjörður,Keflavík ÍF,2,1,1,1-0,2023_is1.txt
+,Fram Reykjavík,UMF Stjarnan,2,1,1,1-0,2023_is1.txt
+20.15,Fylkir Reykjavík,Breiðablik,1,2,2,1-1,2023_is1.txt
+14.00,UMF Stjarnan,ÍBV Vestmannaeyjar,4,0,1,1-0,2023_is1.txt
+16.00,KA Akureyri,Valur Reykjavík,0,4,2,0-3,2023_is1.txt
+,KR Reykjavík,Breiðablik,0,1,2,0-0,2023_is1.txt
+17.00,Keflavík ÍF,HK Kópavogur,0,2,2,0-1,2023_is1.txt
+19.15,Víkingur Reykjavík,FH Hafnarfjörður,2,0,1,2-0,2023_is1.txt
+,Fylkir Reykjavík,Fram Reykjavík,3,1,1,1-1,2023_is1.txt
+17.00,Breiðablik,KA Akureyri,2,0,1,0-0,2023_is1.txt
+19.15,HK Kópavogur,Víkingur Reykjavík,1,2,2,0-1,2023_is1.txt
+,Valur Reykjavík,Keflavík ÍF,0,0,X,,2023_is1.txt
+18.00,ÍBV Vestmannaeyjar,FH Hafnarfjörður,2,3,2,1-1,2023_is1.txt
+19.15,Fram Reykjavík,KR Reykjavík,1,2,2,0-2,2023_is1.txt
+,UMF Stjarnan,Fylkir Reykjavík,2,2,X,0-0,2023_is1.txt
+17.00,Fylkir Reykjavík,ÍBV Vestmannaeyjar,2,1,1,1-1,2023_is1.txt
+19.15,KR Reykjavík,UMF Stjarnan,1,0,1,0-0,2023_is1.txt
+,FH Hafnarfjörður,HK Kópavogur,4,3,1,2-2,2023_is1.txt
+16.00,KA Akureyri,Fram Reykjavík,4,2,1,1-1,2023_is1.txt
+19.15,Keflavík ÍF,Breiðablik,0,0,X,,2023_is1.txt
+,Víkingur Reykjavík,Valur Reykjavík,2,3,2,0-0,2023_is1.txt
+18.00,ÍBV Vestmannaeyjar,HK Kópavogur,3,0,1,2-0,2023_is1.txt
+19.15,Fylkir Reykjavík,KR Reykjavík,3,3,X,2-2,2023_is1.txt
+18.00,UMF Stjarnan,KA Akureyri,4,0,1,1-0,2023_is1.txt
+19.15,Breiðablik,Víkingur Reykjavík,2,2,X,0-2,2023_is1.txt
+,Fram Reykjavík,Keflavík ÍF,4,1,1,1-0,2023_is1.txt
+,Valur Reykjavík,FH Hafnarfjörður,1,1,X,1-1,2023_is1.txt
+14.00,KA Akureyri,Fylkir Reykjavík,2,1,1,1-0,2023_is1.txt
+,KR Reykjavík,ÍBV Vestmannaeyjar,1,1,X,0-0,2023_is1.txt
+15.00,FH Hafnarfjörður,Breiðablik,2,2,X,1-2,2023_is1.txt
+17.00,HK Kópavogur,Valur Reykjavík,0,5,2,0-1,2023_is1.txt
+19.15,Keflavík ÍF,UMF Stjarnan,1,1,X,0-0,2023_is1.txt
+,Víkingur Reykjavík,Fram Reykjavík,3,1,1,3-1,2023_is1.txt
+19.15,FH Hafnarfjörður,Fram Reykjavík,4,0,1,2-0,2023_is1.txt
+,HK Kópavogur,Breiðablik,5,2,1,2-1,2023_is1.txt
+,Keflavík ÍF,Fylkir Reykjavík,1,1,X,0-1,2023_is1.txt
+14.00,ÍBV Vestmannaeyjar,Valur Reykjavík,0,3,2,0-1,2023_is1.txt
+17.00,KR Reykjavík,KA Akureyri,2,0,1,1-0,2023_is1.txt
+19.15,Víkingur Reykjavík,UMF Stjarnan,2,0,1,2-0,2023_is1.txt
+19.15,Breiðablik,Valur Reykjavík,1,0,1,0-0,2023_is1.txt
+17.00,ÍBV Vestmannaeyjar,KA Akureyri,2,0,1,0-0,2023_is1.txt
+19.15,KR Reykjavík,Keflavík ÍF,2,0,1,1-0,2023_is1.txt
+,Fram Reykjavík,HK Kópavogur,3,2,1,1-0,2023_is1.txt
+19.15,Fylkir Reykjavík,Víkingur Reykjavík,1,3,2,1-1,2023_is1.txt
+,UMF Stjarnan,FH Hafnarfjörður,5,0,1,3-0,2023_is1.txt
+16.00,ÍBV Vestmannaeyjar,Fram Reykjavík,1,0,1,1-0,2023_is1.txt
+17.00,Keflavík ÍF,Víkingur Reykjavík,3,3,X,2-2,2023_is1.txt
+19.15,Valur Reykjavík,Fylkir Reykjavík,2,1,1,0-0,2023_is1.txt
+19.15,HK Kópavogur,KR Reykjavík,1,1,X,0-0,2023_is1.txt
+18.15,Breiðablik,UMF Stjarnan,1,1,X,0-0,2023_is1.txt
+17.30,FH Hafnarfjörður,KA Akureyri,0,3,2,0-2,2023_is1.txt
+18.00,KA Akureyri,Víkingur Reykjavík,0,4,2,0-2,2023_is1.txt
+20.15,Fram Reykjavík,Breiðablik,0,1,2,0-1,2023_is1.txt
+16.00,ÍBV Vestmannaeyjar,Keflavík ÍF,1,1,X,1-0,2023_is1.txt
+19.15,UMF Stjarnan,Valur Reykjavík,2,0,1,1-0,2023_is1.txt
+20.00,KR Reykjavík,FH Hafnarfjörður,1,0,1,0-0,2023_is1.txt
+,Fylkir Reykjavík,HK Kópavogur,0,0,X,,2023_is1.txt
+18.00,Breiðablik,ÍBV Vestmannaeyjar,3,1,1,3-0,2023_is1.txt
+19.15,KR Reykjavík,Víkingur Reykjavík,1,2,2,0-1,2023_is1.txt
+,HK Kópavogur,UMF Stjarnan,1,1,X,1-0,2023_is1.txt
+,Valur Reykjavík,Fram Reykjavík,1,0,1,1-0,2023_is1.txt
+18.00,Keflavík ÍF,KA Akureyri,3,4,2,1-2,2023_is1.txt
+19.15,FH Hafnarfjörður,Fylkir Reykjavík,2,4,2,1-2,2023_is1.txt
+19.15,Breiðablik,Fylkir Reykjavík,5,1,1,1-0,2023_is1.txt
+19.15,UMF Stjarnan,Fram Reykjavík,4,0,1,1-0,2023_is1.txt
+16.00,KA Akureyri,HK Kópavogur,1,1,X,1-0,2023_is1.txt
+17.00,Víkingur Reykjavík,ÍBV Vestmannaeyjar,6,0,1,3-0,2023_is1.txt
+19.15,Keflavík ÍF,FH Hafnarfjörður,2,3,2,0-2,2023_is1.txt
+,KR Reykjavík,Valur Reykjavík,0,4,2,0-2,2023_is1.txt
+14.00,ÍBV Vestmannaeyjar,UMF Stjarnan,0,2,2,0-0,2023_is1.txt
+14.00,Breiðablik,KR Reykjavík,3,4,2,1-2,2023_is1.txt
+16.00,Valur Reykjavík,KA Akureyri,4,2,1,3-0,2023_is1.txt
+19.15,FH Hafnarfjörður,Víkingur Reykjavík,1,3,2,1-2,2023_is1.txt
+,Fram Reykjavík,Fylkir Reykjavík,1,1,X,1-0,2023_is1.txt
+19.15,HK Kópavogur,Keflavík ÍF,3,1,1,0-1,2023_is1.txt
+16.00,KA Akureyri,Breiðablik,1,1,X,1-1,2023_is1.txt
+17.00,FH Hafnarfjörður,ÍBV Vestmannaeyjar,2,1,1,0-1,2023_is1.txt
+,Keflavík ÍF,Valur Reykjavík,1,1,X,0-0,2023_is1.txt
+18.15,KR Reykjavík,Fram Reykjavík,3,2,1,2-0,2023_is1.txt
+19.15,Víkingur Reykjavík,HK Kópavogur,6,1,1,4-0,2023_is1.txt
+19.15,Fylkir Reykjavík,UMF Stjarnan,0,4,2,0-2,2023_is1.txt
+16.15,ÍBV Vestmannaeyjar,Fylkir Reykjavík,0,1,2,0-0,2023_is1.txt
+17.00,Fram Reykjavík,KA Akureyri,2,1,1,1-0,2023_is1.txt
+18.00,Breiðablik,Keflavík ÍF,2,1,1,1-1,2023_is1.txt
+19.15,HK Kópavogur,FH Hafnarfjörður,2,2,X,0-1,2023_is1.txt
+,Valur Reykjavík,Víkingur Reykjavík,0,4,2,0-2,2023_is1.txt
+19.15,UMF Stjarnan,KR Reykjavík,3,1,1,2-1,2023_is1.txt
+16.00,KA Akureyri,UMF Stjarnan,2,1,1,1-1,2023_is1.txt
+17.00,FH Hafnarfjörður,Valur Reykjavík,3,2,1,1-2,2023_is1.txt
+17.00,Keflavík ÍF,Fram Reykjavík,0,0,X,,2023_is1.txt
+,KR Reykjavík,Fylkir Reykjavík,2,0,1,1-0,2023_is1.txt
+19.15,Víkingur Reykjavík,Breiðablik,5,3,1,2-1,2023_is1.txt
+18.00,HK Kópavogur,ÍBV Vestmannaeyjar,2,2,X,1-0,2023_is1.txt
+14.00,Breiðablik,FH Hafnarfjörður,0,2,2,0-0,2023_is1.txt
+,Fram Reykjavík,Víkingur Reykjavík,2,3,2,1-2,2023_is1.txt
+,Fylkir Reykjavík,KA Akureyri,1,1,X,0-1,2023_is1.txt
+,ÍBV Vestmannaeyjar,KR Reykjavík,2,2,X,1-0,2023_is1.txt
+,UMF Stjarnan,Keflavík ÍF,3,0,1,2-0,2023_is1.txt
+,Valur Reykjavík,HK Kópavogur,4,1,1,2-0,2023_is1.txt
+18.00,Breiðablik,FH Hafnarfjörður,0,2,2,0-1,2023_is1.txt
+19.15,Valur Reykjavík,UMF Stjarnan,2,0,1,1-0,2023_is1.txt
+19.15,Víkingur Reykjavík,KR Reykjavík,2,2,X,2-0,2023_is1.txt
+14.00,FH Hafnarfjörður,UMF Stjarnan,1,3,2,0-2,2023_is1.txt
+,KR Reykjavík,Valur Reykjavík,2,2,X,0-1,2023_is1.txt
+19.15,Breiðablik,Víkingur Reykjavík,3,1,1,2-0,2023_is1.txt
+19.15,UMF Stjarnan,KR Reykjavík,2,0,1,2-0,2023_is1.txt
+,Víkingur Reykjavík,FH Hafnarfjörður,2,1,1,0-1,2023_is1.txt
+,Valur Reykjavík,Breiðablik,4,2,1,2-1,2023_is1.txt
+14.00,KR Reykjavík,Breiðablik,4,3,1,1-3,2023_is1.txt
+19.15,Valur Reykjavík,FH Hafnarfjörður,4,1,1,1-1,2023_is1.txt
+19.15,UMF Stjarnan,Víkingur Reykjavík,3,1,1,2-0,2023_is1.txt
+14.00,Víkingur Reykjavík,Valur Reykjavík,5,1,1,1-1,2023_is1.txt
+,FH Hafnarfjörður,KR Reykjavík,3,1,1,1-0,2023_is1.txt
+14.00,Breiðablik,UMF Stjarnan,0,2,2,0-1,2023_is1.txt
+17.00,Fylkir Reykjavík,ÍBV Vestmannaeyjar,2,2,X,1-0,2023_is1.txt
+19.15,HK Kópavogur,Fram Reykjavík,1,1,X,0-0,2023_is1.txt
+16.15,KA Akureyri,Keflavík ÍF,4,2,1,3-1,2023_is1.txt
+14.00,ÍBV Vestmannaeyjar,Fram Reykjavík,2,2,X,0-0,2023_is1.txt
+14.00,Keflavík ÍF,HK Kópavogur,2,1,1,2-1,2023_is1.txt
+17.00,Fylkir Reykjavík,KA Akureyri,2,4,2,1-2,2023_is1.txt
+16.15,KA Akureyri,ÍBV Vestmannaeyjar,2,1,1,1-1,2023_is1.txt
+19.15,Fram Reykjavík,Keflavík ÍF,3,1,1,1-0,2023_is1.txt
+,HK Kópavogur,Fylkir Reykjavík,2,2,X,1-1,2023_is1.txt
+14.00,Keflavík ÍF,Fylkir Reykjavík,1,3,2,1-0,2023_is1.txt
+17.00,HK Kópavogur,ÍBV Vestmannaeyjar,0,1,2,0-1,2023_is1.txt
+,Fram Reykjavík,KA Akureyri,1,0,1,0-0,2023_is1.txt
+14.00,ÍBV Vestmannaeyjar,Keflavík ÍF,1,1,X,0-0,2023_is1.txt
+,KA Akureyri,HK Kópavogur,1,0,1,1-0,2023_is1.txt
+,Fylkir Reykjavík,Fram Reykjavík,5,1,1,3-1,2023_is1.txt
+19.15,Víkingur Reykjavík,UMF Stjarnan,2,0,1,1-0,2024_is1.txt
+13.00,Fram Reykjavík,IF Vestri,2,0,1,2-0,2024_is1.txt
+,KA Akureyri,HK Kópavogur,1,1,X,1-1,2024_is1.txt
+19.15,Fylkir Reykjavík,KR Reykjavík,3,4,2,1-1,2024_is1.txt
+,Valur Reykjavík,ÍA Akranes,2,0,1,1-0,2024_is1.txt
+19.15,Breiðablik,FH Hafnarfjörður,2,0,1,1-0,2024_is1.txt
+19.15,UMF Stjarnan,KR Reykjavík,1,3,2,1-1,2024_is1.txt
+14.00,Breiðablik,IF Vestri,4,0,1,0-0,2024_is1.txt
+15.00,KA Akureyri,FH Hafnarfjörður,2,3,2,1-2,2024_is1.txt
+17.00,HK Kópavogur,ÍA Akranes,0,4,2,0-0,2024_is1.txt
+19.15,Fylkir Reykjavík,Valur Reykjavík,0,0,X,,2024_is1.txt
+19.15,Fram Reykjavík,Víkingur Reykjavík,0,1,2,0-0,2024_is1.txt
+19.15,UMF Stjarnan,Valur Reykjavík,1,0,1,1-0,2024_is1.txt
+14.00,HK Kópavogur,FH Hafnarfjörður,0,2,2,0-0,2024_is1.txt
+16.15,KR Reykjavík,Fram Reykjavík,0,1,2,0-1,2024_is1.txt
+14.00,KA Akureyri,IF Vestri,0,1,2,0-0,2024_is1.txt
+17.00,ÍA Akranes,Fylkir Reykjavík,5,1,1,1-0,2024_is1.txt
+19.15,Víkingur Reykjavík,Breiðablik,4,1,1,2-1,2024_is1.txt
+14.00,ÍA Akranes,FH Hafnarfjörður,1,2,2,1-1,2024_is1.txt
+,IF Vestri,HK Kópavogur,1,0,1,0-0,2024_is1.txt
+16.15,Víkingur Reykjavík,KA Akureyri,4,2,1,3-1,2024_is1.txt
+18.30,KR Reykjavík,Breiðablik,2,3,2,0-0,2024_is1.txt
+18.00,Valur Reykjavík,Fram Reykjavík,1,1,X,0-0,2024_is1.txt
+19.15,Fylkir Reykjavík,UMF Stjarnan,0,1,2,0-0,2024_is1.txt
+14.00,FH Hafnarfjörður,IF Vestri,3,2,1,1-2,2024_is1.txt
+16.00,KA Akureyri,KR Reykjavík,1,1,X,0-1,2024_is1.txt
+17.00,UMF Stjarnan,ÍA Akranes,4,1,1,1-1,2024_is1.txt
+19.15,Fram Reykjavík,Fylkir Reykjavík,2,1,1,2-1,2024_is1.txt
+,HK Kópavogur,Víkingur Reykjavík,3,1,1,1-0,2024_is1.txt
+19.15,Breiðablik,Valur Reykjavík,2,3,2,1-2,2024_is1.txt
+19.15,UMF Stjarnan,Fram Reykjavík,1,1,X,1-0,2024_is1.txt
+14.00,ÍA Akranes,IF Vestri,3,0,1,1-0,2024_is1.txt
+17.00,Valur Reykjavík,KA Akureyri,3,1,1,1-1,2024_is1.txt
+17.00,KR Reykjavík,HK Kópavogur,1,2,2,0-1,2024_is1.txt
+19.15,Fylkir Reykjavík,Breiðablik,0,3,2,0-1,2024_is1.txt
+,Víkingur Reykjavík,FH Hafnarfjörður,2,0,1,1-0,2024_is1.txt
+14.00,IF Vestri,Víkingur Reykjavík,1,4,2,1-3,2024_is1.txt
+16.15,KA Akureyri,Fylkir Reykjavík,4,2,1,3-0,2024_is1.txt
+17.00,FH Hafnarfjörður,KR Reykjavík,1,2,2,0-2,2024_is1.txt
+19.15,HK Kópavogur,Valur Reykjavík,1,2,2,0-0,2024_is1.txt
+,Breiðablik,UMF Stjarnan,2,1,1,2-1,2024_is1.txt
+,Fram Reykjavík,ÍA Akranes,1,1,X,0-0,2024_is1.txt
+16.00,KR Reykjavík,IF Vestri,2,2,X,2-0,2024_is1.txt
+17.00,ÍA Akranes,Víkingur Reykjavík,0,1,2,0-0,2024_is1.txt
+19.15,Valur Reykjavík,FH Hafnarfjörður,2,2,X,1-1,2024_is1.txt
+17.00,UMF Stjarnan,KA Akureyri,5,0,1,2-0,2024_is1.txt
+,Fram Reykjavík,Breiðablik,1,4,2,1-1,2024_is1.txt
+19.15,Fylkir Reykjavík,HK Kópavogur,3,1,1,2-0,2024_is1.txt
+19.15,FH Hafnarfjörður,Fram Reykjavík,3,3,X,2-0,2024_is1.txt
+16.00,KA Akureyri,ÍA Akranes,2,3,2,2-3,2024_is1.txt
+14.00,IF Vestri,UMF Stjarnan,4,2,1,3-2,2024_is1.txt
+17.00,Víkingur Reykjavík,Fylkir Reykjavík,5,2,1,2-1,2024_is1.txt
+19.15,HK Kópavogur,Breiðablik,0,2,2,0-1,2024_is1.txt
+19.15,KR Reykjavík,Valur Reykjavík,3,5,2,2-4,2024_is1.txt
+18.00,Fylkir Reykjavík,IF Vestri,3,2,1,1-1,2024_is1.txt
+19.15,Fram Reykjavík,HK Kópavogur,1,2,2,1-0,2024_is1.txt
+,ÍA Akranes,KR Reykjavík,2,1,1,0-0,2024_is1.txt
+,UMF Stjarnan,FH Hafnarfjörður,4,2,1,1-1,2024_is1.txt
+20.15,Valur Reykjavík,Víkingur Reykjavík,2,2,X,0-1,2024_is1.txt
+19.15,Breiðablik,KA Akureyri,2,1,1,1-0,2024_is1.txt
+14.00,IF Vestri,Valur Reykjavík,1,5,2,1-1,2024_is1.txt
+17.00,HK Kópavogur,UMF Stjarnan,4,3,1,2-1,2024_is1.txt
+19.15,Víkingur Reykjavík,KR Reykjavík,1,1,X,1-1,2024_is1.txt
+17.00,KA Akureyri,Fram Reykjavík,3,2,1,1-2,2024_is1.txt
+19.15,Breiðablik,ÍA Akranes,1,1,X,0-0,2024_is1.txt
+,FH Hafnarfjörður,Fylkir Reykjavík,3,1,1,1-0,2024_is1.txt
+18.00,IF Vestri,Fram Reykjavík,1,3,2,0-2,2024_is1.txt
+19.15,KR Reykjavík,Fylkir Reykjavík,2,2,X,1-0,2024_is1.txt
+,UMF Stjarnan,Víkingur Reykjavík,0,4,2,0-2,2024_is1.txt
+18.00,HK Kópavogur,KA Akureyri,1,2,2,0-0,2024_is1.txt
+19.15,FH Hafnarfjörður,Breiðablik,1,0,1,1-0,2024_is1.txt
+,ÍA Akranes,Valur Reykjavík,3,2,1,2-1,2024_is1.txt
+19.15,Víkingur Reykjavík,Fram Reykjavík,2,1,1,2-0,2024_is1.txt
+14.00,ÍA Akranes,HK Kópavogur,8,0,1,4-0,2024_is1.txt
+,KR Reykjavík,UMF Stjarnan,1,1,X,0-1,2024_is1.txt
+,IF Vestri,Breiðablik,2,2,X,1-1,2024_is1.txt
+17.00,Valur Reykjavík,Fylkir Reykjavík,4,0,1,1-0,2024_is1.txt
+19.15,FH Hafnarfjörður,KA Akureyri,1,1,X,1-0,2024_is1.txt
+18.00,Valur Reykjavík,UMF Stjarnan,5,1,1,2-0,2024_is1.txt
+20.15,Breiðablik,Víkingur Reykjavík,1,1,X,0-0,2024_is1.txt
+19.15,Fram Reykjavík,KR Reykjavík,1,0,1,0-0,2024_is1.txt
+14.00,IF Vestri,KA Akureyri,0,2,2,0-1,2024_is1.txt
+19.15,Fylkir Reykjavík,ÍA Akranes,3,0,1,2-0,2024_is1.txt
+,FH Hafnarfjörður,HK Kópavogur,3,1,1,1-1,2024_is1.txt
+14.00,HK Kópavogur,IF Vestri,1,1,X,1-1,2024_is1.txt
+16.15,KA Akureyri,Víkingur Reykjavík,1,0,1,0-0,2024_is1.txt
+19.15,Breiðablik,KR Reykjavík,4,2,1,3-1,2024_is1.txt
+,UMF Stjarnan,Fylkir Reykjavík,2,0,1,0-0,2024_is1.txt
+19.15,FH Hafnarfjörður,ÍA Akranes,1,1,X,0-0,2024_is1.txt
+19.15,Fram Reykjavík,Valur Reykjavík,4,1,1,3-1,2024_is1.txt
+16.00,IF Vestri,FH Hafnarfjörður,0,2,2,0-0,2024_is1.txt
+17.00,ÍA Akranes,UMF Stjarnan,1,3,2,1-0,2024_is1.txt
+19.15,Víkingur Reykjavík,HK Kópavogur,5,1,1,3-1,2024_is1.txt
+18.00,KR Reykjavík,KA Akureyri,2,2,X,1-0,2024_is1.txt
+19.15,Fylkir Reykjavík,Fram Reykjavík,0,0,X,,2024_is1.txt
+19.15,Valur Reykjavík,Breiðablik,0,2,2,0-1,2024_is1.txt
+19.15,FH Hafnarfjörður,Víkingur Reykjavík,2,3,2,2-1,2024_is1.txt
+19.15,Breiðablik,Fylkir Reykjavík,3,0,1,1-0,2024_is1.txt
+,Fram Reykjavík,UMF Stjarnan,2,1,1,0-0,2024_is1.txt
+,KA Akureyri,Valur Reykjavík,1,0,1,1-0,2024_is1.txt
+18.00,IF Vestri,ÍA Akranes,0,0,X,,2024_is1.txt
+20.00,HK Kópavogur,KR Reykjavík,3,2,1,0-2,2024_is1.txt
+14.00,Víkingur Reykjavík,IF Vestri,1,1,X,1-0,2024_is1.txt
+17.00,Fylkir Reykjavík,KA Akureyri,1,1,X,0-0,2024_is1.txt
+19.15,UMF Stjarnan,Breiðablik,2,2,X,1-0,2024_is1.txt
+,Valur Reykjavík,HK Kópavogur,5,1,1,2-1,2024_is1.txt
+18.15,ÍA Akranes,Fram Reykjavík,1,0,1,0-0,2024_is1.txt
+,KR Reykjavík,FH Hafnarfjörður,1,0,1,1-0,2024_is1.txt
+14.00,IF Vestri,KR Reykjavík,2,0,1,2-0,2024_is1.txt
+17.00,KA Akureyri,UMF Stjarnan,1,1,X,1-1,2024_is1.txt
+19.15,HK Kópavogur,Fylkir Reykjavík,0,2,2,0-0,2024_is1.txt
+18.00,FH Hafnarfjörður,Valur Reykjavík,2,2,X,0-1,2024_is1.txt
+19.15,Breiðablik,Fram Reykjavík,3,1,1,1-1,2024_is1.txt
+,Víkingur Reykjavík,ÍA Akranes,1,2,2,1-2,2024_is1.txt
+16.15,Valur Reykjavík,IF Vestri,3,1,1,1-1,2024_is1.txt
+17.00,Fram Reykjavík,KA Akureyri,1,2,2,1-1,2024_is1.txt
+,ÍA Akranes,Breiðablik,1,2,2,0-0,2024_is1.txt
+19.15,Fylkir Reykjavík,FH Hafnarfjörður,2,3,2,2-1,2024_is1.txt
+19.15,UMF Stjarnan,HK Kópavogur,2,0,1,1-0,2024_is1.txt
+17.00,KR Reykjavík,Víkingur Reykjavík,0,3,2,0-3,2024_is1.txt
+14.00,IF Vestri,Fylkir Reykjavík,0,0,X,,2024_is1.txt
+16.15,KA Akureyri,Breiðablik,2,3,2,1-1,2024_is1.txt
+17.00,FH Hafnarfjörður,UMF Stjarnan,0,3,2,0-0,2024_is1.txt
+,KR Reykjavík,ÍA Akranes,4,2,1,3-1,2024_is1.txt
+19.15,HK Kópavogur,Fram Reykjavík,1,0,1,0-0,2024_is1.txt
+,Víkingur Reykjavík,Valur Reykjavík,3,2,1,0-2,2024_is1.txt
+14.00,Fram Reykjavík,FH Hafnarfjörður,3,3,X,1-2,2024_is1.txt
+,ÍA Akranes,KA Akureyri,1,0,1,1-0,2024_is1.txt
+,UMF Stjarnan,IF Vestri,1,0,1,0-0,2024_is1.txt
+17.00,Breiðablik,HK Kópavogur,5,3,1,1-2,2024_is1.txt
+19.15,Fylkir Reykjavík,Víkingur Reykjavík,0,6,2,0-3,2024_is1.txt
+,Valur Reykjavík,KR Reykjavík,4,1,1,2-0,2024_is1.txt
+19.15,Breiðablik,ÍA Akranes,2,0,1,0-0,2024_is1.txt
+,Valur Reykjavík,UMF Stjarnan,2,2,X,0-2,2024_is1.txt
+19.15,Víkingur Reykjavík,FH Hafnarfjörður,3,0,1,1-0,2024_is1.txt
+14.00,FH Hafnarfjörður,Breiðablik,0,1,2,0-0,2024_is1.txt
+19.15,Valur Reykjavík,Víkingur Reykjavík,2,3,2,1-1,2024_is1.txt
+19.15,UMF Stjarnan,ÍA Akranes,3,0,1,1-0,2024_is1.txt
+14.00,ÍA Akranes,FH Hafnarfjörður,4,1,1,3-1,2024_is1.txt
+17.00,Víkingur Reykjavík,UMF Stjarnan,2,2,X,0-0,2024_is1.txt
+19.15,Breiðablik,Valur Reykjavík,2,2,X,0-1,2024_is1.txt
+14.00,ÍA Akranes,Víkingur Reykjavík,3,4,2,2-0,2024_is1.txt
+,FH Hafnarfjörður,Valur Reykjavík,1,1,X,0-1,2024_is1.txt
+17.00,Breiðablik,UMF Stjarnan,2,1,1,0-0,2024_is1.txt
+16.15,UMF Stjarnan,FH Hafnarfjörður,3,2,1,2-2,2024_is1.txt
+,Valur Reykjavík,ÍA Akranes,6,1,1,4-1,2024_is1.txt
+18.30,Víkingur Reykjavík,Breiðablik,0,3,2,0-1,2024_is1.txt
+14.00,KR Reykjavík,IF Vestri,2,2,X,1-0,2024_is1.txt
+19.15,Fram Reykjavík,Fylkir Reykjavík,2,0,1,2-0,2024_is1.txt
+16.15,KA Akureyri,HK Kópavogur,3,3,X,1-2,2024_is1.txt
+14.00,KR Reykjavík,Fram Reykjavík,7,1,1,4-0,2024_is1.txt
+,IF Vestri,HK Kópavogur,2,1,1,0-0,2024_is1.txt
+17.00,Fylkir Reykjavík,KA Akureyri,1,3,2,1-1,2024_is1.txt
+14.00,Fram Reykjavík,IF Vestri,2,4,2,1-3,2024_is1.txt
+14.00,KA Akureyri,KR Reykjavík,0,4,2,0-2,2024_is1.txt
+17.00,HK Kópavogur,Fylkir Reykjavík,2,2,X,1-0,2024_is1.txt
+14.00,KA Akureyri,IF Vestri,2,1,1,2-0,2024_is1.txt
+19.15,HK Kópavogur,Fram Reykjavík,2,1,1,1-1,2024_is1.txt
+,Fylkir Reykjavík,KR Reykjavík,0,1,2,0-1,2024_is1.txt
+14.00,IF Vestri,Fylkir Reykjavík,1,3,2,1-0,2024_is1.txt
+,KR Reykjavík,HK Kópavogur,7,0,1,3-0,2024_is1.txt
+,Fram Reykjavík,KA Akureyri,1,4,2,0-2,2024_is1.txt
+19.15,Breiðablik,UMF Afturelding,2,0,1,2-0,2025_is1.txt
+14.00,Valur Reykjavík,IF Vestri,1,1,X,0-0,2025_is1.txt
+16.15,KA Akureyri,KR Reykjavík,2,2,X,2-2,2025_is1.txt
+19.15,Fram Reykjavík,ÍA Akranes,0,1,2,0-1,2025_is1.txt
+18.00,Víkingur Reykjavík,ÍBV Vestmannaeyjar,2,0,1,0-0,2025_is1.txt
+19.15,UMF Stjarnan,FH Hafnarfjörður,2,1,1,0-0,2025_is1.txt
+14.00,IF Vestri,FH Hafnarfjörður,1,0,1,1-0,2025_is1.txt
+17.00,UMF Afturelding,ÍBV Vestmannaeyjar,0,0,X,,2025_is1.txt
+19.15,Víkingur Reykjavík,KA Akureyri,4,0,1,3-0,2025_is1.txt
+,Fram Reykjavík,Breiðablik,4,2,1,0-2,2025_is1.txt
+19.15,UMF Stjarnan,ÍA Akranes,2,1,1,1-1,2025_is1.txt
+,KR Reykjavík,Valur Reykjavík,3,3,X,1-1,2025_is1.txt
+18.00,FH Hafnarfjörður,KR Reykjavík,2,2,X,1-1,2025_is1.txt
+,ÍA Akranes,IF Vestri,0,2,2,0-2,2025_is1.txt
+,Valur Reykjavík,KA Akureyri,3,1,1,2-0,2025_is1.txt
+19.15,Breiðablik,UMF Stjarnan,2,1,1,1-0,2025_is1.txt
+16.00,ÍBV Vestmannaeyjar,Fram Reykjavík,3,1,1,2-1,2025_is1.txt
+19.15,UMF Afturelding,Víkingur Reykjavík,1,0,1,0-0,2025_is1.txt
+14.00,IF Vestri,Breiðablik,0,1,2,0-0,2025_is1.txt
+16.15,KA Akureyri,FH Hafnarfjörður,3,2,1,1-1,2025_is1.txt
+19.15,KR Reykjavík,ÍA Akranes,5,0,1,2-0,2025_is1.txt
+17.45,UMF Stjarnan,ÍBV Vestmannaeyjar,2,3,2,1-2,2025_is1.txt
+19.15,Fram Reykjavík,UMF Afturelding,3,0,1,2-0,2025_is1.txt
+,Valur Reykjavík,Víkingur Reykjavík,1,1,X,0-1,2025_is1.txt
+14.00,ÍBV Vestmannaeyjar,IF Vestri,0,2,2,0-1,2025_is1.txt
+17.00,ÍA Akranes,KA Akureyri,3,0,1,2-0,2025_is1.txt
+19.15,FH Hafnarfjörður,Valur Reykjavík,3,0,1,2-0,2025_is1.txt
+17.30,BF 108,Afríka,8,0,1,3-0,2025_iscup.txt
+19.00,SR,KF Rangæinga,2,3,2,2-2,2025_iscup.txt
+,Úlfarnir,Stokkseyri,3,0,1,1-0,2025_iscup.txt
+,KF Kópavogur,Elliði,1,5,2,1-3,2025_iscup.txt
+,Vængir Júpiters,KÁ Ásvellir,1,2,2,0-2,2025_iscup.txt
+,Léttir,Kría,1,2,2,1-0,2025_iscup.txt
+20.00,Ýmir,Hafnir,3,4,2,1-0,2025_iscup.txt
+,Árborg,Augnablik,0,4,2,0-1,2025_iscup.txt
+13.00,Spyrnir,Neisti Djúpivogur,5,0,1,3-0,2025_iscup.txt
+,Ægir,KV Vesturbæjar,2,3,2,,2025_iscup.txt
+14.00,Smári,Fálkar,4,0,1,0-0,2025_iscup.txt
+,Kári,KFS Vestmannaeyjar,7,1,1,1-1,2025_iscup.txt
+,KF Fjallabyggðar,UMF Tindastóll,3,5,2,0-3,2025_iscup.txt
+,ÍH Hafnarfjörður,KH Hlídarendi,4,1,1,3-0,2025_iscup.txt
+14.20,Víðir Garður,Hörður Í.,2,0,1,0-0,2025_iscup.txt
+15.00,KF Garðabæjar,Reynir Sandgerði,2,3,2,0-0,2025_iscup.txt
+16.30,UMF Einherji,Sindri Höfn,0,2,2,0-0,2025_iscup.txt
+17.00,IB Uppsveitir,Hvíti riddarinn,0,6,2,0-4,2025_iscup.txt
+19.00,Árbær,Thorlákur FC,4,1,1,2-1,2025_iscup.txt
+14.00,Álftanes,Haukar Hafnarfjörður,0,3,2,,2025_iscup.txt
+,Hamar,UMF Skallagrímur,1,3,2,,2025_iscup.txt
+18.00,Álafoss,RB Keflavík,3,4,2,1-2,2025_iscup.txt
+19.00,Elliði,Haukar Hafnarfjörður,1,3,2,1-2,2025_iscup.txt
+,HK Kópavogur,Hvíti riddarinn,4,0,1,3-0,2025_iscup.txt
+19.15,Þór Akureyri,ÍF Magni,7,0,1,5-0,2025_iscup.txt
+19.00,Reynir Sandgerði,UMF Grindavík,0,5,2,0-3,2025_iscup.txt
+20.15,Kári,Árbær,8,1,1,4-0,2025_iscup.txt
+14.00,KÁ Ásvellir,KF Rangæinga,3,2,1,,2025_iscup.txt
+,KF Austfjarða,Spyrnir,3,0,1,2-0,2025_iscup.txt
+,KV Vesturbæjar,Fylkir Reykjavík,1,6,2,0-1,2025_iscup.txt
+16.00,Þróttur Reykjavík,Hafnir,7,0,1,5-0,2025_iscup.txt
+18.30,UMF Skallagrímur,Úlfarnir,3,5,2,,2025_iscup.txt
+14.00,Keflavík ÍF,Þróttur Vogum,6,0,1,1-0,2025_iscup.txt
+,Huginn,Sindri Höfn,1,0,1,1-0,2025_iscup.txt
+,Leiknir Reykjavík,Kría,5,0,1,2-0,2025_iscup.txt
+19.00,Víkingur Ólafsvík,Smári,5,1,1,2-0,2025_iscup.txt
+20.00,ÍH Hafnarfjörður,UMF Selfoss,2,5,2,1-4,2025_iscup.txt
+18.10,UMF Njarðvík,BF 108,5,0,1,2-0,2025_iscup.txt
+19.15,Grótta,Víðir Garður,2,1,1,0-0,2025_iscup.txt
+20.00,Augnablik,ÍR Reykjavík,0,5,2,0-1,2025_iscup.txt
+14.00,UMF Tindastóll,ÍF Völsungur,6,7,2,,2025_iscup.txt
+19.00,RB Keflavík,Fjölnir Reykjavík,0,4,2,0-1,2025_iscup.txt
+14.00,Kári,Fylkir Reykjavík,2,1,1,0-1,2025_iscup.txt
+,Keflavík ÍF,Leiknir Reykjavík,1,0,1,1-0,2025_iscup.txt
+,Víkingur Ólafsvík,Úlfarnir,7,1,1,5-1,2025_iscup.txt
+16.00,ÍBV Vestmannaeyjar,Víkingur Reykjavík,3,0,1,0-0,2025_iscup.txt
+14.00,Grótta,ÍA Akranes,1,4,2,0-1,2025_iscup.txt
+,UMF Selfoss,Haukar Hafnarfjörður,4,0,1,2-0,2025_iscup.txt
+,ÍF Völsungur,Þróttur Reykjavík,2,3,2,,2025_iscup.txt
+16.00,IF Vestri,HK Kópavogur,5,4,1,,2025_iscup.txt
+,UMF Stjarnan,UMF Njarðvík,5,3,1,,2025_iscup.txt
+,Breiðablik,Fjölnir Reykjavík,5,0,1,1-0,2025_iscup.txt
+17.30,KA Akureyri,KF Austfjarða,4,0,1,2-0,2025_iscup.txt
+14.00,UMF Grindavík,Valur Reykjavík,1,3,2,1-1,2025_iscup.txt
+,KR Reykjavík,KÁ Ásvellir,11,0,1,5-0,2025_iscup.txt
+15.00,Þór Akureyri,ÍR Reykjavík,3,1,1,2-1,2025_iscup.txt
+16.00,Fram Reykjavík,FH Hafnarfjörður,1,0,1,1-0,2025_iscup.txt

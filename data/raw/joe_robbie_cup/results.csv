@@ -1,0 +1,5 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Colombia,Sweden,0,0,X,Miami,United States,1994_joe_robbie_cup.txt
+United States,Bolivia,1,1,X,Miami,United States,1994_joe_robbie_cup.txt
+Bolivia,Colombia,0,2,2,Miami,United States,1994_joe_robbie_cup.txt
+United States,Sweden,1,3,2,Miami,United States,1994_joe_robbie_cup.txt

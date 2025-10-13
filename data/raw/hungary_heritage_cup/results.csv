@@ -1,0 +1,4 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Felvidék,Kárpátalja,1,1,X,Szarvas,Hungary   [Felvidék wins on penalties],2016_hungary_heritage_cup.txt
+Délvidék,Székely Land,3,1,1,Szarvas,Hungary,2016_hungary_heritage_cup.txt
+Délvidék,Felvidék,1,2,2,Szarvas,Hungary,2016_hungary_heritage_cup.txt

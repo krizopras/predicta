@@ -1,0 +1,18 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+India,Taiwan,5,0,1,Mumbai,India,2018_intercontinental_cup.txt
+Kenya,New Zealand,2,1,1,Mumbai,India,2018_intercontinental_cup.txt
+India,Kenya,3,0,1,Mumbai,India,2018_intercontinental_cup.txt
+Taiwan,New Zealand,0,1,2,Mumbai,India,2018_intercontinental_cup.txt
+India,New Zealand,1,2,2,Mumbai,India,2018_intercontinental_cup.txt
+Taiwan,Kenya,0,4,2,Mumbai,India,2018_intercontinental_cup.txt
+India,Kenya,2,0,1,Mumbai,India,2018_intercontinental_cup.txt
+India,Tajikistan,2,4,2,Ahmedabad,India,2019_intercontinental_cup.txt
+Syria,North Korea,5,2,1,Ahmedabad,India,2019_intercontinental_cup.txt
+Tajikistan,Syria,2,0,1,Ahmedabad,India,2019_intercontinental_cup.txt
+India,North Korea,2,5,2,Ahmedabad,India,2019_intercontinental_cup.txt
+North Korea,Tajikistan,1,0,1,Ahmedabad,India,2019_intercontinental_cup.txt
+India,Syria,1,1,X,Ahmedabad,India,2019_intercontinental_cup.txt
+Tajikistan,North Korea,0,1,2,Ahmedabad,India,2019_intercontinental_cup.txt
+India,Mauritius,0,0,X,Hyderabad,India,2024_intercontinental_cup.txt
+Syria,Mauritius,2,0,1,Hyderabad,India,2024_intercontinental_cup.txt
+India,Syria,0,3,2,Hyderabad,India,2024_intercontinental_cup.txt

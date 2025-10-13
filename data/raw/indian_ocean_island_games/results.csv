@@ -1,0 +1,111 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Réunion,Seychelles,3,0,1,Réunion,Réunion,1979_indian_ocean_island_games.txt
+Mauritius,Comoros,3,0,1,Réunion,Réunion,1979_indian_ocean_island_games.txt
+Seychelles,Maldives,9,0,1,Réunion,Réunion,1979_indian_ocean_island_games.txt
+Réunion,Maldives,9,0,1,Réunion,Réunion,1979_indian_ocean_island_games.txt
+Comoros,Mauritius,1,3,2,Réunion,Réunion,1979_indian_ocean_island_games.txt
+Comoros,Maldives,2,1,1,Réunion,Réunion,1979_indian_ocean_island_games.txt
+Seychelles,Mauritius,1,1,X,Réunion,Réunion   [Seychelles wins on penalties],1979_indian_ocean_island_games.txt
+Réunion,Comoros,6,1,1,Réunion,Réunion,1979_indian_ocean_island_games.txt
+Réunion,Seychelles,2,1,1,Réunion,Réunion,1979_indian_ocean_island_games.txt
+Mauritius,Seychelles,3,1,1,Mauritius,Mauritius,1985_indian_ocean_island_games.txt
+Réunion,Comoros,1,0,1,Mauritius,Mauritius,1985_indian_ocean_island_games.txt
+Madagascar,Seychelles,1,0,1,Mauritius,Mauritius,1985_indian_ocean_island_games.txt
+Mauritius,Madagascar,3,1,1,Mauritius,Mauritius,1985_indian_ocean_island_games.txt
+Comoros,Maldives,2,2,X,Mauritius,Mauritius,1985_indian_ocean_island_games.txt
+Réunion,Maldives,9,0,1,Mauritius,Mauritius,1985_indian_ocean_island_games.txt
+Mauritius,Réunion,4,4,X,Mauritius,Mauritius   [Mauritius wins on penalties],1985_indian_ocean_island_games.txt
+Madagascar,Comoros,1,0,1,Madagascar,Madagascar,1990_indian_ocean_island_games.txt
+Réunion,Comoros,0,1,2,Madagascar,Madagascar,1990_indian_ocean_island_games.txt
+Madagascar,Réunion,0,0,X,Madagascar,Madagascar,1990_indian_ocean_island_games.txt
+Mauritius,Seychelles,2,0,1,Madagascar,Madagascar,1990_indian_ocean_island_games.txt
+Mauritius,Comoros,4,0,1,Madagascar,Madagascar,1990_indian_ocean_island_games.txt
+Madagascar,Seychelles,6,0,1,Madagascar,Madagascar,1990_indian_ocean_island_games.txt
+Seychelles,Comoros,3,1,1,Madagascar,Madagascar,1990_indian_ocean_island_games.txt
+Madagascar,Mauritius,5,1,1,Madagascar,Madagascar,1990_indian_ocean_island_games.txt
+Madagascar,Comoros,5,0,1,Seychelles,Seychelles,1993_indian_ocean_island_games.txt
+Mauritius,Comoros,3,0,1,Seychelles,Seychelles,1993_indian_ocean_island_games.txt
+Seychelles,Réunion,0,2,2,Seychelles,Seychelles,1993_indian_ocean_island_games.txt
+Mauritius,Madagascar,1,2,2,Seychelles,Seychelles,1993_indian_ocean_island_games.txt
+Seychelles,Réunion,0,2,2,Seychelles,Seychelles,1993_indian_ocean_island_games.txt
+Seychelles,Madagascar,1,2,2,Seychelles,Seychelles,1993_indian_ocean_island_games.txt
+Réunion,Mauritius,1,0,1,Seychelles,Seychelles,1993_indian_ocean_island_games.txt
+Seychelles,Mauritius,2,6,2,Seychelles,Seychelles,1993_indian_ocean_island_games.txt
+Madagascar,Réunion,1,0,1,Seychelles,Seychelles,1993_indian_ocean_island_games.txt
+Réunion,Mauritius,4,0,1,Réunion,Réunion,1998_indian_ocean_island_games.txt
+Madagascar,Comoros,3,0,1,Réunion,Réunion,1998_indian_ocean_island_games.txt
+Seychelles,Comoros,3,0,1,Réunion,Réunion,1998_indian_ocean_island_games.txt
+Réunion,Mauritius,1,0,1,Réunion,Réunion,1998_indian_ocean_island_games.txt
+Madagascar,Seychelles,5,2,1,Réunion,Réunion,1998_indian_ocean_island_games.txt
+Madagascar,Mauritius,2,0,1,Réunion,Réunion,1998_indian_ocean_island_games.txt
+Réunion,Seychelles,2,0,1,Réunion,Réunion,1998_indian_ocean_island_games.txt
+Mauritius,Seychelles,3,4,2,Réunion,Réunion,1998_indian_ocean_island_games.txt
+Réunion,Madagascar,3,3,X,Réunion,Réunion   [Réunion wins on penalties],1998_indian_ocean_island_games.txt
+Seychelles,Madagascar,1,1,X,Curepipe,Mauritius,2003_indian_ocean_island_games.txt
+Mauritius,Madagascar,3,1,1,Curepipe,Mauritius,2003_indian_ocean_island_games.txt
+Réunion,Comoros,1,0,1,Centre de Flacq,Mauritius,2003_indian_ocean_island_games.txt
+Mauritius,Seychelles,0,0,X,Curepipe,Mauritius,2003_indian_ocean_island_games.txt
+Comoros,Réunion,0,4,2,Centre de Flacq,Mauritius,2003_indian_ocean_island_games.txt
+Mauritius,Comoros,5,0,1,Curepipe,Mauritius,2003_indian_ocean_island_games.txt
+Réunion,Seychelles,1,0,1,Centre de Flacq,Mauritius,2003_indian_ocean_island_games.txt
+Seychelles,Comoros,2,0,1,Curepipe,Mauritius,2003_indian_ocean_island_games.txt
+Mauritius,Réunion,2,1,1,Curepipe,Mauritius,2003_indian_ocean_island_games.txt
+Seychelles,Mayotte,2,1,1,Madagascar,Madagascar,2007_indian_ocean_island_games.txt
+Comoros,Réunion,1,1,X,Madagascar,Madagascar,2007_indian_ocean_island_games.txt
+Mauritius,Mayotte,0,1,2,Madagascar,Madagascar,2007_indian_ocean_island_games.txt
+Madagascar,Réunion,0,0,X,Madagascar,Madagascar,2007_indian_ocean_island_games.txt
+Mauritius,Seychelles,3,0,1,Madagascar,Madagascar,2007_indian_ocean_island_games.txt
+Madagascar,Comoros,3,0,1,Madagascar,Madagascar,2007_indian_ocean_island_games.txt
+Mauritius,Réunion,0,1,2,Madagascar,Madagascar,2007_indian_ocean_island_games.txt
+Madagascar,Mayotte,4,0,1,Madagascar,Madagascar,2007_indian_ocean_island_games.txt
+Mauritius,Mayotte,1,1,X,Madagascar,Madagascar   [Mayotte wins on penalties],2007_indian_ocean_island_games.txt
+Madagascar,Réunion,0,0,X,Madagascar,Madagascar   [Réunion wins on penalties],2007_indian_ocean_island_games.txt
+Seychelles,Comoros,0,0,X,Praslin,Seychelles,2011_indian_ocean_island_games.txt
+Maldives,Mauritius,1,1,X,Praslin,Seychelles,2011_indian_ocean_island_games.txt
+Madagascar,Mayotte,1,1,X,Praslin,Seychelles,2011_indian_ocean_island_games.txt
+Seychelles,Mauritius,2,1,1,Mahé,Seychelles,2011_indian_ocean_island_games.txt
+Comoros,Maldives,2,2,X,Mahé,Seychelles,2011_indian_ocean_island_games.txt
+Réunion,Madagascar,2,1,1,Mahé,Seychelles,2011_indian_ocean_island_games.txt
+Mayotte,Réunion,2,0,1,Mahé,Seychelles,2011_indian_ocean_island_games.txt
+Mauritius,Comoros,2,0,1,Praslin,Seychelles,2011_indian_ocean_island_games.txt
+Seychelles,Maldives,5,1,1,Mahé,Seychelles,2011_indian_ocean_island_games.txt
+Seychelles,Réunion,2,1,1,Mahé,Seychelles,2011_indian_ocean_island_games.txt
+Mayotte,Mauritius,0,0,X,Mahé,Seychelles   [Mauritius wins on penalties],2011_indian_ocean_island_games.txt
+Réunion,Mayotte,1,0,1,Mahé,Seychelles,2011_indian_ocean_island_games.txt
+Seychelles,Mauritius,1,1,X,Mahé,Seychelles   [Seychelles wins on penalties],2011_indian_ocean_island_games.txt
+Seychelles,Madagascar,3,0,1,Réunion,Réunion,2015_indian_ocean_island_games.txt
+Maldives,Mayotte,1,3,2,Réunion,Réunion,2015_indian_ocean_island_games.txt
+Réunion,Mauritius,1,0,1,Réunion,Réunion,2015_indian_ocean_island_games.txt
+Seychelles,Maldives,1,2,2,Réunion,Réunion,2015_indian_ocean_island_games.txt
+Mayotte,Madagascar,1,1,X,Réunion,Réunion,2015_indian_ocean_island_games.txt
+Comoros,Mauritius,0,3,2,Réunion,Réunion,2015_indian_ocean_island_games.txt
+Maldives,Madagascar,0,4,2,Réunion,Réunion,2015_indian_ocean_island_games.txt
+Seychelles,Mayotte,0,1,2,Réunion,Réunion,2015_indian_ocean_island_games.txt
+Réunion,Comoros,3,0,1,Réunion,Réunion,2015_indian_ocean_island_games.txt
+Mayotte,Mauritius,2,1,1,Réunion,Réunion,2015_indian_ocean_island_games.txt
+Réunion,Madagascar,1,0,1,Réunion,Réunion,2015_indian_ocean_island_games.txt
+Mauritius,Madagascar,3,1,1,Réunion,Réunion,2015_indian_ocean_island_games.txt
+Réunion,Mayotte,3,1,1,Réunion,Réunion,2015_indian_ocean_island_games.txt
+Mauritius,Seychelles,1,1,X,Curepipe,Mauritius,2019_indian_ocean_island_games.txt
+Réunion,Maldives,4,0,1,Centre de Flacq,Mauritius,2019_indian_ocean_island_games.txt
+Comoros,Mayotte,0,2,2,Centre de Flacq,Mauritius,2019_indian_ocean_island_games.txt
+Seychelles,Madagascar,0,0,X,Centre de Flacq,Mauritius,2019_indian_ocean_island_games.txt
+Réunion,Mayotte,1,0,1,Curepipe,Mauritius,2019_indian_ocean_island_games.txt
+Comoros,Maldives,3,0,1,Curepipe,Mauritius,2019_indian_ocean_island_games.txt
+Mauritius,Madagascar,1,1,X,Curepipe,Mauritius,2019_indian_ocean_island_games.txt
+Mayotte,Maldives,3,1,1,Centre de Flacq,Mauritius,2019_indian_ocean_island_games.txt
+Réunion,Comoros,0,1,2,Curepipe,Mauritius,2019_indian_ocean_island_games.txt
+Mauritius,Mayotte,1,0,1,Curepipe,Mauritius,2019_indian_ocean_island_games.txt
+Réunion,Seychelles,4,0,1,Centre de Flacq,Mauritius,2019_indian_ocean_island_games.txt
+Seychelles,Mayotte,1,3,2,Centre de Flacq,Mauritius,2019_indian_ocean_island_games.txt
+Mauritius,Réunion,1,1,X,Centre de Flacq,Mauritius   [Réunion wins on penalties],2019_indian_ocean_island_games.txt
+Comoros,Mayotte,0,0,X,Antananarivo,Madagascar,2023_indian_ocean_island_games.txt
+Madagascar,Seychelles,1,0,1,Antananarivo,Madagascar,2023_indian_ocean_island_games.txt
+Réunion,Mayotte,0,0,X,Antananarivo,Madagascar,2023_indian_ocean_island_games.txt
+Madagascar,Mauritius,1,1,X,Antananarivo,Madagascar,2023_indian_ocean_island_games.txt
+Comoros,Réunion,1,1,X,Antananarivo,Madagascar,2023_indian_ocean_island_games.txt
+Mauritius,Seychelles,1,0,1,Antananarivo,Madagascar,2023_indian_ocean_island_games.txt
+Madagascar,Comoros,4,2,1,Madagascar,Madagascar,2023_indian_ocean_island_games.txt
+Réunion,Mauritius,2,1,1,Madagascar,Madagascar,2023_indian_ocean_island_games.txt
+Comoros,Mauritius,0,2,2,Madagascar,Madagascar,2023_indian_ocean_island_games.txt
+Madagascar,Réunion,1,0,1,Madagascar,Madagascar,2023_indian_ocean_island_games.txt

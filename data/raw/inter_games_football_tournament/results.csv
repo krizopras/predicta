@@ -1,0 +1,20 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Jersey,Orkney,5,0,1,Anglesey,Wales,2019_inter_games_football_tournament.txt
+Ynys Môn,Western Isles,2,1,1,Anglesey,Wales,2019_inter_games_football_tournament.txt
+Alderney,Hitra,2,4,2,Anglesey,Wales,2019_inter_games_football_tournament.txt
+Saint Helena,Shetland,1,6,2,Anglesey,Wales,2019_inter_games_football_tournament.txt
+Ynys Môn,Orkney,3,1,1,Anglesey,Wales,2019_inter_games_football_tournament.txt
+Jersey,Western Isles,7,0,1,Anglesey,Wales,2019_inter_games_football_tournament.txt
+Isle of Man,Hitra,7,1,1,Anglesey,Wales,2019_inter_games_football_tournament.txt
+Guernsey,Shetland,2,1,1,Anglesey,Wales,2019_inter_games_football_tournament.txt
+Ynys Môn,Jersey,1,0,1,Anglesey,Wales,2019_inter_games_football_tournament.txt
+Western Isles,Orkney,1,2,2,Anglesey,Wales,2019_inter_games_football_tournament.txt
+Isle of Man,Alderney,6,1,1,Anglesey,Wales,2019_inter_games_football_tournament.txt
+Guernsey,Saint Helena,9,0,1,Anglesey,Wales,2019_inter_games_football_tournament.txt
+Western Isles,Saint Helena,2,1,1,Anglesey,Wales,2019_inter_games_football_tournament.txt
+Orkney,Alderney,1,2,2,Anglesey,Wales,2019_inter_games_football_tournament.txt
+Jersey,Hitra,3,1,1,Anglesey,Wales,2019_inter_games_football_tournament.txt
+Ynys Môn,Shetland,2,1,1,Anglesey,Wales,2019_inter_games_football_tournament.txt
+Isle of Man,Guernsey,2,3,2,Anglesey,Wales,2019_inter_games_football_tournament.txt
+Shetland,Isle of Man,0,5,2,Anglesey,Wales,2019_inter_games_football_tournament.txt
+Ynys Môn,Guernsey,2,1,1,Anglesey,Wales,2019_inter_games_football_tournament.txt

@@ -1,0 +1,18 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Ethiopia,Iraq,0,13,2,Irbid,Jordan,1992_jordan_international_tournament.txt
+Jordan,Sudan,3,0,1,Amman,Jordan,1992_jordan_international_tournament.txt
+Moldova,Pakistan,5,0,1,Amman,Jordan,1992_jordan_international_tournament.txt
+Congo,Iraq,0,3,2,Irbid,Jordan,1992_jordan_international_tournament.txt
+Jordan,Pakistan,2,0,1,Amman,Jordan,1992_jordan_international_tournament.txt
+Moldova,Sudan,2,1,1,Amman,Jordan,1992_jordan_international_tournament.txt
+Congo,Ethiopia,3,0,1,Irbid,Jordan,1992_jordan_international_tournament.txt
+Jordan,Moldova,1,0,1,Amman,Jordan,1992_jordan_international_tournament.txt
+Pakistan,Sudan,0,4,2,Amman,Jordan,1992_jordan_international_tournament.txt
+Iraq,Moldova,1,0,1,Irbid,Jordan,1992_jordan_international_tournament.txt
+Jordan,Congo,2,1,1,Amman,Jordan,1992_jordan_international_tournament.txt
+Congo,Moldova,1,3,2,Amman,Jordan,1992_jordan_international_tournament.txt
+Jordan,Iraq,2,0,1,Amman,Jordan,1992_jordan_international_tournament.txt
+Iraq,Oman,1,1,X,Amman,Jordan   [Oman wins on penalties],2022_jordan_international_tournament.txt
+Jordan,Syria,2,0,1,Amman,Jordan,2022_jordan_international_tournament.txt
+Iraq,Syria,1,0,1,Amman,Jordan,2022_jordan_international_tournament.txt
+Jordan,Oman,1,0,1,Amman,Jordan,2022_jordan_international_tournament.txt

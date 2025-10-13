@@ -1,0 +1,13 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Czech Republic,Nigeria,2,1,1,Casablanca,Morocco,1996_king_hassan_ii_tournament.txt
+Morocco,Croatia,2,2,X,Casablanca,Morocco   [Croatia wins on penalties],1996_king_hassan_ii_tournament.txt
+Croatia,Czech Republic,1,1,X,Casablanca,Morocco   [Croatia wins on penalties],1996_king_hassan_ii_tournament.txt
+Morocco,Nigeria,2,0,1,Casablanca,Morocco,1996_king_hassan_ii_tournament.txt
+Belgium,France,0,1,2,Casablanca,Morocco,1998_king_hassan_ii_tournament.txt
+Morocco,England,0,1,2,Casablanca,Morocco,1998_king_hassan_ii_tournament.txt
+Belgium,England,0,0,X,Casablanca,Morocco   [Belgium wins on penalties],1998_king_hassan_ii_tournament.txt
+Morocco,France,2,2,X,Casablanca,Morocco   [Morocco wins on penalties],1998_king_hassan_ii_tournament.txt
+France,Japan,2,2,X,Casablanca,Morocco   [France wins on penalties],2000_king_hassan_ii_tournament.txt
+Morocco,Jamaica,1,0,1,Casablanca,Morocco,2000_king_hassan_ii_tournament.txt
+Jamaica,Japan,0,4,2,Casablanca,Morocco,2000_king_hassan_ii_tournament.txt
+Morocco,France,1,5,2,Casablanca,Morocco,2000_king_hassan_ii_tournament.txt

@@ -1,0 +1,280 @@
+time,home_team,away_team,home_score,away_score,result,ht_score,source_file
+17.00,07 Vestur,ÍF Fuglafjørður,1,0,1,0-0,2023_fo1.txt
+,Streymur,AB Argir,2,0,1,2-0,2023_fo1.txt
+,HB Tórshavn,B68 Toftir,4,1,1,3-1,2023_fo1.txt
+,KÍ Klaksvík,TB Tvøroyri,7,1,1,3-0,2023_fo1.txt
+,Víkingur,B36 Tórshavn,0,3,2,0-1,2023_fo1.txt
+16.30,TB Tvøroyri,HB Tórshavn,0,0,X,,2023_fo1.txt
+17.00,AB Argir,KÍ Klaksvík,0,2,2,0-2,2023_fo1.txt
+,B36 Tórshavn,07 Vestur,3,2,1,0-1,2023_fo1.txt
+,B68 Toftir,Víkingur,3,3,X,2-1,2023_fo1.txt
+18.00,HB Tórshavn,Víkingur,1,1,X,1-0,2023_fo1.txt
+16.30,TB Tvøroyri,ÍF Fuglafjørður,0,1,2,0-1,2023_fo1.txt
+17.00,AB Argir,07 Vestur,1,2,2,0-0,2023_fo1.txt
+,Streymur,B36 Tórshavn,1,2,2,1-1,2023_fo1.txt
+18.00,B68 Toftir,KÍ Klaksvík,0,5,2,0-2,2023_fo1.txt
+17.00,Víkingur,TB Tvøroyri,7,0,1,1-0,2023_fo1.txt
+15.00,07 Vestur,B68 Toftir,1,1,X,0-1,2023_fo1.txt
+,ÍF Fuglafjørður,AB Argir,2,0,1,1-0,2023_fo1.txt
+18.00,B36 Tórshavn,HB Tórshavn,0,2,2,0-1,2023_fo1.txt
+13.00,B36 Tórshavn,B68 Toftir,2,0,1,1-0,2023_fo1.txt
+15.00,ÍF Fuglafjørður,Víkingur,0,1,2,0-0,2023_fo1.txt
+,Streymur,TB Tvøroyri,2,1,1,2-1,2023_fo1.txt
+17.00,07 Vestur,KÍ Klaksvík,1,3,2,0-2,2023_fo1.txt
+18.00,HB Tórshavn,AB Argir,4,0,1,3-0,2023_fo1.txt
+15.00,AB Argir,B36 Tórshavn,0,2,2,0-1,2023_fo1.txt
+,HB Tórshavn,ÍF Fuglafjørður,4,1,1,2-1,2023_fo1.txt
+,KÍ Klaksvík,Víkingur,2,0,1,0-0,2023_fo1.txt
+,TB Tvøroyri,07 Vestur,2,1,1,1-0,2023_fo1.txt
+14.00,B36 Tórshavn,KÍ Klaksvík,2,3,2,1-2,2023_fo1.txt
+15.00,07 Vestur,HB Tórshavn,1,3,2,1-1,2023_fo1.txt
+,AB Argir,TB Tvøroyri,0,0,X,,2023_fo1.txt
+17.00,ÍF Fuglafjørður,B68 Toftir,1,3,2,0-1,2023_fo1.txt
+15.00,07 Vestur,Víkingur,1,2,2,1-0,2023_fo1.txt
+,Streymur,HB Tórshavn,0,3,2,0-2,2023_fo1.txt
+16.00,B68 Toftir,AB Argir,1,0,1,0-0,2023_fo1.txt
+18.00,TB Tvøroyri,B36 Tórshavn,0,4,2,0-2,2023_fo1.txt
+18.00,KÍ Klaksvík,ÍF Fuglafjørður,1,0,1,0-0,2023_fo1.txt
+,Streymur,07 Vestur,0,5,2,0-1,2023_fo1.txt
+,HB Tórshavn,KÍ Klaksvík,0,1,2,0-0,2023_fo1.txt
+16.00,B68 Toftir,TB Tvøroyri,1,1,X,1-1,2023_fo1.txt
+18.00,B36 Tórshavn,ÍF Fuglafjørður,5,1,1,2-0,2023_fo1.txt
+19.00,Víkingur,AB Argir,5,0,1,4-0,2023_fo1.txt
+,Streymur,ÍF Fuglafjørður,2,1,1,2-0,2023_fo1.txt
+15.00,07 Vestur,KÍ Klaksvík,0,3,2,0-2,2023_fo1.txt
+,AB Argir,Víkingur,0,4,2,0-2,2023_fo1.txt
+,HB Tórshavn,TB Tvøroyri,4,0,1,0-0,2023_fo1.txt
+16.00,B68 Toftir,B36 Tórshavn,0,1,2,0-0,2023_fo1.txt
+15.00,ÍF Fuglafjørður,KÍ Klaksvík,1,7,2,0-4,2023_fo1.txt
+,Víkingur,B68 Toftir,1,1,X,1-1,2023_fo1.txt
+15.30,B36 Tórshavn,AB Argir,2,1,1,1-1,2023_fo1.txt
+16.00,07 Vestur,TB Tvøroyri,2,0,1,0-0,2023_fo1.txt
+19.00,KÍ Klaksvík,AB Argir,2,1,1,1-0,2023_fo1.txt
+15.00,B68 Toftir,HB Tórshavn,0,2,2,0-0,2023_fo1.txt
+,ÍF Fuglafjørður,07 Vestur,1,2,2,0-1,2023_fo1.txt
+,Streymur,TB Tvøroyri,0,1,2,0-0,2023_fo1.txt
+16.00,B36 Tórshavn,Víkingur,2,1,1,1-1,2023_fo1.txt
+13.00,07 Vestur,Víkingur,3,2,1,2-1,2023_fo1.txt
+,Streymur,B68 Toftir,2,0,1,2-0,2023_fo1.txt
+,KÍ Klaksvík,TB Tvøroyri,1,0,1,1-0,2023_fo1.txt
+18.00,HB Tórshavn,B36 Tórshavn,1,0,1,0-0,2023_fo1.txt
+15.00,AB Argir,ÍF Fuglafjørður,2,0,1,1-0,2023_fo1.txt
+19.00,TB Tvøroyri,AB Argir,3,2,1,0-1,2023_fo1.txt
+15.00,07 Vestur,HB Tórshavn,2,1,1,1-0,2023_fo1.txt
+,Víkingur,ÍF Fuglafjørður,5,0,1,2-0,2023_fo1.txt
+16.00,B68 Toftir,KÍ Klaksvík,1,2,2,1-2,2023_fo1.txt
+13.00,ÍF Fuglafjørður,B36 Tórshavn,0,3,2,0-3,2023_fo1.txt
+15.00,AB Argir,07 Vestur,2,0,1,0-0,2023_fo1.txt
+,TB Tvøroyri,B68 Toftir,2,1,1,0-0,2023_fo1.txt
+,Streymur,Víkingur,0,2,2,0-1,2023_fo1.txt
+,KÍ Klaksvík,HB Tórshavn,2,0,1,2-0,2023_fo1.txt
+19.00,KÍ Klaksvík,B36 Tórshavn,2,1,1,1-0,2023_fo1.txt
+,Víkingur,HB Tórshavn,0,2,2,0-1,2023_fo1.txt
+17.00,AB Argir,B68 Toftir,3,1,1,2-0,2023_fo1.txt
+17.00,TB Tvøroyri,ÍF Fuglafjørður,1,2,2,0-0,2023_fo1.txt
+16.00,B68 Toftir,ÍF Fuglafjørður,3,1,1,1-0,2023_fo1.txt
+15.00,HB Tórshavn,AB Argir,5,0,1,2-0,2023_fo1.txt
+,TB Tvøroyri,Víkingur,0,2,2,0-1,2023_fo1.txt
+18.30,07 Vestur,B36 Tórshavn,2,2,X,0-2,2023_fo1.txt
+,Streymur,KÍ Klaksvík,0,2,2,0-1,2023_fo1.txt
+19.00,Víkingur,KÍ Klaksvík,2,1,1,2-0,2023_fo1.txt
+15.00,B36 Tórshavn,TB Tvøroyri,4,0,1,2-0,2023_fo1.txt
+,ÍF Fuglafjørður,HB Tórshavn,2,7,2,0-5,2023_fo1.txt
+16.00,B68 Toftir,07 Vestur,2,3,2,1-1,2023_fo1.txt
+18.00,HB Tórshavn,ÍF Fuglafjørður,3,1,1,1-0,2023_fo1.txt
+15.00,KÍ Klaksvík,07 Vestur,1,1,X,1-1,2023_fo1.txt
+,Víkingur,TB Tvøroyri,1,0,1,0-0,2023_fo1.txt
+,Streymur,AB Argir,4,1,1,4-0,2023_fo1.txt
+18.00,B36 Tórshavn,B68 Toftir,2,0,1,1-0,2023_fo1.txt
+15.00,07 Vestur,B68 Toftir,0,1,2,0-0,2023_fo1.txt
+,AB Argir,HB Tórshavn,2,4,2,1-1,2023_fo1.txt
+,ÍF Fuglafjørður,Víkingur,1,7,2,1-4,2023_fo1.txt
+,TB Tvøroyri,B36 Tórshavn,0,3,2,0-0,2023_fo1.txt
+18.00,B68 Toftir,TB Tvøroyri,1,1,X,0-0,2023_fo1.txt
+18.00,Víkingur,AB Argir,5,0,1,2-0,2023_fo1.txt
+18.00,B36 Tórshavn,ÍF Fuglafjørður,1,0,1,1-0,2023_fo1.txt
+18.00,HB Tórshavn,KÍ Klaksvík,1,2,2,0-0,2023_fo1.txt
+15.00,ÍF Fuglafjørður,07 Vestur,0,3,2,0-2,2023_fo1.txt
+15.00,AB Argir,TB Tvøroyri,3,0,1,2-0,2023_fo1.txt
+,Streymur,B36 Tórshavn,0,3,2,0-2,2023_fo1.txt
+18.00,KÍ Klaksvík,B68 Toftir,1,1,X,1-1,2023_fo1.txt
+18.00,HB Tórshavn,Víkingur,1,2,2,0-2,2023_fo1.txt
+14.00,ÍF Fuglafjørður,AB Argir,3,1,1,2-0,2023_fo1.txt
+,TB Tvøroyri,KÍ Klaksvík,1,5,2,1-1,2023_fo1.txt
+,Víkingur,07 Vestur,3,1,1,1-0,2023_fo1.txt
+18.00,B36 Tórshavn,HB Tórshavn,0,0,X,,2023_fo1.txt
+17.00,07 Vestur,AB Argir,2,1,1,2-0,2023_fo1.txt
+18.00,HB Tórshavn,B68 Toftir,3,3,X,2-2,2023_fo1.txt
+,Víkingur,B36 Tórshavn,6,0,1,1-0,2023_fo1.txt
+15.15,KÍ Klaksvík,ÍF Fuglafjørður,5,0,1,4-0,2023_fo1.txt
+15.00,AB Argir,KÍ Klaksvík,1,1,X,0-0,2023_fo1.txt
+,B36 Tórshavn,07 Vestur,3,1,1,1-1,2023_fo1.txt
+,B68 Toftir,Víkingur,0,3,2,0-1,2023_fo1.txt
+,TB Tvøroyri,HB Tórshavn,1,4,2,0-2,2023_fo1.txt
+15.00,B36 Tórshavn,KÍ Klaksvík,0,0,X,,2023_fo1.txt
+,B68 Toftir,AB Argir,2,2,X,0-2,2023_fo1.txt
+,HB Tórshavn,07 Vestur,2,0,1,1-0,2023_fo1.txt
+,ÍF Fuglafjørður,TB Tvøroyri,1,0,1,0-0,2023_fo1.txt
+15.00,TB Tvøroyri,07 Vestur,0,1,2,0-0,2023_fo1.txt
+,AB Argir,B36 Tórshavn,3,2,1,2-1,2023_fo1.txt
+,Streymur,HB Tórshavn,0,1,2,0-0,2023_fo1.txt
+,ÍF Fuglafjørður,B68 Toftir,0,0,X,,2023_fo1.txt
+,KÍ Klaksvík,Víkingur,1,2,2,0-1,2023_fo1.txt
+17.00,07 Vestur,Víkingur,0,2,2,0-1,2024_fo1.txt
+15.00,KÍ Klaksvík,ÍF Fuglafjørður,6,0,1,3-0,2024_fo1.txt
+17.00,B68 Toftir,B36 Tórshavn,0,3,2,0-1,2024_fo1.txt
+18.00,HB Tórshavn,NSÍ Runavík,3,2,1,2-0,2024_fo1.txt
+18.00,Víkingur,HB Tórshavn,2,1,1,1-0,2024_fo1.txt
+17.00,B36 Tórshavn,KÍ Klaksvík,2,0,1,0-0,2024_fo1.txt
+18.00,NSÍ Runavík,Skála ÍF,3,1,1,2-0,2024_fo1.txt
+15.00,ÍF Fuglafjørður,07 Vestur,0,1,2,0-1,2024_fo1.txt
+,Streymur,B68 Toftir,1,1,X,0-1,2024_fo1.txt
+15.00,HB Tórshavn,ÍF Fuglafjørður,4,0,1,1-0,2024_fo1.txt
+,KÍ Klaksvík,NSÍ Runavík,3,2,1,1-2,2024_fo1.txt
+17.00,Skála ÍF,B36 Tórshavn,1,4,2,0-2,2024_fo1.txt
+,Víkingur,B68 Toftir,2,0,1,0-0,2024_fo1.txt
+19.00,Skála ÍF,KÍ Klaksvík,1,2,2,0-0,2024_fo1.txt
+14.00,B36 Tórshavn,07 Vestur,2,2,X,1-0,2024_fo1.txt
+15.00,ÍF Fuglafjørður,Víkingur,1,8,2,1-2,2024_fo1.txt
+18.00,B68 Toftir,HB Tórshavn,0,1,2,0-1,2024_fo1.txt
+15.00,HB Tórshavn,KÍ Klaksvík,1,0,1,0-0,2024_fo1.txt
+,Víkingur,Skála ÍF,2,1,1,0-0,2024_fo1.txt
+,Streymur,ÍF Fuglafjørður,5,0,1,0-0,2024_fo1.txt
+19.00,NSÍ Runavík,B36 Tórshavn,1,0,1,0-0,2024_fo1.txt
+18.00,B68 Toftir,07 Vestur,1,2,2,1-1,2024_fo1.txt
+18.30,KÍ Klaksvík,B68 Toftir,3,0,1,2-0,2024_fo1.txt
+15.00,07 Vestur,Skála ÍF,1,1,X,1-1,2024_fo1.txt
+,Víkingur,B36 Tórshavn,4,0,1,1-0,2024_fo1.txt
+17.00,ÍF Fuglafjørður,NSÍ Runavík,2,4,2,0-1,2024_fo1.txt
+18.00,07 Vestur,HB Tórshavn,0,3,2,0-2,2024_fo1.txt
+,B36 Tórshavn,ÍF Fuglafjørður,3,3,X,2-3,2024_fo1.txt
+19.00,Skála ÍF,B68 Toftir,3,1,1,2-0,2024_fo1.txt
+,NSÍ Runavík,Víkingur,0,1,2,0-0,2024_fo1.txt
+,Streymur,KÍ Klaksvík,0,1,2,0-1,2024_fo1.txt
+15.00,B68 Toftir,NSÍ Runavík,1,2,2,1-0,2024_fo1.txt
+,Streymur,Víkingur,1,3,2,0-1,2024_fo1.txt
+18.30,KÍ Klaksvík,07 Vestur,2,0,1,0-0,2024_fo1.txt
+15.00,ÍF Fuglafjørður,Skála ÍF,1,2,2,0-2,2024_fo1.txt
+17.00,HB Tórshavn,B36 Tórshavn,2,1,1,1-0,2024_fo1.txt
+15.00,KÍ Klaksvík,Víkingur,2,1,1,1-1,2024_fo1.txt
+18.30,NSÍ Runavík,07 Vestur,4,1,1,3-1,2024_fo1.txt
+,Skála ÍF,HB Tórshavn,0,3,2,0-0,2024_fo1.txt
+18.00,B68 Toftir,ÍF Fuglafjørður,0,0,X,,2024_fo1.txt
+,ÍF Fuglafjørður,B68 Toftir,2,2,X,1-2,2024_fo1.txt
+17.00,HB Tórshavn,B36 Tórshavn,2,1,1,1-0,2024_fo1.txt
+,Víkingur,NSÍ Runavík,2,0,1,0-0,2024_fo1.txt
+19.00,Skála ÍF,KÍ Klaksvík,0,1,2,0-1,2024_fo1.txt
+17.00,HB Tórshavn,ÍF Fuglafjørður,1,0,1,1-0,2024_fo1.txt
+,NSÍ Runavík,B36 Tórshavn,2,2,X,0-2,2024_fo1.txt
+19.00,Víkingur,07 Vestur,5,1,1,0-1,2024_fo1.txt
+15.00,KÍ Klaksvík,B68 Toftir,4,0,1,1-0,2024_fo1.txt
+,Streymur,Skála ÍF,3,0,1,1-0,2024_fo1.txt
+,Skála ÍF,ÍF Fuglafjørður,3,2,1,2-0,2024_fo1.txt
+15.00,B36 Tórshavn,07 Vestur,4,4,X,3-3,2024_fo1.txt
+15.15,KÍ Klaksvík,Víkingur,0,2,2,0-1,2024_fo1.txt
+17.00,NSÍ Runavík,HB Tórshavn,2,3,2,0-1,2024_fo1.txt
+17.00,Skála ÍF,Víkingur,0,4,2,0-3,2024_fo1.txt
+,B36 Tórshavn,B68 Toftir,1,1,X,0-0,2024_fo1.txt
+19.00,07 Vestur,HB Tórshavn,1,4,2,1-3,2024_fo1.txt
+,Streymur,KÍ Klaksvík,1,2,2,0-0,2024_fo1.txt
+16.00,ÍF Fuglafjørður,NSÍ Runavík,0,3,2,0-1,2024_fo1.txt
+15.00,ÍF Fuglafjørður,B36 Tórshavn,3,4,2,1-2,2024_fo1.txt
+,Víkingur,B68 Toftir,3,0,1,2-0,2024_fo1.txt
+17.00,HB Tórshavn,KÍ Klaksvík,3,0,1,1-0,2024_fo1.txt
+19.00,Skála ÍF,07 Vestur,1,2,2,0-0,2024_fo1.txt
+18.00,B68 Toftir,HB Tórshavn,1,0,1,1-0,2024_fo1.txt
+18.30,NSÍ Runavík,KÍ Klaksvík,1,2,2,0-0,2024_fo1.txt
+,B36 Tórshavn,Skála ÍF,3,0,1,2-0,2024_fo1.txt
+15.00,07 Vestur,ÍF Fuglafjørður,1,0,1,1-0,2024_fo1.txt
+18.30,Skála ÍF,B68 Toftir,1,1,X,0-1,2024_fo1.txt
+18.30,Víkingur,HB Tórshavn,2,0,1,0-0,2024_fo1.txt
+,KÍ Klaksvík,B36 Tórshavn,4,2,1,1-1,2024_fo1.txt
+19.00,NSÍ Runavík,07 Vestur,4,0,1,2-0,2024_fo1.txt
+17.00,B68 Toftir,NSÍ Runavík,1,4,2,0-2,2024_fo1.txt
+15.00,07 Vestur,KÍ Klaksvík,0,4,2,0-2,2024_fo1.txt
+18.30,HB Tórshavn,Skála ÍF,3,0,1,1-0,2024_fo1.txt
+,Streymur,B36 Tórshavn,0,4,2,0-2,2024_fo1.txt
+,ÍF Fuglafjørður,Víkingur,0,6,2,0-1,2024_fo1.txt
+16.00,NSÍ Runavík,Skála ÍF,3,0,1,1-0,2024_fo1.txt
+,Streymur,HB Tórshavn,0,4,2,0-3,2024_fo1.txt
+15.00,KÍ Klaksvík,ÍF Fuglafjørður,2,1,1,0-1,2024_fo1.txt
+17.00,B68 Toftir,07 Vestur,1,0,1,0-0,2024_fo1.txt
+18.30,B36 Tórshavn,Víkingur,1,2,2,0-1,2024_fo1.txt
+18.30,07 Vestur,NSÍ Runavík,3,0,1,1-0,2024_fo1.txt
+,Streymur,Skála ÍF,1,0,1,1-0,2024_fo1.txt
+,ÍF Fuglafjørður,B36 Tórshavn,0,3,2,0-1,2024_fo1.txt
+17.00,HB Tórshavn,B68 Toftir,1,0,1,1-0,2024_fo1.txt
+17.00,Víkingur,KÍ Klaksvík,1,2,2,0-1,2024_fo1.txt
+18.30,Skála ÍF,ÍF Fuglafjørður,3,3,X,2-1,2024_fo1.txt
+17.00,07 Vestur,B68 Toftir,2,0,1,1-0,2024_fo1.txt
+17.30,B36 Tórshavn,Víkingur,1,4,2,1-2,2024_fo1.txt
+18.30,NSÍ Runavík,HB Tórshavn,3,2,1,1-1,2024_fo1.txt
+17.00,ÍF Fuglafjørður,HB Tórshavn,2,1,1,0-0,2024_fo1.txt
+,Víkingur,NSÍ Runavík,3,0,1,0-0,2024_fo1.txt
+,Streymur,07 Vestur,6,0,1,3-0,2024_fo1.txt
+18.30,B36 Tórshavn,B68 Toftir,2,0,1,1-0,2024_fo1.txt
+15.00,KÍ Klaksvík,Skála ÍF,3,1,1,1-0,2024_fo1.txt
+18.30,Skála ÍF,07 Vestur,4,1,1,2-0,2024_fo1.txt
+,Streymur,ÍF Fuglafjørður,2,1,1,1-0,2024_fo1.txt
+,B36 Tórshavn,NSÍ Runavík,2,2,X,1-1,2024_fo1.txt
+,KÍ Klaksvík,HB Tórshavn,1,0,1,1-0,2024_fo1.txt
+17.00,B68 Toftir,Víkingur,1,2,2,0-1,2024_fo1.txt
+,B68 Toftir,KÍ Klaksvík,0,2,2,0-1,2024_fo1.txt
+18.30,07 Vestur,B36 Tórshavn,0,3,2,0-1,2024_fo1.txt
+15.00,NSÍ Runavík,ÍF Fuglafjørður,3,0,1,1-0,2024_fo1.txt
+17.00,HB Tórshavn,Skála ÍF,3,0,1,1-0,2024_fo1.txt
+15.00,ÍF Fuglafjørður,B68 Toftir,1,3,2,1-1,2024_fo1.txt
+,Streymur,NSÍ Runavík,4,1,1,0-1,2024_fo1.txt
+,B36 Tórshavn,HB Tórshavn,2,2,X,2-1,2024_fo1.txt
+15.00,07 Vestur,KÍ Klaksvík,0,1,2,0-0,2024_fo1.txt
+18.30,Skála ÍF,Víkingur,0,3,2,0-1,2024_fo1.txt
+17.00,Víkingur,ÍF Fuglafjørður,5,0,1,1-0,2024_fo1.txt
+18.30,B68 Toftir,Skála ÍF,1,1,X,1-1,2024_fo1.txt
+,KÍ Klaksvík,NSÍ Runavík,3,1,1,1-1,2024_fo1.txt
+16.00,HB Tórshavn,07 Vestur,1,0,1,0-0,2024_fo1.txt
+,Streymur,B36 Tórshavn,1,0,1,1-0,2024_fo1.txt
+15.00,07 Vestur,ÍF Fuglafjørður,5,1,1,2-1,2024_fo1.txt
+,HB Tórshavn,Víkingur,1,1,X,1-1,2024_fo1.txt
+,KÍ Klaksvík,B36 Tórshavn,2,2,X,0-0,2024_fo1.txt
+,Skála ÍF,NSÍ Runavík,0,0,X,,2024_fo1.txt
+14.00,B36 Tórshavn,Skála ÍF,3,0,1,0-0,2024_fo1.txt
+,Streymur,HB Tórshavn,1,4,2,1-3,2024_fo1.txt
+,ÍF Fuglafjørður,KÍ Klaksvík,1,4,2,0-1,2024_fo1.txt
+,NSÍ Runavík,B68 Toftir,1,4,2,0-2,2024_fo1.txt
+,Víkingur,07 Vestur,4,1,1,0-0,2024_fo1.txt
+18.30,HB Tórshavn,B68 Toftir,3,2,1,3-2,2025_fo1.txt
+14.45,TB Tvøroyri,Víkingur,1,1,X,0-0,2025_fo1.txt
+15.00,NSÍ Runavík,B36 Tórshavn,4,3,1,0-1,2025_fo1.txt
+,KÍ Klaksvík,07 Vestur,3,1,1,1-1,2025_fo1.txt
+15.00,B36 Tórshavn,KÍ Klaksvík,1,3,2,1-3,2025_fo1.txt
+,07 Vestur,HB Tórshavn,1,2,2,1-0,2025_fo1.txt
+,Streymur,TB Tvøroyri,2,2,X,1-2,2025_fo1.txt
+16.00,B68 Toftir,FC Suðuroy,2,0,1,1-0,2025_fo1.txt
+17.00,Víkingur,NSÍ Runavík,0,3,2,0-1,2025_fo1.txt
+14.45,TB Tvøroyri,B36 Tórshavn,0,1,2,0-1,2025_fo1.txt
+,Víkingur,07 Vestur,0,0,X,,2025_fo1.txt
+17.00,HB Tórshavn,FC Suðuroy,4,0,1,1-0,2025_fo1.txt
+19.00,NSÍ Runavík,B68 Toftir,11,0,1,4-0,2025_fo1.txt
+16.30,FC Suðuroy,TB Tvøroyri,1,0,1,0-0,2025_fo1.txt
+18.30,B68 Toftir,KÍ Klaksvík,0,2,2,0-0,2025_fo1.txt
+,NSÍ Runavík,07 Vestur,4,1,1,2-1,2025_fo1.txt
+,Streymur,HB Tórshavn,0,3,2,0-2,2025_fo1.txt
+,B36 Tórshavn,Víkingur,1,0,1,1-0,2025_fo1.txt
+19.00,KÍ Klaksvík,Víkingur,2,0,1,1-0,2025_fo1.txt
+14.45,TB Tvøroyri,NSÍ Runavík,1,5,2,0-3,2025_fo1.txt
+15.00,HB Tórshavn,B36 Tórshavn,2,3,2,1-1,2025_fo1.txt
+,Streymur,B68 Toftir,1,0,1,0-0,2025_fo1.txt
+,07 Vestur,FC Suðuroy,1,2,2,1-1,2025_fo1.txt
+14.45,TB Tvøroyri,07 Vestur,2,1,1,1-1,2025_fo1.txt
+15.00,KÍ Klaksvík,HB Tórshavn,4,0,1,1-0,2025_fo1.txt
+,B36 Tórshavn,B68 Toftir,1,1,X,0-1,2025_fo1.txt
+17.00,NSÍ Runavík,FC Suðuroy,1,0,1,0-0,2025_fo1.txt
+15.00,FC Suðuroy,KÍ Klaksvík,0,4,2,0-3,2025_fo1.txt
+17.00,B68 Toftir,Víkingur,0,1,2,0-1,2025_fo1.txt
+18.00,HB Tórshavn,TB Tvøroyri,3,2,1,1-2,2025_fo1.txt
+18.30,07 Vestur,B36 Tórshavn,1,3,2,1-3,2025_fo1.txt
+,Streymur,NSÍ Runavík,0,5,2,0-2,2025_fo1.txt
+17.30,KÍ Klaksvík,TB Tvøroyri,10,0,1,5-0,2025_fo1.txt
+17.00,B68 Toftir,07 Vestur,2,1,1,0-0,2025_fo1.txt
+19.30,HB Tórshavn,NSÍ Runavík,1,7,2,0-2,2025_fo1.txt
+14.30,FC Suðuroy,Víkingur,0,2,2,0-1,2025_fo1.txt

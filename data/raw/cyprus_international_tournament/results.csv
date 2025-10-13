@@ -1,0 +1,71 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Cyprus,Latvia,2,0,1,Paralímni,Cyprus,1997_cyprus_international_tournament.txt
+Lithuania,Poland,0,0,X,Agía Nápa,Cyprus,1997_cyprus_international_tournament.txt
+Cyprus,Poland,2,3,2,Agía Nápa,Cyprus,1997_cyprus_international_tournament.txt
+Latvia,Lithuania,1,0,1,Dherynia,Cyprus,1997_cyprus_international_tournament.txt
+Cyprus,Lithuania,1,0,1,Paralímni,Cyprus,1997_cyprus_international_tournament.txt
+Latvia,Poland,2,3,2,Dherynia,Cyprus,1997_cyprus_international_tournament.txt
+Cyprus,Finland,1,1,X,Limassol,Cyprus,1998_cyprus_international_tournament.txt
+Iceland,Slovenia,2,3,2,Limassol,Cyprus,1998_cyprus_international_tournament.txt
+Slovenia,Slovakia,1,1,X,Limassol,Cyprus,1998_cyprus_international_tournament.txt
+Iceland,Slovakia,1,2,2,Limassol,Cyprus,1998_cyprus_international_tournament.txt
+Cyprus,Slovenia,1,0,1,Limassol,Cyprus,1998_cyprus_international_tournament.txt
+Finland,Slovakia,0,2,2,Larnaca,Cyprus,1998_cyprus_international_tournament.txt
+Cyprus,Belgium,0,1,2,Limassol,Cyprus,1999_cyprus_international_tournament.txt
+Greece,Finland,2,1,1,Larnaca,Cyprus,1999_cyprus_international_tournament.txt
+Cyprus,Finland,2,1,1,Paralímni,Cyprus,1999_cyprus_international_tournament.txt
+Greece,Belgium,1,0,1,Larnaca,Cyprus,1999_cyprus_international_tournament.txt
+Armenia,Moldova,2,1,1,Larnaca,Cyprus,2000_cyprus_international_tournament.txt
+Cyprus,Lithuania,2,1,1,Limassol,Cyprus,2000_cyprus_international_tournament.txt
+Romania,Latvia,2,0,1,Paphos,Cyprus,2000_cyprus_international_tournament.txt
+Cyprus,Armenia,3,2,1,Nicosia,Cyprus,2000_cyprus_international_tournament.txt
+Moldova,Lithuania,2,1,1,Larnaca,Cyprus,2000_cyprus_international_tournament.txt
+Romania,Georgia,1,1,X,Larnaca,Cyprus   [Romania wins on penalties],2000_cyprus_international_tournament.txt
+Cyprus,Romania,3,2,1,Nicosia,Cyprus,2000_cyprus_international_tournament.txt
+Georgia,Armenia,2,1,1,Limassol,Cyprus,2000_cyprus_international_tournament.txt
+Latvia,Lithuania,1,2,2,Larnaca,Cyprus,2000_cyprus_international_tournament.txt
+Cyprus,Lithuania,1,2,2,Limassol,Cyprus,2001_cyprus_international_tournament.txt
+Romania,Ukraine,1,0,1,Nicosia,Cyprus,2001_cyprus_international_tournament.txt
+Cyprus,Ukraine,4,3,1,Larnaca,Cyprus,2001_cyprus_international_tournament.txt
+Lithuania,Romania,0,3,2,Nicosia,Cyprus,2001_cyprus_international_tournament.txt
+Cyprus,Switzerland,1,1,X,Nicosia,Cyprus   [Cyprus wins on penalties],2002_cyprus_international_tournament.txt
+Czech Republic,Hungary,2,0,1,Larnaca,Cyprus,2002_cyprus_international_tournament.txt
+Cyprus,Czech Republic,3,4,2,Nicosia,Cyprus,2002_cyprus_international_tournament.txt
+Switzerland,Hungary,2,1,1,Limassol,Cyprus,2002_cyprus_international_tournament.txt
+Cyprus,Russia,0,1,2,Limassol,Cyprus,2003_cyprus_international_tournament.txt
+Romania,Slovakia,2,1,1,Larnaca,Cyprus,2003_cyprus_international_tournament.txt
+Cyprus,Slovakia,1,3,2,Larnaca,Cyprus,2003_cyprus_international_tournament.txt
+Cyprus,Belarus,0,2,2,Achna,Cyprus,2004_cyprus_international_tournament.txt
+Hungary,Armenia,2,0,1,Paphos,Cyprus,2004_cyprus_international_tournament.txt
+Latvia,Kazakhstan,3,1,1,Larnaca,Cyprus,2004_cyprus_international_tournament.txt
+Romania,Georgia,3,0,1,Larnaca,Cyprus,2004_cyprus_international_tournament.txt
+Cyprus,Georgia,3,1,1,Nicosia,Cyprus,2004_cyprus_international_tournament.txt
+Kazakhstan,Armenia,3,3,X,Paphos,Cyprus   [Kazakhstan wins on penalties],2004_cyprus_international_tournament.txt
+Latvia,Hungary,1,2,2,Limassol,Cyprus,2004_cyprus_international_tournament.txt
+Belarus,Latvia,4,1,1,Larnaca,Cyprus,2004_cyprus_international_tournament.txt
+Cyprus,Kazakhstan,2,1,1,Limassol,Cyprus,2004_cyprus_international_tournament.txt
+Georgia,Armenia,0,2,2,Nicosia,Cyprus,2004_cyprus_international_tournament.txt
+Cyprus,Austria,1,1,X,Limassol,Cyprus   [Cyprus wins on penalties],2005_cyprus_international_tournament.txt
+Latvia,Finland,1,2,2,Nicosia,Cyprus,2005_cyprus_international_tournament.txt
+Austria,Latvia,1,1,X,Limassol,Cyprus   [Latvia wins on penalties],2005_cyprus_international_tournament.txt
+Cyprus,Finland,1,2,2,Nicosia,Cyprus,2005_cyprus_international_tournament.txt
+Cyprus,Slovenia,0,1,2,Larnaca,Cyprus,2006_cyprus_international_tournament.txt
+Finland,Kazakhstan,0,0,X,Larnaca,Cyprus   [Kazakhstan wins on penalties],2006_cyprus_international_tournament.txt
+Greece,Belarus,1,0,1,Limassol,Cyprus,2006_cyprus_international_tournament.txt
+Romania,Armenia,2,0,1,Nicosia,Cyprus,2006_cyprus_international_tournament.txt
+Cyprus,Armenia,2,0,1,Limassol,Cyprus,2006_cyprus_international_tournament.txt
+Finland,Belarus,2,2,X,Paphos,Cyprus   [Finland wins on penalties],2006_cyprus_international_tournament.txt
+Kazakhstan,Greece,0,2,2,Nicosia,Cyprus,2006_cyprus_international_tournament.txt
+Slovenia,Romania,0,2,2,Larnaca,Cyprus,2006_cyprus_international_tournament.txt
+Cyprus,Hungary,2,1,1,Limassol,Cyprus,2007_cyprus_international_tournament.txt
+Latvia,Bulgaria,0,2,2,Larnaca,Cyprus,2007_cyprus_international_tournament.txt
+Cyprus,Bulgaria,0,3,2,Nicosia,Cyprus,2007_cyprus_international_tournament.txt
+Latvia,Hungary,0,2,2,Limassol,Cyprus,2007_cyprus_international_tournament.txt
+Cyprus,Serbia,0,2,2,Nicosia,Cyprus,2009_cyprus_international_tournament.txt
+Slovakia,Ukraine,2,3,2,Limassol,Cyprus,2009_cyprus_international_tournament.txt
+Cyprus,Slovakia,3,2,1,Nicosia,Cyprus,2009_cyprus_international_tournament.txt
+Serbia,Ukraine,0,1,2,Nicosia,Cyprus,2009_cyprus_international_tournament.txt
+Cyprus,Sweden,0,2,2,Nicosia,Cyprus,2011_cyprus_international_tournament.txt
+Romania,Ukraine,2,2,X,Paralímni,Cyprus   [Ukraine wins on penalties],2011_cyprus_international_tournament.txt
+Cyprus,Romania,1,1,X,Paralímni,Cyprus,2011_cyprus_international_tournament.txt
+Sweden,Ukraine,1,1,X,Nicosia,Cyprus   [Ukraine wins on penalties],2011_cyprus_international_tournament.txt

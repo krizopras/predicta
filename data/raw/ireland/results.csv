@@ -1,0 +1,426 @@
+time,home_team,away_team,home_score,away_score,result,ht_score,source_file
+19.45,Cork City,Bohemian FC,1,2,2,0-1,2023_ie1.txt
+,Dundalk FC,UC Dublin,1,1,X,1-0,2023_ie1.txt
+,Shelbourne FC,Drogheda United,0,0,X,,2023_ie1.txt
+,St Patrick's Athletic,Derry City,1,1,X,0-1,2023_ie1.txt
+19.45,Sligo Rovers,Shamrock Rovers,1,1,X,0-1,2023_ie1.txt
+19.45,Bohemian FC,Dundalk FC,2,1,1,1-0,2023_ie1.txt
+,Derry City,Cork City,2,0,1,1-0,2023_ie1.txt
+,Drogheda United,Shamrock Rovers,1,1,X,0-0,2023_ie1.txt
+,St Patrick's Athletic,Shelbourne FC,1,0,1,0-0,2023_ie1.txt
+,UC Dublin,Sligo Rovers,2,3,2,1-1,2023_ie1.txt
+19.45,Cork City,UC Dublin,4,0,1,2-0,2023_ie1.txt
+,Drogheda United,Sligo Rovers,1,0,1,0-0,2023_ie1.txt
+,Dundalk FC,St Patrick's Athletic,5,0,1,2-0,2023_ie1.txt
+,Shelbourne FC,Bohemian FC,1,0,1,0-0,2023_ie1.txt
+20.00,Shamrock Rovers,Derry City,1,2,2,1-1,2023_ie1.txt
+19.45,Bohemian FC,Drogheda United,3,1,1,2-1,2023_ie1.txt
+,Dundalk FC,Shelbourne FC,2,1,1,0-1,2023_ie1.txt
+,Sligo Rovers,St Patrick's Athletic,2,1,1,1-0,2023_ie1.txt
+,UC Dublin,Derry City,0,4,2,0-2,2023_ie1.txt
+20.00,Shamrock Rovers,Cork City,4,4,X,1-2,2023_ie1.txt
+19.45,Derry City,Dundalk FC,0,0,X,,2023_ie1.txt
+,Shelbourne FC,Shamrock Rovers,0,0,X,,2023_ie1.txt
+,St Patrick's Athletic,Bohemian FC,0,2,2,0-1,2023_ie1.txt
+,UC Dublin,Drogheda United,0,1,2,0-0,2023_ie1.txt
+19.45,Sligo Rovers,Cork City,2,2,X,0-1,2023_ie1.txt
+19.45,Drogheda United,Dundalk FC,0,1,2,0-0,2023_ie1.txt
+17.00,Cork City,Shelbourne FC,0,2,2,0-1,2023_ie1.txt
+,Shamrock Rovers,St Patrick's Athletic,2,2,X,1-1,2023_ie1.txt
+19.45,Bohemian FC,UC Dublin,2,1,1,0-1,2023_ie1.txt
+,Derry City,Sligo Rovers,1,1,X,0-1,2023_ie1.txt
+19.45,Cork City,Drogheda United,1,1,X,1-1,2023_ie1.txt
+,Dundalk FC,Shamrock Rovers,0,4,2,0-2,2023_ie1.txt
+,Shelbourne FC,Derry City,0,1,2,0-1,2023_ie1.txt
+,St Patrick's Athletic,UC Dublin,3,0,1,2-0,2023_ie1.txt
+19.45,Sligo Rovers,Bohemian FC,0,1,2,0-0,2023_ie1.txt
+19.45,Bohemian FC,Shamrock Rovers,0,2,2,0-1,2023_ie1.txt
+,Derry City,Drogheda United,0,1,2,0-0,2023_ie1.txt
+,Dundalk FC,Sligo Rovers,1,2,2,1-1,2023_ie1.txt
+,St Patrick's Athletic,Cork City,4,0,1,1-0,2023_ie1.txt
+,UC Dublin,Shelbourne FC,0,0,X,,2023_ie1.txt
+17.00,Cork City,Dundalk FC,1,0,1,1-0,2023_ie1.txt
+19.00,Derry City,Bohemian FC,0,1,2,0-0,2023_ie1.txt
+19.45,Drogheda United,St Patrick's Athletic,1,3,2,1-2,2023_ie1.txt
+,Shelbourne FC,Sligo Rovers,2,1,1,0-1,2023_ie1.txt
+20.00,Shamrock Rovers,UC Dublin,3,0,1,2-0,2023_ie1.txt
+19.45,Bohemian FC,St Patrick's Athletic,2,3,2,1-3,2023_ie1.txt
+,UC Dublin,Cork City,1,0,1,1-0,2023_ie1.txt
+,Shamrock Rovers,Shelbourne FC,2,2,X,0-1,2023_ie1.txt
+19.45,Sligo Rovers,Drogheda United,1,1,X,0-0,2023_ie1.txt
+15.00,Dundalk FC,Derry City,2,2,X,0-1,2023_ie1.txt
+19.45,Cork City,Derry City,1,3,2,0-1,2023_ie1.txt
+,Drogheda United,Bohemian FC,0,2,2,0-1,2023_ie1.txt
+,Shelbourne FC,Dundalk FC,1,1,X,0-0,2023_ie1.txt
+,St Patrick's Athletic,Shamrock Rovers,0,2,2,0-1,2023_ie1.txt
+19.45,Sligo Rovers,UC Dublin,3,1,1,2-1,2023_ie1.txt
+19.45,Derry City,St Patrick's Athletic,2,0,1,0-0,2023_ie1.txt
+,Dundalk FC,Drogheda United,3,2,1,2-0,2023_ie1.txt
+,Shelbourne FC,Cork City,2,1,1,0-0,2023_ie1.txt
+,UC Dublin,Bohemian FC,1,1,X,0-0,2023_ie1.txt
+20.00,Shamrock Rovers,Sligo Rovers,2,1,1,1-0,2023_ie1.txt
+15.00,St Patrick's Athletic,Sligo Rovers,0,1,2,0-0,2023_ie1.txt
+17.00,Bohemian FC,Cork City,5,0,1,1-0,2023_ie1.txt
+,Drogheda United,Shelbourne FC,1,1,X,0-0,2023_ie1.txt
+,UC Dublin,Dundalk FC,0,2,2,0-1,2023_ie1.txt
+19.15,Derry City,Shamrock Rovers,0,2,2,0-2,2023_ie1.txt
+19.45,Cork City,St Patrick's Athletic,2,3,2,2-1,2023_ie1.txt
+,Drogheda United,Derry City,0,1,2,0-1,2023_ie1.txt
+,Shelbourne FC,UC Dublin,1,0,1,1-0,2023_ie1.txt
+,Shamrock Rovers,Bohemian FC,2,0,1,0-0,2023_ie1.txt
+19.45,Sligo Rovers,Dundalk FC,0,1,2,0-0,2023_ie1.txt
+19.45,Bohemian FC,Derry City,0,1,2,0-1,2023_ie1.txt
+,Dundalk FC,Cork City,2,1,1,0-1,2023_ie1.txt
+,St Patrick's Athletic,Drogheda United,3,0,1,0-0,2023_ie1.txt
+,UC Dublin,Shamrock Rovers,0,3,2,0-1,2023_ie1.txt
+19.45,Sligo Rovers,Shelbourne FC,0,3,2,0-2,2023_ie1.txt
+19.45,Cork City,Sligo Rovers,1,0,1,1-0,2023_ie1.txt
+,Derry City,UC Dublin,4,1,1,1-0,2023_ie1.txt
+,Dundalk FC,Bohemian FC,2,2,X,2-0,2023_ie1.txt
+,Shelbourne FC,St Patrick's Athletic,0,1,2,0-0,2023_ie1.txt
+20.00,Shamrock Rovers,Drogheda United,1,2,2,0-1,2023_ie1.txt
+19.45,Bohemian FC,Shelbourne FC,0,0,X,,2023_ie1.txt
+,Cork City,Shamrock Rovers,1,0,1,0-0,2023_ie1.txt
+,Drogheda United,UC Dublin,3,1,1,2-1,2023_ie1.txt
+,St Patrick's Athletic,Dundalk FC,2,1,1,1-0,2023_ie1.txt
+19.45,Sligo Rovers,Derry City,1,0,1,1-0,2023_ie1.txt
+19.45,Bohemian FC,Sligo Rovers,2,0,1,1-0,2023_ie1.txt
+,Derry City,Shelbourne FC,0,0,X,,2023_ie1.txt
+,Drogheda United,Cork City,0,1,2,0-0,2023_ie1.txt
+,UC Dublin,St Patrick's Athletic,1,3,2,0-2,2023_ie1.txt
+,Shamrock Rovers,Dundalk FC,2,0,1,1-0,2023_ie1.txt
+17.00,Cork City,Bohemian FC,2,1,1,0-0,2023_ie1.txt
+,Dundalk FC,UC Dublin,4,1,1,2-1,2023_ie1.txt
+18.00,Sligo Rovers,Shamrock Rovers,0,3,2,0-0,2023_ie1.txt
+18.45,St Patrick's Athletic,Derry City,4,1,1,1-0,2023_ie1.txt
+19.45,Shelbourne FC,Drogheda United,3,2,1,0-1,2023_ie1.txt
+19.45,Cork City,Dundalk FC,1,2,2,1-1,2023_ie1.txt
+,Derry City,Bohemian FC,0,0,X,,2023_ie1.txt
+,Drogheda United,St Patrick's Athletic,2,1,1,1-1,2023_ie1.txt
+,Shelbourne FC,Sligo Rovers,1,1,X,1-1,2023_ie1.txt
+20.00,Shamrock Rovers,UC Dublin,4,0,1,3-0,2023_ie1.txt
+19.45,Bohemian FC,Shamrock Rovers,2,2,X,0-0,2023_ie1.txt
+,Derry City,Cork City,2,0,1,1-0,2023_ie1.txt
+,Drogheda United,Dundalk FC,1,2,2,1-0,2023_ie1.txt
+,St Patrick's Athletic,Shelbourne FC,1,0,1,0-0,2023_ie1.txt
+,UC Dublin,Sligo Rovers,2,1,1,0-1,2023_ie1.txt
+19.45,Cork City,Drogheda United,1,1,X,0-0,2023_ie1.txt
+,Dundalk FC,Shamrock Rovers,2,0,1,0-0,2023_ie1.txt
+,Shelbourne FC,Derry City,1,1,X,0-0,2023_ie1.txt
+,St Patrick's Athletic,UC Dublin,7,0,1,2-0,2023_ie1.txt
+,Sligo Rovers,Bohemian FC,3,1,1,2-0,2023_ie1.txt
+19.45,Bohemian FC,Dundalk FC,3,2,1,1-2,2023_ie1.txt
+,Derry City,Sligo Rovers,2,1,1,1-1,2023_ie1.txt
+,Drogheda United,Shamrock Rovers,0,0,X,,2023_ie1.txt
+,St Patrick's Athletic,Cork City,1,1,X,1-0,2023_ie1.txt
+,UC Dublin,Shelbourne FC,0,4,2,0-1,2023_ie1.txt
+19.45,Derry City,Dundalk FC,3,0,1,1-0,2023_ie1.txt
+20.00,Shamrock Rovers,St Patrick's Athletic,3,2,1,1-1,2023_ie1.txt
+19.45,Shelbourne FC,Bohemian FC,1,1,X,0-0,2023_ie1.txt
+,UC Dublin,Drogheda United,1,3,2,0-2,2023_ie1.txt
+19.45,Sligo Rovers,Cork City,3,0,1,1-0,2023_ie1.txt
+19.45,Dundalk FC,St Patrick's Athletic,1,1,X,0-1,2023_ie1.txt
+20.00,Shamrock Rovers,Derry City,1,0,1,1-0,2023_ie1.txt
+19.45,Bohemian FC,UC Dublin,2,0,1,0-0,2023_ie1.txt
+,Cork City,Shelbourne FC,0,2,2,0-1,2023_ie1.txt
+,Drogheda United,Sligo Rovers,2,2,X,0-1,2023_ie1.txt
+19.45,Bohemian FC,Drogheda United,4,2,1,2-1,2023_ie1.txt
+,Sligo Rovers,St Patrick's Athletic,0,2,2,0-2,2023_ie1.txt
+17.00,Dundalk FC,Shelbourne FC,1,1,X,1-0,2023_ie1.txt
+18.00,Shamrock Rovers,Cork City,2,1,1,1-1,2023_ie1.txt
+19.45,UC Dublin,Derry City,0,5,2,0-3,2023_ie1.txt
+19.45,Cork City,UC Dublin,1,1,X,1-0,2023_ie1.txt
+,Dundalk FC,Sligo Rovers,1,0,1,1-0,2023_ie1.txt
+,Shelbourne FC,Shamrock Rovers,1,1,X,0-1,2023_ie1.txt
+,St Patrick's Athletic,Bohemian FC,0,0,X,,2023_ie1.txt
+18.30,Derry City,Drogheda United,3,0,1,1-0,2023_ie1.txt
+19.45,Bohemian FC,Derry City,2,2,X,1-2,2023_ie1.txt
+,Drogheda United,Cork City,3,1,1,0-1,2023_ie1.txt
+,UC Dublin,St Patrick's Athletic,0,1,2,0-1,2023_ie1.txt
+,Shamrock Rovers,Dundalk FC,1,0,1,0-0,2023_ie1.txt
+19.45,Sligo Rovers,Shelbourne FC,0,1,2,0-1,2023_ie1.txt
+19.45,Cork City,Sligo Rovers,3,0,1,1-0,2023_ie1.txt
+,Drogheda United,UC Dublin,3,0,1,2-0,2023_ie1.txt
+,Dundalk FC,Derry City,1,3,2,0-1,2023_ie1.txt
+,Shelbourne FC,St Patrick's Athletic,2,1,1,0-1,2023_ie1.txt
+,Shamrock Rovers,Bohemian FC,3,0,1,1-0,2023_ie1.txt
+19.45,Derry City,Shamrock Rovers,1,1,X,0-0,2023_ie1.txt
+19.45,Sligo Rovers,UC Dublin,2,0,1,1-0,2023_ie1.txt
+19.45,Bohemian FC,Shelbourne FC,1,1,X,0-1,2023_ie1.txt
+,Dundalk FC,Cork City,5,0,1,3-0,2023_ie1.txt
+,St Patrick's Athletic,Drogheda United,1,2,2,1-1,2023_ie1.txt
+19.45,Drogheda United,Bohemian FC,0,0,X,,2023_ie1.txt
+,Shelbourne FC,Cork City,2,1,1,2-1,2023_ie1.txt
+,St Patrick's Athletic,Dundalk FC,3,1,1,0-0,2023_ie1.txt
+,UC Dublin,Shamrock Rovers,0,0,X,,2023_ie1.txt
+,Sligo Rovers,Derry City,1,0,1,0-0,2023_ie1.txt
+19.45,Bohemian FC,Sligo Rovers,3,1,1,0-0,2023_ie1.txt
+,Cork City,St Patrick's Athletic,0,1,2,0-0,2023_ie1.txt
+,Derry City,UC Dublin,6,0,1,1-0,2023_ie1.txt
+,Dundalk FC,Drogheda United,3,1,1,1-1,2023_ie1.txt
+,Shamrock Rovers,Shelbourne FC,1,0,1,0-0,2023_ie1.txt
+19.45,Drogheda United,Derry City,0,0,X,,2023_ie1.txt
+,Shelbourne FC,Dundalk FC,1,0,1,1-0,2023_ie1.txt
+19.45,UC Dublin,Bohemian FC,1,2,2,0-0,2023_ie1.txt
+19.30,St Patrick's Athletic,Sligo Rovers,1,0,1,1-0,2023_ie1.txt
+16.45,Cork City,Shamrock Rovers,0,0,X,,2023_ie1.txt
+19.45,Bohemian FC,St Patrick's Athletic,0,2,2,0-0,2023_ie1.txt
+,Derry City,Shelbourne FC,0,0,X,,2023_ie1.txt
+,Sligo Rovers,Dundalk FC,0,2,2,0-1,2023_ie1.txt
+15.00,UC Dublin,Cork City,0,2,2,0-2,2023_ie1.txt
+20.00,Shamrock Rovers,Drogheda United,5,0,1,3-0,2023_ie1.txt
+19.45,Cork City,Derry City,0,1,2,0-0,2023_ie1.txt
+,Dundalk FC,Bohemian FC,2,0,1,0-0,2023_ie1.txt
+,Shelbourne FC,UC Dublin,3,2,1,1-0,2023_ie1.txt
+20.00,St Patrick's Athletic,Shamrock Rovers,0,2,2,0-0,2023_ie1.txt
+18.00,Sligo Rovers,Drogheda United,0,0,X,,2023_ie1.txt
+19.45,Bohemian FC,Cork City,4,0,1,2-0,2023_ie1.txt
+,Derry City,St Patrick's Athletic,3,0,1,2-0,2023_ie1.txt
+,Drogheda United,Shelbourne FC,2,4,2,2-0,2023_ie1.txt
+,Shamrock Rovers,Sligo Rovers,4,2,1,1-1,2023_ie1.txt
+,UC Dublin,Dundalk FC,1,5,2,1-1,2023_ie1.txt
+19.45,Bohemian FC,Sligo Rovers,2,2,X,1-2,2024_ie1.txt
+,Derry City,Drogheda United,2,1,1,0-0,2024_ie1.txt
+,Galway United,St Patrick's Athletic,0,1,2,0-1,2024_ie1.txt
+,Waterford FC,Shelbourne FC,1,1,X,1-0,2024_ie1.txt
+,Shamrock Rovers,Dundalk FC,1,1,X,0-1,2024_ie1.txt
+19.45,Drogheda United,Waterford FC,1,4,2,1-2,2024_ie1.txt
+,Dundalk FC,Galway United,0,2,2,0-2,2024_ie1.txt
+,Shelbourne FC,Shamrock Rovers,2,1,1,2-0,2024_ie1.txt
+,St Patrick's Athletic,Bohemian FC,0,1,2,0-0,2024_ie1.txt
+19.45,Sligo Rovers,Derry City,0,0,X,,2024_ie1.txt
+19.45,Derry City,St Patrick's Athletic,2,1,1,0-0,2024_ie1.txt
+,Galway United,Waterford FC,2,1,1,0-1,2024_ie1.txt
+,Sligo Rovers,Shelbourne FC,0,1,2,0-1,2024_ie1.txt
+19.45,Bohemian FC,Dundalk FC,1,0,1,0-0,2024_ie1.txt
+20.00,Shamrock Rovers,Drogheda United,4,0,1,2-0,2024_ie1.txt
+19.45,Drogheda United,Bohemian FC,2,1,1,1-0,2024_ie1.txt
+,Dundalk FC,Sligo Rovers,0,5,2,0-4,2024_ie1.txt
+,Shelbourne FC,Galway United,1,0,1,1-0,2024_ie1.txt
+,Waterford FC,St Patrick's Athletic,3,1,1,2-1,2024_ie1.txt
+,Shamrock Rovers,Derry City,2,2,X,0-0,2024_ie1.txt
+19.45,Bohemian FC,Shelbourne FC,0,2,2,0-0,2024_ie1.txt
+,Derry City,Waterford FC,3,0,1,2-0,2024_ie1.txt
+,Galway United,Drogheda United,0,0,X,,2024_ie1.txt
+,St Patrick's Athletic,Dundalk FC,1,0,1,1-0,2024_ie1.txt
+19.45,Sligo Rovers,Shamrock Rovers,0,0,X,,2024_ie1.txt
+19.45,Bohemian FC,Derry City,2,1,1,1-0,2024_ie1.txt
+,Dundalk FC,Waterford FC,0,0,X,,2024_ie1.txt
+,Galway United,Shamrock Rovers,0,1,2,0-0,2024_ie1.txt
+,St Patrick's Athletic,Shelbourne FC,1,2,2,0-0,2024_ie1.txt
+19.45,Sligo Rovers,Drogheda United,3,1,1,2-0,2024_ie1.txt
+19.45,Derry City,Galway United,0,1,2,0-0,2024_ie1.txt
+,Drogheda United,St Patrick's Athletic,0,0,X,,2024_ie1.txt
+,Shelbourne FC,Dundalk FC,2,1,1,0-0,2024_ie1.txt
+,Waterford FC,Sligo Rovers,0,1,2,0-0,2024_ie1.txt
+,Shamrock Rovers,Bohemian FC,3,1,1,0-0,2024_ie1.txt
+13.00,Dundalk FC,Drogheda United,0,0,X,,2024_ie1.txt
+17.00,Shelbourne FC,Derry City,0,0,X,,2024_ie1.txt
+,St Patrick's Athletic,Sligo Rovers,3,0,1,2-0,2024_ie1.txt
+,Waterford FC,Shamrock Rovers,1,2,2,0-0,2024_ie1.txt
+19.45,Galway United,Bohemian FC,0,2,2,0-1,2024_ie1.txt
+19.45,Bohemian FC,Waterford FC,0,1,2,0-1,2024_ie1.txt
+,Derry City,Dundalk FC,4,1,1,1-0,2024_ie1.txt
+,Drogheda United,Shelbourne FC,2,2,X,1-1,2024_ie1.txt
+,St Patrick's Athletic,Shamrock Rovers,2,1,1,0-1,2024_ie1.txt
+19.45,Sligo Rovers,Galway United,0,0,X,,2024_ie1.txt
+19.45,Drogheda United,Derry City,2,2,X,1-2,2024_ie1.txt
+,Dundalk FC,St Patrick's Athletic,0,0,X,,2024_ie1.txt
+,Shelbourne FC,Bohemian FC,1,2,2,0-2,2024_ie1.txt
+,Waterford FC,Galway United,0,0,X,,2024_ie1.txt
+20.00,Shamrock Rovers,Sligo Rovers,3,0,1,1-0,2024_ie1.txt
+19.45,Bohemian FC,Drogheda United,1,0,1,1-0,2024_ie1.txt
+,Derry City,Shamrock Rovers,1,3,2,0-0,2024_ie1.txt
+,Galway United,Shelbourne FC,1,0,1,1-0,2024_ie1.txt
+,St Patrick's Athletic,Waterford FC,1,1,X,0-1,2024_ie1.txt
+,Sligo Rovers,Dundalk FC,1,1,X,1-0,2024_ie1.txt
+19.45,Drogheda United,Sligo Rovers,3,1,1,1-1,2024_ie1.txt
+,Dundalk FC,Bohemian FC,2,0,1,2-0,2024_ie1.txt
+,Shelbourne FC,St Patrick's Athletic,1,0,1,1-0,2024_ie1.txt
+,Waterford FC,Derry City,0,2,2,0-1,2024_ie1.txt
+20.00,Shamrock Rovers,Galway United,1,1,X,0-0,2024_ie1.txt
+19.45,Bohemian FC,Shamrock Rovers,1,1,X,1-1,2024_ie1.txt
+,Dundalk FC,Shelbourne FC,0,0,X,,2024_ie1.txt
+,Galway United,Derry City,0,0,X,,2024_ie1.txt
+,Sligo Rovers,Waterford FC,0,1,2,0-0,2024_ie1.txt
+,St Patrick's Athletic,Drogheda United,1,0,1,1-0,2024_ie1.txt
+13.00,Drogheda United,Dundalk FC,2,1,1,0-0,2024_ie1.txt
+17.00,Bohemian FC,Galway United,0,1,2,0-1,2024_ie1.txt
+,Shamrock Rovers,Waterford FC,1,3,2,1-2,2024_ie1.txt
+,Sligo Rovers,St Patrick's Athletic,1,0,1,1-0,2024_ie1.txt
+19.45,Derry City,Shelbourne FC,1,1,X,0-0,2024_ie1.txt
+19.45,Derry City,Bohemian FC,1,0,1,0-0,2024_ie1.txt
+,Galway United,Sligo Rovers,0,0,X,,2024_ie1.txt
+,Shelbourne FC,Drogheda United,1,1,X,0-1,2024_ie1.txt
+,Waterford FC,Dundalk FC,4,1,1,2-1,2024_ie1.txt
+,Shamrock Rovers,St Patrick's Athletic,2,2,X,1-1,2024_ie1.txt
+19.45,Drogheda United,Galway United,2,3,2,1-1,2024_ie1.txt
+,Shelbourne FC,Waterford FC,1,0,1,0-0,2024_ie1.txt
+,St Patrick's Athletic,Derry City,0,1,2,0-0,2024_ie1.txt
+,Sligo Rovers,Bohemian FC,0,3,2,0-2,2024_ie1.txt
+20.15,Dundalk FC,Shamrock Rovers,1,0,1,0-0,2024_ie1.txt
+19.45,Waterford FC,Drogheda United,4,2,1,0-1,2024_ie1.txt
+19.45,Bohemian FC,St Patrick's Athletic,2,2,X,1-2,2024_ie1.txt
+,Derry City,Sligo Rovers,2,2,X,0-1,2024_ie1.txt
+,Galway United,Dundalk FC,2,0,1,1-0,2024_ie1.txt
+20.00,Shamrock Rovers,Shelbourne FC,0,2,2,0-1,2024_ie1.txt
+19.45,Drogheda United,Shamrock Rovers,0,2,2,0-0,2024_ie1.txt
+,Dundalk FC,Derry City,0,0,X,,2024_ie1.txt
+,Shelbourne FC,Sligo Rovers,1,2,2,0-1,2024_ie1.txt
+,St Patrick's Athletic,Galway United,2,1,1,1-0,2024_ie1.txt
+,Waterford FC,Bohemian FC,2,1,1,1-1,2024_ie1.txt
+17.00,Sligo Rovers,Drogheda United,2,1,1,2-0,2024_ie1.txt
+17.15,St Patrick's Athletic,Dundalk FC,2,3,2,2-3,2024_ie1.txt
+18.00,Derry City,Waterford FC,3,0,1,3-0,2024_ie1.txt
+19.45,Bohemian FC,Shelbourne FC,1,1,X,0-0,2024_ie1.txt
+19.45,Galway United,Shamrock Rovers,1,2,2,1-1,2024_ie1.txt
+19.45,Derry City,Galway United,2,0,1,0-0,2024_ie1.txt
+,Drogheda United,St Patrick's Athletic,0,0,X,,2024_ie1.txt
+,Shelbourne FC,Dundalk FC,1,0,1,0-0,2024_ie1.txt
+,Waterford FC,Sligo Rovers,4,1,1,1-0,2024_ie1.txt
+19.45,Shamrock Rovers,Bohemian FC,1,0,1,0-0,2024_ie1.txt
+19.45,Bohemian FC,Derry City,1,2,2,1-1,2024_ie1.txt
+,Dundalk FC,Sligo Rovers,1,0,1,0-0,2024_ie1.txt
+,Galway United,Drogheda United,3,0,1,1-0,2024_ie1.txt
+,St Patrick's Athletic,Shamrock Rovers,2,1,1,0-1,2024_ie1.txt
+,Waterford FC,Shelbourne FC,0,1,2,0-0,2024_ie1.txt
+19.45,Derry City,Drogheda United,5,1,1,2-1,2024_ie1.txt
+,Dundalk FC,Waterford FC,0,2,2,0-2,2024_ie1.txt
+,Shelbourne FC,Galway United,2,0,1,2-0,2024_ie1.txt
+,Sligo Rovers,Shamrock Rovers,2,0,1,0-0,2024_ie1.txt
+,St Patrick's Athletic,Bohemian FC,0,0,X,,2024_ie1.txt
+19.45,Drogheda United,Shelbourne FC,1,1,X,0-1,2024_ie1.txt
+,Galway United,Bohemian FC,1,1,X,0-1,2024_ie1.txt
+,Sligo Rovers,Derry City,2,1,1,0-0,2024_ie1.txt
+,Waterford FC,St Patrick's Athletic,1,0,1,0-0,2024_ie1.txt
+20.00,Shamrock Rovers,Dundalk FC,1,0,1,1-0,2024_ie1.txt
+19.45,Derry City,St Patrick's Athletic,3,1,1,1-0,2024_ie1.txt
+,Shelbourne FC,Shamrock Rovers,0,0,X,,2024_ie1.txt
+19.45,Bohemian FC,Sligo Rovers,0,2,2,0-1,2024_ie1.txt
+,Dundalk FC,Drogheda United,4,2,1,2-1,2024_ie1.txt
+,Galway United,Waterford FC,1,0,1,1-0,2024_ie1.txt
+19.45,St Patrick's Athletic,Shelbourne FC,1,2,2,0-1,2024_ie1.txt
+20.00,Shamrock Rovers,Derry City,1,0,1,1-0,2024_ie1.txt
+19.45,Bohemian FC,Dundalk FC,1,1,X,1-1,2024_ie1.txt
+,Drogheda United,Waterford FC,2,0,1,1-0,2024_ie1.txt
+19.45,Sligo Rovers,Galway United,2,0,1,1-0,2024_ie1.txt
+19.45,Drogheda United,Bohemian FC,2,2,X,1-2,2024_ie1.txt
+,Dundalk FC,Galway United,0,2,2,0-0,2024_ie1.txt
+,Waterford FC,Shamrock Rovers,1,2,2,0-1,2024_ie1.txt
+18.00,St Patrick's Athletic,Sligo Rovers,3,2,1,1-1,2024_ie1.txt
+19.45,Shelbourne FC,Derry City,0,0,X,,2024_ie1.txt
+19.45,Bohemian FC,Waterford FC,2,3,2,2-0,2024_ie1.txt
+,Derry City,Dundalk FC,1,1,X,0-1,2024_ie1.txt
+19.45,Sligo Rovers,Shelbourne FC,2,1,1,1-0,2024_ie1.txt
+15.00,Galway United,St Patrick's Athletic,1,1,X,0-1,2024_ie1.txt
+19.00,Shamrock Rovers,Drogheda United,1,1,X,1-0,2024_ie1.txt
+19.45,Drogheda United,Sligo Rovers,7,0,1,3-0,2024_ie1.txt
+,Shelbourne FC,Bohemian FC,1,1,X,1-1,2024_ie1.txt
+,Waterford FC,Derry City,0,1,2,0-0,2024_ie1.txt
+19.00,Shamrock Rovers,Galway United,1,1,X,0-0,2024_ie1.txt
+19.45,Dundalk FC,St Patrick's Athletic,1,2,2,1-0,2024_ie1.txt
+19.45,Dundalk FC,Shelbourne FC,0,1,2,0-1,2024_ie1.txt
+,Galway United,Derry City,1,0,1,0-0,2024_ie1.txt
+19.45,Sligo Rovers,Waterford FC,2,0,1,1-0,2024_ie1.txt
+11.30,Bohemian FC,Shamrock Rovers,2,1,1,1-1,2024_ie1.txt
+18.00,St Patrick's Athletic,Drogheda United,4,1,1,2-1,2024_ie1.txt
+19.45,Waterford FC,Dundalk FC,2,1,1,2-0,2024_ie1.txt
+,Shamrock Rovers,Sligo Rovers,4,0,1,2-0,2024_ie1.txt
+19.45,Drogheda United,Galway United,0,0,X,,2024_ie1.txt
+19.15,Shelbourne FC,St Patrick's Athletic,2,3,2,0-1,2024_ie1.txt
+19.45,Derry City,Bohemian FC,1,1,X,0-1,2024_ie1.txt
+19.45,Bohemian FC,Drogheda United,0,1,2,0-1,2024_ie1.txt
+,Derry City,Shamrock Rovers,1,1,X,0-1,2024_ie1.txt
+,Galway United,Shelbourne FC,1,0,1,1-0,2024_ie1.txt
+,St Patrick's Athletic,Waterford FC,3,0,1,2-0,2024_ie1.txt
+19.45,Sligo Rovers,Dundalk FC,2,1,1,0-1,2024_ie1.txt
+19.45,Drogheda United,Derry City,2,1,1,0-0,2024_ie1.txt
+,Dundalk FC,Bohemian FC,0,2,2,0-0,2024_ie1.txt
+,Shelbourne FC,Sligo Rovers,0,0,X,,2024_ie1.txt
+,Waterford FC,Galway United,1,2,2,1-0,2024_ie1.txt
+20.00,Shamrock Rovers,St Patrick's Athletic,0,3,2,0-2,2024_ie1.txt
+19.45,Galway United,Dundalk FC,1,1,X,1-0,2024_ie1.txt
+17.45,Shamrock Rovers,Shelbourne FC,2,0,1,1-0,2024_ie1.txt
+19.45,Waterford FC,Drogheda United,0,0,X,,2024_ie1.txt
+19.15,Derry City,Sligo Rovers,1,1,X,0-1,2024_ie1.txt
+19.45,Bohemian FC,St Patrick's Athletic,1,3,2,0-0,2024_ie1.txt
+19.45,Drogheda United,Shamrock Rovers,0,1,2,0-0,2024_ie1.txt
+,Dundalk FC,Derry City,0,2,2,0-1,2024_ie1.txt
+,Shelbourne FC,Waterford FC,3,1,1,1-1,2024_ie1.txt
+,St Patrick's Athletic,Galway United,2,1,1,1-0,2024_ie1.txt
+19.45,Sligo Rovers,Bohemian FC,0,2,2,0-1,2024_ie1.txt
+19.45,Galway United,Sligo Rovers,2,2,X,0-1,2024_ie1.txt
+,Shelbourne FC,Drogheda United,2,1,1,1-0,2024_ie1.txt
+,St Patrick's Athletic,Derry City,1,0,1,1-0,2024_ie1.txt
+,Waterford FC,Bohemian FC,1,1,X,0-0,2024_ie1.txt
+17.45,Dundalk FC,Shamrock Rovers,0,1,2,0-0,2024_ie1.txt
+19.45,Bohemian FC,Galway United,1,1,X,1-1,2024_ie1.txt
+,Derry City,Shelbourne FC,0,1,2,0-0,2024_ie1.txt
+,Drogheda United,Dundalk FC,0,0,X,,2024_ie1.txt
+,Shamrock Rovers,Waterford FC,2,1,1,1-0,2024_ie1.txt
+,Sligo Rovers,St Patrick's Athletic,0,2,2,0-1,2024_ie1.txt
+19.45,Cork City,Galway United,2,2,X,1-1,2025_ie1.txt
+,Shelbourne FC,Derry City,3,1,1,3-1,2025_ie1.txt
+,St Patrick's Athletic,Drogheda United,0,0,X,,2025_ie1.txt
+19.45,Sligo Rovers,Waterford FC,2,3,2,0-2,2025_ie1.txt
+14.00,Bohemian FC,Shamrock Rovers,1,0,1,1-0,2025_ie1.txt
+19.45,Derry City,Bohemian FC,1,0,1,1-0,2025_ie1.txt
+,Drogheda United,Sligo Rovers,3,0,1,1-0,2025_ie1.txt
+,Galway United,St Patrick's Athletic,2,1,1,2-1,2025_ie1.txt
+,Waterford FC,Shelbourne FC,0,1,2,0-1,2025_ie1.txt
+20.00,Shamrock Rovers,Cork City,4,1,1,2-0,2025_ie1.txt
+19.45,Cork City,Bohemian FC,2,1,1,1-1,2025_ie1.txt
+,Derry City,Waterford FC,1,2,2,0-2,2025_ie1.txt
+,Drogheda United,Galway United,1,1,X,1-0,2025_ie1.txt
+,Shelbourne FC,Shamrock Rovers,1,1,X,1-1,2025_ie1.txt
+,St Patrick's Athletic,Sligo Rovers,4,3,1,2-1,2025_ie1.txt
+19.45,Bohemian FC,Drogheda United,0,1,2,0-1,2025_ie1.txt
+,Galway United,Shelbourne FC,1,1,X,0-0,2025_ie1.txt
+,Sligo Rovers,Shamrock Rovers,2,1,1,1-0,2025_ie1.txt
+,St Patrick's Athletic,Derry City,2,0,1,1-0,2025_ie1.txt
+,Waterford FC,Cork City,2,1,1,0-1,2025_ie1.txt
+19.45,Cork City,Sligo Rovers,1,1,X,0-1,2025_ie1.txt
+,Derry City,Galway United,1,1,X,0-1,2025_ie1.txt
+,Shelbourne FC,Drogheda United,0,1,2,0-1,2025_ie1.txt
+,Waterford FC,Bohemian FC,0,3,2,0-3,2025_ie1.txt
+,Shamrock Rovers,St Patrick's Athletic,1,0,1,0-0,2025_ie1.txt
+19.45,Drogheda United,Shamrock Rovers,1,2,2,1-1,2025_ie1.txt
+,Galway United,Waterford FC,1,0,1,0-0,2025_ie1.txt
+,Shelbourne FC,Cork City,1,1,X,0-0,2025_ie1.txt
+,St Patrick's Athletic,Bohemian FC,3,0,1,1-0,2025_ie1.txt
+19.45,Sligo Rovers,Derry City,0,1,2,0-1,2025_ie1.txt
+19.45,Bohemian FC,Galway United,0,2,2,0-1,2025_ie1.txt
+,Cork City,Drogheda United,1,1,X,1-0,2025_ie1.txt
+,Waterford FC,St Patrick's Athletic,1,2,2,1-0,2025_ie1.txt
+,Sligo Rovers,Shelbourne FC,1,2,2,1-2,2025_ie1.txt
+20.00,Shamrock Rovers,Derry City,0,0,X,,2025_ie1.txt
+19.45,Bohemian FC,Sligo Rovers,4,2,1,2-2,2025_ie1.txt
+,Derry City,Cork City,2,1,1,0-1,2025_ie1.txt
+,Drogheda United,Waterford FC,2,0,1,1-0,2025_ie1.txt
+,Galway United,Shamrock Rovers,0,1,2,0-0,2025_ie1.txt
+,St Patrick's Athletic,Shelbourne FC,0,0,X,,2025_ie1.txt
+19.45,Cork City,St Patrick's Athletic,0,2,2,0-2,2025_ie1.txt
+,Derry City,Drogheda United,1,3,2,0-0,2025_ie1.txt
+,Shelbourne FC,Bohemian FC,1,0,1,0-0,2025_ie1.txt
+20.00,Shamrock Rovers,Waterford FC,2,0,1,1-0,2025_ie1.txt
+19.45,Sligo Rovers,Galway United,1,2,2,0-1,2025_ie1.txt
+19.45,Bohemian FC,Cork City,1,0,1,0-0,2025_ie1.txt
+,Drogheda United,Shelbourne FC,2,2,X,2-1,2025_ie1.txt
+,Galway United,Derry City,2,3,2,1-1,2025_ie1.txt
+,St Patrick's Athletic,Shamrock Rovers,2,2,X,1-1,2025_ie1.txt
+,Waterford FC,Sligo Rovers,0,4,2,0-2,2025_ie1.txt
+14.00,Shamrock Rovers,Bohemian FC,2,3,2,2-0,2025_ie1.txt
+17.00,Cork City,Waterford FC,2,1,1,0-0,2025_ie1.txt
+,Drogheda United,St Patrick's Athletic,0,0,X,,2025_ie1.txt
+,Shelbourne FC,Galway United,2,2,X,1-1,2025_ie1.txt
+19.45,Derry City,Sligo Rovers,3,0,1,2-0,2025_ie1.txt
+19.45,Bohemian FC,St Patrick's Athletic,2,1,1,0-1,2025_ie1.txt
+,Galway United,Drogheda United,2,1,1,0-1,2025_ie1.txt
+,Waterford FC,Derry City,2,1,1,1-0,2025_ie1.txt
+,Shamrock Rovers,Shelbourne FC,2,2,X,1-0,2025_ie1.txt
+19.45,Sligo Rovers,Cork City,1,1,X,0-0,2025_ie1.txt
+19.45,Bohemian FC,Waterford FC,1,2,2,0-1,2025_ie1.txt
+,Cork City,Shamrock Rovers,1,1,X,0-1,2025_ie1.txt
+,Derry City,Shelbourne FC,2,0,1,2-0,2025_ie1.txt
+,Sligo Rovers,Drogheda United,2,2,X,0-1,2025_ie1.txt
+,St Patrick's Athletic,Galway United,2,0,1,2-0,2025_ie1.txt

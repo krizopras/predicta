@@ -1,0 +1,341 @@
+time,home_team,away_team,home_score,away_score,result,ht_score,source_file
+19.00,Marsaxlokk FC,Naxxar Lions FC,5,1,1,2-0,2023-24_mt1.txt
+18.00,Hamrun Spartans,Balzan FC,1,0,1,0-0,2023-24_mt1.txt
+,ira United,Hibernians FC,0,4,2,0-2,2023-24_mt1.txt
+18.00,Birkirkara FC,Sliema Wanderers,1,0,1,0-0,2023-24_mt1.txt
+,ija FC,Floriana FC,0,4,2,0-2,2023-24_mt1.txt
+20.00,Valletta FC,Sirens FC,2,0,1,1-0,2023-24_mt1.txt
+20.15,Mosta FC,Gudja United,0,0,X,,2023-24_mt1.txt
+19.00,Sirens FC,Mosta FC,1,1,X,0-0,2023-24_mt1.txt
+18.00,Floriana FC,Birkirkara FC,2,0,1,0-0,2023-24_mt1.txt
+20.15,Naxxar Lions FC,Hamrun Spartans,0,4,2,0-2,2023-24_mt1.txt
+18.00,Sliema Wanderers,Valletta FC,1,0,1,0-0,2023-24_mt1.txt
+20.00,Gudja United,Marsaxlokk FC,1,1,X,1-1,2023-24_mt1.txt
+,ija FC,Balzan FC,0,1,2,0-1,2023-24_mt1.txt
+19.00,Floriana FC,Hibernians FC,2,0,1,1-0,2023-24_mt1.txt
+,ira United,Naxxar Lions FC,1,1,X,0-0,2023-24_mt1.txt
+18.00,Hamrun Spartans,Gudja United,3,0,1,2-0,2023-24_mt1.txt
+,Marsaxlokk FC,Sirens FC,3,1,1,3-0,2023-24_mt1.txt
+19.00,Birkirkara FC,Valletta FC,1,1,X,1-0,2023-24_mt1.txt
+20.00,Mosta FC,Sliema Wanderers,0,3,2,0-0,2023-24_mt1.txt
+15.00,Hibernians FC,Birkirkara FC,0,1,2,0-0,2023-24_mt1.txt
+17.15,Valletta FC,Mosta FC,1,1,X,0-1,2023-24_mt1.txt
+11.00,Balzan FC,Floriana FC,0,3,2,0-0,2023-24_mt1.txt
+,Sirens FC,Hamrun Spartans,0,4,2,0-2,2023-24_mt1.txt
+17.00,Sliema Wanderers,Marsaxlokk FC,0,1,2,0-0,2023-24_mt1.txt
+15.00,Birkirkara FC,Mosta FC,0,2,2,0-1,2023-24_mt1.txt
+,Floriana FC,Naxxar Lions FC,1,1,X,1-1,2023-24_mt1.txt
+,ija FC,Gudja United,0,0,X,,2023-24_mt1.txt
+17.15,Hamrun Spartans,Sliema Wanderers,1,1,X,1-0,2023-24_mt1.txt
+11.00,Marsaxlokk FC,Valletta FC,0,1,2,0-0,2023-24_mt1.txt
+15.00,Hibernians FC,Balzan FC,0,2,2,0-0,2023-24_mt1.txt
+,ira United,Sirens FC,1,0,1,0-0,2023-24_mt1.txt
+15.00,Valletta FC,Hamrun Spartans,1,2,2,0-2,2023-24_mt1.txt
+17.30,Naxxar Lions FC,Hibernians FC,0,0,X,,2023-24_mt1.txt
+18.00,Mosta FC,Marsaxlokk FC,3,2,1,2-1,2023-24_mt1.txt
+15.00,Balzan FC,Birkirkara FC,0,3,2,0-2,2023-24_mt1.txt
+,Gudja United,Floriana FC,1,1,X,0-0,2023-24_mt1.txt
+14.00,Birkirkara FC,Marsaxlokk FC,0,2,2,0-1,2023-24_mt1.txt
+,ira United,Valletta FC,1,1,X,1-0,2023-24_mt1.txt
+11.00,Hamrun Spartans,Mosta FC,1,1,X,1-1,2023-24_mt1.txt
+14.00,Hibernians FC,Gudja United,1,0,1,0-0,2023-24_mt1.txt
+,ija FC,Sliema Wanderers,0,1,2,0-1,2023-24_mt1.txt
+16.30,Floriana FC,Sirens FC,3,0,1,0-0,2023-24_mt1.txt
+,Balzan FC,Naxxar Lions FC,1,2,2,1-1,2023-24_mt1.txt
+13.00,Sirens FC,Hibernians FC,1,2,2,0-2,2023-24_mt1.txt
+14.00,Sliema Wanderers,Floriana FC,0,2,2,0-0,2023-24_mt1.txt
+15.30,Gudja United,Balzan FC,2,2,X,0-0,2023-24_mt1.txt
+16.15,Marsaxlokk FC,Hamrun Spartans,0,1,2,0-1,2023-24_mt1.txt
+14.00,Naxxar Lions FC,Birkirkara FC,2,0,1,0-0,2023-24_mt1.txt
+14.00,Birkirkara FC,Hamrun Spartans,3,0,1,1-0,2023-24_mt1.txt
+,ija FC,Mosta FC,1,0,1,1-0,2023-24_mt1.txt
+16.15,Balzan FC,Sirens FC,3,0,1,2-0,2023-24_mt1.txt
+11.00,Naxxar Lions FC,Gudja United,2,1,1,1-1,2023-24_mt1.txt
+14.00,Floriana FC,Valletta FC,1,0,1,0-0,2023-24_mt1.txt
+,ira United,Marsaxlokk FC,2,4,2,1-1,2023-24_mt1.txt
+16.15,Hibernians FC,Sliema Wanderers,0,1,2,0-0,2023-24_mt1.txt
+14.00,Valletta FC,Hibernians FC,0,2,2,0-1,2023-24_mt1.txt
+,Sliema Wanderers,Balzan FC,1,0,1,1-0,2023-24_mt1.txt
+17.00,Mosta FC,Floriana FC,0,3,2,0-2,2023-24_mt1.txt
+14.00,Sirens FC,Naxxar Lions FC,1,1,X,1-0,2023-24_mt1.txt
+10.55,Gudja United,Birkirkara FC,1,1,X,1-0,2023-24_mt1.txt
+,Gudja United,Sirens FC,1,2,2,1-0,2023-24_mt1.txt
+16.15,Balzan FC,Valletta FC,0,0,X,,2023-24_mt1.txt
+11.00,Naxxar Lions FC,Sliema Wanderers,1,4,2,0-2,2023-24_mt1.txt
+14.00,Hibernians FC,Mosta FC,0,0,X,,2023-24_mt1.txt
+,ija FC,Hamrun Spartans,1,3,2,0-3,2023-24_mt1.txt
+16.15,Floriana FC,Marsaxlokk FC,3,2,1,0-1,2023-24_mt1.txt
+14.00,Hamrun Spartans,Floriana FC,1,0,1,0-0,2023-24_mt1.txt
+11.00,Sliema Wanderers,Gudja United,2,0,1,1-0,2023-24_mt1.txt
+14.00,Marsaxlokk FC,Hibernians FC,1,1,X,1-0,2023-24_mt1.txt
+,Sirens FC,Birkirkara FC,1,2,2,0-1,2023-24_mt1.txt
+16.15,Valletta FC,Naxxar Lions FC,1,2,2,0-2,2023-24_mt1.txt
+,Mosta FC,Balzan FC,0,2,2,0-0,2023-24_mt1.txt
+14.00,Hibernians FC,Hamrun Spartans,1,2,2,0-1,2023-24_mt1.txt
+,Sirens FC,Sliema Wanderers,0,1,2,0-0,2023-24_mt1.txt
+16.15,Gudja United,Valletta FC,0,3,2,0-2,2023-24_mt1.txt
+17.00,Naxxar Lions FC,Mosta FC,0,0,X,,2023-24_mt1.txt
+16.15,Balzan FC,Marsaxlokk FC,0,0,X,,2023-24_mt1.txt
+16.15,Balzan FC,Hamrun Spartans,1,7,2,1-2,2023-24_mt1.txt
+11.00,Sirens FC,Valletta FC,0,3,2,0-1,2023-24_mt1.txt
+,Naxxar Lions FC,Marsaxlokk FC,0,0,X,,2023-24_mt1.txt
+16.15,Gudja United,Mosta FC,0,1,2,0-1,2023-24_mt1.txt
+,Sliema Wanderers,Birkirkara FC,0,0,X,,2023-24_mt1.txt
+14.00,Birkirkara FC,Floriana FC,1,2,2,0-1,2023-24_mt1.txt
+,Valletta FC,Sliema Wanderers,1,1,X,0-0,2023-24_mt1.txt
+16.15,Marsaxlokk FC,Gudja United,2,1,1,1-0,2023-24_mt1.txt
+,Mosta FC,Sirens FC,0,0,X,,2023-24_mt1.txt
+,ija FC,Hibernians FC,0,2,2,0-2,2023-24_mt1.txt
+14.00,Hamrun Spartans,Naxxar Lions FC,4,1,1,2-1,2023-24_mt1.txt
+,ira United,Balzan FC,1,1,X,1-0,2023-24_mt1.txt
+19.00,Valletta FC,Birkirkara FC,0,1,2,0-0,2023-24_mt1.txt
+,Hibernians FC,Floriana FC,0,2,2,0-1,2023-24_mt1.txt
+,Sliema Wanderers,Mosta FC,0,0,X,,2023-24_mt1.txt
+14.00,Gudja United,Hamrun Spartans,0,4,2,0-3,2023-24_mt1.txt
+16.15,Sirens FC,Marsaxlokk FC,1,1,X,0-1,2023-24_mt1.txt
+14.00,Birkirkara FC,Hibernians FC,1,1,X,0-0,2023-24_mt1.txt
+,Mosta FC,Valletta FC,1,0,1,0-0,2023-24_mt1.txt
+16.15,Marsaxlokk FC,Sliema Wanderers,1,2,2,1-1,2023-24_mt1.txt
+,ija FC,Naxxar Lions FC,1,0,1,0-0,2023-24_mt1.txt
+11.00,Hamrun Spartans,Sirens FC,2,0,1,2-0,2023-24_mt1.txt
+14.00,Floriana FC,Balzan FC,2,2,X,2-1,2023-24_mt1.txt
+,ira United,Gudja United,3,0,1,2-0,2023-24_mt1.txt
+14.00,Balzan FC,Hibernians FC,0,0,X,,2023-24_mt1.txt
+16.15,Mosta FC,Birkirkara FC,0,2,2,0-2,2023-24_mt1.txt
+14.00,Valletta FC,Marsaxlokk FC,0,2,2,0-2,2023-24_mt1.txt
+16.15,Sliema Wanderers,Hamrun Spartans,0,0,X,,2023-24_mt1.txt
+16.30,Naxxar Lions FC,Floriana FC,0,3,2,0-2,2023-24_mt1.txt
+14.00,Hamrun Spartans,Valletta FC,1,1,X,1-0,2023-24_mt1.txt
+,Hibernians FC,Naxxar Lions FC,0,2,2,0-0,2023-24_mt1.txt
+16.15,Birkirkara FC,Balzan FC,1,1,X,0-1,2023-24_mt1.txt
+,ija FC,Sirens FC,1,1,X,0-0,2023-24_mt1.txt
+11.00,Marsaxlokk FC,Mosta FC,1,2,2,1-1,2023-24_mt1.txt
+,ira United,Sliema Wanderers,0,2,2,0-0,2023-24_mt1.txt
+16.15,Floriana FC,Gudja United,5,1,1,2-1,2023-24_mt1.txt
+18.15,Naxxar Lions FC,Balzan FC,1,1,X,1-0,2023-24_mt1.txt
+14.00,Marsaxlokk FC,Birkirkara FC,0,0,X,,2023-24_mt1.txt
+16.15,Sirens FC,Floriana FC,0,3,2,0-1,2023-24_mt1.txt
+14.00,Gudja United,Hibernians FC,0,3,2,0-3,2023-24_mt1.txt
+,Mosta FC,Hamrun Spartans,0,4,2,0-3,2023-24_mt1.txt
+18.00,Birkirkara FC,Naxxar Lions FC,0,2,2,0-1,2023-24_mt1.txt
+14.00,Floriana FC,Sliema Wanderers,2,0,1,0-0,2023-24_mt1.txt
+,Hibernians FC,Sirens FC,2,1,1,2-1,2023-24_mt1.txt
+16.15,Hamrun Spartans,Marsaxlokk FC,1,2,2,0-0,2023-24_mt1.txt
+,ija FC,Valletta FC,2,0,1,1-0,2023-24_mt1.txt
+14.00,Balzan FC,Gudja United,2,0,1,1-0,2023-24_mt1.txt
+,ira United,Mosta FC,2,1,1,0-0,2023-24_mt1.txt
+14.00,Sirens FC,Balzan FC,1,4,2,0-1,2023-24_mt1.txt
+,Valletta FC,Floriana FC,0,2,2,0-1,2023-24_mt1.txt
+16.30,Gudja United,Naxxar Lions FC,2,4,2,1-3,2023-24_mt1.txt
+14.00,Hamrun Spartans,Birkirkara FC,2,0,1,1-0,2023-24_mt1.txt
+16.15,Sliema Wanderers,Hibernians FC,0,0,X,,2023-24_mt1.txt
+,ija FC,Marsaxlokk FC,0,3,2,0-0,2023-24_mt1.txt
+14.00,Floriana FC,Mosta FC,4,0,1,3-0,2023-24_mt1.txt
+,ira United,Hamrun Spartans,0,1,2,0-1,2023-24_mt1.txt
+14.00,Balzan FC,Sliema Wanderers,1,1,X,1-0,2023-24_mt1.txt
+,Birkirkara FC,Gudja United,2,0,1,1-0,2023-24_mt1.txt
+16.15,Hibernians FC,Valletta FC,2,2,X,0-1,2023-24_mt1.txt
+,Naxxar Lions FC,Sirens FC,1,2,2,0-0,2023-24_mt1.txt
+,ira United,Birkirkara FC,0,0,X,,2023-24_mt1.txt
+16.15,Sliema Wanderers,Naxxar Lions FC,0,0,X,,2023-24_mt1.txt
+,Marsaxlokk FC,Floriana FC,1,0,1,0-0,2023-24_mt1.txt
+11.00,Sirens FC,Gudja United,2,0,1,1-0,2023-24_mt1.txt
+14.00,Mosta FC,Hibernians FC,3,1,1,1-1,2023-24_mt1.txt
+16.15,Valletta FC,Balzan FC,1,0,1,1-0,2023-24_mt1.txt
+14.00,Gudja United,Sliema Wanderers,0,6,2,0-4,2023-24_mt1.txt
+15.00,Floriana FC,Hamrun Spartans,0,5,2,0-4,2023-24_mt1.txt
+16.15,Hibernians FC,Marsaxlokk FC,0,2,2,0-0,2023-24_mt1.txt
+14.00,Naxxar Lions FC,Valletta FC,4,0,1,3-0,2023-24_mt1.txt
+,Balzan FC,Mosta FC,0,0,X,,2023-24_mt1.txt
+,Birkirkara FC,Sirens FC,2,2,X,1-1,2023-24_mt1.txt
+18.00,Sliema Wanderers,Sirens FC,3,0,1,2-0,2023-24_mt1.txt
+20.30,Valletta FC,Gudja United,5,2,1,3-1,2023-24_mt1.txt
+19.00,Mosta FC,Naxxar Lions FC,2,0,1,1-0,2023-24_mt1.txt
+,ija FC,Birkirkara FC,2,2,X,2-1,2023-24_mt1.txt
+,ira United,Floriana FC,3,1,1,1-1,2023-24_mt1.txt
+,Marsaxlokk FC,Balzan FC,0,1,2,0-1,2023-24_mt1.txt
+14.00,Hamrun Spartans,Hibernians FC,1,1,X,1-1,2023-24_mt1.txt
+14.00,St. Patrick FC,Sliema Wanderers,1,0,1,1-0,2024-25_mt1.txt
+16.15,Melita FC,Hibernians FC,2,3,2,0-1,2024-25_mt1.txt
+13.00,Floriana FC,Naxxar Lions FC,4,0,1,2-0,2024-25_mt1.txt
+15.15,Marsaxlokk FC,Hamrun Spartans,1,6,2,1-2,2024-25_mt1.txt
+19.00,Birkirkara FC,Balzan FC,5,2,1,1-2,2024-25_mt1.txt
+18.00,Balzan FC,Mosta FC,3,2,1,1-1,2024-25_mt1.txt
+20.15,Sliema Wanderers,Naxxar Lions FC,4,0,1,1-0,2024-25_mt1.txt
+14.00,Melita FC,Floriana FC,2,0,1,1-0,2024-25_mt1.txt
+14.00,Hibernians FC,Hamrun Spartans,1,2,2,0-1,2024-25_mt1.txt
+16.15,Marsaxlokk FC,St. Patrick FC,3,1,1,1-1,2024-25_mt1.txt
+14.00,Mosta FC,Sliema Wanderers,0,1,2,0-0,2024-25_mt1.txt
+15.00,Floriana FC,Hamrun Spartans,0,0,X,,2024-25_mt1.txt
+,ira United,Naxxar Lions FC,1,0,1,1-0,2024-25_mt1.txt
+19.00,St. Patrick FC,Balzan FC,3,0,1,0-0,2024-25_mt1.txt
+14.00,Hibernians FC,Marsaxlokk FC,0,1,2,0-1,2024-25_mt1.txt
+16.15,Birkirkara FC,Melita FC,1,1,X,1-1,2024-25_mt1.txt
+18.00,Balzan FC,Marsaxlokk FC,0,3,2,0-1,2024-25_mt1.txt
+20.15,Sliema Wanderers,Hibernians FC,2,3,2,1-2,2024-25_mt1.txt
+15.00,Hamrun Spartans,Birkirkara FC,0,0,X,,2024-25_mt1.txt
+,ira United,Melita FC,2,2,X,0-2,2024-25_mt1.txt
+14.00,Floriana FC,St. Patrick FC,1,0,1,1-0,2024-25_mt1.txt
+16.15,Mosta FC,Naxxar Lions FC,1,0,1,1-0,2024-25_mt1.txt
+14.00,Birkirkara FC,Mosta FC,2,0,1,1-0,2024-25_mt1.txt
+,ira United,Hibernians FC,1,4,2,1-0,2024-25_mt1.txt
+19.00,Melita FC,Sliema Wanderers,2,4,2,0-2,2024-25_mt1.txt
+14.00,St. Patrick FC,Hamrun Spartans,0,1,2,0-1,2024-25_mt1.txt
+16.15,Floriana FC,Marsaxlokk FC,2,1,1,1-0,2024-25_mt1.txt
+15.00,Naxxar Lions FC,Balzan FC,0,3,2,0-1,2024-25_mt1.txt
+20.30,Mosta FC,Marsaxlokk FC,2,1,1,0-1,2024-25_mt1.txt
+14.00,Naxxar Lions FC,Birkirkara FC,2,1,1,1-1,2024-25_mt1.txt
+16.15,Hibernians FC,St. Patrick FC,0,4,2,0-1,2024-25_mt1.txt
+14.00,Balzan FC,Floriana FC,0,0,X,,2024-25_mt1.txt
+16.15,Melita FC,Hamrun Spartans,2,0,1,1-0,2024-25_mt1.txt
+,ira United,Marsaxlokk FC,0,1,2,0-0,2024-25_mt1.txt
+13.45,Sliema Wanderers,Floriana FC,1,2,2,0-1,2024-25_mt1.txt
+16.00,Hamrun Spartans,Balzan FC,1,0,1,0-0,2024-25_mt1.txt
+13.45,Hibernians FC,Mosta FC,2,0,1,1-0,2024-25_mt1.txt
+16.00,St. Patrick FC,Birkirkara FC,0,3,2,0-1,2024-25_mt1.txt
+18.00,Melita FC,Naxxar Lions FC,2,5,2,2-1,2024-25_mt1.txt
+13.45,Sliema Wanderers,Marsaxlokk FC,0,1,2,0-0,2024-25_mt1.txt
+16.00,Birkirkara FC,Hibernians FC,2,0,1,1-0,2024-25_mt1.txt
+16.30,Naxxar Lions FC,St. Patrick FC,1,1,X,1-0,2024-25_mt1.txt
+19.00,Balzan FC,Melita FC,1,1,X,0-1,2024-25_mt1.txt
+13.45,Floriana FC,Mosta FC,2,2,X,0-1,2024-25_mt1.txt
+13.45,Balzan FC,Sliema Wanderers,2,3,2,0-2,2024-25_mt1.txt
+,Birkirkara FC,Marsaxlokk FC,1,1,X,1-1,2024-25_mt1.txt
+,ira United,Floriana FC,0,3,2,0-2,2024-25_mt1.txt
+,Melita FC,St. Patrick FC,1,1,X,1-1,2024-25_mt1.txt
+13.45,Hibernians FC,Naxxar Lions FC,3,2,1,3-2,2024-25_mt1.txt
+16.00,Hamrun Spartans,Mosta FC,1,2,2,0-1,2024-25_mt1.txt
+19.00,Floriana FC,Birkirkara FC,0,2,2,0-2,2024-25_mt1.txt
+18.00,Naxxar Lions FC,Marsaxlokk FC,1,0,1,1-0,2024-25_mt1.txt
+18.30,Hamrun Spartans,Sliema Wanderers,0,1,2,0-1,2024-25_mt1.txt
+,Mosta FC,Melita FC,2,0,1,0-0,2024-25_mt1.txt
+20.45,Hibernians FC,Balzan FC,0,0,X,,2024-25_mt1.txt
+,ira United,Balzan FC,0,0,X,,2024-25_mt1.txt
+14.00,Floriana FC,Hibernians FC,1,1,X,1-0,2024-25_mt1.txt
+17.00,St. Patrick FC,Mosta FC,1,2,2,0-0,2024-25_mt1.txt
+14.00,Sliema Wanderers,Birkirkara FC,2,1,1,1-0,2024-25_mt1.txt
+17.00,Melita FC,Marsaxlokk FC,0,5,2,0-1,2024-25_mt1.txt
+15.00,Hamrun Spartans,Naxxar Lions FC,4,0,1,3-0,2024-25_mt1.txt
+,ira United,Balzan FC,0,0,X,,2024-25_mt1.txt
+13.45,St. Patrick FC,Naxxar Lions FC,2,0,1,1-0,2024-25_mt1.txt
+16.00,Hibernians FC,Melita FC,3,0,1,2-0,2024-25_mt1.txt
+18.00,Hibernians FC,Naxxar Lions FC,0,1,2,0-1,2024-25_mt1.txt
+16.00,Balzan FC,Melita FC,3,1,1,0-0,2024-25_mt1.txt
+,St. Patrick FC,Balzan FC,2,2,X,1-0,2024-25_mt1.txt
+19.00,Naxxar Lions FC,Melita FC,2,0,1,1-0,2024-25_mt1.txt
+17.30,Hibernians FC,Balzan FC,1,1,X,1-0,2024-25_mt1.txt
+18.00,St. Patrick FC,Melita FC,2,0,1,1-0,2024-25_mt1.txt
+,ira United,Naxxar Lions FC,0,2,2,0-1,2024-25_mt1.txt
+13.00,St. Patrick FC,Hibernians FC,2,2,X,2-0,2024-25_mt1.txt
+17.00,Balzan FC,Naxxar Lions FC,1,1,X,0-0,2024-25_mt1.txt
+,ira United,Melita FC,2,2,X,1-2,2024-25_mt1.txt
+20.15,Mosta FC,Marsaxlokk FC,0,4,2,0-2,2024-25_mt1.txt
+16.00,Birkirkara FC,Hamrun Spartans,0,1,2,0-0,2024-25_mt1.txt
+13.45,Floriana FC,Sliema Wanderers,0,2,2,0-0,2024-25_mt1.txt
+13.45,Floriana FC,Marsaxlokk FC,2,1,1,0-0,2024-25_mt1.txt
+16.00,Mosta FC,Hamrun Spartans,0,2,2,0-2,2024-25_mt1.txt
+13.45,Birkirkara FC,Sliema Wanderers,0,1,2,0-1,2024-25_mt1.txt
+13.45,Marsaxlokk FC,Sliema Wanderers,2,1,1,0-1,2024-25_mt1.txt
+,Birkirkara FC,Mosta FC,1,0,1,1-0,2024-25_mt1.txt
+19.00,Floriana FC,Hamrun Spartans,0,0,X,,2024-25_mt1.txt
+14.30,Sliema Wanderers,Hamrun Spartans,1,1,X,0-0,2024-25_mt1.txt
+15.15,Birkirkara FC,Marsaxlokk FC,1,1,X,1-0,2024-25_mt1.txt
+17.45,Floriana FC,Mosta FC,3,0,1,1-0,2024-25_mt1.txt
+18.30,Birkirkara FC,Floriana FC,1,1,X,1-1,2024-25_mt1.txt
+,Mosta FC,Sliema Wanderers,1,4,2,0-2,2024-25_mt1.txt
+,Marsaxlokk FC,Hamrun Spartans,0,1,2,0-1,2024-25_mt1.txt
+18.00,Balzan FC,Birkirkara FC,3,3,X,2-2,2024-25_mt1.txt
+20.15,Sliema Wanderers,Mosta FC,2,0,1,0-0,2024-25_mt1.txt
+18.00,Floriana FC,Melita FC,3,3,X,1-2,2024-25_mt1.txt
+20.15,Naxxar Lions FC,Hibernians FC,1,2,2,1-1,2024-25_mt1.txt
+18.00,Hamrun Spartans,St. Patrick FC,3,1,1,1-0,2024-25_mt1.txt
+18.00,Naxxar Lions FC,Mosta FC,2,1,1,1-0,2024-25_mt1.txt
+20.15,Birkirkara FC,St. Patrick FC,1,0,1,1-0,2024-25_mt1.txt
+18.00,Hamrun Spartans,Floriana FC,1,1,X,1-1,2024-25_mt1.txt
+20.15,Marsaxlokk FC,Melita FC,1,2,2,0-1,2024-25_mt1.txt
+20.15,Sliema Wanderers,Balzan FC,2,0,1,1-0,2024-25_mt1.txt
+18.00,St. Patrick FC,Floriana FC,0,3,2,0-3,2024-25_mt1.txt
+20.30,Hamrun Spartans,Melita FC,2,1,1,1-1,2024-25_mt1.txt
+18.00,Marsaxlokk FC,Birkirkara FC,0,2,2,0-1,2024-25_mt1.txt
+,Balzan FC,Naxxar Lions FC,2,0,1,2-0,2024-25_mt1.txt
+,ira United,Mosta FC,2,0,1,1-0,2024-25_mt1.txt
+20.30,Hibernians FC,Sliema Wanderers,0,0,X,,2024-25_mt1.txt
+18.00,Hibernians FC,Birkirkara FC,0,2,2,0-0,2024-25_mt1.txt
+18.00,Marsaxlokk FC,Sliema Wanderers,0,1,2,0-1,2024-25_mt1.txt
+20.15,Mosta FC,Hamrun Spartans,1,0,1,0-0,2024-25_mt1.txt
+18.00,Naxxar Lions FC,Floriana FC,0,2,2,0-0,2024-25_mt1.txt
+20.30,Balzan FC,St. Patrick FC,0,2,2,0-1,2024-25_mt1.txt
+,ira United,Sliema Wanderers,2,2,X,0-1,2024-25_mt1.txt
+20.30,Balzan FC,Hamrun Spartans,1,1,X,0-1,2024-25_mt1.txt
+18.00,Floriana FC,Hibernians FC,1,1,X,0-0,2024-25_mt1.txt
+20.30,St. Patrick FC,Naxxar Lions FC,3,3,X,1-1,2024-25_mt1.txt
+18.00,Melita FC,Birkirkara FC,0,3,2,0-1,2024-25_mt1.txt
+20.15,Marsaxlokk FC,Mosta FC,2,4,2,2-1,2024-25_mt1.txt
+20.30,Naxxar Lions FC,Hamrun Spartans,0,6,2,0-4,2024-25_mt1.txt
+18.00,St. Patrick FC,Hibernians FC,1,2,2,1-0,2024-25_mt1.txt
+20.15,Marsaxlokk FC,Balzan FC,2,1,1,1-1,2024-25_mt1.txt
+18.00,Mosta FC,Birkirkara FC,0,1,2,0-0,2024-25_mt1.txt
+20.30,Sliema Wanderers,Melita FC,2,2,X,1-0,2024-25_mt1.txt
+18.00,Hamrun Spartans,Hibernians FC,0,2,2,0-1,2024-25_mt1.txt
+20.30,St. Patrick FC,Marsaxlokk FC,1,3,2,1-2,2024-25_mt1.txt
+18.00,Mosta FC,Floriana FC,0,2,2,0-0,2024-25_mt1.txt
+,Naxxar Lions FC,Melita FC,0,0,X,,2024-25_mt1.txt
+20.30,Birkirkara FC,Sliema Wanderers,1,0,1,0-0,2024-25_mt1.txt
+13.30,Mosta FC,Hibernians FC,1,0,1,1-0,2024-25_mt1.txt
+18.00,Birkirkara FC,Hamrun Spartans,3,2,1,2-1,2024-25_mt1.txt
+15.00,Sliema Wanderers,St. Patrick FC,2,0,1,2-0,2024-25_mt1.txt
+18.30,Melita FC,Balzan FC,2,0,1,1-0,2024-25_mt1.txt
+19.00,Marsaxlokk FC,Floriana FC,1,1,X,1-0,2024-25_mt1.txt
+18.00,Hibernians FC,Melita FC,2,0,1,2-0,2024-25_mt1.txt
+20.30,Sliema Wanderers,Hamrun Spartans,1,0,1,1-0,2024-25_mt1.txt
+15.00,Floriana FC,Balzan FC,3,0,1,1-0,2024-25_mt1.txt
+,ira United,Birkirkara FC,0,1,2,0-1,2024-25_mt1.txt
+16.00,Naxxar Lions FC,Marsaxlokk FC,0,0,X,,2024-25_mt1.txt
+18.30,Mosta FC,St. Patrick FC,4,2,1,1-1,2024-25_mt1.txt
+18.00,Floriana FC,Sliema Wanderers,0,0,X,,2024-25_mt1.txt
+20.30,Balzan FC,Hibernians FC,0,1,2,0-0,2024-25_mt1.txt
+15.00,Hamrun Spartans,Marsaxlokk FC,2,3,2,0-1,2024-25_mt1.txt
+,ira United,St. Patrick FC,3,1,1,1-1,2024-25_mt1.txt
+19.00,Birkirkara FC,Naxxar Lions FC,1,0,1,0-0,2024-25_mt1.txt
+,Melita FC,Mosta FC,1,2,2,1-2,2024-25_mt1.txt
+18.00,St. Patrick FC,Melita FC,1,3,2,1-1,2024-25_mt1.txt
+20.30,Mosta FC,Balzan FC,2,2,X,0-0,2024-25_mt1.txt
+18.00,Marsaxlokk FC,Hibernians FC,1,1,X,1-0,2024-25_mt1.txt
+,ira United,Hamrun Spartans,1,2,2,0-0,2024-25_mt1.txt
+20.30,Birkirkara FC,Floriana FC,1,3,2,1-1,2024-25_mt1.txt
+,Naxxar Lions FC,Sliema Wanderers,0,3,2,0-1,2024-25_mt1.txt
+,ira United,St. Patrick FC,2,1,1,1-0,2024-25_mt1.txt
+16.00,Marsaxlokk FC,Balzan FC,2,1,1,1-1,2024-25_mt1.txt
+19.00,Melita FC,Naxxar Lions FC,0,3,2,0-1,2024-25_mt1.txt
+,ira United,Naxxar Lions FC,1,1,X,0-0,2024-25_mt1.txt
+13.30,Melita FC,Marsaxlokk FC,1,3,2,0-1,2024-25_mt1.txt
+16.00,Balzan FC,St. Patrick FC,1,2,2,1-0,2024-25_mt1.txt
+,ira United,Marsaxlokk FC,0,0,X,,2024-25_mt1.txt
+16.00,Naxxar Lions FC,St. Patrick FC,0,3,2,0-1,2024-25_mt1.txt
+18.30,Melita FC,Balzan FC,1,0,1,1-0,2024-25_mt1.txt
+17.00,Melita FC,St. Patrick FC,0,1,2,0-0,2024-25_mt1.txt
+13.30,Marsaxlokk FC,Naxxar Lions FC,1,1,X,0-0,2024-25_mt1.txt
+,ira United,Balzan FC,2,1,1,0-0,2024-25_mt1.txt
+,ira United,Melita FC,0,2,2,0-1,2024-25_mt1.txt
+,Marsaxlokk FC,St. Patrick FC,2,2,X,1-0,2024-25_mt1.txt
+,Balzan FC,Naxxar Lions FC,2,1,1,0-1,2024-25_mt1.txt
+13.30,Floriana FC,Mosta FC,1,0,1,0-0,2024-25_mt1.txt
+14.15,Birkirkara FC,Hamrun Spartans,0,2,2,0-1,2024-25_mt1.txt
+17.00,Sliema Wanderers,Hibernians FC,3,1,1,2-0,2024-25_mt1.txt
+18.00,Birkirkara FC,Mosta FC,2,0,1,0-0,2024-25_mt1.txt
+20.30,Sliema Wanderers,Hamrun Spartans,1,1,X,0-0,2024-25_mt1.txt
+14.15,Floriana FC,Hibernians FC,2,0,1,1-0,2024-25_mt1.txt
+14.15,Birkirkara FC,Sliema Wanderers,1,1,X,0-1,2024-25_mt1.txt
+17.00,Hibernians FC,Mosta FC,3,2,1,2-0,2024-25_mt1.txt
+15.00,Floriana FC,Hamrun Spartans,1,2,2,0-2,2024-25_mt1.txt
+14.15,Birkirkara FC,Hibernians FC,0,2,2,0-1,2024-25_mt1.txt
+18.00,Hamrun Spartans,Mosta FC,1,2,2,1-1,2024-25_mt1.txt
+19.00,Floriana FC,Sliema Wanderers,1,0,1,1-0,2024-25_mt1.txt
+14.00,Birkirkara FC,Floriana FC,0,1,2,0-0,2024-25_mt1.txt
+16.00,Sliema Wanderers,Mosta FC,3,1,1,1-1,2024-25_mt1.txt
+,Hibernians FC,Hamrun Spartans,0,3,2,0-1,2024-25_mt1.txt
+18.00,Sliema Wanderers,Birkirkara FC,0,1,2,,2024-25_mt1.txt
+19.15,Floriana FC,Hamrun Spartans,2,4,2,,2024-25_mt1.txt
+20.30,Sliema Wanderers,Floriana FC,0,4,2,0-1,2024-25_mt1.txt
+18.00,Hamrun Spartans,Birkirkara FC,1,0,1,0-0,2024-25_mt1.txt
+18.15,Melita FC,Naxxar Lions FC,0,1,2,,2024-25_mt1.txt

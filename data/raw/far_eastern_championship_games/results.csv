@@ -1,0 +1,31 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Philippines,China PR,2,1,1,Manila,Philippines,1913_far_eastern_championship_games.txt
+China PR,Philippines,0,0,X,Shanghai,China PR,1915_far_eastern_championship_games.txt
+China PR,Philippines,1,0,1,Shanghai,China PR,1915_far_eastern_championship_games.txt
+Japan,China PR,0,5,2,Tokyo,Japan,1917_far_eastern_championship_games.txt
+Japan,Philippines,2,15,2,Tokyo,Japan,1917_far_eastern_championship_games.txt
+China PR,Philippines,3,0,1,Tokyo,Japan,1917_far_eastern_championship_games.txt
+China PR,Philippines,2,0,1,Manila,China PR,1919_far_eastern_championship_games.txt
+China PR,Philippines,1,2,2,Manila,China PR,1919_far_eastern_championship_games.txt
+China PR,Philippines,2,1,1,Manila,China PR,1919_far_eastern_championship_games.txt
+Philippines,Japan,3,1,1,Shanghai,China PR,1921_far_eastern_championship_games.txt
+China PR,Philippines,1,0,1,Shanghai,China PR,1921_far_eastern_championship_games.txt
+China PR,Japan,4,0,1,Shanghai,China PR,1921_far_eastern_championship_games.txt
+China PR,Philippines,3,0,1,Osaka,Japan,1923_far_eastern_championship_games.txt
+Japan,Philippines,1,2,2,Osaka,Japan,1923_far_eastern_championship_games.txt
+Japan,China PR,1,5,2,Osaka,Japan,1923_far_eastern_championship_games.txt
+Philippines,Japan,4,0,1,Manila,Philippines,1925_far_eastern_championship_games.txt
+Japan,China PR,0,2,2,Manila,Philippines,1925_far_eastern_championship_games.txt
+Philippines,China PR,1,5,2,Manila,Philippines,1925_far_eastern_championship_games.txt
+China PR,Japan,5,1,1,Shanghai,China PR,1927_far_eastern_championship_games.txt
+Japan,Philippines,2,1,1,Shanghai,China PR,1927_far_eastern_championship_games.txt
+China PR,Philippines,3,1,1,Shanghai,China PR,1927_far_eastern_championship_games.txt
+Japan,Philippines,7,2,1,Tokyo,Japan,1930_far_eastern_championship_games.txt
+China PR,Philippines,5,0,1,Tokyo,Japan,1930_far_eastern_championship_games.txt
+Japan,China PR,3,3,X,Tokyo,Japan,1930_far_eastern_championship_games.txt
+Philippines,China PR,0,2,2,Manila,Philippines,1934_far_eastern_championship_games.txt
+Japan,Indonesia,1,7,2,Manila,Philippines,1934_far_eastern_championship_games.txt
+China PR,Indonesia,2,0,1,Manila,Philippines,1934_far_eastern_championship_games.txt
+Philippines,Japan,3,4,2,Manila,Philippines,1934_far_eastern_championship_games.txt
+Philippines,Indonesia,3,2,1,Manila,Philippines,1934_far_eastern_championship_games.txt
+China PR,Japan,4,3,1,Manila,Philippines,1934_far_eastern_championship_games.txt

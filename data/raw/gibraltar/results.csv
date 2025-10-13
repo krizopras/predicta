@@ -1,0 +1,251 @@
+time,home_team,away_team,home_score,away_score,result,ht_score,source_file
+16.30,Europa Point FC,Manchester 62 FC,1,5,2,0-3,2023-24_gi1.txt
+19.30,St. Joseph's FC,Europa FC,3,0,1,0-0,2023-24_gi1.txt
+16.30,Lynx FC,Lions Gibraltar,4,1,1,2-0,2023-24_gi1.txt
+19.30,Glacis United FC,Mons Calpe S.C.,2,1,1,2-0,2023-24_gi1.txt
+21.00,FCB Magpies,Lincoln Red Imps,0,0,X,,2023-24_gi1.txt
+21.00,Europa FC,College 1975 FC,0,3,2,0-1,2023-24_gi1.txt
+16.30,Lions Gibraltar,St. Joseph's FC,1,5,2,1-3,2023-24_gi1.txt
+19.30,Manchester 62 FC,Glacis United FC,5,0,1,3-0,2023-24_gi1.txt
+16.30,Lincoln Red Imps,Lynx FC,3,2,1,3-0,2023-24_gi1.txt
+19.30,Mons Calpe S.C.,FCB Magpies,2,4,2,1-1,2023-24_gi1.txt
+21.00,College 1975 FC,Lions Gibraltar,2,1,1,2-1,2023-24_gi1.txt
+21.00,St. Joseph's FC,Lincoln Red Imps,1,0,1,0-0,2023-24_gi1.txt
+21.00,Glacis United FC,Europa Point FC,3,1,1,2-1,2023-24_gi1.txt
+16.30,Lynx FC,Mons Calpe S.C.,2,1,1,1-1,2023-24_gi1.txt
+19.30,FCB Magpies,Manchester 62 FC,2,0,1,1-0,2023-24_gi1.txt
+21.00,College 1975 FC,St. Joseph's FC,0,3,2,0-1,2023-24_gi1.txt
+21.00,Lincoln Red Imps,Glacis United FC,3,1,1,1-0,2023-24_gi1.txt
+21.00,Lions Gibraltar,FCB Magpies,0,2,2,0-1,2023-24_gi1.txt
+21.00,Europa FC,Lynx FC,1,3,2,0-1,2023-24_gi1.txt
+19.30,Mons Calpe S.C.,Europa Point FC,3,1,1,1-1,2023-24_gi1.txt
+21.00,Manchester 62 FC,Mons Calpe S.C.,1,2,2,1-2,2023-24_gi1.txt
+16.30,FCB Magpies,Europa FC,3,1,1,1-1,2023-24_gi1.txt
+19.30,Europa Point FC,Lincoln Red Imps,1,2,2,1-1,2023-24_gi1.txt
+16.30,Glacis United FC,Lions Gibraltar,3,1,1,0-1,2023-24_gi1.txt
+19.30,Lynx FC,College 1975 FC,2,3,2,1-1,2023-24_gi1.txt
+21.00,St. Joseph's FC,Lynx FC,2,0,1,1-0,2023-24_gi1.txt
+16.30,Europa FC,Glacis United FC,3,2,1,0-1,2023-24_gi1.txt
+19.30,Lions Gibraltar,Europa Point FC,1,3,2,0-1,2023-24_gi1.txt
+16.30,College 1975 FC,FCB Magpies,2,6,2,0-2,2023-24_gi1.txt
+19.30,Lincoln Red Imps,Manchester 62 FC,5,0,1,1-0,2023-24_gi1.txt
+21.00,FCB Magpies,St. Joseph's FC,2,4,2,2-2,2023-24_gi1.txt
+16.30,Glacis United FC,College 1975 FC,1,0,1,1-0,2023-24_gi1.txt
+19.30,Mons Calpe S.C.,Lincoln Red Imps,0,2,2,0-0,2023-24_gi1.txt
+16.30,Manchester 62 FC,Lions Gibraltar,7,0,1,5-0,2023-24_gi1.txt
+19.30,Europa Point FC,Europa FC,1,0,1,1-0,2023-24_gi1.txt
+21.00,Lions Gibraltar,Mons Calpe S.C.,0,0,X,,2023-24_gi1.txt
+16.30,College 1975 FC,Europa Point FC,0,5,2,0-2,2023-24_gi1.txt
+19.30,St. Joseph's FC,Glacis United FC,4,0,1,1-0,2023-24_gi1.txt
+16.30,Lynx FC,FCB Magpies,1,0,1,1-0,2023-24_gi1.txt
+19.30,Europa FC,Manchester 62 FC,0,1,2,0-0,2023-24_gi1.txt
+21.00,Lincoln Red Imps,Lions Gibraltar,2,0,1,1-0,2023-24_gi1.txt
+16.30,Mons Calpe S.C.,Europa FC,1,0,1,0-0,2023-24_gi1.txt
+19.30,Glacis United FC,Lynx FC,2,0,1,1-0,2023-24_gi1.txt
+16.30,Manchester 62 FC,College 1975 FC,4,1,1,1-1,2023-24_gi1.txt
+19.30,Europa Point FC,St. Joseph's FC,1,0,1,0-0,2023-24_gi1.txt
+21.00,FCB Magpies,Glacis United FC,3,0,1,3-0,2023-24_gi1.txt
+16.30,College 1975 FC,Mons Calpe S.C.,1,3,2,0-2,2023-24_gi1.txt
+19.30,Europa FC,Lincoln Red Imps,1,4,2,1-3,2023-24_gi1.txt
+16.30,St. Joseph's FC,Manchester 62 FC,4,0,1,0-0,2023-24_gi1.txt
+19.30,Lynx FC,Europa Point FC,1,1,X,1-0,2023-24_gi1.txt
+21.00,Manchester 62 FC,Lynx FC,5,1,1,2-1,2023-24_gi1.txt
+16.30,Europa Point FC,FCB Magpies,0,1,2,0-1,2023-24_gi1.txt
+19.30,Lions Gibraltar,Europa FC,0,5,2,0-1,2023-24_gi1.txt
+19.30,Lincoln Red Imps,College 1975 FC,7,0,1,4-0,2023-24_gi1.txt
+21.00,Mons Calpe S.C.,St. Joseph's FC,1,1,X,1-1,2023-24_gi1.txt
+21.00,Manchester 62 FC,FCB Magpies,1,5,2,0-3,2023-24_gi1.txt
+21.00,Lincoln Red Imps,St. Joseph's FC,1,2,2,1-1,2023-24_gi1.txt
+21.00,Europa Point FC,Glacis United FC,2,0,1,1-0,2023-24_gi1.txt
+21.00,Lions Gibraltar,College 1975 FC,1,1,X,1-0,2023-24_gi1.txt
+21.00,Mons Calpe S.C.,Lynx FC,1,1,X,0-0,2023-24_gi1.txt
+21.00,College 1975 FC,Europa FC,2,3,2,2-1,2023-24_gi1.txt
+16.30,Glacis United FC,Manchester 62 FC,0,1,2,0-0,2023-24_gi1.txt
+19.30,St. Joseph's FC,Lions Gibraltar,3,2,1,2-1,2023-24_gi1.txt
+16.30,FCB Magpies,Mons Calpe S.C.,3,1,1,1-1,2023-24_gi1.txt
+19.30,Lynx FC,Lincoln Red Imps,0,3,2,0-3,2023-24_gi1.txt
+21.00,Manchester 62 FC,Europa Point FC,0,2,2,0-1,2023-24_gi1.txt
+16.30,Mons Calpe S.C.,Glacis United FC,5,1,1,3-1,2023-24_gi1.txt
+19.30,Europa FC,St. Joseph's FC,0,1,2,0-0,2023-24_gi1.txt
+16.30,Lions Gibraltar,Lynx FC,0,4,2,0-2,2023-24_gi1.txt
+19.30,Lincoln Red Imps,FCB Magpies,3,0,1,1-0,2023-24_gi1.txt
+21.00,St. Joseph's FC,College 1975 FC,4,1,1,3-0,2023-24_gi1.txt
+16.30,Lynx FC,Europa FC,0,0,X,,2023-24_gi1.txt
+19.30,Europa Point FC,Mons Calpe S.C.,1,1,X,0-1,2023-24_gi1.txt
+16.30,Glacis United FC,Lincoln Red Imps,2,8,2,0-5,2023-24_gi1.txt
+19.30,FCB Magpies,Lions Gibraltar,3,1,1,2-0,2023-24_gi1.txt
+21.00,Mons Calpe S.C.,Manchester 62 FC,2,0,1,1-0,2023-24_gi1.txt
+16.30,College 1975 FC,Lynx FC,0,2,2,0-1,2023-24_gi1.txt
+19.30,Lincoln Red Imps,Europa Point FC,1,0,1,0-0,2023-24_gi1.txt
+16.30,Europa FC,FCB Magpies,4,3,1,1-1,2023-24_gi1.txt
+19.30,Lions Gibraltar,Glacis United FC,1,0,1,0-0,2023-24_gi1.txt
+21.00,Lynx FC,St. Joseph's FC,1,2,2,0-2,2023-24_gi1.txt
+16.30,Manchester 62 FC,Lincoln Red Imps,0,7,2,0-4,2023-24_gi1.txt
+19.30,FCB Magpies,College 1975 FC,7,2,1,5-1,2023-24_gi1.txt
+16.30,Europa Point FC,Lions Gibraltar,0,0,X,,2023-24_gi1.txt
+19.30,Glacis United FC,Europa FC,0,1,2,0-0,2023-24_gi1.txt
+21.00,Lincoln Red Imps,Mons Calpe S.C.,2,1,1,1-0,2023-24_gi1.txt
+16.30,St. Joseph's FC,FCB Magpies,2,2,X,1-0,2023-24_gi1.txt
+19.30,Lions Gibraltar,Manchester 62 FC,2,1,1,0-0,2023-24_gi1.txt
+16.30,College 1975 FC,Glacis United FC,1,1,X,0-1,2023-24_gi1.txt
+19.30,Europa FC,Europa Point FC,0,1,2,0-0,2023-24_gi1.txt
+21.00,FCB Magpies,Lynx FC,2,1,1,1-0,2023-24_gi1.txt
+16.30,Mons Calpe S.C.,Lions Gibraltar,2,2,X,0-0,2023-24_gi1.txt
+19.30,Glacis United FC,St. Joseph's FC,1,3,2,0-1,2023-24_gi1.txt
+16.30,Manchester 62 FC,Europa FC,1,1,X,1-0,2023-24_gi1.txt
+19.30,Europa Point FC,College 1975 FC,4,0,1,2-0,2023-24_gi1.txt
+21.00,Lions Gibraltar,Lincoln Red Imps,0,2,2,0-1,2023-24_gi1.txt
+16.30,St. Joseph's FC,Europa Point FC,1,0,1,1-0,2023-24_gi1.txt
+19.30,Europa FC,Mons Calpe S.C.,3,1,1,2-1,2023-24_gi1.txt
+16.30,Lynx FC,Glacis United FC,2,1,1,0-0,2023-24_gi1.txt
+19.30,College 1975 FC,Manchester 62 FC,2,4,2,2-2,2023-24_gi1.txt
+16.30,Mons Calpe S.C.,College 1975 FC,1,0,1,0-0,2023-24_gi1.txt
+19.30,Glacis United FC,FCB Magpies,1,2,2,0-1,2023-24_gi1.txt
+16.30,Europa Point FC,Lynx FC,0,1,2,0-0,2023-24_gi1.txt
+19.30,Lincoln Red Imps,Europa FC,2,1,1,0-1,2023-24_gi1.txt
+21.00,Manchester 62 FC,St. Joseph's FC,0,3,2,0-2,2023-24_gi1.txt
+21.00,FCB Magpies,Europa Point FC,2,2,X,1-1,2023-24_gi1.txt
+16.30,Europa FC,Lions Gibraltar,1,2,2,1-1,2023-24_gi1.txt
+19.30,College 1975 FC,Lincoln Red Imps,0,6,2,0-3,2023-24_gi1.txt
+16.30,St. Joseph's FC,Mons Calpe S.C.,1,2,2,1-1,2023-24_gi1.txt
+19.30,Lynx FC,Manchester 62 FC,1,3,2,1-3,2023-24_gi1.txt
+21.00,Europa Point FC,FCB Magpies,0,0,X,,2023-24_gi1.txt
+19.30,Mons Calpe S.C.,St. Joseph's FC,0,2,2,0-2,2023-24_gi1.txt
+19.30,Manchester 62 FC,Lincoln Red Imps,1,10,2,0-4,2023-24_gi1.txt
+21.00,Mons Calpe S.C.,Manchester 62 FC,2,2,X,1-2,2023-24_gi1.txt
+19.30,Lincoln Red Imps,Europa Point FC,4,0,1,1-0,2023-24_gi1.txt
+19.30,St. Joseph's FC,FCB Magpies,2,0,1,1-0,2023-24_gi1.txt
+21.00,Europa Point FC,St. Joseph's FC,0,3,2,0-3,2023-24_gi1.txt
+21.00,Lincoln Red Imps,Mons Calpe S.C.,5,1,1,3-0,2023-24_gi1.txt
+21.00,FCB Magpies,Manchester 62 FC,3,1,1,3-0,2023-24_gi1.txt
+21.00,Manchester 62 FC,St. Joseph's FC,0,5,2,0-1,2023-24_gi1.txt
+19.30,Mons Calpe S.C.,Europa Point FC,1,2,2,0-0,2023-24_gi1.txt
+19.30,FCB Magpies,Lincoln Red Imps,0,3,2,0-2,2023-24_gi1.txt
+21.00,St. Joseph's FC,Lincoln Red Imps,1,1,X,1-0,2023-24_gi1.txt
+19.30,Manchester 62 FC,Europa Point FC,1,3,2,1-2,2023-24_gi1.txt
+19.30,Mons Calpe S.C.,FCB Magpies,2,0,1,0-0,2023-24_gi1.txt
+21.00,Europa FC,College 1975 FC,0,0,X,,2024-25_gi1.txt
+16.30,FCB Magpies,Europa Point FC,3,2,1,0-0,2024-25_gi1.txt
+19.30,Lynx FC,Glacis United FC,3,1,1,1-1,2024-25_gi1.txt
+16.30,Lincoln Red Imps,Mons Calpe S.C.,3,0,1,2-0,2024-25_gi1.txt
+19.30,St. Joseph's FC,Lions Gibraltar,2,1,1,1-0,2024-25_gi1.txt
+21.00,Manchester 62 FC,FCB Magpies,2,1,1,2-0,2024-25_gi1.txt
+18.00,College 1975 FC,St. Joseph's FC,0,4,2,0-2,2024-25_gi1.txt
+18.00,Glacis United FC,Europa FC,1,2,2,0-1,2024-25_gi1.txt
+21.00,Mons Calpe S.C.,Lynx FC,1,0,1,1-0,2024-25_gi1.txt
+21.00,Europa Point FC,Lincoln Red Imps,0,5,2,0-2,2024-25_gi1.txt
+18.00,St. Joseph's FC,Glacis United FC,1,0,1,1-0,2024-25_gi1.txt
+21.00,Lions Gibraltar,College 1975 FC,1,0,1,0-0,2024-25_gi1.txt
+18.00,Lynx FC,Europa Point FC,2,2,X,1-0,2024-25_gi1.txt
+21.00,Europa FC,Mons Calpe S.C.,3,2,1,2-1,2024-25_gi1.txt
+21.00,Lincoln Red Imps,Manchester 62 FC,3,0,1,2-0,2024-25_gi1.txt
+21.00,Glacis United FC,Lions Gibraltar,1,1,X,0-1,2024-25_gi1.txt
+16.30,FCB Magpies,Lincoln Red Imps,1,4,2,1-2,2024-25_gi1.txt
+19.30,Manchester 62 FC,Lynx FC,4,2,1,2-1,2024-25_gi1.txt
+16.30,Mons Calpe S.C.,St. Joseph's FC,1,3,2,1-2,2024-25_gi1.txt
+19.30,Europa Point FC,Europa FC,1,5,2,1-2,2024-25_gi1.txt
+21.00,College 1975 FC,Glacis United FC,0,2,2,0-1,2024-25_gi1.txt
+16.30,Lynx FC,FCB Magpies,0,3,2,0-1,2024-25_gi1.txt
+19.30,Lions Gibraltar,Mons Calpe S.C.,4,2,1,2-0,2024-25_gi1.txt
+16.30,Europa FC,Manchester 62 FC,2,1,1,2-1,2024-25_gi1.txt
+19.30,St. Joseph's FC,Europa Point FC,4,0,1,1-0,2024-25_gi1.txt
+21.00,Lincoln Red Imps,Lynx FC,3,0,1,2-0,2024-25_gi1.txt
+18.00,Mons Calpe S.C.,College 1975 FC,3,0,1,2-0,2024-25_gi1.txt
+21.00,FCB Magpies,Europa FC,0,0,X,,2024-25_gi1.txt
+16.30,Europa Point FC,Lions Gibraltar,1,4,2,1-2,2024-25_gi1.txt
+19.30,Manchester 62 FC,St. Joseph's FC,1,1,X,0-1,2024-25_gi1.txt
+21.00,St. Joseph's FC,FCB Magpies,2,1,1,1-1,2024-25_gi1.txt
+16.30,Europa FC,Lincoln Red Imps,0,0,X,,2024-25_gi1.txt
+19.30,College 1975 FC,Europa Point FC,0,0,X,,2024-25_gi1.txt
+16.30,Glacis United FC,Mons Calpe S.C.,2,0,1,1-0,2024-25_gi1.txt
+19.30,Lions Gibraltar,Manchester 62 FC,2,2,X,2-0,2024-25_gi1.txt
+21.00,Manchester 62 FC,College 1975 FC,1,2,2,1-1,2024-25_gi1.txt
+18.00,Lynx FC,Europa FC,1,3,2,0-0,2024-25_gi1.txt
+21.00,Europa Point FC,Glacis United FC,0,4,2,0-2,2024-25_gi1.txt
+18.00,FCB Magpies,Lions Gibraltar,2,1,1,1-1,2024-25_gi1.txt
+21.00,Lincoln Red Imps,St. Joseph's FC,0,0,X,,2024-25_gi1.txt
+21.00,Mons Calpe S.C.,Europa Point FC,2,1,1,2-0,2024-25_gi1.txt
+16.30,College 1975 FC,FCB Magpies,0,5,2,0-2,2024-25_gi1.txt
+19.30,Glacis United FC,Manchester 62 FC,0,2,2,0-0,2024-25_gi1.txt
+16.30,Lions Gibraltar,Lincoln Red Imps,0,2,2,0-1,2024-25_gi1.txt
+19.30,St. Joseph's FC,Lynx FC,3,1,1,0-1,2024-25_gi1.txt
+21.00,Europa FC,St. Joseph's FC,1,3,2,0-1,2024-25_gi1.txt
+16.30,Manchester 62 FC,Mons Calpe S.C.,4,1,1,0-1,2024-25_gi1.txt
+19.30,Lynx FC,Lions Gibraltar,2,1,1,1-0,2024-25_gi1.txt
+16.30,FCB Magpies,Glacis United FC,3,1,1,2-1,2024-25_gi1.txt
+19.30,Lincoln Red Imps,College 1975 FC,5,1,1,4-0,2024-25_gi1.txt
+21.00,Europa Point FC,Manchester 62 FC,0,4,2,0-0,2024-25_gi1.txt
+16.30,Glacis United FC,Lincoln Red Imps,0,6,2,0-1,2024-25_gi1.txt
+19.30,Mons Calpe S.C.,FCB Magpies,2,5,2,0-3,2024-25_gi1.txt
+16.30,College 1975 FC,Lynx FC,2,1,1,2-1,2024-25_gi1.txt
+19.30,Lions Gibraltar,Europa FC,2,4,2,1-1,2024-25_gi1.txt
+16.30,Lions Gibraltar,St. Joseph's FC,1,3,2,1-0,2024-25_gi1.txt
+19.30,Europa Point FC,FCB Magpies,0,7,2,0-2,2024-25_gi1.txt
+16.30,College 1975 FC,Europa FC,0,3,2,0-0,2024-25_gi1.txt
+19.30,Mons Calpe S.C.,Lincoln Red Imps,0,3,2,0-0,2024-25_gi1.txt
+21.00,Glacis United FC,Lynx FC,4,2,1,2-1,2024-25_gi1.txt
+21.00,FCB Magpies,Manchester 62 FC,0,2,2,0-0,2024-25_gi1.txt
+16.30,St. Joseph's FC,College 1975 FC,1,0,1,0-0,2024-25_gi1.txt
+19.30,Lincoln Red Imps,Europa Point FC,2,0,1,1-0,2024-25_gi1.txt
+16.30,Lynx FC,Mons Calpe S.C.,1,2,2,1-0,2024-25_gi1.txt
+19.30,Europa FC,Glacis United FC,8,0,1,3-0,2024-25_gi1.txt
+21.00,College 1975 FC,Lions Gibraltar,1,1,X,1-0,2024-25_gi1.txt
+16.30,Manchester 62 FC,Lincoln Red Imps,0,4,2,0-1,2024-25_gi1.txt
+19.30,Glacis United FC,St. Joseph's FC,1,4,2,1-1,2024-25_gi1.txt
+16.30,Europa Point FC,Lynx FC,1,1,X,0-1,2024-25_gi1.txt
+19.30,Mons Calpe S.C.,Europa FC,1,3,2,0-2,2024-25_gi1.txt
+21.00,Lynx FC,Manchester 62 FC,3,2,1,1-2,2024-25_gi1.txt
+16.30,Lions Gibraltar,Glacis United FC,4,1,1,1-1,2024-25_gi1.txt
+19.30,Lincoln Red Imps,FCB Magpies,2,0,1,0-0,2024-25_gi1.txt
+16.30,St. Joseph's FC,Mons Calpe S.C.,2,1,1,2-1,2024-25_gi1.txt
+19.30,Europa FC,Europa Point FC,3,0,1,2-0,2024-25_gi1.txt
+21.00,Glacis United FC,College 1975 FC,2,3,2,2-1,2024-25_gi1.txt
+16.30,FCB Magpies,Lynx FC,3,0,1,0-0,2024-25_gi1.txt
+19.30,Mons Calpe S.C.,Lions Gibraltar,0,2,2,0-0,2024-25_gi1.txt
+16.30,Manchester 62 FC,Europa FC,2,2,X,2-0,2024-25_gi1.txt
+19.30,Europa Point FC,St. Joseph's FC,1,6,2,0-2,2024-25_gi1.txt
+21.00,College 1975 FC,Mons Calpe S.C.,4,0,1,1-0,2024-25_gi1.txt
+21.00,Lynx FC,Lincoln Red Imps,1,5,2,1-2,2024-25_gi1.txt
+16.30,Europa FC,FCB Magpies,2,0,1,1-0,2024-25_gi1.txt
+16.30,Lions Gibraltar,Europa Point FC,3,2,1,1-2,2024-25_gi1.txt
+19.30,St. Joseph's FC,Manchester 62 FC,2,1,1,1-0,2024-25_gi1.txt
+21.00,Mons Calpe S.C.,Glacis United FC,1,3,2,0-1,2024-25_gi1.txt
+21.00,Lincoln Red Imps,Europa FC,3,1,1,1-1,2024-25_gi1.txt
+21.00,Europa Point FC,College 1975 FC,0,2,2,,2024-25_gi1.txt
+21.00,FCB Magpies,St. Joseph's FC,1,3,2,,2024-25_gi1.txt
+21.00,Manchester 62 FC,Lions Gibraltar,1,1,X,0-1,2024-25_gi1.txt
+21.00,Europa FC,Lynx FC,3,0,1,0-0,2024-25_gi1.txt
+19.30,Lions Gibraltar,FCB Magpies,2,1,1,,2024-25_gi1.txt
+16.30,St. Joseph's FC,Lincoln Red Imps,0,0,X,,2024-25_gi1.txt
+19.30,College 1975 FC,Manchester 62 FC,0,2,2,,2024-25_gi1.txt
+21.00,Glacis United FC,Europa Point FC,3,0,1,,2024-25_gi1.txt
+21.00,Europa Point FC,Mons Calpe S.C.,3,3,X,2-1,2024-25_gi1.txt
+16.30,Lincoln Red Imps,Lions Gibraltar,1,2,2,,2024-25_gi1.txt
+19.30,Manchester 62 FC,Glacis United FC,3,2,1,2-0,2024-25_gi1.txt
+16.30,Lynx FC,St. Joseph's FC,0,7,2,,2024-25_gi1.txt
+19.30,FCB Magpies,College 1975 FC,3,2,1,,2024-25_gi1.txt
+21.00,St. Joseph's FC,Europa FC,2,1,1,,2024-25_gi1.txt
+16.30,Mons Calpe S.C.,Manchester 62 FC,0,4,2,,2024-25_gi1.txt
+19.30,Lions Gibraltar,Lynx FC,0,2,2,,2024-25_gi1.txt
+16.30,Glacis United FC,FCB Magpies,0,5,2,,2024-25_gi1.txt
+19.30,College 1975 FC,Lincoln Red Imps,0,2,2,0-1,2024-25_gi1.txt
+21.00,Lincoln Red Imps,Glacis United FC,4,1,1,,2024-25_gi1.txt
+16.30,FCB Magpies,Mons Calpe S.C.,4,1,1,,2024-25_gi1.txt
+19.30,Europa FC,Lions Gibraltar,3,0,1,,2024-25_gi1.txt
+16.30,Lynx FC,College 1975 FC,3,1,1,,2024-25_gi1.txt
+19.30,Manchester 62 FC,Europa Point FC,7,0,1,,2024-25_gi1.txt
+16.30,St. Joseph's FC,Lincoln Red Imps,0,1,2,0-1,2024-25_gi1.txt
+19.30,Lions Gibraltar,FCB Magpies,1,2,2,0-1,2024-25_gi1.txt
+16.30,Manchester 62 FC,Europa FC,1,2,2,1-1,2024-25_gi1.txt
+21.00,FCB Magpies,St. Joseph's FC,0,2,2,0-1,2024-25_gi1.txt
+16.30,Europa FC,Lincoln Red Imps,0,4,2,,2024-25_gi1.txt
+16.30,Manchester 62 FC,Lions Gibraltar,1,0,1,,2024-25_gi1.txt
+16.30,St. Joseph's FC,Europa FC,2,1,1,,2024-25_gi1.txt
+19.30,FCB Magpies,Manchester 62 FC,0,2,2,,2024-25_gi1.txt
+16.30,Lincoln Red Imps,Lions Gibraltar,3,0,1,,2024-25_gi1.txt
+21.00,Lions Gibraltar,Europa FC,1,4,2,,2024-25_gi1.txt
+16.30,Manchester 62 FC,St. Joseph's FC,0,2,2,,2024-25_gi1.txt
+16.30,Lincoln Red Imps,FCB Magpies,1,0,1,,2024-25_gi1.txt
+21.00,Manchester 62 FC,Lincoln Red Imps,0,2,2,0-1,2024-25_gi1.txt
+16.30,St. Joseph's FC,Lions Gibraltar,6,0,1,,2024-25_gi1.txt
+16.30,Europa FC,FCB Magpies,4,2,1,,2024-25_gi1.txt

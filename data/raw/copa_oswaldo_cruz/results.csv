@@ -1,0 +1,17 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Brazil,Paraguay,2,0,1,Rio de Janeiro,Brazil,1950_copa_oswaldo_cruz.txt
+Brazil,Paraguay,3,3,X,São Paulo,Brazil,1950_copa_oswaldo_cruz.txt
+Brazil,Paraguay,3,0,1,Rio de Janeiro,Brazil,1955_copa_oswaldo_cruz.txt
+Brazil,Paraguay,3,3,X,Rio de Janeiro,Brazil,1955_copa_oswaldo_cruz.txt
+Paraguay,Brazil,0,2,2,Asunción,Paraguay,1956_copa_oswaldo_cruz.txt
+Paraguay,Brazil,2,5,2,Asunción,Paraguay,1956_copa_oswaldo_cruz.txt
+Brazil,Paraguay,5,1,1,Rio de Janeiro,Brazil,1958_copa_oswaldo_cruz.txt
+Brazil,Paraguay,0,0,X,São Paulo,Brazil,1958_copa_oswaldo_cruz.txt
+Paraguay,Brazil,0,2,2,Asunción,Paraguay,1961_copa_oswaldo_cruz.txt
+Paraguay,Brazil,2,3,2,Asunción,Paraguay,1961_copa_oswaldo_cruz.txt
+Brazil,Paraguay,6,0,1,Rio de Janeiro,Brazil,1962_copa_oswaldo_cruz.txt
+Brazil,Paraguay,4,0,1,São Paulo,Brazil,1962_copa_oswaldo_cruz.txt
+Paraguay,Brazil,0,4,2,Asunción,Paraguay,1968_copa_oswaldo_cruz.txt
+Paraguay,Brazil,1,0,1,Asunción,Paraguay,1968_copa_oswaldo_cruz.txt
+Paraguay,Brazil,1,1,X,Asunción,Paraguay,1976_copa_oswaldo_cruz.txt
+Brazil,Paraguay,3,1,1,Rio de Janeiro,Brazil,1976_copa_oswaldo_cruz.txt

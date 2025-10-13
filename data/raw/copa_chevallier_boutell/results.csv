@@ -1,0 +1,30 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Argentina,Paraguay,0,2,2,Buenos Aires,Argentina,1923_copa_chevallier_boutell.txt
+Argentina,Paraguay,1,0,1,Buenos Aires,Argentina,1923_copa_chevallier_boutell.txt
+Paraguay,Argentina,1,3,2,Asunción,Paraguay,1924_copa_chevallier_boutell.txt
+Paraguay,Argentina,2,1,1,Asunción,Paraguay,1924_copa_chevallier_boutell.txt
+Argentina,Paraguay,1,1,X,Buenos Aires,Argentina,1925_copa_chevallier_boutell.txt
+Argentina,Paraguay,1,1,X,Buenos Aires,Argentina,1925_copa_chevallier_boutell.txt
+Argentina,Paraguay,2,1,1,Buenos Aires,Argentina,1926_copa_chevallier_boutell.txt
+Argentina,Paraguay,2,1,1,Buenos Aires,Argentina,1926_copa_chevallier_boutell.txt
+Argentina,Paraguay,1,1,X,Buenos Aires,Argentina,1931_copa_chevallier_boutell.txt
+Argentina,Paraguay,3,1,1,Buenos Aires,Argentina,1931_copa_chevallier_boutell.txt
+Paraguay,Argentina,0,1,2,Asunción,Paraguay,1939_copa_chevallier_boutell.txt
+Paraguay,Argentina,2,2,X,Asunción,Paraguay,1939_copa_chevallier_boutell.txt
+Argentina,Paraguay,3,1,1,Avellaneda,Argentina,1940_copa_chevallier_boutell.txt
+Argentina,Paraguay,4,0,1,Buenos Aires,Argentina,1940_copa_chevallier_boutell.txt
+Paraguay,Argentina,2,5,2,Asunción,Paraguay,1943_copa_chevallier_boutell.txt
+Paraguay,Argentina,2,1,1,Asunción,Paraguay,1943_copa_chevallier_boutell.txt
+Argentina,Paraguay,5,2,1,Buenos Aires,Argentina,1945_copa_chevallier_boutell.txt
+Argentina,Paraguay,5,3,1,Buenos Aires,Argentina,1945_copa_chevallier_boutell.txt
+Paraguay,Argentina,5,1,1,Asunción,Paraguay,1945_copa_chevallier_boutell.txt
+Paraguay,Argentina,1,3,2,Asunción,Paraguay,1945_copa_chevallier_boutell.txt
+Argentina,Paraguay,2,2,X,Buenos Aires,Argentina,1950_copa_chevallier_boutell.txt
+Argentina,Paraguay,4,0,1,Buenos Aires,Argentina,1950_copa_chevallier_boutell.txt
+Paraguay,Argentina,0,1,2,Asunción,Paraguay,1956_copa_chevallier_boutell.txt
+Paraguay,Argentina,0,4,2,Asunción,Paraguay,1963_copa_chevallier_boutell.txt
+Argentina,Paraguay,2,3,2,Buenos Aires,Argentina,1963_copa_chevallier_boutell.txt
+Paraguay,Argentina,3,0,1,Asunción,Paraguay,1964_copa_chevallier_boutell.txt
+Argentina,Paraguay,8,1,1,Buenos Aires,Argentina,1964_copa_chevallier_boutell.txt
+Paraguay,Argentina,1,1,X,Asunción,Paraguay,1971_copa_chevallier_boutell.txt
+Argentina,Paraguay,1,0,1,Rosario,Argentina,1971_copa_chevallier_boutell.txt

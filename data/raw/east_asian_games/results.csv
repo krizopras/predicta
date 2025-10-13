@@ -1,0 +1,18 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+China PR,Mongolia,6,1,1,Shanghai,China PR,1993_east_asian_games.txt
+North Korea,Mongolia,7,0,1,Shanghai,China PR,1993_east_asian_games.txt
+China PR,Macau,11,0,1,Shanghai,China PR,1993_east_asian_games.txt
+China PR,North Korea,1,1,X,Shanghai,China PR,1993_east_asian_games.txt
+North Korea,Macau,6,0,1,Shanghai,China PR,1993_east_asian_games.txt
+Mongolia,Macau,4,3,1,Shanghai,China PR,1993_east_asian_games.txt
+Mongolia,China PR,0,6,2,Busan,South Korea,1997_east_asian_games.txt
+Guam,Japan,0,12,2,Busan,South Korea,1997_east_asian_games.txt
+Kazakhstan,Guam,20,1,1,Busan,South Korea,1997_east_asian_games.txt
+Japan,Mongolia,5,0,1,Busan,South Korea,1997_east_asian_games.txt
+Guam,China PR,0,7,2,Busan,South Korea,1997_east_asian_games.txt
+Kazakhstan,Japan,2,2,X,Busan,South Korea,1997_east_asian_games.txt
+Mongolia,Kazakhstan,3,11,2,Busan,South Korea,1997_east_asian_games.txt
+China PR,Japan,2,0,1,Busan,South Korea,1997_east_asian_games.txt
+Guam,Mongolia,0,4,2,Busan,South Korea,1997_east_asian_games.txt
+China PR,Kazakhstan,0,0,X,Busan,South Korea,1997_east_asian_games.txt
+North Korea,Macau,8,0,1,Hong Kong,Hong Kong,2009_east_asian_games.txt

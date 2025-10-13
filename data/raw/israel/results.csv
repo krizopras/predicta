@@ -1,0 +1,788 @@
+time,home_team,away_team,home_score,away_score,result,ht_score,source_file
+19.00,Bnei Sachnin FC,Hapoel Tel Aviv,1,1,X,0-1,2023-24_il1.txt
+19.15,Maccabi Petach-Tikva,Hapoel Jerusalem,1,1,X,0-1,2023-24_il1.txt
+20.00,Hapoel Be'er Sheva,Hapoel Hadera,3,0,1,2-0,2023-24_il1.txt
+,Maccabi Netanya,Maccabi Bnei Raina,1,1,X,1-0,2023-24_il1.txt
+20.15,Maccabi Tel Aviv,FC Ashdod,4,1,1,0-0,2023-24_il1.txt
+20.00,Beitar Jerusalem,Hapoel Haifa,1,2,2,1-0,2023-24_il1.txt
+20.00,Maccabi Haifa,Hapoel Petach-Tikva,2,1,1,2-0,2023-24_il1.txt
+19.00,Hapoel Petach-Tikva,Bnei Sachnin FC,1,1,X,1-0,2023-24_il1.txt
+,Maccabi Bnei Raina,Hapoel Be'er Sheva,1,1,X,1-1,2023-24_il1.txt
+20.00,Hapoel Haifa,Maccabi Petach-Tikva,2,2,X,0-1,2023-24_il1.txt
+,Hapoel Tel Aviv,Maccabi Netanya,2,0,1,1-0,2023-24_il1.txt
+20.00,Hapoel Jerusalem,Maccabi Haifa,1,2,2,1-2,2023-24_il1.txt
+20.30,Hapoel Hadera,Maccabi Tel Aviv,0,3,2,0-1,2023-24_il1.txt
+20.00,FC Ashdod,Beitar Jerusalem,1,2,2,1-1,2023-24_il1.txt
+19.30,Bnei Sachnin FC,Hapoel Jerusalem,2,1,1,1-0,2023-24_il1.txt
+19.45,Hapoel Haifa,FC Ashdod,2,0,1,0-0,2023-24_il1.txt
+,Maccabi Tel Aviv,Maccabi Bnei Raina,1,1,X,1-0,2023-24_il1.txt
+20.00,Maccabi Netanya,Hapoel Petach-Tikva,4,1,1,2-0,2023-24_il1.txt
+,Maccabi Petach-Tikva,Maccabi Haifa,3,2,1,1-1,2023-24_il1.txt
+20.00,Beitar Jerusalem,Hapoel Hadera,2,0,1,0-0,2023-24_il1.txt
+20.30,Hapoel Be'er Sheva,Hapoel Tel Aviv,0,0,X,,2023-24_il1.txt
+18.00,Hapoel Petach-Tikva,Hapoel Be'er Sheva,1,0,1,0-0,2023-24_il1.txt
+19.30,Hapoel Hadera,Hapoel Haifa,1,2,2,1-2,2023-24_il1.txt
+19.45,FC Ashdod,Maccabi Petach-Tikva,1,1,X,0-0,2023-24_il1.txt
+,Hapoel Jerusalem,Maccabi Netanya,1,1,X,0-0,2023-24_il1.txt
+20.00,Maccabi Bnei Raina,Beitar Jerusalem,2,1,1,0-1,2023-24_il1.txt
+20.30,Hapoel Tel Aviv,Maccabi Tel Aviv,0,5,2,0-3,2023-24_il1.txt
+20.00,Maccabi Haifa,Bnei Sachnin FC,1,1,X,1-1,2023-24_il1.txt
+17.45,Maccabi Tel Aviv,Hapoel Petach-Tikva,2,0,1,0-0,2023-24_il1.txt
+19.30,Maccabi Petach-Tikva,Bnei Sachnin FC,5,1,1,3-1,2023-24_il1.txt
+19.45,FC Ashdod,Hapoel Hadera,0,1,2,0-0,2023-24_il1.txt
+,Hapoel Haifa,Maccabi Bnei Raina,1,2,2,1-2,2023-24_il1.txt
+20.00,Hapoel Be'er Sheva,Hapoel Jerusalem,3,0,1,2-0,2023-24_il1.txt
+20.15,Maccabi Netanya,Maccabi Haifa,2,3,2,2-2,2023-24_il1.txt
+20.30,Beitar Jerusalem,Hapoel Tel Aviv,0,3,2,0-1,2023-24_il1.txt
+15.00,Hapoel Tel Aviv,Hapoel Haifa,0,1,2,0-1,2023-24_il1.txt
+16.45,Hapoel Hadera,Maccabi Petach-Tikva,3,0,1,1-0,2023-24_il1.txt
+17.30,Bnei Sachnin FC,Maccabi Netanya,1,1,X,0-1,2023-24_il1.txt
+19.00,Maccabi Bnei Raina,FC Ashdod,0,0,X,,2023-24_il1.txt
+19.30,Hapoel Petach-Tikva,Beitar Jerusalem,1,0,1,1-0,2023-24_il1.txt
+20.00,Hapoel Jerusalem,Maccabi Tel Aviv,1,2,2,1-0,2023-24_il1.txt
+20.30,Maccabi Haifa,Hapoel Be'er Sheva,1,0,1,0-0,2023-24_il1.txt
+19.00,Hapoel Hadera,Maccabi Bnei Raina,0,2,2,0-1,2023-24_il1.txt
+,Maccabi Petach-Tikva,Maccabi Netanya,1,0,1,1-0,2023-24_il1.txt
+19.45,Hapoel Haifa,Hapoel Petach-Tikva,1,1,X,1-0,2023-24_il1.txt
+20.00,FC Ashdod,Hapoel Tel Aviv,2,1,1,1-0,2023-24_il1.txt
+19.45,Hapoel Be'er Sheva,Bnei Sachnin FC,1,2,2,1-0,2023-24_il1.txt
+20.00,Beitar Jerusalem,Hapoel Jerusalem,1,0,1,0-0,2023-24_il1.txt
+20.30,Maccabi Tel Aviv,Maccabi Haifa,0,1,2,0-1,2023-24_il1.txt
+15.00,Hapoel Petach-Tikva,FC Ashdod,1,1,X,0-0,2023-24_il1.txt
+17.30,Maccabi Bnei Raina,Maccabi Petach-Tikva,3,0,1,2-0,2023-24_il1.txt
+19.30,Hapoel Tel Aviv,Hapoel Hadera,1,1,X,1-0,2023-24_il1.txt
+19.30,Hapoel Jerusalem,Hapoel Haifa,0,1,2,0-0,2023-24_il1.txt
+20.00,Bnei Sachnin FC,Maccabi Tel Aviv,2,3,2,0-1,2023-24_il1.txt
+20.30,Maccabi Haifa,Beitar Jerusalem,1,1,X,0-1,2023-24_il1.txt
+20.00,Maccabi Netanya,Hapoel Be'er Sheva,1,0,1,0-0,2023-24_il1.txt
+15.00,Maccabi Bnei Raina,Hapoel Tel Aviv,1,2,2,0-2,2023-24_il1.txt
+18.00,FC Ashdod,Hapoel Jerusalem,2,0,1,0-0,2023-24_il1.txt
+,Hapoel Hadera,Hapoel Petach-Tikva,1,0,1,0-0,2023-24_il1.txt
+,Maccabi Petach-Tikva,Hapoel Be'er Sheva,1,4,2,1-0,2023-24_il1.txt
+19.30,Beitar Jerusalem,Bnei Sachnin FC,1,1,X,0-1,2023-24_il1.txt
+20.00,Maccabi Tel Aviv,Maccabi Netanya,2,1,1,1-1,2023-24_il1.txt
+20.30,Hapoel Haifa,Maccabi Haifa,0,3,2,0-1,2023-24_il1.txt
+19.00,Hapoel Petach-Tikva,Maccabi Bnei Raina,0,1,2,0-1,2023-24_il1.txt
+19.30,Hapoel Jerusalem,Hapoel Hadera,1,0,1,1-0,2023-24_il1.txt
+20.00,Hapoel Tel Aviv,Maccabi Petach-Tikva,2,0,1,1-0,2023-24_il1.txt
+19.00,Bnei Sachnin FC,Hapoel Haifa,1,1,X,0-0,2023-24_il1.txt
+19.45,Maccabi Netanya,Beitar Jerusalem,0,3,2,0-1,2023-24_il1.txt
+20.00,Maccabi Haifa,FC Ashdod,4,0,1,0-0,2023-24_il1.txt
+20.30,Hapoel Be'er Sheva,Maccabi Tel Aviv,0,1,2,0-1,2023-24_il1.txt
+15.00,Hapoel Tel Aviv,Hapoel Petach-Tikva,4,1,1,2-0,2023-24_il1.txt
+18.00,FC Ashdod,Bnei Sachnin FC,0,1,2,0-1,2023-24_il1.txt
+,Hapoel Haifa,Maccabi Netanya,2,1,1,0-0,2023-24_il1.txt
+,Maccabi Bnei Raina,Hapoel Jerusalem,1,1,X,0-0,2023-24_il1.txt
+19.30,Beitar Jerusalem,Hapoel Be'er Sheva,4,4,X,3-1,2023-24_il1.txt
+20.00,Maccabi Petach-Tikva,Maccabi Tel Aviv,1,2,2,1-0,2023-24_il1.txt
+20.30,Hapoel Hadera,Maccabi Haifa,1,5,2,1-3,2023-24_il1.txt
+19.00,Maccabi Netanya,FC Ashdod,1,0,1,0-0,2023-24_il1.txt
+19.45,Hapoel Jerusalem,Hapoel Tel Aviv,2,1,1,1-0,2023-24_il1.txt
+20.00,Hapoel Be'er Sheva,Hapoel Haifa,4,0,1,0-0,2023-24_il1.txt
+19.00,Bnei Sachnin FC,Hapoel Hadera,0,1,2,0-0,2023-24_il1.txt
+19.45,Maccabi Petach-Tikva,Hapoel Petach-Tikva,2,0,1,1-0,2023-24_il1.txt
+20.00,Maccabi Haifa,Maccabi Bnei Raina,1,0,1,0-0,2023-24_il1.txt
+20.30,Maccabi Tel Aviv,Beitar Jerusalem,1,0,1,0-0,2023-24_il1.txt
+15.00,Hapoel Petach-Tikva,Hapoel Jerusalem,1,2,2,0-2,2023-24_il1.txt
+18.00,Hapoel Hadera,Maccabi Netanya,1,4,2,0-2,2023-24_il1.txt
+,Maccabi Bnei Raina,Bnei Sachnin FC,0,1,2,0-0,2023-24_il1.txt
+19.30,FC Ashdod,Hapoel Be'er Sheva,1,3,2,1-1,2023-24_il1.txt
+19.45,Beitar Jerusalem,Maccabi Petach-Tikva,3,2,1,3-1,2023-24_il1.txt
+20.00,Hapoel Haifa,Maccabi Tel Aviv,0,1,2,0-1,2023-24_il1.txt
+20.30,Hapoel Tel Aviv,Maccabi Haifa,0,0,X,,2023-24_il1.txt
+19.00,Maccabi Bnei Raina,Maccabi Netanya,1,3,2,0-1,2023-24_il1.txt
+20.00,Hapoel Hadera,Hapoel Be'er Sheva,0,2,2,0-0,2023-24_il1.txt
+19.00,Hapoel Jerusalem,Maccabi Petach-Tikva,3,1,1,2-0,2023-24_il1.txt
+19.45,Hapoel Tel Aviv,Bnei Sachnin FC,3,3,X,0-2,2023-24_il1.txt
+20.00,FC Ashdod,Maccabi Tel Aviv,1,4,2,0-1,2023-24_il1.txt
+20.15,Hapoel Petach-Tikva,Maccabi Haifa,2,2,X,1-1,2023-24_il1.txt
+20.30,Hapoel Haifa,Beitar Jerusalem,3,2,1,0-2,2023-24_il1.txt
+15.00,Hapoel Be'er Sheva,Maccabi Bnei Raina,4,2,1,2-1,2023-24_il1.txt
+18.00,Bnei Sachnin FC,Hapoel Petach-Tikva,0,0,X,,2023-24_il1.txt
+19.30,Maccabi Netanya,Hapoel Tel Aviv,2,1,1,2-1,2023-24_il1.txt
+20.00,Maccabi Tel Aviv,Hapoel Hadera,1,1,X,0-1,2023-24_il1.txt
+20.30,Maccabi Haifa,Hapoel Jerusalem,2,1,1,2-1,2023-24_il1.txt
+19.00,Maccabi Petach-Tikva,Hapoel Haifa,0,3,2,0-1,2023-24_il1.txt
+20.00,Beitar Jerusalem,FC Ashdod,1,1,X,0-0,2023-24_il1.txt
+15.00,Hapoel Hadera,Beitar Jerusalem,0,3,2,0-1,2023-24_il1.txt
+18.00,FC Ashdod,Hapoel Haifa,0,1,2,0-1,2023-24_il1.txt
+,Hapoel Jerusalem,Bnei Sachnin FC,0,0,X,,2023-24_il1.txt
+,Hapoel Petach-Tikva,Maccabi Netanya,2,0,1,2-0,2023-24_il1.txt
+19.30,Hapoel Tel Aviv,Hapoel Be'er Sheva,0,4,2,0-1,2023-24_il1.txt
+20.00,Maccabi Bnei Raina,Maccabi Tel Aviv,2,2,X,1-1,2023-24_il1.txt
+20.30,Maccabi Haifa,Maccabi Petach-Tikva,5,0,1,2-0,2023-24_il1.txt
+19.00,Hapoel Haifa,Hapoel Hadera,2,0,1,1-0,2023-24_il1.txt
+19.45,Maccabi Netanya,Hapoel Jerusalem,2,1,1,1-1,2023-24_il1.txt
+20.00,Hapoel Be'er Sheva,Hapoel Petach-Tikva,2,0,1,0-0,2023-24_il1.txt
+19.00,Maccabi Petach-Tikva,FC Ashdod,1,2,2,1-0,2023-24_il1.txt
+19.45,Beitar Jerusalem,Maccabi Bnei Raina,1,2,2,0-1,2023-24_il1.txt
+20.00,Bnei Sachnin FC,Maccabi Haifa,0,3,2,0-1,2023-24_il1.txt
+20.30,Maccabi Tel Aviv,Hapoel Tel Aviv,4,2,1,3-2,2023-24_il1.txt
+15.00,Hapoel Hadera,FC Ashdod,1,1,X,1-1,2023-24_il1.txt
+17.30,Maccabi Bnei Raina,Hapoel Haifa,0,0,X,,2023-24_il1.txt
+19.30,Hapoel Jerusalem,Hapoel Be'er Sheva,0,1,2,0-0,2023-24_il1.txt
+19.00,Bnei Sachnin FC,Maccabi Petach-Tikva,1,1,X,0-0,2023-24_il1.txt
+20.00,Hapoel Petach-Tikva,Maccabi Tel Aviv,0,0,X,,2023-24_il1.txt
+20.30,Maccabi Haifa,Maccabi Netanya,4,0,1,2-0,2023-24_il1.txt
+20.00,Hapoel Tel Aviv,Beitar Jerusalem,0,1,2,0-0,2023-24_il1.txt
+19.00,FC Ashdod,Maccabi Bnei Raina,1,0,1,1-0,2023-24_il1.txt
+19.45,Maccabi Netanya,Bnei Sachnin FC,0,1,2,0-0,2023-24_il1.txt
+20.00,Beitar Jerusalem,Hapoel Petach-Tikva,2,2,X,2-1,2023-24_il1.txt
+19.00,Maccabi Petach-Tikva,Hapoel Hadera,1,0,1,1-0,2023-24_il1.txt
+19.45,Hapoel Haifa,Hapoel Tel Aviv,4,3,1,4-0,2023-24_il1.txt
+20.00,Maccabi Tel Aviv,Hapoel Jerusalem,2,1,1,1-1,2023-24_il1.txt
+20.30,Hapoel Be'er Sheva,Maccabi Haifa,2,1,1,0-0,2023-24_il1.txt
+15.00,Maccabi Netanya,Maccabi Petach-Tikva,0,1,2,0-0,2023-24_il1.txt
+17.30,Bnei Sachnin FC,Hapoel Be'er Sheva,0,2,2,0-0,2023-24_il1.txt
+18.00,Hapoel Petach-Tikva,Hapoel Haifa,0,2,2,0-0,2023-24_il1.txt
+19.30,Hapoel Tel Aviv,FC Ashdod,3,1,1,0-0,2023-24_il1.txt
+19.00,Maccabi Bnei Raina,Hapoel Hadera,2,1,1,0-0,2023-24_il1.txt
+20.00,Hapoel Jerusalem,Beitar Jerusalem,2,1,1,0-1,2023-24_il1.txt
+20.30,Maccabi Haifa,Maccabi Tel Aviv,2,0,1,2-0,2023-24_il1.txt
+15.00,Maccabi Tel Aviv,Bnei Sachnin FC,1,1,X,0-1,2023-24_il1.txt
+17.30,Hapoel Hadera,Hapoel Tel Aviv,1,0,1,0-0,2023-24_il1.txt
+18.00,FC Ashdod,Hapoel Petach-Tikva,2,0,1,2-0,2023-24_il1.txt
+,Maccabi Petach-Tikva,Maccabi Bnei Raina,1,0,1,0-0,2023-24_il1.txt
+20.00,Beitar Jerusalem,Maccabi Haifa,0,2,2,0-1,2023-24_il1.txt
+20.00,Hapoel Be'er Sheva,Maccabi Netanya,2,0,1,1-0,2023-24_il1.txt
+20.00,Hapoel Haifa,Hapoel Jerusalem,2,3,2,2-0,2023-24_il1.txt
+15.00,Hapoel Tel Aviv,Maccabi Bnei Raina,0,0,X,,2023-24_il1.txt
+17.30,Hapoel Be'er Sheva,Maccabi Petach-Tikva,1,1,X,0-0,2023-24_il1.txt
+18.30,Hapoel Jerusalem,FC Ashdod,1,1,X,0-1,2023-24_il1.txt
+,Hapoel Petach-Tikva,Hapoel Hadera,0,2,2,0-1,2023-24_il1.txt
+19.30,Bnei Sachnin FC,Beitar Jerusalem,2,1,1,1-0,2023-24_il1.txt
+20.30,Maccabi Haifa,Hapoel Haifa,1,1,X,1-0,2023-24_il1.txt
+20.00,Maccabi Netanya,Maccabi Tel Aviv,1,5,2,1-2,2023-24_il1.txt
+15.00,Maccabi Petach-Tikva,Hapoel Tel Aviv,3,0,1,2-0,2023-24_il1.txt
+17.30,Hapoel Haifa,Bnei Sachnin FC,1,2,2,0-2,2023-24_il1.txt
+18.30,Hapoel Hadera,Hapoel Jerusalem,1,1,X,1-1,2023-24_il1.txt
+19.30,Beitar Jerusalem,Maccabi Netanya,0,0,X,,2023-24_il1.txt
+20.00,Maccabi Tel Aviv,Hapoel Be'er Sheva,1,0,1,1-0,2023-24_il1.txt
+20.00,FC Ashdod,Maccabi Haifa,0,5,2,0-5,2023-24_il1.txt
+20.00,Maccabi Bnei Raina,Hapoel Petach-Tikva,1,1,X,1-0,2023-24_il1.txt
+15.00,Maccabi Netanya,Hapoel Haifa,1,2,2,1-0,2023-24_il1.txt
+18.30,Bnei Sachnin FC,FC Ashdod,1,1,X,1-1,2023-24_il1.txt
+,Hapoel Jerusalem,Maccabi Bnei Raina,1,0,1,1-0,2023-24_il1.txt
+19.30,Maccabi Tel Aviv,Maccabi Petach-Tikva,4,0,1,2-0,2023-24_il1.txt
+20.00,Maccabi Haifa,Hapoel Hadera,1,0,1,0-0,2023-24_il1.txt
+20.00,Hapoel Petach-Tikva,Hapoel Tel Aviv,0,0,X,,2023-24_il1.txt
+20.30,Hapoel Be'er Sheva,Beitar Jerusalem,1,0,1,1-0,2023-24_il1.txt
+15.00,Hapoel Petach-Tikva,Maccabi Petach-Tikva,2,2,X,1-1,2023-24_il1.txt
+17.30,Hapoel Hadera,Bnei Sachnin FC,1,0,1,0-0,2023-24_il1.txt
+18.30,FC Ashdod,Maccabi Netanya,0,2,2,0-0,2023-24_il1.txt
+19.30,Hapoel Tel Aviv,Hapoel Jerusalem,0,0,X,,2023-24_il1.txt
+20.00,Maccabi Bnei Raina,Maccabi Haifa,2,1,1,0-1,2023-24_il1.txt
+20.30,Beitar Jerusalem,Maccabi Tel Aviv,0,1,2,0-1,2023-24_il1.txt
+20.00,Hapoel Haifa,Hapoel Be'er Sheva,1,0,1,0-0,2023-24_il1.txt
+15.00,Hapoel Jerusalem,Hapoel Petach-Tikva,3,2,1,1-0,2023-24_il1.txt
+17.30,Hapoel Be'er Sheva,FC Ashdod,1,0,1,1-0,2023-24_il1.txt
+18.30,Maccabi Netanya,Hapoel Hadera,1,3,2,0-3,2023-24_il1.txt
+19.30,Bnei Sachnin FC,Maccabi Bnei Raina,0,0,X,,2023-24_il1.txt
+,Maccabi Petach-Tikva,Beitar Jerusalem,0,3,2,0-1,2023-24_il1.txt
+20.00,Maccabi Tel Aviv,Hapoel Haifa,3,1,1,2-1,2023-24_il1.txt
+20.30,Maccabi Haifa,Hapoel Tel Aviv,0,0,X,,2023-24_il1.txt
+16.00,Hapoel Be'er Sheva,Hapoel Haifa,2,1,1,1-0,2023-24_il1.txt
+20.00,Maccabi Tel Aviv,Bnei Sachnin FC,2,0,1,0-0,2023-24_il1.txt
+20.30,Maccabi Haifa,Maccabi Bnei Raina,1,2,2,0-2,2023-24_il1.txt
+20.00,Bnei Sachnin FC,Hapoel Haifa,2,1,1,0-1,2023-24_il1.txt
+20.15,Maccabi Bnei Raina,Hapoel Be'er Sheva,1,0,1,1-0,2023-24_il1.txt
+20.30,Maccabi Tel Aviv,Maccabi Haifa,1,1,X,1-0,2023-24_il1.txt
+17.45,Maccabi Haifa,Bnei Sachnin FC,1,0,1,1-0,2023-24_il1.txt
+19.45,Hapoel Haifa,Maccabi Bnei Raina,2,0,1,2-0,2023-24_il1.txt
+20.30,Hapoel Be'er Sheva,Maccabi Tel Aviv,1,0,1,0-0,2023-24_il1.txt
+17.00,Maccabi Tel Aviv,Hapoel Haifa,4,0,1,2-0,2023-24_il1.txt
+18.00,Bnei Sachnin FC,Maccabi Bnei Raina,0,2,2,0-0,2023-24_il1.txt
+20.00,Maccabi Haifa,Hapoel Be'er Sheva,4,1,1,2-0,2023-24_il1.txt
+17.00,Maccabi Bnei Raina,Maccabi Tel Aviv,2,3,2,1-3,2023-24_il1.txt
+20.00,Hapoel Be'er Sheva,Bnei Sachnin FC,2,1,1,0-0,2023-24_il1.txt
+20.30,Hapoel Haifa,Maccabi Haifa,0,2,2,0-0,2023-24_il1.txt
+18.00,Hapoel Haifa,Hapoel Be'er Sheva,2,0,1,2-0,2023-24_il1.txt
+20.00,Maccabi Bnei Raina,Maccabi Haifa,1,5,2,1-2,2023-24_il1.txt
+20.30,Bnei Sachnin FC,Maccabi Tel Aviv,1,1,X,0-0,2023-24_il1.txt
+19.30,Hapoel Haifa,Bnei Sachnin FC,1,2,2,0-1,2023-24_il1.txt
+,Hapoel Be'er Sheva,Maccabi Bnei Raina,2,1,1,2-1,2023-24_il1.txt
+20.30,Maccabi Haifa,Maccabi Tel Aviv,0,1,2,0-1,2023-24_il1.txt
+20.30,Bnei Sachnin FC,Maccabi Haifa,1,2,2,0-0,2023-24_il1.txt
+,Maccabi Tel Aviv,Hapoel Be'er Sheva,3,0,1,2-0,2023-24_il1.txt
+,Maccabi Bnei Raina,Hapoel Haifa,0,1,2,0-1,2023-24_il1.txt
+20.30,Maccabi Bnei Raina,Bnei Sachnin FC,2,2,X,1-1,2023-24_il1.txt
+,Hapoel Haifa,Maccabi Tel Aviv,0,3,2,0-0,2023-24_il1.txt
+,Hapoel Be'er Sheva,Maccabi Haifa,1,4,2,1-3,2023-24_il1.txt
+18.30,Bnei Sachnin FC,Hapoel Be'er Sheva,4,1,1,1-0,2023-24_il1.txt
+,Maccabi Haifa,Hapoel Haifa,0,2,2,0-1,2023-24_il1.txt
+,Maccabi Tel Aviv,Maccabi Bnei Raina,2,0,1,2-0,2023-24_il1.txt
+17.00,Hapoel Hadera,Hapoel Petach-Tikva,1,1,X,0-0,2023-24_il1.txt
+19.30,Maccabi Petach-Tikva,FC Ashdod,0,1,2,0-1,2023-24_il1.txt
+20.00,Maccabi Netanya,Beitar Jerusalem,0,3,2,0-3,2023-24_il1.txt
+20.00,Hapoel Jerusalem,Hapoel Tel Aviv,2,0,1,1-0,2023-24_il1.txt
+15.30,Beitar Jerusalem,Hapoel Hadera,0,1,2,0-1,2023-24_il1.txt
+20.00,Hapoel Tel Aviv,Hapoel Petach-Tikva,1,1,X,0-0,2023-24_il1.txt
+19.00,Hapoel Jerusalem,Maccabi Petach-Tikva,2,0,1,0-0,2023-24_il1.txt
+20.00,FC Ashdod,Maccabi Netanya,0,0,X,,2023-24_il1.txt
+18.00,Maccabi Netanya,Hapoel Jerusalem,1,0,1,1-0,2023-24_il1.txt
+20.00,Maccabi Petach-Tikva,Hapoel Tel Aviv,4,2,1,2-0,2023-24_il1.txt
+19.00,Hapoel Hadera,FC Ashdod,2,2,X,1-2,2023-24_il1.txt
+20.15,Hapoel Petach-Tikva,Beitar Jerusalem,0,2,2,0-1,2023-24_il1.txt
+17.30,Hapoel Jerusalem,Hapoel Hadera,2,1,1,0-1,2023-24_il1.txt
+18.00,Maccabi Petach-Tikva,Maccabi Netanya,0,2,2,0-1,2023-24_il1.txt
+20.00,Hapoel Tel Aviv,Beitar Jerusalem,1,5,2,0-1,2023-24_il1.txt
+,FC Ashdod,Hapoel Petach-Tikva,1,0,1,1-0,2023-24_il1.txt
+17.00,Maccabi Netanya,Hapoel Tel Aviv,0,1,2,0-1,2023-24_il1.txt
+20.00,Hapoel Petach-Tikva,Hapoel Jerusalem,1,0,1,0-0,2023-24_il1.txt
+20.30,Hapoel Hadera,Maccabi Petach-Tikva,0,4,2,0-3,2023-24_il1.txt
+,Beitar Jerusalem,FC Ashdod,0,0,X,,2023-24_il1.txt
+18.00,Hapoel Tel Aviv,FC Ashdod,0,2,2,0-0,2023-24_il1.txt
+,Hapoel Jerusalem,Beitar Jerusalem,3,0,1,0-0,2023-24_il1.txt
+,Maccabi Petach-Tikva,Hapoel Petach-Tikva,4,1,1,4-1,2023-24_il1.txt
+,Maccabi Netanya,Hapoel Hadera,1,2,2,1-1,2023-24_il1.txt
+18.00,Hapoel Hadera,Hapoel Tel Aviv,0,1,2,0-1,2023-24_il1.txt
+,FC Ashdod,Hapoel Jerusalem,3,1,1,0-0,2023-24_il1.txt
+20.00,Hapoel Petach-Tikva,Maccabi Netanya,1,3,2,0-2,2023-24_il1.txt
+20.00,Beitar Jerusalem,Maccabi Petach-Tikva,1,1,X,1-0,2023-24_il1.txt
+19.00,Maccabi Bnei Raina,Maccabi Netanya,4,3,1,4-1,2024-25_il1.txt
+,Bnei Sachnin FC,Maccabi Petach-Tikva,2,0,1,2-0,2024-25_il1.txt
+20.00,Maccabi Haifa,Ironi Tiberias,4,0,1,1-0,2024-25_il1.txt
+,Hapoel Hadera,Hapoel Haifa,0,0,X,,2024-25_il1.txt
+20.15,Beitar Jerusalem,FC Ashdod,3,2,1,1-0,2024-25_il1.txt
+20.00,Ironi Kiryat Shmona,Hapoel Be'er Sheva,0,1,2,0-0,2024-25_il1.txt
+17.30,Maccabi Tel Aviv,Hapoel Jerusalem,2,1,1,1-0,2024-25_il1.txt
+19.00,Hapoel Haifa,Maccabi Bnei Raina,1,3,2,1-0,2024-25_il1.txt
+,FC Ashdod,Ironi Kiryat Shmona,2,1,1,2-1,2024-25_il1.txt
+20.00,Hapoel Jerusalem,Hapoel Hadera,1,1,X,0-1,2024-25_il1.txt
+,Ironi Tiberias,Beitar Jerusalem,1,0,1,0-0,2024-25_il1.txt
+20.30,Maccabi Netanya,Maccabi Haifa,0,2,2,0-1,2024-25_il1.txt
+20.00,Hapoel Be'er Sheva,Bnei Sachnin FC,0,0,X,,2024-25_il1.txt
+20.15,Maccabi Petach-Tikva,Maccabi Tel Aviv,0,3,2,0-2,2024-25_il1.txt
+19.30,Bnei Sachnin FC,FC Ashdod,2,2,X,1-0,2024-25_il1.txt
+,Hapoel Haifa,Hapoel Jerusalem,4,0,1,3-0,2024-25_il1.txt
+20.00,Maccabi Bnei Raina,Maccabi Haifa,2,2,X,0-1,2024-25_il1.txt
+,Ironi Kiryat Shmona,Ironi Tiberias,2,0,1,1-0,2024-25_il1.txt
+20.30,Maccabi Tel Aviv,Hapoel Be'er Sheva,1,0,1,1-0,2024-25_il1.txt
+20.15,Beitar Jerusalem,Maccabi Netanya,2,0,1,1-0,2024-25_il1.txt
+20.00,Hapoel Hadera,Maccabi Petach-Tikva,0,1,2,0-1,2024-25_il1.txt
+19.30,Hapoel Jerusalem,Maccabi Bnei Raina,0,1,2,0-1,2024-25_il1.txt
+,Ironi Tiberias,Bnei Sachnin FC,1,0,1,0-0,2024-25_il1.txt
+20.00,Maccabi Petach-Tikva,Hapoel Haifa,0,0,X,,2024-25_il1.txt
+,Maccabi Netanya,Ironi Kiryat Shmona,2,0,1,1-0,2024-25_il1.txt
+20.30,Hapoel Be'er Sheva,Hapoel Hadera,2,1,1,0-1,2024-25_il1.txt
+20.15,FC Ashdod,Maccabi Tel Aviv,0,2,2,0-2,2024-25_il1.txt
+19.30,Beitar Jerusalem,Maccabi Haifa,3,2,1,1-1,2024-25_il1.txt
+19.15,Ironi Kiryat Shmona,Maccabi Haifa,0,4,2,0-1,2024-25_il1.txt
+20.00,Maccabi Bnei Raina,Beitar Jerusalem,0,2,2,0-0,2024-25_il1.txt
+,Hapoel Jerusalem,Maccabi Petach-Tikva,4,1,1,1-0,2024-25_il1.txt
+20.00,Hapoel Be'er Sheva,Hapoel Haifa,3,0,1,1-0,2024-25_il1.txt
+20.30,Maccabi Tel Aviv,Ironi Tiberias,1,1,X,1-0,2024-25_il1.txt
+20.00,Bnei Sachnin FC,Maccabi Netanya,1,0,1,1-0,2024-25_il1.txt
+,Hapoel Hadera,FC Ashdod,0,3,2,0-3,2024-25_il1.txt
+19.00,FC Ashdod,Hapoel Haifa,0,1,2,0-0,2024-25_il1.txt
+19.30,Maccabi Haifa,Bnei Sachnin FC,3,0,1,1-0,2024-25_il1.txt
+19.45,Maccabi Petach-Tikva,Maccabi Bnei Raina,2,1,1,1-1,2024-25_il1.txt
+20.00,Ironi Tiberias,Hapoel Hadera,1,1,X,0-1,2024-25_il1.txt
+,Beitar Jerusalem,Ironi Kiryat Shmona,1,1,X,0-1,2024-25_il1.txt
+20.15,Hapoel Be'er Sheva,Hapoel Jerusalem,3,1,1,0-1,2024-25_il1.txt
+20.30,Maccabi Netanya,Maccabi Tel Aviv,1,2,2,0-1,2024-25_il1.txt
+18.45,Maccabi Bnei Raina,Ironi Kiryat Shmona,1,0,1,0-0,2024-25_il1.txt
+19.30,Hapoel Haifa,Ironi Tiberias,1,0,1,0-0,2024-25_il1.txt
+20.30,Maccabi Tel Aviv,Maccabi Haifa,2,0,1,2-0,2024-25_il1.txt
+20.00,Hapoel Jerusalem,FC Ashdod,1,0,1,1-0,2024-25_il1.txt
+20.15,Maccabi Petach-Tikva,Hapoel Be'er Sheva,2,5,2,1-2,2024-25_il1.txt
+20.00,Hapoel Hadera,Maccabi Netanya,2,2,X,0-0,2024-25_il1.txt
+19.30,Bnei Sachnin FC,Beitar Jerusalem,2,1,1,1-0,2024-25_il1.txt
+18.45,Ironi Kiryat Shmona,Bnei Sachnin FC,2,1,1,1-1,2024-25_il1.txt
+19.00,FC Ashdod,Maccabi Petach-Tikva,0,0,X,,2024-25_il1.txt
+,Ironi Tiberias,Hapoel Jerusalem,0,2,2,0-1,2024-25_il1.txt
+19.30,Hapoel Be'er Sheva,Maccabi Bnei Raina,1,1,X,0-0,2024-25_il1.txt
+20.00,Maccabi Netanya,Hapoel Haifa,0,3,2,0-2,2024-25_il1.txt
+,Beitar Jerusalem,Maccabi Tel Aviv,3,1,1,0-1,2024-25_il1.txt
+20.30,Maccabi Haifa,Hapoel Hadera,4,2,1,2-1,2024-25_il1.txt
+15.00,Hapoel Jerusalem,Maccabi Netanya,2,3,2,1-2,2024-25_il1.txt
+17.30,Maccabi Tel Aviv,Ironi Kiryat Shmona,0,1,2,0-0,2024-25_il1.txt
+18.00,Maccabi Bnei Raina,Bnei Sachnin FC,0,1,2,0-0,2024-25_il1.txt
+,Maccabi Petach-Tikva,Ironi Tiberias,0,0,X,,2024-25_il1.txt
+19.30,Hapoel Hadera,Beitar Jerusalem,0,4,2,0-2,2024-25_il1.txt
+20.15,Hapoel Be'er Sheva,FC Ashdod,3,1,1,0-0,2024-25_il1.txt
+20.30,Hapoel Haifa,Maccabi Haifa,1,4,2,0-1,2024-25_il1.txt
+15.00,Hapoel Jerusalem,Maccabi Haifa,0,0,X,,2024-25_il1.txt
+15.00,Beitar Jerusalem,Hapoel Haifa,1,0,1,0-0,2024-25_il1.txt
+17.30,Ironi Tiberias,Hapoel Be'er Sheva,0,2,2,0-1,2024-25_il1.txt
+18.00,FC Ashdod,Maccabi Bnei Raina,1,2,2,1-2,2024-25_il1.txt
+,Ironi Kiryat Shmona,Hapoel Hadera,1,1,X,0-1,2024-25_il1.txt
+20.00,Maccabi Netanya,Maccabi Petach-Tikva,1,2,2,0-2,2024-25_il1.txt
+20.15,Bnei Sachnin FC,Maccabi Tel Aviv,0,4,2,0-2,2024-25_il1.txt
+15.00,Ironi Kiryat Shmona,Hapoel Haifa,2,1,1,0-1,2024-25_il1.txt
+15.00,Maccabi Petach-Tikva,Maccabi Haifa,1,2,2,0-0,2024-25_il1.txt
+18.00,Hapoel Hadera,Bnei Sachnin FC,0,0,X,,2024-25_il1.txt
+,FC Ashdod,Ironi Tiberias,1,0,1,1-0,2024-25_il1.txt
+19.30,Hapoel Be'er Sheva,Maccabi Netanya,1,0,1,0-0,2024-25_il1.txt
+20.30,Hapoel Jerusalem,Beitar Jerusalem,3,3,X,2-2,2024-25_il1.txt
+20.00,Maccabi Bnei Raina,Maccabi Tel Aviv,1,2,2,1-0,2024-25_il1.txt
+19.45,Bnei Sachnin FC,Hapoel Haifa,0,2,2,0-0,2024-25_il1.txt
+20.00,Maccabi Netanya,FC Ashdod,2,2,X,2-0,2024-25_il1.txt
+19.45,Ironi Kiryat Shmona,Hapoel Jerusalem,2,0,1,1-0,2024-25_il1.txt
+20.00,Beitar Jerusalem,Maccabi Petach-Tikva,5,0,1,5-0,2024-25_il1.txt
+20.30,Maccabi Haifa,Hapoel Be'er Sheva,0,2,2,0-0,2024-25_il1.txt
+19.45,Maccabi Bnei Raina,Ironi Tiberias,1,0,1,1-0,2024-25_il1.txt
+20.00,Maccabi Tel Aviv,Hapoel Hadera,2,2,X,2-1,2024-25_il1.txt
+15.00,Maccabi Petach-Tikva,Ironi Kiryat Shmona,0,1,2,0-0,2024-25_il1.txt
+19.30,FC Ashdod,Maccabi Haifa,1,3,2,0-2,2024-25_il1.txt
+20.00,Hapoel Jerusalem,Bnei Sachnin FC,1,0,1,1-0,2024-25_il1.txt
+20.15,Hapoel Haifa,Maccabi Tel Aviv,1,1,X,0-1,2024-25_il1.txt
+19.45,Hapoel Hadera,Maccabi Bnei Raina,2,1,1,1-0,2024-25_il1.txt
+20.00,Ironi Tiberias,Maccabi Netanya,2,3,2,2-1,2024-25_il1.txt
+20.30,Hapoel Be'er Sheva,Beitar Jerusalem,4,1,1,3-0,2024-25_il1.txt
+15.00,Maccabi Netanya,Maccabi Bnei Raina,2,0,1,1-0,2024-25_il1.txt
+17.30,Hapoel Be'er Sheva,Ironi Kiryat Shmona,5,1,1,4-0,2024-25_il1.txt
+18.00,Maccabi Petach-Tikva,Bnei Sachnin FC,1,1,X,0-0,2024-25_il1.txt
+,Hapoel Haifa,Hapoel Hadera,3,0,1,1-0,2024-25_il1.txt
+19.30,FC Ashdod,Beitar Jerusalem,2,3,2,2-2,2024-25_il1.txt
+20.15,Ironi Tiberias,Maccabi Haifa,0,0,X,,2024-25_il1.txt
+20.30,Hapoel Jerusalem,Maccabi Tel Aviv,2,3,2,0-1,2024-25_il1.txt
+15.00,Maccabi Tel Aviv,Maccabi Petach-Tikva,3,2,1,1-2,2024-25_il1.txt
+17.30,Maccabi Bnei Raina,Hapoel Haifa,0,2,2,0-1,2024-25_il1.txt
+18.00,Hapoel Hadera,Hapoel Jerusalem,1,1,X,1-0,2024-25_il1.txt
+19.30,Bnei Sachnin FC,Hapoel Be'er Sheva,0,0,X,,2024-25_il1.txt
+20.00,Maccabi Haifa,Maccabi Netanya,2,1,1,1-1,2024-25_il1.txt
+20.00,Ironi Kiryat Shmona,FC Ashdod,3,2,1,3-1,2024-25_il1.txt
+20.00,Beitar Jerusalem,Ironi Tiberias,1,1,X,0-0,2024-25_il1.txt
+19.30,Ironi Tiberias,Ironi Kiryat Shmona,3,1,1,1-1,2024-25_il1.txt
+19.45,Maccabi Petach-Tikva,Hapoel Hadera,0,0,X,,2024-25_il1.txt
+20.00,FC Ashdod,Bnei Sachnin FC,3,5,2,2-2,2024-25_il1.txt
+19.45,Hapoel Jerusalem,Hapoel Haifa,1,0,1,1-0,2024-25_il1.txt
+20.00,Maccabi Netanya,Beitar Jerusalem,3,0,1,1-0,2024-25_il1.txt
+20.30,Hapoel Be'er Sheva,Maccabi Tel Aviv,2,2,X,0-0,2024-25_il1.txt
+20.00,Maccabi Haifa,Maccabi Bnei Raina,2,0,1,1-0,2024-25_il1.txt
+15.00,Hapoel Haifa,Maccabi Petach-Tikva,5,1,1,2-0,2024-25_il1.txt
+17.30,Maccabi Tel Aviv,FC Ashdod,5,1,1,0-1,2024-25_il1.txt
+18.00,Bnei Sachnin FC,Ironi Tiberias,0,0,X,,2024-25_il1.txt
+19.30,Hapoel Hadera,Hapoel Be'er Sheva,1,2,2,0-1,2024-25_il1.txt
+20.15,Ironi Kiryat Shmona,Maccabi Netanya,0,1,2,0-0,2024-25_il1.txt
+20.00,Maccabi Bnei Raina,Hapoel Jerusalem,0,0,X,,2024-25_il1.txt
+20.30,Maccabi Haifa,Beitar Jerusalem,1,3,2,0-1,2024-25_il1.txt
+15.00,Maccabi Haifa,Ironi Kiryat Shmona,4,1,1,3-0,2024-25_il1.txt
+18.00,Beitar Jerusalem,Maccabi Bnei Raina,1,4,2,1-2,2024-25_il1.txt
+,Maccabi Netanya,Bnei Sachnin FC,4,0,1,2-0,2024-25_il1.txt
+,Maccabi Petach-Tikva,Hapoel Jerusalem,2,0,1,0-0,2024-25_il1.txt
+19.30,Ironi Tiberias,Maccabi Tel Aviv,2,2,X,0-1,2024-25_il1.txt
+20.00,FC Ashdod,Hapoel Hadera,1,1,X,0-0,2024-25_il1.txt
+20.30,Hapoel Haifa,Hapoel Be'er Sheva,0,1,2,0-0,2024-25_il1.txt
+15.00,Ironi Kiryat Shmona,Beitar Jerusalem,0,3,2,0-1,2024-25_il1.txt
+17.30,Bnei Sachnin FC,Maccabi Haifa,0,3,2,,2024-25_il1.txt
+18.00,Maccabi Bnei Raina,Maccabi Petach-Tikva,1,2,2,1-1,2024-25_il1.txt
+20.00,Maccabi Tel Aviv,Maccabi Netanya,4,1,1,3-0,2024-25_il1.txt
+20.15,Hapoel Jerusalem,Hapoel Be'er Sheva,0,2,2,0-1,2024-25_il1.txt
+20.00,Hapoel Haifa,FC Ashdod,2,1,1,1-1,2024-25_il1.txt
+,Hapoel Hadera,Ironi Tiberias,1,2,2,0-1,2024-25_il1.txt
+15.00,Beitar Jerusalem,Bnei Sachnin FC,1,0,1,1-0,2024-25_il1.txt
+17.30,Ironi Tiberias,Hapoel Haifa,1,1,X,1-1,2024-25_il1.txt
+18.00,Ironi Kiryat Shmona,Maccabi Bnei Raina,0,0,X,,2024-25_il1.txt
+,FC Ashdod,Hapoel Jerusalem,1,1,X,1-0,2024-25_il1.txt
+19.30,Hapoel Be'er Sheva,Maccabi Petach-Tikva,1,0,1,0-0,2024-25_il1.txt
+20.15,Maccabi Netanya,Hapoel Hadera,2,1,1,1-1,2024-25_il1.txt
+20.30,Maccabi Haifa,Maccabi Tel Aviv,0,3,2,,2024-25_il1.txt
+15.00,Maccabi Bnei Raina,Hapoel Be'er Sheva,1,0,1,0-0,2024-25_il1.txt
+17.30,Hapoel Jerusalem,Ironi Tiberias,4,0,1,1-0,2024-25_il1.txt
+18.00,Maccabi Petach-Tikva,FC Ashdod,2,2,X,0-2,2024-25_il1.txt
+,Bnei Sachnin FC,Ironi Kiryat Shmona,0,1,2,0-1,2024-25_il1.txt
+19.30,Hapoel Hadera,Maccabi Haifa,1,3,2,1-0,2024-25_il1.txt
+20.15,Hapoel Haifa,Maccabi Netanya,1,3,2,1-2,2024-25_il1.txt
+20.30,Maccabi Tel Aviv,Beitar Jerusalem,1,1,X,0-0,2024-25_il1.txt
+15.00,Maccabi Netanya,Hapoel Jerusalem,2,1,1,0-1,2024-25_il1.txt
+17.30,Beitar Jerusalem,Hapoel Hadera,0,0,X,,2024-25_il1.txt
+18.00,Bnei Sachnin FC,Maccabi Bnei Raina,2,0,1,1-0,2024-25_il1.txt
+,Ironi Tiberias,Maccabi Petach-Tikva,1,2,2,0-1,2024-25_il1.txt
+19.30,FC Ashdod,Hapoel Be'er Sheva,0,2,2,0-1,2024-25_il1.txt
+20.15,Ironi Kiryat Shmona,Maccabi Tel Aviv,1,2,2,0-0,2024-25_il1.txt
+20.30,Maccabi Haifa,Hapoel Haifa,1,1,X,0-0,2024-25_il1.txt
+15.00,Hapoel Be'er Sheva,Ironi Tiberias,4,0,1,2-0,2024-25_il1.txt
+17.30,Maccabi Petach-Tikva,Maccabi Netanya,0,1,2,0-1,2024-25_il1.txt
+18.15,Maccabi Bnei Raina,FC Ashdod,1,4,2,0-3,2024-25_il1.txt
+,Hapoel Hadera,Ironi Kiryat Shmona,0,2,2,0-0,2024-25_il1.txt
+19.30,Hapoel Haifa,Beitar Jerusalem,3,2,1,3-0,2024-25_il1.txt
+20.15,Maccabi Tel Aviv,Bnei Sachnin FC,3,1,1,0-0,2024-25_il1.txt
+20.30,Maccabi Haifa,Hapoel Jerusalem,3,3,X,0-2,2024-25_il1.txt
+13.30,Beitar Jerusalem,Hapoel Jerusalem,1,1,X,0-0,2024-25_il1.txt
+15.00,Maccabi Haifa,Maccabi Petach-Tikva,1,0,1,0-0,2024-25_il1.txt
+17.30,Maccabi Tel Aviv,Maccabi Bnei Raina,0,1,2,0-1,2024-25_il1.txt
+18.30,Ironi Tiberias,FC Ashdod,2,1,1,2-1,2024-25_il1.txt
+19.30,Maccabi Netanya,Hapoel Be'er Sheva,1,2,2,1-0,2024-25_il1.txt
+20.00,Bnei Sachnin FC,Hapoel Hadera,0,1,2,0-0,2024-25_il1.txt
+20.00,Hapoel Haifa,Ironi Kiryat Shmona,4,3,1,3-2,2024-25_il1.txt
+15.00,Hapoel Jerusalem,Ironi Kiryat Shmona,0,0,X,,2024-25_il1.txt
+17.30,FC Ashdod,Maccabi Netanya,0,0,X,,2024-25_il1.txt
+19.30,Hapoel Hadera,Maccabi Tel Aviv,2,3,2,2-1,2024-25_il1.txt
+20.00,Ironi Tiberias,Maccabi Bnei Raina,1,0,1,1-0,2024-25_il1.txt
+20.00,Hapoel Haifa,Bnei Sachnin FC,2,1,1,1-1,2024-25_il1.txt
+20.15,Maccabi Petach-Tikva,Beitar Jerusalem,1,2,2,0-1,2024-25_il1.txt
+20.30,Hapoel Be'er Sheva,Maccabi Haifa,3,3,X,0-2,2024-25_il1.txt
+15.00,Maccabi Netanya,Ironi Tiberias,1,1,X,0-0,2024-25_il1.txt
+19.30,Maccabi Tel Aviv,Hapoel Haifa,2,0,1,1-0,2024-25_il1.txt
+20.00,Maccabi Bnei Raina,Hapoel Hadera,1,2,2,0-1,2024-25_il1.txt
+,Bnei Sachnin FC,Hapoel Jerusalem,0,2,2,0-1,2024-25_il1.txt
+19.30,Ironi Kiryat Shmona,Maccabi Petach-Tikva,2,0,1,0-0,2024-25_il1.txt
+20.15,Maccabi Haifa,FC Ashdod,1,2,2,0-1,2024-25_il1.txt
+20.30,Beitar Jerusalem,Hapoel Be'er Sheva,1,1,X,1-1,2024-25_il1.txt
+15.00,Hapoel Be'er Sheva,Maccabi Netanya,2,0,1,1-0,2024-25_il1.txt
+19.30,Maccabi Tel Aviv,Hapoel Haifa,3,0,1,2-0,2024-25_il1.txt
+20.30,Maccabi Haifa,Beitar Jerusalem,3,3,X,2-2,2024-25_il1.txt
+20.15,Hapoel Haifa,Maccabi Haifa,0,2,2,0-1,2024-25_il1.txt
+20.15,Maccabi Netanya,Beitar Jerusalem,0,1,2,0-0,2024-25_il1.txt
+20.30,Hapoel Be'er Sheva,Maccabi Tel Aviv,1,3,2,0-3,2024-25_il1.txt
+20.00,Maccabi Tel Aviv,Maccabi Netanya,4,1,1,3-1,2024-25_il1.txt
+20.15,Beitar Jerusalem,Hapoel Haifa,0,1,2,0-0,2024-25_il1.txt
+20.30,Maccabi Haifa,Hapoel Be'er Sheva,0,3,2,0-0,2024-25_il1.txt
+19.00,Maccabi Netanya,Hapoel Haifa,2,2,X,1-0,2024-25_il1.txt
+19.45,Hapoel Be'er Sheva,Beitar Jerusalem,3,1,1,1-1,2024-25_il1.txt
+20.30,Maccabi Tel Aviv,Maccabi Haifa,1,1,X,0-0,2024-25_il1.txt
+20.30,Hapoel Haifa,Hapoel Be'er Sheva,1,2,2,1-1,2024-25_il1.txt
+20.15,Maccabi Haifa,Maccabi Netanya,1,0,1,1-0,2024-25_il1.txt
+20.30,Beitar Jerusalem,Maccabi Tel Aviv,3,1,1,0-0,2024-25_il1.txt
+20.30,Hapoel Haifa,Maccabi Tel Aviv,1,3,2,1-1,2024-25_il1.txt
+20.15,Maccabi Netanya,Hapoel Be'er Sheva,2,1,1,1-1,2024-25_il1.txt
+20.30,Beitar Jerusalem,Maccabi Haifa,1,2,2,0-2,2024-25_il1.txt
+20.30,Maccabi Haifa,Hapoel Haifa,1,5,2,0-3,2024-25_il1.txt
+20.15,Beitar Jerusalem,Maccabi Netanya,0,3,2,0-3,2024-25_il1.txt
+20.30,Maccabi Tel Aviv,Hapoel Be'er Sheva,1,1,X,1-1,2024-25_il1.txt
+20.15,Hapoel Haifa,Beitar Jerusalem,1,0,1,1-0,2024-25_il1.txt
+20.30,Maccabi Netanya,Maccabi Tel Aviv,1,6,2,1-2,2024-25_il1.txt
+,Hapoel Be'er Sheva,Maccabi Haifa,4,1,1,2-0,2024-25_il1.txt
+20.30,Hapoel Haifa,Maccabi Netanya,1,1,X,1-0,2024-25_il1.txt
+20.30,Beitar Jerusalem,Hapoel Be'er Sheva,1,1,X,0-0,2024-25_il1.txt
+,Maccabi Haifa,Maccabi Tel Aviv,0,3,2,0-1,2024-25_il1.txt
+20.30,Maccabi Netanya,Maccabi Haifa,2,3,2,2-1,2024-25_il1.txt
+,Maccabi Tel Aviv,Beitar Jerusalem,5,0,1,2-0,2024-25_il1.txt
+,Hapoel Be'er Sheva,Hapoel Haifa,5,0,1,2-0,2024-25_il1.txt
+18.30,Ironi Kiryat Shmona,Maccabi Petach-Tikva,2,1,1,2-0,2024-25_il1.txt
+,Ironi Tiberias,Hapoel Hadera,1,1,X,0-0,2024-25_il1.txt
+20.00,Hapoel Jerusalem,Bnei Sachnin FC,4,1,1,3-1,2024-25_il1.txt
+20.00,Maccabi Bnei Raina,FC Ashdod,1,1,X,1-1,2024-25_il1.txt
+20.00,Maccabi Petach-Tikva,Hapoel Hadera,4,1,1,1-1,2024-25_il1.txt
+,Bnei Sachnin FC,Ironi Tiberias,2,1,1,1-0,2024-25_il1.txt
+,FC Ashdod,Hapoel Jerusalem,1,1,X,0-1,2024-25_il1.txt
+,Ironi Kiryat Shmona,Maccabi Bnei Raina,0,3,2,0-2,2024-25_il1.txt
+20.00,Maccabi Bnei Raina,Maccabi Petach-Tikva,0,2,2,0-2,2024-25_il1.txt
+,Hapoel Jerusalem,Ironi Kiryat Shmona,2,0,1,1-0,2024-25_il1.txt
+20.00,Ironi Tiberias,FC Ashdod,1,2,2,0-1,2024-25_il1.txt
+20.00,Hapoel Hadera,Bnei Sachnin FC,0,1,2,0-1,2024-25_il1.txt
+20.30,Maccabi Petach-Tikva,Bnei Sachnin FC,1,2,2,0-1,2024-25_il1.txt
+,FC Ashdod,Hapoel Hadera,4,1,1,2-1,2024-25_il1.txt
+,Ironi Kiryat Shmona,Ironi Tiberias,0,2,2,0-2,2024-25_il1.txt
+,Maccabi Bnei Raina,Hapoel Jerusalem,2,1,1,0-0,2024-25_il1.txt
+20.30,Hapoel Jerusalem,Maccabi Petach-Tikva,0,0,X,,2024-25_il1.txt
+,Ironi Tiberias,Maccabi Bnei Raina,2,1,1,1-1,2024-25_il1.txt
+,Hapoel Hadera,Ironi Kiryat Shmona,1,0,1,0-0,2024-25_il1.txt
+,Bnei Sachnin FC,FC Ashdod,0,0,X,,2024-25_il1.txt
+20.30,Maccabi Petach-Tikva,FC Ashdod,1,1,X,1-1,2024-25_il1.txt
+,Ironi Kiryat Shmona,Bnei Sachnin FC,0,1,2,0-0,2024-25_il1.txt
+,Maccabi Bnei Raina,Hapoel Hadera,1,2,2,0-1,2024-25_il1.txt
+,Hapoel Jerusalem,Ironi Tiberias,3,1,1,2-0,2024-25_il1.txt
+20.30,Ironi Tiberias,Maccabi Petach-Tikva,0,0,X,,2024-25_il1.txt
+,Hapoel Hadera,Hapoel Jerusalem,2,4,2,0-2,2024-25_il1.txt
+,Bnei Sachnin FC,Maccabi Bnei Raina,0,1,2,0-1,2024-25_il1.txt
+,FC Ashdod,Ironi Kiryat Shmona,4,2,1,0-0,2024-25_il1.txt
+19.00,Hapoel Ramat Gan,Hapoel Kfar Saba,2,0,1,2-0,2024-25_il2.txt
+,Maccabi Kabilio Jaffa,Maccabi Herzliya,1,1,X,1-0,2024-25_il2.txt
+,Hapoel Nir Ramat HaSharon,Hapoel Kfar Shalem,3,4,2,1-1,2024-25_il2.txt
+,Hapoel Ra'anana,Hapoel Nof HaGalil,2,2,X,1-0,2024-25_il2.txt
+19.00,Bnei Yehuda Tel Aviv,MS Kafr Qasim,1,1,X,1-0,2024-25_il2.txt
+,Hapoel Rishon LeZion,Hapoel Tel Aviv,2,1,1,0-0,2024-25_il2.txt
+,Hapoel Petach-Tikva,Hapoel Umm al-Fahm,2,1,1,1-0,2024-25_il2.txt
+19.00,Hapoel Afula,Hapoel Acre FC,1,1,X,1-1,2024-25_il2.txt
+19.00,Hapoel Nof HaGalil,Hapoel Ramat Gan,1,2,2,1-2,2024-25_il2.txt
+,Hapoel Kfar Shalem,Hapoel Ra'anana,3,1,1,1-1,2024-25_il2.txt
+,Hapoel Tel Aviv,Hapoel Petach-Tikva,2,2,X,1-0,2024-25_il2.txt
+,MS Kafr Qasim,Hapoel Rishon LeZion,1,1,X,0-0,2024-25_il2.txt
+,Hapoel Acre FC,Bnei Yehuda Tel Aviv,1,3,2,1-0,2024-25_il2.txt
+19.00,Hapoel Umm al-Fahm,Hapoel Nir Ramat HaSharon,0,3,2,0-2,2024-25_il2.txt
+,Maccabi Herzliya,Hapoel Afula,2,2,X,2-1,2024-25_il2.txt
+,Hapoel Kfar Saba,Maccabi Kabilio Jaffa,2,1,1,0-0,2024-25_il2.txt
+19.00,Hapoel Afula,Hapoel Kfar Saba,1,1,X,1-1,2024-25_il2.txt
+,Hapoel Rishon LeZion,Hapoel Acre FC,0,1,2,0-0,2024-25_il2.txt
+,Hapoel Nir Ramat HaSharon,Hapoel Tel Aviv,1,2,2,0-1,2024-25_il2.txt
+,Hapoel Nof HaGalil,Hapoel Kfar Shalem,1,3,2,1-3,2024-25_il2.txt
+19.00,Maccabi Kabilio Jaffa,Hapoel Ramat Gan,3,0,1,2-0,2024-25_il2.txt
+,Bnei Yehuda Tel Aviv,Maccabi Herzliya,3,1,1,1-0,2024-25_il2.txt
+,Hapoel Ra'anana,Hapoel Umm al-Fahm,2,1,1,2-1,2024-25_il2.txt
+19.00,Hapoel Petach-Tikva,MS Kafr Qasim,1,0,1,1-0,2024-25_il2.txt
+19.00,Hapoel Ramat Gan,Hapoel Kfar Shalem,0,6,2,0-3,2024-25_il2.txt
+,Hapoel Umm al-Fahm,Hapoel Nof HaGalil,0,1,2,0-1,2024-25_il2.txt
+,MS Kafr Qasim,Hapoel Nir Ramat HaSharon,2,0,1,1-0,2024-25_il2.txt
+,Maccabi Herzliya,Hapoel Rishon LeZion,2,5,2,1-0,2024-25_il2.txt
+,Maccabi Kabilio Jaffa,Hapoel Afula,2,2,X,1-1,2024-25_il2.txt
+19.00,Hapoel Tel Aviv,Hapoel Ra'anana,1,1,X,0-0,2024-25_il2.txt
+,Hapoel Acre FC,Hapoel Petach-Tikva,0,1,2,0-1,2024-25_il2.txt
+,Hapoel Kfar Saba,Bnei Yehuda Tel Aviv,1,1,X,0-0,2024-25_il2.txt
+19.00,Hapoel Afula,Hapoel Ramat Gan,0,4,2,0-1,2024-25_il2.txt
+,Hapoel Petach-Tikva,Maccabi Herzliya,1,0,1,1-0,2024-25_il2.txt
+,Hapoel Nir Ramat HaSharon,Hapoel Acre FC,3,1,1,1-0,2024-25_il2.txt
+,Hapoel Ra'anana,MS Kafr Qasim,1,2,2,0-2,2024-25_il2.txt
+,Hapoel Nof HaGalil,Hapoel Tel Aviv,3,4,2,2-1,2024-25_il2.txt
+19.00,Bnei Yehuda Tel Aviv,Maccabi Kabilio Jaffa,1,0,1,0-0,2024-25_il2.txt
+,Hapoel Rishon LeZion,Hapoel Kfar Saba,1,2,2,1-1,2024-25_il2.txt
+,Hapoel Kfar Shalem,Hapoel Umm al-Fahm,1,0,1,0-0,2024-25_il2.txt
+19.00,Hapoel Ramat Gan,Hapoel Umm al-Fahm,3,0,1,1-0,2024-25_il2.txt
+,Maccabi Herzliya,Hapoel Nir Ramat HaSharon,2,1,1,2-0,2024-25_il2.txt
+,Hapoel Kfar Saba,Hapoel Petach-Tikva,2,3,2,2-3,2024-25_il2.txt
+,Maccabi Kabilio Jaffa,Hapoel Rishon LeZion,2,0,1,1-0,2024-25_il2.txt
+19.00,Hapoel Tel Aviv,Hapoel Kfar Shalem,3,0,1,1-0,2024-25_il2.txt
+,Hapoel Afula,Bnei Yehuda Tel Aviv,2,2,X,1-0,2024-25_il2.txt
+,Hapoel Ra'anana,Hapoel Acre FC,2,1,1,0-1,2024-25_il2.txt
+19.00,MS Kafr Qasim,Hapoel Nof HaGalil,2,0,1,1-0,2024-25_il2.txt
+19.00,Bnei Yehuda Tel Aviv,Hapoel Ramat Gan,1,3,2,1-1,2024-25_il2.txt
+,Hapoel Rishon LeZion,Hapoel Afula,2,0,1,0-0,2024-25_il2.txt
+,Hapoel Petach-Tikva,Maccabi Kabilio Jaffa,0,0,X,,2024-25_il2.txt
+,Hapoel Nir Ramat HaSharon,Hapoel Kfar Saba,2,2,X,1-1,2024-25_il2.txt
+,Hapoel Ra'anana,Maccabi Herzliya,1,2,2,1-0,2024-25_il2.txt
+,Hapoel Nof HaGalil,Hapoel Acre FC,1,2,2,0-1,2024-25_il2.txt
+,Hapoel Kfar Shalem,MS Kafr Qasim,1,1,X,0-1,2024-25_il2.txt
+,Hapoel Umm al-Fahm,Hapoel Tel Aviv,1,1,X,0-1,2024-25_il2.txt
+20.00,Hapoel Ramat Gan,Hapoel Tel Aviv,1,3,2,1-0,2024-25_il2.txt
+,MS Kafr Qasim,Hapoel Umm al-Fahm,1,1,X,0-0,2024-25_il2.txt
+,Hapoel Acre FC,Hapoel Kfar Shalem,0,1,2,0-0,2024-25_il2.txt
+,Maccabi Herzliya,Hapoel Nof HaGalil,2,1,1,2-0,2024-25_il2.txt
+,Hapoel Afula,Hapoel Petach-Tikva,0,2,2,0-0,2024-25_il2.txt
+19.00,Hapoel Kfar Saba,Hapoel Ra'anana,2,2,X,1-2,2024-25_il2.txt
+,Maccabi Kabilio Jaffa,Hapoel Nir Ramat HaSharon,2,4,2,0-2,2024-25_il2.txt
+,Bnei Yehuda Tel Aviv,Hapoel Rishon LeZion,1,0,1,0-0,2024-25_il2.txt
+16.00,Hapoel Rishon LeZion,Hapoel Ramat Gan,0,1,2,0-0,2024-25_il2.txt
+,Hapoel Nir Ramat HaSharon,Hapoel Afula,3,1,1,0-0,2024-25_il2.txt
+,Hapoel Nof HaGalil,Hapoel Kfar Saba,0,1,2,0-1,2024-25_il2.txt
+,Hapoel Umm al-Fahm,Hapoel Acre FC,1,2,2,1-2,2024-25_il2.txt
+,Hapoel Tel Aviv,MS Kafr Qasim,0,1,2,0-0,2024-25_il2.txt
+19.00,Hapoel Petach-Tikva,Bnei Yehuda Tel Aviv,4,1,1,2-0,2024-25_il2.txt
+,Hapoel Ra'anana,Maccabi Kabilio Jaffa,1,1,X,0-1,2024-25_il2.txt
+,Hapoel Kfar Shalem,Maccabi Herzliya,2,1,1,1-0,2024-25_il2.txt
+16.00,Hapoel Ramat Gan,MS Kafr Qasim,3,0,1,1-0,2024-25_il2.txt
+,Hapoel Acre FC,Hapoel Tel Aviv,0,1,2,0-0,2024-25_il2.txt
+,Maccabi Herzliya,Hapoel Umm al-Fahm,2,2,X,1-1,2024-25_il2.txt
+,Hapoel Kfar Saba,Hapoel Kfar Shalem,2,2,X,0-0,2024-25_il2.txt
+,Maccabi Kabilio Jaffa,Hapoel Nof HaGalil,0,3,2,0-2,2024-25_il2.txt
+,Hapoel Afula,Hapoel Ra'anana,0,4,2,0-2,2024-25_il2.txt
+,Bnei Yehuda Tel Aviv,Hapoel Nir Ramat HaSharon,3,0,1,1-0,2024-25_il2.txt
+,Hapoel Rishon LeZion,Hapoel Petach-Tikva,0,2,2,0-2,2024-25_il2.txt
+19.00,Hapoel Petach-Tikva,Hapoel Ramat Gan,1,1,X,1-1,2024-25_il2.txt
+,Hapoel Nir Ramat HaSharon,Hapoel Rishon LeZion,4,1,1,0-0,2024-25_il2.txt
+,Hapoel Ra'anana,Bnei Yehuda Tel Aviv,0,1,2,0-0,2024-25_il2.txt
+,Hapoel Nof HaGalil,Hapoel Afula,1,1,X,0-1,2024-25_il2.txt
+,Hapoel Kfar Shalem,Maccabi Kabilio Jaffa,4,1,1,2-0,2024-25_il2.txt
+,Hapoel Umm al-Fahm,Hapoel Kfar Saba,2,1,1,0-0,2024-25_il2.txt
+,Hapoel Tel Aviv,Maccabi Herzliya,3,0,1,1-0,2024-25_il2.txt
+,MS Kafr Qasim,Hapoel Acre FC,4,0,1,2-0,2024-25_il2.txt
+15.00,Hapoel Ramat Gan,Hapoel Acre FC,2,0,1,1-0,2024-25_il2.txt
+,Maccabi Herzliya,MS Kafr Qasim,1,0,1,0-0,2024-25_il2.txt
+,Maccabi Kabilio Jaffa,Hapoel Umm al-Fahm,3,1,1,0-1,2024-25_il2.txt
+,Bnei Yehuda Tel Aviv,Hapoel Nof HaGalil,0,2,2,0-0,2024-25_il2.txt
+,Hapoel Petach-Tikva,Hapoel Nir Ramat HaSharon,3,2,1,0-1,2024-25_il2.txt
+19.00,Hapoel Kfar Saba,Hapoel Tel Aviv,2,2,X,2-2,2024-25_il2.txt
+,Hapoel Afula,Hapoel Kfar Shalem,1,3,2,1-0,2024-25_il2.txt
+,Hapoel Rishon LeZion,Hapoel Ra'anana,2,0,1,1-0,2024-25_il2.txt
+15.00,Hapoel Nir Ramat HaSharon,Hapoel Ramat Gan,0,4,2,0-1,2024-25_il2.txt
+,Hapoel Ra'anana,Hapoel Petach-Tikva,1,1,X,0-1,2024-25_il2.txt
+,Hapoel Nof HaGalil,Hapoel Rishon LeZion,3,2,1,2-2,2024-25_il2.txt
+,Hapoel Tel Aviv,Maccabi Kabilio Jaffa,3,1,1,2-0,2024-25_il2.txt
+,Hapoel Acre FC,Maccabi Herzliya,0,2,2,0-1,2024-25_il2.txt
+19.00,Hapoel Kfar Shalem,Bnei Yehuda Tel Aviv,2,1,1,0-0,2024-25_il2.txt
+,Hapoel Umm al-Fahm,Hapoel Afula,0,0,X,,2024-25_il2.txt
+,MS Kafr Qasim,Hapoel Kfar Saba,0,1,2,0-0,2024-25_il2.txt
+15.00,Hapoel Kfar Saba,Hapoel Acre FC,0,2,2,0-0,2024-25_il2.txt
+,Maccabi Kabilio Jaffa,MS Kafr Qasim,1,1,X,1-0,2024-25_il2.txt
+,Hapoel Afula,Hapoel Tel Aviv,1,1,X,0-1,2024-25_il2.txt
+,Bnei Yehuda Tel Aviv,Hapoel Umm al-Fahm,2,0,1,1-0,2024-25_il2.txt
+,Hapoel Petach-Tikva,Hapoel Nof HaGalil,2,3,2,2-2,2024-25_il2.txt
+19.00,Hapoel Ramat Gan,Maccabi Herzliya,6,0,1,4-0,2024-25_il2.txt
+,Hapoel Rishon LeZion,Hapoel Kfar Shalem,1,4,2,1-2,2024-25_il2.txt
+,Hapoel Nir Ramat HaSharon,Hapoel Ra'anana,4,0,1,4-0,2024-25_il2.txt
+15.00,Hapoel Ra'anana,Hapoel Ramat Gan,0,1,2,0-0,2024-25_il2.txt
+,Hapoel Nof HaGalil,Hapoel Nir Ramat HaSharon,1,4,2,0-2,2024-25_il2.txt
+,Hapoel Kfar Shalem,Hapoel Petach-Tikva,2,0,1,1-0,2024-25_il2.txt
+,Hapoel Umm al-Fahm,Hapoel Rishon LeZion,0,1,2,0-0,2024-25_il2.txt
+,MS Kafr Qasim,Hapoel Afula,0,0,X,,2024-25_il2.txt
+19.00,Hapoel Tel Aviv,Bnei Yehuda Tel Aviv,2,1,1,1-0,2024-25_il2.txt
+,Hapoel Acre FC,Maccabi Kabilio Jaffa,2,1,1,1-0,2024-25_il2.txt
+,Maccabi Herzliya,Hapoel Kfar Saba,1,0,1,1-0,2024-25_il2.txt
+15.00,Maccabi Herzliya,Maccabi Kabilio Jaffa,1,1,X,1-1,2024-25_il2.txt
+,Hapoel Acre FC,Hapoel Afula,2,1,1,0-1,2024-25_il2.txt
+,Hapoel Umm al-Fahm,Hapoel Petach-Tikva,0,1,2,0-0,2024-25_il2.txt
+,Hapoel Kfar Shalem,Hapoel Nir Ramat HaSharon,1,3,2,1-2,2024-25_il2.txt
+,Hapoel Nof HaGalil,Hapoel Ra'anana,0,0,X,,2024-25_il2.txt
+19.00,Hapoel Kfar Saba,Hapoel Ramat Gan,2,2,X,1-2,2024-25_il2.txt
+,MS Kafr Qasim,Bnei Yehuda Tel Aviv,0,1,2,0-1,2024-25_il2.txt
+,Hapoel Tel Aviv,Hapoel Rishon LeZion,3,0,1,1-0,2024-25_il2.txt
+15.00,Hapoel Ramat Gan,Hapoel Nof HaGalil,3,1,1,1-0,2024-25_il2.txt
+,Hapoel Ra'anana,Hapoel Kfar Shalem,2,2,X,1-2,2024-25_il2.txt
+,Bnei Yehuda Tel Aviv,Hapoel Acre FC,0,1,2,0-0,2024-25_il2.txt
+,Hapoel Afula,Maccabi Herzliya,2,3,2,1-2,2024-25_il2.txt
+,Maccabi Kabilio Jaffa,Hapoel Kfar Saba,0,1,2,0-0,2024-25_il2.txt
+19.00,Hapoel Nir Ramat HaSharon,Hapoel Umm al-Fahm,2,1,1,1-0,2024-25_il2.txt
+,Hapoel Petach-Tikva,Hapoel Tel Aviv,0,1,2,0-0,2024-25_il2.txt
+,Hapoel Rishon LeZion,MS Kafr Qasim,0,1,2,0-1,2024-25_il2.txt
+15.00,Hapoel Ramat Gan,Maccabi Kabilio Jaffa,2,1,1,0-1,2024-25_il2.txt
+,Maccabi Herzliya,Bnei Yehuda Tel Aviv,3,2,1,2-0,2024-25_il2.txt
+,Hapoel Acre FC,Hapoel Rishon LeZion,1,2,2,0-0,2024-25_il2.txt
+,MS Kafr Qasim,Hapoel Petach-Tikva,0,2,2,0-1,2024-25_il2.txt
+,Hapoel Tel Aviv,Hapoel Nir Ramat HaSharon,4,2,1,1-1,2024-25_il2.txt
+19.00,Hapoel Kfar Saba,Hapoel Afula,2,0,1,1-0,2024-25_il2.txt
+,Hapoel Umm al-Fahm,Hapoel Ra'anana,2,3,2,0-2,2024-25_il2.txt
+,Hapoel Kfar Shalem,Hapoel Nof HaGalil,4,3,1,2-1,2024-25_il2.txt
+15.00,Hapoel Nof HaGalil,Hapoel Umm al-Fahm,2,1,1,1-0,2024-25_il2.txt
+,Hapoel Rishon LeZion,Maccabi Herzliya,2,0,1,1-0,2024-25_il2.txt
+,Bnei Yehuda Tel Aviv,Hapoel Kfar Saba,1,1,X,1-1,2024-25_il2.txt
+,Hapoel Afula,Maccabi Kabilio Jaffa,2,2,X,1-1,2024-25_il2.txt
+19.00,Hapoel Kfar Shalem,Hapoel Ramat Gan,0,2,2,0-0,2024-25_il2.txt
+,Hapoel Ra'anana,Hapoel Tel Aviv,0,1,2,0-1,2024-25_il2.txt
+,Hapoel Nir Ramat HaSharon,MS Kafr Qasim,1,0,1,0-0,2024-25_il2.txt
+,Hapoel Petach-Tikva,Hapoel Acre FC,3,0,1,0-0,2024-25_il2.txt
+15.00,Maccabi Kabilio Jaffa,Bnei Yehuda Tel Aviv,1,2,2,0-1,2024-25_il2.txt
+,Hapoel Kfar Saba,Hapoel Rishon LeZion,2,2,X,1-0,2024-25_il2.txt
+,Maccabi Herzliya,Hapoel Petach-Tikva,1,2,2,0-0,2024-25_il2.txt
+,MS Kafr Qasim,Hapoel Ra'anana,1,1,X,0-0,2024-25_il2.txt
+,Hapoel Umm al-Fahm,Hapoel Kfar Shalem,0,2,2,0-1,2024-25_il2.txt
+19.00,Hapoel Ramat Gan,Hapoel Afula,3,1,1,2-1,2024-25_il2.txt
+,Hapoel Acre FC,Hapoel Nir Ramat HaSharon,2,0,1,1-0,2024-25_il2.txt
+,Hapoel Tel Aviv,Hapoel Nof HaGalil,2,0,1,1-0,2024-25_il2.txt
+15.00,Hapoel Acre FC,Hapoel Ra'anana,0,2,2,0-0,2024-25_il2.txt
+,Hapoel Umm al-Fahm,Hapoel Ramat Gan,1,0,1,0-0,2024-25_il2.txt
+,Hapoel Kfar Shalem,Hapoel Tel Aviv,1,1,X,0-0,2024-25_il2.txt
+,Hapoel Nof HaGalil,MS Kafr Qasim,0,1,2,0-1,2024-25_il2.txt
+,Hapoel Nir Ramat HaSharon,Maccabi Herzliya,2,2,X,2-1,2024-25_il2.txt
+,Hapoel Petach-Tikva,Hapoel Kfar Saba,1,0,1,1-0,2024-25_il2.txt
+,Hapoel Rishon LeZion,Maccabi Kabilio Jaffa,1,1,X,1-1,2024-25_il2.txt
+,Bnei Yehuda Tel Aviv,Hapoel Afula,0,1,2,0-1,2024-25_il2.txt
+19.00,Hapoel Ramat Gan,Bnei Yehuda Tel Aviv,2,0,1,0-0,2024-25_il2.txt
+,Hapoel Afula,Hapoel Rishon LeZion,0,1,2,0-0,2024-25_il2.txt
+,Maccabi Kabilio Jaffa,Hapoel Petach-Tikva,0,3,2,0-1,2024-25_il2.txt
+,Hapoel Kfar Saba,Hapoel Nir Ramat HaSharon,2,0,1,1-0,2024-25_il2.txt
+,Maccabi Herzliya,Hapoel Ra'anana,1,0,1,1-0,2024-25_il2.txt
+,Hapoel Acre FC,Hapoel Nof HaGalil,2,0,1,0-0,2024-25_il2.txt
+,MS Kafr Qasim,Hapoel Kfar Shalem,1,1,X,0-0,2024-25_il2.txt
+,Hapoel Tel Aviv,Hapoel Umm al-Fahm,4,0,1,2-0,2024-25_il2.txt
+15.00,Hapoel Tel Aviv,Hapoel Ramat Gan,1,0,1,0-0,2024-25_il2.txt
+,Hapoel Umm al-Fahm,MS Kafr Qasim,0,2,2,0-1,2024-25_il2.txt
+,Hapoel Nof HaGalil,Maccabi Herzliya,0,1,2,0-0,2024-25_il2.txt
+,Hapoel Ra'anana,Hapoel Kfar Saba,2,1,1,1-1,2024-25_il2.txt
+,Hapoel Nir Ramat HaSharon,Maccabi Kabilio Jaffa,1,0,1,0-0,2024-25_il2.txt
+19.00,Hapoel Kfar Shalem,Hapoel Acre FC,4,1,1,2-0,2024-25_il2.txt
+,Hapoel Petach-Tikva,Hapoel Afula,5,0,1,3-0,2024-25_il2.txt
+,Hapoel Rishon LeZion,Bnei Yehuda Tel Aviv,1,2,2,1-1,2024-25_il2.txt
+15.00,Hapoel Ramat Gan,Hapoel Rishon LeZion,0,0,X,,2024-25_il2.txt
+,Maccabi Kabilio Jaffa,Hapoel Ra'anana,0,0,X,,2024-25_il2.txt
+,Hapoel Kfar Saba,Hapoel Nof HaGalil,2,0,1,2-0,2024-25_il2.txt
+,Maccabi Herzliya,Hapoel Kfar Shalem,2,1,1,1-1,2024-25_il2.txt
+,MS Kafr Qasim,Hapoel Tel Aviv,1,2,2,1-1,2024-25_il2.txt
+19.00,Bnei Yehuda Tel Aviv,Hapoel Petach-Tikva,1,1,X,1-1,2024-25_il2.txt
+,Hapoel Afula,Hapoel Nir Ramat HaSharon,2,0,1,2-0,2024-25_il2.txt
+,Hapoel Acre FC,Hapoel Umm al-Fahm,1,0,1,1-0,2024-25_il2.txt
+15.00,MS Kafr Qasim,Hapoel Ramat Gan,1,0,1,0-0,2024-25_il2.txt
+,Hapoel Tel Aviv,Hapoel Acre FC,3,0,1,0-0,2024-25_il2.txt
+,Hapoel Nof HaGalil,Maccabi Kabilio Jaffa,0,1,2,0-0,2024-25_il2.txt
+,Hapoel Ra'anana,Hapoel Afula,1,0,1,0-0,2024-25_il2.txt
+,Hapoel Petach-Tikva,Hapoel Rishon LeZion,3,0,1,0-0,2024-25_il2.txt
+19.00,Hapoel Umm al-Fahm,Maccabi Herzliya,2,1,1,1-0,2024-25_il2.txt
+,Hapoel Kfar Shalem,Hapoel Kfar Saba,2,1,1,0-0,2024-25_il2.txt
+,Hapoel Nir Ramat HaSharon,Bnei Yehuda Tel Aviv,0,2,2,0-2,2024-25_il2.txt
+15.00,Hapoel Rishon LeZion,Hapoel Nir Ramat HaSharon,6,1,1,3-1,2024-25_il2.txt
+,Bnei Yehuda Tel Aviv,Hapoel Ra'anana,0,1,2,0-0,2024-25_il2.txt
+,Hapoel Afula,Hapoel Nof HaGalil,0,0,X,,2024-25_il2.txt
+,Maccabi Kabilio Jaffa,Hapoel Kfar Shalem,3,2,1,3-0,2024-25_il2.txt
+,Hapoel Kfar Saba,Hapoel Umm al-Fahm,2,0,1,0-0,2024-25_il2.txt
+19.00,Hapoel Ramat Gan,Hapoel Petach-Tikva,1,2,2,0-0,2024-25_il2.txt
+,Maccabi Herzliya,Hapoel Tel Aviv,0,3,2,0-2,2024-25_il2.txt
+,Hapoel Acre FC,MS Kafr Qasim,1,0,1,0-0,2024-25_il2.txt
+15.00,Hapoel Acre FC,Hapoel Ramat Gan,0,0,X,,2024-25_il2.txt
+,Hapoel Tel Aviv,Hapoel Kfar Saba,3,0,1,3-0,2024-25_il2.txt
+,Hapoel Umm al-Fahm,Maccabi Kabilio Jaffa,0,0,X,,2024-25_il2.txt
+,Hapoel Kfar Shalem,Hapoel Afula,2,0,1,2-0,2024-25_il2.txt
+,Hapoel Nir Ramat HaSharon,Hapoel Petach-Tikva,0,1,2,0-0,2024-25_il2.txt
+19.00,MS Kafr Qasim,Maccabi Herzliya,3,1,1,0-0,2024-25_il2.txt
+,Hapoel Nof HaGalil,Bnei Yehuda Tel Aviv,0,2,2,0-2,2024-25_il2.txt
+,Hapoel Ra'anana,Hapoel Rishon LeZion,2,3,2,1-0,2024-25_il2.txt
+15.00,Hapoel Ramat Gan,Hapoel Nir Ramat HaSharon,8,1,1,3-0,2024-25_il2.txt
+,Hapoel Petach-Tikva,Hapoel Ra'anana,1,0,1,1-0,2024-25_il2.txt
+,Bnei Yehuda Tel Aviv,Hapoel Kfar Shalem,1,0,1,0-0,2024-25_il2.txt
+,Hapoel Afula,Hapoel Umm al-Fahm,2,2,X,1-1,2024-25_il2.txt
+,Maccabi Kabilio Jaffa,Hapoel Tel Aviv,0,3,2,0-0,2024-25_il2.txt
+19.00,Hapoel Rishon LeZion,Hapoel Nof HaGalil,1,0,1,1-0,2024-25_il2.txt
+,Hapoel Kfar Saba,MS Kafr Qasim,1,0,1,1-0,2024-25_il2.txt
+,Maccabi Herzliya,Hapoel Acre FC,0,2,2,0-0,2024-25_il2.txt
+15.00,Maccabi Herzliya,Hapoel Ramat Gan,1,1,X,1-1,2024-25_il2.txt
+,Hapoel Tel Aviv,Hapoel Afula,1,0,1,0-0,2024-25_il2.txt
+,Hapoel Umm al-Fahm,Bnei Yehuda Tel Aviv,1,0,1,0-0,2024-25_il2.txt
+,Hapoel Nof HaGalil,Hapoel Petach-Tikva,0,1,2,0-1,2024-25_il2.txt
+,Hapoel Ra'anana,Hapoel Nir Ramat HaSharon,0,0,X,,2024-25_il2.txt
+19.00,Hapoel Acre FC,Hapoel Kfar Saba,1,1,X,0-1,2024-25_il2.txt
+,MS Kafr Qasim,Maccabi Kabilio Jaffa,1,1,X,1-1,2024-25_il2.txt
+,Hapoel Kfar Shalem,Hapoel Rishon LeZion,2,1,1,1-0,2024-25_il2.txt
+16.00,Hapoel Ramat Gan,Hapoel Ra'anana,1,2,2,0-1,2024-25_il2.txt
+,Hapoel Nir Ramat HaSharon,Hapoel Nof HaGalil,1,1,X,0-0,2024-25_il2.txt
+,Hapoel Petach-Tikva,Hapoel Kfar Shalem,1,0,1,0-0,2024-25_il2.txt
+,Hapoel Rishon LeZion,Hapoel Umm al-Fahm,3,1,1,0-0,2024-25_il2.txt
+,Bnei Yehuda Tel Aviv,Hapoel Tel Aviv,1,4,2,0-4,2024-25_il2.txt
+,Hapoel Afula,MS Kafr Qasim,2,0,1,1-0,2024-25_il2.txt
+,Maccabi Kabilio Jaffa,Hapoel Acre FC,3,2,1,1-0,2024-25_il2.txt
+,Hapoel Kfar Saba,Maccabi Herzliya,0,1,2,0-0,2024-25_il2.txt
+16.00,Hapoel Ramat Gan,Hapoel Rishon LeZion,2,0,1,0-0,2024-25_il2.txt
+19.00,Hapoel Tel Aviv,Bnei Yehuda Tel Aviv,3,0,1,3-0,2024-25_il2.txt
+,Hapoel Petach-Tikva,Hapoel Kfar Saba,1,0,1,1-0,2024-25_il2.txt
+,Hapoel Kfar Shalem,Maccabi Herzliya,0,2,2,0-1,2024-25_il2.txt
+16.00,Maccabi Herzliya,Hapoel Ramat Gan,0,2,2,0-2,2024-25_il2.txt
+,Hapoel Kfar Saba,Hapoel Kfar Shalem,1,0,1,0-0,2024-25_il2.txt
+,Hapoel Tel Aviv,Hapoel Petach-Tikva,0,0,X,,2024-25_il2.txt
+19.00,Bnei Yehuda Tel Aviv,Hapoel Rishon LeZion,2,4,2,1-3,2024-25_il2.txt
+18.30,Hapoel Kfar Shalem,Hapoel Tel Aviv,2,0,1,0-0,2024-25_il2.txt
+19.00,Hapoel Petach-Tikva,Bnei Yehuda Tel Aviv,1,0,1,1-0,2024-25_il2.txt
+,Hapoel Ramat Gan,Hapoel Kfar Saba,4,2,1,2-1,2024-25_il2.txt
+,Hapoel Rishon LeZion,Maccabi Herzliya,1,3,2,1-2,2024-25_il2.txt
+16.00,Bnei Yehuda Tel Aviv,Maccabi Herzliya,3,2,1,1-0,2024-25_il2.txt
+,Hapoel Kfar Saba,Hapoel Rishon LeZion,1,1,X,0-1,2024-25_il2.txt
+19.00,Hapoel Tel Aviv,Hapoel Ramat Gan,1,0,1,1-0,2024-25_il2.txt
+,Hapoel Petach-Tikva,Hapoel Kfar Shalem,5,0,1,3-0,2024-25_il2.txt
+16.00,Hapoel Kfar Shalem,Bnei Yehuda Tel Aviv,0,4,2,0-1,2024-25_il2.txt
+16.00,MS Kafr Qasim,Maccabi Kabilio Jaffa,1,1,X,1-1,2024-25_il2.txt
+,Hapoel Acre FC,Hapoel Afula,2,1,1,1-0,2024-25_il2.txt
+,Hapoel Ra'anana,Hapoel Nof HaGalil,0,0,X,,2024-25_il2.txt
+,Hapoel Nir Ramat HaSharon,Hapoel Umm al-Fahm,3,3,X,2-1,2024-25_il2.txt
+16.00,MS Kafr Qasim,Hapoel Acre FC,2,1,1,1-1,2024-25_il2.txt
+19.00,Maccabi Kabilio Jaffa,Hapoel Umm al-Fahm,2,0,1,0-0,2024-25_il2.txt
+,Hapoel Nof HaGalil,Hapoel Nir Ramat HaSharon,2,0,1,0-0,2024-25_il2.txt
+,Hapoel Afula,Hapoel Ra'anana,0,0,X,,2024-25_il2.txt
+18.30,Hapoel Acre FC,Maccabi Kabilio Jaffa,0,0,X,,2024-25_il2.txt
+,Hapoel Nir Ramat HaSharon,Hapoel Afula,0,0,X,,2024-25_il2.txt
+,Hapoel Umm al-Fahm,Hapoel Nof HaGalil,0,0,X,,2024-25_il2.txt
+19.00,Hapoel Ra'anana,MS Kafr Qasim,1,1,X,1-1,2024-25_il2.txt
+16.00,Maccabi Kabilio Jaffa,Hapoel Nof HaGalil,1,1,X,0-0,2024-25_il2.txt
+,Hapoel Afula,Hapoel Umm al-Fahm,3,2,1,0-1,2024-25_il2.txt
+,MS Kafr Qasim,Hapoel Nir Ramat HaSharon,0,3,2,0-2,2024-25_il2.txt
+19.00,Hapoel Acre FC,Hapoel Ra'anana,2,0,1,0-0,2024-25_il2.txt
+16.00,Hapoel Ra'anana,Maccabi Kabilio Jaffa,1,2,2,1-1,2024-25_il2.txt
+,Hapoel Nir Ramat HaSharon,Hapoel Acre FC,1,2,2,1-0,2024-25_il2.txt
+,Hapoel Umm al-Fahm,MS Kafr Qasim,1,0,1,1-0,2024-25_il2.txt
+,Hapoel Nof HaGalil,Hapoel Afula,2,1,1,1-1,2024-25_il2.txt
+19.30,MS Dimona,Hapoel Be'er Sheva,0,4,2,0-2,2024-25_ilcup.txt
+,Bnei Sachnin FC,Ironi Modi'in,4,2,1,,2024-25_ilcup.txt
+19.45,Hapoel Ra'anana,Nordia Jerusalem,2,4,2,2-2,2024-25_ilcup.txt
+20.00,Maccabi Bnei Raina,Hapoel Kfar Shalem,3,0,1,1-0,2024-25_ilcup.txt
+14.00,Hapoel Haifa,Hapoel Petach-Tikva,5,3,1,,2024-25_ilcup.txt
+,Hapoel Afula,FC Ashdod,3,4,2,,2024-25_ilcup.txt
+,Hapoel Beit She'an,Hapoel Hadera,1,2,2,1-1,2024-25_ilcup.txt
+,Tzeirei Umm al-Fahm,Hapoel Acre FC,0,2,2,0-1,2024-25_ilcup.txt
+,Hapoel Nir Ramat HaSharon,Maccabi Herzliya,1,0,1,1-0,2024-25_ilcup.txt
+,Hapoel Ramat Gan,Bnei Yehuda Tel Aviv,6,5,1,,2024-25_ilcup.txt
+17.00,Maccabi Petach-Tikva,Ironi Kiryat Shmona,2,0,1,1-0,2024-25_ilcup.txt
+19.00,Ironi Tiberias,Hapoel Tel Aviv,0,2,2,0-1,2024-25_ilcup.txt
+20.00,Maccabi Tel Aviv,Hapoel Jerusalem,3,0,1,0-0,2024-25_ilcup.txt
+19.00,Hapoel Umm al-Fahm,Maccabi Netanya,0,2,2,0-0,2024-25_ilcup.txt
+20.15,Kiryat Yam SC,Beitar Jerusalem,4,5,2,,2024-25_ilcup.txt
+19.30,Maccabi Haifa,Ironi Ashkelon,6,0,1,3-0,2024-25_ilcup.txt
+19.00,Hapoel Acre FC,Beitar Jerusalem,0,1,2,0-1,2024-25_ilcup.txt
+19.30,Maccabi Petach-Tikva,Bnei Sachnin FC,2,4,2,,2024-25_ilcup.txt
+20.15,Maccabi Haifa,Maccabi Netanya,1,0,1,0-0,2024-25_ilcup.txt
+19.00,Nordia Jerusalem,FC Ashdod,1,4,2,0-1,2024-25_ilcup.txt
+20.00,Hapoel Be'er Sheva,Hapoel Hadera,6,0,1,3-0,2024-25_ilcup.txt
+20.30,Maccabi Tel Aviv,Maccabi Bnei Raina,1,2,2,0-0,2024-25_ilcup.txt
+19.00,Hapoel Haifa,Hapoel Tel Aviv,1,2,2,0-2,2024-25_ilcup.txt
+19.30,Hapoel Ramat Gan,Hapoel Nir Ramat HaSharon,7,0,1,2-0,2024-25_ilcup.txt
+20.00,FC Ashdod,Maccabi Bnei Raina,1,3,2,0-2,2024-25_ilcup.txt
+20.30,Hapoel Ramat Gan,Hapoel Tel Aviv,0,2,2,0-2,2024-25_ilcup.txt
+20.30,Hapoel Be'er Sheva,Maccabi Haifa,2,0,1,1-0,2024-25_ilcup.txt
+20.30,Bnei Sachnin FC,Beitar Jerusalem,0,3,2,0-0,2024-25_ilcup.txt
+20.30,Maccabi Bnei Raina,Beitar Jerusalem,1,5,2,0-1,2024-25_ilcup.txt
+20.30,Hapoel Tel Aviv,Hapoel Be'er Sheva,1,5,2,0-4,2024-25_ilcup.txt

@@ -1,0 +1,411 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Bahrain,Qatar,2,1,1,Isa Town,Bahrain,1970_gulf_cup.txt
+Saudi Arabia,Kuwait,1,3,2,Isa Town,Bahrain,1970_gulf_cup.txt
+Bahrain,Saudi Arabia,0,0,X,Isa Town,Bahrain,1970_gulf_cup.txt
+Kuwait,Qatar,4,2,1,Isa Town,Bahrain,1970_gulf_cup.txt
+Saudi Arabia,Qatar,1,1,X,Isa Town,Bahrain,1970_gulf_cup.txt
+Bahrain,Kuwait,1,3,2,Isa Town,Bahrain,1970_gulf_cup.txt
+Saudi Arabia,Kuwait,2,2,X,Riyadh,Saudi Arabia,1972_gulf_cup.txt
+Qatar,United Arab Emirates,0,1,2,Riyadh,Saudi Arabia,1972_gulf_cup.txt
+Bahrain,Kuwait,0,2,2,Riyadh,Saudi Arabia,1972_gulf_cup.txt
+Saudi Arabia,United Arab Emirates,4,0,1,Riyadh,Saudi Arabia,1972_gulf_cup.txt
+Bahrain,Qatar,6,2,1,Riyadh,Saudi Arabia,1972_gulf_cup.txt
+Kuwait,United Arab Emirates,7,0,1,Riyadh,Saudi Arabia,1972_gulf_cup.txt
+Saudi Arabia,Qatar,4,0,1,Riyadh,Saudi Arabia,1972_gulf_cup.txt
+Bahrain,United Arab Emirates,2,0,1,Riyadh,Saudi Arabia,1972_gulf_cup.txt
+Kuwait,Qatar,5,0,1,Riyadh,Saudi Arabia,1972_gulf_cup.txt
+Saudi Arabia,Bahrain,2,1,1,Riyadh,Saudi Arabia,1972_gulf_cup.txt
+Kuwait,United Arab Emirates,2,0,1,Kuwait City,Kuwait,1974_gulf_cup.txt
+Bahrain,Oman,4,0,1,Kuwait City,Kuwait,1974_gulf_cup.txt
+Qatar,Saudi Arabia,0,2,2,Kuwait City,Kuwait,1974_gulf_cup.txt
+Bahrain,United Arab Emirates,0,4,2,Kuwait City,Kuwait,1974_gulf_cup.txt
+Kuwait,Oman,5,0,1,Kuwait City,Kuwait,1974_gulf_cup.txt
+Bahrain,Saudi Arabia,1,4,2,Kuwait City,Kuwait,1974_gulf_cup.txt
+Oman,Qatar,0,4,2,Kuwait City,Kuwait,1974_gulf_cup.txt
+Saudi Arabia,United Arab Emirates,2,0,1,Kuwait City,Kuwait,1974_gulf_cup.txt
+Kuwait,Qatar,1,0,1,Kuwait City,Kuwait,1974_gulf_cup.txt
+Kuwait,United Arab Emirates,6,0,1,Kuwait City,Kuwait,1974_gulf_cup.txt
+Qatar,Saudi Arabia,1,3,2,Kuwait City,Kuwait,1974_gulf_cup.txt
+Qatar,United Arab Emirates,1,1,X,Kuwait City,Kuwait   [Qatar wins on penalties],1974_gulf_cup.txt
+Kuwait,Saudi Arabia,4,0,1,Kuwait City,Kuwait,1974_gulf_cup.txt
+Qatar,Saudi Arabia,1,0,1,Doha,Qatar,1976_gulf_cup.txt
+Bahrain,United Arab Emirates,3,2,1,Doha,Qatar,1976_gulf_cup.txt
+Iraq,Oman,4,0,1,Doha,Qatar,1976_gulf_cup.txt
+Qatar,Kuwait,0,4,2,Doha,Qatar,1976_gulf_cup.txt
+Bahrain,Iraq,1,4,2,Doha,Qatar,1976_gulf_cup.txt
+Saudi Arabia,United Arab Emirates,2,0,1,Doha,Qatar,1976_gulf_cup.txt
+Kuwait,Oman,8,0,1,Doha,Qatar,1976_gulf_cup.txt
+Iraq,Saudi Arabia,7,1,1,Doha,Qatar,1976_gulf_cup.txt
+Qatar,United Arab Emirates,3,1,1,Doha,Qatar,1976_gulf_cup.txt
+Bahrain,Oman,1,0,1,Doha,Qatar,1976_gulf_cup.txt
+Kuwait,United Arab Emirates,0,0,X,Doha,Qatar,1976_gulf_cup.txt
+Qatar,Iraq,0,0,X,Doha,Qatar,1976_gulf_cup.txt
+Oman,Saudi Arabia,1,3,2,Doha,Qatar,1976_gulf_cup.txt
+Bahrain,Kuwait,2,5,2,Doha,Qatar,1976_gulf_cup.txt
+Iraq,United Arab Emirates,4,0,1,Doha,Qatar,1976_gulf_cup.txt
+Qatar,Oman,4,1,1,Doha,Qatar,1976_gulf_cup.txt
+Bahrain,Saudi Arabia,2,1,1,Doha,Qatar,1976_gulf_cup.txt
+Iraq,Kuwait,2,2,X,Doha,Qatar,1976_gulf_cup.txt
+Oman,United Arab Emirates,1,1,X,Doha,Qatar,1976_gulf_cup.txt
+Qatar,Bahrain,3,0,1,Doha,Qatar,1976_gulf_cup.txt
+Kuwait,Saudi Arabia,3,1,1,Doha,Qatar,1976_gulf_cup.txt
+Iraq,Kuwait,2,4,2,Doha,Qatar,1976_gulf_cup.txt
+Iraq,Bahrain,4,0,1,Baghdad,Iraq,1979_gulf_cup.txt
+Kuwait,Qatar,3,1,1,Baghdad,Iraq,1979_gulf_cup.txt
+Saudi Arabia,United Arab Emirates,2,1,1,Baghdad,Iraq,1979_gulf_cup.txt
+Iraq,Qatar,2,0,1,Baghdad,Iraq,1979_gulf_cup.txt
+Bahrain,United Arab Emirates,3,0,1,Baghdad,Iraq,1979_gulf_cup.txt
+Saudi Arabia,Oman,4,0,1,Baghdad,Iraq,1979_gulf_cup.txt
+Qatar,United Arab Emirates,1,0,1,Baghdad,Iraq,1979_gulf_cup.txt
+Bahrain,Oman,3,1,1,Baghdad,Iraq,1979_gulf_cup.txt
+Iraq,Kuwait,3,1,1,Baghdad,Iraq,1979_gulf_cup.txt
+Oman,Qatar,0,1,2,Baghdad,Iraq,1979_gulf_cup.txt
+Kuwait,United Arab Emirates,7,0,1,Baghdad,Iraq,1979_gulf_cup.txt
+Saudi Arabia,Bahrain,1,1,X,Baghdad,Iraq,1979_gulf_cup.txt
+Kuwait,Oman,2,0,1,Baghdad,Iraq,1979_gulf_cup.txt
+Saudi Arabia,Qatar,7,0,1,Baghdad,Iraq,1979_gulf_cup.txt
+Iraq,United Arab Emirates,5,0,1,Baghdad,Iraq,1979_gulf_cup.txt
+Iraq,Oman,7,0,1,Baghdad,Iraq,1979_gulf_cup.txt
+Kuwait,Saudi Arabia,0,0,X,Baghdad,Iraq,1979_gulf_cup.txt
+Bahrain,Qatar,1,1,X,Baghdad,Iraq,1979_gulf_cup.txt
+Iraq,Saudi Arabia,2,0,1,Baghdad,Iraq,1979_gulf_cup.txt
+Bahrain,Kuwait,0,2,2,Baghdad,Iraq,1979_gulf_cup.txt
+Oman,United Arab Emirates,0,4,2,Baghdad,Iraq,1979_gulf_cup.txt
+United Arab Emirates,Qatar,1,0,1,Abu Dhabi,United Arab Emirates,1982_gulf_cup.txt
+Bahrain,Kuwait,0,2,2,Abu Dhabi,United Arab Emirates,1982_gulf_cup.txt
+United Arab Emirates,Saudi Arabia,1,0,1,Abu Dhabi,United Arab Emirates,1982_gulf_cup.txt
+Oman,Qatar,0,3,2,Abu Dhabi,United Arab Emirates,1982_gulf_cup.txt
+United Arab Emirates,Kuwait,0,2,2,Abu Dhabi,United Arab Emirates,1982_gulf_cup.txt
+Bahrain,Oman,4,1,1,Abu Dhabi,United Arab Emirates,1982_gulf_cup.txt
+Saudi Arabia,Kuwait,0,1,2,Abu Dhabi,United Arab Emirates,1982_gulf_cup.txt
+United Arab Emirates,Bahrain,2,3,2,Abu Dhabi,United Arab Emirates,1982_gulf_cup.txt
+Kuwait,Oman,2,0,1,Abu Dhabi,United Arab Emirates,1982_gulf_cup.txt
+Saudi Arabia,Qatar,1,0,1,Abu Dhabi,United Arab Emirates,1982_gulf_cup.txt
+Bahrain,Qatar,1,0,1,Abu Dhabi,United Arab Emirates,1982_gulf_cup.txt
+Saudi Arabia,Oman,3,0,1,Abu Dhabi,United Arab Emirates,1982_gulf_cup.txt
+Bahrain,Saudi Arabia,2,2,X,Abu Dhabi,United Arab Emirates,1982_gulf_cup.txt
+United Arab Emirates,Oman,3,1,1,Abu Dhabi,United Arab Emirates,1982_gulf_cup.txt
+Kuwait,Qatar,1,2,2,Abu Dhabi,United Arab Emirates,1982_gulf_cup.txt
+Oman,Bahrain,0,1,2,Muscat,Oman,1984_gulf_cup.txt
+Kuwait,United Arab Emirates,0,2,2,Muscat,Oman,1984_gulf_cup.txt
+Saudi Arabia,Qatar,1,2,2,Muscat,Oman,1984_gulf_cup.txt
+Oman,Iraq,1,2,2,Muscat,Oman,1984_gulf_cup.txt
+Bahrain,Kuwait,0,1,2,Muscat,Oman,1984_gulf_cup.txt
+Qatar,United Arab Emirates,0,1,2,Muscat,Oman,1984_gulf_cup.txt
+Iraq,United Arab Emirates,0,0,X,Muscat,Oman,1984_gulf_cup.txt
+Oman,Saudi Arabia,1,3,2,Muscat,Oman,1984_gulf_cup.txt
+Kuwait,Qatar,1,2,2,Muscat,Oman,1984_gulf_cup.txt
+Iraq,Saudi Arabia,4,0,1,Muscat,Oman,1984_gulf_cup.txt
+Bahrain,United Arab Emirates,1,1,X,Muscat,Oman,1984_gulf_cup.txt
+Oman,Qatar,0,2,2,Muscat,Oman,1984_gulf_cup.txt
+Bahrain,Iraq,0,1,2,Muscat,Oman,1984_gulf_cup.txt
+Saudi Arabia,Kuwait,1,1,X,Muscat,Oman,1984_gulf_cup.txt
+Oman,United Arab Emirates,1,1,X,Muscat,Oman,1984_gulf_cup.txt
+Bahrain,Qatar,1,1,X,Muscat,Oman,1984_gulf_cup.txt
+Iraq,Kuwait,3,1,1,Muscat,Oman,1984_gulf_cup.txt
+Saudi Arabia,United Arab Emirates,2,0,1,Muscat,Oman,1984_gulf_cup.txt
+Iraq,Qatar,1,2,2,Muscat,Oman,1984_gulf_cup.txt
+Oman,Kuwait,0,0,X,Muscat,Oman,1984_gulf_cup.txt
+Bahrain,Saudi Arabia,0,2,2,Muscat,Oman,1984_gulf_cup.txt
+Iraq,Qatar,1,1,X,Muscat,Oman   [Iraq wins on penalties],1984_gulf_cup.txt
+Bahrain,Iraq,0,0,X,Riffa,Bahrain,1986_gulf_cup.txt
+Qatar,Oman,2,1,1,Riffa,Bahrain,1986_gulf_cup.txt
+Saudi Arabia,Kuwait,1,3,2,Riffa,Bahrain,1986_gulf_cup.txt
+United Arab Emirates,Iraq,2,2,X,Riffa,Bahrain,1986_gulf_cup.txt
+Bahrain,Saudi Arabia,2,1,1,Riffa,Bahrain,1986_gulf_cup.txt
+Kuwait,Oman,2,0,1,Riffa,Bahrain,1986_gulf_cup.txt
+Qatar,Iraq,1,1,X,Riffa,Bahrain,1986_gulf_cup.txt
+Saudi Arabia,Oman,3,1,1,Riffa,Bahrain,1986_gulf_cup.txt
+United Arab Emirates,Kuwait,0,1,2,Manama,Bahrain,1986_gulf_cup.txt
+Bahrain,Qatar,0,0,X,Riffa,Bahrain,1986_gulf_cup.txt
+Iraq,Saudi Arabia,1,2,2,Riffa,Bahrain,1986_gulf_cup.txt
+Oman,United Arab Emirates,0,1,2,Riffa,Bahrain,1986_gulf_cup.txt
+Kuwait,Qatar,2,1,1,Riffa,Bahrain,1986_gulf_cup.txt
+Bahrain,Oman,0,0,X,Riffa,Bahrain,1986_gulf_cup.txt
+Saudi Arabia,United Arab Emirates,0,2,2,Riffa,Bahrain,1986_gulf_cup.txt
+Iraq,Kuwait,1,2,2,Riffa,Bahrain,1986_gulf_cup.txt
+Bahrain,United Arab Emirates,1,3,2,Riffa,Bahrain,1986_gulf_cup.txt
+Qatar,Saudi Arabia,0,2,2,Riffa,Bahrain,1986_gulf_cup.txt
+Oman,Iraq,2,3,2,Riffa,Bahrain,1986_gulf_cup.txt
+Bahrain,Kuwait,1,1,X,Riffa,Bahrain,1986_gulf_cup.txt
+Qatar,United Arab Emirates,3,2,1,Riffa,Bahrain,1986_gulf_cup.txt
+Saudi Arabia,Oman,2,0,1,Riyadh,Saudi Arabia,1988_gulf_cup.txt
+Qatar,Kuwait,1,1,X,Riyadh,Saudi Arabia,1988_gulf_cup.txt
+United Arab Emirates,Bahrain,2,0,1,Riyadh,Saudi Arabia,1988_gulf_cup.txt
+Iraq,Oman,1,1,X,Riyadh,Saudi Arabia,1988_gulf_cup.txt
+Kuwait,United Arab Emirates,0,1,2,Riyadh,Saudi Arabia,1988_gulf_cup.txt
+Saudi Arabia,Qatar,0,0,X,Riyadh,Saudi Arabia,1988_gulf_cup.txt
+Oman,Bahrain,0,2,2,Riyadh,Saudi Arabia,1988_gulf_cup.txt
+Iraq,Kuwait,1,0,1,Riyadh,Saudi Arabia,1988_gulf_cup.txt
+Qatar,United Arab Emirates,2,1,1,Riyadh,Saudi Arabia,1988_gulf_cup.txt
+Saudi Arabia,Bahrain,1,0,1,Riyadh,Saudi Arabia,1988_gulf_cup.txt
+Oman,Qatar,2,1,1,Riyadh,Saudi Arabia,1988_gulf_cup.txt
+United Arab Emirates,Iraq,0,0,X,Riyadh,Saudi Arabia,1988_gulf_cup.txt
+Kuwait,Bahrain,0,1,2,Riyadh,Saudi Arabia,1988_gulf_cup.txt
+Qatar,Iraq,0,3,2,Riyadh,Saudi Arabia,1988_gulf_cup.txt
+Saudi Arabia,United Arab Emirates,2,2,X,Riyadh,Saudi Arabia,1988_gulf_cup.txt
+Oman,Kuwait,0,2,2,Riyadh,Saudi Arabia,1988_gulf_cup.txt
+Bahrain,Qatar,1,0,1,Riyadh,Saudi Arabia,1988_gulf_cup.txt
+Saudi Arabia,Iraq,0,2,2,Riyadh,Saudi Arabia,1988_gulf_cup.txt
+United Arab Emirates,Oman,1,0,1,Riyadh,Saudi Arabia,1988_gulf_cup.txt
+Bahrain,Iraq,0,1,2,Riyadh,Saudi Arabia,1988_gulf_cup.txt
+Saudi Arabia,Kuwait,0,0,X,Riyadh,Saudi Arabia,1988_gulf_cup.txt
+Kuwait,Bahrain,1,0,1,Kuwait City,Kuwait,1990_gulf_cup.txt
+Oman,United Arab Emirates,1,1,X,Kuwait City,Kuwait,1990_gulf_cup.txt
+Qatar,Bahrain,0,0,X,Kuwait City,Kuwait,1990_gulf_cup.txt
+Kuwait,Oman,1,1,X,Kuwait City,Kuwait,1990_gulf_cup.txt
+Qatar,United Arab Emirates,0,0,X,Kuwait City,Kuwait,1990_gulf_cup.txt
+Bahrain,Oman,0,0,X,Kuwait City,Kuwait,1990_gulf_cup.txt
+Oman,Qatar,2,4,2,Kuwait City,Kuwait,1990_gulf_cup.txt
+Bahrain,United Arab Emirates,1,0,1,Kuwait City,Kuwait,1990_gulf_cup.txt
+Kuwait,Qatar,2,0,1,Kuwait City,Kuwait,1990_gulf_cup.txt
+Kuwait,United Arab Emirates,6,1,1,Kuwait City,Kuwait,1990_gulf_cup.txt
+Qatar,Oman,2,0,1,Doha,Qatar,1992_gulf_cup.txt
+Saudi Arabia,Bahrain,1,2,2,Doha,Qatar,1992_gulf_cup.txt
+United Arab Emirates,Kuwait,0,2,2,Doha,Qatar,1992_gulf_cup.txt
+Kuwait,Oman,2,1,1,Doha,Qatar,1992_gulf_cup.txt
+Saudi Arabia,United Arab Emirates,0,1,2,Doha,Qatar,1992_gulf_cup.txt
+Qatar,Bahrain,1,0,1,Doha,Qatar,1992_gulf_cup.txt
+Qatar,Kuwait,4,0,1,Doha,Qatar,1992_gulf_cup.txt
+Bahrain,United Arab Emirates,0,2,2,Doha,Qatar,1992_gulf_cup.txt
+Oman,Saudi Arabia,0,2,2,Doha,Qatar,1992_gulf_cup.txt
+Kuwait,Saudi Arabia,1,2,2,Doha,Qatar,1992_gulf_cup.txt
+Qatar,United Arab Emirates,1,0,1,Doha,Qatar,1992_gulf_cup.txt
+Bahrain,Oman,3,0,1,Doha,Qatar,1992_gulf_cup.txt
+Oman,United Arab Emirates,0,1,2,Doha,Qatar,1992_gulf_cup.txt
+Kuwait,Bahrain,0,1,2,Doha,Qatar,1992_gulf_cup.txt
+Qatar,Saudi Arabia,0,1,2,Doha,Qatar,1992_gulf_cup.txt
+United Arab Emirates,Qatar,2,0,1,Abu Dhabi,United Arab Emirates,1994_gulf_cup.txt
+Bahrain,Kuwait,2,1,1,Abu Dhabi,United Arab Emirates,1994_gulf_cup.txt
+Oman,Saudi Arabia,1,2,2,Abu Dhabi,United Arab Emirates,1994_gulf_cup.txt
+United Arab Emirates,Saudi Arabia,1,1,X,Abu Dhabi,United Arab Emirates,1994_gulf_cup.txt
+Oman,Bahrain,1,1,X,Abu Dhabi,United Arab Emirates,1994_gulf_cup.txt
+Kuwait,Qatar,1,0,1,Abu Dhabi,United Arab Emirates,1994_gulf_cup.txt
+Qatar,Oman,4,2,1,Abu Dhabi,United Arab Emirates,1994_gulf_cup.txt
+United Arab Emirates,Kuwait,2,0,1,Abu Dhabi,United Arab Emirates,1994_gulf_cup.txt
+Saudi Arabia,Bahrain,3,1,1,Abu Dhabi,United Arab Emirates,1994_gulf_cup.txt
+Qatar,Saudi Arabia,1,2,2,Abu Dhabi,United Arab Emirates,1994_gulf_cup.txt
+United Arab Emirates,Bahrain,0,0,X,Abu Dhabi,United Arab Emirates,1994_gulf_cup.txt
+Oman,Kuwait,0,0,X,Abu Dhabi,United Arab Emirates,1994_gulf_cup.txt
+Bahrain,Qatar,1,1,X,Abu Dhabi,United Arab Emirates,1994_gulf_cup.txt
+Kuwait,Saudi Arabia,0,2,2,Abu Dhabi,United Arab Emirates,1994_gulf_cup.txt
+United Arab Emirates,Oman,2,0,1,Abu Dhabi,United Arab Emirates,1994_gulf_cup.txt
+Oman,Saudi Arabia,0,1,2,Muscat,Oman,1996_gulf_cup.txt
+Kuwait,Bahrain,1,0,1,Muscat,Oman,1996_gulf_cup.txt
+United Arab Emirates,Qatar,0,1,2,Muscat,Oman,1996_gulf_cup.txt
+Oman,Kuwait,1,2,2,Muscat,Oman,1996_gulf_cup.txt
+United Arab Emirates,Bahrain,1,1,X,Muscat,Oman,1996_gulf_cup.txt
+Qatar,Saudi Arabia,2,2,X,Muscat,Oman,1996_gulf_cup.txt
+Oman,Qatar,0,3,2,Muscat,Oman,1996_gulf_cup.txt
+Saudi Arabia,Bahrain,3,1,1,Muscat,Oman,1996_gulf_cup.txt
+Kuwait,United Arab Emirates,1,2,2,Muscat,Oman,1996_gulf_cup.txt
+Kuwait,Saudi Arabia,1,0,1,Muscat,Oman,1996_gulf_cup.txt
+Oman,United Arab Emirates,0,0,X,Muscat,Oman,1996_gulf_cup.txt
+Bahrain,Qatar,1,2,2,Muscat,Oman,1996_gulf_cup.txt
+United Arab Emirates,Saudi Arabia,2,2,X,Muscat,Oman,1996_gulf_cup.txt
+Oman,Bahrain,1,1,X,Muscat,Oman,1996_gulf_cup.txt
+Qatar,Kuwait,1,2,2,Muscat,Oman,1996_gulf_cup.txt
+Bahrain,United Arab Emirates,0,1,2,Manama,Bahrain,1998_gulf_cup.txt
+Kuwait,Saudi Arabia,1,2,2,Manama,Bahrain,1998_gulf_cup.txt
+Oman,Qatar,2,1,1,Manama,Bahrain,1998_gulf_cup.txt
+Bahrain,Saudi Arabia,1,1,X,Manama,Bahrain,1998_gulf_cup.txt
+Kuwait,Qatar,6,2,1,Manama,Bahrain,1998_gulf_cup.txt
+United Arab Emirates,Oman,3,2,1,Manama,Bahrain,1998_gulf_cup.txt
+Oman,Saudi Arabia,0,1,2,Manama,Bahrain,1998_gulf_cup.txt
+Qatar,United Arab Emirates,0,0,X,Manama,Bahrain,1998_gulf_cup.txt
+Bahrain,Kuwait,0,2,2,Manama,Bahrain,1998_gulf_cup.txt
+Bahrain,Qatar,0,0,X,Manama,Bahrain,1998_gulf_cup.txt
+Saudi Arabia,United Arab Emirates,1,0,1,Manama,Bahrain,1998_gulf_cup.txt
+Oman,Kuwait,0,5,2,Manama,Bahrain,1998_gulf_cup.txt
+Qatar,Saudi Arabia,0,0,X,Manama,Bahrain,1998_gulf_cup.txt
+Bahrain,Oman,2,2,X,Manama,Bahrain,1998_gulf_cup.txt
+United Arab Emirates,Kuwait,1,4,2,Manama,Bahrain,1998_gulf_cup.txt
+Saudi Arabia,Kuwait,1,1,X,Riyadh,Saudi Arabia,2002_gulf_cup.txt
+Qatar,Bahrain,1,0,1,Riyadh,Saudi Arabia,2002_gulf_cup.txt
+United Arab Emirates,Oman,1,0,1,Riyadh,Saudi Arabia,2002_gulf_cup.txt
+Kuwait,Oman,1,3,2,Riyadh,Saudi Arabia,2002_gulf_cup.txt
+Saudi Arabia,Bahrain,3,1,1,Riyadh,Saudi Arabia,2002_gulf_cup.txt
+United Arab Emirates,Qatar,0,2,2,Riyadh,Saudi Arabia,2002_gulf_cup.txt
+Kuwait,Bahrain,0,0,X,Riyadh,Saudi Arabia,2002_gulf_cup.txt
+Oman,Qatar,1,2,2,Riyadh,Saudi Arabia,2002_gulf_cup.txt
+Saudi Arabia,United Arab Emirates,1,0,1,Riyadh,Saudi Arabia,2002_gulf_cup.txt
+Kuwait,Qatar,0,1,2,Riyadh,Saudi Arabia,2002_gulf_cup.txt
+United Arab Emirates,Bahrain,1,2,2,Riyadh,Saudi Arabia,2002_gulf_cup.txt
+Saudi Arabia,Oman,2,0,1,Riyadh,Saudi Arabia,2002_gulf_cup.txt
+Kuwait,United Arab Emirates,2,1,1,Riyadh,Saudi Arabia,2002_gulf_cup.txt
+Bahrain,Oman,1,1,X,Riyadh,Saudi Arabia,2002_gulf_cup.txt
+Saudi Arabia,Qatar,3,1,1,Riyadh,Saudi Arabia,2002_gulf_cup.txt
+Kuwait,Oman,0,0,X,Kuwait City,Kuwait,2003_gulf_cup.txt
+United Arab Emirates,Saudi Arabia,0,2,2,Kuwait City,Kuwait,2003_gulf_cup.txt
+Bahrain,Qatar,0,0,X,Kuwait City,Kuwait,2003_gulf_cup.txt
+Yemen,Oman,1,1,X,Kuwait City,Kuwait,2003_gulf_cup.txt
+Kuwait,United Arab Emirates,0,2,2,Kuwait City,Kuwait,2003_gulf_cup.txt
+Saudi Arabia,Qatar,0,0,X,Kuwait City,Kuwait,2003_gulf_cup.txt
+Bahrain,Yemen,5,1,1,Kuwait City,Kuwait,2003_gulf_cup.txt
+Oman,United Arab Emirates,2,0,1,Kuwait City,Kuwait,2003_gulf_cup.txt
+Bahrain,Saudi Arabia,0,1,2,Kuwait City,Kuwait,2004_gulf_cup.txt
+Kuwait,Yemen,4,0,1,Kuwait City,Kuwait,2004_gulf_cup.txt
+Oman,Bahrain,0,1,2,Kuwait City,Kuwait,2004_gulf_cup.txt
+United Arab Emirates,Qatar,0,0,X,Kuwait City,Kuwait,2004_gulf_cup.txt
+Kuwait,Saudi Arabia,1,1,X,Kuwait City,Kuwait,2004_gulf_cup.txt
+Qatar,Yemen,3,0,1,Kuwait City,Kuwait,2004_gulf_cup.txt
+Oman,Saudi Arabia,1,2,2,Kuwait City,Kuwait,2004_gulf_cup.txt
+United Arab Emirates,Bahrain,1,3,2,Kuwait City,Kuwait,2004_gulf_cup.txt
+Kuwait,Qatar,1,2,2,Kuwait City,Kuwait,2004_gulf_cup.txt
+Yemen,Saudi Arabia,0,2,2,Kuwait City,Kuwait,2004_gulf_cup.txt
+Kuwait,Bahrain,0,4,2,Kuwait City,Kuwait,2004_gulf_cup.txt
+Oman,Qatar,2,0,1,Kuwait City,Kuwait,2004_gulf_cup.txt
+Yemen,United Arab Emirates,0,3,2,Kuwait City,Kuwait,2004_gulf_cup.txt
+Iraq,Oman,1,3,2,Doha,Qatar,2004_gulf_cup.txt
+Qatar,United Arab Emirates,2,2,X,Doha,Qatar,2004_gulf_cup.txt
+Bahrain,Yemen,1,1,X,Al Rayyan,Qatar,2004_gulf_cup.txt
+Saudi Arabia,Kuwait,1,2,2,Al Rayyan,Qatar,2004_gulf_cup.txt
+Oman,United Arab Emirates,2,1,1,Doha,Qatar,2004_gulf_cup.txt
+Qatar,Iraq,3,3,X,Doha,Qatar,2004_gulf_cup.txt
+Kuwait,Bahrain,1,1,X,Al Rayyan,Qatar,2004_gulf_cup.txt
+Saudi Arabia,Yemen,2,0,1,Al Rayyan,Qatar,2004_gulf_cup.txt
+Iraq,United Arab Emirates,1,1,X,Al Rayyan,Qatar,2004_gulf_cup.txt
+Qatar,Oman,2,1,1,Doha,Qatar,2004_gulf_cup.txt
+Bahrain,Saudi Arabia,3,0,1,Al Rayyan,Qatar,2004_gulf_cup.txt
+Kuwait,Yemen,3,0,1,Doha,Qatar,2004_gulf_cup.txt
+Oman,Bahrain,3,2,1,Al Rayyan,Qatar,2004_gulf_cup.txt
+Qatar,Kuwait,2,0,1,Doha,Qatar,2004_gulf_cup.txt
+Bahrain,Kuwait,3,1,1,Doha,Qatar,2004_gulf_cup.txt
+Qatar,Oman,1,1,X,Doha,Qatar   [Qatar wins on penalties],2004_gulf_cup.txt
+Kuwait,Yemen,1,1,X,Abu Dhabi,United Arab Emirates,2007_gulf_cup.txt
+United Arab Emirates,Oman,1,2,2,Abu Dhabi,United Arab Emirates,2007_gulf_cup.txt
+Qatar,Iraq,0,1,2,Abu Dhabi,United Arab Emirates,2007_gulf_cup.txt
+Saudi Arabia,Bahrain,2,1,1,Abu Dhabi,United Arab Emirates,2007_gulf_cup.txt
+Kuwait,Oman,1,2,2,Abu Dhabi,United Arab Emirates,2007_gulf_cup.txt
+United Arab Emirates,Yemen,2,1,1,Abu Dhabi,United Arab Emirates,2007_gulf_cup.txt
+Bahrain,Iraq,1,1,X,Abu Dhabi,United Arab Emirates,2007_gulf_cup.txt
+Saudi Arabia,Qatar,1,1,X,Abu Dhabi,United Arab Emirates,2007_gulf_cup.txt
+Oman,Yemen,2,1,1,Abu Dhabi,United Arab Emirates,2007_gulf_cup.txt
+United Arab Emirates,Kuwait,3,2,1,Abu Dhabi,United Arab Emirates,2007_gulf_cup.txt
+Qatar,Bahrain,1,2,2,Abu Dhabi,United Arab Emirates,2007_gulf_cup.txt
+Saudi Arabia,Iraq,1,0,1,Abu Dhabi,United Arab Emirates,2007_gulf_cup.txt
+Oman,Bahrain,1,0,1,Abu Dhabi,United Arab Emirates,2007_gulf_cup.txt
+United Arab Emirates,Saudi Arabia,1,0,1,Abu Dhabi,United Arab Emirates,2007_gulf_cup.txt
+United Arab Emirates,Oman,1,0,1,Abu Dhabi,United Arab Emirates,2007_gulf_cup.txt
+Bahrain,Iraq,3,1,1,Muscat,Oman,2009_gulf_cup.txt
+Oman,Kuwait,0,0,X,Muscat,Oman,2009_gulf_cup.txt
+Saudi Arabia,Qatar,0,0,X,Muscat,Oman,2009_gulf_cup.txt
+United Arab Emirates,Yemen,3,1,1,Muscat,Oman,2009_gulf_cup.txt
+Bahrain,Kuwait,0,1,2,Muscat,Oman,2009_gulf_cup.txt
+Oman,Iraq,4,0,1,Muscat,Oman,2009_gulf_cup.txt
+Qatar,United Arab Emirates,0,0,X,Muscat,Oman,2009_gulf_cup.txt
+Saudi Arabia,Yemen,6,0,1,Muscat,Oman,2009_gulf_cup.txt
+Iraq,Kuwait,1,1,X,Muscat,Oman,2009_gulf_cup.txt
+Oman,Bahrain,2,0,1,Muscat,Oman,2009_gulf_cup.txt
+Qatar,Yemen,2,1,1,Muscat,Oman,2009_gulf_cup.txt
+United Arab Emirates,Saudi Arabia,0,3,2,Muscat,Oman,2009_gulf_cup.txt
+Kuwait,Saudi Arabia,0,1,2,Muscat,Oman,2009_gulf_cup.txt
+Oman,Qatar,1,0,1,Muscat,Oman,2009_gulf_cup.txt
+Oman,Saudi Arabia,0,0,X,Muscat,Oman,2009_gulf_cup.txt
+Kuwait,Qatar,1,0,1,Aden,Yemen,2010_gulf_cup.txt
+Yemen,Saudi Arabia,0,4,2,Aden,Yemen,2010_gulf_cup.txt
+Iraq,United Arab Emirates,0,0,X,Aden,Yemen,2010_gulf_cup.txt
+Oman,Bahrain,1,1,X,Aden,Yemen,2010_gulf_cup.txt
+Saudi Arabia,Kuwait,0,0,X,Zinjibar,Yemen,2010_gulf_cup.txt
+Yemen,Qatar,1,2,2,Zinjibar,Yemen,2010_gulf_cup.txt
+Bahrain,Iraq,2,3,2,Aden,Yemen,2010_gulf_cup.txt
+United Arab Emirates,Oman,0,0,X,Aden,Yemen,2010_gulf_cup.txt
+Qatar,Saudi Arabia,1,1,X,Aden,Yemen,2010_gulf_cup.txt
+Yemen,Kuwait,0,3,2,Zinjibar,Yemen,2010_gulf_cup.txt
+Oman,Iraq,0,0,X,Zinjibar,Yemen,2010_gulf_cup.txt
+United Arab Emirates,Bahrain,3,1,1,Zinjibar,Yemen,2010_gulf_cup.txt
+Kuwait,Iraq,2,2,X,Aden,Yemen,2010_gulf_cup.txt
+United Arab Emirates,Saudi Arabia,0,1,2,Aden,Yemen,2010_gulf_cup.txt
+Kuwait,Saudi Arabia,1,0,1,Aden,Yemen,2010_gulf_cup.txt
+Bahrain,Oman,0,0,X,Riffa,Bahrain,2013_gulf_cup.txt
+Qatar,United Arab Emirates,1,3,2,Riffa,Bahrain,2013_gulf_cup.txt
+Kuwait,Yemen,2,0,1,Isa Town,Bahrain,2013_gulf_cup.txt
+Saudi Arabia,Iraq,0,2,2,Isa Town,Bahrain,2013_gulf_cup.txt
+Bahrain,United Arab Emirates,1,2,2,Riffa,Bahrain,2013_gulf_cup.txt
+Qatar,Oman,2,1,1,Riffa,Bahrain,2013_gulf_cup.txt
+Iraq,Kuwait,1,0,1,Isa Town,Bahrain,2013_gulf_cup.txt
+Yemen,Saudi Arabia,0,2,2,Isa Town,Bahrain,2013_gulf_cup.txt
+Bahrain,Qatar,1,0,1,Riffa,Bahrain,2013_gulf_cup.txt
+United Arab Emirates,Oman,2,0,1,Isa Town,Bahrain,2013_gulf_cup.txt
+Iraq,Yemen,2,0,1,Isa Town,Bahrain,2013_gulf_cup.txt
+Kuwait,Saudi Arabia,1,0,1,Riffa,Bahrain,2013_gulf_cup.txt
+Bahrain,Iraq,1,1,X,Riffa,Bahrain,2013_gulf_cup.txt
+United Arab Emirates,Kuwait,1,0,1,Riffa,Bahrain,2013_gulf_cup.txt
+Bahrain,Kuwait,1,6,2,Isa Town,Bahrain,2013_gulf_cup.txt
+United Arab Emirates,Iraq,2,1,1,Riffa,Bahrain,2013_gulf_cup.txt
+Saudi Arabia,Qatar,1,1,X,Riyadh,Saudi Arabia,2014_gulf_cup.txt
+Yemen,Bahrain,0,0,X,Riyadh,Saudi Arabia,2014_gulf_cup.txt
+Iraq,Kuwait,0,1,2,Riyadh,Saudi Arabia,2014_gulf_cup.txt
+United Arab Emirates,Oman,0,0,X,Riyadh,Saudi Arabia,2014_gulf_cup.txt
+Saudi Arabia,Bahrain,3,0,1,Riyadh,Saudi Arabia,2014_gulf_cup.txt
+Yemen,Qatar,0,0,X,Riyadh,Saudi Arabia,2014_gulf_cup.txt
+Iraq,Oman,1,1,X,Riyadh,Saudi Arabia,2014_gulf_cup.txt
+United Arab Emirates,Kuwait,2,2,X,Riyadh,Saudi Arabia,2014_gulf_cup.txt
+Bahrain,Qatar,0,0,X,Riyadh,Saudi Arabia,2014_gulf_cup.txt
+Saudi Arabia,Yemen,1,0,1,Riyadh,Saudi Arabia,2014_gulf_cup.txt
+Kuwait,Oman,0,5,2,Riyadh,Saudi Arabia,2014_gulf_cup.txt
+United Arab Emirates,Iraq,2,0,1,Riyadh,Saudi Arabia,2014_gulf_cup.txt
+Oman,Qatar,1,3,2,Riyadh,Saudi Arabia,2014_gulf_cup.txt
+Saudi Arabia,United Arab Emirates,3,2,1,Riyadh,Saudi Arabia,2014_gulf_cup.txt
+United Arab Emirates,Oman,1,0,1,Riyadh,Saudi Arabia,2014_gulf_cup.txt
+Saudi Arabia,Qatar,1,2,2,Riyadh,Saudi Arabia,2014_gulf_cup.txt
+Kuwait,Saudi Arabia,1,2,2,Kuwait City,Kuwait,2017_gulf_cup.txt
+Oman,United Arab Emirates,0,1,2,Kuwait City,Kuwait,2017_gulf_cup.txt
+Bahrain,Iraq,1,1,X,Kuwait City,Kuwait,2017_gulf_cup.txt
+Qatar,Yemen,4,0,1,Kuwait City,Kuwait,2017_gulf_cup.txt
+Kuwait,Oman,0,1,2,Kuwait City,Kuwait,2017_gulf_cup.txt
+United Arab Emirates,Saudi Arabia,0,0,X,Kuwait City,Kuwait,2017_gulf_cup.txt
+Iraq,Qatar,2,1,1,Kuwait City,Kuwait,2017_gulf_cup.txt
+Yemen,Bahrain,0,1,2,Kuwait City,Kuwait,2017_gulf_cup.txt
+Kuwait,United Arab Emirates,0,0,X,Kuwait City,Kuwait,2017_gulf_cup.txt
+Saudi Arabia,Oman,0,2,2,Kuwait City,Kuwait,2017_gulf_cup.txt
+Iraq,Yemen,3,0,1,Kuwait City,Kuwait,2017_gulf_cup.txt
+Qatar,Bahrain,1,1,X,Kuwait City,Kuwait,2017_gulf_cup.txt
+Iraq,United Arab Emirates,0,0,X,Kuwait City,Kuwait,2018_gulf_cup.txt
+Oman,Bahrain,1,0,1,Kuwait City,Kuwait,2018_gulf_cup.txt
+Oman,United Arab Emirates,0,0,X,Kuwait City,Kuwait,2018_gulf_cup.txt
+Qatar,Iraq,1,2,2,Doha,Qatar,2019_gulf_cup.txt
+United Arab Emirates,Yemen,3,0,1,Doha,Qatar,2019_gulf_cup.txt
+Oman,Bahrain,0,0,X,Doha,Qatar,2019_gulf_cup.txt
+Saudi Arabia,Kuwait,1,3,2,Doha,Qatar,2019_gulf_cup.txt
+United Arab Emirates,Iraq,0,2,2,Doha,Qatar,2019_gulf_cup.txt
+Qatar,Yemen,6,0,1,Doha,Qatar,2019_gulf_cup.txt
+Kuwait,Oman,1,2,2,Doha,Qatar,2019_gulf_cup.txt
+Bahrain,Saudi Arabia,0,2,2,Doha,Qatar,2019_gulf_cup.txt
+Qatar,United Arab Emirates,4,2,1,Doha,Qatar,2019_gulf_cup.txt
+Yemen,Iraq,0,0,X,Doha,Qatar,2019_gulf_cup.txt
+Kuwait,Bahrain,2,4,2,Doha,Qatar,2019_gulf_cup.txt
+Oman,Saudi Arabia,1,3,2,Doha,Qatar,2019_gulf_cup.txt
+Iraq,Bahrain,2,2,X,Doha,Qatar,2019_gulf_cup.txt
+Qatar,Saudi Arabia,0,1,2,Al Wakrah,Qatar,2019_gulf_cup.txt
+Bahrain,Saudi Arabia,1,0,1,Doha,Qatar,2019_gulf_cup.txt
+Iraq,Oman,0,0,X,Basra,Iraq,2023_gulf_cup.txt
+Yemen,Saudi Arabia,0,2,2,Basra,Iraq,2023_gulf_cup.txt
+Bahrain,United Arab Emirates,2,1,1,Basra,Iraq,2023_gulf_cup.txt
+Kuwait,Qatar,0,2,2,Basra,Iraq,2023_gulf_cup.txt
+Oman,Yemen,3,2,1,Basra,Iraq,2023_gulf_cup.txt
+Iraq,Saudi Arabia,2,0,1,Basra,Iraq,2023_gulf_cup.txt
+United Arab Emirates,Kuwait,0,1,2,Basra,Iraq,2023_gulf_cup.txt
+Qatar,Bahrain,1,2,2,Basra,Iraq,2023_gulf_cup.txt
+Iraq,Yemen,5,0,1,Basra,Iraq,2023_gulf_cup.txt
+Saudi Arabia,Oman,1,2,2,Basra,Iraq,2023_gulf_cup.txt
+Bahrain,Kuwait,1,1,X,Basra,Iraq,2023_gulf_cup.txt
+Qatar,United Arab Emirates,1,1,X,Basra,Iraq,2023_gulf_cup.txt
+Iraq,Qatar,2,1,1,Basra,Iraq,2023_gulf_cup.txt
+Bahrain,Oman,0,1,2,Basra,Iraq,2023_gulf_cup.txt
+Iraq,Oman,3,2,1,Basra,Iraq,2023_gulf_cup.txt
+Kuwait,Oman,1,1,X,Kuwait City,Kuwait,2024_gulf_cup.txt
+Qatar,United Arab Emirates,1,1,X,Sulaibikhat,Kuwait,2024_gulf_cup.txt
+Iraq,Yemen,1,0,1,Sulaibikhat,Kuwait,2024_gulf_cup.txt
+Saudi Arabia,Bahrain,2,3,2,Kuwait City,Kuwait,2024_gulf_cup.txt
+Oman,Qatar,2,1,1,Sulaibikhat,Kuwait,2024_gulf_cup.txt
+Kuwait,United Arab Emirates,2,1,1,Kuwait City,Kuwait,2024_gulf_cup.txt
+Yemen,Saudi Arabia,2,3,2,Sulaibikhat,Kuwait,2024_gulf_cup.txt
+Bahrain,Iraq,2,0,1,Kuwait City,Kuwait,2024_gulf_cup.txt
+Kuwait,Qatar,1,1,X,Kuwait City,Kuwait,2024_gulf_cup.txt
+United Arab Emirates,Oman,1,1,X,Sulaibikhat,Kuwait,2024_gulf_cup.txt
+Iraq,Saudi Arabia,1,3,2,Kuwait City,Kuwait,2024_gulf_cup.txt
+Bahrain,Yemen,1,2,2,Sulaibikhat,Kuwait,2024_gulf_cup.txt
+Oman,Saudi Arabia,2,1,1,Sulaibikhat,Kuwait,2024_gulf_cup.txt
+Kuwait,Bahrain,0,1,2,Kuwait City,Kuwait,2024_gulf_cup.txt
+Oman,Bahrain,1,2,2,Kuwait City,Kuwait,2025_gulf_cup.txt

@@ -1,0 +1,1182 @@
+time,home_team,away_team,home_score,away_score,result,ht_score,source_file
+17.00,FC Fastav Zlín,FK Mladá Boleslav,3,2,1,0-1,2018-19_cz1.txt
+,Slovan Liberec,MFK Karviná,1,0,1,0-0,2018-19_cz1.txt
+,íbram,FK Teplice,1,1,X,1-0,2018-19_cz1.txt
+19.00,AC Sparta Praha,SFC Opava,2,0,1,0-0,2018-19_cz1.txt
+15.00,Bohemians Praha 1905,1. FC Slovácko,2,1,1,2-0,2018-19_cz1.txt
+18.00,Sigma Olomouc,Slavia Praha,0,3,2,0-2,2018-19_cz1.txt
+18.00,Baník Ostrava,FK Jablonec,1,0,1,0-0,2018-19_cz1.txt
+18.30,FK Mladá Boleslav,Sigma Olomouc,0,4,2,0-1,2018-19_cz1.txt
+,íbram,Bohemians Praha 1905,4,2,1,2-0,2018-19_cz1.txt
+,SFC Opava,FC Fastav Zlín,1,2,2,1-1,2018-19_cz1.txt
+,1. FC Slovácko,Baník Ostrava,2,1,1,1-1,2018-19_cz1.txt
+19.00,Slavia Praha,MFK Karviná,4,0,1,2-0,2018-19_cz1.txt
+15.00,FK Teplice,FK Dukla Praha,5,2,1,2-0,2018-19_cz1.txt
+18.00,FK Jablonec,AC Sparta Praha,1,2,2,0-0,2018-19_cz1.txt
+,,Slovan Liberec,1,0,1,0-0,2018-19_cz1.txt
+18.30,Slavia Praha,SFC Opava,3,1,1,1-0,2018-19_cz1.txt
+,FC Fastav Zlín,FK Jablonec,1,1,X,0-0,2018-19_cz1.txt
+,Slovan Liberec,FK Teplice,2,2,X,1-1,2018-19_cz1.txt
+15.00,MFK Karviná,FK Mladá Boleslav,3,4,2,1-1,2018-19_cz1.txt
+18.00,AC Sparta Praha,1. FC Slovácko,1,0,1,1-0,2018-19_cz1.txt
+18.00,FK Dukla Praha,Bohemians Praha 1905,0,1,2,0-1,2018-19_cz1.txt
+18.30,FK Mladá Boleslav,Slavia Praha,0,1,2,0-1,2018-19_cz1.txt
+,íbram,FK Dukla Praha,4,0,1,0-0,2018-19_cz1.txt
+,SFC Opava,Slovan Liberec,1,1,X,0-0,2018-19_cz1.txt
+,FK Jablonec,MFK Karviná,4,1,1,2-0,2018-19_cz1.txt
+,,FC Fastav Zlín,1,0,1,0-0,2018-19_cz1.txt
+15.00,1. FC Slovácko,Sigma Olomouc,3,1,1,1-0,2018-19_cz1.txt
+18.00,FK Teplice,AC Sparta Praha,0,4,2,0-4,2018-19_cz1.txt
+18.00,Bohemians Praha 1905,Baník Ostrava,0,1,2,0-0,2018-19_cz1.txt
+18.30,FK Dukla Praha,1. FC Slovácko,1,2,2,1-1,2018-19_cz1.txt
+17.00,Slovan Liberec,Bohemians Praha 1905,1,1,X,0-1,2018-19_cz1.txt
+,FC Fastav Zlín,FK Teplice,1,0,1,0-0,2018-19_cz1.txt
+,FK Mladá Boleslav,SFC Opava,6,1,1,3-1,2018-19_cz1.txt
+19.00,Slavia Praha,FK Jablonec,0,2,2,0-1,2018-19_cz1.txt
+18.00,Sigma Olomouc,Baník Ostrava,1,4,2,0-2,2018-19_cz1.txt
+18.30,Bohemians Praha 1905,AC Sparta Praha,1,1,X,0-0,2018-19_cz1.txt
+,íbram,Slovan Liberec,1,3,2,0-1,2018-19_cz1.txt
+,SFC Opava,MFK Karviná,1,3,2,0-1,2018-19_cz1.txt
+,Baník Ostrava,FK Dukla Praha,2,0,1,2-0,2018-19_cz1.txt
+19.00,FK Teplice,Slavia Praha,0,3,2,0-2,2018-19_cz1.txt
+,,FK Mladá Boleslav,6,1,1,2-1,2018-19_cz1.txt
+18.00,FK Jablonec,Sigma Olomouc,3,0,1,0-0,2018-19_cz1.txt
+18.00,1. FC Slovácko,FC Fastav Zlín,0,4,2,0-2,2018-19_cz1.txt
+18.30,AC Sparta Praha,FK Dukla Praha,2,0,1,1-0,2018-19_cz1.txt
+15.00,Slovan Liberec,Baník Ostrava,0,0,X,,2018-19_cz1.txt
+,FK Mladá Boleslav,FK Teplice,1,1,X,0-0,2018-19_cz1.txt
+,SFC Opava,FK Jablonec,2,0,1,1-0,2018-19_cz1.txt
+15.00,MFK Karviná,1. FC Slovácko,2,1,1,0-0,2018-19_cz1.txt
+18.00,Sigma Olomouc,Bohemians Praha 1905,2,3,2,2-0,2018-19_cz1.txt
+18.00,Bohemians Praha 1905,FC Fastav Zlín,0,1,2,0-0,2018-19_cz1.txt
+,íbram,Sigma Olomouc,1,0,1,0-0,2018-19_cz1.txt
+,,SFC Opava,1,0,1,0-0,2018-19_cz1.txt
+15.00,FK Dukla Praha,Slovan Liberec,2,0,1,0-0,2018-19_cz1.txt
+,FK Jablonec,FK Mladá Boleslav,0,3,2,0-2,2018-19_cz1.txt
+,FK Teplice,MFK Karviná,2,1,1,2-0,2018-19_cz1.txt
+18.00,1. FC Slovácko,Slavia Praha,1,3,2,0-2,2018-19_cz1.txt
+18.00,Baník Ostrava,AC Sparta Praha,0,1,2,0-0,2018-19_cz1.txt
+18.00,FC Fastav Zlín,Baník Ostrava,1,2,2,0-0,2018-19_cz1.txt
+15.00,Sigma Olomouc,FK Dukla Praha,1,0,1,1-0,2018-19_cz1.txt
+,FK Mladá Boleslav,1. FC Slovácko,5,1,1,1-0,2018-19_cz1.txt
+,SFC Opava,FK Teplice,2,0,1,1-0,2018-19_cz1.txt
+19.00,AC Sparta Praha,Slovan Liberec,4,1,1,3-0,2018-19_cz1.txt
+18.00,Slavia Praha,Bohemians Praha 1905,1,0,1,1-0,2018-19_cz1.txt
+17.00,Bohemians Praha 1905,MFK Karviná,0,0,X,,2018-19_cz1.txt
+,,AC Sparta Praha,1,0,1,0-0,2018-19_cz1.txt
+15.00,FK Dukla Praha,FC Fastav Zlín,1,1,X,1-0,2018-19_cz1.txt
+,íbram,FK Mladá Boleslav,3,0,1,1-0,2018-19_cz1.txt
+,1. FC Slovácko,SFC Opava,0,2,2,0-1,2018-19_cz1.txt
+19.00,Slovan Liberec,Sigma Olomouc,3,0,1,1-0,2018-19_cz1.txt
+15.00,Baník Ostrava,Slavia Praha,2,1,1,2-1,2018-19_cz1.txt
+18.00,FK Teplice,FK Jablonec,1,2,2,1-1,2018-19_cz1.txt
+18.00,FC Fastav Zlín,Slovan Liberec,0,1,2,0-0,2018-19_cz1.txt
+17.00,FK Mladá Boleslav,Baník Ostrava,2,2,X,1-0,2018-19_cz1.txt
+19.00,Sigma Olomouc,AC Sparta Praha,1,0,1,1-0,2018-19_cz1.txt
+15.00,MFK Karviná,FK Dukla Praha,0,2,2,0-0,2018-19_cz1.txt
+,SFC Opava,Bohemians Praha 1905,0,1,2,0-0,2018-19_cz1.txt
+,FK Jablonec,1. FC Slovácko,2,0,1,2-0,2018-19_cz1.txt
+,,FK Teplice,1,0,1,0-0,2018-19_cz1.txt
+15.00,Sigma Olomouc,FC Fastav Zlín,1,1,X,0-0,2018-19_cz1.txt
+,íbram,FK Jablonec,0,6,2,0-2,2018-19_cz1.txt
+,Baník Ostrava,MFK Karviná,1,1,X,0-1,2018-19_cz1.txt
+,1. FC Slovácko,FK Teplice,0,2,2,0-2,2018-19_cz1.txt
+15.00,FK Dukla Praha,SFC Opava,1,0,1,0-0,2018-19_cz1.txt
+17.00,Slovan Liberec,Slavia Praha,0,1,2,0-1,2018-19_cz1.txt
+18.00,AC Sparta Praha,FK Mladá Boleslav,4,1,1,3-0,2018-19_cz1.txt
+18.00,FK Teplice,Baník Ostrava,0,1,2,0-1,2018-19_cz1.txt
+15.00,MFK Karviná,Sigma Olomouc,2,3,2,0-0,2018-19_cz1.txt
+,FK Mladá Boleslav,Bohemians Praha 1905,3,0,1,2-0,2018-19_cz1.txt
+17.00,FC Fastav Zlín,AC Sparta Praha,1,0,1,0-0,2018-19_cz1.txt
+,,1. FC Slovácko,2,1,1,1-0,2018-19_cz1.txt
+17.00,FK Jablonec,Slovan Liberec,0,0,X,,2018-19_cz1.txt
+18.00,Slavia Praha,FK Dukla Praha,4,1,1,2-0,2018-19_cz1.txt
+18.00,Bohemians Praha 1905,FK Teplice,2,3,2,2-1,2018-19_cz1.txt
+,íbram,1. FC Slovácko,0,3,2,0-0,2018-19_cz1.txt
+,FK Dukla Praha,FK Jablonec,2,6,2,0-3,2018-19_cz1.txt
+,Sigma Olomouc,SFC Opava,2,2,X,1-2,2018-19_cz1.txt
+,FC Fastav Zlín,MFK Karviná,2,1,1,0-0,2018-19_cz1.txt
+17.00,AC Sparta Praha,Slavia Praha,2,2,X,2-1,2018-19_cz1.txt
+18.00,Slovan Liberec,FK Mladá Boleslav,1,0,1,0-0,2018-19_cz1.txt
+18.00,FK Mladá Boleslav,FK Dukla Praha,0,0,X,,2018-19_cz1.txt
+14.00,MFK Karviná,AC Sparta Praha,1,3,2,1-0,2018-19_cz1.txt
+17.00,1. FC Slovácko,Slovan Liberec,0,1,2,0-1,2018-19_cz1.txt
+14.00,SFC Opava,Baník Ostrava,2,1,1,1-0,2018-19_cz1.txt
+15.00,FK Jablonec,Bohemians Praha 1905,3,1,1,1-1,2018-19_cz1.txt
+,FK Teplice,Sigma Olomouc,0,0,X,,2018-19_cz1.txt
+17.00,Slavia Praha,FC Fastav Zlín,3,1,1,2-1,2018-19_cz1.txt
+,FK Dukla Praha,FK Teplice,1,0,1,1-0,2018-19_cz1.txt
+14.00,MFK Karviná,Slavia Praha,1,3,2,1-2,2018-19_cz1.txt
+,FC Fastav Zlín,SFC Opava,2,0,1,1-0,2018-19_cz1.txt
+,Baník Ostrava,1. FC Slovácko,0,3,2,0-1,2018-19_cz1.txt
+15.00,Sigma Olomouc,FK Mladá Boleslav,0,4,2,0-1,2018-19_cz1.txt
+17.00,AC Sparta Praha,FK Jablonec,0,0,X,,2018-19_cz1.txt
+18.00,FK Teplice,Slovan Liberec,1,0,1,1-0,2018-19_cz1.txt
+15.00,FK Mladá Boleslav,MFK Karviná,1,1,X,1-0,2018-19_cz1.txt
+17.00,1. FC Slovácko,AC Sparta Praha,2,1,1,0-0,2018-19_cz1.txt
+15.00,Bohemians Praha 1905,FK Dukla Praha,0,0,X,,2018-19_cz1.txt
+,íbram,Baník Ostrava,0,2,2,0-1,2018-19_cz1.txt
+,,Sigma Olomouc,2,0,1,2-0,2018-19_cz1.txt
+17.00,FK Jablonec,FC Fastav Zlín,4,0,1,2-0,2018-19_cz1.txt
+18.00,SFC Opava,Slavia Praha,2,3,2,1-1,2018-19_cz1.txt
+15.00,Baník Ostrava,Bohemians Praha 1905,2,0,1,0-0,2018-19_cz1.txt
+,Sigma Olomouc,1. FC Slovácko,1,0,1,1-0,2018-19_cz1.txt
+,MFK Karviná,FK Jablonec,2,1,1,1-1,2018-19_cz1.txt
+17.00,Slavia Praha,FK Mladá Boleslav,3,2,1,1-0,2018-19_cz1.txt
+17.00,AC Sparta Praha,FK Teplice,0,1,2,0-0,2018-19_cz1.txt
+18.00,Slovan Liberec,SFC Opava,1,2,2,1-1,2018-19_cz1.txt
+18.00,Baník Ostrava,Sigma Olomouc,0,0,X,,2018-19_cz1.txt
+15.00,1. FC Slovácko,FK Dukla Praha,1,0,1,1-0,2018-19_cz1.txt
+,Bohemians Praha 1905,Slovan Liberec,0,0,X,,2018-19_cz1.txt
+,FK Teplice,FC Fastav Zlín,2,1,1,1-1,2018-19_cz1.txt
+,SFC Opava,FK Mladá Boleslav,2,1,1,1-0,2018-19_cz1.txt
+,íbram,AC Sparta Praha,1,1,X,1-1,2018-19_cz1.txt
+,,MFK Karviná,2,1,1,2-0,2018-19_cz1.txt
+18.00,FK Jablonec,Slavia Praha,0,2,2,0-1,2018-19_cz1.txt
+18.00,Sigma Olomouc,FK Jablonec,1,2,2,0-0,2018-19_cz1.txt
+,FK Dukla Praha,Baník Ostrava,1,1,X,1-1,2018-19_cz1.txt
+,MFK Karviná,SFC Opava,1,1,X,1-1,2018-19_cz1.txt
+,FC Fastav Zlín,1. FC Slovácko,0,1,2,0-0,2018-19_cz1.txt
+17.00,Slavia Praha,FK Teplice,2,0,1,0-0,2018-19_cz1.txt
+17.00,AC Sparta Praha,Bohemians Praha 1905,1,0,1,0-0,2018-19_cz1.txt
+18.00,FK Teplice,FK Mladá Boleslav,0,2,2,0-1,2018-19_cz1.txt
+15.00,Bohemians Praha 1905,Sigma Olomouc,0,1,2,0-1,2018-19_cz1.txt
+,íbram,FC Fastav Zlín,3,2,1,1-1,2018-19_cz1.txt
+,1. FC Slovácko,MFK Karviná,2,0,1,1-0,2018-19_cz1.txt
+17.00,Baník Ostrava,Slovan Liberec,2,1,1,0-0,2018-19_cz1.txt
+15.00,FK Jablonec,SFC Opava,2,2,X,1-1,2018-19_cz1.txt
+,,Slavia Praha,2,0,1,1-0,2018-19_cz1.txt
+18.00,FK Dukla Praha,AC Sparta Praha,2,3,2,1-1,2018-19_cz1.txt
+18.00,Slovan Liberec,FK Dukla Praha,2,0,1,0-0,2018-19_cz1.txt
+15.00,FC Fastav Zlín,Bohemians Praha 1905,0,2,2,0-1,2018-19_cz1.txt
+,MFK Karviná,FK Teplice,1,1,X,1-0,2018-19_cz1.txt
+17.00,FK Mladá Boleslav,FK Jablonec,1,0,1,0-0,2018-19_cz1.txt
+17.00,AC Sparta Praha,Baník Ostrava,3,2,1,1-1,2018-19_cz1.txt
+,Slavia Praha,1. FC Slovácko,4,0,1,2-0,2018-19_cz1.txt
+18.00,Baník Ostrava,FC Fastav Zlín,1,2,2,1-1,2018-19_cz1.txt
+15.00,FK Dukla Praha,Sigma Olomouc,0,4,2,0-2,2018-19_cz1.txt
+,íbram,MFK Karviná,2,1,1,1-0,2018-19_cz1.txt
+,1. FC Slovácko,FK Mladá Boleslav,1,1,X,0-0,2018-19_cz1.txt
+,,FK Jablonec,1,0,1,1-0,2018-19_cz1.txt
+17.00,Slovan Liberec,AC Sparta Praha,0,1,2,0-0,2018-19_cz1.txt
+15.00,Bohemians Praha 1905,Slavia Praha,0,3,2,0-2,2018-19_cz1.txt
+,FK Teplice,SFC Opava,3,2,1,2-1,2018-19_cz1.txt
+18.00,FK Jablonec,FK Teplice,2,1,1,0-0,2018-19_cz1.txt
+15.00,MFK Karviná,Bohemians Praha 1905,0,3,2,0-3,2018-19_cz1.txt
+,FC Fastav Zlín,FK Dukla Praha,2,1,1,1-1,2018-19_cz1.txt
+,SFC Opava,1. FC Slovácko,2,2,X,1-0,2018-19_cz1.txt
+17.30,Slavia Praha,Baník Ostrava,4,0,1,1-0,2018-19_cz1.txt
+18.00,Sigma Olomouc,Slovan Liberec,2,1,1,1-0,2018-19_cz1.txt
+18.00,FK Dukla Praha,MFK Karviná,2,1,1,2-1,2018-19_cz1.txt
+14.00,Baník Ostrava,FK Mladá Boleslav,1,1,X,1-1,2018-19_cz1.txt
+15.00,Slovan Liberec,FC Fastav Zlín,1,0,1,1-0,2018-19_cz1.txt
+,1. FC Slovácko,FK Jablonec,0,0,X,,2018-19_cz1.txt
+17.30,AC Sparta Praha,Sigma Olomouc,2,1,1,0-1,2018-19_cz1.txt
+15.00,Bohemians Praha 1905,SFC Opava,0,0,X,,2018-19_cz1.txt
+,íbram,Slavia Praha,0,2,2,0-1,2018-19_cz1.txt
+18.00,MFK Karviná,Baník Ostrava,2,0,1,0-0,2018-19_cz1.txt
+15.00,SFC Opava,FK Dukla Praha,2,0,1,1-0,2018-19_cz1.txt
+,FK Mladá Boleslav,AC Sparta Praha,2,1,1,0-0,2018-19_cz1.txt
+,FC Fastav Zlín,Sigma Olomouc,0,2,2,0-1,2018-19_cz1.txt
+,FK Teplice,1. FC Slovácko,2,0,1,2-0,2018-19_cz1.txt
+17.30,Slavia Praha,Slovan Liberec,1,1,X,0-0,2018-19_cz1.txt
+,,Bohemians Praha 1905,3,2,1,2-0,2018-19_cz1.txt
+,íbram,SFC Opava,3,1,1,1-0,2018-19_cz1.txt
+19.00,FK Dukla Praha,Slavia Praha,1,5,2,0-3,2018-19_cz1.txt
+15.30,Sigma Olomouc,MFK Karviná,3,2,1,2-1,2018-19_cz1.txt
+,Bohemians Praha 1905,FK Mladá Boleslav,0,0,X,,2018-19_cz1.txt
+,Slovan Liberec,FK Jablonec,0,0,X,,2018-19_cz1.txt
+,Baník Ostrava,FK Teplice,3,1,1,3-1,2018-19_cz1.txt
+18.00,AC Sparta Praha,FC Fastav Zlín,2,0,1,0-0,2018-19_cz1.txt
+18.00,FK Teplice,Bohemians Praha 1905,1,2,2,0-0,2018-19_cz1.txt
+,SFC Opava,Sigma Olomouc,2,1,1,1-1,2018-19_cz1.txt
+,MFK Karviná,FC Fastav Zlín,2,0,1,1-0,2018-19_cz1.txt
+,,Baník Ostrava,2,1,1,1-1,2018-19_cz1.txt
+15.30,FK Jablonec,FK Dukla Praha,2,1,1,1-1,2018-19_cz1.txt
+18.00,Slavia Praha,AC Sparta Praha,1,1,X,1-0,2018-19_cz1.txt
+18.00,FK Mladá Boleslav,Slovan Liberec,1,2,2,0-0,2018-19_cz1.txt
+17.00,FC Fastav Zlín,Slavia Praha,1,0,1,0-0,2018-19_cz1.txt
+,AC Sparta Praha,MFK Karviná,1,3,2,0-2,2018-19_cz1.txt
+,FK Dukla Praha,FK Mladá Boleslav,2,2,X,0-1,2018-19_cz1.txt
+,Baník Ostrava,SFC Opava,2,0,1,1-0,2018-19_cz1.txt
+,Bohemians Praha 1905,FK Jablonec,1,0,1,1-0,2018-19_cz1.txt
+,Sigma Olomouc,FK Teplice,2,0,1,1-0,2018-19_cz1.txt
+,Slovan Liberec,1. FC Slovácko,3,2,1,1-0,2018-19_cz1.txt
+17.00,FK Mladá Boleslav,FC Fastav Zlín,3,0,1,3-0,2018-19_cz1.txt
+,Slavia Praha,Sigma Olomouc,2,1,1,1-1,2018-19_cz1.txt
+,SFC Opava,AC Sparta Praha,0,3,2,0-1,2018-19_cz1.txt
+,MFK Karviná,Slovan Liberec,2,1,1,1-1,2018-19_cz1.txt
+,,FK Dukla Praha,4,0,1,3-0,2018-19_cz1.txt
+,FK Jablonec,Baník Ostrava,4,0,1,2-0,2018-19_cz1.txt
+,1. FC Slovácko,Bohemians Praha 1905,1,1,X,0-1,2018-19_cz1.txt
+18.00,FK Dukla Praha,Bohemians Praha 1905,1,1,X,0-0,2018-19_cz1.txt
+,SFC Opava,MFK Karviná,1,0,1,0-0,2018-19_cz1.txt
+,íbram,MFK Karviná,1,0,1,0-0,2018-19_cz1.txt
+,SFC Opava,FK Dukla Praha,3,2,1,1-0,2018-19_cz1.txt
+,Bohemians Praha 1905,1. FC Slovácko,0,0,X,,2018-19_cz1.txt
+17.30,MFK Karviná,FK Dukla Praha,3,0,1,2-0,2018-19_cz1.txt
+,1. FC Slovácko,SFC Opava,4,1,1,2-0,2018-19_cz1.txt
+17.00,MFK Karviná,Bohemians Praha 1905,0,1,2,0-1,2018-19_cz1.txt
+,FK Dukla Praha,1. FC Slovácko,0,0,X,,2018-19_cz1.txt
+17.00,1. FC Slovácko,MFK Karviná,2,0,1,1-0,2018-19_cz1.txt
+,Bohemians Praha 1905,SFC Opava,1,1,X,0-0,2018-19_cz1.txt
+,íbram,FK Dukla Praha,3,2,1,1-1,2018-19_cz1.txt
+18.00,FK Teplice,FK Mladá Boleslav,0,8,2,0-6,2018-19_cz1.txt
+,FC Fastav Zlín,Sigma Olomouc,1,0,1,1-0,2018-19_cz1.txt
+15.00,FK Mladá Boleslav,FK Teplice,1,1,X,1-0,2018-19_cz1.txt
+,Sigma Olomouc,FC Fastav Zlín,3,2,1,1-2,2018-19_cz1.txt
+18.00,FC Fastav Zlín,FK Mladá Boleslav,3,1,1,1-0,2018-19_cz1.txt
+18.00,FK Mladá Boleslav,FC Fastav Zlín,3,0,1,0-0,2018-19_cz1.txt
+15.00,FK Mladá Boleslav,Baník Ostrava,1,0,1,1-0,2018-19_cz1.txt
+17.30,AC Sparta Praha,Baník Ostrava,3,0,1,1-0,2018-19_cz1.txt
+20.00,Slovan Liberec,Slavia Praha,0,0,X,,2018-19_cz1.txt
+,,FK Jablonec,2,1,1,0-1,2018-19_cz1.txt
+17.30,FK Jablonec,Baník Ostrava,2,0,1,0-0,2018-19_cz1.txt
+20.00,AC Sparta Praha,Slovan Liberec,1,0,1,1-0,2018-19_cz1.txt
+20.00,Baník Ostrava,Slovan Liberec,0,1,2,0-0,2018-19_cz1.txt
+,,AC Sparta Praha,4,0,1,2-0,2018-19_cz1.txt
+20.00,Slavia Praha,FK Jablonec,2,1,1,1-1,2018-19_cz1.txt
+15.00,Baník Ostrava,Slavia Praha,0,0,X,,2018-19_cz1.txt
+,AC Sparta Praha,FK Jablonec,2,0,1,1-0,2018-19_cz1.txt
+,,Baník Ostrava,1,1,X,1-0,2018-19_cz1.txt
+,Slavia Praha,AC Sparta Praha,2,1,1,1-1,2018-19_cz1.txt
+,FK Jablonec,Slovan Liberec,1,0,1,0-0,2018-19_cz1.txt
+,,SFC Opava,3,1,1,1-1,2020-21_cz1.txt
+17.00,FC Fastav Zlín,1. FC Slovácko,1,2,2,0-0,2020-21_cz1.txt
+,íbram,FK Teplice,1,3,2,0-1,2020-21_cz1.txt
+,Sigma Olomouc,Slovan Liberec,1,0,1,1-0,2020-21_cz1.txt
+19.30,Zbrojovka Brno,AC Sparta Praha,1,4,2,0-4,2020-21_cz1.txt
+,jovice,Slavia Praha,0,6,2,0-3,2020-21_cz1.txt
+,FK Jablonec,FK Pardubice,1,0,1,0-0,2020-21_cz1.txt
+,MFK Karviná,Baník Ostrava,0,0,X,,2020-21_cz1.txt
+18.30,Bohemians Praha 1905,FK Mladá Boleslav,4,0,1,2-0,2020-21_cz1.txt
+17.00,1. FC Slovácko,FK Jablonec,1,1,X,0-0,2020-21_cz1.txt
+,FK Mladá Boleslav,FC Fastav Zlín,1,3,2,1-1,2020-21_cz1.txt
+,SFC Opava,MFK Karviná,1,2,2,0-0,2020-21_cz1.txt
+16.30,Zbrojovka Brno,Bohemians Praha 1905,0,0,X,,2020-21_cz1.txt
+,FK Pardubice,FK Teplice,2,1,1,1-0,2020-21_cz1.txt
+19.00,AC Sparta Praha,Sigma Olomouc,3,0,1,2-0,2020-21_cz1.txt
+18.00,Sigma Olomouc,Bohemians Praha 1905,3,0,1,1-0,2020-21_cz1.txt
+,jovice,Slovan Liberec,0,2,2,0-1,2020-21_cz1.txt
+,FK Jablonec,Baník Ostrava,2,0,1,0-0,2020-21_cz1.txt
+,íbram,SFC Opava,1,1,X,0-0,2020-21_cz1.txt
+,FK Teplice,1. FC Slovácko,0,2,2,0-0,2020-21_cz1.txt
+19.30,FK Pardubice,Slavia Praha,1,1,X,1-0,2020-21_cz1.txt
+16.30,FC Fastav Zlín,Zbrojovka Brno,3,1,1,1-1,2020-21_cz1.txt
+,MFK Karviná,AC Sparta Praha,2,5,2,2-2,2020-21_cz1.txt
+,,FK Mladá Boleslav,2,1,1,1-1,2020-21_cz1.txt
+20.00,Slavia Praha,FK Teplice,5,1,1,3-0,2020-21_cz1.txt
+16.30,Baník Ostrava,FK Pardubice,3,0,1,1-0,2020-21_cz1.txt
+15.30,Zbrojovka Brno,Sigma Olomouc,2,4,2,1-1,2020-21_cz1.txt
+,Slovan Liberec,MFK Karviná,1,1,X,0-0,2020-21_cz1.txt
+18.00,AC Sparta Praha,FC Fastav Zlín,3,1,1,0-1,2020-21_cz1.txt
+18.00,FK Mladá Boleslav,FK Jablonec,2,0,1,1-0,2020-21_cz1.txt
+16.30,FC Fastav Zlín,Sigma Olomouc,0,1,2,0-0,2020-21_cz1.txt
+,FK Teplice,Baník Ostrava,2,1,1,0-0,2020-21_cz1.txt
+,MFK Karviná,FK Mladá Boleslav,0,0,X,,2020-21_cz1.txt
+19.00,Slavia Praha,1. FC Slovácko,3,0,1,2-0,2020-21_cz1.txt
+15.30,FK Jablonec,SFC Opava,4,1,1,2-1,2020-21_cz1.txt
+,FK Pardubice,Slovan Liberec,3,0,1,2-0,2020-21_cz1.txt
+,,Zbrojovka Brno,4,1,1,2-0,2020-21_cz1.txt
+,íbram,AC Sparta Praha,1,3,2,1-2,2020-21_cz1.txt
+,jovice,Bohemians Praha 1905,2,1,1,2-0,2020-21_cz1.txt
+19.00,1. FC Slovácko,FK Pardubice,0,1,2,0-0,2020-21_cz1.txt
+16.30,Zbrojovka Brno,MFK Karviná,0,2,2,0-0,2020-21_cz1.txt
+,SFC Opava,FK Teplice,2,1,1,1-1,2020-21_cz1.txt
+19.00,AC Sparta Praha,FK Jablonec,2,1,1,2-0,2020-21_cz1.txt
+15.30,Bohemians Praha 1905,FC Fastav Zlín,2,0,1,1-0,2020-21_cz1.txt
+18.00,Baník Ostrava,Slavia Praha,0,1,2,0-0,2020-21_cz1.txt
+18.00,FK Jablonec,Zbrojovka Brno,0,1,2,0-0,2020-21_cz1.txt
+14.00,FK Pardubice,SFC Opava,1,0,1,0-0,2020-21_cz1.txt
+16.00,1. FC Slovácko,Sigma Olomouc,0,0,X,,2020-21_cz1.txt
+,jovice,FC Fastav Zlín,1,2,2,1-0,2020-21_cz1.txt
+,íbram,Baník Ostrava,0,4,2,0-0,2020-21_cz1.txt
+14.00,FK Teplice,Slovan Liberec,1,2,2,1-2,2020-21_cz1.txt
+,MFK Karviná,Bohemians Praha 1905,2,1,1,1-0,2020-21_cz1.txt
+16.00,Slavia Praha,FK Mladá Boleslav,1,0,1,1-0,2020-21_cz1.txt
+,,AC Sparta Praha,3,1,1,3-0,2020-21_cz1.txt
+18.45,Slovan Liberec,FK Jablonec,1,3,2,1-1,2020-21_cz1.txt
+14.00,FK Mladá Boleslav,FK Pardubice,4,1,1,3-0,2020-21_cz1.txt
+16.00,Bohemians Praha 1905,FK Teplice,2,0,1,1-0,2020-21_cz1.txt
+,Sigma Olomouc,MFK Karviná,3,0,1,1-0,2020-21_cz1.txt
+18.30,SFC Opava,Slavia Praha,0,6,2,0-1,2020-21_cz1.txt
+16.00,Baník Ostrava,1. FC Slovácko,1,2,2,0-0,2020-21_cz1.txt
+18.00,FK Pardubice,Sigma Olomouc,1,1,X,0-0,2020-21_cz1.txt
+,íbram,FK Mladá Boleslav,2,1,1,0-1,2020-21_cz1.txt
+16.00,1. FC Slovácko,SFC Opava,3,1,1,3-1,2020-21_cz1.txt
+,MFK Karviná,FC Fastav Zlín,0,2,2,0-2,2020-21_cz1.txt
+16.00,FK Teplice,AC Sparta Praha,0,1,2,0-0,2020-21_cz1.txt
+18.30,Slavia Praha,Zbrojovka Brno,1,1,X,0-0,2020-21_cz1.txt
+17.00,FK Jablonec,Bohemians Praha 1905,2,1,1,1-0,2020-21_cz1.txt
+16.00,Baník Ostrava,Slovan Liberec,1,0,1,1-0,2020-21_cz1.txt
+18.00,FC Fastav Zlín,FK Jablonec,0,2,2,0-0,2020-21_cz1.txt
+14.00,Bohemians Praha 1905,FK Pardubice,1,1,X,1-0,2020-21_cz1.txt
+,SFC Opava,Baník Ostrava,1,2,2,0-0,2020-21_cz1.txt
+,,MFK Karviná,0,1,2,0-1,2020-21_cz1.txt
+16.00,FK Mladá Boleslav,FK Teplice,0,2,2,0-1,2020-21_cz1.txt
+18.30,AC Sparta Praha,Slavia Praha,0,3,2,0-2,2020-21_cz1.txt
+18.00,Slovan Liberec,1. FC Slovácko,1,1,X,1-0,2020-21_cz1.txt
+18.30,Baník Ostrava,Bohemians Praha 1905,1,0,1,1-0,2020-21_cz1.txt
+,jovice,MFK Karviná,1,1,X,0-1,2020-21_cz1.txt
+,íbram,FC Fastav Zlín,1,0,1,0-0,2020-21_cz1.txt
+,SFC Opava,FK Mladá Boleslav,2,2,X,2-1,2020-21_cz1.txt
+16.00,FK Pardubice,Zbrojovka Brno,2,1,1,0-0,2020-21_cz1.txt
+,FK Teplice,Sigma Olomouc,1,1,X,0-1,2020-21_cz1.txt
+16.00,1. FC Slovácko,AC Sparta Praha,1,2,2,1-1,2020-21_cz1.txt
+18.30,Slavia Praha,Slovan Liberec,3,0,1,2-0,2020-21_cz1.txt
+14.00,FK Mladá Boleslav,Baník Ostrava,1,3,2,0-2,2020-21_cz1.txt
+,MFK Karviná,FK Jablonec,2,2,X,0-1,2020-21_cz1.txt
+,,FK Teplice,7,0,1,3-0,2020-21_cz1.txt
+14.00,Zbrojovka Brno,1. FC Slovácko,2,1,1,0-0,2020-21_cz1.txt
+,Slovan Liberec,SFC Opava,2,0,1,2-0,2020-21_cz1.txt
+16.00,AC Sparta Praha,FK Pardubice,2,0,1,1-0,2020-21_cz1.txt
+18.00,FC Fastav Zlín,Slavia Praha,2,6,2,0-5,2020-21_cz1.txt
+18.00,Baník Ostrava,Sigma Olomouc,1,1,X,0-0,2020-21_cz1.txt
+,íbram,MFK Karviná,0,1,2,0-1,2020-21_cz1.txt
+16.00,Slovan Liberec,FK Mladá Boleslav,3,0,1,2-0,2020-21_cz1.txt
+14.00,FK Pardubice,FC Fastav Zlín,0,0,X,,2020-21_cz1.txt
+,FK Teplice,Zbrojovka Brno,1,0,1,0-0,2020-21_cz1.txt
+18.30,Slavia Praha,Bohemians Praha 1905,2,1,1,1-0,2020-21_cz1.txt
+18.00,SFC Opava,AC Sparta Praha,0,3,2,0-1,2020-21_cz1.txt
+15.00,Sigma Olomouc,FK Jablonec,1,3,2,1-1,2020-21_cz1.txt
+17.00,AC Sparta Praha,Slovan Liberec,1,1,X,0-1,2020-21_cz1.txt
+15.00,Zbrojovka Brno,Baník Ostrava,0,1,2,0-1,2020-21_cz1.txt
+,FC Fastav Zlín,FK Teplice,2,3,2,1-2,2020-21_cz1.txt
+,FK Mladá Boleslav,1. FC Slovácko,2,3,2,1-1,2020-21_cz1.txt
+,MFK Karviná,FK Pardubice,0,2,2,0-1,2020-21_cz1.txt
+,,Slavia Praha,0,1,2,0-1,2020-21_cz1.txt
+16.00,Bohemians Praha 1905,SFC Opava,0,0,X,,2020-21_cz1.txt
+18.00,FK Teplice,FK Jablonec,0,5,2,0-3,2020-21_cz1.txt
+14.00,FK Mladá Boleslav,Zbrojovka Brno,1,1,X,0-1,2020-21_cz1.txt
+,SFC Opava,FC Fastav Zlín,0,0,X,,2020-21_cz1.txt
+16.00,1. FC Slovácko,MFK Karviná,2,0,1,0-0,2020-21_cz1.txt
+,Slovan Liberec,Bohemians Praha 1905,1,1,X,1-0,2020-21_cz1.txt
+18.30,Slavia Praha,Sigma Olomouc,3,1,1,2-1,2020-21_cz1.txt
+18.30,Baník Ostrava,AC Sparta Praha,0,0,X,,2020-21_cz1.txt
+18.00,Zbrojovka Brno,Slovan Liberec,0,3,2,0-2,2020-21_cz1.txt
+14.00,Sigma Olomouc,SFC Opava,4,1,1,2-0,2020-21_cz1.txt
+16.00,Bohemians Praha 1905,1. FC Slovácko,1,3,2,0-3,2020-21_cz1.txt
+,FC Fastav Zlín,Baník Ostrava,1,1,X,1-1,2020-21_cz1.txt
+18.30,MFK Karviná,Slavia Praha,1,3,2,0-0,2020-21_cz1.txt
+,jovice,FK Teplice,2,0,1,1-0,2020-21_cz1.txt
+,,FK Pardubice,2,0,1,0-0,2020-21_cz1.txt
+18.30,AC Sparta Praha,FK Mladá Boleslav,1,0,1,0-0,2020-21_cz1.txt
+14.00,FK Teplice,MFK Karviná,2,2,X,2-0,2020-21_cz1.txt
+18.30,AC Sparta Praha,Bohemians Praha 1905,0,1,2,0-1,2020-21_cz1.txt
+14.00,SFC Opava,Zbrojovka Brno,0,2,2,0-1,2020-21_cz1.txt
+18.30,Slavia Praha,FK Jablonec,3,0,1,2-0,2020-21_cz1.txt
+15.00,FK Mladá Boleslav,Sigma Olomouc,1,1,X,1-0,2020-21_cz1.txt
+14.00,Slovan Liberec,FC Fastav Zlín,1,0,1,0-0,2020-21_cz1.txt
+,jovice,Baník Ostrava,1,0,1,0-0,2020-21_cz1.txt
+16.00,Bohemians Praha 1905,Zbrojovka Brno,2,1,1,2-1,2020-21_cz1.txt
+,MFK Karviná,SFC Opava,3,1,1,0-0,2020-21_cz1.txt
+,,Slovan Liberec,0,2,2,0-0,2020-21_cz1.txt
+14.00,FK Teplice,FK Pardubice,0,1,2,0-0,2020-21_cz1.txt
+,íbram,Slavia Praha,3,3,X,2-1,2020-21_cz1.txt
+18.30,Sigma Olomouc,AC Sparta Praha,2,3,2,1-0,2020-21_cz1.txt
+14.00,FK Jablonec,1. FC Slovácko,0,3,2,0-1,2020-21_cz1.txt
+16.00,FC Fastav Zlín,FK Mladá Boleslav,2,1,1,0-0,2020-21_cz1.txt
+18.00,1. FC Slovácko,FK Teplice,2,0,1,1-0,2020-21_cz1.txt
+14.00,Zbrojovka Brno,FC Fastav Zlín,0,0,X,,2020-21_cz1.txt
+16.00,Slavia Praha,FK Pardubice,3,0,1,2-0,2020-21_cz1.txt
+14.00,Baník Ostrava,FK Jablonec,2,1,1,2-1,2020-21_cz1.txt
+,Bohemians Praha 1905,Sigma Olomouc,0,0,X,,2020-21_cz1.txt
+16.00,AC Sparta Praha,MFK Karviná,4,3,1,3-2,2020-21_cz1.txt
+16.00,FK Jablonec,FK Mladá Boleslav,1,1,X,1-1,2020-21_cz1.txt
+14.00,FK Pardubice,Baník Ostrava,3,2,1,1-0,2020-21_cz1.txt
+,íbram,1. FC Slovácko,1,4,2,0-2,2020-21_cz1.txt
+,Sigma Olomouc,Zbrojovka Brno,1,0,1,0-0,2020-21_cz1.txt
+16.30,FC Fastav Zlín,AC Sparta Praha,0,3,2,0-2,2020-21_cz1.txt
+,jovice,SFC Opava,0,1,2,0-0,2020-21_cz1.txt
+,MFK Karviná,Slovan Liberec,1,1,X,0-0,2020-21_cz1.txt
+,,Bohemians Praha 1905,3,1,1,1-0,2020-21_cz1.txt
+16.30,FK Teplice,Slavia Praha,1,1,X,0-1,2020-21_cz1.txt
+18.00,Slovan Liberec,FK Pardubice,4,1,1,4-0,2020-21_cz1.txt
+14.00,SFC Opava,FK Jablonec,0,1,2,0-0,2020-21_cz1.txt
+16.00,Baník Ostrava,FK Teplice,1,1,X,0-0,2020-21_cz1.txt
+14.00,FK Mladá Boleslav,MFK Karviná,2,0,1,2-0,2020-21_cz1.txt
+,Sigma Olomouc,FC Fastav Zlín,0,1,2,0-1,2020-21_cz1.txt
+16.00,1. FC Slovácko,Slavia Praha,2,3,2,2-1,2020-21_cz1.txt
+,íbram,Slovan Liberec,0,2,2,0-0,2020-21_cz1.txt
+16.00,FC Fastav Zlín,Bohemians Praha 1905,0,0,X,,2020-21_cz1.txt
+,FK Teplice,SFC Opava,3,1,1,1-1,2020-21_cz1.txt
+,,Sigma Olomouc,1,0,1,0-0,2020-21_cz1.txt
+,jovice,FK Mladá Boleslav,1,3,2,0-1,2020-21_cz1.txt
+,MFK Karviná,Zbrojovka Brno,1,1,X,1-0,2020-21_cz1.txt
+18.30,Slavia Praha,Baník Ostrava,2,1,1,2-0,2020-21_cz1.txt
+14.30,FK Pardubice,1. FC Slovácko,3,1,1,2-1,2020-21_cz1.txt
+18.00,FK Jablonec,AC Sparta Praha,1,0,1,0-0,2020-21_cz1.txt
+18.00,Slovan Liberec,FK Teplice,2,1,1,0-1,2020-21_cz1.txt
+14.00,SFC Opava,FK Pardubice,1,0,1,1-0,2020-21_cz1.txt
+14.00,Bohemians Praha 1905,MFK Karviná,2,0,1,1-0,2020-21_cz1.txt
+16.00,Zbrojovka Brno,FK Jablonec,1,2,2,0-1,2020-21_cz1.txt
+18.30,FK Mladá Boleslav,Slavia Praha,0,3,2,0-2,2020-21_cz1.txt
+16.30,Sigma Olomouc,1. FC Slovácko,0,0,X,,2020-21_cz1.txt
+18.00,FK Pardubice,FK Mladá Boleslav,2,2,X,1-0,2020-21_cz1.txt
+,íbram,Zbrojovka Brno,1,1,X,0-1,2020-21_cz1.txt
+16.00,MFK Karviná,Sigma Olomouc,0,1,2,0-0,2020-21_cz1.txt
+18.30,FK Jablonec,Slovan Liberec,2,1,1,1-0,2020-21_cz1.txt
+14.00,1. FC Slovácko,Baník Ostrava,2,1,1,2-0,2020-21_cz1.txt
+,FK Teplice,Bohemians Praha 1905,1,1,X,0-0,2020-21_cz1.txt
+,jovice,AC Sparta Praha,0,0,X,,2020-21_cz1.txt
+18.30,Slavia Praha,SFC Opava,4,0,1,1-0,2020-21_cz1.txt
+,,FC Fastav Zlín,2,0,1,1-0,2020-21_cz1.txt
+18.00,Bohemians Praha 1905,FK Jablonec,0,0,X,,2020-21_cz1.txt
+14.00,Sigma Olomouc,FK Pardubice,0,1,2,0-0,2020-21_cz1.txt
+16.00,SFC Opava,1. FC Slovácko,1,2,2,0-0,2020-21_cz1.txt
+,Slovan Liberec,Baník Ostrava,0,0,X,,2020-21_cz1.txt
+18.30,AC Sparta Praha,FK Teplice,7,2,1,4-1,2020-21_cz1.txt
+14.00,FC Fastav Zlín,MFK Karviná,1,2,2,1-1,2020-21_cz1.txt
+18.30,Zbrojovka Brno,Slavia Praha,0,0,X,,2020-21_cz1.txt
+18.15,FK Pardubice,Bohemians Praha 1905,0,2,2,0-1,2020-21_cz1.txt
+14.00,FK Jablonec,FC Fastav Zlín,3,1,1,0-0,2020-21_cz1.txt
+,íbram,Sigma Olomouc,0,2,2,0-0,2020-21_cz1.txt
+16.00,Baník Ostrava,SFC Opava,3,0,1,2-0,2020-21_cz1.txt
+18.30,1. FC Slovácko,Slovan Liberec,1,0,1,0-0,2020-21_cz1.txt
+,jovice,Zbrojovka Brno,0,2,2,0-0,2020-21_cz1.txt
+16.00,FK Teplice,FK Mladá Boleslav,1,3,2,1-1,2020-21_cz1.txt
+18.30,Slavia Praha,AC Sparta Praha,2,0,1,1-0,2020-21_cz1.txt
+18.00,Bohemians Praha 1905,Baník Ostrava,1,1,X,0-0,2020-21_cz1.txt
+14.00,FK Mladá Boleslav,SFC Opava,2,0,1,0-0,2020-21_cz1.txt
+,Sigma Olomouc,FK Teplice,1,1,X,1-0,2020-21_cz1.txt
+,,FK Jablonec,1,1,X,1-0,2020-21_cz1.txt
+14.00,Zbrojovka Brno,FK Pardubice,1,2,2,0-1,2020-21_cz1.txt
+16.00,Slovan Liberec,Slavia Praha,0,1,2,0-0,2020-21_cz1.txt
+18.30,AC Sparta Praha,1. FC Slovácko,1,0,1,0-0,2020-21_cz1.txt
+15.00,Baník Ostrava,FK Mladá Boleslav,2,1,1,0-1,2020-21_cz1.txt
+,jovice,Sigma Olomouc,2,2,X,2-0,2020-21_cz1.txt
+17.00,FK Jablonec,MFK Karviná,3,0,1,3-0,2020-21_cz1.txt
+15.00,1. FC Slovácko,Zbrojovka Brno,4,2,1,2-1,2020-21_cz1.txt
+,íbram,Bohemians Praha 1905,1,4,2,0-0,2020-21_cz1.txt
+,SFC Opava,Slovan Liberec,0,2,2,0-2,2020-21_cz1.txt
+17.00,FK Pardubice,AC Sparta Praha,2,2,X,0-2,2020-21_cz1.txt
+19.30,Slavia Praha,FC Fastav Zlín,2,1,1,1-1,2020-21_cz1.txt
+,jovice,FK Jablonec,0,2,2,0-2,2020-21_cz1.txt
+,Sigma Olomouc,Baník Ostrava,0,2,2,0-1,2020-21_cz1.txt
+16.00,FK Mladá Boleslav,Slovan Liberec,0,1,2,0-1,2020-21_cz1.txt
+,,1. FC Slovácko,2,1,1,1-1,2020-21_cz1.txt
+14.00,Zbrojovka Brno,FK Teplice,0,0,X,,2020-21_cz1.txt
+,FC Fastav Zlín,FK Pardubice,0,4,2,0-2,2020-21_cz1.txt
+16.00,AC Sparta Praha,SFC Opava,4,2,1,2-0,2020-21_cz1.txt
+18.30,Bohemians Praha 1905,Slavia Praha,0,0,X,,2020-21_cz1.txt
+,SFC Opava,Bohemians Praha 1905,1,1,X,1-0,2020-21_cz1.txt
+17.00,1. FC Slovácko,FK Mladá Boleslav,0,1,2,0-1,2020-21_cz1.txt
+19.30,Baník Ostrava,Zbrojovka Brno,1,1,X,0-0,2020-21_cz1.txt
+15.00,FK Jablonec,Sigma Olomouc,3,1,1,1-1,2020-21_cz1.txt
+,FK Pardubice,MFK Karviná,2,2,X,1-1,2020-21_cz1.txt
+,FK Teplice,FC Fastav Zlín,0,0,X,,2020-21_cz1.txt
+17.00,Slovan Liberec,AC Sparta Praha,2,2,X,1-0,2020-21_cz1.txt
+18.00,FK Jablonec,FK Teplice,4,1,1,2-0,2020-21_cz1.txt
+15.00,FC Fastav Zlín,SFC Opava,1,1,X,0-1,2020-21_cz1.txt
+17.00,Zbrojovka Brno,FK Mladá Boleslav,2,3,2,0-2,2020-21_cz1.txt
+19.30,Bohemians Praha 1905,Slovan Liberec,3,0,1,0-0,2020-21_cz1.txt
+,jovice,FK Pardubice,2,0,1,1-0,2020-21_cz1.txt
+,MFK Karviná,1. FC Slovácko,0,2,2,0-1,2020-21_cz1.txt
+17.00,Sigma Olomouc,Slavia Praha,0,1,2,0-0,2020-21_cz1.txt
+19.30,AC Sparta Praha,Baník Ostrava,3,1,1,1-0,2020-21_cz1.txt
+20.00,Slovan Liberec,Zbrojovka Brno,1,1,X,0-0,2020-21_cz1.txt
+15.00,SFC Opava,Sigma Olomouc,1,2,2,0-1,2020-21_cz1.txt
+17.00,Baník Ostrava,FC Fastav Zlín,4,2,1,2-0,2020-21_cz1.txt
+,íbram,FK Jablonec,1,0,1,0-0,2020-21_cz1.txt
+19.30,1. FC Slovácko,Bohemians Praha 1905,1,1,X,1-1,2020-21_cz1.txt
+17.00,FK Mladá Boleslav,AC Sparta Praha,4,5,2,2-2,2020-21_cz1.txt
+19.30,Slavia Praha,MFK Karviná,1,1,X,1-0,2020-21_cz1.txt
+17.00,Zbrojovka Brno,SFC Opava,4,1,1,2-0,2020-21_cz1.txt
+,Bohemians Praha 1905,AC Sparta Praha,1,2,2,1-1,2020-21_cz1.txt
+,jovice,1. FC Slovácko,0,1,2,0-1,2020-21_cz1.txt
+,FC Fastav Zlín,Slovan Liberec,0,0,X,,2020-21_cz1.txt
+,FK Jablonec,Slavia Praha,1,1,X,1-1,2020-21_cz1.txt
+,íbram,FK Pardubice,0,1,2,0-1,2020-21_cz1.txt
+,MFK Karviná,FK Teplice,2,0,1,1-0,2020-21_cz1.txt
+,Sigma Olomouc,FK Mladá Boleslav,0,3,2,0-1,2020-21_cz1.txt
+,,Baník Ostrava,4,0,1,1-0,2020-21_cz1.txt
+17.00,1. FC Slovácko,FC Fastav Zlín,2,0,1,1-0,2020-21_cz1.txt
+,Baník Ostrava,MFK Karviná,1,1,X,0-0,2020-21_cz1.txt
+,FK Mladá Boleslav,Bohemians Praha 1905,3,1,1,1-0,2020-21_cz1.txt
+,FK Pardubice,FK Jablonec,0,1,2,0-0,2020-21_cz1.txt
+,Slovan Liberec,Sigma Olomouc,1,2,2,0-1,2020-21_cz1.txt
+,AC Sparta Praha,Zbrojovka Brno,6,1,1,6-1,2020-21_cz1.txt
+15.00,FK Pardubice,Bohemians Praha 1905,0,1,2,0-1,2023-24_cz1.txt
+,MFK Karviná,FC Zlín,4,1,1,3-0,2023-24_cz1.txt
+18.00,Slavia Praha,FC Hradec Králové,2,0,1,1-0,2023-24_cz1.txt
+,FK Mladá Boleslav,FK Jablonec,3,1,1,1-0,2023-24_cz1.txt
+,Slovan Liberec,Baník Ostrava,3,1,1,2-0,2023-24_cz1.txt
+18.00,AC Sparta Praha,Sigma Olomouc,2,0,1,1-0,2023-24_cz1.txt
+15.00,FC Zlín,AC Sparta Praha,0,1,2,0-0,2023-24_cz1.txt
+,FK Pardubice,FK Jablonec,0,0,X,,2023-24_cz1.txt
+,Sigma Olomouc,MFK Karviná,3,1,1,2-1,2023-24_cz1.txt
+18.00,Baník Ostrava,1. FC Slovácko,0,0,X,,2023-24_cz1.txt
+15.00,Bohemians Praha 1905,FK Teplice,1,2,2,0-1,2023-24_cz1.txt
+,jovice,Slavia Praha,1,3,2,0-1,2023-24_cz1.txt
+,FK Mladá Boleslav,Slovan Liberec,2,2,X,0-2,2023-24_cz1.txt
+,,FC Hradec Králové,1,1,X,0-0,2023-24_cz1.txt
+15.00,1. FC Slovácko,Sigma Olomouc,0,2,2,0-1,2023-24_cz1.txt
+,MFK Karviná,FK Mladá Boleslav,1,2,2,0-2,2023-24_cz1.txt
+,AC Sparta Praha,FK Pardubice,5,2,1,3-0,2023-24_cz1.txt
+15.00,FK Teplice,FK Jablonec,0,0,X,,2023-24_cz1.txt
+,Slovan Liberec,Bohemians Praha 1905,0,1,2,0-0,2023-24_cz1.txt
+,,Baník Ostrava,3,1,1,2-1,2023-24_cz1.txt
+18.00,Slavia Praha,FC Zlín,2,1,1,0-0,2023-24_cz1.txt
+15.00,Baník Ostrava,FC Hradec Králové,2,0,1,0-0,2023-24_cz1.txt
+,FC Zlín,Slovan Liberec,1,1,X,1-1,2023-24_cz1.txt
+18.00,FK Jablonec,AC Sparta Praha,1,5,2,0-5,2023-24_cz1.txt
+15.00,Bohemians Praha 1905,1. FC Slovácko,0,1,2,0-1,2023-24_cz1.txt
+,FK Mladá Boleslav,Slavia Praha,0,1,2,0-0,2023-24_cz1.txt
+,FK Pardubice,MFK Karviná,2,1,1,1-0,2023-24_cz1.txt
+,Sigma Olomouc,FK Teplice,2,1,1,0-0,2023-24_cz1.txt
+15.00,1. FC Slovácko,FK Mladá Boleslav,2,2,X,1-1,2023-24_cz1.txt
+,MFK Karviná,FK Jablonec,1,1,X,0-0,2023-24_cz1.txt
+,Slovan Liberec,FK Pardubice,1,0,1,1-0,2023-24_cz1.txt
+18.00,FK Teplice,AC Sparta Praha,1,1,X,0-1,2023-24_cz1.txt
+,jovice,Bohemians Praha 1905,3,0,1,1-0,2023-24_cz1.txt
+,FC Hradec Králové,FC Zlín,2,0,1,1-0,2023-24_cz1.txt
+,,Sigma Olomouc,2,1,1,2-1,2023-24_cz1.txt
+18.00,Slavia Praha,Baník Ostrava,1,0,1,0-0,2023-24_cz1.txt
+15.00,FC Zlín,FK Teplice,2,1,1,0-0,2023-24_cz1.txt
+,FK Pardubice,1. FC Slovácko,0,1,2,0-1,2023-24_cz1.txt
+15.00,Bohemians Praha 1905,FC Hradec Králové,2,1,1,1-0,2023-24_cz1.txt
+,FK Jablonec,Slavia Praha,1,1,X,1-0,2023-24_cz1.txt
+,Sigma Olomouc,Slovan Liberec,2,0,1,0-0,2023-24_cz1.txt
+18.00,AC Sparta Praha,MFK Karviná,3,1,1,2-0,2023-24_cz1.txt
+15.00,1. FC Slovácko,FC Zlín,1,0,1,0-0,2023-24_cz1.txt
+,jovice,FK Jablonec,2,1,1,1-1,2023-24_cz1.txt
+,FK Teplice,FK Pardubice,0,1,2,0-0,2023-24_cz1.txt
+18.00,Baník Ostrava,FK Mladá Boleslav,2,0,1,0-0,2023-24_cz1.txt
+15.00,Slovan Liberec,AC Sparta Praha,0,2,2,0-0,2023-24_cz1.txt
+,,Bohemians Praha 1905,2,0,1,2-0,2023-24_cz1.txt
+18.00,Slavia Praha,MFK Karviná,5,1,1,3-1,2023-24_cz1.txt
+20.00,FC Hradec Králové,Sigma Olomouc,1,3,2,1-1,2023-24_cz1.txt
+15.00,Bohemians Praha 1905,Baník Ostrava,1,1,X,0-0,2023-24_cz1.txt
+,FK Mladá Boleslav,FC Hradec Králové,5,1,1,3-0,2023-24_cz1.txt
+,MFK Karviná,FK Teplice,0,1,2,0-0,2023-24_cz1.txt
+18.00,FK Pardubice,Slavia Praha,0,1,2,0-1,2023-24_cz1.txt
+,FK Jablonec,Slovan Liberec,1,1,X,0-1,2023-24_cz1.txt
+18.00,AC Sparta Praha,1. FC Slovácko,5,0,1,3-0,2023-24_cz1.txt
+15.00,1. FC Slovácko,MFK Karviná,2,0,1,2-0,2023-24_cz1.txt
+,Baník Ostrava,FC Zlín,5,1,1,1-1,2023-24_cz1.txt
+,jovice,FK Mladá Boleslav,1,2,2,0-1,2023-24_cz1.txt
+,Slovan Liberec,FK Teplice,3,3,X,3-2,2023-24_cz1.txt
+18.00,Bohemians Praha 1905,Sigma Olomouc,3,2,1,1-2,2023-24_cz1.txt
+15.00,FC Hradec Králové,FK Jablonec,1,0,1,1-0,2023-24_cz1.txt
+,,FK Pardubice,6,2,1,3-1,2023-24_cz1.txt
+18.00,Slavia Praha,AC Sparta Praha,1,1,X,0-0,2023-24_cz1.txt
+,FK Jablonec,1. FC Slovácko,2,0,1,2-0,2023-24_cz1.txt
+,MFK Karviná,Slovan Liberec,5,2,1,3-1,2023-24_cz1.txt
+,Sigma Olomouc,Baník Ostrava,0,3,2,0-2,2023-24_cz1.txt
+15.00,FK Mladá Boleslav,Bohemians Praha 1905,2,1,1,1-0,2023-24_cz1.txt
+,FK Teplice,Slavia Praha,0,0,X,,2023-24_cz1.txt
+18.00,FK Pardubice,FC Hradec Králové,1,1,X,1-0,2023-24_cz1.txt
+15.00,1. FC Slovácko,FK Teplice,2,0,1,0-0,2023-24_cz1.txt
+,Bohemians Praha 1905,FC Zlín,0,0,X,,2023-24_cz1.txt
+,jovice,MFK Karviná,1,0,1,0-0,2023-24_cz1.txt
+,Sigma Olomouc,FK Mladá Boleslav,4,0,1,1-0,2023-24_cz1.txt
+18.00,Baník Ostrava,FK Pardubice,1,1,X,0-1,2023-24_cz1.txt
+15.00,FC Hradec Králové,AC Sparta Praha,1,3,2,0-2,2023-24_cz1.txt
+18.00,Slovan Liberec,Slavia Praha,2,3,2,2-1,2023-24_cz1.txt
+,,FK Jablonec,3,2,1,2-2,2023-24_cz1.txt
+15.00,FC Zlín,FK Mladá Boleslav,5,9,2,2-1,2023-24_cz1.txt
+,FK Pardubice,Sigma Olomouc,1,1,X,1-0,2023-24_cz1.txt
+,MFK Karviná,FC Hradec Králové,1,0,1,0-0,2023-24_cz1.txt
+18.00,Slavia Praha,1. FC Slovácko,2,0,1,0-0,2023-24_cz1.txt
+15.00,FK Teplice,Baník Ostrava,0,1,2,0-0,2023-24_cz1.txt
+18.00,FK Jablonec,Bohemians Praha 1905,0,1,2,0-1,2023-24_cz1.txt
+15.00,1. FC Slovácko,Slovan Liberec,1,1,X,1-1,2023-24_cz1.txt
+,jovice,FK Pardubice,0,1,2,0-1,2023-24_cz1.txt
+,FC Hradec Králové,FK Teplice,1,0,1,1-0,2023-24_cz1.txt
+,Sigma Olomouc,FC Zlín,0,0,X,,2023-24_cz1.txt
+18.00,Baník Ostrava,FK Jablonec,0,1,2,0-0,2023-24_cz1.txt
+15.00,FK Mladá Boleslav,AC Sparta Praha,3,1,1,2-1,2023-24_cz1.txt
+,,MFK Karviná,0,1,2,0-0,2023-24_cz1.txt
+18.00,Bohemians Praha 1905,Slavia Praha,0,2,2,0-1,2023-24_cz1.txt
+15.00,1. FC Slovácko,FC Hradec Králové,0,0,X,,2023-24_cz1.txt
+,FK Jablonec,Sigma Olomouc,1,1,X,1-1,2023-24_cz1.txt
+,FK Pardubice,FC Zlín,0,1,2,0-1,2023-24_cz1.txt
+,FK Teplice,FK Mladá Boleslav,1,0,1,0-0,2023-24_cz1.txt
+18.00,AC Sparta Praha,Bohemians Praha 1905,2,0,1,0-0,2023-24_cz1.txt
+15.00,MFK Karviná,Baník Ostrava,1,3,2,1-0,2023-24_cz1.txt
+,jovice,FK Teplice,0,1,2,0-1,2023-24_cz1.txt
+,FC Hradec Králové,Slovan Liberec,1,1,X,1-1,2023-24_cz1.txt
+,FC Zlín,FK Jablonec,1,1,X,1-0,2023-24_cz1.txt
+,FK Mladá Boleslav,FK Pardubice,1,0,1,0-0,2023-24_cz1.txt
+18.00,Bohemians Praha 1905,MFK Karviná,1,0,1,0-0,2023-24_cz1.txt
+15.00,Baník Ostrava,AC Sparta Praha,0,1,2,0-0,2023-24_cz1.txt
+,,1. FC Slovácko,1,4,2,1-1,2023-24_cz1.txt
+18.00,Sigma Olomouc,Slavia Praha,1,3,2,1-2,2023-24_cz1.txt
+,FK Teplice,Bohemians Praha 1905,1,1,X,1-0,2023-24_cz1.txt
+,MFK Karviná,Sigma Olomouc,0,2,2,0-1,2023-24_cz1.txt
+,Slovan Liberec,FK Mladá Boleslav,2,1,1,1-1,2023-24_cz1.txt
+15.00,1. FC Slovácko,Baník Ostrava,2,0,1,1-0,2023-24_cz1.txt
+,FK Jablonec,FK Pardubice,2,1,1,1-1,2023-24_cz1.txt
+18.00,AC Sparta Praha,FC Zlín,2,0,1,2-0,2023-24_cz1.txt
+15.00,Sigma Olomouc,1. FC Slovácko,1,1,X,1-0,2023-24_cz1.txt
+15.00,FK Pardubice,AC Sparta Praha,1,2,2,1-1,2023-24_cz1.txt
+17.00,FK Jablonec,FK Teplice,3,2,1,2-1,2023-24_cz1.txt
+,jovice,FC Hradec Králové,0,2,2,0-2,2023-24_cz1.txt
+,FK Mladá Boleslav,MFK Karviná,2,2,X,1-2,2023-24_cz1.txt
+18.00,Bohemians Praha 1905,Slovan Liberec,0,0,X,,2023-24_cz1.txt
+18.00,FC Zlín,Slavia Praha,1,1,X,0-1,2023-24_cz1.txt
+15.00,1. FC Slovácko,Bohemians Praha 1905,5,2,1,2-2,2023-24_cz1.txt
+,Slovan Liberec,FC Zlín,5,3,1,2-1,2023-24_cz1.txt
+,AC Sparta Praha,FK Jablonec,3,0,1,3-0,2023-24_cz1.txt
+18.00,FC Hradec Králové,Baník Ostrava,2,3,2,2-1,2023-24_cz1.txt
+18.00,Slavia Praha,FK Mladá Boleslav,2,0,1,0-0,2023-24_cz1.txt
+17.00,MFK Karviná,FK Pardubice,0,3,2,0-1,2023-24_cz1.txt
+17.30,FK Teplice,Sigma Olomouc,2,0,1,1-0,2023-24_cz1.txt
+15.00,FC Zlín,FC Hradec Králové,4,0,1,4-0,2023-24_cz1.txt
+,FK Jablonec,MFK Karviná,0,0,X,,2023-24_cz1.txt
+,FK Mladá Boleslav,1. FC Slovácko,0,1,2,0-0,2023-24_cz1.txt
+,FK Pardubice,Slovan Liberec,2,0,1,1-0,2023-24_cz1.txt
+15.00,Baník Ostrava,Slavia Praha,2,3,2,2-2,2023-24_cz1.txt
+18.00,AC Sparta Praha,FK Teplice,2,1,1,0-1,2023-24_cz1.txt
+15.00,1. FC Slovácko,FK Pardubice,1,2,2,0-1,2023-24_cz1.txt
+,jovice,Baník Ostrava,3,0,1,0-0,2023-24_cz1.txt
+,MFK Karviná,AC Sparta Praha,0,3,2,0-1,2023-24_cz1.txt
+,Slovan Liberec,Sigma Olomouc,2,0,1,0-0,2023-24_cz1.txt
+,,FK Mladá Boleslav,1,1,X,0-0,2023-24_cz1.txt
+15.00,FC Hradec Králové,Bohemians Praha 1905,2,2,X,1-0,2023-24_cz1.txt
+,FK Teplice,FC Zlín,2,1,1,1-0,2023-24_cz1.txt
+18.00,Slavia Praha,FK Jablonec,4,3,1,3-2,2023-24_cz1.txt
+,FK Mladá Boleslav,Baník Ostrava,1,3,2,1-3,2023-24_cz1.txt
+,FK Pardubice,FK Teplice,1,1,X,1-0,2023-24_cz1.txt
+,Sigma Olomouc,FC Hradec Králové,0,0,X,,2023-24_cz1.txt
+15.00,FC Zlín,1. FC Slovácko,2,1,1,0-1,2023-24_cz1.txt
+,MFK Karviná,Slavia Praha,0,3,2,0-2,2023-24_cz1.txt
+18.00,AC Sparta Praha,Slovan Liberec,2,1,1,0-0,2023-24_cz1.txt
+15.00,Baník Ostrava,Bohemians Praha 1905,1,1,X,1-0,2023-24_cz1.txt
+,FC Hradec Králové,FK Mladá Boleslav,0,0,X,,2023-24_cz1.txt
+,FK Teplice,MFK Karviná,2,2,X,0-1,2023-24_cz1.txt
+,Slovan Liberec,FK Jablonec,3,3,X,0-1,2023-24_cz1.txt
+,,FC Zlín,3,0,1,1-0,2023-24_cz1.txt
+,jovice,Sigma Olomouc,2,1,1,0-0,2023-24_cz1.txt
+,Slavia Praha,FK Pardubice,3,0,1,0-0,2023-24_cz1.txt
+18.00,1. FC Slovácko,AC Sparta Praha,1,3,2,1-1,2023-24_cz1.txt
+15.00,FK Jablonec,FC Hradec Králové,1,1,X,1-1,2023-24_cz1.txt
+,MFK Karviná,1. FC Slovácko,1,3,2,1-1,2023-24_cz1.txt
+,Sigma Olomouc,Bohemians Praha 1905,2,2,X,2-2,2023-24_cz1.txt
+14.00,FK Teplice,Slovan Liberec,2,0,1,2-0,2023-24_cz1.txt
+15.00,FC Zlín,Baník Ostrava,0,1,2,0-1,2023-24_cz1.txt
+18.00,AC Sparta Praha,Slavia Praha,0,0,X,,2023-24_cz1.txt
+15.00,1. FC Slovácko,FK Jablonec,0,1,2,0-0,2023-24_cz1.txt
+,Bohemians Praha 1905,FK Mladá Boleslav,0,0,X,,2023-24_cz1.txt
+,FC Hradec Králové,FK Pardubice,2,0,1,0-0,2023-24_cz1.txt
+,Slovan Liberec,MFK Karviná,1,0,1,0-0,2023-24_cz1.txt
+18.00,Baník Ostrava,Sigma Olomouc,1,2,2,0-2,2023-24_cz1.txt
+,jovice,FC Zlín,2,2,X,1-1,2023-24_cz1.txt
+,Slavia Praha,FK Teplice,4,0,1,2-0,2023-24_cz1.txt
+,,AC Sparta Praha,4,0,1,1-0,2023-24_cz1.txt
+15.00,FC Zlín,Bohemians Praha 1905,2,2,X,0-1,2023-24_cz1.txt
+,FK Mladá Boleslav,Sigma Olomouc,2,1,1,1-0,2023-24_cz1.txt
+18.00,FK Teplice,1. FC Slovácko,1,1,X,1-1,2023-24_cz1.txt
+,FK Pardubice,Baník Ostrava,0,1,2,0-0,2023-24_cz1.txt
+,Slavia Praha,Slovan Liberec,3,0,1,1-0,2023-24_cz1.txt
+18.00,AC Sparta Praha,FC Hradec Králové,2,1,1,1-0,2023-24_cz1.txt
+15.00,Bohemians Praha 1905,FK Jablonec,2,0,1,2-0,2023-24_cz1.txt
+,Sigma Olomouc,FK Pardubice,0,2,2,0-1,2023-24_cz1.txt
+,,Slovan Liberec,1,3,2,0-0,2023-24_cz1.txt
+18.00,1. FC Slovácko,Slavia Praha,1,3,2,1-2,2023-24_cz1.txt
+15.00,Baník Ostrava,FK Teplice,4,1,1,2-0,2023-24_cz1.txt
+,FC Hradec Králové,MFK Karviná,2,1,1,1-1,2023-24_cz1.txt
+,FK Mladá Boleslav,FC Zlín,3,2,1,2-1,2023-24_cz1.txt
+,jovice,AC Sparta Praha,0,1,2,0-1,2023-24_cz1.txt
+15.00,FC Zlín,Sigma Olomouc,3,2,1,1-0,2023-24_cz1.txt
+,Slovan Liberec,1. FC Slovácko,4,1,1,2-0,2023-24_cz1.txt
+18.00,Slavia Praha,Bohemians Praha 1905,2,1,1,0-0,2023-24_cz1.txt
+15.00,FK Jablonec,Baník Ostrava,2,3,2,1-2,2023-24_cz1.txt
+,FK Teplice,FC Hradec Králové,0,1,2,0-1,2023-24_cz1.txt
+18.00,AC Sparta Praha,FK Mladá Boleslav,1,1,X,1-1,2023-24_cz1.txt
+15.00,Bohemians Praha 1905,AC Sparta Praha,1,3,2,1-1,2023-24_cz1.txt
+,jovice,Slovan Liberec,3,2,1,1-1,2023-24_cz1.txt
+,FK Mladá Boleslav,FK Teplice,1,2,2,0-0,2023-24_cz1.txt
+18.00,FC Hradec Králové,1. FC Slovácko,1,0,1,0-0,2023-24_cz1.txt
+15.00,Baník Ostrava,MFK Karviná,2,2,X,1-0,2023-24_cz1.txt
+,FC Zlín,FK Pardubice,1,1,X,1-0,2023-24_cz1.txt
+,Sigma Olomouc,FK Jablonec,1,0,1,0-0,2023-24_cz1.txt
+,,Slavia Praha,1,0,1,0-0,2023-24_cz1.txt
+15.00,FK Jablonec,FC Zlín,0,0,X,,2023-24_cz1.txt
+,MFK Karviná,Bohemians Praha 1905,1,1,X,0-0,2023-24_cz1.txt
+,AC Sparta Praha,Baník Ostrava,4,3,1,1-0,2023-24_cz1.txt
+15.00,FK Pardubice,FK Mladá Boleslav,1,2,2,0-2,2023-24_cz1.txt
+,Slavia Praha,Sigma Olomouc,2,2,X,0-0,2023-24_cz1.txt
+,Slovan Liberec,FC Hradec Králové,0,0,X,,2023-24_cz1.txt
+15.00,Baník Ostrava,Slovan Liberec,2,2,X,1-0,2023-24_cz1.txt
+,Bohemians Praha 1905,FK Pardubice,2,1,1,1-0,2023-24_cz1.txt
+,jovice,1. FC Slovácko,2,2,X,1-1,2023-24_cz1.txt
+,FC Hradec Králové,Slavia Praha,1,2,2,0-2,2023-24_cz1.txt
+,FC Zlín,MFK Karviná,0,1,2,0-1,2023-24_cz1.txt
+,FK Jablonec,FK Mladá Boleslav,1,1,X,1-0,2023-24_cz1.txt
+,Sigma Olomouc,AC Sparta Praha,1,4,2,0-2,2023-24_cz1.txt
+,,FK Teplice,3,0,1,0-0,2023-24_cz1.txt
+,jovice,Bohemians Praha 1905,2,1,1,1-1,2023-24_cz1.txt
+,FK Jablonec,MFK Karviná,3,2,1,1-1,2023-24_cz1.txt
+,FK Pardubice,FC Zlín,2,0,1,0-0,2023-24_cz1.txt
+,Bohemians Praha 1905,FK Jablonec,1,1,X,0-1,2023-24_cz1.txt
+18.00,MFK Karviná,FC Zlín,2,2,X,2-0,2023-24_cz1.txt
+17.00,Bohemians Praha 1905,MFK Karviná,1,3,2,1-0,2023-24_cz1.txt
+,FK Jablonec,FK Pardubice,3,0,1,0-0,2023-24_cz1.txt
+17.00,FK Pardubice,MFK Karviná,4,0,1,2-0,2023-24_cz1.txt
+,jovice,FK Jablonec,2,2,X,2-2,2023-24_cz1.txt
+,FC Zlín,Bohemians Praha 1905,1,2,2,1-1,2023-24_cz1.txt
+18.00,Bohemians Praha 1905,FK Pardubice,0,1,2,0-0,2023-24_cz1.txt
+,FK Jablonec,FC Zlín,1,0,1,1-0,2023-24_cz1.txt
+18.00,FK Mladá Boleslav,FC Hradec Králové,3,1,1,2-0,2023-24_cz1.txt
+18.00,Slavia Praha,Baník Ostrava,5,0,1,1-0,2023-24_cz1.txt
+,,FK Mladá Boleslav,3,0,1,2-0,2023-24_cz1.txt
+18.00,1. FC Slovácko,AC Sparta Praha,2,4,2,1-2,2023-24_cz1.txt
+15.00,Baník Ostrava,FK Mladá Boleslav,0,1,2,0-1,2023-24_cz1.txt
+,,1. FC Slovácko,4,2,1,2-1,2023-24_cz1.txt
+17.30,AC Sparta Praha,Slavia Praha,0,0,X,,2023-24_cz1.txt
+17.00,FK Mladá Boleslav,1. FC Slovácko,0,1,2,0-1,2023-24_cz1.txt
+19.30,AC Sparta Praha,Baník Ostrava,2,1,1,1-0,2023-24_cz1.txt
+17.00,FK Mladá Boleslav,AC Sparta Praha,0,5,2,0-3,2023-24_cz1.txt
+,1. FC Slovácko,Slavia Praha,1,2,2,0-0,2023-24_cz1.txt
+,,Baník Ostrava,1,1,X,0-0,2023-24_cz1.txt
+,Slavia Praha,FK Mladá Boleslav,4,0,1,2-0,2023-24_cz1.txt
+,Baník Ostrava,1. FC Slovácko,6,0,1,3-0,2023-24_cz1.txt
+15.00,FK Teplice,Slovan Liberec,2,0,1,0-0,2023-24_cz1.txt
+,FC Hradec Králové,Sigma Olomouc,3,1,1,3-1,2023-24_cz1.txt
+15.00,Slovan Liberec,FK Teplice,1,2,2,0-0,2023-24_cz1.txt
+,Sigma Olomouc,FC Hradec Králové,1,3,2,0-2,2023-24_cz1.txt
+15.00,FK Teplice,FC Hradec Králové,0,1,2,0-0,2023-24_cz1.txt
+18.00,FC Hradec Králové,FK Teplice,2,0,1,0-0,2023-24_cz1.txt
+19.00,AC Sparta Praha,FK Pardubice,2,1,1,1-1,2024-25_cz1.txt
+14.30,FK Jablonec,FK Mladá Boleslav,2,0,1,1-0,2024-25_cz1.txt
+,jovice,Sigma Olomouc,0,2,2,0-0,2024-25_cz1.txt
+,Bohemians Praha 1905,Baník Ostrava,2,1,1,0-0,2024-25_cz1.txt
+14.30,MFK Karviná,Slovan Liberec,1,3,2,1-2,2024-25_cz1.txt
+17.00,1. FC Slovácko,Slavia Praha,0,0,X,,2024-25_cz1.txt
+20.00,FC Hradec Králové,FK Teplice,1,0,1,0-0,2024-25_cz1.txt
+14.30,FK Dukla Praha,Bohemians Praha 1905,1,0,1,0-0,2024-25_cz1.txt
+17.00,FK Teplice,AC Sparta Praha,1,4,2,0-0,2024-25_cz1.txt
+,FK Pardubice,MFK Karviná,0,1,2,0-1,2024-25_cz1.txt
+14.30,Slovan Liberec,Sigma Olomouc,1,1,X,1-0,2024-25_cz1.txt
+17.00,FK Mladá Boleslav,1. FC Slovácko,3,0,1,2-0,2024-25_cz1.txt
+,Baník Ostrava,FK Jablonec,1,0,1,0-0,2024-25_cz1.txt
+,,FC Hradec Králové,1,0,1,0-0,2024-25_cz1.txt
+17.30,Slovan Liberec,Slavia Praha,0,1,2,0-1,2024-25_cz1.txt
+20.00,AC Sparta Praha,FK Dukla Praha,2,0,1,1-0,2024-25_cz1.txt
+14.30,1. FC Slovácko,Bohemians Praha 1905,0,0,X,,2024-25_cz1.txt
+20.00,Sigma Olomouc,FK Teplice,2,1,1,1-1,2024-25_cz1.txt
+,jovice,FK Pardubice,1,3,2,0-3,2024-25_cz1.txt
+17.00,FC Hradec Králové,FK Mladá Boleslav,2,1,1,1-1,2024-25_cz1.txt
+18.00,MFK Karviná,Baník Ostrava,0,0,X,,2024-25_cz1.txt
+14.30,FK Dukla Praha,FK Jablonec,0,2,2,0-1,2024-25_cz1.txt
+17.00,FK Teplice,Slovan Liberec,2,1,1,1-0,2024-25_cz1.txt
+,Bohemians Praha 1905,AC Sparta Praha,1,2,2,1-1,2024-25_cz1.txt
+20.00,Slavia Praha,Sigma Olomouc,2,0,1,1-0,2024-25_cz1.txt
+14.30,FK Pardubice,1. FC Slovácko,0,1,2,0-0,2024-25_cz1.txt
+,Baník Ostrava,FC Hradec Králové,1,0,1,0-0,2024-25_cz1.txt
+,,MFK Karviná,5,0,1,2-0,2024-25_cz1.txt
+14.30,FC Hradec Králové,FK Dukla Praha,1,0,1,1-0,2024-25_cz1.txt
+17.00,Slavia Praha,FK Teplice,2,1,1,0-0,2024-25_cz1.txt
+,MFK Karviná,Bohemians Praha 1905,1,2,2,1-2,2024-25_cz1.txt
+20.00,FK Jablonec,AC Sparta Praha,1,2,2,0-1,2024-25_cz1.txt
+14.30,Sigma Olomouc,FK Mladá Boleslav,3,2,1,2-1,2024-25_cz1.txt
+17.00,Slovan Liberec,FK Pardubice,3,0,1,2-0,2024-25_cz1.txt
+20.00,1. FC Slovácko,Baník Ostrava,1,0,1,1-0,2024-25_cz1.txt
+14.30,Bohemians Praha 1905,FK Jablonec,1,2,2,1-1,2024-25_cz1.txt
+17.00,FK Teplice,MFK Karviná,1,3,2,0-1,2024-25_cz1.txt
+,AC Sparta Praha,1. FC Slovácko,2,2,X,1-2,2024-25_cz1.txt
+20.00,FK Pardubice,FC Hradec Králové,2,1,1,0-0,2024-25_cz1.txt
+14.30,Baník Ostrava,Slovan Liberec,2,0,1,0-0,2024-25_cz1.txt
+,,Sigma Olomouc,2,1,1,1-0,2024-25_cz1.txt
+19.30,FK Mladá Boleslav,Slavia Praha,0,2,2,0-2,2024-25_cz1.txt
+,jovice,Bohemians Praha 1905,0,0,X,,2024-25_cz1.txt
+17.00,1. FC Slovácko,FK Jablonec,0,0,X,,2024-25_cz1.txt
+20.00,FC Hradec Králové,AC Sparta Praha,0,2,2,0-2,2024-25_cz1.txt
+14.30,Sigma Olomouc,Baník Ostrava,2,2,X,1-1,2024-25_cz1.txt
+,MFK Karviná,FK Dukla Praha,0,0,X,,2024-25_cz1.txt
+17.00,Slavia Praha,FK Pardubice,2,0,1,1-0,2024-25_cz1.txt
+,FK Teplice,FK Mladá Boleslav,1,2,2,1-1,2024-25_cz1.txt
+19.00,AC Sparta Praha,MFK Karviná,4,1,1,3-1,2024-25_cz1.txt
+17.30,FK Pardubice,Sigma Olomouc,2,2,X,0-1,2024-25_cz1.txt
+,FK Dukla Praha,1. FC Slovácko,1,2,2,1-0,2024-25_cz1.txt
+20.00,Bohemians Praha 1905,FC Hradec Králové,0,3,2,0-2,2024-25_cz1.txt
+17.30,FK Mladá Boleslav,Slovan Liberec,1,0,1,0-0,2024-25_cz1.txt
+,Baník Ostrava,Slavia Praha,0,1,2,0-1,2024-25_cz1.txt
+,,FK Teplice,1,1,X,0-0,2024-25_cz1.txt
+13.30,FC Hradec Králové,1. FC Slovácko,3,0,1,1-0,2024-25_cz1.txt
+16.00,FK Teplice,Baník Ostrava,2,3,2,1-1,2024-25_cz1.txt
+,MFK Karviná,FK Jablonec,1,0,1,1-0,2024-25_cz1.txt
+13.00,FK Mladá Boleslav,FK Pardubice,2,2,X,1-1,2024-25_cz1.txt
+15.30,Sigma Olomouc,FK Dukla Praha,2,1,1,1-0,2024-25_cz1.txt
+,jovice,AC Sparta Praha,0,2,2,0-1,2024-25_cz1.txt
+18.30,Slovan Liberec,Bohemians Praha 1905,2,2,X,2-1,2024-25_cz1.txt
+19.30,AC Sparta Praha,Sigma Olomouc,2,3,2,1-0,2024-25_cz1.txt
+13.30,FK Dukla Praha,Slovan Liberec,1,4,2,1-0,2024-25_cz1.txt
+16.00,FK Pardubice,FK Teplice,0,1,2,0-0,2024-25_cz1.txt
+,1. FC Slovácko,MFK Karviná,2,1,1,1-0,2024-25_cz1.txt
+19.00,FK Jablonec,FC Hradec Králové,2,0,1,0-0,2024-25_cz1.txt
+,,FK Mladá Boleslav,1,1,X,1-1,2024-25_cz1.txt
+18.30,Bohemians Praha 1905,Slavia Praha,0,4,2,0-3,2024-25_cz1.txt
+13.30,MFK Karviná,FC Hradec Králové,0,0,X,,2024-25_cz1.txt
+16.00,FK Teplice,FK Dukla Praha,1,1,X,1-0,2024-25_cz1.txt
+,jovice,1. FC Slovácko,0,2,2,0-1,2024-25_cz1.txt
+19.00,Slovan Liberec,FK Jablonec,0,5,2,0-1,2024-25_cz1.txt
+,,FK Pardubice,2,0,1,0-0,2024-25_cz1.txt
+15.30,Sigma Olomouc,Bohemians Praha 1905,1,3,2,0-2,2024-25_cz1.txt
+,FK Mladá Boleslav,Baník Ostrava,0,0,X,,2024-25_cz1.txt
+18.30,Slavia Praha,AC Sparta Praha,2,1,1,2-0,2024-25_cz1.txt
+13.30,FC Hradec Králové,Sigma Olomouc,1,1,X,0-1,2024-25_cz1.txt
+,FK Dukla Praha,FK Pardubice,2,1,1,0-1,2024-25_cz1.txt
+19.00,AC Sparta Praha,Slovan Liberec,2,1,1,1-0,2024-25_cz1.txt
+13.00,Bohemians Praha 1905,FK Mladá Boleslav,2,2,X,0-1,2024-25_cz1.txt
+15.30,1. FC Slovácko,FK Teplice,0,2,2,0-1,2024-25_cz1.txt
+18.30,FK Jablonec,Slavia Praha,1,2,2,0-1,2024-25_cz1.txt
+13.30,Slovan Liberec,1. FC Slovácko,4,0,1,3-0,2024-25_cz1.txt
+16.00,FK Pardubice,Baník Ostrava,2,3,2,1-0,2024-25_cz1.txt
+,jovice,FC Hradec Králové,0,2,2,0-1,2024-25_cz1.txt
+19.00,Sigma Olomouc,FK Jablonec,0,0,X,,2024-25_cz1.txt
+13.00,FK Teplice,Bohemians Praha 1905,1,2,2,0-2,2024-25_cz1.txt
+15.30,Slavia Praha,FK Dukla Praha,3,0,1,1-0,2024-25_cz1.txt
+,FK Mladá Boleslav,MFK Karviná,1,1,X,1-0,2024-25_cz1.txt
+,,AC Sparta Praha,1,0,1,1-0,2024-25_cz1.txt
+13.30,FK Dukla Praha,FK Mladá Boleslav,0,1,2,0-0,2024-25_cz1.txt
+16.00,FK Jablonec,FK Teplice,3,0,1,2-0,2024-25_cz1.txt
+,MFK Karviná,Sigma Olomouc,2,1,1,0-1,2024-25_cz1.txt
+19.00,AC Sparta Praha,Baník Ostrava,1,3,2,1-2,2024-25_cz1.txt
+,jovice,Slovan Liberec,0,0,X,,2024-25_cz1.txt
+15.30,Bohemians Praha 1905,FK Pardubice,0,0,X,,2024-25_cz1.txt
+18.30,FC Hradec Králové,Slavia Praha,1,1,X,0-0,2024-25_cz1.txt
+13.30,Baník Ostrava,FK Dukla Praha,6,0,1,3-0,2024-25_cz1.txt
+16.00,Slovan Liberec,FC Hradec Králové,0,0,X,,2024-25_cz1.txt
+,FK Pardubice,FK Jablonec,2,0,1,0-0,2024-25_cz1.txt
+,,Bohemians Praha 1905,2,0,1,2-0,2024-25_cz1.txt
+,FK Mladá Boleslav,AC Sparta Praha,2,2,X,1-1,2024-25_cz1.txt
+18.30,Slavia Praha,MFK Karviná,5,1,1,1-0,2024-25_cz1.txt
+17.00,Sigma Olomouc,1. FC Slovácko,2,1,1,0-1,2024-25_cz1.txt
+13.30,FK Jablonec,Baník Ostrava,3,1,1,1-1,2024-25_cz1.txt
+16.00,1. FC Slovácko,FK Mladá Boleslav,1,1,X,1-1,2024-25_cz1.txt
+,AC Sparta Praha,FK Teplice,1,1,X,0-0,2024-25_cz1.txt
+13.00,Bohemians Praha 1905,FK Dukla Praha,3,1,1,0-0,2024-25_cz1.txt
+15.30,MFK Karviná,FK Pardubice,1,0,1,1-0,2024-25_cz1.txt
+,jovice,Slavia Praha,0,4,2,0-2,2024-25_cz1.txt
+18.30,Sigma Olomouc,Slovan Liberec,1,4,2,0-2,2024-25_cz1.txt
+13.30,Bohemians Praha 1905,1. FC Slovácko,3,3,X,2-1,2024-25_cz1.txt
+16.00,FK Teplice,Sigma Olomouc,1,0,1,0-0,2024-25_cz1.txt
+,Baník Ostrava,MFK Karviná,2,1,1,0-1,2024-25_cz1.txt
+19.00,FK Dukla Praha,AC Sparta Praha,1,1,X,0-1,2024-25_cz1.txt
+13.00,Slavia Praha,Slovan Liberec,1,0,1,1-0,2024-25_cz1.txt
+15.30,FK Mladá Boleslav,FC Hradec Králové,3,0,1,1-0,2024-25_cz1.txt
+,,FK Jablonec,3,2,1,0-2,2024-25_cz1.txt
+13.30,1. FC Slovácko,FK Pardubice,1,1,X,1-1,2024-25_cz1.txt
+16.00,FK Jablonec,FK Dukla Praha,2,1,1,2-1,2024-25_cz1.txt
+19.00,AC Sparta Praha,Bohemians Praha 1905,1,0,1,0-0,2024-25_cz1.txt
+,jovice,FK Mladá Boleslav,0,4,2,0-0,2024-25_cz1.txt
+15.30,Sigma Olomouc,Slavia Praha,1,2,2,1-0,2024-25_cz1.txt
+,Slovan Liberec,FK Teplice,3,0,1,1-0,2024-25_cz1.txt
+18.30,FC Hradec Králové,Baník Ostrava,0,1,2,0-0,2024-25_cz1.txt
+13.30,FK Dukla Praha,FC Hradec Králové,1,2,2,0-2,2024-25_cz1.txt
+16.00,FK Pardubice,Slovan Liberec,1,1,X,0-0,2024-25_cz1.txt
+,Bohemians Praha 1905,MFK Karviná,3,3,X,1-3,2024-25_cz1.txt
+19.00,Baník Ostrava,1. FC Slovácko,3,1,1,2-0,2024-25_cz1.txt
+13.00,AC Sparta Praha,FK Jablonec,2,1,1,0-1,2024-25_cz1.txt
+15.30,FK Mladá Boleslav,Sigma Olomouc,1,3,2,0-2,2024-25_cz1.txt
+,FK Teplice,Slavia Praha,1,0,1,0-0,2024-25_cz1.txt
+13.30,MFK Karviná,FK Teplice,1,1,X,1-1,2024-25_cz1.txt
+16.00,Slovan Liberec,Baník Ostrava,0,1,2,0-1,2024-25_cz1.txt
+,jovice,FK Dukla Praha,0,0,X,,2024-25_cz1.txt
+19.00,FC Hradec Králové,FK Pardubice,3,0,1,2-0,2024-25_cz1.txt
+13.00,1. FC Slovácko,AC Sparta Praha,0,2,2,0-2,2024-25_cz1.txt
+15.30,FK Jablonec,Bohemians Praha 1905,0,1,2,0-0,2024-25_cz1.txt
+18.30,Slavia Praha,FK Mladá Boleslav,1,0,1,0-0,2024-25_cz1.txt
+13.30,FK Mladá Boleslav,FK Teplice,2,1,1,1-0,2024-25_cz1.txt
+16.00,FK Pardubice,Slavia Praha,0,2,2,0-0,2024-25_cz1.txt
+,,Slovan Liberec,3,2,1,2-1,2024-25_cz1.txt
+13.00,FK Jablonec,1. FC Slovácko,4,2,1,1-0,2024-25_cz1.txt
+15.30,Baník Ostrava,Sigma Olomouc,1,0,1,1-0,2024-25_cz1.txt
+18.30,AC Sparta Praha,FC Hradec Králové,3,0,1,1-0,2024-25_cz1.txt
+18.00,FK Dukla Praha,MFK Karviná,0,0,X,,2024-25_cz1.txt
+13.30,Sigma Olomouc,FK Pardubice,4,0,1,1-0,2024-25_cz1.txt
+16.00,1. FC Slovácko,FK Dukla Praha,0,0,X,,2024-25_cz1.txt
+,jovice,FK Jablonec,2,3,2,0-1,2024-25_cz1.txt
+19.00,MFK Karviná,AC Sparta Praha,2,3,2,2-2,2024-25_cz1.txt
+13.00,FC Hradec Králové,Bohemians Praha 1905,2,2,X,2-2,2024-25_cz1.txt
+15.30,Slovan Liberec,FK Mladá Boleslav,3,1,1,2-0,2024-25_cz1.txt
+18.30,Slavia Praha,Baník Ostrava,1,0,1,1-0,2024-25_cz1.txt
+13.30,FK Dukla Praha,Sigma Olomouc,1,3,2,0-1,2024-25_cz1.txt
+16.00,Baník Ostrava,FK Teplice,2,0,1,0-0,2024-25_cz1.txt
+,FK Pardubice,FK Mladá Boleslav,0,3,2,0-2,2024-25_cz1.txt
+13.00,Bohemians Praha 1905,Slovan Liberec,0,0,X,,2024-25_cz1.txt
+15.30,FK Jablonec,MFK Karviná,5,0,1,2-0,2024-25_cz1.txt
+,,Slavia Praha,1,3,2,1-2,2024-25_cz1.txt
+18.00,1. FC Slovácko,FC Hradec Králové,1,5,2,0-3,2024-25_cz1.txt
+,jovice,Baník Ostrava,0,4,2,0-2,2024-25_cz1.txt
+16.00,Sigma Olomouc,AC Sparta Praha,1,2,2,1-1,2024-25_cz1.txt
+,FC Hradec Králové,FK Jablonec,1,1,X,0-1,2024-25_cz1.txt
+19.00,FK Teplice,FK Pardubice,2,0,1,1-0,2024-25_cz1.txt
+13.00,Slovan Liberec,FK Dukla Praha,1,1,X,1-0,2024-25_cz1.txt
+,MFK Karviná,1. FC Slovácko,2,0,1,0-0,2024-25_cz1.txt
+18.30,Slavia Praha,Bohemians Praha 1905,2,0,1,0-0,2024-25_cz1.txt
+13.30,FK Dukla Praha,FK Teplice,1,1,X,1-0,2024-25_cz1.txt
+16.00,FK Jablonec,Slovan Liberec,0,0,X,,2024-25_cz1.txt
+19.00,AC Sparta Praha,Slavia Praha,2,0,1,0-0,2024-25_cz1.txt
+13.00,Baník Ostrava,FK Mladá Boleslav,2,1,1,2-1,2024-25_cz1.txt
+15.30,Bohemians Praha 1905,Sigma Olomouc,0,1,2,0-1,2024-25_cz1.txt
+,FC Hradec Králové,MFK Karviná,1,1,X,1-1,2024-25_cz1.txt
+13.30,FK Mladá Boleslav,Bohemians Praha 1905,1,2,2,0-2,2024-25_cz1.txt
+16.00,FK Pardubice,FK Dukla Praha,0,1,2,0-0,2024-25_cz1.txt
+,FK Teplice,1. FC Slovácko,1,0,1,0-0,2024-25_cz1.txt
+19.00,Slovan Liberec,AC Sparta Praha,1,0,1,0-0,2024-25_cz1.txt
+13.00,Sigma Olomouc,FC Hradec Králové,1,2,2,0-2,2024-25_cz1.txt
+,,Baník Ostrava,0,1,2,0-1,2024-25_cz1.txt
+,jovice,MFK Karviná,2,3,2,2-1,2024-25_cz1.txt
+18.30,Slavia Praha,FK Jablonec,3,0,1,3-0,2024-25_cz1.txt
+13.30,FK Jablonec,Sigma Olomouc,0,0,X,,2024-25_cz1.txt
+16.00,Bohemians Praha 1905,FK Teplice,1,1,X,0-1,2024-25_cz1.txt
+,Baník Ostrava,FK Pardubice,5,2,1,2-1,2024-25_cz1.txt
+19.00,FK Dukla Praha,Slavia Praha,0,0,X,,2024-25_cz1.txt
+13.00,1. FC Slovácko,Slovan Liberec,0,4,2,0-4,2024-25_cz1.txt
+15.30,MFK Karviná,FK Mladá Boleslav,3,1,1,1-1,2024-25_cz1.txt
+13.30,FK Pardubice,Bohemians Praha 1905,2,0,1,1-0,2024-25_cz1.txt
+,Sigma Olomouc,MFK Karviná,1,2,2,1-1,2024-25_cz1.txt
+16.00,Baník Ostrava,AC Sparta Praha,1,1,X,1-0,2024-25_cz1.txt
+19.00,Slavia Praha,FC Hradec Králové,2,1,1,1-1,2024-25_cz1.txt
+13.00,FK Teplice,FK Jablonec,0,1,2,0-1,2024-25_cz1.txt
+15.30,FK Mladá Boleslav,FK Dukla Praha,0,1,2,0-0,2024-25_cz1.txt
+,,1. FC Slovácko,2,0,1,2-0,2024-25_cz1.txt
+16.00,MFK Karviná,Slavia Praha,0,4,2,0-2,2024-25_cz1.txt
+19.00,FK Dukla Praha,Baník Ostrava,1,2,2,1-1,2024-25_cz1.txt
+13.00,FK Jablonec,FK Pardubice,1,0,1,0-0,2024-25_cz1.txt
+,jovice,FK Teplice,1,1,X,1-0,2024-25_cz1.txt
+15.30,AC Sparta Praha,FK Mladá Boleslav,2,0,1,1-0,2024-25_cz1.txt
+,1. FC Slovácko,Sigma Olomouc,2,2,X,1-1,2024-25_cz1.txt
+,FC Hradec Králové,Slovan Liberec,0,2,2,0-1,2024-25_cz1.txt
+16.00,Slovan Liberec,MFK Karviná,2,3,2,1-1,2024-25_cz1.txt
+,Baník Ostrava,Bohemians Praha 1905,1,0,1,1-0,2024-25_cz1.txt
+,Slavia Praha,1. FC Slovácko,2,0,1,1-0,2024-25_cz1.txt
+,FK Teplice,FC Hradec Králové,1,0,1,0-0,2024-25_cz1.txt
+,FK Mladá Boleslav,FK Jablonec,0,1,2,0-1,2024-25_cz1.txt
+,FK Pardubice,AC Sparta Praha,1,2,2,0-1,2024-25_cz1.txt
+,,FK Dukla Praha,4,2,1,2-1,2024-25_cz1.txt
+19.00,Sigma Olomouc,Slavia Praha,0,5,2,0-1,2024-25_cz1.txt
+15.30,Baník Ostrava,FK Jablonec,1,2,2,0-2,2024-25_cz1.txt
+,,AC Sparta Praha,2,0,1,1-0,2024-25_cz1.txt
+19.00,Baník Ostrava,Sigma Olomouc,0,0,X,,2024-25_cz1.txt
+18.30,AC Sparta Praha,FK Jablonec,1,3,2,0-2,2024-25_cz1.txt
+16.00,FK Jablonec,Sigma Olomouc,4,0,1,2-0,2024-25_cz1.txt
+19.00,Slavia Praha,AC Sparta Praha,2,1,1,1-0,2024-25_cz1.txt
+,,Baník Ostrava,1,2,2,0-0,2024-25_cz1.txt
+17.00,FK Jablonec,Slavia Praha,3,2,1,0-1,2024-25_cz1.txt
+,Baník Ostrava,AC Sparta Praha,3,2,1,3-0,2024-25_cz1.txt
+16.00,Slavia Praha,Baník Ostrava,3,0,1,2-0,2024-25_cz1.txt
+,,FK Jablonec,4,1,1,3-0,2024-25_cz1.txt
+,AC Sparta Praha,Sigma Olomouc,1,1,X,0-0,2024-25_cz1.txt
+13.30,FC Hradec Králové,MFK Karviná,1,0,1,0-0,2024-25_cz1.txt
+15.30,Bohemians Praha 1905,Slovan Liberec,4,1,1,3-0,2024-25_cz1.txt
+16.00,MFK Karviná,FC Hradec Králové,0,4,2,0-3,2024-25_cz1.txt
+15.00,Slovan Liberec,Bohemians Praha 1905,1,0,1,0-0,2024-25_cz1.txt
+14.30,Bohemians Praha 1905,FC Hradec Králové,1,0,1,1-0,2024-25_cz1.txt
+13.30,FC Hradec Králové,Bohemians Praha 1905,2,0,1,1-0,2024-25_cz1.txt
+,jovice,FK Mladá Boleslav,1,2,2,0-0,2024-25_cz1.txt
+16.00,1. FC Slovácko,FK Pardubice,1,0,1,0-0,2024-25_cz1.txt
+13.00,FK Teplice,FK Dukla Praha,2,2,X,1-2,2024-25_cz1.txt
+13.30,FK Dukla Praha,FK Pardubice,2,0,1,0-0,2024-25_cz1.txt
+15.30,FK Mladá Boleslav,FK Teplice,1,0,1,0-0,2024-25_cz1.txt
+13.00,FK Teplice,1. FC Slovácko,1,0,1,0-0,2024-25_cz1.txt
+15.00,FK Mladá Boleslav,FK Dukla Praha,2,3,2,1-1,2024-25_cz1.txt
+17.00,FK Pardubice,FK Mladá Boleslav,2,1,1,1-1,2024-25_cz1.txt
+,jovice,FK Teplice,0,3,2,0-1,2024-25_cz1.txt
+,1. FC Slovácko,FK Dukla Praha,3,2,1,0-1,2024-25_cz1.txt
+16.00,FK Mladá Boleslav,1. FC Slovácko,2,2,X,0-0,2024-25_cz1.txt
+,FK Teplice,FK Pardubice,3,0,1,1-0,2024-25_cz1.txt
+10.15,MFK Chrudim,Sigma Olomouc B,3,0,1,2-0,2024-25_cz2.txt
+,,FC Zlín,0,0,X,,2024-25_cz2.txt
+17.00,FK MAS Táborsko,Slavia Praha B,3,1,1,1-0,2024-25_cz2.txt
+10.30,AC Sparta Praha B,Baník Ostrava B,2,2,X,2-0,2024-25_cz2.txt
+,ina Jihlava,Zbrojovka Brno,0,2,2,0-1,2024-25_cz2.txt
+18.00,FC Zlín,FK MAS Táborsko,1,0,1,0-0,2024-25_cz2.txt
+,im,MFK Chrudim,2,0,1,1-0,2024-25_cz2.txt
+,SFC Opava,Zbrojovka Brno,1,1,X,1-1,2024-25_cz2.txt
+10.30,Slavia Praha B,AC Sparta Praha B,2,1,1,1-1,2024-25_cz2.txt
+17.00,Baník Ostrava B,FK Varnsdorf,2,0,1,0-0,2024-25_cz2.txt
+,,Slavia Praha B,0,4,2,0-2,2024-25_cz2.txt
+,jov,FC Zlín,0,2,2,0-1,2024-25_cz2.txt
+,FK Varnsdorf,SFC Opava,3,1,1,1-0,2024-25_cz2.txt
+,MFK Chrudim,Zbrojovka Brno,1,0,1,1-0,2024-25_cz2.txt
+,FK MAS Táborsko,Baník Ostrava B,1,2,2,1-1,2024-25_cz2.txt
+18.00,Zbrojovka Brno,FK Varnsdorf,1,6,2,0-4,2024-25_cz2.txt
+,Slavia Praha B,MFK Chrudim,0,1,2,0-1,2024-25_cz2.txt
+16.00,SFC Opava,AC Sparta Praha B,4,2,1,2-0,2024-25_cz2.txt
+,ina Jihlava,FK MAS Táborsko,1,1,X,0-0,2024-25_cz2.txt
+17.30,FC Zlín,Sigma Olomouc B,1,0,1,0-0,2024-25_cz2.txt
+10.15,MFK Chrudim,Baník Ostrava B,6,1,1,4-0,2024-25_cz2.txt
+15.00,FK MAS Táborsko,Zbrojovka Brno,0,1,2,0-0,2024-25_cz2.txt
+,,SFC Opava,0,1,2,0-0,2024-25_cz2.txt
+10.30,AC Sparta Praha B,FK Varnsdorf,1,1,X,0-0,2024-25_cz2.txt
+,kov,Slavia Praha B,1,0,1,1-0,2024-25_cz2.txt
+,im,FC Zlín,1,3,2,0-1,2024-25_cz2.txt
+,kov,FK MAS Táborsko,3,1,1,1-0,2024-25_cz2.txt
+,Slavia Praha B,Sigma Olomouc B,4,0,1,2-0,2024-25_cz2.txt
+18.00,Zbrojovka Brno,AC Sparta Praha B,0,0,X,,2024-25_cz2.txt
+16.30,FK Varnsdorf,MFK Chrudim,0,3,2,0-1,2024-25_cz2.txt
+10.15,MFK Chrudim,AC Sparta Praha B,4,1,1,2-1,2024-25_cz2.txt
+,,FK Varnsdorf,1,0,1,1-0,2024-25_cz2.txt
+10.15,Sigma Olomouc B,Baník Ostrava B,5,0,1,0-0,2024-25_cz2.txt
+17.00,FK MAS Táborsko,SFC Opava,0,1,2,0-0,2024-25_cz2.txt
+,kov,Zbrojovka Brno,1,0,1,1-0,2024-25_cz2.txt
+17.30,FC Zlín,Slavia Praha B,2,1,1,1-0,2024-25_cz2.txt
+,im,Sigma Olomouc B,3,0,1,1-0,2024-25_cz2.txt
+,SFC Opava,MFK Chrudim,1,2,2,0-0,2024-25_cz2.txt
+15.00,AC Sparta Praha B,FK MAS Táborsko,1,2,2,1-0,2024-25_cz2.txt
+18.00,Zbrojovka Brno,FC Zlín,1,2,2,0-0,2024-25_cz2.txt
+16.00,Sigma Olomouc B,SFC Opava,0,0,X,,2024-25_cz2.txt
+,kov,Baník Ostrava B,0,1,2,0-1,2024-25_cz2.txt
+,kov,MFK Chrudim,0,3,2,0-2,2024-25_cz2.txt
+,FK MAS Táborsko,FK Varnsdorf,2,0,1,1-0,2024-25_cz2.txt
+,,AC Sparta Praha B,2,2,X,2-0,2024-25_cz2.txt
+,jov,Zbrojovka Brno,3,1,1,0-0,2024-25_cz2.txt
+,im,Slavia Praha B,2,2,X,1-2,2024-25_cz2.txt
+10.15,MFK Chrudim,FK MAS Táborsko,0,0,X,,2024-25_cz2.txt
+,Baník Ostrava B,FC Zlín,0,1,2,0-0,2024-25_cz2.txt
+16.30,FK Varnsdorf,Sigma Olomouc B,2,3,2,2-0,2024-25_cz2.txt
+,im,Baník Ostrava B,3,2,1,0-1,2024-25_cz2.txt
+,kov,SFC Opava,4,1,1,3-0,2024-25_cz2.txt
+16.00,FC Zlín,AC Sparta Praha B,2,0,1,2-0,2024-25_cz2.txt
+,,MFK Chrudim,0,2,2,0-2,2024-25_cz2.txt
+,jov,FK Varnsdorf,1,1,X,0-0,2024-25_cz2.txt
+10.15,Sigma Olomouc B,Zbrojovka Brno,4,1,1,1-0,2024-25_cz2.txt
+,kov,Sigma Olomouc B,1,0,1,0-0,2024-25_cz2.txt
+14.00,SFC Opava,Slavia Praha B,2,1,1,1-1,2024-25_cz2.txt
+16.00,FK Varnsdorf,FC Zlín,0,2,2,0-1,2024-25_cz2.txt
+18.00,FC Zlín,SFC Opava,3,0,1,1-0,2024-25_cz2.txt
+,im,FK MAS Táborsko,1,2,2,0-2,2024-25_cz2.txt
+,ina Jihlava,FK Varnsdorf,1,1,X,1-0,2024-25_cz2.txt
+10.15,Sigma Olomouc B,AC Sparta Praha B,3,1,1,2-1,2024-25_cz2.txt
+,kov,Zbrojovka Brno,4,2,1,2-2,2024-25_cz2.txt
+,Slavia Praha B,Baník Ostrava B,1,3,2,1-2,2024-25_cz2.txt
+,jov,MFK Chrudim,1,1,X,1-0,2024-25_cz2.txt
+18.00,SFC Opava,Baník Ostrava B,0,0,X,,2024-25_cz2.txt
+,Zbrojovka Brno,Slavia Praha B,1,1,X,1-1,2024-25_cz2.txt
+,kov,FC Zlín,1,1,X,0-0,2024-25_cz2.txt
+13.30,FK MAS Táborsko,Sigma Olomouc B,1,0,1,1-0,2024-25_cz2.txt
+,jov,FK MAS Táborsko,3,3,X,3-2,2024-25_cz2.txt
+,im,AC Sparta Praha B,2,4,2,1-1,2024-25_cz2.txt
+,ina Jihlava,SFC Opava,2,0,1,2-0,2024-25_cz2.txt
+,Slavia Praha B,FK Varnsdorf,2,1,1,1-0,2024-25_cz2.txt
+,Baník Ostrava B,Zbrojovka Brno,1,2,2,0-0,2024-25_cz2.txt
+18.00,FC Zlín,MFK Chrudim,2,0,1,1-0,2024-25_cz2.txt
+,jov,Sigma Olomouc B,2,0,1,1-0,2024-25_cz2.txt
+14.00,FK MAS Táborsko,FC Zlín,0,0,X,,2024-25_cz2.txt
+15.00,Zbrojovka Brno,SFC Opava,2,2,X,0-1,2024-25_cz2.txt
+10.15,AC Sparta Praha B,Slavia Praha B,1,1,X,1-1,2024-25_cz2.txt
+14.00,FK Varnsdorf,Baník Ostrava B,0,0,X,,2024-25_cz2.txt
+14.00,SFC Opava,FK Varnsdorf,0,1,2,0-1,2024-25_cz2.txt
+15.00,Zbrojovka Brno,MFK Chrudim,0,0,X,,2024-25_cz2.txt
+,kov,Sigma Olomouc B,2,1,1,1-0,2024-25_cz2.txt
+14.30,Baník Ostrava B,FK MAS Táborsko,2,2,X,2-2,2024-25_cz2.txt
+,ina Jihlava,AC Sparta Praha B,0,1,2,0-1,2024-25_cz2.txt
+10.15,MFK Chrudim,Slavia Praha B,0,1,2,0-0,2024-25_cz2.txt
+,kov,Baník Ostrava B,1,3,2,0-2,2024-25_cz2.txt
+10.15,Sigma Olomouc B,FC Zlín,1,2,2,1-1,2024-25_cz2.txt
+10.30,AC Sparta Praha B,SFC Opava,1,1,X,0-1,2024-25_cz2.txt
+14.30,FK Varnsdorf,Zbrojovka Brno,0,3,2,0-1,2024-25_cz2.txt
+,ina Jihlava,Sigma Olomouc B,3,1,1,2-1,2024-25_cz2.txt
+15.00,Zbrojovka Brno,FK MAS Táborsko,0,2,2,0-1,2024-25_cz2.txt
+,kov,FC Zlín,1,3,2,0-0,2024-25_cz2.txt
+14.30,FK Varnsdorf,AC Sparta Praha B,2,1,1,1-1,2024-25_cz2.txt
+,Baník Ostrava B,MFK Chrudim,1,0,1,1-0,2024-25_cz2.txt
+,jov,Baník Ostrava B,1,0,1,0-0,2024-25_cz2.txt
+,kov,SFC Opava,2,0,1,0-0,2024-25_cz2.txt
+,MFK Chrudim,FK Varnsdorf,2,1,1,1-0,2024-25_cz2.txt
+10.15,Sigma Olomouc B,Slavia Praha B,2,2,X,0-0,2024-25_cz2.txt
+10.30,AC Sparta Praha B,Zbrojovka Brno,1,1,X,1-1,2024-25_cz2.txt
+,SFC Opava,FK MAS Táborsko,2,1,1,2-0,2024-25_cz2.txt
+10.15,Slavia Praha B,FC Zlín,0,1,2,0-0,2024-25_cz2.txt
+10.30,AC Sparta Praha B,MFK Chrudim,2,2,X,2-1,2024-25_cz2.txt
+17.00,Baník Ostrava B,Sigma Olomouc B,3,0,1,0-0,2024-25_cz2.txt
+,jov,Slavia Praha B,0,0,X,,2024-25_cz2.txt
+,FC Zlín,Zbrojovka Brno,1,1,X,1-0,2024-25_cz2.txt
+10.15,MFK Chrudim,SFC Opava,2,0,1,2-0,2024-25_cz2.txt
+,kov,FK Varnsdorf,2,2,X,2-1,2024-25_cz2.txt
+,,Baník Ostrava B,0,0,X,,2024-25_cz2.txt
+,FK MAS Táborsko,AC Sparta Praha B,2,0,1,0-0,2024-25_cz2.txt
+17.00,SFC Opava,Sigma Olomouc B,2,1,1,0-0,2024-25_cz2.txt
+,ina Jihlava,FC Zlín,1,1,X,0-1,2024-25_cz2.txt
+,FK Varnsdorf,FK MAS Táborsko,1,2,2,0-1,2024-25_cz2.txt
+,kov,AC Sparta Praha B,0,0,X,,2024-25_cz2.txt
+,,Zbrojovka Brno,1,4,2,0-4,2024-25_cz2.txt
+17.00,FK MAS Táborsko,MFK Chrudim,1,2,2,0-1,2024-25_cz2.txt
+,kov,Slavia Praha B,4,2,1,2-2,2024-25_cz2.txt
+,Sigma Olomouc B,FK Varnsdorf,0,3,2,0-0,2024-25_cz2.txt
+,FC Zlín,Baník Ostrava B,1,1,X,1-0,2024-25_cz2.txt
+,jov,SFC Opava,0,0,X,,2024-25_cz2.txt
+,ina Jihlava,Slavia Praha B,2,1,1,1-0,2024-25_cz2.txt
+17.00,Zbrojovka Brno,Sigma Olomouc B,1,0,1,0-0,2024-25_cz2.txt
+10.30,AC Sparta Praha B,FC Zlín,1,0,1,0-0,2024-25_cz2.txt
+,kov,FK MAS Táborsko,0,1,2,0-1,2024-25_cz2.txt
+17.30,FC Zlín,FK Varnsdorf,2,0,1,0-0,2024-25_cz2.txt
+,im,Zbrojovka Brno,1,2,2,1-1,2024-25_cz2.txt
+,ina Jihlava,Baník Ostrava B,2,1,1,0-1,2024-25_cz2.txt
+,,FK MAS Táborsko,1,1,X,0-1,2024-25_cz2.txt
+,jov,AC Sparta Praha B,1,2,2,1-2,2024-25_cz2.txt
+10.15,Slavia Praha B,SFC Opava,0,1,2,0-1,2024-25_cz2.txt
+,kov,MFK Chrudim,1,2,2,1-1,2024-25_cz2.txt
+18.00,SK Slany,Sokol Brozany,0,5,2,0-2,2024-25_czcup.txt
+,im,TJ Start Brno,1,0,1,1-0,2024-25_czcup.txt
+,eská Lípa,FK Kolín,2,0,1,0-0,2024-25_czcup.txt
+17.30,Slovan Velvary,FK Motorlet Praha,2,3,2,,2024-25_czcup.txt
+,FC Kvasice,FC Strání,1,3,2,0-1,2024-25_czcup.txt
+,eský Brod,FK Admira Praha,1,4,2,0-2,2024-25_czcup.txt
+,SK Hrebec,SK Kladno,1,3,2,0-0,2024-25_czcup.txt
+,ovice,FK Robstav,3,0,1,,2024-25_czcup.txt
+,Meteor Praha VIII,FK Ústí nad Labem,0,5,2,0-4,2024-25_czcup.txt
+,ín-Turnov,SK Zápy,0,4,2,0-2,2024-25_czcup.txt
+,r,FK Loko Vltavín,3,4,2,,2024-25_czcup.txt
+,Frenstat p. R.,FC Zlínsko,5,3,1,,2024-25_czcup.txt
+,Rapid Psáry,FK MAS Táborsko,2,10,2,2-5,2024-25_czcup.txt
+,TJ Sokol Velké Hamry,Benátky nad Jizerou,0,3,2,0-0,2024-25_czcup.txt
+,slav,Povltavská FA,1,3,2,0-0,2024-25_czcup.txt
+,e,FK Varnsdorf,2,3,2,0-2,2024-25_czcup.txt
+,MFK Vítkovice,FK Frýdek-Místek,2,0,1,1-0,2024-25_czcup.txt
+17.30,SK Vysoké Mýto,MFK Chrudim,1,0,1,0-0,2024-25_czcup.txt
+19.00,SK Hranice,FC Zlín,1,2,2,1-2,2024-25_czcup.txt
+17.30,Sokol Tasovice,FC Slovan Rosice,2,1,1,0-1,2024-25_czcup.txt
+,Slovan Bzenec,FK Hodonín,5,4,1,,2024-25_czcup.txt
+17.00,TJ Tatran Bohunice,Zbrojovka Brno,2,6,2,,2024-25_czcup.txt
+,ov,FC Písek,1,3,2,0-1,2024-25_czcup.txt
+,Slavia Hradec Králové,Jiskra Ústí nad Orlicí,1,2,2,1-1,2024-25_czcup.txt
+,FC Vratimov,SFC Opava,0,4,2,0-2,2024-25_czcup.txt
+17.00,Police nad Metují,Chlumec nad Cidlinou,2,0,1,1-0,2024-25_czcup.txt
+18.30,Slavia Karlovy Vary,FC Chomutov,5,1,1,1-1,2024-25_czcup.txt
+18.00,FK Ústí nad Labem,SK Kladno,4,3,1,,2024-25_czcup.txt
+16.30,Police nad Metují,Slavia Karlovy Vary,2,0,1,2-0,2024-25_czcup.txt
+,Jiskra Ústí nad Orlicí,FK Dukla Praha,0,4,2,0-3,2024-25_czcup.txt
+,,FK MAS Táborsko,0,2,2,0-0,2024-25_czcup.txt
+,Sokol Brozany,Bohemians Praha 1905,1,3,2,1-1,2024-25_czcup.txt
+,TJ Ligmet Milin,FK Teplice,0,2,2,0-0,2024-25_czcup.txt
+,ivanice,FK Varnsdorf,0,3,2,0-0,2024-25_czcup.txt
+,FK Motorlet Praha,FC Hradec Králové,0,1,2,0-0,2024-25_czcup.txt
+,SK Aritma Praha,FK Pardubice,0,3,2,0-1,2024-25_czcup.txt
+,Povltavská FA,Slovan Liberec,1,3,2,0-1,2024-25_czcup.txt
+,,Benátky nad Jizerou,3,5,2,,2024-25_czcup.txt
+,SK Zápy,FK Admira Praha,3,1,1,3-1,2024-25_czcup.txt
+,im,1. FC Slovácko,1,3,2,0-1,2024-25_czcup.txt
+,Sokol Tasovice,FC Zlín,1,5,2,1-0,2024-25_czcup.txt
+,Frenstat p. R.,Zbrojovka Brno,1,3,2,1-2,2024-25_czcup.txt
+,FC Strání,SFC Opava,0,1,2,0-0,2024-25_czcup.txt
+16.00,Slovan Bzenec,Sigma Olomouc,0,6,2,0-2,2024-25_czcup.txt
+,lice,FK Jablonec,0,2,2,0-1,2024-25_czcup.txt
+,ovice,FK Dukla Praha,0,6,2,0-2,2024-25_czcup.txt
+,kov,Bohemians Praha 1905,0,1,2,0-0,2024-25_czcup.txt
+14.00,FK Loko Vltavín,FC Hradec Králové,0,1,2,0-1,2024-25_czcup.txt
+,SK Zápy,FK Pardubice,1,2,2,1-1,2024-25_czcup.txt
+,Police nad Metují,FK Mladá Boleslav,1,3,2,1-1,2024-25_czcup.txt
+,FK Varnsdorf,Baník Ostrava,1,3,2,0-1,2024-25_czcup.txt
+,,FK Teplice,1,3,2,1-1,2024-25_czcup.txt
+,SFC Opava,FC Zlín,1,2,2,1-1,2024-25_czcup.txt
+,ín,Slovan Liberec,1,0,1,0-0,2024-25_czcup.txt
+,kov,Sigma Olomouc,0,2,2,0-1,2024-25_czcup.txt
+19.15,AC Sparta Praha,Zbrojovka Brno,4,0,1,1-0,2024-25_czcup.txt
+14.00,Benátky nad Jizerou,Slavia Praha,1,4,2,0-4,2024-25_czcup.txt
+,SK Uherský Brod,FK Jablonec,0,1,2,0-1,2024-25_czcup.txt
+18.00,AC Sparta Praha,FK Dukla Praha,3,0,1,1-0,2024-25_czcup.txt
+17.00,FK Mladá Boleslav,Bohemians Praha 1905,0,2,2,0-1,2024-25_czcup.txt
+19.30,Slavia Praha,FK MAS Táborsko,1,0,1,,2024-25_czcup.txt
+,,FC Zlín,4,1,1,,2024-25_czcup.txt
+18.00,FK Pardubice,Baník Ostrava,0,2,2,0-2,2024-25_czcup.txt
+,ín,FK Teplice,1,2,2,0-1,2024-25_czcup.txt
+18.00,FC Hradec Králové,FK Jablonec,1,2,2,0-1,2024-25_czcup.txt
+18.00,Slavia Praha,Sigma Olomouc,0,1,2,0-1,2024-25_czcup.txt
+16.30,FK Jablonec,Baník Ostrava,0,1,2,0-0,2024-25_czcup.txt
+19.00,AC Sparta Praha,FK Teplice,3,2,1,,2024-25_czcup.txt
+19.00,Baník Ostrava,Sigma Olomouc,2,3,2,1-1,2024-25_czcup.txt

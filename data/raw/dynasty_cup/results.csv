@@ -1,0 +1,30 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+China PR,North Korea,2,0,1,Beijing,China PR,1990_dynasty_cup.txt
+Japan,South Korea,0,2,2,Beijing,China PR,1990_dynasty_cup.txt
+China PR,Japan,1,0,1,Beijing,China PR,1990_dynasty_cup.txt
+South Korea,North Korea,1,0,1,Beijing,China PR,1990_dynasty_cup.txt
+China PR,South Korea,0,1,2,Beijing,China PR,1990_dynasty_cup.txt
+Japan,North Korea,0,1,2,Beijing,China PR,1990_dynasty_cup.txt
+China PR,South Korea,1,1,X,Beijing,China PR   [South Korea wins on penalties],1990_dynasty_cup.txt
+China PR,North Korea,2,2,X,Beijing,China PR,1992_dynasty_cup.txt
+Japan,South Korea,0,0,X,Beijing,China PR,1992_dynasty_cup.txt
+China PR,Japan,0,2,2,Beijing,China PR,1992_dynasty_cup.txt
+South Korea,North Korea,1,1,X,Beijing,China PR,1992_dynasty_cup.txt
+China PR,South Korea,0,2,2,Beijing,China PR,1992_dynasty_cup.txt
+Japan,North Korea,4,1,1,Beijing,China PR,1992_dynasty_cup.txt
+China PR,North Korea,0,0,X,Xiaogan,China PR,1992_dynasty_cup.txt
+Japan,South Korea,2,2,X,Beijing,China PR   [Japan wins on penalties],1992_dynasty_cup.txt
+China PR,South Korea,0,0,X,Victoria,Hong Kong,1995_dynasty_cup.txt
+Hong Kong,Japan,0,3,2,Victoria,Hong Kong,1995_dynasty_cup.txt
+Hong Kong,China PR,0,0,X,Victoria,Hong Kong,1995_dynasty_cup.txt
+Japan,South Korea,1,1,X,Victoria,Hong Kong,1995_dynasty_cup.txt
+China PR,Japan,1,2,2,Victoria,Hong Kong,1995_dynasty_cup.txt
+Hong Kong,South Korea,2,3,2,Victoria,Hong Kong,1995_dynasty_cup.txt
+Hong Kong,China PR,1,1,X,Victoria,Hong Kong,1995_dynasty_cup.txt
+Japan,South Korea,2,2,X,Victoria,Hong Kong   [Japan wins on penalties],1995_dynasty_cup.txt
+China PR,Hong Kong,1,0,1,Yokohama,Japan,1998_dynasty_cup.txt
+Japan,South Korea,2,1,1,Yokohama,Japan,1998_dynasty_cup.txt
+China PR,South Korea,1,2,2,Yokohama,Japan,1998_dynasty_cup.txt
+Japan,Hong Kong,5,1,1,Yokohama,Japan,1998_dynasty_cup.txt
+Japan,China PR,0,2,2,Tokyo,Japan,1998_dynasty_cup.txt
+Hong Kong,South Korea,0,1,2,Tokyo,Japan,1998_dynasty_cup.txt

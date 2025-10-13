@@ -1,0 +1,20 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Peru,Chile,1,2,2,Lima,Peru,1953_copa_del_pacifico.txt
+Peru,Chile,5,0,1,Lima,Peru,1953_copa_del_pacifico.txt
+Chile,Peru,2,1,1,Santiago,Chile,1954_copa_del_pacifico.txt
+Chile,Peru,2,4,2,Santiago,Chile,1954_copa_del_pacifico.txt
+Chile,Peru,4,1,1,Santiago,Chile,1965_copa_del_pacifico.txt
+Peru,Chile,0,1,2,Lima,Peru,1965_copa_del_pacifico.txt
+Peru,Chile,1,2,2,Lima,Peru,1968_copa_del_pacifico.txt
+Peru,Chile,0,0,X,Lima,Peru,1968_copa_del_pacifico.txt
+Peru,Chile,1,0,1,Lima,Peru,1971_copa_del_pacifico.txt
+Chile,Peru,1,0,1,Santiago,Chile,1971_copa_del_pacifico.txt
+Peru,Chile,1,0,1,Lima,Peru,1982_copa_del_pacifico.txt
+Peru,Chile,0,1,2,Lima,Peru,1983_copa_del_pacifico.txt
+Chile,Peru,2,0,1,Arica,Chile,1983_copa_del_pacifico.txt
+Chile,Peru,2,0,1,Arica,Chile,1988_copa_del_pacifico.txt
+Peru,Chile,1,1,X,Lima,Peru,1988_copa_del_pacifico.txt
+Chile,Peru,3,2,1,Viña del Mar,Chile,2006_copa_del_pacifico.txt
+Peru,Chile,0,1,2,Tacna,Peru,2006_copa_del_pacifico.txt
+Chile,Peru,3,1,1,Arica,Chile,2012_copa_del_pacifico.txt
+Peru,Chile,0,3,2,Tacna,Peru,2012_copa_del_pacifico.txt

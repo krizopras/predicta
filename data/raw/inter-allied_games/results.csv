@@ -1,0 +1,14 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+France,Romania,4,0,1,Paris,France,1919_inter-allied_games.txt
+Czechoslovakia,Belgium,4,1,1,Paris,France,1919_inter-allied_games.txt
+Italy,Greece,9,0,1,Paris,France,1919_inter-allied_games.txt
+United States,Canada,5,4,1,Paris,France,1919_inter-allied_games.txt
+Italy,Romania,7,1,1,Paris,France,1919_inter-allied_games.txt
+France,Greece,11,0,1,Paris,France,1919_inter-allied_games.txt
+Czechoslovakia,United States,8,2,1,Paris,France,1919_inter-allied_games.txt
+Belgium,Canada,5,2,1,Paris,France,1919_inter-allied_games.txt
+Greece,Romania,3,2,1,Paris,France,1919_inter-allied_games.txt
+France,Italy,2,0,1,Paris,France,1919_inter-allied_games.txt
+Czechoslovakia,Canada,3,2,1,Paris,France,1919_inter-allied_games.txt
+Belgium,United States,7,0,1,Paris,France,1919_inter-allied_games.txt
+France,Czechoslovakia,2,3,2,Paris,France,1919_inter-allied_games.txt

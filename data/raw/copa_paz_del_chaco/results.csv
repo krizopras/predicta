@@ -1,0 +1,24 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Paraguay,Bolivia,5,2,1,Asunción,Paraguay,1957_copa_paz_del_chaco.txt
+Paraguay,Bolivia,0,1,2,Asunción,Paraguay,1957_copa_paz_del_chaco.txt
+Bolivia,Paraguay,3,3,X,La Paz,Bolivia,1957_copa_paz_del_chaco.txt
+Bolivia,Paraguay,2,1,1,La Paz,Bolivia,1957_copa_paz_del_chaco.txt
+Bolivia,Paraguay,3,1,1,Cochabamba,Bolivia,1962_copa_paz_del_chaco.txt
+Bolivia,Paraguay,3,2,1,La Paz,Bolivia,1962_copa_paz_del_chaco.txt
+Paraguay,Bolivia,3,0,1,Asunción,Paraguay,1963_copa_paz_del_chaco.txt
+Paraguay,Bolivia,5,1,1,Asunción,Paraguay,1963_copa_paz_del_chaco.txt
+Bolivia,Paraguay,0,1,2,La Paz,Bolivia,1977_copa_paz_del_chaco.txt
+Bolivia,Paraguay,2,2,X,Cochabamba,Bolivia,1977_copa_paz_del_chaco.txt
+Bolivia,Paraguay,3,1,1,La Paz,Bolivia,1979_copa_paz_del_chaco.txt
+Paraguay,Bolivia,2,0,1,Asunción,Paraguay,1979_copa_paz_del_chaco.txt
+Bolivia,Paraguay,1,1,X,La Paz,Bolivia,1980_copa_paz_del_chaco.txt
+Paraguay,Bolivia,2,1,1,Asunción,Paraguay,1980_copa_paz_del_chaco.txt
+Bolivia,Paraguay,0,1,2,Santa Cruz,Bolivia,1991_copa_paz_del_chaco.txt
+Paraguay,Bolivia,0,0,X,Asunción,Paraguay,1991_copa_paz_del_chaco.txt
+Paraguay,Bolivia,1,0,1,Asunción,Paraguay,1993_copa_paz_del_chaco.txt
+Bolivia,Paraguay,2,1,1,Cochabamba,Bolivia   [Bolivia wins on penalties],1993_copa_paz_del_chaco.txt
+Bolivia,Paraguay,1,1,X,Cochabamba,Bolivia,1995_copa_paz_del_chaco.txt
+Paraguay,Bolivia,0,0,X,Asunción,Paraguay   [Paraguay wins on penalties],1995_copa_paz_del_chaco.txt
+Bolivia,Paraguay,0,0,X,Buenos Aires,Argentina,1999_copa_paz_del_chaco.txt
+Bolivia,Paraguay,0,2,2,Santa Cruz,Bolivia,2011_copa_paz_del_chaco.txt
+Paraguay,Bolivia,0,0,X,Luque,Paraguay,2011_copa_paz_del_chaco.txt

@@ -1,0 +1,378 @@
+time,home_team,away_team,home_score,away_score,result,ht_score,source_file
+15.00,FC Samtredia,FC Telavi,1,0,1,0-0,2023_ge1.txt
+19.00,Dila Gori,Dinamo Tbilisi,1,2,2,1-1,2023_ge1.txt
+15.00,FC Gagra,Samgurali Tskhaltubo,3,4,2,1-2,2023_ge1.txt
+17.00,FC Saburtalo,Torpedo Kutaisi,0,0,X,,2023_ge1.txt
+20.00,Dinamo Batumi,Shukura Kobuleti,2,1,1,1-0,2023_ge1.txt
+20.00,Dinamo Batumi,FC Saburtalo,3,1,1,0-1,2023_ge1.txt
+14.30,Shukura Kobuleti,Samgurali Tskhaltubo,2,1,1,1-0,2023_ge1.txt
+15.30,Torpedo Kutaisi,Dila Gori,0,0,X,,2023_ge1.txt
+17.00,FC Telavi,FC Gagra,0,0,X,,2023_ge1.txt
+19.00,Dinamo Tbilisi,FC Samtredia,4,0,1,2-0,2023_ge1.txt
+14.30,FC Gagra,Dinamo Tbilisi,3,5,2,1-2,2023_ge1.txt
+15.00,Samgurali Tskhaltubo,FC Telavi,1,0,1,1-0,2023_ge1.txt
+15.30,FC Samtredia,Torpedo Kutaisi,0,2,2,0-1,2023_ge1.txt
+17.00,FC Saburtalo,Shukura Kobuleti,2,1,1,2-1,2023_ge1.txt
+20.00,Dila Gori,Dinamo Batumi,1,1,X,1-0,2023_ge1.txt
+15.00,Shukura Kobuleti,FC Telavi,1,2,2,1-1,2023_ge1.txt
+15.30,Torpedo Kutaisi,FC Gagra,3,1,1,2-1,2023_ge1.txt
+17.00,FC Saburtalo,Dila Gori,0,0,X,,2023_ge1.txt
+20.00,Dinamo Batumi,FC Samtredia,3,2,1,1-1,2023_ge1.txt
+19.00,Dinamo Tbilisi,Samgurali Tskhaltubo,2,0,1,0-0,2023_ge1.txt
+15.00,FC Gagra,Dinamo Batumi,1,4,2,0-3,2023_ge1.txt
+15.30,FC Samtredia,FC Saburtalo,3,3,X,2-2,2023_ge1.txt
+18.00,FC Telavi,Dinamo Tbilisi,2,2,X,1-2,2023_ge1.txt
+20.00,Dila Gori,Shukura Kobuleti,2,0,1,1-0,2023_ge1.txt
+15.30,Samgurali Tskhaltubo,Torpedo Kutaisi,0,0,X,,2023_ge1.txt
+15.30,Torpedo Kutaisi,FC Telavi,2,1,1,0-0,2023_ge1.txt
+18.00,FC Saburtalo,FC Gagra,3,0,1,2-0,2023_ge1.txt
+20.00,Dila Gori,FC Samtredia,1,0,1,0-0,2023_ge1.txt
+14.00,Shukura Kobuleti,Dinamo Tbilisi,1,2,2,1-1,2023_ge1.txt
+21.00,Dinamo Batumi,Samgurali Tskhaltubo,2,0,1,2-0,2023_ge1.txt
+16.00,FC Samtredia,Shukura Kobuleti,0,2,2,0-2,2023_ge1.txt
+18.00,FC Telavi,Dinamo Batumi,1,4,2,1-1,2023_ge1.txt
+20.00,Dinamo Tbilisi,Torpedo Kutaisi,2,1,1,1-0,2023_ge1.txt
+14.30,FC Gagra,Dila Gori,0,0,X,,2023_ge1.txt
+16.00,Samgurali Tskhaltubo,FC Saburtalo,2,1,1,0-0,2023_ge1.txt
+14.00,Shukura Kobuleti,Torpedo Kutaisi,0,2,2,0-1,2023_ge1.txt
+20.00,Dinamo Batumi,Dinamo Tbilisi,2,2,X,2-1,2023_ge1.txt
+16.00,FC Samtredia,FC Gagra,1,2,2,0-1,2023_ge1.txt
+18.00,FC Saburtalo,FC Telavi,3,0,1,2-0,2023_ge1.txt
+20.00,Dila Gori,Samgurali Tskhaltubo,0,3,2,0-1,2023_ge1.txt
+16.00,Torpedo Kutaisi,Dinamo Batumi,0,0,X,,2023_ge1.txt
+19.00,FC Telavi,Dila Gori,2,2,X,1-1,2023_ge1.txt
+21.00,Dinamo Tbilisi,FC Saburtalo,1,3,2,1-0,2023_ge1.txt
+15.30,FC Gagra,Shukura Kobuleti,2,0,1,1-0,2023_ge1.txt
+16.30,Samgurali Tskhaltubo,FC Samtredia,2,1,1,0-0,2023_ge1.txt
+16.00,Torpedo Kutaisi,FC Saburtalo,0,3,2,0-2,2023_ge1.txt
+20.00,Dinamo Tbilisi,Dila Gori,1,2,2,0-0,2023_ge1.txt
+15.30,Samgurali Tskhaltubo,FC Gagra,1,0,1,0-0,2023_ge1.txt
+16.30,Shukura Kobuleti,Dinamo Batumi,1,3,2,0-1,2023_ge1.txt
+18.00,FC Telavi,FC Samtredia,0,1,2,0-0,2023_ge1.txt
+14.30,FC Gagra,FC Telavi,1,1,X,1-0,2023_ge1.txt
+15.30,Samgurali Tskhaltubo,Shukura Kobuleti,4,1,1,1-1,2023_ge1.txt
+16.30,FC Samtredia,Dinamo Tbilisi,0,2,2,0-1,2023_ge1.txt
+19.00,FC Saburtalo,Dinamo Batumi,3,3,X,0-1,2023_ge1.txt
+21.00,Dila Gori,Torpedo Kutaisi,5,0,1,1-0,2023_ge1.txt
+14.00,Shukura Kobuleti,FC Saburtalo,2,3,2,0-1,2023_ge1.txt
+21.00,Dinamo Batumi,Dila Gori,0,2,2,0-0,2023_ge1.txt
+16.00,Torpedo Kutaisi,FC Samtredia,1,0,1,0-0,2023_ge1.txt
+18.00,FC Telavi,Samgurali Tskhaltubo,0,1,2,0-0,2023_ge1.txt
+20.00,Dinamo Tbilisi,FC Gagra,0,0,X,,2023_ge1.txt
+20.00,Dila Gori,FC Saburtalo,1,1,X,0-0,2023_ge1.txt
+15.00,FC Gagra,Torpedo Kutaisi,0,0,X,,2023_ge1.txt
+16.00,Samgurali Tskhaltubo,Dinamo Tbilisi,2,1,1,1-0,2023_ge1.txt
+16.30,FC Samtredia,Dinamo Batumi,1,2,2,0-1,2023_ge1.txt
+19.00,FC Telavi,Shukura Kobuleti,0,0,X,,2023_ge1.txt
+16.30,Torpedo Kutaisi,Samgurali Tskhaltubo,1,3,2,0-2,2023_ge1.txt
+19.00,FC Saburtalo,FC Samtredia,2,0,1,0-0,2023_ge1.txt
+20.00,Dinamo Tbilisi,FC Telavi,6,1,1,3-0,2023_ge1.txt
+21.00,Dinamo Batumi,FC Gagra,3,1,1,2-0,2023_ge1.txt
+15.00,Shukura Kobuleti,Dila Gori,2,3,2,0-2,2023_ge1.txt
+14.30,FC Gagra,FC Saburtalo,1,2,2,0-2,2023_ge1.txt
+15.00,FC Samtredia,Dila Gori,1,2,2,0-2,2023_ge1.txt
+16.00,Samgurali Tskhaltubo,Dinamo Batumi,1,1,X,1-1,2023_ge1.txt
+19.00,FC Telavi,Torpedo Kutaisi,1,0,1,0-0,2023_ge1.txt
+20.00,Dinamo Tbilisi,Shukura Kobuleti,4,4,X,2-3,2023_ge1.txt
+15.30,Shukura Kobuleti,FC Samtredia,2,2,X,1-0,2023_ge1.txt
+16.30,Torpedo Kutaisi,Dinamo Tbilisi,2,3,2,0-1,2023_ge1.txt
+19.00,FC Saburtalo,Samgurali Tskhaltubo,5,1,1,1-0,2023_ge1.txt
+21.00,Dinamo Batumi,FC Telavi,2,0,1,1-0,2023_ge1.txt
+,Dila Gori,FC Gagra,1,0,1,0-0,2023_ge1.txt
+15.00,FC Gagra,FC Samtredia,0,1,2,0-0,2023_ge1.txt
+16.00,Samgurali Tskhaltubo,Dila Gori,2,2,X,0-0,2023_ge1.txt
+16.30,Torpedo Kutaisi,Shukura Kobuleti,1,2,2,0-0,2023_ge1.txt
+19.00,FC Telavi,FC Saburtalo,0,3,2,0-1,2023_ge1.txt
+21.00,Dinamo Tbilisi,Dinamo Batumi,1,2,2,1-1,2023_ge1.txt
+16.00,FC Samtredia,Samgurali Tskhaltubo,0,2,2,0-0,2023_ge1.txt
+,Shukura Kobuleti,FC Gagra,3,4,2,3-1,2023_ge1.txt
+19.00,FC Saburtalo,Dinamo Tbilisi,2,1,1,0-0,2023_ge1.txt
+20.00,Dila Gori,FC Telavi,6,1,1,4-1,2023_ge1.txt
+21.00,Dinamo Batumi,Torpedo Kutaisi,1,1,X,0-0,2023_ge1.txt
+19.00,FC Gagra,Samgurali Tskhaltubo,0,0,X,,2023_ge1.txt
+21.00,Dinamo Batumi,Shukura Kobuleti,5,0,1,1-0,2023_ge1.txt
+17.30,FC Samtredia,FC Telavi,0,2,2,0-1,2023_ge1.txt
+20.00,FC Saburtalo,Torpedo Kutaisi,1,3,2,1-0,2023_ge1.txt
+21.00,Dila Gori,Dinamo Tbilisi,0,3,2,0-0,2023_ge1.txt
+17.00,Torpedo Kutaisi,Dila Gori,1,0,1,0-0,2023_ge1.txt
+20.00,Dinamo Tbilisi,FC Samtredia,3,0,1,0-0,2023_ge1.txt
+21.00,Dinamo Batumi,FC Saburtalo,2,1,1,0-1,2023_ge1.txt
+17.00,Shukura Kobuleti,Samgurali Tskhaltubo,2,2,X,2-0,2023_ge1.txt
+19.00,FC Telavi,FC Gagra,0,1,2,0-1,2023_ge1.txt
+17.00,Samgurali Tskhaltubo,FC Telavi,0,1,2,0-0,2023_ge1.txt
+20.00,FC Gagra,Dinamo Tbilisi,1,6,2,1-4,2023_ge1.txt
+17.00,FC Samtredia,Torpedo Kutaisi,2,3,2,1-2,2023_ge1.txt
+20.00,FC Saburtalo,Shukura Kobuleti,5,1,1,4-0,2023_ge1.txt
+20.00,Dila Gori,Dinamo Batumi,1,3,2,0-2,2023_ge1.txt
+20.00,Dinamo Tbilisi,Samgurali Tskhaltubo,5,2,1,2-1,2023_ge1.txt
+21.00,Dinamo Batumi,FC Samtredia,1,1,X,0-0,2023_ge1.txt
+20.00,Shukura Kobuleti,FC Telavi,0,2,2,0-1,2023_ge1.txt
+,Torpedo Kutaisi,FC Gagra,4,1,1,2-0,2023_ge1.txt
+21.00,FC Saburtalo,Dila Gori,1,2,2,1-1,2023_ge1.txt
+20.00,Dila Gori,Shukura Kobuleti,5,1,1,3-0,2023_ge1.txt
+,FC Telavi,Dinamo Tbilisi,2,2,X,1-1,2023_ge1.txt
+17.00,FC Samtredia,FC Saburtalo,0,0,X,,2023_ge1.txt
+17.00,Samgurali Tskhaltubo,Torpedo Kutaisi,0,0,X,,2023_ge1.txt
+21.00,FC Gagra,Dinamo Batumi,0,2,2,0-0,2023_ge1.txt
+20.00,Torpedo Kutaisi,FC Telavi,2,1,1,1-1,2023_ge1.txt
+21.00,Dinamo Batumi,Samgurali Tskhaltubo,4,1,1,2-0,2023_ge1.txt
+19.00,Shukura Kobuleti,Dinamo Tbilisi,2,3,2,2-0,2023_ge1.txt
+20.00,FC Saburtalo,FC Gagra,5,0,1,2-0,2023_ge1.txt
+21.00,Dila Gori,FC Samtredia,1,3,2,0-2,2023_ge1.txt
+18.00,FC Telavi,Dinamo Batumi,2,1,1,0-0,2023_ge1.txt
+20.00,FC Gagra,Dila Gori,0,0,X,,2023_ge1.txt
+21.00,Dinamo Tbilisi,Torpedo Kutaisi,1,1,X,1-0,2023_ge1.txt
+16.00,FC Samtredia,Shukura Kobuleti,4,2,1,1-1,2023_ge1.txt
+,Samgurali Tskhaltubo,FC Saburtalo,1,0,1,1-0,2023_ge1.txt
+15.30,FC Samtredia,FC Gagra,3,1,1,3-1,2023_ge1.txt
+,Shukura Kobuleti,Torpedo Kutaisi,0,0,X,,2023_ge1.txt
+19.00,Dila Gori,Samgurali Tskhaltubo,2,0,1,1-0,2023_ge1.txt
+20.00,FC Saburtalo,FC Telavi,0,1,2,0-1,2023_ge1.txt
+21.00,Dinamo Batumi,Dinamo Tbilisi,2,2,X,1-1,2023_ge1.txt
+20.00,FC Gagra,Shukura Kobuleti,1,0,1,0-0,2023_ge1.txt
+15.30,Samgurali Tskhaltubo,FC Samtredia,0,3,2,0-2,2023_ge1.txt
+18.00,FC Telavi,Dila Gori,2,1,1,1-1,2023_ge1.txt
+20.00,Torpedo Kutaisi,Dinamo Batumi,0,3,2,0-0,2023_ge1.txt
+20.00,Dinamo Tbilisi,FC Saburtalo,1,0,1,1-0,2023_ge1.txt
+14.30,Shukura Kobuleti,Dinamo Batumi,0,6,2,0-5,2023_ge1.txt
+15.30,Samgurali Tskhaltubo,FC Gagra,2,2,X,0-1,2023_ge1.txt
+18.00,FC Telavi,FC Samtredia,1,1,X,1-0,2023_ge1.txt
+18.00,Torpedo Kutaisi,FC Saburtalo,5,0,1,3-0,2023_ge1.txt
+20.00,Dinamo Tbilisi,Dila Gori,3,1,1,3-0,2023_ge1.txt
+15.00,FC Samtredia,Dinamo Tbilisi,3,2,1,1-0,2023_ge1.txt
+20.00,Dila Gori,Torpedo Kutaisi,0,1,2,0-1,2023_ge1.txt
+15.00,Samgurali Tskhaltubo,Shukura Kobuleti,5,0,1,2-0,2023_ge1.txt
+18.00,FC Gagra,FC Telavi,4,1,1,2-0,2023_ge1.txt
+20.00,FC Saburtalo,Dinamo Batumi,0,0,X,,2023_ge1.txt
+15.00,Shukura Kobuleti,FC Saburtalo,1,2,2,1-1,2023_ge1.txt
+20.00,Dinamo Batumi,Dila Gori,1,1,X,1-1,2023_ge1.txt
+17.00,FC Telavi,Samgurali Tskhaltubo,2,1,1,2-0,2023_ge1.txt
+19.00,Dinamo Tbilisi,FC Gagra,0,1,2,0-1,2023_ge1.txt
+20.00,Torpedo Kutaisi,FC Samtredia,2,0,1,1-0,2023_ge1.txt
+15.00,FC Samtredia,Dinamo Batumi,1,3,2,0-2,2023_ge1.txt
+17.00,FC Telavi,Shukura Kobuleti,0,1,2,0-0,2023_ge1.txt
+19.00,Dila Gori,FC Saburtalo,3,0,1,1-0,2023_ge1.txt
+15.00,Samgurali Tskhaltubo,Dinamo Tbilisi,0,2,2,0-1,2023_ge1.txt
+18.00,FC Gagra,Torpedo Kutaisi,1,2,2,1-0,2023_ge1.txt
+18.00,FC Saburtalo,FC Samtredia,0,0,X,,2023_ge1.txt
+19.00,Torpedo Kutaisi,Samgurali Tskhaltubo,0,0,X,,2023_ge1.txt
+21.00,Dinamo Batumi,FC Gagra,3,0,1,1-0,2023_ge1.txt
+14.30,Shukura Kobuleti,Dila Gori,1,2,2,1-2,2023_ge1.txt
+19.00,Dinamo Tbilisi,FC Telavi,4,0,1,1-0,2023_ge1.txt
+14.30,FC Samtredia,Dila Gori,1,2,2,1-1,2023_ge1.txt
+17.00,FC Telavi,Torpedo Kutaisi,1,2,2,1-1,2023_ge1.txt
+19.00,Dinamo Tbilisi,Shukura Kobuleti,4,2,1,3-1,2023_ge1.txt
+14.30,Samgurali Tskhaltubo,Dinamo Batumi,3,2,1,1-2,2023_ge1.txt
+19.00,FC Gagra,FC Saburtalo,2,1,1,0-1,2023_ge1.txt
+19.00,FC Saburtalo,Samgurali Tskhaltubo,2,2,X,2-0,2023_ge1.txt
+14.00,Shukura Kobuleti,FC Samtredia,0,9,2,0-4,2023_ge1.txt
+19.00,Dinamo Batumi,FC Telavi,3,0,1,1-0,2023_ge1.txt
+,Torpedo Kutaisi,Dinamo Tbilisi,2,2,X,1-0,2023_ge1.txt
+20.00,Dila Gori,FC Gagra,1,0,1,1-0,2023_ge1.txt
+14.00,FC Gagra,FC Samtredia,4,3,1,2-3,2023_ge1.txt
+,Samgurali Tskhaltubo,Dila Gori,1,0,1,1-0,2023_ge1.txt
+17.00,FC Telavi,FC Saburtalo,3,0,1,2-0,2023_ge1.txt
+19.00,Dinamo Tbilisi,Dinamo Batumi,6,2,1,5-2,2023_ge1.txt
+,Torpedo Kutaisi,Shukura Kobuleti,9,0,1,2-0,2023_ge1.txt
+14.00,Dinamo Batumi,Torpedo Kutaisi,2,2,X,2-1,2023_ge1.txt
+,Dila Gori,FC Telavi,3,1,1,0-0,2023_ge1.txt
+,FC Samtredia,Samgurali Tskhaltubo,2,3,2,2-1,2023_ge1.txt
+,Shukura Kobuleti,FC Gagra,0,9,2,0-5,2023_ge1.txt
+19.30,FC Saburtalo,Dinamo Tbilisi,0,3,2,0-0,2023_ge1.txt
+21.00,Dinamo Batumi,Kolkheti Poti,1,0,1,1-0,2024_ge1.txt
+18.00,FC Iberia 1999,FC Telavi,1,0,1,1-0,2024_ge1.txt
+19.00,Dinamo Tbilisi,Samgurali Tskhaltubo,2,0,1,2-0,2024_ge1.txt
+20.00,Torpedo Kutaisi,FC Samtredia,4,1,1,3-0,2024_ge1.txt
+18.00,Dila Gori,FC Gagra,2,0,1,2-0,2024_ge1.txt
+14.30,FC Samtredia,Kolkheti Poti,1,1,X,0-1,2024_ge1.txt
+19.00,Torpedo Kutaisi,FC Iberia 1999,2,3,2,0-1,2024_ge1.txt
+20.00,FC Telavi,Dinamo Tbilisi,4,0,1,3-0,2024_ge1.txt
+17.00,Samgurali Tskhaltubo,Dila Gori,0,1,2,0-0,2024_ge1.txt
+21.00,FC Gagra,Dinamo Batumi,1,3,2,1-1,2024_ge1.txt
+18.00,FC Iberia 1999,FC Samtredia,2,2,X,1-1,2024_ge1.txt
+20.00,Dinamo Tbilisi,Torpedo Kutaisi,1,0,1,1-0,2024_ge1.txt
+15.00,Kolkheti Poti,FC Gagra,2,1,1,1-1,2024_ge1.txt
+20.00,Dila Gori,FC Telavi,1,0,1,1-0,2024_ge1.txt
+21.00,Dinamo Batumi,Samgurali Tskhaltubo,1,0,1,1-0,2024_ge1.txt
+18.00,Samgurali Tskhaltubo,Kolkheti Poti,1,1,X,1-1,2024_ge1.txt
+19.30,FC Iberia 1999,Dinamo Tbilisi,1,0,1,1-0,2024_ge1.txt
+14.30,FC Samtredia,FC Gagra,1,3,2,1-2,2024_ge1.txt
+19.00,Torpedo Kutaisi,Dila Gori,1,0,1,1-0,2024_ge1.txt
+20.00,FC Telavi,Dinamo Batumi,0,1,2,0-1,2024_ge1.txt
+19.00,Dila Gori,FC Iberia 1999,3,1,1,1-1,2024_ge1.txt
+20.00,Kolkheti Poti,FC Telavi,3,1,1,1-1,2024_ge1.txt
+21.00,Dinamo Batumi,Torpedo Kutaisi,3,2,1,1-2,2024_ge1.txt
+19.00,Dinamo Tbilisi,FC Samtredia,1,1,X,0-0,2024_ge1.txt
+21.00,FC Gagra,Samgurali Tskhaltubo,0,0,X,,2024_ge1.txt
+16.00,FC Iberia 1999,Dinamo Batumi,3,0,1,2-0,2024_ge1.txt
+21.00,Torpedo Kutaisi,Kolkheti Poti,3,2,1,1-2,2024_ge1.txt
+15.00,FC Samtredia,Samgurali Tskhaltubo,2,0,1,2-0,2024_ge1.txt
+19.00,FC Telavi,FC Gagra,1,0,1,1-0,2024_ge1.txt
+21.00,Dinamo Tbilisi,Dila Gori,2,2,X,1-0,2024_ge1.txt
+20.00,Kolkheti Poti,FC Iberia 1999,1,2,2,0-1,2024_ge1.txt
+19.00,Samgurali Tskhaltubo,FC Telavi,2,1,1,1-0,2024_ge1.txt
+20.00,FC Gagra,Torpedo Kutaisi,0,1,2,0-1,2024_ge1.txt
+21.00,Dila Gori,FC Samtredia,3,0,1,2-0,2024_ge1.txt
+21.00,Dinamo Batumi,Dinamo Tbilisi,2,0,1,1-0,2024_ge1.txt
+16.00,FC Samtredia,FC Telavi,1,2,2,0-0,2024_ge1.txt
+19.00,FC Iberia 1999,FC Gagra,3,1,1,2-1,2024_ge1.txt
+21.00,Torpedo Kutaisi,Samgurali Tskhaltubo,3,1,1,0-1,2024_ge1.txt
+19.00,Dinamo Tbilisi,Kolkheti Poti,0,0,X,,2024_ge1.txt
+21.00,Dila Gori,Dinamo Batumi,0,0,X,,2024_ge1.txt
+19.00,Samgurali Tskhaltubo,FC Iberia 1999,2,3,2,2-1,2024_ge1.txt
+20.00,FC Telavi,Torpedo Kutaisi,0,0,X,,2024_ge1.txt
+19.00,FC Gagra,Dinamo Tbilisi,0,2,2,0-0,2024_ge1.txt
+20.00,Kolkheti Poti,Dila Gori,1,3,2,0-2,2024_ge1.txt
+21.00,Dinamo Batumi,FC Samtredia,3,1,1,1-1,2024_ge1.txt
+20.00,FC Telavi,FC Iberia 1999,0,3,2,0-1,2024_ge1.txt
+15.00,FC Samtredia,Torpedo Kutaisi,0,0,X,,2024_ge1.txt
+19.00,Samgurali Tskhaltubo,Dinamo Tbilisi,3,1,1,1-1,2024_ge1.txt
+21.00,Kolkheti Poti,Dinamo Batumi,2,2,X,0-2,2024_ge1.txt
+20.00,FC Gagra,Dila Gori,0,1,2,0-1,2024_ge1.txt
+19.00,Kolkheti Poti,FC Samtredia,2,0,1,0-0,2024_ge1.txt
+20.00,Dinamo Tbilisi,FC Telavi,0,0,X,,2024_ge1.txt
+19.00,FC Iberia 1999,Torpedo Kutaisi,3,3,X,2-1,2024_ge1.txt
+20.00,Dila Gori,Samgurali Tskhaltubo,1,1,X,0-1,2024_ge1.txt
+21.00,Dinamo Batumi,FC Gagra,0,1,2,0-0,2024_ge1.txt
+16.00,Samgurali Tskhaltubo,Dinamo Batumi,0,1,2,0-0,2024_ge1.txt
+20.00,FC Gagra,Kolkheti Poti,2,0,1,1-0,2024_ge1.txt
+15.00,FC Samtredia,FC Iberia 1999,0,3,2,0-0,2024_ge1.txt
+20.00,FC Telavi,Dila Gori,0,1,2,0-0,2024_ge1.txt
+21.00,Torpedo Kutaisi,Dinamo Tbilisi,0,0,X,,2024_ge1.txt
+16.00,FC Gagra,FC Samtredia,2,1,1,1-0,2024_ge1.txt
+19.00,Dila Gori,Torpedo Kutaisi,1,1,X,0-1,2024_ge1.txt
+20.00,Kolkheti Poti,Samgurali Tskhaltubo,3,3,X,0-2,2024_ge1.txt
+21.00,Dinamo Tbilisi,FC Iberia 1999,1,0,1,1-0,2024_ge1.txt
+21.00,Dinamo Batumi,FC Telavi,1,1,X,0-1,2024_ge1.txt
+16.30,FC Samtredia,Dinamo Tbilisi,0,0,X,,2024_ge1.txt
+,Samgurali Tskhaltubo,FC Gagra,2,0,1,2-0,2024_ge1.txt
+20.00,FC Iberia 1999,Dila Gori,1,4,2,0-3,2024_ge1.txt
+20.00,FC Telavi,Kolkheti Poti,1,1,X,1-1,2024_ge1.txt
+21.00,Torpedo Kutaisi,Dinamo Batumi,1,0,1,1-0,2024_ge1.txt
+16.30,Samgurali Tskhaltubo,FC Samtredia,4,0,1,4-0,2024_ge1.txt
+20.00,Dila Gori,Dinamo Tbilisi,2,1,1,0-1,2024_ge1.txt
+19.00,FC Gagra,FC Telavi,2,0,1,0-0,2024_ge1.txt
+20.00,Kolkheti Poti,Torpedo Kutaisi,2,5,2,0-2,2024_ge1.txt
+21.00,Dinamo Batumi,FC Iberia 1999,2,3,2,1-0,2024_ge1.txt
+17.00,FC Samtredia,Dila Gori,0,0,X,,2024_ge1.txt
+19.00,FC Iberia 1999,Kolkheti Poti,0,2,2,0-2,2024_ge1.txt
+20.00,Dinamo Tbilisi,Dinamo Batumi,1,2,2,1-0,2024_ge1.txt
+20.00,FC Telavi,Samgurali Tskhaltubo,2,1,1,2-0,2024_ge1.txt
+,Torpedo Kutaisi,FC Gagra,2,1,1,0-1,2024_ge1.txt
+20.00,Kolkheti Poti,Dinamo Tbilisi,2,2,X,1-1,2024_ge1.txt
+21.00,Dinamo Batumi,Dila Gori,0,2,2,0-0,2024_ge1.txt
+17.00,Samgurali Tskhaltubo,Torpedo Kutaisi,1,3,2,0-0,2024_ge1.txt
+20.00,FC Gagra,FC Iberia 1999,4,0,1,4-0,2024_ge1.txt
+,FC Telavi,FC Samtredia,0,0,X,,2024_ge1.txt
+16.30,FC Samtredia,Dinamo Batumi,2,2,X,0-1,2024_ge1.txt
+19.30,FC Iberia 1999,Samgurali Tskhaltubo,1,2,2,0-1,2024_ge1.txt
+20.30,Dinamo Tbilisi,FC Gagra,2,0,1,0-0,2024_ge1.txt
+21.30,Torpedo Kutaisi,FC Telavi,1,0,1,1-0,2024_ge1.txt
+20.00,Dila Gori,Kolkheti Poti,1,1,X,1-0,2024_ge1.txt
+20.00,Dinamo Tbilisi,Samgurali Tskhaltubo,0,1,2,0-0,2024_ge1.txt
+21.00,Dila Gori,FC Gagra,0,0,X,,2024_ge1.txt
+20.00,FC Iberia 1999,FC Telavi,1,1,X,0-0,2024_ge1.txt
+21.00,Dinamo Batumi,Kolkheti Poti,0,0,X,,2024_ge1.txt
+21.00,Torpedo Kutaisi,FC Samtredia,2,1,1,1-1,2024_ge1.txt
+17.00,FC Samtredia,Kolkheti Poti,1,3,2,0-2,2024_ge1.txt
+20.00,FC Telavi,Dinamo Tbilisi,0,1,2,0-1,2024_ge1.txt
+21.00,FC Gagra,Dinamo Batumi,1,1,X,1-1,2024_ge1.txt
+17.00,Samgurali Tskhaltubo,Dila Gori,0,1,2,0-0,2024_ge1.txt
+21.00,Torpedo Kutaisi,FC Iberia 1999,2,1,1,0-0,2024_ge1.txt
+20.00,Kolkheti Poti,FC Gagra,2,1,1,1-1,2024_ge1.txt
+21.00,Dila Gori,FC Telavi,1,1,X,0-0,2024_ge1.txt
+20.00,Dinamo Tbilisi,Torpedo Kutaisi,1,2,2,1-2,2024_ge1.txt
+21.00,Dinamo Batumi,Samgurali Tskhaltubo,0,0,X,,2024_ge1.txt
+20.00,FC Iberia 1999,FC Samtredia,3,1,1,1-1,2024_ge1.txt
+17.00,FC Samtredia,FC Gagra,2,0,1,0-0,2024_ge1.txt
+,Samgurali Tskhaltubo,Kolkheti Poti,3,0,1,1-0,2024_ge1.txt
+20.00,FC Telavi,Dinamo Batumi,2,1,1,0-1,2024_ge1.txt
+20.00,FC Iberia 1999,Dinamo Tbilisi,3,0,1,3-0,2024_ge1.txt
+21.00,Torpedo Kutaisi,Dila Gori,1,5,2,1-2,2024_ge1.txt
+20.00,Dinamo Tbilisi,FC Samtredia,1,1,X,0-1,2024_ge1.txt
+,Kolkheti Poti,FC Telavi,0,0,X,,2024_ge1.txt
+21.00,Dila Gori,FC Iberia 1999,1,3,2,0-3,2024_ge1.txt
+20.00,FC Gagra,Samgurali Tskhaltubo,1,3,2,1-1,2024_ge1.txt
+21.00,Dinamo Batumi,Torpedo Kutaisi,1,1,X,1-0,2024_ge1.txt
+19.00,FC Iberia 1999,Dinamo Batumi,3,0,1,1-0,2024_ge1.txt
+20.00,FC Telavi,FC Gagra,0,1,2,0-0,2024_ge1.txt
+21.00,Torpedo Kutaisi,Kolkheti Poti,2,0,1,0-0,2024_ge1.txt
+16.00,FC Samtredia,Samgurali Tskhaltubo,2,2,X,1-2,2024_ge1.txt
+20.00,Dinamo Tbilisi,Dila Gori,1,1,X,0-0,2024_ge1.txt
+19.00,Dila Gori,FC Samtredia,3,2,1,2-1,2024_ge1.txt
+16.00,Samgurali Tskhaltubo,FC Telavi,2,2,X,0-1,2024_ge1.txt
+20.00,Kolkheti Poti,FC Iberia 1999,2,6,2,2-2,2024_ge1.txt
+21.00,FC Gagra,Torpedo Kutaisi,0,3,2,0-1,2024_ge1.txt
+21.00,Dinamo Batumi,Dinamo Tbilisi,1,1,X,1-0,2024_ge1.txt
+15.30,FC Samtredia,FC Telavi,2,1,1,1-1,2024_ge1.txt
+19.00,FC Iberia 1999,FC Gagra,1,1,X,0-1,2024_ge1.txt
+21.00,Torpedo Kutaisi,Samgurali Tskhaltubo,1,0,1,0-0,2024_ge1.txt
+19.00,Dinamo Tbilisi,Kolkheti Poti,3,2,1,0-2,2024_ge1.txt
+21.00,Dila Gori,Dinamo Batumi,1,2,2,0-0,2024_ge1.txt
+15.30,Samgurali Tskhaltubo,FC Iberia 1999,3,4,2,1-2,2024_ge1.txt
+19.00,FC Telavi,Torpedo Kutaisi,1,2,2,0-1,2024_ge1.txt
+18.00,Kolkheti Poti,Dila Gori,2,2,X,0-0,2024_ge1.txt
+20.00,FC Gagra,Dinamo Tbilisi,0,0,X,,2024_ge1.txt
+21.00,Dinamo Batumi,FC Samtredia,1,2,2,1-0,2024_ge1.txt
+15.30,Samgurali Tskhaltubo,Dinamo Tbilisi,1,2,2,1-1,2024_ge1.txt
+19.00,FC Telavi,FC Iberia 1999,1,2,2,0-1,2024_ge1.txt
+20.00,Kolkheti Poti,Dinamo Batumi,0,1,2,0-1,2024_ge1.txt
+15.30,FC Samtredia,Torpedo Kutaisi,2,1,1,0-0,2024_ge1.txt
+20.00,FC Gagra,Dila Gori,0,5,2,0-1,2024_ge1.txt
+20.00,Dinamo Batumi,FC Gagra,3,2,1,1-0,2024_ge1.txt
+18.00,Dinamo Tbilisi,FC Telavi,5,1,1,2-0,2024_ge1.txt
+21.00,Kolkheti Poti,FC Samtredia,0,0,X,,2024_ge1.txt
+19.00,FC Iberia 1999,Torpedo Kutaisi,3,0,1,3-0,2024_ge1.txt
+20.00,Dila Gori,Samgurali Tskhaltubo,2,1,1,1-0,2024_ge1.txt
+15.00,FC Samtredia,FC Iberia 1999,0,1,2,0-0,2024_ge1.txt
+,Samgurali Tskhaltubo,Dinamo Batumi,3,3,X,2-0,2024_ge1.txt
+18.00,FC Gagra,Kolkheti Poti,3,1,1,2-0,2024_ge1.txt
+19.00,FC Telavi,Dila Gori,1,0,1,1-0,2024_ge1.txt
+20.00,Torpedo Kutaisi,Dinamo Tbilisi,2,0,1,0-0,2024_ge1.txt
+14.30,Kolkheti Poti,Samgurali Tskhaltubo,1,1,X,1-0,2024_ge1.txt
+19.00,FC Gagra,FC Samtredia,2,1,1,1-0,2024_ge1.txt
+20.00,Dinamo Tbilisi,FC Iberia 1999,0,2,2,0-2,2024_ge1.txt
+18.00,Dila Gori,Torpedo Kutaisi,1,1,X,0-1,2024_ge1.txt
+20.00,Dinamo Batumi,FC Telavi,1,0,1,1-0,2024_ge1.txt
+19.00,FC Iberia 1999,Dila Gori,3,2,1,1-0,2024_ge1.txt
+20.00,Torpedo Kutaisi,Dinamo Batumi,1,0,1,0-0,2024_ge1.txt
+14.30,FC Samtredia,Dinamo Tbilisi,1,1,X,1-1,2024_ge1.txt
+18.00,FC Telavi,Kolkheti Poti,3,0,1,2-0,2024_ge1.txt
+14.30,Samgurali Tskhaltubo,FC Gagra,4,2,1,1-2,2024_ge1.txt
+19.00,FC Gagra,FC Telavi,2,0,1,1-0,2024_ge1.txt
+14.00,Kolkheti Poti,Torpedo Kutaisi,3,1,1,2-0,2024_ge1.txt
+,Samgurali Tskhaltubo,FC Samtredia,1,0,1,0-0,2024_ge1.txt
+18.00,Dila Gori,Dinamo Tbilisi,1,0,1,0-0,2024_ge1.txt
+20.00,Dinamo Batumi,FC Iberia 1999,0,1,2,0-0,2024_ge1.txt
+14.00,Dinamo Tbilisi,Dinamo Batumi,1,2,2,0-2,2024_ge1.txt
+,FC Samtredia,Dila Gori,0,1,2,0-0,2024_ge1.txt
+19.00,FC Telavi,Samgurali Tskhaltubo,0,0,X,,2024_ge1.txt
+20.00,FC Iberia 1999,Kolkheti Poti,1,1,X,1-0,2024_ge1.txt
+,Torpedo Kutaisi,FC Gagra,2,0,1,1-0,2024_ge1.txt
+13.30,Kolkheti Poti,Dinamo Tbilisi,3,0,1,2-0,2024_ge1.txt
+,Samgurali Tskhaltubo,Torpedo Kutaisi,2,1,1,1-1,2024_ge1.txt
+19.00,FC Gagra,FC Iberia 1999,1,2,2,1-0,2024_ge1.txt
+20.00,Dinamo Batumi,Dila Gori,0,2,2,0-1,2024_ge1.txt
+18.00,FC Telavi,FC Samtredia,5,2,1,2-1,2024_ge1.txt
+13.30,Dinamo Tbilisi,FC Gagra,0,1,2,0-0,2024_ge1.txt
+,Dila Gori,Kolkheti Poti,1,2,2,1-0,2024_ge1.txt
+,FC Samtredia,Dinamo Batumi,0,1,2,0-0,2024_ge1.txt
+,Torpedo Kutaisi,FC Telavi,1,0,1,1-0,2024_ge1.txt
+16.00,FC Iberia 1999,Samgurali Tskhaltubo,1,1,X,1-0,2024_ge1.txt
+19.00,FC Iberia 1999,FC Telavi,2,0,1,0-0,2025_ge1.txt
+18.00,FC Gagra,Torpedo Kutaisi,1,2,2,0-1,2025_ge1.txt
+19.00,FC Telavi,Kolkheti Poti,1,0,1,0-0,2025_ge1.txt
+,FC Iberia 1999,Torpedo Kutaisi,2,0,1,1-0,2025_ge1.txt
+17.00,FC Gagra,Dila Gori,0,0,X,,2025_ge1.txt
+19.00,Dinamo Tbilisi,Samgurali Tskhaltubo,2,1,1,1-0,2025_ge1.txt
+20.00,FC Gareji Sagarejo,Dinamo Batumi,0,0,X,,2025_ge1.txt
+20.00,Torpedo Kutaisi,FC Telavi,1,2,2,0-1,2025_ge1.txt
+15.00,Kolkheti Poti,Dinamo Tbilisi,0,0,X,,2025_ge1.txt
+19.00,Dila Gori,FC Iberia 1999,0,1,2,0-1,2025_ge1.txt
+21.00,Dinamo Batumi,FC Gagra,2,1,1,2-1,2025_ge1.txt
+19.00,Samgurali Tskhaltubo,FC Gareji Sagarejo,3,1,1,3-1,2025_ge1.txt
+15.00,FC Iberia 1999,Dinamo Batumi,1,1,X,0-1,2025_ge1.txt
+18.00,FC Telavi,Dinamo Tbilisi,1,1,X,1-1,2025_ge1.txt
+19.00,Torpedo Kutaisi,Dila Gori,1,2,2,1-1,2025_ge1.txt
+15.00,Kolkheti Poti,FC Gareji Sagarejo,0,1,2,0-0,2025_ge1.txt
+18.00,FC Gagra,Samgurali Tskhaltubo,0,2,2,0-1,2025_ge1.txt

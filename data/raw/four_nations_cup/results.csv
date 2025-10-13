@@ -1,0 +1,3 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Thailand,New Zealand,2,2,X,Bangkok,Thailand   [Thailand wins on penalties],1999_four_nations_cup.txt
+New Zealand,Poland,0,0,X,Bangkok,Thailand   [Poland wins on penalties],1999_four_nations_cup.txt

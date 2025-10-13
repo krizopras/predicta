@@ -1,0 +1,380 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Faroe Islands,Ynys Môn,6,0,1,Gøta,Faroe Islands,1989_island_games.txt
+Greenland,Shetland,4,1,1,Vágur,Faroe Islands,1989_island_games.txt
+Faroe Islands,Shetland,4,0,1,Tórshavn,Faroe Islands,1989_island_games.txt
+Åland Islands,Ynys Môn,4,5,2,Sandavágur,Faroe Islands,1989_island_games.txt
+Faroe Islands,Greenland,3,0,1,Fuglafjørður,Faroe Islands,1989_island_games.txt
+Åland Islands,Shetland,2,0,1,Klaksvík,Faroe Islands,1989_island_games.txt
+Åland Islands,Greenland,3,0,1,Sandur,Faroe Islands,1989_island_games.txt
+Ynys Môn,Shetland,3,0,1,Sandur,Faroe Islands,1989_island_games.txt
+Faroe Islands,Åland Islands,7,1,1,Tórshavn,Faroe Islands,1989_island_games.txt
+Ynys Môn,Greenland,1,0,1,Klaksvík,Faroe Islands,1989_island_games.txt
+Faroe Islands,Shetland,3,0,1,Åland,Finland,1991_island_games.txt
+Jersey,Greenland,4,3,1,Åland,Finland,1991_island_games.txt
+Ynys Môn,Guernsey,1,0,1,Åland,Finland,1991_island_games.txt
+Åland Islands,Isle of Wight,1,0,1,Åland,Finland,1991_island_games.txt
+Faroe Islands,Greenland,3,2,1,Åland,Finland,1991_island_games.txt
+Jersey,Shetland,2,0,1,Åland,Finland,1991_island_games.txt
+Åland Islands,Guernsey,2,0,1,Åland,Finland,1991_island_games.txt
+Ynys Môn,Isle of Wight,5,1,1,Åland,Finland,1991_island_games.txt
+Faroe Islands,Jersey,5,3,1,Åland,Finland,1991_island_games.txt
+Shetland,Greenland,5,2,1,Åland,Finland,1991_island_games.txt
+Åland Islands,Ynys Môn,0,1,2,Åland,Finland,1991_island_games.txt
+Isle of Wight,Guernsey,1,1,X,Åland,Finland,1991_island_games.txt
+Isle of Wight,Greenland,3,1,1,Åland,Finland,1991_island_games.txt
+Shetland,Guernsey,2,1,1,Åland,Finland,1991_island_games.txt
+Åland Islands,Jersey,0,2,2,Åland,Finland,1991_island_games.txt
+Faroe Islands,Ynys Môn,2,0,1,Åland,Finland,1991_island_games.txt
+Gibraltar,Jersey,1,2,2,Isle of Wight,England,1993_island_games.txt
+Ynys Môn,Greenland,0,1,2,Isle of Wight,England,1993_island_games.txt
+Isle of Wight,Isle of Man,1,0,1,Isle of Wight,England,1993_island_games.txt
+Åland Islands,Shetland,3,1,1,Isle of Wight,England,1993_island_games.txt
+Jersey,Greenland,4,2,1,Isle of Wight,England,1993_island_games.txt
+Ynys Môn,Gibraltar,1,0,1,Isle of Wight,England,1993_island_games.txt
+Isle of Man,Åland Islands,2,0,1,Isle of Wight,England,1993_island_games.txt
+Isle of Wight,Shetland,2,0,1,Isle of Wight,England,1993_island_games.txt
+Greenland,Gibraltar,5,0,1,Isle of Wight,England,1993_island_games.txt
+Jersey,Ynys Môn,2,2,X,Isle of Wight,England,1993_island_games.txt
+Shetland,Isle of Man,1,5,2,Isle of Wight,England,1993_island_games.txt
+Isle of Wight,Åland Islands,0,2,2,Isle of Wight,England,1993_island_games.txt
+Shetland,Gibraltar,1,0,1,Isle of Wight,England,1993_island_games.txt
+Isle of Wight,Ynys Môn,1,1,X,Isle of Wight,England,1993_island_games.txt
+Greenland,Åland Islands,1,2,2,Isle of Wight,England,1993_island_games.txt
+Jersey,Isle of Man,5,1,1,Isle of Wight,England,1993_island_games.txt
+Isle of Man,Ynys Môn,0,2,2,Gibraltar,Gibraltar,1995_island_games.txt
+Gibraltar,Greenland,0,1,2,Gibraltar,Gibraltar,1995_island_games.txt
+Jersey,Isle of Wight,2,0,1,Gibraltar,Gibraltar,1995_island_games.txt
+Åland Islands,Guernsey,2,2,X,Gibraltar,Gibraltar,1995_island_games.txt
+Gibraltar,Isle of Man,2,1,1,Gibraltar,Gibraltar,1995_island_games.txt
+Greenland,Ynys Môn,1,2,2,Gibraltar,Gibraltar,1995_island_games.txt
+Åland Islands,Isle of Wight,0,5,2,Gibraltar,Gibraltar,1995_island_games.txt
+Jersey,Guernsey,1,0,1,Gibraltar,Gibraltar,1995_island_games.txt
+Gibraltar,Ynys Môn,2,0,1,Gibraltar,Gibraltar,1995_island_games.txt
+Greenland,Isle of Man,4,0,1,Gibraltar,Gibraltar,1995_island_games.txt
+Jersey,Åland Islands,3,1,1,Gibraltar,Gibraltar,1995_island_games.txt
+Isle of Wight,Guernsey,1,1,X,Gibraltar,Gibraltar,1995_island_games.txt
+Greenland,Isle of Wight,1,2,2,Gibraltar,Gibraltar,1995_island_games.txt
+Gibraltar,Jersey,1,0,1,Gibraltar,Gibraltar,1995_island_games.txt
+Åland Islands,Isle of Man,4,1,1,Gibraltar,Gibraltar,1995_island_games.txt
+Guernsey,Ynys Môn,4,2,1,Gibraltar,Gibraltar,1995_island_games.txt
+Gibraltar,Jersey,1,0,1,Gibraltar,Gibraltar,1995_island_games.txt
+Gibraltar,Isle of Wight,0,1,2,Gibraltar,Gibraltar,1995_island_games.txt
+Jersey,Frøya,4,1,1,St. Clement,Jersey,1997_island_games.txt
+Gibraltar,Guernsey,1,2,2,Grouville,Jersey,1997_island_games.txt
+Ynys Môn,Hitra,8,0,1,St. Peter,Jersey,1997_island_games.txt
+Shetland,Isle of Wight,0,0,X,St. Peter,Jersey,1997_island_games.txt
+Jersey,Greenland,2,1,1,St. Peter,Jersey,1997_island_games.txt
+Frøya,Guernsey,1,2,2,St. Peter,Jersey,1997_island_games.txt
+Ynys Môn,Shetland,4,0,1,St. Clement,Jersey,1997_island_games.txt
+Hitra,Isle of Wight,0,4,2,Grouville,Jersey,1997_island_games.txt
+Guernsey,Greenland,0,0,X,St Helier,Jersey,1997_island_games.txt
+Frøya,Gibraltar,0,4,2,St. Lawrence,Jersey,1997_island_games.txt
+Gibraltar,Greenland,5,1,1,St. Lawrence,Jersey,1997_island_games.txt
+Jersey,Guernsey,4,0,1,St Helier,Jersey,1997_island_games.txt
+Frøya,Greenland,2,1,1,Grouville,Jersey,1997_island_games.txt
+Jersey,Gibraltar,3,2,1,St Helier,Jersey,1997_island_games.txt
+Ynys Môn,Isle of Wight,0,0,X,St. Peter,Jersey,1997_island_games.txt
+Shetland,Hitra,2,1,1,St. Lawrence,Jersey,1997_island_games.txt
+Frøya,Hitra,4,1,1,Grouville,Jersey,1997_island_games.txt
+Shetland,Gibraltar,2,1,1,St. Lawrence,Jersey,1997_island_games.txt
+Isle of Wight,Guernsey,3,1,1,St. Peter,Jersey,1997_island_games.txt
+Jersey,Ynys Môn,2,1,1,St Helier,Jersey,1997_island_games.txt
+Jersey,Åland Islands,1,0,1,Visby,Sweden,1999_island_games.txt
+Gotland,Hitra,12,1,1,Gutavallen,Sweden,1999_island_games.txt
+Isle of Man,Shetland,2,1,1,Dalhem,Sweden,1999_island_games.txt
+Isle of Wight,Frøya,6,2,1,Fardhem,Sweden,1999_island_games.txt
+Greenland,Saare County,4,1,1,Väskinde,Sweden,1999_island_games.txt
+Ynys Môn,Rhodes,1,1,X,Fårösund,Sweden,1999_island_games.txt
+Åland Islands,Gibraltar,2,1,1,Väskinde,Sweden,1999_island_games.txt
+Gotland,Shetland,3,1,1,Visby,Sweden,1999_island_games.txt
+Hitra,Isle of Man,0,13,2,Fardhem,Sweden,1999_island_games.txt
+Frøya,Greenland,1,3,2,Dalhem,Sweden,1999_island_games.txt
+Saare County,Isle of Wight,1,6,2,Fårösund,Sweden,1999_island_games.txt
+Rhodes,Guernsey,0,0,X,Visby,Sweden,1999_island_games.txt
+Gibraltar,Jersey,1,5,2,Fardhem,Sweden,1999_island_games.txt
+Gotland,Isle of Man,4,4,X,Visby,Sweden,1999_island_games.txt
+Shetland,Hitra,4,1,1,Fårösund,Sweden,1999_island_games.txt
+Isle of Wight,Greenland,7,2,1,Väskinde,Sweden,1999_island_games.txt
+Saare County,Frøya,1,4,2,Dalhem,Sweden,1999_island_games.txt
+Guernsey,Ynys Môn,1,1,X,Visby,Sweden,1999_island_games.txt
+Hitra,Saare County,2,1,1,Dalhem,Sweden,1999_island_games.txt
+Guernsey,Frøya,4,2,1,Väskinde,Sweden,1999_island_games.txt
+Shetland,Gibraltar,3,2,1,Visby,Sweden,1999_island_games.txt
+Greenland,Rhodes,0,2,2,Fårösund,Sweden,1999_island_games.txt
+Gotland,Åland Islands,1,4,2,Fardhem,Sweden,1999_island_games.txt
+Gotland,Greenland,7,2,1,Norrbacka,Sweden,1999_island_games.txt
+Isle of Wight,Ynys Môn,1,3,2,Visby,Sweden,1999_island_games.txt
+Isle of Man,Jersey,1,0,1,Visby,Sweden,1999_island_games.txt
+Gibraltar,Frøya,5,1,1,Visby,Sweden,1999_island_games.txt
+Guernsey,Shetland,6,5,1,Visby,Sweden,1999_island_games.txt
+Rhodes,Åland Islands,3,2,1,Visby,Sweden,1999_island_games.txt
+Isle of Wight,Jersey,2,0,1,Visby,Sweden,1999_island_games.txt
+Ynys Môn,Isle of Man,1,0,1,Visby,Sweden,1999_island_games.txt
+Ynys Môn,Saare County,4,1,1,Castletown,Isle of Man,2001_island_games.txt
+Jersey,Orkney,12,0,1,Douglas,Isle of Man,2001_island_games.txt
+Isle of Wight,Greenland,0,0,X,Peel,Isle of Man,2001_island_games.txt
+Isle of Man,Falkland Islands,9,0,1,Douglas,Isle of Man,2001_island_games.txt
+Saare County,Shetland,2,3,2,Port Erin,Isle of Man,2001_island_games.txt
+Orkney,Gibraltar,0,2,2,Douglas,Isle of Man,2001_island_games.txt
+Greenland,Rhodes,0,2,2,Ramsey,Isle of Man,2001_island_games.txt
+Guernsey,Falkland Islands,3,0,1,Douglas,Isle of Man,2001_island_games.txt
+Ynys Môn,Shetland,1,1,X,Douglas,Isle of Man,2001_island_games.txt
+Jersey,Gibraltar,2,1,1,Douglas,Isle of Man,2001_island_games.txt
+Rhodes,Isle of Wight,1,4,2,Douglas,Isle of Man,2001_island_games.txt
+Isle of Man,Guernsey,2,3,2,Douglas,Isle of Man,2001_island_games.txt
+Saare County,Orkney,2,1,1,Douglas,Isle of Man,2001_island_games.txt
+Greenland,Falkland Islands,4,0,1,Braddan,Isle of Man,2001_island_games.txt
+Isle of Man,Rhodes,1,3,2,Ramsey,Isle of Man,2001_island_games.txt
+Gibraltar,Shetland,2,0,1,Peel,Isle of Man,2001_island_games.txt
+Isle of Wight,Guernsey,2,3,2,Port Erin,Isle of Man,2001_island_games.txt
+Ynys Môn,Jersey,2,2,X,Castletown,Isle of Man   [Ynys Môn wins on penalties],2001_island_games.txt
+Orkney,Falkland Islands,1,4,2,Peel,Isle of Man,2001_island_games.txt
+Greenland,Saare County,2,0,1,Ramsey,Isle of Man,2001_island_games.txt
+Isle of Man,Shetland,2,2,X,Castletown,Isle of Man,2001_island_games.txt
+Gibraltar,Rhodes,2,0,1,Douglas,Isle of Man,2001_island_games.txt
+Isle of Wight,Jersey,0,2,2,Douglas,Isle of Man,2001_island_games.txt
+Guernsey,Ynys Môn,0,0,X,Douglas,Isle of Man   [Guernsey wins on penalties],2001_island_games.txt
+Saare County,Ynys Môn,0,2,2,Saint Sampson,Guernsey,2003_island_games.txt
+Frøya,Jersey,1,5,2,Saint Sampson,Guernsey,2003_island_games.txt
+Shetland,Gotland,0,0,X,Saint Sampson,Guernsey,2003_island_games.txt
+Guernsey,Alderney,7,1,1,Saint Sampson,Guernsey,2003_island_games.txt
+Gibraltar,Sark,19,0,1,Saint Martin,Guernsey,2003_island_games.txt
+Isle of Wight,Greenland,1,2,2,Saint Martin,Guernsey,2003_island_games.txt
+Isle of Man,Saare County,4,0,1,Saint Sampson,Guernsey,2003_island_games.txt
+Gotland,Frøya,2,2,X,Saint Sampson,Guernsey,2003_island_games.txt
+Jersey,Shetland,5,0,1,Saint Sampson,Guernsey,2003_island_games.txt
+Guernsey,Orkney,10,0,1,Saint Sampson,Guernsey,2003_island_games.txt
+Sark,Isle of Wight,0,20,2,Saint Martin,Guernsey,2003_island_games.txt
+Gibraltar,Greenland,2,0,1,Saint Martin,Guernsey,2003_island_games.txt
+Ynys Môn,Isle of Man,1,2,2,Saint Sampson,Guernsey,2003_island_games.txt
+Shetland,Frøya,3,1,1,Saint Sampson,Guernsey,2003_island_games.txt
+Jersey,Gotland,0,0,X,Saint Sampson,Guernsey,2003_island_games.txt
+Orkney,Alderney,3,1,1,Saint Sampson,Guernsey,2003_island_games.txt
+Isle of Wight,Gibraltar,2,1,1,Saint Martin,Guernsey,2003_island_games.txt
+Greenland,Sark,16,0,1,Saint Martin,Guernsey,2003_island_games.txt
+Frøya,Sark,15,0,1,Alderney,Guernsey,2003_island_games.txt
+Alderney,Greenland,0,3,2,Saint Sampson,Guernsey,2003_island_games.txt
+Gotland,Saare County,3,0,1,Saint Sampson,Guernsey,2003_island_games.txt
+Orkney,Gibraltar,1,7,2,Saint Sampson,Guernsey,2003_island_games.txt
+Isle of Man,Jersey,2,1,1,Saint Sampson,Guernsey,2003_island_games.txt
+Guernsey,Isle of Wight,3,1,1,Saint Sampson,Guernsey,2003_island_games.txt
+Saare County,Alderney,0,1,2,Saint Martin,Guernsey,2003_island_games.txt
+Gotland,Greenland,2,1,1,Saint Sampson,Guernsey,2003_island_games.txt
+Orkney,Shetland,0,6,2,Saint Sampson,Guernsey,2003_island_games.txt
+Gibraltar,Ynys Môn,0,2,2,Saint Sampson,Guernsey,2003_island_games.txt
+Jersey,Isle of Wight,3,0,1,Saint Martin,Guernsey,2003_island_games.txt
+Guernsey,Isle of Man,3,1,1,St. Peter Port,Guernsey,2003_island_games.txt
+Saare County,Åland Islands,2,1,1,Shetland,Scotland,2005_island_games.txt
+Shetland,Falkland Islands,4,0,1,Shetland,Scotland,2005_island_games.txt
+Guernsey,Orkney,3,0,1,Shetland,Scotland,2005_island_games.txt
+Greenland,Ynys Môn,0,0,X,Shetland,Scotland,2005_island_games.txt
+Shetland,Åland Islands,3,1,1,Shetland,Scotland,2005_island_games.txt
+Isle of Man,Saare County,2,2,X,Shetland,Scotland,2005_island_games.txt
+Orkney,Greenland,1,2,2,Shetland,Scotland,2005_island_games.txt
+Guernsey,Western Isles,2,1,1,Shetland,Scotland,2005_island_games.txt
+Saare County,Falkland Islands,1,2,2,Shetland,Scotland,2005_island_games.txt
+Åland Islands,Isle of Man,0,1,2,Shetland,Scotland,2005_island_games.txt
+Orkney,Ynys Môn,0,2,2,Shetland,Scotland,2005_island_games.txt
+Western Isles,Greenland,4,4,X,Shetland,Scotland,2005_island_games.txt
+Shetland,Saare County,0,0,X,Shetland,Scotland,2005_island_games.txt
+Falkland Islands,Isle of Man,0,9,2,Shetland,Scotland,2005_island_games.txt
+Ynys Môn,Western Isles,0,0,X,Shetland,Scotland,2005_island_games.txt
+Greenland,Guernsey,0,6,2,Shetland,Scotland,2005_island_games.txt
+Shetland,Isle of Man,0,1,2,Shetland,Scotland,2005_island_games.txt
+Åland Islands,Falkland Islands,2,1,1,Shetland,Scotland,2005_island_games.txt
+Guernsey,Ynys Môn,3,0,1,Shetland,Scotland,2005_island_games.txt
+Western Isles,Orkney,5,4,1,Shetland,Scotland,2005_island_games.txt
+Orkney,Falkland Islands,2,0,1,Shetland,Scotland,2005_island_games.txt
+Åland Islands,Greenland,3,2,1,Shetland,Scotland,2005_island_games.txt
+Ynys Môn,Saare County,3,2,1,Shetland,Scotland,2005_island_games.txt
+Western Isles,Isle of Man,4,0,1,Shetland,Scotland,2005_island_games.txt
+Shetland,Guernsey,2,0,1,Shetland,Scotland,2005_island_games.txt
+Menorca,Jersey,0,1,2,Rhodes,Greece,2007_island_games.txt
+Bermuda,Ynys Môn,1,2,2,Rhodes,Greece,2007_island_games.txt
+Rhodes,Saare County,2,0,1,Rhodes,Greece,2007_island_games.txt
+Jersey,Gibraltar,1,1,X,Rhodes,Greece,2007_island_games.txt
+Åland Islands,Bermuda,0,2,2,Rhodes,Greece,2007_island_games.txt
+Rhodes,Frøya,3,1,1,Rhodes,Greece,2007_island_games.txt
+Western Isles,Gotland,2,1,1,Rhodes,Greece,2007_island_games.txt
+Gibraltar,Menorca,2,1,1,Rhodes,Greece,2007_island_games.txt
+Ynys Môn,Åland Islands,0,2,2,Rhodes,Greece,2007_island_games.txt
+Saare County,Frøya,2,3,2,Rhodes,Greece,2007_island_games.txt
+Gotland,Western Isles,1,3,2,Rhodes,Greece,2007_island_games.txt
+Menorca,Ynys Môn,6,1,1,Rhodes,Greece,2007_island_games.txt
+Jersey,Åland Islands,1,0,1,Rhodes,Greece,2007_island_games.txt
+Frøya,Gotland,0,3,2,Rhodes,Greece,2007_island_games.txt
+Gibraltar,Bermuda,2,0,1,Rhodes,Greece,2007_island_games.txt
+Rhodes,Western Isles,1,0,1,Rhodes,Greece,2007_island_games.txt
+Menorca,Saare County,4,1,1,Rhodes,Greece,2007_island_games.txt
+Åland Islands,Frøya,3,1,1,Rhodes,Greece,2007_island_games.txt
+Jersey,Gotland,1,0,1,Rhodes,Greece,2007_island_games.txt
+Bermuda,Western Isles,0,1,2,Rhodes,Greece,2007_island_games.txt
+Rhodes,Gibraltar,0,4,2,Rhodes,Greece,2007_island_games.txt
+Åland Islands,Greenland,4,2,1,Mariehamn,Sweden,2009_island_games.txt
+Shetland,Menorca,2,2,X,Hammarland,Sweden,2009_island_games.txt
+Gibraltar,Guernsey,0,0,X,Eckerö,Sweden,2009_island_games.txt
+Ynys Môn,Frøya,3,0,1,Jomala,Sweden,2009_island_games.txt
+Rhodes,Isle of Wight,2,0,1,Sund,Sweden,2009_island_games.txt
+Saare County,Jersey,0,1,2,Saltvik,Sweden,2009_island_games.txt
+Western Isles,Gotland,2,1,1,Hammarland,Sweden,2009_island_games.txt
+Falkland Islands,Isle of Man,1,2,2,Eckerö,Sweden,2009_island_games.txt
+Menorca,Greenland,6,0,1,Sund,Sweden,2009_island_games.txt
+Åland Islands,Shetland,2,1,1,Hammarland,Sweden,2009_island_games.txt
+Ynys Môn,Guernsey,0,2,2,Jomala,Sweden,2009_island_games.txt
+Frøya,Gibraltar,0,8,2,Eckerö,Sweden,2009_island_games.txt
+Jersey,Rhodes,1,0,1,Saltvik,Sweden,2009_island_games.txt
+Isle of Wight,Saare County,5,1,1,Hammarland,Sweden,2009_island_games.txt
+Isle of Man,Western Isles,5,0,1,Finström,Sweden,2009_island_games.txt
+Gotland,Falkland Islands,2,0,1,Jomala,Sweden,2009_island_games.txt
+Greenland,Shetland,3,1,1,Sund,Sweden,2009_island_games.txt
+Åland Islands,Menorca,1,1,X,Finström,Sweden,2009_island_games.txt
+Gibraltar,Ynys Môn,1,3,2,Hammarland,Sweden,2009_island_games.txt
+Guernsey,Frøya,8,0,1,Jomala,Sweden,2009_island_games.txt
+Rhodes,Saare County,3,0,1,Saltvik,Sweden,2009_island_games.txt
+Jersey,Isle of Wight,4,1,1,Hammarland,Sweden,2009_island_games.txt
+Western Isles,Falkland Islands,7,1,1,Eckerö,Sweden,2009_island_games.txt
+Isle of Man,Gotland,4,2,1,Finström,Sweden,2009_island_games.txt
+Falkland Islands,Frøya,1,3,2,Jomala,Sweden,2009_island_games.txt
+Shetland,Saare County,3,2,1,Hammarland,Sweden,2009_island_games.txt
+Gotland,Greenland,4,2,1,Jomala,Sweden,2009_island_games.txt
+Åland Islands,Isle of Man,2,1,1,Jomala,Sweden,2009_island_games.txt
+Guernsey,Jersey,0,2,2,Sund,Sweden,2009_island_games.txt
+Gibraltar,Isle of Wight,3,0,1,Jomala,Sweden,2009_island_games.txt
+Menorca,Western Isles,4,1,1,Jomala,Sweden,2009_island_games.txt
+Rhodes,Ynys Môn,4,0,1,Eckerö,Sweden,2009_island_games.txt
+Isle of Man,Guernsey,0,5,2,Eckerö,Sweden,2009_island_games.txt
+Åland Islands,Jersey,1,2,2,Mariehamn,Sweden,2009_island_games.txt
+Rhodes,Greenland,2,1,1,Brading,England,2011_island_games.txt
+Jersey,Menorca,2,0,1,Cowes,England,2011_island_games.txt
+Alderney,Gibraltar,1,6,2,Newport,England,2011_island_games.txt
+Isle of Wight,Ynys Môn,4,0,1,Newport,England,2011_island_games.txt
+Gotland,Isle of Man,2,4,2,Cowes,England,2011_island_games.txt
+Guernsey,Falkland Islands,5,0,1,Brading,England,2011_island_games.txt
+Åland Islands,Saare County,3,3,X,East Cowes,England,2011_island_games.txt
+Greenland,Menorca,2,3,2,East Cowes,England,2011_island_games.txt
+Jersey,Rhodes,2,0,1,Newport,England,2011_island_games.txt
+Isle of Wight,Alderney,4,0,1,Cowes,England,2011_island_games.txt
+Gibraltar,Ynys Môn,6,3,1,Brading,England,2011_island_games.txt
+Isle of Man,Falkland Islands,6,0,1,Rookley,England,2011_island_games.txt
+Gotland,Guernsey,2,5,2,Freshwater,England,2011_island_games.txt
+Western Isles,Åland Islands,0,2,2,Newport,England,2011_island_games.txt
+Greenland,Jersey,1,2,2,Freshwater,England,2011_island_games.txt
+Alderney,Ynys Môn,0,5,2,Shanklin,England,2011_island_games.txt
+Isle of Wight,Gibraltar,3,2,1,East Cowes,England,2011_island_games.txt
+Guernsey,Isle of Man,2,1,1,East Cowes,England,2011_island_games.txt
+Falkland Islands,Gotland,1,6,2,Oakfield,England,2011_island_games.txt
+Saare County,Western Isles,2,0,1,Cowes,England,2011_island_games.txt
+Alderney,Falkland Islands,0,3,2,Shanklin,England,2011_island_games.txt
+Greenland,Western Isles,1,0,1,Shanklin,England,2011_island_games.txt
+Gotland,Ynys Môn,1,2,2,Freshwater,England,2011_island_games.txt
+Isle of Man,Menorca,2,2,X,Cowes,England   [Menorca wins on penalties],2011_island_games.txt
+Saare County,Gibraltar,0,4,2,Brading,England,2011_island_games.txt
+Isle of Wight,Jersey,1,0,1,Cowes,England,2011_island_games.txt
+Guernsey,Åland Islands,3,2,1,Brading,England,2011_island_games.txt
+Jersey,Åland Islands,5,1,1,Brading,England,2011_island_games.txt
+Isle of Wight,Guernsey,4,2,1,Newport,England,2011_island_games.txt
+Bermuda,Greenland,3,0,1,Hamilton,Bermuda,2013_island_games.txt
+Frøya,Falkland Islands,1,2,2,Hamilton,Bermuda,2013_island_games.txt
+Bermuda,Falkland Islands,8,0,1,Hamilton,Bermuda,2013_island_games.txt
+Greenland,Frøya,12,0,1,Hamilton,Bermuda,2013_island_games.txt
+Falkland Islands,Greenland,0,9,2,Hamilton,Bermuda,2013_island_games.txt
+Bermuda,Frøya,8,0,1,Hamilton,Bermuda,2013_island_games.txt
+Falkland Islands,Frøya,6,0,1,Hamilton,Bermuda,2013_island_games.txt
+Bermuda,Greenland,1,0,1,Hamilton,Bermuda,2013_island_games.txt
+Greenland,Menorca,2,2,X,Grouville,Jersey,2015_island_games.txt
+Saare County,Åland Islands,1,2,2,Grouville,Jersey,2015_island_games.txt
+Gibraltar,Gotland,2,1,1,St. Peter,Jersey,2015_island_games.txt
+Ynys Môn,Guernsey,2,5,2,St. Peter,Jersey,2015_island_games.txt
+Falkland Islands,Hitra,2,1,1,St. John,Jersey,2015_island_games.txt
+Shetland,Isle of Wight,0,0,X,St. Lawrence,Jersey,2015_island_games.txt
+Western Isles,Isle of Man,0,9,2,St. Lawrence,Jersey,2015_island_games.txt
+Jersey,Alderney,6,0,1,St Helier,Jersey,2015_island_games.txt
+Isle of Man,Alderney,7,0,1,St. Ouen,Jersey,2015_island_games.txt
+Jersey,Western Isles,3,0,1,St Helier,Jersey,2015_island_games.txt
+Åland Islands,Greenland,0,2,2,St. Clement,Jersey,2015_island_games.txt
+Menorca,Saare County,3,0,1,St. Clement,Jersey,2015_island_games.txt
+Guernsey,Gotland,3,0,1,St. Brelade,Jersey,2015_island_games.txt
+Gibraltar,Ynys Môn,1,1,X,St Helier,Jersey,2015_island_games.txt
+Isle of Wight,Falkland Islands,3,0,1,St. Ouen,Jersey,2015_island_games.txt
+Hitra,Shetland,1,4,2,St. Brelade,Jersey,2015_island_games.txt
+Åland Islands,Menorca,1,3,2,St. Clement,Jersey,2015_island_games.txt
+Greenland,Saare County,2,1,1,Grouville,Jersey,2015_island_games.txt
+Gotland,Ynys Môn,2,3,2,St. Peter,Jersey,2015_island_games.txt
+Gibraltar,Guernsey,0,4,2,St Helier,Jersey,2015_island_games.txt
+Isle of Wight,Hitra,3,1,1,St. Lawrence,Jersey,2015_island_games.txt
+Falkland Islands,Shetland,0,5,2,St. Peter,Jersey,2015_island_games.txt
+Jersey,Isle of Man,1,2,2,St. John,Jersey,2015_island_games.txt
+Alderney,Western Isles,2,3,2,St. Peter,Jersey,2015_island_games.txt
+Hitra,Alderney,5,1,1,St. Ouen,Jersey,2015_island_games.txt
+Gotland,Saare County,2,3,2,St. Ouen,Jersey,2015_island_games.txt
+Falkland Islands,Western Isles,1,2,2,St. Brelade,Jersey,2015_island_games.txt
+Gibraltar,Åland Islands,0,0,X,St. Brelade,Jersey   [Åland Islands wins on penalties],2015_island_games.txt
+Jersey,Ynys Môn,1,0,1,St. Clement,Jersey,2015_island_games.txt
+Isle of Wight,Greenland,1,2,2,St. Clement,Jersey,2015_island_games.txt
+Menorca,Guernsey,1,2,2,St Helier,Jersey,2015_island_games.txt
+Shetland,Isle of Man,1,3,2,St Helier,Jersey,2015_island_games.txt
+Menorca,Shetland,1,0,1,St. Peter,Jersey,2015_island_games.txt
+Guernsey,Isle of Man,3,0,1,St Helier,Jersey,2015_island_games.txt
+Menorca,Orkney,1,0,1,Stenkyrka,Sweden,2017_island_games.txt
+Alderney,Jersey,0,3,2,Väskinde,Sweden,2017_island_games.txt
+Gotland,Frøya,7,1,1,Visby,Sweden,2017_island_games.txt
+Western Isles,Greenland,0,3,2,Dalhem,Sweden,2017_island_games.txt
+Guernsey,Åland Islands,1,1,X,Dalhem,Sweden,2017_island_games.txt
+Saare County,Shetland,4,5,2,Hemse,Sweden,2017_island_games.txt
+Isle of Man,Hitra,5,0,1,Fårösund,Sweden,2017_island_games.txt
+Ynys Môn,Falkland Islands,3,0,1,Säve,Sweden,2017_island_games.txt
+Jersey,Menorca,3,3,X,Visby,Sweden,2017_island_games.txt
+Orkney,Alderney,3,0,1,Hemse,Sweden,2017_island_games.txt
+Gotland,Western Isles,8,0,1,Dalhem,Sweden,2017_island_games.txt
+Frøya,Greenland,2,2,X,Hemse,Sweden,2017_island_games.txt
+Shetland,Guernsey,0,3,2,Stenkyrka,Sweden,2017_island_games.txt
+Åland Islands,Saare County,0,0,X,Fardhem,Sweden,2017_island_games.txt
+Falkland Islands,Isle of Man,2,5,2,Säve,Sweden,2017_island_games.txt
+Hitra,Ynys Môn,1,5,2,Väskinde,Sweden,2017_island_games.txt
+Menorca,Alderney,6,0,1,Fårösund,Sweden,2017_island_games.txt
+Orkney,Jersey,0,3,2,Väskinde,Sweden,2017_island_games.txt
+Gotland,Greenland,0,1,2,Visby,Sweden,2017_island_games.txt
+Frøya,Western Isles,2,4,2,Säve,Sweden,2017_island_games.txt
+Guernsey,Saare County,1,1,X,Dalhem,Sweden,2017_island_games.txt
+Åland Islands,Shetland,2,1,1,Visby,Sweden,2017_island_games.txt
+Isle of Man,Ynys Môn,4,0,1,Stenkyrka,Sweden,2017_island_games.txt
+Hitra,Falkland Islands,2,1,1,Fardhem,Sweden,2017_island_games.txt
+Falkland Islands,Alderney,0,3,2,Säve,Sweden,2017_island_games.txt
+Saare County,Frøya,4,2,1,Fardhem,Sweden,2017_island_games.txt
+Hitra,Western Isles,1,1,X,Stenkyrka,Sweden   [Western Isles wins on penalties],2017_island_games.txt
+Orkney,Shetland,3,1,1,Dalhem,Sweden,2017_island_games.txt
+Ynys Môn,Åland Islands,0,2,2,Fårösund,Sweden,2017_island_games.txt
+Gotland,Jersey,2,3,2,Visby,Sweden,2017_island_games.txt
+Greenland,Menorca,1,1,X,Väskinde,Sweden   [Greenland wins on penalties],2017_island_games.txt
+Guernsey,Isle of Man,3,4,2,Fardhem,Sweden,2017_island_games.txt
+Menorca,Guernsey,0,1,2,Väskinde,Sweden,2017_island_games.txt
+Greenland,Isle of Man,0,6,2,Visby,Sweden,2017_island_games.txt
+Åland Islands,Isle of Wight,0,2,2,Saint Sampson,Guernsey,2023_island_games.txt
+Guernsey,Western Isles,1,0,1,Saint Sampson,Guernsey,2023_island_games.txt
+Isle of Man,Falkland Islands,3,0,1,Saint Martin,Guernsey,2023_island_games.txt
+Ynys Môn,Shetland,2,0,1,Saint Sampson,Guernsey,2023_island_games.txt
+Orkney,Greenland,2,2,X,Saint Martin,Guernsey   [Greenland wins on penalties],2023_island_games.txt
+Jersey,Gozo,1,0,1,Saint Sampson,Guernsey,2023_island_games.txt
+Menorca,Saint Helena,5,0,1,Saint Sampson,Guernsey,2023_island_games.txt
+Western Isles,Isle of Wight,0,1,2,Saint Martin,Guernsey,2023_island_games.txt
+Guernsey,Åland Islands,4,1,1,Saint Sampson,Guernsey,2023_island_games.txt
+Falkland Islands,Ynys Môn,1,5,2,Saint Sampson,Guernsey,2023_island_games.txt
+Shetland,Isle of Man,3,2,1,Saint Sampson,Guernsey,2023_island_games.txt
+Greenland,Frøya,2,0,1,Saint Sampson,Guernsey,2023_island_games.txt
+Gozo,Saint Helena,3,0,1,Saint Sampson,Guernsey,2023_island_games.txt
+Jersey,Menorca,4,0,1,Saint Sampson,Guernsey,2023_island_games.txt
+Guernsey,Isle of Wight,1,2,2,Saint Sampson,Guernsey,2023_island_games.txt
+Åland Islands,Western Isles,0,2,2,Saint Sampson,Guernsey,2023_island_games.txt
+Falkland Islands,Shetland,1,4,2,Saint Sampson,Guernsey,2023_island_games.txt
+Isle of Man,Ynys Môn,1,2,2,Saint Martin,Guernsey,2023_island_games.txt
+Frøya,Orkney,2,3,2,St. Peter Port,Guernsey,2023_island_games.txt
+Menorca,Gozo,0,1,2,Saint Martin,Guernsey,2023_island_games.txt
+Saint Helena,Jersey,0,5,2,Saint Sampson,Guernsey,2023_island_games.txt
+Frøya,Saint Helena,4,2,1,Saint Martin,Guernsey,2023_island_games.txt
+Åland Islands,Falkland Islands,1,1,X,Saint Sampson,Guernsey   [Åland wins on penalties],2023_island_games.txt
+Western Isles,Menorca,2,1,1,Saint Sampson,Guernsey,2023_island_games.txt
+Orkney,Isle of Man,0,1,2,Saint Sampson,Guernsey,2023_island_games.txt
+Shetland,Greenland,5,1,1,Saint Sampson,Guernsey,2023_island_games.txt
+Guernsey,Gozo,1,0,1,Saint Martin,Guernsey,2023_island_games.txt
+Isle of Wight,Jersey,2,3,2,Saint Sampson,Guernsey,2023_island_games.txt
+Ynys Môn,Jersey,2,5,2,St. Peter Port,Guernsey,2023_island_games.txt

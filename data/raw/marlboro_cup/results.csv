@@ -1,0 +1,9 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+El Salvador,Guatemala,1,2,2,Los Angeles,United States,1988_marlboro_cup.txt
+United States,Peru,3,0,1,East Rutherford,United States,1989_marlboro_cup.txt
+Mexico,South Korea,4,2,1,Los Angeles,United States,1989_marlboro_cup.txt
+United States,South Korea,1,2,2,Los Angeles,United States,1989_marlboro_cup.txt
+Colombia,Russia,0,0,X,Los Angeles,United States   [Colombia wins on penalties],1990_marlboro_cup.txt
+Costa Rica,Russia,1,2,2,Los Angeles,United States,1990_marlboro_cup.txt
+Colombia,Poland,2,1,1,Chicago,United States,1990_marlboro_cup.txt
+Costa Rica,Poland,0,2,2,Chicago,United States,1990_marlboro_cup.txt

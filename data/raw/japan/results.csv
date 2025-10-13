@@ -1,0 +1,2121 @@
+time,home_team,away_team,home_score,away_score,result,ht_score,source_file
+19.30,Cerezo Osaka,Vissel Kobe,1,0,1,0-0,2019_jp1.txt
+14.00,Kawasaki Frontale,FC Tokyo,0,0,X,,2019_jp1.txt
+,Sagan Tosu,Nagoya Grampus,0,4,2,0-0,2019_jp1.txt
+,Sanfrecce Hiroshima,Shimizu S-Pulse,1,1,X,0-1,2019_jp1.txt
+,Vegalta Sendai,Urawa Red Diamonds,0,0,X,,2019_jp1.txt
+15.00,Gamba Osaka,Yokohama F. Marinos,2,3,2,1-3,2019_jp1.txt
+,Júbilo Iwata,Matsumoto Yamaga,1,1,X,0-1,2019_jp1.txt
+,Kashima Antlers,Oita Trinita,1,2,2,0-1,2019_jp1.txt
+16.00,Shonan Bellmare,Hokkaido Consadole Sapporo,2,0,1,0-0,2019_jp1.txt
+19.00,Kawasaki Frontale,Kashima Antlers,1,1,X,1-1,2019_jp1.txt
+,Sanfrecce Hiroshima,Júbilo Iwata,0,0,X,,2019_jp1.txt
+13.00,Yokohama F. Marinos,Vegalta Sendai,2,1,1,2-0,2019_jp1.txt
+14.00,Nagoya Grampus,Cerezo Osaka,2,0,1,0-0,2019_jp1.txt
+,Shimizu S-Pulse,Gamba Osaka,2,4,2,1-1,2019_jp1.txt
+15.00,Vissel Kobe,Sagan Tosu,1,0,1,0-0,2019_jp1.txt
+16.00,Oita Trinita,Matsumoto Yamaga,0,1,2,0-0,2019_jp1.txt
+,Shonan Bellmare,FC Tokyo,2,3,2,1-2,2019_jp1.txt
+,Urawa Red Diamonds,Hokkaido Consadole Sapporo,0,2,2,0-2,2019_jp1.txt
+14.00,Hokkaido Consadole Sapporo,Shimizu S-Pulse,5,2,1,2-1,2019_jp1.txt
+,Matsumoto Yamaga,Urawa Red Diamonds,0,1,2,0-0,2019_jp1.txt
+15.00,Gamba Osaka,Nagoya Grampus,2,3,2,1-2,2019_jp1.txt
+,Júbilo Iwata,Oita Trinita,1,2,2,1-1,2019_jp1.txt
+16.00,Cerezo Osaka,Sanfrecce Hiroshima,0,1,2,0-1,2019_jp1.txt
+,Kashima Antlers,Shonan Bellmare,1,0,1,0-0,2019_jp1.txt
+14.00,FC Tokyo,Sagan Tosu,2,0,1,0-0,2019_jp1.txt
+,Vegalta Sendai,Vissel Kobe,1,3,2,1-1,2019_jp1.txt
+,Yokohama F. Marinos,Kawasaki Frontale,2,2,X,1-1,2019_jp1.txt
+13.00,Sagan Tosu,Júbilo Iwata,1,0,1,0-0,2019_jp1.txt
+13.30,FC Tokyo,Nagoya Grampus,1,0,1,0-0,2019_jp1.txt
+14.00,Hokkaido Consadole Sapporo,Kashima Antlers,1,3,2,0-2,2019_jp1.txt
+,Vissel Kobe,Shimizu S-Pulse,1,1,X,0-0,2019_jp1.txt
+15.00,Cerezo Osaka,Urawa Red Diamonds,1,2,2,0-0,2019_jp1.txt
+,Kawasaki Frontale,Gamba Osaka,0,1,2,0-0,2019_jp1.txt
+,Sanfrecce Hiroshima,Matsumoto Yamaga,1,0,1,0-0,2019_jp1.txt
+16.00,Oita Trinita,Yokohama F. Marinos,2,0,1,0-0,2019_jp1.txt
+17.00,Shonan Bellmare,Vegalta Sendai,2,1,1,1-0,2019_jp1.txt
+19.30,Yokohama F. Marinos,Sagan Tosu,0,0,X,,2019_jp1.txt
+14.00,Nagoya Grampus,Hokkaido Consadole Sapporo,4,0,1,3-0,2019_jp1.txt
+,Urawa Red Diamonds,FC Tokyo,1,1,X,0-0,2019_jp1.txt
+,Vegalta Sendai,Cerezo Osaka,0,2,2,0-1,2019_jp1.txt
+15.00,Júbilo Iwata,Kashima Antlers,1,1,X,0-0,2019_jp1.txt
+17.00,Gamba Osaka,Vissel Kobe,3,4,2,2-1,2019_jp1.txt
+19.00,Oita Trinita,Sanfrecce Hiroshima,0,1,2,0-0,2019_jp1.txt
+14.00,Matsumoto Yamaga,Kawasaki Frontale,0,2,2,0-1,2019_jp1.txt
+,Shimizu S-Pulse,Shonan Bellmare,1,3,2,1-2,2019_jp1.txt
+19.00,Kashima Antlers,Nagoya Grampus,2,1,1,0-0,2019_jp1.txt
+,Kawasaki Frontale,Cerezo Osaka,1,1,X,0-1,2019_jp1.txt
+19.30,Urawa Red Diamonds,Yokohama F. Marinos,0,3,2,0-1,2019_jp1.txt
+13.00,Hokkaido Consadole Sapporo,Oita Trinita,1,2,2,0-2,2019_jp1.txt
+14.00,FC Tokyo,Shimizu S-Pulse,2,1,1,0-0,2019_jp1.txt
+,Sanfrecce Hiroshima,Gamba Osaka,3,0,1,2-0,2019_jp1.txt
+,Vegalta Sendai,Sagan Tosu,3,0,1,1-0,2019_jp1.txt
+16.00,Shonan Bellmare,Júbilo Iwata,0,2,2,0-0,2019_jp1.txt
+19.00,Matsumoto Yamaga,Vissel Kobe,2,1,1,2-0,2019_jp1.txt
+15.00,Cerezo Osaka,Hokkaido Consadole Sapporo,0,1,2,0-0,2019_jp1.txt
+19.00,Yokohama F. Marinos,Nagoya Grampus,1,1,X,1-1,2019_jp1.txt
+14.00,FC Tokyo,Kashima Antlers,3,1,1,3-0,2019_jp1.txt
+,Sagan Tosu,Kawasaki Frontale,0,1,2,0-0,2019_jp1.txt
+15.00,Júbilo Iwata,Shimizu S-Pulse,1,2,2,0-1,2019_jp1.txt
+16.00,Gamba Osaka,Urawa Red Diamonds,0,1,2,0-0,2019_jp1.txt
+,Oita Trinita,Vegalta Sendai,2,0,1,0-0,2019_jp1.txt
+,Vissel Kobe,Sanfrecce Hiroshima,2,4,2,2-1,2019_jp1.txt
+17.00,Shonan Bellmare,Matsumoto Yamaga,1,1,X,0-0,2019_jp1.txt
+19.00,Kawasaki Frontale,Shonan Bellmare,2,0,1,2-0,2019_jp1.txt
+,Sanfrecce Hiroshima,FC Tokyo,0,1,2,0-0,2019_jp1.txt
+13.00,Hokkaido Consadole Sapporo,Yokohama F. Marinos,3,0,1,3-0,2019_jp1.txt
+,Urawa Red Diamonds,Vissel Kobe,1,0,1,1-0,2019_jp1.txt
+14.00,Matsumoto Yamaga,Sagan Tosu,1,0,1,1-0,2019_jp1.txt
+,Nagoya Grampus,Júbilo Iwata,1,0,1,0-0,2019_jp1.txt
+15.00,Kashima Antlers,Vegalta Sendai,1,0,1,0-0,2019_jp1.txt
+,Shimizu S-Pulse,Cerezo Osaka,1,0,1,0-0,2019_jp1.txt
+16.00,Gamba Osaka,Oita Trinita,1,1,X,0-1,2019_jp1.txt
+14.00,Cerezo Osaka,Oita Trinita,0,0,X,,2019_jp1.txt
+13.00,Vegalta Sendai,Gamba Osaka,2,1,1,1-1,2019_jp1.txt
+,Yokohama F. Marinos,Kashima Antlers,2,1,1,0-1,2019_jp1.txt
+14.00,FC Tokyo,Matsumoto Yamaga,2,0,1,1-0,2019_jp1.txt
+,Sagan Tosu,Shonan Bellmare,0,2,2,0-0,2019_jp1.txt
+,Vissel Kobe,Kawasaki Frontale,1,2,2,0-2,2019_jp1.txt
+15.00,Júbilo Iwata,Hokkaido Consadole Sapporo,1,2,2,0-2,2019_jp1.txt
+,Nagoya Grampus,Sanfrecce Hiroshima,1,0,1,1-0,2019_jp1.txt
+16.00,Shimizu S-Pulse,Urawa Red Diamonds,0,2,2,0-0,2019_jp1.txt
+14.00,Sanfrecce Hiroshima,Yokohama F. Marinos,0,1,2,0-1,2019_jp1.txt
+,Urawa Red Diamonds,Júbilo Iwata,0,1,2,0-0,2019_jp1.txt
+15.00,Kashima Antlers,Shimizu S-Pulse,3,0,1,1-0,2019_jp1.txt
+,Kawasaki Frontale,Vegalta Sendai,3,1,1,2-0,2019_jp1.txt
+14.00,Hokkaido Consadole Sapporo,Vissel Kobe,2,1,1,0-0,2019_jp1.txt
+,Matsumoto Yamaga,Cerezo Osaka,0,2,2,0-1,2019_jp1.txt
+16.00,Gamba Osaka,FC Tokyo,0,0,X,,2019_jp1.txt
+,Oita Trinita,Sagan Tosu,2,0,1,0-0,2019_jp1.txt
+,Shonan Bellmare,Nagoya Grampus,1,1,X,1-0,2019_jp1.txt
+14.00,Sagan Tosu,Gamba Osaka,3,1,1,1-0,2019_jp1.txt
+15.00,Cerezo Osaka,Yokohama F. Marinos,3,0,1,1-0,2019_jp1.txt
+13.00,Matsumoto Yamaga,Hokkaido Consadole Sapporo,0,0,X,,2019_jp1.txt
+13.05,Vegalta Sendai,Sanfrecce Hiroshima,2,1,1,0-1,2019_jp1.txt
+14.00,FC Tokyo,Júbilo Iwata,1,0,1,0-0,2019_jp1.txt
+,Shimizu S-Pulse,Kawasaki Frontale,0,4,2,0-2,2019_jp1.txt
+,Vissel Kobe,Kashima Antlers,0,1,2,0-1,2019_jp1.txt
+15.00,Nagoya Grampus,Urawa Red Diamonds,2,0,1,2-0,2019_jp1.txt
+16.00,Shonan Bellmare,Oita Trinita,0,1,2,0-0,2019_jp1.txt
+19.00,Kawasaki Frontale,Nagoya Grampus,1,1,X,0-1,2019_jp1.txt
+,Sanfrecce Hiroshima,Sagan Tosu,0,1,2,0-0,2019_jp1.txt
+19.30,Urawa Red Diamonds,Shonan Bellmare,2,3,2,2-0,2019_jp1.txt
+14.00,FC Tokyo,Hokkaido Consadole Sapporo,2,0,1,0-0,2019_jp1.txt
+,Júbilo Iwata,Vegalta Sendai,2,0,1,2-0,2019_jp1.txt
+,Yokohama F. Marinos,Vissel Kobe,4,1,1,1-0,2019_jp1.txt
+15.00,Kashima Antlers,Matsumoto Yamaga,5,0,1,1-0,2019_jp1.txt
+16.00,Oita Trinita,Shimizu S-Pulse,1,1,X,0-1,2019_jp1.txt
+19.00,Gamba Osaka,Cerezo Osaka,1,0,1,0-0,2019_jp1.txt
+14.00,Hokkaido Consadole Sapporo,Gamba Osaka,0,0,X,,2019_jp1.txt
+,Shimizu S-Pulse,Vegalta Sendai,4,3,1,3-2,2019_jp1.txt
+15.00,Cerezo Osaka,FC Tokyo,1,0,1,0-0,2019_jp1.txt
+13.00,Yokohama F. Marinos,Júbilo Iwata,4,0,1,1-0,2019_jp1.txt
+14.00,Sagan Tosu,Kashima Antlers,1,0,1,0-0,2019_jp1.txt
+,Urawa Red Diamonds,Sanfrecce Hiroshima,0,4,2,0-2,2019_jp1.txt
+15.00,Nagoya Grampus,Matsumoto Yamaga,0,1,2,0-1,2019_jp1.txt
+,Vissel Kobe,Shonan Bellmare,4,1,1,0-0,2019_jp1.txt
+16.00,Oita Trinita,Kawasaki Frontale,0,1,2,0-1,2019_jp1.txt
+19.00,Shonan Bellmare,Yokohama F. Marinos,1,2,2,1-1,2019_jp1.txt
+14.00,Hokkaido Consadole Sapporo,Sanfrecce Hiroshima,1,0,1,0-0,2019_jp1.txt
+,FC Tokyo,Oita Trinita,3,1,1,2-0,2019_jp1.txt
+,Vegalta Sendai,Nagoya Grampus,3,1,1,1-1,2019_jp1.txt
+15.00,Júbilo Iwata,Vissel Kobe,1,1,X,0-1,2019_jp1.txt
+16.00,Sagan Tosu,Cerezo Osaka,0,1,2,0-1,2019_jp1.txt
+18.00,Matsumoto Yamaga,Shimizu S-Pulse,1,1,X,0-0,2019_jp1.txt
+19.00,Gamba Osaka,Kashima Antlers,1,1,X,1-1,2019_jp1.txt
+,Kawasaki Frontale,Urawa Red Diamonds,1,1,X,0-0,2019_jp1.txt
+19.00,Kawasaki Frontale,Hokkaido Consadole Sapporo,1,1,X,0-1,2019_jp1.txt
+,Kashima Antlers,Cerezo Osaka,2,0,1,0-0,2019_jp1.txt
+,Sanfrecce Hiroshima,Shonan Bellmare,2,0,1,0-0,2019_jp1.txt
+18.00,Shimizu S-Pulse,Yokohama F. Marinos,3,2,1,0-1,2019_jp1.txt
+19.00,FC Tokyo,Vissel Kobe,0,1,2,0-0,2019_jp1.txt
+,Júbilo Iwata,Gamba Osaka,0,0,X,,2019_jp1.txt
+,Matsumoto Yamaga,Vegalta Sendai,0,1,2,0-1,2019_jp1.txt
+,Oita Trinita,Nagoya Grampus,1,1,X,1-0,2019_jp1.txt
+,Urawa Red Diamonds,Sagan Tosu,2,1,1,1-1,2019_jp1.txt
+14.00,Hokkaido Consadole Sapporo,Sagan Tosu,3,1,1,2-0,2019_jp1.txt
+18.00,Vissel Kobe,Oita Trinita,2,2,X,2-1,2019_jp1.txt
+,Yokohama F. Marinos,Matsumoto Yamaga,1,0,1,0-0,2019_jp1.txt
+19.00,Cerezo Osaka,Júbilo Iwata,2,0,1,1-0,2019_jp1.txt
+,Gamba Osaka,Shonan Bellmare,1,0,1,0-0,2019_jp1.txt
+,Nagoya Grampus,Shimizu S-Pulse,1,2,2,0-0,2019_jp1.txt
+19.00,Vegalta Sendai,FC Tokyo,2,0,1,0-0,2019_jp1.txt
+19.00,Sanfrecce Hiroshima,Kawasaki Frontale,3,2,1,2-0,2019_jp1.txt
+19.30,Urawa Red Diamonds,Kashima Antlers,1,1,X,0-0,2019_jp1.txt
+18.00,Matsumoto Yamaga,Gamba Osaka,1,3,2,0-1,2019_jp1.txt
+19.00,FC Tokyo,Yokohama F. Marinos,4,2,1,2-1,2019_jp1.txt
+18.00,Vissel Kobe,Nagoya Grampus,5,3,1,1-0,2019_jp1.txt
+18.30,Kashima Antlers,Sanfrecce Hiroshima,2,2,X,1-1,2019_jp1.txt
+19.00,Oita Trinita,Urawa Red Diamonds,2,0,1,0-0,2019_jp1.txt
+,Júbilo Iwata,Kawasaki Frontale,1,3,2,0-1,2019_jp1.txt
+,Shonan Bellmare,Cerezo Osaka,0,2,2,0-0,2019_jp1.txt
+,Vegalta Sendai,Hokkaido Consadole Sapporo,2,1,1,1-1,2019_jp1.txt
+19.30,Sagan Tosu,Shimizu S-Pulse,4,2,1,3-2,2019_jp1.txt
+18.00,Shimizu S-Pulse,Vissel Kobe,2,1,1,1-1,2019_jp1.txt
+19.00,Kashima Antlers,Júbilo Iwata,2,0,1,2-0,2019_jp1.txt
+,Sanfrecce Hiroshima,Cerezo Osaka,1,1,X,0-1,2019_jp1.txt
+,Urawa Red Diamonds,Vegalta Sendai,1,0,1,1-0,2019_jp1.txt
+,Yokohama F. Marinos,Oita Trinita,1,0,1,0-0,2019_jp1.txt
+14.00,Hokkaido Consadole Sapporo,Matsumoto Yamaga,1,1,X,1-1,2019_jp1.txt
+18.00,Nagoya Grampus,Shonan Bellmare,0,2,2,0-1,2019_jp1.txt
+19.00,FC Tokyo,Gamba Osaka,3,1,1,2-1,2019_jp1.txt
+,Kawasaki Frontale,Sagan Tosu,0,0,X,,2019_jp1.txt
+18.00,Matsumoto Yamaga,Júbilo Iwata,0,1,2,0-0,2019_jp1.txt
+19.00,Cerezo Osaka,Nagoya Grampus,3,0,1,1-0,2019_jp1.txt
+,Gamba Osaka,Shimizu S-Pulse,1,0,1,0-0,2019_jp1.txt
+,Oita Trinita,Hokkaido Consadole Sapporo,2,1,1,1-1,2019_jp1.txt
+,Vegalta Sendai,Kashima Antlers,0,4,2,0-2,2019_jp1.txt
+,Yokohama F. Marinos,Urawa Red Diamonds,3,1,1,1-0,2019_jp1.txt
+19.30,Sagan Tosu,Sanfrecce Hiroshima,0,2,2,0-0,2019_jp1.txt
+19.00,FC Tokyo,Kawasaki Frontale,0,3,2,0-1,2019_jp1.txt
+,Shonan Bellmare,Vissel Kobe,3,1,1,0-1,2019_jp1.txt
+13.00,Hokkaido Consadole Sapporo,Shonan Bellmare,5,2,1,2-1,2019_jp1.txt
+18.00,Matsumoto Yamaga,Sanfrecce Hiroshima,2,2,X,0-0,2019_jp1.txt
+,Nagoya Grampus,Gamba Osaka,2,2,X,2-1,2019_jp1.txt
+,Vissel Kobe,Yokohama F. Marinos,0,2,2,0-1,2019_jp1.txt
+18.30,Kashima Antlers,Sagan Tosu,2,1,1,2-1,2019_jp1.txt
+19.00,Cerezo Osaka,Vegalta Sendai,0,0,X,,2019_jp1.txt
+,Júbilo Iwata,Urawa Red Diamonds,1,3,2,0-3,2019_jp1.txt
+,Shimizu S-Pulse,FC Tokyo,0,2,2,0-2,2019_jp1.txt
+19.00,Kawasaki Frontale,Oita Trinita,3,1,1,0-0,2019_jp1.txt
+19.00,Vissel Kobe,Gamba Osaka,2,2,X,0-1,2019_jp1.txt
+19.00,FC Tokyo,Cerezo Osaka,3,0,1,0-0,2019_jp1.txt
+,Sanfrecce Hiroshima,Hokkaido Consadole Sapporo,1,0,1,0-0,2019_jp1.txt
+,Shonan Bellmare,Kashima Antlers,3,2,1,0-0,2019_jp1.txt
+,Vegalta Sendai,Júbilo Iwata,2,1,1,2-1,2019_jp1.txt
+,Yokohama F. Marinos,Shimizu S-Pulse,0,1,2,0-0,2019_jp1.txt
+19.00,Kawasaki Frontale,Matsumoto Yamaga,0,0,X,,2019_jp1.txt
+,Urawa Red Diamonds,Nagoya Grampus,2,2,X,1-2,2019_jp1.txt
+19.30,Sagan Tosu,Oita Trinita,2,2,X,0-0,2019_jp1.txt
+14.00,Hokkaido Consadole Sapporo,Urawa Red Diamonds,1,1,X,0-0,2019_jp1.txt
+18.00,Shimizu S-Pulse,Matsumoto Yamaga,1,0,1,1-0,2019_jp1.txt
+18.30,Kashima Antlers,Yokohama F. Marinos,2,1,1,1-0,2019_jp1.txt
+19.00,FC Tokyo,Vegalta Sendai,1,0,1,0-0,2019_jp1.txt
+,Gamba Osaka,Sanfrecce Hiroshima,1,1,X,0-0,2019_jp1.txt
+,Nagoya Grampus,Kawasaki Frontale,3,0,1,2-0,2019_jp1.txt
+,Oita Trinita,Vissel Kobe,1,1,X,0-1,2019_jp1.txt
+18.00,Cerezo Osaka,Sagan Tosu,1,2,2,1-0,2019_jp1.txt
+19.00,Júbilo Iwata,Shonan Bellmare,2,3,2,1-0,2019_jp1.txt
+18.00,Shimizu S-Pulse,Hokkaido Consadole Sapporo,0,8,2,0-2,2019_jp1.txt
+19.00,FC Tokyo,Sanfrecce Hiroshima,0,1,2,0-0,2019_jp1.txt
+,Oita Trinita,Kashima Antlers,0,1,2,0-0,2019_jp1.txt
+,Shonan Bellmare,Sagan Tosu,2,3,2,1-2,2019_jp1.txt
+,Vegalta Sendai,Kawasaki Frontale,2,2,X,0-1,2019_jp1.txt
+,Vissel Kobe,Urawa Red Diamonds,3,0,1,1-0,2019_jp1.txt
+,Yokohama F. Marinos,Cerezo Osaka,1,2,2,0-1,2019_jp1.txt
+18.00,Matsumoto Yamaga,Nagoya Grampus,1,1,X,0-0,2019_jp1.txt
+19.00,Gamba Osaka,Júbilo Iwata,1,1,X,1-0,2019_jp1.txt
+19.00,Kashima Antlers,Gamba Osaka,2,2,X,1-1,2019_jp1.txt
+19.30,Sagan Tosu,Vissel Kobe,1,6,2,0-3,2019_jp1.txt
+,Urawa Red Diamonds,Matsumoto Yamaga,1,2,2,1-0,2019_jp1.txt
+13.00,Hokkaido Consadole Sapporo,FC Tokyo,1,1,X,0-1,2019_jp1.txt
+18.00,Nagoya Grampus,Yokohama F. Marinos,1,5,2,0-2,2019_jp1.txt
+19.00,Júbilo Iwata,Cerezo Osaka,0,2,2,0-2,2019_jp1.txt
+,Kawasaki Frontale,Shimizu S-Pulse,2,2,X,1-1,2019_jp1.txt
+,Sanfrecce Hiroshima,Oita Trinita,0,0,X,,2019_jp1.txt
+,Vegalta Sendai,Shonan Bellmare,1,1,X,0-0,2019_jp1.txt
+19.30,Nagoya Grampus,FC Tokyo,1,2,2,0-1,2019_jp1.txt
+19.00,Júbilo Iwata,Sanfrecce Hiroshima,0,2,2,0-0,2019_jp1.txt
+,Matsumoto Yamaga,Oita Trinita,0,0,X,,2019_jp1.txt
+,Vissel Kobe,Hokkaido Consadole Sapporo,2,3,2,1-1,2019_jp1.txt
+,Yokohama F. Marinos,Gamba Osaka,3,1,1,1-0,2019_jp1.txt
+19.30,Sagan Tosu,Vegalta Sendai,2,1,1,0-1,2019_jp1.txt
+18.00,Shimizu S-Pulse,Kashima Antlers,0,4,2,0-2,2019_jp1.txt
+,Cerezo Osaka,Kawasaki Frontale,2,1,1,1-1,2019_jp1.txt
+19.00,Shonan Bellmare,Urawa Red Diamonds,1,1,X,0-1,2019_jp1.txt
+19.30,Shimizu S-Pulse,Nagoya Grampus,3,2,1,1-1,2019_jp1.txt
+,Urawa Red Diamonds,Cerezo Osaka,1,2,2,0-0,2019_jp1.txt
+14.00,Hokkaido Consadole Sapporo,Vegalta Sendai,1,3,2,0-1,2019_jp1.txt
+18.00,Oita Trinita,Shonan Bellmare,2,1,1,2-0,2019_jp1.txt
+19.00,Gamba Osaka,Sagan Tosu,1,0,1,0-0,2019_jp1.txt
+,Kashima Antlers,FC Tokyo,2,0,1,1-0,2019_jp1.txt
+,Kawasaki Frontale,Júbilo Iwata,2,0,1,2-0,2019_jp1.txt
+,Vissel Kobe,Matsumoto Yamaga,2,1,1,1-0,2019_jp1.txt
+,Yokohama F. Marinos,Sanfrecce Hiroshima,3,0,1,0-0,2019_jp1.txt
+14.00,Cerezo Osaka,Gamba Osaka,3,1,1,2-0,2019_jp1.txt
+,Sagan Tosu,Urawa Red Diamonds,3,3,X,0-2,2019_jp1.txt
+15.00,Kashima Antlers,Hokkaido Consadole Sapporo,1,1,X,0-1,2019_jp1.txt
+17.00,Kawasaki Frontale,Vissel Kobe,1,2,2,0-1,2019_jp1.txt
+18.00,Oita Trinita,Júbilo Iwata,1,2,2,0-0,2019_jp1.txt
+19.00,Sanfrecce Hiroshima,Nagoya Grampus,1,1,X,1-1,2019_jp1.txt
+,Vegalta Sendai,Yokohama F. Marinos,1,1,X,0-1,2019_jp1.txt
+14.00,Matsumoto Yamaga,FC Tokyo,0,0,X,,2019_jp1.txt
+19.00,Shonan Bellmare,Shimizu S-Pulse,0,6,2,0-4,2019_jp1.txt
+19.00,Gamba Osaka,Hokkaido Consadole Sapporo,5,0,1,0-0,2019_jp1.txt
+14.00,Júbilo Iwata,Yokohama F. Marinos,0,2,2,0-1,2019_jp1.txt
+,Nagoya Grampus,Oita Trinita,1,1,X,0-0,2019_jp1.txt
+,Sagan Tosu,FC Tokyo,2,1,1,0-0,2019_jp1.txt
+,Vegalta Sendai,Matsumoto Yamaga,0,1,2,0-1,2019_jp1.txt
+16.00,Sanfrecce Hiroshima,Vissel Kobe,6,2,1,2-1,2019_jp1.txt
+15.00,Cerezo Osaka,Kashima Antlers,0,1,2,0-1,2019_jp1.txt
+17.00,Urawa Red Diamonds,Shimizu S-Pulse,2,1,1,1-1,2019_jp1.txt
+19.00,Shonan Bellmare,Kawasaki Frontale,0,5,2,0-4,2019_jp1.txt
+19.00,Hokkaido Consadole Sapporo,Cerezo Osaka,0,1,2,0-1,2019_jp1.txt
+,Matsumoto Yamaga,Kashima Antlers,1,1,X,1-0,2019_jp1.txt
+19.30,Urawa Red Diamonds,Oita Trinita,0,1,2,0-0,2019_jp1.txt
+13.00,Vissel Kobe,FC Tokyo,1,3,2,0-3,2019_jp1.txt
+14.00,Gamba Osaka,Kawasaki Frontale,2,2,X,1-0,2019_jp1.txt
+,Nagoya Grampus,Vegalta Sendai,0,2,2,0-1,2019_jp1.txt
+,Shimizu S-Pulse,Sanfrecce Hiroshima,1,2,2,1-0,2019_jp1.txt
+,Yokohama F. Marinos,Shonan Bellmare,3,1,1,1-0,2019_jp1.txt
+15.00,Júbilo Iwata,Sagan Tosu,2,2,X,1-1,2019_jp1.txt
+19.00,Kashima Antlers,Urawa Red Diamonds,1,0,1,0-0,2019_jp1.txt
+13.00,Vissel Kobe,Vegalta Sendai,2,0,1,1-0,2019_jp1.txt
+14.00,Hokkaido Consadole Sapporo,Nagoya Grampus,3,0,1,1-0,2019_jp1.txt
+,Sagan Tosu,Yokohama F. Marinos,1,2,2,0-2,2019_jp1.txt
+,Shimizu S-Pulse,Júbilo Iwata,1,2,2,0-1,2019_jp1.txt
+15.00,Cerezo Osaka,Matsumoto Yamaga,1,1,X,1-0,2019_jp1.txt
+15.05,Kawasaki Frontale,Sanfrecce Hiroshima,2,1,1,1-0,2019_jp1.txt
+,Oita Trinita,FC Tokyo,0,2,2,0-2,2019_jp1.txt
+16.00,Shonan Bellmare,Gamba Osaka,0,3,2,0-2,2019_jp1.txt
+19.00,Sanfrecce Hiroshima,Urawa Red Diamonds,1,1,X,0-0,2019_jp1.txt
+14.00,Júbilo Iwata,FC Tokyo,0,1,2,0-0,2019_jp1.txt
+,Kashima Antlers,Kawasaki Frontale,0,2,2,0-0,2019_jp1.txt
+,Nagoya Grampus,Vissel Kobe,3,0,1,2-0,2019_jp1.txt
+,Yokohama F. Marinos,Hokkaido Consadole Sapporo,4,2,1,3-1,2019_jp1.txt
+15.00,Cerezo Osaka,Shonan Bellmare,1,0,1,0-0,2019_jp1.txt
+13.05,Vegalta Sendai,Shimizu S-Pulse,2,0,1,1-0,2019_jp1.txt
+14.00,Oita Trinita,Gamba Osaka,2,1,1,1-1,2019_jp1.txt
+15.00,Sagan Tosu,Matsumoto Yamaga,1,0,1,1-0,2019_jp1.txt
+18.30,Urawa Red Diamonds,Kawasaki Frontale,0,2,2,0-1,2019_jp1.txt
+13.00,Vissel Kobe,Cerezo Osaka,1,0,1,0-0,2019_jp1.txt
+14.00,Hokkaido Consadole Sapporo,Júbilo Iwata,1,2,2,0-1,2019_jp1.txt
+,FC Tokyo,Shonan Bellmare,1,1,X,0-1,2019_jp1.txt
+,Matsumoto Yamaga,Yokohama F. Marinos,0,1,2,0-1,2019_jp1.txt
+,Nagoya Grampus,Sagan Tosu,0,0,X,,2019_jp1.txt
+,Sanfrecce Hiroshima,Kashima Antlers,0,0,X,,2019_jp1.txt
+,Shimizu S-Pulse,Oita Trinita,1,1,X,0-1,2019_jp1.txt
+15.00,Gamba Osaka,Vegalta Sendai,2,0,1,0-0,2019_jp1.txt
+14.00,Cerezo Osaka,Shimizu S-Pulse,2,1,1,0-1,2019_jp1.txt
+,FC Tokyo,Urawa Red Diamonds,1,1,X,0-1,2019_jp1.txt
+,Gamba Osaka,Matsumoto Yamaga,4,1,1,3-0,2019_jp1.txt
+,Júbilo Iwata,Nagoya Grampus,2,1,1,1-1,2019_jp1.txt
+,Kashima Antlers,Vissel Kobe,1,3,2,1-2,2019_jp1.txt
+,Kawasaki Frontale,Yokohama F. Marinos,1,4,2,0-1,2019_jp1.txt
+,Sagan Tosu,Hokkaido Consadole Sapporo,0,2,2,0-1,2019_jp1.txt
+,Shonan Bellmare,Sanfrecce Hiroshima,1,0,1,1-0,2019_jp1.txt
+,Vegalta Sendai,Oita Trinita,2,0,1,1-0,2019_jp1.txt
+14.00,Hokkaido Consadole Sapporo,Kawasaki Frontale,1,2,2,1-2,2019_jp1.txt
+,Matsumoto Yamaga,Shonan Bellmare,1,1,X,0-0,2019_jp1.txt
+,Nagoya Grampus,Kashima Antlers,0,1,2,0-1,2019_jp1.txt
+,Oita Trinita,Cerezo Osaka,0,2,2,0-1,2019_jp1.txt
+,Sanfrecce Hiroshima,Vegalta Sendai,1,0,1,0-0,2019_jp1.txt
+,Shimizu S-Pulse,Sagan Tosu,1,0,1,0-0,2019_jp1.txt
+,Urawa Red Diamonds,Gamba Osaka,2,3,2,0-1,2019_jp1.txt
+,Vissel Kobe,Júbilo Iwata,4,1,1,1-0,2019_jp1.txt
+,Yokohama F. Marinos,FC Tokyo,3,0,1,2-0,2019_jp1.txt
+19.00,Shonan Bellmare,Urawa Red Diamonds,2,3,2,1-2,2020_jp1.txt
+14.00,Vegalta Sendai,Nagoya Grampus,1,1,X,1-1,2020_jp1.txt
+15.00,Cerezo Osaka,Oita Trinita,1,0,1,1-0,2020_jp1.txt
+,Kawasaki Frontale,Sagan Tosu,0,0,X,,2020_jp1.txt
+,Kashiwa Reysol,Hokkaido Consadole Sapporo,4,2,1,2-0,2020_jp1.txt
+13.00,Shimizu S-Pulse,FC Tokyo,1,3,2,0-0,2020_jp1.txt
+14.00,Sanfrecce Hiroshima,Kashima Antlers,3,0,1,2-0,2020_jp1.txt
+,Yokohama F. Marinos,Gamba Osaka,1,2,2,0-2,2020_jp1.txt
+16.00,Vissel Kobe,Yokohama FC,1,1,X,0-1,2020_jp1.txt
+18.00,Yokohama FC,Hokkaido Consadole Sapporo,1,2,2,1-1,2020_jp1.txt
+,Shimizu S-Pulse,Nagoya Grampus,1,2,2,1-2,2020_jp1.txt
+,Gamba Osaka,Cerezo Osaka,1,2,2,0-1,2020_jp1.txt
+18.30,Oita Trinita,Sagan Tosu,2,0,1,0-0,2020_jp1.txt
+19.00,Urawa Red Diamonds,Yokohama F. Marinos,0,0,X,,2020_jp1.txt
+,Kashiwa Reysol,FC Tokyo,0,1,2,0-0,2020_jp1.txt
+,Kawasaki Frontale,Kashima Antlers,2,1,1,2-1,2020_jp1.txt
+,Shonan Bellmare,Vegalta Sendai,0,1,2,0-1,2020_jp1.txt
+19.30,Vissel Kobe,Sanfrecce Hiroshima,0,3,2,0-1,2020_jp1.txt
+18.00,Vegalta Sendai,Urawa Red Diamonds,1,2,2,0-1,2020_jp1.txt
+,Cerezo Osaka,Shimizu S-Pulse,2,0,1,0-0,2020_jp1.txt
+18.30,Kashiwa Reysol,Yokohama FC,1,3,2,1-1,2020_jp1.txt
+19.00,Kashima Antlers,Hokkaido Consadole Sapporo,0,2,2,0-1,2020_jp1.txt
+,Yokohama F. Marinos,Shonan Bellmare,3,2,1,0-0,2020_jp1.txt
+,Sanfrecce Hiroshima,Oita Trinita,1,2,2,1-0,2020_jp1.txt
+,Sagan Tosu,Vissel Kobe,0,1,2,0-0,2020_jp1.txt
+19.30,FC Tokyo,Kawasaki Frontale,0,4,2,0-4,2020_jp1.txt
+,Nagoya Grampus,Gamba Osaka,2,2,X,2-1,2020_jp1.txt
+19.00,Kawasaki Frontale,Kashiwa Reysol,3,1,1,2-0,2020_jp1.txt
+,Oita Trinita,Vissel Kobe,1,1,X,1-1,2020_jp1.txt
+18.00,Yokohama FC,Vegalta Sendai,1,1,X,1-0,2020_jp1.txt
+,Shimizu S-Pulse,Gamba Osaka,1,2,2,0-1,2020_jp1.txt
+,Sagan Tosu,Sanfrecce Hiroshima,0,0,X,,2020_jp1.txt
+19.00,Urawa Red Diamonds,Kashima Antlers,1,0,1,0-0,2020_jp1.txt
+,Shonan Bellmare,Hokkaido Consadole Sapporo,0,0,X,,2020_jp1.txt
+,Cerezo Osaka,Nagoya Grampus,0,2,2,0-1,2020_jp1.txt
+19.30,Yokohama F. Marinos,FC Tokyo,1,3,2,1-2,2020_jp1.txt
+18.00,Vegalta Sendai,Hokkaido Consadole Sapporo,2,2,X,1-0,2020_jp1.txt
+,Kashima Antlers,Yokohama F. Marinos,4,2,1,1-1,2020_jp1.txt
+,Yokohama FC,Kawasaki Frontale,1,5,2,0-1,2020_jp1.txt
+,Nagoya Grampus,Sagan Tosu,1,0,1,0-0,2020_jp1.txt
+19.00,Kashiwa Reysol,Shonan Bellmare,3,2,1,2-0,2020_jp1.txt
+,FC Tokyo,Urawa Red Diamonds,2,0,1,1-0,2020_jp1.txt
+,Gamba Osaka,Oita Trinita,2,1,1,1-1,2020_jp1.txt
+,Vissel Kobe,Shimizu S-Pulse,3,1,1,1-0,2020_jp1.txt
+,Sanfrecce Hiroshima,Cerezo Osaka,1,2,2,0-1,2020_jp1.txt
+19.00,Yokohama F. Marinos,Yokohama FC,4,0,1,1-0,2020_jp1.txt
+,Shonan Bellmare,Kashima Antlers,1,0,1,0-0,2020_jp1.txt
+,Gamba Osaka,Sanfrecce Hiroshima,1,0,1,1-0,2020_jp1.txt
+,Sagan Tosu,Shimizu S-Pulse,1,1,X,1-1,2020_jp1.txt
+19.05,Hokkaido Consadole Sapporo,FC Tokyo,1,1,X,1-0,2020_jp1.txt
+19.30,Vegalta Sendai,Kawasaki Frontale,2,3,2,2-0,2020_jp1.txt
+,Urawa Red Diamonds,Kashiwa Reysol,0,4,2,0-1,2020_jp1.txt
+,Cerezo Osaka,Vissel Kobe,0,0,X,,2020_jp1.txt
+,Oita Trinita,Nagoya Grampus,0,3,2,0-1,2020_jp1.txt
+13.05,Hokkaido Consadole Sapporo,Yokohama F. Marinos,3,1,1,2-1,2020_jp1.txt
+18.00,Yokohama FC,Urawa Red Diamonds,0,2,2,0-0,2020_jp1.txt
+,Shimizu S-Pulse,Oita Trinita,4,2,1,1-0,2020_jp1.txt
+18.30,Kashima Antlers,FC Tokyo,2,2,X,1-2,2020_jp1.txt
+19.00,Kashiwa Reysol,Vegalta Sendai,5,1,1,2-0,2020_jp1.txt
+,Kawasaki Frontale,Shonan Bellmare,3,1,1,0-0,2020_jp1.txt
+,Vissel Kobe,Gamba Osaka,0,2,2,0-0,2020_jp1.txt
+,Sagan Tosu,Cerezo Osaka,1,1,X,0-0,2020_jp1.txt
+19.00,Sanfrecce Hiroshima,Nagoya Grampus,2,0,1,1-0,2020_jp1.txt
+18.00,Vegalta Sendai,Yokohama F. Marinos,0,1,2,0-0,2020_jp1.txt
+,Yokohama FC,Sanfrecce Hiroshima,0,2,2,0-2,2020_jp1.txt
+,Nagoya Grampus,Kashiwa Reysol,0,1,2,0-0,2020_jp1.txt
+19.00,Urawa Red Diamonds,Shimizu S-Pulse,1,1,X,0-0,2020_jp1.txt
+,FC Tokyo,Sagan Tosu,2,3,2,1-2,2020_jp1.txt
+,Shonan Bellmare,Cerezo Osaka,0,1,2,0-0,2020_jp1.txt
+,Gamba Osaka,Kawasaki Frontale,0,1,2,0-0,2020_jp1.txt
+,Oita Trinita,Kashima Antlers,1,4,2,1-2,2020_jp1.txt
+14.00,Hokkaido Consadole Sapporo,Vissel Kobe,2,3,2,1-2,2020_jp1.txt
+18.00,Shimizu S-Pulse,Hokkaido Consadole Sapporo,3,1,1,1-0,2020_jp1.txt
+,Nagoya Grampus,Urawa Red Diamonds,6,2,1,5-0,2020_jp1.txt
+18.30,Kashima Antlers,Sagan Tosu,2,0,1,0-0,2020_jp1.txt
+19.00,Kawasaki Frontale,Oita Trinita,2,0,1,2-0,2020_jp1.txt
+,Yokohama F. Marinos,Kashiwa Reysol,1,1,X,0-0,2020_jp1.txt
+,Gamba Osaka,Yokohama FC,2,1,1,1-0,2020_jp1.txt
+,Vissel Kobe,Vegalta Sendai,1,2,2,0-1,2020_jp1.txt
+18.00,Sanfrecce Hiroshima,Shonan Bellmare,1,0,1,1-0,2020_jp1.txt
+19.00,Cerezo Osaka,FC Tokyo,0,0,X,,2020_jp1.txt
+14.00,Hokkaido Consadole Sapporo,Kawasaki Frontale,1,6,2,0-1,2020_jp1.txt
+18.00,Vegalta Sendai,Shimizu S-Pulse,0,0,X,,2020_jp1.txt
+,Yokohama FC,Shonan Bellmare,4,2,1,4-0,2020_jp1.txt
+18.30,Oita Trinita,Yokohama F. Marinos,1,0,1,0-0,2020_jp1.txt
+19.00,Urawa Red Diamonds,Sanfrecce Hiroshima,1,0,1,1-0,2020_jp1.txt
+,Kashiwa Reysol,Cerezo Osaka,1,3,2,0-1,2020_jp1.txt
+,FC Tokyo,Nagoya Grampus,1,0,1,1-0,2020_jp1.txt
+18.30,Kashima Antlers,Vissel Kobe,2,2,X,1-1,2020_jp1.txt
+19.00,Sagan Tosu,Gamba Osaka,1,2,2,0-2,2020_jp1.txt
+19.00,Kawasaki Frontale,Cerezo Osaka,5,2,1,2-1,2020_jp1.txt
+,Yokohama FC,Kashima Antlers,1,0,1,1-0,2020_jp1.txt
+,Shonan Bellmare,Nagoya Grampus,0,1,2,0-0,2020_jp1.txt
+,Shimizu S-Pulse,Yokohama F. Marinos,3,4,2,2-2,2020_jp1.txt
+,Gamba Osaka,Urawa Red Diamonds,1,3,2,0-2,2020_jp1.txt
+,Vissel Kobe,Kashiwa Reysol,2,3,2,1-0,2020_jp1.txt
+,Sanfrecce Hiroshima,FC Tokyo,3,3,X,2-3,2020_jp1.txt
+19.30,Hokkaido Consadole Sapporo,Oita Trinita,1,1,X,0-1,2020_jp1.txt
+13.00,Vegalta Sendai,Sagan Tosu,0,3,2,0-1,2020_jp1.txt
+18.00,Shimizu S-Pulse,Yokohama FC,2,3,2,1-2,2020_jp1.txt
+18.00,Nagoya Grampus,Kawasaki Frontale,1,0,1,1-0,2020_jp1.txt
+19.00,Kashima Antlers,Gamba Osaka,1,1,X,0-1,2020_jp1.txt
+,Urawa Red Diamonds,Vissel Kobe,1,2,2,1-1,2020_jp1.txt
+,FC Tokyo,Shonan Bellmare,3,0,1,1-0,2020_jp1.txt
+,Yokohama F. Marinos,Sanfrecce Hiroshima,3,1,1,1-0,2020_jp1.txt
+,Cerezo Osaka,Vegalta Sendai,2,1,1,1-1,2020_jp1.txt
+,Oita Trinita,Kashiwa Reysol,0,0,X,,2020_jp1.txt
+19.30,Sagan Tosu,Hokkaido Consadole Sapporo,0,2,2,0-0,2020_jp1.txt
+18.00,Vissel Kobe,Yokohama F. Marinos,3,3,X,1-2,2020_jp1.txt
+19.00,Hokkaido Consadole Sapporo,Nagoya Grampus,0,0,X,,2020_jp1.txt
+,Urawa Red Diamonds,Oita Trinita,2,1,1,2-1,2020_jp1.txt
+,Kashiwa Reysol,Kashima Antlers,2,3,2,0-0,2020_jp1.txt
+,Kawasaki Frontale,Shimizu S-Pulse,5,0,1,1-0,2020_jp1.txt
+,Gamba Osaka,FC Tokyo,1,3,2,1-1,2020_jp1.txt
+,Sanfrecce Hiroshima,Vegalta Sendai,1,1,X,1-0,2020_jp1.txt
+18.00,Yokohama FC,Cerezo Osaka,1,2,2,0-1,2020_jp1.txt
+19.30,Shonan Bellmare,Sagan Tosu,0,0,X,,2020_jp1.txt
+14.00,Hokkaido Consadole Sapporo,Sanfrecce Hiroshima,0,2,2,0-0,2020_jp1.txt
+18.00,Yokohama F. Marinos,Kawasaki Frontale,1,3,2,1-1,2020_jp1.txt
+,Shimizu S-Pulse,Kashiwa Reysol,1,2,2,0-2,2020_jp1.txt
+,Nagoya Grampus,Kashima Antlers,1,3,2,0-2,2020_jp1.txt
+18.30,Vegalta Sendai,Gamba Osaka,1,4,2,1-2,2020_jp1.txt
+,Shonan Bellmare,Vissel Kobe,1,1,X,0-0,2020_jp1.txt
+,Oita Trinita,FC Tokyo,0,1,2,0-1,2020_jp1.txt
+18.45,Sagan Tosu,Yokohama FC,3,0,1,1-0,2020_jp1.txt
+19.30,Cerezo Osaka,Urawa Red Diamonds,3,0,1,0-0,2020_jp1.txt
+18.30,Kawasaki Frontale,Vissel Kobe,3,2,1,1-1,2020_jp1.txt
+19.00,Kashima Antlers,Vegalta Sendai,2,1,1,1-0,2020_jp1.txt
+,Kashiwa Reysol,Gamba Osaka,3,0,1,2-0,2020_jp1.txt
+,FC Tokyo,Yokohama FC,2,1,1,1-1,2020_jp1.txt
+,Sanfrecce Hiroshima,Shimizu S-Pulse,4,1,1,1-0,2020_jp1.txt
+,Oita Trinita,Shonan Bellmare,2,2,X,0-2,2020_jp1.txt
+19.30,Urawa Red Diamonds,Sagan Tosu,2,2,X,0-1,2020_jp1.txt
+,Nagoya Grampus,Yokohama F. Marinos,2,1,1,1-1,2020_jp1.txt
+,Cerezo Osaka,Hokkaido Consadole Sapporo,2,0,1,1-0,2020_jp1.txt
+18.00,Shimizu S-Pulse,Kashima Antlers,1,2,2,0-2,2020_jp1.txt
+19.00,Vissel Kobe,FC Tokyo,2,2,X,1-0,2020_jp1.txt
+13.05,Hokkaido Consadole Sapporo,Urawa Red Diamonds,3,4,2,2-2,2020_jp1.txt
+18.00,Vegalta Sendai,Oita Trinita,0,3,2,0-1,2020_jp1.txt
+,Yokohama FC,Nagoya Grampus,3,2,1,2-1,2020_jp1.txt
+18.30,Kawasaki Frontale,Sanfrecce Hiroshima,5,1,1,1-0,2020_jp1.txt
+18.45,Sagan Tosu,Kashiwa Reysol,2,1,1,1-1,2020_jp1.txt
+19.00,Yokohama F. Marinos,Cerezo Osaka,1,2,2,0-0,2020_jp1.txt
+,Gamba Osaka,Shonan Bellmare,0,1,2,0-0,2020_jp1.txt
+14.00,Hokkaido Consadole Sapporo,Gamba Osaka,0,1,2,0-0,2020_jp1.txt
+16.00,Sagan Tosu,Yokohama F. Marinos,1,3,2,1-3,2020_jp1.txt
+17.00,Nagoya Grampus,Vissel Kobe,2,1,1,1-1,2020_jp1.txt
+18.00,Cerezo Osaka,Kashima Antlers,1,2,2,1-1,2020_jp1.txt
+18.30,Shonan Bellmare,Shimizu S-Pulse,0,3,2,0-0,2020_jp1.txt
+19.00,Kashiwa Reysol,Sanfrecce Hiroshima,1,1,X,1-1,2020_jp1.txt
+18.00,Oita Trinita,Yokohama FC,1,0,1,1-0,2020_jp1.txt
+19.00,Urawa Red Diamonds,Kawasaki Frontale,0,3,2,0-1,2020_jp1.txt
+,FC Tokyo,Vegalta Sendai,1,0,1,1-0,2020_jp1.txt
+18.30,Hokkaido Consadole Sapporo,Kashiwa Reysol,0,1,2,0-0,2020_jp1.txt
+19.00,Kashima Antlers,Shonan Bellmare,1,0,1,0-0,2020_jp1.txt
+,FC Tokyo,Cerezo Osaka,2,0,1,0-0,2020_jp1.txt
+,Kawasaki Frontale,Yokohama FC,3,2,1,1-0,2020_jp1.txt
+,Gamba Osaka,Nagoya Grampus,2,1,1,0-1,2020_jp1.txt
+,Vissel Kobe,Sagan Tosu,4,3,1,2-1,2020_jp1.txt
+,Oita Trinita,Sanfrecce Hiroshima,0,2,2,0-0,2020_jp1.txt
+19.30,Yokohama F. Marinos,Vegalta Sendai,3,1,1,1-1,2020_jp1.txt
+,Shimizu S-Pulse,Urawa Red Diamonds,1,2,2,0-1,2020_jp1.txt
+14.00,Nagoya Grampus,Shimizu S-Pulse,3,1,1,2-0,2020_jp1.txt
+18.00,Urawa Red Diamonds,Yokohama FC,0,2,2,0-2,2020_jp1.txt
+19.00,Vissel Kobe,Hokkaido Consadole Sapporo,4,0,1,2-0,2020_jp1.txt
+13.00,Vegalta Sendai,Cerezo Osaka,2,3,2,0-1,2020_jp1.txt
+16.00,Sagan Tosu,FC Tokyo,3,0,1,1-0,2020_jp1.txt
+17.00,Kashima Antlers,Oita Trinita,0,2,2,0-0,2020_jp1.txt
+18.00,Sanfrecce Hiroshima,Gamba Osaka,1,2,2,0-2,2020_jp1.txt
+19.00,Kashiwa Reysol,Yokohama F. Marinos,1,3,2,1-0,2020_jp1.txt
+,Shonan Bellmare,Kawasaki Frontale,0,1,2,0-1,2020_jp1.txt
+14.00,Hokkaido Consadole Sapporo,Vegalta Sendai,3,3,X,1-0,2020_jp1.txt
+15.00,Cerezo Osaka,Kawasaki Frontale,1,3,2,0-1,2020_jp1.txt
+16.00,Yokohama FC,Kashiwa Reysol,0,3,2,0-1,2020_jp1.txt
+17.00,Sanfrecce Hiroshima,Sagan Tosu,3,0,1,2-0,2020_jp1.txt
+19.00,Gamba Osaka,Kashima Antlers,2,0,1,0-0,2020_jp1.txt
+,Oita Trinita,Shimizu S-Pulse,2,1,1,1-1,2020_jp1.txt
+15.00,Shonan Bellmare,FC Tokyo,0,1,2,0-0,2020_jp1.txt
+16.00,Yokohama F. Marinos,Vissel Kobe,2,3,2,1-2,2020_jp1.txt
+17.00,Urawa Red Diamonds,Nagoya Grampus,0,1,2,0-0,2020_jp1.txt
+14.00,Hokkaido Consadole Sapporo,Shonan Bellmare,2,1,1,1-1,2020_jp1.txt
+,FC Tokyo,Gamba Osaka,0,1,2,0-1,2020_jp1.txt
+,Shimizu S-Pulse,Sanfrecce Hiroshima,2,3,2,0-1,2020_jp1.txt
+,Nagoya Grampus,Cerezo Osaka,1,0,1,0-0,2020_jp1.txt
+15.00,Kashiwa Reysol,Vissel Kobe,4,3,1,3-0,2020_jp1.txt
+16.00,Kashima Antlers,Yokohama FC,3,2,1,0-2,2020_jp1.txt
+,Yokohama F. Marinos,Oita Trinita,4,0,1,0-0,2020_jp1.txt
+18.00,Kawasaki Frontale,Vegalta Sendai,1,0,1,1-0,2020_jp1.txt
+,Sagan Tosu,Urawa Red Diamonds,0,1,2,0-0,2020_jp1.txt
+18.45,Sagan Tosu,Kashima Antlers,0,2,2,0-1,2020_jp1.txt
+19.00,Vegalta Sendai,Yokohama FC,0,0,X,,2020_jp1.txt
+,Kashiwa Reysol,Urawa Red Diamonds,1,1,X,1-0,2020_jp1.txt
+,FC Tokyo,Shimizu S-Pulse,3,1,1,1-0,2020_jp1.txt
+,Gamba Osaka,Yokohama F. Marinos,1,1,X,1-1,2020_jp1.txt
+,Vissel Kobe,Oita Trinita,1,1,X,1-0,2020_jp1.txt
+,Sanfrecce Hiroshima,Kawasaki Frontale,0,2,2,0-0,2020_jp1.txt
+19.30,Nagoya Grampus,Hokkaido Consadole Sapporo,3,0,1,2-0,2020_jp1.txt
+,Cerezo Osaka,Shonan Bellmare,1,0,1,0-0,2020_jp1.txt
+15.00,Cerezo Osaka,Yokohama F. Marinos,4,1,1,1-0,2020_jp1.txt
+13.00,Hokkaido Consadole Sapporo,Kashima Antlers,1,0,1,1-0,2020_jp1.txt
+14.00,Yokohama FC,FC Tokyo,1,0,1,0-0,2020_jp1.txt
+,Shimizu S-Pulse,Sagan Tosu,1,1,X,0-0,2020_jp1.txt
+,Oita Trinita,Gamba Osaka,0,1,2,0-0,2020_jp1.txt
+15.00,Shonan Bellmare,Kashiwa Reysol,3,2,1,1-1,2020_jp1.txt
+16.00,Urawa Red Diamonds,Vegalta Sendai,6,0,1,3-0,2020_jp1.txt
+17.00,Sanfrecce Hiroshima,Vissel Kobe,2,1,1,2-0,2020_jp1.txt
+19.00,Kawasaki Frontale,Nagoya Grampus,3,0,1,1-0,2020_jp1.txt
+19.00,Vissel Kobe,Kawasaki Frontale,2,2,X,2-1,2020_jp1.txt
+19.00,FC Tokyo,Oita Trinita,2,3,2,0-0,2020_jp1.txt
+19.30,Yokohama F. Marinos,Shimizu S-Pulse,3,0,1,3-0,2020_jp1.txt
+14.00,Hokkaido Consadole Sapporo,Yokohama FC,3,0,1,1-0,2020_jp1.txt
+,Kashima Antlers,Sanfrecce Hiroshima,1,0,1,0-0,2020_jp1.txt
+,Nagoya Grampus,Vegalta Sendai,1,0,1,0-0,2020_jp1.txt
+16.00,Gamba Osaka,Kashiwa Reysol,2,1,1,0-0,2020_jp1.txt
+17.00,Urawa Red Diamonds,Cerezo Osaka,3,1,1,2-1,2020_jp1.txt
+14.00,Sagan Tosu,Shonan Bellmare,2,2,X,1-2,2020_jp1.txt
+19.00,Vissel Kobe,Cerezo Osaka,0,1,2,0-0,2020_jp1.txt
+19.00,Yokohama F. Marinos,Sagan Tosu,1,1,X,0-0,2020_jp1.txt
+13.00,Vegalta Sendai,Sanfrecce Hiroshima,0,0,X,,2020_jp1.txt
+14.00,Oita Trinita,Urawa Red Diamonds,0,0,X,,2020_jp1.txt
+15.00,Shonan Bellmare,Yokohama FC,1,0,1,0-0,2020_jp1.txt
+16.00,Kashiwa Reysol,Shimizu S-Pulse,0,0,X,,2020_jp1.txt
+17.00,Kashima Antlers,Nagoya Grampus,0,2,2,0-1,2020_jp1.txt
+18.00,Kawasaki Frontale,FC Tokyo,2,1,1,1-0,2020_jp1.txt
+19.00,Gamba Osaka,Hokkaido Consadole Sapporo,2,1,1,1-1,2020_jp1.txt
+19.00,FC Tokyo,Kashima Antlers,1,2,2,1-0,2020_jp1.txt
+13.00,Sagan Tosu,Nagoya Grampus,0,0,X,,2020_jp1.txt
+14.00,Kawasaki Frontale,Hokkaido Consadole Sapporo,0,2,2,0-0,2020_jp1.txt
+,Cerezo Osaka,Gamba Osaka,1,1,X,1-1,2020_jp1.txt
+15.00,Shimizu S-Pulse,Vissel Kobe,3,1,1,0-1,2020_jp1.txt
+16.00,Yokohama FC,Oita Trinita,2,3,2,2-1,2020_jp1.txt
+17.00,Sanfrecce Hiroshima,Urawa Red Diamonds,1,1,X,0-1,2020_jp1.txt
+19.30,Shonan Bellmare,Yokohama F. Marinos,1,0,1,0-0,2020_jp1.txt
+19.00,Vegalta Sendai,Kashiwa Reysol,0,2,2,0-1,2020_jp1.txt
+14.00,Hokkaido Consadole Sapporo,Sagan Tosu,1,1,X,0-0,2020_jp1.txt
+,Shimizu S-Pulse,Cerezo Osaka,3,1,1,0-0,2020_jp1.txt
+,Sanfrecce Hiroshima,Yokohama FC,1,1,X,1-1,2020_jp1.txt
+15.00,Gamba Osaka,Vegalta Sendai,0,4,2,0-2,2020_jp1.txt
+16.00,Yokohama F. Marinos,Urawa Red Diamonds,6,2,1,4-1,2020_jp1.txt
+17.00,Kashima Antlers,Kawasaki Frontale,1,1,X,0-1,2020_jp1.txt
+14.00,Vissel Kobe,Shonan Bellmare,0,2,2,0-0,2020_jp1.txt
+19.00,Nagoya Grampus,FC Tokyo,1,0,1,0-0,2020_jp1.txt
+19.00,Kashiwa Reysol,Oita Trinita,1,1,X,0-0,2020_jp1.txt
+15.00,FC Tokyo,Yokohama F. Marinos,0,4,2,0-0,2020_jp1.txt
+14.00,Yokohama FC,Vissel Kobe,2,1,1,1-1,2020_jp1.txt
+14.00,Hokkaido Consadole Sapporo,Shimizu S-Pulse,5,1,1,3-1,2020_jp1.txt
+,Oita Trinita,Kawasaki Frontale,1,0,1,1-0,2020_jp1.txt
+15.00,Vegalta Sendai,Kashima Antlers,1,3,2,0-0,2020_jp1.txt
+,Kashiwa Reysol,Sagan Tosu,1,2,2,0-0,2020_jp1.txt
+16.00,Cerezo Osaka,Sanfrecce Hiroshima,0,1,2,0-1,2020_jp1.txt
+17.00,Nagoya Grampus,Shonan Bellmare,3,1,1,1-1,2020_jp1.txt
+16.00,Urawa Red Diamonds,Gamba Osaka,1,2,2,0-0,2020_jp1.txt
+19.30,Yokohama F. Marinos,Hokkaido Consadole Sapporo,4,1,1,2-0,2020_jp1.txt
+19.00,Vissel Kobe,Nagoya Grampus,1,0,1,0-0,2020_jp1.txt
+19.30,Urawa Red Diamonds,FC Tokyo,0,1,2,0-1,2020_jp1.txt
+18.30,Kawasaki Frontale,Gamba Osaka,5,0,1,2-0,2020_jp1.txt
+19.00,Kashima Antlers,Kashiwa Reysol,1,4,2,0-1,2020_jp1.txt
+,Yokohama FC,Shimizu S-Pulse,1,3,2,0-3,2020_jp1.txt
+,Oita Trinita,Cerezo Osaka,0,1,2,0-1,2020_jp1.txt
+19.30,Shonan Bellmare,Sanfrecce Hiroshima,1,1,X,1-0,2020_jp1.txt
+,Sagan Tosu,Vegalta Sendai,0,1,2,0-0,2020_jp1.txt
+19.00,Vegalta Sendai,Vissel Kobe,2,3,2,0-0,2020_jp1.txt
+,FC Tokyo,Kashiwa Reysol,1,3,2,0-1,2020_jp1.txt
+19.00,Kawasaki Frontale,Yokohama F. Marinos,3,1,1,0-0,2020_jp1.txt
+14.00,Nagoya Grampus,Oita Trinita,0,0,X,,2020_jp1.txt
+,Sanfrecce Hiroshima,Hokkaido Consadole Sapporo,2,2,X,0-1,2020_jp1.txt
+14.00,Shimizu S-Pulse,Shonan Bellmare,1,1,X,0-0,2020_jp1.txt
+15.00,Kashima Antlers,Urawa Red Diamonds,4,0,1,1-0,2020_jp1.txt
+,Cerezo Osaka,Yokohama FC,1,0,1,0-0,2020_jp1.txt
+17.00,Gamba Osaka,Sagan Tosu,1,1,X,0-1,2020_jp1.txt
+13.00,Yokohama F. Marinos,Kashima Antlers,2,3,2,2-1,2020_jp1.txt
+18.00,Vissel Kobe,Urawa Red Diamonds,0,1,2,0-0,2020_jp1.txt
+14.00,Hokkaido Consadole Sapporo,Cerezo Osaka,1,3,2,0-1,2020_jp1.txt
+,Kashiwa Reysol,Nagoya Grampus,0,1,2,0-0,2020_jp1.txt
+,Shimizu S-Pulse,Kawasaki Frontale,2,2,X,2-1,2020_jp1.txt
+16.00,Yokohama FC,Sagan Tosu,1,1,X,1-0,2020_jp1.txt
+14.00,Oita Trinita,Vegalta Sendai,0,2,2,0-1,2020_jp1.txt
+15.00,Shonan Bellmare,Gamba Osaka,1,2,2,1-1,2020_jp1.txt
+14.00,FC Tokyo,Sanfrecce Hiroshima,1,0,1,0-0,2020_jp1.txt
+19.00,Sanfrecce Hiroshima,Yokohama F. Marinos,3,1,1,1-0,2020_jp1.txt
+19.00,Gamba Osaka,Vissel Kobe,1,0,1,1-0,2020_jp1.txt
+19.00,Vegalta Sendai,FC Tokyo,2,2,X,0-1,2020_jp1.txt
+14.00,Nagoya Grampus,Yokohama FC,0,0,X,,2020_jp1.txt
+,Cerezo Osaka,Kashiwa Reysol,0,0,X,,2020_jp1.txt
+,Sagan Tosu,Kawasaki Frontale,1,1,X,0-0,2020_jp1.txt
+15.00,Oita Trinita,Hokkaido Consadole Sapporo,1,1,X,1-0,2020_jp1.txt
+16.00,Kashima Antlers,Shimizu S-Pulse,2,0,1,2-0,2020_jp1.txt
+17.00,Urawa Red Diamonds,Shonan Bellmare,0,0,X,,2020_jp1.txt
+18.00,Vissel Kobe,Kashima Antlers,1,3,2,0-2,2020_jp1.txt
+19.30,Yokohama F. Marinos,Nagoya Grampus,2,1,1,1-0,2020_jp1.txt
+19.00,FC Tokyo,Hokkaido Consadole Sapporo,1,0,1,1-0,2020_jp1.txt
+19.00,Kawasaki Frontale,Urawa Red Diamonds,3,1,1,0-1,2020_jp1.txt
+,Yokohama FC,Gamba Osaka,0,2,2,0-1,2020_jp1.txt
+,Shonan Bellmare,Oita Trinita,1,2,2,1-1,2020_jp1.txt
+,Shimizu S-Pulse,Vegalta Sendai,2,3,2,1-2,2020_jp1.txt
+,Cerezo Osaka,Sagan Tosu,1,2,2,1-1,2020_jp1.txt
+,Sanfrecce Hiroshima,Kashiwa Reysol,0,1,2,0-1,2020_jp1.txt
+14.00,Vegalta Sendai,Shonan Bellmare,0,0,X,,2020_jp1.txt
+,Kashima Antlers,Cerezo Osaka,1,1,X,0-0,2020_jp1.txt
+,Urawa Red Diamonds,Hokkaido Consadole Sapporo,0,2,2,0-0,2020_jp1.txt
+,Kashiwa Reysol,Kawasaki Frontale,2,3,2,1-0,2020_jp1.txt
+,FC Tokyo,Vissel Kobe,1,0,1,0-0,2020_jp1.txt
+,Yokohama FC,Yokohama F. Marinos,3,1,1,2-1,2020_jp1.txt
+,Nagoya Grampus,Sanfrecce Hiroshima,1,0,1,0-0,2020_jp1.txt
+,Gamba Osaka,Shimizu S-Pulse,0,2,2,0-0,2020_jp1.txt
+,Sagan Tosu,Oita Trinita,2,2,X,0-1,2020_jp1.txt
+18.00,Kawasaki Frontale,Yokohama F. Marinos,2,0,1,2-0,2021_jp1.txt
+14.00,Hokkaido Consadole Sapporo,Yokohama FC,5,1,1,4-1,2021_jp1.txt
+,Urawa Red Diamonds,FC Tokyo,1,1,X,0-0,2021_jp1.txt
+,Sanfrecce Hiroshima,Vegalta Sendai,1,1,X,1-0,2021_jp1.txt
+,Oita Trinita,Tokushima Vortis,1,1,X,0-1,2021_jp1.txt
+15.00,Kashima Antlers,Shimizu S-Pulse,1,3,2,0-0,2021_jp1.txt
+,Shonan Bellmare,Sagan Tosu,0,1,2,0-0,2021_jp1.txt
+16.00,Cerezo Osaka,Kashiwa Reysol,2,0,1,1-0,2021_jp1.txt
+17.00,Vissel Kobe,Gamba Osaka,1,0,1,0-0,2021_jp1.txt
+13.00,Avispa Fukuoka,Nagoya Grampus,1,2,2,0-1,2021_jp1.txt
+14.00,FC Tokyo,Cerezo Osaka,3,2,1,0-1,2021_jp1.txt
+,Shimizu S-Pulse,Avispa Fukuoka,2,2,X,1-0,2021_jp1.txt
+,Tokushima Vortis,Vissel Kobe,1,1,X,0-0,2021_jp1.txt
+,Vegalta Sendai,Kawasaki Frontale,1,5,2,0-4,2021_jp1.txt
+15.00,Sagan Tosu,Urawa Red Diamonds,2,0,1,0-0,2021_jp1.txt
+,Yokohama FC,Oita Trinita,1,2,2,1-2,2021_jp1.txt
+16.00,Kashiwa Reysol,Shonan Bellmare,2,1,1,1-1,2021_jp1.txt
+,Nagoya Grampus,Hokkaido Consadole Sapporo,1,0,1,0-0,2021_jp1.txt
+13.00,Yokohama F. Marinos,Sanfrecce Hiroshima,3,3,X,1-3,2021_jp1.txt
+19.00,Gamba Osaka,Kashima Antlers,0,1,2,0-0,2021_jp1.txt
+18.00,Avispa Fukuoka,Yokohama F. Marinos,1,3,2,0-1,2021_jp1.txt
+,FC Tokyo,Vissel Kobe,2,3,2,0-1,2021_jp1.txt
+,Kashiwa Reysol,Nagoya Grampus,0,1,2,0-0,2021_jp1.txt
+,Urawa Red Diamonds,Yokohama FC,2,0,1,2-0,2021_jp1.txt
+19.00,Cerezo Osaka,Shimizu S-Pulse,2,1,1,1-1,2021_jp1.txt
+,Kashima Antlers,Shonan Bellmare,3,1,1,1-0,2021_jp1.txt
+,Kawasaki Frontale,Tokushima Vortis,2,0,1,2-0,2021_jp1.txt
+,Sagan Tosu,Vegalta Sendai,5,0,1,3-0,2021_jp1.txt
+,Sanfrecce Hiroshima,Hokkaido Consadole Sapporo,2,1,1,2-1,2021_jp1.txt
+19.00,Gamba Osaka,Oita Trinita,2,1,1,0-0,2021_jp1.txt
+14.00,Tokushima Vortis,Avispa Fukuoka,1,2,2,1-0,2021_jp1.txt
+16.00,Yokohama FC,Cerezo Osaka,1,4,2,0-1,2021_jp1.txt
+,Shonan Bellmare,Vegalta Sendai,3,1,1,1-0,2021_jp1.txt
+,Kashima Antlers,Sanfrecce Hiroshima,1,1,X,0-1,2021_jp1.txt
+17.30,Kawasaki Frontale,Kashiwa Reysol,1,0,1,0-0,2021_jp1.txt
+18.00,Vissel Kobe,Nagoya Grampus,0,1,2,0-1,2021_jp1.txt
+13.00,Yokohama F. Marinos,Urawa Red Diamonds,3,0,1,2-0,2021_jp1.txt
+14.00,Shimizu S-Pulse,Sagan Tosu,0,0,X,,2021_jp1.txt
+15.00,Oita Trinita,FC Tokyo,1,1,X,0-1,2021_jp1.txt
+18.00,Hokkaido Consadole Sapporo,Gamba Osaka,0,2,2,0-1,2021_jp1.txt
+18.00,Avispa Fukuoka,Kashima Antlers,1,0,1,0-0,2021_jp1.txt
+,FC Tokyo,Shonan Bellmare,3,2,1,2-1,2021_jp1.txt
+,Urawa Red Diamonds,Hokkaido Consadole Sapporo,0,0,X,,2021_jp1.txt
+19.00,Cerezo Osaka,Oita Trinita,1,0,1,0-0,2021_jp1.txt
+,Sagan Tosu,Kashiwa Reysol,2,0,1,1-0,2021_jp1.txt
+,Sanfrecce Hiroshima,Shimizu S-Pulse,1,0,1,0-0,2021_jp1.txt
+,Vissel Kobe,Kawasaki Frontale,1,1,X,0-0,2021_jp1.txt
+,Yokohama F. Marinos,Tokushima Vortis,1,0,1,1-0,2021_jp1.txt
+,Nagoya Grampus,Yokohama FC,3,0,1,0-0,2021_jp1.txt
+19.00,Vegalta Sendai,Gamba Osaka,0,1,2,0-1,2021_jp1.txt
+14.00,Hokkaido Consadole Sapporo,Vissel Kobe,3,4,2,2-0,2021_jp1.txt
+13.00,FC Tokyo,Vegalta Sendai,2,1,1,2-1,2021_jp1.txt
+14.00,Oita Trinita,Sanfrecce Hiroshima,1,3,2,0-0,2021_jp1.txt
+,Sagan Tosu,Avispa Fukuoka,0,0,X,,2021_jp1.txt
+,Tokushima Vortis,Yokohama FC,2,1,1,1-0,2021_jp1.txt
+15.00,Shonan Bellmare,Cerezo Osaka,0,0,X,,2021_jp1.txt
+,Urawa Red Diamonds,Kawasaki Frontale,0,5,2,0-1,2021_jp1.txt
+16.00,Kashima Antlers,Nagoya Grampus,0,1,2,0-0,2021_jp1.txt
+,Kashiwa Reysol,Shimizu S-Pulse,1,2,2,0-2,2021_jp1.txt
+19.00,Gamba Osaka,Yokohama F. Marinos,2,3,2,0-1,2021_jp1.txt
+19.00,Cerezo Osaka,Sagan Tosu,1,0,1,0-0,2021_jp1.txt
+13.00,Yokohama F. Marinos,Shonan Bellmare,1,1,X,0-0,2021_jp1.txt
+14.00,Avispa Fukuoka,Hokkaido Consadole Sapporo,1,2,2,0-1,2021_jp1.txt
+,Nagoya Grampus,FC Tokyo,0,0,X,,2021_jp1.txt
+,Sanfrecce Hiroshima,Gamba Osaka,0,0,X,,2021_jp1.txt
+,Vegalta Sendai,Vissel Kobe,0,2,2,0-2,2021_jp1.txt
+15.00,Urawa Red Diamonds,Kashima Antlers,2,1,1,1-1,2021_jp1.txt
+17.00,Yokohama FC,Kashiwa Reysol,1,1,X,1-0,2021_jp1.txt
+19.00,Kawasaki Frontale,Oita Trinita,2,0,1,1-0,2021_jp1.txt
+14.00,Shimizu S-Pulse,Tokushima Vortis,0,3,2,0-1,2021_jp1.txt
+19.00,Yokohama F. Marinos,Cerezo Osaka,1,0,1,0-0,2021_jp1.txt
+19.00,FC Tokyo,Hokkaido Consadole Sapporo,2,1,1,0-0,2021_jp1.txt
+,Gamba Osaka,Avispa Fukuoka,0,0,X,,2021_jp1.txt
+,Kashima Antlers,Kashiwa Reysol,2,1,1,0-0,2021_jp1.txt
+,Kawasaki Frontale,Sagan Tosu,1,0,1,0-0,2021_jp1.txt
+,Shimizu S-Pulse,Urawa Red Diamonds,0,2,2,0-1,2021_jp1.txt
+,Shonan Bellmare,Nagoya Grampus,0,0,X,,2021_jp1.txt
+,Tokushima Vortis,Vegalta Sendai,1,0,1,1-0,2021_jp1.txt
+,Vissel Kobe,Oita Trinita,1,0,1,1-0,2021_jp1.txt
+,Yokohama FC,Sanfrecce Hiroshima,0,3,2,0-3,2021_jp1.txt
+14.00,Sanfrecce Hiroshima,Shonan Bellmare,0,1,2,0-0,2021_jp1.txt
+15.00,Cerezo Osaka,Avispa Fukuoka,2,2,X,0-0,2021_jp1.txt
+13.05,Hokkaido Consadole Sapporo,Kashima Antlers,2,2,X,1-2,2021_jp1.txt
+14.00,FC Tokyo,Kawasaki Frontale,2,4,2,0-2,2021_jp1.txt
+,Vegalta Sendai,Yokohama F. Marinos,0,0,X,,2021_jp1.txt
+15.00,Oita Trinita,Nagoya Grampus,0,3,2,0-2,2021_jp1.txt
+,Sagan Tosu,Yokohama FC,3,0,1,1-0,2021_jp1.txt
+16.00,Urawa Red Diamonds,Tokushima Vortis,1,0,1,0-0,2021_jp1.txt
+17.00,Kashiwa Reysol,Gamba Osaka,1,0,1,0-0,2021_jp1.txt
+,Vissel Kobe,Shimizu S-Pulse,1,1,X,0-0,2021_jp1.txt
+19.00,Hokkaido Consadole Sapporo,Yokohama F. Marinos,1,3,2,0-0,2021_jp1.txt
+14.00,Avispa Fukuoka,FC Tokyo,1,0,1,0-0,2021_jp1.txt
+,Oita Trinita,Kashiwa Reysol,0,1,2,0-0,2021_jp1.txt
+,Tokushima Vortis,Kashima Antlers,0,1,2,0-1,2021_jp1.txt
+,Yokohama FC,Vegalta Sendai,2,2,X,1-0,2021_jp1.txt
+15.00,Shonan Bellmare,Vissel Kobe,0,0,X,,2021_jp1.txt
+14.00,Kawasaki Frontale,Sanfrecce Hiroshima,1,1,X,1-0,2021_jp1.txt
+15.00,Cerezo Osaka,Urawa Red Diamonds,1,0,1,0-0,2021_jp1.txt
+,Nagoya Grampus,Sagan Tosu,1,2,2,0-2,2021_jp1.txt
+17.00,Gamba Osaka,Shimizu S-Pulse,0,0,X,,2021_jp1.txt
+18.00,Kawasaki Frontale,Cerezo Osaka,3,2,1,1-2,2021_jp1.txt
+19.30,Nagoya Grampus,Gamba Osaka,2,0,1,1-0,2021_jp1.txt
+13.00,Hokkaido Consadole Sapporo,Vegalta Sendai,2,1,1,0-1,2021_jp1.txt
+14.00,FC Tokyo,Sagan Tosu,1,2,2,0-2,2021_jp1.txt
+,Sanfrecce Hiroshima,Avispa Fukuoka,1,2,2,1-1,2021_jp1.txt
+,Yokohama F. Marinos,Yokohama FC,5,0,1,2-0,2021_jp1.txt
+16.00,Kashiwa Reysol,Tokushima Vortis,5,1,1,3-0,2021_jp1.txt
+17.00,Kashima Antlers,Vissel Kobe,1,1,X,0-1,2021_jp1.txt
+14.00,Shimizu S-Pulse,Shonan Bellmare,1,1,X,0-0,2021_jp1.txt
+16.00,Urawa Red Diamonds,Oita Trinita,3,2,1,1-2,2021_jp1.txt
+14.00,Avispa Fukuoka,Urawa Red Diamonds,2,0,1,1-0,2021_jp1.txt
+,FC Tokyo,Yokohama F. Marinos,0,3,2,0-1,2021_jp1.txt
+,Vegalta Sendai,Kashiwa Reysol,1,0,1,0-0,2021_jp1.txt
+15.00,Vissel Kobe,Sanfrecce Hiroshima,3,0,1,3-0,2021_jp1.txt
+16.00,Sagan Tosu,Tokushima Vortis,2,0,1,0-0,2021_jp1.txt
+17.30,Yokohama FC,Kashima Antlers,0,3,2,0-2,2021_jp1.txt
+14.00,Oita Trinita,Shimizu S-Pulse,1,0,1,1-0,2021_jp1.txt
+15.00,Shonan Bellmare,Hokkaido Consadole Sapporo,0,0,X,,2021_jp1.txt
+,Cerezo Osaka,Gamba Osaka,1,1,X,0-0,2021_jp1.txt
+15.00,Kawasaki Frontale,Nagoya Grampus,3,2,1,1-0,2021_jp1.txt
+14.00,Sagan Tosu,Sanfrecce Hiroshima,0,0,X,,2021_jp1.txt
+15.00,Nagoya Grampus,Cerezo Osaka,1,0,1,0-0,2021_jp1.txt
+18.00,Gamba Osaka,Kawasaki Frontale,0,2,2,0-1,2021_jp1.txt
+13.00,Yokohama F. Marinos,Vissel Kobe,2,0,1,1-0,2021_jp1.txt
+14.00,Avispa Fukuoka,Kashiwa Reysol,1,0,1,0-0,2021_jp1.txt
+,Shimizu S-Pulse,Yokohama FC,1,1,X,0-0,2021_jp1.txt
+15.00,Shonan Bellmare,Oita Trinita,2,0,1,1-0,2021_jp1.txt
+,Tokushima Vortis,Hokkaido Consadole Sapporo,1,2,2,1-0,2021_jp1.txt
+16.00,Urawa Red Diamonds,Vegalta Sendai,2,0,1,0-0,2021_jp1.txt
+17.00,Kashima Antlers,FC Tokyo,3,0,1,2-0,2021_jp1.txt
+14.00,Shimizu S-Pulse,Nagoya Grampus,0,3,2,0-1,2021_jp1.txt
+,Vegalta Sendai,Avispa Fukuoka,0,1,2,0-0,2021_jp1.txt
+15.00,Kashima Antlers,Yokohama F. Marinos,5,3,1,1-1,2021_jp1.txt
+16.00,Kashiwa Reysol,FC Tokyo,0,4,2,0-3,2021_jp1.txt
+,Oita Trinita,Sagan Tosu,1,1,X,0-1,2021_jp1.txt
+,Sanfrecce Hiroshima,Tokushima Vortis,0,1,2,0-0,2021_jp1.txt
+,Vissel Kobe,Cerezo Osaka,1,1,X,0-0,2021_jp1.txt
+17.00,Yokohama FC,Shonan Bellmare,2,0,1,1-0,2021_jp1.txt
+15.00,Kawasaki Frontale,Hokkaido Consadole Sapporo,2,0,1,0-0,2021_jp1.txt
+17.00,Gamba Osaka,Urawa Red Diamonds,0,3,2,0-3,2021_jp1.txt
+14.00,Hokkaido Consadole Sapporo,Shimizu S-Pulse,2,0,1,0-0,2021_jp1.txt
+,Sagan Tosu,Kashima Antlers,2,1,1,0-1,2021_jp1.txt
+,Vegalta Sendai,Oita Trinita,2,1,1,1-1,2021_jp1.txt
+15.00,Kawasaki Frontale,Yokohama FC,3,1,1,2-0,2021_jp1.txt
+16.00,Urawa Red Diamonds,Vissel Kobe,2,0,1,0-0,2021_jp1.txt
+17.00,Avispa Fukuoka,Shonan Bellmare,2,1,1,0-1,2021_jp1.txt
+,Yokohama F. Marinos,Kashiwa Reysol,1,1,X,0-0,2021_jp1.txt
+18.00,Tokushima Vortis,Nagoya Grampus,0,0,X,,2021_jp1.txt
+19.00,FC Tokyo,Gamba Osaka,1,0,1,1-0,2021_jp1.txt
+15.00,Cerezo Osaka,Sanfrecce Hiroshima,1,2,2,0-0,2021_jp1.txt
+19.00,Kashima Antlers,Cerezo Osaka,1,0,1,0-0,2021_jp1.txt
+,Kashiwa Reysol,Vissel Kobe,1,2,2,0-0,2021_jp1.txt
+,Oita Trinita,Yokohama F. Marinos,0,1,2,0-0,2021_jp1.txt
+,Sanfrecce Hiroshima,Urawa Red Diamonds,2,2,X,1-1,2021_jp1.txt
+,Shimizu S-Pulse,FC Tokyo,3,0,1,2-0,2021_jp1.txt
+,Shonan Bellmare,Kawasaki Frontale,1,1,X,0-0,2021_jp1.txt
+,Yokohama FC,Avispa Fukuoka,1,1,X,1-0,2021_jp1.txt
+,Nagoya Grampus,Vegalta Sendai,0,1,2,0-1,2021_jp1.txt
+19.05,Hokkaido Consadole Sapporo,Sagan Tosu,0,0,X,,2021_jp1.txt
+19.00,Gamba Osaka,Tokushima Vortis,2,1,1,1-0,2021_jp1.txt
+19.00,Kashiwa Reysol,Hokkaido Consadole Sapporo,1,2,2,1-2,2021_jp1.txt
+13.00,Yokohama F. Marinos,Shimizu S-Pulse,2,1,1,1-1,2021_jp1.txt
+14.00,FC Tokyo,Sanfrecce Hiroshima,0,0,X,,2021_jp1.txt
+,Vissel Kobe,Sagan Tosu,1,1,X,1-1,2021_jp1.txt
+15.00,Oita Trinita,Avispa Fukuoka,2,1,1,1-0,2021_jp1.txt
+,Tokushima Vortis,Shonan Bellmare,1,1,X,1-1,2021_jp1.txt
+,Vegalta Sendai,Cerezo Osaka,1,1,X,0-0,2021_jp1.txt
+17.00,Gamba Osaka,Yokohama FC,2,0,1,1-0,2021_jp1.txt
+18.00,Urawa Red Diamonds,Nagoya Grampus,0,0,X,,2021_jp1.txt
+19.00,Kawasaki Frontale,Kashima Antlers,2,1,1,1-0,2021_jp1.txt
+18.00,Cerezo Osaka,Tokushima Vortis,1,2,2,1-1,2021_jp1.txt
+19.00,Sagan Tosu,Gamba Osaka,0,1,2,0-0,2021_jp1.txt
+13.00,Avispa Fukuoka,Vissel Kobe,1,2,2,1-1,2021_jp1.txt
+14.00,Hokkaido Consadole Sapporo,Oita Trinita,2,0,1,2-0,2021_jp1.txt
+18.00,Yokohama FC,FC Tokyo,0,1,2,0-1,2021_jp1.txt
+19.00,Sanfrecce Hiroshima,Kashiwa Reysol,1,0,1,0-0,2021_jp1.txt
+17.00,Kashima Antlers,Vegalta Sendai,1,1,X,0-0,2021_jp1.txt
+19.00,Urawa Red Diamonds,Shonan Bellmare,2,3,2,1-1,2021_jp1.txt
+18.30,Shimizu S-Pulse,Kawasaki Frontale,0,2,2,0-1,2021_jp1.txt
+19.00,Yokohama F. Marinos,Nagoya Grampus,2,0,1,2-0,2021_jp1.txt
+19.00,Kawasaki Frontale,Avispa Fukuoka,3,1,1,1-1,2021_jp1.txt
+19.30,Nagoya Grampus,Sanfrecce Hiroshima,1,0,1,1-0,2021_jp1.txt
+19.00,Shonan Bellmare,Gamba Osaka,0,0,X,,2021_jp1.txt
+18.00,Vissel Kobe,Yokohama FC,5,0,1,3-0,2021_jp1.txt
+19.00,Kashiwa Reysol,Urawa Red Diamonds,0,2,2,0-0,2021_jp1.txt
+,Oita Trinita,Kashima Antlers,0,0,X,,2021_jp1.txt
+,Tokushima Vortis,FC Tokyo,0,1,2,0-1,2021_jp1.txt
+,Vegalta Sendai,Shimizu S-Pulse,2,3,2,1-1,2021_jp1.txt
+,Yokohama F. Marinos,Sagan Tosu,2,0,1,0-0,2021_jp1.txt
+19.00,Hokkaido Consadole Sapporo,Cerezo Osaka,0,3,2,0-1,2021_jp1.txt
+18.00,Gamba Osaka,Sanfrecce Hiroshima,1,2,2,1-1,2021_jp1.txt
+19.00,Kawasaki Frontale,Vegalta Sendai,2,2,X,1-0,2021_jp1.txt
+18.00,Tokushima Vortis,Yokohama F. Marinos,0,1,2,0-1,2021_jp1.txt
+,Yokohama FC,Shimizu S-Pulse,1,1,X,1-0,2021_jp1.txt
+18.30,Kashima Antlers,Hokkaido Consadole Sapporo,4,0,1,1-0,2021_jp1.txt
+19.00,FC Tokyo,Oita Trinita,3,0,1,2-0,2021_jp1.txt
+,Shonan Bellmare,Kashiwa Reysol,2,4,2,1-0,2021_jp1.txt
+,Urawa Red Diamonds,Avispa Fukuoka,2,0,1,1-0,2021_jp1.txt
+19.00,Cerezo Osaka,Vissel Kobe,1,1,X,0-1,2021_jp1.txt
+,Sagan Tosu,Nagoya Grampus,3,1,1,0-1,2021_jp1.txt
+19.00,Nagoya Grampus,Kashima Antlers,0,2,2,0-1,2021_jp1.txt
+19.00,Yokohama FC,Kawasaki Frontale,0,2,2,0-1,2021_jp1.txt
+18.00,Vissel Kobe,Shonan Bellmare,3,1,1,2-1,2021_jp1.txt
+19.00,Kashiwa Reysol,Yokohama F. Marinos,1,2,2,0-0,2021_jp1.txt
+,Sanfrecce Hiroshima,Sagan Tosu,1,1,X,0-0,2021_jp1.txt
+,Vegalta Sendai,Urawa Red Diamonds,0,0,X,,2021_jp1.txt
+13.05,Hokkaido Consadole Sapporo,Tokushima Vortis,1,0,1,0-0,2021_jp1.txt
+18.00,Shimizu S-Pulse,Oita Trinita,1,0,1,0-0,2021_jp1.txt
+18.30,Avispa Fukuoka,Gamba Osaka,0,1,2,0-0,2021_jp1.txt
+19.00,Cerezo Osaka,FC Tokyo,3,3,X,0-2,2021_jp1.txt
+15.00,Nagoya Grampus,Kawasaki Frontale,0,4,2,0-3,2021_jp1.txt
+18.00,Yokohama F. Marinos,Avispa Fukuoka,2,0,1,2-0,2021_jp1.txt
+19.00,Oita Trinita,Urawa Red Diamonds,1,0,1,1-0,2021_jp1.txt
+,Vegalta Sendai,Hokkaido Consadole Sapporo,1,1,X,1-1,2021_jp1.txt
+18.00,Sanfrecce Hiroshima,Yokohama FC,0,1,2,0-1,2021_jp1.txt
+,Tokushima Vortis,Shimizu S-Pulse,2,2,X,1-2,2021_jp1.txt
+19.00,Kashiwa Reysol,Kashima Antlers,2,1,1,0-0,2021_jp1.txt
+,Shonan Bellmare,FC Tokyo,0,1,2,0-0,2021_jp1.txt
+19.00,Gamba Osaka,Vissel Kobe,1,2,2,1-2,2021_jp1.txt
+19.00,Sagan Tosu,Cerezo Osaka,3,3,X,3-1,2021_jp1.txt
+15.00,Hokkaido Consadole Sapporo,Urawa Red Diamonds,2,1,1,1-0,2021_jp1.txt
+18.00,Shimizu S-Pulse,Yokohama F. Marinos,2,2,X,1-1,2021_jp1.txt
+,Yokohama FC,Nagoya Grampus,2,0,1,2-0,2021_jp1.txt
+,Vissel Kobe,Kashiwa Reysol,1,2,2,0-0,2021_jp1.txt
+19.00,Avispa Fukuoka,Sanfrecce Hiroshima,1,1,X,0-0,2021_jp1.txt
+,Cerezo Osaka,Vegalta Sendai,0,0,X,,2021_jp1.txt
+,Oita Trinita,Kawasaki Frontale,0,2,2,0-1,2021_jp1.txt
+,Sagan Tosu,FC Tokyo,1,0,1,1-0,2021_jp1.txt
+,Shonan Bellmare,Kashima Antlers,1,2,2,1-1,2021_jp1.txt
+,Tokushima Vortis,Gamba Osaka,2,1,1,2-0,2021_jp1.txt
+19.00,Shimizu S-Pulse,Gamba Osaka,0,1,2,0-0,2021_jp1.txt
+14.00,Hokkaido Consadole Sapporo,FC Tokyo,3,2,1,1-2,2021_jp1.txt
+19.00,Kashiwa Reysol,Kawasaki Frontale,0,0,X,,2021_jp1.txt
+,Urawa Red Diamonds,Sagan Tosu,2,1,1,1-1,2021_jp1.txt
+,Vegalta Sendai,Yokohama FC,0,0,X,,2021_jp1.txt
+18.00,Yokohama F. Marinos,Oita Trinita,5,1,1,2-1,2021_jp1.txt
+,Nagoya Grampus,Shonan Bellmare,1,0,1,0-0,2021_jp1.txt
+18.30,Kashima Antlers,Tokushima Vortis,3,0,1,1-0,2021_jp1.txt
+19.00,Avispa Fukuoka,Cerezo Osaka,2,1,1,1-1,2021_jp1.txt
+18.00,Sanfrecce Hiroshima,Vissel Kobe,1,1,X,0-0,2021_jp1.txt
+18.00,Yokohama F. Marinos,Vegalta Sendai,5,0,1,1-0,2021_jp1.txt
+,Vissel Kobe,Kashima Antlers,1,0,1,0-0,2021_jp1.txt
+19.00,Gamba Osaka,FC Tokyo,0,0,X,,2021_jp1.txt
+,Kashiwa Reysol,Sagan Tosu,1,3,2,1-2,2021_jp1.txt
+,Oita Trinita,Hokkaido Consadole Sapporo,1,1,X,1-0,2021_jp1.txt
+,Sanfrecce Hiroshima,Kawasaki Frontale,1,1,X,1-0,2021_jp1.txt
+,Shonan Bellmare,Shimizu S-Pulse,1,1,X,1-1,2021_jp1.txt
+,Tokushima Vortis,Urawa Red Diamonds,0,1,2,0-0,2021_jp1.txt
+,Cerezo Osaka,Yokohama FC,3,1,1,2-1,2021_jp1.txt
+18.00,Nagoya Grampus,Avispa Fukuoka,1,0,1,0-0,2021_jp1.txt
+19.00,Avispa Fukuoka,Kawasaki Frontale,1,0,1,0-0,2021_jp1.txt
+,Hokkaido Consadole Sapporo,Nagoya Grampus,0,2,2,0-2,2021_jp1.txt
+,Oita Trinita,Vissel Kobe,1,3,2,1-2,2021_jp1.txt
+,Sagan Tosu,Yokohama F. Marinos,0,4,2,0-1,2021_jp1.txt
+,Shimizu S-Pulse,Kashima Antlers,0,4,2,0-2,2021_jp1.txt
+,Tokushima Vortis,Kashiwa Reysol,0,1,2,0-1,2021_jp1.txt
+,Urawa Red Diamonds,Sanfrecce Hiroshima,1,0,1,1-0,2021_jp1.txt
+,Vegalta Sendai,FC Tokyo,1,2,2,0-1,2021_jp1.txt
+,Yokohama FC,Gamba Osaka,3,1,1,1-0,2021_jp1.txt
+,Cerezo Osaka,Shonan Bellmare,1,5,2,0-3,2021_jp1.txt
+14.00,Hokkaido Consadole Sapporo,Kawasaki Frontale,0,2,2,0-2,2021_jp1.txt
+18.00,Vissel Kobe,FC Tokyo,0,1,2,0-0,2021_jp1.txt
+19.00,Gamba Osaka,Cerezo Osaka,0,1,2,0-0,2021_jp1.txt
+,Sanfrecce Hiroshima,Oita Trinita,4,1,1,1-1,2021_jp1.txt
+,Yokohama F. Marinos,Kashima Antlers,0,2,2,0-2,2021_jp1.txt
+18.00,Nagoya Grampus,Shimizu S-Pulse,1,1,X,0-0,2021_jp1.txt
+19.00,Avispa Fukuoka,Tokushima Vortis,3,0,1,0-0,2021_jp1.txt
+,Kashiwa Reysol,Yokohama FC,2,1,1,1-1,2021_jp1.txt
+,Shonan Bellmare,Urawa Red Diamonds,0,0,X,,2021_jp1.txt
+,Vegalta Sendai,Sagan Tosu,0,1,2,0-0,2021_jp1.txt
+19.00,Nagoya Grampus,Tokushima Vortis,3,0,1,0-0,2021_jp1.txt
+18.00,Yokohama FC,Urawa Red Diamonds,0,2,2,0-1,2021_jp1.txt
+,Cerezo Osaka,Hokkaido Consadole Sapporo,0,2,2,0-0,2021_jp1.txt
+,Kashima Antlers,Avispa Fukuoka,0,3,2,0-2,2021_jp1.txt
+18.30,Oita Trinita,Shonan Bellmare,2,0,1,1-0,2021_jp1.txt
+19.00,Sagan Tosu,Shimizu S-Pulse,2,1,1,0-0,2021_jp1.txt
+,Sanfrecce Hiroshima,Yokohama F. Marinos,1,3,2,1-2,2021_jp1.txt
+18.30,Gamba Osaka,Vegalta Sendai,2,3,2,1-2,2021_jp1.txt
+19.00,FC Tokyo,Kashiwa Reysol,0,1,2,0-1,2021_jp1.txt
+19.00,Kawasaki Frontale,Vissel Kobe,3,1,1,0-1,2021_jp1.txt
+18.00,Kashima Antlers,Gamba Osaka,3,1,1,0-0,2021_jp1.txt
+,Kashiwa Reysol,Sanfrecce Hiroshima,0,3,2,0-1,2021_jp1.txt
+,Shonan Bellmare,Avispa Fukuoka,1,1,X,0-1,2021_jp1.txt
+,Vissel Kobe,Hokkaido Consadole Sapporo,1,0,1,1-0,2021_jp1.txt
+18.30,Tokushima Vortis,Kawasaki Frontale,1,3,2,1-2,2021_jp1.txt
+19.00,Sagan Tosu,Oita Trinita,0,0,X,,2021_jp1.txt
+,FC Tokyo,Yokohama FC,4,0,1,3-0,2021_jp1.txt
+,Shimizu S-Pulse,Vegalta Sendai,2,1,1,1-0,2021_jp1.txt
+,Urawa Red Diamonds,Cerezo Osaka,2,0,1,1-0,2021_jp1.txt
+,Nagoya Grampus,Yokohama F. Marinos,2,1,1,1-0,2021_jp1.txt
+19.03,Shimizu S-Pulse,Vissel Kobe,0,2,2,0-1,2021_jp1.txt
+14.00,Vegalta Sendai,Tokushima Vortis,0,1,2,0-0,2021_jp1.txt
+15.00,FC Tokyo,Urawa Red Diamonds,1,2,2,1-1,2021_jp1.txt
+18.00,Yokohama FC,Yokohama F. Marinos,2,2,X,1-0,2021_jp1.txt
+19.00,Avispa Fukuoka,Sagan Tosu,3,0,1,1-0,2021_jp1.txt
+13.00,Hokkaido Consadole Sapporo,Sanfrecce Hiroshima,0,2,2,0-1,2021_jp1.txt
+15.00,Cerezo Osaka,Kashima Antlers,1,2,2,0-0,2021_jp1.txt
+16.00,Nagoya Grampus,Oita Trinita,1,0,1,1-0,2021_jp1.txt
+17.00,Kawasaki Frontale,Shonan Bellmare,2,1,1,0-1,2021_jp1.txt
+19.00,Gamba Osaka,Kashiwa Reysol,2,1,1,2-0,2021_jp1.txt
+19.00,Shonan Bellmare,Yokohama F. Marinos,0,1,2,0-0,2021_jp1.txt
+13.30,Avispa Fukuoka,Shimizu S-Pulse,1,2,2,0-1,2021_jp1.txt
+15.00,Vissel Kobe,Urawa Red Diamonds,5,1,1,3-0,2021_jp1.txt
+16.00,Kashima Antlers,Yokohama FC,1,2,2,0-2,2021_jp1.txt
+,Kashiwa Reysol,Vegalta Sendai,1,1,X,0-1,2021_jp1.txt
+17.00,Kawasaki Frontale,FC Tokyo,1,0,1,1-0,2021_jp1.txt
+19.00,Gamba Osaka,Hokkaido Consadole Sapporo,1,5,2,0-3,2021_jp1.txt
+13.00,Tokushima Vortis,Sagan Tosu,3,0,1,2-0,2021_jp1.txt
+15.00,Sanfrecce Hiroshima,Nagoya Grampus,1,0,1,1-0,2021_jp1.txt
+16.00,Oita Trinita,Cerezo Osaka,1,0,1,1-0,2021_jp1.txt
+19.00,FC Tokyo,Nagoya Grampus,1,1,X,1-1,2021_jp1.txt
+,Kashima Antlers,Kawasaki Frontale,1,2,2,0-0,2021_jp1.txt
+,Sanfrecce Hiroshima,Cerezo Osaka,0,1,2,0-0,2021_jp1.txt
+14.00,Sagan Tosu,Shonan Bellmare,1,1,X,0-1,2021_jp1.txt
+15.00,Shimizu S-Pulse,Kashiwa Reysol,0,1,2,0-0,2021_jp1.txt
+,Urawa Red Diamonds,Gamba Osaka,1,1,X,0-0,2021_jp1.txt
+16.00,Vissel Kobe,Avispa Fukuoka,1,0,1,0-0,2021_jp1.txt
+,Yokohama FC,Tokushima Vortis,5,3,1,3-1,2021_jp1.txt
+19.00,Yokohama F. Marinos,Hokkaido Consadole Sapporo,2,1,1,0-1,2021_jp1.txt
+14.00,Oita Trinita,Vegalta Sendai,2,0,1,0-0,2021_jp1.txt
+19.00,Urawa Red Diamonds,Kashiwa Reysol,5,1,1,4-1,2021_jp1.txt
+14.00,FC Tokyo,Kashima Antlers,1,2,2,0-1,2021_jp1.txt
+,Tokushima Vortis,Oita Trinita,1,1,X,0-0,2021_jp1.txt
+,Vegalta Sendai,Sanfrecce Hiroshima,2,0,1,1-0,2021_jp1.txt
+15.00,Shonan Bellmare,Yokohama FC,2,1,1,0-0,2021_jp1.txt
+17.00,Gamba Osaka,Sagan Tosu,1,0,1,1-0,2021_jp1.txt
+14.00,Hokkaido Consadole Sapporo,Avispa Fukuoka,0,0,X,,2021_jp1.txt
+15.00,Nagoya Grampus,Vissel Kobe,2,2,X,2-0,2021_jp1.txt
+17.00,Kawasaki Frontale,Shimizu S-Pulse,1,0,1,0-0,2021_jp1.txt
+19.00,Cerezo Osaka,Yokohama F. Marinos,2,1,1,2-1,2021_jp1.txt
+13.05,Kawasaki Frontale,Urawa Red Diamonds,1,1,X,1-0,2021_jp1.txt
+,Yokohama F. Marinos,Gamba Osaka,0,1,2,0-0,2021_jp1.txt
+14.00,FC Tokyo,Shimizu S-Pulse,4,0,1,3-0,2021_jp1.txt
+,Yokohama FC,Sagan Tosu,0,0,X,,2021_jp1.txt
+,Tokushima Vortis,Cerezo Osaka,0,1,2,0-1,2021_jp1.txt
+15.00,Nagoya Grampus,Kashiwa Reysol,2,0,1,1-0,2021_jp1.txt
+,Sanfrecce Hiroshima,Kashima Antlers,1,4,2,1-2,2021_jp1.txt
+,Avispa Fukuoka,Oita Trinita,1,0,1,1-0,2021_jp1.txt
+16.00,Hokkaido Consadole Sapporo,Shonan Bellmare,1,1,X,1-0,2021_jp1.txt
+,Vissel Kobe,Vegalta Sendai,4,2,1,2-1,2021_jp1.txt
+14.00,Shimizu S-Pulse,Hokkaido Consadole Sapporo,2,2,X,1-1,2021_jp1.txt
+15.00,Vissel Kobe,Tokushima Vortis,1,0,1,0-0,2021_jp1.txt
+16.00,Yokohama F. Marinos,FC Tokyo,8,0,1,4-0,2021_jp1.txt
+14.00,Vegalta Sendai,Nagoya Grampus,1,1,X,0-1,2021_jp1.txt
+,Kashima Antlers,Urawa Red Diamonds,1,0,1,1-0,2021_jp1.txt
+,Sagan Tosu,Kawasaki Frontale,3,1,1,3-0,2021_jp1.txt
+,Oita Trinita,Gamba Osaka,2,3,2,2-1,2021_jp1.txt
+15.00,Shonan Bellmare,Sanfrecce Hiroshima,0,0,X,,2021_jp1.txt
+,Avispa Fukuoka,Yokohama FC,1,1,X,0-0,2021_jp1.txt
+16.00,Kashiwa Reysol,Cerezo Osaka,1,0,1,0-0,2021_jp1.txt
+14.00,Cerezo Osaka,Kawasaki Frontale,1,4,2,0-2,2021_jp1.txt
+,FC Tokyo,Tokushima Vortis,0,2,2,0-1,2021_jp1.txt
+,Gamba Osaka,Nagoya Grampus,1,3,2,0-3,2021_jp1.txt
+,Sagan Tosu,Hokkaido Consadole Sapporo,1,0,1,1-0,2021_jp1.txt
+,Urawa Red Diamonds,Yokohama F. Marinos,2,1,1,1-0,2021_jp1.txt
+,Vegalta Sendai,Shonan Bellmare,0,2,2,0-1,2021_jp1.txt
+15.00,Kashima Antlers,Oita Trinita,0,0,X,,2021_jp1.txt
+,Shimizu S-Pulse,Sanfrecce Hiroshima,1,0,1,1-0,2021_jp1.txt
+,Yokohama FC,Vissel Kobe,0,2,2,0-2,2021_jp1.txt
+16.00,Kashiwa Reysol,Avispa Fukuoka,0,0,X,,2021_jp1.txt
+14.00,Avispa Fukuoka,Vegalta Sendai,2,2,X,1-0,2021_jp1.txt
+,Cerezo Osaka,Nagoya Grampus,2,1,1,0-0,2021_jp1.txt
+,Hokkaido Consadole Sapporo,Kashiwa Reysol,3,1,1,2-1,2021_jp1.txt
+,Kashima Antlers,Sagan Tosu,1,0,1,1-0,2021_jp1.txt
+,Kawasaki Frontale,Gamba Osaka,4,1,1,2-1,2021_jp1.txt
+,Oita Trinita,Yokohama FC,2,0,1,2-0,2021_jp1.txt
+,Sanfrecce Hiroshima,FC Tokyo,1,2,2,1-0,2021_jp1.txt
+,Shonan Bellmare,Tokushima Vortis,0,1,2,0-0,2021_jp1.txt
+,Urawa Red Diamonds,Shimizu S-Pulse,0,1,2,0-0,2021_jp1.txt
+,Vissel Kobe,Yokohama F. Marinos,0,2,2,0-1,2021_jp1.txt
+14.00,FC Tokyo,Avispa Fukuoka,0,0,X,,2021_jp1.txt
+,Gamba Osaka,Shonan Bellmare,0,0,X,,2021_jp1.txt
+,Kashiwa Reysol,Oita Trinita,2,3,2,0-2,2021_jp1.txt
+,Nagoya Grampus,Urawa Red Diamonds,0,0,X,,2021_jp1.txt
+,Sagan Tosu,Vissel Kobe,0,2,2,0-0,2021_jp1.txt
+,Shimizu S-Pulse,Cerezo Osaka,2,1,1,1-1,2021_jp1.txt
+,Tokushima Vortis,Sanfrecce Hiroshima,2,4,2,0-3,2021_jp1.txt
+,Vegalta Sendai,Kashima Antlers,0,1,2,0-0,2021_jp1.txt
+,Yokohama FC,Hokkaido Consadole Sapporo,0,1,2,0-1,2021_jp1.txt
+,Yokohama F. Marinos,Kawasaki Frontale,1,1,X,0-0,2021_jp1.txt
+19.00,Kawasaki Frontale,FC Tokyo,1,0,1,0-0,2022_jp1.txt
+14.00,Yokohama F. Marinos,Cerezo Osaka,2,2,X,0-1,2022_jp1.txt
+,Shimizu S-Pulse,Hokkaido Consadole Sapporo,1,1,X,0-1,2022_jp1.txt
+,Kyoto Sanga FC,Urawa Red Diamonds,1,0,1,0-0,2022_jp1.txt
+,Gamba Osaka,Kashima Antlers,1,3,2,1-2,2022_jp1.txt
+,Sanfrecce Hiroshima,Sagan Tosu,0,0,X,,2022_jp1.txt
+,Avispa Fukuoka,Júbilo Iwata,1,1,X,0-0,2022_jp1.txt
+15.00,Shonan Bellmare,Kashiwa Reysol,0,2,2,0-0,2022_jp1.txt
+,Nagoya Grampus,Vissel Kobe,2,0,1,1-0,2022_jp1.txt
+13.30,Júbilo Iwata,Shimizu S-Pulse,1,2,2,1-1,2022_jp1.txt
+14.00,Cerezo Osaka,Kyoto Sanga FC,1,1,X,0-1,2022_jp1.txt
+15.00,Hokkaido Consadole Sapporo,Sanfrecce Hiroshima,1,1,X,1-0,2022_jp1.txt
+,Kashima Antlers,Kawasaki Frontale,0,2,2,0-2,2022_jp1.txt
+,Urawa Red Diamonds,Gamba Osaka,0,1,2,0-0,2022_jp1.txt
+,Sagan Tosu,Shonan Bellmare,1,1,X,1-0,2022_jp1.txt
+16.00,Vissel Kobe,Avispa Fukuoka,0,0,X,,2022_jp1.txt
+15.00,Kashiwa Reysol,Yokohama F. Marinos,3,1,1,1-1,2022_jp1.txt
+19.00,FC Tokyo,Nagoya Grampus,0,0,X,,2022_jp1.txt
+14.00,Kyoto Sanga FC,Júbilo Iwata,1,4,2,0-1,2022_jp1.txt
+14.00,Yokohama F. Marinos,Shimizu S-Pulse,2,0,1,2-0,2022_jp1.txt
+,Nagoya Grampus,Sagan Tosu,1,1,X,1-1,2022_jp1.txt
+,Avispa Fukuoka,Hokkaido Consadole Sapporo,0,0,X,,2022_jp1.txt
+15.00,Kashima Antlers,Kashiwa Reysol,1,0,1,0-0,2022_jp1.txt
+,Urawa Red Diamonds,Shonan Bellmare,2,0,1,1-0,2022_jp1.txt
+,Gamba Osaka,Kawasaki Frontale,2,2,X,1-0,2022_jp1.txt
+16.00,Cerezo Osaka,FC Tokyo,0,1,2,0-1,2022_jp1.txt
+,Sanfrecce Hiroshima,Vissel Kobe,1,1,X,0-1,2022_jp1.txt
+19.00,Vissel Kobe,Kashima Antlers,0,2,2,0-1,2022_jp1.txt
+14.00,Hokkaido Consadole Sapporo,Yokohama F. Marinos,1,1,X,0-0,2022_jp1.txt
+,Shimizu S-Pulse,Cerezo Osaka,1,3,2,0-1,2022_jp1.txt
+,Júbilo Iwata,Gamba Osaka,1,1,X,1-0,2022_jp1.txt
+15.00,FC Tokyo,Sanfrecce Hiroshima,2,1,1,0-0,2022_jp1.txt
+,Shonan Bellmare,Kyoto Sanga FC,1,1,X,0-0,2022_jp1.txt
+16.00,Kashiwa Reysol,Avispa Fukuoka,1,0,1,1-0,2022_jp1.txt
+17.00,Kawasaki Frontale,Nagoya Grampus,1,0,1,1-0,2022_jp1.txt
+15.00,Sagan Tosu,Urawa Red Diamonds,1,0,1,0-0,2022_jp1.txt
+19.00,Yokohama F. Marinos,Sagan Tosu,0,0,X,,2022_jp1.txt
+14.00,Shimizu S-Pulse,Vissel Kobe,0,0,X,,2022_jp1.txt
+,Kyoto Sanga FC,FC Tokyo,0,1,2,0-0,2022_jp1.txt
+,Gamba Osaka,Avispa Fukuoka,2,3,2,0-1,2022_jp1.txt
+,Sanfrecce Hiroshima,Kawasaki Frontale,0,2,2,0-0,2022_jp1.txt
+15.00,Kashima Antlers,Shonan Bellmare,2,1,1,0-1,2022_jp1.txt
+,Urawa Red Diamonds,Júbilo Iwata,4,1,1,3-1,2022_jp1.txt
+16.00,Cerezo Osaka,Hokkaido Consadole Sapporo,2,2,X,1-1,2022_jp1.txt
+14.00,Nagoya Grampus,Kashiwa Reysol,1,1,X,1-1,2022_jp1.txt
+19.00,Avispa Fukuoka,Sagan Tosu,0,0,X,,2022_jp1.txt
+14.00,Gamba Osaka,Nagoya Grampus,3,1,1,1-0,2022_jp1.txt
+15.00,Kashiwa Reysol,Júbilo Iwata,2,0,1,1-0,2022_jp1.txt
+,Kawasaki Frontale,Cerezo Osaka,1,4,2,0-3,2022_jp1.txt
+,Shonan Bellmare,Sanfrecce Hiroshima,0,1,2,0-0,2022_jp1.txt
+16.00,Kashima Antlers,Shimizu S-Pulse,2,1,1,0-0,2022_jp1.txt
+,Vissel Kobe,Kyoto Sanga FC,1,3,2,0-0,2022_jp1.txt
+19.00,Hokkaido Consadole Sapporo,Urawa Red Diamonds,1,1,X,0-1,2022_jp1.txt
+,Yokohama F. Marinos,FC Tokyo,2,1,1,1-1,2022_jp1.txt
+19.00,Cerezo Osaka,Kashiwa Reysol,0,1,2,0-1,2022_jp1.txt
+18.30,Kyoto Sanga FC,Gamba Osaka,1,1,X,1-0,2022_jp1.txt
+19.00,FC Tokyo,Vissel Kobe,3,1,1,0-1,2022_jp1.txt
+,Júbilo Iwata,Kawasaki Frontale,1,1,X,0-0,2022_jp1.txt
+,Sanfrecce Hiroshima,Yokohama F. Marinos,2,0,1,1-0,2022_jp1.txt
+,Avispa Fukuoka,Kashima Antlers,0,1,2,0-0,2022_jp1.txt
+,Sagan Tosu,Hokkaido Consadole Sapporo,5,0,1,1-0,2022_jp1.txt
+19.30,Urawa Red Diamonds,Shimizu S-Pulse,1,1,X,1-0,2022_jp1.txt
+,Nagoya Grampus,Shonan Bellmare,2,1,1,0-1,2022_jp1.txt
+19.00,Kawasaki Frontale,Kashiwa Reysol,1,0,1,1-0,2022_jp1.txt
+13.00,Shimizu S-Pulse,Gamba Osaka,1,1,X,0-0,2022_jp1.txt
+14.00,FC Tokyo,Urawa Red Diamonds,0,0,X,,2022_jp1.txt
+,Vissel Kobe,Cerezo Osaka,0,1,2,0-1,2022_jp1.txt
+,Sanfrecce Hiroshima,Avispa Fukuoka,1,0,1,0-0,2022_jp1.txt
+15.00,Kashima Antlers,Yokohama F. Marinos,0,3,2,0-0,2022_jp1.txt
+,Shonan Bellmare,Júbilo Iwata,0,0,X,,2022_jp1.txt
+,Nagoya Grampus,Hokkaido Consadole Sapporo,0,2,2,0-0,2022_jp1.txt
+16.00,Kyoto Sanga FC,Sagan Tosu,3,1,1,2-0,2022_jp1.txt
+14.00,Yokohama F. Marinos,Kawasaki Frontale,4,2,1,0-1,2022_jp1.txt
+16.00,Urawa Red Diamonds,Vissel Kobe,2,2,X,2-1,2022_jp1.txt
+13.00,Hokkaido Consadole Sapporo,FC Tokyo,0,0,X,,2022_jp1.txt
+14.00,Gamba Osaka,Shonan Bellmare,0,1,2,0-0,2022_jp1.txt
+15.00,Kashima Antlers,Nagoya Grampus,0,0,X,,2022_jp1.txt
+,Sagan Tosu,Shimizu S-Pulse,0,0,X,,2022_jp1.txt
+16.00,Júbilo Iwata,Sanfrecce Hiroshima,2,2,X,1-0,2022_jp1.txt
+17.00,Avispa Fukuoka,Cerezo Osaka,0,0,X,,2022_jp1.txt
+19.00,Kashiwa Reysol,Kyoto Sanga FC,0,2,2,0-1,2022_jp1.txt
+19.00,Kawasaki Frontale,Urawa Red Diamonds,2,1,1,0-1,2022_jp1.txt
+19.30,Yokohama F. Marinos,Vissel Kobe,2,0,1,1-0,2022_jp1.txt
+19.00,Júbilo Iwata,Nagoya Grampus,2,1,1,0-1,2022_jp1.txt
+13.05,Hokkaido Consadole Sapporo,Shonan Bellmare,1,0,1,0-0,2022_jp1.txt
+14.00,Shimizu S-Pulse,Sanfrecce Hiroshima,2,2,X,1-0,2022_jp1.txt
+15.00,Kyoto Sanga FC,Avispa Fukuoka,0,1,2,0-1,2022_jp1.txt
+16.00,Kashiwa Reysol,Sagan Tosu,1,4,2,0-2,2022_jp1.txt
+,Cerezo Osaka,Kashima Antlers,0,3,2,0-2,2022_jp1.txt
+19.00,FC Tokyo,Gamba Osaka,2,0,1,1-0,2022_jp1.txt
+14.00,Nagoya Grampus,Kyoto Sanga FC,1,1,X,1-1,2022_jp1.txt
+,Sanfrecce Hiroshima,Kashiwa Reysol,1,2,2,1-0,2022_jp1.txt
+15.00,Kashima Antlers,Júbilo Iwata,3,1,1,2-0,2022_jp1.txt
+,Shonan Bellmare,Shimizu S-Pulse,1,4,2,0-3,2022_jp1.txt
+,Sagan Tosu,Cerezo Osaka,1,1,X,0-0,2022_jp1.txt
+17.00,Avispa Fukuoka,FC Tokyo,5,1,1,2-1,2022_jp1.txt
+14.00,Gamba Osaka,Hokkaido Consadole Sapporo,0,0,X,,2022_jp1.txt
+19.00,Vissel Kobe,Kawasaki Frontale,0,1,2,0-0,2022_jp1.txt
+19.30,Urawa Red Diamonds,Yokohama F. Marinos,3,3,X,0-3,2022_jp1.txt
+19.00,Cerezo Osaka,Júbilo Iwata,2,1,1,2-0,2022_jp1.txt
+14.00,Shimizu S-Pulse,Kawasaki Frontale,0,2,2,0-2,2022_jp1.txt
+,Sanfrecce Hiroshima,Kashima Antlers,3,0,1,1-0,2022_jp1.txt
+15.00,Yokohama F. Marinos,Nagoya Grampus,2,1,1,1-1,2022_jp1.txt
+16.00,Hokkaido Consadole Sapporo,Kyoto Sanga FC,1,0,1,0-0,2022_jp1.txt
+17.00,Avispa Fukuoka,Shonan Bellmare,0,0,X,,2022_jp1.txt
+14.00,Gamba Osaka,Vissel Kobe,2,0,1,0-0,2022_jp1.txt
+15.00,FC Tokyo,Sagan Tosu,0,1,2,0-0,2022_jp1.txt
+16.00,Kashiwa Reysol,Urawa Red Diamonds,0,0,X,,2022_jp1.txt
+19.30,Urawa Red Diamonds,Sanfrecce Hiroshima,0,0,X,,2022_jp1.txt
+14.00,Júbilo Iwata,FC Tokyo,2,1,1,1-0,2022_jp1.txt
+,Nagoya Grampus,Cerezo Osaka,1,0,1,1-0,2022_jp1.txt
+,Kyoto Sanga FC,Shimizu S-Pulse,0,0,X,,2022_jp1.txt
+15.00,Kashima Antlers,Hokkaido Consadole Sapporo,4,1,1,3-0,2022_jp1.txt
+,Vissel Kobe,Sagan Tosu,4,0,1,2-0,2022_jp1.txt
+16.00,Kawasaki Frontale,Avispa Fukuoka,2,0,1,0-0,2022_jp1.txt
+,Shonan Bellmare,Yokohama F. Marinos,1,4,2,0-2,2022_jp1.txt
+19.00,Kashiwa Reysol,Gamba Osaka,0,1,2,0-0,2022_jp1.txt
+13.00,Sanfrecce Hiroshima,Kyoto Sanga FC,3,1,1,2-1,2022_jp1.txt
+14.00,Shimizu S-Pulse,Nagoya Grampus,1,2,2,0-1,2022_jp1.txt
+,Cerezo Osaka,Gamba Osaka,3,1,1,0-1,2022_jp1.txt
+15.00,FC Tokyo,Kashiwa Reysol,0,0,X,,2022_jp1.txt
+,Shonan Bellmare,Vissel Kobe,2,1,1,1-0,2022_jp1.txt
+17.00,Urawa Red Diamonds,Kashima Antlers,1,1,X,1-1,2022_jp1.txt
+,Sagan Tosu,Kawasaki Frontale,0,0,X,,2022_jp1.txt
+19.00,Avispa Fukuoka,Yokohama F. Marinos,1,0,1,0-0,2022_jp1.txt
+15.00,Júbilo Iwata,Hokkaido Consadole Sapporo,1,2,2,1-1,2022_jp1.txt
+19.00,Hokkaido Consadole Sapporo,Kashiwa Reysol,1,6,2,0-2,2022_jp1.txt
+,Kashima Antlers,Sagan Tosu,4,4,X,0-2,2022_jp1.txt
+,Kawasaki Frontale,Shonan Bellmare,0,4,2,0-0,2022_jp1.txt
+,Yokohama F. Marinos,Kyoto Sanga FC,2,0,1,1-0,2022_jp1.txt
+,Shimizu S-Pulse,FC Tokyo,0,3,2,0-1,2022_jp1.txt
+,Cerezo Osaka,Urawa Red Diamonds,2,0,1,0-0,2022_jp1.txt
+,Vissel Kobe,Júbilo Iwata,0,0,X,,2022_jp1.txt
+19.30,Nagoya Grampus,Avispa Fukuoka,1,0,1,1-0,2022_jp1.txt
+19.00,Gamba Osaka,Sanfrecce Hiroshima,2,0,1,2-0,2022_jp1.txt
+14.00,Sanfrecce Hiroshima,Nagoya Grampus,1,0,1,0-0,2022_jp1.txt
+17.00,Avispa Fukuoka,Urawa Red Diamonds,0,0,X,,2022_jp1.txt
+13.05,Vissel Kobe,Hokkaido Consadole Sapporo,4,1,1,1-0,2022_jp1.txt
+14.00,Kyoto Sanga FC,Kawasaki Frontale,1,0,1,0-0,2022_jp1.txt
+15.00,FC Tokyo,Kashima Antlers,3,1,1,2-0,2022_jp1.txt
+,Shonan Bellmare,Cerezo Osaka,0,2,2,0-1,2022_jp1.txt
+16.00,Kashiwa Reysol,Shimizu S-Pulse,3,1,1,2-0,2022_jp1.txt
+,Júbilo Iwata,Yokohama F. Marinos,0,2,2,0-0,2022_jp1.txt
+17.00,Sagan Tosu,Gamba Osaka,2,1,1,1-0,2022_jp1.txt
+18.00,Kashima Antlers,Kyoto Sanga FC,1,0,1,0-0,2022_jp1.txt
+,Shonan Bellmare,FC Tokyo,2,0,1,1-0,2022_jp1.txt
+,Shimizu S-Pulse,Avispa Fukuoka,3,1,1,2-0,2022_jp1.txt
+,Júbilo Iwata,Sagan Tosu,3,1,1,3-0,2022_jp1.txt
+19.00,Urawa Red Diamonds,Nagoya Grampus,3,0,1,3-0,2022_jp1.txt
+,Kashiwa Reysol,Vissel Kobe,3,1,1,2-1,2022_jp1.txt
+,Kawasaki Frontale,Hokkaido Consadole Sapporo,5,2,1,1-1,2022_jp1.txt
+,Gamba Osaka,Yokohama F. Marinos,1,2,2,1-0,2022_jp1.txt
+,Sanfrecce Hiroshima,Cerezo Osaka,2,1,1,0-0,2022_jp1.txt
+16.00,Yokohama F. Marinos,Kashiwa Reysol,4,0,1,3-0,2022_jp1.txt
+18.30,Avispa Fukuoka,Sanfrecce Hiroshima,1,3,2,1-1,2022_jp1.txt
+19.00,Kawasaki Frontale,Júbilo Iwata,1,1,X,1-0,2022_jp1.txt
+14.00,Hokkaido Consadole Sapporo,Gamba Osaka,1,0,1,0-0,2022_jp1.txt
+18.00,Nagoya Grampus,Kashima Antlers,1,1,X,0-1,2022_jp1.txt
+,Cerezo Osaka,Shimizu S-Pulse,1,1,X,0-1,2022_jp1.txt
+,Vissel Kobe,Urawa Red Diamonds,0,1,2,0-0,2022_jp1.txt
+18.30,Kyoto Sanga FC,Shonan Bellmare,0,1,2,0-0,2022_jp1.txt
+19.00,Sagan Tosu,FC Tokyo,5,0,1,1-0,2022_jp1.txt
+18.00,FC Tokyo,Avispa Fukuoka,2,2,X,0-1,2022_jp1.txt
+18.30,Kashiwa Reysol,Kashima Antlers,1,2,2,0-1,2022_jp1.txt
+,Kyoto Sanga FC,Hokkaido Consadole Sapporo,2,1,1,1-0,2022_jp1.txt
+,Sanfrecce Hiroshima,Júbilo Iwata,3,0,1,1-0,2022_jp1.txt
+19.00,Shonan Bellmare,Nagoya Grampus,0,0,X,,2022_jp1.txt
+,Shimizu S-Pulse,Yokohama F. Marinos,3,5,2,1-2,2022_jp1.txt
+,Gamba Osaka,Urawa Red Diamonds,1,1,X,1-0,2022_jp1.txt
+,Cerezo Osaka,Kawasaki Frontale,2,1,1,0-1,2022_jp1.txt
+19.30,Sagan Tosu,Vissel Kobe,0,2,2,0-0,2022_jp1.txt
+19.00,Kashima Antlers,Cerezo Osaka,3,3,X,1-1,2022_jp1.txt
+,Kashiwa Reysol,Nagoya Grampus,0,1,2,0-1,2022_jp1.txt
+,FC Tokyo,Hokkaido Consadole Sapporo,3,0,1,2-0,2022_jp1.txt
+,Yokohama F. Marinos,Sanfrecce Hiroshima,3,0,1,1-0,2022_jp1.txt
+,Shonan Bellmare,Gamba Osaka,1,0,1,1-0,2022_jp1.txt
+,Júbilo Iwata,Avispa Fukuoka,0,1,2,0-0,2022_jp1.txt
+,Vissel Kobe,Shimizu S-Pulse,2,1,1,1-0,2022_jp1.txt
+19.30,Urawa Red Diamonds,Kyoto Sanga FC,2,2,X,1-0,2022_jp1.txt
+19.00,Kawasaki Frontale,Sagan Tosu,4,0,1,1-0,2022_jp1.txt
+19.00,Kawasaki Frontale,Gamba Osaka,4,0,1,4-0,2022_jp1.txt
+,Júbilo Iwata,Vissel Kobe,0,1,2,0-0,2022_jp1.txt
+14.00,Hokkaido Consadole Sapporo,Kashima Antlers,0,0,X,,2022_jp1.txt
+18.00,Nagoya Grampus,Shimizu S-Pulse,0,2,2,0-1,2022_jp1.txt
+,Sanfrecce Hiroshima,Shonan Bellmare,1,1,X,0-0,2022_jp1.txt
+19.00,Urawa Red Diamonds,FC Tokyo,3,0,1,1-0,2022_jp1.txt
+,Cerezo Osaka,Yokohama F. Marinos,2,2,X,1-0,2022_jp1.txt
+,Avispa Fukuoka,Kyoto Sanga FC,1,0,1,1-0,2022_jp1.txt
+,Sagan Tosu,Kashiwa Reysol,0,1,2,0-1,2022_jp1.txt
+18.00,Kashima Antlers,Vissel Kobe,1,1,X,0-0,2022_jp1.txt
+,Shimizu S-Pulse,Urawa Red Diamonds,1,2,2,0-1,2022_jp1.txt
+19.00,Kashiwa Reysol,Hokkaido Consadole Sapporo,1,0,1,1-0,2022_jp1.txt
+,Shonan Bellmare,Avispa Fukuoka,0,0,X,,2022_jp1.txt
+,Gamba Osaka,Cerezo Osaka,1,2,2,1-0,2022_jp1.txt
+,Sagan Tosu,Yokohama F. Marinos,2,2,X,1-1,2022_jp1.txt
+18.00,FC Tokyo,Júbilo Iwata,2,0,1,2-0,2022_jp1.txt
+18.30,Kyoto Sanga FC,Sanfrecce Hiroshima,1,1,X,0-0,2022_jp1.txt
+19.30,Nagoya Grampus,Kawasaki Frontale,1,1,X,0-0,2022_jp1.txt
+14.00,Hokkaido Consadole Sapporo,Nagoya Grampus,2,2,X,1-0,2022_jp1.txt
+18.30,Júbilo Iwata,Shonan Bellmare,1,0,1,0-0,2022_jp1.txt
+19.00,Urawa Red Diamonds,Kawasaki Frontale,3,1,1,2-0,2022_jp1.txt
+,Yokohama F. Marinos,Kashima Antlers,2,0,1,1-0,2022_jp1.txt
+,Gamba Osaka,Kyoto Sanga FC,1,1,X,0-0,2022_jp1.txt
+,Cerezo Osaka,Avispa Fukuoka,2,0,1,1-0,2022_jp1.txt
+,Vissel Kobe,Kashiwa Reysol,0,1,2,0-1,2022_jp1.txt
+,Sanfrecce Hiroshima,FC Tokyo,1,2,2,1-0,2022_jp1.txt
+18.00,Shimizu S-Pulse,Sagan Tosu,3,3,X,0-2,2022_jp1.txt
+18.00,Kashima Antlers,Sanfrecce Hiroshima,0,2,2,0-0,2022_jp1.txt
+18.30,Kyoto Sanga FC,Kashiwa Reysol,1,2,2,1-1,2022_jp1.txt
+19.00,Nagoya Grampus,Urawa Red Diamonds,3,0,1,2-0,2022_jp1.txt
+,Cerezo Osaka,Vissel Kobe,3,0,1,2-0,2022_jp1.txt
+18.00,FC Tokyo,Shimizu S-Pulse,0,2,2,0-0,2022_jp1.txt
+19.00,Kawasaki Frontale,Yokohama F. Marinos,2,1,1,1-1,2022_jp1.txt
+,Shonan Bellmare,Hokkaido Consadole Sapporo,1,5,2,0-3,2022_jp1.txt
+,Sagan Tosu,Júbilo Iwata,2,0,1,1-0,2022_jp1.txt
+19.00,Avispa Fukuoka,Gamba Osaka,0,1,2,0-0,2022_jp1.txt
+14.00,Hokkaido Consadole Sapporo,Vissel Kobe,0,2,2,0-2,2022_jp1.txt
+18.30,Júbilo Iwata,Urawa Red Diamonds,0,6,2,0-3,2022_jp1.txt
+18.00,Kashima Antlers,Avispa Fukuoka,2,0,1,1-0,2022_jp1.txt
+18.30,Kashiwa Reysol,Sanfrecce Hiroshima,2,3,2,1-1,2022_jp1.txt
+19.00,Gamba Osaka,Shimizu S-Pulse,0,2,2,0-0,2022_jp1.txt
+,Sagan Tosu,Nagoya Grampus,0,0,X,,2022_jp1.txt
+19.00,Yokohama F. Marinos,Shonan Bellmare,3,0,1,0-0,2022_jp1.txt
+19.00,FC Tokyo,Cerezo Osaka,4,0,1,0-0,2022_jp1.txt
+,Kawasaki Frontale,Kyoto Sanga FC,3,1,1,2-0,2022_jp1.txt
+19.30,Nagoya Grampus,Júbilo Iwata,1,0,1,1-0,2022_jp1.txt
+14.00,Hokkaido Consadole Sapporo,Sagan Tosu,1,2,2,1-0,2022_jp1.txt
+18.00,Shimizu S-Pulse,Kashiwa Reysol,1,1,X,1-0,2022_jp1.txt
+19.00,Sanfrecce Hiroshima,Gamba Osaka,5,2,1,1-2,2022_jp1.txt
+,Avispa Fukuoka,Kawasaki Frontale,1,4,2,1-2,2022_jp1.txt
+19.00,Shonan Bellmare,Kashima Antlers,1,1,X,0-0,2022_jp1.txt
+19.00,Kyoto Sanga FC,Yokohama F. Marinos,1,2,2,0-1,2022_jp1.txt
+,Vissel Kobe,FC Tokyo,2,1,1,2-0,2022_jp1.txt
+19.30,Urawa Red Diamonds,Cerezo Osaka,0,1,2,0-1,2022_jp1.txt
+19.00,Sagan Tosu,Avispa Fukuoka,1,1,X,1-1,2022_jp1.txt
+18.00,Shimizu S-Pulse,Kyoto Sanga FC,1,0,1,0-0,2022_jp1.txt
+,Nagoya Grampus,Gamba Osaka,0,2,2,0-1,2022_jp1.txt
+19.00,Kashiwa Reysol,FC Tokyo,3,6,2,0-2,2022_jp1.txt
+,Cerezo Osaka,Sanfrecce Hiroshima,0,3,2,0-1,2022_jp1.txt
+,Kawasaki Frontale,Kashima Antlers,2,1,1,2-0,2022_jp1.txt
+19.00,Yokohama F. Marinos,Júbilo Iwata,0,1,2,0-0,2022_jp1.txt
+,Vissel Kobe,Shonan Bellmare,1,0,1,0-0,2022_jp1.txt
+19.30,Urawa Red Diamonds,Hokkaido Consadole Sapporo,1,1,X,0-0,2022_jp1.txt
+19.35,Hokkaido Consadole Sapporo,Cerezo Osaka,2,1,1,0-0,2022_jp1.txt
+18.00,Kashima Antlers,Urawa Red Diamonds,2,2,X,2-1,2022_jp1.txt
+18.30,Júbilo Iwata,Kashiwa Reysol,2,2,X,0-2,2022_jp1.txt
+,Sanfrecce Hiroshima,Shimizu S-Pulse,2,0,1,0-0,2022_jp1.txt
+19.00,FC Tokyo,Yokohama F. Marinos,2,2,X,0-2,2022_jp1.txt
+,Shonan Bellmare,Kawasaki Frontale,2,1,1,0-1,2022_jp1.txt
+,Kyoto Sanga FC,Vissel Kobe,2,0,1,2-0,2022_jp1.txt
+,Gamba Osaka,Sagan Tosu,0,3,2,0-1,2022_jp1.txt
+,Avispa Fukuoka,Nagoya Grampus,2,3,2,1-3,2022_jp1.txt
+18.00,Shimizu S-Pulse,Shonan Bellmare,1,1,X,1-0,2022_jp1.txt
+18.30,Kawasaki Frontale,Sanfrecce Hiroshima,4,0,1,1-0,2022_jp1.txt
+19.00,Urawa Red Diamonds,Kashiwa Reysol,4,1,1,2-0,2022_jp1.txt
+,Yokohama F. Marinos,Avispa Fukuoka,1,0,1,1-0,2022_jp1.txt
+,Kyoto Sanga FC,Kashima Antlers,1,1,X,1-0,2022_jp1.txt
+,Gamba Osaka,FC Tokyo,0,0,X,,2022_jp1.txt
+,Cerezo Osaka,Sagan Tosu,2,1,1,0-0,2022_jp1.txt
+,Vissel Kobe,Nagoya Grampus,0,0,X,,2022_jp1.txt
+13.05,Hokkaido Consadole Sapporo,Júbilo Iwata,4,0,1,2-0,2022_jp1.txt
+19.00,Sagan Tosu,Kashima Antlers,1,1,X,1-0,2022_jp1.txt
+18.00,Júbilo Iwata,Cerezo Osaka,2,2,X,0-1,2022_jp1.txt
+19.00,Kashiwa Reysol,Kawasaki Frontale,1,1,X,0-1,2022_jp1.txt
+,Shonan Bellmare,Urawa Red Diamonds,0,0,X,,2022_jp1.txt
+,Nagoya Grampus,Sanfrecce Hiroshima,0,0,X,,2022_jp1.txt
+,Avispa Fukuoka,Shimizu S-Pulse,3,2,1,2-1,2022_jp1.txt
+14.00,Yokohama F. Marinos,Hokkaido Consadole Sapporo,0,0,X,,2022_jp1.txt
+19.00,FC Tokyo,Kyoto Sanga FC,2,0,1,1-0,2022_jp1.txt
+,Vissel Kobe,Gamba Osaka,2,1,1,0-0,2022_jp1.txt
+14.00,Cerezo Osaka,Shonan Bellmare,1,1,X,0-0,2022_jp1.txt
+,Avispa Fukuoka,Vissel Kobe,0,1,2,0-1,2022_jp1.txt
+15.00,Kashima Antlers,FC Tokyo,0,1,2,0-0,2022_jp1.txt
+,Sanfrecce Hiroshima,Urawa Red Diamonds,4,1,1,1-0,2022_jp1.txt
+,Sagan Tosu,Kyoto Sanga FC,0,1,2,0-1,2022_jp1.txt
+16.00,Hokkaido Consadole Sapporo,Kawasaki Frontale,4,3,1,2-1,2022_jp1.txt
+,Nagoya Grampus,Yokohama F. Marinos,0,4,2,0-1,2022_jp1.txt
+,Gamba Osaka,Kashiwa Reysol,0,0,X,,2022_jp1.txt
+16.00,Shimizu S-Pulse,Júbilo Iwata,1,1,X,1-0,2022_jp1.txt
+14.00,Hokkaido Consadole Sapporo,Avispa Fukuoka,1,2,2,1-0,2022_jp1.txt
+,Kawasaki Frontale,Shimizu S-Pulse,3,2,1,1-0,2022_jp1.txt
+,Yokohama F. Marinos,Gamba Osaka,0,2,2,0-1,2022_jp1.txt
+,Júbilo Iwata,Kashima Antlers,3,3,X,3-1,2022_jp1.txt
+,Kyoto Sanga FC,Nagoya Grampus,1,1,X,0-1,2022_jp1.txt
+,Vissel Kobe,Sanfrecce Hiroshima,4,0,1,1-0,2022_jp1.txt
+15.00,Urawa Red Diamonds,Sagan Tosu,2,1,1,1-0,2022_jp1.txt
+,FC Tokyo,Shonan Bellmare,0,2,2,0-0,2022_jp1.txt
+16.00,Kashiwa Reysol,Cerezo Osaka,0,0,X,,2022_jp1.txt
+15.00,Kawasaki Frontale,Vissel Kobe,2,1,1,1-0,2022_jp1.txt
+,Yokohama F. Marinos,Urawa Red Diamonds,4,1,1,2-0,2022_jp1.txt
+,Shonan Bellmare,Sagan Tosu,3,0,1,2-0,2022_jp1.txt
+,Shimizu S-Pulse,Kashima Antlers,0,1,2,0-0,2022_jp1.txt
+,Nagoya Grampus,FC Tokyo,2,1,1,1-0,2022_jp1.txt
+,Kyoto Sanga FC,Cerezo Osaka,0,0,X,,2022_jp1.txt
+,Gamba Osaka,Júbilo Iwata,2,0,1,0-0,2022_jp1.txt
+,Sanfrecce Hiroshima,Hokkaido Consadole Sapporo,1,2,2,1-1,2022_jp1.txt
+,Avispa Fukuoka,Kashiwa Reysol,2,1,1,2-0,2022_jp1.txt
+14.00,Hokkaido Consadole Sapporo,Shimizu S-Pulse,4,3,1,1-0,2022_jp1.txt
+,Kashima Antlers,Gamba Osaka,0,0,X,,2022_jp1.txt
+,Urawa Red Diamonds,Avispa Fukuoka,1,1,X,0-0,2022_jp1.txt
+,Kashiwa Reysol,Shonan Bellmare,1,2,2,0-1,2022_jp1.txt
+,FC Tokyo,Kawasaki Frontale,2,3,2,0-1,2022_jp1.txt
+,Júbilo Iwata,Kyoto Sanga FC,0,0,X,,2022_jp1.txt
+,Cerezo Osaka,Nagoya Grampus,0,1,2,0-0,2022_jp1.txt
+,Vissel Kobe,Yokohama F. Marinos,1,3,2,1-1,2022_jp1.txt
+,Sagan Tosu,Sanfrecce Hiroshima,2,2,X,0-2,2022_jp1.txt
+19.00,Kawasaki Frontale,Yokohama F. Marinos,1,2,2,0-2,2023_jp1.txt
+14.00,Cerezo Osaka,Albirex Niigata,2,2,X,1-1,2023_jp1.txt
+,FC Tokyo,Urawa Red Diamonds,2,0,1,0-0,2023_jp1.txt
+,Kyoto Sanga FC,Kashima Antlers,0,2,2,0-2,2023_jp1.txt
+,Sanfrecce Hiroshima,Hokkaido Consadole Sapporo,0,0,X,,2023_jp1.txt
+,Vissel Kobe,Avispa Fukuoka,1,0,1,0-0,2023_jp1.txt
+,Yokohama FC,Nagoya Grampus,0,1,2,0-1,2023_jp1.txt
+15.00,Kashiwa Reysol,Gamba Osaka,2,2,X,1-0,2023_jp1.txt
+,Sagan Tosu,Shonan Bellmare,1,5,2,1-3,2023_jp1.txt
+19.00,Shonan Bellmare,Yokohama FC,2,2,X,2-1,2023_jp1.txt
+14.00,Yokohama F. Marinos,Urawa Red Diamonds,2,0,1,1-0,2023_jp1.txt
+15.00,Avispa Fukuoka,Cerezo Osaka,2,1,1,0-0,2023_jp1.txt
+,Hokkaido Consadole Sapporo,Vissel Kobe,1,3,2,0-1,2023_jp1.txt
+,Gamba Osaka,Sagan Tosu,1,1,X,0-0,2023_jp1.txt
+16.00,Kashima Antlers,Kawasaki Frontale,1,2,2,1-0,2023_jp1.txt
+,Nagoya Grampus,Kyoto Sanga FC,1,0,1,0-0,2023_jp1.txt
+14.00,Sanfrecce Hiroshima,Albirex Niigata,1,2,2,0-2,2023_jp1.txt
+15.00,Kashiwa Reysol,FC Tokyo,1,1,X,1-1,2023_jp1.txt
+19.00,Yokohama F. Marinos,Sanfrecce Hiroshima,1,1,X,1-1,2023_jp1.txt
+13.00,Kawasaki Frontale,Shonan Bellmare,1,1,X,0-0,2023_jp1.txt
+14.00,Albirex Niigata,Hokkaido Consadole Sapporo,2,2,X,2-1,2023_jp1.txt
+,Kyoto Sanga FC,FC Tokyo,2,0,1,0-0,2023_jp1.txt
+,Vissel Kobe,Gamba Osaka,4,0,1,1-0,2023_jp1.txt
+,Yokohama FC,Kashima Antlers,1,3,2,1-2,2023_jp1.txt
+15.00,Avispa Fukuoka,Kashiwa Reysol,1,0,1,0-0,2023_jp1.txt
+,Sagan Tosu,Nagoya Grampus,1,0,1,0-0,2023_jp1.txt
+,Urawa Red Diamonds,Cerezo Osaka,2,1,1,0-1,2023_jp1.txt
+14.00,Albirex Niigata,Kawasaki Frontale,1,0,1,1-0,2023_jp1.txt
+,Vissel Kobe,Urawa Red Diamonds,0,1,2,0-1,2023_jp1.txt
+14.00,Cerezo Osaka,Sagan Tosu,2,1,1,1-0,2023_jp1.txt
+15.00,Hokkaido Consadole Sapporo,Yokohama F. Marinos,2,0,1,1-0,2023_jp1.txt
+,FC Tokyo,Yokohama FC,3,1,1,2-1,2023_jp1.txt
+,Kashima Antlers,Avispa Fukuoka,0,0,X,,2023_jp1.txt
+,Kashiwa Reysol,Nagoya Grampus,0,3,2,0-1,2023_jp1.txt
+,Shonan Bellmare,Kyoto Sanga FC,0,2,2,0-0,2023_jp1.txt
+16.00,Gamba Osaka,Sanfrecce Hiroshima,1,2,2,0-1,2023_jp1.txt
+14.00,Nagoya Grampus,FC Tokyo,0,0,X,,2023_jp1.txt
+,Yokohama F. Marinos,Kashima Antlers,2,1,1,0-0,2023_jp1.txt
+,Yokohama FC,Kyoto Sanga FC,1,4,2,1-1,2023_jp1.txt
+15.00,Gamba Osaka,Hokkaido Consadole Sapporo,2,2,X,0-2,2023_jp1.txt
+,Sagan Tosu,Vissel Kobe,0,1,2,0-1,2023_jp1.txt
+,Urawa Red Diamonds,Albirex Niigata,2,1,1,2-1,2023_jp1.txt
+16.00,Kawasaki Frontale,Cerezo Osaka,0,0,X,,2023_jp1.txt
+14.00,Avispa Fukuoka,Shonan Bellmare,2,1,1,0-0,2023_jp1.txt
+,Sanfrecce Hiroshima,Kashiwa Reysol,1,0,1,0-0,2023_jp1.txt
+19.00,Kashiwa Reysol,Urawa Red Diamonds,0,3,2,0-1,2023_jp1.txt
+14.00,Albirex Niigata,Nagoya Grampus,1,3,2,1-0,2023_jp1.txt
+,Kyoto Sanga FC,Vissel Kobe,0,3,2,0-0,2023_jp1.txt
+,Yokohama FC,Avispa Fukuoka,1,1,X,1-1,2023_jp1.txt
+15.00,Kashima Antlers,Sanfrecce Hiroshima,1,2,2,0-0,2023_jp1.txt
+,Sagan Tosu,FC Tokyo,1,0,1,0-0,2023_jp1.txt
+,Shonan Bellmare,Gamba Osaka,4,1,1,4-0,2023_jp1.txt
+16.00,Cerezo Osaka,Yokohama F. Marinos,2,1,1,2-0,2023_jp1.txt
+19.00,Hokkaido Consadole Sapporo,Kawasaki Frontale,3,4,2,2-3,2023_jp1.txt
+19.00,Yokohama F. Marinos,Yokohama FC,5,0,1,0-0,2023_jp1.txt
+14.00,Cerezo Osaka,Hokkaido Consadole Sapporo,2,3,2,1-2,2023_jp1.txt
+,Sanfrecce Hiroshima,Sagan Tosu,1,0,1,0-0,2023_jp1.txt
+,Vissel Kobe,Albirex Niigata,0,0,X,,2023_jp1.txt
+15.00,Avispa Fukuoka,Kyoto Sanga FC,2,1,1,0-0,2023_jp1.txt
+,FC Tokyo,Shonan Bellmare,2,2,X,1-0,2023_jp1.txt
+,Gamba Osaka,Kawasaki Frontale,2,0,1,1-0,2023_jp1.txt
+,Nagoya Grampus,Urawa Red Diamonds,0,0,X,,2023_jp1.txt
+19.00,Kashiwa Reysol,Kashima Antlers,1,0,1,1-0,2023_jp1.txt
+14.00,Albirex Niigata,Avispa Fukuoka,3,2,1,0-2,2023_jp1.txt
+,Yokohama FC,Sanfrecce Hiroshima,0,3,2,0-0,2023_jp1.txt
+15.00,Kawasaki Frontale,Nagoya Grampus,1,2,2,0-2,2023_jp1.txt
+,Sagan Tosu,Kashiwa Reysol,1,1,X,0-0,2023_jp1.txt
+,Shonan Bellmare,Yokohama F. Marinos,1,1,X,0-0,2023_jp1.txt
+,Urawa Red Diamonds,Hokkaido Consadole Sapporo,4,1,1,0-0,2023_jp1.txt
+16.00,FC Tokyo,Cerezo Osaka,1,2,2,0-0,2023_jp1.txt
+,Kashima Antlers,Vissel Kobe,1,5,2,0-2,2023_jp1.txt
+,Kyoto Sanga FC,Gamba Osaka,2,1,1,1-1,2023_jp1.txt
+14.00,Sanfrecce Hiroshima,FC Tokyo,1,2,2,1-2,2023_jp1.txt
+19.00,Vissel Kobe,Yokohama F. Marinos,2,3,2,2-2,2023_jp1.txt
+14.00,Albirex Niigata,Kashima Antlers,0,2,2,0-2,2023_jp1.txt
+,Cerezo Osaka,Kashiwa Reysol,1,0,1,1-0,2023_jp1.txt
+,Hokkaido Consadole Sapporo,Avispa Fukuoka,2,2,X,2-0,2023_jp1.txt
+,Kyoto Sanga FC,Sagan Tosu,2,3,2,1-3,2023_jp1.txt
+15.00,Nagoya Grampus,Shonan Bellmare,2,2,X,1-0,2023_jp1.txt
+16.00,Gamba Osaka,Yokohama FC,1,1,X,1-1,2023_jp1.txt
+,Kawasaki Frontale,Urawa Red Diamonds,1,1,X,0-0,2023_jp1.txt
+14.00,Cerezo Osaka,Sanfrecce Hiroshima,0,1,2,0-0,2023_jp1.txt
+,Vissel Kobe,Shonan Bellmare,2,0,1,1-0,2023_jp1.txt
+,Yokohama FC,Hokkaido Consadole Sapporo,1,4,2,1-2,2023_jp1.txt
+15.00,FC Tokyo,Albirex Niigata,2,1,1,2-1,2023_jp1.txt
+,Kashiwa Reysol,Kyoto Sanga FC,1,1,X,0-1,2023_jp1.txt
+,Yokohama F. Marinos,Nagoya Grampus,1,1,X,0-1,2023_jp1.txt
+17.00,Avispa Fukuoka,Kawasaki Frontale,1,3,2,0-1,2023_jp1.txt
+19.00,Kashima Antlers,Gamba Osaka,4,0,1,0-0,2023_jp1.txt
+19.30,Urawa Red Diamonds,Sagan Tosu,0,2,2,0-0,2023_jp1.txt
+14.00,Hokkaido Consadole Sapporo,Kashima Antlers,0,1,2,0-1,2023_jp1.txt
+,Gamba Osaka,Cerezo Osaka,1,2,2,0-1,2023_jp1.txt
+,Kyoto Sanga FC,Kawasaki Frontale,0,1,2,0-0,2023_jp1.txt
+15.00,Avispa Fukuoka,FC Tokyo,1,0,1,0-0,2023_jp1.txt
+,Nagoya Grampus,Vissel Kobe,2,2,X,0-1,2023_jp1.txt
+,Sagan Tosu,Yokohama F. Marinos,1,3,2,1-2,2023_jp1.txt
+,Shonan Bellmare,Kashiwa Reysol,1,2,2,1-1,2023_jp1.txt
+19.00,Yokohama FC,Albirex Niigata,1,0,1,0-0,2023_jp1.txt
+19.30,Urawa Red Diamonds,Sanfrecce Hiroshima,2,1,1,0-0,2023_jp1.txt
+14.00,Hokkaido Consadole Sapporo,FC Tokyo,5,1,1,3-0,2023_jp1.txt
+19.00,Nagoya Grampus,Gamba Osaka,1,0,1,0-0,2023_jp1.txt
+13.00,Sanfrecce Hiroshima,Avispa Fukuoka,3,1,1,0-1,2023_jp1.txt
+14.00,Albirex Niigata,Kashiwa Reysol,0,0,X,,2023_jp1.txt
+,Cerezo Osaka,Kashima Antlers,0,1,2,0-0,2023_jp1.txt
+,Vissel Kobe,Yokohama FC,3,0,1,1-0,2023_jp1.txt
+,Yokohama F. Marinos,Kyoto Sanga FC,4,1,1,1-1,2023_jp1.txt
+15.00,Kawasaki Frontale,Sagan Tosu,1,0,1,0-0,2023_jp1.txt
+19.30,Urawa Red Diamonds,Shonan Bellmare,4,1,1,1-0,2023_jp1.txt
+19.30,FC Tokyo,Kawasaki Frontale,2,1,1,2-1,2023_jp1.txt
+14.00,Vissel Kobe,Sanfrecce Hiroshima,2,0,1,0-0,2023_jp1.txt
+15.00,Shonan Bellmare,Hokkaido Consadole Sapporo,2,4,2,0-1,2023_jp1.txt
+16.00,Kashiwa Reysol,Yokohama FC,0,1,2,0-0,2023_jp1.txt
+13.30,Albirex Niigata,Yokohama F. Marinos,2,1,1,0-1,2023_jp1.txt
+,Avispa Fukuoka,Sagan Tosu,0,0,X,,2023_jp1.txt
+,Kashima Antlers,Nagoya Grampus,2,0,1,1-0,2023_jp1.txt
+,Kyoto Sanga FC,Cerezo Osaka,0,1,2,0-1,2023_jp1.txt
+16.00,Urawa Red Diamonds,Gamba Osaka,3,1,1,1-1,2023_jp1.txt
+19.30,Hokkaido Consadole Sapporo,Kyoto Sanga FC,2,1,1,1-1,2023_jp1.txt
+13.00,Avispa Fukuoka,Urawa Red Diamonds,0,0,X,,2023_jp1.txt
+15.00,Kashima Antlers,FC Tokyo,1,1,X,1-1,2023_jp1.txt
+,Nagoya Grampus,Sanfrecce Hiroshima,2,1,1,1-1,2023_jp1.txt
+,Shonan Bellmare,Cerezo Osaka,0,2,2,0-0,2023_jp1.txt
+16.00,Kashiwa Reysol,Vissel Kobe,1,1,X,0-1,2023_jp1.txt
+,Yokohama FC,Kawasaki Frontale,2,1,1,1-0,2023_jp1.txt
+17.00,Sagan Tosu,Albirex Niigata,2,0,1,1-0,2023_jp1.txt
+19.00,Gamba Osaka,Yokohama F. Marinos,0,2,2,0-1,2023_jp1.txt
+13.00,Hokkaido Consadole Sapporo,Nagoya Grampus,1,2,2,0-1,2023_jp1.txt
+14.00,Sanfrecce Hiroshima,Shonan Bellmare,1,0,1,0-0,2023_jp1.txt
+,Vissel Kobe,FC Tokyo,3,2,1,3-0,2023_jp1.txt
+17.00,Sagan Tosu,Kashima Antlers,2,2,X,1-1,2023_jp1.txt
+19.00,Kyoto Sanga FC,Urawa Red Diamonds,0,2,2,0-0,2023_jp1.txt
+14.00,Albirex Niigata,Gamba Osaka,1,3,2,0-2,2023_jp1.txt
+,Cerezo Osaka,Yokohama FC,2,0,1,1-0,2023_jp1.txt
+,Yokohama F. Marinos,Avispa Fukuoka,2,0,1,2-0,2023_jp1.txt
+17.00,Kawasaki Frontale,Kashiwa Reysol,2,0,1,2-0,2023_jp1.txt
+15.00,FC Tokyo,Yokohama F. Marinos,2,3,2,2-1,2023_jp1.txt
+,Shonan Bellmare,Albirex Niigata,2,2,X,1-1,2023_jp1.txt
+16.00,Nagoya Grampus,Cerezo Osaka,3,1,1,3-1,2023_jp1.txt
+18.00,Avispa Fukuoka,Gamba Osaka,1,2,2,1-2,2023_jp1.txt
+18.30,Yokohama FC,Sagan Tosu,1,2,2,0-0,2023_jp1.txt
+19.00,Kashiwa Reysol,Hokkaido Consadole Sapporo,4,5,2,2-3,2023_jp1.txt
+14.00,Sanfrecce Hiroshima,Kyoto Sanga FC,3,1,1,0-0,2023_jp1.txt
+17.00,Urawa Red Diamonds,Kashima Antlers,0,0,X,,2023_jp1.txt
+19.00,Vissel Kobe,Kawasaki Frontale,2,2,X,0-2,2023_jp1.txt
+16.00,Yokohama F. Marinos,Kashiwa Reysol,4,3,1,2-1,2023_jp1.txt
+19.00,Cerezo Osaka,Vissel Kobe,2,1,1,0-0,2023_jp1.txt
+,Sagan Tosu,Hokkaido Consadole Sapporo,1,1,X,0-1,2023_jp1.txt
+14.00,Albirex Niigata,Kyoto Sanga FC,1,3,2,0-1,2023_jp1.txt
+16.00,Nagoya Grampus,Avispa Fukuoka,2,1,1,1-0,2023_jp1.txt
+18.00,Gamba Osaka,FC Tokyo,3,1,1,2-0,2023_jp1.txt
+,Kashima Antlers,Shonan Bellmare,1,0,1,1-0,2023_jp1.txt
+18.30,Yokohama FC,Urawa Red Diamonds,0,0,X,,2023_jp1.txt
+19.00,Kawasaki Frontale,Sanfrecce Hiroshima,1,0,1,0-0,2023_jp1.txt
+14.00,Hokkaido Consadole Sapporo,Cerezo Osaka,1,4,2,1-3,2023_jp1.txt
+19.00,FC Tokyo,Nagoya Grampus,2,0,1,1-0,2023_jp1.txt
+,Gamba Osaka,Kashima Antlers,2,1,1,2-0,2023_jp1.txt
+,Kashiwa Reysol,Albirex Niigata,0,0,X,,2023_jp1.txt
+,Kyoto Sanga FC,Yokohama FC,2,1,1,0-0,2023_jp1.txt
+,Sanfrecce Hiroshima,Yokohama F. Marinos,0,1,2,0-1,2023_jp1.txt
+,Shonan Bellmare,Sagan Tosu,0,6,2,0-2,2023_jp1.txt
+19.30,Urawa Red Diamonds,Kawasaki Frontale,1,1,X,0-0,2023_jp1.txt
+19.00,Avispa Fukuoka,Vissel Kobe,0,3,2,0-1,2023_jp1.txt
+19.00,Cerezo Osaka,Avispa Fukuoka,0,1,2,0-1,2023_jp1.txt
+18.00,Albirex Niigata,Sanfrecce Hiroshima,2,0,1,2-0,2023_jp1.txt
+,Kashima Antlers,Kyoto Sanga FC,0,0,X,,2023_jp1.txt
+,Nagoya Grampus,Kawasaki Frontale,2,0,1,1-0,2023_jp1.txt
+18.30,Yokohama FC,Gamba Osaka,0,0,X,,2023_jp1.txt
+19.00,FC Tokyo,Kashiwa Reysol,1,0,1,1-0,2023_jp1.txt
+,Sagan Tosu,Urawa Red Diamonds,1,2,2,1-2,2023_jp1.txt
+,Vissel Kobe,Hokkaido Consadole Sapporo,1,1,X,0-1,2023_jp1.txt
+19.00,Yokohama F. Marinos,Shonan Bellmare,4,1,1,2-0,2023_jp1.txt
+19.00,Albirex Niigata,Vissel Kobe,0,1,2,0-1,2023_jp1.txt
+18.00,Nagoya Grampus,Yokohama F. Marinos,2,2,X,1-2,2023_jp1.txt
+18.30,Sanfrecce Hiroshima,Kashima Antlers,1,1,X,0-1,2023_jp1.txt
+19.00,Avispa Fukuoka,Hokkaido Consadole Sapporo,2,1,1,0-1,2023_jp1.txt
+,Gamba Osaka,Kyoto Sanga FC,1,0,1,0-0,2023_jp1.txt
+,Kashiwa Reysol,Shonan Bellmare,1,1,X,1-0,2023_jp1.txt
+,Kawasaki Frontale,Yokohama FC,3,0,1,2-0,2023_jp1.txt
+,Urawa Red Diamonds,FC Tokyo,0,0,X,,2023_jp1.txt
+19.30,Sagan Tosu,Cerezo Osaka,2,1,1,0-1,2023_jp1.txt
+13.00,Hokkaido Consadole Sapporo,Albirex Niigata,0,1,2,0-0,2023_jp1.txt
+19.00,Yokohama F. Marinos,Kawasaki Frontale,0,1,2,0-0,2023_jp1.txt
+18.00,Sanfrecce Hiroshima,Yokohama FC,1,1,X,0-0,2023_jp1.txt
+19.00,Cerezo Osaka,Urawa Red Diamonds,2,0,1,2-0,2023_jp1.txt
+,FC Tokyo,Kashima Antlers,1,3,2,1-2,2023_jp1.txt
+,Gamba Osaka,Kashiwa Reysol,3,1,1,1-1,2023_jp1.txt
+,Kyoto Sanga FC,Nagoya Grampus,2,1,1,1-0,2023_jp1.txt
+,Shonan Bellmare,Avispa Fukuoka,0,1,2,0-0,2023_jp1.txt
+,Vissel Kobe,Sagan Tosu,2,1,1,0-0,2023_jp1.txt
+19.00,Nagoya Grampus,Albirex Niigata,1,0,1,1-0,2023_jp1.txt
+,Shonan Bellmare,Sanfrecce Hiroshima,1,0,1,0-0,2023_jp1.txt
+18.00,Kashima Antlers,Hokkaido Consadole Sapporo,3,0,1,2-0,2023_jp1.txt
+18.30,Yokohama FC,Vissel Kobe,2,0,1,1-0,2023_jp1.txt
+19.00,Cerezo Osaka,FC Tokyo,0,1,2,0-1,2023_jp1.txt
+,Kawasaki Frontale,Gamba Osaka,3,4,2,1-3,2023_jp1.txt
+,Kyoto Sanga FC,Kashiwa Reysol,0,1,2,0-1,2023_jp1.txt
+,Sagan Tosu,Avispa Fukuoka,0,1,2,0-1,2023_jp1.txt
+,Urawa Red Diamonds,Yokohama F. Marinos,0,0,X,,2023_jp1.txt
+14.00,Hokkaido Consadole Sapporo,Sagan Tosu,1,1,X,0-0,2023_jp1.txt
+18.00,Albirex Niigata,Shonan Bellmare,2,2,X,0-2,2023_jp1.txt
+19.00,Avispa Fukuoka,Yokohama FC,2,0,1,1-0,2023_jp1.txt
+,FC Tokyo,Kyoto Sanga FC,2,0,1,1-0,2023_jp1.txt
+,Kashiwa Reysol,Cerezo Osaka,1,1,X,1-0,2023_jp1.txt
+,Kawasaki Frontale,Vissel Kobe,0,1,2,0-1,2023_jp1.txt
+19.30,Yokohama F. Marinos,Gamba Osaka,2,1,1,1-1,2023_jp1.txt
+18.00,Nagoya Grampus,Kashima Antlers,1,0,1,1-0,2023_jp1.txt
+,Sanfrecce Hiroshima,Urawa Red Diamonds,2,1,1,0-1,2023_jp1.txt
+19.00,Avispa Fukuoka,Albirex Niigata,0,1,2,0-1,2023_jp1.txt
+19.30,Urawa Red Diamonds,Nagoya Grampus,1,0,1,1-0,2023_jp1.txt
+18.00,Kashima Antlers,Sagan Tosu,2,1,1,1-0,2023_jp1.txt
+19.00,Gamba Osaka,Shonan Bellmare,2,1,1,1-0,2023_jp1.txt
+,Kyoto Sanga FC,Hokkaido Consadole Sapporo,3,0,1,1-0,2023_jp1.txt
+,Sanfrecce Hiroshima,Kawasaki Frontale,3,2,1,1-1,2023_jp1.txt
+,Vissel Kobe,Kashiwa Reysol,1,1,X,0-1,2023_jp1.txt
+19.30,Yokohama F. Marinos,FC Tokyo,2,1,1,1-1,2023_jp1.txt
+18.30,Yokohama FC,Cerezo Osaka,0,1,2,0-0,2023_jp1.txt
+19.00,Shonan Bellmare,Urawa Red Diamonds,0,1,2,0-0,2023_jp1.txt
+18.00,Kashima Antlers,Albirex Niigata,2,0,1,2-0,2023_jp1.txt
+18.30,Yokohama FC,Yokohama F. Marinos,4,1,1,1-1,2023_jp1.txt
+19.00,Cerezo Osaka,Nagoya Grampus,3,1,1,1-1,2023_jp1.txt
+,FC Tokyo,Vissel Kobe,2,2,X,1-0,2023_jp1.txt
+,Kashiwa Reysol,Sanfrecce Hiroshima,0,0,X,,2023_jp1.txt
+,Kawasaki Frontale,Hokkaido Consadole Sapporo,2,2,X,0-2,2023_jp1.txt
+,Kyoto Sanga FC,Avispa Fukuoka,2,0,1,2-0,2023_jp1.txt
+,Sagan Tosu,Gamba Osaka,1,1,X,0-0,2023_jp1.txt
+13.00,Hokkaido Consadole Sapporo,Gamba Osaka,4,0,1,1-0,2023_jp1.txt
+18.00,Albirex Niigata,Urawa Red Diamonds,1,1,X,0-1,2023_jp1.txt
+,Nagoya Grampus,Yokohama FC,1,1,X,1-0,2023_jp1.txt
+19.00,Cerezo Osaka,Kawasaki Frontale,3,0,1,0-0,2023_jp1.txt
+,Kashiwa Reysol,Yokohama F. Marinos,2,0,1,0-0,2023_jp1.txt
+,Sagan Tosu,Sanfrecce Hiroshima,0,2,2,0-1,2023_jp1.txt
+,Shonan Bellmare,Kashima Antlers,2,2,X,2-1,2023_jp1.txt
+19.00,FC Tokyo,Avispa Fukuoka,1,2,2,0-2,2023_jp1.txt
+,Vissel Kobe,Kyoto Sanga FC,2,1,1,1-1,2023_jp1.txt
+19.00,Kawasaki Frontale,FC Tokyo,1,0,1,0-0,2023_jp1.txt
+19.30,Urawa Red Diamonds,Kyoto Sanga FC,0,0,X,,2023_jp1.txt
+,Yokohama F. Marinos,Sagan Tosu,1,1,X,0-0,2023_jp1.txt
+18.00,Kashima Antlers,Cerezo Osaka,1,0,1,1-0,2023_jp1.txt
+19.00,Sanfrecce Hiroshima,Vissel Kobe,2,0,1,2-0,2023_jp1.txt
+,Avispa Fukuoka,Nagoya Grampus,1,0,1,0-0,2023_jp1.txt
+,Hokkaido Consadole Sapporo,Shonan Bellmare,0,1,2,0-1,2023_jp1.txt
+18.30,Yokohama FC,Kashiwa Reysol,1,2,2,0-2,2023_jp1.txt
+19.00,Gamba Osaka,Albirex Niigata,1,1,X,0-0,2023_jp1.txt
+14.00,Albirex Niigata,Yokohama FC,3,1,1,1-1,2023_jp1.txt
+15.00,FC Tokyo,Sagan Tosu,3,2,1,0-2,2023_jp1.txt
+16.00,Nagoya Grampus,Hokkaido Consadole Sapporo,1,1,X,0-0,2023_jp1.txt
+19.00,Kashiwa Reysol,Avispa Fukuoka,1,3,2,1-0,2023_jp1.txt
+,Kyoto Sanga FC,Sanfrecce Hiroshima,1,0,1,0-0,2023_jp1.txt
+,Vissel Kobe,Cerezo Osaka,1,0,1,0-0,2023_jp1.txt
+15.00,Kashima Antlers,Yokohama F. Marinos,1,2,2,1-1,2023_jp1.txt
+16.00,Shonan Bellmare,Kawasaki Frontale,0,2,2,0-2,2023_jp1.txt
+17.00,Gamba Osaka,Urawa Red Diamonds,1,3,2,1-1,2023_jp1.txt
+19.00,Kawasaki Frontale,Albirex Niigata,2,3,2,1-1,2023_jp1.txt
+,Yokohama F. Marinos,Vissel Kobe,0,2,2,0-2,2023_jp1.txt
+19.30,Urawa Red Diamonds,Yokohama FC,1,1,X,0-1,2023_jp1.txt
+13.00,Hokkaido Consadole Sapporo,Kashiwa Reysol,1,2,2,0-2,2023_jp1.txt
+15.00,Avispa Fukuoka,Kashima Antlers,0,0,X,,2023_jp1.txt
+18.00,Cerezo Osaka,Shonan Bellmare,0,2,2,0-0,2023_jp1.txt
+19.00,Sanfrecce Hiroshima,Nagoya Grampus,3,1,1,0-0,2023_jp1.txt
+,Sagan Tosu,Kyoto Sanga FC,3,2,1,1-1,2023_jp1.txt
+15.00,FC Tokyo,Gamba Osaka,3,0,1,2-0,2023_jp1.txt
+19.00,Kawasaki Frontale,Avispa Fukuoka,4,2,1,1-1,2023_jp1.txt
+19.30,Urawa Red Diamonds,Kashiwa Reysol,2,0,1,0-0,2023_jp1.txt
+13.00,Albirex Niigata,Sagan Tosu,1,1,X,1-1,2023_jp1.txt
+14.00,Yokohama F. Marinos,Hokkaido Consadole Sapporo,4,1,1,1-0,2023_jp1.txt
+,Gamba Osaka,Nagoya Grampus,0,1,2,0-1,2023_jp1.txt
+,Vissel Kobe,Kashima Antlers,3,1,1,2-0,2023_jp1.txt
+,Yokohama FC,FC Tokyo,1,0,1,1-0,2023_jp1.txt
+15.00,Kyoto Sanga FC,Shonan Bellmare,0,1,2,0-1,2023_jp1.txt
+16.00,Sanfrecce Hiroshima,Cerezo Osaka,0,0,X,,2023_jp1.txt
+19.00,Nagoya Grampus,Sagan Tosu,1,1,X,0-0,2023_jp1.txt
+13.00,Hokkaido Consadole Sapporo,Yokohama FC,2,1,1,2-0,2023_jp1.txt
+14.00,Avispa Fukuoka,Yokohama F. Marinos,0,4,2,0-2,2023_jp1.txt
+,Cerezo Osaka,Gamba Osaka,1,0,1,1-0,2023_jp1.txt
+,Kashima Antlers,Urawa Red Diamonds,0,0,X,,2023_jp1.txt
+,Kyoto Sanga FC,Albirex Niigata,0,1,2,0-1,2023_jp1.txt
+,Shonan Bellmare,Vissel Kobe,1,1,X,1-0,2023_jp1.txt
+15.00,FC Tokyo,Sanfrecce Hiroshima,1,2,2,0-0,2023_jp1.txt
+15.00,Kashiwa Reysol,Kawasaki Frontale,1,1,X,1-0,2023_jp1.txt
+14.00,Albirex Niigata,FC Tokyo,0,0,X,,2023_jp1.txt
+,Hokkaido Consadole Sapporo,Sanfrecce Hiroshima,0,0,X,,2023_jp1.txt
+,Shonan Bellmare,Nagoya Grampus,2,1,1,2-0,2023_jp1.txt
+15.00,Gamba Osaka,Avispa Fukuoka,1,2,2,1-0,2023_jp1.txt
+,Kashima Antlers,Kashiwa Reysol,1,1,X,0-0,2023_jp1.txt
+,Sagan Tosu,Yokohama FC,1,3,2,1-2,2023_jp1.txt
+14.00,Kawasaki Frontale,Kyoto Sanga FC,3,3,X,2-3,2023_jp1.txt
+,Yokohama F. Marinos,Cerezo Osaka,2,0,1,2-0,2023_jp1.txt
+15.00,Urawa Red Diamonds,Vissel Kobe,1,2,2,0-0,2023_jp1.txt
+19.00,Kawasaki Frontale,Kashima Antlers,3,0,1,1-0,2023_jp1.txt
+,Yokohama F. Marinos,Albirex Niigata,0,0,X,,2023_jp1.txt
+14.00,Cerezo Osaka,Kyoto Sanga FC,0,1,2,0-1,2023_jp1.txt
+,FC Tokyo,Hokkaido Consadole Sapporo,1,3,2,1-0,2023_jp1.txt
+,Kashiwa Reysol,Sagan Tosu,2,2,X,2-1,2023_jp1.txt
+,Sanfrecce Hiroshima,Gamba Osaka,3,0,1,2-0,2023_jp1.txt
+,Urawa Red Diamonds,Avispa Fukuoka,2,3,2,1-1,2023_jp1.txt
+,Vissel Kobe,Nagoya Grampus,2,1,1,2-1,2023_jp1.txt
+,Yokohama FC,Shonan Bellmare,0,1,2,0-0,2023_jp1.txt
+14.00,Albirex Niigata,Cerezo Osaka,1,0,1,0-0,2023_jp1.txt
+,Avispa Fukuoka,Sanfrecce Hiroshima,0,1,2,0-0,2023_jp1.txt
+,Hokkaido Consadole Sapporo,Urawa Red Diamonds,0,2,2,0-0,2023_jp1.txt
+,Gamba Osaka,Vissel Kobe,0,1,2,0-0,2023_jp1.txt
+,Kashima Antlers,Yokohama FC,2,1,1,2-0,2023_jp1.txt
+,Kyoto Sanga FC,Yokohama F. Marinos,3,1,1,1-1,2023_jp1.txt
+,Sagan Tosu,Kawasaki Frontale,0,1,2,0-0,2023_jp1.txt
+,Shonan Bellmare,FC Tokyo,0,1,2,0-0,2023_jp1.txt
+14.45,Nagoya Grampus,Kashiwa Reysol,1,1,X,0-0,2023_jp1.txt
+14.00,Sanfrecce Hiroshima,Urawa Red Diamonds,2,0,1,1-0,2024_jp1.txt
+18.00,Nagoya Grampus,Kashima Antlers,0,3,2,0-1,2024_jp1.txt
+13.00,Júbilo Iwata,Vissel Kobe,0,2,2,0-1,2024_jp1.txt
+14.00,Avispa Fukuoka,Hokkaido Consadole Sapporo,0,0,X,,2024_jp1.txt
+,Sagan Tosu,Albirex Niigata,1,2,2,1-1,2024_jp1.txt
+15.00,Cerezo Osaka,FC Tokyo,2,2,X,1-1,2024_jp1.txt
+,FC Machida Zelvia,Gamba Osaka,1,1,X,1-0,2024_jp1.txt
+,Shonan Bellmare,Kawasaki Frontale,1,2,2,1-1,2024_jp1.txt
+14.00,Kashiwa Reysol,Kyoto Sanga FC,1,1,X,0-0,2024_jp1.txt
+,Tokyo Verdy,Yokohama F. Marinos,1,2,2,1-0,2024_jp1.txt
+19.00,Kawasaki Frontale,Júbilo Iwata,4,5,2,1-3,2024_jp1.txt
+,Yokohama F. Marinos,Avispa Fukuoka,0,1,2,0-0,2024_jp1.txt
+13.00,Vissel Kobe,Kashiwa Reysol,0,1,2,0-0,2024_jp1.txt
+14.00,Kyoto Sanga FC,Shonan Bellmare,1,2,2,1-1,2024_jp1.txt
+,Nagoya Grampus,FC Machida Zelvia,0,1,2,0-1,2024_jp1.txt
+,Sagan Tosu,Hokkaido Consadole Sapporo,4,0,1,1-0,2024_jp1.txt
+15.00,FC Tokyo,Sanfrecce Hiroshima,1,1,X,0-0,2024_jp1.txt
+,Gamba Osaka,Albirex Niigata,1,0,1,0-0,2024_jp1.txt
+,Kashima Antlers,Cerezo Osaka,1,1,X,0-0,2024_jp1.txt
+16.00,Urawa Red Diamonds,Tokyo Verdy,1,1,X,0-1,2024_jp1.txt
+14.00,Albirex Niigata,Nagoya Grampus,1,0,1,0-0,2024_jp1.txt
+,Júbilo Iwata,Kashiwa Reysol,0,1,2,0-1,2024_jp1.txt
+,FC Machida Zelvia,Kashima Antlers,1,0,1,1-0,2024_jp1.txt
+15.00,Avispa Fukuoka,Shonan Bellmare,1,1,X,1-1,2024_jp1.txt
+,Sanfrecce Hiroshima,Sagan Tosu,4,0,1,2-0,2024_jp1.txt
+16.00,Cerezo Osaka,Tokyo Verdy,2,1,1,1-0,2024_jp1.txt
+,FC Tokyo,Vissel Kobe,1,2,2,0-0,2024_jp1.txt
+,Kawasaki Frontale,Kyoto Sanga FC,0,1,2,0-0,2024_jp1.txt
+13.05,Hokkaido Consadole Sapporo,Urawa Red Diamonds,0,1,2,0-1,2024_jp1.txt
+19.00,Yokohama F. Marinos,Gamba Osaka,2,0,1,0-0,2024_jp1.txt
+13.00,Avispa Fukuoka,FC Tokyo,1,3,2,0-2,2024_jp1.txt
+14.00,Hokkaido Consadole Sapporo,FC Machida Zelvia,1,2,2,0-0,2024_jp1.txt
+,Vissel Kobe,Sanfrecce Hiroshima,0,0,X,,2024_jp1.txt
+15.00,Gamba Osaka,Júbilo Iwata,2,1,1,1-0,2024_jp1.txt
+,Kashiwa Reysol,Nagoya Grampus,0,2,2,0-1,2024_jp1.txt
+,Sagan Tosu,Cerezo Osaka,0,2,2,0-0,2024_jp1.txt
+16.00,Tokyo Verdy,Albirex Niigata,2,2,X,1-1,2024_jp1.txt
+14.00,Kyoto Sanga FC,Yokohama F. Marinos,2,3,2,2-2,2024_jp1.txt
+15.00,Kashima Antlers,Kawasaki Frontale,2,1,1,0-1,2024_jp1.txt
+,Shonan Bellmare,Urawa Red Diamonds,4,4,X,2-1,2024_jp1.txt
+19.00,Tokyo Verdy,Kyoto Sanga FC,2,2,X,0-2,2024_jp1.txt
+13.00,Sanfrecce Hiroshima,Gamba Osaka,1,1,X,0-0,2024_jp1.txt
+14.00,Albirex Niigata,Kashiwa Reysol,1,1,X,0-1,2024_jp1.txt
+,Vissel Kobe,Hokkaido Consadole Sapporo,6,1,1,3-0,2024_jp1.txt
+15.00,Kashima Antlers,Júbilo Iwata,1,0,1,1-0,2024_jp1.txt
+,Kawasaki Frontale,FC Tokyo,3,0,1,1-0,2024_jp1.txt
+,FC Machida Zelvia,Sagan Tosu,3,1,1,1-1,2024_jp1.txt
+,Urawa Red Diamonds,Avispa Fukuoka,2,1,1,0-1,2024_jp1.txt
+16.00,Cerezo Osaka,Shonan Bellmare,2,0,1,0-0,2024_jp1.txt
+,Nagoya Grampus,Yokohama F. Marinos,2,1,1,0-0,2024_jp1.txt
+19.00,Avispa Fukuoka,Kashima Antlers,1,0,1,0-0,2024_jp1.txt
+,Gamba Osaka,Kyoto Sanga FC,0,0,X,,2024_jp1.txt
+,Júbilo Iwata,Albirex Niigata,2,0,1,0-0,2024_jp1.txt
+,Kashiwa Reysol,Cerezo Osaka,1,1,X,1-1,2024_jp1.txt
+,FC Machida Zelvia,Sanfrecce Hiroshima,1,2,2,0-1,2024_jp1.txt
+,Sagan Tosu,Vissel Kobe,0,0,X,,2024_jp1.txt
+,Shonan Bellmare,Tokyo Verdy,1,2,2,1-0,2024_jp1.txt
+,Yokohama F. Marinos,Kawasaki Frontale,0,0,X,,2024_jp1.txt
+19.30,Hokkaido Consadole Sapporo,Nagoya Grampus,1,2,2,1-0,2024_jp1.txt
+,FC Tokyo,Urawa Red Diamonds,2,1,1,0-1,2024_jp1.txt
+14.00,Hokkaido Consadole Sapporo,Gamba Osaka,1,0,1,0-0,2024_jp1.txt
+13.00,Tokyo Verdy,Kashiwa Reysol,1,1,X,1-0,2024_jp1.txt
+14.00,Albirex Niigata,Cerezo Osaka,0,1,2,0-0,2024_jp1.txt
+,Kyoto Sanga FC,Júbilo Iwata,0,3,2,0-0,2024_jp1.txt
+,Sanfrecce Hiroshima,Shonan Bellmare,2,0,1,0-0,2024_jp1.txt
+,Vissel Kobe,Yokohama F. Marinos,1,2,2,0-0,2024_jp1.txt
+15.00,Kawasaki Frontale,FC Machida Zelvia,0,1,2,0-1,2024_jp1.txt
+,Nagoya Grampus,Avispa Fukuoka,0,0,X,,2024_jp1.txt
+,Urawa Red Diamonds,Sagan Tosu,3,0,1,1-0,2024_jp1.txt
+17.00,FC Tokyo,Kashima Antlers,2,0,1,0-0,2024_jp1.txt
+19.00,Kashiwa Reysol,Urawa Red Diamonds,1,0,1,0-0,2024_jp1.txt
+14.00,Albirex Niigata,Hokkaido Consadole Sapporo,1,1,X,0-1,2024_jp1.txt
+,Avispa Fukuoka,Sanfrecce Hiroshima,1,1,X,1-1,2024_jp1.txt
+,Júbilo Iwata,Nagoya Grampus,0,1,2,0-1,2024_jp1.txt
+,Yokohama F. Marinos,Shonan Bellmare,2,2,X,1-1,2024_jp1.txt
+15.00,Cerezo Osaka,Kawasaki Frontale,1,0,1,0-0,2024_jp1.txt
+,Kashima Antlers,Kyoto Sanga FC,1,0,1,0-0,2024_jp1.txt
+,FC Machida Zelvia,Vissel Kobe,1,2,2,0-1,2024_jp1.txt
+16.00,Tokyo Verdy,FC Tokyo,2,2,X,2-0,2024_jp1.txt
+15.00,Gamba Osaka,Sagan Tosu,2,1,1,1-1,2024_jp1.txt
+14.00,Hokkaido Consadole Sapporo,Sanfrecce Hiroshima,1,1,X,1-0,2024_jp1.txt
+,Kyoto Sanga FC,Albirex Niigata,0,1,2,0-0,2024_jp1.txt
+,Sagan Tosu,Kashima Antlers,4,2,1,2-1,2024_jp1.txt
+15.00,Avispa Fukuoka,Júbilo Iwata,2,2,X,0-1,2024_jp1.txt
+,Shonan Bellmare,Vissel Kobe,0,1,2,0-0,2024_jp1.txt
+16.00,Kawasaki Frontale,Tokyo Verdy,0,0,X,,2024_jp1.txt
+,Urawa Red Diamonds,Gamba Osaka,0,1,2,0-0,2024_jp1.txt
+15.00,FC Tokyo,FC Machida Zelvia,1,2,2,1-2,2024_jp1.txt
+,Nagoya Grampus,Cerezo Osaka,2,1,1,0-0,2024_jp1.txt
+19.00,Yokohama F. Marinos,Kashiwa Reysol,4,0,1,2-0,2024_jp1.txt
+13.00,Hokkaido Consadole Sapporo,Shonan Bellmare,3,3,X,2-0,2024_jp1.txt
+14.00,Albirex Niigata,FC Tokyo,1,3,2,0-1,2024_jp1.txt
+,Júbilo Iwata,FC Machida Zelvia,2,0,1,0-0,2024_jp1.txt
+,Vissel Kobe,Kyoto Sanga FC,0,1,2,0-0,2024_jp1.txt
+15.00,Cerezo Osaka,Yokohama F. Marinos,2,2,X,1-1,2024_jp1.txt
+14.00,Sanfrecce Hiroshima,Kawasaki Frontale,2,2,X,1-0,2024_jp1.txt
+,Tokyo Verdy,Avispa Fukuoka,0,0,X,,2024_jp1.txt
+15.00,Gamba Osaka,Kashima Antlers,1,2,2,1-1,2024_jp1.txt
+,Kashiwa Reysol,Sagan Tosu,1,1,X,1-1,2024_jp1.txt
+,Urawa Red Diamonds,Nagoya Grampus,2,1,1,1-0,2024_jp1.txt
+14.00,Albirex Niigata,Sanfrecce Hiroshima,1,1,X,0-0,2024_jp1.txt
+,Yokohama F. Marinos,Júbilo Iwata,1,1,X,0-0,2024_jp1.txt
+15.00,Cerezo Osaka,Hokkaido Consadole Sapporo,1,1,X,0-1,2024_jp1.txt
+,FC Tokyo,Kyoto Sanga FC,2,1,1,2-0,2024_jp1.txt
+,Kashima Antlers,Shonan Bellmare,3,1,1,0-0,2024_jp1.txt
+,FC Machida Zelvia,Kashiwa Reysol,2,0,1,1-0,2024_jp1.txt
+,Sagan Tosu,Tokyo Verdy,0,2,2,0-1,2024_jp1.txt
+16.00,Avispa Fukuoka,Gamba Osaka,1,0,1,1-0,2024_jp1.txt
+,Kawasaki Frontale,Urawa Red Diamonds,3,1,1,1-1,2024_jp1.txt
+19.00,Nagoya Grampus,Vissel Kobe,0,2,2,0-1,2024_jp1.txt
+13.00,Tokyo Verdy,Júbilo Iwata,3,2,1,2-0,2024_jp1.txt
+,Vissel Kobe,Albirex Niigata,3,2,1,2-0,2024_jp1.txt
+13.05,Gamba Osaka,Cerezo Osaka,1,0,1,1-0,2024_jp1.txt
+14.00,Avispa Fukuoka,Kawasaki Frontale,1,1,X,0-0,2024_jp1.txt
+,Hokkaido Consadole Sapporo,FC Tokyo,1,2,2,1-1,2024_jp1.txt
+,Kyoto Sanga FC,FC Machida Zelvia,0,3,2,0-1,2024_jp1.txt
+15.00,Sanfrecce Hiroshima,Nagoya Grampus,2,3,2,1-2,2024_jp1.txt
+16.00,Kashiwa Reysol,Kashima Antlers,1,2,2,0-1,2024_jp1.txt
+,Shonan Bellmare,Sagan Tosu,2,1,1,1-1,2024_jp1.txt
+17.00,Urawa Red Diamonds,Yokohama F. Marinos,2,1,1,1-0,2024_jp1.txt
+14.00,Albirex Niigata,Urawa Red Diamonds,2,4,2,0-1,2024_jp1.txt
+,Júbilo Iwata,Sagan Tosu,0,3,2,0-1,2024_jp1.txt
+,Kyoto Sanga FC,Avispa Fukuoka,2,3,2,1-1,2024_jp1.txt
+15.00,Kawasaki Frontale,Hokkaido Consadole Sapporo,3,0,1,3-0,2024_jp1.txt
+,Shonan Bellmare,FC Machida Zelvia,0,0,X,,2024_jp1.txt
+16.00,Cerezo Osaka,Vissel Kobe,1,4,2,0-2,2024_jp1.txt
+,Nagoya Grampus,Gamba Osaka,0,1,2,0-0,2024_jp1.txt
+17.00,FC Tokyo,Kashiwa Reysol,3,3,X,3-1,2024_jp1.txt
+13.05,Kashima Antlers,Tokyo Verdy,3,3,X,2-0,2024_jp1.txt
+19.00,Yokohama F. Marinos,Sanfrecce Hiroshima,3,2,1,1-1,2024_jp1.txt
+19.00,Albirex Niigata,Yokohama F. Marinos,3,1,1,0-1,2024_jp1.txt
+,Hokkaido Consadole Sapporo,Júbilo Iwata,1,0,1,1-0,2024_jp1.txt
+,Kashiwa Reysol,Shonan Bellmare,2,1,1,0-0,2024_jp1.txt
+,FC Machida Zelvia,Cerezo Osaka,2,1,1,0-0,2024_jp1.txt
+,Nagoya Grampus,FC Tokyo,3,1,1,1-0,2024_jp1.txt
+,Sagan Tosu,Kawasaki Frontale,5,2,1,3-2,2024_jp1.txt
+,Sanfrecce Hiroshima,Kashima Antlers,1,3,2,0-2,2024_jp1.txt
+,Tokyo Verdy,Gamba Osaka,0,0,X,,2024_jp1.txt
+,Vissel Kobe,Avispa Fukuoka,1,0,1,0-0,2024_jp1.txt
+19.30,Urawa Red Diamonds,Kyoto Sanga FC,3,0,1,1-0,2024_jp1.txt
+16.00,Avispa Fukuoka,Cerezo Osaka,0,3,2,0-2,2024_jp1.txt
+19.00,Sagan Tosu,Nagoya Grampus,0,2,2,0-1,2024_jp1.txt
+14.00,Júbilo Iwata,Urawa Red Diamonds,1,1,X,0-0,2024_jp1.txt
+,Kyoto Sanga FC,Sanfrecce Hiroshima,0,5,2,0-3,2024_jp1.txt
+,FC Machida Zelvia,Tokyo Verdy,5,0,1,2-0,2024_jp1.txt
+15.00,FC Tokyo,Yokohama F. Marinos,1,1,X,0-1,2024_jp1.txt
+,Gamba Osaka,Kawasaki Frontale,3,1,1,1-1,2024_jp1.txt
+,Kashima Antlers,Vissel Kobe,1,0,1,0-0,2024_jp1.txt
+16.00,Kashiwa Reysol,Hokkaido Consadole Sapporo,2,1,1,1-0,2024_jp1.txt
+,Shonan Bellmare,Albirex Niigata,2,1,1,1-1,2024_jp1.txt
+14.00,Hokkaido Consadole Sapporo,Kashima Antlers,0,3,2,0-1,2024_jp1.txt
+,Júbilo Iwata,Shonan Bellmare,3,2,1,1-2,2024_jp1.txt
+16.00,Albirex Niigata,Avispa Fukuoka,1,2,2,0-1,2024_jp1.txt
+,Kawasaki Frontale,Kashiwa Reysol,1,1,X,1-0,2024_jp1.txt
+14.00,Vissel Kobe,Tokyo Verdy,0,1,2,0-0,2024_jp1.txt
+15.00,Cerezo Osaka,Sanfrecce Hiroshima,1,1,X,0-0,2024_jp1.txt
+,FC Tokyo,Gamba Osaka,0,1,2,0-0,2024_jp1.txt
+,Nagoya Grampus,Kyoto Sanga FC,1,1,X,0-1,2024_jp1.txt
+16.00,Urawa Red Diamonds,FC Machida Zelvia,1,2,2,0-0,2024_jp1.txt
+19.00,Yokohama F. Marinos,Sagan Tosu,0,1,2,0-0,2024_jp1.txt
+19.00,Sagan Tosu,FC Tokyo,0,1,2,0-1,2024_jp1.txt
+14.00,Sanfrecce Hiroshima,Júbilo Iwata,2,0,1,1-0,2024_jp1.txt
+15.00,Kashima Antlers,Yokohama F. Marinos,3,2,1,0-1,2024_jp1.txt
+,FC Machida Zelvia,Albirex Niigata,1,3,2,1-2,2024_jp1.txt
+,Shonan Bellmare,Gamba Osaka,1,2,2,0-1,2024_jp1.txt
+16.00,Urawa Red Diamonds,Vissel Kobe,1,1,X,0-1,2024_jp1.txt
+19.00,Kyoto Sanga FC,Cerezo Osaka,1,1,X,0-1,2024_jp1.txt
+13.05,Tokyo Verdy,Hokkaido Consadole Sapporo,5,3,1,3-1,2024_jp1.txt
+17.10,Kawasaki Frontale,Nagoya Grampus,2,1,1,2-0,2024_jp1.txt
+19.00,Kashiwa Reysol,Avispa Fukuoka,0,2,2,0-2,2024_jp1.txt
+16.00,Yokohama F. Marinos,FC Machida Zelvia,1,3,2,1-1,2024_jp1.txt
+18.30,Sanfrecce Hiroshima,Tokyo Verdy,4,1,1,1-0,2024_jp1.txt
+19.00,Cerezo Osaka,Urawa Red Diamonds,2,1,1,1-0,2024_jp1.txt
+,Kyoto Sanga FC,Hokkaido Consadole Sapporo,2,0,1,2-0,2024_jp1.txt
+14.00,Vissel Kobe,Kawasaki Frontale,1,0,1,1-0,2024_jp1.txt
+15.30,Avispa Fukuoka,Sagan Tosu,2,0,1,1-0,2024_jp1.txt
+18.00,FC Tokyo,Júbilo Iwata,1,1,X,0-1,2024_jp1.txt
+,Gamba Osaka,Kashiwa Reysol,2,1,1,2-0,2024_jp1.txt
+,Kashima Antlers,Albirex Niigata,1,1,X,0-1,2024_jp1.txt
+18.45,Nagoya Grampus,Shonan Bellmare,1,1,X,1-0,2024_jp1.txt
+15.00,FC Machida Zelvia,Avispa Fukuoka,0,0,X,,2024_jp1.txt
+18.00,Albirex Niigata,Kawasaki Frontale,2,2,X,0-1,2024_jp1.txt
+,Tokyo Verdy,Nagoya Grampus,1,0,1,0-0,2024_jp1.txt
+18.30,Gamba Osaka,Vissel Kobe,2,1,1,0-0,2024_jp1.txt
+,Júbilo Iwata,Cerezo Osaka,1,1,X,0-0,2024_jp1.txt
+19.00,Kashiwa Reysol,Sanfrecce Hiroshima,0,1,2,0-1,2024_jp1.txt
+,Sagan Tosu,Kyoto Sanga FC,3,0,1,0-0,2024_jp1.txt
+,Shonan Bellmare,FC Tokyo,0,1,2,0-0,2024_jp1.txt
+,Urawa Red Diamonds,Kashima Antlers,2,2,X,0-2,2024_jp1.txt
+14.00,Hokkaido Consadole Sapporo,Yokohama F. Marinos,0,1,2,0-0,2024_jp1.txt
+19.00,Avispa Fukuoka,Yokohama F. Marinos,2,1,1,1-0,2024_jp1.txt
+,Cerezo Osaka,Sagan Tosu,1,0,1,1-0,2024_jp1.txt
+,FC Tokyo,Hokkaido Consadole Sapporo,1,0,1,0-0,2024_jp1.txt
+,Júbilo Iwata,Tokyo Verdy,3,0,1,0-0,2024_jp1.txt
+,Kashima Antlers,Gamba Osaka,0,0,X,,2024_jp1.txt
+,Kawasaki Frontale,Shonan Bellmare,1,1,X,0-0,2024_jp1.txt
+,Kyoto Sanga FC,Kashiwa Reysol,2,2,X,1-1,2024_jp1.txt
+,Nagoya Grampus,Urawa Red Diamonds,0,1,2,0-1,2024_jp1.txt
+,Sanfrecce Hiroshima,Albirex Niigata,1,1,X,1-1,2024_jp1.txt
+,Vissel Kobe,FC Machida Zelvia,0,0,X,,2024_jp1.txt
+14.00,Hokkaido Consadole Sapporo,Albirex Niigata,0,1,2,0-0,2024_jp1.txt
+19.00,Kawasaki Frontale,Sanfrecce Hiroshima,1,1,X,1-0,2024_jp1.txt
+,Yokohama F. Marinos,Tokyo Verdy,1,2,2,1-2,2024_jp1.txt
+18.00,Cerezo Osaka,Nagoya Grampus,2,1,1,1-0,2024_jp1.txt
+,Gamba Osaka,FC Machida Zelvia,1,3,2,1-1,2024_jp1.txt
+18.30,FC Tokyo,Avispa Fukuoka,0,1,2,0-0,2024_jp1.txt
+,Urawa Red Diamonds,Júbilo Iwata,3,0,1,1-0,2024_jp1.txt
+19.00,Sagan Tosu,Kashiwa Reysol,1,4,2,1-0,2024_jp1.txt
+,Shonan Bellmare,Kyoto Sanga FC,0,1,2,0-1,2024_jp1.txt
+,Vissel Kobe,Kashima Antlers,3,1,1,2-1,2024_jp1.txt
+19.00,Sanfrecce Hiroshima,Vissel Kobe,1,3,2,1-1,2024_jp1.txt
+18.00,Kashima Antlers,Hokkaido Consadole Sapporo,2,0,1,0-0,2024_jp1.txt
+,FC Machida Zelvia,Nagoya Grampus,1,0,1,1-0,2024_jp1.txt
+,Tokyo Verdy,Cerezo Osaka,1,1,X,0-0,2024_jp1.txt
+18.30,Albirex Niigata,Sagan Tosu,3,4,2,1-2,2024_jp1.txt
+,Júbilo Iwata,Kawasaki Frontale,2,2,X,1-0,2024_jp1.txt
+,Urawa Red Diamonds,Shonan Bellmare,2,3,2,0-1,2024_jp1.txt
+19.00,Gamba Osaka,Yokohama F. Marinos,4,0,1,2-0,2024_jp1.txt
+19.30,Kashiwa Reysol,FC Tokyo,3,2,1,2-1,2024_jp1.txt
+19.00,Avispa Fukuoka,Kyoto Sanga FC,1,2,2,0-0,2024_jp1.txt
+14.00,Hokkaido Consadole Sapporo,Vissel Kobe,1,1,X,1-0,2024_jp1.txt
+19.00,FC Tokyo,Albirex Niigata,2,0,1,1-0,2024_jp1.txt
+18.00,Nagoya Grampus,Kashiwa Reysol,2,1,1,0-1,2024_jp1.txt
+,Tokyo Verdy,FC Machida Zelvia,0,1,2,0-1,2024_jp1.txt
+18.30,Kyoto Sanga FC,Urawa Red Diamonds,0,0,X,,2024_jp1.txt
+,Sanfrecce Hiroshima,Avispa Fukuoka,1,0,1,0-0,2024_jp1.txt
+19.00,Kawasaki Frontale,Cerezo Osaka,1,1,X,1-0,2024_jp1.txt
+,Sagan Tosu,Gamba Osaka,0,2,2,0-1,2024_jp1.txt
+,Shonan Bellmare,Júbilo Iwata,5,0,1,3-0,2024_jp1.txt
+19.30,Yokohama F. Marinos,Kashima Antlers,4,1,1,1-1,2024_jp1.txt
+18.00,Kashima Antlers,FC Tokyo,2,1,1,1-1,2024_jp1.txt
+,FC Machida Zelvia,Yokohama F. Marinos,1,2,2,0-2,2024_jp1.txt
+19.00,Avispa Fukuoka,Tokyo Verdy,0,1,2,0-1,2024_jp1.txt
+,Cerezo Osaka,Albirex Niigata,1,2,2,0-1,2024_jp1.txt
+,Gamba Osaka,Shonan Bellmare,0,1,2,0-0,2024_jp1.txt
+,Júbilo Iwata,Kyoto Sanga FC,1,2,2,1-0,2024_jp1.txt
+,Kashiwa Reysol,Kawasaki Frontale,2,3,2,1-2,2024_jp1.txt
+,Urawa Red Diamonds,Hokkaido Consadole Sapporo,3,4,2,0-2,2024_jp1.txt
+,Vissel Kobe,Nagoya Grampus,3,3,X,1-1,2024_jp1.txt
+19.00,Sagan Tosu,Sanfrecce Hiroshima,1,4,2,0-1,2024_jp1.txt
+19.00,Albirex Niigata,Júbilo Iwata,2,2,X,2-0,2024_jp1.txt
+,Cerezo Osaka,FC Machida Zelvia,0,0,X,,2024_jp1.txt
+,Gamba Osaka,FC Tokyo,0,0,X,,2024_jp1.txt
+,Kashima Antlers,Sagan Tosu,3,0,1,1-0,2024_jp1.txt
+,Kawasaki Frontale,Vissel Kobe,3,0,1,0-0,2024_jp1.txt
+,Kyoto Sanga FC,Nagoya Grampus,3,2,1,0-2,2024_jp1.txt
+,Shonan Bellmare,Avispa Fukuoka,1,1,X,0-0,2024_jp1.txt
+,Tokyo Verdy,Sanfrecce Hiroshima,0,1,2,0-0,2024_jp1.txt
+19.30,Yokohama F. Marinos,Hokkaido Consadole Sapporo,3,2,1,2-1,2024_jp1.txt
+,Urawa Red Diamonds,Kashiwa Reysol,1,0,1,0-0,2024_jp1.txt
+14.00,Hokkaido Consadole Sapporo,Avispa Fukuoka,2,2,X,0-1,2024_jp1.txt
+18.00,FC Machida Zelvia,Shonan Bellmare,0,1,2,0-0,2024_jp1.txt
+18.30,Sanfrecce Hiroshima,Cerezo Osaka,2,0,1,0-0,2024_jp1.txt
+19.00,FC Tokyo,Kawasaki Frontale,0,3,2,0-2,2024_jp1.txt
+,Júbilo Iwata,Kashima Antlers,2,1,1,0-1,2024_jp1.txt
+,Kashiwa Reysol,Gamba Osaka,0,0,X,,2024_jp1.txt
+,Nagoya Grampus,Tokyo Verdy,1,0,1,1-0,2024_jp1.txt
+,Sagan Tosu,Urawa Red Diamonds,1,1,X,0-0,2024_jp1.txt
+19.30,Yokohama F. Marinos,Vissel Kobe,1,2,2,1-1,2024_jp1.txt
+19.00,Albirex Niigata,Kyoto Sanga FC,2,0,1,1-0,2024_jp1.txt
+19.30,Hokkaido Consadole Sapporo,Sagan Tosu,5,3,1,3-0,2024_jp1.txt
+18.00,Kashima Antlers,Urawa Red Diamonds,0,0,X,,2024_jp1.txt
+,FC Machida Zelvia,Júbilo Iwata,4,0,1,3-0,2024_jp1.txt
+19.00,Cerezo Osaka,Kyoto Sanga FC,3,5,2,1-3,2024_jp1.txt
+,FC Tokyo,Tokyo Verdy,0,0,X,,2024_jp1.txt
+,Kawasaki Frontale,Yokohama F. Marinos,1,3,2,0-0,2024_jp1.txt
+,Nagoya Grampus,Sanfrecce Hiroshima,1,2,2,0-0,2024_jp1.txt
+,Shonan Bellmare,Kashiwa Reysol,1,2,2,0-0,2024_jp1.txt
+,Vissel Kobe,Gamba Osaka,2,2,X,1-0,2024_jp1.txt
+19.30,Avispa Fukuoka,Albirex Niigata,0,1,2,0-0,2024_jp1.txt
+18.30,Gamba Osaka,Avispa Fukuoka,2,2,X,1-2,2024_jp1.txt
+19.00,Kyoto Sanga FC,FC Tokyo,3,0,1,2-0,2024_jp1.txt
+,Shonan Bellmare,Nagoya Grampus,0,1,2,0-1,2024_jp1.txt
+,Yokohama F. Marinos,Cerezo Osaka,4,0,1,0-0,2024_jp1.txt
+18.00,Tokyo Verdy,Kashima Antlers,2,1,1,0-0,2024_jp1.txt
+18.30,Sanfrecce Hiroshima,Kashiwa Reysol,2,0,1,1-0,2024_jp1.txt
+19.00,Albirex Niigata,FC Machida Zelvia,0,0,X,,2024_jp1.txt
+,Júbilo Iwata,Hokkaido Consadole Sapporo,0,2,2,0-1,2024_jp1.txt
+,Vissel Kobe,Sagan Tosu,2,0,1,1-0,2024_jp1.txt
+19.00,Urawa Red Diamonds,Kawasaki Frontale,1,1,X,1-1,2024_jp1.txt
+18.00,FC Machida Zelvia,Urawa Red Diamonds,2,2,X,0-1,2024_jp1.txt
+18.30,Sanfrecce Hiroshima,FC Tokyo,3,2,1,2-0,2024_jp1.txt
+19.00,Kashiwa Reysol,Tokyo Verdy,2,3,2,2-2,2024_jp1.txt
+,Sagan Tosu,Shonan Bellmare,1,2,2,0-1,2024_jp1.txt
+14.00,Hokkaido Consadole Sapporo,Kawasaki Frontale,2,0,1,0-0,2024_jp1.txt
+19.00,Avispa Fukuoka,Vissel Kobe,0,2,2,0-1,2024_jp1.txt
+19.00,Nagoya Grampus,Albirex Niigata,3,0,1,2-0,2024_jp1.txt
+19.00,Cerezo Osaka,Gamba Osaka,1,0,1,0-0,2024_jp1.txt
+14.00,Júbilo Iwata,Yokohama F. Marinos,3,4,2,1-1,2024_jp1.txt
+14.00,Kyoto Sanga FC,Kashima Antlers,0,0,X,,2024_jp1.txt
+19.00,Kawasaki Frontale,Sagan Tosu,3,2,1,1-0,2024_jp1.txt
+,Vissel Kobe,Cerezo Osaka,2,1,1,2-0,2024_jp1.txt
+,Yokohama F. Marinos,Kyoto Sanga FC,1,2,2,1-1,2024_jp1.txt
+14.00,Hokkaido Consadole Sapporo,Tokyo Verdy,0,2,2,0-0,2024_jp1.txt
+18.00,Avispa Fukuoka,FC Machida Zelvia,0,3,2,0-0,2024_jp1.txt
+,Kashima Antlers,Sanfrecce Hiroshima,2,2,X,1-2,2024_jp1.txt
+19.00,Albirex Niigata,Shonan Bellmare,3,1,1,2-0,2024_jp1.txt
+,FC Tokyo,Nagoya Grampus,4,1,1,2-0,2024_jp1.txt
+,Gamba Osaka,Urawa Red Diamonds,0,1,2,0-0,2024_jp1.txt
+,Kashiwa Reysol,Júbilo Iwata,0,2,2,0-2,2024_jp1.txt
+18.00,Kashima Antlers,Kashiwa Reysol,0,0,X,,2024_jp1.txt
+19.00,Júbilo Iwata,Avispa Fukuoka,0,0,X,,2024_jp1.txt
+,FC Machida Zelvia,Hokkaido Consadole Sapporo,0,0,X,,2024_jp1.txt
+,Urawa Red Diamonds,FC Tokyo,0,2,2,0-2,2024_jp1.txt
+16.00,Nagoya Grampus,Kawasaki Frontale,2,0,1,1-0,2024_jp1.txt
+18.00,Albirex Niigata,Vissel Kobe,2,3,2,2-1,2024_jp1.txt
+,Tokyo Verdy,Sagan Tosu,2,0,1,1-0,2024_jp1.txt
+18.30,Sanfrecce Hiroshima,Yokohama F. Marinos,6,2,1,3-2,2024_jp1.txt
+19.00,Kyoto Sanga FC,Gamba Osaka,2,2,X,1-1,2024_jp1.txt
+,Shonan Bellmare,Cerezo Osaka,1,2,2,1-2,2024_jp1.txt
+19.00,Kawasaki Frontale,Albirex Niigata,5,1,1,2-0,2024_jp1.txt
+13.00,Hokkaido Consadole Sapporo,Kyoto Sanga FC,2,0,1,1-0,2024_jp1.txt
+16.00,Nagoya Grampus,Júbilo Iwata,2,0,1,0-0,2024_jp1.txt
+17.00,Gamba Osaka,Tokyo Verdy,1,1,X,0-0,2024_jp1.txt
+,Yokohama F. Marinos,FC Tokyo,1,3,2,1-1,2024_jp1.txt
+18.00,Cerezo Osaka,Kashiwa Reysol,0,0,X,,2024_jp1.txt
+19.00,Sagan Tosu,Avispa Fukuoka,0,0,X,,2024_jp1.txt
+,Sanfrecce Hiroshima,FC Machida Zelvia,2,0,1,2-0,2024_jp1.txt
+,Shonan Bellmare,Kashima Antlers,3,2,1,1-2,2024_jp1.txt
+,Vissel Kobe,Urawa Red Diamonds,1,0,1,1-0,2024_jp1.txt
+19.00,Avispa Fukuoka,Nagoya Grampus,1,0,1,0-0,2024_jp1.txt
+14.00,Albirex Niigata,Kashima Antlers,0,4,2,0-3,2024_jp1.txt
+15.00,FC Tokyo,Sagan Tosu,1,1,X,0-0,2024_jp1.txt
+,FC Machida Zelvia,Kawasaki Frontale,1,4,2,1-2,2024_jp1.txt
+16.00,Kashiwa Reysol,Yokohama F. Marinos,1,0,1,1-0,2024_jp1.txt
+,Urawa Red Diamonds,Cerezo Osaka,0,1,2,0-1,2024_jp1.txt
+17.30,Gamba Osaka,Hokkaido Consadole Sapporo,2,1,1,0-1,2024_jp1.txt
+14.00,Kyoto Sanga FC,Vissel Kobe,2,3,2,0-2,2024_jp1.txt
+16.00,Júbilo Iwata,Sanfrecce Hiroshima,1,2,2,0-1,2024_jp1.txt
+,Tokyo Verdy,Shonan Bellmare,0,2,2,0-1,2024_jp1.txt
+19.00,Kawasaki Frontale,Gamba Osaka,1,1,X,0-1,2024_jp1.txt
+,Vissel Kobe,FC Tokyo,0,2,2,0-1,2024_jp1.txt
+19.30,Yokohama F. Marinos,Albirex Niigata,0,0,X,,2024_jp1.txt
+14.00,Kashima Antlers,Avispa Fukuoka,0,0,X,,2024_jp1.txt
+,Kashiwa Reysol,FC Machida Zelvia,1,1,X,0-0,2024_jp1.txt
+,Kyoto Sanga FC,Sagan Tosu,2,0,1,0-0,2024_jp1.txt
+,Nagoya Grampus,Hokkaido Consadole Sapporo,0,2,2,0-1,2024_jp1.txt
+15.00,Cerezo Osaka,Júbilo Iwata,1,2,2,0-1,2024_jp1.txt
+,Shonan Bellmare,Sanfrecce Hiroshima,2,1,1,0-1,2024_jp1.txt
+17.00,Tokyo Verdy,Urawa Red Diamonds,2,1,1,0-1,2024_jp1.txt
+19.00,Albirex Niigata,Tokyo Verdy,0,2,2,0-0,2024_jp1.txt
+,Gamba Osaka,Nagoya Grampus,3,2,1,2-1,2024_jp1.txt
+19.00,Yokohama F. Marinos,Urawa Red Diamonds,0,0,X,,2024_jp1.txt
+19.00,Kawasaki Frontale,Kashima Antlers,1,3,2,0-3,2024_jp1.txt
+,Vissel Kobe,Júbilo Iwata,2,0,1,0-0,2024_jp1.txt
+13.00,Hokkaido Consadole Sapporo,Cerezo Osaka,1,1,X,1-0,2024_jp1.txt
+,Sanfrecce Hiroshima,Kyoto Sanga FC,0,1,2,0-0,2024_jp1.txt
+14.00,FC Tokyo,Shonan Bellmare,0,2,2,0-1,2024_jp1.txt
+,Sagan Tosu,FC Machida Zelvia,2,1,1,1-0,2024_jp1.txt
+15.00,Avispa Fukuoka,Kashiwa Reysol,2,1,1,1-0,2024_jp1.txt
+14.00,Kashima Antlers,Nagoya Grampus,0,0,X,,2024_jp1.txt
+,Kyoto Sanga FC,Kawasaki Frontale,1,1,X,0-0,2024_jp1.txt
+,FC Machida Zelvia,FC Tokyo,3,0,1,1-0,2024_jp1.txt
+,Sagan Tosu,Yokohama F. Marinos,1,2,2,1-1,2024_jp1.txt
+,Shonan Bellmare,Hokkaido Consadole Sapporo,1,1,X,0-0,2024_jp1.txt
+15.00,Cerezo Osaka,Avispa Fukuoka,1,0,1,0-0,2024_jp1.txt
+,Júbilo Iwata,Gamba Osaka,3,4,2,1-2,2024_jp1.txt
+,Kashiwa Reysol,Albirex Niigata,1,1,X,0-0,2024_jp1.txt
+14.00,Tokyo Verdy,Vissel Kobe,1,1,X,0-1,2024_jp1.txt
+15.00,Urawa Red Diamonds,Sanfrecce Hiroshima,3,0,1,1-0,2024_jp1.txt
+14.00,Albirex Niigata,Gamba Osaka,0,1,2,0-1,2024_jp1.txt
+,Avispa Fukuoka,Urawa Red Diamonds,1,0,1,1-0,2024_jp1.txt
+,Cerezo Osaka,Kashima Antlers,0,2,2,0-2,2024_jp1.txt
+,Júbilo Iwata,FC Tokyo,2,1,1,0-0,2024_jp1.txt
+,Kashiwa Reysol,Vissel Kobe,1,1,X,1-0,2024_jp1.txt
+,FC Machida Zelvia,Kyoto Sanga FC,1,0,1,0-0,2024_jp1.txt
+,Nagoya Grampus,Sagan Tosu,0,3,2,0-2,2024_jp1.txt
+,Shonan Bellmare,Yokohama F. Marinos,2,3,2,1-0,2024_jp1.txt
+,Tokyo Verdy,Kawasaki Frontale,4,5,2,1-2,2024_jp1.txt
+14.00,Sanfrecce Hiroshima,Hokkaido Consadole Sapporo,5,1,1,2-1,2024_jp1.txt
+14.00,Hokkaido Consadole Sapporo,Kashiwa Reysol,1,0,1,1-0,2024_jp1.txt
+,FC Tokyo,Cerezo Osaka,3,0,1,2-0,2024_jp1.txt
+,Gamba Osaka,Sanfrecce Hiroshima,3,1,1,1-0,2024_jp1.txt
+,Kashima Antlers,FC Machida Zelvia,3,1,1,3-1,2024_jp1.txt
+,Kawasaki Frontale,Avispa Fukuoka,3,1,1,2-0,2024_jp1.txt
+,Kyoto Sanga FC,Tokyo Verdy,0,0,X,,2024_jp1.txt
+,Sagan Tosu,Júbilo Iwata,3,0,1,2-0,2024_jp1.txt
+,Urawa Red Diamonds,Albirex Niigata,0,0,X,,2024_jp1.txt
+,Vissel Kobe,Shonan Bellmare,3,0,1,2-0,2024_jp1.txt
+,Yokohama F. Marinos,Nagoya Grampus,0,2,2,0-1,2024_jp1.txt
+19.00,Gamba Osaka,Cerezo Osaka,2,5,2,1-1,2025_jp1.txt
+14.00,Yokohama F. Marinos,Albirex Niigata,1,1,X,0-1,2025_jp1.txt
+,Yokohama FC,FC Tokyo,0,1,2,0-0,2025_jp1.txt
+,Vissel Kobe,Urawa Red Diamonds,0,0,X,,2025_jp1.txt
+,Fagiano Okayama,Kyoto Sanga FC,2,0,1,2-0,2025_jp1.txt
+,Avispa Fukuoka,Kashiwa Reysol,0,1,2,0-0,2025_jp1.txt
+15.00,Kawasaki Frontale,Nagoya Grampus,4,0,1,0-0,2025_jp1.txt
+,Shonan Bellmare,Kashima Antlers,1,0,1,0-0,2025_jp1.txt
+14.00,Tokyo Verdy,Shimizu S-Pulse,0,1,2,0-1,2025_jp1.txt
+,FC Machida Zelvia,Sanfrecce Hiroshima,1,2,2,1-0,2025_jp1.txt
+14.00,Kashiwa Reysol,Kawasaki Frontale,1,1,X,0-0,2025_jp1.txt
+,Yokohama FC,Fagiano Okayama,1,0,1,0-0,2025_jp1.txt
+,Shimizu S-Pulse,Albirex Niigata,2,0,1,1-0,2025_jp1.txt
+,Nagoya Grampus,Vissel Kobe,2,2,X,0-0,2025_jp1.txt
+,Kyoto Sanga FC,Urawa Red Diamonds,1,1,X,0-0,2025_jp1.txt
+15.00,Kashima Antlers,Tokyo Verdy,4,0,1,3-0,2025_jp1.txt
+,FC Tokyo,FC Machida Zelvia,0,1,2,0-0,2025_jp1.txt
+,Gamba Osaka,Avispa Fukuoka,2,1,1,1-0,2025_jp1.txt
+,Cerezo Osaka,Shonan Bellmare,1,2,2,0-1,2025_jp1.txt
+14.00,Sanfrecce Hiroshima,Yokohama F. Marinos,1,0,1,0-0,2025_jp1.txt
+19.00,Kashima Antlers,Albirex Niigata,2,1,1,1-1,2025_jp1.txt
+,Kashiwa Reysol,Cerezo Osaka,2,1,1,0-1,2025_jp1.txt
+,FC Tokyo,Nagoya Grampus,3,1,1,1-0,2025_jp1.txt
+,FC Machida Zelvia,Tokyo Verdy,0,1,2,0-1,2025_jp1.txt
+,Yokohama F. Marinos,Yokohama FC,0,0,X,,2025_jp1.txt
+,Shonan Bellmare,Urawa Red Diamonds,2,1,1,1-0,2025_jp1.txt
+,Shimizu S-Pulse,Sanfrecce Hiroshima,1,1,X,1-0,2025_jp1.txt
+,Vissel Kobe,Kyoto Sanga FC,1,1,X,0-1,2025_jp1.txt
+,Fagiano Okayama,Gamba Osaka,2,0,1,1-0,2025_jp1.txt
+,Avispa Fukuoka,Kawasaki Frontale,1,2,2,1-1,2025_jp1.txt
+13.00,Yokohama F. Marinos,Shonan Bellmare,1,1,X,1-0,2025_jp1.txt
+14.00,Kashima Antlers,FC Tokyo,2,0,1,0-0,2025_jp1.txt
+15.00,Kawasaki Frontale,Kyoto Sanga FC,0,1,2,0-0,2025_jp1.txt
+,Vissel Kobe,Avispa Fukuoka,0,1,2,0-1,2025_jp1.txt
+14.00,Tokyo Verdy,Gamba Osaka,0,1,2,0-0,2025_jp1.txt
+,Albirex Niigata,Cerezo Osaka,2,2,X,1-1,2025_jp1.txt
+,Nagoya Grampus,FC Machida Zelvia,1,2,2,1-1,2025_jp1.txt
+,Fagiano Okayama,Shimizu S-Pulse,1,1,X,0-0,2025_jp1.txt
+14.30,Sanfrecce Hiroshima,Yokohama FC,1,0,1,0-0,2025_jp1.txt
+15.00,Urawa Red Diamonds,Kashiwa Reysol,0,2,2,0-2,2025_jp1.txt
+14.00,Urawa Red Diamonds,Fagiano Okayama,1,0,1,0-0,2025_jp1.txt
+14.05,Albirex Niigata,Tokyo Verdy,2,2,X,1-1,2025_jp1.txt
+15.00,Gamba Osaka,Shimizu S-Pulse,1,0,1,1-0,2025_jp1.txt
+16.00,Kashiwa Reysol,Kashima Antlers,1,3,2,0-1,2025_jp1.txt
+,FC Tokyo,Shonan Bellmare,0,0,X,,2025_jp1.txt
+,Yokohama FC,FC Machida Zelvia,0,2,2,0-0,2025_jp1.txt
+,Cerezo Osaka,Nagoya Grampus,1,1,X,1-0,2025_jp1.txt
+14.00,Kyoto Sanga FC,Avispa Fukuoka,0,1,2,0-0,2025_jp1.txt
+19.00,Kawasaki Frontale,Yokohama F. Marinos,3,3,X,1-1,2025_jp1.txt
+14.00,Tokyo Verdy,Nagoya Grampus,2,1,1,0-1,2025_jp1.txt
+,FC Machida Zelvia,Albirex Niigata,1,0,1,1-0,2025_jp1.txt
+,Yokohama FC,Cerezo Osaka,2,0,1,1-0,2025_jp1.txt
+,Avispa Fukuoka,FC Tokyo,1,0,1,0-0,2025_jp1.txt
+13.00,Shimizu S-Pulse,Kyoto Sanga FC,1,2,2,0-1,2025_jp1.txt
+14.00,Kashima Antlers,Urawa Red Diamonds,1,1,X,0-1,2025_jp1.txt
+,Yokohama F. Marinos,Gamba Osaka,2,0,1,1-0,2025_jp1.txt
+,Fagiano Okayama,Kawasaki Frontale,0,0,X,,2025_jp1.txt
+,Sanfrecce Hiroshima,Kashiwa Reysol,1,1,X,0-0,2025_jp1.txt
+15.00,Shonan Bellmare,Vissel Kobe,1,2,2,0-2,2025_jp1.txt
+19.00,Cerezo Osaka,Urawa Red Diamonds,1,1,X,1-0,2025_jp1.txt
+12.55,Fagiano Okayama,Yokohama F. Marinos,1,0,1,0-0,2025_jp1.txt
+13.00,Shimizu S-Pulse,Shonan Bellmare,3,0,1,2-0,2025_jp1.txt
+14.00,Kashiwa Reysol,Tokyo Verdy,0,0,X,,2025_jp1.txt
+,Albirex Niigata,Gamba Osaka,3,3,X,1-1,2025_jp1.txt
+,Nagoya Grampus,Yokohama FC,2,1,1,1-0,2025_jp1.txt
+,Kyoto Sanga FC,Sanfrecce Hiroshima,1,0,1,0-0,2025_jp1.txt
+15.00,Kashima Antlers,Vissel Kobe,1,0,1,1-0,2025_jp1.txt
+,Avispa Fukuoka,FC Machida Zelvia,2,2,X,1-1,2025_jp1.txt
+17.00,FC Tokyo,Kawasaki Frontale,0,3,2,0-0,2025_jp1.txt
+19.00,Tokyo Verdy,FC Tokyo,2,2,X,1-1,2025_jp1.txt
+,Kawasaki Frontale,Shonan Bellmare,2,0,1,0-0,2025_jp1.txt
+,Yokohama FC,Vissel Kobe,0,1,2,0-0,2025_jp1.txt
+,Albirex Niigata,Avispa Fukuoka,0,1,2,0-0,2025_jp1.txt
+,Nagoya Grampus,Yokohama F. Marinos,2,0,1,0-0,2025_jp1.txt
+,Kyoto Sanga FC,Kashiwa Reysol,1,1,X,0-1,2025_jp1.txt
+,Gamba Osaka,FC Machida Zelvia,0,1,2,0-1,2025_jp1.txt
+,Cerezo Osaka,Fagiano Okayama,2,1,1,2-1,2025_jp1.txt
+,Sanfrecce Hiroshima,Kashima Antlers,1,0,1,1-0,2025_jp1.txt
+19.30,Urawa Red Diamonds,Shimizu S-Pulse,2,1,1,1-0,2025_jp1.txt
+14.00,Yokohama F. Marinos,Tokyo Verdy,0,0,X,,2025_jp1.txt
+13.00,Fagiano Okayama,FC Tokyo,1,0,1,0-0,2025_jp1.txt
+14.00,FC Machida Zelvia,Kawasaki Frontale,2,2,X,1-1,2025_jp1.txt
+,Yokohama FC,Shimizu S-Pulse,2,0,1,0-0,2025_jp1.txt
+,Vissel Kobe,Albirex Niigata,0,1,2,0-1,2025_jp1.txt
+,Avispa Fukuoka,Urawa Red Diamonds,1,0,1,0-0,2025_jp1.txt
+15.00,Kashima Antlers,Kyoto Sanga FC,3,4,2,2-0,2025_jp1.txt
+,Kashiwa Reysol,Gamba Osaka,1,0,1,0-0,2025_jp1.txt
+,Shonan Bellmare,Nagoya Grampus,2,1,1,2-1,2025_jp1.txt
+,Sanfrecce Hiroshima,Cerezo Osaka,2,1,1,1-1,2025_jp1.txt
+19.00,FC Tokyo,Kashiwa Reysol,1,1,X,1-0,2025_jp1.txt
+14.00,Shimizu S-Pulse,Kawasaki Frontale,1,1,X,0-0,2025_jp1.txt
+,Gamba Osaka,Nagoya Grampus,2,0,1,0-0,2025_jp1.txt
+,Sanfrecce Hiroshima,Fagiano Okayama,0,1,2,0-0,2025_jp1.txt
+,Avispa Fukuoka,Yokohama F. Marinos,2,1,1,1-1,2025_jp1.txt
+15.00,Tokyo Verdy,Vissel Kobe,0,1,2,0-0,2025_jp1.txt
+,Cerezo Osaka,Kashima Antlers,1,0,1,0-0,2025_jp1.txt
+16.00,Kyoto Sanga FC,Shonan Bellmare,2,0,1,1-0,2025_jp1.txt
+14.00,FC Machida Zelvia,Urawa Red Diamonds,0,2,2,0-2,2025_jp1.txt
+,Albirex Niigata,Yokohama FC,0,0,X,,2025_jp1.txt
+14.00,Albirex Niigata,Kyoto Sanga FC,1,2,2,1-0,2025_jp1.txt
+14.00,Yokohama FC,Gamba Osaka,1,1,X,1-1,2025_jp1.txt
+,Shimizu S-Pulse,Avispa Fukuoka,3,1,1,3-1,2025_jp1.txt
+,Nagoya Grampus,Sanfrecce Hiroshima,2,1,1,1-0,2025_jp1.txt
+,Vissel Kobe,FC Machida Zelvia,1,0,1,0-0,2025_jp1.txt
+,Fagiano Okayama,Kashima Antlers,1,2,2,1-0,2025_jp1.txt
+15.00,Kawasaki Frontale,Tokyo Verdy,0,0,X,,2025_jp1.txt
+,Shonan Bellmare,Kashiwa Reysol,0,1,2,0-0,2025_jp1.txt
+,Cerezo Osaka,FC Tokyo,1,1,X,1-1,2025_jp1.txt
+16.00,Urawa Red Diamonds,Yokohama F. Marinos,3,1,1,1-0,2025_jp1.txt
+19.00,Yokohama F. Marinos,Shimizu S-Pulse,2,3,2,1-0,2025_jp1.txt
+,Vissel Kobe,Kawasaki Frontale,2,1,1,2-1,2025_jp1.txt
+19.00,Kashima Antlers,Nagoya Grampus,1,0,1,0-0,2025_jp1.txt
+,Tokyo Verdy,Cerezo Osaka,1,0,1,1-0,2025_jp1.txt
+,FC Machida Zelvia,Shonan Bellmare,0,1,2,0-0,2025_jp1.txt
+,Kyoto Sanga FC,Yokohama FC,2,1,1,1-0,2025_jp1.txt
+,Avispa Fukuoka,Fagiano Okayama,1,1,X,1-0,2025_jp1.txt
+19.30,Urawa Red Diamonds,Sanfrecce Hiroshima,1,0,1,0-0,2025_jp1.txt
+,FC Tokyo,Gamba Osaka,3,0,1,0-0,2025_jp1.txt
+14.00,Kashiwa Reysol,Albirex Niigata,1,1,X,1-1,2025_jp1.txt
+13.05,FC Tokyo,Shimizu S-Pulse,0,2,2,0-1,2025_jp1.txt
+14.00,Yokohama FC,Kashima Antlers,0,3,2,0-0,2025_jp1.txt
+,Nagoya Grampus,Kashiwa Reysol,1,2,2,1-1,2025_jp1.txt
+,Fagiano Okayama,Tokyo Verdy,0,1,2,0-0,2025_jp1.txt
+,Sanfrecce Hiroshima,Albirex Niigata,0,1,2,0-0,2025_jp1.txt
+15.00,Shonan Bellmare,Avispa Fukuoka,0,0,X,,2025_jp1.txt
+,Gamba Osaka,Kyoto Sanga FC,2,1,1,2-1,2025_jp1.txt
+,Cerezo Osaka,FC Machida Zelvia,1,2,2,0-0,2025_jp1.txt
+13.00,Sanfrecce Hiroshima,Avispa Fukuoka,2,1,1,0-0,2025_jp1.txt
+14.00,Albirex Niigata,FC Tokyo,2,3,2,0-1,2025_jp1.txt
+,Shimizu S-Pulse,Nagoya Grampus,0,3,2,0-1,2025_jp1.txt
+15.00,Kashima Antlers,FC Machida Zelvia,1,0,1,1-0,2025_jp1.txt
+,Urawa Red Diamonds,Tokyo Verdy,2,0,1,2-0,2025_jp1.txt
+,Gamba Osaka,Shonan Bellmare,4,0,1,4-0,2025_jp1.txt
+,Vissel Kobe,Fagiano Okayama,2,0,1,0-0,2025_jp1.txt
+19.00,Kyoto Sanga FC,Cerezo Osaka,2,3,2,2-2,2025_jp1.txt
+19.30,Urawa Red Diamonds,Kyoto Sanga FC,2,1,1,1-0,2025_jp1.txt

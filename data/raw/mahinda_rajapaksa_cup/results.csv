@@ -1,0 +1,8 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Sri Lanka,Maldives,4,4,X,Colombo,Sri Lanka,2021_mahinda_rajapaksa_cup.txt
+Bangladesh,Seychelles,1,1,X,Colombo,Sri Lanka,2021_mahinda_rajapaksa_cup.txt
+Bangladesh,Maldives,2,1,1,Colombo,Sri Lanka,2021_mahinda_rajapaksa_cup.txt
+Sri Lanka,Seychelles,0,1,2,Colombo,Sri Lanka,2021_mahinda_rajapaksa_cup.txt
+Maldives,Seychelles,0,0,X,Colombo,Sri Lanka,2021_mahinda_rajapaksa_cup.txt
+Sri Lanka,Bangladesh,2,1,1,Colombo,Sri Lanka,2021_mahinda_rajapaksa_cup.txt
+Sri Lanka,Seychelles,3,3,X,Colombo,Sri Lanka   [Seychelles wins on penalties],2021_mahinda_rajapaksa_cup.txt

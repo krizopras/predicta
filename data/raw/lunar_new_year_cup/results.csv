@@ -1,0 +1,26 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+South Korea,Paraguay,1,3,2,So Kon Po,Hong Kong,1986_lunar_new_year_cup.txt
+Hong Kong,China PR,0,0,X,So Kon Po,Hong Kong,1989_lunar_new_year_cup.txt
+Romania,United States,2,1,1,Kowloon,Hong Kong,1994_lunar_new_year_cup.txt
+South Korea,Colombia,1,0,1,So Kon Po,Hong Kong,1995_lunar_new_year_cup.txt
+South Korea,Serbia,0,1,2,So Kon Po,Hong Kong,1995_lunar_new_year_cup.txt
+Japan,Poland,5,0,1,So Kon Po,Hong Kong,1996_lunar_new_year_cup.txt
+Japan,Sweden,1,1,X,So Kon Po,Hong Kong   [Sweden wins on penalties],1996_lunar_new_year_cup.txt
+Russia,Serbia,1,1,X,So Kon Po,Hong Kong   [Russia wins on penalties],1997_lunar_new_year_cup.txt
+Russia,Switzerland,2,1,1,So Kon Po,Hong Kong,1997_lunar_new_year_cup.txt
+Iran,Nigeria,0,1,2,So Kon Po,Hong Kong,1998_lunar_new_year_cup.txt
+Iran,Chile,1,1,X,So Kon Po,Hong Kong   [Iran wins on penalties],1998_lunar_new_year_cup.txt
+Bulgaria,Egypt,1,3,2,Kowloon,Hong Kong,1999_lunar_new_year_cup.txt
+Egypt,Mexico,0,3,2,So Kon Po,Hong Kong,1999_lunar_new_year_cup.txt
+Japan,Mexico,0,1,2,So Kon Po,Hong Kong,2000_lunar_new_year_cup.txt
+Mexico,Czech Republic,1,2,2,So Kon Po,Hong Kong,2000_lunar_new_year_cup.txt
+South Korea,Norway,2,3,2,So Kon Po,Hong Kong,2001_lunar_new_year_cup.txt
+South Korea,Paraguay,1,1,X,So Kon Po,Hong Kong   [South Korea wins on penalties],2001_lunar_new_year_cup.txt
+Slovenia,Honduras,1,5,2,So Kon Po,Hong Kong,2002_lunar_new_year_cup.txt
+China PR,Slovenia,0,0,X,So Kon Po,Hong Kong   [Slovenia wins on penalties],2002_lunar_new_year_cup.txt
+Uruguay,Iran,1,1,X,So Kon Po,Hong Kong   [Uruguay wins on penalties],2003_lunar_new_year_cup.txt
+Sweden,Norway,0,3,2,So Kon Po,Hong Kong,2004_lunar_new_year_cup.txt
+Norway,Honduras,3,1,1,So Kon Po,Hong Kong,2004_lunar_new_year_cup.txt
+Hong Kong,Brazil,1,7,2,So Kon Po,Hong Kong,2005_lunar_new_year_cup.txt
+South Korea,Croatia,2,0,1,So Kon Po,Hong Kong,2006_lunar_new_year_cup.txt
+Hong Kong,Croatia,0,4,2,So Kon Po,Hong Kong,2006_lunar_new_year_cup.txt

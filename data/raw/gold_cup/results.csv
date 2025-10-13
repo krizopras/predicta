@@ -1,0 +1,390 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Canada,Honduras,2,4,2,Los Angeles,United States,1991_gold_cup.txt
+Mexico,Jamaica,4,1,1,Los Angeles,United States,1991_gold_cup.txt
+Costa Rica,Guatemala,2,0,1,Pasadena,United States,1991_gold_cup.txt
+United States,Trinidad and Tobago,2,1,1,Pasadena,United States,1991_gold_cup.txt
+Canada,Mexico,1,3,2,Los Angeles,United States,1991_gold_cup.txt
+Jamaica,Honduras,0,5,2,Los Angeles,United States,1991_gold_cup.txt
+Trinidad and Tobago,Costa Rica,2,1,1,Pasadena,United States,1991_gold_cup.txt
+United States,Guatemala,3,0,1,Pasadena,United States,1991_gold_cup.txt
+Jamaica,Canada,2,3,2,Los Angeles,United States,1991_gold_cup.txt
+Mexico,Honduras,1,1,X,Los Angeles,United States,1991_gold_cup.txt
+Trinidad and Tobago,Guatemala,0,1,2,Los Angeles,United States,1991_gold_cup.txt
+United States,Costa Rica,3,2,1,Los Angeles,United States,1991_gold_cup.txt
+Honduras,Costa Rica,2,0,1,Los Angeles,United States,1991_gold_cup.txt
+United States,Mexico,2,0,1,Los Angeles,United States,1991_gold_cup.txt
+Mexico,Costa Rica,2,0,1,Los Angeles,United States,1991_gold_cup.txt
+United States,Honduras,0,0,X,Los Angeles,United States   [United States wins on penalties],1991_gold_cup.txt
+Honduras,Panama,5,1,1,Dallas,United States,1993_gold_cup.txt
+United States,Jamaica,1,0,1,Dallas,United States,1993_gold_cup.txt
+Canada,Costa Rica,1,1,X,Mexico City,Mexico,1993_gold_cup.txt
+Mexico,Martinique,9,0,1,Mexico City,Mexico,1993_gold_cup.txt
+Honduras,Jamaica,1,3,2,Dallas,United States,1993_gold_cup.txt
+United States,Panama,2,1,1,Dallas,United States,1993_gold_cup.txt
+Canada,Martinique,2,2,X,Mexico City,Mexico,1993_gold_cup.txt
+Mexico,Costa Rica,1,1,X,Mexico City,Mexico,1993_gold_cup.txt
+Jamaica,Panama,1,1,X,Dallas,United States,1993_gold_cup.txt
+United States,Honduras,1,0,1,Dallas,United States,1993_gold_cup.txt
+Costa Rica,Martinique,3,1,1,Mexico City,Mexico,1993_gold_cup.txt
+Mexico,Canada,8,0,1,Mexico City,Mexico,1993_gold_cup.txt
+United States,Costa Rica,1,0,1,Dallas,United States,1993_gold_cup.txt
+Mexico,Jamaica,6,1,1,Mexico City,Mexico,1993_gold_cup.txt
+Jamaica,Costa Rica,1,1,X,Mexico City,Mexico,1993_gold_cup.txt
+Mexico,United States,4,0,1,Mexico City,Mexico,1993_gold_cup.txt
+Canada,Honduras,3,1,1,Anaheim,United States,1996_gold_cup.txt
+Trinidad and Tobago,El Salvador,2,3,2,Anaheim,United States,1996_gold_cup.txt
+Mexico,Saint Vincent and the Grenadines,5,0,1,San Diego,United States,1996_gold_cup.txt
+Brazil,Canada,4,1,1,Los Angeles,United States,1996_gold_cup.txt
+United States,Trinidad and Tobago,3,2,1,Anaheim,United States,1996_gold_cup.txt
+Guatemala,Mexico,0,1,2,San Diego,United States,1996_gold_cup.txt
+Honduras,Brazil,0,5,2,Los Angeles,United States,1996_gold_cup.txt
+Guatemala,Saint Vincent and the Grenadines,3,0,1,Anaheim,United States,1996_gold_cup.txt
+United States,El Salvador,2,0,1,Anaheim,United States,1996_gold_cup.txt
+United States,Brazil,0,1,2,Los Angeles,United States,1996_gold_cup.txt
+Mexico,Guatemala,1,0,1,San Diego,United States,1996_gold_cup.txt
+Mexico,Brazil,2,0,1,Los Angeles,United States,1996_gold_cup.txt
+United States,Guatemala,3,0,1,Los Angeles,United States,1996_gold_cup.txt
+Guatemala,El Salvador,0,0,X,Los Angeles,United States,1998_gold_cup.txt
+Honduras,Trinidad and Tobago,1,3,2,Oakland,United States,1998_gold_cup.txt
+United States,Cuba,3,0,1,Oakland,United States,1998_gold_cup.txt
+Brazil,Jamaica,0,0,X,Miami,United States,1998_gold_cup.txt
+Cuba,Costa Rica,2,7,2,Oakland,United States,1998_gold_cup.txt
+Trinidad and Tobago,Mexico,2,4,2,Oakland,United States,1998_gold_cup.txt
+Brazil,Guatemala,1,1,X,Miami,United States,1998_gold_cup.txt
+Mexico,Honduras,2,0,1,Oakland,United States,1998_gold_cup.txt
+United States,Costa Rica,2,1,1,Oakland,United States,1998_gold_cup.txt
+El Salvador,Brazil,0,4,2,Los Angeles,United States,1998_gold_cup.txt
+Guatemala,Jamaica,2,3,2,Los Angeles,United States,1998_gold_cup.txt
+Jamaica,El Salvador,2,0,1,Los Angeles,United States,1998_gold_cup.txt
+United States,Brazil,1,0,1,Los Angeles,United States,1998_gold_cup.txt
+Jamaica,Mexico,0,1,2,Los Angeles,United States,1998_gold_cup.txt
+Brazil,Jamaica,1,0,1,Los Angeles,United States,1998_gold_cup.txt
+United States,Mexico,0,1,2,Los Angeles,United States,1998_gold_cup.txt
+Colombia,Jamaica,1,0,1,Miami,United States,2000_gold_cup.txt
+United States,Haiti,3,0,1,Miami,United States,2000_gold_cup.txt
+Costa Rica,Canada,2,2,X,San Diego,United States,2000_gold_cup.txt
+Mexico,Trinidad and Tobago,4,0,1,San Diego,United States,2000_gold_cup.txt
+Haiti,Peru,1,1,X,Miami,United States,2000_gold_cup.txt
+Jamaica,Honduras,0,2,2,Miami,United States,2000_gold_cup.txt
+Canada,South Korea,0,0,X,Los Angeles,United States,2000_gold_cup.txt
+Trinidad and Tobago,Guatemala,4,2,1,Los Angeles,United States,2000_gold_cup.txt
+Honduras,Colombia,2,0,1,Miami,United States,2000_gold_cup.txt
+United States,Peru,1,0,1,Miami,United States,2000_gold_cup.txt
+South Korea,Costa Rica,2,2,X,Los Angeles,United States,2000_gold_cup.txt
+Mexico,Guatemala,1,1,X,Los Angeles,United States,2000_gold_cup.txt
+Honduras,Peru,3,5,2,Miami,United States,2000_gold_cup.txt
+United States,Colombia,2,2,X,Miami,United States   [Colombia wins on penalties],2000_gold_cup.txt
+Costa Rica,Trinidad and Tobago,1,2,2,San Diego,United States,2000_gold_cup.txt
+Mexico,Canada,1,2,2,San Diego,United States,2000_gold_cup.txt
+Colombia,Peru,2,1,1,San Diego,United States,2000_gold_cup.txt
+Trinidad and Tobago,Canada,0,1,2,Los Angeles,United States,2000_gold_cup.txt
+Canada,Colombia,2,0,1,Los Angeles,United States,2000_gold_cup.txt
+Haiti,Canada,0,2,2,Miami,United States,2002_gold_cup.txt
+Martinique,Costa Rica,0,2,2,Miami,United States,2002_gold_cup.txt
+El Salvador,Mexico,0,1,2,Pasadena,United States,2002_gold_cup.txt
+United States,South Korea,2,1,1,Pasadena,United States,2002_gold_cup.txt
+Costa Rica,Trinidad and Tobago,1,1,X,Miami,United States,2002_gold_cup.txt
+Ecuador,Haiti,0,2,2,Miami,United States,2002_gold_cup.txt
+Mexico,Guatemala,3,1,1,Pasadena,United States,2002_gold_cup.txt
+United States,Cuba,1,0,1,Pasadena,United States,2002_gold_cup.txt
+Canada,Ecuador,0,2,2,Miami,United States,2002_gold_cup.txt
+Trinidad and Tobago,Martinique,0,1,2,Miami,United States,2002_gold_cup.txt
+Guatemala,El Salvador,0,1,2,Pasadena,United States,2002_gold_cup.txt
+South Korea,Cuba,0,0,X,Pasadena,United States,2002_gold_cup.txt
+Canada,Martinique,1,1,X,Miami,United States   [Canada wins on penalties],2002_gold_cup.txt
+Costa Rica,Haiti,2,1,1,Miami,United States,2002_gold_cup.txt
+Mexico,South Korea,0,0,X,Pasadena,United States   [South Korea wins on penalties],2002_gold_cup.txt
+United States,El Salvador,4,0,1,Pasadena,United States,2002_gold_cup.txt
+Costa Rica,South Korea,3,1,1,Pasadena,United States,2002_gold_cup.txt
+United States,Canada,0,0,X,Pasadena,United States   [United States wins on penalties],2002_gold_cup.txt
+Canada,South Korea,2,1,1,Pasadena,United States,2002_gold_cup.txt
+United States,Costa Rica,2,0,1,Pasadena,United States,2002_gold_cup.txt
+Costa Rica,Canada,0,1,2,Foxborough,United States,2003_gold_cup.txt
+United States,El Salvador,2,0,1,Foxborough,United States,2003_gold_cup.txt
+Jamaica,Colombia,0,1,2,Miami,United States,2003_gold_cup.txt
+Mexico,Brazil,1,0,1,Mexico City,Mexico,2003_gold_cup.txt
+Canada,Cuba,0,2,2,Foxborough,United States,2003_gold_cup.txt
+United States,Martinique,2,0,1,Foxborough,United States,2003_gold_cup.txt
+Brazil,Honduras,2,1,1,Mexico City,Mexico,2003_gold_cup.txt
+Guatemala,Jamaica,0,2,2,Miami,United States,2003_gold_cup.txt
+Cuba,Costa Rica,0,3,2,Foxborough,United States,2003_gold_cup.txt
+El Salvador,Martinique,1,0,1,Foxborough,United States,2003_gold_cup.txt
+Colombia,Guatemala,1,1,X,Miami,United States,2003_gold_cup.txt
+Mexico,Honduras,0,0,X,Mexico City,Mexico,2003_gold_cup.txt
+Colombia,Brazil,0,2,2,Miami,United States,2003_gold_cup.txt
+Costa Rica,El Salvador,5,2,1,Foxborough,United States,2003_gold_cup.txt
+United States,Cuba,5,0,1,Foxborough,United States,2003_gold_cup.txt
+Mexico,Jamaica,5,0,1,Mexico City,Mexico,2003_gold_cup.txt
+United States,Brazil,1,2,2,Miami,United States,2003_gold_cup.txt
+Mexico,Costa Rica,2,0,1,Mexico City,Mexico,2003_gold_cup.txt
+United States,Costa Rica,3,2,1,Miami,United States,2003_gold_cup.txt
+Mexico,Brazil,1,0,1,Mexico City,Mexico,2003_gold_cup.txt
+Colombia,Panama,0,1,2,Miami,United States,2005_gold_cup.txt
+Trinidad and Tobago,Honduras,1,1,X,Miami,United States,2005_gold_cup.txt
+Canada,Costa Rica,0,1,2,Seattle,United States,2005_gold_cup.txt
+United States,Cuba,4,1,1,Seattle,United States,2005_gold_cup.txt
+Guatemala,Jamaica,3,4,2,Carson,United States,2005_gold_cup.txt
+South Africa,Mexico,2,1,1,Carson,United States,2005_gold_cup.txt
+Costa Rica,Cuba,3,1,1,Seattle,United States,2005_gold_cup.txt
+United States,Canada,2,0,1,Seattle,United States,2005_gold_cup.txt
+Honduras,Colombia,2,1,1,Miami,United States,2005_gold_cup.txt
+Jamaica,South Africa,3,3,X,Los Angeles,United States,2005_gold_cup.txt
+Mexico,Guatemala,4,0,1,Los Angeles,United States,2005_gold_cup.txt
+Panama,Trinidad and Tobago,2,2,X,Miami,United States,2005_gold_cup.txt
+Canada,Cuba,2,1,1,Foxborough,United States,2005_gold_cup.txt
+Colombia,Trinidad and Tobago,2,0,1,Miami,United States,2005_gold_cup.txt
+Honduras,Panama,1,0,1,Miami,United States,2005_gold_cup.txt
+United States,Costa Rica,0,0,X,Foxborough,United States,2005_gold_cup.txt
+Guatemala,South Africa,1,1,X,Houston,United States,2005_gold_cup.txt
+Mexico,Jamaica,1,0,1,Houston,United States,2005_gold_cup.txt
+Honduras,Costa Rica,3,2,1,Foxborough,United States,2005_gold_cup.txt
+United States,Jamaica,3,1,1,Foxborough,United States,2005_gold_cup.txt
+Mexico,Colombia,1,2,2,Houston,United States,2005_gold_cup.txt
+South Africa,Panama,1,1,X,Houston,United States   [Panama wins on penalties],2005_gold_cup.txt
+Colombia,Panama,2,3,2,East Rutherford,United States,2005_gold_cup.txt
+United States,Honduras,2,1,1,East Rutherford,United States,2005_gold_cup.txt
+United States,Panama,0,0,X,East Rutherford,United States   [United States wins on penalties],2005_gold_cup.txt
+Costa Rica,Canada,1,2,2,Miami,United States,2007_gold_cup.txt
+Guadeloupe,Haiti,1,1,X,Miami,United States,2007_gold_cup.txt
+El Salvador,Trinidad and Tobago,2,1,1,Carson,United States,2007_gold_cup.txt
+United States,Guatemala,1,0,1,Carson,United States,2007_gold_cup.txt
+Mexico,Cuba,2,1,1,East Rutherford,United States,2007_gold_cup.txt
+Panama,Honduras,3,2,1,East Rutherford,United States,2007_gold_cup.txt
+Canada,Guadeloupe,1,2,2,Miami,United States,2007_gold_cup.txt
+Guatemala,El Salvador,1,0,1,Carson,United States,2007_gold_cup.txt
+Haiti,Costa Rica,1,1,X,Miami,United States,2007_gold_cup.txt
+United States,Trinidad and Tobago,2,0,1,Carson,United States,2007_gold_cup.txt
+Honduras,Mexico,2,1,1,East Rutherford,United States,2007_gold_cup.txt
+Panama,Cuba,2,2,X,East Rutherford,United States,2007_gold_cup.txt
+Costa Rica,Guadeloupe,1,0,1,Miami,United States,2007_gold_cup.txt
+Haiti,Canada,0,2,2,Miami,United States,2007_gold_cup.txt
+Trinidad and Tobago,Guatemala,1,1,X,Foxborough,United States,2007_gold_cup.txt
+United States,El Salvador,4,0,1,Foxborough,United States,2007_gold_cup.txt
+Cuba,Honduras,0,5,2,Houston,United States,2007_gold_cup.txt
+Mexico,Panama,1,0,1,Houston,United States,2007_gold_cup.txt
+Canada,Guatemala,3,0,1,Foxborough,United States,2007_gold_cup.txt
+United States,Panama,2,1,1,Foxborough,United States,2007_gold_cup.txt
+Honduras,Guadeloupe,1,2,2,Houston,United States,2007_gold_cup.txt
+Mexico,Costa Rica,1,0,1,Houston,United States,2007_gold_cup.txt
+Mexico,Guadeloupe,1,0,1,Chicago,United States,2007_gold_cup.txt
+United States,Canada,2,1,1,Chicago,United States,2007_gold_cup.txt
+United States,Mexico,2,1,1,Chicago,United States,2007_gold_cup.txt
+Canada,Jamaica,1,0,1,Carson,United States,2009_gold_cup.txt
+Costa Rica,El Salvador,1,2,2,Carson,United States,2009_gold_cup.txt
+Honduras,Haiti,1,0,1,Seattle,United States,2009_gold_cup.txt
+United States,Grenada,4,0,1,Seattle,United States,2009_gold_cup.txt
+Nicaragua,Mexico,0,2,2,Oakland,United States,2009_gold_cup.txt
+Panama,Guadeloupe,1,2,2,Oakland,United States,2009_gold_cup.txt
+El Salvador,Canada,0,1,2,Columbus,United States,2009_gold_cup.txt
+Jamaica,Costa Rica,0,1,2,Columbus,United States,2009_gold_cup.txt
+Haiti,Grenada,2,0,1,D.C.,United States,2009_gold_cup.txt
+United States,Honduras,2,0,1,D.C.,United States,2009_gold_cup.txt
+Guadeloupe,Nicaragua,2,0,1,Houston,United States,2009_gold_cup.txt
+Mexico,Panama,1,1,X,Houston,United States,2009_gold_cup.txt
+Costa Rica,Canada,2,2,X,Miami,United States,2009_gold_cup.txt
+El Salvador,Jamaica,0,1,2,Miami,United States,2009_gold_cup.txt
+Honduras,Grenada,4,0,1,Foxborough,United States,2009_gold_cup.txt
+United States,Haiti,2,2,X,Foxborough,United States,2009_gold_cup.txt
+Mexico,Guadeloupe,2,0,1,Glendale,United States,2009_gold_cup.txt
+Panama,Nicaragua,4,0,1,Glendale,United States,2009_gold_cup.txt
+Canada,Honduras,0,1,2,Philadelphia,United States,2009_gold_cup.txt
+United States,Panama,2,1,1,Philadelphia,United States,2009_gold_cup.txt
+Guadeloupe,Costa Rica,1,5,2,Arlington,United States,2009_gold_cup.txt
+Mexico,Haiti,4,0,1,Arlington,United States,2009_gold_cup.txt
+Costa Rica,Mexico,1,1,X,Chicago,United States   [Mexico wins on penalties],2009_gold_cup.txt
+United States,Honduras,2,0,1,Chicago,United States,2009_gold_cup.txt
+United States,Mexico,0,5,2,East Rutherford,United States,2009_gold_cup.txt
+Costa Rica,Cuba,5,0,1,Arlington,United States,2011_gold_cup.txt
+Mexico,El Salvador,5,0,1,Arlington,United States,2011_gold_cup.txt
+Honduras,Guatemala,0,0,X,Carson,United States,2011_gold_cup.txt
+Jamaica,Grenada,4,0,1,Carson,United States,2011_gold_cup.txt
+Panama,Guadeloupe,3,2,1,Detroit,United States,2011_gold_cup.txt
+United States,Canada,2,0,1,Detroit,United States,2011_gold_cup.txt
+Costa Rica,El Salvador,1,1,X,Charlotte,United States,2011_gold_cup.txt
+Cuba,Mexico,0,5,2,Charlotte,United States,2011_gold_cup.txt
+Grenada,Honduras,1,7,2,Miami,United States,2011_gold_cup.txt
+Jamaica,Guatemala,2,0,1,Miami,United States,2011_gold_cup.txt
+Canada,Guadeloupe,1,0,1,Tampa,United States,2011_gold_cup.txt
+United States,Panama,1,2,2,Tampa,United States,2011_gold_cup.txt
+El Salvador,Cuba,6,1,1,Chicago,United States,2011_gold_cup.txt
+Mexico,Costa Rica,4,1,1,Chicago,United States,2011_gold_cup.txt
+Guatemala,Grenada,4,0,1,Harrison,United States,2011_gold_cup.txt
+Honduras,Jamaica,0,1,2,Harrison,United States,2011_gold_cup.txt
+Canada,Panama,1,1,X,Kansas City,United States,2011_gold_cup.txt
+United States,Guadeloupe,1,0,1,Kansas City,United States,2011_gold_cup.txt
+Costa Rica,Honduras,1,1,X,East Rutherford,United States   [Honduras wins on penalties],2011_gold_cup.txt
+Mexico,Guatemala,2,1,1,East Rutherford,United States,2011_gold_cup.txt
+Panama,El Salvador,1,1,X,D.C.,United States   [Panama wins on penalties],2011_gold_cup.txt
+United States,Jamaica,2,0,1,D.C.,United States,2011_gold_cup.txt
+Honduras,Mexico,0,2,2,Houston,United States,2011_gold_cup.txt
+United States,Panama,1,0,1,Houston,United States,2011_gold_cup.txt
+United States,Mexico,2,4,2,Pasadena,United States,2011_gold_cup.txt
+Canada,Martinique,0,1,2,Pasadena,United States,2013_gold_cup.txt
+Mexico,Panama,1,2,2,Pasadena,United States,2013_gold_cup.txt
+El Salvador,Trinidad and Tobago,2,2,X,Harrison,United States,2013_gold_cup.txt
+Haiti,Honduras,0,2,2,Harrison,United States,2013_gold_cup.txt
+Costa Rica,Cuba,3,0,1,Portland,United States,2013_gold_cup.txt
+United States,Belize,6,1,1,Portland,United States,2013_gold_cup.txt
+Mexico,Canada,2,0,1,Seattle,United States,2013_gold_cup.txt
+Panama,Martinique,1,0,1,Seattle,United States,2013_gold_cup.txt
+Honduras,El Salvador,1,0,1,Miami Gardens,United States,2013_gold_cup.txt
+Trinidad and Tobago,Haiti,0,2,2,Miami Gardens,United States,2013_gold_cup.txt
+Costa Rica,Belize,1,0,1,Sandy,United States,2013_gold_cup.txt
+United States,Cuba,4,1,1,Sandy,United States,2013_gold_cup.txt
+Martinique,Mexico,1,3,2,Denver,United States,2013_gold_cup.txt
+Panama,Canada,0,0,X,Denver,United States,2013_gold_cup.txt
+El Salvador,Haiti,1,0,1,Houston,United States,2013_gold_cup.txt
+Honduras,Trinidad and Tobago,0,2,2,Houston,United States,2013_gold_cup.txt
+Cuba,Belize,4,0,1,East Hartford,United States,2013_gold_cup.txt
+United States,Costa Rica,1,0,1,East Hartford,United States,2013_gold_cup.txt
+Mexico,Trinidad and Tobago,1,0,1,Atlanta,United States,2013_gold_cup.txt
+Panama,Cuba,6,1,1,Atlanta,United States,2013_gold_cup.txt
+Honduras,Costa Rica,1,0,1,Baltimore,United States,2013_gold_cup.txt
+United States,El Salvador,5,1,1,Baltimore,United States,2013_gold_cup.txt
+Panama,Mexico,2,1,1,Arlington,United States,2013_gold_cup.txt
+United States,Honduras,3,1,1,Arlington,United States,2013_gold_cup.txt
+United States,Panama,1,0,1,Chicago,United States,2013_gold_cup.txt
+Panama,Haiti,1,1,X,Frisco,United States,2015_gold_cup.txt
+United States,Honduras,2,1,1,Frisco,United States,2015_gold_cup.txt
+Costa Rica,Jamaica,2,2,X,Carson,United States,2015_gold_cup.txt
+El Salvador,Canada,0,0,X,Carson,United States,2015_gold_cup.txt
+Mexico,Cuba,6,0,1,Chicago,United States,2015_gold_cup.txt
+Trinidad and Tobago,Guatemala,3,1,1,Chicago,United States,2015_gold_cup.txt
+Honduras,Panama,1,1,X,Foxborough,United States,2015_gold_cup.txt
+United States,Haiti,1,0,1,Foxborough,United States,2015_gold_cup.txt
+Costa Rica,El Salvador,1,1,X,Houston,United States,2015_gold_cup.txt
+Jamaica,Canada,1,0,1,Houston,United States,2015_gold_cup.txt
+Guatemala,Mexico,0,0,X,Glendale,United States,2015_gold_cup.txt
+Trinidad and Tobago,Cuba,2,0,1,Glendale,United States,2015_gold_cup.txt
+Honduras,Haiti,0,1,2,Kansas City,United States,2015_gold_cup.txt
+United States,Panama,1,1,X,Kansas City,United States,2015_gold_cup.txt
+Canada,Costa Rica,0,0,X,Toronto,Canada,2015_gold_cup.txt
+Jamaica,El Salvador,1,0,1,Toronto,Canada,2015_gold_cup.txt
+Guatemala,Cuba,0,1,2,Charlotte,United States,2015_gold_cup.txt
+Trinidad and Tobago,Mexico,4,4,X,Charlotte,United States,2015_gold_cup.txt
+Haiti,Jamaica,0,1,2,Baltimore,United States,2015_gold_cup.txt
+United States,Cuba,6,0,1,Baltimore,United States,2015_gold_cup.txt
+Mexico,Costa Rica,1,0,1,East Rutherford,United States,2015_gold_cup.txt
+Trinidad and Tobago,Panama,1,1,X,East Rutherford,United States   [Panama wins on penalties],2015_gold_cup.txt
+Panama,Mexico,1,2,2,Atlanta,United States,2015_gold_cup.txt
+United States,Jamaica,1,2,2,Atlanta,United States,2015_gold_cup.txt
+United States,Panama,1,1,X,Chester,United States   [Panama wins on penalties],2015_gold_cup.txt
+Jamaica,Mexico,1,3,2,Philadelphia,United States,2015_gold_cup.txt
+French Guiana,Canada,2,4,2,Harrison,United States,2017_gold_cup.txt
+Honduras,Costa Rica,0,1,2,Harrison,United States,2017_gold_cup.txt
+Martinique,Nicaragua,2,0,1,Nashville,United States,2017_gold_cup.txt
+United States,Panama,1,1,X,Nashville,United States,2017_gold_cup.txt
+Curaçao,Jamaica,0,2,2,San Diego,United States,2017_gold_cup.txt
+Mexico,El Salvador,3,1,1,San Diego,United States,2017_gold_cup.txt
+Costa Rica,Canada,1,1,X,Houston,United States,2017_gold_cup.txt
+Honduras,French Guiana,0,0,X,Houston,United States,2017_gold_cup.txt
+Panama,Nicaragua,2,1,1,Tampa,United States,2017_gold_cup.txt
+United States,Martinique,3,2,1,Tampa,United States,2017_gold_cup.txt
+El Salvador,Curaçao,2,0,1,Denver,United States,2017_gold_cup.txt
+Mexico,Jamaica,0,0,X,Denver,United States,2017_gold_cup.txt
+Canada,Honduras,0,0,X,Frisco,United States,2017_gold_cup.txt
+Costa Rica,French Guiana,3,0,1,Frisco,United States,2017_gold_cup.txt
+Panama,Martinique,3,0,1,Cleveland,United States,2017_gold_cup.txt
+United States,Nicaragua,3,0,1,Cleveland,United States,2017_gold_cup.txt
+Curaçao,Mexico,0,2,2,San Antonio,United States,2017_gold_cup.txt
+Jamaica,El Salvador,1,1,X,San Antonio,United States,2017_gold_cup.txt
+Costa Rica,Panama,1,0,1,Philadelphia,United States,2017_gold_cup.txt
+United States,El Salvador,2,0,1,Philadelphia,United States,2017_gold_cup.txt
+Jamaica,Canada,2,1,1,Glendale,United States,2017_gold_cup.txt
+Mexico,Honduras,1,0,1,Glendale,United States,2017_gold_cup.txt
+United States,Costa Rica,2,0,1,Arlington,United States,2017_gold_cup.txt
+Mexico,Jamaica,0,1,2,Pasadena,United States,2017_gold_cup.txt
+United States,Jamaica,2,1,1,Santa Clara,United States,2017_gold_cup.txt
+Canada,Martinique,4,0,1,Los Angeles,United States,2019_gold_cup.txt
+Mexico,Cuba,7,0,1,Los Angeles,United States,2019_gold_cup.txt
+Haiti,Bermuda,2,1,1,San José,Jamaica,2019_gold_cup.txt
+Costa Rica,Nicaragua,4,0,1,San José,Jamaica,2019_gold_cup.txt
+Curaçao,El Salvador,0,1,2,Kingston,Jamaica,2019_gold_cup.txt
+Jamaica,Honduras,3,2,1,Kingston,Jamaica,2019_gold_cup.txt
+Panama,Trinidad and Tobago,2,0,1,Saint Paul,United States,2019_gold_cup.txt
+United States,Guyana,4,0,1,Saint Paul,United States,2019_gold_cup.txt
+Cuba,Martinique,0,3,2,Denver,United States,2019_gold_cup.txt
+Mexico,Canada,3,1,1,Denver,United States,2019_gold_cup.txt
+Nicaragua,Haiti,0,2,2,Frisco,United States,2019_gold_cup.txt
+Costa Rica,Bermuda,2,1,1,Frisco,United States,2019_gold_cup.txt
+El Salvador,Jamaica,0,0,X,Houston,United States,2019_gold_cup.txt
+Honduras,Curaçao,0,1,2,Houston,United States,2019_gold_cup.txt
+Guyana,Panama,2,4,2,Cleveland,United States,2019_gold_cup.txt
+United States,Trinidad and Tobago,6,0,1,Cleveland,United States,2019_gold_cup.txt
+Canada,Cuba,7,0,1,Charlotte,United States,2019_gold_cup.txt
+Martinique,Mexico,2,3,2,Charlotte,United States,2019_gold_cup.txt
+Bermuda,Nicaragua,2,0,1,New Jersey,United States,2019_gold_cup.txt
+Haiti,Costa Rica,2,1,1,New Jersey,United States,2019_gold_cup.txt
+Jamaica,Curaçao,1,1,X,Los Angeles,United States,2019_gold_cup.txt
+Honduras,El Salvador,4,0,1,Los Angeles,United States,2019_gold_cup.txt
+Trinidad and Tobago,Guyana,1,1,X,Kansas City,United States,2019_gold_cup.txt
+United States,Panama,1,0,1,Kansas City,United States,2019_gold_cup.txt
+Haiti,Canada,3,2,1,Houston,United States,2019_gold_cup.txt
+Mexico,Costa Rica,1,1,X,Houston,United States   [Mexico wins on penalties],2019_gold_cup.txt
+Jamaica,Panama,1,0,1,Philadelphia,United States,2019_gold_cup.txt
+United States,Curaçao,1,0,1,Philadelphia,United States,2019_gold_cup.txt
+Haiti,Mexico,0,1,2,Glendale,United States,2019_gold_cup.txt
+United States,Jamaica,3,1,1,Nashville,United States,2019_gold_cup.txt
+United States,Mexico,0,1,2,Chicago,United States,2019_gold_cup.txt
+Mexico,Trinidad and Tobago,0,0,X,Arlington,United States,2021_gold_cup.txt
+El Salvador,Guatemala,2,0,1,Frisco,United States,2021_gold_cup.txt
+Canada,Martinique,4,1,1,Kansas City,United States,2021_gold_cup.txt
+United States,Haiti,1,0,1,Kansas City,United States,2021_gold_cup.txt
+Jamaica,Suriname,2,0,1,Orlando,United States,2021_gold_cup.txt
+Costa Rica,Guadeloupe,3,1,1,Orlando,United States,2021_gold_cup.txt
+Qatar,Panama,3,3,X,Houston,United States,2021_gold_cup.txt
+Honduras,Grenada,4,0,1,Houston,United States,2021_gold_cup.txt
+Trinidad and Tobago,El Salvador,0,2,2,Frisco,United States,2021_gold_cup.txt
+Guatemala,Mexico,0,3,2,Dallas,United States,2021_gold_cup.txt
+Haiti,Canada,1,4,2,Kansas City,United States,2021_gold_cup.txt
+United States,Martinique,6,1,1,Kansas City,United States,2021_gold_cup.txt
+Guadeloupe,Jamaica,1,2,2,Orlando,United States,2021_gold_cup.txt
+Suriname,Costa Rica,1,2,2,Orlando,United States,2021_gold_cup.txt
+Grenada,Qatar,0,4,2,Houston,United States,2021_gold_cup.txt
+Panama,Honduras,2,3,2,Houston,United States,2021_gold_cup.txt
+Guatemala,Trinidad and Tobago,1,1,X,Frisco,United States,2021_gold_cup.txt
+Mexico,El Salvador,1,0,1,Dallas,United States,2021_gold_cup.txt
+Martinique,Haiti,1,2,2,Frisco,United States,2021_gold_cup.txt
+United States,Canada,1,0,1,Kansas City,United States,2021_gold_cup.txt
+Suriname,Guadeloupe,2,1,1,Houston,United States,2021_gold_cup.txt
+Costa Rica,Jamaica,1,0,1,Orlando,United States,2021_gold_cup.txt
+Panama,Grenada,3,1,1,Orlando,United States,2021_gold_cup.txt
+Honduras,Qatar,0,2,2,Houston,United States,2021_gold_cup.txt
+Mexico,Honduras,3,0,1,Glendale,United States,2021_gold_cup.txt
+Qatar,El Salvador,3,2,1,Glendale,United States,2021_gold_cup.txt
+Costa Rica,Canada,0,2,2,Arlington,United States,2021_gold_cup.txt
+United States,Jamaica,1,0,1,Arlington,United States,2021_gold_cup.txt
+Mexico,Canada,2,1,1,Houston,United States,2021_gold_cup.txt
+United States,Qatar,1,0,1,Austin,United States,2021_gold_cup.txt
+United States,Mexico,1,0,1,Las Vegas,United States,2021_gold_cup.txt
+United States,Jamaica,1,1,X,Chicago,United States,2023_gold_cup.txt
+Trinidad and Tobago,Saint Kitts and Nevis,3,0,1,Fort Lauderdale,United States,2023_gold_cup.txt
+Haiti,Qatar,2,1,1,Houston,United States,2023_gold_cup.txt
+Mexico,Honduras,4,0,1,Houston,United States,2023_gold_cup.txt
+El Salvador,Martinique,1,2,2,Fort Lauderdale,United States,2023_gold_cup.txt
+Costa Rica,Panama,1,2,2,Fort Lauderdale,United States,2023_gold_cup.txt
+Canada,Guadeloupe,2,2,X,Toronto,Canada,2023_gold_cup.txt
+Guatemala,Cuba,1,0,1,Fort Lauderdale,United States,2023_gold_cup.txt
+Jamaica,Trinidad and Tobago,4,1,1,St. Louis,United States,2023_gold_cup.txt
+United States,Saint Kitts and Nevis,6,0,1,St. Louis,United States,2023_gold_cup.txt
+Qatar,Honduras,1,1,X,Glendale,United States,2023_gold_cup.txt
+Haiti,Mexico,1,3,2,Glendale,United States,2023_gold_cup.txt
+Martinique,Panama,1,2,2,Harrison,United States,2023_gold_cup.txt
+El Salvador,Costa Rica,0,0,X,Harrison,United States,2023_gold_cup.txt
+Cuba,Guadeloupe,1,4,2,Houston,United States,2023_gold_cup.txt
+Guatemala,Canada,0,0,X,Houston,United States,2023_gold_cup.txt
+United States,Trinidad and Tobago,6,0,1,Charlotte,United States,2023_gold_cup.txt
+Jamaica,Saint Kitts and Nevis,5,0,1,Santa Clara,United States,2023_gold_cup.txt
+Honduras,Haiti,2,1,1,Charlotte,United States,2023_gold_cup.txt
+Mexico,Qatar,0,1,2,Santa Clara,United States,2023_gold_cup.txt
+Costa Rica,Martinique,6,4,1,Harrison,United States,2023_gold_cup.txt
+Panama,El Salvador,2,2,X,Houston,United States,2023_gold_cup.txt
+Guadeloupe,Guatemala,2,3,2,Harrison,United States,2023_gold_cup.txt
+Canada,Cuba,4,2,1,Houston,United States,2023_gold_cup.txt
+Panama,Qatar,4,0,1,Arlington,United States,2023_gold_cup.txt
+Mexico,Costa Rica,2,0,1,Arlington,United States,2023_gold_cup.txt
+Guatemala,Jamaica,0,1,2,Cincinnati,United States,2023_gold_cup.txt
+United States,Canada,2,2,X,Cincinnati,United States   [United States wins on penalties],2023_gold_cup.txt
+United States,Panama,1,1,X,San Diego,United States   [Panama wins on penalties],2023_gold_cup.txt
+Jamaica,Mexico,0,3,2,Paradise,United States,2023_gold_cup.txt
+Mexico,Panama,1,0,1,Inglewood,United States,2023_gold_cup.txt
