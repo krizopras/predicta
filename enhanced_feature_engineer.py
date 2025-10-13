@@ -1,15 +1,15 @@
 """
 ==============================================================
- Enhanced Feature Engineer v3.5 - IMPROVED
+ Enhanced Feature Engineer v4.0 - MAXIMUM PERFORMANCE
 --------------------------------------------------------------
- 45 → 70 özelliğe çıkarıldı
+ 70 → 100+ özelliğe çıkarıldı
  Yeni özellikler:
-   ✅ Ev/Deplasman split performansı (ÇOK ÖNEMLİ!)
-   ✅ Ağırlıklı form (son maçlar daha önemli)
-   ✅ Savunma metrikleri
-   ✅ Momentum analizi
-   ✅ Rest days (dinlenme avantajı)
-   ✅ Motivasyon faktörleri
+   ✅ Gelişmiş oran metrikleri (favorite_gap, betting_heat)
+   ✅ ELO rating sistemi
+   ✅ Çok daha detaylı form analizi
+   ✅ Maç önem seviyesi (kritik maç tespiti)
+   ✅ Lig kalite endeksi
+   ✅ Gelişmiş zaman özellikleri
 ==============================================================
 """
 
@@ -25,56 +25,75 @@ from datetime import datetime, timedelta
 logging.basicConfig(level=logging.INFO, format="[EnhancedFeatureEngineer] %(message)s")
 logger = logging.getLogger(__name__)
 
-# Yeni feature isimleri (70 özellik)
-ENHANCED_FEATURE_NAMES_V35 = [
+# Yeni feature isimleri (100 özellik)
+ENHANCED_FEATURE_NAMES_V4 = [
     # Temel oranlar (6)
     "odds_1", "odds_x", "odds_2",
     "prob_1", "prob_x", "prob_2",
     
-    # Oran türevleri (8)
+    # Oran türevleri (18) - GELİŞTİRİLDİ
     "odds_diff_home_draw", "odds_diff_draw_away", "odds_margin",
     "log_odds_1", "log_odds_x", "log_odds_2",
     "odds_entropy", "odds_variance",
+    # YENİ: Kritik oran metrikleri
+    "favorite_gap", "underdog_value", "draw_premium",
+    "odds_imbalance", "min_odds", "max_odds",
+    "odds_ratio_home_away", "prob_diff_home_away", "odds_confidence",
+    "betting_heat",
     
-    # Takım özellikleri (4)
+    # Takım özellikleri (8) - GELİŞTİRİLDİ
     "home_len", "away_len", "is_derby", "league_country_score",
+    # YENİ: ELO ve güç endeksi
+    "home_elo", "away_elo", "elo_diff", "league_quality_index",
     
-    # Gelişmiş form ve performans (20) - ARTIRILDI
+    # Gelişmiş form ve performans (28) - GELİŞTİRİLDİ
     "home_form", "away_form", "form_diff",
     "home_goals_avg", "away_goals_avg", "goals_diff",
     "home_win_streak", "away_win_streak",
     "home_last3_trend", "away_last3_trend",
-    "home_weighted_form", "away_weighted_form",  # YENİ
-    "home_at_home_win_rate", "away_at_away_win_rate",  # YENİ - ÇOK ÖNEMLİ!
-    "home_defense_avg", "away_defense_avg",  # YENİ
-    "home_clean_sheet_rate", "away_clean_sheet_rate",  # YENİ
-    "home_ppg", "away_ppg",  # YENİ - Points per game
+    "home_weighted_form", "away_weighted_form",
+    "home_at_home_win_rate", "away_at_away_win_rate",
+    "home_defense_avg", "away_defense_avg",
+    "home_clean_sheet_rate", "away_clean_sheet_rate",
+    "home_ppg", "away_ppg",
+    # YENİ: Detaylı performans
+    "home_attack_strength", "away_attack_strength",
+    "home_defense_strength", "away_defense_strength",
+    "home_recent_goals_avg", "away_recent_goals_avg",
+    "home_consistency", "away_consistency",
+    "form_momentum_diff",
     
-    # H2H (5)
+    # H2H (7) - GELİŞTİRİLDİ
     "h2h_home_wins", "h2h_draws", "h2h_away_wins",
     "h2h_total_goals_avg", "h2h_home_dominance",
+    "h2h_recent_trend", "h2h_goal_variance",
     
-    # Zaman özellikleri (13) - ARTIRILDI
+    # Zaman özellikleri (15) - GELİŞTİRİLDİ
     "month", "day_of_week", "is_weekend", "season_phase",
     "days_since_last_match_home", "days_since_last_match_away",
-    "rest_advantage",  # YENİ
-    "home_fatigued", "away_fatigued",  # YENİ
-    "home_optimal_rest", "away_optimal_rest",  # YENİ
-    "home_momentum", "away_momentum",  # YENİ
+    "rest_advantage",
+    "home_fatigued", "away_fatigued",
+    "home_optimal_rest", "away_optimal_rest",
+    "home_momentum", "away_momentum",
+    # YENİ
+    "is_midweek", "season_progress",
     
-    # Lig ve sıralama (14) - ARTIRILDI
+    # Lig ve sıralama (18) - GELİŞTİRİLDİ
     "home_league_position", "away_league_position", "position_diff",
     "home_points", "away_points", "points_diff",
-    "home_title_race", "away_title_race",  # YENİ
-    "home_relegation_battle", "away_relegation_battle",  # YENİ
-    "home_mid_table", "away_mid_table",  # YENİ
-    "home_form_last_5", "away_form_last_5"  # YENİ
+    "home_title_race", "away_title_race",
+    "home_relegation_battle", "away_relegation_battle",
+    "home_mid_table", "away_mid_table",
+    "home_form_last_5", "away_form_last_5",
+    # YENİ: Maç önemi
+    "match_importance_home", "match_importance_away",
+    "is_critical_match", "motivation_imbalance"
 ]
 
-TOTAL_FEATURES_V35 = 70
+TOTAL_FEATURES_V4 = 100
 
-assert len(ENHANCED_FEATURE_NAMES_V35) == TOTAL_FEATURES_V35, \
-    f"Feature sayısı uyuşmuyor: {len(ENHANCED_FEATURE_NAMES_V35)} != {TOTAL_FEATURES_V35}"
+assert len(ENHANCED_FEATURE_NAMES_V4) == TOTAL_FEATURES_V4, \
+    f"Feature sayısı uyuşmuyor: {len(ENHANCED_FEATURE_NAMES_V4)} != {TOTAL_FEATURES_V4}"
 
 
 def safe_lower(value: Any) -> str:
@@ -104,7 +123,7 @@ def safe_int(value: Any, default: int = 0) -> int:
 
 
 class EnhancedFeatureEngineer:
-    """Geliştirilmiş Feature Engineering v3.5 - 70 özellik"""
+    """Geliştirilmiş Feature Engineering v4.0 - 100 özellik"""
     
     def __init__(self, model_path: str = "data/ai_models_v3", flush_every: int = 1000):
         self.model_path = model_path
@@ -118,13 +137,16 @@ class EnhancedFeatureEngineer:
         self.team_last_match_date = defaultdict(lambda: None)
         self.league_stats = defaultdict(dict)
         
+        # YENİ: ELO rating sistemi
+        self.team_elo = defaultdict(lambda: 1500.0)  # Başlangıç ELO: 1500
+        
         self._load_data()
         
-        logger.info(f"🚀 EnhancedFeatureEngineer v3.5 initialized")
-        logger.info(f"📊 Total features: {TOTAL_FEATURES_V35}")
+        logger.info(f"🚀 EnhancedFeatureEngineer v4.0 initialized")
+        logger.info(f"📊 Total features: {TOTAL_FEATURES_V4}")
     
     def _load_data(self):
-        data_file = os.path.join(self.model_path, "enhanced_feature_data.pkl")
+        data_file = os.path.join(self.model_path, "enhanced_feature_data_v4.pkl")
         if not os.path.exists(data_file):
             logger.info("ℹ️ Yeni feature data oluşturulacak")
             return False
@@ -135,6 +157,7 @@ class EnhancedFeatureEngineer:
             self.team_history = defaultdict(list, data.get("team_history", {}))
             self.h2h_history = defaultdict(list, data.get("h2h_history", {}))
             self.league_standings = defaultdict(dict, data.get("league_standings", {}))
+            self.team_elo = defaultdict(lambda: 1500.0, data.get("team_elo", {}))
             
             team_dates = {}
             for team, date_str in data.get("team_last_match_date", {}).items():
@@ -155,7 +178,7 @@ class EnhancedFeatureEngineer:
             return False
     
     def _save_data(self):
-        data_file = os.path.join(self.model_path, "enhanced_feature_data.pkl")
+        data_file = os.path.join(self.model_path, "enhanced_feature_data_v4.pkl")
         temp_file = data_file + ".tmp"
         try:
             team_dates_str = {}
@@ -170,7 +193,8 @@ class EnhancedFeatureEngineer:
                 "h2h_history": dict(self.h2h_history),
                 "league_standings": dict(self.league_standings),
                 "team_last_match_date": team_dates_str,
-                "league_stats": dict(self.league_stats)
+                "league_stats": dict(self.league_stats),
+                "team_elo": dict(self.team_elo)  # YENİ
             }
             with open(temp_file, "wb") as f:
                 pickle.dump(data, f, protocol=pickle.HIGHEST_PROTOCOL)
@@ -182,7 +206,7 @@ class EnhancedFeatureEngineer:
             return False
     
     def extract_features(self, match_data: Dict) -> Optional[np.ndarray]:
-        """70 özellikli feature vector üretir"""
+        """100 özellikli feature vector üretir"""
         try:
             if not match_data:
                 return None
@@ -196,15 +220,15 @@ class EnhancedFeatureEngineer:
             
             # Tüm feature gruplarını çıkar
             feature_groups = [
-                self._extract_odds_features(match_data),  # 14
-                self._extract_team_features(home, away, league),  # 4
-                self._extract_advanced_form_features(home, away),  # 20
-                self._extract_h2h_features(home, away),  # 5
-                self._extract_time_features(match_data, home, away),  # 13
-                self._extract_standings_features(home, away, league)  # 14
+                self._extract_advanced_odds_features(match_data),  # 18
+                self._extract_team_features_v4(home, away, league),  # 8
+                self._extract_comprehensive_form_features(home, away),  # 28
+                self._extract_h2h_features_v4(home, away),  # 7
+                self._extract_time_features_v4(match_data, home, away),  # 15
+                self._extract_standings_features_v4(home, away, league)  # 18
             ]
             
-            # Birleştir
+            # Birleştir (6 temel oran zaten ilk grupta)
             features = np.concatenate(feature_groups)
             
             # Güvenlik
@@ -212,8 +236,8 @@ class EnhancedFeatureEngineer:
                 features = np.nan_to_num(features, nan=0.0, posinf=1.0, neginf=-1.0)
             
             # Kontrol
-            if len(features) != TOTAL_FEATURES_V35:
-                logger.error(f"Feature sayısı hatalı: {len(features)} != {TOTAL_FEATURES_V35}")
+            if len(features) != TOTAL_FEATURES_V4:
+                logger.error(f"Feature sayısı hatalı: {len(features)} != {TOTAL_FEATURES_V4}")
                 return None
             
             return features.astype(np.float32)
@@ -222,8 +246,8 @@ class EnhancedFeatureEngineer:
             logger.error(f"extract_features hatası: {e}", exc_info=True)
             return None
     
-    def _extract_odds_features(self, match_data: Dict) -> np.ndarray:
-        """Oran özellikleri (14)"""
+    def _extract_advanced_odds_features(self, match_data: Dict) -> np.ndarray:
+        """Gelişmiş oran özellikleri (6 temel + 18 türev = 24 toplam)"""
         odds = match_data.get("odds", {})
         if not isinstance(odds, dict):
             odds = {"1": 2.0, "X": 3.0, "2": 3.5}
@@ -241,7 +265,7 @@ class EnhancedFeatureEngineer:
         prob_x = (1/odds_x) / total
         prob_2 = (1/odds_2) / total
         
-        # Türevler
+        # Mevcut türevler
         odds_diff_home_draw = odds_1 - odds_x
         odds_diff_draw_away = odds_x - odds_2
         odds_margin = total - 1.0
@@ -253,36 +277,72 @@ class EnhancedFeatureEngineer:
         probs = np.array([prob_1, prob_x, prob_2])
         probs = probs[probs > 0]
         odds_entropy = -np.sum(probs * np.log(probs)) if len(probs) > 0 else 0.0
-        
         odds_variance = np.var([odds_1, odds_x, odds_2])
         
+        # YENİ: Gelişmiş oran metrikleri
+        favorite_gap = abs(min(odds_1, odds_2) - max(odds_1, odds_2))  # Favori-underdog farkı
+        underdog_value = max(odds_1, odds_2) / min(odds_1, odds_2)  # Underdog değeri
+        draw_premium = odds_x - np.mean([odds_1, odds_2])  # Beraberlik primi
+        odds_imbalance = abs(prob_1 - prob_2)  # Oran dengesizliği
+        min_odds = min(odds_1, odds_x, odds_2)
+        max_odds = max(odds_1, odds_x, odds_2)
+        odds_ratio_home_away = odds_1 / odds_2 if odds_2 > 0 else 1.0
+        prob_diff_home_away = prob_1 - prob_2
+        
+        # Oran güveni (düşük entropy = yüksek güven)
+        odds_confidence = 1.0 - (odds_entropy / np.log(3))  # Normalize edilmiş
+        
+        # Betting heat (düşük margin = yüksek likidite/güven)
+        betting_heat = 1.0 / (1.0 + odds_margin)
+        
         return np.array([
+            # Temel (6)
             odds_1, odds_x, odds_2,
             prob_1, prob_x, prob_2,
+            # Mevcut türevler (8)
             odds_diff_home_draw, odds_diff_draw_away, odds_margin,
             log_odds_1, log_odds_x, log_odds_2,
-            odds_entropy, odds_variance
+            odds_entropy, odds_variance,
+            # YENİ türevler (10)
+            favorite_gap, underdog_value, draw_premium,
+            odds_imbalance, min_odds, max_odds,
+            odds_ratio_home_away, prob_diff_home_away, odds_confidence,
+            betting_heat
         ])
     
-    def _extract_team_features(self, home: str, away: str, league: str) -> np.ndarray:
-        """Takım özellikleri (4)"""
+    def _extract_team_features_v4(self, home: str, away: str, league: str) -> np.ndarray:
+        """Takım özellikleri v4 (8)"""
         home_len = len(home)
         away_len = len(away)
         is_derby = float(self._is_derby(home, away))
         league_score = self._get_league_score(league)
         
-        return np.array([home_len, away_len, is_derby, league_score])
+        # YENİ: ELO ratings
+        home_elo = self.team_elo[home]
+        away_elo = self.team_elo[away]
+        elo_diff = home_elo - away_elo
+        
+        # YENİ: Lig kalite endeksi
+        league_quality = self._get_league_quality_index(league)
+        
+        return np.array([
+            home_len, away_len, is_derby, league_score,
+            home_elo, away_elo, elo_diff, league_quality
+        ])
     
-    def _extract_advanced_form_features(self, home: str, away: str) -> np.ndarray:
-        """Gelişmiş form özellikleri (20) - YENİ!"""
+    def _extract_comprehensive_form_features(self, home: str, away: str) -> np.ndarray:
+        """Kapsamlı form özellikleri (28)"""
         home_data = self._calculate_comprehensive_form(home)
         away_data = self._calculate_comprehensive_form(away)
         
         form_diff = home_data["form_score"] - away_data["form_score"]
         goals_diff = home_data["goals_avg"] - away_data["goals_avg"]
         
+        # YENİ: Form momentum farkı
+        form_momentum_diff = home_data["momentum"] - away_data["momentum"]
+        
         return np.array([
-            # Temel form
+            # Temel form (20)
             home_data["form_score"],
             away_data["form_score"],
             form_diff,
@@ -293,21 +353,26 @@ class EnhancedFeatureEngineer:
             away_data["win_streak"],
             home_data["last3_trend"],
             away_data["last3_trend"],
-            # YENİ: Ağırlıklı form
             home_data["weighted_form"],
             away_data["weighted_form"],
-            # YENİ: Ev/Deplasman split (ÇOK ÖNEMLİ!)
             home_data["home_win_rate"],
             away_data["away_win_rate"],
-            # YENİ: Savunma
             home_data["defense_avg"],
             away_data["defense_avg"],
-            # YENİ: Clean sheets
             home_data["clean_sheet_rate"],
             away_data["clean_sheet_rate"],
-            # YENİ: Points per game
             home_data["ppg"],
-            away_data["ppg"]
+            away_data["ppg"],
+            # YENİ: Detaylı performans (8)
+            home_data["attack_strength"],
+            away_data["attack_strength"],
+            home_data["defense_strength"],
+            away_data["defense_strength"],
+            home_data["recent_goals_avg"],
+            away_data["recent_goals_avg"],
+            home_data["consistency"],
+            away_data["consistency"],
+            form_momentum_diff
         ])
     
     def _calculate_comprehensive_form(self, team: str) -> Dict:
@@ -315,31 +380,25 @@ class EnhancedFeatureEngineer:
         history = self.team_history.get(team, [])
         if not history:
             return {
-                "form_score": 0.5,
-                "goals_avg": 1.5,
-                "win_streak": 0,
-                "last3_trend": 0.0,
-                "weighted_form": 0.5,
-                "home_win_rate": 0.45,
-                "away_win_rate": 0.30,
-                "defense_avg": 1.2,
-                "clean_sheet_rate": 0.3,
-                "ppg": 1.5
+                "form_score": 0.5, "goals_avg": 1.5, "win_streak": 0,
+                "last3_trend": 0.0, "weighted_form": 0.5,
+                "home_win_rate": 0.45, "away_win_rate": 0.30,
+                "defense_avg": 1.2, "clean_sheet_rate": 0.3, "ppg": 1.5,
+                "attack_strength": 1.0, "defense_strength": 1.0,
+                "recent_goals_avg": 1.5, "consistency": 0.5, "momentum": 0.0
             }
         
         recent = history[-10:]
         
-        # Temel form
+        # Temel metriker
         wins = sum(1 for m in recent if m.get("result") == "W")
         draws = sum(1 for m in recent if m.get("result") == "D")
         points = wins * 3 + draws * 1
         form_score = points / (len(recent) * 3) if recent else 0.5
         
-        # Gol ortalaması
         goals_for = [safe_int(m.get("goals_for", 0)) for m in recent]
         goals_avg = np.mean(goals_for) if goals_for else 1.5
         
-        # Kazanma serisi
         win_streak = 0
         for m in reversed(recent):
             if m.get("result") == "W":
@@ -347,15 +406,14 @@ class EnhancedFeatureEngineer:
             else:
                 break
         
-        # Son 3 maç trendi
         last3 = goals_for[-3:] if len(goals_for) >= 3 else goals_for
         if len(last3) >= 2:
             last3_trend = (last3[-1] - last3[0]) / max(1, len(last3))
         else:
             last3_trend = 0.0
         
-        # YENİ: Ağırlıklı form (son maçlar daha önemli)
-        weights = [0.1, 0.15, 0.2, 0.25, 0.3]  # Son 5 maç için
+        # Ağırlıklı form
+        weights = [0.1, 0.15, 0.2, 0.25, 0.3]
         recent_5 = recent[-5:]
         if len(recent_5) > 0:
             weighted_points = sum(
@@ -366,7 +424,7 @@ class EnhancedFeatureEngineer:
         else:
             weighted_form = 0.5
         
-        # YENİ: Ev/Deplasman split (ÇOK ÖNEMLİ!)
+        # Ev/Deplasman split
         home_matches = [m for m in history if m.get('venue') == 'home'][-10:]
         away_matches = [m for m in history if m.get('venue') == 'away'][-10:]
         
@@ -376,16 +434,33 @@ class EnhancedFeatureEngineer:
         away_wins = sum(1 for m in away_matches if m['result'] == 'W')
         away_win_rate = away_wins / len(away_matches) if away_matches else 0.30
         
-        # YENİ: Savunma metrikleri
+        # Savunma
         goals_against = [safe_int(m.get("goals_against", 0)) for m in recent]
         defense_avg = np.mean(goals_against) if goals_against else 1.2
         
-        # YENİ: Clean sheet rate
         clean_sheets = sum(1 for m in recent if m.get("goals_against", 1) == 0)
         clean_sheet_rate = clean_sheets / len(recent) if recent else 0.3
         
-        # YENİ: Points per game
         ppg = points / len(recent) if recent else 1.5
+        
+        # YENİ: Attack/Defense strength (lig ortalamasına göre)
+        league_avg_goals = 1.5  # Default
+        attack_strength = goals_avg / league_avg_goals if league_avg_goals > 0 else 1.0
+        defense_strength = league_avg_goals / defense_avg if defense_avg > 0 else 1.0
+        
+        # YENİ: Son 3 maç gol ortalaması
+        recent_3_goals = goals_for[-3:] if len(goals_for) >= 3 else goals_for
+        recent_goals_avg = np.mean(recent_3_goals) if recent_3_goals else 1.5
+        
+        # YENİ: Tutarlılık (sonuçların standart sapması)
+        recent_points = [
+            3 if m['result'] == 'W' else 1 if m['result'] == 'D' else 0
+            for m in recent
+        ]
+        consistency = 1.0 - (np.std(recent_points) / 3.0) if len(recent_points) > 1 else 0.5
+        
+        # YENİ: Momentum (trend)
+        momentum = self._calculate_momentum_v2(team)
         
         return {
             "form_score": round(form_score, 3),
@@ -397,16 +472,43 @@ class EnhancedFeatureEngineer:
             "away_win_rate": round(away_win_rate, 3),
             "defense_avg": round(defense_avg, 2),
             "clean_sheet_rate": round(clean_sheet_rate, 3),
-            "ppg": round(ppg, 2)
+            "ppg": round(ppg, 2),
+            "attack_strength": round(attack_strength, 2),
+            "defense_strength": round(defense_strength, 2),
+            "recent_goals_avg": round(recent_goals_avg, 2),
+            "consistency": round(consistency, 3),
+            "momentum": round(momentum, 2)
         }
     
-    def _extract_h2h_features(self, home: str, away: str) -> np.ndarray:
-        """H2H özellikleri (5)"""
+    def _calculate_momentum_v2(self, team: str) -> float:
+        """Gelişmiş momentum hesabı"""
+        history = self.team_history.get(team, [])
+        if len(history) < 3:
+            return 0.0
+        
+        recent_3 = history[-3:]
+        earlier_3 = history[-6:-3] if len(history) >= 6 else history[:3]
+        
+        recent_points = sum(
+            3 if m['result'] == 'W' else 1 if m['result'] == 'D' else 0
+            for m in recent_3
+        ) / 3
+        
+        earlier_points = sum(
+            3 if m['result'] == 'W' else 1 if m['result'] == 'D' else 0
+            for m in earlier_3
+        ) / 3
+        
+        momentum = recent_points - earlier_points
+        return round(momentum, 2)
+    
+    def _extract_h2h_features_v4(self, home: str, away: str) -> np.ndarray:
+        """H2H özellikleri v4 (7)"""
         key = self._get_h2h_key(home, away)
         h2h = self.h2h_history.get(key, [])
         
         if not h2h:
-            return np.array([0, 0, 0, 2.5, 0.5])
+            return np.array([0, 0, 0, 2.5, 0.5, 0.0, 0.0])
         
         home_wins = sum(1 for m in h2h if m.get("result") == "1")
         draws = sum(1 for m in h2h if m.get("result") == "X")
@@ -418,16 +520,25 @@ class EnhancedFeatureEngineer:
         total_matches = len(h2h)
         h2h_home_dominance = home_wins / total_matches if total_matches > 0 else 0.5
         
+        # YENİ: Son 3 H2H trendi
+        recent_h2h = h2h[-3:]
+        recent_home_wins = sum(1 for m in recent_h2h if m.get("result") == "1")
+        h2h_recent_trend = recent_home_wins / len(recent_h2h) if recent_h2h else 0.5
+        
+        # YENİ: H2H gol varyansı
+        h2h_goal_variance = np.var(total_goals) if len(total_goals) > 1 else 0.0
+        
         return np.array([
             home_wins, draws, away_wins,
-            h2h_total_goals_avg, h2h_home_dominance
+            h2h_total_goals_avg, h2h_home_dominance,
+            h2h_recent_trend, h2h_goal_variance
         ])
     
     def _get_h2h_key(self, home: str, away: str) -> str:
         return "_vs_".join(sorted([home, away]))
     
-    def _extract_time_features(self, match_data: Dict, home: str, away: str) -> np.ndarray:
-        """Zaman özellikleri (13) - Geliştirilmiş"""
+    def _extract_time_features_v4(self, match_data: Dict, home: str, away: str) -> np.ndarray:
+        """Zaman özellikleri v4 (15)"""
         date_str = match_data.get("date", "")
         
         try:
@@ -455,21 +566,27 @@ class EnhancedFeatureEngineer:
         # Rest days
         days_since_last_home = self._days_since_last_match(home, match_date)
         days_since_last_away = self._days_since_last_match(away, match_date)
-        
-        # YENİ: Rest advantage
         rest_advantage = days_since_last_home - days_since_last_away
         
-        # YENİ: Fatigue indicators
         home_fatigued = 1.0 if days_since_last_home < 3 else 0.0
         away_fatigued = 1.0 if days_since_last_away < 3 else 0.0
-        
-        # YENİ: Optimal rest
         home_optimal_rest = 1.0 if 3 <= days_since_last_home <= 5 else 0.0
         away_optimal_rest = 1.0 if 3 <= days_since_last_away <= 5 else 0.0
         
-        # YENİ: Momentum
-        home_momentum = self._calculate_momentum(home)
-        away_momentum = self._calculate_momentum(away)
+        home_momentum = self._calculate_momentum_v2(home)
+        away_momentum = self._calculate_momentum_v2(away)
+        
+        # YENİ: Hafta içi maç mı?
+        is_midweek = 1.0 if 1 <= day_of_week <= 3 else 0.0
+        
+        # YENİ: Sezon ilerlemesi (0-1 arası)
+        if month >= 8:
+            season_start_month = 8
+            months_elapsed = (month - season_start_month) if month >= 8 else (month + 12 - season_start_month)
+        else:
+            season_start_month = 8
+            months_elapsed = month + (12 - season_start_month)
+        season_progress = min(months_elapsed / 10.0, 1.0)  # 10 aylık sezon varsayımı
         
         return np.array([
             month, day_of_week, is_weekend, season_phase,
@@ -477,7 +594,8 @@ class EnhancedFeatureEngineer:
             rest_advantage,
             home_fatigued, away_fatigued,
             home_optimal_rest, away_optimal_rest,
-            home_momentum, away_momentum
+            home_momentum, away_momentum,
+            is_midweek, season_progress
         ])
     
     def _days_since_last_match(self, team: str, current_date: datetime) -> float:
@@ -492,30 +610,8 @@ class EnhancedFeatureEngineer:
         except:
             return 7.0
     
-    def _calculate_momentum(self, team: str) -> float:
-        """Momentum hesapla (son 3 vs önceki 3 maç)"""
-        history = self.team_history.get(team, [])
-        if len(history) < 3:
-            return 0.0
-        
-        recent_3 = history[-3:]
-        earlier_3 = history[-6:-3] if len(history) >= 6 else history[:3]
-        
-        recent_points = sum(
-            3 if m['result'] == 'W' else 1 if m['result'] == 'D' else 0
-            for m in recent_3
-        ) / 3
-        
-        earlier_points = sum(
-            3 if m['result'] == 'W' else 1 if m['result'] == 'D' else 0
-            for m in earlier_3
-        ) / 3
-        
-        momentum = recent_points - earlier_points
-        return round(momentum, 2)
-    
-    def _extract_standings_features(self, home: str, away: str, league: str) -> np.ndarray:
-        """Lig sıralaması özellikleri (14) - Geliştirilmiş"""
+    def _extract_standings_features_v4(self, home: str, away: str, league: str) -> np.ndarray:
+        """Lig sıralaması özellikleri v4 (18)"""
         standings = self.league_standings.get(league, {})
         league_size = len(standings) if standings else 20
         
@@ -530,22 +626,26 @@ class EnhancedFeatureEngineer:
         away_points = safe_float(away_data.get("points", 30))
         points_diff = home_points - away_points
         
-        # YENİ: Motivasyon faktörleri
-        # Şampiyonluk yarışı
+        # Motivasyon faktörleri
         home_title_race = 1.0 if home_pos <= 4 else 0.0
         away_title_race = 1.0 if away_pos <= 4 else 0.0
-        
-        # Düşme mücadelesi
         home_relegation = 1.0 if home_pos >= (league_size - 3) else 0.0
         away_relegation = 1.0 if away_pos >= (league_size - 3) else 0.0
-        
-        # Orta sıra (düşük motivasyon)
         home_mid_table = 1.0 if 5 <= home_pos <= (league_size - 4) else 0.0
         away_mid_table = 1.0 if 5 <= away_pos <= (league_size - 4) else 0.0
         
-        # Son 5 maç formu (standings'ten)
         home_form_5 = safe_float(home_data.get("form_last_5", 1.5))
         away_form_5 = safe_float(away_data.get("form_last_5", 1.5))
+        
+        # YENİ: Maç önem seviyesi
+        match_importance_home = self._calculate_match_importance(home_pos, home_title_race, home_relegation, league_size)
+        match_importance_away = self._calculate_match_importance(away_pos, away_title_race, away_relegation, league_size)
+        
+        # YENİ: Kritik maç mı?
+        is_critical_match = 1.0 if (home_title_race + away_title_race + home_relegation + away_relegation) >= 2 else 0.0
+        
+        # YENİ: Motivasyon dengesizliği
+        motivation_imbalance = abs(match_importance_home - match_importance_away)
         
         return np.array([
             home_pos, away_pos, pos_diff,
@@ -553,20 +653,37 @@ class EnhancedFeatureEngineer:
             home_title_race, away_title_race,
             home_relegation, away_relegation,
             home_mid_table, away_mid_table,
-            home_form_5, away_form_5
+            home_form_5, away_form_5,
+            match_importance_home, match_importance_away,
+            is_critical_match, motivation_imbalance
         ])
     
+    def _calculate_match_importance(self, position: float, title_race: float, relegation: float, league_size: int) -> float:
+        """Maç önem seviyesi hesapla (0-1)"""
+        if title_race == 1.0:
+            return 0.9  # Şampiyonluk yarışı çok önemli
+        elif relegation == 1.0:
+            return 0.85  # Düşme mücadelesi çok önemli
+        elif position <= league_size / 4:
+            return 0.7  # Üst sıralarda önemli
+        elif position >= 3 * league_size / 4:
+            return 0.6  # Alt sıralarda önemli
+        else:
+            return 0.4  # Orta sıra, düşük önem
+    
     def _is_derby(self, home: str, away: str) -> bool:
+        """Derby tespiti"""
         derby_teams = ["galatasaray", "fenerbahçe", "beşiktaş", "trabzonspor"]
         home_is_big = any(t in home for t in derby_teams)
         away_is_big = any(t in away for t in derby_teams)
         return home_is_big and away_is_big
     
     def _get_league_score(self, league: str) -> float:
+        """Lig skoru (gol ortalaması bazlı)"""
         league_scores = {
-            "premier league": 2.5, "la liga": 2.5, "serie a": 2.3,
-            "bundesliga": 2.4, "ligue 1": 2.2, "süper lig": 1.8,
-            "eredivisie": 1.5, "liga nos": 1.4
+            "premier league": 2.7, "la liga": 2.6, "serie a": 2.4,
+            "bundesliga": 2.9, "ligue 1": 2.5, "süper lig": 2.6,
+            "eredivisie": 3.0, "liga nos": 2.3, "championship": 2.6
         }
         
         for key, score in league_scores.items():
@@ -574,16 +691,28 @@ class EnhancedFeatureEngineer:
                 return score
         
         if league in self.league_stats and "avg_goals" in self.league_stats[league]:
-            avg_goals = self.league_stats[league]["avg_goals"]
-            league_score = avg_goals / 1.2
-            return float(np.clip(league_score, 1.0, 2.8))
+            return self.league_stats[league]["avg_goals"]
         
-        return 1.0
+        return 2.5  # Default
+    
+    def _get_league_quality_index(self, league: str) -> float:
+        """Lig kalite endeksi (1-10 arası)"""
+        quality_map = {
+            "premier league": 10.0, "la liga": 9.5, "bundesliga": 9.0,
+            "serie a": 8.5, "ligue 1": 8.0, "süper lig": 6.5,
+            "eredivisie": 7.0, "liga nos": 6.0, "championship": 7.5
+        }
+        
+        for key, quality in quality_map.items():
+            if key in league:
+                return quality
+        
+        return 5.0  # Default orta kalite
     
     def update_match_result(self, home: str, away: str, league: str, 
                            result: str, home_goals: int, away_goals: int,
                            match_date: str, venue_home: str = "home", venue_away: str = "away"):
-        """Maç sonrası güncelleme - venue bilgisi eklendi"""
+        """Maç sonrası güncelleme + ELO güncelleme"""
         home = safe_lower(home)
         away = safe_lower(away)
         league = safe_lower(league)
@@ -593,13 +722,13 @@ class EnhancedFeatureEngineer:
         except:
             match_date_obj = datetime.now()
         
-        # Takım geçmişi güncelle (venue ile)
+        # Takım geçmişi güncelle
         home_match_data = {
             "result": "W" if result == "1" else ("D" if result == "X" else "L"),
             "goals_for": home_goals,
             "goals_against": away_goals,
             "date": match_date,
-            "venue": venue_home  # YENİ
+            "venue": venue_home
         }
         self.team_history[home].append(home_match_data)
         
@@ -608,7 +737,7 @@ class EnhancedFeatureEngineer:
             "goals_for": away_goals,
             "goals_against": home_goals,
             "date": match_date,
-            "venue": venue_away  # YENİ
+            "venue": venue_away
         }
         self.team_history[away].append(away_match_data)
         
@@ -624,6 +753,9 @@ class EnhancedFeatureEngineer:
         self.team_last_match_date[home] = match_date_obj
         self.team_last_match_date[away] = match_date_obj
         
+        # YENİ: ELO güncelleme
+        self._update_elo_ratings(home, away, result)
+        
         # Lig istatistikleri
         self._update_league_stats(league, home_goals + away_goals)
         
@@ -632,7 +764,34 @@ class EnhancedFeatureEngineer:
         if self.update_count % self.flush_every == 0:
             self._save_data()
     
+    def _update_elo_ratings(self, home: str, away: str, result: str):
+        """ELO rating güncelleme (Chess ELO sistemine benzer)"""
+        K = 32  # K-factor (değişim hızı)
+        
+        home_elo = self.team_elo[home]
+        away_elo = self.team_elo[away]
+        
+        # Beklenen skorlar
+        expected_home = 1 / (1 + 10 ** ((away_elo - home_elo) / 400))
+        expected_away = 1 - expected_home
+        
+        # Gerçek skorlar
+        if result == "1":
+            actual_home, actual_away = 1.0, 0.0
+        elif result == "X":
+            actual_home, actual_away = 0.5, 0.5
+        else:  # "2"
+            actual_home, actual_away = 0.0, 1.0
+        
+        # Yeni ELO'lar
+        new_home_elo = home_elo + K * (actual_home - expected_home)
+        new_away_elo = away_elo + K * (actual_away - expected_away)
+        
+        self.team_elo[home] = round(new_home_elo, 1)
+        self.team_elo[away] = round(new_away_elo, 1)
+    
     def _update_league_stats(self, league: str, total_goals: int):
+        """Lig istatistikleri güncelle"""
         if league not in self.league_stats:
             self.league_stats[league] = {"total_goals": 0, "match_count": 0}
         
@@ -644,21 +803,25 @@ class EnhancedFeatureEngineer:
         )
     
     def update_standings(self, league: str, standings: Dict[str, Dict]):
+        """Lig sıralaması güncelle"""
         league = safe_lower(league)
         self.league_standings[league] = {
             safe_lower(team): data for team, data in standings.items()
         }
     
     def manual_save(self):
+        """Manuel kaydetme"""
         return self._save_data()
     
     def get_stats(self) -> Dict[str, Any]:
+        """İstatistikler"""
         return {
             "total_teams": len(self.team_history),
             "total_h2h_pairs": len(self.h2h_history),
             "total_leagues": len(self.league_standings),
             "update_count": self.update_count,
-            "total_features": TOTAL_FEATURES_V35
+            "total_features": TOTAL_FEATURES_V4,
+            "avg_elo": round(np.mean(list(self.team_elo.values())), 1) if self.team_elo else 1500.0
         }
 
 
@@ -677,8 +840,10 @@ if __name__ == "__main__":
     features = eng.extract_features(test_match)
     if features is not None:
         print(f"✅ Feature vector: {features.shape}")
-        print(f"✅ Expected: {TOTAL_FEATURES_V35}")
-        print(f"✅ Match: {len(features) == TOTAL_FEATURES_V35}")
-        print(f"✅ Sample: {features[:10]}")
+        print(f"✅ Expected: {TOTAL_FEATURES_V4}")
+        print(f"✅ Match: {len(features) == TOTAL_FEATURES_V4}")
+        print(f"✅ Sample features (first 20): {features[:20]}")
+        print(f"✅ Sample features (odds section): {features[6:24]}")
+        print(f"\n📊 Stats: {eng.get_stats()}")
     else:
         print("❌ Feature extraction failed")
