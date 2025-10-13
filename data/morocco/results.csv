@@ -1,0 +1,241 @@
+time,home_team,away_team,home_score,away_score,result,ht_score,source_file
+21.30,Maghrib de Fès,Moghreb de Tétouan,2,1,1,1-1,2023-24_ma1.txt
+17.00,Olympique de Safi,Hassania US Agadir,1,1,X,0-0,2023-24_ma1.txt
+19.15,Union de Touarga,CR Khemis Zemamra,2,1,1,2-0,2023-24_ma1.txt
+17.00,Ittihad Tanger,JS Soualem,0,2,2,0-2,2023-24_ma1.txt
+19.15,Youssoufia Berrechid,Raja Casablanca,1,3,2,1-1,2023-24_ma1.txt
+21.30,RS Berkane,Mouloudia Oujda,2,0,1,1-0,2023-24_ma1.txt
+19.15,FAR de Rabat,Chabab Mohammédia,2,0,1,0-0,2023-24_ma1.txt
+21.30,Wydad AC,FUS de Rabat,0,2,2,0-1,2023-24_ma1.txt
+21.30,JS Soualem,Hassania US Agadir,1,0,1,0-0,2023-24_ma1.txt
+19.15,CR Khemis Zemamra,Youssoufia Berrechid,1,0,1,0-0,2023-24_ma1.txt
+20.30,Mouloudia Oujda,Union de Touarga,1,3,2,0-1,2023-24_ma1.txt
+,Moghreb de Tétouan,Olympique de Safi,0,0,X,,2023-24_ma1.txt
+17.00,Raja Casablanca,FAR de Rabat,2,2,X,2-1,2023-24_ma1.txt
+19.15,RS Berkane,Ittihad Tanger,2,1,1,1-1,2023-24_ma1.txt
+,FUS de Rabat,Maghrib de Fès,0,0,X,,2023-24_ma1.txt
+21.30,Chabab Mohammédia,Wydad AC,2,3,2,2-2,2023-24_ma1.txt
+17.00,Hassania US Agadir,Moghreb de Tétouan,0,2,2,0-1,2023-24_ma1.txt
+19.15,Olympique de Safi,FUS de Rabat,0,0,X,,2023-24_ma1.txt
+21.30,Youssoufia Berrechid,Chabab Mohammédia,0,1,2,0-1,2023-24_ma1.txt
+19.15,Maghrib de Fès,Raja Casablanca,1,1,X,0-0,2023-24_ma1.txt
+21.30,Ittihad Tanger,Mouloudia Oujda,1,1,X,0-0,2023-24_ma1.txt
+17.00,Union de Touarga,RS Berkane,1,3,2,0-2,2023-24_ma1.txt
+19.15,FAR de Rabat,CR Khemis Zemamra,3,1,1,1-0,2023-24_ma1.txt
+20.00,Wydad AC,JS Soualem,1,0,1,0-0,2023-24_ma1.txt
+19.15,Ittihad Tanger,Youssoufia Berrechid,2,1,1,0-1,2023-24_ma1.txt
+21.30,Chabab Mohammédia,Moghreb de Tétouan,0,1,2,0-0,2023-24_ma1.txt
+19.15,Raja Casablanca,Union de Touarga,1,0,1,0-0,2023-24_ma1.txt
+21.30,RS Berkane,Wydad AC,0,0,X,,2023-24_ma1.txt
+17.00,JS Soualem,Olympique de Safi,0,1,2,0-0,2023-24_ma1.txt
+19.15,Mouloudia Oujda,FAR de Rabat,0,3,2,0-2,2023-24_ma1.txt
+21.30,CR Khemis Zemamra,Maghrib de Fès,1,1,X,1-0,2023-24_ma1.txt
+20.00,FUS de Rabat,Hassania US Agadir,2,0,1,1-0,2023-24_ma1.txt
+16.00,Olympique de Safi,Chabab Mohammédia,0,0,X,,2023-24_ma1.txt
+16.00,Hassania US Agadir,Raja Casablanca,1,1,X,1-0,2023-24_ma1.txt
+18.15,Youssoufia Berrechid,Mouloudia Oujda,0,0,X,,2023-24_ma1.txt
+,Maghrib de Fès,JS Soualem,3,0,1,0-0,2023-24_ma1.txt
+20.30,Union de Touarga,Ittihad Tanger,2,2,X,0-2,2023-24_ma1.txt
+18.15,Wydad AC,CR Khemis Zemamra,3,1,1,1-1,2023-24_ma1.txt
+20.30,FAR de Rabat,RS Berkane,0,0,X,,2023-24_ma1.txt
+20.00,Moghreb de Tétouan,FUS de Rabat,2,1,1,2-0,2023-24_ma1.txt
+20.30,Chabab Mohammédia,Hassania US Agadir,3,1,1,1-1,2023-24_ma1.txt
+16.00,Union de Touarga,FAR de Rabat,2,1,1,0-1,2023-24_ma1.txt
+18.15,Mouloudia Oujda,Maghrib de Fès,1,3,2,0-2,2023-24_ma1.txt
+20.30,Ittihad Tanger,Wydad AC,0,3,2,0-1,2023-24_ma1.txt
+16.00,JS Soualem,FUS de Rabat,1,3,2,0-2,2023-24_ma1.txt
+18.15,RS Berkane,Youssoufia Berrechid,3,1,1,1-0,2023-24_ma1.txt
+,CR Khemis Zemamra,Olympique de Safi,3,2,1,2-2,2023-24_ma1.txt
+20.30,Raja Casablanca,Moghreb de Tétouan,1,0,1,0-0,2023-24_ma1.txt
+20.30,FUS de Rabat,Chabab Mohammédia,1,0,1,1-0,2023-24_ma1.txt
+16.00,Hassania US Agadir,CR Khemis Zemamra,2,2,X,0-2,2023-24_ma1.txt
+18.15,Olympique de Safi,Raja Casablanca,2,2,X,0-0,2023-24_ma1.txt
+20.30,Youssoufia Berrechid,Union de Touarga,2,1,1,1-0,2023-24_ma1.txt
+16.00,FAR de Rabat,Ittihad Tanger,1,0,1,0-0,2023-24_ma1.txt
+18.15,Moghreb de Tétouan,JS Soualem,4,0,1,2-0,2023-24_ma1.txt
+20.30,Maghrib de Fès,RS Berkane,0,0,X,,2023-24_ma1.txt
+18.00,Wydad AC,Mouloudia Oujda,3,1,1,0-0,2023-24_ma1.txt
+20.30,JS Soualem,Chabab Mohammédia,2,2,X,1-0,2023-24_ma1.txt
+16.00,CR Khemis Zemamra,Moghreb de Tétouan,1,1,X,0-0,2023-24_ma1.txt
+18.15,RS Berkane,Hassania US Agadir,0,0,X,,2023-24_ma1.txt
+20.30,FAR de Rabat,Youssoufia Berrechid,4,1,1,2-0,2023-24_ma1.txt
+16.00,Ittihad Tanger,Maghrib de Fès,2,2,X,1-1,2023-24_ma1.txt
+18.15,Mouloudia Oujda,Olympique de Safi,1,1,X,1-0,2023-24_ma1.txt
+17.00,Raja Casablanca,FUS de Rabat,2,0,1,1-0,2023-24_ma1.txt
+18.00,Union de Touarga,Wydad AC,0,1,2,0-0,2023-24_ma1.txt
+16.00,Maghrib de Fès,Union de Touarga,0,1,2,0-0,2023-24_ma1.txt
+18.15,Moghreb de Tétouan,Mouloudia Oujda,1,1,X,0-1,2023-24_ma1.txt
+16.00,FUS de Rabat,RS Berkane,1,1,X,1-0,2023-24_ma1.txt
+18.15,JS Soualem,Raja Casablanca,0,0,X,,2023-24_ma1.txt
+20.30,Olympique de Safi,FAR de Rabat,1,0,1,0-0,2023-24_ma1.txt
+18.15,Chabab Mohammédia,CR Khemis Zemamra,0,2,2,0-0,2023-24_ma1.txt
+20.30,Hassania US Agadir,Ittihad Tanger,1,1,X,1-0,2023-24_ma1.txt
+18.00,Wydad AC,Youssoufia Berrechid,1,0,1,1-0,2023-24_ma1.txt
+20.00,Union de Touarga,FUS de Rabat,0,0,X,,2023-24_ma1.txt
+16.00,Mouloudia Oujda,Hassania US Agadir,1,0,1,1-0,2023-24_ma1.txt
+18.15,Youssoufia Berrechid,Maghrib de Fès,1,0,1,0-0,2023-24_ma1.txt
+15.00,Raja Casablanca,Chabab Mohammédia,1,0,1,0-0,2023-24_ma1.txt
+16.00,CR Khemis Zemamra,JS Soualem,1,0,1,1-0,2023-24_ma1.txt
+,Ittihad Tanger,Moghreb de Tétouan,1,1,X,1-1,2023-24_ma1.txt
+18.00,FAR de Rabat,Wydad AC,3,1,1,0-1,2023-24_ma1.txt
+18.00,RS Berkane,Olympique de Safi,3,0,1,0-0,2023-24_ma1.txt
+16.00,Maghrib de Fès,FAR de Rabat,1,3,2,0-0,2023-24_ma1.txt
+18.00,FUS de Rabat,Ittihad Tanger,0,0,X,,2023-24_ma1.txt
+15.00,Raja Casablanca,CR Khemis Zemamra,2,1,1,2-1,2023-24_ma1.txt
+18.00,JS Soualem,Union de Touarga,1,0,1,0-0,2023-24_ma1.txt
+16.00,Chabab Mohammédia,Mouloudia Oujda,1,0,1,1-0,2023-24_ma1.txt
+18.00,Olympique de Safi,Youssoufia Berrechid,3,1,1,2-0,2023-24_ma1.txt
+18.00,Moghreb de Tétouan,RS Berkane,0,0,X,,2023-24_ma1.txt
+18.00,Hassania US Agadir,Wydad AC,0,0,X,,2023-24_ma1.txt
+16.00,Mouloudia Oujda,JS Soualem,3,2,1,2-1,2023-24_ma1.txt
+18.00,Ittihad Tanger,Olympique de Safi,0,0,X,,2023-24_ma1.txt
+20.00,Union de Touarga,Chabab Mohammédia,1,2,2,0-1,2023-24_ma1.txt
+16.00,CR Khemis Zemamra,FUS de Rabat,1,2,2,1-1,2023-24_ma1.txt
+18.00,FAR de Rabat,Hassania US Agadir,2,1,1,0-0,2023-24_ma1.txt
+20.00,Youssoufia Berrechid,Moghreb de Tétouan,0,0,X,,2023-24_ma1.txt
+18.00,RS Berkane,Raja Casablanca,1,1,X,0-1,2023-24_ma1.txt
+18.00,Wydad AC,Maghrib de Fès,1,1,X,1-1,2023-24_ma1.txt
+16.00,FUS de Rabat,Youssoufia Berrechid,1,1,X,1-1,2023-24_ma1.txt
+,Raja Casablanca,Ittihad Tanger,6,1,1,3-0,2023-24_ma1.txt
+18.00,Chabab Mohammédia,RS Berkane,1,1,X,0-1,2023-24_ma1.txt
+20.00,Moghreb de Tétouan,Union de Touarga,1,1,X,0-1,2023-24_ma1.txt
+16.00,CR Khemis Zemamra,Mouloudia Oujda,0,1,2,0-0,2023-24_ma1.txt
+18.00,Hassania US Agadir,Maghrib de Fès,2,1,1,2-0,2023-24_ma1.txt
+,Olympique de Safi,Wydad AC,2,1,1,1-0,2023-24_ma1.txt
+20.00,JS Soualem,FAR de Rabat,2,2,X,1-1,2023-24_ma1.txt
+16.00,Wydad AC,Raja Casablanca,0,2,2,0-0,2023-24_ma1.txt
+18.00,Mouloudia Oujda,FUS de Rabat,2,1,1,0-1,2023-24_ma1.txt
+20.00,Ittihad Tanger,CR Khemis Zemamra,1,1,X,0-1,2023-24_ma1.txt
+,Maghrib de Fès,Chabab Mohammédia,2,1,1,2-1,2023-24_ma1.txt
+16.00,Union de Touarga,Olympique de Safi,1,0,1,1-0,2023-24_ma1.txt
+18.00,Youssoufia Berrechid,Hassania US Agadir,1,2,2,1-1,2023-24_ma1.txt
+,RS Berkane,JS Soualem,3,1,1,3-1,2023-24_ma1.txt
+20.00,FAR de Rabat,Moghreb de Tétouan,3,0,1,1-0,2023-24_ma1.txt
+18.00,Raja Casablanca,Mouloudia Oujda,2,0,1,0-0,2023-24_ma1.txt
+20.00,Chabab Mohammédia,Ittihad Tanger,1,0,1,1-0,2023-24_ma1.txt
+16.00,Hassania US Agadir,Union de Touarga,3,2,1,1-1,2023-24_ma1.txt
+,CR Khemis Zemamra,RS Berkane,2,1,1,2-0,2023-24_ma1.txt
+18.00,Moghreb de Tétouan,Wydad AC,0,0,X,,2023-24_ma1.txt
+20.00,Olympique de Safi,Maghrib de Fès,1,1,X,1-0,2023-24_ma1.txt
+16.00,JS Soualem,Youssoufia Berrechid,3,1,1,1-0,2023-24_ma1.txt
+18.00,FUS de Rabat,FAR de Rabat,1,4,2,0-2,2023-24_ma1.txt
+16.00,CR Khemis Zemamra,Union de Touarga,1,2,2,0-0,2023-24_ma1.txt
+,JS Soualem,Ittihad Tanger,1,3,2,1-1,2023-24_ma1.txt
+,FUS de Rabat,Wydad AC,2,1,1,0-1,2023-24_ma1.txt
+18.00,Moghreb de Tétouan,Maghrib de Fès,0,2,2,0-0,2023-24_ma1.txt
+,Hassania US Agadir,Olympique de Safi,1,1,X,1-1,2023-24_ma1.txt
+16.00,Raja Casablanca,Youssoufia Berrechid,2,0,1,1-0,2023-24_ma1.txt
+18.00,Mouloudia Oujda,RS Berkane,1,0,1,1-0,2023-24_ma1.txt
+,Chabab Mohammédia,FAR de Rabat,0,3,2,0-1,2023-24_ma1.txt
+16.00,Hassania US Agadir,JS Soualem,2,1,1,1-0,2023-24_ma1.txt
+18.00,Olympique de Safi,Moghreb de Tétouan,2,1,1,1-0,2023-24_ma1.txt
+,Maghrib de Fès,FUS de Rabat,1,2,2,1-1,2023-24_ma1.txt
+16.00,Youssoufia Berrechid,CR Khemis Zemamra,1,0,1,0-0,2023-24_ma1.txt
+,FAR de Rabat,Raja Casablanca,1,1,X,0-0,2023-24_ma1.txt
+,Ittihad Tanger,RS Berkane,0,1,2,0-0,2023-24_ma1.txt
+18.00,Union de Touarga,Mouloudia Oujda,2,0,1,1-0,2023-24_ma1.txt
+,Wydad AC,Chabab Mohammédia,5,2,1,2-0,2023-24_ma1.txt
+18.00,Moghreb de Tétouan,Hassania US Agadir,1,1,X,1-0,2023-24_ma1.txt
+20.00,FUS de Rabat,Olympique de Safi,0,0,X,,2023-24_ma1.txt
+16.00,RS Berkane,Union de Touarga,0,0,X,,2023-24_ma1.txt
+,CR Khemis Zemamra,FAR de Rabat,0,1,2,0-0,2023-24_ma1.txt
+18.00,Raja Casablanca,Maghrib de Fès,1,0,1,1-0,2023-24_ma1.txt
+20.00,JS Soualem,Wydad AC,3,1,1,1-1,2023-24_ma1.txt
+18.00,Mouloudia Oujda,Ittihad Tanger,1,1,X,1-1,2023-24_ma1.txt
+20.00,Chabab Mohammédia,Youssoufia Berrechid,2,2,X,1-1,2023-24_ma1.txt
+20.00,Hassania US Agadir,FUS de Rabat,1,3,2,0-1,2023-24_ma1.txt
+16.00,Olympique de Safi,JS Soualem,1,0,1,0-0,2023-24_ma1.txt
+18.00,Wydad AC,RS Berkane,1,0,1,0-0,2023-24_ma1.txt
+,Maghrib de Fès,CR Khemis Zemamra,2,3,2,1-2,2023-24_ma1.txt
+20.00,Union de Touarga,Raja Casablanca,0,0,X,,2023-24_ma1.txt
+16.00,Youssoufia Berrechid,Ittihad Tanger,0,1,2,0-1,2023-24_ma1.txt
+18.00,FAR de Rabat,Mouloudia Oujda,5,0,1,2-0,2023-24_ma1.txt
+20.00,Moghreb de Tétouan,Chabab Mohammédia,1,0,1,0-0,2023-24_ma1.txt
+16.00,Raja Casablanca,Hassania US Agadir,2,0,1,1-0,2023-24_ma1.txt
+19.00,JS Soualem,Maghrib de Fès,1,1,X,0-0,2023-24_ma1.txt
+18.00,FUS de Rabat,Moghreb de Tétouan,1,1,X,1-0,2023-24_ma1.txt
+20.00,Chabab Mohammédia,Olympique de Safi,1,0,1,1-0,2023-24_ma1.txt
+18.00,Ittihad Tanger,Union de Touarga,2,1,1,0-1,2023-24_ma1.txt
+20.00,Mouloudia Oujda,Youssoufia Berrechid,1,1,X,0-0,2023-24_ma1.txt
+18.00,CR Khemis Zemamra,Wydad AC,0,0,X,,2023-24_ma1.txt
+18.00,RS Berkane,FAR de Rabat,1,2,2,1-2,2023-24_ma1.txt
+16.00,FUS de Rabat,JS Soualem,1,0,1,0-0,2023-24_ma1.txt
+18.00,Moghreb de Tétouan,Raja Casablanca,1,1,X,0-1,2023-24_ma1.txt
+20.00,Olympique de Safi,CR Khemis Zemamra,2,0,1,2-0,2023-24_ma1.txt
+16.00,Hassania US Agadir,Chabab Mohammédia,2,0,1,0-0,2023-24_ma1.txt
+18.00,FAR de Rabat,Union de Touarga,3,0,1,0-0,2023-24_ma1.txt
+20.00,Maghrib de Fès,Mouloudia Oujda,1,0,1,1-0,2023-24_ma1.txt
+22.00,Wydad AC,Ittihad Tanger,0,2,2,0-2,2023-24_ma1.txt
+22.00,Youssoufia Berrechid,RS Berkane,0,0,X,,2023-24_ma1.txt
+18.00,Chabab Mohammédia,FUS de Rabat,0,1,2,0-0,2023-24_ma1.txt
+20.00,Union de Touarga,Youssoufia Berrechid,3,2,1,2-2,2023-24_ma1.txt
+18.00,Ittihad Tanger,FAR de Rabat,1,2,2,0-0,2023-24_ma1.txt
+20.00,CR Khemis Zemamra,Hassania US Agadir,3,0,1,1-0,2023-24_ma1.txt
+16.00,JS Soualem,Moghreb de Tétouan,1,2,2,0-0,2023-24_ma1.txt
+18.00,Raja Casablanca,Olympique de Safi,1,0,1,0-0,2023-24_ma1.txt
+22.00,RS Berkane,Maghrib de Fès,2,1,1,1-0,2023-24_ma1.txt
+22.00,Mouloudia Oujda,Wydad AC,0,2,2,0-0,2023-24_ma1.txt
+19.00,Chabab Mohammédia,JS Soualem,0,1,2,0-1,2023-24_ma1.txt
+16.00,Wydad AC,Union de Touarga,0,0,X,,2023-24_ma1.txt
+18.00,Olympique de Safi,Mouloudia Oujda,3,1,1,2-1,2023-24_ma1.txt
+20.00,Maghrib de Fès,Ittihad Tanger,2,1,1,2-1,2023-24_ma1.txt
+15.00,Moghreb de Tétouan,CR Khemis Zemamra,0,1,2,0-0,2023-24_ma1.txt
+,Hassania US Agadir,RS Berkane,0,2,2,0-0,2023-24_ma1.txt
+17.00,FUS de Rabat,Raja Casablanca,0,1,2,0-1,2023-24_ma1.txt
+19.00,Youssoufia Berrechid,FAR de Rabat,0,2,2,0-1,2023-24_ma1.txt
+22.00,Union de Touarga,Maghrib de Fès,1,0,1,0-0,2023-24_ma1.txt
+22.00,Mouloudia Oujda,Moghreb de Tétouan,0,1,2,0-0,2023-24_ma1.txt
+,Raja Casablanca,JS Soualem,3,1,1,1-0,2023-24_ma1.txt
+,FAR de Rabat,Olympique de Safi,1,0,1,0-0,2023-24_ma1.txt
+,CR Khemis Zemamra,Chabab Mohammédia,0,0,X,,2023-24_ma1.txt
+22.00,RS Berkane,FUS de Rabat,2,0,1,0-0,2023-24_ma1.txt
+,Ittihad Tanger,Hassania US Agadir,0,1,2,0-0,2023-24_ma1.txt
+,Youssoufia Berrechid,Wydad AC,0,0,X,,2023-24_ma1.txt
+16.00,Maghrib de Fès,Youssoufia Berrechid,0,1,2,0-0,2023-24_ma1.txt
+18.00,FUS de Rabat,Union de Touarga,1,1,X,1-1,2023-24_ma1.txt
+,Wydad AC,FAR de Rabat,0,1,2,0-1,2023-24_ma1.txt
+20.00,Hassania US Agadir,Mouloudia Oujda,2,2,X,1-1,2023-24_ma1.txt
+17.00,Olympique de Safi,RS Berkane,1,2,2,0-0,2023-24_ma1.txt
+19.00,Moghreb de Tétouan,Ittihad Tanger,1,1,X,0-0,2023-24_ma1.txt
+21.00,Chabab Mohammédia,Raja Casablanca,0,2,2,0-1,2023-24_ma1.txt
+18.00,JS Soualem,CR Khemis Zemamra,1,1,X,0-0,2023-24_ma1.txt
+20.00,Youssoufia Berrechid,Olympique de Safi,0,1,2,0-1,2023-24_ma1.txt
+17.00,Ittihad Tanger,FUS de Rabat,2,1,1,1-1,2023-24_ma1.txt
+19.00,Mouloudia Oujda,Chabab Mohammédia,0,0,X,,2023-24_ma1.txt
+21.00,Wydad AC,Hassania US Agadir,1,0,1,1-0,2023-24_ma1.txt
+17.00,Union de Touarga,JS Soualem,0,1,2,0-1,2023-24_ma1.txt
+19.00,FAR de Rabat,Maghrib de Fès,3,1,1,1-1,2023-24_ma1.txt
+21.00,CR Khemis Zemamra,Raja Casablanca,1,2,2,0-1,2023-24_ma1.txt
+20.00,RS Berkane,Moghreb de Tétouan,3,2,1,1-1,2023-24_ma1.txt
+19.00,JS Soualem,Mouloudia Oujda,0,0,X,,2023-24_ma1.txt
+17.00,Chabab Mohammédia,Union de Touarga,0,2,2,0-1,2023-24_ma1.txt
+19.00,Hassania US Agadir,FAR de Rabat,2,1,1,1-1,2023-24_ma1.txt
+21.00,Olympique de Safi,Ittihad Tanger,1,1,X,0-0,2023-24_ma1.txt
+17.00,FUS de Rabat,CR Khemis Zemamra,0,2,2,0-0,2023-24_ma1.txt
+19.00,Maghrib de Fès,Wydad AC,1,1,X,0-1,2023-24_ma1.txt
+21.00,Moghreb de Tétouan,Youssoufia Berrechid,0,0,X,,2023-24_ma1.txt
+19.00,Raja Casablanca,RS Berkane,3,0,1,1-0,2023-24_ma1.txt
+18.00,Maghrib de Fès,Hassania US Agadir,2,2,X,1-1,2023-24_ma1.txt
+20.00,Union de Touarga,Moghreb de Tétouan,1,0,1,0-0,2023-24_ma1.txt
+19.00,Youssoufia Berrechid,FUS de Rabat,0,5,2,0-1,2023-24_ma1.txt
+,Ittihad Tanger,Raja Casablanca,1,2,2,0-0,2023-24_ma1.txt
+,RS Berkane,Chabab Mohammédia,2,0,1,0-0,2023-24_ma1.txt
+,Mouloudia Oujda,CR Khemis Zemamra,1,2,2,1-2,2023-24_ma1.txt
+,Wydad AC,Olympique de Safi,0,1,2,0-0,2023-24_ma1.txt
+,FAR de Rabat,JS Soualem,3,1,1,3-1,2023-24_ma1.txt
+19.00,FUS de Rabat,Mouloudia Oujda,0,0,X,,2023-24_ma1.txt
+,CR Khemis Zemamra,Ittihad Tanger,0,1,2,0-1,2023-24_ma1.txt
+,Chabab Mohammédia,Maghrib de Fès,0,2,2,0-1,2023-24_ma1.txt
+,Olympique de Safi,Union de Touarga,1,3,2,1-0,2023-24_ma1.txt
+,Hassania US Agadir,Youssoufia Berrechid,4,1,1,2-1,2023-24_ma1.txt
+,JS Soualem,RS Berkane,1,2,2,1-0,2023-24_ma1.txt
+18.00,Raja Casablanca,Wydad AC,1,0,1,0-0,2023-24_ma1.txt
+,Moghreb de Tétouan,FAR de Rabat,2,2,X,2-1,2023-24_ma1.txt
+18.00,RS Berkane,CR Khemis Zemamra,1,2,2,0-0,2023-24_ma1.txt
+18.00,Mouloudia Oujda,Raja Casablanca,0,3,2,0-2,2023-24_ma1.txt
+,Ittihad Tanger,Chabab Mohammédia,0,0,X,,2023-24_ma1.txt
+,Union de Touarga,Hassania US Agadir,3,3,X,1-1,2023-24_ma1.txt
+,Wydad AC,Moghreb de Tétouan,1,0,1,0-0,2023-24_ma1.txt
+,Maghrib de Fès,Olympique de Safi,0,1,2,0-1,2023-24_ma1.txt
+,Youssoufia Berrechid,JS Soualem,2,3,2,0-1,2023-24_ma1.txt
+,FAR de Rabat,FUS de Rabat,2,0,1,0-0,2023-24_ma1.txt

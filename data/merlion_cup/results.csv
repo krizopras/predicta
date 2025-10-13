@@ -1,0 +1,26 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Singapore,Malaysia,0,1,2,Kallang,Singapore,1982_merlion_cup.txt
+Singapore,Brunei,7,0,1,Kallang,Singapore,1982_merlion_cup.txt
+Brunei,Malaysia,0,4,2,Kallang,Singapore,1982_merlion_cup.txt
+Australia,Indonesia,2,0,1,Kallang,Singapore,1982_merlion_cup.txt
+Australia,Malaysia,5,0,1,Kallang,Singapore,1982_merlion_cup.txt
+Indonesia,Malaysia,0,0,X,Kallang,Singapore   [Indonesia wins on penalties],1982_merlion_cup.txt
+Australia,China PR,1,2,2,Kallang,Singapore,1983_merlion_cup.txt
+Singapore,Brunei,4,0,1,Kallang,Singapore,1983_merlion_cup.txt
+Singapore,China PR,1,0,1,Kallang,Singapore,1983_merlion_cup.txt
+Singapore,Australia,2,4,2,Kallang,Singapore,1983_merlion_cup.txt
+Brunei,Malaysia,0,4,2,Kallang,Singapore,1985_merlion_cup.txt
+Singapore,Brunei,2,1,1,Kallang,Singapore,1985_merlion_cup.txt
+Singapore,Malaysia,2,0,1,Kallang,Singapore,1985_merlion_cup.txt
+Singapore,Malaysia,4,0,1,Kallang,Singapore,1985_merlion_cup.txt
+China PR,North Korea,0,0,X,Kallang,Singapore,1986_merlion_cup.txt
+Singapore,Canada,0,1,2,Kallang,Singapore,1986_merlion_cup.txt
+Canada,North Korea,0,0,X,Kallang,Singapore,1986_merlion_cup.txt
+Singapore,North Korea,0,2,2,Kallang,Singapore,1986_merlion_cup.txt
+China PR,Canada,1,0,1,Kallang,Singapore,1986_merlion_cup.txt
+Singapore,China PR,0,3,2,Kallang,Singapore,1986_merlion_cup.txt
+Singapore,China PR,1,2,2,Kallang,Singapore,1986_merlion_cup.txt
+Canada,North Korea,0,2,2,Kallang,Singapore,1986_merlion_cup.txt
+China PR,North Korea,2,1,1,Kallang,Singapore,1986_merlion_cup.txt
+Singapore,Canada,0,1,2,Kallang,Singapore,1986_merlion_cup.txt
+Singapore,Malaysia,3,0,1,Kallang,Singapore,1992_merlion_cup.txt

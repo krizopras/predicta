@@ -1,0 +1,348 @@
+time,home_team,away_team,home_score,away_score,result,ht_score,source_file
+13.00,Valmiera FC,FK RFS,0,0,X,,2023_lv1.txt
+17.00,FK Auda,SK Super Nova,2,0,1,2-0,2023_lv1.txt
+15.00,FK Tukums 2000,BFC Daugavpils,1,0,1,0-0,2023_lv1.txt
+17.00,Riga FC,FS Jelgava,2,1,1,0-0,2023_lv1.txt
+18.00,FS Jelgava,BFC Daugavpils,2,1,1,1-1,2023_lv1.txt
+13.00,FK Metta,FK Auda,0,2,2,0-1,2023_lv1.txt
+17.00,Riga FC,FK RFS,1,1,X,0-1,2023_lv1.txt
+15.00,SK Super Nova,FK Tukums 2000,2,0,1,1-0,2023_lv1.txt
+13.00,BFC Daugavpils,SK Super Nova,3,0,1,1-0,2023_lv1.txt
+,ja,Riga FC,0,3,2,0-3,2023_lv1.txt
+17.00,FS Jelgava,FK RFS,0,2,2,0-1,2023_lv1.txt
+13.00,FK Tukums 2000,FK Metta,1,2,2,0-0,2023_lv1.txt
+15.00,FK Auda,Valmiera FC,0,4,2,0-2,2023_lv1.txt
+17.00,FS Jelgava,SK Super Nova,2,0,1,0-0,2023_lv1.txt
+17.00,Valmiera FC,FK Tukums 2000,4,3,1,1-2,2023_lv1.txt
+19.00,Riga FC,FK Auda,2,0,1,0-0,2023_lv1.txt
+15.00,FK Metta,BFC Daugavpils,3,2,1,2-1,2023_lv1.txt
+,ja,FS Jelgava,3,2,1,1-2,2023_lv1.txt
+14.00,FK Tukums 2000,Riga FC,0,2,2,0-1,2023_lv1.txt
+16.00,FK Auda,FK RFS,0,0,X,,2023_lv1.txt
+17.00,BFC Daugavpils,Valmiera FC,1,1,X,0-0,2023_lv1.txt
+,SK Super Nova,FK Metta,0,3,2,0-2,2023_lv1.txt
+,ja,FK Auda,1,1,X,1-0,2023_lv1.txt
+19.00,FK RFS,FK Tukums 2000,1,0,1,0-0,2023_lv1.txt
+13.00,BFC Daugavpils,Riga FC,1,1,X,1-0,2023_lv1.txt
+15.00,FS Jelgava,FK Metta,2,1,1,2-1,2023_lv1.txt
+15.00,SK Super Nova,Valmiera FC,1,0,1,1-0,2023_lv1.txt
+17.30,BFC Daugavpils,FK RFS,0,5,2,0-2,2023_lv1.txt
+19.00,FS Jelgava,FK Auda,0,0,X,,2023_lv1.txt
+17.00,SK Super Nova,Riga FC,0,4,2,0-2,2023_lv1.txt
+18.00,FK Metta,Valmiera FC,0,1,2,0-0,2023_lv1.txt
+,ja,BFC Daugavpils,1,0,1,0-0,2023_lv1.txt
+17.30,Valmiera FC,FS Jelgava,2,0,1,2-0,2023_lv1.txt
+,FK Auda,FK Tukums 2000,0,3,2,0-1,2023_lv1.txt
+19.00,FK RFS,SK Super Nova,2,1,1,1-1,2023_lv1.txt
+18.00,Riga FC,FK Metta,4,0,1,2-0,2023_lv1.txt
+17.30,BFC Daugavpils,FK Auda,0,2,2,0-0,2023_lv1.txt
+16.00,FS Jelgava,FK Tukums 2000,2,2,X,1-0,2023_lv1.txt
+18.00,FK Metta,FK RFS,0,0,X,,2023_lv1.txt
+17.00,Riga FC,Valmiera FC,3,0,1,2-0,2023_lv1.txt
+18.00,SK Super Nova,FK Auda,0,2,2,0-1,2023_lv1.txt
+,ja,FK Metta,1,1,X,0-1,2023_lv1.txt
+18.00,BFC Daugavpils,FK Tukums 2000,3,3,X,2-1,2023_lv1.txt
+15.00,FK RFS,Valmiera FC,2,1,1,1-1,2023_lv1.txt
+17.00,FS Jelgava,Riga FC,1,3,2,0-1,2023_lv1.txt
+17.30,Valmiera FC,SK Super Nova,3,1,1,2-0,2023_lv1.txt
+18.30,Riga FC,BFC Daugavpils,1,0,1,0-0,2023_lv1.txt
+17.00,FK Tukums 2000,FK RFS,1,7,2,1-3,2023_lv1.txt
+18.00,FS Jelgava,FK Metta,2,3,2,1-0,2023_lv1.txt
+18.00,Valmiera FC,FK Auda,1,1,X,1-0,2023_lv1.txt
+,ja,Riga FC,0,4,2,0-2,2023_lv1.txt
+13.00,FK Metta,FK Tukums 2000,3,2,1,2-1,2023_lv1.txt
+16.00,FK RFS,FS Jelgava,4,0,1,2-0,2023_lv1.txt
+16.00,SK Super Nova,BFC Daugavpils,0,4,2,0-3,2023_lv1.txt
+18.00,FK Auda,Riga FC,0,2,2,0-1,2023_lv1.txt
+17.00,FK Tukums 2000,Valmiera FC,0,0,X,,2023_lv1.txt
+,ja,FK RFS,0,3,2,0-0,2023_lv1.txt
+17.00,SK Super Nova,FS Jelgava,2,2,X,2-1,2023_lv1.txt
+18.00,BFC Daugavpils,FK Metta,1,1,X,0-0,2023_lv1.txt
+14.00,Riga FC,FK Tukums 2000,5,1,1,2-0,2023_lv1.txt
+16.00,FK RFS,FK Auda,2,0,1,2-0,2023_lv1.txt
+17.30,Valmiera FC,BFC Daugavpils,1,0,1,1-0,2023_lv1.txt
+18.00,FK Metta,SK Super Nova,4,1,1,1-1,2023_lv1.txt
+18.00,BFC Daugavpils,FS Jelgava,5,2,1,1-0,2023_lv1.txt
+19.00,FK RFS,Riga FC,0,0,X,,2023_lv1.txt
+14.00,FK Tukums 2000,SK Super Nova,3,2,1,2-0,2023_lv1.txt
+,ja,Valmiera FC,1,2,2,1-0,2023_lv1.txt
+16.00,FK Auda,FK Metta,3,1,1,1-0,2023_lv1.txt
+18.00,FK RFS,BFC Daugavpils,3,1,1,1-1,2023_lv1.txt
+18.00,Valmiera FC,FK Metta,1,1,X,0-0,2023_lv1.txt
+20.00,Riga FC,SK Super Nova,5,1,1,4-0,2023_lv1.txt
+,ja,FK Tukums 2000,0,1,2,0-0,2023_lv1.txt
+19.00,FK Auda,FS Jelgava,1,0,1,1-0,2023_lv1.txt
+15.00,FK Metta,Riga FC,0,2,2,0-2,2023_lv1.txt
+18.00,SK Super Nova,FK RFS,1,6,2,1-1,2023_lv1.txt
+19.00,FS Jelgava,Valmiera FC,2,0,1,0-0,2023_lv1.txt
+18.00,FK Tukums 2000,FK Auda,2,2,X,1-2,2023_lv1.txt
+18.00,FK Metta,FK RFS,0,6,2,0-2,2023_lv1.txt
+,Valmiera FC,Riga FC,1,0,1,0-0,2023_lv1.txt
+,ja,SK Super Nova,2,1,1,2-1,2023_lv1.txt
+17.00,FK Auda,BFC Daugavpils,1,1,X,0-1,2023_lv1.txt
+18.00,FK Tukums 2000,FS Jelgava,2,0,1,0-0,2023_lv1.txt
+,ja,FK Metta,3,2,1,1-0,2023_lv1.txt
+18.00,FK RFS,Valmiera FC,3,0,1,1-0,2023_lv1.txt
+19.00,FS Jelgava,Riga FC,1,3,2,1-1,2023_lv1.txt
+,SK Super Nova,FK Auda,0,5,2,0-4,2023_lv1.txt
+18.00,BFC Daugavpils,FK Tukums 2000,3,1,1,2-1,2023_lv1.txt
+19.00,FK Metta,FK Auda,0,1,2,0-0,2023_lv1.txt
+18.00,BFC Daugavpils,FS Jelgava,1,1,X,0-0,2023_lv1.txt
+,SK Super Nova,FK Tukums 2000,2,5,2,1-3,2023_lv1.txt
+20.00,Riga FC,FK RFS,2,2,X,1-2,2023_lv1.txt
+18.00,FK Tukums 2000,FK Metta,1,1,X,0-1,2023_lv1.txt
+20.00,FK Auda,Valmiera FC,0,0,X,,2023_lv1.txt
+17.30,FK RFS,FS Jelgava,1,0,1,0-0,2023_lv1.txt
+18.00,BFC Daugavpils,SK Super Nova,2,0,1,0-0,2023_lv1.txt
+18.00,Valmiera FC,FK Tukums 2000,6,0,1,3-0,2023_lv1.txt
+,ja,FK RFS,1,1,X,0-1,2023_lv1.txt
+20.00,Riga FC,FK Auda,1,0,1,0-0,2023_lv1.txt
+16.00,FS Jelgava,SK Super Nova,2,2,X,1-1,2023_lv1.txt
+18.00,FK Metta,BFC Daugavpils,0,0,X,,2023_lv1.txt
+18.00,SK Super Nova,FK Metta,1,3,2,0-1,2023_lv1.txt
+14.00,Valmiera FC,BFC Daugavpils,0,1,2,0-1,2023_lv1.txt
+17.00,FK Auda,FK RFS,2,5,2,0-0,2023_lv1.txt
+19.00,FK Tukums 2000,Riga FC,0,6,2,0-3,2023_lv1.txt
+18.00,FK RFS,FK Tukums 2000,7,0,1,5-0,2023_lv1.txt
+20.00,Riga FC,BFC Daugavpils,3,0,1,1-0,2023_lv1.txt
+18.00,FK Metta,FS Jelgava,0,1,2,0-1,2023_lv1.txt
+16.00,Valmiera FC,SK Super Nova,1,1,X,1-1,2023_lv1.txt
+16.00,FK Auda,FS Jelgava,3,0,1,2-0,2023_lv1.txt
+18.00,Valmiera FC,FK Metta,2,1,1,0-1,2023_lv1.txt
+,SK Super Nova,Riga FC,1,5,2,1-2,2023_lv1.txt
+18.00,BFC Daugavpils,FK RFS,0,1,2,0-0,2023_lv1.txt
+,ja,BFC Daugavpils,2,1,1,1-1,2023_lv1.txt
+18.00,FK Tukums 2000,FK Auda,2,2,X,0-1,2023_lv1.txt
+14.00,Valmiera FC,FS Jelgava,2,2,X,1-0,2023_lv1.txt
+18.00,FK RFS,SK Super Nova,5,0,1,3-0,2023_lv1.txt
+20.00,Riga FC,FK Metta,1,0,1,1-0,2023_lv1.txt
+16.00,FS Jelgava,FK Tukums 2000,2,0,1,1-0,2023_lv1.txt
+20.00,Riga FC,Valmiera FC,3,0,1,1-0,2023_lv1.txt
+15.00,BFC Daugavpils,FK Auda,0,2,2,0-2,2023_lv1.txt
+17.00,FK RFS,FK Metta,5,0,1,2-0,2023_lv1.txt
+17.00,FK Tukums 2000,BFC Daugavpils,3,0,1,2-0,2023_lv1.txt
+19.00,Riga FC,FS Jelgava,3,5,2,2-3,2023_lv1.txt
+14.00,Valmiera FC,FK RFS,1,0,1,1-0,2023_lv1.txt
+18.00,FK Auda,SK Super Nova,1,0,1,1-0,2023_lv1.txt
+18.00,FK Auda,FK Metta,3,1,1,2-1,2023_lv1.txt
+14.00,FS Jelgava,BFC Daugavpils,0,0,X,,2023_lv1.txt
+16.00,FK RFS,Riga FC,0,0,X,,2023_lv1.txt
+,ja,Valmiera FC,1,4,2,0-2,2023_lv1.txt
+16.00,FK Tukums 2000,SK Super Nova,1,0,1,0-0,2023_lv1.txt
+14.00,FK Metta,FK Tukums 2000,1,1,X,0-0,2023_lv1.txt
+16.00,SK Super Nova,BFC Daugavpils,0,1,2,0-1,2023_lv1.txt
+14.00,Valmiera FC,FK Auda,1,2,2,0-0,2023_lv1.txt
+16.00,FS Jelgava,FK RFS,0,1,2,0-1,2023_lv1.txt
+18.00,BFC Daugavpils,FK Metta,4,2,1,1-2,2023_lv1.txt
+20.00,FK Auda,Riga FC,0,1,2,0-0,2023_lv1.txt
+14.00,SK Super Nova,FS Jelgava,1,1,X,0-0,2023_lv1.txt
+16.00,FK Tukums 2000,Valmiera FC,3,2,1,1-1,2023_lv1.txt
+18.00,Riga FC,FK Tukums 2000,4,0,1,1-0,2023_lv1.txt
+13.00,BFC Daugavpils,Valmiera FC,0,0,X,,2023_lv1.txt
+,ja,FS Jelgava,1,1,X,0-0,2023_lv1.txt
+,FK RFS,FK Auda,3,0,1,1-0,2023_lv1.txt
+13.00,FK Metta,SK Super Nova,0,1,2,0-1,2023_lv1.txt
+13.00,BFC Daugavpils,Riga FC,0,2,2,0-0,2023_lv1.txt
+,ja,FK Auda,1,1,X,0-0,2023_lv1.txt
+,FK Tukums 2000,FK RFS,4,5,2,1-1,2023_lv1.txt
+13.00,FK Metta,FS Jelgava,0,1,2,0-0,2023_lv1.txt
+15.00,SK Super Nova,Valmiera FC,0,2,2,0-2,2023_lv1.txt
+,ja,FK Tukums 2000,1,0,1,1-0,2023_lv1.txt
+14.00,FS Jelgava,FK Auda,0,2,2,0-0,2023_lv1.txt
+13.00,FK Metta,Valmiera FC,4,1,1,1-1,2023_lv1.txt
+15.00,Riga FC,SK Super Nova,1,1,X,0-1,2023_lv1.txt
+18.00,FK RFS,BFC Daugavpils,3,1,1,1-1,2023_lv1.txt
+,FK Auda,FK Tukums 2000,1,0,1,1-0,2023_lv1.txt
+,FS Jelgava,Valmiera FC,0,1,2,0-1,2023_lv1.txt
+,FK Metta,Riga FC,1,3,2,0-2,2023_lv1.txt
+,SK Super Nova,FK RFS,0,4,2,0-3,2023_lv1.txt
+13.00,Valmiera FC,Riga FC,1,1,X,0-0,2023_lv1.txt
+,FK Auda,BFC Daugavpils,1,0,1,0-0,2023_lv1.txt
+,ja,SK Super Nova,2,0,1,1-0,2023_lv1.txt
+,FK Tukums 2000,FS Jelgava,0,0,X,,2023_lv1.txt
+,FK RFS,FK Metta,1,0,1,0-0,2023_lv1.txt
+18.00,FK Auda,FK RFS,1,2,2,0-1,2024_lv1.txt
+,ja,FK Tukums 2000,0,2,2,0-0,2024_lv1.txt
+16.00,FS Jelgava,BFC Daugavpils,0,0,X,,2024_lv1.txt
+,as SC,Riga FC,0,1,2,0-1,2024_lv1.txt
+15.00,FK Metta,Valmiera FC,0,2,2,0-0,2024_lv1.txt
+18.00,FK RFS,Valmiera FC,0,1,2,0-1,2024_lv1.txt
+15.00,Riga FC,FK Auda,1,0,1,0-0,2024_lv1.txt
+14.00,FS Jelgava,FK Tukums 2000,2,3,2,1-2,2024_lv1.txt
+16.00,FS Jelgava,FK Metta,0,1,2,0-1,2024_lv1.txt
+,ja,FK RFS,0,3,2,0-1,2024_lv1.txt
+16.00,BFC Daugavpils,FK Tukums 2000,3,1,1,1-0,2024_lv1.txt
+,as SC,FK Auda,1,1,X,0-0,2024_lv1.txt
+16.00,Valmiera FC,Riga FC,2,1,1,0-1,2024_lv1.txt
+17.00,FK Metta,BFC Daugavpils,0,1,2,0-0,2024_lv1.txt
+19.00,FK RFS,FS Jelgava,5,1,1,4-0,2024_lv1.txt
+18.00,FK Auda,Valmiera FC,3,1,1,2-0,2024_lv1.txt
+15.00,BFC Daugavpils,FK RFS,1,1,X,0-1,2024_lv1.txt
+17.00,FK Tukums 2000,FK Metta,0,0,X,,2024_lv1.txt
+19.00,Riga FC,FS Jelgava,2,0,1,0-0,2024_lv1.txt
+,ja,FK Auda,1,0,1,1-0,2024_lv1.txt
+18.00,Riga FC,BFC Daugavpils,2,0,1,1-0,2024_lv1.txt
+19.00,FK RFS,FK Tukums 2000,5,0,1,3-0,2024_lv1.txt
+,as SC,FK Metta,3,0,1,2-0,2024_lv1.txt
+18.00,FS Jelgava,FK Auda,0,0,X,,2024_lv1.txt
+17.30,FK Tukums 2000,Riga FC,2,1,1,0-0,2024_lv1.txt
+17.30,FK Auda,BFC Daugavpils,1,0,1,1-0,2024_lv1.txt
+19.30,FK RFS,FK Metta,2,0,1,0-0,2024_lv1.txt
+19.30,FS Jelgava,Valmiera FC,0,3,2,0-1,2024_lv1.txt
+14.00,FK Metta,Riga FC,1,2,2,0-1,2024_lv1.txt
+16.00,FK Auda,FK Tukums 2000,2,0,1,1-0,2024_lv1.txt
+17.30,Valmiera FC,BFC Daugavpils,0,1,2,0-1,2024_lv1.txt
+,as SC,FK RFS,0,4,2,0-2,2024_lv1.txt
+,ja,FS Jelgava,0,1,2,0-0,2024_lv1.txt
+18.00,FK Metta,FK Auda,1,3,2,0-2,2024_lv1.txt
+16.00,FK Tukums 2000,Valmiera FC,1,2,2,0-1,2024_lv1.txt
+19.00,Riga FC,FK RFS,1,2,2,0-1,2024_lv1.txt
+16.00,FK RFS,FK Auda,2,1,1,1-1,2024_lv1.txt
+18.30,FK Metta,Valmiera FC,1,1,X,1-0,2024_lv1.txt
+18.00,BFC Daugavpils,FS Jelgava,1,0,1,1-0,2024_lv1.txt
+14.00,Valmiera FC,FK RFS,2,0,1,0-0,2024_lv1.txt
+16.00,FK Auda,Riga FC,1,2,2,0-0,2024_lv1.txt
+,ja,FK Metta,1,2,2,1-0,2024_lv1.txt
+,as SC,BFC Daugavpils,1,3,2,0-3,2024_lv1.txt
+18.00,FK Tukums 2000,FS Jelgava,2,1,1,1-0,2024_lv1.txt
+20.00,Riga FC,Valmiera FC,1,1,X,0-0,2024_lv1.txt
+16.00,FK Metta,FS Jelgava,3,0,1,3-0,2024_lv1.txt
+,as SC,FK Auda,2,2,X,1-2,2024_lv1.txt
+15.00,BFC Daugavpils,FK Tukums 2000,4,1,1,2-1,2024_lv1.txt
+,ja,Riga FC,1,1,X,0-1,2024_lv1.txt
+17.30,Valmiera FC,FK Auda,2,1,1,1-0,2024_lv1.txt
+18.30,FS Jelgava,FK RFS,1,2,2,1-0,2024_lv1.txt
+18.00,BFC Daugavpils,FK Metta,4,0,1,3-0,2024_lv1.txt
+18.00,FS Jelgava,Riga FC,1,5,2,0-3,2024_lv1.txt
+,as SC,Valmiera FC,0,2,2,0-0,2024_lv1.txt
+19.00,FK RFS,BFC Daugavpils,5,0,1,1-0,2024_lv1.txt
+18.00,FK Metta,FK Tukums 2000,1,1,X,0-0,2024_lv1.txt
+18.00,FK Auda,FS Jelgava,0,1,2,0-0,2024_lv1.txt
+17.30,BFC Daugavpils,Riga FC,0,2,2,0-1,2024_lv1.txt
+,ja,Valmiera FC,0,3,2,0-2,2024_lv1.txt
+18.00,FK Tukums 2000,FK RFS,0,1,2,0-1,2024_lv1.txt
+18.00,Valmiera FC,FS Jelgava,4,0,1,2-0,2024_lv1.txt
+19.00,BFC Daugavpils,FK Auda,0,3,2,0-1,2024_lv1.txt
+,FK Metta,FK RFS,0,6,2,0-4,2024_lv1.txt
+20.00,Riga FC,FK Tukums 2000,3,0,1,2-0,2024_lv1.txt
+17.00,BFC Daugavpils,Valmiera FC,1,6,2,1-5,2024_lv1.txt
+,FK Tukums 2000,FK Auda,1,4,2,0-2,2024_lv1.txt
+20.00,Riga FC,FK Metta,5,0,1,0-0,2024_lv1.txt
+18.00,Valmiera FC,FK Tukums 2000,6,1,1,6-0,2024_lv1.txt
+,ja,BFC Daugavpils,1,1,X,0-1,2024_lv1.txt
+,as SC,FS Jelgava,4,2,1,1-1,2024_lv1.txt
+18.00,FK Auda,FK Metta,4,0,1,3-0,2024_lv1.txt
+20.00,FK RFS,Riga FC,2,2,X,1-0,2024_lv1.txt
+19.00,Valmiera FC,FK Metta,3,0,1,2-0,2024_lv1.txt
+18.00,BFC Daugavpils,FS Jelgava,3,0,1,0-0,2024_lv1.txt
+20.00,FK Auda,FK RFS,1,3,2,0-1,2024_lv1.txt
+,as SC,Riga FC,0,6,2,0-4,2024_lv1.txt
+,ja,FK Metta,1,5,2,1-0,2024_lv1.txt
+18.00,FS Jelgava,FK Tukums 2000,0,0,X,,2024_lv1.txt
+,Riga FC,FK Auda,1,0,1,1-0,2024_lv1.txt
+20.00,FK RFS,Valmiera FC,4,1,1,2-1,2024_lv1.txt
+,as SC,BFC Daugavpils,3,0,1,1-0,2024_lv1.txt
+18.00,FS Jelgava,FK Metta,1,0,1,0-0,2024_lv1.txt
+,ja,FK RFS,1,3,2,1-1,2024_lv1.txt
+18.00,Valmiera FC,Riga FC,2,2,X,0-1,2024_lv1.txt
+18.00,FK Tukums 2000,BFC Daugavpils,1,2,2,0-1,2024_lv1.txt
+20.00,FK RFS,FS Jelgava,7,0,1,4-0,2024_lv1.txt
+18.00,FK Auda,Valmiera FC,0,1,2,0-1,2024_lv1.txt
+16.00,FK Metta,BFC Daugavpils,3,2,1,2-1,2024_lv1.txt
+,ja,Riga FC,0,3,2,0-1,2024_lv1.txt
+,as SC,FK Tukums 2000,2,1,1,1-0,2024_lv1.txt
+18.00,Riga FC,FS Jelgava,6,1,1,4-0,2024_lv1.txt
+18.00,FK Metta,FK Tukums 2000,0,0,X,,2024_lv1.txt
+20.00,FK RFS,BFC Daugavpils,4,1,1,3-0,2024_lv1.txt
+16.00,FK Tukums 2000,FK RFS,1,4,2,1-1,2024_lv1.txt
+,as SC,FK Metta,1,2,2,0-2,2024_lv1.txt
+,ja,Valmiera FC,0,0,X,,2024_lv1.txt
+16.00,FS Jelgava,FK Auda,1,3,2,0-3,2024_lv1.txt
+18.00,Riga FC,BFC Daugavpils,1,0,1,0-0,2024_lv1.txt
+14.00,FS Jelgava,Valmiera FC,0,4,2,0-1,2024_lv1.txt
+16.00,FK Tukums 2000,Riga FC,0,5,2,0-1,2024_lv1.txt
+18.00,FK Auda,BFC Daugavpils,1,0,1,0-0,2024_lv1.txt
+20.00,FK RFS,FK Metta,5,1,1,2-1,2024_lv1.txt
+16.00,FK Metta,Riga FC,2,4,2,1-1,2024_lv1.txt
+,ja,FS Jelgava,3,0,1,1-0,2024_lv1.txt
+16.00,Valmiera FC,BFC Daugavpils,4,1,1,2-1,2024_lv1.txt
+18.00,FK Auda,FK Tukums 2000,1,1,X,0-0,2024_lv1.txt
+,as SC,FS Jelgava,2,3,2,1-1,2024_lv1.txt
+14.00,FK Tukums 2000,Valmiera FC,3,2,1,2-0,2024_lv1.txt
+16.00,FK Metta,FK Auda,0,4,2,0-1,2024_lv1.txt
+20.00,Riga FC,FK RFS,0,0,X,,2024_lv1.txt
+16.00,Valmiera FC,FK Metta,4,0,1,3-0,2024_lv1.txt
+14.00,FS Jelgava,BFC Daugavpils,0,0,X,,2024_lv1.txt
+,ja,FK Tukums 2000,3,1,1,1-0,2024_lv1.txt
+18.00,FK RFS,FK Auda,1,2,2,1-0,2024_lv1.txt
+17.00,Valmiera FC,FK RFS,1,2,2,0-2,2024_lv1.txt
+18.00,FK Auda,Riga FC,2,2,X,1-1,2024_lv1.txt
+14.00,FK Tukums 2000,FS Jelgava,3,3,X,3-1,2024_lv1.txt
+19.00,Riga FC,Valmiera FC,1,0,1,1-0,2024_lv1.txt
+14.00,FK Tukums 2000,BFC Daugavpils,0,0,X,,2024_lv1.txt
+16.00,FK Metta,FS Jelgava,2,0,1,2-0,2024_lv1.txt
+18.00,BFC Daugavpils,FK Metta,1,1,X,0-0,2024_lv1.txt
+14.00,Valmiera FC,FK Auda,2,3,2,1-1,2024_lv1.txt
+,as SC,FK Tukums 2000,1,2,2,1-2,2024_lv1.txt
+16.00,FS Jelgava,FK RFS,0,2,2,0-0,2024_lv1.txt
+,as SC,Valmiera FC,1,4,2,1-2,2024_lv1.txt
+15.00,FS Jelgava,Riga FC,0,2,2,0-0,2024_lv1.txt
+,ja,FK Auda,2,1,1,1-0,2024_lv1.txt
+15.00,FK Tukums 2000,FK Metta,0,1,2,0-0,2024_lv1.txt
+17.00,BFC Daugavpils,FK RFS,0,3,2,0-2,2024_lv1.txt
+13.00,BFC Daugavpils,Riga FC,0,5,2,0-2,2024_lv1.txt
+16.00,FK RFS,FK Tukums 2000,4,1,1,2-0,2024_lv1.txt
+18.00,FK Auda,FS Jelgava,3,0,1,1-0,2024_lv1.txt
+14.00,Valmiera FC,FS Jelgava,3,2,1,0-1,2024_lv1.txt
+16.00,BFC Daugavpils,FK Auda,1,2,2,1-0,2024_lv1.txt
+14.00,Riga FC,FK Tukums 2000,10,1,1,4-1,2024_lv1.txt
+18.30,FK Metta,FK RFS,1,2,2,0-1,2024_lv1.txt
+13.00,BFC Daugavpils,Valmiera FC,3,3,X,1-1,2024_lv1.txt
+,FK Tukums 2000,FK Auda,0,3,2,0-1,2024_lv1.txt
+,Riga FC,FK Metta,4,0,1,2-0,2024_lv1.txt
+,as SC,FK RFS,0,2,2,0-1,2024_lv1.txt
+13.00,Valmiera FC,FK Tukums 2000,2,3,2,1-1,2024_lv1.txt
+,FK Auda,FK Metta,5,0,1,2-0,2024_lv1.txt
+,ja,BFC Daugavpils,3,3,X,2-2,2024_lv1.txt
+13.00,FK RFS,Riga FC,1,2,2,1-1,2024_lv1.txt
+18.00,FK Auda,FK RFS,1,2,2,0-2,2025_lv1.txt
+18.00,Riga FC,SK Super Nova,2,0,1,1-0,2025_lv1.txt
+,as SC,FS Jelgava,1,1,X,0-1,2025_lv1.txt
+17.30,BFC Daugavpils,FK Tukums 2000,3,0,1,1-0,2025_lv1.txt
+,ja,FK Metta,4,0,1,3-0,2025_lv1.txt
+19.00,Riga FC,FK Auda,2,2,X,0-0,2025_lv1.txt
+,as SC,BFC Daugavpils,3,2,1,0-1,2025_lv1.txt
+19.00,FK RFS,FS Jelgava,1,0,1,0-0,2025_lv1.txt
+,ja,FK Tukums 2000,0,0,X,,2025_lv1.txt
+19.00,SK Super Nova,FK Metta,4,0,1,1-0,2025_lv1.txt
+14.00,FS Jelgava,Riga FC,1,1,X,0-0,2025_lv1.txt
+16.00,BFC Daugavpils,FK RFS,1,2,2,0-2,2025_lv1.txt
+13.00,FK Metta,FK Tukums 2000,3,2,1,1-2,2025_lv1.txt
+17.00,FK Auda,SK Super Nova,1,0,1,0-0,2025_lv1.txt
+15.00,Riga FC,BFC Daugavpils,1,2,2,0-0,2025_lv1.txt
+,as SC,FK Metta,2,4,2,2-2,2025_lv1.txt
+17.00,FK Auda,FS Jelgava,2,0,1,1-0,2025_lv1.txt
+17.00,FK Tukums 2000,SK Super Nova,2,2,X,2-1,2025_lv1.txt
+,ja,Riga FC,2,5,2,2-3,2025_lv1.txt
+17.00,FK Metta,FK RFS,1,0,1,0-0,2025_lv1.txt
+18.00,BFC Daugavpils,FK Auda,2,1,1,1-0,2025_lv1.txt
+16.00,FS Jelgava,SK Super Nova,2,1,1,1-0,2025_lv1.txt
+19.00,Riga FC,FK Metta,1,1,X,0-0,2025_lv1.txt
+19.00,FK RFS,FK Tukums 2000,2,0,1,2-0,2025_lv1.txt
+17.30,FS Jelgava,BFC Daugavpils,4,1,1,2-1,2025_lv1.txt
+14.00,FK Metta,FK Auda,0,1,2,0-1,2025_lv1.txt
+16.00,FK Tukums 2000,Riga FC,0,3,2,0-2,2025_lv1.txt
+,ja,FS Jelgava,1,0,1,1-0,2025_lv1.txt
+,as SC,FK RFS,1,4,2,0-1,2025_lv1.txt
+19.00,BFC Daugavpils,SK Super Nova,1,1,X,1-0,2025_lv1.txt
+15.00,FK Metta,FS Jelgava,0,0,X,,2025_lv1.txt
+17.00,FK Auda,FK Tukums 2000,2,0,1,1-0,2025_lv1.txt
+17.00,SK Super Nova,FK RFS,1,2,2,1-1,2025_lv1.txt
+18.00,FS Jelgava,FK Tukums 2000,2,1,1,0-1,2025_lv1.txt
+,ja,SK Super Nova,2,2,X,2-0,2025_lv1.txt
+19.00,BFC Daugavpils,FK Metta,2,0,1,2-0,2025_lv1.txt
+18.00,FK RFS,Riga FC,0,1,2,0-0,2025_lv1.txt
+18.00,FK Tukums 2000,BFC Daugavpils,0,0,X,,2025_lv1.txt
+13.00,SK Super Nova,Riga FC,1,5,2,0-2,2025_lv1.txt
+19.00,FK RFS,FK Auda,1,0,1,1-0,2025_lv1.txt
+,as SC,BFC Daugavpils,1,0,1,0-0,2025_lv1.txt

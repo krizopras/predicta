@@ -1,0 +1,5 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Canada,Greece,0,3,2,Toronto,Canada,1988_matthews_cup.txt
+Chile,Greece,0,1,2,Toronto,Canada,1988_matthews_cup.txt
+Canada,Chile,1,0,1,Toronto,Canada,1988_matthews_cup.txt
+Canada,Greece,0,0,X,Toronto,Canada   [Canada wins on penalties],1988_matthews_cup.txt

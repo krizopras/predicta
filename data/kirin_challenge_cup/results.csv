@@ -1,0 +1,23 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Japan,Bulgaria,0,2,2,Toyota,Japan,2013_kirin_challenge_cup.txt
+Japan,Uruguay,0,2,2,Sapporo,Japan,2014_kirin_challenge_cup.txt
+Japan,Tunisia,2,0,1,Ōita,Japan,2015_kirin_challenge_cup.txt
+Japan,Iraq,4,0,1,Yokohama,Japan,2015_kirin_challenge_cup.txt
+Japan,Oman,4,0,1,Kashima,Japan,2016_kirin_challenge_cup.txt
+Japan,Syria,1,1,X,Chōfu,Japan,2017_kirin_challenge_cup.txt
+Japan,New Zealand,2,1,1,Toyota,Japan,2017_kirin_challenge_cup.txt
+Japan,Haiti,3,3,X,Yokohama,Japan,2017_kirin_challenge_cup.txt
+Japan,Costa Rica,3,0,1,Suita,Japan,2018_kirin_challenge_cup.txt
+Japan,Panama,3,0,1,Niigata,Japan,2018_kirin_challenge_cup.txt
+Japan,Uruguay,4,3,1,Saitama,Japan,2018_kirin_challenge_cup.txt
+Japan,Venezuela,1,1,X,Ōita,Japan,2018_kirin_challenge_cup.txt
+Japan,Kyrgyzstan,4,0,1,Toyota,Japan,2018_kirin_challenge_cup.txt
+Japan,Colombia,0,1,2,Yokohama,Japan,2019_kirin_challenge_cup.txt
+Japan,Bolivia,1,0,1,Kobe,Japan,2019_kirin_challenge_cup.txt
+Japan,Trinidad and Tobago,0,0,X,Toyota,Japan,2019_kirin_challenge_cup.txt
+Japan,El Salvador,2,0,1,Rifu,Japan,2019_kirin_challenge_cup.txt
+Japan,Paraguay,2,0,1,Kashima,Japan,2019_kirin_challenge_cup.txt
+Japan,Venezuela,1,4,2,Suita,Japan,2019_kirin_challenge_cup.txt
+Japan,Serbia,1,0,1,Kobe,Japan,2021_kirin_challenge_cup.txt
+Japan,United States,2,0,1,Düsseldorf,Germany,2022_kirin_challenge_cup.txt
+Ecuador,Japan,0,0,X,Düsseldorf,Germany,2022_kirin_challenge_cup.txt

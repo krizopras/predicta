@@ -1,0 +1,7 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Mexico,United States,5,0,1,Havana,Cuba,1947_nafc_championship.txt
+Cuba,Mexico,1,3,2,Havana,Cuba,1947_nafc_championship.txt
+Cuba,United States,5,2,1,Havana,Cuba,1947_nafc_championship.txt
+Mexico,United States,6,0,1,Mexico City,Mexico,1949_nafc_championship.txt
+Mexico,Cuba,2,0,1,Mexico City,Mexico,1949_nafc_championship.txt
+Cuba,United States,1,1,X,Mexico City,Mexico,1949_nafc_championship.txt

@@ -1,0 +1,5 @@
+home_team,away_team,home_score,away_score,result,city,country,source_file
+Tajikistan,Uganda,1,1,X,Namangan,Uzbekistan   [Uganda wins on penalties],2022_navruz_cup.txt
+Uzbekistan,Kyrgyzstan,3,1,1,Namangan,Uzbekistan,2022_navruz_cup.txt
+Tajikistan,Kyrgyzstan,1,0,1,Namangan,Uzbekistan,2022_navruz_cup.txt
+Uzbekistan,Uganda,4,2,1,Namangan,Uzbekistan,2022_navruz_cup.txt
