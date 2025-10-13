@@ -1,601 +1,665 @@
 #!/usr/bin/env python3
 """
-Predicta ML Production Training Pipeline v2.3 - RAILWAY OOM FIX
+Predicta ML Production Training Pipeline v3.5 - FULL COMPATIBLE
 ----------------------------------------------------------------
-✨ Bellek Optimizasyonları:
-- ✅ Incremental Learning (XGBoost streaming)
-- ✅ RandomForest otomatik devre dışı (>20K maç)
-- ✅ Memory-efficient batch processing
-- ✅ Automatic garbage collection
-- ✅ NumPy memory monitoring
-
-Usage:
-    python model_trainer.py --verbose --railway-mode
+🚀 ML Prediction Engine v3.5 ile tam uyumlu model eğitimi:
+- EnhancedFeatureEngineer ile feature uyumu
+- Meta ensemble model eğitimi
+- Feature konfigürasyonu kaydetme
+- Version 3.5 formatında model kaydetme
 """
 
 import os
-import sys
 import gc
-import argparse
-import logging
-import pickle
+import time
 import json
-import shutil
+import joblib
+import logging
 import numpy as np
 import pandas as pd
+from tqdm import tqdm
 from datetime import datetime
 from pathlib import Path
-from typing import Dict, List, Tuple, Any
 from collections import Counter
+from typing import Any, Dict, List, Tuple, Optional
 
-# ML imports
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.metrics import accuracy_score, classification_report
+from sklearn.ensemble import (
+    RandomForestClassifier,
+    GradientBoostingClassifier
+)
+from sklearn.linear_model import LogisticRegression
+import xgboost as xgb
+
+# Local imports - Enhanced components for v3.5
 try:
-    from sklearn.ensemble import GradientBoostingClassifier
-    from sklearn.preprocessing import StandardScaler
-    from sklearn.model_selection import train_test_split
-    from sklearn.metrics import classification_report, confusion_matrix, accuracy_score
-    import xgboost as xgb
-    import sklearn
-    ML_AVAILABLE = True
-except ImportError as e:
-    print(f"❌ ML kütüphaneleri eksik: {e}")
-    sys.exit(1)
+    from enhanced_feature_engineer import EnhancedFeatureEngineer
+    FEATURE_ENGINEER_AVAILABLE = True
+    logger.info("✅ EnhancedFeatureEngineer loaded")
+except ImportError:
+    try:
+        from advanced_feature_engineer import AdvancedFeatureEngineer
+        FEATURE_ENGINEER_AVAILABLE = True
+        logger.info("✅ AdvancedFeatureEngineer loaded (fallback)")
+    except ImportError:
+        FEATURE_ENGINEER_AVAILABLE = False
+        logger.error("❌ No feature engineer available")
 
-# Local imports
 try:
     from historical_processor import HistoricalDataProcessor
-    from advanced_feature_engineer import AdvancedFeatureEngineer, FEATURE_NAMES
-except ImportError as e:
-    print(f"❌ Local modül yüklenemedi: {e}")
-    sys.exit(1)
+    HISTORICAL_PROCESSOR_AVAILABLE = True
+except ImportError:
+    HISTORICAL_PROCESSOR_AVAILABLE = False
+    logger.warning("⚠️ HistoricalDataProcessor not available")
 
 
-class RailwayOptimizedTrainer:
-    """Railway OOM-proof model trainer with incremental learning"""
-    
+class ModelTrainerV35:
+    """ML Prediction Engine v3.5 ile tam uyumlu model eğitici"""
+
     def __init__(
         self,
-        models_dir: str = "data/ai_models_v2",
+        models_dir: str = "data/ai_models_v3",  # v3.5 uyumlu dizin
         raw_data_path: str = "data/raw",
         clubs_path: str = "data/clubs",
-        min_matches: int = 10,
-        max_matches: int = None,
         test_size: float = 0.2,
         random_state: int = 42,
-        verbose: bool = True,
-        batch_size: int = 500,  # ✅ Küçültüldü
-        railway_mode: bool = False,
-        version_archive: str = None
+        batch_size: int = 2000,
+        enable_meta_ensemble: bool = True,
+        verbose: bool = True
     ):
         self.models_dir = Path(models_dir)
+        self.models_dir.mkdir(parents=True, exist_ok=True)
         self.raw_data_path = Path(raw_data_path)
         self.clubs_path = Path(clubs_path)
-        self.min_matches = min_matches
-        self.max_matches = max_matches
         self.test_size = test_size
         self.random_state = random_state
-        self.verbose = verbose
         self.batch_size = batch_size
-        self.railway_mode = railway_mode
-        self.version_archive = version_archive 
-        
-        # Setup logging
-        self._setup_logging()
-        
-        self.output_dir = self.models_dir
-        self.output_dir.mkdir(parents=True, exist_ok=True)
-        
-        # Initialize components
-        self.feature_engineer = AdvancedFeatureEngineer(model_path=str(self.models_dir))
-        self.history_processor = HistoricalDataProcessor(
-            str(self.raw_data_path),
-            str(self.clubs_path)
-        )
-        
-        # Models
-        self.ms_models = {}
+        self.enable_meta_ensemble = enable_meta_ensemble
+        self.verbose = verbose
+
+        # Enhanced feature engineer for v3.5
+        if FEATURE_ENGINEER_AVAILABLE:
+            try:
+                self.feature_engineer = EnhancedFeatureEngineer(model_path=str(self.models_dir))
+            except:
+                self.feature_engineer = AdvancedFeatureEngineer(model_path=str(self.models_dir))
+        else:
+            raise ImportError("No feature engineer available")
+
+        # Historical processor (if available)
+        self.history_processor = None
+        if HISTORICAL_PROCESSOR_AVAILABLE:
+            self.history_processor = HistoricalDataProcessor(
+                str(self.raw_data_path),
+                str(self.clubs_path)
+            )
+
+        # Models for v3.5
+        self.models = {
+            'xgboost': None,
+            'gradient_boost': None, 
+            'random_forest': None,
+            'lightgbm': None
+        }
+        self.meta_model = None
         self.score_model = None
-        self.score_space = []
         self.scaler = StandardScaler()
         
-        # Metadata
+        # Training metadata
         self.metadata = {
-            'training_date': datetime.now().isoformat(),
-            'version': 'v2.3-railway-oom-fix',
-            'railway_mode': railway_mode,
-            'batch_size': batch_size,
-            'feature_names': FEATURE_NAMES.copy(),
+            "version": "v3.5",
+            "trained_at": datetime.now().isoformat(),
+            "feature_engineer": self.feature_engineer.__class__.__name__,
+            "expected_features": getattr(self.feature_engineer, 'expected_features', 45),
+            "batch_size": batch_size,
+            "enable_meta_ensemble": enable_meta_ensemble,
+            "model_types": list(self.models.keys())
         }
-    
-    def _setup_logging(self):
-        log_format = "%(asctime)s [%(levelname)8s] %(message)s"
-        level = logging.INFO if self.verbose else logging.WARNING
+
+        # Setup logging
         logging.basicConfig(
-            level=level,
-            format=log_format,
-            handlers=[logging.StreamHandler(sys.stdout)]
+            level=logging.INFO, 
+            format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
         )
-        self.logger = logging.getLogger("RailwayTrainer")
-    
-    def _log_memory_usage(self, label=""):
-        """Log memory usage (Railway için)"""
+        self.logger = logging.getLogger("ModelTrainerV35")
+
+    def _mem_usage(self) -> str:
+        """RAM kullanımı (MB)"""
         try:
             import psutil
             process = psutil.Process()
-            mem = process.memory_info().rss / 1024 / 1024  # MB
-            self.logger.info(f"💾 Memory {label}: {mem:.1f} MB")
-        except:
-            pass
-    
-    def load_historical_data(self, countries: List[str] = None) -> pd.DataFrame:
-        """Load data with memory optimization"""
-        self.logger.info("=" * 70)
-        self.logger.info("📂 LOADING DATA (RAILWAY MODE)")
-        self.logger.info("=" * 70)
-        
-        if not self.raw_data_path.exists():
-            raise FileNotFoundError(f"Raw data path not found: {self.raw_data_path}")
-        
-        all_countries = [
-            d.name for d in self.raw_data_path.iterdir()
-            if d.is_dir() and d.name.lower() != "clubs"
-        ]
-        
-        target_countries = all_countries if not countries else [
-            c for c in all_countries if c.lower() in [x.lower() for x in countries]
-        ]
-        
-        self.logger.info(f"🌍 Loading {len(target_countries)} countries")
-        if self.railway_mode:
-            self.logger.info(f"🚂 Railway Mode: Memory-efficient loading")
+            mem_mb = process.memory_info().rss / 1024 / 1024
+            return f"{mem_mb:.1f} MB"
+        except ImportError:
+            return "N/A"
+
+    def load_and_prepare_data(self) -> pd.DataFrame:
+        """
+        Verileri yükle ve hazırla
+        """
+        self.logger.info("📂 Veri yükleme başlatılıyor...")
         
         all_matches = []
-        for country in target_countries:
-            try:
-                matches = self.history_processor.load_country_data(country)
-                if matches:
-                    all_matches.extend(matches)
-                    self.logger.info(f"   ✅ {country:20s}: {len(matches):6,} matches")
-                    
-                    # ✅ Bellek temizliği
-                    if self.railway_mode and len(all_matches) % 10000 == 0:
-                        gc.collect()
-                        
-            except Exception as e:
-                self.logger.error(f"   ❌ {country}: {e}")
         
-        if not all_matches:
-            raise ValueError("No matches loaded")
-        
-        df = pd.DataFrame(all_matches)
-        
-        # ✅ Bellek optimizasyonu
-        if self.railway_mode:
-            # Kategorik kolonları optimize et
-            for col in ['league', 'home_team', 'away_team', 'result']:
-                if col in df.columns:
-                    df[col] = df[col].astype('category')
-        
-        # Max limit kontrolü
-        if self.max_matches and len(df) > self.max_matches:
-            self.logger.warning(f"⚠️  Limit: {len(df):,} → {self.max_matches:,}")
-            df = df.sample(n=self.max_matches, random_state=self.random_state)
-            gc.collect()
-        
-        self.logger.info(f"\n📊 Total: {len(df):,} matches")
-        self._log_memory_usage("after loading")
-        
-        self.metadata['total_matches'] = len(df)
-        return df
-    
-    def clean_and_validate(self, df: pd.DataFrame) -> pd.DataFrame:
-        """Clean data with memory efficiency"""
-        self.logger.info("\n🧹 CLEANING DATA")
-        
-        initial = len(df)
-        
-        # Duplicates
-        df = df.drop_duplicates(subset=['home_team', 'away_team', 'date'], keep='first')
-        
-        # Required columns
-        required = ['home_team', 'away_team', 'home_score', 'away_score']
-        df = df.dropna(subset=required)
-        
-        # Score conversion
-        df['home_score'] = pd.to_numeric(df['home_score'], errors='coerce').fillna(0).astype(np.int8)
-        df['away_score'] = pd.to_numeric(df['away_score'], errors='coerce').fillna(0).astype(np.int8)
-        
-        # Realistic scores
-        df = df[(df['home_score'] <= 10) & (df['away_score'] <= 10)]
-        
-        # Result calculation
-        def calc_result(row):
-            if row['home_score'] > row['away_score']:
-                return '1'
-            elif row['home_score'] < row['away_score']:
-                return '2'
-            else:
-                return 'X'
-        
-        if 'result' not in df.columns or df['result'].isna().any():
-            df['result'] = df.apply(calc_result, axis=1)
-        
-        # Defaults
-        if 'odds' not in df.columns:
-            df['odds'] = df.apply(lambda x: {'1': 2.0, 'X': 3.0, '2': 3.5}, axis=1)
-        if 'league' not in df.columns:
-            df['league'] = 'Unknown'
-        
-        self.logger.info(f"   Cleaned: {initial:,} → {len(df):,} matches")
-        self._log_memory_usage("after cleaning")
-        
-        gc.collect()
-        return df
-    
-    def prepare_features_streaming(self, df: pd.DataFrame) -> Tuple[np.ndarray, np.ndarray, List[str]]:
-        """Streaming feature extraction - memory efficient"""
-        self.logger.info("\n🔧 FEATURE EXTRACTION (STREAMING)")
-        
-        total_rows = len(df)
-        num_batches = (total_rows + self.batch_size - 1) // self.batch_size
-        
-        self.logger.info(f"   Batches: {num_batches} (size={self.batch_size})")
-        
-        # ✅ Generator kullanarak bellek tasarrufu
-        def feature_generator():
-            for batch_num in range(num_batches):
-                start_idx = batch_num * self.batch_size
-                end_idx = min(start_idx + self.batch_size, total_rows)
-                batch_df = df.iloc[start_idx:end_idx]
-                
-                if (batch_num + 1) % 5 == 0:
-                    self.logger.info(f"   Batch {batch_num + 1}/{num_batches}")
-                    if self.railway_mode:
-                        self._log_memory_usage(f"batch {batch_num + 1}")
-                
-                for _, row in batch_df.iterrows():
+        # Historical processor kullanılıyorsa
+        if self.history_processor and self.raw_data_path.exists():
+            for country_dir in self.raw_data_path.iterdir():
+                if country_dir.is_dir():
                     try:
-                        match_data = {
-                            'home_team': str(row['home_team']),
-                            'away_team': str(row['away_team']),
-                            'league': str(row['league']),
-                            'odds': row['odds'],
-                            'date': row.get('date', datetime.now().isoformat())
-                        }
-                        
-                        features = self.feature_engineer.extract_features(match_data)
-                        
-                        if features is None:
-                            continue
-                        
-                        # NaN/Inf fix
-                        if np.any(np.isnan(features)) or np.any(np.isinf(features)):
-                            features = np.nan_to_num(features, nan=0.0, posinf=0.0, neginf=0.0)
-                        
-                        ms_label = {'1': 0, 'X': 1, '2': 2}[str(row['result'])]
-                        score_label = f"{row['home_score']}-{row['away_score']}"
-                        
-                        yield features, ms_label, score_label
-                        
-                        self._update_feature_history(row)
-                        
-                    except:
-                        continue
-                
-                # ✅ Her batch sonrası garbage collection
-                if self.railway_mode:
-                    gc.collect()
+                        matches = self.history_processor.load_country_data(country_dir.name)
+                        all_matches.extend(matches)
+                        self.logger.info(f"✅ {country_dir.name:<20} {len(matches):6,} maç")
+                    except Exception as e:
+                        self.logger.warning(f"❌ {country_dir.name}: {e}")
+        else:
+            # Fallback: CSV dosyalarını direkt oku
+            csv_files = list(self.raw_data_path.glob("**/*.csv"))
+            for csv_file in csv_files:
+                try:
+                    df_temp = pd.read_csv(csv_file)
+                    # Temel sütun kontrolü
+                    required_cols = ['home_team', 'away_team', 'home_score', 'away_score']
+                    if all(col in df_temp.columns for col in required_cols):
+                        # League bilgisini dosya adından çıkar
+                        league = csv_file.parent.name if csv_file.parent.name != 'raw' else 'Unknown'
+                        df_temp['league'] = league
+                        all_matches.extend(df_temp.to_dict('records'))
+                        self.logger.info(f"✅ {csv_file.name}: {len(df_temp)} maç")
+                except Exception as e:
+                    self.logger.warning(f"❌ {csv_file}: {e}")
+
+        if not all_matches:
+            raise ValueError("❌ Hiç veri bulunamadı!")
+            
+        df = pd.DataFrame(all_matches)
+        self.logger.info(f"📊 Toplam {len(df):,} maç yüklendi | RAM: {self._mem_usage()}")
+        return df
+
+    def clean_data(self, df: pd.DataFrame) -> pd.DataFrame:
+        """
+        Veriyi temizle ve sonuçları hesapla
+        """
+        self.logger.info("🧹 Veri temizleme başlatılıyor...")
         
-        # Generate features
-        X_list, y_ms_list, y_score_list = [], [], []
+        # Temel temizlik
+        initial_count = len(df)
+        df = df.dropna(subset=["home_team", "away_team", "home_score", "away_score"])
         
-        for features, ms_label, score_label in feature_generator():
-            X_list.append(features)
-            y_ms_list.append(ms_label)
-            y_score_list.append(score_label)
+        # Skorları integer'a çevir
+        df["home_score"] = pd.to_numeric(df["home_score"], errors='coerce').fillna(0).astype(int)
+        df["away_score"] = pd.to_numeric(df["away_score"], errors='coerce').fillna(0).astype(int)
         
-        if not X_list:
-            raise ValueError("No valid features!")
+        # Geçersiz skorları filtrele
+        df = df[(df["home_score"] >= 0) & (df["away_score"] >= 0)]
+        df = df[(df["home_score"] <= 20) & (df["away_score"] <= 20)]  # Makul skor aralığı
         
-        X = np.array(X_list, dtype=np.float32)
-        y_ms = np.array(y_ms_list, dtype=np.int8)
-        
-        self.logger.info(f"\n✅ Features: {len(X):,} samples x {X.shape[1]} features")
-        self._log_memory_usage("after features")
-        
-        # Save feature data
-        self.feature_engineer._save_data()
-        
-        # Clear memory
-        del X_list, y_ms_list
-        gc.collect()
-        
-        return X, y_ms, y_score_list
-    
-    def _update_feature_history(self, row):
-        """Update feature history"""
-        result = str(row['result'])
-        home_result = 'W' if result == '1' else ('D' if result == 'X' else 'L')
-        away_result = 'L' if result == '1' else ('D' if result == 'X' else 'W')
-        
-        self.feature_engineer.update_team_history(str(row['home_team']), {
-            'result': home_result,
-            'goals_for': int(row['home_score']),
-            'goals_against': int(row['away_score']),
-            'date': row.get('date', ''),
-            'venue': 'home'
-        })
-        
-        self.feature_engineer.update_team_history(str(row['away_team']), {
-            'result': away_result,
-            'goals_for': int(row['away_score']),
-            'goals_against': int(row['home_score']),
-            'date': row.get('date', ''),
-            'venue': 'away'
-        })
-        
-        self.feature_engineer.update_h2h_history(
-            str(row['home_team']), str(row['away_team']),
-            {'result': result, 'home_goals': int(row['home_score']), 'away_goals': int(row['away_score'])}
+        # Sonuç hesapla
+        df["result"] = df.apply(
+            lambda r: "1" if r["home_score"] > r["away_score"]
+            else "2" if r["home_score"] < r["away_score"]
+            else "X", axis=1
         )
         
-        self.feature_engineer.update_league_results(str(row['league']), result)
-    
-    def train_lightweight_models(self, X_train, X_test, y_train, y_test, total_samples) -> Dict[str, float]:
-        """Train only lightweight models for Railway"""
-        self.logger.info("\n🎯 TRAINING MODELS (RAILWAY MODE)")
+        # Odds bilgisi yoksa varsayılan değerleri ekle
+        if 'odds' not in df.columns:
+            df['odds'] = [{"1": 2.0, "X": 3.0, "2": 3.5} for _ in range(len(df))]
+        
+        # League bilgisi yoksa ekle
+        if 'league' not in df.columns:
+            df['league'] = 'Unknown'
+            
+        cleaned_count = len(df)
+        self.logger.info(f"✅ {initial_count:,} -> {cleaned_count:,} kayıt ({initial_count-cleaned_count} filtrelendi)")
+        self.logger.info(f"📊 Sonuç dağılımı: {dict(df['result'].value_counts())}")
+        
+        return df
+
+    def extract_features_v35(self, df: pd.DataFrame) -> Tuple[np.ndarray, np.ndarray, List[str]]:
+        """
+        v3.5 feature çıkarımı - EnhancedFeatureEngineer ile
+        """
+        self.logger.info("🔧 v3.5 Feature çıkarımı başlatılıyor...")
+        
+        X_list, y_ms, y_score = [], [], []
+        skipped_count = 0
+        
+        progress_bar = tqdm(df.iterrows(), total=len(df), ncols=100, desc="Extracting Features")
+        
+        for _, row in progress_bar:
+            try:
+                match_data = {
+                    "home_team": row["home_team"],
+                    "away_team": row["away_team"],
+                    "league": row.get("league", "Unknown"),
+                    "odds": row.get("odds", {"1": 2.0, "X": 3.0, "2": 3.5}),
+                }
+                
+                # Enhanced feature extraction
+                features = self.feature_engineer.extract_features(match_data)
+                
+                if features is not None and len(features) > 0:
+                    X_list.append(features)
+                    y_ms.append({"1": 0, "X": 1, "2": 2}[row["result"]])
+                    y_score.append(f"{row['home_score']}-{row['away_score']}")
+                else:
+                    skipped_count += 1
+                    
+            except Exception as e:
+                skipped_count += 1
+                continue
+        
+        progress_bar.close()
+        
+        if not X_list:
+            raise ValueError("❌ Hiç feature çıkarılamadı!")
+            
+        X = np.array(X_list, dtype=np.float32)
+        y_ms = np.array(y_ms, dtype=np.int8)
+        
+        self.logger.info(f"✅ Feature set: {X.shape}")
+        self.logger.info(f"✅ Skipped matches: {skipped_count}")
+        self.logger.info(f"✅ Result distribution: {Counter(y_ms)}")
+        
+        return X, y_ms, y_score
+
+    def train_base_models(self, X_train: np.ndarray, X_test: np.ndarray, 
+                         y_train: np.ndarray, y_test: np.ndarray) -> Dict[str, float]:
+        """
+        Temel modelleri eğit
+        """
+        self.logger.info("🎯 Temel modeller eğitiliyor...")
         
         accuracies = {}
         
-        # ✅ XGBoost (incremental learning destekli)
-        self.logger.info("\n📚 XGBoost (Incremental)...")
-        
-        self.ms_models['xgboost'] = xgb.XGBClassifier(
-            n_estimators=150,  # ✅ Azaltıldı
-            max_depth=5,       # ✅ Azaltıldı
+        # 1. XGBoost
+        self.logger.info("🔧 XGBoost eğitiliyor...")
+        xgb_model = xgb.XGBClassifier(
+            n_estimators=300,
+            max_depth=8,
             learning_rate=0.1,
             subsample=0.8,
             colsample_bytree=0.8,
-            objective='multi:softprob',
+            objective="multi:softprob",
             num_class=3,
-            tree_method='hist',
             random_state=self.random_state,
-            n_jobs=2,  # ✅ CPU limiti
+            n_jobs=4,
             verbosity=0
         )
-        
-        self.ms_models['xgboost'].fit(X_train, y_train)
-        acc = accuracy_score(y_test, self.ms_models['xgboost'].predict(X_test))
-        accuracies['xgboost'] = acc
-        self.logger.info(f"   ✅ Accuracy: {acc*100:.2f}%")
-        
-        self._log_memory_usage("after XGBoost")
-        gc.collect()
-        
-        # ✅ Gradient Boost (lightweight)
-        self.logger.info("\n⚡ Gradient Boost (Lightweight)...")
-        
-        self.ms_models['gradient_boost'] = GradientBoostingClassifier(
-            n_estimators=50,  # ✅ Azaltıldı
-            max_depth=4,
+        xgb_model.fit(X_train, y_train, eval_set=[(X_test, y_test)], verbose=False)
+        xgb_pred = xgb_model.predict(X_test)
+        acc_xgb = accuracy_score(y_test, xgb_pred)
+        self.models["xgboost"] = xgb_model
+        accuracies["xgboost"] = acc_xgb
+        self.logger.info(f"✅ XGBoost Accuracy: {acc_xgb*100:.2f}%")
+
+        # 2. Gradient Boosting
+        self.logger.info("🔧 Gradient Boosting eğitiliyor...")
+        gb_model = GradientBoostingClassifier(
+            n_estimators=200,
+            max_depth=6,
             learning_rate=0.1,
             random_state=self.random_state
         )
-        
-        self.ms_models['gradient_boost'].fit(X_train, y_train)
-        acc = accuracy_score(y_test, self.ms_models['gradient_boost'].predict(X_test))
-        accuracies['gradient_boost'] = acc
-        self.logger.info(f"   ✅ Accuracy: {acc*100:.2f}%")
-        
-        self._log_memory_usage("after GradientBoost")
-        gc.collect()
-        
-        # ✅ RandomForest SADECE küçük veri setlerinde
-        if total_samples < 20000 and not self.railway_mode:
-            self.logger.info("\n🌲 Random Forest...")
-            from sklearn.ensemble import RandomForestClassifier
-            
-            self.ms_models['random_forest'] = RandomForestClassifier(
-                n_estimators=100,
-                max_depth=10,
-                random_state=self.random_state,
-                n_jobs=2
-            )
-            
-            self.ms_models['random_forest'].fit(X_train, y_train)
-            acc = accuracy_score(y_test, self.ms_models['random_forest'].predict(X_test))
-            accuracies['random_forest'] = acc
-            self.logger.info(f"   ✅ Accuracy: {acc*100:.2f}%")
-        else:
-            self.logger.info("\n🌲 Random Forest: SKIPPED (memory optimization)")
-            self.logger.info("   Using XGBoost + GradientBoost only")
-        
-        return accuracies
-    
-    def train_score_model(self, X_train, X_test, y_score_train, y_score_test) -> float:
-        """Train score model (lightweight)"""
-        self.logger.info("\n⚽ TRAINING SCORE MODEL")
-        
-        score_counts = Counter(y_score_train)
-        common_scores = [s for s, c in score_counts.items() if c >= 5]  # ✅ Threshold düşürüldü
-        
-        if len(common_scores) < 5:
-            common_scores = list(score_counts.keys())[:20]  # Top 20
-        
-        self.score_space = sorted(common_scores) + ["OTHER"]
-        
-        def encode_score(score):
-            return self.score_space.index(score) if score in self.score_space else len(self.score_space) - 1
-        
-        y_train_enc = [encode_score(s) for s in y_score_train]
-        y_test_enc = [encode_score(s) for s in y_score_test]
-        
-        # ✅ Lightweight model
-        self.score_model = GradientBoostingClassifier(
-            n_estimators=50,
-            max_depth=4,
-            random_state=self.random_state
+        gb_model.fit(X_train, y_train)
+        gb_pred = gb_model.predict(X_test)
+        acc_gb = accuracy_score(y_test, gb_pred)
+        self.models["gradient_boost"] = gb_model
+        accuracies["gradient_boost"] = acc_gb
+        self.logger.info(f"✅ GradientBoost Accuracy: {acc_gb*100:.2f}%")
+
+        # 3. Random Forest
+        self.logger.info("🔧 Random Forest eğitiliyor...")
+        rf_model = RandomForestClassifier(
+            n_estimators=250,
+            max_depth=12,
+            min_samples_split=5,
+            min_samples_leaf=2,
+            random_state=self.random_state,
+            n_jobs=4
         )
+        rf_model.fit(X_train, y_train)
+        rf_pred = rf_model.predict(X_test)
+        acc_rf = accuracy_score(y_test, rf_pred)
+        self.models["random_forest"] = rf_model
+        accuracies["random_forest"] = acc_rf
+        self.logger.info(f"✅ RandomForest Accuracy: {acc_rf*100:.2f}%")
+
+        # 4. LightGBM (if available)
+        try:
+            import lightgbm as lgb
+            self.logger.info("🔧 LightGBM eğitiliyor...")
+            lgb_model = lgb.LGBMClassifier(
+                n_estimators=200,
+                max_depth=7,
+                learning_rate=0.1,
+                num_leaves=31,
+                random_state=self.random_state,
+                n_jobs=4,
+                verbose=-1
+            )
+            lgb_model.fit(X_train, y_train)
+            lgb_pred = lgb_model.predict(X_test)
+            acc_lgb = accuracy_score(y_test, lgb_pred)
+            self.models["lightgbm"] = lgb_model
+            accuracies["lightgbm"] = acc_lgb
+            self.logger.info(f"✅ LightGBM Accuracy: {acc_lgb*100:.2f}%")
+        except ImportError:
+            self.logger.warning("⚠️ LightGBM not available, skipping...")
+            self.models["lightgbm"] = None
+
+        # Model performans özeti
+        self.logger.info("📊 Model Performans Özeti:")
+        for model_name, accuracy in accuracies.items():
+            self.logger.info(f"   {model_name:<15}: {accuracy*100:.2f}%")
+
+        return accuracies
+
+    def train_meta_ensemble(self, X_train: np.ndarray, X_test: np.ndarray,
+                           y_train: np.ndarray, y_test: np.ndarray) -> float:
+        """
+        Meta ensemble model eğit
+        """
+        if not self.enable_meta_ensemble:
+            self.logger.info("⏩ Meta ensemble disabled, skipping...")
+            return 0.0
+
+        self.logger.info("🎯 Meta ensemble model eğitiliyor...")
         
-        self.score_model.fit(X_train, y_train_enc)
-        acc = accuracy_score(y_test_enc, self.score_model.predict(X_test))
+        # Base model tahminlerini topla
+        base_predictions = []
+        valid_models = []
         
-        self.logger.info(f"   ✅ Accuracy: {acc*100:.2f}%")
-        self._log_memory_usage("after score model")
+        for model_name, model in self.models.items():
+            if model is not None:
+                try:
+                    proba = model.predict_proba(X_train)
+                    base_predictions.append(proba)
+                    valid_models.append(model_name)
+                except Exception as e:
+                    self.logger.warning(f"⚠️ {model_name} meta features failed: {e}")
         
-        return acc
-    
-    def save_models(self):
-        """Save models atomically"""
-        self.logger.info("\n💾 SAVING MODELS")
+        if len(base_predictions) < 2:
+            self.logger.warning("⚠️ Yeterli model yok, meta ensemble atlanıyor...")
+            return 0.0
         
-        # MS models
-        ms_path = self.output_dir / "ensemble_models.pkl"
-        with open(ms_path, 'wb') as f:
-            pickle.dump({
-                'models': self.ms_models,
-                'scaler': self.scaler,
+        # Meta features oluştur
+        meta_features = []
+        for i in range(len(X_train)):
+            sample_meta = []
+            for preds in base_predictions:
+                sample_meta.extend([
+                    np.max(preds[i]),           # Max probability
+                    np.min(preds[i]),           # Min probability
+                    np.std(preds[i]),           # Std of probabilities
+                    preds[i][0] - preds[i][2],  # Home vs Away strength
+                    np.argmax(preds[i])         # Predicted class
+                ])
+            meta_features.append(sample_meta)
+        
+        meta_features = np.array(meta_features)
+        
+        # Meta model eğit (Logistic Regression)
+        meta_model = LogisticRegression(
+            multi_class='multinomial',
+            random_state=self.random_state,
+            max_iter=1000
+        )
+        meta_model.fit(meta_features, y_train)
+        
+        # Test accuracy
+        test_meta_features = []
+        for i in range(len(X_test)):
+            sample_meta = []
+            for preds in base_predictions:
+                test_proba = preds[i] if i < len(preds) else np.array([0.33, 0.33, 0.33])
+                sample_meta.extend([
+                    np.max(test_proba),
+                    np.min(test_proba),
+                    np.std(test_proba),
+                    test_proba[0] - test_proba[2],
+                    np.argmax(test_proba)
+                ])
+            test_meta_features.append(sample_meta)
+        
+        test_meta_features = np.array(test_meta_features)
+        meta_pred = meta_model.predict(test_meta_features)
+        meta_accuracy = accuracy_score(y_test, meta_pred)
+        
+        self.meta_model = meta_model
+        self.logger.info(f"✅ Meta Ensemble Accuracy: {meta_accuracy*100:.2f}%")
+        
+        return meta_accuracy
+
+    def train_score_model(self, X_train: np.ndarray, X_test: np.ndarray,
+                         y_score_train: List[str], y_score_test: List[str]) -> float:
+        """
+        Skor tahmin modeli eğit
+        """
+        self.logger.info("⚽ Skor tahmin modeli eğitiliyor...")
+        
+        # En yaygın skorları belirle
+        score_counter = Counter(y_score_train)
+        common_scores = [score for score, count in score_counter.items() if count >= 5]
+        
+        # Yeterli skor yoksa en yaygın 15'ini al
+        if len(common_scores) < 10:
+            common_scores = [score for score, _ in score_counter.most_common(15)]
+        
+        self.score_space = common_scores
+        self.logger.info(f"📊 Skor uzayı: {len(self.score_space)} skor")
+        self.logger.info(f"📊 En yaygın skorlar: {score_counter.most_common(10)}")
+        
+        # Skorları encode et
+        def encode_score(score: str) -> int:
+            return self.score_space.index(score) if score in self.score_space else -1
+        
+        y_train_enc = [encode_score(score) for score in y_score_train]
+        y_test_enc = [encode_score(score) for score in y_score_test]
+        
+        # Geçerli skorları filtrele
+        valid_train = [i for i, label in enumerate(y_train_enc) if label != -1]
+        valid_test = [i for i, label in enumerate(y_test_enc) if label != -1]
+        
+        if len(valid_train) < 100 or len(valid_test) < 50:
+            self.logger.warning("⚠️ Yeterli skor verisi yok, skor modeli atlanıyor...")
+            return 0.0
+        
+        X_train_score = X_train[valid_train]
+        y_train_score = [y_train_enc[i] for i in valid_train]
+        X_test_score = X_test[valid_test] 
+        y_test_score = [y_test_enc[i] for i in valid_test]
+        
+        # Skor modeli eğit
+        score_model = RandomForestClassifier(
+            n_estimators=150,
+            max_depth=10,
+            random_state=self.random_state,
+            n_jobs=4
+        )
+        score_model.fit(X_train_score, y_train_score)
+        
+        # Accuracy hesapla
+        score_pred = score_model.predict(X_test_score)
+        score_accuracy = accuracy_score(y_test_score, score_pred)
+        
+        self.score_model = score_model
+        self.logger.info(f"✅ Skor Modeli Accuracy: {score_accuracy*100:.2f}%")
+        self.logger.info(f"✅ Skor dağılımı: {len(set(y_train_score))} sınıf")
+        
+        return score_accuracy
+
+    def save_models_v35(self):
+        """
+        v3.5 formatında modelleri kaydet
+        """
+        self.logger.info("💾 v3.5 formatında modeller kaydediliyor...")
+        
+        # 1. Ensemble models (ana modeller)
+        ensemble_data = {
+            'models': self.models,
+            'scaler': self.scaler,
+            'is_trained': True,
+            'feature_config': {
+                'expected_features': self.metadata['expected_features'],
+                'version': 'v3.5',
+                'created_at': datetime.now().isoformat()
+            }
+        }
+        joblib.dump(ensemble_data, self.models_dir / "ensemble_models.pkl")
+        
+        # 2. Meta ensemble model
+        if self.meta_model is not None:
+            meta_data = {
+                'meta_model': self.meta_model,
                 'is_trained': True,
-                'metadata': self.metadata
-            }, f, protocol=pickle.HIGHEST_PROTOCOL)
+                'model_weights': {
+                    'xgboost': 0.35,
+                    'lightgbm': 0.30,
+                    'gradient_boost': 0.20,
+                    'random_forest': 0.15
+                }
+            }
+            joblib.dump(meta_data, self.models_dir / "meta_ensemble.pkl")
         
-        self.logger.info(f"   ✅ MS models: {ms_path.stat().st_size:,} bytes")
-        
-        # Scaler
-        scaler_path = self.output_dir / "scaler.pkl"
-        with open(scaler_path, 'wb') as f:
-            pickle.dump(self.scaler, f, protocol=pickle.HIGHEST_PROTOCOL)
-        
-        # Score model
-        score_path = self.output_dir / "score_model.pkl"
-        with open(score_path, 'wb') as f:
-            pickle.dump({
+        # 3. Score model
+        if self.score_model is not None:
+            score_data = {
                 'model': self.score_model,
                 'score_space': self.score_space,
-                'metadata': self.metadata
-            }, f, protocol=pickle.HIGHEST_PROTOCOL)
+                'is_trained': True
+            }
+            joblib.dump(score_data, self.models_dir / "enhanced_score_predictor.pkl")
         
-        self.logger.info(f"   ✅ Score model: {score_path.stat().st_size:,} bytes")
+        # 4. Scaler (ayrıca)
+        joblib.dump(self.scaler, self.models_dir / "scaler.pkl")
         
-        # Metadata
-        meta_path = self.output_dir / "training_metadata.json"
-        with open(meta_path, 'w') as f:
-            json.dump(self.metadata, f, indent=2)
-    
-    def run_full_pipeline(self, countries: List[str] = None) -> Dict[str, Any]:
-        """Execute full pipeline"""
-        self.logger.info("\n" + "=" * 80)
-        self.logger.info("🚂 RAILWAY-OPTIMIZED TRAINING PIPELINE v2.3")
-        self.logger.info("=" * 80)
+        # 5. Feature config (JSON formatında)
+        feature_config = {
+            'version': 'v3.5',
+            'feature_count': self.metadata['expected_features'],
+            'feature_engineer': self.metadata['feature_engineer'],
+            'created_at': datetime.now().isoformat(),
+            'feature_groups': ['odds', 'team_strength', 'historical', 'context', 'statistical']
+        }
+        with open(self.models_dir / "feature_config.json", 'w', encoding='utf-8') as f:
+            json.dump(feature_config, f, indent=2, ensure_ascii=False)
         
-        start_time = datetime.now()
+        # 6. Training metadata
+        self.metadata['feature_config'] = feature_config
+        with open(self.models_dir / "training_metadata.json", 'w', encoding='utf-8') as f:
+            json.dump(self.metadata, f, indent=2, ensure_ascii=False)
+        
+        self.logger.info(f"✅ Tüm modeller kaydedildi → {self.models_dir}")
+
+    def run_training(self) -> Dict[str, Any]:
+        """
+        Tam eğitim pipeline'ını çalıştır
+        """
+        start_time = time.time()
+        self.logger.info("🚀 ML Prediction Engine v3.5 Eğitim Başlatılıyor...")
         
         try:
-            # 1. Load
-            df = self.load_historical_data(countries)
-            total_samples = len(df)
+            # 1. Veri yükleme ve hazırlık
+            df = self.load_and_prepare_data()
+            df = self.clean_data(df)
             
-            # 2. Clean
-            df = self.clean_and_validate(df)
+            # 2. Feature çıkarımı
+            X, y_ms, y_score = self.extract_features_v35(df)
             
-            # 3. Features (streaming)
-            X, y_ms, y_score = self.prepare_features_streaming(df)
-            
-            # 4. Split & Scale
-            X_train, X_test, y_ms_train, y_ms_test, y_score_train, y_score_test = train_test_split(
-                X, y_ms, y_score,
-                test_size=self.test_size,
-                random_state=self.random_state,
+            # 3. Train-test split
+            X_train, X_test, y_train, y_test, y_score_train, y_score_test = train_test_split(
+                X, y_ms, y_score, 
+                test_size=self.test_size, 
+                random_state=self.random_state, 
                 stratify=y_ms
             )
             
-            # ✅ Fit scaler on train only
+            # 4. Feature scaling
+            self.logger.info("🔧 Feature scaling uygulanıyor...")
             X_train_scaled = self.scaler.fit_transform(X_train)
             X_test_scaled = self.scaler.transform(X_test)
             
-            self.logger.info(f"\n📊 Train: {len(X_train):,} | Test: {len(X_test):,}")
-            self._log_memory_usage("before training")
+            # 5. Temel modelleri eğit
+            base_accuracies = self.train_base_models(X_train_scaled, X_test_scaled, y_train, y_test)
             
-            # Clear large objects
-            del X, y_ms
-            gc.collect()
+            # 6. Meta ensemble eğit
+            meta_accuracy = self.train_meta_ensemble(X_train_scaled, X_test_scaled, y_train, y_test)
             
-            # 5. Train models (lightweight)
-            ms_acc = self.train_lightweight_models(
-                X_train_scaled, X_test_scaled, 
-                y_ms_train, y_ms_test,
-                total_samples
-            )
+            # 7. Skor modeli eğit
+            score_accuracy = self.train_score_model(X_train_scaled, X_test_scaled, y_score_train, y_score_test)
             
-            # 6. Train score model
-            score_acc = self.train_score_model(
-                X_train_scaled, X_test_scaled,
-                y_score_train, y_score_test
-            )
+            # 8. Modelleri kaydet
+            self.save_models_v35()
             
-            # 7. Save
-            self.save_models()
+            # 9. Performans raporu
+            training_time = time.time() - start_time
+            performance_report = {
+                "success": True,
+                "training_time_seconds": training_time,
+                "training_time_minutes": training_time / 60,
+                "total_samples": len(X),
+                "train_samples": len(X_train),
+                "test_samples": len(X_test),
+                "base_accuracies": base_accuracies,
+                "meta_accuracy": meta_accuracy,
+                "score_accuracy": score_accuracy,
+                "feature_count": X.shape[1],
+                "memory_usage": self._mem_usage()
+            }
             
-            duration = (datetime.now() - start_time).total_seconds()
+            self.logger.info("📈 Eğitim Performans Raporu:")
+            self.logger.info(f"   ⏱️  Süre: {training_time/60:.2f} dakika")
+            self.logger.info(f"   📊 Toplam Örnek: {len(X):,}")
+            self.logger.info(f"   🎯 Base Model Doğrulukları:")
+            for model, acc in base_accuracies.items():
+                self.logger.info(f"      {model}: {acc*100:.2f}%")
+            if meta_accuracy > 0:
+                self.logger.info(f"   🎯 Meta Ensemble: {meta_accuracy*100:.2f}%")
+            if score_accuracy > 0:
+                self.logger.info(f"   ⚽ Skor Modeli: {score_accuracy*100:.2f}%")
             
-            self.logger.info("\n" + "=" * 80)
-            self.logger.info("✅ TRAINING COMPLETE!")
-            self.logger.info(f"⏱️  Duration: {duration:.1f}s ({duration/60:.1f} min)")
-            self.logger.info(f"📊 Samples: {total_samples:,}")
-            for model, acc in ms_acc.items():
-                self.logger.info(f"   {model}: {acc*100:.2f}%")
-            self.logger.info(f"⚽ Score: {score_acc*100:.2f}%")
-            self.logger.info("=" * 80)
-            
-            return {'success': True, 'metadata': self.metadata}
+            return performance_report
             
         except Exception as e:
-            self.logger.error(f"\n❌ FAILED: {e}", exc_info=True)
-            return {'success': False, 'error': str(e)}
+            self.logger.error(f"❌ Eğitim hatası: {e}", exc_info=True)
+            return {
+                "success": False,
+                "error": str(e),
+                "training_time_seconds": time.time() - start_time
+            }
 
 
 def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--models-dir', default='data/ai_models_v2')
-    parser.add_argument('--raw-data', default='data/raw')
-    parser.add_argument('--clubs', default='data/clubs')
-    parser.add_argument('--countries', nargs='+', default=None)
-    parser.add_argument('--min-matches', type=int, default=10)
-    parser.add_argument('--max-matches', type=int, default=None)
-    parser.add_argument('--no-limit', action='store_true')
-    parser.add_argument('--batch-size', type=int, default=500)
-    parser.add_argument('--railway-mode', action='store_true', help='Enable Railway optimizations')
-    parser.add_argument('--verbose', action='store_true')
+    """Ana eğitim fonksiyonu"""
+    print("🚀 ML Prediction Engine v3.5 - Model Eğitimi")
+    print("=" * 60)
     
-    args = parser.parse_args()
-    
-    if args.no_limit:
-        args.max_matches = None
-    
-    # ✅ Railway ortamını otomatik algıla
-    if os.getenv('RAILWAY_ENVIRONMENT'):
-        args.railway_mode = True
-        print("🚂 Railway environment detected - enabling optimizations")
-    
-    trainer = RailwayOptimizedTrainer(
-        models_dir=args.models_dir,
-        raw_data_path=args.raw_data,
-        clubs_path=args.clubs,
-        min_matches=args.min_matches,
-        max_matches=args.max_matches,
-        verbose=args.verbose,
-        batch_size=args.batch_size,
-        railway_mode=args.railway_mode
-    )
-    
-    result = trainer.run_full_pipeline(countries=args.countries)
-    
-    sys.exit(0 if result['success'] else 1)
+    try:
+        # Trainer oluştur
+        trainer = ModelTrainerV35(
+            models_dir="data/ai_models_v3",
+            raw_data_path="data/raw",
+            clubs_path="data/clubs", 
+            test_size=0.2,
+            batch_size=2000,
+            enable_meta_ensemble=True,
+            verbose=True
+        )
+        
+        # Eğitimi başlat
+        result = trainer.run_training()
+        
+        if result["success"]:
+            print("✅ Eğitim başarıyla tamamlandı!")
+            print(f"📊 En iyi model: {max(result['base_accuracies'].items(), key=lambda x: x[1])}")
+        else:
+            print(f"❌ Eğitim başarısız: {result['error']}")
+            
+    except Exception as e:
+        print(f"❌ Kritik hata: {e}")
 
 
 if __name__ == "__main__":
     main()
-
-# === Flask backend compatibility ===
-MemorySafeTrainer = RailwayOptimizedTrainer
-ProductionModelTrainer = RailwayOptimizedTrainer
