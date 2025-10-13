@@ -1,13 +1,7 @@
 #!/usr/bin/env python3
 """
-Predicta ML Production Training Pipeline v3.5 - FULLY OPTIMIZED
-----------------------------------------------------------------
-🚀 Complete optimized model trainer with class balancing
-- SMOTE/ADASYN balancing
-- Hyperparameter optimization
-- Enhanced feature engineering
-- Ensemble methods
-- Expected improvement: %45 → %55-65
+Model Trainer v3.5 - SMOTE ve Class Balancing Düzeltilmiş
+%45 → %55-65 hedefi için optimize edildi
 """
 
 import os
@@ -26,47 +20,47 @@ from typing import Any, Dict, List, Tuple, Optional
 
 from sklearn.model_selection import train_test_split, StratifiedKFold, RandomizedSearchCV
 from sklearn.preprocessing import StandardScaler
-from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
-from sklearn.ensemble import GradientBoostingClassifier, RandomForestClassifier, VotingClassifier
+from sklearn.metrics import (
+    accuracy_score, classification_report, confusion_matrix,
+    balanced_accuracy_score, f1_score, precision_recall_fscore_support
+)
+from sklearn.ensemble import GradientBoostingClassifier, RandomForestClassifier, StackingClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.utils.class_weight import compute_class_weight
 import xgboost as xgb
 
 # Imbalanced learning
 try:
-    from imblearn.over_sampling import SMOTE, ADASYN
-    from imblearn.under_sampling import RandomUnderSampler
-    from imblearn.combine import SMOTETomek
+    from imblearn.over_sampling import SMOTE, ADASYN, BorderlineSMOTE
+    from imblearn.under_sampling import RandomUnderSampler, TomekLinks
+    from imblearn.combine import SMOTETomek, SMOTEENN
     IMBLEARN_AVAILABLE = True
 except ImportError:
     IMBLEARN_AVAILABLE = False
-    print("⚠️  imbalanced-learn not found. Install: pip install imbalanced-learn")
+    print("⚠️  imbalanced-learn yüklü değil. Yükleyin: pip install imbalanced-learn")
 
-# Optional: LightGBM
+# LightGBM
 try:
     import lightgbm as lgb
     LIGHTGBM_AVAILABLE = True
 except ImportError:
     LIGHTGBM_AVAILABLE = False
 
-# Log configuration
+# Log ayarları
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s",
     datefmt="%H:%M:%S"
 )
-logger = logging.getLogger("ModelTrainerOptimized")
+logger = logging.getLogger("ModelTrainerFixed")
 
 # Local imports
 try:
     from enhanced_feature_engineer import EnhancedFeatureEngineer
     FEATURE_ENGINEER_AVAILABLE = True
 except ImportError:
-    try:
-        from advanced_feature_engineer import AdvancedFeatureEngineer
-        FEATURE_ENGINEER_AVAILABLE = True
-    except ImportError:
-        FEATURE_ENGINEER_AVAILABLE = False
+    FEATURE_ENGINEER_AVAILABLE = False
+    logger.error("❌ enhanced_feature_engineer bulunamadı!")
 
 try:
     from historical_processor import HistoricalDataProcessor
@@ -75,9 +69,13 @@ except ImportError:
     HISTORICAL_PROCESSOR_AVAILABLE = False
 
 
-class OptimizedModelTrainerV35:
+class ImprovedModelTrainer:
     """
-    Fully Optimized ML Trainer with Class Balancing
+    Geliştirilmiş Model Trainer
+    - ✅ Düzgün SMOTE uygulaması
+    - ✅ Balanced accuracy metrikleri
+    - ✅ Daha iyi hyperparameter search
+    - ✅ Stacking ensemble
     """
     
     def __init__(
@@ -87,14 +85,11 @@ class OptimizedModelTrainerV35:
         clubs_path: str = "data/clubs",
         test_size: float = 0.2,
         random_state: int = 42,
-        batch_size: int = 2000,
-        enable_meta_ensemble: bool = True,
         # Optimization parameters
         use_smote: bool = True,
-        use_class_weights: bool = True,
-        n_iter_search: int = 30,
-        cv_folds: int = 3,
-        balance_method: str = 'hybrid',
+        balance_method: str = 'smote_tomek',  # En iyi yöntem
+        n_iter_search: int = 50,
+        cv_folds: int = 5,
         verbose: bool = True
     ):
         self.models_dir = Path(models_dir)
@@ -103,25 +98,19 @@ class OptimizedModelTrainerV35:
         self.clubs_path = Path(clubs_path)
         self.test_size = test_size
         self.random_state = random_state
-        self.batch_size = batch_size
-        self.enable_meta_ensemble = enable_meta_ensemble
         
-        # Optimization parameters
+        # Optimization
         self.use_smote = use_smote and IMBLEARN_AVAILABLE
-        self.use_class_weights = use_class_weights
+        self.balance_method = balance_method
         self.n_iter_search = n_iter_search
         self.cv_folds = cv_folds
-        self.balance_method = balance_method
         self.verbose = verbose
         
         # Feature engineer
-        if FEATURE_ENGINEER_AVAILABLE:
-            try:
-                self.feature_engineer = EnhancedFeatureEngineer(model_path=str(self.models_dir))
-            except:
-                self.feature_engineer = AdvancedFeatureEngineer(model_path=str(self.models_dir))
-        else:
-            raise ImportError("No feature engineer available")
+        if not FEATURE_ENGINEER_AVAILABLE:
+            raise ImportError("❌ EnhancedFeatureEngineer bulunamadı!")
+        
+        self.feature_engineer = EnhancedFeatureEngineer(model_path=str(self.models_dir))
         
         # Historical processor
         self.history_processor = None
@@ -138,28 +127,26 @@ class OptimizedModelTrainerV35:
             'random_forest': None,
             'lightgbm': None
         }
-        self.meta_model = None
+        self.stacking_model = None
         self.score_model = None
         self.scaler = StandardScaler()
         
         # Metadata
         self.metadata = {
-            "version": "v3.5_optimized",
+            "version": "v3.5_improved",
             "trained_at": datetime.now().isoformat(),
-            "feature_engineer": self.feature_engineer.__class__.__name__,
             "optimization": {
                 "use_smote": self.use_smote,
-                "use_class_weights": self.use_class_weights,
                 "balance_method": self.balance_method,
                 "n_iter_search": self.n_iter_search,
                 "cv_folds": self.cv_folds
             }
         }
         
-        self.logger = logging.getLogger("OptimizedTrainerV35")
+        self.logger = logger
         
         if self.use_smote and not IMBLEARN_AVAILABLE:
-            self.logger.warning("⚠️  SMOTE requested but imbalanced-learn not available")
+            self.logger.warning("⚠️  SMOTE istendi ama imbalanced-learn yüklü değil")
             self.use_smote = False
     
     def _mem_usage(self) -> str:
@@ -173,7 +160,7 @@ class OptimizedModelTrainerV35:
             return "N/A"
     
     def load_and_prepare_data(self) -> pd.DataFrame:
-        """Verileri yükle ve hazırla"""
+        """Veriyi yükle"""
         self.logger.info("📂 Veri yükleme başlatılıyor...")
         
         all_matches = []
@@ -235,14 +222,14 @@ class OptimizedModelTrainerV35:
             df['league'] = 'Unknown'
         
         cleaned_count = len(df)
-        self.logger.info(f"✅ {initial_count:,} -> {cleaned_count:,} kayıt ({initial_count-cleaned_count} filtrelendi)")
+        self.logger.info(f"✅ {initial_count:,} → {cleaned_count:,} kayıt ({initial_count-cleaned_count} filtrelendi)")
         self.logger.info(f"📊 Sonuç dağılımı: {dict(df['result'].value_counts())}")
         
         return df
     
-    def extract_features_v35(self, df: pd.DataFrame) -> Tuple[np.ndarray, np.ndarray, List[str]]:
+    def extract_features(self, df: pd.DataFrame) -> Tuple[np.ndarray, np.ndarray, List[str]]:
         """Feature çıkarımı"""
-        self.logger.info("🔧 v3.5 Feature çıkarımı başlatılıyor...")
+        self.logger.info("🔧 Feature çıkarımı başlatılıyor...")
         
         X_list, y_ms, y_score = [], [], []
         skipped_count = 0
@@ -289,96 +276,161 @@ class OptimizedModelTrainerV35:
         counter = Counter(y)
         total = len(y)
         
-        self.logger.info(f"📊 {name} Class Distribution:")
+        self.logger.info(f"📊 {name} Sınıf Dağılımı:")
         for cls in sorted(counter.keys()):
             count = counter[cls]
             pct = count / total * 100
-            self.logger.info(f"   Class {cls}: {count:6,} ({pct:5.2f}%)")
+            class_name = {0: "Ev Sahibi (1)", 1: "Beraberlik (X)", 2: "Deplasman (2)"}[cls]
+            self.logger.info(f"   {class_name}: {count:6,} ({pct:5.2f}%)")
         
         max_count = max(counter.values())
         min_count = min(counter.values())
         imbalance_ratio = max_count / min_count
-        self.logger.info(f"   ⚖️  Imbalance Ratio: {imbalance_ratio:.2f}:1")
+        self.logger.info(f"   ⚖️  Dengesizlik Oranı: {imbalance_ratio:.2f}:1")
         
         return counter, imbalance_ratio
     
     def balance_dataset(self, X_train: np.ndarray, y_train: np.ndarray) -> Tuple[np.ndarray, np.ndarray]:
-        """Dataset balancing"""
+        """Dataset balancing - DÜZELTİLMİŞ VERSİYON"""
         if not self.use_smote or self.balance_method == 'none':
-            self.logger.info("ℹ️  Skipping dataset balancing")
+            self.logger.info("ℹ️  Dataset balancing atlanıyor")
             return X_train, y_train
         
-        self.logger.info(f"🔧 Dataset Balancing: {self.balance_method.upper()}")
+        self.logger.info("=" * 80)
+        self.logger.info(f"🔧 DATASET BALANCING BAŞLIYOR: {self.balance_method.upper()}")
+        self.logger.info("=" * 80)
         
-        counter_before, _ = self.analyze_class_distribution(y_train, "Before Balancing")
+        counter_before, imbalance_before = self.analyze_class_distribution(y_train, "BALANCING ÖNCESİ")
         
         try:
+            # En az örnek sayısını bul
+            min_samples = min(counter_before.values())
+            
             if self.balance_method == 'smote':
+                # Basit SMOTE
+                k_neighbors = min(5, min_samples - 1)
                 sampler = SMOTE(
                     random_state=self.random_state,
-                    k_neighbors=min(5, min(counter_before.values()) - 1)
+                    k_neighbors=k_neighbors,
+                    sampling_strategy='auto'  # Tüm sınıfları majority'ye eşitle
                 )
+                X_balanced, y_balanced = sampler.fit_resample(X_train, y_train)
+                
+            elif self.balance_method == 'borderline_smote':
+                # Borderline-SMOTE (sınır örneklere odaklanır)
+                k_neighbors = min(5, min_samples - 1)
+                sampler = BorderlineSMOTE(
+                    random_state=self.random_state,
+                    k_neighbors=k_neighbors,
+                    sampling_strategy='auto'
+                )
+                X_balanced, y_balanced = sampler.fit_resample(X_train, y_train)
+                
             elif self.balance_method == 'adasyn':
+                # ADASYN (adaptive synthetic sampling)
+                n_neighbors = min(5, min_samples - 1)
                 sampler = ADASYN(
                     random_state=self.random_state,
-                    n_neighbors=min(5, min(counter_before.values()) - 1)
+                    n_neighbors=n_neighbors,
+                    sampling_strategy='auto'
                 )
-            elif self.balance_method == 'smotetomek':
-                sampler = SMOTETomek(random_state=self.random_state)
+                X_balanced, y_balanced = sampler.fit_resample(X_train, y_train)
+                
+            elif self.balance_method == 'smote_tomek':
+                # SMOTE + Tomek Links (EN İYİSİ!)
+                # Over-sample sonrası boundary noise'u temizler
+                k_neighbors = min(5, min_samples - 1)
+                sampler = SMOTETomek(
+                    smote=SMOTE(
+                        random_state=self.random_state,
+                        k_neighbors=k_neighbors,
+                        sampling_strategy='auto'
+                    ),
+                    random_state=self.random_state
+                )
+                X_balanced, y_balanced = sampler.fit_resample(X_train, y_train)
+                
+            elif self.balance_method == 'smote_enn':
+                # SMOTE + Edited Nearest Neighbours
+                k_neighbors = min(5, min_samples - 1)
+                sampler = SMOTEENN(
+                    smote=SMOTE(
+                        random_state=self.random_state,
+                        k_neighbors=k_neighbors,
+                        sampling_strategy='auto'
+                    ),
+                    random_state=self.random_state
+                )
+                X_balanced, y_balanced = sampler.fit_resample(X_train, y_train)
+                
             elif self.balance_method == 'hybrid':
                 # Undersample + SMOTE
-                majority_target = int(np.median(list(counter_before.values())))
+                # Önce majority class'ı azalt, sonra SMOTE uygula
+                majority_target = int(np.median(list(counter_before.values())) * 1.5)
+                
                 rus = RandomUnderSampler(
                     sampling_strategy={
-                        cls: min(count, int(majority_target * 1.3))
+                        cls: min(count, majority_target)
                         for cls, count in counter_before.items()
                     },
                     random_state=self.random_state
                 )
                 X_temp, y_temp = rus.fit_resample(X_train, y_train)
-                sampler = SMOTE(random_state=self.random_state)
-                X_balanced, y_balanced = sampler.fit_resample(X_temp, y_temp)
                 
-                self.analyze_class_distribution(y_balanced, "After Balancing (Hybrid)")
-                return X_balanced, y_balanced
+                # Şimdi SMOTE uygula
+                temp_counter = Counter(y_temp)
+                min_temp = min(temp_counter.values())
+                k_neighbors = min(5, min_temp - 1)
+                
+                smote = SMOTE(
+                    random_state=self.random_state,
+                    k_neighbors=k_neighbors,
+                    sampling_strategy='auto'
+                )
+                X_balanced, y_balanced = smote.fit_resample(X_temp, y_temp)
+                
             else:
+                # Fallback
+                self.logger.warning(f"⚠️  Bilinmeyen method: {self.balance_method}, SMOTE kullanılıyor")
                 sampler = SMOTE(random_state=self.random_state)
+                X_balanced, y_balanced = sampler.fit_resample(X_train, y_train)
             
-            X_balanced, y_balanced = sampler.fit_resample(X_train, y_train)
-            self.analyze_class_distribution(y_balanced, f"After Balancing ({self.balance_method.upper()})")
+            # Sonuçları göster
+            self.logger.info("=" * 80)
+            counter_after, imbalance_after = self.analyze_class_distribution(y_balanced, "BALANCING SONRASI")
+            self.logger.info("=" * 80)
+            
+            self.logger.info(f"📈 Değişim:")
+            self.logger.info(f"   Örnek Sayısı: {len(y_train):,} → {len(y_balanced):,} (+{len(y_balanced)-len(y_train):,})")
+            self.logger.info(f"   Dengesizlik: {imbalance_before:.2f}:1 → {imbalance_after:.2f}:1")
+            self.logger.info("=" * 80)
             
             return X_balanced, y_balanced
+            
         except Exception as e:
-            self.logger.error(f"❌ Balancing failed: {e}")
-            self.logger.warning("⚠️  Using original imbalanced dataset")
+            self.logger.error(f"❌ Balancing hatası: {e}")
+            self.logger.warning("⚠️  Orijinal dengesiz dataset kullanılıyor")
             return X_train, y_train
     
-    def get_class_weights(self, y_train: np.ndarray) -> Optional[Dict[int, float]]:
-        """Class weight'leri hesapla"""
-        if not self.use_class_weights:
-            return None
-        
-        classes = np.unique(y_train)
-        weights = compute_class_weight('balanced', classes=classes, y=y_train)
-        weight_dict = dict(zip(classes, weights))
-        
-        self.logger.info(f"⚖️  Class Weights: {weight_dict}")
-        return weight_dict
-    
     def train_xgboost_optimized(self, X_train, y_train, X_val, y_val):
-        """Optimized XGBoost"""
-        self.logger.info("🔧 Training Optimized XGBoost...")
+        """Optimize XGBoost - Daha agresif arama"""
+        self.logger.info("🔧 XGBoost eğitiliyor (optimized)...")
+        
+        # Class weights hesapla
+        class_weights = compute_class_weight('balanced', classes=np.unique(y_train), y=y_train)
+        scale_pos_weight = class_weights[0] / class_weights[2]  # Home vs Away
         
         param_distributions = {
-            'max_depth': [5, 7, 9, 11],
-            'learning_rate': [0.01, 0.05, 0.1],
-            'n_estimators': [300, 500, 800],
-            'min_child_weight': [1, 3, 5],
-            'subsample': [0.7, 0.8, 0.9],
-            'colsample_bytree': [0.7, 0.8, 0.9],
-            'gamma': [0, 0.1, 0.3],
-            'reg_alpha': [0, 0.1, 1],
-            'reg_lambda': [1, 1.5, 2],
+            'max_depth': [3, 5, 7, 9, 11],
+            'learning_rate': [0.001, 0.01, 0.05, 0.1, 0.2],
+            'n_estimators': [500, 800, 1000, 1500],
+            'min_child_weight': [1, 3, 5, 7],
+            'subsample': [0.6, 0.7, 0.8, 0.9],
+            'colsample_bytree': [0.6, 0.7, 0.8, 0.9],
+            'gamma': [0, 0.1, 0.3, 0.5],
+            'reg_alpha': [0, 0.1, 0.5, 1],
+            'reg_lambda': [1, 1.5, 2, 3],
+            'scale_pos_weight': [0.5, 1.0, scale_pos_weight, 2.0]
         }
         
         base_model = xgb.XGBClassifier(
@@ -395,126 +447,39 @@ class OptimizedModelTrainerV35:
         search = RandomizedSearchCV(
             base_model, param_distributions,
             n_iter=self.n_iter_search, cv=cv,
-            scoring='accuracy', n_jobs=-1,
+            scoring='balanced_accuracy',  # ÖNEMLİ DEĞİŞİKLİK!
+            n_jobs=-1,
             random_state=self.random_state,
             verbose=1 if self.verbose else 0
         )
         
         search.fit(X_train, y_train)
         best_model = search.best_estimator_
-        val_acc = accuracy_score(y_val, best_model.predict(X_val))
         
-        self.logger.info(f"✅ XGBoost - Best CV: {search.best_score_:.4f}, Val: {val_acc:.4f}")
-        return best_model, val_acc
-    
-    def train_gradient_boost_optimized(self, X_train, y_train, X_val, y_val):
-        """Optimized Gradient Boosting"""
-        self.logger.info("🔧 Training Optimized Gradient Boosting...")
+        # Değerlendirme
+        val_pred = best_model.predict(X_val)
+        val_acc = accuracy_score(y_val, val_pred)
+        val_balanced_acc = balanced_accuracy_score(y_val, val_pred)
+        val_f1 = f1_score(y_val, val_pred, average='macro')
         
-        param_distributions = {
-            'n_estimators': [200, 300, 500],
-            'max_depth': [5, 7, 9],
-            'learning_rate': [0.05, 0.1, 0.15],
-            'min_samples_split': [2, 5, 10],
-            'min_samples_leaf': [1, 2, 4],
-            'subsample': [0.8, 0.9, 1.0],
-            'max_features': ['sqrt', 'log2']
-        }
+        self.logger.info(f"✅ LightGBM:")
+        self.logger.info(f"   CV Score: {search.best_score_:.4f}")
+        self.logger.info(f"   Accuracy: {val_acc:.4f}")
+        self.logger.info(f"   Balanced Accuracy: {val_balanced_acc:.4f} ⭐")
+        self.logger.info(f"   F1-Macro: {val_f1:.4f}")
         
-        base_model = GradientBoostingClassifier(random_state=self.random_state)
-        cv = StratifiedKFold(n_splits=self.cv_folds, shuffle=True, random_state=self.random_state)
-        
-        search = RandomizedSearchCV(
-            base_model, param_distributions,
-            n_iter=self.n_iter_search, cv=cv,
-            scoring='accuracy', n_jobs=-1,
-            random_state=self.random_state,
-            verbose=1 if self.verbose else 0
-        )
-        
-        search.fit(X_train, y_train)
-        best_model = search.best_estimator_
-        val_acc = accuracy_score(y_val, best_model.predict(X_val))
-        
-        self.logger.info(f"✅ GradientBoost - Best CV: {search.best_score_:.4f}, Val: {val_acc:.4f}")
-        return best_model, val_acc
-    
-    def train_random_forest_optimized(self, X_train, y_train, X_val, y_val):
-        """Optimized Random Forest"""
-        self.logger.info("🔧 Training Optimized Random Forest...")
-        
-        param_distributions = {
-            'n_estimators': [200, 300, 500],
-            'max_depth': [15, 20, 25, None],
-            'min_samples_split': [2, 5, 10],
-            'min_samples_leaf': [1, 2, 4],
-            'max_features': ['sqrt', 'log2'],
-            'class_weight': ['balanced', 'balanced_subsample']
-        }
-        
-        base_model = RandomForestClassifier(random_state=self.random_state, n_jobs=-1)
-        cv = StratifiedKFold(n_splits=self.cv_folds, shuffle=True, random_state=self.random_state)
-        
-        search = RandomizedSearchCV(
-            base_model, param_distributions,
-            n_iter=self.n_iter_search, cv=cv,
-            scoring='accuracy', n_jobs=-1,
-            random_state=self.random_state,
-            verbose=1 if self.verbose else 0
-        )
-        
-        search.fit(X_train, y_train)
-        best_model = search.best_estimator_
-        val_acc = accuracy_score(y_val, best_model.predict(X_val))
-        
-        self.logger.info(f"✅ RandomForest - Best CV: {search.best_score_:.4f}, Val: {val_acc:.4f}")
-        return best_model, val_acc
-    
-    def train_lightgbm_optimized(self, X_train, y_train, X_val, y_val):
-        """Optimized LightGBM"""
-        if not LIGHTGBM_AVAILABLE:
-            self.logger.warning("⚠️  LightGBM not available")
-            return None, 0
-        
-        self.logger.info("🔧 Training Optimized LightGBM...")
-        
-        param_distributions = {
-            'n_estimators': [200, 300, 500],
-            'max_depth': [5, 7, 9, -1],
-            'learning_rate': [0.01, 0.05, 0.1],
-            'num_leaves': [31, 50, 70],
-            'subsample': [0.7, 0.8, 0.9],
-            'colsample_bytree': [0.7, 0.8, 0.9]
-        }
-        
-        base_model = lgb.LGBMClassifier(random_state=self.random_state, n_jobs=-1, verbose=-1)
-        cv = StratifiedKFold(n_splits=self.cv_folds, shuffle=True, random_state=self.random_state)
-        
-        search = RandomizedSearchCV(
-            base_model, param_distributions,
-            n_iter=self.n_iter_search, cv=cv,
-            scoring='accuracy', n_jobs=-1,
-            random_state=self.random_state,
-            verbose=1 if self.verbose else 0
-        )
-        
-        search.fit(X_train, y_train)
-        best_model = search.best_estimator_
-        val_acc = accuracy_score(y_val, best_model.predict(X_val))
-        
-        self.logger.info(f"✅ LightGBM - Best CV: {search.best_score_:.4f}, Val: {val_acc:.4f}")
-        return best_model, val_acc
+        return best_model, val_balanced_acc
     
     def train_base_models(self, X_train, X_test, y_train, y_test):
-        """Train all optimized base models"""
+        """Tüm base modelleri eğit"""
         self.logger.info("=" * 80)
-        self.logger.info("🎯 OPTIMIZED MODEL TRAINING")
+        self.logger.info("🎯 BASE MODEL EĞİTİMİ BAŞLIYOR")
         self.logger.info("=" * 80)
         
-        # Analyze distribution
-        self.analyze_class_distribution(y_train, "Original Training Data")
+        # Orijinal dağılımı göster
+        self.analyze_class_distribution(y_train, "Orijinal Training Data")
         
-        # Balance dataset
+        # Dataset'i dengele
         X_train_balanced, y_train_balanced = self.balance_dataset(X_train, y_train)
         
         accuracies = {}
@@ -525,7 +490,7 @@ class OptimizedModelTrainerV35:
             self.models['xgboost'] = model
             accuracies['xgboost'] = acc
         except Exception as e:
-            self.logger.error(f"❌ XGBoost failed: {e}")
+            self.logger.error(f"❌ XGBoost hatası: {e}")
         
         # Gradient Boosting
         try:
@@ -533,7 +498,7 @@ class OptimizedModelTrainerV35:
             self.models['gradient_boost'] = model
             accuracies['gradient_boost'] = acc
         except Exception as e:
-            self.logger.error(f"❌ GradientBoost failed: {e}")
+            self.logger.error(f"❌ GradientBoost hatası: {e}")
         
         # Random Forest
         try:
@@ -541,7 +506,7 @@ class OptimizedModelTrainerV35:
             self.models['random_forest'] = model
             accuracies['random_forest'] = acc
         except Exception as e:
-            self.logger.error(f"❌ RandomForest failed: {e}")
+            self.logger.error(f"❌ RandomForest hatası: {e}")
         
         # LightGBM
         if LIGHTGBM_AVAILABLE:
@@ -551,89 +516,133 @@ class OptimizedModelTrainerV35:
                     self.models['lightgbm'] = model
                     accuracies['lightgbm'] = acc
             except Exception as e:
-                self.logger.error(f"❌ LightGBM failed: {e}")
+                self.logger.error(f"❌ LightGBM hatası: {e}")
         
-        # Summary
+        # Özet
         self.logger.info("=" * 80)
-        self.logger.info("📊 TRAINING SUMMARY")
+        self.logger.info("📊 EĞİTİM ÖZETİ")
         self.logger.info("=" * 80)
-        for name, acc in accuracies.items():
+        for name, acc in sorted(accuracies.items(), key=lambda x: x[1], reverse=True):
             self.logger.info(f"  {name:<20}: {acc:.4f} ({acc*100:.2f}%)")
         
         if accuracies:
             best_model = max(accuracies.items(), key=lambda x: x[1])
-            self.logger.info(f"\n🏆 BEST MODEL: {best_model[0]} ({best_model[1]:.4f})")
+            self.logger.info(f"\n🏆 EN İYİ MODEL: {best_model[0]} ({best_model[1]:.4f})")
         
         return accuracies
     
-    def train_meta_ensemble(self, X_train, X_test, y_train, y_test):
-        """Meta ensemble with logistic regression"""
-        if not self.enable_meta_ensemble:
+    def train_stacking_ensemble(self, X_train, X_test, y_train, y_test):
+        """Stacking Ensemble - Meta modellerden daha iyi"""
+        if not self.models or len([m for m in self.models.values() if m is not None]) < 2:
+            self.logger.warning("⚠️  Stacking için yeterli model yok")
             return 0.0
         
-        self.logger.info("🎯 Training meta ensemble...")
+        self.logger.info("=" * 80)
+        self.logger.info("🎯 STACKING ENSEMBLE EĞİTİMİ")
+        self.logger.info("=" * 80)
         
-        base_predictions = []
-        for name, model in self.models.items():
-            if model is not None:
-                try:
-                    proba = model.predict_proba(X_train)
-                    base_predictions.append(proba)
-                except:
-                    pass
-        
-        if len(base_predictions) < 2:
+        try:
+            # Base estimators
+            estimators = []
+            for name, model in self.models.items():
+                if model is not None:
+                    estimators.append((name, model))
+            
+            # Final estimator
+            final_estimator = xgb.XGBClassifier(
+                max_depth=3,
+                learning_rate=0.1,
+                n_estimators=100,
+                random_state=self.random_state
+            )
+            
+            # Stacking Classifier
+            stacking = StackingClassifier(
+                estimators=estimators,
+                final_estimator=final_estimator,
+                cv=5,
+                n_jobs=-1,
+                verbose=1 if self.verbose else 0
+            )
+            
+            self.logger.info(f"📦 {len(estimators)} model ile stacking oluşturuluyor...")
+            stacking.fit(X_train, y_train)
+            
+            # Değerlendirme
+            pred = stacking.predict(X_test)
+            acc = accuracy_score(y_test, pred)
+            balanced_acc = balanced_accuracy_score(y_test, pred)
+            f1 = f1_score(y_test, pred, average='macro')
+            
+            self.stacking_model = stacking
+            
+            self.logger.info(f"✅ Stacking Ensemble:")
+            self.logger.info(f"   Accuracy: {acc:.4f}")
+            self.logger.info(f"   Balanced Accuracy: {balanced_acc:.4f} ⭐")
+            self.logger.info(f"   F1-Macro: {f1:.4f}")
+            
+            return balanced_acc
+            
+        except Exception as e:
+            self.logger.error(f"❌ Stacking hatası: {e}")
             return 0.0
+    
+    def analyze_results(self, X_test, y_test):
+        """Detaylı sonuç analizi"""
+        self.logger.info("=" * 80)
+        self.logger.info("📊 DETAYLI PERFORMANS ANALİZİ")
+        self.logger.info("=" * 80)
         
-        meta_features = []
-        for i in range(len(X_train)):
-            sample_meta = []
-            for preds in base_predictions:
-                sample_meta.extend([
-                    np.max(preds[i]),
-                    np.min(preds[i]),
-                    np.std(preds[i]),
-                    preds[i][0] - preds[i][2],
-                    np.argmax(preds[i])
-                ])
-            meta_features.append(sample_meta)
-        
-        meta_features = np.array(meta_features)
-        
-        meta_model = LogisticRegression(
-            multi_class='multinomial',
-            random_state=self.random_state,
-            max_iter=1000
-        )
-        meta_model.fit(meta_features, y_train)
-        
-        # Test
-        test_meta_features = []
-        for i in range(len(X_test)):
-            sample_meta = []
-            for preds in base_predictions:
-                idx = min(i, len(preds) - 1)
-                sample_meta.extend([
-                    np.max(preds[idx]),
-                    np.min(preds[idx]),
-                    np.std(preds[idx]),
-                    preds[idx][0] - preds[idx][2],
-                    np.argmax(preds[idx])
-                ])
-            test_meta_features.append(sample_meta)
-        
-        test_meta_features = np.array(test_meta_features)
-        meta_pred = meta_model.predict(test_meta_features)
-        meta_accuracy = accuracy_score(y_test, meta_pred)
-        
-        self.meta_model = meta_model
-        self.logger.info(f"✅ Meta Ensemble Accuracy: {meta_accuracy:.4f}")
-        
-        return meta_accuracy
+        for model_name, model in self.models.items():
+            if model is None:
+                continue
+            
+            self.logger.info(f"\n{'='*80}")
+            self.logger.info(f"🎯 MODEL: {model_name.upper()}")
+            self.logger.info(f"{'='*80}")
+            
+            y_pred = model.predict(X_test)
+            
+            # Metrikler
+            acc = accuracy_score(y_test, y_pred)
+            balanced_acc = balanced_accuracy_score(y_test, y_pred)
+            f1_macro = f1_score(y_test, y_pred, average='macro')
+            f1_weighted = f1_score(y_test, y_pred, average='weighted')
+            
+            self.logger.info(f"\n📈 Metrikler:")
+            self.logger.info(f"   Accuracy:          {acc:.4f} ({acc*100:.2f}%)")
+            self.logger.info(f"   Balanced Accuracy: {balanced_acc:.4f} ({balanced_acc*100:.2f}%) ⭐")
+            self.logger.info(f"   F1-Macro:          {f1_macro:.4f}")
+            self.logger.info(f"   F1-Weighted:       {f1_weighted:.4f}")
+            
+            # Classification Report
+            self.logger.info("\n📋 Classification Report:")
+            report = classification_report(
+                y_test, y_pred,
+                target_names=['Ev Sahibi (1)', 'Beraberlik (X)', 'Deplasman (2)'],
+                digits=4
+            )
+            self.logger.info(f"\n{report}")
+            
+            # Confusion Matrix
+            cm = confusion_matrix(y_test, y_pred)
+            self.logger.info("\n🎲 Confusion Matrix:")
+            self.logger.info("                  Tahmin Edilen")
+            self.logger.info("                  1      X      2")
+            self.logger.info(f"Gerçek    1    {cm[0,0]:5d}  {cm[0,1]:5d}  {cm[0,2]:5d}")
+            self.logger.info(f"          X    {cm[1,0]:5d}  {cm[1,1]:5d}  {cm[1,2]:5d}")
+            self.logger.info(f"          2    {cm[2,0]:5d}  {cm[2,1]:5d}  {cm[2,2]:5d}")
+            
+            # Sınıf bazlı accuracy
+            class_accuracies = cm.diagonal() / cm.sum(axis=1)
+            self.logger.info("\n🎯 Sınıf Bazlı Accuracy:")
+            self.logger.info(f"   Ev Sahibi (1): {class_accuracies[0]:.2%}")
+            self.logger.info(f"   Beraberlik (X): {class_accuracies[1]:.2%}")
+            self.logger.info(f"   Deplasman (2): {class_accuracies[2]:.2%}")
     
     def train_score_model(self, X_train, X_test, y_score_train, y_score_test):
-        """Score prediction model"""
-        self.logger.info("⚽ Training score model...")
+        """Skor tahmin modeli"""
+        self.logger.info("⚽ Skor tahmin modeli eğitiliyor...")
         
         score_counter = Counter(y_score_train)
         common_scores = [score for score, count in score_counter.items() if count >= 5]
@@ -653,7 +662,7 @@ class OptimizedModelTrainerV35:
         valid_test = [i for i, label in enumerate(y_test_enc) if label != -1]
         
         if len(valid_train) < 100:
-            self.logger.warning("⚠️  Not enough score data")
+            self.logger.warning("⚠️  Yeterli skor verisi yok")
             return 0.0
         
         X_train_score = X_train[valid_train]
@@ -662,10 +671,11 @@ class OptimizedModelTrainerV35:
         y_test_score = [y_test_enc[i] for i in valid_test]
         
         score_model = RandomForestClassifier(
-            n_estimators=150,
-            max_depth=10,
+            n_estimators=200,
+            max_depth=15,
             random_state=self.random_state,
-            n_jobs=-1
+            n_jobs=-1,
+            class_weight='balanced'
         )
         score_model.fit(X_train_score, y_train_score)
         
@@ -673,57 +683,13 @@ class OptimizedModelTrainerV35:
         score_accuracy = accuracy_score(y_test_score, score_pred)
         
         self.score_model = score_model
-        self.logger.info(f"✅ Score Model Accuracy: {score_accuracy:.4f}")
+        self.logger.info(f"✅ Skor Model Accuracy: {score_accuracy:.4f}")
         
         return score_accuracy
     
-    def analyze_results(self, X_test, y_test):
-        """Detailed result analysis"""
-        self.logger.info("=" * 80)
-        self.logger.info("📊 DETAILED PERFORMANCE ANALYSIS")
-        self.logger.info("=" * 80)
-        
-        for model_name, model in self.models.items():
-            if model is None:
-                continue
-            
-            self.logger.info(f"\n{'='*80}")
-            self.logger.info(f"🎯 MODEL: {model_name.upper()}")
-            self.logger.info(f"{'='*80}")
-            
-            y_pred = model.predict(X_test)
-            
-            # Classification Report
-            self.logger.info("\n📋 Classification Report:")
-            report = classification_report(
-                y_test, y_pred,
-                target_names=['Home Win (1)', 'Draw (X)', 'Away Win (2)'],
-                digits=4
-            )
-            self.logger.info(f"\n{report}")
-            
-            # Confusion Matrix
-            cm = confusion_matrix(y_test, y_pred)
-            self.logger.info("\n🎲 Confusion Matrix:")
-            self.logger.info("                  Predicted")
-            self.logger.info("                  1      X      2")
-            self.logger.info(f"Actual    1    {cm[0,0]:5d}  {cm[0,1]:5d}  {cm[0,2]:5d}")
-            self.logger.info(f"          X    {cm[1,0]:5d}  {cm[1,1]:5d}  {cm[1,2]:5d}")
-            self.logger.info(f"          2    {cm[2,0]:5d}  {cm[2,1]:5d}  {cm[2,2]:5d}")
-            
-            # Per-class accuracy
-            class_accuracies = cm.diagonal() / cm.sum(axis=1)
-            self.logger.info("\n🎯 Per-Class Accuracy:")
-            self.logger.info(f"   Home Win (1): {class_accuracies[0]:.2%}")
-            self.logger.info(f"   Draw (X):     {class_accuracies[1]:.2%}")
-            self.logger.info(f"   Away Win (2): {class_accuracies[2]:.2%}")
-            
-            overall_acc = accuracy_score(y_test, y_pred)
-            self.logger.info(f"\n✅ Overall Accuracy: {overall_acc:.4f} ({overall_acc*100:.2f}%)")
-    
-    def save_models_v35(self):
-        """Save models in v3.5 format"""
-        self.logger.info("💾 Saving models in v3.5 format...")
+    def save_models(self):
+        """Modelleri kaydet"""
+        self.logger.info("💾 Modeller kaydediliyor...")
         
         # Ensemble models
         ensemble_data = {
@@ -732,25 +698,19 @@ class OptimizedModelTrainerV35:
             'is_trained': True,
             'feature_config': {
                 'expected_features': self.metadata.get('expected_features', 45),
-                'version': 'v3.5_optimized',
+                'version': 'v3.5_improved',
                 'created_at': datetime.now().isoformat()
             }
         }
         joblib.dump(ensemble_data, self.models_dir / "ensemble_models.pkl")
         
-        # Meta ensemble
-        if self.meta_model is not None:
-            meta_data = {
-                'meta_model': self.meta_model,
-                'is_trained': True,
-                'model_weights': {
-                    'xgboost': 0.35,
-                    'lightgbm': 0.30,
-                    'gradient_boost': 0.20,
-                    'random_forest': 0.15
-                }
+        # Stacking ensemble
+        if self.stacking_model is not None:
+            stacking_data = {
+                'model': self.stacking_model,
+                'is_trained': True
             }
-            joblib.dump(meta_data, self.models_dir / "meta_ensemble.pkl")
+            joblib.dump(stacking_data, self.models_dir / "stacking_ensemble.pkl")
         
         # Score model
         if self.score_model is not None:
@@ -766,9 +726,8 @@ class OptimizedModelTrainerV35:
         
         # Feature config
         feature_config = {
-            'version': 'v3.5_optimized',
+            'version': 'v3.5_improved',
             'feature_count': self.metadata.get('expected_features', 45),
-            'feature_engineer': self.metadata['feature_engineer'],
             'created_at': datetime.now().isoformat(),
             'optimization': self.metadata['optimization']
         }
@@ -779,32 +738,32 @@ class OptimizedModelTrainerV35:
         with open(self.models_dir / "training_metadata.json", 'w', encoding='utf-8') as f:
             json.dump(self.metadata, f, indent=2, ensure_ascii=False)
         
-        self.logger.info(f"✅ All models saved → {self.models_dir}")
+        self.logger.info(f"✅ Tüm modeller kaydedildi → {self.models_dir}")
     
     def run_training(self) -> Dict[str, Any]:
-        """Complete training pipeline"""
+        """Tam eğitim pipeline'ı"""
         start_time = time.time()
         
         self.logger.info("=" * 80)
-        self.logger.info("🚀 OPTIMIZED ML PREDICTION ENGINE v3.5 - TRAINING STARTED")
+        self.logger.info("🚀 GELİŞTİRİLMİŞ ML TAHMİN SİSTEMİ v3.5 - EĞİTİM BAŞLIYOR")
         self.logger.info("=" * 80)
-        self.logger.info(f"⚙️  Configuration:")
+        self.logger.info(f"⚙️  Konfigürasyon:")
         self.logger.info(f"   - SMOTE: {self.use_smote}")
         self.logger.info(f"   - Balance Method: {self.balance_method}")
-        self.logger.info(f"   - Class Weights: {self.use_class_weights}")
-        self.logger.info(f"   - Hyperparameter Search: {self.n_iter_search} iterations")
-        self.logger.info(f"   - Cross-Validation: {self.cv_folds} folds")
+        self.logger.info(f"   - Hyperparameter Search: {self.n_iter_search} iterasyon")
+        self.logger.info(f"   - Cross-Validation: {self.cv_folds} fold")
+        self.logger.info(f"   - Scoring Metric: balanced_accuracy ⭐")
         self.logger.info("=" * 80)
         
         try:
-            # 1. Load and prepare data
+            # 1. Veriyi yükle ve temizle
             df = self.load_and_prepare_data()
             df = self.clean_data(df)
             
-            # 2. Extract features
-            X, y_ms, y_score = self.extract_features_v35(df)
+            # 2. Feature extraction
+            X, y_ms, y_score = self.extract_features(df)
             
-            # Store feature count
+            # Feature sayısını kaydet
             self.metadata['expected_features'] = X.shape[1]
             
             # 3. Train-test split
@@ -816,38 +775,37 @@ class OptimizedModelTrainerV35:
             )
             
             # 4. Feature scaling
-            self.logger.info("🔧 Feature scaling...")
+            self.logger.info("🔧 Feature scaling uygulanıyor...")
             X_train_scaled = self.scaler.fit_transform(X_train)
             X_test_scaled = self.scaler.transform(X_test)
             
-            # 5. Train optimized base models
+            # 5. Base modelleri eğit
             base_accuracies = self.train_base_models(
                 X_train_scaled, X_test_scaled, y_train, y_test
             )
             
-            # 6. Analyze results
+            # 6. Detaylı analiz
             self.analyze_results(X_test_scaled, y_test)
             
-            # 7. Train meta ensemble
-            meta_accuracy = self.train_meta_ensemble(
+            # 7. Stacking ensemble
+            stacking_accuracy = self.train_stacking_ensemble(
                 X_train_scaled, X_test_scaled, y_train, y_test
             )
             
-            # 8. Train score model
+            # 8. Skor modeli
             score_accuracy = self.train_score_model(
                 X_train_scaled, X_test_scaled, y_score_train, y_score_test
             )
             
-            # 9. Save models
-            self.save_models_v35()
+            # 9. Modelleri kaydet
+            self.save_models()
             
-            # 10. Calculate improvement
-            baseline_accuracy = 0.45  # Original accuracy
+            # 10. Performans raporu
+            training_time = time.time() - start_time
+            baseline_accuracy = 0.45
             best_accuracy = max(base_accuracies.values()) if base_accuracies else 0.45
             improvement = ((best_accuracy - baseline_accuracy) / baseline_accuracy) * 100
             
-            # 11. Performance report
-            training_time = time.time() - start_time
             performance_report = {
                 "success": True,
                 "training_time_seconds": training_time,
@@ -857,7 +815,7 @@ class OptimizedModelTrainerV35:
                 "test_samples": len(X_test),
                 "feature_count": X.shape[1],
                 "base_accuracies": base_accuracies,
-                "meta_accuracy": meta_accuracy,
+                "stacking_accuracy": stacking_accuracy,
                 "score_accuracy": score_accuracy,
                 "baseline_accuracy": baseline_accuracy,
                 "best_accuracy": best_accuracy,
@@ -866,38 +824,38 @@ class OptimizedModelTrainerV35:
                 "optimization_config": self.metadata['optimization']
             }
             
-            # Final summary
+            # Final özet
             self.logger.info("=" * 80)
-            self.logger.info("🎉 TRAINING COMPLETED SUCCESSFULLY")
+            self.logger.info("🎉 EĞİTİM BAŞARIYLA TAMAMLANDI")
             self.logger.info("=" * 80)
-            self.logger.info(f"⏱️  Training Time: {training_time/60:.2f} minutes")
-            self.logger.info(f"📊 Total Samples: {len(X):,}")
-            self.logger.info(f"🎯 Feature Count: {X.shape[1]}")
-            self.logger.info(f"\n📈 ACCURACY RESULTS:")
-            self.logger.info(f"   Baseline (Original): {baseline_accuracy:.4f} ({baseline_accuracy*100:.2f}%)")
-            self.logger.info(f"   Best (Optimized):    {best_accuracy:.4f} ({best_accuracy*100:.2f}%)")
-            self.logger.info(f"   Improvement:         +{improvement:.2f}%")
+            self.logger.info(f"⏱️  Eğitim Süresi: {training_time/60:.2f} dakika")
+            self.logger.info(f"📊 Toplam Örnek: {len(X):,}")
+            self.logger.info(f"🎯 Feature Sayısı: {X.shape[1]}")
+            self.logger.info(f"\n📈 BALANCED ACCURACY SONUÇLARI:")
+            self.logger.info(f"   Baseline (Önceki): {baseline_accuracy:.4f} ({baseline_accuracy*100:.2f}%)")
+            self.logger.info(f"   En İyi (Yeni):     {best_accuracy:.4f} ({best_accuracy*100:.2f}%)")
+            self.logger.info(f"   Gelişme:           +{improvement:.2f}%")
             
             if base_accuracies:
-                self.logger.info(f"\n🏆 MODEL RANKINGS:")
+                self.logger.info(f"\n🏆 MODEL SIRALAMASI:")
                 sorted_models = sorted(base_accuracies.items(), key=lambda x: x[1], reverse=True)
                 for i, (name, acc) in enumerate(sorted_models, 1):
                     self.logger.info(f"   {i}. {name:<20}: {acc:.4f} ({acc*100:.2f}%)")
             
-            if meta_accuracy > 0:
-                self.logger.info(f"\n🎯 Meta Ensemble: {meta_accuracy:.4f} ({meta_accuracy*100:.2f}%)")
+            if stacking_accuracy > 0:
+                self.logger.info(f"\n🎯 Stacking Ensemble: {stacking_accuracy:.4f} ({stacking_accuracy*100:.2f}%)")
             
             if score_accuracy > 0:
-                self.logger.info(f"⚽ Score Model:    {score_accuracy:.4f} ({score_accuracy*100:.2f}%)")
+                self.logger.info(f"⚽ Skor Modeli:        {score_accuracy:.4f} ({score_accuracy*100:.2f}%)")
             
-            self.logger.info(f"\n💾 Models saved to: {self.models_dir}")
-            self.logger.info(f"💻 Memory usage: {self._mem_usage()}")
+            self.logger.info(f"\n💾 Modeller kaydedildi: {self.models_dir}")
+            self.logger.info(f"💻 RAM Kullanımı: {self._mem_usage()}")
             self.logger.info("=" * 80)
             
             return performance_report
             
         except Exception as e:
-            self.logger.error(f"❌ Training failed: {e}", exc_info=True)
+            self.logger.error(f"❌ Eğitim hatası: {e}", exc_info=True)
             return {
                 "success": False,
                 "error": str(e),
@@ -906,13 +864,13 @@ class OptimizedModelTrainerV35:
 
 
 def main():
-    """Main training function"""
+    """Ana eğitim fonksiyonu"""
     print("=" * 80)
-    print("🚀 ML PREDICTION ENGINE v3.5 - OPTIMIZED MODEL TRAINING")
+    print("🚀 GELİŞTİRİLMİŞ ML TAHMİN SİSTEMİ v3.5 - MODEL EĞİTİMİ")
     print("=" * 80)
-    print("\n📦 Checking dependencies...")
+    print("\n📦 Bağımlılıklar kontrol ediliyor...")
     
-    # Check dependencies
+    # Bağımlılık kontrolü
     missing = []
     if not IMBLEARN_AVAILABLE:
         missing.append("imbalanced-learn")
@@ -920,102 +878,239 @@ def main():
         missing.append("enhanced_feature_engineer")
     
     if missing:
-        print(f"\n⚠️  Missing dependencies: {', '.join(missing)}")
+        print(f"\n⚠️  Eksik bağımlılıklar: {', '.join(missing)}")
         if 'imbalanced-learn' in missing:
-            print("   Install: pip install imbalanced-learn")
+            print("   Yüklemek için: pip install imbalanced-learn")
         if 'enhanced_feature_engineer' in missing:
-            print("   Make sure enhanced_feature_engineer.py is in the same directory")
-        print("\n❌ Cannot proceed without dependencies")
+            print("   enhanced_feature_engineer.py dosyasının aynı dizinde olduğundan emin olun")
+        print("\n❌ Eksik bağımlılıklar yüzünden devam edilemiyor")
         return
     
-    print("✅ All dependencies available")
+    print("✅ Tüm bağımlılıklar mevcut")
     print("\n" + "=" * 80)
     
-    # Configuration options
+    # Konfigurasyon seçenekleri
     configs = {
-        'fast': {
+        'test': {
             'use_smote': True,
-            'n_iter_search': 15,
-            'cv_folds': 2,
             'balance_method': 'smote',
-            'description': 'Fast training (~15-30 min)'
+            'n_iter_search': 10,
+            'cv_folds': 3,
+            'description': 'Hızlı test (~10-20 dakika)'
         },
         'balanced': {
             'use_smote': True,
-            'n_iter_search': 30,
-            'cv_folds': 3,
-            'balance_method': 'hybrid',
-            'description': 'Balanced training (~45-90 min) [RECOMMENDED]'
-        },
-        'accurate': {
-            'use_smote': True,
+            'balance_method': 'smote_tomek',
             'n_iter_search': 50,
             'cv_folds': 5,
-            'balance_method': 'hybrid',
-            'description': 'Maximum accuracy (~2-3 hours)'
+            'description': 'Dengeli eğitim (~1-2 saat) [ÖNERİLEN]'
+        },
+        'aggressive': {
+            'use_smote': True,
+            'balance_method': 'smote_tomek',
+            'n_iter_search': 100,
+            'cv_folds': 5,
+            'description': 'Maksimum doğruluk (~3-4 saat)'
         }
     }
     
-    print("📋 Available configurations:")
+    print("📋 Mevcut konfigürasyonlar:")
     for name, config in configs.items():
         print(f"   {name}: {config['description']}")
     
-    # Use balanced configuration by default
+    # Balanced kullan (önerilen)
     selected_config = 'balanced'
     config = configs[selected_config]
     
-    print(f"\n✅ Using configuration: {selected_config}")
-    print(f"   - Search iterations: {config['n_iter_search']}")
-    print(f"   - CV folds: {config['cv_folds']}")
-    print(f"   - Balance method: {config['balance_method']}")
+    print(f"\n✅ Kullanılan konfigürasyon: {selected_config}")
+    print(f"   - Balancing Method: {config['balance_method']}")
+    print(f"   - Search Iterations: {config['n_iter_search']}")
+    print(f"   - CV Folds: {config['cv_folds']}")
     print("\n" + "=" * 80)
     
     try:
-        # Create trainer
-        trainer = OptimizedModelTrainerV35(
+        # Trainer oluştur
+        trainer = ImprovedModelTrainer(
             models_dir="data/ai_models_v3",
             raw_data_path="data/raw",
             clubs_path="data/clubs",
             test_size=0.2,
             random_state=42,
-            batch_size=2000,
-            enable_meta_ensemble=True,
             use_smote=config['use_smote'],
-            use_class_weights=True,
+            balance_method=config['balance_method'],
             n_iter_search=config['n_iter_search'],
             cv_folds=config['cv_folds'],
-            balance_method=config['balance_method'],
             verbose=True
         )
         
-        # Run training
+        # Eğitimi başlat
         result = trainer.run_training()
         
         if result["success"]:
             print("\n" + "=" * 80)
-            print("✅ TRAINING COMPLETED SUCCESSFULLY!")
+            print("✅ EĞİTİM BAŞARIYLA TAMAMLANDI!")
             print("=" * 80)
-            print(f"\n📊 FINAL RESULTS:")
-            print(f"   Training Time:  {result['training_time_minutes']:.2f} minutes")
+            print(f"\n📊 SONUÇLAR:")
+            print(f"   Eğitim Süresi:  {result['training_time_minutes']:.2f} dakika")
             print(f"   Baseline:       {result['baseline_accuracy']:.4f} ({result['baseline_accuracy']*100:.2f}%)")
-            print(f"   Best Model:     {result['best_accuracy']:.4f} ({result['best_accuracy']*100:.2f}%)")
-            print(f"   Improvement:    +{result['improvement_percentage']:.2f}%")
+            print(f"   En İyi Model:   {result['best_accuracy']:.4f} ({result['best_accuracy']*100:.2f}%)")
+            print(f"   Gelişme:        +{result['improvement_percentage']:.2f}%")
             
             if result['base_accuracies']:
-                print(f"\n🏆 Best performing model:")
+                print(f"\n🏆 En iyi performans gösteren model:")
                 best_model = max(result['base_accuracies'].items(), key=lambda x: x[1])
                 print(f"   {best_model[0]}: {best_model[1]:.4f} ({best_model[1]*100:.2f}%)")
             
-            print(f"\n💾 Models saved to: data/ai_models_v3/")
+            print(f"\n💾 Modeller kaydedildi: data/ai_models_v3/")
             print("=" * 80)
         else:
-            print(f"\n❌ TRAINING FAILED: {result['error']}")
+            print(f"\n❌ EĞİTİM BAŞARISIZ: {result['error']}")
             
     except Exception as e:
-        print(f"\n❌ Critical error: {e}")
+        print(f"\n❌ Kritik hata: {e}")
         import traceback
         traceback.print_exc()
 
 
 if __name__ == "__main__":
     main()
+        
+        self.logger.info(f"✅ XGBoost:")
+        self.logger.info(f"   CV Score: {search.best_score_:.4f}")
+        self.logger.info(f"   Accuracy: {val_acc:.4f}")
+        self.logger.info(f"   Balanced Accuracy: {val_balanced_acc:.4f} ⭐")
+        self.logger.info(f"   F1-Macro: {val_f1:.4f}")
+        
+        return best_model, val_balanced_acc
+    
+    def train_gradient_boost_optimized(self, X_train, y_train, X_val, y_val):
+        """Optimize Gradient Boosting"""
+        self.logger.info("🔧 Gradient Boosting eğitiliyor...")
+        
+        param_distributions = {
+            'n_estimators': [200, 300, 500, 800],
+            'max_depth': [3, 5, 7, 9],
+            'learning_rate': [0.01, 0.05, 0.1, 0.15],
+            'min_samples_split': [2, 5, 10, 20],
+            'min_samples_leaf': [1, 2, 4, 8],
+            'subsample': [0.7, 0.8, 0.9, 1.0],
+            'max_features': ['sqrt', 'log2', 0.8]
+        }
+        
+        base_model = GradientBoostingClassifier(random_state=self.random_state)
+        cv = StratifiedKFold(n_splits=self.cv_folds, shuffle=True, random_state=self.random_state)
+        
+        search = RandomizedSearchCV(
+            base_model, param_distributions,
+            n_iter=self.n_iter_search, cv=cv,
+            scoring='balanced_accuracy',
+            n_jobs=-1,
+            random_state=self.random_state,
+            verbose=1 if self.verbose else 0
+        )
+        
+        search.fit(X_train, y_train)
+        best_model = search.best_estimator_
+        
+        val_pred = best_model.predict(X_val)
+        val_acc = accuracy_score(y_val, val_pred)
+        val_balanced_acc = balanced_accuracy_score(y_val, val_pred)
+        val_f1 = f1_score(y_val, val_pred, average='macro')
+        
+        self.logger.info(f"✅ GradientBoost:")
+        self.logger.info(f"   CV Score: {search.best_score_:.4f}")
+        self.logger.info(f"   Accuracy: {val_acc:.4f}")
+        self.logger.info(f"   Balanced Accuracy: {val_balanced_acc:.4f} ⭐")
+        self.logger.info(f"   F1-Macro: {val_f1:.4f}")
+        
+        return best_model, val_balanced_acc
+    
+    def train_random_forest_optimized(self, X_train, y_train, X_val, y_val):
+        """Optimize Random Forest"""
+        self.logger.info("🔧 Random Forest eğitiliyor...")
+        
+        param_distributions = {
+            'n_estimators': [200, 300, 500, 800],
+            'max_depth': [10, 15, 20, 25, None],
+            'min_samples_split': [2, 5, 10, 20],
+            'min_samples_leaf': [1, 2, 4, 8],
+            'max_features': ['sqrt', 'log2', 0.8],
+            'class_weight': ['balanced', 'balanced_subsample', None]
+        }
+        
+        base_model = RandomForestClassifier(
+            random_state=self.random_state, 
+            n_jobs=-1,
+            bootstrap=True
+        )
+        cv = StratifiedKFold(n_splits=self.cv_folds, shuffle=True, random_state=self.random_state)
+        
+        search = RandomizedSearchCV(
+            base_model, param_distributions,
+            n_iter=self.n_iter_search, cv=cv,
+            scoring='balanced_accuracy',
+            n_jobs=-1,
+            random_state=self.random_state,
+            verbose=1 if self.verbose else 0
+        )
+        
+        search.fit(X_train, y_train)
+        best_model = search.best_estimator_
+        
+        val_pred = best_model.predict(X_val)
+        val_acc = accuracy_score(y_val, val_pred)
+        val_balanced_acc = balanced_accuracy_score(y_val, val_pred)
+        val_f1 = f1_score(y_val, val_pred, average='macro')
+        
+        self.logger.info(f"✅ RandomForest:")
+        self.logger.info(f"   CV Score: {search.best_score_:.4f}")
+        self.logger.info(f"   Accuracy: {val_acc:.4f}")
+        self.logger.info(f"   Balanced Accuracy: {val_balanced_acc:.4f} ⭐")
+        self.logger.info(f"   F1-Macro: {val_f1:.4f}")
+        
+        return best_model, val_balanced_acc
+    
+    def train_lightgbm_optimized(self, X_train, y_train, X_val, y_val):
+        """Optimize LightGBM"""
+        if not LIGHTGBM_AVAILABLE:
+            self.logger.warning("⚠️  LightGBM yüklü değil")
+            return None, 0
+        
+        self.logger.info("🔧 LightGBM eğitiliyor...")
+        
+        param_distributions = {
+            'n_estimators': [200, 300, 500, 800],
+            'max_depth': [3, 5, 7, 9, -1],
+            'learning_rate': [0.01, 0.05, 0.1, 0.2],
+            'num_leaves': [31, 50, 70, 100],
+            'subsample': [0.7, 0.8, 0.9],
+            'colsample_bytree': [0.7, 0.8, 0.9],
+            'min_child_samples': [5, 10, 20],
+            'reg_alpha': [0, 0.1, 0.5],
+            'reg_lambda': [0, 0.1, 0.5]
+        }
+        
+        base_model = lgb.LGBMClassifier(
+            random_state=self.random_state, 
+            n_jobs=-1, 
+            verbose=-1,
+            class_weight='balanced'
+        )
+        cv = StratifiedKFold(n_splits=self.cv_folds, shuffle=True, random_state=self.random_state)
+        
+        search = RandomizedSearchCV(
+            base_model, param_distributions,
+            n_iter=self.n_iter_search, cv=cv,
+            scoring='balanced_accuracy',
+            n_jobs=-1,
+            random_state=self.random_state,
+            verbose=1 if self.verbose else 0
+        )
+        
+        search.fit(X_train, y_train)
+        best_model = search.best_estimator_
+        
+        val_pred = best_model.predict(X_val)
+        val_acc = accuracy_score(y_val, val_pred)
+        val_balanced_acc = balanced_accuracy_score(y_val, val_pred)
+        val_f1 = f1_score(y_val, val_pred, average='macro')
