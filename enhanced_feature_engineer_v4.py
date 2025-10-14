@@ -131,14 +131,18 @@ class EnhancedFeatureEngineer:
     """Geliştirilmiş Feature Engineering v4.0 - 100+ özellik"""
 
     def __init__(self, model_path: str = "data/ai_models_v3", flush_every: int = 1000):
-        self.model_path = model_path
+        # ✅ 4 boşluk girinti
+        self.model_path = os.path.abspath(model_path)
+        os.makedirs(self.model_path, exist_ok=True)
+
+        # ✅ Alt klasör oluşturma
+        self.data_dir = os.path.join(self.model_path, "feature_engineer_data")
+        os.makedirs(self.data_dir, exist_ok=True)
+
         self.flush_every = flush_every
         self.update_count = 0
 
-        os.makedirs(model_path, exist_ok=True)
-        self.data_dir = os.path.join(model_path, "feature_engineer_data")
-        os.makedirs(self.data_dir, exist_ok=True)
-
+        # ✅ Diğer değişkenlerin tanımları
         self.team_history = defaultdict(list)
         self.h2h_history = defaultdict(list)
         self.league_standings = defaultdict(dict)
@@ -146,12 +150,14 @@ class EnhancedFeatureEngineer:
         self.league_stats = defaultdict(dict)
         self.team_elo = defaultdict(lambda: 1500.0)
 
+        # ✅ Kayıtlı verileri yükle
         self._load_history()
         self._load_elo_system()
         self._load_standings()
 
         logger.info("🚀 EnhancedFeatureEngineer v4.0 initialized")
         logger.info(f"📊 Total features: {TOTAL_FEATURES_V4}")
+
 
     # ==========================================================
     # VERİ YÜKLEME & KAYDETME
