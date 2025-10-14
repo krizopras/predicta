@@ -64,26 +64,49 @@ class MLPredictionEngine:
         self.load_models()
     
     # =====================================================
-    # 🔹 Feature Engineer Güvenli Yükleme (Fixed)
+    # 🔹 Feature Engineer Güvenli Yükleme (FIXED)
     # =====================================================
     def _load_feature_engineer(self):
         """🧠 Feature Engineer'ı güvenli şekilde yükler"""
+        logger.info("🔄 Feature Engineer yükleniyor...")
+        
+        # 1. Öncelik: Enhanced Feature Engineer v4.0
         try:
             from enhanced_feature_engineer_v4 import EnhancedFeatureEngineer
             self.feature_engineer = EnhancedFeatureEngineer(model_path=str(self.model_path))
             logger.info("✅ Feature Engineer v4.0 loaded (100+ features)")
+            return
         except ImportError as e:
-            logger.warning(f"⚠️ EnhancedFeatureEngineer import edilemedi: {e}")
-            self.feature_engineer = None
-        except Exception as e:
-            logger.error(f"❌ Feature Engineer init hatası: {e}", exc_info=True)
-            self.feature_engineer = None
-
-        # Eğer hala None ise dummy mod başlat
-        if self.feature_engineer is None:
-            logger.warning("⚠️ Feature Engineer None, fallback dummy mode aktif.")
-            self.feature_engineer = self._dummy_feature_engineer()
-            logger.info("✅ Dummy Feature Engineer yüklendi (minimal feature set).")
+            logger.debug(f"v4.0 import hatası: {e}")
+        
+        # 2. Fallback: Enhanced Feature Engineer v3.5
+        try:
+            from enhanced_feature_engineer import EnhancedFeatureEngineer
+            self.feature_engineer = EnhancedFeatureEngineer(model_path=str(self.model_path))
+            logger.warning("⚠️ Feature Engineer v3.5 loaded (fallback)")
+            return
+        except ImportError as e:
+            logger.debug(f"v3.5 import hatası: {e}")
+        
+        # 3. Son çare: Advanced Feature Engineer (eski)
+        try:
+            from advanced_feature_engineer import AdvancedFeatureEngineer
+            self.feature_engineer = AdvancedFeatureEngineer(model_path=str(self.model_path))
+            logger.warning("⚠️ Advanced Feature Engineer loaded (old version)")
+            return
+        except ImportError as e:
+            logger.debug(f"Advanced import hatası: {e}")
+        
+        # 4. Hiçbiri yüklenemedi - Dummy mode
+        logger.error("❌ CRITICAL: Hiçbir Feature Engineer yüklenemedi!")
+        logger.error("📁 Kontrol edilecek dosyalar:")
+        logger.error("   - enhanced_feature_engineer_v4.py")
+        logger.error("   - enhanced_feature_engineer.py") 
+        logger.error("   - advanced_feature_engineer.py")
+        
+        # Dummy feature engineer oluştur
+        self.feature_engineer = self._dummy_feature_engineer()
+        logger.info("✅ Dummy Feature Engineer yüklendi (minimal feature set)")
     
     # =====================================================
     # 🔹 Dummy Feature Engineer (Fallback)
@@ -92,131 +115,32 @@ class MLPredictionEngine:
         """Feature Engineer yoksa geçici dummy nesne oluşturur"""
         class DummyFeatureEngineer:
             def extract_features(self, match_data: Dict) -> np.ndarray:
-                # Basit 6 özellik: oranlar ve normalize edilmiş olasılıklar
-                odds = match_data.get("odds", {"1": 2.0, "X": 3.0, "2": 3.5})
-                o1, ox, o2 = float(odds.get("1", 2.0)), float(odds.get("X", 3.0)), float(odds.get("2", 3.5))
-                total = (1/o1 + 1/ox + 1/o2)
-                prob1, probx, prob2 = (1/o1)/total, (1/ox)/total, (1/o2)/total
-                return np.array([o1, ox, o2, prob1, probx, prob2], dtype=np.float32)
+                try:
+                    # Basit 6 özellik: oranlar ve normalize edilmiş olasılıklar
+                    odds = match_data.get("odds", {"1": 2.0, "X": 3.0, "2": 3.5})
+                    o1 = float(odds.get("1", 2.0))
+                    ox = float(odds.get("X", 3.0)) 
+                    o2 = float(odds.get("2", 3.5))
+                    
+                    total = (1/o1 + 1/ox + 1/o2)
+                    prob1 = (1/o1)/total
+                    probx = (1/ox)/total
+                    prob2 = (1/o2)/total
+                    
+                    return np.array([o1, ox, o2, prob1, probx, prob2], dtype=np.float32)
+                except Exception as e:
+                    logger.error(f"❌ Dummy feature extraction error: {e}")
+                    return np.array([2.0, 3.0, 3.5, 0.33, 0.33, 0.33], dtype=np.float32)
+                    
+            def update_match_result(self, match_data: Dict, actual_result: str):
+                """Dummy implementation"""
+                pass
+                
         return DummyFeatureEngineer()
     
     # =====================================================
-    # 🔹 Model Yükleme (örnek)
+    # 🔹 Model Yükleme (FIXED)
     # =====================================================
-    def load_models(self):
-        """Kayıtlı modelleri yükler"""
-        try:
-            for name in self.models.keys():
-                model_file = self.model_path / f"{name}_model.pkl"
-                if model_file.exists():
-                    self.models[name] = SklearnCompatLoader.safe_load_pickle(model_file)
-                    logger.info(f"✅ {name} modeli yüklendi.")
-                else:
-                    logger.warning(f"⚠️ {name} modeli bulunamadı: {model_file}")
-            self.is_trained = any(m is not None for m in self.models.values())
-        except Exception as e:
-            logger.error(f"❌ Model yükleme hatası: {e}")
-            self.is_trained = False
-    
-    # =====================================================
-    # 🔹 Tahmin Fonksiyonu (örnek)
-    # =====================================================
-    def predict(self, match_data: Dict[str, Any]) -> Optional[Dict[str, float]]:
-        """Tahmin üretir"""
-        try:
-            if not self.feature_engineer:
-                logger.error("❌ Feature Engineer not available - cannot predict")
-                return None
-            
-            features = self.feature_engineer.extract_features(match_data)
-            if features is None:
-                logger.error("❌ Feature extraction başarısız")
-                return None
-
-            if len(features.shape) == 1:
-                features = features.reshape(1, -1)
-            
-            features_scaled = self.scaler.fit_transform(features)
-            
-            results = {}
-            for name, model in self.models.items():
-                if model is not None:
-                    pred = model.predict_proba(features_scaled)[0]
-                    results[name] = float(np.argmax(pred))
-                else:
-                    results[name] = None
-            
-            return results
-        except Exception as e:
-            logger.error(f"❌ Prediction error: {e}", exc_info=True)
-            return None
-
-            
-            # 2. Fallback: Enhanced Feature Engineer v3.5
-            try:
-                from enhanced_feature_engineer import EnhancedFeatureEngineer
-                self.feature_engineer = EnhancedFeatureEngineer(model_path=str(self.model_path))
-                logger.warning("⚠️ Feature Engineer v3.5 loaded (fallback)")
-                return
-            except ImportError as e:
-                logger.debug(f"v3.5 import hatası: {e}")
-            
-            # 3. Son çare: Advanced Feature Engineer (eski)
-            try:
-                from advanced_feature_engineer import AdvancedFeatureEngineer
-                self.feature_engineer = AdvancedFeatureEngineer(model_path=str(self.model_path))
-                logger.warning("⚠️ Advanced Feature Engineer loaded (old version)")
-                return
-            except ImportError as e:
-                logger.debug(f"Advanced import hatası: {e}")
-            
-            # 4. Hiçbiri yüklenemedi
-            logger.error("❌ CRITICAL: Hiçbir Feature Engineer yüklenemedi!")
-            logger.error("📁 Kontrol edilecek dosyalar:")
-            logger.error("   - enhanced_feature_engineer_v4.py")
-            logger.error("   - enhanced_feature_engineer.py")
-            logger.error("   - advanced_feature_engineer.py")
-            self.feature_engineer = None
-            
-        except Exception as e:
-            logger.error(f"❌ Feature Engineer yükleme hatası: {e}", exc_info=True)
-            self.feature_engineer = None
-    
-    def is_feature_engineer_available(self) -> bool:
-        """🆕 Feature Engineer kullanılabilir mi?"""
-        return self.feature_engineer is not None
-    
-    def get_feature_engineer_info(self) -> Dict[str, Any]:
-        """🆕 Feature Engineer bilgisi"""
-        if not self.feature_engineer:
-            return {
-                "available": False,
-                "type": "None",
-                "version": "N/A"
-            }
-        
-        fe_type = type(self.feature_engineer).__name__
-        
-        # Version tespiti
-        version = "unknown"
-        if hasattr(self.feature_engineer, '__module__'):
-            if 'v4' in self.feature_engineer.__module__:
-                version = "v4.0 (100+ features)"
-            elif 'enhanced' in self.feature_engineer.__module__:
-                version = "v3.5 (70 features)"
-            elif 'advanced' in self.feature_engineer.__module__:
-                version = "v2.0 (46 features)"
-        
-        return {
-            "available": True,
-            "type": fe_type,
-            "version": version,
-            "has_update_methods": all([
-                hasattr(self.feature_engineer, 'update_match_result'),
-                hasattr(self.feature_engineer, 'extract_features')
-            ])
-        }
-    
     def load_models(self) -> bool:
         """Load models with compatibility handling"""
         logger.info("📄 Loading ML models...")
@@ -283,7 +207,8 @@ class MLPredictionEngine:
                     self.scaler = scaler_data
                     logger.info("✅ Scaler loaded")
             
-            return len([m for m in self.models.values() if m is not None]) > 0
+            self.is_trained = len([m for m in self.models.values() if m is not None]) > 0
+            return self.is_trained
             
         except FileNotFoundError as e:
             logger.error(f"❌ Model file not found: {e}")
@@ -292,6 +217,9 @@ class MLPredictionEngine:
             logger.error(f"❌ Model loading error: {e}", exc_info=True)
             return False
     
+    # =====================================================
+    # 🔹 Tahmin Fonksiyonu (FIXED)
+    # =====================================================
     def predict_match(
         self, 
         home_team: str, 
@@ -301,16 +229,6 @@ class MLPredictionEngine:
     ) -> Dict[str, Any]:
         """
         Predict match outcome with full error handling
-        
-        Returns:
-            {
-                "prediction": "1" | "X" | "2",
-                "confidence": float (0-100),
-                "probabilities": {"1": float, "X": float, "2": float},
-                "score_prediction": "2-1",
-                "alternative_scores": [...],
-                "value_bet": {...}
-            }
         """
         # 🔧 1. Feature Engineer kontrolü
         if self.feature_engineer is None:
@@ -338,7 +256,9 @@ class MLPredictionEngine:
             
             # NaN/Inf handling
             features = np.nan_to_num(features, nan=0.0, posinf=0.0, neginf=0.0)
-            features = features.reshape(1, -1)
+            
+            if len(features.shape) == 1:
+                features = features.reshape(1, -1)
             
             # Scale
             if hasattr(self.scaler, 'mean_') and self.scaler.mean_ is not None:
@@ -488,6 +408,43 @@ class MLPredictionEngine:
                 "risk": "Error",
                 "recommendation": str(e)
             }
+    
+    def is_feature_engineer_available(self) -> bool:
+        """🆕 Feature Engineer kullanılabilir mi?"""
+        return self.feature_engineer is not None
+    
+    def get_feature_engineer_info(self) -> Dict[str, Any]:
+        """🆕 Feature Engineer bilgisi"""
+        if not self.feature_engineer:
+            return {
+                "available": False,
+                "type": "None",
+                "version": "N/A"
+            }
+        
+        fe_type = type(self.feature_engineer).__name__
+        
+        # Version tespiti
+        version = "unknown"
+        if hasattr(self.feature_engineer, '__module__'):
+            if 'v4' in self.feature_engineer.__module__:
+                version = "v4.0 (100+ features)"
+            elif 'enhanced' in self.feature_engineer.__module__:
+                version = "v3.5 (70 features)"
+            elif 'advanced' in self.feature_engineer.__module__:
+                version = "v2.0 (46 features)"
+            elif 'DummyFeatureEngineer' in fe_type:
+                version = "dummy (6 features)"
+        
+        return {
+            "available": True,
+            "type": fe_type,
+            "version": version,
+            "has_update_methods": all([
+                hasattr(self.feature_engineer, 'update_match_result'),
+                hasattr(self.feature_engineer, 'extract_features')
+            ])
+        }
     
     def get_system_info(self) -> Dict[str, Any]:
         """🆕 Sistem bilgisi"""
