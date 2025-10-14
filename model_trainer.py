@@ -826,6 +826,12 @@ def main():
     else:
         print(f"\n❌ HATA: {result['error']}")
 
+# --- Compatibility alias for main.py ---
+class ProductionModelTrainer(ImprovedModelTrainer):
+    """Alias class for backward compatibility with main.py"""
+    def run_full_pipeline(self):
+        """Main.py tarafından çağrılır (run_training wrapper'ı)"""
+        return self.run_training()
 
 if __name__ == "__main__":
     main()
