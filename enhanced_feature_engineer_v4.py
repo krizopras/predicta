@@ -1,6 +1,6 @@
 """
 ==============================================================
- Enhanced Feature Engineer v4.0 - MAXIMUM PERFORMANCE (FIXED)
+ Enhanced Feature Engineer v4.0 - MAXIMUM PERFORMANCE (FINAL)
 --------------------------------------------------------------
  70 → 100+ özelliğe çıkarıldı
  Yeni özellikler:
@@ -18,20 +18,23 @@ import math
 import logging
 import pickle
 import os
-from typing import Dict, Any, Optional, List, Tuple
+from typing import Dict, Any, Optional
 import numpy as np
 from collections import defaultdict
-from datetime import datetime, timedelta
+from datetime import datetime
 
 logging.basicConfig(level=logging.INFO, format="[EnhancedFeatureEngineer] %(message)s")
 logger = logging.getLogger(__name__)
 
-# Yeni feature isimleri (100 özellik)
+# ==============================================================
+# FEATURE ADLARI
+# ==============================================================
+
 ENHANCED_FEATURE_NAMES_V4 = [
     # Temel oranlar (6)
     "odds_1", "odds_x", "odds_2",
     "prob_1", "prob_x", "prob_2",
-    
+
     # Oran türevleri (18)
     "odds_diff_home_draw", "odds_diff_draw_away", "odds_margin",
     "log_odds_1", "log_odds_x", "log_odds_2",
@@ -40,11 +43,11 @@ ENHANCED_FEATURE_NAMES_V4 = [
     "odds_imbalance", "min_odds", "max_odds",
     "odds_ratio_home_away", "prob_diff_home_away", "odds_confidence",
     "betting_heat",
-    
+
     # Takım özellikleri (8)
     "home_len", "away_len", "is_derby", "league_country_score",
     "home_elo", "away_elo", "elo_diff", "league_quality_index",
-    
+
     # Form ve performans (28)
     "home_form", "away_form", "form_diff",
     "home_goals_avg", "away_goals_avg", "goals_diff",
@@ -60,12 +63,12 @@ ENHANCED_FEATURE_NAMES_V4 = [
     "home_recent_goals_avg", "away_recent_goals_avg",
     "home_consistency", "away_consistency",
     "form_momentum_diff",
-    
+
     # H2H (7)
     "h2h_home_wins", "h2h_draws", "h2h_away_wins",
     "h2h_total_goals_avg", "h2h_home_dominance",
     "h2h_recent_trend", "h2h_goal_variance",
-    
+
     # Zaman özellikleri (15)
     "month", "day_of_week", "is_weekend", "season_phase",
     "days_since_last_match_home", "days_since_last_match_away",
@@ -74,7 +77,7 @@ ENHANCED_FEATURE_NAMES_V4 = [
     "home_optimal_rest", "away_optimal_rest",
     "home_momentum", "away_momentum",
     "is_midweek", "season_progress",
-    
+
     # Lig ve sıralama (18)
     "home_league_position", "away_league_position", "position_diff",
     "home_points", "away_points", "points_diff",
@@ -87,10 +90,12 @@ ENHANCED_FEATURE_NAMES_V4 = [
 ]
 
 TOTAL_FEATURES_V4 = 101
+assert len(ENHANCED_FEATURE_NAMES_V4) == TOTAL_FEATURES_V4
 
-assert len(ENHANCED_FEATURE_NAMES_V4) == TOTAL_FEATURES_V4, \
-    f"Feature sayısı uyuşmuyor: {len(ENHANCED_FEATURE_NAMES_V4)} != {TOTAL_FEATURES_V4}"
 
+# ==============================================================
+# YARDIMCI FONKSİYONLAR
+# ==============================================================
 
 def safe_lower(value: Any) -> str:
     if value is None:
@@ -118,55 +123,85 @@ def safe_int(value: Any, default: int = 0) -> int:
         return default
 
 
+# ==============================================================
+# ANA SINIF
+# ==============================================================
+
 class EnhancedFeatureEngineer:
     """Geliştirilmiş Feature Engineering v4.0 - 100+ özellik"""
 
     def __init__(self, model_path: str = "data/ai_models_v3", flush_every: int = 1000):
-    self.model_path = model_path
-    self.flush_every = flush_every
-    self.update_count = 0
-    os.makedirs(model_path, exist_ok=True)
-    
-    # Veri dosyalarının kaydedileceği dizini tanımlayın ve oluşturun
-    # Bu, _load_history/elo/standings gibi metotların düzgün çalışması için gereklidir.
-    self.data_dir = os.path.join(model_path, "feature_engineer_data")
-    os.makedirs(self.data_dir, exist_ok=True)
-    
-    self.team_history = defaultdict(list)
-    self.h2h_history = defaultdict(list)
-    self.league_standings = defaultdict(dict)
-    self.team_last_match_date = defaultdict(lambda: None)
-    self.league_stats = defaultdict(dict)
-    self.team_elo = defaultdict(lambda: 1500.0)
-    
-    # Kaydedilmiş verileri yükleyen metotlar (Hata veren _load_data() yerine bunlar kullanılır)
-    self._load_history()
-    self._load_elo_system()
-    self._load_standings()
-    # Hata veren 'self._load_data()' çağrısı BU KISIMDAN KALDIRILMIŞTIR.
-    
-    logger.info(f"🚀 EnhancedFeatureEngineer v4.0 initialized")
-    logger.info(f"📊 Total features: {TOTAL_FEATURES_V4}")
+        self.model_path = model_path
+        self.flush_every = flush_every
+        self.update_count = 0
+
+        os.makedirs(model_path, exist_ok=True)
+        self.data_dir = os.path.join(model_path, "feature_engineer_data")
+        os.makedirs(self.data_dir, exist_ok=True)
+
+        self.team_history = defaultdict(list)
+        self.h2h_history = defaultdict(list)
+        self.league_standings = defaultdict(dict)
+        self.team_last_match_date = defaultdict(lambda: None)
+        self.league_stats = defaultdict(dict)
+        self.team_elo = defaultdict(lambda: 1500.0)
+
+        self._load_history()
+        self._load_elo_system()
+        self._load_standings()
+
+        logger.info("🚀 EnhancedFeatureEngineer v4.0 initialized")
+        logger.info(f"📊 Total features: {TOTAL_FEATURES_V4}")
+
     # ==========================================================
-    # 🚨 GÜNCELLENMİŞ _SAVE_DATA METODU (HATASIZ SÜRÜM)
+    # VERİ YÜKLEME & KAYDETME
     # ==========================================================
+
+    def _load_history(self):
+        try:
+            fpath = os.path.join(self.data_dir, "history.pkl")
+            if os.path.exists(fpath):
+                with open(fpath, "rb") as f:
+                    data = pickle.load(f)
+                    self.team_history = data.get("team_history", defaultdict(list))
+                    self.h2h_history = data.get("h2h_history", defaultdict(list))
+                logger.info("✅ History data loaded")
+        except Exception as e:
+            logger.warning(f"⚠️ Could not load history: {e}")
+
+    def _load_elo_system(self):
+        try:
+            fpath = os.path.join(self.data_dir, "elo_ratings.pkl")
+            if os.path.exists(fpath):
+                with open(fpath, "rb") as f:
+                    self.team_elo = pickle.load(f)
+                logger.info("✅ ELO ratings loaded")
+        except Exception as e:
+            logger.warning(f"⚠️ Could not load ELO: {e}")
+
+    def _load_standings(self):
+        try:
+            fpath = os.path.join(self.data_dir, "standings.pkl")
+            if os.path.exists(fpath):
+                with open(fpath, "rb") as f:
+                    data = pickle.load(f)
+                    self.league_standings = data.get("league_standings", defaultdict(dict))
+                    self.league_stats = data.get("league_stats", defaultdict(dict))
+                logger.info("✅ Standings data loaded")
+        except Exception as e:
+            logger.warning(f"⚠️ Could not load standings: {e}")
+
     def _save_data(self):
         """Feature verilerini güvenli şekilde kaydeder"""
         data_file = os.path.join(self.model_path, "enhanced_feature_data_v4.pkl")
         temp_file = data_file + ".tmp"
         try:
-            # Klasör garantisi
             os.makedirs(self.model_path, exist_ok=True)
+            team_dates_str = {
+                t: d.isoformat() if isinstance(d, datetime) else None
+                for t, d in self.team_last_match_date.items()
+            }
 
-            # Tarihleri string'e çevir
-            team_dates_str = {}
-            for team, date_obj in self.team_last_match_date.items():
-                if date_obj and isinstance(date_obj, datetime):
-                    team_dates_str[team] = date_obj.isoformat()
-                else:
-                    team_dates_str[team] = None
-
-            # Kaydedilecek veri
             data = {
                 "team_history": dict(self.team_history),
                 "h2h_history": dict(self.h2h_history),
@@ -176,70 +211,56 @@ class EnhancedFeatureEngineer:
                 "team_elo": dict(self.team_elo)
             }
 
-            # Eski tmp varsa temizle
             if os.path.exists(temp_file):
                 os.remove(temp_file)
 
-            # Geçici dosyayı yaz
             with open(temp_file, "wb") as f:
                 pickle.dump(data, f, protocol=pickle.HIGHEST_PROTOCOL)
 
-            # Yazıldı mı kontrol et
-            if not os.path.exists(temp_file):
-                raise FileNotFoundError(f"Geçici dosya oluşturulamadı: {temp_file}")
-
-            # Atomik olarak değiştir
             os.replace(temp_file, data_file)
-
             logger.info("💾 Feature data güvenli şekilde kaydedildi")
             return True
 
         except Exception as e:
             logger.error(f"❌ Feature data kaydetme hatası: {e}")
             if os.path.exists(temp_file):
-                try:
-                    os.remove(temp_file)
-                except Exception:
-                    pass
+                os.remove(temp_file)
             return False
-        
+
+    # ==========================================================
+    # ANA FONKSİYONLAR
+    # ==========================================================
+
     def extract_features(self, match_data: Dict) -> Optional[np.ndarray]:
         """100 özellikli feature vector üretir"""
         try:
             if not match_data:
                 return None
-            
+
             home = safe_lower(match_data.get("home_team"))
             away = safe_lower(match_data.get("away_team"))
             league = safe_lower(match_data.get("league", "unknown"))
-            
             if not home or not away:
                 return None
-            
-            # Tüm feature gruplarını çıkar
+
             feature_groups = [
-                self._extract_advanced_odds_features(match_data),  # 18
-                self._extract_team_features_v4(home, away, league),  # 8
-                self._extract_comprehensive_form_features(home, away),  # 28
-                self._extract_h2h_features_v4(home, away),  # 7
-                self._extract_time_features_v4(match_data, home, away),  # 15
-                self._extract_standings_features_v4(home, away, league)  # 18
+                self._extract_advanced_odds_features(match_data),
+                self._extract_team_features_v4(home, away, league),
+                self._extract_comprehensive_form_features(home, away),
+                self._extract_h2h_features_v4(home, away),
+                self._extract_time_features_v4(match_data, home, away),
+                self._extract_standings_features_v4(home, away, league)
             ]
-            
-            # Birleştir (6 temel oran zaten ilk grupta)
+
             features = np.concatenate(feature_groups)
-            
-            # Güvenlik
-            if np.any(np.isnan(features)) or np.any(np.isinf(features)):
-                features = np.nan_to_num(features, nan=0.0, posinf=1.0, neginf=-1.0)
-            
-            # Kontrol
+            features = np.nan_to_num(features, nan=0.0, posinf=1.0, neginf=-1.0)
+
             if len(features) != TOTAL_FEATURES_V4:
                 logger.error(f"Feature sayısı hatalı: {len(features)} != {TOTAL_FEATURES_V4}")
                 return None
-            
+
             return features.astype(np.float32)
-            
+
         except Exception as e:
             logger.error(f"extract_features hatası: {e}", exc_info=True)
             return None
@@ -823,25 +844,42 @@ class EnhancedFeatureEngineer:
         }
 
 
+
+    # ==========================================================
+    # İSTATİSTİKLER
+    # ==========================================================
+    def get_stats(self) -> Dict[str, Any]:
+        return {
+            "total_teams": len(self.team_history),
+            "total_h2h_pairs": len(self.h2h_history),
+            "total_leagues": len(self.league_standings),
+            "update_count": self.update_count,
+            "total_features": TOTAL_FEATURES_V4,
+            "avg_elo": round(np.mean(list(self.team_elo.values())), 1)
+            if self.team_elo else 1500.0,
+        }
+
+
+# ==============================================================
 # TEST
+# ==============================================================
+
 if __name__ == "__main__":
     eng = EnhancedFeatureEngineer()
-    
+
     test_match = {
         "home_team": "Barcelona",
-        "away_team": "Real Madrid", 
+        "away_team": "Real Madrid",
         "league": "La Liga",
         "odds": {"1": 2.1, "X": 3.3, "2": 3.2},
-        "date": "2025-10-15"
+        "date": "2025-10-15",
     }
-    
+
     features = eng.extract_features(test_match)
     if features is not None:
-        print(f"✅ Feature vector: {features.shape}")
-        print(f"✅ Expected: {TOTAL_FEATURES_V4}")
+        print(f"✅ Feature vector shape: {features.shape}")
         print(f"✅ Match: {len(features) == TOTAL_FEATURES_V4}")
-        print(f"✅ Sample features (first 20): {features[:20]}")
-        print(f"✅ Sample features (odds section): {features[6:24]}")
-        print(f"\n📊 Stats: {eng.get_stats()}")
+        print(f"📊 Stats: {eng.get_stats()}")
+        print(f"🔹 First 10 features: {features[:10]}")
     else:
         print("❌ Feature extraction failed")
