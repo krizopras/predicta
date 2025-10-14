@@ -141,81 +141,91 @@ class MLPredictionEngine:
     # =====================================================
     # 🔹 Model Yükleme (FIXED)
     # =====================================================
-    def load_models(self) -> bool:
-        """Load models with compatibility handling"""
-        logger.info("📄 Loading ML models...")
-        
+   def load_models(self) -> bool:
+    """Load models with compatibility handling (supports pkl, json, model)"""
+    logger.info("📄 Loading ML models...")
+
+    try:
+        # === 1️⃣ Ensemble (MS) Models ===
+        ms_path = self.model_path / "ensemble_models.pkl"
+        if not ms_path.exists():
+            logger.warning(f"⚠️ Model file not found: {ms_path}")
+            logger.warning("💡 Please train models first: POST /api/training/start")
+            return False
+
+        logger.info(f"📂 Loading from: {ms_path}")
+
+        import xgboost as xgb
+
+        ms_data = None
         try:
-            # MS Models
-            ms_path = self.model_path / "ensemble_models.pkl"
-            if not ms_path.exists():
-                logger.warning(f"⚠️ Model file not found: {ms_path}")
-                logger.warning("💡 Please train models first: POST /api/training/start")
-                return False
-            
-            logger.info(f"📂 Loading from: {ms_path}")
-            
-            # Uyumlu yükleme
             ms_data = SklearnCompatLoader.safe_load_pickle(ms_path)
-            
-            if ms_data is None:
-                logger.error("❌ Model loading failed due to sklearn incompatibility")
-                logger.error("🔧 Solution: Retrain models with current sklearn version")
+        except Exception as e:
+            logger.warning(f"⚠️ Pickle load failed ({e}), will try XGBoost loader")
+
+        # ✅ Eğer pickle başarısızsa XGBoost formatını dene
+        if ms_data is None:
+            try:
+                model = xgb.XGBClassifier()
+                model.load_model(str(ms_path))
+                ms_data = {"models": {"xgb": model}, "is_trained": True}
+                logger.info("✅ XGBoost model loaded (JSON/MODEL compatible format)")
+            except Exception as e:
+                logger.error(f"❌ Model load failed: {e}")
+                logger.error("🔧 Solution: Retrain models with current sklearn/XGBoost version")
                 logger.error("   Run: POST /api/training/start")
                 return False
-            
-            if isinstance(ms_data, dict):
-                self.models = ms_data.get('models', {})
-                self.scaler = ms_data.get('scaler', StandardScaler())
-                self.is_trained = ms_data.get('is_trained', False)
-                
-                # Modelleri kontrol et
-                loaded_models = [name for name, model in self.models.items() if model is not None]
-                logger.info(f"✅ Loaded MS models: {', '.join(loaded_models)}")
-            
-            # Score Model
-            score_path = self.model_path / "score_model.pkl"
-            if score_path.exists():
-                score_data = SklearnCompatLoader.safe_load_pickle(score_path)
-                
-                if score_data and isinstance(score_data, dict):
+
+        if isinstance(ms_data, dict):
+            self.models = ms_data.get('models', {})
+            self.scaler = ms_data.get('scaler', StandardScaler())
+            self.is_trained = ms_data.get('is_trained', False)
+
+            loaded_models = [name for name, model in self.models.items() if model is not None]
+            logger.info(f"✅ Loaded MS models: {', '.join(loaded_models)}")
+
+        # === 2️⃣ Score Model ===
+        score_path = self.model_path / "score_model.pkl"
+        if score_path.exists():
+            score_data = SklearnCompatLoader.safe_load_pickle(score_path)
+            if score_data and isinstance(score_data, dict):
+                try:
+                    from enhanced_score_predictor import EnhancedRealisticScorePredictor
+                    self.score_predictor = EnhancedRealisticScorePredictor(
+                        models_dir=str(self.model_path)
+                    )
+                    logger.info("✅ Enhanced Score Predictor loaded")
+                except ImportError:
                     try:
-                        # Score predictor import
-                        try:
-                            from enhanced_score_predictor import EnhancedRealisticScorePredictor
-                            self.score_predictor = EnhancedRealisticScorePredictor(
-                                models_dir=str(self.model_path)
-                            )
-                            logger.info("✅ Enhanced Score Predictor loaded")
-                        except ImportError:
-                            try:
-                                from score_predictor import ScorePredictor
-                                self.score_predictor = ScorePredictor()
-                                self.score_predictor.model = score_data.get('model')
-                                self.score_predictor.space = score_data.get('score_space', [])
-                                logger.info(f"✅ Score model loaded ({len(self.score_predictor.space)} classes)")
-                            except ImportError:
-                                logger.warning("⚠️ ScorePredictor not available")
-                    except Exception as e:
-                        logger.warning(f"⚠️ Score model yükleme hatası: {e}")
-            
-            # Scaler
-            scaler_path = self.model_path / "scaler.pkl"
-            if scaler_path.exists():
-                scaler_data = SklearnCompatLoader.safe_load_pickle(scaler_path)
-                if scaler_data:
-                    self.scaler = scaler_data
-                    logger.info("✅ Scaler loaded")
-            
-            self.is_trained = len([m for m in self.models.values() if m is not None]) > 0
-            return self.is_trained
-            
-        except FileNotFoundError as e:
-            logger.error(f"❌ Model file not found: {e}")
-            return False
-        except Exception as e:
-            logger.error(f"❌ Model loading error: {e}", exc_info=True)
-            return False
+                        from score_predictor import ScorePredictor
+                        self.score_predictor = ScorePredictor()
+                        self.score_predictor.model = score_data.get('model')
+                        self.score_predictor.space = score_data.get('score_space', [])
+                        logger.info(f"✅ Score model loaded ({len(self.score_predictor.space)} classes)")
+                    except ImportError:
+                        logger.warning("⚠️ ScorePredictor not available")
+                except Exception as e:
+                    logger.warning(f"⚠️ Score model yükleme hatası: {e}")
+
+        # === 3️⃣ Scaler ===
+        scaler_path = self.model_path / "scaler.pkl"
+        if scaler_path.exists():
+            scaler_data = SklearnCompatLoader.safe_load_pickle(scaler_path)
+            if scaler_data:
+                self.scaler = scaler_data
+                logger.info("✅ Scaler loaded")
+
+        # === 4️⃣ Final state ===
+        self.is_trained = len([m for m in self.models.values() if m is not None]) > 0
+        return self.is_trained
+
+    except FileNotFoundError as e:
+        logger.error(f"❌ Model file not found: {e}")
+        return False
+    except Exception as e:
+        logger.error(f"❌ Model loading error: {e}", exc_info=True)
+        return False
+
     
     # =====================================================
     # 🔹 Tahmin Fonksiyonu (FIXED)
