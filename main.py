@@ -546,7 +546,7 @@ def reload_models():
             "status": "ok" if success else "partial",
             "message": "Models reloaded successfully" if success else "Some models missing",
             "is_trained": engine.is_trained,
-            "model_path": str(engine.model_path),  # ✅ String'e çevir
+            "models_dir": str(engine.models_dir),  # ✅ String'e çevir
             "timestamp": datetime.now().isoformat()
         })
         
@@ -564,7 +564,7 @@ def get_models_info():
     try:
         info = {
             "is_trained": engine.is_trained,
-            "model_path": str(engine.model_path),  # ✅ str() ekleyin
+            "models_dir": str(engine.models_dir),  # ✅ str() ekleyin
             "models": {}
         }
         
@@ -590,7 +590,7 @@ def get_models_info():
             }
         
         # Info from metadata file
-        meta_path = Path(engine.model_path) / "training_metadata.json"
+        meta_path = Path(engine.models_dir) / "training_metadata.json"
         if meta_path.exists():
             try:
                 with open(meta_path, 'r') as f:
@@ -805,9 +805,9 @@ def delete_models():
         import shutil
         
         deleted_files = []
-        models_path = Path(MODELS_DIR)
+        models_dir = Path(MODELS_DIR)
         
-        if not models_path.exists():
+        if not models_dir.exists():
             return jsonify({
                 "status": "no_models",
                 "message": "No models directory found"
@@ -822,7 +822,7 @@ def delete_models():
         ]
         
         for file in model_files:
-            file_path = models_path / file
+            file_path = models_dir / file
             if file_path.exists():
                 file_path.unlink()
                 deleted_files.append(file)
