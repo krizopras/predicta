@@ -345,51 +345,90 @@ class ImprovedModelTrainer:
             self.logger.error(f"❌ Balancing hatası: {e}")
             return X_train, y_train
     
+   
     def train_xgboost(self, X_train, y_train, X_val, y_val):
-        self.logger.info("🔧 XGBoost...")
-        
-        param_dist = {
-            'max_depth': [3, 5, 7, 9, 11],
-            'learning_rate': [0.01, 0.05, 0.1, 0.15],
-            'n_estimators': [500, 800, 1000, 1200],
-            'subsample': [0.7, 0.8, 0.9],
-            'colsample_bytree': [0.7, 0.8, 0.9],
-            'min_child_weight': [1, 3, 5],
-            'gamma': [0, 0.1, 0.2]
-        }
-        
+        # ✅ 1. Baz model
         base = xgb.XGBClassifier(
-            objective='multi:softprob',
+            objective="multi:softprob",
             num_class=3,
             random_state=self.random_state,
             n_jobs=-1,
-            tree_method='hist'
+            tree_method="hist",          # ⚡ 'gpu_hist' varsa 10x hızlanma
+            learning_rate=0.08,
+            n_estimators=300,
+            max_depth=6,
+            subsample=0.8,
+            colsample_bytree=0.8,
+            gamma=0.2,
+            min_child_weight=3,
+            reg_lambda=1.0,
+            reg_alpha=0.2,
+            use_label_encoder=False,
+            verbosity=0
         )
-        
-        cv = StratifiedKFold(n_splits=self.cv_folds, shuffle=True, random_state=self.random_state)
+
+        # ✅ 2. Parametre aralığı (dengeli hız için)
+        param_dist = {
+            "max_depth": [4, 5, 6],
+            "learning_rate": [0.05, 0.08, 0.1],
+            "subsample": [0.7, 0.8, 0.9],
+            "colsample_bytree": [0.7, 0.8, 0.9],
+            "n_estimators": [150, 200, 250, 300],
+            "gamma": [0, 0.1, 0.2, 0.3],
+            "min_child_weight": [1, 2, 3]
+        }
+
+        # ✅ 3. Stratified CV
+        cv = StratifiedKFold(
+            n_splits=self.cv_folds,
+            shuffle=True,
+            random_state=self.random_state
+        )
+
+        # ✅ 4. Randomized Search (az iterasyon + hızlı)
         search = RandomizedSearchCV(
-            base, param_dist,
-            n_iter=self.n_iter_search,
+            base,
+            param_dist,
+            n_iter=min(self.n_iter_search, 12),  # 💡 max 12 iterasyon — 5x hızlanma
             cv=cv,
-            scoring='f1_macro',  # ✅ DEĞIŞTI: balanced_accuracy → f1_macro
+            scoring="f1_macro",
             n_jobs=-1,
             random_state=self.random_state,
             verbose=1 if self.verbose else 0
         )
-        
-        search.fit(X_train, y_train)
+
+        # ✅ 5. Early stopping + validation
+        # XGBoost native API ile erken durdurma — hız farkı çok büyük
+        def fit_with_early_stop(estimator, X, y):
+            return estimator.fit(
+            X, y,
+            eval_set=[(X_val, y_val)],
+            early_stopping_rounds=25,
+            verbose=False
+        )
+
+        # CV sırasında erken durdurmayı uygulayarak hız kazancı
+        search.fit(X_train, y_train, fit_params={
+            "eval_set": [(X_val, y_val)],
+            "early_stopping_rounds": 25,
+            "verbose": False
+        })
+
+        # ✅ 6. En iyi modeli al
         model = search.best_estimator_
-        
-        pred = model.predict(X_val)
-        acc = accuracy_score(y_val, pred)
-        bal_acc = balanced_accuracy_score(y_val, pred)
-        f1 = f1_score(y_val, pred, average='macro')
-        
+        preds = model.predict(X_val)
+
+        # ✅ 7. Skorlar
+        acc = accuracy_score(y_val, preds)
+        bal_acc = balanced_accuracy_score(y_val, preds)
+        f1 = f1_score(y_val, preds, average="macro")
+
         self.logger.info(f"✅ XGBoost: Acc={acc:.4f}, BalAcc={bal_acc:.4f}, F1={f1:.4f}")
         self.logger.info(f"   Best params: {search.best_params_}")
-        return model, f1  # ✅ F1 score döndür
-    
-    def train_gradient_boost(self, X_train, y_train, X_val, y_val):
+
+        return model, f1
+
+        def train_gradient_boost(self, X_train, y_train, X_val, y_val):
         self.logger.info("🔧 GradientBoost...")
         
         param_dist = {
