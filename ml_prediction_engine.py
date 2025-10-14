@@ -15,7 +15,6 @@ from typing import Dict, List, Optional, Any
 try:
     import sklearn
     from sklearn.preprocessing import StandardScaler
-    # Sklearn version check
     SKLEARN_VERSION = tuple(map(int, sklearn.__version__.split('.')[:2]))
     logging.info(f"Sklearn version: {sklearn.__version__}")
 except ImportError:
@@ -27,16 +26,10 @@ logger = logging.getLogger("MLEngine")
 
 class SklearnCompatLoader:
     """Sklearn version uyumsuzluklarını handle eder"""
-    
     @staticmethod
     def safe_load_pickle(file_path: Path):
-        """
-        Sklearn modelleri için güvenli pickle yükleme
-        Versiyon uyumsuzluklarını handle eder
-        """
         try:
             with open(file_path, 'rb') as f:
-                # Normal yükleme dene
                 return pickle.load(f)
         except (ValueError, AttributeError) as e:
             if "node array" in str(e) or "dtype" in str(e):
@@ -54,7 +47,6 @@ class MLPredictionEngine:
         self.model_path = Path(model_path)
         self.model_path.mkdir(parents=True, exist_ok=True)
         
-        # Models
         self.models = {
             'xgboost': None,
             'gradient_boost': None,
@@ -64,24 +56,101 @@ class MLPredictionEngine:
         self.score_predictor = None
         self.is_trained = False
         
-        # 🔧 Feature engineer - GÜVENLİ YÜKLEME
+        # 🔧 Feature engineer - güvenli yükleme
         self.feature_engineer = None
         self._load_feature_engineer()
         
         # Load models
         self.load_models()
     
+    # =====================================================
+    # 🔹 Feature Engineer Güvenli Yükleme (Fixed)
+    # =====================================================
     def _load_feature_engineer(self):
-        """🆕 Feature Engineer'ı güvenli şekilde yükle"""
+        """🧠 Feature Engineer'ı güvenli şekilde yükler"""
         try:
-            # 1. Öncelik: Enhanced Feature Engineer v4
-            try:
-                from enhanced_feature_engineer_v4 import EnhancedFeatureEngineer
-                self.feature_engineer = EnhancedFeatureEngineer(model_path=str(self.model_path))
-                logger.info("✅ Feature Engineer v4.0 loaded (100+ features)")
-                return
-            except ImportError as e:
-                logger.debug(f"v4 import hatası: {e}")
+            from enhanced_feature_engineer_v4 import EnhancedFeatureEngineer
+            self.feature_engineer = EnhancedFeatureEngineer(model_path=str(self.model_path))
+            logger.info("✅ Feature Engineer v4.0 loaded (100+ features)")
+        except ImportError as e:
+            logger.warning(f"⚠️ EnhancedFeatureEngineer import edilemedi: {e}")
+            self.feature_engineer = None
+        except Exception as e:
+            logger.error(f"❌ Feature Engineer init hatası: {e}", exc_info=True)
+            self.feature_engineer = None
+
+        # Eğer hala None ise dummy mod başlat
+        if self.feature_engineer is None:
+            logger.warning("⚠️ Feature Engineer None, fallback dummy mode aktif.")
+            self.feature_engineer = self._dummy_feature_engineer()
+            logger.info("✅ Dummy Feature Engineer yüklendi (minimal feature set).")
+    
+    # =====================================================
+    # 🔹 Dummy Feature Engineer (Fallback)
+    # =====================================================
+    def _dummy_feature_engineer(self):
+        """Feature Engineer yoksa geçici dummy nesne oluşturur"""
+        class DummyFeatureEngineer:
+            def extract_features(self, match_data: Dict) -> np.ndarray:
+                # Basit 6 özellik: oranlar ve normalize edilmiş olasılıklar
+                odds = match_data.get("odds", {"1": 2.0, "X": 3.0, "2": 3.5})
+                o1, ox, o2 = float(odds.get("1", 2.0)), float(odds.get("X", 3.0)), float(odds.get("2", 3.5))
+                total = (1/o1 + 1/ox + 1/o2)
+                prob1, probx, prob2 = (1/o1)/total, (1/ox)/total, (1/o2)/total
+                return np.array([o1, ox, o2, prob1, probx, prob2], dtype=np.float32)
+        return DummyFeatureEngineer()
+    
+    # =====================================================
+    # 🔹 Model Yükleme (örnek)
+    # =====================================================
+    def load_models(self):
+        """Kayıtlı modelleri yükler"""
+        try:
+            for name in self.models.keys():
+                model_file = self.model_path / f"{name}_model.pkl"
+                if model_file.exists():
+                    self.models[name] = SklearnCompatLoader.safe_load_pickle(model_file)
+                    logger.info(f"✅ {name} modeli yüklendi.")
+                else:
+                    logger.warning(f"⚠️ {name} modeli bulunamadı: {model_file}")
+            self.is_trained = any(m is not None for m in self.models.values())
+        except Exception as e:
+            logger.error(f"❌ Model yükleme hatası: {e}")
+            self.is_trained = False
+    
+    # =====================================================
+    # 🔹 Tahmin Fonksiyonu (örnek)
+    # =====================================================
+    def predict(self, match_data: Dict[str, Any]) -> Optional[Dict[str, float]]:
+        """Tahmin üretir"""
+        try:
+            if not self.feature_engineer:
+                logger.error("❌ Feature Engineer not available - cannot predict")
+                return None
+            
+            features = self.feature_engineer.extract_features(match_data)
+            if features is None:
+                logger.error("❌ Feature extraction başarısız")
+                return None
+
+            if len(features.shape) == 1:
+                features = features.reshape(1, -1)
+            
+            features_scaled = self.scaler.fit_transform(features)
+            
+            results = {}
+            for name, model in self.models.items():
+                if model is not None:
+                    pred = model.predict_proba(features_scaled)[0]
+                    results[name] = float(np.argmax(pred))
+                else:
+                    results[name] = None
+            
+            return results
+        except Exception as e:
+            logger.error(f"❌ Prediction error: {e}", exc_info=True)
+            return None
+
             
             # 2. Fallback: Enhanced Feature Engineer v3.5
             try:
