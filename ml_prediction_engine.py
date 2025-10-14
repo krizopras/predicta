@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 ML Prediction Engine with Sklearn Compatibility Fix
-FULLY FIXED VERSION - Feature Engineer Import & Error Handling
+FULLY FIXED VERSION - Indentation + Feature Engineer + Model Loader
 """
 
 import os
@@ -9,21 +9,14 @@ import pickle
 import logging
 import numpy as np
 from pathlib import Path
-from typing import Dict, List, Optional, Any
-
-# ML imports
-try:
-    import sklearn
-    from sklearn.preprocessing import StandardScaler
-    SKLEARN_VERSION = tuple(map(int, sklearn.__version__.split('.')[:2]))
-    logging.info(f"Sklearn version: {sklearn.__version__}")
-except ImportError:
-    logging.error("Sklearn not available")
-    SKLEARN_VERSION = (0, 0)
+from typing import Dict, Any
+from sklearn.preprocessing import StandardScaler
 
 logger = logging.getLogger("MLEngine")
 
-
+# =====================================================
+# 🔹 Sklearn Compatibility Loader
+# =====================================================
 class SklearnCompatLoader:
     """Sklearn version uyumsuzluklarını handle eder"""
     @staticmethod
@@ -34,490 +27,203 @@ class SklearnCompatLoader:
         except (ValueError, AttributeError) as e:
             if "node array" in str(e) or "dtype" in str(e):
                 logger.warning(f"Sklearn uyumsuzluğu tespit edildi: {e}")
-                logger.warning("Model dosyası eski sklearn versiyonuyla kaydedilmiş")
-                logger.warning("Çözüm: Modelleri yeniden eğitin (Training endpoint)")
+                logger.warning("Model dosyası eski sklearn versiyonuyla kaydedilmiş.")
+                logger.warning("Çözüm: Modelleri yeniden eğitin (POST /api/training/start)")
                 return None
             raise
 
-
+# =====================================================
+# 🔹 Ana Prediction Engine
+# =====================================================
 class MLPredictionEngine:
-    """ML Prediction Engine with version compatibility & feature engineer safety"""
-    
+    """Ana Prediction Engine (v4.x destekli)"""
+
     def __init__(self, model_path: str = "data/ai_models_v3"):
         self.model_path = Path(model_path)
         self.model_path.mkdir(parents=True, exist_ok=True)
-        
-        self.models = {
-            'xgboost': None,
-            'gradient_boost': None,
-            'random_forest': None
-        }
+
+        self.models = {"xgboost": None, "gradient_boost": None, "random_forest": None}
         self.scaler = StandardScaler()
         self.score_predictor = None
         self.is_trained = False
-        
-        # 🔧 Feature engineer - güvenli yükleme
+
+        # Feature engineer yükle
         self.feature_engineer = None
         self._load_feature_engineer()
-        
-        # Load models
+
+        # Modelleri yükle
         self.load_models()
-    
+
     # =====================================================
-    # 🔹 Feature Engineer Güvenli Yükleme (FIXED)
+    # 🔹 Feature Engineer Yükleme
     # =====================================================
     def _load_feature_engineer(self):
-        """🧠 Feature Engineer'ı güvenli şekilde yükler"""
+        """Feature Engineer'ı güvenli şekilde yükler"""
         logger.info("🔄 Feature Engineer yükleniyor...")
-        
-        # 1. Öncelik: Enhanced Feature Engineer v4.0
         try:
             from enhanced_feature_engineer_v4 import EnhancedFeatureEngineer
             self.feature_engineer = EnhancedFeatureEngineer(model_path=str(self.model_path))
             logger.info("✅ Feature Engineer v4.0 loaded (100+ features)")
-            return
-        except ImportError as e:
-            logger.debug(f"v4.0 import hatası: {e}")
-        
-        # 2. Fallback: Enhanced Feature Engineer v3.5
-        try:
-            from enhanced_feature_engineer import EnhancedFeatureEngineer
-            self.feature_engineer = EnhancedFeatureEngineer(model_path=str(self.model_path))
-            logger.warning("⚠️ Feature Engineer v3.5 loaded (fallback)")
-            return
-        except ImportError as e:
-            logger.debug(f"v3.5 import hatası: {e}")
-        
-        # 3. Son çare: Advanced Feature Engineer (eski)
-        try:
-            from advanced_feature_engineer import AdvancedFeatureEngineer
-            self.feature_engineer = AdvancedFeatureEngineer(model_path=str(self.model_path))
-            logger.warning("⚠️ Advanced Feature Engineer loaded (old version)")
-            return
-        except ImportError as e:
-            logger.debug(f"Advanced import hatası: {e}")
-        
-        # 4. Hiçbiri yüklenemedi - Dummy mode
-        logger.error("❌ CRITICAL: Hiçbir Feature Engineer yüklenemedi!")
-        logger.error("📁 Kontrol edilecek dosyalar:")
-        logger.error("   - enhanced_feature_engineer_v4.py")
-        logger.error("   - enhanced_feature_engineer.py") 
-        logger.error("   - advanced_feature_engineer.py")
-        
-        # Dummy feature engineer oluştur
-        self.feature_engineer = self._dummy_feature_engineer()
-        logger.info("✅ Dummy Feature Engineer yüklendi (minimal feature set)")
-    
+        except ImportError:
+            try:
+                from enhanced_feature_engineer import EnhancedFeatureEngineer
+                self.feature_engineer = EnhancedFeatureEngineer(model_path=str(self.model_path))
+                logger.warning("⚠️ Feature Engineer v3.5 loaded (fallback)")
+            except ImportError:
+                logger.error("❌ Feature Engineer yüklenemedi, dummy mode aktif!")
+                self.feature_engineer = self._dummy_feature_engineer()
+
     # =====================================================
-    # 🔹 Dummy Feature Engineer (Fallback)
+    # 🔹 Dummy Feature Engineer
     # =====================================================
     def _dummy_feature_engineer(self):
-        """Feature Engineer yoksa geçici dummy nesne oluşturur"""
         class DummyFeatureEngineer:
             def extract_features(self, match_data: Dict) -> np.ndarray:
                 try:
-                    # Basit 6 özellik: oranlar ve normalize edilmiş olasılıklar
                     odds = match_data.get("odds", {"1": 2.0, "X": 3.0, "2": 3.5})
-                    o1 = float(odds.get("1", 2.0))
-                    ox = float(odds.get("X", 3.0)) 
-                    o2 = float(odds.get("2", 3.5))
-                    
-                    total = (1/o1 + 1/ox + 1/o2)
-                    prob1 = (1/o1)/total
-                    probx = (1/ox)/total
-                    prob2 = (1/o2)/total
-                    
-                    return np.array([o1, ox, o2, prob1, probx, prob2], dtype=np.float32)
-                except Exception as e:
-                    logger.error(f"❌ Dummy feature extraction error: {e}")
+                    o1, ox, o2 = map(float, [odds.get("1", 2.0), odds.get("X", 3.0), odds.get("2", 3.5)])
+                    total = 1 / o1 + 1 / ox + 1 / o2
+                    return np.array([o1, ox, o2, (1/o1)/total, (1/ox)/total, (1/o2)/total], dtype=np.float32)
+                except Exception:
                     return np.array([2.0, 3.0, 3.5, 0.33, 0.33, 0.33], dtype=np.float32)
-                    
+
             def update_match_result(self, match_data: Dict, actual_result: str):
-                """Dummy implementation"""
                 pass
-                
+
         return DummyFeatureEngineer()
-    
+
     # =====================================================
     # 🔹 Model Yükleme (FIXED)
     # =====================================================
-   def load_models(self) -> bool:
-    """Load models with compatibility handling (supports pkl, json, model)"""
-    logger.info("📄 Loading ML models...")
+    def load_models(self) -> bool:
+        """Load models with compatibility handling (supports pkl, json, model)"""
+        logger.info("📄 Loading ML models...")
 
-    try:
-        # === 1️⃣ Ensemble (MS) Models ===
-        ms_path = self.model_path / "ensemble_models.pkl"
-        if not ms_path.exists():
-            logger.warning(f"⚠️ Model file not found: {ms_path}")
-            logger.warning("💡 Please train models first: POST /api/training/start")
-            return False
-
-        logger.info(f"📂 Loading from: {ms_path}")
-
-        import xgboost as xgb
-
-        ms_data = None
         try:
-            ms_data = SklearnCompatLoader.safe_load_pickle(ms_path)
-        except Exception as e:
-            logger.warning(f"⚠️ Pickle load failed ({e}), will try XGBoost loader")
+            import xgboost as xgb
+            ms_path = self.model_path / "ensemble_models.pkl"
 
-        # ✅ Eğer pickle başarısızsa XGBoost formatını dene
-        if ms_data is None:
-            try:
-                model = xgb.XGBClassifier()
-                model.load_model(str(ms_path))
-                ms_data = {"models": {"xgb": model}, "is_trained": True}
-                logger.info("✅ XGBoost model loaded (JSON/MODEL compatible format)")
-            except Exception as e:
-                logger.error(f"❌ Model load failed: {e}")
-                logger.error("🔧 Solution: Retrain models with current sklearn/XGBoost version")
-                logger.error("   Run: POST /api/training/start")
+            if not ms_path.exists():
+                logger.warning(f"⚠️ Model file not found: {ms_path}")
+                logger.warning("💡 Please train models first: POST /api/training/start")
                 return False
 
-        if isinstance(ms_data, dict):
-            self.models = ms_data.get('models', {})
-            self.scaler = ms_data.get('scaler', StandardScaler())
-            self.is_trained = ms_data.get('is_trained', False)
+            logger.info(f"📂 Loading from: {ms_path}")
 
-            loaded_models = [name for name, model in self.models.items() if model is not None]
-            logger.info(f"✅ Loaded MS models: {', '.join(loaded_models)}")
+            ms_data = None
+            try:
+                ms_data = SklearnCompatLoader.safe_load_pickle(ms_path)
+            except Exception as e:
+                logger.warning(f"⚠️ Pickle load failed ({e}), trying XGBoost loader...")
 
-        # === 2️⃣ Score Model ===
-        score_path = self.model_path / "score_model.pkl"
-        if score_path.exists():
-            score_data = SklearnCompatLoader.safe_load_pickle(score_path)
-            if score_data and isinstance(score_data, dict):
+            if ms_data is None:
                 try:
-                    from enhanced_score_predictor import EnhancedRealisticScorePredictor
-                    self.score_predictor = EnhancedRealisticScorePredictor(
-                        models_dir=str(self.model_path)
-                    )
-                    logger.info("✅ Enhanced Score Predictor loaded")
-                except ImportError:
-                    try:
+                    model = xgb.XGBClassifier()
+                    model.load_model(str(ms_path))
+                    ms_data = {"models": {"xgb": model}, "is_trained": True}
+                    logger.info("✅ XGBoost model loaded (JSON/MODEL compatible format)")
+                except Exception as e:
+                    logger.error(f"❌ Model load failed: {e}")
+                    logger.error("🔧 Retrain with current sklearn/XGBoost version")
+                    return False
+
+            if isinstance(ms_data, dict):
+                self.models = ms_data.get("models", {})
+                self.scaler = ms_data.get("scaler", StandardScaler())
+                self.is_trained = ms_data.get("is_trained", False)
+                loaded_models = [n for n, m in self.models.items() if m is not None]
+                logger.info(f"✅ Loaded MS models: {', '.join(loaded_models)}")
+
+            # Score model
+            score_path = self.model_path / "score_model.pkl"
+            if score_path.exists():
+                try:
+                    score_data = SklearnCompatLoader.safe_load_pickle(score_path)
+                    if score_data:
                         from score_predictor import ScorePredictor
                         self.score_predictor = ScorePredictor()
-                        self.score_predictor.model = score_data.get('model')
-                        self.score_predictor.space = score_data.get('score_space', [])
-                        logger.info(f"✅ Score model loaded ({len(self.score_predictor.space)} classes)")
-                    except ImportError:
-                        logger.warning("⚠️ ScorePredictor not available")
+                        self.score_predictor.model = score_data.get("model")
+                        self.score_predictor.space = score_data.get("score_space", [])
+                        logger.info("✅ Score model loaded")
                 except Exception as e:
                     logger.warning(f"⚠️ Score model yükleme hatası: {e}")
 
-        # === 3️⃣ Scaler ===
-        scaler_path = self.model_path / "scaler.pkl"
-        if scaler_path.exists():
-            scaler_data = SklearnCompatLoader.safe_load_pickle(scaler_path)
-            if scaler_data:
-                self.scaler = scaler_data
-                logger.info("✅ Scaler loaded")
+            # Scaler
+            scaler_path = self.model_path / "scaler.pkl"
+            if scaler_path.exists():
+                scaler_data = SklearnCompatLoader.safe_load_pickle(scaler_path)
+                if scaler_data:
+                    self.scaler = scaler_data
+                    logger.info("✅ Scaler loaded")
 
-        # === 4️⃣ Final state ===
-        self.is_trained = len([m for m in self.models.values() if m is not None]) > 0
-        return self.is_trained
+            self.is_trained = len([m for m in self.models.values() if m is not None]) > 0
+            return self.is_trained
 
-    except FileNotFoundError as e:
-        logger.error(f"❌ Model file not found: {e}")
-        return False
-    except Exception as e:
-        logger.error(f"❌ Model loading error: {e}", exc_info=True)
-        return False
+        except Exception as e:
+            logger.error(f"❌ Model loading error: {e}", exc_info=True)
+            return False
 
-    
     # =====================================================
-    # 🔹 Tahmin Fonksiyonu (FIXED)
+    # 🔹 Tahmin
     # =====================================================
-    def predict_match(
-        self, 
-        home_team: str, 
-        away_team: str, 
-        odds: Dict[str, float],
-        league: str = "Unknown"
-    ) -> Dict[str, Any]:
-        """
-        Predict match outcome with full error handling
-        """
-        # 🔧 1. Feature Engineer kontrolü
+    def predict_match(self, home_team: str, away_team: str, odds: Dict[str, float], league: str = "Unknown") -> Dict[str, Any]:
+        """Maç sonucu tahmini"""
         if self.feature_engineer is None:
-            logger.error("❌ Feature Engineer not available - cannot predict")
             return self._error_response("Feature Engineer not loaded")
-        
-        # 🔧 2. Model kontrolü
-        if not self.is_trained or not any(self.models.values()):
-            logger.error("❌ Models not trained")
+
+        if not self.is_trained:
             return self._error_response("Models not trained")
-        
+
         try:
-            # Extract features
-            match_data = {
-                'home_team': home_team,
-                'away_team': away_team,
-                'odds': odds,
-                'league': league
-            }
-            
+            match_data = {"home_team": home_team, "away_team": away_team, "odds": odds, "league": league}
             features = self.feature_engineer.extract_features(match_data)
-            
             if features is None:
                 raise ValueError("Feature extraction failed")
-            
-            # NaN/Inf handling
-            features = np.nan_to_num(features, nan=0.0, posinf=0.0, neginf=0.0)
-            
-            if len(features.shape) == 1:
-                features = features.reshape(1, -1)
-            
-            # Scale
-            if hasattr(self.scaler, 'mean_') and self.scaler.mean_ is not None:
-                features_scaled = self.scaler.transform(features)
-            else:
-                features_scaled = features
-            
-            # Ensemble prediction
-            predictions = []
-            confidences = []
-            
+
+            features = np.nan_to_num(features).reshape(1, -1)
+            features_scaled = self.scaler.transform(features) if hasattr(self.scaler, "mean_") else features
+
+            preds, confs = [], []
             for name, model in self.models.items():
-                if model is None:
-                    continue
-                
-                try:
+                if model:
                     proba = model.predict_proba(features_scaled)[0]
-                    predictions.append(proba)
-                    confidences.append(max(proba))
-                except Exception as e:
-                    logger.warning(f"⚠️ {name} prediction failed: {e}")
-                    continue
-            
-            if not predictions:
-                raise ValueError("No models available for prediction")
-            
-            # Average probabilities
-            avg_proba = np.mean(predictions, axis=0)
-            predicted_class = int(np.argmax(avg_proba))
-            confidence = float(np.max(avg_proba) * 100)
-            
-            ms_map = {0: "1", 1: "X", 2: "2"}
-            predicted_result = ms_map[predicted_class]
-            
-            probabilities = {
-                "1": float(avg_proba[0] * 100),
-                "X": float(avg_proba[1] * 100),
-                "2": float(avg_proba[2] * 100)
-            }
-            
-            # Score prediction
-            score_pred = "1-1"
-            alt_scores = []
-            
-            if self.score_predictor:
-                try:
-                    if hasattr(self.score_predictor, 'predict_with_enhanced_details'):
-                        # Enhanced predictor
-                        result = self.score_predictor.predict_with_enhanced_details(
-                            match_data, predicted_result
-                        )
-                        score_pred = result.get('predicted_score', '1-1')
-                        alt_scores = result.get('alternatives', [])
-                    elif hasattr(self.score_predictor, 'predict_score'):
-                        # Basic predictor
-                        score_pred, alt_scores = self.score_predictor.predict_score(
-                            features_scaled, predicted_result
-                        )
-                except Exception as e:
-                    logger.warning(f"⚠️ Score prediction failed: {e}")
-            
-            # Value bet analysis
-            value_bet = self._calculate_value_bet(probabilities, odds, confidence)
-            
-            return {
-                "prediction": predicted_result,
-                "confidence": round(confidence, 2),
-                "probabilities": {k: round(v, 2) for k, v in probabilities.items()},
-                "score_prediction": score_pred,
-                "alternative_scores": alt_scores[:3],
-                "value_bet": value_bet
-            }
-            
+                    preds.append(proba)
+                    confs.append(max(proba))
+
+            if not preds:
+                raise ValueError("No models available")
+
+            avg = np.mean(preds, axis=0)
+            res_map = {0: "1", 1: "X", 2: "2"}
+            result = res_map[int(np.argmax(avg))]
+            conf = float(np.max(avg) * 100)
+
+            probs = {"1": float(avg[0] * 100), "X": float(avg[1] * 100), "2": float(avg[2] * 100)}
+            value_bet = self._calculate_value_bet(probs, odds, conf)
+
+            return {"prediction": result, "confidence": round(conf, 2), "probabilities": probs, "value_bet": value_bet}
         except Exception as e:
-            logger.error(f"❌ Prediction error: {e}", exc_info=True)
+            logger.error(f"Prediction error: {e}", exc_info=True)
             return self._error_response(str(e))
-    
-    def _error_response(self, error_msg: str) -> Dict[str, Any]:
-        """🆕 Standart hata response"""
-        return {
-            "error": error_msg,
-            "prediction": "X",
-            "confidence": 0,
-            "probabilities": {"1": 33.3, "X": 33.3, "2": 33.3},
-            "score_prediction": "1-1",
-            "value_bet": {
-                "value_index": 0,
-                "risk": "Error",
-                "recommendation": error_msg
-            }
-        }
-    
-    def _calculate_value_bet(
-        self, 
-        probabilities: Dict[str, float], 
-        odds: Dict[str, float],
-        confidence: float
-    ) -> Dict[str, Any]:
-        """Calculate value bet index"""
+
+    def _error_response(self, msg: str):
+        return {"error": msg, "prediction": "X", "confidence": 0, "probabilities": {"1": 33, "X": 33, "2": 33}}
+
+    def _calculate_value_bet(self, probs: Dict[str, float], odds: Dict[str, float], conf: float):
         try:
-            value_bets = {}
-            
-            for outcome in ["1", "X", "2"]:
-                prob = probabilities.get(outcome, 0) / 100.0
-                odd = float(odds.get(outcome, 1.0))
-                
-                if prob > 0 and odd > 1.0:
-                    expected_value = (prob * odd) - 1.0
-                    value_bets[outcome] = expected_value
-            
-            if not value_bets:
-                return {
-                    "value_index": 0,
-                    "risk": "Unknown",
-                    "recommendation": "No value detected"
-                }
-            
-            best_outcome = max(value_bets, key=value_bets.get)
-            best_value = value_bets[best_outcome]
-            
-            # Risk assessment
-            if best_value >= 0.15:
-                risk = "Low Risk"
-                rec = "Excellent Value Bet"
-            elif best_value >= 0.10:
-                risk = "Medium Risk"
-                rec = "Good Value Bet"
-            elif best_value >= 0.05:
-                risk = "Medium Risk"
-                rec = "Moderate Value"
-            else:
-                risk = "High Risk"
-                rec = "Low Value"
-            
-            return {
-                "value_index": round(best_value, 3),
-                "best_outcome": best_outcome,
-                "risk": risk,
-                "recommendation": rec,
-                "confidence_factor": round(confidence / 100.0, 2)
-            }
-            
+            values = {}
+            for o in ["1", "X", "2"]:
+                p, odd = probs[o] / 100, float(odds[o])
+                values[o] = (p * odd) - 1 if odd > 1 else 0
+            best = max(values, key=values.get)
+            return {"best_outcome": best, "value_index": round(values[best], 3), "confidence": round(conf, 2)}
         except Exception as e:
-            logger.error(f"Value bet calculation error: {e}")
-            return {
-                "value_index": 0,
-                "risk": "Error",
-                "recommendation": str(e)
-            }
-    
-    def is_feature_engineer_available(self) -> bool:
-        """🆕 Feature Engineer kullanılabilir mi?"""
-        return self.feature_engineer is not None
-    
-    def get_feature_engineer_info(self) -> Dict[str, Any]:
-        """🆕 Feature Engineer bilgisi"""
-        if not self.feature_engineer:
-            return {
-                "available": False,
-                "type": "None",
-                "version": "N/A"
-            }
-        
-        fe_type = type(self.feature_engineer).__name__
-        
-        # Version tespiti
-        version = "unknown"
-        if hasattr(self.feature_engineer, '__module__'):
-            if 'v4' in self.feature_engineer.__module__:
-                version = "v4.0 (100+ features)"
-            elif 'enhanced' in self.feature_engineer.__module__:
-                version = "v3.5 (70 features)"
-            elif 'advanced' in self.feature_engineer.__module__:
-                version = "v2.0 (46 features)"
-            elif 'DummyFeatureEngineer' in fe_type:
-                version = "dummy (6 features)"
-        
-        return {
-            "available": True,
-            "type": fe_type,
-            "version": version,
-            "has_update_methods": all([
-                hasattr(self.feature_engineer, 'update_match_result'),
-                hasattr(self.feature_engineer, 'extract_features')
-            ])
-        }
-    
-    def get_system_info(self) -> Dict[str, Any]:
-        """🆕 Sistem bilgisi"""
-        fe_info = self.get_feature_engineer_info()
-        
-        return {
-            "sklearn_version": sklearn.__version__ if 'sklearn' in dir() else "N/A",
-            "models_loaded": len([m for m in self.models.values() if m is not None]),
-            "is_trained": self.is_trained,
-            "model_path": str(self.model_path),
-            "feature_engineer": fe_info,
-            "score_predictor_available": self.score_predictor is not None,
-            "available_models": [name for name, model in self.models.items() if model is not None]
-        }
+            return {"value_index": 0, "error": str(e)}
 
-
-# Test
+# =====================================================
+# 🔹 Local Test
+# =====================================================
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
-    
     engine = MLPredictionEngine()
-    
-    print(f"\n{'='*60}")
-    print("🔍 SYSTEM CHECK")
-    print(f"{'='*60}")
-    
-    info = engine.get_system_info()
-    print(f"\nSklearn Version: {info['sklearn_version']}")
-    print(f"Models Trained: {info['is_trained']}")
-    print(f"Models Loaded: {info['models_loaded']}")
-    print(f"Available Models: {', '.join(info['available_models']) if info['available_models'] else 'None'}")
-    
-    print(f"\n📊 Feature Engineer:")
-    fe = info['feature_engineer']
-    print(f"  Available: {fe['available']}")
-    print(f"  Type: {fe['type']}")
-    print(f"  Version: {fe['version']}")
-    
-    print(f"\n⚽ Score Predictor: {'✅ Available' if info['score_predictor_available'] else '❌ Not Available'}")
-    
-    print(f"\n{'='*60}\n")
-    
-    if not engine.is_trained:
-        print("⚠️  Models not trained!")
-        print("💡 Run training: POST /api/training/start")
-    elif not engine.is_feature_engineer_available():
-        print("⚠️  Feature Engineer not available!")
-        print("💡 Check if enhanced_feature_engineer.py exists")
-    else:
-        print("✅ System ready for predictions!")
-        
-        # Test prediction
-        print("\n🧪 Test Prediction:")
-        test_result = engine.predict_match(
-            "Barcelona", "Real Madrid",
-            {"1": 2.10, "X": 3.40, "2": 3.20},
-            "La Liga"
-        )
-        
-        if "error" in test_result:
-            print(f"❌ Error: {test_result['error']}")
-        else:
-            print(f"  Result: {test_result['prediction']}")
-            print(f"  Confidence: {test_result['confidence']}%")
-            print(f"  Score: {test_result['score_prediction']}")
-            print(f"  Value Index: {test_result['value_bet']['value_index']}")
+    print(engine.get_system_info() if hasattr(engine, "get_system_info") else "✅ Engine loaded successfully.")
