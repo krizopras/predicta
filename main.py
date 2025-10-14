@@ -937,13 +937,102 @@ def start_training():
                 </div>
                 
                 <form method="POST" action="/api/training/start" 
-                      onsubmit="return confirm('⚠️ Eğitimi başlatmak istediğinize emin misiniz?\\n\\n⏱️ İşlem 10-15 dakika sürecek.');">
+                      onsubmit="return confirm('⚠️ Eğitimi başlatmak istediğinize emin misiniz?\\\\n\\\\n⏱️ İşlem 10-15 dakika sürecek.');">
                     <button type="submit">🎯 Eğitimi Başlat</button>
                 </form>
             </div>
         </body>
         </html>
         """
+    
+    # POST request - training başlat
+    import threading
+    
+    def train_background():
+        try:
+            logger.info("🎯 Training started")
+            
+            from model_trainer import ProductionModelTrainer
+            
+            trainer = ProductionModelTrainer(
+                models_dir=MODELS_DIR,
+                raw_data_path=RAW_DATA_PATH,
+                clubs_path=CLUBS_PATH,
+                min_matches=50,
+                test_size=0.2,
+                random_state=42,
+                version_archive=False,
+                verbose=True
+            )
+            
+            result = trainer.run_full_pipeline()
+            
+            if result.get('success'):
+                logger.info("✅ Training completed!")
+                engine.load_models()
+                logger.info("✅ Models reloaded successfully")
+            else:
+                logger.error(f"❌ Training error: {result.get('error')}")
+                
+        except Exception as e:
+            logger.error(f"❌ Training error: {e}", exc_info=True)
+    
+    # Run in background
+    thread = threading.Thread(target=train_background, daemon=True)
+    thread.start()
+    
+    # ✅ HTML response (tarayıcı için)
+    return """
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Training Started</title>
+        <meta charset="utf-8">
+        <meta http-equiv="refresh" content="5;url=/api/training/start">
+        <style>
+            body { 
+                font-family: 'Segoe UI', Arial; 
+                max-width: 600px; 
+                margin: 100px auto; 
+                text-align: center;
+                padding: 30px;
+                background: #f5f5f5;
+            }
+            .success {
+                background: white;
+                padding: 40px;
+                border-radius: 10px;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            }
+            .icon { font-size: 64px; margin-bottom: 20px; }
+            h1 { color: #28a745; margin: 20px 0; }
+            p { color: #666; line-height: 1.8; }
+            .highlight { 
+                background: #e3f2fd; 
+                padding: 15px; 
+                border-radius: 8px;
+                margin: 20px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="success">
+            <div class="icon">✅</div>
+            <h1>Eğitim Başlatıldı!</h1>
+            
+            <div class="highlight">
+                <p><strong>⏱️ Tahmini Süre:</strong> 10-15 dakika</p>
+                <p><strong>📋 Durum:</strong> Arka planda çalışıyor</p>
+            </div>
+            
+            <p>🔍 Railway dashboard'tan logları takip edebilirsiniz</p>
+            <p>📊 <a href="/api/models/info" target="_blank">Model durumunu kontrol et</a></p>
+            
+            <p><small style="color: #999;">5 saniye içinde ana sayfaya yönlendirileceksiniz...</small></p>
+        </div>
+    </body>
+    </html>
+    """
     
     # POST request - training başlat
     import threading
