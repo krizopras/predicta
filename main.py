@@ -36,7 +36,7 @@ app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "*"}})
 
 # ========== ML Engine ==========
-engine = MLPredictionEngine(model_dir=MODELS_DIR)
+engine = MLPredictionEngine(models_dir=MODELS_DIR)
 
 # ========== Historical Processor ==========
 history_processor = HistoricalDataProcessor(
