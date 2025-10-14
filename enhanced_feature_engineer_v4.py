@@ -1,6 +1,6 @@
 """
 ==============================================================
- Enhanced Feature Engineer v4.0 - MAXIMUM PERFORMANCE
+ Enhanced Feature Engineer v4.0 - MAXIMUM PERFORMANCE (FIXED)
 --------------------------------------------------------------
  70 → 100+ özelliğe çıkarıldı
  Yeni özellikler:
@@ -10,6 +10,7 @@
    ✅ Maç önem seviyesi (kritik maç tespiti)
    ✅ Lig kalite endeksi
    ✅ Gelişmiş zaman özellikleri
+   ✅ Güvenli veri kaydetme (hata korumalı)
 ==============================================================
 """
 
@@ -31,22 +32,20 @@ ENHANCED_FEATURE_NAMES_V4 = [
     "odds_1", "odds_x", "odds_2",
     "prob_1", "prob_x", "prob_2",
     
-    # Oran türevleri (18) - GELİŞTİRİLDİ
+    # Oran türevleri (18)
     "odds_diff_home_draw", "odds_diff_draw_away", "odds_margin",
     "log_odds_1", "log_odds_x", "log_odds_2",
     "odds_entropy", "odds_variance",
-    # YENİ: Kritik oran metrikleri
     "favorite_gap", "underdog_value", "draw_premium",
     "odds_imbalance", "min_odds", "max_odds",
     "odds_ratio_home_away", "prob_diff_home_away", "odds_confidence",
     "betting_heat",
     
-    # Takım özellikleri (8) - GELİŞTİRİLDİ
+    # Takım özellikleri (8)
     "home_len", "away_len", "is_derby", "league_country_score",
-    # YENİ: ELO ve güç endeksi
     "home_elo", "away_elo", "elo_diff", "league_quality_index",
     
-    # Gelişmiş form ve performans (28) - GELİŞTİRİLDİ
+    # Form ve performans (28)
     "home_form", "away_form", "form_diff",
     "home_goals_avg", "away_goals_avg", "goals_diff",
     "home_win_streak", "away_win_streak",
@@ -56,36 +55,33 @@ ENHANCED_FEATURE_NAMES_V4 = [
     "home_defense_avg", "away_defense_avg",
     "home_clean_sheet_rate", "away_clean_sheet_rate",
     "home_ppg", "away_ppg",
-    # YENİ: Detaylı performans
     "home_attack_strength", "away_attack_strength",
     "home_defense_strength", "away_defense_strength",
     "home_recent_goals_avg", "away_recent_goals_avg",
     "home_consistency", "away_consistency",
     "form_momentum_diff",
     
-    # H2H (7) - GELİŞTİRİLDİ
+    # H2H (7)
     "h2h_home_wins", "h2h_draws", "h2h_away_wins",
     "h2h_total_goals_avg", "h2h_home_dominance",
     "h2h_recent_trend", "h2h_goal_variance",
     
-    # Zaman özellikleri (15) - GELİŞTİRİLDİ
+    # Zaman özellikleri (15)
     "month", "day_of_week", "is_weekend", "season_phase",
     "days_since_last_match_home", "days_since_last_match_away",
     "rest_advantage",
     "home_fatigued", "away_fatigued",
     "home_optimal_rest", "away_optimal_rest",
     "home_momentum", "away_momentum",
-    # YENİ
     "is_midweek", "season_progress",
     
-    # Lig ve sıralama (18) - GELİŞTİRİLDİ
+    # Lig ve sıralama (18)
     "home_league_position", "away_league_position", "position_diff",
     "home_points", "away_points", "points_diff",
     "home_title_race", "away_title_race",
     "home_relegation_battle", "away_relegation_battle",
     "home_mid_table", "away_mid_table",
     "home_form_last_5", "away_form_last_5",
-    # YENİ: Maç önemi
     "match_importance_home", "match_importance_away",
     "is_critical_match", "motivation_imbalance"
 ]
@@ -123,8 +119,8 @@ def safe_int(value: Any, default: int = 0) -> int:
 
 
 class EnhancedFeatureEngineer:
-    """Geliştirilmiş Feature Engineering v4.0 - 100 özellik"""
-    
+    """Geliştirilmiş Feature Engineering v4.0 - 100+ özellik"""
+
     def __init__(self, model_path: str = "data/ai_models_v3", flush_every: int = 1000):
         self.model_path = model_path
         self.flush_every = flush_every
@@ -136,75 +132,69 @@ class EnhancedFeatureEngineer:
         self.league_standings = defaultdict(dict)
         self.team_last_match_date = defaultdict(lambda: None)
         self.league_stats = defaultdict(dict)
-        
-        # YENİ: ELO rating sistemi
-        self.team_elo = defaultdict(lambda: 1500.0)  # Başlangıç ELO: 1500
+        self.team_elo = defaultdict(lambda: 1500.0)
         
         self._load_data()
         
         logger.info(f"🚀 EnhancedFeatureEngineer v4.0 initialized")
         logger.info(f"📊 Total features: {TOTAL_FEATURES_V4}")
-    
-    def _load_data(self):
-        data_file = os.path.join(self.model_path, "enhanced_feature_data_v4.pkl")
-        if not os.path.exists(data_file):
-            logger.info("ℹ️ Yeni feature data oluşturulacak")
-            return False
-        
-        try:
-            with open(data_file, "rb") as f:
-                data = pickle.load(f)
-            self.team_history = defaultdict(list, data.get("team_history", {}))
-            self.h2h_history = defaultdict(list, data.get("h2h_history", {}))
-            self.league_standings = defaultdict(dict, data.get("league_standings", {}))
-            self.team_elo = defaultdict(lambda: 1500.0, data.get("team_elo", {}))
-            
-            team_dates = {}
-            for team, date_str in data.get("team_last_match_date", {}).items():
-                if date_str and isinstance(date_str, str):
-                    try:
-                        team_dates[team] = datetime.fromisoformat(date_str)
-                    except ValueError:
-                        team_dates[team] = None
-            self.team_last_match_date = defaultdict(lambda: None, team_dates)
-            
-            self.league_stats = defaultdict(dict, data.get("league_stats", {}))
-            
-            logger.info("✅ Feature data yüklendi")
-            logger.info(f"📈 Loaded: {len(self.team_history)} teams, {len(self.h2h_history)} H2H pairs")
-            return True
-        except Exception as e:
-            logger.warning(f"⚠️ Feature data yükleme hatası: {e}")
-            return False
-    
+
+    # ==========================================================
+    # 🚨 GÜNCELLENMİŞ _SAVE_DATA METODU (HATASIZ SÜRÜM)
+    # ==========================================================
     def _save_data(self):
+        """Feature verilerini güvenli şekilde kaydeder"""
         data_file = os.path.join(self.model_path, "enhanced_feature_data_v4.pkl")
         temp_file = data_file + ".tmp"
         try:
+            # Klasör garantisi
+            os.makedirs(self.model_path, exist_ok=True)
+
+            # Tarihleri string'e çevir
             team_dates_str = {}
             for team, date_obj in self.team_last_match_date.items():
                 if date_obj and isinstance(date_obj, datetime):
                     team_dates_str[team] = date_obj.isoformat()
                 else:
                     team_dates_str[team] = None
-            
+
+            # Kaydedilecek veri
             data = {
                 "team_history": dict(self.team_history),
                 "h2h_history": dict(self.h2h_history),
                 "league_standings": dict(self.league_standings),
                 "team_last_match_date": team_dates_str,
                 "league_stats": dict(self.league_stats),
-                "team_elo": dict(self.team_elo)  # YENİ
+                "team_elo": dict(self.team_elo)
             }
+
+            # Eski tmp varsa temizle
+            if os.path.exists(temp_file):
+                os.remove(temp_file)
+
+            # Geçici dosyayı yaz
             with open(temp_file, "wb") as f:
                 pickle.dump(data, f, protocol=pickle.HIGHEST_PROTOCOL)
+
+            # Yazıldı mı kontrol et
+            if not os.path.exists(temp_file):
+                raise FileNotFoundError(f"Geçici dosya oluşturulamadı: {temp_file}")
+
+            # Atomik olarak değiştir
             os.replace(temp_file, data_file)
-            logger.info("💾 Feature data kaydedildi")
+
+            logger.info("💾 Feature data güvenli şekilde kaydedildi")
             return True
+
         except Exception as e:
             logger.error(f"❌ Feature data kaydetme hatası: {e}")
+            if os.path.exists(temp_file):
+                try:
+                    os.remove(temp_file)
+                except Exception:
+                    pass
             return False
-    
+        
     def extract_features(self, match_data: Dict) -> Optional[np.ndarray]:
         """100 özellikli feature vector üretir"""
         try:
