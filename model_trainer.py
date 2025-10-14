@@ -35,7 +35,7 @@ from sklearn.ensemble import (
     GradientBoostingClassifier, 
     RandomForestClassifier, 
     StackingClassifier,
-    VotingClassifier  # YENİ!
+    VotingClassifier
 )
 from sklearn.utils.class_weight import compute_class_weight
 import xgboost as xgb
@@ -92,11 +92,11 @@ class ImprovedModelTrainer:
         test_size: float = 0.2,
         random_state: int = 42,
         use_smote: bool = True,
-        balance_method: str = 'hybrid',  # ✅ DEĞIŞTI: smote_tomek → hybrid
-        use_class_weights: bool = True,  # ✅ YENİ!
-        n_iter_search: int = 80,         # ✅ DEĞIŞTI: 50 → 80
+        balance_method: str = 'hybrid',
+        use_class_weights: bool = True,
+        n_iter_search: int = 80,
         cv_folds: int = 5,
-        use_voting: bool = True,         # ✅ YENİ!
+        use_voting: bool = True,
         verbose: bool = True
     ):
         self.models_dir = Path(models_dir)
@@ -108,10 +108,10 @@ class ImprovedModelTrainer:
         
         self.use_smote = use_smote and IMBLEARN_AVAILABLE
         self.balance_method = balance_method
-        self.use_class_weights = use_class_weights  # YENİ
+        self.use_class_weights = use_class_weights
         self.n_iter_search = n_iter_search
         self.cv_folds = cv_folds
-        self.use_voting = use_voting  # YENİ
+        self.use_voting = use_voting
         self.verbose = verbose
         
         if not FEATURE_ENGINEER_AVAILABLE:
@@ -133,11 +133,10 @@ class ImprovedModelTrainer:
             'lightgbm': None
         }
         self.stacking_model = None
-        self.voting_model = None  # YENİ
+        self.voting_model = None
         self.score_model = None
         self.scaler = StandardScaler()
         
-        # Class weights hesaplama için
         self.class_weights = None
         
         self.metadata = {
@@ -194,7 +193,6 @@ class ImprovedModelTrainer:
         
         initial = len(df)
         
-        # ✅ YENİ: Tarih filtreleme (sadece son 4 sezon)
         if 'date' in df.columns:
             df['date'] = pd.to_datetime(df['date'], errors='coerce')
             self.logger.info(f"📅 Tüm sezonlar dahil: {len(df):,} maç")
@@ -207,7 +205,6 @@ class ImprovedModelTrainer:
         df = df[(df["home_score"] >= 0) & (df["away_score"] >= 0)]
         df = df[(df["home_score"] <= 20) & (df["away_score"] <= 20)]
         
-        # ✅ YENİ: Şüpheli oran filtreleme
         if 'odds' in df.columns:
             def is_valid_odds(odds):
                 if not isinstance(odds, dict):
@@ -284,7 +281,6 @@ class ImprovedModelTrainer:
         return counter, imbalance
     
     def compute_class_weights(self, y_train: np.ndarray):
-        """Class weight hesaplama"""
         if not self.use_class_weights:
             return None
         
@@ -322,7 +318,6 @@ class ImprovedModelTrainer:
                 X_balanced, y_balanced = sampler.fit_resample(X_train, y_train)
                 
             elif self.balance_method == 'hybrid':
-                # ✅ HYBRID: Under-sampling + SMOTE
                 self.logger.info("🔄 Step 1: RandomUnderSampler...")
                 rus = RandomUnderSampler(random_state=self.random_state, sampling_strategy='auto')
                 X_temp, y_temp = rus.fit_resample(X_train, y_train)
@@ -345,15 +340,15 @@ class ImprovedModelTrainer:
             self.logger.error(f"❌ Balancing hatası: {e}")
             return X_train, y_train
     
-   
     def train_xgboost(self, X_train, y_train, X_val, y_val):
-        # ✅ 1. Baz model
+        self.logger.info("🔧 XGBoost...")
+        
         base = xgb.XGBClassifier(
             objective="multi:softprob",
             num_class=3,
             random_state=self.random_state,
             n_jobs=-1,
-            tree_method="hist",          # ⚡ 'gpu_hist' varsa 10x hızlanma
+            tree_method="hist",
             learning_rate=0.08,
             n_estimators=300,
             max_depth=6,
@@ -367,7 +362,6 @@ class ImprovedModelTrainer:
             verbosity=0
         )
 
-        # ✅ 2. Parametre aralığı (dengeli hız için)
         param_dist = {
             "max_depth": [4, 5, 6],
             "learning_rate": [0.05, 0.08, 0.1],
@@ -378,18 +372,16 @@ class ImprovedModelTrainer:
             "min_child_weight": [1, 2, 3]
         }
 
-        # ✅ 3. Stratified CV
         cv = StratifiedKFold(
             n_splits=self.cv_folds,
             shuffle=True,
             random_state=self.random_state
         )
 
-        # ✅ 4. Randomized Search (az iterasyon + hızlı)
         search = RandomizedSearchCV(
             base,
             param_dist,
-            n_iter=min(self.n_iter_search, 12),  # 💡 max 12 iterasyon — 5x hızlanma
+            n_iter=min(self.n_iter_search, 12),
             cv=cv,
             scoring="f1_macro",
             n_jobs=-1,
@@ -397,28 +389,10 @@ class ImprovedModelTrainer:
             verbose=1 if self.verbose else 0
         )
 
-        # ✅ 5. Early stopping + validation
-        # XGBoost native API ile erken durdurma — hız farkı çok büyük
-        def fit_with_early_stop(estimator, X, y):
-            return estimator.fit(
-            X, y,
-            eval_set=[(X_val, y_val)],
-            early_stopping_rounds=25,
-            verbose=False
-        )
-
-        # CV sırasında erken durdurmayı uygulayarak hız kazancı
-        search.fit(X_train, y_train, fit_params={
-            "eval_set": [(X_val, y_val)],
-            "early_stopping_rounds": 25,
-            "verbose": False
-        })
-
-        # ✅ 6. En iyi modeli al
+        search.fit(X_train, y_train)
         model = search.best_estimator_
+        
         preds = model.predict(X_val)
-
-        # ✅ 7. Skorlar
         acc = accuracy_score(y_val, preds)
         bal_acc = balanced_accuracy_score(y_val, preds)
         f1 = f1_score(y_val, preds, average="macro")
@@ -427,8 +401,8 @@ class ImprovedModelTrainer:
         self.logger.info(f"   Best params: {search.best_params_}")
 
         return model, f1
-
-        def train_gradient_boost(self, X_train, y_train, X_val, y_val):
+    
+    def train_gradient_boost(self, X_train, y_train, X_val, y_val):
         self.logger.info("🔧 GradientBoost...")
         
         param_dist = {
@@ -446,7 +420,7 @@ class ImprovedModelTrainer:
             base, param_dist,
             n_iter=self.n_iter_search,
             cv=cv,
-            scoring='f1_macro',  # ✅ DEĞIŞTI
+            scoring='f1_macro',
             n_jobs=-1,
             verbose=0
         )
@@ -478,7 +452,7 @@ class ImprovedModelTrainer:
             base, param_dist,
             n_iter=self.n_iter_search,
             cv=cv,
-            scoring='f1_macro',  # ✅ DEĞIŞTI
+            scoring='f1_macro',
             n_jobs=-1,
             verbose=0
         )
@@ -520,7 +494,7 @@ class ImprovedModelTrainer:
             base, param_dist,
             n_iter=self.n_iter_search,
             cv=cv,
-            scoring='f1_macro',  # ✅ DEĞIŞTI
+            scoring='f1_macro',
             n_jobs=-1,
             verbose=0
         )
@@ -539,7 +513,6 @@ class ImprovedModelTrainer:
         self.logger.info("🎯 BASE MODEL EĞİTİMİ")
         self.logger.info("=" * 80)
         
-        # Class weights hesapla
         self.compute_class_weights(y_train)
         
         self.analyze_class_distribution(y_train, "Original")
@@ -585,21 +558,17 @@ class ImprovedModelTrainer:
         return f1_scores
     
     def train_voting(self, X_train, X_test, y_train, y_test):
-        """✅ YENİ: Voting Classifier"""
         if not self.use_voting or len([m for m in self.models.values() if m]) < 2:
             return 0.0
         
         self.logger.info("🎯 Voting Ensemble...")
         
-        # En iyi 3 modeli seç
         estimators = [(name, model) for name, model in self.models.items() if model]
-        
-        # Ağırlıklar (el ile optimize edilebilir)
         weights = [0.35, 0.30, 0.25, 0.10][:len(estimators)]
         
         voting = VotingClassifier(
             estimators=estimators,
-            voting='soft',  # Probabilistik voting
+            voting='soft',
             weights=weights,
             n_jobs=-1
         )
@@ -622,8 +591,8 @@ class ImprovedModelTrainer:
         
         estimators = [(name, model) for name, model in self.models.items() if model]
         final = xgb.XGBClassifier(
-            max_depth=3, 
-            learning_rate=0.1,
+            max_depth=6, 
+            learning_rate=0.05,
             n_estimators=100,
             random_state=self.random_state
         )
@@ -633,7 +602,7 @@ class ImprovedModelTrainer:
             final_estimator=final, 
             cv=5, 
             n_jobs=-1,
-            passthrough=True  # Meta-features eklenir
+            passthrough=True
         )
         stacking.fit(X_train, y_train)
         
@@ -667,7 +636,6 @@ class ImprovedModelTrainer:
             self.logger.info(f"  {cm[1]}")
             self.logger.info(f"  {cm[2]}")
         
-        # Ensemble sonuçları
         if self.voting_model:
             pred = self.voting_model.predict(X_test)
             self.logger.info(f"\nVOTING ENSEMBLE:")
@@ -683,7 +651,6 @@ class ImprovedModelTrainer:
     def save_models(self):
         self.logger.info("💾 Kaydediliyor...")
         
-        # Base models
         joblib.dump({
             'models': self.models,
             'scaler': self.scaler,
@@ -692,21 +659,18 @@ class ImprovedModelTrainer:
             'metadata': self.metadata
         }, self.models_dir / "ensemble_models.pkl")
         
-        # Stacking
         if self.stacking_model:
             joblib.dump({
                 'model': self.stacking_model,
                 'type': 'stacking'
             }, self.models_dir / "stacking_ensemble.pkl")
         
-        # Voting (YENİ)
         if self.voting_model:
             joblib.dump({
                 'model': self.voting_model,
                 'type': 'voting'
             }, self.models_dir / "voting_ensemble.pkl")
         
-        # Config
         with open(self.models_dir / "feature_config.json", 'w') as f:
             json.dump(self.metadata, f, indent=2)
         
@@ -745,11 +709,9 @@ class ImprovedModelTrainer:
             X_train = self.scaler.fit_transform(X_train)
             X_test = self.scaler.transform(X_test)
             
-            # Base models
             base_scores = self.train_base_models(X_train, X_test, y_train, y_test)
             self.analyze_results(X_test, y_test)
             
-            # Ensembles
             voting_score = self.train_voting(X_train, X_test, y_train, y_test)
             stacking_score = self.train_stacking(X_train, X_test, y_train, y_test)
             
@@ -757,7 +719,6 @@ class ImprovedModelTrainer:
             
             elapsed = time.time() - start
             
-            # En iyi sonucu bul
             all_scores = list(base_scores.values())
             if voting_score > 0:
                 all_scores.append(voting_score)
@@ -766,13 +727,12 @@ class ImprovedModelTrainer:
             
             best_score = max(all_scores) if all_scores else 0.45
             
-            # Test set üzerinde accuracy hesapla
             best_model_name = max(base_scores.items(), key=lambda x: x[1])[0] if base_scores else None
             if best_model_name and self.models[best_model_name]:
                 pred = self.models[best_model_name].predict(X_test)
                 best_accuracy = accuracy_score(y_test, pred)
             else:
-                best_accuracy = best_score * 0.95  # Yaklaşık
+                best_accuracy = best_score * 0.95
             
             self.logger.info("\n" + "=" * 80)
             self.logger.info("🎉 EĞİTİM TAMAMLANDI")
@@ -786,7 +746,6 @@ class ImprovedModelTrainer:
             if stacking_score > 0:
                 self.logger.info(f"🎯 Stacking F1: {stacking_score:.4f}")
             
-            # Beklenen iyileşme
             expected_improvement = best_accuracy * 100
             if expected_improvement >= 70:
                 self.logger.info(f"✅ HEDEF ULAŞILDI! ({expected_improvement:.2f}% >= 70%)")
@@ -809,6 +768,13 @@ class ImprovedModelTrainer:
         except Exception as e:
             self.logger.error(f"❌ Hata: {e}", exc_info=True)
             return {"success": False, "error": str(e)}
+
+
+class ProductionModelTrainer(ImprovedModelTrainer):
+    """Alias class for backward compatibility with main.py"""
+    def run_full_pipeline(self):
+        """Main.py tarafından çağrılır (run_training wrapper'ı)"""
+        return self.run_training()
 
 
 def main():
@@ -838,13 +804,13 @@ def main():
     print()
     
     trainer = ImprovedModelTrainer(
-        models_dir="data/ai_models_v4",  # Yeni dizin
+        models_dir="data/ai_models_v4",
         use_smote=True,
-        balance_method='hybrid',          # ✅ Hybrid balancing
-        use_class_weights=True,           # ✅ Class weights
-        n_iter_search=80,                 # ✅ Daha fazla iterasyon
-        cv_folds=5,                       # ✅ 5-fold CV
-        use_voting=True                   # ✅ Voting ensemble
+        balance_method='hybrid',
+        use_class_weights=True,
+        n_iter_search=80,
+        cv_folds=5,
+        use_voting=True
     )
     
     result = trainer.run_training()
@@ -855,7 +821,7 @@ def main():
         print(f"🎯 En İyi F1: {result['best_f1_score']:.4f}")
         
         if result['test_accuracy'] >= 0.70:
-            print("\n🎉🎉🎉 %70 HEDEFINE ULAŞILDI! 🎉🎉🎉")
+            print("\n🎉🎉🎉 %70 HEDEFİNE ULAŞILDI! 🎉🎉🎉")
         elif result['test_accuracy'] >= 0.65:
             print("\n💪 Hedefe çok yakın! Biraz daha optimizasyon gerekli.")
         
@@ -865,12 +831,6 @@ def main():
     else:
         print(f"\n❌ HATA: {result['error']}")
 
-# --- Compatibility alias for main.py ---
-class ProductionModelTrainer(ImprovedModelTrainer):
-    """Alias class for backward compatibility with main.py"""
-    def run_full_pipeline(self):
-        """Main.py tarafından çağrılır (run_training wrapper'ı)"""
-        return self.run_training()
 
 if __name__ == "__main__":
     main()
