@@ -122,23 +122,31 @@ class EnhancedFeatureEngineer:
     """Geliştirilmiş Feature Engineering v4.0 - 100+ özellik"""
 
     def __init__(self, model_path: str = "data/ai_models_v3", flush_every: int = 1000):
-        self.model_path = model_path
-        self.flush_every = flush_every
-        self.update_count = 0
-        os.makedirs(model_path, exist_ok=True)
-        
-        self.team_history = defaultdict(list)
-        self.h2h_history = defaultdict(list)
-        self.league_standings = defaultdict(dict)
-        self.team_last_match_date = defaultdict(lambda: None)
-        self.league_stats = defaultdict(dict)
-        self.team_elo = defaultdict(lambda: 1500.0)
-        
-        self._load_data()
-        
-        logger.info(f"🚀 EnhancedFeatureEngineer v4.0 initialized")
-        logger.info(f"📊 Total features: {TOTAL_FEATURES_V4}")
-
+    self.model_path = model_path
+    self.flush_every = flush_every
+    self.update_count = 0
+    os.makedirs(model_path, exist_ok=True)
+    
+    # Veri dosyalarının kaydedileceği dizini tanımlayın ve oluşturun
+    # Bu, _load_history/elo/standings gibi metotların düzgün çalışması için gereklidir.
+    self.data_dir = os.path.join(model_path, "feature_engineer_data")
+    os.makedirs(self.data_dir, exist_ok=True)
+    
+    self.team_history = defaultdict(list)
+    self.h2h_history = defaultdict(list)
+    self.league_standings = defaultdict(dict)
+    self.team_last_match_date = defaultdict(lambda: None)
+    self.league_stats = defaultdict(dict)
+    self.team_elo = defaultdict(lambda: 1500.0)
+    
+    # Kaydedilmiş verileri yükleyen metotlar (Hata veren _load_data() yerine bunlar kullanılır)
+    self._load_history()
+    self._load_elo_system()
+    self._load_standings()
+    # Hata veren 'self._load_data()' çağrısı BU KISIMDAN KALDIRILMIŞTIR.
+    
+    logger.info(f"🚀 EnhancedFeatureEngineer v4.0 initialized")
+    logger.info(f"📊 Total features: {TOTAL_FEATURES_V4}")
     # ==========================================================
     # 🚨 GÜNCELLENMİŞ _SAVE_DATA METODU (HATASIZ SÜRÜM)
     # ==========================================================
