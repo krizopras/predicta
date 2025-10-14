@@ -619,8 +619,17 @@ def get_models_info():
 
 @app.route("/api/history/load", methods=["POST"])
 def load_history():
-    """Load historical data and add as features to model"""
+    """Load historical data and add as features to model - DÜZELTILMIŞ"""
     try:
+        # Feature engineer kontrolü
+        if engine.feature_engineer is None:
+            return jsonify({
+                "status": "error",
+                "message": "Feature Engineer not available",
+                "matches_loaded": 0,
+                "hint": "Check if enhanced_feature_engineer.py exists and is properly loaded"
+            }), 500
+        
         if not os.path.exists(RAW_DATA_PATH):
             return jsonify({
                 "status": "error",
@@ -652,6 +661,12 @@ def load_history():
         for country in countries:
             try:
                 logger.info(f"📄 Loading {country}...")
+                
+                if not history_processor:
+                    logger.error("❌ History processor not available")
+                    failed_countries.append(f"{country} (processor unavailable)")
+                    continue
+                
                 matches = history_processor.load_country_data(country)
                 
                 if not matches:
@@ -660,57 +675,83 @@ def load_history():
                 
                 # Add to feature engineer
                 for m in matches:
-                    result = m.get('result', '?')
-                    
-                    # Determine result
-                    if result not in ('1', 'X', '2'):
-                        try:
-                            hg = int(m.get('home_score', 0))
-                            ag = int(m.get('away_score', 0))
-                            result = '1' if hg > ag else ('X' if hg == ag else '2')
-                        except:
-                            result = 'X'
-                    
-                    # Home team history
-                    home_result = 'W' if result == '1' else ('D' if result == 'X' else 'L')
-                    engine.feature_engineer.update_team_history(
-                        m['home_team'],
-                        {
-                            'result': home_result,
-                            'goals_for': int(m.get('home_score', 0)),
-                            'goals_against': int(m.get('away_score', 0)),
-                            'date': m.get('date', ''),
-                            'venue': 'home'
-                        }
-                    )
-                    
-                    # Away team history
-                    away_result = 'L' if result == '1' else ('D' if result == 'X' else 'W')
-                    engine.feature_engineer.update_team_history(
-                        m['away_team'],
-                        {
-                            'result': away_result,
-                            'goals_for': int(m.get('away_score', 0)),
-                            'goals_against': int(m.get('home_score', 0)),
-                            'date': m.get('date', ''),
-                            'venue': 'away'
-                        }
-                    )
-                    
-                    # H2H history
-                    engine.feature_engineer.update_h2h_history(
-                        m['home_team'], m['away_team'],
-                        {
-                            'result': result,
-                            'home_goals': int(m.get('home_score', 0)),
-                            'away_goals': int(m.get('away_score', 0))
-                        }
-                    )
-                    
-                    # League statistics
-                    engine.feature_engineer.update_league_results(
-                        m.get('league', 'Unknown'), result
-                    )
+                    try:
+                        result = m.get('result', '?')
+                        
+                        # Determine result
+                        if result not in ('1', 'X', '2'):
+                            try:
+                                hg = int(m.get('home_score', 0))
+                                ag = int(m.get('away_score', 0))
+                                result = '1' if hg > ag else ('X' if hg == ag else '2')
+                            except:
+                                result = 'X'
+                        
+                        # Home team history
+                        home_result = 'W' if result == '1' else ('D' if result == 'X' else 'L')
+                        
+                        # KONTROL: update_team_history metodu var mı?
+                        if hasattr(engine.feature_engineer, 'update_team_history'):
+                            engine.feature_engineer.update_team_history(
+                                m['home_team'],
+                                {
+                                    'result': home_result,
+                                    'goals_for': int(m.get('home_score', 0)),
+                                    'goals_against': int(m.get('away_score', 0)),
+                                    'date': m.get('date', ''),
+                                    'venue': 'home'
+                                }
+                            )
+                        elif hasattr(engine.feature_engineer, 'update_match_result'):
+                            # Alternatif metod
+                            engine.feature_engineer.update_match_result(
+                                m['home_team'], m['away_team'],
+                                m.get('league', 'Unknown'),
+                                result,
+                                int(m.get('home_score', 0)),
+                                int(m.get('away_score', 0)),
+                                m.get('date', ''),
+                                'home', 'away'
+                            )
+                        else:
+                            logger.warning(f"⚠️ Feature engineer has no update method")
+                            break
+                        
+                        # Away team history
+                        away_result = 'L' if result == '1' else ('D' if result == 'X' else 'W')
+                        
+                        if hasattr(engine.feature_engineer, 'update_team_history'):
+                            engine.feature_engineer.update_team_history(
+                                m['away_team'],
+                                {
+                                    'result': away_result,
+                                    'goals_for': int(m.get('away_score', 0)),
+                                    'goals_against': int(m.get('home_score', 0)),
+                                    'date': m.get('date', ''),
+                                    'venue': 'away'
+                                }
+                            )
+                        
+                        # H2H history
+                        if hasattr(engine.feature_engineer, 'update_h2h_history'):
+                            engine.feature_engineer.update_h2h_history(
+                                m['home_team'], m['away_team'],
+                                {
+                                    'result': result,
+                                    'home_goals': int(m.get('home_score', 0)),
+                                    'away_goals': int(m.get('away_score', 0))
+                                }
+                            )
+                        
+                        # League statistics
+                        if hasattr(engine.feature_engineer, 'update_league_results'):
+                            engine.feature_engineer.update_league_results(
+                                m.get('league', 'Unknown'), result
+                            )
+                        
+                    except Exception as e:
+                        logger.warning(f"⚠️ Match processing error: {e}")
+                        continue
                 
                 total_matches += len(matches)
                 loaded_countries.append(f"{country} ({len(matches)} matches)")
@@ -721,8 +762,18 @@ def load_history():
                 failed_countries.append(f"{country} (error: {str(e)[:50]})")
                 continue
         
-        # Save feature data
-        engine.feature_engineer._save_data()
+        # Save feature data - GÜVENLİ KAYIT
+        try:
+            if hasattr(engine.feature_engineer, '_save_data'):
+                engine.feature_engineer._save_data()
+                logger.info("💾 Feature data saved")
+            elif hasattr(engine.feature_engineer, 'manual_save'):
+                engine.feature_engineer.manual_save()
+                logger.info("💾 Feature data saved (manual)")
+            else:
+                logger.warning("⚠️ No save method available on feature engineer")
+        except Exception as e:
+            logger.error(f"❌ Feature data save error: {e}")
         
         response = {
             "status": "ok",
