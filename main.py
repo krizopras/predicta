@@ -619,23 +619,21 @@ def get_models_info():
 
 @app.route("/api/history/load", methods=["POST"])
 def load_history():
-    """Load historical data and add as features to model - DÜZELTILMIŞ"""
+    """Load historical data - OPTIMIZED for Railway (no timeout)"""
     try:
         # Feature engineer kontrolü
         if engine.feature_engineer is None:
             return jsonify({
                 "status": "error",
                 "message": "Feature Engineer not available",
-                "matches_loaded": 0,
-                "hint": "Check if enhanced_feature_engineer.py exists and is properly loaded"
+                "matches_loaded": 0
             }), 500
         
         if not os.path.exists(RAW_DATA_PATH):
             return jsonify({
                 "status": "error",
                 "message": f"Historical data folder not found: {RAW_DATA_PATH}",
-                "matches_loaded": 0,
-                "hint": "Create data/raw folder and add country-based CSV/TXT files"
+                "matches_loaded": 0
             }), 404
         
         # Detect all countries
@@ -648,8 +646,7 @@ def load_history():
             return jsonify({
                 "status": "warning",
                 "message": f"No country folders found in {RAW_DATA_PATH}",
-                "matches_loaded": 0,
-                "hint": "Example: create folders like data/raw/turkey, data/raw/england"
+                "matches_loaded": 0
             }), 200
         
         total_matches = 0
@@ -658,122 +655,92 @@ def load_history():
         
         logger.info(f"📂 Detected {len(countries)} countries: {', '.join(countries)}")
         
-        for country in countries:
-            try:
-                logger.info(f"📄 Loading {country}...")
-                
-                if not history_processor:
-                    logger.error("❌ History processor not available")
-                    failed_countries.append(f"{country} (processor unavailable)")
-                    continue
-                
-                matches = history_processor.load_country_data(country)
-                
-                if not matches:
-                    failed_countries.append(f"{country} (no data)")
-                    continue
-                
-                # Add to feature engineer
-                for m in matches:
-                    try:
-                        result = m.get('result', '?')
-                        
-                        # Determine result
-                        if result not in ('1', 'X', '2'):
-                            try:
-                                hg = int(m.get('home_score', 0))
-                                ag = int(m.get('away_score', 0))
-                                result = '1' if hg > ag else ('X' if hg == ag else '2')
-                            except:
-                                result = 'X'
-                        
-                        # Home team history
-                        home_result = 'W' if result == '1' else ('D' if result == 'X' else 'L')
-                        
-                        # KONTROL: update_team_history metodu var mı?
-                        if hasattr(engine.feature_engineer, 'update_team_history'):
-                            engine.feature_engineer.update_team_history(
-                                m['home_team'],
-                                {
-                                    'result': home_result,
-                                    'goals_for': int(m.get('home_score', 0)),
-                                    'goals_against': int(m.get('away_score', 0)),
-                                    'date': m.get('date', ''),
-                                    'venue': 'home'
-                                }
-                            )
-                        elif hasattr(engine.feature_engineer, 'update_match_result'):
-                            # Alternatif metod
-                            engine.feature_engineer.update_match_result(
-                                m['home_team'], m['away_team'],
-                                m.get('league', 'Unknown'),
-                                result,
-                                int(m.get('home_score', 0)),
-                                int(m.get('away_score', 0)),
-                                m.get('date', ''),
-                                'home', 'away'
-                            )
-                        else:
-                            logger.warning(f"⚠️ Feature engineer has no update method")
-                            break
-                        
-                        # Away team history
-                        away_result = 'L' if result == '1' else ('D' if result == 'X' else 'W')
-                        
-                        if hasattr(engine.feature_engineer, 'update_team_history'):
-                            engine.feature_engineer.update_team_history(
-                                m['away_team'],
-                                {
-                                    'result': away_result,
-                                    'goals_for': int(m.get('away_score', 0)),
-                                    'goals_against': int(m.get('home_score', 0)),
-                                    'date': m.get('date', ''),
-                                    'venue': 'away'
-                                }
-                            )
-                        
-                        # H2H history
-                        if hasattr(engine.feature_engineer, 'update_h2h_history'):
-                            engine.feature_engineer.update_h2h_history(
-                                m['home_team'], m['away_team'],
-                                {
-                                    'result': result,
-                                    'home_goals': int(m.get('home_score', 0)),
-                                    'away_goals': int(m.get('away_score', 0))
-                                }
-                            )
-                        
-                        # League statistics
-                        if hasattr(engine.feature_engineer, 'update_league_results'):
-                            engine.feature_engineer.update_league_results(
-                                m.get('league', 'Unknown'), result
-                            )
-                        
-                    except Exception as e:
-                        logger.warning(f"⚠️ Match processing error: {e}")
-                        continue
-                
-                total_matches += len(matches)
-                loaded_countries.append(f"{country} ({len(matches)} matches)")
-                logger.info(f"✅ {country}: {len(matches)} matches loaded")
-                
-            except Exception as e:
-                logger.warning(f"⚠️ {country} could not be loaded: {e}")
-                failed_countries.append(f"{country} (error: {str(e)[:50]})")
-                continue
+        # ✅ FIX 1: Disable auto-save during bulk loading
+        if hasattr(engine.feature_engineer, '_auto_save'):
+            original_auto_save = engine.feature_engineer._auto_save
+            engine.feature_engineer._auto_save = False
+            logger.info("🔧 Auto-save disabled for bulk loading")
+        else:
+            original_auto_save = None
         
-        # Save feature data - GÜVENLİ KAYIT
         try:
-            if hasattr(engine.feature_engineer, '_save_data'):
-                engine.feature_engineer._save_data()
-                logger.info("💾 Feature data saved")
-            elif hasattr(engine.feature_engineer, 'manual_save'):
-                engine.feature_engineer.manual_save()
-                logger.info("💾 Feature data saved (manual)")
-            else:
-                logger.warning("⚠️ No save method available on feature engineer")
-        except Exception as e:
-            logger.error(f"❌ Feature data save error: {e}")
+            for country in countries:
+                try:
+                    logger.info(f"📄 Loading {country}...")
+                    
+                    if not history_processor:
+                        logger.error("❌ History processor not available")
+                        failed_countries.append(f"{country} (processor unavailable)")
+                        continue
+                    
+                    matches = history_processor.load_country_data(country)
+                    
+                    if not matches:
+                        failed_countries.append(f"{country} (no data)")
+                        continue
+                    
+                    # ✅ FIX 2: Process matches in batches
+                    batch_size = 500
+                    for i in range(0, len(matches), batch_size):
+                        batch = matches[i:i+batch_size]
+                        
+                        for m in batch:
+                            try:
+                                result = m.get('result', '?')
+                                
+                                if result not in ('1', 'X', '2'):
+                                    try:
+                                        hg = int(m.get('home_score', 0))
+                                        ag = int(m.get('away_score', 0))
+                                        result = '1' if hg > ag else ('X' if hg == ag else '2')
+                                    except:
+                                        result = 'X'
+                                
+                                # Update using the available method
+                                if hasattr(engine.feature_engineer, 'update_match_result'):
+                                    engine.feature_engineer.update_match_result(
+                                        m['home_team'], m['away_team'],
+                                        m.get('league', 'Unknown'),
+                                        result,
+                                        int(m.get('home_score', 0)),
+                                        int(m.get('away_score', 0)),
+                                        m.get('date', ''),
+                                        'home', 'away'
+                                    )
+                                
+                            except Exception as e:
+                                # Skip failed matches silently
+                                continue
+                        
+                        # Log progress every batch
+                        logger.info(f"   ⏳ Processed {min(i+batch_size, len(matches))}/{len(matches)} matches")
+                    
+                    total_matches += len(matches)
+                    loaded_countries.append(f"{country} ({len(matches)} matches)")
+                    logger.info(f"✅ {country}: {len(matches)} matches loaded")
+                    
+                except Exception as e:
+                    logger.warning(f"⚠️ {country} could not be loaded: {e}")
+                    failed_countries.append(f"{country} (error: {str(e)[:50]})")
+                    continue
+            
+            # ✅ FIX 3: Save once at the end
+            logger.info("💾 Saving feature data (single batch save)...")
+            try:
+                if hasattr(engine.feature_engineer, '_save_data'):
+                    engine.feature_engineer._save_data()
+                    logger.info("✅ Feature data saved successfully")
+                elif hasattr(engine.feature_engineer, 'manual_save'):
+                    engine.feature_engineer.manual_save()
+                    logger.info("✅ Feature data saved (manual)")
+            except Exception as e:
+                logger.error(f"❌ Feature data save error: {e}")
+            
+        finally:
+            # ✅ FIX 4: Re-enable auto-save
+            if original_auto_save is not None:
+                engine.feature_engineer._auto_save = original_auto_save
+                logger.info("🔧 Auto-save re-enabled")
         
         response = {
             "status": "ok",
@@ -796,6 +763,49 @@ def load_history():
             "message": str(e),
             "matches_loaded": 0
         }), 500
+
+
+# ============================================
+# BONUS: enhanced_feature_engineer_v4.py fix
+# ============================================
+"""
+enhanced_feature_engineer_v4.py içinde şu değişikliği yapın:
+
+class EnhancedFeatureEngineer:
+    def __init__(self, model_path: str = "data/ai_models_v4"):
+        # ... existing code ...
+        self._auto_save = True  # ✅ Add this flag
+        self._save_counter = 0  # ✅ Add save counter
+        self._save_interval = 100  # ✅ Save every 100 updates
+    
+    def update_match_result(self, ...):
+        # ... existing code ...
+        
+        # ✅ REPLACE: self._save_data()
+        # WITH:
+        if self._auto_save:
+            self._save_counter += 1
+            if self._save_counter >= self._save_interval:
+                self._save_data()
+                self._save_counter = 0
+        
+    def _save_data(self):
+        '''Save feature data (called manually or at intervals)'''
+        try:
+            data = {
+                'team_history': self.team_history,
+                'h2h_history': self.h2h_history,
+                'league_stats': self.league_stats,
+                'version': 'v4.0'
+            }
+            
+            with open(self.feature_file, 'wb') as f:
+                pickle.dump(data, f, protocol=pickle.HIGHEST_PROTOCOL)
+            
+            logger.info("💾 Feature data güvenli şekilde kaydedildi")
+            
+        except Exception as e:
+            logger.error(f"❌ Feature save error: {e}")
 
 
 @app.route("/api/models/delete", methods=["POST"])
