@@ -306,31 +306,48 @@ class ModelTrainer:
 # =============================================================
 # Save / Load models (safe for Railway)
 # =============================================================
+
 class ModelIO:
-    ENSEMBLE_PKL = "ensemble_models.pkl"  # dict: {models, scaler, weights, is_trained, meta}
-    XGB_JSON = "xgb_model.json"           # raw XGB model (Booster JSON)
-    SCALER_PKL = "scaler.pkl"             # fallback scaler only
-    META_JSON = "training_metadata.json"   # metrics & info
+    ENSEMBLE_PKL = "ensemble_models.pkl"
+    XGB_JSON = "xgb_model.json"           # ✅ XGB JSON format
+    XGB_CONFIG = "xgb_model.config"       # ✅ XGB config backup
+    SCALER_PKL = "scaler.pkl"
+    META_JSON = "training_metadata.json"
 
     @staticmethod
     def save(models_dir: Path, bundle: Dict[str, Any]) -> None:
         ensure_dir(models_dir)
-        # Extract pieces
         models: Dict[str, Any] = bundle.get("models", {})
         scaler: StandardScaler = bundle.get("scaler")
         weights: Dict[str, float] = bundle.get("weights", {})
         f1 = float(bundle.get("f1_ensemble", 0.0))
 
-        # Save XGB separately as JSON to avoid pickle breakage between XGB versions
-        if xgb is not None and isinstance(models.get("xgb"), xgb.XGBClassifier):
+        # ✅ Save XGB as JSON (cross-version compatible)
+        if xgb is not None and "xgb" in models and isinstance(models["xgb"], xgb.XGBClassifier):
             try:
-                models["xgb"].save_model(str(models_dir / ModelIO.XGB_JSON))
-                logger.info("💾 Saved XGB model as JSON")
+                xgb_model = models["xgb"]
+                
+                # Method 1: Save booster as JSON
+                xgb_model.save_model(str(models_dir / ModelIO.XGB_JSON))
+                logger.info("💾 XGB model saved as JSON (version-safe)")
+                
+                # Method 2: Save config separately
+                config = {
+                    "n_estimators": xgb_model.n_estimators,
+                    "max_depth": xgb_model.max_depth,
+                    "learning_rate": xgb_model.learning_rate,
+                    "objective": xgb_model.objective,
+                    "num_class": 3,
+                    "_Booster": str(models_dir / ModelIO.XGB_JSON)
+                }
+                with open(models_dir / ModelIO.XGB_CONFIG, 'w') as f:
+                    json.dump(config, f, indent=2)
+                
             except Exception as e:
                 logger.warning(f"XGB JSON save failed: {e}")
 
-        # For pickle bundle, do NOT include xgb raw booster bytes
-        safe_models: Dict[str, Any] = {k: v for k, v in models.items() if k != "xgb"}
+        # ✅ Save non-XGB models via pickle (safe)
+        safe_models = {k: v for k, v in models.items() if k != "xgb"}
         bundle_pickle = {
             "models": safe_models,
             "weights": weights,
@@ -338,52 +355,102 @@ class ModelIO:
             "is_trained": True,
             "meta": {"f1_ensemble": f1},
         }
+        
         with open(models_dir / ModelIO.ENSEMBLE_PKL, "wb") as f:
             pickle.dump(bundle_pickle, f, protocol=pickle.HIGHEST_PROTOCOL)
-        logger.info("💾 Saved ensemble bundle (pickle)")
+        logger.info("💾 Ensemble bundle saved (pickle)")
 
-        # Save scaler standalone (optional redundancy)
+        # Save scaler separately (redundancy)
         if scaler is not None:
             with open(models_dir / ModelIO.SCALER_PKL, "wb") as f:
                 pickle.dump(scaler, f, protocol=pickle.HIGHEST_PROTOCOL)
 
-        # Save meta
+        # Save metadata
         meta_path = models_dir / ModelIO.META_JSON
         try:
             with open(meta_path, "w", encoding="utf-8") as f:
-                json.dump({"f1_ensemble": f1, "models": list(models.keys())}, f, ensure_ascii=False, indent=2)
+                json.dump({
+                    "f1_ensemble": f1,
+                    "models": list(models.keys()),
+                    "xgb_version": xgb.__version__ if xgb else None,
+                    "sklearn_version": __import__('sklearn').__version__,
+                    "saved_at": datetime.now().isoformat()
+                }, f, ensure_ascii=False, indent=2)
         except Exception as e:
-            logger.warning(f"Could not write metadata: {e}")
+            logger.warning(f"Metadata save failed: {e}")
 
     @staticmethod
     def load(models_dir: Path) -> Dict[str, Any]:
         bundle_path = models_dir / ModelIO.ENSEMBLE_PKL
+        
         if not bundle_path.exists():
             raise FileNotFoundError(f"Model bundle not found: {bundle_path}")
 
-        # 1) Load pickle bundle (non-XGB models + scaler + weights)
+        # 1) Load pickle bundle (non-XGB models)
         bundle = SklearnCompatLoader.safe_load_pickle(bundle_path)
+        
         if bundle is None:
-            raise RuntimeError("Incompatible pickle bundle; retrain required")
+            # ✅ Fallback: Try to load scaler separately
+            logger.warning("⚠️ Main bundle failed, trying scaler fallback...")
+            scaler_path = models_dir / ModelIO.SCALER_PKL
+            
+            if scaler_path.exists():
+                scaler = SklearnCompatLoader.safe_load_pickle(scaler_path)
+                bundle = {
+                    "models": {},
+                    "scaler": scaler,
+                    "weights": {},
+                    "is_trained": False
+                }
+                logger.info("✅ Scaler loaded from fallback")
+            else:
+                raise RuntimeError("Incompatible pickle bundle; retrain required")
 
         models: Dict[str, Any] = bundle.get("models", {})
         scaler = bundle.get("scaler")
         weights = bundle.get("weights", {})
 
-        # 2) Attempt to load XGB JSON and inject into models
+        # 2) Load XGB from JSON (version-safe)
         if xgb is not None:
-            xgb_path = models_dir / ModelIO.XGB_JSON
-            if xgb_path.exists():
+            xgb_json_path = models_dir / ModelIO.XGB_JSON
+            xgb_config_path = models_dir / ModelIO.XGB_CONFIG
+            
+            if xgb_json_path.exists():
                 try:
-                    xgb_model = xgb.XGBClassifier()
-                    xgb_model.load_model(str(xgb_path))
+                    # ✅ Load XGB from JSON
+                    xgb_model = xgb.XGBClassifier(
+                        objective="multi:softprob",
+                        num_class=3
+                    )
+                    xgb_model.load_model(str(xgb_json_path))
                     models["xgb"] = xgb_model
-                    logger.info("✅ Loaded XGB model from JSON")
+                    
+                    # ✅ Restore config if available
+                    if xgb_config_path.exists():
+                        with open(xgb_config_path, 'r') as f:
+                            config = json.load(f)
+                        logger.info(f"✅ XGB loaded from JSON (v{xgb.__version__})")
+                    else:
+                        logger.info("✅ XGB loaded from JSON")
+                    
                 except Exception as e:
                     logger.warning(f"XGB JSON load failed: {e}")
+            else:
+                logger.warning("⚠️ XGB JSON file not found")
 
-        # 3) Construct ensemble predictor
+        # 3) Construct ensemble
+        if not models:
+            logger.warning("⚠️ No models available after load")
+            return {
+                "models": {},
+                "weights": {},
+                "scaler": scaler,
+                "ensemble": None,
+                "is_trained": False
+            }
+        
         ensemble = AdvancedMLPredictor(models=models, weights=weights)
+        
         return {
             "models": models,
             "weights": weights,
@@ -392,6 +459,25 @@ class ModelIO:
             "is_trained": True,
         }
 
+
+# ============================================
+# USAGE EXAMPLE
+# ============================================
+"""
+# Training sonrası kayıt:
+bundle = trainer.train_all(X, y)
+ModelIO.save(Path("data/ai_models_v3"), bundle)
+
+# Load (cross-version safe):
+try:
+    loaded = ModelIO.load(Path("data/ai_models_v3"))
+    engine.scaler = loaded["scaler"]
+    engine.ensemble = loaded["ensemble"]
+    engine.is_trained = loaded["is_trained"]
+except Exception as e:
+    print(f"❌ Model load failed: {e}")
+    print("💡 Retrain required")
+"""
 
 # =============================================================
 # Public Engine (train + predict)
