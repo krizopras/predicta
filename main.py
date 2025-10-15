@@ -574,7 +574,7 @@ def start_training():
     
     import threading
     
-  def train_background():
+def train_background():
     try:
         logger.info("Training started")
         
