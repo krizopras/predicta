@@ -948,6 +948,94 @@ def start_training():
     
     def train_background():
         try:
+            logger.info("🚀 Training started")
+            
+            from model_trainer import ProductionModelTrainer
+            
+            trainer = ProductionModelTrainer(
+                models_dir=MODELS_DIR,
+                raw_data_path=RAW_DATA_PATH,
+                clubs_path=CLUBS_PATH,
+                min_matches=50,
+                test_size=0.2,
+                random_state=42,
+                version_archive=False,
+                verbose=True
+            )
+            
+            result = trainer.run_full_pipeline()
+            
+            if result.get('success'):
+                logger.info("✅ Training completed!")
+                engine.load_models()
+                logger.info("🔄 Models reloaded successfully")
+            else:
+                logger.error(f"❌ Training error: {result.get('error')}")
+                
+        except Exception as e:
+            logger.error(f"❌ Training error: {e}", exc_info=True)
+    
+    # Run in background
+    thread = threading.Thread(target=train_background, daemon=True)
+    thread.start()
+    
+    # HTML response for browser
+    success_html = """<!DOCTYPE html>
+<html>
+<head>
+    <title>Training Started</title>
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="5;url=/api/training/start">
+    <style>
+        body { 
+            font-family: 'Segoe UI', Arial; 
+            max-width: 600px; 
+            margin: 100px auto; 
+            text-align: center;
+            padding: 30px;
+            background: #f5f5f5;
+        }
+        .success {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .icon { font-size: 64px; margin-bottom: 20px; }
+        h1 { color: #28a745; margin: 20px 0; }
+        p { color: #666; line-height: 1.8; }
+        .highlight { 
+            background: #e3f2fd; 
+            padding: 15px; 
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="success">
+        <div class="icon">✅</div>
+        <h1>Training Started!</h1>
+        
+        <div class="highlight">
+            <p><strong>Estimated Time:</strong> 10-15 minutes</p>
+            <p><strong>Status:</strong> Running in background</p>
+        </div>
+        
+        <p>Check Railway dashboard logs for progress</p>
+        <p><a href="/api/models/info" target="_blank">Check model status</a></p>
+        
+        <p><small style="color: #999;">Redirecting in 5 seconds...</small></p>
+    </div>
+</body>
+</html>"""
+    return success_html
+    
+    # POST request - start training
+    import threading
+    
+    def train_background():
+        try:
             logger.info("Training started")
             
             from model_trainer import ProductionModelTrainer
