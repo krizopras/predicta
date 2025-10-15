@@ -863,94 +863,92 @@ def delete_models():
 def start_training():
     """Start model training in background"""
     
-    # ✅ GET request - tarayıcı için HTML arayüz
+    # GET request - browser HTML interface
     if request.method == "GET":
-        return """
-        <!DOCTYPE html>
-        <html>
-        <head>
-            <title>Predicta Training</title>
-            <meta charset="utf-8">
-            <style>
-                body { 
-                    font-family: 'Segoe UI', Arial, sans-serif; 
-                    max-width: 700px; 
-                    margin: 50px auto; 
-                    padding: 30px;
-                    background: #f5f5f5;
-                }
-                .container {
-                    background: white;
-                    padding: 30px;
-                    border-radius: 10px;
-                    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-                }
-                h1 { color: #333; margin-top: 0; }
-                button { 
-                    background: #4CAF50; 
-                    color: white; 
-                    padding: 15px 40px; 
-                    border: none; 
-                    border-radius: 8px; 
-                    font-size: 18px; 
-                    cursor: pointer;
-                    font-weight: bold;
-                    transition: all 0.3s;
-                    width: 100%;
-                }
-                button:hover { 
-                    background: #45a049;
-                    transform: translateY(-2px);
-                    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-                }
-                .info { 
-                    background: #e3f2fd; 
-                    padding: 20px; 
-                    border-radius: 8px; 
-                    margin: 20px 0;
-                    border-left: 4px solid #2196F3;
-                }
-                .info p { margin: 8px 0; }
-                .warning {
-                    background: #fff3cd;
-                    padding: 15px;
-                    border-radius: 8px;
-                    margin: 20px 0;
-                    border-left: 4px solid #ffc107;
-                }
-            </style>
-        </head>
-        <body>
-            <div class="container">
-                <h1>🚂 Predicta Model Training</h1>
-                
-                <div class="info">
-                    <p><strong>📊 Durum:</strong> Hazır</p>
-                    <p><strong>🔧 Sklearn Version:</strong> 1.3.2</p>
-                    <p><strong>🚀 Railway Mode:</strong> Aktif</p>
-                    <p><strong>⏱️ Tahmini Süre:</strong> 10-15 dakika</p>
-                </div>
-                
-                <div class="warning">
-                    <strong>⚠️ Uyarı:</strong> Butona tıkladıktan sonra Railway loglarını takip edin.
-                    Eğitim arka planda devam edecek.
-                </div>
-                
-                <form method="POST" action="/api/training/start" 
-                      onsubmit="return confirm('⚠️ Eğitimi başlatmak istediğinize emin misiniz?\\\\n\\\\n⏱️ İşlem 10-15 dakika sürecek.');">
-                    <button type="submit">🎯 Eğitimi Başlat</button>
-                </form>
-            </div>
-        </body>
-        </html>
-        """
+        html_content = """<!DOCTYPE html>
+<html>
+<head>
+    <title>Predicta Training</title>
+    <meta charset="utf-8">
+    <style>
+        body { 
+            font-family: 'Segoe UI', Arial, sans-serif; 
+            max-width: 700px; 
+            margin: 50px auto; 
+            padding: 30px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 { color: #333; margin-top: 0; }
+        button { 
+            background: #4CAF50; 
+            color: white; 
+            padding: 15px 40px; 
+            border: none; 
+            border-radius: 8px; 
+            font-size: 18px; 
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s;
+            width: 100%;
+        }
+        button:hover { 
+            background: #45a049;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .info { 
+            background: #e3f2fd; 
+            padding: 20px; 
+            border-radius: 8px; 
+            margin: 20px 0;
+            border-left: 4px solid #2196F3;
+        }
+        .info p { margin: 8px 0; }
+        .warning {
+            background: #fff3cd;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #ffc107;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Training Start</h1>
+        
+        <div class="info">
+            <p><strong>Status:</strong> Ready</p>
+            <p><strong>Sklearn Version:</strong> 1.3.2</p>
+            <p><strong>Railway Mode:</strong> Active</p>
+            <p><strong>Estimated Time:</strong> 10-15 minutes</p>
+        </div>
+        
+        <div class="warning">
+            <strong>Warning:</strong> After clicking, check Railway logs. Training will continue in background.
+        </div>
+        
+        <form method="POST" action="/api/training/start" 
+              onsubmit="return confirm('Are you sure you want to start training?\\n\\nThis will take 10-15 minutes.');">
+            <button type="submit">Start Training</button>
+        </form>
+    </div>
+</body>
+</html>"""
+        return html_content
     
-    # POST request - training başlat
+    # POST request - start training
     import threading
     
     def train_background():
         try:
-            logger.info("🎯 Training started")
+            logger.info("Training started")
             
             from model_trainer import ProductionModelTrainer
             
@@ -968,71 +966,72 @@ def start_training():
             result = trainer.run_full_pipeline()
             
             if result.get('success'):
-                logger.info("✅ Training completed!")
+                logger.info("Training completed!")
                 engine.load_models()
-                logger.info("✅ Models reloaded successfully")
+                logger.info("Models reloaded successfully")
             else:
-                logger.error(f"❌ Training error: {result.get('error')}")
+                logger.error(f"Training error: {result.get('error')}")
                 
         except Exception as e:
-            logger.error(f"❌ Training error: {e}", exc_info=True)
+            logger.error(f"Training error: {e}", exc_info=True)
     
     # Run in background
     thread = threading.Thread(target=train_background, daemon=True)
     thread.start()
     
-    # ✅ HTML response (tarayıcı için)
-    return """
-    <!DOCTYPE html>
-    <html>
-    <head>
-        <title>Training Started</title>
-        <meta charset="utf-8">
-        <meta http-equiv="refresh" content="5;url=/api/training/start">
-        <style>
-            body { 
-                font-family: 'Segoe UI', Arial; 
-                max-width: 600px; 
-                margin: 100px auto; 
-                text-align: center;
-                padding: 30px;
-                background: #f5f5f5;
-            }
-            .success {
-                background: white;
-                padding: 40px;
-                border-radius: 10px;
-                box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            }
-            .icon { font-size: 64px; margin-bottom: 20px; }
-            h1 { color: #28a745; margin: 20px 0; }
-            p { color: #666; line-height: 1.8; }
-            .highlight { 
-                background: #e3f2fd; 
-                padding: 15px; 
-                border-radius: 8px;
-                margin: 20px 0;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="success">
-            <div class="icon">✅</div>
-            <h1>Eğitim Başlatıldı!</h1>
-            
-            <div class="highlight">
-                <p><strong>⏱️ Tahmini Süre:</strong> 10-15 dakika</p>
-                <p><strong>📋 Durum:</strong> Arka planda çalışıyor</p>
-            </div>
-            
-            <p>🔍 Railway dashboard'tan logları takip edebilirsiniz</p>
-            <p>📊 <a href="/api/models/info" target="_blank">Model durumunu kontrol et</a></p>
-            
-            <p><small style="color: #999;">5 saniye içinde ana sayfaya yönlendirileceksiniz...</small></p>
+    # HTML response for browser
+    success_html = """<!DOCTYPE html>
+<html>
+<head>
+    <title>Training Started</title>
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="5;url=/api/training/start">
+    <style>
+        body { 
+            font-family: 'Segoe UI', Arial; 
+            max-width: 600px; 
+            margin: 100px auto; 
+            text-align: center;
+            padding: 30px;
+            background: #f5f5f5;
+        }
+        .success {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .icon { font-size: 64px; margin-bottom: 20px; }
+        h1 { color: #28a745; margin: 20px 0; }
+        p { color: #666; line-height: 1.8; }
+        .highlight { 
+            background: #e3f2fd; 
+            padding: 15px; 
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="success">
+        <div class="icon">Success</div>
+        <h1>Training Started!</h1>
+        
+        <div class="highlight">
+            <p><strong>Estimated Time:</strong> 10-15 minutes</p>
+            <p><strong>Status:</strong> Running in background</p>
         </div>
-    </body>
-    </html>
-    """
+        
+        <p>Check Railway dashboard logs for progress</p>
+        <p><a href="/api/models/info" target="_blank">Check model status</a></p>
+        
+        <p><small style="color: #999;">Redirecting in 5 seconds...</small></p>
+    </div>
+</body>
+</html>"""
+    return success_html
+
+
 # ======================================================
 # ERROR HANDLING
 # ======================================================
@@ -1051,14 +1050,14 @@ def internal_error(e):
 # ======================================================
 if __name__ == "__main__":
     logger.info("=" * 60)
-    logger.info("⚽ Predicta Europe ML v2 - Backend Active (TRACKER)")
+    logger.info("Backend Active - Predicta Europe ML v2")
     logger.info("=" * 60)
-    logger.info(f"📂 Models: {MODELS_DIR}")
-    logger.info(f"📂 Raw Data: {RAW_DATA_PATH}")
-    logger.info(f"📂 Clubs: {CLUBS_PATH}")
-    logger.info(f"📊 Predictions: data/predictions")
-    logger.info(f"🌐 Port: {APP_PORT}")
-    logger.info(f"🤖 Trained: {'✅' if engine.is_trained else '⚠️ Training required'}")
+    logger.info(f"Models: {MODELS_DIR}")
+    logger.info(f"Raw Data: {RAW_DATA_PATH}")
+    logger.info(f"Clubs: {CLUBS_PATH}")
+    logger.info(f"Predictions: data/predictions")
+    logger.info(f"Port: {APP_PORT}")
+    logger.info(f"Trained: {'YES' if engine.is_trained else 'NO - Training required'}")
     logger.info("=" * 60)
     
     app.run(host="0.0.0.0", port=APP_PORT, debug=False)
