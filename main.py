@@ -574,34 +574,33 @@ def start_training():
     
     import threading
     
-    def train_background():
-        try:
-            logger.info("Training started")
+  def train_background():
+    try:
+        logger.info("Training started")
+        
+        from model_trainer import ProductionModelTrainer
+        
+        trainer = ProductionModelTrainer(
+            models_dir=MODELS_DIR,
+            raw_data_path=RAW_DATA_PATH,
+            clubs_path=CLUBS_PATH,           
+            test_size=0.2,
+            random_state=42,
+            version_archive=False,
+            verbose=True
+        )
+        
+        result = trainer.run_full_pipeline()
+        
+        if result.get('success'):
+            logger.info("Training completed!")
+            engine.load_models()
+            logger.info("Models reloaded successfully")
+        else:
+            logger.error(f"Training error: {result.get('error')}")
             
-            from model_trainer import ProductionModelTrainer
-            
-            trainer = ProductionModelTrainer(
-                models_dir=MODELS_DIR,
-                raw_data_path=RAW_DATA_PATH,
-                clubs_path=CLUBS_PATH,
-                min_matches=50,
-                test_size=0.2,
-                random_state=42,
-                version_archive=False,
-                verbose=True
-            )
-            
-            result = trainer.run_full_pipeline()
-            
-            if result.get('success'):
-                logger.info("Training completed!")
-                engine.load_models()
-                logger.info("Models reloaded successfully")
-            else:
-                logger.error(f"Training error: {result.get('error')}")
-                
-        except Exception as e:
-            logger.error(f"Training error: {e}", exc_info=True)
+    except Exception as e:
+        logger.error(f"Training error: {e}", exc_info=True)
     
     # Run in background
     thread = threading.Thread(target=train_background, daemon=True)
