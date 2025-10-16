@@ -1727,42 +1727,6 @@ function scheduleAutoRefresh(){
   }, REFRESH_DEFAULT_MIN*60*1000);
 }
 
-/* ================= Events ================= */
-document.addEventListener("DOMContentLoaded", async ()=>{
-  // Modal close
-  modalClose.onclick = ()=> modal.classList.remove("show");
-  modal.onclick = (e)=>{ if(e.target===modal) modal.classList.remove("show"); };
-  
-  statsClose.onclick = ()=> statsModal.classList.remove("show");
-  statsModal.onclick = (e)=>{ if(e.target===statsModal) statsModal.classList.remove("show"); };
-
-  // Filters
-  $("#sel-league").onchange = applyFilters;
-  $("#sel-sort").onchange = applyFilters;
-  $("#txt-team").oninput = ()=> { applyFilters(); };
-  $("#chk-filter").onchange = async ()=> { await loadAll(); };
-
-  // Buttons
-  $("#btn-refresh").onclick = async ()=> { await loadAll(); toast("Yenilendi ✅","ok"); };
-  $("#btn-stats").onclick = showStatsModal;
-  
-  $("#btn-reload").onclick = async ()=>{
-    try{
-      showLoading(true, "Modeller yeniden yükleniyor...");
-      await getJSON(API_BASE + "/api/reload", {method:"POST"});
-      toast("Modeller yenilendi ✅", "ok");
-      await loadAll();
-    }catch(e){ toast("Reload hatası: "+e.message, "err"); }
-    finally{ showLoading(false); }
-  };
-
-  $("#btn-settings").onclick = ()=>{
-    toast("Ayarlar yakında 🔧", "info");
-  };
-
-  // Start auto-boot
-  await initialBoot();
-});
 </script>
 </body>
 </html>
