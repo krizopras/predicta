@@ -1,47 +1,49 @@
-# Python cache & env
+# Python cache & venv
 __pycache__/
 *.pyc
-venv/
 .venv/
+venv/
 .env
-.DS_Store
-.git/
 *.log
 *.tmp
+.DS_Store
+.git/
+*.bak
 
-# Local data not needed in deployment
-data/predictions/
+# Local data (training + generated files)
 data/raw/
 data/tmp/
 data/cache/
 data/*.csv
 data/*.xlsx
 
-# Model artifacts (large files)
+# Günlük tahminler ve geçmişler
+data/predictions/
+logs/
+processed/
+reports/
+outputs/
+
+# Büyük model dosyaları (sadece eğitim sonrası yüklenir)
 data/ai_models_v3/*.pkl
 models/
 checkpoints/
 experiments/
 notebooks/
 
-# Local logs & reports
-logs/
-reports/
-outputs/
+# Frontend build cache
+static/node_modules/
+static/.next/
+static/build/
+static/dist/
 
-# IDE / Editor files
+# IDE ve test dosyaları
 .vscode/
 .idea/
-*.code-workspace
-
-# Local frontend builds (if using separate build process)
-frontend/node_modules/
-frontend/.next/
-frontend/dist/
-frontend/build/
-
-# Test artifacts
-tests/__pycache__/
 coverage/
 htmlcov/
 .pytest_cache/
+
+# Dev / local only
+railway_train_local.py
+railway_debug.py
