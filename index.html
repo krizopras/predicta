@@ -3,8 +3,973 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Predicta Europe ML – Pro Dashboard</title>
+<title>Predicta Europe ML – Auto Mode</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --navy:#001F3F; --navy-2:#012a5e; --navy-3:#0a2243;
+  --gold:#FFD700; --gold-2:#f5d043;
+  --bg:#0b1528; --card:#0f1e35; --muted:#9fb1ce; --text:#f2f6ff;
+  --ok:#22c55e; --warn:#f59e0b; --err:#ef4444;
+  --b:#123a74; --b2:#1a3159; --shadow:0 10px 30px rgba(0,0,0,.35);
+}
+
+/* Dark/Light mode support */
+[data-theme="light"]{
+  --bg:#f5f7fa; --card:#ffffff; --muted:#64748b; --text:#0f172a;
+  --b:#e2e8f0; --navy:#1e40af; --navy-2:#2563eb;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:linear-gradient(180deg,var(--bg),#08152a 70%);color:var(--text);font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,Arial;transition:background 0.3s,color 0.3s}
+
+/* Scrollbar */
+::-webkit-scrollbar{width:8px;height:8px}
+::-webkit-scrollbar-track{background:var(--navy-3)}
+::-webkit-scrollbar-thumb{background:var(--gold);border-radius:10px}
+::-webkit-scrollbar-thumb:hover{background:var(--gold-2)}
+
+a{color:var(--gold);text-decoration:none}
+a:hover{text-decoration:underline}
+
+.topbar{
+  position:sticky; top:0; z-index:50; backdrop-filter:saturate(120%) blur(12px);
+  background:linear-gradient(90deg,var(--navy),#071a33); border-bottom:2px solid var(--gold);
+  display:flex; align-items:center; justify-content:space-between; padding:10px 16px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.3);
+}
+.brand{display:flex; align-items:center; gap:12px}
+.logo{width:36px;height:36px;border-radius:11px;display:grid;place-items:center;
+  background:radial-gradient(circle at 30% 30%,var(--gold),var(--gold-2));
+  box-shadow:0 0 0 2px rgba(255,215,0,.35), 0 8px 24px rgba(255,215,0,.25); color:#09204b; font-weight:900;
+  animation:pulse 2s ease-in-out infinite}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
+.brand h1{font-size:18px;margin:0;letter-spacing:.2px}
+.status{font-size:12px;padding:4px 8px;border-radius:999px;border:1px solid var(--b);background:#0a1e38;color:var(--muted);transition:all 0.3s}
+.status.online{border-color:#134e20;color:#a7f3d0;background:rgba(34,197,94,.12);animation:fadeIn 0.5s}
+.status.offline{border-color:#7f1d1d;color:#fca5a5;background:rgba(239,68,68,.12);animation:shake 0.5s}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
+
+.actions{display:flex; gap:8px;flex-wrap:wrap}
+.btn{background:#0b213f;color:var(--text);border:1px solid var(--b);border-radius:10px;padding:9px 14px;cursor:pointer;font-weight:600;transition:all 0.2s;font-size:13px;position:relative;overflow:hidden}
+.btn::before{content:"";position:absolute;inset:0;background:linear-gradient(45deg,transparent,rgba(255,215,0,0.1),transparent);transform:translateX(-100%);transition:transform 0.6s}
+.btn:hover::before{transform:translateX(100%)}
+.btn:hover{transform:translateY(-2px);border-color:var(--gold);color:var(--gold);box-shadow:0 4px 12px rgba(255,215,0,0.3)}
+.btn:active{transform:translateY(0)}
+.btn.gold{background:linear-gradient(90deg,var(--gold),var(--gold-2));color:#081b39;border:none}
+.btn.gold:hover{filter:brightness(1.1)}
+.btn:disabled{opacity:0.5;cursor:not-allowed;transform:none}
+
+/* Theme toggle */
+.theme-toggle{width:50px;height:26px;background:var(--b);border-radius:13px;position:relative;cursor:pointer;transition:background 0.3s}
+.theme-toggle::after{content:"🌙";position:absolute;left:3px;top:3px;width:20px;height:20px;background:var(--gold);border-radius:50%;transition:all 0.3s;display:flex;align-items:center;justify-content:center;font-size:12px}
+[data-theme="light"] .theme-toggle::after{content:"☀️";left:27px}
+
+.wrap{display:grid;grid-template-columns:280px 1fr;gap:16px;padding:16px;max-width:1500px;margin:0 auto}
+.sidebar{background:linear-gradient(180deg, #0f2546, #0e213f);border:1px solid var(--b);border-radius:14px;box-shadow:var(--shadow);padding:14px;position:sticky;top:80px;max-height:calc(100vh - 100px);overflow-y:auto}
+.main{display:grid;grid-template-rows:auto auto 1fr;gap:16px}
+
+.sidebar h3{margin:4px 0 8px;color:var(--gold);display:flex;align-items:center;gap:8px}
+.search{position:relative;margin-bottom:10px}
+.search input{width:100%;background:#0b213f;color:var(--text);border:1px solid var(--b);border-radius:10px;padding:10px 34px 10px 36px;transition:all 0.3s}
+.search input:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(255,215,0,0.1)}
+.search svg{position:absolute;left:10px;top:10px;transition:transform 0.3s}
+.search input:focus + svg{transform:scale(1.1)}
+
+.leagues{display:grid;gap:8px;max-height:calc(100vh - 300px);overflow:auto;padding-right:6px}
+.league{display:flex;justify-content:space-between;align-items:center;gap:8px;background:#0b213f;border:1px solid var(--b);border-left:4px solid var(--gold);
+  padding:10px;border-radius:10px;cursor:pointer;transition:all 0.2s}
+.league:hover{transform:translateX(3px);border-color:var(--gold);box-shadow:0 4px 8px rgba(255,215,0,0.2)}
+.league.active{outline:2px solid var(--gold);border-left-color:var(--ok);background:#0d2447}
+.league-name{flex:1;font-size:13px}
+.league-count{font-size:11px;background:var(--navy-3);padding:2px 8px;border-radius:999px;color:var(--gold);font-weight:600}
+
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.kpi{background:linear-gradient(180deg,#0e2242,#0c1d38);border:1px solid var(--b);border-radius:14px;padding:14px;box-shadow:var(--shadow);position:relative;overflow:hidden;transition:transform 0.3s}
+.kpi:hover{transform:translateY(-4px);box-shadow:0 12px 24px rgba(0,0,0,0.4)}
+.kpi::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--gold)}
+.kpi h4{margin:0 0 6px;color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:0.5px}
+.kpi .val{font-size:26px;font-weight:700;background:linear-gradient(135deg,var(--gold),var(--gold-2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;animation:countUp 1s ease-out}
+@keyframes countUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.kpi .sub{font-size:12px;color:var(--muted);margin-top:4px}
+
+.filters{display:flex;gap:10px;align-items:center;background:linear-gradient(180deg,#0e2040,#0b1b35);border:1px solid var(--b);padding:12px;border-radius:14px;flex-wrap:wrap;box-shadow:var(--shadow)}
+.select,.input{background:#0b213f;color:var(--text);border:1px solid var(--b);border-radius:10px;padding:10px;transition:all 0.3s;min-width:150px}
+.select:focus,.input:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(255,215,0,0.1)}
+.tag{font-size:12px;border:1px solid var(--b);background:#0b213f;padding:4px 10px;border-radius:999px;white-space:nowrap}
+.refresh{margin-left:auto}
+
+.card{background:linear-gradient(180deg,#0e2242,#0c1d38);border:1px solid var(--b);border-radius:14px;padding:14px;box-shadow:var(--shadow);min-height:220px;position:relative}
+.card h3{margin:2px 0 10px;font-size:16px;display:flex;align-items:center;gap:8px}
+.table-wrapper{overflow-x:auto;border-radius:10px}
+table{width:100%;border-collapse:collapse}
+th,td{padding:12px;border-bottom:1px dashed var(--b);text-align:left;transition:background 0.2s}
+th{color:var(--gold);position:sticky;top:0;background:#0c1d38;white-space:nowrap;font-weight:600;text-transform:uppercase;font-size:11px;letter-spacing:0.5px;z-index:10}
+tr{transition:all 0.2s}
+tr:hover{background:#0a2243;transform:scale(1.01)}
+.pill{padding:4px 12px;border-radius:999px;font-weight:700;font-size:13px;display:inline-block;transition:all 0.2s}
+.pill:hover{transform:scale(1.05)}
+.ok{background:rgba(34,197,94,.15);border:1px solid #14532d;color:#86efac}
+.mid{background:rgba(245,158,11,.15);border:1px solid #7c5806;color:#facc15}
+.bad{background:rgba(239,68,68,.15);border:1px solid #7f1d1d;color:#fca5a5}
+.odd{display:inline-flex;align-items:center;padding:3px 10px;border-radius:6px;font-weight:700;background:var(--gold);color:#072046;font-size:13px;box-shadow:0 2px 4px rgba(255,215,0,0.3)}
+.score-box{background:#0a1e38;border:1px solid var(--b);padding:5px 10px;border-radius:6px;font-weight:700;color:var(--gold);font-size:14px}
+
+/* Sortable columns */
+th.sortable{cursor:pointer;user-select:none;position:relative;padding-right:24px}
+th.sortable:hover{color:var(--gold-2)}
+th.sortable::after{content:"⇅";position:absolute;right:8px;opacity:0.3;transition:opacity 0.2s}
+th.sortable:hover::after{opacity:1}
+th.sortable.asc::after{content:"↑";opacity:1}
+th.sortable.desc::after{content:"↓";opacity:1}
+
+.skel{position:relative;overflow:hidden;background:#0b213f;min-height:38px;border-radius:10px;border:1px solid var(--b)}
+.skel::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,.07),transparent);animation:shine 1.2s linear infinite}
+@keyframes shine{0%{transform:translateX(-100%)}100%{transform:translateX(100%)}}
+
+/* Progress bar for setup */
+.progress-bar{width:100%;height:6px;background:var(--navy-3);border-radius:3px;overflow:hidden;margin:10px 0}
+.progress-fill{height:100%;background:linear-gradient(90deg,var(--gold),var(--gold-2));transition:width 0.5s ease;border-radius:3px;position:relative}
+.progress-fill::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.3),transparent);animation:shimmer 2s infinite}
+@keyframes shimmer{0%{transform:translateX(-100%)}100%{transform:translateX(100%)}}
+
+.toast{position:fixed;bottom:16px;left:50%;transform:translateX(-50%);background:#0b213f;border:1px solid var(--b);border-left:4px solid var(--gold);
+  color:var(--text);padding:12px 16px;border-radius:12px;box-shadow:var(--shadow);display:none;z-index:60;max-width:90%;font-size:14px;animation:slideUp 0.3s ease-out}
+.toast.show{display:block}
+@keyframes slideUp{from{transform:translateX(-50%) translateY(20px);opacity:0}to{transform:translateX(-50%) translateY(0);opacity:1}}
+
+.loading-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.85);display:none;align-items:center;justify-content:center;z-index:100;flex-direction:column;gap:20px;backdrop-filter:blur(8px)}
+.loading-overlay.show{display:flex}
+.spinner{width:50px;height:50px;border:4px solid var(--b);border-top-color:var(--gold);border-radius:50%;animation:spin 1s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.loading-text{font-size:18px;font-weight:600;color:var(--gold);text-align:center;max-width:400px}
+.loading-steps{font-size:14px;color:var(--muted);text-align:center}
+
+.setup-screen{position:fixed;inset:0;background:var(--bg);z-index:200;display:none;align-items:center;justify-content:center;flex-direction:column;gap:30px;padding:20px;backdrop-filter:blur(10px)}
+.setup-screen.show{display:flex;animation:fadeIn 0.5s}
+.setup-card{background:linear-gradient(180deg,#0e2242,#0c1d38);border:2px solid var(--gold);border-radius:20px;padding:40px;max-width:600px;width:100%;box-shadow:0 20px 60px rgba(0,0,0,.5);animation:slideIn 0.5s ease-out}
+@keyframes slideIn{from{transform:translateY(-30px);opacity:0}to{transform:translateY(0);opacity:1}}
+.setup-card h2{margin:0 0 10px;font-size:28px;color:var(--gold);text-align:center}
+.setup-card p{margin:0 0 30px;color:var(--muted);text-align:center;font-size:14px}
+.setup-steps{display:grid;gap:20px;margin-bottom:30px}
+.setup-step{background:#0a1e38;border:1px solid var(--b);border-radius:12px;padding:20px;display:flex;gap:15px;align-items:start;transition:all 0.3s}
+.setup-step.active{border-color:var(--gold);background:#0b213f;box-shadow:0 4px 12px rgba(255,215,0,0.2)}
+.setup-step.done{border-color:var(--ok);opacity:0.7}
+.step-num{width:32px;height:32px;background:var(--gold);color:#081b39;border-radius:50%;display:grid;place-items:center;font-weight:700;flex-shrink:0;transition:all 0.3s}
+.setup-step.done .step-num{background:var(--ok);animation:checkmark 0.5s ease-out}
+@keyframes checkmark{0%{transform:scale(0.8)}50%{transform:scale(1.2)}100%{transform:scale(1)}}
+.step-content{flex:1}
+.step-title{font-size:16px;font-weight:600;margin:0 0 5px;color:var(--gold)}
+.step-desc{font-size:13px;color:var(--muted);margin:0}
+.setup-actions{display:flex;gap:10px;justify-content:center}
+
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.7);display:none;align-items:center;justify-content:center;z-index:150;backdrop-filter:blur(4px)}
+.modal.show{display:flex;animation:fadeIn 0.3s}
+.modal-card{background:linear-gradient(180deg,#0e2242,#0c1d38);border:1px solid var(--b);border-radius:16px;max-width:900px;width:92%;max-height:85vh;overflow-y:auto;padding:20px;box-shadow:var(--shadow);animation:modalSlide 0.3s ease-out}
+@keyframes modalSlide{from{transform:scale(0.9);opacity:0}to{transform:scale(1);opacity:1}}
+.modal-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;padding-bottom:12px;border-bottom:1px solid var(--b)}
+.close{cursor:pointer;border:none;background:transparent;color:#fff;font-size:24px;transition:all 0.2s;width:32px;height:32px;display:flex;align-items:center;justify-content:center;border-radius:8px}
+.close:hover{background:rgba(255,68,68,0.2);color:var(--err);transform:rotate(90deg)}
+
+footer{color:var(--muted);text-align:center;padding:20px;border-top:1px solid var(--b);margin-top:20px;font-size:13px}
+
+/* Mobile optimization */
+@media (max-width:900px){
+  .wrap{grid-template-columns:1fr;gap:12px}
+  .sidebar{position:static;max-height:none;order:2}
+  .main{order:1}
+  .kpis{grid-template-columns:1fr 1fr;gap:10px}
+  .actions{justify-content:center;width:100%}
+  .btn{flex:1;min-width:0}
+  .filters{flex-direction:column;align-items:stretch}
+  .select,.input{width:100%}
+  th,td{padding:8px;font-size:12px}
+  .setup-card{padding:24px}
+}
+
+/* Print styles */
+@media print{
+  .topbar,.sidebar,.filters,.btn{display:none}
+  .card{box-shadow:none;border:1px solid #000}
+  body{background:#fff;color:#000}
+}
+
+/* Accessibility */
+.btn:focus,.select:focus,.input:focus{outline:2px solid var(--gold);outline-offset:2px}
+.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+</style>
+</head>
+<body>
+
+<div id="loading" class="loading-overlay">
+  <div class="spinner"></div>
+  <div class="loading-text" id="loading-text">Yükleniyor...</div>
+  <div class="loading-steps" id="loading-steps"></div>
+</div>
+
+<div id="setup-screen" class="setup-screen">
+  <div class="setup-card">
+    <h2>🚀 Predicta ML Otomatik Kurulum</h2>
+    <p>Sistem otomatik olarak hazırlanıyor. Lütfen bekleyin.</p>
+    
+    <div class="progress-bar">
+      <div class="progress-fill" id="setup-progress" style="width:0%"></div>
+    </div>
+    
+    <div class="setup-steps">
+      <div class="setup-step" id="step-1">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <div class="step-title">Geçmiş Verileri Yükle</div>
+          <div class="step-desc">Tarihsel maç verileri sisteme aktarılıyor</div>
+        </div>
+      </div>
+      
+      <div class="setup-step" id="step-2">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <div class="step-title">Model Eğitimi</div>
+          <div class="step-desc">AI modelleri eğitiliyor (5-10 dakika sürebilir)</div>
+        </div>
+      </div>
+      
+      <div class="setup-step" id="step-3">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <div class="step-title">Sistem Hazırlama</div>
+          <div class="step-desc">Modeller yükleniyor ve sistem aktif hale getiriliyor</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="setup-actions">
+      <div style="text-align:center;color:var(--muted);font-size:13px">
+        <div class="spinner" style="width:30px;height:30px;border-width:3px;margin:0 auto 10px"></div>
+        <div id="setup-status">Durum kontrol ediliyor...</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="topbar">
+  <div class="brand">
+    <div class="logo">⚽</div>
+    <h1>Predicta Europe ML – Auto</h1>
+    <span id="status" class="status">Bağlanıyor...</span>
+  </div>
+  <div class="actions">
+    <div class="theme-toggle" id="theme-toggle" title="Dark/Light Mode"></div>
+    <button class="btn" id="btn-stats" title="Tahmin İstatistikleri">📈 İstatistikler</button>
+    <button class="btn" id="btn-reload" title="Reload Models">🔄 Reload</button>
+    <button class="btn gold" id="btn-settings">⚙ Settings</button>
+  </div>
+</div>
+
+<div class="wrap">
+  <aside class="sidebar">
+    <h3><span>🏆</span> Ligler</h3>
+    <div class="search">
+      <input id="q" placeholder="Lig ara..." aria-label="Lig ara">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M21 21l-4.3-4.3M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15z" stroke="#89a6d6" stroke-width="2" stroke-linecap="round"/></svg>
+    </div>
+    <div id="leagues" class="leagues" role="list">
+      <div class="skel"></div><div class="skel"></div><div class="skel"></div>
+    </div>
+  </aside>
+
+  <section class="main">
+    <div class="kpis" role="region" aria-label="Özet İstatistikler">
+      <div class="kpi"><h4>Bugünkü Maçlar</h4><div class="val" id="kpi-matches">—</div><div class="sub">Nesine bülteni</div></div>
+      <div class="kpi"><h4>Model Doğruluğu</h4><div class="val" id="kpi-acc">—</div><div class="sub">Ensemble model</div></div>
+      <div class="kpi"><h4>En Yüksek Güven</h4><div class="val" id="kpi-top">—</div><div class="sub" id="kpi-top-sub">—</div></div>
+      <div class="kpi"><h4>Son Güncelleme</h4><div class="val" id="kpi-up">—</div><div class="sub">Otomatik yenileme</div></div>
+    </div>
+
+    <div class="filters" role="search">
+      <select id="sel-league" class="select" aria-label="Lig seç"><option value="">Tüm Ligler</option></select>
+      <select id="sel-sort" class="select" aria-label="Sıralama">
+        <option value="time">Zamana Göre</option>
+        <option value="confidence">Güvene Göre</option>
+        <option value="value">Değere Göre</option>
+      </select>
+      <input id="txt-team" class="input" placeholder="Takım ara..." aria-label="Takım ara">
+      <label style="display:flex;align-items:center;gap:6px;cursor:pointer;user-select:none">
+        <input type="checkbox" id="chk-filter" style="width:18px;height:18px;cursor:pointer">
+        <span style="font-size:13px">Sadece Büyük Ligler</span>
+      </label>
+      <span class="tag">Model: <b>ML Ensemble</b></span>
+      <button class="btn refresh" id="btn-refresh">↻ Yenile</button>
+    </div>
+
+    <div class="card">
+      <h3><span>⚽</span> Bugünkü Maçlar & AI Tahminleri</h3>
+      <div class="table-wrapper">
+        <table role="table">
+          <thead>
+            <tr>
+              <th class="sortable" data-sort="match">Maç</th>
+              <th class="sortable" data-sort="ms">MS</th>
+              <th class="sortable" data-sort="score">Skor</th>
+              <th class="sortable" data-sort="confidence">Güven</th>
+              <th class="sortable" data-sort="value">Değer</th>
+              <th style="width:140px;text-align:right">İşlem</th>
+            </tr>
+          </thead>
+          <tbody id="rows">
+            <tr><td colspan="6"><div class="skel"></div></td></tr>
+            <tr><td colspan="6"><div class="skel"></div></td></tr>
+            <tr><td colspan="6"><div class="skel"></div></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer>
+  © 2025 Predicta Europe ML • Auto Mode v2.0 • 
+  <a href="https://github.com/yourusername/predicta" target="_blank">GitHub</a> • 
+  <a href="#" id="privacy-link">Privacy</a>
+</footer>
+
+<div id="toast" class="toast" role="alert" aria-live="polite">Mesaj</div>
+
+<div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="modal-card">
+    <div class="modal-header">
+      <h3 id="modal-title" style="margin:0;font-size:18px">Maç Detayı</h3>
+      <button class="close" id="modal-close" aria-label="Kapat">✕</button>
+    </div>
+    <div id="modal-body" style="font-size:14px;color:#dbe6ff"></div>
+  </div>
+</div>
+
+<div id="stats-modal" class="modal" role="dialog" aria-modal="true">
+  <div class="modal-card">
+    <div class="modal-header">
+      <h3 style="margin:0;font-size:20px">📊 Tahmin İstatistikleri</h3>
+      <button class="close" id="stats-close" aria-label="Kapat">✕</button>
+    </div>
+    <div id="stats-body"></div>
+  </div>
+</div>
+
+<script>
+/* ================= Configuration ================= */
+const API_BASE = (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
+  ? "http://localhost:8000"
+  : "https://predicta-production.up.railway.app";
+
+const REFRESH_DEFAULT_MIN = 5;
+const STATUS_CHECK_INTERVAL = 3000;
+const RECONNECT_INTERVAL = 5000;
+const MAX_RECONNECT_ATTEMPTS = 10;
+
+const $ = s=>document.querySelector(s);
+const rows = $("#rows"), leaguesBox=$("#leagues"), statusEl=$("#status"), loadingEl=$("#loading");
+const setupScreen = $("#setup-screen");
+const modal = $("#modal"), modalBody=$("#modal-body"), modalClose=$("#modal-close");
+const statsModal = $("#stats-modal"), statsBody=$("#stats-body"), statsClose=$("#stats-close");
+
+let ALL_ITEMS=[], FILTERED=[], ALL_LEAGUES=[], CURRENT_LEAGUE="";
+let refreshTimer=null;
+let statusCheckTimer=null;
+let reconnectTimer=null;
+let reconnectAttempts = 0;
+let isOnline = false;
+let currentSort = {column: 'time', direction: 'asc'};
+
+/* ================= Theme Management ================= */
+function initTheme(){
+  const savedTheme = localStorage.getItem('theme') || 'dark';
+  document.documentElement.setAttribute('data-theme', savedTheme);
+}
+
+function toggleTheme(){
+  const current = document.documentElement.getAttribute('data-theme');
+  const newTheme = current === 'dark' ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', newTheme);
+  localStorage.setItem('theme', newTheme);
+  toast(newTheme === 'dark' ? '🌙 Dark Mode' : '☀️ Light Mode', 'info');
+}
+
+/* ================= Utilities ================= */
+function toast(msg,type="info"){
+  const el=$("#toast");
+  el.textContent=msg;
+  el.style.borderLeftColor = type==="ok"?"var(--ok)":type==="err"?"var(--err)":"var(--gold)";
+  el.classList.add("show");
+  setTimeout(()=>el.classList.remove("show"),3500);
+}
+
+function showLoading(show, text="Yükleniyor...", steps=""){
+  loadingEl.classList.toggle("show", show);
+  if(show){
+    $("#loading-text").textContent = text;
+    $("#loading-steps").textContent = steps;
+  }
+}
+
+function setStatus(online){
+  isOnline = online;
+  statusEl.textContent = online ? "Çevrimiçi" : "Çevrimdışı - Yeniden bağlanılıyor...";
+  statusEl.classList.remove("online", "offline");
+  statusEl.classList.add(online ? "online" : "offline");
+  
+  if(!online && !reconnectTimer){
+    startReconnection();
+  } else if(online && reconnectTimer){
+    stopReconnection();
+  }
+}
+
+function startReconnection(){
+  if(reconnectTimer) return;
+  
+  reconnectAttempts = 0;
+  
+  reconnectTimer = setInterval(async () => {
+    reconnectAttempts++;
+    
+    if(reconnectAttempts > MAX_RECONNECT_ATTEMPTS){
+      stopReconnection();
+      toast("❌ Bağlantı kurulamadı. Lütfen sayfayı yenileyin.", "err");
+      return;
+    }
+    
+    try {
+      const status = await checkBackendStatus();
+      if(status.online){
+        setStatus(true);
+        toast("✅ Bağlantı yeniden kuruldu", "ok");
+        await loadAll();
+      }
+    } catch(e) {
+      console.log(`Reconnection attempt ${reconnectAttempts}/${MAX_RECONNECT_ATTEMPTS}`);
+    }
+  }, RECONNECT_INTERVAL);
+}
+
+function stopReconnection(){
+  if(reconnectTimer){
+    clearInterval(reconnectTimer);
+    reconnectTimer = null;
+    reconnectAttempts = 0;
+  }
+}
+
+function markStepDone(stepNum){
+  const step = $(`#step-${stepNum}`);
+  if(step){
+    step.classList.remove("active");
+    step.classList.add("done");
+  }
+  if(stepNum < 3){
+    const nextStep = $(`#step-${stepNum + 1}`);
+    if(nextStep) nextStep.classList.add("active");
+  }
+}
+
+function updateSetupStatus(autoTraining){
+  const setupStatus = $("#setup-status");
+  const progressBar = $("#setup-progress");
+  
+  if(!setupStatus) return;
+  
+  const step = autoTraining.current_step;
+  const progress = autoTraining.progress || 0;
+  const message = autoTraining.message || "";
+  const eta = autoTraining.eta_minutes;
+  
+  let statusText = "";
+  
+  if(step === "history"){
+    markStepDone(1);
+    statusText = `Adım 1/3: ${message}`;
+  } else if(step === "training"){
+    markStepDone(2);
+    statusText = `Adım 2/3: ${message}`;
+  } else if(step === "reload"){
+    markStepDone(3);
+    statusText = `Adım 3/3: ${message}`;
+  } else {
+    statusText = message || "Durum kontrol ediliyor...";
+  }
+  
+  if(eta !== null && eta !== undefined && eta > 0){
+    statusText += ` - ${eta} dk kaldı`;
+  }
+  
+  if(progress > 0 && progress < 100){
+    statusText += ` (${progress}%)`;
+  }
+  
+  setupStatus.textContent = statusText;
+  
+  if(progressBar){
+    progressBar.style.width = `${progress}%`;
+  }
+}
+
+/* ================= API ================= */
+async function getJSON(url, init){
+  const r = await fetch(url, init);
+  if(!r.ok) throw new Error(`HTTP ${r.status}`);
+  return await r.json();
+}
+
+async function checkBackendStatus(){
+  try{
+    const data = await getJSON(API_BASE + "/api/status");
+    return {
+      online: true,
+      trained: data.model_trained || false,
+      autoTraining: data.auto_training || {}
+    };
+  }catch(e){
+    return {online: false, trained: false, autoTraining: {}};
+  }
+}
+
+async function fetchLeagues(){
+  const filterEnabled = document.getElementById('chk-filter')?.checked ?? false;
+  const j = await getJSON(API_BASE+"/api/leagues?filter="+filterEnabled);
+  return j.items || [];
+}
+
+async function fetchTodayPredict(){
+  const filterEnabled = document.getElementById('chk-filter')?.checked ?? false;
+  const url = API_BASE + "/api/predict/today?filter=" + filterEnabled;
+  const j = await getJSON(url);
+  return j.items || [];
+}
+
+async function fetchAccuracyReport(days=7){
+  const j = await getJSON(API_BASE + "/api/predictions/accuracy-report?days=" + days);
+  return j;
+}
+
+/* ================= Auto-Training Monitor ================= */
+async function monitorAutoTraining(){
+  try {
+    const status = await checkBackendStatus();
+    
+    if(!status.online){
+      setStatus(false);
+      return false;
+    }
+    
+    setStatus(true);
+    
+    const autoTraining = status.autoTraining || {};
+    
+    if(autoTraining.is_running){
+      if(!setupScreen.classList.contains("show")){
+        setupScreen.classList.add("show");
+      }
+      updateSetupStatus(autoTraining);
+      return false;
+    }
+    
+    if(autoTraining.error){
+      setupScreen.classList.remove("show");
+      toast("❌ Kurulum hatası: " + autoTraining.error, "err");
+      return false;
+    }
+    
+    if(status.trained){
+      setupScreen.classList.remove("show");
+      return true;
+    }
+    
+    if(!setupScreen.classList.contains("show")){
+      setupScreen.classList.add("show");
+      updateSetupStatus({message: "Sistem hazırlanıyor..."});
+    }
+    
+    return false;
+    
+  } catch(e) {
+    console.error("Status check error:", e);
+    return false;
+  }
+}
+
+/* ================= Stats Modal ================= */
+async function showStatsModal(){
+  try{
+    showLoading(true, "İstatistikler yükleniyor...");
+    const report = await fetchAccuracyReport(7);
+    
+    if(report.status === "no_data" || report.status === "no_validated"){
+      statsBody.innerHTML = `
+        <div style="text-align:center;padding:40px;color:var(--muted)">
+          <div style="font-size:48px;margin-bottom:16px">📊</div>
+          <div style="font-size:18px;margin-bottom:8px">Henüz veri yok</div>
+          <div style="font-size:14px">${report.message || "Tahminler kaydedilip sonuçlar güncellendiğinde burada görünecek"}</div>
+        </div>
+      `;
+      statsModal.classList.add("show");
+      showLoading(false);
+      return;
+    }
+    
+    const html = `
+      <div style="margin-bottom:20px">
+        <div style="font-size:14px;color:var(--muted);margin-bottom:12px">Son ${report.period || "7 gün"}</div>
+        
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px">
+          <div style="background:#0a1e38;border:1px solid var(--b);border-radius:10px;padding:14px">
+            <div style="font-size:12px;color:var(--muted);margin-bottom:6px">Toplam Tahmin</div>
+            <div style="font-size:24px;font-weight:700;color:var(--gold)">${report.total_predictions || 0}</div>
+          </div>
+          
+          <div style="background:#0a1e38;border:1px solid var(--b);border-radius:10px;padding:14px">
+            <div style="font-size:12px;color:var(--muted);margin-bottom:6px">MS Doğruluğu</div>
+            <div style="font-size:24px;font-weight:700;color:var(--gold)">${report.ms_accuracy?.percentage || 0}%</div>
+          </div>
+          
+          <div style="background:#0a1e38;border:1px solid var(--b);border-radius:10px;padding:14px">
+            <div style="font-size:12px;color:var(--muted);margin-bottom:6px">Skor Doğruluğu</div>
+            <div style="font-size:24px;font-weight:700;color:var(--gold)">${report.score_accuracy?.percentage || 0}%</div>
+          </div>
+        </div>
+      </div>
+    `;
+    
+    statsBody.innerHTML = html;
+    statsModal.classList.add("show");
+    showLoading(false);
+    
+  }catch(e){
+    console.error("Stats error:", e);
+    showLoading(false);
+    toast("İstatistikler yüklenemedi: " + e.message, "err");
+  }
+}
+
+/* ================= UI ================= */
+function pct(x){return (x!=null && !Number.isNaN(x)) ? (Number(x).toFixed(1)+"%") : "—";}
+function valuePill(v){
+  if(v>=0.12) return '<span class="pill ok">Düşük Risk</span>';
+  if(v>=0.06) return '<span class="pill mid">Orta Risk</span>';
+  return '<span class="pill bad">Yüksek Risk</span>';
+}
+
+function fillLeagues(list){
+  leaguesBox.innerHTML="";
+  ALL_LEAGUES = list || [];
+  
+  const render = items=>{
+    leaguesBox.innerHTML="";
+    if(!items || items.length === 0){
+      leaguesBox.innerHTML = '<div style="padding:10px;color:var(--muted);text-align:center">Lig bulunamadı</div>';
+      return;
+    }
+    items.forEach(league=>{
+      const div=document.createElement("div");
+      div.className="league";
+      div.setAttribute("role", "listitem");
+      const name = league.name || league;
+      const count = league.match_count || 0;
+      div.innerHTML=`
+        <span class="league-name">${name}</span>
+        ${count > 0 ? `<span class="league-count">${count}</span>` : ''}
+        <span style="color:var(--gold)">›</span>
+      `;
+      div.onclick=()=>{
+        CURRENT_LEAGUE = name;
+        $("#sel-league").value = name;
+        leaguesBox.querySelectorAll(".league").forEach(x=>x.classList.remove("active"));
+        div.classList.add("active");
+        applyFilters();
+      };
+      leaguesBox.appendChild(div);
+    });
+  };
+  
+  render(ALL_LEAGUES);
+  
+  $("#q").oninput=e=>{
+    const q=e.target.value.toLowerCase().trim();
+    const filtered = ALL_LEAGUES.filter(x=>{
+      const name = (x.name || x).toLowerCase();
+      return name.includes(q);
+    });
+    render(filtered);
+  };
+  
+  const sel=$("#sel-league");
+  sel.innerHTML='<option value="">Tüm Ligler</option>';
+  ALL_LEAGUES.forEach(lg=>{
+    const name = lg.name || lg;
+    const count = lg.match_count || 0;
+    sel.innerHTML += `<option value="${name}">${name} ${count > 0 ? '('+count+')' : ''}</option>`;
+  });
+}
+
+function fillTable(items){
+  rows.innerHTML="";
+  if(!items.length){ 
+    rows.innerHTML='<tr><td colspan="6" style="text-align:center;padding:30px;color:var(--muted)">Maç bulunamadı.</td></tr>'; 
+    return; 
+  }
+  
+  for(const it of items){
+    const p = it.prediction || {};
+    const pred = p.prediction || p.result || "-";
+    const cls = pred==="1"?"ok":pred==="X"?"mid":pred==="2"?"bad":"";
+    const score = p.score_prediction || "?-?";
+    const conf = p.confidence || 0;
+    const valueIdx = (p.value_bet && typeof p.value_bet.value_index === "number") ? p.value_bet.value_index : 0;
+    
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+      <td data-sort-value="${it.home_team}">
+        <strong>${it.home_team || "?"}</strong> – <strong>${it.away_team || "?"}</strong>
+        <div style="font-size:11px;color:var(--muted);margin-top:4px">${it.league||""} • ${it.time||""}</div>
+      </td>
+      <td data-sort-value="${pred}"><span class="pill ${cls}">${pred}</span></td>
+      <td data-sort-value="${score}"><span class="score-box">${score}</span></td>
+      <td data-sort-value="${conf}">${pct(conf)}</td>
+      <td data-sort-value="${valueIdx}">
+        <span class="odd">${Number(valueIdx).toFixed(2)}</span>
+        <div style="margin-top:6px">${valuePill(Number(valueIdx))}</div>
+      </td>
+      <td style="text-align:right">
+        <button class="btn" onclick='showDetails(${JSON.stringify(it).replace(/'/g,"\\'")})'>📊 Detay</button>
+      </td>
+    `;
+    rows.appendChild(tr);
+  }
+  
+  $("#kpi-matches").textContent = items.length;
+  if(items.length > 0){
+    const avgConf = items.reduce((sum, m) => sum + (m.prediction?.confidence || 0), 0) / items.length;
+    $("#kpi-acc").textContent = avgConf.toFixed(1) + "%";
+    
+    const topMatch = items.reduce((max, m) => 
+      (m.prediction?.confidence || 0) > (max.prediction?.confidence || 0) ? m : max
+    , items[0]);
+    
+    $("#kpi-top").textContent = (topMatch.prediction?.confidence || 0).toFixed(1) + "%";
+    $("#kpi-top-sub").textContent = `${topMatch.home_team} - ${topMatch.away_team}`;
+  }
+  
+  $("#kpi-up").textContent = new Date().toLocaleTimeString('tr-TR', {hour:'2-digit', minute:'2-digit'});
+}
+
+/* ================= Sorting ================= */
+function setupTableSorting(){
+  document.querySelectorAll('th.sortable').forEach(th => {
+    th.addEventListener('click', () => {
+      const column = th.getAttribute('data-sort');
+      
+      if(currentSort.column === column){
+        currentSort.direction = currentSort.direction === 'asc' ? 'desc' : 'asc';
+      } else {
+        currentSort.column = column;
+        currentSort.direction = 'asc';
+      }
+      
+      document.querySelectorAll('th.sortable').forEach(h => {
+        h.classList.remove('asc', 'desc');
+      });
+      th.classList.add(currentSort.direction);
+      
+      applyFilters();
+    });
+  });
+}
+
+function applyFilters(){
+  const league=$("#sel-league").value.trim();
+  const team=$("#txt-team").value.toLowerCase().trim();
+  const sort=$("#sel-sort").value;
+  
+  FILTERED = ALL_ITEMS.filter(m=>{
+    const okL = !league || (m.league||"").toLowerCase()===league.toLowerCase();
+    const okT = !team || (m.home_team||"").toLowerCase().includes(team) || (m.away_team||"").toLowerCase().includes(team);
+    return okL && okT;
+  });
+  
+  const getConf = it => (it.prediction?.confidence)||0;
+  const getVal = it => (it.prediction?.value_bet?.value_index)||0;
+  
+  if(sort==="confidence") FILTERED.sort((a,b)=>getConf(b)-getConf(a));
+  else if(sort==="value") FILTERED.sort((a,b)=>getVal(b)-getVal(a));
+  else FILTERED.sort((a,b)=> (a.time||"").localeCompare(b.time||""));
+  
+  fillTable(FILTERED);
+}
+
+function showDetails(item){
+  const p = item.prediction || {};
+  const html = `
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+      <div>
+        <div style="font-size:13px;color:var(--muted);margin-bottom:4px">Maç</div>
+        <div style="font-weight:700;font-size:16px">${item.home_team} – ${item.away_team}</div>
+      </div>
+      <div>
+        <div style="font-size:13px;color:var(--muted);margin-bottom:4px">Lig / Saat</div>
+        <div style="font-size:14px">${item.league || "-"} • ${item.time || "-"}</div>
+      </div>
+      <div>
+        <div style="font-size:13px;color:var(--muted);margin-bottom:4px">Tahmin (MS)</div>
+        <div><span class="pill ${p.prediction==="1"?"ok":p.prediction==="X"?"mid":"bad"}">${p.prediction || "-"}</span></div>
+      </div>
+      <div>
+        <div style="font-size:13px;color:var(--muted);margin-bottom:4px">Skor</div>
+        <div class="score-box">${p.score_prediction || "?-?"}</div>
+      </div>
+      <div>
+        <div style="font-size:13px;color:var(--muted);margin-bottom:4px">Güven</div>
+        <div style="font-size:18px;font-weight:700;color:var(--gold)">${pct(p.confidence || 0)}</div>
+      </div>
+      <div>
+        <div style="font-size:13px;color:var(--muted);margin-bottom:4px">Değer Endeksi</div>
+        <div style="font-size:18px;font-weight:700;color:var(--gold)">${(p.value_bet?.value_index ?? 0).toFixed(2)}</div>
+      </div>
+      <div style="grid-column:1/-1;margin-top:8px;padding-top:12px;border-top:1px solid var(--b)">
+        <div style="font-size:13px;color:var(--muted);margin-bottom:6px">Oranlar</div>
+        <div style="display:flex;gap:12px">
+          <div><b>1:</b> ${(item.odds?.["1"] ?? "-")}</div>
+          <div><b>X:</b> ${(item.odds?.["X"] ?? "-")}</div>
+          <div><b>2:</b> ${(item.odds?.["2"] ?? "-")}</div>
+        </div>
+      </div>
+    </div>
+  `;
+  modalBody.innerHTML = html;
+  modal.classList.add("show");
+}
+
+/* =============== Data Loaders =============== */
+async function loadAll(){
+  try{
+    showLoading(true, "Veriler yükleniyor...");
+    const [leagues, items] = await Promise.all([fetchLeagues(), fetchTodayPredict()]);
+    fillLeagues(leagues);
+    ALL_ITEMS = items || [];
+    applyFilters();
+  }catch(e){
+    console.error(e);
+    if(!isOnline){
+      toast("Bağlantı hatası - Yeniden deneniyor...", "err");
+    } else {
+      toast("Veriler yüklenemedi: "+e.message, "err");
+    }
+  }finally{
+    showLoading(false);
+  }
+}
+
+async function initialBoot(){
+  const ready = await monitorAutoTraining();
+  
+  if(ready){
+    await loadAll();
+    scheduleAutoRefresh();
+  } else {
+    statusCheckTimer = setInterval(async () => {
+      const nowReady = await monitorAutoTraining();
+      if(nowReady){
+        clearInterval(statusCheckTimer);
+        await loadAll();
+        scheduleAutoRefresh();
+      }
+    }, STATUS_CHECK_INTERVAL);
+  }
+}
+
+function scheduleAutoRefresh(){
+  if(refreshTimer) clearInterval(refreshTimer);
+  refreshTimer = setInterval(async ()=>{
+    try{
+      const items = await fetchTodayPredict();
+      ALL_ITEMS = items || [];
+      applyFilters();
+    }catch(e){
+      console.log("Auto-refresh error:", e);
+    }
+  }, REFRESH_DEFAULT_MIN*60*1000);
+}
+
+/* ================= Events ================= */
+document.addEventListener("DOMContentLoaded", async ()=>{
+  // Initialize theme
+  initTheme();
+  
+  // Theme toggle
+  $("#theme-toggle").onclick = toggleTheme;
+  
+  // Modal close
+  modalClose.onclick = ()=> modal.classList.remove("show");
+  modal.onclick = (e)=>{ if(e.target===modal) modal.classList.remove("show"); };
+  
+  statsClose.onclick = ()=> statsModal.classList.remove("show");
+  statsModal.onclick = (e)=>{ if(e.target===statsModal) statsModal.classList.remove("show"); };
+
+  // Filters
+  $("#sel-league").onchange = applyFilters;
+  $("#sel-sort").onchange = applyFilters;
+  $("#txt-team").oninput = ()=> { applyFilters(); };
+  $("#chk-filter").onchange = async ()=> { await loadAll(); };
+
+  // Buttons
+  $("#btn-refresh").onclick = async ()=> { 
+    await loadAll(); 
+    toast("✅ Yenilendi","ok"); 
+  };
+  
+  $("#btn-stats").onclick = showStatsModal;
+  
+  $("#btn-reload").onclick = async ()=>{
+    try{
+      showLoading(true, "Modeller yeniden yükleniyor...");
+      await getJSON(API_BASE + "/api/reload", {method:"POST"});
+      toast("✅ Modeller yenilendi", "ok");
+      await loadAll();
+    }catch(e){ 
+      toast("Reload hatası: "+e.message, "err"); 
+    } finally{ 
+      showLoading(false); 
+    }
+  };
+
+  $("#btn-settings").onclick = ()=>{
+    toast("⚙️ Ayarlar yakında", "info");
+  };
+  
+  // Setup table sorting
+  setupTableSorting();
+  
+  // Keyboard shortcuts
+  document.addEventListener('keydown', (e) => {
+    if(e.ctrlKey || e.metaKey){
+      if(e.key === 'k'){
+        e.preventDefault();
+        $("#txt-team").focus();
+      } else if(e.key === 'r'){
+        e.preventDefault();
+        $("#btn-refresh").click();
+      }
+    }
+  });
+
+  // Start auto-boot
+  await initialBoot();
+});
+
+// Expose showDetails globally
+window.showDetails = showDetails;
+</script>
+</body>
+</html>400;600;700&display=swap" rel="stylesheet">
 
 <style>
 :root{
@@ -116,12 +1081,6 @@ tr:hover{background:#0a2243}
 .modal-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
 .close{cursor:pointer;border:none;background:transparent;color:#fff;font-size:22px}
 
-.stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:16px 0}
-.stat-box{background:#0a1e38;border:1px solid var(--b);border-radius:10px;padding:14px}
-.stat-label{font-size:12px;color:var(--muted);margin-bottom:6px}
-.stat-value{font-size:24px;font-weight:700;color:var(--gold)}
-.stat-sub{font-size:11px;color:var(--muted);margin-top:4px}
-
 footer{color:var(--muted);text-align:center;padding:14px;border-top:1px solid var(--b);margin-top:10px;font-size:13px}
 
 @media (max-width:1100px){
@@ -141,37 +1100,40 @@ footer{color:var(--muted);text-align:center;padding:14px;border-top:1px solid va
 
 <div id="setup-screen" class="setup-screen">
   <div class="setup-card">
-    <h2>🚀 Predicta ML Kurulum</h2>
-    <p>Sistem ilk kez başlatılıyor. Aşağıdaki adımları takip edin.</p>
+    <h2>🚀 Predicta ML Otomatik Kurulum</h2>
+    <p>Sistem otomatik olarak hazırlanıyor. Lütfen bekleyin.</p>
     
     <div class="setup-steps">
-      <div class="setup-step active" id="step-1">
+      <div class="setup-step" id="step-1">
         <div class="step-num">1</div>
         <div class="step-content">
-          <div class="step-title">Maçları Çek</div>
-          <div class="step-desc">Nesine'den bugünün maçlarını yükle</div>
+          <div class="step-title">Geçmiş Verileri Yükle</div>
+          <div class="step-desc">Tarihsel maç verileri sisteme aktarılıyor</div>
         </div>
       </div>
       
       <div class="setup-step" id="step-2">
         <div class="step-num">2</div>
         <div class="step-content">
-          <div class="step-title">Geçmiş Verileri Yükle</div>
-          <div class="step-desc">Tarihsel maç verilerini sisteme aktar</div>
+          <div class="step-title">Model Eğitimi</div>
+          <div class="step-desc">AI modelleri eğitiliyor (5-10 dakika sürebilir)</div>
         </div>
       </div>
       
       <div class="setup-step" id="step-3">
         <div class="step-num">3</div>
         <div class="step-content">
-          <div class="step-title">Model Eğitimi</div>
-          <div class="step-desc">AI modellerini eğit (birkaç dakika sürebilir)</div>
+          <div class="step-title">Sistem Hazırlama</div>
+          <div class="step-desc">Modeller yükleniyor ve sistem aktif hale getiriliyor</div>
         </div>
       </div>
     </div>
     
     <div class="setup-actions">
-      <button class="btn gold" id="btn-start-setup">Kuruluma Başla</button>
+      <div style="text-align:center;color:var(--muted);font-size:13px">
+        <div class="spinner" style="width:30px;height:30px;border-width:3px;margin:0 auto 10px"></div>
+        <div id="setup-status">Durum kontrol ediliyor...</div>
+      </div>
     </div>
   </div>
 </div>
@@ -179,14 +1141,11 @@ footer{color:var(--muted);text-align:center;padding:14px;border-top:1px solid va
 <div class="topbar">
   <div class="brand">
     <div class="logo">⚽</div>
-    <h1>Predicta Europe ML – Pro</h1>
+    <h1>Predicta Europe ML – Auto</h1>
     <span id="status" class="status">Bağlanıyor...</span>
   </div>
   <div class="actions">
     <button class="btn" id="btn-stats" title="Tahmin İstatistikleri">📈 İstatistikler</button>
-    <button class="btn" id="btn-debug" title="Nesine API Debug">🔍 Debug</button>
-    <button class="btn" id="btn-load-history" title="Load Historical Data">📊 History</button>
-    <button class="btn" id="btn-train" title="Train Model">🎯 Train</button>
     <button class="btn" id="btn-reload" title="Reload Models">🔄 Reload</button>
     <button class="btn gold" id="btn-settings">⚙ Settings</button>
   </div>
@@ -209,7 +1168,7 @@ footer{color:var(--muted);text-align:center;padding:14px;border-top:1px solid va
       <div class="kpi"><h4>Bugünkü Maçlar</h4><div class="val" id="kpi-matches">—</div><div class="sub">Nesine bülteni</div></div>
       <div class="kpi"><h4>Model Doğruluğu</h4><div class="val" id="kpi-acc">—</div><div class="sub">Ensemble model</div></div>
       <div class="kpi"><h4>En Yüksek Güven</h4><div class="val" id="kpi-top">—</div><div class="sub" id="kpi-top-sub">—</div></div>
-      <div class="kpi"><h4>Son Güncelleme</h4><div class="val" id="kpi-up">—</div><div class="sub">Otomatik yenileme aktif</div></div>
+      <div class="kpi"><h4>Son Güncelleme</h4><div class="val" id="kpi-up">—</div><div class="sub">Otomatik yenileme</div></div>
     </div>
 
     <div class="filters">
@@ -253,33 +1212,40 @@ footer{color:var(--muted);text-align:center;padding:14px;border-top:1px solid va
   </section>
 </div>
 
-<footer>© 2025 Predicta Europe ML • Yellow & Blue • Nesine canlı bülten + AI tahminleri</footer>
+<footer>© 2025 Predicta Europe ML • Auto Mode • Nesine canlı bülten + AI tahminleri</footer>
 
 <div id="toast" class="toast">Mesaj</div>
 
-<div id="modal" class="modal">
+<div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
   <div class="modal-card">
     <div class="modal-header">
       <h3 id="modal-title" style="margin:0;font-size:18px">Maç Detayı</h3>
-      <button class="close" id="modal-close">✕</button>
+      <button class="close" id="modal-close" aria-label="Kapat">✕</button>
     </div>
     <div id="modal-body" style="font-size:14px;color:#dbe6ff"></div>
   </div>
 </div>
 
-<div id="stats-modal" class="modal">
+<div id="stats-modal" class="modal" role="dialog" aria-modal="true">
   <div class="modal-card">
     <div class="modal-header">
       <h3 style="margin:0;font-size:20px">📊 Tahmin İstatistikleri</h3>
-      <button class="close" id="stats-close">✕</button>
+      <button class="close" id="stats-close" aria-label="Kapat">✕</button>
     </div>
     <div id="stats-body"></div>
   </div>
 </div>
 
 <script>
-const API_BASE = "https://predicta-production.up.railway.app";
+/* ================= Configuration ================= */
+const API_BASE = (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
+  ? "http://localhost:8000"
+  : "https://predicta-production.up.railway.app";
+
 const REFRESH_DEFAULT_MIN = 5;
+const STATUS_CHECK_INTERVAL = 3000; // 3 seconds
+const RECONNECT_INTERVAL = 5000; // 5 seconds
+const MAX_RECONNECT_ATTEMPTS = 10;
 
 const $ = s=>document.querySelector(s);
 const rows = $("#rows"), leaguesBox=$("#leagues"), statusEl=$("#status"), loadingEl=$("#loading");
@@ -289,6 +1255,10 @@ const statsModal = $("#stats-modal"), statsBody=$("#stats-body"), statsClose=$("
 
 let ALL_ITEMS=[], FILTERED=[], ALL_LEAGUES=[], CURRENT_LEAGUE="";
 let refreshTimer=null;
+let statusCheckTimer=null;
+let reconnectTimer=null;
+let reconnectAttempts = 0;
+let isOnline = false;
 
 function toast(msg,type="info"){
   const el=$("#toast");
@@ -307,8 +1277,51 @@ function showLoading(show, text="Yükleniyor...", steps=""){
 }
 
 function setStatus(online){
-  statusEl.textContent = online ? "Çevrimiçi" : "Çevrimdışı";
+  isOnline = online;
+  statusEl.textContent = online ? "Çevrimiçi" : "Çevrimdışı - Yeniden bağlanılıyor...";
   statusEl.classList.toggle("online", online);
+  
+  // Start reconnection if offline
+  if(!online && !reconnectTimer){
+    startReconnection();
+  } else if(online && reconnectTimer){
+    stopReconnection();
+  }
+}
+
+function startReconnection(){
+  if(reconnectTimer) return;
+  
+  reconnectAttempts = 0;
+  
+  reconnectTimer = setInterval(async () => {
+    reconnectAttempts++;
+    
+    if(reconnectAttempts > MAX_RECONNECT_ATTEMPTS){
+      stopReconnection();
+      toast("❌ Bağlantı kurulamadı. Lütfen sayfayı yenileyin.", "err");
+      return;
+    }
+    
+    try {
+      const status = await checkBackendStatus();
+      if(status.online){
+        setStatus(true);
+        toast("✅ Bağlantı yeniden kuruldu", "ok");
+        await loadAll();
+      }
+    } catch(e) {
+      console.log(`Reconnection attempt ${reconnectAttempts}/${MAX_RECONNECT_ATTEMPTS}`);
+    }
+  }, RECONNECT_INTERVAL);
+}
+
+function stopReconnection(){
+  if(reconnectTimer){
+    clearInterval(reconnectTimer);
+    reconnectTimer = null;
+    reconnectAttempts = 0;
+  }
 }
 
 function markStepDone(stepNum){
@@ -323,6 +1336,44 @@ function markStepDone(stepNum){
   }
 }
 
+function updateSetupStatus(autoTraining){
+  const setupStatus = $("#setup-status");
+  if(!setupStatus) return;
+  
+  const step = autoTraining.current_step;
+  const progress = autoTraining.progress || 0;
+  const message = autoTraining.message || "";
+  const eta = autoTraining.eta_minutes;
+  
+  let statusText = "";
+  
+  if(step === "history"){
+    markStepDone(1);
+    statusText = `Adım 1/3: ${message}`;
+  } else if(step === "training"){
+    markStepDone(2);
+    statusText = `Adım 2/3: ${message}`;
+  } else if(step === "reload"){
+    markStepDone(3);
+    statusText = `Adım 3/3: ${message}`;
+  } else {
+    statusText = message || "Durum kontrol ediliyor...";
+  }
+  
+  // Add ETA if available
+  if(eta !== null && eta !== undefined && eta > 0){
+    statusText += ` - ${eta} dk kaldı`;
+  }
+  
+  // Add progress percentage
+  if(progress > 0 && progress < 100){
+    statusText += ` (${progress}%)`;
+  }
+  
+  setupStatus.textContent = statusText;
+}
+
+/* ================= API ================= */
 async function getJSON(url, init){
   const r = await fetch(url, init);
   if(!r.ok) throw new Error(`HTTP ${r.status}`);
@@ -332,64 +1383,139 @@ async function getJSON(url, init){
 async function checkBackendStatus(){
   try{
     const data = await getJSON(API_BASE + "/api/status");
-    return {online: true, trained: data.model_trained || false};
+    return {
+      online: true,
+      trained: data.model_trained || false,
+      autoTraining: data.auto_training || {}
+    };
   }catch(e){
-    return {online: false, trained: false};
+    return {online: false, trained: false, autoTraining: {}};
   }
 }
 
 async function fetchLeagues(){
-  const filterEnabled = $("#chk-filter")?.checked ?? false;
+  const filterEnabled = document.getElementById('chk-filter')?.checked ?? false;
   const j = await getJSON(API_BASE+"/api/leagues?filter="+filterEnabled);
   return j.items || [];
 }
 
 async function fetchTodayPredict(){
-  const filterEnabled = $("#chk-filter")?.checked ?? false;
+  const filterEnabled = document.getElementById('chk-filter')?.checked ?? false;
   const url = API_BASE + "/api/predict/today?filter=" + filterEnabled;
   const j = await getJSON(url);
   return j.items || [];
 }
 
-async function runSetupFlow(){
+async function fetchAccuracyReport(days=7){
+  const j = await getJSON(API_BASE + "/api/predictions/accuracy-report?days=" + days);
+  return j;
+}
+
+/* ================= Auto-Training Monitor ================= */
+async function monitorAutoTraining(){
   try {
-    setupScreen.classList.add("show");
+    const status = await checkBackendStatus();
     
-    showLoading(true, "Adım 1/3: Nesine'den maçlar çekiliyor...");
-    await new Promise(r => setTimeout(r, 800));
-    await getJSON(API_BASE + "/api/matches/today?filter=false");
-    markStepDone(1);
-    toast("Maçlar çekildi", "ok");
+    if(!status.online){
+      setStatus(false);
+      return false;
+    }
     
-    showLoading(true, "Adım 2/3: Geçmiş veriler yükleniyor...");
-    await new Promise(r => setTimeout(r, 900));
-    await getJSON(API_BASE + "/api/history/load", { method: "POST" });
-    markStepDone(2);
-    toast("Geçmiş veriler yüklendi", "ok");
+    setStatus(true);
     
-    showLoading(true, "Adım 3/3: AI modelleri eğitiliyor...");
-    await new Promise(r => setTimeout(r, 1200));
-    await getJSON(API_BASE + "/api/training/start", { method: "POST" });
-    markStepDone(3);
+    const autoTraining = status.autoTraining || {};
     
-    showLoading(false);
-    setupScreen.classList.remove("show");
-    toast("✅ Kurulum tamamlandı!", "ok");
+    // If training is running, show setup screen
+    if(autoTraining.is_running){
+      if(!setupScreen.classList.contains("show")){
+        setupScreen.classList.add("show");
+      }
+      updateSetupStatus(autoTraining);
+      return false; // Not ready yet
+    }
     
-    await getJSON(API_BASE + "/api/reload", {method: "POST"});
-    await loadAll();
+    // If there was an error
+    if(autoTraining.error){
+      setupScreen.classList.remove("show");
+      toast("❌ Kurulum hatası: " + autoTraining.error, "err");
+      return false;
+    }
+    
+    // If model is trained, we're ready
+    if(status.trained){
+      setupScreen.classList.remove("show");
+      return true;
+    }
+    
+    // Model not trained and not training = show setup screen
+    if(!setupScreen.classList.contains("show")){
+      setupScreen.classList.add("show");
+      updateSetupStatus({message: "Sistem hazırlanıyor..."});
+    }
+    
+    return false;
     
   } catch(e) {
-    console.error("Setup error:", e);
-    showLoading(false);
-    setupScreen.classList.remove("show");
-    toast("❌ Kurulum hatası: " + e.message, "err");
-    await loadAll();
+    console.error("Status check error:", e);
+    return false;
   }
 }
 
-function pct(x){return (x!=null && !Number.isNaN(x)) ? (Number(x).toFixed(1)+"%") : "—";}
+/* ================= Stats Modal ================= */
+async function showStatsModal(){
+  try{
+    showLoading(true, "İstatistikler yükleniyor...");
+    const report = await fetchAccuracyReport(7);
+    
+    if(report.status === "no_data" || report.status === "no_validated"){
+      statsBody.innerHTML = `
+        <div style="text-align:center;padding:40px;color:var(--muted)">
+          <div style="font-size:48px;margin-bottom:16px">📊</div>
+          <div style="font-size:18px;margin-bottom:8px">Henüz veri yok</div>
+          <div style="font-size:14px">${report.message || "Tahminler kaydedilip sonuçlar güncellendiğinde burada görünecek"}</div>
+        </div>
+      `;
+      statsModal.classList.add("show");
+      showLoading(false);
+      return;
+    }
+    
+    const html = `
+      <div style="margin-bottom:20px">
+        <div style="font-size:14px;color:var(--muted);margin-bottom:12px">Son ${report.period || "7 gün"}</div>
+        
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px">
+          <div style="background:#0a1e38;border:1px solid var(--b);border-radius:10px;padding:14px">
+            <div style="font-size:12px;color:var(--muted);margin-bottom:6px">Toplam Tahmin</div>
+            <div style="font-size:24px;font-weight:700;color:var(--gold)">${report.total_predictions || 0}</div>
+          </div>
+          
+          <div style="background:#0a1e38;border:1px solid var(--b);border-radius:10px;padding:14px">
+            <div style="font-size:12px;color:var(--muted);margin-bottom:6px">MS Doğruluğu</div>
+            <div style="font-size:24px;font-weight:700;color:var(--gold)">${report.ms_accuracy?.percentage || 0}%</div>
+          </div>
+          
+          <div style="background:#0a1e38;border:1px solid var(--b);border-radius:10px;padding:14px">
+            <div style="font-size:12px;color:var(--muted);margin-bottom:6px">Skor Doğruluğu</div>
+            <div style="font-size:24px;font-weight:700;color:var(--gold)">${report.score_accuracy?.percentage || 0}%</div>
+          </div>
+        </div>
+      </div>
+    `;
+    
+    statsBody.innerHTML = html;
+    statsModal.classList.add("show");
+    showLoading(false);
+    
+  }catch(e){
+    console.error("Stats error:", e);
+    showLoading(false);
+    toast("İstatistikler yüklenemedi: " + e.message, "err");
+  }
+}
 
+/* ================= UI ================= */
+function pct(x){return (x!=null && !Number.isNaN(x)) ? (Number(x).toFixed(1)+"%") : "—";}
 function valuePill(v){
   if(v>=0.12) return '<span class="pill ok">Düşük Risk</span>';
   if(v>=0.06) return '<span class="pill mid">Orta Risk</span>';
@@ -476,7 +1602,7 @@ function fillTable(items){
         <div style="margin-top:6px">${valuePill(Number(valueIdx))}</div>
       </td>
       <td style="text-align:right">
-        <button class="btn" onclick='showDetails(${JSON.stringify(it).replace(/'/g,"\\'")})'  >📊 Detay</button>
+        <button class="btn" onclick='showDetails(${JSON.stringify(it).replace(/'/g,"\\'")})'>📊 Detay</button>
       </td>
     `;
     rows.appendChild(tr);
@@ -547,18 +1673,13 @@ function showDetails(item){
         <div style="font-size:13px;color:#a6b9dc">Değer Endeksi</div>
         <div>${(p.value_bet?.value_index ?? 0).toFixed(2)}</div>
       </div>
-      <div style="grid-column:1/-1;margin-top:8px;font-size:13px;color:#a6b9dc">
-        Oranlar: 
-        <b>1:</b> ${(item.odds?.["1"] ?? "-")} • 
-        <b>X:</b> ${(item.odds?.["X"] ?? "-")} • 
-        <b>2:</b> ${(item.odds?.["2"] ?? "-")}
-      </div>
     </div>
   `;
   modalBody.innerHTML = html;
   modal.classList.add("show");
 }
 
+/* =============== Data Loaders =============== */
 async function loadAll(){
   try{
     showLoading(true, "Veriler yükleniyor...");
@@ -575,18 +1696,24 @@ async function loadAll(){
 }
 
 async function initialBoot(){
-  const status = await checkBackendStatus();
-  setStatus(status.online);
-  if(!status.online){
-    toast("API çevrimdışı görünüyor.", "err");
-    return;
-  }
-  if(!status.trained){
-    runSetupFlow();
-  }else{
+  // Start status monitoring
+  const ready = await monitorAutoTraining();
+  
+  if(ready){
+    // Model is ready, load data
     await loadAll();
+    scheduleAutoRefresh();
+  } else {
+    // Keep checking status
+    statusCheckTimer = setInterval(async () => {
+      const nowReady = await monitorAutoTraining();
+      if(nowReady){
+        clearInterval(statusCheckTimer);
+        await loadAll();
+        scheduleAutoRefresh();
+      }
+    }, STATUS_CHECK_INTERVAL);
   }
-  scheduleAutoRefresh();
 }
 
 function scheduleAutoRefresh(){
@@ -600,56 +1727,30 @@ function scheduleAutoRefresh(){
   }, REFRESH_DEFAULT_MIN*60*1000);
 }
 
+/* ================= Events ================= */
 document.addEventListener("DOMContentLoaded", async ()=>{
+  // Modal close
   modalClose.onclick = ()=> modal.classList.remove("show");
   modal.onclick = (e)=>{ if(e.target===modal) modal.classList.remove("show"); };
   
   statsClose.onclick = ()=> statsModal.classList.remove("show");
   statsModal.onclick = (e)=>{ if(e.target===statsModal) statsModal.classList.remove("show"); };
 
+  // Filters
   $("#sel-league").onchange = applyFilters;
   $("#sel-sort").onchange = applyFilters;
   $("#txt-team").oninput = ()=> { applyFilters(); };
   $("#chk-filter").onchange = async ()=> { await loadAll(); };
 
+  // Buttons
   $("#btn-refresh").onclick = async ()=> { await loadAll(); toast("Yenilendi ✅","ok"); };
+  $("#btn-stats").onclick = showStatsModal;
   
-  $("#btn-stats").onclick = ()=>{ toast("İstatistikler yakında 📊", "info"); };
-
-  $("#btn-debug").onclick = async ()=>{
-    try{
-      showLoading(true, "Nesine API test ediliyor...");
-      const r = await getJSON(API_BASE + "/api/matches/today?filter=false");
-      toast(`Nesine: ${r.count||0} maç`, "ok");
-    }catch(e){ toast("Debug hatası: "+e.message, "err"); }
-    finally{ showLoading(false); }
-  };
-
-  $("#btn-load-history").onclick = async ()=>{
-    try{
-      showLoading(true, "Geçmiş veriler yükleniyor...");
-      const r = await getJSON(API_BASE + "/api/history/load", {method:"POST"});
-      toast(`${r.matches_loaded||0} geçmiş maç yüklendi`, "ok");
-    }catch(e){ toast("History hatası: "+e.message, "err"); }
-    finally{ showLoading(false); }
-  };
-
-  $("#btn-train").onclick = async ()=>{
-    try{
-      showLoading(true, "Model eğitimi başlatılıyor...");
-      const r = await getJSON(API_BASE + "/api/training/start", {method:"POST"});
-      toast("Eğitim başlatıldı ✅", "ok");
-    }catch(e){ toast("Eğitim hatası: "+e.message, "err"); }
-    finally{ showLoading(false); }
-  };
-
   $("#btn-reload").onclick = async ()=>{
     try{
       showLoading(true, "Modeller yeniden yükleniyor...");
-      const r = await getJSON(API_BASE + "/api/reload", {method:"POST"});
-      if(r.status==="ok") toast("Modeller yenilendi ✅", "ok");
-      else if(r.status==="partial") toast("Bazı modeller eksik ⚠️", "warn");
-      else toast("Reload: " + (r.message||"bilinmeyen hata"), "err");
+      await getJSON(API_BASE + "/api/reload", {method:"POST"});
+      toast("Modeller yenilendi ✅", "ok");
       await loadAll();
     }catch(e){ toast("Reload hatası: "+e.message, "err"); }
     finally{ showLoading(false); }
@@ -659,8 +1760,7 @@ document.addEventListener("DOMContentLoaded", async ()=>{
     toast("Ayarlar yakında 🔧", "info");
   };
 
-  $("#btn-start-setup").onclick = runSetupFlow;
-
+  // Start auto-boot
   await initialBoot();
 });
 </script>
