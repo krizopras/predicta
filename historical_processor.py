@@ -19,11 +19,17 @@ import glob
 logger = logging.getLogger(__name__)
 
 class HistoricalDataProcessor:
-    def __init__(self, raw_data_path: str = "data/raw", clubs_path: str = "data/clubs"):
-        self.raw_data_path = raw_data_path
-        self.clubs_path = clubs_path
-        self.club_aliases = self._load_club_aliases()
-        self.processed_data = {}
+    def __init__(self, raw_data_dir: str = None, raw_data_path: str = "data/raw", clubs_path: str = "data/clubs"):
+    """
+    HistoricalDataProcessor (Backward Compatible)
+    ---------------------------------------------
+    Hem 'raw_data_dir' hem 'raw_data_path' parametrelerini destekler.
+    """
+    self.raw_data_path = raw_data_dir or raw_data_path or "data/raw"
+    self.clubs_path = clubs_path or "data/clubs"
+    self.club_aliases = self._load_club_aliases()
+    self.processed_data = {}
+
 
     # ==========================================================
     # 1️⃣  KULÜP ALIAS YÜKLEME
