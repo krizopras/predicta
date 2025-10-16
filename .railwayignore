@@ -1,8 +1,47 @@
+# Python cache & env
 __pycache__/
 *.pyc
-.env
-.git/
-*.log
-.DS_Store
 venv/
 .venv/
+.env
+.DS_Store
+.git/
+*.log
+*.tmp
+
+# Local data not needed in deployment
+data/predictions/
+data/raw/
+data/tmp/
+data/cache/
+data/*.csv
+data/*.xlsx
+
+# Model artifacts (large files)
+data/ai_models_v3/*.pkl
+models/
+checkpoints/
+experiments/
+notebooks/
+
+# Local logs & reports
+logs/
+reports/
+outputs/
+
+# IDE / Editor files
+.vscode/
+.idea/
+*.code-workspace
+
+# Local frontend builds (if using separate build process)
+frontend/node_modules/
+frontend/.next/
+frontend/dist/
+frontend/build/
+
+# Test artifacts
+tests/__pycache__/
+coverage/
+htmlcov/
+.pytest_cache/
