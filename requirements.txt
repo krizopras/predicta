@@ -1,34 +1,33 @@
-########################################################
-# Predicta ML v3 - Backend Bağımlılıkları
-########################################################
+# Predicta Europe ML v3.0 - Advanced Features
+# Python 3.9+
 
-# ==== Core Web Framework (Railway Tarafından Kullanılır) ====
-Flask==3.0.3           # Temel web framework
-flask-cors==4.0.1      # Cross-Origin Resource Sharing (Çapraz Kaynak Paylaşımı)
-gunicorn==22.0.0       # Üretim ortamı için HTTP sunucusu (Railway'de kullanılır)
+# Core ML
+scikit-learn==1.3.2
+xgboost==2.0.3
+lightgbm==4.1.0
+numpy==1.24.3
+pandas==2.0.3
+imbalanced-learn==0.11.0
 
-# ==== HTTP ve Veri Çekme (Parsing) ====
-requests==2.32.3       # HTTP istekleri yapmak için
-beautifulsoup4==4.12.3 # HTML/XML ayrıştırma (Nesine veri çekimi için)
-lxml==5.2.1            # BeautifulSoup için hızlı ayrıştırıcı
+# Web Framework
+Flask==3.0.0
+Flask-CORS==4.0.0
+Flask-SocketIO==5.3.5
+python-socketio==5.10.0
+gunicorn==21.2.0
 
-# ==== Veri Bilimi ve Makine Öğrenimi (ML) Çekirdeği ====
-numpy==1.26.4          # Yüksek performanslı sayısal işlemler
-pandas==2.2.2          # Veri manipülasyonu ve analizi
-scikit-learn==1.5.2    # Temel ML kütüphanesi (Sürüm uyumluluğu için sabitlendi)
-xgboost==2.1.1         # Gradient Boosting (Sürüm uyumluluğu için sabitlendi)
-lightgbm==4.5.0        # Light Gradient Boosting (Sürüm uyumluluğu için sabitlendi)
-joblib==1.4.2          # Python nesnelerini (modelleri) hızlı kaydetme/yükleme
-imbalanced-learn==0.12.3 # Dengesiz veri kümeleri için araçlar
-scipy==1.10.1          # Bilimsel ve teknik hesaplama
+# Scheduler (Cron)
+schedule==1.2.0
 
-# ==== Yardımcı ve Sistem Araçları ====
-python-dateutil==2.9.0.post0 # Tarih/saat işlemleri için esnek araçlar
-psutil==6.0.0          # Sistem süreç bilgilerini alma (isteğe bağlı)
-fuzzywuzzy==0.18.0     # Dize benzerliği (string matching)
-python-Levenshtein==0.25.1 # Levenshtein mesafesi (Hızlı fuzzywuzzy bağımlılığı)
-tqdm==4.66.4           # Döngüler için ilerleme çubuğu
+# Monitoring (Prometheus)
+prometheus-client==0.19.0
 
-# ==== Loglama ve Zaman ====
-colorlog==6.8.2        # Renkli log çıktısı
-pytz==2024.1           # Zaman dilimi (timezone) desteği
+# Notifications
+requests==2.31.0
+
+# Data Processing
+joblib==1.3.2
+tqdm==4.66.1
+
+# Optional: Advanced Features
+python-telegram-bot==20.7  # If using official bot library
