@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Predicta Europe ML v3 - FULL AUTO MODE
-Otomatik model eğitimi ve yükleme sistemi
+Otomatik model eğitimi ve yükleme sistemi - FIXED
 """
 
 import os
@@ -15,8 +15,13 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 
-# ML & Nesine imports
-from ml_prediction_engine import MLPredictionEngine, ModelIO
+# ✅ DÜZELTME: ModelIO'yu da import et
+try:
+    from ml_prediction_engine import MLPredictionEngine, ModelIO
+except ImportError as e:
+    logging.error(f"❌ ml_prediction_engine import hatası: {e}")
+    raise
+
 from nesine_fetcher import fetch_bulletin, fetch_yesterday_results, fetch_results_for_date
 from historical_processor import HistoricalDataProcessor
 from prediction_tracker import PredictionTracker
@@ -43,7 +48,7 @@ CLUBS_PATH = os.environ.get("PREDICTA_CLUBS", "data/clubs")
 app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "*"}})
 
-# ML Engine
+# ✅ DÜZELTME: models_dir parametresi (model_dir değil!)
 engine = MLPredictionEngine(models_dir=MODELS_DIR)
 
 # Historical Processor
@@ -61,7 +66,8 @@ auto_training_state = {
     "current_step": "",
     "progress": 0,
     "message": "",
-    "error": None
+    "error": None,
+    "eta_minutes": None
 }
 
 
@@ -74,7 +80,7 @@ def auto_train_pipeline():
         auto_training_state["error"] = None
         
         # Step 1: History Load
-        logger.info("🔄 Auto-training Step 1/3: Loading history...")
+        logger.info("📄 Auto-training Step 1/3: Loading history...")
         auto_training_state["current_step"] = "history"
         auto_training_state["progress"] = 10
         auto_training_state["message"] = "Geçmiş veriler yükleniyor..."
@@ -95,10 +101,11 @@ def auto_train_pipeline():
         logger.info(f"✅ History loaded: {total_matches} matches")
         
         # Step 2: Training
-        logger.info("🔄 Auto-training Step 2/3: Training models...")
+        logger.info("📄 Auto-training Step 2/3: Training models...")
         auto_training_state["current_step"] = "training"
         auto_training_state["progress"] = 40
         auto_training_state["message"] = "AI modelleri eğitiliyor (5-10 dakika)..."
+        auto_training_state["eta_minutes"] = 8
         
         from model_trainer import ProductionModelTrainer
         
@@ -120,21 +127,32 @@ def auto_train_pipeline():
         
         auto_training_state["progress"] = 80
         auto_training_state["message"] = "Eğitim tamamlandı"
+        auto_training_state["eta_minutes"] = 1
         logger.info("✅ Training completed successfully")
         
         # Step 3: Reload
-        logger.info("🔄 Auto-training Step 3/3: Reloading models...")
+        logger.info("📄 Auto-training Step 3/3: Reloading models...")
         auto_training_state["current_step"] = "reload"
         auto_training_state["progress"] = 90
         auto_training_state["message"] = "Modeller yükleniyor..."
         
-        success = engine.load_models()
+        # ✅ Modelleri yeniden yükle
+        try:
+            loaded = ModelIO.load(Path(MODELS_DIR))
+            engine.scaler = loaded.get("scaler")
+            engine.ensemble = loaded.get("ensemble")
+            engine.is_trained = loaded.get("is_trained", False)
+            success = engine.is_trained
+        except Exception as e:
+            logger.error(f"❌ Model loading error: {e}")
+            success = False
         
         if not success:
             raise Exception("Model loading failed")
         
         auto_training_state["progress"] = 100
         auto_training_state["message"] = "✅ Sistem hazır!"
+        auto_training_state["eta_minutes"] = None
         auto_training_state["is_running"] = False
         logger.info("✅ Auto-training pipeline completed successfully")
         
@@ -143,12 +161,15 @@ def auto_train_pipeline():
         auto_training_state["is_running"] = False
         auto_training_state["error"] = str(e)
         auto_training_state["message"] = f"❌ Hata: {str(e)}"
+        auto_training_state["eta_minutes"] = None
 
 
 def check_and_auto_train():
     """Model kontrolü ve otomatik eğitim başlatma"""
     if engine.is_trained:
         logger.info("✅ Models already trained, skipping auto-training")
+        auto_training_state["progress"] = 100
+        auto_training_state["message"] = "✅ Sistem hazır!"
         return
     
     logger.info("⚠️ Models not found, starting auto-training pipeline...")
@@ -232,6 +253,13 @@ def get_today_matches():
 def predict_today():
     """Predict today's matches"""
     try:
+        if not engine.is_trained:
+            return jsonify({
+                "error": "Models not trained yet",
+                "message": "Please wait for auto-training to complete",
+                "items": []
+            }), 503
+        
         filter_enabled = request.args.get('filter', 'false').lower() == 'true'
         save_predictions = request.args.get('save', 'true').lower() == 'true'
         
@@ -255,7 +283,7 @@ def predict_today():
                 if not odds.get("2"):
                     odds["2"] = 3.5
                 
-                pred = engine.predict_match(home, away, odds, league)
+                pred = engine.predict_match(home, away, league, odds)
                 
                 result_item = {**m, "prediction": pred}
                 results.append(result_item)
@@ -310,8 +338,6 @@ def auto_update_results():
             })
         
         updated_count = 0
-        ms_correct = 0
-        score_correct = 0
         
         for result in results:
             try:
@@ -356,7 +382,13 @@ def get_accuracy_report():
 def reload_models():
     """Reload models"""
     try:
-        success = engine.load_models()
+        # ✅ DÜZELTME: ModelIO kullanarak yükle
+        loaded = ModelIO.load(Path(MODELS_DIR))
+        engine.scaler = loaded.get("scaler")
+        engine.ensemble = loaded.get("ensemble")
+        engine.is_trained = loaded.get("is_trained", False)
+        
+        success = engine.is_trained
         
         return jsonify({
             "status": "ok" if success else "partial",
